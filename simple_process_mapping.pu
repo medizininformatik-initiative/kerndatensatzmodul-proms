@@ -1,0 +1,11 @@
+@startuml
+object PROM_Fragebogen
+object ausgefüllter_PROM_Fragebogen
+object PROM_Score 
+object Domänen_Score
+
+PROM_Fragebogen "Anwendung" --> ausgefüllter_PROM_Fragebogen 
+ausgefüllter_PROM_Fragebogen "Berechnung" --> PROM_Score
+ausgefüllter_PROM_Fragebogen "Item-Mapping" ...> Domänen_Score
+PROM_Score "Score-Mapping" ..> Domänen_Score
+@enduml

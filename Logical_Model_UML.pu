@@ -1,0 +1,23 @@
+@startuml MII_Onko_05_Diagnosis
+object Domäne
+object Domäne_Depression
+Domäne <|-down- Domäne_Depression
+object PROM_Fragebogen 
+object PROM_Score
+object BDI_II_Fragebogen
+object BDI_II_Score
+object PHQ_9_Fragebogen
+object PHQ_9_Score
+PROM_Fragebogen <|-down- BDI_II_Fragebogen
+PROM_Fragebogen <|-down- PHQ_9_Fragebogen
+PROM_Score <|--- BDI_II_Score
+PROM_Score <|--- PHQ_9_Score
+BDI_II_Score o--- BDI_II_Fragebogen
+PHQ_9_Score o--- PHQ_9_Fragebogen
+Domäne_Depression <-- BDI_II_Score 
+Domäne_Depression <-- PHQ_9_Score 
+
+object PROM_ausgefüllt
+object Mapping
+
+@enduml
