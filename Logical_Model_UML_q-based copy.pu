@@ -78,7 +78,8 @@ package Fragebogen_Vorlage {
 
 package Ausgefüllte_Fragebögen {
     object Ausgefüllter_Fragebogen {
-        subject: Referenz(Patient/Person)
+    
+        betrifft: Referenz(Patient/Person)
         erfasst_durch: code (selbst, Arzt, Angehöriger etc)
         Erfassungsdatum: date
         Fragebogen: Fragebogen
@@ -89,36 +90,49 @@ package Ausgefüllte_Fragebögen {
         FragenID_Standard_ID: string
         FragenID_Standard_System: string
         FragenID_Standard_Version: string
+        Antwort_Datentyp: (code, integer, float, string)
         Antwort_Code: Antwort_Auswahl_Option_Standard_Code
-
-
     }
+    Ausgefüllter_Fragebogen::Antworten o-- Antwort_erfasst
 }
 
-
 package Scores {
-    object Score {
+    object Score_Vorlage {
         ScoreID: string
         ScoreID_Version: string
-
-
+        ScoreName: String
+        ScoreTitel: String
+        Scoreberechnung: Score_Berechnung
+        Domäne: Domäne
     }
-    
+    object Score_berechnet {
+        ScoreID: string
+        Score_Vorlage: Score_Vorlage
+        Berechnungsdatum: date
+        berechneter_Scorewert: (integer/float/string)
+    } 
+    object Score_Berechnung {
+        ScoreBerechnungsID: string
+        Score_Datentyp: (integer/float/string)
+        Score_Berechnungs_Algoritmus: Expression
+    }
+    Score_Vorlage::Scoreberechnung  o--Score_Berechnung
+
     object Fragebogen_Score {
         Fragebogen_Vorlage: Fragebogen
         Ausgefüllter_Fragebogen: Ausgefüllter_Fragebogen
-        Scoreberechnung: Expression
-
-
     }
     note bottom of Fragebogen_Score 
         Scoreberechnung mit Input ausgefüllter Fragebogen. 
         Hier kann direkt die Definition der Fragebogenvorlage genutzt werden
     end note
+      Score_Vorlage <|-- Fragebogen_Score
 
     object Itembasierter_Score {
         Ausgefüllte_Antworten: Antwort_erfasst
     }
+    Score_Vorlage <|-- Itembasierter_Score
+
     note bottom of Itembasierter_Score 
         Scoreberechnung mit Input einzelner Fragen. 
         Hier müssen alle Informationen in den Fragen selbst enthalten sein 
@@ -128,24 +142,28 @@ package Scores {
     object Score_Mapping {
         Source_ScoreID: string
         Target_ScoreID: string
-        Mapping: Mapping
+        Mapping: Mapping 
     }
+
     object Mapping {
         Source: Expression
         Target: Expression        
     }
-    
+    Score_Mapping o-- Mapping
 
 
 }
 
 
-package abgeleitete_Metriken {
+package Abgeleitete_Metriken {
     object Threshold
     object MCID
-}
+    object Classification
+} 
 
-
+Fragebogen_Vorlage --- Ausgefüllte_Fragebögen
+Ausgefüllte_Fragebögen --- Scores
+Scores --- Abgeleitete_Metriken
 
 
 @enduml
