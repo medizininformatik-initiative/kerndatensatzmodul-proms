@@ -1,8 +1,8 @@
 @startuml MII_PROMs_Fragebögen
 package Fragebogen_Vorlage {
     object Fragebogen {
-        Fragebogen_Name_vollständig: string
-        Fragebogen_Name_Abkürzung: string
+        Fragebogen_Name_vollständig: i18nString
+        Fragebogen_Name_Abkürzung: i18nString
         Fragebogen_Version: string
         FragebogenID_intern: string
         FragebogenID_Standard_ID: string
@@ -21,8 +21,8 @@ package Fragebogen_Vorlage {
         FragenID_Standard_ID: string
         FragenID_Standard_System: string
         FragenID_Standard_Version: string
-        Fragetext: string
-        Frage_Ausfüllhinweise: string
+        Fragetext: i18nString
+        Frage_Ausfüllhinweise: i18nString
         Anzeigemodalität: code
         Angezeigt_wenn: Expression
         Antwort_Vorlage: Antwort_Vorlage
@@ -48,7 +48,7 @@ package Fragebogen_Vorlage {
         Antwort_Auswahl_Option: Antwort_Auswahl_Option
     }
     object Antwort_Auswahl_Option {
-        Antwort_Option_Text: string
+        Antwort_Option_Text: i18nString
         exklusiveAntwort: boolean
         Antwort_Auswahl_Option_Code_intern: code
         Antwort_Auswahl_Option_Standard_Code: code
@@ -100,14 +100,14 @@ package Scores {
     object Score_Vorlage {
         ScoreID: string
         ScoreID_Version: string
-        ScoreName: String
-        ScoreTitel: String
+        ScoreName: i18nString
         Scoreberechnung: Score_Berechnung
         Domäne: Domäne
     }
     object Score_berechnet {
         ScoreID: string
         Score_Vorlage: Score_Vorlage
+        Score_Berechnung: Score_Berechnung
         Berechnungsdatum: date
         berechneter_Scorewert: (integer/float/string)
     } 
@@ -115,8 +115,10 @@ package Scores {
         ScoreBerechnungsID: string
         Score_Datentyp: (integer/float/string)
         Score_Berechnungs_Algoritmus: Expression
+
     }
-    Score_Vorlage::Scoreberechnung  o--Score_Berechnung
+    Score_Vorlage::Scoreberechnung o-- Score_Berechnung
+
 
     object Fragebogen_Score {
         Fragebogen_Vorlage: Fragebogen
@@ -126,12 +128,12 @@ package Scores {
         Scoreberechnung mit Input ausgefüllter Fragebogen. 
         Hier kann direkt die Definition der Fragebogenvorlage genutzt werden
     end note
-      Score_Vorlage <|-- Fragebogen_Score
+      Score_Berechnung <|-- Fragebogen_Score
 
     object Itembasierter_Score {
         Ausgefüllte_Antworten: Antwort_erfasst
     }
-    Score_Vorlage <|-- Itembasierter_Score
+    Score_Berechnung <|-- Itembasierter_Score
 
     note bottom of Itembasierter_Score 
         Scoreberechnung mit Input einzelner Fragen. 
@@ -153,7 +155,37 @@ package Scores {
 
 
 }
+package Domäne {
+    object Domäne_Vorlage {
+        DomänenID: string
+        DomänenID_Version: string
+        DomänenName: i18nString
+    }
+    object Domänen_Skala {
+        Minimum: integer / float
+        Maximum: integer / float
 
+    }
+
+
+    object DomänenScore_berechnet {
+        ScoreID: string
+        Score_Vorlage: Score_Vorlage
+        Berechnungsdatum: date
+        berechneter_Scorewert: (integer/float/string)
+    } 
+    object DomänenScore_Berechnung {
+        ScoreBerechnungsID: string
+        Score_Datentyp: (integer/float/string)
+        Score_Berechnungs_Algoritmus: Expression
+    }
+
+    object DomänenScore_Mapping {
+        Source_ScoreID: string
+        Target_ScoreID: string
+        Mapping: Mapping 
+    }
+}
 
 package Abgeleitete_Metriken {
     object Threshold
@@ -164,8 +196,6 @@ package Abgeleitete_Metriken {
 Fragebogen_Vorlage --- Ausgefüllte_Fragebögen
 Ausgefüllte_Fragebögen --- Scores
 Scores --- Abgeleitete_Metriken
-
-
 @enduml
 
 /'
