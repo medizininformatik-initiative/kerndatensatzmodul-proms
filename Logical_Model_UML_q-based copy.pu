@@ -152,25 +152,26 @@ package Scores {
         Target: Expression        
     }
     Score_Mapping o-- Mapping
-
-
 }
 package Domäne {
     object Domäne_Vorlage {
         DomänenID: string
         DomänenID_Version: string
         DomänenName: i18nString
+        Domänen_Skala: Domänen_Skala
     }
     object Domänen_Skala {
         Minimum: integer / float
         Maximum: integer / float
-
+        Referenzpopulation/Gültigkeit: string
+        
     }
-
 
     object DomänenScore_berechnet {
         ScoreID: string
         Score_Vorlage: Score_Vorlage
+        DomänenScore_Berechnung: Score_Berechnung
+        DomänenScore_Mapping: DomänenScore_Mapping
         Berechnungsdatum: date
         berechneter_Scorewert: (integer/float/string)
     } 
@@ -186,6 +187,8 @@ package Domäne {
         Mapping: Mapping 
     }
 }
+Domäne_Vorlage --- DomänenScore_berechnet
+DomänenScore_Berechnung --- DomänenScore_berechnet::DomänenScore_Berechnung
 
 package Abgeleitete_Metriken {
     object Threshold
