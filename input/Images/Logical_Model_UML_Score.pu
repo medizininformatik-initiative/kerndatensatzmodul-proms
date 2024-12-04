@@ -1,0 +1,69 @@
+@startuml MII_PROMs_Fragebögen
+package Scores {
+    object Score_Vorlage {
+        ScoreID: string
+        ScoreID_Version: string
+        ScoreName: i18nString
+        Scoreberechnung: Score_Berechnung
+        Domäne: Domäne
+    }
+    object Score_berechnet {
+        ScoreID: string
+        Score_Vorlage: Score_Vorlage
+        Score_Berechnung: Score_Berechnung
+        Berechnungsdatum: date
+        berechneter_Scorewert: (integer/float/string)
+    } 
+    
+    object Score_Berechnung {
+        ScoreBerechnungsID: string
+        Score_Datentyp: (integer/float/string)
+        Score_Berechnungs_Algoritmus: Expression
+
+    }
+    Score_Vorlage::Scoreberechnung o-- Score_Berechnung
+    Score_berechnet::Score_Vorlage o-- Score_Vorlage 
+    Score_berechnet::Score_Berechnung --> Score_Berechnung
+
+
+    object Fragebogen_Score {
+        Fragebogen_Vorlage: Fragebogen
+        Ausgefüllter_Fragebogen: Ausgefüllter_Fragebogen
+    }
+    note bottom of Fragebogen_Score 
+        Scoreberechnung mit Input ausgefüllter Fragebogen. 
+        Hier kann direkt die Definition der Fragebogenvorlage genutzt werden
+    end note
+      Score_Berechnung <|-- Fragebogen_Score
+
+    object Itembasierter_Score {
+        Ausgefüllte_Antworten: Antwort_erfasst
+    }
+    Score_Berechnung <|-- Itembasierter_Score
+
+    note bottom of Itembasierter_Score 
+        Scoreberechnung mit Input einzelner Fragen. 
+        Hier müssen alle Informationen in den Fragen selbst enthalten sein 
+        (Datum, Patient, etc.)
+    end note
+
+    object Score_Mapping {
+        Source_ScoreID: string
+        Target_ScoreID: string
+        Mapping: Mapping 
+    }
+
+    object Mapping {
+        Source: Expression
+        Target: Expression        
+    }
+    Score_Mapping o-- Mapping
+}
+@enduml
+
+/'
+Teil der nächsten Stufe:
+Mehrsprachigkeit
+Modulare Fragebögen und Fragenkataloge
+Adaptive Fragebögen und CAT
+'/

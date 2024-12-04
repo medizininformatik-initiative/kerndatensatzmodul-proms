@@ -1,0 +1,51 @@
+@startuml MII_PROMs_Fragebögen
+
+package Domäne {
+    object Domäne_Vorlage {
+        DomänenID: string
+        DomänenID_Version: string
+        DomänenName: i18nString
+        Domänen_Skala: Domänen_Skala
+    }
+    object Domänen_Skala {
+        Domänen_Skalen_ID: string
+        Minimum: integer / float
+        Maximum: integer / float
+        Skalenart: code
+        Referenzpopulation/Gültigkeit: string
+
+    }
+
+    object DomänenScore_berechnet {
+        ScoreID: string
+        Score_Vorlage: Score_Vorlage
+        DomänenScore_Berechnung: Score_Berechnung
+        DomänenScore_Mapping: DomänenScore_Mapping
+        Berechnungsdatum: date
+        berechneter_Scorewert: (integer/float/string)
+    } 
+    object DomänenScore_Berechnung {
+        ScoreBerechnungsID: string
+        Score_Datentyp: (integer/float/string)
+        Score_Berechnungs_Algoritmus: Expression
+    }
+
+    object DomänenScore_Mapping {
+        Source_ScoreID: string
+        Target_ScaleID: string
+        Mapping: Mapping 
+    }
+    DomänenScoreMapping::Target_ScaleID --> Domänen_Skala::Domänen_Skalen_ID
+
+}
+Domäne_Vorlage --- DomänenScore_berechnet
+DomänenScore_Berechnung --- DomänenScore_berechnet::DomänenScore_Berechnung
+
+@enduml
+
+/'
+Teil der nächsten Stufe:
+Mehrsprachigkeit
+Modulare Fragebögen und Fragenkataloge
+Adaptive Fragebögen und CAT
+'/

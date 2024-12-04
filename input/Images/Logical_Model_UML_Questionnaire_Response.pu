@@ -1,0 +1,29 @@
+@startuml MII_PROMs_Fragebögen
+package Ausgefüllte_Fragebögen {
+    object Ausgefüllter_Fragebogen {
+    
+        betrifft: Referenz(Patient/Person)
+        erfasst_durch: code (selbst, Arzt, Angehöriger etc)
+        Erfassungsdatum: date
+        Fragebogen: Fragebogen
+        Antworten: Antwort_erfasst
+    }
+    object Antwort_erfasst {
+        FragenID_intern: string
+        FragenID_Standard_ID: string
+        FragenID_Standard_System: string
+        FragenID_Standard_Version: string
+        Antwort_Datentyp: (code, integer, float, string)
+        Antwort_Code: Antwort_Auswahl_Option_Standard_Code
+    }
+    Ausgefüllter_Fragebogen::Antworten o-- Antwort_erfasst
+}
+
+@enduml
+
+/'
+Teil der nächsten Stufe:
+Mehrsprachigkeit
+Modulare Fragebögen und Fragenkataloge
+Adaptive Fragebögen und CAT
+'/
