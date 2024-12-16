@@ -1,22 +1,18 @@
 @startuml MII_PROMs_Fragebögen
 package Ausgefüllte_Fragebögen {
     object Ausgefüllter_Fragebogen {
-    
-        betrifft: Referenz(Patient/Person)
-        erfasst_durch: code (selbst, Arzt, Angehöriger etc)
-        Erfassungsdatum: date
         Fragebogen: Fragebogen
+        Erfassungsdatum: date
+        Ausfuellende_Person: identifier
+        Ausfuellende_Person_Rolle: code 
         Antworten: Antwort_erfasst
     }
     object Antwort_erfasst {
         FragenID_intern: string
-        FragenID_Standard_ID: string
-        FragenID_Standard_System: string
-        FragenID_Standard_Version: string
-        Antwort_Datentyp: (code, integer, float, string)
-        Antwort_Code: Antwort_Auswahl_Option_Standard_Code
+        Antwort: code, number, string, date
+
     }
-    Ausgefüllter_Fragebogen::Antworten o-- Antwort_erfasst
+    Ausgefüllter_Fragebogen::Antworten o-right- Antwort_erfasst
 }
 
 @enduml

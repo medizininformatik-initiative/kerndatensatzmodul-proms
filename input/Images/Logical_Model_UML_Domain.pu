@@ -1,9 +1,9 @@
-@startuml MII_PROMs_Fragebögen
+@startuml MII_PROMs_Domäne
 
 package Domäne {
     object Domäne_Vorlage {
         DomänenID: string
-        DomänenID_Version: string
+        DomänenCode
         DomänenName: i18nString
         Domänen_Skala: Domänen_Skala
     }
@@ -13,9 +13,7 @@ package Domäne {
         Maximum: integer / float
         Skalenart: code
         Referenzpopulation/Gültigkeit: string
-
     }
-
     object DomänenScore_berechnet {
         ScoreID: string
         Score_Vorlage: Score_Vorlage
@@ -35,17 +33,15 @@ package Domäne {
         Target_ScaleID: string
         Mapping: Mapping 
     }
-    DomänenScoreMapping::Target_ScaleID --> Domänen_Skala::Domänen_Skalen_ID
+
+    Domäne_Vorlage::Domänen_Skala o-right- Domänen_Skala
+    DomänenScore_Mapping::Target_ScaleID --> Domänen_Skala
 
 }
-Domäne_Vorlage --- DomänenScore_berechnet
-DomänenScore_Berechnung --- DomänenScore_berechnet::DomänenScore_Berechnung
+
+Domäne_Vorlage -right-- DomänenScore_berechnet
+DomänenScore_Berechnung -up- DomänenScore_berechnet::DomänenScore_Berechnung
+DomänenScore_Berechnung -left- DomänenScore_Mapping 
 
 @enduml
 
-/'
-Teil der nächsten Stufe:
-Mehrsprachigkeit
-Modulare Fragebögen und Fragenkataloge
-Adaptive Fragebögen und CAT
-'/

@@ -1,11 +1,11 @@
 @startuml MII_PROMs_Fragebögen
 package Scores {
     object Score_Vorlage {
-        ScoreID: string
-        ScoreID_Version: string
+        ScoreVorlagenID: string
         ScoreName: i18nString
         Scoreberechnung: Score_Berechnung
         Domäne: Domäne
+        Domänenskala: Domänenskala
     }
     object Score_berechnet {
         ScoreID: string

@@ -1,4 +1,8 @@
 @startuml MII_PROMs_Fragebögen
+skinparam linetype ortho
+skinparam linetype polyline
+
+
 package Fragebogen_Vorlage {
     object Fragebogen {
         Fragebogen_Name_vollständig: i18nString
@@ -16,7 +20,7 @@ package Fragebogen_Vorlage {
 
     }
 
-    object Frage{
+    object Frage{ 
         FragenID_intern: string
         FragenID_Standard_ID: string
         FragenID_Standard_System: string
@@ -29,7 +33,7 @@ package Fragebogen_Vorlage {
 
     }
 
-    Fragebogen::Frage o-right- Frage
+    Fragebogen::Frage o--right--- Frage
 
     object Antwort_Vorlage {
         Antworttyp: code
@@ -60,16 +64,18 @@ package Fragebogen_Vorlage {
     Antwort_Vorlage <|-down- Antwort_Auswahl
     Antwort_Auswahl::Antwort_Auswahl_Option o-right- Antwort_Auswahl_Option
 
-    object Antwort_Integer {
-        minValue: Integer
-        maxValue: Integer
-        Einheit: code
+    object Antwort_NumerischerWert {
+        Antwort_NumerischerWert_kleinster: Number
+        Antwort_NumerischerWert_groesster: Number
+        Antwort_NumerischerWert_Einheit: code
+        Antwort_NumerischerWert_Praezision: Integer
+
     }
-    Antwort_Vorlage <|-down- Antwort_Integer
+    Antwort_Vorlage <|-down- Antwort_NumerischerWert 
+
 
     object Antwort_Datum {
         minDatum: date
-        maxDatum: date
         Datumsgenauigkeit: code
     }
     Antwort_Vorlage <|-down- Antwort_Datum
@@ -78,9 +84,3 @@ package Fragebogen_Vorlage {
 
 @enduml
 
-/'
-Teil der nächsten Stufe:
-Mehrsprachigkeit
-Modulare Fragebögen und Fragenkataloge
-Adaptive Fragebögen und CAT
-'/
