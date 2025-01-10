@@ -1,6 +1,8 @@
 @startuml MII_PROMs_Fragebögen
 skinparam linetype ortho
 skinparam linetype polyline
+left to right direction
+
 
 
 package Fragebogen_Vorlage {
@@ -19,8 +21,8 @@ package Fragebogen_Vorlage {
 
 
     }
+    object Frage{
 
-    object Frage{ 
         FragenID_intern: string
         FragenID_Standard_ID: string
         FragenID_Standard_System: string
@@ -33,12 +35,20 @@ package Fragebogen_Vorlage {
 
     }
 
-    Fragebogen::Frage o--right--- Frage
+
+
+    Fragebogen::Frage "1..1" o-down- "1..*" Frage
 
     object Antwort_Vorlage {
         Antworttyp: code
     }
-    Frage::Antwort_Vorlage  o-right-- Antwort_Vorlage
+    Frage::Antwort_Vorlage "1..1"  o-down- "1..1" Antwort_Vorlage
+
+    object Antwort_Auswahl {
+        Mehrfachauswahl: boolean
+        Antwort_Standard_ValueSet: Reference
+        Antwort_Auswahl_Option: Antwort_Auswahl_Option
+    }
 
     object Antwort_String {
         minLength: Integer
@@ -46,11 +56,23 @@ package Fragebogen_Vorlage {
     }
     Antwort_Vorlage <|-down- Antwort_String
 
-    object Antwort_Auswahl {
-        Mehrfachauswahl: boolean
-        Antwort_Standard_ValueSet: Reference
-        Antwort_Auswahl_Option: Antwort_Auswahl_Option
+
+    object Antwort_NumerischerWert {
+        Antwort_NumerischerWert_kleinster: Number
+        Antwort_NumerischerWert_groesster: Number
+        Antwort_NumerischerWert_Einheit: code
+        Antwort_NumerischerWert_Praezision: Integer
+
     }
+    Antwort_Vorlage <|-down- Antwort_NumerischerWert
+
+
+    object Antwort_Datum {
+        minDatum: date
+        Datumsgenauigkeit: code
+    }
+    Antwort_Vorlage <|-down- Antwort_Datum
+
     object Antwort_Auswahl_Option {
         Antwort_Option_Text: i18nString
         exklusiveAntwort: boolean
@@ -61,24 +83,9 @@ package Fragebogen_Vorlage {
 
     }
 
-    Antwort_Vorlage <|-down- Antwort_Auswahl
-    Antwort_Auswahl::Antwort_Auswahl_Option o-right- Antwort_Auswahl_Option
+    Antwort_Vorlage  <|-down-  Antwort_Auswahl
+    Antwort_Auswahl::Antwort_Auswahl_Option "1..*" o-down- "1..*" Antwort_Auswahl_Option
 
-    object Antwort_NumerischerWert {
-        Antwort_NumerischerWert_kleinster: Number
-        Antwort_NumerischerWert_groesster: Number
-        Antwort_NumerischerWert_Einheit: code
-        Antwort_NumerischerWert_Praezision: Integer
-
-    }
-    Antwort_Vorlage <|-down- Antwort_NumerischerWert 
-
-
-    object Antwort_Datum {
-        minDatum: date
-        Datumsgenauigkeit: code
-    }
-    Antwort_Vorlage <|-down- Antwort_Datum
 
 }
 
