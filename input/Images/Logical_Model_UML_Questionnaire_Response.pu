@@ -12,14 +12,8 @@ package Ausgefüllte_Fragebögen {
         Antwort: code, number, string, date
 
     }
-    Ausgefüllter_Fragebogen::Antworten o-right- Antwort_erfasst
+    Ausgefüllter_Fragebogen::Antworten "1..1" o-right- "1..*" Antwort_erfasst
 }
 
 @enduml
 
-/'
-Teil der nächsten Stufe:
-Mehrsprachigkeit
-Modulare Fragebögen und Fragenkataloge
-Adaptive Fragebögen und CAT
-'/
