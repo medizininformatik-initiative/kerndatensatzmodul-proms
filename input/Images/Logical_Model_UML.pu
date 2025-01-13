@@ -17,7 +17,4 @@ PHQ_9_Score o--- PHQ_9_Fragebogen
 Domäne_Depression <-- BDI_II_Score 
 Domäne_Depression <-- PHQ_9_Score 
 
-object PROM_ausgefüllt
-object Mapping
-
 @enduml

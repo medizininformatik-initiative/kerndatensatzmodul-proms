@@ -1,4 +1,6 @@
-@startuml MII_PROMs_Fragebögen
+@startuml MII_PROMs_Fragebögen_ausgefüllt
+'skinparam linetype ortho
+'skinparam linetype polyline
 package Ausgefüllte_Fragebögen {
     object Ausgefüllter_Fragebogen {
         Fragebogen: Fragebogen
