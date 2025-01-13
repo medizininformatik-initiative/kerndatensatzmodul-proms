@@ -1,0 +1,215 @@
+@startuml MII_PROMs_Informationsmodell_Complete
+skinparam linetype ortho
+skinparam linetype polyline
+left to right direction
+
+
+
+
+package Fragebogen_Vorlage {
+    object Fragebogen {
+        Fragebogen_Name_vollständig: i18nString
+        Fragebogen_Name_Abkürzung: i18nString
+        Fragebogen_Version: string
+        FragebogenID_intern: string
+        FragebogenID_Standard_ID: string
+        FragenID_Standard_System: string
+        FragenID_Standard_Version: string
+        Fragen: Frage
+        Author: string
+
+        Copyright: string
+
+
+    }
+    object Frage{
+
+        FragenID_intern: string
+        FragenID_Standard_ID: string
+        FragenID_Standard_System: string
+        FragenID_Standard_Version: string
+        Fragetext: i18nString
+        Frage_Ausfüllhinweise: i18nString
+        Anzeigemodalität: code
+        Angezeigt_wenn: Expression
+        Antwort_Vorlage: Antwort_Vorlage
+
+    }
+
+
+
+    Fragebogen::Frage "1..1" o-down- "1..*" Frage
+
+    object Antwort_Vorlage {
+        Antworttyp: code
+    }
+    Frage::Antwort_Vorlage "1..1"  o-down- "1..1" Antwort_Vorlage
+
+    object Antwort_Auswahl {
+        Mehrfachauswahl: boolean
+        Antwort_Standard_ValueSet: Reference
+        Antwort_Auswahl_Option: Antwort_Auswahl_Option
+    }
+
+    object Antwort_String {
+        minLength: Integer
+        maxLength: Integer
+    }
+    Antwort_Vorlage <|-down- Antwort_String
+
+
+    object Antwort_NumerischerWert {
+        Antwort_NumerischerWert_kleinster: Number
+        Antwort_NumerischerWert_groesster: Number
+        Antwort_NumerischerWert_Einheit: code
+        Antwort_NumerischerWert_Praezision: Integer
+
+    }
+    Antwort_Vorlage <|-down- Antwort_NumerischerWert
+
+
+    object Antwort_Datum {
+        minDatum: date
+        Datumsgenauigkeit: code
+    }
+    Antwort_Vorlage <|-down- Antwort_Datum
+
+    object Antwort_Auswahl_Option {
+        Antwort_Option_Text: i18nString
+        exklusiveAntwort: boolean
+        Antwort_Auswahl_Option_Code_intern: code
+        Antwort_Auswahl_Option_Standard_Code: code
+        Antwort_Auswahl_Option_Standard_System: string
+        Antwort_Auswahl_Option_Standard_System_Version: string
+
+    }
+
+    Antwort_Vorlage  <|-down-  Antwort_Auswahl
+    Antwort_Auswahl::Antwort_Auswahl_Option "1..*" o-down- "1..*" Antwort_Auswahl_Option
+
+
+}
+package Ausgefüllte_Fragebögen {
+    object Ausgefüllter_Fragebogen {
+        Fragebogen: Fragebogen
+        Erfassungsdatum: date
+        Ausfuellende_Person: identifier
+        Ausfuellende_Person_Rolle: code 
+        Antworten: Antwort_erfasst
+    }
+    object Antwort_erfasst {
+        FragenID_intern: string
+        Antwort: code, number, string, date
+
+    }
+    Ausgefüllter_Fragebogen::Antworten "1..1" o-right- "1..*" Antwort_erfasst
+}
+package Scores {
+    object Score_Vorlage {
+        ScoreVorlagenID: string
+        ScoreName: i18nString
+        Scoreberechnung: Score_Berechnung
+        Domäne: Domäne
+        Domänenskala: Domänenskala
+        Score_Mapping: Score_Mapping
+    }
+    object Score_berechnet {
+        ScoreID: string
+        Score_Vorlage: Score_Vorlage
+        Score_Berechnung: Score_Berechnung
+        Berechnungsdatum: date
+        Score_Interpretation: code
+        berechneter_Scorewert: (integer/float/string)
+    } 
+    
+    object Score_Berechnung {
+        ScoreBerechnungsID: string
+        Score_Datentyp: (integer/float/string)
+        Score_Berechnungs_Algoritmus: Expression
+        Score_Quelle : URI
+
+    }
+    Score_Vorlage::Scoreberechnung "1..*" o-- "1..*" Score_Berechnung
+    Score_Vorlage "1..1" <-- "0..*" Score_berechnet::Score_Vorlage   
+    Score_berechnet::Score_Berechnung "1..1" --> "0..*" Score_Berechnung
+
+
+    object Score_Fragebogen_Score {
+        Fragebogen_Vorlage: Fragebogen
+        Ausgefüllter_Fragebogen: Ausgefüllter_Fragebogen
+    }
+    note bottom of Score_Fragebogen_Score 
+        Scoreberechnung mit Input ausgefüllter Fragebogen. 
+        Definition eines Scores, der aus einem Fragebogen generiert wurde 
+    end note
+      Score_Berechnung <|-- Score_Fragebogen_Score
+
+    object Score_Itembasierter_Score {
+        Ausgefüllte_Antworten: Antwort_erfasst
+    }
+    Score_Berechnung <|-- Score_Itembasierter_Score
+
+    note bottom of Score_Itembasierter_Score 
+        Scoreberechnung mit Input einzelner Fragen. 
+        Definition eines Scores, der aus mehreren Fragebögen / Itemdatenbanken generiert wurde
+    end note
+
+    object Score_Mapping {
+        Source_ScoreID: string
+        Target_ScoreID: string
+        Mapping: Scorewert_Mapping 
+    }
+    Score_Mapping::Source_ScoreID -left--> Score_Vorlage::ScoreVorlagenID
+
+    object Scorewert_Mapping {
+        SourceValue: Quantity
+        TargetValue: Quantity
+        Mapping_Expression: Expression        
+    }
+    Score_Mapping "1..1" o-- "1..*" Scorewert_Mapping
+}
+package Domäne {
+    object Domäne {
+        Domäne_ID: string
+        Domäne_Code: code
+        Domäne_Titel: i18nString
+        Domäne_ParentDomäne: Domäne
+        Domänen_Skalen: Domänen_Skala
+    }
+    object Domäne_Skala {
+        Domänen_Skalen_ID: string
+        Minimum: integer / float
+        Maximum: integer / float
+        Skalenart: code
+        Skalenrichtung: code
+        Domänen_Skala_Score_Berechung: Domänen_Skala_Score_Berechnung
+        Referenzpopulation/Gültigkeit: string
+    }
+
+    object Domäne_Skala_Score_berechnet {
+        ScoreID: string
+        Score_Vorlage: Score_Vorlage
+        Domäne_Skala_Score_Berechnung: Domäne_Skala_Score_Berechnung
+        DomänenScore_Mapping: DomänenScore_Mapping
+        Berechnungsdatum: date
+        berechneter_Scorewert: (integer/float/string)
+    } 
+    object Domäne_Skala_Score_Berechnung {
+        ScoreBerechnungsID: string
+        Score_Datentyp: (integer/float/string)
+        Score_Berechnungs_Algoritmus: Expression
+    }
+
+    object Domäne_Skala_Score_Mapping {
+        Source_Domänen_Skalen_ID: string
+        Target_Domänen_Skalen_ID: string
+        Mapping: Scorewert_Mapping 
+    }
+Domäne "1..1" -down- "0..*" Domäne_Skala
+Domäne_Skala "1..1" <-right- "0..*" Domäne_Skala_Score_berechnet
+Domäne_Skala "0..*" <-right-> "2..2" Domäne_Skala_Score_Mapping
+Domäne_Skala "1..1" o-right- "..*" Domäne_Skala_Score_Berechnung
+Domäne_Skala_Score_berechnet::Domäne_Skala_Score_Berechnung "0..1" --> "0..1"  Domäne_Skala_Score_Berechnung
+}
+
+@enduml
