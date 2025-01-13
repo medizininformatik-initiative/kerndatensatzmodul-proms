@@ -1,4 +1,6 @@
-@startuml MII_PROMs_Fragebögen
+@startuml MII_PROMs_Scores
+skinparam linetype ortho
+skinparam linetype polyline
 package Scores {
     object Score_Vorlage {
         ScoreVorlagenID: string
@@ -6,12 +8,14 @@ package Scores {
         Scoreberechnung: Score_Berechnung
         Domäne: Domäne
         Domänenskala: Domänenskala
+        Score_Mapping: Score_Mapping
     }
     object Score_berechnet {
         ScoreID: string
         Score_Vorlage: Score_Vorlage
         Score_Berechnung: Score_Berechnung
         Berechnungsdatum: date
+        Score_Interpretation: code
         berechneter_Scorewert: (integer/float/string)
     } 
     
@@ -19,45 +23,47 @@ package Scores {
         ScoreBerechnungsID: string
         Score_Datentyp: (integer/float/string)
         Score_Berechnungs_Algoritmus: Expression
+        Score_Quelle : URI
 
     }
-    Score_Vorlage::Scoreberechnung o-- Score_Berechnung
-    Score_berechnet::Score_Vorlage o-- Score_Vorlage 
-    Score_berechnet::Score_Berechnung --> Score_Berechnung
+    Score_Vorlage::Scoreberechnung "1..*" o-- "1..*" Score_Berechnung
+    Score_Vorlage "1..1" <-- "0..*" Score_berechnet::Score_Vorlage   
+    Score_berechnet::Score_Berechnung "1..1" --> "0..*" Score_Berechnung
 
 
-    object Fragebogen_Score {
+    object Score_Fragebogen_Score {
         Fragebogen_Vorlage: Fragebogen
         Ausgefüllter_Fragebogen: Ausgefüllter_Fragebogen
     }
-    note bottom of Fragebogen_Score 
+    note bottom of Score_Fragebogen_Score 
         Scoreberechnung mit Input ausgefüllter Fragebogen. 
-        Hier kann direkt die Definition der Fragebogenvorlage genutzt werden
+        Definition eines Scores, der aus einem Fragebogen generiert wurde 
     end note
-      Score_Berechnung <|-- Fragebogen_Score
+      Score_Berechnung <|-- Score_Fragebogen_Score
 
-    object Itembasierter_Score {
+    object Score_Itembasierter_Score {
         Ausgefüllte_Antworten: Antwort_erfasst
     }
-    Score_Berechnung <|-- Itembasierter_Score
+    Score_Berechnung <|-- Score_Itembasierter_Score
 
-    note bottom of Itembasierter_Score 
+    note bottom of Score_Itembasierter_Score 
         Scoreberechnung mit Input einzelner Fragen. 
-        Hier müssen alle Informationen in den Fragen selbst enthalten sein 
-        (Datum, Patient, etc.)
+        Definition eines Scores, der aus mehreren Fragebögen / Itemdatenbanken generiert wurde
     end note
 
     object Score_Mapping {
         Source_ScoreID: string
         Target_ScoreID: string
-        Mapping: Mapping 
+        Mapping: Scorewert_Mapping 
     }
+    Score_Mapping::Source_ScoreID -left--> Score_Vorlage::ScoreVorlagenID
 
-    object Mapping {
-        Source: Expression
-        Target: Expression        
+    object Scorewert_Mapping {
+        SourceValue: Quantity
+        TargetValue: Quantity
+        Mapping_Expression: Expression        
     }
-    Score_Mapping o-- Mapping
+    Score_Mapping "1..1" o-- "1..*" Scorewert_Mapping
 }
 @enduml
 
