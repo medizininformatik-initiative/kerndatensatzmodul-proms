@@ -1,3 +1,4 @@
+/*
 Logical: MII_LM_PRO 
 Id: mii-lm-pro
 Title: "MII Logical Model Modul PROs, PROMs und abgeleitete Metriken"
@@ -7,3 +8,5 @@ Title: "MII Logical Model Modul PROs, PROMs und abgeleitete Metriken"
     * FragebogenVersion string "Version des Fragebogens" "Versionierung des Fragebogens nach SemVer"
 * AusgefuellterFragebogen BackboneElement "Ausgefüllter Fragebogen"
     * AusgefuellterFragebogenID string "ID des ausgefüllten Fragebogens" "ID des ausgefüllten Fragebogens"
+
+*/

@@ -24,8 +24,11 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
+dependencies:
+  hl7.fhir.uv.sdc: 3.0.0
+  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.x
+
+  
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -184,7 +187,7 @@ menu:
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
 #
-# FSHOnly: false
+FSHOnly: false
 #
 #
 # When set to true, the "short" and "definition" field on the root element of an Extension will
