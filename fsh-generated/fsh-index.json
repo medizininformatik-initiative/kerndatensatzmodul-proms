@@ -1,0 +1,26 @@
+[
+  {
+    "outputFile": "Questionnaire-PatientHealthQuestionnaire.json",
+    "fshName": "PatientHealthQuestionnaire",
+    "fshType": "Instance",
+    "fshFile": "definitions/phq-9/mii-dn-phq-9.fsh",
+    "startLine": 2,
+    "endLine": 80
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-phq-9-answer-list-ll358-3.json",
+    "fshName": "MII_VS_PHQ9_AnswerList_LL3583",
+    "fshType": "ValueSet",
+    "fshFile": "definitions/phq-9/mii-vs-phq-9-answer-list-ll358-3.fsh",
+    "startLine": 2,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-phq-9-answer-list-ll359-1.json",
+    "fshName": "MII_VS_PHQ9_AnswerList_LL3591",
+    "fshType": "ValueSet",
+    "fshFile": "definitions/phq-9/mii-vs-phq-9-answer-list-ll359-1.fsh",
+    "startLine": 2,
+    "endLine": 14
+  }
+]

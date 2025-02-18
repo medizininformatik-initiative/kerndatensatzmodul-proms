@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PHQ9_AnswerList_LL3591",
+  "id": "mii-vs-phq-9-answer-list-ll359-1",
+  "title": "PHQ.10",
+  "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll359-1",
+  "language": "de",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6572-7",
+            "display": "Überhaupt nicht erschwert",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Not difficult at all"
+              }
+            ]
+          },
+          {
+            "code": "LA6573-5",
+            "display": "Etwas erschwert",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Somewhat difficult"
+              }
+            ]
+          },
+          {
+            "code": "LA6575-0",
+            "display": "Relativ stark erschwert",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Very difficult"
+              }
+            ]
+          },
+          {
+            "code": "LA6574-3",
+            "display": "Sehr stark erschwert",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Extremely difficult"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
