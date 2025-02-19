@@ -1,0 +1,40 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.pro",
+  "version": "2025.0.0-alpha",
+  "description": "Medizininformatik Initiative - Erweiterungsmodul PRO",
+  "keywords": [
+    "MII",
+    "KDS",
+    "PRO",
+    "PROM",
+    "Measure"
+  ],
+  "type": "IG",
+  "license": "CC0-1.0",
+  "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro",
+  "url": "https://simplifier.net/mii-erweiterungsmodul-pro-2025",
+  "title": "MII IG Dokument",
+  "author": "Medizininformatik Initiative",
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "language": "de-DE",
+  "homepage": "https://www.medizininformatik-initiative.de",
+  "maintainers": [
+    {
+      "name": "Medizininformatik Initiative"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms.git"
+  },
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0",
+    "hl7.fhir.uv.sdc": "4.0.0-ballot"
+  }
+}

@@ -1,8 +1,15 @@
 // Metadata
-RuleSet: ResourceMetadata(status, experimental, language)
+RuleSet: DefinitionResourceMetadata(url, status, experimental, language)
+* url = {url}
 * status = #{status}
 * experimental = {experimental}
 * language = #{language}
+
+RuleSet: StructureDefinitionMetadata(url, status, experimental, language)
+* ^url = {url}
+* ^status = #{status}
+* ^experimental = {experimental}
+* ^language = #{language}
 
 RuleSet: QuestionnaireMetadata(name, date, title, publisher)
 * name = "{name}"
@@ -16,6 +23,7 @@ RuleSet: ConceptIntl(concept, display, language, translation)
   * ^designation[+].language = #{language}
   * ^designation[=].value = "{translation}"
 
+// NOTE: itemWeight replaces ordinalValue extension, but is currently not allowed in concept context
 RuleSet: ConceptWeightIntl(concept, display, weight, language, translation)
 * include {concept} "{display}"
   * ^designation[+].language = #{language}
@@ -33,55 +41,45 @@ RuleSet: Translation(path, language, translation)
   * extension[=].extension[=].valueString = "{translation}"
 
 // Questionnaire
-RuleSet: DescriptionIntl(description, language, translation)
-* description = "{description}"
-* insert Translation(description, {language}, {translation})
-
 RuleSet: DisplayItemIntl(item, linkId, text, language, translation)
 * {item}
   * linkId = "{linkId}"
-  * text = "{text}"
   * type = #display
-  * extension[+].url = $hl7-translation
-  * extension[=].extension[+].url = "lang"
-  * extension[=].extension[=].valueCode = #{language}
-  * extension[=].extension[+].url = "content"
-  * extension[=].extension[=].valueString = "{translation}"
+  * text = "{text}"
+  * text.extension[+].url = $hl7-translation
+  * text.extension[=].extension[+].url = "lang"
+  * text.extension[=].extension[=].valueCode = #{language}
+  * text.extension[=].extension[+].url = "content"
+  * text.extension[=].extension[=].valueString = "{translation}"
   * extension[+].url = $sdc-questionnaire-display-category-ex
   * extension[=].valueCodeableConcept = $sdc-questionnaire-display-category#{category}
-* insert ItemFlags({item}, false, false, true)
-
-RuleSet: Item(item, linkId, code, type)
-* {item}
-  * linkId = "{linkId}"
-  * text = "{text}"
-  * type = #{type}
 
 RuleSet: ItemIntl(item, linkId, prefix, code, type, text, language, translation)
 * {item}
   * linkId = "{linkId}"
-  * text = "{text}"
-  * prefix = "{prefix}"
   * type = #{type}
-  * extension[+].url = $hl7-translation
-  * extension[=].extension[+].url = "lang"
-  * extension[=].extension[=].valueCode = #{language}
-  * extension[=].extension[+].url = "content"
-  * extension[=].extension[=].valueString = "{translation}"
+  * prefix = "{prefix}"
+  * code = {code}
+  * text = "{text}"
+  * text.extension[+].url = $hl7-translation
+  * text.extension[=].extension[+].url = "lang"
+  * text.extension[=].extension[=].valueCode = #{language}
+  * text.extension[=].extension[+].url = "content"
+  * text.extension[=].extension[=].valueString = "{translation}"
 
 RuleSet: ItemAnswerSetIntl(item, linkId, prefix, code, type, answerValueSet, text, language, translation)
 * {item}
   * linkId = "{linkId}"
-  * text = "{text}"
+  * type = #{type}
   * prefix = "{prefix}"
   * code = {code}
-  * type = #{type}
+  * text = "{text}"
+  * text.extension[+].url = $hl7-translation
+  * text.extension[=].extension[+].url = "lang"
+  * text.extension[=].extension[=].valueCode = #{language}
+  * text.extension[=].extension[+].url = "content"
+  * text.extension[=].extension[=].valueString = "{translation}"
   * answerValueSet = Canonical({answerValueSet})
-  * extension[+].url = $hl7-translation
-  * extension[=].extension[+].url = "lang"
-  * extension[=].extension[=].valueCode = #{language}
-  * extension[=].extension[+].url = "content"
-  * extension[=].extension[=].valueString = "{translation}"
 
 RuleSet: ItemFlags(item, required, repeats, readOnly)
 * {item}

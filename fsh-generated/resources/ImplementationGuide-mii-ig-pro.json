@@ -1,0 +1,106 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mii-ig-pro",
+  "language": "de-DE",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
+  "version": "2025.0.0-alpha",
+  "name": "MII_IG_PRO",
+  "title": "MII IG PRO",
+  "status": "draft",
+  "publisher": "Medizininformatik-Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik-Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        },
+        {
+          "system": "email",
+          "value": "office@medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Medizininformatik Initiative - Erweiterungsmodul PRO",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "276",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.pro",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2025.0.0",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "4.0.0-ballot",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "id": "hl7_fhir_uv_sdc"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-phq-9"
+        },
+        "name": "MII QST PRO PHQ-9",
+        "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
+        },
+        "name": "MII VS PRO PHQ-9 Answer List LL358-3",
+        "description": "Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1"
+        },
+        "name": "MII VS PRO PHQ-9 Answer List LL359-1",
+        "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

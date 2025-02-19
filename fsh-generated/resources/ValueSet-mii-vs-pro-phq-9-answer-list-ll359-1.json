@@ -1,11 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_PHQ9_AnswerList_LL3591",
-  "id": "mii-vs-phq-9-answer-list-ll359-1",
-  "title": "PHQ.10",
+  "name": "MII_VS_PRO_PHQ9_AnswerList_LL3591",
+  "id": "mii-vs-pro-phq-9-answer-list-ll359-1",
+  "title": "MII VS PRO PHQ-9 Answer List LL359-1",
   "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll359-1",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1",
+  "experimental": false,
   "language": "de",
   "compose": {
     "include": [

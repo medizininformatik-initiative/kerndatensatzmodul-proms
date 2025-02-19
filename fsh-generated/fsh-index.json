@@ -1,26 +1,26 @@
 [
   {
-    "outputFile": "Questionnaire-PatientHealthQuestionnaire.json",
-    "fshName": "PatientHealthQuestionnaire",
+    "outputFile": "Questionnaire-mii-qst-pro-phq-9.json",
+    "fshName": "mii-qst-pro-phq-9",
     "fshType": "Instance",
-    "fshFile": "definitions/phq-9/mii-dn-phq-9.fsh",
+    "fshFile": "definitions/phq-9/mii-qst-pro-phq-9.fsh",
     "startLine": 2,
-    "endLine": 80
+    "endLine": 79
   },
   {
-    "outputFile": "ValueSet-mii-vs-phq-9-answer-list-ll358-3.json",
-    "fshName": "MII_VS_PHQ9_AnswerList_LL3583",
+    "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json",
+    "fshName": "MII_VS_PRO_PHQ9_AnswerList_LL3583",
     "fshType": "ValueSet",
-    "fshFile": "definitions/phq-9/mii-vs-phq-9-answer-list-ll358-3.fsh",
+    "fshFile": "definitions/phq-9/mii-vs-pro-phq-9-answer-list-ll358-3.fsh",
     "startLine": 2,
-    "endLine": 14
+    "endLine": 11
   },
   {
-    "outputFile": "ValueSet-mii-vs-phq-9-answer-list-ll359-1.json",
-    "fshName": "MII_VS_PHQ9_AnswerList_LL3591",
+    "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.json",
+    "fshName": "MII_VS_PRO_PHQ9_AnswerList_LL3591",
     "fshType": "ValueSet",
-    "fshFile": "definitions/phq-9/mii-vs-phq-9-answer-list-ll359-1.fsh",
+    "fshFile": "definitions/phq-9/mii-vs-pro-phq-9-answer-list-ll359-1.fsh",
     "startLine": 2,
-    "endLine": 14
+    "endLine": 11
   }
 ]

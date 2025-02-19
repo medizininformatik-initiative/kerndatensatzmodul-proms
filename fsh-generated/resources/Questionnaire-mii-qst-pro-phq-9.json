@@ -1,13 +1,13 @@
 {
   "resourceType": "Questionnaire",
-  "id": "PatientHealthQuestionnaire",
+  "id": "mii-qst-pro-phq-9",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-def-phq-9",
-  "title": "PHQ-9",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
+  "title": "MII QST PRO PHQ-9",
   "description": "Patient Health Questionnaire (PHQ-9)",
   "code": [
     {
@@ -19,19 +19,6 @@
   "item": [
     {
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Over the last two weeks, how often have you been bothered by any of the following problems?"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
           "valueCodeableConcept": {
@@ -45,11 +32,25 @@
         }
       ],
       "linkId": "PHQ-9.Description",
-      "text": "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?",
       "type": "display",
-      "required": false,
-      "repeats": false,
-      "readOnly": true
+      "text": "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Over the last two weeks, how often have you been bothered by any of the following problems?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "code": [
@@ -59,19 +60,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Little interest or pleasure in doing things"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -93,10 +81,27 @@
         }
       ],
       "linkId": "PHQ-9.1",
-      "text": "Wenig Interesse oder Freude an Ihren Tätigkeiten",
-      "prefix": "1",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "1",
+      "text": "Wenig Interesse oder Freude an Ihren Tätigkeiten",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Little interest or pleasure in doing things"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -106,19 +111,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Feeling down, depressed, or hopeless"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -140,10 +132,27 @@
         }
       ],
       "linkId": "PHQ-9.2",
-      "text": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
-      "prefix": "2",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "2",
+      "text": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Feeling down, depressed, or hopeless"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -153,19 +162,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Trouble falling or staying asleep, or sleeping too much"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -187,10 +183,27 @@
         }
       ],
       "linkId": "PHQ-9.3",
-      "text": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf",
-      "prefix": "3",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "3",
+      "text": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Trouble falling or staying asleep, or sleeping too much"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -200,19 +213,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Feeling tired or having little energy"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -234,10 +234,27 @@
         }
       ],
       "linkId": "PHQ-9.4",
-      "text": "Müdigkeit oder Gefühl, keine Energie zu haben",
-      "prefix": "4",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "4",
+      "text": "Müdigkeit oder Gefühl, keine Energie zu haben",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Feeling tired or having little energy"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -247,19 +264,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Poor appetite or overeating"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -281,10 +285,27 @@
         }
       ],
       "linkId": "PHQ-9.5",
-      "text": "Verminderter Appetit oder übermäßiges Bedürfnis zu essen",
-      "prefix": "5",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "5",
+      "text": "Verminderter Appetit oder übermäßiges Bedürfnis zu essen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Poor appetite or overeating"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -294,19 +315,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -328,10 +336,27 @@
         }
       ],
       "linkId": "PHQ-9.6",
-      "text": "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben",
-      "prefix": "6",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "6",
+      "text": "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -341,19 +366,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Trouble concentrating on things, such as reading the newspaper or watching television"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -375,10 +387,27 @@
         }
       ],
       "linkId": "PHQ-9.7",
-      "text": "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen",
-      "prefix": "7",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "7",
+      "text": "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Trouble concentrating on things, such as reading the newspaper or watching television"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -388,19 +417,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -422,10 +438,27 @@
         }
       ],
       "linkId": "PHQ-9.8",
-      "text": "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil „zappelig“ oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?",
-      "prefix": "8",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "8",
+      "text": "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil „zappelig“ oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
       "code": [
@@ -435,19 +468,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Thoughts that you would be better off dead or of hurting yourself in some way"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -469,31 +489,56 @@
         }
       ],
       "linkId": "PHQ-9.9",
-      "text": "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten",
-      "prefix": "9",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll358-3"
+      "prefix": "9",
+      "text": "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Thoughts that you would be better off dead or of hurting yourself in some way"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
     },
     {
-      "extension": [
+      "code": [
         {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "Total Score"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          "code": "44261-6",
+          "system": "http://loinc.org"
         }
       ],
       "linkId": "PHQ-9.Score",
-      "text": "Gesamtwert",
+      "type": "quantity",
       "prefix": "Auswertung",
-      "type": "quantity"
+      "text": "Gesamtwert",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Total Score"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "code": [
@@ -503,19 +548,6 @@
         }
       ],
       "extension": [
-        {
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "en"
-            },
-            {
-              "url": "content",
-              "valueString": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/translation"
-        },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
           "valueCode": "horizontal"
@@ -537,12 +569,30 @@
         }
       ],
       "linkId": "PHQ-9.10",
-      "text": "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen",
-      "prefix": "10",
       "type": "choice",
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-phq-9-answer-list-ll359-1"
+      "prefix": "10",
+      "text": "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1"
     }
   ],
   "status": "active",
-  "experimental": true
+  "experimental": true,
+  "language": "de"
 }

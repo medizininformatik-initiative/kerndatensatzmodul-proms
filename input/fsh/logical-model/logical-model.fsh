@@ -1,7 +1,7 @@
 /*
 Logical: MII_LM_PRO 
 Id: mii-lm-pro
-Title: "MII Logical Model Modul PROs, PROMs und abgeleitete Metriken"
+Title: "MII Logical Model Modul PRO, PRO und abgeleitete Metriken"
 
 * Fragebogen BackboneElement "Fragebogen"
     * FragebogenID string "ID des Fragebogens" "eindeutige ID zur Bezeichnung eines Fragebogens"
