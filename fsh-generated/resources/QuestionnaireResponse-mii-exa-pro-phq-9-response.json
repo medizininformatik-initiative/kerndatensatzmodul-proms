@@ -1,0 +1,125 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-phq-9-response",
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.1"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.2"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.3"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.4"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.5"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.6"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.7"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.8"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6571-9"
+          }
+        }
+      ],
+      "linkId": "PHQ.9"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6574-3"
+          }
+        }
+      ],
+      "linkId": "PHQ.10"
+    },
+    {
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 27,
+            "code": "score",
+            "unit": "pts.",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ],
+      "linkId": "PHQ.Score"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "authored": "2023-10-01T12:00:00Z",
+  "questionnaire": "Questionnaire/mii-qst-pro-phq-9"
+}
