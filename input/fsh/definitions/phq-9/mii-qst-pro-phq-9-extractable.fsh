@@ -1,5 +1,5 @@
 // TODO: Title/ Description Translation?
-Instance: mii-qst-pro-phq-9
+Instance: mii-qst-pro-phq-9-extractable-observation
 InstanceOf: SDCBaseQuestionnaire
 Title: "MII QST PRO PHQ-9"
 Description: "Patient Health Questionnaire (PHQ-9)"
@@ -71,7 +71,7 @@ Usage: #definition
 // TODO: Score calculation and interpretation
 // PHQ-9.Score
 * insert ItemIntl(item[10], PHQ-9.Score, Auswertung, $LNC#44261-6, quantity, Gesamtwert, en, Total Score)
-* 
+
 // PHQ-9.10
 * insert ItemAnswerSetIntl(item[11], PHQ-9.10, 10, $LNC#69722-7, choice, $mii-vs-pro-phq-9-answer-list-ll359-1,
     Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen\, geben Sie bitte an\, wie sehr diese Probleme es Ihnen erschwert haben\, Ihre Arbeit zu erledigen\, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen,
