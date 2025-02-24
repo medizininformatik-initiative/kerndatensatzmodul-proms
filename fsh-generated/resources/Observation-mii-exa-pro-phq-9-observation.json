@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-pro-phq-9-observation",
+  "valueQuantity": {
+    "value": 27,
+    "code": "{score}",
+    "unit": "{score}",
+    "system": "http://unitsofmeasure.org"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2023-10-01T12:00:00Z",
+  "code": {
+    "coding": [
+      {
+        "code": "44249-1",
+        "system": "http://loinc.org",
+        "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+      }
+    ]
+  }
+}

@@ -57,6 +57,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-phq-9-extractable-observation"
+        },
+        "name": "MII QST PRO PHQ-9",
+        "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-phq-9"
         },
         "name": "MII QST PRO PHQ-9",
@@ -78,6 +86,20 @@
         "name": "MII VS PRO PHQ-9 Answer List LL359-1",
         "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-phq-9-observation"
+        },
+        "name": "PHQ-9 Observation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-phq-9-response"
+        },
+        "name": "PHQ-9 Questionnaire Response Example",
+        "exampleBoolean": true
       }
     ],
     "page": {
