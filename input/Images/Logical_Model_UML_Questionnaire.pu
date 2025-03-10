@@ -68,10 +68,13 @@ package Fragebogen_Vorlage {
     Antwort_Vorlage <|-down- Antwort_NumerischerWert
 
 
+
     object Antwort_Datum {
         minDatum: date
         Datumsgenauigkeit: code
     }
+    object Antwort_Uhrzeit {
+        }
     Antwort_Vorlage <|-down- Antwort_Datum
 
     object Antwort_Auswahl_Option {
@@ -86,6 +89,7 @@ package Fragebogen_Vorlage {
 
     Antwort_Vorlage  <|-down-  Antwort_Auswahl
     Antwort_Auswahl::Antwort_Auswahl_Option "1..*" o-down- "1..*" Antwort_Auswahl_Option
+    Antwort_Vorlage <|-left- Antwort_Uhrzeit
 
 
 }
