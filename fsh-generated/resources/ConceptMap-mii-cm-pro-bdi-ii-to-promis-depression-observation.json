@@ -1,0 +1,32 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "mii-cm-pro-bdi-ii-to-promis-depression-observation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation",
+  "title": "ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation",
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "34.9",
+              "display": "34.9",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "0"
+        },
+        {
+          "target": [
+            {
+              "code": "63.2",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "27"
+        }
+      ]
+    }
+  ],
+  "status": "draft"
+}

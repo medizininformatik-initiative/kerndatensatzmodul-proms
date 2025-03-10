@@ -57,6 +57,20 @@
     "resource": [
       {
         "reference": {
+          "reference": "Observation/mii-exa-pro-bdi-ii-observation"
+        },
+        "name": "BDI-II Observation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation"
+        },
+        "name": "ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-phq-9-extractable-observation"
         },
         "name": "MII QST PRO PHQ-9",
@@ -99,6 +113,13 @@
           "reference": "QuestionnaireResponse/mii-exa-pro-phq-9-response"
         },
         "name": "PHQ-9 Questionnaire Response Example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation"
+        },
+        "name": "PROMIS Depression T-Score, derived from BDI-II Observation",
         "exampleBoolean": true
       }
     ],

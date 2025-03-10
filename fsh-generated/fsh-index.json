@@ -1,9 +1,33 @@
 [
   {
+    "outputFile": "ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json",
+    "fshName": "mii-cm-pro-bdi-ii-to-promis-depression-observation",
+    "fshType": "Instance",
+    "fshFile": "definitions\\domains\\depression\\mii-cm-pro-bdi-ii-to-promis-depression.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Observation-mii-exa-pro-bdi-ii-observation.json",
+    "fshName": "mii-exa-pro-bdi-ii-observation",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-bdi-II-observation.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "Observation-mii-exa-pro-phq-9-observation.json",
     "fshName": "mii-exa-pro-phq-9-observation",
     "fshType": "Instance",
     "fshFile": "examples\\mii-exa-pro-phq-9-observation.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation.json",
+    "fshName": "mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-promis-depression-from-bdi-ii-observation.fsh",
     "startLine": 1,
     "endLine": 11
   },
