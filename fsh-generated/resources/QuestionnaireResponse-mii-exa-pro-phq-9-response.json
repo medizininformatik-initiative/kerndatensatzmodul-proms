@@ -1,6 +1,11 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "mii-exa-pro-phq-9-response",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponsecommon"
+    ]
+  },
   "item": [
     {
       "answer": [
@@ -107,8 +112,8 @@
         {
           "valueQuantity": {
             "value": 27,
-            "code": "score",
-            "unit": "pts.",
+            "code": "{score}",
+            "unit": "{score}",
             "system": "http://unitsofmeasure.org"
           }
         }

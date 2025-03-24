@@ -71,7 +71,7 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/mii-qst-pro-phq-9-extractable-observation"
+          "reference": "Questionnaire/mii-qst-pro-phq-9"
         },
         "name": "MII QST PRO PHQ-9",
         "description": "Patient Health Questionnaire (PHQ-9)",
@@ -79,10 +79,10 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/mii-qst-pro-phq-9"
+          "reference": "Questionnaire/mii-qst-pro-phq-9-sdc-rendering"
         },
-        "name": "MII QST PRO PHQ-9",
-        "description": "Patient Health Questionnaire (PHQ-9)",
+        "name": "MII QST PRO PHQ-9 (SDC Rendering)",
+        "description": "Patient Health Questionnaire (PHQ-9) SDC Rendering",
         "exampleBoolean": false
       },
       {
@@ -105,7 +105,7 @@
         "reference": {
           "reference": "Observation/mii-exa-pro-phq-9-observation"
         },
-        "name": "PHQ-9 Observation",
+        "name": "PHQ-9 Observation Example",
         "exampleBoolean": true
       },
       {

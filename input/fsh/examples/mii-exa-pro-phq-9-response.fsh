@@ -1,5 +1,5 @@
 Instance: mii-exa-pro-phq-9-response
-InstanceOf: QuestionnaireResponse
+InstanceOf: SDCQuestionnaireResponseCommon
 Title: "PHQ-9 Questionnaire Response Example"
 * status = #completed
 * subject = Reference(Patient/example)
@@ -27,9 +27,6 @@ Title: "PHQ-9 Questionnaire Response Example"
 * item[9].answer[0].valueCoding = #LA6574-3
 * item[10].linkId = "PHQ.Score"
 * item[10].answer[0].valueQuantity.value = 27
-* item[10].answer[0].valueQuantity.code = #score
-* item[10].answer[0].valueQuantity.unit = "pts."
-* item[10].answer[0].valueQuantity.system = "http://unitsofmeasure.org"
-
-
-
+* item[10].answer[0].valueQuantity.code = #{score}
+* item[10].answer[0].valueQuantity.unit = "{score}"
+* item[10].answer[0].valueQuantity.system = $UCUM
