@@ -7,13 +7,14 @@ left to right direction
 
 package Fragebogen_Vorlage {
     object Fragebogen {
+        FragebogenID: string
         Fragebogen_Name_vollständig: i18nString
         Fragebogen_Name_Abkürzung: i18nString
         Fragebogen_Version: string
         FragebogenID_intern: string
-        FragebogenID_Standard_ID: string
-        FragenID_Standard_System: string
-        FragenID_Standard_Version: string
+        Fragebogen_Standard_ID: string
+        Fragebogen_Standard_System: string
+        Fragebogen_Standard_Version: string
         Fragen: Frage
         Author: string
 
@@ -30,7 +31,7 @@ package Fragebogen_Vorlage {
         Fragetext: i18nString
         Frage_Ausfüllhinweise: i18nString
         Anzeigemodalität: code
-        Angezeigt_wenn: Expression
+        Frage_ausgefüllt_wenn: Expression
         Antwort_Vorlage: Antwort_Vorlage
 
     }
@@ -51,8 +52,8 @@ package Fragebogen_Vorlage {
     }
 
     object Antwort_String {
-        minLength: Integer
-        maxLength: Integer
+        Antwort_String_minLength: Integer
+        Antwort_String_maxLength: Integer
     }
     Antwort_Vorlage <|-down- Antwort_String
 
@@ -67,15 +68,18 @@ package Fragebogen_Vorlage {
     Antwort_Vorlage <|-down- Antwort_NumerischerWert
 
 
+
     object Antwort_Datum {
         minDatum: date
         Datumsgenauigkeit: code
     }
+    object Antwort_Uhrzeit {
+        }
     Antwort_Vorlage <|-down- Antwort_Datum
 
     object Antwort_Auswahl_Option {
         Antwort_Option_Text: i18nString
-        exklusiveAntwort: boolean
+        Antwort_Option_Exklusive: boolean
         Antwort_Auswahl_Option_Code_intern: code
         Antwort_Auswahl_Option_Standard_Code: code
         Antwort_Auswahl_Option_Standard_System: string
@@ -85,6 +89,7 @@ package Fragebogen_Vorlage {
 
     Antwort_Vorlage  <|-down-  Antwort_Auswahl
     Antwort_Auswahl::Antwort_Auswahl_Option "1..*" o-down- "1..*" Antwort_Auswahl_Option
+    Antwort_Vorlage <|-left- Antwort_Uhrzeit
 
 
 }
