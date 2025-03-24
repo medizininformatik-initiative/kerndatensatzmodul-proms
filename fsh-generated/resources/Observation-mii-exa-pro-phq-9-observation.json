@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-phq-9-observation",
   "valueQuantity": {
     "value": 27,
-    "code": "{score}",
+    "code": "score",
     "unit": "{score}",
     "system": "http://unitsofmeasure.org"
   },
@@ -15,9 +15,9 @@
   "code": {
     "coding": [
       {
-        "code": "44249-1",
+        "code": "44261-6",
         "system": "http://loinc.org",
-        "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+        "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
       }
     ]
   }

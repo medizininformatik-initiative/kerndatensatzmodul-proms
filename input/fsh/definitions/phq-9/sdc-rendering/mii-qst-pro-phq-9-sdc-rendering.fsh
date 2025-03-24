@@ -1,12 +1,12 @@
 // TODO: Title/ Description Translation?
-Instance: mii-qst-pro-phq-9-extractable-observation
+Instance: mii-qst-pro-phq-9-sdc-rendering
 InstanceOf: SDCBaseQuestionnaire
-Title: "MII QST PRO PHQ-9"
-Description: "Patient Health Questionnaire (PHQ-9)"
+Title: "MII QST PRO PHQ-9 (SDC Rendering)"
+Description: "Patient Health Questionnaire (PHQ-9) SDC Rendering"
 Usage: #definition
 
 // Definitional Metadata
-* insert DefinitionResourceMetadata($mii-qst-pro-phq-9, active, true, de)
+* insert DefinitionResourceMetadata($mii-qst-pro-phq-9-sdc-rendering, active, true, de)
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
 // PHQ-9.Description
@@ -75,5 +75,5 @@ Usage: #definition
 // PHQ-9.10
 * insert ItemAnswerSetIntl(item[11], PHQ-9.10, 10, $LNC#69722-7, choice, $mii-vs-pro-phq-9-answer-list-ll359-1,
     Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen\, geben Sie bitte an\, wie sehr diese Probleme es Ihnen erschwert haben\, Ihre Arbeit zu erledigen\, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen,
-    en, If you checked off any problems\, how difficulties have these problems made it for you to do your work\, take care of things at home\, or get along with other people?)
+    en, If you checked off any problems\, how difficult have these problems made it for you to do your work\, take care of things at home\, or get along with other people?)
 * insert ItemAnswerSetColumnRendering(item[11], 4)

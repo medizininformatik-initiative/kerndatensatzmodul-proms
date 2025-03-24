@@ -1,14 +1,14 @@
 {
   "resourceType": "Questionnaire",
-  "id": "mii-qst-pro-phq-9-extractable-observation",
+  "id": "mii-qst-pro-phq-9-sdc-rendering",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
-  "title": "MII QST PRO PHQ-9",
-  "description": "Patient Health Questionnaire (PHQ-9)",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9-sdc-rendering",
+  "title": "MII QST PRO PHQ-9 (SDC Rendering)",
+  "description": "Patient Health Questionnaire (PHQ-9) SDC Rendering",
   "code": [
     {
       "code": "44249-1",
@@ -582,7 +582,7 @@
               },
               {
                 "url": "content",
-                "valueString": "If you checked off any problems, how difficulties have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+                "valueString": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"

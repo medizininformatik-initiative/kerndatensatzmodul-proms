@@ -3,15 +3,15 @@
     "outputFile": "Observation-mii-exa-pro-phq-9-observation.json",
     "fshName": "mii-exa-pro-phq-9-observation",
     "fshType": "Instance",
-    "fshFile": "examples\\mii-exa-pro-phq-9-observation.fsh",
-    "startLine": 1,
-    "endLine": 11
+    "fshFile": "examples/mii-exa-pro-phq-9-observation.fsh",
+    "startLine": 2,
+    "endLine": 12
   },
   {
-    "outputFile": "Questionnaire-mii-qst-pro-phq-9-extractable-observation.json",
-    "fshName": "mii-qst-pro-phq-9-extractable-observation",
+    "outputFile": "Questionnaire-mii-qst-pro-phq-9-sdc-rendering.json",
+    "fshName": "mii-qst-pro-phq-9-sdc-rendering",
     "fshType": "Instance",
-    "fshFile": "definitions\\phq-9\\mii-qst-pro-phq-9-extractable.fsh",
+    "fshFile": "definitions/phq-9/sdc-rendering/mii-qst-pro-phq-9-sdc-rendering.fsh",
     "startLine": 2,
     "endLine": 79
   },
@@ -19,15 +19,15 @@
     "outputFile": "Questionnaire-mii-qst-pro-phq-9.json",
     "fshName": "mii-qst-pro-phq-9",
     "fshType": "Instance",
-    "fshFile": "definitions\\phq-9\\mii-qst-pro-phq-9.fsh",
-    "startLine": 2,
-    "endLine": 79
+    "fshFile": "definitions/phq-9/mii-qst-pro-phq-9.fsh",
+    "startLine": 1,
+    "endLine": 541
   },
   {
     "outputFile": "QuestionnaireResponse-mii-exa-pro-phq-9-response.json",
     "fshName": "mii-exa-pro-phq-9-response",
     "fshType": "Instance",
-    "fshFile": "examples\\mii-exa-pro-phq-9-response.fsh",
+    "fshFile": "examples/mii-exa-pro-phq-9-response.fsh",
     "startLine": 1,
     "endLine": 32
   },
@@ -35,7 +35,7 @@
     "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json",
     "fshName": "MII_VS_PRO_PHQ9_AnswerList_LL3583",
     "fshType": "ValueSet",
-    "fshFile": "definitions\\phq-9\\mii-vs-pro-phq-9-answer-list-ll358-3.fsh",
+    "fshFile": "definitions/phq-9/sdc-rendering/mii-vs-pro-phq-9-answer-list-ll358-3.fsh",
     "startLine": 2,
     "endLine": 11
   },
@@ -43,7 +43,7 @@
     "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.json",
     "fshName": "MII_VS_PRO_PHQ9_AnswerList_LL3591",
     "fshType": "ValueSet",
-    "fshFile": "definitions\\phq-9\\mii-vs-pro-phq-9-answer-list-ll359-1.fsh",
+    "fshFile": "definitions/phq-9/sdc-rendering/mii-vs-pro-phq-9-answer-list-ll359-1.fsh",
     "startLine": 2,
     "endLine": 11
   }
