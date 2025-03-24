@@ -1,0 +1,7 @@
+@startuml "UseCase3: interhospital harmonization"
+DataIntegrationCenter_1 -> DataIntegrationCenter_1 : collect and harmonize data
+DataIntegrationCenter_2 -> DataIntegrationCenter_2 : collect and harmonize data
+DataIntegrationCenter_1 -> Data_Consumer : forward harmonized data 
+DataIntegrationCenter_2 -> Data_Consumer : forward harmonized data 
+
+@enduml

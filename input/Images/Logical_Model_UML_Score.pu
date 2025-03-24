@@ -21,8 +21,8 @@ package Scores {
     
     object Score_Berechnung {
         ScoreBerechnungsID: string
-        Score_Datentyp: (integer/float/string)
-        Score_Berechnungs_Algoritmus: Expression
+        Score_Datentyp: code
+        Score_Berechnungs_Algorithmus: Expression
         Score_Quelle : URI
 
     }
