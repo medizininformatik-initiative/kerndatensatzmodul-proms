@@ -7,6 +7,6 @@ Title: "PHQ-9 Observation Example"
 * effectiveDateTime = "2023-10-01T12:00:00Z"
 * code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
 * valueQuantity.value = 27
-* valueQuantity.code = #score
+* valueQuantity.code = #{score}
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $UCUM

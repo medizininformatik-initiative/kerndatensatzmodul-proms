@@ -535,7 +535,7 @@ Usage: #definition
 * item[10].text.extension[1].valueBoolean = true
 * item[10].text.extension[2].url = $hl7-questionnaire-unit
 * item[10].text.extension[2].valueCoding.system = $UCUM
-* item[10].text.extension[2].valueCoding.code = #score
+* item[10].text.extension[2].valueCoding.code = #{score}
 * item[10].text.extension[3].url = $sdc-questionnaire-observation-extract-category
 * item[10].text.extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[10].text.extension[3].valueCodeableConcept.coding.code = #survey
