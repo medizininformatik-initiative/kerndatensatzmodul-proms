@@ -75,6 +75,10 @@ package Fragebogen_Vorlage {
         minDatum: date
         Datumsgenauigkeit: code
     }
+    object Antwort_Uhrzeit {
+    }
+    Antwort_Vorlage <|-left- Antwort_Uhrzeit
+
     Antwort_Vorlage <|-down- Antwort_Datum
 
     object Antwort_Auswahl_Option {
@@ -127,8 +131,8 @@ package Scores {
     
     object Score_Berechnung {
         ScoreBerechnungsID: string
-        Score_Datentyp: (integer/float/string)
-        Score_Berechnungs_Algoritmus: Expression
+        Score_Datentyp: code
+        Score_Berechnungs_Algorithmus: Expression
         Score_Quelle : URI
 
     }
