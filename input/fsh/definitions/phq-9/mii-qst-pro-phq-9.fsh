@@ -525,6 +525,10 @@ Usage: #definition
 * item[10].type = #quantity
 * item[10].prefix = "Auswertung"
 * item[10].code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+* item[10].extension[0].url = $sdc-questionnaire-calculated-expression
+* item[10].extension[0].valueExpression.name = "Scoreberechnung"
+* item[10].extension[0].valueExpression.language = #text/fhirpath
+* item[10].extension[0].valueExpression.expression = "%resource.item.where(linkId!='PHQ-9.10' | linkId!='PHQ-9.Score').answer.value.weight().sum()"
 * item[10].text = "Gesamtwert"
 * item[10].text.extension[0].url = $hl7-translation
 * item[10].text.extension[0].extension[0].url = "lang"
@@ -539,3 +543,4 @@ Usage: #definition
 * item[10].text.extension[3].url = $sdc-questionnaire-observation-extract-category
 * item[10].text.extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[10].text.extension[3].valueCodeableConcept.coding.code = #survey
+

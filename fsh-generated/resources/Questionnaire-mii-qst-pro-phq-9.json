@@ -1406,6 +1406,16 @@
           "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId!='PHQ-9.10' | linkId!='PHQ-9.Score').answer.value.weight().sum()"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        }
+      ],
       "linkId": "PHQ-9.Score",
       "type": "quantity",
       "prefix": "Auswertung",
