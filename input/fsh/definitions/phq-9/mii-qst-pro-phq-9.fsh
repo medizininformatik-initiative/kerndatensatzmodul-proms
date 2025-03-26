@@ -522,9 +522,10 @@ Usage: #definition
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Extremely difficult"
 
 * item[10].linkId = "PHQ-9.Score"
-* item[10].type = #quantity
+* item[10].type = #decimal
 * item[10].prefix = "Auswertung"
 * item[10].code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+* item[10].readOnly = true
 * item[10].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[10].extension[0].valueExpression.name = "Scoreberechnung"
 * item[10].extension[0].valueExpression.language = #text/fhirpath
@@ -535,12 +536,12 @@ Usage: #definition
 * item[10].text.extension[0].extension[0].valueCode = #en
 * item[10].text.extension[0].extension[1].url = "content"
 * item[10].text.extension[0].extension[1].valueString = "Total Score"
-* item[10].text.extension[1].url = $sdc-questionnaire-observation-extract
-* item[10].text.extension[1].valueBoolean = true
-* item[10].text.extension[2].url = $hl7-questionnaire-unit
-* item[10].text.extension[2].valueCoding.system = $UCUM
-* item[10].text.extension[2].valueCoding.code = #{score}
-* item[10].text.extension[3].url = $sdc-questionnaire-observation-extract-category
-* item[10].text.extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
-* item[10].text.extension[3].valueCodeableConcept.coding.code = #survey
+* item[10].extension[1].url = $sdc-questionnaire-observation-extract
+* item[10].extension[1].valueBoolean = true
+* item[10].extension[2].url = $hl7-questionnaire-unit
+* item[10].extension[2].valueCoding.system = $UCUM
+* item[10].extension[2].valueCoding.code = #{score}
+* item[10].extension[3].url = $sdc-questionnaire-observation-extract-category
+* item[10].extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
+* item[10].extension[3].valueCodeableConcept.coding.code = #survey
 
