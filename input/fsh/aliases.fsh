@@ -1,11 +1,15 @@
+Alias: $mii-qst-pro-eq-5d-5l = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l
 Alias: $mii-qst-pro-phq-9 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9
 Alias: $mii-qst-pro-phq-9-sdc-rendering = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9-sdc-rendering
 Alias: $mii-vs-pro-phq-9-answer-list-ll358-3 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3
 Alias: $mii-vs-pro-phq-9-answer-list-ll359-1 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1
 
 // HL7
+Alias: $hl7-max-value = http://hl7.org/fhir/StructureDefinition/maxValue
+Alias: $hl7-min-value = http://hl7.org/fhir/StructureDefinition/minValue
 Alias: $hl7-observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $hl7-ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
+Alias: $hl7-questionnaire-hidden = http://hl7.org/fhir/StructureDefinition/questionnaire-hidden
 Alias: $hl7-questionnaire-unit = http://hl7.org/fhir/StructureDefinition/questionnaire-unit
 Alias: $hl7-translation = http://hl7.org/fhir/StructureDefinition/translation
 
@@ -19,11 +23,11 @@ Alias: $sdc-questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-
 Alias: $sdc-questionnaire-item-control-ex = http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl
 
 // SDC Extraction
+Alias: $sdc-questionnaire-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
 Alias: $sdc-questionnaire-observation-extract = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract
 Alias: $sdc-questionnaire-observation-extract-category = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category
 
-Alias: $sdc-questionnaire-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
-
 // Terminology
 Alias: $LNC = http://loinc.org
+Alias: $SCT = http://snomed.info/sct
 Alias: $UCUM = http://unitsofmeasure.org

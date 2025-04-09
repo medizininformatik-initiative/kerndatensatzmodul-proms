@@ -1,6 +1,7 @@
 [mii-exa-pro-bdi-ii-observation]: Observation-mii-exa-pro-bdi-ii-observation.html
 [mii-cm-pro-bdi-ii-to-promis-depression-observation]: ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html
 [mii-obsdef-pro-score-phq-9]: ObservationDefinition-mii-obsdef-pro-score-phq-9.html
+[mii-qst-pro-eq-5d-5l]: Questionnaire-mii-qst-pro-eq-5d-5l.html
 [mii-qst-pro-phq-9]: Questionnaire-mii-qst-pro-phq-9.html
 [mii-qst-pro-phq-9-sdc-rendering]: Questionnaire-mii-qst-pro-phq-9-sdc-rendering.html
 [MII_VS_PRO_PHQ9_AnswerList_LL3583]: ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.html
