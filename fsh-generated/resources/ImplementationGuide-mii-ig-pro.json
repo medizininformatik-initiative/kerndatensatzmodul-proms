@@ -71,10 +71,26 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-eq-5d-value-set"
+        },
+        "name": "MII CS EQ-5D Value Set",
+        "description": "EuroQol EQ-5D Value Set",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-9"
         },
         "name": "MII ObsDef PRO Score PHQ-9",
         "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eq-5d-5l-answer-coding"
+        },
+        "name": "MII QST PRO EQ-5D-5L",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
         "exampleBoolean": false
       },
       {

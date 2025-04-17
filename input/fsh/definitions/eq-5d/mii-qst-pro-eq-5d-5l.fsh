@@ -21,7 +21,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "Under each heading, please tick the ONE box that best describes your health TODAY."
 
-* item[+].linkId = "EQ-5D-5L.MB"
+* item[+].linkId = "EQ-5D-5L.MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
 * item[=].text.extension[+].url = $hl7-translation
@@ -376,7 +376,7 @@ Usage: #definition
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
+* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
 * item[=].readOnly = true
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)

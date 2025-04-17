@@ -224,7 +224,7 @@
           }
         }
       ],
-      "linkId": "EQ-5D-5L.MB",
+      "linkId": "EQ-5D-5L.MO",
       "type": "choice",
       "text": "BEWEGLICHKEIT / MOBILITÄT",
       "_text": {
@@ -1113,7 +1113,7 @@
         {
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
+            "expression": "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         }

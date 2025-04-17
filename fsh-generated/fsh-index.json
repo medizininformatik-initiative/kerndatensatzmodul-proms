@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CodeSystem-mii-cs-pro-eq-5d-value-set.json",
+    "fshName": "MII_CS_PRO_EQ_5D_ValueSet",
+    "fshType": "CodeSystem",
+    "fshFile": "definitions/eq-5d/mii-cs-pro-eq-5d-value-set.fsh",
+    "startLine": 1,
+    "endLine": 275
+  },
+  {
     "outputFile": "ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json",
     "fshName": "mii-cm-pro-bdi-ii-to-promis-depression-observation",
     "fshType": "Instance",
@@ -46,6 +54,14 @@
     "fshFile": "definitions/phq-9/mii-obsdef-pro-score-phq-9.fsh",
     "startLine": 1,
     "endLine": 16
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-answer-coding.json",
+    "fshName": "mii-qst-pro-eq-5d-5l-answer-coding",
+    "fshType": "Instance",
+    "fshFile": "definitions/eq-5d/mii-qst-pro-eq-5d-5l-answer-coding.fsh",
+    "startLine": 1,
+    "endLine": 246
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l.json",
