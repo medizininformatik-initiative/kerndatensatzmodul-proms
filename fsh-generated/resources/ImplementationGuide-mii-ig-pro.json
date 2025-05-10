@@ -71,6 +71,14 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-9"
+        },
+        "name": "MII ObsDef PRO Score PHQ-9",
+        "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-phq-9"
         },
         "name": "MII QST PRO PHQ-9",
@@ -100,6 +108,13 @@
         "name": "MII VS PRO PHQ-9 Answer List LL359-1",
         "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Measure/mii-exa-pro-phq-9-measure"
+        },
+        "name": "PHQ-9 Observation Example",
+        "exampleBoolean": true
       },
       {
         "reference": {

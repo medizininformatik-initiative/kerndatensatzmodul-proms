@@ -22,6 +22,8 @@ Alias: $sdc-questionnaire-item-control-ex = http://hl7.org/fhir/StructureDefinit
 Alias: $sdc-questionnaire-observation-extract = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract
 Alias: $sdc-questionnaire-observation-extract-category = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category
 
+Alias: $sdc-questionnaire-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
+
 // Terminology
 Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
