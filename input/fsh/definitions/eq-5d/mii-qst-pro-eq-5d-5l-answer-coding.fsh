@@ -170,8 +170,8 @@ Usage: #definition
 * item[=].extension[=].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
-* item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.extension('http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix').aggregate($total & $this, '')"
+* item[=].extension[=].valueExpression.language = #text/cql
+* item[=].extension[=].valueExpression.expression = "CalculateTotalScore"
 * item[=].readOnly = true
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)

@@ -528,8 +528,8 @@ Usage: #definition
 * item[10].readOnly = true
 * item[10].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[10].extension[0].valueExpression.name = "Scoreberechnung"
-* item[10].extension[0].valueExpression.language = #text/fhirpath
-* item[10].extension[0].valueExpression.expression = "%resource.item.where(linkId!='PHQ-9.10' | linkId!='PHQ-9.Score').answer.value.weight().sum()"
+* item[10].extension[0].valueExpression.language = #text/cql
+* item[10].extension[0].valueExpression.expression = ""
 * item[10].text = "Gesamtwert"
 * item[10].text.extension[0].url = $hl7-translation
 * item[10].text.extension[0].extension[0].url = "lang"

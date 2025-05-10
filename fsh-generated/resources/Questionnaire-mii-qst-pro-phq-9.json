@@ -1410,8 +1410,8 @@
         {
           "valueExpression": {
             "name": "Scoreberechnung",
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId!='PHQ-9.10' | linkId!='PHQ-9.Score').answer.value.weight().sum()"
+            "language": "text/cql",
+            "expression": ""
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         },
