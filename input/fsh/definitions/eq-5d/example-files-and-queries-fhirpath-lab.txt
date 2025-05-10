@@ -1,0 +1,932 @@
+/*{
+    "resourceType": "Questionnaire",
+    "id": "ParameterisedValueSetMultiple",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-04-16T00:10:27.8731684+00:00"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+            "valueUrl": "https://r4.ontoserver.csiro.au/fhir"
+        }
+    ],
+    "url": "https://smartforms.csiro.au/docs/pvs/multiple",
+    "version": "0.1.0",
+    "name": "ParameterisedValueSetMultiple",
+    "title": "Parameterised ValueSet Multiple Params - States",
+    "status": "draft",
+    "date": "2025-03-01",
+    "publisher": "Brian Postlethwaite",
+    "item": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "radio-button",
+                                "display": "Radio Button"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "linkId": "countryCode",
+            "text": "Country",
+            "type": "choice",
+            "answerValueSet": "http://example.com/countries/vs"
+        },
+        {
+            "linkId": "requestDisplay",
+            "text": "State GET request url: https://r4.ontoserver.csiro.au/fhir/ValueSet/$expand?url=https://example.com/limited-states&includeDefinition=true",
+            "_text": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                        "valueExpression": {
+                            "language": "text/fhirpath",
+                            "expression": "'State GET request url: https://r4.ontoserver.csiro.au/fhir/ValueSet/$expand?url=https://example.com/limited-states&p-country=' + %resource.item.where(linkId = 'countryCode').answer.value.code + '&includeDefinition=true'"
+                        }
+                    }
+                ]
+            },
+            "type": "display"
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "linkId": "stateCodeDropdown",
+            "text": "State (drop down)",
+            "type": "choice",
+            "answerValueSet": "https://example.com/limited-states",
+            "_answerValueSet": {
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueString": "p-country"
+                            },
+                            {
+                                "url": "expression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%resource.item.where(linkId = 'countryCode').answer.value.code"
+                                }
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-parameter"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueString": "includeDefinition"
+                            },
+                            {
+                                "url": "expression",
+                                "valueString": "true"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-parameter"
+                    }
+                ]
+            }
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "radio-button",
+                                "display": "Radio"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "linkId": "stateCodeRadio",
+            "text": "State (Radio)",
+            "type": "choice",
+            "answerValueSet": "https://example.com/limited-states",
+            "_answerValueSet": {
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueString": "p-country"
+                            },
+                            {
+                                "url": "expression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%resource.item.where(linkId = 'countryCode').answer.value.code"
+                                }
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-parameter"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueString": "includeDefinition"
+                            },
+                            {
+                                "url": "expression",
+                                "valueString": "true"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-parameter"
+                    }
+                ]
+            }
+        }
+    ]
+}
+*/
+
+
+I used this Query with Postman to query the csiro ontoserver
+GET request url: https://r4.ontoserver.csiro.au/fhir/ValueSet/$expand?url=https://example.com/limited-states&includeDefinition=true
+which returned a 393 line json
+
+{
+    "resourceType": "ValueSet",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Limited World States</h2><tt>https://example.com/limited-states</tt></div>"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/valueset-parameter",
+            "extension": [
+                {
+                    "url": "name",
+                    "valueCode": "p-country"
+                },
+                {
+                    "url": "documentation",
+                    "valueString": "country to limit state membership to"
+                }
+            ]
+        }
+    ],
+    "url": "https://example.com/limited-states",
+    "name": "Limited_World_States",
+    "title": "Limited World States",
+    "status": "draft",
+    "compose": {
+        "include": [
+            {
+                "system": "http://example.com/worldstates",
+                "filter": [
+                    {
+                        "property": "country",
+                        "op": "=",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                                    "valueExpression": {
+                                        "language": "text/fhirpath",
+                                        "expression": "%p-country"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "urn:uuid:bc014c71-ae88-41c6-9aeb-0e11980a3543",
+        "timestamp": "2025-05-10T21:57:04+10:00",
+        "total": 64,
+        "parameter": [
+            {
+                "name": "used-codesystem",
+                "valueUri": "http://example.com/worldstates|2.0.0"
+            },
+            {
+                "name": "version",
+                "valueUri": "http://example.com/worldstates|2.0.0"
+            },
+            {
+                "name": "warning-draft",
+                "valueUri": "https://example.com/limited-states"
+            },
+            {
+                "name": "p-country"
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AL",
+                "display": "Alabama"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AK",
+                "display": "Alaska"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AS",
+                "display": "American Samoa"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AZ",
+                "display": "Arizona"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AR",
+                "display": "Arkansas"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ACT",
+                "display": "Australian Capital Territory"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "CA",
+                "display": "California"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "CO",
+                "display": "Colorado"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "CT",
+                "display": "Connecticut"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "DE",
+                "display": "Delaware"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "DC",
+                "display": "District of Columbia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "FL",
+                "display": "Florida"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "GA",
+                "display": "Georgia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "GU",
+                "display": "Guam"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "HI",
+                "display": "Hawaii"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ID",
+                "display": "Idaho"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "IL",
+                "display": "Illinois"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "IN",
+                "display": "Indiana"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "IA",
+                "display": "Iowa"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "KS",
+                "display": "Kansas"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "KY",
+                "display": "Kentucky"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "LA",
+                "display": "Louisiana"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ME",
+                "display": "Maine"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MD",
+                "display": "Maryland"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MA",
+                "display": "Massachusetts"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MI",
+                "display": "Michigan"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MN",
+                "display": "Minnesota"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MS",
+                "display": "Mississippi"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MO",
+                "display": "Missouri"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MT",
+                "display": "Montana"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NE",
+                "display": "Nebraska"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NV",
+                "display": "Nevada"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NH",
+                "display": "New Hampshire"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NJ",
+                "display": "New Jersey"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NM",
+                "display": "New Mexico"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NSW",
+                "display": "New South Wales"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NY",
+                "display": "New York"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NC",
+                "display": "North Carolina"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ND",
+                "display": "North Dakota"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MP",
+                "display": "Northern Mariana Islands"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NT",
+                "display": "Northern Territory"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "OH",
+                "display": "Ohio"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "OK",
+                "display": "Oklahoma"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "OR",
+                "display": "Oregon"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "PA",
+                "display": "Pennsylvania"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "PR",
+                "display": "Puerto Rico"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "QLD",
+                "display": "Queensland"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "RI",
+                "display": "Rhode Island"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "SA",
+                "display": "South Australia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "SC",
+                "display": "South Carolina"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "SD",
+                "display": "South Dakota"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "TAS",
+                "display": "Tasmania"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "TN",
+                "display": "Tennessee"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "TX",
+                "display": "Texas"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "UT",
+                "display": "Utah"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VT",
+                "display": "Vermont"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VIC",
+                "display": "Victoria"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VI",
+                "display": "Virgin Islands"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VA",
+                "display": "Virginia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WA",
+                "display": "Washington"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WV",
+                "display": "West Virginia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WAus",
+                "display": "Western Australia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WI",
+                "display": "Wisconsin"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WY",
+                "display": "Wyoming"
+            }
+        ]
+    }
+}
+
+I tried the same query without includeDefinition=false
+which returned a 362 line json, with the difference being
+{
+    "resourceType": "ValueSet",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/valueset-parameter",
+            "extension": [
+                {
+                    "url": "name",
+                    "valueCode": "p-country"
+                },
+                {
+                    "url": "documentation",
+                    "valueString": "country to limit state membership to"
+                }
+            ]
+        }
+    ],
+    "status": "draft",
+    "expansion": {
+        "identifier": "urn:uuid:9ea4b2bf-64cd-497d-8791-afa4ad165ccc",
+        "timestamp": "2025-05-10T22:05:37+10:00",
+        "total": 64,
+        "parameter": [
+            {
+                "name": "used-codesystem",
+                "valueUri": "http://example.com/worldstates|2.0.0"
+            },
+            {
+                "name": "version",
+                "valueUri": "http://example.com/worldstates|2.0.0"
+            },
+            {
+                "name": "warning-draft",
+                "valueUri": "https://example.com/limited-states"
+            },
+            {
+                "name": "p-country"
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AL",
+                "display": "Alabama"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AK",
+                "display": "Alaska"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AS",
+                "display": "American Samoa"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AZ",
+                "display": "Arizona"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "AR",
+                "display": "Arkansas"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ACT",
+                "display": "Australian Capital Territory"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "CA",
+                "display": "California"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "CO",
+                "display": "Colorado"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "CT",
+                "display": "Connecticut"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "DE",
+                "display": "Delaware"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "DC",
+                "display": "District of Columbia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "FL",
+                "display": "Florida"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "GA",
+                "display": "Georgia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "GU",
+                "display": "Guam"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "HI",
+                "display": "Hawaii"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ID",
+                "display": "Idaho"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "IL",
+                "display": "Illinois"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "IN",
+                "display": "Indiana"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "IA",
+                "display": "Iowa"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "KS",
+                "display": "Kansas"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "KY",
+                "display": "Kentucky"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "LA",
+                "display": "Louisiana"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ME",
+                "display": "Maine"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MD",
+                "display": "Maryland"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MA",
+                "display": "Massachusetts"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MI",
+                "display": "Michigan"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MN",
+                "display": "Minnesota"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MS",
+                "display": "Mississippi"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MO",
+                "display": "Missouri"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MT",
+                "display": "Montana"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NE",
+                "display": "Nebraska"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NV",
+                "display": "Nevada"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NH",
+                "display": "New Hampshire"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NJ",
+                "display": "New Jersey"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NM",
+                "display": "New Mexico"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NSW",
+                "display": "New South Wales"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NY",
+                "display": "New York"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NC",
+                "display": "North Carolina"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "ND",
+                "display": "North Dakota"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "MP",
+                "display": "Northern Mariana Islands"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "NT",
+                "display": "Northern Territory"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "OH",
+                "display": "Ohio"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "OK",
+                "display": "Oklahoma"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "OR",
+                "display": "Oregon"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "PA",
+                "display": "Pennsylvania"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "PR",
+                "display": "Puerto Rico"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "QLD",
+                "display": "Queensland"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "RI",
+                "display": "Rhode Island"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "SA",
+                "display": "South Australia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "SC",
+                "display": "South Carolina"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "SD",
+                "display": "South Dakota"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "TAS",
+                "display": "Tasmania"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "TN",
+                "display": "Tennessee"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "TX",
+                "display": "Texas"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "UT",
+                "display": "Utah"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VT",
+                "display": "Vermont"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VIC",
+                "display": "Victoria"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VI",
+                "display": "Virgin Islands"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "VA",
+                "display": "Virginia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WA",
+                "display": "Washington"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WV",
+                "display": "West Virginia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WAus",
+                "display": "Western Australia"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WI",
+                "display": "Wisconsin"
+            },
+            {
+                "system": "http://example.com/worldstates",
+                "code": "WY",
+                "display": "Wyoming"
+            }
+        ]
+    }
+}

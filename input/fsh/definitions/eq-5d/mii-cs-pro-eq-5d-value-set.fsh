@@ -8,6 +8,24 @@ Description: "EuroQol EQ-5D Value Set"
 // en-US: https://eq-5dpublications.euroqol.org/download?id=0_68287&fileId=68077
 // en-US ValueSet: https://euroqol.org/wp-content/uploads/2024/01/US_valueset_SPSS.txt
 
+
+/*
+Ideas: 
+Flag all differerent values tems in the questionnaire with
+"extension": [
+                                "url": "name",
+                                "valueString": "p-country"
+                            },
+                            {
+                                "url": "expression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%resource.item.where(linkId = 'countryCode').answer.value.code"
+                                }
+                            }
+
+*/
+
 * ^language = #de-DE
 * ^status = #draft
 * ^experimental = true
