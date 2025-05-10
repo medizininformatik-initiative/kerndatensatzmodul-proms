@@ -5,4 +5,3 @@ Title: "MII PR PRO Score Instance"
 Description: "MII PR PRO Score Instance"
 
 * status = #draft
-* language = #de
