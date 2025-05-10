@@ -87,6 +87,38 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-questionnaire"
+        },
+        "name": "MII PR PRO Questionnaire",
+        "description": "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-questionnaire-response"
+        },
+        "name": "MII PR PRO QuestionnaireResponse",
+        "description": "MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-score-blueprint"
+        },
+        "name": "MII PR PRO Score Blueprint / Template",
+        "description": "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-score-instance"
+        },
+        "name": "MII PR PRO Score Instance",
+        "description": "MII PR PRO Score Instance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-eq-5d-5l-answer-coding"
         },
         "name": "MII QST PRO EQ-5D-5L",

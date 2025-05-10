@@ -3,7 +3,7 @@
     "outputFile": "CodeSystem-mii-cs-pro-eq-5d-value-set.json",
     "fshName": "MII_CS_PRO_EQ_5D_ValueSet",
     "fshType": "CodeSystem",
-    "fshFile": "definitions/eq-5d/mii-cs-pro-eq-5d-value-set.fsh",
+    "fshFile": "definitions\\eq-5d\\mii-cs-pro-eq-5d-value-set.fsh",
     "startLine": 1,
     "endLine": 275
   },
@@ -11,7 +11,7 @@
     "outputFile": "ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json",
     "fshName": "mii-cm-pro-bdi-ii-to-promis-depression-observation",
     "fshType": "Instance",
-    "fshFile": "definitions/domains/depression/mii-cm-pro-bdi-ii-to-promis-depression.fsh",
+    "fshFile": "definitions\\domains\\depression\\mii-cm-pro-bdi-ii-to-promis-depression.fsh",
     "startLine": 1,
     "endLine": 15
   },
@@ -19,7 +19,7 @@
     "outputFile": "Measure-mii-exa-pro-phq-9-measure.json",
     "fshName": "mii-exa-pro-phq-9-measure",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-pro-phq-9-measure.fsh",
+    "fshFile": "examples\\mii-exa-pro-phq-9-measure.fsh",
     "startLine": 2,
     "endLine": 18
   },
@@ -27,7 +27,7 @@
     "outputFile": "Observation-mii-exa-pro-bdi-ii-observation.json",
     "fshName": "mii-exa-pro-bdi-ii-observation",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-pro-bdi-II-observation.fsh",
+    "fshFile": "examples\\mii-exa-pro-bdi-II-observation.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -35,7 +35,7 @@
     "outputFile": "Observation-mii-exa-pro-phq-9-observation.json",
     "fshName": "mii-exa-pro-phq-9-observation",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-pro-phq-9-observation.fsh",
+    "fshFile": "examples\\mii-exa-pro-phq-9-observation.fsh",
     "startLine": 2,
     "endLine": 13
   },
@@ -43,7 +43,7 @@
     "outputFile": "Observation-mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation.json",
     "fshName": "mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-pro-promis-depression-from-bdi-ii-observation.fsh",
+    "fshFile": "examples\\mii-exa-pro-promis-depression-from-bdi-ii-observation.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -51,7 +51,7 @@
     "outputFile": "ObservationDefinition-mii-obsdef-pro-score-phq-9.json",
     "fshName": "mii-obsdef-pro-score-phq-9",
     "fshType": "Instance",
-    "fshFile": "definitions/phq-9/mii-obsdef-pro-score-phq-9.fsh",
+    "fshFile": "definitions\\phq-9\\mii-obsdef-pro-score-phq-9.fsh",
     "startLine": 1,
     "endLine": 16
   },
@@ -59,7 +59,7 @@
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-answer-coding.json",
     "fshName": "mii-qst-pro-eq-5d-5l-answer-coding",
     "fshType": "Instance",
-    "fshFile": "definitions/eq-5d/mii-qst-pro-eq-5d-5l-answer-coding.fsh",
+    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-answer-coding.fsh",
     "startLine": 1,
     "endLine": 246
   },
@@ -67,7 +67,7 @@
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l.json",
     "fshName": "mii-qst-pro-eq-5d-5l",
     "fshType": "Instance",
-    "fshFile": "definitions/eq-5d/mii-qst-pro-eq-5d-5l.fsh",
+    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l.fsh",
     "startLine": 1,
     "endLine": 451
   },
@@ -75,7 +75,7 @@
     "outputFile": "Questionnaire-mii-qst-pro-phq-9-sdc-rendering.json",
     "fshName": "mii-qst-pro-phq-9-sdc-rendering",
     "fshType": "Instance",
-    "fshFile": "definitions/phq-9/sdc-rendering/mii-qst-pro-phq-9-sdc-rendering.fsh",
+    "fshFile": "definitions\\phq-9\\sdc-rendering\\mii-qst-pro-phq-9-sdc-rendering.fsh",
     "startLine": 2,
     "endLine": 79
   },
@@ -83,7 +83,7 @@
     "outputFile": "Questionnaire-mii-qst-pro-phq-9.json",
     "fshName": "mii-qst-pro-phq-9",
     "fshType": "Instance",
-    "fshFile": "definitions/phq-9/mii-qst-pro-phq-9.fsh",
+    "fshFile": "definitions\\phq-9\\mii-qst-pro-phq-9.fsh",
     "startLine": 1,
     "endLine": 546
   },
@@ -91,15 +91,47 @@
     "outputFile": "QuestionnaireResponse-mii-exa-pro-phq-9-response.json",
     "fshName": "mii-exa-pro-phq-9-response",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-pro-phq-9-response.fsh",
+    "fshFile": "examples\\mii-exa-pro-phq-9-response.fsh",
     "startLine": 1,
     "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-pro-questionnaire-response.json",
+    "fshName": "MII_PR_PRO_QuestionnaireResponse",
+    "fshType": "Profile",
+    "fshFile": "profiles\\mii-pr-pro-questionnaire-response.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-pro-questionnaire.json",
+    "fshName": "MII_PR_PRO_Questionnaire",
+    "fshType": "Profile",
+    "fshFile": "profiles\\mii-pr-pro-questionnaire.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-pro-score-blueprint.json",
+    "fshName": "MII_PR_PRO_Score_Blueprint",
+    "fshType": "Profile",
+    "fshFile": "profiles\\mii-pr-pro-score-blueprint.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-pro-score-instance.json",
+    "fshName": "MII_PR_PRO_Score_Instance",
+    "fshType": "Profile",
+    "fshFile": "profiles\\mii-pr-pro-score-instance.fsh",
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json",
     "fshName": "MII_VS_PRO_PHQ9_AnswerList_LL3583",
     "fshType": "ValueSet",
-    "fshFile": "definitions/phq-9/sdc-rendering/mii-vs-pro-phq-9-answer-list-ll358-3.fsh",
+    "fshFile": "definitions\\phq-9\\sdc-rendering\\mii-vs-pro-phq-9-answer-list-ll358-3.fsh",
     "startLine": 2,
     "endLine": 11
   },
@@ -107,7 +139,7 @@
     "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.json",
     "fshName": "MII_VS_PRO_PHQ9_AnswerList_LL3591",
     "fshType": "ValueSet",
-    "fshFile": "definitions/phq-9/sdc-rendering/mii-vs-pro-phq-9-answer-list-ll359-1.fsh",
+    "fshFile": "definitions\\phq-9\\sdc-rendering\\mii-vs-pro-phq-9-answer-list-ll359-1.fsh",
     "startLine": 2,
     "endLine": 11
   }

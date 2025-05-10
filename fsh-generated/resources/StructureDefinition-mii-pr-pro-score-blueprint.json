@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-pro-score-blueprint",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint",
+  "name": "MII_PR_PRO_Score_Blueprint",
+  "title": "MII PR PRO Score Blueprint / Template",
+  "status": "draft",
+  "description": "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ObservationDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ObservationDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ObservationDefinition.language",
+        "path": "ObservationDefinition.language",
+        "patternCode": "de"
+      }
+    ]
+  }
+}
