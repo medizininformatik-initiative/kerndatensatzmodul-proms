@@ -6,7 +6,7 @@ Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
-* permittedDataType = #quantity
+* permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method = $LNC#72166-2 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]" // check loinc code, also check whether makes sense for german , or how to deal with PHQ-8
 * quantitativeDetails.unit = $UCUM#1 // check if this is correct, or if we need to use a different unit of measure like score
