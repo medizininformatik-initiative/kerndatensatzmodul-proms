@@ -1,0 +1,20 @@
+{
+  "resourceType": "Measure",
+  "id": "mii-exa-pro-phq-9-measure",
+  "identifier": [
+    {
+      "system": "http://loinc.org",
+      "value": "44261-6"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "derived-from",
+      "label": "PHQ-9 Developmental Publication",
+      "display": "The psychometric properties of depression screening tools in primary healthcare settings: A systematic review",
+      "citation": "Sarira El-Den, Timothy F. Chen, Yuh-Lin Gan, Eling Wong, Claire L. O’Reilly,The psychometric properties of depression screening tools in primary healthcare settings: A systematic review,Journal of Affective Disorders,Volume 225,2018,Pages 503-522,ISSN 0165-0327",
+      "url": "https://doi.org/10.1016/j.jad.2017.08.060"
+    }
+  ],
+  "status": "active"
+}

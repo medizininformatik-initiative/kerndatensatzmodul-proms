@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation",
+  "valueQuantity": {
+    "value": 63.2,
+    "code": "{score}",
+    "unit": "{score}",
+    "system": "http://unitsofmeasure.org"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/otherexamplepatient"
+  },
+  "effectiveDateTime": "2023-10-01T12:00:00Z",
+  "code": {
+    "coding": [
+      {
+        "code": "77861-3",
+        "system": "http://loinc.org",
+        "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
+      }
+    ]
+  }
+}

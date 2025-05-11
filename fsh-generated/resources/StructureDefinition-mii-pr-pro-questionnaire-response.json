@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-pro-questionnaire-response",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
+  "name": "MII_PR_PRO_QuestionnaireResponse",
+  "title": "MII PR PRO QuestionnaireResponse",
+  "status": "draft",
+  "description": "MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Specification",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponsecommon",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.language",
+        "path": "QuestionnaireResponse.language",
+        "mustSupport": true
+      }
+    ]
+  }
+}
