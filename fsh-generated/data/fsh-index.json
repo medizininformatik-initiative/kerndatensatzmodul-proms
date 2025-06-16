@@ -16,14 +16,6 @@
     "endLine": 15
   },
   {
-    "outputFile": "Measure-mii-exa-pro-phq-9-measure.json",
-    "fshName": "mii-exa-pro-phq-9-measure",
-    "fshType": "Instance",
-    "fshFile": "examples\\mii-exa-pro-phq-9-measure.fsh",
-    "startLine": 2,
-    "endLine": 18
-  },
-  {
     "outputFile": "Observation-mii-exa-pro-bdi-ii-observation.json",
     "fshName": "mii-exa-pro-bdi-ii-observation",
     "fshType": "Instance",
@@ -109,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\mii-pr-pro-questionnaire.fsh",
     "startLine": 1,
-    "endLine": 7
+    "endLine": 10
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-score-blueprint.json",
@@ -117,7 +109,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\mii-pr-pro-score-blueprint.fsh",
     "startLine": 1,
-    "endLine": 5
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-score-instance.json",
@@ -125,7 +117,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\mii-pr-pro-score-instance.fsh",
     "startLine": 1,
-    "endLine": 7
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json",

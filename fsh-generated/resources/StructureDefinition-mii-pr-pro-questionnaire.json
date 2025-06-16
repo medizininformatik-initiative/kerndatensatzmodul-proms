@@ -5,6 +5,7 @@
   "name": "MII_PR_PRO_Questionnaire",
   "title": "MII PR PRO Questionnaire",
   "status": "draft",
+  "experimental": true,
   "description": "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -15,8 +16,14 @@
   "differential": {
     "element": [
       {
-        "id": "Questionnaire",
-        "path": "Questionnaire"
+        "id": "Questionnaire.copyright",
+        "path": "Questionnaire.copyright",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item",
+        "path": "Questionnaire.item",
+        "mustSupport": true
       }
     ]
   }

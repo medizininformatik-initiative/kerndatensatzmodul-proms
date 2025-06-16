@@ -449,3 +449,6 @@ Usage: #definition
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].required = true
 * item[=].repeats = false
+
+
+//@Thimo TODO FHIRPath für Score

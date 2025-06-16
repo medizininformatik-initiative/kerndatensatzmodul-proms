@@ -5,3 +5,6 @@ Title: "MII PR PRO Questionnaire"
 Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification"
 
 * ^status = #draft
+* ^experimental = true
+* copyright MS 
+* item MS

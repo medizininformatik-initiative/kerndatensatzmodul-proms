@@ -1,5 +1,5 @@
 Instance: mii-exa-pro-phq-9-response
-InstanceOf: SDCQuestionnaireResponseCommon
+InstanceOf: MII_PR_PRO_QuestionnaireResponse
 Title: "PHQ-9 Questionnaire Response Example"
 * status = #completed
 * subject = Reference(Patient/example)

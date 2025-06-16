@@ -244,3 +244,10 @@ Usage: #definition
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].required = true
 * item[=].repeats = false
+
+
+// TODO: SCoring auf FHIR Path anpassen
+// ObsDef und Obs Profil EQ-5D-Index
+// ObsDef und Obs Profil für EQ-5D-5L VAS
+// Profil für EQ-5D-5L QuestionnaireResponse
+// generell IDs glattziehen 

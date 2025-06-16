@@ -15,8 +15,39 @@
   "differential": {
     "element": [
       {
-        "id": "ObservationDefinition",
-        "path": "ObservationDefinition"
+        "id": "ObservationDefinition.code",
+        "path": "ObservationDefinition.code",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.identifier",
+        "path": "ObservationDefinition.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.permittedDataType",
+        "path": "ObservationDefinition.permittedDataType",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.quantitativeDetails.customaryUnit",
+        "path": "ObservationDefinition.quantitativeDetails.customaryUnit",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.quantitativeDetails.unit",
+        "path": "ObservationDefinition.quantitativeDetails.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.quantitativeDetails.decimalPrecision",
+        "path": "ObservationDefinition.quantitativeDetails.decimalPrecision",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval",
+        "path": "ObservationDefinition.qualifiedInterval",
+        "mustSupport": true
       }
     ]
   }
