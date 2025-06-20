@@ -1,6 +1,6 @@
 // TODO: Title/ Description Translation?
 Instance: mii-qst-pro-phq-9-sdc-rendering
-InstanceOf: SDCBaseQuestionnaire
+InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO PHQ-9 (SDC Rendering)"
 Description: "Patient Health Questionnaire (PHQ-9) SDC Rendering"
 Usage: #definition

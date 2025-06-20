@@ -1,5 +1,5 @@
 Instance: mii-qst-pro-phq-9
-InstanceOf: SDCQuestionnaireCommon
+InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO PHQ-9"
 Description: "Patient Health Questionnaire (PHQ-9)"
 Usage: #definition

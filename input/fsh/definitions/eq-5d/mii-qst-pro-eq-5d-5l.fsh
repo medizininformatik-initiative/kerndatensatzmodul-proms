@@ -1,5 +1,5 @@
 Instance: mii-qst-pro-eq-5d-5l
-InstanceOf: SDCQuestionnaireCommon
+InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
 Usage: #definition

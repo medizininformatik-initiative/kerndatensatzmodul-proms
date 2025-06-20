@@ -1,5 +1,5 @@
 Instance: mii-obsdef-pro-score-phq-9
-InstanceOf: ObservationDefinition
+InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO Score PHQ-9"
 Description: "Patient Health Questionnaire (PHQ-9)"
 Usage: #definition
