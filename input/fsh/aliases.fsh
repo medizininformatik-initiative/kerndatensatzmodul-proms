@@ -1,10 +1,12 @@
 Alias: $mii-cs-pro-eq-5d-value-set =  https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set
-Alias: $mii-qst-pro-eq-5d-5l = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l
+Alias: $mii-qst-pro-euroqol-eq5d5l = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l
 Alias: $mii-qst-pro-eq-5d-5l-answer-coding = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l-answer-coding
 Alias: $mii-qst-pro-phq-9 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9
 Alias: $mii-qst-pro-phq-9-sdc-rendering = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9-sdc-rendering
 Alias: $mii-vs-pro-phq-9-answer-list-ll358-3 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3
 Alias: $mii-vs-pro-phq-9-answer-list-ll359-1 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1
+Alias: $mii-cs-pro-score-catalogue = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue
+Alias: $mii-cs-pro-questionnaire-catalogue = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue
 
 // HL7
 Alias: $hl7-concept-properties = http://hl7.org/fhir/concept-properties

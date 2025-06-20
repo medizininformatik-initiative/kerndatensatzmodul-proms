@@ -16,8 +16,90 @@
   "differential": {
     "element": [
       {
+        "id": "Questionnaire.derivedFrom",
+        "path": "Questionnaire.derivedFrom",
+        "mustSupport": true
+      },
+      {
         "id": "Questionnaire.copyright",
         "path": "Questionnaire.copyright",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code",
+        "path": "Questionnaire.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Different code systems for the same questionnaire",
+          "ordered": false
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code:snomed",
+        "path": "Questionnaire.code",
+        "sliceName": "snomed",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Questionnaire.code:snomed.system",
+        "path": "Questionnaire.code.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code:snomed.code",
+        "path": "Questionnaire.code.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code:loinc",
+        "path": "Questionnaire.code",
+        "sliceName": "loinc",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Questionnaire.code:loinc.system",
+        "path": "Questionnaire.code.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code:loinc.code",
+        "path": "Questionnaire.code.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code:mii",
+        "path": "Questionnaire.code",
+        "sliceName": "mii",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Questionnaire.code:mii.system",
+        "path": "Questionnaire.code.system",
+        "min": 1,
+        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code:mii.code",
+        "path": "Questionnaire.code.code",
+        "min": 1,
         "mustSupport": true
       },
       {

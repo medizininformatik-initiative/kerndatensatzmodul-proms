@@ -11,6 +11,7 @@ Usage: #definition
 * code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
 
 // TODO: date, publisher, copyright, etc.
+* derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
 
 * item[+].linkId = "EQ-5D-5L.IS"
 * item[=].type = #display
