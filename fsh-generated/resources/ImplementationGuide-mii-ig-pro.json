@@ -237,6 +237,13 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response"
+        },
+        "name": "PHQ-9 Questionnaire Response Example EuroQol EQ-5D-5L",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation"
         },
         "name": "PROMIS Depression T-Score, derived from BDI-II Observation",
