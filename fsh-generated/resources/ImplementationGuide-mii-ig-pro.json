@@ -51,6 +51,12 @@
       "version": "4.0.0-ballot",
       "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
       "id": "hl7_fhir_uv_sdc"
+    },
+    {
+      "packageId": "hl7.terminology",
+      "version": "6.4.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology"
     }
   ],
   "definition": {

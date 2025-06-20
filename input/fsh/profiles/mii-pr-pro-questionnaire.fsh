@@ -6,6 +6,8 @@ Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture
 
 * ^status = #draft
 * ^experimental = true
+* version 1..1 MS 
+
 * copyright MS 
 * item MS
 * derivedFrom MS

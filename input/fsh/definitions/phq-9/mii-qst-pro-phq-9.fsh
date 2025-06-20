@@ -8,6 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
+* version = "0.1.0"
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
 * item[0].linkId = "PHQ-9.Description"

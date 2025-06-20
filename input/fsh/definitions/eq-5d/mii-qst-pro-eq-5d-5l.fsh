@@ -9,7 +9,7 @@ Usage: #definition
 * experimental = true
 * language = #de
 * code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
-
+* version = "0.1.0"
 // TODO: date, publisher, copyright, etc.
 
 * item[+].linkId = "EQ-5D-5L.IS"

@@ -9,7 +9,7 @@ Usage: #definition
 * experimental = true
 * language = #de
 * code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
-
+* version = "0.1.0"
 // TODO: date, publisher, copyright, etc.
 * derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
 

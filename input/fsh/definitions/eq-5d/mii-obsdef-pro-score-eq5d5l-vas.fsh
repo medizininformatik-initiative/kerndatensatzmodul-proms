@@ -14,6 +14,6 @@ Description: "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS)
 * qualifiedInterval.category = #absolute
 * qualifiedInterval.range.high.value = 100
 * qualifiedInterval.range.low.value = 0 
-* qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#improvement
+* qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase
 * qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher score indicates better health status"
 // add reference https://doi.org/10.1016/j.jad.2017.08.060 for developmental publication

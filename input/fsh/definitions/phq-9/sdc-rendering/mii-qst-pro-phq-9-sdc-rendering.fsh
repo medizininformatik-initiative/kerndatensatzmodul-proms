@@ -7,6 +7,7 @@ Usage: #definition
 
 // Definitional Metadata
 * insert DefinitionResourceMetadata($mii-qst-pro-phq-9-sdc-rendering, active, true, de)
+* version = "0.1.0"
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
 // PHQ-9.Description

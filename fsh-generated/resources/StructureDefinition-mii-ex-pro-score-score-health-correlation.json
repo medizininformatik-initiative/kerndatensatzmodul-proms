@@ -12,7 +12,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ObservationDefinition.qualifiedInterval"
+      "expression": "ObservationDefinition.qualifiedInterval.range"
     }
   ],
   "type": "Extension",

@@ -16,6 +16,12 @@
   "differential": {
     "element": [
       {
+        "id": "Questionnaire.version",
+        "path": "Questionnaire.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Questionnaire.derivedFrom",
         "path": "Questionnaire.derivedFrom",
         "mustSupport": true

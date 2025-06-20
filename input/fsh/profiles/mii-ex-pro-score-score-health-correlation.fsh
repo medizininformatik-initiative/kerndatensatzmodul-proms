@@ -3,7 +3,7 @@ Id: mii-ex-pro-score-score-health-correlation
 Title: "MII Ex PRO Score Score Health Correlation"
 Description: "MII Ex PRO Score Score Health Correlation"
 * ^context.type = #element
-* ^context.expression = "ObservationDefinition.qualifiedInterval"
+* ^context.expression = "ObservationDefinition.qualifiedInterval.range"
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
 * value[x] 1..1
 * value[x] only CodeableConcept
