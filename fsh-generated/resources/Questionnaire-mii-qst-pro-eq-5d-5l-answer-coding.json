@@ -536,7 +536,7 @@
     {
       "linkId": "EQ-VAS.IS",
       "type": "display",
-      "text": "\r\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\r\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\r\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\r\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\r\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\r\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
+      "text": "\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
       "_text": {
         "extension": [
           {
@@ -547,7 +547,7 @@
               },
               {
                 "url": "content",
-                "valueString": "\r\n    We would like to know how good or bad your health is TODAY.\n\r\n    This scale is numbered from 0 to 100.\n\r\n    100 means the best health you can imagine.\n\r\n    0 means the worst health you can imagine.\n\r\n    Please mark an X on the scale to indicate how your health is TODAY.\n\r\n    Now, write the number you marked on the scale in the box below."
+                "valueString": "\n    We would like to know how good or bad your health is TODAY.\n\n    This scale is numbered from 0 to 100.\n\n    100 means the best health you can imagine.\n\n    0 means the worst health you can imagine.\n\n    Please mark an X on the scale to indicate how your health is TODAY.\n\n    Now, write the number you marked on the scale in the box below."
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
