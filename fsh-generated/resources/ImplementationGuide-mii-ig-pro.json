@@ -79,6 +79,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-score-score-health-correlation"
+        },
+        "name": "MII Ex PRO Score Score Health Correlation",
+        "description": "MII Ex PRO Score Score Health Correlation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas"
+        },
+        "name": "MII ObsDef PRO Score EQ-5D-5L VAS",
+        "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-9"
         },
         "name": "MII ObsDef PRO Score PHQ-9",

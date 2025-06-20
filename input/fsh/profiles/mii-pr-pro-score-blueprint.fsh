@@ -11,6 +11,14 @@ Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture
 * quantitativeDetails.unit MS
 * quantitativeDetails.customaryUnit MS
 * qualifiedInterval MS
+* qualifiedInterval.category MS
+* qualifiedInterval.range.low MS
+* qualifiedInterval.range.high MS
+* qualifiedInterval.range.extension MS
+* qualifiedInterval.range.extension contains
+    MII_EX_PRO_Score_Score_Health_Correlation named ScoreHealthCorrelation 0..1 MS 
+* qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept 1..1 MS
+
 * preferredReportName
 
 

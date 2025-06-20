@@ -48,6 +48,47 @@
         "id": "ObservationDefinition.qualifiedInterval",
         "path": "ObservationDefinition.qualifiedInterval",
         "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.category",
+        "path": "ObservationDefinition.qualifiedInterval.category",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.extension",
+        "path": "ObservationDefinition.qualifiedInterval.range.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.extension:ScoreHealthCorrelation",
+        "path": "ObservationDefinition.qualifiedInterval.range.extension",
+        "sliceName": "ScoreHealthCorrelation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.extension:ScoreHealthCorrelation.value[x]",
+        "path": "ObservationDefinition.qualifiedInterval.range.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.low",
+        "path": "ObservationDefinition.qualifiedInterval.range.low",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.high",
+        "path": "ObservationDefinition.qualifiedInterval.range.high",
+        "mustSupport": true
       }
     ]
   }

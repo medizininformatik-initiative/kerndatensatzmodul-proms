@@ -1,6 +1,8 @@
 [mii-exa-pro-bdi-ii-observation]: Observation-mii-exa-pro-bdi-ii-observation.html
 [mii-cm-pro-bdi-ii-to-promis-depression-observation]: ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html
 [MII_CS_PRO_EQ_5D_ValueSet]: CodeSystem-mii-cs-pro-eq-5d-value-set.html
+[MII_EX_PRO_Score_Score_Health_Correlation]: StructureDefinition-mii-ex-pro-score-score-health-correlation.html
+[mii-obsdef-pro-score-eq5d5l-vas]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.html
 [mii-obsdef-pro-score-phq-9]: ObservationDefinition-mii-obsdef-pro-score-phq-9.html
 [MII_PR_PRO_Questionnaire]: StructureDefinition-mii-pr-pro-questionnaire.html
 [MII_PR_PRO_QuestionnaireResponse]: StructureDefinition-mii-pr-pro-questionnaire-response.html
