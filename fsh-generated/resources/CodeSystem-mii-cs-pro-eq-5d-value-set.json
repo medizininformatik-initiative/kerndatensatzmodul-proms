@@ -725,13 +725,13 @@
   "property": [
     {
       "code": "eq-5d-vs-coefficient-de-de",
-      "uri": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties/itemWeight",
       "description": "EQ-5D ValueSet Coefficient Germany",
       "type": "decimal"
     },
     {
       "code": "eq-5d-vs-coefficient-en-us",
-      "uri": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties/itemWeight",
       "description": "EQ-5D ValueSet Coefficient US",
       "type": "decimal"
     }

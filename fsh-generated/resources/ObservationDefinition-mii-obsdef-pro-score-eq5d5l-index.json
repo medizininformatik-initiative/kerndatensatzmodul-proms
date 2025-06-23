@@ -42,16 +42,16 @@
         }
       ]
     },
-    "decimalPrecision": 0
+    "decimalPrecision": 3
   },
   "qualifiedInterval": [
     {
       "range": {
         "high": {
-          "value": 100
+          "value": 1
         },
         "low": {
-          "value": 0
+          "value": -0.661
         },
         "extension": [
           {
@@ -59,7 +59,7 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
-                  "code": "improvement"
+                  "code": "increase"
                 }
               ],
               "text": "Higher score indicates better health status"

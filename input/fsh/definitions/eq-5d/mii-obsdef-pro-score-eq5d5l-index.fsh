@@ -10,12 +10,12 @@ Description: "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Index Score"
 * multipleResultsAllowed = false
 * method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
 * quantitativeDetails.unit = $UCUM#1 
-* quantitativeDetails.decimalPrecision = 0
+* quantitativeDetails.decimalPrecision = 3
 
 * qualifiedInterval.category = #absolute
-* qualifiedInterval.range.high.value = 100
-* qualifiedInterval.range.low.value = 0 
-* qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#improvement
+* qualifiedInterval.range.high.value = 1
+* qualifiedInterval.range.low.value = -0.661
+* qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase
 * qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher score indicates better health status"
 // add reference https://doi.org/10.1016/j.jad.2017.08.060 for developmental publication
 
