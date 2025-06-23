@@ -14,7 +14,7 @@ Usage: #definition
 // TODO: date, publisher, copyright, etc.
 
 
-* item[+].linkId = "EQ-5D-5L.MO"
+* item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
 * item[=].answerOption[+].valueString = "Ich habe keine Probleme herumzugehen"
@@ -52,26 +52,9 @@ Usage: #definition
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "I am unable to walk about"
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueString = "Fehlender Wert"
-* item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "content"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].answerOption[=].extension[+].url = $hl7-ordinal-value
-* item[=].answerOption[=].extension[=].valueDecimal = 9
-* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
-* item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].required = true
-* item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.SC"
+
+* item[+].linkId = "euroqol-eq5d5l-q02-SC"
 * item[=].type = #choice
 * item[=].text = "FÜR SICH SELBST SORGEN"
 * item[=].text.extension[+].url = $hl7-translation
@@ -119,26 +102,8 @@ Usage: #definition
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "I am unable to wash or dress myself"
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueString = "Fehlender Wert"
-* item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "content"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].answerOption[=].extension[+].url = $hl7-ordinal-value
-* item[=].answerOption[=].extension[=].valueDecimal = 9
-* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
-* item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].required = true
-* item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.UA"
+* item[+].linkId = "euroqol-eq5d5l-q03-UA"
 * item[=].type = #choice
 * item[=].text = "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
 * item[=].text.extension[+].url = $hl7-translation
@@ -196,16 +161,8 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].required = true
-* item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.PD"
+* item[+].linkId = "euroqol-eq5d5l-q04-PD"
 * item[=].type = #choice
 * item[=].text = "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN"
 * item[=].text.extension[+].url = $hl7-translation
@@ -253,26 +210,8 @@ Usage: #definition
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "I have extreme pain or discomfort"
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueString = "Fehlender Wert"
-* item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "content"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].answerOption[=].extension[+].url = $hl7-ordinal-value
-* item[=].answerOption[=].extension[=].valueDecimal = 9
-* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
-* item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].required = true
-* item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.AD"
+* item[+].linkId = "euroqol-eq5d5l-q05-AD"
 * item[=].type = #choice
 * item[=].text = "ANGST / NIEDERGESCHLAGENHEIT"
 * item[=].text.extension[+].url = $hl7-translation
@@ -330,14 +269,6 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
-* item[=].required = true
-* item[=].repeats = false
 
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)
 * item[+].linkId = "EQ-5D-5L.HS"
@@ -351,15 +282,12 @@ Usage: #definition
 * item[=].text.extension[0].extension[1].valueString = "Health State"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
-* item[=].extension[+].url = $hl7-questionnaire-unit
-* item[=].extension[=].valueCoding.system = $UCUM
-* item[=].extension[=].valueCoding.code = #{score}
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract-category
 * item[=].extension[=].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
+* item[=].extension[=].valueExpression.expression = "%resource.repeat(item).where(type = 'choice').item.answer.value.ordinal().aggregate($total & $this, '')"
 * item[=].readOnly = true
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)

@@ -4,7 +4,7 @@ Title: "PHQ-9 Questionnaire Response Example"
 * status = #completed
 * subject = Reference(Patient/example)
 * authored = "2023-10-01T12:00:00Z"
-* questionnaire = "Questionnaire/mii-qst-pro-phq-9"
+* questionnaire = $mii-qst-pro-phq-9
 * item[0].linkId = "PHQ.1"
 * item[0].answer[0].valueCoding = #LA6571-9
 * item[1].linkId = "PHQ.2"

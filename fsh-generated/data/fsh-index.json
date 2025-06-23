@@ -1,13 +1,5 @@
 [
   {
-    "outputFile": "CodeSystem-CSPHQ9.json",
-    "fshName": "CodeSystemCSPHQ9",
-    "fshType": "CodeSystem",
-    "fshFile": "definitions\\phq-9\\sdc-rendering\\sdc-cs-phq9.fsh",
-    "startLine": 3,
-    "endLine": 37
-  },
-  {
     "outputFile": "CodeSystem-mii-cs-pro-eq-5d-value-set.json",
     "fshName": "MII_CS_PRO_EQ_5D_ValueSet",
     "fshType": "CodeSystem",
@@ -109,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-minimal.fsh",
     "startLine": 1,
-    "endLine": 434
+    "endLine": 362
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l.json",
@@ -141,7 +133,7 @@
     "fshType": "Instance",
     "fshFile": "examples\\mii-exa-pro-eq5d5l-response.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 29
   },
   {
     "outputFile": "QuestionnaireResponse-mii-exa-pro-phq-9-response.json",

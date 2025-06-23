@@ -1,4 +1,4 @@
-Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
+/*Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
 CodeSystem: CodeSystemCSPHQ9
 Id: CSPHQ9
@@ -35,3 +35,4 @@ Description: "The answer list for questions 1 through 9 on the Patient Health Qu
 * #"Nearly every day" "Nearly every day"
 * #"Nearly every day" ^property.code = #itemWeight
 * #"Nearly every day" ^property.valueDecimal = 4
+*/

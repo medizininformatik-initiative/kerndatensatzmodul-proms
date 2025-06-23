@@ -15,7 +15,7 @@
           }
         }
       ],
-      "linkId": "PHQ.1"
+      "linkId": "euroqol-eq5d5l-q01-MO"
     },
     {
       "answer": [
@@ -25,7 +25,7 @@
           }
         }
       ],
-      "linkId": "PHQ.2"
+      "linkId": "euroqol-eq5d5l-q02-SC"
     },
     {
       "answer": [
@@ -35,7 +35,7 @@
           }
         }
       ],
-      "linkId": "PHQ.3"
+      "linkId": "euroqol-eq5d5l-q03-UA"
     },
     {
       "answer": [
@@ -45,7 +45,7 @@
           }
         }
       ],
-      "linkId": "PHQ.4"
+      "linkId": "euroqol-eq5d5l-q04-PD"
     },
     {
       "answer": [
@@ -55,57 +55,7 @@
           }
         }
       ],
-      "linkId": "PHQ.5"
-    },
-    {
-      "answer": [
-        {
-          "valueCoding": {
-            "code": "LA6571-9"
-          }
-        }
-      ],
-      "linkId": "PHQ.6"
-    },
-    {
-      "answer": [
-        {
-          "valueCoding": {
-            "code": "LA6571-9"
-          }
-        }
-      ],
-      "linkId": "PHQ.7"
-    },
-    {
-      "answer": [
-        {
-          "valueCoding": {
-            "code": "LA6571-9"
-          }
-        }
-      ],
-      "linkId": "PHQ.8"
-    },
-    {
-      "answer": [
-        {
-          "valueCoding": {
-            "code": "LA6571-9"
-          }
-        }
-      ],
-      "linkId": "PHQ.9"
-    },
-    {
-      "answer": [
-        {
-          "valueCoding": {
-            "code": "LA6574-3"
-          }
-        }
-      ],
-      "linkId": "PHQ.10"
+      "linkId": "euroqol-eq5d5l-q05-AD"
     },
     {
       "answer": [
@@ -118,7 +68,30 @@
           }
         }
       ],
-      "linkId": "PHQ.Score"
+      "linkId": "euroqol-eq5d5l-score-vas"
+    },
+    {
+      "answer": [
+        {
+          "_valueString": {
+            "value": "12345"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-profile"
+    },
+    {
+      "answer": [
+        {
+          "valueQuantity": {
+            "value": 0.662,
+            "code": "{score}",
+            "unit": "{score}",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-index"
     }
   ],
   "status": "completed",

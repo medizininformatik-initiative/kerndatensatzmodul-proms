@@ -136,65 +136,11 @@
               }
             ]
           }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.MO",
+      "linkId": "euroqol-eq5d5l-q01-MO",
       "type": "choice",
-      "text": "BEWEGLICHKEIT / MOBILITÄT",
-      "required": true,
-      "repeats": false
+      "text": "BEWEGLICHKEIT / MOBILITÄT"
     },
     {
       "answerOption": [
@@ -327,61 +273,9 @@
               }
             ]
           }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.SC",
+      "linkId": "euroqol-eq5d5l-q02-SC",
       "type": "choice",
       "text": "FÜR SICH SELBST SORGEN",
       "_text": {
@@ -400,9 +294,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "required": true,
-      "repeats": false
+      }
     },
     {
       "answerOption": [
@@ -567,29 +459,7 @@
           }
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.UA",
+      "linkId": "euroqol-eq5d5l-q03-UA",
       "type": "choice",
       "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
       "_text": {
@@ -608,9 +478,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "required": true,
-      "repeats": false
+      }
     },
     {
       "answerOption": [
@@ -743,61 +611,9 @@
               }
             ]
           }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.PD",
+      "linkId": "euroqol-eq5d5l-q04-PD",
       "type": "choice",
       "text": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN",
       "_text": {
@@ -816,9 +632,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "required": true,
-      "repeats": false
+      }
     },
     {
       "answerOption": [
@@ -983,29 +797,7 @@
           }
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.AD",
+      "linkId": "euroqol-eq5d5l-q05-AD",
       "type": "choice",
       "text": "ANGST / NIEDERGESCHLAGENHEIT",
       "_text": {
@@ -1024,9 +816,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "required": true,
-      "repeats": false
+      }
     },
     {
       "code": [
@@ -1042,13 +832,6 @@
           "valueBoolean": true
         },
         {
-          "valueCoding": {
-            "system": "http://unitsofmeasure.org",
-            "code": "{score}"
-          },
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-        },
-        {
           "valueCodeableConcept": {
             "coding": [
               {
@@ -1062,7 +845,7 @@
         {
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
+            "expression": "%resource.repeat(item).where(type = 'choice').item.answer.value.ordinal().aggregate($total & $this, '')"
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         }
