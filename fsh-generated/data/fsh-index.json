@@ -88,14 +88,6 @@
     "endLine": 17
   },
   {
-    "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-answer-coding.json",
-    "fshName": "mii-qst-pro-eq-5d-5l-answer-coding",
-    "fshType": "Instance",
-    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-answer-coding.fsh",
-    "startLine": 1,
-    "endLine": 247
-  },
-  {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal-extractable.json",
     "fshName": "mii-qst-pro-eq-5d-5l-minimal-extractable",
     "fshType": "Instance",
@@ -134,6 +126,14 @@
     "fshFile": "definitions\\phq-9\\mii-qst-pro-phq-9.fsh",
     "startLine": 1,
     "endLine": 547
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-quroqol-eq5d5l-answer-coding.json",
+    "fshName": "mii-qst-pro-quroqol-eq5d5l-answer-coding",
+    "fshType": "Instance",
+    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-answer-coding.fsh",
+    "startLine": 1,
+    "endLine": 237
   },
   {
     "outputFile": "QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.json",
