@@ -7,6 +7,9 @@ Description: "MII PR PRO Score Instance"
 
 * identifier 0..* MS
 * effectiveDateTime 0..1 MS
+* extension 0..* MS
+* extension contains http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
+	 named instantiatesCanonical 0..1 MS
 
 // * focus - dann vsl im Rahmen von PCOR-MII relevant
 

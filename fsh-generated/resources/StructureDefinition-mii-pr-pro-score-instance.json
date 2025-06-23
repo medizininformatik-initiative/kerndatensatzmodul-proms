@@ -15,6 +15,27 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.extension:instatiatesCanonical",
+        "path": "Observation.extension",
+        "sliceName": "instatiatesCanonical",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.identifier",
         "path": "Observation.identifier",
         "mustSupport": true
