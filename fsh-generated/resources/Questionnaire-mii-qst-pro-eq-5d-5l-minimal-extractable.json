@@ -1,0 +1,428 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-eq-5d-5l-minimal-extractable",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l",
+  "title": "MII QST PRO EQ-5D-5L",
+  "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "73041000052103",
+      "display": "EuroQoL five dimension five level questionnaire (assessment scale)"
+    },
+    {
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "euroqol-eq5d5l",
+      "display": "EuroQol EQ-5D-5L Questionnaire"
+    }
+  ],
+  "item": [
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueString": "Ich habe keine Probleme herumzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueString": "Ich habe leichte Probleme herumzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueString": "Ich habe mäßige Probleme herumzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueString": "Ich habe große Probleme herumzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueString": "Ich bin nicht in der Lage herumzugehen"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q01-MO",
+      "type": "choice",
+      "text": "BEWEGLICHKEIT / MOBILITÄT"
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueString": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueString": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueString": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueString": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueString": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q02-SC",
+      "type": "choice",
+      "text": "FÜR SICH SELBST SORGEN"
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueString": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueString": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueString": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueString": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueString": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q03-UA",
+      "type": "choice",
+      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueString": "Ich habe keine Schmerzen oder Beschwerden"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueString": "Ich habe leichte Schmerzen oder Beschwerden"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueString": "Ich habe mäßige Schmerzen oder Beschwerden"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueString": "Ich habe starke Schmerzen oder Beschwerden"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueString": "Ich habe extreme Schmerzen oder Beschwerden"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q04-PD",
+      "type": "choice",
+      "text": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN"
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueString": "Ich bin nicht ängstlich oder deprimiert"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueString": "Ich bin ein wenig ängstlich oder deprimiert"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueString": "Ich bin mäßig ängstlich oder deprimiert"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueString": "Ich bin sehr ängstlich oder deprimiert"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueString": "Ich bin extrem ängstlich oder deprimiert"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q05-AD",
+      "type": "choice",
+      "text": "ANGST / NIEDERGESCHLAGENHEIT",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "405157008",
+          "system": "http://snomed.info/sct",
+          "display": "Personal health status"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        },
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.repeat(item).where(type = 'choice').item.answer.value.ordinal().aggregate($total & $this, '')"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-profile",
+      "type": "string",
+      "text": "Gesundheitszustand"
+    },
+    {
+      "code": [
+        {
+          "code": "406222005",
+          "system": "http://snomed.info/sct",
+          "display": "Population health status"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueDecimal": -0.661
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueDecimal": 1
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-index",
+      "type": "decimal",
+      "text": "Indexwert"
+    },
+    {
+      "code": [
+        {
+          "code": "446515003",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 100
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q06-vas",
+      "type": "integer",
+      "text": "IHRE GESUNDHEIT HEUTE"
+    }
+  ],
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "version": "0.1.0"
+}

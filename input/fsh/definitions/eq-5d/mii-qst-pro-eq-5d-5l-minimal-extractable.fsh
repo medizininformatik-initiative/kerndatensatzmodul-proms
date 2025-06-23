@@ -1,4 +1,4 @@
-Instance: mii-qst-pro-eq-5d-5l-minimal
+Instance: mii-qst-pro-eq-5d-5l-minimal-extractable
 InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
@@ -119,8 +119,14 @@ Usage: #definition
 * item[=].type = #string
 * item[=].code = $SCT#405157008 "Personal health status"
 * item[=].text = "Gesundheitszustand"
-
-
+* item[=].extension[+].url = $sdc-questionnaire-observation-extract
+* item[=].extension[=].valueBoolean = true
+* item[=].extension[+].url = $sdc-questionnaire-observation-extract-category
+* item[=].extension[=].valueCodeableConcept.coding.system = $hl7-observation-category
+* item[=].extension[=].valueCodeableConcept.coding.code = #survey
+* item[=].extension[+].url = $sdc-questionnaire-calculated-expression
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "%resource.repeat(item).where(type = 'choice').item.answer.value.ordinal().aggregate($total & $this, '')"
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)
 * item[+].linkId = "euroqol-eq5d5l-score-index"
@@ -131,23 +137,32 @@ Usage: #definition
 * item[=].extension[=].valueDecimal = -0.661
 * item[=].extension[+].url = $hl7-max-value
 * item[=].extension[=].valueDecimal = 1
+* item[=].extension[+].url = $sdc-questionnaire-observation-extract
+* item[=].extension[=].valueBoolean = true
 * item[=].extension[+].url = $hl7-questionnaire-unit
 * item[=].extension[=].valueCoding.system = $UCUM
 * item[=].extension[=].valueCoding.code = #{score}
-
-
+* item[=].extension[+].url = $sdc-questionnaire-observation-extract-category
+* item[=].extension[=].valueCodeableConcept.coding.system = $hl7-observation-category
+* item[=].extension[=].valueCodeableConcept.coding.code = #survey
 
 // Subjektive Beurteilung des Gesundheitszustands
 * item[+].linkId = "euroqol-eq5d5l-q06-vas"
 * item[=].type = #integer
 * item[=].code = $SCT#446515003 "Health assessment questionnaire score"
 * item[=].text = "IHRE GESUNDHEIT HEUTE"
-* item[=].text.extension[+].url = $hl7-min-value
-* item[=].text.extension[=].valueInteger = 0
-* item[=].text.extension[+].url = $hl7-max-value
-* item[=].text.extension[=].valueInteger = 100
+* item[=].extension[+].url = $hl7-min-value
+* item[=].extension[=].valueInteger = 0
+* item[=].extension[+].url = $hl7-max-value
+* item[=].extension[=].valueInteger = 100
+* item[=].extension[+].url = $sdc-questionnaire-observation-extract
+* item[=].extension[=].valueBoolean = true
 * item[=].extension[+].url = $hl7-questionnaire-unit
 * item[=].extension[=].valueCoding.system = $UCUM
 * item[=].extension[=].valueCoding.code = #{score}
+* item[=].extension[+].url = $sdc-questionnaire-observation-extract-category
+* item[=].extension[=].valueCodeableConcept.coding.system = $hl7-observation-category
+* item[=].extension[=].valueCodeableConcept.coding.code = #survey
 
 
+//@Thimo TODO FHIRPath für Score
