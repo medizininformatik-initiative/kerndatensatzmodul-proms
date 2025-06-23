@@ -168,7 +168,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.1",
+      "linkId": "phq-phq9-q01",
       "type": "choice",
       "prefix": "1",
       "text": "Wenig Interesse oder Freude an Ihren Tätigkeiten",
@@ -319,7 +319,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.2",
+      "linkId": "phq-phq9-q02",
       "type": "choice",
       "prefix": "2",
       "text": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
@@ -470,7 +470,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.3",
+      "linkId": "phq-phq9-q03",
       "type": "choice",
       "prefix": "3",
       "text": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf",
@@ -621,7 +621,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.4",
+      "linkId": "phq-phq9-q04",
       "type": "choice",
       "prefix": "4",
       "text": "Müdigkeit oder Gefühl, keine Energie zu haben",
@@ -772,7 +772,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.5",
+      "linkId": "phq-phq9-q05",
       "type": "choice",
       "prefix": "5",
       "text": "Verminderter Appetit oder übermäßiges Bedürfnis zu essen",
@@ -923,7 +923,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.6",
+      "linkId": "phq-phq9-q06",
       "type": "choice",
       "prefix": "6",
       "text": "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben",
@@ -1074,7 +1074,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.7",
+      "linkId": "phq-phq9-q07",
       "type": "choice",
       "prefix": "7",
       "text": "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen",
@@ -1225,7 +1225,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.8",
+      "linkId": "phq-phq9-q08",
       "type": "choice",
       "prefix": "8",
       "text": "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil „zappelig“ oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?",
@@ -1376,7 +1376,7 @@
           ]
         }
       ],
-      "linkId": "PHQ-9.9",
+      "linkId": "phq-phq9-q09",
       "type": "choice",
       "prefix": "9",
       "text": "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten",
@@ -1438,7 +1438,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
         }
       ],
-      "linkId": "PHQ-9.Score",
+      "linkId": "phq-phq9-Score-total",
       "type": "decimal",
       "prefix": "Auswertung",
       "readOnly": true,
@@ -1566,7 +1566,7 @@
           }
         }
       ],
-      "linkId": "PHQ-9.10",
+      "linkId": "phq-phq9-q10",
       "type": "choice",
       "prefix": "10",
       "text": "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen",

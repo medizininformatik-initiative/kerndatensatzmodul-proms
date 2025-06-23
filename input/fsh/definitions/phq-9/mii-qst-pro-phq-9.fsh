@@ -20,7 +20,7 @@ Usage: #definition
 * item[0].text.extension[0].extension[1].url = "content"
 * item[0].text.extension[0].extension[1].valueString = "Over the last two weeks, how often have you been bothered by any of the following problems?"
 
-* item[1].linkId = "PHQ-9.1"
+* item[1].linkId = "phq-phq9-q01"
 * item[1].type = #choice
 * item[1].prefix = "1"
 * item[1].code = $LNC#44250-9
@@ -71,7 +71,7 @@ Usage: #definition
 * item[1].answerOption[3].extension.url = $hl7-ordinal-value
 * item[1].answerOption[3].extension.valueDecimal = 3
 
-* item[2].linkId = "PHQ-9.2"
+* item[2].linkId = "phq-phq9-q02"
 * item[2].type = #choice
 * item[2].prefix = "2"
 * item[2].code = $LNC#44255-8
@@ -122,7 +122,7 @@ Usage: #definition
 * item[2].answerOption[3].extension.url = $hl7-ordinal-value
 * item[2].answerOption[3].extension.valueDecimal = 3
 
-* item[3].linkId = "PHQ-9.3"
+* item[3].linkId = "phq-phq9-q03"
 * item[3].type = #choice
 * item[3].prefix = "3"
 * item[3].code = $LNC#44259-0
@@ -173,7 +173,7 @@ Usage: #definition
 * item[3].answerOption[3].extension.url = $hl7-ordinal-value
 * item[3].answerOption[3].extension.valueDecimal = 3
 
-* item[4].linkId = "PHQ-9.4"
+* item[4].linkId = "phq-phq9-q04"
 * item[4].type = #choice
 * item[4].prefix = "4"
 * item[4].code = $LNC#44254-1
@@ -224,7 +224,7 @@ Usage: #definition
 * item[4].answerOption[3].extension.url = $hl7-ordinal-value
 * item[4].answerOption[3].extension.valueDecimal = 3
 
-* item[5].linkId = "PHQ-9.5"
+* item[5].linkId = "phq-phq9-q05"
 * item[5].type = #choice
 * item[5].prefix = "5"
 * item[5].code = $LNC#44251-7
@@ -275,7 +275,7 @@ Usage: #definition
 * item[5].answerOption[3].extension.url = $hl7-ordinal-value
 * item[5].answerOption[3].extension.valueDecimal = 3
 
-* item[6].linkId = "PHQ-9.6"
+* item[6].linkId = "phq-phq9-q06"
 * item[6].type = #choice
 * item[6].prefix = "6"
 * item[6].code = $LNC#44258-2
@@ -326,7 +326,7 @@ Usage: #definition
 * item[6].answerOption[3].extension.url = $hl7-ordinal-value
 * item[6].answerOption[3].extension.valueDecimal = 3
 
-* item[7].linkId = "PHQ-9.7"
+* item[7].linkId = "phq-phq9-q07"
 * item[7].type = #choice
 * item[7].prefix = "7"
 * item[7].code = $LNC#44252-5
@@ -377,7 +377,7 @@ Usage: #definition
 * item[7].answerOption[3].extension.url = $hl7-ordinal-value
 * item[7].answerOption[3].extension.valueDecimal = 3
 
-* item[8].linkId = "PHQ-9.8"
+* item[8].linkId = "phq-phq9-q08"
 * item[8].type = #choice
 * item[8].prefix = "8"
 * item[8].code = $LNC#44253-3
@@ -428,7 +428,7 @@ Usage: #definition
 * item[8].answerOption[3].extension.url = $hl7-ordinal-value
 * item[8].answerOption[3].extension.valueDecimal = 3
 
-* item[9].linkId = "PHQ-9.9"
+* item[9].linkId = "phq-phq9-q09"
 * item[9].type = #choice
 * item[9].prefix = "9"
 * item[9].code = $LNC#44260-8
@@ -479,7 +479,7 @@ Usage: #definition
 * item[9].answerOption[3].extension.url = $hl7-ordinal-value
 * item[9].answerOption[3].extension.valueDecimal = 3
 
-* item[11].linkId = "PHQ-9.10"
+* item[11].linkId = "phq-phq9-q10"
 * item[11].type = #choice
 * item[11].prefix = "10"
 * item[11].code = $LNC#69722-7
@@ -522,7 +522,7 @@ Usage: #definition
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Extremely difficult"
 
-* item[10].linkId = "PHQ-9.Score"
+* item[10].linkId = "phq-phq9-Score-total"
 * item[10].type = #decimal
 * item[10].prefix = "Auswertung"
 * item[10].code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
