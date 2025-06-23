@@ -1,6 +1,11 @@
 {
   "resourceType": "Observation",
   "id": "mii-exa-pro-phq-9-observation",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    ]
+  },
   "valueQuantity": {
     "value": 27,
     "code": "{score}",

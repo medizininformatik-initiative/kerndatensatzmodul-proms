@@ -1,12 +1,13 @@
 // TODO: Title/ Description Translation?
 Instance: mii-qst-pro-phq-9-sdc-rendering
-InstanceOf: SDCBaseQuestionnaire
+InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO PHQ-9 (SDC Rendering)"
 Description: "Patient Health Questionnaire (PHQ-9) SDC Rendering"
 Usage: #definition
 
 // Definitional Metadata
 * insert DefinitionResourceMetadata($mii-qst-pro-phq-9-sdc-rendering, active, true, de)
+* version = "0.1.0"
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
 // PHQ-9.Description

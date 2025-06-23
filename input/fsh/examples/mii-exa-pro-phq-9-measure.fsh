@@ -1,3 +1,4 @@
+/*
 // Example Observation-based Extraction, see https://build.fhir.org/ig/HL7/sdc/extraction.html#obs-extract
 Instance: mii-exa-pro-phq-9-measure
 InstanceOf: Measure

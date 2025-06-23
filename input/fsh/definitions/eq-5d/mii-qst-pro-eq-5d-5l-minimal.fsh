@@ -1,4 +1,4 @@
-Instance: mii-qst-pro-euroqol-eq5d5l
+Instance: mii-qst-pro-eq-5d-5l-minial
 InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
@@ -8,33 +8,16 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
-* code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
+* code[snomed] = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
+* code[mii] = $mii-cs-pro-questionnaire-catalogue#euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
 * version = "0.1.0"
 // TODO: date, publisher, copyright, etc.
 
-* item[+].linkId = "EQ-5D-5L.IS"
-* item[=].type = #display
-* item[=].text = "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt."
-* item[=].text.extension[+].url = $hl7-translation
-* item[=].text.extension[=].extension[+].url = "lang"
-* item[=].text.extension[=].extension[=].valueCode = #en
-* item[=].text.extension[=].extension[+].url = "content"
-* item[=].text.extension[=].extension[=].valueString = "Under each heading, please tick the ONE box that best describes your health TODAY."
 
 * item[+].linkId = "EQ-5D-5L.MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
-* item[=].text.extension[+].url = $hl7-translation
-* item[=].text.extension[=].extension[+].url = "lang"
-* item[=].text.extension[=].extension[=].valueCode = #en
-* item[=].text.extension[=].extension[+].url = "content"
-* item[=].text.extension[=].extension[=].valueString = "MOBILITY"
 * item[=].answerOption[+].valueString = "Ich habe keine Probleme herumzugehen"
-* item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].answerOption[=].valueString.extension[=].extension[+].url = "content"
-* item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "I have no problems in walking about"
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 1
 * item[=].answerOption[+].valueString = "Ich habe leichte Probleme herumzugehen"

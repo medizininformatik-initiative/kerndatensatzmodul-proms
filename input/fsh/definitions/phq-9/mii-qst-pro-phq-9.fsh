@@ -1,5 +1,5 @@
 Instance: mii-qst-pro-phq-9
-InstanceOf: SDCQuestionnaireCommon
+InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO PHQ-9"
 Description: "Patient Health Questionnaire (PHQ-9)"
 Usage: #definition
@@ -8,6 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
+* version = "0.1.0"
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
 * item[0].linkId = "PHQ-9.Description"

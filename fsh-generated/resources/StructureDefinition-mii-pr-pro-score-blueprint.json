@@ -15,8 +15,152 @@
   "differential": {
     "element": [
       {
-        "id": "ObservationDefinition",
-        "path": "ObservationDefinition"
+        "id": "ObservationDefinition.code",
+        "path": "ObservationDefinition.code",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.code.coding",
+        "path": "ObservationDefinition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Different code systems for the same questionnaire",
+          "ordered": false
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.code.coding:snomed",
+        "path": "ObservationDefinition.code.coding",
+        "sliceName": "snomed",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ObservationDefinition.code.coding:snomed.system",
+        "path": "ObservationDefinition.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.code.coding:snomed.code",
+        "path": "ObservationDefinition.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.code.coding:loinc",
+        "path": "ObservationDefinition.code.coding",
+        "sliceName": "loinc",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ObservationDefinition.code.coding:loinc.system",
+        "path": "ObservationDefinition.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.code.coding:loinc.code",
+        "path": "ObservationDefinition.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.code.coding:mii",
+        "path": "ObservationDefinition.code.coding",
+        "sliceName": "mii",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ObservationDefinition.code.coding:mii.system",
+        "path": "ObservationDefinition.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.code.coding:mii.code",
+        "path": "ObservationDefinition.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.permittedDataType",
+        "path": "ObservationDefinition.permittedDataType",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.quantitativeDetails.customaryUnit",
+        "path": "ObservationDefinition.quantitativeDetails.customaryUnit",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.quantitativeDetails.unit",
+        "path": "ObservationDefinition.quantitativeDetails.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.quantitativeDetails.decimalPrecision",
+        "path": "ObservationDefinition.quantitativeDetails.decimalPrecision",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval",
+        "path": "ObservationDefinition.qualifiedInterval",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.category",
+        "path": "ObservationDefinition.qualifiedInterval.category",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.extension",
+        "path": "ObservationDefinition.qualifiedInterval.range.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.extension:ScoreHealthCorrelation",
+        "path": "ObservationDefinition.qualifiedInterval.range.extension",
+        "sliceName": "ScoreHealthCorrelation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.extension:ScoreHealthCorrelation.value[x]",
+        "path": "ObservationDefinition.qualifiedInterval.range.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.low",
+        "path": "ObservationDefinition.qualifiedInterval.range.low",
+        "mustSupport": true
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.high",
+        "path": "ObservationDefinition.qualifiedInterval.range.high",
+        "mustSupport": true
       }
     ]
   }

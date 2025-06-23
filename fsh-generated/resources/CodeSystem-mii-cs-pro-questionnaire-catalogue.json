@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "MII_CS_PRO_Questionnaire_Catalogue",
+  "id": "mii-cs-pro-questionnaire-catalogue",
+  "title": "MII CS PRO Questionnaire Catalogue",
+  "description": "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in the MII PROMs Module",
+  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+  "concept": [
+    {
+      "code": "euroqol-eq5d5l",
+      "display": "EuroQol EQ-5D-5L Questionnaire"
+    },
+    {
+      "code": "phq-phq9",
+      "display": "PHQ-9 Questionnaire"
+    },
+    {
+      "code": "bdi-bdi2",
+      "display": "Beck Depression Inventory II (BDI-II)"
+    }
+  ],
+  "version": "0.1.0",
+  "count": 3
+}

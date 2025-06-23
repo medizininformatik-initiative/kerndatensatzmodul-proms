@@ -1,44 +1,27 @@
 {
   "resourceType": "Questionnaire",
-  "id": "mii-qst-pro-eq-5d-5l",
+  "id": "mii-qst-pro-eq-5d-5l-minial",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnairecommon"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l",
   "title": "MII QST PRO EQ-5D-5L",
   "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
   "code": [
     {
-      "code": "73041000052103",
       "system": "http://snomed.info/sct",
-      "display": "EuroQoL five dimension five level questionnaire"
+      "code": "73041000052103",
+      "display": "EuroQoL five dimension five level questionnaire (assessment scale)"
+    },
+    {
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "euroqol-eq5d5l",
+      "display": "EuroQol EQ-5D-5L Questionnaire"
     }
   ],
   "item": [
-    {
-      "linkId": "EQ-5D-5L.IS",
-      "type": "display",
-      "text": "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt.",
-      "_text": {
-        "extension": [
-          {
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "en"
-              },
-              {
-                "url": "content",
-                "valueString": "Under each heading, please tick the ONE box that best describes your health TODAY."
-              }
-            ],
-            "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ]
-      }
-    },
     {
       "answerOption": [
         {
@@ -48,24 +31,7 @@
               "valueDecimal": 1
             }
           ],
-          "valueString": "Ich habe keine Probleme herumzugehen",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have no problems in walking about"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
+          "valueString": "Ich habe keine Probleme herumzugehen"
         },
         {
           "extension": [
@@ -227,23 +193,6 @@
       "linkId": "EQ-5D-5L.MO",
       "type": "choice",
       "text": "BEWEGLICHKEIT / MOBILITÄT",
-      "_text": {
-        "extension": [
-          {
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "en"
-              },
-              {
-                "url": "content",
-                "valueString": "MOBILITY"
-              }
-            ],
-            "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ]
-      },
       "required": true,
       "repeats": false
     },
@@ -1295,5 +1244,6 @@
   ],
   "status": "active",
   "experimental": true,
-  "language": "de"
+  "language": "de",
+  "version": "0.1.0"
 }

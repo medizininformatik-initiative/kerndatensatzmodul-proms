@@ -1,5 +1,5 @@
 Instance: mii-qst-pro-eq-5d-5l-answer-coding
-InstanceOf: SDCQuestionnaireCommon
+InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
 Usage: #definition
@@ -9,8 +9,9 @@ Usage: #definition
 * experimental = true
 * language = #de
 * code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
-
+* version = "0.1.0"
 // TODO: date, publisher, copyright, etc.
+* derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
 
 * item[+].linkId = "EQ-5D-5L.IS"
 * item[=].type = #display
@@ -244,3 +245,10 @@ Usage: #definition
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].required = true
 * item[=].repeats = false
+
+
+// TODO: SCoring auf FHIR Path anpassen
+// ObsDef und Obs Profil EQ-5D-Index
+// ObsDef und Obs Profil für EQ-5D-5L VAS
+// Profil für EQ-5D-5L QuestionnaireResponse
+// generell IDs glattziehen 

@@ -1,10 +1,10 @@
-Instance: mii-exa-pro-phq-9-response
+Instance: mii-exa-pro-euroqol-eq5d5l-response
 InstanceOf: MII_PR_PRO_QuestionnaireResponse
-Title: "PHQ-9 Questionnaire Response Example"
+Title: "PHQ-9 Questionnaire Response Example EuroQol EQ-5D-5L"
 * status = #completed
 * subject = Reference(Patient/example)
 * authored = "2023-10-01T12:00:00Z"
-* questionnaire = "Questionnaire/mii-qst-pro-phq-9"
+* questionnaire = $mii-qst-pro-euroqol-eq5d5l
 * item[0].linkId = "PHQ.1"
 * item[0].answer[0].valueCoding = #LA6571-9
 * item[1].linkId = "PHQ.2"

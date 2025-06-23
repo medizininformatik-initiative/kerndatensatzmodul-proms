@@ -1,6 +1,6 @@
 // Example Observation-based Extraction, see https://build.fhir.org/ig/HL7/sdc/extraction.html#obs-extract
 Instance: mii-exa-pro-phq-9-observation
-InstanceOf: Observation
+InstanceOf: MII_PR_PRO_Score_Instance
 Title: "PHQ-9 Observation Example"
 * status = #final
 // * basedOn = Reference(mii-obsdef-pro-score-phq-9) geht nicht weil Observation.instantiatesCanonical erst in R5 kommt, und die R4 extension kein ObservationDefinition unterstützt, aber dafür Measure

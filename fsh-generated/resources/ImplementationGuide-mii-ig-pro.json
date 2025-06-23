@@ -51,6 +51,12 @@
       "version": "4.0.0-ballot",
       "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
       "id": "hl7_fhir_uv_sdc"
+    },
+    {
+      "packageId": "hl7.terminology",
+      "version": "6.4.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology"
     }
   ],
   "definition": {
@@ -76,6 +82,54 @@
         "name": "MII CS EQ-5D Value Set",
         "description": "EuroQol EQ-5D Value Set",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-questionnaire-catalogue"
+        },
+        "name": "MII CS PRO Questionnaire Catalogue",
+        "description": "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in the MII PROMs Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-score-catalogue"
+        },
+        "name": "MII CS PRO Score Catalogue",
+        "description": "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-score-score-health-correlation"
+        },
+        "name": "MII Ex PRO Score Score Health Correlation",
+        "description": "MII Ex PRO Score Score Health Correlation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index"
+        },
+        "name": "MII ObsDef PRO Score EQ-5D-5L Index",
+        "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Index Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile"
+        },
+        "name": "MII ObsDef PRO Score EQ-5D-5L Profile",
+        "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Profile",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas"
+        },
+        "name": "MII ObsDef PRO Score EQ-5D-5L VAS",
+        "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
       },
       {
         "reference": {
@@ -127,7 +181,15 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/mii-qst-pro-eq-5d-5l"
+          "reference": "Questionnaire/mii-qst-pro-eq-5d-5l-minial"
+        },
+        "name": "MII QST PRO EQ-5D-5L",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l"
         },
         "name": "MII QST PRO EQ-5D-5L",
         "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
@@ -167,24 +229,24 @@
       },
       {
         "reference": {
-          "reference": "Measure/mii-exa-pro-phq-9-measure"
-        },
-        "name": "PHQ-9 Observation Example",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-pro-phq-9-observation"
         },
         "name": "PHQ-9 Observation Example",
-        "exampleBoolean": true
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       },
       {
         "reference": {
           "reference": "QuestionnaireResponse/mii-exa-pro-phq-9-response"
         },
         "name": "PHQ-9 Questionnaire Response Example",
-        "exampleBoolean": true
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response"
+        },
+        "name": "PHQ-9 Questionnaire Response Example EuroQol EQ-5D-5L",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
         "reference": {

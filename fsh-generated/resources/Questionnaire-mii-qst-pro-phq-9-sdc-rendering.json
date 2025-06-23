@@ -3,7 +3,7 @@
   "id": "mii-qst-pro-phq-9-sdc-rendering",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9-sdc-rendering",
@@ -594,5 +594,6 @@
   ],
   "status": "active",
   "experimental": true,
-  "language": "de"
+  "language": "de",
+  "version": "0.1.0"
 }
