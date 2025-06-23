@@ -30,6 +30,12 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.0
   hl7.fhir.uv.sdc: 4.0.0-ballot
   hl7.terminology: 6.4.0
+  hl7.fhir.extensions.r5:
+    id: r5ext
+    version: 4.0.1
+    reason: |
+      Makes available certain R5 elements for use as part of this R4 IG
+
 
 #   hl7.fhir.us.mcode:
 #     id: mcode
