@@ -522,7 +522,7 @@ Usage: #definition
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Extremely difficult"
 
-* item[10].linkId = "phq-phq9-Score-total"
+* item[10].linkId = "phq-phq9-score-total"
 * item[10].type = #decimal
 * item[10].prefix = "Auswertung"
 * item[10].code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
