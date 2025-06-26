@@ -176,14 +176,7 @@
       ],
       "linkId": "euroqol-eq5d5l-q03-UA",
       "type": "choice",
-      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
-      "_text": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ]
-      }
+      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
     },
     {
       "answerOption": [
@@ -287,14 +280,7 @@
       ],
       "linkId": "euroqol-eq5d5l-q05-AD",
       "type": "choice",
-      "text": "ANGST / NIEDERGESCHLAGENHEIT",
-      "_text": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ]
-      }
+      "text": "ANGST / NIEDERGESCHLAGENHEIT"
     },
     {
       "code": [
