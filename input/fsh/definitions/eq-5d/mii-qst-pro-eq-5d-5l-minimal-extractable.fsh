@@ -56,7 +56,6 @@ Usage: #definition
 * item[+].linkId = "euroqol-eq5d5l-q03-UA"
 * item[=].type = #choice
 * item[=].text = "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
-* item[=].text.extension[+].url = $hl7-translation
 * item[=].answerOption[+].valueString = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 1
@@ -96,7 +95,6 @@ Usage: #definition
 * item[+].linkId = "euroqol-eq5d5l-q05-AD"
 * item[=].type = #choice
 * item[=].text = "ANGST / NIEDERGESCHLAGENHEIT"
-* item[=].text.extension[+].url = $hl7-translation
 * item[=].answerOption[+].valueString = "Ich bin nicht ängstlich oder deprimiert"
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 1
