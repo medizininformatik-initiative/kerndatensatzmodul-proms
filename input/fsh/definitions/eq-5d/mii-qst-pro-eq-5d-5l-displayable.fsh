@@ -1,4 +1,4 @@
-Instance: mii-qst-pro-euroqol-eq5d5l
+Instance: mii-qst-pro-euroqol-eq5d5l-displayable
 InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
@@ -79,7 +79,12 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].answerOption[=].initialSelected = true
+* item[=].initial[+].valueString = "Fehlender Wert"
+* item[=].initial[=].valueString.extension[+].url = $hl7-translation
+* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
+* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
+* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
+* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -141,8 +146,12 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].answerOption[=].initialSelected = true
-
+* item[=].initial[+].valueString = "Fehlender Wert"
+* item[=].initial[=].valueString.extension[+].url = $hl7-translation
+* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
+* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
+* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
+* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -204,8 +213,12 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].answerOption[=].initialSelected = true
-
+* item[=].initial[+].valueString = "Fehlender Wert"
+* item[=].initial[=].valueString.extension[+].url = $hl7-translation
+* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
+* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
+* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
+* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -267,8 +280,12 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].answerOption[=].initialSelected = true
-
+* item[=].initial[+].valueString = "Fehlender Wert"
+* item[=].initial[=].valueString.extension[+].url = $hl7-translation
+* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
+* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
+* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
+* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -328,8 +345,14 @@ Usage: #definition
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].answerOption[=].extension[+].url = $hl7-ordinal-value
 * item[=].answerOption[=].extension[=].valueDecimal = 9
-* item[=].answerOption[=].initialSelected = true
-
+* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
+* item[=].answerOption[=].extension[=].valueBoolean = true
+* item[=].initial[+].valueString = "Fehlender Wert"
+* item[=].initial[=].valueString.extension[+].url = $hl7-translation
+* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
+* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
+* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
+* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -411,10 +434,10 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "YOUR HEALTH TODAY"
-* item[=].extension[+].url = $hl7-min-value
-* item[=].extension[=].valueInteger = 0
-* item[=].extension[+].url = $hl7-max-value
-* item[=].extension[=].valueInteger = 100
+* item[=].text.extension[+].url = $hl7-min-value
+* item[=].text.extension[=].valueInteger = 0
+* item[=].text.extension[+].url = $hl7-max-value
+* item[=].text.extension[=].valueInteger = 100
 * item[=].initial.valueInteger = 999
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true

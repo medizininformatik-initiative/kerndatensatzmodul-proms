@@ -93,7 +93,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-minimal-extractable.fsh",
     "startLine": 1,
-    "endLine": 165
+    "endLine": 163
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal.json",
@@ -104,12 +104,20 @@
     "endLine": 151
   },
   {
+    "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.json",
+    "fshName": "mii-qst-pro-euroqol-eq5d5l-displayable",
+    "fshType": "Instance",
+    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-displayable.fsh",
+    "startLine": 1,
+    "endLine": 451
+  },
+  {
     "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l.json",
     "fshName": "mii-qst-pro-euroqol-eq5d5l",
     "fshType": "Instance",
     "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l.fsh",
     "startLine": 1,
-    "endLine": 451
+    "endLine": 428
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-phq-9-sdc-rendering.json",
