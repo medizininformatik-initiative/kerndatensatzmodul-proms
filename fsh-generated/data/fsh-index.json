@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "profiles\\mii-cs-pro-questionnaire-catalogue.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 16
   },
   {
     "outputFile": "CodeSystem-mii-cs-pro-score-catalogue.json",
@@ -21,7 +21,7 @@
     "fshType": "CodeSystem",
     "fshFile": "profiles\\mii-cs-pro-score-catalogue.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 15
   },
   {
     "outputFile": "ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json",
@@ -86,6 +86,14 @@
     "fshFile": "definitions\\phq-9\\mii-obsdef-pro-score-phq-9.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-bdi-bdi2.json",
+    "fshName": "mii-qst-pro-bdi-bdi2",
+    "fshType": "Instance",
+    "fshFile": "definitions\\bdi-ii\\mii-qst-pro-bdi-bdi2.fsh",
+    "startLine": 1,
+    "endLine": 58
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal-extractable.json",

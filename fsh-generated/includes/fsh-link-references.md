@@ -12,6 +12,7 @@
 [MII_PR_PRO_QuestionnaireResponse]: StructureDefinition-mii-pr-pro-questionnaire-response.html
 [MII_PR_PRO_Score_Blueprint]: StructureDefinition-mii-pr-pro-score-blueprint.html
 [MII_PR_PRO_Score_Instance]: StructureDefinition-mii-pr-pro-score-instance.html
+[mii-qst-pro-bdi-bdi2]: Questionnaire-mii-qst-pro-bdi-bdi2.html
 [mii-qst-pro-quroqol-eq5d5l-answer-coding]: Questionnaire-mii-qst-pro-quroqol-eq5d5l-answer-coding.html
 [mii-qst-pro-euroqol-eq5d5l-displayable]: Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html
 [mii-qst-pro-eq-5d-5l-minimal-extractable]: Questionnaire-mii-qst-pro-eq-5d-5l-minimal-extractable.html
