@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CodeSystem-mii-cs-pro-bdi-bdi2.json",
+    "fshName": "MII_CS_PRO_BDI_BDI2_AnswerList",
+    "fshType": "CodeSystem",
+    "fshFile": "definitions\\bdi-ii\\mii-cs-pro-bdi-bdi2.fsh",
+    "startLine": 1,
+    "endLine": 37
+  },
+  {
     "outputFile": "CodeSystem-mii-cs-pro-eq-5d-value-set.json",
     "fshName": "MII_CS_PRO_EQ_5D_ValueSet",
     "fshType": "CodeSystem",
@@ -93,15 +101,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\bdi-ii\\mii-qst-pro-bdi-bdi2.fsh",
     "startLine": 1,
-    "endLine": 58
-  },
-  {
-    "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal-extractable.json",
-    "fshName": "mii-qst-pro-eq-5d-5l-minimal-extractable",
-    "fshType": "Instance",
-    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-minimal-extractable.fsh",
-    "startLine": 1,
-    "endLine": 163
+    "endLine": 74
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal.json",
@@ -109,7 +109,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-minimal.fsh",
     "startLine": 1,
-    "endLine": 151
+    "endLine": 124
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.json",
@@ -117,15 +117,15 @@
     "fshType": "Instance",
     "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-displayable.fsh",
     "startLine": 1,
-    "endLine": 451
+    "endLine": 456
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l.json",
     "fshName": "mii-qst-pro-euroqol-eq5d5l",
     "fshType": "Instance",
-    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l.fsh",
+    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-collectable.fsh",
     "startLine": 1,
-    "endLine": 428
+    "endLine": 385
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-phq-9-sdc-rendering.json",
@@ -168,6 +168,22 @@
     "endLine": 32
   },
   {
+    "outputFile": "QuestionnaireResponse-mii-qr-pro-bdi-bdi2.json",
+    "fshName": "mii-qr-pro-bdi-bdi2",
+    "fshType": "Instance",
+    "fshFile": "definitions\\bdi-ii\\mii-pr-pro-bdi-bdi2-response.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-pro-questionnaire-capabilities.json",
+    "fshName": "MII_PR_PRO_Questionnaire_Capabilities",
+    "fshType": "Extension",
+    "fshFile": "profiles\\mii-ex-pro-questionnaire-capabilities.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "StructureDefinition-mii-ex-pro-score-score-health-correlation.json",
     "fshName": "MII_EX_PRO_Score_Score_Health_Correlation",
     "fshType": "Extension",
@@ -189,7 +205,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\mii-pr-pro-questionnaire.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-score-blueprint.json",
@@ -206,6 +222,22 @@
     "fshFile": "profiles\\mii-pr-pro-score-instance.fsh",
     "startLine": 1,
     "endLine": 25
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-pro-bdi-bdi2-long.json",
+    "fshName": "MII_VS_PRO_BDI_BDI2_AnswerListLong",
+    "fshType": "ValueSet",
+    "fshFile": "definitions\\bdi-ii\\mii-vs-pro-bdi-bdi2.fsh",
+    "startLine": 14,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-pro-bdi-bdi2-short.json",
+    "fshName": "MII_VS_PRO_BDI_BDI2_AnswerListShort",
+    "fshType": "ValueSet",
+    "fshFile": "definitions\\bdi-ii\\mii-vs-pro-bdi-bdi2.fsh",
+    "startLine": 1,
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json",

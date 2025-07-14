@@ -91,6 +91,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-bdi-bdi2"
+        },
+        "name": "MII CS PRO BDI-II",
+        "description": "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-questionnaire-catalogue"
         },
         "name": "MII CS PRO Questionnaire Catalogue",
@@ -155,6 +163,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+        },
+        "name": "MII PR PRO Questionnaire Capabilities",
+        "description": "MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-questionnaire-response"
         },
         "name": "MII PR PRO QuestionnaireResponse",
@@ -179,6 +195,14 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-qr-pro-bdi-bdi2"
+        },
+        "name": "MII QST PRO BDI-II",
+        "description": "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-bdi-bdi2"
         },
         "name": "MII QST PRO BDI-II",
@@ -195,6 +219,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l"
+        },
+        "name": "MII QST PRO EQ-5D-5L",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable"
         },
         "name": "MII QST PRO EQ-5D-5L",
@@ -203,23 +235,7 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/mii-qst-pro-eq-5d-5l-minimal-extractable"
-        },
-        "name": "MII QST PRO EQ-5D-5L",
-        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/mii-qst-pro-eq-5d-5l-minimal"
-        },
-        "name": "MII QST PRO EQ-5D-5L",
-        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l"
         },
         "name": "MII QST PRO EQ-5D-5L",
         "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
@@ -239,6 +255,22 @@
         },
         "name": "MII QST PRO PHQ-9 (SDC Rendering)",
         "description": "Patient Health Questionnaire (PHQ-9) SDC Rendering",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-bdi-bdi2-short"
+        },
+        "name": "MII VS PRO BDI-II",
+        "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-bdi-bdi2-long"
+        },
+        "name": "MII VS PRO BDI-II",
+        "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
         "exampleBoolean": false
       },
       {

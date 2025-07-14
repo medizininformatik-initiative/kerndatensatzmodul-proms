@@ -17,108 +17,81 @@ Usage: #definition
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
-* item[=].answerOption[+].valueString = "Ich habe keine Probleme herumzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueString = "Ich habe leichte Probleme herumzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueString = "Ich habe mäßige Probleme herumzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueString = "Ich habe große Probleme herumzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueString = "Ich bin nicht in der Lage herumzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 5
-
+* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[=].valueCoding.code = #1
+* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
+* item[=].answerOption[=].valueCoding.code = #2
+* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme herumzugehen"
+* item[=].answerOption[=].valueCoding.code = #3
+* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme herumzugehen"
+* item[=].answerOption[=].valueCoding.code = #4
+* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage herumzugehen"
+* item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q02-SC"
 * item[=].type = #choice
 * item[=].text = "FÜR SICH SELBST SORGEN"
-* item[=].answerOption[+].valueString = "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueString = "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueString = "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueString = "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueString = "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 5
+* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[=].valueCoding.code = #1
+* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[=].valueCoding.code = #2
+* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[=].valueCoding.code = #3
+* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[=].valueCoding.code = #4
+* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q03-UA"
 * item[=].type = #choice
 * item[=].text = "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
-* item[=].text.extension[+].url = $hl7-translation
-* item[=].answerOption[+].valueString = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueString = "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueString = "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueString = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueString = "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 5
-
+* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[=].valueCoding.code = #1
+* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[=].valueCoding.code = #2
+* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[=].valueCoding.code = #3
+* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[=].valueCoding.code = #4
+* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q04-PD"
 * item[=].type = #choice
 * item[=].text = "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN"
-* item[=].answerOption[+].valueString = "Ich habe keine Schmerzen oder Beschwerden"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueString = "Ich habe leichte Schmerzen oder Beschwerden"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueString = "Ich habe mäßige Schmerzen oder Beschwerden"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueString = "Ich habe starke Schmerzen oder Beschwerden"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueString = "Ich habe extreme Schmerzen oder Beschwerden"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 5
+* item[=].answerOption[+].valueCoding.display = "Ich habe keine Schmerzen oder Beschwerden"
+* item[=].answerOption[=].valueCoding.code = #1
+* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Schmerzen oder Beschwerden"
+* item[=].answerOption[=].valueCoding.code = #2
+* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Schmerzen oder Beschwerden"
+* item[=].answerOption[=].valueCoding.code = #3
+* item[=].answerOption[+].valueCoding.display = "Ich habe starke Schmerzen oder Beschwerden"
+* item[=].answerOption[=].valueCoding.code = #4
+* item[=].answerOption[+].valueCoding.display = "Ich habe extreme Schmerzen oder Beschwerden"
+* item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q05-AD"
 * item[=].type = #choice
 * item[=].text = "ANGST / NIEDERGESCHLAGENHEIT"
-* item[=].text.extension[+].url = $hl7-translation
-* item[=].answerOption[+].valueString = "Ich bin nicht ängstlich oder deprimiert"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueString = "Ich bin ein wenig ängstlich oder deprimiert"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueString = "Ich bin mäßig ängstlich oder deprimiert"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueString = "Ich bin sehr ängstlich oder deprimiert"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueString = "Ich bin extrem ängstlich oder deprimiert"
-* item[=].answerOption[=].extension.url = $hl7-ordinal-value
-* item[=].answerOption[=].extension.valueDecimal = 5
+* item[=].answerOption[+].valueCoding.display = "Ich bin nicht ängstlich oder deprimiert"
+* item[=].answerOption[=].valueCoding.code = #1
+* item[=].answerOption[+].valueCoding.display = "Ich bin ein wenig ängstlich oder deprimiert"
+* item[=].answerOption[=].valueCoding.code = #2
+* item[=].answerOption[+].valueCoding.display = "Ich bin mäßig ängstlich oder deprimiert"
+* item[=].answerOption[=].valueCoding.code = #3
+* item[=].answerOption[+].valueCoding.display = "Ich bin sehr ängstlich oder deprimiert"
+* item[=].answerOption[=].valueCoding.code = #4
+* item[=].answerOption[+].valueCoding.display = "Ich bin extrem ängstlich oder deprimiert"
+* item[=].answerOption[=].valueCoding.code = #5
+
 
 
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)
 * item[+].linkId = "euroqol-eq5d5l-score-profile"
-* item[=].type = #string
+* item[=].type = #code
 * item[=].code = $SCT#405157008 "Personal health status"
 * item[=].text = "Gesundheitszustand"
+
 
 
 

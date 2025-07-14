@@ -1,0 +1,83 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-qr-pro-bdi-bdi2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-patient"
+  },
+  "item": [
+    {
+      "linkId": "bdi-bdi2-q01"
+    },
+    {
+      "linkId": "bdi-bdi2-q02"
+    },
+    {
+      "linkId": "bdi-bdi2-q03"
+    },
+    {
+      "linkId": "bdi-bdi2-q04"
+    },
+    {
+      "linkId": "bdi-bdi2-q05"
+    },
+    {
+      "linkId": "bdi-bdi2-q06"
+    },
+    {
+      "linkId": "bdi-bdi2-q07"
+    },
+    {
+      "linkId": "bdi-bdi2-q08"
+    },
+    {
+      "linkId": "bdi-bdi2-q09"
+    },
+    {
+      "linkId": "bdi-bdi2-q10"
+    },
+    {
+      "linkId": "bdi-bdi2-q11"
+    },
+    {
+      "linkId": "bdi-bdi2-q12"
+    },
+    {
+      "linkId": "bdi-bdi2-q13"
+    },
+    {
+      "linkId": "bdi-bdi2-q14"
+    },
+    {
+      "linkId": "bdi-bdi2-q15"
+    },
+    {
+      "linkId": "bdi-bdi2-q16"
+    },
+    {
+      "linkId": "bdi-bdi2-q17"
+    },
+    {
+      "linkId": "bdi-bdi2-q18"
+    },
+    {
+      "linkId": "bdi-bdi2-q19"
+    },
+    {
+      "linkId": "bdi-bdi2-q20"
+    },
+    {
+      "linkId": "bdi-bdi2-q21"
+    },
+    {
+      "linkId": "bdi-bdi2-score-total"
+    }
+  ],
+  "questionnaire": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+  "status": "final",
+  "authored": "2023-10-01T12:00:00Z"
+}

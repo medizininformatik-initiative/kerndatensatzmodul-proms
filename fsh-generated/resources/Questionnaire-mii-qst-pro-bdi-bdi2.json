@@ -6,7 +6,7 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
   "title": "MII QST PRO BDI-II",
   "description": "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire",
   "code": [
@@ -16,14 +16,155 @@
       "display": "Beck Depression Inventory II [BDI]"
     }
   ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": false
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": false
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": false
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": false
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "mii-vs-pro-bdi-bdi2-short",
+      "status": "draft",
+      "name": "MII_VS_PRO_BDI_BDI2_AnswerListShort",
+      "title": "MII VS PRO BDI-II",
+      "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+      "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+      "version": "0.1.0",
+      "experimental": true,
+      "compose": {
+        "include": [
+          {
+            "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "concept": [
+              {
+                "code": "bdi-bdi2-answer-0"
+              },
+              {
+                "code": "bdi-bdi2-answer-1"
+              },
+              {
+                "code": "bdi-bdi2-answer-2"
+              },
+              {
+                "code": "bdi-bdi2-answer-3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "CodeSystem",
+      "id": "mii-cs-pro-bdi-bdi2",
+      "status": "draft",
+      "content": "complete",
+      "name": "MII_CS_PRO_BDI_BDI2_AnswerList",
+      "title": "MII CS PRO BDI-II",
+      "description": "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+      "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+      "concept": [
+        {
+          "code": "bdi-bdi2-answer-0",
+          "property": [
+            {
+              "code": "bdi-bdi2-itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "code": "bdi-bdi2-answer-1",
+          "property": [
+            {
+              "code": "bdi-bdi2-itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "code": "bdi-bdi2-answer-2",
+          "property": [
+            {
+              "code": "bdi-bdi2-itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "code": "bdi-bdi2-answer-3",
+          "property": [
+            {
+              "code": "bdi-bdi2-itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        },
+        {
+          "code": "bdi-bdi2-answer-1a"
+        },
+        {
+          "code": "bdi-bdi2-answer-1b"
+        },
+        {
+          "code": "bdi-bdi2-answer-2a"
+        },
+        {
+          "code": "bdi-bdi2-answer-2b"
+        },
+        {
+          "code": "bdi-bdi2-answer-3a"
+        },
+        {
+          "code": "bdi-bdi2-answer-3b"
+        }
+      ],
+      "version": "0.1.0",
+      "experimental": true,
+      "valueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+      "property": [
+        {
+          "code": "bdi-bdi2-itemWeight",
+          "uri": "http://hl7.org/fhir/concept-properties/itemWeight",
+          "description": "item weight for BDI-II questionnaire",
+          "type": "decimal"
+        }
+      ],
+      "count": 10
+    }
+  ],
   "item": [
     {
       "linkId": "bdi-bdi2-q01",
-      "type": "choice"
+      "type": "choice",
+      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q02",
-      "type": "choice"
+      "type": "choice",
+      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q03",
@@ -102,6 +243,15 @@
       "type": "choice"
     },
     {
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(type = 'choice').answer.value.weight().sum()"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        }
+      ],
       "linkId": "bdi-bdi2-score-total",
       "type": "quantity"
     }

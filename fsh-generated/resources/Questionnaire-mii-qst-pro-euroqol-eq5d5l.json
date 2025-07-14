@@ -18,38 +18,9 @@
   ],
   "item": [
     {
-      "linkId": "EQ-5D-5L.IS",
-      "type": "display",
-      "text": "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt.",
-      "_text": {
-        "extension": [
-          {
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "en"
-              },
-              {
-                "url": "content",
-                "valueString": "Under each heading, please tick the ONE box that best describes your health TODAY."
-              }
-            ],
-            "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ]
-      }
-    },
-    {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Probleme herumzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -64,18 +35,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe keine Probleme herumzugehen",
+            "code": "1"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Probleme herumzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -90,18 +56,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe leichte Probleme herumzugehen",
+            "code": "2"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Probleme herumzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -116,18 +77,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe mäßige Probleme herumzugehen",
+            "code": "3"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe große Probleme herumzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -142,18 +98,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe große Probleme herumzugehen",
+            "code": "4"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin nicht in der Lage herumzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -168,22 +119,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin nicht in der Lage herumzugehen",
+            "code": "5"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -198,8 +140,16 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Fehlender Wert",
+            "code": "9"
           },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ],
           "initialSelected": true
         }
       ],
@@ -229,14 +179,7 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -251,18 +194,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "1"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -277,18 +215,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "2"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -303,18 +236,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "3"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -329,18 +257,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "4"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -355,22 +278,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
+            "code": "5"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -385,8 +299,16 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Fehlender Wert",
+            "code": "9"
           },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ],
           "initialSelected": true
         }
       ],
@@ -416,14 +338,7 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -438,18 +353,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "1"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -464,18 +374,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "2"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -490,18 +395,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "3"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -516,18 +416,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "4"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -542,22 +437,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "5"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -572,8 +458,16 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Fehlender Wert",
+            "code": "9"
           },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ],
           "initialSelected": true
         }
       ],
@@ -603,14 +497,7 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Schmerzen oder Beschwerden",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -625,18 +512,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe keine Schmerzen oder Beschwerden",
+            "code": "1"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Schmerzen oder Beschwerden",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -651,18 +533,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe leichte Schmerzen oder Beschwerden",
+            "code": "2"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Schmerzen oder Beschwerden",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -677,18 +554,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe mäßige Schmerzen oder Beschwerden",
+            "code": "3"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe starke Schmerzen oder Beschwerden",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -703,18 +575,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe starke Schmerzen oder Beschwerden",
+            "code": "4"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich habe extreme Schmerzen oder Beschwerden",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -729,22 +596,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich habe extreme Schmerzen oder Beschwerden",
+            "code": "5"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -759,8 +617,16 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Fehlender Wert",
+            "code": "9"
           },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ],
           "initialSelected": true
         }
       ],
@@ -790,14 +656,7 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich bin nicht ängstlich oder deprimiert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -812,18 +671,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin nicht ängstlich oder deprimiert",
+            "code": "1"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich bin ein wenig ängstlich oder deprimiert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -838,18 +692,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin ein wenig ängstlich oder deprimiert",
+            "code": "2"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich bin mäßig ängstlich oder deprimiert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -864,18 +713,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin mäßig ängstlich oder deprimiert",
+            "code": "3"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich bin sehr ängstlich oder deprimiert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -890,18 +734,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin sehr ängstlich oder deprimiert",
+            "code": "4"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin extrem ängstlich oder deprimiert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -916,18 +755,13 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Ich bin extrem ängstlich oder deprimiert",
+            "code": "5"
           }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 9
-            }
-          ],
-          "valueString": "Fehlender Wert",
-          "_valueString": {
+          "valueCoding": {
             "extension": [
               {
                 "extension": [
@@ -942,7 +776,9 @@
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
-            ]
+            ],
+            "display": "Fehlender Wert",
+            "code": "9"
           },
           "initialSelected": true
         }
@@ -1096,7 +932,7 @@
     {
       "linkId": "EQ-VAS.IS",
       "type": "display",
-      "text": "\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
+      "text": "\r\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\r\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\r\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\r\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\r\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\r\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
       "_text": {
         "extension": [
           {
@@ -1107,7 +943,7 @@
               },
               {
                 "url": "content",
-                "valueString": "\n    We would like to know how good or bad your health is TODAY.\n\n    This scale is numbered from 0 to 100.\n\n    100 means the best health you can imagine.\n\n    0 means the worst health you can imagine.\n\n    Please mark an X on the scale to indicate how your health is TODAY.\n\n    Now, write the number you marked on the scale in the box below."
+                "valueString": "\r\n    We would like to know how good or bad your health is TODAY.\n\r\n    This scale is numbered from 0 to 100.\n\r\n    100 means the best health you can imagine.\n\r\n    0 means the worst health you can imagine.\n\r\n    Please mark an X on the scale to indicate how your health is TODAY.\n\r\n    Now, write the number you marked on the scale in the box below."
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1182,6 +1018,11 @@
       },
       "required": true,
       "repeats": false
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "status": "active",

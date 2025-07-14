@@ -23,5 +23,4 @@ Description: "MII PR PRO Score Instance"
 * interpretation 0..* MS
 * note 0..* MS
 * derivedFrom 0..* MS
-//* component 0..* MS evlt. noch nich tnutzen, weil dann Observationbased-Extraction nicht mehr genutzt werden kann
 

@@ -16,6 +16,27 @@
   "differential": {
     "element": [
       {
+        "id": "Questionnaire.extension",
+        "path": "Questionnaire.extension",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.extension:capabilities",
+        "path": "Questionnaire.extension",
+        "sliceName": "capabilities",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Questionnaire.version",
         "path": "Questionnaire.version",
         "min": 1,

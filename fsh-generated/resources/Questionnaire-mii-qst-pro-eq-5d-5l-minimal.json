@@ -25,49 +25,34 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Probleme herumzugehen"
+          "valueCoding": {
+            "display": "Ich habe keine Probleme herumzugehen",
+            "code": "1"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Probleme herumzugehen"
+          "valueCoding": {
+            "display": "Ich habe leichte Probleme herumzugehen",
+            "code": "2"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Probleme herumzugehen"
+          "valueCoding": {
+            "display": "Ich habe mäßige Probleme herumzugehen",
+            "code": "3"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe große Probleme herumzugehen"
+          "valueCoding": {
+            "display": "Ich habe große Probleme herumzugehen",
+            "code": "4"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin nicht in der Lage herumzugehen"
+          "valueCoding": {
+            "display": "Ich bin nicht in der Lage herumzugehen",
+            "code": "5"
+          }
         }
       ],
       "linkId": "euroqol-eq5d5l-q01-MO",
@@ -77,49 +62,34 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+          "valueCoding": {
+            "display": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "1"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+          "valueCoding": {
+            "display": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "2"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+          "valueCoding": {
+            "display": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "3"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+          "valueCoding": {
+            "display": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
+            "code": "4"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+          "valueCoding": {
+            "display": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
+            "code": "5"
+          }
         }
       ],
       "linkId": "euroqol-eq5d5l-q02-SC",
@@ -129,108 +99,71 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          "valueCoding": {
+            "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "1"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          "valueCoding": {
+            "display": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "2"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          "valueCoding": {
+            "display": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "3"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          "valueCoding": {
+            "display": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "4"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+          "valueCoding": {
+            "display": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
+            "code": "5"
+          }
         }
       ],
       "linkId": "euroqol-eq5d5l-q03-UA",
       "type": "choice",
-      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
-      "_text": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ]
-      }
+      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
     },
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich habe keine Schmerzen oder Beschwerden"
+          "valueCoding": {
+            "display": "Ich habe keine Schmerzen oder Beschwerden",
+            "code": "1"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich habe leichte Schmerzen oder Beschwerden"
+          "valueCoding": {
+            "display": "Ich habe leichte Schmerzen oder Beschwerden",
+            "code": "2"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich habe mäßige Schmerzen oder Beschwerden"
+          "valueCoding": {
+            "display": "Ich habe mäßige Schmerzen oder Beschwerden",
+            "code": "3"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich habe starke Schmerzen oder Beschwerden"
+          "valueCoding": {
+            "display": "Ich habe starke Schmerzen oder Beschwerden",
+            "code": "4"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich habe extreme Schmerzen oder Beschwerden"
+          "valueCoding": {
+            "display": "Ich habe extreme Schmerzen oder Beschwerden",
+            "code": "5"
+          }
         }
       ],
       "linkId": "euroqol-eq5d5l-q04-PD",
@@ -240,61 +173,39 @@
     {
       "answerOption": [
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 1
-            }
-          ],
-          "valueString": "Ich bin nicht ängstlich oder deprimiert"
+          "valueCoding": {
+            "display": "Ich bin nicht ängstlich oder deprimiert",
+            "code": "1"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 2
-            }
-          ],
-          "valueString": "Ich bin ein wenig ängstlich oder deprimiert"
+          "valueCoding": {
+            "display": "Ich bin ein wenig ängstlich oder deprimiert",
+            "code": "2"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 3
-            }
-          ],
-          "valueString": "Ich bin mäßig ängstlich oder deprimiert"
+          "valueCoding": {
+            "display": "Ich bin mäßig ängstlich oder deprimiert",
+            "code": "3"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 4
-            }
-          ],
-          "valueString": "Ich bin sehr ängstlich oder deprimiert"
+          "valueCoding": {
+            "display": "Ich bin sehr ängstlich oder deprimiert",
+            "code": "4"
+          }
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-              "valueDecimal": 5
-            }
-          ],
-          "valueString": "Ich bin extrem ängstlich oder deprimiert"
+          "valueCoding": {
+            "display": "Ich bin extrem ängstlich oder deprimiert",
+            "code": "5"
+          }
         }
       ],
       "linkId": "euroqol-eq5d5l-q05-AD",
       "type": "choice",
-      "text": "ANGST / NIEDERGESCHLAGENHEIT",
-      "_text": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ]
-      }
+      "text": "ANGST / NIEDERGESCHLAGENHEIT"
     },
     {
       "code": [
@@ -305,7 +216,7 @@
         }
       ],
       "linkId": "euroqol-eq5d5l-score-profile",
-      "type": "string",
+      "type": "code",
       "text": "Gesundheitszustand"
     },
     {
@@ -369,6 +280,11 @@
           }
         ]
       }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "status": "active",
