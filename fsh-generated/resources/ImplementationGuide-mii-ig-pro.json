@@ -344,6 +344,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-pro-phq-9-bundle"
+        },
+        "name": "PHQ-9 Transaction Bundle Example",
+        "description": "Transaction bundle containing PHQ-9 questionnaire, response, and derived observation - flagship example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation"
         },
         "name": "PROMIS Depression T-Score, derived from BDI-II Observation",

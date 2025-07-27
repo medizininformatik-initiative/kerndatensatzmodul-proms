@@ -7,7 +7,7 @@
         "method": "PUT",
         "url": "CodeSystem/mii-cs-pro-bdi-bdi2"
       },
-      "fullUrl": "CodeSystem/mii-cs-pro-bdi-bdi2",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
       "resource": {
         "resourceType": "CodeSystem",
         "id": "mii-cs-pro-bdi-bdi2",
@@ -128,7 +128,7 @@
         "method": "PUT",
         "url": "ValueSet/mii-vs-pro-bdi-bdi2-short"
       },
-      "fullUrl": "ValueSet/mii-vs-pro-bdi-bdi2-short",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short",
       "resource": {
         "resourceType": "ValueSet",
         "id": "mii-vs-pro-bdi-bdi2-short",
@@ -167,7 +167,7 @@
         "method": "PUT",
         "url": "ValueSet/mii-vs-pro-bdi-bdi2-long"
       },
-      "fullUrl": "ValueSet/mii-vs-pro-bdi-bdi2-long",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
       "resource": {
         "resourceType": "ValueSet",
         "id": "mii-vs-pro-bdi-bdi2-long",
@@ -215,7 +215,7 @@
         "method": "PUT",
         "url": "Questionnaire/mii-qst-pro-bdi-bdi2"
       },
-      "fullUrl": "Questionnaire/mii-qst-pro-bdi-bdi2",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
       "resource": {
         "resourceType": "Questionnaire",
         "id": "mii-qst-pro-bdi-bdi2",
@@ -303,7 +303,7 @@
             "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
           },
           {
-            "linkId": "bdi-bdi2-09",
+            "linkId": "bdi-bdi2-q09",
             "type": "choice",
             "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
           },
@@ -392,7 +392,7 @@
         "method": "PUT",
         "url": "QuestionnaireResponse/mii-qr-pro-bdi-bdi2"
       },
-      "fullUrl": "QuestionnaireResponse/mii-qr-pro-bdi-bdi2",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-qr-pro-bdi-bdi2",
       "resource": {
         "resourceType": "QuestionnaireResponse",
         "id": "mii-qr-pro-bdi-bdi2",
@@ -660,7 +660,7 @@
         "method": "PUT",
         "url": "Observation/mii-exa-pro-bdi-ii-observation"
       },
-      "fullUrl": "Observation/mii-exa-pro-bdi-ii-observation",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-bdi-ii-observation",
       "resource": {
         "resourceType": "Observation",
         "id": "mii-exa-pro-bdi-ii-observation",
@@ -705,7 +705,7 @@
         "method": "PUT",
         "url": "Patient/example-patient"
       },
-      "fullUrl": "Patient/example-patient"
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/example-patient"
     }
   ],
   "type": "transaction"
