@@ -44,14 +44,39 @@ This repository contains a FHIR Implementation Guide (IG) for the **Medizininfor
 - Maintain MII terminology for reliable calculations
 - Support hybrid approaches for international interoperability
 
-### Key Directories
+### Repository Structure & Naming Conventions
+
+**Directory Structure**:
 - `input/fsh/` - FSH (FHIR Shorthand) source files
-  - `profiles/` - FHIR profile definitions
+  - `core/` - Core infrastructure (aliases.fsh, rules.fsh)
+  - `profiles/` - FHIR profile definitions and extensions
   - `definitions/` - Questionnaire and resource definitions organized by instrument
+    - `{instrument}/` - Individual instrument folders (bdi-ii, eq-5d, phq-9)
+    - `domains/` - Cross-instrument domain mappings
   - `examples/` - Example instances
   - `logical-model/` - Logical models
 - `fsh-generated/` - Auto-generated FHIR JSON resources
 - `input/Images/` - UML diagrams and visual documentation
+
+**File Naming Convention**: `mii-{type}-pro-{domain/instrument}-{specific}`
+
+**Resource Type Prefixes**:
+- `mii-pr-pro-` = Profiles (StructureDefinition)
+- `mii-qst-pro-` = Questionnaires
+- `mii-obsdef-pro-` = ObservationDefinitions
+- `mii-cs-pro-` = CodeSystems
+- `mii-vs-pro-` = ValueSets
+- `mii-cm-pro-` = ConceptMaps
+- `mii-ex-pro-` = Extensions
+- `mii-exa-pro-` = Examples
+- `mii-lib-` = CQL Libraries
+
+**Examples**:
+- `mii-pr-pro-questionnaire.fsh` - Base questionnaire profile
+- `mii-qst-pro-phq-9.fsh` - PHQ-9 questionnaire instance
+- `mii-obsdef-pro-score-eq5d5l-index.fsh` - EQ-5D-5L index score definition
+- `mii-cs-pro-questionnaire-catalogue.fsh` - Questionnaire catalogue CodeSystem
+- `mii-cm-pro-bdi-ii-to-promis-depression.fsh` - BDI-II to PROMIS mapping
 
 ### Supported PRO Instruments
 
@@ -127,9 +152,34 @@ This implementation leverages the full spectrum of SDC advanced features:
 
 ### Build & Generation
 - **SUSHI**: Converts FSH to FHIR JSON
-- **IG Publisher**: Generates implementation guide
-- **Scripts**: Batch/shell scripts for continuous and one-time generation
+- **Scripts**: Batch/shell scripts for continuous and one-time generation  
 - **CI/CD**: GitHub Actions automated FHIR generation
+
+### Implementation Guide Publishing Strategy
+- **Primary IG Development**: Simplifier.net for collaborative editing and visual IG creation
+- **Source Control**: Git repository maintains FSH source files and generated FHIR resources
+- **Workflow**: 
+  1. Develop FSH files in Git repository
+  2. Generate FHIR resources with SUSHI
+  3. Create and edit Implementation Guide in Simplifier
+  4. Export final IG content from Simplifier back to Git
+  5. Sync Git repository to Simplifier for version control
+
+### Current Simplifier Implementation Guide
+**URL**: https://simplifier.net/guide/mii-pro-v2026-de  
+**Version**: 2025.0.4 (Published: 31.03.2025)  
+**Status**: Active  
+
+**Current IG Structure**:
+- **Beschreibung Modul PROs** (Module Description)
+- **Kontext im Gesamtprojekt** (Project Context) 
+- **Referenzen** (References)
+- **Ballotierungsfragen** (Balloting Questions)
+- **Technical Implementation**: FHIR Profiles, Templates
+- **Specific Questionnaires**: PHQ-9, EQ-5D-5L
+- **Additional Sections**: Planned Scope, How to Use PROs, ID Systematics, Terminology Server, Mapping, Scoring, Derived Metrics
+
+**Key Contributors**: Thomas Debertshäuser, Mathias Rose, Fabian Praßer, Karoline Buckow, Franziska Klepka
 
 ### Current Development Status
 - **Branch**: `fix-initial-version-validation-errors`
@@ -138,24 +188,71 @@ This implementation leverages the full spectrum of SDC advanced features:
 
 ### Project Milestones & Roadmap
 
-#### Core Questionnaire Specifications (High Priority)
-- [ ] **PHQ-9** - Patient Health Questionnaire-9 specification
-- [ ] **BDI-II** - Beck Depression Inventory II specification (⚠️ constraint: cannot display any labels)
-- [ ] **PROMIS-29** - Patient-Reported Outcomes Measurement Information System 29-item specification
-- [ ] **PROMIS Depression SF 4a** - PROMIS Depression Short Form 4a specification
+```mermaid
+gantt
+    title MII PRO Module Development Roadmap
+    dateFormat  YYYY-MM-DD
+    section 2025 - Balloting Version
+    PHQ-9 Flagship Example           :active, phq9, 2025-01-01, 90d
+    PROMIS-29 Multi-Domain           :promis29, 2025-02-01, 120d
+    PROMIS Depression SF 4a          :promis4a, 2025-03-01, 90d
+    EQ-5D-5L Complete Implementation :eq5d, 2025-04-01, 60d
+    BDI-II Fix or Remove Decision    :bdi, 2025-05-01, 30d
+    Workshop Preparation             :workshop-prep, 2025-07-01, 60d
+    September Workshop               :milestone, workshop, 2025-09-01, 3d
+    Interop Summit Poster            :milestone, poster, 2025-09-19, 1d
+    
+    section 2026 - Integration & Interoperability
+    Existing PROMs Integration       :existing, 2026-01-01, 180d
+    Score Mapping PHQ-9→PROMIS       :mapping1, 2026-03-01, 90d
+    Score Mapping BDI-II→PROMIS      :mapping2, 2026-06-01, 90d
+    Cross-instrument Validation      :validation, 2026-09-01, 120d
+    
+    section 2027 - Advanced Features
+    Clinical Cut-offs & Thresholds   :cutoffs, 2027-01-01, 120d
+    MID/MCID Implementation          :mcid, 2027-03-01, 90d
+    Item-based Architecture          :items, 2027-06-01, 150d
+    CAT Support Infrastructure       :cat, 2027-09-01, 120d
+```
 
-#### Score Mapping & Interoperability (High Priority)
-- [ ] **PHQ-9 → PROMIS scales mapping** - Conversion/correlation algorithms
-- [ ] **BDI-II → PROMIS scales mapping** - Conversion/correlation algorithms
+#### 2025 - First Balloting Version
+**Primary Goal**: Establish working examples of complete PRO workflow with score calculations
 
-#### Architecture & Modeling (High Priority)
-- [ ] **Domain modeling** - Define what constitutes a domain and domain relationships
-- [ ] **Comprehensive questionnaire catalogue system** - Design catalogue with versioning and capability management (complex architectural challenge)
-- [ ] **ObservationDefinition patterns** - Design patterns for multiple scoring measures and reference ranges based on indications/populations
-- [ ] **Comprehensive IG documentation** - Full implementation guide development
+**Must-Have for Balloting**:
+- [ ] **PHQ-9** - Complete working example with full score calculation capabilities (flagship demonstration)
+- [ ] **PROMIS-29** - Complete implementation including all domain scores (Depression, Anxiety, Physical Function, Pain, Fatigue, Sleep, Social Function)
+- [ ] **PROMIS Depression SF 4a** - Complete PROMIS Depression Short Form 4a implementation
+- [ ] **EQ-5D-5L** - Displayable and extractable implementation with all score variants (Index, VAS, Profile)
+- [ ] **BDI-II** - Fix score calculation or make architectural decision to remove (nice-to-have feature)
 
-#### Integration (Future)
-- [ ] **Simplifier import** - Import existing IG content from Simplifier (planned for later)
+**Key Milestones**: 
+- **Workshop in September 2025** - Present MII PRO capabilities and gather community feedback
+- **Interop Summit Poster (September 19, 2025)** - Showcase MII PRO module at international interoperability conference
+
+**Success Criteria**:
+- Questionnaire → QuestionnaireResponse → Observation workflow fully functional
+- Calculated expressions working with MII-controlled terminology
+- All necessary ObservationDefinitions and observation profiles implemented
+- Clear demonstration of German PRO capabilities across multiple domains
+
+#### 2026 - Integration & Interoperability
+**Focus**: Expand ecosystem and integrate existing PROMs within limited capability constraints
+
+- [ ] **Existing PROMs Integration** - Incorporate established questionnaires into MII framework
+- [ ] **Cross-instrument Score Mapping** - PHQ-9 → PROMIS, BDI-II → PROMIS conversion algorithms
+- [ ] **Validation Studies** - Clinical validation of mapped scores and existing PROM integrations
+
+#### 2027 - Advanced Architecture & Clinical Decision Support
+**Focus**: Advanced features and clinical decision support integration
+
+- [ ] **PRO-Score Evaluation & Clinical Interpretation**:
+  - Cut-off values for clinical severity levels (mild, moderate, severe)
+  - MID/MCID (Minimal Important Difference/Minimal Clinically Important Difference) thresholds
+  - Population-specific normative ranges and percentiles  
+  - Clinical categorization logic and decision support integration
+  - Reliable change indices and measurement error boundaries
+- [ ] **Item-based architecture** - Foundation for CAT, modular questionnaires
+- [ ] **Comprehensive questionnaire catalogue system** - Versioning and capability management
 
 ### Architectural Challenges
 
