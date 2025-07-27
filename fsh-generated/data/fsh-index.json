@@ -1,11 +1,19 @@
 [
   {
+    "outputFile": "Bundle-mii-exa-pro-bdi-ii-bundle.json",
+    "fshName": "mii-exa-pro-bdi-ii-bundle",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-bdi-ii-bundle.fsh",
+    "startLine": 1,
+    "endLine": 53
+  },
+  {
     "outputFile": "CodeSystem-mii-cs-pro-bdi-bdi2.json",
     "fshName": "MII_CS_PRO_BDI_BDI2_AnswerList",
     "fshType": "CodeSystem",
     "fshFile": "definitions\\bdi-ii\\mii-cs-pro-bdi-bdi2.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 54
   },
   {
     "outputFile": "CodeSystem-mii-cs-pro-eq-5d-value-set.json",
@@ -101,7 +109,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\bdi-ii\\mii-qst-pro-bdi-bdi2.fsh",
     "startLine": 1,
-    "endLine": 93
+    "endLine": 92
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal.json",
@@ -141,7 +149,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\phq-9\\mii-qst-pro-phq-9.fsh",
     "startLine": 1,
-    "endLine": 547
+    "endLine": 553
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-quroqol-eq5d5l-answer-coding.json",
@@ -173,7 +181,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\bdi-ii\\mii-pr-pro-bdi-bdi2-response.fsh",
     "startLine": 1,
-    "endLine": 34
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-mii-ex-pro-questionnaire-capabilities.json",

@@ -11,6 +11,12 @@ Usage: #definition
 * version = "0.1.0"
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
+* extension[capabilities].extension[displayable].valueBoolean = true
+* extension[capabilities].extension[collectable].valueBoolean = true
+* extension[capabilities].extension[calculatable].valueBoolean = true
+* extension[capabilities].extension[extractable].valueBoolean = true
+* extension[capabilities].extension[domainAligned].valueBoolean = true
+
 * item[0].linkId = "PHQ-9.Description"
 * item[0].type = #display
 * item[0].text = "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?"
@@ -38,7 +44,7 @@ Usage: #definition
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[1].answerOption[0].extension.url = $hl7-ordinal-value
+* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[1].answerOption[0].extension.valueDecimal = 0
 * item[1].answerOption[1].valueCoding.system = $LNC
 * item[1].answerOption[1].valueCoding.code = #LA6569-3
@@ -48,7 +54,7 @@ Usage: #definition
 * item[1].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[1].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[1].answerOption[1].extension.url = $hl7-ordinal-value
+* item[1].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[1].answerOption[1].extension.valueDecimal = 1
 * item[1].answerOption[2].valueCoding.system = $LNC
 * item[1].answerOption[2].valueCoding.code = #LA6570-1
@@ -58,7 +64,7 @@ Usage: #definition
 * item[1].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[1].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[1].answerOption[2].extension.url = $hl7-ordinal-value
+* item[1].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[1].answerOption[2].extension.valueDecimal = 2
 * item[1].answerOption[3].valueCoding.system = $LNC
 * item[1].answerOption[3].valueCoding.code = #LA6571-9
@@ -68,7 +74,7 @@ Usage: #definition
 * item[1].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[1].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[1].answerOption[3].extension.url = $hl7-ordinal-value
+* item[1].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[1].answerOption[3].extension.valueDecimal = 3
 
 * item[2].linkId = "phq-phq9-q02"
@@ -89,7 +95,7 @@ Usage: #definition
 * item[2].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[2].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[2].answerOption[0].extension.url = $hl7-ordinal-value
+* item[2].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[2].answerOption[0].extension.valueDecimal = 0
 * item[2].answerOption[1].valueCoding.system = $LNC
 * item[2].answerOption[1].valueCoding.code = #LA6569-3
@@ -99,7 +105,7 @@ Usage: #definition
 * item[2].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[2].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[2].answerOption[1].extension.url = $hl7-ordinal-value
+* item[2].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[2].answerOption[1].extension.valueDecimal = 1
 * item[2].answerOption[2].valueCoding.system = $LNC
 * item[2].answerOption[2].valueCoding.code = #LA6570-1
@@ -109,7 +115,7 @@ Usage: #definition
 * item[2].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[2].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[2].answerOption[2].extension.url = $hl7-ordinal-value
+* item[2].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[2].answerOption[2].extension.valueDecimal = 2
 * item[2].answerOption[3].valueCoding.system = $LNC
 * item[2].answerOption[3].valueCoding.code = #LA6571-9
@@ -119,7 +125,7 @@ Usage: #definition
 * item[2].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[2].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[2].answerOption[3].extension.url = $hl7-ordinal-value
+* item[2].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[2].answerOption[3].extension.valueDecimal = 3
 
 * item[3].linkId = "phq-phq9-q03"
@@ -140,7 +146,7 @@ Usage: #definition
 * item[3].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[3].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[3].answerOption[0].extension.url = $hl7-ordinal-value
+* item[3].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[3].answerOption[0].extension.valueDecimal = 0
 * item[3].answerOption[1].valueCoding.system = $LNC
 * item[3].answerOption[1].valueCoding.code = #LA6569-3
@@ -150,7 +156,7 @@ Usage: #definition
 * item[3].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[3].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[3].answerOption[1].extension.url = $hl7-ordinal-value
+* item[3].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[3].answerOption[1].extension.valueDecimal = 1
 * item[3].answerOption[2].valueCoding.system = $LNC
 * item[3].answerOption[2].valueCoding.code = #LA6570-1
@@ -160,7 +166,7 @@ Usage: #definition
 * item[3].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[3].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[3].answerOption[2].extension.url = $hl7-ordinal-value
+* item[3].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[3].answerOption[2].extension.valueDecimal = 2
 * item[3].answerOption[3].valueCoding.system = $LNC
 * item[3].answerOption[3].valueCoding.code = #LA6571-9
@@ -170,7 +176,7 @@ Usage: #definition
 * item[3].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[3].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[3].answerOption[3].extension.url = $hl7-ordinal-value
+* item[3].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[3].answerOption[3].extension.valueDecimal = 3
 
 * item[4].linkId = "phq-phq9-q04"
@@ -191,7 +197,7 @@ Usage: #definition
 * item[4].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[4].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[4].answerOption[0].extension.url = $hl7-ordinal-value
+* item[4].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[4].answerOption[0].extension.valueDecimal = 0
 * item[4].answerOption[1].valueCoding.system = $LNC
 * item[4].answerOption[1].valueCoding.code = #LA6569-3
@@ -201,7 +207,7 @@ Usage: #definition
 * item[4].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[4].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[4].answerOption[1].extension.url = $hl7-ordinal-value
+* item[4].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[4].answerOption[1].extension.valueDecimal = 1
 * item[4].answerOption[2].valueCoding.system = $LNC
 * item[4].answerOption[2].valueCoding.code = #LA6570-1
@@ -211,7 +217,7 @@ Usage: #definition
 * item[4].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[4].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[4].answerOption[2].extension.url = $hl7-ordinal-value
+* item[4].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[4].answerOption[2].extension.valueDecimal = 2
 * item[4].answerOption[3].valueCoding.system = $LNC
 * item[4].answerOption[3].valueCoding.code = #LA6571-9
@@ -221,7 +227,7 @@ Usage: #definition
 * item[4].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[4].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[4].answerOption[3].extension.url = $hl7-ordinal-value
+* item[4].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[4].answerOption[3].extension.valueDecimal = 3
 
 * item[5].linkId = "phq-phq9-q05"
@@ -242,7 +248,7 @@ Usage: #definition
 * item[5].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[5].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[5].answerOption[0].extension.url = $hl7-ordinal-value
+* item[5].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[5].answerOption[0].extension.valueDecimal = 0
 * item[5].answerOption[1].valueCoding.system = $LNC
 * item[5].answerOption[1].valueCoding.code = #LA6569-3
@@ -252,7 +258,7 @@ Usage: #definition
 * item[5].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[5].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[5].answerOption[1].extension.url = $hl7-ordinal-value
+* item[5].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[5].answerOption[1].extension.valueDecimal = 1
 * item[5].answerOption[2].valueCoding.system = $LNC
 * item[5].answerOption[2].valueCoding.code = #LA6570-1
@@ -262,7 +268,7 @@ Usage: #definition
 * item[5].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[5].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[5].answerOption[2].extension.url = $hl7-ordinal-value
+* item[5].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[5].answerOption[2].extension.valueDecimal = 2
 * item[5].answerOption[3].valueCoding.system = $LNC
 * item[5].answerOption[3].valueCoding.code = #LA6571-9
@@ -272,7 +278,7 @@ Usage: #definition
 * item[5].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[5].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[5].answerOption[3].extension.url = $hl7-ordinal-value
+* item[5].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[5].answerOption[3].extension.valueDecimal = 3
 
 * item[6].linkId = "phq-phq9-q06"
@@ -293,7 +299,7 @@ Usage: #definition
 * item[6].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[6].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[6].answerOption[0].extension.url = $hl7-ordinal-value
+* item[6].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[6].answerOption[0].extension.valueDecimal = 0
 * item[6].answerOption[1].valueCoding.system = $LNC
 * item[6].answerOption[1].valueCoding.code = #LA6569-3
@@ -303,7 +309,7 @@ Usage: #definition
 * item[6].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[6].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[6].answerOption[1].extension.url = $hl7-ordinal-value
+* item[6].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[6].answerOption[1].extension.valueDecimal = 1
 * item[6].answerOption[2].valueCoding.system = $LNC
 * item[6].answerOption[2].valueCoding.code = #LA6570-1
@@ -313,7 +319,7 @@ Usage: #definition
 * item[6].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[6].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[6].answerOption[2].extension.url = $hl7-ordinal-value
+* item[6].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[6].answerOption[2].extension.valueDecimal = 2
 * item[6].answerOption[3].valueCoding.system = $LNC
 * item[6].answerOption[3].valueCoding.code = #LA6571-9
@@ -323,7 +329,7 @@ Usage: #definition
 * item[6].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[6].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[6].answerOption[3].extension.url = $hl7-ordinal-value
+* item[6].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[6].answerOption[3].extension.valueDecimal = 3
 
 * item[7].linkId = "phq-phq9-q07"
@@ -344,7 +350,7 @@ Usage: #definition
 * item[7].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[7].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[7].answerOption[0].extension.url = $hl7-ordinal-value
+* item[7].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[7].answerOption[0].extension.valueDecimal = 0
 * item[7].answerOption[1].valueCoding.system = $LNC
 * item[7].answerOption[1].valueCoding.code = #LA6569-3
@@ -354,7 +360,7 @@ Usage: #definition
 * item[7].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[7].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[7].answerOption[1].extension.url = $hl7-ordinal-value
+* item[7].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[7].answerOption[1].extension.valueDecimal = 1
 * item[7].answerOption[2].valueCoding.system = $LNC
 * item[7].answerOption[2].valueCoding.code = #LA6570-1
@@ -364,7 +370,7 @@ Usage: #definition
 * item[7].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[7].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[7].answerOption[2].extension.url = $hl7-ordinal-value
+* item[7].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[7].answerOption[2].extension.valueDecimal = 2
 * item[7].answerOption[3].valueCoding.system = $LNC
 * item[7].answerOption[3].valueCoding.code = #LA6571-9
@@ -374,7 +380,7 @@ Usage: #definition
 * item[7].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[7].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[7].answerOption[3].extension.url = $hl7-ordinal-value
+* item[7].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[7].answerOption[3].extension.valueDecimal = 3
 
 * item[8].linkId = "phq-phq9-q08"
@@ -395,7 +401,7 @@ Usage: #definition
 * item[8].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[8].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[8].answerOption[0].extension.url = $hl7-ordinal-value
+* item[8].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[8].answerOption[0].extension.valueDecimal = 0
 * item[8].answerOption[1].valueCoding.system = $LNC
 * item[8].answerOption[1].valueCoding.code = #LA6569-3
@@ -405,7 +411,7 @@ Usage: #definition
 * item[8].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[8].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[8].answerOption[1].extension.url = $hl7-ordinal-value
+* item[8].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[8].answerOption[1].extension.valueDecimal = 1
 * item[8].answerOption[2].valueCoding.system = $LNC
 * item[8].answerOption[2].valueCoding.code = #LA6570-1
@@ -415,7 +421,7 @@ Usage: #definition
 * item[8].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[8].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[8].answerOption[2].extension.url = $hl7-ordinal-value
+* item[8].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[8].answerOption[2].extension.valueDecimal = 2
 * item[8].answerOption[3].valueCoding.system = $LNC
 * item[8].answerOption[3].valueCoding.code = #LA6571-9
@@ -425,7 +431,7 @@ Usage: #definition
 * item[8].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[8].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[8].answerOption[3].extension.url = $hl7-ordinal-value
+* item[8].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[8].answerOption[3].extension.valueDecimal = 3
 
 * item[9].linkId = "phq-phq9-q09"
@@ -446,7 +452,7 @@ Usage: #definition
 * item[9].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[9].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[9].answerOption[0].extension.url = $hl7-ordinal-value
+* item[9].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[9].answerOption[0].extension.valueDecimal = 0
 * item[9].answerOption[1].valueCoding.system = $LNC
 * item[9].answerOption[1].valueCoding.code = #LA6569-3
@@ -456,7 +462,7 @@ Usage: #definition
 * item[9].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[9].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Serveral days"
-* item[9].answerOption[1].extension.url = $hl7-ordinal-value
+* item[9].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[9].answerOption[1].extension.valueDecimal = 1
 * item[9].answerOption[2].valueCoding.system = $LNC
 * item[9].answerOption[2].valueCoding.code = #LA6570-1
@@ -466,7 +472,7 @@ Usage: #definition
 * item[9].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[9].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "More than half the days"
-* item[9].answerOption[2].extension.url = $hl7-ordinal-value
+* item[9].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[9].answerOption[2].extension.valueDecimal = 2
 * item[9].answerOption[3].valueCoding.system = $LNC
 * item[9].answerOption[3].valueCoding.code = #LA6571-9
@@ -476,7 +482,7 @@ Usage: #definition
 * item[9].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[9].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Nearly every day"
-* item[9].answerOption[3].extension.url = $hl7-ordinal-value
+* item[9].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[9].answerOption[3].extension.valueDecimal = 3
 
 * item[11].linkId = "phq-phq9-q10"
@@ -529,8 +535,8 @@ Usage: #definition
 * item[10].readOnly = true
 * item[10].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[10].extension[0].valueExpression.name = "Scoreberechnung"
-* item[10].extension[0].valueExpression.language = #text/cql
-* item[10].extension[0].valueExpression.expression = ""
+* item[10].extension[0].valueExpression.language = #text/fhirpath
+* item[10].extension[0].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.weight().sum()"
 * item[10].text = "Gesamtwert"
 * item[10].text.extension[0].url = $hl7-translation
 * item[10].text.extension[0].extension[0].url = "lang"

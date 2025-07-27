@@ -2,14 +2,14 @@
   "resourceType": "Observation",
   "id": "mii-exa-pro-bdi-ii-observation",
   "valueQuantity": {
-    "value": 27,
+    "value": 19,
     "code": "{score}",
     "unit": "{score}",
     "system": "http://unitsofmeasure.org"
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/otherexamplepatient"
+    "reference": "Patient/example-patient"
   },
   "effectiveDateTime": "2023-10-01T12:00:00Z",
   "code": {

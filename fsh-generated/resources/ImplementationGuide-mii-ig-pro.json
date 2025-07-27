@@ -76,6 +76,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-pro-bdi-ii-bundle"
+        },
+        "name": "BDI-II Transaction Bundle Example",
+        "description": "Transaction bundle containing BDI-II CodeSystem, ValueSets, questionnaire, response, and derived observation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation"
         },
         "name": "ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation",

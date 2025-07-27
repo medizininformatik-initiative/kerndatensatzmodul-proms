@@ -1,0 +1,712 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-pro-bdi-ii-bundle",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CodeSystem/mii-cs-pro-bdi-bdi2"
+      },
+      "fullUrl": "CodeSystem/mii-cs-pro-bdi-bdi2",
+      "resource": {
+        "resourceType": "CodeSystem",
+        "id": "mii-cs-pro-bdi-bdi2",
+        "status": "draft",
+        "content": "complete",
+        "name": "MII_CS_PRO_BDI_BDI2_AnswerList",
+        "title": "MII CS PRO BDI-II",
+        "description": "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "concept": [
+          {
+            "code": "bdi-bdi2-answer-0",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 0
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-1",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 1
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-2",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 2
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-3",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 3
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-1a",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 1
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-1b",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 1
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-2a",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 2
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-2b",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 2
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-3a",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 3
+              }
+            ]
+          },
+          {
+            "code": "bdi-bdi2-answer-3b",
+            "property": [
+              {
+                "code": "bdi-bdi2-itemWeight",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        ],
+        "version": "0.1.0",
+        "experimental": true,
+        "valueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+        "property": [
+          {
+            "code": "bdi-bdi2-itemWeight",
+            "uri": "http://hl7.org/fhir/concept-properties/itemWeight",
+            "description": "item weight for BDI-II questionnaire",
+            "type": "decimal"
+          }
+        ],
+        "count": 10
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/mii-vs-pro-bdi-bdi2-short"
+      },
+      "fullUrl": "ValueSet/mii-vs-pro-bdi-bdi2-short",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "mii-vs-pro-bdi-bdi2-short",
+        "status": "draft",
+        "name": "MII_VS_PRO_BDI_BDI2_AnswerListShort",
+        "title": "MII VS PRO BDI-II",
+        "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+        "version": "0.1.0",
+        "experimental": true,
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+              "concept": [
+                {
+                  "code": "bdi-bdi2-answer-0"
+                },
+                {
+                  "code": "bdi-bdi2-answer-1"
+                },
+                {
+                  "code": "bdi-bdi2-answer-2"
+                },
+                {
+                  "code": "bdi-bdi2-answer-3"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/mii-vs-pro-bdi-bdi2-long"
+      },
+      "fullUrl": "ValueSet/mii-vs-pro-bdi-bdi2-long",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "mii-vs-pro-bdi-bdi2-long",
+        "status": "draft",
+        "name": "MII_VS_PRO_BDI_BDI2_AnswerListLong",
+        "title": "MII VS PRO BDI-II",
+        "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
+        "version": "0.1.0",
+        "experimental": true,
+        "compose": {
+          "include": [
+            {
+              "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+              "concept": [
+                {
+                  "code": "bdi-bdi2-answer-0"
+                },
+                {
+                  "code": "bdi-bdi2-answer-1a"
+                },
+                {
+                  "code": "bdi-bdi2-answer-2a"
+                },
+                {
+                  "code": "bdi-bdi2-answer-3a"
+                },
+                {
+                  "code": "bdi-bdi2-answer-1b"
+                },
+                {
+                  "code": "bdi-bdi2-answer-2b"
+                },
+                {
+                  "code": "bdi-bdi2-answer-3b"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Questionnaire/mii-qst-pro-bdi-bdi2"
+      },
+      "fullUrl": "Questionnaire/mii-qst-pro-bdi-bdi2",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "mii-qst-pro-bdi-bdi2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
+          ]
+        },
+        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+        "title": "MII QST PRO BDI-II",
+        "description": "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire",
+        "code": [
+          {
+            "code": "89210-9",
+            "system": "http://loinc.org",
+            "display": "Beck Depression Inventory II [BDI]"
+          }
+        ],
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "displayable",
+                "valueBoolean": false
+              },
+              {
+                "url": "collectable",
+                "valueBoolean": false
+              },
+              {
+                "url": "calculatable",
+                "valueBoolean": true
+              },
+              {
+                "url": "extractable",
+                "valueBoolean": true
+              },
+              {
+                "url": "domainAligned",
+                "valueBoolean": true
+              }
+            ],
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "bdi-bdi2-q01",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q02",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q03",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q04",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q05",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q06",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q07",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q08",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-09",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q10",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q11",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q12",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q13",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q14",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q15",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
+          },
+          {
+            "linkId": "bdi-bdi2-q16",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q17",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
+          },
+          {
+            "linkId": "bdi-bdi2-q18",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q19",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q20",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "linkId": "bdi-bdi2-q21",
+            "type": "choice",
+            "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+          },
+          {
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "%resource.item.where(type = 'choice').answer.value.weight().sum()"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+              }
+            ],
+            "linkId": "bdi-bdi2-score-total",
+            "type": "quantity"
+          }
+        ],
+        "status": "active",
+        "experimental": true,
+        "language": "de",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "QuestionnaireResponse/mii-qr-pro-bdi-bdi2"
+      },
+      "fullUrl": "QuestionnaireResponse/mii-qr-pro-bdi-bdi2",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "mii-qr-pro-bdi-bdi2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+          ]
+        },
+        "subject": {
+          "reference": "Patient/example-patient"
+        },
+        "item": [
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q01"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q02"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-0",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q03"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-2",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q04"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q05"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-0",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q06"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q07"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q08"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-0",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q09"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q10"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-0",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q11"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-2",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q12"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q13"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q14"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-2a",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q15"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q16"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1a",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q17"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-2",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q18"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-1",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q19"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-0",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q20"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "bdi-bdi2-answer-0",
+                  "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-q21"
+          },
+          {
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 19,
+                  "unit": "{score}",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "1"
+                }
+              }
+            ],
+            "linkId": "bdi-bdi2-score-total"
+          }
+        ],
+        "questionnaire": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+        "status": "final",
+        "authored": "2023-10-01T12:00:00Z"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-pro-bdi-ii-observation"
+      },
+      "fullUrl": "Observation/mii-exa-pro-bdi-ii-observation",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-pro-bdi-ii-observation",
+        "valueQuantity": {
+          "value": 19,
+          "code": "{score}",
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-patient"
+        },
+        "effectiveDateTime": "2023-10-01T12:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "code": "89209-1",
+              "system": "http://loinc.org",
+              "display": "Beck Depression Inventory II total score [BDI]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "example-patient",
+        "active": true,
+        "name": [
+          {
+            "family": "Example",
+            "given": [
+              "Patient"
+            ]
+          }
+        ],
+        "gender": "other"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/example-patient"
+      },
+      "fullUrl": "Patient/example-patient"
+    }
+  ],
+  "type": "transaction"
+}

@@ -16,6 +16,33 @@
       "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
     }
   ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
   "item": [
     {
       "linkId": "PHQ-9.Description",
@@ -72,7 +99,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -102,7 +129,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -132,7 +159,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -162,7 +189,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -223,7 +250,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -253,7 +280,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -283,7 +310,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -313,7 +340,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -374,7 +401,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -404,7 +431,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -434,7 +461,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -464,7 +491,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -525,7 +552,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -555,7 +582,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -585,7 +612,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -615,7 +642,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -676,7 +703,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -706,7 +733,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -736,7 +763,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -766,7 +793,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -827,7 +854,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -857,7 +884,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -887,7 +914,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -917,7 +944,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -978,7 +1005,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -1008,7 +1035,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -1038,7 +1065,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -1068,7 +1095,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -1129,7 +1156,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -1159,7 +1186,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -1189,7 +1216,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -1219,7 +1246,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -1280,7 +1307,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 0
             }
           ]
@@ -1310,7 +1337,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 1
             }
           ]
@@ -1340,7 +1367,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 2
             }
           ]
@@ -1370,7 +1397,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
               "valueDecimal": 3
             }
           ]
@@ -1410,8 +1437,8 @@
         {
           "valueExpression": {
             "name": "Scoreberechnung",
-            "language": "text/cql",
-            "expression": ""
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.weight().sum()"
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         },
@@ -1587,11 +1614,6 @@
           }
         ]
       }
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "status": "active",

@@ -13,14 +13,13 @@ Usage: #definition
 
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[collectable].valueBoolean = false
-* extension[capabilities].extension[calculatable].valueBoolean = false
-* extension[capabilities].extension[extractable].valueBoolean = false
+* extension[capabilities].extension[calculatable].valueBoolean = true
+* extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
 
 
 // TODO: date, publisher, copyright, etc.
-* contained[+] = MII_VS_PRO_BDI_BDI2_AnswerListShort
-* contained[+] = MII_CS_PRO_BDI_BDI2_AnswerList
+// Note: CS/VS now separate resources for reusability across questionnaires
 
 
 * item[+].linkId = "bdi-bdi2-q01"

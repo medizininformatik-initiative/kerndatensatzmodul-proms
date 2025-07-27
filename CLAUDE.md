@@ -238,9 +238,12 @@ gantt
 #### 2026 - Integration & Interoperability
 **Focus**: Expand ecosystem and integrate existing PROMs within limited capability constraints
 
+- [ ] **EORTC QLQ-C30** - European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire
 - [ ] **Existing PROMs Integration** - Incorporate established questionnaires into MII framework
 - [ ] **Cross-instrument Score Mapping** - PHQ-9 → PROMIS, BDI-II → PROMIS conversion algorithms
 - [ ] **Validation Studies** - Clinical validation of mapped scores and existing PROM integrations
+
+**⚠️ Terminology Strategy Update Needed**: Current IG mentions "Expandable/Terminologieserver" variants, but implementation should use MII-controlled terminology or run locally for reliable scoring.
 
 #### 2027 - Advanced Architecture & Clinical Decision Support
 **Focus**: Advanced features and clinical decision support integration

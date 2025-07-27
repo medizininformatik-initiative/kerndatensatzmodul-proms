@@ -41,9 +41,29 @@ MII_PR_PRO_Score_Instance + Invarianten:
 "Wenn method=mapping → derivedFrom muss Observation + Mapping-Referenz sein"
 ```
 
+### Wichtiger Hinweis: SDC STU4 Kompatibilität
+
+**Tooling-Kompatibilität**: Diese Implementation Guide verwendet die neueste **SDC STU4 Spezifikation** mit `itemWeight` Properties für Score-Berechnungen. Ältere Tools, die noch SDC STU3 mit `ordinalValue` Extensions verwenden, sind möglicherweise nicht vollständig kompatibel.
+
+**Auswirkungen**:
+- Questionnaire-Validierung kann in älteren FHIR-Servern fehlschlagen
+- Score-Berechnungen funktionieren möglicherweise nicht in Legacy-Implementierungen
+- Migration bestehender Questionnaires auf SDC STU4 erforderlich
+
+**Empfehlung**: Implementierer sollten sicherstellen, dass ihre FHIR-Toolchain SDC STU4 unterstützt, bevor sie diese Questionnaires produktiv einsetzen.
+
+---
+
 ### Spezifische Balloting-Fragen
 
-1. **Terminologie-Strategie für deutsche Anforderungen**:
+1. **Ressource-Architektur für Fragebögen**:
+   - **Contained vs. Separate Resources**: Sollten CodeSystems/ValueSets als contained Resources in Questionnaires eingebettet oder als separate, wiederverwendbare Resources modelliert werden?
+   - **Vorteile Contained**: Self-contained deployment, keine dependency-Probleme, atomare Integrität
+   - **Vorteile Separate**: Reusability zwischen Fragebögen, Terminology-Server-Support ($expand, $validate-code), unabhängige Versionierung
+   - **Empfehlung**: Für Multi-Questionnaire-IGs (PHQ-9, BDI-II, EQ-5D-5L) scheinen separate Resources für MII-kontrollierte Terminologie vorteilhafter
+   - **Frage**: Welche Erfahrungen gibt es mit beiden Ansätzen in produktiven Umgebungen?
+
+2. **Terminologie-Strategie für deutsche Anforderungen**:
    - Wie bewerten Sie den MII-kontrollierten Terminologie-Ansatz vs. internationale Standards (LOINC)?
    - Welche Erfahrungen gibt es mit Scoring-Gewichtungen in Standard-Terminologie-Servern?
    - Wie sollte die Brücke zu internationalen Standards (LOINC) in zukünftigen Versionen gestaltet werden?

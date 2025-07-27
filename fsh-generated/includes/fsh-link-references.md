@@ -1,4 +1,5 @@
 [mii-exa-pro-bdi-ii-observation]: Observation-mii-exa-pro-bdi-ii-observation.html
+[mii-exa-pro-bdi-ii-bundle]: Bundle-mii-exa-pro-bdi-ii-bundle.html
 [mii-cm-pro-bdi-ii-to-promis-depression-observation]: ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html
 [MII_CS_PRO_EQ_5D_ValueSet]: CodeSystem-mii-cs-pro-eq-5d-value-set.html
 [MII_CS_PRO_BDI_BDI2_AnswerList]: CodeSystem-mii-cs-pro-bdi-bdi2.html

@@ -15,7 +15,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 Id: mii-vs-pro-bdi-bdi2-long
 Title: "MII VS PRO BDI-II"
 Description: "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire"
-* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2"
+* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = true

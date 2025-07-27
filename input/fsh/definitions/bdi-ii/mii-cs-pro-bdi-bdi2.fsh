@@ -29,11 +29,28 @@ Description: "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-I
 * #bdi-bdi2-answer-3 ^property[+].code = #bdi-bdi2-itemWeight
 * #bdi-bdi2-answer-3 ^property[=].valueDecimal = 3
 
-* #bdi-bdi2-answer-1a 
+* #bdi-bdi2-answer-1a
+* #bdi-bdi2-answer-1a ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
+
 * #bdi-bdi2-answer-1b
+* #bdi-bdi2-answer-1b ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-1b ^property[=].valueDecimal = 1
+
 * #bdi-bdi2-answer-2a
+* #bdi-bdi2-answer-2a ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-2a ^property[=].valueDecimal = 2
+
 * #bdi-bdi2-answer-2b
+* #bdi-bdi2-answer-2b ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-2b ^property[=].valueDecimal = 2
+
 * #bdi-bdi2-answer-3a
+* #bdi-bdi2-answer-3a ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-3a ^property[=].valueDecimal = 3
+
 * #bdi-bdi2-answer-3b
+* #bdi-bdi2-answer-3b ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-3b ^property[=].valueDecimal = 3
 
 
