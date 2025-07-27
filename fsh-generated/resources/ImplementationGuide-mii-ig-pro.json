@@ -155,6 +155,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-index"
+        },
+        "name": "MII PR PRO Observation EQ-5D-5L Index",
+        "description": "Profile for EQ-5D-5L Index Score Observations with German value set reference ranges",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-profile"
+        },
+        "name": "MII PR PRO Observation EQ-5D-5L Profile",
+        "description": "Profile for EQ-5D-5L Profile String Observations (e.g., '11111')",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-vas"
+        },
+        "name": "MII PR PRO Observation EQ-5D-5L VAS",
+        "description": "Profile for EQ-5D-5L Visual Analogue Scale Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-questionnaire"
         },
         "name": "MII PR PRO Questionnaire",

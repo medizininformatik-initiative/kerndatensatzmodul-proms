@@ -102,6 +102,11 @@
         "mustSupport": true
       },
       {
+        "id": "ObservationDefinition.preferredReportName",
+        "path": "ObservationDefinition.preferredReportName",
+        "mustSupport": true
+      },
+      {
         "id": "ObservationDefinition.quantitativeDetails.customaryUnit",
         "path": "ObservationDefinition.quantitativeDetails.customaryUnit",
         "mustSupport": true

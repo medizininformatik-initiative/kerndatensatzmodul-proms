@@ -101,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\bdi-ii\\mii-qst-pro-bdi-bdi2.fsh",
     "startLine": 1,
-    "endLine": 74
+    "endLine": 93
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal.json",
@@ -192,6 +192,30 @@
     "endLine": 13
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-index.json",
+    "fshName": "MII_PR_PRO_Observation_EQ5D5L_Index",
+    "fshType": "Profile",
+    "fshFile": "profiles\\mii-pr-pro-observation-eq5d5l-index.fsh",
+    "startLine": 1,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.json",
+    "fshName": "MII_PR_PRO_Observation_EQ5D5L_Profile",
+    "fshType": "Profile",
+    "fshFile": "profiles\\mii-pr-pro-observation-eq5d5l-profile.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.json",
+    "fshName": "MII_PR_PRO_Observation_EQ5D5L_VAS",
+    "fshType": "Profile",
+    "fshFile": "profiles\\mii-pr-pro-observation-eq5d5l-vas.fsh",
+    "startLine": 1,
+    "endLine": 42
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-pro-questionnaire-response.json",
     "fshName": "MII_PR_PRO_QuestionnaireResponse",
     "fshType": "Profile",
@@ -221,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\mii-pr-pro-score-instance.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-mii-vs-pro-bdi-bdi2-long.json",

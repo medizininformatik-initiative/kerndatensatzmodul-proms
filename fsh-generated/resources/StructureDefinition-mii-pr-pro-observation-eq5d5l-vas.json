@@ -1,0 +1,187 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-pro-observation-eq5d5l-vas",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas",
+  "name": "MII_PR_PRO_Observation_EQ5D5L_VAS",
+  "title": "MII PR PRO Observation EQ-5D-5L VAS",
+  "status": "draft",
+  "experimental": true,
+  "description": "Profile for EQ-5D-5L Visual Analogue Scale Score Observations",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "736535009",
+              "system": "http://snomed.info/sct",
+              "display": "EuroQol visual analogue score (observable entity)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "fixedString": "1"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "fixedCode": "1"
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "73041000052103",
+              "system": "http://snomed.info/sct",
+              "display": "EuroQoL five dimension five level questionnaire (assessment scale)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.extension",
+        "path": "Observation.referenceRange.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.extension:ScoreHealthCorrelation",
+        "path": "Observation.referenceRange.extension",
+        "sliceName": "ScoreHealthCorrelation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.extension:ScoreHealthCorrelation.value[x]",
+        "path": "Observation.referenceRange.extension.value[x]",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "increase",
+              "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+              "display": "Increased score indicates improvement"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange.extension:ScoreHealthCorrelation.value[x].text",
+        "path": "Observation.referenceRange.extension.value[x].text",
+        "patternString": "Higher score indicates better health status"
+      },
+      {
+        "id": "Observation.referenceRange.low.value",
+        "path": "Observation.referenceRange.low.value",
+        "patternDecimal": 0
+      },
+      {
+        "id": "Observation.referenceRange.low.unit",
+        "path": "Observation.referenceRange.low.unit",
+        "patternString": "1"
+      },
+      {
+        "id": "Observation.referenceRange.low.system",
+        "path": "Observation.referenceRange.low.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.referenceRange.low.code",
+        "path": "Observation.referenceRange.low.code",
+        "patternCode": "1"
+      },
+      {
+        "id": "Observation.referenceRange.high.value",
+        "path": "Observation.referenceRange.high.value",
+        "patternDecimal": 100
+      },
+      {
+        "id": "Observation.referenceRange.high.unit",
+        "path": "Observation.referenceRange.high.unit",
+        "patternString": "1"
+      },
+      {
+        "id": "Observation.referenceRange.high.system",
+        "path": "Observation.referenceRange.high.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.referenceRange.high.code",
+        "path": "Observation.referenceRange.high.code",
+        "patternCode": "1"
+      },
+      {
+        "id": "Observation.referenceRange.type",
+        "path": "Observation.referenceRange.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "absolute",
+              "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+              "display": "Absolute Range"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange.text",
+        "path": "Observation.referenceRange.text",
+        "patternString": "EQ-5D-5L VAS scale range"
+      }
+    ]
+  }
+}

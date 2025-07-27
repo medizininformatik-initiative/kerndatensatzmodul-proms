@@ -9,6 +9,9 @@
 [mii-obsdef-pro-score-eq5d5l-profile]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.html
 [mii-obsdef-pro-score-eq5d5l-vas]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.html
 [mii-obsdef-pro-score-phq-9]: ObservationDefinition-mii-obsdef-pro-score-phq-9.html
+[MII_PR_PRO_Observation_EQ5D5L_Index]: StructureDefinition-mii-pr-pro-observation-eq5d5l-index.html
+[MII_PR_PRO_Observation_EQ5D5L_Profile]: StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.html
+[MII_PR_PRO_Observation_EQ5D5L_VAS]: StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.html
 [MII_PR_PRO_Questionnaire]: StructureDefinition-mii-pr-pro-questionnaire.html
 [MII_PR_PRO_Questionnaire_Capabilities]: StructureDefinition-mii-ex-pro-questionnaire-capabilities.html
 [MII_PR_PRO_QuestionnaireResponse]: StructureDefinition-mii-pr-pro-questionnaire-response.html

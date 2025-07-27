@@ -40,7 +40,7 @@ Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture
     MII_EX_PRO_Score_Score_Health_Correlation named ScoreHealthCorrelation 0..1 MS 
 * qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept 1..1 MS
 
-* preferredReportName
+* preferredReportName MS
 
 
 //* publisher = MII Setzen (RuleSet?)
