@@ -56,14 +56,27 @@ MII_PR_PRO_Score_Instance + Invarianten:
 
 ### Spezifische Balloting-Fragen
 
-1. **Ressource-Architektur für Fragebögen**:
+1. **Versionierungsstrategie für unterschiedliche Ressource-Typen**:
+   - **Problem**: MII verwendet CalVer für Profile/Artefakte, aber Questionnaires haben andere Lebenszyklen
+   - **CalVer-Limitationen für Questionnaires**: Mehrere Updates pro Jahr, identische Questionnaires über Jahre hinweg, inhaltsbezogene vs. kalenderbezogene Änderungen
+   - **Vorgeschlagene Hybrid-Strategie**:
+     - **CalVer** (2025.0.0) für: Implementation Guides, Profile, Extensions - folgt MII-Standard
+     - **SemVer** (1.0.0) für: Questionnaires, CodeSystems, ValueSets - inhaltsbezogene Versionierung
+   - **SemVer für Questionnaires**:
+     - Major (1.0.0 → 2.0.0): Breaking Changes (Scoring-Algorithmus-Änderungen, Item-Entfernungen)
+     - Minor (1.0.0 → 1.1.0): Neue Items, rückwärtskompatible Ergänzungen
+     - Patch (1.0.0 → 1.0.1): Tippfehler, Übersetzungen, non-funktionale Korrekturen
+   - **Vorteile**: Klinische Sicherheit, Change-Tracking, Content-Hash-Kompatibilität
+   - **Frage**: Wie bewerten Sie diese Hybrid-Versionierungsstrategie für das MII PRO Modul?
+
+2. **Ressource-Architektur für Fragebögen**:
    - **Contained vs. Separate Resources**: Sollten CodeSystems/ValueSets als contained Resources in Questionnaires eingebettet oder als separate, wiederverwendbare Resources modelliert werden?
    - **Vorteile Contained**: Self-contained deployment, keine dependency-Probleme, atomare Integrität
    - **Vorteile Separate**: Reusability zwischen Fragebögen, Terminology-Server-Support ($expand, $validate-code), unabhängige Versionierung
    - **Empfehlung**: Für Multi-Questionnaire-IGs (PHQ-9, BDI-II, EQ-5D-5L) scheinen separate Resources für MII-kontrollierte Terminologie vorteilhafter
    - **Frage**: Welche Erfahrungen gibt es mit beiden Ansätzen in produktiven Umgebungen?
 
-2. **Terminologie-Strategie für deutsche Anforderungen**:
+3. **Terminologie-Strategie für deutsche Anforderungen**:
    - Wie bewerten Sie den MII-kontrollierten Terminologie-Ansatz vs. internationale Standards (LOINC)?
    - Welche Erfahrungen gibt es mit Scoring-Gewichtungen in Standard-Terminologie-Servern?
    - Wie sollte die Brücke zu internationalen Standards (LOINC) in zukünftigen Versionen gestaltet werden?

@@ -184,7 +184,13 @@ This implementation leverages the full spectrum of SDC advanced features:
 ### Current Development Status
 - **Branch**: `fix-initial-version-validation-errors`
 - **Status**: Active development with validation error fixes
-- **Recent Changes**: Updated EQ5D5L and BDI-II with latest logic
+- **Recent Changes**: 
+  - Updated EQ5D5L and BDI-II with latest logic
+  - **BDI-II Score Implementation**: Fixed scoring calculation with proper itemWeight properties, refactored to separate CS/VS resources approach
+  - **PHQ-9 SDC STU4 Migration**: Updated from ordinalValue extensions to itemWeight properties for SDC STU4 compatibility
+  - **Terminology Strategy**: Moved to separate resources approach (vs contained) for better reusability across questionnaires
+  - **Balloting Questions**: Added contained vs separate resources architectural question and SDC STU4 compatibility notice
+  - **Current Focus**: Completing PHQ-9 flagship example with full score calculation workflow
 
 ### Project Milestones & Roadmap
 
@@ -219,11 +225,11 @@ gantt
 **Primary Goal**: Establish working examples of complete PRO workflow with score calculations
 
 **Must-Have for Balloting**:
-- [ ] **PHQ-9** - Complete working example with full score calculation capabilities (flagship demonstration)
+- [ ] **PHQ-9** - Complete working example with full score calculation capabilities (flagship demonstration) - *In Progress*
 - [ ] **PROMIS-29** - Complete implementation including all domain scores (Depression, Anxiety, Physical Function, Pain, Fatigue, Sleep, Social Function)
 - [ ] **PROMIS Depression SF 4a** - Complete PROMIS Depression Short Form 4a implementation
 - [ ] **EQ-5D-5L** - Displayable and extractable implementation with all score variants (Index, VAS, Profile)
-- [ ] **BDI-II** - Fix score calculation or make architectural decision to remove (nice-to-have feature)
+- [x] **BDI-II** - Fix score calculation or make architectural decision to remove (nice-to-have feature) - *Completed: Fixed with itemWeight properties*
 
 **Key Milestones**: 
 - **Workshop in September 2025** - Present MII PRO capabilities and gather community feedback

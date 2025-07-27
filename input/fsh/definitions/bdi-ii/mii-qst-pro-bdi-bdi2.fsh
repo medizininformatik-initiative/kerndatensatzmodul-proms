@@ -46,7 +46,7 @@ Usage: #definition
 * item[+].linkId = "bdi-bdi2-q08"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
-* item[+].linkId = "bdi-bdi2-09"
+* item[+].linkId = "bdi-bdi2-q09"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 * item[+].linkId = "bdi-bdi2-q10"
