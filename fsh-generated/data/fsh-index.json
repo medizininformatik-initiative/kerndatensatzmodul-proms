@@ -8,6 +8,22 @@
     "endLine": 53
   },
   {
+    "outputFile": "Bundle-mii-exa-pro-phq-9-bundle.json",
+    "fshName": "mii-exa-pro-phq-9-bundle",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-phq-9-bundle.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Bundle-mii-exa-pro-promis-depression-sf4a-bundle.json",
+    "fshName": "mii-exa-pro-promis-depression-sf4a-bundle",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-promis-depression-sf4a-bundle.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
     "outputFile": "CodeSystem-mii-cs-pro-bdi-bdi2.json",
     "fshName": "MII_CS_PRO_BDI_BDI2_AnswerList",
     "fshType": "CodeSystem",
@@ -64,12 +80,36 @@
     "endLine": 13
   },
   {
+    "outputFile": "Observation-mii-exa-pro-promis-depression-sf4a-raw-score.json",
+    "fshName": "mii-exa-pro-promis-depression-sf4a-raw-score",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-promis-depression-sf4a-observations.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Observation-mii-exa-pro-promis-depression-sf4a-tscore.json",
+    "fshName": "mii-exa-pro-promis-depression-sf4a-tscore",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-promis-depression-sf4a-observations.fsh",
+    "startLine": 18,
+    "endLine": 33
+  },
+  {
     "outputFile": "Observation-mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation.json",
     "fshName": "mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation",
     "fshType": "Instance",
     "fshFile": "examples\\mii-exa-pro-promis-depression-from-bdi-ii-observation.fsh",
     "startLine": 1,
     "endLine": 11
+  },
+  {
+    "outputFile": "ObservationDefinition-mii-obsdef-pro-depression-t-score.json",
+    "fshName": "mii-obsdef-pro-depression-t-score",
+    "fshType": "Instance",
+    "fshFile": "definitions\\domains\\depression\\mii-obsdef-pro-depression-t-score.fsh",
+    "startLine": 1,
+    "endLine": 70
   },
   {
     "outputFile": "ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.json",
@@ -102,6 +142,14 @@
     "fshFile": "definitions\\phq-9\\mii-obsdef-pro-score-phq-9.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "Patient-mii-exa-pro-patient.json",
+    "fshName": "mii-exa-pro-patient",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-promis-depression-sf4a-observations.fsh",
+    "startLine": 35,
+    "endLine": 46
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-bdi-bdi2.json",
@@ -152,6 +200,14 @@
     "endLine": 553
   },
   {
+    "outputFile": "Questionnaire-mii-qst-pro-promis-depression-sf4a.json",
+    "fshName": "mii-qst-pro-promis-depression-sf4a",
+    "fshType": "Instance",
+    "fshFile": "definitions\\promis-depression-sf4a\\mii-qst-pro-promis-depression-sf4a.fsh",
+    "startLine": 1,
+    "endLine": 153
+  },
+  {
     "outputFile": "Questionnaire-mii-qst-pro-quroqol-eq5d5l-answer-coding.json",
     "fshName": "mii-qst-pro-quroqol-eq5d5l-answer-coding",
     "fshType": "Instance",
@@ -173,7 +229,15 @@
     "fshType": "Instance",
     "fshFile": "examples\\mii-exa-pro-phq-9-response.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 45
+  },
+  {
+    "outputFile": "QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.json",
+    "fshName": "mii-exa-pro-promis-depression-sf4a-response",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-promis-depression-sf4a-response.fsh",
+    "startLine": 1,
+    "endLine": 34
   },
   {
     "outputFile": "QuestionnaireResponse-mii-qr-pro-bdi-bdi2.json",
@@ -200,6 +264,14 @@
     "endLine": 13
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-pro-depression-t-score.json",
+    "fshName": "MII_PR_PRO_Depression_T_Score",
+    "fshType": "Profile",
+    "fshFile": "definitions\\promis-depression-sf4a\\mii-pr-pro-promis-depression-sf4a-observation.fsh",
+    "startLine": 37,
+    "endLine": 71
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-index.json",
     "fshName": "MII_PR_PRO_Observation_EQ5D5L_Index",
     "fshType": "Profile",
@@ -222,6 +294,14 @@
     "fshFile": "profiles\\mii-pr-pro-observation-eq5d5l-vas.fsh",
     "startLine": 1,
     "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.json",
+    "fshName": "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
+    "fshType": "Profile",
+    "fshFile": "definitions\\promis-depression-sf4a\\mii-pr-pro-promis-depression-sf4a-observation.fsh",
+    "startLine": 1,
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-questionnaire-response.json",

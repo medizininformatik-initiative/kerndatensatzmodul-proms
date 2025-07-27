@@ -131,6 +131,54 @@
       },
       {
         "reference": {
+          "reference": "Patient/mii-exa-pro-patient"
+        },
+        "name": "MII EXA PRO Patient",
+        "description": "Example patient for PRO demonstrations",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-promis-depression-sf4a-bundle"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a Bundle",
+        "description": "Example bundle containing PROMIS Depression SF 4a QuestionnaireResponse and derived observations",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-depression-sf4a-raw-score"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a Raw Score",
+        "description": "Example raw score observation for PROMIS Depression Short Form 4a",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a Response",
+        "description": "Example QuestionnaireResponse for PROMIS Depression Short Form 4a",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-depression-sf4a-tscore"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a T-Score",
+        "description": "Example T-score observation for PROMIS Depression Short Form 4a",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-depression-t-score"
+        },
+        "name": "MII ObsDef PRO Depression Domain T-Score",
+        "description": "ObservationDefinition for depression domain T-score across all depression questionnaires with European population reference ranges",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index"
         },
         "name": "MII ObsDef PRO Score EQ-5D-5L Index",
@@ -163,6 +211,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-depression-t-score"
+        },
+        "name": "MII PR PRO Depression Domain T-Score",
+        "description": "Generic profile for depression domain T-score observations (all depression questionnaires)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-index"
         },
         "name": "MII PR PRO Observation EQ-5D-5L Index",
@@ -183,6 +239,14 @@
         },
         "name": "MII PR PRO Observation EQ-5D-5L VAS",
         "description": "Profile for EQ-5D-5L Visual Analogue Scale Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
+        },
+        "name": "MII PR PRO PROMIS Depression SF 4a Raw Score",
+        "description": "Profile for PROMIS Depression Short Form 4a raw score observations (4-20 range)",
         "exampleBoolean": false
       },
       {
@@ -291,6 +355,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-depression-sf4a"
+        },
+        "name": "MII QST PRO PROMIS Depression SF 4a (Adults)",
+        "description": "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-pro-bdi-bdi2-short"
         },
         "name": "MII VS PRO BDI-II",
@@ -341,6 +413,14 @@
         },
         "name": "PHQ-9 Questionnaire Response Example EuroQol EQ-5D-5L",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-phq-9-bundle"
+        },
+        "name": "PHQ-9 Transaction Bundle Example",
+        "description": "Transaction bundle containing PHQ-9 questionnaire, response, and derived observation - flagship example",
+        "exampleBoolean": true
       },
       {
         "reference": {

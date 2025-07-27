@@ -443,6 +443,57 @@ Observation: PROMIS_Depression_SF4a_Score
 
 **Strategic Value**: Positions MII PRO module as leader in flexible, reusable PRO implementations while maintaining normative authority over German healthcare item definitions.
 
+### Implementation Best Practices
+
+#### Multi-Score Questionnaire Calculations: Use FHIR Variables
+
+When implementing questionnaires that generate multiple related scores (e.g., raw scores and derived T-scores), **use FHIR variables** to avoid circular dependencies and ensure maintainable calculations.
+
+**The Problem: Circular Dependencies**
+Attempting to reference one calculated field from another creates circular dependencies:
+
+```fhirpath
+// ❌ This doesn't work - raw score item has no answer.value
+* item[t-score].expression = "iif(%resource.item.where(linkId='raw-score').answer.value=4, 41.0, ...)"
+```
+
+The raw score item uses a `calculatedExpression`, not a user-provided `answer.value`, making it unreferenceable.
+
+**The Solution: Variable-Based Architecture**
+
+Define the core calculation once as a variable, then reference it in multiple score items:
+
+```fsh
+// 1. Define variable for base calculation
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].extension[+].url = "name"
+* extension[=].extension[=].valueString = "rawScore"
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueExpression.expression = 
+  "%resource.item.where(linkId.matches('^item-[1-4]$')).answer.value.weight().sum()"
+
+// 2. Raw score item references variable
+* item[raw].extension[calculatedExpression].expression = "%rawScore"
+
+// 3. T-score conversion references same variable
+* item[tscore].extension[calculatedExpression].expression = 
+  "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, ...))"
+```
+
+**Benefits:**
+- **Eliminates circular dependencies**: Core calculation defined once
+- **Maintainable**: Changes to scoring logic update automatically
+- **Reusable**: Same variable supports multiple derived scores
+- **Clean separation**: Base calculation vs. conversion logic
+- **Validation-friendly**: Each score item can have specific constraints
+
+**When to Use:**
+- Questionnaires with raw scores + transformed scores (T-scores, percentiles, severity categories)
+- Multiple scoring algorithms from the same item responses
+- Complex multi-step calculations requiring intermediate values
+
+This pattern is essential for implementing comprehensive PRO instruments like PROMIS questionnaires that require both raw and standardized scoring outputs.
+
 ### Use Cases
 1. **ePRO Collection**: Electronic patient-reported outcome collection
 2. **Local Harmonization**: Standardizing PRO data within institutions

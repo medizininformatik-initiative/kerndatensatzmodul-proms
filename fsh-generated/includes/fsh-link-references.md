@@ -6,13 +6,21 @@
 [MII_CS_PRO_Questionnaire_Catalogue]: CodeSystem-mii-cs-pro-questionnaire-catalogue.html
 [MII_CS_PRO_Score_Catalogue]: CodeSystem-mii-cs-pro-score-catalogue.html
 [MII_EX_PRO_Score_Score_Health_Correlation]: StructureDefinition-mii-ex-pro-score-score-health-correlation.html
+[mii-exa-pro-patient]: Patient-mii-exa-pro-patient.html
+[mii-exa-pro-promis-depression-sf4a-bundle]: Bundle-mii-exa-pro-promis-depression-sf4a-bundle.html
+[mii-exa-pro-promis-depression-sf4a-raw-score]: Observation-mii-exa-pro-promis-depression-sf4a-raw-score.html
+[mii-exa-pro-promis-depression-sf4a-response]: QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.html
+[mii-exa-pro-promis-depression-sf4a-tscore]: Observation-mii-exa-pro-promis-depression-sf4a-tscore.html
+[mii-obsdef-pro-depression-t-score]: ObservationDefinition-mii-obsdef-pro-depression-t-score.html
 [mii-obsdef-pro-score-eq5d5l-index]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.html
 [mii-obsdef-pro-score-eq5d5l-profile]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.html
 [mii-obsdef-pro-score-eq5d5l-vas]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.html
 [mii-obsdef-pro-score-phq-9]: ObservationDefinition-mii-obsdef-pro-score-phq-9.html
+[MII_PR_PRO_Depression_T_Score]: StructureDefinition-mii-pr-pro-depression-t-score.html
 [MII_PR_PRO_Observation_EQ5D5L_Index]: StructureDefinition-mii-pr-pro-observation-eq5d5l-index.html
 [MII_PR_PRO_Observation_EQ5D5L_Profile]: StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.html
 [MII_PR_PRO_Observation_EQ5D5L_VAS]: StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.html
+[MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score]: StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.html
 [MII_PR_PRO_Questionnaire]: StructureDefinition-mii-pr-pro-questionnaire.html
 [MII_PR_PRO_Questionnaire_Capabilities]: StructureDefinition-mii-ex-pro-questionnaire-capabilities.html
 [MII_PR_PRO_QuestionnaireResponse]: StructureDefinition-mii-pr-pro-questionnaire-response.html
@@ -26,6 +34,7 @@
 [mii-qst-pro-eq-5d-5l-minimal]: Questionnaire-mii-qst-pro-eq-5d-5l-minimal.html
 [mii-qst-pro-phq-9]: Questionnaire-mii-qst-pro-phq-9.html
 [mii-qst-pro-phq-9-sdc-rendering]: Questionnaire-mii-qst-pro-phq-9-sdc-rendering.html
+[mii-qst-pro-promis-depression-sf4a]: Questionnaire-mii-qst-pro-promis-depression-sf4a.html
 [MII_VS_PRO_BDI_BDI2_AnswerListShort]: ValueSet-mii-vs-pro-bdi-bdi2-short.html
 [MII_VS_PRO_BDI_BDI2_AnswerListLong]: ValueSet-mii-vs-pro-bdi-bdi2-long.html
 [MII_VS_PRO_PHQ9_AnswerList_LL3583]: ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.html
@@ -33,4 +42,5 @@
 [mii-exa-pro-phq-9-observation]: Observation-mii-exa-pro-phq-9-observation.html
 [mii-exa-pro-phq-9-response]: QuestionnaireResponse-mii-exa-pro-phq-9-response.html
 [mii-exa-pro-euroqol-eq5d5l-response]: QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.html
+[mii-exa-pro-phq-9-bundle]: Bundle-mii-exa-pro-phq-9-bundle.html
 [mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation]: Observation-mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation.html
