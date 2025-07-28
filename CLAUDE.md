@@ -105,6 +105,17 @@ This repository contains a FHIR Implementation Guide (IG) for the **Medizininfor
   - Index, VAS, and profile scores
   - CQL libraries for calculations
 
+#### 4. PROMIS-29 Profile v2.1
+- **Location**: `input/fsh/definitions/promis-29/`
+- **Purpose**: Comprehensive health-related quality of life assessment across 7 domains
+- **Status**: In development (foundation implemented)
+- **Domains**: Physical Function, Anxiety, Depression, Fatigue, Sleep Disturbance, Social Function, Pain Interference, Pain Intensity
+- **Features**: 
+  - Variable-based scoring calculations for all domains
+  - Raw scores and T-scores for each domain
+  - German translations with English as primary language
+  - SDC calculated expressions for automatic scoring
+
 ### Technical Features
 
 #### FHIR Profiles
@@ -493,6 +504,48 @@ Define the core calculation once as a variable, then reference it in multiple sc
 - Complex multi-step calculations requiring intermediate values
 
 This pattern is essential for implementing comprehensive PRO instruments like PROMIS questionnaires that require both raw and standardized scoring outputs.
+
+### Development Workflow & Collaboration Patterns
+
+#### Iterative Questionnaire Development
+**Pattern**: Start with foundation → validate structure → refactor based on real requirements
+
+**Example**: PROMIS-29 implementation workflow:
+1. **Initial Structure**: Create basic questionnaire with LOINC codes and standard structure
+2. **Requirements Validation**: User provides German translations and specific ID mappings from validation studies
+3. **Refactoring**: Update IDs (`promis-pfa11` vs `promis-pf61597`) and language structure (English primary + German translations)
+4. **Quality Gates**: Stop for review before completing all domains vs pushing through incomplete implementation
+
+**Lessons Learned**:
+- **TodoWrite tool**: Essential for tracking multi-step implementations across domains
+- **Foundation-first**: Get core architecture right before detailed implementation
+- **User feedback loops**: Stop and validate direction before completing large implementations
+- **File organization**: Proper directory structure (`promis-29/`) enables parallel development
+
+#### Language & Internationalization Strategy
+**Challenge**: Balance between English (LOINC standard) and German (MII requirement)
+
+**Solution Pattern**:
+```fsh
+* text = "English primary text from LOINC"
+* extension[translation].extension[lang].valueCode = #de
+* extension[translation].extension[content].valueString = "German translation"
+```
+
+**Benefits**:
+- Maintains LOINC interoperability
+- Supports German healthcare context
+- Enables future additional language support
+- Clear separation of concerns
+
+#### ID Mapping & Validation Study Integration
+**Challenge**: Academic validation studies use specific item IDs that differ from LOINC codes
+
+**Solution**: Prefix pattern `promis-{study-id}` maintains traceability while enabling systematic organization
+
+**Example**: 
+- LOINC: `61597-1` → Implementation: `promis-pfa11` (based on validation study)
+- Enables FHIRPath variables: `linkId.matches('^promis-(pfa11|pfa21|pfa23|pfa53)$')`
 
 ### Use Cases
 1. **ePRO Collection**: Electronic patient-reported outcome collection
