@@ -107,6 +107,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-eortc-qlq-c30"
+        },
+        "name": "MII CS PRO EORTC QLQ-C30 Response Scale",
+        "description": "Response scale for EORTC QLQ-C30 questionnaire items with multilingual support",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-questionnaire-catalogue"
         },
         "name": "MII CS PRO Questionnaire Catalogue",
@@ -307,6 +315,30 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-ces-d"
+        },
+        "name": "MII QST PRO CES-D",
+        "description": "Center for Epidemiologic Studies Depression Scale (CES-D) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30"
+        },
+        "name": "MII QST PRO EORTC QLQ-C30",
+        "description": "EORTC QLQ-C30 Quality of Life Questionnaire - Core 30 for cancer patients",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-epds"
+        },
+        "name": "MII QST PRO EPDS",
+        "description": "Edinburgh Postnatal Depression Scale (EPDS) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-quroqol-eq5d5l-answer-coding"
         },
         "name": "MII QST PRO EQ-5D-5L",
@@ -339,6 +371,22 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-hads"
+        },
+        "name": "MII QST PRO HADS",
+        "description": "Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-k6"
+        },
+        "name": "MII QST PRO K6",
+        "description": "Kessler Psychological Distress Scale (K6) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-phq-9"
         },
         "name": "MII QST PRO PHQ-9",
@@ -363,6 +411,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-29"
+        },
+        "name": "MII QST PRO PROMIS-29 (Adults)",
+        "description": "PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-pro-bdi-bdi2-short"
         },
         "name": "MII VS PRO BDI-II",
@@ -375,6 +431,30 @@
         },
         "name": "MII VS PRO BDI-II",
         "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        "name": "MII VS PRO EORTC QLQ-C30 4-Point Scale",
+        "description": "Standard 4-point response scale for EORTC QLQ-C30 items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
+        },
+        "name": "MII VS PRO EORTC QLQ-C30 7-Point Scale",
+        "description": "7-point response scale for EORTC QLQ-C30 global health status and quality of life items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role"
+        },
+        "name": "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
+        "description": "4-point response scale for EORTC QLQ-C30 role functioning items",
         "exampleBoolean": false
       },
       {

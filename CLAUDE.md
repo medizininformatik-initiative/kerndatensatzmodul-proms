@@ -16,7 +16,7 @@ This repository contains a FHIR Implementation Guide (IG) for the **Medizininfor
 ### Implementation Strategy
 **Current Focus**: Questionnaire → QuestionnaireResponse → Observation workflow
 - Primary resources: Questionnaire, QuestionnaireResponse, Observation, ObservationDefinition
-- **Future Exploration**: CQL libraries with Measure/MeasureReport resources for advanced analytics
+- **2026+ CQL Implementation**: Individual and population-based score calculation using CQL libraries with Measure/MeasureReport resources for advanced analytics
 
 ### Terminology Strategy & German Healthcare Requirements
 
@@ -116,6 +116,55 @@ This repository contains a FHIR Implementation Guide (IG) for the **Medizininfor
   - German translations with English as primary language
   - SDC calculated expressions for automatic scoring
 
+#### 5. EORTC QLQ-C30 (European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire)
+- **Location**: `input/fsh/definitions/eortc-qlq-c30/`
+- **Purpose**: Cancer-specific quality of life assessment for oncological patients
+- **Status**: Foundation implemented with scoring methodology (Version 0.1.0)
+- **SNOMED Code**: `273446001 |European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)|`
+- **Components**:
+  - 30 items across 15 subskales: 5 function scales, 3 symptom scales, 6 single items, 1 global QoL scale
+  - English primary language with German translations via CodeSystem designations
+  - Multiple response scales: 4-point standard, 7-point global QoL
+  - Comprehensive scoring with linear transformation to 0-100 scale
+- **Features**: 
+  - **MII-Controlled Terminology**: Dedicated CodeSystem with multilingual designations
+  - **Domain-Specific Scoring**: Function scales (inverted) vs symptom scales (standard) scoring logic
+  - **Comprehensive IG Documentation**: Full scoring methodology and FHIR implementation details
+  - **SDC Compatibility**: Prepared for calculated expressions and automatic score generation
+  - **FHIR Validation**: Fixed FSH naming conventions and ValueSet syntax for proper compilation
+- **Files**:
+  - Questionnaire definition (`mii-qst-pro-eortc-qlq-c30.fsh`)
+  - CodeSystem with multilingual support (`mii-cs-pro-eortc-qlq-c30.fsh`) 
+  - ValueSets for different response scales (`mii-vs-pro-eortc-qlq-c30.fsh`)
+  - Comprehensive IG documentation with scoring formulas
+
+#### 6. Minimal Reference Questionnaires (Metadata-Only)
+For licensing compliance, the following questionnaires are implemented as metadata-only references:
+
+**6.1. HADS (Hospital Anxiety and Depression Scale)**
+- **Location**: `input/fsh/definitions/hads/`
+- **SNOMED Code**: `273524006 |Hospital anxiety and depression scale (assessment scale)|`
+- **Status**: Metadata-only (not displayable due to licensing restrictions)
+- **Capabilities**: Calculatable and extractable for scoring frameworks
+
+**6.2. EPDS (Edinburgh Postnatal Depression Scale)**
+- **Location**: `input/fsh/definitions/epds/`
+- **SNOMED Code**: `273441006 |Edinburgh postnatal depression scale (assessment scale)|`
+- **Status**: Metadata-only (not displayable, calculatable, or extractable)
+- **Purpose**: Postnatal depression screening reference
+
+**6.3. CES-D (Center for Epidemiologic Studies Depression Scale)**
+- **Location**: `input/fsh/definitions/ces-d/`
+- **Status**: Metadata-only (not displayable, calculatable, or extractable)
+- **Purpose**: Epidemiological depression research reference
+
+**6.4. K6 (Kessler Psychological Distress Scale)**
+- **Location**: `input/fsh/definitions/k6/`
+- **Status**: Metadata-only (not displayable, calculatable, or extractable)
+- **Purpose**: Psychological distress screening reference
+
+**Note**: Investigation needed to determine if HADS, EPDS, CES-D, and K6 are standalone instruments or part of larger PRO frameworks for proper categorization.
+
 ### Technical Features
 
 #### FHIR Profiles
@@ -187,7 +236,7 @@ This implementation leverages the full spectrum of SDC advanced features:
 - **Referenzen** (References)
 - **Ballotierungsfragen** (Balloting Questions)
 - **Technical Implementation**: FHIR Profiles, Templates
-- **Specific Questionnaires**: PHQ-9, EQ-5D-5L
+- **Specific Questionnaires**: PHQ-9, EQ-5D-5L, EORTC QLQ-C30
 - **Additional Sections**: Planned Scope, How to Use PROs, ID Systematics, Terminology Server, Mapping, Scoring, Derived Metrics
 
 **Key Contributors**: Thomas Debertshäuser, Mathias Rose, Fabian Praßer, Karoline Buckow, Franziska Klepka
@@ -240,6 +289,7 @@ gantt
 - [ ] **PROMIS-29** - Complete implementation including all domain scores (Depression, Anxiety, Physical Function, Pain, Fatigue, Sleep, Social Function)
 - [ ] **PROMIS Depression SF 4a** - Complete PROMIS Depression Short Form 4a implementation
 - [ ] **EQ-5D-5L** - Displayable and extractable implementation with all score variants (Index, VAS, Profile)
+- [ ] **EORTC QLQ-C30** - Cancer-specific quality of life questionnaire with comprehensive scoring methodology - *Foundation Completed: Scoring methodology, IG documentation, MII-compliant terminology*
 - [x] **BDI-II** - Fix score calculation or make architectural decision to remove (nice-to-have feature) - *Completed: Fixed with itemWeight properties*
 
 **Key Milestones**: 
@@ -255,7 +305,7 @@ gantt
 #### 2026 - Integration & Interoperability
 **Focus**: Expand ecosystem and integrate existing PROMs within limited capability constraints
 
-- [ ] **EORTC QLQ-C30** - European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire
+- [ ] **EORTC QLQ-C30** - European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire (Note: Other oncology-specific questionnaires will be handled within the dedicated MII Oncology Module)
 - [ ] **Existing PROMs Integration** - Incorporate established questionnaires into MII framework
 - [ ] **Cross-instrument Score Mapping** - PHQ-9 → PROMIS, BDI-II → PROMIS conversion algorithms
 - [ ] **Validation Studies** - Clinical validation of mapped scores and existing PROM integrations
@@ -265,7 +315,9 @@ gantt
 #### 2027 - Advanced Architecture & Clinical Decision Support
 **Focus**: Advanced features and clinical decision support integration
 
-- [ ] **PRO-Score Evaluation & Clinical Interpretation**:
+- [ ] **PRO-Score Evaluation & Clinical Interpretation via CQL**:
+  - Individual patient score calculation using CQL libraries
+  - Population-based analytics and scoring via CQL
   - Cut-off values for clinical severity levels (mild, moderate, severe)
   - MID/MCID (Minimal Important Difference/Minimal Clinically Important Difference) thresholds
   - Population-specific normative ranges and percentiles  

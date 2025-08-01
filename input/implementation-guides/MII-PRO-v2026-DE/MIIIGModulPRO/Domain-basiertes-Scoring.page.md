@@ -70,7 +70,21 @@ Das `MII_PR_PRO_Depression_T_Score` Profil implementiert die konkreten Observati
 
 **PHQ-9 → PROMIS Depression T-Score Mapping**
 
+
+
+
 Empirisch validierte Konversionstabellen ermöglichen die Transformation von PHQ-9 Scores (0-27) zu PROMIS Depression T-Scores. Diese Mappings basieren auf klinischen Studien mit parallel administrierten Instrumenten.
+Alternativ ist es möglich, die Verteilungskurven der einzelnene Items entsprechend der Item Response Theory (IRT) zu berechnen. 
+Eine Erstellung einer Mapping-Tabelle kann anschließend auf Basis des Interperzentil-Matchings der Verteilung vorgenommen werden. 
+Bei diesem Vorgehen sind aber mehrere Sachen zu beachten: 
+1. Beim Mapping werden. Die erreichbaren Minimal- und Maximalwerte der Skalen können dabei theroetisch über- oder unterschritten werden. 
+2. Ein Mapping kann ein Runden der Werte notwendig machen. 
+3. Gerade beim Mapping von kleineren Instrumenten auf größere Skalen findet eine starke Verzerrung durch die Konvertierung einer kontinuerilichen Verteilungsfunktion in diskrete Werte statt. Daher ist dieser Ansatz ohne weitere Validierung derzeit noch nicht für die Anwendung in medizinischen Produktivsystemen geeignet. Eine Verwendung zu Forschungszwecken ist bei Anwendung der korrekten und bei Berücksichtigung des Mappingfehlers unproblematisch. 
+4. 
+
+
+ 
+
 
 **Beispiel-Mapping**:
 ```

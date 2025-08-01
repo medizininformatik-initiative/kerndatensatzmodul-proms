@@ -1,0 +1,138 @@
+@startuml MII-PRO-Terminologie-Vergleichsmatrix
+!theme plain
+skinparam backgroundColor White
+skinparam class {
+  BackgroundColor LightBlue
+  BorderColor DarkBlue
+  FontSize 10
+}
+skinparam note {
+  BackgroundColor LightYellow
+  BorderColor Orange
+  FontSize 9
+}
+
+title MII PRO Terminologie-Strategien: Vergleichsmatrix\n**Implementierungsmuster und Entscheidungskriterien**
+
+package "Inline answerOption" as inline {
+  class "LOINC + Extensions Pattern" as loinc_pattern {
+    **Anwendung**: PHQ-9, PROMIS
+    --
+    ✅ Internationale Interoperabilität
+    ✅ Semantische Eindeutigkeit
+    ✅ Etablierte Standards
+    ⚠️ Deutsche Übersetzungen via Extensions
+    ⚠️ Scoring via itemWeight Extensions
+    --
+    **Code-Beispiel**:
+    * answerOption[0].valueCoding.system = $LNC
+    * answerOption[0].valueCoding.code = #LA6568-5
+    * answerOption[0].extension[itemWeight].valueDecimal = 0
+  }
+  
+  class "Simple Inline Pattern" as simple_pattern {
+    **Anwendung**: EQ-5D-5L
+    --
+    ✅ Minimale Komplexität
+    ✅ Direkter, übersichtlicher Code
+    ✅ Geringe Wartungsanforderungen
+    ❌ Keine Wiederverwendbarkeit
+    ❌ Begrenzte Skalierbarkeit
+    --
+    **Code-Beispiel**:
+    * answerOption[0].valueCoding.code = #1
+    * answerOption[0].valueCoding.display = "Text"
+  }
+}
+
+package "answerValueSet + MII CodeSystem" as valueset {
+  class "Calculatable-only Pattern" as calculatable_pattern {
+    **Anwendung**: BDI-II (displayable=false)
+    --
+    ✅ Optimiert für reine Score-Berechnung
+    ✅ Kein Display-Overhead
+    ✅ CodeSystem Properties für itemWeight
+    ✅ Efficient für Hintergrund-Berechnungen
+    ⚠️ Nicht für interaktive Formulare geeignet
+    --
+    **Code-Beispiel**:
+    * extension[capabilities].extension[displayable] = false
+    * extension[capabilities].extension[calculatable] = true
+    * answerValueSet = "mii-vs-pro-bdi-bdi2-short"
+  }
+  
+  class "Multi-Variant Pattern" as variant_pattern {
+    **Anwendung**: Verschiedene Textlängen-Varianten
+    --
+    ✅ Zentrale Code-Verwaltung
+    ✅ Multiple ValueSet-Varianten
+    ✅ Wiederverwendbare Konzepte
+    ✅ CodeSystem Properties für Scoring
+    ⚠️ Höherer Implementierungsaufwand
+    --
+    **Code-Beispiel**:
+    * answerValueSet = "mii-vs-pro-instrument-short"
+    CodeSystem: #code ^property[itemWeight] = 1
+  }
+  
+  class "Reusable Terminology Pattern" as reusable_pattern {
+    **Anwendung**: Generische Severity Scales
+    --
+    ✅ Konsistente Terminologie
+    ✅ Harmonisierte Datenmodelle
+    ✅ Effiziente zentrale Wartung
+    ✅ MII-kontrollierte Deutsche Spezifika
+    ⚠️ Komplexere Governance erforderlich
+    --
+    **Code-Beispiel**:
+    ValueSet: Generic_PRO_Severity_Scale
+    * include codes from mii-cs-pro-severity
+  }
+}
+
+note top of loinc_pattern
+  **Entscheidungskriterien**:
+  • LOINC-Codes verfügbar?
+  • Internationale Interoperabilität prioritär?
+  • Statische Antwortlisten?
+  • Moderate Scoring-Anforderungen?
+end note
+
+note top of simple_pattern
+  **Entscheidungskriterien**:
+  • ≤5 einfache Antwortoptionen?
+  • Keine Wiederverwendung geplant?
+  • Minimale Wartungsanforderungen?
+  • Keine komplexen Scoring-Regeln?
+end note
+
+note top of calculatable_pattern
+  **Entscheidungskriterien**:
+  • displayable = false, calculatable = true?
+  • Reine Score-Berechnung ohne Display?
+  • Optimierung für Hintergrund-Prozesse?
+  • Keine interaktive Benutzerschnittstelle?
+end note
+
+note bottom of variant_pattern
+  **Entscheidungskriterien**:
+  • Multiple Textformat-Varianten?
+  • Komplexe Scoring-Anforderungen?
+  • Flexible ValueSet-Zusammenstellung?
+  • Deutsche Gesundheitssystem-Spezifika?
+end note
+
+note bottom of reusable_pattern
+  **Entscheidungskriterien**:
+  • Wiederverwendung über Questionnaires?
+  • Zentrale Terminologie-Governance?
+  • Harmonisierte Datenmodelle gewünscht?
+  • Langfristige Skalierbarkeit wichtig?
+end note
+
+' Relationships showing decision flow
+loinc_pattern .down.> calculatable_pattern : "Wenn displayable=false\ncalculatable=true"
+loinc_pattern .down.> variant_pattern : "Wenn LOINC unzureichend\noder Deutsche Spezifika nötig"
+simple_pattern .down.> reusable_pattern : "Wenn Wiederverwendung\noder Skalierung geplant"
+
+@enduml

@@ -247,4 +247,70 @@ PROMIS-Depression.Description   # PROMIS Depression Instruktion
 4. **Domain-Codes**: Ergänze bei strukturierten Instrumenten Domain-Abkürzungen
 5. **Score-Suffix**: Verwende klare Score-Bezeichnungen (-score-total, -score-raw, etc.)
 
+## Terminologie-Strategien für Antwortoptionen
+
+### Strategische Entscheidung: answerOption vs answerValueSet
+
+Die Wahl zwischen inline `answerOption` und externen `answerValueSet` Definitionen ist eine grundlegende Architekturentscheidung, die die Wartbarkeit, Wiederverwendbarkeit und Interoperabilität maßgeblich beeinflusst.
+
+### Entscheidungsmatrix
+
+| Ansatz | Anwendungsfall | Beispiel | Vorteile | Nachteile |
+|--------|---------------|----------|----------|-----------|
+| **Inline answerOption + LOINC** | Internationale Standards verfügbar + displayable | PHQ-9, PROMIS | ✅ Internationale Interoperabilität<br>✅ Semantische Eindeutigkeit | ⚠️ Deutsche Übersetzungen via Extensions |
+| **Inline answerOption + Simple Codes** | Einfache, statische Listen (≤5 Optionen) + displayable | EQ-5D-5L | ✅ Minimale Komplexität<br>✅ Direkter Code | ❌ Keine Wiederverwendbarkeit |
+| **answerValueSet + MII CodeSystem** | Capabilities-basiert: displayable=false, calculatable=true | BDI-II | ✅ Optimiert für Score-only<br>✅ Kein Display-Overhead<br>✅ Deutsche Spezifika | ⚠️ Nicht für interaktive Formulare |
+
+### Implementierungsbeispiele
+
+#### Pattern 1: LOINC + itemWeight Extensions (PHQ-9)
+```fsh
+* item[=].answerOption[0].valueCoding.system = $LNC
+* item[=].answerOption[0].valueCoding.code = #LA6568-5
+* item[=].answerOption[0].valueCoding.display = "Überhaupt nicht"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.valueDecimal = 0
+```
+
+#### Pattern 2: MII CodeSystem + ValueSet (BDI-II)
+```fsh
+// Questionnaire
+* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+
+// CodeSystem
+* #bdi-bdi2-answer-1 ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-1 ^property[=].valueDecimal = 1
+```
+
+#### Pattern 3: Einfache Inline Codes (EQ-5D-5L)
+```fsh
+* item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[0].valueCoding.code = #1
+```
+
+### Entscheidungshilfe
+
+**Prüfe zuerst die Questionnaire Capabilities:**
+
+**Verwende answerValueSet + MII CodeSystem wenn:**
+- ✅ **displayable = false, calculatable = true** (wie BDI-II)
+- Optimierung für reine Score-Berechnung ohne Display-Overhead
+- Hintergrund-Berechnungen ohne Benutzerinteraktion
+
+**Verwende inline answerOption wenn:**
+- ✅ **displayable = true** (interaktive Formulare)
+- LOINC-Codes mit Score-Gewichten verfügbar sind
+- Einfache, statische Antwortlisten (≤5 Optionen) 
+- Reiche Metadaten pro Option (Übersetzungen, Gewichte)
+
+**Weitere answerValueSet + MII CodeSystem Kriterien:**
+- Multiple Antwortformat-Varianten benötigt (kurz/lang)
+- Wiederverwendung über mehrere Questionnaires geplant
+- Komplexe Scoring-Anforderungen mit variablen Gewichten
+- Deutsche Gesundheitssystem-Spezifika erforderlich
+
+**📖 Detaillierte Dokumentation**: [Terminologie-Strategien](Terminologie-Strategien.html)
+
+**🎯 Visualisierung**: Siehe UML-Entscheidungsbaum in den Implementierungsrichtlinien
+
 

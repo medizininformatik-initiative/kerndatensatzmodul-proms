@@ -103,6 +103,20 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.referenceRange.extension",
+        "path": "Observation.referenceRange.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.referenceRange.extension:ScoreHealthCorrelation",
         "path": "Observation.referenceRange.extension",
         "sliceName": "ScoreHealthCorrelation",

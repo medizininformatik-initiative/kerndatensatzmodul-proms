@@ -8,7 +8,7 @@ Geplanter Umfang
 - EORTC-QLQ-C30
 - PHQ-9 
 - BDI-II (zum. Scoring)
-- evtl. PROMIS-Fragebögen 4a SF
+- PROMIS-Fragebögen 4a SF
 
 
 Vorraussetzung der Bearbeitung: 

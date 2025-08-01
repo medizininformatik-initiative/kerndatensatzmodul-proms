@@ -32,6 +32,14 @@
     "endLine": 54
   },
   {
+    "outputFile": "CodeSystem-mii-cs-pro-eortc-qlq-c30.json",
+    "fshName": "MII_CS_PRO_EORTC_QLQ_C30",
+    "fshType": "CodeSystem",
+    "fshFile": "definitions\\eortc-qlq-c30\\mii-cs-pro-eortc-qlq-c30.fsh",
+    "startLine": 1,
+    "endLine": 61
+  },
+  {
     "outputFile": "CodeSystem-mii-cs-pro-eq-5d-value-set.json",
     "fshName": "MII_CS_PRO_EQ_5D_ValueSet",
     "fshType": "CodeSystem",
@@ -45,7 +53,7 @@
     "fshType": "CodeSystem",
     "fshFile": "profiles\\mii-cs-pro-questionnaire-catalogue.fsh",
     "startLine": 1,
-    "endLine": 16
+    "endLine": 21
   },
   {
     "outputFile": "CodeSystem-mii-cs-pro-score-catalogue.json",
@@ -160,6 +168,30 @@
     "endLine": 92
   },
   {
+    "outputFile": "Questionnaire-mii-qst-pro-ces-d.json",
+    "fshName": "mii-qst-pro-ces-d",
+    "fshType": "Instance",
+    "fshFile": "definitions\\ces-d\\mii-qst-pro-ces-d.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-eortc-qlq-c30.json",
+    "fshName": "mii-qst-pro-eortc-qlq-c30",
+    "fshType": "Instance",
+    "fshFile": "definitions\\eortc-qlq-c30\\mii-qst-pro-eortc-qlq-c30.fsh",
+    "startLine": 1,
+    "endLine": 281
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-epds.json",
+    "fshName": "mii-qst-pro-epds",
+    "fshType": "Instance",
+    "fshFile": "definitions\\epds\\mii-qst-pro-epds.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
     "outputFile": "Questionnaire-mii-qst-pro-eq-5d-5l-minimal.json",
     "fshName": "mii-qst-pro-eq-5d-5l-minimal",
     "fshType": "Instance",
@@ -184,6 +216,22 @@
     "endLine": 385
   },
   {
+    "outputFile": "Questionnaire-mii-qst-pro-hads.json",
+    "fshName": "mii-qst-pro-hads",
+    "fshType": "Instance",
+    "fshFile": "definitions\\hads\\mii-qst-pro-hads.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-k6.json",
+    "fshName": "mii-qst-pro-k6",
+    "fshType": "Instance",
+    "fshFile": "definitions\\k6\\mii-qst-pro-k6.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
     "outputFile": "Questionnaire-mii-qst-pro-phq-9-sdc-rendering.json",
     "fshName": "mii-qst-pro-phq-9-sdc-rendering",
     "fshType": "Instance",
@@ -198,6 +246,14 @@
     "fshFile": "definitions\\phq-9\\mii-qst-pro-phq-9.fsh",
     "startLine": 1,
     "endLine": 553
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-promis-29.json",
+    "fshName": "mii-qst-pro-promis-29",
+    "fshType": "Instance",
+    "fshFile": "definitions\\promis-29\\mii-qst-pro-promis-29.fsh",
+    "startLine": 1,
+    "endLine": 971
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-promis-depression-sf4a.json",
@@ -350,6 +406,30 @@
     "fshFile": "definitions\\bdi-ii\\mii-vs-pro-bdi-bdi2.fsh",
     "startLine": 1,
     "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.json",
+    "fshName": "MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt",
+    "fshType": "ValueSet",
+    "fshFile": "definitions\\eortc-qlq-c30\\mii-vs-pro-eortc-qlq-c30.fsh",
+    "startLine": 2,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.json",
+    "fshName": "MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt",
+    "fshType": "ValueSet",
+    "fshFile": "definitions\\eortc-qlq-c30\\mii-vs-pro-eortc-qlq-c30.fsh",
+    "startLine": 30,
+    "endLine": 44
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.json",
+    "fshName": "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role",
+    "fshType": "ValueSet",
+    "fshFile": "definitions\\eortc-qlq-c30\\mii-vs-pro-eortc-qlq-c30.fsh",
+    "startLine": 16,
+    "endLine": 27
   },
   {
     "outputFile": "ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json",

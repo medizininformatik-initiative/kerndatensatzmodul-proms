@@ -14,3 +14,11 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #promis-promis29 "PROMIS-29 Questionnaire"
 * #promis-promis33 "PROMIS-33 Questionnaire"
 * #promis-promisdepression4aSF "PROMIS Depression 4a Short Form Questionnaire"
+* #eortc-qlq-c30 "EORTC QLQ-C30 Quality of Life Questionnaire"
+* #hads "Hospital Anxiety and Depression Scale"
+* #epds "Edinburgh Postnatal Depression Scale"
+* #ces-d "Center for Epidemiologic Studies Depression Scale"
+* #k6 "Kessler Psychological Distress Scale"
+
+// TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are 
+// separate entities or part of some bigger PRO framework for proper categorization
