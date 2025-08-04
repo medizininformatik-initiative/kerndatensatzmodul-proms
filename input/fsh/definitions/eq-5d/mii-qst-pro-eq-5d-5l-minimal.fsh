@@ -11,8 +11,8 @@ Usage: #definition
 * code[snomed] = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
 * code[mii] = $mii-cs-pro-questionnaire-catalogue#euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
 * version = "0.1.0"
-// TODO: date, publisher, copyright, etc.
 
+// TODO: date, publisher, copyright, etc.
 
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].type = #choice
@@ -84,16 +84,11 @@ Usage: #definition
 * item[=].answerOption[+].valueCoding.display = "Ich bin extrem ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #5
 
-
-
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)
 * item[+].linkId = "euroqol-eq5d5l-score-profile"
 * item[=].type = #code
 * item[=].code = $SCT#405157008 "Personal health status"
 * item[=].text = "Gesundheitszustand"
-
-
-
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)
 * item[+].linkId = "euroqol-eq5d5l-score-index"
@@ -108,19 +103,15 @@ Usage: #definition
 * item[=].extension[=].valueCoding.system = $UCUM
 * item[=].extension[=].valueCoding.code = #{score}
 
-
-
 // Subjektive Beurteilung des Gesundheitszustands
 * item[+].linkId = "euroqol-eq5d5l-q06-vas"
 * item[=].type = #integer
 * item[=].code = $SCT#446515003 "Health assessment questionnaire score"
 * item[=].text = "IHRE GESUNDHEIT HEUTE"
-* item[=].text.extension[+].url = $hl7-min-value
-* item[=].text.extension[=].valueInteger = 0
-* item[=].text.extension[+].url = $hl7-max-value
-* item[=].text.extension[=].valueInteger = 100
+* item[=].extension[+].url = $hl7-min-value
+* item[=].extension[=].valueInteger = 0
+* item[=].extension[+].url = $hl7-max-value
+* item[=].extension[=].valueInteger = 100
 * item[=].extension[+].url = $hl7-questionnaire-unit
 * item[=].extension[=].valueCoding.system = $UCUM
 * item[=].extension[=].valueCoding.code = #{score}
-
-
