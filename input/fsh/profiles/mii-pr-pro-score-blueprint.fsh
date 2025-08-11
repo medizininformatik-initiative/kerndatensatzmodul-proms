@@ -52,7 +52,7 @@ Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture
 * contact
 * purpose
 * copyright
-* copyrightLabel
+// * copyrightLabel - R5 element, not available in R4
 * approvalDate
 * lastReviewDate
 * effectivePeriod

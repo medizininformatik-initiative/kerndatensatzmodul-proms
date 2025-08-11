@@ -5,14 +5,11 @@ Description: "ObservationDefinition for depression domain T-score across all dep
 Usage: #definition
 
 * category.coding = $hl7-observation-category#survey
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
+* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 
 // Method references European cross-cultural validation study
-* method.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ObservationMethod"
-* method.coding.code = #PAPER
-* method.coding.display = "Paper"
 * method.text = "PROMIS Depression T-score metric derived from European Health Interview Survey (EHIS) wave 3 cross-cultural validation study"
 
 // Quantitative value definition
@@ -62,9 +59,10 @@ Usage: #definition
 
 // Data source and methodology
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/cqf-citation"
-* extension[=].valueReference.reference = "Citation/riazy-2025-european-depression-reference"
-* extension[=].valueReference.display = "Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. JAMA Network Open. 2025;8(6):e2517394"
+* extension[=].valueString = "Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. JAMA Network Open. 2025;8(6):e2517394"
 
-// Clinical interpretation guidance
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/observation-clinicalInterpretationGuidance"
-* extension[=].valueString = "PROMIS Depression T-scores are standardized with US general population mean=50, SD=10. European population shows lower mean scores (Germany: mean=46.5, SD=7.7). Scores >1 SD above population mean indicate elevated depression symptoms. Age, sex, and cultural factors should be considered in interpretation."
+// Clinical interpretation guidance - removed invalid clinical guidance extension and note
+// Interpretation: PROMIS Depression T-scores are standardized with US general population mean=50, SD=10. 
+// European population shows lower mean scores (Germany: mean=46.5, SD=7.7). 
+// Scores >1 SD above population mean indicate elevated depression symptoms. 
+// Age, sex, and cultural factors should be considered in interpretation.

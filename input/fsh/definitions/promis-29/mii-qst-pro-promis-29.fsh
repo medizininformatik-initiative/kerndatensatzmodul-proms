@@ -9,8 +9,9 @@ Usage: #definition
 * experimental = true
 * language = #de
 * version = "1.0.0"
-* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]"
-* extension[=].valueCoding = http://hl7.org/fhir/version-algorithm#semver
+// versionAlgorithm is an R5 element - not available in R4
+// * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]"
+// * extension[=].valueCoding = http://hl7.org/fhir/version-algorithm#semver
 * code = $LNC#62337-1 "PROMIS item bank - 29 profile"
 
 // Reference to PROMIS-29 Documentation

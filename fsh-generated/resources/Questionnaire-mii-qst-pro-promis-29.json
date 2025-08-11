@@ -9,14 +9,26 @@
   "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29",
   "title": "MII QST PRO PROMIS-29 (Adults)",
   "description": "PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains",
-  "extension": [
+  "code": [
     {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]",
-      "valueCoding": {
-        "code": "semver",
-        "system": "http://hl7.org/fhir/version-algorithm"
+      "code": "62337-1",
+      "system": "http://loinc.org",
+      "display": "PROMIS item bank - 29 profile"
+    }
+  ],
+  "useContext": [
+    {
+      "valueReference": {
+        "reference": "https://www.healthmeasures.net/explore-measurement-systems/promis",
+        "display": "PROMIS-29 Profile Documentation"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
       }
-    },
+    }
+  ],
+  "extension": [
     {
       "extension": [
         {
@@ -153,25 +165,6 @@
         }
       ],
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
-    }
-  ],
-  "code": [
-    {
-      "code": "62337-1",
-      "system": "http://loinc.org",
-      "display": "PROMIS item bank - 29 profile"
-    }
-  ],
-  "useContext": [
-    {
-      "valueReference": {
-        "reference": "https://www.healthmeasures.net/explore-measurement-systems/promis",
-        "display": "PROMIS-29 Profile Documentation"
-      },
-      "code": {
-        "code": "focus",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      }
     }
   ],
   "item": [

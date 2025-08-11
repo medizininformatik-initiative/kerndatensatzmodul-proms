@@ -8,8 +8,10 @@ Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture
 * ^experimental = true
 * version 1..1 MS 
 
+
 * extension contains mii-ex-pro-questionnaire-capabilities named capabilities 1..1 MS
 * extension[capabilities] MS
+
 * copyright MS 
 * item MS
 * derivedFrom MS

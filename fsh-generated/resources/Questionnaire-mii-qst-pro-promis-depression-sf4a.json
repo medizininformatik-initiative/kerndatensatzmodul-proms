@@ -9,14 +9,26 @@
   "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
   "title": "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "description": "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0",
-  "extension": [
+  "code": [
     {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]",
-      "valueCoding": {
-        "code": "semver",
-        "system": "http://hl7.org/fhir/version-algorithm"
+      "code": "76343-3",
+      "system": "http://loinc.org",
+      "display": "PROMIS short form - emotional distress - depression 4a - version 1.0"
+    }
+  ],
+  "useContext": [
+    {
+      "valueReference": {
+        "reference": "https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf",
+        "display": "PROMIS Depression Scoring Manual"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
       }
-    },
+    }
+  ],
+  "extension": [
     {
       "extension": [
         {
@@ -57,25 +69,6 @@
         }
       ],
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
-    }
-  ],
-  "code": [
-    {
-      "code": "76343-3",
-      "system": "http://loinc.org",
-      "display": "PROMIS short form - emotional distress - depression 4a - version 1.0"
-    }
-  ],
-  "useContext": [
-    {
-      "valueReference": {
-        "reference": "https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf",
-        "display": "PROMIS Depression Scoring Manual"
-      },
-      "code": {
-        "code": "focus",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      }
     }
   ],
   "item": [

@@ -23,3 +23,8 @@ Anforderungen:
 * 1 Score-Observation pro Score
 * ggfs. Score-ObservationDefinition bei komplexen Scores m.
 * Beispiel-FHIR-Ressourcen
+
+Welche Auswirkungen hat das displayable
+
+Vereinheitlichung der Benennung des gleichen Instruments über verschiedene Instrumente
+Vereinheitlichung des Scorings über Instrumente hinweg
