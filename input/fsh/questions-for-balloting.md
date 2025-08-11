@@ -43,7 +43,7 @@ MII_PR_PRO_Score_Instance + Invarianten:
 
 ### Wichtiger Hinweis: SDC STU4 Kompatibilität
 
-**Tooling-Kompatibilität**: Diese Implementation Guide verwendet die neueste **SDC STU4 Spezifikation** mit `itemWeight` Properties für Score-Berechnungen. Ältere Tools, die noch SDC STU3 mit `ordinalValue` Extensions verwenden, sind möglicherweise nicht vollständig kompatibel.
+**Tooling-Kompatibilität**: Diese Implementation Guide verwendet **SDC STU3 Spezifikation** mit `ordinalValue` Extensions für Score-Berechnungen und der `.ordinal()` FHIRPath-Funktion. Dies gewährleistet breite Kompatibilität mit etablierten SDC-Tools.
 
 **Auswirkungen**:
 - Questionnaire-Validierung kann in älteren FHIR-Servern fehlschlagen
