@@ -12,6 +12,12 @@ Usage: #definition
 * version = "0.1.0"
 // TODO: date, publisher, copyright, etc.
 
+* extension[capabilities].extension[displayable].valueBoolean = true
+* extension[capabilities].extension[collectable].valueBoolean = true
+* extension[capabilities].extension[calculatable].valueBoolean = false
+* extension[capabilities].extension[extractable].valueBoolean = false
+* extension[capabilities].extension[domainAligned].valueBoolean = false
+
 * item[+].linkId = "EQ-5D-5L.MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
@@ -308,10 +314,12 @@ Usage: #definition
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract-category
 * item[=].extension[=].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
+/* - derzeit technisch nicht testbar (da values in CS/VS)
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
 * item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
 * item[=].readOnly = true
+*/
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)
 * item[+].linkId = "EQ-5D-5L.IV"
@@ -383,6 +391,3 @@ Usage: #definition
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].required = true
 * item[=].repeats = false
-
-
-//@Thimo TODO FHIRPath für Score

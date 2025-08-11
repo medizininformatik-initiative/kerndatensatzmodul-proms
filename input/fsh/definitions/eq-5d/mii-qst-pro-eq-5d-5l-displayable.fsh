@@ -456,4 +456,3 @@ Usage: #definition
 * item[=].repeats = false
 
 
-//@Thimo TODO FHIRPath für Score

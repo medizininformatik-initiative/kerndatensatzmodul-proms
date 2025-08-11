@@ -24,6 +24,7 @@ Usage: #definition
 * extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
 
+/*
 // Define variable for raw score calculation
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].extension[+].url = "name"
@@ -31,6 +32,15 @@ Usage: #definition
 * extension[=].extension[+].url = "expression"
 * extension[=].extension[=].valueExpression.language = #text/fhirpath
 * extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.weight().sum()"
+
+
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].extension[+].url = "name"
+* extension[=].extension[=].valueString = "rawScore"
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueExpression.language = #text/fhirpath
+* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal"
+*/
 
 * item[+].linkId = "PROMIS-Depression.Description"
 * item[=].type = #display
@@ -130,9 +140,10 @@ Usage: #definition
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%rawScore"
+* item[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.weight().sum()"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
+
 
 // T-Score Item
 * item[+].linkId = "promis-depression-score-tscore"
@@ -142,12 +153,7 @@ Usage: #definition
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, iif(%rawScore=6, 51.8, iif(%rawScore=7, 53.9, iif(%rawScore=8, 55.7, iif(%rawScore=9, 57.3, iif(%rawScore=10, 58.9, iif(%rawScore=11, 60.5, iif(%rawScore=12, 62.2, iif(%rawScore=13, 63.9, iif(%rawScore=14, 65.7, iif(%rawScore=15, 67.5, iif(%rawScore=16, 69.4, iif(%rawScore=17, 71.2, iif(%rawScore=18, 73.3, iif(%rawScore=19, 75.7, iif(%rawScore=20, 79.4, {}))))))))))))))))))"
+* item[=].extension[=].valueExpression.expression = "iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=4, 41.0, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=5, 49.0, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=6, 51.8, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=7, 53.9, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=8, 55.7, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=9, 57.3, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=10, 58.9, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=11, 60.5, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=12, 62.2, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=13, 63.9, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=14, 65.7, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=15, 67.5, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=16, 69.4, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=17, 71.2, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=18, 73.3, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=19, 75.7, iif(%resource.item.where(linkId='promis-depression-score-raw').answer.valueDecimal=20, 79.4, {})))))))))))))))))"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
 * item[=].readOnly = true
-* item[=].extension[+].url = $sdc-questionnaire-calculated-expression
-* item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.weight().sum()"
-* item[=].extension[+].url = $sdc-questionnaire-observation-extract
-* item[=].extension[=].valueBoolean = true
