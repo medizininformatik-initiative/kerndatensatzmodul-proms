@@ -13,9 +13,19 @@ Usage: #definition
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true
+* extension[capabilities].extension[populatable].valueBoolean = true  // Can be pre-populated from existing responses
 * extension[capabilities].extension[calculatable].valueBoolean = true
 * extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
+
+// SDC pre-population configuration for server-side calculation use case
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+* extension[=].extension[+].url = "name"
+* extension[=].extension[=].valueId = "sourceResponse"
+* extension[=].extension[+].url = "type"
+* extension[=].extension[=].valueCode = #QuestionnaireResponse
+* extension[=].extension[+].url = "description"
+* extension[=].extension[=].valueString = "Optional: Pre-populate from completed PHQ-9 QuestionnaireResponse for server-side calculation"
 
 * item[0].linkId = "PHQ-9.Description"
 * item[0].type = #display
@@ -30,6 +40,9 @@ Usage: #definition
 * item[1].type = #choice
 * item[1].prefix = "1"
 * item[1].code = $LNC#44250-9
+* item[1].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[1].extension[=].valueExpression.language = #text/fhirpath
+* item[1].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
 * item[1].text = "Wenig Interesse oder Freude an Ihren Tätigkeiten"
 * item[1].text.extension[0].url = $hl7-translation
 * item[1].text.extension[0].extension[0].url = "lang"
@@ -81,6 +94,9 @@ Usage: #definition
 * item[2].type = #choice
 * item[2].prefix = "2"
 * item[2].code = $LNC#44255-8
+* item[2].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[2].extension[=].valueExpression.language = #text/fhirpath
+* item[2].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
 * item[2].text = "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit"
 * item[2].text.extension[0].url = $hl7-translation
 * item[2].text.extension[0].extension[0].url = "lang"
@@ -132,6 +148,9 @@ Usage: #definition
 * item[3].type = #choice
 * item[3].prefix = "3"
 * item[3].code = $LNC#44259-0
+* item[3].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[3].extension[=].valueExpression.language = #text/fhirpath
+* item[3].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
 * item[3].text = "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
 * item[3].text.extension[0].url = $hl7-translation
 * item[3].text.extension[0].extension[0].url = "lang"
@@ -183,6 +202,9 @@ Usage: #definition
 * item[4].type = #choice
 * item[4].prefix = "4"
 * item[4].code = $LNC#44254-1
+* item[4].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[4].extension[=].valueExpression.language = #text/fhirpath
+* item[4].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
 * item[4].text = "Müdigkeit oder Gefühl, keine Energie zu haben"
 * item[4].text.extension[0].url = $hl7-translation
 * item[4].text.extension[0].extension[0].url = "lang"
@@ -234,6 +256,9 @@ Usage: #definition
 * item[5].type = #choice
 * item[5].prefix = "5"
 * item[5].code = $LNC#44251-7
+* item[5].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[5].extension[=].valueExpression.language = #text/fhirpath
+* item[5].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
 * item[5].text = "Verminderter Appetit oder übermäßiges Bedürfnis zu essen"
 * item[5].text.extension[0].url = $hl7-translation
 * item[5].text.extension[0].extension[0].url = "lang"
@@ -285,6 +310,9 @@ Usage: #definition
 * item[6].type = #choice
 * item[6].prefix = "6"
 * item[6].code = $LNC#44258-2
+* item[6].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[6].extension[=].valueExpression.language = #text/fhirpath
+* item[6].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
 * item[6].text = "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben"
 * item[6].text.extension[0].url = $hl7-translation
 * item[6].text.extension[0].extension[0].url = "lang"
@@ -336,6 +364,9 @@ Usage: #definition
 * item[7].type = #choice
 * item[7].prefix = "7"
 * item[7].code = $LNC#44252-5
+* item[7].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[7].extension[=].valueExpression.language = #text/fhirpath
+* item[7].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
 * item[7].text = "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen"
 * item[7].text.extension[0].url = $hl7-translation
 * item[7].text.extension[0].extension[0].url = "lang"
@@ -387,6 +418,9 @@ Usage: #definition
 * item[8].type = #choice
 * item[8].prefix = "8"
 * item[8].code = $LNC#44253-3
+* item[8].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[8].extension[=].valueExpression.language = #text/fhirpath
+* item[8].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
 * item[8].text = "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil „zappelig“ oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?"
 * item[8].text.extension[0].url = $hl7-translation
 * item[8].text.extension[0].extension[0].url = "lang"
@@ -438,6 +472,9 @@ Usage: #definition
 * item[9].type = #choice
 * item[9].prefix = "9"
 * item[9].code = $LNC#44260-8
+* item[9].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[9].extension[=].valueExpression.language = #text/fhirpath
+* item[9].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
 * item[9].text = "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten"
 * item[9].text.extension[0].url = $hl7-translation
 * item[9].text.extension[0].extension[0].url = "lang"
@@ -489,6 +526,9 @@ Usage: #definition
 * item[11].type = #choice
 * item[11].prefix = "10"
 * item[11].code = $LNC#69722-7
+* item[11].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+* item[11].extension[=].valueExpression.language = #text/fhirpath
+* item[11].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
 * item[11].text = "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen"
 * item[11].text.extension[0].url = $hl7-translation
 * item[11].text.extension[0].extension[0].url = "lang"

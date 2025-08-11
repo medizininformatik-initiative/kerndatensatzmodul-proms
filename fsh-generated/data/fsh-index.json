@@ -445,7 +445,23 @@
     "fshType": "Instance",
     "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-minimal.fsh",
     "startLine": 1,
-    "endLine": 117
+    "endLine": 118
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.json",
+    "fshName": "mii-qst-pro-euroqol-eq5d5l-answer-coding",
+    "fshType": "Instance",
+    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-answer-coding.fsh",
+    "startLine": 1,
+    "endLine": 237
+  },
+  {
+    "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.json",
+    "fshName": "mii-qst-pro-euroqol-eq5d5l-collectable",
+    "fshType": "Instance",
+    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-collectable.fsh",
+    "startLine": 1,
+    "endLine": 386
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.json",
@@ -453,15 +469,7 @@
     "fshType": "Instance",
     "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-displayable.fsh",
     "startLine": 1,
-    "endLine": 456
-  },
-  {
-    "outputFile": "Questionnaire-mii-qst-pro-euroqol-eq5d5l.json",
-    "fshName": "mii-qst-pro-euroqol-eq5d5l",
-    "fshType": "Instance",
-    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-collectable.fsh",
-    "startLine": 1,
-    "endLine": 385
+    "endLine": 458
   },
   {
     "outputFile": "Questionnaire-mii-qst-pro-hads.json",
@@ -512,14 +520,6 @@
     "endLine": 154
   },
   {
-    "outputFile": "Questionnaire-mii-qst-pro-quroqol-eq5d5l-answer-coding.json",
-    "fshName": "mii-qst-pro-quroqol-eq5d5l-answer-coding",
-    "fshType": "Instance",
-    "fshFile": "definitions\\eq-5d\\mii-qst-pro-eq-5d-5l-answer-coding.fsh",
-    "startLine": 1,
-    "endLine": 237
-  },
-  {
     "outputFile": "QuestionnaireResponse-mii-exa-pro-bdi-bdi2.json",
     "fshName": "mii-exa-pro-bdi-bdi2",
     "fshType": "Instance",
@@ -536,12 +536,20 @@
     "endLine": 198
   },
   {
+    "outputFile": "QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.json",
+    "fshName": "mii-exa-pro-euroqol-eq5d5l-coded-response",
+    "fshType": "Instance",
+    "fshFile": "examples\\mii-exa-pro-eq5d5l-coded-response.fsh",
+    "startLine": 2,
+    "endLine": 53
+  },
+  {
     "outputFile": "QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.json",
     "fshName": "mii-exa-pro-euroqol-eq5d5l-response",
     "fshType": "Instance",
     "fshFile": "examples\\mii-exa-pro-eq5d5l-response.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 23
   },
   {
     "outputFile": "QuestionnaireResponse-mii-exa-pro-phq-9-response.json",
@@ -549,7 +557,7 @@
     "fshType": "Instance",
     "fshFile": "examples\\mii-exa-pro-phq-9-response.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 43
   },
   {
     "outputFile": "QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.json",
@@ -597,7 +605,7 @@
     "fshType": "Profile",
     "fshFile": "definitions\\eq-5d\\mii-pr-pro-observation-eq5d5l-profile.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.json",

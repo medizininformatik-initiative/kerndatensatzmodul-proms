@@ -34,12 +34,10 @@ Title: "PHQ-9 Questionnaire Response Example"
 * item[+].linkId = "phq-phq9-q09" // Thoughts of death
 * item[=].answer[0].valueCoding = $LNC#LA6571-9 // Nearly every day (3)
 
+// Total score: 9 questions × 3 points = 27 (severe depression)
+// Note: Unit {score} is defined in the Questionnaire via questionnaire-unit extension
+* item[+].linkId = "phq-phq9-score-total"
+* item[=].answer[0].valueDecimal = 27
+
 * item[+].linkId = "phq-phq9-q10" // Functional impairment
 * item[=].answer[0].valueCoding = $LNC#LA6574-3 // Extremely difficult (not scored)
-
-// Total score: 9 questions × 3 points = 27 (severe depression)
-* item[+].linkId = "phq-phq9-score-total"
-* item[=].answer[0].valueQuantity.value = 27
-* item[=].answer[0].valueQuantity.code = #{score}
-* item[=].answer[0].valueQuantity.unit = "{score}"
-* item[=].answer[0].valueQuantity.system = $UCUM

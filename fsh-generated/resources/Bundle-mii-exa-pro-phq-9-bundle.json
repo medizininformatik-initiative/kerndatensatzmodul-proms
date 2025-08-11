@@ -1749,6 +1749,14 @@
           {
             "answer": [
               {
+                "valueDecimal": 27
+              }
+            ],
+            "linkId": "phq-phq9-score-total"
+          },
+          {
+            "answer": [
+              {
                 "valueCoding": {
                   "code": "LA6574-3",
                   "system": "http://loinc.org"
@@ -1756,19 +1764,6 @@
               }
             ],
             "linkId": "phq-phq9-q10"
-          },
-          {
-            "answer": [
-              {
-                "valueQuantity": {
-                  "value": 27,
-                  "code": "{score}",
-                  "unit": "{score}",
-                  "system": "http://unitsofmeasure.org"
-                }
-              }
-            ],
-            "linkId": "phq-phq9-score-total"
           }
         ],
         "status": "completed",

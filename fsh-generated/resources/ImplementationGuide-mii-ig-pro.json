@@ -325,6 +325,21 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-coded-response"
+        },
+        "name": "EQ-5D-5L Answer-Coding Response Example",
+        "description": "Example of an EQ-5D-5L questionnaire response using the answer-coding variant with MII CodeSystem",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response"
+        },
+        "name": "EQ-5D-5L Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-eq-5d-value-set"
         },
         "name": "MII CS EQ-5D Value Set",
@@ -581,23 +596,7 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/mii-qst-pro-quroqol-eq5d5l-answer-coding"
-        },
-        "name": "MII QST PRO EQ-5D-5L",
-        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l"
-        },
-        "name": "MII QST PRO EQ-5D-5L",
-        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable"
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding"
         },
         "name": "MII QST PRO EQ-5D-5L",
         "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
@@ -609,6 +608,22 @@
         },
         "name": "MII QST PRO EQ-5D-5L",
         "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable"
+        },
+        "name": "MII QST PRO EQ-5D-5L (Displayable)",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Displayable version",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable"
+        },
+        "name": "MII QST PRO EQ-5D-5L Collectable",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version",
         "exampleBoolean": false
       },
       {
@@ -727,13 +742,6 @@
           "reference": "QuestionnaireResponse/mii-exa-pro-phq-9-response"
         },
         "name": "PHQ-9 Questionnaire Response Example",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
-      },
-      {
-        "reference": {
-          "reference": "QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response"
-        },
-        "name": "PHQ-9 Questionnaire Response Example EuroQol EQ-5D-5L",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {

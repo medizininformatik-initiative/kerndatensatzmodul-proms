@@ -1,14 +1,17 @@
 {
   "resourceType": "Questionnaire",
-  "id": "mii-qst-pro-euroqol-eq5d5l",
+  "id": "mii-qst-pro-euroqol-eq5d5l-collectable",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l",
-  "title": "MII QST PRO EQ-5D-5L",
-  "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable",
+  "title": "MII QST PRO EQ-5D-5L Collectable",
+  "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version",
+  "derivedFrom": [
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
+  ],
   "code": [
     {
       "code": "73041000052103",
@@ -153,7 +156,7 @@
           "initialSelected": true
         }
       ],
-      "linkId": "EQ-5D-5L.MO",
+      "linkId": "euroqol-eq5d5l-q01-MO",
       "type": "choice",
       "text": "BEWEGLICHKEIT / MOBILITÄT",
       "_text": {
@@ -312,7 +315,7 @@
           "initialSelected": true
         }
       ],
-      "linkId": "EQ-5D-5L.SC",
+      "linkId": "euroqol-eq5d5l-q02-SC",
       "type": "choice",
       "text": "FÜR SICH SELBST SORGEN",
       "_text": {
@@ -471,7 +474,7 @@
           "initialSelected": true
         }
       ],
-      "linkId": "EQ-5D-5L.UA",
+      "linkId": "euroqol-eq5d5l-q03-UA",
       "type": "choice",
       "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
       "_text": {
@@ -630,7 +633,7 @@
           "initialSelected": true
         }
       ],
-      "linkId": "EQ-5D-5L.PD",
+      "linkId": "euroqol-eq5d5l-q04-PD",
       "type": "choice",
       "text": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN",
       "_text": {
@@ -783,7 +786,7 @@
           "initialSelected": true
         }
       ],
-      "linkId": "EQ-5D-5L.AD",
+      "linkId": "euroqol-eq5d5l-q05-AD",
       "type": "choice",
       "text": "ANGST / NIEDERGESCHLAGENHEIT",
       "_text": {
@@ -845,7 +848,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         }
       ],
-      "linkId": "EQ-5D-5L.HS",
+      "linkId": "euroqol-eq5d5l-score-profile",
       "type": "integer",
       "text": "Gesundheitszustand",
       "_text": {
@@ -899,7 +902,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
         }
       ],
-      "linkId": "EQ-5D-5L.IV",
+      "linkId": "euroqol-eq5d5l-score-index",
       "type": "decimal",
       "text": "Indexwert",
       "_text": {
@@ -930,9 +933,9 @@
       "readOnly": true
     },
     {
-      "linkId": "EQ-VAS.IS",
+      "linkId": "euroqol-eq5d5l-vas-instruction",
       "type": "display",
-      "text": "\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
+      "text": "\r\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\r\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\r\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\r\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\r\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\r\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
       "_text": {
         "extension": [
           {
@@ -943,7 +946,7 @@
               },
               {
                 "url": "content",
-                "valueString": "\n    We would like to know how good or bad your health is TODAY.\n\n    This scale is numbered from 0 to 100.\n\n    100 means the best health you can imagine.\n\n    0 means the worst health you can imagine.\n\n    Please mark an X on the scale to indicate how your health is TODAY.\n\n    Now, write the number you marked on the scale in the box below."
+                "valueString": "\r\n    We would like to know how good or bad your health is TODAY.\n\r\n    This scale is numbered from 0 to 100.\n\r\n    100 means the best health you can imagine.\n\r\n    0 means the worst health you can imagine.\n\r\n    Please mark an X on the scale to indicate how your health is TODAY.\n\r\n    Now, write the number you marked on the scale in the box below."
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -996,7 +999,7 @@
           "valueInteger": 999
         }
       ],
-      "linkId": "EQ-VAS.HT",
+      "linkId": "euroqol-eq5d5l-vas",
       "type": "integer",
       "text": "IHRE GESUNDHEIT HEUTE",
       "_text": {

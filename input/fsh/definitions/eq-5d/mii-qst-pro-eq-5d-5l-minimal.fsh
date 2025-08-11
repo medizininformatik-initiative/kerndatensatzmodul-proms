@@ -4,7 +4,8 @@ Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
 Usage: #definition
 
-* url = $mii-qst-pro-euroqol-eq5d5l
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal"
+* derivedFrom = $mii-qst-pro-euroqol-eq5d5l
 * status = #active
 * experimental = true
 * language = #de

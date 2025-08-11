@@ -8,7 +8,6 @@ Description: "Profile for EQ-5D-5L Profile String Observations (e.g., '11111')"
 * ^experimental = true
 
 // No SNOMED code available for profile, using MII code
-* code from $mii-cs-pro-score-catalogue
 * code = $mii-cs-pro-score-catalogue#euroqol-eq5d5l-profile "EuroQol EQ-5D-5L Profile"
 * code MS
 

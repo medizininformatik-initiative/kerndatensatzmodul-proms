@@ -32,6 +32,8 @@
 [mii-exa-pro-eortc-qlq-c30-observation-sf]: Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.html
 [mii-obsdef-pro-eortc-qlq-c30-sf]: ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf.html
 [mii-exa-pro-eortc-qlq-c30-bundle]: Bundle-mii-exa-pro-eortc-qlq-c30-bundle.html
+[mii-exa-pro-euroqol-eq5d5l-coded-response]: QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.html
+[mii-exa-pro-euroqol-eq5d5l-response]: QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.html
 [MII_CS_PRO_EQ_5D_ValueSet]: CodeSystem-mii-cs-pro-eq-5d-value-set.html
 [MII_CS_PRO_BDI_BDI2_AnswerList]: CodeSystem-mii-cs-pro-bdi-bdi2.html
 [MII_CS_PRO_EORTC_QLQ_C30]: CodeSystem-mii-cs-pro-eortc-qlq-c30.html
@@ -64,10 +66,10 @@
 [mii-qst-pro-ces-d]: Questionnaire-mii-qst-pro-ces-d.html
 [mii-qst-pro-eortc-qlq-c30]: Questionnaire-mii-qst-pro-eortc-qlq-c30.html
 [mii-qst-pro-epds]: Questionnaire-mii-qst-pro-epds.html
-[mii-qst-pro-quroqol-eq5d5l-answer-coding]: Questionnaire-mii-qst-pro-quroqol-eq5d5l-answer-coding.html
-[mii-qst-pro-euroqol-eq5d5l]: Questionnaire-mii-qst-pro-euroqol-eq5d5l.html
-[mii-qst-pro-euroqol-eq5d5l-displayable]: Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html
+[mii-qst-pro-euroqol-eq5d5l-answer-coding]: Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.html
 [mii-qst-pro-eq-5d-5l-minimal]: Questionnaire-mii-qst-pro-eq-5d-5l-minimal.html
+[mii-qst-pro-euroqol-eq5d5l-displayable]: Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html
+[mii-qst-pro-euroqol-eq5d5l-collectable]: Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.html
 [mii-qst-pro-hads]: Questionnaire-mii-qst-pro-hads.html
 [mii-qst-pro-k6]: Questionnaire-mii-qst-pro-k6.html
 [mii-qst-pro-phq-9]: Questionnaire-mii-qst-pro-phq-9.html
@@ -83,6 +85,5 @@
 [MII_VS_PRO_PHQ9_AnswerList_LL3591]: ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.html
 [mii-exa-pro-phq-9-observation]: Observation-mii-exa-pro-phq-9-observation.html
 [mii-exa-pro-phq-9-response]: QuestionnaireResponse-mii-exa-pro-phq-9-response.html
-[mii-exa-pro-euroqol-eq5d5l-response]: QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.html
 [mii-exa-pro-phq-9-bundle]: Bundle-mii-exa-pro-phq-9-bundle.html
 [mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation]: Observation-mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation.html

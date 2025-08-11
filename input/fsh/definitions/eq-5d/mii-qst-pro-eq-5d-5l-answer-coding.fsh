@@ -1,10 +1,10 @@
-Instance: mii-qst-pro-quroqol-eq5d5l-answer-coding
+Instance: mii-qst-pro-euroqol-eq5d5l-answer-coding
 InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
 Usage: #definition
 
-* url = $mii-qst-pro-euroqol-eq5d5l-answer-coding
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding"
 * status = #active
 * experimental = true
 * language = #de
@@ -14,7 +14,7 @@ Usage: #definition
 // TODO: date, publisher, copyright, etc.
 * derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
 
-* item[+].linkId = "EQ-5D-5L.IS"
+* item[+].linkId = "euroqol-eq5d5l-coded-instruction"
 * item[=].type = #display
 * item[=].text = "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt."
 * item[=].text.extension[+].url = $hl7-translation
@@ -23,7 +23,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "Under each heading, please tick the ONE box that best describes your health TODAY."
 
-* item[+].linkId = "EQ-5D-5L.MO"
+* item[+].linkId = "euroqol-eq5d5l-coded-q01-MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
 * item[=].text.extension[+].url = $hl7-translation
@@ -49,7 +49,7 @@ Usage: #definition
 * item[=].required = true
 * item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.SC"
+* item[+].linkId = "euroqol-eq5d5l-coded-q02-SC"
 * item[=].type = #choice
 * item[=].text = "FÜR SICH SELBST SORGEN"
 * item[=].text.extension[+].url = $hl7-translation
@@ -75,7 +75,7 @@ Usage: #definition
 * item[=].required = true
 * item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.UA"
+* item[+].linkId = "euroqol-eq5d5l-coded-q03-UA"
 * item[=].type = #choice
 * item[=].text = "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
 * item[=].text.extension[+].url = $hl7-translation
@@ -101,7 +101,7 @@ Usage: #definition
 * item[=].required = true
 * item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.PD"
+* item[+].linkId = "euroqol-eq5d5l-coded-q04-PD"
 * item[=].type = #choice
 * item[=].text = "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN"
 * item[=].text.extension[+].url = $hl7-translation
@@ -127,7 +127,7 @@ Usage: #definition
 * item[=].required = true
 * item[=].repeats = false
 
-* item[+].linkId = "EQ-5D-5L.AD"
+* item[+].linkId = "euroqol-eq5d5l-coded-q05-AD"
 * item[=].type = #choice
 * item[=].text = "ANGST / NIEDERGESCHLAGENHEIT"
 * item[=].text.extension[+].url = $hl7-translation
@@ -154,7 +154,7 @@ Usage: #definition
 * item[=].repeats = false
 
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)
-* item[+].linkId = "EQ-5D-5L.HS"
+* item[+].linkId = "euroqol-eq5d5l-coded-score-profile"
 * item[=].type = #string
 * item[=].code = $SCT#405157008 "Personal health status"
 * item[=].text = "Gesundheitszustand"
@@ -166,7 +166,7 @@ Usage: #definition
 * item[=].readOnly = true
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)
-//* item[+].linkId = "EQ-5D-5L.IV"
+//* item[+].linkId = "euroqol-eq5d5l-coded-score-index"
 //* item[=].type = #decimal
 //* item[=].code = $SCT#406222005 "Population health status"
 //* item[=].text = "Indexwert"
@@ -189,7 +189,7 @@ Usage: #definition
 //* item[=].extension[=].valueCodeableConcept.coding.code = #survey
 //* item[=].readOnly = true
 
-* item[+].linkId = "EQ-VAS.IS"
+* item[+].linkId = "euroqol-eq5d5l-coded-vas-instruction"
 * item[=].type = #display
 * item[=].text = "
     Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n
@@ -211,7 +211,7 @@ Usage: #definition
     Now, write the number you marked on the scale in the box below."
 
 // Subjektive Beurteilung des Gesundheitszustands
-* item[+].linkId = "EQ-VAS.HT"
+* item[+].linkId = "euroqol-eq5d5l-coded-vas"
 * item[=].type = #integer
 * item[=].code = $SCT#446515003 "Health assessment questionnaire score"
 * item[=].text = "IHRE GESUNDHEIT HEUTE"
