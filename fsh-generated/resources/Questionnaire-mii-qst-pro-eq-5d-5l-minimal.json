@@ -258,6 +258,14 @@
       ],
       "extension": [
         {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 100
+        },
+        {
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "{score}"
@@ -267,19 +275,7 @@
       ],
       "linkId": "euroqol-eq5d5l-q06-vas",
       "type": "integer",
-      "text": "IHRE GESUNDHEIT HEUTE",
-      "_text": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/minValue",
-            "valueInteger": 0
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-            "valueInteger": 100
-          }
-        ]
-      }
+      "text": "IHRE GESUNDHEIT HEUTE"
     }
   ],
   "extension": [
