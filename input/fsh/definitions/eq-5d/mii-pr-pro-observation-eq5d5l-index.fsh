@@ -20,24 +20,8 @@ Description: "Profile for EQ-5D-5L Index Score Observations with German value se
 * method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
 * method MS
 
-// German-specific absolute reference range with health correlation
-* referenceRange MS
-* referenceRange.low.value = -0.661
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $UCUM
-* referenceRange.low.code = #1
-* referenceRange.high.value = 1.000
-* referenceRange.high.unit = "1" 
-* referenceRange.high.system = $UCUM
-* referenceRange.high.code = #1
-* referenceRange.type = http://terminology.hl7.org/CodeSystem/referencerange-meaning#absolute "Absolute Range"
-* referenceRange.appliesTo = urn:iso:std:iso:3166#DE "Germany"
-* referenceRange.text = "German EQ-5D-5L value set range (Ludwig et al. 2018)"
-
-// Health score correlation extension
-* referenceRange.extension contains MII_EX_PRO_Score_Score_Health_Correlation named ScoreHealthCorrelation 0..1 MS
-* referenceRange.extension[ScoreHealthCorrelation].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase "Increased score indicates improvement"
-* referenceRange.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher score indicates better health status"
+// Reference range information is defined in the ObservationDefinition (mii-obsdef-pro-score-eq5d5l-index)
+// Population-specific value set ranges (German: -0.661 to 1.0) are documented there
 
 // Literature reference
 * note MS

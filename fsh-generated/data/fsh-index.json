@@ -587,15 +587,15 @@
     "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-index.json",
     "fshName": "MII_PR_PRO_Observation_EQ5D5L_Index",
     "fshType": "Profile",
-    "fshFile": "profiles\\mii-pr-pro-observation-eq5d5l-index.fsh",
+    "fshFile": "definitions\\eq-5d\\mii-pr-pro-observation-eq5d5l-index.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.json",
     "fshName": "MII_PR_PRO_Observation_EQ5D5L_Profile",
     "fshType": "Profile",
-    "fshFile": "profiles\\mii-pr-pro-observation-eq5d5l-profile.fsh",
+    "fshFile": "definitions\\eq-5d\\mii-pr-pro-observation-eq5d5l-profile.fsh",
     "startLine": 1,
     "endLine": 29
   },
@@ -603,9 +603,9 @@
     "outputFile": "StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.json",
     "fshName": "MII_PR_PRO_Observation_EQ5D5L_VAS",
     "fshType": "Profile",
-    "fshFile": "profiles\\mii-pr-pro-observation-eq5d5l-vas.fsh",
+    "fshFile": "definitions\\eq-5d\\mii-pr-pro-observation-eq5d5l-vas.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.json",
