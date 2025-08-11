@@ -16,7 +16,7 @@ Usage: #definition
 // Capabilities - NOT displayable due to licensing restrictions
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[collectable].valueBoolean = false
-* extension[capabilities].extension[calculatable].valueBoolean = true
+* extension[capabilities].extension[calculatable].valueBoolean = false
 * extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
 

@@ -30,10 +30,10 @@ Usage: #example
 * entry[=].request.url = "Questionnaire/mii-qst-pro-bdi-bdi2"
 
 // QuestionnaireResponse
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-qr-pro-bdi-bdi2"
-* entry[=].resource = mii-qr-pro-bdi-bdi2
+* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-bdi-bdi2"
+* entry[=].resource = mii-exa-pro-bdi-bdi2
 * entry[=].request.method = #PUT
-* entry[=].request.url = "QuestionnaireResponse/mii-qr-pro-bdi-bdi2"
+* entry[=].request.url = "QuestionnaireResponse/mii-exa-pro-bdi-bdi2"
 
 // Derived Observation
 * entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-bdi-ii-observation"

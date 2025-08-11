@@ -3,7 +3,7 @@
   "id": "mii-ig-pro",
   "language": "de-DE",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version": "2025.0.0-alpha",
+  "version": "2026.0.0-alpha",
   "name": "MII_IG_PRO",
   "title": "MII IG PRO",
   "status": "draft",
@@ -91,6 +91,240 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"
+        },
+        "name": "EORTC QLQ-C30 Appetite Loss Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ap"
+        },
+        "name": "EORTC QLQ-C30 Appetite Loss Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Appetite Loss Score (AP) - Higher scores indicate more appetite loss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"
+        },
+        "name": "EORTC QLQ-C30 Cognitive Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-cf"
+        },
+        "name": "EORTC QLQ-C30 Cognitive Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Cognitive Functioning Score (CF) - Higher scores indicate better cognitive functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-co"
+        },
+        "name": "EORTC QLQ-C30 Constipation Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-co"
+        },
+        "name": "EORTC QLQ-C30 Constipation Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Constipation Score (CO) - Higher scores indicate more constipation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-di"
+        },
+        "name": "EORTC QLQ-C30 Diarrhoea Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-di"
+        },
+        "name": "EORTC QLQ-C30 Diarrhoea Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Diarrhoea Score (DI) - Higher scores indicate more diarrhoea",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"
+        },
+        "name": "EORTC QLQ-C30 Dyspnoea Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-dy"
+        },
+        "name": "EORTC QLQ-C30 Dyspnoea Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Dyspnoea Score (DY) - Higher scores indicate more dyspnoea",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"
+        },
+        "name": "EORTC QLQ-C30 Emotional Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ef"
+        },
+        "name": "EORTC QLQ-C30 Emotional Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Emotional Functioning Score (EF) - Higher scores indicate better emotional functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"
+        },
+        "name": "EORTC QLQ-C30 Fatigue Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fa"
+        },
+        "name": "EORTC QLQ-C30 Fatigue Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Fatigue Score (FA) - Higher scores indicate more fatigue",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"
+        },
+        "name": "EORTC QLQ-C30 Financial Difficulties Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fi"
+        },
+        "name": "EORTC QLQ-C30 Financial Difficulties Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Financial Difficulties Score (FI) - Higher scores indicate more financial difficulties",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"
+        },
+        "name": "EORTC QLQ-C30 Global Health Status / Quality of Life Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ql"
+        },
+        "name": "EORTC QLQ-C30 Global Health Status / Quality of Life Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Global Health Status / Quality of Life Score (QL) - Higher scores indicate better quality of life",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"
+        },
+        "name": "EORTC QLQ-C30 Insomnia Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sl"
+        },
+        "name": "EORTC QLQ-C30 Insomnia Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Insomnia Score (SL) - Higher scores indicate more sleep disturbance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"
+        },
+        "name": "EORTC QLQ-C30 Nausea and Vomiting Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-nv"
+        },
+        "name": "EORTC QLQ-C30 Nausea and Vomiting Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Nausea and Vomiting Score (NV) - Higher scores indicate more nausea/vomiting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"
+        },
+        "name": "EORTC QLQ-C30 Pain Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pa"
+        },
+        "name": "EORTC QLQ-C30 Pain Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Pain Score (PA) - Higher scores indicate more pain",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"
+        },
+        "name": "EORTC QLQ-C30 Physical Functioning Score",
+        "description": "Physical Functioning Score from EORTC QLQ-C30",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf"
+        },
+        "name": "EORTC QLQ-C30 Physical Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Physical Functioning Score (PF) - Higher scores indicate better physical functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"
+        },
+        "name": "EORTC QLQ-C30 Role Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-rf"
+        },
+        "name": "EORTC QLQ-C30 Role Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Role Functioning Score (RF) - Higher scores indicate better role functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"
+        },
+        "name": "EORTC QLQ-C30 Social Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sf"
+        },
+        "name": "EORTC QLQ-C30 Social Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Social Functioning Score (SF) - Higher scores indicate better social functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-eortc-qlq-c30-bundle"
+        },
+        "name": "EORTC QLQ-C30 Transaction Bundle Example",
+        "description": "Complete transaction bundle containing EORTC QLQ-C30 questionnaire, response with all 30 items, and derived observations with all 15 scale scores",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-eq-5d-value-set"
         },
         "name": "MII CS EQ-5D Value Set",
@@ -136,6 +370,22 @@
         "name": "MII Ex PRO Score Score Health Correlation",
         "description": "MII Ex PRO Score Score Health Correlation",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-bdi-bdi2"
+        },
+        "name": "MII EXA PRO BDI-II",
+        "description": "MII EXA PRO Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"
+        },
+        "name": "MII EXA PRO EORTC QLQ-C30 Response",
+        "description": "Complete EORTC QLQ-C30 QuestionnaireResponse example with all 30 items and calculated scores",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
         "reference": {
@@ -299,14 +549,6 @@
       },
       {
         "reference": {
-          "reference": "QuestionnaireResponse/mii-qr-pro-bdi-bdi2"
-        },
-        "name": "MII QST PRO BDI-II",
-        "description": "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/mii-qst-pro-bdi-bdi2"
         },
         "name": "MII QST PRO BDI-II",
@@ -326,7 +568,7 @@
           "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30"
         },
         "name": "MII QST PRO EORTC QLQ-C30",
-        "description": "EORTC QLQ-C30 Quality of Life Questionnaire - Core 30 for cancer patients",
+        "description": "EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores",
         "exampleBoolean": false
       },
       {
