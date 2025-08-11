@@ -168,7 +168,7 @@
         {
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "%resource.item.where(type = 'choice').answer.value.weight().sum()"
+            "expression": "%resource.item.where(type = 'choice').answer.value.ordinal().sum()"
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         }

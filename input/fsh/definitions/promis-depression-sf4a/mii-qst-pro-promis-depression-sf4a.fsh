@@ -31,7 +31,7 @@ Usage: #definition
 * extension[=].extension[=].valueString = "rawScore"
 * extension[=].extension[+].url = "expression"
 * extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.weight().sum()"
+* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
 
 * item[+].linkId = "PROMIS-Depression.Description"
 * item[=].type = #display
@@ -43,19 +43,19 @@ Usage: #definition
 * item[=].code = $LNC#61953-6 "In the past 7 days - I felt worthless"
 * item[=].text = "...fühlte ich mich wertlos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Item 2: I felt helpless  
@@ -64,19 +64,19 @@ Usage: #definition
 * item[=].code = $LNC#61955-1 "In the past 7 days - I felt helpless"
 * item[=].text = "...fühlte ich mich hilflos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Item 3: I felt depressed
@@ -85,19 +85,19 @@ Usage: #definition
 * item[=].code = $LNC#61967-6 "In the past 7 days - I felt depressed"
 * item[=].text = "...fühlte ich mich deprimiert"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Item 4: I felt hopeless
@@ -106,19 +106,19 @@ Usage: #definition
 * item[=].code = $LNC#61973-4 "In the past 7 days - I felt hopeless"
 * item[=].text = "...fühlte ich mich hoffnungslos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Raw Score Item
@@ -149,6 +149,6 @@ Usage: #definition
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.weight().sum()"
+* item[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true

@@ -104,4 +104,4 @@ Usage: #definition
 * item[=].type = #quantity
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.weight().sum()"
+* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.ordinal().sum()"
