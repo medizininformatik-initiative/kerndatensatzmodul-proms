@@ -51,6 +51,23 @@
               }
             ],
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+          },
+          {
+            "extension": [
+              {
+                "url": "name",
+                "valueId": "sourceResponse"
+              },
+              {
+                "url": "type",
+                "valueCode": "QuestionnaireResponse"
+              },
+              {
+                "url": "description",
+                "valueString": "Optional: Pre-populate from completed PHQ-9 QuestionnaireResponse for server-side calculation"
+              }
+            ],
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
           }
         ],
         "item": [
@@ -81,6 +98,15 @@
               {
                 "code": "44250-9",
                 "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
             ],
             "answerOption": [
@@ -234,6 +260,15 @@
                 "system": "http://loinc.org"
               }
             ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+              }
+            ],
             "answerOption": [
               {
                 "valueCoding": {
@@ -383,6 +418,15 @@
               {
                 "code": "44259-0",
                 "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
             ],
             "answerOption": [
@@ -536,6 +580,15 @@
                 "system": "http://loinc.org"
               }
             ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+              }
+            ],
             "answerOption": [
               {
                 "valueCoding": {
@@ -685,6 +738,15 @@
               {
                 "code": "44251-7",
                 "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
             ],
             "answerOption": [
@@ -838,6 +900,15 @@
                 "system": "http://loinc.org"
               }
             ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+              }
+            ],
             "answerOption": [
               {
                 "valueCoding": {
@@ -987,6 +1058,15 @@
               {
                 "code": "44252-5",
                 "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
             ],
             "answerOption": [
@@ -1140,6 +1220,15 @@
                 "system": "http://loinc.org"
               }
             ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+              }
+            ],
             "answerOption": [
               {
                 "valueCoding": {
@@ -1289,6 +1378,15 @@
               {
                 "code": "44260-8",
                 "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
             ],
             "answerOption": [
@@ -1503,6 +1601,15 @@
               {
                 "code": "69722-7",
                 "system": "http://loinc.org"
+              }
+            ],
+            "extension": [
+              {
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
+                },
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
             ],
             "answerOption": [

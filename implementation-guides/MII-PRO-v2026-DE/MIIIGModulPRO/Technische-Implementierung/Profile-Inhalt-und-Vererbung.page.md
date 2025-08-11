@@ -1,25 +1,235 @@
 ## {{page-title}}
 
-Under construction
 
-Für jeden Fragebogen können verschiedene Extension hinterlegt werden
+---
+topic: QuestionnaireVariantenArchitektur
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire
+canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/QuestionnaireVariantenArchitektur
+expand: 1
+---
 
-Ein Base-Fragebogen beinhaltet die reinen Informationen und Datenelementen. Darüber hinaus können 
-Abgeleitete Fragebögen mit Logik für folgende Subdomänen. 
-Basierend auf gängiger Interface-Beschreibung kann jeder Fragebogen zusätzliches Verhalten über reguläre Datenelemente und Extension erhalten. 
+## Questionnaire-Varianten-Architektur: Trennung der Verantwortlichkeiten
 
-Dies sind vor allem: 
-1. Displayable (Fragebogen-Ergebnisse und Scores können gerendert werden)
-1. Collectable (Fragebogen kann korrekt gerendert und Daten innerhalb eines FHIR FormRenderers korrekt erfasst werden)
-2. Calculatable (Score kann innerhalb eines FormRenderers direkt berechnet werden) 
-3. Extractable (Observations und andere FHIR-Ressourcen können aus dem Questionnaire extrahiert werden)
+### Die architektonische Erkenntnis
 
-Ein MII-Fragebogen kann keinen, einen oder mehrere dieser Verhalten umgesetzt haben, je nach benötigtem Use Case. Es SOLL mindestens die Displayable-Funktionalität umgesetzt werden, falls nicht lizenzrechtliche Gründe gegen eine Veröffentlichung der Frage- und Antworttexte sprechen. 
+Das MII PRO-Modul implementiert ein ausgkomplexeseklügeltes Muster zur Trennung der Verantwortlichkeiten ("Separation of Concerns") für Fragebögen, bei dem verschiedene Varianten desselben Fragebogens unterschiedliche Zwecke im Workflow von Gesundheitsdaten erfüllen. Diese Architektur ermöglicht maximale Flexibilität bei gleichzeitiger Wahrung der semantischen Konsistenz über verschiedene Anwendungsfälle hinweg.
+
+#### Basis-Capabilities (Baukasten-Prinzip)
+
+1. **Collectable** (Erfassbar): Wie Daten VON Nutzern EINGEGEBEN werden
+2. **Populatable** (Vorausfüllbar): Wie existierende Daten GELADEN werden
+3. **Calculatable** (Berechenbar): Wie Scores AUS Daten BERECHNET werden
+4. **Displayable** (Anzeigbar): Wie Daten/Ergebnisse DARGESTELLT werden
+5. **Extractable** (Extrahierbar): Wie Daten aus dem Fragebogenformat in andere FHIR-Ressourcen ÜBERFÜHRT werden
+
+Die entscheidende Erkenntnis ist, dass ein konkreter Einsatz oft **weder einzelne noch alle Capabilities benötigt, sondern um deren Kombinationen**, die spezifische Anwendungsfälle definieren.
+
+#### Use-Case-basierte Capability-Kombinationen
+
+##### Use Case 1: Interaktive Datenerfassung mit Echtzeit-Scoring
+**Capabilities**: `[collectable, calculatable, displayable]`
+- Patient gibt Daten ein
+- Scores werden in Echtzeit berechnet
+- Ergebnisse werden Patienten sofort angezeigt
+- **Beispiel**: DiGA-Smartphone-App mit Live-Score-Updates
+
+##### Use Case 2: Mobile Datenerfassung → Server-Berechnung
+**Capabilities Client**: `[collectable]`
+**Capabilities Server**: `[populatable, calculatable, extractable]`
+- Mobile App erfasst nur Daten
+- Server lädt QuestionnaireResponse
+- Server berechnet Scores
+- **Beispiel**: Leichtgewichtige mobile PRO-App
+
+##### Use Case 3: Historische Daten-Neuberechnung
+**Capabilities**: `[populatable, calculatable, extractable]`
+- Keine Nutzerinteraktion
+- Lädt existierende Responses
+- Wendet neue Berechnungslogik an
+- **Beispiel**: Migration auf neue Scoring-Algorithmen oder Datenharmonisierung
+
+##### Use Case 4: Klinische Ergebnisansicht
+**Capabilities**: `[populatable, displayable]`
+- Nur-Lese-Zugriff
+- Zeigt vorhandene Daten und Scores
+- Keine Berechnung oder Eingabe
+- **Beispiel**: Arzt-Dashboard im KIS
+
+##### Use Case 5: Reine Datenerfassung
+**Capabilities**: `[collectable, extractable]`
+- Erfasst Daten ohne Berechnung
+- Extrahiert zu QuestionnaireResponse
+- Scoring erfolgt extern
+- **Beispiel**: Papier-zu-Digital-Erfassung
+
+### Der architektonische Durchbruch
+
+#### Vorausfüllungs-Workflow-Muster
+
+```plantuml
+@startuml
+!theme plain
+skinparam backgroundColor white
+skinparam rectangleBackgroundColor #F0F0F0
+skinparam rectangleBorderColor #333333
+skinparam arrowColor #333333
+
+rectangle "Collectable Fragebogen" as A
+rectangle "QuestionnaireResponse" as B
+rectangle "Calculatable Fragebogen" as C
+rectangle "Berechnete Scores" as D
+rectangle "Observation Ressourcen" as E
+
+A --> B : Patient füllt aus
+B --> C : Vorausfüllung
+C --> D : Generiert
+D --> E : Extrahiert zu
+@enduml
+```
+
+Dieses Muster ermöglicht:
+1. **Saubere Trennung**: Erfassungslogik getrennt von Berechnungslogik
+2. **Flexibilität**: Verschiedene Berechnungsstrategien ohne Einfluss auf die Erfassung
+3. **Wiederverwendbarkeit**: Dieselben erfassten Daten können mehrere Berechnungsvarianten speisen
+4. **Evolution**: Berechnungslogik kann sich unabhängig von der Erfassung entwickeln
+
+### Implementierungsbeispiel: EQ-5D-5L
+
+Der EQ-5D-5L-Fragebogen demonstriert diese Architektur perfekt:
+
+```fsh
+// Basis-Fragebogen mit Kernstruktur
+Instance: mii-qst-pro-euroqol-eq5d5l-base
+* url = ".../mii-qst-pro-euroqol-eq5d5l-base"
+
+// Displayable-Variante zur Ansicht im KIS
+Instance: mii-qst-pro-euroqol-eq5d5l-displayable
+* derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
+* extension[questionnaire-capabilities].valueCode = #displayable
+
+// Collectable-Variante für Patientendateneingabe
+Instance: mii-qst-pro-euroqol-eq5d5l-collectable
+* derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
+* extension[questionnaire-capabilities].valueCode = #collectable
+// Enthält versteckte "Fehlender Wert"-Optionen
+
+// Calculatable-Variante mit Scoring-Logik
+Instance: mii-qst-pro-euroqol-eq5d5l-calculatable
+* derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
+* extension[questionnaire-capabilities].valueCode = #calculatable
+// Enthält FHIRPath-Ausdrücke für Index-, VAS-, Profil-Scores
+```
+
+### Erweiterte Workflow-Szenarien
+
+#### Szenario 1: Mobile Erfassung → Server-Berechnung
+1. Patient nutzt mobile App mit **Collectable**-Variante
+2. QuestionnaireResponse wird an Server gesendet
+3. Server nutzt **Calculatable**-Variante, vorausgefüllt mit Antwortdaten
+4. Berechnete Scores werden als Observations gespeichert
+5. Kliniker sieht Ergebnisse über **Displayable**-Variante
+
+#### Szenario 2: Forschungsdatenerfassung → Multiple Scoring-Algorithmen
+1. Eine einzige **Collectable**-Variante über alle Studienzentren
+2. Mehrere **Calculatable**-Varianten für verschiedene Scoring-Ansätze:
+   - Standard-Scoring
+   - Populationsspezifisches Scoring
+   - Forschungsspezifische Algorithmen
+3. Alle Berechnungen nutzen dieselben Quelldaten
+
+#### Szenario 3: Historische Datenmigration
+1. Legacy-Daten als QuestionnaireResponses importiert
+2. **Calculatable**-Varianten nachträglich angewendet
+3. Standardisierte Scores für historische Vergleiche generiert
+
+### Technische Implementierungsdetails
+
+#### Capability-Extensions
+```fsh
+Extension: QuestionnaireCapabilities
+* value[x] only code
+* valueCode from QuestionnaireCapabilityValueSet (required)
+
+ValueSet: QuestionnaireCapabilityValueSet
+* #displayable "Anzeigbar"
+* #collectable "Erfassbar"  
+* #calculatable "Berechenbar"
+* #extractable "Extrahierbar"
+```
+
+#### Vorausfüllungs-Mechanismus
+Nutzung der SDC-Vorausfüllungsfähigkeiten:
+```fsh
+* extension[sdc-questionnaire-sourceQueries].valueReference = Reference(QuestionnaireResponse/erfasste-daten)
+* extension[sdc-questionnaire-launchContext].extension[name].valueId = "sourceResponse"
+* extension[sdc-questionnaire-launchContext].extension[type].valueCode = #QuestionnaireResponse
+```
+
+### Vorteile der Seperation-of-concerns Architektur
+
+1. **Wartbarkeit**: Änderungen der Berechnungslogik beeinflussen nicht die Erfassung
+2. **Versionierung**: Verschiedene Versionen von Fragebögen und Berechnungen können koexistieren
+3. **Performance**: Berechnungen können separat von der Erfassung optimiert werden
+4. **Compliance**: Verschiedene Projekte können unterschiedliche Anforderungen bzgl. Darstellung haben
+5. **Forschung**: Neue Scoring-Algorithmen können ohne Änderung der Erfassung getestet werden
+6. **Integration**: Systeme können die für ihre Fähigkeiten geeignete Variante wählen
+
+### Zukünftige Implikationen
+
+Diese Architektur legt das Fundament für:
+- **Computer Adaptive Testing (CAT)**: Dynamische Fragebögen basierend auf Antworten
+- **Multi-modale Erfassung**: Verschiedene Collectable-Varianten für Web, Mobile, Sprache
+- **Echtzeit-klinische Entscheidungsunterstützung**: Sofortige Score-Berechnung und Alerts
 
 
-Für die Scores gelten zunächst folgende Interface-Beschreibungen
-1. Mappable (Mappings für min. einen anderen Score verfügbar)
-4. DomainAlignable (Domänenzuordnungen sind verfügbar)
+### Erweiterte Capabilities
 
+#### Domain-Aligned (Domänen-Zuordnung)
+Die `domainAligned` Capability ermöglicht die Zuordnung spezifischer Instrument-Scores zu generalisierten, domänenübergreifenden Skalen. Dies ist essentiell für:
 
+**Score-Harmonisierung**: 
+- Mapping von PHQ-9 Scores → PROMIS Depression T-Scores
+- Konversion von BDI-II → PROMIS Depression Domain
+- Transformation verschiedener Angst-Skalen → gemeinsame Angst-Domäne
 
+**Vorteile**:
+- Vergleichbarkeit zwischen verschiedenen Instrumenten
+- Meta-Analysen über heterogene Datensätze
+- Longitudinale Studien mit wechselnden Instrumenten
+
+**Implementierung**:
+```fsh
+* extension[capabilities].extension[domainAligned].valueBoolean = true
+* extension[scoreMapping].valueReference = Reference(ConceptMap/phq9-to-promis-depression)
+```
+
+#### Zukünftige Capabilities (in Entwicklung)
+
+**Cut-off Values & Categories**:
+- Definition klinischer Schwellenwerte (mild, moderat, schwer)
+- Automatische Kategorisierung basierend auf Scores
+- Populationsspezifische Cut-offs (Alter, Geschlecht, Diagnose)
+
+**MID/MCID (Minimal Important Difference)**:
+- Definition klinisch relevanter Veränderungen
+- Minimal Clinically Important Difference für Therapiemonitoring
+- Reliable Change Index (RCI) für statistische Signifikanz
+- Patient-reported vs. kliniker-definierte MIDs
+
+**Normative Ranges**:
+- Populationsspezifische Referenzbereiche
+- Perzentilränge und Z-Scores
+- Alters- und geschlechtsadjustierte Normen
+
+**Change Detection**:
+- Automatische Erkennung signifikanter Veränderungen
+- Trend-Analysen über multiple Zeitpunkte
+- Alert-Generierung bei kritischen Veränderungen
+
+Diese erweiterten Capabilities werden die Integration von PROs in klinische Entscheidungsprozesse und Qualitätssicherung weiter verbessern. 
+
+### Fazit
+
+Die Trennung von Displayable-, Collectable- und Calculatable-Fragebogen-Capabilities bietet einen strukturierten Ansatz für die PRO-Implementierung. Diese Aufteilung in grundlegend verschiedene Verantwortlichkeiten, die je nach Bedarf kombiniert werden können, unterstützt die Entwicklung flexibler und wartbarer Systeme für Patient-Reported Outcomes und deren Instrumente.
+
+Dieser Architekturansatz adressiert die praktischen Herausforderungen moderner Gesundheits-IT, in der Datenerfassung, Berechnung und Präsentation häufig in unterschiedlichen Systemen, zu verschiedenen Zeitpunkten und für verschiedene Zwecke stattfinden.
