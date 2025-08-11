@@ -70,17 +70,18 @@ Das `MII_PR_PRO_Depression_T_Score` Profil implementiert die konkreten Observati
 
 **PHQ-9 → PROMIS Depression T-Score Mapping**
 
+Empirisch validierte Konversionstabellen ermöglichen die Transformation von PHQ-9 Scores (0-27) zu PROMIS Depression T-Scores. Diese Mappings basieren auf Studien und Erhebungen mit parallel administrierten Instrumenten. Das braucht man immer. 
+Equiperzentilmatching -> Darauf kann man Mappingtabellen ableiten. 
 
 
+Alternativ ist es möglich entsprechend der Item Response Theory (IRT) zu berechnen. Das ist ein statistisches Modell, dass die Beziehnung zwischen Itemantworten(PROM) und latenten Konstrukten (PRO) beschreibt. Es verwendet item-Parameter, die jedes Item beschreiben. Damit ist eine instrumentenübergreifende Auswertung auf einer gemeinsamen Skala möglich. 
+Dann ist eine Konversion direkt auf Basis der Summenscores, oder auf den Antworten der einzelnene Items basiert berechnet werden. Theoretisch ist  eine Tabelle auch möglich, die kann dabei auch fehlende Items beinhalten - diese wird aber durch die verschiendenen Kombinationen sehr groß. 
 
-Empirisch validierte Konversionstabellen ermöglichen die Transformation von PHQ-9 Scores (0-27) zu PROMIS Depression T-Scores. Diese Mappings basieren auf klinischen Studien mit parallel administrierten Instrumenten.
-Alternativ ist es möglich, die Verteilungskurven der einzelnene Items entsprechend der Item Response Theory (IRT) zu berechnen. 
-Eine Erstellung einer Mapping-Tabelle kann anschließend auf Basis des Interperzentil-Matchings der Verteilung vorgenommen werden. 
+
 Bei diesem Vorgehen sind aber mehrere Sachen zu beachten: 
 1. Beim Mapping werden. Die erreichbaren Minimal- und Maximalwerte der Skalen können dabei theroetisch über- oder unterschritten werden. 
 2. Ein Mapping kann ein Runden der Werte notwendig machen. 
 3. Gerade beim Mapping von kleineren Instrumenten auf größere Skalen findet eine starke Verzerrung durch die Konvertierung einer kontinuerilichen Verteilungsfunktion in diskrete Werte statt. Daher ist dieser Ansatz ohne weitere Validierung derzeit noch nicht für die Anwendung in medizinischen Produktivsystemen geeignet. Eine Verwendung zu Forschungszwecken ist bei Anwendung der korrekten und bei Berücksichtigung des Mappingfehlers unproblematisch. 
-4. 
 
 
  

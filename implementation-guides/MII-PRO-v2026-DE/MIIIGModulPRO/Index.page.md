@@ -4,15 +4,15 @@
 ---
 parent: 
 ---
-# Kerndatensatz Erweiterungsmodul PROs, PROMs und abegeleitete Metriken
+# Kerndatensatz Erweiterungsmodul PROs, PROMs und abgeleitete Metriken
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls Onkologie der Medizininformatik-Initiative.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls PROs, PROMs und abgeleitete Metriken der Medizininformatik-Initiative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 31.03.2025 |
+| Datum   | 31.07.2025 |
 | Version | 2025.0.4        |
 | Status  | Active       |
 | Realm   | DE          | 
