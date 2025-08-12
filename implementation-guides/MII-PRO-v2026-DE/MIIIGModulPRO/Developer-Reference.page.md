@@ -1,3 +1,6 @@
+---
+topic: Developer-Reference
+---
 ## Developer Reference
 
 Diese Referenz bietet eine kompakte Übersicht über alle technischen Aspekte der MII PRO Implementierung. Sie dient als schnelle Nachschlageressource für Entwickler, die PRO-Instrumente implementieren oder in bestehende Systeme integrieren möchten.
@@ -164,7 +167,7 @@ MII-eigene CodeSystems werden verwendet, wenn internationale Terminologien unzur
 
 #### LOINC-Integration
 
-Wo möglich werden LOINC-Codes verwendet, insbesondere für Questionnaire-Items und Score-Observations. Bei fehlenden Scoring-Gewichten in LOINC Answer Lists wird auf MII-kontrollierte ValueSets ausgewichen.
+Wo möglich werden LOINC-Codes verwendet, insbesondere für Questionnaire-Items und Score-Observations. Antwortspezifische Scorewerte sind in der LOINC-Distributionen und auf der Webseite hitnerlegt, der LOINC-HAPI-Terminologieservice gibt jedoch nur Antwortlisten ohne Scores aus. Bei fehlenden Scoring-Gewichten in LOINC Answer Lists wird auf MII-kontrollierte ValueSets ausgewichen. ACHTUNG: Die derzeitige Validierungs-Infrastruktur erkennt LOINC-AnswerCodes nicht als LOINC-Codes (LA-XX) und wirft dabei Fehler. 
 
 ### Fehlerbehandlung
 
@@ -172,17 +175,8 @@ Robuste Implementierungen sollten verschiedene Fehlerszenarien berücksichtigen.
 
 **Unvollständige Responses**: Scores sollten nur berechnet werden, wenn alle erforderlichen Items beantwortet sind. Optional kann eine Imputation-Strategie implementiert werden.
 
-**Ungültige Werte**: Validierung sollte sicherstellen, dass nur erlaubte Werte akzeptiert werden. Bei ordinalen Werten muss der Bereich (z.B., 0-3) strikt eingehalten werden.
+**Ungültige Werte**: Validierung sollte sicherstellen, dass nur erlaubte Werte akzeptiert werden. Bei ordinalen Werten muss der Bereich (z.B., 0-3) strikt eingehalten werden. 
 
-**Fehlende Capabilities**: Systeme sollten graceful degradieren, wenn bestimmte Capabilities nicht unterstützt werden. Beispielsweise kann ein System ohne calculatable-Support die Antworten trotzdem speichern.
-
-### Performance-Optimierung
-
-Für produktive Implementierungen sollten Performance-Aspekte berücksichtigt werden.
-
-**Caching**: ObservationDefinitions und Questionnaire-Definitionen sollten gecacht werden, da sie sich selten ändern.
-
-**Batch-Processing**: Bei der Verarbeitung vieler Responses sollte Batch-Processing verwendet werden, um Roundtrips zu minimieren.
 
 **Lazy Calculation**: Scores sollten nur berechnet werden, wenn sie benötigt werden, nicht präventiv bei jeder Response-Speicherung.
 
@@ -190,11 +184,11 @@ Für produktive Implementierungen sollten Performance-Aspekte berücksichtigt we
 
 Implementierungen sollten gegen die bereitgestellten Beispiel-Ressourcen getestet werden. Jedes implementierte Instrument hat mindestens eine Beispiel-QuestionnaireResponse und die entsprechenden extrahierten Observations.
 
-**Unit Tests** sollten FHIRPath-Expressions isoliert testen. **Integrationstests** sollten den kompletten Workflow von Questionnaire bis Observation abdecken. **Validierung** gegen die FHIR-Profile stellt die Konformität sicher.
+**Unit Tests** sollten FHIRPath-Expressions isoliert testen. **Integrationstests** sollten den kompletten Workflow von Questionnaire bis Observation abdecken. **Validierung** gegen die FHIR-Profile und die bereitgestellten Questionnaire-Definitionen stellt die Konformität sicher.
 
 ### Versionierung
 
-Das MII PRO Modul folgt semantischer Versionierung (MAJOR.MINOR.PATCH). Breaking Changes führen zu Major-Version-Updates. Neue Instrumente oder Capabilities sind Minor-Updates. Bugfixes und Dokumentationsänderungen sind Patch-Updates.
+Das MII PRO Modul folgt kalendarischer Versionierung (YEAR.MINOR.PATCH). Breaking Changes führen zu Minor-Version-Updates. Neue Instrumente oder Capabilities sind Minor-Updates. Bugfixes und Dokumentationsänderungen sind Patch-Updates.
 
 Die aktuelle Version 2025.0.4 befindet sich im Ballot-Status. Produktive Implementierungen sollten sich auf die stabilen Komponenten (PHQ-9, EQ-5D-5L) konzentrieren.
 
@@ -208,4 +202,4 @@ Referenz-Implementierungen sind für folgende Komponenten verfügbar:
 
 ### Support und Community
 
-Fragen zur Implementierung können im FHIR-Chat unter chat.fhir.org im Stream 'german/mi-initiative' gestellt werden. Issues und Verbesserungsvorschläge sollten im GitHub-Repository eingereicht werden. Die technische Dokumentation wird kontinuierlich aktualisiert basierend auf Implementierungserfahrungen.
+Fragen zur Implementierung können im FHIR-Chat unter chat.fhir.org im Stream 'german/mi-initiative' oder in MII-iternen Zulip gestellt werden. Issues und Verbesserungsvorschläge sollten im GitHub-Repository eingereicht werden. Die technische Dokumentation wird kontinuierlich aktualisiert basierend auf Implementierungserfahrungen.

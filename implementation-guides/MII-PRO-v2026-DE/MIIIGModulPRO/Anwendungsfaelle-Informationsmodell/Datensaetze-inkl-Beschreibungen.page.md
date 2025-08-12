@@ -1,3 +1,6 @@
+---
+topic: Datensaetze-inkl-Beschreibungen
+---
 ## Datensätze inkl. Beschreibungen
 
 Das MII PRO Modul definiert ein logisches Datenmodell für die standardisierte Erfassung und Verarbeitung von Patient-Reported Outcomes. Dieses Informationsmodell bildet die konzeptuelle Grundlage für alle FHIR-Profile und beschreibt die Beziehungen zwischen den verschiedenen Komponenten des PRO-Workflows.

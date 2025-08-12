@@ -1,3 +1,6 @@
+---
+topic: Workflow-Patterns
+---
 ## Workflow-Patterns und Implementierungsansätze
 
 ### Standard MII PRO Workflow
