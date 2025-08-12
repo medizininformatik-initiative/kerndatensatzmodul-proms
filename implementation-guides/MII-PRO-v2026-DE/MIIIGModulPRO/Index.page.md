@@ -4,11 +4,39 @@
 ---
 parent: 
 ---
-# Kerndatensatz Erweiterungsmodul PROs, PROMs und abgeleitete Metriken
+# Kerndatensatz Erweiterungsmodul PROs
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls PROs, PROMs und abgeleitete Metriken der Medizininformatik-Initiative.
-Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
 
+## Zielsetzung
+
+Das MII PRO-Modul standardisiert die Erfassung und Auswertung patientenberichteter Gesundheitsdaten für das deutsche Gesundheitswesen. Es ermöglicht die standortübergreifende Vergleichbarkeit von PRO-Daten durch einheitliche FHIR-basierte Implementierungen.
+
+## Umfang der Spezifikation
+
+### Produktionsreife Instrumente
+- **PHQ-9**: Depression-Screening mit automatischer Score-Berechnung
+- **EQ-5D-5L**: Lebensqualität mit Index-, VAS- und Profil-Scores
+
+### Technische Vorschau
+- **PROMIS-29**: Multi-Domain Gesundheitsstatus (7 Domänen)
+- **EORTC QLQ-C30**: Onkologische Lebensqualität
+- **BDI-II**: Beck Depression Inventory (Lizenz-Referenz)
+
+### Kernfunktionalität
+- **SDC-basierte Fragebögen** mit erweiterten Rendering- und Berechnungsfähigkeiten
+- **Capability-Architektur** für flexible Nutzungsszenarien
+- **Domain-basiertes Scoring** zur Harmonisierung verschiedener Instrumente
+- **MII-kontrollierte Terminologie** für zuverlässige Score-Berechnungen
+
+## Technische Grundlagen
+
+Die Implementierung basiert auf:
+- FHIR R4 (4.0.1)
+- SDC (Structured Data Capture) 4.0.0-ballot
+- HL7 Terminology 6.4.0
+
+⚠️ **Hinweis**: Einige verwendete Spezifikationselemente befinden sich noch im Ballotierungsprozess.
 
 | Veröffentlichung   |   |
 |---------|---|
@@ -22,25 +50,25 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 
 
 ## Impressum
-Dieser Leitfaden ist im Rahmen der Medizininformatik Initative erstellt wurden und unterliegt per Governance Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
+Dieser Leitfaden ist im Rahmen der Medizininformatik Initiative erstellt worden und unterliegt per Governance Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
 
 ## Ansprechpartner
-* Thomas Debertshäuser Berlin Institute of Health (Charité) 
-* Mathias Rose (Charité)
+* Thomas Debertshäuser, Berlin Institute of Health (Charité) 
+* Mathias Rose, Charité - Universitätsmedizin Berlin
 * Fabian Praßer, Berlin Institute of Health (Charité) 
 * Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
 * Franziska Klepka, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
 
 Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](https://chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
 
-Anmerkungen und Kritik wird in Form von 'Issues' im [GitHub-Projekt](https://github.com/medizininformatik-initiative/kerndatensatzmodul-prom/issues) stets gern entgegengenommen: .
+Anmerkungen und Kritik werden in Form von Issues im [GitHub-Projekt](https://github.com/medizininformatik-initiative/kerndatensatzmodul-prom/issues) gern entgegengenommen.
 
 ## Autoren (in alphabetischer Reihenfolge)
 * Thomas Debertshäuser
-* Marcel Susky
-* Thimo Hölter
-* Christian Zilske
 * Felix Fischer
+* Thimo Hölter
+* Marcel Susky
+* Christian Zilske
 
 
 ## Copyright-Hinweis, Nutzungshinweise

@@ -573,7 +573,7 @@
     "fshType": "Extension",
     "fshFile": "profiles\\mii-ex-pro-questionnaire-capabilities.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-mii-ex-pro-score-score-health-correlation.json",
@@ -582,6 +582,14 @@
     "fshFile": "profiles\\mii-ex-pro-score-score-health-correlation.fsh",
     "startLine": 1,
     "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-mii-lm-pro.json",
+    "fshName": "MII_LM_PRO",
+    "fshType": "Logical",
+    "fshFile": "logical-model\\mii-lm-pro.fsh",
+    "startLine": 12,
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-mii-pr-pro-depression-t-score.json",

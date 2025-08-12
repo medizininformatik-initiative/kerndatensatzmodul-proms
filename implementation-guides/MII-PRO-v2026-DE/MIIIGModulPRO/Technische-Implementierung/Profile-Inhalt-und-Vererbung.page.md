@@ -145,17 +145,26 @@ Instance: mii-qst-pro-euroqol-eq5d5l-calculatable
 ### Technische Implementierungsdetails
 
 #### Capability-Extensions
-```fsh
-Extension: QuestionnaireCapabilities
-* value[x] only code
-* valueCode from QuestionnaireCapabilityValueSet (required)
+Die Questionnaire-Capabilities werden als separate boolesche Sub-Extensions implementiert:
 
-ValueSet: QuestionnaireCapabilityValueSet
-* #displayable "Anzeigbar"
-* #collectable "Erfassbar"  
-* #calculatable "Berechenbar"
-* #extractable "Extrahierbar"
+```fsh
+Extension: MII_PR_PRO_Questionnaire_Capabilities
+* extension contains 
+    displayable 0..1 MS and
+    collectable 0..1 MS and
+    populatable 0..1 MS and
+    extractable 0..1 MS and
+    calculatable 0..1 MS and
+    domainAligned 0..1 MS
+* extension[displayable].value[x] only boolean
+* extension[collectable].value[x] only boolean
+* extension[populatable].value[x] only boolean
+* extension[extractable].value[x] only boolean
+* extension[calculatable].value[x] only boolean
+* extension[domainAligned].value[x] only boolean
 ```
+
+Diese boolesche Struktur ermöglicht flexible Capability-Kombinationen, da mehrere Capabilities gleichzeitig aktiv sein können.
 
 #### Vorausfüllungs-Mechanismus
 Nutzung der SDC-Vorausfüllungsfähigkeiten:
@@ -174,50 +183,6 @@ Nutzung der SDC-Vorausfüllungsfähigkeiten:
 5. **Forschung**: Neue Scoring-Algorithmen können ohne Änderung der Erfassung getestet werden
 6. **Integration**: Systeme können die für ihre Fähigkeiten geeignete Variante wählen
 
-### Zukünftige Implikationen
-
-Diese Architektur legt das Fundament für:
-- **Computer Adaptive Testing (CAT)**: Dynamische Fragebögen basierend auf Antworten
-- **Multi-modale Erfassung**: Verschiedene Collectable-Varianten für Web, Mobile, Sprache
-- **Echtzeit-klinische Entscheidungsunterstützung**: Sofortige Score-Berechnung und Alerts
-
-
-### Erweiterte Capabilities
-
-#### Domain-Aligned (Domänen-Zuordnung)
-Die `domainAligned` Capability ermöglicht die Zuordnung spezifischer Instrument-Scores zu generalisierten, domänenübergreifenden Skalen. Dies ist essentiell für:
-
-**Score-Harmonisierung**: 
-- Mapping von PHQ-9 Scores → PROMIS Depression T-Scores
-- Konversion von BDI-II → PROMIS Depression Domain
-- Transformation verschiedener Angst-Skalen → gemeinsame Angst-Domäne
-
-**Vorteile**:
-- Vergleichbarkeit zwischen verschiedenen Instrumenten
-- Meta-Analysen über heterogene Datensätze
-- Longitudinale Studien mit wechselnden Instrumenten
-
-**Implementierung**:
-```fsh
-* extension[capabilities].extension[domainAligned].valueBoolean = true
-* extension[scoreMapping].valueReference = Reference(ConceptMap/phq9-to-promis-depression)
-```
-
-#### Zukünftige Capabilities (in Entwicklung)
-
-**Cut-off Values & Categories**:
-- Definition klinischer Schwellenwerte (mild, moderat, schwer)
-- Automatische Kategorisierung basierend auf Scores
-- Populationsspezifische Cut-offs (Alter, Geschlecht, Diagnose)
-
-**MID/MCID (Minimal Important Difference)**:
-- Definition klinisch relevanter Veränderungen
-- Minimal Clinically Important Difference für Therapiemonitoring
-- Reliable Change Index (RCI) für statistische Signifikanz
-- Patient-reported vs. kliniker-definierte MIDs
-
-**Normative Ranges**:
-- Populationsspezifische Referenzbereiche
 - Perzentilränge und Z-Scores
 - Alters- und geschlechtsadjustierte Normen
 

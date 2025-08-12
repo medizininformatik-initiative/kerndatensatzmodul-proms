@@ -65,9 +65,8 @@ function generateItemsTable(items, baseUrl, questionnaireId) {
     
     // Root row
     html += `<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">`;
-    html += `<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">`;
-    html += `<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>`;
-    html += `<img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> ${questionnaireId}</td>`;
+    html += `<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap;" class="hierarchy">`;
+    html += `<span title="Questionnaire Root">📋</span> ${questionnaireId}</td>`;
     html += `<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">${questionnaireId}</td>`;
     html += `<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>`;
     html += `<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td>`;
@@ -81,9 +80,15 @@ function generateItemsTable(items, baseUrl, questionnaireId) {
     
     html += `</table>`;
     
-    // Legend
-    html += `<br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format">`;
-    html += `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a>`;
+    // Legend with text instead of image
+    html += `<br/><p style="font-size: 0.9em; color: #666;">`;
+    html += `<strong>Legend:</strong> `;
+    html += `📋 = Questionnaire Root, `;
+    html += `☑ = Choice Question, `;
+    html += `📄 = Display Text, `;
+    html += `# = Numeric Value, `;
+    html += `📝 = Text Input`;
+    html += `</p>`;
     
     return html;
 }
@@ -98,31 +103,36 @@ function generateItemRow(item, index, level, totalSiblings) {
     // LinkID column with hierarchy indicators
     html += `<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: ${bgColor}; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap;" id="item.${item.linkId}" class="hierarchy">`;
     
-    // Add spacing and hierarchy lines
+    // Add spacing and hierarchy lines using unicode characters
     for (let i = 0; i < level; i++) {
-        html += `<img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>`;
+        html += `<span style="padding-left: 1em;"></span>`;
     }
     
     if (isLast) {
-        html += `<img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>`;
+        html += `<span style="color: #999;">└─</span> `;
     } else {
-        html += `<img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>`;
+        html += `<span style="color: #999;">├─</span> `;
     }
     
-    // Item type icon
+    // Item type indicator using unicode/emoji
     const iconMap = {
-        'group': 'icon-q-group.png',
-        'choice': 'icon-q-coding.png',
-        'display': 'icon-q-string.png',
-        'decimal': 'icon-q-quantity.png',
-        'integer': 'icon-q-quantity.png',
-        'quantity': 'icon-q-quantity.png',
-        'string': 'icon-q-string.png',
-        'text': 'icon-q-string.png'
+        'group': '📁',
+        'choice': '☑',
+        'display': '📄',
+        'decimal': '#',
+        'integer': '#',
+        'quantity': '#',
+        'string': '📝',
+        'text': '📝',
+        'boolean': '☐',
+        'date': '📅',
+        'dateTime': '📅',
+        'time': '🕐',
+        'url': '🔗'
     };
     
-    const icon = iconMap[item.type] || 'icon-q-string.png';
-    html += `<img src="${icon}" alt="." style="background-color: ${bgColor}; background-color: inherit" title="${item.type}" class="hierarchy"/> ${item.linkId}</td>`;
+    const icon = iconMap[item.type] || '•';
+    html += `<span title="${item.type}">${icon}</span> ${item.linkId}</td>`;
     
     // Text column
     const text = getDisplayText(item);

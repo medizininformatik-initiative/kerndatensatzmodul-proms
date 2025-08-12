@@ -82,6 +82,33 @@
         ]
       },
       {
+        "id": "Extension.extension:populatable",
+        "path": "Extension.extension",
+        "sliceName": "populatable",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:populatable.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:populatable.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "populatable"
+      },
+      {
+        "id": "Extension.extension:populatable.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
         "id": "Extension.extension:extractable",
         "path": "Extension.extension",
         "sliceName": "extractable",

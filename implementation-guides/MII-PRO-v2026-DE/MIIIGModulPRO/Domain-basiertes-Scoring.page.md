@@ -1,164 +1,129 @@
 ## {{page-title}}
 
-### Konzept des Domain-basierten Scorings
+### Warum Domain-basiertes Scoring?
 
-Domain-basiertes Scoring ermöglicht die konsistente Messung und Vergleichbarkeit von Gesundheitsoutcomes über verschiedene Messinstrumente hinweg. Anstatt isolierte, instrumentenspezifische Scores zu verwenden, werden Messungen auf übergeordnete Gesundheitsdomänen standardisiert.
+Die Harmonisierung von Patient-Reported Outcomes über verschiedene Messinstrumente ist eine zentrale Herausforderung der modernen Versorgungsforschung. Domain-basiertes Scoring löst das Problem der Fragmentierung durch die Abbildung verschiedener Instrumente auf gemeinsame Gesundheitsdomänen.
 
-#### Grundprinzip
+### Kernkonzept
 
-**Instrumentenunabhängige Metriken**: Verschiedene Fragebögen können dieselbe Gesundheitsdomäne messen (z.B. Depression durch PHQ-9, BDI-II, PROMIS Depression). Domain-basiertes Scoring ermöglicht die Harmonisierung dieser Messungen auf eine gemeinsame Metrik.
+#### Von Instrumenten zu Domänen
 
-**Standardisierte T-Score Metriken**: Alle Domänen-Scores werden auf T-Score Skalen (Mean=50, SD=10) standardisiert, wodurch direkte Vergleiche zwischen verschiedenen Instrumenten und Populationen möglich werden.
+Verschiedene Fragebögen messen oft dasselbe Konstrukt:
+- **Depression**: PHQ-9, BDI-II, PROMIS Depression, HADS-D
+- **Angst**: GAD-7, PROMIS Anxiety, HADS-A
+- **Körperliche Funktion**: PROMIS PF, SF-36 PF, HAQ
 
-**Longitudinale Vergleichbarkeit**: Patienten können über die Zeit mit verschiedenen Instrumenten erfasst werden, ohne Kontinuität der Messung zu verlieren.
+Domain-basiertes Scoring ermöglicht die Vergleichbarkeit durch Transformation auf eine gemeinsame Metrik (T-Scores mit Mean=50, SD=10).
 
-#### Implementierte Gesundheitsdomänen
+### Implementierung: Depression-Domäne
 
-**Depression Domain**
+Die Depression-Domäne demonstriert als erste vollständig implementierte Domäne den Ansatz:
 
-Die Depression-Domäne ist die erste vollständig implementierte Domain im MII PRO Modul und dient als Referenzmodell für weitere Domänen.
-
-**Implementierte Instrumente**:
-- **PROMIS Depression SF 4a**: IRT-basierte T-Scores (32-80 Bereich)
-- **PHQ-9**: Raw Scores (0-27) mit Mapping zu Depression T-Scores
-- **BDI-II**: Raw Scores (0-63) mit Mapping zu Depression T-Scores
-
-**Gemeinsame ObservationDefinition**: `mii-obsdef-pro-depression-t-score`
-- **LOINC-Code**: 77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
-- **Referenzbereiche**: Europäische EHIS Wave 3 Population (n=287,530)
-- **Geschlechts- und altersspezifische Normen**: Deutsche und europäische Subpopulationen
-
-#### Technische FHIR-Implementierung
-
-**ObservationDefinition als Domain-Anker**
-
-Die ObservationDefinition fungiert als zentraler Anker für die Depression-Domäne und definiert:
-- Einheitliche Kodierung und Terminologie
-- Populationsspezifische Referenzbereiche
-- Klinische Interpretationsrichtlinien
-- Qualitätsmetriken und Validierungsregeln
+#### FHIR-Architektur
 
 ```fhir
-Instance: mii-obsdef-pro-depression-t-score
-InstanceOf: mii-pr-pro-score-blueprint
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
-* quantitativeDetails.unit = $UCUM#{score}
-* qualifiedInterval[+].category = #reference
-* qualifiedInterval[=].context.text = "German general population - EHIS wave 3"
+ObservationDefinition: mii-obsdef-pro-depression-t-score
+├── Code: LOINC#77861-3 "PROMIS Depression T-score"
+├── Referenzbereiche: EHIS Wave 3 (n=287,530)
+└── Populationsnormen: DE, EU, altersstratifiziert
+
+Observation: Depression T-Score Instance
+├── instantiates: ObservationDefinition
+├── derivedFrom: QuestionnaireResponse oder Raw Score
+└── method: IRT-Berechnung oder Cross-Walking
 ```
 
-**Score-Instance Profile als Implementation Layer**
+#### Mapping-Strategien
 
-Das `MII_PR_PRO_Depression_T_Score` Profil implementiert die konkreten Observation-Instanzen und referenziert die ObservationDefinition über das instantiates Element (R5 backport extension).
+**1. Item Response Theory (IRT)**
+- Direkte Berechnung aus Item-Antworten
+- Präzise, aber aufwendig zu implementieren
+- Ideal für PROMIS-Instrumente
 
-**Instrument-spezifische Ableitungsstrategien**
+**2. Cross-Walking Tabellen**
+- Empirisch validierte Konversionstabellen
+- PHQ-9 (0-27) → T-Score (40-85)
+- BDI-II (0-63) → T-Score (40-85)
+- Basierend auf Equiperzentil-Matching
 
-**Direkte IRT-Berechnung (PROMIS)**:
-```fhir
-* derivedFrom only Reference(QuestionnaireResponse)
-* method = IRT-based T-score calculation
+#### Mapping-Limitationen
+
+Bei der Anwendung von Cross-Walking sind folgende Einschränkungen zu beachten:
+
+1. **Bereichsüberschreitungen**: Extreme Werte können theoretische Grenzen überschreiten
+2. **Diskretisierung**: Kontinuierliche Verteilungen werden auf diskrete Werte abgebildet
+3. **Präzisionsverlust**: Besonders bei kurzen Instrumenten (z.B. 4-Item → Full Domain)
+4. **Validierungsbedarf**: Mappings bedürfen populationsspezifischer Validierung
+
+**Empfehlung**: Für klinische Entscheidungen sollten Mapping-Konfidenzintervalle berücksichtigt werden. Für Forschungszwecke ist die Verwendung bei transparenter Dokumentation des Mapping-Fehlers unproblematisch.
+
+### Praktische Anwendung
+
+#### Use Case 1: Longitudinales Monitoring
+Patient startet mit PHQ-9 in Hausarztpraxis, wechselt zu PROMIS Depression in Klinik:
+- Beide Scores werden auf Depression T-Score gemappt
+- Kontinuierliche Verlaufskurve trotz Instrumentenwechsel
+- Reliable Change Index über Instrumente hinweg berechenbar
+
+#### Use Case 2: Multi-Site Studien
+Verschiedene Zentren nutzen unterschiedliche Instrumente:
+- Zentrum A: BDI-II
+- Zentrum B: PHQ-9
+- Zentrum C: PROMIS Depression
+→ Alle Daten vergleichbar durch Domain T-Scores
+
+#### Use Case 3: Qualitätssicherung
+Benchmarking zwischen Einrichtungen:
+- Einheitliche Outcome-Metriken trotz verschiedener Assessment-Strategien
+- Populationsadjustierte Vergleiche möglich
+- Faire Qualitätsindikatoren
+
+### Technische Implementierung
+
+#### ConceptMaps für Mapping
+```fsh
+Instance: PHQ9-to-PROMIS-Depression
+InstanceOf: ConceptMap
+* sourceCanonical = "Questionnaire/phq-9"
+* targetCanonical = "ObservationDefinition/depression-t-score"
+* group.element[+]
+  * code = #score-range-0-4
+  * target.code = #t-score-40-45
+  * target.equivalence = #equivalent
 ```
 
-**Cross-Walking Mapping (PHQ-9, BDI-II)**:
-```fhir
-* derivedFrom[0] only Reference(QuestionnaireResponse)  // Ursprüngliche Questionnaire Response
-* derivedFrom[1] only Reference(Observation)           // Instrument-spezifischer Raw Score
-* method = Cross-walking table mapping
+#### CQL für komplexe Berechnungen (ab 2026)
+```cql
+define "Depression T-Score from PHQ-9":
+  case
+    when PHQ9Score between 0 and 4 then 42.5
+    when PHQ9Score between 5 and 9 then 50.0
+    when PHQ9Score between 10 and 14 then 60.0
+    when PHQ9Score between 15 and 19 then 70.0
+    when PHQ9Score >= 20 then 77.5
+    else null
+  end
 ```
 
-#### Cross-Instrument Mapping Strategien
+### Zukünftige Erweiterungen
 
-**PHQ-9 → PROMIS Depression T-Score Mapping**
+#### Geplante Domänen (2026-2027)
+- **Angst-Domäne**: GAD-7, PROMIS Anxiety, HADS-A
+- **Schmerz-Domäne**: BPI, PROMIS Pain, NRS
+- **Körperliche Funktion**: PROMIS PF, HAQ, WHODAS
 
-Empirisch validierte Konversionstabellen ermöglichen die Transformation von PHQ-9 Scores (0-27) zu PROMIS Depression T-Scores. Diese Mappings basieren auf Studien und Erhebungen mit parallel administrierten Instrumenten. Das braucht man immer. 
-Equiperzentilmatching -> Darauf kann man Mappingtabellen ableiten. 
+#### Erweiterte Funktionalität
+- **Composite Scores**: Gewichtete Aggregation mehrerer Instrumente
+- **Adaptive Schwellenwerte**: Populationsspezifische Cut-offs
+- **Measurement Error Propagation**: Unsicherheitsquantifizierung
 
+### Vorteile für die Praxis
 
-Alternativ ist es möglich entsprechend der Item Response Theory (IRT) zu berechnen. Das ist ein statistisches Modell, dass die Beziehnung zwischen Itemantworten(PROM) und latenten Konstrukten (PRO) beschreibt. Es verwendet item-Parameter, die jedes Item beschreiben. Damit ist eine instrumentenübergreifende Auswertung auf einer gemeinsamen Skala möglich. 
-Dann ist eine Konversion direkt auf Basis der Summenscores, oder auf den Antworten der einzelnene Items basiert berechnet werden. Theoretisch ist  eine Tabelle auch möglich, die kann dabei auch fehlende Items beinhalten - diese wird aber durch die verschiendenen Kombinationen sehr groß. 
+1. **Kontinuität**: Instrumentenwechsel ohne Datenverlust
+2. **Vergleichbarkeit**: Einrichtungsübergreifende Benchmarks
+3. **Flexibilität**: Freie Instrumentenwahl bei erhaltener Vergleichbarkeit
+4. **Skalierbarkeit**: Neue Instrumente integrierbar ohne Systemumbau
 
+### Zusammenfassung
 
-Bei diesem Vorgehen sind aber mehrere Sachen zu beachten: 
-1. Beim Mapping werden. Die erreichbaren Minimal- und Maximalwerte der Skalen können dabei theroetisch über- oder unterschritten werden. 
-2. Ein Mapping kann ein Runden der Werte notwendig machen. 
-3. Gerade beim Mapping von kleineren Instrumenten auf größere Skalen findet eine starke Verzerrung durch die Konvertierung einer kontinuerilichen Verteilungsfunktion in diskrete Werte statt. Daher ist dieser Ansatz ohne weitere Validierung derzeit noch nicht für die Anwendung in medizinischen Produktivsystemen geeignet. Eine Verwendung zu Forschungszwecken ist bei Anwendung der korrekten und bei Berücksichtigung des Mappingfehlers unproblematisch. 
-
-
- 
-
-
-**Beispiel-Mapping**:
-```
-PHQ-9 Score  →  PROMIS T-Score
-0-4          →  40-45 (minimal)
-5-9          →  45-55 (mild)  
-10-14        →  55-65 (moderate)
-15-19        →  65-75 (moderately severe)
-20-27        →  75-85 (severe)
-```
-
-**BDI-II → PROMIS Depression T-Score Mapping**
-
-Ähnliche Konversionstabellen für BDI-II Scores (0-63) ermöglichen die Integration historischer BDI-II Daten in die standardisierte Depression T-Score Metrik.
-
-**Mapping-Validierung**: Alle Cross-Walking Tabellen werden durch empirische Korrelationsstudien validiert und regelmäßig gegen neue Populationsdaten adjustiert.
-
-#### Qualitätssicherung und Validierung
-
-**Multi-Instrument Konsistenzprüfung**
-
-Bei Patienten mit mehreren Depression-Assessments können Cross-Instrument Konsistenzprüfungen durchgeführt werden:
-- Vergleich von T-Scores aus verschiedenen Instrumenten
-- Identifikation von Ausreißern oder inkonsistenten Messungen
-- Longitudinale Plausibilitätschecks
-
-**Populationsspezifische Validierung**
-
-Domain-basierte Scores werden kontinuierlich gegen populationsspezifische Normdaten validiert:
-- Deutsche vs. europäische vs. US-Referenzbereiche
-- Alters- und geschlechtsspezifische Adjustierungen
-- Klinische vs. Allgemeinbevölkerung Normen
-
-#### Erweiterte Anwendungen
-
-**Composite Domain Scores**
-
-Zukünftige Implementierungen können Composite Scores über mehrere Instrumente hinweg berechnen:
-- Gewichtete Mittelwerte bei mehrfachen Assessments
-- Konfidenzintervalle für aggregierte Messungen
-- Measurement Error Propagation über Instrument-Grenzen
-
-**Longitudinale Domain-Tracking**
-
-Domain-basiertes Scoring ermöglicht nahtloses longitudinales Tracking auch bei wechselnden Instrumenten:
-- Kontinuierliche T-Score Zeitreihen über verschiedene Assessments
-- Reliable Change Index Berechnungen domain-übergreifend
-- Therapie-Response Monitoring unabhängig vom verwendeten Instrument
-
-#### Integration in klinische Workflows
-
-**Klinische Entscheidungsunterstützung**
-
-Domain-basierte T-Scores ermöglichen standardisierte klinische Entscheidungsregeln:
-- Einheitliche Cut-off Werte für Behandlungsindikationen
-- Vergleichbare Severity-Kategorisierung über Instrumente hinweg
-- Integrierte Clinical Decision Support Systems
-
-**Qualitätsindikatoren**
-
-Domain-Scores fungieren als standardisierte Qualitätsindikatoren für Versorgungsqualität:
-- Behandlungsoutcome-Monitoring auf Populationsebene
-- Benchmarking zwischen Einrichtungen mit verschiedenen Assessment-Strategien
-- Longitudinale Trend-Analysen unabhängig von Instrumentenwechseln
-
-#### Strategische Vorteile
-
-**Interoperabilität**: Domain-basiertes Scoring maximiert Interoperabilität zwischen Einrichtungen mit verschiedenen PRO-Strategien.
-
-**Skalierbarkeit**: Das Domain-Konzept lässt sich auf weitere Gesundheitsbereiche (Angst, Schmerz, körperliche Funktion) übertragen.
-
-**Zukunftssicherheit**: Neue Instrumente können in bestehende Domain-Strukturen integriert werden, ohne historische Datenkompatibilität zu verlieren.
-
-**Forschungsintegration**: Standardisierte Domain-Metriken erleichtern Multi-Site-Studien und Meta-Analysen über verschiedene Assessment-Strategien hinweg.
-
-Diese umfassende Domain-basierte Scoring-Strategie positioniert das MII PRO Modul als innovativen Ansatz für harmonisierte Outcome-Messung im deutschen Gesundheitswesen und bietet eine solide Foundation für zukünftige Erweiterungen und internationale Kooperationen.
+Domain-basiertes Scoring ist essentiell für die Harmonisierung von PRO-Daten im deutschen Gesundheitswesen. Die Depression-Domäne zeigt die praktische Umsetzbarkeit und bildet die Grundlage für weitere Domänen. Trotz methodischer Herausforderungen beim Cross-Walking überwiegen die Vorteile für Versorgung und Forschung deutlich.

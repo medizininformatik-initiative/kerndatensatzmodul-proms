@@ -450,6 +450,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-lm-pro"
+        },
+        "name": "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
+        "description": "Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-depression-t-score"
         },
         "name": "MII ObsDef PRO Depression Domain T-Score",

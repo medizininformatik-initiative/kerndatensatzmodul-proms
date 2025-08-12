@@ -1,0 +1,87 @@
+## EQ-5D-5L (EuroQol 5-Dimension 5-Level)
+
+### Architektonisches Muster: Varianten-Architektur
+
+Der EQ-5D-5L demonstriert die Trennung von Capabilities in spezialisierte Varianten. Während der PHQ-9 alle Capabilities in einer einzigen Ressource vereint, implementiert der EQ-5D-5L verschiedene Anwendungsfälle durch separate, spezialisierte Questionnaire-Instanzen. Dieser Ansatz ermöglicht optimierte Ressourcen für spezifische Use Cases und vermeidet die Überladung einzelner Questionnaire-Definitionen mit Funktionalität, die nicht in allen Szenarien benötigt wird.
+
+### Klinischer Kontext
+
+Der EQ-5D-5L ist ein generisches Instrument zur Messung der gesundheitsbezogenen Lebensqualität. Das Instrument besteht aus fünf Dimensionen, die jeweils zentrale Aspekte der Gesundheit erfassen: Mobilität, Selbstversorgung, alltägliche Tätigkeiten, Schmerzen/Beschwerden sowie Angst/Depression. Jede Dimension wird auf einer fünfstufigen Skala von "keine Probleme" bis "extreme Probleme" bewertet. Zusätzlich enthält das Instrument eine visuelle Analogskala (VAS), auf der Patienten ihren aktuellen Gesundheitszustand von 0 (schlechtester vorstellbarer Gesundheitszustand) bis 100 (bester vorstellbarer Gesundheitszustand) einschätzen.
+
+Die Auswertung des EQ-5D-5L erfolgt auf drei Ebenen. Der EQ-5D-5L Index ist ein gewichteter Utility-Score, der auf populationsspezifischen Wertesets basiert und Werte zwischen -0.661 und 1.0 annehmen kann. Das EQ-5D-5L Profil ist ein fünfstelliger Code, der die Antworten direkt repräsentiert (beispielsweise "11223" für keine Probleme in den ersten beiden Dimensionen und leichte bis moderate Probleme in den weiteren). Die EQ VAS stellt die direkte Selbsteinschätzung des Gesundheitszustands dar.
+
+### FHIR-Implementierung durch Varianten
+
+Die Implementierung des EQ-5D-5L folgt einem modularen Ansatz mit einer Basis-Definition und mehreren abgeleiteten Varianten. Die Basis-Definition mit der Canonical URL `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l` enthält die gemeinsame Struktur aller EQ-5D-5L Varianten ohne spezifische Capabilities. Von dieser Basis leiten sich spezialisierte Varianten ab, die jeweils für bestimmte Anwendungsfälle optimiert sind.
+
+#### Minimal-Variante (Referenz-Implementation)
+
+Die Minimal-Variante dient als reine Strukturdefinition ohne aktive Capabilities. Sie wird primär als Referenz für Metadaten und Strukturinformationen verwendet und eignet sich für Systeme, die lediglich die Struktur des EQ-5D-5L kennen müssen, ohne ihn aktiv zu nutzen. Diese Variante hat die kleinste Payload-Größe und enthält keine Extensions für Rendering oder Berechnungen.
+
+<tabs>
+  <tab title="Tree">
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l-minimal}}
+  </tab>
+  <tab title="JSON">
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l-minimal}}
+  </tab>
+</tabs>
+
+#### Displayable-Variante (Nur-Anzeige)
+
+Die Displayable-Variante ist für die reine Anzeige von bereits erfassten EQ-5D-5L Daten optimiert. Sie wird in klinischen Informationssystemen verwendet, wenn Ärzte oder Pflegepersonal die Ergebnisse eines bereits ausgefüllten Fragebogens einsehen möchten. Diese Variante enthält spezielle Rendering-Hinweise für eine optimale Darstellung, verzichtet aber auf Eingabevalidierung und Berechnungslogik, da keine Interaktion mit dem Fragebogen stattfindet.
+
+#### Collectable-Variante (Datenerfassung)
+
+Die Collectable-Variante ist für die aktive Datenerfassung durch Patienten konzipiert. Sie enthält vollständige Validierungsregeln, Required-Markierungen für alle Items und eine versteckte "Keine Angabe" Option für Situationen, in denen Patienten einzelne Fragen nicht beantworten können oder möchten. Diese Variante wird typischerweise in Patientenportalen oder mobilen Apps eingesetzt und stellt sicher, dass die erfassten Daten vollständig und valide sind.
+
+#### Answer-Coding-Variante (MII-spezifische Kodierung)
+
+Die Answer-Coding-Variante verwendet das MII-kontrollierte CodeSystem anstelle von LOINC-Codes. Diese Variante ist besonders wichtig, wenn zuverlässige ordinale Werte für automatische Score-Berechnungen benötigt werden. Die LinkIds folgen einem spezifischen Pattern (`euroqol-eq5d5l-coded-q01-MO`), das die Unterscheidung von anderen Varianten ermöglicht. Diese Variante kombiniert die Capabilities Collectable und Calculatable und ermöglicht damit sowohl die Datenerfassung als auch die automatische Berechnung von Scores.
+
+<tabs>
+  <tab title="Tree">
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+  </tab>
+  <tab title="JSON">
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+  </tab>
+</tabs>
+
+### Score-Berechnung und Interpretation
+
+Die Berechnung der EQ-5D-5L Scores erfolgt auf drei verschiedenen Ebenen, die unterschiedliche Aspekte der Lebensqualität erfassen. Der EQ-5D-5L Index ist der komplexeste Score und erfordert populationsspezifische Wertetabellen. Für die deutsche Population existieren spezifische Tarife, die die gesellschaftlichen Präferenzen für verschiedene Gesundheitszustände widerspiegeln. Die Berechnung erfolgt durch eine nicht-lineare Transformation der fünf Dimensionsantworten unter Berücksichtigung von Interaktionseffekten zwischen den Dimensionen.
+
+Das EQ-5D-5L Profil ist eine direkte Repräsentation der Antworten als fünfstelliger Code. Dieser Code ermöglicht eine schnelle Erfassung des Gesundheitszustands ohne numerische Transformation und eignet sich besonders für die deskriptive Darstellung von Gesundheitszuständen in klinischen Berichten. Die EQ VAS repräsentiert die subjektive Einschätzung des Patienten und wird häufig als Ergänzung zum Index-Score verwendet, um Diskrepanzen zwischen objektiver und subjektiver Gesundheitsbewertung zu identifizieren.
+
+### Architektonische Vorteile der Varianten-Trennung
+
+Die Trennung in verschiedene Varianten bietet mehrere signifikante Vorteile für die Implementierung und Wartung. Jede Variante enthält nur die für ihren spezifischen Use Case notwendigen Extensions und Funktionalitäten, was zu optimierten Payload-Größen führt. Die klare Trennung der Verantwortlichkeiten bedeutet, dass die Displayable-Variante keine unnötige Berechnungslogik enthält, während die Collectable-Variante nicht mit Rendering-spezifischen Extensions überladen wird.
+
+Diese Architektur ermöglicht auch eine flexible Evolution des Systems. Neue Varianten können hinzugefügt werden, ohne bestehende Implementierungen zu beeinflussen. Wenn beispielsweise zukünftig eine spezielle Variante für Computer Adaptive Testing benötigt wird, kann diese als zusätzliche Variante implementiert werden, ohne die bestehenden Varianten zu modifizieren.
+
+### Implementierungsempfehlungen
+
+Die Entscheidung zwischen einer All-in-One-Implementierung wie beim PHQ-9 und einer Varianten-Architektur wie beim EQ-5D-5L sollte auf mehreren Faktoren basieren. Für einfache Instrumente mit wenigen Use Cases ist der All-in-One-Ansatz oft ausreichend und reduziert die Komplexität. Bei komplexen Instrumenten mit vielfältigen Anwendungsszenarien bietet die Varianten-Architektur jedoch deutliche Vorteile in Bezug auf Wartbarkeit und Performance.
+
+Implementierer sollten auch die erwartete Evolution des Instruments berücksichtigen. Instrumente, die voraussichtlich stabil bleiben, können vom einfacheren All-in-One-Ansatz profitieren. Instrumente, bei denen häufige Änderungen oder Erweiterungen erwartet werden, sind mit der Varianten-Architektur besser bedient, da Änderungen isoliert in einzelnen Varianten vorgenommen werden können.
+
+### Beispiel-Ressourcen
+
+#### EQ-5D-5L QuestionnaireResponse (Answer-Coding Variante)
+
+<tabs>
+  <tab title="Tree">
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eq5d5l-coded-response}}
+  </tab>
+  <tab title="JSON">
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eq5d5l-coded-response}}
+  </tab>
+  <tab title="XML">
+    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eq5d5l-coded-response}}
+  </tab>
+</tabs>
+
+### Zusammenfassung
+
+Der EQ-5D-5L demonstriert erfolgreich die Varianten-Architektur des MII PRO Moduls und zeigt, wie komplexe Instrumente durch modulare Ansätze effizient implementiert werden können. Die Trennung der Capabilities in spezialisierte Questionnaire-Instanzen ermöglicht optimierte Implementierungen für spezifische Use Cases bei gleichzeitiger Wahrung der semantischen Konsistenz. Diese Architektur stellt einen wichtigen Baustein für die skalierbare Implementierung von Patient-Reported Outcomes im deutschen Gesundheitswesen dar.

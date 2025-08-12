@@ -47,6 +47,7 @@
 [mii-exa-pro-promis-depression-sf4a-raw-score]: Observation-mii-exa-pro-promis-depression-sf4a-raw-score.html
 [mii-exa-pro-promis-depression-sf4a-response]: QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.html
 [mii-exa-pro-promis-depression-sf4a-tscore]: Observation-mii-exa-pro-promis-depression-sf4a-tscore.html
+[MII_LM_PRO]: StructureDefinition-mii-lm-pro.html
 [mii-obsdef-pro-depression-t-score]: ObservationDefinition-mii-obsdef-pro-depression-t-score.html
 [mii-obsdef-pro-score-eq5d5l-index]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.html
 [mii-obsdef-pro-score-eq5d5l-profile]: ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.html
