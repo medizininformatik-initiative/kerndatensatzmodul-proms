@@ -47,8 +47,7 @@ Description: "Generic profile for depression domain T-score observations (all de
 * category = $hl7-observation-category#survey "Survey"
 
 * code MS
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
-
+* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * subject MS
 * subject only Reference(Patient)
 

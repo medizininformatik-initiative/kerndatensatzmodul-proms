@@ -16,6 +16,12 @@ Usage: #definition
 
 * contained[0] = MII_CS_PRO_EQ_5D_ValueSet // for testing
 
+* extension[capabilities].extension[displayable].valueBoolean = true
+* extension[capabilities].extension[collectable].valueBoolean = true
+* extension[capabilities].extension[calculatable].valueBoolean = true
+* extension[capabilities].extension[extractable].valueBoolean = true
+* extension[capabilities].extension[domainAligned].valueBoolean = true
+
 * item[+].linkId = "euroqol-eq5d5l-coded-instruction"
 * item[=].type = #display
 * item[=].text = "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt."
@@ -157,7 +163,7 @@ Usage: #definition
 
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)
 * item[+].linkId = "euroqol-eq5d5l-coded-score-profile"
-* item[=].type = #string
+* item[=].type = #decimal
 * item[=].code = $SCT#405157008 "Personal health status"
 * item[=].text = "Gesundheitszustand"
 * item[=].text.extension[+].url = $hl7-translation
@@ -177,10 +183,10 @@ Usage: #definition
 //* item[=].text.extension[=].extension[=].valueCode = #en
 //* item[=].text.extension[=].extension[+].url = "content"
 //* item[=].text.extension[=].extension[=].valueString = "Index Value (EQ Value)"
-//* item[=].text.extension[+].url = $hl7-min-value
-//* item[=].text.extension[=].valueString = "0"
-//* item[=].text.extension[+].url = $hl7-max-value
-//* item[=].text.extension[=].valueString = "1"
+//* item[=].extension[+].url = $hl7-min-value
+//* item[=].extension[=].valueString = "0"
+//* item[=].extension[+].url = $hl7-max-value
+//* item[=].extension[=].valueString = "1"
 //* item[=].extension[+].url = $sdc-questionnaire-observation-extract
 //* item[=].extension[=].valueBoolean = true
 //* item[=].extension[+].url = $hl7-questionnaire-unit

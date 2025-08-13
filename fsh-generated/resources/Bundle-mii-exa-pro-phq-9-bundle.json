@@ -59,8 +59,11 @@
           {
             "extension": [
               {
-                "url": "name",
-                "valueId": "sourceResponse"
+                "valueCoding": {
+                  "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+                  "code": "patient"
+                },
+                "url": "name"
               },
               {
                 "url": "type",

@@ -764,6 +764,33 @@
       "count": 30
     }
   ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
   "item": [
     {
       "linkId": "euroqol-eq5d5l-coded-instruction",
@@ -1226,7 +1253,7 @@
         }
       ],
       "linkId": "euroqol-eq5d5l-coded-score-profile",
-      "type": "string",
+      "type": "decimal",
       "text": "Gesundheitszustand",
       "_text": {
         "extension": [
@@ -1336,11 +1363,6 @@
       },
       "required": true,
       "repeats": false
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "status": "active",

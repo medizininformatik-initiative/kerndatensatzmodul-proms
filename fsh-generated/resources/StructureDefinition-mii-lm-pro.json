@@ -23,11 +23,6 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "fhir",
-      "uri": "http://hl7.org/fhir",
-      "name": "FHIR R4 Mapping"
-    },
-    {
       "identity": "FHIR",
       "name": "PRO LogicalModel FHIR Mapping"
     }

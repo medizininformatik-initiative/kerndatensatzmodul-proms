@@ -27,53 +27,39 @@ Usage: #definition
 
 // Define variables for domain score calculations
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "physicalFunctionRaw"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(pfa11|pfa21|pfa23|pfa53)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "physicalFunctionRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(pfa11|pfa21|pfa23|pfa53)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "anxietyRaw"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(edanx01|edanx40|edanx41|edanx53)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "anxietyRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(edanx01|edanx40|edanx41|edanx53)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "depressionRaw"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(eddep04|eddep06|eddep29|eddep41)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "depressionRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(eddep04|eddep06|eddep29|eddep41)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "fatigueRaw"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "fatigueRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "sleepRaw"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "sleepRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "socialRaw"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(srpper11|srpper18|srpper23|srpper46)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "socialRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(srpper11|srpper18|srpper23|srpper46)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "painInterferenceRaw"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(painin9|painin22|painin31|painin34)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "painInterferenceRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(painin9|painin22|painin31|painin34)$')).answer.value.ordinal().sum()"
 
 // ===== PHYSICAL FUNCTION DOMAIN =====
 * item[+].linkId = "PROMIS-29.PhysicalFunction"

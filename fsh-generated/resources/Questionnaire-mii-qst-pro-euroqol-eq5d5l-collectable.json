@@ -19,6 +19,33 @@
       "display": "EuroQoL five dimension five level questionnaire (assessment scale)"
     }
   ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": false
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": false
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
   "item": [
     {
       "answerOption": [
@@ -880,6 +907,14 @@
       ],
       "extension": [
         {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueDecimal": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueDecimal": 1
+        },
+        {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
           "valueBoolean": true
         },
@@ -919,14 +954,6 @@
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/minValue",
-            "valueDecimal": 0
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-            "valueDecimal": 1
           }
         ]
       },
@@ -1021,11 +1048,6 @@
       },
       "required": true,
       "repeats": false
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "status": "active",

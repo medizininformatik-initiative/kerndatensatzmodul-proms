@@ -55,115 +55,59 @@
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     },
     {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "physicalFunctionRaw"
-        },
-        {
-          "valueExpression": {
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^promis-(pfa11|pfa21|pfa23|pfa53)$')).answer.value.ordinal().sum()"
-          },
-          "url": "expression"
-        }
-      ],
+      "valueExpression": {
+        "name": "physicalFunctionRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^promis-(pfa11|pfa21|pfa23|pfa53)$')).answer.value.ordinal().sum()"
+      },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
     {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "anxietyRaw"
-        },
-        {
-          "valueExpression": {
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^promis-(edanx01|edanx40|edanx41|edanx53)$')).answer.value.ordinal().sum()"
-          },
-          "url": "expression"
-        }
-      ],
+      "valueExpression": {
+        "name": "anxietyRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^promis-(edanx01|edanx40|edanx41|edanx53)$')).answer.value.ordinal().sum()"
+      },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
     {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "depressionRaw"
-        },
-        {
-          "valueExpression": {
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^promis-(eddep04|eddep06|eddep29|eddep41)$')).answer.value.ordinal().sum()"
-          },
-          "url": "expression"
-        }
-      ],
+      "valueExpression": {
+        "name": "depressionRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^promis-(eddep04|eddep06|eddep29|eddep41)$')).answer.value.ordinal().sum()"
+      },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
     {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "fatigueRaw"
-        },
-        {
-          "valueExpression": {
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
-          },
-          "url": "expression"
-        }
-      ],
+      "valueExpression": {
+        "name": "fatigueRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
+      },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
     {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "sleepRaw"
-        },
-        {
-          "valueExpression": {
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
-          },
-          "url": "expression"
-        }
-      ],
+      "valueExpression": {
+        "name": "sleepRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
+      },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
     {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "socialRaw"
-        },
-        {
-          "valueExpression": {
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^promis-(srpper11|srpper18|srpper23|srpper46)$')).answer.value.ordinal().sum()"
-          },
-          "url": "expression"
-        }
-      ],
+      "valueExpression": {
+        "name": "socialRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^promis-(srpper11|srpper18|srpper23|srpper46)$')).answer.value.ordinal().sum()"
+      },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
     {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "painInterferenceRaw"
-        },
-        {
-          "valueExpression": {
-            "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^promis-(painin9|painin22|painin31|painin34)$')).answer.value.ordinal().sum()"
-          },
-          "url": "expression"
-        }
-      ],
+      "valueExpression": {
+        "name": "painInterferenceRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^promis-(painin9|painin22|painin31|painin34)$')).answer.value.ordinal().sum()"
+      },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }
   ],

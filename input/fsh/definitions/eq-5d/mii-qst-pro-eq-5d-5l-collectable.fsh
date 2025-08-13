@@ -13,6 +13,12 @@ Usage: #definition
 * version = "0.1.0"
 // TODO: date, publisher, copyright, etc.
 
+* extension[capabilities].extension[displayable].valueBoolean = true
+* extension[capabilities].extension[collectable].valueBoolean = true
+* extension[capabilities].extension[calculatable].valueBoolean = true
+* extension[capabilities].extension[extractable].valueBoolean = false
+* extension[capabilities].extension[domainAligned].valueBoolean = false
+
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
@@ -324,10 +330,10 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "Index Value (EQ Value)"
-* item[=].text.extension[+].url = $hl7-min-value
-* item[=].text.extension[=].valueDecimal = 0
-* item[=].text.extension[+].url = $hl7-max-value
-* item[=].text.extension[=].valueDecimal = 1
+* item[=].extension[+].url = $hl7-min-value
+* item[=].extension[=].valueDecimal = 0
+* item[=].extension[+].url = $hl7-max-value
+* item[=].extension[=].valueDecimal = 1
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
 * item[=].extension[+].url = $hl7-questionnaire-unit

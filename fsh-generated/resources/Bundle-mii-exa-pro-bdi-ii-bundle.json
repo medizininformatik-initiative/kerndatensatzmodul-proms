@@ -61,6 +61,7 @@
         ],
         "version": "0.1.0",
         "experimental": true,
+        "valueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
         "count": 10
       }
     },
@@ -77,7 +78,7 @@
         "name": "MII_VS_PRO_BDI_BDI2_AnswerListShort",
         "title": "MII VS PRO BDI-II",
         "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
-        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short",
         "version": "0.1.0",
         "experimental": true,
         "compose": {
@@ -607,7 +608,7 @@
           }
         ],
         "questionnaire": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
-        "status": "final",
+        "status": "completed",
         "authored": "2023-10-01T12:00:00Z"
       }
     },

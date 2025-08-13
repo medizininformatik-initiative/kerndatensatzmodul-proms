@@ -109,14 +109,14 @@
             "type": "choice",
             "prefix": "6",
             "text": "Were you limited in doing either your work or other daily activities?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role"
+            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
           },
           {
             "linkId": "qlq-c30-q07",
             "type": "choice",
             "prefix": "7",
             "text": "Were you limited in pursuing your hobbies or other leisure time activities?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role"
+            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
           },
           {
             "linkId": "qlq-c30-q08",
@@ -944,8 +944,8 @@
               {
                 "valueCoding": {
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
-                  "code": "5",
-                  "display": "5"
+                  "code": "5-very-good",
+                  "display": "5 - Very good"
                 }
               }
             ],
@@ -956,8 +956,8 @@
               {
                 "valueCoding": {
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
-                  "code": "5",
-                  "display": "5"
+                  "code": "5-very-good",
+                  "display": "5 - Very good"
                 }
               }
             ],

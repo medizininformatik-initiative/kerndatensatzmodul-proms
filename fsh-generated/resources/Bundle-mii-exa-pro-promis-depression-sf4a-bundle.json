@@ -3,13 +3,13 @@
   "id": "mii-exa-pro-promis-depression-sf4a-bundle",
   "entry": [
     {
-      "fullUrl": "urn:uuid:patient-12345",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/example-patient",
       "resource": {
         "resourceType": "Patient",
         "id": "mii-exa-pro-patient",
         "identifier": [
           {
-            "system": "http://example.org/patient-ids",
+            "system": "http://identifiers.org/patient-ids",
             "value": "12345"
           }
         ],
@@ -26,7 +26,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:qr-promis-depression-sf4a-001",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response",
       "resource": {
         "resourceType": "QuestionnaireResponse",
         "id": "mii-exa-pro-promis-depression-sf4a-response",
@@ -105,7 +105,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-depression-sf4a-raw-001",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-raw-score",
       "resource": {
         "resourceType": "Observation",
         "id": "mii-exa-pro-promis-depression-sf4a-raw-score",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-depression-sf4a-tscore-001",
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-tscore",
       "resource": {
         "resourceType": "Observation",
         "id": "mii-exa-pro-promis-depression-sf4a-tscore",
@@ -190,7 +190,7 @@
             {
               "code": "77861-3",
               "system": "http://loinc.org",
-              "display": "PROMIS emotional distress - depression - version 1.0 T-score"
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
             }
           ]
         },

@@ -229,29 +229,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
-        }
-      ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
+          },
+          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q01-MO",
@@ -437,29 +416,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
-        }
-      ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
+          },
+          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q02-SC",
@@ -645,29 +603,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
-        }
-      ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
+          },
+          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q03-UA",
@@ -853,29 +790,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
-        }
-      ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
+          },
+          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q04-PD",
@@ -1061,29 +977,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
-        }
-      ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
+          },
+          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q05-AD",
@@ -1180,6 +1075,14 @@
       ],
       "extension": [
         {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueDecimal": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueDecimal": 1
+        },
+        {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
           "valueBoolean": true
         },
@@ -1219,14 +1122,6 @@
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/minValue",
-            "valueDecimal": 0
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-            "valueDecimal": 1
           }
         ]
       },

@@ -27,11 +27,9 @@ Usage: #definition
 
 // Define variable for raw score calculation
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueString = "rawScore"
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueExpression.language = #text/fhirpath
-* extension[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.name = "rawScore"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
 
 * item[+].linkId = "PROMIS-Depression.Description"
 * item[=].type = #display
@@ -40,7 +38,7 @@ Usage: #definition
 // Item 1: I felt worthless
 * item[+].linkId = "promis-eddep04"
 * item[=].type = #choice
-* item[=].code = $LNC#61953-6 "In the past 7 days - I felt worthless"
+* item[=].code = $LNC#61953-6 "I felt worthless in past 7 days [PROMIS]"
 * item[=].text = "...fühlte ich mich wertlos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
@@ -61,7 +59,7 @@ Usage: #definition
 // Item 2: I felt helpless  
 * item[+].linkId = "promis-eddep06"
 * item[=].type = #choice
-* item[=].code = $LNC#61955-1 "In the past 7 days - I felt helpless"
+* item[=].code = $LNC#61955-1 "I felt helpless in past 7 days [PROMIS]"
 * item[=].text = "...fühlte ich mich hilflos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
@@ -82,7 +80,7 @@ Usage: #definition
 // Item 3: I felt depressed
 * item[+].linkId = "promis-eddep29"
 * item[=].type = #choice
-* item[=].code = $LNC#61967-6 "In the past 7 days - I felt depressed"
+* item[=].code = $LNC#61967-6 "I felt depressed in past 7 days [PROMIS]"
 * item[=].text = "...fühlte ich mich deprimiert"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
@@ -103,7 +101,7 @@ Usage: #definition
 // Item 4: I felt hopeless
 * item[+].linkId = "promis-eddep05"
 * item[=].type = #choice
-* item[=].code = $LNC#61973-4 "In the past 7 days - I felt hopeless"
+* item[=].code = $LNC#61973-4 "I felt hopeless in past 7 days [PROMIS]"
 * item[=].text = "...fühlte ich mich hoffnungslos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"

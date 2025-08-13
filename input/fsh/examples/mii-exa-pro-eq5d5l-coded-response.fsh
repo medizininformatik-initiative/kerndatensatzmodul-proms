@@ -23,7 +23,7 @@ Usage: #example
 
 // Usual Activities - Severe problems
 * item[+].linkId = "euroqol-eq5d5l-coded-q03-UA"
-* item[=].text = "ALLTÄGLICHE TÄTIGKEITEN"
+* item[=].text = "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
 * item[=].answer[0].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-4
 * item[=].answer[0].valueCoding.display = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 
@@ -42,7 +42,7 @@ Usage: #example
 // Health State Profile (concatenated: 3-2-4-3-1)
 * item[+].linkId = "euroqol-eq5d5l-coded-score-profile"
 * item[=].text = "Gesundheitszustand"
-* item[=].answer[0].valueInteger = 32431
+* item[=].answer[0].valueString = "32431"
 
 // Note: Index calculation would be commented out in this variant as indicated in the questionnaire
 // The index would typically be calculated server-side using the profile value

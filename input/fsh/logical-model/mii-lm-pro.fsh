@@ -142,11 +142,6 @@ Description: "Logisches Modell für die strukturierte Erfassung und Verarbeitung
     * Mittelwert 0..1 decimal "Mittelwert" "Durchschnittswert der Population"
     * Standardabweichung 0..1 decimal "Standardabweichung" "Streuung der Werte"
 
-// ==================== FHIR MAPPINGS ====================
-
-* ^mapping[+].identity = "fhir"
-* ^mapping[=].uri = "http://hl7.org/fhir"
-* ^mapping[=].name = "FHIR R4 Mapping"
 
 // ==================== MAPPING DEFINITION ====================
 

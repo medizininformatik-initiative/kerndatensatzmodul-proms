@@ -6,6 +6,7 @@ Usage: #definition
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable"
 * derivedFrom = $mii-qst-pro-euroqol-eq5d5l
+
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = false
 * extension[capabilities].extension[calculatable].valueBoolean = false
@@ -77,6 +78,7 @@ Usage: #definition
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].answerOption[+].valueString = "Fehlender Wert"
+* item[=].answerOption[=].initialSelected = true
 * item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
@@ -86,12 +88,6 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -144,6 +140,7 @@ Usage: #definition
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].answerOption[+].valueString = "Fehlender Wert"
+* item[=].answerOption[=].initialSelected = true
 * item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
@@ -153,12 +150,6 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -211,6 +202,7 @@ Usage: #definition
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].answerOption[+].valueString = "Fehlender Wert"
+* item[=].answerOption[=].initialSelected = true
 * item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
@@ -220,12 +212,6 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -278,6 +264,7 @@ Usage: #definition
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].answerOption[+].valueString = "Fehlender Wert"
+* item[=].answerOption[=].initialSelected = true
 * item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
@@ -287,12 +274,6 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -345,6 +326,7 @@ Usage: #definition
 * item[=].answerOption[=].extension.url = $hl7-ordinal-value
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].answerOption[+].valueString = "Fehlender Wert"
+* item[=].answerOption[=].initialSelected = true
 * item[=].answerOption[=].valueString.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueString.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueString.extension[=].extension[=].valueCode = #en
@@ -354,12 +336,6 @@ Usage: #definition
 * item[=].answerOption[=].extension[=].valueDecimal = 9
 * item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
 * item[=].answerOption[=].extension[=].valueBoolean = true
-* item[=].initial[+].valueString = "Fehlender Wert"
-* item[=].initial[=].valueString.extension[+].url = $hl7-translation
-* item[=].initial[=].valueString.extension[=].extension[+].url = "lang"
-* item[=].initial[=].valueString.extension[=].extension[=].valueCode = #en
-* item[=].initial[=].valueString.extension[=].extension[+].url = "content"
-* item[=].initial[=].valueString.extension[=].extension[=].valueString = "Missing value"
 * item[=].required = true
 * item[=].repeats = false
 
@@ -396,10 +372,10 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "Index Value (EQ Value)"
-* item[=].text.extension[+].url = $hl7-min-value
-* item[=].text.extension[=].valueDecimal = 0
-* item[=].text.extension[+].url = $hl7-max-value
-* item[=].text.extension[=].valueDecimal = 1
+* item[=].extension[+].url = $hl7-min-value
+* item[=].extension[=].valueDecimal = 0
+* item[=].extension[+].url = $hl7-max-value
+* item[=].extension[=].valueDecimal = 1
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
 * item[=].extension[+].url = $hl7-questionnaire-unit
