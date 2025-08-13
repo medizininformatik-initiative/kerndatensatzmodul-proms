@@ -67,13 +67,13 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "6"
 * item[=].text = "Were you limited in doing either your work or other daily activities?"
-* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role"
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 
 * item[+].linkId = "qlq-c30-q07"
 * item[=].type = #choice
 * item[=].prefix = "7"
 * item[=].text = "Were you limited in pursuing your hobbies or other leisure time activities?"
-* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role"
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 
 // Q8: Dyspnoea (DY) - Single item
 * item[+].linkId = "qlq-c30-q08"

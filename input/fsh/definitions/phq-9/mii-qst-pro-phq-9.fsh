@@ -21,7 +21,8 @@ Usage: #definition
 // SDC pre-population configuration for server-side calculation use case
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
 * extension[=].extension[+].url = "name"
-* extension[=].extension[=].valueId = "sourceResponse"
+* extension[=].extension[=].valueCoding.system = "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"
+* extension[=].extension[=].valueCoding.code = #patient
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #QuestionnaireResponse
 * extension[=].extension[+].url = "description"

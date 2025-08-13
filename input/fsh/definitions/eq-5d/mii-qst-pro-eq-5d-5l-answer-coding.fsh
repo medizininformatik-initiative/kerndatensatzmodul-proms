@@ -14,6 +14,8 @@ Usage: #definition
 // TODO: date, publisher, copyright, etc.
 * derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
 
+* contained[0] = MII_CS_PRO_EQ_5D_ValueSet // for testing
+
 * item[+].linkId = "euroqol-eq5d5l-coded-instruction"
 * item[=].type = #display
 * item[=].text = "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt."

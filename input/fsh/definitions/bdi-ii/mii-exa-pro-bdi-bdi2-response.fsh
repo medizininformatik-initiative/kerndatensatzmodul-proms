@@ -4,7 +4,7 @@ Title: "MII EXA PRO BDI-II"
 Description: "MII EXA PRO Beck Depression Inventory II (BDI-II) Questionnaire"
 Usage: #definition
 * questionnaire = $mii-qst-pro-bdi-bdi2
-* status = #final
+* status = #completed
 * subject.reference = "Patient/example-patient"
 * authored = "2023-10-01T12:00:00Z"
 //* url = $mii-qst-pro-bdi-bdi2
