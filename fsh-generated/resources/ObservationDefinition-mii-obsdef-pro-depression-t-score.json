@@ -45,17 +45,6 @@
         ],
         "text": "German general population - EHIS wave 3 (n=22,996): Mean 46.5 (SD 7.7), Median 45.5"
       },
-      "appliesTo": [
-        {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
-              "code": "UNK",
-              "display": "Unknown"
-            }
-          ]
-        }
-      ],
       "range": {
         "low": {
           "value": 41.8
@@ -69,7 +58,7 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
-                  "code": "increase"
+                  "code": "decrease"
                 }
               ],
               "text": "Higher scores indicate worse health (more depression symptoms)"
@@ -108,7 +97,21 @@
         },
         "high": {
           "value": 50.4
-        }
+        },
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                  "code": "decrease"
+                }
+              ],
+              "text": "Higher scores indicate worse health (more depression symptoms)"
+            },
+            "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+          }
+        ]
       },
       "category": "reference"
     },
@@ -140,7 +143,21 @@
         },
         "high": {
           "value": 52.76
-        }
+        },
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                  "code": "decrease"
+                }
+              ],
+              "text": "Higher scores indicate worse health (more depression symptoms)"
+            },
+            "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+          }
+        ]
       },
       "category": "reference"
     },
@@ -155,17 +172,6 @@
         ],
         "text": "Overall European population median (IQR) - EHIS wave 3, 29 countries (n=287,530)"
       },
-      "appliesTo": [
-        {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
-              "code": "UNK",
-              "display": "Unknown"
-            }
-          ]
-        }
-      ],
       "range": {
         "low": {
           "value": 39.11

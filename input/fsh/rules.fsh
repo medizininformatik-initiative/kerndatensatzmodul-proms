@@ -23,7 +23,7 @@ RuleSet: ConceptIntl(concept, display, language, translation)
   * ^designation[+].language = #{language}
   * ^designation[=].value = "{translation}"
 
-// NOTE: itemWeight replaces ordinalValue extension, but is currently not allowed in concept context
+// NOTE: In SDC STU3, we use ordinalValue extension for scoring weights
 RuleSet: ConceptWeightIntl(concept, display, weight, language, translation)
 * include {concept} "{display}"
   * ^designation[+].language = #{language}

@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "QuestionnaireResponse",
-  "baseDefinition": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponsecommon",
+  "baseDefinition": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse",
   "derivation": "constraint",
   "differential": {
     "element": [

@@ -7,8 +7,11 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable",
-  "title": "MII QST PRO EQ-5D-5L",
-  "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+  "title": "MII QST PRO EQ-5D-5L (Displayable)",
+  "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Displayable version",
+  "derivedFrom": [
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
+  ],
   "extension": [
     {
       "extension": [
@@ -45,7 +48,7 @@
   ],
   "item": [
     {
-      "linkId": "EQ-5D-5L.IS",
+      "linkId": "euroqol-eq5d5l-instruction",
       "type": "display",
       "text": "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt.",
       "_text": {
@@ -226,32 +229,11 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
+          },
+          "initialSelected": true
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.MO",
+      "linkId": "euroqol-eq5d5l-q01-MO",
       "type": "choice",
       "text": "BEWEGLICHKEIT / MOBILITÄT",
       "_text": {
@@ -434,32 +416,11 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
+          },
+          "initialSelected": true
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.SC",
+      "linkId": "euroqol-eq5d5l-q02-SC",
       "type": "choice",
       "text": "FÜR SICH SELBST SORGEN",
       "_text": {
@@ -642,32 +603,11 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
+          },
+          "initialSelected": true
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.UA",
+      "linkId": "euroqol-eq5d5l-q03-UA",
       "type": "choice",
       "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
       "_text": {
@@ -850,32 +790,11 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
+          },
+          "initialSelected": true
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.PD",
+      "linkId": "euroqol-eq5d5l-q04-PD",
       "type": "choice",
       "text": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN",
       "_text": {
@@ -1058,32 +977,11 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
+          },
+          "initialSelected": true
         }
       ],
-      "initial": [
-        {
-          "valueString": "Fehlender Wert",
-          "_valueString": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "EQ-5D-5L.AD",
+      "linkId": "euroqol-eq5d5l-q05-AD",
       "type": "choice",
       "text": "ANGST / NIEDERGESCHLAGENHEIT",
       "_text": {
@@ -1145,7 +1043,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         }
       ],
-      "linkId": "EQ-5D-5L.HS",
+      "linkId": "euroqol-eq5d5l-score-profile",
       "type": "integer",
       "text": "Gesundheitszustand",
       "_text": {
@@ -1177,6 +1075,14 @@
       ],
       "extension": [
         {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueDecimal": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueDecimal": 1
+        },
+        {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
           "valueBoolean": true
         },
@@ -1199,7 +1105,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
         }
       ],
-      "linkId": "EQ-5D-5L.IV",
+      "linkId": "euroqol-eq5d5l-score-index",
       "type": "decimal",
       "text": "Indexwert",
       "_text": {
@@ -1216,21 +1122,13 @@
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/minValue",
-            "valueDecimal": 0
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-            "valueDecimal": 1
           }
         ]
       },
       "readOnly": true
     },
     {
-      "linkId": "EQ-VAS.IS",
+      "linkId": "euroqol-eq5d5l-vas-instruction",
       "type": "display",
       "text": "\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
       "_text": {
@@ -1288,7 +1186,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
         }
       ],
-      "linkId": "EQ-VAS.HT",
+      "linkId": "euroqol-eq5d5l-vas",
       "type": "integer",
       "text": "IHRE GESUNDHEIT HEUTE",
       "_text": {

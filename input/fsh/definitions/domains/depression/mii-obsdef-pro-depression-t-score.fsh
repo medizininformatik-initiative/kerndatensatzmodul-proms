@@ -19,12 +19,10 @@ Usage: #definition
 * qualifiedInterval[+].category = #reference
 * qualifiedInterval[=].context.coding = $LNC#LA6112-2 "General population"
 * qualifiedInterval[=].context.text = "German general population - EHIS wave 3 (n=22,996): Mean 46.5 (SD 7.7), Median 45.5"
-* qualifiedInterval[=].appliesTo[+].coding.system = "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"
-* qualifiedInterval[=].appliesTo[=].coding.code = #UNK
-* qualifiedInterval[=].appliesTo[=].coding.display = "Unknown"
+
 * qualifiedInterval[=].range.low.value = 41.8
 * qualifiedInterval[=].range.high.value = 51.5
-* qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase
+* qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
 * qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher scores indicate worse health (more depression symptoms)"
 
 // European male population reference ranges (for gender context)
@@ -36,6 +34,8 @@ Usage: #definition
 * qualifiedInterval[=].appliesTo[=].coding.display = "Male"
 * qualifiedInterval[=].range.low.value = 38.06
 * qualifiedInterval[=].range.high.value = 50.40
+* qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
+* qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher scores indicate worse health (more depression symptoms)"
 
 // European female population reference ranges (for gender context)  
 * qualifiedInterval[+].category = #reference
@@ -46,14 +46,14 @@ Usage: #definition
 * qualifiedInterval[=].appliesTo[=].coding.display = "Female"
 * qualifiedInterval[=].range.low.value = 40.00
 * qualifiedInterval[=].range.high.value = 52.76
+* qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
+* qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher scores indicate worse health (more depression symptoms)"
 
 // European population context for comparison
 * qualifiedInterval[+].category = #reference
 * qualifiedInterval[=].context.coding = $LNC#LA6112-2 "General population"
 * qualifiedInterval[=].context.text = "Overall European population median (IQR) - EHIS wave 3, 29 countries (n=287,530)"
-* qualifiedInterval[=].appliesTo[+].coding.system = "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"
-* qualifiedInterval[=].appliesTo[=].coding.code = #UNK
-* qualifiedInterval[=].appliesTo[=].coding.display = "Unknown"
+
 * qualifiedInterval[=].range.low.value = 39.11
 * qualifiedInterval[=].range.high.value = 51.68
 

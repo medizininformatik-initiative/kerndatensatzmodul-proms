@@ -4,7 +4,8 @@ Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
 Usage: #definition
 
-* url = $mii-qst-pro-euroqol-eq5d5l
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal"
+* derivedFrom = $mii-qst-pro-euroqol-eq5d5l
 * status = #active
 * experimental = true
 * language = #de
@@ -13,6 +14,12 @@ Usage: #definition
 * version = "0.1.0"
 
 // TODO: date, publisher, copyright, etc.
+
+* extension[capabilities].extension[displayable].valueBoolean = true
+* extension[capabilities].extension[collectable].valueBoolean = false
+* extension[capabilities].extension[calculatable].valueBoolean = false
+* extension[capabilities].extension[extractable].valueBoolean = false
+* extension[capabilities].extension[domainAligned].valueBoolean = false
 
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].type = #choice
@@ -86,7 +93,7 @@ Usage: #definition
 
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)
 * item[+].linkId = "euroqol-eq5d5l-score-profile"
-* item[=].type = #code
+* item[=].type = #decimal
 * item[=].code = $SCT#405157008 "Personal health status"
 * item[=].text = "Gesundheitszustand"
 

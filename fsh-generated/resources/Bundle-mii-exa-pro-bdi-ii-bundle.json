@@ -20,106 +20,48 @@
         "concept": [
           {
             "code": "bdi-bdi2-answer-0",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 0
-              }
-            ]
+            "display": "0 points"
           },
           {
             "code": "bdi-bdi2-answer-1",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 1
-              }
-            ]
+            "display": "1 point"
           },
           {
             "code": "bdi-bdi2-answer-2",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 2
-              }
-            ]
+            "display": "2 points"
           },
           {
             "code": "bdi-bdi2-answer-3",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 3
-              }
-            ]
+            "display": "3 points"
           },
           {
             "code": "bdi-bdi2-answer-1a",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 1
-              }
-            ]
+            "display": "1 point (variant a)"
           },
           {
             "code": "bdi-bdi2-answer-1b",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 1
-              }
-            ]
+            "display": "1 point (variant b)"
           },
           {
             "code": "bdi-bdi2-answer-2a",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 2
-              }
-            ]
+            "display": "2 points (variant a)"
           },
           {
             "code": "bdi-bdi2-answer-2b",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 2
-              }
-            ]
+            "display": "2 points (variant b)"
           },
           {
             "code": "bdi-bdi2-answer-3a",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 3
-              }
-            ]
+            "display": "3 points (variant a)"
           },
           {
             "code": "bdi-bdi2-answer-3b",
-            "property": [
-              {
-                "code": "bdi-bdi2-itemWeight",
-                "valueDecimal": 3
-              }
-            ]
+            "display": "3 points (variant b)"
           }
         ],
         "version": "0.1.0",
         "experimental": true,
         "valueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
-        "property": [
-          {
-            "code": "bdi-bdi2-itemWeight",
-            "uri": "http://hl7.org/fhir/concept-properties/itemWeight",
-            "description": "item weight for BDI-II questionnaire",
-            "type": "decimal"
-          }
-        ],
         "count": 10
       }
     },
@@ -136,7 +78,7 @@
         "name": "MII_VS_PRO_BDI_BDI2_AnswerListShort",
         "title": "MII VS PRO BDI-II",
         "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
-        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+        "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short",
         "version": "0.1.0",
         "experimental": true,
         "compose": {
@@ -386,7 +328,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "%resource.item.where(type = 'choice').answer.value.weight().sum()"
+                  "expression": "%resource.item.where(type = 'choice').answer.value.ordinal().sum()"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
               }
@@ -666,7 +608,7 @@
           }
         ],
         "questionnaire": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
-        "status": "final",
+        "status": "completed",
         "authored": "2023-10-01T12:00:00Z"
       }
     },

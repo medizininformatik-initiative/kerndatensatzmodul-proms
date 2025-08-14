@@ -23,7 +23,7 @@ Usage: #example
 
 * status = #final
 * category = $hl7-observation-category#survey "Survey"
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
+* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * subject = Reference(Patient/mii-exa-pro-patient)
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 62.2
@@ -38,7 +38,7 @@ Title: "MII EXA PRO Patient"
 Description: "Example patient for PRO demonstrations"
 Usage: #example
 
-* identifier.system = "http://example.org/patient-ids"
+* identifier.system = "http://identifiers.org/patient-ids"
 * identifier.value = "12345"
 * name.family = "Mustermann"
 * name.given = "Max"

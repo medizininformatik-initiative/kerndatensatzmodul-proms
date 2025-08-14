@@ -15,12 +15,10 @@ Description: "EuroQol EQ-5D Value Set"
 * ^content = #complete
 
 * ^property[+].code = #eq-5d-vs-coefficient-de-de
-* ^property[=].uri = "http://hl7.org/fhir/concept-properties/itemWeight"
 * ^property[=].description = "EQ-5D ValueSet Coefficient Germany"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #eq-5d-vs-coefficient-en-us
-* ^property[=].uri = "http://hl7.org/fhir/concept-properties/itemWeight"
 * ^property[=].description = "EQ-5D ValueSet Coefficient US"
 * ^property[=].type = #decimal
 

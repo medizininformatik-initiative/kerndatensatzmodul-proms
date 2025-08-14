@@ -1,0 +1,1372 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-euroqol-eq5d5l-answer-coding",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding",
+  "title": "MII QST PRO EQ-5D-5L",
+  "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+  "code": [
+    {
+      "code": "73041000052103",
+      "system": "http://snomed.info/sct",
+      "display": "EuroQoL five dimension five level questionnaire (assessment scale)"
+    },
+    {
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "euroqol-eq5d5l",
+      "display": "EuroQol EQ-5D-5L Questionnaire"
+    }
+  ],
+  "derivedFrom": [
+    "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
+  ],
+  "contained": [
+    {
+      "resourceType": "CodeSystem",
+      "id": "mii-cs-pro-eq-5d-value-set",
+      "status": "draft",
+      "content": "complete",
+      "name": "MII_CS_PRO_EQ_5D_ValueSet",
+      "title": "MII CS EQ-5D Value Set",
+      "description": "EuroQol EQ-5D Value Set",
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+      "concept": [
+        {
+          "code": "MO",
+          "display": "BEWEGLICHKEIT / MOBILITÄT",
+          "concept": [
+            {
+              "code": "MO-1",
+              "display": "Ich habe keine Probleme herumzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have no problems in walking about"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "code": "MO-2",
+              "display": "Ich habe leichte Probleme herumzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have slight problems in walking about"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.026
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.096
+                }
+              ]
+            },
+            {
+              "code": "MO-3",
+              "display": "Ich habe mäßige Probleme herumzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have moderate problems in walking about"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.042
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.122
+                }
+              ]
+            },
+            {
+              "code": "MO-4",
+              "display": "Ich habe große Probleme herumzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have severe problems in walking about"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.139
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.237
+                }
+              ]
+            },
+            {
+              "code": "MO-5",
+              "display": "Ich bin nicht in der Lage herumzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am unable to walk about"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.224
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.322
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "en",
+              "use": {
+                "code": "900000000000013009",
+                "system": "http://snomed.info/sct",
+                "display": "Synonym"
+              },
+              "value": "MOBILITY"
+            }
+          ]
+        },
+        {
+          "code": "SC",
+          "display": "FÜR SICH SELBST SORGEN",
+          "concept": [
+            {
+              "code": "SC-1",
+              "display": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have no problems washing or dressing myself"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "code": "SC-2",
+              "display": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have slight problems washing or dressing myself"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.05
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.089
+                }
+              ]
+            },
+            {
+              "code": "SC-3",
+              "display": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have moderate problems washing or dressing myself"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.056
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.107
+                }
+              ]
+            },
+            {
+              "code": "SC-4",
+              "display": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have severe problems washing or dressing myself"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.169
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.22
+                }
+              ]
+            },
+            {
+              "code": "SC-5",
+              "display": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am unable to wash or dress myself"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.26
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.261
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "en",
+              "use": {
+                "code": "900000000000013009",
+                "system": "http://snomed.info/sct",
+                "display": "Synonym"
+              },
+              "value": "SELF-CARE"
+            }
+          ]
+        },
+        {
+          "code": "UA",
+          "display": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
+          "concept": [
+            {
+              "code": "UA-1",
+              "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have no problems doing my usual activities"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "code": "UA-2",
+              "display": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have slight problems doing my usual activities"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.036
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.068
+                }
+              ]
+            },
+            {
+              "code": "UA-3",
+              "display": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have moderate problems doing my usual activities"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.049
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.101
+                }
+              ]
+            },
+            {
+              "code": "UA-4",
+              "display": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have severe problems doing my usual activities"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.129
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.255
+                }
+              ]
+            },
+            {
+              "code": "UA-5",
+              "display": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am unable to do my usual activities"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.209
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.255
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "en",
+              "use": {
+                "code": "900000000000013009",
+                "system": "http://snomed.info/sct",
+                "display": "Synonym"
+              },
+              "value": "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"
+            }
+          ]
+        },
+        {
+          "code": "PD",
+          "display": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN",
+          "concept": [
+            {
+              "code": "PD-1",
+              "display": "Ich habe keine Schmerzen oder Beschwerden",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have no pain or discomfort"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "code": "PD-2",
+              "display": "Ich habe leichte Schmerzen oder Beschwerden",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have slight pain or discomfort"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.057
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.06
+                }
+              ]
+            },
+            {
+              "code": "PD-3",
+              "display": "Ich habe mäßige Schmerzen oder Beschwerden",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have moderate pain or discomfort"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.109
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.098
+                }
+              ]
+            },
+            {
+              "code": "PD-4",
+              "display": "Ich habe starke Schmerzen oder Beschwerden",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have severe pain or discomfort"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.404
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.318
+                }
+              ]
+            },
+            {
+              "code": "PD-5",
+              "display": "Ich habe extreme Schmerzen oder Beschwerden",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I have extreme pain or discomfort"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.612
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.414
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "en",
+              "use": {
+                "code": "900000000000013009",
+                "system": "http://snomed.info/sct",
+                "display": "Synonym"
+              },
+              "value": "PAIN / DISCOMFORT"
+            }
+          ]
+        },
+        {
+          "code": "AD",
+          "display": "ANGST / NIEDERGESCHLAGENHEIT",
+          "concept": [
+            {
+              "code": "AD-1",
+              "display": "Ich bin nicht ängstlich oder deprimiert",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am not anxious or depressed"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0
+                }
+              ]
+            },
+            {
+              "code": "AD-2",
+              "display": "Ich bin ein wenig ängstlich oder deprimiert",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am slightly anxious or depressed"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.03
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.057
+                }
+              ]
+            },
+            {
+              "code": "AD-3",
+              "display": "Ich bin mäßig ängstlich oder deprimiert",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am moderately anxious or depressed"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.082
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.123
+                }
+              ]
+            },
+            {
+              "code": "AD-4",
+              "display": "Ich bin sehr ängstlich oder deprimiert",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am severely anxious or depressed"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.244
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.299
+                }
+              ]
+            },
+            {
+              "code": "AD-5",
+              "display": "Ich bin extrem ängstlich oder deprimiert",
+              "designation": [
+                {
+                  "language": "en-US",
+                  "use": {
+                    "code": "900000000000013009",
+                    "system": "http://snomed.info/sct",
+                    "display": "Synonym"
+                  },
+                  "value": "I am extremely anxious or depressed"
+                }
+              ],
+              "property": [
+                {
+                  "code": "eq-5d-vs-coefficient-de-de",
+                  "valueDecimal": 0.356
+                },
+                {
+                  "code": "eq-5d-vs-coefficient-en-us",
+                  "valueDecimal": 0.321
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "en",
+              "use": {
+                "code": "900000000000013009",
+                "system": "http://snomed.info/sct",
+                "display": "Synonym"
+              },
+              "value": "ANXIETY / DEPRESSION"
+            }
+          ]
+        }
+      ],
+      "language": "de-DE",
+      "experimental": true,
+      "hierarchyMeaning": "grouped-by",
+      "property": [
+        {
+          "code": "eq-5d-vs-coefficient-de-de",
+          "description": "EQ-5D ValueSet Coefficient Germany",
+          "type": "decimal"
+        },
+        {
+          "code": "eq-5d-vs-coefficient-en-us",
+          "description": "EQ-5D ValueSet Coefficient US",
+          "type": "decimal"
+        }
+      ],
+      "count": 30
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "euroqol-eq5d5l-coded-instruction",
+      "type": "display",
+      "text": "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt.",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Under each heading, please tick the ONE box that best describes your health TODAY."
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q01-MO",
+      "type": "choice",
+      "text": "BEWEGLICHKEIT / MOBILITÄT",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "MOBILITY"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q02-SC",
+      "type": "choice",
+      "text": "FÜR SICH SELBST SORGEN",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "SELF-CARE"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q03-UA",
+      "type": "choice",
+      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q04-PD",
+      "type": "choice",
+      "text": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "PAIN / DISCOMFORT"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q05-AD",
+      "type": "choice",
+      "text": "ANGST / NIEDERGESCHLAGENHEIT",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "ANXIETY / DEPRESSION"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "code": [
+        {
+          "code": "405157008",
+          "system": "http://snomed.info/sct",
+          "display": "Personal health status"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-score-profile",
+      "type": "decimal",
+      "text": "Gesundheitszustand",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Health State"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "readOnly": true
+    },
+    {
+      "linkId": "euroqol-eq5d5l-coded-vas-instruction",
+      "type": "display",
+      "text": "\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "\n    We would like to know how good or bad your health is TODAY.\n\n    This scale is numbered from 0 to 100.\n\n    100 means the best health you can imagine.\n\n    0 means the worst health you can imagine.\n\n    Please mark an X on the scale to indicate how your health is TODAY.\n\n    Now, write the number you marked on the scale in the box below."
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "446515003",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 100
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "initial": [
+        {
+          "valueInteger": 999
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-vas",
+      "type": "integer",
+      "text": "IHRE GESUNDHEIT HEUTE",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "YOUR HEALTH TODAY"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    }
+  ],
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "version": "0.1.0"
+}

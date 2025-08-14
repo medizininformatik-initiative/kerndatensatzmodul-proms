@@ -1,3 +1,6 @@
+---
+topic: Ballotierungsfragen
+---
 ## {{page-title}}
 
 Umfang des ersten Pre-Releases
@@ -9,3 +12,5 @@ Umfang des ersten Pre-Releases
     * PRO-Score-Vorlage (ObservationDefinition)
 
 * lokale Validierungsprobleme
+* zusätzliche Datenpunkte, die nicht abbildbar sind
+

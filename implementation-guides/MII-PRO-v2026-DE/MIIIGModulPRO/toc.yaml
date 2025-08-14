@@ -1,34 +1,33 @@
+# Übersicht
 - name: Index
   filename: Index.page.md
 - name: Beschreibung Modul PROs
   filename: Beschreibung-Modul-PROs.page.md
-- name: Kontext im Gesamptprojekt / Bezüge zu anderen Modulen
+- name: Kontext im Gesamptprojekt
   filename: Kontext-im-Gesamptprojekt-Bezüge-zu-anderen-Modulen.page.md
-- name: Referenzen
+  - name: Referenzen
   filename: Referenzen.page.md
-- name: Ballotierungsfragen
-  filename: Ballotierungsfragen.page.md
-- name: Anwendungsfälle / Informationsmodell
-  filename: Anwendungsfälle-Informationsmodell
-- name: Technische Implementierung
-  filename: Technische-Implementierung
+
 - name: Geplanter Umfang
   filename: Geplanter-Umfang.page.md
-- name: Wie kann ich PROs nutzen?
-  filename: Wie-kann-ich-PROs-nutzen.page.md
-- name: ID-Systematik
-  filename: ID-Systematik.page.md
-- name: Terminologie-Strategien
-  filename: Terminologie-Strategien.page.md
-- name: Terminologieserver
-  filename: Terminologieserver.page.md
-- name: Mapping
-  filename: Mapping.page.md
-- name: Scoring
-  filename: Scoring.page.md
-- name: Domain-basiertes Scoring
-  filename: Domain-basiertes-Scoring.page.md
-- name: FHIR-Implementierungsansätze
-  filename: FHIR-Implementierungsansätze.page.md
-- name: Abgeleitete Metriken
-  filename: Abgeleitete-Metriken.page.md
+- name: Release Notes
+  filename: Release-Notes.page.md
+
+# Konzeption
+- name: Anwendungsfälle / Informationsmodell
+  filename: Anwendungsfaelle-Informationsmodell
+
+# Technische Implementierung  
+- name: Technische Implementierung
+  filename: Technische-Implementierung
+
+# PRO-Bibliothek
+- name: PRO-Bibliothek
+  filename: PRO-Bibliothek
+
+# Entwicklerressourcen
+- name: Developer Reference
+  filename: Developer-Reference.page.md
+# Anhang
+- name: Ballotierungsfragen
+  filename: Ballotierungsfragen.page.md

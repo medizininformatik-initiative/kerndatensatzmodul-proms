@@ -6,9 +6,12 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal",
   "title": "MII QST PRO EQ-5D-5L",
   "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+  "derivedFrom": [
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
+  ],
   "code": [
     {
       "system": "http://snomed.info/sct",
@@ -19,6 +22,33 @@
       "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "code": "euroqol-eq5d5l",
       "display": "EuroQol EQ-5D-5L Questionnaire"
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": false
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": false
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": false
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": false
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "item": [
@@ -216,7 +246,7 @@
         }
       ],
       "linkId": "euroqol-eq5d5l-score-profile",
-      "type": "code",
+      "type": "decimal",
       "text": "Gesundheitszustand"
     },
     {
@@ -276,11 +306,6 @@
       "linkId": "euroqol-eq5d5l-q06-vas",
       "type": "integer",
       "text": "IHRE GESUNDHEIT HEUTE"
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "status": "active",

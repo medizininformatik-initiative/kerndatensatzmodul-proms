@@ -5,7 +5,7 @@ Description: "Transaction bundle containing PHQ-9 questionnaire, response, and d
 Usage: #example
 * type = #transaction
 
-// Questionnaire (uses LOINC codes with itemWeight extensions)
+// Questionnaire (uses LOINC codes with ordinalValue extensions)
 * entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
 * entry[=].resource = mii-qst-pro-phq-9
 * entry[=].request.method = #PUT

@@ -1,5 +1,5 @@
 Profile: MII_PR_PRO_Questionnaire
-Parent: SDCQuestionnaireCommon
+Parent: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire
 Id: mii-pr-pro-questionnaire
 Title: "MII PR PRO Questionnaire"  
 Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification"

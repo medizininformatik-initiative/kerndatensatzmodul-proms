@@ -242,15 +242,24 @@ This implementation leverages the full spectrum of SDC advanced features:
 **Key Contributors**: Thomas Debertshäuser, Mathias Rose, Fabian Praßer, Karoline Buckow, Franziska Klepka
 
 ### Current Development Status
-- **Branch**: `fix-initial-version-validation-errors`
-- **Status**: Active development with validation error fixes
+- **Branch**: `dev`
+- **Status**: Active development with SDC STU3 migration and questionnaire variant architecture
 - **Recent Changes**: 
-  - Updated EQ5D5L and BDI-II with latest logic
-  - **BDI-II Score Implementation**: Fixed scoring calculation with proper itemWeight properties, refactored to separate CS/VS resources approach
-  - **PHQ-9 SDC STU4 Migration**: Updated from ordinalValue extensions to itemWeight properties for SDC STU4 compatibility
-  - **Terminology Strategy**: Moved to separate resources approach (vs contained) for better reusability across questionnaires
-  - **Balloting Questions**: Added contained vs separate resources architectural question and SDC STU4 compatibility notice
-  - **Current Focus**: Completing PHQ-9 flagship example with full score calculation workflow
+  - **SDC STU3 Migration**: Migrated back from STU4 to STU3 for better tool compatibility
+    - Changed from itemWeight properties to ordinalValue extensions
+    - Updated all FHIRPath expressions from `.weight()` to `.ordinal()`
+    - Updated parent profiles to SDC STU3 URLs
+  - **EQ-5D-5L LinkId Standardization**: Implemented consistent linkId patterns per ID-Systematik
+    - Standard variants: `euroqol-eq5d5l-q01-MO` pattern
+    - Coded variant: `euroqol-eq5d5l-coded-q01-MO` pattern for MII CodeSystem approach
+  - **Questionnaire Variant Architecture**: Major architectural breakthrough documented
+    - Capabilities are composable, not singular
+    - New "populatable" capability identified
+    - Same questionnaire can adapt to different use cases based on capability combinations
+  - **PHQ-9 Populatable Enhancement**: Added populatable capability to existing PHQ-9
+    - All 10 questions have initialExpression for pre-population
+    - Enables both direct collection and server-side calculation modes
+  - **Current Focus**: Implementing capability-based questionnaire variants
 
 ### Project Milestones & Roadmap
 
@@ -325,6 +334,29 @@ gantt
   - Reliable change indices and measurement error boundaries
 - [ ] **Item-based architecture** - Foundation for CAT, modular questionnaires
 - [ ] **Comprehensive questionnaire catalogue system** - Versioning and capability management
+
+### Questionnaire Capability Architecture (Major Breakthrough 2025)
+
+#### Composable Capabilities Pattern
+Questionnaires don't have single capabilities but **capability combinations** that define specific use cases:
+
+**Base Capabilities**:
+- **Displayable**: How data/results are SHOWN
+- **Collectable**: How data is ENTERED by users  
+- **Populatable**: How existing data is LOADED (new capability discovered)
+- **Calculatable**: How scores are COMPUTED from data
+- **Extractable**: How data is TRANSFERRED to other resources
+
+**Key Use Case Combinations**:
+1. `[collectable, calculatable, displayable]` - Interactive form with real-time scoring
+2. `[collectable, extractable]` + `[populatable, calculatable, extractable]` - Mobile collection → Server calculation
+3. `[populatable, calculatable, extractable]` - Server-side scoring engine
+4. `[populatable, displayable]` - Read-only result viewer
+
+**Implementation Strategy**:
+- Single questionnaire adapts based on context (not separate variants)
+- Use `initialExpression` with conditional logic: `iif(%sourceResponse.exists(), ...)`
+- Enables same questionnaire for both collection AND server-side calculation
 
 ### Architectural Challenges
 

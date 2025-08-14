@@ -8,49 +8,18 @@ Description: "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-I
 * ^experimental = true
 * ^valueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2"
 
-* ^property[+].code = #bdi-bdi2-itemWeight
-* ^property[=].uri = "http://hl7.org/fhir/concept-properties/itemWeight"
-* ^property[=].description = "item weight for BDI-II questionnaire"
-* ^property[=].type = #decimal
+// In SDC STU3, itemWeight is moved to answerOption.extension[ordinalValue] in the Questionnaire
+// Keeping codes without weight properties for the CodeSystem
 
-* #bdi-bdi2-answer-0
-* #bdi-bdi2-answer-0 ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-0 ^property[=].valueDecimal = 0
-
-* #bdi-bdi2-answer-1
-* #bdi-bdi2-answer-1 ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-1 ^property[=].valueDecimal = 1
-
-* #bdi-bdi2-answer-2
-* #bdi-bdi2-answer-2 ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-2 ^property[=].valueDecimal = 2
-
-* #bdi-bdi2-answer-3
-* #bdi-bdi2-answer-3 ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-3 ^property[=].valueDecimal = 3
-
-* #bdi-bdi2-answer-1a
-* #bdi-bdi2-answer-1a ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
-
-* #bdi-bdi2-answer-1b
-* #bdi-bdi2-answer-1b ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-1b ^property[=].valueDecimal = 1
-
-* #bdi-bdi2-answer-2a
-* #bdi-bdi2-answer-2a ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-2a ^property[=].valueDecimal = 2
-
-* #bdi-bdi2-answer-2b
-* #bdi-bdi2-answer-2b ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-2b ^property[=].valueDecimal = 2
-
-* #bdi-bdi2-answer-3a
-* #bdi-bdi2-answer-3a ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-3a ^property[=].valueDecimal = 3
-
-* #bdi-bdi2-answer-3b
-* #bdi-bdi2-answer-3b ^property[+].code = #bdi-bdi2-itemWeight
-* #bdi-bdi2-answer-3b ^property[=].valueDecimal = 3
+* #bdi-bdi2-answer-0 "0 points"
+* #bdi-bdi2-answer-1 "1 point"
+* #bdi-bdi2-answer-2 "2 points"
+* #bdi-bdi2-answer-3 "3 points"
+* #bdi-bdi2-answer-1a "1 point (variant a)"
+* #bdi-bdi2-answer-1b "1 point (variant b)"
+* #bdi-bdi2-answer-2a "2 points (variant a)"
+* #bdi-bdi2-answer-2b "2 points (variant b)"
+* #bdi-bdi2-answer-3a "3 points (variant a)"
+* #bdi-bdi2-answer-3b "3 points (variant b)"
 
 

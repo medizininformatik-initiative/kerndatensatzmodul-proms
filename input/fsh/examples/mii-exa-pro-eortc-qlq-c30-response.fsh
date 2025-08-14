@@ -188,12 +188,12 @@ Usage: #example
 // Q29: Overall health during past week
 * item[+].linkId = "qlq-c30-q29"
 * item[=].answer.valueCoding.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
-* item[=].answer.valueCoding.code = #5
-* item[=].answer.valueCoding.display = "5"
+* item[=].answer.valueCoding.code = #5-very-good 
+* item[=].answer.valueCoding.display = "5 - Very good"
 
 // Q30: Overall quality of life during past week
 * item[+].linkId = "qlq-c30-q30"
 * item[=].answer.valueCoding.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
-* item[=].answer.valueCoding.code = #5
-* item[=].answer.valueCoding.display = "5"
+* item[=].answer.valueCoding.code = #5-very-good
+* item[=].answer.valueCoding.display = "5 - Very good"
 

@@ -1,3 +1,6 @@
+---
+topic: Scoring
+---
 ## {{page-title}}
 
 ### Überblick

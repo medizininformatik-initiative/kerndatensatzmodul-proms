@@ -1,8 +1,11 @@
+---
+topic: Terminologie-Strategien
+---
 ## {{page-title}}
 
-Eine systematische Terminologiestrategie ist zentral für die erfolgreiche Implementierung von PRO-Instrumenten im MII-Kontext. Diese Seite dokumentiert die strategischen Entscheidungskriterien für die Wahl zwischen verschiedenen Terminologieansätzen.
 
 ## Übersicht der Terminologieansätze
+
 
 Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition von Antwortoptionen in Questionnaire-Items:
 

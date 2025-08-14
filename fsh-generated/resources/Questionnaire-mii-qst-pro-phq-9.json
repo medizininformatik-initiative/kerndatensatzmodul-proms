@@ -28,6 +28,10 @@
           "valueBoolean": true
         },
         {
+          "url": "populatable",
+          "valueBoolean": true
+        },
+        {
           "url": "calculatable",
           "valueBoolean": true
         },
@@ -41,6 +45,26 @@
         }
       ],
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "extension": [
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+            "code": "patient"
+          },
+          "url": "name"
+        },
+        {
+          "url": "type",
+          "valueCode": "QuestionnaireResponse"
+        },
+        {
+          "url": "description",
+          "valueString": "Optional: Pre-populate from completed PHQ-9 QuestionnaireResponse for server-side calculation"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
   "item": [
@@ -73,6 +97,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -99,7 +132,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -129,7 +162,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -159,7 +192,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -189,7 +222,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -224,6 +257,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -250,7 +292,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -280,7 +322,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -310,7 +352,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -340,7 +382,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -375,6 +417,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -401,7 +452,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -431,7 +482,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -461,7 +512,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -491,7 +542,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -526,6 +577,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -552,7 +612,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -582,7 +642,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -612,7 +672,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -642,7 +702,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -677,6 +737,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -703,7 +772,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -733,7 +802,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -763,7 +832,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -793,7 +862,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -828,6 +897,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -854,7 +932,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -884,7 +962,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -914,7 +992,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -944,7 +1022,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -979,6 +1057,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -1005,7 +1092,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -1035,7 +1122,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -1065,7 +1152,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -1095,7 +1182,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -1130,6 +1217,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -1156,7 +1252,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -1186,7 +1282,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -1216,7 +1312,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -1246,7 +1342,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -1281,6 +1377,15 @@
           "system": "http://loinc.org"
         }
       ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
+        }
+      ],
       "answerOption": [
         {
           "valueCoding": {
@@ -1307,7 +1412,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 0
             }
           ]
@@ -1337,7 +1442,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 1
             }
           ]
@@ -1367,7 +1472,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 2
             }
           ]
@@ -1397,7 +1502,7 @@
           },
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 3
             }
           ]
@@ -1438,7 +1543,7 @@
           "valueExpression": {
             "name": "Scoreberechnung",
             "language": "text/fhirpath",
-            "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.weight().sum()"
+            "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         },
@@ -1493,6 +1598,15 @@
         {
           "code": "69722-7",
           "system": "http://loinc.org"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
         }
       ],
       "answerOption": [
