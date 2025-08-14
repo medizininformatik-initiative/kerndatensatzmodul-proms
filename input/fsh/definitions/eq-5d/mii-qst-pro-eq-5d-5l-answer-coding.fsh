@@ -14,7 +14,7 @@ Usage: #definition
 // TODO: date, publisher, copyright, etc.
 * derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
 
-* contained[0] = MII_CS_PRO_EQ_5D_ValueSet // for testing
+// * contained[0] = MII_CS_PRO_EQ_5D_ValueSet // for testing
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

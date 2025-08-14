@@ -18,6 +18,11 @@ Usage: #definition
 * extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "rawScore"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+
 // SDC pre-population configuration for server-side calculation use case
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
 * extension[=].extension[+].url = "name"
@@ -593,3 +598,15 @@ Usage: #definition
 * item[10].extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[10].extension[3].valueCodeableConcept.coding.code = #survey
 
+* item[+].linkId = "phq-phq9-depression-score-tscore"
+* item[=].type = #decimal
+* item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
+* item[=].text = "PROMIS Depression T-Score"
+* item[=].readOnly = true
+* item[=].extension[+].url = $sdc-questionnaire-calculated-expression
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, iif(%rawScore=6, 51.8, iif(%rawScore=7, 53.9, iif(%rawScore=8, 55.7, iif(%rawScore=9, 57.3, iif(%rawScore=10, 58.9, iif(%rawScore=11, 60.5, iif(%rawScore=12, 62.2, iif(%rawScore=13, 63.9, iif(%rawScore=14, 65.7, iif(%rawScore=15, 67.5, iif(%rawScore=16, 69.4, iif(%rawScore=17, 71.2, iif(%rawScore=18, 73.3, iif(%rawScore=19, 75.7, iif(%rawScore=20, 79.4, {})))))))))))))))))"
+* item[=].extension[+].url = $sdc-questionnaire-observation-extract
+* item[=].extension[=].valueBoolean = true
+* item[=].extension[+].url = $hl7-questionnaire-hidden
+* item[=].extension[=].valueBoolean = true
