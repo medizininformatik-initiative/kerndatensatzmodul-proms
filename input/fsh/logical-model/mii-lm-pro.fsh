@@ -187,9 +187,3 @@ Source: MII_LM_PRO
 * Score.ScoreBerechnet.Berechnungsdatum -> "Observation.effectiveDateTime"
 * Score.ScoreBerechnet.ScoreInterpretation -> "Observation.interpretation"
 * Score.ScoreFragebogenScore.AusgefuellterFragebogen -> "Observation.derivedFrom[QuestionnaireResponse]"
-
-// Domain Mappings
-* Domaene -> "CodeSystem or ValueSet" "Maps to terminology resources"
-* Domaene.DomaeneCode -> "CodeSystem.concept.code"
-* Domaene.DomaeneTitel -> "CodeSystem.concept.display"
-* Domaene.DomaeneBeschreibung -> "CodeSystem.concept.definition"

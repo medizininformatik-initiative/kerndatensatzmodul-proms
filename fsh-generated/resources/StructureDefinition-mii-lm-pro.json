@@ -1508,13 +1508,6 @@
           {
             "code": "BackboneElement"
           }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "CodeSystem or ValueSet",
-            "comment": "Maps to terminology resources"
-          }
         ]
       },
       {
@@ -1541,12 +1534,6 @@
           {
             "code": "code"
           }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "CodeSystem.concept.code"
-          }
         ]
       },
       {
@@ -1560,12 +1547,6 @@
           {
             "code": "string"
           }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "CodeSystem.concept.display"
-          }
         ]
       },
       {
@@ -1578,12 +1559,6 @@
         "type": [
           {
             "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "CodeSystem.concept.definition"
           }
         ]
       },
