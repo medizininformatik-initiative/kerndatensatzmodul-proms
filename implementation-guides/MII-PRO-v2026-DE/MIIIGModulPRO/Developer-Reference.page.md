@@ -58,7 +58,7 @@ Extension: MII_PR_PRO_Questionnaire_Capabilities
 
 ### FHIRPath Expressions
 
-Die automatische Score-Berechnung erfolgt durch FHIRPath-Expressions. Diese Referenz zeigt die wichtigsten Patterns.
+Die automatische Score-Berechnung erfolgt derzeit v.a. durch FHIRPath-Expressions. Diese Referenz zeigt die wichtigsten Patterns.
 
 #### Basis-Patterns
 
@@ -167,7 +167,7 @@ MII-eigene CodeSystems werden verwendet, wenn internationale Terminologien unzur
 
 #### LOINC-Integration
 
-Wo möglich werden LOINC-Codes verwendet, insbesondere für Questionnaire-Items und Score-Observations. Antwortspezifische Scorewerte sind in der LOINC-Distributionen und auf der Webseite hitnerlegt, der LOINC-HAPI-Terminologieservice gibt jedoch nur Antwortlisten ohne Scores aus. Bei fehlenden Scoring-Gewichten in LOINC Answer Lists wird auf MII-kontrollierte ValueSets ausgewichen. ACHTUNG: Die derzeitige Validierungs-Infrastruktur erkennt LOINC-AnswerCodes nicht als LOINC-Codes (LA-XX) und wirft dabei Fehler. 
+Wo möglich werden LOINC-Codes verwendet, insbesondere für Questionnaire-Items und Score-Observations. Antwortspezifische Scorewerte sind in der LOINC-Distributionen und auf der Webseite hinterlegt, der LOINC-HAPI-Terminologieservice gibt jedoch nur Antwortlisten ohne Scores aus. Bei fehlenden Scoring-Gewichten in LOINC Answer Lists wird auf MII-kontrollierte ValueSets ausgewichen. ACHTUNG: Die derzeitige Validierungs-Infrastruktur erkennt LOINC-AnswerCodes nicht als LOINC-Codes (LA-XX) und wirft dabei Fehler. 
 
 ### Fehlerbehandlung
 
@@ -178,7 +178,6 @@ Robuste Implementierungen sollten verschiedene Fehlerszenarien berücksichtigen.
 **Ungültige Werte**: Validierung sollte sicherstellen, dass nur erlaubte Werte akzeptiert werden. Bei ordinalen Werten muss der Bereich (z.B., 0-3) strikt eingehalten werden. 
 
 
-**Lazy Calculation**: Scores sollten nur berechnet werden, wenn sie benötigt werden, nicht präventiv bei jeder Response-Speicherung.
 
 ### Testing und Validierung
 
@@ -189,8 +188,6 @@ Implementierungen sollten gegen die bereitgestellten Beispiel-Ressourcen geteste
 ### Versionierung
 
 Das MII PRO Modul folgt kalendarischer Versionierung (YEAR.MINOR.PATCH). Breaking Changes führen zu Minor-Version-Updates. Neue Instrumente oder Capabilities sind Minor-Updates. Bugfixes und Dokumentationsänderungen sind Patch-Updates.
-
-Die aktuelle Version 2025.0.4 befindet sich im Ballot-Status. Produktive Implementierungen sollten sich auf die stabilen Komponenten (PHQ-9, EQ-5D-5L) konzentrieren.
 
 ### Referenz-Implementierungen
 
