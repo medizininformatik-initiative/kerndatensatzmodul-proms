@@ -7,6 +7,11 @@ topic: Domain-basiertes-Scoring
 
 Die Harmonisierung von Patient-Reported Outcomes über verschiedene Messinstrumente ist eine zentrale Herausforderung der modernen Versorgungsforschung. Domain-basiertes Scoring löst das Problem der Fragmentierung durch die Abbildung verschiedener Instrumente auf gemeinsame Gesundheitsdomänen.
 
+**Verwandte Seiten:**
+- [Gesundheitsdomänen](Domaenen.page.md) - Definition der 9 PROMIS Core Domains
+- [Cross-Instrument Mappings](Cross-Instrument-Mappings.page.md) - Konkrete Mapping-Tabellen
+- [Scoring Methodologie](../Technische-Implementierung/Scoring.page.md) - Technische Details
+
 ### Kernkonzept
 
 #### Von Instrumenten zu Domänen
@@ -172,3 +177,10 @@ define "Depression T-Score from PHQ-9":
 ### Zusammenfassung
 
 Domain-basiertes Scoring ist essentiell für die Harmonisierung von PRO-Daten im deutschen Gesundheitswesen. Die Depression-Domäne zeigt die praktische Umsetzbarkeit und bildet die Grundlage für weitere Domänen. Trotz methodischer Herausforderungen beim Cross-Walking überwiegen die Vorteile für Versorgung und Forschung deutlich.
+
+**Weiterführende Informationen:**
+- [Übersicht Gesundheitsdomänen](Domaenen.page.md) - Detaillierte Beschreibung aller 9 PROMIS Domänen
+- [Mapping-Tabellen](Cross-Instrument-Mappings.page.md) - Konkrete Konversionstabellen für Depression
+- [PHQ-9 Implementierung](../PRO-Bibliothek/PHQ-9/Index.page.md) - Referenzimplementierung
+- [FHIR-Profile](../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md) - Technische Spezifikation
+- [Developer Reference](../Developer-Reference.page.md) - Implementierungshandbuch

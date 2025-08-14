@@ -14,3 +14,5 @@ Umfang des ersten Pre-Releases
 * lokale Validierungsprobleme
 * zusätzliche Datenpunkte, die nicht abbildbar sind
 
+* 
+
