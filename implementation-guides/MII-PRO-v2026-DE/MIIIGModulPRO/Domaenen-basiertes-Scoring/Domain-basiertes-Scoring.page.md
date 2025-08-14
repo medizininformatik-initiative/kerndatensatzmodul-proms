@@ -39,6 +39,17 @@ Observation: Depression T-Score Instance
 #### Mapping-Strategien
 
 **1. Item Response Theory (IRT)**
+
+![IRT Antwortwahrscheinlichkeiten](../../Images/IRT-Antwortwahrscheinlichkeiten.png)
+
+**Abbildung 1:** *Item Response Theory - Antwortwahrscheinlichkeiten in Abhängigkeit von der Merkmalsausprägung*
+
+Die Abbildung zeigt die charakteristischen Kurven der Item Response Theory:
+- Bei niedriger Merkmalsausprägung (z.B. geringe Depression) ist die Wahrscheinlichkeit für "Nie" am höchsten
+- Mit steigender Merkmalsausprägung verschieben sich die Wahrscheinlichkeiten zu "Selten", "Oft" und schließlich "Immer"
+- Die Überlappungsbereiche zeigen Unsicherheitszonen, wo verschiedene Antworten ähnlich wahrscheinlich sind
+
+IRT-Vorteile:
 - Direkte Berechnung aus Item-Antworten
 - Präzise, aber aufwendig zu implementieren
 - Ideal für PROMIS-Instrumente
@@ -59,6 +70,37 @@ Bei der Anwendung von Cross-Walking sind folgende Einschränkungen zu beachten:
 4. **Validierungsbedarf**: Mappings bedürfen populationsspezifischer Validierung
 
 **Empfehlung**: Für klinische Entscheidungen sollten Mapping-Konfidenzintervalle berücksichtigt werden. Für Forschungszwecke ist die Verwendung bei transparenter Dokumentation des Mapping-Fehlers unproblematisch.
+
+### Das PRO-Spannungsfeld
+
+![PRO Spannungsfeld](../../Images/PRO-Spannungsfeld.png)
+
+**Abbildung 2:** *Das Spannungsfeld zwischen Item-Anzahl, Messbereich und Präzision*
+
+Diese Abbildung illustriert ein fundamentales Dilemma bei der PRO-Auswahl:
+- **PROM A** (oben): Wenige Items, aber eingeschränkter Messbereich oder Präzision
+- **PROM B** (unten): Breiter Messbereich und hohe Präzision, aber mehr Items erforderlich
+
+Domain-basiertes Scoring löst dieses Dilemma durch:
+- **Flexible Instrumentenauswahl** je nach Kontext
+- **Item Banking** für adaptive Tests
+- **Harmonisierte Scores** trotz unterschiedlicher Instrumente
+
+### Item Banking und Adaptive Messung
+
+![Item Banking](../../Images/itembanking.png)
+
+**Abbildung 3:** *Item Banking für die Domäne Körperliche Funktionsfähigkeit*
+
+Das Item Banking Konzept ermöglicht:
+- **Populationsspezifische Item-Auswahl**: Verschiedene Items für klinische Stichproben vs. Normalbevölkerung
+- **Adaptive Messung**: Items werden basierend auf der geschätzten Fähigkeit ausgewählt
+- **Beispiele im Bild**:
+  - Einfache Items (links): "selbst ankleiden?", "vom Stuhl aufstehen?", "Zähne putzen?"
+  - Mittlere Items (Mitte): "kurzen Spaziergang machen?", "Einkaufstasche tragen?"
+  - Schwierige Items (rechts): "5km laufen?", "über ein Hindernis klettern?", "am Triathlon teilnehmen?"
+
+Diese adaptive Strategie ermöglicht präzise Messung über das gesamte Fähigkeitsspektrum mit minimaler Belastung für Patienten.
 
 ### Praktische Anwendung
 
