@@ -466,6 +466,94 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score"
+        },
+        "name": "MII ObsDef PRO PROMIS Cognitive Function SF 4a Raw Score",
+        "description": "PROMIS Cognitive Function Short Form 4a Raw Score (4-20 range)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS Cognitive Function SF 4a T-Score",
+        "description": "PROMIS Cognitive Function Short Form 4a T-Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Anxiety T-Score",
+        "description": "PROMIS Anxiety T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Depression T-Score",
+        "description": "PROMIS Depression T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Fatigue T-Score",
+        "description": "PROMIS Fatigue T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Pain Intensity",
+        "description": "PROMIS Pain Intensity single item from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Pain Interference T-Score",
+        "description": "PROMIS Pain Interference T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Physical Function T-Score",
+        "description": "PROMIS Physical Function T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Sleep Disturbance T-Score",
+        "description": "PROMIS Sleep Disturbance T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Social Function T-Score",
+        "description": "PROMIS Ability to Participate in Social Roles and Activities T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-bdi-ii"
+        },
+        "name": "MII ObsDef PRO Score BDI-II",
+        "description": "Beck Depression Inventory II (BDI-II) Total Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index"
         },
         "name": "MII ObsDef PRO Score EQ-5D-5L Index",
@@ -506,6 +594,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-bdi-ii"
+        },
+        "name": "MII PR PRO Observation BDI-II",
+        "description": "Profile for Beck Depression Inventory II (BDI-II) Total Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-index"
         },
         "name": "MII PR PRO Observation EQ-5D-5L Index",
@@ -530,10 +626,90 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score"
+        },
+        "name": "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score",
+        "description": "Profile for PROMIS Cognitive Function Short Form 4a raw score observations (4-20 range)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore"
+        },
+        "name": "MII PR PRO PROMIS Cognitive Function SF 4a T-Score",
+        "description": "Profile for PROMIS Cognitive Function Short Form 4a T-Score observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
         },
         "name": "MII PR PRO PROMIS Depression SF 4a Raw Score",
         "description": "Profile for PROMIS Depression Short Form 4a raw score observations (4-20 range)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Anxiety T-Score",
+        "description": "Profile for PROMIS-29 Anxiety T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-depression-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Depression T-Score",
+        "description": "Profile for PROMIS-29 Depression T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Fatigue T-Score",
+        "description": "Profile for PROMIS-29 Fatigue T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-pain-intensity"
+        },
+        "name": "MII PR PRO PROMIS-29 Pain Intensity",
+        "description": "Profile for PROMIS-29 Pain Intensity single item Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Pain Interference T-Score",
+        "description": "Profile for PROMIS-29 Pain Interference T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Physical Function T-Score",
+        "description": "Profile for PROMIS-29 Physical Function T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Sleep Disturbance T-Score",
+        "description": "Profile for PROMIS-29 Sleep Disturbance T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-social-function-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Social Function T-Score",
+        "description": "Profile for PROMIS-29 Ability to Participate in Social Roles and Activities T-Score Observations",
         "exampleBoolean": false
       },
       {
@@ -674,6 +850,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a"
+        },
+        "name": "MII QST PRO PROMIS Cognitive Function SF 4a",
+        "description": "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-promis-depression-sf4a"
         },
         "name": "MII QST PRO PROMIS Depression SF 4a (Adults)",
@@ -686,6 +870,14 @@
         },
         "name": "MII QST PRO PROMIS-29 (Adults)",
         "description": "PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-29-minimal"
+        },
+        "name": "MII QST PRO PROMIS-29 Minimal",
+        "description": "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
         "exampleBoolean": false
       },
       {
@@ -742,6 +934,54 @@
         },
         "name": "MII VS PRO PHQ-9 Answer List LL359-1",
         "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Frequency Response Scale",
+        "description": "PROMIS Frequency response scale: Nie - Immer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Intensity Response Scale",
+        "description": "PROMIS Intensity response scale: Überhaupt nicht - Sehr",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-pain-intensity-numeric-scale"
+        },
+        "name": "MII VS PRO PROMIS Pain Intensity Numeric Scale",
+        "description": "PROMIS Pain Intensity numeric scale: 0 (Keine Schmerzen) - 10 (Schlimmste vorstellbare Schmerzen)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Physical Function Response Scale",
+        "description": "PROMIS Physical Function response scale: Kann ich gar nicht - Ohne jede Schwierigkeiten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-quality-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Quality Response Scale",
+        "description": "PROMIS Quality response scale: Schlecht - Ausgezeichnet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-sleep-quality-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Sleep Quality Response Scale",
+        "description": "PROMIS Sleep Quality response scale: Sehr schlecht - Sehr gut",
         "exampleBoolean": false
       },
       {

@@ -144,69 +144,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Kann ich gar nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10055-4",
+                "system": "http://loinc.org",
+                "display": "Unable to do"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10055-4",
-                "system": "http://loinc.org",
-                "display": "Unable to do"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit großen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10054-7",
+                "system": "http://loinc.org",
+                "display": "With much difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10054-7",
-                "system": "http://loinc.org",
-                "display": "With much difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit einigen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10053-9",
+                "system": "http://loinc.org",
+                "display": "With some difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10053-9",
-                "system": "http://loinc.org",
-                "display": "With some difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit geringen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10052-1",
+                "system": "http://loinc.org",
+                "display": "With a little difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10052-1",
-                "system": "http://loinc.org",
-                "display": "With a little difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ohne jede Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10051-3",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10051-3",
-                "system": "http://loinc.org",
-                "display": "Without any difficulty"
-              }
+              ]
             }
           ],
           "linkId": "promis-pfa11",
@@ -238,69 +313,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Kann ich gar nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10055-4",
+                "system": "http://loinc.org",
+                "display": "Unable to do"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10055-4",
-                "system": "http://loinc.org",
-                "display": "Unable to do"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit großen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10054-7",
+                "system": "http://loinc.org",
+                "display": "With much difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10054-7",
-                "system": "http://loinc.org",
-                "display": "With much difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit einigen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10053-9",
+                "system": "http://loinc.org",
+                "display": "With some difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10053-9",
-                "system": "http://loinc.org",
-                "display": "With some difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit geringen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10052-1",
+                "system": "http://loinc.org",
+                "display": "With a little difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10052-1",
-                "system": "http://loinc.org",
-                "display": "With a little difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ohne jede Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10051-3",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10051-3",
-                "system": "http://loinc.org",
-                "display": "Without any difficulty"
-              }
+              ]
             }
           ],
           "linkId": "promis-pfa21",
@@ -332,69 +482,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Kann ich gar nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10055-4",
+                "system": "http://loinc.org",
+                "display": "Unable to do"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10055-4",
-                "system": "http://loinc.org",
-                "display": "Unable to do"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit großen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10054-7",
+                "system": "http://loinc.org",
+                "display": "With much difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10054-7",
-                "system": "http://loinc.org",
-                "display": "With much difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit einigen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10053-9",
+                "system": "http://loinc.org",
+                "display": "With some difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10053-9",
-                "system": "http://loinc.org",
-                "display": "With some difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit geringen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10052-1",
+                "system": "http://loinc.org",
+                "display": "With a little difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10052-1",
-                "system": "http://loinc.org",
-                "display": "With a little difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ohne jede Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10051-3",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10051-3",
-                "system": "http://loinc.org",
-                "display": "Without any difficulty"
-              }
+              ]
             }
           ],
           "linkId": "promis-pfa23",
@@ -426,69 +651,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Kann ich gar nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10055-4",
+                "system": "http://loinc.org",
+                "display": "Unable to do"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10055-4",
-                "system": "http://loinc.org",
-                "display": "Unable to do"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit großen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10054-7",
+                "system": "http://loinc.org",
+                "display": "With much difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10054-7",
-                "system": "http://loinc.org",
-                "display": "With much difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit einigen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10053-9",
+                "system": "http://loinc.org",
+                "display": "With some difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10053-9",
-                "system": "http://loinc.org",
-                "display": "With some difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mit geringen Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10052-1",
+                "system": "http://loinc.org",
+                "display": "With a little difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10052-1",
-                "system": "http://loinc.org",
-                "display": "With a little difficulty"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ohne jede Schwierigkeiten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10051-3",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10051-3",
-                "system": "http://loinc.org",
-                "display": "Without any difficulty"
-              }
+              ]
             }
           ],
           "linkId": "promis-pfa53",
@@ -517,69 +817,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-anxiety61930",
@@ -596,69 +971,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-anxiety61941",
@@ -675,69 +1125,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-anxiety61938",
@@ -754,69 +1279,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-anxiety61949",
@@ -845,69 +1445,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-dep61953",
@@ -924,69 +1599,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-dep61955",
@@ -1003,69 +1753,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-dep61967",
@@ -1082,69 +1907,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-dep61973",
@@ -1173,69 +2073,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-fatigue61878",
@@ -1252,69 +2227,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-fatigue61882",
@@ -1331,69 +2381,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Überhaupt nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13868-6",
+                "system": "http://loinc.org",
+                "display": "Not at all"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13868-6",
-                "system": "http://loinc.org",
-                "display": "Not at all"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ein wenig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13909-8",
+                "system": "http://loinc.org",
+                "display": "A little bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13909-8",
-                "system": "http://loinc.org",
-                "display": "A little bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mäßig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13902-3",
+                "system": "http://loinc.org",
+                "display": "Somewhat"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13902-3",
-                "system": "http://loinc.org",
-                "display": "Somewhat"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ziemlich"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13903-1",
+                "system": "http://loinc.org",
+                "display": "Quite a bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13903-1",
-                "system": "http://loinc.org",
-                "display": "Quite a bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very much"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very much"
-              }
+              ]
             }
           ],
           "linkId": "promis-fatigue61863",
@@ -1410,69 +2535,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Überhaupt nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13868-6",
+                "system": "http://loinc.org",
+                "display": "Not at all"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13868-6",
-                "system": "http://loinc.org",
-                "display": "Not at all"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ein wenig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13909-8",
+                "system": "http://loinc.org",
+                "display": "A little bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13909-8",
-                "system": "http://loinc.org",
-                "display": "A little bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mäßig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13902-3",
+                "system": "http://loinc.org",
+                "display": "Somewhat"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13902-3",
-                "system": "http://loinc.org",
-                "display": "Somewhat"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ziemlich"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13903-1",
+                "system": "http://loinc.org",
+                "display": "Quite a bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13903-1",
-                "system": "http://loinc.org",
-                "display": "Quite a bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very much"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very much"
-              }
+              ]
             }
           ],
           "linkId": "promis-fatigue61864",
@@ -1501,69 +2701,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr schlecht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very poor"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very poor"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Schlecht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9956-9",
+                "system": "http://loinc.org",
+                "display": "Poor"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9956-9",
-                "system": "http://loinc.org",
-                "display": "Poor"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mäßig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13896-7",
+                "system": "http://loinc.org",
+                "display": "Fair"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13896-7",
-                "system": "http://loinc.org",
-                "display": "Fair"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Gut"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13938-7",
+                "system": "http://loinc.org",
+                "display": "Good"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13938-7",
-                "system": "http://loinc.org",
-                "display": "Good"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr gut"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very good"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very good"
-              }
+              ]
             }
           ],
           "linkId": "promis-sleep61987",
@@ -1580,69 +2855,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-sleep61986",
@@ -1659,69 +3009,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-sleep61998",
@@ -1738,69 +3163,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-sleep61999",
@@ -1829,69 +3329,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-social62041",
@@ -1908,69 +3483,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-social75417",
@@ -1987,69 +3637,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-social76708",
@@ -2066,69 +3791,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-social76709",
@@ -2145,69 +3945,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Nie"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Never"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Selten"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Manchmal"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Oft"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Immer"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              }
+              ]
             }
           ],
           "linkId": "promis-social76712",
@@ -2236,69 +4111,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Überhaupt nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13868-6",
+                "system": "http://loinc.org",
+                "display": "Not at all"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13868-6",
-                "system": "http://loinc.org",
-                "display": "Not at all"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ein wenig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13909-8",
+                "system": "http://loinc.org",
+                "display": "A little bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13909-8",
-                "system": "http://loinc.org",
-                "display": "A little bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mäßig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13902-3",
+                "system": "http://loinc.org",
+                "display": "Somewhat"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13902-3",
-                "system": "http://loinc.org",
-                "display": "Somewhat"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ziemlich"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13903-1",
+                "system": "http://loinc.org",
+                "display": "Quite a bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13903-1",
-                "system": "http://loinc.org",
-                "display": "Quite a bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very much"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very much"
-              }
+              ]
             }
           ],
           "linkId": "promis-pain61758",
@@ -2315,69 +4265,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Überhaupt nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13868-6",
+                "system": "http://loinc.org",
+                "display": "Not at all"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13868-6",
-                "system": "http://loinc.org",
-                "display": "Not at all"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ein wenig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13909-8",
+                "system": "http://loinc.org",
+                "display": "A little bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13909-8",
-                "system": "http://loinc.org",
-                "display": "A little bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mäßig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13902-3",
+                "system": "http://loinc.org",
+                "display": "Somewhat"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13902-3",
-                "system": "http://loinc.org",
-                "display": "Somewhat"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ziemlich"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13903-1",
+                "system": "http://loinc.org",
+                "display": "Quite a bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13903-1",
-                "system": "http://loinc.org",
-                "display": "Quite a bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very much"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very much"
-              }
+              ]
             }
           ],
           "linkId": "promis-pain61769",
@@ -2394,69 +4419,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Überhaupt nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13868-6",
+                "system": "http://loinc.org",
+                "display": "Not at all"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13868-6",
-                "system": "http://loinc.org",
-                "display": "Not at all"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ein wenig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13909-8",
+                "system": "http://loinc.org",
+                "display": "A little bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13909-8",
-                "system": "http://loinc.org",
-                "display": "A little bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mäßig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13902-3",
+                "system": "http://loinc.org",
+                "display": "Somewhat"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13902-3",
-                "system": "http://loinc.org",
-                "display": "Somewhat"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ziemlich"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13903-1",
+                "system": "http://loinc.org",
+                "display": "Quite a bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13903-1",
-                "system": "http://loinc.org",
-                "display": "Quite a bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very much"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very much"
-              }
+              ]
             }
           ],
           "linkId": "promis-pain61773",
@@ -2473,69 +4573,144 @@
           ],
           "answerOption": [
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Überhaupt nicht"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13868-6",
+                "system": "http://loinc.org",
+                "display": "Not at all"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 1
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13868-6",
-                "system": "http://loinc.org",
-                "display": "Not at all"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ein wenig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13909-8",
+                "system": "http://loinc.org",
+                "display": "A little bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 2
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13909-8",
-                "system": "http://loinc.org",
-                "display": "A little bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Mäßig"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13902-3",
+                "system": "http://loinc.org",
+                "display": "Somewhat"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 3
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13902-3",
-                "system": "http://loinc.org",
-                "display": "Somewhat"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Ziemlich"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13903-1",
+                "system": "http://loinc.org",
+                "display": "Quite a bit"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 4
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13903-1",
-                "system": "http://loinc.org",
-                "display": "Quite a bit"
-              }
+              ]
             },
             {
+              "valueCoding": {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "de"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Sehr"
+                      }
+                    ],
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                  }
+                ],
+                "code": "LA13870-2",
+                "system": "http://loinc.org",
+                "display": "Very much"
+              },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal": 5
                 }
-              ],
-              "valueCoding": {
-                "code": "LA13870-2",
-                "system": "http://loinc.org",
-                "display": "Very much"
-              }
+              ]
             }
           ],
           "linkId": "promis-pain61775",

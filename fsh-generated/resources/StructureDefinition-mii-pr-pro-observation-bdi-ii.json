@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-pro-observation-eq5d5l-vas",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas",
-  "name": "MII_PR_PRO_Observation_EQ5D5L_VAS",
-  "title": "MII PR PRO Observation EQ-5D-5L VAS",
+  "id": "mii-pr-pro-observation-bdi-ii",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii",
+  "name": "MII_PR_PRO_Observation_BDI_II",
+  "title": "MII PR PRO Observation BDI-II",
   "status": "draft",
   "experimental": true,
-  "description": "Profile for EQ-5D-5L Visual Analogue Scale Score Observations",
+  "description": "Profile for Beck Depression Inventory II (BDI-II) Total Score Observations",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -23,7 +23,7 @@
       {
         "id": "Observation.extension:instantiatesCanonical.value[x]",
         "path": "Observation.extension.value[x]",
-        "patternCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas"
+        "patternCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-bdi-ii"
       },
       {
         "id": "Observation.code",
@@ -31,9 +31,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "736535009",
-              "system": "http://snomed.info/sct",
-              "display": "EuroQol visual analogue score (observable entity)"
+              "code": "89209-1",
+              "system": "http://loinc.org",
+              "display": "Beck Depression Inventory II total score"
             }
           ]
         }
@@ -56,7 +56,7 @@
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "fixedString": "1"
+        "fixedString": "{score}"
       },
       {
         "id": "Observation.value[x].system",
@@ -66,20 +66,21 @@
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "fixedCode": "1"
+        "fixedCode": "{score}"
       },
       {
-        "id": "Observation.method",
-        "path": "Observation.method",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "73041000052103",
-              "system": "http://snomed.info/sct",
-              "display": "EuroQoL five dimension five level questionnaire (assessment scale)"
-            }
-          ]
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "patternCoding": {
+          "code": "89209-1",
+          "system": "http://loinc.org",
+          "display": "Beck Depression Inventory II total score"
         }
+      },
+      {
+        "id": "Observation.method.text",
+        "path": "Observation.method.text",
+        "patternString": "Beck Depression Inventory II (BDI-II)"
       }
     ]
   }

@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-pro-observation-eq5d5l-vas",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas",
-  "name": "MII_PR_PRO_Observation_EQ5D5L_VAS",
-  "title": "MII PR PRO Observation EQ-5D-5L VAS",
+  "id": "mii-pr-pro-promis-29-pain-intensity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity",
+  "name": "MII_PR_PRO_PROMIS_29_Pain_Intensity",
+  "title": "MII PR PRO PROMIS-29 Pain Intensity",
   "status": "draft",
   "experimental": true,
-  "description": "Profile for EQ-5D-5L Visual Analogue Scale Score Observations",
+  "description": "Profile for PROMIS-29 Pain Intensity single item Observations",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -23,7 +23,7 @@
       {
         "id": "Observation.extension:instantiatesCanonical.value[x]",
         "path": "Observation.extension.value[x]",
-        "patternCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas"
+        "patternCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity"
       },
       {
         "id": "Observation.code",
@@ -31,9 +31,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "736535009",
-              "system": "http://snomed.info/sct",
-              "display": "EuroQol visual analogue score (observable entity)"
+              "code": "75261-3",
+              "system": "http://loinc.org",
+              "display": "How would you rate your pain on average"
             }
           ]
         }
@@ -69,17 +69,9 @@
         "fixedCode": "1"
       },
       {
-        "id": "Observation.method",
-        "path": "Observation.method",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "73041000052103",
-              "system": "http://snomed.info/sct",
-              "display": "EuroQoL five dimension five level questionnaire (assessment scale)"
-            }
-          ]
-        }
+        "id": "Observation.method.text",
+        "path": "Observation.method.text",
+        "patternString": "PROMIS-29 Profile v2.1 - Pain Intensity single item"
       }
     ]
   }

@@ -45,7 +45,7 @@ Observation: Depression T-Score Instance
 
 **1. Item Response Theory (IRT)**
 
-![IRT Antwortwahrscheinlichkeiten](../../Images/IRT-Antwortwahrscheinlichkeiten.png)
+![IRT Antwortwahrscheinlichkeiten](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/IRT-Antwortwahrscheinlichkeiten.png)
 
 **Abbildung 1:** *Item Response Theory - Antwortwahrscheinlichkeiten in Abhängigkeit von der Merkmalsausprägung*
 
@@ -78,7 +78,7 @@ Bei der Anwendung von Cross-Walking sind folgende Einschränkungen zu beachten:
 
 ### Das PRO-Spannungsfeld
 
-![PRO Spannungsfeld](../../Images/PRO-Spannungsfeld.png)
+![PRO Spannungsfeld](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/PRO-Spannungsfeld.png)
 
 **Abbildung 2:** *Das Spannungsfeld zwischen Item-Anzahl, Messbereich und Präzision*
 
@@ -93,7 +93,7 @@ Domain-basiertes Scoring löst dieses Dilemma durch:
 
 ### Item Banking und Adaptive Messung
 
-![Item Banking](../../Images/itembanking.png)
+![Item Banking](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/itembanking.png)
 
 **Abbildung 3:** *Item Banking für die Domäne Körperliche Funktionsfähigkeit*
 

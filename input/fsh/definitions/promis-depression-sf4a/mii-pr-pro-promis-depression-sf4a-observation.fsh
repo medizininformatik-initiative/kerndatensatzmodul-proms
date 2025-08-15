@@ -32,6 +32,9 @@ Description: "Profile for PROMIS Depression Short Form 4a raw score observations
 * derivedFrom MS
 * derivedFrom only Reference(QuestionnaireResponse)
 
+// Link to ObservationDefinition that defines reference ranges and measurement details
+* extension contains http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical named instantiatesCanonical 0..1 MS
+
 * component ..0
 
 Profile: MII_PR_PRO_Depression_T_Score
@@ -65,6 +68,8 @@ Description: "Generic profile for depression domain T-score observations (all de
 * derivedFrom MS
 * derivedFrom only Reference(QuestionnaireResponse)
 
-// TODO: Add R5 backport extension for instantiates when available
+// Link to ObservationDefinition that defines reference ranges and measurement details
+* extension contains http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical named instantiatesCanonical 0..1 MS
+* extension[instantiatesCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-depression-t-score"
 
 * component ..0

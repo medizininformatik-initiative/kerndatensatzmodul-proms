@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale",
+  "id": "mii-vs-pro-promis-physical-function-response-scale",
+  "title": "MII VS PRO PROMIS Physical Function Response Scale",
+  "description": "PROMIS Physical Function response scale: Kann ich gar nicht - Ohne jede Schwierigkeiten",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
+  "experimental": true,
+  "language": "de",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA10055-4",
+            "display": "Kann ich gar nicht"
+          },
+          {
+            "code": "LA10054-7",
+            "display": "Mit großen Schwierigkeiten"
+          },
+          {
+            "code": "LA10053-9",
+            "display": "Mit einigen Schwierigkeiten"
+          },
+          {
+            "code": "LA10052-1",
+            "display": "Mit geringen Schwierigkeiten"
+          },
+          {
+            "code": "LA10051-3",
+            "display": "Ohne jede Schwierigkeiten"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-promis-29-minimal",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
+    ]
+  },
+  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal",
+  "title": "MII QST PRO PROMIS-29 Minimal",
+  "description": "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
+  "code": [
+    {
+      "code": "71968-5",
+      "system": "http://loinc.org",
+      "display": "PROMIS-29 Profile v2.1"
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": false
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": false
+        },
+        {
+          "url": "populatable",
+          "valueBoolean": false
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "compliesWithProfile",
+            "system": "http://hl7.org/fhir/questionnaire-derivationType"
+          }
+        ]
+      }
+    }
+  ],
+  "derivedFrom": [
+    "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bitte beantworten Sie jede Frage oder Aussage, indem Sie ein Kästchen pro Zeile markieren. In den letzten 7 Tagen..."
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ],
+          "linkId": "PROMIS-29.Instructions",
+          "type": "display",
+          "text": "Please respond to each question or statement by marking one box per row. In the past 7 days..."
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Körperliche Funktion"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ],
+          "item": [
+            {
+              "code": [
+                {
+                  "code": "61597-1",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sind Sie in der Lage, Hausarbeiten wie Staubsaugen oder Gartenarbeit zu erledigen?"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-pfa11",
+              "type": "choice",
+              "text": "Are you able to do chores such as vacuuming or yard work?",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+            },
+            {
+              "code": [
+                {
+                  "code": "61598-9",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sind Sie in der Lage, in normalem Tempo Treppen hinauf- und hinunterzugehen?"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-pfa21",
+              "type": "choice",
+              "text": "Are you able to go up and down stairs at a normal pace?",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+            },
+            {
+              "code": [
+                {
+                  "code": "61593-0",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sind Sie in der Lage, mindestens 15 Minuten spazieren zu gehen?"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-pfa23",
+              "type": "choice",
+              "text": "Are you able to go for a walk of at least 15 minutes?",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+            },
+            {
+              "code": [
+                {
+                  "code": "61596-3",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sind Sie in der Lage, Besorgungen zu machen und einzukaufen?"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-pfa53",
+              "type": "choice",
+              "text": "Are you able to run errands and shop?",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+            }
+          ],
+          "linkId": "PROMIS-29.PhysicalFunction",
+          "type": "group",
+          "text": "Physical Function"
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Angst"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ],
+          "item": [
+            {
+              "code": [
+                {
+                  "code": "71951-1",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ich fühlte mich ängstlich"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-edanx01",
+              "type": "choice",
+              "text": "I felt fearful",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+            },
+            {
+              "code": [
+                {
+                  "code": "71949-5",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ich fand es schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-edanx40",
+              "type": "choice",
+              "text": "I found it hard to focus on anything other than my anxiety",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+            },
+            {
+              "code": [
+                {
+                  "code": "71950-3",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Meine Sorgen überwältigten mich"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-edanx41",
+              "type": "choice",
+              "text": "My worries overwhelmed me",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+            },
+            {
+              "code": [
+                {
+                  "code": "71948-7",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ich fühlte mich unruhig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ],
+              "linkId": "promis-edanx53",
+              "type": "choice",
+              "text": "I felt uneasy",
+              "required": true,
+              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+            }
+          ],
+          "linkId": "PROMIS-29.Anxiety",
+          "type": "group",
+          "text": "Anxiety"
+        }
+      ],
+      "linkId": "PROMIS-29",
+      "type": "group",
+      "text": "PROMIS-29 Profile v2.1"
+    }
+  ],
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "version": "2.1.0-minimal"
+}

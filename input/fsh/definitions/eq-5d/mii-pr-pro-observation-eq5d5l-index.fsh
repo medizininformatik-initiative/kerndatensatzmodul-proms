@@ -20,6 +20,9 @@ Description: "Profile for EQ-5D-5L Index Score Observations with German value se
 * method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
 * method MS
 
+// Link to ObservationDefinition that defines reference ranges and measurement details
+* extension[instantiatesCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index"
+
 // Reference range information is defined in the ObservationDefinition (mii-obsdef-pro-score-eq5d5l-index)
 // Population-specific value set ranges (German: -0.661 to 1.0) are documented there
 

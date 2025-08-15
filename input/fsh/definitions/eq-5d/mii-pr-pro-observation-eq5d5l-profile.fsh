@@ -20,6 +20,9 @@ Description: "Profile for EQ-5D-5L Profile String Observations (e.g., '11111')"
 * method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
 * method MS
 
+// Link to ObservationDefinition that defines measurement details
+* extension[instantiatesCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile"
+
 // No numeric reference range for string profile
 * referenceRange 0..0
 * referenceRange ^short = "Not applicable for string profiles"
