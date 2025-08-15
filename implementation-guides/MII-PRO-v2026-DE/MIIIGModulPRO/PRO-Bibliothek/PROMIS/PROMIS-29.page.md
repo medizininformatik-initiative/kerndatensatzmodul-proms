@@ -119,11 +119,6 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 }
 ```
 
-### Roadmap
-
-- **v0.3.0** (Q2 2025): LOINC-konforme Item-IDs
-- **v0.4.0** (Q3 2025): Populatable capability
-- **v1.0.0** (Q4 2025): Produktionsreife
 
 ### Referenzen
 

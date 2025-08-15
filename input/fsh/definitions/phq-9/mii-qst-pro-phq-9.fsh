@@ -569,6 +569,12 @@ Usage: #definition
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Extremely difficult"
 
+// Define variable for PHQ-9 sum score (used by both raw score and T-score)
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "phq9Score"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+
 * item[10].linkId = "phq-phq9-score-total"
 * item[10].type = #decimal
 * item[10].prefix = "Auswertung"
@@ -577,13 +583,13 @@ Usage: #definition
 * item[10].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[10].extension[0].valueExpression.name = "Scoreberechnung"
 * item[10].extension[0].valueExpression.language = #text/fhirpath
-* item[10].extension[0].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
-* item[10].text = "Gesamtwert"
+* item[10].extension[0].valueExpression.expression = "%phq9Score"
+* item[10].text = "PHQ-9 Gesamtwert"
 * item[10].text.extension[0].url = $hl7-translation
 * item[10].text.extension[0].extension[0].url = "lang"
 * item[10].text.extension[0].extension[0].valueCode = #en
 * item[10].text.extension[0].extension[1].url = "content"
-* item[10].text.extension[0].extension[1].valueString = "Total Score"
+* item[10].text.extension[0].extension[1].valueString = "PHQ-9 Total Score"
 * item[10].extension[1].url = $sdc-questionnaire-observation-extract
 * item[10].extension[1].valueBoolean = true
 * item[10].extension[2].url = $hl7-questionnaire-unit
@@ -592,4 +598,31 @@ Usage: #definition
 * item[10].extension[3].url = $sdc-questionnaire-observation-extract-category
 * item[10].extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[10].extension[3].valueCodeableConcept.coding.code = #survey
+
+// PROMIS Depression T-Score (derived from PHQ-9 via PROsetta Stone crosswalk)
+* item[12].linkId = "phq-phq9-promis-tscore"
+* item[12].type = #decimal
+* item[12].prefix = "T-Score"
+* item[12].code = $LNC#77861-3 "PROMIS depression T-score"
+* item[12].readOnly = true
+* item[12].extension[0].url = $sdc-questionnaire-calculated-expression
+* item[12].extension[0].valueExpression.name = "promis-tscore-mapping"
+* item[12].extension[0].valueExpression.language = #text/fhirpath
+* item[12].extension[0].valueExpression.expression = "iif(%phq9Score = 0, 37.4, iif(%phq9Score = 1, 42.7, iif(%phq9Score = 2, 45.9, iif(%phq9Score = 3, 48.3, iif(%phq9Score = 4, 50.5, iif(%phq9Score = 5, 52.5, iif(%phq9Score = 6, 54.2, iif(%phq9Score = 7, 55.8, iif(%phq9Score = 8, 57.2, iif(%phq9Score = 9, 58.6, iif(%phq9Score = 10, 59.9, iif(%phq9Score = 11, 61.1, iif(%phq9Score = 12, 62.3, iif(%phq9Score = 13, 63.5, iif(%phq9Score = 14, 64.7, iif(%phq9Score = 15, 65.8, iif(%phq9Score = 16, 66.9, iif(%phq9Score = 17, 68.0, iif(%phq9Score = 18, 69.2, iif(%phq9Score = 19, 70.3, iif(%phq9Score = 20, 71.5, iif(%phq9Score = 21, 72.7, iif(%phq9Score = 22, 74.0, iif(%phq9Score = 23, 75.3, iif(%phq9Score = 24, 76.7, iif(%phq9Score = 25, 78.3, iif(%phq9Score = 26, 80.0, iif(%phq9Score = 27, 82.3, 82.3))))))))))))))))))))))))))))"
+* item[12].text = "PROMIS Depression T-Score (abgeleitet von PHQ-9)"
+* item[12].text.extension[0].url = $hl7-translation
+* item[12].text.extension[0].extension[0].url = "lang"
+* item[12].text.extension[0].extension[0].valueCode = #en
+* item[12].text.extension[0].extension[1].url = "content"
+* item[12].text.extension[0].extension[1].valueString = "PROMIS Depression T-Score (derived from PHQ-9)"
+* item[12].extension[1].url = $sdc-questionnaire-observation-extract
+* item[12].extension[1].valueBoolean = true
+* item[12].extension[2].url = $hl7-questionnaire-unit
+* item[12].extension[2].valueCoding.system = $UCUM
+* item[12].extension[2].valueCoding.code = #{score}
+* item[12].extension[3].url = $sdc-questionnaire-observation-extract-category
+* item[12].extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
+* item[12].extension[3].valueCodeableConcept.coding.code = #survey
+* item[12].extension[4].url = "http://hl7.org/fhir/StructureDefinition/cqf-citation"
+* item[12].extension[4].valueString = "PROsetta Stone® PHQ-9 to PROMIS Depression Crosswalk Table. Available at: https://www.prosettastone.org"
 

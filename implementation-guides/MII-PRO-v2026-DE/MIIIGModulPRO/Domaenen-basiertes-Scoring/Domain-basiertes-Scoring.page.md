@@ -7,6 +7,31 @@ topic: Domain-basiertes-Scoring
 
 Die Harmonisierung von Patient-Reported Outcomes über verschiedene Messinstrumente ist eine zentrale Herausforderung der modernen Versorgungsforschung. Domain-basiertes Scoring löst das Problem der Fragmentierung durch die Abbildung verschiedener Instrumente auf gemeinsame Gesundheitsdomänen.
 
+### Aktuelle wissenschaftliche Evidenz für Domain-basierte Harmonisierung
+
+Zwei rezente Publikationen aus 2025 liefern empirische Evidenz für die methodische Validität des Domain-basierten Harmonisierungsansatzes:
+
+**Intra-Domain Harmonisierung (Riazy et al., 2025)**
+
+Die Studie von Riazy et al. präsentiert populationsbasierte Referenzdaten für sechs etablierte Depressionsinstrumente (PHQ-9, PHQ-8, CES-D 8, PROMIS Depression SF 4a/8a, WHO-5) aus 29 europäischen Ländern (n=287,530) basierend auf der EHIS Wave 3 Erhebung. Die Arbeit demonstriert die Machbarkeit der Harmonisierung verschiedener Instrumente innerhalb einer einzelnen Gesundheitsdomäne und unterstützt damit den im MII PRO Modul verfolgten Ansatz der domänenspezifischen Score-Transformation.
+
+Referenz: Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. *JAMA Netw Open*. 2025;8(6):e2517394.
+
+**Cross-Domain Harmonisierung (Oerlemans et al., 2025)**
+
+Oerlemans et al. entwickelten und validierten Crosswalks zwischen dem multidimensionalen EORTC QLQ-C30 und domänenspezifischen PROMIS-Instrumenten. Die erreichten Korrelationen (r = 0.65-0.85) über sieben Gesundheitsdomänen hinweg demonstrieren die Praktikabilität der Transformation von Multi-Domain-Assessments in domänenspezifische Metriken. Diese Methodik ermöglicht die Integration etablierter comprehensive Instrumente in eine Domain-basierte Architektur.
+
+Referenz: Oerlemans S, et al. Crosswalks between EORTC QLQ-C30 and PROMIS measures: Harmonizing patient-reported outcomes across cancer trials. *J Clin Epidemiol*. 2025. DOI: 10.1016/j.jclinepi.2025.111705.
+
+**Implikationen für die MII PRO Implementierung**
+
+Diese Arbeiten liefern wichtige empirische Grundlagen für die konzeptionelle Ausrichtung des MII PRO Moduls:
+- Die methodische Validität der Harmonisierung über verschiedene Instrumente ist nachgewiesen
+- Sowohl intra-domäne als auch cross-domäne Transformationen zeigen akzeptable psychometrische Eigenschaften
+- Die internationale Forschungsgemeinschaft bewegt sich in Richtung harmonisierter, domänenbasierter PRO-Systeme
+
+Die zeitliche Nähe dieser Publikationen zum Ballotierungsprozess verhinderte ihre vollständige Integration in die aktuelle Version, sie bestätigen jedoch die gewählte Architektur und informieren zukünftige Entwicklungen.
+
 **Verwandte Seiten:**
 - [Gesundheitsdomänen](Domaenen.page.md) - Definition der 9 PROMIS Core Domains
 - [Cross-Instrument Mappings](Cross-Instrument-Mappings.page.md) - Konkrete Mapping-Tabellen
@@ -41,6 +66,28 @@ Observation: Depression T-Score Instance
 └── method: IRT-Berechnung oder Cross-Walking
 ```
 
+#### Europäische Referenzdaten für Depression
+
+Riazy et al. (2025) liefern umfassende Referenzdaten aus 29 europäischen Ländern für 6 häufig verwendete Depressionsinstrumente ([JAMA Netw Open 2025](https://doi.org/10.1001/jamanetworkopen.2025.17394)):
+
+**Instrumente mit Normdaten:**
+- PHQ-9 (Patient Health Questionnaire-9)
+- PHQ-8 (ohne Suizidalität)
+- CES-D 8 (Center for Epidemiologic Studies Depression Scale)
+- PROMIS Depression SF 4a und SF 8a
+- WHO-5 Well-Being Index
+
+**Stichprobe:**
+- N = 287,530 Teilnehmer aus EHIS Wave 3
+- Repräsentativ für 29 EU-Länder
+- Stratifiziert nach Alter, Geschlecht, Land
+
+**Anwendung für MII PRO:**
+- Populationsspezifische Referenzbereiche für Deutschland
+- Ermöglicht faire Benchmarks zwischen Einrichtungen
+- Basis für altersstratifizierte Cut-offs
+- Unterstützt Cross-Walking zwischen Instrumenten
+
 #### Mapping-Strategien
 
 **1. Item Response Theory (IRT)**
@@ -63,7 +110,18 @@ IRT-Vorteile:
 - Empirisch validierte Konversionstabellen
 - PHQ-9 (0-27) → T-Score (40-85)
 - BDI-II (0-63) → T-Score (40-85)
+- EORTC QLQ-C30 → PROMIS T-Scores (siehe Oerlemans et al. 2025)
 - Basierend auf Equiperzentil-Matching
+
+**Neue validierte Crosswalks (2025):**
+Oerlemans et al. haben umfassende Crosswalks zwischen EORTC QLQ-C30 und PROMIS entwickelt ([J Clin Epidemiol 2025](https://www.jclinepi.com/article/S0895-4356(25)00186-6/fulltext)):
+- Physical Functioning → PROMIS Physical Function (r > 0.80)
+- Fatigue → PROMIS Fatigue (r > 0.85)
+- Emotional Functioning → PROMIS Anxiety/Depression (r > 0.75)
+- Pain → PROMIS Pain Interference (r > 0.80)
+- Social Functioning → PROMIS Social Function (r > 0.70)
+- Cognitive Functioning → PROMIS Cognitive Function (r = 0.65)
+- Global Health/QoL → PROMIS Global Health (r > 0.75)
 
 #### Mapping-Limitationen
 
@@ -173,6 +231,71 @@ define "Depression T-Score from PHQ-9":
 2. **Vergleichbarkeit**: Einrichtungsübergreifende Benchmarks
 3. **Flexibilität**: Freie Instrumentenwahl bei erhaltener Vergleichbarkeit
 4. **Skalierbarkeit**: Neue Instrumente integrierbar ohne Systemumbau
+
+### ObservationDefinition Katalog
+
+Da ObservationDefinitions in FHIR R4 keine kanonischen URLs unterstützen und nicht direkt im IG gerendert werden können, bietet diese Übersicht einen strukturierten Zugang zu allen definierten Score-Definitionen:
+
+#### Depression & Stimmung
+| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+|------------|-----------|------------|---------|----------------------|---------------------|
+| PHQ-9 | Total Score | 44261-6 | 0-27 | mii-obsdef-pro-phq-9-total-score | [MII_PR_PRO_PHQ9_Score](../Technische-Implementierung/FHIR-Profile/PHQ-9-Score.page.md) |
+| BDI-II | Total Score | 89209-1 | 0-63 | mii-obsdef-pro-score-bdi-ii | MII_PR_PRO_BDI_II_Score |
+| PROMIS Depression | T-Score | 77861-3 | 20-80 | mii-obsdef-pro-depression-t-score | [MII_PR_PRO_Depression_TScore](../Technische-Implementierung/FHIR-Profile/Depression-TScore.page.md) |
+| PROMIS-29 Depression | T-Score | 71958-6 | 20-80 | mii-obsdef-pro-promis-29-depression-tscore | MII_PR_PRO_PROMIS_29_Depression_TScore |
+| PROMIS Cognitive Function SF4a | Raw Score | 81533-2 | 4-20 | mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score |
+| PROMIS Cognitive Function SF4a | T-Score | 81538-1 | 20-80 | mii-obsdef-pro-promis-cognitive-function-sf4a-tscore | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |
+
+#### Angst & Stress
+| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+|------------|-----------|------------|---------|----------------------|---------------------|
+| PROMIS-29 Anxiety | T-Score | 71953-7 | 20-80 | mii-obsdef-pro-promis-29-anxiety-tscore | MII_PR_PRO_PROMIS_29_Anxiety_TScore |
+
+#### Körperliche Funktion
+| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+|------------|-----------|------------|---------|----------------------|---------------------|
+| PROMIS-29 Physical Function | T-Score | 71962-8 | 20-80 | mii-obsdef-pro-promis-29-physical-function-tscore | MII_PR_PRO_PROMIS_29_Physical_Function_TScore |
+
+#### Lebensqualität (Multi-Domain)
+| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+|------------|-----------|------------|---------|----------------------|---------------------|
+| EQ-5D-5L | Index Score | 91382-2 | -0.661 bis 1.0 | mii-obsdef-pro-score-eq5d5l-index | [MII_PR_PRO_Observation_EQ5D5L_Index](../PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md) |
+| EQ-5D-5L | VAS | 91383-0 | 0-100 | mii-obsdef-pro-score-eq5d5l-vas | [MII_PR_PRO_Observation_EQ5D5L_VAS](../PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md) |
+| EQ-5D-5L | Profile | 91381-4 | 11111-55555 | mii-obsdef-pro-score-eq5d5l-profile | [MII_PR_PRO_Observation_EQ5D5L_Profile](../PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md) |
+
+#### Müdigkeit & Schlaf
+| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+|------------|-----------|------------|---------|----------------------|---------------------|
+| PROMIS-29 Fatigue | T-Score | 71959-4 | 20-80 | mii-obsdef-pro-promis-29-fatigue-tscore | MII_PR_PRO_PROMIS_29_Fatigue_TScore |
+| PROMIS-29 Sleep Disturbance | T-Score | 71964-4 | 20-80 | mii-obsdef-pro-promis-29-sleep-disturbance-tscore | MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore |
+
+#### Schmerz
+| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+|------------|-----------|------------|---------|----------------------|---------------------|
+| PROMIS-29 Pain Intensity | 0-10 Scale | 71965-1 | 0-10 | mii-obsdef-pro-promis-29-pain-intensity | MII_PR_PRO_PROMIS_29_Pain_Intensity |
+| PROMIS-29 Pain Interference | T-Score | 71961-0 | 20-80 | mii-obsdef-pro-promis-29-pain-interference-tscore | MII_PR_PRO_PROMIS_29_Pain_Interference_TScore |
+
+#### Soziale Funktion
+| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+|------------|-----------|------------|---------|----------------------|---------------------|
+| PROMIS-29 Social Function | T-Score | 71966-9 | 20-80 | mii-obsdef-pro-promis-29-social-function-tscore | MII_PR_PRO_PROMIS_29_Social_Function_TScore |
+
+#### Technische Hinweise
+
+**ObservationDefinition Eigenschaften:**
+- **instantiatesCanonical**: Alle Observation Profiles referenzieren ihre ObservationDefinition über die instantiatesCanonical Extension
+- **ScoreHealthCorrelation**: Definiert ob höhere Werte bessere oder schlechtere Gesundheit bedeuten
+- **T-Score Metrik**: PROMIS T-Scores verwenden Mean=50, SD=10 als Normierung
+- **Populationsnormen**: Referenzbereiche basieren auf deutschen oder europäischen Normstichproben
+
+**Verwendung in der Praxis:**
+```fhir
+Observation
+├── code: LOINC Code aus ObservationDefinition
+├── valueQuantity: Berechneter Score
+├── extension[instantiatesCanonical]: Verweis auf ObservationDefinition
+└── derivedFrom: QuestionnaireResponse oder andere Observation
+```
 
 ### Zusammenfassung
 

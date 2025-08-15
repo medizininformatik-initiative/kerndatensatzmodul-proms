@@ -1,10 +1,8 @@
-# {{page-title}} 
-
-
 ---
 parent: 
 ---
-# Kerndatensatz Erweiterungsmodul PROs
+
+# Kerndatensatz Modul PROs, PROMs und abgeleitete Metriken
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
 
