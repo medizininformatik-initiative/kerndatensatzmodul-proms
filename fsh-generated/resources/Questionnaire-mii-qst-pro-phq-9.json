@@ -47,6 +47,14 @@
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     },
     {
+      "valueExpression": {
+        "name": "rawScore",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    },
+    {
       "extension": [
         {
           "valueCoding": {

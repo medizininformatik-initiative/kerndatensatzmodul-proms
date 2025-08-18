@@ -206,10 +206,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
             }
           ],
           "valueString": "Fehlender Wert",
@@ -393,10 +389,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
             }
           ],
           "valueString": "Fehlender Wert",
@@ -580,10 +572,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
             }
           ],
           "valueString": "Fehlender Wert",
@@ -767,10 +755,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
             }
           ],
           "valueString": "Fehlender Wert",
@@ -954,10 +938,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
               "valueDecimal": 9
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-              "valueBoolean": true
             }
           ],
           "valueString": "Fehlender Wert",
@@ -1157,12 +1137,15 @@
           "display": "Health assessment questionnaire score"
         }
       ],
-      "initial": [
-        {
-          "valueInteger": 999
-        }
-      ],
       "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 100
+        },
         {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
           "valueBoolean": true
@@ -1186,6 +1169,11 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
         }
       ],
+      "initial": [
+        {
+          "valueInteger": 999
+        }
+      ],
       "linkId": "euroqol-eq5d5l-vas",
       "type": "integer",
       "text": "IHRE GESUNDHEIT HEUTE",
@@ -1203,14 +1191,6 @@
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/minValue",
-            "valueInteger": 0
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-            "valueInteger": 100
           }
         ]
       },

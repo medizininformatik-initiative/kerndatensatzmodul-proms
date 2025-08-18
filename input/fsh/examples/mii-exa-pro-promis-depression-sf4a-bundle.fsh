@@ -8,7 +8,7 @@ Usage: #example
 * timestamp = "2024-01-15T10:35:00Z"
 
 // Patient
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/example-patient"
+* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
 * entry[=].resource = mii-exa-pro-patient
 
 // QuestionnaireResponse

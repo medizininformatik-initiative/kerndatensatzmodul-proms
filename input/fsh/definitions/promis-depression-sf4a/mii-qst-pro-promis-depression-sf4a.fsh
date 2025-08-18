@@ -141,12 +141,13 @@ Usage: #definition
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, iif(%rawScore=6, 51.8, iif(%rawScore=7, 53.9, iif(%rawScore=8, 55.7, iif(%rawScore=9, 57.3, iif(%rawScore=10, 58.9, iif(%rawScore=11, 60.5, iif(%rawScore=12, 62.2, iif(%rawScore=13, 63.9, iif(%rawScore=14, 65.7, iif(%rawScore=15, 67.5, iif(%rawScore=16, 69.4, iif(%rawScore=17, 71.2, iif(%rawScore=18, 73.3, iif(%rawScore=19, 75.7, iif(%rawScore=20, 79.4, {}))))))))))))))))))"
+* item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, iif(%rawScore=6, 51.8, iif(%rawScore=7, 53.9, iif(%rawScore=8, 55.7, iif(%rawScore=9, 57.3, iif(%rawScore=10, 58.9, iif(%rawScore=11, 60.5, iif(%rawScore=12, 62.2, iif(%rawScore=13, 63.9, iif(%rawScore=14, 65.7, iif(%rawScore=15, 67.5, iif(%rawScore=16, 69.4, iif(%rawScore=17, 71.2, iif(%rawScore=18, 73.3, iif(%rawScore=19, 75.7, iif(%rawScore=20, 79.4, {})))))))))))))))))"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
+/*
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
 * item[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
-* item[=].extension[=].valueBoolean = true
+* item[=].extension[=].valueBoolean = true*/

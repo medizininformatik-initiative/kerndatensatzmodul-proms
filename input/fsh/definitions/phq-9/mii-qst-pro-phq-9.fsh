@@ -18,6 +18,11 @@ Usage: #definition
 * extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "rawScore"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+
 // SDC pre-population configuration for server-side calculation use case
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
 * extension[=].extension[+].url = "name"
@@ -598,6 +603,7 @@ Usage: #definition
 * item[10].extension[3].url = $sdc-questionnaire-observation-extract-category
 * item[10].extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[10].extension[3].valueCodeableConcept.coding.code = #survey
+
 
 // PROMIS Depression T-Score (derived from PHQ-9 via PROsetta Stone crosswalk)
 * item[12].linkId = "phq-phq9-promis-tscore"
