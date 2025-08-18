@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_PROMIS_Frequency_Response_Scale",
+  "id": "mii-vs-pro-promis-frequency-response-scale",
+  "title": "MII VS PRO PROMIS Frequency Response Scale",
+  "description": "PROMIS Frequency response scale: Nie - Immer",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale",
+  "experimental": true,
+  "language": "de",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6270-8",
+            "display": "Nie"
+          },
+          {
+            "code": "LA10066-1",
+            "display": "Selten"
+          },
+          {
+            "code": "LA10082-8",
+            "display": "Manchmal"
+          },
+          {
+            "code": "LA10044-8",
+            "display": "Oft"
+          },
+          {
+            "code": "LA9933-8",
+            "display": "Immer"
+          }
+        ]
+      }
+    ]
+  }
+}

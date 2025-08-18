@@ -83,6 +83,14 @@
               }
             ],
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+          },
+          {
+            "valueExpression": {
+              "name": "phq9Score",
+              "language": "text/fhirpath",
+              "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/variable"
           }
         ],
         "item": [
@@ -1561,7 +1569,7 @@
                 "valueExpression": {
                   "name": "Scoreberechnung",
                   "language": "text/fhirpath",
-                  "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+                  "expression": "%phq9Score"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
               },
@@ -1592,7 +1600,7 @@
             "type": "decimal",
             "prefix": "Auswertung",
             "readOnly": true,
-            "text": "Gesamtwert",
+            "text": "PHQ-9 Gesamtwert",
             "_text": {
               "extension": [
                 {
@@ -1603,7 +1611,7 @@
                     },
                     {
                       "url": "content",
-                      "valueString": "Total Score"
+                      "valueString": "PHQ-9 Total Score"
                     }
                   ],
                   "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1761,8 +1769,6 @@
                   "url": "http://hl7.org/fhir/StructureDefinition/translation"
                 }
               ]
-            },
-            "readOnly": true
           }
         ],
         "status": "active",

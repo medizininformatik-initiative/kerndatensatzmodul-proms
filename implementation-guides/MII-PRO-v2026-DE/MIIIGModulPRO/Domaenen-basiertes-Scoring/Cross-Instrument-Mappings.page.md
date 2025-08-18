@@ -3,17 +3,22 @@ topic: Cross-Instrument Mappings
 ---
 ## {{page-title}}
 
-### Überblick
+### Ãœberblick
 
-Cross-Instrument Mapping ermöglicht die Übersetzung von Scores zwischen verschiedenen PRO-Instrumenten, die dasselbe Konstrukt messen. Dies ist essentiell für die Harmonisierung von Daten aus verschiedenen Quellen und die Vergleichbarkeit von Studienergebnissen.
+Cross-Instrument Mapping ermÃ¶glicht die Ãœbersetzung von Scores zwischen verschiedenen PRO-Instrumenten, die dasselbe Konstrukt messen. Dies ist essentiell fÃ¼r die Harmonisierung von Daten aus verschiedenen Quellen und die Vergleichbarkeit von Studienergebnissen.
+
+**Verwandte Seiten:**
+- [DomÃ¤nen](Domaenen.page.md) - Ãœbersicht Ã¼ber die GesundheitsdomÃ¤nen
+- [Domain-basiertes Scoring](Domain-basiertes-Scoring.page.md) - Methodische Grundlagen
+- [Technische Implementierung](../Technische-Implementierung/Index.page.md) - FHIR-Profile und ConceptMaps
 
 ### Mapping-Methoden
 
 #### 1. Equiperzentil-Linking
-Die häufigste Methode basiert auf der Annahme, dass Personen mit demselben Perzentilrang in verschiedenen Instrumenten dasselbe Niveau des gemessenen Konstrukts aufweisen.
+Die hÃ¤ufigste Methode basiert auf der Annahme, dass Personen mit demselben Perzentilrang in verschiedenen Instrumenten dasselbe Niveau des gemessenen Konstrukts aufweisen.
 
 #### 2. IRT-basierte Kalibrierung
-Item Response Theory ermöglicht die Platzierung verschiedener Instrumente auf einer gemeinsamen Metrik durch Co-Kalibrierung.
+Item Response Theory ermÃ¶glicht die Platzierung verschiedener Instrumente auf einer gemeinsamen Metrik durch Co-Kalibrierung. Details zur IRT-Methodik siehe [Domain-basiertes Scoring](Domain-basiertes-Scoring.page.md#mapping-strategien).
 
 #### 3. Regressionsbasierte Vorhersage
 Lineare oder nicht-lineare Regressionsmodelle zur Vorhersage von Scores eines Instruments basierend auf einem anderen.
@@ -24,11 +29,11 @@ Die folgende Abbildung zeigt validierte Mappings zwischen PROMIS Depression T-Sc
 
 ![Depression Scale Mappings](../../Images/Mapping-depression-scales.png)
 
-**Abbildung 1:** *Translations of PROMIS T-Scores to other scales - Comprehensive mapping table für Depression Domain*
+**Abbildung 1:** *Translations of PROMIS T-Scores to other scales - Comprehensive mapping table fÃ¼r Depression Domain*
 
 #### Interpretationshilfe zur Mapping-Tabelle
 
-Die Tabelle zeigt für jeden PROMIS T-Score (horizontale Achse, 30-90):
+Die Tabelle zeigt fÃ¼r jeden PROMIS T-Score (horizontale Achse, 30-90):
 - **Obere Zeile**: Korrespondierender Raw Score des jeweiligen Instruments
 - **Untere Zeile (in Klammern)**: 95% Konfidenzintervall
 
@@ -38,31 +43,36 @@ Die Tabelle zeigt für jeden PROMIS T-Score (horizontale Achse, 30-90):
   - BDI-II: Score von 20 (95% CI: 21.22-26.01)
   - HADS: Score von 15 (95% CI: 14.74-15.75)
 
-#### Unterstützte Instrumente im Depression Mapping
+#### UnterstÃ¼tzte Instrumente im Depression Mapping
 
 1. **BDI-II** (Beck Depression Inventory-II)
    - Range: 0-63
    - Cut-offs: Minimal (0-13), Mild (14-19), Moderate (20-28), Severe (29-63)
+   - Siehe auch: [BDI-II in PRO-Bibliothek](../PRO-Bibliothek/BDI-II/Index.page.md)
 
 2. **CES-D** (Center for Epidemiologic Studies Depression Scale)
    - Range: 0-60
-   - Clinical cut-off: e16
+   - Clinical cut-off: â‰¥16
+   - Siehe auch: [Minimal Reference Questionnaires](../PRO-Bibliothek/Minimal-Reference-Questionnaires/Index.page.md)
 
 3. **EPDS** (Edinburgh Postnatal Depression Scale)
    - Range: 0-30
-   - Clinical cut-off: e10
+   - Clinical cut-off: â‰¥10
+   - Siehe auch: [Minimal Reference Questionnaires](../PRO-Bibliothek/Minimal-Reference-Questionnaires/Index.page.md)
 
 4. **HADS** (Hospital Anxiety and Depression Scale - Depression Subscale)
    - Range: 0-21
    - Cut-offs: Normal (0-7), Mild (8-10), Moderate (11-14), Severe (15-21)
+   - Siehe auch: [Minimal Reference Questionnaires](../PRO-Bibliothek/Minimal-Reference-Questionnaires/Index.page.md)
 
 5. **K6** (Kessler Psychological Distress Scale)
    - Range: 6-30
-   - Serious mental illness indicator: e13
+   - Serious mental illness indicator: â‰¥13
+   - Siehe auch: [Minimal Reference Questionnaires](../PRO-Bibliothek/Minimal-Reference-Questionnaires/Index.page.md)
 
 6. **PHQ-2** (Patient Health Questionnaire-2)
    - Range: 0-6
-   - Screening cut-off: e3
+   - Screening cut-off: â‰¥3
 
 7. **PHQ-8** (Patient Health Questionnaire-8)
    - Range: 0-24
@@ -71,6 +81,7 @@ Die Tabelle zeigt für jeden PROMIS T-Score (horizontale Achse, 30-90):
 8. **PHQ-9** (Patient Health Questionnaire-9)
    - Range: 0-27
    - Cut-offs: Minimal (0-4), Mild (5-9), Moderate (10-14), Moderately Severe (15-19), Severe (20-27)
+   - Siehe auch: [PHQ-9 in PRO-Bibliothek](../PRO-Bibliothek/PHQ-9/Index.page.md)
 
 ### Praktische Anwendung
 
@@ -80,26 +91,26 @@ Eine multizentrische Studie verwendet verschiedene Instrumente:
 - Zentrum B: BDI-II
 - Zentrum C: HADS
 
-Lösung: Alle Scores werden auf PROMIS T-Scores gemappt für einheitliche Analyse.
+LÃ¶sung: Alle Scores werden auf PROMIS T-Scores gemappt fÃ¼r einheitliche Analyse.
 
 #### Use Case 2: Instrumentenwechsel in Langzeitstudien
 Patient wurde initial mit BDI-II (Score: 25) bewertet, Follow-up mit PHQ-9:
-1. BDI-II Score 25 ’ PROMIS T-Score ~62
+1. BDI-II Score 25 â†’ PROMIS T-Score ~62
 2. Erwarteter PHQ-9 Score bei gleichem Schweregrad: ~11-12
 
 #### Use Case 3: Meta-Analysen
-Systematische Reviews können Effektstärken über Studien mit verschiedenen Instrumenten vergleichen durch Transformation auf gemeinsame PROMIS-Metrik.
+Systematische Reviews kÃ¶nnen EffektstÃ¤rken Ã¼ber Studien mit verschiedenen Instrumenten vergleichen durch Transformation auf gemeinsame PROMIS-Metrik.
 
 ### Wichtige Limitationen
 
 #### 1. Konfidenzintervalle beachten
-Die Konfidenzintervalle zeigen die Unsicherheit der Mappings. Bei kritischen klinischen Entscheidungen sollten diese Intervalle berücksichtigt werden.
+Die Konfidenzintervalle zeigen die Unsicherheit der Mappings. Bei kritischen klinischen Entscheidungen sollten diese Intervalle berÃ¼cksichtigt werden.
 
-#### 2. Populationsspezifität
-Mappings wurden in spezifischen Populationen entwickelt und validiert. Generalisierbarkeit auf andere Populationen (z.B. verschiedene Kulturen, Altersgruppen) sollte geprüft werden.
+#### 2. PopulationsspezifitÃ¤t
+Mappings wurden in spezifischen Populationen entwickelt und validiert. Generalisierbarkeit auf andere Populationen (z.B. verschiedene Kulturen, Altersgruppen) sollte geprÃ¼ft werden.
 
 #### 3. Konzeptuelle Unterschiede
-Trotz Messung desselben Konstrukts können Instrumente unterschiedliche Aspekte betonen:
+Trotz Messung desselben Konstrukts kÃ¶nnen Instrumente unterschiedliche Aspekte betonen:
 - PHQ-9: DSM-5 Kriterien-basiert
 - BDI-II: Kognitive Symptome betont
 - HADS: Somatische Symptome ausgeschlossen
@@ -110,6 +121,8 @@ An den Extremen der Skalen kann die Mapping-Genauigkeit abnehmen, besonders bei:
 - Sehr hohen Scores (Ceiling-Effekt)
 
 ### Implementierung in FHIR
+
+Details zur technischen Implementierung siehe [FHIR-Profile](../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md).
 
 #### ConceptMap Resource
 ```fsh
@@ -139,12 +152,12 @@ InstanceOf: Observation
 * note.text = "Mapped from PHQ-9 raw score of 10 (95% CI: 7.55-8.91)"
 ```
 
-### Qualitätssicherung
+### QualitÃ¤tssicherung
 
 #### Validierungsanforderungen
-1. **Concurrent Validity**: Korrelation zwischen gemappten Scores e0.8
-2. **Classification Accuracy**: Übereinstimmung der Schweregradkategorien e85%
-3. **Test-Retest Reliability**: ICC e0.75 für gemappte Scores
+1. **Concurrent Validity**: Korrelation zwischen gemappten Scores â‰¥0.8
+2. **Classification Accuracy**: Ãœbereinstimmung der Schweregradkategorien â‰¥85%
+3. **Test-Retest Reliability**: ICC â‰¥0.75 fÃ¼r gemappte Scores
 
 #### Dokumentationsstandards
 Bei jedem Mapping dokumentieren:
@@ -153,16 +166,18 @@ Bei jedem Mapping dokumentieren:
 - Mapping-Methode und Version
 - Populationsreferenz
 
-### Zukünftige Entwicklungen
+### ZukÃ¼nftige Entwicklungen
 
 #### Geplante Mappings (2026-2027)
-- **Angst-Domäne**: GAD-7 ” PROMIS Anxiety ” HADS-A
-- **Fatigue-Domäne**: FACIT-F ” PROMIS Fatigue ” FSS
-- **Schmerz-Domäne**: BPI ” PROMIS Pain ” NRS
+- **Angst-DomÃ¤ne**: GAD-7 â†” PROMIS Anxiety â†” HADS-A
+- **Fatigue-DomÃ¤ne**: FACIT-F â†” PROMIS Fatigue â†” FSS
+- **Schmerz-DomÃ¤ne**: BPI â†” PROMIS Pain â†” NRS
+
+Weitere Details zur Roadmap siehe [Geplanter Umfang](../../Geplanter-Umfang.page.md).
 
 #### Methodische Verbesserungen
 - Machine Learning-basierte Mappings
-- Individuelle Präzisionsschätzungen
+- Individuelle PrÃ¤zisionsschÃ¤tzungen
 - Dynamische, populationsspezifische Mappings
 - Real-time Mapping-Updates basierend auf neuen Daten
 
@@ -170,12 +185,22 @@ Bei jedem Mapping dokumentieren:
 
 #### Online-Rechner
 - [PROMIS Score Converter](https://www.healthmeasures.net/score-and-interpret/calculate-scores)
-- PROsetta Stone (NIH-geförderte Mapping-Initiative)
+- PROsetta Stone (NIH-gefÃ¶rderte Mapping-Initiative)
 
 #### Wissenschaftliche Publikationen
 - Choi et al. (2014): "Establishing a common metric for depressive symptoms"
 - Schalet et al. (2015): "Linking scores with patient-reported health outcome instruments"
 
+#### Verwandte Dokumentation
+- [Scoring Methodologie](../Technische-Implementierung/Scoring.page.md)
+- [Terminologie-Strategien](../Technische-Implementierung/Terminologie-Strategien.page.md)
+- [Developer Reference](../../Developer-Reference.page.md)
+
 ### Zusammenfassung
 
-Cross-Instrument Mappings sind ein kraftvolles Werkzeug zur Harmonisierung von PRO-Daten. Die Depression-Domäne zeigt exemplarisch, wie verschiedene etablierte Instrumente auf eine gemeinsame PROMIS-Metrik abgebildet werden können. Trotz inhärenter Limitationen ermöglichen diese Mappings bessere Datenintegration, Vergleichbarkeit und kontinuierliche Patientenbetreuung über verschiedene Settings hinweg.
+Cross-Instrument Mappings sind ein kraftvolles Werkzeug zur Harmonisierung von PRO-Daten. Die Depression-DomÃ¤ne zeigt exemplarisch, wie verschiedene etablierte Instrumente auf eine gemeinsame PROMIS-Metrik abgebildet werden kÃ¶nnen. Trotz inhÃ¤renter Limitationen ermÃ¶glichen diese Mappings bessere Datenintegration, Vergleichbarkeit und kontinuierliche Patientenbetreuung Ã¼ber verschiedene Settings hinweg.
+
+**NÃ¤chste Schritte:**
+- Erkunden Sie die [Depression-DomÃ¤ne](Domaenen.page.md#1-depression-domÃ¤ne-promis-core-domain) im Detail
+- Verstehen Sie die [methodischen Grundlagen](Domain-basiertes-Scoring.page.md) des Domain-basierten Scorings
+- Implementieren Sie [FHIR ConceptMaps](../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md) fÃ¼r Ihre Institution

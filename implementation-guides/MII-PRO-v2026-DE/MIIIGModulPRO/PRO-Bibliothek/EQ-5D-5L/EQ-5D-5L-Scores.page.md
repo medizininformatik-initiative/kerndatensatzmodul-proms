@@ -71,62 +71,82 @@ Die Score-Definitionen basieren auf der Publikation:
 
 ---
 
-## ObservationDefinition Profile
+## Observation Profile
 
 ### EQ-5D-5L Index Score
 
-{{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index}}
-
-#### Tabs {.tabset}
-
-##### Tree
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index, buttons}}
-
-##### XML
-
-{{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index}}
-
-##### JSON
-
-{{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index}}
+<tabs>
+  <tab title="Table">
+    {{table:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index, buttons, diff}}
+  </tab>
+  <tab title="Tree">
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index}}
+  </tab>
+  <tab title="XML">
+    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index}}
+  </tab>
+  <tab title="JSON">
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index}}
+  </tab>
+</tabs>
 
 ---
 
 ### EQ-5D-5L VAS Score
 
-{{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas}}
-
-#### Tabs {.tabset}
-
-##### Tree
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas, buttons}}
-
-##### XML
-
-{{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas}}
-
-##### JSON
-
-{{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas}}
+<tabs>
+  <tab title="Table">
+    {{table:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas, buttons, diff}}
+  </tab>
+  <tab title="Tree">
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas}}
+  </tab>
+  <tab title="XML">
+    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas}}
+  </tab>
+  <tab title="JSON">
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas}}
+  </tab>
+</tabs>
 
 ---
 
 ### EQ-5D-5L Profile
 
-{{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile}}
+<tabs>
+  <tab title="Table">
+    {{table:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile, buttons, diff}}
+  </tab>
+  <tab title="Tree">
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile}}
+  </tab>
+  <tab title="XML">
+    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile}}
+  </tab>
+  <tab title="JSON">
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile}}
+  </tab>
+</tabs>
 
-#### Tabs {.tabset}
+---
 
-##### Tree
+## ObservationDefinition Instances
 
-{{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile, buttons}}
+Die ObservationDefinition-Ressourcen spezifizieren die Messmethodik und Referenzbereiche für die EQ-5D-5L Scores. Diese Instanzen basieren auf dem [MII_PR_PRO_Score_Blueprint Profil](../../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md#observationdefinition-blueprint).
 
-##### XML
+### Implementierte ObservationDefinitions:
 
-{{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile}}
+- **EQ-5D-5L Index**: `mii-obsdef-pro-score-eq5d5l-index`
+  - SNOMED: 736534008 "EuroQol five dimension five level index value"
+  - Wertebereich: -0.661 bis 1.000
+  
+- **EQ-5D-5L VAS**: `mii-obsdef-pro-score-eq5d5l-vas`
+  - SNOMED: 736535009 "EuroQol visual analogue score"
+  - Wertebereich: 0 bis 100
+  
+- **EQ-5D-5L Profile**: `mii-obsdef-pro-score-eq5d5l-profile`
+  - Format: 5-stellige Zahl (z.B. "21234")
 
-##### JSON
+Diese ObservationDefinitions werden von den Observation-Profilen über das `instantiates` Element referenziert.
 
-{{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile}}
+**Technische Einschränkung**: ObservationDefinition-Instanzen besitzen in FHIR R4 keine kanonischen URLs, weshalb die Simplifier-Rendering-Funktionen nicht direkt verwendet werden können.

@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-pro-promis-29-pain-intensity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity",
+  "name": "MII_PR_PRO_PROMIS_29_Pain_Intensity",
+  "title": "MII PR PRO PROMIS-29 Pain Intensity",
+  "status": "draft",
+  "experimental": true,
+  "description": "Profile for PROMIS-29 Pain Intensity single item Observations",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.extension:instantiatesCanonical",
+        "path": "Observation.extension",
+        "sliceName": "instantiatesCanonical"
+      },
+      {
+        "id": "Observation.extension:instantiatesCanonical.value[x]",
+        "path": "Observation.extension.value[x]",
+        "patternCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "75261-3",
+              "system": "http://loinc.org",
+              "display": "How would you rate your pain on average"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "fixedString": "1"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "fixedCode": "1"
+      },
+      {
+        "id": "Observation.method.text",
+        "path": "Observation.method.text",
+        "patternString": "PROMIS-29 Profile v2.1 - Pain Intensity single item"
+      }
+    ]
+  }
+}
