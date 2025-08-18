@@ -58,7 +58,7 @@
       "valueExpression": {
         "name": "rawScore",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }
@@ -381,7 +381,7 @@
           }
         }
       ],
-      "linkId": "promis-eddep05",
+      "linkId": "promis-eddep41",
       "type": "choice",
       "text": "...fühlte ich mich hoffnungslos"
     },

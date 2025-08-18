@@ -29,37 +29,37 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "physicalFunctionRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(pfa11|pfa21|pfa23|pfa53)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "anxietyRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(edanx01|edanx40|edanx41|edanx53)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "depressionRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(eddep04|eddep06|eddep29|eddep41)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "fatigueRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "sleepRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "socialRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(srpper11|srpper18|srpper23|srpper46)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.ordinal().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "painInterferenceRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-(painin9|painin22|painin31|painin34)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.ordinal().sum()"
 
 // ===== PHYSICAL FUNCTION DOMAIN =====
 * item[+].linkId = "PROMIS-29.PhysicalFunction"
@@ -284,7 +284,7 @@ Usage: #definition
 * item[=].item[=].text = "In den vergangenen 7 Tagen..."
 
 // Anxiety Item 1
-* item[=].item[+].linkId = "promis-anxiety61930"
+* item[=].item[+].linkId = "promis-edanx01"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61930-4 "In the past 7 days - I felt fearful"
 * item[=].item[=].text = "...fühlte ich mich ängstlich"
@@ -330,7 +330,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Anxiety Item 2
-* item[=].item[+].linkId = "promis-anxiety61941"
+* item[=].item[+].linkId = "promis-edanx40"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61941-1 "In the past 7 days - I found it hard to focus on anything other than my anxiety"
 * item[=].item[=].text = "...fiel es mir schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
@@ -376,7 +376,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Anxiety Item 3
-* item[=].item[+].linkId = "promis-anxiety61938"
+* item[=].item[+].linkId = "promis-edanx41"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61938-7 "In the past 7 days - My worries overwhelmed me"
 * item[=].item[=].text = "...überwältigten mich meine Sorgen"
@@ -422,7 +422,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Anxiety Item 4
-* item[=].item[+].linkId = "promis-anxiety61949"
+* item[=].item[+].linkId = "promis-edanx53"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61949-4 "In the past 7 days - I felt uneasy"
 * item[=].item[=].text = "...fühlte ich mich unruhig"
@@ -477,7 +477,7 @@ Usage: #definition
 * item[=].item[=].text = "In den vergangenen 7 Tagen..."
 
 // Depression Item 1
-* item[=].item[+].linkId = "promis-dep61953"
+* item[=].item[+].linkId = "promis-eddep04"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61953-6 "In the past 7 days - I felt worthless"
 * item[=].item[=].text = "...fühlte ich mich wertlos"
@@ -523,7 +523,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Depression Item 2
-* item[=].item[+].linkId = "promis-dep61955"
+* item[=].item[+].linkId = "promis-eddep06"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61955-1 "In the past 7 days - I felt helpless"
 * item[=].item[=].text = "...fühlte ich mich hilflos"
@@ -569,7 +569,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Depression Item 3
-* item[=].item[+].linkId = "promis-dep61967"
+* item[=].item[+].linkId = "promis-eddep29"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61967-6 "In the past 7 days - I felt depressed"
 * item[=].item[=].text = "...fühlte ich mich deprimiert"
@@ -615,7 +615,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Depression Item 4
-* item[=].item[+].linkId = "promis-dep61973"
+* item[=].item[+].linkId = "promis-eddep41"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61973-4 "In the past 7 days - I felt hopeless"
 * item[=].item[=].text = "...fühlte ich mich hoffnungslos"
@@ -670,7 +670,7 @@ Usage: #definition
 * item[=].item[=].text = "In den vergangenen 7 Tagen..."
 
 // Fatigue Item 1
-* item[=].item[+].linkId = "promis-fatigue61878"
+* item[=].item[+].linkId = "promis-hi7"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61878-5 "During the past 7 days - I feel fatigued"
 * item[=].item[=].text = "...fühlte ich mich erschöpft"
@@ -716,7 +716,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Fatigue Item 2
-* item[=].item[+].linkId = "promis-fatigue61882"
+* item[=].item[+].linkId = "promis-an3"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61882-7 "During the past 7 days - I have trouble starting things because I am tired"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, Dinge anzufangen, weil ich müde war"
@@ -762,7 +762,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Fatigue Item 3
-* item[=].item[+].linkId = "promis-fatigue61863"
+* item[=].item[+].linkId = "promis-fatexp41"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61863-7 "In the past 7 days - How run-down did you feel on average?"
 * item[=].item[=].text = "...wie abgeschlagen fühlten Sie sich im Durchschnitt?"
@@ -808,7 +808,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Fatigue Item 4
-* item[=].item[+].linkId = "promis-fatigue61864"
+* item[=].item[+].linkId = "promis-fatexp40"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61864-5 "In the past 7 days - How fatigued were you on average?"
 * item[=].item[=].text = "...wie erschöpft waren Sie im Durchschnitt?"
@@ -863,7 +863,7 @@ Usage: #definition
 * item[=].item[=].text = "In den vergangenen 7 Tagen..."
 
 // Sleep Item 1
-* item[=].item[+].linkId = "promis-sleep61987"
+* item[=].item[+].linkId = "promis-sleep109"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61987-4 "In the past 7 days - My sleep quality was..."
 * item[=].item[=].text = "...war meine Schlafqualität..."
@@ -909,7 +909,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
 
 // Sleep Item 2
-* item[=].item[+].linkId = "promis-sleep61986"
+* item[=].item[+].linkId = "promis-sleep116"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61986-6 "In the past 7 days - My sleep was refreshing"
 * item[=].item[=].text = "...war mein Schlaf erholsam"
@@ -955,7 +955,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
 
 // Sleep Item 3
-* item[=].item[+].linkId = "promis-sleep61998"
+* item[=].item[+].linkId = "promis-sleep20"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61998-1 "In the past 7 days - I had a problem with my sleep"
 * item[=].item[=].text = "...hatte ich Probleme mit meinem Schlaf"
@@ -1001,7 +1001,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Sleep Item 4
-* item[=].item[+].linkId = "promis-sleep61999"
+* item[=].item[+].linkId = "promis-sleep44"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61999-9 "In the past 7 days - I had difficulty falling asleep"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten beim Einschlafen"
@@ -1056,7 +1056,7 @@ Usage: #definition
 * item[=].item[=].text = "In den vergangenen 7 Tagen..."
 
 // Social Function Item 1
-* item[=].item[+].linkId = "promis-social62041"
+* item[=].item[+].linkId = "promis-srpper23-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#62041-9 "In the past 7 days - I am satisfied with how much work I can do (include work at home)"
 * item[=].item[=].text = "...war ich zufrieden damit, wie viel Arbeit ich schaffen konnte (einschließlich Hausarbeit)"
@@ -1102,7 +1102,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Social Function Item 2
-* item[=].item[+].linkId = "promis-social75417"
+* item[=].item[+].linkId = "promis-srpper11-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#75417-6 "I have trouble doing all of my regular leisure activities with others"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, alle meine üblichen Freizeitaktivitäten mit anderen zu machen"
@@ -1148,7 +1148,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
 
 // Social Function Item 3
-* item[=].item[+].linkId = "promis-social76708"
+* item[=].item[+].linkId = "promis-srpper18-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#76708-7 "I have trouble doing all of the family activities that I want to do"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, alle Familienaktivitäten zu machen, die ich machen wollte"
@@ -1192,9 +1192,10 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.extension[=].extension[=].valueString = "Immer"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
-
+/*
+// Social Function Item 5 (seems to be missing from your list, adding based on typical PROMIS-29)
 // Social Function Item 4
-* item[=].item[+].linkId = "promis-social76709"
+* item[=].item[+].linkId = "promis-"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#76709-5 "I have trouble doing all of my usual work (include work at home)"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, alle meine üblichen Arbeiten zu erledigen (einschließlich Hausarbeit)"
@@ -1238,9 +1239,8 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.extension[=].extension[=].valueString = "Immer"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
-
-// Social Function Item 5 (seems to be missing from your list, adding based on typical PROMIS-29)
-* item[=].item[+].linkId = "promis-social76712"
+*/
+* item[=].item[+].linkId = "promis-srpper46-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#76712-9 "I have trouble doing all of the activities with friends that I want to do"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, alle Aktivitäten mit Freunden zu machen, die ich machen wollte"
@@ -1295,7 +1295,7 @@ Usage: #definition
 * item[=].item[=].text = "In den vergangenen 7 Tagen - Inwieweit beeinträchtigten Schmerzen..."
 
 // Pain Interference Item 1
-* item[=].item[+].linkId = "promis-pain61758"
+* item[=].item[+].linkId = "promis-painin9"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61758-9 "In the past 7 days - How much did pain interfere with your day to day activities?"
 * item[=].item[=].text = "...Ihre alltäglichen Aktivitäten?"
@@ -1341,7 +1341,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Pain Interference Item 2
-* item[=].item[+].linkId = "promis-pain61769"
+* item[=].item[+].linkId = "promis-painin22"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61769-6 "In the past 7 days - How much did pain interfere with work around the home?"
 * item[=].item[=].text = "...Arbeiten rund um das Haus?"
@@ -1387,7 +1387,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Pain Interference Item 3
-* item[=].item[+].linkId = "promis-pain61773"
+* item[=].item[+].linkId = "promis-painin31"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61773-8 "In the past 7 days - How much did pain interfere with your ability to participate in social activities?"
 * item[=].item[=].text = "...Ihre Fähigkeit zur Teilnahme an sozialen Aktivitäten?"
@@ -1433,7 +1433,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
 
 // Pain Interference Item 4
-* item[=].item[+].linkId = "promis-pain61775"
+* item[=].item[+].linkId = "promis-painin34"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61775-3 "In the past 7 days - How much did pain interfere with your household chores?"
 * item[=].item[=].text = "...Ihre Hausarbeiten?"
@@ -1484,7 +1484,7 @@ Usage: #definition
 * item[=].text = "SCHMERZINTENSITÄT"
 
 // Pain Intensity Item (0-10 Scale)
-* item[=].item[+].linkId = "promis-pain61583"
+* item[=].item[+].linkId = "promis-global07"
 * item[=].item[=].type = #integer
 * item[=].item[=].code = $LNC#61583-1 "In the past 7 days - How would you rate your pain on average?"
 * item[=].item[=].text = "In den vergangenen 7 Tagen - Wie würden Sie Ihre Schmerzen im Durchschnitt bewerten?"

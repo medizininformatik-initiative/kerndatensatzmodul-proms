@@ -42,7 +42,7 @@
       "valueExpression": {
         "name": "cognitiveRawScore",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }
