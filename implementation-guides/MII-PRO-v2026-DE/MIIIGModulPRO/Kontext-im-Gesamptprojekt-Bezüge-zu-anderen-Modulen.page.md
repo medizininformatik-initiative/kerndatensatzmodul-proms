@@ -3,6 +3,6 @@ topic: Kontext-im-Gesamptprojekt
 ---
 ## {{page-title}}
 
-* Psychische Gesundhiet
+* Psychische Gesundheit
 * Soziodemographische Daten
 * alle weiteren Fachmodule (Onkologie, Kardiologie, Lungenfunktion etc.)

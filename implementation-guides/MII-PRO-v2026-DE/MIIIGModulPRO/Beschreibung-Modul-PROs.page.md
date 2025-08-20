@@ -8,14 +8,17 @@ Das Modul "PROs, PROMs und abgeleitete Metriken" der Medizininformatik-Initiativ
 ## Aktuelle Implementierung (Kommentierungsversion 2026)
 
 ### Bereits implementierte PRO-Instrumente
-- **PHQ-9** - Vollständige Implementierung mit Scoring und populatable-Capability ✓
-- **EQ-5D-5L** - Mehrere Varianten (minimal, displayable, collectable, coded) mit vollständiger Score-Berechnung ✓
+
+- **PHQ-9** - Vollständige Implementierung mit Scoring und populatable-Capability
+- **EQ-5D-5L** - Mehrere Varianten (minimal, displayable, collectable, coded) mit vollständiger Score-Berechnung
 - **PROMIS-29** - Grundstruktur implementiert, Multi-Domain-Scoring in Arbeit
 - **PROMIS Depression SF 4a** - Basis-Implementation vorhanden
+- **PROMIS Cognitive Function SF 4a** - Basis-Implementation vorhanden
 - **EORTC QLQ-C30** - Scoring-Methodologie und Terminologie implementiert
 - **BDI-II** - aus Lizenzgründen nicht darstellbar, abre Scoring mit ordinalValue (SDC STU3) funktionsfähig
 
 ### Metadata-Only Referenzen (Lizenzeinschränkungen)
+
 - **HADS** - Hospital Anxiety and Depression Scale (nicht displayable)
 - **EPDS** - Edinburgh Postnatal Depression Scale (nur Metadaten)
 - **CES-D** - Center for Epidemiologic Studies Depression Scale (nur Metadaten)
@@ -50,7 +53,6 @@ Das Modul "PROs, PROMs und abgeleitete Metriken" der Medizininformatik-Initiativ
 - FHIRPath `.weight()` Funktion statt `.ordinal()`
 - Erweiterte SDC-Features nutzen
     - z.B.Questionnaire.version plus versionAlgorithm 
-
 
 ### 2027 - Phase 3: Item-basierte Architektur
 

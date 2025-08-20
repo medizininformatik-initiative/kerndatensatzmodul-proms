@@ -3,20 +3,19 @@ topic: Beschreibung-von-Anwendungsfaellen
 ---
 ## {{page-title}}
 
-### Generelle Beobachtungen 
+### Allgemeine Betrachtungen
 
-Klassischerweise werden Fragebögen auf Papier ausgefüllt. Das führt dazu, dass die Fragebogendefinition (Welche Fragen, welche Antworten möglich etc) und die Fragebogenantworten (welche Antworten ein Patient zu einem bestimmten Anlass konkret ausgewählt hat) direkt innerhalb des gleichen Dokuments vorliegen. In elektronischer Form hingegen benötigt man nur eine einzige digitale Vorlage, auf die ausgefüllte Fragebögen dann verweisen können. Zusätzliche Versionen sind lediglich für bsp. Versionierung und ggfs. Sprachanpassungen notwendig.  
+Klassischerweise werden Fragebögen auf Papier ausgefüllt. Das führt dazu, dass die Fragebogendefinition (welche Fragen, welche Antworten möglich etc.) und die Fragebogenantworten (welche Antworten ein Patient zu einem bestimmten Anlass konkret ausgewählt hat) direkt innerhalb des gleichen Dokuments vorliegen. In elektronischer Form hingegen benötigt man nur eine einzige digitale Vorlage, auf die ausgefüllte Fragebögen dann verweisen können. Zusätzliche Versionen sind lediglich für bspw. Versionierung und ggfs. Sprachanpassungen notwendig.  
 
 Diese Aufspaltung zwischen Vorlage und ausgefüllte Antwort findet sich auch in der aktuellen FHIR-Spezifikation wieder, wo zwischen Questionnaires und QuestionnaireResponse unterschieden wird.  
 
 Dieser Modellierungsunterschied scheint hier profan, bringt aber einige Besonderheiten mit sich, die am Ende noch einmal aufgegriffen werden.  
 
-Ähnlich  erhät es sich mit der Berechnung von Scores auf Basis der gegebenen Antworten. Die meisten Papierfragebögen enthalten Felder für die berechneten Scores.  
+Ähnlich verhält es sich mit der Berechnung von Scores auf Basis der gegebenen Antworten. Die meisten Papierfragebögen enthalten Felder für die berechneten Scores.  
 
-Art-Decor wurde genutzt, um eine grundsätzliche Modellierung des Datensatzes zu erreichen. In einem weiteren Schritt wurden UML-Diagramme erstellt und um weitere relevante Datenpunkte ergänzt. Achtung: Die Darstellung von verschiedenen Sprachen in einem Fragebogen ist derzeit nicht im Informationsmodell enthalten 
+Art-Decor wurde genutzt, um eine grundsätzliche Modellierung des Datensatzes zu erreichen. In einem weiteren Schritt wurden UML-Diagramme erstellt und um weitere relevante Datenpunkte ergänzt. *Achtung: Die Darstellung von verschiedenen Sprachen in einem Fragebogen ist derzeit nicht im Informationsmodell enthalten.*
 
-Das Erweiterungsmodul  "PROs, PROMs und abgeleitete Metriken" bezieht sich auf die Verwendung von PROs und PROMs im Forschungskontext.  Wir freuen uns, mit unserer Spezifikationen Vorarbeiten für eine Erhebung  und Austausch von PROM-Daten in der breiten Versorgungspraxis zu ermöglichen. Dabei ist jedoch zu beachten, dass die Berechnung von Scores in Software dem europäischen Medizinproduktgesetz MDR unterliegen können.  
-
+Das Erweiterungsmodul "PROs, PROMs und abgeleitete Metriken" bezieht sich auf die Verwendung von PROs und PROMs im Forschungskontext. Wir freuen uns, mit unserer Spezifikationen Vorarbeiten für eine Erhebung und Austausch von PROM-Daten in der breiten Versorgungspraxis zu ermöglichen. Dabei ist jedoch zu beachten, dass die Berechnung von Scores in Software dem europäischen Medizinproduktgesetz MDR unterliegen können.
 
 ### Use Case 1: Praktische Erfassung von ePROMs mit FHIR-Questionnaires im Forschungskontext 
  

@@ -9,12 +9,12 @@ Das MII PRO Modul unterstützt vier zentrale Anwendungsszenarien für Patient-Re
 
 1. **Klinische Verlaufsdokumentation** - ePRO-Erfassung in der Primärversorgung
 2. **Lokale Datenharmonisierung** - Standortinterne Aufbereitung heterogener PROM-Daten
-3. **Übergreifende Harmonisierung** - Standortübergreifende Standardisierung
+3. **Übergreifende Harmonisierung** - Standortübergreifende Harmonisierung
 4. **Domänen-basierte Forschung** - Sekundärdatennutzung mit Cross-Domain-Mapping
 
 ---
 
-### Use Case 1: Praktische Erfassung von ePROMs im Forschungskontext
+### Use Case 1: ePRO-Erfassung in der Primärversorgung
 
 Ein Patient (Herr Hauff) berichtet beim Hausarzt von wiederkehrenden Angst- und Panikattacken und wird zur weiteren Diagnostik an eine Psychosomatische Klinik überwiesen. Die behandelnde Ärztin Dr. Schmidt bereitet das Aufnahmegespräch vor. 
 
@@ -36,7 +36,7 @@ Nach Abschluss des Fragebogens:
 
 ---
 
-### Use Case 2: Standortinterne Aufbereitung von erfassten Daten
+### Use Case 2: Standortinterne Aufbereitung heterogener PROM-Daten
 
 Dr. Schmidt hat in mehreren Forschungsprojekten mit dem PHQ-9 gearbeitet. Es liegen umfangreiche PHQ-9-Daten vor:
 - Im KIS zu Aufnahme- und Entlasszeitpunkten
@@ -55,7 +55,7 @@ Frau Dirsch vom Datenintegrationszentrum harmonisiert diese heterogenen Datenque
 
 ---
 
-### Use Case 3: Standortübergreifende Aufbereitung
+### Use Case 3: Standortübergreifende Harmonisierung
 
 Dr. Schmidt betreut ein Verbundprojekt "Depressive Erkrankungen und Burnout im Home-Office". Alle beteiligten Krankenhäuser nutzen den PHQ-9, aber mit unterschiedlichen ePROM-Systemen.
 
@@ -71,7 +71,7 @@ Die Harmonisierung erfolgt über die Datenintegrationszentren mit standardisiert
 
 ---
 
-### Use Case 4: Sekundärdatenforschung mit PROMs
+### Use Case 4: Sekundärdatennutzung mit Cross-Domain-Mapping
 
 Dr. Claussen forscht an Depression mittels Sekundärdatennutzung über das Forschungsportal für Gesundheit. 
 

@@ -1,11 +1,11 @@
 ---
 topic: QuestionnaireCapabilities
----
-## {{page-title}}
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire
 canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/QuestionnaireVariantenArchitektur
 expand: 1
 ---
+
+## {{page-title}}
 
 ## Questionnaire-Varianten-Architektur: Trennung der Verantwortlichkeiten
 
