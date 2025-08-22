@@ -3,28 +3,32 @@ topic: Workflow-Patterns
 ---
 ## Workflow-Patterns und Implementierungsansätze
 
-### Standard MII PRO Workflow
+- [Standard Workflow](#standard-workflow)
+- [Capability-basierte Workflow-Varianten](#capability-basierte-workflow-varianten)
+    - [Szenario 1: Direkte Erfassung mit Echtzeit-Berechnung](#szenario-1-direkte-erfassung-mit-echtzeit-berechnung)
+    - [Szenario 2: Mobile Erfassung → Server-Berechnung](#szenario-2-mobile-erfassung-server-berechnung)
+    - [Szenario 3: Historische Neuberechnung](#szenario-3-historische-neuberechnung)
+- [Score-Repräsentationsebenen](#score-reprasentationsebenen)
+- [Implementierungsmuster](#implementierungsmuster)
+    - [Calculated Expressions](#calculated-expressions)
+    - [Initial Expressions für Populatable](#initial-expressions-fur-populatable)
+    - [Extraction zu Observations](#extraction-zu-observations)
+- [Domain-Mapping Patterns](#domain-mapping-patterns)
+- [Best Practices](#best-practices)
+    - [Capability-Auswahl](#capability-auswahl)
+    - [Performance-Überlegungen](#performance-uberlegungen)
+    - [Fehlerbehandlung](#fehlerbehandlung)
+- [Zusammenfassung](#zusammenfassung)
+
+---
+
+### Standard Workflow
 
 Der MII PRO Workflow folgt einem dreistufigen Prozess von der Datenerfassung bis zur strukturierten Speicherung:
 
-```plantuml
-@startuml
-!theme plain
-skinparam backgroundColor white
+<img src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Workflow_Standard/Workflow_Standard.svg?raw=true" alt="MII PRO Workflow-Pattern: Standard" style="width:40%;display:block;margin: 1em auto;"/>
 
-rectangle "1. Questionnaire" as Q #E8F4FD
-rectangle "2. QuestionnaireResponse" as QR #FFF4E6
-rectangle "3. Observation" as O #E8F5E8
-
-Q --> QR : Patient füllt aus
-QR --> O : Extraction/Transformation
-O --> O : Domain Mapping (optional)
-
-note right of Q : Definiert Struktur,\nVerhalten und\nBerechnungslogik
-note right of QR : Enthält Antworten\nund berechnete\nScores
-note right of O : Strukturierte\nSpeicherung für\nAnalysen
-@enduml
-```
+---
 
 ### Capability-basierte Workflow-Varianten
 
@@ -32,43 +36,13 @@ Die Questionnaire-Capabilities ermöglichen verschiedene Implementierungsszenari
 
 #### Szenario 1: Direkte Erfassung mit Echtzeit-Berechnung
 
-```plantuml
-@startuml
-!theme plain
-skinparam backgroundColor white
-
-actor Patient
-participant "UI mit\n[collectable+calculatable]\nQuestionnaire" as UI
-database "FHIR Server" as Server
-
-Patient -> UI : Beantwortet Fragen
-UI -> UI : Berechnet Score\n(FHIRPath)
-UI -> Server : Speichert QR\nmit Score
-Server -> Server : Extrahiert\nObservation
-@enduml
-```
+<img src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Workflow_Capability-Echtzeit/Workflow_Capability-Echtzeit.svg?raw=true" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Echtzeit-Berechnung" style="width:50%;display:block;margin: 1em auto;"/>
 
 **Verwendete Capabilities:** collectable, calculatable, displayable, extractable
 
 #### Szenario 2: Mobile Erfassung → Server-Berechnung
 
-```plantuml
-@startuml
-!theme plain
-skinparam backgroundColor white
-
-actor Patient
-participant "Mobile App\n[collectable only]" as App
-participant "Server\n[populatable+calculatable]" as Server
-database "FHIR Store" as Store
-
-Patient -> App : Beantwortet Fragen
-App -> Server : QR ohne Score
-Server -> Server : Lädt QR in\npopulatable Q
-Server -> Server : Berechnet Score
-Server -> Store : Speichert QR\nmit Score +\nObservation
-@enduml
-```
+<img src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Workflow_Capability-Server/Workflow_Capability-Server.svg?raw=true" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Server-Berechnung" style="width:50%;display:block;margin: 1em auto;"/>
 
 **Verwendete Capabilities:** 
 - Client: collectable
@@ -76,21 +50,7 @@ Server -> Store : Speichert QR\nmit Score +\nObservation
 
 #### Szenario 3: Historische Neuberechnung
 
-```plantuml
-@startuml
-!theme plain
-skinparam backgroundColor white
-
-database "Legacy Data" as Legacy
-participant "Migration Service\n[populatable+calculatable]" as Service
-database "FHIR Store" as Store
-
-Legacy -> Service : Alte QRs
-Service -> Service : Lädt in populatable Q
-Service -> Service : Wendet neue\nBerechnungslogik an
-Service -> Store : Aktualisierte\nObservations
-@enduml
-```
+<img src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Workflow_Capability-Historisch/Workflow_Capability-Historisch.svg?raw=true" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Historische Neuberechnung" style="width:50%;display:block;margin: 1em auto;"/>
 
 **Verwendete Capabilities:** populatable, calculatable, extractable
 
@@ -98,34 +58,9 @@ Service -> Store : Aktualisierte\nObservations
 
 PRO-Scores existieren auf verschiedenen Ebenen im System:
 
-```plantuml
-@startuml
-!theme plain
-skinparam backgroundColor white
+<img src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Workflow_Score_Repraesentation/Workflow_Score_Repraesentation.svg?raw=true" alt="MII PRO Workflow-Pattern: Score Repräsentationsebenen" style="width:70%;display:block;margin: 1em auto;"/>
 
-rectangle "QuestionnaireResponse" as QR {
-  rectangle "Item: Frage 1" as I1
-  rectangle "Item: Frage 2" as I2
-  rectangle "..." as I3
-  rectangle "Item: Berechneter Score" as Score #FFE4B5
-}
-
-rectangle "Observation" as O1 {
-  rectangle "code: LOINC" as C1
-  rectangle "value: Score" as V1
-  rectangle "derivedFrom: QR" as D1
-}
-
-rectangle "Domain Observation" as O2 {
-  rectangle "code: PROMIS T-Score" as C2
-  rectangle "value: T-Score" as V2
-  rectangle "derivedFrom: O1" as D2
-}
-
-QR --> O1 : Extraction
-O1 --> O2 : Domain Mapping
-@enduml
-```
+---
 
 ### Implementierungsmuster
 
@@ -133,29 +68,25 @@ O1 --> O2 : Domain Mapping
 
 Scores werden mittels FHIRPath-Expressions berechnet:
 
-```fhirpath
+```
 // Einfache Summe
 %resource.item.answer.value.ordinal().sum()
 
 // Gewichtete Summe mit Selektion
-%resource.item.where(linkId.matches('^item-[1-9]$'))
-  .answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^item-[1-9]$')).answer.value.ordinal().sum()
 
 // Mit Variablen für komplexe Berechnungen
 %rawScore = %resource.item.answer.value.ordinal().sum()
-iif(%rawScore < 5, 'minimal', 
-    iif(%rawScore < 10, 'mild', 'moderate'))
+iif(%rawScore < 5, 'minimal', iif(%rawScore < 10, 'mild', 'moderate'))
 ```
 
 #### Initial Expressions für Populatable
 
 Vorausfüllung aus existierenden Daten:
 
-```fhirpath
+```
 // Einzelnes Item
-iif(%sourceResponse.exists(), 
-    %sourceResponse.item.where(linkId='q1').answer.value, 
-    {})
+iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='q1').answer.value, {})
 
 // Mit Fallback
 %sourceResponse.item.where(linkId='q1').answer.value | {}
@@ -165,28 +96,18 @@ iif(%sourceResponse.exists(),
 
 Die Transformation erfolgt über SDC-Extraction-Extensions oder server-seitige Logik:
 
-```fsh
+```
 * item.extension[observationExtract] = true
 * item.code = $LNC#44261-6 "PHQ-9 total score"
 ```
 
+---
+
 ### Domain-Mapping Patterns
 
-```plantuml
-@startuml
-!theme plain
-skinparam backgroundColor white
+<img src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Workflow_Domain_Mapping/Workflow_Domain_Mapping.svg?raw=true" alt="MII PRO Domain Mapping-Patterns" style="width:50%;display:block;margin: 1em auto;"/>
 
-rectangle "Instrument-spezifischer Score" as S1 #FFE4E6
-rectangle "ConceptMap oder CQL" as CM #E6F3FF
-rectangle "Domain T-Score" as S2 #E6FFE6
-
-S1 --> CM : Input
-CM --> S2 : Output
-
-note bottom of CM : Empirisch validierte\nMapping-Tabellen
-@enduml
-```
+---
 
 ### Best Practices
 
@@ -212,6 +133,8 @@ Die Auswahl der Capabilities sollte sich nach dem Anwendungsfall richten:
 - Klare Fehlermeldungen bei ungültigen Werten
 - Fallback-Strategien für fehlende Capabilities
 - Logging von Mapping-Fehlern
+
+---
 
 ### Zusammenfassung
 

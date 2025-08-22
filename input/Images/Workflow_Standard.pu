@@ -1,0 +1,16 @@
+@startuml
+!theme plain
+skinparam backgroundColor white
+
+rectangle "1. Questionnaire" as Q #E8F4FD
+rectangle "2. QuestionnaireResponse" as QR #FFF4E6
+rectangle "3. Observation" as O #E8F5E8
+
+Q --> QR : Patient füllt aus
+QR --> O : Extraction/Transformation
+O --> O : Domain Mapping (optional)
+
+note right of Q : Definiert Struktur,\nVerhalten und\nBerechnungslogik
+note right of QR : Enthält Antworten\nund berechnete\nScores
+note right of O : Strukturierte\nSpeicherung für\nAnalysen
+@enduml
