@@ -115,7 +115,7 @@ Das abstrakte Score Instance Profil definiert die Struktur für konkrete Score-O
 
 Die abstrakten Profile bilden die Basis einer klaren Vererbungshierarchie:
 
-```plantuml
+<plantuml> 
 @startuml
 !theme plain
 skinparam backgroundColor white
@@ -162,7 +162,7 @@ MII_PR_PRO_Questionnaire <|-- PHQ9_Questionnaire
 MII_PR_PRO_Questionnaire <|-- EQ5D5L_Questionnaire
 MII_PR_PRO_Score_Instance <|-- PHQ9_Score
 @enduml
-```
+</plantuml>
 
 ### Implementierungsregeln
 

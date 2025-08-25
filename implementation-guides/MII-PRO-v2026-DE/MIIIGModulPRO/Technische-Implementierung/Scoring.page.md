@@ -44,19 +44,18 @@ Die Scoring-Strategien lassen sich in zwei grundlegende Kategorien einteilen:
 **Anwendungsfall**: Real-time Scoring mit moderater Komplexität
 
 **Implementierungsansatz - Variable-basiert (Empfohlen)**:
-```fhir
+```
 // PROMIS Depression SF 4a Beispiel
-* item[0].extension[variable].valueExpression.expression = "%rawScore"
-* item[0].extension[variable].valueExpression.name = "rawScore"
-* item[0].extension[initialExpression].valueExpression.expression = 
-  "item.descendants().where(linkId='promis-eddep04').answer.value + 
-   item.descendants().where(linkId='promis-eddep06').answer.value + ..."
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "rawScore"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
 
 // T-Score Konversion
-* item[1].extension[calculatedExpression].valueExpression.expression = 
-  "iif(%rawScore = 4, 41.0, 
-   iif(%rawScore = 5, 45.5, 
-   iif(%rawScore = 6, 49.0, ...)))"
+* item[=].extension[+].url = $sdc-questionnaire-calculated-expression
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, ..., {})))))))))))))))))"
+
 ```
 
 **Vorteile**:
@@ -67,7 +66,7 @@ Die Scoring-Strategien lassen sich in zwei grundlegende Kategorien einteilen:
 #### 5. CQL-basierte Berechnung
 **Anwendungsfall**: Komplexe statistische Berechnungen, bevölkerungsbasierte Normierung
 
-```cql
+```
 library PHQ9Scoring version '1.0.0'
 
 define "PHQ-9 Raw Score":
@@ -106,7 +105,7 @@ define "PHQ-9 Severity Category":
 
 Komplexe Fragebögen generieren oft mehrere Scores. **Beispiel EQ-5D-5L**:
 
-```fhir
+```
 // Index Score (Präferenz-basiert)
 * item[score-index].code = SCT#736534008 "EuroQol EQ-5D-5L index value"
 
@@ -129,7 +128,7 @@ Komplexe Fragebögen generieren oft mehrere Scores. **Beispiel EQ-5D-5L**:
 #### Score-Mapping und Cross-Walking
 **Anwendungsfall**: Harmonisierung zwischen verschiedenen PRO-Instrumenten
 
-```fhir
+```
 // PHQ-9 → PROMIS Depression Mapping
 * derivedFrom[0] = Reference(PHQ9-QuestionnaireResponse)
 * code = LOINC#77861-3 "PROMIS Depression T-score"
@@ -139,7 +138,7 @@ Komplexe Fragebögen generieren oft mehrere Scores. **Beispiel EQ-5D-5L**:
 #### Measure/MeasureReport-basierte Analysen
 **Anwendungsfall**: Longitudinale Analysen, Populationsmetriken
 
-```cql
+```
 library PRO_Population_Metrics version '1.0.0'
 
 define "Depression Prevalence":

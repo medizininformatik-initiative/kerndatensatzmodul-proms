@@ -15,13 +15,13 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 
 ## Strategische Entscheidungskriterien
 
-### 🎯 Inline answerOption verwenden bei:
+### Inline answerOption verwenden bei:
 
-#### ✅ Verfügbare internationale Standards
+#### Verfügbare internationale Standards
 **Kriterium**: LOINC-Codes für Antwortlisten verfügbar mit verlässlicher Abdeckung
 
 **Implementierungsmuster**:
-```fsh
+```
 * item[=].answerOption[0].valueCoding.system = $LNC
 * item[=].answerOption[0].valueCoding.code = #LA6568-5
 * item[=].answerOption[0].valueCoding.display = "Überhaupt nicht"
@@ -35,11 +35,11 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 - Semantische Eindeutigkeit
 - Etablierte Coding-Standards
 
-#### ✅ Einfache, statische Antwortlisten
+#### Einfache, statische Antwortlisten
 **Kriterium**: Wenige Antwortoptionen (≤5), unwahrscheinliche Änderungen, keine Wiederverwendung
 
 **Implementierungsmuster**:
-```fsh
+```
 * item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[0].valueCoding.code = #1
 * item[=].answerOption[1].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
@@ -52,18 +52,18 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 - Direkter, übersichtlicher Code
 - Geringere Wartungsanforderungen
 
-#### ✅ Reiche Metadaten pro Option erforderlich
+#### Reiche Metadaten pro Option erforderlich
 **Kriterium**: Mehrsprachigkeit, Score-Gewichte, komplexe Rendering-Anweisungen
 
 **Beispiel**: PHQ-9 mit deutschen Übersetzungen und itemWeight-Extensions
 
-### 🗂️ answerValueSet + MII CodeSystem verwenden bei:
+### answerValueSet + MII CodeSystem verwenden bei:
 
-#### ✅ Multiple Antwortformat-Varianten
+#### Multiple Antwortformat-Varianten
 **Kriterium**: Gleiche konzeptuelle Antworten in verschiedenen Textvarianten (kurz/lang/detailliert)
 
 **Implementierungsbeispiel**: BDI-II
-```fsh
+```
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
 * #bdi-bdi2-answer-1a ^property[+].code = #bdi-bdi2-itemWeight
 * #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
@@ -84,7 +84,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 - Mehrere ValueSet-Varianten aus einem CodeSystem
 - Wiederverwendbarkeit der Konzepte
 
-#### ✅ Wiederverwendung über Questionnaires hinweg
+#### Wiederverwendung über Questionnaires hinweg
 **Kriterium**: Gleiche Antwortmuster in mehreren Instrumenten
 
 **Anwendungsfall**: Generische PRO-Severity-Scales (keine/leicht/mäßig/schwer)
@@ -93,13 +93,13 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 - Zentrale Wartung
 - Harmonisierte Datenmodelle
 
-#### ✅ Komplexe Score-Anforderungen
+#### Komplexe Score-Anforderungen
 **Kriterium**: Multiple Score-Gewichte pro Konzept, komplexe Scoring-Regeln
 
 **Beispiel**: BDI-II mit Varianten-Antwort-Gewichten (1a vs 1b)
 **Implementierung**: CodeSystem-Properties für itemWeight-Management
 
-#### ✅ Questionnaire Capabilities-basierte Entscheidungen
+#### Questionnaire Capabilities-basierte Entscheidungen
 **Kriterium**: Capability-Profile erfordern spezifische Terminologie-Ansätze
 
 **Capabilities und Terminologie-Implikationen**:
@@ -109,13 +109,13 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 - **Multiple Capabilities**: Inline answerOption bietet maximale Flexibilität für Darstellung + Berechnung
 
 **BDI-II Beispiel**: 
-```fsh
+```
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[calculatable].valueBoolean = true
-* item[=].answerValueSet = "mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
+* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
 ```
 
-#### ✅ MII-kontrollierte Terminologiestrategie  
+#### MII-kontrollierte Terminologiestrategie  
 **Kriterium**: Keine zuverlässigen internationalen Standards, deutsche Spezifika erforderlich
 
 **Strategische Überlegungen**:
@@ -182,7 +182,7 @@ graph TD
 ```
 
 ### Beispiel 2: BDI-II (MII CodeSystem + ValueSet)
-```fsh
+```
 // Questionnaire Item
 * item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 
@@ -197,10 +197,10 @@ CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
 ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 * include #bdi-bdi2-answer-0 from system MII_CS_PRO_BDI_BDI2_AnswerList
 * include #bdi-bdi2-answer-1 from system MII_CS_PRO_BDI_BDI2_AnswerList
-```
+```x
 
 ### Beispiel 3: EQ-5D-5L (Einfache Inline)
-```fsh
+```
 * item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #1
 * item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
@@ -212,13 +212,13 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 **Kritische Implementierungsanforderung**: FHIRPath `.weight()` Funktionen benötigen korrekte itemWeight-Definitionen:
 
 ### Bei Inline answerOption:
-```fsh
+```
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
 ```
 
 ### Bei CodeSystem + ValueSet:
-```fsh  
+```  
 CodeSystem: MyCodeSystem
 * ^property[+].code = #itemWeight
 * ^property[=].type = #decimal
