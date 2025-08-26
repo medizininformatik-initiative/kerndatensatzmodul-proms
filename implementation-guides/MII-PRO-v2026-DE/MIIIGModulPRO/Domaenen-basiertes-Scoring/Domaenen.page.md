@@ -153,7 +153,13 @@ Die Implementierung im MII PRO Modul folgt der PROMIS-Struktur und erweitert sie
 
 #### Onkologie-spezifische Domänen: EORTC QLQ-C30 Framework
 
-![EORTC QLQ-C30 Domänen](../../Images/qlq-domänen.png)
+<style>
+      img {
+      max-width:100%;
+      height: auto;
+      }
+</style>
+<img decoding="async" src="../../Images/qlq-domänen.png" alt="EORTC QLQ-C30 Domänen" title="EORTC QLQ-C30 Domänen">
 
 **Abbildung 1:** *Konzeptionelles Modell des EORTC QLQ-C30 - Von physiologischen Variablen zur Lebensqualität*
 

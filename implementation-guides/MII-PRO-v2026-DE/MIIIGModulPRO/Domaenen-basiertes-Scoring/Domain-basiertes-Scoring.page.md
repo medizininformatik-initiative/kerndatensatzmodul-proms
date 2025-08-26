@@ -93,7 +93,13 @@ Riazy et al. (2025) liefern umfassende Referenzdaten aus 29 europäischen Lände
 
 **1. Item Response Theory (IRT)**
 
-![IRT Antwortwahrscheinlichkeiten](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/IRT-Antwortwahrscheinlichkeiten.png)
+<style>
+      img {
+      max-width:100%;
+      height: auto;
+      }
+</style>
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/IRT-Antwortwahrscheinlichkeiten.png" alt="IRT Antwortwahrscheinlichkeiten" title="IRT Antwortwahrscheinlichkeiten">
 
 **Abbildung 1:** *Item Response Theory - Antwortwahrscheinlichkeiten in Abhängigkeit von der Merkmalsausprägung*
 
@@ -137,7 +143,7 @@ Bei der Anwendung von Cross-Walking sind folgende Einschränkungen zu beachten:
 
 ### Das PRO-Spannungsfeld
 
-![PRO Spannungsfeld](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/PRO-Spannungsfeld.png)
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/PRO-Spannungsfeld.png" alt="PRO Spannungsfeld" title="PRO Spannungsfeld">
 
 **Abbildung 2:** *Das Spannungsfeld zwischen Item-Anzahl, Messbereich und Präzision*
 
@@ -152,7 +158,7 @@ Domain-basiertes Scoring löst dieses Dilemma durch:
 
 ### Item Banking und Adaptive Messung
 
-![Item Banking](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/itembanking.png)
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/itembanking.png" alt="Item Banking" title="Item Banking">
 
 **Abbildung 3:** *Item Banking für die Domäne Körperliche Funktionsfähigkeit*
 
