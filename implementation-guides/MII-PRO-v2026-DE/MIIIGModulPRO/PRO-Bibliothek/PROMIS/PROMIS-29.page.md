@@ -27,9 +27,9 @@ Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezoge
 ### Technische Details
 
 #### Questionnaire Resource
-```
+~~~~
 Questionnaire/mii-qst-pro-promis-29
-```
+~~~~
 
 **Capabilities**:
 - ✅ displayable
@@ -42,7 +42,8 @@ Questionnaire/mii-qst-pro-promis-29
 
 Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 
-```fhirpath
+~~~~
+// FHIRPath
 // Beispiel: Depression Domain
 %rawScore = %resource.item
   .where(linkId.matches('^promis-eddep(04|05|06|29)$'))
@@ -53,14 +54,15 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 %tScore = iif(%rawScore = 4, 41.0,
           iif(%rawScore = 5, 49.0,
           iif(%rawScore = 6, 52.5, ...)))
-```
+~~~~
 
 ### Sprachunterstützung
 
 **Primärsprache**: Englisch (validierte Version)  
 **Deutsche Übersetzung**: Via Extension
 
-```json
+~~~~
+// JSON
 {
   "text": "In the past 7 days... I could do chores",
   "extension": [{
@@ -71,7 +73,7 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
     ]
   }]
 }
-```
+~~~~
 
 ### Implementierungshinweise
 
@@ -79,7 +81,8 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 
 Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 
-```fsh
+~~~~
+// FSH
 * extension[variable][+].name = "promisDepRaw"
 * extension[variable][=].expression = "[sum of depression items]"
 
@@ -88,7 +91,7 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 
 // T-Score Item  
 * item[dep-tscore].calculatedExpression = "iif(%promisDepRaw = 4, 41.0, ...)"
-```
+~~~~
 
 #### Bekannte Einschränkungen
 
@@ -98,7 +101,8 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 
 ### Beispiel QuestionnaireResponse
 
-```json
+~~~~
+// JSON
 {
   "resourceType": "QuestionnaireResponse",
   "questionnaire": "Questionnaire/mii-qst-pro-promis-29",
@@ -117,7 +121,7 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
     // ... weitere 28 Items
   ]
 }
-```
+~~~~
 
 
 ### Referenzen

@@ -181,7 +181,7 @@ Details siehe [EORTC QLQ-C30 in PRO-Bibliothek](../PRO-Bibliothek/EORTC-QLQ-C30/
 
 ### Domänen-Hierarchie und Beziehungen
 
-```
+~~~~
 Gesundheit (übergeordnet)
 ├── Physische Gesundheit
 │   ├── Körperliche Funktion
@@ -200,15 +200,15 @@ Gesundheit (übergeordnet)
 └── Globale Gesundheit
     ├── Lebensqualität
     └── Allgemeiner Gesundheitszustand
-```
+~~~~
 
 ### Domänen-Alignment und Questionnaire Capabilities
 
 Das MII PRO Modul definiert für jedes Instrument die Fähigkeit zum "Domain-Alignment":
 
-```fsh
+~~~~
 * extension[questionnaire-capabilities].extension[domain-aligned].valueBoolean = true
-```
+~~~~
 
 Dies bedeutet, dass ein Instrument:
 1. Eindeutig einer oder mehreren Domänen zugeordnet ist

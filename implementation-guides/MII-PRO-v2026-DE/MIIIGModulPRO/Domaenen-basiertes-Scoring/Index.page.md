@@ -38,7 +38,8 @@ Konkrete Mapping-Tabellen und Konversionsalgorithmen zwischen verschiedenen Inst
 
 Domänen-Scores werden als FHIR Observations mit spezifischen ObservationDefinitions abgebildet:
 
-```
+~~~~
+// Struktur
 ObservationDefinition
 ├── code: LOINC-Code für Domänen-Score (z.B. 77861-3 für PROMIS Depression)
 ├── method: Berechnungsmethode (IRT, Cross-Walking, Equiperzentil)
@@ -50,7 +51,7 @@ Observation
 ├── valueQuantity: T-Score (Mean=50, SD=10)
 ├── derivedFrom: Quell-QuestionnaireResponse oder -Observation
 └── method: Verwendete Mapping-Methode
-```
+~~~~
 
 ### Anwendungsfälle
 

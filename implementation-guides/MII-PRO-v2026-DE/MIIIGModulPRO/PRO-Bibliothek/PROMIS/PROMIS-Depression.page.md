@@ -25,7 +25,8 @@ Die vier Items wurden aus einer umfassenden Item Bank von über 30 Depression-It
 
 Das Questionnaire folgt dem SDC (Structured Data Capture) Standard und implementiert erweiterte Capabilities für automatisierte Score-Berechnung. Die Implementierung nutzt FHIR-Variablen zur Vermeidung zirkulärer Abhängigkeiten zwischen Items und berechneten Scores.
 
-```fhir
+~~~~
+// FSH
 Instance: mii-qst-pro-promis-depression-sf4a
 InstanceOf: MII_PR_PRO_Questionnaire
 Usage: #definition
@@ -34,7 +35,7 @@ Usage: #definition
 * name = "MII_Questionnaire_PROMIS_Depression_SF4a"
 * title = "PROMIS Depression Short Form 4a"
 * code = $LNC#77823-3
-```
+~~~~
 
 **Item-Struktur und Scoring**
 
@@ -48,7 +49,8 @@ Die Antwortoptionen folgen der standardisierten 5-stufigen PROMIS-Skala mit nume
 
 **Variable-basierte Score-Berechnung**
 
-```fhir
+~~~~
+// FSH
 * item[+].linkId = "rawScore" 
 * item[=].type = #decimal
 * item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
@@ -56,11 +58,12 @@ Die Antwortoptionen folgen der standardisierten 5-stufigen PROMIS-Skala mit nume
 * item[=].extension[=].valueExpression.expression = 
   "%promis-eddep04.answer.value + %promis-eddep06.answer.value + 
    %promis-eddep29.answer.value + %promis-eddep05.answer.value"
-```
+~~~~
 
 Die T-Score Konversion erfolgt über eine lookup-basierte FHIRPath-Expression, die die IRT-kalibrierten Transformationstabellen implementiert:
 
-```fhir
+~~~~
+// FSH
 * item[+].linkId = "depression-tscore"
 * item[=].type = #decimal  
 * item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
@@ -69,7 +72,7 @@ Die T-Score Konversion erfolgt über eine lookup-basierte FHIRPath-Expression, d
    iif(%rawScore = 5, 37.0,
    iif(%rawScore = 6, 40.3,
    iif(%rawScore = 7, 42.9, ...))))"
-```
+~~~~
 
 #### Observation-Profile und Datenextraktion
 
@@ -77,14 +80,15 @@ Die T-Score Konversion erfolgt über eine lookup-basierte FHIRPath-Expression, d
 
 Das `MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score` Profil definiert die Struktur für Raw Score Observations mit einem Wertebereich von 4-20 Punkten. Die Observation wird direkt aus der QuestionnaireResponse extrahiert und referenziert diese über das derivedFrom Element.
 
-```fhir
+~~~~
+// FSH
 Profile: MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score
 * code = $LNC#77821-7 "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
 * valueQuantity.value MS
 * valueQuantity.unit = "score"
 * referenceRange.low.value = 4
 * referenceRange.high.value = 20
-```
+~~~~
 
 **T-Score Observation Profile**
 
@@ -123,12 +127,13 @@ Diese Werte zeigen, dass die deutsche Population im Durchschnitt niedrigere Depr
 
 Die Implementierung nutzt MII-kontrollierte ValueSets, um zuverlässige Score-Berechnungen zu gewährleisten. Standard LOINC Answer Lists enthalten keine numerischen Scoring-Gewichte, was automatisierte FHIRPath-Berechnungen verhindert.
 
-```fhir
+~~~~
+// FSH
 * answerValueSet = "http://mii.de/fhir/pro/ValueSet/promis-depression-5point-scale"
 // Alternative: Direct answerOptions with scoring extensions
 * answerOption[0].valueCoding.extension[itemWeight].valueDecimal = 0
 * answerOption[1].valueCoding.extension[itemWeight].valueDecimal = 1
-```
+~~~~
 
 **LOINC-Mapping für Interoperabilität**
 

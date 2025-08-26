@@ -54,7 +54,8 @@ Die Depression-Domäne demonstriert als erste vollständig implementierte Domän
 
 #### FHIR-Architektur
 
-```fhir
+~~~~
+// FSH
 ObservationDefinition: mii-obsdef-pro-depression-t-score
 ├── Code: LOINC#77861-3 "PROMIS Depression T-score"
 ├── Referenzbereiche: EHIS Wave 3 (n=287,530)
@@ -64,7 +65,7 @@ Observation: Depression T-Score Instance
 ├── instantiates: ObservationDefinition
 ├── derivedFrom: QuestionnaireResponse oder Raw Score
 └── method: IRT-Berechnung oder Cross-Walking
-```
+~~~~
 
 #### Europäische Referenzdaten für Depression
 
@@ -189,7 +190,8 @@ Benchmarking zwischen Einrichtungen:
 ### Technische Implementierung
 
 #### ConceptMaps für Mapping
-```fsh
+~~~~
+// FSH
 Instance: PHQ9-to-PROMIS-Depression
 InstanceOf: ConceptMap
 * sourceCanonical = "Questionnaire/phq-9"
@@ -198,10 +200,11 @@ InstanceOf: ConceptMap
   * code = #score-range-0-4
   * target.code = #t-score-40-45
   * target.equivalence = #equivalent
-```
+~~~~
 
 #### CQL für komplexe Berechnungen (ab 2026)
-```cql
+~~~~
+// CQL
 define "Depression T-Score from PHQ-9":
   case
     when PHQ9Score between 0 and 4 then 42.5
@@ -211,7 +214,7 @@ define "Depression T-Score from PHQ-9":
     when PHQ9Score >= 20 then 77.5
     else null
   end
-```
+~~~~
 
 ### Zukünftige Erweiterungen
 
@@ -289,13 +292,14 @@ Da ObservationDefinitions in FHIR R4 keine kanonischen URLs unterstützen und ni
 - **Populationsnormen**: Referenzbereiche basieren auf deutschen oder europäischen Normstichproben
 
 **Verwendung in der Praxis:**
-```fhir
+~~~~
+// FSH
 Observation
 ├── code: LOINC Code aus ObservationDefinition
 ├── valueQuantity: Berechneter Score
 ├── extension[instantiatesCanonical]: Verweis auf ObservationDefinition
 └── derivedFrom: QuestionnaireResponse oder andere Observation
-```
+~~~~
 
 ### Zusammenfassung
 

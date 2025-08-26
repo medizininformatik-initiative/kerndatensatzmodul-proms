@@ -124,25 +124,10 @@ An den Extremen der Skalen kann die Mapping-Genauigkeit abnehmen, besonders bei:
 
 Details zur technischen Implementierung siehe [FHIR-Profile](../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md).
 
-#### ConceptMap Resource
-```fsh
-Instance: PHQ9-to-PROMIS-Depression-Mapping
-InstanceOf: ConceptMap
-* name = "PHQ9toPROMISDepressionMapping"
-* status = #active
-* sourceUri = "Questionnaire/phq-9"
-* targetUri = "ObservationDefinition/promis-depression-t-score"
-* group[+]
-  * element[+]
-    * code = #0-4
-    * target[+]
-      * code = #38-45
-      * equivalence = #equivalent
-      * comment = "95% CI: 38.38-45.33"
-```
 
 #### Observation mit Mapping-Dokumentation
-```fsh
+~~~~
+//FSH
 Instance: Depression-Score-Mapped
 InstanceOf: Observation
 * code = LOINC#77861-3 "PROMIS Depression T-score"
@@ -150,7 +135,7 @@ InstanceOf: Observation
 * derivedFrom = Reference(PHQ9-Response)
 * method = SCT#702663005 "Equipercentile equating"
 * note.text = "Mapped from PHQ-9 raw score of 10 (95% CI: 7.55-8.91)"
-```
+~~~~
 
 ### Qualitätssicherung
 
@@ -172,8 +157,6 @@ Bei jedem Mapping dokumentieren:
 - **Angst-Domäne**: GAD-7 ↔ PROMIS Anxiety ↔ HADS-A
 - **Fatigue-Domäne**: FACIT-F ↔ PROMIS Fatigue ↔ FSS
 - **Schmerz-Domäne**: BPI ↔ PROMIS Pain ↔ NRS
-
-Weitere Details zur Roadmap siehe [Geplanter Umfang](../../Geplanter-Umfang.page.md).
 
 #### Methodische Verbesserungen
 - Machine Learning-basierte Mappings
@@ -199,8 +182,3 @@ Weitere Details zur Roadmap siehe [Geplanter Umfang](../../Geplanter-Umfang.page
 ### Zusammenfassung
 
 Cross-Instrument Mappings sind ein kraftvolles Werkzeug zur Harmonisierung von PRO-Daten. Die Depression-Domäne zeigt exemplarisch, wie verschiedene etablierte Instrumente auf eine gemeinsame PROMIS-Metrik abgebildet werden können. Trotz inhärenter Limitationen ermöglichen diese Mappings bessere Datenintegration, Vergleichbarkeit und kontinuierliche Patientenbetreuung über verschiedene Settings hinweg.
-
-**Nächste Schritte:**
-- Erkunden Sie die [Depression-Domäne](Domaenen.page.md#1-depression-domäne-promis-core-domain) im Detail
-- Verstehen Sie die [methodischen Grundlagen](Domain-basiertes-Scoring.page.md) des Domain-basierten Scorings
-- Implementieren Sie [FHIR ConceptMaps](../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md) für Ihre Institution

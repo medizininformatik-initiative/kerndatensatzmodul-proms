@@ -18,26 +18,26 @@ package "Inline answerOption" as inline {
   class "LOINC + Extensions Pattern" as loinc_pattern {
     **Anwendung**: PHQ-9, PROMIS
     --
-    ✅ Internationale Interoperabilität
-    ✅ Semantische Eindeutigkeit
-    ✅ Etablierte Standards
-    ⚠️ Deutsche Übersetzungen via Extensions
-    ⚠️ Scoring via itemWeight Extensions
+    [+] Internationale Interoperabilität
+    [+] Semantische Eindeutigkeit
+    [+] Etablierte Standards
+    [o] Deutsche Übersetzungen via Extensions
+    [o] Scoring via ordinalValue Extensions
     --
     **Code-Beispiel**:
     * answerOption[0].valueCoding.system = $LNC
     * answerOption[0].valueCoding.code = #LA6568-5
-    * answerOption[0].extension[itemWeight].valueDecimal = 0
+    * answerOption[0].extension[ordinalValue].valueDecimal = 0
   }
   
   class "Simple Inline Pattern" as simple_pattern {
     **Anwendung**: EQ-5D-5L
     --
-    ✅ Minimale Komplexität
-    ✅ Direkter, übersichtlicher Code
-    ✅ Geringe Wartungsanforderungen
-    ❌ Keine Wiederverwendbarkeit
-    ❌ Begrenzte Skalierbarkeit
+    [+] Minimale Komplexität
+    [+] Direkter, übersichtlicher Code
+    [+] Geringe Wartungsanforderungen
+    [-] Keine Wiederverwendbarkeit
+    [-] Begrenzte Skalierbarkeit
     --
     **Code-Beispiel**:
     * answerOption[0].valueCoding.code = #1
@@ -47,42 +47,42 @@ package "Inline answerOption" as inline {
 
 package "answerValueSet + MII CodeSystem" as valueset {
   class "Calculatable-only Pattern" as calculatable_pattern {
-    **Anwendung**: BDI-II (displayable=false)
+    **Anwendung**: Server-seitige Berechnung
     --
-    ✅ Optimiert für reine Score-Berechnung
-    ✅ Kein Display-Overhead
-    ✅ CodeSystem Properties für itemWeight
-    ✅ Efficient für Hintergrund-Berechnungen
-    ⚠️ Nicht für interaktive Formulare geeignet
+    [+] Optimiert für reine Score-Berechnung
+    [+] Kein Display-Overhead
+    [+] CodeSystem Properties für ordinalValue
+    [+] Effizient für Hintergrund-Berechnungen
+    [o] Nicht für interaktive Formulare geeignet
     --
     **Code-Beispiel**:
     * extension[capabilities].extension[displayable] = false
     * extension[capabilities].extension[calculatable] = true
-    * answerValueSet = "mii-vs-pro-bdi-bdi2-short"
+    * answerValueSet = "mii-vs-pro-instrument-scores"
   }
   
   class "Multi-Variant Pattern" as variant_pattern {
-    **Anwendung**: Verschiedene Textlängen-Varianten
+    **Anwendung**: BDI-II Kurz-/Langform
     --
-    ✅ Zentrale Code-Verwaltung
-    ✅ Multiple ValueSet-Varianten
-    ✅ Wiederverwendbare Konzepte
-    ✅ CodeSystem Properties für Scoring
-    ⚠️ Höherer Implementierungsaufwand
+    [+] Zentrale Code-Verwaltung
+    [+] Multiple ValueSet-Varianten
+    [+] Wiederverwendbare Konzepte
+    [+] CodeSystem Properties für Scoring
+    [o] Höherer Implementierungsaufwand
     --
     **Code-Beispiel**:
-    * answerValueSet = "mii-vs-pro-instrument-short"
-    CodeSystem: #code ^property[itemWeight] = 1
+    * answerValueSet = "mii-vs-pro-bdi-bdi2-short"
+    CodeSystem: #code ^property[ordinalValue] = 1
   }
   
   class "Reusable Terminology Pattern" as reusable_pattern {
-    **Anwendung**: Generische Severity Scales
+    **Anwendung**: Generische Schweregrad-Skalen
     --
-    ✅ Konsistente Terminologie
-    ✅ Harmonisierte Datenmodelle
-    ✅ Effiziente zentrale Wartung
-    ✅ MII-kontrollierte Deutsche Spezifika
-    ⚠️ Komplexere Governance erforderlich
+    [+] Konsistente Terminologie
+    [+] Harmonisierte Datenmodelle
+    [+] Effiziente zentrale Wartung
+    [+] MII-kontrollierte Deutsche Spezifika
+    [o] Komplexere Governance erforderlich
     --
     **Code-Beispiel**:
     ValueSet: Generic_PRO_Severity_Scale
@@ -92,42 +92,42 @@ package "answerValueSet + MII CodeSystem" as valueset {
 
 note top of loinc_pattern
   **Entscheidungskriterien**:
-  • LOINC-Codes verfügbar?
-  • Internationale Interoperabilität prioritär?
-  • Statische Antwortlisten?
-  • Moderate Scoring-Anforderungen?
+  - LOINC-Codes verfügbar?
+  - Internationale Interoperabilität prioritär?
+  - Statische Antwortlisten?
+  - Moderate Scoring-Anforderungen?
 end note
 
 note top of simple_pattern
   **Entscheidungskriterien**:
-  • ≤5 einfache Antwortoptionen?
-  • Keine Wiederverwendung geplant?
-  • Minimale Wartungsanforderungen?
-  • Keine komplexen Scoring-Regeln?
+  - Maximal 5 einfache Antwortoptionen?
+  - Keine Wiederverwendung geplant?
+  - Minimale Wartungsanforderungen?
+  - Keine komplexen Scoring-Regeln?
 end note
 
 note top of calculatable_pattern
   **Entscheidungskriterien**:
-  • displayable = false, calculatable = true?
-  • Reine Score-Berechnung ohne Display?
-  • Optimierung für Hintergrund-Prozesse?
-  • Keine interaktive Benutzerschnittstelle?
+  - displayable = false, calculatable = true?
+  - Reine Score-Berechnung ohne Display?
+  - Optimierung für Hintergrund-Prozesse?
+  - Keine interaktive Benutzerschnittstelle?
 end note
 
 note bottom of variant_pattern
   **Entscheidungskriterien**:
-  • Multiple Textformat-Varianten?
-  • Komplexe Scoring-Anforderungen?
-  • Flexible ValueSet-Zusammenstellung?
-  • Deutsche Gesundheitssystem-Spezifika?
+  - Multiple Textformat-Varianten?
+  - Komplexe Scoring-Anforderungen?
+  - Flexible ValueSet-Zusammenstellung?
+  - Deutsche Gesundheitssystem-Spezifika?
 end note
 
 note bottom of reusable_pattern
   **Entscheidungskriterien**:
-  • Wiederverwendung über Questionnaires?
-  • Zentrale Terminologie-Governance?
-  • Harmonisierte Datenmodelle gewünscht?
-  • Langfristige Skalierbarkeit wichtig?
+  - Wiederverwendung über Questionnaires?
+  - Zentrale Terminologie-Governance?
+  - Harmonisierte Datenmodelle gewünscht?
+  - Langfristige Skalierbarkeit wichtig?
 end note
 
 ' Relationships showing decision flow

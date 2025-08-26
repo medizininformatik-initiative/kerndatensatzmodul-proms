@@ -15,55 +15,55 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 
 ## Strategische Entscheidungskriterien
 
-### 🎯 Inline answerOption verwenden bei:
+### Verwendung von Inline answerOption
 
-#### ✅ Verfügbare internationale Standards
-**Kriterium**: LOINC-Codes für Antwortlisten verfügbar mit verlässlicher Abdeckung
+#### Verfügbare internationale Standards
+**Anwendungsbereich**: LOINC-Codes für Antwortlisten mit verlässlicher Abdeckung vorhanden
 
 **Implementierungsmuster**:
-```fsh
+~~~~
 * item[=].answerOption[0].valueCoding.system = $LNC
 * item[=].answerOption[0].valueCoding.code = #LA6568-5
 * item[=].answerOption[0].valueCoding.display = "Überhaupt nicht"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
-```
+~~~~
 
-**Beispiele**: PHQ-9, PROMIS-Instrumente
+**Beispielinstrumente**: PHQ-9, PROMIS-Fragebögen
 **Vorteile**: 
 - Internationale Interoperabilität
 - Semantische Eindeutigkeit
-- Etablierte Coding-Standards
+- Etablierte Kodierungsstandards
 
-#### ✅ Einfache, statische Antwortlisten
-**Kriterium**: Wenige Antwortoptionen (≤5), unwahrscheinliche Änderungen, keine Wiederverwendung
+#### Einfache, statische Antwortlisten
+**Anwendungsbereich**: Wenige Antwortoptionen (maximal 5 Optionen), geringe Änderungswahrscheinlichkeit, keine Wiederverwendung erforderlich
 
 **Implementierungsmuster**:
-```fsh
+~~~~
 * item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[0].valueCoding.code = #1
 * item[=].answerOption[1].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
 * item[=].answerOption[1].valueCoding.code = #2
-```
+~~~~
 
-**Beispiel**: EQ-5D-5L 5-Punkt-Skala
+**Beispielinstrument**: EQ-5D-5L Antwortskala
 **Vorteile**:
 - Minimale Komplexität
-- Direkter, übersichtlicher Code
-- Geringere Wartungsanforderungen
+- Übersichtliche Implementierung
+- Geringer Wartungsaufwand
 
-#### ✅ Reiche Metadaten pro Option erforderlich
-**Kriterium**: Mehrsprachigkeit, Score-Gewichte, komplexe Rendering-Anweisungen
+#### Umfangreiche Metadaten pro Antwortoption
+**Anwendungsbereich**: Mehrsprachige Unterstützung, Score-Gewichtungen, komplexe Darstellungsanforderungen
 
-**Beispiel**: PHQ-9 mit deutschen Übersetzungen und itemWeight-Extensions
+**Beispiel**: PHQ-9 mit deutschen Übersetzungen und Gewichtungs-Extensions
 
-### 🗂️ answerValueSet + MII CodeSystem verwenden bei:
+### Verwendung von answerValueSet mit MII CodeSystem
 
-#### ✅ Multiple Antwortformat-Varianten
-**Kriterium**: Gleiche konzeptuelle Antworten in verschiedenen Textvarianten (kurz/lang/detailliert)
+#### Multiple Antwortformat-Varianten
+**Anwendungsbereich**: Identische konzeptuelle Antworten in verschiedenen Textvarianten (Kurzform/Langform/Detail)
 
 **Implementierungsbeispiel**: BDI-II
-```fsh
+~~~~
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
 * #bdi-bdi2-answer-1a ^property[+].code = #bdi-bdi2-itemWeight
 * #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
@@ -77,14 +77,14 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong  
 * include #bdi-bdi2-answer-1a from system MII_CS_PRO_BDI_BDI2_AnswerList
 * include #bdi-bdi2-answer-1b from system MII_CS_PRO_BDI_BDI2_AnswerList
-```
+~~~~
 
 **Vorteile**:
 - Zentrale Codeverwaltung
 - Mehrere ValueSet-Varianten aus einem CodeSystem
 - Wiederverwendbarkeit der Konzepte
 
-#### ✅ Wiederverwendung über Questionnaires hinweg
+#### Wiederverwendung über Questionnaires hinweg
 **Kriterium**: Gleiche Antwortmuster in mehreren Instrumenten
 
 **Anwendungsfall**: Generische PRO-Severity-Scales (keine/leicht/mäßig/schwer)
@@ -93,13 +93,13 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 - Zentrale Wartung
 - Harmonisierte Datenmodelle
 
-#### ✅ Komplexe Score-Anforderungen
+#### Komplexe Score-Anforderungen
 **Kriterium**: Multiple Score-Gewichte pro Konzept, komplexe Scoring-Regeln
 
 **Beispiel**: BDI-II mit Varianten-Antwort-Gewichten (1a vs 1b)
 **Implementierung**: CodeSystem-Properties für itemWeight-Management
 
-#### ✅ Questionnaire Capabilities-basierte Entscheidungen
+#### Questionnaire Capabilities-basierte Entscheidungen
 **Kriterium**: Capability-Profile erfordern spezifische Terminologie-Ansätze
 
 **Capabilities und Terminologie-Implikationen**:
@@ -109,13 +109,13 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 - **Multiple Capabilities**: Inline answerOption bietet maximale Flexibilität für Darstellung + Berechnung
 
 **BDI-II Beispiel**: 
-```fsh
+~~~~
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[calculatable].valueBoolean = true
 * item[=].answerValueSet = "mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
-```
+~~~~
 
-#### ✅ MII-kontrollierte Terminologiestrategie  
+#### MII-kontrollierte Terminologiestrategie  
 **Kriterium**: Keine zuverlässigen internationalen Standards, deutsche Spezifika erforderlich
 
 **Strategische Überlegungen**:
@@ -128,47 +128,21 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 
 | Kriterium | Inline answerOption | answerValueSet + MII CS |
 |-----------|-------------------|------------------------|
-| **LOINC-Verfügbarkeit** | ✅ Verwenden wenn vorhanden | ❌ Nur wenn unzureichend |
-| **Displayable Capability** | ✅ Optimal für Display + Scores | ⚠️ Begrenzt für reine Display-Logik |
-| **Calculatable-only** | ⚠️ Overhead für reine Berechnung | ✅ Ideal für Score-only Questionnaires |
-| **Mehrfachvarianten** | ❌ Ungeeignet | ✅ Ideal |
-| **Wiederverwendung** | ❌ Nicht effizient | ✅ Empfohlen |
-| **Komplexe Scores** | ⚠️ Begrenzt durch Extensions | ✅ CodeSystem Properties |
-| **Implementierungsaufwand** | ✅ Minimal | ⚠️ Höher |
-| **Wartungsaufwand** | ✅ Niedrig (bei statischen Listen) | ⚠️ Höher |
-| **Internationale Interop** | ✅ Maximal (mit LOINC) | ⚠️ Begrenzt |
-| **Deutsche Spezifika** | ⚠️ Via Extensions | ✅ Native Unterstützung |
-
-## Best Practice Entscheidungsbaum
-
-```mermaid
-graph TD
-    A[Neue Antwortliste erstellen] --> B{Questionnaire Capabilities?}
-    B -->|displayable = false<br/>calculatable = true| C[✅ answerValueSet + MII CodeSystem]
-    B -->|displayable = true<br/>+/- andere capabilities| D{LOINC-Codes verfügbar mit Score-Gewichten?}
-    
-    C --> C1[BDI-II Pattern:<br/>Score-only ohne Display-Overhead]
-    
-    D -->|Ja| E[✅ Inline answerOption mit LOINC]
-    D -->|Nein| F{Multiple Antwortformat-Varianten benötigt?}
-    F -->|Ja| G[✅ MII CodeSystem + ValueSet]
-    F -->|Nein| H{Wiederverwendung über Questionnaires?}
-    H -->|Ja| I[✅ MII CodeSystem + ValueSet]
-    H -->|Nein| J{Komplexe Scoring-Anforderungen?}
-    J -->|Ja| K[✅ MII CodeSystem + ValueSet]
-    J -->|Nein| L[✅ Inline answerOption mit einfachen Codes]
-    
-    E --> E1[PHQ-9, PROMIS Pattern:<br/>Display + International Standards]
-    G --> G1[Multi-Variant Pattern:<br/>kurz/lang Versionen]
-    I --> I1[Generische Severity Scales:<br/>Wiederverwendbare Terminologie]
-    K --> K1[Multi-Weight Scoring:<br/>Komplexe Berechnungslogik]
-    L --> L1[EQ-5D-5L Pattern:<br/>Einfache statische Listen]
-```
+| **LOINC-Verfügbarkeit** | Verwenden wenn vorhanden | Nur wenn unzureichend |
+| **Displayable Capability** | Optimal für Display + Scores | Begrenzt für reine Display-Logik |
+| **Calculatable-only** | Overhead für reine Berechnung | Ideal für Score-only Questionnaires |
+| **Mehrfachvarianten** | Ungeeignet | Ideal |
+| **Wiederverwendung** | Nicht effizient | Empfohlen |
+| **Komplexe Scores** | Begrenzt durch Extensions | CodeSystem Properties |
+| **Implementierungsaufwand** | Minimal | Höher |
+| **Wartungsaufwand** | Niedrig (bei statischen Listen) | Höher |
+| **Internationale Interop** | Maximal (mit LOINC) | Begrenzt |
+| **Deutsche Spezifika** | Via Extensions | Native Unterstützung |
 
 ## Implementierungsbeispiele
 
 ### Beispiel 1: PHQ-9 (LOINC + Inline)
-```fsh
+~~~~
 * item[1].answerOption[0].valueCoding.system = $LNC
 * item[1].answerOption[0].valueCoding.code = #LA6568-5
 * item[1].answerOption[0].valueCoding.display = "Überhaupt nicht"
@@ -179,10 +153,10 @@ graph TD
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
 * item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[1].answerOption[0].extension.valueDecimal = 0
-```
+~~~~
 
 ### Beispiel 2: BDI-II (MII CodeSystem + ValueSet)
-```fsh
+~~~~
 // Questionnaire Item
 * item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 
@@ -197,34 +171,34 @@ CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
 ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 * include #bdi-bdi2-answer-0 from system MII_CS_PRO_BDI_BDI2_AnswerList
 * include #bdi-bdi2-answer-1 from system MII_CS_PRO_BDI_BDI2_AnswerList
-```
+~~~~
 
 ### Beispiel 3: EQ-5D-5L (Einfache Inline)
-```fsh
+~~~~
 * item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #1
 * item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #2
-```
+~~~~
 
 ## Calculated Expressions und .weight() Funktionen
 
 **Kritische Implementierungsanforderung**: FHIRPath `.weight()` Funktionen benötigen korrekte itemWeight-Definitionen:
 
 ### Bei Inline answerOption:
-```fsh
+~~~~
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
-```
+~~~~
 
 ### Bei CodeSystem + ValueSet:
-```fsh  
+~~~~
 CodeSystem: MyCodeSystem
 * ^property[+].code = #itemWeight
 * ^property[=].type = #decimal
 * #answer-code ^property[+].code = #itemWeight
 * #answer-code ^property[=].valueDecimal = 0
-```
+~~~~
 
 ## Governance und Lebenszyklus-Management
 
