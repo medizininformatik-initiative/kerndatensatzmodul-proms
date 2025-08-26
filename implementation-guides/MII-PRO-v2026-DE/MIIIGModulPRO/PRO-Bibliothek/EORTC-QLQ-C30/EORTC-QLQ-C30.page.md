@@ -160,18 +160,19 @@ Für jede Subskala existiert eine separate ObservationDefinition:
 
 ### FHIR-Implementierung
 Missing Data Handling über FHIRPath-Expressions:
-```fhirpath
+
+~~~~
 // Prüfung auf ausreichende Antworten (Beispiel PF-Skala)
 %resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).where(answer.exists()).count() >= 3
-```
+~~~~
 
 ## Referenzen
 
-2. **Aaronson NK, et al.** (1993)  
+1. **Aaronson NK, et al.** (1993)  
    *The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology*  
    J Natl Cancer Inst. 85(5):365-76
 
-3. **Fayers PM, et al.** (2001)  
+2. **Fayers PM, et al.** (2001)  
    *The EORTC QLQ-C30 Scoring Manual (3rd Edition)*  
    European Organisation for Research and Treatment of Cancer, Brussels
    [https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf]
