@@ -27,13 +27,7 @@ Lineare oder nicht-lineare Regressionsmodelle zur Vorhersage von Scores eines In
 
 Die folgende Abbildung zeigt validierte Mappings zwischen PROMIS Depression T-Scores und acht weiteren etablierten Depressionsskalen:
 
-<style>
-      img {
-      max-width:100%;
-      height: auto;
-      }
-</style>
-<img decoding="async" src="../../Images/Mapping-depression-scales.png" alt="Depression Scale Mappings" title="Depression Scale Mappings">
+<img decoding="async" src="../../Images/Mapping-depression-scales.png" alt="Depression Scale Mappings" title="Depression Scale Mappings" style="max-width:100%; height:auto;">
 
 **Abbildung 1:** *Translations of PROMIS T-Scores to other scales - Comprehensive mapping table für Depression Domain*
 

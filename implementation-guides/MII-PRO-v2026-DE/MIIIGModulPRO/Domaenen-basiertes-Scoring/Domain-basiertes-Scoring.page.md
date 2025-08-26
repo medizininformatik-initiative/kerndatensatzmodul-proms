@@ -93,13 +93,7 @@ Riazy et al. (2025) liefern umfassende Referenzdaten aus 29 europäischen Lände
 
 **1. Item Response Theory (IRT)**
 
-<style>
-      img {
-      max-width:100%;
-      height: auto;
-      }
-</style>
-<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/IRT-Antwortwahrscheinlichkeiten.png" alt="IRT Antwortwahrscheinlichkeiten" title="IRT Antwortwahrscheinlichkeiten">
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/IRT-Antwortwahrscheinlichkeiten.png" alt="IRT Antwortwahrscheinlichkeiten" title="IRT Antwortwahrscheinlichkeiten" style="max-width:100%; height:auto;">
 
 **Abbildung 1:** *Item Response Theory - Antwortwahrscheinlichkeiten in Abhängigkeit von der Merkmalsausprägung*
 
@@ -143,7 +137,7 @@ Bei der Anwendung von Cross-Walking sind folgende Einschränkungen zu beachten:
 
 ### Das PRO-Spannungsfeld
 
-<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/PRO-Spannungsfeld.png" alt="PRO Spannungsfeld" title="PRO Spannungsfeld">
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/PRO-Spannungsfeld.png" alt="PRO Spannungsfeld" title="PRO Spannungsfeld" style="max-width:100%; height:auto;">
 
 **Abbildung 2:** *Das Spannungsfeld zwischen Item-Anzahl, Messbereich und Präzision*
 
@@ -158,7 +152,7 @@ Domain-basiertes Scoring löst dieses Dilemma durch:
 
 ### Item Banking und Adaptive Messung
 
-<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/itembanking.png" alt="Item Banking" title="Item Banking">
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/itembanking.png" alt="Item Banking" title="Item Banking" style="max-width:100%; height:auto;">
 
 **Abbildung 3:** *Item Banking für die Domäne Körperliche Funktionsfähigkeit*
 
