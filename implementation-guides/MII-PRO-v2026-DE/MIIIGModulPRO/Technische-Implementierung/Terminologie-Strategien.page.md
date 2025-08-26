@@ -139,6 +139,10 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 | **Internationale Interop** | Maximal (mit LOINC) | Begrenzt |
 | **Deutsche Spezifika** | Via Extensions | Native Unterstützung |
 
+## Visuelle Übersicht
+
+<img decoding="async" src="../../Images/MII-PRO-Terminologie-Vergleichsmatrix.png" alt="Terminologie-Strategien Vergleichsmatrix" title="Terminologie-Strategien Vergleichsmatrix" style="max-width:100%; height:auto;">
+
 ## Implementierungsbeispiele
 
 ### Beispiel 1: PHQ-9 (LOINC + Inline)
@@ -151,7 +155,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
-* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[1].answerOption[0].extension.valueDecimal = 0
 ~~~~
 
@@ -162,9 +166,9 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 
 // CodeSystem
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
-* ^property[+].code = #bdi-bdi2-itemWeight
+* ^property[+].code = #ordinalValue
 * ^property[=].type = #decimal
-* #bdi-bdi2-answer-1a ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-1a ^property[+].code = #ordinalValue
 * #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
 
 // ValueSet Short Form
@@ -187,16 +191,16 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 
 ### Bei Inline answerOption:
 ~~~~
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 0
 ~~~~
 
 ### Bei CodeSystem + ValueSet:
 ~~~~
 CodeSystem: MyCodeSystem
-* ^property[+].code = #itemWeight
+* ^property[+].code = #ordinalValue
 * ^property[=].type = #decimal
-* #answer-code ^property[+].code = #itemWeight
+* #answer-code ^property[+].code = #ordinalValue
 * #answer-code ^property[=].valueDecimal = 0
 ~~~~
 
