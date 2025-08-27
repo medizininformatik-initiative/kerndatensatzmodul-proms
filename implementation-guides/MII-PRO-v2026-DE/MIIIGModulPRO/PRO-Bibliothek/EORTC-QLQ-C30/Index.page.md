@@ -34,9 +34,9 @@ Der EORTC QLQ-C30 ist der Standard-Fragebogen zur Erfassung der Lebensqualität 
 ### Technische Details
 
 #### Questionnaire Resource
-```
+~~~~
 Questionnaire/mii-qst-pro-eortc-qlq-c30
-```
+~~~~
 
 **SNOMED**: `273446001 |EORTC QLQ-C30 (assessment scale)|`
 
@@ -54,49 +54,53 @@ Questionnaire/mii-qst-pro-eortc-qlq-c30
 Alle Skalen werden auf 0-100 transformiert:
 
 **Funktionsskalen**:
-```
+~~~~
 Score = (1 - (RawScore - 1) / Range) × 100
-```
+~~~~
 
 **Symptomskalen & Global Health**:
-```
+~~~~
 Score = ((RawScore - 1) / Range) × 100
-```
+~~~~
 
 #### MII-kontrollierte Terminologie
 
-```fsh
+~~~~
+// FSH
 CodeSystem: MII_CS_PRO_EORTC_QLQ_C30
 Id: mii-cs-pro-eortc-qlq-c30
 * #qlq30-q01 "Bereitet es Ihnen Schwierigkeiten..."
   * ^designation[+].language = #en
   * ^designation[=].value = "Do you have any trouble..."
-```
+~~~~
 
 ### Antwortskalen
 
 #### 4-Punkt Skala (Items 1-28)
-```fsh
+~~~~
+// FSH
 ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale4pt
 * MII_CS_PRO_EORTC_QLQ_C30#not-at-all "Überhaupt nicht"
 * MII_CS_PRO_EORTC_QLQ_C30#a-little "Wenig"
 * MII_CS_PRO_EORTC_QLQ_C30#quite-a-bit "Mäßig"
 * MII_CS_PRO_EORTC_QLQ_C30#very-much "Sehr"
-```
+~~~~
 
 #### 7-Punkt Skala (Items 29-30)
-```fsh
+~~~~
+// FSH
 ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
 * MII_CS_PRO_EORTC_QLQ_C30#1 "Sehr schlecht"
 * MII_CS_PRO_EORTC_QLQ_C30#2 "2"
 // ... bis 7 "Ausgezeichnet"
-```
+~~~~
 
 ### Implementierungshinweise
 
 #### Scoring-Beispiel: Physical Function
 
-```fhirpath
+~~~~
+// FHIRPath
 // Items: qlq30-q01 bis qlq30-q05
 %pfRawScore = %resource.item
   .where(linkId in ('qlq30-q01' | 'qlq30-q02' | 'qlq30-q03' | 'qlq30-q04' | 'qlq30-q05'))
@@ -105,7 +109,7 @@ ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
 
 // Funktionsskala: Invertierte Transformation
 %pfScore = (1 - (%pfRawScore - 1) / 3) * 100
-```
+~~~~
 
 ### Bekannte Einschränkungen
 
@@ -115,7 +119,8 @@ ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
 
 ### Beispiel QuestionnaireResponse
 
-```json
+~~~~
+// JSON
 {
   "resourceType": "QuestionnaireResponse",
   "questionnaire": "Questionnaire/mii-qst-pro-eortc-qlq-c30",
@@ -135,7 +140,7 @@ ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
     // ... weitere 29 Items
   ]
 }
-```
+~~~~
 
 ### Integration mit MII Onkologie-Modul
 

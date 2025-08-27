@@ -78,36 +78,36 @@ Das **EORTC QLQ-C30** (European Organisation for Research and Treatment of Cance
 ### Schritt 1: Rohwert-Berechnung
 Für jede Skala wird der Mittelwert der zugehörigen Items berechnet:
 
-```
+~~~~
 Rohwert = (Σ Itemwerte) / Anzahl Items
-```
+~~~~
 
 ### Schritt 2: Lineare Transformation (0-100 Skala)
 
 #### Funktionsskalen (Inversion erforderlich)
-```
+~~~~
 Funktions-Score = (1 - (Rohwert - 1) / (max - 1)) × 100
-```
+~~~~
 
 **Für 4-Punkt-Skala:**
-```
+~~~~
 Funktions-Score = (1 - (Rohwert - 1) / 3) × 100
-```
+~~~~
 
 #### Symptomskalenen und Einzelsymptome
-```
+~~~~
 Symptom-Score = ((Rohwert - 1) / (max - 1)) × 100
-```
+~~~~
 
 **Für 4-Punkt-Skala:**
-```
+~~~~
 Symptom-Score = ((Rohwert - 1) / 3) × 100
-```
+~~~~
 
 #### Globale Lebensqualität
-```
+~~~~
 QL-Score = ((Rohwert - 1) / 6) × 100
-```
+~~~~
 
 ### Score-Interpretation
 
@@ -136,13 +136,14 @@ QL-Score = ((Rohwert - 1) / 6) × 100
 ### Scoring-Implementierung
 Automatische Score-Berechnung über SDC `calculatedExpression`:
 
-```fhirpath
+~~~~
+// FHIRPath
 // Beispiel: Körperliche Funktionsfähigkeit (Q1-5, invertiert)
 (1 - (%resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).answer.value.weight().sum()/5 - 1) / 3) * 100
 
 // Beispiel: Fatigue (Q10, Q12, Q18, standard)
 ((%resource.item.where(linkId in ('qlq-c30-q10'|'qlq-c30-q12'|'qlq-c30-q18')).answer.value.weight().sum()/3 - 1) / 3) * 100
-```
+~~~~
 
 ### ObservationDefinition-Resources
 Für jede Subskala existiert eine separate ObservationDefinition:
@@ -160,18 +161,19 @@ Für jede Subskala existiert eine separate ObservationDefinition:
 
 ### FHIR-Implementierung
 Missing Data Handling über FHIRPath-Expressions:
-```fhirpath
+
+~~~~
 // Prüfung auf ausreichende Antworten (Beispiel PF-Skala)
 %resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).where(answer.exists()).count() >= 3
-```
+~~~~
 
 ## Referenzen
 
-2. **Aaronson NK, et al.** (1993)  
+1. **Aaronson NK, et al.** (1993)  
    *The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology*  
    J Natl Cancer Inst. 85(5):365-76
 
-3. **Fayers PM, et al.** (2001)  
+2. **Fayers PM, et al.** (2001)  
    *The EORTC QLQ-C30 Scoring Manual (3rd Edition)*  
    European Organisation for Research and Treatment of Cancer, Brussels
    [https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf]

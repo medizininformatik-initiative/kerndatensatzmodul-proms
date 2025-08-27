@@ -31,7 +31,7 @@ Umfang des ersten Pre-Releases
 
 ### Zukünftige IG-Struktur und PRO-Verteilung
 
-Die aktuelle Implementation Guide enthält sowohl das technische Framework als auch eine wachsende Bibliothek von PRO-Instrumenten. Mit der erwarteten Expansion auf potentiell über 100 PRO-Instrumente stellt sich die Frage der optimalen Organisationsstruktur.
+Die aktuelle Implementation Guide enthält sowohl das technische Framework als auch eine potentiell wachsende Bibliothek von PRO-Instrumenten. Mit der erwarteten Expansion auf potentiell über 100 PRO-Instrumente stellt sich die Frage der optimalen Organisationsstruktur.
 
 **Mögliche Szenarien:**
 
@@ -62,7 +62,5 @@ Die aktuelle Implementation Guide enthält sowohl das technische Framework als a
    - Vorteil: Balance zwischen Zentralisierung und Verteilung
    - Nachteil: Komplexere Governance
 
-**Ballotierungsfrage:** Welche Organisationsstruktur würde die Implementierung und Wartung von PROs in Ihrer Institution am besten unterstützen? Gibt es weitere Szenarien, die berücksichtigt werden sollten?
 
-* 
 

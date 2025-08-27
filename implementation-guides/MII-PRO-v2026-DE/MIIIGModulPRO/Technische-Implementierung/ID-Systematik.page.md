@@ -25,9 +25,9 @@ Identifier werden in folgenden Kontexten benötigt:
 Das MII PRO-Modul folgt dem etablierten MII-Benennungsschema:
 
 ### Grundstruktur
-```
+~~~~
 mii-[typ]-[modul]-[spezifikation]
-```
+~~~~
 
 - **[typ]**: FHIR-Ressourcentyp (siehe Tabelle unten)
 - **[modul]**: `pro` (Patient-Reported Outcomes)
@@ -38,7 +38,6 @@ mii-[typ]-[modul]-[spezifikation]
 | Typ | Bedeutung | FHIR-Ressource | Beispiel |
 |-----|-----------|----------------|----------|
 | `qst` | Questionnaire | Questionnaire | `mii-qst-pro-phq-9` |
-| `qr` | QuestionnaireResponse | QuestionnaireResponse | `mii-qr-pro-phq-9-example` |
 | `pr` | Profile | StructureDefinition (Profile) | `mii-pr-pro-questionnaire` |
 | `obsdef` | ObservationDefinition | ObservationDefinition | `mii-obsdef-pro-eq5d5l-index-score` |
 | `cs` | CodeSystem | CodeSystem | `mii-cs-pro-questionnaire-catalogue` |
@@ -59,9 +58,9 @@ mii-[typ]-[modul]-[spezifikation]
 - **Eindeutigkeit**: Klare Abgrenzung verschiedener Instrumente und Versionen
 
 ### Namespace-Struktur für Questionnaires
-```
+~~~~
 mii-qst-pro-[organisation]-[instrument]-[variant]
-```
+~~~~
 
 #### Herausforderungen bei der Namespace-Definition
 
@@ -79,7 +78,7 @@ mii-qst-pro-[organisation]-[instrument]-[variant]
 ### Etablierte Namespaces (Aktueller Stand)
 
 #### Nach Organisation strukturiert:
-```
+~~~~
 # EuroQol-Organisation
 mii-qst-pro-euroqol-eq5d5l     # EQ-5D-5L (Five Level)
 mii-qst-pro-euroqol-eq5dy5l    # EQ-5D-Y-5L (Youth Version)
@@ -96,7 +95,7 @@ mii-qst-pro-phq-phqsads       # PHQ-SADS
 
 # Beck-Inventories
 mii-qst-pro-beck-bdi2         # Beck Depression Inventory-II
-```
+~~~~
 
 **Hinweis**: Die Namespace-Systematik wird kontinuierlich erweitert und verfeinert, basierend auf den Anforderungen neuer Instrumente.
 
@@ -108,16 +107,16 @@ mii-qst-pro-beck-bdi2         # Beck Depression Inventory-II
 ## LinkId-Konventionen für Questionnaire-Items
 
 ### Grundstruktur für linkIds
-```
+~~~~
 [instrument-prefix]-[item-type]-[identifier]
-```
+~~~~
 
 ### Aktuell implementierte Patterns
 
 #### 1. Fragenkürzel + Nummerierung (mit führenden Nullen)
 **Pattern**: `{instrument}-q{number}` (Nummer immer zweistellig mit führender Null)
 
-```
+~~~~
 # PHQ-9 Beispiele
 phq-phq9-q01        # Item 1: "Wenig Interesse oder Freude an Tätigkeiten"
 phq-phq9-q02        # Item 2: Niedergeschlagenheit
@@ -129,12 +128,12 @@ bdi-bdi2-q01        # Item 1: Traurigkeit
 bdi-bdi2-q02        # Item 2: Pessimismus
 bdi-bdi2-q21        # Item 21: Verlust des Interesses an Sex
 bdi-bdi2-score-total # Gesamtscore
-```
+~~~~
 
 #### 2. EuroQol Domain-basierte IDs
 **Pattern**: `{instrument}-q{number}-{domain-code}` (Nummer zweistellig)
 
-```
+~~~~
 # EQ-5D-5L Beispiele
 euroqol-eq5d5l-q01-MO    # Mobility (Beweglichkeit)
 euroqol-eq5d5l-q02-SC    # Self-Care (Für sich selbst sorgen)
@@ -142,12 +141,12 @@ euroqol-eq5d5l-q03-UA    # Usual Activities (Alltägliche Tätigkeiten)
 euroqol-eq5d5l-q04-PD    # Pain/Discomfort (Schmerzen/Beschwerden)
 euroqol-eq5d5l-q05-AD    # Anxiety/Depression (Angst/Niedergeschlagenheit)
 euroqol-eq5d5l-vas       # Visual Analog Scale
-```
+~~~~
 
 #### 3. PROMIS Item Bank IDs
 **Pattern**: `{instrument}-{item-bank-id}` (basierend auf offiziellen PROMIS-Codes)
 
-```
+~~~~
 # PROMIS Depression SF 4a
 promis-eddep04           # PROMIS Item EDDEP04 
 promis-eddep06           # PROMIS Item EDDEP06
@@ -159,12 +158,12 @@ promis-pfa11             # Physical Function Item (basierend auf Validierungsstu
 promis-pfa21             # Physical Function Item
 promis-pfa23             # Physical Function Item  
 promis-pfa53             # Physical Function Item
-```
+~~~~
 
 ### Score-Item Konventionen
 **Pattern**: `{instrument}-{score-type}-{variant}`
 
-```
+~~~~
 # Verschiedene Score-Typen
 {instrument}-score-raw          # Rohscore
 {instrument}-score-tscore       # T-Score (PROMIS)
@@ -172,21 +171,21 @@ promis-pfa53             # Physical Function Item
 {instrument}-score-index        # Index-Score (EQ-5D)
 {instrument}-score-vas          # VAS-Score
 {instrument}-score-profile      # Profil-Score
-```
+~~~~
 
 ### Spezielle Item-Typen
 
 #### Display-Items (Instruktionen, Beschreibungen)
-```
+~~~~
 {instrument}.Description        # Hauptbeschreibung/Instruktion
 {instrument}.{section}          # Bereichsspezifische Beschreibung
-```
+~~~~
 
 Beispiele:
-```
+~~~~
 PHQ-9.Description               # PHQ-9 Hauptinstruktion
 PROMIS-Depression.Description   # PROMIS Depression Instruktion
-```
+~~~~
 
 ### Entscheidungsmatrix für linkId-Patterns
 
@@ -211,17 +210,19 @@ PROMIS-Depression.Description   # PROMIS Depression Instruktion
 
 **LOINC-Integration**: Wo verfügbar, wird LOINC als code-Element verwendet, während linkId der MII-internen Systematik folgt:
 
-```fsh
+~~~~
+//FSH
 * item[1].linkId = "phq-phq9-q01"           # MII-interne ID
 * item[1].code = $LNC#44250-9               # LOINC-Code für semantische Annotation
-```
+~~~~
 
 **PROMIS-Integration**: Offizielle PROMIS Item-IDs werden als linkId übernommen, wo vorhanden:
 
-```fsh
+~~~~
+//FSH
 * item[1].linkId = "promis-eddep04"         # Offizieller PROMIS Item-Code
 * item[1].code = $LNC#71969-0               # LOINC-Code (falls vorhanden)
-```
+~~~~
 
 ### Herausforderungen und Lösungsansätze
 
@@ -237,10 +238,10 @@ PROMIS-Depression.Description   # PROMIS Depression Instruktion
 **Situation**: Nicht alle Instrumente haben standardisierte Item-Codes
 
 **Lösung**: Fallback auf strukturierte Nummerierung mit semantischen Ergänzungen:
-```
+~~~~
 {instrument}-q{NN}              # Basis-Pattern (führende Null!)
 {instrument}-q{NN}-{domain}     # Mit Domain-Information
-```
+~~~~
 
 ### Best Practices für neue Instrumente
 
@@ -267,29 +268,32 @@ Die Wahl zwischen inline `answerOption` und externen `answerValueSet` Definition
 ### Implementierungsbeispiele
 
 #### Pattern 1: LOINC + itemWeight Extensions (PHQ-9)
-```fsh
+~~~~
+//FSH
 * item[=].answerOption[0].valueCoding.system = $LNC
 * item[=].answerOption[0].valueCoding.code = #LA6568-5
 * item[=].answerOption[0].valueCoding.display = "Überhaupt nicht"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
-```
+~~~~
 
 #### Pattern 2: MII CodeSystem + ValueSet (BDI-II)
-```fsh
+~~~~
+//FSH
 // Questionnaire
 * item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 
 // CodeSystem
 * #bdi-bdi2-answer-1 ^property[+].code = #bdi-bdi2-itemWeight
 * #bdi-bdi2-answer-1 ^property[=].valueDecimal = 1
-```
+~~~~
 
 #### Pattern 3: Einfache Inline Codes (EQ-5D-5L)
-```fsh
+~~~~
+//FSH
 * item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[0].valueCoding.code = #1
-```
+~~~~
 
 ### Entscheidungshilfe
 

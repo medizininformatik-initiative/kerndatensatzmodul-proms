@@ -6,7 +6,11 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Structur
 
 ## Extension: Score Health Correlation
 
-Extension zur Angabe der Interpretationsrichtung eines Scores (höhere Werte = bessere/schlechtere Gesundheit).
+Extension zur Angabe der Interpretationsrichtung eines Scores (höhere Werte = bessere/schlechtere Gesundheit). Diese Extension verwendet das HL7-Value Set. 
+
+### Beispiele
+Beim PHQ-9 ist das "gesunde" Ende der Skala 0 Punkte, das "pathologische" Ende der Skala 27, daher hat der PHQ-9-Score den "increase" Wert -> positive Korrelation von 
+Der EORTC QLQ-C30 
 
 ### Inhalt
 

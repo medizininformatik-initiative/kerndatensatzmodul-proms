@@ -1,11 +1,11 @@
 ---
 topic: QuestionnaireCapabilities
----
-## {{page-title}}
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire
 canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/QuestionnaireVariantenArchitektur
 expand: 1
 ---
+
+## {{page-title}}
 
 ## Questionnaire-Varianten-Architektur: Trennung der Verantwortlichkeiten
 
@@ -96,7 +96,8 @@ Dieses Muster ermöglicht:
 
 Der EQ-5D-5L-Fragebogen demonstriert diese Architektur perfekt:
 
-```fsh
+~~~~
+//FSH
 // Basis-Fragebogen mit Kernstruktur
 Instance: mii-qst-pro-euroqol-eq5d5l-base
 * url = ".../mii-qst-pro-euroqol-eq5d5l-base"
@@ -117,7 +118,7 @@ Instance: mii-qst-pro-euroqol-eq5d5l-calculatable
 * derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
 * extension[questionnaire-capabilities].valueCode = #calculatable
 // Enthält FHIRPath-Ausdrücke für Index-, VAS-, Profil-Scores
-```
+~~~~
 
 ### Erweiterte Workflow-Szenarien
 
@@ -146,7 +147,8 @@ Instance: mii-qst-pro-euroqol-eq5d5l-calculatable
 #### Capability-Extensions
 Die Questionnaire-Capabilities werden als separate boolesche Sub-Extensions implementiert:
 
-```fsh
+~~~~
+//FSH
 Extension: MII_PR_PRO_Questionnaire_Capabilities
 * extension contains 
     displayable 0..1 MS and
@@ -161,17 +163,18 @@ Extension: MII_PR_PRO_Questionnaire_Capabilities
 * extension[extractable].value[x] only boolean
 * extension[calculatable].value[x] only boolean
 * extension[domainAligned].value[x] only boolean
-```
+~~~~
 
 Diese boolesche Struktur ermöglicht flexible Capability-Kombinationen, da mehrere Capabilities gleichzeitig aktiv sein können.
 
 #### Vorausfüllungs-Mechanismus
 Nutzung der SDC-Vorausfüllungsfähigkeiten:
-```fsh
+~~~~
+
 * extension[sdc-questionnaire-sourceQueries].valueReference = Reference(QuestionnaireResponse/erfasste-daten)
 * extension[sdc-questionnaire-launchContext].extension[name].valueId = "sourceResponse"
 * extension[sdc-questionnaire-launchContext].extension[type].valueCode = #QuestionnaireResponse
-```
+~~~~
 
 ### Vorteile der Seperation-of-concerns Architektur
 

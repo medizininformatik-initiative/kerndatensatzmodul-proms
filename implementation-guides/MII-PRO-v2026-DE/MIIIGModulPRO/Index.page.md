@@ -31,7 +31,7 @@ Das MII PRO-Modul standardisiert die Erfassung und Auswertung patientenberichtet
 
 Die Implementierung basiert auf:
 - FHIR R4 (4.0.1)
-- SDC (Structured Data Capture) 4.0.0-ballot
+- SDC (Structured Data Capture) 3.0.0
 - HL7 Terminology 6.4.0
 
 ⚠️ **Hinweis**: Einige verwendete Spezifikationselemente befinden sich noch im Ballotierungsprozess.
@@ -39,7 +39,7 @@ Die Implementierung basiert auf:
 | Veröffentlichung   |   |
 |---------|---|
 | Datum   | 31.07.2025 |
-| Version | 2025.0.4        |
+| Version | 2026.0.0-ballot        |
 | Status  | Active       |
 | Realm   | DE          | 
 
@@ -59,14 +59,14 @@ Dieser Leitfaden ist im Rahmen der Medizininformatik Initiative erstellt worden 
 
 Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](https://chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
 
-Anmerkungen und Kritik werden in Form von Issues im [GitHub-Projekt](https://github.com/medizininformatik-initiative/kerndatensatzmodul-prom/issues) gern entgegengenommen.
+Anmerkungen und Kritik werden in Form von Issues im [GitHub-Projekt](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues) gern entgegengenommen.
 
 ## Autoren (in alphabetischer Reihenfolge)
-* Thomas Debertshäuser
-* Felix Fischer
-* Thimo Hölter
-* Marcel Susky
-* Christian Zilske
+* Thomas Debertshäuser, Berlin Institute of Health (Charité)
+* Felix Fischer, Charité - Universitätsmedizin Berlin 
+* Thimo Hölter, Berlin Institute of Health (Charité)
+* Marcel Susky, Technische Universität Dresden, Forschungsgruppe Digital Health
+* Christian Zilske, Berlin Institute of Health (Charité)
 
 
 ## Copyright-Hinweis, Nutzungshinweise

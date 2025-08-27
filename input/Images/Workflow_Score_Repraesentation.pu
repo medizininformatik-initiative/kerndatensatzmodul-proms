@@ -1,0 +1,26 @@
+@startuml
+!theme plain
+skinparam backgroundColor white
+
+rectangle "QuestionnaireResponse" as QR {
+  rectangle "Item: Frage 1" as I1
+  rectangle "Item: Frage 2" as I2
+  rectangle "..." as I3
+  rectangle "Item: Berechneter Score" as Score #FFE4B5
+}
+
+rectangle "Observation" as O1 {
+  rectangle "code: LOINC" as C1
+  rectangle "value: Score" as V1
+  rectangle "derivedFrom: QR" as D1
+}
+
+rectangle "Domain Observation" as O2 {
+  rectangle "code: PROMIS T-Score" as C2
+  rectangle "value: T-Score" as V2
+  rectangle "derivedFrom: O1" as D2
+}
+
+QR --> O1 : Extraction
+O1 --> O2 : Domain Mapping
+@enduml

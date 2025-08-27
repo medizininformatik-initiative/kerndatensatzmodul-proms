@@ -54,7 +54,8 @@ Die Depression-Domäne demonstriert als erste vollständig implementierte Domän
 
 #### FHIR-Architektur
 
-```fhir
+~~~~
+// FSH
 ObservationDefinition: mii-obsdef-pro-depression-t-score
 ├── Code: LOINC#77861-3 "PROMIS Depression T-score"
 ├── Referenzbereiche: EHIS Wave 3 (n=287,530)
@@ -64,7 +65,7 @@ Observation: Depression T-Score Instance
 ├── instantiates: ObservationDefinition
 ├── derivedFrom: QuestionnaireResponse oder Raw Score
 └── method: IRT-Berechnung oder Cross-Walking
-```
+~~~~
 
 #### Europäische Referenzdaten für Depression
 
@@ -92,7 +93,7 @@ Riazy et al. (2025) liefern umfassende Referenzdaten aus 29 europäischen Lände
 
 **1. Item Response Theory (IRT)**
 
-![IRT Antwortwahrscheinlichkeiten](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/IRT-Antwortwahrscheinlichkeiten.png)
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/IRT-Antwortwahrscheinlichkeiten.png" alt="IRT Antwortwahrscheinlichkeiten" title="IRT Antwortwahrscheinlichkeiten" style="max-width:100%; height:auto;">
 
 **Abbildung 1:** *Item Response Theory - Antwortwahrscheinlichkeiten in Abhängigkeit von der Merkmalsausprägung*
 
@@ -136,7 +137,7 @@ Bei der Anwendung von Cross-Walking sind folgende Einschränkungen zu beachten:
 
 ### Das PRO-Spannungsfeld
 
-![PRO Spannungsfeld](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/PRO-Spannungsfeld.png)
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/PRO-Spannungsfeld.png" alt="PRO Spannungsfeld" title="PRO Spannungsfeld" style="max-width:100%; height:auto;">
 
 **Abbildung 2:** *Das Spannungsfeld zwischen Item-Anzahl, Messbereich und Präzision*
 
@@ -151,7 +152,7 @@ Domain-basiertes Scoring löst dieses Dilemma durch:
 
 ### Item Banking und Adaptive Messung
 
-![Item Banking](https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/itembanking.png)
+<img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-proms/dev/implementation-guides/MII-PRO-v2026-DE/Images/itembanking.png" alt="Item Banking" title="Item Banking" style="max-width:100%; height:auto;">
 
 **Abbildung 3:** *Item Banking für die Domäne Körperliche Funktionsfähigkeit*
 
@@ -189,7 +190,8 @@ Benchmarking zwischen Einrichtungen:
 ### Technische Implementierung
 
 #### ConceptMaps für Mapping
-```fsh
+~~~~
+// FSH
 Instance: PHQ9-to-PROMIS-Depression
 InstanceOf: ConceptMap
 * sourceCanonical = "Questionnaire/phq-9"
@@ -198,10 +200,11 @@ InstanceOf: ConceptMap
   * code = #score-range-0-4
   * target.code = #t-score-40-45
   * target.equivalence = #equivalent
-```
+~~~~
 
 #### CQL für komplexe Berechnungen (ab 2026)
-```cql
+~~~~
+// CQL
 define "Depression T-Score from PHQ-9":
   case
     when PHQ9Score between 0 and 4 then 42.5
@@ -211,7 +214,7 @@ define "Depression T-Score from PHQ-9":
     when PHQ9Score >= 20 then 77.5
     else null
   end
-```
+~~~~
 
 ### Zukünftige Erweiterungen
 
@@ -289,13 +292,14 @@ Da ObservationDefinitions in FHIR R4 keine kanonischen URLs unterstützen und ni
 - **Populationsnormen**: Referenzbereiche basieren auf deutschen oder europäischen Normstichproben
 
 **Verwendung in der Praxis:**
-```fhir
+~~~~
+// FSH
 Observation
 ├── code: LOINC Code aus ObservationDefinition
 ├── valueQuantity: Berechneter Score
 ├── extension[instantiatesCanonical]: Verweis auf ObservationDefinition
 └── derivedFrom: QuestionnaireResponse oder andere Observation
-```
+~~~~
 
 ### Zusammenfassung
 
