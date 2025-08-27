@@ -15,6 +15,7 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 
 ## Strategische Entscheidungskriterien
 
+
 ### Verwendung von Inline answerOption
 
 #### Verfügbare internationale Standards
@@ -39,6 +40,7 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 **Anwendungsbereich**: Wenige Antwortoptionen (maximal 5 Optionen), geringe Änderungswahrscheinlichkeit, keine Wiederverwendung erforderlich
 
 **Implementierungsmuster**:
+
 ~~~~
 * item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[0].valueCoding.code = #1
@@ -63,6 +65,7 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 **Anwendungsbereich**: Identische konzeptuelle Antworten in verschiedenen Textvarianten (Kurzform/Langform/Detail)
 
 **Implementierungsbeispiel**: BDI-II
+
 ~~~~
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
 * #bdi-bdi2-answer-1a ^property[+].code = #bdi-bdi2-itemWeight
@@ -112,7 +115,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 ~~~~
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[calculatable].valueBoolean = true
-* item[=].answerValueSet = "mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
+* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
 ~~~~
 
 #### MII-kontrollierte Terminologiestrategie  
@@ -176,6 +179,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 * include #bdi-bdi2-answer-0 from system MII_CS_PRO_BDI_BDI2_AnswerList
 * include #bdi-bdi2-answer-1 from system MII_CS_PRO_BDI_BDI2_AnswerList
 ~~~~
+
 
 ### Beispiel 3: EQ-5D-5L (Einfache Inline)
 ~~~~

@@ -47,17 +47,15 @@ Die Scoring-Strategien lassen sich in zwei grundlegende Kategorien einteilen:
 ~~~~
 // FSH
 // PROMIS Depression SF 4a Beispiel
-* item[0].extension[variable].valueExpression.expression = "%rawScore"
-* item[0].extension[variable].valueExpression.name = "rawScore"
-* item[0].extension[initialExpression].valueExpression.expression = 
-  "item.descendants().where(linkId='promis-eddep04').answer.value + 
-   item.descendants().where(linkId='promis-eddep06').answer.value + ..."
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "rawScore"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
 
 // T-Score Konversion
-* item[1].extension[calculatedExpression].valueExpression.expression = 
-  "iif(%rawScore = 4, 41.0, 
-   iif(%rawScore = 5, 45.5, 
-   iif(%rawScore = 6, 49.0, ...)))"
+* item[=].extension[+].url = $sdc-questionnaire-calculated-expression
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, ..., {})))))))))))))))))"
 ~~~~
 
 **Vorteile**:

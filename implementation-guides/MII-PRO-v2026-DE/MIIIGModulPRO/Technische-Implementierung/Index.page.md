@@ -3,9 +3,14 @@ topic: Technische-Implementierung
 ---
 ## {{page-title}}
 
+
+### Profile
+
+Alle Profile rund um Frabögen und Scores sind auf der Seite {{pagelink:MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md}} dokumentiert. Konkrete Profile für spezifische Fragebögen und Scores finden sich im Abschnitt PRO-Library. 
+
 ### Workflows
 
-Für Questionnaire Workflows und Capabilities siehe {{pagelink:MIIIGModulPRO/Technische-Implementierung/Workflows.page.md}}.
+Für Questionnaire-Workflows und Capabilities siehe {{pagelink:MIIIGModulPRO/Technische-Implementierung/Workflows.page.md}}.
 
 ### Scoring
 
@@ -19,6 +24,3 @@ Für die ID-Systematik siehe {{pagelink:MIIIGModulPRO/Technische-Implementierung
 
 Für die Nutzung von ValueSets siehe {{pagelink:MIIIGModulPRO/Technische-Implementierung/Terminologie-Strategien.page.md}}.
 
-### Profile
-
-Alle Profile sind auf der Seite {{pagelink:MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md}} dokumentiert.

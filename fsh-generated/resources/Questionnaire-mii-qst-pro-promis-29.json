@@ -58,7 +58,7 @@
       "valueExpression": {
         "name": "physicalFunctionRaw",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-(pfa11|pfa21|pfa23|pfa53)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
@@ -66,7 +66,7 @@
       "valueExpression": {
         "name": "anxietyRaw",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-(edanx01|edanx40|edanx41|edanx53)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
@@ -74,7 +74,7 @@
       "valueExpression": {
         "name": "depressionRaw",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-(eddep04|eddep06|eddep29|eddep41)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
@@ -82,7 +82,7 @@
       "valueExpression": {
         "name": "fatigueRaw",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
@@ -90,7 +90,7 @@
       "valueExpression": {
         "name": "sleepRaw",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
@@ -98,7 +98,7 @@
       "valueExpression": {
         "name": "socialRaw",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-(srpper11|srpper18|srpper23|srpper46)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
@@ -106,7 +106,7 @@
       "valueExpression": {
         "name": "painInterferenceRaw",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^promis-(painin9|painin22|painin31|painin34)$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }
@@ -957,7 +957,7 @@
               ]
             }
           ],
-          "linkId": "promis-anxiety61930",
+          "linkId": "promis-edanx01",
           "type": "choice",
           "text": "...fühlte ich mich ängstlich"
         },
@@ -1111,7 +1111,7 @@
               ]
             }
           ],
-          "linkId": "promis-anxiety61941",
+          "linkId": "promis-edanx40",
           "type": "choice",
           "text": "...fiel es mir schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
         },
@@ -1265,7 +1265,7 @@
               ]
             }
           ],
-          "linkId": "promis-anxiety61938",
+          "linkId": "promis-edanx41",
           "type": "choice",
           "text": "...überwältigten mich meine Sorgen"
         },
@@ -1419,7 +1419,7 @@
               ]
             }
           ],
-          "linkId": "promis-anxiety61949",
+          "linkId": "promis-edanx53",
           "type": "choice",
           "text": "...fühlte ich mich unruhig"
         }
@@ -1585,7 +1585,7 @@
               ]
             }
           ],
-          "linkId": "promis-dep61953",
+          "linkId": "promis-eddep04",
           "type": "choice",
           "text": "...fühlte ich mich wertlos"
         },
@@ -1739,7 +1739,7 @@
               ]
             }
           ],
-          "linkId": "promis-dep61955",
+          "linkId": "promis-eddep06",
           "type": "choice",
           "text": "...fühlte ich mich hilflos"
         },
@@ -1893,7 +1893,7 @@
               ]
             }
           ],
-          "linkId": "promis-dep61967",
+          "linkId": "promis-eddep29",
           "type": "choice",
           "text": "...fühlte ich mich deprimiert"
         },
@@ -2047,7 +2047,7 @@
               ]
             }
           ],
-          "linkId": "promis-dep61973",
+          "linkId": "promis-eddep41",
           "type": "choice",
           "text": "...fühlte ich mich hoffnungslos"
         }
@@ -2213,7 +2213,7 @@
               ]
             }
           ],
-          "linkId": "promis-fatigue61878",
+          "linkId": "promis-hi7",
           "type": "choice",
           "text": "...fühlte ich mich erschöpft"
         },
@@ -2367,7 +2367,7 @@
               ]
             }
           ],
-          "linkId": "promis-fatigue61882",
+          "linkId": "promis-an3",
           "type": "choice",
           "text": "...hatte ich Schwierigkeiten, Dinge anzufangen, weil ich müde war"
         },
@@ -2521,7 +2521,7 @@
               ]
             }
           ],
-          "linkId": "promis-fatigue61863",
+          "linkId": "promis-fatexp41",
           "type": "choice",
           "text": "...wie abgeschlagen fühlten Sie sich im Durchschnitt?"
         },
@@ -2675,7 +2675,7 @@
               ]
             }
           ],
-          "linkId": "promis-fatigue61864",
+          "linkId": "promis-fatexp40",
           "type": "choice",
           "text": "...wie erschöpft waren Sie im Durchschnitt?"
         }
@@ -2841,7 +2841,7 @@
               ]
             }
           ],
-          "linkId": "promis-sleep61987",
+          "linkId": "promis-sleep109",
           "type": "choice",
           "text": "...war meine Schlafqualität..."
         },
@@ -2995,7 +2995,7 @@
               ]
             }
           ],
-          "linkId": "promis-sleep61986",
+          "linkId": "promis-sleep116",
           "type": "choice",
           "text": "...war mein Schlaf erholsam"
         },
@@ -3149,7 +3149,7 @@
               ]
             }
           ],
-          "linkId": "promis-sleep61998",
+          "linkId": "promis-sleep20",
           "type": "choice",
           "text": "...hatte ich Probleme mit meinem Schlaf"
         },
@@ -3303,7 +3303,7 @@
               ]
             }
           ],
-          "linkId": "promis-sleep61999",
+          "linkId": "promis-sleep44",
           "type": "choice",
           "text": "...hatte ich Schwierigkeiten beim Einschlafen"
         }
@@ -3469,7 +3469,7 @@
               ]
             }
           ],
-          "linkId": "promis-social62041",
+          "linkId": "promis-srpper23-caps",
           "type": "choice",
           "text": "...war ich zufrieden damit, wie viel Arbeit ich schaffen konnte (einschließlich Hausarbeit)"
         },
@@ -3623,7 +3623,7 @@
               ]
             }
           ],
-          "linkId": "promis-social75417",
+          "linkId": "promis-srpper11-caps",
           "type": "choice",
           "text": "...hatte ich Schwierigkeiten, alle meine üblichen Freizeitaktivitäten mit anderen zu machen"
         },
@@ -3777,163 +3777,9 @@
               ]
             }
           ],
-          "linkId": "promis-social76708",
+          "linkId": "promis-srpper18-caps",
           "type": "choice",
           "text": "...hatte ich Schwierigkeiten, alle Familienaktivitäten zu machen, die ich machen wollte"
-        },
-        {
-          "code": [
-            {
-              "code": "76709-5",
-              "system": "http://loinc.org",
-              "display": "I have trouble doing all of my usual work (include work at home)"
-            }
-          ],
-          "answerOption": [
-            {
-              "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Nie"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
-                "code": "LA6270-8",
-                "system": "http://loinc.org",
-                "display": "Never"
-              },
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-                  "valueDecimal": 5
-                }
-              ]
-            },
-            {
-              "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Selten"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
-                "code": "LA10066-1",
-                "system": "http://loinc.org",
-                "display": "Rarely"
-              },
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-                  "valueDecimal": 4
-                }
-              ]
-            },
-            {
-              "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Manchmal"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes"
-              },
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-                  "valueDecimal": 3
-                }
-              ]
-            },
-            {
-              "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Oft"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
-                "code": "LA10044-8",
-                "system": "http://loinc.org",
-                "display": "Often"
-              },
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-                  "valueDecimal": 2
-                }
-              ]
-            },
-            {
-              "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Immer"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
-                "code": "LA9933-8",
-                "system": "http://loinc.org",
-                "display": "Always"
-              },
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-                  "valueDecimal": 1
-                }
-              ]
-            }
-          ],
-          "linkId": "promis-social76709",
-          "type": "choice",
-          "text": "...hatte ich Schwierigkeiten, alle meine üblichen Arbeiten zu erledigen (einschließlich Hausarbeit)"
         },
         {
           "code": [
@@ -4085,7 +3931,7 @@
               ]
             }
           ],
-          "linkId": "promis-social76712",
+          "linkId": "promis-srpper46-caps",
           "type": "choice",
           "text": "...hatte ich Schwierigkeiten, alle Aktivitäten mit Freunden zu machen, die ich machen wollte"
         }
@@ -4251,7 +4097,7 @@
               ]
             }
           ],
-          "linkId": "promis-pain61758",
+          "linkId": "promis-painin9",
           "type": "choice",
           "text": "...Ihre alltäglichen Aktivitäten?"
         },
@@ -4405,7 +4251,7 @@
               ]
             }
           ],
-          "linkId": "promis-pain61769",
+          "linkId": "promis-painin22",
           "type": "choice",
           "text": "...Arbeiten rund um das Haus?"
         },
@@ -4559,7 +4405,7 @@
               ]
             }
           ],
-          "linkId": "promis-pain61773",
+          "linkId": "promis-painin31",
           "type": "choice",
           "text": "...Ihre Fähigkeit zur Teilnahme an sozialen Aktivitäten?"
         },
@@ -4713,7 +4559,7 @@
               ]
             }
           ],
-          "linkId": "promis-pain61775",
+          "linkId": "promis-painin34",
           "type": "choice",
           "text": "...Ihre Hausarbeiten?"
         }
@@ -4750,7 +4596,7 @@
               "valueInteger": 10
             }
           ],
-          "linkId": "promis-pain61583",
+          "linkId": "promis-global07",
           "type": "integer",
           "text": "In den vergangenen 7 Tagen - Wie würden Sie Ihre Schmerzen im Durchschnitt bewerten?"
         }
@@ -4807,7 +4653,7 @@
             {
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%physicalFunctionRaw=4, 24.5, iif(%physicalFunctionRaw=5, 28.0, iif(%physicalFunctionRaw=6, 30.6, iif(%physicalFunctionRaw=7, 32.8, iif(%physicalFunctionRaw=8, 34.7, iif(%physicalFunctionRaw=9, 36.5, iif(%physicalFunctionRaw=10, 38.1, iif(%physicalFunctionRaw=11, 39.7, iif(%physicalFunctionRaw=12, 41.2, iif(%physicalFunctionRaw=13, 42.6, iif(%physicalFunctionRaw=14, 44.0, iif(%physicalFunctionRaw=15, 45.4, iif(%physicalFunctionRaw=16, 46.8, iif(%physicalFunctionRaw=17, 48.2, iif(%physicalFunctionRaw=18, 49.6, iif(%physicalFunctionRaw=19, 51.1, iif(%physicalFunctionRaw=20, 52.6, {}))))))))))))))))))"
+                "expression": "iif(%physicalFunctionRaw=4, 24.5, iif(%physicalFunctionRaw=5, 28.0, iif(%physicalFunctionRaw=6, 30.6, iif(%physicalFunctionRaw=7, 32.8, iif(%physicalFunctionRaw=8, 34.7, iif(%physicalFunctionRaw=9, 36.5, iif(%physicalFunctionRaw=10, 38.1, iif(%physicalFunctionRaw=11, 39.7, iif(%physicalFunctionRaw=12, 41.2, iif(%physicalFunctionRaw=13, 42.6, iif(%physicalFunctionRaw=14, 44.0, iif(%physicalFunctionRaw=15, 45.4, iif(%physicalFunctionRaw=16, 46.8, iif(%physicalFunctionRaw=17, 48.2, iif(%physicalFunctionRaw=18, 49.6, iif(%physicalFunctionRaw=19, 51.1, iif(%physicalFunctionRaw=20, 52.6, {})))))))))))))))))"
               },
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
             },
@@ -4867,7 +4713,7 @@
             {
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%anxietyRaw=4, 38.2, iif(%anxietyRaw=5, 44.7, iif(%anxietyRaw=6, 48.8, iif(%anxietyRaw=7, 51.9, iif(%anxietyRaw=8, 54.5, iif(%anxietyRaw=9, 56.8, iif(%anxietyRaw=10, 58.9, iif(%anxietyRaw=11, 60.9, iif(%anxietyRaw=12, 62.8, iif(%anxietyRaw=13, 64.7, iif(%anxietyRaw=14, 66.6, iif(%anxietyRaw=15, 68.6, iif(%anxietyRaw=16, 70.7, iif(%anxietyRaw=17, 72.9, iif(%anxietyRaw=18, 75.4, iif(%anxietyRaw=19, 78.5, iif(%anxietyRaw=20, 83.1, {}))))))))))))))))))"
+                "expression": "iif(%anxietyRaw=4, 38.2, iif(%anxietyRaw=5, 44.7, iif(%anxietyRaw=6, 48.8, iif(%anxietyRaw=7, 51.9, iif(%anxietyRaw=8, 54.5, iif(%anxietyRaw=9, 56.8, iif(%anxietyRaw=10, 58.9, iif(%anxietyRaw=11, 60.9, iif(%anxietyRaw=12, 62.8, iif(%anxietyRaw=13, 64.7, iif(%anxietyRaw=14, 66.6, iif(%anxietyRaw=15, 68.6, iif(%anxietyRaw=16, 70.7, iif(%anxietyRaw=17, 72.9, iif(%anxietyRaw=18, 75.4, iif(%anxietyRaw=19, 78.5, iif(%anxietyRaw=20, 83.1, {})))))))))))))))))"
               },
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
             },
@@ -4927,7 +4773,7 @@
             {
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%depressionRaw=4, 41.0, iif(%depressionRaw=5, 49.0, iif(%depressionRaw=6, 51.8, iif(%depressionRaw=7, 53.9, iif(%depressionRaw=8, 55.7, iif(%depressionRaw=9, 57.3, iif(%depressionRaw=10, 58.9, iif(%depressionRaw=11, 60.5, iif(%depressionRaw=12, 62.2, iif(%depressionRaw=13, 63.9, iif(%depressionRaw=14, 65.7, iif(%depressionRaw=15, 67.5, iif(%depressionRaw=16, 69.4, iif(%depressionRaw=17, 71.2, iif(%depressionRaw=18, 73.3, iif(%depressionRaw=19, 75.7, iif(%depressionRaw=20, 79.4, {}))))))))))))))))))"
+                "expression": "iif(%depressionRaw=4, 41.0, iif(%depressionRaw=5, 49.0, iif(%depressionRaw=6, 51.8, iif(%depressionRaw=7, 53.9, iif(%depressionRaw=8, 55.7, iif(%depressionRaw=9, 57.3, iif(%depressionRaw=10, 58.9, iif(%depressionRaw=11, 60.5, iif(%depressionRaw=12, 62.2, iif(%depressionRaw=13, 63.9, iif(%depressionRaw=14, 65.7, iif(%depressionRaw=15, 67.5, iif(%depressionRaw=16, 69.4, iif(%depressionRaw=17, 71.2, iif(%depressionRaw=18, 73.3, iif(%depressionRaw=19, 75.7, iif(%depressionRaw=20, 79.4, {})))))))))))))))))"
               },
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
             },
@@ -4987,7 +4833,7 @@
             {
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%fatigueRaw=4, 33.7, iif(%fatigueRaw=5, 40.3, iif(%fatigueRaw=6, 44.4, iif(%fatigueRaw=7, 47.6, iif(%fatigueRaw=8, 50.2, iif(%fatigueRaw=9, 52.5, iif(%fatigueRaw=10, 54.7, iif(%fatigueRaw=11, 56.8, iif(%fatigueRaw=12, 58.8, iif(%fatigueRaw=13, 60.8, iif(%fatigueRaw=14, 62.8, iif(%fatigueRaw=15, 64.9, iif(%fatigueRaw=16, 67.1, iif(%fatigueRaw=17, 69.4, iif(%fatigueRaw=18, 72.0, iif(%fatigueRaw=19, 75.0, iif(%fatigueRaw=20, 78.8, {}))))))))))))))))))"
+                "expression": "iif(%fatigueRaw=4, 33.7, iif(%fatigueRaw=5, 40.3, iif(%fatigueRaw=6, 44.4, iif(%fatigueRaw=7, 47.6, iif(%fatigueRaw=8, 50.2, iif(%fatigueRaw=9, 52.5, iif(%fatigueRaw=10, 54.7, iif(%fatigueRaw=11, 56.8, iif(%fatigueRaw=12, 58.8, iif(%fatigueRaw=13, 60.8, iif(%fatigueRaw=14, 62.8, iif(%fatigueRaw=15, 64.9, iif(%fatigueRaw=16, 67.1, iif(%fatigueRaw=17, 69.4, iif(%fatigueRaw=18, 72.0, iif(%fatigueRaw=19, 75.0, iif(%fatigueRaw=20, 78.8, {})))))))))))))))))"
               },
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
             },
@@ -5047,7 +4893,7 @@
             {
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%sleepRaw=4, 28.0, iif(%sleepRaw=5, 36.0, iif(%sleepRaw=6, 40.6, iif(%sleepRaw=7, 44.0, iif(%sleepRaw=8, 46.8, iif(%sleepRaw=9, 49.3, iif(%sleepRaw=10, 51.5, iif(%sleepRaw=11, 53.6, iif(%sleepRaw=12, 55.6, iif(%sleepRaw=13, 57.5, iif(%sleepRaw=14, 59.4, iif(%sleepRaw=15, 61.3, iif(%sleepRaw=16, 63.3, iif(%sleepRaw=17, 65.4, iif(%sleepRaw=18, 67.7, iif(%sleepRaw=19, 70.4, iif(%sleepRaw=20, 73.9, {}))))))))))))))))))"
+                "expression": "iif(%sleepRaw=4, 28.0, iif(%sleepRaw=5, 36.0, iif(%sleepRaw=6, 40.6, iif(%sleepRaw=7, 44.0, iif(%sleepRaw=8, 46.8, iif(%sleepRaw=9, 49.3, iif(%sleepRaw=10, 51.5, iif(%sleepRaw=11, 53.6, iif(%sleepRaw=12, 55.6, iif(%sleepRaw=13, 57.5, iif(%sleepRaw=14, 59.4, iif(%sleepRaw=15, 61.3, iif(%sleepRaw=16, 63.3, iif(%sleepRaw=17, 65.4, iif(%sleepRaw=18, 67.7, iif(%sleepRaw=19, 70.4, iif(%sleepRaw=20, 73.9, {})))))))))))))))))"
               },
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
             },
@@ -5107,7 +4953,7 @@
             {
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%socialRaw=4, 24.5, iif(%socialRaw=5, 28.0, iif(%socialRaw=6, 30.6, iif(%socialRaw=7, 32.8, iif(%socialRaw=8, 34.7, iif(%socialRaw=9, 36.5, iif(%socialRaw=10, 38.1, iif(%socialRaw=11, 39.7, iif(%socialRaw=12, 41.2, iif(%socialRaw=13, 42.6, iif(%socialRaw=14, 44.0, iif(%socialRaw=15, 45.4, iif(%socialRaw=16, 46.8, iif(%socialRaw=17, 48.2, iif(%socialRaw=18, 49.6, iif(%socialRaw=19, 51.1, iif(%socialRaw=20, 52.6, {}))))))))))))))))))"
+                "expression": "iif(%socialRaw=4, 24.5, iif(%socialRaw=5, 28.0, iif(%socialRaw=6, 30.6, iif(%socialRaw=7, 32.8, iif(%socialRaw=8, 34.7, iif(%socialRaw=9, 36.5, iif(%socialRaw=10, 38.1, iif(%socialRaw=11, 39.7, iif(%socialRaw=12, 41.2, iif(%socialRaw=13, 42.6, iif(%socialRaw=14, 44.0, iif(%socialRaw=15, 45.4, iif(%socialRaw=16, 46.8, iif(%socialRaw=17, 48.2, iif(%socialRaw=18, 49.6, iif(%socialRaw=19, 51.1, iif(%socialRaw=20, 52.6, {})))))))))))))))))"
               },
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
             },
@@ -5167,7 +5013,7 @@
             {
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%painInterferenceRaw=4, 38.2, iif(%painInterferenceRaw=5, 44.7, iif(%painInterferenceRaw=6, 48.8, iif(%painInterferenceRaw=7, 51.9, iif(%painInterferenceRaw=8, 54.5, iif(%painInterferenceRaw=9, 56.8, iif(%painInterferenceRaw=10, 58.9, iif(%painInterferenceRaw=11, 60.9, iif(%painInterferenceRaw=12, 62.8, iif(%painInterferenceRaw=13, 64.7, iif(%painInterferenceRaw=14, 66.6, iif(%painInterferenceRaw=15, 68.6, iif(%painInterferenceRaw=16, 70.7, iif(%painInterferenceRaw=17, 72.9, iif(%painInterferenceRaw=18, 75.4, iif(%painInterferenceRaw=19, 78.5, iif(%painInterferenceRaw=20, 83.1, {}))))))))))))))))))"
+                "expression": "iif(%painInterferenceRaw=4, 38.2, iif(%painInterferenceRaw=5, 44.7, iif(%painInterferenceRaw=6, 48.8, iif(%painInterferenceRaw=7, 51.9, iif(%painInterferenceRaw=8, 54.5, iif(%painInterferenceRaw=9, 56.8, iif(%painInterferenceRaw=10, 58.9, iif(%painInterferenceRaw=11, 60.9, iif(%painInterferenceRaw=12, 62.8, iif(%painInterferenceRaw=13, 64.7, iif(%painInterferenceRaw=14, 66.6, iif(%painInterferenceRaw=15, 68.6, iif(%painInterferenceRaw=16, 70.7, iif(%painInterferenceRaw=17, 72.9, iif(%painInterferenceRaw=18, 75.4, iif(%painInterferenceRaw=19, 78.5, iif(%painInterferenceRaw=20, 83.1, {})))))))))))))))))"
               },
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
             },

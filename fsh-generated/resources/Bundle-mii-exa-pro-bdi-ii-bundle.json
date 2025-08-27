@@ -365,7 +365,7 @@
             ],
             "linkId": "bdi-bdi2-score-total",
             "text": "BDI-II Gesamtscore (0-63)",
-            "type": "quantity"
+            "type": "decimal"
           },
           {
             "code": [
@@ -379,7 +379,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%bdiScore = 0, 38.2,\niif(%bdiScore = 1, 41.2,\niif(%bdiScore = 2, 43.5,\niif(%bdiScore = 3, 45.3,\niif(%bdiScore = 4, 46.9,\niif(%bdiScore = 5, 48.4,\niif(%bdiScore = 6, 49.7,\niif(%bdiScore = 7, 51.0,\niif(%bdiScore = 8, 52.2,\niif(%bdiScore = 9, 53.3,\niif(%bdiScore = 10, 54.4,\niif(%bdiScore = 11, 55.4,\niif(%bdiScore = 12, 56.4,\niif(%bdiScore = 13, 57.3,\niif(%bdiScore = 14, 58.2,\niif(%bdiScore = 15, 59.1,\niif(%bdiScore = 16, 59.9,\niif(%bdiScore = 17, 60.7,\niif(%bdiScore = 18, 61.5,\niif(%bdiScore = 19, 62.2,\niif(%bdiScore = 20, 62.9,\niif(%bdiScore = 21, 63.6,\niif(%bdiScore = 22, 64.3,\niif(%bdiScore = 23, 65.0,\niif(%bdiScore = 24, 65.6,\niif(%bdiScore = 25, 66.2,\niif(%bdiScore = 26, 66.8,\niif(%bdiScore = 27, 67.4,\niif(%bdiScore = 28, 68.0,\niif(%bdiScore = 29, 68.6,\niif(%bdiScore = 30, 69.1,\niif(%bdiScore = 31, 69.7,\niif(%bdiScore = 32, 70.2,\niif(%bdiScore = 33, 70.7,\niif(%bdiScore = 34, 71.2,\niif(%bdiScore = 35, 71.8,\niif(%bdiScore = 36, 72.3,\niif(%bdiScore = 37, 72.8,\niif(%bdiScore = 38, 73.3,\niif(%bdiScore = 39, 73.8,\niif(%bdiScore = 40, 74.3,\niif(%bdiScore = 41, 74.8,\niif(%bdiScore = 42, 75.3,\niif(%bdiScore = 43, 75.8,\niif(%bdiScore = 44, 76.3,\niif(%bdiScore = 45, 76.9,\niif(%bdiScore = 46, 77.4,\niif(%bdiScore = 47, 77.9,\niif(%bdiScore = 48, 78.5,\niif(%bdiScore = 49, 79.0,\niif(%bdiScore = 50, 79.6,\niif(%bdiScore = 51, 80.1,\niif(%bdiScore = 52, 80.7,\niif(%bdiScore = 53, 81.3,\niif(%bdiScore = 54, 81.9,\niif(%bdiScore = 55, 82.5,\niif(%bdiScore = 56, 83.2,\niif(%bdiScore = 57, 83.8,\niif(%bdiScore = 58, 84.5,\niif(%bdiScore = 59, 85.3,\niif(%bdiScore = 60, 86.0,\niif(%bdiScore = 61, 86.9,\niif(%bdiScore = 62, 87.8,\niif(%bdiScore = 63, 88.8, 88.8)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+                  "expression": "\n  iif(%bdiScore = 0, 38.2,\n  iif(%bdiScore = 1, 41.2,\n  iif(%bdiScore = 2, 43.5,\n  iif(%bdiScore = 3, 45.3,\n  iif(%bdiScore = 4, 46.9,\n  iif(%bdiScore = 5, 48.4,\n  iif(%bdiScore = 6, 49.7,\n  iif(%bdiScore = 7, 51.0,\n  iif(%bdiScore = 8, 52.2,\n  iif(%bdiScore = 9, 53.3,\n  iif(%bdiScore = 10, 54.4,\n  iif(%bdiScore = 11, 55.4,\n  iif(%bdiScore = 12, 56.4,\n  iif(%bdiScore = 13, 57.3,\n  iif(%bdiScore = 14, 58.2,\n  iif(%bdiScore = 15, 59.1,\n  iif(%bdiScore = 16, 59.9,\n  iif(%bdiScore = 17, 60.7,\n  iif(%bdiScore = 18, 61.5,\n  iif(%bdiScore = 19, 62.2,\n  iif(%bdiScore = 20, 62.9,\n  iif(%bdiScore = 21, 63.6,\n  iif(%bdiScore = 22, 64.3,\n  iif(%bdiScore = 23, 65.0,\n  iif(%bdiScore = 24, 65.6,\n  iif(%bdiScore = 25, 66.2,\n  iif(%bdiScore = 26, 66.8,\n  iif(%bdiScore = 27, 67.4,\n  iif(%bdiScore = 28, 68.0,\n  iif(%bdiScore = 29, 68.6,\n  iif(%bdiScore = 30, 69.1,\n  iif(%bdiScore = 31, 69.7,\n  iif(%bdiScore = 32, 70.2,\n  iif(%bdiScore = 33, 70.7,\n  iif(%bdiScore = 34, 71.2,\n  iif(%bdiScore = 35, 71.8,\n  iif(%bdiScore = 36, 72.3,\n  iif(%bdiScore = 37, 72.8,\n  iif(%bdiScore = 38, 73.3,\n  iif(%bdiScore = 39, 73.8,\n  iif(%bdiScore = 40, 74.3,\n  iif(%bdiScore = 41, 74.8,\n  iif(%bdiScore = 42, 75.3,\n  iif(%bdiScore = 43, 75.8,\n  iif(%bdiScore = 44, 76.3,\n  iif(%bdiScore = 45, 76.9,\n  iif(%bdiScore = 46, 77.4,\n  iif(%bdiScore = 47, 77.9,\n  iif(%bdiScore = 48, 78.5,\n  iif(%bdiScore = 49, 79.0,\n  iif(%bdiScore = 50, 79.6,\n  iif(%bdiScore = 51, 80.1,\n  iif(%bdiScore = 52, 80.7,\n  iif(%bdiScore = 53, 81.3,\n  iif(%bdiScore = 54, 81.9,\n  iif(%bdiScore = 55, 82.5,\n  iif(%bdiScore = 56, 83.2,\n  iif(%bdiScore = 57, 83.8,\n  iif(%bdiScore = 58, 84.5,\n  iif(%bdiScore = 59, 85.3,\n  iif(%bdiScore = 60, 86.0,\n  iif(%bdiScore = 61, 86.9,\n  iif(%bdiScore = 62, 87.8,\n  iif(%bdiScore = 63, 88.8, 88.8)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))\n"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
               },
@@ -393,10 +393,6 @@
                   "code": "{score}"
                 },
                 "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-              },
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/cqf-citation",
-                "valueString": "PROsetta Stone® BDI-II to PROMIS Depression Crosswalk Table. Available at: https://www.prosettastone.org/LinkingTables/Documents/PROMIS%20Depression%20and%20BDI-II%20Linking%20Table.pdf"
               }
             ],
             "linkId": "bdi-bdi2-promis-tscore",

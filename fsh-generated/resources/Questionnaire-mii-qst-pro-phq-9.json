@@ -55,26 +55,6 @@
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     },
     {
-      "extension": [
-        {
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
-            "code": "patient"
-          },
-          "url": "name"
-        },
-        {
-          "url": "type",
-          "valueCode": "QuestionnaireResponse"
-        },
-        {
-          "url": "description",
-          "valueString": "Optional: Pre-populate from completed PHQ-9 QuestionnaireResponse for server-side calculation"
-        }
-      ],
-      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
-    },
-    {
       "valueExpression": {
         "name": "phq9Score",
         "language": "text/fhirpath",

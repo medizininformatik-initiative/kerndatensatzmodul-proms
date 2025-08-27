@@ -108,7 +108,7 @@ Usage: #definition
 // Calculated total score
 * item[+].linkId = "bdi-bdi2-score-total"
 * item[=].text = "BDI-II Gesamtscore (0-63)"
-* item[=].type = #quantity
+* item[=].type = #decimal
 * item[=].code = $LNC#89209-1 "Beck Depression Inventory II total score"
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -129,7 +129,7 @@ Usage: #definition
 * item[=].extension[=].valueExpression.language = #text/fhirpath
 // PROsetta Stone BDI-II to PROMIS Depression crosswalk table
 // Source: https://www.prosettastone.org/LinkingTables/Documents/PROMIS%20Depression%20and%20BDI-II%20Linking%20Table.pdf
-* item[=].extension[=].valueExpression.expression = """
+* item[=].extension[=].valueExpression.expression = "
   iif(%bdiScore = 0, 38.2,
   iif(%bdiScore = 1, 41.2,
   iif(%bdiScore = 2, 43.5,
@@ -194,11 +194,13 @@ Usage: #definition
   iif(%bdiScore = 61, 86.9,
   iif(%bdiScore = 62, 87.8,
   iif(%bdiScore = 63, 88.8, 88.8)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
-"""
+"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
 * item[=].extension[+].url = $hl7-questionnaire-unit
 * item[=].extension[=].valueCoding.system = $UCUM
 * item[=].extension[=].valueCoding.code = #{score}
+/* Validationerror - allowed = e:Resource
 * item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/cqf-citation"
 * item[=].extension[=].valueString = "PROsetta Stone® BDI-II to PROMIS Depression Crosswalk Table. Available at: https://www.prosettastone.org/LinkingTables/Documents/PROMIS%20Depression%20and%20BDI-II%20Linking%20Table.pdf"
+*/

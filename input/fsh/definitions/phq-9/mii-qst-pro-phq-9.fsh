@@ -23,6 +23,7 @@ Usage: #definition
 * extension[=].valueExpression.language = #text/fhirpath
 * extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
 
+/* QuestionnaireResponses können nicht als Context übergeben werden (inv-1)
 // SDC pre-population configuration for server-side calculation use case
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
 * extension[=].extension[+].url = "name"
@@ -32,6 +33,7 @@ Usage: #definition
 * extension[=].extension[=].valueCode = #QuestionnaireResponse
 * extension[=].extension[+].url = "description"
 * extension[=].extension[=].valueString = "Optional: Pre-populate from completed PHQ-9 QuestionnaireResponse for server-side calculation"
+*/
 
 * item[0].linkId = "PHQ-9.Description"
 * item[0].type = #display

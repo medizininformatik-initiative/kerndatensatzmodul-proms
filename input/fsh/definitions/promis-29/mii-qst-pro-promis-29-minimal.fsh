@@ -18,10 +18,12 @@ Usage: #definition
 * extension[capabilities].extension[extractable].valueBoolean = false
 * extension[capabilities].extension[populatable].valueBoolean = false
 
+/* - The extension http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType is not allowed to be used at this point (allowed for this version = e:Questionnaire.derivedFrom; this element is [Questionnaire])
+ - The Extension 'http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType' definition allows for the types [Coding] but found type CodeableConcept
 // Derivation from full PROMIS-29
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType"
 * extension[=].valueCodeableConcept = http://hl7.org/fhir/questionnaire-derivationType#compliesWithProfile
-
+*/
 * derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
 
 // Main container

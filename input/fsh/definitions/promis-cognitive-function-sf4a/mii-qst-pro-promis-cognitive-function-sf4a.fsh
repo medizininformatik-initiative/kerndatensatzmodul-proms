@@ -20,7 +20,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "cognitiveRawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()"
 
 // Main questionnaire item
 * item[+].linkId = "PROMIS-CognitiveFunction-SF4a"

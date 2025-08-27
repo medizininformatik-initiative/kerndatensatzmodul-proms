@@ -29,7 +29,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
 
 * item[+].linkId = "PROMIS-Depression.Description"
 * item[=].type = #display
@@ -99,7 +99,7 @@ Usage: #definition
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Item 4: I felt hopeless
-* item[+].linkId = "promis-eddep05"
+* item[+].linkId = "promis-eddep41"
 * item[=].type = #choice
 * item[=].code = $LNC#61973-4 "I felt hopeless in past 7 days [PROMIS]"
 * item[=].text = "...fühlte ich mich hoffnungslos"
