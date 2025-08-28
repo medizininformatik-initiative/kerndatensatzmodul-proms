@@ -26,10 +26,13 @@ Die Minimal-Variante dient als reine Strukturdefinition ohne aktive Capabilities
 
 <tabs>
   <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l-minimal}}
+    {{tree:mii-qst-pro-eq-5d-5l-minimal}}
   </tab>
   <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq-5d-5l-minimal}}
+    {{json:mii-qst-pro-eq-5d-5l-minimal}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-eq-5d-5l-minimal}}
   </tab>
 </tabs>
 
@@ -47,10 +50,13 @@ Die Answer-Coding-Variante verwendet das MII-kontrollierte CodeSystem anstelle v
 
 <tabs>
   <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+    {{tree:mii-qst-pro-euroqol-eq5d5l-answer-coding}}
   </tab>
   <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+    {{json:mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-euroqol-eq5d5l-answer-coding}}
   </tab>
 </tabs>
 
@@ -78,13 +84,13 @@ Implementierer sollten auch die erwartete Evolution des Instruments und den Aust
 
 <tabs>
   <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eq5d5l-coded-response}}
+    {{tree:mii-exa-pro-eq5d5l-coded-response}}
   </tab>
   <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eq5d5l-coded-response}}
+    {{json:mii-exa-pro-eq5d5l-coded-response}}
   </tab>
   <tab title="XML">
-    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eq5d5l-coded-response}}
+    {{xml:mii-exa-pro-eq5d5l-coded-response}}
   </tab>
 </tabs>
 

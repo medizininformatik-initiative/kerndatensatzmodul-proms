@@ -3,6 +3,12 @@ topic: PROMIS
 ---
 ## {{page-title}}
 
+### PROMIS-29 Profile v2.1
+
+**➔ Vollständige Ressourcen in Simplifier:**
+- [PROMIS-29 Full Questionnaire](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29)
+- [PROMIS-29 Minimal Questionnaire](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-minimal)
+
 ### PROMIS Depression Short Form 4a - Technische Dokumentation
 
 #### Hintergrund und Konzept

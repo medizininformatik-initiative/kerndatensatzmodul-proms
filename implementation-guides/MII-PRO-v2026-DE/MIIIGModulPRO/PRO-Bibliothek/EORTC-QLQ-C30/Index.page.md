@@ -38,6 +38,8 @@ Der EORTC QLQ-C30 ist der Standard-Fragebogen zur Erfassung der Lebensqualität 
 Questionnaire/mii-qst-pro-eortc-qlq-c30
 ~~~~
 
+**➔ [Vollständige Ressource in Simplifier anzeigen](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-eortc-qlq-c30)**
+
 **SNOMED**: `273446001 |EORTC QLQ-C30 (assessment scale)|`
 
 **Capabilities**:
@@ -141,6 +143,10 @@ ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
   ]
 }
 ~~~~
+
+**➔ Vollständige Beispiele in Simplifier:**
+- [EORTC QLQ-C30 QuestionnaireResponse](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-exa-pro-eortc-qlq-c30-response)
+- [EORTC QLQ-C30 Bundle mit Observations](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-exa-pro-eortc-qlq-c30-bundle)
 
 ### Integration mit MII Onkologie-Modul
 
