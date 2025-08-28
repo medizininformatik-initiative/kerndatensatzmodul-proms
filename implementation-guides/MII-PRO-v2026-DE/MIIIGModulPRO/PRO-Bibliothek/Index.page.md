@@ -13,10 +13,10 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 |------------|---------|---------|--------|----------|---|---|-----|---|---|-----|
 | **PHQ-9** | Vollständig | Depression | 9+1 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **EQ-5D-5L** | Vollständig | Lebensqualität | 5+VAS | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **BDI-II** | Vollständig | Depression | 21 | DE | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **PROMIS-29** | In Entwicklung | Multi-Domain | 29 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **PROMIS Depression SF 4a** | In Entwicklung | Depression | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **PROMIS Cognitive Function SF 4a** | In Entwicklung | Kognition | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **BDI-II** | Data and Scoring | Depression | 21 | DE | - | - | ✓ | ✓ | ✓ | ✓ |
+| **PROMIS-29** | Vollständig | Multi-Domain | 29 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **PROMIS Depression SF 4a** | Vollständig | Depression | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **PROMIS Cognitive Function SF 4a** | Vollständig | Kognition | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **EORTC QLQ-C30** | Vollständig | Onkologie | 30 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | - |
 
 #### Metadata-Only Reference Questionnaires
@@ -54,11 +54,6 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
   - Index-, VAS- und Profil-Scores
   - CQL-Bibliotheken für Berechnungen
 
-- **BDI-II (Beck Depression Inventory II)**
-  - Umfassendes Depressionsinventar mit 21 Items
-  - Kategorienbasierte Score-Berechnung
-  - MII-kontrollierte Terminologie mit Scoring-Weights
-
 - **EORTC QLQ-C30**
   - Onkologie-spezifisches Lebensqualitätsinstrument mit 30 Fragen
   - Vollständige Implementierung aller 15 Subskalen mit automatischen Score-Berechnungen
@@ -66,16 +61,22 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
   - Umfassende Scoring-Methodologie mit linearer Transformation (0-100 Skala)
   - ObservationDefinitions für alle Funktions- und Symptomskalen
 
-#### In aktiver Entwicklung
 - **PROMIS-29 Profile v2.1**
   - 7 Domänen: Physical Function, Anxiety, Depression, Fatigue, Sleep, Social Function, Pain
   - Variable-basierte Score-Berechnungen
   - Raw Scores und T-Scores für alle Domänen
 
 - **PROMIS Short Forms**
-  - Depression SF 4a
-  - Cognitive Function SF 4a
+  - Depression SF 4a und Cognitive Function SF 4a
+  - Vollständige Implementierung mit automatischer Score-Berechnung
   - Vorbereitung für item-basierte Architektur
+
+#### Data and Scoring implementiert
+- **BDI-II (Beck Depression Inventory II)**
+  - Umfassendes Depressionsinventar mit 21 Items
+  - Kategorienbasierte Score-Berechnung funktionsfähig
+  - MII-kontrollierte Terminologie mit Scoring-Weights
+  - Benötigt noch Display- und Collection-Capabilities für vollständige Nutzung
 
 ### Technische Highlights
 
