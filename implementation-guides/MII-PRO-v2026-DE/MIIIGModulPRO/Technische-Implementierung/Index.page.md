@@ -6,7 +6,7 @@ topic: Technische-Implementierung
 
 ### Profile
 
-Alle Profile rund um Frabögen und Scores sind auf der Seite {{pagelink:MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md}} dokumentiert. Konkrete Profile für spezifische Fragebögen und Scores finden sich im Abschnitt PRO-Library. 
+Alle Profile rund um Fragebogen-Vorlagen, ausgefüllte Fragebögen und Scores sind auf der Seite {{pagelink:MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md}} dokumentiert. Konkrete Profile für spezifische Fragebögen und Scores finden sich im Abschnitt PRO-Library. 
 
 ### Workflows
 

@@ -124,7 +124,7 @@ QL-Score = ((Rohwert - 1) / 6) × 100
 - **URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30`
 - **Primärsprache**: Englisch (`language = #en`)
 - **Übersetzungen**: Deutsche Übersetzungen über CodeSystem-Designations
-- **Antwortoptionen**: MII-kontrollierte CodeSystems mit `ordinalValue`-Properties für Scoring
+- **Antwortoptionen**: MII CodeSystems mit `ordinalValue`-Properties für Scoring
 
 ### CodeSystem & ValueSets
 - **CodeSystem**: `mii-cs-pro-eortc-qlq-c30` - CodeSystem für Darstellung der Antwortspektren in Englisch mit deutscher Übersetzung
@@ -188,4 +188,4 @@ Das EORTC QLQ-C30 wird im **MII PRO-Modul** als Referenzinstrument für:
 
 ---
 
-*Diese Implementierung folgt den MII-Terminologie-Strategien und verwendet MII-kontrollierte CodeSystems für Score-Berechnungen i.*
+*Diese Implementierung folgt den MII-Terminologie-Strategien und verwendet MII CodeSystems für Score-Berechnungen.*

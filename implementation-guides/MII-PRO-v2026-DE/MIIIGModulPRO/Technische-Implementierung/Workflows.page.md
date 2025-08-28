@@ -50,13 +50,12 @@ Der Standard-Workflow orientiert sich an der FHIR-Kernspezifikation und den vorg
 
 1. Üblicherweise füllt ein Patient einen Fragebogen, der als FHIR Questionnaire (Q) definiert ist und über ein User Interface (UI) angezeigt wird, aus
 2. Die eingegebenen Antworten werden danach als FHIR QuestionnaireResponse (QR) gespeichert, wenn vorgesehen ein Score ermittelt
-3. Optional wird eine Auswahl definierter Antworten extrahiert und als FHIR Observation (O) gespeichert, um diese für weitere Zwecke (z.B. Analyse) zu verwenden
 
 <img src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Workflow_Standard/Workflow_Standard.svg?raw=true" alt="MII PRO Workflow-Pattern: Standard" style="width:40%;display:block;margin: 1em auto;"/>
 
-**Verwendete Capabilities**: keine
+**Verwendete Capabilities**: displayable, collectable
 
-**Beispiel**: k.A.
+**Beispiel**: Erhebung von Symptomschwere mit EORTC-QLQ-Fragebögen begleitend zu und folgend auf eine/r Strahlentherapie/Systemtherapie-Behandlung in der Onkologie
 
 ---
 
@@ -75,7 +74,7 @@ Dieses Workflow-Pattern fokussiert eine direkte, d.h. nicht zeitversetzte, Beant
 
 **Verwendete Capabilities:** `[collectable, calculatable, displayable, extractable]`
 
-**Beispiel**: DiGA-Smartphone-App mit Live-Score-Updates
+**Beispiel**: DiGA-Smartphone-App mit In-App-Scoreberechnung
 
 ---
 

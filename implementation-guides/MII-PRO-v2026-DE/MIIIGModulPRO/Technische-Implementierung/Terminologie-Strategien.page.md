@@ -11,7 +11,7 @@ Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition vo
 
 1. **Inline answerOption**: Direkte Definition der Antwortoptionen im Questionnaire
 2. **answerValueSet**: Verweis auf externe ValueSets mit flexibler Zusammenstellung
-3. **MII-kontrollierte CodeSystems**: Vollständige Kontrolle über Terminologie-Lebenszyklus
+3. **MII CodeSystems**: Vollständige Kontrolle über Terminologie-Lebenszyklus
 
 ## Strategische Entscheidungskriterien
 
@@ -118,7 +118,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 * item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
 ~~~~
 
-#### MII-kontrollierte Terminologiestrategie  
+#### MII-Terminologiestrategie  
 **Kriterium**: Keine zuverlässigen internationalen Standards, deutsche Spezifika erforderlich
 
 **Strategische Überlegungen**:
@@ -210,7 +210,7 @@ CodeSystem: MyCodeSystem
 
 ## Governance und Lebenszyklus-Management
 
-### MII-kontrollierte Terminologie
+### MII-Terminologie
 **Vorteile**:
 - Vollständige Kontrolle über Definitionen
 - Deutsche Gesundheitssystem-Spezifika
@@ -231,6 +231,6 @@ CodeSystem: MyCodeSystem
 
 Die Wahl der Terminologiestrategie ist eine **strategische Architekturentscheidung**, die die langfristige Wartbarkeit, Interoperabilität und Skalierbarkeit von PRO-Implementierungen maßgeblich beeinflusst.
 
-**Grundprinzip**: "Internationale Standards first, MII-kontrollierte Terminologie where necessary, simple inline where appropriate"
+**Grundprinzip**: "Internationale Standards first, MII-Terminologie where necessary, simple inline where appropriate"
 
 Diese Strategie ermöglicht es, die Vorteile internationaler Interoperabilität zu nutzen, während gleichzeitig die spezifischen Anforderungen des deutschen Gesundheitswesens berücksichtigt werden.

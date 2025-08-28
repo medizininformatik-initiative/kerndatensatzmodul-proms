@@ -25,6 +25,18 @@ Die vier Items wurden aus einer umfassenden Item Bank von über 30 Depression-It
 
 Das Questionnaire folgt dem SDC (Structured Data Capture) Standard und implementiert erweiterte Capabilities für automatisierte Score-Berechnung. Die Implementierung nutzt FHIR-Variablen zur Vermeidung zirkulärer Abhängigkeiten zwischen Items und berechneten Scores.
 
+<tabs>
+  <tab title="Tree">
+    {{tree:mii-qst-pro-promis-depression-sf4a}}
+  </tab>
+  <tab title="JSON">
+    {{json:mii-qst-pro-promis-depression-sf4a}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-promis-depression-sf4a}}
+  </tab>
+</tabs>
+
 ~~~~
 // FSH
 Instance: mii-qst-pro-promis-depression-sf4a
@@ -125,7 +137,7 @@ Diese Werte zeigen, dass die deutsche Population im Durchschnitt niedrigere Depr
 
 **Controlled Vocabulary Strategie**
 
-Die Implementierung nutzt MII-kontrollierte ValueSets, um zuverlässige Score-Berechnungen zu gewährleisten. Standard LOINC Answer Lists enthalten keine numerischen Scoring-Gewichte, was automatisierte FHIRPath-Berechnungen verhindert.
+Die Implementierung nutzt MII ValueSets, um zuverlässige Score-Berechnungen zu gewährleisten. Standard LOINC Answer Lists enthalten keine numerischen Scoring-Gewichte, was automatisierte FHIRPath-Berechnungen verhindert.
 
 ~~~~
 // FSH

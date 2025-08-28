@@ -1,8 +1,9 @@
 ---
 parent: 
 ---
+# Modul PROs, PROMs und abgeleitete Metriken
 
-Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
+Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken beschreibt die FHIR-Repräsentation des Kerndatensatzmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
 
 ## Zielsetzung
 
@@ -23,7 +24,7 @@ Das MII PRO-Modul standardisiert die Erfassung und Auswertung patientenberichtet
 - **SDC-basierte Fragebögen** mit erweiterten Rendering- und Berechnungsfähigkeiten
 - **Capability-Architektur** für flexible Nutzungsszenarien
 - **Domain-basiertes Scoring** zur Harmonisierung verschiedener Instrumente
-- **MII-kontrollierte Terminologie** für zuverlässige Score-Berechnungen
+- **MII-Terminologie** für zuverlässige Score-Berechnungen
 
 ## Technische Grundlagen
 

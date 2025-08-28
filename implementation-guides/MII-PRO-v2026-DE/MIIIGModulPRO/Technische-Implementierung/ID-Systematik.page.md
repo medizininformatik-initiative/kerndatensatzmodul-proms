@@ -35,18 +35,33 @@ mii-[typ]-[modul]-[spezifikation]
 
 ### Ressourcentyp-Abkürzungen
 
+#### Allgemeine MII-Konventionen
+Diese Abkürzungen werden MII-weit in allen Modulen verwendet:
+
 | Typ | Bedeutung | FHIR-Ressource | Beispiel |
 |-----|-----------|----------------|----------|
-| `qst` | Questionnaire | Questionnaire | `mii-qst-pro-phq-9` |
 | `pr` | Profile | StructureDefinition (Profile) | `mii-pr-pro-questionnaire` |
-| `obsdef` | ObservationDefinition | ObservationDefinition | `mii-obsdef-pro-eq5d5l-index-score` |
 | `cs` | CodeSystem | CodeSystem | `mii-cs-pro-questionnaire-catalogue` |
 | `vs` | ValueSet | ValueSet | `mii-vs-pro-phq-9-answer-list` |
 | `cm` | ConceptMap | ConceptMap | `mii-cm-pro-phq9-to-promis-depression` |
 | `ex` | Extension | StructureDefinition (Extension) | `mii-ex-pro-questionnaire-capabilities` |
 | `exa` | Example | Beliebige Ressource | `mii-exa-pro-phq-9-response` |
 | `lm` | LogicalModel | StructureDefinition (LogicalModel) | `mii-lm-pro` |
-| `lib` | Library | Library (CQL) | `mii-lib-pro-eq5d-calculations` |
+
+#### PRO-Modul spezifische Ergänzungen
+Diese Abkürzungen sind spezifisch für das PRO-Modul entwickelt worden:
+
+| Typ | Bedeutung | FHIR-Ressource | Beispiel | Status |
+|-----|-----------|----------------|----------|---------|
+| `qst` | Questionnaire | Questionnaire | `mii-qst-pro-phq-9` | Implementiert |
+| `obsdef` | ObservationDefinition | ObservationDefinition | `mii-obsdef-pro-eq5d5l-index-score` | Implementiert |
+| `lib` | Library | Library (CQL) | `mii-lib-pro-eq5d-calculations` | Geplant (2026+) |
+
+**Hinweis zu QuestionnaireResponse**: Es wurde diskutiert, die Abkürzung `qr` für QuestionnaireResponse einzuführen. Nach eingehender Prüfung wurde jedoch entschieden, dass QuestionnaireResponses entweder als:
+- **Definitionale Profile** unter `pr` (z.B. `mii-pr-pro-questionnaire-response`) oder
+- **Konkrete Beispiele** unter `exa` (z.B. `mii-exa-pro-phq-9-response`)
+
+eingeordnet werden sollten, je nach ihrem Verwendungszweck.
 
 **Wichtig**: Dateinamen und Ressourcen-IDs sind identisch und verwenden durchgehend Kleinschreibung mit Bindestrichen.
 
@@ -261,9 +276,9 @@ Die Wahl zwischen inline `answerOption` und externen `answerValueSet` Definition
 
 | Ansatz | Anwendungsfall | Beispiel | Vorteile | Nachteile |
 |--------|---------------|----------|----------|-----------|
-| **Inline answerOption + LOINC** | Internationale Standards verfügbar + displayable | PHQ-9, PROMIS | ✅ Internationale Interoperabilität<br>✅ Semantische Eindeutigkeit | ⚠️ Deutsche Übersetzungen via Extensions |
-| **Inline answerOption + Simple Codes** | Einfache, statische Listen (≤5 Optionen) + displayable | EQ-5D-5L | ✅ Minimale Komplexität<br>✅ Direkter Code | ❌ Keine Wiederverwendbarkeit |
-| **answerValueSet + MII CodeSystem** | Capabilities-basiert: displayable=false, calculatable=true | BDI-II | ✅ Optimiert für Score-only<br>✅ Kein Display-Overhead<br>✅ Deutsche Spezifika | ⚠️ Nicht für interaktive Formulare |
+| **Inline answerOption + LOINC** | Internationale Standards verfügbar + displayable | PHQ-9, PROMIS | **Vorteile:** Internationale Interoperabilität<br>Semantische Eindeutigkeit | **Hinweis:** Deutsche Übersetzungen via Extensions |
+| **Inline answerOption + Simple Codes** | Einfache, statische Listen (≤5 Optionen) + displayable | EQ-5D-5L | **Vorteile:** Minimale Komplexität<br>Direkter Code | **Nachteil:** Keine Wiederverwendbarkeit |
+| **answerValueSet + MII CodeSystem** | Capabilities-basiert: displayable=false, calculatable=true | BDI-II | **Vorteile:** Optimiert für Score-only<br>Kein Display-Overhead<br>Deutsche Spezifika | **Hinweis:** Nicht für interaktive Formulare |
 
 ### Implementierungsbeispiele
 
@@ -300,12 +315,12 @@ Die Wahl zwischen inline `answerOption` und externen `answerValueSet` Definition
 **Prüfe zuerst die Questionnaire Capabilities:**
 
 **Verwende answerValueSet + MII CodeSystem wenn:**
-- ✅ **displayable = false, calculatable = true** (wie BDI-II)
+- **displayable = false, calculatable = true** (wie BDI-II)
 - Optimierung für reine Score-Berechnung ohne Display-Overhead
 - Hintergrund-Berechnungen ohne Benutzerinteraktion
 
 **Verwende inline answerOption wenn:**
-- ✅ **displayable = true** (interaktive Formulare)
+- **displayable = true** (interaktive Formulare)
 - LOINC-Codes mit Score-Gewichten verfügbar sind
 - Einfache, statische Antwortlisten (≤5 Optionen) 
 - Reiche Metadaten pro Option (Übersetzungen, Gewichte)
@@ -316,8 +331,8 @@ Die Wahl zwischen inline `answerOption` und externen `answerValueSet` Definition
 - Komplexe Scoring-Anforderungen mit variablen Gewichten
 - Deutsche Gesundheitssystem-Spezifika erforderlich
 
-**📖 Detaillierte Dokumentation**: [Terminologie-Strategien](Terminologie-Strategien.html)
+**Detaillierte Dokumentation**: [Terminologie-Strategien](Terminologie-Strategien.html)
 
-**🎯 Visualisierung**: Siehe UML-Entscheidungsbaum in den Implementierungsrichtlinien
+**Visualisierung**: Siehe UML-Entscheidungsbaum in den Implementierungsrichtlinien
 
 

@@ -131,7 +131,7 @@ Diese Werte zeigen, dass die deutsche Population im Durchschnitt niedrigere Depr
 
 **Controlled Vocabulary Strategie**
 
-Die Implementierung nutzt MII-kontrollierte ValueSets, um zuverlässige Score-Berechnungen zu gewährleisten. Standard LOINC Answer Lists enthalten keine numerischen Scoring-Gewichte, was automatisierte FHIRPath-Berechnungen verhindert.
+Die Implementierung nutzt MII ValueSets, um zuverlässige Score-Berechnungen zu gewährleisten. Standard LOINC Answer Lists enthalten keine numerischen Scoring-Gewichte, was automatisierte FHIRPath-Berechnungen verhindert.
 
 ~~~~
 // FSH

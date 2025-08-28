@@ -57,7 +57,7 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 - **EORTC QLQ-C30**
   - Onkologie-spezifisches Lebensqualitätsinstrument mit 30 Fragen
   - Vollständige Implementierung aller 15 Subskalen mit automatischen Score-Berechnungen
-  - MII-kontrollierte Terminologie mit deutschen und englischen Übersetzungen
+  - MII-Terminologie mit deutschen und englischen Übersetzungen
   - Umfassende Scoring-Methodologie mit linearer Transformation (0-100 Skala)
   - ObservationDefinitions für alle Funktions- und Symptomskalen
 
@@ -75,7 +75,7 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 - **BDI-II (Beck Depression Inventory II)**
   - Umfassendes Depressionsinventar mit 21 Items
   - Kategorienbasierte Score-Berechnung funktionsfähig
-  - MII-kontrollierte Terminologie mit Scoring-Weights
+  - MII-Terminologie mit Scoring-Weights
   - Benötigt noch Display- und Collection-Capabilities für vollständige Nutzung
 
 ### Technische Highlights
@@ -88,7 +88,7 @@ Alle vollständig implementierten Fragebögen nutzen erweiterte SDC-Capabilities
 - **Observation Extraction**: Direkte Konvertierung zu FHIR Observations
 
 #### Terminologie-Strategie
-- **MII-kontrollierte ValueSets** mit Scoring-Weights für zuverlässige Berechnungen
+- **MII ValueSets** mit Scoring-Weights für zuverlässige Berechnungen
 - **Mehrsprachigkeit** durch FHIR Translation Extensions
 - **LOINC-Integration** wo verfügbar, mit deutschen Übersetzungen
 

@@ -5,9 +5,9 @@ topic: PROMIS-29
 
 ### Übersicht
 
-**Status**: 🚧 Technical Preview  
-**Version**: 0.2.0  
-**Letzte Aktualisierung**: 2025-01-15
+**Status**: Vollständig implementiert  
+**Version**: 2026.0.0-ballot  
+**Letzte Aktualisierung**: 2025-08-28
 
 Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen plus Schmerzintensität.
 
@@ -32,11 +32,11 @@ Questionnaire/mii-qst-pro-promis-29
 ~~~~
 
 **Capabilities**:
-- ✅ displayable
-- ✅ collectable  
-- ✅ calculatable (alle Domänen-Scores)
-- ⚠️ extractable (in Entwicklung)
-- ❌ populatable (geplant)
+- displayable
+- collectable  
+- calculatable (alle Domänen-Scores)
+- extractable
+- domainAligned
 
 #### Score-Berechnung
 
@@ -131,5 +131,3 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 - LOINC Panel: [62199-5](https://loinc.org/62199-5/)
 
 ---
-
-⚠️ **Technical Preview**: Diese Implementation ist noch nicht für den Produktiveinsatz freigegeben.

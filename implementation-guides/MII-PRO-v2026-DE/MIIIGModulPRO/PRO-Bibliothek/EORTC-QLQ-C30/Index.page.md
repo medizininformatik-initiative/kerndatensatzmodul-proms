@@ -65,7 +65,7 @@ Score = (1 - (RawScore - 1) / Range) × 100
 Score = ((RawScore - 1) / Range) × 100
 ~~~~
 
-#### MII-kontrollierte Terminologie
+#### MII-Terminologie
 
 ~~~~
 // FSH

@@ -15,7 +15,7 @@ Der EORTC QLQ-C30
 ### Inhalt
 
 <tabs>
-  <tab title="Darstellung">{{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-health-correlation}}</tab>
+  <tab title="Darstellung">{{tree:mii-ex-pro-score-health-correlation}}</tab>
   <tab title="Beschreibung"> 
         @```
         from
