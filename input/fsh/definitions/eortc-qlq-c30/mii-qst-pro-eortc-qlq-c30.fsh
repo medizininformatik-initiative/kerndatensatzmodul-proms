@@ -19,7 +19,7 @@ Usage: #definition
 * extension[capabilities].extension[collectable].valueBoolean = true
 * extension[capabilities].extension[calculatable].valueBoolean = true
 * extension[capabilities].extension[extractable].valueBoolean = true
-* extension[capabilities].extension[domainAligned].valueBoolean = true
+* extension[capabilities].extension[domainAligned].valueBoolean = false
 
 // Introduction text
 * item[+].linkId = "QLQ-C30.Introduction"
