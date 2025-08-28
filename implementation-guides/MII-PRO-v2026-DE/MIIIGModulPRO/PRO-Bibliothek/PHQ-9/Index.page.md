@@ -72,13 +72,13 @@ Der PHQ-9 kann auf PROMIS Depression T-Scores gemappt werden:
 
 <tabs>
   <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-phq-9-response}}
+    {{tree:mii-exa-pro-phq-9-response}}
   </tab>
   <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-phq-9-response}}
+    {{json:mii-exa-pro-phq-9-response}}
   </tab>
   <tab title="XML">
-    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-phq-9-response}}
+    {{xml:mii-exa-pro-phq-9-response}}
   </tab>
 </tabs>
 
