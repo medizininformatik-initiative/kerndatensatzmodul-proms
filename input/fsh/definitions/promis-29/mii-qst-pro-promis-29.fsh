@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
-* version = "1.0.0"
+* version = "2026.0.0-ballot"
 // versionAlgorithm is an R5 element - not available in R4
 // * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]"
 // * extension[=].valueCoding = http://hl7.org/fhir/version-algorithm#semver

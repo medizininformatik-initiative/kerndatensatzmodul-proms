@@ -11,7 +11,7 @@ Usage: #definition
 * language = #de
 * code[snomed] = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
 * code[mii] = $mii-cs-pro-questionnaire-catalogue#euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
-* version = "0.1.0"
+* version = "2026.0.0-ballot"
 
 // TODO: date, publisher, copyright, etc.
 

@@ -4,9 +4,9 @@ Id: mii-vs-pro-eortc-qlq-c30-scale-4pt
 Title: "MII VS PRO EORTC QLQ-C30 4-Point Scale"
 Description: "Standard 4-point response scale for EORTC QLQ-C30 items"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#not-at-all
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#a-little
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#quite-a-bit
@@ -18,9 +18,9 @@ Id: mii-vs-pro-eortc-qlq-c30-scale-role
 Title: "MII VS PRO EORTC QLQ-C30 Role Functioning Scale"
 Description: "4-point response scale for EORTC QLQ-C30 role functioning items"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#not-at-all-role
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#a-little-role
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#quite-a-bit-role
@@ -32,9 +32,9 @@ Id: mii-vs-pro-eortc-qlq-c30-scale-7pt
 Title: "MII VS PRO EORTC QLQ-C30 7-Point Scale"
 Description: "7-point response scale for EORTC QLQ-C30 global health status and quality of life items"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#1-very-poor
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#2-poor
 * https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#3-fair

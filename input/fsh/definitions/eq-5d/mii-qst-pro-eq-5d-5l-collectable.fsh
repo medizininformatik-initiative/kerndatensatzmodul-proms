@@ -10,7 +10,7 @@ Usage: #definition
 * experimental = true
 * language = #de
 * code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
-* version = "0.1.0"
+* version = "2026.0.0-ballot"
 // TODO: date, publisher, copyright, etc.
 
 * extension[capabilities].extension[displayable].valueBoolean = true

@@ -4,6 +4,7 @@ Id: mii-pr-pro-questionnaire
 Title: "MII PR PRO Questionnaire"  
 Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 * version 1..1 MS 

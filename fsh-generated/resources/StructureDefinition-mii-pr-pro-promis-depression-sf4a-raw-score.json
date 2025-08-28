@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-pro-promis-depression-sf4a-raw-score",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score",
+  "version": "2026.0.0-ballot",
   "name": "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
   "title": "MII PR PRO PROMIS Depression SF 4a Raw Score",
   "status": "draft",
@@ -14,6 +15,20 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
       {
         "id": "Observation.extension:instantiatesCanonical",
         "path": "Observation.extension",

@@ -4,6 +4,7 @@ Title: "MII CS PRO Score Catalogue"
 Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module"
 
 
+* insert PR_CS_VS_Version
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * ^version = "0.1.0"
 * ^status = #draft

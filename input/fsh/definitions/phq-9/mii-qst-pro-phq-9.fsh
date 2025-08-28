@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
-* version = "0.1.0"
+* version = "2026.0.0-ballot"
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
 * extension[capabilities].extension[displayable].valueBoolean = true

@@ -4,6 +4,7 @@ Title: "MII CS PRO Questionnaire Catalogue"
 Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in the MII PROMs Module"
 
 
+* insert PR_CS_VS_Version
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"
 * ^version = "0.1.0"
 * ^status = #draft

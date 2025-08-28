@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "3.0.0"
+* version = "2026.0.0-ballot"
 * title = "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"
 * publisher = "Medizininformatik Initiative (MII)"
 * copyright = "© Copyright 1995 EORTC Quality of Life Group. All rights reserved. Version 3.0"

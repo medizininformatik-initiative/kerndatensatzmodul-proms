@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
-* version = "2.1.0-minimal"
+* version = "2026.0.0-ballot"
 * code = $LNC#71968-5 "PROMIS-29 Profile v2.1"
 
 // Capabilities: displayable, collectable only

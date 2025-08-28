@@ -4,6 +4,7 @@ Id: mii-pr-pro-observation-eq5d5l-profile
 Title: "MII PR PRO Observation EQ-5D-5L Profile"
 Description: "Profile for EQ-5D-5L Profile String Observations (e.g., '11111')"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 

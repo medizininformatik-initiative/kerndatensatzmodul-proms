@@ -2,9 +2,7 @@
 parent: 
 ---
 
-# Kerndatensatz Modul PROs, PROMs und abgeleitete Metriken
-
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
+Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
 
 ## Zielsetzung
 
@@ -34,13 +32,12 @@ Die Implementierung basiert auf:
 - SDC (Structured Data Capture) 3.0.0
 - HL7 Terminology 6.4.0
 
-⚠️ **Hinweis**: Einige verwendete Spezifikationselemente befinden sich noch im Ballotierungsprozess.
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 31.07.2025 |
+| Datum   | 01.09.2025 |
 | Version | 2026.0.0-ballot        |
-| Status  | Active       |
+| Status  | ballot       |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis

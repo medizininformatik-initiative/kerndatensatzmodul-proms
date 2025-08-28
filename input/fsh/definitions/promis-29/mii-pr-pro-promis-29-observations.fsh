@@ -7,6 +7,7 @@ Id: mii-pr-pro-promis-29-physical-function-tscore
 Title: "MII PR PRO PROMIS-29 Physical Function T-Score"
 Description: "Profile for PROMIS-29 Physical Function T-Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -35,6 +36,7 @@ Id: mii-pr-pro-promis-29-anxiety-tscore
 Title: "MII PR PRO PROMIS-29 Anxiety T-Score"
 Description: "Profile for PROMIS-29 Anxiety T-Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -63,6 +65,7 @@ Id: mii-pr-pro-promis-29-depression-tscore
 Title: "MII PR PRO PROMIS-29 Depression T-Score"
 Description: "Profile for PROMIS-29 Depression T-Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -91,6 +94,7 @@ Id: mii-pr-pro-promis-29-fatigue-tscore
 Title: "MII PR PRO PROMIS-29 Fatigue T-Score"
 Description: "Profile for PROMIS-29 Fatigue T-Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -119,6 +123,7 @@ Id: mii-pr-pro-promis-29-sleep-disturbance-tscore
 Title: "MII PR PRO PROMIS-29 Sleep Disturbance T-Score"
 Description: "Profile for PROMIS-29 Sleep Disturbance T-Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -147,6 +152,7 @@ Id: mii-pr-pro-promis-29-social-function-tscore
 Title: "MII PR PRO PROMIS-29 Social Function T-Score"
 Description: "Profile for PROMIS-29 Ability to Participate in Social Roles and Activities T-Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -175,6 +181,7 @@ Id: mii-pr-pro-promis-29-pain-interference-tscore
 Title: "MII PR PRO PROMIS-29 Pain Interference T-Score"
 Description: "Profile for PROMIS-29 Pain Interference T-Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -203,6 +210,7 @@ Id: mii-pr-pro-promis-29-pain-intensity
 Title: "MII PR PRO PROMIS-29 Pain Intensity"
 Description: "Profile for PROMIS-29 Pain Intensity single item Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 

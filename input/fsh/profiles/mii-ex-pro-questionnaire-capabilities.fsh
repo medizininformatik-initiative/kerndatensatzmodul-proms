@@ -3,6 +3,7 @@ Id: mii-ex-pro-questionnaire-capabilities
 Title: "MII PR PRO Questionnaire Capabilities"  
 Description: "MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 //* url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"

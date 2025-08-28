@@ -4,6 +4,7 @@ Id: mii-pr-pro-observation-bdi-ii
 Title: "MII PR PRO Observation BDI-II"
 Description: "Profile for Beck Depression Inventory II (BDI-II) Total Score Observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 

@@ -4,6 +4,7 @@ Id: mii-pr-pro-observation-eq5d5l-index
 Title: "MII PR PRO Observation EQ-5D-5L Index"
 Description: "Profile for EQ-5D-5L Index Score Observations with German value set reference ranges"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 

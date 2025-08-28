@@ -4,6 +4,7 @@ Id: mii-pr-pro-promis-depression-sf4a-raw-score
 Title: "MII PR PRO PROMIS Depression SF 4a Raw Score"
 Description: "Profile for PROMIS Depression Short Form 4a raw score observations (4-20 range)"
 
+* insert PR_CS_VS_Version
 * status MS
 * status = #final
 
@@ -43,6 +44,7 @@ Id: mii-pr-pro-depression-t-score
 Title: "MII PR PRO Depression Domain T-Score"
 Description: "Generic profile for depression domain T-score observations (all depression questionnaires)"
 
+* insert PR_CS_VS_Version
 * status MS
 * status = #final
 

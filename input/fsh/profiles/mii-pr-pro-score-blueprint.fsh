@@ -4,6 +4,7 @@ Id: mii-pr-pro-score-blueprint
 Title: "MII PR PRO Score Blueprint / Template"  
 Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification"
 
+* insert PR_CS_VS_Version
 * code MS 
 * code.coding  1..* MS
 

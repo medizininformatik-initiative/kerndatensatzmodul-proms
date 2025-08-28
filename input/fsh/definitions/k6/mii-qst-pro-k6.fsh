@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "0.1.0"
+* version = "2026.0.0-ballot"
 * title = "Kessler Psychological Distress Scale (K6)"
 * code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#k6 "Kessler Psychological Distress Scale"
 

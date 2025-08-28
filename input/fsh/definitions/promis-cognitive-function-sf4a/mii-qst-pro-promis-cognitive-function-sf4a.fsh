@@ -8,7 +8,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "1.0.0"
+* version = "2026.0.0-ballot"
 * code = $LNC#71133-6 "PROMIS SF v2.0 - Cognitive Function 4a"
 
 * extension[capabilities].extension[displayable].valueBoolean = true

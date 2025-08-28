@@ -9,7 +9,7 @@ Usage: #definition
 * experimental = true
 * language = #de
 * code[+] = $LNC#89210-9 "Beck Depression Inventory II [BDI]"
-* version = "0.1.0"
+* version = "2026.0.0-ballot"
 
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[collectable].valueBoolean = false

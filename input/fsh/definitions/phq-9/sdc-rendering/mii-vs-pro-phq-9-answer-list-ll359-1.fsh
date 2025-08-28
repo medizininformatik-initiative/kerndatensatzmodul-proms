@@ -4,6 +4,7 @@ Id: mii-vs-pro-phq-9-answer-list-ll359-1
 Title: "MII VS PRO PHQ-9 Answer List LL359-1"
 Description: "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)"
 
+* insert PR_CS_VS_Version
 * insert StructureDefinitionMetadata($mii-vs-pro-phq-9-answer-list-ll359-1, active, false, de)
 * insert ConceptIntl($LNC#LA6572-7, Überhaupt nicht erschwert, en, Not difficult at all)
 * insert ConceptIntl($LNC#LA6573-5, Etwas erschwert, en, Somewhat difficult)

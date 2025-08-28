@@ -5,6 +5,7 @@ ValueSet: MII_VS_PRO_PROMIS_Physical_Function_Response_Scale
 Id: mii-vs-pro-promis-physical-function-response-scale
 Title: "MII VS PRO PROMIS Physical Function Response Scale"
 Description: "PROMIS Physical Function response scale: Kann ich gar nicht - Ohne jede Schwierigkeiten"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
 * ^language = #de
@@ -19,6 +20,7 @@ ValueSet: MII_VS_PRO_PROMIS_Frequency_Response_Scale
 Id: mii-vs-pro-promis-frequency-response-scale
 Title: "MII VS PRO PROMIS Frequency Response Scale"
 Description: "PROMIS Frequency response scale: Nie - Immer"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
 * ^language = #de
@@ -33,6 +35,7 @@ ValueSet: MII_VS_PRO_PROMIS_Intensity_Response_Scale
 Id: mii-vs-pro-promis-intensity-response-scale
 Title: "MII VS PRO PROMIS Intensity Response Scale"
 Description: "PROMIS Intensity response scale: Überhaupt nicht - Sehr"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
 * ^language = #de
@@ -47,6 +50,7 @@ ValueSet: MII_VS_PRO_PROMIS_Quality_Response_Scale
 Id: mii-vs-pro-promis-quality-response-scale
 Title: "MII VS PRO PROMIS Quality Response Scale"
 Description: "PROMIS Quality response scale: Schlecht - Ausgezeichnet"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
 * ^language = #de
@@ -61,6 +65,7 @@ ValueSet: MII_VS_PRO_PROMIS_Sleep_Quality_Response_Scale
 Id: mii-vs-pro-promis-sleep-quality-response-scale
 Title: "MII VS PRO PROMIS Sleep Quality Response Scale"
 Description: "PROMIS Sleep Quality response scale: Sehr schlecht - Sehr gut"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
 * ^language = #de
@@ -75,6 +80,7 @@ ValueSet: MII_VS_PRO_PROMIS_Pain_Intensity_Numeric_Scale
 Id: mii-vs-pro-promis-pain-intensity-numeric-scale
 Title: "MII VS PRO PROMIS Pain Intensity Numeric Scale"
 Description: "PROMIS Pain Intensity numeric scale: 0 (Keine Schmerzen) - 10 (Schlimmste vorstellbare Schmerzen)"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
 * ^language = #de

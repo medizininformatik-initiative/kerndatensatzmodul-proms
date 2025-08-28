@@ -7,6 +7,7 @@ Id: mii-pr-pro-promis-cognitive-function-sf4a-raw-score
 Title: "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score"
 Description: "Profile for PROMIS Cognitive Function Short Form 4a raw score observations (4-20 range)"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 
@@ -40,6 +41,7 @@ Id: mii-pr-pro-promis-cognitive-function-sf4a-tscore
 Title: "MII PR PRO PROMIS Cognitive Function SF 4a T-Score"
 Description: "Profile for PROMIS Cognitive Function Short Form 4a T-Score observations"
 
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 

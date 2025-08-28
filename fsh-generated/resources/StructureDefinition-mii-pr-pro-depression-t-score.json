@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-pro-depression-t-score",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score",
+  "version": "2026.0.0-ballot",
   "name": "MII_PR_PRO_Depression_T_Score",
   "title": "MII PR PRO Depression Domain T-Score",
   "status": "draft",
@@ -14,6 +15,20 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
       {
         "id": "Observation.extension:instantiatesCanonical",
         "path": "Observation.extension",
