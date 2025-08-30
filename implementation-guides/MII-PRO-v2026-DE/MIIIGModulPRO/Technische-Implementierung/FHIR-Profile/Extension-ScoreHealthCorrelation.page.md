@@ -1,7 +1,7 @@
 ---
 parent: 
 topic: Extension-ScaleDirection  
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-health-correlation
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation
 ---
 
 ## Extension: Score Health Correlation
@@ -19,13 +19,13 @@ Bei den Symptom-Skalen entsprechen hohe Werte einem schlechten Gesundheitszustan
 ### Inhalt
 
 <tabs>
-  <tab title="Darstellung">{{tree:mii-ex-pro-score-health-correlation}}</tab>
+  <tab title="Darstellung">{{tree:mii-ex-pro-score-score-health-correlation}}</tab>
   <tab title="Beschreibung"> 
         @```
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-health-correlation'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation'
         select
             Beschreibung: description
         with
@@ -35,7 +35,7 @@ Bei den Symptom-Skalen entsprechen hohe Werte einem schlechten Gesundheitszustan
         from 
             StructureDefinition 
         where 
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-health-correlation' 
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation' 
         for 
             differential.element 
             where 
