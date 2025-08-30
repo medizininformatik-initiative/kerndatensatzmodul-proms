@@ -15,7 +15,7 @@ Definition und Beschreibung der Gesundheitsdomänen nach PROMIS-Framework. Umfas
 **{{pagelink:Domain-basiertes-Scoring}}**  
 Methodische Grundlagen der Domänen-basierten Score-Berechnung. Behandelt Item Response Theory, Cross-Walking Verfahren und die praktische Implementierung über ObservationDefinitions.
 
-**{{pagelink:Cross-Instrument Mappings}}**  
+**{{pagelink:Cross-Instrument-Mappings}}**  
 Konkrete Mapping-Tabellen und Konversionsalgorithmen zwischen verschiedenen Instrumenten. Schwerpunkt auf der Depression-Domäne mit validierten Mappings zwischen 9 Instrumenten.
 
 ### Implementierungsstatus
@@ -74,4 +74,4 @@ Die Implementierung basiert auf etablierten psychometrischen Verfahren:
 - Equiperzentil-Linking für Cross-Walking zwischen klassischen Instrumenten
 - Validierte Konversionstabellen aus großen Vergleichsstudien (z.B. PROsetta Stone)
 
-Weitere Details siehe [Domain-basiertes Scoring](Domain-basiertes-Scoring.page.md) und [Cross-Instrument Mappings](Cross-Instrument-Mappings.page.md).
+Weitere Details siehe {{pagelink:Domain-basiertes-Scoring}} und {{pagelink:Cross-Instrument-Mappings}}.

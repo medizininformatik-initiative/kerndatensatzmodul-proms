@@ -1,5 +1,5 @@
 ---
-topic: Cross-Instrument Mappings
+topic: Cross-Instrument-Mappings
 ---
 ## {{page-title}}
 
@@ -27,7 +27,7 @@ Lineare oder nicht-lineare Regressionsmodelle zur Vorhersage von Scores eines In
 
 Die folgende Abbildung zeigt validierte Mappings zwischen PROMIS Depression T-Scores und acht weiteren etablierten Depressionsskalen:
 
-<img decoding="async" src="../../Images/Mapping-depression-scales.png" alt="Depression Scale Mappings" title="Depression Scale Mappings" style="max-width:100%; height:auto;">
+<img decoding="async" src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/implementation-guides/MII-PRO-v2026-DE/Images/Mapping-depression-scales.png?raw=true" alt="Depression Scale Mappings" title="Depression Scale Mappings" style="max-width:100%; height:auto;">
 
 **Abbildung 1:** *Translations of PROMIS T-Scores to other scales - Comprehensive mapping table für Depression Domain*
 
