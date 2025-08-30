@@ -9,13 +9,13 @@ Domänen-basiertes Scoring ermöglicht die Vergleichbarkeit verschiedener PRO-In
 
 ### Struktur dieses Abschnitts
 
-**[Domänen](Domaenen.page.md)**  
+**{{pagelink:Gesundheitsdomaenen}}**  
 Definition und Beschreibung der Gesundheitsdomänen nach PROMIS-Framework. Umfasst die 8 PROMIS-29 Core Domains plus Cognitive Function sowie spezielle Domänen für Onkologie (EORTC QLQ-C30).
 
-**[Domain-basiertes Scoring](Domain-basiertes-Scoring.page.md)**  
+**{{pagelink:Domain-basiertes-Scoring}}**  
 Methodische Grundlagen der Domänen-basierten Score-Berechnung. Behandelt Item Response Theory, Cross-Walking Verfahren und die praktische Implementierung über ObservationDefinitions.
 
-**[Cross-Instrument Mappings](Cross-Instrument-Mappings.page.md)**  
+**{{pagelink:Cross-Instrument Mappings}}**  
 Konkrete Mapping-Tabellen und Konversionsalgorithmen zwischen verschiedenen Instrumenten. Schwerpunkt auf der Depression-Domäne mit validierten Mappings zwischen 9 Instrumenten.
 
 ### Implementierungsstatus

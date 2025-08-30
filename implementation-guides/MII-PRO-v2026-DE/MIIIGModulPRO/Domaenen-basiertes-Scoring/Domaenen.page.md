@@ -1,5 +1,5 @@
 ---
-topic: Gesundheitsdomänen
+topic: Gesundheitsdomaenen
 ---
 ## {{page-title}}
 
