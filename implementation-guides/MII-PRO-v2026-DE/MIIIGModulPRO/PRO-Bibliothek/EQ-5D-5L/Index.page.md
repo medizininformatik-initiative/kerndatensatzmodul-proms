@@ -80,17 +80,31 @@ Implementierer sollten auch die erwartete Evolution des Instruments und den Aust
 
 ### Beispiel-Ressourcen
 
-#### EQ-5D-5L QuestionnaireResponse (Answer-Coding Variante)
+#### EQ-5D-5L Displayable Questionnaire
 
 <tabs>
   <tab title="Tree">
-    {{tree:mii-exa-pro-eq5d5l-coded-response}}
+    {{tree:mii-qst-pro-euroqol-eq5d5l-displayable}}
   </tab>
   <tab title="JSON">
-    {{json:mii-exa-pro-eq5d5l-coded-response}}
+    {{json:mii-qst-pro-euroqol-eq5d5l-displayable}}
   </tab>
   <tab title="XML">
-    {{xml:mii-exa-pro-eq5d5l-coded-response}}
+    {{xml:mii-qst-pro-euroqol-eq5d5l-displayable}}
+  </tab>
+</tabs>
+
+#### EQ-5D-5L Collectable Questionnaire
+
+<tabs>
+  <tab title="Tree">
+    {{tree:mii-qst-pro-euroqol-eq5d5l-collectable}}
+  </tab>
+  <tab title="JSON">
+    {{json:mii-qst-pro-euroqol-eq5d5l-collectable}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-euroqol-eq5d5l-collectable}}
   </tab>
 </tabs>
 

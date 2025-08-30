@@ -157,7 +157,7 @@ Der EORTC QLQ-C30 ist primär für den Einsatz in onkologischen Settings relevan
 ### Referenzen
 
 - [EORTC QLQ-C30 Official](https://qol.eortc.org/questionnaire/eortc-qlq-c30/)
-- [Scoring Manual](https://www.eortc.org/app/uploads/sites/2/2018/08/Scoring_of_the_QLQ-C30_and_QLQ-BR23.pdf)
+- [Scoring Manual](https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf)
 - SNOMED: 273446001
 
 ---
