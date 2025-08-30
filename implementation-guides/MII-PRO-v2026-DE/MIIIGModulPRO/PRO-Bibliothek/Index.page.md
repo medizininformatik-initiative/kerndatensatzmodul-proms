@@ -111,9 +111,9 @@ Die implementierten Fragebögen können in verschiedenen Szenarien eingesetzt we
 ### Weiterführende Informationen
 
 Detaillierte Informationen zu einzelnen Fragebögen finden Sie in den jeweiligen Unterseiten:
-- [PHQ-9 Implementierung](PHQ-9/Index.page.md)
-- [EQ-5D-5L Varianten](EQ-5D-5L/Index.page.md)
-- [BDI-II Scoring](BDI-II/Index.page.md)
-- [PROMIS Familie](PROMIS/Index.page.md)
-- [EORTC QLQ-C30](EORTC-QLQ-C30/Index.page.md)
-- [Minimal Reference Questionnaires](Minimal-Reference-Questionnaires/Index.page.md)
+- {{pagelink:PHQ-9}}
+- {{pagelink:EQ-5D-5L}}
+- {{pagelink:BDI-II}}
+- {{pagelink:PROMIS}}
+- {{pagelink:EORTC-QLQ-C30}}
+- {{pagelink:Minimal-Reference-Questionnaires}}
