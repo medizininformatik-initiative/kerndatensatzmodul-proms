@@ -144,7 +144,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 
 ## Visuelle Übersicht
 
-<img decoding="async" src="../../Images/MII-PRO-Terminologie-Vergleichsmatrix.png" alt="Terminologie-Strategien Vergleichsmatrix" title="Terminologie-Strategien Vergleichsmatrix" style="max-width:100%; height:auto;">
+<img decoding="async" src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/implementation-guides/MII-PRO-v2026-DE/Images/MII-PRO-Terminologie-Vergleichsmatrix.png?raw=true" alt="Terminologie-Strategien Vergleichsmatrix" title="Terminologie-Strategien Vergleichsmatrix" style="max-width:100%; height:auto;">
 
 ## Implementierungsbeispiele
 

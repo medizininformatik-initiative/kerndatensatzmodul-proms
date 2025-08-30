@@ -115,54 +115,7 @@ Das abstrakte Score Instance Profil definiert die Struktur für konkrete Score-O
 
 Die abstrakten Profile bilden die Basis einer klaren Vererbungshierarchie:
 
-<plantuml> 
-@startuml
-!theme plain
-skinparam backgroundColor white
-
-abstract class "MII_PR_PRO_Questionnaire" <<abstract>> {
-  {abstract} + url: canonical
-  {abstract} + status: code
-  {abstract} + capabilities: Extension
-}
-
-abstract class "MII_PR_PRO_QuestionnaireResponse" <<abstract>> {
-  {abstract} + questionnaire: Reference
-  {abstract} + status: code
-  {abstract} + authored: dateTime
-}
-
-abstract class "MII_PR_PRO_Score_Blueprint" <<abstract>> {
-  {abstract} + code: CodeableConcept
-  {abstract} + quantitativeDetails: Component
-}
-
-abstract class "MII_PR_PRO_Score_Instance" <<abstract>> {
-  {abstract} + code: CodeableConcept
-  {abstract} + value: Quantity
-  {abstract} + derivedFrom: Reference
-}
-
-class "PHQ9_Questionnaire" {
-  + specific items
-  + LOINC codes
-}
-
-class "EQ5D5L_Questionnaire" {
-  + specific items
-  + MII codes
-}
-
-class "PHQ9_Score" {
-  + code = LOINC#44261-6
-  + range = 0-27
-}
-
-MII_PR_PRO_Questionnaire <|-- PHQ9_Questionnaire
-MII_PR_PRO_Questionnaire <|-- EQ5D5L_Questionnaire
-MII_PR_PRO_Score_Instance <|-- PHQ9_Score
-@enduml
-</plantuml>
+<img decoding="async" src="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/implementation-guides/MII-PRO-v2026-DE/Images/Abstract_Profiles.png?raw=true" alt="Abstrakte Profile Vererbungshierarchie" title="Abstrakte Profile Vererbungshierarchie" style="max-width:100%; height:auto;">
 
 ### Implementierungsregeln
 
