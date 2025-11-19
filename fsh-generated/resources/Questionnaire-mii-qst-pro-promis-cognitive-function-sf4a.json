@@ -96,24 +96,26 @@
           "answerOption": [
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Nie"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Never"
+                "display": "Never",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -124,24 +126,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Selten (einmal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10066-1",
                 "system": "http://loinc.org",
-                "display": "Rarely (Once)"
+                "display": "Rarely (Once)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -152,24 +156,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Manchmal (zwei- oder dreimal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10082-8",
                 "system": "http://loinc.org",
-                "display": "Sometimes (Two or three times)"
+                "display": "Sometimes (Two or three times)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -180,24 +186,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Oft (ungefähr einmal täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10044-8",
                 "system": "http://loinc.org",
-                "display": "Often (About once a day)"
+                "display": "Often (About once a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -208,24 +216,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Sehr oft (mehrmals täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10045-5",
                 "system": "http://loinc.org",
-                "display": "Very often (Several times a day)"
+                "display": "Very often (Several times a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -266,24 +276,26 @@
           "answerOption": [
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Nie"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Never"
+                "display": "Never",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -294,24 +306,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Selten (einmal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10066-1",
                 "system": "http://loinc.org",
-                "display": "Rarely (Once)"
+                "display": "Rarely (Once)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -322,24 +336,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Manchmal (zwei- oder dreimal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10082-8",
                 "system": "http://loinc.org",
-                "display": "Sometimes (Two or three times)"
+                "display": "Sometimes (Two or three times)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -350,24 +366,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Oft (ungefähr einmal täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10044-8",
                 "system": "http://loinc.org",
-                "display": "Often (About once a day)"
+                "display": "Often (About once a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -378,24 +396,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Sehr oft (mehrmals täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10045-5",
                 "system": "http://loinc.org",
-                "display": "Very often (Several times a day)"
+                "display": "Very often (Several times a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -436,24 +456,26 @@
           "answerOption": [
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Nie"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Never"
+                "display": "Never",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -464,24 +486,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Selten (einmal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10066-1",
                 "system": "http://loinc.org",
-                "display": "Rarely (Once)"
+                "display": "Rarely (Once)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -492,24 +516,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Manchmal (zwei- oder dreimal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10082-8",
                 "system": "http://loinc.org",
-                "display": "Sometimes (Two or three times)"
+                "display": "Sometimes (Two or three times)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -520,24 +546,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Oft (ungefähr einmal täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10044-8",
                 "system": "http://loinc.org",
-                "display": "Often (About once a day)"
+                "display": "Often (About once a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -548,24 +576,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Sehr oft (mehrmals täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10045-5",
                 "system": "http://loinc.org",
-                "display": "Very often (Several times a day)"
+                "display": "Very often (Several times a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -606,24 +636,26 @@
           "answerOption": [
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Nie"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Never"
+                "display": "Never",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -634,24 +666,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Selten (einmal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10066-1",
                 "system": "http://loinc.org",
-                "display": "Rarely (Once)"
+                "display": "Rarely (Once)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -662,24 +696,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Manchmal (zwei- oder dreimal)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10082-8",
                 "system": "http://loinc.org",
-                "display": "Sometimes (Two or three times)"
+                "display": "Sometimes (Two or three times)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -690,24 +726,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Oft (ungefähr einmal täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10044-8",
                 "system": "http://loinc.org",
-                "display": "Often (About once a day)"
+                "display": "Often (About once a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {
@@ -718,24 +756,26 @@
             },
             {
               "valueCoding": {
-                "extension": [
-                  {
-                    "extension": [
-                      {
-                        "url": "lang",
-                        "valueCode": "de"
-                      },
-                      {
-                        "url": "content",
-                        "valueString": "Sehr oft (mehrmals täglich)"
-                      }
-                    ],
-                    "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                  }
-                ],
                 "code": "LA10045-5",
                 "system": "http://loinc.org",
-                "display": "Very often (Several times a day)"
+                "display": "Very often (Several times a day)",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               },
               "extension": [
                 {

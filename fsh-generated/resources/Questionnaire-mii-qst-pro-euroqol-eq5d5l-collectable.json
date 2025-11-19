@@ -51,127 +51,139 @@
       "answerOption": [
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have no problems in walking about"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe keine Probleme herumzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have no problems in walking about"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "1"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have slight problems in walking about"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe leichte Probleme herumzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have slight problems in walking about"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "2"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have moderate problems in walking about"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe mäßige Probleme herumzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have moderate problems in walking about"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "3"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have severe problems in walking about"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe große Probleme herumzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have severe problems in walking about"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "4"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am unable to walk about"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin nicht in der Lage herumzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am unable to walk about"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "5"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Fehlender Wert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Missing value"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "9"
           },
           "extension": [
@@ -210,127 +222,139 @@
       "answerOption": [
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have no problems washing or dressing myself"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have no problems washing or dressing myself"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "1"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have slight problems washing or dressing myself"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have slight problems washing or dressing myself"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "2"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have moderate problems washing or dressing myself"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have moderate problems washing or dressing myself"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "3"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have severe problems washing or dressing myself"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have severe problems washing or dressing myself"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "4"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am unable to wash or dress myself"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am unable to wash or dress myself"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "5"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Fehlender Wert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Missing value"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "9"
           },
           "extension": [
@@ -369,127 +393,139 @@
       "answerOption": [
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have no problems doing my usual activities"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have no problems doing my usual activities"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "1"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have slight problems doing my usual activities"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have slight problems doing my usual activities"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "2"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have moderate problems doing my usual activities"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have moderate problems doing my usual activities"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "3"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have severe problems doing my usual activities"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have severe problems doing my usual activities"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "4"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am unable to do my usual activities"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am unable to do my usual activities"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "5"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Fehlender Wert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Missing value"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "9"
           },
           "extension": [
@@ -528,127 +564,139 @@
       "answerOption": [
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have no pain or discomfort"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe keine Schmerzen oder Beschwerden",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have no pain or discomfort"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "1"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have slight pain or discomfort"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe leichte Schmerzen oder Beschwerden",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have slight pain or discomfort"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "2"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have moderate pain or discomfort"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe mäßige Schmerzen oder Beschwerden",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have moderate pain or discomfort"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "3"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have severe pain or discomfort"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe starke Schmerzen oder Beschwerden",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have severe pain or discomfort"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "4"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I have extreme pain or discomfort"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich habe extreme Schmerzen oder Beschwerden",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I have extreme pain or discomfort"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "5"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Fehlender Wert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Missing value"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "9"
           },
           "extension": [
@@ -687,127 +735,139 @@
       "answerOption": [
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am not anxious or depressed"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin nicht ängstlich oder deprimiert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am not anxious or depressed"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "1"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am slightly anxious or depressed"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin ein wenig ängstlich oder deprimiert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am slightly anxious or depressed"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "2"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am moderately anxious or depressed"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin mäßig ängstlich oder deprimiert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am moderately anxious or depressed"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "3"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am severely anxious or depressed"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin sehr ängstlich oder deprimiert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am severely anxious or depressed"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "4"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "I am extremely anxious or depressed"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Ich bin extrem ängstlich oder deprimiert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "I am extremely anxious or depressed"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "5"
           }
         },
         {
           "valueCoding": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "en"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Missing value"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ],
             "display": "Fehlender Wert",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Missing value"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            },
             "code": "9"
           },
           "initialSelected": true
