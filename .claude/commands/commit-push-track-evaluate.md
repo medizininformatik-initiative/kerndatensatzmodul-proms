@@ -16,12 +16,29 @@ Perform the complete workflow of committing, pushing, waiting for CI validation,
 3. **Monitor CI validation**:
    - Wait for the GitHub Actions workflow "CI (FHIR Validation)" to complete
    - Poll every 30 seconds for up to 10 minutes
-   - Use `gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs` to check status
+   - Use this polling pattern (avoids zsh loop syntax issues):
+   ```bash
+   # Get workflow run ID for the commit
+   RUN_ID=$(gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs \
+     --jq ".workflow_runs | map(select(.head_sha == \"$COMMIT_SHA\")) | .[0].id")
+
+   # Poll until complete (run multiple times with sleep between)
+   sleep 30 && gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs/$RUN_ID \
+     --jq '.status + " " + (.conclusion // "null")'
+   ```
 
 4. **Download validation artifacts**:
    - Once complete, download the `validation-output` artifact
-   - Extract validation.json and validation.html
-   - Save to `.validation-history/{timestamp}_{commit}/`
+   - Create output directory with proper variable handling:
+   ```bash
+   # Create timestamp and directory in one command
+   SHORT_SHA=$(git rev-parse --short HEAD)
+   TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+   OUTDIR=".validation-history/${TIMESTAMP}_${SHORT_SHA}"
+   mkdir -p "$OUTDIR"
+   gh run download $RUN_ID -n validation-output -D "$OUTDIR"
+   ```
+   - Save validation.json, validation.html, and txlog.html to the directory
 
 5. **Generate comprehensive error report** with:
    - **Total error count** (current vs previous)
@@ -71,67 +88,93 @@ Perform the complete workflow of committing, pushing, waiting for CI validation,
 
 ## Python Script for Error Analysis
 
-Use this Python script to parse validation.json and generate the report:
+**IMPORTANT**: Always run this script to get accurate error counts. Do NOT estimate or hallucinate numbers.
+
+Save this as `analyze_validation.py` and run it:
 
 ```python
+#!/usr/bin/env python3
+"""
+Analyze FHIR validation results from validation.json
+Usage: python3 analyze_validation.py <validation.json> [previous_validation.json]
+"""
 import json
+import sys
 import os
 from collections import defaultdict
 
+def extract_errors(filepath):
+    """Extract all errors from validation.json Bundle."""
+    with open(filepath) as f:
+        data = json.load(f)
+
+    errors = []
+
+    # Track which file each OperationOutcome relates to
+    # The Bundle alternates: resource file entry, then its OperationOutcome
+    current_filename = 'unknown'
+
+    for i, entry in enumerate(data.get('entry', [])):
+        resource = entry.get('resource', {})
+        full_url = entry.get('fullUrl', '')
+
+        # If this is a regular resource, capture its filename for the next OperationOutcome
+        if resource.get('resourceType') != 'OperationOutcome':
+            if full_url:
+                current_filename = full_url.split('/')[-1]
+            continue
+
+        # Process OperationOutcome
+        for issue in resource.get('issue', []):
+            if issue.get('severity') != 'error':
+                continue
+
+            location = issue.get('location', [''])[0] if issue.get('location') else ''
+            message = issue.get('diagnostics', issue.get('details', {}).get('text', ''))
+            code = issue.get('code', 'unknown')
+
+            # Categorize by message content
+            category = 'Other'
+            if 'Wrong Display Name' in message:
+                category = 'Wrong_Display_Name'
+            elif 'Unknown code' in message or 'not found in the code system' in message:
+                category = 'Unknown_Code'
+            elif 'UNABLE_TO_INFER_CODESYSTEM' in message:
+                category = 'UNABLE_TO_INFER_CODESYSTEM'
+            elif 'TX_NoValid' in message or 'not in the value set' in message:
+                category = 'Terminology_TX_NoValid'
+            elif 'not found' in message.lower() or 'cannot find' in message.lower():
+                category = 'Reference_Not_Found'
+            elif 'invalid' in message.lower():
+                category = 'Invalid_Value'
+
+            errors.append({
+                'filename': current_filename,
+                'location': location,
+                'message': message,
+                'code': code,
+                'category': category,
+                'signature': f'{current_filename}|{location}|{message}'
+            })
+
+    return errors
+
 def analyze_validation(current_path, previous_path=None):
-    def extract_errors(filepath):
-        with open(filepath) as f:
-            data = json.load(f)
-
-        errors = []
-        for entry in data.get('entry', []):
-            resource = entry.get('resource', {})
-            if resource.get('resourceType') == 'OperationOutcome':
-                for issue in resource.get('issue', []):
-                    if issue.get('severity') == 'error':
-                        location = issue.get('location', [''])[0] if issue.get('location') else ''
-                        message = issue.get('diagnostics', '')
-                        code = issue.get('code', 'unknown')
-
-                        # Extract resource type from location
-                        resource_type = location.split('.')[0] if location else 'unknown'
-                        if '/*' in location:
-                            resource_type = location.split('.')[0].split('/')[0]
-
-                        # Extract error category from message
-                        category = 'Other'
-                        if 'UNABLE_TO_INFER_CODESYSTEM' in message:
-                            category = 'UNABLE_TO_INFER_CODESYSTEM'
-                        elif 'Terminology_TX_NoValid_16' in message or 'TX_NoValid' in message:
-                            category = 'Terminology_TX_NoValid'
-                        elif 'not found' in message.lower():
-                            category = 'Reference_Not_Found'
-                        elif 'invalid' in message.lower():
-                            category = 'Invalid_Value'
-
-                        errors.append({
-                            'location': location,
-                            'message': message,
-                            'code': code,
-                            'resource_type': resource_type,
-                            'category': category,
-                            'signature': f'{location}||{message}'
-                        })
-        return errors
-
+    """Analyze validation results and optionally compare with previous run."""
     current_errors = extract_errors(current_path)
 
-    # Categorize
+    # Group by category and filename
     by_category = defaultdict(list)
-    by_resource = defaultdict(list)
+    by_file = defaultdict(list)
     for err in current_errors:
         by_category[err['category']].append(err)
-        by_resource[err['resource_type']].append(err)
+        by_file[err['filename']].append(err)
 
     # Compare with previous if available
     fixed = []
     new = []
     prev_count = 0
+
     if previous_path and os.path.exists(previous_path):
         prev_errors = extract_errors(previous_path)
         prev_count = len(prev_errors)
@@ -146,10 +189,86 @@ def analyze_validation(current_path, previous_path=None):
         'total': len(current_errors),
         'previous': prev_count,
         'by_category': dict(by_category),
-        'by_resource': dict(by_resource),
+        'by_file': dict(by_file),
         'fixed': fixed,
-        'new': new
+        'new': new,
+        'all_errors': current_errors
     }
+
+def print_report(results, short_sha, outdir):
+    """Print formatted validation report."""
+    print("━" * 60)
+    print(f"FHIR Validation Report for commit {short_sha}")
+    print("━" * 60)
+    print()
+    print("SUMMARY")
+    print("-" * 40)
+    print(f"Total errors: {results['total']}")
+    if results['previous'] > 0:
+        change = results['total'] - results['previous']
+        sign = '+' if change > 0 else ''
+        print(f"Previous errors: {results['previous']}")
+        print(f"Change: {sign}{change}")
+    print()
+
+    print("ERROR CATEGORIES")
+    print("-" * 40)
+    for cat, errs in sorted(results['by_category'].items(), key=lambda x: -len(x[1])):
+        print(f"- {cat}: {len(errs)} errors")
+    print()
+
+    print("AFFECTED FILES (top 15)")
+    print("-" * 40)
+    for fname, errs in sorted(results['by_file'].items(), key=lambda x: -len(x[1]))[:15]:
+        print(f"- {fname}: {len(errs)} errors")
+    print()
+
+    if results['fixed']:
+        print(f"FIXED ERRORS ({len(results['fixed'])} total, showing up to 10)")
+        print("-" * 40)
+        for err in results['fixed'][:10]:
+            print(f"  [{err['category']}] {err['filename']}")
+            print(f"    {err['message'][:100]}")
+        print()
+
+    if results['new']:
+        print(f"NEW ERRORS ({len(results['new'])} total, showing up to 10)")
+        print("-" * 40)
+        for err in results['new'][:10]:
+            print(f"  [{err['category']}] {err['filename']}")
+            print(f"    {err['message'][:100]}")
+        print()
+
+    print("━" * 60)
+    print(f"Results saved to: {outdir}")
+    print(f"View HTML report: {outdir}/validation.html")
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print("Usage: python3 analyze_validation.py <validation.json> [previous.json]")
+        sys.exit(1)
+
+    current = sys.argv[1]
+    previous = sys.argv[2] if len(sys.argv) > 2 else None
+
+    results = analyze_validation(current, previous)
+
+    # Extract info from path
+    outdir = os.path.dirname(current)
+    short_sha = outdir.split('_')[-1] if '_' in outdir else 'unknown'
+
+    print_report(results, short_sha, outdir)
+```
+
+### Running the Analysis
+
+```bash
+# Basic usage
+python3 analyze_validation.py "$OUTDIR/validation.json"
+
+# Compare with previous validation
+PREV=$(ls -td .validation-history/*/ | sed -n '2p')
+python3 analyze_validation.py "$OUTDIR/validation.json" "$PREV/validation.json"
 ```
 
 ## Notes
@@ -158,3 +277,17 @@ def analyze_validation(current_path, previous_path=None):
 - This command provides a more detailed analysis with categorization
 - Results are saved to `.validation-history/` for historical tracking
 - Use `gh auth status` to ensure GitHub CLI is authenticated
+
+## Expected Errors (Not Actionable)
+
+Many validation errors are **expected** due to terminology server limitations for German translations:
+
+### Wrong_Display_Name Errors
+These occur because LOINC terminology servers don't have German translations:
+- `Wrong Display Name 'Überhaupt nicht' for http://loinc.org#LA6568-5` (expects English 'Not at all')
+- `Wrong Display Name 'An einzelnen Tagen' for http://loinc.org#LA6569-3` (expects English 'Several days')
+
+**These are NOT bugs** - they're expected behavior per the MII-controlled terminology strategy documented in CLAUDE.md.
+
+### Suppressions
+Some validation warnings are suppressed via `advisor.json`. Check this file if you need to add new suppressions for known issues.
