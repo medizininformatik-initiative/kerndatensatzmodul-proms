@@ -76,7 +76,4 @@ Usage: #definition
 
 // Total Score Item (calculated - should be 19)
 * item[+].linkId = "bdi-bdi2-score-total"
-* item[=].answer.valueQuantity.value = 19
-* item[=].answer.valueQuantity.unit = "{score}"
-* item[=].answer.valueQuantity.system = $UCUM
-* item[=].answer.valueQuantity.code = #1
+* item[=].answer.valueDecimal = 19
