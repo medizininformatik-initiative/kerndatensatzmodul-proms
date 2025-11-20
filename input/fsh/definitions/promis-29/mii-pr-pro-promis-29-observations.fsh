@@ -11,7 +11,7 @@ Description: "Profile for PROMIS-29 Physical Function T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
+* code = $LNC#91721-1 "PROMIS physical function - version 2.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -40,7 +40,7 @@ Description: "Profile for PROMIS-29 Anxiety T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77867-9 "PROMIS anxiety - version 1.0 T-score"
+* code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
 * code MS
 
 * value[x] only Quantity
@@ -98,7 +98,7 @@ Description: "Profile for PROMIS-29 Fatigue T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 T-score"
+* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -127,7 +127,7 @@ Description: "Profile for PROMIS-29 Sleep Disturbance T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 T-score"
+* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -156,7 +156,7 @@ Description: "Profile for PROMIS-29 Ability to Participate in Social Roles and A
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 T-score"
+* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -185,7 +185,7 @@ Description: "Profile for PROMIS-29 Pain Interference T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 T-score"
+* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -214,7 +214,7 @@ Description: "Profile for PROMIS-29 Pain Intensity single item Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#75261-3 "How would you rate your pain on average"
+* code = $LNC#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
 * code MS
 
 * value[x] only Quantity

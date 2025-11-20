@@ -109,7 +109,7 @@ Usage: #definition
 * item[+].linkId = "bdi-bdi2-score-total"
 * item[=].text = "BDI-II Gesamtscore (0-63)"
 * item[=].type = #decimal
-* item[=].code = $LNC#89209-1 "Beck Depression Inventory II total score"
+* item[=].code = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
 * item[=].extension[=].valueExpression.expression = "%bdiScore"
@@ -123,7 +123,7 @@ Usage: #definition
 * item[+].linkId = "bdi-bdi2-promis-tscore"
 * item[=].text = "PROMIS Depression T-Score (abgeleitet von BDI-II)"
 * item[=].type = #decimal
-* item[=].code = $LNC#77861-3 "PROMIS depression T-score"
+* item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath

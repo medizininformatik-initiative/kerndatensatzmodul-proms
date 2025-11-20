@@ -8,7 +8,7 @@ Description: "Profile for Beck Depression Inventory II (BDI-II) Total Score Obse
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#89209-1 "Beck Depression Inventory II total score"
+* code = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
 * code MS
 
 * value[x] only Quantity
@@ -18,7 +18,7 @@ Description: "Profile for Beck Depression Inventory II (BDI-II) Total Score Obse
 * valueQuantity.system = $UCUM (exactly)
 * valueQuantity.code = #{score} (exactly)
 
-* method.coding = $LNC#89209-1 "Beck Depression Inventory II total score"
+* method.coding = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
 * method.text = "Beck Depression Inventory II (BDI-II)"
 * method MS
 

@@ -611,7 +611,7 @@ Usage: #definition
 * item[12].linkId = "phq-phq9-promis-tscore"
 * item[12].type = #decimal
 * item[12].prefix = "T-Score"
-* item[12].code = $LNC#77861-3 "PROMIS depression T-score"
+* item[12].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * item[12].readOnly = true
 * item[12].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[12].extension[0].valueExpression.name = "promis-tscore-mapping"

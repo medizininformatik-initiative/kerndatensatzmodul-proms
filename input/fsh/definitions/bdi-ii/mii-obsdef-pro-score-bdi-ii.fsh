@@ -5,10 +5,10 @@ Description: "Beck Depression Inventory II (BDI-II) Total Score"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#89209-1 "Beck Depression Inventory II total score"
+* code = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
-* method.coding = $LNC#89209-1 "Beck Depression Inventory II total score"
+* method.coding = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
 * method.text = "Beck Depression Inventory II (BDI-II)"
 * quantitativeDetails.unit = $UCUM#{score} "score"
 * quantitativeDetails.decimalPrecision = 0
