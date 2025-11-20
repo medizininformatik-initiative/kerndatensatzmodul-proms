@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(sushi:*)"
+      "Bash(cat:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

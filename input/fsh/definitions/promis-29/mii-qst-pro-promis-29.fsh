@@ -75,11 +75,11 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61597-1 "Are you able to do chores such as vacuuming or yard work?"
 * item[=].item[=].text = "Are you able to do chores such as vacuuming or yard work?"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -126,11 +126,11 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61607-8 "Are you able to go up and down stairs at a normal pace?"
 * item[=].item[=].text = "Are you able to go up and down stairs at a normal pace?"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -177,11 +177,11 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61609-4 "Are you able to go for a walk of at least 15 minutes?"
 * item[=].item[=].text = "Are you able to go for a walk of at least 15 minutes?"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Können Sie mindestens 15 Minuten lang spazieren gehen?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie mindestens 15 Minuten lang spazieren gehen?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -228,11 +228,11 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61635-9 "Are you able to run errands and shop?"
 * item[=].item[=].text = "Are you able to run errands and shop?"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Können Sie Besorgungen machen und einkaufen gehen?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie Besorgungen machen und einkaufen gehen?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"

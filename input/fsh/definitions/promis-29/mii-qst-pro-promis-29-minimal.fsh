@@ -35,32 +35,32 @@ Usage: #definition
 * item[=].item[+].linkId = "PROMIS-29.Instructions"
 * item[=].item[=].type = #display
 * item[=].item[=].text = "Please respond to each question or statement by marking one box per row. In the past 7 days..."
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Bitte beantworten Sie jede Frage oder Aussage, indem Sie ein Kästchen pro Zeile markieren. In den letzten 7 Tagen..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Bitte beantworten Sie jede Frage oder Aussage, indem Sie ein Kästchen pro Zeile markieren. In den letzten 7 Tagen..."
 
 // ===== Physical Function Domain (4 items) =====
 * item[=].item[+].linkId = "PROMIS-29.PhysicalFunction"
 * item[=].item[=].type = #group
 * item[=].item[=].text = "Physical Function"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Körperliche Funktion"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Körperliche Funktion"
 
 // PFA11 - Chores like vacuuming
 * item[=].item[=].item[+].linkId = "promis-pfa11"
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#61597-1
 * item[=].item[=].item[=].text = "Are you able to do chores such as vacuuming or yard work?"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Sind Sie in der Lage, Hausarbeiten wie Staubsaugen oder Gartenarbeit zu erledigen?"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, Hausarbeiten wie Staubsaugen oder Gartenarbeit zu erledigen?"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
@@ -69,11 +69,11 @@ Usage: #definition
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#61598-9
 * item[=].item[=].item[=].text = "Are you able to go up and down stairs at a normal pace?"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Sind Sie in der Lage, in normalem Tempo Treppen hinauf- und hinunterzugehen?"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, in normalem Tempo Treppen hinauf- und hinunterzugehen?"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
@@ -82,11 +82,11 @@ Usage: #definition
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#61593-0
 * item[=].item[=].item[=].text = "Are you able to go for a walk of at least 15 minutes?"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Sind Sie in der Lage, mindestens 15 Minuten spazieren zu gehen?"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, mindestens 15 Minuten spazieren zu gehen?"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
@@ -95,11 +95,11 @@ Usage: #definition
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#61596-3
 * item[=].item[=].item[=].text = "Are you able to run errands and shop?"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Sind Sie in der Lage, Besorgungen zu machen und einzukaufen?"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, Besorgungen zu machen und einzukaufen?"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
@@ -107,22 +107,22 @@ Usage: #definition
 * item[=].item[+].linkId = "PROMIS-29.Anxiety"
 * item[=].item[=].type = #group
 * item[=].item[=].text = "Anxiety"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Angst"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Angst"
 
 // EDANX01 - Feel fearful
 * item[=].item[=].item[+].linkId = "promis-edanx01"
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#71951-1
 * item[=].item[=].item[=].text = "I felt fearful"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Ich fühlte mich ängstlich"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich ängstlich"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
@@ -131,11 +131,11 @@ Usage: #definition
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#71949-5
 * item[=].item[=].item[=].text = "I found it hard to focus on anything other than my anxiety"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Ich fand es schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Ich fand es schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
@@ -144,11 +144,11 @@ Usage: #definition
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#71950-3
 * item[=].item[=].item[=].text = "My worries overwhelmed me"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Meine Sorgen überwältigten mich"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Meine Sorgen überwältigten mich"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
@@ -157,11 +157,11 @@ Usage: #definition
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].code = $LNC#71948-7
 * item[=].item[=].item[=].text = "I felt uneasy"
-* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].item[=].extension[=].extension[=].valueString = "Ich fühlte mich unruhig"
+* item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich unruhig"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
