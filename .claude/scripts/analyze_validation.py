@@ -1,113 +1,3 @@
-# Commit, Push, Track CI Validation, and Evaluate Results
-
-Perform the complete workflow of committing, pushing, waiting for CI validation, and analyzing results.
-
-## Instructions
-
-1. **Commit current changes**:
-   - Run `git status` and `git diff` to see what will be committed
-   - Create a commit with an appropriate message following the repository conventions
-   - Include the standard footer with Claude attribution
-
-2. **Push to remote**:
-   - Push the commit to the remote repository
-   - Note the commit SHA for tracking
-
-3. **Monitor CI validation**:
-   - Wait for the GitHub Actions workflow "CI (FHIR Validation)" to complete
-   - Poll every 30 seconds for up to 10 minutes
-   - **Use `run_in_background: true`** for the polling command to avoid user prompts
-   - Use this polling pattern:
-   ```bash
-   # Get workflow run ID for the commit
-   COMMIT_SHA=$(git rev-parse HEAD)
-   RUN_ID=$(gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs \
-     --jq ".workflow_runs | map(select(.head_sha == \"$COMMIT_SHA\")) | .[0].id")
-
-   # Poll until complete (use run_in_background for this)
-   sleep 30 && gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs/$RUN_ID \
-     --jq '.status + " " + (.conclusion // "null")'
-   ```
-
-4. **Download validation artifacts**:
-   - Once complete, download the `validation-output` artifact
-   - Create output directory with proper variable handling:
-   ```bash
-   # Create timestamp and directory in one command
-   SHORT_SHA=$(git rev-parse --short HEAD)
-   TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-   OUTDIR=".validation-history/${TIMESTAMP}_${SHORT_SHA}"
-   mkdir -p "$OUTDIR"
-   gh run download $RUN_ID -n validation-output -D "$OUTDIR"
-   ```
-   - Save validation.json, validation.html, and txlog.html to the directory
-
-5. **Generate comprehensive error report** with:
-   - **Total error count** (current vs previous)
-   - **Error categories** grouped by:
-     - Error code/type (e.g., UNABLE_TO_INFER_CODESYSTEM, Terminology_TX_NoValid_16)
-     - Resource type (Questionnaire, Bundle, StructureDefinition)
-   - **Affected files** list
-   - **Fixed errors** (errors present in previous run but not in current)
-   - **New errors** (errors present in current run but not in previous)
-
-6. **Output format**:
-   ```
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   FHIR Validation Report for commit {short_sha}
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-   SUMMARY
-   -------
-   Current errors: X
-   Previous errors: Y
-   Change: +/-Z
-
-   ERROR CATEGORIES
-   ----------------
-   - UNABLE_TO_INFER_CODESYSTEM: N errors
-   - Terminology_TX_NoValid_16: N errors
-   - [other categories]: N errors
-
-   AFFECTED RESOURCES
-   ------------------
-   - Questionnaire: N errors
-   - Bundle: N errors
-   - StructureDefinition: N errors
-
-   FIXED ERRORS (showing up to 20)
-   -------------------------------
-   [list of fixed error locations and messages]
-
-   NEW ERRORS (showing up to 20)
-   -----------------------------
-   [list of new error locations and messages]
-
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Results saved to: .validation-history/{path}
-   View HTML report: .validation-history/{path}/validation.html
-   ```
-
-## Python Script for Error Analysis
-
-**IMPORTANT**: Always run this script to get accurate error counts. Do NOT estimate or hallucinate numbers.
-
-The analysis script is located at `.claude/scripts/analyze_validation.py`.
-
-### Running the Analysis
-
-```bash
-# Automatically finds and compares with previous validation
-python3 .claude/scripts/analyze_validation.py "$OUTDIR/validation.json"
-```
-
-The script automatically detects the previous validation directory and compares against it.
-
-### Script Reference
-
-The script is also shown below for reference:
-
-```python
 #!/usr/bin/env python3
 """
 Analyze FHIR validation results from validation.json
@@ -258,13 +148,41 @@ def print_report(results, short_sha, outdir):
     print(f"Results saved to: {outdir}")
     print(f"View HTML report: {outdir}/validation.html")
 
+def find_previous_validation(current_path):
+    """Automatically find the previous validation.json for comparison."""
+    history_dir = os.path.dirname(os.path.dirname(current_path))
+    if not os.path.basename(history_dir) == '.validation-history':
+        return None
+
+    current_dir = os.path.basename(os.path.dirname(current_path))
+
+    # Get all validation directories sorted by name (timestamp)
+    dirs = sorted([d for d in os.listdir(history_dir)
+                   if os.path.isdir(os.path.join(history_dir, d)) and d != current_dir],
+                  reverse=True)
+
+    if not dirs:
+        return None
+
+    # Return the most recent one before current
+    prev_path = os.path.join(history_dir, dirs[0], 'validation.json')
+    return prev_path if os.path.exists(prev_path) else None
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         print("Usage: python3 analyze_validation.py <validation.json> [previous.json]")
+        print("       If previous.json is omitted, automatically finds the previous validation.")
         sys.exit(1)
 
     current = sys.argv[1]
-    previous = sys.argv[2] if len(sys.argv) > 2 else None
+
+    # Auto-find previous if not provided
+    if len(sys.argv) > 2:
+        previous = sys.argv[2]
+    else:
+        previous = find_previous_validation(current)
+        if previous:
+            print(f"Auto-detected previous: {os.path.basename(os.path.dirname(previous))}")
 
     results = analyze_validation(current, previous)
 
@@ -273,36 +191,3 @@ if __name__ == '__main__':
     short_sha = outdir.split('_')[-1] if '_' in outdir else 'unknown'
 
     print_report(results, short_sha, outdir)
-```
-
-### Running the Analysis
-
-```bash
-# Basic usage
-python3 analyze_validation.py "$OUTDIR/validation.json"
-
-# Compare with previous validation
-PREV=$(ls -td .validation-history/*/ | sed -n '2p')
-python3 analyze_validation.py "$OUTDIR/validation.json" "$PREV/validation.json"
-```
-
-## Notes
-
-- The existing post-push hook at `.git/hooks/post-push` runs automatically but only shows basic diff
-- This command provides a more detailed analysis with categorization
-- Results are saved to `.validation-history/` for historical tracking
-- Use `gh auth status` to ensure GitHub CLI is authenticated
-
-## Expected Errors (Not Actionable)
-
-Many validation errors are **expected** due to terminology server limitations for German translations:
-
-### Wrong_Display_Name Errors
-These occur because LOINC terminology servers don't have German translations:
-- `Wrong Display Name 'Überhaupt nicht' for http://loinc.org#LA6568-5` (expects English 'Not at all')
-- `Wrong Display Name 'An einzelnen Tagen' for http://loinc.org#LA6569-3` (expects English 'Several days')
-
-**These are NOT bugs** - they're expected behavior per the MII-controlled terminology strategy documented in CLAUDE.md.
-
-### Suppressions
-Some validation warnings are suppressed via `advisor.json`. Check this file if you need to add new suppressions for known issues.
