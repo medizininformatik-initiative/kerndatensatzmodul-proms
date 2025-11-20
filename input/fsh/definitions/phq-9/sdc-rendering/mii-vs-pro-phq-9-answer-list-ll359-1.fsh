@@ -6,7 +6,7 @@ Description: "Not difficult at all/Somewhat difficult/Very difficult/Extremely d
 
 * insert PR_CS_VS_Version
 * insert StructureDefinitionMetadata($mii-vs-pro-phq-9-answer-list-ll359-1, active, false, de)
-* insert ConceptIntl($LNC#LA6572-7, Überhaupt nicht erschwert, en, Not difficult at all)
-* insert ConceptIntl($LNC#LA6573-5, Etwas erschwert, en, Somewhat difficult)
-* insert ConceptIntl($LNC#LA6575-0, Relativ stark erschwert, en, Very difficult)
-* insert ConceptIntl($LNC#LA6574-3, Sehr stark erschwert, en, Extremely difficult)
+* insert ConceptIntl($LNC#LA6572-7, Not difficult at all, de, Überhaupt nicht erschwert)
+* insert ConceptIntl($LNC#LA6573-5, Somewhat difficult, de, Etwas erschwert)
+* insert ConceptIntl($LNC#LA6575-0, Very difficult, de, Relativ stark erschwert)
+* insert ConceptIntl($LNC#LA6574-3, Extremely difficult, de, Sehr stark erschwert)
