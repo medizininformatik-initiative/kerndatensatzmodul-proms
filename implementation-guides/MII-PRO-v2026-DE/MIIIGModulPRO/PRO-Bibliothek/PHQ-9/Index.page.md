@@ -40,6 +40,14 @@ Der PHQ-9 ist ein validiertes Screening-Instrument für Depression mit neun Item
   <tab title="XML">
     {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9}}
   </tab>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-phq-9&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
 </tabs>
 
 #### Score-Repräsentation
