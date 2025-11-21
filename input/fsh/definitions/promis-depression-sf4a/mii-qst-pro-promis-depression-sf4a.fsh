@@ -7,7 +7,7 @@ Usage: #definition
 * url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a"
 * status = #active
 * experimental = true
-* language = #de
+* language = #en
 * version = "2026.0.0-ballot"
 // versionAlgorithm is an R5 element - not available in R4
 // * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]"
@@ -33,47 +33,112 @@ Usage: #definition
 
 * item[+].linkId = "PROMIS-Depression.Description"
 * item[=].type = #display
-* item[=].text = "In den vergangenen 7 Tagen..."
+* item[=].text = "In the past 7 days..."
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen..."
 
 // Item 1: I felt worthless
 * item[+].linkId = "promis-eddep04"
 * item[=].type = #choice
 * item[=].code = $LNC#61953-6 "I felt worthless in past 7 days [PROMIS]"
-* item[=].text = "...fühlte ich mich wertlos"
+* item[=].text = "I felt worthless"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich wertlos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
+* item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
+* item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
 * item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
 * item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
+* item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
 * item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
+* item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
 * item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
-// Item 2: I felt helpless  
+// Item 2: I felt helpless
 * item[+].linkId = "promis-eddep06"
 * item[=].type = #choice
 * item[=].code = $LNC#61955-1 "I felt helpless in past 7 days [PROMIS]"
-* item[=].text = "...fühlte ich mich hilflos"
+* item[=].text = "I felt helpless"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich hilflos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
+* item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
+* item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
 * item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
 * item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
+* item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
 * item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
+* item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
 * item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
@@ -81,20 +146,50 @@ Usage: #definition
 * item[+].linkId = "promis-eddep29"
 * item[=].type = #choice
 * item[=].code = $LNC#61967-6 "I felt depressed in past 7 days [PROMIS]"
-* item[=].text = "...fühlte ich mich deprimiert"
+* item[=].text = "I felt depressed"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich deprimiert"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
+* item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
+* item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
 * item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
 * item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
+* item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
 * item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
+* item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
 * item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
@@ -102,20 +197,50 @@ Usage: #definition
 * item[+].linkId = "promis-eddep41"
 * item[=].type = #choice
 * item[=].code = $LNC#61973-4 "I felt hopeless in past 7 days [PROMIS]"
-* item[=].text = "...fühlte ich mich hoffnungslos"
+* item[=].text = "I felt hopeless"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich hoffnungslos"
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
+* item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
+* item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
 * item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
 * item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
+* item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
 * item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
+* item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "lang"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
+* item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
 * item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
@@ -144,10 +269,3 @@ Usage: #definition
 * item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, iif(%rawScore=6, 51.8, iif(%rawScore=7, 53.9, iif(%rawScore=8, 55.7, iif(%rawScore=9, 57.3, iif(%rawScore=10, 58.9, iif(%rawScore=11, 60.5, iif(%rawScore=12, 62.2, iif(%rawScore=13, 63.9, iif(%rawScore=14, 65.7, iif(%rawScore=15, 67.5, iif(%rawScore=16, 69.4, iif(%rawScore=17, 71.2, iif(%rawScore=18, 73.3, iif(%rawScore=19, 75.7, iif(%rawScore=20, 79.4, {})))))))))))))))))"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
-/*
-* item[=].readOnly = true
-* item[=].extension[+].url = $sdc-questionnaire-calculated-expression
-* item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|05)$')).answer.value.ordinal().sum()"
-* item[=].extension[+].url = $sdc-questionnaire-observation-extract
-* item[=].extension[=].valueBoolean = true*/

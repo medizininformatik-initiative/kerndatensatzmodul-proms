@@ -7,7 +7,7 @@ Usage: #definition
 * url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
 * status = #active
 * experimental = true
-* language = #de
+* language = #en
 * version = "2026.0.0-ballot"
 // versionAlgorithm is an R5 element - not available in R4
 // * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]"
