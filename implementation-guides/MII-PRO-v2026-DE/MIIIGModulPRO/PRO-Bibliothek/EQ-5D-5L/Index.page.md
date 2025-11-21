@@ -25,6 +25,14 @@ Die Implementierung des EQ-5D-5L folgt einem modularen Ansatz mit einer Basis-De
 Die Minimal-Variante dient als reine Strukturdefinition ohne aktive Capabilities. Sie wird primär als Referenz für Metadaten und Strukturinformationen verwendet und eignet sich für Systeme, die lediglich die Struktur des EQ-5D-5L kennen müssen, ohne ihn aktiv zu nutzen. Diese Variante enthält keine Extensions für Rendering oder Berechnungen, kann aber bereits als Mappingstruktur zu Datenharmonisierungen eingesetzt werden.
 
 <tabs>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-eq-5d-5l-minimal&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
   <tab title="Tree">
     {{tree:mii-qst-pro-eq-5d-5l-minimal}}
   </tab>
@@ -39,6 +47,26 @@ Die Minimal-Variante dient als reine Strukturdefinition ohne aktive Capabilities
 #### Displayable-Variante (Nur-Anzeige)
 
 Die Displayable-Variante ist für die reine Anzeige von bereits erfassten EQ-5D-5L Daten optimiert. Sie wird in klinischen Informationssystemen verwendet, wenn Ärzte oder Pflegepersonal die Ergebnisse eines bereits ausgefüllten Fragebogens einsehen möchten. Diese Variante enthält spezielle Rendering-Hinweise für eine optimale Darstellung, verzichtet aber auf Eingabevalidierung und Berechnungslogik, da keine Interaktion mit dem Fragebogen stattfindet.
+
+<tabs>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-euroqol-eq5d5l-displayable&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
+  <tab title="Tree">
+    {{tree:mii-qst-pro-euroqol-eq5d5l-displayable}}
+  </tab>
+  <tab title="JSON">
+    {{json:mii-qst-pro-euroqol-eq5d5l-displayable}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-euroqol-eq5d5l-displayable}}
+  </tab>
+</tabs>
 
 #### Collectable-Variante (Datenerfassung)
 
@@ -69,6 +97,14 @@ Die Collectable-Variante ist für die aktive Datenerfassung durch Patienten konz
 Die Answer-Coding-Variante verwendet das MII CodeSystem anstelle von LOINC-Codes. Diese Variante ist besonders wichtig, wenn zuverlässige ordinale Werte für automatische Score-Berechnungen benötigt werden. Die LinkIds folgen einem spezifischen Pattern (`euroqol-eq5d5l-coded-q01-MO`), das die Unterscheidung von anderen Varianten ermöglicht. Diese Variante kombiniert die Capabilities Collectable und Calculatable und ermöglicht damit sowohl die Datenerfassung als auch die automatische Berechnung von Scores.
 
 <tabs>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-euroqol-eq5d5l-answer-coding&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
   <tab title="Tree">
     {{tree:mii-qst-pro-euroqol-eq5d5l-answer-coding}}
   </tab>
@@ -97,23 +133,6 @@ Diese Architektur ermöglicht auch eine flexible Evolution des Systems. Neue Var
 Die Entscheidung zwischen einer All-in-One-Implementierung wie beim PHQ-9 und einer Varianten-Architektur wie beim EQ-5D-5L sollte auf mehreren Faktoren basieren. Für einfache Instrumente mit wenigen Use Cases ist der All-in-One-Ansatz oft ausreichend und reduziert die Komplexität. Bei komplexen Instrumenten mit vielfältigen Anwendungsszenarien bietet die Varianten-Architektur jedoch deutliche Vorteile in Bezug auf Wartbarkeit und Performance.
 
 Implementierer sollten auch die erwartete Evolution des Instruments und den Austausch zwischen verschiedneen Systemen berücksichtigen. Instrumente, die voraussichtlich stabil bleiben, können vom einfacheren All-in-One-Ansatz profitieren. Instrumente, bei denen häufige Änderungen oder Erweiterungen erwartet werden, sind mit der Varianten-Architektur besser bedient, da Änderungen isoliert in einzelnen Varianten vorgenommen werden können.
-
-### Beispiel-Ressourcen
-
-#### EQ-5D-5L Displayable Questionnaire
-
-<tabs>
-  <tab title="Tree">
-    {{tree:mii-qst-pro-euroqol-eq5d5l-displayable}}
-  </tab>
-  <tab title="JSON">
-    {{json:mii-qst-pro-euroqol-eq5d5l-displayable}}
-  </tab>
-  <tab title="XML">
-    {{xml:mii-qst-pro-euroqol-eq5d5l-displayable}}
-  </tab>
-</tabs>
-
 
 ### Geschichte
 Der EQ-5D-5L ist eine Weiterentwicklung des EQ-5D-3L aus dem Jahr 2009.
