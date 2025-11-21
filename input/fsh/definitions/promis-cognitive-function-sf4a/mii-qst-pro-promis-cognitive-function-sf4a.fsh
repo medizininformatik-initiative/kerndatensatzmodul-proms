@@ -30,22 +30,22 @@ Usage: #definition
 * item[=].item[+].linkId = "PROMIS-CognitiveFunction-SF4a.Instructions"
 * item[=].item[=].type = #display
 * item[=].item[=].text = "In the past 7 days"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "In den letzten 7 Tagen:"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den letzten 7 Tagen:"
 
 // Item 1: PC2r - Slow thinking
 * item[=].item[+].linkId = "promis-cognition-pc2r"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#81461-6 "In the past 7 days - My thinking has been slow"
 * item[=].item[=].text = "My thinking has been slow"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Ich war langsam beim Denken"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich war langsam beim Denken"
 * item[=].item[=].required = true
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -93,11 +93,11 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#81478-0 "In the past 7 days - It has seemed like my brain was not working as well as usual"
 * item[=].item[=].text = "It has seemed like my brain was not working as well as usual"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
 * item[=].item[=].required = true
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -145,11 +145,11 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#81479-8 "In the past 7 days - I have had to work harder than usual to keep track of what I was doing"
 * item[=].item[=].text = "I have had to work harder than usual to keep track of what I was doing"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
 * item[=].item[=].required = true
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -197,11 +197,11 @@ Usage: #definition
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#81485-5 "In the past 7 days - I have had trouble shifting back and forth between different activities that require thinking"
 * item[=].item[=].text = "I have had trouble shifting back and forth between different activities that require thinking"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
 * item[=].item[=].required = true
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -249,11 +249,11 @@ Usage: #definition
 * item[=].item[=].type = #quantity
 * item[=].item[=].code = $LNC#81533-2 "PROMIS short form - cognitive function 4a - version 2.0 raw score"
 * item[=].item[=].text = "PROMIS Cognitive Function SF 4a Raw Score"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "PROMIS Kognitive Funktion SF 4a Rohwert"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS Kognitive Funktion SF 4a Rohwert"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-item-control-ex
 * item[=].item[=].extension[=].valueCodeableConcept = $sdc-questionnaire-item-control#readonly
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
@@ -265,11 +265,11 @@ Usage: #definition
 * item[=].item[=].type = #quantity
 * item[=].item[=].code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"
 * item[=].item[=].text = "PROMIS Cognitive Function SF 4a T-Score"
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=].extension[=].extension[+].url = "lang"
-* item[=].item[=].extension[=].extension[=].valueCode = #de
-* item[=].item[=].extension[=].extension[+].url = "content"
-* item[=].item[=].extension[=].extension[=].valueString = "PROMIS Kognitive Funktion SF 4a T-Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS Kognitive Funktion SF 4a T-Score"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-item-control-ex
 * item[=].item[=].extension[=].valueCodeableConcept = $sdc-questionnaire-item-control#readonly
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"

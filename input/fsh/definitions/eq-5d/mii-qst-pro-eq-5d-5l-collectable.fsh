@@ -69,8 +69,6 @@ Usage: #definition
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Missing value"
-* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
-* item[=].answerOption[=].extension[=].valueBoolean = true
 * item[=].answerOption[=].initialSelected = true
 * item[=].required = true
 * item[=].repeats = false
@@ -125,8 +123,6 @@ Usage: #definition
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Missing value"
-* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
-* item[=].answerOption[=].extension[=].valueBoolean = true
 * item[=].answerOption[=].initialSelected = true
 * item[=].required = true
 * item[=].repeats = false
@@ -181,8 +177,6 @@ Usage: #definition
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Missing value"
-* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
-* item[=].answerOption[=].extension[=].valueBoolean = true
 * item[=].answerOption[=].initialSelected = true
 * item[=].required = true
 * item[=].repeats = false
@@ -237,8 +231,6 @@ Usage: #definition
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Missing value"
-* item[=].answerOption[=].extension[+].url = $hl7-questionnaire-hidden
-* item[=].answerOption[=].extension[=].valueBoolean = true
 * item[=].answerOption[=].initialSelected = true
 * item[=].required = true
 * item[=].repeats = false
