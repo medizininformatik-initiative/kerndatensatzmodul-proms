@@ -58,6 +58,257 @@
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
           }
         ],
+        "contained": [
+          {
+            "resourceType": "CodeSystem",
+            "id": "eortc-qlq-c30-cs",
+            "concept": [
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "Überhaupt nicht"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "code": "not-at-all",
+                "display": "Not at all"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "Wenig"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "code": "a-little",
+                "display": "A little"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "Mäßig"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "code": "quite-a-bit",
+                "display": "Quite a bit"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "Sehr"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 4
+                  }
+                ],
+                "code": "very-much",
+                "display": "Very much"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "1 - Sehr schlecht"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "code": "1-very-poor",
+                "display": "1 - Very poor"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "2 - Schlecht"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "code": "2-poor",
+                "display": "2 - Poor"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "3 - Mittelmäßig"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "code": "3-fair",
+                "display": "3 - Fair"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "4 - Gut"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 4
+                  }
+                ],
+                "code": "4-good",
+                "display": "4 - Good"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "5 - Sehr gut"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 5
+                  }
+                ],
+                "code": "5-very-good",
+                "display": "5 - Very good"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "6 - Ausgezeichnet"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 6
+                  }
+                ],
+                "code": "6-excellent",
+                "display": "6 - Excellent"
+              },
+              {
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "7 - Vollkommen"
+                  }
+                ],
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 7
+                  }
+                ],
+                "code": "7-perfect",
+                "display": "7 - Perfect"
+              }
+            ],
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained",
+            "status": "active",
+            "content": "complete",
+            "caseSensitive": true
+          },
+          {
+            "resourceType": "ValueSet",
+            "id": "eortc-qlq-c30-4pt",
+            "compose": {
+              "include": [
+                {
+                  "concept": [
+                    {
+                      "code": "not-at-all"
+                    },
+                    {
+                      "code": "a-little"
+                    },
+                    {
+                      "code": "quite-a-bit"
+                    },
+                    {
+                      "code": "very-much"
+                    }
+                  ],
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-contained",
+            "status": "active"
+          },
+          {
+            "resourceType": "ValueSet",
+            "id": "eortc-qlq-c30-7pt",
+            "compose": {
+              "include": [
+                {
+                  "concept": [
+                    {
+                      "code": "1-very-poor"
+                    },
+                    {
+                      "code": "2-poor"
+                    },
+                    {
+                      "code": "3-fair"
+                    },
+                    {
+                      "code": "4-good"
+                    },
+                    {
+                      "code": "5-very-good"
+                    },
+                    {
+                      "code": "6-excellent"
+                    },
+                    {
+                      "code": "7-perfect"
+                    }
+                  ],
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-contained",
+            "status": "active"
+          }
+        ],
         "item": [
           {
             "linkId": "QLQ-C30.Introduction",
@@ -74,196 +325,196 @@
             "type": "choice",
             "prefix": "1",
             "text": "Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q02",
             "type": "choice",
             "prefix": "2",
             "text": "Do you have any trouble taking a long walk?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q03",
             "type": "choice",
             "prefix": "3",
             "text": "Do you have any trouble taking a short walk outside of the house?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q04",
             "type": "choice",
             "prefix": "4",
             "text": "Do you need to stay in bed or a chair during the day?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q05",
             "type": "choice",
             "prefix": "5",
             "text": "Do you need help with eating, dressing, washing yourself or using the toilet?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q06",
             "type": "choice",
             "prefix": "6",
             "text": "Were you limited in doing either your work or other daily activities?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q07",
             "type": "choice",
             "prefix": "7",
             "text": "Were you limited in pursuing your hobbies or other leisure time activities?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q08",
             "type": "choice",
             "prefix": "8",
             "text": "Were you short of breath?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q09",
             "type": "choice",
             "prefix": "9",
             "text": "Have you had pain?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q10",
             "type": "choice",
             "prefix": "10",
             "text": "Did you need to rest?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q11",
             "type": "choice",
             "prefix": "11",
             "text": "Have you had trouble sleeping?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q12",
             "type": "choice",
             "prefix": "12",
             "text": "Have you felt weak?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q13",
             "type": "choice",
             "prefix": "13",
             "text": "Have you lacked appetite?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q14",
             "type": "choice",
             "prefix": "14",
             "text": "Have you felt nauseated?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q15",
             "type": "choice",
             "prefix": "15",
             "text": "Have you vomited?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q16",
             "type": "choice",
             "prefix": "16",
             "text": "Have you been constipated?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q17",
             "type": "choice",
             "prefix": "17",
             "text": "Have you had diarrhea?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q18",
             "type": "choice",
             "prefix": "18",
             "text": "Were you tired?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q19",
             "type": "choice",
             "prefix": "19",
             "text": "Did pain interfere with your daily activities?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q20",
             "type": "choice",
             "prefix": "20",
             "text": "Have you had difficulty in concentrating on things, like reading a newspaper or watching television?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q21",
             "type": "choice",
             "prefix": "21",
             "text": "Did you feel tense?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q22",
             "type": "choice",
             "prefix": "22",
             "text": "Did you worry?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q23",
             "type": "choice",
             "prefix": "23",
             "text": "Did you feel irritable?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q24",
             "type": "choice",
             "prefix": "24",
             "text": "Did you feel depressed?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q25",
             "type": "choice",
             "prefix": "25",
             "text": "Have you had difficulty remembering things?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q26",
             "type": "choice",
             "prefix": "26",
             "text": "Has your physical condition or medical treatment interfered with your family life?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q27",
             "type": "choice",
             "prefix": "27",
             "text": "Has your physical condition or medical treatment interfered with your social activities?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "qlq-c30-q28",
             "type": "choice",
             "prefix": "28",
             "text": "Has your physical condition or medical treatment caused you financial difficulties?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+            "answerValueSet": "#eortc-qlq-c30-4pt"
           },
           {
             "linkId": "QLQ-C30.Section2",
@@ -275,14 +526,14 @@
             "type": "choice",
             "prefix": "29",
             "text": "How would you rate your overall health during the past week?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
+            "answerValueSet": "#eortc-qlq-c30-7pt"
           },
           {
             "linkId": "qlq-c30-q30",
             "type": "choice",
             "prefix": "30",
             "text": "How would you rate your overall quality of life during the past week?",
-            "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
+            "answerValueSet": "#eortc-qlq-c30-7pt"
           },
           {
             "item": [
