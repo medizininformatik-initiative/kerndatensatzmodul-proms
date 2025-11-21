@@ -67,18 +67,18 @@
     {
       "linkId": "PHQ-9.Description",
       "type": "display",
-      "text": "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?",
+      "text": "Over the last two weeks, how often have you been bothered by any of the following problems?",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Over the last two weeks, how often have you been bothered by any of the following problems?"
+                "valueString": "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -227,18 +227,18 @@
       "linkId": "phq-phq9-q01",
       "type": "choice",
       "prefix": "1",
-      "text": "Wenig Interesse oder Freude an Ihren Tätigkeiten",
+      "text": "Little interest or pleasure in doing things",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Little interest or pleasure in doing things"
+                "valueString": "Wenig Interesse oder Freude an Ihren Tätigkeiten"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -387,18 +387,18 @@
       "linkId": "phq-phq9-q02",
       "type": "choice",
       "prefix": "2",
-      "text": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
+      "text": "Feeling down, depressed, or hopeless",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Feeling down, depressed, or hopeless"
+                "valueString": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -547,18 +547,18 @@
       "linkId": "phq-phq9-q03",
       "type": "choice",
       "prefix": "3",
-      "text": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf",
+      "text": "Trouble falling or staying asleep, or sleeping too much",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Trouble falling or staying asleep, or sleeping too much"
+                "valueString": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -707,18 +707,18 @@
       "linkId": "phq-phq9-q04",
       "type": "choice",
       "prefix": "4",
-      "text": "Müdigkeit oder Gefühl, keine Energie zu haben",
+      "text": "Feeling tired or having little energy",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Feeling tired or having little energy"
+                "valueString": "Müdigkeit oder Gefühl, keine Energie zu haben"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -867,18 +867,18 @@
       "linkId": "phq-phq9-q05",
       "type": "choice",
       "prefix": "5",
-      "text": "Verminderter Appetit oder übermäßiges Bedürfnis zu essen",
+      "text": "Poor appetite or overeating",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Poor appetite or overeating"
+                "valueString": "Verminderter Appetit oder übermäßiges Bedürfnis zu essen"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1027,18 +1027,18 @@
       "linkId": "phq-phq9-q06",
       "type": "choice",
       "prefix": "6",
-      "text": "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben",
+      "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
+                "valueString": "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1187,18 +1187,18 @@
       "linkId": "phq-phq9-q07",
       "type": "choice",
       "prefix": "7",
-      "text": "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen",
+      "text": "Trouble concentrating on things, such as reading the newspaper or watching television",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Trouble concentrating on things, such as reading the newspaper or watching television"
+                "valueString": "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1347,18 +1347,18 @@
       "linkId": "phq-phq9-q08",
       "type": "choice",
       "prefix": "8",
-      "text": "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil „zappelig“ oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?",
+      "text": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"
+                "valueString": "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil 'zappelig' oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1507,18 +1507,18 @@
       "linkId": "phq-phq9-q09",
       "type": "choice",
       "prefix": "9",
-      "text": "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten",
+      "text": "Thoughts that you would be better off dead or of hurting yourself in some way",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Thoughts that you would be better off dead or of hurting yourself in some way"
+                "valueString": "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1570,18 +1570,18 @@
       "type": "decimal",
       "prefix": "Auswertung",
       "readOnly": true,
-      "text": "PHQ-9 Gesamtwert",
+      "text": "PHQ-9 Total Score",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "PHQ-9 Total Score"
+                "valueString": "PHQ-9 Gesamtwert"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1706,18 +1706,18 @@
       "linkId": "phq-phq9-q10",
       "type": "choice",
       "prefix": "10",
-      "text": "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen",
+      "text": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+                "valueString": "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1773,18 +1773,18 @@
       "type": "decimal",
       "prefix": "T-Score",
       "readOnly": true,
-      "text": "PROMIS Depression T-Score (abgeleitet von PHQ-9)",
+      "text": "PROMIS Depression T-Score (derived from PHQ-9)",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "PROMIS Depression T-Score (derived from PHQ-9)"
+                "valueString": "PROMIS Depression T-Score (abgeleitet von PHQ-9)"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1795,6 +1795,6 @@
   ],
   "status": "active",
   "experimental": true,
-  "language": "de",
+  "language": "en",
   "version": "2026.0.0-ballot"
 }
