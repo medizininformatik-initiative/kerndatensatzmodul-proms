@@ -772,6 +772,22 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a"
+        },
+        "name": "MII QST PRO EORTC QLQ-C30 Variant A",
+        "description": "EORTC QLQ-C30 Version 3.0 - Variant A: Without contained CodeSystem (ValueSets reference external CodeSystem URL)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b"
+        },
+        "name": "MII QST PRO EORTC QLQ-C30 Variant B",
+        "description": "EORTC QLQ-C30 Version 3.0 - Variant B: With contained CodeSystem and ValueSets referencing it via local reference #eortc-qlq-c30-cs-b",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-epds"
         },
         "name": "MII QST PRO EPDS",
