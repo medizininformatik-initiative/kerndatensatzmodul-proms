@@ -83,6 +83,14 @@ Der PHQ-9 kann auf PROMIS Depression T-Scores gemappt werden:
 #### PHQ-9 QuestionnaireResponse
 
 <tabs>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-exa-pro-phq-9-response&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
   <tab title="Tree">
     {{tree:mii-exa-pro-phq-9-response}}
   </tab>
