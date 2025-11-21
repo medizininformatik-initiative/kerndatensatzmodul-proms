@@ -163,7 +163,7 @@ Usage: #definition
 
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)
 * item[+].linkId = "euroqol-eq5d5l-coded-score-profile"
-* item[=].type = #decimal
+* item[=].type = #string
 * item[=].code = $SCT#405157008 "Personal health status"
 * item[=].text = "Gesundheitszustand"
 * item[=].text.extension[+].url = $hl7-translation

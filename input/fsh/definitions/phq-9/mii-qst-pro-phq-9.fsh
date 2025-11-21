@@ -631,6 +631,6 @@ Usage: #definition
 * item[12].extension[3].url = $sdc-questionnaire-observation-extract-category
 * item[12].extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
 * item[12].extension[3].valueCodeableConcept.coding.code = #survey
-* item[12].extension[4].url = "http://hl7.org/fhir/StructureDefinition/cqf-citation"
-* item[12].extension[4].valueString = "PROsetta Stone® PHQ-9 to PROMIS Depression Crosswalk Table. Available at: https://www.prosettastone.org"
+// Removed cqf-citation - not allowed on Questionnaire.item (only Resource level)
+// Reference: PROsetta Stone® PHQ-9 to PROMIS Depression Crosswalk Table. Available at: https://www.prosettastone.org
 
