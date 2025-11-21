@@ -5,7 +5,8 @@
       "Bash(curl:*)",
       "Bash(gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs/*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

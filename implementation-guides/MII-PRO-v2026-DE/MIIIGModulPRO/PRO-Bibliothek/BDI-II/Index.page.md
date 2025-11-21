@@ -28,8 +28,22 @@ Das Beck Depression Inventory II (BDI-II) ist ein etabliertes Screening-Instrume
 - **Status**: Funktionsfähige Score-Berechnung ohne Display-Capability
 - **Testing**: Enthält Platzhaltertexte (`[TEST PLACEHOLDER...]`) ausschließlich für technische Validierung
   - Ermöglicht Testing in Tools, die renderbare Questionnaires voraussetzen
-  - Capabilities bleiben `displayable=false`, `collectable=false` 
+  - Capabilities bleiben `displayable=false`, `collectable=false`
   - NUR für technische Validierung, NICHT für klinische Anwendung
+
+### Questionnaire StructureDefinition
+
+<tabs>
+  <tab title="Tree">
+    {{tree:mii-qst-pro-bdi-bdi2}}
+  </tab>
+  <tab title="JSON">
+    {{json:mii-qst-pro-bdi-bdi2}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-bdi-bdi2}}
+  </tab>
+</tabs>
 
 ## Lizenzierung
 

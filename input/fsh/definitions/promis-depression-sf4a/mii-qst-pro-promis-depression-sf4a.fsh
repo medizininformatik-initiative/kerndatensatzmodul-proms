@@ -261,7 +261,7 @@ Usage: #definition
 // T-Score Item
 * item[+].linkId = "promis-depression-score-tscore"
 * item[=].type = #decimal
-* item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
+* item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * item[=].text = "PROMIS Depression T-Score"
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression

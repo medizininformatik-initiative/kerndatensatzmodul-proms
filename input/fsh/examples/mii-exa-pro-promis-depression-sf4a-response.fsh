@@ -22,7 +22,7 @@ Usage: #example
 * item[=].answer.valueCoding = $LNC#LA10044-8 "Often"
 
 // Item 4: I felt hopeless - Sometimes (3)
-* item[+].linkId = "promis-eddep05"
+* item[+].linkId = "promis-eddep41"
 * item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // Raw Score: 3+2+4+3 = 12

@@ -182,4 +182,40 @@ Der EORTC QLQ-C30 ist primär für den Einsatz in onkologischen Settings relevan
 
 ---
 
+## Test Varianten
+
+Die folgenden Varianten testen verschiedene Ansätze zur Lösung des FHIR-Validierungsfehlers (dom-3) bezüglich der contained CodeSystem-Referenz.
+
+### Variante A: Ohne Contained CodeSystem
+
+**Ansatz**: Das contained CodeSystem wird entfernt. Die ValueSets referenzieren direkt die externe CodeSystem-URL.
+
+~~~~
+Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a
+~~~~
+
+<iframe
+  src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-eortc-qlq-c30-variant-a&minimal=true"
+  width="100%"
+  height="600px"
+  frameborder="0">
+</iframe>
+
+### Variante B: Mit Lokaler CodeSystem-Referenz
+
+**Ansatz**: Das contained CodeSystem wird beibehalten. Die contained ValueSets referenzieren es über die lokale Referenz `#eortc-qlq-c30-cs-b`.
+
+~~~~
+Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b
+~~~~
+
+<iframe
+  src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-eortc-qlq-c30-variant-b&minimal=true"
+  width="100%"
+  height="600px"
+  frameborder="0">
+</iframe>
+
+---
+
 ⚠️ **Technical Preview**: Lizenzierung mit EORTC erforderlich vor Produktiveinsatz.
