@@ -40,6 +40,26 @@ Questionnaire/mii-qst-pro-eortc-qlq-c30
 
 **➔ [Vollständige Ressource in Simplifier anzeigen](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-eortc-qlq-c30)**
 
+<tabs>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-eortc-qlq-c30&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
+  <tab title="Tree">
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30}}
+  </tab>
+  <tab title="JSON">
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30}}
+  </tab>
+  <tab title="XML">
+    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30}}
+  </tab>
+</tabs>
+
 **SNOMED**: `273446001 |EORTC QLQ-C30 (assessment scale)|`
 
 **Capabilities**:

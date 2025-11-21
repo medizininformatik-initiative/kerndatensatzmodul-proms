@@ -44,6 +44,26 @@ Die Displayable-Variante ist für die reine Anzeige von bereits erfassten EQ-5D-
 
 Die Collectable-Variante ist für die aktive Datenerfassung durch Patienten konzipiert. Sie enthält vollständige Validierungsregeln, Required-Markierungen für alle Items und eine versteckte "Keine Angabe" Option für Situationen, in denen Patienten einzelne Fragen nicht beantworten können oder möchten. Diese Variante wird typischerweise in Patientenportalen oder mobilen Apps eingesetzt und stellt sicher, dass die erfassten Daten vollständig und valide sind.
 
+<tabs>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-euroqol-eq5d5l-collectable&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
+  <tab title="Tree">
+    {{tree:mii-qst-pro-euroqol-eq5d5l-collectable}}
+  </tab>
+  <tab title="JSON">
+    {{json:mii-qst-pro-euroqol-eq5d5l-collectable}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-euroqol-eq5d5l-collectable}}
+  </tab>
+</tabs>
+
 #### Answer-Coding-Variante (MII-spezifische Kodierung)
 
 Die Answer-Coding-Variante verwendet das MII CodeSystem anstelle von LOINC-Codes. Diese Variante ist besonders wichtig, wenn zuverlässige ordinale Werte für automatische Score-Berechnungen benötigt werden. Die LinkIds folgen einem spezifischen Pattern (`euroqol-eq5d5l-coded-q01-MO`), das die Unterscheidung von anderen Varianten ermöglicht. Diese Variante kombiniert die Capabilities Collectable und Calculatable und ermöglicht damit sowohl die Datenerfassung als auch die automatische Berechnung von Scores.
@@ -94,19 +114,6 @@ Implementierer sollten auch die erwartete Evolution des Instruments und den Aust
   </tab>
 </tabs>
 
-#### EQ-5D-5L Collectable Questionnaire
-
-<tabs>
-  <tab title="Tree">
-    {{tree:mii-qst-pro-euroqol-eq5d5l-collectable}}
-  </tab>
-  <tab title="JSON">
-    {{json:mii-qst-pro-euroqol-eq5d5l-collectable}}
-  </tab>
-  <tab title="XML">
-    {{xml:mii-qst-pro-euroqol-eq5d5l-collectable}}
-  </tab>
-</tabs>
 
 ### Geschichte
 Der EQ-5D-5L ist eine Weiterentwicklung des EQ-5D-3L aus dem Jahr 2009.
