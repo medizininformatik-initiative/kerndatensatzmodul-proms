@@ -405,7 +405,7 @@ Usage: #definition
 Instance: eortc-qlq-c30-cs
 InstanceOf: CodeSystem
 Usage: #inline
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
 * status = #active
 * content = #complete
 * caseSensitive = true
@@ -493,7 +493,7 @@ Usage: #inline
 Instance: eortc-qlq-c30-4pt
 InstanceOf: ValueSet
 Usage: #inline
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-contained"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained"
 * compose.include.concept[+].code = #not-at-all
@@ -504,7 +504,7 @@ Usage: #inline
 Instance: eortc-qlq-c30-7pt
 InstanceOf: ValueSet
 Usage: #inline
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-contained"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained"
 * compose.include.concept[+].code = #1-very-poor
