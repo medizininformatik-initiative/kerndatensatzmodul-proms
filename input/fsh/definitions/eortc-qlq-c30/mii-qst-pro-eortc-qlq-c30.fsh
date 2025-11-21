@@ -495,7 +495,7 @@ InstanceOf: ValueSet
 Usage: #inline
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 * status = #active
-* compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained"
+* compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
 * compose.include.concept[+].code = #not-at-all
 * compose.include.concept[+].code = #a-little
 * compose.include.concept[+].code = #quite-a-bit
@@ -506,7 +506,7 @@ InstanceOf: ValueSet
 Usage: #inline
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
 * status = #active
-* compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30-contained"
+* compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
 * compose.include.concept[+].code = #1-very-poor
 * compose.include.concept[+].code = #2-poor
 * compose.include.concept[+].code = #3-fair
