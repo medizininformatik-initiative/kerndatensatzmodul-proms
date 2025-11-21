@@ -7,7 +7,7 @@ Usage: #definition
 * url = $mii-qst-pro-phq-9
 * status = #active
 * experimental = true
-* language = #de
+* language = #en
 * version = "2026.0.0-ballot"
 * code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 
@@ -37,12 +37,12 @@ Usage: #definition
 
 * item[0].linkId = "PHQ-9.Description"
 * item[0].type = #display
-* item[0].text = "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?"
+* item[0].text = "Over the last two weeks, how often have you been bothered by any of the following problems?"
 * item[0].text.extension[0].url = $hl7-translation
 * item[0].text.extension[0].extension[0].url = "lang"
-* item[0].text.extension[0].extension[0].valueCode = #en
+* item[0].text.extension[0].extension[0].valueCode = #de
 * item[0].text.extension[0].extension[1].url = "content"
-* item[0].text.extension[0].extension[1].valueString = "Over the last two weeks, how often have you been bothered by any of the following problems?"
+* item[0].text.extension[0].extension[1].valueString = "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?"
 
 * item[1].linkId = "phq-phq9-q01"
 * item[1].type = #choice
@@ -51,12 +51,12 @@ Usage: #definition
 * item[1].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[1].extension[=].valueExpression.language = #text/fhirpath
 * item[1].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
-* item[1].text = "Wenig Interesse oder Freude an Ihren Tätigkeiten"
+* item[1].text = "Little interest or pleasure in doing things"
 * item[1].text.extension[0].url = $hl7-translation
 * item[1].text.extension[0].extension[0].url = "lang"
-* item[1].text.extension[0].extension[0].valueCode = #en
+* item[1].text.extension[0].extension[0].valueCode = #de
 * item[1].text.extension[0].extension[1].url = "content"
-* item[1].text.extension[0].extension[1].valueString = "Little interest or pleasure in doing things"
+* item[1].text.extension[0].extension[1].valueString = "Wenig Interesse oder Freude an Ihren Tätigkeiten"
 * item[1].answerOption[0].valueCoding.system = $LNC
 * item[1].answerOption[0].valueCoding.code = #LA6568-5
 * item[1].answerOption[0].valueCoding.display = "Not at all"
@@ -105,12 +105,12 @@ Usage: #definition
 * item[2].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[2].extension[=].valueExpression.language = #text/fhirpath
 * item[2].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
-* item[2].text = "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit"
+* item[2].text = "Feeling down, depressed, or hopeless"
 * item[2].text.extension[0].url = $hl7-translation
 * item[2].text.extension[0].extension[0].url = "lang"
-* item[2].text.extension[0].extension[0].valueCode = #en
+* item[2].text.extension[0].extension[0].valueCode = #de
 * item[2].text.extension[0].extension[1].url = "content"
-* item[2].text.extension[0].extension[1].valueString = "Feeling down, depressed, or hopeless"
+* item[2].text.extension[0].extension[1].valueString = "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit"
 * item[2].answerOption[0].valueCoding.system = $LNC
 * item[2].answerOption[0].valueCoding.code = #LA6568-5
 * item[2].answerOption[0].valueCoding.display = "Not at all"
@@ -159,12 +159,12 @@ Usage: #definition
 * item[3].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[3].extension[=].valueExpression.language = #text/fhirpath
 * item[3].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
-* item[3].text = "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
+* item[3].text = "Trouble falling or staying asleep, or sleeping too much"
 * item[3].text.extension[0].url = $hl7-translation
 * item[3].text.extension[0].extension[0].url = "lang"
-* item[3].text.extension[0].extension[0].valueCode = #en
+* item[3].text.extension[0].extension[0].valueCode = #de
 * item[3].text.extension[0].extension[1].url = "content"
-* item[3].text.extension[0].extension[1].valueString = "Trouble falling or staying asleep, or sleeping too much"
+* item[3].text.extension[0].extension[1].valueString = "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
 * item[3].answerOption[0].valueCoding.system = $LNC
 * item[3].answerOption[0].valueCoding.code = #LA6568-5
 * item[3].answerOption[0].valueCoding.display = "Not at all"
@@ -213,12 +213,12 @@ Usage: #definition
 * item[4].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[4].extension[=].valueExpression.language = #text/fhirpath
 * item[4].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
-* item[4].text = "Müdigkeit oder Gefühl, keine Energie zu haben"
+* item[4].text = "Feeling tired or having little energy"
 * item[4].text.extension[0].url = $hl7-translation
 * item[4].text.extension[0].extension[0].url = "lang"
-* item[4].text.extension[0].extension[0].valueCode = #en
+* item[4].text.extension[0].extension[0].valueCode = #de
 * item[4].text.extension[0].extension[1].url = "content"
-* item[4].text.extension[0].extension[1].valueString = "Feeling tired or having little energy"
+* item[4].text.extension[0].extension[1].valueString = "Müdigkeit oder Gefühl, keine Energie zu haben"
 * item[4].answerOption[0].valueCoding.system = $LNC
 * item[4].answerOption[0].valueCoding.code = #LA6568-5
 * item[4].answerOption[0].valueCoding.display = "Not at all"
@@ -267,12 +267,12 @@ Usage: #definition
 * item[5].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[5].extension[=].valueExpression.language = #text/fhirpath
 * item[5].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
-* item[5].text = "Verminderter Appetit oder übermäßiges Bedürfnis zu essen"
+* item[5].text = "Poor appetite or overeating"
 * item[5].text.extension[0].url = $hl7-translation
 * item[5].text.extension[0].extension[0].url = "lang"
-* item[5].text.extension[0].extension[0].valueCode = #en
+* item[5].text.extension[0].extension[0].valueCode = #de
 * item[5].text.extension[0].extension[1].url = "content"
-* item[5].text.extension[0].extension[1].valueString = "Poor appetite or overeating"
+* item[5].text.extension[0].extension[1].valueString = "Verminderter Appetit oder übermäßiges Bedürfnis zu essen"
 * item[5].answerOption[0].valueCoding.system = $LNC
 * item[5].answerOption[0].valueCoding.code = #LA6568-5
 * item[5].answerOption[0].valueCoding.display = "Not at all"
@@ -321,12 +321,12 @@ Usage: #definition
 * item[6].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[6].extension[=].valueExpression.language = #text/fhirpath
 * item[6].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
-* item[6].text = "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben"
+* item[6].text = "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
 * item[6].text.extension[0].url = $hl7-translation
 * item[6].text.extension[0].extension[0].url = "lang"
-* item[6].text.extension[0].extension[0].valueCode = #en
+* item[6].text.extension[0].extension[0].valueCode = #de
 * item[6].text.extension[0].extension[1].url = "content"
-* item[6].text.extension[0].extension[1].valueString = "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
+* item[6].text.extension[0].extension[1].valueString = "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben"
 * item[6].answerOption[0].valueCoding.system = $LNC
 * item[6].answerOption[0].valueCoding.code = #LA6568-5
 * item[6].answerOption[0].valueCoding.display = "Not at all"
@@ -375,12 +375,12 @@ Usage: #definition
 * item[7].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[7].extension[=].valueExpression.language = #text/fhirpath
 * item[7].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
-* item[7].text = "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen"
+* item[7].text = "Trouble concentrating on things, such as reading the newspaper or watching television"
 * item[7].text.extension[0].url = $hl7-translation
 * item[7].text.extension[0].extension[0].url = "lang"
-* item[7].text.extension[0].extension[0].valueCode = #en
+* item[7].text.extension[0].extension[0].valueCode = #de
 * item[7].text.extension[0].extension[1].url = "content"
-* item[7].text.extension[0].extension[1].valueString = "Trouble concentrating on things, such as reading the newspaper or watching television"
+* item[7].text.extension[0].extension[1].valueString = "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen"
 * item[7].answerOption[0].valueCoding.system = $LNC
 * item[7].answerOption[0].valueCoding.code = #LA6568-5
 * item[7].answerOption[0].valueCoding.display = "Not at all"
@@ -429,12 +429,12 @@ Usage: #definition
 * item[8].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[8].extension[=].valueExpression.language = #text/fhirpath
 * item[8].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
-* item[8].text = "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil „zappelig“ oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?"
+* item[8].text = "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"
 * item[8].text.extension[0].url = $hl7-translation
 * item[8].text.extension[0].extension[0].url = "lang"
-* item[8].text.extension[0].extension[0].valueCode = #en
+* item[8].text.extension[0].extension[0].valueCode = #de
 * item[8].text.extension[0].extension[1].url = "content"
-* item[8].text.extension[0].extension[1].valueString = "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"
+* item[8].text.extension[0].extension[1].valueString = "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil 'zappelig' oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?"
 * item[8].answerOption[0].valueCoding.system = $LNC
 * item[8].answerOption[0].valueCoding.code = #LA6568-5
 * item[8].answerOption[0].valueCoding.display = "Not at all"
@@ -483,12 +483,12 @@ Usage: #definition
 * item[9].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[9].extension[=].valueExpression.language = #text/fhirpath
 * item[9].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
-* item[9].text = "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten"
+* item[9].text = "Thoughts that you would be better off dead or of hurting yourself in some way"
 * item[9].text.extension[0].url = $hl7-translation
 * item[9].text.extension[0].extension[0].url = "lang"
-* item[9].text.extension[0].extension[0].valueCode = #en
+* item[9].text.extension[0].extension[0].valueCode = #de
 * item[9].text.extension[0].extension[1].url = "content"
-* item[9].text.extension[0].extension[1].valueString = "Thoughts that you would be better off dead or of hurting yourself in some way"
+* item[9].text.extension[0].extension[1].valueString = "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten"
 * item[9].answerOption[0].valueCoding.system = $LNC
 * item[9].answerOption[0].valueCoding.code = #LA6568-5
 * item[9].answerOption[0].valueCoding.display = "Not at all"
@@ -537,12 +537,12 @@ Usage: #definition
 * item[11].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[11].extension[=].valueExpression.language = #text/fhirpath
 * item[11].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
-* item[11].text = "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen"
+* item[11].text = "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
 * item[11].text.extension[0].url = $hl7-translation
 * item[11].text.extension[0].extension[0].url = "lang"
-* item[11].text.extension[0].extension[0].valueCode = #en
+* item[11].text.extension[0].extension[0].valueCode = #de
 * item[11].text.extension[0].extension[1].url = "content"
-* item[11].text.extension[0].extension[1].valueString = "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+* item[11].text.extension[0].extension[1].valueString = "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen"
 * item[11].answerOption[0].valueCoding.system = $LNC
 * item[11].answerOption[0].valueCoding.code = #LA6572-7
 * item[11].answerOption[0].valueCoding.display = "Not difficult at all"
@@ -591,12 +591,12 @@ Usage: #definition
 * item[10].extension[0].valueExpression.name = "Scoreberechnung"
 * item[10].extension[0].valueExpression.language = #text/fhirpath
 * item[10].extension[0].valueExpression.expression = "%phq9Score"
-* item[10].text = "PHQ-9 Gesamtwert"
+* item[10].text = "PHQ-9 Total Score"
 * item[10].text.extension[0].url = $hl7-translation
 * item[10].text.extension[0].extension[0].url = "lang"
-* item[10].text.extension[0].extension[0].valueCode = #en
+* item[10].text.extension[0].extension[0].valueCode = #de
 * item[10].text.extension[0].extension[1].url = "content"
-* item[10].text.extension[0].extension[1].valueString = "PHQ-9 Total Score"
+* item[10].text.extension[0].extension[1].valueString = "PHQ-9 Gesamtwert"
 * item[10].extension[1].url = $sdc-questionnaire-observation-extract
 * item[10].extension[1].valueBoolean = true
 * item[10].extension[2].url = $hl7-questionnaire-unit
@@ -617,12 +617,12 @@ Usage: #definition
 * item[12].extension[0].valueExpression.name = "promis-tscore-mapping"
 * item[12].extension[0].valueExpression.language = #text/fhirpath
 * item[12].extension[0].valueExpression.expression = "iif(%phq9Score = 0, 37.4, iif(%phq9Score = 1, 42.7, iif(%phq9Score = 2, 45.9, iif(%phq9Score = 3, 48.3, iif(%phq9Score = 4, 50.5, iif(%phq9Score = 5, 52.5, iif(%phq9Score = 6, 54.2, iif(%phq9Score = 7, 55.8, iif(%phq9Score = 8, 57.2, iif(%phq9Score = 9, 58.6, iif(%phq9Score = 10, 59.9, iif(%phq9Score = 11, 61.1, iif(%phq9Score = 12, 62.3, iif(%phq9Score = 13, 63.5, iif(%phq9Score = 14, 64.7, iif(%phq9Score = 15, 65.8, iif(%phq9Score = 16, 66.9, iif(%phq9Score = 17, 68.0, iif(%phq9Score = 18, 69.2, iif(%phq9Score = 19, 70.3, iif(%phq9Score = 20, 71.5, iif(%phq9Score = 21, 72.7, iif(%phq9Score = 22, 74.0, iif(%phq9Score = 23, 75.3, iif(%phq9Score = 24, 76.7, iif(%phq9Score = 25, 78.3, iif(%phq9Score = 26, 80.0, iif(%phq9Score = 27, 82.3, 82.3))))))))))))))))))))))))))))"
-* item[12].text = "PROMIS Depression T-Score (abgeleitet von PHQ-9)"
+* item[12].text = "PROMIS Depression T-Score (derived from PHQ-9)"
 * item[12].text.extension[0].url = $hl7-translation
 * item[12].text.extension[0].extension[0].url = "lang"
-* item[12].text.extension[0].extension[0].valueCode = #en
+* item[12].text.extension[0].extension[0].valueCode = #de
 * item[12].text.extension[0].extension[1].url = "content"
-* item[12].text.extension[0].extension[1].valueString = "PROMIS Depression T-Score (derived from PHQ-9)"
+* item[12].text.extension[0].extension[1].valueString = "PROMIS Depression T-Score (abgeleitet von PHQ-9)"
 * item[12].extension[1].url = $sdc-questionnaire-observation-extract
 * item[12].extension[1].valueBoolean = true
 * item[12].extension[2].url = $hl7-questionnaire-unit
