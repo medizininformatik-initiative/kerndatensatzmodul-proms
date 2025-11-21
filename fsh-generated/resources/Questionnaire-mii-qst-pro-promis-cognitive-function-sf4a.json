@@ -51,24 +51,26 @@
     {
       "item": [
         {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "content",
-                  "valueString": "In den letzten 7 Tagen:"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            }
-          ],
           "linkId": "PROMIS-CognitiveFunction-SF4a.Instructions",
           "type": "display",
-          "text": "In the past 7 days"
+          "text": "In the past 7 days",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "In den letzten 7 Tagen:"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
         },
         {
           "code": [
@@ -76,21 +78,6 @@
               "code": "81461-6",
               "system": "http://loinc.org",
               "display": "In the past 7 days - My thinking has been slow"
-            }
-          ],
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Ich war langsam beim Denken"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ],
           "answerOption": [
@@ -248,6 +235,23 @@
           "linkId": "promis-cognition-pc2r",
           "type": "choice",
           "text": "My thinking has been slow",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich war langsam beim Denken"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "required": true
         },
         {
@@ -256,21 +260,6 @@
               "code": "81478-0",
               "system": "http://loinc.org",
               "display": "In the past 7 days - It has seemed like my brain was not working as well as usual"
-            }
-          ],
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ],
           "answerOption": [
@@ -428,6 +417,23 @@
           "linkId": "promis-cognition-pc35r",
           "type": "choice",
           "text": "It has seemed like my brain was not working as well as usual",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "required": true
         },
         {
@@ -436,21 +442,6 @@
               "code": "81479-8",
               "system": "http://loinc.org",
               "display": "In the past 7 days - I have had to work harder than usual to keep track of what I was doing"
-            }
-          ],
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ],
           "answerOption": [
@@ -608,6 +599,23 @@
           "linkId": "promis-cognition-pc36r",
           "type": "choice",
           "text": "I have had to work harder than usual to keep track of what I was doing",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "required": true
         },
         {
@@ -616,21 +624,6 @@
               "code": "81485-5",
               "system": "http://loinc.org",
               "display": "In the past 7 days - I have had trouble shifting back and forth between different activities that require thinking"
-            }
-          ],
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ],
           "answerOption": [
@@ -788,6 +781,23 @@
           "linkId": "promis-cognition-pc42r",
           "type": "choice",
           "text": "I have had trouble shifting back and forth between different activities that require thinking",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "required": true
         },
         {
@@ -799,19 +809,6 @@
             }
           ],
           "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "content",
-                  "valueString": "PROMIS Kognitive Funktion SF 4a Rohwert"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
               "valueCodeableConcept": {
@@ -833,7 +830,24 @@
           ],
           "linkId": "promis-cognition-sf4a-raw-score",
           "type": "quantity",
-          "text": "PROMIS Cognitive Function SF 4a Raw Score"
+          "text": "PROMIS Cognitive Function SF 4a Raw Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "PROMIS Kognitive Funktion SF 4a Rohwert"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
         },
         {
           "code": [
@@ -844,19 +858,6 @@
             }
           ],
           "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "content",
-                  "valueString": "PROMIS Kognitive Funktion SF 4a T-Score"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
               "valueCodeableConcept": {
@@ -878,7 +879,24 @@
           ],
           "linkId": "promis-cognition-sf4a-t-score",
           "type": "quantity",
-          "text": "PROMIS Cognitive Function SF 4a T-Score"
+          "text": "PROMIS Cognitive Function SF 4a T-Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "PROMIS Kognitive Funktion SF 4a T-Score"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
         }
       ],
       "linkId": "PROMIS-CognitiveFunction-SF4a",
