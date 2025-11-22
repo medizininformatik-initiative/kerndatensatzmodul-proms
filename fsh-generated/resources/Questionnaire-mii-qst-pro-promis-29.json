@@ -124,7 +124,7 @@
             {
               "code": "61597-1",
               "system": "http://loinc.org",
-              "display": "Are you able to do chores such as vacuuming or yard work?"
+              "display": "Are you able to do chores such as vacuuming or yard work [PROMIS]"
             }
           ],
           "answerOption": [
@@ -281,7 +281,7 @@
           ],
           "linkId": "promis-pfa11",
           "type": "choice",
-          "text": "Are you able to do chores such as vacuuming or yard work?",
+          "text": "Are you able to do chores such as vacuuming or yard work [PROMIS]",
           "_text": {
             "extension": [
               {
@@ -305,7 +305,7 @@
             {
               "code": "61607-8",
               "system": "http://loinc.org",
-              "display": "Are you able to go up and down stairs at a normal pace?"
+              "display": "Are you able to go up and down stairs at a normal pace [PROMIS]"
             }
           ],
           "answerOption": [
@@ -462,7 +462,7 @@
           ],
           "linkId": "promis-pfa21",
           "type": "choice",
-          "text": "Are you able to go up and down stairs at a normal pace?",
+          "text": "Are you able to go up and down stairs at a normal pace [PROMIS]",
           "_text": {
             "extension": [
               {
@@ -486,7 +486,7 @@
             {
               "code": "61609-4",
               "system": "http://loinc.org",
-              "display": "Are you able to go for a walk of at least 15 minutes?"
+              "display": "Are you able to go for a walk of at least 15 minutes [PROMIS]"
             }
           ],
           "answerOption": [
@@ -643,7 +643,7 @@
           ],
           "linkId": "promis-pfa23",
           "type": "choice",
-          "text": "Are you able to go for a walk of at least 15 minutes?",
+          "text": "Are you able to go for a walk of at least 15 minutes [PROMIS]",
           "_text": {
             "extension": [
               {
@@ -667,7 +667,7 @@
             {
               "code": "61635-9",
               "system": "http://loinc.org",
-              "display": "Are you able to run errands and shop?"
+              "display": "Are you able to run errands and shop [PROMIS]"
             }
           ],
           "answerOption": [
@@ -824,7 +824,7 @@
           ],
           "linkId": "promis-pfa53",
           "type": "choice",
-          "text": "Are you able to run errands and shop?",
+          "text": "Are you able to run errands and shop [PROMIS]",
           "_text": {
             "extension": [
               {
@@ -4934,7 +4934,7 @@
             {
               "code": "91721-1",
               "system": "http://loinc.org",
-              "display": "PROMIS physical function - version 2.0 T-score"
+              "display": "PROMIS physical function - version 2.0 Tscore"
             }
           ],
           "extension": [
@@ -4994,7 +4994,7 @@
             {
               "code": "71967-4",
               "system": "http://loinc.org",
-              "display": "PROMIS-29 Anxiety score T-score"
+              "display": "PROMIS-29 Anxiety score Tscore"
             }
           ],
           "extension": [
@@ -5054,7 +5054,7 @@
             {
               "code": "77861-3",
               "system": "http://loinc.org",
-              "display": "PROMIS emotional distress - depression - version 1.0 T-score"
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
             }
           ],
           "extension": [
@@ -5114,7 +5114,7 @@
             {
               "code": "77864-7",
               "system": "http://loinc.org",
-              "display": "PROMIS fatigue - version 1.0 T-score"
+              "display": "PROMIS fatigue - version 1.0 Tscore"
             }
           ],
           "extension": [
@@ -5174,7 +5174,7 @@
             {
               "code": "77860-5",
               "system": "http://loinc.org",
-              "display": "PROMIS sleep disturbance - version 1.0 T-score"
+              "display": "PROMIS sleep disturbance - version 1.0 Tscore"
             }
           ],
           "extension": [
@@ -5234,7 +5234,7 @@
             {
               "code": "77854-8",
               "system": "http://loinc.org",
-              "display": "PROMIS ability to participate in social roles and activities - version 2.0 T-score"
+              "display": "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
             }
           ],
           "extension": [
@@ -5294,7 +5294,7 @@
             {
               "code": "77865-4",
               "system": "http://loinc.org",
-              "display": "PROMIS pain interference - version 1.0 T-score"
+              "display": "PROMIS pain interference - version 1.0 Tscore"
             }
           ],
           "extension": [

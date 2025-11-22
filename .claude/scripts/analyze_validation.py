@@ -6,28 +6,47 @@ Usage: python3 analyze_validation.py <validation.json> [previous_validation.json
 import json
 import sys
 import os
+import re
 from collections import defaultdict
 
-def extract_errors(filepath):
+# Expected errors to filter out (not actionable)
+EXPECTED_PATTERNS = [
+    # LA codes not in LOINC - we use MII-controlled terminology
+    r"Unknown code 'LA\d+(-\d+)?' in the CodeSystem 'http://loinc.org'",
+    # German language code validation issues
+    r"The System URI could not be determined for the code 'de'",
+    r"The value provided \('de'\) was not found in the value set 'All Languages'",
+]
+
+def is_expected_error(message):
+    """Check if an error matches expected patterns that should be filtered."""
+    for pattern in EXPECTED_PATTERNS:
+        if re.search(pattern, message):
+            return True
+    return False
+
+def extract_errors(filepath, filter_expected=True):
     """Extract all errors from validation.json Bundle."""
     with open(filepath) as f:
         data = json.load(f)
 
     errors = []
-
-    # Track which file each OperationOutcome relates to
-    # The Bundle alternates: resource file entry, then its OperationOutcome
-    current_filename = 'unknown'
+    filtered_count = 0
 
     for i, entry in enumerate(data.get('entry', [])):
         resource = entry.get('resource', {})
-        full_url = entry.get('fullUrl', '')
 
-        # If this is a regular resource, capture its filename for the next OperationOutcome
+        # Skip non-OperationOutcome entries
         if resource.get('resourceType') != 'OperationOutcome':
-            if full_url:
-                current_filename = full_url.split('/')[-1]
             continue
+
+        # Extract filename from operationoutcome-file extension
+        current_filename = 'unknown'
+        for ext in resource.get('extension', []):
+            if ext.get('url', '').endswith('operationoutcome-file'):
+                filepath_value = ext.get('valueString', '')
+                current_filename = os.path.basename(filepath_value)
+                break
 
         # Process OperationOutcome
         for issue in resource.get('issue', []):
@@ -53,6 +72,11 @@ def extract_errors(filepath):
             elif 'invalid' in message.lower():
                 category = 'Invalid_Value'
 
+            # Filter out expected errors if requested
+            if filter_expected and is_expected_error(message):
+                filtered_count += 1
+                continue
+
             errors.append({
                 'filename': current_filename,
                 'location': location,
@@ -62,11 +86,11 @@ def extract_errors(filepath):
                 'signature': f'{current_filename}|{location}|{message}'
             })
 
-    return errors
+    return errors, filtered_count
 
 def analyze_validation(current_path, previous_path=None):
     """Analyze validation results and optionally compare with previous run."""
-    current_errors = extract_errors(current_path)
+    current_errors, filtered_count = extract_errors(current_path)
 
     # Group by category and filename
     by_category = defaultdict(list)
@@ -81,7 +105,7 @@ def analyze_validation(current_path, previous_path=None):
     prev_count = 0
 
     if previous_path and os.path.exists(previous_path):
-        prev_errors = extract_errors(previous_path)
+        prev_errors, _ = extract_errors(previous_path)
         prev_count = len(prev_errors)
 
         current_sigs = {e['signature'] for e in current_errors}
@@ -92,6 +116,7 @@ def analyze_validation(current_path, previous_path=None):
 
     return {
         'total': len(current_errors),
+        'filtered': filtered_count,
         'previous': prev_count,
         'by_category': dict(by_category),
         'by_file': dict(by_file),
@@ -108,7 +133,9 @@ def print_report(results, short_sha, outdir):
     print()
     print("SUMMARY")
     print("-" * 40)
-    print(f"Total errors: {results['total']}")
+    print(f"Actionable errors: {results['total']}")
+    if results.get('filtered', 0) > 0:
+        print(f"Filtered (expected): {results['filtered']}")
     if results['previous'] > 0:
         change = results['total'] - results['previous']
         sign = '+' if change > 0 else ''

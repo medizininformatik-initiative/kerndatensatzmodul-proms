@@ -42,16 +42,15 @@ Perform the complete workflow of committing, pushing, waiting for CI validation,
    ```
    - Save validation.json, validation.html, and txlog.html to the directory
 
-5. **Generate comprehensive error report** with:
-   - **Total error count** (current vs previous)
-   - **Error categories** grouped by:
-     - Error code/type (e.g., UNABLE_TO_INFER_CODESYSTEM, Terminology_TX_NoValid_16)
-     - Resource type (Questionnaire, Bundle, StructureDefinition)
-   - **Affected files** list
-   - **Fixed errors** (errors present in previous run but not in current)
-   - **New errors** (errors present in current run but not in previous)
+5. **Run the analysis script**:
+   ```bash
+   # Run analysis with automatic comparison to previous validation
+   python3 .claude/scripts/analyze_validation.py "$OUTDIR/validation.json" --output-format markdown
+   ```
+   - This generates the error report with categorization and comparison
+   - Results are displayed in the terminal and saved to the output directory
 
-6. **Output format**:
+6. **Expected output format**:
    ```
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    FHIR Validation Report for commit {short_sha}

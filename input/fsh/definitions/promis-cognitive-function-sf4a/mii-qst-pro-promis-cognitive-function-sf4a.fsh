@@ -47,7 +47,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Ich war langsam beim Denken"
 * item[=].item[=].required = true
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -55,7 +55,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely (Once)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -63,7 +63,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Selten (einmal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes (Two or three times)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -71,7 +71,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Manchmal (zwei- oder dreimal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often (About once a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -79,7 +79,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Oft (ungefähr einmal täglich)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10045-5 "Very often (Several times a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -99,7 +99,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
 * item[=].item[=].required = true
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -107,7 +107,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely (Once)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -115,7 +115,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Selten (einmal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes (Two or three times)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -123,7 +123,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Manchmal (zwei- oder dreimal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often (About once a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -131,7 +131,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Oft (ungefähr einmal täglich)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10045-5 "Very often (Several times a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -151,7 +151,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
 * item[=].item[=].required = true
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -159,7 +159,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely (Once)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -167,7 +167,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Selten (einmal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes (Two or three times)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -175,7 +175,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Manchmal (zwei- oder dreimal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often (About once a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -183,7 +183,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Oft (ungefähr einmal täglich)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10045-5 "Very often (Several times a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -203,7 +203,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
 * item[=].item[=].required = true
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Never"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -211,7 +211,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Nie"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 5
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely (Once)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -219,7 +219,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Selten (einmal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes (Two or three times)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -227,7 +227,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Manchmal (zwei- oder dreimal)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often (About once a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -235,7 +235,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Oft (ungefähr einmal täglich)"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10045-5 "Very often (Several times a day)"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -263,7 +263,7 @@ Usage: #definition
 // T-Score calculation (would need lookup table for accurate conversion)
 * item[=].item[+].linkId = "promis-cognition-sf4a-t-score"
 * item[=].item[=].type = #quantity
-* item[=].item[=].code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"
+* item[=].item[=].code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 Tscore"
 * item[=].item[=].text = "PROMIS Cognitive Function SF 4a T-Score"
 * item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].text.extension[=].extension[+].url = "lang"

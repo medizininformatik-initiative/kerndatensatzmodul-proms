@@ -33,7 +33,7 @@ Description: "PROMIS Cognitive Function Short Form 4a T-Score"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"
+* code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 Tscore"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS Cognitive Function SF 4a"
