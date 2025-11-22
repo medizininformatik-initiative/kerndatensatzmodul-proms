@@ -286,7 +286,7 @@ Usage: #definition
 // Anxiety Item 1
 * item[=].item[+].linkId = "promis-edanx01"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61930-4 "In the past 7 days - I felt fearful"
+* item[=].item[=].code = $LNC#61923-9 "I felt fearful in past 7 days [PROMIS]"
 * item[=].item[=].text = "...fühlte ich mich ängstlich"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -332,7 +332,7 @@ Usage: #definition
 // Anxiety Item 2
 * item[=].item[+].linkId = "promis-edanx40"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61941-1 "In the past 7 days - I found it hard to focus on anything other than my anxiety"
+* item[=].item[=].code = $LNC#61941-1 "I found it hard to focus on anything other than my anxiety in past 7 days [PROMIS]"
 * item[=].item[=].text = "...fiel es mir schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -378,7 +378,7 @@ Usage: #definition
 // Anxiety Item 3
 * item[=].item[+].linkId = "promis-edanx41"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61938-7 "In the past 7 days - My worries overwhelmed me"
+* item[=].item[=].code = $LNC#61942-9 "My worries overwhelmed me in past 7 days [PROMIS]"
 * item[=].item[=].text = "...überwältigten mich meine Sorgen"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -424,7 +424,7 @@ Usage: #definition
 // Anxiety Item 4
 * item[=].item[+].linkId = "promis-edanx53"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61949-4 "In the past 7 days - I felt uneasy"
+* item[=].item[=].code = $LNC#61949-4 "I felt uneasy in past 7 days [PROMIS]"
 * item[=].item[=].text = "...fühlte ich mich unruhig"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -479,7 +479,7 @@ Usage: #definition
 // Depression Item 1
 * item[=].item[+].linkId = "promis-eddep04"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61953-6 "In the past 7 days - I felt worthless"
+* item[=].item[=].code = $LNC#61953-6 "I felt worthless in past 7 days [PROMIS]"
 * item[=].item[=].text = "...fühlte ich mich wertlos"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -525,7 +525,7 @@ Usage: #definition
 // Depression Item 2
 * item[=].item[+].linkId = "promis-eddep06"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61955-1 "In the past 7 days - I felt helpless"
+* item[=].item[=].code = $LNC#61955-1 "I felt helpless in past 7 days [PROMIS]"
 * item[=].item[=].text = "...fühlte ich mich hilflos"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -571,7 +571,7 @@ Usage: #definition
 // Depression Item 3
 * item[=].item[+].linkId = "promis-eddep29"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61967-6 "In the past 7 days - I felt depressed"
+* item[=].item[=].code = $LNC#61967-6 "I felt depressed in past 7 days [PROMIS]"
 * item[=].item[=].text = "...fühlte ich mich deprimiert"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -617,7 +617,7 @@ Usage: #definition
 // Depression Item 4
 * item[=].item[+].linkId = "promis-eddep41"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61973-4 "In the past 7 days - I felt hopeless"
+* item[=].item[=].code = $LNC#61973-4 "I felt hopeless in past 7 days [PROMIS]"
 * item[=].item[=].text = "...fühlte ich mich hoffnungslos"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -764,7 +764,7 @@ Usage: #definition
 // Fatigue Item 3
 * item[=].item[+].linkId = "promis-fatexp41"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61863-7 "In the past 7 days - How run-down did you feel on average?"
+* item[=].item[=].code = $LNC#61863-7 "How fatigued were you on the day you felt most fatigued in past 7 days [PROMIS]"
 * item[=].item[=].text = "...wie abgeschlagen fühlten Sie sich im Durchschnitt?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA13868-6 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -810,7 +810,7 @@ Usage: #definition
 // Fatigue Item 4
 * item[=].item[+].linkId = "promis-fatexp40"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61864-5 "In the past 7 days - How fatigued were you on average?"
+* item[=].item[=].code = $LNC#61864-5 "How fatigued were you on average in past 7 days [PROMIS]"
 * item[=].item[=].text = "...wie erschöpft waren Sie im Durchschnitt?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA13868-6 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -865,7 +865,7 @@ Usage: #definition
 // Sleep Item 1
 * item[=].item[+].linkId = "promis-sleep109"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61987-4 "In the past 7 days - My sleep quality was..."
+* item[=].item[=].code = $LNC#61987-4 "My sleep quality was...in past 7 days [PROMIS]"
 * item[=].item[=].text = "...war meine Schlafqualität..."
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA13870-2 "Very poor"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -911,7 +911,7 @@ Usage: #definition
 // Sleep Item 2
 * item[=].item[+].linkId = "promis-sleep116"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61986-6 "In the past 7 days - My sleep was refreshing"
+* item[=].item[=].code = $LNC#61986-6 "My sleep was refreshing in past 7 days [PROMIS]"
 * item[=].item[=].text = "...war mein Schlaf erholsam"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -957,7 +957,7 @@ Usage: #definition
 // Sleep Item 3
 * item[=].item[+].linkId = "promis-sleep20"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61998-1 "In the past 7 days - I had a problem with my sleep"
+* item[=].item[=].code = $LNC#61998-1 "I had a problem with my sleep 7 days [PROMIS]"
 * item[=].item[=].text = "...hatte ich Probleme mit meinem Schlaf"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1003,7 +1003,7 @@ Usage: #definition
 // Sleep Item 4
 * item[=].item[+].linkId = "promis-sleep44"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61999-9 "In the past 7 days - I had difficulty falling asleep"
+* item[=].item[=].code = $LNC#61999-9 "I had difficulty falling asleep in past 7 days [PROMIS]"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten beim Einschlafen"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1058,7 +1058,7 @@ Usage: #definition
 // Social Function Item 1
 * item[=].item[+].linkId = "promis-srpper23-caps"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#62041-9 "In the past 7 days - I am satisfied with how much work I can do (include work at home)"
+* item[=].item[=].code = $LNC#62041-9 "I was satisfied with how much work I can do (include work at home) in past 7 days [PROMIS]"
 * item[=].item[=].text = "...war ich zufrieden damit, wie viel Arbeit ich schaffen konnte (einschließlich Hausarbeit)"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1297,7 +1297,7 @@ Usage: #definition
 // Pain Interference Item 1
 * item[=].item[+].linkId = "promis-painin9"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61758-9 "In the past 7 days - How much did pain interfere with your day to day activities?"
+* item[=].item[=].code = $LNC#61758-9 "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
 * item[=].item[=].text = "...Ihre alltäglichen Aktivitäten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA13868-6 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1343,7 +1343,7 @@ Usage: #definition
 // Pain Interference Item 2
 * item[=].item[+].linkId = "promis-painin22"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61769-6 "In the past 7 days - How much did pain interfere with work around the home?"
+* item[=].item[=].code = $LNC#61769-6 "How much did pain interfere with work around the home in past 7 days [PROMIS]"
 * item[=].item[=].text = "...Arbeiten rund um das Haus?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA13868-6 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1389,7 +1389,7 @@ Usage: #definition
 // Pain Interference Item 3
 * item[=].item[+].linkId = "promis-painin31"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61773-8 "In the past 7 days - How much did pain interfere with your ability to participate in social activities?"
+* item[=].item[=].code = $LNC#61773-8 "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
 * item[=].item[=].text = "...Ihre Fähigkeit zur Teilnahme an sozialen Aktivitäten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA13868-6 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1435,7 +1435,7 @@ Usage: #definition
 // Pain Interference Item 4
 * item[=].item[+].linkId = "promis-painin34"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61775-3 "In the past 7 days - How much did pain interfere with your household chores?"
+* item[=].item[=].code = $LNC#61775-3 "How much did pain interfere with your household chores in past 7 days [PROMIS]"
 * item[=].item[=].text = "...Ihre Hausarbeiten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA13868-6 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1486,7 +1486,7 @@ Usage: #definition
 // Pain Intensity Item (0-10 Scale)
 * item[=].item[+].linkId = "promis-global07"
 * item[=].item[=].type = #integer
-* item[=].item[=].code = $LNC#61583-1 "In the past 7 days - How would you rate your pain on average?"
+* item[=].item[=].code = $LNC#61583-1 "How would you rate your pain on average in past 7 days [PROMIS]"
 * item[=].item[=].text = "In den vergangenen 7 Tagen - Wie würden Sie Ihre Schmerzen im Durchschnitt bewerten?"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
