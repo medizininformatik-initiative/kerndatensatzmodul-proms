@@ -8,6 +8,6 @@ Description: "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Profile"
 
 * permittedDataType = #string
 * multipleResultsAllowed = false
-* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)" 
+* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire" 
 // add reference https://doi.org/10.1016/j.jad.2017.08.060 for developmental publication
 

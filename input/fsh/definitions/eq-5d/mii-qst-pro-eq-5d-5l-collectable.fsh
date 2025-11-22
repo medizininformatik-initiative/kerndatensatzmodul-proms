@@ -9,7 +9,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
-* code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
+* code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
 * version = "2026.0.0-ballot"
 // TODO: date, publisher, copyright, etc.
 

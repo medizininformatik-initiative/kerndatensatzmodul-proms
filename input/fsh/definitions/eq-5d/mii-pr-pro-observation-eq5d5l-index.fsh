@@ -18,7 +18,7 @@ Description: "Profile for EQ-5D-5L Index Score Observations with German value se
 * valueQuantity.system = $UCUM (exactly)
 * valueQuantity.code = #1 (exactly)
 
-* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
+* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
 * method MS
 
 // Link to ObservationDefinition that defines reference ranges and measurement details

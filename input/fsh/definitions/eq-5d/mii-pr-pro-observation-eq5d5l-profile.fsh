@@ -18,7 +18,7 @@ Description: "Profile for EQ-5D-5L Profile String Observations (e.g., '11111')"
 * valueString ^short = "5-digit profile string (e.g., '11111', '21232')"
 * valueString ^definition = "String representation of the 5 dimension responses, where each digit represents the level chosen for that dimension (1-5)"
 
-* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
+* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
 * method MS
 
 // Link to ObservationDefinition that defines measurement details

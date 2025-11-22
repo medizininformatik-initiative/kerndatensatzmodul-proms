@@ -8,7 +8,7 @@ Description: "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS)
 * code.coding[mii] = $mii-cs-pro-score-catalogue#euroqol-eq5d5l-vas "EuroQol EQ-5D-5L Visual Analog Scale (VAS) Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
-* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire (assessment scale)"
+* method = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
 * quantitativeDetails.unit = $UCUM#1 
 * quantitativeDetails.decimalPrecision = 0
 * qualifiedInterval.category = #absolute
