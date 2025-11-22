@@ -2,37 +2,83 @@ Instance: mii-exa-pro-phq-9-response
 InstanceOf: MII_PR_PRO_QuestionnaireResponse
 Title: "PHQ-9 Questionnaire Response Example"
 * status = #completed
+* language = #de
 * subject = Reference(Patient/example-patient)
 * authored = "2023-10-01T12:00:00Z"
 * questionnaire = $mii-qst-pro-phq-9
 
 // Severe depression responses (score = 27)
 * item[+].linkId = "phq-phq9-q01" // Little interest or pleasure
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
-* item[+].linkId = "phq-phq9-q02" // Feeling down, depressed  
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[+].linkId = "phq-phq9-q02" // Feeling down, depressed
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 * item[+].linkId = "phq-phq9-q03" // Sleep problems
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 * item[+].linkId = "phq-phq9-q04" // Feeling tired
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 * item[+].linkId = "phq-phq9-q05" // Poor appetite
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 * item[+].linkId = "phq-phq9-q06" // Feeling bad about yourself
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 * item[+].linkId = "phq-phq9-q07" // Trouble concentrating
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 * item[+].linkId = "phq-phq9-q08" // Moving/speaking slowly
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 * item[+].linkId = "phq-phq9-q09" // Thoughts of death
-* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Beinahe jeden Tag" // Nearly every day (3)
+* item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Beinahe jeden Tag"
 
 // Total score: 9 questions × 3 points = 27 (severe depression)
 // Note: Unit {score} is defined in the Questionnaire via questionnaire-unit extension
@@ -40,4 +86,9 @@ Title: "PHQ-9 Questionnaire Response Example"
 * item[=].answer[0].valueDecimal = 27
 
 * item[+].linkId = "phq-phq9-q10" // Functional impairment
-* item[=].answer[0].valueCoding = $LNC#LA6574-3 "Sehr stark erschwert" // Extremely difficult (not scored)
+* item[=].answer[0].valueCoding = $LNC#LA6574-3 "Extremely difficult"
+* item[=].answer[0].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "lang"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueCode = #de
+* item[=].answer[0].valueCoding.extension[=].extension[+].url = "content"
+* item[=].answer[0].valueCoding.extension[=].extension[=].valueString = "Sehr stark erschwert"
