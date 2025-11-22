@@ -80,7 +80,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?"
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13912-3 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -88,7 +88,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Kann ich gar nicht"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10054-7 "With much difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13919-8 "With much difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -96,7 +96,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit großen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10053-9 "With some difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13920-6 "With some difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -104,7 +104,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit einigen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10052-1 "With a little difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13918-0 "With a little difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -112,7 +112,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit geringen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10051-3 "Without any difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13921-4 "Without any difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -131,7 +131,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13912-3 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -139,7 +139,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Kann ich gar nicht"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10054-7 "With much difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13919-8 "With much difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -147,7 +147,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit großen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10053-9 "With some difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13920-6 "With some difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -155,7 +155,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit einigen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10052-1 "With a little difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13918-0 "With a little difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -163,7 +163,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit geringen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10051-3 "Without any difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13921-4 "Without any difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -182,7 +182,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie mindestens 15 Minuten lang spazieren gehen?"
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13912-3 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -190,7 +190,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Kann ich gar nicht"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10054-7 "With much difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13919-8 "With much difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -198,7 +198,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit großen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10053-9 "With some difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13920-6 "With some difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -206,7 +206,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit einigen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10052-1 "With a little difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13918-0 "With a little difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -214,7 +214,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit geringen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10051-3 "Without any difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13921-4 "Without any difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -233,7 +233,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie Besorgungen machen und einkaufen gehen?"
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10055-4 "Unable to do"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13912-3 "Unable to do"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -241,7 +241,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Kann ich gar nicht"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 1
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10054-7 "With much difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13919-8 "With much difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -249,7 +249,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit großen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10053-9 "With some difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13920-6 "With some difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -257,7 +257,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit einigen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10052-1 "With a little difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13918-0 "With a little difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -265,7 +265,7 @@ Usage: #definition
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Mit geringen Schwierigkeiten"
 * item[=].item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].item[=].answerOption[+].valueCoding = $LNC#LA10051-3 "Without any difficulty"
+* item[=].item[=].answerOption[+].valueCoding = $LNC#LA13921-4 "Without any difficulty"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
@@ -1503,7 +1503,7 @@ Usage: #definition
 // Physical Function Raw Score
 * item[=].item[+].linkId = "promis-29-physical-function-raw"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71960-9 "PROMIS-29 Physical Function, raw score"
+* item[=].item[=].code = $LNC#71960-9 "PROMIS-29 Physical function score"
 * item[=].item[=].text = "PROMIS-29 Körperliche Funktion - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
@@ -1517,7 +1517,7 @@ Usage: #definition
 // Physical Function T-Score
 * item[=].item[+].linkId = "promis-29-physical-function-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#91721-1 "PROMIS physical function - version 2.0 Tscore"
+* item[=].item[=].code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Körperliche Funktion - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -1529,7 +1529,7 @@ Usage: #definition
 // Anxiety Raw Score  
 * item[=].item[+].linkId = "promis-29-anxiety-raw"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71968-2 "PROMIS-29 Anxiety, raw score"
+* item[=].item[=].code = $LNC#71968-2 "PROMIS-29 Anxiety score"
 * item[=].item[=].text = "PROMIS-29 Angst - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
@@ -1555,7 +1555,7 @@ Usage: #definition
 // Depression Raw Score
 * item[=].item[+].linkId = "promis-29-depression-raw"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71966-6 "PROMIS-29 Depression, raw score"
+* item[=].item[=].code = $LNC#71966-6 "PROMIS-29 Depression score"
 * item[=].item[=].text = "PROMIS-29 Depression - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
@@ -1569,7 +1569,7 @@ Usage: #definition
 // Depression T-Score
 * item[=].item[+].linkId = "promis-29-depression-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
+* item[=].item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Depression - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -1581,7 +1581,7 @@ Usage: #definition
 // Fatigue Raw Score
 * item[=].item[+].linkId = "promis-29-fatigue-raw"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71964-1 "PROMIS-29 Fatigue, raw score"
+* item[=].item[=].code = $LNC#71964-1 "PROMIS-29 Fatigue score"
 * item[=].item[=].text = "PROMIS-29 Erschöpfung - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
@@ -1595,7 +1595,7 @@ Usage: #definition
 // Fatigue T-Score
 * item[=].item[+].linkId = "promis-29-fatigue-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
+* item[=].item[=].code = $LNC#77864-7 "PROMIS fatigue - version 1.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Erschöpfung - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -1607,7 +1607,7 @@ Usage: #definition
 // Sleep Disturbance Raw Score
 * item[=].item[+].linkId = "promis-29-sleep-raw"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71956-7 "PROMIS-29 Sleep Disturbance, raw score"
+* item[=].item[=].code = $LNC#71956-7 "PROMIS-29 Sleep disturbance score"
 * item[=].item[=].text = "PROMIS-29 Schlafstörungen - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
@@ -1621,7 +1621,7 @@ Usage: #definition
 // Sleep Disturbance T-Score
 * item[=].item[+].linkId = "promis-29-sleep-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
+* item[=].item[=].code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Schlafstörungen - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -1633,7 +1633,7 @@ Usage: #definition
 // Social Function Raw Score
 * item[=].item[+].linkId = "promis-29-social-raw"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71958-3 "PROMIS-29 Satisfaction with Participation in Social Roles, raw score"
+* item[=].item[=].code = $LNC#71958-3 "PROMIS-29 Satisfaction with participation in social roles score"
 * item[=].item[=].text = "PROMIS-29 Soziale Teilhabe - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
@@ -1647,7 +1647,7 @@ Usage: #definition
 // Social Function T-Score
 * item[=].item[+].linkId = "promis-29-social-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+* item[=].item[=].code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Soziale Teilhabe - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -1659,7 +1659,7 @@ Usage: #definition
 // Pain Interference Raw Score
 * item[=].item[+].linkId = "promis-29-pain-interference-raw"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71962-5 "PROMIS-29 Pain Interference, raw score"
+* item[=].item[=].code = $LNC#71962-5 "PROMIS-29 Pain interference score"
 * item[=].item[=].text = "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
@@ -1673,7 +1673,7 @@ Usage: #definition
 // Pain Interference T-Score
 * item[=].item[+].linkId = "promis-29-pain-interference-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
+* item[=].item[=].code = $LNC#77865-4 "PROMIS pain interference - version 1.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression

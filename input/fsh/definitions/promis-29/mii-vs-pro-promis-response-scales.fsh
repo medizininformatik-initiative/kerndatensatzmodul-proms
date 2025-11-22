@@ -1,97 +1,100 @@
 // ===== PROMIS Response Scale ValueSets =====
 
-// Physical Function Response Scale (German)
+// Physical Function Response Scale (LOINC LL1022-4)
 ValueSet: MII_VS_PRO_PROMIS_Physical_Function_Response_Scale
 Id: mii-vs-pro-promis-physical-function-response-scale
 Title: "MII VS PRO PROMIS Physical Function Response Scale"
-Description: "PROMIS Physical Function response scale: Kann ich gar nicht - Ohne jede Schwierigkeiten"
+Description: "PROMIS Physical Function response scale based on LOINC LL1022-4"
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^language = #de
-* $LNC#LA10055-4 "Kann ich gar nicht"
-* $LNC#LA10054-7 "Mit großen Schwierigkeiten"
-* $LNC#LA10053-9 "Mit einigen Schwierigkeiten"
-* $LNC#LA10052-1 "Mit geringen Schwierigkeiten"
-* $LNC#LA10051-3 "Ohne jede Schwierigkeiten"
+* ^language = #en
+* ^compose.include.system = $LNC
+* ^compose.include.concept[+].code = #LA13921-4
+* ^compose.include.concept[=].display = "Without any difficulty"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Ohne jede Schwierigkeiten"
+* ^compose.include.concept[+].code = #LA13918-0
+* ^compose.include.concept[=].display = "With a little difficulty"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Mit geringen Schwierigkeiten"
+* ^compose.include.concept[+].code = #LA13920-6
+* ^compose.include.concept[=].display = "With some difficulty"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Mit einigen Schwierigkeiten"
+* ^compose.include.concept[+].code = #LA13919-8
+* ^compose.include.concept[=].display = "With much difficulty"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Mit großen Schwierigkeiten"
+* ^compose.include.concept[+].code = #LA13912-3
+* ^compose.include.concept[=].display = "Unable to do"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Kann ich gar nicht"
 
-// Frequency Response Scale (German)
+// Frequency Response Scale (LOINC LL1016-6)
 ValueSet: MII_VS_PRO_PROMIS_Frequency_Response_Scale
 Id: mii-vs-pro-promis-frequency-response-scale
 Title: "MII VS PRO PROMIS Frequency Response Scale"
-Description: "PROMIS Frequency response scale: Nie - Immer"
+Description: "PROMIS Frequency response scale based on LOINC LL1016-6"
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^language = #de
-* $LNC#LA6270-8 "Nie"
-* $LNC#LA10066-1 "Selten"
-* $LNC#LA10082-8 "Manchmal"
-* $LNC#LA10044-8 "Oft"
-* $LNC#LA9933-8 "Immer"
+* ^language = #en
+* ^compose.include.system = $LNC
+* ^compose.include.concept[+].code = #LA6270-8
+* ^compose.include.concept[=].display = "Never"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Nie"
+* ^compose.include.concept[+].code = #LA10066-1
+* ^compose.include.concept[=].display = "Rarely"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Selten"
+* ^compose.include.concept[+].code = #LA10082-8
+* ^compose.include.concept[=].display = "Sometimes"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Manchmal"
+* ^compose.include.concept[+].code = #LA10044-8
+* ^compose.include.concept[=].display = "Often"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Oft"
+* ^compose.include.concept[+].code = #LA9933-8
+* ^compose.include.concept[=].display = "Always"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Immer"
 
-// Intensity Response Scale (German)
-ValueSet: MII_VS_PRO_PROMIS_Intensity_Response_Scale
-Id: mii-vs-pro-promis-intensity-response-scale
-Title: "MII VS PRO PROMIS Intensity Response Scale"
-Description: "PROMIS Intensity response scale: Überhaupt nicht - Sehr"
-* insert PR_CS_VS_Version
-* ^status = #active
-* ^experimental = true
-* ^language = #de
-* $LNC#LA13868-6 "Überhaupt nicht"
-* $LNC#LA13909-8 "Ein wenig"
-* $LNC#LA13902-3 "Mäßig"
-* $LNC#LA13903-1 "Ziemlich"
-* $LNC#LA13870-2 "Sehr"
-
-// Quality Response Scale (German)
-ValueSet: MII_VS_PRO_PROMIS_Quality_Response_Scale
-Id: mii-vs-pro-promis-quality-response-scale
-Title: "MII VS PRO PROMIS Quality Response Scale"
-Description: "PROMIS Quality response scale: Schlecht - Ausgezeichnet"
-* insert PR_CS_VS_Version
-* ^status = #active
-* ^experimental = true
-* ^language = #de
-* $LNC#LA9956-9 "Schlecht"
-* $LNC#LA13896-7 "Mäßig"
-* $LNC#LA13938-7 "Gut"
-* $LNC#LA13914-8 "Sehr gut"
-* $LNC#LA13870-2 "Ausgezeichnet"
-
-// Sleep Quality Response Scale (German)
-ValueSet: MII_VS_PRO_PROMIS_Sleep_Quality_Response_Scale
-Id: mii-vs-pro-promis-sleep-quality-response-scale
-Title: "MII VS PRO PROMIS Sleep Quality Response Scale"
-Description: "PROMIS Sleep Quality response scale: Sehr schlecht - Sehr gut"
-* insert PR_CS_VS_Version
-* ^status = #active
-* ^experimental = true
-* ^language = #de
-* $LNC#LA13870-2 "Sehr schlecht"
-* $LNC#LA9956-9 "Schlecht"
-* $LNC#LA13896-7 "Mäßig"
-* $LNC#LA13938-7 "Gut"
-* $LNC#LA13914-8 "Sehr gut"
-
-// Pain Intensity Numeric Scale (German)
+// Pain Intensity Numeric Scale (LOINC)
 ValueSet: MII_VS_PRO_PROMIS_Pain_Intensity_Numeric_Scale
 Id: mii-vs-pro-promis-pain-intensity-numeric-scale
 Title: "MII VS PRO PROMIS Pain Intensity Numeric Scale"
-Description: "PROMIS Pain Intensity numeric scale: 0 (Keine Schmerzen) - 10 (Schlimmste vorstellbare Schmerzen)"
+Description: "PROMIS Pain Intensity numeric scale: 0-10"
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^language = #de
-* $LNC#LA6111-4 "0 - Keine Schmerzen"
-* $LNC#LA6112-2 "1"
-* $LNC#LA6113-0 "2"
-* $LNC#LA6114-8 "3"
-* $LNC#LA6115-5 "4"
-* $LNC#LA6116-3 "5"
-* $LNC#LA6117-1 "6"
-* $LNC#LA6118-9 "7"
-* $LNC#LA6119-7 "8"
-* $LNC#LA6120-5 "9"
-* $LNC#LA13942-9 "10 - Schlimmste vorstellbare Schmerzen"
+* ^language = #en
+* ^compose.include.system = $LNC
+* ^compose.include.concept[+].code = #LA6111-4
+* ^compose.include.concept[=].display = "0"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "0 - Keine Schmerzen"
+* ^compose.include.concept[+].code = #LA6112-2
+* ^compose.include.concept[=].display = "1"
+* ^compose.include.concept[+].code = #LA6113-0
+* ^compose.include.concept[=].display = "2"
+* ^compose.include.concept[+].code = #LA6114-8
+* ^compose.include.concept[=].display = "3"
+* ^compose.include.concept[+].code = #LA6115-5
+* ^compose.include.concept[=].display = "4"
+* ^compose.include.concept[+].code = #LA6116-3
+* ^compose.include.concept[=].display = "5"
+* ^compose.include.concept[+].code = #LA6117-1
+* ^compose.include.concept[=].display = "6"
+* ^compose.include.concept[+].code = #LA6118-9
+* ^compose.include.concept[=].display = "7"
+* ^compose.include.concept[+].code = #LA6119-7
+* ^compose.include.concept[=].display = "8"
+* ^compose.include.concept[+].code = #LA6120-5
+* ^compose.include.concept[=].display = "9"
+* ^compose.include.concept[+].code = #LA13942-9
+* ^compose.include.concept[=].display = "10"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "10 - Schlimmste vorstellbare Schmerzen"

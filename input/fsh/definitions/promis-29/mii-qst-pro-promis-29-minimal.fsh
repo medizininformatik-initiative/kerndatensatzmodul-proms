@@ -9,7 +9,7 @@ Usage: #definition
 * experimental = true
 * language = #de
 * version = "2026.0.0-ballot"
-* code = $LNC#71968-5 "PROMIS-29 Profile v2.1"
+* code = $LNC#62337-1 "PROMIS item bank - 29 profile"
 
 // Capabilities: displayable, collectable only
 * extension[capabilities].extension[displayable].valueBoolean = true
@@ -116,7 +116,7 @@ Usage: #definition
 // EDANX01 - Feel fearful
 * item[=].item[=].item[+].linkId = "promis-edanx01"
 * item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].code = $LNC#71951-1
+* item[=].item[=].item[=].code = $LNC#61923-9 "I felt fearful in past 7 days [PROMIS]"
 * item[=].item[=].item[=].text = "I felt fearful"
 * item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
@@ -129,7 +129,7 @@ Usage: #definition
 // EDANX40 - Anxious
 * item[=].item[=].item[+].linkId = "promis-edanx40"
 * item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].code = $LNC#71949-5
+* item[=].item[=].item[=].code = $LNC#61941-1 "I found it hard to focus on anything other than my anxiety in past 7 days [PROMIS]"
 * item[=].item[=].item[=].text = "I found it hard to focus on anything other than my anxiety"
 * item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
@@ -142,7 +142,7 @@ Usage: #definition
 // EDANX41 - Worries overwhelmed
 * item[=].item[=].item[+].linkId = "promis-edanx41"
 * item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].code = $LNC#71950-3
+* item[=].item[=].item[=].code = $LNC#61942-9 "My worries overwhelmed me in past 7 days [PROMIS]"
 * item[=].item[=].item[=].text = "My worries overwhelmed me"
 * item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"
@@ -155,7 +155,7 @@ Usage: #definition
 // EDANX53 - Uneasy
 * item[=].item[=].item[+].linkId = "promis-edanx53"
 * item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].code = $LNC#71948-7
+* item[=].item[=].item[=].code = $LNC#61949-4 "I felt uneasy in past 7 days [PROMIS]"
 * item[=].item[=].item[=].text = "I felt uneasy"
 * item[=].item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "lang"

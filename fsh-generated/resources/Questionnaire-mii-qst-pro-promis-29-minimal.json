@@ -11,9 +11,9 @@
   "description": "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
   "code": [
     {
-      "code": "71968-5",
+      "code": "62337-1",
       "system": "http://loinc.org",
-      "display": "PROMIS-29 Profile v2.1"
+      "display": "PROMIS item bank - 29 profile"
     }
   ],
   "extension": [
@@ -220,8 +220,9 @@
             {
               "code": [
                 {
-                  "code": "71951-1",
-                  "system": "http://loinc.org"
+                  "code": "61923-9",
+                  "system": "http://loinc.org",
+                  "display": "I felt fearful in past 7 days [PROMIS]"
                 }
               ],
               "linkId": "promis-edanx01",
@@ -250,8 +251,9 @@
             {
               "code": [
                 {
-                  "code": "71949-5",
-                  "system": "http://loinc.org"
+                  "code": "61941-1",
+                  "system": "http://loinc.org",
+                  "display": "I found it hard to focus on anything other than my anxiety in past 7 days [PROMIS]"
                 }
               ],
               "linkId": "promis-edanx40",
@@ -280,8 +282,9 @@
             {
               "code": [
                 {
-                  "code": "71950-3",
-                  "system": "http://loinc.org"
+                  "code": "61942-9",
+                  "system": "http://loinc.org",
+                  "display": "My worries overwhelmed me in past 7 days [PROMIS]"
                 }
               ],
               "linkId": "promis-edanx41",
@@ -310,8 +313,9 @@
             {
               "code": [
                 {
-                  "code": "71948-7",
-                  "system": "http://loinc.org"
+                  "code": "61949-4",
+                  "system": "http://loinc.org",
+                  "display": "I felt uneasy in past 7 days [PROMIS]"
                 }
               ],
               "linkId": "promis-edanx53",

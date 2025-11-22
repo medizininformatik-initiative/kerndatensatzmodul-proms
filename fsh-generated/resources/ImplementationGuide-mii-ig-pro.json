@@ -943,15 +943,7 @@
           "reference": "ValueSet/mii-vs-pro-promis-frequency-response-scale"
         },
         "name": "MII VS PRO PROMIS Frequency Response Scale",
-        "description": "PROMIS Frequency response scale: Nie - Immer",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-pro-promis-intensity-response-scale"
-        },
-        "name": "MII VS PRO PROMIS Intensity Response Scale",
-        "description": "PROMIS Intensity response scale: Überhaupt nicht - Sehr",
+        "description": "PROMIS Frequency response scale based on LOINC LL1016-6",
         "exampleBoolean": false
       },
       {
@@ -959,7 +951,7 @@
           "reference": "ValueSet/mii-vs-pro-promis-pain-intensity-numeric-scale"
         },
         "name": "MII VS PRO PROMIS Pain Intensity Numeric Scale",
-        "description": "PROMIS Pain Intensity numeric scale: 0 (Keine Schmerzen) - 10 (Schlimmste vorstellbare Schmerzen)",
+        "description": "PROMIS Pain Intensity numeric scale: 0-10",
         "exampleBoolean": false
       },
       {
@@ -967,23 +959,7 @@
           "reference": "ValueSet/mii-vs-pro-promis-physical-function-response-scale"
         },
         "name": "MII VS PRO PROMIS Physical Function Response Scale",
-        "description": "PROMIS Physical Function response scale: Kann ich gar nicht - Ohne jede Schwierigkeiten",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-pro-promis-quality-response-scale"
-        },
-        "name": "MII VS PRO PROMIS Quality Response Scale",
-        "description": "PROMIS Quality response scale: Schlecht - Ausgezeichnet",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-pro-promis-sleep-quality-response-scale"
-        },
-        "name": "MII VS PRO PROMIS Sleep Quality Response Scale",
-        "description": "PROMIS Sleep Quality response scale: Sehr schlecht - Sehr gut",
+        "description": "PROMIS Physical Function response scale based on LOINC LL1022-4",
         "exampleBoolean": false
       },
       {

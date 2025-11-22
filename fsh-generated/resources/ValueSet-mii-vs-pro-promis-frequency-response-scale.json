@@ -4,11 +4,11 @@
   "name": "MII_VS_PRO_PROMIS_Frequency_Response_Scale",
   "id": "mii-vs-pro-promis-frequency-response-scale",
   "title": "MII VS PRO PROMIS Frequency Response Scale",
-  "description": "PROMIS Frequency response scale: Nie - Immer",
+  "description": "PROMIS Frequency response scale based on LOINC LL1016-6",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale",
   "version": "2026.0.0-ballot",
   "experimental": true,
-  "language": "de",
+  "language": "en",
   "compose": {
     "include": [
       {
@@ -16,23 +16,53 @@
         "concept": [
           {
             "code": "LA6270-8",
-            "display": "Nie"
+            "display": "Never",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Nie"
+              }
+            ]
           },
           {
             "code": "LA10066-1",
-            "display": "Selten"
+            "display": "Rarely",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Selten"
+              }
+            ]
           },
           {
             "code": "LA10082-8",
-            "display": "Manchmal"
+            "display": "Sometimes",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Manchmal"
+              }
+            ]
           },
           {
             "code": "LA10044-8",
-            "display": "Oft"
+            "display": "Often",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Oft"
+              }
+            ]
           },
           {
             "code": "LA9933-8",
-            "display": "Immer"
+            "display": "Always",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Immer"
+              }
+            ]
           }
         ]
       }

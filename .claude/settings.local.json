@@ -6,9 +6,16 @@
       "Bash(gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs/*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "mcp__terminology__lookup_loinc_answer_code",
+      "mcp__terminology__lookup_code",
+      "mcp__terminology__search_codes"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "terminology"
+  ]
 }
