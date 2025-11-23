@@ -39,7 +39,7 @@ Usage: #definition
 // Item 1: PC2r - Slow thinking
 * item[=].item[+].linkId = "promis-cognition-pc2r"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#81461-6 "In the past 7 days - My thinking has been slow"
+* item[=].item[=].code = $LNC#81461-6 "My thinking has been slow in past 7 days [PROMIS]"
 * item[=].item[=].text = "My thinking has been slow"
 * item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].text.extension[=].extension[+].url = "lang"
@@ -91,7 +91,7 @@ Usage: #definition
 // Item 2: PC35r - Brain not functioning well
 * item[=].item[+].linkId = "promis-cognition-pc35r"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#81478-0 "In the past 7 days - It has seemed like my brain was not working as well as usual"
+* item[=].item[=].code = $LNC#81478-0 "It has seemed like my brain was not working as well as usual in past 7 days [PROMIS]"
 * item[=].item[=].text = "It has seemed like my brain was not working as well as usual"
 * item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].text.extension[=].extension[+].url = "lang"
@@ -143,7 +143,7 @@ Usage: #definition
 // Item 3: PC36r - Need more effort to keep track
 * item[=].item[+].linkId = "promis-cognition-pc36r"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#81479-8 "In the past 7 days - I have had to work harder than usual to keep track of what I was doing"
+* item[=].item[=].code = $LNC#81479-8 "I have had to work harder than usual to keep track of what I was doing in past 7 days [PROMIS]"
 * item[=].item[=].text = "I have had to work harder than usual to keep track of what I was doing"
 * item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].text.extension[=].extension[+].url = "lang"
@@ -195,7 +195,7 @@ Usage: #definition
 // Item 4: PC42r - Difficulty switching between activities
 * item[=].item[+].linkId = "promis-cognition-pc42r"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#81485-5 "In the past 7 days - I have had trouble shifting back and forth between different activities that require thinking"
+* item[=].item[=].code = $LNC#81485-5 "I have had trouble shifting back and forth between different activities that require thinking in past 7 days [PROMIS]"
 * item[=].item[=].text = "I have had trouble shifting back and forth between different activities that require thinking"
 * item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].text.extension[=].extension[+].url = "lang"
@@ -262,7 +262,7 @@ Usage: #definition
 // T-Score calculation (would need lookup table for accurate conversion)
 * item[=].item[+].linkId = "promis-cognition-sf4a-t-score"
 * item[=].item[=].type = #quantity
-* item[=].item[=].code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 Tscore"
+* item[=].item[=].code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"
 * item[=].item[=].text = "PROMIS Cognitive Function SF 4a T-Score"
 * item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].text.extension[=].extension[+].url = "lang"

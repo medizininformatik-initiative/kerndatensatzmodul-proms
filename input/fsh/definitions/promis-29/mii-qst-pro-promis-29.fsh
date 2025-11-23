@@ -332,7 +332,7 @@ Usage: #definition
 // Anxiety Item 2
 * item[=].item[+].linkId = "promis-edanx40"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61941-1 "I found it hard to focus on anything other than my anxiety in past 7 days [PROMIS]"
+* item[=].item[=].code = $LNC#61941-1 "I found it hard to focus on anything other than my anxiety in past 7 days"
 * item[=].item[=].text = "...fiel es mir schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -378,7 +378,7 @@ Usage: #definition
 // Anxiety Item 3
 * item[=].item[+].linkId = "promis-edanx41"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61942-9 "My worries overwhelmed me in past 7 days [PROMIS]"
+* item[=].item[=].code = $LNC#61942-9 "My worries overwhelmed me in past 7 days"
 * item[=].item[=].text = "...überwältigten mich meine Sorgen"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -424,7 +424,7 @@ Usage: #definition
 // Anxiety Item 4
 * item[=].item[+].linkId = "promis-edanx53"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61949-4 "I felt uneasy in past 7 days [PROMIS]"
+* item[=].item[=].code = $LNC#61949-4 "I felt uneasy in past 7 days"
 * item[=].item[=].text = "...fühlte ich mich unruhig"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -672,7 +672,7 @@ Usage: #definition
 // Fatigue Item 1
 * item[=].item[+].linkId = "promis-hi7"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61878-5 "During the past 7 days - I feel fatigued"
+* item[=].item[=].code = $LNC#61878-5 "I feel fatigued during the past 7 days [PROMIS]"
 * item[=].item[=].text = "...fühlte ich mich erschöpft"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -718,7 +718,7 @@ Usage: #definition
 // Fatigue Item 2
 * item[=].item[+].linkId = "promis-an3"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#61882-7 "During the past 7 days - I have trouble starting things because I am tired"
+* item[=].item[=].code = $LNC#61882-7 "I had trouble starting things because I was tired in past 7 days [PROMIS]"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, Dinge anzufangen, weil ich müde war"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1104,7 +1104,7 @@ Usage: #definition
 // Social Function Item 2
 * item[=].item[+].linkId = "promis-srpper11-caps"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#75417-6 "I have trouble doing all of my regular leisure activities with others"
+* item[=].item[=].code = $LNC#75417-6 "I have trouble doing all of my regular leisure activities with others [PROMIS]"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, alle meine üblichen Freizeitaktivitäten mit anderen zu machen"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1150,7 +1150,7 @@ Usage: #definition
 // Social Function Item 3
 * item[=].item[+].linkId = "promis-srpper18-caps"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#76708-7 "I have trouble doing all of the family activities that I want to do"
+* item[=].item[=].code = $LNC#76708-7 "I have trouble doing all of the family activities that I want to do [PROMIS]"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, alle Familienaktivitäten zu machen, die ich machen wollte"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1242,7 +1242,7 @@ Usage: #definition
 */
 * item[=].item[+].linkId = "promis-srpper46-caps"
 * item[=].item[=].type = #choice
-* item[=].item[=].code = $LNC#76712-9 "I have trouble doing all of the activities with friends that I want to do"
+* item[=].item[=].code = $LNC#76712-9 "I have trouble doing all of the activities with friends that I want to do [PROMIS]"
 * item[=].item[=].text = "...hatte ich Schwierigkeiten, alle Aktivitäten mit Freunden zu machen, die ich machen wollte"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1517,7 +1517,7 @@ Usage: #definition
 // Physical Function T-Score
 * item[=].item[+].linkId = "promis-29-physical-function-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#91721-1 "PROMIS physical function - version 2.0 Tscore"
+* item[=].item[=].code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Körperliche Funktion - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -1543,7 +1543,7 @@ Usage: #definition
 // Anxiety T-Score
 * item[=].item[+].linkId = "promis-29-anxiety-tscore"
 * item[=].item[=].type = #decimal
-* item[=].item[=].code = $LNC#71967-4 "PROMIS-29 Anxiety score Tscore"
+* item[=].item[=].code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
 * item[=].item[=].text = "PROMIS-29 Angst - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
