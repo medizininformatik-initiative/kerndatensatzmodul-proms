@@ -50,7 +50,7 @@ Description: "PROMIS Depression T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
+* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -71,7 +71,7 @@ Description: "PROMIS Fatigue T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 T-score"
+* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -92,7 +92,7 @@ Description: "PROMIS Sleep Disturbance T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 T-score"
+* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -113,7 +113,7 @@ Description: "PROMIS Ability to Participate in Social Roles and Activities T-Sco
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 T-score"
+* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -134,7 +134,7 @@ Description: "PROMIS Pain Interference T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 T-score"
+* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"

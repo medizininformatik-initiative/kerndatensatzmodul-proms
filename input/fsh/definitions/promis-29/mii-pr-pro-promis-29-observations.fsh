@@ -69,7 +69,7 @@ Description: "Profile for PROMIS-29 Depression T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
+* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -98,7 +98,7 @@ Description: "Profile for PROMIS-29 Fatigue T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 T-score"
+* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -127,7 +127,7 @@ Description: "Profile for PROMIS-29 Sleep Disturbance T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 T-score"
+* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -156,7 +156,7 @@ Description: "Profile for PROMIS-29 Ability to Participate in Social Roles and A
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 T-score"
+* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -185,7 +185,7 @@ Description: "Profile for PROMIS-29 Pain Interference T-Score Observations"
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 T-score"
+* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
