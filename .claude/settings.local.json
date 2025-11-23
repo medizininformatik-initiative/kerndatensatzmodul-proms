@@ -4,19 +4,22 @@
       "Bash(cat:*)",
       "Bash(curl:*)",
       "Bash(gh api repos/medizininformatik-initiative/kerndatensatzmodul-proms/actions/runs/*)",
+      "Bash(gh run view:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "mcp__terminology__lookup_loinc_answer_code",
-      "mcp__terminology__lookup_code",
-      "mcp__terminology__search_codes",
-      "mcp__terminology__get_answer_list"
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git rebase:*)",
+      "Bash(git merge:*)",
+      "Bash(git stash:*)"
     ],
     "deny": [],
     "ask": []
-  },
-  "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "terminology"
-  ]
+  }
 }

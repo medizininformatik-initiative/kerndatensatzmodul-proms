@@ -8,7 +8,7 @@ Description: "PROMIS Physical Function T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#91721-1 "PROMIS physical function - version 2.0 Tscore"
+* code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -29,7 +29,7 @@ Description: "PROMIS Anxiety T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#71967-4 "PROMIS-29 Anxiety score Tscore"
+* code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -50,7 +50,7 @@ Description: "PROMIS Depression T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
+* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 T-score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -71,7 +71,7 @@ Description: "PROMIS Fatigue T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
+* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 T-score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -92,7 +92,7 @@ Description: "PROMIS Sleep Disturbance T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
+* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 T-score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -113,7 +113,7 @@ Description: "PROMIS Ability to Participate in Social Roles and Activities T-Sco
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 T-score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -134,7 +134,7 @@ Description: "PROMIS Pain Interference T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
+* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 T-score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -147,7 +147,7 @@ Usage: #definition
 * qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
 * qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher scores indicate more pain interference"
 
-// Pain Intensity (Single Item - 0-10 scale, not a Tscore)
+// Pain Intensity (Single Item - 0-10 scale, not a T-score)
 Instance: mii-obsdef-pro-promis-29-pain-intensity
 InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Pain Intensity"

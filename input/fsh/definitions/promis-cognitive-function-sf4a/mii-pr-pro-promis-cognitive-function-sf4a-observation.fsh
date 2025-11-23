@@ -45,7 +45,7 @@ Description: "Profile for PROMIS Cognitive Function Short Form 4a T-Score observ
 * ^status = #draft
 * ^experimental = true
 
-* code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 Tscore"
+* code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"
 * code MS
 
 * value[x] only Quantity
