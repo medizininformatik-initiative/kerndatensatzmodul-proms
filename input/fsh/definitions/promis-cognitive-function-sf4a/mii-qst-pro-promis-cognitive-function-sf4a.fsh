@@ -9,7 +9,7 @@ Usage: #definition
 * experimental = true
 * language = #en
 * version = "2026.0.0-ballot"
-* code = $LNC#71133-6 "PROMIS SF v2.0 - Cognitive Function 4a"
+* code = $LNC#81525-8 "PROMIS short form - cognitive function - abilities subset 4a - version 2.0"
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true
@@ -254,8 +254,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS Kognitive Funktion SF 4a Rohwert"
-* item[=].item[=].extension[+].url = $sdc-questionnaire-item-control-ex
-* item[=].item[=].extension[=].valueCodeableConcept = $sdc-questionnaire-item-control#readonly
+* item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
 * item[=].item[=].extension[=].valueExpression.expression = "%cognitiveRawScore"
@@ -270,8 +269,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS Kognitive Funktion SF 4a T-Score"
-* item[=].item[=].extension[+].url = $sdc-questionnaire-item-control-ex
-* item[=].item[=].extension[=].valueCodeableConcept = $sdc-questionnaire-item-control#readonly
+* item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
 // T-Score conversion based on PROMIS Cognitive Function Scoring Manual (June 2022)

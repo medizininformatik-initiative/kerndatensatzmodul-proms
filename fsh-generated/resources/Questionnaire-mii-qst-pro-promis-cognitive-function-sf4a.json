@@ -11,9 +11,9 @@
   "description": "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns",
   "code": [
     {
-      "code": "71133-6",
+      "code": "81525-8",
       "system": "http://loinc.org",
-      "display": "PROMIS SF v2.0 - Cognitive Function 4a"
+      "display": "PROMIS short form - cognitive function - abilities subset 4a - version 2.0"
     }
   ],
   "extension": [
@@ -810,17 +810,6 @@
           ],
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "readonly",
-                    "system": "http://hl7.org/fhir/questionnaire-item-control"
-                  }
-                ]
-              }
-            },
-            {
               "valueExpression": {
                 "language": "text/fhirpath",
                 "expression": "%cognitiveRawScore"
@@ -847,7 +836,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
+          },
+          "readOnly": true
         },
         {
           "code": [
@@ -858,17 +848,6 @@
             }
           ],
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "readonly",
-                    "system": "http://hl7.org/fhir/questionnaire-item-control"
-                  }
-                ]
-              }
-            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -896,7 +875,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
               }
             ]
-          }
+          },
+          "readOnly": true
         }
       ],
       "linkId": "PROMIS-CognitiveFunction-SF4a",
