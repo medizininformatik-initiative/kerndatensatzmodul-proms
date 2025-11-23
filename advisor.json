@@ -1,7 +1,9 @@
 {
   "suppress" : [
     "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
+    "UNABLE_TO_INFER_CODESYSTEM@ImplementationGuide.definition.parameter.code",
     "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    "CONTAINED_ORPHAN_DOM3",
     "UNABLE_TO_INFER_CODESYSTEM@StructureDefinition.*",
     "Terminology_TX_NoValid_16@StructureDefinition.*",
     "UNABLE_TO_INFER_CODESYSTEM@Questionnaire.*",
