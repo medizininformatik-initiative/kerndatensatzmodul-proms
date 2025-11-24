@@ -68,6 +68,19 @@ After all changes:
 - Create a single atomic commit with message: `chore: Prepare release v{VERSION}`
 - Ask user if they want to push the release branch
 
+## GitHub Token Requirements
+
+For `gh` CLI operations (PR creation, CI monitoring), a GitHub token with the following permissions is required:
+
+| Permission | Access Level | Purpose |
+|------------|--------------|---------|
+| **Contents** | Read and write | Push commits, create branches |
+| **Pull requests** | Read and write | Create/update PRs |
+| **Actions** | Read | Check CI/CD run status |
+| **Metadata** | Read | Required by default |
+
+Note: Token must be provided by MII repository owner via script workflow.
+
 ## Context
 
 The MII Module Release Workflow has 8 phases total. This command handles phases 1-3 (automated preparation). The remaining phases require manual intervention:
