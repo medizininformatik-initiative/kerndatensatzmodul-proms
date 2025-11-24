@@ -17,6 +17,9 @@ RuleSet: SP_Publisher
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.medizininformatik-initiative.de"
 
+RuleSet: SP_Profile
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+
 // License
 RuleSet: LicenseCodeableCCBY40
 * ^extension[+].url = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable"
