@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EORTC QLQ-C30 Variant B"
 Description: "EORTC QLQ-C30 Version 3.0 - Variant B: With contained CodeSystem and ValueSets referencing it via local reference #eortc-qlq-c30-cs-b"
 Usage: #definition
+* insert Version
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b"
 * status = #active
@@ -405,6 +406,7 @@ Usage: #definition
 Instance: eortc-qlq-c30-cs-b
 InstanceOf: CodeSystem
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
 * status = #active
 * content = #complete
@@ -493,6 +495,7 @@ Usage: #inline
 Instance: eortc-qlq-c30-4pt-b
 InstanceOf: ValueSet
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-variant-b"
 * status = #active
 * compose.include.system = "#eortc-qlq-c30-cs-b"
@@ -504,6 +507,7 @@ Usage: #inline
 Instance: eortc-qlq-c30-7pt-b
 InstanceOf: ValueSet
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-variant-b"
 * status = #active
 * compose.include.system = "#eortc-qlq-c30-cs-b"

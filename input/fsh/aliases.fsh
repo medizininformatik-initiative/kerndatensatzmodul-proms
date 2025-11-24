@@ -21,6 +21,9 @@ Alias: $hl7-questionnaire-option-prefix = http://hl7.org/fhir/StructureDefinitio
 Alias: $hl7-questionnaire-unit = http://hl7.org/fhir/StructureDefinition/questionnaire-unit
 Alias: $hl7-translation = http://hl7.org/fhir/StructureDefinition/translation
 
+// License
+Alias: $spdx-license = http://hl7.org/fhir/spdx-license
+
 // SDC Rendering
 Alias: $sdc-questionnaire-choice-orientation-ex = http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation
 Alias: $sdc-questionnaire-column-count-ex = http://hl7.org/fhir/StructureDefinition/questionnaire-columnCount

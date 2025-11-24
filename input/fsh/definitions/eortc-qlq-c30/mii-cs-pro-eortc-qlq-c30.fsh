@@ -3,9 +3,9 @@ Id: mii-cs-pro-eortc-qlq-c30
 Title: "MII CS PRO EORTC QLQ-C30 Response Scale"
 Description: "Response scale for EORTC QLQ-C30 questionnaire items with multilingual support"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
 * ^caseSensitive = true
 * ^content = #complete
 

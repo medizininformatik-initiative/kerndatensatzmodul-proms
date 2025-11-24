@@ -230,6 +230,7 @@
           "display": "7 - Perfect"
         }
       ],
+      "version": "2026.0.0-ballot",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
       "status": "active",
       "content": "complete",
@@ -259,6 +260,7 @@
           }
         ]
       },
+      "version": "2026.0.0-ballot",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-variant-b",
       "status": "active"
     },
@@ -295,6 +297,7 @@
           }
         ]
       },
+      "version": "2026.0.0-ballot",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-variant-b",
       "status": "active"
     }
@@ -818,10 +821,10 @@
       "text": "Calculated Scores (0-100 scale)"
     }
   ],
+  "version": "2026.0.0-ballot",
   "status": "active",
   "experimental": true,
   "language": "en",
-  "version": "2026.0.0-ballot",
   "publisher": "Medizininformatik Initiative (MII)",
   "copyright": "© Copyright 1995 EORTC Quality of Life Group. All rights reserved. Version 3.0"
 }

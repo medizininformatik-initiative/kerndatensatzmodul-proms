@@ -9,6 +9,7 @@ Description: "EuroQol EQ-5D Value Set"
 // en-US ValueSet: https://euroqol.org/wp-content/uploads/2024/01/US_valueset_SPSS.txt
 
 * ^language = #de-DE
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 * ^hierarchyMeaning = #grouped-by

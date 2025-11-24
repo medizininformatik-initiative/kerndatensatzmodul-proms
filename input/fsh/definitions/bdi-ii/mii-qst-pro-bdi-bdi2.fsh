@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO BDI-II"
 Description: "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire"
 Usage: #definition
+* insert Version
 
 * url = $mii-qst-pro-bdi-bdi2
 * status = #active

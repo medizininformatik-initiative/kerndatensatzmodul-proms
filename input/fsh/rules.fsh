@@ -6,6 +6,30 @@ RuleSet: Version
 RuleSet: PR_CS_VS_Version
 * ^version = "2026.0.0-ballot"
 
+// Publisher
+RuleSet: Publisher
+* ^publisher = "Medizininformatik Initiative"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "https://www.medizininformatik-initiative.de"
+
+RuleSet: SP_Publisher
+* publisher = "Medizininformatik Initiative"
+* contact.telecom.system = #url
+* contact.telecom.value = "https://www.medizininformatik-initiative.de"
+
+// License
+RuleSet: LicenseCodeableCCBY40
+* ^extension[+].url = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable"
+* ^extension[=].valueCodeableConcept = $spdx-license#CC-BY-4.0 "Creative Commons Attribution 4.0 International"
+
+RuleSet: LicenseCodeableCCBY40Instance
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable"
+* extension[=].valueCodeableConcept = $spdx-license#CC-BY-4.0 "Creative Commons Attribution 4.0 International"
+
+// Copyright
+RuleSet: SNOMEDCopyrightForVS
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
+
 // Metadata
 RuleSet: DefinitionResourceMetadata(url, status, experimental, language)
 * url = {url}

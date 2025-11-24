@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO PROMIS Depression SF 4a (Adults)"
 Description: "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0"
 Usage: #definition
+* insert Version
 
 * url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a"
 * status = #active

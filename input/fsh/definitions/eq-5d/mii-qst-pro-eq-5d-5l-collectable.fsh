@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L Collectable"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version"
 Usage: #definition
+* insert Version
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable"
 * derivedFrom = $mii-qst-pro-euroqol-eq5d5l

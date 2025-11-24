@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EORTC QLQ-C30 Variant A"
 Description: "EORTC QLQ-C30 Version 3.0 - Variant A: Without contained CodeSystem (ValueSets reference external CodeSystem URL)"
 Usage: #definition
+* insert Version
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a"
 * status = #active
@@ -402,6 +403,7 @@ Usage: #definition
 Instance: eortc-qlq-c30-4pt-a
 InstanceOf: ValueSet
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-variant-a"
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
@@ -413,6 +415,7 @@ Usage: #inline
 Instance: eortc-qlq-c30-7pt-a
 InstanceOf: ValueSet
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-variant-a"
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"

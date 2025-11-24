@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO HADS"
 Description: "Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation"
 Usage: #definition
+* insert Version
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads"
 * status = #active

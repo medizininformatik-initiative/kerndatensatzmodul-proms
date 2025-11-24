@@ -5,6 +5,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO PHQ-9 (SDC Rendering)"
 Description: "Patient Health Questionnaire (PHQ-9) SDC Rendering"
 Usage: #definition
+* insert Version
 
 // Definitional Metadata
 * insert DefinitionResourceMetadata($mii-qst-pro-phq-9-sdc-rendering, active, true, de)

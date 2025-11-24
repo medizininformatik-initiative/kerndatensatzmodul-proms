@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EORTC QLQ-C30"
 Description: "EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores"
 Usage: #definition
+* insert Version
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"
 * status = #active
@@ -405,6 +406,7 @@ Usage: #definition
 Instance: eortc-qlq-c30-cs
 InstanceOf: CodeSystem
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
 * status = #active
 * content = #complete
@@ -493,6 +495,7 @@ Usage: #inline
 Instance: eortc-qlq-c30-4pt
 InstanceOf: ValueSet
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
@@ -504,6 +507,7 @@ Usage: #inline
 Instance: eortc-qlq-c30-7pt
 InstanceOf: ValueSet
 Usage: #inline
+* insert Version
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"

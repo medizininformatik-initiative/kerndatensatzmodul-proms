@@ -3,6 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EPDS"
 Description: "Edinburgh Postnatal Depression Scale (EPDS) - Metadata-only reference implementation"
 Usage: #definition
+* insert Version
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-epds"
 * status = #active

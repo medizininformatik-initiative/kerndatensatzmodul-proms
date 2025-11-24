@@ -3,7 +3,7 @@ Id: mii-cs-pro-bdi-bdi2
 Title: "MII CS PRO BDI-II"
 Description: "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire"
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
-* ^version = "0.1.0"
+* insert PR_CS_VS_Version
 * ^status = #draft
 * ^experimental = true
 * ^valueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2"
