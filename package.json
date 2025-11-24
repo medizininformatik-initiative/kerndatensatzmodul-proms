@@ -34,7 +34,8 @@
     "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms.git"
   },
   "dependencies": {
-    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0",
-    "hl7.fhir.uv.sdc": "3.0.0"
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.x",
+    "hl7.fhir.uv.sdc": "3.0.0", 
+    "de.gematik.isik": "5.0.0"
   }
 }
