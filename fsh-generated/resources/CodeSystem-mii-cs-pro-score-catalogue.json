@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "MII_CS_PRO_Score_Catalogue",
   "id": "mii-cs-pro-score-catalogue",
@@ -25,8 +25,52 @@
       "display": "PHQ-9 Total Score"
     },
     {
+      "code": "bdi-bdi2-total",
+      "display": "Beck Depression Inventory II (BDI-II) Total Score"
+    },
+    {
+      "code": "promis-29-physical-function-tscore",
+      "display": "PROMIS-29 Physical Function T-Score"
+    },
+    {
+      "code": "promis-29-anxiety-tscore",
+      "display": "PROMIS-29 Anxiety T-Score"
+    },
+    {
+      "code": "promis-29-depression-tscore",
+      "display": "PROMIS-29 Depression T-Score"
+    },
+    {
+      "code": "promis-29-fatigue-tscore",
+      "display": "PROMIS-29 Fatigue T-Score"
+    },
+    {
+      "code": "promis-29-sleep-disturbance-tscore",
+      "display": "PROMIS-29 Sleep Disturbance T-Score"
+    },
+    {
+      "code": "promis-29-social-function-tscore",
+      "display": "PROMIS-29 Ability to Participate in Social Roles and Activities T-Score"
+    },
+    {
+      "code": "promis-29-pain-interference-tscore",
+      "display": "PROMIS-29 Pain Interference T-Score"
+    },
+    {
+      "code": "promis-29-pain-intensity",
+      "display": "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
+    },
+    {
+      "code": "promis-cognitive-function-sf4a-raw",
+      "display": "PROMIS Cognitive Function Abilities 4a Raw Score"
+    },
+    {
+      "code": "promis-cognitive-function-sf4a-tscore",
+      "display": "PROMIS Cognitive Function Abilities 4a T-Score"
+    },
+    {
       "code": "promis-depression",
-      "display": "Promis Depression Score"
+      "display": "PROMIS Depression Score"
     },
     {
       "code": "eortc-qlq-c30-pf",
@@ -90,5 +134,5 @@
     }
   ],
   "version": "0.1.0",
-  "count": 20
+  "count": 31
 }

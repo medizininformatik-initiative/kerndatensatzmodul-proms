@@ -5,7 +5,7 @@ Title: "MII PR PRO Observation EQ-5D-5L Index"
 Description: "Profile for EQ-5D-5L Index Score Observations with German value set reference ranges"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $SCT#736534008 "EuroQol five dimension five level index value (observable entity)"

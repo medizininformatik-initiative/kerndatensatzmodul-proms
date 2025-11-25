@@ -9,8 +9,8 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
-* version = "2026.0.0-ballot"
-* code = $LNC#62337-1 "PROMIS item bank - 29 profile"
+* code[+] = $LNC#62337-1 "PROMIS item bank - 29 profile"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#promis-promis29 "PROMIS-29 Questionnaire"
 
 // Capabilities: displayable, collectable only
 * extension[capabilities].extension[displayable].valueBoolean = true

@@ -14,6 +14,11 @@
       "code": "89210-9",
       "system": "http://loinc.org",
       "display": "Beck Depression Inventory II [BDI]"
+    },
+    {
+      "code": "bdi-bdi2",
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "Beck Depression Inventory II (BDI-II)"
     }
   ],
   "extension": [
@@ -241,7 +246,7 @@
       "readOnly": true
     }
   ],
-  "version": "2026.0.0-ballot",
+  "version": "2026.0.0-rc.1",
   "status": "active",
   "experimental": true,
   "language": "de"

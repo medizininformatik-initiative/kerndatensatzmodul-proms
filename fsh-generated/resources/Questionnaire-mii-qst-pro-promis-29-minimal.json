@@ -14,6 +14,11 @@
       "code": "62337-1",
       "system": "http://loinc.org",
       "display": "PROMIS item bank - 29 profile"
+    },
+    {
+      "code": "promis-promis29",
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PROMIS-29 Questionnaire"
     }
   ],
   "extension": [
@@ -369,7 +374,7 @@
       "text": "PROMIS-29 Profile v2.1"
     }
   ],
-  "version": "2026.0.0-ballot",
+  "version": "2026.0.0-rc.1",
   "status": "active",
   "experimental": true,
   "language": "de"

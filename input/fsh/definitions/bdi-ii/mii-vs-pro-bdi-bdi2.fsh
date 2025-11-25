@@ -4,7 +4,7 @@ Title: "MII VS PRO BDI-II"
 Description: "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire"
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 * include #bdi-bdi2-answer-0 from system MII_CS_PRO_BDI_BDI2_AnswerList
 * include #bdi-bdi2-answer-1 from system MII_CS_PRO_BDI_BDI2_AnswerList
@@ -17,7 +17,7 @@ Title: "MII VS PRO BDI-II"
 Description: "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire"
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 * include #bdi-bdi2-answer-0 from system MII_CS_PRO_BDI_BDI2_AnswerList
 * include #bdi-bdi2-answer-1a from system MII_CS_PRO_BDI_BDI2_AnswerList

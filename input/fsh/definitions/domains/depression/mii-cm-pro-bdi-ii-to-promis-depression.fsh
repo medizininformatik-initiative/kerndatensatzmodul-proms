@@ -5,7 +5,7 @@ Usage: #definition
 * insert Version
 //Source: $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
 //Target: $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
-* status = #draft
+* status = #active
 * group[+]
 * group[=].element[+].code = #0
 * group[=].element[=].target.code = #34.9

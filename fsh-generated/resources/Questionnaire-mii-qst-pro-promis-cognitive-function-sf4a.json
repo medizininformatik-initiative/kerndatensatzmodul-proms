@@ -14,6 +14,11 @@
       "code": "81525-8",
       "system": "http://loinc.org",
       "display": "PROMIS short form - cognitive function - abilities subset 4a - version 2.0"
+    },
+    {
+      "code": "promis-cognitive-function-sf4a",
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
     }
   ],
   "extension": [
@@ -884,7 +889,7 @@
       "text": "PROMIS Kognitive Funktion SF 4a"
     }
   ],
-  "version": "2026.0.0-ballot",
+  "version": "2026.0.0-rc.1",
   "status": "active",
   "experimental": true,
   "language": "en"

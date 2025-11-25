@@ -9,8 +9,8 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "2026.0.0-ballot"
-* code = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+* code[+] = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#phq-phq9 "PHQ-9 Questionnaire"
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

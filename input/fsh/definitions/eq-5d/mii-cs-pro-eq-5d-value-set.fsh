@@ -10,7 +10,7 @@ Description: "EuroQol EQ-5D Value Set"
 
 * ^language = #de-DE
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 * ^hierarchyMeaning = #grouped-by
 * ^content = #complete

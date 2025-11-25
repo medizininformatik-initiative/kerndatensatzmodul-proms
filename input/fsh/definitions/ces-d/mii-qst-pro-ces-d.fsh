@@ -9,7 +9,6 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "2026.0.0-ballot"
 * title = "Center for Epidemiologic Studies Depression Scale (CES-D)"
 * code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#ces-d "Center for Epidemiologic Studies Depression Scale"
 

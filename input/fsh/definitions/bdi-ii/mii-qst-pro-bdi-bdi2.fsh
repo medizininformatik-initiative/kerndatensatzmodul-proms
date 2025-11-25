@@ -10,7 +10,7 @@ Usage: #definition
 * experimental = true
 * language = #de
 * code[+] = $LNC#89210-9 "Beck Depression Inventory II [BDI]"
-* version = "2026.0.0-ballot"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#bdi-bdi2 "Beck Depression Inventory II (BDI-II)"
 
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[collectable].valueBoolean = false

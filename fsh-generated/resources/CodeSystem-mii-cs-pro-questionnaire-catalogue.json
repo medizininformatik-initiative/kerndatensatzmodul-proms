@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "MII_CS_PRO_Questionnaire_Catalogue",
   "id": "mii-cs-pro-questionnaire-catalogue",
@@ -25,12 +25,12 @@
       "display": "PROMIS-29 Questionnaire"
     },
     {
-      "code": "promis-promis33",
-      "display": "PROMIS-33 Questionnaire"
+      "code": "promis-depression-sf4a",
+      "display": "PROMIS Depression 4a Short Form Questionnaire"
     },
     {
-      "code": "promis-promisdepression4aSF",
-      "display": "PROMIS Depression 4a Short Form Questionnaire"
+      "code": "promis-cognitive-function-sf4a",
+      "display": "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
     },
     {
       "code": "eortc-qlq-c30",

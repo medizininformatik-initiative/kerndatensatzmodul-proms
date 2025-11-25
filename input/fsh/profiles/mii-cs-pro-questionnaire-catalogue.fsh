@@ -7,14 +7,15 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * insert PR_CS_VS_Version
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"
 * ^version = "0.1.0"
-* ^status = #draft
+* ^status = #active
 
 * #euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
 * #phq-phq9 "PHQ-9 Questionnaire"
 * #bdi-bdi2 "Beck Depression Inventory II (BDI-II)"
 * #promis-promis29 "PROMIS-29 Questionnaire"
-* #promis-promis33 "PROMIS-33 Questionnaire"
-* #promis-promisdepression4aSF "PROMIS Depression 4a Short Form Questionnaire"
+// * #promis-promis33 "PROMIS-33 Questionnaire"  // Planned: First use case for modular questionnaires
+* #promis-depression-sf4a "PROMIS Depression 4a Short Form Questionnaire"
+* #promis-cognitive-function-sf4a "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
 * #eortc-qlq-c30 "EORTC QLQ-C30 Quality of Life Questionnaire"
 * #hads "Hospital Anxiety and Depression Scale"
 * #epds "Edinburgh Postnatal Depression Scale"

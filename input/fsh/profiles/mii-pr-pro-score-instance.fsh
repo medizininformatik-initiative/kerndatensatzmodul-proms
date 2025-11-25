@@ -4,7 +4,7 @@ Id: mii-pr-pro-score-instance
 Title: "MII PR PRO Score Instance"  
 Description: "MII PR PRO Score Instance"
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 
 * identifier 0..* MS
 * effectiveDateTime 0..1 MS

@@ -6,5 +6,5 @@ Description: "MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data
 
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * language MS

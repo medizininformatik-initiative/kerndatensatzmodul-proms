@@ -7,13 +7,35 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 * insert PR_CS_VS_Version
 * ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * ^version = "0.1.0"
-* ^status = #draft
+* ^status = #active
 
+// EQ-5D-5L Scores
 * #euroqol-eq5d5l-index "EuroQol EQ-5D-5L Index Score"
 * #euroqol-eq5d5l-vas "EuroQol EQ-5D-5L Visual Analog Scale (VAS) Score"
 * #euroqol-eq5d5l-profile "EuroQol EQ-5D-5L Profile"
+
+// PHQ-9 Scores
 * #phq-phq9-total "PHQ-9 Total Score"
-* #promis-depression "Promis Depression Score"
+
+// BDI-II Scores
+* #bdi-bdi2-total "Beck Depression Inventory II (BDI-II) Total Score"
+
+// PROMIS-29 Profile v2.1 Domain Scores
+* #promis-29-physical-function-tscore "PROMIS-29 Physical Function T-Score"
+* #promis-29-anxiety-tscore "PROMIS-29 Anxiety T-Score"
+* #promis-29-depression-tscore "PROMIS-29 Depression T-Score"
+* #promis-29-fatigue-tscore "PROMIS-29 Fatigue T-Score"
+* #promis-29-sleep-disturbance-tscore "PROMIS-29 Sleep Disturbance T-Score"
+* #promis-29-social-function-tscore "PROMIS-29 Ability to Participate in Social Roles and Activities T-Score"
+* #promis-29-pain-interference-tscore "PROMIS-29 Pain Interference T-Score"
+* #promis-29-pain-intensity "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
+
+// PROMIS Cognitive Function Abilities SF4a Scores
+* #promis-cognitive-function-sf4a-raw "PROMIS Cognitive Function Abilities 4a Raw Score"
+* #promis-cognitive-function-sf4a-tscore "PROMIS Cognitive Function Abilities 4a T-Score"
+
+// Legacy PROMIS Depression Score (for backwards compatibility)
+* #promis-depression "PROMIS Depression Score"
 
 // EORTC QLQ-C30 Functional Scales (higher = better functioning)
 * #eortc-qlq-c30-pf "EORTC QLQ-C30 Physical Functioning Score"

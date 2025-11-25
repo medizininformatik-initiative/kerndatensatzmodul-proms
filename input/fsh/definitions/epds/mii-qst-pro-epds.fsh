@@ -9,7 +9,6 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "2026.0.0-ballot"
 * title = "Edinburgh Postnatal Depression Scale (EPDS)"
 * code[snomed] = $SCT#273441006 "Edinburgh postnatal depression scale (assessment scale)"
 * code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#epds "Edinburgh Postnatal Depression Scale"

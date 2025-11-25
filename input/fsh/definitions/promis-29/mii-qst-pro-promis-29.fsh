@@ -9,11 +9,11 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "2026.0.0-ballot"
 // versionAlgorithm is an R5 element - not available in R4
 // * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]"
 // * extension[=].valueCoding = http://hl7.org/fhir/version-algorithm#semver
-* code = $LNC#62337-1 "PROMIS item bank - 29 profile"
+* code[+] = $LNC#62337-1 "PROMIS item bank - 29 profile"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#promis-promis29 "PROMIS-29 Questionnaire"
 
 // Reference to PROMIS-29 Documentation
 * useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus

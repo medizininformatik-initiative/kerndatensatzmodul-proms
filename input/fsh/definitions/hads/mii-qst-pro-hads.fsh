@@ -9,7 +9,6 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "2026.0.0-ballot"
 * title = "Hospital Anxiety and Depression Scale (HADS)"
 * code[snomed] = $SCT#273524006 "Hospital anxiety and depression scale (assessment scale)"
 * code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#hads "Hospital Anxiety and Depression Scale"

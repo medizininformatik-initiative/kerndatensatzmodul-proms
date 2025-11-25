@@ -9,11 +9,11 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "2026.0.0-ballot"
 // versionAlgorithm is an R5 element - not available in R4
 // * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.versionAlgorithm[x]"
 // * extension[=].valueCoding = http://hl7.org/fhir/version-algorithm#semver
-* code = $LNC#76343-3 "PROMIS short form - emotional distress - depression 4a - version 1.0"
+* code[+] = $LNC#76343-3 "PROMIS short form - emotional distress - depression 4a - version 1.0"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#promis-depression-sf4a "PROMIS Depression 4a Short Form Questionnaire"
 
 // Reference to PROMIS Depression Scoring Manual
 * useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus

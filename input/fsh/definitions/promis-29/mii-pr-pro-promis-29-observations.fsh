@@ -8,7 +8,7 @@ Title: "MII PR PRO PROMIS-29 Physical Function T-Score"
 Description: "Profile for PROMIS-29 Physical Function T-Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
@@ -37,7 +37,7 @@ Title: "MII PR PRO PROMIS-29 Anxiety T-Score"
 Description: "Profile for PROMIS-29 Anxiety T-Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
@@ -66,7 +66,7 @@ Title: "MII PR PRO PROMIS-29 Depression T-Score"
 Description: "Profile for PROMIS-29 Depression T-Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
@@ -95,7 +95,7 @@ Title: "MII PR PRO PROMIS-29 Fatigue T-Score"
 Description: "Profile for PROMIS-29 Fatigue T-Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
@@ -124,7 +124,7 @@ Title: "MII PR PRO PROMIS-29 Sleep Disturbance T-Score"
 Description: "Profile for PROMIS-29 Sleep Disturbance T-Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
@@ -153,7 +153,7 @@ Title: "MII PR PRO PROMIS-29 Social Function T-Score"
 Description: "Profile for PROMIS-29 Ability to Participate in Social Roles and Activities T-Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
@@ -182,7 +182,7 @@ Title: "MII PR PRO PROMIS-29 Pain Interference T-Score"
 Description: "Profile for PROMIS-29 Pain Interference T-Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
@@ -211,7 +211,7 @@ Title: "MII PR PRO PROMIS-29 Pain Intensity"
 Description: "Profile for PROMIS-29 Pain Intensity single item Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"

@@ -5,7 +5,7 @@ Title: "MII PR PRO Observation BDI-II"
 Description: "Profile for Beck Depression Inventory II (BDI-II) Total Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"

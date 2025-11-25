@@ -44,6 +44,11 @@
       "code": "73041000052103",
       "system": "http://snomed.info/sct",
       "display": "EuroQoL five dimension five level questionnaire"
+    },
+    {
+      "code": "euroqol-eq5d5l",
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "EuroQol EQ-5D-5L Questionnaire"
     }
   ],
   "item": [
@@ -1198,7 +1203,7 @@
       "repeats": false
     }
   ],
-  "version": "2026.0.0-ballot",
+  "version": "2026.0.0-rc.1",
   "status": "active",
   "experimental": true,
   "language": "de"

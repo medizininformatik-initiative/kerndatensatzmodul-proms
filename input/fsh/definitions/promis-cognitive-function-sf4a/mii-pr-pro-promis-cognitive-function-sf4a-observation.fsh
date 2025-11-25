@@ -8,7 +8,7 @@ Title: "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score"
 Description: "Profile for PROMIS Cognitive Function Short Form 4a raw score observations (4-20 range)"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#81533-2 "PROMIS short form - cognitive function 4a - version 2.0 raw score"
@@ -42,7 +42,7 @@ Title: "MII PR PRO PROMIS Cognitive Function SF 4a T-Score"
 Description: "Profile for PROMIS Cognitive Function Short Form 4a T-Score observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"

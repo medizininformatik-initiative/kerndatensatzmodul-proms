@@ -10,8 +10,8 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #de
-* code = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
-* version = "2026.0.0-ballot"
+* code[+] = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
 // TODO: date, publisher, copyright, etc.
 
 * extension[capabilities].extension[displayable].valueBoolean = true

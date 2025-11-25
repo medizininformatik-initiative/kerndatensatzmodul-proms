@@ -14,6 +14,11 @@
       "code": "44249-1",
       "system": "http://loinc.org",
       "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+    },
+    {
+      "code": "phq-phq9",
+      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PHQ-9 Questionnaire"
     }
   ],
   "extension": [
@@ -1789,7 +1794,7 @@
       }
     }
   ],
-  "version": "2026.0.0-ballot",
+  "version": "2026.0.0-rc.1",
   "status": "active",
   "experimental": true,
   "language": "en"

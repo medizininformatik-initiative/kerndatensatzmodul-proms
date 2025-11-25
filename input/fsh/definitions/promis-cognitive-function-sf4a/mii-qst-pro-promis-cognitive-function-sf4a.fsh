@@ -9,8 +9,8 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* version = "2026.0.0-ballot"
-* code = $LNC#81525-8 "PROMIS short form - cognitive function - abilities subset 4a - version 2.0"
+* code[+] = $LNC#81525-8 "PROMIS short form - cognitive function - abilities subset 4a - version 2.0"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#promis-cognitive-function-sf4a "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

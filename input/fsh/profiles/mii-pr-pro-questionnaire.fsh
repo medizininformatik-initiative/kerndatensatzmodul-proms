@@ -5,7 +5,7 @@ Title: "MII PR PRO Questionnaire"
 Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 * version 1..1 MS 
 

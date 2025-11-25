@@ -5,7 +5,7 @@ Title: "MII PR PRO Observation EQ-5D-5L VAS"
 Description: "Profile for EQ-5D-5L Visual Analogue Scale Score Observations"
 
 * insert PR_CS_VS_Version
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 
 * code = $SCT#736535009 "EuroQol visual analogue score (observable entity)"
