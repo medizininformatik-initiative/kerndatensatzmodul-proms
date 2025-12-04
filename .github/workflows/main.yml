@@ -1,30 +1,30 @@
-### copied from Procedure module 2025/05/05
-
-name: CI (FHIR Validation)
+name: CI (FHIR Validation & Release)
 
 on:
   push:
-    branches: [ main, dev ]
+    branches: [ dev, main ]
     tags:
-      - 'v*'
+    - 'v[0-9]+.[0-9]+.[0-9]+*'
   pull_request:
-    branches: [ main, dev ]
+    branches: [ dev, main ]
+  workflow_dispatch:
   release:
     types: [published]
-  workflow_dispatch:
 
 jobs:
   DOTNET_FHIR_VALIDATION:
+    if: github.event_name != 'release'
     uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml@master
     with:
-      ref: ${{ github.event.pull_request.head.ref }}
+      ref: ${{ github.event.pull_request.head.ref || github.ref }}
       SUSHI_VERSION: ${{ vars.SUSHI_VERSION }}
     secrets: inherit
 
   JAVA_FHIR_VALIDATION:
+    if: github.event_name != 'release'
     uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@master
     with:
-      ref: ${{ github.event.pull_request.head.ref }}
+      ref: ${{ github.event.pull_request.head.ref || github.ref }}
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
@@ -54,11 +54,17 @@ jobs:
           prerelease: ${{ contains(steps.prep-version.outputs.version, '-') }}
           generate_release_notes: true
           body: |
-            ## MII IG PRO Release ${{ steps.prep-version.outputs.version }}
+            ## MII PRO Module Release ${{ steps.prep-version.outputs.version }}
 
             <!-- DELETE START -->
             Download the FHIR package from Simplifier and manually attach it to this release.
             <!-- DELETE END -->
+
+            ### Installation
+
+            ```bash
+            fhir install de.medizininformatikinitiative.kerndatensatz.pros@${{ steps.prep-version.outputs.version }}
+            ```
 
             ### Changes
 
@@ -84,6 +90,7 @@ jobs:
           content: |
             **New Release:** `${{ github.event.release.tag_name }}`
             **Repository:** `${{ github.repository }}`
+            **Module:** PRO (Patient-Reported Outcomes)
 
             ${{ github.event.release.body }}
 

@@ -1,5 +1,5 @@
 {
-  "name": "de.medizininformatikinitiative.kerndatensatz.pro",
+  "name": "de.medizininformatikinitiative.kerndatensatz.pros",
   "version": "2026.0.0-rc.2",
   "description": "MII PRO Module v2026.0.0-rc.2 - Second release candidate. Features: PROMIS-29 Profile v2.1 (all 7 domains with scoring), PROMIS Cognitive Function SF4a, PHQ-9 with T-scores, EQ-5D-5L. Improvements: Updated meta dependency to 2026.0.0.",
   "keywords": [
@@ -34,8 +34,8 @@
     "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms.git"
   },
   "dependencies": {
-    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.x",
-    "hl7.fhir.uv.sdc": "3.0.0", 
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.x",
+    "hl7.fhir.uv.sdc": "3.0.0",
     "de.gematik.isik": "5.0.0"
   }
 }
