@@ -1,6 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation",
+  "id": "mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0-rc.3"
+    ]
+  },
   "valueQuantity": {
     "value": 63.2,
     "code": "{score}",

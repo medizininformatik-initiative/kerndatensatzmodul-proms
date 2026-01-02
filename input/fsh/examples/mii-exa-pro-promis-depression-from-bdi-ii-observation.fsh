@@ -1,6 +1,8 @@
-Instance: mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation
-InstanceOf: Observation
-Title: "PROMIS Depression T-Score, derived from BDI-II Observation"
+Instance: mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation
+InstanceOf: MII_PR_PRO_Score_Instance
+Usage: #example
+Title: "PROMIS Depression T-Score, derived from BDI-II Observation Example"
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * subject = Reference(Patient/otherexamplepatient)
 * effectiveDateTime = "2023-10-01T12:00:00Z"
