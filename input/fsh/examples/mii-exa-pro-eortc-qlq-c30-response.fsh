@@ -3,7 +3,7 @@ InstanceOf: mii-pr-pro-questionnaire-response
 Title: "MII EXA PRO EORTC QLQ-C30 Response"
 Description: "Complete EORTC QLQ-C30 QuestionnaireResponse example with all 30 items and calculated scores"
 Usage: #example
-
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"
 * status = #completed
 * subject.reference = "Patient/example-patient"

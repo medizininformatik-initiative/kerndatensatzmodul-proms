@@ -15,7 +15,7 @@ Update the release notes with changes since a reference commit or tag.
    ```
 
 3. **Read current release notes**:
-   - Location: `implementation-guides/ImplementationGuide-2026.x-DE/MIIIGModulOnkologie/Release-Notes.page.md`
+   - Location: `implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Release-Notes.page.md`
 
 4. **Categorize commits**: Group changes into these categories based on commit prefixes:
    - **Breaking Changes** (`BREAKING`): Changes requiring implementation updates
@@ -23,13 +23,13 @@ Update the release notes with changes since a reference commit or tag.
    - **Refaktorierungen** (`refactor`): Code restructuring
    - **Validierung und Qualitätsverbesserungen** (`fix` for validation): Validation fixes
    - **Display-Namen und Terminologie-Korrekturen** (`fix` for display/terminology): Display name corrections
-   - **oBDS-Mapping Verbesserungen** (`fix` for oBDS): oBDS mapping additions/fixes
+   - **Scoring und Score-Calculation** (`fix` for scoring): Score calculation improvements
    - **Beispieldaten-Korrekturen** (`fix` for examples): Example file corrections
    - **Technische Verbesserungen** (`chore`): Build, CI, dependencies
    - **Weitere Verbesserungen** (`improve`, `documentation`): Other improvements
 
 5. **Format entries**: Use this format:
-   - `<type>` Description with context. [[HDB-XXX](https://hl7germany.atlassian.net/browse/HDB-XXX), [#YYY](https://github.com/medizininformatik-initiative/kerndatensatzmodul-onkologie/issues/YYY)]
+   - `<type>` Description with context. [[HDB-XXX](https://hl7germany.atlassian.net/browse/HDB-XXX), [#YYY](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues/YYY)]
 
 6. **Add missing entries**: Compare commit list with existing release notes and add any missing items
 
@@ -53,9 +53,6 @@ Update the release notes with changes since a reference commit or tag.
 ### Display-Namen und Terminologie-Korrekturen
 - `fix` Description...
 
-### oBDS-Mapping Verbesserungen
-- `fix` Description...
-
 ### Beispieldaten-Korrekturen
 - `fix` Description...
 
@@ -70,4 +67,4 @@ Update the release notes with changes since a reference commit or tag.
 ## Reference
 
 - Ballot tag: `v2026.0.0-ballot`
-- Release notes path: `implementation-guides/ImplementationGuide-2026.x-DE/MIIIGModulOnkologie/Release-Notes.page.md`
+- Release notes path: `implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Release-Notes.page.md`

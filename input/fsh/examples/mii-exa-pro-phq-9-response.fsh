@@ -1,6 +1,8 @@
 Instance: mii-exa-pro-phq-9-response
 InstanceOf: MII_PR_PRO_QuestionnaireResponse
+Usage: #example
 Title: "PHQ-9 Questionnaire Response Example"
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * status = #completed
 * language = #de
 * subject = Reference(Patient/example-patient)

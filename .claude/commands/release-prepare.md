@@ -30,11 +30,18 @@ Update version numbers in these files:
 1. **package.json**: Update the `version` field
 2. **sushi-config.yaml**: Update the `version` parameter (may already be done)
 3. **qc/custom.rules.yaml**: Add the new version to the `version-filled` predicate list (line 25)
-4. **input/fsh/rulesets/version.fsh**: Update version (may already be done via PR_CS_VS_Version RuleSet)
+4. **input/fsh/rulesets/version.fsh**: Update ALL version strings in this file:
+   - `Version` RuleSet: `* version = "{VERSION}"` (for Questionnaire instances)
+   - `PR_CS_VS_Version` RuleSet: `* ^version = "{VERSION}"` (for Profile/CS/VS)
+   - `ObsDefVersion` RuleSet: `* extension[=].valueString = "{VERSION}"` (R5 backport for ObservationDefinition)
+   - `MetaProfile` RuleSet: Update the version in `"{canonical}|{VERSION}"` (for meta.profile conformance)
 5. **guide.yaml** (Simplifier IG config): Path is `implementation-guides/MII-PRO-v2026-DE/guide.yaml`, update:
    - `version` field to match new release version
 
-IMPORTANT: Read each file first to verify current state before making changes.
+IMPORTANT:
+- Read each file first to verify current state before making changes.
+- The version.fsh file has 4 separate version strings that ALL must be updated consistently.
+- See CLAUDE.md section "Version Management & Profile Conformance" for documentation.
 
 ### Phase 3: Prepare Release Notes
 

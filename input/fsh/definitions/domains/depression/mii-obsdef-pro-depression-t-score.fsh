@@ -3,6 +3,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO Depression Domain T-Score"
 Description: "ObservationDefinition for depression domain T-score across all depression questionnaires with European population reference ranges"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = $hl7-observation-category#survey
 * code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"

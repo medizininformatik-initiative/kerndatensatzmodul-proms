@@ -3,9 +3,19 @@
   "id": "mii-obsdef-pro-promis-cognitive-function-sf4a-tscore",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.0.0-rc.2"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+      "valueString": "2026.0.0-rc.2"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-citation",
+      "valueString": "PROMIS Cognitive Function Scoring Manual, Version 3 June 2022. Available at: https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Cognitive_Function_Scoring_Manual_03June2022.pdf"
+    }
+  ],
   "category": [
     {
       "coding": [
@@ -62,12 +72,6 @@
         "text": "PROMIS T-Score metric (Mean=50, SD=10)"
       },
       "category": "reference"
-    }
-  ],
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-citation",
-      "valueString": "PROMIS Cognitive Function Scoring Manual, Version 3 June 2022. Available at: https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Cognitive_Function_Scoring_Manual_03June2022.pdf"
     }
   ],
   "code": {

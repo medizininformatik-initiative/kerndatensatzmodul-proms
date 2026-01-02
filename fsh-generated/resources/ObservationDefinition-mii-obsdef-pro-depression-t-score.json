@@ -3,9 +3,19 @@
   "id": "mii-obsdef-pro-depression-t-score",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.0.0-rc.2"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+      "valueString": "2026.0.0-rc.2"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-citation",
+      "valueString": "Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. JAMA Network Open. 2025;8(6):e2517394"
+    }
+  ],
   "category": [
     {
       "coding": [
@@ -181,12 +191,6 @@
         }
       },
       "category": "reference"
-    }
-  ],
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-citation",
-      "valueString": "Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. JAMA Network Open. 2025;8(6):e2517394"
     }
   ],
   "code": {

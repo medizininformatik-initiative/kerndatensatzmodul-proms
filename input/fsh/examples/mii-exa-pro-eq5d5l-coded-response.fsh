@@ -4,6 +4,7 @@ InstanceOf: MII_PR_PRO_QuestionnaireResponse
 Title: "EQ-5D-5L Answer-Coding Response Example"
 Description: "Example of an EQ-5D-5L questionnaire response using the answer-coding variant with MII CodeSystem"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * status = #completed
 * subject = Reference(Patient/example)
 * authored = "2024-03-15T14:45:00+01:00"

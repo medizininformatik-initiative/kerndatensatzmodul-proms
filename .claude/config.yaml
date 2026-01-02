@@ -1,0 +1,25 @@
+# MII PRO Module Configuration
+# This file is used by /mii-build-package and /mii-publish-package skills
+
+repository:
+  package_id: "de.medizininformatikinitiative.kerndatensatz.pros"
+  module_name: "PRO"
+  github_repo: "medizininformatik-initiative/kerndatensatzmodul-proms"
+
+build:
+  bake_config: "package.bake.yaml"
+  expected_file_count:
+    min: 80
+    max: 250
+  expected_size_kb:
+    min: 150
+    max: 800
+
+paths:
+  bake_output: ".bake"
+  output: "output"
+  staging: "staging"
+
+simplifier:
+  project_url: "https://simplifier.net/mii-erweiterungsmodul-pro-2025"
+  package_registry: "https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.pros"

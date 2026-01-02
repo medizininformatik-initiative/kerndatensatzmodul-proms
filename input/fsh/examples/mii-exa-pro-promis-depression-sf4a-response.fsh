@@ -1,8 +1,9 @@
 Instance: mii-exa-pro-promis-depression-sf4a-response
-InstanceOf: QuestionnaireResponse
+InstanceOf: MII_PR_PRO_QuestionnaireResponse
 Title: "MII EXA PRO PROMIS Depression SF 4a Response"
 Description: "Example QuestionnaireResponse for PROMIS Depression Short Form 4a"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 
 * questionnaire = $mii-qst-pro-promis-depression-sf4a
 * status = #completed

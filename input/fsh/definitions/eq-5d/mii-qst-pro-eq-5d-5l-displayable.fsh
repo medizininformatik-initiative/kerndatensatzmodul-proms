@@ -4,6 +4,7 @@ Title: "MII QST PRO EQ-5D-5L (Displayable)"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Displayable version"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable"
 * derivedFrom = $mii-qst-pro-euroqol-eq5d5l

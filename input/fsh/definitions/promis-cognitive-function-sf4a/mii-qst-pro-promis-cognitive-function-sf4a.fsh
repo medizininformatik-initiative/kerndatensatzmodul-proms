@@ -4,6 +4,7 @@ Title: "MII QST PRO PROMIS Cognitive Function SF 4a"
 Description: "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a"
 * status = #active

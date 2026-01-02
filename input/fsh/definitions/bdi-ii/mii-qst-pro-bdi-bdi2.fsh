@@ -4,6 +4,7 @@ Title: "MII QST PRO BDI-II"
 Description: "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = $mii-qst-pro-bdi-bdi2
 * status = #active

@@ -4,6 +4,7 @@ Title: "MII QST PRO PHQ-9"
 Description: "Patient Health Questionnaire (PHQ-9)"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = $mii-qst-pro-phq-9
 * status = #active

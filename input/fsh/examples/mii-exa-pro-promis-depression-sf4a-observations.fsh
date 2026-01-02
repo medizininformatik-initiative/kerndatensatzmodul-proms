@@ -3,6 +3,7 @@ InstanceOf: MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score
 Title: "MII EXA PRO PROMIS Depression SF 4a Raw Score"
 Description: "Example raw score observation for PROMIS Depression Short Form 4a"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score)
 
 * status = #final
 * category = $hl7-observation-category#survey "Survey"
@@ -20,6 +21,7 @@ InstanceOf: MII_PR_PRO_Depression_T_Score
 Title: "MII EXA PRO PROMIS Depression SF 4a T-Score"
 Description: "Example T-score observation for PROMIS Depression Short Form 4a"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score)
 
 * status = #final
 * category = $hl7-observation-category#survey "Survey"

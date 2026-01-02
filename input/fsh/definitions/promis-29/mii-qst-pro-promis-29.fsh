@@ -4,6 +4,7 @@ Title: "MII QST PRO PROMIS-29 (Adults)"
 Description: "PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
 * status = #active

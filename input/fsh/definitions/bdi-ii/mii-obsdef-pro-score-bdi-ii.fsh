@@ -3,6 +3,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO Score BDI-II"
 Description: "Beck Depression Inventory II (BDI-II) Total Score"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"

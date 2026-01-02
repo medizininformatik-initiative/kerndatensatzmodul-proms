@@ -6,6 +6,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS Cognitive Function SF 4a Raw Score"
 Description: "PROMIS Cognitive Function Short Form 4a Raw Score (4-20 range)"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#81533-2 "PROMIS short form - cognitive function 4a - version 2.0 raw score"
@@ -31,6 +33,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS Cognitive Function SF 4a T-Score"
 Description: "PROMIS Cognitive Function Short Form 4a T-Score"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"

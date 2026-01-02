@@ -3,7 +3,7 @@
   "id": "mii-qst-pro-eortc-qlq-c30-variant-a",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.2"
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a",
@@ -52,6 +52,11 @@
     {
       "resourceType": "ValueSet",
       "id": "eortc-qlq-c30-4pt-a",
+      "meta": {
+        "profile": [
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.2"
+        ]
+      },
       "compose": {
         "include": [
           {
@@ -80,6 +85,11 @@
     {
       "resourceType": "ValueSet",
       "id": "eortc-qlq-c30-7pt-a",
+      "meta": {
+        "profile": [
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.2"
+        ]
+      },
       "compose": {
         "include": [
           {

@@ -1,6 +1,8 @@
 Instance: mii-exa-pro-euroqol-eq5d5l-response
 InstanceOf: MII_PR_PRO_QuestionnaireResponse
+Usage: #example
 Title: "EQ-5D-5L Questionnaire Response Example"
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * status = #completed
 * subject = Reference(Patient/example)
 * authored = "2023-10-01T12:00:00Z"

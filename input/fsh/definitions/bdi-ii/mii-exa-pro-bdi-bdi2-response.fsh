@@ -2,7 +2,8 @@ Instance: mii-exa-pro-bdi-bdi2
 InstanceOf: mii-pr-pro-questionnaire-response
 Title: "MII EXA PRO BDI-II"
 Description: "MII EXA PRO Beck Depression Inventory II (BDI-II) Questionnaire"
-Usage: #definition
+Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * questionnaire = $mii-qst-pro-bdi-bdi2
 * status = #completed
 * subject.reference = "Patient/example-patient"

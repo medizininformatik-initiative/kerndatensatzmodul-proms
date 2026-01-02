@@ -4,6 +4,7 @@ Title: "MII QST PRO K6"
 Description: "Kessler Psychological Distress Scale (K6) - Metadata-only reference implementation"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-k6"
 * status = #active

@@ -4,6 +4,7 @@ Title: "MII QST PRO CES-D"
 Description: "Center for Epidemiologic Studies Depression Scale (CES-D) - Metadata-only reference implementation"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ces-d"
 * status = #active

@@ -4,6 +4,7 @@ InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Physical Functioning Score"
 Description: "Physical Functioning Score from EORTC QLQ-C30"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+] = $SCT#273446001 "European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"
@@ -24,6 +25,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-rf
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Role Functioning Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -42,6 +44,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-ef
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Emotional Functioning Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -60,6 +63,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-cf
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Cognitive Functioning Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -78,6 +82,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-sf
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Social Functioning Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -96,6 +101,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-fa
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Fatigue Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -114,6 +120,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-nv
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Nausea and Vomiting Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -132,6 +139,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-pa
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Pain Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -150,6 +158,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-dy
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Dyspnoea Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -168,6 +177,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-sl
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Insomnia Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -186,6 +196,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-ap
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Appetite Loss Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -204,6 +215,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-co
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Constipation Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -222,6 +234,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-di
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Diarrhoea Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -240,6 +253,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-fi
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Financial Difficulties Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
@@ -258,6 +272,7 @@ Instance: mii-exa-pro-eortc-qlq-c30-observation-ql
 InstanceOf: mii-pr-pro-score-instance
 Title: "EORTC QLQ-C30 Global Health Status / Quality of Life Score"
 Usage: #example
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"

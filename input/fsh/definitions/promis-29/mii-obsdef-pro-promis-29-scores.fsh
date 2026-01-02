@@ -6,6 +6,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Physical Function T-Score"
 Description: "PROMIS Physical Function T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
@@ -27,6 +29,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Anxiety T-Score"
 Description: "PROMIS Anxiety T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
@@ -48,6 +52,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Depression T-Score"
 Description: "PROMIS Depression T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
@@ -69,6 +75,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Fatigue T-Score"
 Description: "PROMIS Fatigue T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
@@ -90,6 +98,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Sleep Disturbance T-Score"
 Description: "PROMIS Sleep Disturbance T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
@@ -111,6 +121,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Social Function T-Score"
 Description: "PROMIS Ability to Participate in Social Roles and Activities T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
@@ -132,6 +144,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Pain Interference T-Score"
 Description: "PROMIS Pain Interference T-Score from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
@@ -153,6 +167,8 @@ InstanceOf: mii-pr-pro-score-blueprint
 Title: "MII ObsDef PRO PROMIS-29 Pain Intensity"
 Description: "PROMIS Pain Intensity single item from PROMIS-29 Profile v2.1"
 Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $LNC#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"

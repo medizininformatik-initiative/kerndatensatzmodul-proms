@@ -4,6 +4,7 @@ Title: "MII QST PRO PROMIS-29 Minimal"
 Description: "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions"
 Usage: #definition
 * insert Version
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
 * url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal"
 * status = #active
