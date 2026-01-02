@@ -14,7 +14,7 @@ The VERSION parameter is optional. If not provided, ask the user for it.
 
 ## Your Task
 
-Execute Phase 1-3 of the MII Module Release Workflow:
+Execute Phase 1-5 of the MII Module Release Workflow (automated preparation through PR creation):
 
 ### Phase 1: Create Release Branch
 1. Check current git status - ensure working tree is clean
@@ -75,26 +75,53 @@ Before starting:
 After all changes:
 - Show summary of all modified files
 - Create a single atomic commit with message: `chore: Prepare release v{VERSION}`
-- Ask user if they want to push the release branch
 
-## GitHub Token Requirements
+### Phase 5: Push and Create PR
 
-For `gh` CLI operations (PR creation, CI monitoring), a GitHub token with the following permissions is required:
+After committing, automatically push and create PR:
 
-| Permission | Access Level | Purpose |
-|------------|--------------|---------|
-| **Contents** | Read and write | Push commits, create branches |
-| **Pull requests** | Read and write | Create/update PRs |
-| **Actions** | Read | Check CI/CD run status |
-| **Metadata** | Read | Required by default |
+1. **Push release branch**:
+   ```bash
+   git push origin release/v{VERSION}
+   ```
 
-Note: Token must be provided by MII repository owner via script workflow.
+2. **Create Pull Request** using `gh` CLI:
+   ```bash
+   gh pr create --base dev --head release/v{VERSION} \
+     --title "Release v{VERSION}" \
+     --body "## Summary
+
+   Release candidate for MII PRO Module {VERSION}.
+
+   ### Changes since v{PREVIOUS_VERSION}
+
+   {RELEASE_NOTES}
+
+   ### Version Updates
+
+   | File | Version |
+   |------|---------|
+   | package.json | {VERSION} |
+   | sushi-config.yaml | {VERSION} |
+   | qc/custom.rules.yaml | Added to version list |
+   | version.fsh | All 4 RuleSets |
+   | guide.yaml | {VERSION} |
+
+   ## Test plan
+
+   - [ ] CI validation passes
+   - [ ] SUSHI compiles without errors
+   - [ ] All resources have correct version
+
+   🤖 Generated with [Claude Code](https://claude.com/claude-code)"
+   ```
+
+3. **Report PR URL** to user for tracking
 
 ## Context
 
-The MII Module Release Workflow has 8 phases total. This command handles phases 1-3 (automated preparation). The remaining phases require manual intervention:
-- Phase 4: Create PR and wait for CI
-- Phase 5: Merge and tag
+The MII Module Release Workflow has 8 phases total. This command handles phases 1-4 (automated preparation + PR creation). The remaining phases:
+- Phase 5: Merge and tag (use `/release-finalize`)
 - Phase 6-8: Simplifier publishing and IG export (manual)
 
 Refer to: https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow
