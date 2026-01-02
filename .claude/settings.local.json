@@ -18,9 +18,13 @@
       "Bash(git rebase:*)",
       "Bash(git merge:*)",
       "Bash(git stash:*)",
-      "mcp__terminology__lookup_code"
+      "mcp__terminology__lookup_code",
+      "Bash(git tag:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "terminology"
+  ]
 }

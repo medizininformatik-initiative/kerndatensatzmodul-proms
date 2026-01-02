@@ -74,7 +74,7 @@
             "human": "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
             "expression": "contained.contained.empty()",
             "xpath": "not(parent::f:contained and f:contained)",
-            "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           },
           {
             "key": "dom-3",
@@ -82,7 +82,7 @@
             "human": "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
             "expression": "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
             "xpath": "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
-            "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           },
           {
             "key": "dom-4",
@@ -90,7 +90,7 @@
             "human": "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
             "expression": "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
             "xpath": "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
-            "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           },
           {
             "key": "dom-5",
@@ -98,7 +98,7 @@
             "human": "If a resource is contained in another resource, it SHALL NOT have a security label",
             "expression": "contained.meta.security.empty()",
             "xpath": "not(exists(f:contained/*/f:meta/f:security))",
-            "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           },
           {
             "extension": [
@@ -116,21 +116,23 @@
             "human": "A resource should have narrative for robust management",
             "expression": "text.`div`.exists()",
             "xpath": "exists(f:text/h:div)",
-            "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
-          },
-          {
-            "key": "obs-6",
-            "severity": "error",
-            "human": "dataAbsentReason SHALL only be present if Observation.value[x] is not present",
-            "expression": "dataAbsentReason.empty() or value.empty()",
-            "xpath": "not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))"
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           },
           {
             "key": "obs-7",
             "severity": "error",
             "human": "If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present",
             "expression": "value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()",
-            "xpath": "not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"
+            "xpath": "not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
+          },
+          {
+            "key": "obs-6",
+            "severity": "error",
+            "human": "dataAbsentReason SHALL only be present if Observation.value[x] is not present",
+            "expression": "dataAbsentReason.empty() or value.empty()",
+            "xpath": "not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
         "isModifier": false,
@@ -286,10 +288,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "valueString": "Language"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
             }
           ],
           "strength": "preferred",
@@ -382,7 +380,7 @@
               "path": "url"
             }
           ],
-          "ordered": false,
+          "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
         "short": "Additional content defined by implementations",
@@ -534,8 +532,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "0",
         "base": {
@@ -567,7 +570,13 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
         "id": "Observation.extension:instantiatesCanonical.url",
@@ -610,7 +619,7 @@
         "id": "Observation.extension:instantiatesCanonical.value[x]",
         "path": "Observation.extension.value[x]",
         "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 1,
         "max": "1",
         "base": {
@@ -653,6 +662,16 @@
       {
         "id": "Observation.modifierExtension",
         "path": "Observation.modifierExtension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -703,6 +722,16 @@
       },
       {
         "id": "Observation.identifier",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.identifier",
         "short": "Business Identifier for observation",
         "definition": "A unique identifier assigned to this observation.",
@@ -719,6 +748,9 @@
             "code": "Identifier"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -733,6 +765,22 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CX / EI (occasionally, more often EI maps to a resource id or a URL)"
+          },
+          {
+            "identity": "rim",
+            "map": "II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]"
+          },
+          {
+            "identity": "servd",
+            "map": "Identifier"
+          },
           {
             "identity": "workflow",
             "map": "Event.identifier"
@@ -753,9 +801,20 @@
       },
       {
         "id": "Observation.basedOn",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.basedOn",
         "short": "Fulfills plan, proposal or order",
         "definition": "A plan, proposal or order that is fulfilled in whole or in part by this event.  For example, a MedicationRequest may require a patient to have laboratory test performed before  it is dispensed.",
+        "comment": "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
         "requirements": "Allows tracing of authorization for the event and tracking whether proposals/recommendations were acted upon.",
         "alias": [
           "Fulfills"
@@ -780,6 +839,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -788,11 +850,27 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "workflow",
             "map": "Event.basedOn"
@@ -809,6 +887,16 @@
       },
       {
         "id": "Observation.partOf",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.partOf",
         "short": "Part of referenced event",
         "definition": "A larger event of which this particular Observation is a component or step.  For example,  an observation as part of a procedure.",
@@ -836,6 +924,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -844,11 +935,27 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "workflow",
             "map": "Event.partOf"
@@ -938,6 +1045,16 @@
       },
       {
         "id": "Observation.category",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.category",
         "short": "Classification of  type of observation",
         "definition": "A code that classifies the general type of observation being made.",
@@ -955,6 +1072,9 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -966,7 +1086,6 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -980,6 +1099,22 @@
         },
         "mapping": [
           {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
+          {
             "identity": "w5",
             "map": "FiveWs.class"
           },
@@ -991,6 +1126,16 @@
       },
       {
         "id": "Observation.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.code",
         "short": "Type of observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"name\".",
@@ -1020,6 +1165,9 @@
             }
           ]
         },
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1045,6 +1193,22 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/observation-codes"
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "workflow",
             "map": "Event.code"
@@ -1073,6 +1237,16 @@
       },
       {
         "id": "Observation.subject",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.subject",
         "short": "Who and/or what the observation is about",
         "definition": "The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.",
@@ -1096,6 +1270,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1104,11 +1281,27 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "workflow",
             "map": "Event.subject"
@@ -1137,6 +1330,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
             "valueCode": "trial-use"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
           }
         ],
         "path": "Observation.focus",
@@ -1158,6 +1355,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1166,12 +1366,28 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "w5",
             "map": "FiveWs.subject[x]"
@@ -1192,6 +1408,16 @@
       },
       {
         "id": "Observation.encounter",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.encounter",
         "short": "Healthcare event during which this observation is made",
         "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.",
@@ -1215,6 +1441,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1223,11 +1452,27 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "workflow",
             "map": "Event.context"
@@ -1248,6 +1493,16 @@
       },
       {
         "id": "Observation.effective[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.effective[x]",
         "slicing": {
           "discriminator": [
@@ -1287,6 +1542,9 @@
             "code": "instant"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1300,6 +1558,10 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "workflow",
             "map": "Event.occurrence[x]"
@@ -1320,6 +1582,16 @@
       },
       {
         "id": "Observation.effective[x]:effectiveDateTime",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.effective[x]",
         "sliceName": "effectiveDateTime",
         "short": "Clinically relevant time/time-period for observation",
@@ -1341,6 +1613,9 @@
             "code": "dateTime"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1355,6 +1630,10 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "workflow",
             "map": "Event.occurrence[x]"
@@ -1420,9 +1699,20 @@
       },
       {
         "id": "Observation.performer",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.performer",
         "short": "Who is responsible for the observation",
         "definition": "Who was responsible for asserting the observed value as \"true\".",
+        "comment": "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
         "min": 0,
         "max": "*",
@@ -1444,6 +1734,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1452,12 +1745,28 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "workflow",
             "map": "Event.performer.actor"
@@ -1478,6 +1787,16 @@
       },
       {
         "id": "Observation.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.value[x]",
         "short": "Actual result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
@@ -1496,6 +1815,7 @@
           }
         ],
         "condition": [
+          "ele-1",
           "obs-7"
         ],
         "constraint": [
@@ -1512,6 +1832,10 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "sct-concept",
             "map": "< 441742003 |Evaluation finding|"
@@ -1732,6 +2056,7 @@
         "path": "Observation.value[x].unit",
         "short": "Unit representation",
         "definition": "A human-readable form of the unit.",
+        "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
         "requirements": "There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.",
         "min": 0,
         "max": "1",
@@ -1774,6 +2099,7 @@
         "path": "Observation.value[x].system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
+        "comment": "see http://en.wikipedia.org/wiki/Uniform_resource_identifier",
         "requirements": "Need to know the system that defines the coded form of the unit.",
         "min": 0,
         "max": "1",
@@ -1859,6 +2185,16 @@
       },
       {
         "id": "Observation.dataAbsentReason",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.dataAbsentReason",
         "short": "Why the result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -1877,6 +2213,7 @@
           }
         ],
         "condition": [
+          "ele-1",
           "obs-6"
         ],
         "constraint": [
@@ -1890,7 +2227,6 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -1904,6 +2240,22 @@
         },
         "mapping": [
           {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
+          {
             "identity": "v2",
             "map": "N/A"
           },
@@ -1915,6 +2267,16 @@
       },
       {
         "id": "Observation.interpretation",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "A categorical assessment of an observation value.  For example, high, low, normal.",
@@ -1935,6 +2297,9 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1947,7 +2312,6 @@
         ],
         "mustSupport": true,
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -1960,6 +2324,22 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/observation-interpretation"
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "sct-concept",
             "map": "< 260245000 |Findings values|"
@@ -1980,6 +2360,16 @@
       },
       {
         "id": "Observation.note",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.note",
         "short": "Comments about the observation",
         "definition": "Comments about the observation or the results.",
@@ -1997,6 +2387,9 @@
             "code": "Annotation"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2009,8 +2402,19 @@
         ],
         "mustSupport": true,
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "Act"
+          },
           {
             "identity": "v2",
             "map": "NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)"
@@ -2023,6 +2427,16 @@
       },
       {
         "id": "Observation.bodySite",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.bodySite",
         "short": "Observed body part",
         "definition": "Indicates the site on the subject's body where the observation was made (i.e. the target site).",
@@ -2039,6 +2453,9 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2050,7 +2467,6 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -2063,6 +2479,22 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "sct-concept",
             "map": "< 123037004 |Body structure|"
@@ -2083,6 +2515,16 @@
       },
       {
         "id": "Observation.method",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.method",
         "short": "How it was done",
         "definition": "Indicates the mechanism used to perform the observation.",
@@ -2100,6 +2542,9 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2112,7 +2557,6 @@
         ],
         "mustSupport": true,
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -2125,6 +2569,22 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/observation-methods"
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "v2",
             "map": "OBX-17"
@@ -2231,6 +2691,16 @@
       },
       {
         "id": "Observation.method.coding",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.method.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -2248,6 +2718,9 @@
             "code": "Coding"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2261,6 +2734,22 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"
+          },
+          {
+            "identity": "rim",
+            "map": "CV"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding rdfs:subClassOf dt:CDCoding"
+          },
           {
             "identity": "v2",
             "map": "C*E.1-8, C*E.10-22"
@@ -2330,6 +2819,16 @@
       },
       {
         "id": "Observation.specimen",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.specimen",
         "short": "Specimen used for this observation",
         "definition": "The specimen that was used when this observation was made.",
@@ -2349,6 +2848,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2357,11 +2859,26 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "sct-concept",
             "map": "< 123038009 |Specimen|"
@@ -2382,6 +2899,16 @@
       },
       {
         "id": "Observation.device",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.device",
         "short": "(Measurement) Device",
         "definition": "The device used to generate the observation data.",
@@ -2402,6 +2929,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2410,11 +2940,26 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "sct-concept",
             "map": "< 49062001 |Device|"
@@ -2435,6 +2980,16 @@
       },
       {
         "id": "Observation.referenceRange",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.referenceRange",
         "short": "Provides guide for interpretation",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.  Multiple reference ranges are interpreted as an \"OR\".   In other words, to represent two distinct target populations, two `referenceRange` elements would be used.",
@@ -2452,6 +3007,9 @@
             "code": "BackboneElement"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2466,13 +3024,17 @@
             "severity": "error",
             "human": "Must have at least a low or a high or text",
             "expression": "low.exists() or high.exists() or text.exists()",
-            "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))"
+            "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
         "mustSupport": true,
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "OBX.7"
@@ -2521,6 +3083,16 @@
       {
         "id": "Observation.referenceRange.extension",
         "path": "Observation.referenceRange.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
         "short": "Additional content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -2624,6 +3196,7 @@
         "path": "Observation.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9). If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
+        "comment": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "min": 0,
         "max": "1",
         "base": {
@@ -2640,6 +3213,7 @@
           }
         ],
         "condition": [
+          "ele-1",
           "obs-3"
         ],
         "constraint": [
@@ -2650,11 +3224,38 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "qty-3",
+            "severity": "error",
+            "human": "If a code for the unit is present, the system SHALL also be present",
+            "expression": "code.empty() or system.exists()",
+            "xpath": "not(exists(f:code)) or exists(f:system)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Quantity"
+          },
+          {
+            "key": "sqty-1",
+            "severity": "error",
+            "human": "The comparator is not used on a SimpleQuantity",
+            "expression": "comparator.empty()",
+            "xpath": "not(exists(f:comparator))",
+            "source": "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "SN (see also Range) or CQ"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ, IVL<PQ>, MO, CO, depending on the values"
+          },
           {
             "identity": "v2",
             "map": "OBX-7"
@@ -2994,6 +3595,7 @@
         "path": "Observation.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9). If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
+        "comment": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3010,6 +3612,7 @@
           }
         ],
         "condition": [
+          "ele-1",
           "obs-3"
         ],
         "constraint": [
@@ -3020,11 +3623,38 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "qty-3",
+            "severity": "error",
+            "human": "If a code for the unit is present, the system SHALL also be present",
+            "expression": "code.empty() or system.exists()",
+            "xpath": "not(exists(f:code)) or exists(f:system)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Quantity"
+          },
+          {
+            "key": "sqty-1",
+            "severity": "error",
+            "human": "The comparator is not used on a SimpleQuantity",
+            "expression": "comparator.empty()",
+            "xpath": "not(exists(f:comparator))",
+            "source": "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "SN (see also Range) or CQ"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ, IVL<PQ>, MO, CO, depending on the values"
+          },
           {
             "identity": "v2",
             "map": "OBX-7"
@@ -3361,6 +3991,16 @@
       },
       {
         "id": "Observation.referenceRange.type",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -3378,6 +4018,9 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -3389,7 +4032,6 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -3402,6 +4044,22 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "sct-concept",
             "map": "< 260245000 |Findings values| OR  \r< 365860008 |General clinical state finding| \rOR \r< 250171008 |Clinical history or observation findings| OR  \r< 415229000 |Racial group| OR \r< 365400002 |Finding of puberty stage| OR\r< 443938003 |Procedure carried out on subject|"
@@ -3418,6 +4076,16 @@
       },
       {
         "id": "Observation.referenceRange.appliesTo",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.  Multiple `appliesTo`  are interpreted as an \"AND\" of the target populations.  For example, to represent a target population of African American females, both a code of female and a code for African American would be used.",
@@ -3435,6 +4103,9 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -3446,7 +4117,6 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -3459,6 +4129,22 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "sct-concept",
             "map": "< 260245000 |Findings values| OR  \r< 365860008 |General clinical state finding| \rOR \r< 250171008 |Clinical history or observation findings| OR  \r< 415229000 |Racial group| OR \r< 365400002 |Finding of puberty stage| OR\r< 443938003 |Procedure carried out on subject|"
@@ -3475,9 +4161,20 @@
       },
       {
         "id": "Observation.referenceRange.age",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
+        "comment": "The stated low and high value are assumed to have arbitrarily high precision when it comes to determining which values are in the range. I.e. 1.99 is not in the range 2 -> 3.",
         "requirements": "Some analytes vary greatly over age.",
         "min": 0,
         "max": "1",
@@ -3491,6 +4188,9 @@
             "code": "Range"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -3499,11 +4199,30 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "rng-2",
+            "severity": "error",
+            "human": "If present, low SHALL have a lower value than high",
+            "expression": "low.empty() or high.empty() or (low <= high)",
+            "xpath": "not(exists(f:low/f:value/@value)) or not(exists(f:high/f:value/@value)) or (number(f:low/f:value/@value) <= number(f:high/f:value/@value))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Range"
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "NR and also possibly SN (but see also quantity)"
+          },
+          {
+            "identity": "rim",
+            "map": "IVL<QTY[not(type=\"TS\")]> [lowClosed=\"true\" and highClosed=\"true\"]or URG<QTY[not(type=\"TS\")]>"
+          },
           {
             "identity": "rim",
             "map": "outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=\"age\"].value"
@@ -3515,6 +4234,7 @@
         "path": "Observation.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of \"normals\".",
+        "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
         "min": 0,
         "max": "1",
         "base": {
@@ -3553,6 +4273,16 @@
       },
       {
         "id": "Observation.hasMember",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.hasMember",
         "short": "Related resource that belongs to the Observation group",
         "definition": "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.",
@@ -3574,6 +4304,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -3582,11 +4315,27 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "v2",
             "map": "Relationships established by OBX-4 usage"
@@ -3599,6 +4348,16 @@
       },
       {
         "id": "Observation.derivedFrom",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.derivedFrom",
         "short": "Related measurements the observation is made from",
         "definition": "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.",
@@ -3623,6 +4382,9 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -3631,12 +4393,28 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a contained resource if a local reference is provided",
+            "expression": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Reference"
           }
         ],
         "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "v2",
             "map": "Relationships established by OBX-4 usage"
@@ -3649,6 +4427,16 @@
       },
       {
         "id": "Observation.component",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.component",
         "short": "Component results",
         "definition": "Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations.",
@@ -3666,6 +4454,9 @@
             "code": "BackboneElement"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -3679,6 +4470,10 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "containment by OBX-4?"
@@ -3727,6 +4522,16 @@
       {
         "id": "Observation.component.extension",
         "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
         "short": "Additional content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -3827,6 +4632,16 @@
       },
       {
         "id": "Observation.component.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -3843,6 +4658,9 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "condition": [
+          "ele-1"
         ],
         "constraint": [
           {
@@ -3869,6 +4687,22 @@
         },
         "mapping": [
           {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
+          {
             "identity": "w5",
             "map": "FiveWs.what[x]"
           },
@@ -3888,6 +4722,16 @@
       },
       {
         "id": "Observation.component.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.component.value[x]",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
@@ -3935,6 +4779,9 @@
             "code": "Period"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -3948,6 +4795,10 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "sct-concept",
             "map": "363714003 |Interprets| < 441742003 |Evaluation finding|"
@@ -3968,6 +4819,16 @@
       },
       {
         "id": "Observation.component.dataAbsentReason",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.component.value[x] is missing.",
@@ -3986,6 +4847,7 @@
           }
         ],
         "condition": [
+          "ele-1",
           "obs-6"
         ],
         "constraint": [
@@ -3999,7 +4861,6 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -4013,6 +4874,22 @@
         },
         "mapping": [
           {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
+          {
             "identity": "v2",
             "map": "N/A"
           },
@@ -4024,6 +4901,16 @@
       },
       {
         "id": "Observation.component.interpretation",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "A categorical assessment of an observation value.  For example, high, low, normal.",
@@ -4044,6 +4931,9 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -4055,7 +4945,6 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "binding": {
           "extension": [
             {
@@ -4068,6 +4957,22 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/observation-interpretation"
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "sct-concept",
             "map": "< 260245000 |Findings values|"
@@ -4101,18 +5006,6 @@
           "max": "*"
         },
         "contentReference": "#Observation.referenceRange",
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "v2",

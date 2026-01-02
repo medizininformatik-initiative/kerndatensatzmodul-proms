@@ -58,7 +58,8 @@
             "severity": "error",
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "isModifier": false,
@@ -340,8 +341,6 @@
           }
         ],
         "fixedUri": "displayable",
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -351,6 +350,16 @@
       },
       {
         "id": "Extension.extension:displayable.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -366,6 +375,9 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -377,8 +389,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -558,8 +573,6 @@
           }
         ],
         "fixedUri": "collectable",
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -569,6 +582,16 @@
       },
       {
         "id": "Extension.extension:collectable.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -584,6 +607,9 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -595,8 +621,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -776,8 +805,6 @@
           }
         ],
         "fixedUri": "populatable",
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -787,6 +814,16 @@
       },
       {
         "id": "Extension.extension:populatable.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -802,6 +839,9 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -813,8 +853,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -994,8 +1037,6 @@
           }
         ],
         "fixedUri": "extractable",
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1005,6 +1046,16 @@
       },
       {
         "id": "Extension.extension:extractable.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1020,6 +1071,9 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1031,8 +1085,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1212,8 +1269,6 @@
           }
         ],
         "fixedUri": "calculatable",
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1223,6 +1278,16 @@
       },
       {
         "id": "Extension.extension:calculatable.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1238,6 +1303,9 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1249,8 +1317,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1430,8 +1501,6 @@
           }
         ],
         "fixedUri": "domainAligned",
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1441,6 +1510,16 @@
       },
       {
         "id": "Extension.extension:domainAligned.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1456,6 +1535,9 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1467,8 +1549,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1503,8 +1588,6 @@
           }
         ],
         "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities",
-        "isModifier": false,
-        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1514,6 +1597,16 @@
       },
       {
         "id": "Extension.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1676,6 +1769,9 @@
             "code": "Meta"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1687,8 +1783,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"

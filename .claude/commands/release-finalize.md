@@ -7,16 +7,16 @@ Help finalize the release after PR has been merged (Phase 5 of MII Module Releas
 Execute Phase 5: Merge and Tag Release
 
 ### Prerequisites Check
-1. Verify PR has been merged to main branch
+1. Verify PR has been merged to dev branch
 2. Ensure all CI checks passed
 3. Confirm you're ready to create the release tag
 
 ### Steps
 
-1. **Switch to main branch and pull latest**
+1. **Switch to dev branch and pull latest**
    ```
-   git checkout main
-   git pull origin main
+   git checkout dev
+   git pull origin dev
    ```
 
 2. **Verify the version**
@@ -45,6 +45,6 @@ Execute Phase 5: Merge and Tag Release
 ### Post-Tag Actions
 
 After successfully creating the tag:
-1. Switch back to dev branch: `git checkout dev`
+1. Stay on dev branch (already there)
 2. Optionally clean up the release branch if user wants
-3. Display the GitHub release URL: `https://github.com/medizininformatik-initiative/kerndatensatzmodul-onkologie/releases`
+3. Display the GitHub release URL: `https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/releases`
