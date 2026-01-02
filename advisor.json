@@ -9,6 +9,16 @@
     "UNABLE_TO_INFER_CODESYSTEM@Questionnaire.*",
     "Terminology_TX_NoValid_16@Questionnaire.*",
     "UNABLE_TO_INFER_CODESYSTEM@Bundle.*",
-    "Terminology_TX_NoValid_16@Bundle.*"
+    "Terminology_TX_NoValid_16@Bundle.*",
+
+    "STATUS_INCONSISTENT@Questionnaire/mii-qst-pro-eortc-qlq-c30*",
+    "STATUS_INCONSISTENT@CodeSystem/mii-cs-pro-eortc-qlq-c30*",
+    "STATUS_INCONSISTENT@ValueSet/mii-vs-pro-eortc-qlq-c30*",
+    "STATUS_INCONSISTENT@ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30*",
+    "STATUS_INCONSISTENT@Bundle/mii-exa-pro-eortc-qlq-c30*",
+
+    "not-supported@Questionnaire/mii-qst-pro-eortc-qlq-c30*",
+    "structure@Questionnaire/mii-qst-pro-eortc-qlq-c30*",
+    "invalid@Questionnaire/mii-qst-pro-eortc-qlq-c30*"
   ]
 }
