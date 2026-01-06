@@ -3,7 +3,7 @@
   "id": "mii-ig-pro",
   "language": "de-DE",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version": "2026.0.0-rc.2",
+  "version": "2026.0.0-rc.3",
   "name": "MII_IG_PRO",
   "title": "MII IG PRO",
   "status": "active",
@@ -71,8 +71,8 @@
         "reference": {
           "reference": "Observation/mii-exa-pro-bdi-ii-observation"
         },
-        "name": "BDI-II Observation",
-        "exampleBoolean": true
+        "name": "BDI-II Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       },
       {
         "reference": {
@@ -1042,10 +1042,10 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-pro-promis-depression-tscpoe-from-bdi-ii-observation"
+          "reference": "Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation"
         },
-        "name": "PROMIS Depression T-Score, derived from BDI-II Observation",
-        "exampleBoolean": true
+        "name": "PROMIS Depression T-Score, derived from BDI-II Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       }
     ],
     "page": {
@@ -1056,6 +1056,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "validation-qa.html",
+          "title": "Validation Qa",
           "generation": "markdown"
         }
       ]

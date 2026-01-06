@@ -1,6 +1,8 @@
 Instance: mii-exa-pro-bdi-ii-observation
-InstanceOf: Observation
-Title: "BDI-II Observation"
+InstanceOf: MII_PR_PRO_Score_Instance
+Usage: #example
+Title: "BDI-II Observation Example"
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * subject = Reference(Patient/example-patient)
 * effectiveDateTime = "2023-10-01T12:00:00Z"
