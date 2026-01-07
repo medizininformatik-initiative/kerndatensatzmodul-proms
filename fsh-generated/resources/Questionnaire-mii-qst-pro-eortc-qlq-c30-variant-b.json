@@ -3,7 +3,7 @@
   "id": "mii-qst-pro-eortc-qlq-c30-variant-b",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.3"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.4"
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b",
@@ -54,7 +54,7 @@
       "id": "eortc-qlq-c30-cs-b",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.3"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.4"
         ]
       },
       "concept": [
@@ -235,7 +235,7 @@
           "display": "7 - Perfect"
         }
       ],
-      "version": "2026.0.0-rc.3",
+      "version": "2026.0.0-rc.4",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
       "status": "active",
       "content": "complete",
@@ -246,7 +246,7 @@
       "id": "eortc-qlq-c30-4pt-b",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.3"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.4"
         ]
       },
       "compose": {
@@ -270,7 +270,7 @@
           }
         ]
       },
-      "version": "2026.0.0-rc.3",
+      "version": "2026.0.0-rc.4",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-variant-b",
       "status": "active"
     },
@@ -279,7 +279,7 @@
       "id": "eortc-qlq-c30-7pt-b",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.3"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.4"
         ]
       },
       "compose": {
@@ -312,7 +312,7 @@
           }
         ]
       },
-      "version": "2026.0.0-rc.3",
+      "version": "2026.0.0-rc.4",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-variant-b",
       "status": "active"
     }
@@ -836,7 +836,7 @@
       "text": "Calculated Scores (0-100 scale)"
     }
   ],
-  "version": "2026.0.0-rc.3",
+  "version": "2026.0.0-rc.4",
   "status": "active",
   "experimental": true,
   "language": "en",
