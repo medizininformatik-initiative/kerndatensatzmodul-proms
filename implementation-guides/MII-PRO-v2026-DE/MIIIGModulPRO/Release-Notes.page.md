@@ -30,7 +30,7 @@ Initiale Ballotierungsversion mit folgenden PRO-Instrumenten:
 - BDI-II (Beck Depression Inventory II) als Referenz
 - EORTC QLQ-C30 (Lebensqualität bei Krebspatienten)
 
-Kern-Profile:
+PRO-Profile:
 - MII_PR_PRO_Questionnaire: SDC-basiertes Questionnaire-Profil
 - MII_PR_PRO_QuestionnaireResponse: Response-Erfassungsprofil
 - MII_PR_PRO_Score_Blueprint: Vorlage für Score-Observations
