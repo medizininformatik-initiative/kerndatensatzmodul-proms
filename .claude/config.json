@@ -1,4 +1,28 @@
 {
-  "module": "proms",
-  "custom_setting": "preserve this"
+  "ig_export": {
+    "module_id": "pro",
+    "package_name": "de.medizininformatikinitiative.kerndatensatz.proms",
+    "canonical_base": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro",
+    "guide_name": "mii-ig-pro-v2026-de",
+    "version": "2026.0.0",
+    "resource_prefix": "mii-pr-pro",
+    "dependencies": {
+      "hl7.fhir.r4.core": "4.0.1",
+      "hl7.terminology.r4": "7.0.1",
+      "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.0",
+      "hl7.fhir.uv.sdc": "3.0.0",
+      "de.gematik.isik": "5.0.0"
+    }
+  },
+  "version_files": {
+    "fsh_path": "input/fsh/rulesets/version.fsh",
+    "rulesets": ["PR_CS_VS_Version", "Version", "MetaProfile", "ObsDefVersion"],
+    "files": {
+      "package_json": true,
+      "package_json_description": false,
+      "sushi_config": true,
+      "qc_rules": true,
+      "guide_yaml": "implementation-guides/MII-PRO-v2026-DE/guide.yaml"
+    }
+  }
 }
