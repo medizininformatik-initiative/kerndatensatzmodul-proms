@@ -3,7 +3,7 @@
   "id": "mii-qst-pro-eortc-qlq-c30-variant-a",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.4"
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a",
@@ -54,7 +54,7 @@
       "id": "eortc-qlq-c30-4pt-a",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.4"
         ]
       },
       "compose": {
@@ -78,7 +78,7 @@
           }
         ]
       },
-      "version": "2026.0.0",
+      "version": "2026.0.0-rc.4",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-variant-a",
       "status": "active"
     },
@@ -87,7 +87,7 @@
       "id": "eortc-qlq-c30-7pt-a",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0-rc.4"
         ]
       },
       "compose": {
@@ -120,7 +120,7 @@
           }
         ]
       },
-      "version": "2026.0.0",
+      "version": "2026.0.0-rc.4",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-variant-a",
       "status": "active"
     }
@@ -644,7 +644,7 @@
       "text": "Calculated Scores (0-100 scale)"
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.0-rc.4",
   "status": "active",
   "experimental": true,
   "language": "en",
