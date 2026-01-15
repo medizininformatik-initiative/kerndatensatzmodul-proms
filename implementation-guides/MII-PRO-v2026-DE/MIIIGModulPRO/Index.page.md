@@ -36,9 +36,9 @@ Die Implementierung basiert auf:
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 01.09.2025 |
-| Version | 2026.0.0-ballot        |
-| Status  | ballot       |
+| Datum   | 12.01.2026 |
+| Version | 2026.0.0        |
+| Status  | active       |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis
