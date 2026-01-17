@@ -13,9 +13,9 @@ Logical: MII_LM_PRO
 Id: mii-lm-pro
 Title: "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken"
 Description: "Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings."
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^version = "2025.0.0-alpha"
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.name = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
