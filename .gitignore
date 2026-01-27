@@ -14,3 +14,6 @@ CLAUDE.md
 .simplifier/
 *.tgz
 project.yaml
+.bake/
+.fhir-package-cache/
+fhirpkg.lock.json

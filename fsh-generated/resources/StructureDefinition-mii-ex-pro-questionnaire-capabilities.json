@@ -58,8 +58,7 @@
             "severity": "error",
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
           }
         ],
         "isModifier": false,
@@ -341,6 +340,8 @@
           }
         ],
         "fixedUri": "displayable",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -365,9 +366,6 @@
             "code": "boolean"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -379,11 +377,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -563,6 +558,8 @@
           }
         ],
         "fixedUri": "collectable",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -587,9 +584,6 @@
             "code": "boolean"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -601,11 +595,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -785,6 +776,8 @@
           }
         ],
         "fixedUri": "populatable",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -809,9 +802,6 @@
             "code": "boolean"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -823,11 +813,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1007,6 +994,8 @@
           }
         ],
         "fixedUri": "extractable",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1031,9 +1020,6 @@
             "code": "boolean"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1045,11 +1031,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1229,6 +1212,8 @@
           }
         ],
         "fixedUri": "calculatable",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1253,9 +1238,6 @@
             "code": "boolean"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1267,11 +1249,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1451,6 +1430,8 @@
           }
         ],
         "fixedUri": "domainAligned",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1475,9 +1456,6 @@
             "code": "boolean"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1489,11 +1467,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1528,6 +1503,8 @@
           }
         ],
         "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -1699,9 +1676,6 @@
             "code": "Meta"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -1713,11 +1687,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"

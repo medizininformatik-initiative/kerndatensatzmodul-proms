@@ -57,8 +57,7 @@
             "severity": "error",
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
           }
         ],
         "isModifier": false,
@@ -195,6 +194,8 @@
           }
         ],
         "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
+        "isModifier": false,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "rim",
@@ -219,9 +220,6 @@
             "code": "CodeableConcept"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -233,11 +231,8 @@
           }
         ],
         "isModifier": false,
+        "isSummary": false,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -357,9 +352,6 @@
             "code": "Coding"
           }
         ],
-        "condition": [
-          "ele-1"
-        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -373,22 +365,6 @@
         "isModifier": false,
         "isSummary": true,
         "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "v2",
-            "map": "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"
-          },
-          {
-            "identity": "rim",
-            "map": "CV"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding rdfs:subClassOf dt:CDCoding"
-          },
           {
             "identity": "v2",
             "map": "C*E.1-8, C*E.10-22"
@@ -647,7 +623,6 @@
         "path": "Extension.value[x].coding.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
