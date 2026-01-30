@@ -112,7 +112,8 @@
             "severity": "warning",
             "human": "Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject.",
             "expression": "subject.exists()",
-            "xpath": "exists(f:subject)"
+            "xpath": "exists(f:subject)",
+            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
           },
           {
             "extension": [
@@ -125,7 +126,8 @@
             "severity": "error",
             "human": "When repeats=true for a group, it'll be represented with multiple items with the same linkId in the QuestionnaireResponse.  For a question, it'll be represented by a single item with that linkId with multiple answers.",
             "expression": "(QuestionnaireResponse|repeat(answer|item)).select(item.where(answer.value.exists()).linkId.isDistinct()).allTrue()",
-            "xpath": "not(exists(for $item in descendant::f:item[f:answer] return $item/preceding-sibling::f:item[f:linkId/@value=$item/f:linkId/@value]))"
+            "xpath": "not(exists(for $item in descendant::f:item[f:answer] return $item/preceding-sibling::f:item[f:linkId/@value=$item/f:linkId/@value]))",
+            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
           }
         ],
         "mustSupport": false,
@@ -275,10 +277,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "valueString": "Language"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
             }
           ],
           "strength": "preferred",
@@ -374,8 +372,13 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -407,7 +410,13 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.extension:signature",
@@ -415,6 +424,11 @@
         "sliceName": "signature",
         "short": "A signature attesting to the content",
         "definition": "Represents a wet or electronic signature for either the form overall or for the question or item it's associated with.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -452,7 +466,14 @@
           }
         ],
         "mustSupport": false,
-        "isModifier": false
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.extension:completionMode",
@@ -460,6 +481,11 @@
         "sliceName": "completionMode",
         "short": "E.g. Verbal, written, electronic",
         "definition": "Indicates how the individual completing the QuestionnaireResponse provided their responses.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -497,7 +523,14 @@
           }
         ],
         "mustSupport": false,
-        "isModifier": false
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.modifierExtension",
@@ -505,7 +538,7 @@
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "requirements": "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+        "requirements": "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](extensibility.html#modifierExtension).",
         "alias": [
           "extensions",
           "user content"
@@ -782,8 +815,13 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -824,6 +862,10 @@
         "short": "Display name for canonical reference",
         "definition": "The title or other name to display when referencing a resource by canonical URL.",
         "comment": "This SHALL be the title of the Questionnaire at the time the QuestionnaireResponse was originally authored.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -861,7 +903,8 @@
           }
         ],
         "mustSupport": true,
-        "isModifier": false
+        "isModifier": false,
+        "isSummary": false
       },
       {
         "id": "QuestionnaireResponse.questionnaire.value",
@@ -1260,8 +1303,7 @@
             "severity": "error",
             "human": "Nested item can't be beneath both item and answer",
             "expression": "(answer.exists() and item.exists()).not()",
-            "xpath": "not(exists(f:answer) and exists(f:item))",
-            "source": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
+            "xpath": "not(exists(f:answer) and exists(f:item))"
           }
         ],
         "mustSupport": true,
@@ -1322,8 +1364,13 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1355,7 +1402,13 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.item.extension:itemMedia",
@@ -1363,6 +1416,11 @@
         "sliceName": "itemMedia",
         "short": "Media to display",
         "definition": "Media to render/make available as an accompaniment to the question being asked",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -1400,7 +1458,18 @@
           }
         ],
         "mustSupport": false,
-        "isModifier": false
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.item.extension:ItemSignature",
@@ -1408,6 +1477,11 @@
         "sliceName": "ItemSignature",
         "short": "A signature attesting to the content",
         "definition": "Represents a wet or electronic signature for either the form overall or for the question or item it's associated with.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1445,7 +1519,14 @@
           }
         ],
         "mustSupport": false,
-        "isModifier": false
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.item.modifierExtension",
@@ -1453,7 +1534,7 @@
         "short": "Extensions that cannot be ignored even if unrecognized",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "requirements": "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+        "requirements": "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](extensibility.html#modifierExtension).",
         "alias": [
           "extensions",
           "user content",
@@ -1541,8 +1622,8 @@
         "id": "QuestionnaireResponse.item.definition",
         "path": "QuestionnaireResponse.item.definition",
         "short": "ElementDefinition - details for the item",
-        "definition": "A reference to an [ElementDefinition](http://hl7.org/fhir/R4/elementdefinition.html) that provides the details for the item.",
-        "comment": "The ElementDefinition must be in a [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].\n\nThere is no need for this element if the item pointed to by the linkId has a definition listed.",
+        "definition": "A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item.",
+        "comment": "The ElementDefinition must be in a [StructureDefinition](structuredefinition.html#), and must have a fragment identifier that identifies the specific data element by its id (Element.id). E.g. http://hl7.org/fhir/StructureDefinition/Observation#Observation.value[x].\n\nThere is no need for this element if the item pointed to by the linkId has a definition listed.",
         "requirements": "A common pattern is to define a set of data elements, and then build multiple different questionnaires for different circumstances to gather the data. This element provides traceability to the common definition.",
         "min": 0,
         "max": "1",
@@ -1699,8 +1780,13 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1732,7 +1818,13 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.item.answer.extension:itemAnswerMedia",
@@ -1740,6 +1832,11 @@
         "sliceName": "itemAnswerMedia",
         "short": "Answer Media to display",
         "definition": "Media to render/make available as an accompaniment to a specific answer option",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -1777,7 +1874,18 @@
           }
         ],
         "mustSupport": false,
-        "isModifier": false
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.item.answer.extension:ordinalValue",
@@ -1786,6 +1894,10 @@
         "short": "Assigned Ordinal Value",
         "definition": "A numeric value that allows the comparison (less than, greater than) or other numerical \nmanipulation of a concept (e.g. Adding up components of a score). Scores are usually a whole number, but occasionally decimals are encountered in scores.",
         "comment": "Scores are commonly encountered in various clinical assessment scales. Assigning a value to a concept should generally be done in a formal code system that defines the value, or in an applicable value set for the concept, but some concepts do not have a formal definition (or are not even represented as a concept formally, especially in [Questionnaires](questionnaire.html), \nso this extension is allowed to appear ouside those preferred contexts.  Scores may even be assigned arbitrarily during use (hence, on Coding). The value may be constrained to an integer in some contexts of use. Todo: Scoring algorithms may also be defined directly, but how this is done is not yet defined.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -1823,7 +1935,14 @@
           }
         ],
         "mustSupport": false,
-        "isModifier": false
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.item.answer.modifierExtension",
@@ -1831,7 +1950,7 @@
         "short": "Extensions that cannot be ignored even if unrecognized",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "requirements": "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+        "requirements": "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](extensibility.html#modifierExtension).",
         "alias": [
           "extensions",
           "user content",
@@ -1926,7 +2045,10 @@
             "code": "Attachment"
           },
           {
-            "code": "Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
           }
         ],
         "constraint": [

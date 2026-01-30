@@ -88,13 +88,30 @@ done
 
 **Note**: The differential only shows MS elements defined in *this* profile. Parent profiles (MII KDS base, German base profiles, FHIR core) may have additional MS elements, bindings, and cardinality constraints. These inherited constraints will surface when running SUSHI and the validator.
 
-#### 1.2 Extract SearchParameters
+#### 1.2 Map SearchParameters for MS Elements
+
+**Every Must-Support element must be searchable via a SearchParameter.** Resolve SPs using this 4-level hierarchy (check in order, use the first match):
+
+| Level | Source | Example |
+|-------|--------|---------|
+| 1. **FHIR R4 Base** | Standard SPs defined in the FHIR spec | `Patient.name`, `Condition.code` |
+| 2. **MII Meta** | Cross-module SPs from `kerndatensatz-meta` | Shared SPs across KDS modules |
+| 3. **Dependencies** | SPs from referenced modules/packages | SPs from parent or related modules |
+| 4. **Module itself** | Module-specific SPs for own elements | Custom SPs defined in the module |
+
+If no SP exists at any level for an MS element, a new SP **must be defined in the module itself**.
 
 ```bash
-# List all SearchParameters and their target paths
+# 1. Extract module-specific SearchParameters
 for sp in fsh-generated/resources/SearchParameter-*.json; do
   jq -r '[.name, .expression] | @tsv' "$sp"
 done
+
+# 2. Check FHIR R4 base SPs for the resource types used
+# See https://hl7.org/fhir/R4/searchparameter-registry.html
+
+# 3. Check MII Meta and dependency SPs
+# Inspect packages in fhir_packages/ or .fhir/ cache
 ```
 
 #### 1.3 Create Coverage Tracking Table
@@ -102,12 +119,14 @@ done
 Create a temporary tracking table (markdown or spreadsheet):
 
 ```markdown
-| Profile | MS Element | SearchParam | Instance | Status |
-|---------|------------|-------------|----------|--------|
-| MII_PR_Onko_Diagnose | code.coding[icd10-gm] | diagnosis-code | -1 | pending |
-| MII_PR_Onko_Diagnose | subject | - | -1 | pending |
-| MII_PR_Onko_TNM | valueCodeableConcept | tnm-t | -1 | pending |
+| Profile | MS Element | SearchParam | SP Source | Instance | Status |
+|---------|------------|-------------|-----------|----------|--------|
+| MII_PR_Onko_Diagnose | code.coding[icd10-gm] | diagnosis-code | Module | -1 | pending |
+| MII_PR_Onko_Diagnose | subject | patient | FHIR R4 | -1 | pending |
+| MII_PR_Onko_TNM | valueCodeableConcept | tnm-t | Module | -1 | pending |
 ```
+
+**Important**: Every MS element row must have a SearchParam and SP Source filled in. If a cell is empty, resolve the SP or create a new one before proceeding.
 
 ### Phase 2: Create Test Data
 
@@ -144,7 +163,7 @@ When the source module already has examples (`mii-exa-*` instances):
 |-------------|-------------|
 | **Profile Coverage** | At least one instance per published profile |
 | **MS Element Coverage** | Every MS element populated in at least one instance |
-| **SearchParam Coverage** | Every SearchParameter's target path populated |
+| **SearchParam Coverage** | Every MS element must have a SearchParameter (from FHIR R4, MII Meta, Dependencies, or Module). Every SP's target path must be populated in test data. |
 | **Reference Integrity** | All references resolve within the bundle |
 
 ## SearchParameter Type Requirements
