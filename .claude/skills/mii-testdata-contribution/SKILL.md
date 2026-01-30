@@ -101,29 +101,57 @@ done
 
 If no SP exists at any level for an MS element, a new SP **must be defined in the module itself**.
 
+##### Automated Analysis
+
+Run the SP coverage analysis script to automatically resolve the full 4-level hierarchy:
+
 ```bash
-# 1. Extract module-specific SearchParameters
-for sp in fsh-generated/resources/SearchParameter-*.json; do
-  jq -r '[.name, .expression] | @tsv' "$sp"
-done
+# After sushi build in the module directory
+scripts/analyze-sp-coverage.sh /path/to/module
 
-# 2. Check FHIR R4 base SPs for the resource types used
-# See https://hl7.org/fhir/R4/searchparameter-registry.html
+# JSON output for programmatic use
+OUTPUT_FORMAT=json scripts/analyze-sp-coverage.sh /path/to/module
 
-# 3. Check MII Meta and dependency SPs
-# Inspect packages in fhir_packages/ or .fhir/ cache
+# Verbose (shows SP counts per level)
+VERBOSE=1 scripts/analyze-sp-coverage.sh /path/to/module
 ```
+
+The script is located at `mii-kerndatensatz-dev/scripts/analyze-sp-coverage.sh` and produces:
+- Coverage summary (total MS elements, covered, uncovered, %)
+- Per-element SP mapping with source level
+- Slice discriminator analysis
+- Profile identification check
+
+##### Slice-Discriminator Requirements
+
+Sliced MS elements (e.g., `code.coding:icd10-gm`) require a **discriminator-aware SearchParameter** — a generic SP on the parent path (e.g., `code`) is not sufficient. The SP expression must contain the discriminator value:
+
+```
+# Generic SP (NOT sufficient for slices):
+Condition.code
+
+# Discriminator-aware SP (required for slices):
+Condition.code.coding.where(system='http://fhir.de/CodeSystem/bfarm/icd-10-gm')
+```
+
+##### Profile Identification Requirement
+
+Each profile must have at least one SearchParameter that **uniquely identifies** resources of this profile type. Candidates are elements with:
+- `fixedValue` or `patternValue` with `min >= 1`
+- Required ValueSet binding with `min >= 1`
+
+`meta.profile` alone is **not sufficient** — it is not reliably populated in all systems.
 
 #### 1.3 Create Coverage Tracking Table
 
-Create a temporary tracking table (markdown or spreadsheet):
+Run the automated analysis or create a tracking table manually:
 
 ```markdown
 | Profile | MS Element | SearchParam | SP Source | Instance | Status |
 |---------|------------|-------------|-----------|----------|--------|
-| MII_PR_Onko_Diagnose | code.coding[icd10-gm] | diagnosis-code | Module | -1 | pending |
+| MII_PR_Onko_Diagnose | code.coding:icd10-gm | condition-code-icd10gm | Dep: Diagnose | -1 | pending |
 | MII_PR_Onko_Diagnose | subject | patient | FHIR R4 | -1 | pending |
-| MII_PR_Onko_TNM | valueCodeableConcept | tnm-t | Module | -1 | pending |
+| MII_PR_Onko_TNM_Klassifikation | component:TNM-T | tnm-t | Module | -1 | pending |
 ```
 
 **Important**: Every MS element row must have a SearchParam and SP Source filled in. If a cell is empty, resolve the SP or create a new one before proceeding.
@@ -164,6 +192,8 @@ When the source module already has examples (`mii-exa-*` instances):
 | **Profile Coverage** | At least one instance per published profile |
 | **MS Element Coverage** | Every MS element populated in at least one instance |
 | **SearchParam Coverage** | Every MS element must have a SearchParameter (from FHIR R4, MII Meta, Dependencies, or Module). Every SP's target path must be populated in test data. |
+| **Slice SP Coverage** | Sliced MS elements require a discriminator-aware SP (with `.where(system='...')`) — a generic SP is not sufficient. |
+| **Profile Identification** | Each profile must have at least one SP that uniquely identifies its resources (via fixed/pattern values or required bindings). `meta.profile` alone is not sufficient. |
 | **Reference Integrity** | All references resolve within the bundle |
 
 ## SearchParameter Type Requirements
