@@ -452,6 +452,30 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-pro-promis-29-bundle"
+        },
+        "name": "MII EXA PRO PROMIS-29 Bundle with Extracted Observations",
+        "description": "Example Bundle demonstrating PROMIS-29 QuestionnaireResponse with all extracted T-Score Observations and Pain Intensity observation. This bundle shows the complete SDC observation-based extraction workflow.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-29-response"
+        },
+        "name": "MII EXA PRO PROMIS-29 Response",
+        "description": "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (English variant)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-29-de-response"
+        },
+        "name": "MII EXA PRO PROMIS-29 Response (German)",
+        "description": "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-lm-pro"
         },
         "name": "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",

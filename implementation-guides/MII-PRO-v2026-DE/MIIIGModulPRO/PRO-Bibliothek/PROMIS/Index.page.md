@@ -6,26 +6,27 @@ topic: PROMIS
 ### PROMIS-29 Profile v2.1
 
 **➔ Vollständige Ressourcen in Simplifier:**
-- [PROMIS-29 Full Questionnaire](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29)
+- [PROMIS-29 Full Questionnaire (English)](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29)
+- [PROMIS-29 German Variant](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-de)
 - [PROMIS-29 Minimal Questionnaire](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-minimal)
 
 <tabs>
-  <tab title="Vorschau">
+  <tab title="Vorschau (Deutsch)">
     <iframe
-      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-promis-29&minimal=true"
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-promis-29-de&minimal=true"
       width="100%"
       height="600px"
       frameborder="0">
     </iframe>
   </tab>
   <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29}}
+    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de}}
   </tab>
   <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29}}
+    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de}}
   </tab>
   <tab title="XML">
-    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29}}
+    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de}}
   </tab>
 </tabs>
 

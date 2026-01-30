@@ -19,7 +19,12 @@
       "Bash(git merge:*)",
       "Bash(git stash:*)",
       "mcp__terminology__lookup_code",
-      "Bash(git tag:*)"
+      "Bash(git tag:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh issue create:*)",
+      "Bash(bd list:*)",
+      "Bash(bd init)",
+      "Bash(bd create:*)"
     ],
     "deny": [],
     "ask": []
