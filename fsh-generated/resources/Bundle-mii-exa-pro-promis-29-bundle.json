@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-promis-29-bundle",
   "entry": [
     {
-      "fullUrl": "urn:uuid:patient-example-1",
+      "fullUrl": "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890",
       "resource": {
         "resourceType": "Patient",
         "id": "patient-example-1",
@@ -31,7 +31,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:promis-29-response-1",
+      "fullUrl": "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f12345678901",
       "resource": {
         "resourceType": "QuestionnaireResponse",
         "id": "promis-29-response-1",
@@ -242,9 +242,9 @@
                 "answer": [
                   {
                     "valueCoding": {
-                      "code": "LA10082-8",
+                      "code": "LA13909-9",
                       "system": "http://loinc.org",
-                      "display": "Sometimes"
+                      "display": "Somewhat"
                     }
                   }
                 ],
@@ -254,9 +254,9 @@
                 "answer": [
                   {
                     "valueCoding": {
-                      "code": "LA10044-8",
+                      "code": "LA13902-4",
                       "system": "http://loinc.org",
-                      "display": "Often"
+                      "display": "Quite a bit"
                     }
                   }
                 ],
@@ -274,9 +274,9 @@
                 "answer": [
                   {
                     "valueCoding": {
-                      "code": "LA10082-8",
+                      "code": "LA8968-5",
                       "system": "http://loinc.org",
-                      "display": "Sometimes"
+                      "display": "Fair"
                     }
                   }
                 ],
@@ -380,7 +380,7 @@
           {
             "item": [
               {
-                "linkId": "PROMIS-29.Pain.Description"
+                "linkId": "PROMIS-29.PainInterference.Description"
               },
               {
                 "answer": [
@@ -431,20 +431,17 @@
                 "linkId": "promis-painin34"
               }
             ],
-            "linkId": "PROMIS-29.Pain"
+            "linkId": "PROMIS-29.PainInterference"
           },
           {
             "item": [
-              {
-                "linkId": "PROMIS-29.PainIntensity.Description"
-              },
               {
                 "answer": [
                   {
                     "valueInteger": 5
                   }
                 ],
-                "linkId": "promis-painintens-21"
+                "linkId": "promis-global07"
               }
             ],
             "linkId": "PROMIS-29.PainIntensity"
@@ -576,7 +573,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-physical-function-tscore",
+      "fullUrl": "urn:uuid:c3d4e5f6-a7b8-9012-cdef-123456789012",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-physical-function-tscore",
@@ -622,7 +619,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-anxiety-tscore",
+      "fullUrl": "urn:uuid:d4e5f6a7-b8c9-0123-defa-234567890123",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-anxiety-tscore",
@@ -668,7 +665,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-depression-tscore",
+      "fullUrl": "urn:uuid:e5f6a7b8-c9d0-1234-efab-345678901234",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-depression-tscore",
@@ -714,7 +711,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-fatigue-tscore",
+      "fullUrl": "urn:uuid:f6a7b8c9-d0e1-2345-fabc-456789012345",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-fatigue-tscore",
@@ -760,7 +757,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-sleep-tscore",
+      "fullUrl": "urn:uuid:a7b8c9d0-e1f2-3456-abcd-567890123456",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-sleep-tscore",
@@ -806,7 +803,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-social-tscore",
+      "fullUrl": "urn:uuid:b8c9d0e1-f2a3-4567-bcde-678901234567",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-social-tscore",
@@ -852,7 +849,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-pain-interference-tscore",
+      "fullUrl": "urn:uuid:c9d0e1f2-a3b4-5678-cdef-789012345678",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-pain-interference-tscore",
@@ -898,7 +895,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-promis-29-pain-intensity",
+      "fullUrl": "urn:uuid:d0e1f2a3-b4c5-6789-defa-890123456789",
       "resource": {
         "resourceType": "Observation",
         "id": "obs-promis-29-pain-intensity",

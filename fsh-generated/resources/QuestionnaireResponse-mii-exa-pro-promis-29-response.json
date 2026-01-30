@@ -208,9 +208,9 @@
           "answer": [
             {
               "valueCoding": {
-                "code": "LA10082-8",
+                "code": "LA13909-9",
                 "system": "http://loinc.org",
-                "display": "Sometimes"
+                "display": "Somewhat"
               }
             }
           ],
@@ -220,9 +220,9 @@
           "answer": [
             {
               "valueCoding": {
-                "code": "LA10044-8",
+                "code": "LA13902-4",
                 "system": "http://loinc.org",
-                "display": "Often"
+                "display": "Quite a bit"
               }
             }
           ],
@@ -240,9 +240,9 @@
           "answer": [
             {
               "valueCoding": {
-                "code": "LA10082-8",
+                "code": "LA8968-5",
                 "system": "http://loinc.org",
-                "display": "Sometimes"
+                "display": "Fair"
               }
             }
           ],
@@ -346,7 +346,7 @@
     {
       "item": [
         {
-          "linkId": "PROMIS-29.Pain.Description"
+          "linkId": "PROMIS-29.PainInterference.Description"
         },
         {
           "answer": [
@@ -397,20 +397,17 @@
           "linkId": "promis-painin34"
         }
       ],
-      "linkId": "PROMIS-29.Pain"
+      "linkId": "PROMIS-29.PainInterference"
     },
     {
       "item": [
-        {
-          "linkId": "PROMIS-29.PainIntensity.Description"
-        },
         {
           "answer": [
             {
               "valueInteger": 5
             }
           ],
-          "linkId": "promis-painintens-21"
+          "linkId": "promis-global07"
         }
       ],
       "linkId": "PROMIS-29.PainIntensity"

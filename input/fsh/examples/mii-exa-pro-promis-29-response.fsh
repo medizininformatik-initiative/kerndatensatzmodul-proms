@@ -90,13 +90,13 @@ Usage: #example
 * item[=].item[+].linkId = "promis-an3"
 * item[=].item[=].answer.valueCoding = $LNC#LA10044-8 "Often"
 
-// Item 3: Difficulty starting things - Sometimes (3)
+// Item 3: Difficulty starting things - Somewhat (3)
 * item[=].item[+].linkId = "promis-fatexp41"
-* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
 
-// Item 4: Average fatigue - Often (4)
+// Item 4: Average fatigue - Quite a bit (4)
 * item[=].item[+].linkId = "promis-fatexp40"
-* item[=].item[=].answer.valueCoding = $LNC#LA10044-8 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Quite a bit"
 
 // ===== SLEEP DISTURBANCE DOMAIN =====
 // Moderate sleep problems (answers: 3, 3, 3, 2 → raw score 11)
@@ -104,9 +104,9 @@ Usage: #example
 * item[+].linkId = "PROMIS-29.Sleep"
 * item[=].item[+].linkId = "PROMIS-29.Sleep.Description"
 
-// Item 1: Sleep quality - Sometimes (3)
+// Item 1: Sleep quality - Fair (3)
 * item[=].item[+].linkId = "promis-sleep109"
-* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA8968-5 "Fair"
 
 // Item 2: Difficulty falling asleep - Sometimes (3)
 * item[=].item[+].linkId = "promis-sleep116"
@@ -145,8 +145,8 @@ Usage: #example
 // ===== PAIN INTERFERENCE DOMAIN =====
 // Moderate pain interference (answers: 3, 3, 2, 3 → raw score 11)
 
-* item[+].linkId = "PROMIS-29.Pain"
-* item[=].item[+].linkId = "PROMIS-29.Pain.Description"
+* item[+].linkId = "PROMIS-29.PainInterference"
+* item[=].item[+].linkId = "PROMIS-29.PainInterference.Description"
 
 // Item 1: Day-to-day activities - Somewhat (3)
 * item[=].item[+].linkId = "promis-painin9"
@@ -167,10 +167,9 @@ Usage: #example
 // ===== PAIN INTENSITY =====
 
 * item[+].linkId = "PROMIS-29.PainIntensity"
-* item[=].item[+].linkId = "PROMIS-29.PainIntensity.Description"
 
 // Pain intensity scale 0-10: moderate pain level
-* item[=].item[+].linkId = "promis-painintens-21"
+* item[=].item[+].linkId = "promis-global07"
 * item[=].item[=].answer.valueInteger = 5
 
 // ===== CALCULATED SCORES =====

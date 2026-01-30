@@ -19,43 +19,43 @@ Usage: #example
 // ============================================================================
 
 // Entry 1: Patient
-* entry[+].fullUrl = "urn:uuid:patient-example-1"
+* entry[+].fullUrl = "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 * entry[=].resource = PatientExample1
 
 // Entry 2: QuestionnaireResponse
-* entry[+].fullUrl = "urn:uuid:promis-29-response-1"
+* entry[+].fullUrl = "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f12345678901"
 * entry[=].resource = PROMIS29ResponseExample
 
 // Entry 3: Physical Function T-Score Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-physical-function-tscore"
+* entry[+].fullUrl = "urn:uuid:c3d4e5f6-a7b8-9012-cdef-123456789012"
 * entry[=].resource = ObsPhysicalFunctionTScore
 
 // Entry 4: Anxiety T-Score Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-anxiety-tscore"
+* entry[+].fullUrl = "urn:uuid:d4e5f6a7-b8c9-0123-defa-234567890123"
 * entry[=].resource = ObsAnxietyTScore
 
 // Entry 5: Depression T-Score Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-depression-tscore"
+* entry[+].fullUrl = "urn:uuid:e5f6a7b8-c9d0-1234-efab-345678901234"
 * entry[=].resource = ObsDepressionTScore
 
 // Entry 6: Fatigue T-Score Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-fatigue-tscore"
+* entry[+].fullUrl = "urn:uuid:f6a7b8c9-d0e1-2345-fabc-456789012345"
 * entry[=].resource = ObsFatigueTScore
 
 // Entry 7: Sleep Disturbance T-Score Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-sleep-tscore"
+* entry[+].fullUrl = "urn:uuid:a7b8c9d0-e1f2-3456-abcd-567890123456"
 * entry[=].resource = ObsSleepTScore
 
 // Entry 8: Social Function T-Score Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-social-tscore"
+* entry[+].fullUrl = "urn:uuid:b8c9d0e1-f2a3-4567-bcde-678901234567"
 * entry[=].resource = ObsSocialFunctionTScore
 
 // Entry 9: Pain Interference T-Score Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-pain-interference-tscore"
+* entry[+].fullUrl = "urn:uuid:c9d0e1f2-a3b4-5678-cdef-789012345678"
 * entry[=].resource = ObsPainInterferenceTScore
 
 // Entry 10: Pain Intensity Observation
-* entry[+].fullUrl = "urn:uuid:obs-promis-29-pain-intensity"
+* entry[+].fullUrl = "urn:uuid:d0e1f2a3-b4c5-6789-defa-890123456789"
 * entry[=].resource = ObsPainIntensity
 
 // ============================================================================
@@ -169,13 +169,13 @@ Usage: #inline
 * item[=].item[+].linkId = "promis-an3"
 * item[=].item[=].answer.valueCoding = $LNC#LA10044-8 "Often"
 
-// Item 3: Difficulty starting things - Sometimes (3)
+// Item 3: Difficulty starting things - Somewhat (3)
 * item[=].item[+].linkId = "promis-fatexp41"
-* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
 
-// Item 4: Average fatigue - Often (4)
+// Item 4: Average fatigue - Quite a bit (4)
 * item[=].item[+].linkId = "promis-fatexp40"
-* item[=].item[=].answer.valueCoding = $LNC#LA10044-8 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Quite a bit"
 
 // ===== SLEEP DISTURBANCE DOMAIN =====
 // Moderate sleep problems (answers: 3, 3, 3, 2 -> raw score 11)
@@ -183,9 +183,9 @@ Usage: #inline
 * item[+].linkId = "PROMIS-29.Sleep"
 * item[=].item[+].linkId = "PROMIS-29.Sleep.Description"
 
-// Item 1: Sleep quality - Sometimes (3)
+// Item 1: Sleep quality - Fair (3)
 * item[=].item[+].linkId = "promis-sleep109"
-* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA8968-5 "Fair"
 
 // Item 2: Difficulty falling asleep - Sometimes (3)
 * item[=].item[+].linkId = "promis-sleep116"
@@ -224,8 +224,8 @@ Usage: #inline
 // ===== PAIN INTERFERENCE DOMAIN =====
 // Moderate pain interference (answers: 3, 3, 2, 3 -> raw score 11)
 
-* item[+].linkId = "PROMIS-29.Pain"
-* item[=].item[+].linkId = "PROMIS-29.Pain.Description"
+* item[+].linkId = "PROMIS-29.PainInterference"
+* item[=].item[+].linkId = "PROMIS-29.PainInterference.Description"
 
 // Item 1: Day-to-day activities - Somewhat (3)
 * item[=].item[+].linkId = "promis-painin9"
@@ -246,10 +246,9 @@ Usage: #inline
 // ===== PAIN INTENSITY =====
 
 * item[+].linkId = "PROMIS-29.PainIntensity"
-* item[=].item[+].linkId = "PROMIS-29.PainIntensity.Description"
 
 // Pain intensity scale 0-10: moderate pain level
-* item[=].item[+].linkId = "promis-painintens-21"
+* item[=].item[+].linkId = "promis-global07"
 * item[=].item[=].answer.valueInteger = 5
 
 // ===== CALCULATED SCORES =====
