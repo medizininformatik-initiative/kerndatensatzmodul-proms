@@ -5,6 +5,26 @@ topic: PROMIS-Depression
 
 ### PROMIS Depression Short Form 4a - Technische Dokumentation
 
+<tabs>
+  <tab title="Vorschau">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-promis-depression-sf4a&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
+  <tab title="Tree">
+    {{tree:mii-qst-pro-promis-depression-sf4a}}
+  </tab>
+  <tab title="JSON">
+    {{json:mii-qst-pro-promis-depression-sf4a}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-promis-depression-sf4a}}
+  </tab>
+</tabs>
+
 #### Hintergrund und Konzept
 
 Das PROMIS Depression Short Form 4a repräsentiert einen modernen Ansatz zur präzisen Messung von Depressionssymptomen mittels Item Response Theory (IRT). Als Teil des Patient-Reported Outcomes Measurement Information System (PROMIS) wurde dieses Instrument vom US National Institute of Health (NIH) entwickelt und international validiert.

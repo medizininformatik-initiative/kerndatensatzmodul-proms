@@ -11,6 +11,31 @@ topic: PROMIS-29
 
 Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen plus Schmerzintensität.
 
+**Ressourcen in Simplifier:**
+- [PROMIS-29 Full Questionnaire (English)](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29)
+- [PROMIS-29 German Variant](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-de)
+- [PROMIS-29 Minimal Questionnaire](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-minimal)
+
+<tabs>
+  <tab title="Vorschau (Deutsch)">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-promis-29-de&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
+  <tab title="Tree">
+    {{tree:mii-qst-pro-promis-29-de}}
+  </tab>
+  <tab title="JSON">
+    {{json:mii-qst-pro-promis-29-de}}
+  </tab>
+  <tab title="XML">
+    {{xml:mii-qst-pro-promis-29-de}}
+  </tab>
+</tabs>
+
 ### Domänen
 
 | Domäne | Items | Score-Bereich | LOINC |
