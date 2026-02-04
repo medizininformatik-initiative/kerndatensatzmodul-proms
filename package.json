@@ -1,7 +1,7 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2026.0.0",
-  "description": "MII PRO Module v2026.0.0 - First official release. Features: PROMIS-29 Profile v2.1 (all 7 domains with scoring), PROMIS Cognitive Function SF4a, PHQ-9 with T-scores, EQ-5D-5L, EORTC QLQ-C30. Updated meta dependency to 2026.0.0. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
+  "version": "2026.0.1",
+  "description": "MII PRO Module v2026.0.1 - Patch release. Fixes: Canonical URL standardization (http→https), PROMIS-29 German variant, validation fixes. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
   "keywords": [
     "MII",
     "KDS",
