@@ -242,9 +242,9 @@ Da ObservationDefinitions in FHIR R4 keine kanonischen URLs unterstützen und ni
 #### Depression & Stimmung
 | Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
-| PHQ-9 | Total Score | 44261-6 | 0-27 | mii-obsdef-pro-phq-9-total-score | [MII_PR_PRO_PHQ9_Score](../Technische-Implementierung/FHIR-Profile/PHQ-9-Score.page.md) |
+| PHQ-9 | Total Score | 44261-6 | 0-27 | mii-obsdef-pro-phq-9-total-score | MII_PR_PRO_PHQ9_Score |
 | BDI-II | Total Score | 89209-1 | 0-63 | mii-obsdef-pro-score-bdi-ii | MII_PR_PRO_BDI_II_Score |
-| PROMIS Depression | T-Score | 77861-3 | 20-80 | mii-obsdef-pro-depression-t-score | [MII_PR_PRO_Depression_TScore](../Technische-Implementierung/FHIR-Profile/Depression-TScore.page.md) |
+| PROMIS Depression | T-Score | 77861-3 | 20-80 | mii-obsdef-pro-depression-t-score | MII_PR_PRO_Depression_TScore |
 | PROMIS-29 Depression | T-Score | 71958-6 | 20-80 | mii-obsdef-pro-promis-29-depression-tscore | MII_PR_PRO_PROMIS_29_Depression_TScore |
 | PROMIS Cognitive Function SF4a | Raw Score | 81533-2 | 4-20 | mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score |
 | PROMIS Cognitive Function SF4a | T-Score | 81538-1 | 20-80 | mii-obsdef-pro-promis-cognitive-function-sf4a-tscore | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |
@@ -309,5 +309,4 @@ Domain-basiertes Scoring ist essentiell für die Harmonisierung von PRO-Daten im
 - [Übersicht Gesundheitsdomänen](Domaenen.page.md) - Detaillierte Beschreibung aller 9 PROMIS Domänen
 - [Mapping-Tabellen](Cross-Instrument-Mappings.page.md) - Konkrete Konversionstabellen für Depression
 - [PHQ-9 Implementierung](../PRO-Bibliothek/PHQ-9/Index.page.md) - Referenzimplementierung
-- [FHIR-Profile](../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile.page.md) - Technische Spezifikation
-- [Developer Reference](../Developer-Reference.page.md) - Implementierungshandbuch
+- [FHIR-Profile](../Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Index.page.md) - Technische Spezifikation
