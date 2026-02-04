@@ -3,13 +3,13 @@
   "id": "mii-obsdef-pro-eortc-qlq-c30-co",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.0.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.0.1"
     ]
   },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-      "valueString": "2026.0.0"
+      "valueString": "2026.0.1"
     }
   ],
   "code": {
@@ -27,7 +27,7 @@
         {
           "code": "{score}",
           "system": "http://unitsofmeasure.org",
-          "display": "score"
+          "display": "{score}"
         }
       ]
     },

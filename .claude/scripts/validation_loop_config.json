@@ -1,0 +1,30 @@
+{
+  "sushi": {
+    "command": "sushi . --snapshot",
+    "max_retries": 5,
+    "timeout_seconds": 60
+  },
+  "java_validator": {
+    "enabled": true,
+    "auto_run": true,
+    "jar_path": "~/.fhir/validators/validator_cli.jar",
+    "java_command": "/opt/homebrew/opt/openjdk@17/bin/java",
+    "tx_server": "http://localhost:3000",
+    "version": "4.0.1",
+    "extra_args": ["-allow-example-urls", "true", "-display-issues-are-warnings"],
+    "max_retries": 3,
+    "timeout_seconds": 300,
+    "validate_changed_only": true
+  },
+  "loop": {
+    "max_total_cycles": 8,
+    "debounce_seconds": 3
+  },
+  "error_filters": [
+    "dom-6",
+    "UNABLE_TO_INFER_CODESYSTEM",
+    "Terminology_TX_NoValid_16",
+    "MSG_DRAFT",
+    "all-languages"
+  ]
+}

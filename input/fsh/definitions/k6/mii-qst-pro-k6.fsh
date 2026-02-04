@@ -11,7 +11,7 @@ Usage: #definition
 * experimental = true
 * language = #en
 * title = "Kessler Psychological Distress Scale (K6)"
-* code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#k6 "Kessler Psychological Distress Scale"
+* code[mii] = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#k6 "Kessler Psychological Distress Scale"
 
 // Capabilities - NOT displayable, calculatable, or extractable due to licensing restrictions
 * extension[capabilities].extension[displayable].valueBoolean = false

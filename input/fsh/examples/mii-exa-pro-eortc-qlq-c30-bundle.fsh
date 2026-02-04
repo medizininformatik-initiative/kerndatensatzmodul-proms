@@ -97,13 +97,13 @@ Usage: #example
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"
 
 // Patient
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/example-patient"
+* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
 * entry[=].resource.resourceType = "Patient"
-* entry[=].resource.id = "example-patient"
+* entry[=].resource.id = "mii-exa-pro-patient"
 * entry[=].resource.active = true
 * entry[=].resource.name.family = "Example"
 * entry[=].resource.name.given = "Patient"
 * entry[=].resource.gender = #other
 * entry[=].resource.birthDate = "1960-01-01"
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Patient/example-patient"
+* entry[=].request.url = "Patient/mii-exa-pro-patient"

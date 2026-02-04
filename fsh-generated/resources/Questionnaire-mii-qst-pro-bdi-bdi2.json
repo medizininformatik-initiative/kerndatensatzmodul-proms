@@ -3,10 +3,10 @@
   "id": "mii-qst-pro-bdi-bdi2",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
     ]
   },
-  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
   "title": "MII QST PRO BDI-II",
   "description": "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire",
   "code": [
@@ -17,7 +17,7 @@
     },
     {
       "code": "bdi-bdi2",
-      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "display": "Beck Depression Inventory II (BDI-II)"
     }
   ],
@@ -70,115 +70,115 @@
       "linkId": "bdi-bdi2-q01",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 1 about mood - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q02",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 2 about outlook - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q03",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 3 about experiences - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q04",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 4 about enjoyment - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q05",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 5 about feelings - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q06",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q07",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q08",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q09",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q10",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 10 about emotions - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q11",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q12",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q13",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q14",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q15",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 15 about energy (uses extended scale) - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
     },
     {
       "linkId": "bdi-bdi2-q16",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q17",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 17 about appetite (uses extended scale) - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
     },
     {
       "linkId": "bdi-bdi2-q18",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q19",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q20",
       "type": "choice",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "linkId": "bdi-bdi2-q21",
       "type": "choice",
       "text": "[TEST PLACEHOLDER: Question 21 about interests - NOT actual BDI-II text]",
-      "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
     },
     {
       "code": [
@@ -246,7 +246,7 @@
       "readOnly": true
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.1",
   "status": "active",
   "experimental": true,
   "language": "de"

@@ -11,7 +11,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-pf
 * code.coding[=].display = "EORTC QLQ-C30 Physical Functioning Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 73.33
 * valueQuantity.unit = "{score}"
@@ -31,7 +31,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-rf
 * code.coding[=].display = "EORTC QLQ-C30 Role Functioning Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 83.33
 * valueQuantity.unit = "{score}"
@@ -50,7 +50,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-ef
 * code.coding[=].display = "EORTC QLQ-C30 Emotional Functioning Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 87.5
 * valueQuantity.unit = "{score}"
@@ -69,7 +69,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-cf
 * code.coding[=].display = "EORTC QLQ-C30 Cognitive Functioning Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 100
 * valueQuantity.unit = "{score}"
@@ -88,7 +88,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-sf
 * code.coding[=].display = "EORTC QLQ-C30 Social Functioning Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 91.67
 * valueQuantity.unit = "{score}"
@@ -107,7 +107,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-fa
 * code.coding[=].display = "EORTC QLQ-C30 Fatigue Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 22.22
 * valueQuantity.unit = "{score}"
@@ -126,7 +126,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-nv
 * code.coding[=].display = "EORTC QLQ-C30 Nausea and Vomiting Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 0
 * valueQuantity.unit = "{score}"
@@ -145,7 +145,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-pa
 * code.coding[=].display = "EORTC QLQ-C30 Pain Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 16.67
 * valueQuantity.unit = "{score}"
@@ -164,7 +164,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-dy
 * code.coding[=].display = "EORTC QLQ-C30 Dyspnoea Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 0
 * valueQuantity.unit = "{score}"
@@ -183,7 +183,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-sl
 * code.coding[=].display = "EORTC QLQ-C30 Insomnia Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 33.33
 * valueQuantity.unit = "{score}"
@@ -202,7 +202,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-ap
 * code.coding[=].display = "EORTC QLQ-C30 Appetite Loss Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 0
 * valueQuantity.unit = "{score}"
@@ -221,7 +221,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-co
 * code.coding[=].display = "EORTC QLQ-C30 Constipation Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 0
 * valueQuantity.unit = "{score}"
@@ -240,7 +240,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-di
 * code.coding[=].display = "EORTC QLQ-C30 Diarrhoea Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 0
 * valueQuantity.unit = "{score}"
@@ -259,7 +259,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-fi
 * code.coding[=].display = "EORTC QLQ-C30 Financial Difficulties Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 0
 * valueQuantity.unit = "{score}"
@@ -278,7 +278,7 @@ Usage: #example
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-ql
 * code.coding[=].display = "EORTC QLQ-C30 Global Health Status / Quality of Life Score"
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 66.67
 * valueQuantity.unit = "{score}"

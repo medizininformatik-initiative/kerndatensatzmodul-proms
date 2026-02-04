@@ -11,7 +11,7 @@ Usage: #definition
 * experimental = true
 * language = #en
 * title = "Center for Epidemiologic Studies Depression Scale (CES-D)"
-* code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#ces-d "Center for Epidemiologic Studies Depression Scale"
+* code[mii] = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#ces-d "Center for Epidemiologic Studies Depression Scale"
 
 // Capabilities - NOT displayable, calculatable, or extractable due to licensing restrictions
 * extension[capabilities].extension[displayable].valueBoolean = false

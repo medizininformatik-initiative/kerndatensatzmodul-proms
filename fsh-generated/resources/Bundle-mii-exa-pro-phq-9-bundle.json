@@ -13,7 +13,7 @@
         "id": "mii-qst-pro-phq-9",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
@@ -27,7 +27,7 @@
           },
           {
             "code": "phq-phq9",
-            "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
             "display": "PHQ-9 Questionnaire"
           }
         ],
@@ -1804,7 +1804,7 @@
             }
           }
         ],
-        "version": "2026.0.0",
+        "version": "2026.0.1",
         "status": "active",
         "experimental": true,
         "language": "en"
@@ -1821,7 +1821,7 @@
         "id": "mii-exa-pro-phq-9-response",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.0.1"
           ]
         },
         "item": [
@@ -1957,7 +1957,7 @@
         "status": "completed",
         "language": "de",
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "authored": "2023-10-01T12:00:00Z",
         "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
@@ -1974,7 +1974,7 @@
         "id": "mii-exa-pro-phq-9-observation",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "valueQuantity": {
@@ -1985,7 +1985,7 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/example"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "effectiveDateTime": "2023-10-01T12:00:00Z",
         "code": {
@@ -2002,7 +2002,7 @@
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "example-patient",
+        "id": "mii-exa-pro-patient",
         "active": true,
         "name": [
           {
@@ -2016,9 +2016,9 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/example-patient"
+        "url": "Patient/mii-exa-pro-patient"
       },
-      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/example-patient"
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
     }
   ],
   "type": "transaction"

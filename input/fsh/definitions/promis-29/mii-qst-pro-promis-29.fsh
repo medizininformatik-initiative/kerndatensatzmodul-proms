@@ -6,7 +6,7 @@ Usage: #definition
 * insert Version
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
-* url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
 * status = #active
 * experimental = true
 * language = #en
@@ -1491,7 +1491,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#61583-1 "How would you rate your pain on average in past 7 days [PROMIS]"
 * item[=].item[=].text = "In den vergangenen 7 Tagen - Wie würden Sie Ihre Schmerzen im Durchschnitt bewerten?"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
 * item[=].item[=].extension[=].valueInteger = 0
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/maxValue"
@@ -1508,7 +1508,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#71960-9 "PROMIS-29 Physical function score"
 * item[=].item[=].text = "PROMIS-29 Körperliche Funktion - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1534,7 +1534,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#71968-2 "PROMIS-29 Anxiety score"
 * item[=].item[=].text = "PROMIS-29 Angst - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1560,7 +1560,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#71966-6 "PROMIS-29 Depression score"
 * item[=].item[=].text = "PROMIS-29 Depression - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1586,7 +1586,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#71964-1 "PROMIS-29 Fatigue score"
 * item[=].item[=].text = "PROMIS-29 Erschöpfung - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1612,7 +1612,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#71956-7 "PROMIS-29 Sleep disturbance score"
 * item[=].item[=].text = "PROMIS-29 Schlafstörungen - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1638,7 +1638,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#71958-3 "PROMIS-29 Satisfaction with participation in social roles score"
 * item[=].item[=].text = "PROMIS-29 Soziale Teilhabe - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1664,7 +1664,7 @@ Usage: #definition
 * item[=].item[=].code = $LNC#71962-5 "PROMIS-29 Pain interference score"
 * item[=].item[=].text = "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath

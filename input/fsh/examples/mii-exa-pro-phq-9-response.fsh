@@ -5,7 +5,7 @@ Title: "PHQ-9 Questionnaire Response Example"
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * status = #completed
 * language = #de
-* subject = Reference(Patient/example-patient)
+* subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2023-10-01T12:00:00Z"
 * questionnaire = $mii-qst-pro-phq-9
 

@@ -12,7 +12,7 @@ Usage: #definition
 * language = #en
 * title = "Edinburgh Postnatal Depression Scale (EPDS)"
 * code[snomed] = $SCT#273441006 "Edinburgh postnatal depression scale (assessment scale)"
-* code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#epds "Edinburgh Postnatal Depression Scale"
+* code[mii] = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#epds "Edinburgh Postnatal Depression Scale"
 
 // Capabilities - NOT displayable, calculatable, or extractable due to licensing restrictions
 * extension[capabilities].extension[displayable].valueBoolean = false

@@ -5,11 +5,11 @@ Alias: $mii-qst-pro-phq-9 = https://www.medizininformatik-initiative.de/fhir/ext
 Alias: $mii-qst-pro-phq-9-sdc-rendering = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9-sdc-rendering
 Alias: $mii-vs-pro-phq-9-answer-list-ll358-3 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3
 Alias: $mii-vs-pro-phq-9-answer-list-ll359-1 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1
-Alias: $mii-cs-pro-score-catalogue = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue
-Alias: $mii-cs-pro-questionnaire-catalogue = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue
-Alias: $mii-qst-pro-bdi-bdi2 = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2
-Alias: $mii-cs-pro-bdi-bdi2 = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2
-Alias: $mii-qst-pro-promis-depression-sf4a = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a
+Alias: $mii-cs-pro-score-catalogue = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue
+Alias: $mii-cs-pro-questionnaire-catalogue = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue
+Alias: $mii-qst-pro-bdi-bdi2 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2
+Alias: $mii-cs-pro-bdi-bdi2 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2
+Alias: $mii-qst-pro-promis-depression-sf4a = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a
 // HL7
 Alias: $hl7-concept-properties = http://hl7.org/fhir/concept-properties
 Alias: $hl7-max-value = http://hl7.org/fhir/StructureDefinition/maxValue

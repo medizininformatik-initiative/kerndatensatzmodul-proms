@@ -13,7 +13,7 @@ Usage: #definition
 * code[+] = $SCT#73041000052103 "EuroQoL five dimension five level questionnaire"
 * code[mii] = $mii-cs-pro-questionnaire-catalogue#euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
 // TODO: date, publisher, copyright, etc.
-* derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
+* derivedFrom = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
 
 // * contained[0] = MII_CS_PRO_EQ_5D_ValueSet // for testing
 

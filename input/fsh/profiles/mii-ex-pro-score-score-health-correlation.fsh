@@ -5,7 +5,7 @@ Description: "MII Ex PRO Score Score Health Correlation"
 * insert PR_CS_VS_Version
 * ^context.type = #element
 * ^context.expression = "ObservationDefinition.qualifiedInterval.range"
-* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
 * value[x] 1..1
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding.system 1..1 MS

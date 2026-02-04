@@ -13,7 +13,7 @@
         "id": "mii-qst-pro-eortc-qlq-c30",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
@@ -26,7 +26,7 @@
             "display": "European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"
           },
           {
-            "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
             "code": "eortc-qlq-c30",
             "display": "EORTC QLQ-C30 Quality of Life Questionnaire"
           }
@@ -64,7 +64,7 @@
             "id": "eortc-qlq-c30-cs",
             "meta": {
               "profile": [
-                "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+                "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
               ]
             },
             "concept": [
@@ -245,7 +245,7 @@
                 "display": "7 - Perfect"
               }
             ],
-            "version": "2026.0.0",
+            "version": "2026.0.1",
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
             "status": "active",
             "content": "complete",
@@ -256,7 +256,7 @@
             "id": "eortc-qlq-c30-4pt",
             "meta": {
               "profile": [
-                "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+                "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
               ]
             },
             "compose": {
@@ -280,7 +280,7 @@
                 }
               ]
             },
-            "version": "2026.0.0",
+            "version": "2026.0.1",
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
             "status": "active"
           },
@@ -289,7 +289,7 @@
             "id": "eortc-qlq-c30-7pt",
             "meta": {
               "profile": [
-                "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+                "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
               ]
             },
             "compose": {
@@ -322,7 +322,7 @@
                 }
               ]
             },
-            "version": "2026.0.0",
+            "version": "2026.0.1",
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
             "status": "active"
           }
@@ -846,7 +846,7 @@
             "text": "Calculated Scores (0-100 scale)"
           }
         ],
-        "version": "2026.0.0",
+        "version": "2026.0.1",
         "status": "active",
         "experimental": true,
         "language": "en",
@@ -865,11 +865,11 @@
         "id": "mii-exa-pro-eortc-qlq-c30-response",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.0.1"
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "item": [
           {
@@ -1249,7 +1249,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-pf",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1278,7 +1278,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 73.33,
@@ -1309,7 +1309,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-rf",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1333,7 +1333,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 83.33,
@@ -1361,7 +1361,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-ef",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1385,7 +1385,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 87.5,
@@ -1413,7 +1413,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-cf",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1437,7 +1437,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 100,
@@ -1465,7 +1465,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-sf",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1489,7 +1489,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 91.67,
@@ -1517,7 +1517,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-fa",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1541,7 +1541,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 22.22,
@@ -1569,7 +1569,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-nv",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1593,7 +1593,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1621,7 +1621,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-pa",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1645,7 +1645,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 16.67,
@@ -1673,7 +1673,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-dy",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1697,7 +1697,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1725,7 +1725,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-sl",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1749,7 +1749,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 33.33,
@@ -1777,7 +1777,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-ap",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1801,7 +1801,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1829,7 +1829,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-co",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1853,7 +1853,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1881,7 +1881,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-di",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1905,7 +1905,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1933,7 +1933,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-fi",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -1957,7 +1957,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1985,7 +1985,7 @@
         "id": "mii-exa-pro-eortc-qlq-c30-observation-ql",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.0.1"
           ]
         },
         "category": [
@@ -2009,7 +2009,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 66.67,
@@ -2029,7 +2029,7 @@
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "example-patient",
+        "id": "mii-exa-pro-patient",
         "active": true,
         "name": [
           {
@@ -2044,9 +2044,9 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/example-patient"
+        "url": "Patient/mii-exa-pro-patient"
       },
-      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/example-patient"
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
     }
   ],
   "type": "transaction"

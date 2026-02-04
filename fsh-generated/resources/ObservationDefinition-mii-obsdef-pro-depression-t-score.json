@@ -3,13 +3,13 @@
   "id": "mii-obsdef-pro-depression-t-score",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.0.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.0.1"
     ]
   },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
-      "valueString": "2026.0.0"
+      "valueString": "2026.0.1"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-citation",
@@ -38,7 +38,7 @@
         {
           "code": "{score}",
           "system": "http://unitsofmeasure.org",
-          "display": "score"
+          "display": "{score}"
         }
       ]
     }
@@ -73,7 +73,7 @@
               ],
               "text": "Higher scores indicate worse health (more depression symptoms)"
             },
-            "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
           }
         ]
       },
@@ -119,7 +119,7 @@
               ],
               "text": "Higher scores indicate worse health (more depression symptoms)"
             },
-            "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
           }
         ]
       },
@@ -165,7 +165,7 @@
               ],
               "text": "Higher scores indicate worse health (more depression symptoms)"
             },
-            "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
           }
         ]
       },

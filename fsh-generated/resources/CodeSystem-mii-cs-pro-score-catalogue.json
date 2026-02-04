@@ -6,7 +6,7 @@
   "id": "mii-cs-pro-score-catalogue",
   "title": "MII CS PRO Score Catalogue",
   "description": "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module",
-  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
   "concept": [
     {
       "code": "euroqol-eq5d5l-index",
@@ -133,6 +133,6 @@
       "display": "EORTC QLQ-C30 Global Health Status / Quality of Life Score"
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.1",
   "count": 31
 }

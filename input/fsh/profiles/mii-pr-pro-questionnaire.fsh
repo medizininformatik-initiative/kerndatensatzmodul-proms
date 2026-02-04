@@ -37,4 +37,4 @@ Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture
 * code[snomed].system = "http://snomed.info/sct" (exactly)
 * code[mii].code 1..1 MS
 * code[mii].system 1..1 MS
-* code[mii].system = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue" (exactly)
+* code[mii].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue" (exactly)

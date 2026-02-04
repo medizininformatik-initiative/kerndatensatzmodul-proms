@@ -6,7 +6,7 @@ Description: "Example of an EQ-5D-5L questionnaire response using the answer-cod
 Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * status = #completed
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2024-03-15T14:45:00+01:00"
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding"
 

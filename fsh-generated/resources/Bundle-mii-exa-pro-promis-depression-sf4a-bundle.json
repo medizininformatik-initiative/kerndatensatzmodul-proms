@@ -32,7 +32,7 @@
         "id": "mii-exa-pro-promis-depression-sf4a-response",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.0.1"
           ]
         },
         "item": [
@@ -101,7 +101,7 @@
             "linkId": "promis-depression-score-tscore"
           }
         ],
-        "questionnaire": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
+        "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
         "status": "completed",
         "subject": {
           "reference": "Patient/mii-exa-pro-patient"
@@ -116,7 +116,7 @@
         "id": "mii-exa-pro-promis-depression-sf4a-raw-score",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2026.0.1"
           ]
         },
         "category": [
@@ -131,7 +131,7 @@
           }
         ],
         "valueQuantity": {
-          "unit": "score",
+          "unit": "{score}",
           "system": "http://unitsofmeasure.org",
           "code": "{score}",
           "value": 12
@@ -164,7 +164,7 @@
         "id": "mii-exa-pro-promis-depression-sf4a-tscore",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score|2026.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score|2026.0.1"
           ]
         },
         "category": [
@@ -179,7 +179,7 @@
           }
         ],
         "valueQuantity": {
-          "unit": "score",
+          "unit": "{score}",
           "system": "http://unitsofmeasure.org",
           "code": "{score}",
           "value": 62.2

@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "mii-cps-pro-capabilitystatement",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/metadata",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement",
   "contact": [
     {
       "telecom": [
@@ -1285,7 +1285,7 @@
       "mode": "server"
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.1",
   "name": "MII_CPS_PRO_CapabilityStatement",
   "title": "MII CPS PRO CapabilityStatement",
   "status": "active",

@@ -3,10 +3,10 @@
   "id": "mii-qst-pro-promis-depression-sf4a",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
     ]
   },
-  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
   "title": "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "description": "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0",
   "code": [
@@ -17,7 +17,7 @@
     },
     {
       "code": "promis-depression-sf4a",
-      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "display": "PROMIS Depression 4a Short Form Questionnaire"
     }
   ],
@@ -829,7 +829,7 @@
           "valueCoding": {
             "code": "{score}",
             "system": "http://unitsofmeasure.org",
-            "display": "score"
+            "display": "{score}"
           }
         },
         {
@@ -876,7 +876,7 @@
       "readOnly": true
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.1",
   "status": "active",
   "experimental": true,
   "language": "en"

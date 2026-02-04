@@ -6,7 +6,7 @@
   "id": "mii-cs-pro-bdi-bdi2",
   "title": "MII CS PRO BDI-II",
   "description": "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
-  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
   "concept": [
     {
       "code": "bdi-bdi2-answer-0",
@@ -49,8 +49,8 @@
       "display": "3 points (variant b)"
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.1",
   "experimental": true,
-  "valueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
   "count": 10
 }

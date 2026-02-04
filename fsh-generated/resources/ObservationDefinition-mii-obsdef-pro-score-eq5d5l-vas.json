@@ -24,7 +24,7 @@
         "display": "EuroQol visual analogue score (observable entity)"
       },
       {
-        "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
         "code": "euroqol-eq5d5l-vas",
         "display": "EuroQol EQ-5D-5L Visual Analog Scale (VAS) Score"
       }
@@ -64,7 +64,7 @@
               ],
               "text": "Higher score indicates better health status"
             },
-            "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
           }
         ]
       },

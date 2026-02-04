@@ -3,7 +3,7 @@
   "id": "mii-qst-pro-k6",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.1"
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-k6",
@@ -11,7 +11,7 @@
   "description": "Kessler Psychological Distress Scale (K6) - Metadata-only reference implementation",
   "code": [
     {
-      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "code": "k6",
       "display": "Kessler Psychological Distress Scale"
     }
@@ -50,7 +50,7 @@
       "text": "This questionnaire requires proper licensing from the copyright holders. Please contact the K6 rights holders for implementation permissions."
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.1",
   "status": "active",
   "experimental": true,
   "language": "en"

@@ -4,7 +4,7 @@ Usage: #example
 Title: "PROMIS Depression T-Score, derived from BDI-II Observation Example"
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
-* subject = Reference(Patient/otherexamplepatient)
+* subject = Reference(Patient/mii-exa-pro-patient)
 * effectiveDateTime = "2023-10-01T12:00:00Z"
 * code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * valueQuantity.value = 63.2

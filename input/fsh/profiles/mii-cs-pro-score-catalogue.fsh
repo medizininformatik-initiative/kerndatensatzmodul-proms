@@ -5,7 +5,7 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 
 
 * insert PR_CS_VS_Version
-* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * ^status = #active
 
 // EQ-5D-5L Scores

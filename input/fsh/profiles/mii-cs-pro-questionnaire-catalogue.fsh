@@ -5,7 +5,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 
 
 * insert PR_CS_VS_Version
-* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"
 * ^status = #active
 
 * #euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"

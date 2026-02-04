@@ -6,7 +6,7 @@ Usage: #definition
 * insert Version
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
-* url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal"
 * status = #active
 * experimental = true
 * language = #de
@@ -26,7 +26,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType"
 * extension[=].valueCodeableConcept = http://hl7.org/fhir/questionnaire-derivationType#compliesWithProfile
 */
-* derivedFrom = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+* derivedFrom = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
 
 // Main container
 * item[+].linkId = "PROMIS-29"
@@ -64,7 +64,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, Hausarbeiten wie Staubsaugen oder Gartenarbeit zu erledigen?"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
 // PFA21 - Go up and down stairs
 * item[=].item[=].item[+].linkId = "promis-pfa21"
@@ -77,7 +77,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, in normalem Tempo Treppen hinauf- und hinunterzugehen?"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
 // PFA23 - Walk 15 minutes
 * item[=].item[=].item[+].linkId = "promis-pfa23"
@@ -90,7 +90,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, mindestens 15 Minuten spazieren zu gehen?"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
 // PFA53 - Run errands
 * item[=].item[=].item[+].linkId = "promis-pfa53"
@@ -103,7 +103,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie in der Lage, Besorgungen zu machen und einzukaufen?"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
 // ===== Anxiety Domain (4 items) =====
 * item[=].item[+].linkId = "PROMIS-29.Anxiety"
@@ -126,7 +126,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich ängstlich"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
 // EDANX40 - Anxious
 * item[=].item[=].item[+].linkId = "promis-edanx40"
@@ -139,7 +139,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Ich fand es schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
 // EDANX41 - Worries overwhelmed
 * item[=].item[=].item[+].linkId = "promis-edanx41"
@@ -152,7 +152,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Meine Sorgen überwältigten mich"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
 // EDANX53 - Uneasy
 * item[=].item[=].item[+].linkId = "promis-edanx53"
@@ -165,7 +165,7 @@ Usage: #definition
 * item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
 * item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich unruhig"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+* item[=].item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
 
 // Continue with Depression, Fatigue, Sleep, Social Function, and Pain domains...
 // This minimal variant removes all calculated expressions and uses ValueSet references

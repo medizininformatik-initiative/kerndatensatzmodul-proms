@@ -6,7 +6,7 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * questionnaire = $mii-qst-pro-bdi-bdi2
 * status = #completed
-* subject.reference = "Patient/example-patient"
+* subject.reference = "Patient/mii-exa-pro-patient"
 * authored = "2023-10-01T12:00:00Z"
 //* url = $mii-qst-pro-bdi-bdi2
 
