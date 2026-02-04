@@ -27,10 +27,21 @@ You edit FSH source files and IG documentation based on task specifications from
 - FHIRPath expressions and variable-based score calculations
 - Multi-language support with English primary and German translations
 
+## Reactive Validation Loop
+
+A PostToolUse hook automatically runs SUSHI (and optionally the Java FHIR validator) after every FSH file edit. You will receive error feedback as system messages when validation fails. When this happens:
+
+1. Read the error messages carefully — they come from SUSHI or the Java validator
+2. Fix the issues in the FSH source files
+3. The hook re-validates automatically after your next edit
+4. Continue until validation passes (exit 0 = silent, you hear nothing)
+
+If you see "Max retries reached" or the same errors keep recurring, **stop editing** and report the remaining errors back to the orchestrator.
+
 ## Strict Restrictions
 
 **DO NOT:**
-- Run SUSHI - the pre-commit hook handles compilation
+- Run SUSHI — the PostToolUse hook handles compilation automatically
 - Commit changes - the orchestrator handles all git operations
 - Edit files in `fsh-generated/` - these are auto-generated
 - Create images or PlantUML diagrams - separate agent handles this

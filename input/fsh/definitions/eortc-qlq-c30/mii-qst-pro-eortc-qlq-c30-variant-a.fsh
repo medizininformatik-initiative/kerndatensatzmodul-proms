@@ -14,7 +14,7 @@ Usage: #definition
 * publisher = "Medizininformatik Initiative (MII)"
 * copyright = "© Copyright 1995 EORTC Quality of Life Group. All rights reserved. Version 3.0"
 * code[snomed] = $SCT#273446001 "European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"
-* code[mii] = http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#eortc-qlq-c30 "EORTC QLQ-C30 Quality of Life Questionnaire"
+* code[mii] = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue#eortc-qlq-c30 "EORTC QLQ-C30 Quality of Life Questionnaire"
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

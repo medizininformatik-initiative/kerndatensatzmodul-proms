@@ -38,7 +38,7 @@
         {
           "code": "{score}",
           "system": "http://unitsofmeasure.org",
-          "display": "score"
+          "display": "{score}"
         }
       ]
     },
@@ -64,7 +64,7 @@
               ],
               "text": "Higher scores indicate better cognitive function"
             },
-            "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
           }
         ]
       },

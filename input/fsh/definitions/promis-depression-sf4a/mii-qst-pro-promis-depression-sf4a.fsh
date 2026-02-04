@@ -6,7 +6,7 @@ Usage: #definition
 * insert Version
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 
-* url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a"
 * status = #active
 * experimental = true
 * language = #en
@@ -252,7 +252,7 @@ Usage: #definition
 * item[=].code = $LNC#77821-7 "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
 * item[=].text = "PROMIS Depression Raw Score"
 * item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].extension[=].valueCoding = $UCUM#{score} "score"
+* item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath

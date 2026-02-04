@@ -12,7 +12,7 @@ Usage: #definition
 * multipleResultsAllowed = false
 * method.coding = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
 * method.text = "Beck Depression Inventory II (BDI-II)"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 0
 
 * qualifiedInterval.category = #absolute

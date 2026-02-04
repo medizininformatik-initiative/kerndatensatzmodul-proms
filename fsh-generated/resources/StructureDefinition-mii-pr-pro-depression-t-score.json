@@ -1837,7 +1837,7 @@
             "code": "string"
           }
         ],
-        "patternString": "score",
+        "patternString": "{score}",
         "constraint": [
           {
             "key": "ele-1",
@@ -3515,7 +3515,7 @@
       {
         "id": "Observation.value[x]:valueQuantity.unit",
         "path": "Observation.value[x].unit",
-        "patternString": "score"
+        "patternString": "{score}"
       },
       {
         "id": "Observation.value[x]:valueQuantity.system",

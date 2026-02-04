@@ -6,7 +6,7 @@ Title: "PHQ-9 Observation Example"
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 // * basedOn = Reference(mii-obsdef-pro-score-phq-9) geht nicht weil Observation.instantiatesCanonical erst in R5 kommt, und die R4 extension kein ObservationDefinition unterstützt, aber dafür Measure
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-pro-patient)
 * effectiveDateTime = "2023-10-01T12:00:00Z"
 * code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
 * valueQuantity.value = 27

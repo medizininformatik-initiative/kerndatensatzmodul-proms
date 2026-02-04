@@ -6,11 +6,11 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
     ]
   },
-  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
   "title": "MII QST PRO PROMIS-29 (German)",
   "description": "PROMIS-29 Profile v2.1 - German language variant derived from English source",
   "derivedFrom": [
-    "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
   ],
   "code": [
     {
@@ -20,7 +20,7 @@
     },
     {
       "code": "promis-promis29",
-      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "display": "PROMIS-29 Questionnaire"
     }
   ],
@@ -4880,7 +4880,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {
@@ -4917,7 +4917,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {
@@ -4977,7 +4977,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {
@@ -5037,7 +5037,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {
@@ -5097,7 +5097,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {
@@ -5157,7 +5157,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {
@@ -5217,7 +5217,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {
@@ -5277,7 +5277,7 @@
               "valueCoding": {
                 "code": "{score}",
                 "system": "http://unitsofmeasure.org",
-                "display": "score"
+                "display": "{score}"
               }
             },
             {

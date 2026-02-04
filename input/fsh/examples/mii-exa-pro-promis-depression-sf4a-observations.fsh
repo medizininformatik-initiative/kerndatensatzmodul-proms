@@ -11,7 +11,7 @@ Usage: #example
 * subject = Reference(Patient/mii-exa-pro-patient)
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 12
-* valueQuantity.unit = "score"
+* valueQuantity.unit = "{score}"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #{score}
 * derivedFrom = Reference(QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response)
@@ -29,7 +29,7 @@ Usage: #example
 * subject = Reference(Patient/mii-exa-pro-patient)
 * effectiveDateTime = "2024-01-15T10:30:00Z"
 * valueQuantity.value = 62.2
-* valueQuantity.unit = "score"
+* valueQuantity.unit = "{score}"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #{score}
 * derivedFrom = Reference(QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response)

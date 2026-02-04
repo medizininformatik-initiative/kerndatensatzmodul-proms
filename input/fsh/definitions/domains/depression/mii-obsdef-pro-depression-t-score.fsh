@@ -15,7 +15,7 @@ Usage: #definition
 * method.text = "PROMIS Depression T-score metric derived from European Health Interview Survey (EHIS) wave 3 cross-cultural validation study"
 
 // Quantitative value definition
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 
 // German general population reference ranges (EHIS wave 3, n=22,996)
 * qualifiedInterval[+].category = #reference

@@ -14,7 +14,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20
@@ -37,7 +37,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20
@@ -60,7 +60,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20
@@ -83,7 +83,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20
@@ -106,7 +106,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20
@@ -129,7 +129,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20
@@ -152,7 +152,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20

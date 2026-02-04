@@ -21,7 +21,7 @@ Description: "Profile for PROMIS Depression Short Form 4a raw score observations
 
 * valueQuantity MS
 * valueQuantity.value MS
-* valueQuantity.unit = "score"
+* valueQuantity.unit = "{score}"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #{score}
 
@@ -60,7 +60,7 @@ Description: "Generic profile for depression domain T-score observations (all de
 
 * valueQuantity MS
 * valueQuantity.value MS
-* valueQuantity.unit = "score"
+* valueQuantity.unit = "{score}"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #{score}
 

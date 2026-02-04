@@ -2681,7 +2681,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
         "constraint": [
           {
             "key": "ele-1",
@@ -4912,7 +4912,7 @@
         "id": "Questionnaire.code:mii.system",
         "path": "Questionnaire.code.system",
         "min": 1,
-        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
         "mustSupport": true
       },
       {

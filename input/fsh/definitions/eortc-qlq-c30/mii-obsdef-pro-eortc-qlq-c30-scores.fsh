@@ -14,7 +14,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-pf
 * code.coding[=].display = "EORTC QLQ-C30 Physical Functioning Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Role Functioning Score
@@ -28,7 +28,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-rf
 * code.coding[=].display = "EORTC QLQ-C30 Role Functioning Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Emotional Functioning Score
@@ -42,7 +42,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-ef
 * code.coding[=].display = "EORTC QLQ-C30 Emotional Functioning Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Cognitive Functioning Score
@@ -56,7 +56,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-cf
 * code.coding[=].display = "EORTC QLQ-C30 Cognitive Functioning Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Social Functioning Score
@@ -70,7 +70,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-sf
 * code.coding[=].display = "EORTC QLQ-C30 Social Functioning Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // ===== SYMPTOM SCALES (higher = worse) =====
@@ -86,7 +86,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-fa
 * code.coding[=].display = "EORTC QLQ-C30 Fatigue Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Nausea and Vomiting Score
@@ -100,7 +100,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-nv
 * code.coding[=].display = "EORTC QLQ-C30 Nausea and Vomiting Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Pain Score
@@ -114,7 +114,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-pa
 * code.coding[=].display = "EORTC QLQ-C30 Pain Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // ===== SINGLE ITEM SYMPTOM SCALES =====
@@ -130,7 +130,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-dy
 * code.coding[=].display = "EORTC QLQ-C30 Dyspnoea Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Insomnia Score
@@ -144,7 +144,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-sl
 * code.coding[=].display = "EORTC QLQ-C30 Insomnia Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Appetite Loss Score
@@ -158,7 +158,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-ap
 * code.coding[=].display = "EORTC QLQ-C30 Appetite Loss Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Constipation Score
@@ -172,7 +172,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-co
 * code.coding[=].display = "EORTC QLQ-C30 Constipation Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Diarrhoea Score
@@ -186,7 +186,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-di
 * code.coding[=].display = "EORTC QLQ-C30 Diarrhoea Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // Financial Difficulties Score
@@ -200,7 +200,7 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-fi
 * code.coding[=].display = "EORTC QLQ-C30 Financial Difficulties Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2
 
 // ===== GLOBAL HEALTH STATUS / QUALITY OF LIFE =====
@@ -216,5 +216,5 @@ Usage: #definition
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #eortc-qlq-c30-ql
 * code.coding[=].display = "EORTC QLQ-C30 Global Health Status / Quality of Life Score"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 2

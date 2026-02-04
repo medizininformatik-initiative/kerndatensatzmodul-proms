@@ -14,7 +14,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS Cognitive Function SF 4a"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 0
 * qualifiedInterval.category = #absolute
 * qualifiedInterval.range.low.value = 4
@@ -41,7 +41,7 @@ Usage: #definition
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS Cognitive Function SF 4a"
-* quantitativeDetails.unit = $UCUM#{score} "score"
+* quantitativeDetails.unit = $UCUM#{score} "{score}"
 * quantitativeDetails.decimalPrecision = 1
 * qualifiedInterval.category = #reference
 * qualifiedInterval.range.low.value = 20

@@ -72,7 +72,7 @@
       "linkId": "promis-depression-score-tscore"
     }
   ],
-  "questionnaire": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
   "status": "completed",
   "subject": {
     "reference": "Patient/mii-exa-pro-patient"

@@ -6,7 +6,7 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.0.0"
     ]
   },
-  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal",
   "title": "MII QST PRO PROMIS-29 Minimal",
   "description": "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
   "code": [
@@ -17,7 +17,7 @@
     },
     {
       "code": "promis-promis29",
-      "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "display": "PROMIS-29 Questionnaire"
     }
   ],
@@ -49,7 +49,7 @@
     }
   ],
   "derivedFrom": [
-    "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
   ],
   "item": [
     {
@@ -106,7 +106,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
             },
             {
               "code": [
@@ -136,7 +136,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
             },
             {
               "code": [
@@ -166,7 +166,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
             },
             {
               "code": [
@@ -196,7 +196,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
             }
           ],
           "linkId": "PROMIS-29.PhysicalFunction",
@@ -251,7 +251,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
             },
             {
               "code": [
@@ -282,7 +282,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
             },
             {
               "code": [
@@ -313,7 +313,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
             },
             {
               "code": [
@@ -344,7 +344,7 @@
                 ]
               },
               "required": true,
-              "answerValueSet": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+              "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
             }
           ],
           "linkId": "PROMIS-29.Anxiety",

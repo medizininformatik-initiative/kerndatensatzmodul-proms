@@ -26,7 +26,7 @@
             "display": "European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"
           },
           {
-            "system": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
             "code": "eortc-qlq-c30",
             "display": "EORTC QLQ-C30 Quality of Life Questionnaire"
           }
@@ -869,7 +869,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "item": [
           {
@@ -1278,7 +1278,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 73.33,
@@ -1333,7 +1333,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 83.33,
@@ -1385,7 +1385,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 87.5,
@@ -1437,7 +1437,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 100,
@@ -1489,7 +1489,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 91.67,
@@ -1541,7 +1541,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 22.22,
@@ -1593,7 +1593,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1645,7 +1645,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 16.67,
@@ -1697,7 +1697,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1749,7 +1749,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 33.33,
@@ -1801,7 +1801,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1853,7 +1853,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1905,7 +1905,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -1957,7 +1957,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 0,
@@ -2009,7 +2009,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example-patient"
+          "reference": "Patient/mii-exa-pro-patient"
         },
         "valueQuantity": {
           "value": 66.67,
@@ -2029,7 +2029,7 @@
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "example-patient",
+        "id": "mii-exa-pro-patient",
         "active": true,
         "name": [
           {
@@ -2044,9 +2044,9 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Patient/example-patient"
+        "url": "Patient/mii-exa-pro-patient"
       },
-      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/example-patient"
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
     }
   ],
   "type": "transaction"

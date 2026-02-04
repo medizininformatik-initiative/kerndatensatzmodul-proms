@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-ex-pro-score-score-health-correlation",
-  "url": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
   "version": "2026.0.0",
   "name": "MII_EX_PRO_Score_Score_Health_Correlation",
   "title": "MII Ex PRO Score Score Health Correlation",
@@ -193,7 +193,7 @@
             ]
           }
         ],
-        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -780,7 +780,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
       },
       {
         "id": "Extension.value[x]",

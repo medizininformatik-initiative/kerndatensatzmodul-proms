@@ -1610,7 +1610,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
         "constraint": [
           {
             "key": "ele-1",
@@ -2812,7 +2812,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
             ]
           }
         ],
@@ -2965,7 +2965,7 @@
             ]
           }
         ],
-        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -4119,7 +4119,7 @@
         "id": "ObservationDefinition.code.coding:mii.system",
         "path": "ObservationDefinition.code.coding.system",
         "min": 1,
-        "fixedUri": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
         "mustSupport": true
       },
       {
@@ -4178,7 +4178,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
             ]
           }
         ],

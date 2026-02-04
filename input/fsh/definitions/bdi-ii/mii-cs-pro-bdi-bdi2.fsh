@@ -2,11 +2,11 @@ CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
 Id: mii-cs-pro-bdi-bdi2
 Title: "MII CS PRO BDI-II"
 Description: "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire"
-* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* ^valueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2"
+* ^valueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2"
 
 // In SDC STU3, itemWeight is moved to answerOption.extension[ordinalValue] in the Questionnaire
 // Keeping codes without weight properties for the CodeSystem

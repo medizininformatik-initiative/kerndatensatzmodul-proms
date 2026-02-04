@@ -2,7 +2,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 Id: mii-vs-pro-bdi-bdi2-short
 Title: "MII VS PRO BDI-II"
 Description: "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire"
-* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
@@ -15,7 +15,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 Id: mii-vs-pro-bdi-bdi2-long
 Title: "MII VS PRO BDI-II"
 Description: "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire"
-* ^url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true

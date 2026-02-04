@@ -27,10 +27,16 @@ When validation fails, categorize errors by:
 - `not-found` - Missing linkIds, references
 - `business-rule` - Dependency/canonical mismatches
 
-### 3. Git Operations
+### 3. Local Validation Context
+- A PostToolUse hook runs SUSHI + Java validation locally before commits
+- Code reaching you for commit has already passed local validation
+- Focus on CI-specific issues (terminology server differences, dependency resolution)
+- Local validation pass ≈ CI pass (rare discrepancies from tx server differences)
+
+### 4. Git Operations
 - Handle commits, push, pull, rebase operations
 - Resolve merge conflicts from CI auto-commits
-- **NEVER run SUSHI** - pre-commit hook handles this locally
+- **NEVER run SUSHI** - the PostToolUse hook handles this automatically
 - Commit fsh-generated files (required for Simplifier sync)
 
 ### 4. Agent Coordination
