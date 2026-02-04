@@ -4,112 +4,20 @@ topic: Abstrakte-Profile
 ## {{page-title}}
 ---
 
-Das MII PRO Modul definiert abstrakte Profile, die als Basis für alle PRO-Implementierungen dienen. Diese Profile sind als `abstract = true` markiert und sollen nicht direkt instanziiert werden. Sie etablieren die gemeinsamen Strukturen und Verhaltensweisen, die von spezifischen Instrumenten-Profilen erweitert werden müssen. Die beiden Profile für Questionnaire und QuestionnaireResponse erben dabei von den SDC-Spezifikation, während die beiden Score-Profile für Observation und ObservationDefinition direkt von der FHIR-Spezifikation erben. 
+Das MII PRO Modul definiert abstrakte Profile, die als Basis für alle PRO-Implementierungen dienen. Diese Profile sind als `abstract = true` markiert und sollen nicht direkt instanziiert werden. Sie etablieren die gemeinsamen Strukturen und Verhaltensweisen, die von spezifischen Instrumenten-Profilen erweitert werden müssen. Die beiden Profile für Questionnaire und QuestionnaireResponse erben dabei von den SDC-Spezifikation, während die beiden Score-Profile für Observation und ObservationDefinition direkt von der FHIR-Spezifikation erben.
 
 ### Warum abstrakte Profile?
 
 Abstrakte Profile stellen sicher, dass gemeinsame Strukturen konsistent über alle Implementierungen verwendet werden, während sie gleichzeitig verhindern, dass unvollständige oder generische Instanzen erstellt werden. Jedes PRO-Instrument muss ein konkretes Profil definieren, das von diesen abstrakten Profilen erbt und die instrument-spezifischen Details hinzufügt.
 
-### MII_PR_PRO_Questionnaire (Abstract)
+### Übersicht
 
-Das abstrakte Questionnaire-Profil bildet die Grundlage für alle PRO-Fragebögen. Es erweitert das FHIR R4 Questionnaire mit SDC-Capabilities und MII-spezifischen Extensions.
-
-**Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire`
-**Abstract:** `true`
-
-**Kernelemente:**
-- Verpflichtende URL zur eindeutigen Identifikation
-- Status und Version für Lifecycle-Management
-- Capability-Extensions zur Verhaltenssteuerung
-- SDC-Extensions für erweiterte Funktionalität
-
-<tabs>
-  <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire}}
-  </tab>
-  <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire}}
-  </tab>
-  <tab title="XML">
-    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire}}
-  </tab>
-</tabs>
-
-### MII_PR_PRO_QuestionnaireResponse (Abstract)
-
-Das abstrakte QuestionnaireResponse-Profil standardisiert die Struktur ausgefüllter Fragebögen. Konkrete Implementierungen müssen dieses Profil erweitern und instrument-spezifische Constraints hinzufügen.
-
-**Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response`
-**Abstract:** `true`
-
-**Kernelemente:**
-- Referenz zum zugehörigen Questionnaire
-- Verpflichtender Status (completed, in-progress, etc.)
-- Strukturierte Items mit Antworten
-- Authored-Zeitstempel für Verlaufsdokumentation
-
-<tabs>
-  <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response}}
-  </tab>
-  <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response}}
-  </tab>
-  <tab title="XML">
-    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response}}
-  </tab>
-</tabs>
-
-### MII_PR_PRO_Score_Blueprint (Abstract)
-
-Das abstrakte Score Blueprint Profil definiert die Struktur für ObservationDefinitions, die als Vorlagen für PRO-Scores dienen. Konkrete Score-Definitionen müssen dieses abstrakte Profil erweitern.
-
-**Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint`
-**Abstract:** `true`
-
-**Kernelemente:**
-- Code zur eindeutigen Score-Identifikation (typischerweise LOINC)
-- QuantitativeDetails mit Einheiten und Wertebereichen
-- QualifiedInterval für Referenzbereiche
-- Populationsspezifische Normwerte
-
-<tabs>
-  <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint}}
-  </tab>
-  <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint}}
-  </tab>
-  <tab title="XML">
-    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint}}
-  </tab>
-</tabs>
-
-### MII_PR_PRO_Score_Instance (Abstract)
-
-Das abstrakte Score Instance Profil definiert die Struktur für konkrete Score-Observations. Instrument-spezifische Score-Profile müssen von diesem abstrakten Profil erben.
-
-**Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance`
-**Abstract:** `true`
-
-**Kernelemente:**
-- Status (final, preliminary, etc.)
-- Code mit Score-Typ (LOINC oder MII-Code)
-- ValueQuantity mit numerischem Score
-- DerivedFrom-Referenz zur QuestionnaireResponse
-- Instantiates-Referenz zur ObservationDefinition (R5 Backport)
-
-<tabs>
-  <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance}}
-  </tab>
-  <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance}}
-  </tab>
-  <tab title="XML">
-    {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance}}
-  </tab>
-</tabs>
+| Profil | Ressourcentyp | Basis | Beschreibung |
+|--------|--------------|-------|-------------|
+| [MII_PR_PRO_Questionnaire](Questionnaire.page.md) | Questionnaire | SDC Questionnaire | Grundlage für alle PRO-Fragebögen |
+| [MII_PR_PRO_QuestionnaireResponse](QuestionnaireResponse.page.md) | QuestionnaireResponse | SDC QuestionnaireResponse | Struktur ausgefüllter Fragebögen |
+| [MII_PR_PRO_Score_Blueprint](ObservationDefinition.page.md) | ObservationDefinition | FHIR R4 | Vorlagen für PRO-Score-Definitionen |
+| [MII_PR_PRO_Score_Instance](Observation.page.md) | Observation | FHIR R4 | Konkrete Score-Observations |
 
 ### Vererbungshierarchie
 
