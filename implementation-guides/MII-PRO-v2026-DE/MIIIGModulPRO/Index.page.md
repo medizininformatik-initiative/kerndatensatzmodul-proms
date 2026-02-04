@@ -36,8 +36,8 @@ Die Implementierung basiert auf:
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 12.01.2026 |
-| Version | 2026.0.0        |
+| Datum   | 04.02.2026 |
+| Version | 2026.0.1        |
 | Status  | active       |
 | Realm   | DE          | 
 
