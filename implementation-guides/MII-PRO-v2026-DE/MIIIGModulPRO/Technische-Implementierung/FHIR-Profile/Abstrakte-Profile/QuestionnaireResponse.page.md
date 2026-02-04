@@ -70,7 +70,8 @@ from CapabilityStatement
 where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement'
     for rest.resource
     where type = 'QuestionnaireResponse'
-    select Suchparameter: searchParam.name, Typ: searchParam.type
+    for searchParam
+    select Suchparameter: name, Definition: definition, Typ: type
 ```
 
 ---
