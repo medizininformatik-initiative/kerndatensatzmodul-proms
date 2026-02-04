@@ -8,7 +8,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Structur
 
 ### Beschreibung
 
-Das abstrakte Questionnaire-Profil bildet die Grundlage für alle PRO-Fragebögen. Es erweitert das FHIR R4 Questionnaire mit SDC-Capabilities und MII-spezifischen Extensions. Konkrete Instrument-Profile (z.B. PHQ-9, EQ-5D-5L, PROMIS-29) müssen von diesem Profil erben und instrument-spezifische Constraints hinzufügen.
+Das abstrakte Questionnaire-Profil bildet die Grundlage für alle PRO-Fragebögen. Es erbt vom [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) Profil und erweitert es mit MII-spezifischen Capabilities und Extensions. Konkrete Instrument-Profile (z.B. PHQ-9, EQ-5D-5L, PROMIS-29) müssen von diesem Profil erben und instrument-spezifische Constraints hinzufügen.
 
 **Kernelemente:**
 - Verpflichtende URL zur eindeutigen Identifikation
