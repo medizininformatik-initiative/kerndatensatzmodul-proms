@@ -1,4 +1,4 @@
-Instance: mii-qst-pro-eq-5d-5l-minimal
+Instance: mii-qst-pro-euroqol-eq5d5l-minimal
 InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO EQ-5D-5L"
 Description: "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire"
