@@ -18,9 +18,7 @@ Der PHQ-9 ist ein validiertes Screening-Instrument für Depression mit neun Item
 
 ### FHIR-Implementierung
 
-{{render:infobox}}
-**Sprachstrategie:** Der PHQ-9 wird mit Englisch als Primärsprache implementiert, da die Originalversion des Instruments in Englisch verfasst ist. Deutsche Übersetzungen sind als Translations hinterlegt. Dies gewährleistet die korrekte Validierung gegen LOINC-Terminologien.
-{{/render:infobox}}
+> **Sprachstrategie:** Der PHQ-9 wird mit Englisch als Primärsprache implementiert, da die Originalversion des Instruments in Englisch verfasst ist. Deutsche Übersetzungen sind als Translations hinterlegt. Dies gewährleistet die korrekte Validierung gegen LOINC-Terminologien.
 
 #### Questionnaire
 

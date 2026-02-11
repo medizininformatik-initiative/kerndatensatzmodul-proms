@@ -72,13 +72,9 @@ DASS-42-Äquivalent = DASS-21-Rohwert × 2 (Bereich: 0-42)
 
 ### FHIR-Implementierung
 
-{{render:infobox}}
-**Sprachstrategie:** Die DASS-21 wird mit Englisch als Primärsprache implementiert, da die Originalversion des Instruments in Englisch verfasst ist. Deutsche Übersetzungen nach Nilges & Essau (2015) sind als Translations hinterlegt.
-{{/render:infobox}}
+> **Sprachstrategie:** Die DASS-21 wird mit Englisch als Primärsprache implementiert, da die Originalversion des Instruments in Englisch verfasst ist. Deutsche Übersetzungen nach Nilges & Essau (2015) sind als Translations hinterlegt.
 
-{{render:infobox}}
-**Terminologie-Strategie:** Die DASS-21-Implementierung verwendet **MII-kontrollierte Terminologie** (keine LOINC-Codes), da LOINC derzeit keine vollständigen DASS-21-Kodierungen bereitstellt. Die SNOMED CT Codes `416954004 |Depression anxiety stress scales depression score|` und `416767005 |Depression anxiety stress scales stress score|` werden für die Score-Kodierung verwendet.
-{{/render:infobox}}
+> **Terminologie-Strategie:** Die DASS-21-Implementierung verwendet **MII-kontrollierte Terminologie** (keine LOINC-Codes), da LOINC derzeit keine vollständigen DASS-21-Kodierungen bereitstellt. Die SNOMED CT Codes `416954004 |Depression anxiety stress scales depression score|` und `416767005 |Depression anxiety stress scales stress score|` werden für die Score-Kodierung verwendet.
 
 #### Questionnaire
 
