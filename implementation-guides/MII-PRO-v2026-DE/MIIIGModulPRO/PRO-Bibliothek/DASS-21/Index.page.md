@@ -110,25 +110,25 @@ DASS-42-Äquivalent = DASS-21-Rohwert × 2 (Bereich: 0-42)
 
 #### CodeSystem und ValueSet
 
-**CodeSystem:** `mii-cs-pro-dass-21` - Item-Codes und Antwortskala mit englischen Primärtexten und deutschen Übersetzungen (Nilges & Essau 2015)
+**CodeSystem:** `mii-cs-pro-dass-21` — Item-Codes und Antwortskala mit englischen Primärtexten und deutschen Übersetzungen (Nilges & Essau 2015)
 
 <tabs>
   <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21}}
+    {{tree:mii-cs-pro-dass-21}}
   </tab>
   <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21}}
+    {{json:mii-cs-pro-dass-21}}
   </tab>
 </tabs>
 
-**ValueSet:** `mii-vs-pro-dass-21-answer-list` - 4-Punkt-Likert-Antwortskala (0-3)
+**ValueSet:** `mii-vs-pro-dass-21-answer-list` — 4-Punkt-Likert-Antwortskala (0-3)
 
 <tabs>
   <tab title="Tree">
-    {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list}}
+    {{tree:mii-vs-pro-dass-21-answer-list}}
   </tab>
   <tab title="JSON">
-    {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list}}
+    {{json:mii-vs-pro-dass-21-answer-list}}
   </tab>
 </tabs>
 
@@ -136,19 +136,17 @@ DASS-42-Äquivalent = DASS-21-Rohwert × 2 (Bereich: 0-42)
 
 Die DASS-21 generiert 6 Scores auf zwei Ebenen:
 
-**1. Rohwerte (DASS-21, Bereich 0-21):**
-| Score | ObservationDefinition | SNOMED |
-|-------|-----------------------|--------|
-| Depression Raw | `mii-obsdef-pro-score-dass21-depression-raw` | 416954004 |
-| Anxiety Raw | `mii-obsdef-pro-score-dass21-anxiety-raw` | - |
-| Stress Raw | `mii-obsdef-pro-score-dass21-stress-raw` | 416767005 |
+**Rohwerte (DASS-21, Bereich 0-21):**
 
-**2. DASS-42-Äquivalente (Rohwert x2, Bereich 0-42):**
-| Score | ObservationDefinition | SNOMED |
-|-------|-----------------------|--------|
-| Depression Equivalent | `mii-obsdef-pro-score-dass21-depression-equiv` | 416954004 |
-| Anxiety Equivalent | `mii-obsdef-pro-score-dass21-anxiety-equiv` | - |
-| Stress Equivalent | `mii-obsdef-pro-score-dass21-stress-equiv` | 416767005 |
+- **Depression Rohwert** (`mii-obsdef-pro-score-dass21-depression-raw`) — SNOMED: 416954004
+- **Angst Rohwert** (`mii-obsdef-pro-score-dass21-anxiety-raw`)
+- **Stress Rohwert** (`mii-obsdef-pro-score-dass21-stress-raw`) — SNOMED: 416767005
+
+**DASS-42-Äquivalente (Rohwert × 2, Bereich 0-42):**
+
+- **Depression Äquivalent** (`mii-obsdef-pro-score-dass21-depression-equiv`) — SNOMED: 416954004
+- **Angst Äquivalent** (`mii-obsdef-pro-score-dass21-anxiety-equiv`)
+- **Stress Äquivalent** (`mii-obsdef-pro-score-dass21-stress-equiv`) — SNOMED: 416767005
 
 #### Scoring-Implementierung
 

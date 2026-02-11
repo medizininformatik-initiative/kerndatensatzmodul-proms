@@ -99,11 +99,27 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw"
+        },
+        "name": "DASS-21 Anxiety Raw Score",
+        "description": "Sum of 7 anxiety items (2, 4, 7, 9, 15, 19, 20), each scored 0-3. Cut-offs: Normal 0-3, Mild 4-5, Moderate 6-7, Severe 8-9, Extremely severe 10+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-dass-dass21-score-anxiety-raw"
         },
         "name": "DASS-21 Anxiety Raw Score Observation",
         "description": "DASS-21 Anxiety subscale raw score observation (mild: 5)",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv"
+        },
+        "name": "DASS-21 Anxiety Score (DASS-42 Equivalent)",
+        "description": "DASS-21 anxiety raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -115,11 +131,27 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw"
+        },
+        "name": "DASS-21 Depression Raw Score",
+        "description": "Sum of 7 depression items (3, 5, 10, 13, 16, 17, 21), each scored 0-3. Cut-offs: Normal 0-4, Mild 5-6, Moderate 7-10, Severe 11-13, Extremely severe 14+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-dass-dass21-score-depression-raw"
         },
         "name": "DASS-21 Depression Raw Score Observation",
         "description": "DASS-21 Depression subscale raw score observation (severe: 12)",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv"
+        },
+        "name": "DASS-21 Depression Score (DASS-42 Equivalent)",
+        "description": "DASS-21 depression raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -131,11 +163,27 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw"
+        },
+        "name": "DASS-21 Stress Raw Score",
+        "description": "Sum of 7 stress items (1, 6, 8, 11, 12, 14, 18), each scored 0-3. Cut-offs: Normal 0-7, Mild 8-9, Moderate 10-12, Severe 13-16, Extremely severe 17+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-dass-dass21-score-stress-raw"
         },
         "name": "DASS-21 Stress Raw Score Observation",
         "description": "DASS-21 Stress subscale raw score observation (moderate: 11)",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv"
+        },
+        "name": "DASS-21 Stress Score (DASS-42 Equivalent)",
+        "description": "DASS-21 stress raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -640,54 +688,6 @@
         },
         "name": "MII ObsDef PRO Score BDI-II",
         "description": "Beck Depression Inventory II (BDI-II) Total Score",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv"
-        },
-        "name": "MII ObsDef PRO Score DASS-21 Anxiety DASS-42 Equivalent",
-        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Anxiety subscale score multiplied by 2 to produce a DASS-42 equivalent score. This allows comparison with published DASS-42 normative data and severity cut-offs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw"
-        },
-        "name": "MII ObsDef PRO Score DASS-21 Anxiety Raw",
-        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Anxiety subscale raw score. Sum of 7 anxiety items (items 2, 4, 7, 9, 15, 19, 20), each scored 0-3. Cut-offs (DASS-21): Normal 0-3, Mild 4-5, Moderate 6-7, Severe 8-9, Extremely severe 10+.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv"
-        },
-        "name": "MII ObsDef PRO Score DASS-21 Depression DASS-42 Equivalent",
-        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Depression subscale score multiplied by 2 to produce a DASS-42 equivalent score. This allows comparison with published DASS-42 normative data and severity cut-offs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw"
-        },
-        "name": "MII ObsDef PRO Score DASS-21 Depression Raw",
-        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Depression subscale raw score. Sum of 7 depression items (items 3, 5, 10, 13, 16, 17, 21), each scored 0-3. Cut-offs (DASS-21): Normal 0-4, Mild 5-6, Moderate 7-10, Severe 11-13, Extremely severe 14+.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv"
-        },
-        "name": "MII ObsDef PRO Score DASS-21 Stress DASS-42 Equivalent",
-        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Stress subscale score multiplied by 2 to produce a DASS-42 equivalent score. This allows comparison with published DASS-42 normative data and severity cut-offs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw"
-        },
-        "name": "MII ObsDef PRO Score DASS-21 Stress Raw",
-        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Stress subscale raw score. Sum of 7 stress items (items 1, 6, 8, 11, 12, 14, 18), each scored 0-3. Cut-offs (DASS-21): Normal 0-7, Mild 8-9, Moderate 10-12, Severe 13-16, Extremely severe 17+.",
         "exampleBoolean": false
       },
       {

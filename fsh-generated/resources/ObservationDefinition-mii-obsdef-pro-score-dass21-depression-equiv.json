@@ -43,8 +43,9 @@
     "unit": {
       "coding": [
         {
-          "code": "1",
-          "system": "http://unitsofmeasure.org"
+          "code": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "display": "score"
         }
       ]
     },
@@ -68,7 +69,7 @@
                   "code": "decrease"
                 }
               ],
-              "text": "Higher score indicates worse depression severity (DASS-42 equivalent = DASS-21 raw × 2)"
+              "text": "Higher score indicates worse depression severity (DASS-42 equivalent = DASS-21 raw x 2)"
             },
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
           }
