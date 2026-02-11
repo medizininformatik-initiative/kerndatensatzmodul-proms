@@ -131,8 +131,32 @@
     {
       "code": "eortc-qlq-c30-ql",
       "display": "EORTC QLQ-C30 Global Health Status / Quality of Life Score"
+    },
+    {
+      "code": "dass21-depression-raw",
+      "display": "DASS-21 Depression Raw Score"
+    },
+    {
+      "code": "dass21-anxiety-raw",
+      "display": "DASS-21 Anxiety Raw Score"
+    },
+    {
+      "code": "dass21-stress-raw",
+      "display": "DASS-21 Stress Raw Score"
+    },
+    {
+      "code": "dass21-depression-equiv",
+      "display": "DASS-21 Depression DASS-42 Equivalent Score"
+    },
+    {
+      "code": "dass21-anxiety-equiv",
+      "display": "DASS-21 Anxiety DASS-42 Equivalent Score"
+    },
+    {
+      "code": "dass21-stress-equiv",
+      "display": "DASS-21 Stress DASS-42 Equivalent Score"
     }
   ],
   "version": "2026.0.1",
-  "count": 31
+  "count": 37
 }

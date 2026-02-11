@@ -91,6 +91,54 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv"
+        },
+        "name": "DASS-21 Anxiety DASS-42 Equivalent Score Observation",
+        "description": "DASS-21 Anxiety subscale DASS-42 equivalent score observation (raw 5 * 2 = 10)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-anxiety-raw"
+        },
+        "name": "DASS-21 Anxiety Raw Score Observation",
+        "description": "DASS-21 Anxiety subscale raw score observation (mild: 5)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-depression-equiv"
+        },
+        "name": "DASS-21 Depression DASS-42 Equivalent Score Observation",
+        "description": "DASS-21 Depression subscale DASS-42 equivalent score observation (raw 12 * 2 = 24)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-depression-raw"
+        },
+        "name": "DASS-21 Depression Raw Score Observation",
+        "description": "DASS-21 Depression subscale raw score observation (severe: 12)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-stress-equiv"
+        },
+        "name": "DASS-21 Stress DASS-42 Equivalent Score Observation",
+        "description": "DASS-21 Stress subscale DASS-42 equivalent score observation (raw 11 * 2 = 22)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-stress-raw"
+        },
+        "name": "DASS-21 Stress Raw Score Observation",
+        "description": "DASS-21 Stress subscale raw score observation (moderate: 11)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"
         },
         "name": "EORTC QLQ-C30 Appetite Loss Score",
@@ -364,6 +412,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-dass-21"
+        },
+        "name": "MII CS PRO DASS-21 Response Scale and Item Codes",
+        "description": "CodeSystem for the Depression Anxiety Stress Scales - Short Form (DASS-21) with answer codes, item codes, and multilingual support (English primary, German translations from Nilges & Essau 2015)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-eortc-qlq-c30"
         },
         "name": "MII CS PRO EORTC QLQ-C30 Response Scale",
@@ -400,6 +456,14 @@
         },
         "name": "MII EXA PRO BDI-II",
         "description": "MII EXA PRO Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-dass-dass21-response-01"
+        },
+        "name": "MII EXA PRO DASS-21 Response",
+        "description": "Complete DASS-21 QuestionnaireResponse example with mixed severity: Depression severe (12), Anxiety mild (5), Stress moderate (11)",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
@@ -576,6 +640,54 @@
         },
         "name": "MII ObsDef PRO Score BDI-II",
         "description": "Beck Depression Inventory II (BDI-II) Total Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv"
+        },
+        "name": "MII ObsDef PRO Score DASS-21 Anxiety DASS-42 Equivalent",
+        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Anxiety subscale score multiplied by 2 to produce a DASS-42 equivalent score. This allows comparison with published DASS-42 normative data and severity cut-offs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw"
+        },
+        "name": "MII ObsDef PRO Score DASS-21 Anxiety Raw",
+        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Anxiety subscale raw score. Sum of 7 anxiety items (items 2, 4, 7, 9, 15, 19, 20), each scored 0-3. Cut-offs (DASS-21): Normal 0-3, Mild 4-5, Moderate 6-7, Severe 8-9, Extremely severe 10+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv"
+        },
+        "name": "MII ObsDef PRO Score DASS-21 Depression DASS-42 Equivalent",
+        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Depression subscale score multiplied by 2 to produce a DASS-42 equivalent score. This allows comparison with published DASS-42 normative data and severity cut-offs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw"
+        },
+        "name": "MII ObsDef PRO Score DASS-21 Depression Raw",
+        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Depression subscale raw score. Sum of 7 depression items (items 3, 5, 10, 13, 16, 17, 21), each scored 0-3. Cut-offs (DASS-21): Normal 0-4, Mild 5-6, Moderate 7-10, Severe 11-13, Extremely severe 14+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv"
+        },
+        "name": "MII ObsDef PRO Score DASS-21 Stress DASS-42 Equivalent",
+        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Stress subscale score multiplied by 2 to produce a DASS-42 equivalent score. This allows comparison with published DASS-42 normative data and severity cut-offs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw"
+        },
+        "name": "MII ObsDef PRO Score DASS-21 Stress Raw",
+        "description": "Depression Anxiety Stress Scales - Short Form (DASS-21) Stress subscale raw score. Sum of 7 stress items (items 1, 6, 8, 11, 12, 14, 18), each scored 0-3. Cut-offs (DASS-21): Normal 0-7, Mild 8-9, Moderate 10-12, Severe 13-16, Extremely severe 17+.",
         "exampleBoolean": false
       },
       {
@@ -796,6 +908,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-dass-dass21"
+        },
+        "name": "MII QST PRO DASS-21",
+        "description": "Depression Anxiety Stress Scales - 21 Items (DASS-21)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30"
         },
         "name": "MII QST PRO EORTC QLQ-C30",
@@ -936,6 +1056,14 @@
         },
         "name": "MII VS PRO BDI-II",
         "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-dass-21-answer-list"
+        },
+        "name": "MII VS PRO DASS-21 Answer List",
+        "description": "4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much)",
         "exampleBoolean": false
       },
       {

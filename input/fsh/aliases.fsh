@@ -10,6 +10,9 @@ Alias: $mii-cs-pro-questionnaire-catalogue = https://www.medizininformatik-initi
 Alias: $mii-qst-pro-bdi-bdi2 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2
 Alias: $mii-cs-pro-bdi-bdi2 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2
 Alias: $mii-qst-pro-promis-depression-sf4a = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a
+Alias: $mii-qst-pro-dass-dass21 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21
+Alias: $mii-cs-pro-dass-21 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21
+Alias: $mii-vs-pro-dass-21-answer-list = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list
 // HL7
 Alias: $hl7-concept-properties = http://hl7.org/fhir/concept-properties
 Alias: $hl7-max-value = http://hl7.org/fhir/StructureDefinition/maxValue

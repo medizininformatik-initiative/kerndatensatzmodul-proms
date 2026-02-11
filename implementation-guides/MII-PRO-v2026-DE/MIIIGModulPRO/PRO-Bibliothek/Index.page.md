@@ -18,6 +18,7 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 | **PROMIS Depression SF 4a** | Vollständig | Depression | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **PROMIS Cognitive Function SF 4a** | Vollständig | Kognition | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **EORTC QLQ-C30** | Vollständig | Onkologie | 30 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | - |
+| **DASS-21** | Vollständig | Depression/Angst/Stress | 21 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 
 #### Metadata-Only Reference Questionnaires
 
@@ -71,6 +72,12 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
   - Vollständige Implementierung mit automatischer Score-Berechnung
   - Vorbereitung für item-basierte Architektur
 
+- **DASS-21 (Depression Anxiety Stress Scales - 21 Items)**
+  - Gleichzeitige Erfassung von Depression, Angst und Stress mit 21 Items
+  - 3 Subskalen mit Rohwerten und DASS-42-Äquivalenten (6 Scores)
+  - Public Domain - frei verfügbar ohne Lizenzgebühren
+  - Deutsche Validierung nach Nilges & Essau (2015)
+
 #### Data and Scoring implementiert
 - **BDI-II (Beck Depression Inventory II)**
   - Umfassendes Depressionsinventar mit 21 Items
@@ -116,4 +123,5 @@ Detaillierte Informationen zu einzelnen Fragebögen finden Sie in den jeweiligen
 - {{pagelink:BDI-II}}
 - {{pagelink:PROMIS}}
 - {{pagelink:EORTC-QLQ-C30}}
+- {{pagelink:DASS-21}}
 - {{pagelink:Minimal-Reference-Questionnaires}}

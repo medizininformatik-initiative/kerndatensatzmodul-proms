@@ -20,6 +20,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #epds "Edinburgh Postnatal Depression Scale"
 * #ces-d "Center for Epidemiologic Studies Depression Scale"
 * #k6 "Kessler Psychological Distress Scale"
+* #dass-dass21 "DASS-21 (Depression Anxiety Stress Scales - 21 Items)"
 
 // TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are 
 // separate entities or part of some bigger PRO framework for proper categorization
