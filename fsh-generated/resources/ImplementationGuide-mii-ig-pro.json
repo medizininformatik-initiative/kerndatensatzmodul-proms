@@ -476,6 +476,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-irt-model"
+        },
+        "name": "MII CS PRO IRT Model",
+        "description": "Item Response Theory models used for psychometric calibration in Computer Adaptive Testing",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-questionnaire-catalogue"
         },
         "name": "MII CS PRO Questionnaire Catalogue",
@@ -488,6 +496,22 @@
         },
         "name": "MII CS PRO Score Catalogue",
         "description": "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-cat-stopping-rule"
+        },
+        "name": "MII EX PRO CAT Stopping Rule",
+        "description": "Defines stopping criteria for Computer Adaptive Testing sessions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-irt-model"
+        },
+        "name": "MII EX PRO IRT Model",
+        "description": "Specifies the Item Response Theory model used for calibration (e.g., GRM, 2PL)",
         "exampleBoolean": false
       },
       {
@@ -529,6 +553,22 @@
         "name": "MII EXA PRO Patient",
         "description": "Example patient for PRO demonstrations",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-depression-cat-response"
+        },
+        "name": "MII EXA PRO PROMIS Depression CAT Response (Completed)",
+        "description": "Example completed adaptive QuestionnaireResponse from a PROMIS Depression CAT session (6 items administered)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-depression-cat-tscore"
+        },
+        "name": "MII EXA PRO PROMIS Depression CAT T-Score",
+        "description": "Example T-Score observation derived from a PROMIS Depression CAT session (T=61.4, SE=0.28, 6 items)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-cat-t-score"
       },
       {
         "reference": {
@@ -588,6 +628,14 @@
       },
       {
         "reference": {
+          "reference": "Library/mii-lib-pro-promis-depression-irt-calibration"
+        },
+        "name": "MII LIB PRO PROMIS Depression IRT Calibration (US General Population)",
+        "description": "IRT calibration parameters for PROMIS Depression Item Bank v1.0 based on Pilkonis et al. (2011). Graded Response Model with 28 items calibrated on US general population.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-lm-pro"
         },
         "name": "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
@@ -616,6 +664,14 @@
         },
         "name": "MII ObsDef PRO PROMIS Cognitive Function SF 4a T-Score",
         "description": "PROMIS Cognitive Function Short Form 4a T-Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-depression-cat-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS Depression CAT T-Score",
+        "description": "ObservationDefinition for PROMIS Depression CAT-derived T-Scores (M=50, SD=10, US general population reference)",
         "exampleBoolean": false
       },
       {
@@ -780,6 +836,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-depression-cat-t-score"
+        },
+        "name": "MII PR PRO PROMIS Depression CAT T-Score",
+        "description": "Profile for PROMIS Depression CAT-derived T-Score observations with standard error and item count components",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
         },
         "name": "MII PR PRO PROMIS Depression SF 4a Raw Score",
@@ -860,6 +924,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-questionnaire-adaptive"
+        },
+        "name": "MII PR PRO Questionnaire Adaptive",
+        "description": "MII PR PRO Adaptive Questionnaire (Item Bank) for Computer Adaptive Testing. Extends the base MII Questionnaire profile with CAT-specific metadata (questionnaireAdaptive extension). Note: This profile is for the definition-level item bank, NOT for the runtime contained questionnaire in an adaptive QuestionnaireResponse (which uses sdc-questionnaire-adapt with url 0..0).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-pro-questionnaire-capabilities"
         },
         "name": "MII PR PRO Questionnaire Capabilities",
@@ -872,6 +944,14 @@
         },
         "name": "MII PR PRO QuestionnaireResponse",
         "description": "MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-questionnaire-response-adaptive"
+        },
+        "name": "MII PR PRO QuestionnaireResponse Adaptive",
+        "description": "MII PR PRO Adaptive QuestionnaireResponse for Computer Adaptive Testing sessions, based on the SDC Adaptive QuestionnaireResponse profile",
         "exampleBoolean": false
       },
       {
@@ -1012,6 +1092,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-depression-cat"
+        },
+        "name": "MII QST PRO PROMIS Depression Item Bank v1.0 (CAT)",
+        "description": "PROMIS Depression Item Bank v1.0 for Computer Adaptive Testing (28 items). Source: Pilkonis et al. (2011)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-promis-depression-sf4a"
         },
         "name": "MII QST PRO PROMIS Depression SF 4a (Adults)",
@@ -1088,6 +1176,14 @@
         },
         "name": "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
         "description": "4-point response scale for EORTC QLQ-C30 role functioning items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-irt-model"
+        },
+        "name": "MII VS PRO IRT Model",
+        "description": "ValueSet of supported IRT models for CAT calibrations",
         "exampleBoolean": false
       },
       {

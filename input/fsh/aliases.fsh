@@ -41,6 +41,10 @@ Alias: $sdc-questionnaire-calculated-expression = http://hl7.org/fhir/uv/sdc/Str
 Alias: $sdc-questionnaire-observation-extract = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract
 Alias: $sdc-questionnaire-observation-extract-category = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category
 
+// CAT / Adaptive
+Alias: $mii-qst-pro-promis-depression-cat = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-cat
+Alias: $sdc-questionnaire-adaptive = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-questionnaireAdaptive
+
 // Terminology
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct

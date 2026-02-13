@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_IRT_Model",
+  "id": "mii-cs-pro-irt-model",
+  "title": "MII CS PRO IRT Model",
+  "description": "Item Response Theory models used for psychometric calibration in Computer Adaptive Testing",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-irt-model",
+  "concept": [
+    {
+      "code": "grm",
+      "display": "Graded Response Model (Samejima)",
+      "definition": "The Graded Response Model by Samejima (1969) for ordered polytomous items"
+    },
+    {
+      "code": "2pl",
+      "display": "Two-Parameter Logistic Model",
+      "definition": "The two-parameter logistic model for dichotomous items"
+    },
+    {
+      "code": "rsm",
+      "display": "Rating Scale Model",
+      "definition": "The Rating Scale Model by Andrich (1978) for ordered polytomous items with equal thresholds"
+    },
+    {
+      "code": "pcm",
+      "display": "Partial Credit Model",
+      "definition": "The Partial Credit Model by Masters (1982) for ordered polytomous items with unequal thresholds"
+    }
+  ],
+  "version": "2026.0.1",
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 4
+}

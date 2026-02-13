@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_IRT_Model",
+  "id": "mii-vs-pro-irt-model",
+  "title": "MII VS PRO IRT Model",
+  "description": "ValueSet of supported IRT models for CAT calibrations",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-irt-model",
+  "version": "2026.0.1",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-irt-model"
+      }
+    ]
+  }
+}

@@ -59,6 +59,10 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 // EORTC QLQ-C30 Global Health Status / Quality of Life (higher = better QoL)
 * #eortc-qlq-c30-ql "EORTC QLQ-C30 Global Health Status / Quality of Life Score"
 
+// PROMIS Depression CAT Scores
+* #promis-depression-cat-tscore "PROMIS Depression CAT T-Score"
+* #promis-depression-cat-se "PROMIS Depression CAT Standard Error"
+
 // DASS-21 Raw Scores (higher = worse)
 * #dass21-depression-raw "DASS-21 Depression Raw Score"
 * #dass21-anxiety-raw "DASS-21 Anxiety Raw Score"

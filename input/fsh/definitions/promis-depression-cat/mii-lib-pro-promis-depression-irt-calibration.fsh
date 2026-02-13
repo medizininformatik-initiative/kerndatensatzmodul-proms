@@ -1,0 +1,47 @@
+// ============================================================================
+// MII Library: PROMIS Depression IRT Calibration Parameters
+// ============================================================================
+// PROMIS Depression Item Bank v1.0 IRT calibration parameters
+// Based on Pilkonis et al. (2011) - Graded Response Model (GRM)
+// Calibrated on US General Population sample
+//
+// Contains discrimination (a) and threshold (b1-b4) parameters for 28 items
+// from the PROMIS Depression Item Bank used in Computer Adaptive Testing (CAT)
+// ============================================================================
+
+Instance: mii-lib-pro-promis-depression-irt-calibration
+InstanceOf: Library
+Usage: #definition
+Title: "MII LIB PRO PROMIS Depression IRT Calibration (US General Population)"
+Description: "IRT calibration parameters for PROMIS Depression Item Bank v1.0 based on Pilkonis et al. (2011). Graded Response Model with 28 items calibrated on US general population."
+
+* insert Version
+
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-promis-depression-irt-calibration"
+* status = #active
+* experimental = true
+* type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
+* date = "2011-01-01"
+
+// IRT Model Extension
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-irt-model"
+* extension[=].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-irt-model#grm "Graded Response Model (Samejima)"
+
+// CAT Stopping Rule Extension
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-cat-stopping-rule"
+* extension[=].extension[+].url = "maxItems"
+* extension[=].extension[=].valueInteger = 12
+* extension[=].extension[+].url = "minItems"
+* extension[=].extension[=].valueInteger = 4
+* extension[=].extension[+].url = "seThreshold"
+* extension[=].extension[=].valueDecimal = 0.30
+
+// Related Artifacts - Source Publication
+* relatedArtifact[+].type = #citation
+* relatedArtifact[=].citation = "Pilkonis PA, Choi SW, Reise SP, Stover AM, Riley WT, Cella D; PROMIS Cooperative Group. Item banks for measuring emotional distress from the Patient-Reported Outcomes Measurement Information System (PROMIS): depression, anxiety, and anger. Assessment. 2011;18(3):263-283."
+* relatedArtifact[=].url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3153635/"
+
+// IRT Parameters as JSON Content (Base64 Encoded)
+* content[+].contentType = #application/json
+* content[=].title = "IRT Item Parameters (GRM)"
+* content[=].data = "ewogICJtb2RlbCI6ICJncm0iLAogICJwb3B1bGF0aW9uIjogIlVTIEdlbmVyYWwgUG9wdWxhdGlvbiAoUGlsa29uaXMgZXQgYWwuLCAyMDExKSIsCiAgInBhcmFtZXRlcml6YXRpb24iOiB7CiAgICAiYSI6ICJkaXNjcmltaW5hdGlvbiAoc2xvcGUpIiwKICAgICJiMSI6ICJ0aHJlc2hvbGQgMSAoTmV2ZXIvUmFyZWx5IGJvdW5kYXJ5KSIsCiAgICAiYjIiOiAidGhyZXNob2xkIDIgKFJhcmVseS9Tb21ldGltZXMgYm91bmRhcnkpIiwKICAgICJiMyI6ICJ0aHJlc2hvbGQgMyAoU29tZXRpbWVzL09mdGVuIGJvdW5kYXJ5KSIsCiAgICAiYjQiOiAidGhyZXNob2xkIDQgKE9mdGVuL0Fsd2F5cyBib3VuZGFyeSkiCiAgfSwKICAiaXRlbXMiOiBbCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXAwNCIsICJsb2luYyI6ICI2MTk1My02IiwgInRleHQiOiAiSSBmZWx0IHdvcnRobGVzcyIsICJhIjogNC4yNywgImIxIjogMC4zMywgImIyIjogMC45MCwgImIzIjogMS42MiwgImI0IjogMi4zN30sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXAwNSIsICJsb2luYyI6ICI2MTk1NC00IiwgInRleHQiOiAiSSBmZWx0IHRoYXQgSSBoYWQgbm90aGluZyB0byBsb29rIGZvcndhcmQgdG8iLCAiYSI6IDMuOTcsICJiMSI6IDAuMTMsICJiMiI6IDAuNzIsICJiMyI6IDEuNTgsICJiNCI6IDIuMjJ9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMDYiLCAibG9pbmMiOiAiNjE5NTUtMSIsICJ0ZXh0IjogIkkgZmVsdCBoZWxwbGVzcyIsICJhIjogNC41MywgImIxIjogMC4yOSwgImIyIjogMC44NCwgImIzIjogMS40OCwgImI0IjogMi4xNn0sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXAwNyIsICJsb2luYyI6ICI2MTk1Ni05IiwgInRleHQiOiAiSSB3aXRoZHJldyBmcm9tIG90aGVyIHBlb3BsZSIsICJhIjogMi40NiwgImIxIjogLTAuMDQsICJiMiI6IDAuNjMsICJiMyI6IDEuNjAsICJiNCI6IDIuNDJ9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMDkiLCAibG9pbmMiOiAiNjE5NTgtNSIsICJ0ZXh0IjogIkkgZmVsdCB0aGF0IG5vdGhpbmcgY291bGQgY2hlZXIgbWUgdXAiLCAiYSI6IDQuMTgsICJiMSI6IDAuNDksICJiMiI6IDEuMTIsICJiMyI6IDEuODQsICJiNCI6IDIuNTZ9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMTQiLCAibG9pbmMiOiAiNjE5NjMtNSIsICJ0ZXh0IjogIkkgZmVsdCB0aGF0IEkgd2FzIG5vdCBhcyBnb29kIGFzIG90aGVyIHBlb3BsZSIsICJhIjogMy4yOSwgImIxIjogLTAuMTEsICJiMiI6IDAuNTYsICJiMyI6IDEuNDEsICJiNCI6IDIuMTR9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMTciLCAibG9pbmMiOiAiNjE5NjQtMyIsICJ0ZXh0IjogIkkgZmVsdCBzYWQiLCAiYSI6IDMuNzUsICJiMSI6IC0wLjU0LCAiYjIiOiAwLjI4LCAiYjMiOiAxLjI1LCAiYjQiOiAyLjExfSwKICAgIHsibGlua0lkIjogInByb21pcy1lZGRlcDE5IiwgImxvaW5jIjogIjYxOTY1LTAiLCAidGV4dCI6ICJJIGZlbHQgbGlrZSBhIGZhaWx1cmUiLCAiYSI6IDMuOTEsICJiMSI6IDAuMzEsICJiMiI6IDAuOTEsICJiMyI6IDEuNzEsICJiNCI6IDIuMzh9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMjEiLCAibG9pbmMiOiAiNjE5NjYtOCIsICJ0ZXh0IjogIkkgZmVsdCBkZXByZXNzZWQiLCAiYSI6IDQuMjgsICJiMSI6IC0wLjMxLCAiYjIiOiAwLjQyLCAiYjMiOiAxLjI0LCAiYjQiOiAyLjAzfSwKICAgIHsibGlua0lkIjogInByb21pcy1lZGRlcDIyIiwgImxvaW5jIjogIjYxOTY3LTYiLCAidGV4dCI6ICJJIGZlbHQgdW5oYXBweSIsICJhIjogMy41MSwgImIxIjogLTAuNzMsICJiMiI6IDAuMDcsICJiMyI6IDEuMDQsICJiNCI6IDEuOTN9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMjMiLCAibG9pbmMiOiAiNjE5NjgtNCIsICJ0ZXh0IjogIkkgZmVsdCBJIGhhZCBub3RoaW5nIHRvIGxpdmUgZm9yIiwgImEiOiAzLjY3LCAiYjEiOiAwLjg0LCAiYjIiOiAxLjM2LCAiYjMiOiAyLjA2LCAiYjQiOiAyLjcxfSwKICAgIHsibGlua0lkIjogInByb21pcy1lZGRlcDI2IiwgImxvaW5jIjogIjYxOTcxLTgiLCAidGV4dCI6ICJJIGZlbHQgbG9uZWx5IiwgImEiOiAyLjY5LCAiYjEiOiAtMC4yNCwgImIyIjogMC40MSwgImIzIjogMS4zMywgImI0IjogMi4xM30sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXAyNyIsICJsb2luYyI6ICI2MTk3Mi02IiwgInRleHQiOiAiSSBmZWx0IGVtb3Rpb25hbGx5IGV4aGF1c3RlZCIsICJhIjogMi41MywgImIxIjogLTAuNDYsICJiMiI6IDAuMjcsICJiMyI6IDEuMjQsICJiNCI6IDIuMTF9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMjgiLCAibG9pbmMiOiAiNjE5NzctNSIsICJ0ZXh0IjogIkkgZmVsdCBob3BlbGVzcyIsICJhIjogNC4wOCwgImIxIjogMC40MywgImIyIjogMC45NywgImIzIjogMS43NSwgImI0IjogMi40NX0sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXAyOSIsICJsb2luYyI6ICI2MTk3OC0zIiwgInRleHQiOiAiSSBmZWx0IHBlc3NpbWlzdGljIiwgImEiOiAzLjI1LCAiYjEiOiAtMC4wNCwgImIyIjogMC42MiwgImIzIjogMS40OSwgImI0IjogMi4yNH0sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXAzMCIsICJsb2luYyI6ICI2MTk3OS0xIiwgInRleHQiOiAiSSBmZWx0IHRoYXQgbXkgbGlmZSB3YXMgZW1wdHkiLCAiYSI6IDMuODIsICJiMSI6IDAuMjgsICJiMiI6IDAuODMsICJiMyI6IDEuNTcsICJiNCI6IDIuMjJ9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMzEiLCAibG9pbmMiOiAiNjE5ODAtOSIsICJ0ZXh0IjogIkkgZmVsdCBkaXNhcHBvaW50ZWQgaW4gbXlzZWxmIiwgImEiOiAzLjE5LCAiYjEiOiAtMC4xMiwgImIyIjogMC41NywgImIzIjogMS40NCwgImI0IjogMi4xOX0sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXAzNSIsICJsb2luYyI6ICI2MTk4NC0xIiwgInRleHQiOiAiSSBmZWx0IHRoYXQgSSB3YXMgdG8gYmxhbWUgZm9yIHRoaW5ncyIsICJhIjogMi4yNiwgImIxIjogLTAuMTgsICJiMiI6IDAuNTYsICJiMyI6IDEuNjQsICJiNCI6IDIuNTl9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMzYiLCAibG9pbmMiOiAiNjE5ODUtOCIsICJ0ZXh0IjogIkkgZmVsdCBsaWtlIGNyeWluZyIsICJhIjogMi41OSwgImIxIjogLTAuMTIsICJiMiI6IDAuNTksICJiMyI6IDEuNDUsICJiNCI6IDIuMjR9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwMzciLCAibG9pbmMiOiAiNjE5ODYtNiIsICJ0ZXh0IjogIkkgZmVsdCBzYWQiLCAiYSI6IDMuNjksICJiMSI6IC0wLjYwLCAiYjIiOiAwLjE4LCAiYjMiOiAxLjE1LCAiYjQiOiAyLjA2fSwKICAgIHsibGlua0lkIjogInByb21pcy1lZGRlcDM5IiwgImxvaW5jIjogIjYxOTg4LTIiLCAidGV4dCI6ICJJIGZlbHQgdGhhdCBJIHdhbnRlZCB0byBnaXZlIHVwIG9uIGV2ZXJ5dGhpbmciLCAiYSI6IDMuNDMsICJiMSI6IDAuNDksICJiMiI6IDEuMDUsICJiMyI6IDEuODMsICJiNCI6IDIuNDl9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwNDEiLCAibG9pbmMiOiAiNjE5OTAtOCIsICJ0ZXh0IjogIkkgZmVsdCB0aGF0IG5vdGhpbmcgd2FzIGludGVyZXN0aW5nIiwgImEiOiAzLjM4LCAiYjEiOiAwLjI0LCAiYjIiOiAwLjg1LCAiYjMiOiAxLjY5LCAiYjQiOiAyLjM5fSwKICAgIHsibGlua0lkIjogInByb21pcy1lZGRlcDQyIiwgImxvaW5jIjogIjYxOTkxLTYiLCAidGV4dCI6ICJJIGZlbHQgbmVnYXRpdmUgYWJvdXQgdGhlIGZ1dHVyZSIsICJhIjogMy4zOCwgImIxIjogMC4wMywgImIyIjogMC42MywgImIzIjogMS40NCwgImI0IjogMi4xOX0sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXA0NCIsICJsb2luYyI6ICI2MTk5My0yIiwgInRleHQiOiAiSSBmZWx0IHRoYXQgbXkgbGlmZSB3YXMgbm90IHdvcnRoIGxpdmluZyIsICJhIjogMy45MywgImIxIjogMC43NSwgImIyIjogMS4zMCwgImIzIjogMi4wMSwgImI0IjogMi42Nn0sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXA0NSIsICJsb2luYyI6ICI2MTk5NC0wIiwgInRleHQiOiAiSSBmZWx0IHRoYXQgSSBkaXNsaWtlZCBteXNlbGYiLCAiYSI6IDMuNjIsICJiMSI6IDAuMzIsICJiMiI6IDAuODcsICJiMyI6IDEuNjMsICJiNCI6IDIuMzV9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwNDYiLCAibG9pbmMiOiAiNjE5OTUtNyIsICJ0ZXh0IjogIkkgZmVsdCB0aGF0IEkgd2FzIGEgZmFpbHVyZSIsICJhIjogNC4wMCwgImIxIjogMC4zNCwgImIyIjogMC44OSwgImIzIjogMS42MiwgImI0IjogMi4zMX0sCiAgICB7ImxpbmtJZCI6ICJwcm9taXMtZWRkZXA0OCIsICJsb2luYyI6ICI2MTk5Ny0zIiwgInRleHQiOiAiSSBoYWQgdHJvdWJsZSBmZWVsaW5nIGNsb3NlIHRvIHBlb3BsZSIsICJhIjogMi40MiwgImIxIjogLTAuMTUsICJiMiI6IDAuNTIsICJiMyI6IDEuNDksICJiNCI6IDIuMzZ9LAogICAgeyJsaW5rSWQiOiAicHJvbWlzLWVkZGVwNTAiLCAibG9pbmMiOiAiNjE5OTktOSIsICJ0ZXh0IjogIkkgZmVsdCB0aGF0IEkgaGFkIG5vIHJlYXNvbiBmb3IgbGl2aW5nIiwgImEiOiAzLjQ3LCAiYjEiOiAwLjkwLCAiYjIiOiAxLjQ0LCAiYjMiOiAyLjE1LCAiYjQiOiAyLjc5fQogIF0KfQo="
