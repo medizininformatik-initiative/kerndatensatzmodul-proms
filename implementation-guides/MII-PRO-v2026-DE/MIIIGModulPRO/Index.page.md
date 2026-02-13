@@ -5,6 +5,13 @@ parent:
 
 Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken beschreibt die FHIR-Repräsentation des Kerndatensatzmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
 
+| Veröffentlichung   |   |
+|---------|---|
+| Datum   | 04.02.2026 |
+| Version | 2026.0.1        |
+| Status  | active       |
+| Realm   | DE          |
+
 ## Zielsetzung
 
 Das MII PRO-Modul standardisiert die Erfassung und Auswertung patientenberichteter Gesundheitsdaten für das deutsche Gesundheitswesen. Es ermöglicht die standortübergreifende Vergleichbarkeit von PRO-Daten durch einheitliche FHIR-basierte Implementierungen.
@@ -32,14 +39,6 @@ Die Implementierung basiert auf:
 - FHIR R4 (4.0.1)
 - SDC (Structured Data Capture) 3.0.0
 - HL7 Terminology 6.4.0
-
-
-| Veröffentlichung   |   |
-|---------|---|
-| Datum   | 04.02.2026 |
-| Version | 2026.0.1        |
-| Status  | active       |
-| Realm   | DE          | 
 
 ## Inhaltsverzeichnis
 
