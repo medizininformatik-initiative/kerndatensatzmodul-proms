@@ -924,18 +924,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-pro-questionnaire-adaptive"
-        },
-        "name": "MII PR PRO Questionnaire Adaptive",
-        "description": "MII PR PRO Adaptive Questionnaire (Item Bank) for Computer Adaptive Testing. Extends the base MII Questionnaire profile with CAT-specific metadata (questionnaireAdaptive extension). Note: This profile is for the definition-level item bank, NOT for the runtime contained questionnaire in an adaptive QuestionnaireResponse (which uses sdc-questionnaire-adapt with url 0..0).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-ex-pro-questionnaire-capabilities"
         },
         "name": "MII PR PRO Questionnaire Capabilities",
         "description": "MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-questionnaire-item-bank"
+        },
+        "name": "MII PR PRO Questionnaire Item Bank",
+        "description": "MII PR PRO Item Bank for Computer Adaptive Testing. Contains the complete set of items from which a CAT engine selects adaptively. Extends the base MII Questionnaire profile with the SDC questionnaireAdaptive extension. Note: This is the definition-level item bank, NOT the runtime contained questionnaire in an adaptive QuestionnaireResponse (which uses sdc-questionnaire-adapt with url 0..0).",
         "exampleBoolean": false
       },
       {

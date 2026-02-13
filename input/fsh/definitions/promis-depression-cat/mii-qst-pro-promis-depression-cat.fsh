@@ -50,12 +50,12 @@ RuleSet: PROMISDepressionFrequencyAnswerOptions
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 Instance: mii-qst-pro-promis-depression-cat
-InstanceOf: MII_PR_PRO_Questionnaire_Adaptive
+InstanceOf: MII_PR_PRO_Questionnaire_Item_Bank
 Title: "MII QST PRO PROMIS Depression Item Bank v1.0 (CAT)"
 Description: "PROMIS Depression Item Bank v1.0 for Computer Adaptive Testing (28 items). Source: Pilkonis et al. (2011)"
 Usage: #definition
 * insert Version
-* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-adaptive)
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-item-bank)
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-cat"
 * status = #active
