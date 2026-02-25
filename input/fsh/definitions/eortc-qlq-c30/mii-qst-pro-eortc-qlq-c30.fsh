@@ -502,9 +502,13 @@ Usage: #inline
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
 * compose.include.concept[+].code = #not-at-all
-* compose.include.concept[+].code = #a-little
+* compose.include.concept[=].display = "Not at all" 
+* compose.include.concept[+].code = #a-little 
+* compose.include.concept[=].display = "A little"
 * compose.include.concept[+].code = #quite-a-bit
+* compose.include.concept[=].display = "Quite a bit"
 * compose.include.concept[+].code = #very-much
+* compose.include.concept[=].display = "Very much"
 
 Instance: eortc-qlq-c30-7pt
 InstanceOf: ValueSet
@@ -514,10 +518,11 @@ Usage: #inline
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
 * status = #active
 * compose.include.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
-* compose.include.concept[+].code = #1-very-poor
-* compose.include.concept[+].code = #2-poor
-* compose.include.concept[+].code = #3-fair
-* compose.include.concept[+].code = #4-good
-* compose.include.concept[+].code = #5-very-good
-* compose.include.concept[+].code = #6-excellent
-* compose.include.concept[+].code = #7-perfect
+* compose.include.concept[+].code = #1-very-poor "Very poor"
+
+* compose.include.concept[+].code = #2-poor "Poor"
+* compose.include.concept[+].code = #3-fair "Fair"
+* compose.include.concept[+].code = #4-good "Good"
+* compose.include.concept[+].code = #5-very-good "Very good"
+* compose.include.concept[+].code = #6-excellent "Excellent"
+* compose.include.concept[+].code = #7-perfect "Perfect"

@@ -254,16 +254,20 @@
           {
             "concept": [
               {
-                "code": "not-at-all"
+                "code": "not-at-all",
+                "display": "Not at all"
               },
               {
-                "code": "a-little"
+                "code": "a-little",
+                "display": "A little"
               },
               {
-                "code": "quite-a-bit"
+                "code": "quite-a-bit",
+                "display": "Quite a bit"
               },
               {
-                "code": "very-much"
+                "code": "very-much",
+                "display": "Very much"
               }
             ],
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"

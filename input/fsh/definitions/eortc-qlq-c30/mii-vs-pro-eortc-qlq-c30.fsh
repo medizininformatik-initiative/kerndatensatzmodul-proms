@@ -7,10 +7,10 @@ Description: "Standard 4-point response scale for EORTC QLQ-C30 items"
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#not-at-all
-* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#a-little
-* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#quite-a-bit
-* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#very-much
+* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#not-at-all "Not at all"
+* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#a-little "A little"
+* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#quite-a-bit "Quite a bit"
+* https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30#very-much "Very much"
 
 // Role functioning scale ValueSet (Q6-7)
 ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale_Role
