@@ -17,3 +17,7 @@ project.yaml
 .bake/
 .fhir-package-cache/
 fhirpkg.lock.json
+
+# Dolt database files (added by bd init)
+.dolt/
+*.db

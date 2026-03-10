@@ -1,0 +1,261 @@
+time=2026-01-30T12:57:24.549+01:00 level=INFO msg="Daemon started (interval: %v, auto-commit: %v, auto-push: %v)" !BADKEY=5s !BADKEY=false !BADKEY=false
+time=2026-01-30T12:57:24.550+01:00 level=INFO msg="using database" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db
+time=2026-01-30T12:57:24.556+01:00 level=INFO msg="database opened" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db freshness_checking=true
+time=2026-01-30T12:57:24.556+01:00 level=INFO msg="upgrading .beads/.gitignore"
+time=2026-01-30T12:57:24.556+01:00 level=WARN msg="failed to upgrade .gitignore" error="open .beads/.gitignore: no such file or directory"
+time=2026-01-30T12:57:24.564+01:00 level=INFO msg="Repository fingerprint validated: %s" !BADKEY=2a7af50e
+time=2026-01-30T12:57:24.565+01:00 level=INFO msg="starting RPC server" socket=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/bd.sock
+time=2026-01-30T12:57:24.565+01:00 level=INFO msg="RPC server ready (socket listening)"
+time=2026-01-30T12:57:24.572+01:00 level=INFO msg="registered in global registry"
+time=2026-01-30T12:57:24.572+01:00 level=INFO msg="Starting %s..." !BADKEY="sync cycle"
+time=2026-01-30T12:57:24.573+01:00 level=INFO msg="Exported to JSONL"
+time=2026-01-30T12:57:24.635+01:00 level=INFO msg="Pull failed: %v" !BADKEY="git pull failed: exit status 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them.\n"
+time=2026-01-30T12:57:24.635+01:00 level=INFO msg="monitoring parent process" pid=0
+time=2026-01-30T12:57:24.635+01:00 level=INFO msg="using event-driven mode"
+time=2026-01-30T12:57:24.636+01:00 level=INFO msg="Auto-pull disabled: use 'git pull' manually to sync remote changes"
+time=2026-01-30T12:57:24.636+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5
+time=2026-01-30T12:57:25.137+01:00 level=INFO msg="Export triggered by mutation events"
+time=2026-01-30T12:57:25.137+01:00 level=INFO msg="Starting %s..." !BADKEY=export
+time=2026-01-30T12:57:25.138+01:00 level=INFO msg="Pre-export validation failed: %v" !BADKEY="refusing to export: JSONL content has changed since last import (import first to avoid data loss)"
+time=2026-01-30T12:57:42.758+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.1
+time=2026-01-30T12:57:43.259+01:00 level=INFO msg="Export triggered by mutation events"
+time=2026-01-30T12:57:43.260+01:00 level=INFO msg="Starting %s..." !BADKEY=export
+time=2026-01-30T12:57:43.261+01:00 level=INFO msg="Pre-export validation failed: %v" !BADKEY="refusing to export: JSONL content has changed since last import (import first to avoid data loss)"
+time=2026-01-30T12:57:45.676+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.2
+time=2026-01-30T12:57:46.176+01:00 level=INFO msg="Export triggered by mutation events"
+time=2026-01-30T12:57:46.176+01:00 level=INFO msg="Starting %s..." !BADKEY=export
+time=2026-01-30T12:57:46.177+01:00 level=INFO msg="Pre-export validation failed: %v" !BADKEY="refusing to export: JSONL content has changed since last import (import first to avoid data loss)"
+time=2026-01-30T12:57:48.869+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.3
+time=2026-01-30T12:57:48.966+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.4
+time=2026-01-30T12:57:49.051+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.5
+time=2026-01-30T12:57:49.135+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.6
+time=2026-01-30T12:57:49.223+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.7
+time=2026-01-30T12:57:49.313+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.8
+time=2026-01-30T12:57:49.409+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.9
+time=2026-01-30T12:57:49.503+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.10
+time=2026-01-30T12:57:49.591+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.11
+time=2026-01-30T12:57:50.092+01:00 level=INFO msg="Export triggered by mutation events"
+time=2026-01-30T12:57:50.092+01:00 level=INFO msg="Starting %s..." !BADKEY=export
+time=2026-01-30T12:57:50.096+01:00 level=INFO msg="Pre-export validation failed: %v" !BADKEY="refusing to export: JSONL content has changed since last import (import first to avoid data loss)"
+time=2026-01-30T12:58:12.770+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.17
+time=2026-01-30T12:58:13.271+01:00 level=INFO msg="Export triggered by mutation events"
+time=2026-01-30T12:58:13.271+01:00 level=INFO msg="Starting %s..." !BADKEY=export
+time=2026-01-30T12:58:13.272+01:00 level=INFO msg="Pre-export validation failed: %v" !BADKEY="refusing to export: JSONL content has changed since last import (import first to avoid data loss)"
+time=2026-01-30T12:58:27.547+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.23
+time=2026-01-30T12:58:27.627+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.24
+time=2026-01-30T12:58:27.723+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.25
+time=2026-01-30T12:58:27.814+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.26
+time=2026-01-30T12:58:27.905+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.27
+time=2026-01-30T12:58:27.988+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.28
+time=2026-01-30T12:58:28.072+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.29
+time=2026-01-30T12:58:28.157+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.30
+time=2026-01-30T12:58:28.248+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.31
+time=2026-01-30T12:58:28.332+01:00 level=INFO msg="Mutation detected: %s %s" create=kerndatensatzmodul-proms-3r5.32
+time=2026-01-30T12:58:28.832+01:00 level=INFO msg="Export triggered by mutation events"
+time=2026-01-30T12:58:28.832+01:00 level=INFO msg="Starting %s..." !BADKEY=export
+time=2026-01-30T12:58:28.833+01:00 level=INFO msg="Pre-export validation failed: %v" !BADKEY="refusing to export: JSONL content has changed since last import (import first to avoid data loss)"
+time=2026-01-30T13:07:16.181+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-01-30T13:07:16.232+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-01-30T13:07:16.232+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-01-30T13:07:17.234+01:00 level=INFO msg="Import triggered by file change"
+time=2026-01-30T13:07:17.234+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-01-30T13:07:17.235+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-01-30T14:50:03.063+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-01-30T14:50:03.114+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-01-30T14:50:03.114+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-01-30T14:50:04.116+01:00 level=INFO msg="Import triggered by file change"
+time=2026-01-30T14:50:04.116+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-01-30T14:50:04.118+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-01-30T16:07:21.332+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-01-30T16:07:21.383+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-01-30T16:07:21.383+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-01-30T16:07:22.385+01:00 level=INFO msg="Import triggered by file change"
+time=2026-01-30T16:07:22.385+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-01-30T16:07:22.391+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-01-30T16:07:56.126+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-01-30T16:07:56.177+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-01-30T16:07:56.177+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-01-30T16:07:57.179+01:00 level=INFO msg="Import triggered by file change"
+time=2026-01-30T16:07:57.179+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-01-30T16:07:57.180+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-01-30T16:27:27.178+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-01-30T16:27:27.228+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-01-30T16:27:27.228+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-01-30T16:27:28.229+01:00 level=INFO msg="Import triggered by file change"
+time=2026-01-30T16:27:28.229+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-01-30T16:27:28.231+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T07:26:04.598+01:00 level=INFO msg="Daemon started (interval: %v, auto-commit: %v, auto-push: %v)" !BADKEY=5s !BADKEY=false !BADKEY=false
+time=2026-02-04T07:26:04.598+01:00 level=INFO msg="using database" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db
+time=2026-02-04T07:26:04.607+01:00 level=INFO msg="database opened" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db freshness_checking=true
+time=2026-02-04T07:26:04.621+01:00 level=INFO msg="Repository fingerprint validated: %s" !BADKEY=2a7af50e
+time=2026-02-04T07:26:04.622+01:00 level=INFO msg="starting RPC server" socket=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/bd.sock
+time=2026-02-04T07:26:04.623+01:00 level=INFO msg="RPC server ready (socket listening)"
+time=2026-02-04T07:26:04.629+01:00 level=INFO msg="registered in global registry"
+time=2026-02-04T07:26:04.629+01:00 level=INFO msg="Starting %s..." !BADKEY="sync cycle"
+time=2026-02-04T07:26:04.632+01:00 level=INFO msg="Exported to JSONL"
+time=2026-02-04T07:26:04.699+01:00 level=INFO msg="Pull failed: %v" !BADKEY="git pull failed: exit status 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them.\n"
+time=2026-02-04T07:26:04.699+01:00 level=INFO msg="monitoring parent process" pid=0
+time=2026-02-04T07:26:04.699+01:00 level=INFO msg="using event-driven mode"
+time=2026-02-04T07:26:04.700+01:00 level=INFO msg="Auto-pull disabled: use 'git pull' manually to sync remote changes"
+time=2026-02-04T14:14:54.222+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T14:14:54.272+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T14:14:54.272+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T14:14:55.274+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T14:14:55.275+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T14:14:55.276+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T14:15:05.809+01:00 level=INFO msg="Git HEAD change detected: %s" !BADKEY=.git/HEAD
+time=2026-02-04T14:15:06.811+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T14:15:06.811+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T14:15:06.811+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T14:30:05.357+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T14:30:05.408+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T14:30:05.408+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T14:30:06.410+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T14:30:06.410+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T14:30:06.410+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T14:42:28.321+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T14:42:28.373+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T14:42:28.373+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T14:42:29.375+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T14:42:29.375+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T14:42:29.376+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T14:42:35.995+01:00 level=INFO msg="Git HEAD change detected: %s" !BADKEY=.git/HEAD
+time=2026-02-04T14:42:36.007+01:00 level=INFO msg="Git HEAD change detected: %s" !BADKEY=.git/HEAD
+time=2026-02-04T14:42:36.008+01:00 level=INFO msg="Git HEAD change detected: %s" !BADKEY=.git/HEAD
+time=2026-02-04T14:42:37.011+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T14:42:37.013+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T14:42:37.013+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T17:46:05.182+01:00 level=INFO msg="Git HEAD change detected: %s" !BADKEY=.git/HEAD
+time=2026-02-04T17:46:06.184+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T17:46:06.184+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T17:46:06.185+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T17:48:15.465+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T17:48:15.517+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T17:48:15.517+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T17:48:16.019+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T17:48:16.069+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T17:48:16.069+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T17:48:16.519+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T17:48:16.519+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T17:48:16.520+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T17:48:17.071+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T17:48:17.071+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T17:48:17.072+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T18:14:35.121+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T18:14:35.173+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T18:14:35.173+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T18:14:36.175+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T18:14:36.175+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T18:14:36.176+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T18:44:00.183+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T18:44:00.237+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T18:44:00.237+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T18:44:01.238+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T18:44:01.240+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T18:44:01.241+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T18:54:59.566+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T18:54:59.617+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T18:54:59.617+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T18:55:00.619+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T18:55:00.619+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T18:55:00.619+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T18:58:35.311+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T18:58:35.363+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T18:58:35.363+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T18:58:36.365+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T18:58:36.365+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T18:58:36.366+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T19:06:10.639+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T19:06:10.690+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T19:06:10.690+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T19:06:11.692+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T19:06:11.693+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T19:06:11.694+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T19:10:31.287+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T19:10:31.338+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T19:10:31.338+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T19:10:31.873+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T19:10:31.924+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T19:10:31.924+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T19:10:32.340+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T19:10:32.340+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T19:10:32.341+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T19:10:32.926+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T19:10:32.927+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T19:10:32.927+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T19:23:55.892+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T19:23:55.944+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T19:23:55.944+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T19:23:56.946+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T19:23:56.946+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T19:23:56.946+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-04T20:15:27.335+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-04T20:15:27.386+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-04T20:15:27.386+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-04T20:15:28.388+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-04T20:15:28.389+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-04T20:15:28.389+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-25T09:52:03.408+01:00 level=INFO msg="Daemon started (interval: %v, auto-commit: %v, auto-push: %v)" !BADKEY=5s !BADKEY=false !BADKEY=false
+time=2026-02-25T09:52:03.409+01:00 level=INFO msg="using database" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db
+time=2026-02-25T09:52:03.425+01:00 level=INFO msg="database opened" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db freshness_checking=true
+time=2026-02-25T09:52:03.435+01:00 level=INFO msg="Repository fingerprint validated: %s" !BADKEY=2a7af50e
+time=2026-02-25T09:52:03.435+01:00 level=INFO msg="starting RPC server" socket=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/bd.sock
+time=2026-02-25T09:52:03.435+01:00 level=INFO msg="RPC server ready (socket listening)"
+time=2026-02-25T09:52:03.441+01:00 level=INFO msg="registered in global registry"
+time=2026-02-25T09:52:03.441+01:00 level=INFO msg="Starting %s..." !BADKEY="sync cycle"
+time=2026-02-25T09:52:03.444+01:00 level=INFO msg="Exported to JSONL"
+time=2026-02-25T09:52:03.511+01:00 level=INFO msg="Pull failed: %v" !BADKEY="git pull failed: exit status 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them.\n"
+time=2026-02-25T09:52:03.511+01:00 level=INFO msg="monitoring parent process" pid=0
+time=2026-02-25T09:52:03.511+01:00 level=INFO msg="using event-driven mode"
+time=2026-02-25T09:52:03.512+01:00 level=INFO msg="Auto-pull disabled: use 'git pull' manually to sync remote changes"
+time=2026-02-25T09:52:04.694+01:00 level=INFO msg="File change detected: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-25T09:52:05.696+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-25T09:52:05.696+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-25T09:52:05.697+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-25T09:52:06.244+01:00 level=INFO msg="File change detected: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-25T09:52:07.246+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-25T09:52:07.246+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-25T09:52:07.246+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-25T16:36:37.957+01:00 level=INFO msg="Git HEAD change detected: %s" !BADKEY=.git/HEAD
+time=2026-02-25T16:36:38.959+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-25T16:36:38.960+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-25T16:36:38.961+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-25T16:59:23.726+01:00 level=INFO msg="JSONL removed/renamed, re-establishing watch"
+time=2026-02-25T16:59:23.777+01:00 level=INFO msg="Successfully re-established JSONL watch after %v" !BADKEY=50ms
+time=2026-02-25T16:59:23.777+01:00 level=INFO msg="JSONL file created: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-25T16:59:24.779+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-25T16:59:24.780+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-25T16:59:24.780+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-25T16:59:24.935+01:00 level=INFO msg="File change detected: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-25T16:59:25.937+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-25T16:59:25.937+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-25T16:59:25.937+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-25T16:59:29.978+01:00 level=INFO msg="File change detected: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-25T16:59:30.980+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-25T16:59:30.981+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-25T16:59:30.981+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-02-25T17:00:04.274+01:00 level=INFO msg="File change detected: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-02-25T17:00:05.276+01:00 level=INFO msg="Import triggered by file change"
+time=2026-02-25T17:00:05.276+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-02-25T17:00:05.277+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
+time=2026-03-09T13:23:55.977+01:00 level=INFO msg="Daemon started (interval: %v, auto-commit: %v, auto-push: %v)" !BADKEY=5s !BADKEY=false !BADKEY=false
+time=2026-03-09T13:23:55.977+01:00 level=INFO msg="using database" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db
+time=2026-03-09T13:23:55.982+01:00 level=INFO msg="database opened" path=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/beads.db freshness_checking=true
+time=2026-03-09T13:23:55.982+01:00 level=INFO msg="upgrading .beads/.gitignore"
+time=2026-03-09T13:23:55.983+01:00 level=WARN msg="failed to upgrade .gitignore" error="open .beads/.gitignore: no such file or directory"
+time=2026-03-09T13:23:55.992+01:00 level=INFO msg="Repository fingerprint validated: %s" !BADKEY=2a7af50e
+time=2026-03-09T13:23:55.993+01:00 level=INFO msg="starting RPC server" socket=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/bd.sock
+time=2026-03-09T13:23:55.993+01:00 level=INFO msg="RPC server ready (socket listening)"
+time=2026-03-09T13:23:55.998+01:00 level=INFO msg="registered in global registry"
+time=2026-03-09T13:23:55.998+01:00 level=INFO msg="Starting %s..." !BADKEY="sync cycle"
+time=2026-03-09T13:23:56.001+01:00 level=INFO msg="Exported to JSONL"
+time=2026-03-09T13:23:56.700+01:00 level=INFO msg="Pulled from remote"
+time=2026-03-09T13:23:56.726+01:00 level=INFO msg="Imported from JSONL"
+time=2026-03-09T13:23:56.749+01:00 level=INFO msg="Sync cycle complete"
+time=2026-03-09T13:23:56.749+01:00 level=INFO msg="monitoring parent process" pid=0
+time=2026-03-09T13:23:56.749+01:00 level=INFO msg="using event-driven mode"
+time=2026-03-09T13:23:56.750+01:00 level=INFO msg="Auto-pull disabled: use 'git pull' manually to sync remote changes"
+time=2026-03-10T07:59:59.131+01:00 level=INFO msg="File change detected: %s" !BADKEY=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.beads/issues.jsonl
+time=2026-03-10T08:00:00.134+01:00 level=INFO msg="Import triggered by file change"
+time=2026-03-10T08:00:00.134+01:00 level=INFO msg="Starting %s..." !BADKEY=auto-import
+time=2026-03-10T08:00:00.137+01:00 level=INFO msg="Skipping %s: JSONL content unchanged" !BADKEY=auto-import
