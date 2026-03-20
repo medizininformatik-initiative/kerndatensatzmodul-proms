@@ -28,5 +28,66 @@
         ]
       }
     ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1774019821481",
+    "timestamp": "2026-03-20T15:17:01.477Z",
+    "total": 4,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.0.1"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-03-20T15:17:01.477Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
+        "code": "dass-dass21-answer-0",
+        "display": "Did not apply to me at all",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Traf gar nicht auf mich zu"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
+        "code": "dass-dass21-answer-1",
+        "display": "Applied to me to some degree",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Traf bis zu einem gewissen Grad auf mich zu"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
+        "code": "dass-dass21-answer-2",
+        "display": "Applied to me to a considerable degree",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Traf in beträchtlichem Maße auf mich zu"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
+        "code": "dass-dass21-answer-3",
+        "display": "Applied to me very much",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Traf sehr stark auf mich zu"
+          }
+        ]
+      }
+    ]
   }
 }

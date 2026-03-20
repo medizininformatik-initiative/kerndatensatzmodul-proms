@@ -67,5 +67,77 @@
         ]
       }
     ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1774019821481",
+    "timestamp": "2026-03-20T15:17:01.477Z",
+    "total": 5,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.0.1"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-03-20T15:17:01.477Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA6270-8",
+        "display": "Never",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Nie"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA10066-1",
+        "display": "Rarely",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Selten"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA10082-8",
+        "display": "Sometimes",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Manchmal"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA10044-8",
+        "display": "Often",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Oft"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA9933-8",
+        "display": "Always",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Immer"
+          }
+        ]
+      }
+    ]
   }
 }
