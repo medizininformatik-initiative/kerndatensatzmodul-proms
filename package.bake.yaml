@@ -27,10 +27,26 @@ move-concept-maps:
   - move: /package/
   - target: output
 
+# PRO-specific: Questionnaires and ObservationDefinitions are #definition instances
+# that must be resolvable by canonical URL (not buried in examples/)
+move-definition-questionnaires:
+  - source: staging
+  - category: Questionnaire
+  - move: /package/
+  - target: output
+
+move-definition-observationdefinitions:
+  - source: staging
+  - category: ObservationDefinition
+  - move: /package/
+  - target: output
+
 move-examples:
   - source: staging
   - category: Instance
   - delete: /**/*ConceptMap*.json
+  - delete: /**/*Questionnaire-*.json
+  - delete: /**/*ObservationDefinition-*.json
   - delete: /**/*validation*.json
   - delete: /**/*qa*.json
   - delete: /**/*expansions*.json

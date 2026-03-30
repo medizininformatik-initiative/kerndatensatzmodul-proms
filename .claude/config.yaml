@@ -1,25 +1,431 @@
-# MII PRO Module Configuration
-# This file is used by /mii-build-package and /mii-publish-package skills
+# Claude Code Configuration for MII PRO Module
+# This file contains repository-specific configuration values used by slash commands
 
+# ═══════════════════════════════════════════════════════════════════════════════
+# Config Metadata
+# ═══════════════════════════════════════════════════════════════════════════════
+_meta:
+  # Config schema version (NOT module version)
+  # Semantic versioning: MAJOR.MINOR.PATCH
+  # - MAJOR: Breaking changes (commands must update)
+  # - MINOR: New fields added (backwards compatible)
+  # - PATCH: Documentation/value updates only
+  version: "1.0.0"
+
+  # Last updated date
+  last_updated: "2026-03-30"
+
+  # Compatible with these command versions
+  min_command_version: "1.0.0"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Repository Identification
+# ═══════════════════════════════════════════════════════════════════════════════
 repository:
-  package_id: "de.medizininformatikinitiative.kerndatensatz.pros"
-  module_name: "PRO"
-  github_repo: "medizininformatik-initiative/kerndatensatzmodul-proms"
+  # GitHub repository name
+  name: "kerndatensatzmodul-proms"
 
+  # GitHub organization/owner
+  owner: "medizininformatik-initiative"
+
+  # Human-readable module name
+  module: "PRO"
+  module_long: "Modul PROs, PROMs und abgeleitete Metriken"
+
+  # FHIR package ID (must match package.json)
+  package_id: "de.medizininformatikinitiative.kerndatensatz.pros"
+
+  # Canonical URL base
+  canonical: "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro"
+
+  # Implementation Guide ID (from sushi-config.yaml)
+  ig_id: "mii-ig-pro"
+
+  # Short name for profile prefixes
+  prefix: "pro"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Git Branch Configuration
+# ═══════════════════════════════════════════════════════════════════════════════
+branches:
+  # Main/production branch (tagged releases)
+  main: "dev"
+
+  # Development branch (default working branch)
+  development: "dev"
+
+  # Release branch prefix
+  release_prefix: "release/v"
+
+  # Feature branch prefix
+  feature_prefix: "feature/"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Build System Configuration
+# ═══════════════════════════════════════════════════════════════════════════════
 build:
+  # Build system: "firely-bake" or "sushi-only"
+  system: "firely-bake"
+
+  # SUSHI compilation command
+  sushi_command: "sushi . --snapshot"
+
+  # Post-SUSHI step: ValueSet expansion for LHC Forms rendering
+  post_sushi_command: "node expand-valuesets.js"
+
+  # IG Publisher command (if used)
+  ig_publisher_command: "./_genonce.sh"
+
+  # Firely Bake configuration file
   bake_config: "package.bake.yaml"
+
+  # Expected package file count (for verification)
   expected_file_count:
     min: 80
     max: 250
+
+  # Expected package size in KB (for verification)
   expected_size_kb:
     min: 150
     max: 800
 
+  # Directories to exclude from package
+  exclude_from_package:
+    - ".claude/"
+    - ".beads/"
+    - ".bake/"
+    - "input/fsh/"
+    - "implementation-guides/"
+    - ".git/"
+    - "node_modules/"
+    - "output/"
+    - "staging/"
+    - "package.bake.yaml"
+    - "*.pdf"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Version Management
+# ═══════════════════════════════════════════════════════════════════════════════
+versioning:
+  # Version format pattern
+  pattern: "YYYY.X.Y"
+
+  # Files that contain version information and must be updated on release
+  version_files:
+    - path: "package.json"
+      field: "version"
+      format: "json"
+
+    - path: "sushi-config.yaml"
+      field: "version"
+      format: "yaml"
+
+    - path: "input/fsh/rulesets/version.fsh"
+      format: "fsh"
+      rulesets:
+        - "Version"
+        - "PR_CS_VS_Version"
+        - "ObsDefVersion"
+        - "MetaProfile"
+      comment: "Update version in all four RuleSets"
+
+    - path: "qc/custom.rules.yaml"
+      field: "version-filled"
+      format: "yaml"
+      action: "append"
+      comment: "Add new version to the predicate list"
+
+    - path: "implementation-guides/MII-PRO-v2026-DE/guide.yaml"
+      field: "version"
+      format: "yaml"
+
+    - path: "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Index.page.md"
+      format: "markdown"
+      fields:
+        - "Datum (DD.MM.YYYY)"
+        - "Version"
+        - "Status (draft → active on first stable release)"
+
+  # Release labels (corresponds to releaseLabel in sushi-config.yaml)
+  release_labels:
+    development: "ci-build"
+    ballot: "ballot"
+    release_candidate: "trial-use"
+    production: "release"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# CI/CD Configuration
+# ═══════════════════════════════════════════════════════════════════════════════
+ci:
+  # GitHub Actions workflow name for FHIR validation
+  workflow_name: "CI (FHIR Validation & Release)"
+
+  # Artifact name containing validation results
+  artifact_name: "validation-output"
+
+  # Timeout for waiting on CI completion (minutes)
+  timeout_minutes: 10
+
+  # Polling interval when waiting for CI (seconds)
+  poll_interval_seconds: 30
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# File Paths
+# ═══════════════════════════════════════════════════════════════════════════════
 paths:
-  bake_output: ".bake"
+  # FSH source files
+  fsh_source: "input/fsh"
+
+  # SUSHI output directory
+  fsh_generated: "fsh-generated"
+
+  # IG Publisher output
   output: "output"
+
+  # Bake staging directory
   staging: "staging"
 
+  # Bake output directory
+  bake_output: ".bake"
+
+  # Implementation Guide pages
+  ig_pages: "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO"
+
+  # Release notes file
+  release_notes: "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Release-Notes.page.md"
+
+  # IG index page (Veröffentlichungstabelle)
+  ig_index: "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Index.page.md"
+
+  # Technical implementation docs
+  tech_docs: "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung"
+
+  # Profile documentation
+  profile_docs: "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile"
+
+  # PRO instrument definitions (organized by instrument)
+  definitions: "input/fsh/definitions"
+
+  # Examples directory
+  examples: "input/fsh/examples"
+
+  # QA rules
+  qa_rules: "qc/custom.rules.yaml"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Simplifier Publishing
+# ═══════════════════════════════════════════════════════════════════════════════
 simplifier:
+  # Simplifier project URL
   project_url: "https://simplifier.net/mii-erweiterungsmodul-pro-2025"
+
+  # Base URL for implementation guide on Simplifier
+  guide_base_url: "https://simplifier.net/guide/mii-pro-v2026-de"
+
+  # Package registry URL
   package_registry: "https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.pros"
+
+  # Organization on Simplifier
+  organization: "Medizininformatik Initiative"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Terminology Services
+# ═══════════════════════════════════════════════════════════════════════════════
+terminology:
+  # Local terminology server (for validation)
+  local_server: "http://localhost:3000"
+
+  # MII terminology server
+  server: "https://termserv.mii.medizininformatik-initiative.de/fhir"
+
+  # FHIR version
+  fhir_version: "4.0.1"
+
+  # Key code systems used
+  code_systems:
+    - "http://snomed.info/sct"
+    - "http://loinc.org"
+    - "http://terminology.hl7.org/CodeSystem/observation-category"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Module-Specific Configuration
+# ═══════════════════════════════════════════════════════════════════════════════
+module:
+  # Base specification
+  base_specification: "FHIR SDC (Structured Data Capture) 3.0.0"
+
+  # Key dependencies (MII modules and external)
+  key_dependencies:
+    - "de.medizininformatikinitiative.kerndatensatz.meta"
+    - "hl7.fhir.uv.sdc"
+    - "de.gematik.isik"
+    - "hl7.fhir.uv.extensions.r4"
+
+  # Supported PRO instruments
+  instruments:
+    - id: "phq-9"
+      name: "PHQ-9 (Patient Health Questionnaire-9)"
+      status: "production"
+      path: "input/fsh/definitions/phq-9"
+    - id: "eq-5d"
+      name: "EQ-5D-5L (EuroQol 5-Dimension 5-Level)"
+      status: "production"
+      path: "input/fsh/definitions/eq-5d"
+    - id: "promis-29"
+      name: "PROMIS-29 Profile v2.1"
+      status: "preview"
+      path: "input/fsh/definitions/promis-29"
+    - id: "eortc-qlq-c30"
+      name: "EORTC QLQ-C30"
+      status: "preview"
+      path: "input/fsh/definitions/eortc-qlq-c30"
+    - id: "dass-21"
+      name: "DASS-21 (Depression Anxiety Stress Scales)"
+      status: "preview"
+      path: "input/fsh/definitions/dass-21"
+    - id: "bdi-ii"
+      name: "BDI-II (Beck Depression Inventory II)"
+      status: "preview"
+      path: "input/fsh/definitions/bdi-ii"
+    - id: "promis-depression-sf4a"
+      name: "PROMIS Depression Short Form 4a"
+      status: "preview"
+      path: "input/fsh/definitions/promis-depression-sf4a"
+    - id: "promis-cognitive-function-sf4a"
+      name: "PROMIS Cognitive Function Short Form 4a"
+      status: "preview"
+      path: "input/fsh/definitions/promis-cognitive-function-sf4a"
+
+  # Language
+  language: "de-DE"
+
+  # Primary contact
+  maintainer:
+    name: "Medizininformatik Initiative"
+    url: "https://www.medizininformatik-initiative.de/"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Naming Conventions
+# ═══════════════════════════════════════════════════════════════════════════════
+naming:
+  # Profile naming pattern
+  profile_pattern: "MII_PR_PRO_{ConceptName}"
+  profile_id_pattern: "mii-pr-pro-{concept-name}"
+  profile_title_pattern: "MII PR PRO {Human Name}"
+
+  # Extension naming pattern
+  extension_pattern: "MII_EX_PRO_{ConceptName}"
+  extension_id_pattern: "mii-ex-pro-{concept-name}"
+
+  # ValueSet naming pattern
+  valueset_pattern: "mii-vs-pro-{concept-name}"
+  valueset_title_pattern: "MII VS PRO {Human Name}"
+
+  # CodeSystem naming pattern
+  codesystem_pattern: "mii-cs-pro-{concept-name}"
+  codesystem_title_pattern: "MII CS PRO {Human Name}"
+
+  # Questionnaire naming pattern
+  questionnaire_pattern: "mii-qst-pro-{instrument-name}"
+  questionnaire_title_pattern: "MII QST PRO {Human Name}"
+
+  # ObservationDefinition naming pattern
+  obsdef_pattern: "mii-obsdef-pro-{concept-name}"
+
+  # Example naming pattern
+  example_pattern: "mii-exa-pro-{concept-name}"
+  example_title_pattern: "MII EXA PRO {Human Name}"
+
+  # File naming pattern
+  file_pattern: "mii-{type}-pro-{concept-name}.fsh"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Validation Configuration
+# ═══════════════════════════════════════════════════════════════════════════════
+validation:
+  # Validation commands
+  commands:
+    sushi: "sushi . --snapshot"
+    post_sushi: "node expand-valuesets.js"
+    ig_publisher: "./_genonce.sh"
+
+  # Known acceptable error categories
+  acceptable_errors:
+    - "Terminology_TX_Display"
+    - "Wrong_Display_Name"
+    - "UNABLE_TO_INFER_CODESYSTEM"
+
+  # Expected error count thresholds (for tracking improvements)
+  error_thresholds:
+    critical: 0
+    high: 10
+    medium: 50
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Release Workflow
+# ═══════════════════════════════════════════════════════════════════════════════
+release:
+  # Workflow phases (for tracking)
+  phases:
+    - name: "Create Release Branch"
+      command: "/release-prepare"
+
+    - name: "Update Version Files"
+      automated: true
+
+    - name: "Run SUSHI + ValueSet Expansion"
+      automated: true
+
+    - name: "Update Release Notes"
+      command: "/update-release-notes"
+
+    - name: "Create PR and Wait for CI"
+      manual: true
+
+    - name: "Merge and Create Tag"
+      command: "/release-finalize"
+
+    - name: "Build Package"
+      command: "/build-package"
+
+    - name: "Publish to Simplifier"
+      command: "/publish-package"
+
+  # Commit message templates
+  commit_messages:
+    prepare: "chore: Prepare release v{VERSION}"
+    finalize: "chore: Release v{VERSION}"
+    hotfix: "fix: Hotfix v{VERSION}"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# External Resources
+# ═══════════════════════════════════════════════════════════════════════════════
+resources:
+  # MII Initiative
+  mii_url: "https://www.medizininformatik-initiative.de/"
+
+  # GitHub repository
+  github_url: "https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms"
+
+  # FHIR specification
+  fhir_spec: "http://hl7.org/fhir/R4/"
+
+  # SDC specification
+  sdc_spec: "http://hl7.org/fhir/uv/sdc/"
+
+  # MII release workflow wiki
+  release_workflow: "https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Notes
+# ═══════════════════════════════════════════════════════════════════════════════
+# This configuration file is used by:
+# - Slash commands in .claude/commands/ (central from mii-kerndatensatz-dev)
+# - CI/CD automation scripts
+# - Release management workflows
+#
+# PRO-specific additions vs standard MII config:
+# - build.post_sushi_command: ValueSet expansion script for LHC Forms
+# - module.instruments: Catalogue of supported PRO instruments with status
+# - naming: Includes questionnaire and obsdef patterns
+# - terminology.local_server: Local TX server for pre-commit validation
