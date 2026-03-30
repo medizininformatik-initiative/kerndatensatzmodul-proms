@@ -7,8 +7,8 @@ Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken be
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 04.02.2026 |
-| Version | 2026.0.1        |
+| Datum   | 30.03.2026 |
+| Version | 2026.2.0        |
 | Status  | active       |
 | Realm   | DE          |
 
@@ -25,6 +25,7 @@ Das MII PRO-Modul standardisiert die Erfassung und Auswertung patientenberichtet
 ### Technische Vorschau
 - **PROMIS-29**: Multi-Domain Gesundheitsstatus (7 Domänen)
 - **EORTC QLQ-C30**: Onkologische Lebensqualität
+- **DASS-21**: Depression, Angst und Stress
 - **BDI-II**: Beck Depression Inventory (Lizenz-Referenz)
 
 ### Kernfunktionalität
