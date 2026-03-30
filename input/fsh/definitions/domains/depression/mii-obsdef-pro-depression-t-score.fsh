@@ -19,9 +19,9 @@ Usage: #definition
 
 // German general population reference ranges (EHIS wave 3, n=22,996)
 * qualifiedInterval[+].category = #reference
-* qualifiedInterval[=].context.coding = $LNC#LA6112-2 "General population"
 * qualifiedInterval[=].context.text = "German general population - EHIS wave 3 (n=22,996): Mean 46.5 (SD 7.7), Median 45.5"
-
+* qualifiedInterval[=].appliesTo[+].coding = $LNC#LA6112-2 "General population"
+* qualifiedInterval[=].appliesTo[=].text = "German general population - EHIS wave 3 (n=22,996)"
 * qualifiedInterval[=].range.low.value = 41.8
 * qualifiedInterval[=].range.high.value = 51.5
 * qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
@@ -29,8 +29,9 @@ Usage: #definition
 
 // European male population reference ranges (for gender context)
 * qualifiedInterval[+].category = #reference
-* qualifiedInterval[=].context.coding = $LNC#LA6112-2 "General population"
 * qualifiedInterval[=].context.text = "European male population - EHIS wave 3 (29 countries): Median 44.11"
+* qualifiedInterval[=].appliesTo[+].coding = $LNC#LA6112-2 "General population"
+* qualifiedInterval[=].appliesTo[=].text = "European male population - EHIS wave 3 (29 countries)"
 * qualifiedInterval[=].appliesTo[+].coding.system = "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"
 * qualifiedInterval[=].appliesTo[=].coding.code = #M
 * qualifiedInterval[=].appliesTo[=].coding.display = "Male"
@@ -39,10 +40,11 @@ Usage: #definition
 * qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
 * qualifiedInterval[=].range.extension[ScoreHealthCorrelation].valueCodeableConcept.text = "Higher scores indicate worse health (more depression symptoms)"
 
-// European female population reference ranges (for gender context)  
+// European female population reference ranges (for gender context)
 * qualifiedInterval[+].category = #reference
-* qualifiedInterval[=].context.coding = $LNC#LA6112-2 "General population"
 * qualifiedInterval[=].context.text = "European female population - EHIS wave 3 (29 countries): Median 46.37"
+* qualifiedInterval[=].appliesTo[+].coding = $LNC#LA6112-2 "General population"
+* qualifiedInterval[=].appliesTo[=].text = "European female population - EHIS wave 3 (29 countries)"
 * qualifiedInterval[=].appliesTo[+].coding.system = "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"
 * qualifiedInterval[=].appliesTo[=].coding.code = #F
 * qualifiedInterval[=].appliesTo[=].coding.display = "Female"
@@ -53,9 +55,9 @@ Usage: #definition
 
 // European population context for comparison
 * qualifiedInterval[+].category = #reference
-* qualifiedInterval[=].context.coding = $LNC#LA6112-2 "General population"
 * qualifiedInterval[=].context.text = "Overall European population median (IQR) - EHIS wave 3, 29 countries (n=287,530)"
-
+* qualifiedInterval[=].appliesTo[+].coding = $LNC#LA6112-2 "General population"
+* qualifiedInterval[=].appliesTo[=].text = "Overall European population - EHIS wave 3, 29 countries (n=287,530)"
 * qualifiedInterval[=].range.low.value = 39.11
 * qualifiedInterval[=].range.high.value = 51.68
 

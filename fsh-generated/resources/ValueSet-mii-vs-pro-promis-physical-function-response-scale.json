@@ -6,7 +6,7 @@
   "title": "MII VS PRO PROMIS Physical Function Response Scale",
   "description": "PROMIS Physical Function response scale based on LOINC LL1022-4",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
-  "version": "2026.0.1",
+  "version": "2026.2.0",
   "experimental": true,
   "language": "en",
   "compose": {
@@ -63,78 +63,6 @@
                 "value": "Kann ich gar nicht"
               }
             ]
-          }
-        ]
-      }
-    ]
-  },
-  "expansion": {
-    "identifier": "urn:uuid:mii-pro-expansion-1774020519840",
-    "timestamp": "2026-03-20T15:28:39.835Z",
-    "total": 5,
-    "parameter": [
-      {
-        "name": "mii-pro-version",
-        "valueString": "2026.0.1"
-      },
-      {
-        "name": "expandedAt",
-        "valueDateTime": "2026-03-20T15:28:39.835Z"
-      }
-    ],
-    "contains": [
-      {
-        "system": "http://loinc.org",
-        "code": "LA13921-4",
-        "display": "Without any difficulty",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Ohne jede Schwierigkeiten"
-          }
-        ]
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "LA13918-0",
-        "display": "With a little difficulty",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Mit geringen Schwierigkeiten"
-          }
-        ]
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "LA13920-6",
-        "display": "With some difficulty",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Mit einigen Schwierigkeiten"
-          }
-        ]
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "LA13919-8",
-        "display": "With much difficulty",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Mit großen Schwierigkeiten"
-          }
-        ]
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "LA13912-3",
-        "display": "Unable to do",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Kann ich gar nicht"
           }
         ]
       }

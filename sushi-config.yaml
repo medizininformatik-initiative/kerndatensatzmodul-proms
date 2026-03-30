@@ -9,7 +9,7 @@ name: MII_IG_PRO
 title: "MII IG PRO"
 description: "Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken"
 status: active # draft | active | retired | unknown
-version: 2026.0.1
+version: 2026.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 packageId: de.medizininformatikinitiative.kerndatensatz.pros
 copyrightYear: 2025+
@@ -29,7 +29,7 @@ language: de-DE
 dependencies:
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
   hl7.fhir.uv.sdc: 3.0.0
-  de.gematik.isik: 5.0.0
+  de.gematik.isik: 5.1.1
   #hl7.terminology: 6.4.0
   #hl7.fhir.extensions.r5:
   #  id: r5ext
@@ -38,7 +38,7 @@ dependencies:
   #    Makes available certain R5 elements for use as part of this R4 IG
   hl7.fhir.uv.extensions.r4:
     id: ext
-    version: 5.1.0
+    version: 5.2.0
 
 
 #   hl7.fhir.us.mcode:
