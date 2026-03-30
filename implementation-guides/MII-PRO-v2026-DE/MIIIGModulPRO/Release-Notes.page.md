@@ -5,6 +5,52 @@ topic: Release-Notes
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Version: 2026.2.0** (unreleased)
+
+Datum: –
+
+Dependencies und Tooling:
+- Changed: Dependency de.gematik.isik von 5.0.0 auf 5.1.1 aktualisiert (konsistent mit Bildgebung und Laborbefund)
+- Changed: Dependency hl7.fhir.uv.extensions.r4 von 5.1.0 auf 5.2.0 aktualisiert (konsistent mit Bildgebung und Laborbefund)
+
+ObservationDefinition:
+- Fixed: Depression T-Score ObsDef – Populationsinformation von `qualifiedInterval.context.coding` nach `qualifiedInterval.appliesTo` verschoben (`context` beschreibt die Intervall-Kategorie, nicht die Zielpopulation)
+
+EORTC QLQ-C30 ValueSet-Architektur:
+- Changed: EORTC QLQ-C30 ValueSets von contained auf standalone external ValueSets umgestellt (Variant A)
+- Added: Post-SUSHI ValueSet-Expansion-Script für LHC Forms Rendering-Kompatibilität
+- Fixed: Display-Texte zu EORTC QLQ-C30 ValueSet-Konzepten hinzugefügt
+
+**Version: 2026.1.0** (unreleased)
+
+Datum: –
+
+PRO-Instrumente:
+- Added: DASS-21 (Depression Anxiety Stress Scales) – vollständige Implementierung mit Questionnaire, Terminologie (CodeSystem, ValueSets), Scoring und Beispielen
+- Added: DASS-21 IG-Dokumentationsseite
+
+Qualitätssicherung:
+- Fixed: ObsDef-Titel entdoppelt, IG-Seite Score-Darstellung verbessert
+- Fixed: Kaputte {{render:infobox}} Syntax durch Markdown-Blockquotes ersetzt (DASS-21, PHQ-9 IG-Seiten)
+- Fixed: CodeSystem/ValueSet auf kurze IDs umgestellt
+
+**Version: 2026.0.1**
+
+Datum: 26.01.2026
+
+Bugfix-Release mit PROMIS-29 Ergänzungen und Canonical-URL-Korrektur.
+
+FHIR-Ressourcen:
+- Added: PROMIS-29 Deutsche Variante und umfassende Beispiele
+- Fixed: PROMIS-29 QuestionnaireResponse Validierungsfehler behoben
+- Fixed: Canonical URLs auf https standardisiert (http → https)
+- Fixed: packageId korrigiert (kerndatensatz.pro → kerndatensatz.pros)
+
+IG-Dokumentation:
+- Changed: PROMIS IG-Seiten reorganisiert und Tree-Rendering gefixt
+- Added: Individuelle Profilseiten für abstrakte Profile
+- Added: SDC STU3 Spec-Links zu Questionnaire- und QR-Profilseiten
+
 **Version: 2026.0.0**
 
 Datum: 12.01.2026

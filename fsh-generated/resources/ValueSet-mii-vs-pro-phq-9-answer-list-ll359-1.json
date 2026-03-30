@@ -6,7 +6,7 @@
   "title": "MII VS PRO PHQ-9 Answer List LL359-1",
   "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1",
-  "version": "2026.0.1",
+  "version": "2026.2.0",
   "experimental": false,
   "language": "de",
   "compose": {
@@ -53,67 +53,6 @@
                 "value": "Sehr stark erschwert"
               }
             ]
-          }
-        ]
-      }
-    ]
-  },
-  "expansion": {
-    "identifier": "urn:uuid:mii-pro-expansion-1774020519840",
-    "timestamp": "2026-03-20T15:28:39.835Z",
-    "total": 4,
-    "parameter": [
-      {
-        "name": "mii-pro-version",
-        "valueString": "2026.0.1"
-      },
-      {
-        "name": "expandedAt",
-        "valueDateTime": "2026-03-20T15:28:39.835Z"
-      }
-    ],
-    "contains": [
-      {
-        "system": "http://loinc.org",
-        "code": "LA6572-7",
-        "display": "Not difficult at all",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Überhaupt nicht erschwert"
-          }
-        ]
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "LA6573-5",
-        "display": "Somewhat difficult",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Etwas erschwert"
-          }
-        ]
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "LA6575-0",
-        "display": "Very difficult",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Relativ stark erschwert"
-          }
-        ]
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "LA6574-3",
-        "display": "Extremely difficult",
-        "designation": [
-          {
-            "language": "de",
-            "value": "Sehr stark erschwert"
           }
         ]
       }
