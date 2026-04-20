@@ -1,0 +1,32 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-pro-ctcae-breast-de",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de",
+  "code": [
+    {
+      "code": "proctcae-breast-de",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PRO-CTCAE German Breast Cancer Subset"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean": true
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "version": "2026.2.0",
+  "name": "MII_QST_PRO_PRO_CTCAE_Breast_DE",
+  "title": "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)",
+  "status": "draft",
+  "experimental": true,
+  "description": "Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events — German breast cancer subset with 21 validated symptoms. Scoring via CQL Library (CompositeGrade per symptom + Average Composite Score)."
+}

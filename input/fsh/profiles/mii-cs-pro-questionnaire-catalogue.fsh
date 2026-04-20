@@ -21,6 +21,8 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #ces-d "Center for Epidemiologic Studies Depression Scale"
 * #k6 "Kessler Psychological Distress Scale"
 * #dass-dass21 "DASS-21 (Depression Anxiety Stress Scales - 21 Items)"
+* #proctcae "PRO-CTCAE (Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events)"
+* #proctcae-breast-de "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"
 
 // TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are 
 // separate entities or part of some bigger PRO framework for proper categorization

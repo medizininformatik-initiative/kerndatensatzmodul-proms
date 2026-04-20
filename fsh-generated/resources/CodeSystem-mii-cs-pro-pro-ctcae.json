@@ -1,0 +1,901 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_PRO_CTCAE",
+  "id": "mii-cs-pro-pro-ctcae",
+  "title": "MII CS PRO PRO-CTCAE Item Library",
+  "description": "CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+  "concept": [
+    {
+      "code": "proctcae-frequency-0",
+      "display": "Never",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Nie"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-frequency-1",
+      "display": "Rarely",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Selten"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-frequency-2",
+      "display": "Occasionally",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Gelegentlich"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-frequency-3",
+      "display": "Frequently",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Häufig"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-frequency-4",
+      "display": "Almost constantly",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Fast immer"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-severity-0",
+      "display": "None",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Gar nicht"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-severity-1",
+      "display": "Mild",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Ein wenig"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-severity-2",
+      "display": "Moderate",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Mäßig"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-severity-3",
+      "display": "Severe",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Ziemlich"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-severity-4",
+      "display": "Very severe",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Sehr"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-interference-0",
+      "display": "Not at all",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Gar nicht"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-interference-1",
+      "display": "A little bit",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Ein wenig"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-interference-2",
+      "display": "Somewhat",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Mäßig"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-interference-3",
+      "display": "Quite a bit",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Ziemlich"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-interference-4",
+      "display": "Very much",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Sehr"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-presence-0",
+      "display": "No",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Nein"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-presence-1",
+      "display": "Yes",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Ja"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-optout-not-applicable",
+      "display": "Not applicable",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Nicht zutreffend"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-optout-not-sexually-active",
+      "display": "Not sexually active",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Nicht sexuell aktiv"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-optout-prefer-not-to-answer",
+      "display": "Prefer not to answer",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Möchte nicht antworten"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-01",
+      "display": "Dry Mouth",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Mundtrockenheit"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "proctcae-01a-sev",
+      "display": "Dry Mouth Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihre MUNDTROCKENHEIT im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-02",
+      "display": "Difficulty Swallowing",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Schwierigkeiten beim Schlucken"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "proctcae-02a-sev",
+      "display": "Difficulty Swallowing Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK waren Ihre SCHWIERIGKEITEN BEIM SCHLUCKEN im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-03",
+      "display": "Mouth or Throat Sores",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wunde oder offene Stellen in Mund oder Hals"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev int"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 6
+        }
+      ]
+    },
+    {
+      "code": "proctcae-03a-sev",
+      "display": "Mouth or Throat Sores Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK hatten Sie WUNDE ODER OFFENE STELLEN IN MUND ODER HALS im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-03b-int",
+      "display": "Mouth or Throat Sores Interference",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie sehr haben WUNDE ODER OFFENE STELLEN IN MUND ODER HALS Sie in Ihren täglichen Aktivitäten GESTÖRT?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-04",
+      "display": "Cracking at Corners of Mouth",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Rissige Mundwinkel"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "proctcae-04a-sev",
+      "display": "Cracking at Corners of Mouth Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK hatten Sie RISSIGE MUNDWINKEL im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-05",
+      "display": "Voice Quality Changes",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Veränderung der Stimme"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "presence"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-05a-yn",
+      "display": "Voice Quality Changes Presence",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Hatten Sie irgendeine VERÄNDERUNG DER STIMME?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-06",
+      "display": "Hoarseness",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Heiserkeit"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "proctcae-06a-sev",
+      "display": "Hoarseness Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihre HEISERKEIT im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-07",
+      "display": "Taste Changes",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Geschmacksveränderungen beim Essen oder Trinken"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "proctcae-07a-sev",
+      "display": "Taste Changes Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK waren Ihre GESCHMACKSVERÄNDERUNGEN BEIM ESSEN ODER TRINKEN im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-08",
+      "display": "Decreased Appetite",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Appetitmangel"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev int"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 6
+        }
+      ]
+    },
+    {
+      "code": "proctcae-08a-sev",
+      "display": "Decreased Appetite Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihr APPETITMANGEL im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-08b-int",
+      "display": "Decreased Appetite Interference",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie sehr hat Ihr APPETITMANGEL Sie in Ihren täglichen Aktivitäten GESTÖRT?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-09",
+      "display": "Nausea",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Übelkeit"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "code": "proctcae-09a-frq",
+      "display": "Nausea Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG hatten Sie ÜBELKEIT?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-09b-sev",
+      "display": "Nausea Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihre ÜBELKEIT im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-10",
+      "display": "Vomiting",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Erbrechen"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "code": "proctcae-10a-frq",
+      "display": "Vomiting Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG mussten Sie ERBRECHEN?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-10b-sev",
+      "display": "Vomiting Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihr ERBRECHEN im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-11",
+      "display": "Heartburn",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Sodbrennen"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "code": "proctcae-11a-frq",
+      "display": "Heartburn Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG hatten Sie SODBRENNEN?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-11b-sev",
+      "display": "Heartburn Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihr SODBRENNEN im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-12",
+      "display": "Increased Flatulence",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Winde lassen (Flatulenz)"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "presence"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-12a-yn",
+      "display": "Increased Flatulence Presence",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Mussten Sie HÄUFIGER WINDE LASSEN (FLATULENZ)?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-13",
+      "display": "Bloating",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Einen geblähten Bauch"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "code": "proctcae-13a-frq",
+      "display": "Bloating Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG hatten Sie EINEN GEBLÄHTEN BAUCH?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-13b-sev",
+      "display": "Bloating Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK GEBLÄHT war Ihr BAUCH im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-14",
+      "display": "Hiccups",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Schluckauf"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "code": "proctcae-14a-frq",
+      "display": "Hiccups Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG hatten Sie SCHLUCKAUF?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-14b-sev",
+      "display": "Hiccups Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihr SCHLUCKAUF im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-15",
+      "display": "Constipation",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Verstopfung"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "proctcae-15a-sev",
+      "display": "Constipation Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihre VERSTOPFUNG im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-16",
+      "display": "Diarrhea",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Durchfall"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 1
+        }
+      ]
+    },
+    {
+      "code": "proctcae-16a-frq",
+      "display": "Diarrhea Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG hatten Sie DURCHFALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-17",
+      "display": "Pain in Abdomen",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Bauchschmerzen"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq sev int"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 7
+        }
+      ]
+    },
+    {
+      "code": "proctcae-17a-frq",
+      "display": "Pain in Abdomen Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG hatten Sie BAUCHSCHMERZEN?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-17b-sev",
+      "display": "Pain in Abdomen Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK waren Ihre BAUCHSCHMERZEN im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-17c-int",
+      "display": "Pain in Abdomen Interference",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie sehr haben BAUCHSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-18",
+      "display": "Fecal Incontinence",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Stuhlgang nicht kontrollieren oder halten können (Stuhlinkontinenz)"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "frq int"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 5
+        }
+      ]
+    },
+    {
+      "code": "proctcae-18a-frq",
+      "display": "Fecal Incontinence Frequency",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie HÄUFIG konnten Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-18b-int",
+      "display": "Fecal Incontinence Interference",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie sehr wurden Sie in Ihren täglichen Aktivitäten GESTÖRT, weil Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN konnten?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-ae-19",
+      "display": "Shortness of Breath",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Kurzatmigkeit"
+        }
+      ],
+      "property": [
+        {
+          "code": "attributes",
+          "valueString": "sev int"
+        },
+        {
+          "code": "rank",
+          "valueInteger": 6
+        }
+      ]
+    },
+    {
+      "code": "proctcae-19a-sev",
+      "display": "Shortness of Breath Severity",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie STARK war Ihre KURZATMIGKEIT im SCHLIMMSTEN FALL?"
+        }
+      ]
+    },
+    {
+      "code": "proctcae-19b-int",
+      "display": "Shortness of Breath Interference",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie sehr hat KURZATMIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?"
+        }
+      ]
+    }
+  ],
+  "version": "2026.2.0",
+  "experimental": true,
+  "caseSensitive": true,
+  "copyright": "PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials.",
+  "property": [
+    {
+      "code": "attributes",
+      "type": "string",
+      "description": "Which item attributes apply to this AE (frq, sev, int, presence)"
+    },
+    {
+      "code": "rank",
+      "type": "integer",
+      "description": "Composite grading rank (1=frq, 2=sev, 3=int, 4=frq+sev, 5=frq+int, 6=sev+int, 7=frq+sev+int)"
+    }
+  ],
+  "count": 69
+}
