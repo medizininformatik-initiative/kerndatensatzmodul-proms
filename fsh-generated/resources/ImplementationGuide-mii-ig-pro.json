@@ -1282,6 +1282,22 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-proctcae-acs"
+        },
+        "name": "PRO-CTCAE Average Composite Score (ACS)",
+        "description": "Average of all PRO-CTCAE composite grades at a given timepoint, reflecting overall symptomatic adverse event burden. Symptoms with opt-out responses are excluded from the average. Range 0.0-3.0 (continuous). ACS = sum(composite grades) / count(scored symptoms).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade"
+        },
+        "name": "PRO-CTCAE Composite Grade",
+        "description": "Composite grade for a single PRO-CTCAE adverse event, computed from frequency, severity, and/or interference scores using the NCI composite grading algorithm (Basch et al., 2021). Range 0-3, mapped to CTCAE grade equivalents. Grade 0 = no symptom, Grade 3 = most severe patient-reported burden. May have dataAbsentReason when patient selected opt-out answers.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-pro-ctcae-breast-de"
         },
         "name": "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)",

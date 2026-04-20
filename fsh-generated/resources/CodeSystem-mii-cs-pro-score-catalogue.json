@@ -155,8 +155,16 @@
     {
       "code": "dass21-stress-equiv",
       "display": "DASS-21 Stress DASS-42 Equivalent Score"
+    },
+    {
+      "code": "proctcae-composite-grade",
+      "display": "PRO-CTCAE Composite Grade (per Adverse Event)"
+    },
+    {
+      "code": "proctcae-acs",
+      "display": "PRO-CTCAE Average Composite Score (ACS)"
     }
   ],
   "version": "2026.2.0",
-  "count": 37
+  "count": 39
 }
