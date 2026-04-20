@@ -24,13 +24,62 @@ parameter frq Integer default null
 parameter sev Integer default null
 parameter intrf Integer default null  // 'int' is reserved in CQL
 
+// Opt-out parameters: set to true when patient selected an opt-out answer
+// These map to FHIR Observation.dataAbsentReason codes
+parameter optOutNotApplicable Boolean default false
+parameter optOutNotSexuallyActive Boolean default false
+parameter optOutPreferNotToAnswer Boolean default false
+
+// ============================================================================
+// Composite Grading Result — Tuple {score, absentReason}
+//
+// Returns a Tuple with:
+//   score:        Integer (0-3) or null if not scorable
+//   absentReason: String matching FHIR dataAbsentReason codes, or null if scored
+//
+// Mapping to FHIR Observation:
+//   score != null  → Observation.valueInteger = score
+//   score == null  → Observation.dataAbsentReason.coding.code = absentReason
+// ============================================================================
+
+define CompositeGradeResult:
+  case
+    // Opt-out: patient selected "Not applicable" (radiation, injection site)
+    when optOutNotApplicable then
+      Tuple { score: null as Integer, absentReason: 'not-applicable' }
+
+    // Opt-out: patient selected "Not sexually active"
+    when optOutNotSexuallyActive then
+      Tuple { score: null as Integer, absentReason: 'not-applicable' }
+
+    // Opt-out: patient selected "Prefer not to answer"
+    when optOutPreferNotToAnswer then
+      Tuple { score: null as Integer, absentReason: 'asked-declined' }
+
+    // All attributes null = item not answered at all
+    when frq is null and sev is null and intrf is null then
+      Tuple { score: null as Integer, absentReason: 'not-performed' }
+
+    // Normal scoring path
+    else
+      Tuple { score: CompositeGrade, absentReason: null as String }
+  end
+
+// Score-only accessor (for backward compatibility and simple use cases)
+define CompositeGradeScore:
+  CompositeGradeResult.score
+
+// AbsentReason-only accessor
+define CompositeGradeAbsentReason:
+  CompositeGradeResult.absentReason
+
 // ============================================================================
 // Composite Grading Algorithm
 // Maps frequency (0-4), severity (0-4), interference (0-4) to grade (0-3)
 // 7 item configurations based on which attributes the AE has
 // ============================================================================
 
-// Main entry point: determines which lookup to use based on which params are present
+// Raw composite grade calculation (no opt-out handling — use CompositeGradeResult instead)
 define CompositeGrade:
   case
     when frq is not null and sev is not null and intrf is not null
@@ -211,8 +260,43 @@ define function CompositeGrade3(f Integer, s Integer, i Integer):
 // Average Composite Score (ACS)
 // Mean of all symptom composite grades at a given timepoint
 // Range: 0.0 - 3.0 (continuous)
-// TODO: Implement when Questionnaire item structure is finalized
+//
+// Opt-out symptoms (score=null) are EXCLUDED from the average, not counted as 0.
+// Example: 21 symptoms, 3 opt-outs → ACS = mean of 18 scores
+//
+// Parameters: List of composite grade results passed from the ETL layer
 // ============================================================================
 
-// define AverageCompositeScore:
-//   Avg(compositeGrades)
+parameter compositeScores List<Integer> default null
+
+define AverageCompositeScore:
+  if compositeScores is null then null
+  else
+    Avg(
+      compositeScores S
+        where S is not null
+        return ToDecimal(S)
+    )
+
+// Count of scored symptoms (for transparency/audit)
+define ScoredSymptomCount:
+  if compositeScores is null then 0
+  else
+    Count(compositeScores S where S is not null)
+
+// Count of excluded symptoms (opt-outs + not answered)
+define ExcludedSymptomCount:
+  if compositeScores is null then 0
+  else
+    Count(compositeScores S where S is null)
+
+// ACS Result with metadata
+define ACSResult:
+  Tuple {
+    score: AverageCompositeScore,
+    scoredCount: ScoredSymptomCount,
+    excludedCount: ExcludedSymptomCount,
+    absentReason:
+      if ScoredSymptomCount = 0 then 'not-performed'
+      else null as String
+  }
