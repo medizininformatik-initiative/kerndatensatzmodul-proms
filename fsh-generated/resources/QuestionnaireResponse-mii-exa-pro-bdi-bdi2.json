@@ -1,0 +1,256 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-bdi-bdi2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.2.0"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q01"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q02"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q03"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q04"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q05"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q06"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q07"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q08"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q09"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q10"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q11"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q12"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q13"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q14"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2a",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q15"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q16"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1a",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q17"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q18"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q19"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q20"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q21"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 19
+        }
+      ],
+      "linkId": "bdi-bdi2-score-total"
+    }
+  ],
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+  "status": "completed",
+  "authored": "2023-10-01T12:00:00Z"
+}

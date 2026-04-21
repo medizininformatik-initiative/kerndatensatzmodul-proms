@@ -1,0 +1,483 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-eortc-qlq-br45",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-br45",
+  "code": [
+    {
+      "code": "eortc-qlq-br45",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "EORTC QLQ-BR45 Breast Cancer Module (Provisional Phase III)"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean": true
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "linkId": "br45-q31",
+          "text": "Did you have a dry mouth?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q32",
+          "text": "Did food and drink taste different from usual?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q33",
+          "text": "Were your eyes painful, irritated or watery?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q34",
+          "text": "Have you lost any hair?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-sys",
+      "text": "Systemic Therapy Side Effects",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "enableWhen": [
+            {
+              "question": "br45-q34",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "not-at-all",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
+              }
+            }
+          ],
+          "linkId": "br45-q35",
+          "text": "Were you upset by the loss of your hair?",
+          "type": "choice",
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-hu",
+      "text": "Upset by Hair Loss",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q36",
+          "text": "Did you feel ill or unwell?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q37",
+          "text": "Did you have hot flushes?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q38",
+          "text": "Did you have headaches?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-sys-cont",
+      "text": "Systemic Therapy Side Effects (continued)",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q39",
+          "text": "Have you felt physically less attractive as a result of your disease or treatment?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q40",
+          "text": "Have you been feeling less feminine as a result of your disease or treatment?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q41",
+          "text": "Did you find it difficult to look at yourself naked?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q42",
+          "text": "Have you been dissatisfied with your body?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-bi",
+      "text": "Body Image",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q43",
+          "text": "Were you worried about your health in the future?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-fu",
+      "text": "Future Perspective",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q44",
+          "text": "To what extent were you interested in sex?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q45",
+          "text": "To what extent were you sexually active (with or without intercourse)?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-sx",
+      "text": "Sexual Functioning",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "enableWhen": [
+            {
+              "question": "br45-q45",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "not-at-all",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
+              }
+            }
+          ],
+          "linkId": "br45-q46",
+          "text": "To what extent was sex enjoyable for you?",
+          "type": "choice",
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-se",
+      "text": "Sexual Enjoyment",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q47",
+          "text": "Did you have any pain in your arm or shoulder?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q48",
+          "text": "Did you have a swollen arm or hand?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q49",
+          "text": "Was it difficult to raise your arm or to move it sideways?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-arm",
+      "text": "Arm Symptoms",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q50",
+          "text": "Did you have any pain in the area of your affected breast?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q51",
+          "text": "Was the area of your affected breast swollen?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q52",
+          "text": "Was the area of your affected breast oversensitive?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q53",
+          "text": "Have you had skin problems on or in the area of your affected breast (e.g., itchy, dry, flaky)?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-br",
+      "text": "Breast Symptoms",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q54",
+          "text": "Did you sweat excessively?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q55",
+          "text": "Did you have mood swings?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q56",
+          "text": "Did you have dizziness?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-et",
+      "text": "Endocrine Therapy Symptoms",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q57",
+          "text": "Did you have a sore mouth?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q58",
+          "text": "Did you have a reddened mouth?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q59",
+          "text": "Did you have pain in your hands or feet?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q60",
+          "text": "Did you have any redness on your hands or feet?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q61",
+          "text": "Did you have tingling in your hands or feet?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q62",
+          "text": "Did you have numbness in your hands or feet?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-sm",
+      "text": "Skin / Mucosis Symptoms",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q63",
+          "text": "Did you have problems with your joints?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q64",
+          "text": "Did you have stiff joints?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q65",
+          "text": "Did you have pain in your joints?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q66",
+          "text": "Did you have aching bones?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q67",
+          "text": "Did you gain weight?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q68",
+          "text": "Did you feel depressed because of your hormonal treatment?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q69",
+          "text": "Did you have problems concentrating?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-et-cont",
+      "text": "Endocrine Therapy Symptoms (continued)",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q70",
+          "text": "Did you have any discomfort in your vagina?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "br45-q45",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "not-at-all",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
+              }
+            }
+          ],
+          "linkId": "br45-q71",
+          "text": "Did you have pain in your vagina during sexual activity?",
+          "type": "choice",
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "br45-q45",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "not-at-all",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
+              }
+            }
+          ],
+          "linkId": "br45-q72",
+          "text": "Did you have a dry vagina during sexual activity?",
+          "type": "choice",
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q73",
+          "text": "Did you have decreased interest in sex due to endocrine therapy?",
+          "type": "choice",
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-es",
+      "text": "Endocrine Sexual Symptoms",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br45-q74",
+          "text": "Were you satisfied with the cosmetic result of surgery?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br45-q75",
+          "text": "Were you satisfied with the appearance of the skin of your affected breast?",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br45-bs",
+      "text": "Breast Satisfaction",
+      "type": "group"
+    }
+  ],
+  "version": "2026.2.0",
+  "name": "MII_QST_PRO_EORTC_QLQ_BR45",
+  "title": "EORTC QLQ-BR45 Breast Cancer Module (Provisional Phase III)",
+  "status": "retired",
+  "experimental": false,
+  "description": "EORTC QLQ-BR45: Provisional Phase III breast cancer quality of life module (45 items, Q31-75, 2020). Designed as supplement to the QLQ-C30. Superseded by QLQ-BR42 (Phase IV, 2024). Retained for historical reference and longitudinal data compatibility. Contains the same 8 scales as BR23 plus Endocrine Therapy Symptoms, Skin/Mucosis Symptoms, Endocrine Sexual Symptoms, and Breast Satisfaction scales.",
+  "copyright": "Copyright EORTC. Available free of charge for academic use."
+}

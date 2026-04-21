@@ -32,24 +32,44 @@ Usage: #definition
 
 * item[=].item[+].linkId = "br42-q31"
 * item[=].item[=].text = "Did you have a dry mouth?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Hatten Sie einen trockenen Mund?"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 
 * item[=].item[+].linkId = "br42-q32"
 * item[=].item[=].text = "Did food and drink taste different from usual?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "War Ihr Geschmacksempfinden beim Essen oder Trinken verändert?"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 
 * item[=].item[+].linkId = "br42-q33"
 * item[=].item[=].text = "Were your eyes painful, irritated or watery?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Schmerzten Ihre Augen, waren diese gereizt oder tränten sie?"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 
 * item[=].item[+].linkId = "br42-q34"
 * item[=].item[=].text = "Have you lost any hair?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Haben Sie Haarausfall?"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
