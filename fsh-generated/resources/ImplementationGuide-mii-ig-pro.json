@@ -187,6 +187,110 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-arm"
+        },
+        "name": "EORTC QLQ-BR42 Arm Symptoms Score",
+        "description": "Arm Symptoms score (Q47-49). Symptom scale: higher = worse symptoms. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-bi"
+        },
+        "name": "EORTC QLQ-BR42 Body Image Score",
+        "description": "Body Image score (Q39-42). Functional scale: higher = better body image. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-bs"
+        },
+        "name": "EORTC QLQ-BR42 Breast Satisfaction Score",
+        "description": "Breast Satisfaction score (Q71-72, reverse scored). Functional scale: higher = more satisfied. New in BR42. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-br"
+        },
+        "name": "EORTC QLQ-BR42 Breast Symptoms Score",
+        "description": "Breast Symptoms score (Q50-53). Symptom scale: higher = worse symptoms. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-es"
+        },
+        "name": "EORTC QLQ-BR42 Endocrine Sexual Symptoms Score",
+        "description": "Endocrine Sexual Symptoms score (Q68-70). Symptom scale: higher = worse symptoms. New in BR42. Q69-70 conditional on sexual activity. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-et"
+        },
+        "name": "EORTC QLQ-BR42 Endocrine Therapy Symptoms Score",
+        "description": "Endocrine Therapy Symptoms score (Q54-56, Q63-66). Symptom scale: higher = worse symptoms. New in BR42 (7 items, reduced from 10 in BR45). Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-fu"
+        },
+        "name": "EORTC QLQ-BR42 Future Perspective Score",
+        "description": "Future Perspective score (Q43). Functional single item: higher = less worry about future health. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-se"
+        },
+        "name": "EORTC QLQ-BR42 Sexual Enjoyment Score",
+        "description": "Sexual Enjoyment score (Q46, reverse scored). Functional single item: higher = more enjoyment. Conditional: only if sexually active. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-sx"
+        },
+        "name": "EORTC QLQ-BR42 Sexual Functioning Score",
+        "description": "Sexual Functioning score (Q44-45, reverse scored). Functional scale: higher = better sexual functioning. Linear transformation 0-100. Recall: past 4 weeks.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-sm"
+        },
+        "name": "EORTC QLQ-BR42 Skin Mucosis Symptoms Score",
+        "description": "Skin/Mucosis Symptoms score (Q57-62). Symptom scale: higher = worse symptoms. New in BR42. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-sys"
+        },
+        "name": "EORTC QLQ-BR42 Systemic Therapy Side Effects Score",
+        "description": "Systemic Therapy Side Effects score (Q31-34, Q36-38). Symptom scale: higher = worse side effects. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-hu"
+        },
+        "name": "EORTC QLQ-BR42 Upset by Hair Loss Score",
+        "description": "Upset by Hair Loss score (Q35). Symptom single item: higher = more upset. Conditional: only if Q34 ≠ 'Not at all'. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-wg"
+        },
+        "name": "EORTC QLQ-BR42 Weight Gain Score",
+        "description": "Weight Gain score (Q67). Symptom single item: higher = more weight gain. New in BR42. Linear transformation 0-100.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"
         },
         "name": "EORTC QLQ-C30 Appetite Loss Score",
