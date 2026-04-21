@@ -203,6 +203,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eortc-qlq-br42"
+        },
+        "name": "EORTC QLQ-BR42 Breast Cancer Module",
+        "description": "EORTC QLQ-BR42: Breast cancer quality of life module (42 items, Q31-72). Phase IV validated update of the QLQ-BR23. Designed as supplement to the QLQ-C30. Contains all 23 original BR23 items plus 19 new items for modern breast cancer therapies.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-eortc-qlq-br42-bs"
         },
         "name": "EORTC QLQ-BR42 Breast Satisfaction Score",

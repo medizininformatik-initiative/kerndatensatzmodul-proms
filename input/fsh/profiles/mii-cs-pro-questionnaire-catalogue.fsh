@@ -21,6 +21,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #ces-d "Center for Epidemiologic Studies Depression Scale"
 * #k6 "Kessler Psychological Distress Scale"
 * #dass-dass21 "DASS-21 (Depression Anxiety Stress Scales - 21 Items)"
+* #eortc-qlq-br42 "EORTC QLQ-BR42 Breast Cancer Module (Update of BR23)"
 
 // TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are 
 // separate entities or part of some bigger PRO framework for proper categorization
