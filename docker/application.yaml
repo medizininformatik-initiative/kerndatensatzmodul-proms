@@ -1,0 +1,22 @@
+hapi:
+  fhir:
+    fhir_version: R4
+
+    # Clinical Reasoning — enables $populate, $extract, CQL/$evaluate
+    cr:
+      enabled: true
+
+    # Install MII PRO IG Package from local .tgz at startup
+    implementationguides:
+      mii_pro:
+        name: de.medizininformatikinitiative.kerndatensatz.pros
+        version: 2026.0.0
+        installMode: STORE_AND_INSTALL
+        packageUrl: file:///app/package.tgz
+        reloadExisting: false
+        fetchDependencies: false
+
+    # Validation
+    validation:
+      enabled: true
+      requests_enabled: false

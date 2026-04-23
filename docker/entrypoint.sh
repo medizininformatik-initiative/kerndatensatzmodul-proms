@@ -1,24 +1,28 @@
 #!/bin/bash
-# Start HAPI in background, preload resources, keep running
+# Start HAPI, wait for IG package install, then load CQL Libraries
 
-# Start HAPI
+# Start HAPI (it will auto-install the IG package from application.yaml)
 java -jar /app/main.war &
 HAPI_PID=$!
 
-# Wait for HAPI to be ready
-echo "Waiting for HAPI FHIR to start..."
+# Wait for HAPI to be ready (IG install happens during startup)
+echo "⏳ Starting HAPI FHIR with MII PRO Package..."
 until curl -sf http://localhost:8080/fhir/metadata > /dev/null 2>&1; do
-  sleep 2
+  sleep 3
 done
-echo "HAPI FHIR is ready. Loading MII PRO resources..."
 
-# Preload all resources
-python3 /app/preload.py
+# Give IG install a moment to complete
+sleep 5
 
-echo "MII PRO HAPI FHIR Server ready!"
+echo "📦 IG Package installed. Loading CQL Libraries..."
+python3 /app/preload-cql.py
+
+echo ""
+echo "═══════════════════════════════════════════════════"
+echo "  MII PRO HAPI FHIR Server ready!"
 echo "  Base URL: http://localhost:8080/fhir"
-echo "  Questionnaires: http://localhost:8080/fhir/Questionnaire"
-echo "  CQL Scoring: POST /fhir/Library/{id}/\$evaluate"
+echo "═══════════════════════════════════════════════════"
+echo ""
 
 # Wait for HAPI process
 wait $HAPI_PID
