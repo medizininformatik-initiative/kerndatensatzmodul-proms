@@ -8,6 +8,8 @@
     "test:phq9": "node verify-scoring.mjs ../input/tests/phq9-scoring.TestScript.json"
   },
   "dependencies": {
+    "cql-exec-fhir": "^2.1.6",
+    "cql-execution": "^3.3.0",
     "fhirpath": "^3.15.0"
   }
 }

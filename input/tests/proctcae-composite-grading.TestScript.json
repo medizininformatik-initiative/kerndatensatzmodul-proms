@@ -1,0 +1,161 @@
+{
+  "resourceType": "TestScript",
+  "id": "proctcae-composite-grading",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/proctcae-composite-grading",
+  "version": "1.0.0",
+  "name": "PROCTCAECompositeGrading",
+  "title": "PRO-CTCAE Composite Grading Algorithm Verification",
+  "status": "active",
+  "description": "Verifies the NCI Composite Grading Algorithm (Basch et al., 2021) implemented in CQL. Tests all 7 rank configurations and boundary conditions.",
+
+  "_testEngine": "cql",
+  "_cqlLibrary": "input/cql/mii-lib-pro-ctcae.cql",
+
+  "test": [
+    {
+      "id": "rank1-frq-only",
+      "name": "Rank 1: Frequency only",
+      "description": "Diarrhea (frq only): frq=0→0, frq=2→1, frq=4→3",
+      "action": [
+        {
+          "_cqlParams": {"frq": 0},
+          "assert": {"description": "frq=0 → grade 0", "expression": "CompositeGrade", "value": "0"}
+        },
+        {
+          "_cqlParams": {"frq": 2},
+          "assert": {"description": "frq=2 → grade 1", "expression": "CompositeGrade", "value": "1"}
+        },
+        {
+          "_cqlParams": {"frq": 4},
+          "assert": {"description": "frq=4 → grade 3", "expression": "CompositeGrade", "value": "3"}
+        }
+      ]
+    },
+    {
+      "id": "rank2-sev-only",
+      "name": "Rank 2: Severity only",
+      "description": "Dry Mouth (sev only): sev=0→0, sev=2→2, sev=4→3",
+      "action": [
+        {
+          "_cqlParams": {"sev": 0},
+          "assert": {"description": "sev=0 → grade 0", "expression": "CompositeGrade", "value": "0"}
+        },
+        {
+          "_cqlParams": {"sev": 2},
+          "assert": {"description": "sev=2 → grade 2", "expression": "CompositeGrade", "value": "2"}
+        },
+        {
+          "_cqlParams": {"sev": 4},
+          "assert": {"description": "sev=4 → grade 3", "expression": "CompositeGrade", "value": "3"}
+        }
+      ]
+    },
+    {
+      "id": "rank3-int-only",
+      "name": "Rank 3: Interference only",
+      "description": "Hair Loss (int only): int=0→0, int=2→1, int=4→2",
+      "action": [
+        {
+          "_cqlParams": {"intrf": 0},
+          "assert": {"description": "int=0 → grade 0", "expression": "CompositeGrade", "value": "0"}
+        },
+        {
+          "_cqlParams": {"intrf": 2},
+          "assert": {"description": "int=2 → grade 1", "expression": "CompositeGrade", "value": "1"}
+        },
+        {
+          "_cqlParams": {"intrf": 4},
+          "assert": {"description": "int=4 → grade 2", "expression": "CompositeGrade", "value": "2"}
+        }
+      ]
+    },
+    {
+      "id": "rank4-frq-sev",
+      "name": "Rank 4: Frequency + Severity",
+      "description": "Nausea (frq+sev): (0,0)→0, (2,2)→2, (4,4)→3",
+      "action": [
+        {
+          "_cqlParams": {"frq": 0, "sev": 0},
+          "assert": {"description": "frq=0,sev=0 → grade 0", "expression": "CompositeGrade", "value": "0"}
+        },
+        {
+          "_cqlParams": {"frq": 2, "sev": 2},
+          "assert": {"description": "frq=2,sev=2 → grade 2", "expression": "CompositeGrade", "value": "2"}
+        },
+        {
+          "_cqlParams": {"frq": 4, "sev": 4},
+          "assert": {"description": "frq=4,sev=4 → grade 3", "expression": "CompositeGrade", "value": "3"}
+        },
+        {
+          "_cqlParams": {"frq": 1, "sev": 3},
+          "assert": {"description": "frq=1,sev=3 → grade 2", "expression": "CompositeGrade", "value": "2"}
+        }
+      ]
+    },
+    {
+      "id": "rank7-frq-sev-int",
+      "name": "Rank 7: Frequency + Severity + Interference",
+      "description": "Pain (frq+sev+int): boundary cases",
+      "action": [
+        {
+          "_cqlParams": {"frq": 0, "sev": 0, "intrf": 0},
+          "assert": {"description": "(0,0,0) → grade 0", "expression": "CompositeGrade", "value": "0"}
+        },
+        {
+          "_cqlParams": {"frq": 1, "sev": 0, "intrf": 0},
+          "assert": {"description": "(1,0,0) → grade 0", "expression": "CompositeGrade", "value": "0"}
+        },
+        {
+          "_cqlParams": {"frq": 1, "sev": 1, "intrf": 1},
+          "assert": {"description": "(1,1,1) → grade 1", "expression": "CompositeGrade", "value": "1"}
+        },
+        {
+          "_cqlParams": {"frq": 2, "sev": 2, "intrf": 2},
+          "assert": {"description": "(2,2,2) → grade 2", "expression": "CompositeGrade", "value": "2"}
+        },
+        {
+          "_cqlParams": {"frq": 3, "sev": 3, "intrf": 3},
+          "assert": {"description": "(3,3,3) → grade 3", "expression": "CompositeGrade", "value": "3"}
+        },
+        {
+          "_cqlParams": {"frq": 4, "sev": 4, "intrf": 4},
+          "assert": {"description": "(4,4,4) → grade 3", "expression": "CompositeGrade", "value": "3"}
+        },
+        {
+          "_cqlParams": {"frq": 1, "sev": 4, "intrf": 2},
+          "assert": {"description": "(1,4,2) → grade 3", "expression": "CompositeGrade", "value": "3"}
+        },
+        {
+          "_cqlParams": {"frq": 4, "sev": 0, "intrf": 4},
+          "assert": {"description": "(4,0,4) → grade 2", "expression": "CompositeGrade", "value": "2"}
+        }
+      ]
+    },
+    {
+      "id": "optout-not-applicable",
+      "name": "Opt-out: Not applicable",
+      "description": "Radiation item with 'Not applicable' → no score, absentReason",
+      "action": [
+        {
+          "_cqlParams": {"optOutNotApplicable": true},
+          "assert": {"description": "Score should be null", "expression": "CompositeGradeScore", "value": "null"}
+        },
+        {
+          "_cqlParams": {"optOutNotApplicable": true},
+          "assert": {"description": "AbsentReason = not-applicable", "expression": "CompositeGradeAbsentReason", "value": "not-applicable"}
+        }
+      ]
+    },
+    {
+      "id": "optout-prefer-not-to-answer",
+      "name": "Opt-out: Prefer not to answer",
+      "description": "Sexual item with 'Prefer not to answer' → asked-declined",
+      "action": [
+        {
+          "_cqlParams": {"optOutPreferNotToAnswer": true},
+          "assert": {"description": "AbsentReason = asked-declined", "expression": "CompositeGradeAbsentReason", "value": "asked-declined"}
+        }
+      ]
+    }
+  ]
+}
