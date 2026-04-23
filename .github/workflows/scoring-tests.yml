@@ -1,0 +1,40 @@
+name: Scoring Behavior Tests
+
+on:
+  push:
+    paths:
+      - 'input/fsh/definitions/**'
+      - 'input/tests/**'
+      - 'input/cql/**'
+      - 'scripts/verify-scoring.mjs'
+  pull_request:
+    paths:
+      - 'input/fsh/definitions/**'
+      - 'input/tests/**'
+      - 'input/cql/**'
+
+jobs:
+  scoring-verification:
+    name: Verify Questionnaire Scoring
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      - name: Generate FHIR resources
+        run: npx sushi .
+
+      - name: Install scoring test dependencies
+        working-directory: scripts
+        run: npm install
+
+      - name: Run scoring behavior tests
+        working-directory: scripts
+        run: npm test
