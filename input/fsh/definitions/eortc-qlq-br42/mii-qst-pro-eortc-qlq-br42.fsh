@@ -83,6 +83,11 @@ Usage: #definition
 
 * item[=].item[+].linkId = "br42-q35"
 * item[=].item[=].text = "Were you upset by the loss of your hair?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Hat Sie der Haarausfall belastet?"
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 * item[=].item[=].enableWhen[+].question = "br42-q34"
@@ -98,18 +103,33 @@ Usage: #definition
 
 * item[=].item[+].linkId = "br42-q36"
 * item[=].item[=].text = "Did you feel ill or unwell?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Fühlten Sie sich krank oder unwohl?"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 
 * item[=].item[+].linkId = "br42-q37"
 * item[=].item[=].text = "Did you have hot flushes?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Hatten Sie Hitzewallungen?"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
 
 * item[=].item[+].linkId = "br42-q38"
 * item[=].item[=].text = "Did you have headaches?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Hatten Sie Kopfschmerzen?"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
