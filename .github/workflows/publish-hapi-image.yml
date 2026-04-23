@@ -29,10 +29,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install SUSHI and build package
+      - name: Build IG Package (SUSHI + CQL bundling)
         run: |
           npm install -g fsh-sushi
           npx sushi .
+          node scripts/bundle-cql.mjs
           mkdir -p output
           cd fsh-generated && tar czf ../output/package.tgz .
 
