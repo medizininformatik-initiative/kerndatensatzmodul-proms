@@ -1,0 +1,247 @@
+{
+  "resourceType": "TestScript",
+  "id": "phq9-scoring-behavior",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/phq9-scoring-behavior",
+  "version": "1.0.0",
+  "name": "PHQ9ScoringBehavior",
+  "title": "PHQ-9 Scoring Behavior Verification",
+  "status": "active",
+  "description": "Verifies PHQ-9 scoring behavior: total score calculation (0-27), severity classification cut-offs, and PROMIS Depression T-Score crosswalk. Tests are run against a HAPI FHIR server with CR=true and the PHQ-9 Questionnaire loaded.",
+
+  "fixture": [
+    {
+      "id": "questionnaire",
+      "resource": {
+        "reference": "Questionnaire/mii-qst-pro-phq-9"
+      }
+    }
+  ],
+
+  "test": [
+    {
+      "id": "test-min-score",
+      "name": "Minimal Score (all zeros)",
+      "description": "All 9 items answered with 0 (Not at all) → Total Score = 0, PROMIS T-Score = 37.4",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-min-score",
+            "description": "Submit QR with all items = 0"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 0",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "0"
+          }
+        },
+        {
+          "assert": {
+            "description": "PROMIS T-Score should be 37.4",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-promis-tscore').answer.value.first()",
+            "value": "37.4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-max-score",
+      "name": "Maximum Score (all threes)",
+      "description": "All 9 items answered with 3 (Nearly every day) → Total Score = 27, PROMIS T-Score = 82.3",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-max-score",
+            "description": "Submit QR with all items = 3"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 27",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "27"
+          }
+        },
+        {
+          "assert": {
+            "description": "PROMIS T-Score should be 82.3",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-promis-tscore').answer.value.first()",
+            "value": "82.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-cutoff-none-minimal",
+      "name": "Cut-off: None/Minimal (score 4)",
+      "description": "Total Score = 4 → Severity: None/Minimal (0-4), PROMIS T-Score = 50.5",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-score-4",
+            "description": "Submit QR with total = 4"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 4",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "4"
+          }
+        },
+        {
+          "assert": {
+            "description": "PROMIS T-Score for score=4 should be 50.5",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-promis-tscore').answer.value.first()",
+            "value": "50.5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-cutoff-mild",
+      "name": "Cut-off: Mild depression (score 5)",
+      "description": "Total Score = 5 → Severity: Mild (5-9), PROMIS T-Score = 52.5",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-score-5",
+            "description": "Submit QR with total = 5"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 5",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-cutoff-moderate",
+      "name": "Cut-off: Moderate depression (score 10)",
+      "description": "Total Score = 10 → Severity: Moderate (10-14), PROMIS T-Score = 59.9",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-score-10",
+            "description": "Submit QR with total = 10"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 10",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "10"
+          }
+        },
+        {
+          "assert": {
+            "description": "PROMIS T-Score for score=10 should be 59.9",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-promis-tscore').answer.value.first()",
+            "value": "59.9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-cutoff-moderately-severe",
+      "name": "Cut-off: Moderately severe depression (score 15)",
+      "description": "Total Score = 15 → Severity: Moderately Severe (15-19), PROMIS T-Score = 65.8",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-score-15",
+            "description": "Submit QR with total = 15"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 15",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "15"
+          }
+        },
+        {
+          "assert": {
+            "description": "PROMIS T-Score for score=15 should be 65.8",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-promis-tscore').answer.value.first()",
+            "value": "65.8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-cutoff-severe",
+      "name": "Cut-off: Severe depression (score 20)",
+      "description": "Total Score = 20 → Severity: Severe (20-27), PROMIS T-Score = 71.5",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-score-20",
+            "description": "Submit QR with total = 20"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 20",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "20"
+          }
+        },
+        {
+          "assert": {
+            "description": "PROMIS T-Score for score=20 should be 71.5",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-promis-tscore').answer.value.first()",
+            "value": "71.5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "test-mixed-answers",
+      "name": "Mixed answers (realistic patient response)",
+      "description": "Q1=2, Q2=1, Q3=2, Q4=3, Q5=1, Q6=0, Q7=1, Q8=2, Q9=0 → Total = 12, PROMIS T-Score = 62.3",
+      "action": [
+        {
+          "operation": {
+            "type": { "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes", "code": "create" },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-mixed",
+            "description": "Submit QR with realistic mixed answers"
+          }
+        },
+        {
+          "assert": {
+            "description": "Total score should be 12",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-score-total').answer.value.first()",
+            "value": "12"
+          }
+        },
+        {
+          "assert": {
+            "description": "PROMIS T-Score for score=12 should be 62.3",
+            "expression": "QuestionnaireResponse.item.where(linkId='phq-phq9-promis-tscore').answer.value.first()",
+            "value": "62.3"
+          }
+        }
+      ]
+    }
+  ]
+}

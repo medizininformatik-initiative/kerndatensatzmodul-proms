@@ -1,0 +1,668 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-eortc-qlq-br23",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-br23",
+  "code": [
+    {
+      "code": "eortc-qlq-br23",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "EORTC QLQ-BR23 Breast Cancer Module (Original)"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean": true
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "linkId": "br23-q01",
+          "text": "Did you have a dry mouth?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hatten Sie einen trockenen Mund?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q02",
+          "text": "Did food and drink taste different from usual?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "War Ihr Geschmacksempfinden beim Essen oder Trinken verändert?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q03",
+          "text": "Were your eyes painful, irritated or watery?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Schmerzten Ihre Augen, waren diese gereizt oder tränten sie?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q04",
+          "text": "Have you lost any hair?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Haben Sie Haarausfall?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brst",
+      "text": "Systemic Therapy Side Effects",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "enableWhen": [
+            {
+              "question": "br23-q04",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "not-at-all",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
+              }
+            }
+          ],
+          "linkId": "br23-q05",
+          "text": "Were you upset by the loss of your hair?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hat Sie der Haarausfall belastet?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brhl",
+      "text": "Upset by Hair Loss",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br23-q06",
+          "text": "Did you feel ill or unwell?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Fühlten Sie sich krank oder unwohl?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q07",
+          "text": "Did you have hot flushes?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hatten Sie Hitzewallungen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q08",
+          "text": "Did you have headaches?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hatten Sie Kopfschmerzen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brst-cont",
+      "text": "Systemic Therapy Side Effects (continued)",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br23-q09",
+          "text": "Have you felt physically less attractive as a result of your disease or treatment?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Fühlten Sie sich wegen Ihrer Erkrankung oder Behandlung körperlich weniger anziehend?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q10",
+          "text": "Have you been feeling less feminine as a result of your disease or treatment?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Fühlten Sie sich wegen Ihrer Erkrankung oder Behandlung weniger weiblich?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q11",
+          "text": "Did you find it difficult to look at yourself naked?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Fanden Sie es schwierig, sich nackt anzusehen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q12",
+          "text": "Have you been dissatisfied with your body?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Waren Sie mit Ihrem Körper unzufrieden?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brbi",
+      "text": "Body Image",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br23-q13",
+          "text": "Were you worried about your health in the future?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Waren Sie wegen Ihres zukünftigen Gesundheitszustandes besorgt?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brfu",
+      "text": "Future Perspective",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br23-q14",
+          "text": "To what extent were you interested in sex?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Wie sehr waren Sie an Sex interessiert?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q15",
+          "text": "To what extent were you sexually active (with or without intercourse)?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Wie sehr waren Sie sexuell aktiv (mit oder ohne Geschlechtsverkehr)?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brsef",
+      "text": "Sexual Functioning",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "enableWhen": [
+            {
+              "question": "br23-q15",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "not-at-all",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"
+              }
+            }
+          ],
+          "linkId": "br23-q16",
+          "text": "To what extent was sex enjoyable for you?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Wie weit hatten Sie Freude an Sex?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brsee",
+      "text": "Sexual Enjoyment",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br23-q17",
+          "text": "Did you have any pain in your arm or shoulder?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hatten Sie Schmerzen in Arm oder Schulter?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q18",
+          "text": "Did you have a swollen arm or hand?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "War Ihr Arm oder Ihre Hand geschwollen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q19",
+          "text": "Was it difficult to raise your arm or to move it sideways?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "War das Heben oder Seitwärtsbewegen des Arms erschwert?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-bras",
+      "text": "Arm Symptoms",
+      "type": "group"
+    },
+    {
+      "item": [
+        {
+          "linkId": "br23-q20",
+          "text": "Did you have any pain in the area of your affected breast?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hatten Sie im Bereich der betroffenen Brust Schmerzen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q21",
+          "text": "Was the area of your affected breast swollen?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "War der Bereich Ihrer betroffenen Brust angeschwollen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q22",
+          "text": "Was the area of your affected breast oversensitive?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "War der Bereich der betroffenen Brust überempfindlich?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        {
+          "linkId": "br23-q23",
+          "text": "Have you had skin problems on or in the area of your affected breast (e.g., itchy, dry, flaky)?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hatten Sie Hautprobleme im Bereich der betroffenen Brust (z. B. juckende, trockene oder schuppende Haut)?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        }
+      ],
+      "linkId": "br23-brbs",
+      "text": "Breast Symptoms",
+      "type": "group"
+    }
+  ],
+  "version": "2026.2.0",
+  "name": "MII_QST_PRO_EORTC_QLQ_BR23",
+  "title": "EORTC QLQ-BR23 Breast Cancer Module (Original)",
+  "status": "active",
+  "experimental": false,
+  "description": "EORTC QLQ-BR23: Original 23-item breast cancer quality of life module (1996). Designed as supplement to the QLQ-C30. Superseded by QLQ-BR42 (Phase IV, 2024) but still widely used in clinical practice and for longitudinal data compatibility. Contains 8 scales: Systemic Therapy Side Effects, Upset by Hair Loss, Body Image, Future Perspective, Sexual Functioning, Sexual Enjoyment, Arm Symptoms, Breast Symptoms.",
+  "copyright": "Copyright EORTC. Available free of charge for academic use."
+}

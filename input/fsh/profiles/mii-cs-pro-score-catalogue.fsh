@@ -68,3 +68,22 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 * #dass21-depression-equiv "DASS-21 Depression DASS-42 Equivalent Score"
 * #dass21-anxiety-equiv "DASS-21 Anxiety DASS-42 Equivalent Score"
 * #dass21-stress-equiv "DASS-21 Stress DASS-42 Equivalent Score"
+
+// EORTC QLQ-BR42 Functional Scales (higher = better functioning)
+* #eortc-qlq-br42-bi "EORTC QLQ-BR42 Body Image Score"
+* #eortc-qlq-br42-fu "EORTC QLQ-BR42 Future Perspective Score"
+* #eortc-qlq-br42-sx "EORTC QLQ-BR42 Sexual Functioning Score"
+* #eortc-qlq-br42-se "EORTC QLQ-BR42 Sexual Enjoyment Score"
+* #eortc-qlq-br42-bs "EORTC QLQ-BR42 Breast Satisfaction Score"
+
+// EORTC QLQ-BR42 Symptom Scales (higher = worse symptoms)
+* #eortc-qlq-br42-sys "EORTC QLQ-BR42 Systemic Therapy Side Effects Score"
+* #eortc-qlq-br42-hu "EORTC QLQ-BR42 Upset by Hair Loss Score"
+* #eortc-qlq-br42-arm "EORTC QLQ-BR42 Arm Symptoms Score"
+* #eortc-qlq-br42-br "EORTC QLQ-BR42 Breast Symptoms Score"
+* #eortc-qlq-br42-et "EORTC QLQ-BR42 Endocrine Therapy Symptoms Score"
+* #eortc-qlq-br42-sm "EORTC QLQ-BR42 Skin Mucosis Symptoms Score"
+* #eortc-qlq-br42-es "EORTC QLQ-BR42 Endocrine Sexual Symptoms Score"
+
+// EORTC QLQ-BR42 Single Items (higher = worse)
+* #eortc-qlq-br42-wg "EORTC QLQ-BR42 Weight Gain Score"

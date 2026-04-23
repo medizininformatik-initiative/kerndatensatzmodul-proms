@@ -1,0 +1,74 @@
+name: Scoring Behavior Tests
+
+on:
+  push:
+    paths:
+      - 'input/fsh/definitions/**'
+      - 'input/tests/**'
+      - 'input/cql/**'
+      - 'scripts/verify-scoring.mjs'
+  pull_request:
+    paths:
+      - 'input/fsh/definitions/**'
+      - 'input/tests/**'
+      - 'input/cql/**'
+
+jobs:
+  scoring-verification:
+    name: Verify Questionnaire Scoring
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      - name: Generate FHIR resources
+        run: npx sushi .
+
+      - name: Install scoring test dependencies
+        working-directory: scripts
+        run: npm install
+
+      - name: Run headless scoring tests
+        working-directory: scripts
+        run: npm test
+
+  hapi-cql-integration:
+    name: CQL Scoring on HAPI CR
+    runs-on: ubuntu-latest
+    services:
+      hapi:
+        image: hapiproject/hapi:latest
+        env:
+          hapi.fhir.cr.enabled: "true"
+          hapi.fhir.fhir_version: R4
+        ports:
+          - 8080:8080
+        options: >-
+          --health-cmd "curl -sf http://localhost:8080/fhir/metadata || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: npm install
+
+      - name: Run CQL integration tests against HAPI
+        working-directory: scripts
+        env:
+          HAPI_BASE_URL: http://localhost:8080/fhir
+        run: node verify-cql-hapi.mjs
