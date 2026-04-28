@@ -55,7 +55,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "Kessler Psychological Distress Scale (K6)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-28T19:07:24+00:00",
+  "date" : "2026-04-28T19:22:30+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

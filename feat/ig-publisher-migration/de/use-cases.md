@@ -51,8 +51,6 @@ Nach Abschluss des Fragebogens:
 * Ergebnisse werden im KIS dargestellt und im Gespräch besprochen
 * Scores und Interpretation werden im Entlassbericht dokumentiert
 
-![Sequenzdiagramm Use Case 1](UseCase 1 ePRO Collection.png)
-
 **Abgeleitete Anforderungen:**
 
 * Fragebogendefinition als Vorlage (FHIR Questionnaire)
@@ -73,8 +71,6 @@ Dr. Schmidt hat in mehreren Forschungsprojekten mit dem PHQ-9 gearbeitet. Es lie
 
 Frau Dirsch vom Datenintegrationszentrum harmonisiert diese heterogenen Datenquellen in ein einheitliches FHIR-Format.
 
-![Sequenzdiagramm Use Case 2](UseCase 2 local harmonization.png)
-
 **Abgeleitete Anforderungen:**
 
 * Öffentlich verfügbare Fragebogenvorlage als Mapping-Target
@@ -88,8 +84,6 @@ Frau Dirsch vom Datenintegrationszentrum harmonisiert diese heterogenen Datenque
 Dr. Schmidt betreut ein Verbundprojekt "Depressive Erkrankungen und Burnout im Home-Office". Alle beteiligten Krankenhäuser nutzen den PHQ-9, aber mit unterschiedlichen ePROM-Systemen.
 
 Die Harmonisierung erfolgt über die Datenintegrationszentren mit standardisierten FHIR-Profilen.
-
-![Sequenzdiagramm Use Case 3](UseCase3 interhospital harmonization.png)
 
 **Abgeleitete Anforderungen:**
 
@@ -114,8 +108,6 @@ Cross-Domain-Mapping auf gemeinsame Depressionsdomäne durch:
 
 * Score-based Mapping: Direkte Umrechnung der Scores (z.B. Lookup-Tabellen)
 * Item-based Mapping: Neuberechnung aus einzelnen Antworten
-
-![Sequenzdiagramm Use Case 4](UseCase 4 cross-domain harmonization.png)
 
 **Abgeleitete Anforderungen:**
 

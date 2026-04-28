@@ -14,7 +14,7 @@
   "version" : "2026.2.0",
   "title" : "ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation",
   "status" : "active",
-  "date" : "2026-04-28T19:07:24+00:00",
+  "date" : "2026-04-28T19:22:30+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

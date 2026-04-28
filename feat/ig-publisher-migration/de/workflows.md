@@ -55,8 +55,6 @@ Der Standard-Workflow orientiert sich an der FHIR-Kernspezifikation und den vorg
 1. Üblicherweise füllt ein Patient einen Fragebogen, der als FHIR Questionnaire (Q) definiert ist und über ein User Interface (UI) angezeigt wird, aus
 1. Die eingegebenen Antworten werden danach als FHIR QuestionnaireResponse (QR) gespeichert, wenn vorgesehen ein Score ermittelt
 
-![MII PRO Workflow-Pattern: Standard](Workflow_Standard.svg)
-
 **Verwendete Capabilities**: displayable, collectable
 
 **Beispiel**: Erhebung von Symptomschwere mit EORTC-QLQ-Fragebögen begleitend zu und folgend auf eine/r Strahlentherapie/Systemtherapie-Behandlung in der Onkologie
@@ -74,8 +72,6 @@ Dieses Workflow-Pattern fokussiert eine direkte, d.h. nicht zeitversetzte, Beant
 1. Optional werden die Antworten und der berechnete Score auf einem Server, z.B. FHIR Server, für die Weiterverarbeitung gespeichert
 1. Der berechnete Score wird dem Patienten sofort im UI angezeigt
 
-![MII PRO Workflow-Pattern: Capability-basierte Variante, Echtzeit-Berechnung](Workflow_Capability-Echtzeit.svg)
-
 **Verwendete Capabilities:** `[collectable, calculatable, displayable, extractable]`
 
 **Beispiel**: DiGA-Smartphone-App mit In-App-Scoreberechnung
@@ -92,8 +88,6 @@ Dieses Workflow-Pattern fokussiert die alleinige Beantwortung eines Fragebogens 
 1. Anschließend werden die Antworten, ggf. eine Information zum ausgefüllten Fragebogen, an den Server gesendet
 1. Der Server berechnet anhand der definierten Score-Berechnungsvorschrift den Score und extrahiert ggf. relevante Antworten als eigenständiges Datum
 1. Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert
-
-![MII PRO Workflow-Pattern: Capability-basierte Variante, Server-Berechnung](Workflow_Capability-Server.svg)
 
 **Verwendete Capabilities:**
 
@@ -114,8 +108,6 @@ Dieses Workflow-Pattern beschreibt die erneute, ggf. über einen Dienst automati
 1. Der Dienst lädt den zugrunde liegenden Fragebogen und die Score-Berechnungsvorschriften
 1. Der Dienst berechnet anhand der neuen Score-Berechnungsvorschrift den Score
 1. Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert
-
-![MII PRO Workflow-Pattern: Capability-basierte Variante, Historische Neuberechnung](Workflow_Capability-Historisch.svg)
 
 **Verwendete Capabilities:** `[populatable, calculatable, extractable]`
 
@@ -158,11 +150,7 @@ Im Zusammenhang mit der Versorgung eines Patienten findet eine reine Datenerfass
 
 Anhand der verschiedenen Workflow-Patterns wird ersichtlich, dass unterschiedliche Repräsentationsformen für die Darstellung eines Scores existieren.
 
-![MII PRO Workflow-Pattern: Score Repräsentationsebenen](Workflow_Score_Repraesentation.svg)
-
 Die grundlegende Repräsentationsform für einen berechneten Score ist die Abbildung als eigenständiges Item in einem FHIR QuestionnaireResponse. Falls für die weiterführenden Analysen nur der Score und nicht die tatsächlichen Antworten relevant sind, lässt sich der berechnete Score aus dem FHIR QuestionnaireResponse extrahieren und als FHIR Observation darstellen. Ein auf diese Weise extrahierter und gespeicherter Score kann, sofern empirisch validierte Regeln zum Mapping auf einen domänenspezifischen T-Score existieren und definiert wurden, auf den domänenspezifischen T-Score abbilden.
-
-![MII PRO Domain Mapping-Patterns](Workflow_Domain_Mapping.svg)
 
 Auf diese Weise kann eine Instrument-unabhängige Auswertung und ein domänenspezifischer Vergleich der erhobenen Daten durchgeführt werden.
 

@@ -16,8 +16,6 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 Das Informationsmodell besteht aus vier Hauptkomponenten, die miteinander interagieren, um den vollständigen Lebenszyklus von Patient-Reported Outcomes abzubilden:
 
-![MII PRO Übersicht Informationsmodell](MII_PRO_Informationsmodell_Compact.svg)
-
 Das vollständige Informationsmodell kann im [Github-Repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg) betrachtet werden.
 
 **Legende**
@@ -43,8 +41,6 @@ Die UML-Diagramme verwenden folgende Notationen:
 
 Die Fragebogen-Vorlage definiert die Struktur und den Inhalt eines PRO-Instruments. Sie enthält alle notwendigen Informationen zur Darstellung, Erfassung und Auswertung der Fragen.
 
-![MII PRO Fragebogen-Struktur](MII_PRO_Fragebögen.png)
-
 **FHIR-Mapping**: Die Fragebogen-Vorlage wird auf die FHIR-Ressource `Questionnaire` gemappt. Die hierarchische Struktur der Fragen wird durch `Questionnaire.item` abgebildet, während Antwortoptionen in `answerOption` definiert werden.
 
 -------
@@ -53,8 +49,6 @@ Die Fragebogen-Vorlage definiert die Struktur und den Inhalt eines PRO-Instrumen
 
 Der ausgefüllte Fragebogen erfasst die konkreten Antworten eines Patienten zu einem bestimmten Zeitpunkt. Er referenziert die zugrundeliegende Fragebogen-Vorlage und speichert die gegebenen Antworten strukturiert ab.
 
-![MII PRO Ausgefüllte Fragebögen](MII_PROMs_Fragebögen_ausgefüllt.png)
-
 **FHIR-Mapping**: Der ausgefüllte Fragebogen wird auf `QuestionnaireResponse` gemappt. Die einzelnen Antworten werden in `QuestionnaireResponse.item.answer` gespeichert, wobei verschiedene Datentypen unterstützt werden.
 
 -------
@@ -62,8 +56,6 @@ Der ausgefüllte Fragebogen erfasst die konkreten Antworten eines Patienten zu e
 ### Komponente: Scores
 
 Die Score-Komponente umfasst sowohl die Definition von Berechnungsalgorithmen (Score-Vorlage) als auch die konkreten berechneten Werte (Score-Instanz). Sie unterstützt verschiedene Berechnungsarten und ermöglicht Mappings zwischen unterschiedlichen Scoring-Systemen.
-
-![MII PRO Score-Struktur](MII_PROMs_Scores.png)
 
 **Unterscheidung der Score-Typen**:
 
@@ -81,8 +73,6 @@ Die Score-Komponente umfasst sowohl die Definition von Berechnungsalgorithmen (S
 ### Komponente: Domänen
 
 Domänen klassifizieren PRO-Scores nach Gesundheitsbereichen und ermöglichen die Einordnung in übergeordnete Konzepte. Sie definieren Skalierungen und Referenzwerte für die Interpretation der Scores.
-
-![MII PRO Domänen-Struktur](MII_PROMs_Domäne.png)
 
 **FHIR-Mapping**: Domänen werden primär durch Terminologie-Ressourcen (`CodeSystem`, `ValueSet`) und Metadaten in den Score-Definitionen abgebildet.
 

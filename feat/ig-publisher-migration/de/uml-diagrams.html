@@ -282,8 +282,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Das Informationsmodell besteht aus vier Hauptkomponenten, die miteinander interagieren, um den vollständigen Lebenszyklus von Patient-Reported Outcomes abzubilden:</p>
 
-<div style="text-align: center;">
-![MII PRO Übersicht Informationsmodell](MII_PRO_Informationsmodell_Compact.svg)
+<div style="text-align: center;"><a name="l505">​</a>
+<img src="MII_PRO_Informationsmodell_Compact.svg" alt="MII PRO Übersicht Informationsmodell" width="25%"/>
 </div>
 
 <p>Das vollständige Informationsmodell kann im <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg">Github-Repository</a> betrachtet werden.</p>
@@ -317,8 +317,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Die Fragebogen-Vorlage definiert die Struktur und den Inhalt eines PRO-Instruments. Sie enthält alle notwendigen Informationen zur Darstellung, Erfassung und Auswertung der Fragen.</p>
 
-<div style="text-align: center;">
-![MII PRO Fragebogen-Struktur](MII_PRO_Fragebögen.png)
+<div style="text-align: center;"><a name="l587">​</a>
+<img src="MII_PRO_Fragebögen.png" alt="MII PRO Fragebogen-Struktur" width="100%"/>
 </div>
 
 <p><strong>FHIR-Mapping</strong>: Die Fragebogen-Vorlage wird auf die FHIR-Ressource <code class="language-plaintext highlighter-rouge">Questionnaire</code> gemappt. Die hierarchische Struktur der Fragen wird durch <code class="language-plaintext highlighter-rouge">Questionnaire.item</code> abgebildet, während Antwortoptionen in <code class="language-plaintext highlighter-rouge">answerOption</code> definiert werden.</p>
@@ -329,8 +329,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Der ausgefüllte Fragebogen erfasst die konkreten Antworten eines Patienten zu einem bestimmten Zeitpunkt. Er referenziert die zugrundeliegende Fragebogen-Vorlage und speichert die gegebenen Antworten strukturiert ab.</p>
 
-<div style="text-align: center;">
-![MII PRO Ausgefüllte Fragebögen](MII_PROMs_Fragebögen_ausgefüllt.png)
+<div style="text-align: center;"><a name="l614">​</a>
+<img src="MII_PROMs_Fragebögen_ausgefüllt.png" alt="MII PRO Ausgefüllte Fragebögen" width="70%"/>
 </div>
 
 <p><strong>FHIR-Mapping</strong>: Der ausgefüllte Fragebogen wird auf <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code> gemappt. Die einzelnen Antworten werden in <code class="language-plaintext highlighter-rouge">QuestionnaireResponse.item.answer</code> gespeichert, wobei verschiedene Datentypen unterstützt werden.</p>
@@ -341,8 +341,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Die Score-Komponente umfasst sowohl die Definition von Berechnungsalgorithmen (Score-Vorlage) als auch die konkreten berechneten Werte (Score-Instanz). Sie unterstützt verschiedene Berechnungsarten und ermöglicht Mappings zwischen unterschiedlichen Scoring-Systemen.</p>
 
-<div style="text-align: center;">
-![MII PRO Score-Struktur](MII_PROMs_Scores.png)
+<div style="text-align: center;"><a name="l638">​</a>
+<img src="MII_PROMs_Scores.png" alt="MII PRO Score-Struktur" width="100%"/>
 </div>
 
 <p><strong>Unterscheidung der Score-Typen</strong>:</p>
@@ -364,8 +364,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Domänen klassifizieren PRO-Scores nach Gesundheitsbereichen und ermöglichen die Einordnung in übergeordnete Konzepte. Sie definieren Skalierungen und Referenzwerte für die Interpretation der Scores.</p>
 
-<div style="text-align: center;">
-![MII PRO Domänen-Struktur](MII_PROMs_Domäne.png)
+<div style="text-align: center;"><a name="l694">​</a>
+<img src="MII_PROMs_Domäne.png" alt="MII PRO Domänen-Struktur" width="100%"/>
 </div>
 
 <p><strong>FHIR-Mapping</strong>: Domänen werden primär durch Terminologie-Ressourcen (<code class="language-plaintext highlighter-rouge">CodeSystem</code>, <code class="language-plaintext highlighter-rouge">ValueSet</code>) und Metadaten in den Score-Definitionen abgebildet.</p>
@@ -412,7 +412,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-04-28 19:07:00 +0000">
+  <span title="2026-04-28 19:22:00 +0000">
     2026-04-28
   </span>
 

@@ -48,8 +48,6 @@ After completing the questionnaire:
 * Results are displayed in the HIS and discussed during the interview
 * Scores and interpretation are documented in the discharge report
 
-![Sequence Diagram Use Case 1](UseCase 1 ePRO Collection.png)
-
 **Derived Requirements:**
 
 * Questionnaire definition as a template (FHIR Questionnaire)
@@ -70,8 +68,6 @@ Dr. Schmidt has worked with the PHQ-9 in several research projects. Extensive PH
 
 Ms. Dirsch from the Data Integration Center harmonizes these heterogeneous data sources into a unified FHIR format.
 
-![Sequence Diagram Use Case 2](UseCase 2 local harmonization.png)
-
 **Derived Requirements:**
 
 * Publicly available questionnaire template as a mapping target
@@ -85,8 +81,6 @@ Ms. Dirsch from the Data Integration Center harmonizes these heterogeneous data 
 Dr. Schmidt leads a collaborative project "Depressive Disorders and Burnout in Home Office". All participating hospitals use the PHQ-9, but with different ePROM systems.
 
 Harmonization is carried out through the Data Integration Centers using standardized FHIR profiles.
-
-![Sequence Diagram Use Case 3](UseCase3 interhospital harmonization.png)
 
 **Derived Requirements:**
 
@@ -111,8 +105,6 @@ Cross-domain mapping to a shared depression domain through:
 
 * Score-based mapping: Direct conversion of scores (e.g., lookup tables)
 * Item-based mapping: Recalculation from individual answers
-
-![Sequence Diagram Use Case 4](UseCase 4 cross-domain harmonization.png)
 
 **Derived Requirements:**
 
