@@ -46,7 +46,7 @@ The standard workflow follows the FHIR core specification and the designated FHI
 2. The entered answers are then saved as a FHIR QuestionnaireResponse (QR), and a score is determined if applicable
 
 <div style="text-align: center;">
-![MII PRO Workflow Pattern: Standard](Workflow_Standard.svg)
+<img src="Workflow_Standard.svg" alt="MII PRO Workflow Pattern: Standard" width="40%"/>
 </div>
 
 **Capabilities used**: displayable, collectable
@@ -67,7 +67,7 @@ This workflow pattern focuses on direct, i.e., non-delayed, completion of a ques
 4. The calculated score is immediately displayed to the patient in the UI
 
 <div style="text-align: center;">
-![MII PRO Workflow Pattern: Capability-Based Variant, Real-Time Calculation](Workflow_Capability-Echtzeit.svg)
+<img src="Workflow_Capability-Echtzeit.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Real-Time Calculation" width="40%"/>
 </div>
 
 **Capabilities used:** `[collectable, calculatable, displayable, extractable]`
@@ -88,7 +88,7 @@ This workflow pattern focuses on the sole completion of a questionnaire via a us
 4. The calculated and extracted data are stored, e.g., on a FHIR server
 
 <div style="text-align: center;">
-![MII PRO Workflow Pattern: Capability-Based Variant, Server-Side Calculation](Workflow_Capability-Server.svg)
+<img src="Workflow_Capability-Server.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Server-Side Calculation" width="50%"/>
 </div>
 
 **Capabilities used:**
@@ -112,7 +112,7 @@ This workflow pattern describes the renewed, potentially automated, score calcul
 4. The calculated and extracted data are stored, e.g., on a FHIR server
 
 <div style="text-align: center;">
-![MII PRO Workflow Pattern: Capability-Based Variant, Historical Recalculation](Workflow_Capability-Historisch.svg)
+<img src="Workflow_Capability-Historisch.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Historical Recalculation" width="40%"/>
 </div>
 
 **Capabilities used:** `[populatable, calculatable, extractable]`
@@ -157,13 +157,13 @@ In the context of patient care, pure data collection without calculations takes 
 The various workflow patterns demonstrate that different forms of representation exist for displaying a score.
 
 <div style="text-align: center;">
-![MII PRO Workflow Pattern: Score Representation Layers](Workflow_Score_Repraesentation.svg)
+<img src="Workflow_Score_Repraesentation.svg" alt="MII PRO Workflow Pattern: Score Representation Layers" width="60%"/>
 </div>
 
 The fundamental representation form for a calculated score is its mapping as an independent item in a FHIR QuestionnaireResponse. If only the score and not the actual answers are relevant for further analyses, the calculated score can be extracted from the FHIR QuestionnaireResponse and represented as a FHIR Observation. A score extracted and stored in this way can, provided empirically validated rules for mapping to a domain-specific T-score exist and have been defined, be mapped to the domain-specific T-score.
 
 <div style="text-align: center;">
-![MII PRO Domain Mapping Patterns](Workflow_Domain_Mapping.svg)
+<img src="Workflow_Domain_Mapping.svg" alt="MII PRO Domain Mapping Patterns" width="30%"/>
 </div>
 
 In this way, an instrument-independent evaluation and a domain-specific comparison of the collected data can be performed.

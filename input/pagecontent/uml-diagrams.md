@@ -10,7 +10,7 @@
 The information model consists of four main components that interact to represent the complete lifecycle of Patient-Reported Outcomes:
 
 <div style="text-align: center;">
-![MII PRO Information Model Overview](MII_PRO_Informationsmodell_Compact.svg)
+<img src="MII_PRO_Informationsmodell_Compact.svg" alt="MII PRO Information Model Overview" width="25%"/>
 </div>
 
 The complete information model can be viewed in the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg).
@@ -37,7 +37,7 @@ The UML diagrams use the following notation:
 The questionnaire template defines the structure and content of a PRO instrument. It contains all necessary information for the display, collection, and evaluation of questions.
 
 <div style="text-align: center;">
-![MII PRO Questionnaire Structure](MII_PRO_Fragebögen.png)
+<img src="MII_PRO_Fragebögen.png" alt="MII PRO Questionnaire Structure" width="100%"/>
 </div>
 
 **FHIR Mapping**: The questionnaire template maps to the FHIR resource `Questionnaire`. The hierarchical structure of questions is represented through `Questionnaire.item`, while answer options are defined in `answerOption`.
@@ -49,7 +49,7 @@ The questionnaire template defines the structure and content of a PRO instrument
 The completed questionnaire captures the concrete answers of a patient at a specific point in time. It references the underlying questionnaire template and stores the given answers in a structured manner.
 
 <div style="text-align: center;">
-![MII PRO Completed Questionnaires](MII_PROMs_Fragebögen_ausgefüllt.png)
+<img src="MII_PROMs_Fragebögen_ausgefüllt.png" alt="MII PRO Completed Questionnaires" width="70%"/>
 </div>
 
 **FHIR Mapping**: The completed questionnaire maps to `QuestionnaireResponse`. The individual answers are stored in `QuestionnaireResponse.item.answer`, supporting various data types.
@@ -61,7 +61,7 @@ The completed questionnaire captures the concrete answers of a patient at a spec
 The score component encompasses both the definition of calculation algorithms (score template) and the concrete calculated values (score instance). It supports various calculation types and enables mappings between different scoring systems.
 
 <div style="text-align: center;">
-![MII PRO Score Structure](MII_PROMs_Scores.png)
+<img src="MII_PROMs_Scores.png" alt="MII PRO Score Structure" width="100%"/>
 </div>
 
 **Distinction between Score Types**:
@@ -80,7 +80,7 @@ The score component encompasses both the definition of calculation algorithms (s
 Domains classify PRO scores by health areas and enable their classification into overarching concepts. They define scaling and reference values for the interpretation of scores.
 
 <div style="text-align: center;">
-![MII PRO Domain Structure](MII_PROMs_Domäne.png)
+<img src="MII_PROMs_Domäne.png" alt="MII PRO Domain Structure" width="100%"/>
 </div>
 
 **FHIR Mapping**: Domains are primarily represented through terminology resources (`CodeSystem`, `ValueSet`) and metadata in the score definitions.

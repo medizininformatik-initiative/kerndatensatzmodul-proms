@@ -44,7 +44,7 @@ Nach Abschluss des Fragebogens:
 - Scores und Interpretation werden im Entlassbericht dokumentiert
 
 <div style="text-align: center;">
-![Sequenzdiagramm Use Case 1](UseCase 1  ePRO Collection.png)
+<img src="UseCase 1  ePRO Collection.png" alt="Sequenzdiagramm Use Case 1" width="45%"/>
 </div>
 
 **Abgeleitete Anforderungen:**
@@ -68,7 +68,7 @@ Dr. Schmidt hat in mehreren Forschungsprojekten mit dem PHQ-9 gearbeitet. Es lie
 Frau Dirsch vom Datenintegrationszentrum harmonisiert diese heterogenen Datenquellen in ein einheitliches FHIR-Format.
 
 <div style="text-align: center;">
-![Sequenzdiagramm Use Case 2](UseCase 2  local harmonization.png)
+<img src="UseCase 2  local harmonization.png" alt="Sequenzdiagramm Use Case 2" width="100%"/>
 </div>
 
 **Abgeleitete Anforderungen:**
@@ -86,7 +86,7 @@ Dr. Schmidt betreut ein Verbundprojekt "Depressive Erkrankungen und Burnout im H
 Die Harmonisierung erfolgt über die Datenintegrationszentren mit standardisierten FHIR-Profilen.
 
 <div style="text-align: center;">
-![Sequenzdiagramm Use Case 3](UseCase3  interhospital harmonization.png)
+<img src="UseCase3  interhospital harmonization.png" alt="Sequenzdiagramm Use Case 3" width="65%"/>
 </div>
 
 **Abgeleitete Anforderungen:**
@@ -114,7 +114,7 @@ Cross-Domain-Mapping auf gemeinsame Depressionsdomäne durch:
 - Item-based Mapping: Neuberechnung aus einzelnen Antworten
 
 <div style="text-align: center;">
-![Sequenzdiagramm Use Case 4](UseCase 4  cross-domain harmonization.png)
+<img src="UseCase 4  cross-domain harmonization.png" alt="Sequenzdiagramm Use Case 4" width="100%"/>
 </div>
 
 **Abgeleitete Anforderungen:**
