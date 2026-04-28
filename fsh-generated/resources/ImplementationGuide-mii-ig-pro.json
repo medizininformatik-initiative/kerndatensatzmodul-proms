@@ -476,6 +476,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-pro-ctcae"
+        },
+        "name": "MII CS PRO PRO-CTCAE Item Library",
+        "description": "CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-questionnaire-catalogue"
         },
         "name": "MII CS PRO Questionnaire Catalogue",
@@ -1108,6 +1116,78 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-frequency"
+        },
+        "name": "MII VS PRO PRO-CTCAE Frequency Scale",
+        "description": "5-point frequency response scale for PRO-CTCAE items (0=Never, 4=Almost constantly)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual"
+        },
+        "name": "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)",
+        "description": "7-point frequency scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-interference"
+        },
+        "name": "MII VS PRO PRO-CTCAE Interference Scale",
+        "description": "5-point interference response scale for PRO-CTCAE items (0=Not at all, 4=Very much)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-presence"
+        },
+        "name": "MII VS PRO PRO-CTCAE Presence Scale",
+        "description": "Binary presence/absence response scale for PRO-CTCAE items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-presence-sexual"
+        },
+        "name": "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
+        "description": "4-option presence scale for sexual function: Yes / No / Not sexually active / Prefer not to answer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-presence-na"
+        },
+        "name": "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
+        "description": "3-option presence scale: Yes / No / Not applicable",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-severity"
+        },
+        "name": "MII VS PRO PRO-CTCAE Severity Scale",
+        "description": "5-point severity response scale for PRO-CTCAE items (0=None, 4=Very severe)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-severity-radiation"
+        },
+        "name": "MII VS PRO PRO-CTCAE Severity Scale (Radiation)",
+        "description": "6-point severity scale for radiation items: standard 5 options plus 'Not applicable'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-severity-sexual"
+        },
+        "name": "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
+        "description": "7-point severity scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-pro-promis-frequency-response-scale"
         },
         "name": "MII VS PRO PROMIS Frequency Response Scale",
@@ -1199,6 +1279,30 @@
         "name": "PHQ-9 Transaction Bundle Example",
         "description": "Transaction bundle containing PHQ-9 questionnaire, response, and derived observation - flagship example",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-proctcae-acs"
+        },
+        "name": "PRO-CTCAE Average Composite Score (ACS)",
+        "description": "Average of all PRO-CTCAE composite grades at a given timepoint, reflecting overall symptomatic adverse event burden. Symptoms with opt-out responses are excluded from the average. Range 0.0-3.0 (continuous). ACS = sum(composite grades) / count(scored symptoms).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade"
+        },
+        "name": "PRO-CTCAE Composite Grade",
+        "description": "Composite grade for a single PRO-CTCAE adverse event, computed from frequency, severity, and/or interference scores using the NCI composite grading algorithm (Basch et al., 2021). Range 0-3, mapped to CTCAE grade equivalents. Grade 0 = no symptom, Grade 3 = most severe patient-reported burden. May have dataAbsentReason when patient selected opt-out answers.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-pro-ctcae-breast-de"
+        },
+        "name": "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+        "description": "PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score).",
+        "exampleBoolean": false
       },
       {
         "reference": {

@@ -19,6 +19,7 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 | **PROMIS Cognitive Function SF 4a** | Vollständig | Kognition | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **EORTC QLQ-C30** | Vollständig | Onkologie | 30 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | - |
 | **DASS-21** | Vollständig | Depression/Angst/Stress | 21 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| **PRO-CTCAE** | Neu | Nebenwirkungen (Onkologie) | 124 (Item-Bibliothek) | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 
 #### Metadata-Only Reference Questionnaires
 
@@ -78,6 +79,13 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
   - Public Domain - frei verfügbar ohne Lizenzgebühren
   - Deutsche Validierung nach Nilges & Essau (2015)
 
+- **PRO-CTCAE (Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events)**
+  - NCI Item-Bibliothek mit 124 Items zu 78 Nebenwirkungen
+  - Erstes tumorspezifisches Subset: Brustzentrum (21 Symptome, 36 Items)
+  - CQL-basiertes Scoring: Composite Grade (0-3) pro AE + Average Composite Score
+  - Server-seitiges Scoring via Library/$evaluate (FastAPI ETL-Komponente)
+  - Vollständige deutsche Übersetzung (NCI-autorisiert, Item Library v1.0)
+
 #### Data and Scoring implementiert
 - **BDI-II (Beck Depression Inventory II)**
   - Umfassendes Depressionsinventar mit 21 Items
@@ -124,4 +132,5 @@ Detaillierte Informationen zu einzelnen Fragebögen finden Sie in den jeweiligen
 - {{pagelink:PROMIS}}
 - {{pagelink:EORTC-QLQ-C30}}
 - {{pagelink:DASS-21}}
+- {{pagelink:PRO-CTCAE}}
 - {{pagelink:Minimal-Reference-Questionnaires}}

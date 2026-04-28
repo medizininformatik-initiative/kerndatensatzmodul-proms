@@ -68,3 +68,7 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 * #dass21-depression-equiv "DASS-21 Depression DASS-42 Equivalent Score"
 * #dass21-anxiety-equiv "DASS-21 Anxiety DASS-42 Equivalent Score"
 * #dass21-stress-equiv "DASS-21 Stress DASS-42 Equivalent Score"
+
+// PRO-CTCAE Scores (higher = worse AE burden)
+* #proctcae-composite-grade "PRO-CTCAE Composite Grade (per Adverse Event)"
+* #proctcae-acs "PRO-CTCAE Average Composite Score (ACS)"
