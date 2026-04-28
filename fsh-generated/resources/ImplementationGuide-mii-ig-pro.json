@@ -1219,8 +1219,172 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "validation-qa.html",
-          "title": "Validation Qa",
+          "nameUrl": "module-description.html",
+          "title": "Module Description",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "project-context.html",
+          "title": "Project Context",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use-cases.html",
+          "title": "Use Cases",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "datasets-and-descriptions.html",
+              "title": "Datasets and Descriptions",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "uml-diagrams.html",
+              "title": "UML Diagrams",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "technical-implementation.html",
+          "title": "Technical Implementation",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "workflows.html",
+              "title": "Workflows",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "scoring.html",
+              "title": "Scoring",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "id-systematics.html",
+              "title": "ID Systematics",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "terminology-strategies.html",
+              "title": "Terminology Strategies",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "questionnaire-capabilities.html",
+              "title": "Questionnaire Capabilities",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "validation.html",
+              "title": "Validation",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "pro-library.html",
+          "title": "PRO Library",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "phq-9.html",
+              "title": "PHQ-9",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "eq-5d-5l.html",
+              "title": "EQ-5D-5L",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "eq-5d-5l-scores.html",
+                  "title": "EQ-5D-5L Scores",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "eortc-qlq-c30.html",
+              "title": "EORTC QLQ-C30",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "eortc-qlq-c30-scoring.html",
+                  "title": "EORTC QLQ-C30 Scoring",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "promis.html",
+              "title": "PROMIS",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "promis-29.html",
+                  "title": "PROMIS-29",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "promis-depression.html",
+                  "title": "PROMIS Depression SF4a",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "bdi-ii.html",
+              "title": "BDI-II",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dass-21.html",
+              "title": "DASS-21",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "minimal-reference-questionnaires.html",
+              "title": "Minimal Reference Questionnaires",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "domain-based-scoring.html",
+          "title": "Domain-Based Scoring",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "domains.html",
+              "title": "Domains",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "cross-instrument-mappings.html",
+              "title": "Cross-Instrument Mappings",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "derived-metrics.html",
+          "title": "Derived Metrics",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "references.html",
+          "title": "References",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Changelog",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
           "generation": "markdown"
         }
       ]
@@ -1233,6 +1397,30 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "en"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "de"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/de"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "false"
       }
     ]
   }
