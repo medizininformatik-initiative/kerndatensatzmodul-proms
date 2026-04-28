@@ -1,184 +1,184 @@
-Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies
-/fsh-generated/resources/ImplementationGuide-mii-ig-pro.json	58314	-	0	0	0	0	0	0	17	80	0	0	0	0	0	0	0	1	0	0	27	333	569	0	0	0
-fsh-generated/resources/Bundle-mii-exa-pro-bdi-ii-bundle.json	27976	11	26	0	1	0	0	0	3	2335	0	0	0	0	0	0	0	1	0	0	24	207	1136	0	0	0
-fsh-generated/resources/Bundle-mii-exa-pro-eortc-qlq-c30-bundle.json	71215	11	12	0	1	0	0	0	4	8671	0	0	0	0	0	0	0	1	0	0	15	428	14303	0	0	0
-fsh-generated/resources/Bundle-mii-exa-pro-phq-9-bundle.json	70566	9	12	0	0	0	0	0	3	310	0	0	0	0	0	0	0	0	0	0	16	154	1038	0	0	0
-fsh-generated/resources/Bundle-mii-exa-pro-promis-29-bundle.json	28568	6	4	0	0	0	0	0	2	10084	0	0	0	0	0	0	0	0	0	0	6	186	7644	0	0	0
-fsh-generated/resources/Bundle-mii-exa-pro-promis-depression-sf4a-bundle.json	6230	2	1	0	0	0	0	0	0	601	0	0	0	0	0	0	0	0	0	0	5	39	1932	0	0	0
-fsh-generated/resources/CapabilityStatement-mii-cps-pro-capabilitystatement.json	46968	5	0	0	0	0	0	0	3	83	0	0	0	0	0	0	0	0	0	0	6	158	118	0	0	1
-fsh-generated/resources/CodeSystem-mii-cs-pro-bdi-bdi2.json	1425	1	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	5	17	117	0	0	0
-fsh-generated/resources/CodeSystem-mii-cs-pro-dass-21.json	6959	1	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	6	35	109	0	0	0
-fsh-generated/resources/CodeSystem-mii-cs-pro-eortc-qlq-c30.json	3289	2	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	5	19	85	0	0	0
-fsh-generated/resources/CodeSystem-mii-cs-pro-eq-5d-value-set.json	21143	2	0	0	0	0	1	0	1	12	0	0	0	0	0	0	0	0	0	0	6	54	100	0	0	0
-fsh-generated/resources/CodeSystem-mii-cs-pro-questionnaire-catalogue.json	1731	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	5	16	67	0	0	0
-fsh-generated/resources/CodeSystem-mii-cs-pro-score-catalogue.json	4436	2	0	0	0	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	5	34	76	0	0	0
-fsh-generated/resources/ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json	812	1	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	5	10	47	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-bdi-ii-observation.json	698	0	0	0	0	0	0	0	0	614	0	0	0	0	0	0	0	0	0	0	5	8	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.json	1126	1	0	0	0	0	0	0	0	630	0	0	0	0	0	0	0	0	0	0	4	10	14	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.json	1106	0	0	0	0	0	0	0	0	627	0	0	0	0	0	0	0	0	0	0	5	9	14	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-equiv.json	1296	1	0	0	0	0	0	0	0	635	0	0	0	0	0	0	0	0	0	0	5	11	14	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-raw.json	1277	0	0	0	0	0	0	0	0	616	0	0	0	0	0	0	0	0	0	0	5	9	15	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-equiv.json	1280	1	0	0	0	0	0	0	0	642	0	0	0	0	0	0	0	0	0	0	5	10	16	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-raw.json	1261	1	0	0	0	0	0	0	0	628	0	0	0	0	0	0	0	0	0	0	4	10	17	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.json	1120	0	0	0	0	0	0	0	0	647	0	0	0	0	0	0	0	0	0	0	5	12	20	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.json	1130	1	0	0	0	0	0	0	0	621	0	0	0	0	0	0	0	0	0	0	5	13	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-co.json	1119	0	0	0	0	0	0	0	0	618	0	0	0	0	0	0	0	0	0	0	5	11	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-di.json	1116	1	0	0	0	0	0	0	0	591	0	0	0	0	0	0	0	0	0	0	5	12	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.json	1115	0	0	0	0	0	0	0	1	705	0	0	0	0	0	0	0	0	0	0	4	12	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.json	1131	1	0	0	0	0	0	0	0	637	0	0	0	0	0	0	0	0	0	0	5	11	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.json	1118	0	0	0	0	0	0	0	0	658	0	0	0	0	0	0	0	0	0	0	5	9	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.json	1129	1	0	0	0	0	0	0	0	662	0	0	0	0	0	0	0	0	0	0	4	10	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.json	1126	1	0	0	0	0	0	0	0	617	0	0	0	0	0	0	0	0	0	0	5	9	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.json	1115	0	0	0	0	0	0	0	0	640	0	0	0	0	0	0	0	0	0	0	5	9	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.json	1426	1	0	0	0	0	0	0	0	677	0	0	0	0	0	0	0	0	0	0	5	11	12	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.json	1149	0	0	0	1	0	0	0	0	632	0	0	0	0	0	0	0	0	0	0	4	9	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.json	1127	1	0	0	0	0	0	0	0	615	0	0	0	0	0	0	0	0	0	0	5	10	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.json	1129	1	0	0	0	0	0	0	0	616	0	0	0	0	0	0	0	0	0	0	5	9	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.json	1119	0	0	0	0	0	0	0	0	647	0	0	0	0	0	0	0	0	0	0	5	9	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-phq-9-observation.json	717	1	0	0	0	0	0	0	0	633	0	0	0	0	0	0	0	0	0	0	5	8	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-promis-depression-sf4a-raw-score.json	1104	0	0	0	0	0	0	0	0	681	0	0	0	0	0	0	0	0	0	0	4	9	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-promis-depression-sf4a-tscore.json	1070	1	0	0	0	0	0	0	0	653	0	0	0	0	0	0	0	0	0	0	7	9	13	0	0	0
-fsh-generated/resources/Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.json	743	1	0	0	0	0	0	0	1	616	0	0	0	0	0	0	0	0	0	0	8	8	10	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-depression-t-score.json	6126	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	8	23	22	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ap.json	897	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	7	9	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-cf.json	905	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	8	10	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-co.json	896	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	8	9	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-di.json	893	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	7	8	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-dy.json	892	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	7	9	8	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ef.json	905	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	4	8	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fa.json	891	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	5	11	8	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fi.json	906	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	4	10	10	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv.json	903	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	9	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa.json	888	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	5	9	8	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf.json	1125	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	4	10	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql.json	922	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	9	10	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf.json	900	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	5	9	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf.json	902	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	4	8	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl.json	892	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	4	9	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.json	1948	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	5	13	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.json	1982	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	12	10	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.json	1952	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	13	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.json	1977	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	4	13	10	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.json	1982	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	4	12	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.json	1985	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	5	13	12	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.json	1982	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	4	15	12	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.json	2016	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	13	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.json	2350	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	16	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.json	2310	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	13	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-bdi-ii.json	2061	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	4	12	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.json	1960	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	13	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.json	1902	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	13	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.json	2133	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	4	16	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.json	2075	1	0	0	1	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	16	10	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.json	2113	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	6	12	14	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.json	2055	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	7	12	12	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.json	2100	1	0	0	0	0	0	0	0	640	0	0	0	0	0	0	0	0	0	0	5	11	10	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.json	986	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	8	9	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.json	2097	0	0	0	0	0	0	0	0	651	0	0	0	0	0	0	0	0	0	0	5	11	11	0	0	0
-fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-9.json	1926	1	0	0	0	0	0	0	0	613	0	0	0	0	0	0	0	0	0	0	4	17	11	0	0	0
-fsh-generated/resources/Patient-mii-exa-pro-patient.json	322	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	5	5	7	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-bdi-bdi2.json	11006	1	0	0	0	0	0	0	1	19	0	0	0	0	0	0	0	0	0	0	5	179	75	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-ces-d.json	1743	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	4	31	25	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-dass-dass21.json	113590	12	0	0	0	0	0	0	52	30	0	0	0	0	0	0	0	0	0	0	8	342	183	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.json	22379	4	0	0	0	0	0	0	1	77	0	0	0	0	0	0	0	0	0	0	6	367	105	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-b.json	26746	4	0	0	0	0	0	0	2	2342	0	0	0	0	0	0	0	1	0	0	6	346	1696	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30.json	26934	6	0	0	0	0	0	0	1	39	0	0	0	0	0	0	0	0	0	0	7	343	259	0	0	1
-fsh-generated/resources/Questionnaire-mii-qst-pro-epds.json	1854	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	5	32	28	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.json	19700	3	0	0	0	0	0	0	1	13	0	0	0	0	0	0	0	0	0	0	5	113	65	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.json	32683	4	0	0	0	0	0	0	2	21	0	0	0	0	0	0	0	0	0	0	6	116	54	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.json	35864	5	0	0	0	0	0	0	2	16	0	0	0	0	0	0	0	0	0	0	5	125	86	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.json	8512	2	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	5	82	43	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-hads.json	1857	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	4	31	24	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-k6.json	1683	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	5	32	27	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-phq-9.json	53457	7	0	0	0	0	0	0	3	20	0	0	0	0	0	0	0	0	0	0	53	159	3501	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29-de.json	175740	18	0	0	0	0	0	0	7	61	0	0	0	0	0	0	0	1	0	0	10	544	280	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29-minimal.json	13036	3	0	0	0	0	0	0	1	15	0	0	0	0	0	0	0	0	0	0	5	99	2066	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29.json	175626	18	0	0	0	0	0	0	7	46	0	0	0	0	0	1	0	0	0	0	10	538	164	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.json	29738	4	0	0	0	0	0	0	2	10	0	0	0	0	0	0	0	0	0	0	6	102	41	0	0	0
-fsh-generated/resources/Questionnaire-mii-qst-pro-promis-depression-sf4a.json	25055	4	0	0	0	0	0	0	1	9	0	0	0	0	0	0	0	0	0	0	6	91	44	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-bdi-bdi2.json	6717	2	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	5	114	29	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-dass-dass21-response-01.json	8772	1	0	0	1	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	5	178	31	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.json	10195	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	5	151	34	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.json	3099	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	53	18	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.json	1768	1	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	5	50	16	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-phq-9-response.json	3132	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	66	19	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-29-de-response.json	12376	2	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	5	258	52	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-29-response.json	12370	2	0	0	0	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	4	258	50	0	0	0
-fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.json	1791	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	5	45	16	0	0	0
-fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-code.json	1404	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	4	11	12	0	0	0
-fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-health-correlation.json	1722	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	4	13	13	0	0	0
-fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-interval-category.json	1524	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	5	12	12	0	0	0
-fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.json	1496	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	12	13	0	0	0
-fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.json	1490	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	5	13	12	0	0	0
-fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-unit.json	1457	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	4	11	13	0	0	0
-fsh-generated/resources/SearchParameter-mii-sp-pro-questionnaire-capabilities.json	1767	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	13	13	0	0	0
-fsh-generated/resources/StructureDefinition-mii-ex-pro-questionnaire-capabilities.json	5666	2	0	23	0	0	0	0	0	38	0	0	1	0	0	0	0	1	0	0	2	266	1066	0	0	0
-fsh-generated/resources/StructureDefinition-mii-ex-pro-score-score-health-correlation.json	2110	1	0	12	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	105	373	0	0	0
-fsh-generated/resources/StructureDefinition-mii-lm-pro.json	48959	7	0	137	0	0	0	0	0	132	0	0	0	0	0	0	0	2	0	0	7	1101	1566	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-depression-t-score.json	5654	1	0	51	0	0	0	0	0	45	0	0	1	0	0	0	0	0	0	0	1	386	1496	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-bdi-ii.json	2765	2	0	60	0	0	0	0	0	26	0	0	0	0	0	0	0	1	0	0	0	314	741	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-index.json	3530	1	0	40	0	0	0	0	0	26	0	0	0	0	0	0	0	1	0	0	1	342	1954	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.json	2619	1	0	64	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	0	273	508	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.json	2690	1	0	26	0	0	0	0	0	32	0	0	0	0	0	0	0	1	0	0	1	304	840	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.json	2467	1	0	28	0	0	0	0	0	31	0	0	1	0	0	0	0	1	0	0	0	298	840	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-depression-tscore.json	2513	1	0	25	0	0	0	0	0	54	0	0	0	0	0	0	0	1	0	0	1	344	720	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.json	2471	1	0	25	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	0	296	573	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-pain-intensity.json	2524	1	0	25	0	0	0	0	0	20	0	0	0	0	0	0	0	1	0	0	1	296	498	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.json	2541	1	0	23	0	0	0	0	1	28	0	0	0	0	0	0	0	1	0	0	0	298	494	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.json	2542	1	0	23	0	0	0	0	0	20	0	0	0	0	0	0	0	1	0	0	1	300	718	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.json	2541	2	0	26	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	0	300	725	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.json	2603	1	0	26	0	0	0	0	0	25	0	0	1	0	0	0	0	1	0	0	0	295	590	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.json	3278	1	0	29	0	0	0	0	0	29	0	0	0	0	0	0	0	1	0	0	1	362	545	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.json	2580	1	0	24	0	0	0	0	0	50	0	0	0	0	0	0	0	1	0	0	0	296	432	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.json	5722	2	0	31	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0	0	1	466	478	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-questionnaire-response.json	887	1	0	16	1	0	0	0	0	9	0	0	0	0	0	0	0	1	0	0	0	140	360	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-questionnaire.json	3752	1	0	45	0	0	0	0	0	29	0	0	0	0	0	0	0	1	0	0	1	376	750	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-score-blueprint.json	5797	1	0	31	0	0	0	0	0	45	0	0	1	0	0	0	0	1	0	0	0	400	597	0	0	0
-fsh-generated/resources/StructureDefinition-mii-pr-pro-score-instance.json	3569	1	0	0	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	0	294	439	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-bdi-bdi2-long.json	1097	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	7	12	173	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-bdi-bdi2-short.json	899	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	5	10	107	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-dass-21-answer-list.json	959	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	5	11	93	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.json	1031	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	4	10	82	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.json	1083	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	5	11	82	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.json	925	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	4	11	72	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json	2417	0	0	0	0	0	0	0	0	666	0	0	0	0	0	0	0	0	0	0	5	11	444	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.json	1682	1	0	0	0	0	0	0	0	315	0	0	0	0	0	0	0	0	0	0	4	11	421	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-promis-frequency-response-scale.json	1785	0	0	0	0	0	0	0	0	316	0	0	0	0	0	0	0	0	0	0	5	11	70	0	0	0
-fsh-generated/resources/ValueSet-mii-vs-pro-promis-physical-function-response-scale.json	1994	1	0	0	0	0	0	0	0	321	0	0	0	0	0	0	0	0	0	0	4	12	71	0	0	0
-/fsh-generated/includes/fsh-link-references.md	14086	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0
-/fsh-generated/includes/menu.xml	3424	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/uml-diagrams.md	4408	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/minimal-reference-questionnaires.md	2307	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/domain-based-scoring.md	17242	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0
-/input/pagecontent/eortc-qlq-c30.md	4196	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/promis-depression.md	8023	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0
-/input/pagecontent/datasets-and-descriptions.md	2588	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/eq-5d-5l-scores.md	4055	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/derived-metrics.md	448	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/index.md	3326	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0
-/input/pagecontent/project-context.md	2609	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/technical-implementation.md	1086	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/references.md	600	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/eortc-qlq-c30-scoring.md	7005	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/workflows.md	10091	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/eq-5d-5l.md	8778	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/use-cases.md	7434	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0
-/input/pagecontent/promis.md	1868	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/pro-library.md	5615	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/cross-instrument-mappings.md	6938	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/scoring.md	6021	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/questionnaire-capabilities.md	7733	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/module-description.md	4097	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/domains.md	11178	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/terminology-strategies.md	9042	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/changes.md	5521	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/bdi-ii.md	1677	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/id-systematics.md	13015	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/validation.md	5956	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/promis-29.md	3207	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/dass-21.md	7402	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/input/pagecontent/phq-9.md	2825	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/downloads.md	1113	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/temp/pages/_includes/artifacts.xml	97108	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	5	0	0	0
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-mii-ig-pro.json	58314	-	0	0	1	0	0	0	18	71	0	0	0	0	0	0	0	1	0	0	27	197	355	0	0	0	0	22	0	6
+fsh-generated/resources/Bundle-mii-exa-pro-bdi-ii-bundle.json	27976	10	34	0	1	0	0	0	3	3223	0	0	0	0	0	0	0	1	0	0	19	169	1568	0	0	0	1	0	0	1
+fsh-generated/resources/Bundle-mii-exa-pro-eortc-qlq-c30-bundle.json	71215	10	21	0	0	0	0	0	5	12424	0	0	0	0	0	0	0	0	0	0	14	260	20429	0	0	0	0	0	0	2
+fsh-generated/resources/Bundle-mii-exa-pro-phq-9-bundle.json	70566	9	19	0	0	0	0	0	4	441	0	0	0	0	0	0	0	1	0	0	12	137	1489	0	0	0	0	0	0	2
+fsh-generated/resources/Bundle-mii-exa-pro-promis-29-bundle.json	28568	6	5	0	0	0	0	0	2	14451	0	0	0	0	0	0	0	0	0	0	9	145	10841	0	0	0	0	0	0	1
+fsh-generated/resources/Bundle-mii-exa-pro-promis-depression-sf4a-bundle.json	6230	2	4	0	0	0	0	0	0	898	0	0	0	0	0	0	0	0	0	0	8	33	2742	0	0	0	0	0	0	1
+fsh-generated/resources/CapabilityStatement-mii-cps-pro-capabilitystatement.json	46968	5	0	0	0	0	0	0	2	78	0	0	0	0	0	0	0	0	0	0	7	126	137	0	0	1	0	8	0	1
+fsh-generated/resources/CodeSystem-mii-cs-pro-bdi-bdi2.json	1425	1	0	0	0	0	0	0	0	6	0	0	1	0	0	0	0	0	0	0	3	12	103	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-mii-cs-pro-dass-21.json	6959	1	0	0	0	0	0	0	1	6	0	0	0	0	0	0	0	0	1	0	4	28	98	0	0	0	0	2	0	0
+fsh-generated/resources/CodeSystem-mii-cs-pro-eortc-qlq-c30.json	3289	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	2	17	77	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-mii-cs-pro-eq-5d-value-set.json	21143	3	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	4	51	94	0	0	0	0	5	0	1
+fsh-generated/resources/CodeSystem-mii-cs-pro-questionnaire-catalogue.json	1731	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	16	59	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-mii-cs-pro-score-catalogue.json	4436	1	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	2	27	71	0	0	0	0	1	0	0
+fsh-generated/resources/ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json	812	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	2	8	41	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-bdi-ii-observation.json	698	1	0	0	0	0	0	0	0	906	0	0	0	0	0	0	0	0	0	0	2	8	14	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.json	1126	1	0	0	0	0	0	0	0	893	0	0	0	0	0	0	0	0	0	0	2	8	11	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.json	1106	0	0	0	0	0	0	0	0	923	0	0	0	0	0	0	0	0	0	0	1	9	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-equiv.json	1296	1	0	0	0	0	0	0	0	899	0	0	0	0	0	0	0	0	0	0	2	9	12	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-raw.json	1277	1	0	0	0	0	0	0	0	904	0	0	0	0	0	0	0	0	0	0	1	6	11	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-equiv.json	1280	0	0	0	0	0	0	0	0	895	0	0	0	0	0	0	0	0	0	0	2	7	12	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-raw.json	1261	1	0	0	1	0	0	0	0	879	0	0	0	0	0	0	0	0	0	0	1	5	12	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.json	1120	0	0	0	0	0	0	0	0	918	0	0	0	0	0	0	0	0	0	0	2	6	13	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.json	1130	1	0	0	0	0	0	0	0	891	0	0	0	0	0	0	0	0	0	0	1	6	11	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-co.json	1119	1	0	0	0	0	0	0	0	906	0	0	0	0	0	0	0	0	0	0	1	5	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-di.json	1116	0	0	0	0	0	0	0	0	893	0	0	0	0	0	0	0	0	0	0	2	8	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.json	1115	1	0	0	0	0	0	0	0	905	0	0	0	0	0	0	0	0	0	0	1	8	11	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.json	1131	0	0	0	0	0	0	0	1	904	0	0	0	0	0	0	0	0	0	0	1	9	14	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.json	1118	1	0	0	0	0	0	0	0	886	0	0	0	0	0	0	0	0	0	0	2	8	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.json	1129	1	0	0	0	0	0	0	0	894	0	0	0	0	0	0	0	0	0	0	1	8	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.json	1126	1	0	0	0	0	0	0	0	888	0	0	0	0	0	0	0	0	0	0	2	7	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.json	1115	0	0	0	0	0	0	0	0	912	0	0	0	0	0	0	0	0	0	0	1	6	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.json	1426	1	0	0	0	0	0	0	0	889	0	0	0	0	0	0	0	0	0	0	2	6	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.json	1149	1	0	0	0	0	0	0	0	896	0	0	0	0	0	0	0	0	0	0	1	6	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.json	1127	0	0	0	0	0	0	0	0	911	0	0	0	0	0	0	0	0	0	0	1	9	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.json	1129	1	0	0	0	0	0	0	0	913	0	0	0	0	0	0	0	0	0	0	2	6	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.json	1119	1	0	0	0	0	0	0	0	926	0	0	0	0	0	0	0	0	0	0	1	6	11	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-phq-9-observation.json	717	0	0	0	0	0	0	0	0	903	0	0	0	0	0	0	0	0	0	0	2	4	9	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-promis-depression-sf4a-raw-score.json	1104	1	0	0	0	0	0	0	0	904	0	0	0	0	0	0	0	0	0	0	1	6	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-promis-depression-sf4a-tscore.json	1070	1	0	0	0	0	0	0	0	898	0	0	0	0	0	0	0	0	0	0	2	7	10	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.json	743	1	0	0	0	0	0	0	0	910	0	0	0	0	0	0	0	0	0	0	1	6	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-depression-t-score.json	6126	42	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	2	21	19	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ap.json	897	3	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	11	7	0	0	0	0	1	0	1
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-cf.json	905	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	10	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-co.json	896	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	8	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-di.json	893	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	9	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-dy.json	892	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	8	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ef.json	905	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	1	0	0	1	9	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fa.json	891	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	8	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fi.json	906	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	8	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv.json	903	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	9	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa.json	888	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	8	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf.json	1125	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	9	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql.json	922	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	9	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf.json	900	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	8	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf.json	902	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	8	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl.json	892	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	9	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.json	1948	2	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	2	12	9	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.json	1982	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	12	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.json	1952	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	21	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.json	1977	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	13	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.json	1982	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	12	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.json	1985	2	0	0	1	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	12	9	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.json	1982	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	10	10	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.json	2016	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	12	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.json	2350	1	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	2	13	9	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.json	2310	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	13	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-bdi-ii.json	2061	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	11	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.json	1960	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	7	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.json	1902	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	7	10	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.json	2133	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	7	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.json	2075	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	7	8	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.json	2113	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	11	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.json	2055	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	9	10	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.json	2100	2	0	0	0	0	0	0	1	891	0	0	0	0	0	0	0	0	0	0	2	6	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.json	986	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	5	6	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.json	2097	2	0	0	0	0	0	0	0	879	0	0	0	0	0	0	0	0	0	0	1	7	7	0	0	0	0	0	0	0
+fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-9.json	1926	1	0	0	0	0	0	0	0	906	0	0	0	0	0	0	0	0	0	0	2	8	7	0	0	0	0	0	0	0
+fsh-generated/resources/Patient-mii-exa-pro-patient.json	322	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	2	5	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-bdi-bdi2.json	11006	3	0	0	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	2	82	73	0	0	0	0	7	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-ces-d.json	1743	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	2	18	20	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-dass-dass21.json	113590	17	0	0	0	0	0	0	5	36	0	0	0	0	0	0	0	0	0	0	5	174	130	0	0	0	0	15	0	2
+fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.json	22379	5	0	0	0	0	0	0	2	114	0	0	0	0	0	0	0	1	0	0	4	155	168	0	0	0	0	12	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-b.json	26746	6	0	0	0	0	0	0	1	3226	0	0	0	0	0	0	0	0	0	0	3	159	2196	0	0	0	0	13	0	1
+fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30.json	26934	8	0	0	0	0	0	0	2	32	0	0	0	0	0	0	0	0	0	0	4	219	300	0	0	0	0	13	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-epds.json	1854	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	2	17	24	0	0	0	0	2	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.json	19700	4	0	0	0	0	0	0	1	11	0	0	0	0	0	0	0	0	0	0	2	59	77	0	0	0	0	4	0	1
+fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.json	32683	5	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	3	74	49	0	0	0	0	4	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.json	35864	8	0	0	0	0	0	0	2	11	0	0	0	0	0	0	0	0	0	0	3	67	87	0	0	0	0	3	0	1
+fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.json	8512	3	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	2	41	38	0	0	0	0	2	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-hads.json	1857	2	0	0	1	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	16	18	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-k6.json	1683	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	16	21	0	0	1	0	1	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-phq-9.json	53457	12	0	0	0	0	0	0	2	26	0	0	0	0	0	0	0	1	0	0	4	83	4708	0	0	0	0	5	0	1
+fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29-de.json	175740	32	0	0	0	0	0	0	8	67	0	0	0	0	0	0	0	0	0	0	7	267	237	0	0	0	0	14	0	2
+fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29-minimal.json	13036	3	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	3	48	2791	0	0	0	0	2	0	0
+fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29.json	175626	32	0	0	0	0	0	0	7	49	0	0	0	0	0	0	0	1	0	0	8	265	302	0	0	0	0	14	0	3
+fsh-generated/resources/Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.json	29738	6	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	4	52	49	0	0	0	0	3	0	1
+fsh-generated/resources/Questionnaire-mii-qst-pro-promis-depression-sf4a.json	25055	6	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	4	48	46	0	0	0	0	2	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-bdi-bdi2.json	6717	2	0	0	0	0	0	0	1	6	0	0	0	0	0	0	0	0	0	0	2	53	27	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-dass-dass21-response-01.json	8772	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	2	65	31	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.json	10195	3	0	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	3	71	35	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.json	3099	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	25	17	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.json	1768	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	24	16	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-phq-9-response.json	3132	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	30	19	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-29-de-response.json	12376	3	0	0	0	0	0	0	1	6	0	0	0	0	0	0	0	0	0	0	2	119	52	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-29-response.json	12370	4	0	0	0	0	0	0	0	61	0	0	0	0	0	0	0	1	0	0	2	166	55	0	0	0	0	0	0	1
+fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.json	1791	2	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	1	22	15	0	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-code.json	1404	1	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	1	8	11	0	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-health-correlation.json	1722	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	1	7	17	0	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-interval-category.json	1524	3	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	8	15	0	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.json	1496	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	7	15	0	0	0	0	1	0	0
+fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.json	1490	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	7	15	0	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-unit.json	1457	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	7	14	0	0	0	0	0	0	0
+fsh-generated/resources/SearchParameter-mii-sp-pro-questionnaire-capabilities.json	1767	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	7	16	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-mii-ex-pro-questionnaire-capabilities.json	5666	4	0	24	0	0	0	1	0	39	0	0	0	0	0	0	0	0	0	0	1	132	1154	0	0	0	0	8	2	0
+fsh-generated/resources/StructureDefinition-mii-ex-pro-score-score-health-correlation.json	2110	2	0	10	0	0	0	0	1	10	0	0	0	0	0	0	0	1	0	0	0	55	336	0	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-mii-lm-pro.json	48959	14	0	101	0	0	0	0	0	97	0	0	1	0	0	0	0	2	0	0	5	572	1810	0	0	0	0	28	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-depression-t-score.json	5654	4	0	35	0	0	0	0	0	34	0	0	0	0	0	0	0	1	0	0	0	209	1593	0	0	0	0	14	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-bdi-ii.json	2765	2	0	56	0	0	0	0	0	22	0	0	0	0	0	0	0	1	0	0	1	186	676	0	0	0	0	14	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-index.json	3530	3	0	30	0	0	0	0	0	22	0	0	0	0	0	0	0	1	0	0	0	181	2591	0	0	0	0	14	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.json	2619	2	0	20	1	0	0	0	0	20	0	0	0	0	0	0	0	1	0	0	0	150	664	0	0	0	0	8	1	0
+fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.json	2690	2	0	87	0	0	0	0	0	21	0	0	0	0	0	0	0	1	0	0	1	163	856	0	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.json	2467	2	0	28	0	0	0	0	0	19	0	0	0	0	0	0	0	1	0	0	0	159	729	0	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-depression-tscore.json	2513	2	0	26	0	0	0	0	0	31	0	0	0	0	0	0	0	0	0	0	0	207	655	0	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.json	2471	2	0	21	0	0	0	0	0	52	0	0	1	0	0	0	0	1	0	0	1	159	545	0	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-pain-intensity.json	2524	1	0	22	0	0	0	0	0	23	0	0	0	0	0	0	0	1	0	0	0	159	475	0	0	0	0	15	1	0
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.json	2541	2	0	21	0	0	0	0	0	20	0	0	0	0	0	0	0	0	0	0	0	163	463	0	0	0	0	14	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.json	2542	4	0	22	0	0	0	0	0	23	0	0	0	0	0	0	0	1	0	0	1	160	474	0	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.json	2541	2	0	22	0	0	0	0	0	30	0	0	0	0	0	0	0	1	0	0	0	160	473	0	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.json	2603	2	0	25	0	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	1	160	435	0	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.json	3278	4	0	29	0	0	0	0	0	23	0	0	0	0	0	0	0	1	0	0	0	194	582	0	0	0	0	12	3	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.json	2580	1	0	24	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	1	163	441	0	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.json	5722	3	0	24	0	0	0	0	0	34	0	0	0	0	0	0	0	1	0	0	0	273	490	0	0	0	0	11	1	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-questionnaire-response.json	887	1	0	13	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	80	392	0	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-mii-pr-pro-questionnaire.json	3752	2	0	49	0	0	0	0	0	42	0	0	1	0	0	0	0	1	0	0	1	202	597	0	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-score-blueprint.json	5797	3	0	33	0	0	0	0	0	43	0	0	0	0	0	0	0	1	0	0	0	205	549	0	0	0	0	11	2	1
+fsh-generated/resources/StructureDefinition-mii-pr-pro-score-instance.json	3569	2	0	1	0	0	0	0	0	21	0	0	0	0	0	0	0	1	0	0	0	154	395	0	0	0	0	9	0	1
+fsh-generated/resources/ValueSet-mii-vs-pro-bdi-bdi2-long.json	1097	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	5	7	60	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-bdi-bdi2-short.json	899	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	3	6	47	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-dass-21-answer-list.json	959	1	0	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	3	7	49	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.json	1031	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	6	49	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.json	1083	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	3	7	55	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.json	925	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	6	47	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json	2417	1	0	0	0	0	0	0	0	902	0	0	0	0	0	0	0	0	0	0	1	7	520	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.json	1682	1	0	0	0	0	0	0	0	451	0	0	0	0	0	0	0	0	0	0	2	7	542	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-promis-frequency-response-scale.json	1785	1	0	0	0	0	0	0	1	456	0	0	0	0	0	0	0	0	0	0	1	6	62	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-mii-vs-pro-promis-physical-function-response-scale.json	1994	1	0	0	0	0	0	0	0	435	0	0	0	0	0	0	0	0	0	0	2	7	64	0	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	3424	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/fsh-generated/includes/fsh-link-references.md	14086	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0
+/input/pagecontent/validation.md	5956	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/eq-5d-5l.md	8778	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/technical-implementation.md	1086	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/promis-29.md	3207	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/changes.md	5521	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/references.md	600	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/phq-9.md	2825	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/promis.md	1868	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/eq-5d-5l-scores.md	4055	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/questionnaire-capabilities.md	7733	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/id-systematics.md	13015	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/eortc-qlq-c30.md	4196	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/pro-library.md	5615	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/derived-metrics.md	448	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/domains.md	11178	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/domain-based-scoring.md	17242	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/bdi-ii.md	1677	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/terminology-strategies.md	9042	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/workflows.md	9809	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/dass-21.md	7402	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/cross-instrument-mappings.md	6938	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/downloads.md	1113	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/minimal-reference-questionnaires.md	2307	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/index.md	3326	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/use-cases.md	7244	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/scoring.md	6021	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/promis-depression.md	8023	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/module-description.md	4097	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/uml-diagrams.md	4170	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/eortc-qlq-c30-scoring.md	7005	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/project-context.md	2609	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/datasets-and-descriptions.md	2588	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	97108	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	3	0	0	0	0	0	0	0

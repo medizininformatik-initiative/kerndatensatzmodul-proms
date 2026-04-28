@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-pro-eortc-qlq-c30"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-eortc-qlq-c30</b></p><a name="mii-cs-pro-eortc-qlq-c30"> </a><a name="hcmii-cs-pro-eortc-qlq-c30"> </a><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td style="white-space:nowrap">not-at-all<a name="mii-cs-pro-eortc-qlq-c30-not-at-all"> </a></td><td>Not at all</td><td>Überhaupt nicht</td></tr><tr><td style="white-space:nowrap">a-little<a name="mii-cs-pro-eortc-qlq-c30-a-little"> </a></td><td>A little</td><td>Wenig</td></tr><tr><td style="white-space:nowrap">quite-a-bit<a name="mii-cs-pro-eortc-qlq-c30-quite-a-bit"> </a></td><td>Quite a bit</td><td>Mäßig</td></tr><tr><td style="white-space:nowrap">very-much<a name="mii-cs-pro-eortc-qlq-c30-very-much"> </a></td><td>Very much</td><td>Sehr</td></tr><tr><td style="white-space:nowrap">not-at-all-role<a name="mii-cs-pro-eortc-qlq-c30-not-at-all-role"> </a></td><td>Not at all</td><td>Überhaupt nicht</td></tr><tr><td style="white-space:nowrap">a-little-role<a name="mii-cs-pro-eortc-qlq-c30-a-little-role"> </a></td><td>A little</td><td>Wenig</td></tr><tr><td style="white-space:nowrap">quite-a-bit-role<a name="mii-cs-pro-eortc-qlq-c30-quite-a-bit-role"> </a></td><td>Quite a bit</td><td>Mäßig</td></tr><tr><td style="white-space:nowrap">very-much-role<a name="mii-cs-pro-eortc-qlq-c30-very-much-role"> </a></td><td>Very much</td><td>Sehr</td></tr><tr><td style="white-space:nowrap">1-very-poor<a name="mii-cs-pro-eortc-qlq-c30-1-very-poor"> </a></td><td>1 - Very poor</td><td>1 - Sehr schlecht</td></tr><tr><td style="white-space:nowrap">2-poor<a name="mii-cs-pro-eortc-qlq-c30-2-poor"> </a></td><td>2 - Poor</td><td>2 - Schlecht</td></tr><tr><td style="white-space:nowrap">3-fair<a name="mii-cs-pro-eortc-qlq-c30-3-fair"> </a></td><td>3 - Fair</td><td>3 - Mittelmäßig</td></tr><tr><td style="white-space:nowrap">4-good<a name="mii-cs-pro-eortc-qlq-c30-4-good"> </a></td><td>4 - Good</td><td>4 - Gut</td></tr><tr><td style="white-space:nowrap">5-very-good<a name="mii-cs-pro-eortc-qlq-c30-5-very-good"> </a></td><td>5 - Very good</td><td>5 - Sehr gut</td></tr><tr><td style="white-space:nowrap">6-excellent<a name="mii-cs-pro-eortc-qlq-c30-6-excellent"> </a></td><td>6 - Excellent</td><td>6 - Ausgezeichnet</td></tr><tr><td style="white-space:nowrap">7-perfect<a name="mii-cs-pro-eortc-qlq-c30-7-perfect"> </a></td><td>7 - Perfect</td><td>7 - Vollkommen</td></tr></table></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-eortc-qlq-c30</b></p><a name="de-mii-cs-pro-eortc-qlq-c30"> </a><a name="de-hcmii-cs-pro-eortc-qlq-c30"> </a><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td style="white-space:nowrap">not-at-all<a name="de-mii-cs-pro-eortc-qlq-c30-not-at-all"> </a></td><td>Not at all</td><td>Überhaupt nicht</td></tr><tr><td style="white-space:nowrap">a-little<a name="de-mii-cs-pro-eortc-qlq-c30-a-little"> </a></td><td>A little</td><td>Wenig</td></tr><tr><td style="white-space:nowrap">quite-a-bit<a name="de-mii-cs-pro-eortc-qlq-c30-quite-a-bit"> </a></td><td>Quite a bit</td><td>Mäßig</td></tr><tr><td style="white-space:nowrap">very-much<a name="de-mii-cs-pro-eortc-qlq-c30-very-much"> </a></td><td>Very much</td><td>Sehr</td></tr><tr><td style="white-space:nowrap">not-at-all-role<a name="de-mii-cs-pro-eortc-qlq-c30-not-at-all-role"> </a></td><td>Not at all</td><td>Überhaupt nicht</td></tr><tr><td style="white-space:nowrap">a-little-role<a name="de-mii-cs-pro-eortc-qlq-c30-a-little-role"> </a></td><td>A little</td><td>Wenig</td></tr><tr><td style="white-space:nowrap">quite-a-bit-role<a name="de-mii-cs-pro-eortc-qlq-c30-quite-a-bit-role"> </a></td><td>Quite a bit</td><td>Mäßig</td></tr><tr><td style="white-space:nowrap">very-much-role<a name="de-mii-cs-pro-eortc-qlq-c30-very-much-role"> </a></td><td>Very much</td><td>Sehr</td></tr><tr><td style="white-space:nowrap">1-very-poor<a name="de-mii-cs-pro-eortc-qlq-c30-1-very-poor"> </a></td><td>1 - Very poor</td><td>1 - Sehr schlecht</td></tr><tr><td style="white-space:nowrap">2-poor<a name="de-mii-cs-pro-eortc-qlq-c30-2-poor"> </a></td><td>2 - Poor</td><td>2 - Schlecht</td></tr><tr><td style="white-space:nowrap">3-fair<a name="de-mii-cs-pro-eortc-qlq-c30-3-fair"> </a></td><td>3 - Fair</td><td>3 - Mittelmäßig</td></tr><tr><td style="white-space:nowrap">4-good<a name="de-mii-cs-pro-eortc-qlq-c30-4-good"> </a></td><td>4 - Good</td><td>4 - Gut</td></tr><tr><td style="white-space:nowrap">5-very-good<a name="de-mii-cs-pro-eortc-qlq-c30-5-very-good"> </a></td><td>5 - Very good</td><td>5 - Sehr gut</td></tr><tr><td style="white-space:nowrap">6-excellent<a name="de-mii-cs-pro-eortc-qlq-c30-6-excellent"> </a></td><td>6 - Excellent</td><td>6 - Ausgezeichnet</td></tr><tr><td style="white-space:nowrap">7-perfect<a name="de-mii-cs-pro-eortc-qlq-c30-7-perfect"> </a></td><td>7 - Perfect</td><td>7 - Vollkommen</td></tr></table></div></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+  <version value="2026.2.0"/>
+  <name value="MII_CS_PRO_EORTC_QLQ_C30"/>
+  <title value="MII CS PRO EORTC QLQ-C30 Response Scale"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-04-28T19:07:24+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Response scale for EORTC QLQ-C30 questionnaire items with multilingual support"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="not-at-all"/>
+    <display value="Not at all"/>
+    <designation>
+      <language value="de"/>
+      <value value="Überhaupt nicht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="a-little"/>
+    <display value="A little"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wenig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="quite-a-bit"/>
+    <display value="Quite a bit"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mäßig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="very-much"/>
+    <display value="Very much"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sehr"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="not-at-all-role"/>
+    <display value="Not at all"/>
+    <designation>
+      <language value="de"/>
+      <value value="Überhaupt nicht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="a-little-role"/>
+    <display value="A little"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wenig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="quite-a-bit-role"/>
+    <display value="Quite a bit"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mäßig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="very-much-role"/>
+    <display value="Very much"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sehr"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="1-very-poor"/>
+    <display value="1 - Very poor"/>
+    <designation>
+      <language value="de"/>
+      <value value="1 - Sehr schlecht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="2-poor"/>
+    <display value="2 - Poor"/>
+    <designation>
+      <language value="de"/>
+      <value value="2 - Schlecht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="3-fair"/>
+    <display value="3 - Fair"/>
+    <designation>
+      <language value="de"/>
+      <value value="3 - Mittelmäßig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="4-good"/>
+    <display value="4 - Good"/>
+    <designation>
+      <language value="de"/>
+      <value value="4 - Gut"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="5-very-good"/>
+    <display value="5 - Very good"/>
+    <designation>
+      <language value="de"/>
+      <value value="5 - Sehr gut"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="6-excellent"/>
+    <display value="6 - Excellent"/>
+    <designation>
+      <language value="de"/>
+      <value value="6 - Ausgezeichnet"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="7-perfect"/>
+    <display value="7 - Perfect"/>
+    <designation>
+      <language value="de"/>
+      <value value="7 - Vollkommen"/>
+    </designation>
+  </concept>
+</CodeSystem>

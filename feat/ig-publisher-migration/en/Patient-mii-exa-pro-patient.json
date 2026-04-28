@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Patient",
+  "id" : "mii-exa-pro-patient",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-pro-patient</b></p><a name=\"mii-exa-pro-patient\"> </a><a name=\"hcmii-exa-pro-patient\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Max Mustermann  Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "system" : "http://identifiers.org/patient-ids",
+    "value" : "12345"
+  }],
+  "name" : [{
+    "family" : "Mustermann",
+    "given" : ["Max"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1980-05-15"
+}

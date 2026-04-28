@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DASS-21 - MII IG PRO v2026.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.6"}
+    h3,h4,h5,h6{--heading-prefix:"6.6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.2.0 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../de/dass-21.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='pro-library.html'><b>PRO Library</b></a></li><li><b>DASS-21</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>DASS-21</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#questionnaire-structure" id="markdown-toc-questionnaire-structure">Questionnaire Structure</a></li>
+  <li><a href="#score-calculation" id="markdown-toc-score-calculation">Score Calculation</a></li>
+  <li><a href="#fhir-implementation" id="markdown-toc-fhir-implementation">FHIR Implementation</a></li>
+  <li><a href="#psychometric-properties" id="markdown-toc-psychometric-properties">Psychometric Properties</a></li>
+  <li><a href="#domain-alignment" id="markdown-toc-domain-alignment">Domain Alignment</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
+</div>
+<h3 id="overview">Overview</h3>
+
+<p>The <strong>Depression Anxiety Stress Scales - Short Form (DASS-21)</strong> is a validated self-report instrument for the simultaneous assessment of <strong>depression</strong>, <strong>anxiety</strong>, and <strong>stress</strong>. The instrument was developed by Lovibond &amp; Lovibond (1995) at the University of New South Wales (UNSW) and is designed as the short form of the 42-item full version (DASS-42).</p>
+
+<p><strong>Key Properties:</strong></p>
+<ul>
+  <li><strong>21 items</strong> on a 4-point Likert scale (0-3)</li>
+  <li><strong>3 subscales</strong> with 7 items each: Depression, Anxiety, Stress</li>
+  <li><strong>Time frame</strong>: Past week</li>
+  <li><strong>License</strong>: Public domain – freely available without license fees</li>
+  <li><strong>German Validation</strong>: Nilges &amp; Essau (2015)</li>
+  <li><strong>Administration</strong>: 5-10 minutes</li>
+</ul>
+
+<h3 id="questionnaire-structure">Questionnaire Structure</h3>
+
+<h4 id="response-scale-4-point-likert">Response Scale (4-Point Likert)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>English (Primary)</th>
+      <th>German</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Did not apply to me at all</td>
+      <td>Traf gar nicht auf mich zu</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Applied to me to some degree</td>
+      <td>Traf bis zu einem gewissen Grad auf mich zu</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Applied to me to a considerable degree</td>
+      <td>Traf in betrachtlichem Masse auf mich zu</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Applied to me very much</td>
+      <td>Traf sehr stark auf mich zu</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="subscales-and-item-assignment">Subscales and Item Assignment</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subscale</th>
+      <th>Items</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Depression</strong></td>
+      <td>3, 5, 10, 13, 16, 17, 21</td>
+      <td>Dysphoria, hopelessness, devaluation of life, self-deprecation, lack of interest/engagement, anhedonia, inertia</td>
+    </tr>
+    <tr>
+      <td><strong>Anxiety</strong></td>
+      <td>2, 4, 7, 9, 15, 19, 20</td>
+      <td>Autonomic arousal, skeletal muscle effects, situational anxiety, subjective anxiety experience</td>
+    </tr>
+    <tr>
+      <td><strong>Stress</strong></td>
+      <td>1, 6, 8, 11, 12, 14, 18</td>
+      <td>Difficulty relaxing, nervous arousal, easy irritability, impatience</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="score-calculation">Score Calculation</h3>
+
+<h4 id="raw-scores-dass-21">Raw Scores (DASS-21)</h4>
+<p>For each subscale, the sum of the 7 associated items is calculated:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Raw Score = Sum of 7 item responses (Range: 0-21)
+</code></pre></div></div>
+
+<h4 id="dass-42-equivalents">DASS-42 Equivalents</h4>
+<p>Since the published severity cut-offs are based on the DASS-42 full version, the DASS-21 raw scores are multiplied by 2:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DASS-42 Equivalent = DASS-21 Raw Score x 2 (Range: 0-42)
+</code></pre></div></div>
+
+<h4 id="severity-cut-offs-dass-42-equivalents">Severity Cut-offs (DASS-42 Equivalents)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Severity</th>
+      <th>Depression</th>
+      <th>Anxiety</th>
+      <th>Stress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Normal</strong></td>
+      <td>0-9</td>
+      <td>0-7</td>
+      <td>0-14</td>
+    </tr>
+    <tr>
+      <td><strong>Mild</strong></td>
+      <td>10-13</td>
+      <td>8-9</td>
+      <td>15-18</td>
+    </tr>
+    <tr>
+      <td><strong>Moderate</strong></td>
+      <td>14-20</td>
+      <td>10-14</td>
+      <td>19-25</td>
+    </tr>
+    <tr>
+      <td><strong>Severe</strong></td>
+      <td>21-27</td>
+      <td>15-19</td>
+      <td>26-33</td>
+    </tr>
+    <tr>
+      <td><strong>Extremely Severe</strong></td>
+      <td>28+</td>
+      <td>20+</td>
+      <td>34+</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="severity-cut-offs-dass-21-raw-scores">Severity Cut-offs (DASS-21 Raw Scores)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Severity</th>
+      <th>Depression</th>
+      <th>Anxiety</th>
+      <th>Stress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Normal</strong></td>
+      <td>0-4</td>
+      <td>0-3</td>
+      <td>0-7</td>
+    </tr>
+    <tr>
+      <td><strong>Mild</strong></td>
+      <td>5-6</td>
+      <td>4-5</td>
+      <td>8-9</td>
+    </tr>
+    <tr>
+      <td><strong>Moderate</strong></td>
+      <td>7-10</td>
+      <td>6-7</td>
+      <td>10-12</td>
+    </tr>
+    <tr>
+      <td><strong>Severe</strong></td>
+      <td>11-13</td>
+      <td>8-9</td>
+      <td>13-16</td>
+    </tr>
+    <tr>
+      <td><strong>Extremely Severe</strong></td>
+      <td>14+</td>
+      <td>10+</td>
+      <td>17+</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fhir-implementation">FHIR Implementation</h3>
+
+<blockquote>
+  <p><strong>Language Strategy:</strong> The DASS-21 is implemented with English as the primary language, as the original version of the instrument was written in English. German translations according to Nilges &amp; Essau (2015) are provided as Translation extensions.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Terminology Strategy:</strong> The DASS-21 implementation uses <strong>MII-controlled terminology</strong> (no LOINC codes), as LOINC currently does not provide complete DASS-21 codings. The SNOMED CT codes <code class="language-plaintext highlighter-rouge">416954004 |Depression anxiety stress scales depression score|</code> and <code class="language-plaintext highlighter-rouge">416767005 |Depression anxiety stress scales stress score|</code> are used for score coding.</p>
+</blockquote>
+
+<h4 id="questionnaire">Questionnaire</h4>
+
+<p><strong>Canonical URL:</strong> <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21</code></p>
+
+<p><strong>Implemented Capabilities:</strong></p>
+<ul>
+  <li>Displayable, Collectable, Calculatable, Extractable, Domain-aligned</li>
+</ul>
+
+<p><strong>Key Features:</strong></p>
+<ul>
+  <li>Automatic score calculation via FHIR variables and FHIRPath</li>
+  <li>6 calculated score items: 3 raw scores + 3 DASS-42 equivalents</li>
+  <li>MII CodeSystem with ordinalValue extensions for scoring</li>
+</ul>
+
+<p>See the <a href="Questionnaire-mii-qst-pro-dass-dass21.html">Questionnaire definition</a> for the full resource.</p>
+
+<h4 id="codesystem-and-valueset">CodeSystem and ValueSet</h4>
+
+<p><strong>CodeSystem:</strong> <code class="language-plaintext highlighter-rouge">mii-cs-pro-dass-21</code> – Item codes and response scale with English primary texts and German translations (Nilges &amp; Essau 2015)</p>
+
+<p>See the <a href="CodeSystem-mii-cs-pro-dass-21.html">CodeSystem definition</a> for the full resource.</p>
+
+<p><strong>ValueSet:</strong> <code class="language-plaintext highlighter-rouge">mii-vs-pro-dass-21-answer-list</code> – 4-point Likert response scale (0-3)</p>
+
+<p>See the <a href="ValueSet-mii-vs-pro-dass-21-answer-list.html">ValueSet definition</a> for the full resource.</p>
+
+<h4 id="score-representation">Score Representation</h4>
+
+<p>The DASS-21 generates 6 scores at two levels:</p>
+
+<p><strong>Raw Scores (DASS-21, Range 0-21):</strong></p>
+
+<ul>
+  <li><strong>Depression Raw Score</strong> (<code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-dass21-depression-raw</code>) – SNOMED: 416954004</li>
+  <li><strong>Anxiety Raw Score</strong> (<code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-dass21-anxiety-raw</code>)</li>
+  <li><strong>Stress Raw Score</strong> (<code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-dass21-stress-raw</code>) – SNOMED: 416767005</li>
+</ul>
+
+<p><strong>DASS-42 Equivalents (Raw Score x 2, Range 0-42):</strong></p>
+
+<ul>
+  <li><strong>Depression Equivalent</strong> (<code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-dass21-depression-equiv</code>) – SNOMED: 416954004</li>
+  <li><strong>Anxiety Equivalent</strong> (<code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-dass21-anxiety-equiv</code>)</li>
+  <li><strong>Stress Equivalent</strong> (<code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-dass21-stress-equiv</code>) – SNOMED: 416767005</li>
+</ul>
+
+<h4 id="scoring-implementation">Scoring Implementation</h4>
+
+<p>Automatic score calculation via FHIR variables and SDC <code class="language-plaintext highlighter-rouge">calculatedExpression</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FHIRPath - Variable: depressionRaw
+%resource.item.where(linkId.matches('^dass-dass21-q(03|05|10|13|16|17|21)$')).answer.value.ordinal().sum()
+
+// FHIRPath - Variable: anxietyRaw
+%resource.item.where(linkId.matches('^dass-dass21-q(02|04|07|09|15|19|20)$')).answer.value.ordinal().sum()
+
+// FHIRPath - Variable: stressRaw
+%resource.item.where(linkId.matches('^dass-dass21-q(01|06|08|11|12|14|18)$')).answer.value.ordinal().sum()
+
+// DASS-42 Equivalent (Example Depression)
+%depressionRaw * 2
+</code></pre></div></div>
+
+<h3 id="psychometric-properties">Psychometric Properties</h3>
+
+<h4 id="internal-consistency">Internal Consistency</h4>
+<ul>
+  <li><strong>Depression</strong>: Cronbach's alpha = 0.88 (German version, Nilges &amp; Essau 2015)</li>
+  <li><strong>Anxiety</strong>: Cronbach's alpha = 0.76</li>
+  <li><strong>Stress</strong>: Cronbach's alpha = 0.86</li>
+</ul>
+
+<h4 id="factor-structure">Factor Structure</h4>
+<ul>
+  <li>Confirmatory <strong>3-factor model</strong> with good fit</li>
+  <li>Clear assignment of items to Depression, Anxiety, and Stress</li>
+  <li>Discriminant validity between the three subscales</li>
+</ul>
+
+<h4 id="clinical-use">Clinical Use</h4>
+<ul>
+  <li><strong>Screening</strong>: Simultaneous assessment of depression, anxiety, and stress</li>
+  <li><strong>Progress Monitoring</strong>: Sensitivity to change over time</li>
+  <li><strong>Differential Diagnostics</strong>: Differentiation between affective and anxiety disorders</li>
+  <li><strong>Research</strong>: Broad application in clinical and epidemiological studies</li>
+</ul>
+
+<h3 id="domain-alignment">Domain Alignment</h3>
+
+<p>The DASS-21 subscales are assigned to the following health domains:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subscale</th>
+      <th>Domain</th>
+      <th>Comparable Instruments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Depression</td>
+      <td>Depression</td>
+      <td>PHQ-9, BDI-II, PROMIS Depression</td>
+    </tr>
+    <tr>
+      <td>Anxiety</td>
+      <td>Anxiety</td>
+      <td>GAD-7, PROMIS Anxiety</td>
+    </tr>
+    <tr>
+      <td>Stress</td>
+      <td>Psychological Distress</td>
+      <td>K6, PSS-10</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="references">References</h3>
+
+<ol>
+  <li>
+    <p><strong>Lovibond SH, Lovibond PF.</strong> (1995)
+<em>Manual for the Depression Anxiety Stress Scales (2nd ed.)</em>
+Sydney: Psychology Foundation of Australia</p>
+  </li>
+  <li>
+    <p><strong>Nilges P, Essau C.</strong> (2015)
+<em>Die Depressions-Angst-Stress-Skalen: Der DASS – ein Screeninginstrument nicht nur fur Schmerzpatienten</em>
+Schmerz. 29(6):649-57</p>
+  </li>
+  <li>
+    <p><strong>Bibi A, Lin M, Zhang XC, Margraf J.</strong> (2020)
+<em>Psychometric properties and measurement invariance of Depression, Anxiety and Stress Scales (DASS-21) across cultures</em>
+International Journal of Psychology. 55(6):916-925</p>
+  </li>
+</ol>
+
+<hr />
+
+<p><em>This implementation follows the MII terminology strategies and uses MII CodeSystems for score calculations. The DASS-21 is public domain and can be used without license fees.</em></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-04-28 19:07:00 +0000">
+    2026-04-28
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
