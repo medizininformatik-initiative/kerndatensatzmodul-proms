@@ -89,9 +89,102 @@ dependencies:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: Home
+  module-description.md:
+    title: Module Description
+  project-context.md:
+    title: Project Context
+  use-cases.md:
+    title: Use Cases
+    datasets-and-descriptions.md:
+      title: Datasets and Descriptions
+    uml-diagrams.md:
+      title: UML Diagrams
+  technical-implementation.md:
+    title: Technical Implementation
+    workflows.md:
+      title: Workflows
+    scoring.md:
+      title: Scoring
+    id-systematics.md:
+      title: ID Systematics
+    terminology-strategies.md:
+      title: Terminology Strategies
+    questionnaire-capabilities.md:
+      title: Questionnaire Capabilities
+    validation.md:
+      title: Validation
+  pro-library.md:
+    title: PRO Library
+    phq-9.md:
+      title: PHQ-9
+    eq-5d-5l.md:
+      title: EQ-5D-5L
+      eq-5d-5l-scores.md:
+        title: EQ-5D-5L Scores
+    eortc-qlq-c30.md:
+      title: EORTC QLQ-C30
+      eortc-qlq-c30-scoring.md:
+        title: EORTC QLQ-C30 Scoring
+    promis.md:
+      title: PROMIS
+      promis-29.md:
+        title: PROMIS-29
+      promis-depression.md:
+        title: PROMIS Depression SF4a
+    bdi-ii.md:
+      title: BDI-II
+    dass-21.md:
+      title: DASS-21
+    minimal-reference-questionnaires.md:
+      title: Minimal Reference Questionnaires
+  domain-based-scoring.md:
+    title: Domain-Based Scoring
+    domains.md:
+      title: Domains
+    cross-instrument-mappings.md:
+      title: Cross-Instrument Mappings
+  derived-metrics.md:
+    title: Derived Metrics
+  references.md:
+    title: References
+  changes.md:
+    title: Changelog
+  downloads.md:
+    title: Downloads
+  translationinfo.md:
+    title: Translation Information
+
 menu:
   Home: index.html
+  Overview:
+    Module Description: module-description.html
+    Project Context: project-context.html
+    Use Cases: use-cases.html
+  Technical Implementation:
+    Technical Implementation: technical-implementation.html
+    Workflows: workflows.html
+    Scoring: scoring.html
+    ID Systematics: id-systematics.html
+    Terminology Strategies: terminology-strategies.html
+    Questionnaire Capabilities: questionnaire-capabilities.html
+    Validation: validation.html
+  PRO Library:
+    PRO Library: pro-library.html
+    PHQ-9: phq-9.html
+    EQ-5D-5L: eq-5d-5l.html
+    EORTC QLQ-C30: eortc-qlq-c30.html
+    PROMIS: promis.html
+    BDI-II: bdi-ii.html
+    DASS-21: dass-21.html
+  Domain-Based Scoring:
+    Domain-Based Scoring: domain-based-scoring.html
+    Domains: domains.html
+    Cross-Instrument Mappings: cross-instrument-mappings.html
   Artifacts: artifacts.html
+  Downloads: downloads.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -199,6 +292,17 @@ menu:
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
 #
+parameters:
+  i18n-default-lang: de
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
+  path-pages:
+    - input/intro-notes
+  excludettl: true
+  excludemap: false
+
 FSHOnly: false
 #
 #
