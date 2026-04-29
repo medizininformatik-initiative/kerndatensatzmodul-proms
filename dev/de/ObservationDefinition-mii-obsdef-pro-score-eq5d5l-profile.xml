@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="mii-obsdef-pro-score-eq5d5l-profile"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ObservationDefinition mii-obsdef-pro-score-eq5d5l-profile</b></p><a name="mii-obsdef-pro-score-eq5d5l-profile"> </a><a name="hcmii-obsdef-pro-score-eq5d5l-profile"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-score-blueprint.html">MII PR PRO Score Blueprint / Template</a></p></div><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue euroqol-eq5d5l-profile}">EuroQol EQ-5D-5L Profile</span></p><p><b>permittedDataType</b>: string</p><p><b>multipleResultsAllowed</b>: false</p><p><b>method</b>: <span title="Codes:{http://snomed.info/sct 73041000052103}">EuroQoL five dimension five level questionnaire</span></p></div>
+  </text>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+      <code value="euroqol-eq5d5l-profile"/>
+      <display value="EuroQol EQ-5D-5L Profile"/>
+    </coding>
+  </code>
+  <permittedDataType value="string"/>
+  <multipleResultsAllowed value="false"/>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="73041000052103"/>
+      <display value="EuroQoL five dimension five level questionnaire"/>
+    </coding>
+  </method>
+</ObservationDefinition>
