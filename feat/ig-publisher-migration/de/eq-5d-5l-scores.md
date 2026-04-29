@@ -2,9 +2,6 @@
 
 ## EQ-5D-5L Scores
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 Der EQ-5D-5L generiert drei verschiedene Score-Typen, die unterschiedliche Aspekte der gesundheitsbezogenen Lebensqualität erfassen. Diese Scores werden durch ObservationDefinitions spezifiziert und können aus den QuestionnaireResponse-Daten extrahiert werden.
 
 ### Score-Typen

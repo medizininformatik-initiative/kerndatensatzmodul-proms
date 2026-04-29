@@ -2,9 +2,6 @@
 
 ## PROMIS Depression SF4a
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### PROMIS Depression Short Form 4a – Technische Dokumentation
 
 Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-promis-depression-sf4a.md).

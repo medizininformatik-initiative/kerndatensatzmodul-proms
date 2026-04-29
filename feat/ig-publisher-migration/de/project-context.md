@@ -2,9 +2,6 @@
 
 ## Project Context
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Position im MII-Kerndatensatz
 
 Das PRO-Modul erweitert den MII-Kerndatensatz um die systematische Erfassung patientenberichteter Gesundheitsdaten und schafft damit eine essenzielle Verbindung zwischen objektiven klinischen Parametern und der subjektiven Patientenperspektive. Als Querschnittsmodul integriert es sich nahtlos in bestehende Datenstrukturen und nutzt die etablierten Identifikations- und Consent-Mechanismen der MII-Basismodule, während es gleichzeitig spezifische Anforderungen der Fachmodule durch domänenspezifische PRO-Instrumente bedient.

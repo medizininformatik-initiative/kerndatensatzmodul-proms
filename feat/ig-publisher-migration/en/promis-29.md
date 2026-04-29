@@ -2,6 +2,9 @@
 
 ## PROMIS-29
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 ### Overview
 
 **Status**: Fully implemented **Version**: 2026.0.0-ballot **Last Updated**: 2025-08-28

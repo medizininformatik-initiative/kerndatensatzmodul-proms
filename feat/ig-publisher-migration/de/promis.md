@@ -2,9 +2,6 @@
 
 ## PROMIS
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 Das [Patient-Reported Outcomes Measurement Information System (PROMIS)](https://www.healthmeasures.net/explore-measurement-systems/promis) ist ein vom US National Institute of Health (NIH) entwickeltes, IRT-basiertes Messsystem zur standardisierten Erfassung patientenberichteter Outcomes. PROMIS-Instrumente sind international validiert und liefern T-Scores (Mean=50, SD=10 der US-Normalbevölkerung), die instrument- und populationsübergreifend vergleichbar sind.
 
 PROMIS-Instrumente existieren in verschiedenen Konfigurationen:

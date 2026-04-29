@@ -2,9 +2,6 @@
 
 ## DASS-21
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Überblick
 
 Die **Depression Anxiety Stress Scales - Short Form (DASS-21)** ist ein validiertes Selbstbeurteilungsinstrument zur gleichzeitigen Erfassung von **Depression**, **Angst** und **Stress**. Das Instrument wurde von Lovibond & Lovibond (1995) an der University of New South Wales (UNSW) entwickelt und ist als Kurzform der 42-Item-Vollversion (DASS-42) konzipiert.

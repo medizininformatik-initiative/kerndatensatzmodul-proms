@@ -2,9 +2,6 @@
 
 ## EORTC QLQ-C30
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Übersicht
 
 **Status**: Technical Preview **Version**: 0.1.0 **Letzte Aktualisierung**: 2025-01-15

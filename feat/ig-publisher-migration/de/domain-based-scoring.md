@@ -2,9 +2,6 @@
 
 ## Domain-Based Scoring
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Übersicht
 
 Domänen-basiertes Scoring ermöglicht die Vergleichbarkeit verschiedener PRO-Instrumente durch Abbildung auf gemeinsame Gesundheitsdomänen. Statt isolierter Fragebogen-Scores werden Messwerte auf standardisierte Domänen-Metriken – primär PROMIS T-Scores (Mittelwert=50, SD=10) – transformiert.

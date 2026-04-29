@@ -2,9 +2,6 @@
 
 ## Module Description
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 Das Modul "PROs, PROMs und abgeleitete Metriken" der Medizininformatik-Initiative standardisiert die Erfassung und Auswertung von patientenberichteten Gesundheitsdaten (Patient-Reported Outcomes) durch FHIR-basierte Spezifikationen. Es werden Vorgaben zur Fragebogengestaltung im Hinblick auf verschiedene Anwendungsfelder gemacht (Darstellung, Erfassung, Berechnung, Umwandlung von Fragebogeninhalten in andere FHIR-Ressourcen). Außerdem werden häufig genutzte validierte Fragebögen wie PHQ-9, PROMIS-29, EQ-5D-5L und EORTC QLQ-C30 zentral zur Nutzung für die Datenerfassung oder als gemeinsames Harmonisierungsmapping bereitgestellt, sowie Strategien zur instrumentenunabhängigen Sekundärdatennutzung erläutert.
 
 ### Aktuelle Implementierung (Kommentierungsversion 2026)

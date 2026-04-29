@@ -2,6 +2,9 @@
 
 ## Project Context
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 ### Position within the MII Core Dataset
 
 The PRO module extends the MII core dataset with the systematic collection of patient-reported health data, thereby creating an essential link between objective clinical parameters and the subjective patient perspective. As a cross-cutting module, it integrates seamlessly into existing data structures and leverages the established identification and consent mechanisms of the MII base modules, while simultaneously addressing the specific requirements of specialist modules through domain-specific PRO instruments.

@@ -2,6 +2,9 @@
 
 ## Datasets and Descriptions
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 The MII PRO module defines a logical data model for the standardized collection and processing of Patient-Reported Outcomes. This information model forms the conceptual foundation for all FHIR profiles and describes the relationships between the various components of the PRO workflow.
 
 The officially approved version of the information model is available on [Art-Decor](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.3758&conceptEffectiveDate=2024-06-27T13%3A15%3A46&language=de-DE). For a unified representation, the information model has additionally been expressed as a FHIR Logical Model:

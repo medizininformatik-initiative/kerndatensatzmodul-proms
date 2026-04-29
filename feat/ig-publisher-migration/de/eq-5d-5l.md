@@ -2,9 +2,6 @@
 
 ## EQ-5D-5L
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Architektonisches Muster: Varianten-Architektur
 
 Der EQ-5D-5L demonstriert die Trennung von Capabilities in spezialisierte Varianten. Während der PHQ-9 alle Capabilities in einer einzigen Ressource vereint, implementiert der EQ-5D-5L verschiedene Anwendungsfälle durch separate, spezialisierte Questionnaire-Instanzen. Dieser Ansatz ermöglicht optimierte Ressourcen für spezifische Use Cases und vermeidet die Überladung einzelner Questionnaire-Definitionen mit Funktionalität, die nicht in allen Szenarien benötigt wird.

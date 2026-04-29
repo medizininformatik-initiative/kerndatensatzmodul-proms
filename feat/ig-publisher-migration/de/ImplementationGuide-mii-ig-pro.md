@@ -8,13 +8,13 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "mii-ig-pro",
-  "language" : "en",
+  "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
   "version" : "2026.2.0",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-04-29T06:19:54+00:00",
+  "date" : "2026-04-29T08:45:02+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -101,7 +101,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "en"
+        "valueString" : "de"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -112,7 +112,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "de"
+        "valueString" : "en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -123,7 +123,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "input/translations/de"
+        "valueString" : "input/translations/en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -457,7 +457,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "en"
+        "valueString" : "de"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -468,7 +468,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "de"
+        "valueString" : "en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -479,7 +479,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "input/translations/de"
+        "valueString" : "input/translations/en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

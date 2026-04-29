@@ -2,9 +2,6 @@
 
 ## Scoring
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Überblick
 
 Das MII PRO Modul unterstützt verschiedene Scoring-Strategien entlang des Workflows **Questionnaire -> QuestionnaireResponse -> Observation**. Die Wahl der Scoring-Methode hängt von organisatorischen Anforderungen, technischer Infrastruktur und Anwendungsfällen ab.

@@ -2,9 +2,6 @@
 
 ## ID Systematics
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 Eine konsistente Systematik der Identifier ist essentiell für die standardisierte Darstellung von PRO-Daten im MII-Kontext.
 
 **Wichtige Abgrenzung**: Identifier sind explizit als MII-interne Business Identifier zu verstehen und nicht zu verwechseln mit semantischen Codes (LOINC, SNOMED CT) von Fragebögen und Fragebogen-Items, die der terminologischen Annotation in offenen Standards dienen.

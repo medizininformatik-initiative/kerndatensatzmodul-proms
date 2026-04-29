@@ -2,6 +2,9 @@
 
 ## Use Cases
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 * [General Considerations](#general-considerations)
 * [Use Cases](#use-cases) 
 * [Use Case 1: ePRO Collection in Primary Care](#use-case-1-epro-collection-in-primary-care)

@@ -2,6 +2,9 @@
 
 ## Validation
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 This page documents known validation errors that occur during FHIR validation but do not represent actual problems with the resources.
 
 ## Known Errors

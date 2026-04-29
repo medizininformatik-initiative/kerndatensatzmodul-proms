@@ -2,9 +2,6 @@
 
 ## Cross-Instrument Mappings
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Überblick
 
 Cross-Instrument Mapping ermöglicht die Übersetzung von Scores zwischen verschiedenen PRO-Instrumenten, die dasselbe Konstrukt messen. Dies ist essentiell für die Harmonisierung von Daten aus verschiedenen Quellen und die Vergleichbarkeit von Studienergebnissen.

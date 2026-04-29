@@ -2,6 +2,9 @@
 
 ## PHQ-9
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 ### Clinical Context
 
 The PHQ-9 is a validated screening instrument for depression with nine items. The instrument assesses the frequency of depression symptoms over a two-week period on a four-point scale.

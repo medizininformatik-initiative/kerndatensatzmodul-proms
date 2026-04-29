@@ -2,6 +2,9 @@
 
 ## Module Description
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 The "PROs, PROMs, and Derived Metrics" module of the Medical Informatics Initiative standardizes the collection and analysis of patient-reported health data (Patient-Reported Outcomes) through FHIR-based specifications. It provides guidance on questionnaire design for various application areas (display, data collection, calculation, conversion of questionnaire content into other FHIR resources). Furthermore, frequently used validated questionnaires such as PHQ-9, PROMIS-29, EQ-5D-5L, and EORTC QLQ-C30 are provided centrally for data collection or as a common harmonization mapping, along with strategies for instrument-independent secondary data use.
 
 ### Current Implementation (Commenting Version 2026)

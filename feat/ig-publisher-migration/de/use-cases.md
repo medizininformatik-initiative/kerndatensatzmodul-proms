@@ -2,9 +2,6 @@
 
 ## Use Cases
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 * [Allgemeine Betrachtungen](#allgemeine-betrachtungen)
 * [Anwendungsfälle](#anwendungsfälle) 
 * [Use Case 1: ePRO-Erfassung in der Primärversorgung](#use-case-1-epro-erfassung-in-der-primärversorgung)

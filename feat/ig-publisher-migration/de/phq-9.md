@@ -2,9 +2,6 @@
 
 ## PHQ-9
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Klinischer Kontext
 
 Der PHQ-9 ist ein validiertes Screening-Instrument für Depression mit neun Items. Das Instrument erfasst die Häufigkeit von Depressionssymptomen über einen Zeitraum von zwei Wochen auf einer vierstufigen Skala.

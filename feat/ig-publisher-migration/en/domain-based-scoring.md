@@ -2,6 +2,9 @@
 
 ## Domain-Based Scoring
 
+ 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+
 ### Overview
 
 Domain-based scoring enables comparability across different PRO instruments by mapping them onto shared health domains. Rather than treating questionnaire scores in isolation, measurements are transformed into standardized domain metrics – primarily PROMIS T-Scores (Mean=50, SD=10).

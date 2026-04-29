@@ -2,9 +2,6 @@
 
 ## BDI-II
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 ### Übersicht
 
 Das Beck Depression Inventory II (BDI-II) ist ein etabliertes Screening-Instrument zur Erfassung depressiver Symptome.

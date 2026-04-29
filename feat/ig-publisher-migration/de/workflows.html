@@ -241,13 +241,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-<p>Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.</p>
-
-
-</p>
-
 
 
 
@@ -330,7 +323,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Die eingegebenen Antworten werden danach als FHIR QuestionnaireResponse (QR) gespeichert, wenn vorgesehen ein Score ermittelt</li>
 </ol>
 
-<div style="text-align: center;"><a name="l646">​</a>
+<div style="text-align: center;"><a name="l637">​</a>
 <img src="Workflow_Standard.svg" alt="MII PRO Workflow-Pattern: Standard" width="40%"/>
 </div>
 
@@ -353,7 +346,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Der berechnete Score wird dem Patienten sofort im UI angezeigt</li>
 </ol>
 
-<div style="text-align: center;"><a name="l689">​</a>
+<div style="text-align: center;"><a name="l680">​</a>
 <img src="Workflow_Capability-Echtzeit.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Echtzeit-Berechnung" width="40%"/>
 </div>
 
@@ -376,7 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert</li>
 </ol>
 
-<div style="text-align: center;"><a name="l734">​</a>
+<div style="text-align: center;"><a name="l725">​</a>
 <img src="Workflow_Capability-Server.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Server-Berechnung" width="50%"/>
 </div>
 
@@ -404,7 +397,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert</li>
 </ol>
 
-<div style="text-align: center;"><a name="l789">​</a>
+<div style="text-align: center;"><a name="l780">​</a>
 <img src="Workflow_Capability-Historisch.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Historische Neuberechnung" width="40%"/>
 </div>
 
@@ -453,13 +446,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Anhand der verschiedenen Workflow-Patterns wird ersichtlich, dass unterschiedliche Repräsentationsformen für die Darstellung eines Scores existieren.</p>
 
-<div style="text-align: center;"><a name="l885">​</a>
+<div style="text-align: center;"><a name="l876">​</a>
 <img src="Workflow_Score_Repraesentation.svg" alt="MII PRO Workflow-Pattern: Score Repräsentationsebenen" width="60%"/>
 </div>
 
 <p>Die grundlegende Repräsentationsform für einen berechneten Score ist die Abbildung als eigenständiges Item in einem FHIR QuestionnaireResponse. Falls für die weiterführenden Analysen nur der Score und nicht die tatsächlichen Antworten relevant sind, lässt sich der berechnete Score aus dem FHIR QuestionnaireResponse extrahieren und als FHIR Observation darstellen. Ein auf diese Weise extrahierter und gespeicherter Score kann, sofern empirisch validierte Regeln zum Mapping auf einen domänenspezifischen T-Score existieren und definiert wurden, auf den domänenspezifischen T-Score abbilden.</p>
 
-<div style="text-align: center;"><a name="l893">​</a>
+<div style="text-align: center;"><a name="l884">​</a>
 <img src="Workflow_Domain_Mapping.svg" alt="MII PRO Domain Mapping-Patterns" width="30%"/>
 </div>
 
@@ -564,7 +557,7 @@ iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='q1').answer.val
           IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-04-29 06:19:00 +0000">
+  <span title="2026-04-29 08:45:00 +0000">
     2026-04-29
   </span>
 

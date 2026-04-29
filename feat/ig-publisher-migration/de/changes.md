@@ -2,9 +2,6 @@
 
 ## Changelog
 
- 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
 **Version: 2026.2.0** (unreleased)
