@@ -3,8 +3,8 @@ MII_IG_PRO : Validation Results
 
 err = 243, warn = 1689, info = 581
 IG Publisher Version: 2.2.7
-Generated Tue Apr 28 19:33:35 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro)
- Build Errors : 89 / 21 / 0
+Generated Wed Apr 29 06:29:51 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro)
+ Build Errors : 57 / 21 / 0
  /workspace/fsh-generated/resources/Bundle-mii-exa-pro-bdi-ii-bundle : 0 / 10 / 43
  /workspace/fsh-generated/resources/Bundle-mii-exa-pro-eortc-qlq-c30-bundle : 25 / 57 / 73
  /workspace/fsh-generated/resources/Bundle-mii-exa-pro-phq-9-bundle : 0 / 61 / 38
@@ -177,59 +177,27 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/mii-exa-pro-phq-9-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/mii-exa-pro-phq-9-response.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: de/bdi-ii.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/changes.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/cross-instrument-mappings.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/cross-instrument-mappings.html#/html/body/div/div/div/div/div/p/img at Line 304, column 5: The image source 'Mapping-depression-scales.png' cannot be resolved
-ERROR: de/dass-21.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/datasets-and-descriptions.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/derived-metrics.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/domain-based-scoring.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/domain-based-scoring.html#/html/body/div/div/div/div/div/p/img at Line 385, column 5: The image source 'IRT-Antwortwahrscheinlichkeiten.png' cannot be resolved
 ERROR: de/domain-based-scoring.html#/html/body/div/div/div/div/div/p/img at Line 439, column 5: The image source 'PRO-Spannungsfeld.png' cannot be resolved
 ERROR: de/domain-based-scoring.html#/html/body/div/div/div/div/div/p/img at Line 458, column 5: The image source 'itembanking.png' cannot be resolved
-ERROR: de/domains.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/domains.html#/html/body/div/div/div/div/div/p/img at Line 472, column 5: The image source 'qlq-domaenen.png' cannot be resolved
-ERROR: de/downloads.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 291, column 8: The link 'package.tgz' for "Paket (tgz)" cannot be resolved
 ERROR: de/downloads.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 309, column 12: The link 'definitions.json.zip' for "Definitionen (JSON)" cannot be resolved
 ERROR: de/downloads.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 310, column 12: The link 'examples.json.zip' for "Beispiele (JSON)" cannot be resolved
 ERROR: de/downloads.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 314, column 12: The link 'definitions.xml.zip' for "Definitionen (XML)" cannot be resolved
 ERROR: de/downloads.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 315, column 12: The link 'examples.xml.zip' for "Beispiele (XML)" cannot be resolved
-ERROR: de/eortc-qlq-c30-scoring.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/eortc-qlq-c30.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/eq-5d-5l-scores.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/eq-5d-5l.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/eq-5d-5l.html#/html/body/div/div/div/div/div/p/a at Line 301, column 50: The link 'Questionnaire-mii-qst-pro-eq-5d-5l-minimal.html' for "Questionnaire-Definition" cannot be resolved
-ERROR: de/id-systematics.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/index.html#/html/body/div/div/div/div/div/p/p/a at Line 297, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/minimal-reference-questionnaires.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/module-description.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/phq-9.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/pro-library.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/project-context.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/promis-29.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/promis-depression.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/promis.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/questionnaire-capabilities.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/references.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/scoring.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/technical-implementation.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/terminology-strategies.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/terminology-strategies.html#/html/body/div/div/div/div/div/p/img at Line 490, column 5: The image source 'MII-PRO-Terminologie-Vergleichsmatrix.png' cannot be resolved
-ERROR: de/uml-diagrams.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/uml-diagrams.html#/html/body/div/div/div/div/div/div/img at Line 288, column 2: The image source 'MII_PRO_Informationsmodell_Compact.svg' cannot be resolved
 ERROR: de/uml-diagrams.html#/html/body/div/div/div/div/div/div/img at Line 323, column 2: The image source 'MII_PRO_Fragebögen.png' cannot be resolved
 ERROR: de/uml-diagrams.html#/html/body/div/div/div/div/div/div/img at Line 335, column 2: The image source 'MII_PROMs_Fragebögen_ausgefüllt.png' cannot be resolved
 ERROR: de/uml-diagrams.html#/html/body/div/div/div/div/div/div/img at Line 347, column 2: The image source 'MII_PROMs_Scores.png' cannot be resolved
 ERROR: de/uml-diagrams.html#/html/body/div/div/div/div/div/div/img at Line 370, column 2: The image source 'MII_PROMs_Domäne.png' cannot be resolved
-ERROR: de/use-cases.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/use-cases.html#/html/body/div/div/div/div/div/div/img at Line 327, column 2: The image source 'UseCase 1  ePRO Collection.png' cannot be resolved
 ERROR: de/use-cases.html#/html/body/div/div/div/div/div/div/img at Line 355, column 2: The image source 'UseCase 2  local harmonization.png' cannot be resolved
 ERROR: de/use-cases.html#/html/body/div/div/div/div/div/div/img at Line 375, column 2: The image source 'UseCase3  interhospital harmonization.png' cannot be resolved
 ERROR: de/use-cases.html#/html/body/div/div/div/div/div/div/img at Line 407, column 2: The image source 'UseCase 4  cross-domain harmonization.png' cannot be resolved
-ERROR: de/validation.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
-ERROR: de/workflows.html#/html/body/div/div/div/div/div/p/p/a at Line 248, column 213: The link 'translationinfo.html' for "hier" cannot be resolved
 ERROR: de/workflows.html#/html/body/div/div/div/div/div/div/img at Line 336, column 2: The image source 'Workflow_Standard.svg' cannot be resolved
 ERROR: de/workflows.html#/html/body/div/div/div/div/div/div/img at Line 359, column 2: The image source 'Workflow_Capability-Echtzeit.svg' cannot be resolved
 ERROR: de/workflows.html#/html/body/div/div/div/div/div/div/img at Line 382, column 2: The image source 'Workflow_Capability-Server.svg' cannot be resolved
@@ -1320,9 +1288,9 @@ ERROR: Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b: Questionnaire.containe
 WARNING: Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b: Questionnaire.jurisdiction[0].coding[0].system: A definition for CodeSystem 'http://unstats.un.org/unsd/methods/m49/m49.htm' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'eortc-qlq-c30-4pt-b'): Error from http://127.0.0.1:8090/fhir: Error: [f39326ba-8376-447e-b10e-424e2511dfcd]: A usable code system with URL #eortc-qlq-c30-cs-b could not be resolved.
-Information: X-Request-Id: 11226ba6-b76b-47ae-9524-06a24f34d793
+Information: X-Request-Id: 271b6b79-c8e3-41ba-b54f-54c4367945df
 WARNING: ValueSet.where(id = 'eortc-qlq-c30-7pt-b'): Error from http://127.0.0.1:8090/fhir: Error: [1981dd9c-3356-4751-ae77-07691a276c5e]: A usable code system with URL #eortc-qlq-c30-cs-b could not be resolved.
-Information: X-Request-Id: 5007db28-c3f6-413c-ba1a-54d7491e55b7
+Information: X-Request-Id: f736a7f9-1ccf-48e2-8a31-c85e0626713b
 WARNING: IG: "The narrative includes custom content for the default language (en), but does not include translated content for the de language, so the default language has been used
 == fsh-generated/resources/Questionnaire-mii-qst-pro-epds.json ==
 WARNING: Questionnaire/mii-qst-pro-epds: Questionnaire.language: A definition for CodeSystem 'null' could not be found, so the code cannot be validated

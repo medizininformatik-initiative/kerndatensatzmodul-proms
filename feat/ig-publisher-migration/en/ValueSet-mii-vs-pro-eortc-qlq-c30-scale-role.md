@@ -33,7 +33,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-28T19:22:30+00:00",
+  "date" : "2026-04-29T06:19:54+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

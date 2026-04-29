@@ -33,7 +33,7 @@
   "title" : "MII VS PRO EORTC QLQ-C30 7-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-28T19:22:30+00:00",
+  "date" : "2026-04-29T06:19:54+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
