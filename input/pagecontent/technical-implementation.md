@@ -1,10 +1,10 @@
-This section describes the technical implementation details of the MII PRO module, including workflow patterns, scoring strategies, identifier conventions, and terminology approaches.
+Dieser Abschnitt beschreibt die technischen Implementierungsdetails des MII PRO Moduls, einschließlich Workflow-Patterns, Scoring-Strategien, Identifier-Konventionen und Terminologie-Ansätze.
 
-### Sub-Pages
+### Unterseiten
 
-- [Workflows](workflows.html) -- Capability-based workflow patterns for questionnaire collection, calculation, and display
-- [Scoring](scoring.html) -- Scoring strategies along the Questionnaire to QuestionnaireResponse to Observation pipeline, including FHIRPath and CQL approaches
-- [ID Systematics](id-systematics.html) -- Naming conventions for FHIR resources, namespaces, linkIds, and terminology strategies for answer options
-- [Terminology Strategies](terminology-strategies.html) -- Decision criteria for inline answerOption vs. answerValueSet with MII CodeSystems
-- [Questionnaire Capabilities](questionnaire-capabilities.html) -- Separation of concerns architecture with composable capabilities (collectable, populatable, calculatable, displayable, extractable)
-- [Validation](validation.html) -- Known validation errors, suppression configuration, and local validation setup
+- [Workflows](workflows.html) -- Capability-basierte Workflow-Patterns für die Fragebogenerhebung, -berechnung und -anzeige
+- [Scoring](scoring.html) -- Scoring-Strategien entlang der Questionnaire-zu-QuestionnaireResponse-zu-Observation-Pipeline, einschließlich FHIRPath- und CQL-Ansätze
+- [ID-Systematik](id-systematics.html) -- Namenskonventionen für FHIR-Ressourcen, Namespaces, linkIds und Terminologie-Strategien für Antwortoptionen
+- [Terminologie-Strategien](terminology-strategies.html) -- Entscheidungskriterien für inline answerOption vs. answerValueSet mit MII CodeSystems
+- [Questionnaire Capabilities](questionnaire-capabilities.html) -- Separation-of-Concerns-Architektur mit kombinierbaren Capabilities (collectable, populatable, calculatable, displayable, extractable)
+- [Validierung](validation.html) -- Bekannte Validierungsfehler, Unterdrückungskonfiguration und lokales Validierungs-Setup

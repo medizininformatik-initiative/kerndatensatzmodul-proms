@@ -1,54 +1,54 @@
-### Overview
+### Übersicht
 
-This section contains minimal reference implementations of PRO instruments that cannot be fully implemented due to licensing restrictions.
+Diese Sektion enthält minimale Referenz-Implementierungen von PRO-Instrumenten, die aufgrund von Lizenzbestimmungen nicht vollständig implementiert werden können.
 
-### Implemented Questionnaires
+### Implementierte Questionnaires
 
 #### HADS (Hospital Anxiety and Depression Scale)
 - **SNOMED CT**: `273524006 |Hospital anxiety and depression scale (assessment scale)|`
-- **Status**: Metadata-only, not displayable
+- **Status**: Metadata-only, nicht displayable
 - **Canonical URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads`
 
 #### EPDS (Edinburgh Postnatal Depression Scale)
 - **SNOMED CT**: `273441006 |Edinburgh postnatal depression scale (assessment scale)|`
-- **Status**: Metadata-only, not displayable
+- **Status**: Metadata-only, nicht displayable
 - **Canonical URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-epds`
 
 #### CES-D (Center for Epidemiological Studies Depression Scale)
-- **Status**: Metadata-only, not displayable
+- **Status**: Metadata-only, nicht displayable
 - **Canonical URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ces-d`
 
 #### K6 (Kessler Psychological Distress Scale)
-- **Status**: Metadata-only, not displayable
+- **Status**: Metadata-only, nicht displayable
 - **Canonical URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-k6`
 
 ### Capabilities
 
-The minimal reference questionnaires have the following capability settings:
+Die minimal reference questionnaires haben folgende Capability-Einstellungen:
 
-#### Default Settings (EPDS, CES-D, K6):
+#### Standard-Einstellungen (EPDS, CES-D, K6):
 - `displayable = false`
 - `collectable = false`
 - `calculatable = false`
 - `extractable = false`
 - `domainAligned = true`
 
-#### Special Case HADS:
+#### Sonderfall HADS:
 - `displayable = false`
 - `collectable = false`
 - `calculatable = false`
-- `extractable = true` (framework supports extraction for external scoring systems)
+- `extractable = true` (Framework unterstützt Extraktion für externe Scoring-Systeme)
 - `domainAligned = true`
 
-### Usage Notes
+### Hinweise zur Nutzung
 
-**Licensing**: These implementations contain only metadata and are not suitable for production use. For full implementations, appropriate licenses must be obtained from the respective rights holders.
+**Lizenzbestimmungen**: Diese Implementierungen enthalten nur Metadaten und sind für produktive Nutzung nicht geeignet. Für vollständige Implementierungen sind entsprechende Lizenzen von den Rechteinhabern einzuholen.
 
-**Framework Classification**: For HADS, EPDS, CES-D, and K6, it remains to be clarified whether these are standalone instruments or part of larger PRO frameworks.
+**Framework-Zuordnung**: Für HADS, EPDS, CES-D und K6 muss noch geklärt werden, ob diese eigenständige Instrumente sind oder Teil größerer PRO-Frameworks.
 
-### Architectural Considerations
+### Architektonische Überlegungen
 
-These minimal implementations serve as:
-- **Placeholders** for future full implementations
-- **Catalog entries** for systematic PRO overviews
-- **References** for interoperability and mapping purposes
+Diese minimalen Implementierungen dienen als:
+- **Placeholder** für zukünftige vollständige Implementierungen
+- **Catalog-Einträge** für systematische PRO-Übersichten
+- **Referenzen** für Interoperabilität und Mapping-Zwecke

@@ -1,65 +1,65 @@
-### Overview
+### Überblick
 
-The MII PRO module supports various scoring strategies along the **Questionnaire -> QuestionnaireResponse -> Observation** workflow. The choice of scoring method depends on organizational requirements, technical infrastructure, and use cases.
+Das MII PRO Modul unterstützt verschiedene Scoring-Strategien entlang des Workflows **Questionnaire -> QuestionnaireResponse -> Observation**. Die Wahl der Scoring-Methode hängt von organisatorischen Anforderungen, technischer Infrastruktur und Anwendungsfällen ab.
 
-The scoring strategies can be divided into two fundamental categories:
-- **Out-of-FHIR Scoring**: External calculation with FHIR as the transport layer
-- **In-FHIR Scoring**: Native FHIR-based calculation logic
-
----
-
-### Out-of-FHIR Scoring Strategies
-
-#### 1. No Calculation -- Pure Data Collection
-**Use case**: Structured data collection without score calculations
-- Questionnaire with basic items
-- QuestionnaireResponse for raw data
-- No automatic Observation creation
-- **Example**: Data collection for subsequent external analysis
-
-#### 2. Pre-Calculated Scores (Import-Based)
-**Use case**: Integration of external PRO systems (REDCap, clinical systems)
-- Scores are calculated externally and imported as Observations
-- FHIR serves as the interoperability layer
-- `derivedFrom` references the original QuestionnaireResponse
-- **Example**: REDCap-based studies with established scoring algorithms
-
-#### 3. External API-Based Calculation
-**Use case**: Specialized scoring services (R libraries, statistical packages)
-- QuestionnaireResponse is transmitted to an external API
-- Calculation is performed in an optimized environment
-- Result Observations are stored back in FHIR
-- **Example**: Complex psychometric calculations, IRT-based scores
+Die Scoring-Strategien lassen sich in zwei grundlegende Kategorien einteilen:
+- **Out-of-FHIR Scoring**: Externe Berechnung mit FHIR als Transportschicht
+- **In-FHIR Scoring**: Native FHIR-basierte Berechnungslogik
 
 ---
 
-### In-FHIR Scoring Strategies
+### Out-of-FHIR Scoring-Strategien
 
-#### 4. FHIRPath-Based Inline Calculation
-**Use case**: Real-time scoring with moderate complexity
+#### 1. Keine Berechnung -- Reine Datensammlung
+**Anwendungsfall**: Strukturierte Datensammlung ohne Score-Berechnungen
+- Questionnaire mit grundlegenden Items
+- QuestionnaireResponse für Rohdaten
+- Keine automatische Observation-Erstellung
+- **Beispiel**: Datensammlung für spätere externe Analyse
 
-**Implementation approach -- variable-based (recommended)**:
+#### 2. Vorberechnete Scores (Import-basiert)
+**Anwendungsfall**: Integration externer PRO-Systeme (REDCap, klinische Systeme)
+- Scores werden extern berechnet und als Observations importiert
+- FHIR dient als Interoperabilitätsschicht
+- `derivedFrom` verweist auf ursprüngliche QuestionnaireResponse
+- **Beispiel**: REDCap-basierte Studien mit etablierten Scoring-Algorithmen
+
+#### 3. Externe API-basierte Berechnung
+**Anwendungsfall**: Spezialisierte Scoring-Services (R-Libraries, statistische Pakete)
+- QuestionnaireResponse wird an externe API übertragen
+- Berechnung erfolgt in optimierter Umgebung
+- Ergebnis-Observations werden zurück in FHIR gespeichert
+- **Beispiel**: Komplexe psychometrische Berechnungen, IRT-basierte Scores
+
+---
+
+### In-FHIR Scoring-Strategien
+
+#### 4. FHIRPath-basierte Inline-Berechnung
+**Anwendungsfall**: Real-time Scoring mit moderater Komplexität
+
+**Implementierungsansatz -- Variable-basiert (Empfohlen)**:
 ~~~~
 // FSH
-// PROMIS Depression SF 4a Example
+// PROMIS Depression SF 4a Beispiel
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
 * extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
 
-// T-Score Conversion
+// T-Score Konversion
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
 * item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, ..., {})))))))))))))))))"
 ~~~~
 
-**Advantages**:
-- Avoidance of circular dependencies
-- Clear separation between raw score and transformed scores
-- Better maintainability and debugging
+**Vorteile**:
+- Vermeidung zirkulärer Abhängigkeiten
+- Klare Trennung zwischen Rohscore und transformierten Scores
+- Bessere Wartbarkeit und Debugging
 
-#### 5. CQL-Based Calculation
-**Use case**: Complex statistical calculations, population-based normalization
+#### 5. CQL-basierte Berechnung
+**Anwendungsfall**: Komplexe statistische Berechnungen, bevölkerungsbasierte Normierung
 
 ~~~~
 // CQL
@@ -78,52 +78,52 @@ define "PHQ-9 Severity Category":
   end
 ~~~~
 
-#### 6. SDC Extraction-Based Methods
+#### 6. SDC Extraction-basierte Methoden
 
-**6a. Observation-Based Extraction**
-- Direct conversion of questionnaire items to Observations
-- One Observation per calculated score
-- Suitable for standard scores
+**6a. Observation-based Extraction**
+- Direkte Konvertierung von Questionnaire-Items zu Observations
+- Ein Observation pro berechneten Score
+- Geeignet für Standard-Scores
 
-**6b. Definition-Based Extraction**
-- Mapping to various FHIR resource types
-- Flexible target structures (Condition, DiagnosticReport, etc.)
-- Suitable for complex clinical workflows
+**6b. Definition-based Extraction**
+- Mapping zu verschiedenen FHIR-Ressourcentypen
+- Flexible Zielstrukturen (Condition, DiagnosticReport, etc.)
+- Geeignet für komplexe klinische Workflows
 
-**6c. StructureMap-Based Extraction**
-- FHIR Mapping Language for complex transformations
-- Suitable for item-based architecture
-- Supports component-based Observations
+**6c. StructureMap-based Extraction**
+- FHIR Mapping Language für komplexe Transformationen
+- Geeignet für item-basierte Architektur
+- Unterstützt komponentenbasierte Observations
 
 ---
 
 ### Multi-Score Questionnaires
 
-Complex questionnaires often generate multiple scores. **Example EQ-5D-5L**:
+Komplexe Fragebögen generieren oft mehrere Scores. **Beispiel EQ-5D-5L**:
 
 ~~~~
 // FSH
-// Index Score (preference-based)
+// Index Score (Präferenz-basiert)
 * item[score-index].code = SCT#736534008 "EuroQol EQ-5D-5L index value"
 
-// VAS Score (self-assessment)
+// VAS Score (Selbsteinschätzung)
 * item[score-vas].code = SCT#736535009 "EuroQol EQ-5D-5L visual analog scale"
 
-// Profile Score (domain-specific)
+// Profile Score (Domänen-spezifisch)
 * item[score-profile].code = MII#eq5d5l-profile "EQ-5D-5L Profile Score"
 ~~~~
 
-**ObservationDefinition Integration**:
-- Separate ObservationDefinitions per score type
-- Population-specific reference ranges
-- Score-health-correlation extensions
+**ObservationDefinition-Integration**:
+- Separate ObservationDefinitions pro Score-Typ
+- Bevölkerungsspezifische Referenzbereiche
+- Score-Health-Korrelations-Extensions
 
 ---
 
-### Advanced Scoring Concepts
+### Erweiterte Scoring-Konzepte
 
-#### Score Mapping and Cross-Walking
-**Use case**: Harmonization between different PRO instruments
+#### Score-Mapping und Cross-Walking
+**Anwendungsfall**: Harmonisierung zwischen verschiedenen PRO-Instrumenten
 
 ~~~~
 // FSH
@@ -133,8 +133,8 @@ Complex questionnaires often generate multiple scores. **Example EQ-5D-5L**:
 * method.text = "PHQ-9 to PROMIS Depression conversion algorithm (Choi et al. 2014)"
 ~~~~
 
-#### Measure/MeasureReport-Based Analyses
-**Use case**: Longitudinal analyses, population metrics
+#### Measure/MeasureReport-basierte Analysen
+**Anwendungsfall**: Longitudinale Analysen, Populationsmetriken
 
 ~~~~
 // CQL
@@ -147,36 +147,36 @@ define "Depression Prevalence":
 
 ---
 
-### Implementation Recommendations
+### Implementierungsempfehlungen
 
-#### For simple scores:
-- **Out-of-FHIR**: Pre-calculated imports from established systems
-- **In-FHIR**: Variable-based FHIRPath calculation
+#### Für einfache Scores:
+- **Out-of-FHIR**: Vorberechnete Imports aus etablierten Systemen
+- **In-FHIR**: Variable-basierte FHIRPath-Berechnung
 
-#### For complex scores:
-- **Out-of-FHIR**: External API-based calculation
-- **In-FHIR**: CQL libraries with Measure/MeasureReport
+#### Für komplexe Scores:
+- **Out-of-FHIR**: Externe API-basierte Berechnung
+- **In-FHIR**: CQL-Libraries mit Measure/MeasureReport
 
-#### For multi-score questionnaires:
-- Separate ObservationDefinitions per score
-- Variable-based calculation for dependency avoidance
-- Score-health-correlation extensions for clinical interpretation
+#### Für Multi-Score Questionnaires:
+- Separate ObservationDefinitions pro Score
+- Variable-basierte Berechnung zur Abhängigkeitsvermeidung
+- Score-Health-Korrelations-Extensions für klinische Interpretation
 
-#### For score harmonization:
-- ConceptMaps for terminological mappings
-- StructureMaps for complex data transformations
-- CQL libraries for statistical conversions
+#### Für Score-Harmonisierung:
+- ConceptMaps für terminologische Mappings
+- StructureMaps für komplexe Datentransformationen
+- CQL-Libraries für statistische Konversionen
 
 ---
 
-### Quality Assurance
+### Qualitätssicherung
 
-**Score Validation**:
-- Retrospective recalculation for consistency checking
-- Comparison between different calculation methods
-- Identification of rounding errors and implementation differences
+**Score-Validierung**:
+- Retrospektive Neuberechnung zur Konsistenzprüfung
+- Vergleich zwischen verschiedenen Berechnungsmethoden
+- Identifikation von Rundungsfehlern und Implementierungsunterschieden
 
-**Reference Data**:
-- Integration of European population norms (EHIS Wave 3)
-- Age- and sex-specific reference ranges
-- Culture-specific adaptations for German populations
+**Referenzdaten**:
+- Integration europäischer Populationsnormen (EHIS Wave 3)
+- Alters- und geschlechtsspezifische Referenzbereiche
+- Kulturspezifische Anpassungen für deutsche Populationen

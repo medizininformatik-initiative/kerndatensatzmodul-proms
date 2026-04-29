@@ -1,127 +1,127 @@
-- [General Considerations](#general-considerations)
-- [Use Cases](#use-cases)
-    - [Use Case 1: ePRO Collection in Primary Care](#use-case-1-epro-collection-in-primary-care)
-    - [Use Case 2: Site-Internal Harmonization of Heterogeneous PROM Data](#use-case-2-site-internal-harmonization-of-heterogeneous-prom-data)
-    - [Use Case 3: Cross-Site Harmonization](#use-case-3-cross-site-harmonization)
-    - [Use Case 4: Secondary Data Use with Cross-Domain Mapping](#use-case-4-secondary-data-use-with-cross-domain-mapping)
+- [Allgemeine Betrachtungen](#allgemeine-betrachtungen)
+- [Anwendungsfälle](#anwendungsfälle)
+    - [Use Case 1: ePRO-Erfassung in der Primärversorgung](#use-case-1-epro-erfassung-in-der-primärversorgung)
+    - [Use Case 2: Standortinterne Aufbereitung heterogener PROM-Daten](#use-case-2-standortinterne-aufbereitung-heterogener-prom-daten)
+    - [Use Case 3: Standortübergreifende Harmonisierung](#use-case-3-standortübergreifende-harmonisierung)
+    - [Use Case 4: Sekundärdatennutzung mit Cross-Domain-Mapping](#use-case-4-sekundärdatennutzung-mit-cross-domain-mapping)
 
-### General Considerations
+### Allgemeine Betrachtungen
 
-Traditionally, questionnaires are completed on paper. This means that the questionnaire definition (which questions, which possible answers, etc.) and the questionnaire responses (which answers a patient selected on a specific occasion) are contained within the same document. In electronic form, however, only a single digital template is needed, which completed questionnaires can then reference. Additional versions are only necessary for versioning and, where applicable, language adaptations.
+Klassischerweise werden Fragebögen auf Papier ausgefüllt. Das führt dazu, dass die Fragebogendefinition (welche Fragen, welche Antworten möglich etc.) und die Fragebogenantworten (welche Antworten ein Patient zu einem bestimmten Anlass konkret ausgewählt hat) direkt innerhalb des gleichen Dokuments vorliegen. In elektronischer Form hingegen benötigt man nur eine einzige digitale Vorlage, auf die ausgefüllte Fragebögen dann verweisen können. Zusätzliche Versionen sind lediglich für bspw. Versionierung und ggfs. Sprachanpassungen notwendig.
 
-This separation between template and completed response is also reflected in the current FHIR specification, which distinguishes between [Questionnaire](https://hl7.org/fhir/R4/questionnaire.html) and [QuestionnaireResponse](https://hl7.org/fhir/R4/questionnaireresponse.html).
+Diese Aufspaltung zwischen Vorlage und ausgefüllte Antwort findet sich auch in der aktuellen FHIR-Spezifikation wieder, wo zwischen [Questionnaire](https://hl7.org/fhir/R4/questionnaire.html) und [QuestionnaireResponse](https://hl7.org/fhir/R4/questionnaireresponse.html) unterschieden wird.
 
-This modeling distinction may seem trivial here, but it carries several important implications that will be revisited at the end.
+Dieser Modellierungsunterschied scheint hier profan, bringt aber einige Besonderheiten mit sich, die am Ende noch einmal aufgegriffen werden.
 
-A similar situation applies to the calculation of scores based on given answers. Most paper questionnaires contain fields for calculated scores.
+Ähnlich verhält es sich mit der Berechnung von Scores auf Basis der gegebenen Antworten. Die meisten Papierfragebögen enthalten Felder für die berechneten Scores.
 
-[Art-Decor](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.3758&conceptEffectiveDate=2024-06-27T13%3A15%3A46&language=de-DE) was used to achieve a basic modeling of the dataset. In a further step, UML diagrams were created and supplemented with additional relevant data points. *Note: The representation of multiple languages within a single questionnaire is currently not included in the information model.*
+[Art-Decor](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.3758&conceptEffectiveDate=2024-06-27T13%3A15%3A46&language=de-DE) wurde genutzt, um eine grundsätzliche Modellierung des Datensatzes zu erreichen. In einem weiteren Schritt wurden UML-Diagramme erstellt und um weitere relevante Datenpunkte ergänzt. *Achtung: Die Darstellung von verschiedenen Sprachen in einem Fragebogen ist derzeit nicht im Informationsmodell enthalten.*
 
-This MII Core Data Set module relates to the use of PROs and PROMs in the research context. We are glad to provide groundwork with our specifications for the collection and exchange of PROM data in broad clinical practice. However, it should be noted that the calculation of scores in software may be subject to the [German Medical Devices Act (MPG)](https://www.gesetze-im-internet.de/mpg/BJNR196300994.html).
-
----
-
-### Use Cases
-
-This MII Core Data Set module supports four central use case scenarios for Patient-Reported Outcomes in the German healthcare system:
-
-1. **Clinical Course Documentation** -- ePRO collection in primary care
-2. **Local Data Harmonization** -- Site-internal harmonization of heterogeneous PROM data
-3. **Cross-Site Harmonization** -- Inter-institutional harmonization
-4. **Domain-Based Research** -- Secondary data use with cross-domain mapping
-
-#### Use Case 1: ePRO Collection in Primary Care
-
-A patient (Mr. Hauff) reports recurring anxiety and panic attacks to his general practitioner and is referred to a psychosomatic clinic for further diagnosis. The treating physician Dr. Schmidt prepares the admission interview.
-
-In preparation for the interview, Mr. Hauff completes the PHQ-9 questionnaire on a tablet. The hospital information system (HIS) informs the ePROM system that the PHQ-9 should be administered. The questionnaire definition is available locally and is transmitted directly to the tablet.
-
-After completing the questionnaire:
-
-- The completed questionnaire is transmitted to the ePROM system
-- Scores are calculated automatically (12 points indicates an elevated value)
-- Results are displayed in the HIS and discussed during the interview
-- Scores and interpretation are documented in the discharge report
-
-<div style="text-align: center;">
-<img src="UseCase 1  ePRO Collection.png" alt="Sequence Diagram Use Case 1" width="45%"/>
-</div>
-
-**Derived Requirements:**
-
-- Questionnaire definition as a template (FHIR Questionnaire)
-- Definition of a completed questionnaire (FHIR QuestionnaireResponse)
-- Score designation and calculation logic (FHIR Observation)
-- Optional: Technical specification of display and presentation
-- Optional: Formally structured score interpretation
+Dieses MII KDS-Modul bezieht sich auf die Verwendung von PROs und PROMs im Forschungskontext. Wir freuen uns, mit unserer Spezifikationen Vorarbeiten für eine Erhebung und Austausch von PROM-Daten in der breiten Versorgungspraxis zu ermöglichen. Dabei ist jedoch zu beachten, dass die Berechnung von Scores in Software dem [Medizinproduktegesetz (MPG)](https://www.gesetze-im-internet.de/mpg/BJNR196300994.html) unterliegen können.
 
 ---
 
-#### Use Case 2: Site-Internal Harmonization of Heterogeneous PROM Data
+### Anwendungsfälle
 
-Dr. Schmidt has worked with the PHQ-9 in several research projects. Extensive PHQ-9 data is available:
+Dieses MII KDS-Modul unterstützt vier zentrale Anwendungsszenarien für Patient-Reported Outcomes im deutschen Gesundheitswesen:
 
-- In the HIS at admission and discharge time points
-- In REDCap from various studies
-- In new FHIR-based study systems
+1. **Klinische Verlaufsdokumentation** -- ePRO-Erfassung in der Primärversorgung
+2. **Lokale Datenharmonisierung** -- Standortinterne Aufbereitung heterogener PROM-Daten
+3. **Übergreifende Harmonisierung** -- Standortübergreifende Harmonisierung
+4. **Domänen-basierte Forschung** -- Sekundärdatennutzung mit Cross-Domain-Mapping
 
-Ms. Dirsch from the Data Integration Center harmonizes these heterogeneous data sources into a unified FHIR format.
+#### Use Case 1: ePRO-Erfassung in der Primärversorgung
+
+Ein Patient (Herr Hauff) berichtet beim Hausarzt von wiederkehrenden Angst- und Panikattacken und wird zur weiteren Diagnostik an eine Psychosomatische Klinik überwiesen. Die behandelnde Ärztin Dr. Schmidt bereitet das Aufnahmegespräch vor.
+
+In Vorbereitung des Gesprächs füllt Herr Hauff auf einem Tablet den PHQ-9 Fragebogen aus. Das KIS informiert das ePROM-System, dass der PHQ-9 abgefragt werden soll. Die Fragebogendefinition ist lokal vorhanden und wird direkt an das Tablet übertragen.
+
+Nach Abschluss des Fragebogens:
+
+- Ausgefüllter Fragebogen wird an das ePROM-System übertragen
+- Scores werden automatisch berechnet (12 Punkte: erhöhter Wert)
+- Ergebnisse werden im KIS dargestellt und im Gespräch besprochen
+- Scores und Interpretation werden im Entlassbericht dokumentiert
 
 <div style="text-align: center;">
-<img src="UseCase 2  local harmonization.png" alt="Sequence Diagram Use Case 2" width="100%"/>
+<img src="UseCase 1  ePRO Collection.png" alt="Sequenzdiagramm Use Case 1" width="45%"/>
 </div>
 
-**Derived Requirements:**
+**Abgeleitete Anforderungen:**
 
-- Publicly available questionnaire template as a mapping target
-- Mapping of completed answers from source format (ETL processes for non-FHIR to FHIR conversion or FHIR StructureMap for FHIR-to-FHIR mappings)
-- Optional: Recalculation of scores for consistency/validation purposes
+- Fragebogendefinition als Vorlage (FHIR Questionnaire)
+- Definition eines ausgefüllten Fragebogens (FHIR QuestionnaireResponse)
+- Scorebezeichnung und -berechnungslogik (FHIR Observation)
+- Optional: Technische Spezifikation von Anzeige und Darstellung
+- Optional: Formal strukturierte Score-Interpretation
 
 ---
 
-### Use Case 3: Cross-Site Harmonization
+#### Use Case 2: Standortinterne Aufbereitung heterogener PROM-Daten
 
-Dr. Schmidt leads a collaborative project "Depressive Disorders and Burnout in Home Office". All participating hospitals use the PHQ-9, but with different ePROM systems.
+Dr. Schmidt hat in mehreren Forschungsprojekten mit dem PHQ-9 gearbeitet. Es liegen umfangreiche PHQ-9-Daten vor:
 
-Harmonization is carried out through the Data Integration Centers using standardized FHIR profiles.
+- Im KIS zu Aufnahme- und Entlasszeitpunkten
+- In REDCap aus verschiedenen Studien
+- In neuen FHIR-basierten Studiensystemen
+
+Frau Dirsch vom Datenintegrationszentrum harmonisiert diese heterogenen Datenquellen in ein einheitliches FHIR-Format.
 
 <div style="text-align: center;">
-<img src="UseCase3  interhospital harmonization.png" alt="Sequence Diagram Use Case 3" width="65%"/>
+<img src="UseCase 2  local harmonization.png" alt="Sequenzdiagramm Use Case 2" width="100%"/>
 </div>
 
-**Derived Requirements:**
+**Abgeleitete Anforderungen:**
 
-- Standardized target specification for questionnaires including scores (FHIR Questionnaire, FHIR Observation)
-- Harmonization of questionnaire responses with locally differing codes (FHIR CodeSystem, FHIR ValueSet)
-- Provision of mappings from local to globally standardized question and answer codes (FHIR ConceptMap)
-- Optional: Recalculation/validation of calculated scores before central analysis
+- Öffentlich verfügbare Fragebogenvorlage als Mapping-Target
+- Mapping der ausgefüllten Antworten vom Source-Format (ETL-Prozesse für Non-FHIR zu FHIR Konvertierung oder FHIR StructureMap für FHIR-zu-FHIR Mappings)
+- Optional: Neuberechnung der Scores aus Konsistenz- / Validierungsgründen
 
 ---
 
-### Use Case 4: Secondary Data Use with Cross-Domain Mapping
+### Use Case 3: Standortübergreifende Harmonisierung
 
-Dr. Claussen is a clinical researcher studying secondary data use for depression. He uses distributed analyses through the Research Portal for Health of the Medical Informatics Initiative. Initial exploratory queries revealed that different sites use different PROMs.
+Dr. Schmidt betreut ein Verbundprojekt "Depressive Erkrankungen und Burnout im Home-Office". Alle beteiligten Krankenhäuser nutzen den PHQ-9, aber mit unterschiedlichen ePROM-Systemen.
 
-*Challenge*:
-
-Different sites use different depression PROMs (e.g., PHQ-9, BDI-II, PROMIS Depression); comparability of PROM scores is not guaranteed.
-
-*Solution*:
-
-Cross-domain mapping to a shared depression domain through:
-
-- Score-based mapping: Direct conversion of scores (e.g., lookup tables)
-- Item-based mapping: Recalculation from individual answers
+Die Harmonisierung erfolgt über die Datenintegrationszentren mit standardisierten FHIR-Profilen.
 
 <div style="text-align: center;">
-<img src="UseCase 4  cross-domain harmonization.png" alt="Sequence Diagram Use Case 4" width="100%"/>
+<img src="UseCase3  interhospital harmonization.png" alt="Sequenzdiagramm Use Case 3" width="65%"/>
 </div>
 
-**Derived Requirements:**
+**Abgeleitete Anforderungen:**
 
-- Technical specification of a template for overarching domains and scales
-- Content and technical specification of individual domains
-- Linkages and mappings from individual calculated scores to domains
-- Linkages and mappings from completed questionnaires to domains
-- Calculation of domain scores at the sites
-- Governance for developing new domains
+- Standardisierte Zielspezifikation von Fragebögen inkl. Scores (FHIR Questionnaire, FHIR Observation)
+- Harmonisierung von Fragebogenantworten mit lokal unterschiedlichen Codes (FHIR CodeSystem, FHIR ValueSet)
+- Bereitstellung eines Mappings von lokalen zu global standardisierten Fragen- und Antwortcodes (FHIR ConceptMap)
+- Optional: Neuberechnung / Validierung der berechneten Scores vor zentraler Auswertung
+
+---
+
+### Use Case 4: Sekundärdatennutzung mit Cross-Domain-Mapping
+
+Dr. Claussen ist ein Clinical Researcher und forscht an Sekundärdatennutzung zu Depression. Er nutzt dafür verteilte Analysen mit dem Forschungsportal für Gesundheit der Medizininformatik-Initiative. In ersten explorativen Anfragen hatte sich gezeigt, dass an verschiedenen Standorten verschiedene PROMs zum Einsatz kommen.
+
+*Herausforderung*:
+
+Verschiedene Standorte nutzen unterschiedliche Depression-PROMs (z.B. PHQ-9, BDI-II, PROMIS Depression); eine Vergleichbarkeit der PROM-Scores ist nicht gewährleistet.
+
+*Lösung*:
+
+Cross-Domain-Mapping auf gemeinsame Depressionsdomäne durch:
+
+- Score-based Mapping: Direkte Umrechnung der Scores (z.B. Lookup-Tabellen)
+- Item-based Mapping: Neuberechnung aus einzelnen Antworten
+
+<div style="text-align: center;">
+<img src="UseCase 4  cross-domain harmonization.png" alt="Sequenzdiagramm Use Case 4" width="100%"/>
+</div>
+
+**Abgeleitete Anforderungen:**
+
+- Technische Spezifikation einer Vorlage für übergeordnete Domänen und Skalen
+- Inhaltliche und technische Spezifikation von einzelnen Domänen
+- Verknüpfungen und Mappings von einzelnen berechneten Scores zu Domänen
+- Verknüpfung und Mappings von ausgefüllten Fragebögen zu Domänen
+- Berechnung von Domänen-Scores an den Standorten
+- Governance zur Erschließung neuer Domänen

@@ -1,98 +1,98 @@
-- [Information Model Overview](#information-model-overview)
-- [Component: Questionnaire Template](#component-questionnaire-template)
-- [Component: Completed Questionnaire](#component-completed-questionnaire)
-- [Component: Scores](#component-scores)
-- [Component: Domains](#component-domains)
-- [Implementation Notes](#implementation-notes)
+- [Übersicht Informationsmodell](#übersicht-informationsmodell)
+- [Komponente: Fragebogen-Vorlage](#komponente-fragebogen-vorlage)
+- [Komponente: Ausgefüllter Fragebogen](#komponente-ausgefüllter-fragebogen)
+- [Komponente: Scores](#komponente-scores)
+- [Komponente: Domänen](#komponente-domänen)
+- [Hinweise zur Implementierung](#hinweise-zur-implementierung)
 
-### Information Model Overview
+### Übersicht Informationsmodell
 
-The information model consists of four main components that interact to represent the complete lifecycle of Patient-Reported Outcomes:
+Das Informationsmodell besteht aus vier Hauptkomponenten, die miteinander interagieren, um den vollständigen Lebenszyklus von Patient-Reported Outcomes abzubilden:
 
 <div style="text-align: center;">
-<img src="MII_PRO_Informationsmodell_Compact.svg" alt="MII PRO Information Model Overview" width="25%"/>
+<img src="MII_PRO_Informationsmodell_Compact.svg" alt="MII PRO Übersicht Informationsmodell" width="25%"/>
 </div>
 
-The complete information model can be viewed in the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg).
+Das vollständige Informationsmodell kann im [Github-Repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg) betrachtet werden.
 
-**Legend**
+**Legende**
 
-The UML diagrams use the following notation:
+Die UML-Diagramme verwenden folgende Notationen:
 
-- **Classes**: Rectangles with attributes and methods
-- **Relationships**:
-  - Solid line with diamond: Composition (part-whole relationship)
-  - Solid line with arrow: Association
-  - Dashed line with arrow: Dependency
-- **Multiplicities**:
-  - `1` = exactly one
-  - `0..1` = optional (zero or one)
-  - `1..*` = at least one
-  - `0..*` or `*` = any number
+- **Klassen**: Rechtecke mit Attributen und Methoden
+- **Beziehungen**:
+  - Durchgezogene Linie mit Raute: Komposition (Teil-Ganzes-Beziehung)
+  - Durchgezogene Linie mit Pfeil: Assoziation
+  - Gestrichelte Linie mit Pfeil: Abhängigkeit
+- **Multiplizitäten**:
+  - `1` = genau eins
+  - `0..1` = optional (null oder eins)
+  - `1..*` = mindestens eins
+  - `0..*` oder `*` = beliebig viele
 
 ---
 
-### Component: Questionnaire Template
+### Komponente: Fragebogen-Vorlage
 
-The questionnaire template defines the structure and content of a PRO instrument. It contains all necessary information for the display, collection, and evaluation of questions.
+Die Fragebogen-Vorlage definiert die Struktur und den Inhalt eines PRO-Instruments. Sie enthält alle notwendigen Informationen zur Darstellung, Erfassung und Auswertung der Fragen.
 
 <div style="text-align: center;">
-<img src="MII_PRO_Fragebögen.png" alt="MII PRO Questionnaire Structure" width="100%"/>
+<img src="MII_PRO_Fragebögen.png" alt="MII PRO Fragebogen-Struktur" width="100%"/>
 </div>
 
-**FHIR Mapping**: The questionnaire template maps to the FHIR resource `Questionnaire`. The hierarchical structure of questions is represented through `Questionnaire.item`, while answer options are defined in `answerOption`.
+**FHIR-Mapping**: Die Fragebogen-Vorlage wird auf die FHIR-Ressource `Questionnaire` gemappt. Die hierarchische Struktur der Fragen wird durch `Questionnaire.item` abgebildet, während Antwortoptionen in `answerOption` definiert werden.
 
 ---
 
-### Component: Completed Questionnaire
+### Komponente: Ausgefüllter Fragebogen
 
-The completed questionnaire captures the concrete answers of a patient at a specific point in time. It references the underlying questionnaire template and stores the given answers in a structured manner.
+Der ausgefüllte Fragebogen erfasst die konkreten Antworten eines Patienten zu einem bestimmten Zeitpunkt. Er referenziert die zugrundeliegende Fragebogen-Vorlage und speichert die gegebenen Antworten strukturiert ab.
 
 <div style="text-align: center;">
-<img src="MII_PROMs_Fragebögen_ausgefüllt.png" alt="MII PRO Completed Questionnaires" width="70%"/>
+<img src="MII_PROMs_Fragebögen_ausgefüllt.png" alt="MII PRO Ausgefüllte Fragebögen" width="70%"/>
 </div>
 
-**FHIR Mapping**: The completed questionnaire maps to `QuestionnaireResponse`. The individual answers are stored in `QuestionnaireResponse.item.answer`, supporting various data types.
+**FHIR-Mapping**: Der ausgefüllte Fragebogen wird auf `QuestionnaireResponse` gemappt. Die einzelnen Antworten werden in `QuestionnaireResponse.item.answer` gespeichert, wobei verschiedene Datentypen unterstützt werden.
 
 ---
 
-### Component: Scores
+### Komponente: Scores
 
-The score component encompasses both the definition of calculation algorithms (score template) and the concrete calculated values (score instance). It supports various calculation types and enables mappings between different scoring systems.
+Die Score-Komponente umfasst sowohl die Definition von Berechnungsalgorithmen (Score-Vorlage) als auch die konkreten berechneten Werte (Score-Instanz). Sie unterstützt verschiedene Berechnungsarten und ermöglicht Mappings zwischen unterschiedlichen Scoring-Systemen.
 
 <div style="text-align: center;">
-<img src="MII_PROMs_Scores.png" alt="MII PRO Score Structure" width="100%"/>
+<img src="MII_PROMs_Scores.png" alt="MII PRO Score-Struktur" width="100%"/>
 </div>
 
-**Distinction between Score Types**:
-- **Score_Fragebogen_Score**: Calculation is based on a complete filled-out questionnaire
-- **Score_Itembasierter_Score**: Calculation is based on individual items from potentially different questionnaires
+**Unterscheidung der Score-Typen**:
+- **Score_Fragebogen_Score**: Berechnung basiert auf einem vollständigen ausgefüllten Fragebogen
+- **Score_Itembasierter_Score**: Berechnung basiert auf einzelnen Items aus möglicherweise verschiedenen Fragebögen
 
-**FHIR Mapping**:
-- Score templates map to `ObservationDefinition`
-- Calculated scores are stored as `Observation`
-- The connection to the data source is established via `Observation.derivedFrom`
+**FHIR-Mapping**:
+- Score-Vorlagen werden auf `ObservationDefinition` gemappt
+- Berechnete Scores werden als `Observation` gespeichert
+- Die Verbindung zur Datenquelle erfolgt über `Observation.derivedFrom`
 
 ---
 
-### Component: Domains
+### Komponente: Domänen
 
-Domains classify PRO scores by health areas and enable their classification into overarching concepts. They define scaling and reference values for the interpretation of scores.
+Domänen klassifizieren PRO-Scores nach Gesundheitsbereichen und ermöglichen die Einordnung in übergeordnete Konzepte. Sie definieren Skalierungen und Referenzwerte für die Interpretation der Scores.
 
 <div style="text-align: center;">
-<img src="MII_PROMs_Domäne.png" alt="MII PRO Domain Structure" width="100%"/>
+<img src="MII_PROMs_Domäne.png" alt="MII PRO Domänen-Struktur" width="100%"/>
 </div>
 
-**FHIR Mapping**: Domains are primarily represented through terminology resources (`CodeSystem`, `ValueSet`) and metadata in the score definitions.
+**FHIR-Mapping**: Domänen werden primär durch Terminologie-Ressourcen (`CodeSystem`, `ValueSet`) und Metadaten in den Score-Definitionen abgebildet.
 
 ---
 
-### Implementation Notes
+### Hinweise zur Implementierung
 
-The UML diagrams show the conceptual structure of the information model. The concrete FHIR implementation differs in some details:
+Die UML-Diagramme zeigen die konzeptuelle Struktur des Informationsmodells. Die konkrete FHIR-Implementierung weicht in einigen Details ab:
 
-1. **Naming convention**: The implementation uses camelCase instead of underscores
-2. **FHIR mappings**: Not all UML attributes have direct FHIR equivalents
-3. **Extensions**: Additional FHIR extensions for special requirements
+1. **Namenskonvention**: Die Implementierung verwendet camelCase statt Unterstriche
+2. **FHIR-Mappings**: Nicht alle UML-Attribute haben direkte FHIR-Entsprechungen
+3. **Erweiterungen**: Zusätzliche FHIR-Extensions für spezielle Anforderungen
 
-Details on the FHIR implementation can be found in the [Technical Implementation](technical-implementation.html) section.
+Details zur FHIR-Umsetzung sind in der [Technischen Implementierung](technical-implementation.html) zu finden.

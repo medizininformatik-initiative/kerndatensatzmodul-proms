@@ -1,17 +1,17 @@
-### Overview
+### Übersicht
 
-**Status**: Fully implemented
+**Status**: Vollständig implementiert
 **Version**: 2026.0.0-ballot
-**Last Updated**: 2025-08-28
+**Letzte Aktualisierung**: 2025-08-28
 
-The PROMIS-29 is a comprehensive instrument for assessing health-related quality of life across 7 domains plus pain intensity.
+Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen plus Schmerzintensität.
 
-See the [Questionnaire definition](Questionnaire-mii-qst-pro-promis-29.html) for the full resource.
+Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-promis-29.html).
 
-### Domains
+### Domänen
 
-| Domain | Items | Score Range | LOINC |
-|--------|-------|-------------|-------|
+| Domäne | Items | Score-Bereich | LOINC |
+|--------|-------|---------------|--------|
 | Physical Function | 4 | T-Score 20-80 | 61758-9 |
 | Anxiety | 4 | T-Score 20-80 | 61759-7 |
 | Depression | 4 | T-Score 20-80 | 61760-5 |
@@ -21,7 +21,7 @@ See the [Questionnaire definition](Questionnaire-mii-qst-pro-promis-29.html) for
 | Pain Interference | 4 | T-Score 20-80 | 61764-7 |
 | Pain Intensity | 1 | 0-10 | 75262-6 |
 
-### Technical Details
+### Technische Details
 
 #### Questionnaire Resource
 
@@ -32,32 +32,32 @@ Questionnaire/mii-qst-pro-promis-29
 **Capabilities**:
 - Displayable
 - Collectable
-- Calculatable (all domain scores)
+- Calculatable (alle Domänen-Scores)
 - Extractable
 - Domain-aligned
 
-#### Score Calculation
+#### Score-Berechnung
 
-Each domain (except Pain Intensity) is calculated as a T-Score:
+Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 
 ```
 // FHIRPath
-// Example: Depression Domain
+// Beispiel: Depression Domain
 %rawScore = %resource.item
   .where(linkId.matches('^promis-eddep(04|05|06|29)$'))
   .answer.value.ordinal()
   .sum()
 
-// T-Score Lookup (simplified)
+// T-Score Lookup (vereinfacht)
 %tScore = iif(%rawScore = 4, 41.0,
           iif(%rawScore = 5, 49.0,
           iif(%rawScore = 6, 52.5, ...)))
 ```
 
-### Language Support
+### Sprachunterstützung
 
-**Primary Language**: English (validated version)
-**German Translation**: Via Extension
+**Primärsprache**: Englisch (validierte Version)
+**Deutsche Übersetzung**: Via Extension
 
 ```json
 {
@@ -72,11 +72,11 @@ Each domain (except Pain Intensity) is calculated as a T-Score:
 }
 ```
 
-### Implementation Notes
+### Implementierungshinweise
 
-#### Variable-Based Architecture
+#### Variable-basierte Architektur
 
-The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:
+Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 
 ```fsh
 // FSH
@@ -90,13 +90,13 @@ The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:
 * item[dep-tscore].calculatedExpression = "iif(%promisDepRaw = 4, 41.0, ...)"
 ```
 
-#### Known Limitations
+#### Bekannte Einschränkungen
 
-1. **Item IDs**: Currently MII-specific (`promis-pfa11`), not LOINC-conformant
-2. **Validation Study Alignment**: IDs are based on German validation studies
-3. **Partial Responses**: No handling of missing items
+1. **Item-IDs**: Aktuell MII-spezifisch (`promis-pfa11`), nicht LOINC-konform
+2. **Validation Study Alignment**: IDs basieren auf deutschen Validierungsstudien
+3. **Partial Responses**: Keine Behandlung fehlender Items
 
-### Example QuestionnaireResponse
+### Beispiel QuestionnaireResponse
 
 ```json
 {
@@ -114,12 +114,12 @@ The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:
         }
       }]
     }
-    // ... 28 additional items
+    // ... weitere 28 Items
   ]
 }
 ```
 
-### References
+### Referenzen
 
 - [PROMIS Official Site](https://www.healthmeasures.net/explore-measurement-systems/promis)
 - [German PROMIS Validation](https://doi.org/10.1371/journal.pone.0197139)

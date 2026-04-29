@@ -1,72 +1,72 @@
-This page documents known validation errors that occur during FHIR validation but do not represent actual problems with the resources.
+Diese Seite dokumentiert bekannte Validierungsfehler, die bei der FHIR-Validierung auftreten, jedoch keine tatsächlichen Probleme mit den Ressourcen darstellen.
 
-## Known Errors
+## Bekannte Fehler
 
-### 1. Language Code System Inference (UNABLE_TO_INFER_CODESYSTEM)
+### 1. Sprachcode-Systeminferenz (UNABLE_TO_INFER_CODESYSTEM)
 
-**Error message:**
+**Fehlermeldung:**
 ```
 The System URI could not be determined for the code 'en' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages'
 ```
 
-**Cause:**
-The translation extension uses `valueCode` for language codes (e.g., `#en`, `#de`). The validator cannot infer the URI system (`urn:ietf:bcp:47`) from the `all-languages` ValueSet, since it is a plain code without a system specification.
+**Ursache:**
+Die Translation-Extension verwendet `valueCode` für Sprachcodes (z.B. `#en`, `#de`). Der Validator kann das URI-System (`urn:ietf:bcp:47`) nicht aus dem `all-languages` ValueSet ableiten, da es sich um einen reinen Code ohne Systemangabe handelt.
 
-**Affected resources:**
-- PHQ-9 Questionnaire (LOINC answer codes with German translations)
-- All resources with translation extensions
+**Betroffene Ressourcen:**
+- PHQ-9 Questionnaire (LOINC-Antwortcodes mit deutschen Übersetzungen)
+- Alle Ressourcen mit Translation-Extensions
 
-**Assessment:**
-This is a validator/terminology server configuration issue, not a data error. The binding to `all-languages` is "preferred", not "required", so the resources are conformant to the specification.
+**Bewertung:**
+Dies ist ein Validator-/Terminologieserver-Konfigurationsproblem, kein Datenfehler. Das Binding auf `all-languages` ist "preferred", nicht "required", daher sind die Ressourcen konform zur Spezifikation.
 
-**References:**
+**Referenzen:**
 - [HL7 Translation Extension](https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-translation.html)
 - [all-languages ValueSet](https://hl7.org/fhir/R4/valueset-all-languages.html)
 
-### 2. LOINC Display Names (Wrong Display Name)
+### 2. LOINC Display-Namen (Wrong Display Name)
 
-**Error message:**
+**Fehlermeldung:**
 ```
-Wrong Display Name 'Ueberhaupt nicht' for http://loinc.org#LA6568-5 - should be 'Not at all'
+Wrong Display Name 'Überhaupt nicht' for http://loinc.org#LA6568-5 - should be 'Not at all'
 ```
 
-**Cause:**
-The MII PRO implementation uses German display names for LOINC answer codes to ensure clinical usability in the German healthcare system. The validator expects the English LOINC original displays.
+**Ursache:**
+Die MII PRO-Implementierung verwendet deutsche Display-Namen für LOINC-Antwortcodes, um die klinische Nutzbarkeit im deutschen Gesundheitswesen zu gewährleisten. Der Validator erwartet die englischen LOINC-Originaldisplays.
 
-**Affected resources:**
+**Betroffene Ressourcen:**
 - PHQ-9 Questionnaire
 
-**Assessment:**
-The English original labels are provided via translation extensions. The use of German displays as primary display values is a deliberate design decision for the German implementation.
+**Bewertung:**
+Die englischen Originalbezeichnungen werden über Translation-Extensions bereitgestellt. Die deutschen Displays als primäre Anzeigewerte sind eine bewusste Designentscheidung für die deutsche Implementierung.
 
-### 3. Terminology Validation (Terminology_TX_NoValid_16)
+### 3. Terminologie-Validierung (Terminology_TX_NoValid_16)
 
-**Error message:**
+**Fehlermeldung:**
 ```
 No valid coding for 'en' from http://hl7.org/fhir/ValueSet/all-languages
 ```
 
-**Cause:**
-Related to issue #1 -- the validator cannot validate the language code against the ValueSet.
+**Ursache:**
+Zusammenhängend mit Problem #1 -- der Validator kann den Sprachcode nicht gegen das ValueSet validieren.
 
-**Assessment:**
-Will be resolved by fixing the language code system inference.
+**Bewertung:**
+Wird durch die Behebung der Sprachcode-Systeminferenz gelöst.
 
-## Suppressed Errors (advisor.json)
+## Unterdrückte Fehler (advisor.json)
 
-The following error codes are suppressed in CI validation:
+Die folgenden Fehlercodes werden in der CI-Validierung unterdrückt:
 
-| Error Code | Description |
-|------------|-------------|
-| `UNABLE_TO_INFER_CODESYSTEM` | Language code system inference not possible |
-| `Terminology_TX_NoValid_16` | Terminology validation error for language codes |
-| `Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code` | Specific IG parameter validation |
-| `MSG_DRAFT` | Warnings about draft status of resources |
-| `dom-6` | DomainResource invariant |
+| Fehlercode | Beschreibung |
+|------------|--------------|
+| `UNABLE_TO_INFER_CODESYSTEM` | Sprachcode-Systeminferenz nicht möglich |
+| `Terminology_TX_NoValid_16` | Terminologie-Validierungsfehler für Sprachcodes |
+| `Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code` | Spezifische IG-Parameter-Validierung |
+| `MSG_DRAFT` | Warnungen zu Draft-Status von Ressourcen |
+| `dom-6` | DomainResource-Invariante |
 
-## Configuration
+## Konfiguration
 
-Error suppression is configured via the `advisor.json` file in the project directory:
+Die Fehlerunterdrückung wird über die Datei `advisor.json` im Projektverzeichnis konfiguriert:
 
 ```json
 {
@@ -78,44 +78,44 @@ Error suppression is configured via the `advisor.json` file in the project direc
 }
 ```
 
-## Setting Up Local Validation
+## Lokale Validierung einrichten
 
-To perform FHIR validation locally, you need the following components:
+Um die FHIR-Validierung lokal durchzuführen, benötigen Sie folgende Komponenten:
 
-### Prerequisites
+### Voraussetzungen
 
-1. **Java 17+**: OpenJDK 17 or higher
+1. **Java 17+**: OpenJDK 17 oder höher
    ```bash
-   # macOS with Homebrew
+   # macOS mit Homebrew
    brew install openjdk@17
    ```
 
-2. **FHIR Validator CLI**: Download the HAPI FHIR Validator
+2. **FHIR Validator CLI**: HAPI FHIR Validator herunterladen
    ```bash
    mkdir -p ~/.fhir/validators
    curl -L -o ~/.fhir/validators/validator_cli.jar \
      https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
    ```
 
-3. **Terminology Server** (optional, but recommended): Local TX server for faster validation
-   - Default endpoint: `http://localhost:3000`
-   - Without a local TX server, the public HL7 server is used (slower)
+3. **Terminologie-Server** (optional, aber empfohlen): Lokaler TX-Server für schnellere Validierung
+   - Standard-Endpoint: `http://localhost:3000`
+   - Ohne lokalen TX-Server wird der öffentliche HL7-Server verwendet (langsamer)
 
-4. **SUSHI**: FSH compiler for FHIR Shorthand
+4. **SUSHI**: FSH-Compiler für FHIR Shorthand
    ```bash
    npm install -g fsh-sushi
    ```
 
-### Running Validation
+### Validierung ausführen
 
-**Option 1: Use the validation script (recommended)**
+**Option 1: Validierungsskript verwenden (empfohlen)**
 ```bash
-# Compilation and validation
+# Kompilierung und Validierung
 sushi . --snapshot
 ./scripts/validate.sh
 ```
 
-**Option 2: Direct validator execution**
+**Option 2: Direkte Validator-Ausführung**
 ```bash
 java -jar ~/.fhir/validators/validator_cli.jar \
   -version 4.0.1 \
@@ -127,26 +127,26 @@ java -jar ~/.fhir/validators/validator_cli.jar \
 
 ### Pre-Commit Hook (optional)
 
-The project includes a pre-commit hook that automatically runs SUSHI and validation before each commit:
+Das Projekt enthält einen Pre-Commit Hook, der automatisch SUSHI und Validierung vor jedem Commit ausführt:
 
 ```bash
-# Activate hook (already present in .git/hooks/pre-commit)
+# Hook aktivieren (bereits in .git/hooks/pre-commit vorhanden)
 chmod +x .git/hooks/pre-commit
 ```
 
-The hook automatically skips validation if no local terminology server is available.
+Der Hook überspringt die Validierung automatisch, wenn kein lokaler Terminologie-Server verfügbar ist.
 
-### Validator Exit Codes
+### Validator Exit-Codes
 
-| Code | Meaning | Action |
-|------|---------|--------|
-| 0 | No errors or warnings | Successful |
-| 1 | Warnings only | Acceptable for development |
-| 2+ | Errors | Must be resolved |
+| Code | Bedeutung | Aktion |
+|------|-----------|--------|
+| 0 | Keine Fehler oder Warnungen | Erfolgreich |
+| 1 | Nur Warnungen | Für Entwicklung akzeptabel |
+| 2+ | Fehler | Muss behoben werden |
 
-## Recommendations for Implementers
+## Empfehlungen für Implementierer
 
-1. **Language codes**: In your own implementations, `valueCoding` with an explicit system can alternatively be used:
+1. **Sprachcodes**: Bei eigenen Implementierungen kann alternativ `valueCoding` mit explizitem System verwendet werden:
    ```json
    {
      "url": "lang",
@@ -157,21 +157,21 @@ The hook automatically skips validation if no local terminology server is availa
    }
    ```
 
-2. **LOINC display names**: For international interoperability, the English LOINC displays can be used as primary values, with German translations in the translation extension.
+2. **LOINC Display-Namen**: Für internationale Interoperabilität können die englischen LOINC-Displays als primäre Werte verwendet werden, mit deutschen Übersetzungen in der Translation-Extension.
 
-3. **Local validation**: The project provides a validation script that automatically filters known errors:
+3. **Lokale Validierung**: Das Projekt stellt ein Validierungsskript bereit, das die bekannten Fehler automatisch filtert:
    ```bash
    ./scripts/validate.sh
    ```
 
-   **Important**: The `-advisor` flag is only supported by the IG Publisher, not by the validator_cli. The validation script therefore uses grep-based filtering of the output.
+   **Wichtig**: Die `-advisor` Flag wird nur vom IG Publisher unterstützt, nicht vom validator_cli. Das Validierungsskript verwendet daher grep-basierte Filterung der Ausgabe.
 
-   **Filtered patterns in the validation script**:
-   - `dom-6` -- Narrative requirement
-   - `UNABLE_TO_INFER_CODESYSTEM` -- Language code system inference
-   - `Terminology_TX_NoValid_16` -- Terminology validation
-   - `MSG_DRAFT` -- Draft status warnings
-   - `Wrong Display Name` -- German LOINC translations
-   - `all-languages` -- Validator bug with translation extension valueCode
-   - `Unable to find resource type` -- TX proxy parsing issues
-   - `does not support batch validation` -- Batch validation not supported
+   **Gefilterte Muster im Validierungsskript**:
+   - `dom-6` -- Narrative-Anforderung
+   - `UNABLE_TO_INFER_CODESYSTEM` -- Sprachcode-Systeminferenz
+   - `Terminology_TX_NoValid_16` -- Terminologie-Validierung
+   - `MSG_DRAFT` -- Draft-Status-Warnungen
+   - `Wrong Display Name` -- Deutsche LOINC-Übersetzungen
+   - `all-languages` -- Validator-Bug mit Translation-Extension valueCode
+   - `Unable to find resource type` -- TX-Proxy-Parsing-Probleme
+   - `does not support batch validation` -- Batch-Validierung nicht unterstützt

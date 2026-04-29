@@ -293,11 +293,11 @@ menu:
 # The default value for this property is false.
 #
 parameters:
-  i18n-default-lang: en
+  i18n-default-lang: de
   i18n-lang:
-    - de
+    - en
   translation-sources:
-    - input/translations/de
+    - input/translations/en
   path-pages:
     - input/intro-notes
   excludettl: true

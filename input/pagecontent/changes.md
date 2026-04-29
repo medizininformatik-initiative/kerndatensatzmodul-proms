@@ -1,109 +1,109 @@
-This page documents the changes between versions of the MII PRO module.
+Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
 **Version: 2026.2.0** (unreleased)
 
-Date: --
+Datum: --
 
-Dependencies and Tooling:
-- Changed: Dependency de.gematik.isik updated from 5.0.0 to 5.1.1 (consistent with Imaging and Laboratory modules)
-- Changed: Dependency hl7.fhir.uv.extensions.r4 updated from 5.1.0 to 5.2.0 (consistent with Imaging and Laboratory modules)
+Dependencies und Tooling:
+- Changed: Dependency de.gematik.isik von 5.0.0 auf 5.1.1 aktualisiert (konsistent mit Bildgebung und Laborbefund)
+- Changed: Dependency hl7.fhir.uv.extensions.r4 von 5.1.0 auf 5.2.0 aktualisiert (konsistent mit Bildgebung und Laborbefund)
 
 ObservationDefinition:
-- Fixed: Depression T-Score ObsDef -- Population information moved from `qualifiedInterval.context.coding` to `qualifiedInterval.appliesTo` (`context` describes the interval category, not the target population)
+- Fixed: Depression T-Score ObsDef -- Populationsinformation von `qualifiedInterval.context.coding` nach `qualifiedInterval.appliesTo` verschoben (`context` beschreibt die Intervall-Kategorie, nicht die Zielpopulation)
 
-EORTC QLQ-C30 ValueSet Architecture:
-- Changed: EORTC QLQ-C30 ValueSets converted from contained to standalone external ValueSets (Variant A)
-- Added: Post-SUSHI ValueSet expansion script for LHC Forms rendering compatibility
-- Fixed: Display texts added to EORTC QLQ-C30 ValueSet concepts
+EORTC QLQ-C30 ValueSet-Architektur:
+- Changed: EORTC QLQ-C30 ValueSets von contained auf standalone external ValueSets umgestellt (Variant A)
+- Added: Post-SUSHI ValueSet-Expansion-Script für LHC Forms Rendering-Kompatibilität
+- Fixed: Display-Texte zu EORTC QLQ-C30 ValueSet-Konzepten hinzugefügt
 
 **Version: 2026.1.0** (unreleased)
 
-Date: --
+Datum: --
 
-PRO Instruments:
-- Added: DASS-21 (Depression Anxiety Stress Scales) -- full implementation with Questionnaire, terminology (CodeSystem, ValueSets), scoring, and examples
-- Added: DASS-21 IG documentation page
+PRO-Instrumente:
+- Added: DASS-21 (Depression Anxiety Stress Scales) -- vollständige Implementierung mit Questionnaire, Terminologie (CodeSystem, ValueSets), Scoring und Beispielen
+- Added: DASS-21 IG-Dokumentationsseite
 
-Quality Assurance:
-- Fixed: ObsDef titles deduplicated, IG page score presentation improved
-- Fixed: Broken `{{render:infobox}}` syntax replaced with Markdown blockquotes (DASS-21, PHQ-9 IG pages)
-- Fixed: CodeSystem/ValueSet converted to short IDs
+Qualitätssicherung:
+- Fixed: ObsDef-Titel entdoppelt, IG-Seite Score-Darstellung verbessert
+- Fixed: Kaputte `{{render:infobox}}` Syntax durch Markdown-Blockquotes ersetzt (DASS-21, PHQ-9 IG-Seiten)
+- Fixed: CodeSystem/ValueSet auf kurze IDs umgestellt
 
 **Version: 2026.0.1**
 
-Date: 26.01.2026
+Datum: 26.01.2026
 
-Bugfix release with PROMIS-29 additions and canonical URL correction.
+Bugfix-Release mit PROMIS-29 Ergänzungen und Canonical-URL-Korrektur.
 
-FHIR Resources:
-- Added: PROMIS-29 German variant and comprehensive examples
-- Fixed: PROMIS-29 QuestionnaireResponse validation errors resolved
-- Fixed: Canonical URLs standardized to HTTPS (HTTP to HTTPS)
-- Fixed: packageId corrected (kerndatensatz.pro to kerndatensatz.pros)
+FHIR-Ressourcen:
+- Added: PROMIS-29 Deutsche Variante und umfassende Beispiele
+- Fixed: PROMIS-29 QuestionnaireResponse Validierungsfehler behoben
+- Fixed: Canonical URLs auf https standardisiert (http zu https)
+- Fixed: packageId korrigiert (kerndatensatz.pro zu kerndatensatz.pros)
 
-IG Documentation:
-- Changed: PROMIS IG pages reorganized and tree rendering fixed
-- Added: Individual profile pages for abstract profiles
-- Added: SDC STU3 spec links to Questionnaire and QuestionnaireResponse profile pages
+IG-Dokumentation:
+- Changed: PROMIS IG-Seiten reorganisiert und Tree-Rendering gefixt
+- Added: Individuelle Profilseiten für abstrakte Profile
+- Added: SDC STU3 Spec-Links zu Questionnaire- und QR-Profilseiten
 
 **Version: 2026.0.0**
 
-Date: 12.01.2026
+Datum: 12.01.2026
 
-First stable release of the MII PRO module for production use.
+Erster stabiler Release des MII PRO-Moduls für den produktiven Einsatz.
 
-FHIR Resources and Profiles:
-- Added: SearchParameters for Questionnaire, QuestionnaireResponse, Observation (search by code, subject, patient)
-- Added: CapabilityStatement documenting supported FHIR operations of the PRO module
-- Fixed: meta.profile added to all Observation example instances (FHIR conformance)
+FHIR-Ressourcen und Profile:
+- Added: SearchParameters für Questionnaire, QuestionnaireResponse, Observation (Suche nach Code, Subject, Patient)
+- Added: CapabilityStatement zur Dokumentation der unterstützten FHIR-Operationen des PRO-Moduls
+- Fixed: meta.profile zu allen Observation-Beispielinstanzen hinzugefügt (FHIR-Konformität)
 
-Version Management and Metadata:
-- Added: MetaProfile RuleSet for consistent profile conformance with versioned canonicals (format: `{canonical}|{version}`)
-- Added: ObsDefVersion RuleSet for R5 backport of the artifact-version extension in ObservationDefinition (R4 compatibility)
-- Changed: Version RuleSets extracted to central file (`input/fsh/rulesets/version.fsh`) for easier release management
+Versionsverwaltung und Metadaten:
+- Added: MetaProfile RuleSet für konsistente Profil-Konformanz mit versionierten Canonicals (Format: `{canonical}|{version}`)
+- Added: ObsDefVersion RuleSet für R5-Backport der artifact-version Extension in ObservationDefinition (R4-Kompatibilität)
+- Changed: Version RuleSets in zentrale Datei extrahiert (`input/fsh/rulesets/version.fsh`) für einfachere Release-Verwaltung
 
-Dependencies and Tooling:
-- Changed: Dependency to de.medizininformatikinitiative.kerndatensatz.meta updated to 2026.0.0
-- Added: package.bake.yaml for Firely Bake packaging workflow
-- Changed: package.json name corrected to `de.medizininformatikinitiative.kerndatensatz.pros`
+Dependencies und Tooling:
+- Changed: Abhängigkeit zu de.medizininformatikinitiative.kerndatensatz.meta auf 2026.0.0 aktualisiert
+- Added: package.bake.yaml für Firely Bake Packaging-Workflow
+- Changed: package.json Name-Korrektur zu `de.medizininformatikinitiative.kerndatensatz.pros`
 
-Quality Assurance and Validation:
-- Added: EORTC QLQ-C30 validation suppressions and QA documentation
-- Added: Full maintenance of the Questionnaire and Score catalog
-- Changed: CI/CD with inline Java validation, Gradle caching, and timing information for faster builds
+Qualitätssicherung und Validierung:
+- Added: EORTC QLQ-C30 Validierungs-Suppressions und QA-Dokumentation
+- Added: Vollständige Wartung des Questionnaire- und Score-Katalogs
+- Changed: CI/CD mit inline Java-Validierung, Gradle-Caching und Timing-Informationen für schnellere Builds
 
 Developer Experience:
-- Added: Claude Code configuration with build, release, and IG export skills
-- Added: Centralized `/build-package` command for FHIR package building
-- Added: `/mii-testdata-contribution` skill for test data repository
-- Added: `/fix-ig-export-links` skill for Simplifier IG export link repair
+- Added: Claude Code Konfiguration mit Build-, Release- und IG-Export-Skills
+- Added: Zentralisiertes `/build-package` Kommando für FHIR Package Building
+- Added: `/mii-testdata-contribution` Skill für Testdaten-Repository
+- Added: `/fix-ig-export-links` Skill für Simplifier IG Export Link-Reparatur
 
 **Version: 2026.0.0-ballot**
 
-Initial balloting version focusing on SDC-based PRO collection and score calculation.
+Initiale Ballotierungsversion mit Fokus auf SDC-basierte PRO-Erfassung und Score-Berechnung.
 
-PRO Instruments:
-- PHQ-9 (Patient Health Questionnaire-9) with full score calculation (raw score and T-score)
-- EQ-5D-5L (EuroQol 5-Dimension 5-Level) with index, VAS, and profile scores
-- PROMIS-29 Profile v2.1 with all 7 domains (Physical Function, Anxiety, Depression, Fatigue, Sleep Disturbance, Social Function, Pain) and automatic score calculation
+PRO-Instrumente:
+- PHQ-9 (Patient Health Questionnaire-9) mit vollständiger Score-Berechnung (Raw-Score und T-Score)
+- EQ-5D-5L (EuroQol 5-Dimension 5-Level) mit Index-, VAS- und Profil-Scores
+- PROMIS-29 Profile v2.1 mit allen 7 Domänen (Physical Function, Anxiety, Depression, Fatigue, Sleep Disturbance, Social Function, Pain) und automatischer Scoring-Berechnung
 - PROMIS Cognitive Function SF4a
-- BDI-II (Beck Depression Inventory II) as reference implementation
-- EORTC QLQ-C30 (quality of life in cancer patients) with 15 subscales
+- BDI-II (Beck Depression Inventory II) als Referenzimplementierung
+- EORTC QLQ-C30 (Lebensqualität bei Krebspatienten) mit 15 Subskalen
 
-FHIR Profiles and Extensions:
-- MII_PR_PRO_Questionnaire: SDC-based Questionnaire profile with calculated expressions and conditional display
-- MII_PR_PRO_QuestionnaireResponse: Response capture profile with SDC extraction capabilities
-- MII_PR_PRO_Score_Blueprint: Template for score Observations with ObservationDefinition reference
-- MII_PR_PRO_Score_Instance: Instance profile for calculated scores with derivedFrom linkage
-- EX_MII_PRO_Questionnaire_Capabilities: Extension for documenting Questionnaire capabilities (displayable, collectable, calculatable, extractable)
+FHIR Profile und Extensions:
+- MII_PR_PRO_Questionnaire: SDC-basiertes Questionnaire-Profil mit Calculated Expressions und Conditional Display
+- MII_PR_PRO_QuestionnaireResponse: Response-Erfassungsprofil mit SDC Extraction Capabilities
+- MII_PR_PRO_Score_Blueprint: Vorlage für Score-Observations mit ObservationDefinition-Referenz
+- MII_PR_PRO_Score_Instance: Instanz-Profil für berechnete Scores mit derivedFrom-Verknüpfung
+- EX_MII_PRO_Questionnaire_Capabilities: Extension zur Dokumentation von Questionnaire-Fähigkeiten (displayable, collectable, calculatable, extractable)
 
-Terminology Strategy:
-- MII-controlled CodeSystems and ValueSets for reliable score calculation with ordinalValue extensions
-- German translations for all Questionnaire items via translation extensions
-- ordinalValue extensions (SDC STU3) for numeric scoring weights in answer options
-- FHIRPath expressions use `.ordinal()` for weight-based calculations
+Terminologie-Strategie:
+- MII-kontrollierte CodeSysteme und ValueSets für zuverlässige Score-Berechnung mit ordinalValue-Extensions
+- Deutsche Übersetzungen für alle Questionnaire-Items via translation-Extensions
+- ordinalValue-Extensions (SDC STU3) für numerische Scoring-Gewichte in Antwort-Optionen
+- FHIRPath-Ausdrücke nutzen `.ordinal()` für Weight-basierte Berechnungen
 
-Technical Foundation:
-- FHIR R4 (4.0.1) with SDC 3.0.0 (Structured Data Capture)
-- Dependency to de.medizininformatikinitiative.kerndatensatz.meta 2026.0.0
-- Dependency to de.gematik.isik 5.0.0 for German interoperability
+Technische Basis:
+- FHIR R4 (4.0.1) mit SDC 3.0.0 (Structured Data Capture)
+- Dependency zu de.medizininformatikinitiative.kerndatensatz.meta 2026.0.0
+- Dependency zu de.gematik.isik 5.0.0 für deutsche Interoperabilität

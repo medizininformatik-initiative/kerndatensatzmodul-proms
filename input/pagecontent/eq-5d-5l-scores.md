@@ -1,108 +1,108 @@
-The EQ-5D-5L generates three different score types that capture different aspects of health-related quality of life. These scores are specified through ObservationDefinitions and can be extracted from QuestionnaireResponse data.
+Der EQ-5D-5L generiert drei verschiedene Score-Typen, die unterschiedliche Aspekte der gesundheitsbezogenen Lebensqualität erfassen. Diese Scores werden durch ObservationDefinitions spezifiziert und können aus den QuestionnaireResponse-Daten extrahiert werden.
 
-### Score Types
+### Score-Typen
 
 #### 1. EQ-5D-5L Index Score
 
-The Index Score is a single value representing the health state on a scale from -0.661 to 1, where 1 represents perfect health.
+Der Index Score ist ein einzelner Wert, der den Gesundheitszustand auf einer Skala von -0.661 bis 1 darstellt, wobei 1 perfekte Gesundheit repräsentiert.
 
 **ObservationDefinition: mii-obsdef-pro-score-eq5d5l-index**
 
-| Element | Value |
-|---------|-------|
-| **Title** | MII ObsDef PRO Score EQ-5D-5L Index |
+| Element | Wert |
+|---------|------|
+| **Titel** | MII ObsDef PRO Score EQ-5D-5L Index |
 | **SNOMED CT Code** | 736534008 - EuroQol five dimension five level index value (observable entity) |
 | **MII Code** | euroqol-eq5d5l-index |
-| **Data Type** | Quantity |
-| **Unit** | 1 (UCUM) |
-| **Value Range** | -0.661 to 1.000 |
-| **Decimal Places** | 3 |
-| **Interpretation** | Higher values indicate better health status |
+| **Datentyp** | Quantity |
+| **Einheit** | 1 (UCUM) |
+| **Wertebereich** | -0.661 bis 1.000 |
+| **Dezimalstellen** | 3 |
+| **Interpretation** | Höhere Werte zeigen besseren Gesundheitszustand an |
 
 #### 2. EQ-5D-5L VAS Score
 
-The Visual Analog Scale (VAS) captures self-rated health on a scale from 0 (worst imaginable health state) to 100 (best imaginable health state).
+Die Visual Analog Scale (VAS) erfasst die selbsteingeschätzte Gesundheit auf einer Skala von 0 (schlechtester vorstellbarer Gesundheitszustand) bis 100 (bester vorstellbarer Gesundheitszustand).
 
 **ObservationDefinition: mii-obsdef-pro-score-eq5d5l-vas**
 
-| Element | Value |
-|---------|-------|
-| **Title** | MII ObsDef PRO Score EQ-5D-5L VAS |
+| Element | Wert |
+|---------|------|
+| **Titel** | MII ObsDef PRO Score EQ-5D-5L VAS |
 | **SNOMED CT Code** | 736535009 - EuroQol visual analogue score (observable entity) |
 | **MII Code** | euroqol-eq5d5l-vas |
-| **Data Type** | Quantity |
-| **Unit** | 1 (UCUM) |
-| **Value Range** | 0 to 100 |
-| **Decimal Places** | 0 |
-| **Interpretation** | Higher values indicate better health status |
+| **Datentyp** | Quantity |
+| **Einheit** | 1 (UCUM) |
+| **Wertebereich** | 0 bis 100 |
+| **Dezimalstellen** | 0 |
+| **Interpretation** | Höhere Werte zeigen besseren Gesundheitszustand an |
 
-#### 3. EQ-5D-5L Profile
+#### 3. EQ-5D-5L Profil
 
-The Profile is a five-digit numeric combination (e.g., 21234) that represents the health state across all five dimensions. Each digit represents the response level (1-5) for one dimension.
+Das Profil ist eine fünfstellige Zahlenkombination (z.B. 21234), die den Gesundheitszustand über alle fünf Dimensionen darstellt. Jede Ziffer repräsentiert das Antwortlevel (1-5) für eine Dimension.
 
 **ObservationDefinition: mii-obsdef-pro-score-eq5d5l-profile**
 
-| Element | Value |
-|---------|-------|
-| **Title** | MII ObsDef PRO Score EQ-5D-5L Profile |
+| Element | Wert |
+|---------|------|
+| **Titel** | MII ObsDef PRO Score EQ-5D-5L Profile |
 | **MII Code** | euroqol-eq5d5l-profile |
-| **Data Type** | String |
-| **Format** | 5-digit number (e.g., "21234") |
-| **Interpretation** | Each digit (1-5) represents severity in one dimension |
+| **Datentyp** | String |
+| **Format** | 5-stellige Zahl (z.B. "21234") |
+| **Interpretation** | Jede Ziffer (1-5) repräsentiert den Schweregrad in einer Dimension |
 
-### Calculation Methodology
+### Berechnungsmethodik
 
-All three scores are based on the method:
+Alle drei Scores basieren auf der Methode:
 - **SNOMED CT**: 73041000052103 - EuroQoL five dimension five level questionnaire (assessment scale)
 
-Calculation is performed either:
-1. **Client-side**: Directly in the Questionnaire through SDC calculated expressions
-2. **Server-side**: Through extraction and transformation of QuestionnaireResponse data
+Die Berechnung erfolgt entweder:
+1. **Client-seitig**: Direkt im Questionnaire durch SDC calculated expressions
+2. **Server-seitig**: Durch Extraktion und Transformation der QuestionnaireResponse-Daten
 
-### References
+### Referenzen
 
-The score definitions are based on the publication:
+Die Score-Definitionen basieren auf der Publikation:
 - [https://doi.org/10.1016/j.jad.2017.08.060](https://doi.org/10.1016/j.jad.2017.08.060)
 
 ---
 
-### Observation Profiles
+### Observation Profile
 
 #### EQ-5D-5L Index Score
 
-See the [profile definition](StructureDefinition-mii-pr-pro-observation-eq5d5l-index.html) for the full element tree.
+Die vollständige Elementstruktur finden Sie in der [Profildefinition](StructureDefinition-mii-pr-pro-observation-eq5d5l-index.html).
 
 ---
 
 #### EQ-5D-5L VAS Score
 
-See the [profile definition](StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.html) for the full element tree.
+Die vollständige Elementstruktur finden Sie in der [Profildefinition](StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.html).
 
 ---
 
 #### EQ-5D-5L Profile
 
-See the [profile definition](StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.html) for the full element tree.
+Die vollständige Elementstruktur finden Sie in der [Profildefinition](StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.html).
 
 ---
 
-### ObservationDefinition Instances
+### ObservationDefinition Instanzen
 
-The ObservationDefinition resources specify the measurement methodology and reference ranges for the EQ-5D-5L scores. These instances are based on the MII_PR_PRO_Score_Blueprint profile.
+Die ObservationDefinition-Ressourcen spezifizieren die Messmethodik und Referenzbereiche für die EQ-5D-5L Scores. Diese Instanzen basieren auf dem MII_PR_PRO_Score_Blueprint Profil.
 
-#### Implemented ObservationDefinitions:
+#### Implementierte ObservationDefinitions:
 
 - **EQ-5D-5L Index**: `mii-obsdef-pro-score-eq5d5l-index`
   - SNOMED: 736534008 "EuroQol five dimension five level index value"
-  - Value range: -0.661 to 1.000
+  - Wertebereich: -0.661 bis 1.000
 
 - **EQ-5D-5L VAS**: `mii-obsdef-pro-score-eq5d5l-vas`
   - SNOMED: 736535009 "EuroQol visual analogue score"
-  - Value range: 0 to 100
+  - Wertebereich: 0 bis 100
 
 - **EQ-5D-5L Profile**: `mii-obsdef-pro-score-eq5d5l-profile`
-  - Format: 5-digit number (e.g., "21234")
+  - Format: 5-stellige Zahl (z.B. "21234")
 
-These ObservationDefinitions are referenced by the Observation profiles via the `instantiates` element.
+Diese ObservationDefinitions werden von den Observation-Profilen über das `instantiates` Element referenziert.
 
-**Technical Limitation**: ObservationDefinition instances in FHIR R4 do not have canonical URLs, which means they cannot be directly rendered by some IG publishing tools.
+**Technische Einschränkung**: ObservationDefinition-Instanzen besitzen in FHIR R4 keine kanonischen URLs, weshalb sie von einigen IG-Publishing-Tools nicht direkt gerendert werden können.

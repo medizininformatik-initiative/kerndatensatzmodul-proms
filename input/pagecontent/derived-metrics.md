@@ -1,10 +1,10 @@
-### Derived Metrics
+### Abgeleitete Metriken
 
-This section will cover the use of derived metrics in future module versions.
+Dieser Bereich wird in zukünftigen Modulversionen die Verwendung von abgeleiteten Metriken beinhalten.
 
-This includes:
-- Cut-off values and categorizations
-- Reference ranges and population metrics
-- Comparison metrics such as MID / MCID (Minimal Important Difference / Minimal Clinically Important Difference)
+Dazu gehören:
+- Cut-Off Werte und Kategorisierungen
+- Referenzbereiche und Populationsmetriken
+- Vergleichsmetriken wie MID / MCID (Minimal Important Difference / Minimal Clinically Important Difference)
 
-This is planned for version 2027, which is expected to be developed in spring/summer 2026 and will enter the comment period in autumn 2026.
+Dies ist für die Version 2027 geplant, die voraussichtlich im Frühjahr/Sommer 2026 erarbeitet wird und im Herbst 2026 in die Kommentierung geht.
