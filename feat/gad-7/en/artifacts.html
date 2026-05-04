@@ -1,0 +1,2405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - MII IG PRO v2026.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.2.0 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="gad-7.html">GAD-7</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../de/artifacts.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  <p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+  
+  <p>There is no translation page available for the current page, so it has been rendered in the default language</p>
+
+  
+  </p>
+  
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc"
+     data-fhir="generated">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Behavior: Search Parameters</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Questionnaires</a>
+      </li>
+      <li>
+         <a href="#5">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#6">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#8">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#9">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#10">Clinical: Observation Definitions</a>
+      </li>
+      <li>
+         <a href="#11">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     data-fhir="generated">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-mii-cps-pro-capabilitystatement.html"
+                  title="CapabilityStatement/mii-cps-pro-capabilitystatement">
+                  <span title="CapabilityStatement/mii-cps-pro-capabilitystatement">MII CPS PRO CapabilityStatement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul PRO der Medizininformatik Initiative zu implementieren.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Behavior: Search Parameters </h3>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-mii-sp-pro-observationdefinition-code.html"
+                  title="SearchParameter/mii-sp-pro-observationdefinition-code">
+                  <span title="SearchParameter/mii-sp-pro-observationdefinition-code">mii-sp-pro-observationdefinition-code
+</span>
+               </a>
+            </td>
+            <td>
+<p>SearchParameter for ObservationDefinition.code to find score definitions by code (LOINC, SNOMED, MII)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-mii-sp-pro-observationdefinition-health-correlation.html"
+                  title="SearchParameter/mii-sp-pro-observationdefinition-health-correlation">
+                  <span title="SearchParameter/mii-sp-pro-observationdefinition-health-correlation">mii-sp-pro-observationdefinition-health-correlation
+</span>
+               </a>
+            </td>
+            <td>
+<p>SearchParameter for ObservationDefinition.qualifiedInterval.range.extension[ScoreHealthCorrelation] to filter by health correlation direction (higher scores = better/worse health)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-mii-sp-pro-observationdefinition-interval-category.html"
+                  title="SearchParameter/mii-sp-pro-observationdefinition-interval-category">
+                  <span title="SearchParameter/mii-sp-pro-observationdefinition-interval-category">mii-sp-pro-observationdefinition-interval-category
+</span>
+               </a>
+            </td>
+            <td>
+<p>SearchParameter for ObservationDefinition.qualifiedInterval.category to filter by reference range category (reference, critical, absolute)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.html"
+                  title="SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype">
+                  <span title="SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype">mii-sp-pro-observationdefinition-permitted-datatype
+</span>
+               </a>
+            </td>
+            <td>
+<p>SearchParameter for ObservationDefinition.permittedDataType to filter score definitions by data type (Quantity, string, etc.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.html"
+                  title="SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name">
+                  <span title="SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name">mii-sp-pro-observationdefinition-preferred-report-name
+</span>
+               </a>
+            </td>
+            <td>
+<p>SearchParameter for ObservationDefinition.preferredReportName to search score definitions by display name</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-mii-sp-pro-observationdefinition-unit.html"
+                  title="SearchParameter/mii-sp-pro-observationdefinition-unit">
+                  <span title="SearchParameter/mii-sp-pro-observationdefinition-unit">mii-sp-pro-observationdefinition-unit
+</span>
+               </a>
+            </td>
+            <td>
+<p>SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter score definitions by measurement unit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-mii-sp-pro-questionnaire-capabilities.html"
+                  title="SearchParameter/mii-sp-pro-questionnaire-capabilities">
+                  <span title="SearchParameter/mii-sp-pro-questionnaire-capabilities">mii-sp-pro-questionnaire-capabilities
+</span>
+               </a>
+            </td>
+            <td>
+<p>SearchParameter for Questionnaire.extension[capabilities] to filter questionnaires by capability flags (displayable, collectable, calculatable, extractable, populatable, domainAligned)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-lm-pro.html"
+                  title="StructureDefinition/mii-lm-pro">
+                  <span title="StructureDefinition/mii-lm-pro">MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken
+</span>
+               </a>
+            </td>
+            <td>
+<p>Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-bdi-bdi2.html"
+                  title="Questionnaire/mii-qst-pro-bdi-bdi2">
+                  <span title="Questionnaire/mii-qst-pro-bdi-bdi2">MII QST PRO BDI-II
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-ces-d.html"
+                  title="Questionnaire/mii-qst-pro-ces-d">
+                  <span title="Questionnaire/mii-qst-pro-ces-d">MII QST PRO CES-D
+</span>
+               </a>
+            </td>
+            <td>
+<p>Center for Epidemiologic Studies Depression Scale (CES-D) - Metadata-only reference implementation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-dass-dass21.html"
+                  title="Questionnaire/mii-qst-pro-dass-dass21">
+                  <span title="Questionnaire/mii-qst-pro-dass-dass21">MII QST PRO DASS-21
+</span>
+               </a>
+            </td>
+            <td>
+<p>Depression Anxiety Stress Scales - 21 Items (DASS-21)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-eortc-qlq-c30.html"
+                  title="Questionnaire/mii-qst-pro-eortc-qlq-c30">
+                  <span title="Questionnaire/mii-qst-pro-eortc-qlq-c30">MII QST PRO EORTC QLQ-C30
+</span>
+               </a>
+            </td>
+            <td>
+<p>EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.html"
+                  title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a">
+                  <span title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a">MII QST PRO EORTC QLQ-C30 Variant A
+</span>
+               </a>
+            </td>
+            <td>
+<p>EORTC QLQ-C30 Version 3.0 - Variant A: References standalone external ValueSets directly (no contained resources)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-b.html"
+                  title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b">
+                  <span title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b">MII QST PRO EORTC QLQ-C30 Variant B
+</span>
+               </a>
+            </td>
+            <td>
+<p>EORTC QLQ-C30 Version 3.0 - Variant B: With contained CodeSystem and ValueSets referencing it via local reference #eortc-qlq-c30-cs-b</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-epds.html"
+                  title="Questionnaire/mii-qst-pro-epds">
+                  <span title="Questionnaire/mii-qst-pro-epds">MII QST PRO EPDS
+</span>
+               </a>
+            </td>
+            <td>
+<p>Edinburgh Postnatal Depression Scale (EPDS) - Metadata-only reference implementation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.html"
+                  title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding">
+                  <span title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding">MII QST PRO EQ-5D-5L
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.html"
+                  title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal">
+                  <span title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal">MII QST PRO EQ-5D-5L
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html"
+                  title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable">
+                  <span title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable">MII QST PRO EQ-5D-5L (Displayable)
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Displayable version</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.html"
+                  title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable">
+                  <span title="Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable">MII QST PRO EQ-5D-5L Collectable
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-gad-7.html"
+                  title="Questionnaire/mii-qst-pro-gad-7">
+                  <span title="Questionnaire/mii-qst-pro-gad-7">MII QST PRO GAD-7
+</span>
+               </a>
+            </td>
+            <td>
+<p>Generalized Anxiety Disorder Scale-7 (GAD-7)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-hads.html"
+                  title="Questionnaire/mii-qst-pro-hads">
+                  <span title="Questionnaire/mii-qst-pro-hads">MII QST PRO HADS
+</span>
+               </a>
+            </td>
+            <td>
+<p>Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-k6.html"
+                  title="Questionnaire/mii-qst-pro-k6">
+                  <span title="Questionnaire/mii-qst-pro-k6">MII QST PRO K6
+</span>
+               </a>
+            </td>
+            <td>
+<p>Kessler Psychological Distress Scale (K6) - Metadata-only reference implementation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-phq-9.html"
+                  title="Questionnaire/mii-qst-pro-phq-9">
+                  <span title="Questionnaire/mii-qst-pro-phq-9">MII QST PRO PHQ-9
+</span>
+               </a>
+            </td>
+            <td>
+<p>Patient Health Questionnaire (PHQ-9)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.html"
+                  title="Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a">
+                  <span title="Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a">MII QST PRO PROMIS Cognitive Function SF 4a
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-promis-depression-sf4a.html"
+                  title="Questionnaire/mii-qst-pro-promis-depression-sf4a">
+                  <span title="Questionnaire/mii-qst-pro-promis-depression-sf4a">MII QST PRO PROMIS Depression SF 4a (Adults)
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Depression Short Form 4a - Adults - Item Bank v1.0</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-promis-29.html"
+                  title="Questionnaire/mii-qst-pro-promis-29">
+                  <span title="Questionnaire/mii-qst-pro-promis-29">MII QST PRO PROMIS-29 (Adults)
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-promis-29-de.html"
+                  title="Questionnaire/mii-qst-pro-promis-29-de">
+                  <span title="Questionnaire/mii-qst-pro-promis-29-de">MII QST PRO PROMIS-29 (German)
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS-29 Profile v2.1 - German language variant derived from English source</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-promis-29-minimal.html"
+                  title="Questionnaire/mii-qst-pro-promis-29-minimal">
+                  <span title="Questionnaire/mii-qst-pro-promis-29-minimal">MII QST PRO PROMIS-29 Minimal
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html"
+                  title="Questionnaire/mii-qst-pro-pro-ctcae-breast-de">
+                  <span title="Questionnaire/mii-qst-pro-pro-ctcae-breast-de">PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)
+</span>
+               </a>
+            </td>
+            <td>
+<p>PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-depression-t-score.html"
+                  title="StructureDefinition/mii-pr-pro-depression-t-score">
+                  <span title="StructureDefinition/mii-pr-pro-depression-t-score">MII PR PRO Depression Domain T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Generic profile for depression domain T-score observations (all depression questionnaires)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-observation-bdi-ii.html"
+                  title="StructureDefinition/mii-pr-pro-observation-bdi-ii">
+                  <span title="StructureDefinition/mii-pr-pro-observation-bdi-ii">MII PR PRO Observation BDI-II
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for Beck Depression Inventory II (BDI-II) Total Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-observation-eq5d5l-index.html"
+                  title="StructureDefinition/mii-pr-pro-observation-eq5d5l-index">
+                  <span title="StructureDefinition/mii-pr-pro-observation-eq5d5l-index">MII PR PRO Observation EQ-5D-5L Index
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for EQ-5D-5L Index Score Observations with German value set reference ranges</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.html"
+                  title="StructureDefinition/mii-pr-pro-observation-eq5d5l-profile">
+                  <span title="StructureDefinition/mii-pr-pro-observation-eq5d5l-profile">MII PR PRO Observation EQ-5D-5L Profile
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for EQ-5D-5L Profile String Observations (e.g., '11111')</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.html"
+                  title="StructureDefinition/mii-pr-pro-observation-eq5d5l-vas">
+                  <span title="StructureDefinition/mii-pr-pro-observation-eq5d5l-vas">MII PR PRO Observation EQ-5D-5L VAS
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for EQ-5D-5L Visual Analogue Scale Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.html"
+                  title="StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score">
+                  <span title="StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score">MII PR PRO PROMIS Cognitive Function SF 4a Raw Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS Cognitive Function Short Form 4a raw score observations (4-20 range)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore">MII PR PRO PROMIS Cognitive Function SF 4a T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS Cognitive Function Short Form 4a T-Score observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.html"
+                  title="StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score">
+                  <span title="StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score">MII PR PRO PROMIS Depression SF 4a Raw Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS Depression Short Form 4a raw score observations (4-20 range)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore">MII PR PRO PROMIS-29 Anxiety T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Anxiety T-Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-depression-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-depression-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-depression-tscore">MII PR PRO PROMIS-29 Depression T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Depression T-Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore">MII PR PRO PROMIS-29 Fatigue T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Fatigue T-Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-pain-intensity.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-pain-intensity">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-pain-intensity">MII PR PRO PROMIS-29 Pain Intensity
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Pain Intensity single item Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore">MII PR PRO PROMIS-29 Pain Interference T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Pain Interference T-Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore">MII PR PRO PROMIS-29 Physical Function T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Physical Function T-Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore">MII PR PRO PROMIS-29 Sleep Disturbance T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Sleep Disturbance T-Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.html"
+                  title="StructureDefinition/mii-pr-pro-promis-29-social-function-tscore">
+                  <span title="StructureDefinition/mii-pr-pro-promis-29-social-function-tscore">MII PR PRO PROMIS-29 Social Function T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for PROMIS-29 Ability to Participate in Social Roles and Activities T-Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-questionnaire.html"
+                  title="StructureDefinition/mii-pr-pro-questionnaire">
+                  <span title="StructureDefinition/mii-pr-pro-questionnaire">MII PR PRO Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-questionnaire-response.html"
+                  title="StructureDefinition/mii-pr-pro-questionnaire-response">
+                  <span title="StructureDefinition/mii-pr-pro-questionnaire-response">MII PR PRO QuestionnaireResponse
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Specification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-score-blueprint.html"
+                  title="StructureDefinition/mii-pr-pro-score-blueprint">
+                  <span title="StructureDefinition/mii-pr-pro-score-blueprint">MII PR PRO Score Blueprint / Template
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-score-instance.html"
+                  title="StructureDefinition/mii-pr-pro-score-instance">
+                  <span title="StructureDefinition/mii-pr-pro-score-instance">MII PR PRO Score Instance
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII PR PRO Score Instance</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-ex-pro-score-score-health-correlation.html"
+                  title="StructureDefinition/mii-ex-pro-score-score-health-correlation">
+                  <span title="StructureDefinition/mii-ex-pro-score-score-health-correlation">MII Ex PRO Score Score Health Correlation
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII Ex PRO Score Score Health Correlation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-ex-pro-questionnaire-capabilities.html"
+                  title="StructureDefinition/mii-ex-pro-questionnaire-capabilities">
+                  <span title="StructureDefinition/mii-ex-pro-questionnaire-capabilities">MII PR PRO Questionnaire Capabilities
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-bdi-bdi2-long.html"
+                  title="ValueSet/mii-vs-pro-bdi-bdi2-long">
+                  <span title="ValueSet/mii-vs-pro-bdi-bdi2-long">MII VS PRO BDI-II
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-bdi-bdi2-short.html"
+                  title="ValueSet/mii-vs-pro-bdi-bdi2-short">
+                  <span title="ValueSet/mii-vs-pro-bdi-bdi2-short">MII VS PRO BDI-II
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-dass-21-answer-list.html"
+                  title="ValueSet/mii-vs-pro-dass-21-answer-list">
+                  <span title="ValueSet/mii-vs-pro-dass-21-answer-list">MII VS PRO DASS-21 Answer List
+</span>
+               </a>
+            </td>
+            <td>
+<p>4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.html"
+                  title="ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt">
+                  <span title="ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt">MII VS PRO EORTC QLQ-C30 4-Point Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>Standard 4-point response scale for EORTC QLQ-C30 items</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.html"
+                  title="ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt">
+                  <span title="ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt">MII VS PRO EORTC QLQ-C30 7-Point Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>7-point response scale for EORTC QLQ-C30 global health status and quality of life items</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.html"
+                  title="ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role">
+                  <span title="ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role">MII VS PRO EORTC QLQ-C30 Role Functioning Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>4-point response scale for EORTC QLQ-C30 role functioning items</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.html"
+                  title="ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3">
+                  <span title="ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3">MII VS PRO PHQ-9 Answer List LL358-3
+</span>
+               </a>
+            </td>
+            <td>
+<p>Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.html"
+                  title="ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1">
+                  <span title="ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1">MII VS PRO PHQ-9 Answer List LL359-1
+</span>
+               </a>
+            </td>
+            <td>
+<p>Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-frequency.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-frequency">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-frequency">MII VS PRO PRO-CTCAE Frequency Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>5-point frequency response scale for PRO-CTCAE items (0=Never, 4=Almost constantly)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual">MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)
+</span>
+               </a>
+            </td>
+            <td>
+<p>7-point frequency scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-interference.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-interference">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-interference">MII VS PRO PRO-CTCAE Interference Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>5-point interference response scale for PRO-CTCAE items (0=Not at all, 4=Very much)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-presence.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-presence">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-presence">MII VS PRO PRO-CTCAE Presence Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>Binary presence/absence response scale for PRO-CTCAE items</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-presence-sexual">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-presence-sexual">MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)
+</span>
+               </a>
+            </td>
+            <td>
+<p>4-option presence scale for sexual function: Yes / No / Not sexually active / Prefer not to answer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-presence-na.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-presence-na">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-presence-na">MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)
+</span>
+               </a>
+            </td>
+            <td>
+<p>3-option presence scale: Yes / No / Not applicable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-severity.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-severity">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-severity">MII VS PRO PRO-CTCAE Severity Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>5-point severity response scale for PRO-CTCAE items (0=None, 4=Very severe)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-severity-radiation">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-severity-radiation">MII VS PRO PRO-CTCAE Severity Scale (Radiation)
+</span>
+               </a>
+            </td>
+            <td>
+<p>6-point severity scale for radiation items: standard 5 options plus 'Not applicable'</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.html"
+                  title="ValueSet/mii-vs-pro-pro-ctcae-severity-sexual">
+                  <span title="ValueSet/mii-vs-pro-pro-ctcae-severity-sexual">MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)
+</span>
+               </a>
+            </td>
+            <td>
+<p>7-point severity scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html"
+                  title="ValueSet/mii-vs-pro-promis-frequency-response-scale">
+                  <span title="ValueSet/mii-vs-pro-promis-frequency-response-scale">MII VS PRO PROMIS Frequency Response Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Frequency response scale based on LOINC LL1016-6</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-promis-physical-function-response-scale.html"
+                  title="ValueSet/mii-vs-pro-promis-physical-function-response-scale">
+                  <span title="ValueSet/mii-vs-pro-promis-physical-function-response-scale">MII VS PRO PROMIS Physical Function Response Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Physical Function response scale based on LOINC LL1022-4</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-eq-5d-value-set.html"
+                  title="CodeSystem/mii-cs-pro-eq-5d-value-set">
+                  <span title="CodeSystem/mii-cs-pro-eq-5d-value-set">MII CS EQ-5D Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<p>EuroQol EQ-5D Value Set</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-bdi-bdi2.html"
+                  title="CodeSystem/mii-cs-pro-bdi-bdi2">
+                  <span title="CodeSystem/mii-cs-pro-bdi-bdi2">MII CS PRO BDI-II
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-dass-21.html"
+                  title="CodeSystem/mii-cs-pro-dass-21">
+                  <span title="CodeSystem/mii-cs-pro-dass-21">MII CS PRO DASS-21 Response Scale and Item Codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>CodeSystem for the Depression Anxiety Stress Scales - Short Form (DASS-21) with answer codes, item codes, and multilingual support (English primary, German translations from Nilges &amp; Essau 2015)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-eortc-qlq-c30.html"
+                  title="CodeSystem/mii-cs-pro-eortc-qlq-c30">
+                  <span title="CodeSystem/mii-cs-pro-eortc-qlq-c30">MII CS PRO EORTC QLQ-C30 Response Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>Response scale for EORTC QLQ-C30 questionnaire items with multilingual support</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-pro-ctcae.html"
+                  title="CodeSystem/mii-cs-pro-pro-ctcae">
+                  <span title="CodeSystem/mii-cs-pro-pro-ctcae">MII CS PRO PRO-CTCAE Item Library
+</span>
+               </a>
+            </td>
+            <td>
+<p>CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-questionnaire-catalogue.html"
+                  title="CodeSystem/mii-cs-pro-questionnaire-catalogue">
+                  <span title="CodeSystem/mii-cs-pro-questionnaire-catalogue">MII CS PRO Questionnaire Catalogue
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in the MII PROMs Module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-score-catalogue.html"
+                  title="CodeSystem/mii-cs-pro-score-catalogue">
+                  <span title="CodeSystem/mii-cs-pro-score-catalogue">MII CS PRO Score Catalogue
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="9"> </a>
+   <h3>Terminology: Concept Maps </h3>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html"
+                  title="ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation">
+                  <span title="ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation">ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation
+</span>
+               </a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="10"> </a>
+   <h3>Clinical: Observation Definitions </h3>
+    <p>Formal descriptions of types of observations relevant to the use of this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw">DASS-21 Anxiety Raw Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sum of 7 anxiety items (2, 4, 7, 9, 15, 19, 20), each scored 0-3. Cut-offs: Normal 0-3, Mild 4-5, Moderate 6-7, Severe 8-9, Extremely severe 10+.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv">DASS-21 Anxiety Score (DASS-42 Equivalent)
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 anxiety raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw">DASS-21 Depression Raw Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sum of 7 depression items (3, 5, 10, 13, 16, 17, 21), each scored 0-3. Cut-offs: Normal 0-4, Mild 5-6, Moderate 7-10, Severe 11-13, Extremely severe 14+.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv">DASS-21 Depression Score (DASS-42 Equivalent)
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 depression raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw">DASS-21 Stress Raw Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sum of 7 stress items (1, 6, 8, 11, 12, 14, 18), each scored 0-3. Cut-offs: Normal 0-7, Mild 8-9, Moderate 10-12, Severe 13-16, Extremely severe 17+.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv">DASS-21 Stress Score (DASS-42 Equivalent)
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 stress raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ap.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ap">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ap">EORTC QLQ-C30 Appetite Loss Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Appetite Loss Score (AP) - Higher scores indicate more appetite loss</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-cf.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-cf">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-cf">EORTC QLQ-C30 Cognitive Functioning Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Cognitive Functioning Score (CF) - Higher scores indicate better cognitive functioning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-co.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-co">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-co">EORTC QLQ-C30 Constipation Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Constipation Score (CO) - Higher scores indicate more constipation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-di.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-di">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-di">EORTC QLQ-C30 Diarrhoea Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Diarrhoea Score (DI) - Higher scores indicate more diarrhoea</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-dy.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-dy">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-dy">EORTC QLQ-C30 Dyspnoea Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Dyspnoea Score (DY) - Higher scores indicate more dyspnoea</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ef.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ef">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ef">EORTC QLQ-C30 Emotional Functioning Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Emotional Functioning Score (EF) - Higher scores indicate better emotional functioning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fa.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fa">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fa">EORTC QLQ-C30 Fatigue Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Fatigue Score (FA) - Higher scores indicate more fatigue</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fi.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fi">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fi">EORTC QLQ-C30 Financial Difficulties Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Financial Difficulties Score (FI) - Higher scores indicate more financial difficulties</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ql">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ql">EORTC QLQ-C30 Global Health Status / Quality of Life Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Global Health Status / Quality of Life Score (QL) - Higher scores indicate better quality of life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sl">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sl">EORTC QLQ-C30 Insomnia Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Insomnia Score (SL) - Higher scores indicate more sleep disturbance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-nv">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-nv">EORTC QLQ-C30 Nausea and Vomiting Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Nausea and Vomiting Score (NV) - Higher scores indicate more nausea/vomiting</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pa">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pa">EORTC QLQ-C30 Pain Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Pain Score (PA) - Higher scores indicate more pain</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf">EORTC QLQ-C30 Physical Functioning Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Physical Functioning Score (PF) - Higher scores indicate better physical functioning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-rf">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-rf">EORTC QLQ-C30 Role Functioning Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Role Functioning Score (RF) - Higher scores indicate better role functioning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf.html"
+                  title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sf">
+                  <span title="ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sf">EORTC QLQ-C30 Social Functioning Score Definition
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for EORTC QLQ-C30 Social Functioning Score (SF) - Higher scores indicate better social functioning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-depression-t-score.html"
+                  title="ObservationDefinition/mii-obsdef-pro-depression-t-score">
+                  <span title="ObservationDefinition/mii-obsdef-pro-depression-t-score">MII ObsDef PRO Depression Domain T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>ObservationDefinition for depression domain T-score across all depression questionnaires with European population reference ranges</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score">MII ObsDef PRO PROMIS Cognitive Function SF 4a Raw Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Cognitive Function Short Form 4a Raw Score (4-20 range)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore">MII ObsDef PRO PROMIS Cognitive Function SF 4a T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Cognitive Function Short Form 4a T-Score</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore">MII ObsDef PRO PROMIS-29 Anxiety T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Anxiety T-Score from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore">MII ObsDef PRO PROMIS-29 Depression T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Depression T-Score from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore">MII ObsDef PRO PROMIS-29 Fatigue T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Fatigue T-Score from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity">MII ObsDef PRO PROMIS-29 Pain Intensity
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Pain Intensity single item from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore">MII ObsDef PRO PROMIS-29 Pain Interference T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Pain Interference T-Score from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore">MII ObsDef PRO PROMIS-29 Physical Function T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Physical Function T-Score from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore">MII ObsDef PRO PROMIS-29 Sleep Disturbance T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Sleep Disturbance T-Score from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.html"
+                  title="ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore">
+                  <span title="ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore">MII ObsDef PRO PROMIS-29 Social Function T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>PROMIS Ability to Participate in Social Roles and Activities T-Score from PROMIS-29 Profile v2.1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-bdi-ii.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-bdi-ii">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-bdi-ii">MII ObsDef PRO Score BDI-II
+</span>
+               </a>
+            </td>
+            <td>
+<p>Beck Depression Inventory II (BDI-II) Total Score</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-gad-7.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-gad-7">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-gad-7">MII ObsDef PRO Score GAD-7
+</span>
+               </a>
+            </td>
+            <td>
+<p>Generalized Anxiety Disorder Scale-7 (GAD-7)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-phq-9.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-phq-9">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-phq-9">MII ObsDef PRO Score PHQ-9
+</span>
+               </a>
+            </td>
+            <td>
+<p>Patient Health Questionnaire (PHQ-9)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-proctcae-acs">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-proctcae-acs">PRO-CTCAE Average Composite Score (ACS)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Average of all PRO-CTCAE composite grades at a given timepoint, reflecting overall symptomatic adverse event burden. Symptoms with opt-out responses are excluded from the average. Range 0.0-3.0 (continuous). ACS = sum(composite grades) / count(scored symptoms).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade">PRO-CTCAE Composite Grade
+</span>
+               </a>
+            </td>
+            <td>
+<p>Composite grade for a single PRO-CTCAE adverse event, computed from frequency, severity, and/or interference scores using the NCI composite grading algorithm (Basch et al., 2021). Range 0-3, mapped to CTCAE grade equivalents. Grade 0 = no symptom, Grade 3 = most severe patient-reported burden. May have dataAbsentReason when patient selected opt-out answers.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="11"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-bdi-ii-observation.html"
+                  title="Observation/mii-exa-pro-bdi-ii-observation">
+                  <span title="Observation/mii-exa-pro-bdi-ii-observation">BDI-II Observation Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-mii-exa-pro-bdi-ii-bundle.html"
+                  title="Bundle/mii-exa-pro-bdi-ii-bundle">
+                  <span title="Bundle/mii-exa-pro-bdi-ii-bundle">BDI-II Transaction Bundle Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Transaction bundle containing BDI-II CodeSystem, ValueSets, questionnaire, response, and derived observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.html"
+                  title="Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv">
+                  <span title="Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv">DASS-21 Anxiety DASS-42 Equivalent Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 Anxiety subscale DASS-42 equivalent score observation (raw 5 * 2 = 10)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.html"
+                  title="Observation/mii-exa-pro-dass-dass21-score-anxiety-raw">
+                  <span title="Observation/mii-exa-pro-dass-dass21-score-anxiety-raw">DASS-21 Anxiety Raw Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 Anxiety subscale raw score observation (mild: 5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-dass-dass21-score-depression-equiv.html"
+                  title="Observation/mii-exa-pro-dass-dass21-score-depression-equiv">
+                  <span title="Observation/mii-exa-pro-dass-dass21-score-depression-equiv">DASS-21 Depression DASS-42 Equivalent Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 Depression subscale DASS-42 equivalent score observation (raw 12 * 2 = 24)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-dass-dass21-score-depression-raw.html"
+                  title="Observation/mii-exa-pro-dass-dass21-score-depression-raw">
+                  <span title="Observation/mii-exa-pro-dass-dass21-score-depression-raw">DASS-21 Depression Raw Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 Depression subscale raw score observation (severe: 12)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-dass-dass21-score-stress-equiv.html"
+                  title="Observation/mii-exa-pro-dass-dass21-score-stress-equiv">
+                  <span title="Observation/mii-exa-pro-dass-dass21-score-stress-equiv">DASS-21 Stress DASS-42 Equivalent Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 Stress subscale DASS-42 equivalent score observation (raw 11 * 2 = 22)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-dass-dass21-score-stress-raw.html"
+                  title="Observation/mii-exa-pro-dass-dass21-score-stress-raw">
+                  <span title="Observation/mii-exa-pro-dass-dass21-score-stress-raw">DASS-21 Stress Raw Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>DASS-21 Stress subscale raw score observation (moderate: 11)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-ap">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-ap">EORTC QLQ-C30 Appetite Loss Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-cf">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-cf">EORTC QLQ-C30 Cognitive Functioning Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-co.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-co">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-co">EORTC QLQ-C30 Constipation Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-di.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-di">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-di">EORTC QLQ-C30 Diarrhoea Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-dy">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-dy">EORTC QLQ-C30 Dyspnoea Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-ef">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-ef">EORTC QLQ-C30 Emotional Functioning Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-fa">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-fa">EORTC QLQ-C30 Fatigue Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-fi">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-fi">EORTC QLQ-C30 Financial Difficulties Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-ql">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-ql">EORTC QLQ-C30 Global Health Status / Quality of Life Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-sl">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-sl">EORTC QLQ-C30 Insomnia Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-nv">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-nv">EORTC QLQ-C30 Nausea and Vomiting Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-pa">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-pa">EORTC QLQ-C30 Pain Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-pf">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-pf">EORTC QLQ-C30 Physical Functioning Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Physical Functioning Score from EORTC QLQ-C30</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-rf">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-rf">EORTC QLQ-C30 Role Functioning Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.html"
+                  title="Observation/mii-exa-pro-eortc-qlq-c30-observation-sf">
+                  <span title="Observation/mii-exa-pro-eortc-qlq-c30-observation-sf">EORTC QLQ-C30 Social Functioning Score
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-mii-exa-pro-eortc-qlq-c30-bundle.html"
+                  title="Bundle/mii-exa-pro-eortc-qlq-c30-bundle">
+                  <span title="Bundle/mii-exa-pro-eortc-qlq-c30-bundle">EORTC QLQ-C30 Transaction Bundle Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Complete transaction bundle containing EORTC QLQ-C30 questionnaire, response with all 30 items, and derived observations with all 15 scale scores</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-coded-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-coded-response">EQ-5D-5L Answer-Coding Response Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example of an EQ-5D-5L questionnaire response using the answer-coding variant with MII CodeSystem</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response">EQ-5D-5L Questionnaire Response Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-gad-7-observation.html"
+                  title="Observation/mii-exa-pro-gad-7-observation">
+                  <span title="Observation/mii-exa-pro-gad-7-observation">GAD-7 Observation Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-gad-7-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-gad-7-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-gad-7-response">GAD-7 Questionnaire Response Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-mii-exa-pro-gad-7-bundle.html"
+                  title="Bundle/mii-exa-pro-gad-7-bundle">
+                  <span title="Bundle/mii-exa-pro-gad-7-bundle">GAD-7 Transaction Bundle Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Transaction bundle containing GAD-7 questionnaire, response, and derived observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-bdi-bdi2.html"
+                  title="QuestionnaireResponse/mii-exa-pro-bdi-bdi2">
+                  <span title="QuestionnaireResponse/mii-exa-pro-bdi-bdi2">MII EXA PRO BDI-II
+</span>
+               </a>
+            </td>
+            <td>
+<p>MII EXA PRO Beck Depression Inventory II (BDI-II) Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-dass-dass21-response-01.html"
+                  title="QuestionnaireResponse/mii-exa-pro-dass-dass21-response-01">
+                  <span title="QuestionnaireResponse/mii-exa-pro-dass-dass21-response-01">MII EXA PRO DASS-21 Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Complete DASS-21 QuestionnaireResponse example with mixed severity: Depression severe (12), Anxiety mild (5), Stress moderate (11)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response">MII EXA PRO EORTC QLQ-C30 Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Complete EORTC QLQ-C30 QuestionnaireResponse example with all 30 items and calculated scores</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-mii-exa-pro-promis-depression-sf4a-bundle.html"
+                  title="Bundle/mii-exa-pro-promis-depression-sf4a-bundle">
+                  <span title="Bundle/mii-exa-pro-promis-depression-sf4a-bundle">MII EXA PRO PROMIS Depression SF 4a Bundle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example bundle containing PROMIS Depression SF 4a QuestionnaireResponse and derived observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-promis-depression-sf4a-raw-score.html"
+                  title="Observation/mii-exa-pro-promis-depression-sf4a-raw-score">
+                  <span title="Observation/mii-exa-pro-promis-depression-sf4a-raw-score">MII EXA PRO PROMIS Depression SF 4a Raw Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example raw score observation for PROMIS Depression Short Form 4a</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response">MII EXA PRO PROMIS Depression SF 4a Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example QuestionnaireResponse for PROMIS Depression Short Form 4a</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-promis-depression-sf4a-tscore.html"
+                  title="Observation/mii-exa-pro-promis-depression-sf4a-tscore">
+                  <span title="Observation/mii-exa-pro-promis-depression-sf4a-tscore">MII EXA PRO PROMIS Depression SF 4a T-Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example T-score observation for PROMIS Depression Short Form 4a</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-mii-exa-pro-promis-29-bundle.html"
+                  title="Bundle/mii-exa-pro-promis-29-bundle">
+                  <span title="Bundle/mii-exa-pro-promis-29-bundle">MII EXA PRO PROMIS-29 Bundle with Extracted Observations
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example Bundle demonstrating PROMIS-29 QuestionnaireResponse with all extracted T-Score Observations and Pain Intensity observation. This bundle shows the complete SDC observation-based extraction workflow.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-promis-29-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-promis-29-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-promis-29-response">MII EXA PRO PROMIS-29 Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (English variant)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-promis-29-de-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-promis-29-de-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-promis-29-de-response">MII EXA PRO PROMIS-29 Response (German)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-mii-exa-pro-patient.html"
+                  title="Patient/mii-exa-pro-patient">
+                  <span title="Patient/mii-exa-pro-patient">MII EXA PRO Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example patient for PRO demonstrations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index">MII ObsDef PRO Score EQ-5D-5L Index
+</span>
+               </a>
+            </td>
+            <td>
+<p>EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Index Score</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile">MII ObsDef PRO Score EQ-5D-5L Profile
+</span>
+               </a>
+            </td>
+            <td>
+<p>EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas">MII ObsDef PRO Score EQ-5D-5L VAS
+</span>
+               </a>
+            </td>
+            <td>
+<p>EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-phq-9-observation.html"
+                  title="Observation/mii-exa-pro-phq-9-observation">
+                  <span title="Observation/mii-exa-pro-phq-9-observation">PHQ-9 Observation Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-phq-9-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-phq-9-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-phq-9-response">PHQ-9 Questionnaire Response Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-mii-exa-pro-phq-9-bundle.html"
+                  title="Bundle/mii-exa-pro-phq-9-bundle">
+                  <span title="Bundle/mii-exa-pro-phq-9-bundle">PHQ-9 Transaction Bundle Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Transaction bundle containing PHQ-9 questionnaire, response, and derived observation - flagship example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.html"
+                  title="Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation">
+                  <span title="Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation">PROMIS Depression T-Score, derived from BDI-II Observation Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-05-04 13:30:00 +0000">
+    2026-05-04
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

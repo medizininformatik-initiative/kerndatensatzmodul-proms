@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="mii-obsdef-pro-score-gad-7"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.2.0"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ObservationDefinition mii-obsdef-pro-score-gad-7</b></p><a name="mii-obsdef-pro-score-gad-7"> </a><a name="hcmii-obsdef-pro-score-gad-7"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-score-blueprint.html">MII PR PRO Score Blueprint / Template</a> version: 2026.2.0</p></div><p><b>ArtifactVersion</b>: 2026.2.0</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 70274-6}">Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]</span></p><p><b>permittedDataType</b>: Quantity</p><p><b>multipleResultsAllowed</b>: false</p><p><b>method</b>: <span title="Codes:{http://loinc.org 69737-5}">Generalized anxiety disorder 7 item (GAD-7)</span></p><h3>QuantitativeDetails</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Unit</b></td><td><b>DecimalPrecision</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://unitsofmeasure.org 1}">1</span></td><td>0</td></tr></table><h3>QualifiedIntervals</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Category</b></td><td><b>Range</b></td></tr><tr><td style="display: none">*</td><td>absolute range</td><td>0-21</td></tr></table></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ObservationDefinition mii-obsdef-pro-score-gad-7</b></p><a name="en-mii-obsdef-pro-score-gad-7"> </a><a name="en-hcmii-obsdef-pro-score-gad-7"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-score-blueprint.html">MII PR PRO Score Blueprint / Template</a> version: 2026.2.0</p></div><p><b>ArtifactVersion</b>: 2026.2.0</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 70274-6}">Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]</span></p><p><b>permittedDataType</b>: Quantity</p><p><b>multipleResultsAllowed</b>: false</p><p><b>method</b>: <span title="Codes:{http://loinc.org 69737-5}">Generalized anxiety disorder 7 item (GAD-7)</span></p><h3>QuantitativeDetails</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Unit</b></td><td><b>DecimalPrecision</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://unitsofmeasure.org 1}">1</span></td><td>0</td></tr></table><h3>QualifiedIntervals</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Category</b></td><td><b>Range</b></td></tr><tr><td style="display: none">*</td><td>absolute range</td><td>0-21</td></tr></table></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-version">
+    <valueString value="2026.2.0"/>
+  </extension>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="70274-6"/>
+      <display value="Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"/>
+    </coding>
+  </code>
+  <permittedDataType value="Quantity"/>
+  <multipleResultsAllowed value="false"/>
+  <method>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="69737-5"/>
+      <display value="Generalized anxiety disorder 7 item (GAD-7)"/>
+    </coding>
+  </method>
+  <quantitativeDetails>
+    <unit>
+      <coding>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="1"/>
+      </coding>
+    </unit>
+    <decimalPrecision value="0"/>
+  </quantitativeDetails>
+  <qualifiedInterval>
+    <category value="absolute"/>
+    <range>
+      <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="decrease"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <low>
+        <value value="0"/>
+      </low>
+      <high>
+        <value value="21"/>
+      </high>
+    </range>
+  </qualifiedInterval>
+</ObservationDefinition>
