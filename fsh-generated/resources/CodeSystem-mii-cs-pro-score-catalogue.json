@@ -21,6 +21,14 @@
       "display": "EuroQol EQ-5D-5L Profile"
     },
     {
+      "code": "phq-gad7-total",
+      "display": "GAD-7 Total Score"
+    },
+    {
+      "code": "phq-gad7-promis-anxiety-tscore",
+      "display": "GAD-7 derived PROMIS Anxiety T-Score"
+    },
+    {
       "code": "phq-phq9-total",
       "display": "PHQ-9 Total Score"
     },
@@ -166,5 +174,5 @@
     }
   ],
   "version": "2026.2.0",
-  "count": 39
+  "count": 41
 }

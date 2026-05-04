@@ -9,6 +9,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * ^status = #active
 
 * #euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
+* #phq-gad7 "GAD-7 Questionnaire"
 * #phq-phq9 "PHQ-9 Questionnaire"
 * #bdi-bdi2 "Beck Depression Inventory II (BDI-II)"
 * #promis-promis29 "PROMIS-29 Questionnaire"

@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-pro-gad-7-observation",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.2.0"
+    ]
+  },
+  "valueQuantity": {
+    "value": 13,
+    "code": "{score}",
+    "unit": "{score}",
+    "system": "http://unitsofmeasure.org"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "effectiveDateTime": "2024-03-15T10:30:00Z",
+  "code": {
+    "coding": [
+      {
+        "code": "70274-6",
+        "system": "http://loinc.org",
+        "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+      }
+    ]
+  }
+}

@@ -436,6 +436,28 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-pro-gad-7-observation"
+        },
+        "name": "GAD-7 Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-gad-7-response"
+        },
+        "name": "GAD-7 Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-gad-7-bundle"
+        },
+        "name": "GAD-7 Transaction Bundle Example",
+        "description": "Transaction bundle containing GAD-7 questionnaire, response, and derived observation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/mii-cps-pro-capabilitystatement"
         },
         "name": "MII CPS PRO CapabilityStatement",
@@ -724,6 +746,14 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-gad-7"
+        },
+        "name": "MII ObsDef PRO Score GAD-7",
+        "description": "Generalized Anxiety Disorder Scale-7 (GAD-7)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-9"
         },
         "name": "MII ObsDef PRO Score PHQ-9",
@@ -984,6 +1014,14 @@
         },
         "name": "MII QST PRO EQ-5D-5L Collectable",
         "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-gad-7"
+        },
+        "name": "MII QST PRO GAD-7",
+        "description": "Generalized Anxiety Disorder Scale-7 (GAD-7)",
         "exampleBoolean": false
       },
       {
@@ -1394,6 +1432,11 @@
             {
               "nameUrl": "phq-9.html",
               "title": "PHQ-9",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gad-7.html",
+              "title": "GAD-7",
               "generation": "markdown"
             },
             {

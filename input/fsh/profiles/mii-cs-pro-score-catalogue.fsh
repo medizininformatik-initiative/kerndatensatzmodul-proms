@@ -13,6 +13,10 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 * #euroqol-eq5d5l-vas "EuroQol EQ-5D-5L Visual Analog Scale (VAS) Score"
 * #euroqol-eq5d5l-profile "EuroQol EQ-5D-5L Profile"
 
+// GAD-7 Scores
+* #phq-gad7-total "GAD-7 Total Score"
+* #phq-gad7-promis-anxiety-tscore "GAD-7 derived PROMIS Anxiety T-Score"
+
 // PHQ-9 Scores
 * #phq-phq9-total "PHQ-9 Total Score"
 
