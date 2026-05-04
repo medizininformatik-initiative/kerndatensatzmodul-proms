@@ -1,6 +1,7 @@
 Alias: $mii-cs-pro-eq-5d-value-set =  https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set
 Alias: $mii-qst-pro-euroqol-eq5d5l = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l
 Alias: $mii-qst-pro-euroqol-eq5d5l-answer-coding = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eq5d5l-answer-coding
+Alias: $mii-qst-pro-gad-7 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7
 Alias: $mii-qst-pro-phq-9 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9
 Alias: $mii-qst-pro-phq-9-sdc-rendering = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9-sdc-rendering
 Alias: $mii-vs-pro-phq-9-answer-list-ll358-3 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3
