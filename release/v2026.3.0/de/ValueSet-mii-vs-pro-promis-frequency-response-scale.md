@@ -34,7 +34,7 @@ PROMIS Frequency response scale based on LOINC LL1016-6
   "title" : "MII VS PRO PROMIS Frequency Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-05T20:04:21+00:00",
+  "date" : "2026-05-05T20:06:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

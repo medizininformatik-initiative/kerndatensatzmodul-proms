@@ -261,6 +261,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
 
+<p><strong>Version: 2026.3.0</strong> (unreleased)</p>
+
+<p>Datum: –</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: GAD-7 (Generalized Anxiety Disorder 7-item Scale) – vollständige Implementierung mit Questionnaire, Terminologie und Scoring (#80)</li>
+</ul>
+
+<p>FHIR-Ressourcen:</p>
+<ul>
+  <li>Removed: Unvollständiger ConceptMap-Stub <code class="language-plaintext highlighter-rouge">mii-cm-pro-bdi-ii-to-promis-depression-observation</code> entfernt (nur 2 von 64 PROsetta-Stone-Einträgen). Architektur-Entscheidung: Score-Konversionen werden zukünftig als CQL Library modelliert (geplant für 2027-Release)</li>
+  <li>Fixed: Capabilities-Extension in <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-cognitive-function-sf4a</code> vervollständigt (<code class="language-plaintext highlighter-rouge">domainAligned</code>=true ergänzt)</li>
+  <li>Added: Capabilities-Extension zu <code class="language-plaintext highlighter-rouge">mii-qst-pro-pro-ctcae-breast-de</code> hinzugefügt (<code class="language-plaintext highlighter-rouge">displayable</code>+<code class="language-plaintext highlighter-rouge">collectable</code>=true; <code class="language-plaintext highlighter-rouge">calculatable</code>/<code class="language-plaintext highlighter-rouge">extractable</code>/<code class="language-plaintext highlighter-rouge">domainAligned</code>=false – bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)</li>
+</ul>
+
 <p><strong>Version: 2026.2.0</strong> (unreleased)</p>
 
 <p>Datum: –</p>
@@ -429,7 +445,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-05-05 20:04:00 +0000">
+  <span title="2026-05-05 20:06:00 +0000">
     2026-05-05
   </span>
 

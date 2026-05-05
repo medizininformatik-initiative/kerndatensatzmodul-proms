@@ -3,7 +3,7 @@ MII_IG_PRO : Validation Results
 
 err = 267, warn = 1980, info = 847
 IG Publisher Version: 2.2.7
-Generated Tue May 05 20:16:53 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro)
+Generated Tue May 05 20:18:31 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro)
  Build Errors : 57 / 22 / 0
  /workspace/fsh-generated/resources/Bundle-mii-exa-pro-bdi-ii-bundle : 0 / 9 / 44
  /workspace/fsh-generated/resources/Bundle-mii-exa-pro-eortc-qlq-c30-bundle : 26 / 58 / 88
@@ -1698,9 +1698,9 @@ WARNING: Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b: Questionnaire.jurisd
 WARNING: Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b: Questionnaire: Die Ressource hat eine Sprache (en), und das XHTML hat eine Sprache (de), aber sie unterscheiden sich
 INFORMATION: Resource: The resource Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'eortc-qlq-c30-4pt-b'): Error from http://127.0.0.1:8090/fhir: Error: [15663f64-8ebe-4afb-8395-56312cf8e15a]: A usable code system with URL #eortc-qlq-c30-cs-b could not be resolved.
-Information: X-Request-Id: 998c4b0a-cf56-46c6-af28-47397a80b441
+Information: X-Request-Id: 09cce85e-1482-4a7e-961c-b116c8bd0cee
 WARNING: ValueSet.where(id = 'eortc-qlq-c30-7pt-b'): Error from http://127.0.0.1:8090/fhir: Error: [703e242d-978f-4043-a22a-c7727b08ffb1]: A usable code system with URL #eortc-qlq-c30-cs-b could not be resolved.
-Information: X-Request-Id: a6c3bc7a-2893-48ae-9f2c-f35eba68cc4c
+Information: X-Request-Id: b8c78b80-e716-4abb-89e2-494c86218d09
 == fsh-generated/resources/Questionnaire-mii-qst-pro-epds.json ==
 WARNING: Questionnaire/mii-qst-pro-epds: Questionnaire.language: Das CodeSystem null ist unbekannt
 WARNING: Questionnaire/mii-qst-pro-epds: Questionnaire.jurisdiction[0].coding[0].system: A definition for CodeSystem 'http://unstats.un.org/unsd/methods/m49/m49.htm' could not be found, so the code cannot be validated
