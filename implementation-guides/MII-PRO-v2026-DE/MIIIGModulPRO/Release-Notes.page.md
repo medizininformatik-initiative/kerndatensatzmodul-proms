@@ -5,6 +5,18 @@ topic: Release-Notes
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Version: 2026.3.0** (unreleased)
+
+Datum: –
+
+PRO-Instrumente:
+- Added: GAD-7 (Generalized Anxiety Disorder 7-item Scale) – vollständige Implementierung mit Questionnaire, Terminologie und Scoring (#80)
+
+FHIR-Ressourcen:
+- Removed: Unvollständiger ConceptMap-Stub `mii-cm-pro-bdi-ii-to-promis-depression-observation` entfernt (nur 2 von 64 PROsetta-Stone-Einträgen). Architektur-Entscheidung: Score-Konversionen werden zukünftig als CQL Library modelliert (geplant für 2027-Release)
+- Fixed: Capabilities-Extension in `mii-qst-pro-promis-cognitive-function-sf4a` vervollständigt (`domainAligned`=true ergänzt)
+- Added: Capabilities-Extension zu `mii-qst-pro-pro-ctcae-breast-de` hinzugefügt (`displayable`+`collectable`=true; `calculatable`/`extractable`/`domainAligned`=false – bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)
+
 **Version: 2026.2.0** (unreleased)
 
 Datum: –
