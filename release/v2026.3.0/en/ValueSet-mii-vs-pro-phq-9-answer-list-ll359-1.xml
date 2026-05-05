@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-phq-9-answer-list-ll359-1"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-phq-9-answer-list-ll359-1</b></p><a name="en-mii-vs-pro-phq-9-answer-list-ll359-1"> </a><a name="en-hcmii-vs-pro-phq-9-answer-list-ll359-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: de</p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="https://loinc.org/LA6572-7/">LA6572-7</a></td><td>Not difficult at all</td><td>Überhaupt nicht erschwert</td></tr><tr><td><a href="https://loinc.org/LA6573-5/">LA6573-5</a></td><td>Somewhat difficult</td><td>Etwas erschwert</td></tr><tr><td><a href="https://loinc.org/LA6575-0/">LA6575-0</a></td><td>Very difficult</td><td>Relativ stark erschwert</td></tr><tr><td><a href="https://loinc.org/LA6574-3/">LA6574-3</a></td><td>Extremely difficult</td><td>Sehr stark erschwert</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1"/>
+  <version value="2026.2.0"/>
+  <name value="MII_VS_PRO_PHQ9_AnswerList_LL3591"/>
+  <title value="MII VS PRO PHQ-9 Answer List LL359-1"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-05-05T20:04:21+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6572-7"/>
+        <display value="Not difficult at all"/>
+        <designation>
+          <language value="de"/>
+          <value value="Überhaupt nicht erschwert"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6573-5"/>
+        <display value="Somewhat difficult"/>
+        <designation>
+          <language value="de"/>
+          <value value="Etwas erschwert"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6575-0"/>
+        <display value="Very difficult"/>
+        <designation>
+          <language value="de"/>
+          <value value="Relativ stark erschwert"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6574-3"/>
+        <display value="Extremely difficult"/>
+        <designation>
+          <language value="de"/>
+          <value value="Sehr stark erschwert"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

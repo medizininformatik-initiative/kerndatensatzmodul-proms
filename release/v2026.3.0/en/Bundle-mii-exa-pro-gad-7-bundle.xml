@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-pro-gad-7-bundle"/>
+  <language value="en"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7"/>
+    <resource>
+      <Questionnaire>
+        <id value="mii-qst-pro-gad-7"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities">
+          <extension url="displayable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="collectable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="populatable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="calculatable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="extractable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="domainAligned">
+            <valueBoolean value="true"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable">
+          <valueExpression>
+            <name value="rawScore"/>
+            <language value="text/fhirpath"/>
+            <expression value="%resource.item.where(linkId.matches('^phq-gad7-q0[1-7]$')).answer.value.ordinal().sum()"/>
+          </valueExpression>
+        </extension>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7"/>
+        <version value="2026.2.0"/>
+        <title value="MII QST PRO GAD-7"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <description value="Generalized Anxiety Disorder Scale-7 (GAD-7)"/>
+        <code>
+          <system value="http://loinc.org"/>
+          <code value="69737-5"/>
+          <display value="Generalized anxiety disorder 7 item (GAD-7)"/>
+        </code>
+        <code>
+          <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"/>
+          <code value="phq-gad7"/>
+          <display value="GAD-7 Questionnaire"/>
+        </code>
+        <item>
+          <linkId value="GAD-7.Description"/>
+          <text value="Over the last two weeks, how often have you been bothered by the following problems?"/>
+          <type value="display"/>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+            <valueExpression>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-gad7-q01').answer.value, {})"/>
+            </valueExpression>
+          </extension>
+          <linkId value="phq-gad7-q01"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="69725-0"/>
+          </code>
+          <prefix value="1"/>
+          <text value="Feeling nervous, anxious, or on edge"/>
+          <type value="choice"/>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="0"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="1"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="2"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="3"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answerOption>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+            <valueExpression>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-gad7-q02').answer.value, {})"/>
+            </valueExpression>
+          </extension>
+          <linkId value="phq-gad7-q02"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="68509-9"/>
+          </code>
+          <prefix value="2"/>
+          <text value="Not being able to stop or control worrying"/>
+          <type value="choice"/>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="0"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="1"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="2"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="3"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answerOption>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+            <valueExpression>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-gad7-q03').answer.value, {})"/>
+            </valueExpression>
+          </extension>
+          <linkId value="phq-gad7-q03"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="69733-4"/>
+          </code>
+          <prefix value="3"/>
+          <text value="Worrying too much about different things"/>
+          <type value="choice"/>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="0"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="1"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="2"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="3"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answerOption>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+            <valueExpression>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-gad7-q04').answer.value, {})"/>
+            </valueExpression>
+          </extension>
+          <linkId value="phq-gad7-q04"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="69734-2"/>
+          </code>
+          <prefix value="4"/>
+          <text value="Trouble relaxing"/>
+          <type value="choice"/>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="0"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="1"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="2"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="3"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answerOption>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+            <valueExpression>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-gad7-q05').answer.value, {})"/>
+            </valueExpression>
+          </extension>
+          <linkId value="phq-gad7-q05"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="69735-9"/>
+          </code>
+          <prefix value="5"/>
+          <text value="Being so restless that it is hard to sit still"/>
+          <type value="choice"/>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="0"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="1"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="2"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="3"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answerOption>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+            <valueExpression>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-gad7-q06').answer.value, {})"/>
+            </valueExpression>
+          </extension>
+          <linkId value="phq-gad7-q06"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="69689-8"/>
+          </code>
+          <prefix value="6"/>
+          <text value="Becoming easily annoyed or irritable"/>
+          <type value="choice"/>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="0"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="1"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="2"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="3"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answerOption>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+            <valueExpression>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-gad7-q07').answer.value, {})"/>
+            </valueExpression>
+          </extension>
+          <linkId value="phq-gad7-q07"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="69736-7"/>
+          </code>
+          <prefix value="7"/>
+          <text value="Feeling afraid, as if something awful might happen"/>
+          <type value="choice"/>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="0"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="1"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="2"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answerOption>
+          <answerOption>
+            <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+              <valueDecimal value="3"/>
+            </extension>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answerOption>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+            <valueExpression>
+              <name value="Scoreberechnung"/>
+              <language value="text/fhirpath"/>
+              <expression value="%rawScore"/>
+            </valueExpression>
+          </extension>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+            <valueCoding>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="{score}"/>
+            </valueCoding>
+          </extension>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                <code value="survey"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <linkId value="phq-gad7-score-total"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="70274-6"/>
+            <display value="Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"/>
+          </code>
+          <prefix value="Auswertung"/>
+          <text value="GAD-7 Total Score"/>
+          <type value="decimal"/>
+          <readOnly value="true"/>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+            <valueExpression>
+              <name value="promis-anxiety-tscore-mapping"/>
+              <language value="text/fhirpath"/>
+              <expression value="iif(%rawScore = 0, 33.8, iif(%rawScore = 1, 40.3, iif(%rawScore = 2, 44.0, iif(%rawScore = 3, 46.8, iif(%rawScore = 4, 49.2, iif(%rawScore = 5, 51.3, iif(%rawScore = 6, 53.2, iif(%rawScore = 7, 54.9, iif(%rawScore = 8, 56.6, iif(%rawScore = 9, 58.1, iif(%rawScore = 10, 59.6, iif(%rawScore = 11, 61.0, iif(%rawScore = 12, 62.3, iif(%rawScore = 13, 63.5, iif(%rawScore = 14, 64.8, iif(%rawScore = 15, 66.0, iif(%rawScore = 16, 67.2, iif(%rawScore = 17, 68.5, iif(%rawScore = 18, 69.8, iif(%rawScore = 19, 71.2, iif(%rawScore = 20, 72.8, 75.7)))))))))))))))))))))"/>
+            </valueExpression>
+          </extension>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+            <valueCoding>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="{score}"/>
+            </valueCoding>
+          </extension>
+          <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                <code value="survey"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <linkId value="phq-gad7-promis-tscore"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="77862-1"/>
+            <display value="PROMIS emotional distress - anxiety - version 1.0 Tscore"/>
+          </code>
+          <prefix value="T-Score"/>
+          <text value="PROMIS Anxiety T-Score (derived from GAD-7)"/>
+          <type value="decimal"/>
+          <readOnly value="true"/>
+        </item>
+      </Questionnaire>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Questionnaire/mii-qst-pro-gad-7"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-gad-7-response"/>
+    <resource>
+      <QuestionnaireResponse>
+        <id value="mii-exa-pro-gad-7-response"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.2.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7"/>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <authored value="2024-03-15T10:30:00Z"/>
+        <item>
+          <linkId value="phq-gad7-q01"/>
+          <answer>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-q02"/>
+          <answer>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6571-9"/>
+              <display value="Nearly every day"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-q03"/>
+          <answer>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-q04"/>
+          <answer>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-q05"/>
+          <answer>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-q06"/>
+          <answer>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-q07"/>
+          <answer>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-score-total"/>
+          <answer>
+            <valueDecimal value="13"/>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq-gad7-promis-tscore"/>
+          <answer>
+            <valueDecimal value="63.5"/>
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="QuestionnaireResponse/mii-exa-pro-gad-7-response"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-gad-7-observation"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-gad-7-observation"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.2.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="70274-6"/>
+            <display value="Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-03-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="13"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-gad-7-observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"/>
+    <resource>
+      <Patient>
+        <id value="mii-exa-pro-patient"/>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <active value="true"/>
+        <name>
+          <family value="Example"/>
+          <given value="Patient"/>
+        </name>
+        <gender value="other"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/mii-exa-pro-patient"/>
+    </request>
+  </entry>
+</Bundle>
