@@ -17,6 +17,7 @@ Usage: #definition
 * extension[capabilities].extension[collectable].valueBoolean = true
 * extension[capabilities].extension[calculatable].valueBoolean = true
 * extension[capabilities].extension[extractable].valueBoolean = true
+* extension[capabilities].extension[domainAligned].valueBoolean = true
 
 // Define variable for raw score calculation (reverse scored items)
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"

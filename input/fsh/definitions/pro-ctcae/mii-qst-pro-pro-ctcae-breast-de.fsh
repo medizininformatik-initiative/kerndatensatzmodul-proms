@@ -29,6 +29,19 @@ Usage: #definition
 * experimental = true
 * description = "PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score)."
 
+// Questionnaire capabilities (MII-PRO semantics — refer to score-level capabilities)
+// calculatable=false: pending decision on scoring algorithm (two published algorithms exist)
+// extractable=false: composite/derived scores are not 1:1 item→Observation extracts.
+//                    NOTE: SDC observationExtract below remains true — that flag governs
+//                    raw per-item Observation extraction at the SDC level, which is
+//                    independent from this score-level capability flag.
+// domainAligned=false: PRO-CTCAE is cross-entity, not aligned to a single MII PRO domain
+* extension[capabilities].extension[displayable].valueBoolean = true
+* extension[capabilities].extension[collectable].valueBoolean = true
+* extension[capabilities].extension[calculatable].valueBoolean = false
+* extension[capabilities].extension[extractable].valueBoolean = false
+* extension[capabilities].extension[domainAligned].valueBoolean = false
+
 // SDC Observation-based extraction
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
 * extension[=].valueBoolean = true
