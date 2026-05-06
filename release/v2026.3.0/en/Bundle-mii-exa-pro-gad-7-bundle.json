@@ -9,7 +9,7 @@
       "resourceType" : "Questionnaire",
       "id" : "mii-qst-pro-gad-7",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.3.0"]
       },
       "language" : "en",
       "text" : {
@@ -51,7 +51,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7",
-      "version" : "2026.2.0",
+      "version" : "2026.3.0",
       "title" : "MII QST PRO GAD-7",
       "status" : "active",
       "experimental" : true,
@@ -590,7 +590,7 @@
       "resourceType" : "QuestionnaireResponse",
       "id" : "mii-exa-pro-gad-7-response",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.2.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.3.0"]
       },
       "language" : "en",
       "text" : {
@@ -696,7 +696,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-gad-7-observation",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.2.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.3.0"]
       },
       "language" : "en",
       "text" : {

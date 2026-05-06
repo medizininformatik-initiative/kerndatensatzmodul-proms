@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-health-correlation - MII IG PRO v2026.2.0
+# mii-sp-pro-observationdefinition-health-correlation - MII IG PRO v2026.3.0
 
 ## SearchParameter: mii-sp-pro-observationdefinition-health-correlation (Experimental) 
 
@@ -27,7 +27,7 @@ SearchParameter for ObservationDefinition.qualifiedInterval.range.extension[Scor
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-health-correlation",
-  "version" : "2026.2.0",
+  "version" : "2026.3.0",
   "name" : "MII_SP_PRO_ObservationDefinition_ScoreHealthCorrelation",
   "status" : "active",
   "experimental" : true,

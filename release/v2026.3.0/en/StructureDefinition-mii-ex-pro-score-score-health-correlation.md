@@ -1,4 +1,4 @@
-# MII Ex PRO Score Score Health Correlation - MII IG PRO v2026.2.0
+# MII Ex PRO Score Score Health Correlation - MII IG PRO v2026.3.0
 
 ## Extension: MII Ex PRO Score Score Health Correlation 
 
@@ -32,11 +32,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-pro-score-
   "resourceType" : "StructureDefinition",
   "id" : "mii-ex-pro-score-score-health-correlation",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
-  "version" : "2026.2.0",
+  "version" : "2026.3.0",
   "name" : "MII_EX_PRO_Score_Score_Health_Correlation",
   "title" : "MII Ex PRO Score Score Health Correlation",
   "status" : "active",
-  "date" : "2026-05-05T20:17:53+00:00",
+  "date" : "2026-05-06T07:26:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

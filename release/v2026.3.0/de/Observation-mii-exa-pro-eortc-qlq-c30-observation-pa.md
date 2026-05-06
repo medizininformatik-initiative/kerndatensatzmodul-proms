@@ -1,4 +1,4 @@
-# EORTC QLQ-C30 Pain Score - MII IG PRO v2026.2.0
+# EORTC QLQ-C30 Pain Score - MII IG PRO v2026.3.0
 
 ## Beispiel Observation: EORTC QLQ-C30 Pain Score
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.2.0
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.3.0
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-eortc-qlq-c30-observation-pa",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.2.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.3.0"]
   },
   "status" : "final",
   "category" : [{

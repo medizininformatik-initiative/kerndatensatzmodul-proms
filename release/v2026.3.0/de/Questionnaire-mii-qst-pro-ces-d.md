@@ -1,4 +1,4 @@
-# MII QST PRO CES-D - MII IG PRO v2026.2.0
+# MII QST PRO CES-D - MII IG PRO v2026.3.0
 
 ## Questionnaire: Center for Epidemiologic Studies Depression Scale (CES-D) (Experimentell) 
 
@@ -24,7 +24,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-ces-d",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.3.0"]
   },
   "language" : "en",
   "extension" : [{
@@ -51,11 +51,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ces-d",
-  "version" : "2026.2.0",
+  "version" : "2026.3.0",
   "title" : "Center for Epidemiologic Studies Depression Scale (CES-D)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-05T20:17:53+00:00",
+  "date" : "2026-05-06T07:26:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

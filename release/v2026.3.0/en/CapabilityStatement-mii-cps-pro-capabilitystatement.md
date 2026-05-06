@@ -1,4 +1,4 @@
-# MII CPS PRO CapabilityStatement - MII IG PRO v2026.2.0
+# MII CPS PRO CapabilityStatement - MII IG PRO v2026.3.0
 
 ## CapabilityStatement: MII CPS PRO CapabilityStatement 
 
@@ -16,7 +16,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
   "resourceType" : "CapabilityStatement",
   "id" : "mii-cps-pro-capabilitystatement",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement",
-  "version" : "2026.2.0",
+  "version" : "2026.3.0",
   "name" : "MII_CPS_PRO_CapabilityStatement",
   "title" : "MII CPS PRO CapabilityStatement",
   "status" : "active",

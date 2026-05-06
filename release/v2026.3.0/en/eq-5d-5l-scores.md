@@ -1,4 +1,4 @@
-# EQ-5D-5L Scores - MII IG PRO v2026.2.0
+# EQ-5D-5L Scores - MII IG PRO v2026.3.0
 
 ## EQ-5D-5L Scores
 

@@ -1,4 +1,4 @@
-# BDI-II - MII IG PRO v2026.2.0
+# BDI-II - MII IG PRO v2026.3.0
 
 ## BDI-II
 

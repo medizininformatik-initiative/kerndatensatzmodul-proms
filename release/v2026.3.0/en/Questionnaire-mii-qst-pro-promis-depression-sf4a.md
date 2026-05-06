@@ -1,4 +1,4 @@
-# MII QST PRO PROMIS Depression SF 4a (Adults) - MII IG PRO v2026.2.0
+# MII QST PRO PROMIS Depression SF 4a (Adults) - MII IG PRO v2026.3.0
 
 ## Questionnaire: MII QST PRO PROMIS Depression SF 4a (Adults) (Experimental) 
 
@@ -24,7 +24,7 @@ PROMIS Depression Short Form 4a - Adults - Item Bank v1.0
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-promis-depression-sf4a",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.3.0"]
   },
   "language" : "en",
   "extension" : [{
@@ -59,11 +59,11 @@ PROMIS Depression Short Form 4a - Adults - Item Bank v1.0
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
-  "version" : "2026.2.0",
+  "version" : "2026.3.0",
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-05T20:17:53+00:00",
+  "date" : "2026-05-06T07:26:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

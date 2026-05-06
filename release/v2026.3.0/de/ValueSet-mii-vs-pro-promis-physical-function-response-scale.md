@@ -1,4 +1,4 @@
-# MII VS PRO PROMIS Physical Function Response Scale - MII IG PRO v2026.2.0
+# MII VS PRO PROMIS Physical Function Response Scale - MII IG PRO v2026.3.0
 
 ## ValueSet: MII VS PRO PROMIS Physical Function Response Scale (Experimentell) 
 
@@ -29,12 +29,12 @@ PROMIS Physical Function response scale based on LOINC LL1022-4
   "id" : "mii-vs-pro-promis-physical-function-response-scale",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
-  "version" : "2026.2.0",
+  "version" : "2026.3.0",
   "name" : "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale",
   "title" : "MII VS PRO PROMIS Physical Function Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-05T20:17:53+00:00",
+  "date" : "2026-05-06T07:26:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

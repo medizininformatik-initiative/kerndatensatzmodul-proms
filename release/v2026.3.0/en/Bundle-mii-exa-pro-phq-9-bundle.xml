@@ -10,7 +10,7 @@
       <Questionnaire>
         <id value="mii-qst-pro-phq-9"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.2.0"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.3.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -51,7 +51,7 @@
           </valueExpression>
         </extension>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
-        <version value="2026.2.0"/>
+        <version value="2026.3.0"/>
         <title value="MII QST PRO PHQ-9"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -704,7 +704,7 @@
       <QuestionnaireResponse>
         <id value="mii-exa-pro-phq-9-response"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.2.0"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.3.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -835,7 +835,7 @@
       <Observation>
         <id value="mii-exa-pro-phq-9-observation"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.2.0"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.3.0"/>
         </meta>
         <language value="en"/>
         <text>

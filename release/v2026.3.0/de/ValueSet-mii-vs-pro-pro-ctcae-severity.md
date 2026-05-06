@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Severity Scale - MII IG PRO v2026.2.0
+# MII VS PRO PRO-CTCAE Severity Scale - MII IG PRO v2026.3.0
 
 ## ValueSet: MII VS PRO PRO-CTCAE Severity Scale (Experimentell) 
 
@@ -28,12 +28,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-severity",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity",
-  "version" : "2026.2.0",
+  "version" : "2026.3.0",
   "name" : "MII_VS_PRO_PRO_CTCAE_Severity",
   "title" : "MII VS PRO PRO-CTCAE Severity Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-05T20:17:53+00:00",
+  "date" : "2026-05-06T07:26:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

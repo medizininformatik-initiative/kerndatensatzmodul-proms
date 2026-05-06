@@ -1,4 +1,4 @@
-# Project Context - MII IG PRO v2026.2.0
+# Project Context - MII IG PRO v2026.3.0
 
 ## Project Context
 
