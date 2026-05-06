@@ -5,16 +5,15 @@ topic: PROMIS-29
 
 ### Übersicht
 
-**Status**: Vollständig implementiert  
-**Version**: 2026.0.0-ballot  
-**Letzte Aktualisierung**: 2025-08-28
+**Status**: Vollständig implementiert
+**Version**: 2026.3.0
+**Letzte Aktualisierung**: 2026-05-06
 
 Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen plus Schmerzintensität.
 
 **Ressourcen in Simplifier:**
 - [PROMIS-29 Full Questionnaire (English)](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29)
 - [PROMIS-29 German Variant](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-de)
-- [PROMIS-29 Minimal Questionnaire](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-minimal)
 
 <tabs>
   <tab title="Vorschau (Deutsch)">
@@ -83,8 +82,13 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 
 ### Sprachunterstützung
 
-**Primärsprache**: Englisch (validierte Version)  
-**Deutsche Übersetzung**: Via Extension
+Wegen unterschiedlicher i18n-Reife der Verarbeitungssysteme werden zwei parallele Hauptvarianten gepflegt:
+
+- **`mii-qst-pro-promis-29`** (Englisch primär, Deutsch via Translation-Extension) – für **Mapping und Interoperabilität**. Englisch ist die validierte Originalsprache und LOINC-Code-aligned. Systeme mit Translation-Extension-Support können daraus mehrsprachig rendern.
+
+- **`mii-qst-pro-promis-29-de`** (Deutsch primär, abgeleitet von der EN-Version) – für **Rendering auf Systemen ohne FHIR-Mehrsprachigkeits-Support**. Inhaltlich identisch, nur mit getauschter Primary-Language. Wird im iframe-Renderer oben angezeigt.
+
+Solange Mehrsprachigkeit in der MII-Landschaft nicht durchgängig unterstützt wird, bleibt die DE-Variante als pragmatische Krücke bestehen. Mittelfristig soll das auf eine einzige Quelle mit Translation-Extensions konsolidiert werden.
 
 ~~~~
 // JSON
