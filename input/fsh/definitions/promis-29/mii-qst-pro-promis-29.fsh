@@ -66,11 +66,21 @@ Usage: #definition
 // ===== PHYSICAL FUNCTION DOMAIN =====
 * item[+].linkId = "PROMIS-29.PhysicalFunction"
 * item[=].type = #group
-* item[=].text = "KÖRPERLICHE FUNKTION"
+* item[=].text = "PHYSICAL FUNCTION"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "KÖRPERLICHE FUNKTION"
 
 * item[=].item[+].linkId = "PROMIS-29.PhysicalFunction.Description"
 * item[=].item[=].type = #display
-* item[=].item[=].text = "Sind Sie zu folgenden Tätigkeiten imstande:"
+* item[=].item[=].text = "Are you able to do the following:"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Sind Sie zu folgenden Tätigkeiten imstande:"
 
 // Physical Function Item 1
 * item[=].item[+].linkId = "promis-pfa11"
@@ -279,17 +289,32 @@ Usage: #definition
 // ===== ANXIETY DOMAIN =====
 * item[+].linkId = "PROMIS-29.Anxiety"
 * item[=].type = #group
-* item[=].text = "ANGST"
+* item[=].text = "ANXIETY"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "ANGST"
 
 * item[=].item[+].linkId = "PROMIS-29.Anxiety.Description"
 * item[=].item[=].type = #display
-* item[=].item[=].text = "In den vergangenen 7 Tagen..."
+* item[=].item[=].text = "In the past 7 days..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen..."
 
 // Anxiety Item 1
 * item[=].item[+].linkId = "promis-edanx01"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61923-9 "I felt fearful in past 7 days [PROMIS]"
-* item[=].item[=].text = "...fühlte ich mich ängstlich"
+* item[=].item[=].text = "...I felt fearful"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich ängstlich"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -335,7 +360,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-edanx40"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61941-1 "I found it hard to focus on anything other than my anxiety in past 7 days"
-* item[=].item[=].text = "...fiel es mir schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
+* item[=].item[=].text = "...I found it hard to focus on anything other than my anxiety"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fiel es mir schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -381,7 +411,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-edanx41"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61942-9 "My worries overwhelmed me in past 7 days"
-* item[=].item[=].text = "...überwältigten mich meine Sorgen"
+* item[=].item[=].text = "...my worries overwhelmed me"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...überwältigten mich meine Sorgen"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -427,7 +462,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-edanx53"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61949-4 "I felt uneasy in past 7 days"
-* item[=].item[=].text = "...fühlte ich mich unruhig"
+* item[=].item[=].text = "...I felt uneasy"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich unruhig"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -476,13 +516,23 @@ Usage: #definition
 
 * item[=].item[+].linkId = "PROMIS-29.Depression.Description"
 * item[=].item[=].type = #display
-* item[=].item[=].text = "In den vergangenen 7 Tagen..."
+* item[=].item[=].text = "In the past 7 days..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen..."
 
 // Depression Item 1
 * item[=].item[+].linkId = "promis-eddep04"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61953-6 "I felt worthless in past 7 days [PROMIS]"
-* item[=].item[=].text = "...fühlte ich mich wertlos"
+* item[=].item[=].text = "...I felt worthless"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich wertlos"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -528,7 +578,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-eddep06"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61955-1 "I felt helpless in past 7 days [PROMIS]"
-* item[=].item[=].text = "...fühlte ich mich hilflos"
+* item[=].item[=].text = "...I felt helpless"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich hilflos"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -574,7 +629,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-eddep29"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61967-6 "I felt depressed in past 7 days [PROMIS]"
-* item[=].item[=].text = "...fühlte ich mich deprimiert"
+* item[=].item[=].text = "...I felt depressed"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich deprimiert"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -620,7 +680,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-eddep41"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61973-4 "I felt hopeless in past 7 days [PROMIS]"
-* item[=].item[=].text = "...fühlte ich mich hoffnungslos"
+* item[=].item[=].text = "...I felt hopeless"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich hoffnungslos"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -665,17 +730,32 @@ Usage: #definition
 // ===== FATIGUE DOMAIN =====
 * item[+].linkId = "PROMIS-29.Fatigue"
 * item[=].type = #group
-* item[=].text = "ERSCHÖPFUNG"
+* item[=].text = "FATIGUE"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "ERSCHÖPFUNG"
 
 * item[=].item[+].linkId = "PROMIS-29.Fatigue.Description"
 * item[=].item[=].type = #display
-* item[=].item[=].text = "In den vergangenen 7 Tagen..."
+* item[=].item[=].text = "In the past 7 days..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen..."
 
 // Fatigue Item 1
 * item[=].item[+].linkId = "promis-hi7"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61878-5 "I feel fatigued during the past 7 days [PROMIS]"
-* item[=].item[=].text = "...fühlte ich mich erschöpft"
+* item[=].item[=].text = "...I felt fatigued"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich erschöpft"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -721,7 +801,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-an3"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61882-7 "I had trouble starting things because I was tired in past 7 days [PROMIS]"
-* item[=].item[=].text = "...hatte ich Schwierigkeiten, Dinge anzufangen, weil ich müde war"
+* item[=].item[=].text = "...I had trouble starting things because I was tired"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...hatte ich Schwierigkeiten, Dinge anzufangen, weil ich müde war"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -767,7 +852,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-fatexp41"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61863-7 "How fatigued were you on the day you felt most fatigued in past 7 days [PROMIS]"
-* item[=].item[=].text = "...wie abgeschlagen fühlten Sie sich im Durchschnitt?"
+* item[=].item[=].text = "...how fatigued were you on the day you felt most fatigued?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...wie abgeschlagen fühlten Sie sich im Durchschnitt?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -813,7 +903,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-fatexp40"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61864-5 "How fatigued were you on average in past 7 days [PROMIS]"
-* item[=].item[=].text = "...wie erschöpft waren Sie im Durchschnitt?"
+* item[=].item[=].text = "...how fatigued were you on average?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...wie erschöpft waren Sie im Durchschnitt?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -858,17 +953,32 @@ Usage: #definition
 // ===== SLEEP DISTURBANCE DOMAIN =====
 * item[+].linkId = "PROMIS-29.Sleep"
 * item[=].type = #group
-* item[=].text = "SCHLAFSTÖRUNGEN"
+* item[=].text = "SLEEP DISTURBANCE"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "SCHLAFSTÖRUNGEN"
 
 * item[=].item[+].linkId = "PROMIS-29.Sleep.Description"
 * item[=].item[=].type = #display
-* item[=].item[=].text = "In den vergangenen 7 Tagen..."
+* item[=].item[=].text = "In the past 7 days..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen..."
 
 // Sleep Item 1
 * item[=].item[+].linkId = "promis-sleep109"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61987-4 "My sleep quality was...in past 7 days [PROMIS]"
-* item[=].item[=].text = "...war meine Schlafqualität..."
+* item[=].item[=].text = "...my sleep quality was..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...war meine Schlafqualität..."
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA9615-1 "Very poor"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -914,7 +1024,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-sleep116"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61986-6 "My sleep was refreshing in past 7 days [PROMIS]"
-* item[=].item[=].text = "...war mein Schlaf erholsam"
+* item[=].item[=].text = "...my sleep was refreshing"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...war mein Schlaf erholsam"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -960,7 +1075,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-sleep20"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61998-1 "I had a problem with my sleep 7 days [PROMIS]"
-* item[=].item[=].text = "...hatte ich Probleme mit meinem Schlaf"
+* item[=].item[=].text = "...I had a problem with my sleep"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...hatte ich Probleme mit meinem Schlaf"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1006,7 +1126,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-sleep44"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61999-9 "I had difficulty falling asleep in past 7 days [PROMIS]"
-* item[=].item[=].text = "...hatte ich Schwierigkeiten beim Einschlafen"
+* item[=].item[=].text = "...I had difficulty falling asleep"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...hatte ich Schwierigkeiten beim Einschlafen"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1051,17 +1176,32 @@ Usage: #definition
 // ===== SOCIAL FUNCTION DOMAIN =====
 * item[+].linkId = "PROMIS-29.Social"
 * item[=].type = #group
-* item[=].text = "SOZIALE TEILHABE"
+* item[=].text = "ABILITY TO PARTICIPATE IN SOCIAL ROLES AND ACTIVITIES"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "SOZIALE TEILHABE"
 
 * item[=].item[+].linkId = "PROMIS-29.Social.Description"
 * item[=].item[=].type = #display
-* item[=].item[=].text = "In den vergangenen 7 Tagen..."
+* item[=].item[=].text = "In the past 7 days..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen..."
 
 // Social Function Item 1
 * item[=].item[+].linkId = "promis-srpper23-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#62041-9 "I was satisfied with how much work I can do (include work at home) in past 7 days [PROMIS]"
-* item[=].item[=].text = "...war ich zufrieden damit, wie viel Arbeit ich schaffen konnte (einschließlich Hausarbeit)"
+* item[=].item[=].text = "...I was satisfied with how much work I could do (including work at home)"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...war ich zufrieden damit, wie viel Arbeit ich schaffen konnte (einschließlich Hausarbeit)"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1107,7 +1247,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-srpper11-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#75417-6 "I have trouble doing all of my regular leisure activities with others [PROMIS]"
-* item[=].item[=].text = "...hatte ich Schwierigkeiten, alle meine üblichen Freizeitaktivitäten mit anderen zu machen"
+* item[=].item[=].text = "...I had trouble doing all of my regular leisure activities with others"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...hatte ich Schwierigkeiten, alle meine üblichen Freizeitaktivitäten mit anderen zu machen"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1153,7 +1298,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-srpper18-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#76708-7 "I have trouble doing all of the family activities that I want to do [PROMIS]"
-* item[=].item[=].text = "...hatte ich Schwierigkeiten, alle Familienaktivitäten zu machen, die ich machen wollte"
+* item[=].item[=].text = "...I had trouble doing all of the family activities that I wanted to do"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...hatte ich Schwierigkeiten, alle Familienaktivitäten zu machen, die ich machen wollte"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1200,7 +1350,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#76709-5 "I have trouble doing all of my usual work (include work at home)"
-* item[=].item[=].text = "...hatte ich Schwierigkeiten, alle meine üblichen Arbeiten zu erledigen (einschließlich Hausarbeit)"
+* item[=].item[=].text = "...I had trouble doing all of my usual work (including work at home)"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...hatte ich Schwierigkeiten, alle meine üblichen Arbeiten zu erledigen (einschließlich Hausarbeit)"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1245,7 +1400,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-srpper46-caps"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#76712-9 "I have trouble doing all of the activities with friends that I want to do [PROMIS]"
-* item[=].item[=].text = "...hatte ich Schwierigkeiten, alle Aktivitäten mit Freunden zu machen, die ich machen wollte"
+* item[=].item[=].text = "...I had trouble doing all of the activities with friends that I wanted to do"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...hatte ich Schwierigkeiten, alle Aktivitäten mit Freunden zu machen, die ich machen wollte"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1290,17 +1450,32 @@ Usage: #definition
 // ===== PAIN INTERFERENCE DOMAIN =====
 * item[+].linkId = "PROMIS-29.PainInterference"
 * item[=].type = #group
-* item[=].text = "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"
+* item[=].text = "PAIN INTERFERENCE"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"
 
 * item[=].item[+].linkId = "PROMIS-29.PainInterference.Description"
 * item[=].item[=].type = #display
-* item[=].item[=].text = "In den vergangenen 7 Tagen - Inwieweit beeinträchtigten Schmerzen..."
+* item[=].item[=].text = "In the past 7 days - how much did pain interfere with..."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen - Inwieweit beeinträchtigten Schmerzen..."
 
 // Pain Interference Item 1
 * item[=].item[+].linkId = "promis-painin9"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61758-9 "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
-* item[=].item[=].text = "...Ihre alltäglichen Aktivitäten?"
+* item[=].item[=].text = "...your day to day activities?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...Ihre alltäglichen Aktivitäten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1346,7 +1521,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-painin22"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61769-6 "How much did pain interfere with work around the home in past 7 days [PROMIS]"
-* item[=].item[=].text = "...Arbeiten rund um das Haus?"
+* item[=].item[=].text = "...work around the home?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...Arbeiten rund um das Haus?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1392,7 +1572,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-painin31"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61773-8 "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
-* item[=].item[=].text = "...Ihre Fähigkeit zur Teilnahme an sozialen Aktivitäten?"
+* item[=].item[=].text = "...your ability to participate in social activities?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...Ihre Fähigkeit zur Teilnahme an sozialen Aktivitäten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1438,7 +1623,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-painin34"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61775-3 "How much did pain interfere with your household chores in past 7 days [PROMIS]"
-* item[=].item[=].text = "...Ihre Hausarbeiten?"
+* item[=].item[=].text = "...your household chores?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "...Ihre Hausarbeiten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1483,13 +1673,23 @@ Usage: #definition
 // ===== PAIN INTENSITY DOMAIN =====
 * item[+].linkId = "PROMIS-29.PainIntensity"
 * item[=].type = #group
-* item[=].text = "SCHMERZINTENSITÄT"
+* item[=].text = "PAIN INTENSITY"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "SCHMERZINTENSITÄT"
 
 // Pain Intensity Item (0-10 Scale)
 * item[=].item[+].linkId = "promis-global07"
 * item[=].item[=].type = #integer
 * item[=].item[=].code = $LNC#61583-1 "How would you rate your pain on average in past 7 days [PROMIS]"
-* item[=].item[=].text = "In den vergangenen 7 Tagen - Wie würden Sie Ihre Schmerzen im Durchschnitt bewerten?"
+* item[=].item[=].text = "In the past 7 days - how would you rate your pain on average?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "In den vergangenen 7 Tagen - Wie würden Sie Ihre Schmerzen im Durchschnitt bewerten?"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
@@ -1506,7 +1706,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-physical-function-raw"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#71960-9 "PROMIS-29 Physical function score"
-* item[=].item[=].text = "PROMIS-29 Körperliche Funktion - Rohwert"
+* item[=].item[=].text = "PROMIS-29 Physical Function - Raw Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Körperliche Funktion - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
@@ -1520,7 +1725,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-physical-function-tscore"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
-* item[=].item[=].text = "PROMIS-29 Körperliche Funktion - T-Score"
+* item[=].item[=].text = "PROMIS-29 Physical Function - T-Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Körperliche Funktion - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1584,7 +1794,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-fatigue-raw"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#71964-1 "PROMIS-29 Fatigue score"
-* item[=].item[=].text = "PROMIS-29 Erschöpfung - Rohwert"
+* item[=].item[=].text = "PROMIS-29 Fatigue - Raw Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Erschöpfung - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
@@ -1598,7 +1813,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-fatigue-tscore"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
-* item[=].item[=].text = "PROMIS-29 Erschöpfung - T-Score"
+* item[=].item[=].text = "PROMIS-29 Fatigue - T-Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Erschöpfung - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1610,7 +1830,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-sleep-raw"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#71956-7 "PROMIS-29 Sleep disturbance score"
-* item[=].item[=].text = "PROMIS-29 Schlafstörungen - Rohwert"
+* item[=].item[=].text = "PROMIS-29 Sleep Disturbance - Raw Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Schlafstörungen - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
@@ -1624,7 +1849,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-sleep-tscore"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
-* item[=].item[=].text = "PROMIS-29 Schlafstörungen - T-Score"
+* item[=].item[=].text = "PROMIS-29 Sleep Disturbance - T-Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Schlafstörungen - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -1662,7 +1892,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-pain-interference-raw"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#71962-5 "PROMIS-29 Pain interference score"
-* item[=].item[=].text = "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"
+* item[=].item[=].text = "PROMIS-29 Pain Interference - Raw Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].readOnly = true
@@ -1676,7 +1911,12 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-29-pain-interference-tscore"
 * item[=].item[=].type = #decimal
 * item[=].item[=].code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
-* item[=].item[=].text = "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"
+* item[=].item[=].text = "PROMIS-29 Pain Interference - T-Score"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath

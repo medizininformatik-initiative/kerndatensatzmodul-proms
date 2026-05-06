@@ -24,6 +24,14 @@ Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezoge
       frameborder="0">
     </iframe>
   </tab>
+  <tab title="Preview (English)">
+    <iframe
+      src="https://gematik.github.io/poc-isik-formular/?base=https://fhir.simplifier.net/MII-Erweiterungsmodul-PRO-2025&id=mii-qst-pro-promis-29&minimal=true"
+      width="100%"
+      height="600px"
+      frameborder="0">
+    </iframe>
+  </tab>
   <tab title="Tree">
     {{tree:mii-qst-pro-promis-29-de}}
   </tab>
