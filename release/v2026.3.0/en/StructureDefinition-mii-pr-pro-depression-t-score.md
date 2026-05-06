@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-depres
   "name" : "MII_PR_PRO_Depression_T_Score",
   "title" : "MII PR PRO Depression Domain T-Score",
   "status" : "active",
-  "date" : "2026-05-06T16:43:09+00:00",
+  "date" : "2026-05-06T16:46:31+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -55,7 +55,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "Center for Epidemiologic Studies Depression Scale (CES-D)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-06T16:43:09+00:00",
+  "date" : "2026-05-06T16:46:31+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
