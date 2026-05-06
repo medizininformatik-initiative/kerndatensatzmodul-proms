@@ -14,8 +14,15 @@ PRO-Instrumente:
 
 FHIR-Ressourcen:
 - Removed: Unvollständiger ConceptMap-Stub `mii-cm-pro-bdi-ii-to-promis-depression-observation` entfernt (nur 2 von 64 PROsetta-Stone-Einträgen). Architektur-Entscheidung: Score-Konversionen werden zukünftig als CQL Library modelliert (geplant für 2027-Release)
+- Removed: PROMIS-29 Minimal-Variante (`mii-qst-pro-promis-29-minimal`) entfernt – war eine unvollständige Demo mit nur 8 von 29 Items (Physical Function + Anxiety) und ohne Score-Berechnung
 - Fixed: Capabilities-Extension in `mii-qst-pro-promis-cognitive-function-sf4a` vervollständigt (`domainAligned`=true ergänzt)
 - Added: Capabilities-Extension zu `mii-qst-pro-pro-ctcae-breast-de` hinzugefügt (`displayable`+`collectable`=true; `calculatable`/`extractable`/`domainAligned`=false – bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)
+
+PROMIS-29:
+- Fixed: Englische Sprachvariante (`mii-qst-pro-promis-29`) repariert. Die EN-Variante hatte deutschsprachige Item-Texte (Domain-Header, Frage-Texte, Score-Labels, Intros) – ein Copy-Paste-Artefakt aus der DE-Variante, bei dem nur das `language`-Flag und die Antwort-Displays getauscht waren, aber die Frage-Texte deutsch blieben. Englischsprachige Renderer (gematik POC, LHC-Forms) zeigten dadurch deutsche Inhalte. Korrigiert: 7 Domain-Header übersetzt, alle Intros (`In den vergangenen 7 Tagen…` → `In the past 7 days…`), 24 Frage-Items auf englische Fragmente nach PROMIS-Konvention, 8 Score-Item-Labels. Jedes Text-Feld hat jetzt zusätzlich eine `text.extension[translation]` mit dem validierten deutschen PROMIS-DE-Wortlaut.
+
+IG-Dokumentation:
+- Added: PROMIS-29 Simplifier-Seite (`PRO-Bibliothek/PROMIS/PROMIS-29.page.md`) bekommt einen zweiten iframe-Tab "Preview (English)", der den gematik POC Renderer auf die EN-Hauptvariante zeigt.
 
 **Version: 2026.2.0** (unreleased)
 
