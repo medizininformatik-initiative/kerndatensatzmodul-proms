@@ -55,7 +55,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "Hospital Anxiety and Depression Scale (HADS)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-06T15:07:20+00:00",
+  "date" : "2026-05-06T16:39:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
