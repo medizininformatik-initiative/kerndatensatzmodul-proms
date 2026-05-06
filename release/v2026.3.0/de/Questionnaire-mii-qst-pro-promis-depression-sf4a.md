@@ -63,7 +63,7 @@ PROMIS Depression Short Form 4a - Adults - Item Bank v1.0
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-06T16:39:55+00:00",
+  "date" : "2026-05-06T16:43:09+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
