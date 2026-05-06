@@ -56,7 +56,7 @@ MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-06T07:26:41+00:00",
+  "date" : "2026-05-06T15:07:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

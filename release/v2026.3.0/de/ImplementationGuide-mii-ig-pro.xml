@@ -12,7 +12,7 @@
   <name value="MII_IG_PRO"/>
   <title value="MII IG PRO"/>
   <status value="active"/>
-  <date value="2026-05-06T07:26:41+00:00"/>
+  <date value="2026-05-06T15:07:20+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -1967,17 +1967,6 @@
       </reference>
       <name value="MII QST PRO PROMIS-29 (German)"/>
       <description value="PROMIS-29 Profile v2.1 - German language variant derived from English source"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/mii-qst-pro-promis-29-minimal"/>
-      </reference>
-      <name value="MII QST PRO PROMIS-29 Minimal"/>
-      <description value="PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

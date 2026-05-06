@@ -112,7 +112,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-06T07:26:41+00:00",
+  "date" : "2026-05-06T15:07:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

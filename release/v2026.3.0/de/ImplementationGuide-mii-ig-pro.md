@@ -14,7 +14,7 @@
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-05-06T07:26:41+00:00",
+  "date" : "2026-05-06T15:07:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -2296,18 +2296,6 @@
       },
       "name" : "MII QST PRO PROMIS-29 (German)",
       "description" : "PROMIS-29 Profile v2.1 - German language variant derived from English source",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/mii-qst-pro-promis-29-minimal"
-      },
-      "name" : "MII QST PRO PROMIS-29 Minimal",
-      "description" : "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
       "exampleBoolean" : false
     },
     {

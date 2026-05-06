@@ -33,7 +33,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-06T07:26:41+00:00",
+  "date" : "2026-05-06T15:07:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

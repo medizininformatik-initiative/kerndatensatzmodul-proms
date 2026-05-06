@@ -219,10 +219,7 @@
     "name" : "MII_VS_PRO_PROMIS_Frequency_Response_Scale",
     "title" : "MII VS PRO PROMIS Frequency Response Scale",
     "description" : "PROMIS Frequency response scale based on LOINC LL1016-6",
-    "systems" : ["http://loinc.org"],
-    "uses" : {
-    },
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
+    "systems" : ["http://loinc.org"]
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
@@ -231,9 +228,6 @@
     "name" : "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale",
     "title" : "MII VS PRO PROMIS Physical Function Response Scale",
     "description" : "PROMIS Physical Function response scale based on LOINC LL1022-4",
-    "systems" : ["http://loinc.org"],
-    "uses" : {
-    },
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
+    "systems" : ["http://loinc.org"]
   }]
 }
