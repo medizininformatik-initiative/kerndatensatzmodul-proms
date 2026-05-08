@@ -34,7 +34,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PHQ-9 Answer List LL358-3",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-06T16:46:31+00:00",
+  "date" : "2026-05-08T15:32:14+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
