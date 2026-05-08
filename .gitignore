@@ -21,3 +21,9 @@ fhirpkg.lock.json
 # Dolt database files (added by bd init)
 .dolt/
 *.db
+
+# Beads credentials (must never be committed)
+.beads/.beads-credential-key
+
+# Node modules
+node_modules/
