@@ -540,11 +540,27 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-midos2-response-01"
+        },
+        "name": "MII EXA PRO MIDOS2 Response",
+        "description": "MIDOS2 QuestionnaireResponse Beispiel — Palliativpatient mit moderater Symptomlast (Summe 19/33, Wohlbefinden eher schlecht)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-pro-patient"
         },
         "name": "MII EXA PRO Patient",
         "description": "Example patient for PRO demonstrations",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01"
+        },
+        "name": "MII EXA PRO PRO-CTCAE Onkologisches Basisscreening Response",
+        "description": "PRO-CTCAE Onkologisches Basisscreening Beispiel — Onkologischer Patient unter Chemotherapie mit moderater Symptomlast",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
         "reference": {
