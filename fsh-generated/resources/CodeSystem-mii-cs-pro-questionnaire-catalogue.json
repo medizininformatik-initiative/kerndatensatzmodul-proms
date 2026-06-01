@@ -63,8 +63,16 @@
     {
       "code": "proctcae-breast-de",
       "display": "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"
+    },
+    {
+      "code": "proctcae-onkologisches-basisscreening",
+      "display": "PRO-CTCAE Onkologisches Basisscreening (DKG, MIDOS2-äquivalente Symptome)"
+    },
+    {
+      "code": "midos-midos2",
+      "display": "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, DGP)"
     }
   ],
   "version": "2026.2.0",
-  "count": 14
+  "count": 16
 }
