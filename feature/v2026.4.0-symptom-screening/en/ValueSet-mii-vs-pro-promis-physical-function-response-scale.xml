@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-promis-physical-function-response-scale"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-promis-physical-function-response-scale</b></p><a name="en-mii-vs-pro-promis-physical-function-response-scale"> </a><a name="en-hcmii-vs-pro-promis-physical-function-response-scale"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="https://loinc.org/LA13921-4/">LA13921-4</a></td><td>Without any difficulty</td><td>Ohne jede Schwierigkeiten</td></tr><tr><td><a href="https://loinc.org/LA13918-0/">LA13918-0</a></td><td>With a little difficulty</td><td>Mit geringen Schwierigkeiten</td></tr><tr><td><a href="https://loinc.org/LA13920-6/">LA13920-6</a></td><td>With some difficulty</td><td>Mit einigen Schwierigkeiten</td></tr><tr><td><a href="https://loinc.org/LA13919-8/">LA13919-8</a></td><td>With much difficulty</td><td>Mit großen Schwierigkeiten</td></tr><tr><td><a href="https://loinc.org/LA13912-3/">LA13912-3</a></td><td>Unable to do</td><td>Kann ich gar nicht</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"/>
+  <version value="2026.2.0"/>
+  <name value="MII_VS_PRO_PROMIS_Physical_Function_Response_Scale"/>
+  <title value="MII VS PRO PROMIS Physical Function Response Scale"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-06-01T13:28:28+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="PROMIS Physical Function response scale based on LOINC LL1022-4"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA13921-4"/>
+        <display value="Without any difficulty"/>
+        <designation>
+          <language value="de"/>
+          <value value="Ohne jede Schwierigkeiten"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13918-0"/>
+        <display value="With a little difficulty"/>
+        <designation>
+          <language value="de"/>
+          <value value="Mit geringen Schwierigkeiten"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13920-6"/>
+        <display value="With some difficulty"/>
+        <designation>
+          <language value="de"/>
+          <value value="Mit einigen Schwierigkeiten"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13919-8"/>
+        <display value="With much difficulty"/>
+        <designation>
+          <language value="de"/>
+          <value value="Mit großen Schwierigkeiten"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13912-3"/>
+        <display value="Unable to do"/>
+        <designation>
+          <language value="de"/>
+          <value value="Kann ich gar nicht"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
