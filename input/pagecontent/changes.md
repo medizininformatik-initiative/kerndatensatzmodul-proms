@@ -4,6 +4,45 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 Datum: --
 
+Zwei thematische Erweiterungen in einem Release: **PROMIS-Konsolidierung** (PROMIS-16 PROPr, Wording-Migration, Copyright-Modell) und **Symptom-Screening für die onkologische und palliative Versorgung** (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening).
+
+## Symptom-Screening (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening)
+
+PRO-Instrumente:
+- Added: **MIDOS2** (Minimal Documentation System for Patients in Palliative Care, DGP) -- Palliativ-Symptom-Screening mit 13 Items (11 Symptome auf DGP-4-stufiger Severity-Skala, Wohlbefinden auf 4-stufiger Skala, Freitext)
+- Added: **PRO-CTCAE Onkologisches Basisscreening** (DKG) -- Subset des NCI PRO-CTCAE mit MIDOS2-äquivalenter Symptomauswahl, 10 AEs / 23 Items, Depressivität via PRO-CTCAE-konformes Mehrfach-Mapping (#55 Discouraged + #56 Sad), Angst+Anspannung via #54 Anxiety
+
+Architektur:
+- Added: PRO-CTCAE Complete als Master-Itembank, Derivate via `derivedFrom`
+- Added: Catalogue-Einträge `midos-midos2` und `proctcae-onkologisches-basisscreening`
+
+Terminologie & Mapping:
+- Added: MIDOS2 CodeSystem mit DGP-4-stufiger Severity-Skala (keine/leichte/mittlere/starke)
+- Added: MIDOS2 separate Wohlbefinden-Skala (sehr gut/eher gut/eher schlecht/sehr schlecht)
+- Added: SNOMED-Properties auf MIDOS2 Item-Codes (wo eindeutig; Verifikation via Snowstorm ausstehend)
+- Added: MIDOS2 ↔ PRO-CTCAE Item-Level Mapping (11 AEs, 23 Items)
+- Verified: PRO-CTCAE Item-Wordings gegen NCI-Originaldokument (EN/DE)
+- Identified: Diskrepanzen #27 Hair Loss + #59 Vaginal Discharge (int → amt) -- dokumentiert
+
+IG-Dokumentation:
+- Added: `midos2.md` -- Überblick, Skalen, Score-Berechnung, Mapping zu Onkologischem Basisscreening, Literatur
+- Added: `proms-onkologisches-basisscreening.md` -- PRO-CTCAE-basierte Symptomauswahl, Skalen, Composite Grading, MIDOS-Mapping
+- Added: Beide Seiten als Unterseiten der PRO Library in `sushi-config.yaml` registriert
+
+Beispiele:
+- Added: `mii-exa-pro-midos2-response` -- Palliativpatient mit moderater Symptomlast (Summe 19/33)
+- Added: `mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response` -- Onkologischer Patient unter Chemotherapie
+
+Qualitätssicherung:
+- Status: Beide Instrumente `draft` + `experimental`
+- TODO: MIDOS2 Source-Verifikation gegen Stiel et al. 2010/2012 (Bead `5jd`)
+
+Quellen:
+- NCI PRO-CTCAE Item Library v1.0 (EN/DE)
+- Stiel et al. 2010/2012 (MIDOS2, Verifikation ausstehend)
+
+## PROMIS-Konsolidierung
+
 PROMIS-Konsolidierung: vollständige Implementierung des PROMIS-16-Profile v2.1 (PROPr), Wording-Migration der bestehenden PROMIS-29- und Cognitive-Function-SF4a-Questionnaires auf die offizielle deutsche PROMIS-Quelle, und Einführung eines mehrschichtigen Copyright-/Lizenz-Modells für alle PROMIS-Ressourcen.
 
 PRO-Instrumente:
