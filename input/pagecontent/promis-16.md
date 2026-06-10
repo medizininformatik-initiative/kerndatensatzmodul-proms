@@ -36,17 +36,19 @@ Questionnaire/mii-qst-pro-promis-16
 - Domain-aligned
 - **Calculatable**: bewusst false — pattern-basierter T-Score-Lookup je Domäne (5×5 = 25 Werte aus Supplement S4 von Edelen et al.) wird über eine eigene CQL Library `mii-lib-promis-16` realisiert (analog zur Architektur für PHQ-9 und EQ-5D)
 
-#### Score-Berechnung (geplant)
+#### Score-Berechnung (in dieser Version nicht implementiert)
 
-Pro Domäne wird aus der Kombination der 2 Antworten ein T-Score per Lookup ermittelt. Anders als beim PROMIS-29 (4 Items je Domäne, Summen-basierter T-Score) basiert PROMIS-16 auf einem **5×5-Antwortmusterraster**:
+PROMIS-16 ist eigentlich **"PROMIS-16 Profile v2.1 (PROPr)"** und ist auf die Berechnung des **PROMIS-Präferenz-Scores (PROPr)** ausgelegt — eines einzelnen Utility-Scores (analog zum EQ-5D-Index), der für vergleichende Wirksamkeits- und Kosten-Nutzen-Analysen verwendet wird. Die vollständige Score-Berechnung erfolgt in 3 Stufen:
 
-```
-Antwort Item 1: {1,2,3,4,5}
-Antwort Item 2: {1,2,3,4,5}
-→ 25 mögliche Kombinationen, jeweils ein T-Score-Lookup
-```
+1. **8 Domänen-T-Scores** — je Domäne aus einem 5×5-Antwortmusterraster (25 Kombinationen, Pattern-Lookup nach Edelen et al. 2024 Supplement S4)
+2. **PROMIS-Theta-Werte** — IRT-basierte latente Konstrukte je Domäne
+3. **PROPr Summary Score** — utility-basiert, abgeleitet aus den 8 Thetas (Dewitt et al. 2018)
 
-Diese Berechnung passt nicht in eine einfache FHIRPath-`calculatedExpression` und wird daher per CQL Library (Roadmap 2027) realisiert.
+**In der aktuellen Version (2026.5.0)** ist die Score-Berechnung bewusst **nicht implementiert**. Das Questionnaire trägt entsprechend `calculatable = false` und dient zunächst der reinen Datenerfassung. Die Score-Berechnung soll später über eine CQL Library `mii-lib-promis-16` und/oder Anbindung an die offizielle PROMIS Assessment Center API ergänzt werden, sobald die internen Anforderungen geklärt sind.
+
+**Hinweis zum Anwendungszweck** (laut PHO): Der PROPr-Score ist für **Berichterstattung auf Gruppenebene** vorgesehen. Für die präzise individuelle klinische Bewertung sind Domain-Scores allein laut PHO nicht zuverlässig — sie können aber als Screening dienen.
+
+Referenz Score-Methodik: Dewitt B, Feeny D, Fischhoff B, et al. *Estimation of a Preference-Based Summary Score for PROMIS: The PROMIS®-Preference (PROPr) Scoring System.* Med Decis Making. 2018;38(6):683-698. [doi:10.1177/0272989X18776637](https://doi.org/10.1177/0272989X18776637)
 
 ### Sprachunterstützung
 
@@ -58,6 +60,26 @@ Diese Berechnung passt nicht in eine einfache FHIRPath-`calculatedExpression` un
 Aktuell ist nur das Grundgerüst angelegt (siehe `input/fsh/definitions/promis-16/mii-qst-pro-promis-16.fsh`): die zwei Physical-Function-Items PFA21 und PFA23 sind vollständig implementiert. Die restlichen 14 Items sind im FSH-File als TODO markiert.
 
 Tracking: beads-Issue `kerndatensatzmodul-proms-yo6`.
+
+### Item-Überlapp mit PROMIS-29 / Cog Fn SF 4a
+
+11 der 16 PROMIS-16-Items finden sich auch im PROMIS-29-Korpus, 5 sind PROMIS-16-spezifisch:
+
+| PROMIS-16 Item | Auch in PROMIS-29? | Auch in Cog Fn SF 4a? |
+|---|---|---|
+| PFA21, PFA23 | ✓ | -- |
+| EDANX40, EDANX41 | ✓ | -- |
+| EDDEP29, EDDEP41 | ✓ | -- |
+| HI7, AN3 | ✓ | -- |
+| **Sleep25** | -- | -- |
+| **Sleep90** | -- | -- |
+| **SRPPER31_CaPS** | -- | -- |
+| SRPPER46_CaPS | ✓ | -- |
+| PAININ9, PAININ31 | ✓ | -- |
+| **PC27r** | -- | -- (4a hat andere PC-Items) |
+| **PC-CaPS3r** | -- | -- |
+
+**Praktische Konsequenz**: Wer PROMIS-29 + Cog Fn SF 4a erhebt, kann **kein vollständiges PROMIS-16** extrahieren — es fehlen die 5 fett markierten Items. Ein Cross-Walk auf Score-Ebene zwischen PROMIS-16-Domain-T-Scores und PROMIS-29-Domain-T-Scores ist Gegenstand späterer Arbeitspakete (Roadmap, gemeinsam mit der Score-Implementierung).
 
 ### Vergleich PROMIS-16 vs. PROMIS-29
 
