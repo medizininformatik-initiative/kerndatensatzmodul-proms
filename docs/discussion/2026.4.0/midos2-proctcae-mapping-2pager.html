@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>MII PRO 2026.4.0 — MIDOS2 & PRO-CTCAE Onkologisches Basisscreening</title>
+<style>
+@page {
+  size: A4 portrait;
+  margin: 7mm 9mm 6mm 9mm;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: "Fira Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 7.6pt;
+  line-height: 1.2;
+  color: #14213D;
+  margin: 0;
+}
+.header {
+  border-bottom: 2pt solid #C8102E;
+  padding-bottom: 2pt;
+  margin-bottom: 4pt;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header .brand {
+  font-weight: 700;
+  font-size: 9pt;
+  color: #14213D;
+  letter-spacing: 0.3pt;
+}
+.header .brand .red { color: #C8102E; }
+.header .meta {
+  font-size: 7pt;
+  color: #14213D;
+  opacity: 0.65;
+}
+h1 {
+  font-size: 12pt;
+  font-weight: 700;
+  margin: 0 0 1pt 0;
+  color: #14213D;
+  line-height: 1.15;
+}
+h1 .sub {
+  font-weight: 400;
+  font-size: 9pt;
+  color: #14213D;
+  opacity: 0.75;
+  display: block;
+  margin-top: 1pt;
+}
+h2 {
+  font-size: 9pt;
+  font-weight: 700;
+  margin: 5pt 0 2pt 0;
+  color: #C8102E;
+  text-transform: uppercase;
+  letter-spacing: 0.4pt;
+}
+h3 {
+  font-size: 8.4pt;
+  font-weight: 700;
+  margin: 3pt 0 1pt 0;
+  color: #14213D;
+}
+p { margin: 1pt 0; }
+ul { margin: 1pt 0 2pt 0; padding-left: 12pt; }
+li { margin: 0.5pt 0; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 7.4pt;
+  margin: 2pt 0 3pt 0;
+}
+th, td {
+  border-bottom: 0.5pt solid #DDD;
+  padding: 1.5pt 3pt;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #14213D;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 7pt;
+  letter-spacing: 0.2pt;
+}
+.tldr {
+  background: #F1F4F8;
+  border-left: 3pt solid #C8102E;
+  padding: 3pt 6pt;
+  margin: 3pt 0 5pt 0;
+  font-size: 7.6pt;
+}
+.tldr strong { color: #C8102E; }
+.two-col {
+  display: flex;
+  gap: 10pt;
+}
+.two-col > div { flex: 1; }
+.callout {
+  background: #FFF8F5;
+  border: 0.5pt solid #FFD7C8;
+  padding: 4pt 6pt;
+  font-size: 8.2pt;
+  margin: 3pt 0;
+}
+.ok { color: #2E7D32; font-weight: 700; }
+.warn { color: #C8102E; font-weight: 700; }
+.footer {
+  margin-top: 4pt;
+  padding-top: 2pt;
+  border-top: 0.5pt solid #DDD;
+  font-size: 6.8pt;
+  line-height: 1.15;
+  color: #14213D;
+  opacity: 0.7;
+}
+.pagebreak { page-break-before: always; }
+.compact-list ul { padding-left: 12pt; }
+.compact-list li { margin: 0.5pt 0; }
+.arrow { color: #C8102E; font-weight: 700; }
+code { font-family: "Fira Mono", "Courier New", monospace; font-size: 8pt; }
+</style>
+</head>
+<body>
+
+<!-- ============================== PAGE 1 ============================== -->
+<div class="header">
+  <div class="brand"><span class="red">I</span>BIH · MII PRO-Modul</div>
+  <div class="meta">Diskussionsstand v0.3 · 01.06.2026 · BIH at Charité</div>
+</div>
+
+<h1>Symptom-Screening im MII PRO-Modul 2026.4.0
+<span class="sub">MIDOS2 (Palliativmedizin) & PRO-CTCAE Onkologisches Basisscreening (DKG) — Architektur, Mapping, Quellverifikation</span></h1>
+
+<div class="tldr">
+<strong>TL;DR.</strong> Zwei neue Symptom-Screening-Instrumente, dieselbe Symptomliste in unterschiedlicher Granularität.
+MIDOS2 (13 Items, DGP-4-stufig) für Palliativmedizin, PRO-CTCAE Onkologisches Basisscreening (23 Items aus 10 AEs, NCI-5-stufig) für Onkologie.
+PRO-CTCAE Complete (124 Items) als experimentelle Master-Itembank, von der das Basisscreening per <code>derivedFrom</code> ableitet.
+Item-Wordings gegen NCI-Originaldokumente (EN/DE) verifiziert.
+</div>
+
+<h2>Architektur</h2>
+<table>
+<tr><th style="width:32%">Resource</th><th style="width:14%">Items</th><th style="width:16%">Status</th><th>Rolle</th></tr>
+<tr><td>PRO-CTCAE Complete (Master)</td><td>124</td><td>experimental, kein Package</td><td>Kanonische Itembank · <code>derivedFrom</code>-Target</td></tr>
+<tr><td>PRO-CTCAE Onkologisches Basisscreening</td><td>23 (10 AEs)</td><td>active, im Package</td><td>Allgemein-onkologisches Screening · DKG-Kontext</td></tr>
+<tr><td>PRO-CTCAE Breast-DE</td><td>21</td><td>active, im Package</td><td>Brustkrebs-Subset · Refactoring auf <code>derivedFrom</code> nötig</td></tr>
+<tr><td>MIDOS2</td><td>13</td><td>active, im Package</td><td>Eigenständig · Palliativmedizin · DGP-Skala</td></tr>
+</table>
+<p style="font-size:8.2pt"><strong>Warum Master-Q statt nur CodeSystem?</strong> Eine Itembank braucht Antwortskalen, ordinalValue-Extensions, Conditional Logic, Rendering-Hinweise — alles, was ein CodeSystem nicht trägt. <code>Questionnaire.derivedFrom</code> ist die korrekte FHIR-Semantik für Variant-Beziehungen. Das CodeSystem bleibt als semantisches Registry für <code>Observation.code</code> und Mappings.</p>
+
+<h2>MIDOS2 ↔ PRO-CTCAE Symptom-Mapping</h2>
+<table>
+<tr><th style="width:8%">#</th><th style="width:18%">MIDOS2 Symptom</th><th style="width:28%">PRO-CTCAE AE</th><th style="width:18%">Attribute</th><th style="width:10%">Items (OB)</th><th>Hinweis</th></tr>
+<tr><td>1</td><td>Schmerz</td><td>#48 General Pain</td><td>frq+sev+int</td><td>3</td><td>1:1</td></tr>
+<tr><td>2</td><td>Übelkeit</td><td>#9 Nausea</td><td>frq+sev</td><td>2</td><td>1:1</td></tr>
+<tr><td>3</td><td>Erbrechen</td><td>#10 Vomiting</td><td>frq+sev</td><td>2</td><td>1:1</td></tr>
+<tr><td>4</td><td>Luftnot</td><td>#19 Shortness of Breath</td><td>sev+int</td><td>2</td><td>1:1</td></tr>
+<tr><td>5</td><td>Verstopfung</td><td>#15 Constipation</td><td>sev</td><td>1</td><td>1:1</td></tr>
+<tr><td>6</td><td>Müdigkeit + Schwäche</td><td>#53 Fatigue</td><td>sev+int</td><td>2</td><td>PRO-CTCAE bündelt</td></tr>
+<tr><td>7</td><td>Appetitmangel</td><td>#8 Decreased Appetite</td><td>sev+int</td><td>2</td><td>1:1</td></tr>
+<tr><td>8</td><td>Depressivität</td><td>#55 Discouraged + #56 Sad</td><td>je frq+sev+int</td><td>6</td><td>PRO-CTCAE zerlegt</td></tr>
+<tr><td>9</td><td>Angst + Anspannung</td><td>#54 Anxiety</td><td>frq+sev+int</td><td>3</td><td>PRO-CTCAE bündelt</td></tr>
+<tr><td>10</td><td>Wohlbefinden gesamt</td><td>— (kein Äquivalent)</td><td>—</td><td>0</td><td>nur in MIDOS2</td></tr>
+<tr><td colspan="4" style="text-align:right;font-weight:700">Summe Onkologisches Basisscreening:</td><td><strong>23</strong></td><td>10 AEs</td></tr>
+</table>
+
+<h2>Konfliktpunkte zur Klärung</h2>
+<div class="compact-list">
+<ul>
+<li><strong>Schwäche vs. Müdigkeit:</strong> MIDOS2 trennt, PRO-CTCAE bündelt zu Fatigue (#53). Vorschlag: in MIDOS2 beide Items behalten, im Basisscreening als ein Symptom.</li>
+<li><strong>Anspannung vs. Angst:</strong> Analog Fatigue. MIDOS2 trennt, PRO-CTCAE bündelt zu Anxiety (#54).</li>
+<li><strong>Depressivität:</strong> PRO-CTCAE zerlegt bewusst in #55 Mutlosigkeit (Discouraged) und #56 Traurigkeit (Sad). MIDOS2-Depressivität soll daher auf <em>beide</em> AEs mappen (= 6 Items für ein MIDOS-Symptom).</li>
+<li><strong>Wohlbefinden gesamt:</strong> Nur in MIDOS2 vorhanden, kein PRO-CTCAE-Äquivalent. Onkologisches Basisscreening lässt es weg.</li>
+</ul>
+</div>
+
+<h2>Quellverifikation gegen NCI-Originaldokumente</h2>
+<p style="font-size:8.4pt"><strong>Methode:</strong> PRO-CTCAE Item Library v1.0 (EN), deutsche Übersetzung (NCI-autorisiert) und Quick Guide (Version 5/12/2025) direkt vom NCI bezogen. Vergleich pro AE (Symptom-Term, Attribute, EN- und DE-Fragetext) gegen die aktuelle FSH-Implementierung. <strong>Status:</strong> 10 AEs für MIDOS-Mapping geprüft, Vollabgleich aller 78 AEs ausstehend.</p>
+
+<div class="two-col">
+<div>
+<h3>Beispiel-Match: AE #9 Nausea / Übelkeit <span class="ok">✓</span></h3>
+<table>
+<tr><th>NCI-Original</th><th>MII FSH</th></tr>
+<tr><td>"Wie HÄUFIG hatten Sie ÜBELKEIT?"</td><td><code>proctcae-09a-frq</code> · identisch</td></tr>
+<tr><td>"Wie STARK war Ihre ÜBELKEIT im SCHLIMMSTEN FALL?"</td><td><code>proctcae-09b-sev</code> · identisch</td></tr>
+</table>
+</div>
+<div>
+<h3>Diskrepanzen <span class="warn">⚠</span></h3>
+<table>
+<tr><th>AE</th><th>NCI</th><th>FSH (falsch)</th></tr>
+<tr><td>#27 Hair Loss</td><td>A (Amount)</td><td>int only</td></tr>
+<tr><td>#59 Vaginal Discharge</td><td>A (Amount)</td><td>int only</td></tr>
+</table>
+<p style="font-size:7.8pt">→ Amount-Skala fehlt im CodeSystem. Aufwand: 1 ValueSet + 2 Item-Korrekturen. Vermutlich weitere Funde bei Vollabgleich.</p>
+</div>
+</div>
+
+<h2>MIDOS2 — Übersicht</h2>
+<div class="two-col">
+<div>
+<h3>Items (13 gesamt)</h3>
+<ul class="compact-list" style="margin-bottom:0">
+<li>11 Symptom-Items · 4-stufige DGP-Skala (keine/leichte/mittlere/starke)</li>
+<li>1 Wohlbefinden-Item · 4-stufig (sehr gut/eher gut/eher schlecht/sehr schlecht)</li>
+<li>1 freitext für sonstige Beschwerden</li>
+</ul>
+</div>
+<div>
+<h3>Score</h3>
+<p style="font-size:8.4pt;margin-top:0">Symptom-Summen-Score = Summe der 11 Symptom-Items ∈ [0, 33].
+Höhere Werte = stärkere Symptomlast. Wohlbefinden separat (nicht im Sum-Score).
+Quelle: Stiel et al. 2010/2012 — <em>Item-Wordings zu verifizieren</em> (Bead <code>5jd</code>).</p>
+</div>
+</div>
+
+<h2>Stakeholder-Entscheidungsbedarf</h2>
+<div class="callout">
+<table style="margin:0">
+<tr><td style="width:5%"><strong>1</strong></td><td style="width:32%"><strong>Mapping-Granularität</strong></td><td>Schwäche + Anspannung in MIDOS2 zusätzlich behalten?</td></tr>
+<tr><td><strong>2</strong></td><td><strong>Depressivität</strong></td><td>Auf #55 + #56 mappen (6 Items) oder nur #55 Mutlosigkeit?</td></tr>
+<tr><td><strong>3</strong></td><td><strong>Antwortskalen Basisscreening</strong></td><td>Alle PRO-CTCAE-Attribute je AE oder vereinfacht nur Severity?</td></tr>
+<tr><td><strong>4</strong></td><td><strong>Wohlbefinden</strong></td><td>Nur in MIDOS2, nicht im Basisscreening?</td></tr>
+<tr><td><strong>5</strong></td><td><strong>PRO-CTCAE Korrekturen</strong></td><td>AE #27, #59 in 2026.4.0 mit beheben?</td></tr>
+<tr><td><strong>6</strong></td><td><strong>MIDOS2-Quellverifikation</strong></td><td>Wer hat Zugriff auf Stiel et al. 2010/2012?</td></tr>
+</table>
+</div>
+
+<div class="footer">
+<strong>Status.</strong> Branch <code>feature/v2026.4.0-symptom-screening</code> · MIDOS2 + Onkologisches Basisscreening gebaut (Q + CS + VS + Beispiel-QR + IG-Doku, SUSHI 0 Errors). Offen: PRO-CTCAE Master Q, Breast-DE-Refactoring, CodeSystem-Korrekturen, MIDOS2 Source-Verifikation, optional Symptom-ObsDefs.
+&nbsp;&nbsp;|&nbsp;&nbsp;<strong>Quellen.</strong> NCI PRO-CTCAE Item Library v1.0 (healthcaredelivery.cancer.gov/pro-ctcae) · Hamacher et al., BMC Cancer 2023 · Stiel et al., Der Schmerz 2010/2012 · Bruera et al., J Palliat Care 1991 (ESAS).
+</div>
+
+</body>
+</html>

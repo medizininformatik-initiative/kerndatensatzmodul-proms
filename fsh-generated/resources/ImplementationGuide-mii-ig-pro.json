@@ -476,6 +476,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-midos2"
+        },
+        "name": "MII CS PRO MIDOS2 Items and Response Scales",
+        "description": "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-pro-ctcae"
         },
         "name": "MII CS PRO PRO-CTCAE Item Library",
@@ -532,11 +540,27 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-midos2-response-01"
+        },
+        "name": "MII EXA PRO MIDOS2 Response",
+        "description": "MIDOS2 QuestionnaireResponse Beispiel — Palliativpatient mit moderater Symptomlast (Summe 19/33, Wohlbefinden eher schlecht)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-pro-patient"
         },
         "name": "MII EXA PRO Patient",
         "description": "Example patient for PRO demonstrations",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01"
+        },
+        "name": "MII EXA PRO PRO-CTCAE Onkologisches Basisscreening Response",
+        "description": "PRO-CTCAE Onkologisches Basisscreening Beispiel — Onkologischer Patient unter Chemotherapie mit moderater Symptomlast",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
         "reference": {
@@ -1004,10 +1028,26 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-midos-midos2"
+        },
+        "name": "MII QST PRO MIDOS2",
+        "description": "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-Screening für die Palliativmedizin nach DGP. 11 Symptom-Items mit 4-stufiger DGP-Skala, ein Wohlbefinden-Item, ein offenes Item für sonstige Beschwerden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-phq-9"
         },
         "name": "MII QST PRO PHQ-9",
         "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening"
+        },
+        "name": "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
+        "description": "Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigsten Symptome onkologischer Patienten mit den 5-stufigen PRO-CTCAE-Skalen (Häufigkeit, Schweregrad, Beeinträchtigung). Symptomauswahl konzeptuell parallel zu MIDOS2 für eine gemeinsame Problem List zwischen Onkologie und Palliativmedizin.",
         "exampleBoolean": false
       },
       {
@@ -1104,6 +1144,22 @@
         },
         "name": "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
         "description": "4-point response scale for EORTC QLQ-C30 role functioning items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-midos2-severity"
+        },
+        "name": "MII VS PRO MIDOS2 DGP-Severity-Skala",
+        "description": "DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für die 11 Symptom-Items des MIDOS2 verwendet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-midos2-wellbeing"
+        },
+        "name": "MII VS PRO MIDOS2 Wohlbefinden-Skala",
+        "description": "4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet.",
         "exampleBoolean": false
       },
       {
@@ -1466,6 +1522,16 @@
             {
               "nameUrl": "dass-21.html",
               "title": "DASS-21",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "midos2.html",
+              "title": "MIDOS2 (Palliativmedizin)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "proms-onkologisches-basisscreening.html",
+              "title": "Onkologisches Basisscreening (PRO-CTCAE)",
               "generation": "markdown"
             },
             {
