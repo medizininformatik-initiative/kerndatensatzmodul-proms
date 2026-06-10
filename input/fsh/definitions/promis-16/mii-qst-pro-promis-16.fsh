@@ -62,14 +62,271 @@ Usage: #definition
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
-// ===== TODO: 7 remaining domains =====
-// - SOC (SRPPER31_CaPS, SRPPER46_CaPS)
-// - ANX (EDANX40, EDANX41)
-// - DEP (EDDEP29, EDDEP41)
-// - SLP (SLEEP25, SLEEP90)  -- siehe S3: gemischte response options (Never→Always + Not at all→Very much)
-// - PI  (PAININ9, PAININ31)
-// - CF  (PC27, PC-CaPS3R)
-// - FTG (HI7, AN3)
-//
-// Score-Berechnung: Pattern-basierter T-Score-Lookup je Domäne (5×5 = 25 Werte aus Supplement S4)
-// wird über CQL Library mii-lib-promis-16 realisiert (analog mii-lib-phq-9, mii-lib-eq-5d).
+// ===== ANXIETY DOMAIN =====
+// German wordings per official PROMIS Health Organization PDF "PROMIS-16 Profile v2.1 (PROPr)
+// German, 20 September 2024" and PCOR-MII Master Item-Level Dictionary.
+// Response scale: Frequency (Never/Rarely/Sometimes/Often/Always)
+* item[+].linkId = "PROMIS-16.Anxiety"
+* item[=].type = #group
+* item[=].text = "Emotional Distress — Anxiety"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Emotionale Belastung — Angst"
+
+// ANX Item 1: EDANX40
+* item[=].item[+].linkId = "promis-edanx40"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61941-1 "I found it hard to focus on anything other than my anxiety in past 7 days"
+* item[=].item[=].text = "I found it hard to focus on anything other than my anxiety."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+
+// ANX Item 2: EDANX41
+* item[=].item[+].linkId = "promis-edanx41"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61942-9 "My worries overwhelmed me in past 7 days"
+* item[=].item[=].text = "My worries overwhelmed me."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Meine Sorgen haben mich überwältigt."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+
+// ===== DEPRESSION DOMAIN =====
+// Response scale: Frequency (Never/Rarely/Sometimes/Often/Always)
+* item[+].linkId = "PROMIS-16.Depression"
+* item[=].type = #group
+* item[=].text = "Emotional Distress — Depression"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Emotionale Belastung — Depressivität"
+
+// DEP Item 1: EDDEP29
+* item[=].item[+].linkId = "promis-eddep29"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61967-6 "I felt depressed in past 7 days [PROMIS]"
+* item[=].item[=].text = "I felt depressed."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich niedergeschlagen."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+
+// DEP Item 2: EDDEP41
+* item[=].item[+].linkId = "promis-eddep41"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61973-4 "I felt hopeless in past 7 days [PROMIS]"
+* item[=].item[=].text = "I felt hopeless."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich hoffnungslos."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+
+// ===== FATIGUE DOMAIN =====
+// Response scale: Intensity (Not at all/A little bit/Somewhat/Quite a bit/Very much)
+* item[+].linkId = "PROMIS-16.Fatigue"
+* item[=].type = #group
+* item[=].text = "Fatigue"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Erschöpfung"
+
+// FTG Item 1: HI7
+* item[=].item[+].linkId = "promis-hi7"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61878-5 "I feel fatigued during the past 7 days [PROMIS]"
+* item[=].item[=].text = "I feel fatigued."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich bin erschöpft."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+
+// FTG Item 2: AN3
+* item[=].item[+].linkId = "promis-an3"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61882-7 "I had trouble starting things because I was tired in past 7 days [PROMIS]"
+* item[=].item[=].text = "I had trouble starting things because I was tired."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+
+// ===== SLEEP DOMAIN =====
+// Note: Sleep25 uses Intensity scale, Sleep90 uses Frequency scale (per PHO PDF)
+// TODO: confirm LOINC codes for Sleep25 / Sleep90 — PROMIS-29 uses Sleep109/116/20/44, not these
+* item[+].linkId = "PROMIS-16.Sleep"
+* item[=].type = #group
+* item[=].text = "Sleep-related Impairment / Sleep Disturbance"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Schlafbezogene Beeinträchtigungen / Schlafbeeinträchtigung"
+
+// SLP Item 1: Sleep25 — Intensity scale
+* item[=].item[+].linkId = "promis-sleep25"
+* item[=].item[=].type = #choice
+// TODO: confirm LOINC code for Sleep25
+* item[=].item[=].text = "I had problems during the day because of poor sleep."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich hatte tagsüber Probleme, weil ich schlecht geschlafen habe."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+
+// SLP Item 2: Sleep90 — Frequency scale
+* item[=].item[+].linkId = "promis-sleep90"
+* item[=].item[=].type = #choice
+// TODO: confirm LOINC code for Sleep90
+* item[=].item[=].text = "I had trouble sleeping."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Es fiel mir schwer zu schlafen."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+
+// ===== SOCIAL ROLES & ACTIVITIES DOMAIN =====
+// Response scale: Frequency (Never/Rarely/Sometimes/Often/Always) — REVERSE-SCORED per PHO PDF
+// (5=Nie, 1=Immer): higher response = better participation. Reverse-scoring handled by CQL Library.
+* item[+].linkId = "PROMIS-16.SocialRoles"
+* item[=].type = #group
+* item[=].text = "Ability to Participate in Social Roles and Activities"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Teilhabe an sozialen Rollen und Aktivitäten"
+
+// SOC Item 1: SRPPER31_CaPS
+* item[=].item[+].linkId = "promis-srpper31-caps"
+* item[=].item[=].type = #choice
+// TODO: confirm LOINC code for SRPPER31-CaPS
+* item[=].item[=].text = "I have trouble taking care of my regular personal responsibilities."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Es fällt mir schwer, mich um meine regelmäßigen persönlichen Verpflichtungen zu kümmern."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+
+// SOC Item 2: SRPPER46_CaPS
+* item[=].item[+].linkId = "promis-srpper46-caps"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#76712-9 "I have trouble doing all of the activities with friends that I want to do [PROMIS]"
+* item[=].item[=].text = "I have trouble doing all of the activities with friends that I want to do."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+
+// ===== PAIN INTERFERENCE DOMAIN =====
+// Response scale: Intensity (Not at all/A little bit/Somewhat/Quite a bit/Very much)
+* item[+].linkId = "PROMIS-16.PainInterference"
+* item[=].type = #group
+* item[=].text = "Pain Interference"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Beeinträchtigung durch Schmerzen"
+
+// PI Item 1: PAININ9
+* item[=].item[+].linkId = "promis-painin9"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61758-9 "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
+* item[=].item[=].text = "How much did pain interfere with your day-to-day activities?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?"
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+
+// PI Item 2: PAININ31
+* item[=].item[+].linkId = "promis-painin31"
+* item[=].item[=].type = #choice
+* item[=].item[=].code = $LNC#61773-8 "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
+* item[=].item[=].text = "How much did pain interfere with your ability to participate in social activities?"
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+
+// ===== COGNITIVE FUNCTION DOMAIN =====
+// Response scale: Intensity (Not at all/A little bit/Somewhat/Quite a bit/Very much)
+// Note: PROMIS-16 uses different Cog Fn items than the PROMIS Cognitive Function SF 4a
+// (SF 4a has PC2r/PC35r/PC36r/PC42r; PROMIS-16 has PC27r/PC-CaPS3r)
+* item[+].linkId = "PROMIS-16.Cognition"
+* item[=].type = #group
+* item[=].text = "Cognitive Function — Abilities"
+* item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Kognitive Funktionen — Fähigkeiten"
+
+// CF Item 1: PC27r
+* item[=].item[+].linkId = "promis-pc27r"
+* item[=].item[=].type = #choice
+// TODO: confirm LOINC code for PC27r
+* item[=].item[=].text = "I have been able to remember to do things, like take medicine or buy something I needed."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich bin fähig gewesen, mich an Dinge zu erinnern, die ich tun musste, wie z.B. Medikamente einnehmen oder etwas kaufen, das ich benötigte."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+
+// CF Item 2: PC-CaPS3r
+* item[=].item[+].linkId = "promis-pc-caps3r"
+* item[=].item[=].type = #choice
+// TODO: confirm LOINC code for PC-CaPS3r (PROMIS-16 specific cognitive item)
+* item[=].item[=].text = "I have been able to think clearly without extra effort."
+* item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].text.extension[=].extension[+].url = "lang"
+* item[=].item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].item[=].text.extension[=].extension[+].url = "content"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Ich bin fähig gewesen, klar zu denken, ohne mich extra anzustrengen."
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+
+// ===== END OF ITEMS =====
+// Score-Berechnung: bewusst nicht implementiert in v2026.5.0 (PROPr / CQL Library später).
+// Item-Wordings: German per PROMIS-16 v2.1 (PROPr) PHO PDF, 20 Sep 2024; cross-confirmed with PCOR-MII Master.

@@ -1204,6 +1204,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Intensity Response Scale",
+        "description": "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-pro-promis-physical-function-response-scale"
         },
         "name": "MII VS PRO PROMIS Physical Function Response Scale",
