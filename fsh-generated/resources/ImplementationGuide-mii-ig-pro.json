@@ -1028,6 +1028,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-16"
+        },
+        "name": "MII QST PRO PROMIS-16 (Adults)",
+        "description": "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-promis-29"
         },
         "name": "MII QST PRO PROMIS-29 (Adults)",

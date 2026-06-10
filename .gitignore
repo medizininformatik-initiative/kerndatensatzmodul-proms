@@ -21,3 +21,9 @@ fhirpkg.lock.json
 # Dolt database files (added by bd init)
 .dolt/
 *.db
+
+# PCOR-MII Master extraction (contains internal validated PROMIS German wordings, not for public distribution)
+.claude/skills/extract-qst-translations/reference/
+
+# Beads credential key (per-user, must never be committed)
+.beads/.beads-credential-key
