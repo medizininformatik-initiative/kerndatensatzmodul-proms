@@ -9,6 +9,49 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
   "title": "MII QST PRO PROMIS-29 (German)",
   "description": "PROMIS-29 Profile v2.1 - German language variant derived from English source",
+  "useContext": [
+    {
+      "valueReference": {
+        "reference": "https://www.healthmeasures.net/explore-measurement-systems/promis",
+        "display": "PROMIS (Patient-Reported Outcomes Measurement Information System)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    },
+    {
+      "valueReference": {
+        "reference": "https://cpcor.charite.de/promis_national_center_deutschland",
+        "display": "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    },
+    {
+      "valueReference": {
+        "reference": "https://www.healthmeasures.net/explore-measurement-systems/promis",
+        "display": "PROMIS-29 Profile Documentation"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen"
+        }
+      ],
+      "name": "PROMIS National Center Deutschland (CPCOR)"
+    }
+  ],
   "derivedFrom": [
     "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
   ],
@@ -22,18 +65,6 @@
       "code": "promis-promis29",
       "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "display": "PROMIS-29 Questionnaire"
-    }
-  ],
-  "useContext": [
-    {
-      "valueReference": {
-        "reference": "https://www.healthmeasures.net/explore-measurement-systems/promis",
-        "display": "PROMIS-29 Profile Documentation"
-      },
-      "code": {
-        "code": "focus",
-        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
-      }
     }
   ],
   "extension": [
@@ -861,7 +892,7 @@
         {
           "linkId": "PROMIS-29.Anxiety.Description",
           "type": "display",
-          "text": "In den vergangenen 7 Tagen..."
+          "text": "In den letzten 7 Tagen:"
         },
         {
           "code": [
@@ -1025,7 +1056,7 @@
           ],
           "linkId": "promis-edanx01",
           "type": "choice",
-          "text": "...fühlte ich mich ängstlich"
+          "text": "Ich fürchtete mich."
         },
         {
           "code": [
@@ -1189,7 +1220,7 @@
           ],
           "linkId": "promis-edanx40",
           "type": "choice",
-          "text": "...fiel es mir schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
+          "text": "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
         },
         {
           "code": [
@@ -1353,7 +1384,7 @@
           ],
           "linkId": "promis-edanx41",
           "type": "choice",
-          "text": "...überwältigten mich meine Sorgen"
+          "text": "Meine Sorgen haben mich überwältigt."
         },
         {
           "code": [
@@ -1517,7 +1548,7 @@
           ],
           "linkId": "promis-edanx53",
           "type": "choice",
-          "text": "...fühlte ich mich unruhig"
+          "text": "Ich fühlte mich unruhig."
         }
       ],
       "linkId": "PROMIS-29.Anxiety",
@@ -1529,7 +1560,7 @@
         {
           "linkId": "PROMIS-29.Depression.Description",
           "type": "display",
-          "text": "In den vergangenen 7 Tagen..."
+          "text": "In den letzten 7 Tagen:"
         },
         {
           "code": [
@@ -1693,7 +1724,7 @@
           ],
           "linkId": "promis-eddep04",
           "type": "choice",
-          "text": "...fühlte ich mich wertlos"
+          "text": "Ich fühlte mich wertlos."
         },
         {
           "code": [
@@ -1857,7 +1888,7 @@
           ],
           "linkId": "promis-eddep06",
           "type": "choice",
-          "text": "...fühlte ich mich hilflos"
+          "text": "Ich fühlte mich hilflos."
         },
         {
           "code": [
@@ -2021,7 +2052,7 @@
           ],
           "linkId": "promis-eddep29",
           "type": "choice",
-          "text": "...fühlte ich mich deprimiert"
+          "text": "Ich fühlte mich niedergeschlagen."
         },
         {
           "code": [
@@ -2185,7 +2216,7 @@
           ],
           "linkId": "promis-eddep41",
           "type": "choice",
-          "text": "...fühlte ich mich hoffnungslos"
+          "text": "Ich fühlte mich hoffnungslos."
         }
       ],
       "linkId": "PROMIS-29.Depression",
@@ -2197,7 +2228,7 @@
         {
           "linkId": "PROMIS-29.Fatigue.Description",
           "type": "display",
-          "text": "In den vergangenen 7 Tagen..."
+          "text": "In den letzten 7 Tagen:"
         },
         {
           "code": [
@@ -2210,9 +2241,9 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "LA6270-8",
+                "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Nie",
+                "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
                     {
@@ -2223,7 +2254,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Never"
+                          "valueString": "Not at all"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2240,9 +2271,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10066-1",
+                "code": "LA13863-8",
                 "system": "http://loinc.org",
-                "display": "Selten",
+                "display": "Ein wenig",
                 "_display": {
                   "extension": [
                     {
@@ -2253,7 +2284,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Rarely"
+                          "valueString": "A little bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2270,9 +2301,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10082-8",
+                "code": "LA13909-9",
                 "system": "http://loinc.org",
-                "display": "Manchmal",
+                "display": "Mäßig",
                 "_display": {
                   "extension": [
                     {
@@ -2283,7 +2314,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Sometimes"
+                          "valueString": "Somewhat"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2300,9 +2331,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10044-8",
+                "code": "LA13902-4",
                 "system": "http://loinc.org",
-                "display": "Oft",
+                "display": "Ziemlich",
                 "_display": {
                   "extension": [
                     {
@@ -2313,7 +2344,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Often"
+                          "valueString": "Quite a bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2330,9 +2361,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA9933-8",
+                "code": "LA13914-9",
                 "system": "http://loinc.org",
-                "display": "Immer",
+                "display": "Sehr",
                 "_display": {
                   "extension": [
                     {
@@ -2343,7 +2374,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Always"
+                          "valueString": "Very much"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2361,7 +2392,7 @@
           ],
           "linkId": "promis-hi7",
           "type": "choice",
-          "text": "...fühlte ich mich erschöpft"
+          "text": "Ich bin erschöpft."
         },
         {
           "code": [
@@ -2374,9 +2405,9 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "LA6270-8",
+                "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Nie",
+                "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
                     {
@@ -2387,7 +2418,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Never"
+                          "valueString": "Not at all"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2404,9 +2435,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10066-1",
+                "code": "LA13863-8",
                 "system": "http://loinc.org",
-                "display": "Selten",
+                "display": "Ein wenig",
                 "_display": {
                   "extension": [
                     {
@@ -2417,7 +2448,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Rarely"
+                          "valueString": "A little bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2434,9 +2465,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10082-8",
+                "code": "LA13909-9",
                 "system": "http://loinc.org",
-                "display": "Manchmal",
+                "display": "Mäßig",
                 "_display": {
                   "extension": [
                     {
@@ -2447,7 +2478,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Sometimes"
+                          "valueString": "Somewhat"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2464,9 +2495,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10044-8",
+                "code": "LA13902-4",
                 "system": "http://loinc.org",
-                "display": "Oft",
+                "display": "Ziemlich",
                 "_display": {
                   "extension": [
                     {
@@ -2477,7 +2508,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Often"
+                          "valueString": "Quite a bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2494,9 +2525,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA9933-8",
+                "code": "LA13914-9",
                 "system": "http://loinc.org",
-                "display": "Immer",
+                "display": "Sehr",
                 "_display": {
                   "extension": [
                     {
@@ -2507,7 +2538,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Always"
+                          "valueString": "Very much"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2525,7 +2556,7 @@
           ],
           "linkId": "promis-an3",
           "type": "choice",
-          "text": "...hatte ich Schwierigkeiten, Dinge anzufangen, weil ich müde war"
+          "text": "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
         },
         {
           "code": [
@@ -2689,7 +2720,7 @@
           ],
           "linkId": "promis-fatexp41",
           "type": "choice",
-          "text": "...wie abgeschlagen fühlten Sie sich im Durchschnitt?"
+          "text": "Wie ausgelaugt fühlten Sie sich im Allgemeinen?"
         },
         {
           "code": [
@@ -2853,7 +2884,7 @@
           ],
           "linkId": "promis-fatexp40",
           "type": "choice",
-          "text": "...wie erschöpft waren Sie im Durchschnitt?"
+          "text": "Wie erschöpft waren Sie im Allgemeinen?"
         }
       ],
       "linkId": "PROMIS-29.Fatigue",
@@ -2865,7 +2896,7 @@
         {
           "linkId": "PROMIS-29.Sleep.Description",
           "type": "display",
-          "text": "In den vergangenen 7 Tagen..."
+          "text": "In den letzten 7 Tagen:"
         },
         {
           "code": [
@@ -3029,7 +3060,7 @@
           ],
           "linkId": "promis-sleep109",
           "type": "choice",
-          "text": "...war meine Schlafqualität..."
+          "text": "Meine Schlafqualität war ..."
         },
         {
           "code": [
@@ -3042,9 +3073,9 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "LA6270-8",
+                "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Nie",
+                "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
                     {
@@ -3055,7 +3086,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Never"
+                          "valueString": "Not at all"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3072,9 +3103,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10066-1",
+                "code": "LA13863-8",
                 "system": "http://loinc.org",
-                "display": "Selten",
+                "display": "Ein wenig",
                 "_display": {
                   "extension": [
                     {
@@ -3085,7 +3116,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Rarely"
+                          "valueString": "A little bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3102,9 +3133,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10082-8",
+                "code": "LA13909-9",
                 "system": "http://loinc.org",
-                "display": "Manchmal",
+                "display": "Mäßig",
                 "_display": {
                   "extension": [
                     {
@@ -3115,7 +3146,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Sometimes"
+                          "valueString": "Somewhat"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3132,9 +3163,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10044-8",
+                "code": "LA13902-4",
                 "system": "http://loinc.org",
-                "display": "Oft",
+                "display": "Ziemlich",
                 "_display": {
                   "extension": [
                     {
@@ -3145,7 +3176,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Often"
+                          "valueString": "Quite a bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3162,9 +3193,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA9933-8",
+                "code": "LA13914-9",
                 "system": "http://loinc.org",
-                "display": "Immer",
+                "display": "Sehr",
                 "_display": {
                   "extension": [
                     {
@@ -3175,7 +3206,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Always"
+                          "valueString": "Very much"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3193,7 +3224,7 @@
           ],
           "linkId": "promis-sleep116",
           "type": "choice",
-          "text": "...war mein Schlaf erholsam"
+          "text": "Mein Schlaf war erfrischend."
         },
         {
           "code": [
@@ -3206,9 +3237,9 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "LA6270-8",
+                "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Nie",
+                "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
                     {
@@ -3219,7 +3250,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Never"
+                          "valueString": "Not at all"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3236,9 +3267,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10066-1",
+                "code": "LA13863-8",
                 "system": "http://loinc.org",
-                "display": "Selten",
+                "display": "Ein wenig",
                 "_display": {
                   "extension": [
                     {
@@ -3249,7 +3280,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Rarely"
+                          "valueString": "A little bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3266,9 +3297,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10082-8",
+                "code": "LA13909-9",
                 "system": "http://loinc.org",
-                "display": "Manchmal",
+                "display": "Mäßig",
                 "_display": {
                   "extension": [
                     {
@@ -3279,7 +3310,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Sometimes"
+                          "valueString": "Somewhat"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3296,9 +3327,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10044-8",
+                "code": "LA13902-4",
                 "system": "http://loinc.org",
-                "display": "Oft",
+                "display": "Ziemlich",
                 "_display": {
                   "extension": [
                     {
@@ -3309,7 +3340,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Often"
+                          "valueString": "Quite a bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3326,9 +3357,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA9933-8",
+                "code": "LA13914-9",
                 "system": "http://loinc.org",
-                "display": "Immer",
+                "display": "Sehr",
                 "_display": {
                   "extension": [
                     {
@@ -3339,7 +3370,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Always"
+                          "valueString": "Very much"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3357,7 +3388,7 @@
           ],
           "linkId": "promis-sleep20",
           "type": "choice",
-          "text": "...hatte ich Probleme mit meinem Schlaf"
+          "text": "Ich hatte Schlafprobleme."
         },
         {
           "code": [
@@ -3370,9 +3401,9 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "LA6270-8",
+                "code": "LA6568-5",
                 "system": "http://loinc.org",
-                "display": "Nie",
+                "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
                     {
@@ -3383,7 +3414,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Never"
+                          "valueString": "Not at all"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3400,9 +3431,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10066-1",
+                "code": "LA13863-8",
                 "system": "http://loinc.org",
-                "display": "Selten",
+                "display": "Ein wenig",
                 "_display": {
                   "extension": [
                     {
@@ -3413,7 +3444,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Rarely"
+                          "valueString": "A little bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3430,9 +3461,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10082-8",
+                "code": "LA13909-9",
                 "system": "http://loinc.org",
-                "display": "Manchmal",
+                "display": "Mäßig",
                 "_display": {
                   "extension": [
                     {
@@ -3443,7 +3474,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Sometimes"
+                          "valueString": "Somewhat"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3460,9 +3491,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA10044-8",
+                "code": "LA13902-4",
                 "system": "http://loinc.org",
-                "display": "Oft",
+                "display": "Ziemlich",
                 "_display": {
                   "extension": [
                     {
@@ -3473,7 +3504,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Often"
+                          "valueString": "Quite a bit"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3490,9 +3521,9 @@
             },
             {
               "valueCoding": {
-                "code": "LA9933-8",
+                "code": "LA13914-9",
                 "system": "http://loinc.org",
-                "display": "Immer",
+                "display": "Sehr",
                 "_display": {
                   "extension": [
                     {
@@ -3503,7 +3534,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "Always"
+                          "valueString": "Very much"
                         }
                       ],
                       "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -3521,7 +3552,7 @@
           ],
           "linkId": "promis-sleep44",
           "type": "choice",
-          "text": "...hatte ich Schwierigkeiten beim Einschlafen"
+          "text": "Ich hatte Schwierigkeiten einzuschlafen."
         }
       ],
       "linkId": "PROMIS-29.Sleep",
@@ -3533,14 +3564,14 @@
         {
           "linkId": "PROMIS-29.Social.Description",
           "type": "display",
-          "text": "In den vergangenen 7 Tagen..."
+          "text": "In den letzten 7 Tagen:"
         },
         {
           "code": [
             {
-              "code": "62041-9",
+              "code": "76709-5",
               "system": "http://loinc.org",
-              "display": "I was satisfied with how much work I can do (include work at home) in past 7 days [PROMIS]"
+              "display": "I have trouble doing all of my usual work (include work at home) [PROMIS]"
             }
           ],
           "answerOption": [
@@ -3697,7 +3728,7 @@
           ],
           "linkId": "promis-srpper23-caps",
           "type": "choice",
-          "text": "...war ich zufrieden damit, wie viel Arbeit ich schaffen konnte (einschließlich Hausarbeit)"
+          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
         },
         {
           "code": [
@@ -3861,7 +3892,7 @@
           ],
           "linkId": "promis-srpper11-caps",
           "type": "choice",
-          "text": "...hatte ich Schwierigkeiten, alle meine üblichen Freizeitaktivitäten mit anderen zu machen"
+          "text": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."
         },
         {
           "code": [
@@ -4025,7 +4056,7 @@
           ],
           "linkId": "promis-srpper18-caps",
           "type": "choice",
-          "text": "...hatte ich Schwierigkeiten, alle Familienaktivitäten zu machen, die ich machen wollte"
+          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."
         },
         {
           "code": [
@@ -4189,7 +4220,7 @@
           ],
           "linkId": "promis-srpper46-caps",
           "type": "choice",
-          "text": "...hatte ich Schwierigkeiten, alle Aktivitäten mit Freunden zu machen, die ich machen wollte"
+          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
         }
       ],
       "linkId": "PROMIS-29.Social",
@@ -4201,7 +4232,7 @@
         {
           "linkId": "PROMIS-29.PainInterference.Description",
           "type": "display",
-          "text": "In den vergangenen 7 Tagen - Inwieweit beeinträchtigten Schmerzen..."
+          "text": "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."
         },
         {
           "code": [
@@ -4365,7 +4396,7 @@
           ],
           "linkId": "promis-painin9",
           "type": "choice",
-          "text": "...Ihre alltäglichen Aktivitäten?"
+          "text": "Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?"
         },
         {
           "code": [
@@ -4529,7 +4560,7 @@
           ],
           "linkId": "promis-painin22",
           "type": "choice",
-          "text": "...Arbeiten rund um das Haus?"
+          "text": "Wie sehr beeinträchtigen Schmerzen Ihre häuslichen Tätigkeiten?"
         },
         {
           "code": [
@@ -4693,7 +4724,7 @@
           ],
           "linkId": "promis-painin31",
           "type": "choice",
-          "text": "...Ihre Fähigkeit zur Teilnahme an sozialen Aktivitäten?"
+          "text": "Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
         },
         {
           "code": [
@@ -4857,7 +4888,7 @@
           ],
           "linkId": "promis-painin34",
           "type": "choice",
-          "text": "...Ihre Hausarbeiten?"
+          "text": "Wie sehr beeinträchtigen Schmerzen Sie bei Ihrer Hausarbeit?"
         }
       ],
       "linkId": "PROMIS-29.PainInterference",
@@ -4894,7 +4925,7 @@
           ],
           "linkId": "promis-global07",
           "type": "integer",
-          "text": "In den vergangenen 7 Tagen - Wie würden Sie Ihre Schmerzen im Durchschnitt bewerten?"
+          "text": "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"
         }
       ],
       "linkId": "PROMIS-29.PainIntensity",
@@ -5330,6 +5361,8 @@
     }
   ],
   "version": "2026.2.0",
+  "publisher": "Medizininformatik-Initiative (MII) – PRO Modul",
+  "copyright": "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
   "status": "active",
   "experimental": true,
   "language": "de"

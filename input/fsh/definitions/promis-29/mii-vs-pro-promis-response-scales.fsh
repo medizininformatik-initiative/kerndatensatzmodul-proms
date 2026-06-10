@@ -31,6 +31,37 @@ Description: "PROMIS Physical Function response scale based on LOINC LL1022-4"
 * ^compose.include.concept[=].designation[+].language = #de
 * ^compose.include.concept[=].designation[=].value = "Kann ich gar nicht"
 
+// Intensity Response Scale (LOINC LL1024-0): Not at all/A little bit/Somewhat/Quite a bit/Very much
+ValueSet: MII_VS_PRO_PROMIS_Intensity_Response_Scale
+Id: mii-vs-pro-promis-intensity-response-scale
+Title: "MII VS PRO PROMIS Intensity Response Scale"
+Description: "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0"
+* insert PR_CS_VS_Version
+* ^status = #active
+* ^experimental = true
+* ^language = #en
+* ^compose.include.system = $LNC
+* ^compose.include.concept[+].code = #LA6568-5
+* ^compose.include.concept[=].display = "Not at all"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Überhaupt nicht"
+* ^compose.include.concept[+].code = #LA13863-8
+* ^compose.include.concept[=].display = "A little bit"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Ein wenig"
+* ^compose.include.concept[+].code = #LA13909-9
+* ^compose.include.concept[=].display = "Somewhat"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Mäßig"
+* ^compose.include.concept[+].code = #LA13902-4
+* ^compose.include.concept[=].display = "Quite a bit"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Ziemlich"
+* ^compose.include.concept[+].code = #LA13914-9
+* ^compose.include.concept[=].display = "Very much"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Sehr"
+
 // Frequency Response Scale (LOINC LL1016-6)
 ValueSet: MII_VS_PRO_PROMIS_Frequency_Response_Scale
 Id: mii-vs-pro-promis-frequency-response-scale

@@ -12,6 +12,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #phq-phq9 "PHQ-9 Questionnaire"
 * #bdi-bdi2 "Beck Depression Inventory II (BDI-II)"
 * #promis-promis29 "PROMIS-29 Questionnaire"
+* #promis-promis16 "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)"
 // * #promis-promis33 "PROMIS-33 Questionnaire"  // Planned: First use case for modular questionnaires
 * #promis-depression-sf4a "PROMIS Depression 4a Short Form Questionnaire"
 * #promis-cognitive-function-sf4a "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"

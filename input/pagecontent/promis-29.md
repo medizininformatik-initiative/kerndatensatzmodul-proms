@@ -57,7 +57,9 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 ### Sprachunterstützung
 
 **Primärsprache**: Englisch (validierte Version)
-**Deutsche Übersetzung**: Via Extension
+**Deutsche Übersetzung**: Via `translation`-Extension
+
+> **Hinweis zur DE-Variante** (`mii-qst-pro-promis-29-de`): Diese existiert ausschließlich zur Darstellung in deutschsprachigen Renderern, die die `translation`-Extension nicht auswerten. **Sie wird nicht als eigene Implementierung gepflegt** -- ihr Inhalt ist mit der EN-primären Hauptversion identisch. Bei Datenerfassung und -austausch ist die Hauptversion (`mii-qst-pro-promis-29`) maßgeblich.
 
 ```json
 {
@@ -119,8 +121,18 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 }
 ```
 
+### Lizenzierung & Urheberrecht
+
+PROMIS-Items sind urheberrechtlich geschützt. Die offiziellen deutschen Übersetzungen werden durch **PCOR-MII** bereitgestellt und durch das **PROMIS National Center Deutschland (CPCOR Charité, Leitung: Felix Fischer)** kuratiert.
+
+**Für die institutionelle Implementierung außerhalb des PCOR-MII-Kontexts ist eine Nutzungsanfrage bei CPCOR erforderlich**:
+[https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen](https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen)
+
+Details zur Schichten-Attribution (MII FHIR-Struktur + PROMIS Items + deutsche Übersetzung + LOINC) siehe [PROMIS — Lizenzierung & Urheberrecht](promis.html#lizenzierung-urheberrecht).
+
 ### Referenzen
 
 - [PROMIS Official Site](https://www.healthmeasures.net/explore-measurement-systems/promis)
 - [German PROMIS Validation](https://doi.org/10.1371/journal.pone.0197139)
+- [PROMIS National Center Deutschland (CPCOR)](https://cpcor.charite.de/promis_national_center_deutschland)
 - LOINC Panel: [62199-5](https://loinc.org/62199-5/)

@@ -1028,6 +1028,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-16"
+        },
+        "name": "MII QST PRO PROMIS-16 (Adults)",
+        "description": "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-promis-29"
         },
         "name": "MII QST PRO PROMIS-29 (Adults)",
@@ -1192,6 +1200,14 @@
         },
         "name": "MII VS PRO PROMIS Frequency Response Scale",
         "description": "PROMIS Frequency response scale based on LOINC LL1016-6",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Intensity Response Scale",
+        "description": "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0",
         "exampleBoolean": false
       },
       {
@@ -1428,6 +1444,11 @@
                 {
                   "nameUrl": "promis-29.html",
                   "title": "PROMIS-29",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "promis-16.html",
+                  "title": "PROMIS-16",
                   "generation": "markdown"
                 },
                 {
