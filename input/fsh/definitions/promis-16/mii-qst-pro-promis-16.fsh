@@ -45,7 +45,7 @@ Usage: #definition
 * item[=].item[=].text.extension[=].extension[+].url = "lang"
 * item[=].item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].item[=].text.extension[=].extension[+].url = "content"
-* item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie in normalem Tempo Treppen hinauf- und hinuntergehen?"
+* item[=].item[=].text.extension[=].extension[=].valueString = "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
 
