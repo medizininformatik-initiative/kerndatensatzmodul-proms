@@ -57,7 +57,9 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 ### Sprachunterstützung
 
 **Primärsprache**: Englisch (validierte Version)
-**Deutsche Übersetzung**: Via Extension
+**Deutsche Übersetzung**: Via `translation`-Extension
+
+> **Hinweis zur DE-Variante** (`mii-qst-pro-promis-29-de`): Diese existiert ausschließlich zur Darstellung in deutschsprachigen Renderern, die die `translation`-Extension nicht auswerten. **Sie wird nicht als eigene Implementierung gepflegt** -- ihr Inhalt ist mit der EN-primären Hauptversion identisch. Bei Datenerfassung und -austausch ist die Hauptversion (`mii-qst-pro-promis-29`) maßgeblich.
 
 ```json
 {

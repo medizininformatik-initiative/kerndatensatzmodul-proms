@@ -1,6 +1,6 @@
 ### Übersicht
 
-**Status**: In Entwicklung (Skelett — 2 von 16 Items implementiert)
+**Status**: Implementiert — alle 16 Items, ohne Score-Berechnung
 **Version**: 2026.5.0
 **Stand**: 2026-06-10
 
@@ -57,9 +57,11 @@ Referenz Score-Methodik: Dewitt B, Feeny D, Fischhoff B, et al. *Estimation of a
 
 ### Implementierungsstand
 
-Aktuell ist nur das Grundgerüst angelegt (siehe `input/fsh/definitions/promis-16/mii-qst-pro-promis-16.fsh`): die zwei Physical-Function-Items PFA21 und PFA23 sind vollständig implementiert. Die restlichen 14 Items sind im FSH-File als TODO markiert.
+Alle 16 Items sind in `input/fsh/definitions/promis-16/mii-qst-pro-promis-16.fsh` mit den offiziellen Wordings aus dem PHO PDF "PROMIS-16 Profile v2.1 (PROPr), German, 20 September 2024" implementiert. Die Wordings wurden automatisiert gegen das PCOR-MII Master Item-Level Dictionary verifiziert (`MATCH=15, DIFF=0`).
 
-Tracking: beads-Issue `kerndatensatzmodul-proms-yo6`.
+Die fünf PROMIS-16-spezifischen LOINC-Codes (Sleep25, Sleep90, SRPPER31-CaPS, PC27r, PC-CaPS3r) sind im FSH-File als TODO markiert — sie müssen noch gegen die offizielle LOINC-Liste verifiziert werden, sobald die PROMIS-16 Panel-Codes in LOINC publiziert sind.
+
+Score-Berechnung (PROPr + Domain T-Scores) ist **bewusst nicht implementiert** in dieser Version — siehe Abschnitt [Score-Berechnung](#score-berechnung-in-dieser-version-nicht-implementiert).
 
 ### Item-Überlapp mit PROMIS-29 / Cog Fn SF 4a
 
