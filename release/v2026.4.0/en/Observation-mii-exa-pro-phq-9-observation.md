@@ -1,4 +1,4 @@
-# PHQ-9 Observation Example - MII IG PRO v2026.2.0
+# PHQ-9 Observation Example - MII IG PRO v2026.4.0
 
 ## Example Observation: PHQ-9 Observation Example
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.2.0
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.4.0
 
 **status**: Final
 
@@ -29,7 +29,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-phq-9-observation",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.2.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.0"]
   },
   "status" : "final",
   "code" : {

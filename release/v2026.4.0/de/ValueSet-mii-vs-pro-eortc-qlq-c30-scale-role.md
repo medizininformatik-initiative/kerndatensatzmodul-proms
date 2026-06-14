@@ -1,4 +1,4 @@
-# MII VS PRO EORTC QLQ-C30 Role Functioning Scale - MII IG PRO v2026.2.0
+# MII VS PRO EORTC QLQ-C30 Role Functioning Scale - MII IG PRO v2026.4.0
 
 ## ValueSet: MII VS PRO EORTC QLQ-C30 Role Functioning Scale (Experimentell) 
 
@@ -28,12 +28,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-eortc-qlq-c30-scale-role",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role",
   "title" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T19:09:51+00:00",
+  "date" : "2026-06-14T19:15:38+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

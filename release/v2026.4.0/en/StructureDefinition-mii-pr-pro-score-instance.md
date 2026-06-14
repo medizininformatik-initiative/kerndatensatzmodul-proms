@@ -1,4 +1,4 @@
-# MII PR PRO Score Instance - MII IG PRO v2026.2.0
+# MII PR PRO Score Instance - MII IG PRO v2026.4.0
 
 ## Resource Profile: MII PR PRO Score Instance 
 
@@ -30,11 +30,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-score-
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-score-instance",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_PR_PRO_Score_Instance",
   "title" : "MII PR PRO Score Instance",
   "status" : "active",
-  "date" : "2026-06-14T19:09:51+00:00",
+  "date" : "2026-06-14T19:15:38+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

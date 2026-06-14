@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-code - MII IG PRO v2026.2.0
+# mii-sp-pro-observationdefinition-code - MII IG PRO v2026.4.0
 
 ## SearchParameter: mii-sp-pro-observationdefinition-code (Experimental) 
 
@@ -27,7 +27,7 @@ SearchParameter for ObservationDefinition.code to find score definitions by code
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-code",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_SP_PRO_ObservationDefinition_Code",
   "status" : "active",
   "experimental" : true,
