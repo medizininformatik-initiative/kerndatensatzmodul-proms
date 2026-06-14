@@ -94,9 +94,13 @@ FHIR-Ressourcen:
 - Fixed: Capabilities-Extension in `mii-qst-pro-promis-cognitive-function-sf4a` vervollständigt (`domainAligned`=true ergänzt)
 - Added: Capabilities-Extension zu `mii-qst-pro-pro-ctcae-breast-de` hinzugefügt (`displayable`+`collectable`=true; `calculatable`/`extractable`/`domainAligned`=false -- bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)
 
-**Version: 2026.2.0** (unreleased)
+**Version: 2026.2.0**
 
-Datum: --
+Datum: 2026-03-30 (released, Tag `v2026.2.0`, Simplifier-Package published)
+
+PRO-Instrumente:
+- Added: DASS-21 (Depression Anxiety Stress Scales) -- vollständige Implementierung mit Questionnaire, Terminologie (CodeSystem, ValueSets), Scoring und Beispielen
+- Added: DASS-21 IG-Dokumentationsseite
 
 Dependencies und Tooling:
 - Changed: Dependency de.gematik.isik von 5.0.0 auf 5.1.1 aktualisiert (konsistent mit Bildgebung und Laborbefund)
@@ -110,18 +114,12 @@ EORTC QLQ-C30 ValueSet-Architektur:
 - Added: Post-SUSHI ValueSet-Expansion-Script für LHC Forms Rendering-Kompatibilität
 - Fixed: Display-Texte zu EORTC QLQ-C30 ValueSet-Konzepten hinzugefügt
 
-**Version: 2026.1.0** (unreleased)
-
-Datum: --
-
-PRO-Instrumente:
-- Added: DASS-21 (Depression Anxiety Stress Scales) -- vollständige Implementierung mit Questionnaire, Terminologie (CodeSystem, ValueSets), Scoring und Beispielen
-- Added: DASS-21 IG-Dokumentationsseite
-
 Qualitätssicherung:
 - Fixed: ObsDef-Titel entdoppelt, IG-Seite Score-Darstellung verbessert
 - Fixed: Kaputte `{{render:infobox}}` Syntax durch Markdown-Blockquotes ersetzt (DASS-21, PHQ-9 IG-Seiten)
 - Fixed: CodeSystem/ValueSet auf kurze IDs umgestellt
+
+Hinweis: Die DASS-21- und Qualitätssicherungs-Punkte waren ursprünglich als eigenständiger v2026.1.0-Release geplant, wurden aber nie als eigenes Package veröffentlicht. Inhalt ist erstmals als Teil von v2026.2.0 released.
 
 **Version: 2026.0.1**
 
