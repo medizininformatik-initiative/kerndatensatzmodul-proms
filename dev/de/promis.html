@@ -2,10 +2,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PROMIS - MII IG PRO v2026.2.0</title>
+    <title>PROMIS - MII IG PRO v2026.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.2.0 - ci-build
+            <span style="display:inline-block;">2026.4.0 - ci-build
 
 
 
@@ -157,6 +158,9 @@
         <a href="promis.html">PROMIS</a>
       </li>
       <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
         <a href="bdi-ii.html">BDI-II</a>
       </li>
       <li>
@@ -236,7 +240,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>PROMIS</h2>
   
 
@@ -253,8 +257,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#implementierte-instrumente" id="markdown-toc-implementierte-instrumente">Implementierte Instrumente</a></li>
+  <li><a href="#lizenzierung--urheberrecht" id="markdown-toc-lizenzierung--urheberrecht">Lizenzierung &amp; Urheberrecht</a></li>
+</ul>
+
 </div>
 <p>Das <a href="https://www.healthmeasures.net/explore-measurement-systems/promis">Patient-Reported Outcomes Measurement Information System (PROMIS)</a> ist ein vom US National Institute of Health (NIH) entwickeltes, IRT-basiertes Messsystem zur standardisierten Erfassung patientenberichteter Outcomes. PROMIS-Instrumente sind international validiert und liefern T-Scores (Mean=50, SD=10 der US-Normalbevölkerung), die instrument- und populationsübergreifend vergleichbar sind.</p>
 
@@ -270,14 +278,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><strong>Multi-Domain Instrument</strong></td>
+      <td><strong>Multi-Domain Profile</strong></td>
       <td>Erfasst mehrere Gesundheitsdomänen in einem Fragebogen</td>
-      <td><a href="promis-29.html">PROMIS-29</a></td>
+      <td><a href="promis-29.html">PROMIS-29</a>, <a href="promis-16.html">PROMIS-16</a></td>
     </tr>
     <tr>
       <td><strong>Single-Domain Short Form</strong></td>
       <td>Fokussiert auf eine einzelne Domäne mit wenigen Items</td>
-      <td>PROMIS Physical Function SF 4a, <a href="promis-depression.html">PROMIS Depression SF 4a</a></td>
+      <td>PROMIS Cognitive Function SF 4a, <a href="promis-depression.html">PROMIS Depression SF 4a</a></td>
     </tr>
     <tr>
       <td><strong>Item Bank</strong></td>
@@ -295,6 +303,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>–&gt; <a href="promis-29.html">Detaillierte Dokumentation und Vorschau</a></strong></p>
 
+<h4 id="promis-16-profile-v10">PROMIS-16 Profile v1.0</h4>
+
+<p>Ultrakurzes Multi-Domain Instrument mit 16 Items über 8 Domänen (je 2 Items). Enthält im Gegensatz zum PROMIS-29 auch die Cognitive-Function-Domäne. Geeignet für wiederholte Messung, Screening und Settings mit hoher Erhebungslast.</p>
+
+<p><strong>–&gt; <a href="promis-16.html">Detaillierte Dokumentation und Vorschau</a></strong></p>
+
+<h4 id="promis-cognitive-function-short-form-4a">PROMIS Cognitive Function Short Form 4a</h4>
+
+<p>Single-Domain Short Form mit 4 Items zur Erfassung subjektiver kognitiver Funktion. Ergänzt PROMIS-29 (das diese Domäne nicht abdeckt) — die Kombination beider Instrumente entspricht inhaltlich dem PROMIS-33-Profile.</p>
+
+<p><strong>–&gt; <a href="pro-library.html">Übersicht im PRO-Library</a></strong></p>
+
 <h4 id="promis-depression-short-form-4a">PROMIS Depression Short Form 4a</h4>
 
 <p>Single-Domain Short Form zur Erfassung von Depressionssymptomen mit 4 Items aus der PROMIS Depression Item Bank. Dient als exemplarisches Beispiel für die Implementierung von PROMIS-Instrumenten aus einer einzelnen Domäne.</p>
@@ -304,6 +324,63 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="promis-physical-function-geplant">PROMIS Physical Function (geplant)</h4>
 
 <p>Exemplarisches Single-Domain Instrument für die Domäne körperliche Funktion. Geplant als Referenzimplementierung für PROMIS-Instrumente aus einer einzelnen Domäne mit vollständiger Score-Berechnung und Observation-Extraktion.</p>
+
+<h3 id="lizenzierung--urheberrecht">Lizenzierung &amp; Urheberrecht</h3>
+
+<p>PROMIS-Items sind urheberrechtlich geschützt. Bei der FHIR-Implementierung im MII PRO Modul greifen <strong>vier Schichten</strong> unterschiedlicher Rechte:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Schicht</th>
+      <th>Was</th>
+      <th>Wem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>FHIR-Resource</strong> (linkIds, Extensions, Score-Calculations, ObservationDefinitions)</td>
+      <td>Technisches Artefakt</td>
+      <td>© Medizininformatik-Initiative (MII) — CC-BY 4.0</td>
+    </tr>
+    <tr>
+      <td><strong>PROMIS-Items</strong> (Item-Text, Antwortoptionen, IRT-Parameter, Scoring-Algorithmen)</td>
+      <td>Inhaltliche IP</td>
+      <td>© 2008-2024 PROMIS Health Organization &amp; PROMIS Cooperative Group; PROMIS® ist eingetragene Marke</td>
+    </tr>
+    <tr>
+      <td><strong>Offizielle deutsche Übersetzungen</strong></td>
+      <td>Bereitgestellt durch</td>
+      <td><strong>PCOR-MII</strong> (Patient-Centered Outcomes Research in der Medizininformatik-Initiative); kuratiert durch das <strong>PROMIS National Center Deutschland (CPCOR, Charité, Leitung: Felix Fischer)</strong></td>
+    </tr>
+    <tr>
+      <td><strong>LOINC-Codes</strong> (Item-Codes, Antwortlisten)</td>
+      <td>Terminologie</td>
+      <td>© Regenstrief Institute, Inc. — LOINC License</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="nutzung-der-promis-instrumente">Nutzung der PROMIS-Instrumente</h4>
+
+<ul>
+  <li><strong>Innerhalb des PCOR-MII / MII Kontexts</strong>: Die Verwendung der hier publizierten Questionnaires und der deutschen Wordings ist im Projektkontext abgedeckt.</li>
+  <li>
+    <p><strong>Außerhalb des PCOR-MII / MII Kontexts (z.B. institutionelle Implementierung)</strong>: Eine <strong>Nutzungsanfrage bei CPCOR</strong> ist erforderlich. CPCOR koordiniert Lizenz, Nutzungsbedingungen und ggf. Nutzungsgebühren:</p>
+
+    <p><strong>→ <a href="https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen">https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen</a></strong></p>
+  </li>
+</ul>
+
+<h4 id="quellen-der-deutschen-übersetzungen">Quellen der deutschen Übersetzungen</h4>
+
+<p>Die in den Questionnaires hinterlegten deutschen Item-Texte und Antwortlabels stammen aus dem <strong>PCOR-MII Master Item-Level Dictionary</strong>, einem konsortialen Referenzdokument, das alle PROMIS-Items für die im PCOR-MII abgebildeten Krankheitsentitäten zusammenführt. Die Übersetzungen sind über das PROMIS Germany National Center (CPCOR) psychometrisch validiert.</p>
+
+<p>Die zentrale Definition der Lizenz- und Quellenangaben für PROMIS-Questionnaires erfolgt über das FSH-RuleSet <code class="language-plaintext highlighter-rouge">PROMIS_Copyright_DE</code> (siehe <code class="language-plaintext highlighter-rouge">input/fsh/rulesets/promis-copyright.fsh</code>) und wird im <code class="language-plaintext highlighter-rouge">Questionnaire.copyright</code>-Feld jeder PROMIS-Ressource ausgespielt.</p>
+
+<h4 id="hinweis-zum-verhältnis-mii--promis-health-organization">Hinweis zum Verhältnis MII ↔ PROMIS Health Organization</h4>
+
+<p>Das MII PRO Modul reklamiert keine Eigentumsrechte an den PROMIS-Items selbst. Die FHIR-Verpackung (Profile, Extensions, Score-Calculation-Architektur) ist MII-Eigenleistung; die inhaltliche IP der PROMIS-Items verbleibt bei der PROMIS Health Organization (Northwestern University).</p>
 
 
 
@@ -331,10 +408,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-04-29 08:53:00 +0000">
-    2026-04-29
+  <span title="2026-06-14 20:00:00 +0000">
+    2026-06-14
   </span>
 
           <br/>

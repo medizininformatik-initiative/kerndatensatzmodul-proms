@@ -1,4 +1,4 @@
-# MII PR PRO QuestionnaireResponse - MII IG PRO v2026.2.0
+# MII PR PRO QuestionnaireResponse - MII IG PRO v2026.4.0
 
 ## Ressourcenprofil: MII PR PRO QuestionnaireResponse 
 
@@ -7,10 +7,10 @@ MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Speci
 
 **Usages:**
 
-* Examples for this Profile: [QuestionnaireResponse/mii-exa-pro-bdi-bdi2](QuestionnaireResponse-mii-exa-pro-bdi-bdi2.md), [QuestionnaireResponse/mii-exa-pro-dass-dass21-response-01](QuestionnaireResponse-mii-exa-pro-dass-dass21-response-01.md), [QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response](QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.md), [QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-coded-response](QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.md)... Show 5 more, [QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response](QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.md), [QuestionnaireResponse/mii-exa-pro-phq-9-response](QuestionnaireResponse-mii-exa-pro-phq-9-response.md), [QuestionnaireResponse/mii-exa-pro-promis-29-de-response](QuestionnaireResponse-mii-exa-pro-promis-29-de-response.md), [QuestionnaireResponse/mii-exa-pro-promis-29-response](QuestionnaireResponse-mii-exa-pro-promis-29-response.md) and [QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response](QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.md)
+* Examples for this Profile: [QuestionnaireResponse/mii-exa-pro-bdi-bdi2](QuestionnaireResponse-mii-exa-pro-bdi-bdi2.md), [QuestionnaireResponse/mii-exa-pro-dass-dass21-response-01](QuestionnaireResponse-mii-exa-pro-dass-dass21-response-01.md), [QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response](QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.md), [QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-coded-response](QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.md)... Show 7 more, [QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response](QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.md), [QuestionnaireResponse/mii-exa-pro-midos2-response-01](QuestionnaireResponse-mii-exa-pro-midos2-response-01.md), [QuestionnaireResponse/mii-exa-pro-phq-9-response](QuestionnaireResponse-mii-exa-pro-phq-9-response.md), [QuestionnaireResponse/mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01](QuestionnaireResponse-mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01.md), [QuestionnaireResponse/mii-exa-pro-promis-29-de-response](QuestionnaireResponse-mii-exa-pro-promis-29-de-response.md), [QuestionnaireResponse/mii-exa-pro-promis-29-response](QuestionnaireResponse-mii-exa-pro-promis-29-response.md) and [QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response](QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.md)
 * CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/mii-pr-pro-questionnaire-response)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-questionnaire-response.json)
 
 ### Formale Ansichten des Profilinhalts
 
@@ -73,11 +73,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-questionnaire-response",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_PR_PRO_QuestionnaireResponse",
   "title" : "MII PR PRO QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

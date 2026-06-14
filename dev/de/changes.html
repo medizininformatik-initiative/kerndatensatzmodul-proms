@@ -2,10 +2,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2026.2.0</title>
+    <title>Changelog - MII IG PRO v2026.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.2.0 - ci-build
+            <span style="display:inline-block;">2026.4.0 - ci-build
 
 
 
@@ -157,6 +158,9 @@
         <a href="promis.html">PROMIS</a>
       </li>
       <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
         <a href="bdi-ii.html">BDI-II</a>
       </li>
       <li>
@@ -236,7 +240,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -258,9 +262,140 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
 
-<p><strong>Version: 2026.2.0</strong> (unreleased)</p>
+<p><strong>Version: 2026.4.0</strong></p>
 
-<p>Datum: –</p>
+<p>Datum: 2026-06-14 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.0</code>)</p>
+
+<p>Zwei thematische Erweiterungen in einem Release: <strong>PROMIS-Konsolidierung</strong> (PROMIS-16 PROPr, Wording-Migration, Copyright-Modell) und <strong>Symptom-Screening für die onkologische und palliative Versorgung</strong> (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening).</p>
+
+<h2 id="symptom-screening-midos2--pro-ctcae-onkologisches-basisscreening">Symptom-Screening (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening)</h2>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: <strong>MIDOS2</strong> (Minimal Documentation System for Patients in Palliative Care, DGP) – Palliativ-Symptom-Screening mit 13 Items (11 Symptome auf DGP-4-stufiger Severity-Skala, Wohlbefinden auf 4-stufiger Skala, Freitext)</li>
+  <li>Added: <strong>PRO-CTCAE Onkologisches Basisscreening</strong> (DKG) – Subset des NCI PRO-CTCAE mit MIDOS2-äquivalenter Symptomauswahl, 10 AEs / 23 Items, Depressivität via PRO-CTCAE-konformes Mehrfach-Mapping (#55 Discouraged + #56 Sad), Angst+Anspannung via #54 Anxiety</li>
+</ul>
+
+<p>Architektur:</p>
+<ul>
+  <li>Added: PRO-CTCAE Complete als Master-Itembank, Derivate via <code class="language-plaintext highlighter-rouge">derivedFrom</code></li>
+  <li>Added: Catalogue-Einträge <code class="language-plaintext highlighter-rouge">midos-midos2</code> und <code class="language-plaintext highlighter-rouge">proctcae-onkologisches-basisscreening</code></li>
+</ul>
+
+<p>Terminologie &amp; Mapping:</p>
+<ul>
+  <li>Added: MIDOS2 CodeSystem mit DGP-4-stufiger Severity-Skala (keine/leichte/mittlere/starke)</li>
+  <li>Added: MIDOS2 separate Wohlbefinden-Skala (sehr gut/eher gut/eher schlecht/sehr schlecht)</li>
+  <li>Added: SNOMED-Properties auf MIDOS2 Item-Codes (wo eindeutig; Verifikation via Snowstorm ausstehend)</li>
+  <li>Added: MIDOS2 ↔ PRO-CTCAE Item-Level Mapping (11 AEs, 23 Items)</li>
+  <li>Verified: PRO-CTCAE Item-Wordings gegen NCI-Originaldokument (EN/DE)</li>
+  <li>Identified: Diskrepanzen #27 Hair Loss + #59 Vaginal Discharge (int → amt) – dokumentiert</li>
+</ul>
+
+<p>IG-Dokumentation:</p>
+<ul>
+  <li>Added: <code class="language-plaintext highlighter-rouge">midos2.md</code> – Überblick, Skalen, Score-Berechnung, Mapping zu Onkologischem Basisscreening, Literatur</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">proms-onkologisches-basisscreening.md</code> – PRO-CTCAE-basierte Symptomauswahl, Skalen, Composite Grading, MIDOS-Mapping</li>
+  <li>Added: Beide Seiten als Unterseiten der PRO Library in <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> registriert</li>
+</ul>
+
+<p>Beispiele:</p>
+<ul>
+  <li>Added: <code class="language-plaintext highlighter-rouge">mii-exa-pro-midos2-response</code> – Palliativpatient mit moderater Symptomlast (Summe 19/33)</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response</code> – Onkologischer Patient unter Chemotherapie</li>
+</ul>
+
+<p>Qualitätssicherung:</p>
+<ul>
+  <li>Status: Beide Instrumente <code class="language-plaintext highlighter-rouge">draft</code> + <code class="language-plaintext highlighter-rouge">experimental</code></li>
+  <li>TODO: MIDOS2 Source-Verifikation gegen Stiel et al. 2010/2012 (Bead <code class="language-plaintext highlighter-rouge">5jd</code>)</li>
+</ul>
+
+<p>Quellen:</p>
+<ul>
+  <li>NCI PRO-CTCAE Item Library v1.0 (EN/DE)</li>
+  <li>Stiel et al. 2010/2012 (MIDOS2, Verifikation ausstehend)</li>
+</ul>
+
+<h2 id="promis-konsolidierung">PROMIS-Konsolidierung</h2>
+
+<p>PROMIS-Konsolidierung: vollständige Implementierung des PROMIS-16-Profile v2.1 (PROPr), Wording-Migration der bestehenden PROMIS-29- und Cognitive-Function-SF4a-Questionnaires auf die offizielle deutsche PROMIS-Quelle, und Einführung eines mehrschichtigen Copyright-/Lizenz-Modells für alle PROMIS-Ressourcen.</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: <strong>PROMIS-16 Profile v2.1 (PROPr)</strong> – ultrakurzes Multi-Domain-Instrument mit 16 Items über 8 Domänen (inkl. Cognitive Function); alle Items mit offiziellen deutschen Wordings aus dem PHO PDF "PROMIS-16 Profile v2.1 (PROPr), German, 20 September 2024" implementiert. Score-Berechnung (PROPr Utility + 8 Domain T-Scores) bewusst auf spätere Version verschoben (CQL Library <code class="language-plaintext highlighter-rouge">mii-lib-promis-16</code> geplant)</li>
+  <li>Fixed: <strong>PROMIS-29 Wording-Migration</strong> – 25 Item-Texte in <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29</code> und <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> an die offiziellen deutschen Wordings angepasst (vorher: AI-generierte/LOINC-Fragment-Übersetzungen). Quellen-Hierarchie: das PHO PDF "PROMIS-29 Profile v2.1 German, 06 April 2020" ist normativ; das PCOR-MII Master Item-Level Dictionary (DZPG-3-Entities) dient als sekundärer Cross-Check</li>
+  <li>Fixed: <strong>PROMIS-29 Pain Interference Verb-Tempus</strong> – 4 Items (<code class="language-plaintext highlighter-rouge">promis-painin9</code>, <code class="language-plaintext highlighter-rouge">promis-painin22</code>, <code class="language-plaintext highlighter-rouge">promis-painin31</code>, <code class="language-plaintext highlighter-rouge">promis-painin34</code>) von Präsens "beeinträchtigen" auf Präteritum "beeinträchtigten" umgestellt, konform mit PHO PDF und mit der eigenen Section-Description "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen…" (vorheriger Stand basierte auf PCOR-MII Master Wording, das hier vom PHO-Original abweicht)</li>
+  <li>Fixed: <strong>PROMIS-29 Antwortskalen</strong> – 5 Items (HI7, AN3, Sleep116, Sleep20, Sleep44) von der Frequency-Skala auf die Intensity-Skala umgestellt; LOINC-Code-Tausch LA6270-8/LA10066-1/LA10082-8/LA10044-8/LA9933-8 → LA6568-5/LA13863-8/LA13909-9/LA13902-4/LA13914-9</li>
+  <li>Fixed: <strong>PROMIS-29 SRPPER23-CaPS</strong> – falscher LOINC-Code 62041-9 ("satisfied with work") ersetzt durch 76709-5 ("trouble doing usual work") mit passendem deutschem Text (PCOR-MII Master enthält hier einen Tippfehler "erldige", unsere Version "erledigen" folgt PHO PDF)</li>
+  <li>Changed: <strong>PROMIS Cognitive Function SF 4a</strong> – Copyright-RuleSet eingefügt (Wordings waren bereits PHO-konform und bleiben unverändert)</li>
+</ul>
+
+<p>Architektur &amp; Lizenzierung:</p>
+<ul>
+  <li>Added: Zentrales RuleSet <code class="language-plaintext highlighter-rouge">PROMIS_Copyright_DE</code> (<code class="language-plaintext highlighter-rouge">input/fsh/rulesets/promis-copyright.fsh</code>) mit Schichten-Attribution für alle PROMIS-Questionnaires:
+    <ol>
+      <li>FHIR-Resource-Struktur © MII (CC-BY 4.0)</li>
+      <li>PROMIS-Items © PROMIS Health Organization (Northwestern University)</li>
+      <li>Offizielle deutsche Übersetzungen bereitgestellt durch PCOR-MII, kuratiert durch PROMIS National Center Deutschland (CPCOR Charité, Leitung Felix Fischer)</li>
+      <li>LOINC-Codes © Regenstrief Institute</li>
+    </ol>
+  </li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">publisher</code>, <code class="language-plaintext highlighter-rouge">copyright</code>, <code class="language-plaintext highlighter-rouge">useContext</code> (PROMIS + CPCOR) und <code class="language-plaintext highlighter-rouge">contact</code> (CPCOR-Nutzungsanfrage) auf allen PROMIS-Questionnaire-Instanzen</li>
+  <li>Added: Neue ValueSet <code class="language-plaintext highlighter-rouge">MII_VS_PRO_PROMIS_Intensity_Response_Scale</code> (LOINC LL1024-0: Not at all/A little bit/Somewhat/Quite a bit/Very much mit deutschen Designationen)</li>
+  <li>Clarified: <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> ist nur eine Darstellungsvariante (DE-primary für Renderer, die die <code class="language-plaintext highlighter-rouge">translation</code>-Extension nicht auswerten); inhaltlich identisch zur EN-primären Hauptversion <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29</code>, die maßgeblich ist</li>
+</ul>
+
+<p>IG-Dokumentation:</p>
+<ul>
+  <li>Added: <code class="language-plaintext highlighter-rouge">input/pagecontent/promis-16.md</code> – Übersicht, Capabilities, PROPr-Methodik (3-Stufen), Item-Überlapp mit PROMIS-29, Vergleichstabelle, Lizenzierungs-Abschnitt</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">implementation-guides/.../PROMIS/PROMIS-16.page.md</code> – Simplifier-Seite mit Vorschau/Tree/JSON/XML-Tabs</li>
+  <li>Added: PROMIS-16 in <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> Menü und Simplifier-<code class="language-plaintext highlighter-rouge">toc.yaml</code> registriert</li>
+  <li>Added: Zentrale "Lizenzierung &amp; Urheberrecht"-Sektion in <code class="language-plaintext highlighter-rouge">input/pagecontent/promis.md</code> mit 4-Schichten-Tabelle und CPCOR-Nutzungsanfrage-Link</li>
+  <li>Added: Hinweis auf der PROMIS-29-Seite (input + Simplifier), dass die DE-Variante nur zur Darstellung dient und nicht als eigenständige Implementierung gepflegt wird</li>
+</ul>
+
+<p>Tooling:</p>
+<ul>
+  <li>Added: Skill <code class="language-plaintext highlighter-rouge">.claude/skills/extract-qst-translations/</code> – jq-basierter Extraktor für Item-Texte und Translation-Extensions aus generierten Questionnaire-JSONs; inkl. automatischem Diff gegen PCOR-MII Master-Referenz. Verifikation aller PROMIS-Wording-Änderungen via <code class="language-plaintext highlighter-rouge">MATCH/DIFF</code>-Counter</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">.gitignore</code>-Schutz für die Master-Referenz-TSV und den beads-credential-key</li>
+</ul>
+
+<p>Verifikation:</p>
+<ul>
+  <li>PROMIS-29 gegen PHO PDF (normativ): alle 29 Items wortgleich nach den PAININ4-Tempus-Fixes</li>
+  <li>PROMIS-29 gegen PCOR-MII Master (sekundär): MATCH=24, DIFF=5 – 4 davon sind die bewussten PAININ-Präteritum-Fixes nach PHO, 1 ist der bekannte Master-Tippfehler "erldige" bei SRPPER23</li>
+  <li>PROMIS-16 gegen PCOR-MII Master: MATCH=15, DIFF=0</li>
+  <li>PROMIS Cognitive Function SF 4a gegen PCOR-MII Master: MATCH=4, DIFF=0</li>
+</ul>
+
+<p><strong>Version: 2026.3.0</strong></p>
+
+<p>Datum: 2026-05-08 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.3.0</code>, noch nicht zurück in dev gemerged)</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: GAD-7 (Generalized Anxiety Disorder 7-item Scale) – vollständige Implementierung mit Questionnaire, Terminologie und Scoring (#80)</li>
+</ul>
+
+<p>FHIR-Ressourcen:</p>
+<ul>
+  <li>Fixed: PROMIS-29 englische Variante repariert – 33 fehlerhafte Item-Texte korrigiert</li>
+  <li>Removed: Unvollständige PROMIS-29 Minimal-Variante entfernt</li>
+  <li>Removed: Unvollständiger ConceptMap-Stub <code class="language-plaintext highlighter-rouge">mii-cm-pro-bdi-ii-to-promis-depression-observation</code> entfernt (nur 2 von 64 PROsetta-Stone-Einträgen). Architektur-Entscheidung: Score-Konversionen werden zukünftig als CQL Library modelliert (geplant für 2027-Release)</li>
+  <li>Fixed: Capabilities-Extension in <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-cognitive-function-sf4a</code> vervollständigt (<code class="language-plaintext highlighter-rouge">domainAligned</code>=true ergänzt)</li>
+  <li>Added: Capabilities-Extension zu <code class="language-plaintext highlighter-rouge">mii-qst-pro-pro-ctcae-breast-de</code> hinzugefügt (<code class="language-plaintext highlighter-rouge">displayable</code>+<code class="language-plaintext highlighter-rouge">collectable</code>=true; <code class="language-plaintext highlighter-rouge">calculatable</code>/<code class="language-plaintext highlighter-rouge">extractable</code>/<code class="language-plaintext highlighter-rouge">domainAligned</code>=false – bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)</li>
+</ul>
+
+<p><strong>Version: 2026.2.0</strong></p>
+
+<p>Datum: 2026-03-30 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.2.0</code>, Simplifier-Package published)</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: DASS-21 (Depression Anxiety Stress Scales) – vollständige Implementierung mit Questionnaire, Terminologie (CodeSystem, ValueSets), Scoring und Beispielen</li>
+  <li>Added: DASS-21 IG-Dokumentationsseite</li>
+</ul>
 
 <p>Dependencies und Tooling:</p>
 <ul>
@@ -280,22 +415,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Fixed: Display-Texte zu EORTC QLQ-C30 ValueSet-Konzepten hinzugefügt</li>
 </ul>
 
-<p><strong>Version: 2026.1.0</strong> (unreleased)</p>
-
-<p>Datum: –</p>
-
-<p>PRO-Instrumente:</p>
-<ul>
-  <li>Added: DASS-21 (Depression Anxiety Stress Scales) – vollständige Implementierung mit Questionnaire, Terminologie (CodeSystem, ValueSets), Scoring und Beispielen</li>
-  <li>Added: DASS-21 IG-Dokumentationsseite</li>
-</ul>
-
 <p>Qualitätssicherung:</p>
 <ul>
   <li>Fixed: ObsDef-Titel entdoppelt, IG-Seite Score-Darstellung verbessert</li>
   <li>Fixed: Kaputte `` Syntax durch Markdown-Blockquotes ersetzt (DASS-21, PHQ-9 IG-Seiten)</li>
   <li>Fixed: CodeSystem/ValueSet auf kurze IDs umgestellt</li>
 </ul>
+
+<p>Hinweis: Die DASS-21- und Qualitätssicherungs-Punkte waren ursprünglich als eigenständiger v2026.1.0-Release geplant, wurden aber nie als eigenes Package veröffentlicht. Inhalt ist erstmals als Teil von v2026.2.0 released.</p>
 
 <p><strong>Version: 2026.0.1</strong></p>
 
@@ -424,10 +551,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-04-29 08:53:00 +0000">
-    2026-04-29
+  <span title="2026-06-14 20:00:00 +0000">
+    2026-06-14
   </span>
 
           <br/>

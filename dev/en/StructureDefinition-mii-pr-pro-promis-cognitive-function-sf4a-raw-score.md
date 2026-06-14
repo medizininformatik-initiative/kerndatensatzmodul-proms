@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2026.2.0
+# MII PR PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2026.4.0
 
 ## Resource Profile: MII PR PRO PROMIS Cognitive Function SF 4a Raw Score ( Experimental ) 
 
@@ -8,9 +8,9 @@ Profile for PROMIS Cognitive Function Short Form 4a raw score observations (4-20
 **Usages:**
 
 * CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.json)
 
 ### Formal Views of Profile Content
 
@@ -29,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

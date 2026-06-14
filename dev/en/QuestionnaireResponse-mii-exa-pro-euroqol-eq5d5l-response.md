@@ -1,4 +1,4 @@
-# EQ-5D-5L Questionnaire Response Example - MII IG PRO v2026.2.0
+# EQ-5D-5L Questionnaire Response Example - MII IG PRO v2026.4.0
 
 ## Example QuestionnaireResponse: EQ-5D-5L Questionnaire Response Example
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2026.2.0
+Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2026.4.0
 
 * [LinkID](https://hl7.org/fhir/R4/formats.html#table): mii-exa-pro-euroqol-eq5d5l-response
   * [Text](https://hl7.org/fhir/R4/formats.html#table): 
@@ -57,7 +57,7 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "resourceType" : "QuestionnaireResponse",
   "id" : "mii-exa-pro-euroqol-eq5d5l-response",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.2.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.4.0"]
   },
   "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable",
   "status" : "completed",

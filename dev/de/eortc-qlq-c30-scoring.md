@@ -1,4 +1,4 @@
-# EORTC QLQ-C30 Scoring - MII IG PRO v2026.2.0
+# EORTC QLQ-C30 Scoring - MII IG PRO v2026.4.0
 
 ## EORTC QLQ-C30 Scoring
 

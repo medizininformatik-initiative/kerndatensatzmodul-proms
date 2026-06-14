@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Frequency Scale - MII IG PRO v2026.2.0
+# MII VS PRO PRO-CTCAE Frequency Scale - MII IG PRO v2026.4.0
 
 ## ValueSet: MII VS PRO PRO-CTCAE Frequency Scale (Experimental) 
 
@@ -8,6 +8,7 @@
  **References** 
 
 * [PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.md)
+* [MII QST PRO PRO-CTCAE Onkologisches Basisscreening](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.md)
 
 ### Logical Definition (CLD)
 
@@ -28,12 +29,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-frequency",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_VS_PRO_PRO_CTCAE_Frequency",
   "title" : "MII VS PRO PRO-CTCAE Frequency Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

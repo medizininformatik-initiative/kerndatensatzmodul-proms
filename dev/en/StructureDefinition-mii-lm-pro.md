@@ -1,4 +1,4 @@
-# MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken - MII IG PRO v2026.2.0
+# MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken - MII IG PRO v2026.4.0
 
 ## Logical Model: MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken ( Experimental ) 
 
@@ -7,9 +7,9 @@ Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-R
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* This Logical Model is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/mii-lm-pro)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-lm-pro.json)
 
 ### Formal Views of Profile Content
 
@@ -28,12 +28,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-pro.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "mii-lm-pro",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_LM_PRO",
   "title" : "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

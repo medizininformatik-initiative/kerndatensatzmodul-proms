@@ -7,11 +7,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mii-ig-pro</b></p><a name=\"mii-ig-pro\"> </a><a name=\"hcmii-ig-pro\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de</p></div><h2>MII_IG_PRO</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro</pre><div><p>Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken</p>\n</div></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mii-ig-pro</b></p><a name=\"en-mii-ig-pro\"> </a><a name=\"en-hcmii-ig-pro\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de</p></div><h2>MII_IG_PRO</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro</pre><div><p>Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken</p>\n</div></div></div>"
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -1402,6 +1402,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/mii-cs-pro-midos2"
+      },
+      "name" : "MII CS PRO MIDOS2 Items and Response Scales",
+      "description" : "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/mii-cs-pro-pro-ctcae"
       },
       "name" : "MII CS PRO PRO-CTCAE Item Library",
@@ -1483,6 +1495,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-midos2-response-01"
+      },
+      "name" : "MII EXA PRO MIDOS2 Response",
+      "description" : "MIDOS2 QuestionnaireResponse Beispiel — Palliativpatient mit moderater Symptomlast (Summe 19/33, Wohlbefinden eher schlecht)",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1491,6 +1515,18 @@
       "name" : "MII EXA PRO Patient",
       "description" : "Example patient for PRO demonstrations",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01"
+      },
+      "name" : "MII EXA PRO PRO-CTCAE Onkologisches Basisscreening Response",
+      "description" : "PRO-CTCAE Onkologisches Basisscreening Beispiel — Onkologischer Patient unter Chemotherapie mit moderater Symptomlast",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
     },
     {
       "extension" : [{
@@ -2194,10 +2230,34 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-midos-midos2"
+      },
+      "name" : "MII QST PRO MIDOS2",
+      "description" : "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-Screening für die Palliativmedizin nach DGP. 11 Symptom-Items mit 4-stufiger DGP-Skala, ein Wohlbefinden-Item, ein offenes Item für sonstige Beschwerden.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
         "reference" : "Questionnaire/mii-qst-pro-phq-9"
       },
       "name" : "MII QST PRO PHQ-9",
       "description" : "Patient Health Questionnaire (PHQ-9)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening"
+      },
+      "name" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
+      "description" : "Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigsten Symptome onkologischer Patienten mit den 5-stufigen PRO-CTCAE-Skalen (Häufigkeit, Schweregrad, Beeinträchtigung). Symptomauswahl konzeptuell parallel zu MIDOS2 für eine gemeinsame Problem List zwischen Onkologie und Palliativmedizin.",
       "exampleBoolean" : false
     },
     {
@@ -2222,6 +2282,18 @@
       },
       "name" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
       "description" : "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-promis-16"
+      },
+      "name" : "MII QST PRO PROMIS-16 (Adults)",
+      "description" : "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).",
       "exampleBoolean" : false
     },
     {
@@ -2330,6 +2402,30 @@
       },
       "name" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
       "description" : "4-point response scale for EORTC QLQ-C30 role functioning items",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-pro-midos2-severity"
+      },
+      "name" : "MII VS PRO MIDOS2 DGP-Severity-Skala",
+      "description" : "DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für die 11 Symptom-Items des MIDOS2 verwendet.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-pro-midos2-wellbeing"
+      },
+      "name" : "MII VS PRO MIDOS2 Wohlbefinden-Skala",
+      "description" : "4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet.",
       "exampleBoolean" : false
     },
     {
@@ -2474,6 +2570,18 @@
       },
       "name" : "MII VS PRO PROMIS Frequency Response Scale",
       "description" : "PROMIS Frequency response scale based on LOINC LL1016-6",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-pro-promis-intensity-response-scale"
+      },
+      "name" : "MII VS PRO PROMIS Intensity Response Scale",
+      "description" : "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0",
       "exampleBoolean" : false
     },
     {
@@ -2851,6 +2959,15 @@
           {
             "extension" : [{
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "promis-16.html"
+            }],
+            "nameUrl" : "promis-16.html",
+            "title" : "PROMIS-16",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
               "valueUrl" : "promis-depression.html"
             }],
             "nameUrl" : "promis-depression.html",
@@ -2874,6 +2991,24 @@
           }],
           "nameUrl" : "dass-21.html",
           "title" : "DASS-21",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "midos2.html"
+          }],
+          "nameUrl" : "midos2.html",
+          "title" : "MIDOS2 (Palliativmedizin)",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "proms-onkologisches-basisscreening.html"
+          }],
+          "nameUrl" : "proms-onkologisches-basisscreening.html",
+          "title" : "Onkologisches Basisscreening (PRO-CTCAE)",
           "generation" : "markdown"
         },
         {

@@ -4,10 +4,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.2.0</title>
+    <title>MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -48,8 +49,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.76"}
-    h3,h4,h5,h6{--heading-prefix:"13.76"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.83"}
+    h3,h4,h5,h6{--heading-prefix:"13.83"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.2.0 - ci-build
+            <span style="display:inline-block;">2026.4.0 - ci-build
 
 
 
@@ -159,6 +160,9 @@
         <a href="promis.html">PROMIS</a>
       </li>
       <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
         <a href="bdi-ii.html">BDI-II</a>
       </li>
       <li>
@@ -232,7 +236,7 @@
 
 <!-- layouts\layout-codesystem -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -282,7 +286,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2026.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue|2026.2.0"/></span>
+      <span class="copy-text">2026.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue|2026.4.0"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -307,7 +311,7 @@
           
 
             as of 
-2026-04-29
+2026-06-14
 
           
         
@@ -349,6 +353,8 @@
 <td>Beck Depression Inventory II (BDI-II)</td></tr>
 <tr><td style="white-space:nowrap">promis-promis29<a name="mii-cs-pro-questionnaire-catalogue-promis-promis29"> </a></td>
 <td>PROMIS-29 Questionnaire</td></tr>
+<tr><td style="white-space:nowrap">promis-promis16<a name="mii-cs-pro-questionnaire-catalogue-promis-promis16"> </a></td>
+<td>PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)</td></tr>
 <tr><td style="white-space:nowrap">promis-depression-sf4a<a name="mii-cs-pro-questionnaire-catalogue-promis-depression-sf4a"> </a></td>
 <td>PROMIS Depression 4a Short Form Questionnaire</td></tr>
 <tr><td style="white-space:nowrap">promis-cognitive-function-sf4a<a name="mii-cs-pro-questionnaire-catalogue-promis-cognitive-function-sf4a"> </a></td>
@@ -368,7 +374,11 @@
 <tr><td style="white-space:nowrap">proctcae<a name="mii-cs-pro-questionnaire-catalogue-proctcae"> </a></td>
 <td>PRO-CTCAE (Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events)</td></tr>
 <tr><td style="white-space:nowrap">proctcae-breast-de<a name="mii-cs-pro-questionnaire-catalogue-proctcae-breast-de"> </a></td>
-<td>PRO-CTCAE German Breast Cancer Subset (21 Symptoms)</td></tr></table></div>
+<td>PRO-CTCAE German Breast Cancer Subset (21 Symptoms)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-onkologisches-basisscreening<a name="mii-cs-pro-questionnaire-catalogue-proctcae-onkologisches-basisscreening"> </a></td>
+<td>PRO-CTCAE Onkologisches Basisscreening (DKG, MIDOS2-äquivalente Symptome)</td></tr>
+<tr><td style="white-space:nowrap">midos-midos2<a name="mii-cs-pro-questionnaire-catalogue-midos-midos2"> </a></td>
+<td>MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, DGP)</td></tr></table></div>
 
   <hr/>
   <p>
@@ -406,10 +416,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-29 08:53:00 +0000">
-    2026-04-29
+  <span title="2026-06-14 20:00:00 +0000">
+    2026-06-14
   </span>
 
           <br/>

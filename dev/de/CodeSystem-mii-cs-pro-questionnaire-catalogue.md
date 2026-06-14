@@ -1,4 +1,4 @@
-# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.2.0
+# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.4.0
 
 ## CodeSystem: MII CS PRO Questionnaire Catalogue 
 
@@ -22,11 +22,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-questionnaire-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     }]
   }],
   "content" : "complete",
-  "count" : 14,
+  "count" : 17,
   "concept" : [{
     "code" : "euroqol-eq5d5l",
     "display" : "EuroQol EQ-5D-5L Questionnaire"
@@ -63,6 +63,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "code" : "promis-promis29",
     "display" : "PROMIS-29 Questionnaire"
+  },
+  {
+    "code" : "promis-promis16",
+    "display" : "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)"
   },
   {
     "code" : "promis-depression-sf4a",
@@ -103,6 +107,14 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "code" : "proctcae-breast-de",
     "display" : "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"
+  },
+  {
+    "code" : "proctcae-onkologisches-basisscreening",
+    "display" : "PRO-CTCAE Onkologisches Basisscreening (DKG, MIDOS2-äquivalente Symptome)"
+  },
+  {
+    "code" : "midos-midos2",
+    "display" : "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, DGP)"
   }]
 }
 

@@ -1,4 +1,4 @@
-# ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation - MII IG PRO v2026.2.0
+# ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation - MII IG PRO v2026.4.0
 
 ## ConceptMap: ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation 
 
@@ -11,10 +11,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mii-cm-pro-bdi-ii-to-promis-depression-observation",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "title" : "ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation",
   "status" : "active",
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

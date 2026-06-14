@@ -1,4 +1,4 @@
-# MII PR PRO Score Instance - MII IG PRO v2026.2.0
+# MII PR PRO Score Instance - MII IG PRO v2026.4.0
 
 ## Resource Profile: MII PR PRO Score Instance 
 
@@ -11,7 +11,7 @@ MII PR PRO Score Instance
 * Examples for this Profile: [Observation/mii-exa-pro-bdi-ii-observation](Observation-mii-exa-pro-bdi-ii-observation.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv](Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-raw](Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.md), [Observation/mii-exa-pro-dass-dass21-score-depression-equiv](Observation-mii-exa-pro-dass-dass21-score-depression-equiv.md)... Show 20 more, [Observation/mii-exa-pro-dass-dass21-score-depression-raw](Observation-mii-exa-pro-dass-dass21-score-depression-raw.md), [Observation/mii-exa-pro-dass-dass21-score-stress-equiv](Observation-mii-exa-pro-dass-dass21-score-stress-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-stress-raw](Observation-mii-exa-pro-dass-dass21-score-stress-raw.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ap](Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-cf](Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-co](Observation-mii-exa-pro-eortc-qlq-c30-observation-co.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-di](Observation-mii-exa-pro-eortc-qlq-c30-observation-di.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-dy](Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ef](Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fa](Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fi](Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-nv](Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pa](Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pf](Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ql](Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-rf](Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sf](Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sl](Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.md), [Observation/mii-exa-pro-phq-9-observation](Observation-mii-exa-pro-phq-9-observation.md) and [Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation](Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.md)
 * CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/mii-pr-pro-score-instance)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-score-instance.json)
 
 ### Formal Views of Profile Content
 
@@ -30,11 +30,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-score-
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-score-instance",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_PR_PRO_Score_Instance",
   "title" : "MII PR PRO Score Instance",
   "status" : "active",
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

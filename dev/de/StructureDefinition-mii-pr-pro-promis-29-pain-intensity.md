@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Pain Intensity - MII IG PRO v2026.2.0
+# MII PR PRO PROMIS-29 Pain Intensity - MII IG PRO v2026.4.0
 
 ## Ressourcenprofil: MII PR PRO PROMIS-29 Pain Intensity ( Experimentell ) 
 
@@ -8,9 +8,9 @@ Profile for PROMIS-29 Pain Intensity single item Observations
 **Usages:**
 
 * CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/mii-pr-pro-promis-29-pain-intensity)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-promis-29-pain-intensity.json)
 
 ### Formale Ansichten des Profilinhalts
 
@@ -77,12 +77,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-pain-intensity",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_PR_PRO_PROMIS_29_Pain_Intensity",
   "title" : "MII PR PRO PROMIS-29 Pain Intensity",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

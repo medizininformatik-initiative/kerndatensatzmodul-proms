@@ -2,10 +2,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PROMIS-29 - MII IG PRO v2026.2.0</title>
+    <title>PROMIS-29 - MII IG PRO v2026.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.2.0 - ci-build
+            <span style="display:inline-block;">2026.4.0 - ci-build
 
 
 
@@ -157,6 +158,9 @@
         <a href="promis.html">PROMIS</a>
       </li>
       <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
         <a href="bdi-ii.html">BDI-II</a>
       </li>
       <li>
@@ -236,7 +240,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>PROMIS-29</h2>
   
 
@@ -261,6 +265,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#sprachunterstützung" id="markdown-toc-sprachunterstützung">Sprachunterstützung</a></li>
   <li><a href="#implementierungshinweise" id="markdown-toc-implementierungshinweise">Implementierungshinweise</a></li>
   <li><a href="#beispiel-questionnaireresponse" id="markdown-toc-beispiel-questionnaireresponse">Beispiel QuestionnaireResponse</a></li>
+  <li><a href="#lizenzierung--urheberrecht" id="markdown-toc-lizenzierung--urheberrecht">Lizenzierung &amp; Urheberrecht</a></li>
   <li><a href="#referenzen" id="markdown-toc-referenzen">Referenzen</a></li>
 </ul>
 
@@ -374,7 +379,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="sprachunterstützung">Sprachunterstützung</h3>
 
 <p><strong>Primärsprache</strong>: Englisch (validierte Version)
-<strong>Deutsche Übersetzung</strong>: Via Extension</p>
+<strong>Deutsche Übersetzung</strong>: Via <code class="language-plaintext highlighter-rouge">translation</code>-Extension</p>
+
+<blockquote>
+  <p><strong>Hinweis zur DE-Variante</strong> (<code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code>): Diese existiert ausschließlich zur Darstellung in deutschsprachigen Renderern, die die <code class="language-plaintext highlighter-rouge">translation</code>-Extension nicht auswerten. <strong>Sie wird nicht als eigene Implementierung gepflegt</strong> – ihr Inhalt ist mit der EN-primären Hauptversion identisch. Bei Datenerfassung und -austausch ist die Hauptversion (<code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29</code>) maßgeblich.</p>
+</blockquote>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In the past 7 days... I could do chores"</span><span class="p">,</span><span class="w">
@@ -435,11 +444,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
+<h3 id="lizenzierung--urheberrecht">Lizenzierung &amp; Urheberrecht</h3>
+
+<p>PROMIS-Items sind urheberrechtlich geschützt. Die offiziellen deutschen Übersetzungen werden durch <strong>PCOR-MII</strong> bereitgestellt und durch das <strong>PROMIS National Center Deutschland (CPCOR Charité, Leitung: Felix Fischer)</strong> kuratiert.</p>
+
+<p><strong>Für die institutionelle Implementierung außerhalb des PCOR-MII-Kontexts ist eine Nutzungsanfrage bei CPCOR erforderlich</strong>:
+<a href="https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen">https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen</a></p>
+
+<p>Details zur Schichten-Attribution (MII FHIR-Struktur + PROMIS Items + deutsche Übersetzung + LOINC) siehe <a href="promis.html#lizenzierung-urheberrecht">PROMIS — Lizenzierung &amp; Urheberrecht</a>.</p>
+
 <h3 id="referenzen">Referenzen</h3>
 
 <ul>
   <li><a href="https://www.healthmeasures.net/explore-measurement-systems/promis">PROMIS Official Site</a></li>
   <li><a href="https://doi.org/10.1371/journal.pone.0197139">German PROMIS Validation</a></li>
+  <li><a href="https://cpcor.charite.de/promis_national_center_deutschland">PROMIS National Center Deutschland (CPCOR)</a></li>
   <li>LOINC Panel: <a href="https://loinc.org/62199-5/">62199-5</a></li>
 </ul>
 
@@ -469,10 +488,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-04-29 08:53:00 +0000">
-    2026-04-29
+  <span title="2026-06-14 20:00:00 +0000">
+    2026-06-14
   </span>
 
           <br/>

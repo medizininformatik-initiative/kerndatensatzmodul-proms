@@ -1,4 +1,4 @@
-# MII CS PRO Score Catalogue - MII IG PRO v2026.2.0
+# MII CS PRO Score Catalogue - MII IG PRO v2026.4.0
 
 ## CodeSystem: MII CS PRO Score Catalogue 
 
@@ -22,11 +22,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-score-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-  "version" : "2026.2.0",
+  "version" : "2026.4.0",
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-04-29T08:53:17+00:00",
+  "date" : "2026-06-14T20:00:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
