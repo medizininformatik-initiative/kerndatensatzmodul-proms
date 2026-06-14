@@ -47,9 +47,10 @@ PROMIS-Konsolidierung: vollständige Implementierung des PROMIS-16-Profile v2.1 
 
 PRO-Instrumente:
 - Added: **PROMIS-16 Profile v2.1 (PROPr)** -- ultrakurzes Multi-Domain-Instrument mit 16 Items über 8 Domänen (inkl. Cognitive Function); alle Items mit offiziellen deutschen Wordings aus dem PHO PDF "PROMIS-16 Profile v2.1 (PROPr), German, 20 September 2024" implementiert. Score-Berechnung (PROPr Utility + 8 Domain T-Scores) bewusst auf spätere Version verschoben (CQL Library `mii-lib-promis-16` geplant)
-- Fixed: **PROMIS-29 Wording-Migration** -- 25 Item-Texte in `mii-qst-pro-promis-29` und `mii-qst-pro-promis-29-de` an die validierten Wordings des PCOR-MII Master Item-Level Dictionary angepasst (vorher: AI-generierte/LOINC-Fragment-Übersetzungen)
+- Fixed: **PROMIS-29 Wording-Migration** -- 25 Item-Texte in `mii-qst-pro-promis-29` und `mii-qst-pro-promis-29-de` an die offiziellen deutschen Wordings angepasst (vorher: AI-generierte/LOINC-Fragment-Übersetzungen). Quellen-Hierarchie: das PHO PDF "PROMIS-29 Profile v2.1 German, 06 April 2020" ist normativ; das PCOR-MII Master Item-Level Dictionary (DZPG-3-Entities) dient als sekundärer Cross-Check
+- Fixed: **PROMIS-29 Pain Interference Verb-Tempus** -- 4 Items (`promis-painin9`, `promis-painin22`, `promis-painin31`, `promis-painin34`) von Präsens "beeinträchtigen" auf Präteritum "beeinträchtigten" umgestellt, konform mit PHO PDF und mit der eigenen Section-Description "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..." (vorheriger Stand basierte auf PCOR-MII Master Wording, das hier vom PHO-Original abweicht)
 - Fixed: **PROMIS-29 Antwortskalen** -- 5 Items (HI7, AN3, Sleep116, Sleep20, Sleep44) von der Frequency-Skala auf die Intensity-Skala umgestellt; LOINC-Code-Tausch LA6270-8/LA10066-1/LA10082-8/LA10044-8/LA9933-8 → LA6568-5/LA13863-8/LA13909-9/LA13902-4/LA13914-9
-- Fixed: **PROMIS-29 SRPPER23-CaPS** -- falscher LOINC-Code 62041-9 ("satisfied with work") ersetzt durch 76709-5 ("trouble doing usual work") mit passendem deutschem Text
+- Fixed: **PROMIS-29 SRPPER23-CaPS** -- falscher LOINC-Code 62041-9 ("satisfied with work") ersetzt durch 76709-5 ("trouble doing usual work") mit passendem deutschem Text (PCOR-MII Master enthält hier einen Tippfehler "erldige", unsere Version "erledigen" folgt PHO PDF)
 - Changed: **PROMIS Cognitive Function SF 4a** -- Copyright-RuleSet eingefügt (Wordings waren bereits PHO-konform und bleiben unverändert)
 
 Architektur & Lizenzierung:
@@ -74,9 +75,10 @@ Tooling:
 - Added: `.gitignore`-Schutz für die Master-Referenz-TSV und den beads-credential-key
 
 Verifikation:
-- PROMIS-29: vorher MATCH=4, DIFF=25 → nachher MATCH=28, DIFF=1 (verbleibender DIFF ist ein Tippfehler im Master, "erldige" statt "erledigen", unsere Version ist korrekt)
-- PROMIS-16: MATCH=15, DIFF=0
-- PROMIS Cognitive Function SF 4a: MATCH=4, DIFF=0
+- PROMIS-29 gegen PHO PDF (normativ): alle 29 Items wortgleich nach den PAININ4-Tempus-Fixes
+- PROMIS-29 gegen PCOR-MII Master (sekundär): MATCH=24, DIFF=5 -- 4 davon sind die bewussten PAININ-Präteritum-Fixes nach PHO, 1 ist der bekannte Master-Tippfehler "erldige" bei SRPPER23
+- PROMIS-16 gegen PCOR-MII Master: MATCH=15, DIFF=0
+- PROMIS Cognitive Function SF 4a gegen PCOR-MII Master: MATCH=4, DIFF=0
 
 **Version: 2026.3.0**
 

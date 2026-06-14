@@ -1303,7 +1303,7 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-painin9"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61758-9 "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
-* item[=].item[=].text = "Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?"
+* item[=].item[=].text = "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Überhaupt nicht"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1349,7 +1349,7 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-painin22"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61769-6 "How much did pain interfere with work around the home in past 7 days [PROMIS]"
-* item[=].item[=].text = "Wie sehr beeinträchtigen Schmerzen Ihre häuslichen Tätigkeiten?"
+* item[=].item[=].text = "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Überhaupt nicht"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1395,7 +1395,7 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-painin31"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61773-8 "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
-* item[=].item[=].text = "Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+* item[=].item[=].text = "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Überhaupt nicht"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -1441,7 +1441,7 @@ Usage: #definition
 * item[=].item[+].linkId = "promis-painin34"
 * item[=].item[=].type = #choice
 * item[=].item[=].code = $LNC#61775-3 "How much did pain interfere with your household chores in past 7 days [PROMIS]"
-* item[=].item[=].text = "Wie sehr beeinträchtigen Schmerzen Sie bei Ihrer Hausarbeit?"
+* item[=].item[=].text = "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?"
 * item[=].item[=].answerOption[+].valueCoding = $LNC#LA6568-5 "Überhaupt nicht"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
