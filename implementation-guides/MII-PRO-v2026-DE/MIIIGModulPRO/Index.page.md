@@ -8,7 +8,7 @@ Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken be
 | Veröffentlichung   |   |
 |---------|---|
 | Datum   | 30.03.2026 |
-| Version | 2026.2.0        |
+| Version | 2026.4.0        |
 | Status  | active       |
 | Realm   | DE          |
 
