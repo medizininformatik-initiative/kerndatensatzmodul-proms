@@ -79,7 +79,7 @@ Depression Anxiety Stress Scales - 21 Items (DASS-21)
   "title" : "MII QST PRO DASS-21",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T19:29:08+00:00",
+  "date" : "2026-06-14T19:52:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

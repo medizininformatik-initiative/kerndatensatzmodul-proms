@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-observ
   "title" : "MII PR PRO Observation BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T19:29:08+00:00",
+  "date" : "2026-06-14T19:52:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
