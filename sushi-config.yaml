@@ -9,7 +9,7 @@ name: MII_IG_PRO
 title: "MII IG PRO"
 description: "Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken"
 status: active # draft | active | retired | unknown
-version: 2026.2.0
+version: 2026.4.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 packageId: de.medizininformatikinitiative.kerndatensatz.pros
 copyrightYear: 2025+
@@ -132,12 +132,18 @@ pages:
       title: PROMIS
       promis-29.md:
         title: PROMIS-29
+      promis-16.md:
+        title: PROMIS-16
       promis-depression.md:
         title: PROMIS Depression SF4a
     bdi-ii.md:
       title: BDI-II
     dass-21.md:
       title: DASS-21
+    midos2.md:
+      title: MIDOS2 (Palliativmedizin)
+    proms-onkologisches-basisscreening.md:
+      title: Onkologisches Basisscreening (PRO-CTCAE)
     minimal-reference-questionnaires.md:
       title: Minimal Reference Questionnaires
   domain-based-scoring.md:
@@ -177,6 +183,7 @@ menu:
     EQ-5D-5L: eq-5d-5l.html
     EORTC QLQ-C30: eortc-qlq-c30.html
     PROMIS: promis.html
+    PROMIS-16: promis-16.html
     BDI-II: bdi-ii.html
     DASS-21: dass-21.html
   Domain-Based Scoring:

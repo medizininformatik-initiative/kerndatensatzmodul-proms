@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_PRO_MIDOS2_Severity",
+  "id": "mii-vs-pro-midos2-severity",
+  "title": "MII VS PRO MIDOS2 DGP-Severity-Skala",
+  "description": "DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für die 11 Symptom-Items des MIDOS2 verwendet.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity",
+  "version": "2026.4.0",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+        "concept": [
+          {
+            "code": "midos2-severity-0"
+          },
+          {
+            "code": "midos2-severity-1"
+          },
+          {
+            "code": "midos2-severity-2"
+          },
+          {
+            "code": "midos2-severity-3"
+          }
+        ]
+      }
+    ]
+  }
+}

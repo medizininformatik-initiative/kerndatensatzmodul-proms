@@ -12,9 +12,11 @@ topic: PROMIS-29
 Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen plus Schmerzintensität.
 
 **Ressourcen in Simplifier:**
-- [PROMIS-29 Full Questionnaire (English)](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29)
-- [PROMIS-29 German Variant](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-de)
+- [PROMIS-29 Full Questionnaire (English-Primary, mit DE Translation-Extensions)](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29) -- **maßgebliche Implementierung**
+- [PROMIS-29 German Variant](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-de) -- nur zur Darstellung (Inhalt identisch zur Hauptversion, DE-Primary für deutschsprachige Renderer)
 - [PROMIS-29 Minimal Questionnaire](https://simplifier.net/MII-Erweiterungsmodul-PRO-2025/mii-qst-pro-promis-29-minimal)
+
+> **Hinweis zur DE-Variante:** Die `mii-qst-pro-promis-29-de`-Variante existiert ausschließlich zur Darstellung in deutschsprachigen Renderern, die die `translation`-Extension nicht auswerten. **Sie wird nicht als eigene Implementierung gepflegt** -- ihr Inhalt ist mit der EN-primären Hauptversion identisch. Bei Datenerfassung und -austausch sollte die Hauptversion (`mii-qst-pro-promis-29`) verwendet werden.
 
 <tabs>
   <tab title="Vorschau (Deutsch)">

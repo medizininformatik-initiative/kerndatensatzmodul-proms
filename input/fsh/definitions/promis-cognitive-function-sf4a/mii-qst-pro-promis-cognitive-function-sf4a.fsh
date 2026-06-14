@@ -5,6 +5,7 @@ Description: "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive 
 Usage: #definition
 * insert Version
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
+* insert PROMIS_Copyright_DE
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a"
 * status = #active
