@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ID Systematics - MII IG PRO v2026.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.3"}
+    h3,h4,h5,h6{--heading-prefix:"5.3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.2.0 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/id-systematics.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='technical-implementation.html'><b>Technical Implementation</b></a></li><li><b>ID Systematics</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>ID Systematics</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#anwendungsbereiche-für-identifier" id="markdown-toc-anwendungsbereiche-für-identifier">Anwendungsbereiche für Identifier</a></li>
+  <li><a href="#fhir-ressourcen--und-dateinamenkonventionen" id="markdown-toc-fhir-ressourcen--und-dateinamenkonventionen">FHIR Ressourcen- und Dateinamenkonventionen</a>    <ul>
+      <li><a href="#grundstruktur" id="markdown-toc-grundstruktur">Grundstruktur</a></li>
+      <li><a href="#ressourcentyp-abkürzungen" id="markdown-toc-ressourcentyp-abkürzungen">Ressourcentyp-Abkürzungen</a></li>
+    </ul>
+  </li>
+  <li><a href="#namespace-systematik-für-fragebögen" id="markdown-toc-namespace-systematik-für-fragebögen">Namespace-Systematik für Fragebögen</a>    <ul>
+      <li><a href="#grundprinzipien" id="markdown-toc-grundprinzipien">Grundprinzipien</a></li>
+      <li><a href="#namespace-struktur-für-questionnaires" id="markdown-toc-namespace-struktur-für-questionnaires">Namespace-Struktur für Questionnaires</a></li>
+      <li><a href="#etablierte-namespaces-aktueller-stand" id="markdown-toc-etablierte-namespaces-aktueller-stand">Etablierte Namespaces (Aktueller Stand)</a></li>
+    </ul>
+  </li>
+  <li><a href="#linkid-konventionen-für-questionnaire-items" id="markdown-toc-linkid-konventionen-für-questionnaire-items">LinkId-Konventionen für Questionnaire-Items</a>    <ul>
+      <li><a href="#grundstruktur-für-linkids" id="markdown-toc-grundstruktur-für-linkids">Grundstruktur für linkIds</a></li>
+      <li><a href="#aktuell-implementierte-patterns" id="markdown-toc-aktuell-implementierte-patterns">Aktuell implementierte Patterns</a></li>
+      <li><a href="#score-item-konventionen" id="markdown-toc-score-item-konventionen">Score-Item Konventionen</a></li>
+      <li><a href="#spezielle-item-typen" id="markdown-toc-spezielle-item-typen">Spezielle Item-Typen</a></li>
+      <li><a href="#entscheidungsmatrix-für-linkid-patterns" id="markdown-toc-entscheidungsmatrix-für-linkid-patterns">Entscheidungsmatrix für linkId-Patterns</a></li>
+      <li><a href="#konsistenzregeln" id="markdown-toc-konsistenzregeln">Konsistenzregeln</a></li>
+      <li><a href="#umgang-mit-internationalen-standards" id="markdown-toc-umgang-mit-internationalen-standards">Umgang mit internationalen Standards</a></li>
+      <li><a href="#herausforderungen-und-lösungsansätze" id="markdown-toc-herausforderungen-und-lösungsansätze">Herausforderungen und Lösungsansätze</a></li>
+      <li><a href="#best-practices-für-neue-instrumente" id="markdown-toc-best-practices-für-neue-instrumente">Best Practices für neue Instrumente</a></li>
+    </ul>
+  </li>
+  <li><a href="#terminologie-strategien-für-antwortoptionen" id="markdown-toc-terminologie-strategien-für-antwortoptionen">Terminologie-Strategien für Antwortoptionen</a>    <ul>
+      <li><a href="#strategische-entscheidung-answeroption-vs-answervalueset" id="markdown-toc-strategische-entscheidung-answeroption-vs-answervalueset">Strategische Entscheidung: answerOption vs answerValueSet</a></li>
+      <li><a href="#entscheidungsmatrix" id="markdown-toc-entscheidungsmatrix">Entscheidungsmatrix</a></li>
+      <li><a href="#implementierungsbeispiele" id="markdown-toc-implementierungsbeispiele">Implementierungsbeispiele</a></li>
+      <li><a href="#entscheidungshilfe" id="markdown-toc-entscheidungshilfe">Entscheidungshilfe</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<p>Eine konsistente Systematik der Identifier ist essentiell für die standardisierte Darstellung von PRO-Daten im MII-Kontext.</p>
+
+<p><strong>Wichtige Abgrenzung</strong>: Identifier sind explizit als MII-interne Business Identifier zu verstehen und nicht zu verwechseln mit semantischen Codes (LOINC, SNOMED CT) von Fragebögen und Fragebogen-Items, die der terminologischen Annotation in offenen Standards dienen.</p>
+
+<h2 id="anwendungsbereiche-für-identifier">Anwendungsbereiche für Identifier</h2>
+
+<p>Identifier werden in folgenden Kontexten benötigt:</p>
+
+<ol>
+  <li><strong>Fragebogen-Identifikation</strong>: Eindeutige Kennzeichnung einzelner Fragebögen (z.B. PHQ-9, EQ-5D-5L)</li>
+  <li><strong>Fragengruppen-Identifikation</strong>: Kennzeichnung von Item-Blöcken/Domänen (z.B. PROMIS-29 Physical Function 4a)</li>
+  <li><strong>Item-Identifikation</strong>: Eindeutige Kennzeichnung einzelner Fragen (z.B. EQ-5D-5L Mobility)</li>
+  <li><strong>Antwortoptionen-Identifikation</strong>: Kennzeichnung spezifischer Auswahlmöglichkeiten (z.B. "0: Keine Schmerzen")</li>
+  <li><strong>Score-Identifikation</strong>: Eindeutige Kennzeichnung von Score-Definitionen (z.B. EQ-5D-VAS-Score)</li>
+  <li><strong>Domänen-Identifikation</strong>: Kennzeichnung gesundheitsbezogener Domänen (z.B. Depression, Angst)</li>
+</ol>
+
+<h2 id="fhir-ressourcen--und-dateinamenkonventionen">FHIR Ressourcen- und Dateinamenkonventionen</h2>
+
+<p>Das MII PRO-Modul folgt dem etablierten MII-Benennungsschema:</p>
+
+<h3 id="grundstruktur">Grundstruktur</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mii-[typ]-[modul]-[spezifikation]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>[typ]</strong>: FHIR-Ressourcentyp (siehe Tabelle unten)</li>
+  <li><strong>[modul]</strong>: <code class="language-plaintext highlighter-rouge">pro</code> (Patient-Reported Outcomes)</li>
+  <li><strong>[spezifikation]</strong>: Detaillierte Beschreibung des Artefakts</li>
+</ul>
+
+<h3 id="ressourcentyp-abkürzungen">Ressourcentyp-Abkürzungen</h3>
+
+<h4 id="allgemeine-mii-konventionen">Allgemeine MII-Konventionen</h4>
+<p>Diese Abkürzungen werden MII-weit in allen Modulen verwendet:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Bedeutung</th>
+      <th>FHIR-Ressource</th>
+      <th>Beispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pr</code></td>
+      <td>Profile</td>
+      <td>StructureDefinition (Profile)</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-pr-pro-questionnaire</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs</code></td>
+      <td>CodeSystem</td>
+      <td>CodeSystem</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-cs-pro-questionnaire-catalogue</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs</code></td>
+      <td>ValueSet</td>
+      <td>ValueSet</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-vs-pro-phq-9-answer-list</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cm</code></td>
+      <td>ConceptMap</td>
+      <td>ConceptMap</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-cm-pro-phq9-to-promis-depression</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex</code></td>
+      <td>Extension</td>
+      <td>StructureDefinition (Extension)</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-ex-pro-questionnaire-capabilities</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">exa</code></td>
+      <td>Example</td>
+      <td>Beliebige Ressource</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-exa-pro-phq-9-response</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lm</code></td>
+      <td>LogicalModel</td>
+      <td>StructureDefinition (LogicalModel)</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-lm-pro</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="pro-modul-spezifische-ergänzungen">PRO-Modul spezifische Ergänzungen</h4>
+<p>Diese Abkürzungen sind spezifisch für das PRO-Modul entwickelt worden:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Bedeutung</th>
+      <th>FHIR-Ressource</th>
+      <th>Beispiel</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">qst</code></td>
+      <td>Questionnaire</td>
+      <td>Questionnaire</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-qst-pro-phq-9</code></td>
+      <td>Implementiert</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">obsdef</code></td>
+      <td>ObservationDefinition</td>
+      <td>ObservationDefinition</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-obsdef-pro-eq5d5l-index-score</code></td>
+      <td>Implementiert</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lib</code></td>
+      <td>Library</td>
+      <td>Library (CQL)</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-lib-pro-eq5d-calculations</code></td>
+      <td>Geplant (2026+)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Hinweis zu QuestionnaireResponse</strong>: Es wurde diskutiert, die Abkürzung <code class="language-plaintext highlighter-rouge">qr</code> für QuestionnaireResponse einzuführen. Nach eingehender Prüfung wurde jedoch entschieden, dass QuestionnaireResponses entweder als:</p>
+<ul>
+  <li><strong>Definitionale Profile</strong> unter <code class="language-plaintext highlighter-rouge">pr</code> (z.B. <code class="language-plaintext highlighter-rouge">mii-pr-pro-questionnaire-response</code>) oder</li>
+  <li><strong>Konkrete Beispiele</strong> unter <code class="language-plaintext highlighter-rouge">exa</code> (z.B. <code class="language-plaintext highlighter-rouge">mii-exa-pro-phq-9-response</code>)</li>
+</ul>
+
+<p>eingeordnet werden sollten, je nach ihrem Verwendungszweck.</p>
+
+<p><strong>Wichtig</strong>: Dateinamen und Ressourcen-IDs sind identisch und verwenden durchgehend Kleinschreibung mit Bindestrichen.</p>
+
+<h2 id="namespace-systematik-für-fragebögen">Namespace-Systematik für Fragebögen</h2>
+
+<h3 id="grundprinzipien">Grundprinzipien</h3>
+<ul>
+  <li><strong>Menschenlesbarkeit</strong>: Verwendung aussagekräftiger, verständlicher Bezeichnungen statt gehashter Strings</li>
+  <li><strong>Konsistenz</strong>: Einheitliche Schreibweise und Struktur innerhalb des Namespaces</li>
+  <li><strong>Eindeutigkeit</strong>: Klare Abgrenzung verschiedener Instrumente und Versionen</li>
+</ul>
+
+<h3 id="namespace-struktur-für-questionnaires">Namespace-Struktur für Questionnaires</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mii-qst-pro-[organisation]-[instrument]-[variant]
+</code></pre></div></div>
+
+<h4 id="herausforderungen-bei-der-namespace-definition">Herausforderungen bei der Namespace-Definition</h4>
+
+<p><strong>Problem</strong>: PROM-Instrumenteabkürzungen sind nicht eindeutig und können in verschiedenen Fachgebieten identische Bezeichnungen haben.</p>
+
+<p><strong>Komplexitätsfaktoren</strong>:</p>
+<ol>
+  <li><strong>Multiple Instrumente einer Organisation</strong> (z.B. verschiedene PROMIS-Fragebögen)</li>
+  <li><strong>Verschiedene Major-Versionen</strong> eines Fragebogens (z.B. BDI vs. BDI-II)</li>
+  <li><strong>Parent-Proxy-Versionen</strong> für Eltern/Kinder-Assessments</li>
+  <li><strong>Altersgerechte Varianten</strong> in der Pädiatrie</li>
+  <li><strong>Sprachvarianten</strong> mit inhaltlichen Unterschieden zwischen den Sprachen</li>
+</ol>
+
+<p><strong>Wichtiger Hinweis</strong>: Diese unterschiedlichen Fragebögen können identische oder vergleichbare Scores produzieren, was bei der Score-Zuordnung berücksichtigt werden muss.</p>
+
+<h3 id="etablierte-namespaces-aktueller-stand">Etablierte Namespaces (Aktueller Stand)</h3>
+
+<h4 id="nach-organisation-strukturiert">Nach Organisation strukturiert:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># EuroQol-Organisation
+mii-qst-pro-euroqol-eq5d5l     # EQ-5D-5L (Five Level)
+mii-qst-pro-euroqol-eq5dy5l    # EQ-5D-Y-5L (Youth Version)
+mii-qst-pro-euroqol-eq5d3l     # EQ-5D-3L (Three Level)
+
+# PROMIS-Organisation
+mii-qst-pro-promis-promis29         # PROMIS-29 Profile v2.1
+mii-qst-pro-promis-depression-sf4a  # PROMIS Depression Short Form 4a
+
+# PHQ-Familie (Pfizer/Spitzer)
+mii-qst-pro-phq-phq9          # Patient Health Questionnaire-9
+mii-qst-pro-phq-gad7          # Generalized Anxiety Disorder-7
+mii-qst-pro-phq-phqsads       # PHQ-SADS
+
+# Beck-Inventories
+mii-qst-pro-beck-bdi2         # Beck Depression Inventory-II
+</code></pre></div></div>
+
+<p><strong>Hinweis</strong>: Die Namespace-Systematik wird kontinuierlich erweitert und verfeinert, basierend auf den Anforderungen neuer Instrumente.</p>
+
+<h2 id="linkid-konventionen-für-questionnaire-items">LinkId-Konventionen für Questionnaire-Items</h2>
+
+<h3 id="grundstruktur-für-linkids">Grundstruktur für linkIds</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[instrument-prefix]-[item-type]-[identifier]
+</code></pre></div></div>
+
+<h3 id="aktuell-implementierte-patterns">Aktuell implementierte Patterns</h3>
+
+<h4 id="1-fragenkürzel--nummerierung-mit-führenden-nullen">1. Fragenkürzel + Nummerierung (mit führenden Nullen)</h4>
+<p><strong>Pattern</strong>: <code class="language-plaintext highlighter-rouge">{instrument}-q{number}</code> (Nummer immer zweistellig mit führender Null)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># PHQ-9 Beispiele
+phq-phq9-q01        # Item 1: "Wenig Interesse oder Freude an Tätigkeiten"
+phq-phq9-q02        # Item 2: Niedergeschlagenheit
+phq-phq9-q09        # Item 9: Suizidgedanken
+phq-phq9-score-total # Gesamtscore
+
+# BDI-II Beispiele
+bdi-bdi2-q01        # Item 1: Traurigkeit
+bdi-bdi2-q02        # Item 2: Pessimismus
+bdi-bdi2-q21        # Item 21: Verlust des Interesses an Sex
+bdi-bdi2-score-total # Gesamtscore
+</code></pre></div></div>
+
+<h4 id="2-euroqol-domain-basierte-ids">2. EuroQol Domain-basierte IDs</h4>
+<p><strong>Pattern</strong>: <code class="language-plaintext highlighter-rouge">{instrument}-q{number}-{domain-code}</code> (Nummer zweistellig)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># EQ-5D-5L Beispiele
+euroqol-eq5d5l-q01-MO    # Mobility (Beweglichkeit)
+euroqol-eq5d5l-q02-SC    # Self-Care (Für sich selbst sorgen)
+euroqol-eq5d5l-q03-UA    # Usual Activities (Alltägliche Tätigkeiten)
+euroqol-eq5d5l-q04-PD    # Pain/Discomfort (Schmerzen/Beschwerden)
+euroqol-eq5d5l-q05-AD    # Anxiety/Depression (Angst/Niedergeschlagenheit)
+euroqol-eq5d5l-vas       # Visual Analog Scale
+</code></pre></div></div>
+
+<h4 id="3-promis-item-bank-ids">3. PROMIS Item Bank IDs</h4>
+<p><strong>Pattern</strong>: <code class="language-plaintext highlighter-rouge">{instrument}-{item-bank-id}</code> (basierend auf offiziellen PROMIS-Codes)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># PROMIS Depression SF 4a
+promis-eddep04           # PROMIS Item EDDEP04
+promis-eddep06           # PROMIS Item EDDEP06
+promis-eddep29           # PROMIS Item EDDEP29
+promis-eddep05           # PROMIS Item EDDEP05
+
+# PROMIS-29 Physical Function Items
+promis-pfa11             # Physical Function Item (basierend auf Validierungsstudie)
+promis-pfa21             # Physical Function Item
+promis-pfa23             # Physical Function Item
+promis-pfa53             # Physical Function Item
+</code></pre></div></div>
+
+<h3 id="score-item-konventionen">Score-Item Konventionen</h3>
+<p><strong>Pattern</strong>: <code class="language-plaintext highlighter-rouge">{instrument}-{score-type}-{variant}</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Verschiedene Score-Typen
+{instrument}-score-raw          # Rohscore
+{instrument}-score-tscore       # T-Score (PROMIS)
+{instrument}-score-total        # Gesamtscore
+{instrument}-score-index        # Index-Score (EQ-5D)
+{instrument}-score-vas          # VAS-Score
+{instrument}-score-profile      # Profil-Score
+</code></pre></div></div>
+
+<h3 id="spezielle-item-typen">Spezielle Item-Typen</h3>
+
+<h4 id="display-items-instruktionen-beschreibungen">Display-Items (Instruktionen, Beschreibungen)</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{instrument}.Description        # Hauptbeschreibung/Instruktion
+{instrument}.{section}          # Bereichsspezifische Beschreibung
+</code></pre></div></div>
+
+<p>Beispiele:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PHQ-9.Description               # PHQ-9 Hauptinstruktion
+PROMIS-Depression.Description   # PROMIS Depression Instruktion
+</code></pre></div></div>
+
+<h3 id="entscheidungsmatrix-für-linkid-patterns">Entscheidungsmatrix für linkId-Patterns</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>Empfohlenes Pattern</th>
+      <th>Beispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Offizieller Item-Code vorhanden</strong></td>
+      <td>Offiziellen Code verwenden</td>
+      <td><code class="language-plaintext highlighter-rouge">promis-eddep04</code> (PROMIS)</td>
+    </tr>
+    <tr>
+      <td><strong>Domain-basierte Struktur</strong></td>
+      <td>Domain-Suffix hinzufügen</td>
+      <td><code class="language-plaintext highlighter-rouge">euroqol-eq5d5l-q01-MO</code></td>
+    </tr>
+    <tr>
+      <td><strong>Sequenzielle Nummerierung</strong></td>
+      <td>Instrument + q{NN} Pattern</td>
+      <td><code class="language-plaintext highlighter-rouge">phq-phq9-q01</code></td>
+    </tr>
+    <tr>
+      <td><strong>Score-Items</strong></td>
+      <td>score-type Suffix</td>
+      <td><code class="language-plaintext highlighter-rouge">phq-phq9-score-total</code></td>
+    </tr>
+    <tr>
+      <td><strong>Display-Items</strong></td>
+      <td>.Description Pattern</td>
+      <td><code class="language-plaintext highlighter-rouge">PHQ-9.Description</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="konsistenzregeln">Konsistenzregeln</h3>
+
+<ol>
+  <li><strong>Kleinschreibung</strong>: Alle linkIds verwenden durchgehend Kleinschreibung</li>
+  <li><strong>Bindestriche</strong>: Trennung von Komponenten durch Bindestriche (keine Unterstriche)</li>
+  <li><strong>Präfix-Konsistenz</strong>: Gleicher Instrument-Präfix für alle Items eines Fragebogens</li>
+  <li><strong>Führende Nullen</strong>: Nummerierung immer zweistellig (q01, q02, …, q10, q11, …)</li>
+  <li><strong>Eindeutigkeit</strong>: LinkIds müssen innerhalb eines Fragebogens eindeutig sein</li>
+  <li><strong>Menschenlesbarkeit</strong>: IDs sollten für Entwickler und Kliniker verständlich sein</li>
+</ol>
+
+<h3 id="umgang-mit-internationalen-standards">Umgang mit internationalen Standards</h3>
+
+<p><strong>LOINC-Integration</strong>: Wo verfügbar, wird LOINC als code-Element verwendet, während linkId der MII-internen Systematik folgt:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//FSH
+* item[1].linkId = "phq-phq9-q01"           # MII-interne ID
+* item[1].code = $LNC#44250-9               # LOINC-Code für semantische Annotation
+</code></pre></div></div>
+
+<p><strong>PROMIS-Integration</strong>: Offizielle PROMIS Item-IDs werden als linkId übernommen, wo vorhanden:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//FSH
+* item[1].linkId = "promis-eddep04"         # Offizieller PROMIS Item-Code
+* item[1].code = $LNC#71969-0               # LOINC-Code (falls vorhanden)
+</code></pre></div></div>
+
+<h3 id="herausforderungen-und-lösungsansätze">Herausforderungen und Lösungsansätze</h3>
+
+<h4 id="problem-mehrfachverwendung-von-items">Problem: Mehrfachverwendung von Items</h4>
+<p><strong>Situation</strong>: PROMIS-Items können in verschiedenen Fragebögen vorkommen (z.B. EDDEP04 in PROMIS-29 und PROMIS Depression SF 4a)</p>
+
+<p><strong>Lösung</strong>: Konsistente Verwendung derselben linkId in allen Fragebögen ermöglicht:</p>
+<ul>
+  <li>Vereinfachte FHIRPath-Expressions für domänenübergreifende Berechnungen</li>
+  <li>Wiederverwendbarkeit von Validierungslogik</li>
+  <li>Konsistente Datenauswertung</li>
+</ul>
+
+<h4 id="problem-fehlende-offizielle-item-ids">Problem: Fehlende offizielle Item-IDs</h4>
+<p><strong>Situation</strong>: Nicht alle Instrumente haben standardisierte Item-Codes</p>
+
+<p><strong>Lösung</strong>: Fallback auf strukturierte Nummerierung mit semantischen Ergänzungen:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{instrument}-q{NN}              # Basis-Pattern (führende Null!)
+{instrument}-q{NN}-{domain}     # Mit Domain-Information
+</code></pre></div></div>
+
+<h3 id="best-practices-für-neue-instrumente">Best Practices für neue Instrumente</h3>
+
+<ol>
+  <li><strong>Prüfe auf offizielle Item-IDs</strong>: Verwende etablierte Codes (PROMIS, LOINC) wo vorhanden</li>
+  <li><strong>Konsistente Präfixe</strong>: Orientiere dich an bestehenden Namespace-Konventionen</li>
+  <li><strong>Führende Nullen</strong>: Verwende immer zweistellige Nummerierung (q01-q99)</li>
+  <li><strong>Domain-Codes</strong>: Ergänze bei strukturierten Instrumenten Domain-Abkürzungen</li>
+  <li><strong>Score-Suffix</strong>: Verwende klare Score-Bezeichnungen (-score-total, -score-raw, etc.)</li>
+</ol>
+
+<h2 id="terminologie-strategien-für-antwortoptionen">Terminologie-Strategien für Antwortoptionen</h2>
+
+<h3 id="strategische-entscheidung-answeroption-vs-answervalueset">Strategische Entscheidung: answerOption vs answerValueSet</h3>
+
+<p>Die Wahl zwischen inline <code class="language-plaintext highlighter-rouge">answerOption</code> und externen <code class="language-plaintext highlighter-rouge">answerValueSet</code> Definitionen ist eine grundlegende Architekturentscheidung, die die Wartbarkeit, Wiederverwendbarkeit und Interoperabilität maßgeblich beeinflusst.</p>
+
+<h3 id="entscheidungsmatrix">Entscheidungsmatrix</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ansatz</th>
+      <th>Anwendungsfall</th>
+      <th>Beispiel</th>
+      <th>Vorteile</th>
+      <th>Nachteile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Inline answerOption + LOINC</strong></td>
+      <td>Internationale Standards verfügbar + displayable</td>
+      <td>PHQ-9, PROMIS</td>
+      <td>Internationale Interoperabilität, semantische Eindeutigkeit</td>
+      <td>Deutsche Übersetzungen via Extensions</td>
+    </tr>
+    <tr>
+      <td><strong>Inline answerOption + Simple Codes</strong></td>
+      <td>Einfache, statische Listen (max. 5 Optionen) + displayable</td>
+      <td>EQ-5D-5L</td>
+      <td>Minimale Komplexität, direkter Code</td>
+      <td>Keine Wiederverwendbarkeit</td>
+    </tr>
+    <tr>
+      <td><strong>answerValueSet + MII CodeSystem</strong></td>
+      <td>Capabilities-basiert: displayable=false, calculatable=true</td>
+      <td>BDI-II</td>
+      <td>Optimiert für Score-only, kein Display-Overhead, deutsche Spezifika</td>
+      <td>Nicht für interaktive Formulare</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="implementierungsbeispiele">Implementierungsbeispiele</h3>
+
+<h4 id="pattern-1-loinc--itemweight-extensions-phq-9">Pattern 1: LOINC + itemWeight Extensions (PHQ-9)</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//FSH
+* item[=].answerOption[0].valueCoding.system = $LNC
+* item[=].answerOption[0].valueCoding.code = #LA6568-5
+* item[=].answerOption[0].valueCoding.display = "Überhaupt nicht"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.valueDecimal = 0
+</code></pre></div></div>
+
+<h4 id="pattern-2-mii-codesystem--valueset-bdi-ii">Pattern 2: MII CodeSystem + ValueSet (BDI-II)</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//FSH
+// Questionnaire
+* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+
+// CodeSystem
+* #bdi-bdi2-answer-1 ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-1 ^property[=].valueDecimal = 1
+</code></pre></div></div>
+
+<h4 id="pattern-3-einfache-inline-codes-eq-5d-5l">Pattern 3: Einfache Inline Codes (EQ-5D-5L)</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//FSH
+* item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[0].valueCoding.code = #1
+</code></pre></div></div>
+
+<h3 id="entscheidungshilfe">Entscheidungshilfe</h3>
+
+<p><strong>Prüfe zuerst die Questionnaire Capabilities:</strong></p>
+
+<p><strong>Verwende answerValueSet + MII CodeSystem wenn:</strong></p>
+<ul>
+  <li><strong>displayable = false, calculatable = true</strong> (wie BDI-II)</li>
+  <li>Optimierung für reine Score-Berechnung ohne Display-Overhead</li>
+  <li>Hintergrund-Berechnungen ohne Benutzerinteraktion</li>
+</ul>
+
+<p><strong>Verwende inline answerOption wenn:</strong></p>
+<ul>
+  <li><strong>displayable = true</strong> (interaktive Formulare)</li>
+  <li>LOINC-Codes mit Score-Gewichten verfügbar sind</li>
+  <li>Einfache, statische Antwortlisten (max. 5 Optionen)</li>
+  <li>Reiche Metadaten pro Option (Übersetzungen, Gewichte)</li>
+</ul>
+
+<p><strong>Weitere answerValueSet + MII CodeSystem Kriterien:</strong></p>
+<ul>
+  <li>Multiple Antwortformat-Varianten benötigt (kurz/lang)</li>
+  <li>Wiederverwendung über mehrere Questionnaires geplant</li>
+  <li>Komplexe Scoring-Anforderungen mit variablen Gewichten</li>
+  <li>Deutsche Gesundheitssystem-Spezifika erforderlich</li>
+</ul>
+
+<p><strong>Detaillierte Dokumentation</strong>: <a href="terminology-strategies.html">Terminologie-Strategien</a></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-06-14 19:09:00 +0000">
+    2026-06-14
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

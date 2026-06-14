@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-pro-midos2-wellbeing",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-pro-midos2-wellbeing</b></p><a name=\"mii-vs-pro-midos2-wellbeing\"> </a><a name=\"hcmii-vs-pro-midos2-wellbeing\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-mii-cs-pro-midos2.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2026.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-0\">midos2-wellbeing-0</a></td><td style=\"color: #cccccc\">sehr gut</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-1\">midos2-wellbeing-1</a></td><td style=\"color: #cccccc\">eher gut</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-2\">midos2-wellbeing-2</a></td><td style=\"color: #cccccc\">eher schlecht</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-3\">midos2-wellbeing-3</a></td><td style=\"color: #cccccc\">sehr schlecht</td></tr></table></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-pro-midos2-wellbeing</b></p><a name=\"en-mii-vs-pro-midos2-wellbeing\"> </a><a name=\"en-hcmii-vs-pro-midos2-wellbeing\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-mii-cs-pro-midos2.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2026.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-0\">midos2-wellbeing-0</a></td><td style=\"color: #cccccc\">sehr gut</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-1\">midos2-wellbeing-1</a></td><td style=\"color: #cccccc\">eher gut</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-2\">midos2-wellbeing-2</a></td><td style=\"color: #cccccc\">eher schlecht</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-midos2.html#mii-cs-pro-midos2-midos2-wellbeing-3\">midos2-wellbeing-3</a></td><td style=\"color: #cccccc\">sehr schlecht</td></tr></table></li></ul></div></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing",
+  "version" : "2026.2.0",
+  "name" : "MII_VS_PRO_MIDOS2_Wellbeing",
+  "title" : "MII VS PRO MIDOS2 Wohlbefinden-Skala",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-06-14T19:09:51+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+      "concept" : [{
+        "code" : "midos2-wellbeing-0"
+      },
+      {
+        "code" : "midos2-wellbeing-1"
+      },
+      {
+        "code" : "midos2-wellbeing-2"
+      },
+      {
+        "code" : "midos2-wellbeing-3"
+      }]
+    }]
+  }
+}
