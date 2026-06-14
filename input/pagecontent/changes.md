@@ -1,8 +1,8 @@
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
-**Version: 2026.4.0** (unreleased)
+**Version: 2026.4.0**
 
-Datum: --
+Datum: 2026-06-14 (released, Tag `v2026.4.0`)
 
 Zwei thematische Erweiterungen in einem Release: **PROMIS-Konsolidierung** (PROMIS-16 PROPr, Wording-Migration, Copyright-Modell) und **Symptom-Screening für die onkologische und palliative Versorgung** (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening).
 
