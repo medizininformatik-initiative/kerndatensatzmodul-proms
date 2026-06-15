@@ -1,7 +1,7 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2026.4.0",
-  "description": "MII PRO Module v2026.4.0 - PROMIS-Konsolidierung (PROMIS-16 PROPr, PROMIS-29 Wording-Migration auf PHO/PCOR-MII Master, Copyright-Modell) + Symptom-Screening (MIDOS2, PRO-CTCAE Onkologisches Basisscreening). Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
+  "version": "2026.4.1",
+  "description": "MII PRO Module v2026.4.1 - Patch-Release: artifact-version-Extension für 3 EQ-5D-5L ObservationDefinitions nachgezogen (Index/Profile/VAS) — vorher fehlte Versions-Metadatum auf diesen Resourcen. Aufbauend auf v2026.4.0: PROMIS-Konsolidierung + Symptom-Screening. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
   "keywords": [
     "MII",
     "KDS",
