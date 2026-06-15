@@ -1,4 +1,4 @@
-# Technical Implementation - MII IG PRO v2026.4.0
+# Technical Implementation - MII IG PRO v2026.4.1
 
 ## Technical Implementation
 

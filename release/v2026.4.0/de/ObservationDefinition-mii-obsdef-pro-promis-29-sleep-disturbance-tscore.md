@@ -1,4 +1,4 @@
-# MII ObsDef PRO PROMIS-29 Sleep Disturbance T-Score - MII IG PRO v2026.4.0
+# MII ObsDef PRO PROMIS-29 Sleep Disturbance T-Score - MII IG PRO v2026.4.1
 
 ## ObservationDefinition: MII ObsDef PRO PROMIS-29 Sleep Disturbance T-Score 
 
@@ -8,9 +8,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.4.0
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.4.1
 
-**ArtifactVersion**: 2026.4.0
+**ArtifactVersion**: 2026.4.1
 
 **category**: Survey
 
@@ -45,11 +45,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-promis-29-sleep-disturbance-tscore",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.4.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.4.1"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2026.4.0"
+    "valueString" : "2026.4.1"
   }],
   "category" : [{
     "coding" : [{

@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Severity Scale (Radiation) - MII IG PRO v2026.4.0
+# MII VS PRO PRO-CTCAE Severity Scale (Radiation) - MII IG PRO v2026.4.1
 
 ## ValueSet: MII VS PRO PRO-CTCAE Severity Scale (Radiation) (Experimental) 
 
@@ -28,12 +28,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-severity-radiation",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_VS_PRO_PRO_CTCAE_Severity_Radiation",
   "title" : "MII VS PRO PRO-CTCAE Severity Scale (Radiation)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T19:52:10+00:00",
+  "date" : "2026-06-15T12:51:50+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

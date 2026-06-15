@@ -1,4 +1,4 @@
-# PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome) - MII IG PRO v2026.4.0
+# PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome) - MII IG PRO v2026.4.1
 
 ## Questionnaire: PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome) (Experimentell) 
 
@@ -24,7 +24,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-pro-ctcae-breast-de",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
@@ -34,7 +34,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_QST_PRO_PRO_CTCAE_Breast_DE",
   "title" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
   "_title" : {
@@ -52,7 +52,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-14T19:52:10+00:00",
+  "date" : "2026-06-15T12:51:50+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

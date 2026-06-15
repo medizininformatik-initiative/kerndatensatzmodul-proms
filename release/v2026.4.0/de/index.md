@@ -1,4 +1,4 @@
-# Home - MII IG PRO v2026.4.0
+# Home - MII IG PRO v2026.4.1
 
 ## Home
 
@@ -7,7 +7,7 @@ Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken be
 | | |
 | :--- | :--- |
 | Datum | 30.03.2026 |
-| Version | 2026.4.0 |
+| Version | 2026.4.1 |
 | Status | active |
 | Realm | DE |
 

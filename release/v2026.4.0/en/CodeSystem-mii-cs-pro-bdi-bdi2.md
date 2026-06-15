@@ -1,4 +1,4 @@
-# MII CS PRO BDI-II - MII IG PRO v2026.4.0
+# MII CS PRO BDI-II - MII IG PRO v2026.4.1
 
 ## CodeSystem: MII CS PRO BDI-II (Experimental) 
 
@@ -23,12 +23,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-bdi-bdi2",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_CS_PRO_BDI_BDI2_AnswerList",
   "title" : "MII CS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T19:52:10+00:00",
+  "date" : "2026-06-15T12:51:50+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

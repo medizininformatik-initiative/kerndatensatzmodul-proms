@@ -1,4 +1,4 @@
-# DASS-21 Stress DASS-42 Equivalent Score Observation - MII IG PRO v2026.4.0
+# DASS-21 Stress DASS-42 Equivalent Score Observation - MII IG PRO v2026.4.1
 
 ## Beispiel Observation: DASS-21 Stress DASS-42 Equivalent Score Observation
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.4.0
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.4.1
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-dass-dass21-score-stress-equiv",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
   },
   "status" : "final",
   "category" : [{

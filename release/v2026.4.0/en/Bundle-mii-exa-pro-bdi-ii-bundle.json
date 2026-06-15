@@ -13,7 +13,7 @@
         "status" : "generated"
       },
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
-      "version" : "2026.4.0",
+      "version" : "2026.4.1",
       "name" : "MII_CS_PRO_BDI_BDI2_AnswerList",
       "title" : "MII CS PRO BDI-II",
       "status" : "active",
@@ -78,7 +78,7 @@
         "status" : "generated"
       },
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short",
-      "version" : "2026.4.0",
+      "version" : "2026.4.1",
       "name" : "MII_VS_PRO_BDI_BDI2_AnswerListShort",
       "title" : "MII VS PRO BDI-II",
       "status" : "active",
@@ -117,7 +117,7 @@
         "status" : "generated"
       },
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
-      "version" : "2026.4.0",
+      "version" : "2026.4.1",
       "name" : "MII_VS_PRO_BDI_BDI2_AnswerListLong",
       "title" : "MII VS PRO BDI-II",
       "status" : "active",
@@ -161,7 +161,7 @@
       "resourceType" : "Questionnaire",
       "id" : "mii-qst-pro-bdi-bdi2",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
       },
       "language" : "en",
       "text" : {
@@ -203,7 +203,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
-      "version" : "2026.4.0",
+      "version" : "2026.4.1",
       "title" : "MII QST PRO BDI-II",
       "status" : "active",
       "experimental" : true,
@@ -406,7 +406,7 @@
       "resourceType" : "QuestionnaireResponse",
       "id" : "mii-exa-pro-bdi-bdi2",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.4.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.4.1"]
       },
       "language" : "en",
       "text" : {
@@ -625,7 +625,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-bdi-ii-observation",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
       },
       "language" : "en",
       "text" : {

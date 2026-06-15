@@ -1,4 +1,4 @@
-# MII VS PRO DASS-21 Answer List - MII IG PRO v2026.4.0
+# MII VS PRO DASS-21 Answer List - MII IG PRO v2026.4.1
 
 ## ValueSet: MII VS PRO DASS-21 Answer List (Experimental) 
 
@@ -28,12 +28,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-dass-21-answer-list",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_VS_PRO_DASS_21_Answer_List",
   "title" : "MII VS PRO DASS-21 Answer List",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T19:52:10+00:00",
+  "date" : "2026-06-15T12:51:50+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
