@@ -5,6 +5,19 @@ topic: Release-Notes
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Version: 2026.4.1**
+
+Datum: 2026-06-15 (released, Tag `v2026.4.1`)
+
+Patch-Release auf v2026.4.0: behebt fehlendes Versions-Metadatum auf den 3 EQ-5D-5L ObservationDefinitions, das beim Bake von v2026.4.0 entdeckt wurde.
+
+FHIR-Ressourcen:
+- Fixed: `mii-obsdef-pro-score-eq5d5l-index`, `mii-obsdef-pro-score-eq5d5l-profile`, `mii-obsdef-pro-score-eq5d5l-vas` – `* insert ObsDefVersion` und `* insert MetaProfile(...)` ergänzt (vorher fehlten beide RuleSets, dadurch keine `artifact-version`-Extension im Package und kein `meta.profile`-Eintrag mit Canonical-Version). Andere ObsDefs (PHQ-9, BDI-II, PROMIS-29, DASS-21, PRO-CTCAE, EORTC QLQ-C30, Depression T-Score) hatten beide RuleSets bereits.
+
+Verifikation:
+- Vorher: 36 ObsDefs mit artifact-version=2026.4.0, 3 ohne (EQ-5D)
+- Nachher: 39 ObsDefs mit artifact-version=2026.4.1
+
 **Version: 2026.4.0**
 
 Datum: 2026-06-14 (released, Tag `v2026.4.0`)

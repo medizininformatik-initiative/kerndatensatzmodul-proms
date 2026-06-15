@@ -2,6 +2,9 @@ Instance: mii-obsdef-pro-score-eq5d5l-profile
 InstanceOf: MII_PR_PRO_Score_Blueprint
 Title: "MII ObsDef PRO Score EQ-5D-5L Profile"
 Description: "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Profile"
+Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code.coding[mii] = $mii-cs-pro-score-catalogue#euroqol-eq5d5l-profile "EuroQol EQ-5D-5L Profile"

@@ -2,6 +2,9 @@ Instance: mii-obsdef-pro-score-eq5d5l-vas
 InstanceOf: MII_PR_PRO_Score_Blueprint
 Title: "MII ObsDef PRO Score EQ-5D-5L VAS"
 Description: "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score"
+Usage: #definition
+* insert ObsDefVersion
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code.coding[snomed] = $SCT#736535009 "EuroQol visual analogue score (observable entity)"

@@ -3,7 +3,7 @@
   "id": "mii-ig-pro",
   "language": "de-DE",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version": "2026.4.0",
+  "version": "2026.4.1",
   "name": "MII_IG_PRO",
   "title": "MII IG PRO",
   "status": "active",
@@ -728,7 +728,7 @@
         },
         "name": "MII ObsDef PRO Score EQ-5D-5L Index",
         "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Index Score",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -736,7 +736,7 @@
         },
         "name": "MII ObsDef PRO Score EQ-5D-5L Profile",
         "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Profile",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -744,7 +744,7 @@
         },
         "name": "MII ObsDef PRO Score EQ-5D-5L VAS",
         "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"
+        "exampleBoolean": false
       },
       {
         "reference": {
