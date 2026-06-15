@@ -1,4 +1,4 @@
-# MII PR PRO Observation BDI-II - MII IG PRO v2026.4.0
+# MII PR PRO Observation BDI-II - MII IG PRO v2026.4.1
 
 ## Resource Profile: MII PR PRO Observation BDI-II ( Experimental ) 
 
@@ -29,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-observ
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-bdi-ii",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_PR_PRO_Observation_BDI_II",
   "title" : "MII PR PRO Observation BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T20:00:22+00:00",
+  "date" : "2026-06-15T12:52:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

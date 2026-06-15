@@ -1,4 +1,4 @@
-# MII QST PRO MIDOS2 - MII IG PRO v2026.4.0
+# MII QST PRO MIDOS2 - MII IG PRO v2026.4.1
 
 ## Questionnaire: MII QST PRO MIDOS2 (Experimental) 
 
@@ -24,7 +24,7 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-midos-midos2",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
   },
   "language" : "de",
   "extension" : [{
@@ -59,12 +59,12 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_QST_PRO_MIDOS_MIDOS2",
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-14T20:00:22+00:00",
+  "date" : "2026-06-15T12:52:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

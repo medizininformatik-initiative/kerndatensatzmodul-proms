@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro"/>
-  <version value="2026.4.0"/>
+  <version value="2026.4.1"/>
   <name value="MII_IG_PRO"/>
   <title value="MII IG PRO"/>
   <status value="active"/>
-  <date value="2026-06-14T20:00:22+00:00"/>
+  <date value="2026-06-15T12:52:47+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -41,7 +41,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.1.0"/>
+    <version value="7.2.0"/>
   </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_meta">
     <uri value="https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta"/>
@@ -1495,7 +1495,7 @@
       </reference>
       <name value="MII ObsDef PRO Score EQ-5D-5L Index"/>
       <description value="EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Index Score"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1506,7 +1506,7 @@
       </reference>
       <name value="MII ObsDef PRO Score EQ-5D-5L Profile"/>
       <description value="EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Profile"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1517,7 +1517,7 @@
       </reference>
       <name value="MII ObsDef PRO Score EQ-5D-5L VAS"/>
       <description value="EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

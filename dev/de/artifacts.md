@@ -1,4 +1,4 @@
-# Artefaktübersicht - MII IG PRO v2026.4.0
+# Artefaktübersicht - MII IG PRO v2026.4.1
 
 ## Artefaktübersicht
 

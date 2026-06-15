@@ -1,4 +1,4 @@
-# MII CS PRO PRO-CTCAE Item Library - MII IG PRO v2026.4.0
+# MII CS PRO PRO-CTCAE Item Library - MII IG PRO v2026.4.1
 
 ## CodeSystem: MII CS PRO PRO-CTCAE Item Library (Experimental) 
 
@@ -30,12 +30,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-pro-ctcae",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_CS_PRO_PRO_CTCAE",
   "title" : "MII CS PRO PRO-CTCAE Item Library",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-14T20:00:22+00:00",
+  "date" : "2026-06-15T12:52:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

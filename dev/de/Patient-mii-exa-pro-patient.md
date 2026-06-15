@@ -1,4 +1,4 @@
-# MII EXA PRO Patient - MII IG PRO v2026.4.0
+# MII EXA PRO Patient - MII IG PRO v2026.4.1
 
 ## Beispiel Patient: MII EXA PRO Patient
 

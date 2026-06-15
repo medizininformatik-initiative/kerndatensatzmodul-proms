@@ -1,4 +1,4 @@
-# MII ObsDef PRO Score EQ-5D-5L Profile - MII IG PRO v2026.4.0
+# MII ObsDef PRO Score EQ-5D-5L Profile - MII IG PRO v2026.4.1
 
 ## ObservationDefinition: MII ObsDef PRO Score EQ-5D-5L Profile 
 
@@ -8,7 +8,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md)
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.4.1
+
+**ArtifactVersion**: 2026.4.1
 
 **category**: Survey
 
@@ -29,8 +31,12 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-score-eq5d5l-profile",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.4.1"]
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
+    "valueString" : "2026.4.1"
+  }],
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",

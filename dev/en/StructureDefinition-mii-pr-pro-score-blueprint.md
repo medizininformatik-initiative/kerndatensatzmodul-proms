@@ -1,4 +1,4 @@
-# MII PR PRO Score Blueprint / Template - MII IG PRO v2026.4.0
+# MII PR PRO Score Blueprint / Template - MII IG PRO v2026.4.1
 
 ## Resource Profile: MII PR PRO Score Blueprint / Template 
 
@@ -29,11 +29,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-score-
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-score-blueprint",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_PR_PRO_Score_Blueprint",
   "title" : "MII PR PRO Score Blueprint / Template",
   "status" : "active",
-  "date" : "2026-06-14T20:00:22+00:00",
+  "date" : "2026-06-15T12:52:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

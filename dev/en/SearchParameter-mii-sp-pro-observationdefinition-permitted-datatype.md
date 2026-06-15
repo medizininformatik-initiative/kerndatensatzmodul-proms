@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-permitted-datatype - MII IG PRO v2026.4.0
+# mii-sp-pro-observationdefinition-permitted-datatype - MII IG PRO v2026.4.1
 
 ## SearchParameter: mii-sp-pro-observationdefinition-permitted-datatype (Experimental) 
 
@@ -27,7 +27,7 @@ SearchParameter for ObservationDefinition.permittedDataType to filter score defi
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype",
-  "version" : "2026.4.0",
+  "version" : "2026.4.1",
   "name" : "MII_SP_PRO_ObservationDefinition_PermittedDataType",
   "status" : "active",
   "experimental" : true,
