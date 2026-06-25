@@ -1,0 +1,84 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_WHODAS_12",
+  "id": "mii-cs-pro-whodas-12",
+  "title": "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
+  "description": "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with answer codes and item codes. German (de-DE) primary text from the validated PCOR-MII Item Level Dictionary (MASTER_3EntitiesOverview.xlsx). Ordinal scoring weights are applied at the Questionnaire level via ordinalValue extensions. NOTE: WHODAS 2.0 © WHO 2010 - electronic reproduction requires written WHO permission; reproduced here for review only, NOT for publication until licensing is confirmed.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+  "concept": [
+    {
+      "code": "whodas12-answer-0",
+      "display": "keine"
+    },
+    {
+      "code": "whodas12-answer-1",
+      "display": "geringe"
+    },
+    {
+      "code": "whodas12-answer-2",
+      "display": "mäßige"
+    },
+    {
+      "code": "whodas12-answer-3",
+      "display": "starke"
+    },
+    {
+      "code": "whodas12-answer-4",
+      "display": "sehr starke/nicht möglich"
+    },
+    {
+      "code": "whodas12-q01",
+      "display": "längere Zeit (ca. 30 min) zu stehen?"
+    },
+    {
+      "code": "whodas12-q02",
+      "display": "Ihren Haushaltspflichten nachzukommen?"
+    },
+    {
+      "code": "whodas12-q03",
+      "display": "Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)"
+    },
+    {
+      "code": "whodas12-q04",
+      "display": "Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?"
+    },
+    {
+      "code": "whodas12-q05",
+      "display": "Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?"
+    },
+    {
+      "code": "whodas12-q06",
+      "display": "Sich auf etwas für 10 Minuten zu konzentrieren?"
+    },
+    {
+      "code": "whodas12-q07",
+      "display": "Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?"
+    },
+    {
+      "code": "whodas12-q08",
+      "display": "Ihren gesamten Körper zu waschen?"
+    },
+    {
+      "code": "whodas12-q09",
+      "display": "sich anzuziehen?"
+    },
+    {
+      "code": "whodas12-q10",
+      "display": "Im Umgang mit anderen Personen, die Sie nicht kennen?"
+    },
+    {
+      "code": "whodas12-q11",
+      "display": "Eine Freundschaft aufrechtzuerhalten?"
+    },
+    {
+      "code": "whodas12-q12",
+      "display": "Bei der Bewältigung des Arbeits-/Schulalltags?"
+    }
+  ],
+  "version": "2026.4.1",
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 17
+}
