@@ -27,6 +27,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #proctcae-breast-de "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"
 * #proctcae-onkologisches-basisscreening "PRO-CTCAE Onkologisches Basisscreening (DKG, MIDOS2-äquivalente Symptome)"
 * #midos-midos2 "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, DGP)"
+* #whodas-whodas12 "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
 
 // TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are
 // separate entities or part of some bigger PRO framework for proper categorization

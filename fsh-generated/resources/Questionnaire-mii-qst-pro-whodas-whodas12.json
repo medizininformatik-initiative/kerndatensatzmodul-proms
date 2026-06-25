@@ -1,0 +1,58 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-whodas-whodas12",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12",
+  "title": "WHO Disability Assessment Schedule 2.0 - 12-Item (WHODAS-12)",
+  "description": "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12) - Metadata-only reference implementation. Full item content is not reproduced because electronic reproduction of WHODAS 2.0 requires written permission from WHO.",
+  "code": [
+    {
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "whodas-whodas12",
+      "display": "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": false
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": false
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "WHODAS12.Notice",
+      "type": "display",
+      "text": "This questionnaire (WHODAS 2.0, 12-item) is reproduced only as a metadata reference. The item text is not included because electronic reproduction of WHODAS 2.0 requires written permission from the World Health Organization. To license WHODAS 2.0 for an electronic data capture system, see the WHO Classifications licensing process."
+    }
+  ],
+  "version": "2026.4.1",
+  "status": "active",
+  "experimental": true,
+  "language": "en",
+  "copyright": "WHODAS 2.0 © World Health Organization 2010. Reproduced/used only by reference. Electronic reproduction of the instrument requires written permission from WHO (https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule)."
+}
