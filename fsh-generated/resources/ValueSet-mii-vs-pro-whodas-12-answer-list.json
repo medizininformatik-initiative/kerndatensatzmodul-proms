@@ -4,7 +4,7 @@
   "name": "MII_VS_PRO_WHODAS_12_Answer_List",
   "id": "mii-vs-pro-whodas-12-answer-list",
   "title": "MII VS PRO WHODAS 2.0 12-Item Answer List",
-  "description": "5-point response scale for all WHODAS-12 items (0 = keine, 1 = geringe, 2 = mäßige, 3 = starke, 4 = sehr starke/nicht möglich)",
+  "description": "5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
   "version": "2026.4.1",
   "experimental": true,

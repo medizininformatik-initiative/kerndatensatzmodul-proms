@@ -1,7 +1,7 @@
 // ============================================================================
 // WHODAS 2.0 12-Item QuestionnaireResponse Example
 // ============================================================================
-// Verification scenario: every one of the 12 items answered "mäßige" (ordinal 2).
+// Verification scenario: every one of the 12 items answered "Moderate" (ordinal 2).
 //   Simple sum = 12 items × 2 = 24 (range 0-48).
 // The score item (whodas-whodas12-score-simple-sum) therefore carries 24, and
 // the score Observation below mirrors that value.
@@ -10,7 +10,7 @@
 Instance: mii-exa-pro-whodas12-response-01
 InstanceOf: mii-pr-pro-questionnaire-response
 Title: "MII EXA PRO WHODAS 2.0 12-Item Response"
-Description: "Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'mäßige' (ordinal 2); simple sum = 24."
+Description: "Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24."
 Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12"
@@ -20,51 +20,51 @@ Usage: #example
 
 // Q1 (value: 2)
 * item[+].linkId = "whodas-whodas12-q01"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q2 (value: 2)
 * item[+].linkId = "whodas-whodas12-q02"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q3 (value: 2)
 * item[+].linkId = "whodas-whodas12-q03"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q4 (value: 2)
 * item[+].linkId = "whodas-whodas12-q04"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q5 (value: 2)
 * item[+].linkId = "whodas-whodas12-q05"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q6 (value: 2)
 * item[+].linkId = "whodas-whodas12-q06"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q7 (value: 2)
 * item[+].linkId = "whodas-whodas12-q07"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q8 (value: 2)
 * item[+].linkId = "whodas-whodas12-q08"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q9 (value: 2)
 * item[+].linkId = "whodas-whodas12-q09"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q10 (value: 2)
 * item[+].linkId = "whodas-whodas12-q10"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q11 (value: 2)
 * item[+].linkId = "whodas-whodas12-q11"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // Q12 (value: 2)
 * item[+].linkId = "whodas-whodas12-q12"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
 
 // ===== Simple Sum Score: 12 × 2 = 24 =====
 * item[+].linkId = "whodas-whodas12-score-simple-sum"
@@ -78,7 +78,7 @@ Usage: #example
 Instance: mii-exa-pro-whodas12-score-simple-sum
 InstanceOf: mii-pr-pro-score-instance
 Title: "WHODAS 2.0 12-Item Simple Sum Score Observation"
-Description: "WHODAS-12 simple sum score observation (all items 'mäßige': 12 × 2 = 24)."
+Description: "WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24)."
 Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
