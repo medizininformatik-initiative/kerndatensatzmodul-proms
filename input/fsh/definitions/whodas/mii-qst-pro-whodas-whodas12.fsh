@@ -20,6 +20,11 @@
 // WHODAS-12 sum -> PROMIS Generic/Global Health conversion (ConceptMap/CQL),
 // not implemented in this version.
 //
+// Sources: WHO 2010 — Measuring Health and Disability: Manual for WHODAS 2.0
+// (ISBN 9789241547598). German validation: Kirchberger et al. 2014
+// (Population Health Metrics, doi:10.1186/s12963-014-0027-8, MONICA/KORA);
+// Saltychev et al. 2021 (systematic review, PMID 31335215).
+//
 // !!! LICENSING - NOT FOR PUBLICATION UNTIL CONFIRMED !!!
 // WHODAS 2.0 © World Health Organization 2010. WHO permits clinicians to
 // reproduce WHODAS 2.0 for use with their own patients, but ANY electronic

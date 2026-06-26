@@ -19,9 +19,9 @@
 // is recorded as future work.
 //
 // SNOMED: code 715823002 "WHODAS (World Health Organization Disability
-// Assessment Schedule) 2.0 score" was obtained via web lookup but could NOT be
-// verified against a terminology server during implementation (Snowstorm
-// unavailable). Treat as provisional pending terminology-server confirmation.
+// Assessment Schedule) 2.0 score" — externally confirmed via the SNOMED CT
+// browser/FindACode; not yet verified against the local tx-server (Snowstorm
+// was unavailable during implementation). tx-server verification still pending.
 // ============================================================================
 
 Instance: mii-obsdef-pro-score-whodas12-simple-sum
