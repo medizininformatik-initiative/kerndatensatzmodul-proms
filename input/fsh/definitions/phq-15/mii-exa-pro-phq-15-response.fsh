@@ -12,51 +12,51 @@ Title: "PHQ-15 Questionnaire Response Example"
 * authored = "2024-03-15T10:00:00Z"
 * questionnaire = $mii-qst-pro-phq-15
 
-// All 15 items: "Wenig beeinträchtigt" (ordinal 1) → sum = 15
-* item[+].linkId = "phq-phq15-q01" // Bauchschmerzen
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+// All 15 items: "Bothered a little" (ordinal 1) → sum = 15
+* item[+].linkId = "phq-phq15-q01" // Stomach pain
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q02" // Rückenschmerzen
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q02" // Back pain
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q03" // Schmerzen in Armen, Beinen oder Gelenken
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q03" // Pain in arms, legs, or joints
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q04" // Menstruationsschmerzen
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q04" // Menstrual cramps
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q05" // Schmerzen beim Geschlechtsverkehr
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q05" // Pain during sexual intercourse
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q06" // Kopfschmerzen
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q06" // Headaches
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q07" // Schmerzen im Brustbereich
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q07" // Chest pain
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q08" // Schwindel
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q08" // Dizziness
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q09" // Ohnmachtsanfälle
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q09" // Fainting spells
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q10" // Herzklopfen oder Herzrasen
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q10" // Feeling your heart pound or race
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q11" // Kurzatmigkeit
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q11" // Shortness of breath
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q12" // Verstopfung, nervöser Darm oder Durchfall
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q12" // Constipation, loose bowels, or diarrhea
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q13" // Übelkeit, Blähungen oder Verdauungsbeschwerden
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q13" // Nausea, gas, or indigestion
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q14" // Müdigkeit oder keine Energie
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q14" // Feeling tired or having low energy
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
-* item[+].linkId = "phq-phq15-q15" // Schlafprobleme
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
+* item[+].linkId = "phq-phq15-q15" // Trouble sleeping
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
 
 // Calculated total score: 15 items × 1 = 15
 * item[+].linkId = "phq-phq15-score-total"

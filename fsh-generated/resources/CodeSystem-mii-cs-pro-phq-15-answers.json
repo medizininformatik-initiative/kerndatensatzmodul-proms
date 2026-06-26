@@ -5,41 +5,67 @@
   "name": "MII_CS_PRO_PHQ_15_Answers",
   "id": "mii-cs-pro-phq-15-answers",
   "title": "MII CS PRO PHQ-15 Answers",
-  "description": "MII-controlled bother severity answer scale for PHQ-15 (0–2). German primary (PHQ-D). Enables reliable ordinal() score calculation via SDC calculatedExpression.",
+  "description": "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
   "concept": [
     {
       "code": "not-bothered",
-      "display": "Nicht beeinträchtigt",
+      "display": "Not bothered at all",
       "designation": [
         {
-          "language": "en",
-          "value": "Not bothered at all"
+          "language": "de",
+          "value": "Nicht beeinträchtigt"
+        }
+      ],
+      "property": [
+        {
+          "code": "ordinalValue",
+          "valueDecimal": 0
         }
       ]
     },
     {
       "code": "bothered-a-little",
-      "display": "Wenig beeinträchtigt",
+      "display": "Bothered a little",
       "designation": [
         {
-          "language": "en",
-          "value": "Bothered a little"
+          "language": "de",
+          "value": "Wenig beeinträchtigt"
+        }
+      ],
+      "property": [
+        {
+          "code": "ordinalValue",
+          "valueDecimal": 1
         }
       ]
     },
     {
       "code": "bothered-a-lot",
-      "display": "Stark beeinträchtigt",
+      "display": "Bothered a lot",
       "designation": [
         {
-          "language": "en",
-          "value": "Bothered a lot"
+          "language": "de",
+          "value": "Stark beeinträchtigt"
+        }
+      ],
+      "property": [
+        {
+          "code": "ordinalValue",
+          "valueDecimal": 2
         }
       ]
     }
   ],
   "version": "2026.4.1",
-  "language": "de",
+  "language": "en",
+  "property": [
+    {
+      "code": "ordinalValue",
+      "uri": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+      "description": "Numerical ordinal value (0–2) for SDC calculatedExpression scoring via .ordinal().sum()",
+      "type": "decimal"
+    }
+  ],
   "count": 3
 }
