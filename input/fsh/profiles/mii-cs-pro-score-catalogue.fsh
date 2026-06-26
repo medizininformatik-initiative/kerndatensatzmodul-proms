@@ -16,6 +16,9 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 // PHQ-9 Scores
 * #phq-phq9-total "PHQ-9 Total Score"
 
+// PHQ-15 Scores
+* #phq-phq15-total "PHQ-15 Total Score"
+
 // BDI-II Scores
 * #bdi-bdi2-total "Beck Depression Inventory II (BDI-II) Total Score"
 

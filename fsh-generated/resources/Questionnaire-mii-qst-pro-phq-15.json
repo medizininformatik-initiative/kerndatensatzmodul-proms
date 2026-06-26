@@ -1,0 +1,1965 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-phq-15",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15",
+  "title": "MII QST PRO PHQ-15",
+  "description": "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity, German primary (PHQ-D)",
+  "code": [
+    {
+      "code": "69728-4",
+      "system": "http://loinc.org",
+      "display": "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
+    },
+    {
+      "code": "phq-phq15",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PHQ-15 Questionnaire"
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "phq15Sum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^phq-phq15-q(0[1-9]|1[0-5])$')).answer.value.ordinal().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "PHQ-15.Description",
+      "type": "display",
+      "text": "Wie stark fühlten Sie sich im Verlauf der letzten 4 Wochen durch die folgenden Beschwerden beeinträchtigt?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "How much have you been bothered by any of the following problems during the past 4 weeks?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69671-6",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q01",
+      "type": "choice",
+      "prefix": "1",
+      "text": "Bauchschmerzen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Stomach pain"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69672-4",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q02",
+      "type": "choice",
+      "prefix": "2",
+      "text": "Rückenschmerzen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Back pain"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69673-2",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q03",
+      "type": "choice",
+      "prefix": "3",
+      "text": "Schmerzen in Armen, Beinen oder Gelenken (Knie, Hüften, usw.)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Pain in arms, legs, or joints (knees, hips, etc.)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69674-0",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q04",
+      "type": "choice",
+      "prefix": "4",
+      "text": "Menstruationsschmerzen oder andere Probleme mit der Menstruation",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Menstrual cramps or other problems with your periods"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69717-7",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q05",
+      "type": "choice",
+      "prefix": "5",
+      "text": "Schmerzen oder Probleme beim Geschlechtsverkehr",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Pain or problems during sexual intercourse"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69675-7",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q06",
+      "type": "choice",
+      "prefix": "6",
+      "text": "Kopfschmerzen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Headaches"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69676-5",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q07",
+      "type": "choice",
+      "prefix": "7",
+      "text": "Schmerzen im Brustbereich",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Chest pain"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69677-3",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q08",
+      "type": "choice",
+      "prefix": "8",
+      "text": "Schwindel",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Dizziness"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69678-1",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q09",
+      "type": "choice",
+      "prefix": "9",
+      "text": "Ohnmachtsanfälle",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Fainting spells"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69679-9",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q10",
+      "type": "choice",
+      "prefix": "10",
+      "text": "Herzklopfen oder Herzrasen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Feeling your heart pound or race"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69680-7",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q11",
+      "type": "choice",
+      "prefix": "11",
+      "text": "Kurzatmigkeit",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Shortness of breath"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69681-5",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q12",
+      "type": "choice",
+      "prefix": "12",
+      "text": "Verstopfung, nervöser Darm oder Durchfall",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Constipation, loose bowels, or diarrhea"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69682-3",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q13",
+      "type": "choice",
+      "prefix": "13",
+      "text": "Übelkeit, Blähungen oder Verdauungsbeschwerden",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Nausea, gas, or indigestion"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69731-8",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q14",
+      "type": "choice",
+      "prefix": "14",
+      "text": "Müdigkeit oder Gefühl, keine Energie zu haben",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Feeling tired or having little energy"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69732-6",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "not-bothered",
+            "display": "Nicht beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Not bothered at all"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-little",
+            "display": "Wenig beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a little"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "code": "bothered-a-lot",
+            "display": "Stark beeinträchtigt",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Bothered a lot"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq15-q15",
+      "type": "choice",
+      "prefix": "15",
+      "text": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Trouble sleeping"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "70273-8",
+          "system": "http://loinc.org",
+          "display": "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%phq15Sum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "phq-phq15-score-total",
+      "type": "decimal",
+      "prefix": "Summenwert",
+      "readOnly": true,
+      "text": "PHQ-15 Summenwert (0–30)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "PHQ-15 Total Score (0–30)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "2026.4.1",
+  "status": "active",
+  "experimental": true,
+  "language": "de"
+}

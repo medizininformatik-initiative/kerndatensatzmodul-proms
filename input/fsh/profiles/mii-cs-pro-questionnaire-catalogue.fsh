@@ -10,6 +10,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 
 * #euroqol-eq5d5l "EuroQol EQ-5D-5L Questionnaire"
 * #phq-phq9 "PHQ-9 Questionnaire"
+* #phq-phq15 "PHQ-15 Questionnaire"
 * #bdi-bdi2 "Beck Depression Inventory II (BDI-II)"
 * #promis-promis29 "PROMIS-29 Questionnaire"
 * #promis-promis16 "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)"

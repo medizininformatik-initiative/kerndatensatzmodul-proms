@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_PHQ_15_Answers",
+  "id": "mii-cs-pro-phq-15-answers",
+  "title": "MII CS PRO PHQ-15 Answers",
+  "description": "MII-controlled bother severity answer scale for PHQ-15 (0–2). German primary (PHQ-D). Enables reliable ordinal() score calculation via SDC calculatedExpression.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+  "concept": [
+    {
+      "code": "not-bothered",
+      "display": "Nicht beeinträchtigt",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Not bothered at all"
+        }
+      ]
+    },
+    {
+      "code": "bothered-a-little",
+      "display": "Wenig beeinträchtigt",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Bothered a little"
+        }
+      ]
+    },
+    {
+      "code": "bothered-a-lot",
+      "display": "Stark beeinträchtigt",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Bothered a lot"
+        }
+      ]
+    }
+  ],
+  "version": "2026.4.1",
+  "language": "de",
+  "count": 3
+}
