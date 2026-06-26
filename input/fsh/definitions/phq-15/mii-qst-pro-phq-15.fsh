@@ -39,7 +39,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "phq15Sum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq15-q(0[1-9]|1[0-5])$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()"
 
 // Item 0: Introductory display item
 * item[0].linkId = "PHQ-15.Description"
@@ -52,7 +52,7 @@ Usage: #definition
 * item[0].text.extension[0].extension[1].valueString = "Wie stark fühlten Sie sich im Verlauf der letzten 4 Wochen durch die folgenden Beschwerden beeinträchtigt?"
 
 // Item 1: Stomach pain
-* item[1].linkId = "phq-phq15-q01"
+* item[1].linkId = "phq-phq1a"
 * item[1].type = #choice
 * item[1].prefix = "1"
 * item[1].code = $LNC#69671-6
@@ -65,7 +65,7 @@ Usage: #definition
 * item[1].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 2: Back pain
-* item[2].linkId = "phq-phq15-q02"
+* item[2].linkId = "phq-phq1b"
 * item[2].type = #choice
 * item[2].prefix = "2"
 * item[2].code = $LNC#69672-4
@@ -78,7 +78,7 @@ Usage: #definition
 * item[2].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 3: Pain in your arms, legs, or joints (knees, hips, etc.)
-* item[3].linkId = "phq-phq15-q03"
+* item[3].linkId = "phq-phq1c"
 * item[3].type = #choice
 * item[3].prefix = "3"
 * item[3].code = $LNC#69673-2
@@ -91,7 +91,7 @@ Usage: #definition
 * item[3].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 4: Menstrual cramps or other problems with your periods
-* item[4].linkId = "phq-phq15-q04"
+* item[4].linkId = "phq-phq1d"
 * item[4].type = #choice
 * item[4].prefix = "4"
 * item[4].code = $LNC#69674-0
@@ -104,7 +104,7 @@ Usage: #definition
 * item[4].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 5: Pain or problems during sexual intercourse
-* item[5].linkId = "phq-phq15-q05"
+* item[5].linkId = "phq-phq1e"
 * item[5].type = #choice
 * item[5].prefix = "5"
 * item[5].code = $LNC#69717-7
@@ -117,7 +117,7 @@ Usage: #definition
 * item[5].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 6: Headaches
-* item[6].linkId = "phq-phq15-q06"
+* item[6].linkId = "phq-phq1f"
 * item[6].type = #choice
 * item[6].prefix = "6"
 * item[6].code = $LNC#69675-7
@@ -130,7 +130,7 @@ Usage: #definition
 * item[6].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 7: Chest pain
-* item[7].linkId = "phq-phq15-q07"
+* item[7].linkId = "phq-phq1g"
 * item[7].type = #choice
 * item[7].prefix = "7"
 * item[7].code = $LNC#69676-5
@@ -143,7 +143,7 @@ Usage: #definition
 * item[7].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 8: Dizziness
-* item[8].linkId = "phq-phq15-q08"
+* item[8].linkId = "phq-phq1h"
 * item[8].type = #choice
 * item[8].prefix = "8"
 * item[8].code = $LNC#69677-3
@@ -156,7 +156,7 @@ Usage: #definition
 * item[8].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 9: Fainting spells
-* item[9].linkId = "phq-phq15-q09"
+* item[9].linkId = "phq-phq1i"
 * item[9].type = #choice
 * item[9].prefix = "9"
 * item[9].code = $LNC#69678-1
@@ -169,7 +169,7 @@ Usage: #definition
 * item[9].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 10: Feeling your heart pound or race
-* item[10].linkId = "phq-phq15-q10"
+* item[10].linkId = "phq-phq1j"
 * item[10].type = #choice
 * item[10].prefix = "10"
 * item[10].code = $LNC#69679-9
@@ -182,7 +182,7 @@ Usage: #definition
 * item[10].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 11: Shortness of breath
-* item[11].linkId = "phq-phq15-q11"
+* item[11].linkId = "phq-phq1k"
 * item[11].type = #choice
 * item[11].prefix = "11"
 * item[11].code = $LNC#69680-7
@@ -195,7 +195,7 @@ Usage: #definition
 * item[11].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 12: Constipation, loose bowels, or diarrhea
-* item[12].linkId = "phq-phq15-q12"
+* item[12].linkId = "phq-phq1l"
 * item[12].type = #choice
 * item[12].prefix = "12"
 * item[12].code = $LNC#69681-5
@@ -208,7 +208,7 @@ Usage: #definition
 * item[12].answerValueSet = Canonical(MII_VS_PRO_PHQ_15_Answers)
 
 // Item 13: Nausea, gas, or indigestion
-* item[13].linkId = "phq-phq15-q13"
+* item[13].linkId = "phq-phq1m"
 * item[13].type = #choice
 * item[13].prefix = "13"
 * item[13].code = $LNC#69682-3
@@ -222,7 +222,7 @@ Usage: #definition
 
 // Item 14: Feeling tired or having low energy
 // Note: scored 0–2 (bother scale) in PHQ-15, distinct from PHQ-9 item 4 (0–3 frequency scale)
-* item[14].linkId = "phq-phq15-q14"
+* item[14].linkId = "phq-phq2d"
 * item[14].type = #choice
 * item[14].prefix = "14"
 * item[14].code = $LNC#69731-8
@@ -236,7 +236,7 @@ Usage: #definition
 
 // Item 15: Trouble sleeping
 // Note: scored 0–2 (bother scale) in PHQ-15, distinct from PHQ-9 item 3 (0–3 frequency scale)
-* item[15].linkId = "phq-phq15-q15"
+* item[15].linkId = "phq-phq2c"
 * item[15].type = #choice
 * item[15].prefix = "15"
 * item[15].code = $LNC#69732-6

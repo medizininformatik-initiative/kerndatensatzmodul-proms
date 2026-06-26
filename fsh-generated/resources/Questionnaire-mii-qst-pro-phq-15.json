@@ -51,7 +51,7 @@
       "valueExpression": {
         "name": "phq15Sum",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^phq-phq15-q(0[1-9]|1[0-5])$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }
@@ -86,7 +86,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q01",
+      "linkId": "phq-phq1a",
       "type": "choice",
       "prefix": "1",
       "text": "Stomach pain",
@@ -116,7 +116,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q02",
+      "linkId": "phq-phq1b",
       "type": "choice",
       "prefix": "2",
       "text": "Back pain",
@@ -146,7 +146,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q03",
+      "linkId": "phq-phq1c",
       "type": "choice",
       "prefix": "3",
       "text": "Pain in your arms, legs, or joints (knees, hips, etc.)",
@@ -176,7 +176,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q04",
+      "linkId": "phq-phq1d",
       "type": "choice",
       "prefix": "4",
       "text": "Menstrual cramps or other problems with your periods",
@@ -206,7 +206,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q05",
+      "linkId": "phq-phq1e",
       "type": "choice",
       "prefix": "5",
       "text": "Pain or problems during sexual intercourse",
@@ -236,7 +236,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q06",
+      "linkId": "phq-phq1f",
       "type": "choice",
       "prefix": "6",
       "text": "Headaches",
@@ -266,7 +266,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q07",
+      "linkId": "phq-phq1g",
       "type": "choice",
       "prefix": "7",
       "text": "Chest pain",
@@ -296,7 +296,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q08",
+      "linkId": "phq-phq1h",
       "type": "choice",
       "prefix": "8",
       "text": "Dizziness",
@@ -326,7 +326,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q09",
+      "linkId": "phq-phq1i",
       "type": "choice",
       "prefix": "9",
       "text": "Fainting spells",
@@ -356,7 +356,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q10",
+      "linkId": "phq-phq1j",
       "type": "choice",
       "prefix": "10",
       "text": "Feeling your heart pound or race",
@@ -386,7 +386,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q11",
+      "linkId": "phq-phq1k",
       "type": "choice",
       "prefix": "11",
       "text": "Shortness of breath",
@@ -416,7 +416,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q12",
+      "linkId": "phq-phq1l",
       "type": "choice",
       "prefix": "12",
       "text": "Constipation, loose bowels, or diarrhea",
@@ -446,7 +446,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q13",
+      "linkId": "phq-phq1m",
       "type": "choice",
       "prefix": "13",
       "text": "Nausea, gas, or indigestion",
@@ -476,7 +476,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q14",
+      "linkId": "phq-phq2d",
       "type": "choice",
       "prefix": "14",
       "text": "Feeling tired or having low energy",
@@ -506,7 +506,7 @@
           "system": "http://loinc.org"
         }
       ],
-      "linkId": "phq-phq15-q15",
+      "linkId": "phq-phq2c",
       "type": "choice",
       "prefix": "15",
       "text": "Trouble sleeping",

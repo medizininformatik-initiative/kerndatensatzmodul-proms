@@ -23,7 +23,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
 
 /* QuestionnaireResponses können nicht als Context übergeben werden (inv-1)
 // SDC pre-population configuration for server-side calculation use case
@@ -46,13 +46,13 @@ Usage: #definition
 * item[0].text.extension[0].extension[1].url = "content"
 * item[0].text.extension[0].extension[1].valueString = "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?"
 
-* item[1].linkId = "phq-phq9-q01"
+* item[1].linkId = "phq-phq2a"
 * item[1].type = #choice
 * item[1].prefix = "1"
 * item[1].code = $LNC#44250-9
 * item[1].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[1].extension[=].valueExpression.language = #text/fhirpath
-* item[1].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
+* item[1].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2a').answer.value, {})"
 * item[1].text = "Little interest or pleasure in doing things"
 * item[1].text.extension[0].url = $hl7-translation
 * item[1].text.extension[0].extension[0].url = "lang"
@@ -100,13 +100,13 @@ Usage: #definition
 * item[1].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[1].answerOption[3].extension.valueDecimal = 3
 
-* item[2].linkId = "phq-phq9-q02"
+* item[2].linkId = "phq-phq2b"
 * item[2].type = #choice
 * item[2].prefix = "2"
 * item[2].code = $LNC#44255-8
 * item[2].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[2].extension[=].valueExpression.language = #text/fhirpath
-* item[2].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
+* item[2].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2b').answer.value, {})"
 * item[2].text = "Feeling down, depressed, or hopeless"
 * item[2].text.extension[0].url = $hl7-translation
 * item[2].text.extension[0].extension[0].url = "lang"
@@ -154,13 +154,13 @@ Usage: #definition
 * item[2].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[2].answerOption[3].extension.valueDecimal = 3
 
-* item[3].linkId = "phq-phq9-q03"
+* item[3].linkId = "phq-phq2c"
 * item[3].type = #choice
 * item[3].prefix = "3"
 * item[3].code = $LNC#44259-0
 * item[3].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[3].extension[=].valueExpression.language = #text/fhirpath
-* item[3].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
+* item[3].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2c').answer.value, {})"
 * item[3].text = "Trouble falling or staying asleep, or sleeping too much"
 * item[3].text.extension[0].url = $hl7-translation
 * item[3].text.extension[0].extension[0].url = "lang"
@@ -208,13 +208,13 @@ Usage: #definition
 * item[3].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[3].answerOption[3].extension.valueDecimal = 3
 
-* item[4].linkId = "phq-phq9-q04"
+* item[4].linkId = "phq-phq2d"
 * item[4].type = #choice
 * item[4].prefix = "4"
 * item[4].code = $LNC#44254-1
 * item[4].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[4].extension[=].valueExpression.language = #text/fhirpath
-* item[4].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
+* item[4].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2d').answer.value, {})"
 * item[4].text = "Feeling tired or having little energy"
 * item[4].text.extension[0].url = $hl7-translation
 * item[4].text.extension[0].extension[0].url = "lang"
@@ -262,13 +262,13 @@ Usage: #definition
 * item[4].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[4].answerOption[3].extension.valueDecimal = 3
 
-* item[5].linkId = "phq-phq9-q05"
+* item[5].linkId = "phq-phq2e"
 * item[5].type = #choice
 * item[5].prefix = "5"
 * item[5].code = $LNC#44251-7
 * item[5].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[5].extension[=].valueExpression.language = #text/fhirpath
-* item[5].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
+* item[5].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2e').answer.value, {})"
 * item[5].text = "Poor appetite or overeating"
 * item[5].text.extension[0].url = $hl7-translation
 * item[5].text.extension[0].extension[0].url = "lang"
@@ -316,13 +316,13 @@ Usage: #definition
 * item[5].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[5].answerOption[3].extension.valueDecimal = 3
 
-* item[6].linkId = "phq-phq9-q06"
+* item[6].linkId = "phq-phq2f"
 * item[6].type = #choice
 * item[6].prefix = "6"
 * item[6].code = $LNC#44258-2
 * item[6].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[6].extension[=].valueExpression.language = #text/fhirpath
-* item[6].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
+* item[6].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2f').answer.value, {})"
 * item[6].text = "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
 * item[6].text.extension[0].url = $hl7-translation
 * item[6].text.extension[0].extension[0].url = "lang"
@@ -370,13 +370,13 @@ Usage: #definition
 * item[6].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[6].answerOption[3].extension.valueDecimal = 3
 
-* item[7].linkId = "phq-phq9-q07"
+* item[7].linkId = "phq-phq2g"
 * item[7].type = #choice
 * item[7].prefix = "7"
 * item[7].code = $LNC#44252-5
 * item[7].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[7].extension[=].valueExpression.language = #text/fhirpath
-* item[7].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
+* item[7].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2g').answer.value, {})"
 * item[7].text = "Trouble concentrating on things, such as reading the newspaper or watching television"
 * item[7].text.extension[0].url = $hl7-translation
 * item[7].text.extension[0].extension[0].url = "lang"
@@ -424,13 +424,13 @@ Usage: #definition
 * item[7].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[7].answerOption[3].extension.valueDecimal = 3
 
-* item[8].linkId = "phq-phq9-q08"
+* item[8].linkId = "phq-phq2h"
 * item[8].type = #choice
 * item[8].prefix = "8"
 * item[8].code = $LNC#44253-3
 * item[8].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[8].extension[=].valueExpression.language = #text/fhirpath
-* item[8].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
+* item[8].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2h').answer.value, {})"
 * item[8].text = "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"
 * item[8].text.extension[0].url = $hl7-translation
 * item[8].text.extension[0].extension[0].url = "lang"
@@ -478,13 +478,13 @@ Usage: #definition
 * item[8].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[8].answerOption[3].extension.valueDecimal = 3
 
-* item[9].linkId = "phq-phq9-q09"
+* item[9].linkId = "phq-phq2i"
 * item[9].type = #choice
 * item[9].prefix = "9"
 * item[9].code = $LNC#44260-8
 * item[9].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[9].extension[=].valueExpression.language = #text/fhirpath
-* item[9].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
+* item[9].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2i').answer.value, {})"
 * item[9].text = "Thoughts that you would be better off dead or of hurting yourself in some way"
 * item[9].text.extension[0].url = $hl7-translation
 * item[9].text.extension[0].extension[0].url = "lang"
@@ -532,13 +532,13 @@ Usage: #definition
 * item[9].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[9].answerOption[3].extension.valueDecimal = 3
 
-* item[11].linkId = "phq-phq9-q10"
+* item[11].linkId = "phq-phq9-difficulty"
 * item[11].type = #choice
 * item[11].prefix = "10"
 * item[11].code = $LNC#69722-7
 * item[11].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[11].extension[=].valueExpression.language = #text/fhirpath
-* item[11].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
+* item[11].extension[=].valueExpression.expression = "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-difficulty').answer.value, {})"
 * item[11].text = "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
 * item[11].text.extension[0].url = $hl7-translation
 * item[11].text.extension[0].extension[0].url = "lang"
@@ -582,7 +582,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "phq9Score"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
 
 * item[10].linkId = "phq-phq9-score-total"
 * item[10].type = #decimal
