@@ -13,6 +13,8 @@ Usage: #definition
 * code[+] = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 * code[+] = $mii-cs-pro-questionnaire-catalogue#phq-phq9 "PHQ-9 Questionnaire"
 
+* copyright = "Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar."
+
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true
 * extension[capabilities].extension[populatable].valueBoolean = true  // Can be pre-populated from existing responses

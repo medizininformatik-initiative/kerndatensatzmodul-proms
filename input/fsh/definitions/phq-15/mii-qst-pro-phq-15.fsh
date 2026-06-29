@@ -29,6 +29,8 @@ Usage: #definition
 * code[+] = $LNC#69728-4 "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
 * code[+] = $mii-cs-pro-questionnaire-catalogue#phq-phq15 "PHQ-15 Questionnaire"
 
+* copyright = "Patient Health Questionnaire (PHQ/PHQ-15) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar."
+
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true
 * extension[capabilities].extension[calculatable].valueBoolean = true
