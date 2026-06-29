@@ -10,7 +10,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#81533-2 "PROMIS short form - cognitive function 4a - version 2.0 raw score"
+* code.coding[loinc] = $LNC#81533-2 "PROMIS short form - cognitive function 4a - version 2.0 raw score"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-cognitive-function-sf4a-raw "PROMIS Cognitive Function Abilities 4a Raw Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS Cognitive Function SF 4a"
@@ -37,7 +38,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"
+* code.coding[loinc] = $LNC#81538-1 "PROMIS cognitive function - version 2.0 T-score"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-cognitive-function-sf4a-tscore "PROMIS Cognitive Function Abilities 4a T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS Cognitive Function SF 4a"

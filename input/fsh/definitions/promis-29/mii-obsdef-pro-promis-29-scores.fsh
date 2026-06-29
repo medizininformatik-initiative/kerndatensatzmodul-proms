@@ -10,7 +10,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
+* code.coding[loinc] = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-physical-function-tscore "PROMIS-29 Physical Function T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -33,7 +34,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
+* code.coding[loinc] = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-anxiety-tscore "PROMIS-29 Anxiety T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -56,7 +58,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
+* code.coding[loinc] = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-depression-tscore "PROMIS-29 Depression T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -79,7 +82,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
+* code.coding[loinc] = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-fatigue-tscore "PROMIS-29 Fatigue T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -102,7 +106,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
+* code.coding[loinc] = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-sleep-disturbance-tscore "PROMIS-29 Sleep Disturbance T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -125,7 +130,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+* code.coding[loinc] = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-social-function-tscore "PROMIS-29 Ability to Participate in Social Roles and Activities T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -148,7 +154,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
+* code.coding[loinc] = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-pain-interference-tscore "PROMIS-29 Pain Interference T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1"
@@ -171,7 +178,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
+* code.coding[loinc] = $LNC#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-pain-intensity "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.text = "PROMIS-29 Profile v2.1 - Pain Intensity single item"
