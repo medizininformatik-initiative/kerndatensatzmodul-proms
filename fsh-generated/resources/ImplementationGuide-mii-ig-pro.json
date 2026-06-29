@@ -487,7 +487,7 @@
           "reference": "CodeSystem/mii-cs-pro-phq-15-answers"
         },
         "name": "MII CS PRO PHQ-15 Answers",
-        "description": "MII-controlled bother severity answer scale for PHQ-15 (0–2). German primary (PHQ-D). Enables reliable ordinal() score calculation via SDC calculatedExpression.",
+        "description": "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
         "exampleBoolean": false
       },
       {
@@ -1055,7 +1055,7 @@
           "reference": "Questionnaire/mii-qst-pro-phq-15"
         },
         "name": "MII QST PRO PHQ-15",
-        "description": "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity, German primary (PHQ-D)",
+        "description": "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)",
         "exampleBoolean": false
       },
       {

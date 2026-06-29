@@ -65,7 +65,7 @@
             "valueExpression": {
               "name": "rawScore",
               "language": "text/fhirpath",
-              "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+              "expression": "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
             },
             "url": "http://hl7.org/fhir/StructureDefinition/variable"
           },
@@ -73,7 +73,7 @@
             "valueExpression": {
               "name": "phq9Score",
               "language": "text/fhirpath",
-              "expression": "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+              "expression": "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
             },
             "url": "http://hl7.org/fhir/StructureDefinition/variable"
           }
@@ -112,7 +112,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2a').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -239,7 +239,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q01",
+            "linkId": "phq-phq2a",
             "type": "choice",
             "prefix": "1",
             "text": "Little interest or pleasure in doing things",
@@ -272,7 +272,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2b').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -399,7 +399,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q02",
+            "linkId": "phq-phq2b",
             "type": "choice",
             "prefix": "2",
             "text": "Feeling down, depressed, or hopeless",
@@ -432,7 +432,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2c').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -559,7 +559,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q03",
+            "linkId": "phq-phq2c",
             "type": "choice",
             "prefix": "3",
             "text": "Trouble falling or staying asleep, or sleeping too much",
@@ -592,7 +592,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2d').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -719,7 +719,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q04",
+            "linkId": "phq-phq2d",
             "type": "choice",
             "prefix": "4",
             "text": "Feeling tired or having little energy",
@@ -752,7 +752,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2e').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -879,7 +879,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q05",
+            "linkId": "phq-phq2e",
             "type": "choice",
             "prefix": "5",
             "text": "Poor appetite or overeating",
@@ -912,7 +912,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2f').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -1039,7 +1039,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q06",
+            "linkId": "phq-phq2f",
             "type": "choice",
             "prefix": "6",
             "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
@@ -1072,7 +1072,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2g').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -1199,7 +1199,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q07",
+            "linkId": "phq-phq2g",
             "type": "choice",
             "prefix": "7",
             "text": "Trouble concentrating on things, such as reading the newspaper or watching television",
@@ -1232,7 +1232,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2h').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -1359,7 +1359,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q08",
+            "linkId": "phq-phq2h",
             "type": "choice",
             "prefix": "8",
             "text": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
@@ -1392,7 +1392,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2i').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -1519,7 +1519,7 @@
                 ]
               }
             ],
-            "linkId": "phq-phq9-q09",
+            "linkId": "phq-phq2i",
             "type": "choice",
             "prefix": "9",
             "text": "Thoughts that you would be better off dead or of hurting yourself in some way",
@@ -1615,7 +1615,7 @@
               {
                 "valueExpression": {
                   "language": "text/fhirpath",
-                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
+                  "expression": "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-difficulty').answer.value, {})"
                 },
                 "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
               }
@@ -1718,7 +1718,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q10",
+            "linkId": "phq-phq9-difficulty",
             "type": "choice",
             "prefix": "10",
             "text": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
@@ -1807,7 +1807,8 @@
         "version": "2026.4.1",
         "status": "active",
         "experimental": true,
-        "language": "en"
+        "language": "en",
+        "copyright": "Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar."
       }
     },
     {
@@ -1835,7 +1836,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q01"
+            "linkId": "phq-phq2a"
           },
           {
             "answer": [
@@ -1847,7 +1848,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q02"
+            "linkId": "phq-phq2b"
           },
           {
             "answer": [
@@ -1859,7 +1860,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q03"
+            "linkId": "phq-phq2c"
           },
           {
             "answer": [
@@ -1871,7 +1872,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q04"
+            "linkId": "phq-phq2d"
           },
           {
             "answer": [
@@ -1883,7 +1884,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q05"
+            "linkId": "phq-phq2e"
           },
           {
             "answer": [
@@ -1895,7 +1896,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q06"
+            "linkId": "phq-phq2f"
           },
           {
             "answer": [
@@ -1907,7 +1908,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q07"
+            "linkId": "phq-phq2g"
           },
           {
             "answer": [
@@ -1919,7 +1920,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q08"
+            "linkId": "phq-phq2h"
           },
           {
             "answer": [
@@ -1931,7 +1932,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q09"
+            "linkId": "phq-phq2i"
           },
           {
             "answer": [
@@ -1951,7 +1952,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q10"
+            "linkId": "phq-phq9-difficulty"
           }
         ],
         "status": "completed",
