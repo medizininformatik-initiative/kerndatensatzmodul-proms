@@ -146,7 +146,7 @@ Usage: #definition
 * item[5].type = #choice
 * item[5].prefix = "5"
 * item[5].code = $mii-cs-pro-whodas-12#whodas12-q05
-* item[5].text = "Being emotionally affected by your health problems?"
+* item[5].text = "How much have you been emotionally affected by your health problems?"
 * item[5].text.extension[0].url = $hl7-translation
 * item[5].text.extension[0].extension[0].url = "lang"
 * item[5].text.extension[0].extension[0].valueCode = #de
