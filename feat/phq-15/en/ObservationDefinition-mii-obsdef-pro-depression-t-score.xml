@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="mii-obsdef-pro-depression-t-score"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.4.1"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ObservationDefinition mii-obsdef-pro-depression-t-score</b></p><a name="en-mii-obsdef-pro-depression-t-score"> </a><a name="en-hcmii-obsdef-pro-depression-t-score"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-score-blueprint.html">MII PR PRO Score Blueprint / Template</a> version: 2026.4.1</p></div><p><b>ArtifactVersion</b>: 2026.4.1</p><p><b>CQF Citation</b>: Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. JAMA Network Open. 2025;8(6):e2517394</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 77861-3}">PROMIS emotional distress - depression - version 1.0 Tscore</span></p><p><b>permittedDataType</b>: Quantity</p><p><b>multipleResultsAllowed</b>: false</p><p><b>method</b>: <span title="Codes:">PROMIS Depression T-score metric derived from European Health Interview Survey (EHIS) wave 3 cross-cultural validation study</span></p><h3>QuantitativeDetails</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Unit</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://unitsofmeasure.org {score}}">{score}</span></td></tr></table><blockquote><p><b>qualifiedInterval</b></p><p><b>category</b>: reference range</p><p><b>range</b>: 41.8-51.5</p><p><b>context</b>: <span title="Codes:">German general population - EHIS wave 3 (n=22,996): Mean 46.5 (SD 7.7), Median 45.5</span></p><p><b>appliesTo</b>: <span title="Codes:{http://loinc.org LA6112-2}">German general population - EHIS wave 3 (n=22,996)</span></p></blockquote><blockquote><p><b>qualifiedInterval</b></p><p><b>category</b>: reference range</p><p><b>range</b>: 38.06-50.4</p><p><b>context</b>: <span title="Codes:">European male population - EHIS wave 3 (29 countries): Median 44.11</span></p><p><b>appliesTo</b>: <span title="Codes:{http://loinc.org LA6112-2}">European male population - EHIS wave 3 (29 countries)</span>, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender M}">Male</span></p></blockquote><blockquote><p><b>qualifiedInterval</b></p><p><b>category</b>: reference range</p><p><b>range</b>: 40-52.76</p><p><b>context</b>: <span title="Codes:">European female population - EHIS wave 3 (29 countries): Median 46.37</span></p><p><b>appliesTo</b>: <span title="Codes:{http://loinc.org LA6112-2}">European female population - EHIS wave 3 (29 countries)</span>, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender F}">Female</span></p></blockquote><blockquote><p><b>qualifiedInterval</b></p><p><b>category</b>: reference range</p><p><b>range</b>: 39.11-51.68</p><p><b>context</b>: <span title="Codes:">Overall European population median (IQR) - EHIS wave 3, 29 countries (n=287,530)</span></p><p><b>appliesTo</b>: <span title="Codes:{http://loinc.org LA6112-2}">Overall European population - EHIS wave 3, 29 countries (n=287,530)</span></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-version">
+    <valueString value="2026.4.1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-citation">
+    <valueString value="Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. JAMA Network Open. 2025;8(6):e2517394"/>
+  </extension>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="77861-3"/>
+      <display value="PROMIS emotional distress - depression - version 1.0 Tscore"/>
+    </coding>
+  </code>
+  <permittedDataType value="Quantity"/>
+  <multipleResultsAllowed value="false"/>
+  <method>
+    <text value="PROMIS Depression T-score metric derived from European Health Interview Survey (EHIS) wave 3 cross-cultural validation study"/>
+  </method>
+  <quantitativeDetails>
+    <unit>
+      <coding>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{score}"/>
+        <display value="{score}"/>
+      </coding>
+    </unit>
+  </quantitativeDetails>
+  <qualifiedInterval>
+    <category value="reference"/>
+    <range>
+      <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="decrease"/>
+          </coding>
+          <text value="Higher scores indicate worse health (more depression symptoms)"/>
+        </valueCodeableConcept>
+      </extension>
+      <low>
+        <value value="41.8"/>
+      </low>
+      <high>
+        <value value="51.5"/>
+      </high>
+    </range>
+    <context>
+      <text value="German general population - EHIS wave 3 (n=22,996): Mean 46.5 (SD 7.7), Median 45.5"/>
+    </context>
+    <appliesTo>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6112-2"/>
+        <display value="General population"/>
+      </coding>
+      <text value="German general population - EHIS wave 3 (n=22,996)"/>
+    </appliesTo>
+  </qualifiedInterval>
+  <qualifiedInterval>
+    <category value="reference"/>
+    <range>
+      <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="decrease"/>
+          </coding>
+          <text value="Higher scores indicate worse health (more depression symptoms)"/>
+        </valueCodeableConcept>
+      </extension>
+      <low>
+        <value value="38.06"/>
+      </low>
+      <high>
+        <value value="50.4"/>
+      </high>
+    </range>
+    <context>
+      <text value="European male population - EHIS wave 3 (29 countries): Median 44.11"/>
+    </context>
+    <appliesTo>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6112-2"/>
+        <display value="General population"/>
+      </coding>
+      <text value="European male population - EHIS wave 3 (29 countries)"/>
+    </appliesTo>
+    <appliesTo>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+        <code value="M"/>
+        <display value="Male"/>
+      </coding>
+    </appliesTo>
+  </qualifiedInterval>
+  <qualifiedInterval>
+    <category value="reference"/>
+    <range>
+      <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+            <code value="decrease"/>
+          </coding>
+          <text value="Higher scores indicate worse health (more depression symptoms)"/>
+        </valueCodeableConcept>
+      </extension>
+      <low>
+        <value value="40"/>
+      </low>
+      <high>
+        <value value="52.76"/>
+      </high>
+    </range>
+    <context>
+      <text value="European female population - EHIS wave 3 (29 countries): Median 46.37"/>
+    </context>
+    <appliesTo>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6112-2"/>
+        <display value="General population"/>
+      </coding>
+      <text value="European female population - EHIS wave 3 (29 countries)"/>
+    </appliesTo>
+    <appliesTo>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+        <code value="F"/>
+        <display value="Female"/>
+      </coding>
+    </appliesTo>
+  </qualifiedInterval>
+  <qualifiedInterval>
+    <category value="reference"/>
+    <range>
+      <low>
+        <value value="39.11"/>
+      </low>
+      <high>
+        <value value="51.68"/>
+      </high>
+    </range>
+    <context>
+      <text value="Overall European population median (IQR) - EHIS wave 3, 29 countries (n=287,530)"/>
+    </context>
+    <appliesTo>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6112-2"/>
+        <display value="General population"/>
+      </coding>
+      <text value="Overall European population - EHIS wave 3, 29 countries (n=287,530)"/>
+    </appliesTo>
+  </qualifiedInterval>
+</ObservationDefinition>

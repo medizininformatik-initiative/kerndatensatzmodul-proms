@@ -1,0 +1,1564 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>MII CS PRO PRO-CTCAE Item Library - MII IG PRO v2026.4.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"13.85"}
+    h3,h4,h5,h6{--heading-prefix:"13.85"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.4.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li><a name="l253">​</a>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-de.png" alt="flag en" class="flag"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-de.png" alt="flag de" class="flag"/>Deutsch</div>
+
+    <div><a href="../en/CodeSystem-mii-cs-pro-pro-ctcae.html"><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artefaktübersicht</b></a></li><li><b>MII CS PRO PRO-CTCAE Item Library</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+  <!-- layouts\layout-codesystem -->
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrativer Inhalt</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mii-cs-pro-pro-ctcae.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mii-cs-pro-pro-ctcae.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CodeSystem: MII CS PRO PRO-CTCAE Item Library
+(Experimentell)
+  </h2>
+
+  <table class="colsi" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Offizielle URL</i>: <span class="copy-text">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae<button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae" title="Klicken zum Kopieren der URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2026.4.1<button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae|2026.4.1" title="Klicken zum Kopieren der versionierten URL" class="btn-copy"></button></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label for="showChanges" style="margin:0;font-weight:normal">Highlight text changes?</label>
+  
+        <input onchange="toggleChanges()" style="margin:0" id="showChanges" type="checkbox"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Active
+          
+
+            Stand: 
+2026-06-29
+
+          
+        
+      </td>
+
+
+
+      <td><i>Maschinenlesbarer Name</i>: <span style="font-family: monospace;">MII_CS_PRO_PRO_CTCAE</span></td>
+    </tr>
+
+
+
+
+
+    <tr>
+      <td colspan="6"><p><em>Copyright/Rechtliches</em>: PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0.</p>
+
+</p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <p>Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:</p>
+
+  
+<ul>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-frequency.html">MII_VS_PRO_PRO_CTCAE_Frequency</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.html">MII_VS_PRO_PRO_CTCAE_Frequency_Sexual</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-interference.html">MII_VS_PRO_PRO_CTCAE_Interference</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-presence.html">MII_VS_PRO_PRO_CTCAE_Presence</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-presence-na.html">MII_VS_PRO_PRO_CTCAE_Presence_NA</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.html">MII_VS_PRO_PRO_CTCAE_Presence_Sexual</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-severity.html">MII_VS_PRO_PRO_CTCAE_Severity</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.html">MII_VS_PRO_PRO_CTCAE_Severity_Radiation</a></li>
+ <li><a href="ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.html">MII_VS_PRO_PRO_CTCAE_Severity_Sexual</a></li>
+</ul>
+
+
+  <div data-fhir="generated"><p class="res-header-id"></p><a name="mii-cs-pro-pro-ctcae"> </a><a name="hcmii-cs-pro-pro-ctcae"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>attributes</td>
+<td>attributes</td>
+<td>string</td>
+<td>Which item attributes apply to this AE (frq, sev, int, presence)</td></tr>
+<tr><td>rank</td>
+<td>rank</td>
+<td>integer</td>
+<td>Composite grading rank (1=frq, 2=sev, 3=int, 4=frq+sev, 5=frq+int, 6=sev+int, 7=frq+sev+int)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>attributes</b></td><td><b>rank</b></td><td><b>Deutsch (German, de)</b></td></tr>
+<tr><td style="white-space:nowrap">proctcae-frequency-0<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-0"> </a></td>
+<td>Never</td>
+<td></td>
+<td></td>
+<td>Nie</td></tr>
+<tr><td style="white-space:nowrap">proctcae-frequency-1<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-1"> </a></td>
+<td>Rarely</td>
+<td></td>
+<td></td>
+<td>Selten</td></tr>
+<tr><td style="white-space:nowrap">proctcae-frequency-2<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-2"> </a></td>
+<td>Occasionally</td>
+<td></td>
+<td></td>
+<td>Gelegentlich</td></tr>
+<tr><td style="white-space:nowrap">proctcae-frequency-3<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-3"> </a></td>
+<td>Frequently</td>
+<td></td>
+<td></td>
+<td>Häufig</td></tr>
+<tr><td style="white-space:nowrap">proctcae-frequency-4<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-4"> </a></td>
+<td>Almost constantly</td>
+<td></td>
+<td></td>
+<td>Fast immer</td></tr>
+<tr><td style="white-space:nowrap">proctcae-severity-0<a name="mii-cs-pro-pro-ctcae-proctcae-severity-0"> </a></td>
+<td>None</td>
+<td></td>
+<td></td>
+<td>Gar nicht</td></tr>
+<tr><td style="white-space:nowrap">proctcae-severity-1<a name="mii-cs-pro-pro-ctcae-proctcae-severity-1"> </a></td>
+<td>Mild</td>
+<td></td>
+<td></td>
+<td>Ein wenig</td></tr>
+<tr><td style="white-space:nowrap">proctcae-severity-2<a name="mii-cs-pro-pro-ctcae-proctcae-severity-2"> </a></td>
+<td>Moderate</td>
+<td></td>
+<td></td>
+<td>Mäßig</td></tr>
+<tr><td style="white-space:nowrap">proctcae-severity-3<a name="mii-cs-pro-pro-ctcae-proctcae-severity-3"> </a></td>
+<td>Severe</td>
+<td></td>
+<td></td>
+<td>Ziemlich</td></tr>
+<tr><td style="white-space:nowrap">proctcae-severity-4<a name="mii-cs-pro-pro-ctcae-proctcae-severity-4"> </a></td>
+<td>Very severe</td>
+<td></td>
+<td></td>
+<td>Sehr</td></tr>
+<tr><td style="white-space:nowrap">proctcae-interference-0<a name="mii-cs-pro-pro-ctcae-proctcae-interference-0"> </a></td>
+<td>Not at all</td>
+<td></td>
+<td></td>
+<td>Gar nicht</td></tr>
+<tr><td style="white-space:nowrap">proctcae-interference-1<a name="mii-cs-pro-pro-ctcae-proctcae-interference-1"> </a></td>
+<td>A little bit</td>
+<td></td>
+<td></td>
+<td>Ein wenig</td></tr>
+<tr><td style="white-space:nowrap">proctcae-interference-2<a name="mii-cs-pro-pro-ctcae-proctcae-interference-2"> </a></td>
+<td>Somewhat</td>
+<td></td>
+<td></td>
+<td>Mäßig</td></tr>
+<tr><td style="white-space:nowrap">proctcae-interference-3<a name="mii-cs-pro-pro-ctcae-proctcae-interference-3"> </a></td>
+<td>Quite a bit</td>
+<td></td>
+<td></td>
+<td>Ziemlich</td></tr>
+<tr><td style="white-space:nowrap">proctcae-interference-4<a name="mii-cs-pro-pro-ctcae-proctcae-interference-4"> </a></td>
+<td>Very much</td>
+<td></td>
+<td></td>
+<td>Sehr</td></tr>
+<tr><td style="white-space:nowrap">proctcae-presence-0<a name="mii-cs-pro-pro-ctcae-proctcae-presence-0"> </a></td>
+<td>No</td>
+<td></td>
+<td></td>
+<td>Nein</td></tr>
+<tr><td style="white-space:nowrap">proctcae-presence-1<a name="mii-cs-pro-pro-ctcae-proctcae-presence-1"> </a></td>
+<td>Yes</td>
+<td></td>
+<td></td>
+<td>Ja</td></tr>
+<tr><td style="white-space:nowrap">proctcae-optout-not-applicable<a name="mii-cs-pro-pro-ctcae-proctcae-optout-not-applicable"> </a></td>
+<td>Not applicable</td>
+<td></td>
+<td></td>
+<td>Trifft nicht auf mich zu</td></tr>
+<tr><td style="white-space:nowrap">proctcae-optout-not-sexually-active<a name="mii-cs-pro-pro-ctcae-proctcae-optout-not-sexually-active"> </a></td>
+<td>Not sexually active</td>
+<td></td>
+<td></td>
+<td>Nicht sexuell aktiv</td></tr>
+<tr><td style="white-space:nowrap">proctcae-optout-prefer-not-to-answer<a name="mii-cs-pro-pro-ctcae-proctcae-optout-prefer-not-to-answer"> </a></td>
+<td>Prefer not to answer</td>
+<td></td>
+<td></td>
+<td>Möchte nicht antworten</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-01<a name="mii-cs-pro-pro-ctcae-proctcae-ae-01"> </a></td>
+<td>Dry Mouth</td>
+<td>sev</td>
+<td>2</td>
+<td>Mundtrockenheit</td></tr>
+<tr><td style="white-space:nowrap">proctcae-01a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-01a-sev"> </a></td>
+<td>Dry Mouth Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre MUNDTROCKENHEIT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-02<a name="mii-cs-pro-pro-ctcae-proctcae-ae-02"> </a></td>
+<td>Difficulty Swallowing</td>
+<td>sev</td>
+<td>2</td>
+<td>Schwierigkeiten beim Schlucken</td></tr>
+<tr><td style="white-space:nowrap">proctcae-02a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-02a-sev"> </a></td>
+<td>Difficulty Swallowing Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre SCHWIERIGKEITEN BEIM SCHLUCKEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-03<a name="mii-cs-pro-pro-ctcae-proctcae-ae-03"> </a></td>
+<td>Mouth or Throat Sores</td>
+<td>sev int</td>
+<td>6</td>
+<td>Wunde oder offene Stellen in Mund oder Hals</td></tr>
+<tr><td style="white-space:nowrap">proctcae-03a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-03a-sev"> </a></td>
+<td>Mouth or Throat Sores Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie WUNDE ODER OFFENE STELLEN IN MUND ODER HALS im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-03b-int<a name="mii-cs-pro-pro-ctcae-proctcae-03b-int"> </a></td>
+<td>Mouth or Throat Sores Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben WUNDE ODER OFFENE STELLEN IN MUND ODER HALS Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-04<a name="mii-cs-pro-pro-ctcae-proctcae-ae-04"> </a></td>
+<td>Cracking at Corners of Mouth</td>
+<td>sev</td>
+<td>2</td>
+<td>Rissige Mundwinkel</td></tr>
+<tr><td style="white-space:nowrap">proctcae-04a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-04a-sev"> </a></td>
+<td>Cracking at Corners of Mouth Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie RISSIGE MUNDWINKEL im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-05<a name="mii-cs-pro-pro-ctcae-proctcae-ae-05"> </a></td>
+<td>Voice Quality Changes</td>
+<td>presence</td>
+<td></td>
+<td>Veränderung der Stimme</td></tr>
+<tr><td style="white-space:nowrap">proctcae-05a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-05a-yn"> </a></td>
+<td>Voice Quality Changes Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie irgendeine VERÄNDERUNG DER STIMME?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-06<a name="mii-cs-pro-pro-ctcae-proctcae-ae-06"> </a></td>
+<td>Hoarseness</td>
+<td>sev</td>
+<td>2</td>
+<td>Heiserkeit</td></tr>
+<tr><td style="white-space:nowrap">proctcae-06a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-06a-sev"> </a></td>
+<td>Hoarseness Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre HEISERKEIT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-07<a name="mii-cs-pro-pro-ctcae-proctcae-ae-07"> </a></td>
+<td>Taste Changes</td>
+<td>sev</td>
+<td>2</td>
+<td>Geschmacksveränderungen beim Essen oder Trinken</td></tr>
+<tr><td style="white-space:nowrap">proctcae-07a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-07a-sev"> </a></td>
+<td>Taste Changes Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre GESCHMACKSVERÄNDERUNGEN BEIM ESSEN ODER TRINKEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-08<a name="mii-cs-pro-pro-ctcae-proctcae-ae-08"> </a></td>
+<td>Decreased Appetite</td>
+<td>sev int</td>
+<td>6</td>
+<td>Appetitmangel</td></tr>
+<tr><td style="white-space:nowrap">proctcae-08a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-08a-sev"> </a></td>
+<td>Decreased Appetite Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr APPETITMANGEL im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-08b-int<a name="mii-cs-pro-pro-ctcae-proctcae-08b-int"> </a></td>
+<td>Decreased Appetite Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat Ihr APPETITMANGEL Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-09<a name="mii-cs-pro-pro-ctcae-proctcae-ae-09"> </a></td>
+<td>Nausea</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Übelkeit</td></tr>
+<tr><td style="white-space:nowrap">proctcae-09a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-09a-frq"> </a></td>
+<td>Nausea Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie ÜBELKEIT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-09b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-09b-sev"> </a></td>
+<td>Nausea Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre ÜBELKEIT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-10<a name="mii-cs-pro-pro-ctcae-proctcae-ae-10"> </a></td>
+<td>Vomiting</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Erbrechen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-10a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-10a-frq"> </a></td>
+<td>Vomiting Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG mussten Sie ERBRECHEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-10b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-10b-sev"> </a></td>
+<td>Vomiting Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr ERBRECHEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-11<a name="mii-cs-pro-pro-ctcae-proctcae-ae-11"> </a></td>
+<td>Heartburn</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Sodbrennen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-11a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-11a-frq"> </a></td>
+<td>Heartburn Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie SODBRENNEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-11b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-11b-sev"> </a></td>
+<td>Heartburn Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr SODBRENNEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-12<a name="mii-cs-pro-pro-ctcae-proctcae-ae-12"> </a></td>
+<td>Increased Flatulence</td>
+<td>presence</td>
+<td></td>
+<td>Winde lassen (Flatulenz)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-12a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-12a-yn"> </a></td>
+<td>Increased Flatulence Presence</td>
+<td></td>
+<td></td>
+<td>Mussten Sie HÄUFIGER WINDE LASSEN (FLATULENZ)?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-13<a name="mii-cs-pro-pro-ctcae-proctcae-ae-13"> </a></td>
+<td>Bloating</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Einen geblähten Bauch</td></tr>
+<tr><td style="white-space:nowrap">proctcae-13a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-13a-frq"> </a></td>
+<td>Bloating Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie EINEN GEBLÄHTEN BAUCH?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-13b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-13b-sev"> </a></td>
+<td>Bloating Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK GEBLÄHT war Ihr BAUCH im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-14<a name="mii-cs-pro-pro-ctcae-proctcae-ae-14"> </a></td>
+<td>Hiccups</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Schluckauf</td></tr>
+<tr><td style="white-space:nowrap">proctcae-14a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-14a-frq"> </a></td>
+<td>Hiccups Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie SCHLUCKAUF?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-14b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-14b-sev"> </a></td>
+<td>Hiccups Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr SCHLUCKAUF im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-15<a name="mii-cs-pro-pro-ctcae-proctcae-ae-15"> </a></td>
+<td>Constipation</td>
+<td>sev</td>
+<td>2</td>
+<td>Verstopfung</td></tr>
+<tr><td style="white-space:nowrap">proctcae-15a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-15a-sev"> </a></td>
+<td>Constipation Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre VERSTOPFUNG im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-16<a name="mii-cs-pro-pro-ctcae-proctcae-ae-16"> </a></td>
+<td>Diarrhea</td>
+<td>frq</td>
+<td>1</td>
+<td>Durchfall</td></tr>
+<tr><td style="white-space:nowrap">proctcae-16a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-16a-frq"> </a></td>
+<td>Diarrhea Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie DURCHFALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-17<a name="mii-cs-pro-pro-ctcae-proctcae-ae-17"> </a></td>
+<td>Pain in Abdomen</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Bauchschmerzen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-17a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-17a-frq"> </a></td>
+<td>Pain in Abdomen Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie BAUCHSCHMERZEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-17b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-17b-sev"> </a></td>
+<td>Pain in Abdomen Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre BAUCHSCHMERZEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-17c-int<a name="mii-cs-pro-pro-ctcae-proctcae-17c-int"> </a></td>
+<td>Pain in Abdomen Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben BAUCHSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-18<a name="mii-cs-pro-pro-ctcae-proctcae-ae-18"> </a></td>
+<td>Fecal Incontinence</td>
+<td>frq int</td>
+<td>5</td>
+<td>Stuhlgang nicht kontrollieren oder halten können (Stuhlinkontinenz)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-18a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-18a-frq"> </a></td>
+<td>Fecal Incontinence Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG konnten Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-18b-int<a name="mii-cs-pro-pro-ctcae-proctcae-18b-int"> </a></td>
+<td>Fecal Incontinence Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr wurden Sie in Ihren täglichen Aktivitäten GESTÖRT, weil Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN konnten?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-19<a name="mii-cs-pro-pro-ctcae-proctcae-ae-19"> </a></td>
+<td>Shortness of Breath</td>
+<td>sev int</td>
+<td>6</td>
+<td>Kurzatmigkeit</td></tr>
+<tr><td style="white-space:nowrap">proctcae-19a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-19a-sev"> </a></td>
+<td>Shortness of Breath Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre KURZATMIGKEIT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-19b-int<a name="mii-cs-pro-pro-ctcae-proctcae-19b-int"> </a></td>
+<td>Shortness of Breath Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat KURZATMIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-20<a name="mii-cs-pro-pro-ctcae-proctcae-ae-20"> </a></td>
+<td>Cough</td>
+<td>sev int</td>
+<td>6</td>
+<td>Husten</td></tr>
+<tr><td style="white-space:nowrap">proctcae-20a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-20a-sev"> </a></td>
+<td>Cough Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr HUSTEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-20b-int<a name="mii-cs-pro-pro-ctcae-proctcae-20b-int"> </a></td>
+<td>Cough Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat HUSTEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-21<a name="mii-cs-pro-pro-ctcae-proctcae-ae-21"> </a></td>
+<td>Wheezing</td>
+<td>sev</td>
+<td>2</td>
+<td>Giemen (pfeifendes Atemgeräusch) der Lunge</td></tr>
+<tr><td style="white-space:nowrap">proctcae-21a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-21a-sev"> </a></td>
+<td>Wheezing Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie ein GIEMEN (PFEIFENDES ATEMGERÄUSCH) DER LUNGE im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-22<a name="mii-cs-pro-pro-ctcae-proctcae-ae-22"> </a></td>
+<td>Arm or Leg Swelling</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Geschwollene Arme oder Beine</td></tr>
+<tr><td style="white-space:nowrap">proctcae-22a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-22a-frq"> </a></td>
+<td>Arm or Leg Swelling Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie GESCHWOLLENE ARME ODER BEINE?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-22b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-22b-sev"> </a></td>
+<td>Arm or Leg Swelling Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK GESCHWOLLEN waren Ihre ARME ODER BEINE im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-22c-int<a name="mii-cs-pro-pro-ctcae-proctcae-22c-int"> </a></td>
+<td>Arm or Leg Swelling Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben GESCHWOLLENE ARME ODER BEINE Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-23<a name="mii-cs-pro-pro-ctcae-proctcae-ae-23"> </a></td>
+<td>Pounding or Racing Heartbeat</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Herzklopfen, Herzrasen oder unregelmäßiger Puls</td></tr>
+<tr><td style="white-space:nowrap">proctcae-23a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-23a-frq"> </a></td>
+<td>Pounding or Racing Heartbeat Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie HERZKLOPFEN, HERZRASEN ODER EINEN UNREGELMÄSSIGEN PULS?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-23b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-23b-sev"> </a></td>
+<td>Pounding or Racing Heartbeat Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihr HERZKLOPFEN, HERZRASEN ODER UNREGELMÄSSIGER PULS im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-24<a name="mii-cs-pro-pro-ctcae-proctcae-ae-24"> </a></td>
+<td>Rash</td>
+<td>presence</td>
+<td></td>
+<td>Hautausschlag</td></tr>
+<tr><td style="white-space:nowrap">proctcae-24a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-24a-yn"> </a></td>
+<td>Rash Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie einen HAUTAUSSCHLAG?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-25<a name="mii-cs-pro-pro-ctcae-proctcae-ae-25"> </a></td>
+<td>Skin Dryness</td>
+<td>sev</td>
+<td>2</td>
+<td>Trockene Haut</td></tr>
+<tr><td style="white-space:nowrap">proctcae-25a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-25a-sev"> </a></td>
+<td>Skin Dryness Severity</td>
+<td></td>
+<td></td>
+<td>Wie TROCKEN war Ihre Haut im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-26<a name="mii-cs-pro-pro-ctcae-proctcae-ae-26"> </a></td>
+<td>Acne</td>
+<td>sev</td>
+<td>2</td>
+<td>Akne oder Pickel im Gesicht oder auf dem Brustkorb</td></tr>
+<tr><td style="white-space:nowrap">proctcae-26a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-26a-sev"> </a></td>
+<td>Acne Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK ausgeprägt hatten Sie AKNE ODER PICKEL IM GESICHT ODER AUF DEM BRUSTKORB im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-27<a name="mii-cs-pro-pro-ctcae-proctcae-ae-27"> </a></td>
+<td>Hair Loss</td>
+<td>int</td>
+<td>3</td>
+<td>Haarausfall</td></tr>
+<tr><td style="white-space:nowrap">proctcae-27a-int<a name="mii-cs-pro-pro-ctcae-proctcae-27a-int"> </a></td>
+<td>Hair Loss Amount</td>
+<td></td>
+<td></td>
+<td>Hatten Sie HAARAUSFALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-28<a name="mii-cs-pro-pro-ctcae-proctcae-ae-28"> </a></td>
+<td>Itching</td>
+<td>sev</td>
+<td>2</td>
+<td>Juckreiz</td></tr>
+<tr><td style="white-space:nowrap">proctcae-28a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-28a-sev"> </a></td>
+<td>Itching Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war IHR JUCKREIZ im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-29<a name="mii-cs-pro-pro-ctcae-proctcae-ae-29"> </a></td>
+<td>Hives</td>
+<td>presence</td>
+<td></td>
+<td>Nesselfieber (eine juckende, rote Hautschwellung)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-29a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-29a-yn"> </a></td>
+<td>Hives Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie NESSELFIEBER (EINE JUCKENDE, ROTE HAUTSCHWELLUNG)?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-30<a name="mii-cs-pro-pro-ctcae-proctcae-ae-30"> </a></td>
+<td>Hand-Foot Syndrome</td>
+<td>sev</td>
+<td>2</td>
+<td>Hand-Fuss-Syndrom (ein Hautausschlag der Hände oder Füße, der Brennen, Abschälen der Haut, Rötung oder Schmerzen machen kann)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-30a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-30a-sev"> </a></td>
+<td>Hand-Foot Syndrome Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr HAND-FUSS-SYNDROM im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-31<a name="mii-cs-pro-pro-ctcae-proctcae-ae-31"> </a></td>
+<td>Nail Loss</td>
+<td>presence</td>
+<td></td>
+<td>Verlust von Finger- oder Fußnägeln</td></tr>
+<tr><td style="white-space:nowrap">proctcae-31a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-31a-yn"> </a></td>
+<td>Nail Loss Presence</td>
+<td></td>
+<td></td>
+<td>Sind Ihnen FINGER- ODER FUSSNÄGEL AUSGEFALLEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-32<a name="mii-cs-pro-pro-ctcae-proctcae-ae-32"> </a></td>
+<td>Nail Ridging</td>
+<td>presence</td>
+<td></td>
+<td>Furchen oder Unebenheiten der Finger- oder Fußnägel</td></tr>
+<tr><td style="white-space:nowrap">proctcae-32a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-32a-yn"> </a></td>
+<td>Nail Ridging Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie FURCHEN ODER UNEBENHEITEN DER FINGER- ODER FUSSNÄGEL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-33<a name="mii-cs-pro-pro-ctcae-proctcae-ae-33"> </a></td>
+<td>Nail Discoloration</td>
+<td>presence</td>
+<td></td>
+<td>Veränderungen der Farbe von Finger- oder Fußnägeln</td></tr>
+<tr><td style="white-space:nowrap">proctcae-33a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-33a-yn"> </a></td>
+<td>Nail Discoloration Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie VERÄNDERUNGEN DER FARBE VON FINGER- ODER FUSSNÄGELN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-34<a name="mii-cs-pro-pro-ctcae-proctcae-ae-34"> </a></td>
+<td>Sensitivity to Sunlight</td>
+<td>presence</td>
+<td></td>
+<td>Erhöhte Sonnenlichtempfindlichkeit der Haut</td></tr>
+<tr><td style="white-space:nowrap">proctcae-34a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-34a-yn"> </a></td>
+<td>Sensitivity to Sunlight Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie eine ERHÖHTE SONNENLICHTEMPFINDLICHKEIT DER HAUT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-35<a name="mii-cs-pro-pro-ctcae-proctcae-ae-35"> </a></td>
+<td>Bed Sores</td>
+<td>presence</td>
+<td></td>
+<td>Druckstellen (Dekubitus)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-35a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-35a-yn"> </a></td>
+<td>Bed Sores Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie DRUCKSTELLEN (DEKUBITUS)?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-36<a name="mii-cs-pro-pro-ctcae-proctcae-ae-36"> </a></td>
+<td>Radiation Skin Reaction</td>
+<td>sev</td>
+<td>2</td>
+<td>Hautverbrennungen nach einer Bestrahlung</td></tr>
+<tr><td style="white-space:nowrap">proctcae-36a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-36a-sev"> </a></td>
+<td>Radiation Skin Reaction Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK ausgeprägt waren Ihre HAUTVERBRENNUNGEN NACH EINER BESTRAHLUNG im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-37<a name="mii-cs-pro-pro-ctcae-proctcae-ae-37"> </a></td>
+<td>Skin Darkening</td>
+<td>presence</td>
+<td></td>
+<td>Ungewöhnliche dunkle Veränderung der Haut</td></tr>
+<tr><td style="white-space:nowrap">proctcae-37a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-37a-yn"> </a></td>
+<td>Skin Darkening Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie eine UNGEWÖHNLICHE DUNKLE VERÄNDERUNG DER HAUT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-38<a name="mii-cs-pro-pro-ctcae-proctcae-ae-38"> </a></td>
+<td>Stretch Marks</td>
+<td>presence</td>
+<td></td>
+<td>Dehnungsstreifen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-38a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-38a-yn"> </a></td>
+<td>Stretch Marks Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie DEHNUNGSSTREIFEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-39<a name="mii-cs-pro-pro-ctcae-proctcae-ae-39"> </a></td>
+<td>Numbness and Tingling</td>
+<td>sev int</td>
+<td>6</td>
+<td>Taubheit oder Kribbeln in Händen oder Füßen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-39a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-39a-sev"> </a></td>
+<td>Numbness and Tingling Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-39b-int<a name="mii-cs-pro-pro-ctcae-proctcae-39b-int"> </a></td>
+<td>Numbness and Tingling Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-40<a name="mii-cs-pro-pro-ctcae-proctcae-ae-40"> </a></td>
+<td>Dizziness</td>
+<td>sev int</td>
+<td>6</td>
+<td>Schwindel</td></tr>
+<tr><td style="white-space:nowrap">proctcae-40a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-40a-sev"> </a></td>
+<td>Dizziness Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr SCHWINDEL im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-40b-int<a name="mii-cs-pro-pro-ctcae-proctcae-40b-int"> </a></td>
+<td>Dizziness Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat SCHWINDEL Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-41<a name="mii-cs-pro-pro-ctcae-proctcae-ae-41"> </a></td>
+<td>Blurred Vision</td>
+<td>sev int</td>
+<td>6</td>
+<td>Verschwommenes Sehen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-41a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-41a-sev"> </a></td>
+<td>Blurred Vision Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK VERSCHWOMMEN haben Sie im SCHLIMMSTEN FALL GESEHEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-41b-int<a name="mii-cs-pro-pro-ctcae-proctcae-41b-int"> </a></td>
+<td>Blurred Vision Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat Sie VERSCHWOMMENES SEHEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-42<a name="mii-cs-pro-pro-ctcae-proctcae-ae-42"> </a></td>
+<td>Flashing Lights</td>
+<td>presence</td>
+<td></td>
+<td>Blitze vor den Augen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-42a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-42a-yn"> </a></td>
+<td>Flashing Lights Presence</td>
+<td></td>
+<td></td>
+<td>Haben Sie BLITZE VOR DEN AUGEN gesehen?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-43<a name="mii-cs-pro-pro-ctcae-proctcae-ae-43"> </a></td>
+<td>Visual Floaters</td>
+<td>presence</td>
+<td></td>
+<td>Schwimmende Punkte, Linien oder Mücken vor den Augen (Mouches volantes)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-43a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-43a-yn"> </a></td>
+<td>Visual Floaters Presence</td>
+<td></td>
+<td></td>
+<td>Sahen Sie SCHWIMMENDE PUNKTE, LINIEN ODER MÜCKEN VOR DEN AUGEN (MOUCHES VOLANTES)?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-44<a name="mii-cs-pro-pro-ctcae-proctcae-ae-44"> </a></td>
+<td>Watery Eyes</td>
+<td>sev int</td>
+<td>6</td>
+<td>Tränende Augen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-44a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-44a-sev"> </a></td>
+<td>Watery Eyes Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie TRÄNENDE AUGEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-44b-int<a name="mii-cs-pro-pro-ctcae-proctcae-44b-int"> </a></td>
+<td>Watery Eyes Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben TRÄNENDE AUGEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-45<a name="mii-cs-pro-pro-ctcae-proctcae-ae-45"> </a></td>
+<td>Ringing in Ears</td>
+<td>sev</td>
+<td>2</td>
+<td>Ohrgeräusche (z. B. Pfeifen in den Ohren)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-45a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-45a-sev"> </a></td>
+<td>Ringing in Ears Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre OHRGERÄUSCHE (Z. B. PFEIFEN IN DEN OHREN) im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-46<a name="mii-cs-pro-pro-ctcae-proctcae-ae-46"> </a></td>
+<td>Concentration</td>
+<td>sev int</td>
+<td>6</td>
+<td>Probleme sich zu konzentrieren</td></tr>
+<tr><td style="white-space:nowrap">proctcae-46a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-46a-sev"> </a></td>
+<td>Concentration Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre PROBLEME SICH ZU KONZENTRIEREN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-46b-int<a name="mii-cs-pro-pro-ctcae-proctcae-46b-int"> </a></td>
+<td>Concentration Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben Ihre PROBLEME SICH ZU KONZENTRIEREN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-47<a name="mii-cs-pro-pro-ctcae-proctcae-ae-47"> </a></td>
+<td>Memory</td>
+<td>sev int</td>
+<td>6</td>
+<td>Probleme mit dem Gedächtnis (Vergesslichkeit)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-47a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-47a-sev"> </a></td>
+<td>Memory Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-47b-int<a name="mii-cs-pro-pro-ctcae-proctcae-47b-int"> </a></td>
+<td>Memory Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben Sie Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-48<a name="mii-cs-pro-pro-ctcae-proctcae-ae-48"> </a></td>
+<td>General Pain</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Schmerzen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-48a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-48a-frq"> </a></td>
+<td>General Pain Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie SCHMERZEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-48b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-48b-sev"> </a></td>
+<td>General Pain Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre SCHMERZEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-48c-int<a name="mii-cs-pro-pro-ctcae-proctcae-48c-int"> </a></td>
+<td>General Pain Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben SCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-49<a name="mii-cs-pro-pro-ctcae-proctcae-ae-49"> </a></td>
+<td>Headache</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Kopfschmerzen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-49a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-49a-frq"> </a></td>
+<td>Headache Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie KOPFSCHMERZEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-49b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-49b-sev"> </a></td>
+<td>Headache Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre KOPFSCHMERZEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-49c-int<a name="mii-cs-pro-pro-ctcae-proctcae-49c-int"> </a></td>
+<td>Headache Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben KOPFSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-50<a name="mii-cs-pro-pro-ctcae-proctcae-ae-50"> </a></td>
+<td>Muscle Pain</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Muskelschmerzen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-50a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-50a-frq"> </a></td>
+<td>Muscle Pain Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie MUSKELSCHMERZEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-50b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-50b-sev"> </a></td>
+<td>Muscle Pain Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie MUSKELSCHMERZEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-50c-int<a name="mii-cs-pro-pro-ctcae-proctcae-50c-int"> </a></td>
+<td>Muscle Pain Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben MUSKELSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-51<a name="mii-cs-pro-pro-ctcae-proctcae-ae-51"> </a></td>
+<td>Joint Pain</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Gelenkschmerzen (z. B. Ellenbogen, Knie, Schultern)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-51a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-51a-frq"> </a></td>
+<td>Joint Pain Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN)?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-51b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-51b-sev"> </a></td>
+<td>Joint Pain Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-51c-int<a name="mii-cs-pro-pro-ctcae-proctcae-51c-int"> </a></td>
+<td>Joint Pain Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-52<a name="mii-cs-pro-pro-ctcae-proctcae-ae-52"> </a></td>
+<td>Insomnia</td>
+<td>sev int</td>
+<td>6</td>
+<td>Probleme beim Schlafen (wie z. B. Schwierigkeiten beim Einschlafen, Durchschlafen oder zu frühes Aufwachen)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-52a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-52a-sev"> </a></td>
+<td>Insomnia Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre PROBLEME BEIM SCHLAFEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-52b-int<a name="mii-cs-pro-pro-ctcae-proctcae-52b-int"> </a></td>
+<td>Insomnia Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben PROBLEME BEIM SCHLAFEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-53<a name="mii-cs-pro-pro-ctcae-proctcae-ae-53"> </a></td>
+<td>Fatigue</td>
+<td>sev int</td>
+<td>6</td>
+<td>Müdigkeit, Erschöpfung oder fehlende Energie</td></tr>
+<tr><td style="white-space:nowrap">proctcae-53a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-53a-sev"> </a></td>
+<td>Fatigue Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-53b-int<a name="mii-cs-pro-pro-ctcae-proctcae-53b-int"> </a></td>
+<td>Fatigue Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr haben MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-54<a name="mii-cs-pro-pro-ctcae-proctcae-ae-54"> </a></td>
+<td>Anxiety</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Angst</td></tr>
+<tr><td style="white-space:nowrap">proctcae-54a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-54a-frq"> </a></td>
+<td>Anxiety Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie ANGST?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-54b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-54b-sev"> </a></td>
+<td>Anxiety Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre ANGST im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-54c-int<a name="mii-cs-pro-pro-ctcae-proctcae-54c-int"> </a></td>
+<td>Anxiety Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat ANGST Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-55<a name="mii-cs-pro-pro-ctcae-proctcae-ae-55"> </a></td>
+<td>Discouraged</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Mutlosigkeit (Gefühl, dass einen nichts aufmuntern kann)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-55a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-55a-frq"> </a></td>
+<td>Discouraged Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-55b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-55b-sev"> </a></td>
+<td>Discouraged Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE, im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-55c-int<a name="mii-cs-pro-pro-ctcae-proctcae-55c-int"> </a></td>
+<td>Discouraged Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-56<a name="mii-cs-pro-pro-ctcae-proctcae-ae-56"> </a></td>
+<td>Sad</td>
+<td>frq sev int</td>
+<td>7</td>
+<td>Traurigkeit</td></tr>
+<tr><td style="white-space:nowrap">proctcae-56a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-56a-frq"> </a></td>
+<td>Sad Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG waren Sie TRAURIG?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-56b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-56b-sev"> </a></td>
+<td>Sad Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre TRAURIGKEIT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-56c-int<a name="mii-cs-pro-pro-ctcae-proctcae-56c-int"> </a></td>
+<td>Sad Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat Ihre TRAURIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-57<a name="mii-cs-pro-pro-ctcae-proctcae-ae-57"> </a></td>
+<td>Irregular Periods</td>
+<td>presence</td>
+<td></td>
+<td>Unregelmäßige Regelblutung</td></tr>
+<tr><td style="white-space:nowrap">proctcae-57a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-57a-yn"> </a></td>
+<td>Irregular Periods Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie eine UNREGELMÄSSIGE REGELBLUTUNG?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-58<a name="mii-cs-pro-pro-ctcae-proctcae-ae-58"> </a></td>
+<td>Missed Expected Menstrual Period</td>
+<td>presence</td>
+<td></td>
+<td>Ausbleiben einer erwarteten Regelblutung</td></tr>
+<tr><td style="white-space:nowrap">proctcae-58a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-58a-yn"> </a></td>
+<td>Missed Periods Presence</td>
+<td></td>
+<td></td>
+<td>Ist bei Ihnen eine ERWARTETE REGELBLUTUNG ausgeblieben?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-59<a name="mii-cs-pro-pro-ctcae-proctcae-ae-59"> </a></td>
+<td>Vaginal Discharge</td>
+<td>int</td>
+<td>3</td>
+<td>Ungewöhnlicher Ausfluss der Scheide</td></tr>
+<tr><td style="white-space:nowrap">proctcae-59a-int<a name="mii-cs-pro-pro-ctcae-proctcae-59a-int"> </a></td>
+<td>Vaginal Discharge Interference</td>
+<td></td>
+<td></td>
+<td>Hatten Sie einen UNGEWÖHNLICHEN AUSFLUSS DER SCHEIDE?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-60<a name="mii-cs-pro-pro-ctcae-proctcae-ae-60"> </a></td>
+<td>Vaginal Dryness</td>
+<td>sev</td>
+<td>2</td>
+<td>Scheidentrockenheit</td></tr>
+<tr><td style="white-space:nowrap">proctcae-60a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-60a-sev"> </a></td>
+<td>Vaginal Dryness Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihre SCHEIDENTROCKENHEIT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-61<a name="mii-cs-pro-pro-ctcae-proctcae-ae-61"> </a></td>
+<td>Painful Urination</td>
+<td>sev</td>
+<td>2</td>
+<td>Schmerzen oder Brennen beim Wasserlassen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-61a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-61a-sev"> </a></td>
+<td>Painful Urination Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre SCHMERZEN ODER BRENNEN BEIM WASSERLASSEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-62<a name="mii-cs-pro-pro-ctcae-proctcae-ae-62"> </a></td>
+<td>Urinary Urgency</td>
+<td>frq int</td>
+<td>5</td>
+<td>Plötzlicher starker Drang zum Wasserlassen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-62a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-62a-frq"> </a></td>
+<td>Urinary Urgency Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie einen PLÖTZLICHEN STARKEN DRANG ZUM WASSERLASSEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-62b-int<a name="mii-cs-pro-pro-ctcae-proctcae-62b-int"> </a></td>
+<td>Urinary Urgency Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr wurden Sie durch einen PLÖTZLICHEN STARKEN DRANG ZUM WASSERLASSEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-63<a name="mii-cs-pro-pro-ctcae-proctcae-ae-63"> </a></td>
+<td>Urinary Frequency</td>
+<td>frq int</td>
+<td>5</td>
+<td>Häufiges Wasserlassen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-63a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-63a-frq"> </a></td>
+<td>Urinary Frequency Frequency</td>
+<td></td>
+<td></td>
+<td>Mussten Sie HÄUFIGER WASSER LASSEN als üblich?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-63b-int<a name="mii-cs-pro-pro-ctcae-proctcae-63b-int"> </a></td>
+<td>Urinary Frequency Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr hat Sie HÄUFIGES WASSERLASSEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-64<a name="mii-cs-pro-pro-ctcae-proctcae-ae-64"> </a></td>
+<td>Urine Color Change</td>
+<td>presence</td>
+<td></td>
+<td>Ungewöhnliche Veränderung der Urinfarbe</td></tr>
+<tr><td style="white-space:nowrap">proctcae-64a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-64a-yn"> </a></td>
+<td>Urine Color Change Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie eine UNGEWÖHNLICHE VERÄNDERUNG DER URINFARBE?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-65<a name="mii-cs-pro-pro-ctcae-proctcae-ae-65"> </a></td>
+<td>Urinary Incontinence</td>
+<td>frq int</td>
+<td>5</td>
+<td>Urin nicht halten können (Urininkontinenz)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-65a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-65a-frq"> </a></td>
+<td>Urinary Incontinence Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG konnten Sie Ihren URIN NICHT HALTEN (URININKONTINENZ)?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-65b-int<a name="mii-cs-pro-pro-ctcae-proctcae-65b-int"> </a></td>
+<td>Urinary Incontinence Interference</td>
+<td></td>
+<td></td>
+<td>Wie sehr wurden Sie in Ihren täglichen Aktivitäten GESTÖRT, weil Sie Ihren URIN NICHT HALTEN KONNTEN (URININKONTINENZ)?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-66<a name="mii-cs-pro-pro-ctcae-proctcae-ae-66"> </a></td>
+<td>Achieve and Maintain Erection</td>
+<td>sev</td>
+<td>2</td>
+<td>Probleme eine Erektion zu bekommen oder zu halten</td></tr>
+<tr><td style="white-space:nowrap">proctcae-66a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-66a-sev"> </a></td>
+<td>Erection Difficulty Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre PROBLEME EINE EREKTION ZU BEKOMMEN ODER ZU HALTEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-67<a name="mii-cs-pro-pro-ctcae-proctcae-ae-67"> </a></td>
+<td>Ejaculation</td>
+<td>frq</td>
+<td>1</td>
+<td>Probleme einen Samenerguss zu bekommen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-67a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-67a-frq"> </a></td>
+<td>Ejaculation Problems Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie PROBLEME EINEN SAMENERGUSS ZU BEKOMMEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-68<a name="mii-cs-pro-pro-ctcae-proctcae-ae-68"> </a></td>
+<td>Decreased Libido</td>
+<td>sev</td>
+<td>2</td>
+<td>Weniger Interesse an Sexualität</td></tr>
+<tr><td style="white-space:nowrap">proctcae-68a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-68a-sev"> </a></td>
+<td>Decreased Sexual Interest Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK vermindert war Ihr INTERESSE AN SEXUALITÄT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-69<a name="mii-cs-pro-pro-ctcae-proctcae-ae-69"> </a></td>
+<td>Delayed Orgasm</td>
+<td>presence</td>
+<td></td>
+<td>Es dauert zu lange bis man einen Orgasmus oder Höhepunkt bekommen kann</td></tr>
+<tr><td style="white-space:nowrap">proctcae-69a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-69a-yn"> </a></td>
+<td>Delayed Orgasm Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie das Gefühl, dass es ZU LANGE DAUERT BIS SIE EINEN ORGASMUS ODER HÖHEPUNKT BEKOMMEN KÖNNEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-70<a name="mii-cs-pro-pro-ctcae-proctcae-ae-70"> </a></td>
+<td>Unable to Have Orgasm</td>
+<td>presence</td>
+<td></td>
+<td>Nicht in der Lage sein, einen Orgasmus oder Höhepunkt zu bekommen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-70a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-70a-yn"> </a></td>
+<td>Unable to Have Orgasm Presence</td>
+<td></td>
+<td></td>
+<td>Waren Sie nicht IN DER LAGE EINEN ORGASMUS ODER HÖHEPUNKT ZU BEKOMMEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-71<a name="mii-cs-pro-pro-ctcae-proctcae-ae-71"> </a></td>
+<td>Pain with Sexual Intercourse</td>
+<td>sev</td>
+<td>2</td>
+<td>Schmerzen der Scheide beim Geschlechtsverkehr</td></tr>
+<tr><td style="white-space:nowrap">proctcae-71a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-71a-sev"> </a></td>
+<td>Pain During Vaginal Sex Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre SCHMERZEN DER SCHEIDE BEIM GESCHLECHTSVERKEHR im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-72<a name="mii-cs-pro-pro-ctcae-proctcae-ae-72"> </a></td>
+<td>Breast Swelling and Tenderness</td>
+<td>sev</td>
+<td>2</td>
+<td>Schwellung oder Druckempfindlichkeit der Brust</td></tr>
+<tr><td style="white-space:nowrap">proctcae-72a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-72a-sev"> </a></td>
+<td>Breast Swelling and Tenderness Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie eine SCHWELLUNG ODER DRUCKEMPFINDLICHKEIT DER BRUST im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-73<a name="mii-cs-pro-pro-ctcae-proctcae-ae-73"> </a></td>
+<td>Bruising</td>
+<td>presence</td>
+<td></td>
+<td>Leicht blaue Flecken bekommen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-73a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-73a-yn"> </a></td>
+<td>Bruising Presence</td>
+<td></td>
+<td></td>
+<td>Haben Sie LEICHT BLAUE FLECKEN BEKOMMEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-74<a name="mii-cs-pro-pro-ctcae-proctcae-ae-74"> </a></td>
+<td>Chills</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Schüttelfrost</td></tr>
+<tr><td style="white-space:nowrap">proctcae-74a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-74a-frq"> </a></td>
+<td>Chills Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie SCHÜTTELFROST?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-74b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-74b-sev"> </a></td>
+<td>Chills Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr SCHÜTTELFROST im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-75<a name="mii-cs-pro-pro-ctcae-proctcae-ae-75"> </a></td>
+<td>Increased Sweating</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Unerwartetes oder starkes Schwitzen während des Tages oder der Nacht (nicht in Verbindung mit Hitzewallungen)</td></tr>
+<tr><td style="white-space:nowrap">proctcae-75a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-75a-frq"> </a></td>
+<td>Increased Sweating Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie UNERWARTETES ODER STARKES SCHWITZEN WÄHREND DES TAGES ODER DER NACHT?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-75b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-75b-sev"> </a></td>
+<td>Increased Sweating Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK hatten Sie UNERWARTETES ODER STARKES SCHWITZEN WÄHREND DES TAGES ODER DER NACHT im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-76<a name="mii-cs-pro-pro-ctcae-proctcae-ae-76"> </a></td>
+<td>Decreased Sweating</td>
+<td>presence</td>
+<td></td>
+<td>Vermindertes Schwitzen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-76a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-76a-yn"> </a></td>
+<td>Decreased Sweating Presence</td>
+<td></td>
+<td></td>
+<td>Konnten Sie UNERWARTET WENIGER SCHWITZEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-77<a name="mii-cs-pro-pro-ctcae-proctcae-ae-77"> </a></td>
+<td>Hot Flashes</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Hitzewallungen</td></tr>
+<tr><td style="white-space:nowrap">proctcae-77a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-77a-frq"> </a></td>
+<td>Hot Flashes Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie HITZEWALLUNGEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-77b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-77b-sev"> </a></td>
+<td>Hot Flashes Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK waren Ihre HITZEWALLUNGEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-78<a name="mii-cs-pro-pro-ctcae-proctcae-ae-78"> </a></td>
+<td>Nosebleed</td>
+<td>frq sev</td>
+<td>4</td>
+<td>Nasenbluten</td></tr>
+<tr><td style="white-space:nowrap">proctcae-78a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-78a-frq"> </a></td>
+<td>Nosebleed Frequency</td>
+<td></td>
+<td></td>
+<td>Wie HÄUFIG hatten Sie NASENBLUTEN?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-78b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-78b-sev"> </a></td>
+<td>Nosebleed Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr NASENBLUTEN im SCHLIMMSTEN FALL?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-79<a name="mii-cs-pro-pro-ctcae-proctcae-ae-79"> </a></td>
+<td>Pain and Swelling at Injection Site</td>
+<td>presence</td>
+<td></td>
+<td>Schmerzen, Schwellung oder Rötung der Haut an einer Einstichstelle von einer Infusion oder Spritze</td></tr>
+<tr><td style="white-space:nowrap">proctcae-79a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-79a-yn"> </a></td>
+<td>Injection Site Reaction Presence</td>
+<td></td>
+<td></td>
+<td>Hatten Sie SCHMERZEN, EINE SCHWELLUNG ODER RÖTUNG DER HAUT AN EINER EINSTICHSTELLE VON EINER INFUSION ODER SPRITZE?</td></tr>
+<tr><td style="white-space:nowrap">proctcae-ae-80<a name="mii-cs-pro-pro-ctcae-proctcae-ae-80"> </a></td>
+<td>Body Odor</td>
+<td>sev</td>
+<td>2</td>
+<td>Körpergeruch</td></tr>
+<tr><td style="white-space:nowrap">proctcae-80a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-80a-sev"> </a></td>
+<td>Body Odor Severity</td>
+<td></td>
+<td></td>
+<td>Wie STARK war Ihr KÖRPERGERUCH im SCHLIMMSTEN FALL?</td></tr></table></div>
+
+  <hr/>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology">Beschreibung der obigen Tabelle(n)</a>.
+  </p>
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-06-29 08:28:00 +0000">
+    2026-06-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

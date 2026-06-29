@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-pro-pro-ctcae-presence-sexual",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-pro-pro-ctcae-presence-sexual</b></p><a name=\"en-mii-vs-pro-pro-ctcae-presence-sexual\"> </a><a name=\"en-hcmii-vs-pro-pro-ctcae-presence-sexual\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-mii-cs-pro-pro-ctcae.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2026.4.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-presence-1\">proctcae-presence-1</a></td><td style=\"color: #cccccc\">Yes</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-presence-0\">proctcae-presence-0</a></td><td style=\"color: #cccccc\">No</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-optout-not-sexually-active\">proctcae-optout-not-sexually-active</a></td><td style=\"color: #cccccc\">Not sexually active</td></tr><tr><td><a href=\"CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-optout-prefer-not-to-answer\">proctcae-optout-prefer-not-to-answer</a></td><td style=\"color: #cccccc\">Prefer not to answer</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-sexual",
+  "version" : "2026.4.1",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Presence_Sexual",
+  "title" : "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-06-29T08:28:41+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "4-option presence scale for sexual function: Yes / No / Not sexually active / Prefer not to answer",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+      "concept" : [{
+        "code" : "proctcae-presence-1"
+      },
+      {
+        "code" : "proctcae-presence-0"
+      },
+      {
+        "code" : "proctcae-optout-not-sexually-active"
+      },
+      {
+        "code" : "proctcae-optout-prefer-not-to-answer"
+      }]
+    }]
+  }
+}

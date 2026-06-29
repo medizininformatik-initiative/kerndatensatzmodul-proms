@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Terminology Strategies - MII IG PRO v2026.4.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"5.4"}
+    h3,h4,h5,h6{--heading-prefix:"5.4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.4.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li><a name="l253">​</a>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+
+    <div><a href="../de/terminology-strategies.html"><img src="assets/images/lang-de.png" alt="flag de" class="flag"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="technical-implementation.html"><b>Technical Implementation</b></a></li><li><b>Terminology Strategies</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Terminology Strategies</h2>
+  
+
+
+
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found <a href="translationinfo.html">here</a>.</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview-of-terminology-approaches" id="markdown-toc-overview-of-terminology-approaches">Overview of Terminology Approaches</a></li>
+  <li><a href="#strategic-decision-criteria" id="markdown-toc-strategic-decision-criteria">Strategic Decision Criteria</a>    <ul>
+      <li><a href="#using-inline-answeroption" id="markdown-toc-using-inline-answeroption">Using Inline answerOption</a></li>
+      <li><a href="#using-answervalueset-with-mii-codesystem" id="markdown-toc-using-answervalueset-with-mii-codesystem">Using answerValueSet with MII CodeSystem</a></li>
+    </ul>
+  </li>
+  <li><a href="#decision-matrix" id="markdown-toc-decision-matrix">Decision Matrix</a></li>
+  <li><a href="#visual-overview" id="markdown-toc-visual-overview">Visual Overview</a></li>
+  <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a>    <ul>
+      <li><a href="#example-1-phq-9-loinc--inline" id="markdown-toc-example-1-phq-9-loinc--inline">Example 1: PHQ-9 (LOINC + Inline)</a></li>
+      <li><a href="#example-2-bdi-ii-mii-codesystem--valueset" id="markdown-toc-example-2-bdi-ii-mii-codesystem--valueset">Example 2: BDI-II (MII CodeSystem + ValueSet)</a></li>
+      <li><a href="#example-3-eq-5d-5l-simple-inline" id="markdown-toc-example-3-eq-5d-5l-simple-inline">Example 3: EQ-5D-5L (Simple Inline)</a></li>
+    </ul>
+  </li>
+  <li><a href="#calculated-expressions-and-weight-functions" id="markdown-toc-calculated-expressions-and-weight-functions">Calculated Expressions and .weight() Functions</a>    <ul>
+      <li><a href="#with-inline-answeroption" id="markdown-toc-with-inline-answeroption">With Inline answerOption:</a></li>
+      <li><a href="#with-codesystem--valueset" id="markdown-toc-with-codesystem--valueset">With CodeSystem + ValueSet:</a></li>
+    </ul>
+  </li>
+  <li><a href="#governance-and-lifecycle-management" id="markdown-toc-governance-and-lifecycle-management">Governance and Lifecycle Management</a>    <ul>
+      <li><a href="#mii-terminology" id="markdown-toc-mii-terminology">MII Terminology</a></li>
+      <li><a href="#international-standards-integration" id="markdown-toc-international-standards-integration">International Standards Integration</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
+
+</div>
+<h2 id="overview-of-terminology-approaches">Overview of Terminology Approaches</h2>
+
+<p>The MII PRO module supports three fundamental approaches for defining answer options in questionnaire items:</p>
+
+<ol>
+  <li><strong>Inline answerOption</strong>: Direct definition of answer options within the Questionnaire</li>
+  <li><strong>answerValueSet</strong>: Reference to external ValueSets with flexible composition</li>
+  <li><strong>MII CodeSystems</strong>: Full control over the terminology lifecycle</li>
+</ol>
+
+<h2 id="strategic-decision-criteria">Strategic Decision Criteria</h2>
+
+<h3 id="using-inline-answeroption">Using Inline answerOption</h3>
+
+<h4 id="available-international-standards">Available International Standards</h4>
+<p><strong>Scope</strong>: LOINC codes for answer lists with reliable coverage available</p>
+
+<p><strong>Implementation pattern</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item[=].answerOption[0].valueCoding.system = $LNC
+* item[=].answerOption[0].valueCoding.code = #LA6568-5
+* item[=].answerOption[0].valueCoding.display = "Not at all"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* item[=].answerOption[0].extension.valueDecimal = 0
+</code></pre></div></div>
+
+<p><strong>Example instruments</strong>: PHQ-9, PROMIS questionnaires
+<strong>Advantages</strong>:</p>
+<ul>
+  <li>International interoperability</li>
+  <li>Semantic unambiguity</li>
+  <li>Established coding standards</li>
+</ul>
+
+<h4 id="simple-static-answer-lists">Simple, Static Answer Lists</h4>
+<p><strong>Scope</strong>: Few answer options (maximum 5 options), low likelihood of change, no reuse required</p>
+
+<p><strong>Implementation pattern</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item[=].answerOption[0].valueCoding.display = "I have no problems in walking about"
+* item[=].answerOption[0].valueCoding.code = #1
+* item[=].answerOption[1].valueCoding.display = "I have slight problems in walking about"
+* item[=].answerOption[1].valueCoding.code = #2
+</code></pre></div></div>
+
+<p><strong>Example instrument</strong>: EQ-5D-5L answer scale
+<strong>Advantages</strong>:</p>
+<ul>
+  <li>Minimal complexity</li>
+  <li>Clear implementation</li>
+  <li>Low maintenance effort</li>
+</ul>
+
+<h4 id="extensive-metadata-per-answer-option">Extensive Metadata per Answer Option</h4>
+<p><strong>Scope</strong>: Multi-language support, score weights, complex presentation requirements</p>
+
+<p><strong>Example</strong>: PHQ-9 with German translations and weighting extensions</p>
+
+<h3 id="using-answervalueset-with-mii-codesystem">Using answerValueSet with MII CodeSystem</h3>
+
+<h4 id="multiple-answer-format-variants">Multiple Answer Format Variants</h4>
+<p><strong>Scope</strong>: Identical conceptual answers in different text variants (short form/long form/detailed)</p>
+
+<p><strong>Implementation example</strong>: BDI-II</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
+* #bdi-bdi2-answer-1a ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
+* #bdi-bdi2-answer-1b ^property[+].code = #bdi-bdi2-itemWeight
+* #bdi-bdi2-answer-1b ^property[=].valueDecimal = 1
+
+ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
+* include #bdi-bdi2-answer-0 from system MII_CS_PRO_BDI_BDI2_AnswerList
+* include #bdi-bdi2-answer-1 from system MII_CS_PRO_BDI_BDI2_AnswerList
+
+ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
+* include #bdi-bdi2-answer-1a from system MII_CS_PRO_BDI_BDI2_AnswerList
+* include #bdi-bdi2-answer-1b from system MII_CS_PRO_BDI_BDI2_AnswerList
+</code></pre></div></div>
+
+<p><strong>Advantages</strong>:</p>
+<ul>
+  <li>Central code management</li>
+  <li>Multiple ValueSet variants from a single CodeSystem</li>
+  <li>Concept reusability</li>
+</ul>
+
+<h4 id="reuse-across-questionnaires">Reuse Across Questionnaires</h4>
+<p><strong>Criterion</strong>: Same answer patterns in multiple instruments</p>
+
+<p><strong>Use case</strong>: Generic PRO severity scales (none/mild/moderate/severe)
+<strong>Advantages</strong>:</p>
+<ul>
+  <li>Consistent terminology</li>
+  <li>Central maintenance</li>
+  <li>Harmonized data models</li>
+</ul>
+
+<h4 id="complex-scoring-requirements">Complex Scoring Requirements</h4>
+<p><strong>Criterion</strong>: Multiple score weights per concept, complex scoring rules</p>
+
+<p><strong>Example</strong>: BDI-II with variant answer weights (1a vs 1b)
+<strong>Implementation</strong>: CodeSystem properties for itemWeight management</p>
+
+<h4 id="questionnaire-capabilities-based-decisions">Questionnaire Capabilities-Based Decisions</h4>
+<p><strong>Criterion</strong>: Capability profiles require specific terminology approaches</p>
+
+<p><strong>Capabilities and terminology implications</strong>:</p>
+<ul>
+  <li><strong>Displayable = false, Calculatable = true</strong>: Requires answerValueSet for score calculation without display logic</li>
+  <li><strong>Displayable = true</strong>: Can use inline answerOption with rich display content</li>
+  <li><strong>Extractable = true</strong>: Requires correct itemWeight definitions for <code class="language-plaintext highlighter-rouge">.weight()</code> functions</li>
+  <li><strong>Multiple Capabilities</strong>: Inline answerOption offers maximum flexibility for display + calculation</li>
+</ul>
+
+<p><strong>BDI-II example</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* extension[capabilities].extension[displayable].valueBoolean = false
+* extension[capabilities].extension[calculatable].valueBoolean = true
+* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores without display dependency
+</code></pre></div></div>
+
+<h4 id="mii-terminology-strategy">MII Terminology Strategy</h4>
+<p><strong>Criterion</strong>: No reliable international standards available, German specifics required</p>
+
+<p><strong>Strategic considerations</strong>:</p>
+<ul>
+  <li>Full control over terminology lifecycle</li>
+  <li>German healthcare system specifics</li>
+  <li>Cultural adaptations of answer options</li>
+  <li>Normative authority over PRO definitions</li>
+</ul>
+
+<h2 id="decision-matrix">Decision Matrix</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterion</th>
+      <th>Inline answerOption</th>
+      <th>answerValueSet + MII CS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>LOINC availability</strong></td>
+      <td>Use when available</td>
+      <td>Only when insufficient</td>
+    </tr>
+    <tr>
+      <td><strong>Displayable capability</strong></td>
+      <td>Optimal for display + scores</td>
+      <td>Limited for pure display logic</td>
+    </tr>
+    <tr>
+      <td><strong>Calculatable-only</strong></td>
+      <td>Overhead for pure calculation</td>
+      <td>Ideal for score-only questionnaires</td>
+    </tr>
+    <tr>
+      <td><strong>Multiple variants</strong></td>
+      <td>Not suitable</td>
+      <td>Ideal</td>
+    </tr>
+    <tr>
+      <td><strong>Reuse</strong></td>
+      <td>Not efficient</td>
+      <td>Recommended</td>
+    </tr>
+    <tr>
+      <td><strong>Complex scores</strong></td>
+      <td>Limited by extensions</td>
+      <td>CodeSystem properties</td>
+    </tr>
+    <tr>
+      <td><strong>Implementation effort</strong></td>
+      <td>Minimal</td>
+      <td>Higher</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance effort</strong></td>
+      <td>Low (for static lists)</td>
+      <td>Higher</td>
+    </tr>
+    <tr>
+      <td><strong>International interop</strong></td>
+      <td>Maximum (with LOINC)</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td><strong>German specifics</strong></td>
+      <td>Via extensions</td>
+      <td>Native support</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="visual-overview">Visual Overview</h2>
+
+<p><a name="l983">​</a><img src="MII-PRO-Terminologie-Vergleichsmatrix.png" alt="Terminology Strategies Comparison Matrix"/></p>
+
+<h2 id="implementation-examples">Implementation Examples</h2>
+
+<h3 id="example-1-phq-9-loinc--inline">Example 1: PHQ-9 (LOINC + Inline)</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item[1].answerOption[0].valueCoding.system = $LNC
+* item[1].answerOption[0].valueCoding.code = #LA6568-5
+* item[1].answerOption[0].valueCoding.display = "Not at all"
+* item[1].answerOption[0].valueCoding.display.extension[0].url = $hl7-translation
+* item[1].answerOption[0].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
+* item[1].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
+* item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Ueberhaupt nicht"
+* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[1].answerOption[0].extension.valueDecimal = 0
+</code></pre></div></div>
+
+<h3 id="example-2-bdi-ii-mii-codesystem--valueset">Example 2: BDI-II (MII CodeSystem + ValueSet)</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Questionnaire Item
+* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+
+// CodeSystem
+CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
+* ^property[+].code = #ordinalValue
+* ^property[=].type = #decimal
+* #bdi-bdi2-answer-1a ^property[+].code = #ordinalValue
+* #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
+
+// ValueSet Short Form
+ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
+* include #bdi-bdi2-answer-0 from system MII_CS_PRO_BDI_BDI2_AnswerList
+* include #bdi-bdi2-answer-1 from system MII_CS_PRO_BDI_BDI2_AnswerList
+</code></pre></div></div>
+
+<h3 id="example-3-eq-5d-5l-simple-inline">Example 3: EQ-5D-5L (Simple Inline)</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item[=].answerOption[+].valueCoding.display = "I have no problems in walking about"
+* item[=].answerOption[=].valueCoding.code = #1
+* item[=].answerOption[+].valueCoding.display = "I have slight problems in walking about"
+* item[=].answerOption[=].valueCoding.code = #2
+</code></pre></div></div>
+
+<h2 id="calculated-expressions-and-weight-functions">Calculated Expressions and .weight() Functions</h2>
+
+<p><strong>Critical implementation requirement</strong>: FHIRPath <code class="language-plaintext highlighter-rouge">.weight()</code> functions require correct itemWeight definitions:</p>
+
+<h3 id="with-inline-answeroption">With Inline answerOption:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[0].extension.valueDecimal = 0
+</code></pre></div></div>
+
+<h3 id="with-codesystem--valueset">With CodeSystem + ValueSet:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CodeSystem: MyCodeSystem
+* ^property[+].code = #ordinalValue
+* ^property[=].type = #decimal
+* #answer-code ^property[+].code = #ordinalValue
+* #answer-code ^property[=].valueDecimal = 0
+</code></pre></div></div>
+
+<h2 id="governance-and-lifecycle-management">Governance and Lifecycle Management</h2>
+
+<h3 id="mii-terminology">MII Terminology</h3>
+<p><strong>Advantages</strong>:</p>
+<ul>
+  <li>Full control over definitions</li>
+  <li>German healthcare system specifics</li>
+  <li>Coordinated evolution with MII standards</li>
+  <li>Normative authority for German PRO implementations</li>
+</ul>
+
+<p><strong>Responsibilities</strong>:</p>
+<ul>
+  <li>MII PRO Working Group: Terminology governance</li>
+  <li>Implementers: Feedback and requirements</li>
+  <li>MII Terminology Service: Distribution and maintenance</li>
+</ul>
+
+<h3 id="international-standards-integration">International Standards Integration</h3>
+<p><strong>LOINC priority</strong>: Prefer LOINC where available and suitable
+<strong>Mapping strategies</strong>: ConceptMaps for MII to LOINC harmonization
+<strong>Future strategy</strong>: Gradual migration to international standards as they become available</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The choice of terminology strategy is a <strong>strategic architectural decision</strong> that significantly impacts the long-term maintainability, interoperability, and scalability of PRO implementations.</p>
+
+<p><strong>Guiding principle</strong>: "International standards first, MII terminology where necessary, simple inline where appropriate"</p>
+
+<p>This strategy enables leveraging the advantages of international interoperability while simultaneously addressing the specific requirements of the German healthcare system.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-06-29 08:28:00 +0000">
+    2026-06-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
