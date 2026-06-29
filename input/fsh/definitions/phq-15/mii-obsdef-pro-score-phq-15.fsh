@@ -17,7 +17,26 @@ Usage: #definition
 * method = $LNC#69728-4 "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
 * quantitativeDetails.unit = $UCUM#1
 * quantitativeDetails.decimalPrecision = 0
-* qualifiedInterval.category = #absolute
-* qualifiedInterval.range.high.value = 30
-* qualifiedInterval.range.low.value = 0
-* qualifiedInterval.range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
+// Overall measurable range + scoring direction (higher = greater somatic symptom burden)
+* qualifiedInterval[0].category = #absolute
+* qualifiedInterval[0].range.high.value = 30
+* qualifiedInterval[0].range.low.value = 0
+* qualifiedInterval[0].range.extension[ScoreHealthCorrelation].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease
+
+// Severity categories (Kroenke, Spitzer & Williams 2002): 5 / 10 / 15 cut-offs
+* qualifiedInterval[+].category = #reference
+* qualifiedInterval[=].range.low.value = 0
+* qualifiedInterval[=].range.high.value = 4
+* qualifiedInterval[=].condition = "Minimal somatic symptom burden (minimale somatische Symptomlast)"
+* qualifiedInterval[+].category = #reference
+* qualifiedInterval[=].range.low.value = 5
+* qualifiedInterval[=].range.high.value = 9
+* qualifiedInterval[=].condition = "Low somatic symptom burden (geringe somatische Symptomlast)"
+* qualifiedInterval[+].category = #reference
+* qualifiedInterval[=].range.low.value = 10
+* qualifiedInterval[=].range.high.value = 14
+* qualifiedInterval[=].condition = "Medium somatic symptom burden (mittlere somatische Symptomlast)"
+* qualifiedInterval[+].category = #reference
+* qualifiedInterval[=].range.low.value = 15
+* qualifiedInterval[=].range.high.value = 30
+* qualifiedInterval[=].condition = "High somatic symptom burden (hohe somatische Symptomlast)"

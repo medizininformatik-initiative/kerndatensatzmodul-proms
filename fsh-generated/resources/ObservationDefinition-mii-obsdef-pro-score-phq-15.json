@@ -60,6 +60,54 @@
         ]
       },
       "category": "absolute"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 0
+        },
+        "high": {
+          "value": 4
+        }
+      },
+      "category": "reference",
+      "condition": "Minimal somatic symptom burden (minimale somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 5
+        },
+        "high": {
+          "value": 9
+        }
+      },
+      "category": "reference",
+      "condition": "Low somatic symptom burden (geringe somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 10
+        },
+        "high": {
+          "value": 14
+        }
+      },
+      "category": "reference",
+      "condition": "Medium somatic symptom burden (mittlere somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 15
+        },
+        "high": {
+          "value": 30
+        }
+      },
+      "category": "reference",
+      "condition": "High somatic symptom burden (hohe somatische Symptomlast)"
     }
   ],
   "code": {
