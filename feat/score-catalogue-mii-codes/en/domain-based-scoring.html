@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Domain-Based Scoring - MII IG PRO v2026.4.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.4.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+
+    <div><a href="../de/domain-based-scoring.html"><img src="assets/images/lang-de.png" alt="flag de" class="flag"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Domain-Based Scoring</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Domain-Based Scoring</h2>
+  
+
+
+
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found <a href="translationinfo.html">here</a>.</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#current-scientific-evidence-for-domain-based-harmonization" id="markdown-toc-current-scientific-evidence-for-domain-based-harmonization">Current Scientific Evidence for Domain-Based Harmonization</a></li>
+  <li><a href="#core-concept" id="markdown-toc-core-concept">Core Concept</a></li>
+  <li><a href="#implementation-depression-domain" id="markdown-toc-implementation-depression-domain">Implementation: Depression Domain</a></li>
+  <li><a href="#the-pro-trade-off" id="markdown-toc-the-pro-trade-off">The PRO Trade-Off</a></li>
+  <li><a href="#item-banking-and-adaptive-measurement" id="markdown-toc-item-banking-and-adaptive-measurement">Item Banking and Adaptive Measurement</a></li>
+  <li><a href="#practical-applications" id="markdown-toc-practical-applications">Practical Applications</a></li>
+  <li><a href="#technical-implementation" id="markdown-toc-technical-implementation">Technical Implementation</a></li>
+  <li><a href="#implementation-status" id="markdown-toc-implementation-status">Implementation Status</a></li>
+  <li><a href="#fhir-architecture-overview" id="markdown-toc-fhir-architecture-overview">FHIR Architecture Overview</a></li>
+  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+  <li><a href="#future-extensions" id="markdown-toc-future-extensions">Future Extensions</a></li>
+  <li><a href="#benefits-for-practice" id="markdown-toc-benefits-for-practice">Benefits for Practice</a></li>
+  <li><a href="#observationdefinition-catalog" id="markdown-toc-observationdefinition-catalog">ObservationDefinition Catalog</a></li>
+  <li><a href="#summary" id="markdown-toc-summary">Summary</a></li>
+</ul>
+
+</div>
+<h3 id="overview">Overview</h3>
+
+<p>Domain-based scoring enables comparability across different PRO instruments by mapping them onto shared health domains. Rather than treating questionnaire scores in isolation, measurements are transformed into standardized domain metrics – primarily PROMIS T-Scores (Mean=50, SD=10).</p>
+
+<p>This approach addresses a central challenge in modern health services research: the harmonization of patient-reported outcomes collected with heterogeneous instruments across clinical sites, studies, and care settings.</p>
+
+<h3 id="current-scientific-evidence-for-domain-based-harmonization">Current Scientific Evidence for Domain-Based Harmonization</h3>
+
+<p>Two recent 2025 publications provide empirical evidence for the methodological validity of the domain-based harmonization approach:</p>
+
+<p><strong>Intra-Domain Harmonization (Riazy et al., 2025)</strong></p>
+
+<p>Riazy et al. present population-based reference data for six established depression instruments (PHQ-9, PHQ-8, CES-D 8, PROMIS Depression SF 4a/8a, WHO-5) from 29 European countries (n=287,530) based on the EHIS Wave 3 survey. The study demonstrates the feasibility of harmonizing different instruments within a single health domain and supports the domain-specific score transformation approach pursued in the MII PRO Module.</p>
+
+<p>Reference: Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. <em>JAMA Netw Open</em>. 2025;8(6):e2517394.</p>
+
+<p><strong>Cross-Domain Harmonization (Oerlemans et al., 2025)</strong></p>
+
+<p>Oerlemans et al. developed and validated crosswalks between the multidimensional EORTC QLQ-C30 and domain-specific PROMIS instruments. The achieved correlations (r = 0.65-0.85) across seven health domains demonstrate the practicability of transforming multi-domain assessments into domain-specific metrics. This methodology enables the integration of established comprehensive instruments into a domain-based architecture.</p>
+
+<p>Reference: Oerlemans S, et al. Crosswalks between EORTC QLQ-C30 and PROMIS measures: Harmonizing patient-reported outcomes across cancer trials. <em>J Clin Epidemiol</em>. 2025. DOI: 10.1016/j.jclinepi.2025.111705.</p>
+
+<p><strong>Implications for the MII PRO Implementation</strong></p>
+
+<p>These publications provide important empirical foundations for the conceptual direction of the MII PRO Module:</p>
+<ul>
+  <li>The methodological validity of harmonization across different instruments has been demonstrated</li>
+  <li>Both intra-domain and cross-domain transformations show acceptable psychometric properties</li>
+  <li>The international research community is moving toward harmonized, domain-based PRO systems</li>
+</ul>
+
+<p>The temporal proximity of these publications to the balloting process prevented their full integration into the current version; however, they confirm the chosen architecture and inform future developments.</p>
+
+<p><strong>Related pages:</strong></p>
+<ul>
+  <li><a href="domains.html">Health Domains</a> – Definition of the 9 PROMIS Core Domains</li>
+  <li><a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a> – Concrete mapping tables</li>
+  <li><a href="scoring.html">Scoring Methodology</a> – Technical details</li>
+</ul>
+
+<h3 id="core-concept">Core Concept</h3>
+
+<h4 id="from-instruments-to-domains">From Instruments to Domains</h4>
+
+<p>Different questionnaires often measure the same construct:</p>
+<ul>
+  <li><strong>Depression</strong>: PHQ-9, BDI-II, PROMIS Depression, HADS-D</li>
+  <li><strong>Anxiety</strong>: GAD-7, PROMIS Anxiety, HADS-A</li>
+  <li><strong>Physical Function</strong>: PROMIS PF, SF-36 PF, HAQ</li>
+</ul>
+
+<p>Domain-based scoring enables comparability through transformation onto a common metric (T-Scores with Mean=50, SD=10).</p>
+
+<h3 id="implementation-depression-domain">Implementation: Depression Domain</h3>
+
+<p>The depression domain serves as the first fully implemented domain, demonstrating the approach:</p>
+
+<h4 id="fhir-architecture">FHIR Architecture</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ObservationDefinition: mii-obsdef-pro-depression-t-score
++-- Code: LOINC#77861-3 "PROMIS Depression T-score"
++-- Reference Ranges: EHIS Wave 3 (n=287,530)
++-- Population Norms: DE, EU, age-stratified
+
+Observation: Depression T-Score Instance
++-- instantiates: ObservationDefinition
++-- derivedFrom: QuestionnaireResponse or Raw Score
++-- method: IRT calculation or Cross-Walking
+</code></pre></div></div>
+
+<h4 id="european-reference-data-for-depression">European Reference Data for Depression</h4>
+
+<p>Riazy et al. (2025) provide comprehensive reference data from 29 European countries for 6 frequently used depression instruments (<a href="https://doi.org/10.1001/jamanetworkopen.2025.17394">JAMA Netw Open 2025</a>):</p>
+
+<p><strong>Instruments with normative data:</strong></p>
+<ul>
+  <li>PHQ-9 (Patient Health Questionnaire-9)</li>
+  <li>PHQ-8 (without suicidality item)</li>
+  <li>CES-D 8 (Center for Epidemiologic Studies Depression Scale)</li>
+  <li>PROMIS Depression SF 4a and SF 8a</li>
+  <li>WHO-5 Well-Being Index</li>
+</ul>
+
+<p><strong>Sample:</strong></p>
+<ul>
+  <li>N = 287,530 participants from EHIS Wave 3</li>
+  <li>Representative of 29 EU countries</li>
+  <li>Stratified by age, sex, and country</li>
+</ul>
+
+<p><strong>Application for MII PRO:</strong></p>
+<ul>
+  <li>Population-specific reference ranges for Germany</li>
+  <li>Enables fair benchmarking across institutions</li>
+  <li>Basis for age-stratified cut-offs</li>
+  <li>Supports cross-walking between instruments</li>
+</ul>
+
+<h4 id="mapping-strategies">Mapping Strategies</h4>
+
+<p><strong>1. Item Response Theory (IRT)</strong></p>
+
+<p><a name="l713">​</a><img src="IRT-Antwortwahrscheinlichkeiten.png" alt="IRT Response Probabilities"/></p>
+
+<p><strong>Figure 1:</strong> <em>Item Response Theory – Response probabilities as a function of trait level</em></p>
+
+<p>The figure shows the characteristic curves of Item Response Theory:</p>
+<ul>
+  <li>At low trait levels (e.g., low depression), the probability of "Never" is highest</li>
+  <li>With increasing trait levels, probabilities shift toward "Rarely", "Often", and finally "Always"</li>
+  <li>The overlap regions indicate uncertainty zones where different responses are equally probable</li>
+</ul>
+
+<p>IRT advantages:</p>
+<ul>
+  <li>Direct calculation from item responses</li>
+  <li>Precise, but computationally intensive to implement</li>
+  <li>Ideal for PROMIS instruments</li>
+</ul>
+
+<p><strong>2. Cross-Walking Tables</strong></p>
+<ul>
+  <li>Empirically validated conversion tables</li>
+  <li>PHQ-9 (0-27) to T-Score (40-85)</li>
+  <li>BDI-II (0-63) to T-Score (40-85)</li>
+  <li>EORTC QLQ-C30 to PROMIS T-Scores (see Oerlemans et al. 2025)</li>
+  <li>Based on equipercentile matching</li>
+</ul>
+
+<p><strong>Newly validated crosswalks (2025):</strong>
+Oerlemans et al. developed comprehensive crosswalks between EORTC QLQ-C30 and PROMIS (<a href="https://www.jclinepi.com/article/S0895-4356(25)00186-6/fulltext">J Clin Epidemiol 2025</a>):</p>
+<ul>
+  <li>Physical Functioning to PROMIS Physical Function (r &gt; 0.80)</li>
+  <li>Fatigue to PROMIS Fatigue (r &gt; 0.85)</li>
+  <li>Emotional Functioning to PROMIS Anxiety/Depression (r &gt; 0.75)</li>
+  <li>Pain to PROMIS Pain Interference (r &gt; 0.80)</li>
+  <li>Social Functioning to PROMIS Social Function (r &gt; 0.70)</li>
+  <li>Cognitive Functioning to PROMIS Cognitive Function (r = 0.65)</li>
+  <li>Global Health/QoL to PROMIS Global Health (r &gt; 0.75)</li>
+</ul>
+
+<h4 id="mapping-limitations">Mapping Limitations</h4>
+
+<p>The following limitations should be considered when applying cross-walking:</p>
+
+<ol>
+  <li><strong>Range violations</strong>: Extreme values may exceed theoretical boundaries</li>
+  <li><strong>Discretization</strong>: Continuous distributions are mapped to discrete values</li>
+  <li><strong>Precision loss</strong>: Especially with short instruments (e.g., 4-item to full domain)</li>
+  <li><strong>Validation requirements</strong>: Mappings require population-specific validation</li>
+</ol>
+
+<p><strong>Recommendation</strong>: For clinical decisions, mapping confidence intervals should be considered. For research purposes, use with transparent documentation of mapping error is acceptable.</p>
+
+<h3 id="the-pro-trade-off">The PRO Trade-Off</h3>
+
+<p><a name="l844">​</a><img src="PRO-Spannungsfeld.png" alt="PRO Trade-Off"/></p>
+
+<p><strong>Figure 2:</strong> <em>The trade-off between number of items, measurement range, and precision</em></p>
+
+<p>This figure illustrates a fundamental dilemma in PRO instrument selection:</p>
+<ul>
+  <li><strong>PROM A</strong> (top): Fewer items, but restricted measurement range or precision</li>
+  <li><strong>PROM B</strong> (bottom): Broad measurement range and high precision, but more items required</li>
+</ul>
+
+<p>Domain-based scoring resolves this dilemma through:</p>
+<ul>
+  <li><strong>Flexible instrument selection</strong> depending on context</li>
+  <li><strong>Item banking</strong> for adaptive testing</li>
+  <li><strong>Harmonized scores</strong> despite different instruments</li>
+</ul>
+
+<h3 id="item-banking-and-adaptive-measurement">Item Banking and Adaptive Measurement</h3>
+
+<p><a name="l894">​</a><img src="itembanking.png" alt="Item Banking"/></p>
+
+<p><strong>Figure 3:</strong> <em>Item banking for the Physical Function domain</em></p>
+
+<p>The item banking concept enables:</p>
+<ul>
+  <li><strong>Population-specific item selection</strong>: Different items for clinical samples vs. the general population</li>
+  <li><strong>Adaptive measurement</strong>: Items are selected based on estimated ability</li>
+  <li><strong>Examples in the figure</strong>:
+    <ul>
+      <li>Easy items (left): "dress yourself?", "get up from a chair?", "brush your teeth?"</li>
+      <li>Medium items (center): "take a short walk?", "carry a shopping bag?"</li>
+      <li>Difficult items (right): "run 5 km?", "climb over an obstacle?", "participate in a triathlon?"</li>
+    </ul>
+  </li>
+</ul>
+
+<p>This adaptive strategy enables precise measurement across the full ability spectrum with minimal patient burden.</p>
+
+<h3 id="practical-applications">Practical Applications</h3>
+
+<h4 id="use-case-1-longitudinal-monitoring">Use Case 1: Longitudinal Monitoring</h4>
+<p>A patient starts with PHQ-9 in a primary care practice, then switches to PROMIS Depression in a hospital setting:</p>
+<ul>
+  <li>Both scores are mapped to a Depression T-Score</li>
+  <li>Continuous trajectory despite instrument change</li>
+  <li>Reliable Change Index calculable across instruments</li>
+</ul>
+
+<h4 id="use-case-2-multi-site-studies">Use Case 2: Multi-Site Studies</h4>
+<p>Different centers use different instruments:</p>
+<ul>
+  <li>Center A: BDI-II</li>
+  <li>Center B: PHQ-9</li>
+  <li>Center C: PROMIS Depression</li>
+</ul>
+
+<p>All data become comparable through domain T-Scores.</p>
+
+<h4 id="use-case-3-quality-assurance">Use Case 3: Quality Assurance</h4>
+<p>Benchmarking across institutions:</p>
+<ul>
+  <li>Uniform outcome metrics despite different assessment strategies</li>
+  <li>Population-adjusted comparisons possible</li>
+  <li>Fair quality indicators</li>
+</ul>
+
+<h3 id="technical-implementation">Technical Implementation</h3>
+
+<h4 id="conceptmaps-for-mapping">ConceptMaps for Mapping</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH
+Instance: PHQ9-to-PROMIS-Depression
+InstanceOf: ConceptMap
+* sourceCanonical = "Questionnaire/phq-9"
+* targetCanonical = "ObservationDefinition/depression-t-score"
+* group.element[+]
+  * code = #score-range-0-4
+  * target.code = #t-score-40-45
+  * target.equivalence = #equivalent
+</code></pre></div></div>
+
+<h4 id="cql-for-complex-calculations-from-2026">CQL for Complex Calculations (from 2026)</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// CQL
+define "Depression T-Score from PHQ-9":
+  case
+    when PHQ9Score between 0 and 4 then 42.5
+    when PHQ9Score between 5 and 9 then 50.0
+    when PHQ9Score between 10 and 14 then 60.0
+    when PHQ9Score between 15 and 19 then 70.0
+    when PHQ9Score &gt;= 20 then 77.5
+    else null
+  end
+</code></pre></div></div>
+
+<h3 id="implementation-status">Implementation Status</h3>
+
+<p><strong>Fully implemented:</strong></p>
+<ul>
+  <li>Depression domain with mappings between PHQ-9, BDI-II, PROMIS Depression, and additional instruments</li>
+  <li>ObservationDefinitions with population-specific reference ranges</li>
+</ul>
+
+<p><strong>In development:</strong></p>
+<ul>
+  <li>PROMIS-29 domains (Physical Function, Anxiety, Fatigue, Sleep Disturbance, Social Function, Pain)</li>
+  <li>PROMIS Cognitive Function 4a</li>
+  <li>Automated score transformation via CQL</li>
+</ul>
+
+<p><strong>Planned (2026+):</strong></p>
+<ul>
+  <li>Extended domain mappings for anxiety, fatigue, physical function</li>
+  <li>Item-based score calculation</li>
+  <li>Computer Adaptive Testing (CAT) integration</li>
+</ul>
+
+<h3 id="fhir-architecture-overview">FHIR Architecture Overview</h3>
+
+<p>Domain scores are represented as FHIR Observations with specific ObservationDefinitions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Structure
+ObservationDefinition
++-- code: LOINC code for domain score (e.g., 77861-3 for PROMIS Depression)
++-- method: Calculation method (IRT, cross-walking, equipercentile)
++-- qualifiedInterval: Population-specific reference ranges
++-- preferredReportName: Standardized designation
+
+Observation
++-- code: Reference to ObservationDefinition
++-- valueQuantity: T-Score (Mean=50, SD=10)
++-- derivedFrom: Source QuestionnaireResponse or Observation
++-- method: Mapping method used
+</code></pre></div></div>
+
+<h3 id="use-cases">Use Cases</h3>
+
+<p><strong>Clinical Care:</strong></p>
+<ul>
+  <li>Continuous trajectory monitoring during instrument changes</li>
+  <li>Uniform thresholds for clinical decisions</li>
+</ul>
+
+<p><strong>Research:</strong></p>
+<ul>
+  <li>Meta-analyses across studies using different instruments</li>
+  <li>Harmonization of registry data</li>
+</ul>
+
+<p><strong>Quality Assurance:</strong></p>
+<ul>
+  <li>Cross-institutional outcome comparisons</li>
+  <li>Population-normed benchmarks</li>
+</ul>
+
+<h3 id="future-extensions">Future Extensions</h3>
+
+<h4 id="planned-domains-2026-2027">Planned Domains (2026-2027)</h4>
+<ul>
+  <li><strong>Anxiety Domain</strong>: GAD-7, PROMIS Anxiety, HADS-A</li>
+  <li><strong>Pain Domain</strong>: BPI, PROMIS Pain, NRS</li>
+  <li><strong>Physical Function</strong>: PROMIS PF, HAQ, WHODAS</li>
+</ul>
+
+<h4 id="extended-functionality">Extended Functionality</h4>
+<ul>
+  <li><strong>Composite Scores</strong>: Weighted aggregation of multiple instruments</li>
+  <li><strong>Adaptive Thresholds</strong>: Population-specific cut-offs</li>
+  <li><strong>Measurement Error Propagation</strong>: Uncertainty quantification</li>
+</ul>
+
+<h3 id="benefits-for-practice">Benefits for Practice</h3>
+
+<ol>
+  <li><strong>Continuity</strong>: Instrument changes without data loss</li>
+  <li><strong>Comparability</strong>: Cross-institutional benchmarks</li>
+  <li><strong>Flexibility</strong>: Free instrument choice while maintaining comparability</li>
+  <li><strong>Scalability</strong>: New instruments can be integrated without system redesign</li>
+</ol>
+
+<h3 id="observationdefinition-catalog">ObservationDefinition Catalog</h3>
+
+<p>Since ObservationDefinitions in FHIR R4 do not support canonical URLs and cannot be rendered directly in the IG, the following overview provides structured access to all defined score definitions:</p>
+
+<h4 id="depression-and-mood">Depression and Mood</h4>
+<p>| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
+|————|———–|————|———|———————-|———————|
+| PHQ-9 | Total Score | 44261-6 | 0-27 | mii-obsdef-pro-phq-9-total-score | MII_PR_PRO_PHQ9_Score |
+| BDI-II | Total Score | 89209-1 | 0-63 | mii-obsdef-pro-score-bdi-ii | MII_PR_PRO_BDI_II_Score |
+| PROMIS Depression | T-Score | 77861-3 | 20-80 | mii-obsdef-pro-depression-t-score | MII_PR_PRO_Depression_TScore |
+| PROMIS-29 Depression | T-Score | 71958-6 | 20-80 | mii-obsdef-pro-promis-29-depression-tscore | MII_PR_PRO_PROMIS_29_Depression_TScore |
+| PROMIS Cognitive Function SF4a | Raw Score | 81533-2 | 4-20 | mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score |
+| PROMIS Cognitive Function SF4a | T-Score | 81538-1 | 20-80 | mii-obsdef-pro-promis-cognitive-function-sf4a-tscore | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |</p>
+
+<h4 id="anxiety-and-stress">Anxiety and Stress</h4>
+<p>| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
+|————|———–|————|———|———————-|———————|
+| PROMIS-29 Anxiety | T-Score | 71953-7 | 20-80 | mii-obsdef-pro-promis-29-anxiety-tscore | MII_PR_PRO_PROMIS_29_Anxiety_TScore |</p>
+
+<h4 id="physical-function">Physical Function</h4>
+<p>| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
+|————|———–|————|———|———————-|———————|
+| PROMIS-29 Physical Function | T-Score | 71962-8 | 20-80 | mii-obsdef-pro-promis-29-physical-function-tscore | MII_PR_PRO_PROMIS_29_Physical_Function_TScore |</p>
+
+<h4 id="quality-of-life-multi-domain">Quality of Life (Multi-Domain)</h4>
+<p>| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
+|————|———–|————|———|———————-|———————|
+| EQ-5D-5L | Index Score | 91382-2 | -0.661 to 1.0 | mii-obsdef-pro-score-eq5d5l-index | MII_PR_PRO_Observation_EQ5D5L_Index |
+| EQ-5D-5L | VAS | 91383-0 | 0-100 | mii-obsdef-pro-score-eq5d5l-vas | MII_PR_PRO_Observation_EQ5D5L_VAS |
+| EQ-5D-5L | Profile | 91381-4 | 11111-55555 | mii-obsdef-pro-score-eq5d5l-profile | MII_PR_PRO_Observation_EQ5D5L_Profile |</p>
+
+<h4 id="fatigue-and-sleep">Fatigue and Sleep</h4>
+<p>| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
+|————|———–|————|———|———————-|———————|
+| PROMIS-29 Fatigue | T-Score | 71959-4 | 20-80 | mii-obsdef-pro-promis-29-fatigue-tscore | MII_PR_PRO_PROMIS_29_Fatigue_TScore |
+| PROMIS-29 Sleep Disturbance | T-Score | 71964-4 | 20-80 | mii-obsdef-pro-promis-29-sleep-disturbance-tscore | MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore |</p>
+
+<h4 id="pain">Pain</h4>
+<p>| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
+|————|———–|————|———|———————-|———————|
+| PROMIS-29 Pain Intensity | 0-10 Scale | 71965-1 | 0-10 | mii-obsdef-pro-promis-29-pain-intensity | MII_PR_PRO_PROMIS_29_Pain_Intensity |
+| PROMIS-29 Pain Interference | T-Score | 71961-0 | 20-80 | mii-obsdef-pro-promis-29-pain-interference-tscore | MII_PR_PRO_PROMIS_29_Pain_Interference_TScore |</p>
+
+<h4 id="social-function">Social Function</h4>
+<p>| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
+|————|———–|————|———|———————-|———————|
+| PROMIS-29 Social Function | T-Score | 71966-9 | 20-80 | mii-obsdef-pro-promis-29-social-function-tscore | MII_PR_PRO_PROMIS_29_Social_Function_TScore |</p>
+
+<h4 id="technical-notes">Technical Notes</h4>
+
+<p><strong>ObservationDefinition Properties:</strong></p>
+<ul>
+  <li><strong>instantiatesCanonical</strong>: All Observation Profiles reference their ObservationDefinition via the instantiatesCanonical extension</li>
+  <li><strong>ScoreHealthCorrelation</strong>: Defines whether higher values indicate better or worse health</li>
+  <li><strong>T-Score Metric</strong>: PROMIS T-Scores use Mean=50, SD=10 as the normative scale</li>
+  <li><strong>Population Norms</strong>: Reference ranges are based on German or European normative samples</li>
+</ul>
+
+<p><strong>Usage in Practice:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH
+Observation
++-- code: LOINC code from ObservationDefinition
++-- valueQuantity: Calculated score
++-- extension[instantiatesCanonical]: Reference to ObservationDefinition
++-- derivedFrom: QuestionnaireResponse or other Observation
+</code></pre></div></div>
+
+<h3 id="summary">Summary</h3>
+
+<p>Domain-based scoring is essential for the harmonization of PRO data in the German healthcare system. The depression domain demonstrates practical feasibility and provides the foundation for additional domains. Despite methodological challenges in cross-walking, the benefits for clinical care and research clearly outweigh the limitations.</p>
+
+<p><strong>Further information:</strong></p>
+<ul>
+  <li><a href="domains.html">Health Domains</a> – Detailed description of all 9 PROMIS domains</li>
+  <li><a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a> – Concrete conversion tables for depression</li>
+  <li><a href="phq-9.html">PHQ-9 Implementation</a> – Reference implementation</li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-06-29 08:28:00 +0000">
+    2026-06-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
