@@ -22,6 +22,20 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "44261-6",
+        "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code": "phq-phq9-total",
+        "display": "PHQ-9 Total Score"
+      }
+    ]
+  },
   "permittedDataType": [
     "Quantity"
   ],
@@ -62,15 +76,6 @@
       "category": "absolute"
     }
   ],
-  "code": {
-    "coding": [
-      {
-        "code": "44261-6",
-        "system": "http://loinc.org",
-        "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
-      }
-    ]
-  },
   "multipleResultsAllowed": false,
   "method": {
     "coding": [

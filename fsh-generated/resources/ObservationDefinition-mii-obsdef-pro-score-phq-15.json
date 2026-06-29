@@ -22,6 +22,20 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "70273-8",
+        "display": "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code": "phq-phq15-total",
+        "display": "PHQ-15 Total Score"
+      }
+    ]
+  },
   "permittedDataType": [
     "Quantity"
   ],
@@ -110,15 +124,6 @@
       "condition": "High somatic symptom burden (hohe somatische Symptomlast)"
     }
   ],
-  "code": {
-    "coding": [
-      {
-        "code": "70273-8",
-        "system": "http://loinc.org",
-        "display": "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
-      }
-    ]
-  },
   "multipleResultsAllowed": false,
   "method": {
     "coding": [

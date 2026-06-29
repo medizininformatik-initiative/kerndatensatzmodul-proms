@@ -11,7 +11,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#70273-8 "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+* code.coding[loinc] = $LNC#70273-8 "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#phq-phq15-total "PHQ-15 Total Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method = $LNC#69728-4 "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"

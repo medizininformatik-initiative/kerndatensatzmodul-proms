@@ -7,7 +7,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+* code.coding[loinc] = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#phq-phq9-total "PHQ-9 Total Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method = $LNC#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]" 
