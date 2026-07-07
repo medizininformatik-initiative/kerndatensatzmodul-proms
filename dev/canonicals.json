@@ -41,6 +41,13 @@
   "name" : "MII_CS_PRO_MIDOS2"
 },
 {
+  "id" : "mii-cs-pro-phq-15-answers",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+  "version" : "2026.4.1",
+  "name" : "MII_CS_PRO_PHQ_15_Answers"
+},
+{
   "id" : "mii-cs-pro-pro-ctcae",
   "type" : "CodeSystem",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
@@ -158,6 +165,12 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2",
   "version" : "2026.4.1",
   "name" : "MII_QST_PRO_MIDOS_MIDOS2"
+},
+{
+  "id" : "mii-qst-pro-phq-15",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15",
+  "version" : "2026.4.1"
 },
 {
   "id" : "mii-qst-pro-phq-9",
@@ -480,6 +493,13 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing",
   "version" : "2026.4.1",
   "name" : "MII_VS_PRO_MIDOS2_Wellbeing"
+},
+{
+  "id" : "mii-vs-pro-phq-15-answers",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
+  "version" : "2026.4.1",
+  "name" : "MII_VS_PRO_PHQ_15_Answers"
 },
 {
   "id" : "mii-vs-pro-phq-9-answer-list-ll358-3",

@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-06-15T12:52:47+00:00",
+  "date" : "2026-07-07T06:23:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 17,
+  "count" : 18,
   "concept" : [{
     "code" : "euroqol-eq5d5l",
     "display" : "EuroQol EQ-5D-5L Questionnaire"
@@ -55,6 +55,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "phq-phq9",
     "display" : "PHQ-9 Questionnaire"
+  },
+  {
+    "code" : "phq-phq15",
+    "display" : "PHQ-15 Questionnaire"
   },
   {
     "code" : "bdi-bdi2",

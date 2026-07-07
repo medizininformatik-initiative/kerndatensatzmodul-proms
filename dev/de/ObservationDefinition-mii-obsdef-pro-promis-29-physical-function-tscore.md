@@ -62,6 +62,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "91721-1",
       "display" : "PROMIS physical function - version 2.0 T-score"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-29-physical-function-tscore",
+      "display" : "PROMIS-29 Physical Function T-Score"
     }]
   },
   "permittedDataType" : ["Quantity"],

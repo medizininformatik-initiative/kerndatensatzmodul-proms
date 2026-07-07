@@ -13,7 +13,7 @@
   <name value="MII_IG_PRO"/>
   <title value="MII IG PRO"/>
   <status value="active"/>
-  <date value="2026-06-15T12:52:47+00:00"/>
+  <date value="2026-07-07T06:23:56+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -1162,6 +1162,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/mii-cs-pro-phq-15-answers"/>
+      </reference>
+      <name value="MII CS PRO PHQ-15 Answers"/>
+      <description value="MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/mii-cs-pro-pro-ctcae"/>
       </reference>
       <name value="MII CS PRO PRO-CTCAE Item Library"/>
@@ -1518,6 +1529,17 @@
       </reference>
       <name value="MII ObsDef PRO Score EQ-5D-5L VAS"/>
       <description value="EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-score-phq-15"/>
+      </reference>
+      <name value="MII ObsDef PRO Score PHQ-15"/>
+      <description value="Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score (0–30)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1921,6 +1943,17 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/mii-qst-pro-phq-15"/>
+      </reference>
+      <name value="MII QST PRO PHQ-15"/>
+      <description value="Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/mii-qst-pro-phq-9"/>
       </reference>
       <name value="MII QST PRO PHQ-9"/>
@@ -2090,6 +2123,17 @@
       </reference>
       <name value="MII VS PRO MIDOS2 Wohlbefinden-Skala"/>
       <description value="4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mii-vs-pro-phq-15-answers"/>
+      </reference>
+      <name value="MII VS PRO PHQ-15 Answers"/>
+      <description value="PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt, 1 = Wenig beeinträchtigt, 2 = Stark beeinträchtigt). MII-controlled for reliable ordinal() score calculation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2325,6 +2369,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-phq-15-response"/>
+      </reference>
+      <name value="PHQ-15 Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-phq-15-observation"/>
+      </reference>
+      <name value="PHQ-15 Score Observation Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -2521,6 +2585,14 @@
           </extension>
           <nameUrl value="phq-9.html"/>
           <title value="PHQ-9"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="phq-15.html"/>
+          </extension>
+          <nameUrl value="phq-15.html"/>
+          <title value="PHQ-15"/>
           <generation value="markdown"/>
         </page>
         <page>

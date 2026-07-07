@@ -59,7 +59,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PROMIS Cognitive Function SF 4a",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-15T12:52:47+00:00",
+  "date" : "2026-07-07T06:23:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

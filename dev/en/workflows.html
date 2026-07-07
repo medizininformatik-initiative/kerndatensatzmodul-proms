@@ -146,6 +146,9 @@
         <a href="phq-9.html">PHQ-9</a>
       </li>
       <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
         <a href="eq-5d-5l.html">EQ-5D-5L</a>
       </li>
       <li>
@@ -333,7 +336,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The entered answers are then saved as a FHIR QuestionnaireResponse (QR), and a score is determined if applicable</li>
 </ol>
 
-<div style="text-align: center;"><a name="l647">​</a>
+<div style="text-align: center;"><a name="l653">​</a>
 <img src="Workflow_Standard.svg" alt="MII PRO Workflow Pattern: Standard" width="40%"/>
 </div>
 
@@ -356,7 +359,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The calculated score is immediately displayed to the patient in the UI</li>
 </ol>
 
-<div style="text-align: center;"><a name="l690">​</a>
+<div style="text-align: center;"><a name="l696">​</a>
 <img src="Workflow_Capability-Echtzeit.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Real-Time Calculation" width="40%"/>
 </div>
 
@@ -379,7 +382,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The calculated and extracted data are stored, e.g., on a FHIR server</li>
 </ol>
 
-<div style="text-align: center;"><a name="l735">​</a>
+<div style="text-align: center;"><a name="l741">​</a>
 <img src="Workflow_Capability-Server.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Server-Side Calculation" width="50%"/>
 </div>
 
@@ -407,7 +410,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The calculated and extracted data are stored, e.g., on a FHIR server</li>
 </ol>
 
-<div style="text-align: center;"><a name="l790">​</a>
+<div style="text-align: center;"><a name="l796">​</a>
 <img src="Workflow_Capability-Historisch.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Historical Recalculation" width="40%"/>
 </div>
 
@@ -456,13 +459,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The various workflow patterns demonstrate that different forms of representation exist for displaying a score.</p>
 
-<div style="text-align: center;"><a name="l886">​</a>
+<div style="text-align: center;"><a name="l892">​</a>
 <img src="Workflow_Score_Repraesentation.svg" alt="MII PRO Workflow Pattern: Score Representation Layers" width="60%"/>
 </div>
 
 <p>The fundamental representation form for a calculated score is its mapping as an independent item in a FHIR QuestionnaireResponse. If only the score and not the actual answers are relevant for further analyses, the calculated score can be extracted from the FHIR QuestionnaireResponse and represented as a FHIR Observation. A score extracted and stored in this way can, provided empirically validated rules for mapping to a domain-specific T-score exist and have been defined, be mapped to the domain-specific T-score.</p>
 
-<div style="text-align: center;"><a name="l894">​</a>
+<div style="text-align: center;"><a name="l900">​</a>
 <img src="Workflow_Domain_Mapping.svg" alt="MII PRO Domain Mapping Patterns" width="30%"/>
 </div>
 
@@ -567,8 +570,8 @@ iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='q1').answer.val
           IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-15 12:52:00 +0000">
-    2026-06-15
+  <span title="2026-07-07 06:23:00 +0000">
+    2026-07-07
   </span>
 
           <br/>

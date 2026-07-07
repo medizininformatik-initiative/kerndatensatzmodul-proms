@@ -62,6 +62,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "89209-1",
       "display" : "Beck Depression Inventory II total score [BDI]"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "bdi-bdi2-total",
+      "display" : "Beck Depression Inventory II (BDI-II) Total Score"
     }]
   },
   "permittedDataType" : ["Quantity"],

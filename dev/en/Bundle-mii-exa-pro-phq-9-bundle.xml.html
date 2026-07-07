@@ -51,8 +51,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.166"}
-    h3,h4,h5,h6{--heading-prefix:"13.166"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.172"}
+    h3,h4,h5,h6{--heading-prefix:"13.172"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -151,6 +151,9 @@
       </li>
       <li>
         <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
       </li>
       <li>
         <a href="eq-5d-5l.html">EQ-5D-5L</a>
@@ -336,7 +339,7 @@
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rawScore&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.extension">extension</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/variable&quot;&gt;
@@ -344,7 +347,7 @@
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;phq9Score&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.extension">extension</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>
@@ -354,6 +357,8 @@
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Patient Health Questionnaire (PHQ-9)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.copyright">copyright</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel &amp;amp; Herzog 2002). Lizenz-Status: frei verfügbar.&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.code">code</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44249-1&quot;/&gt;
@@ -378,10 +383,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2a').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q01&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2a&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44250-9&quot;/&gt;
@@ -440,10 +445,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2b').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q02&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2b&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44255-8&quot;/&gt;
@@ -502,10 +507,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2c').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q03&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2c&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44259-0&quot;/&gt;
@@ -565,10 +570,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2d').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q04&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2d&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44254-1&quot;/&gt;
@@ -627,10 +632,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2e').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q05&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2e&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44251-7&quot;/&gt;
@@ -689,10 +694,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2f').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q06&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2f&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44258-2&quot;/&gt;
@@ -752,10 +757,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2g').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q07&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2g&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44252-5&quot;/&gt;
@@ -815,10 +820,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2h').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q08&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2h&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44253-3&quot;/&gt;
@@ -878,10 +883,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2i').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q09&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2i&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;44260-8&quot;/&gt;
@@ -983,10 +988,10 @@
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-difficulty').answer.value, {})&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q10&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-difficulty&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;69722-7&quot;/&gt;
@@ -1096,7 +1101,7 @@
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">subject</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">authored</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-10-01T12:00:00Z&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q01&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2a&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1106,7 +1111,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q02&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2b&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1116,7 +1121,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q03&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2c&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1126,7 +1131,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q04&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2d&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1136,7 +1141,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q05&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2e&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1146,7 +1151,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q06&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2f&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1156,7 +1161,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q07&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2g&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1166,7 +1171,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q08&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2h&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1176,7 +1181,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q09&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq2i&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1192,7 +1197,7 @@
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-q10&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phq-phq9-difficulty&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
@@ -1304,8 +1309,8 @@
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-15 12:52:00 +0000">
-    2026-06-15
+  <span title="2026-07-07 06:23:00 +0000">
+    2026-07-07
   </span>
 
           <br/>

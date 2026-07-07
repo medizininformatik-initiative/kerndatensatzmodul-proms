@@ -62,6 +62,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "77854-8",
       "display" : "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-29-social-function-tscore",
+      "display" : "PROMIS-29 Ability to Participate in Social Roles and Activities T-Score"
     }]
   },
   "permittedDataType" : ["Quantity"],

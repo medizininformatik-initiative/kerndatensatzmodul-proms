@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "title" : "MII PR PRO PROMIS-29 Depression T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-15T12:52:47+00:00",
+  "date" : "2026-07-07T06:23:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

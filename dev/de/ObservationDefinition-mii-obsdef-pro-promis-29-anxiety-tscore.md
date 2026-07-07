@@ -62,6 +62,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "71967-4",
       "display" : "PROMIS-29 Anxiety score T-score"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-29-anxiety-tscore",
+      "display" : "PROMIS-29 Anxiety T-Score"
     }]
   },
   "permittedDataType" : ["Quantity"],

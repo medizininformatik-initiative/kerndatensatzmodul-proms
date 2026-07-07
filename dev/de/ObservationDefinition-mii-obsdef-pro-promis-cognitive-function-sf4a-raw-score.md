@@ -68,6 +68,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "81533-2",
       "display" : "PROMIS short form - cognitive function 4a - version 2.0 raw score"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-cognitive-function-sf4a-raw",
+      "display" : "PROMIS Cognitive Function Abilities 4a Raw Score"
     }]
   },
   "permittedDataType" : ["Quantity"],

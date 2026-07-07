@@ -33,7 +33,7 @@ MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnai
   "title" : "MII VS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-15T12:52:47+00:00",
+  "date" : "2026-07-07T06:23:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

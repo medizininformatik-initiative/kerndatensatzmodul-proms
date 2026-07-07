@@ -62,6 +62,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "75261-8",
       "display" : "How intense was your average pain in the past 7 days [PROMIS]"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-29-pain-intensity",
+      "display" : "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
     }]
   },
   "permittedDataType" : ["Quantity"],

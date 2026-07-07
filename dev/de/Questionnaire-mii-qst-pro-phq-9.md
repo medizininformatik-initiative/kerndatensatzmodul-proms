@@ -59,7 +59,7 @@ Patient Health Questionnaire (PHQ-9)
     "valueExpression" : {
       "name" : "rawScore",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
     }
   },
   {
@@ -67,7 +67,7 @@ Patient Health Questionnaire (PHQ-9)
     "valueExpression" : {
       "name" : "phq9Score",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
@@ -75,7 +75,7 @@ Patient Health Questionnaire (PHQ-9)
   "title" : "MII QST PRO PHQ-9",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-15T12:52:47+00:00",
+  "date" : "2026-07-07T06:23:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -95,6 +95,7 @@ Patient Health Questionnaire (PHQ-9)
       "code" : "276"
     }]
   }],
+  "copyright" : "Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar.",
   "code" : [{
     "system" : "http://loinc.org",
     "code" : "44249-1",
@@ -128,10 +129,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2a').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q01",
+    "linkId" : "phq-phq2a",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44250-9"
@@ -254,10 +255,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2b').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q02",
+    "linkId" : "phq-phq2b",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44255-8"
@@ -380,10 +381,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2c').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q03",
+    "linkId" : "phq-phq2c",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44259-0"
@@ -506,10 +507,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2d').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q04",
+    "linkId" : "phq-phq2d",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44254-1"
@@ -632,10 +633,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2e').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q05",
+    "linkId" : "phq-phq2e",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44251-7"
@@ -758,10 +759,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2f').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q06",
+    "linkId" : "phq-phq2f",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44258-2"
@@ -884,10 +885,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2g').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q07",
+    "linkId" : "phq-phq2g",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44252-5"
@@ -1010,10 +1011,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2h').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q08",
+    "linkId" : "phq-phq2h",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44253-3"
@@ -1136,10 +1137,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2i').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q09",
+    "linkId" : "phq-phq2i",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "44260-8"
@@ -1315,10 +1316,10 @@ Patient Health Questionnaire (PHQ-9)
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
+        "expression" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-difficulty').answer.value, {})"
       }
     }],
-    "linkId" : "phq-phq9-q10",
+    "linkId" : "phq-phq9-difficulty",
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "69722-7"

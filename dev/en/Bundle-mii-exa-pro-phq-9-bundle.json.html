@@ -51,8 +51,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.166"}
-    h3,h4,h5,h6{--heading-prefix:"13.166"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.172"}
+    h3,h4,h5,h6{--heading-prefix:"13.172"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -151,6 +151,9 @@
       </li>
       <li>
         <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
       </li>
       <li>
         <a href="eq-5d-5l.html">EQ-5D-5L</a>
@@ -346,7 +349,7 @@
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a>" : "rawScore",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
             }
           },
           {
@@ -354,7 +357,7 @@
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a>" : "phq9Score",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq9-q0[1-9]$')).answer.value.ordinal().sum()"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
             }
           }
         ],
@@ -364,6 +367,7 @@
         "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a>" : "active",
         "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.experimental">experimental</a>" : true,
         "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.description">description</a>" : "Patient Health Questionnaire (PHQ-9)",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.copyright">copyright</a>" : "Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel &amp; Herzog 2002). Lizenz-Status: frei verfügbar.",
         "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.code">code</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -388,11 +392,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q01').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2a').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q01",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2a",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -463,11 +467,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q02').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2b').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q02",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2b",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -538,11 +542,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q03').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2c').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q03",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2c",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -613,11 +617,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q04').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2d').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q04",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2d",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -688,11 +692,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q05').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2e').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q05",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2e",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -763,11 +767,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q06').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2f').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q06",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2f",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -838,11 +842,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q07').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2g').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q07",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2g",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -913,11 +917,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q08').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2h').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q08",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2h",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -988,11 +992,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q09').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2i').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q09",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq2i",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -1109,11 +1113,11 @@
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-q10').answer.value, {})"
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-difficulty').answer.value, {})"
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-q10",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "phq-phq9-difficulty",
             "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
@@ -1229,7 +1233,7 @@
         "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">authored</a>" : "2023-10-01T12:00:00Z",
         "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q01",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2a",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1241,7 +1245,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q02",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2b",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1253,7 +1257,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q03",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2c",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1265,7 +1269,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q04",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2d",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1277,7 +1281,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q05",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2e",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1289,7 +1293,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q06",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2f",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1301,7 +1305,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q07",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2g",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1313,7 +1317,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q08",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2h",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1325,7 +1329,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q09",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq2i",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1345,7 +1349,7 @@
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-q10",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq-phq9-difficulty",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
               {
                 "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
@@ -1462,8 +1466,8 @@
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-15 12:52:00 +0000">
-    2026-06-15
+  <span title="2026-07-07 06:23:00 +0000">
+    2026-07-07
   </span>
 
           <br/>

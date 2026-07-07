@@ -90,6 +90,18 @@
     "Questionnaire-mii-qst-pro-midos-midos2.html" : "MII QST PRO MIDOS2"
   },
   {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
+    "version" : "2026.4.1",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PHQ_15_Answers",
+    "title" : "MII VS PRO PHQ-15 Answers",
+    "description" : "PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt, 1 = Wenig beeinträchtigt, 2 = Stark beeinträchtigt). MII-controlled for reliable ordinal() score calculation.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-phq-15.html" : "MII QST PRO PHQ-15"
+  },
+  {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
     "version" : "2026.4.1",
     "status" : "active",
@@ -117,8 +129,8 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
-    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)"
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual",
@@ -139,8 +151,8 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
-    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)"
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence",
@@ -182,8 +194,8 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
-    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)"
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation",
@@ -213,8 +225,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal",
-    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)",
+    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
@@ -238,7 +250,7 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal",
-    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)",
+    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
   }]
 }

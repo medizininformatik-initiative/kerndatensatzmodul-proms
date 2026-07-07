@@ -62,6 +62,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "44261-6",
       "display" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "phq-phq9-total",
+      "display" : "PHQ-9 Total Score"
     }]
   },
   "permittedDataType" : ["Quantity"],

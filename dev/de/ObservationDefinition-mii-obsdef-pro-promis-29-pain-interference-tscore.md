@@ -62,6 +62,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "system" : "http://loinc.org",
       "code" : "77865-4",
       "display" : "PROMIS pain interference - version 1.0 Tscore"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-29-pain-interference-tscore",
+      "display" : "PROMIS-29 Pain Interference T-Score"
     }]
   },
   "permittedDataType" : ["Quantity"],
