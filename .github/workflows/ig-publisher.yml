@@ -74,6 +74,14 @@ jobs:
       - name: Run SUSHI
         run: docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sushi .
 
+      # Expand ValueSets against local CodeSystems (adds vs.expansion) so the IG
+      # Publisher / validator can confirm answerValueSet answer membership for
+      # MII-controlled answer scales (fixes 'not in options' on example
+      # QuestionnaireResponses). Dependency-free node script; mirrors the local
+      # pre-commit hook, which CI otherwise skips.
+      - name: Expand ValueSets (post-SUSHI)
+        run: node expand-valuesets.js
+
       # Run the HL7 FHIR IG Publisher
       - name: Build IG
         run: |
