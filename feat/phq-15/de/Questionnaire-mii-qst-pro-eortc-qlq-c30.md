@@ -268,7 +268,7 @@ EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementatio
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-29T08:28:41+00:00",
+  "date" : "2026-07-07T06:22:33+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "title" : "MII PR PRO PROMIS Cognitive Function SF 4a T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-06-29T08:28:41+00:00",
+  "date" : "2026-07-07T06:22:33+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

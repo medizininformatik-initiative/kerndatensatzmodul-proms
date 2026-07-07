@@ -14,7 +14,7 @@
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-06-29T08:28:41+00:00",
+  "date" : "2026-07-07T06:22:33+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -2974,6 +2974,15 @@
           }],
           "nameUrl" : "phq-9.html",
           "title" : "PHQ-9",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "phq-15.html"
+          }],
+          "nameUrl" : "phq-15.html",
+          "title" : "PHQ-15",
           "generation" : "markdown"
         },
         {

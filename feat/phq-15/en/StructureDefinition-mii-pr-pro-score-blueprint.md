@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-score-
   "name" : "MII_PR_PRO_Score_Blueprint",
   "title" : "MII PR PRO Score Blueprint / Template",
   "status" : "active",
-  "date" : "2026-06-29T08:28:41+00:00",
+  "date" : "2026-07-07T06:22:33+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
