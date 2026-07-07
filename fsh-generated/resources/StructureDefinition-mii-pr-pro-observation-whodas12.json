@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-pro-observation-whodas12",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12",
+  "version": "2026.5.0",
+  "name": "MII_PR_PRO_Observation_WHODAS_12",
+  "title": "MII PR PRO Observation WHODAS 2.0 12-Item",
+  "status": "active",
+  "experimental": true,
+  "description": "Profile for WHODAS 2.0 12-item simple sum (disability) score Observations (0-48; higher scores indicate greater disability). No suitable LOINC code exists; SNOMED CT and the MII score catalogue are used.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.extension:instantiatesCanonical",
+        "path": "Observation.extension",
+        "sliceName": "instantiatesCanonical"
+      },
+      {
+        "id": "Observation.extension:instantiatesCanonical.value[x]",
+        "path": "Observation.extension.value[x]",
+        "patternCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "fixedString": "{score}"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "fixedCode": "{score}"
+      },
+      {
+        "id": "Observation.method.text",
+        "path": "Observation.method.text",
+        "patternString": "WHODAS 2.0 12-item simple sum scoring (0-48)"
+      }
+    ]
+  }
+}
