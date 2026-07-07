@@ -1,6 +1,6 @@
 {
   "resourceType": "ObservationDefinition",
-  "id": "mii-obsdef-pro-score-phq-9",
+  "id": "mii-obsdef-pro-score-phq-15",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.4.1"
@@ -26,13 +26,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "44261-6",
-        "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+        "code": "70273-8",
+        "display": "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
       },
       {
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-        "code": "phq-phq9-total",
-        "display": "PHQ-9 Total Score"
+        "code": "phq-phq15-total",
+        "display": "PHQ-15 Total Score"
       }
     ]
   },
@@ -54,7 +54,7 @@
     {
       "range": {
         "high": {
-          "value": 27
+          "value": 30
         },
         "low": {
           "value": 0
@@ -74,15 +74,63 @@
         ]
       },
       "category": "absolute"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 0
+        },
+        "high": {
+          "value": 4
+        }
+      },
+      "category": "reference",
+      "condition": "Minimal somatic symptom burden (minimale somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 5
+        },
+        "high": {
+          "value": 9
+        }
+      },
+      "category": "reference",
+      "condition": "Low somatic symptom burden (geringe somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 10
+        },
+        "high": {
+          "value": 14
+        }
+      },
+      "category": "reference",
+      "condition": "Medium somatic symptom burden (mittlere somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 15
+        },
+        "high": {
+          "value": 30
+        }
+      },
+      "category": "reference",
+      "condition": "High somatic symptom burden (hohe somatische Symptomlast)"
     }
   ],
   "multipleResultsAllowed": false,
   "method": {
     "coding": [
       {
-        "code": "44249-1",
+        "code": "69728-4",
         "system": "http://loinc.org",
-        "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+        "display": "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
       }
     ]
   }

@@ -484,6 +484,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-phq-15-answers"
+        },
+        "name": "MII CS PRO PHQ-15 Answers",
+        "description": "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-pro-ctcae"
         },
         "name": "MII CS PRO PRO-CTCAE Item Library",
@@ -744,6 +752,14 @@
         },
         "name": "MII ObsDef PRO Score EQ-5D-5L VAS",
         "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-15"
+        },
+        "name": "MII ObsDef PRO Score PHQ-15",
+        "description": "Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score (0–30)",
         "exampleBoolean": false
       },
       {
@@ -1036,6 +1052,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-phq-15"
+        },
+        "name": "MII QST PRO PHQ-15",
+        "description": "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-phq-9"
         },
         "name": "MII QST PRO PHQ-9",
@@ -1160,6 +1184,14 @@
         },
         "name": "MII VS PRO MIDOS2 Wohlbefinden-Skala",
         "description": "4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-phq-15-answers"
+        },
+        "name": "MII VS PRO PHQ-15 Answers",
+        "description": "PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt, 1 = Wenig beeinträchtigt, 2 = Stark beeinträchtigt). MII-controlled for reliable ordinal() score calculation.",
         "exampleBoolean": false
       },
       {
@@ -1329,6 +1361,20 @@
         "name": "mii-sp-pro-questionnaire-capabilities",
         "description": "SearchParameter for Questionnaire.extension[capabilities] to filter questionnaires by capability flags (displayable, collectable, calculatable, extractable, populatable, domainAligned)",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-phq-15-response"
+        },
+        "name": "PHQ-15 Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-phq-15-observation"
+        },
+        "name": "PHQ-15 Score Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       },
       {
         "reference": {
