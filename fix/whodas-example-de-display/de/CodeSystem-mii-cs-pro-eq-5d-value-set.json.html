@@ -1,0 +1,1155 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MII CS EQ-5D Value Set - JSON Representation - MII IG PRO v2026.5.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13.84"}
+    h3,h4,h5,h6{--heading-prefix:"13.84"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.5.0 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/CodeSystem-mii-cs-pro-eq-5d-value-set.json.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artefaktübersicht</b></a></li><li><b>MII CS EQ-5D Value Set</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-mii-cs-pro-eq-5d-value-set.html">Narrativer Inhalt</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mii-cs-pro-eq-5d-value-set.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: MII CS EQ-5D Value Set</h2>
+
+  <table class="colsi" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+
+            Stand: 
+2026-07-07
+
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-mii-cs-pro-eq-5d-value-set.json" no-download="true">Raw json</a> | <a href="CodeSystem-mii-cs-pro-eq-5d-value-set.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "mii-cs-pro-eq-5d-value-set",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.language">language</a>" : "de",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;de\&quot; lang=\&quot;de\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;German&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem mii-cs-pro-eq-5d-value-set&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmii-cs-pro-eq-5d-value-set\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Language: de-DE&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;eq-5d-vs-coefficient-de-de&lt;/td&gt;&lt;td&gt;eq-5d-vs-coefficient-de-de&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;EQ-5D ValueSet Coefficient Germany&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;eq-5d-vs-coefficient-en-us&lt;/td&gt;&lt;td&gt;eq-5d-vs-coefficient-en-us&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;EQ-5D ValueSet Coefficient US&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This  code system &lt;code&gt;https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set&lt;/code&gt; defines the following codes in a Grouped By hierarchy:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;eq-5d-vs-coefficient-de-de&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;eq-5d-vs-coefficient-en-us&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MO&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-MO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BEWEGLICHKEIT / MOBILITÄT&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0MO-1&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-MO-1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe keine Probleme herumzugehen&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0MO-2&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-MO-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe leichte Probleme herumzugehen&lt;/td&gt;&lt;td&gt;0.026&lt;/td&gt;&lt;td&gt;0.096&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0MO-3&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-MO-3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe mäßige Probleme herumzugehen&lt;/td&gt;&lt;td&gt;0.042&lt;/td&gt;&lt;td&gt;0.122&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0MO-4&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-MO-4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe große Probleme herumzugehen&lt;/td&gt;&lt;td&gt;0.139&lt;/td&gt;&lt;td&gt;0.237&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0MO-5&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-MO-5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin nicht in der Lage herumzugehen&lt;/td&gt;&lt;td&gt;0.224&lt;/td&gt;&lt;td&gt;0.322&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SC&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-SC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FÜR SICH SELBST SORGEN&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0SC-1&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-SC-1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0SC-2&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-SC-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen&lt;/td&gt;&lt;td&gt;0.05&lt;/td&gt;&lt;td&gt;0.089&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0SC-3&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-SC-3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen&lt;/td&gt;&lt;td&gt;0.056&lt;/td&gt;&lt;td&gt;0.107&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0SC-4&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-SC-4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe große Probleme, mich selbst zu waschen oder anzuziehen&lt;/td&gt;&lt;td&gt;0.169&lt;/td&gt;&lt;td&gt;0.22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0SC-5&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-SC-5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen&lt;/td&gt;&lt;td&gt;0.26&lt;/td&gt;&lt;td&gt;0.261&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UA&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-UA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0UA-1&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-UA-1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0UA-2&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-UA-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen&lt;/td&gt;&lt;td&gt;0.036&lt;/td&gt;&lt;td&gt;0.068&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0UA-3&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-UA-3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen&lt;/td&gt;&lt;td&gt;0.049&lt;/td&gt;&lt;td&gt;0.101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0UA-4&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-UA-4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen&lt;/td&gt;&lt;td&gt;0.129&lt;/td&gt;&lt;td&gt;0.255&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0UA-5&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-UA-5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen&lt;/td&gt;&lt;td&gt;0.209&lt;/td&gt;&lt;td&gt;0.255&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PD&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-PD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SCHMERZEN / KÖRPERLICHEN BESCHWERDEN&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0PD-1&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-PD-1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe keine Schmerzen oder Beschwerden&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0PD-2&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-PD-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe leichte Schmerzen oder Beschwerden&lt;/td&gt;&lt;td&gt;0.057&lt;/td&gt;&lt;td&gt;0.06&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0PD-3&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-PD-3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe mäßige Schmerzen oder Beschwerden&lt;/td&gt;&lt;td&gt;0.109&lt;/td&gt;&lt;td&gt;0.098&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0PD-4&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-PD-4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe starke Schmerzen oder Beschwerden&lt;/td&gt;&lt;td&gt;0.404&lt;/td&gt;&lt;td&gt;0.318&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0PD-5&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-PD-5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich habe extreme Schmerzen oder Beschwerden&lt;/td&gt;&lt;td&gt;0.612&lt;/td&gt;&lt;td&gt;0.414&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AD&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-AD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ANGST / NIEDERGESCHLAGENHEIT&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0AD-1&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-AD-1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin nicht ängstlich oder deprimiert&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0AD-2&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-AD-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin ein wenig ängstlich oder deprimiert&lt;/td&gt;&lt;td&gt;0.03&lt;/td&gt;&lt;td&gt;0.057&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0AD-3&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-AD-3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin mäßig ängstlich oder deprimiert&lt;/td&gt;&lt;td&gt;0.082&lt;/td&gt;&lt;td&gt;0.123&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0AD-4&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-AD-4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin sehr ängstlich oder deprimiert&lt;/td&gt;&lt;td&gt;0.244&lt;/td&gt;&lt;td&gt;0.299&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0AD-5&lt;a name=\&quot;mii-cs-pro-eq-5d-value-set-AD-5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ich bin extrem ängstlich oder deprimiert&lt;/td&gt;&lt;td&gt;0.356&lt;/td&gt;&lt;td&gt;0.321&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (United States) (English (United States), en)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;MO&lt;/td&gt;&lt;td&gt;MOBILITY&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SC&lt;/td&gt;&lt;td&gt;SELF-CARE&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UA&lt;/td&gt;&lt;td&gt;USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PD&lt;/td&gt;&lt;td&gt;PAIN / DISCOMFORT&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AD&lt;/td&gt;&lt;td&gt;ANXIETY / DEPRESSION&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2026.5.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "MII_CS_PRO_EQ_5D_ValueSet",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "MII CS EQ-5D Value Set",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-07-07T13:59:16+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Medizininformatik-Initiative",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Medizininformatik-Initiative",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.medizininformatik-initiative.de"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "office@medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "EuroQol EQ-5D Value Set",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "276"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.hierarchyMeaning">hierarchyMeaning</a>" : "grouped-by",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 30,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "EQ-5D ValueSet Coefficient Germany",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "decimal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "EQ-5D ValueSet Coefficient US",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "decimal"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BEWEGLICHKEIT / MOBILITÄT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+          },
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "MOBILITY"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MO-1",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe keine Probleme herumzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have no problems in walking about"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MO-2",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe leichte Probleme herumzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have slight problems in walking about"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.026
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.096
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MO-3",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe mäßige Probleme herumzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have moderate problems in walking about"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.042
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.122
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MO-4",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe große Probleme herumzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have severe problems in walking about"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.139
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.237
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MO-5",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin nicht in der Lage herumzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am unable to walk about"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.224
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.322
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FÜR SICH SELBST SORGEN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+          },
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "SELF-CARE"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SC-1",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have no problems washing or dressing myself"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SC-2",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have slight problems washing or dressing myself"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.05
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.089
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SC-3",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have moderate problems washing or dressing myself"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.056
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.107
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SC-4",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have severe problems washing or dressing myself"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.169
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.22
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SC-5",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am unable to wash or dress myself"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.26
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.261
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+          },
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UA-1",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have no problems doing my usual activities"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UA-2",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have slight problems doing my usual activities"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.036
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.068
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UA-3",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have moderate problems doing my usual activities"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.049
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.101
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UA-4",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have severe problems doing my usual activities"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.129
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.255
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UA-5",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am unable to do my usual activities"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.209
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.255
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+          },
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "PAIN / DISCOMFORT"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PD-1",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe keine Schmerzen oder Beschwerden",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have no pain or discomfort"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PD-2",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe leichte Schmerzen oder Beschwerden",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have slight pain or discomfort"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.057
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.06
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PD-3",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe mäßige Schmerzen oder Beschwerden",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have moderate pain or discomfort"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.109
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.098
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PD-4",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe starke Schmerzen oder Beschwerden",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have severe pain or discomfort"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.404
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.318
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PD-5",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich habe extreme Schmerzen oder Beschwerden",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I have extreme pain or discomfort"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.612
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.414
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ANGST / NIEDERGESCHLAGENHEIT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+          },
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "ANXIETY / DEPRESSION"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AD-1",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin nicht ängstlich oder deprimiert",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am not anxious or depressed"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AD-2",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin ein wenig ängstlich oder deprimiert",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am slightly anxious or depressed"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.03
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.057
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AD-3",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin mäßig ängstlich oder deprimiert",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am moderately anxious or depressed"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.082
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.123
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AD-4",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin sehr ängstlich oder deprimiert",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am severely anxious or depressed"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.244
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.299
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AD-5",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ich bin extrem ängstlich oder deprimiert",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en-US",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "900000000000013009",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synonym"
+              },
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "I am extremely anxious or depressed"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-de-de",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.356
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "eq-5d-vs-coefficient-en-us",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a>" : 0.321
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-07-07 13:59:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

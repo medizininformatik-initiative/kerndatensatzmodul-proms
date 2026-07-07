@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-pro-whodas-12"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-whodas-12</b></p><a name="mii-cs-pro-whodas-12"> </a><a name="hcmii-cs-pro-whodas-12"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>ordinalValue</td><td>ordinalValue</td><td>http://hl7.org/fhir/StructureDefinition/ordinalValue</td><td>decimal</td><td>Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>ordinalValue</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td style="white-space:nowrap">whodas12-answer-0<a name="mii-cs-pro-whodas-12-whodas12-answer-0"> </a></td><td>None</td><td>0</td><td>keine</td></tr><tr><td style="white-space:nowrap">whodas12-answer-1<a name="mii-cs-pro-whodas-12-whodas12-answer-1"> </a></td><td>Mild</td><td>1</td><td>geringe</td></tr><tr><td style="white-space:nowrap">whodas12-answer-2<a name="mii-cs-pro-whodas-12-whodas12-answer-2"> </a></td><td>Moderate</td><td>2</td><td>mäßige</td></tr><tr><td style="white-space:nowrap">whodas12-answer-3<a name="mii-cs-pro-whodas-12-whodas12-answer-3"> </a></td><td>Severe</td><td>3</td><td>starke</td></tr><tr><td style="white-space:nowrap">whodas12-answer-4<a name="mii-cs-pro-whodas-12-whodas12-answer-4"> </a></td><td>Extreme or cannot do</td><td>4</td><td>sehr starke/nicht möglich</td></tr><tr><td style="white-space:nowrap">whodas12-q01<a name="mii-cs-pro-whodas-12-whodas12-q01"> </a></td><td>Standing for long periods such as 30 minutes?</td><td/><td>längere Zeit (ca. 30 min) zu stehen?</td></tr><tr><td style="white-space:nowrap">whodas12-q02<a name="mii-cs-pro-whodas-12-whodas12-q02"> </a></td><td>Taking care of your household responsibilities?</td><td/><td>Ihren Haushaltspflichten nachzukommen?</td></tr><tr><td style="white-space:nowrap">whodas12-q03<a name="mii-cs-pro-whodas-12-whodas12-q03"> </a></td><td>Learning a new task, for example, learning how to get to a new place?</td><td/><td>Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)</td></tr><tr><td style="white-space:nowrap">whodas12-q04<a name="mii-cs-pro-whodas-12-whodas12-q04"> </a></td><td>Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?</td><td/><td>Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?</td></tr><tr><td style="white-space:nowrap">whodas12-q05<a name="mii-cs-pro-whodas-12-whodas12-q05"> </a></td><td>Being emotionally affected by your health problems?</td><td/><td>Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?</td></tr><tr><td style="white-space:nowrap">whodas12-q06<a name="mii-cs-pro-whodas-12-whodas12-q06"> </a></td><td>Concentrating on doing something for ten minutes?</td><td/><td>Sich auf etwas für 10 Minuten zu konzentrieren?</td></tr><tr><td style="white-space:nowrap">whodas12-q07<a name="mii-cs-pro-whodas-12-whodas12-q07"> </a></td><td>Walking a long distance such as a kilometre?</td><td/><td>Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?</td></tr><tr><td style="white-space:nowrap">whodas12-q08<a name="mii-cs-pro-whodas-12-whodas12-q08"> </a></td><td>Washing your whole body?</td><td/><td>Ihren gesamten Körper zu waschen?</td></tr><tr><td style="white-space:nowrap">whodas12-q09<a name="mii-cs-pro-whodas-12-whodas12-q09"> </a></td><td>Getting dressed?</td><td/><td>sich anzuziehen?</td></tr><tr><td style="white-space:nowrap">whodas12-q10<a name="mii-cs-pro-whodas-12-whodas12-q10"> </a></td><td>Dealing with people you do not know?</td><td/><td>Im Umgang mit anderen Personen, die Sie nicht kennen?</td></tr><tr><td style="white-space:nowrap">whodas12-q11<a name="mii-cs-pro-whodas-12-whodas12-q11"> </a></td><td>Maintaining a friendship?</td><td/><td>Eine Freundschaft aufrechtzuerhalten?</td></tr><tr><td style="white-space:nowrap">whodas12-q12<a name="mii-cs-pro-whodas-12-whodas12-q12"> </a></td><td>Your day-to-day work/school?</td><td/><td>Bei der Bewältigung des Arbeits-/Schulalltags?</td></tr></table></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-whodas-12</b></p><a name="en-mii-cs-pro-whodas-12"> </a><a name="en-hcmii-cs-pro-whodas-12"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>ordinalValue</td><td>ordinalValue</td><td>http://hl7.org/fhir/StructureDefinition/ordinalValue</td><td>decimal</td><td>Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>ordinalValue</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td style="white-space:nowrap">whodas12-answer-0<a name="en-mii-cs-pro-whodas-12-whodas12-answer-0"> </a></td><td>None</td><td>0</td><td>keine</td></tr><tr><td style="white-space:nowrap">whodas12-answer-1<a name="en-mii-cs-pro-whodas-12-whodas12-answer-1"> </a></td><td>Mild</td><td>1</td><td>geringe</td></tr><tr><td style="white-space:nowrap">whodas12-answer-2<a name="en-mii-cs-pro-whodas-12-whodas12-answer-2"> </a></td><td>Moderate</td><td>2</td><td>mäßige</td></tr><tr><td style="white-space:nowrap">whodas12-answer-3<a name="en-mii-cs-pro-whodas-12-whodas12-answer-3"> </a></td><td>Severe</td><td>3</td><td>starke</td></tr><tr><td style="white-space:nowrap">whodas12-answer-4<a name="en-mii-cs-pro-whodas-12-whodas12-answer-4"> </a></td><td>Extreme or cannot do</td><td>4</td><td>sehr starke/nicht möglich</td></tr><tr><td style="white-space:nowrap">whodas12-q01<a name="en-mii-cs-pro-whodas-12-whodas12-q01"> </a></td><td>Standing for long periods such as 30 minutes?</td><td/><td>längere Zeit (ca. 30 min) zu stehen?</td></tr><tr><td style="white-space:nowrap">whodas12-q02<a name="en-mii-cs-pro-whodas-12-whodas12-q02"> </a></td><td>Taking care of your household responsibilities?</td><td/><td>Ihren Haushaltspflichten nachzukommen?</td></tr><tr><td style="white-space:nowrap">whodas12-q03<a name="en-mii-cs-pro-whodas-12-whodas12-q03"> </a></td><td>Learning a new task, for example, learning how to get to a new place?</td><td/><td>Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)</td></tr><tr><td style="white-space:nowrap">whodas12-q04<a name="en-mii-cs-pro-whodas-12-whodas12-q04"> </a></td><td>Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?</td><td/><td>Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?</td></tr><tr><td style="white-space:nowrap">whodas12-q05<a name="en-mii-cs-pro-whodas-12-whodas12-q05"> </a></td><td>Being emotionally affected by your health problems?</td><td/><td>Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?</td></tr><tr><td style="white-space:nowrap">whodas12-q06<a name="en-mii-cs-pro-whodas-12-whodas12-q06"> </a></td><td>Concentrating on doing something for ten minutes?</td><td/><td>Sich auf etwas für 10 Minuten zu konzentrieren?</td></tr><tr><td style="white-space:nowrap">whodas12-q07<a name="en-mii-cs-pro-whodas-12-whodas12-q07"> </a></td><td>Walking a long distance such as a kilometre?</td><td/><td>Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?</td></tr><tr><td style="white-space:nowrap">whodas12-q08<a name="en-mii-cs-pro-whodas-12-whodas12-q08"> </a></td><td>Washing your whole body?</td><td/><td>Ihren gesamten Körper zu waschen?</td></tr><tr><td style="white-space:nowrap">whodas12-q09<a name="en-mii-cs-pro-whodas-12-whodas12-q09"> </a></td><td>Getting dressed?</td><td/><td>sich anzuziehen?</td></tr><tr><td style="white-space:nowrap">whodas12-q10<a name="en-mii-cs-pro-whodas-12-whodas12-q10"> </a></td><td>Dealing with people you do not know?</td><td/><td>Im Umgang mit anderen Personen, die Sie nicht kennen?</td></tr><tr><td style="white-space:nowrap">whodas12-q11<a name="en-mii-cs-pro-whodas-12-whodas12-q11"> </a></td><td>Maintaining a friendship?</td><td/><td>Eine Freundschaft aufrechtzuerhalten?</td></tr><tr><td style="white-space:nowrap">whodas12-q12<a name="en-mii-cs-pro-whodas-12-whodas12-q12"> </a></td><td>Your day-to-day work/school?</td><td/><td>Bei der Bewältigung des Arbeits-/Schulalltags?</td></tr></table></div></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"/>
+  <version value="2026.5.0"/>
+  <name value="MII_CS_PRO_WHODAS_12"/>
+  <title value="MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-07T13:59:16+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright)."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="17"/>
+  <property>
+    <code value="ordinalValue"/>
+    <uri value="http://hl7.org/fhir/StructureDefinition/ordinalValue"/>
+    <description value="Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()"/>
+    <type value="decimal"/>
+  </property>
+  <concept>
+    <code value="whodas12-answer-0"/>
+    <display value="None"/>
+    <designation>
+      <language value="de"/>
+      <value value="keine"/>
+    </designation>
+    <property>
+      <code value="ordinalValue"/>
+      <valueDecimal value="0"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="whodas12-answer-1"/>
+    <display value="Mild"/>
+    <designation>
+      <language value="de"/>
+      <value value="geringe"/>
+    </designation>
+    <property>
+      <code value="ordinalValue"/>
+      <valueDecimal value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="whodas12-answer-2"/>
+    <display value="Moderate"/>
+    <designation>
+      <language value="de"/>
+      <value value="mäßige"/>
+    </designation>
+    <property>
+      <code value="ordinalValue"/>
+      <valueDecimal value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="whodas12-answer-3"/>
+    <display value="Severe"/>
+    <designation>
+      <language value="de"/>
+      <value value="starke"/>
+    </designation>
+    <property>
+      <code value="ordinalValue"/>
+      <valueDecimal value="3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="whodas12-answer-4"/>
+    <display value="Extreme or cannot do"/>
+    <designation>
+      <language value="de"/>
+      <value value="sehr starke/nicht möglich"/>
+    </designation>
+    <property>
+      <code value="ordinalValue"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="whodas12-q01"/>
+    <display value="Standing for long periods such as 30 minutes?"/>
+    <designation>
+      <language value="de"/>
+      <value value="längere Zeit (ca. 30 min) zu stehen?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q02"/>
+    <display value="Taking care of your household responsibilities?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ihren Haushaltspflichten nachzukommen?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q03"/>
+    <display value="Learning a new task, for example, learning how to get to a new place?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q04"/>
+    <display value="Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q05"/>
+    <display value="Being emotionally affected by your health problems?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q06"/>
+    <display value="Concentrating on doing something for ten minutes?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sich auf etwas für 10 Minuten zu konzentrieren?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q07"/>
+    <display value="Walking a long distance such as a kilometre?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q08"/>
+    <display value="Washing your whole body?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ihren gesamten Körper zu waschen?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q09"/>
+    <display value="Getting dressed?"/>
+    <designation>
+      <language value="de"/>
+      <value value="sich anzuziehen?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q10"/>
+    <display value="Dealing with people you do not know?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Im Umgang mit anderen Personen, die Sie nicht kennen?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q11"/>
+    <display value="Maintaining a friendship?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Eine Freundschaft aufrechtzuerhalten?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="whodas12-q12"/>
+    <display value="Your day-to-day work/school?"/>
+    <designation>
+      <language value="de"/>
+      <value value="Bei der Bewältigung des Arbeits-/Schulalltags?"/>
+    </designation>
+  </concept>
+</CodeSystem>

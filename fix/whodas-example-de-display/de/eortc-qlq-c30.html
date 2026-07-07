@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EORTC QLQ-C30 - MII IG PRO v2026.5.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.4"}
+    h3,h4,h5,h6{--heading-prefix:"6.4.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.5.0 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/eortc-qlq-c30.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='pro-library.html'><b>PRO Library</b></a></li><li><b>EORTC QLQ-C30</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>EORTC QLQ-C30</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#übersicht" id="markdown-toc-übersicht">Übersicht</a></li>
+  <li><a href="#struktur" id="markdown-toc-struktur">Struktur</a></li>
+  <li><a href="#technische-details" id="markdown-toc-technische-details">Technische Details</a></li>
+  <li><a href="#score-berechnung" id="markdown-toc-score-berechnung">Score-Berechnung</a></li>
+  <li><a href="#antwortskalen" id="markdown-toc-antwortskalen">Antwortskalen</a></li>
+  <li><a href="#implementierungshinweise" id="markdown-toc-implementierungshinweise">Implementierungshinweise</a></li>
+  <li><a href="#bekannte-einschränkungen" id="markdown-toc-bekannte-einschränkungen">Bekannte Einschränkungen</a></li>
+  <li><a href="#beispiel-questionnaireresponse" id="markdown-toc-beispiel-questionnaireresponse">Beispiel QuestionnaireResponse</a></li>
+  <li><a href="#integration-mit-mii-onkologie-modul" id="markdown-toc-integration-mit-mii-onkologie-modul">Integration mit MII Onkologie-Modul</a></li>
+  <li><a href="#referenzen" id="markdown-toc-referenzen">Referenzen</a></li>
+</ul>
+
+</div>
+<h3 id="übersicht">Übersicht</h3>
+
+<p><strong>Status</strong>: Technical Preview
+<strong>Version</strong>: 0.1.0
+<strong>Letzte Aktualisierung</strong>: 2025-01-15</p>
+
+<p>Der EORTC QLQ-C30 ist der Standard-Fragebogen zur Erfassung der Lebensqualität bei onkologischen Patienten.</p>
+
+<h3 id="struktur">Struktur</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kategorie</th>
+      <th>Subskalen</th>
+      <th>Items</th>
+      <th>Score-Bereich</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Funktionsskalen</strong></td>
+      <td> </td>
+      <td> </td>
+      <td>0-100 (höher = besser)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Physical Function (PF)</td>
+      <td>5</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Role Function (RF)</td>
+      <td>2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Emotional Function (EF)</td>
+      <td>4</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Cognitive Function (CF)</td>
+      <td>2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Social Function (SF)</td>
+      <td>2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Symptomskalen</strong></td>
+      <td> </td>
+      <td> </td>
+      <td>0-100 (höher = schlechter)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Fatigue (FA)</td>
+      <td>3</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Nausea/Vomiting (NV)</td>
+      <td>2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Pain (PA)</td>
+      <td>2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Einzelitems</strong></td>
+      <td> </td>
+      <td> </td>
+      <td>0-100</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Dyspnoea, Insomnia, Appetite Loss,</td>
+      <td>6</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Constipation, Diarrhoea, Financial</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Globale Lebensqualität</strong></td>
+      <td> </td>
+      <td> </td>
+      <td>0-100 (höher = besser)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Global Health/QoL (QL)</td>
+      <td>2</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="technische-details">Technische Details</h3>
+
+<h4 id="questionnaire-resource">Questionnaire Resource</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Questionnaire/mii-qst-pro-eortc-qlq-c30
+</code></pre></div></div>
+
+<p>Die vollständige Ressource finden Sie in der <a href="Questionnaire-mii-qst-pro-eortc-qlq-c30.html">Questionnaire-Definition</a>.</p>
+
+<p><strong>SNOMED</strong>: <code class="language-plaintext highlighter-rouge">273446001 |EORTC QLQ-C30 (assessment scale)|</code></p>
+
+<p><strong>Capabilities</strong>:</p>
+<ul>
+  <li>Displayable</li>
+  <li>Collectable</li>
+  <li>Calculatable (Scoring-Algorithmus implementiert)</li>
+  <li>Extractable (geplant)</li>
+  <li>Populatable (geplant)</li>
+</ul>
+
+<h3 id="score-berechnung">Score-Berechnung</h3>
+
+<h4 id="lineare-transformation">Lineare Transformation</h4>
+
+<p>Alle Skalen werden auf 0-100 transformiert:</p>
+
+<p><strong>Funktionsskalen</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Score = (1 - (RawScore - 1) / Range) x 100
+</code></pre></div></div>
+
+<p><strong>Symptomskalen &amp; Global Health</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Score = ((RawScore - 1) / Range) x 100
+</code></pre></div></div>
+
+<h4 id="mii-terminologie">MII-Terminologie</h4>
+
+<pre><code class="language-fsh">// FSH
+CodeSystem: MII_CS_PRO_EORTC_QLQ_C30
+Id: mii-cs-pro-eortc-qlq-c30
+* #qlq30-q01 "Bereitet es Ihnen Schwierigkeiten..."
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Do you have any trouble..."
+</code></pre>
+
+<h3 id="antwortskalen">Antwortskalen</h3>
+
+<h4 id="4-punkt-skala-items-1-28">4-Punkt Skala (Items 1-28)</h4>
+
+<pre><code class="language-fsh">// FSH
+ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale4pt
+* MII_CS_PRO_EORTC_QLQ_C30#not-at-all "Überhaupt nicht"
+* MII_CS_PRO_EORTC_QLQ_C30#a-little "Wenig"
+* MII_CS_PRO_EORTC_QLQ_C30#quite-a-bit "Mäßig"
+* MII_CS_PRO_EORTC_QLQ_C30#very-much "Sehr"
+</code></pre>
+
+<h4 id="7-punkt-skala-items-29-30">7-Punkt Skala (Items 29-30)</h4>
+
+<pre><code class="language-fsh">// FSH
+ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
+* MII_CS_PRO_EORTC_QLQ_C30#1 "Sehr schlecht"
+* MII_CS_PRO_EORTC_QLQ_C30#2 "2"
+// ... bis 7 "Ausgezeichnet"
+</code></pre>
+
+<h3 id="implementierungshinweise">Implementierungshinweise</h3>
+
+<h4 id="scoring-beispiel-physical-function">Scoring-Beispiel: Physical Function</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FHIRPath
+// Items: qlq30-q01 bis qlq30-q05
+%pfRawScore = %resource.item
+  .where(linkId in ('qlq30-q01' | 'qlq30-q02' | 'qlq30-q03' | 'qlq30-q04' | 'qlq30-q05'))
+  .answer.value.ordinal()
+  .sum() / 5  // Mittelwert
+
+// Funktionsskala: Invertierte Transformation
+%pfScore = (1 - (%pfRawScore - 1) / 3) * 100
+</code></pre></div></div>
+
+<p>Eine detaillierte Beschreibung der Scoring-Methodologie finden Sie unter <a href="eortc-qlq-c30-scoring.html">EORTC QLQ-C30 Scoring</a>.</p>
+
+<h3 id="bekannte-einschränkungen">Bekannte Einschränkungen</h3>
+
+<ol>
+  <li><strong>Lizenzierung</strong>: Copyright bei EORTC – Nutzungsbedingungen beachten</li>
+  <li><strong>Modul-System</strong>: QLQ-C30 oft mit spezifischen Modulen kombiniert (z.B. QLQ-BR23)</li>
+  <li><strong>Missing Items</strong>: Scoring bei fehlenden Items noch nicht implementiert</li>
+</ol>
+
+<h3 id="beispiel-questionnaireresponse">Beispiel QuestionnaireResponse</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QuestionnaireResponse"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"questionnaire"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Questionnaire/mii-qst-pro-eortc-qlq-c30"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"linkId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"qlq30-q01"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen?"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"answer"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"valueCoding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://mii.de/fhir/pro/CodeSystem/eortc-qlq-c30"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a-little"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wenig"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="err">weitere</span><span class="w"> </span><span class="mi">29</span><span class="w"> </span><span class="err">Items</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="integration-mit-mii-onkologie-modul">Integration mit MII Onkologie-Modul</h3>
+
+<p>Der EORTC QLQ-C30 ist primär für den Einsatz in onkologischen Settings relevant. Da der QLQ-C30 jedoch allgemeine Domänen abbildet (ähnlich dem PROMIS-29), wird er im MII PRO-Modul verwaltet. Weitere onkologie-spezifische PROs werden voraussichtlich im dedizierten MII Modul Onkologie verwaltet.</p>
+
+<h3 id="referenzen">Referenzen</h3>
+
+<ul>
+  <li><a href="https://qol.eortc.org/questionnaire/eortc-qlq-c30/">EORTC QLQ-C30 Official</a></li>
+  <li><a href="https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf">Scoring Manual</a></li>
+  <li>SNOMED: 273446001</li>
+</ul>
+
+<p><strong>Technical Preview</strong>: Lizenzierung mit EORTC erforderlich vor Produktiveinsatz.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-07-07 13:59:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
