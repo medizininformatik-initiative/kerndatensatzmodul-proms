@@ -9,7 +9,7 @@
       "resourceType" : "Questionnaire",
       "id" : "mii-qst-pro-eortc-qlq-c30",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -19,10 +19,10 @@
         "resourceType" : "CodeSystem",
         "id" : "eortc-qlq-c30-cs",
         "meta" : {
-          "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
+          "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
         },
         "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
-        "version" : "2026.4.1",
+        "version" : "2026.5.0",
         "status" : "active",
         "caseSensitive" : true,
         "content" : "complete",
@@ -163,10 +163,10 @@
         "resourceType" : "ValueSet",
         "id" : "eortc-qlq-c30-4pt",
         "meta" : {
-          "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
+          "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
         },
         "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
-        "version" : "2026.4.1",
+        "version" : "2026.5.0",
         "status" : "active",
         "compose" : {
           "include" : [{
@@ -194,10 +194,10 @@
         "resourceType" : "ValueSet",
         "id" : "eortc-qlq-c30-7pt",
         "meta" : {
-          "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
+          "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
         },
         "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
-        "version" : "2026.4.1",
+        "version" : "2026.5.0",
         "status" : "active",
         "compose" : {
           "include" : [{
@@ -250,7 +250,7 @@
         "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
-      "version" : "2026.4.1",
+      "version" : "2026.5.0",
       "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
       "status" : "active",
       "experimental" : true,
@@ -764,7 +764,7 @@
       "resourceType" : "QuestionnaireResponse",
       "id" : "mii-exa-pro-eortc-qlq-c30-response",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1088,7 +1088,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-pf",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1142,7 +1142,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-rf",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1188,7 +1188,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-ef",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1234,7 +1234,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-cf",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1280,7 +1280,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-sf",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1326,7 +1326,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-fa",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1372,7 +1372,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-nv",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1418,7 +1418,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-pa",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1464,7 +1464,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-dy",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1510,7 +1510,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-sl",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1556,7 +1556,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-ap",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1602,7 +1602,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-co",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1648,7 +1648,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-di",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1694,7 +1694,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-fi",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {
@@ -1740,7 +1740,7 @@
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-eortc-qlq-c30-observation-ql",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.4.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"]
       },
       "language" : "en",
       "text" : {

@@ -1,4 +1,4 @@
-# MII CS PRO MIDOS2 Items and Response Scales - MII IG PRO v2026.4.1
+# MII CS PRO MIDOS2 Items and Response Scales - MII IG PRO v2026.5.0
 
 ## CodeSystem: MII CS PRO MIDOS2 Items and Response Scales (Experimental) 
 
@@ -23,12 +23,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-midos2",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_CS_PRO_MIDOS2",
   "title" : "MII CS PRO MIDOS2 Items and Response Scales",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

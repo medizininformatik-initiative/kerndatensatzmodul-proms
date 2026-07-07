@@ -1,4 +1,4 @@
-# Terminology Strategies - MII IG PRO v2026.4.1
+# Terminology Strategies - MII IG PRO v2026.5.0
 
 ## Terminology Strategies
 

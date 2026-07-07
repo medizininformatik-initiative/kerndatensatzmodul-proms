@@ -1,4 +1,4 @@
-# mii-sp-pro-questionnaire-capabilities - MII IG PRO v2026.4.1
+# mii-sp-pro-questionnaire-capabilities - MII IG PRO v2026.5.0
 
 ## SearchParameter: mii-sp-pro-questionnaire-capabilities (Experimentell) 
 
@@ -27,7 +27,7 @@ SearchParameter for Questionnaire.extension[capabilities] to filter questionnair
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-questionnaire-capabilities",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_SP_PRO_Questionnaire_Capabilities",
   "status" : "active",
   "experimental" : true,

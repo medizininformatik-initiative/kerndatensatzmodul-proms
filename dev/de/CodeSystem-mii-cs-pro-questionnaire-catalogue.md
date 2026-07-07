@@ -1,4 +1,4 @@
-# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.4.1
+# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.5.0
 
 ## CodeSystem: MII CS PRO Questionnaire Catalogue 
 
@@ -22,11 +22,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-questionnaire-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     }]
   }],
   "content" : "complete",
-  "count" : 18,
+  "count" : 19,
   "concept" : [{
     "code" : "euroqol-eq5d5l",
     "display" : "EuroQol EQ-5D-5L Questionnaire"
@@ -119,6 +119,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "code" : "midos-midos2",
     "display" : "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, DGP)"
+  },
+  {
+    "code" : "whodas-whodas12",
+    "display" : "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
   }]
 }
 

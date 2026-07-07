@@ -1,4 +1,4 @@
-# MII QST PRO EQ-5D-5L (Displayable) - MII IG PRO v2026.4.1
+# MII QST PRO EQ-5D-5L (Displayable) - MII IG PRO v2026.5.0
 
 ## Questionnaire: MII QST PRO EQ-5D-5L (Displayable) (Experimental) 
 
@@ -24,7 +24,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-euroqol-eq5d5l-displayable",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
   },
   "language" : "de",
   "extension" : [{
@@ -51,12 +51,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "title" : "MII QST PRO EQ-5D-5L (Displayable)",
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

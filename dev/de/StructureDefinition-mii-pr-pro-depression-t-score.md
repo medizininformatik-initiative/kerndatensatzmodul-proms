@@ -1,4 +1,4 @@
-# MII PR PRO Depression Domain T-Score - MII IG PRO v2026.4.1
+# MII PR PRO Depression Domain T-Score - MII IG PRO v2026.5.0
 
 ## Ressourcenprofil: MII PR PRO Depression Domain T-Score 
 
@@ -101,11 +101,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-d
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-depression-t-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_PR_PRO_Depression_T_Score",
   "title" : "MII PR PRO Depression Domain T-Score",
   "status" : "active",
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

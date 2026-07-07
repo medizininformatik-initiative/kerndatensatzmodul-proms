@@ -1,4 +1,4 @@
-# MII PR PRO Observation EQ-5D-5L Index - MII IG PRO v2026.4.1
+# MII PR PRO Observation EQ-5D-5L Index - MII IG PRO v2026.5.0
 
 ## Ressourcenprofil: MII PR PRO Observation EQ-5D-5L Index ( Experimentell ) 
 
@@ -89,12 +89,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-eq5d5l-index",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_PR_PRO_Observation_EQ5D5L_Index",
   "title" : "MII PR PRO Observation EQ-5D-5L Index",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

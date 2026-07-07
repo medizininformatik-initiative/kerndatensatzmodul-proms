@@ -1,4 +1,4 @@
-# MII VS PRO MIDOS2 Wohlbefinden-Skala - MII IG PRO v2026.4.1
+# MII VS PRO MIDOS2 Wohlbefinden-Skala - MII IG PRO v2026.5.0
 
 ## ValueSet: MII VS PRO MIDOS2 Wohlbefinden-Skala (Experimentell) 
 
@@ -28,12 +28,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-midos2-wellbeing",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_VS_PRO_MIDOS2_Wellbeing",
   "title" : "MII VS PRO MIDOS2 Wohlbefinden-Skala",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

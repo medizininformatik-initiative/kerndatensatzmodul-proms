@@ -1,4 +1,4 @@
-# MII CS PRO Score Catalogue - MII IG PRO v2026.4.1
+# MII CS PRO Score Catalogue - MII IG PRO v2026.5.0
 
 ## CodeSystem: MII CS PRO Score Catalogue 
 
@@ -22,11 +22,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-score-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 40,
+  "count" : 41,
   "concept" : [{
     "code" : "euroqol-eq5d5l-index",
     "display" : "EuroQol EQ-5D-5L Index Score"
@@ -199,6 +199,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "dass21-stress-equiv",
     "display" : "DASS-21 Stress DASS-42 Equivalent Score"
+  },
+  {
+    "code" : "whodas12-simple-sum",
+    "display" : "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
   },
   {
     "code" : "proctcae-composite-grade",

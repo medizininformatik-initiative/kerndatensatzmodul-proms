@@ -1,4 +1,4 @@
-# DASS-21 Depression Score (DASS-42 Equivalent) - MII IG PRO v2026.4.1
+# DASS-21 Depression Score (DASS-42 Equivalent) - MII IG PRO v2026.5.0
 
 ## ObservationDefinition: DASS-21 Depression Score (DASS-42 Equivalent) 
 
@@ -8,9 +8,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.4.1
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.5.0
 
-**ArtifactVersion**: 2026.4.1
+**ArtifactVersion**: 2026.5.0
 
 **category**: Survey
 
@@ -43,11 +43,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-score-dass21-depression-equiv",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.4.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.5.0"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2026.4.1"
+    "valueString" : "2026.5.0"
   }],
   "category" : [{
     "coding" : [{

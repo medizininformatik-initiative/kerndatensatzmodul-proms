@@ -1,4 +1,4 @@
-# MII EXA PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2026.4.1
+# MII EXA PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2026.5.0
 
 ## Beispiel Observation: MII EXA PRO PROMIS Depression SF 4a Raw Score
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO PROMIS Depression SF 4a Raw Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md) version: 2026.4.1
+Profile: [MII PR PRO PROMIS Depression SF 4a Raw Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md) version: 2026.5.0
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO PROMIS Depression SF 4a Raw Score](StructureDefinition-mii-
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-promis-depression-sf4a-raw-score",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2026.4.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2026.5.0"]
   },
   "status" : "final",
   "category" : [{

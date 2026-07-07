@@ -1,4 +1,4 @@
-# MII QST PRO PROMIS-29 (Adults) - MII IG PRO v2026.4.1
+# MII QST PRO PROMIS-29 (Adults) - MII IG PRO v2026.5.0
 
 ## Questionnaire: MII QST PRO PROMIS-29 (Adults) (Experimental) 
 
@@ -24,7 +24,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-promis-29",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
   },
   "language" : "en",
   "extension" : [{
@@ -107,11 +107,11 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "title" : "MII QST PRO PROMIS-29 (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

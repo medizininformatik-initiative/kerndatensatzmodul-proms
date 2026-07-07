@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2026.4.1</title>
+    <title>Changelog - MII IG PRO v2026.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.4.1 - ci-build
+            <span style="display:inline-block;">2026.5.0 - ci-build
 
 
 
@@ -169,6 +169,9 @@
       <li>
         <a href="dass-21.html">DASS-21</a>
       </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -243,7 +246,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -264,6 +267,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
+
+<p><strong>Version: 2026.5.0</strong></p>
+
+<p>Datum: 2026-07-07 (in Vorbereitung)</p>
+
+<p>Minor-Release: zwei neue Instrumente (<strong>WHODAS 2.0 12-Item</strong> und <strong>PHQ-15</strong>), Aufbau einer gemeinsamen <strong>PHQ-D-Itembank</strong> (PHQ-9/PHQ-15), einheitliche <strong>MII-Score-Codierung</strong> über alle Score-ObsDefs und eine <strong>CI-Verbesserung</strong> (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.</p>
+
+<h2 id="neue-instrumente">Neue Instrumente</h2>
+
+<ul>
+  <li>Added: <strong>WHODAS 2.0 12-Item (Selbstauskunft)</strong> — WHO Disability Assessment Schedule 2.0, 12 Items über 6 ICF-Domänen, 30-Tage-Recall, 5-stufige Skala (0–4). Englisch primär mit deutschen Translations (validierte PCOR-MII-Wortlaute). Antworten via <code class="language-plaintext highlighter-rouge">answerValueSet</code> (<code class="language-plaintext highlighter-rouge">mii-vs-pro-whodas-12-answer-list</code>) mit ordinalValue-Gewichten auf den CodeSystem-Konzepten. <strong>Einschränkungsscore</strong> <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-whodas12-simple-sum</code> (0–48, SNOMED <code class="language-plaintext highlighter-rouge">715823002</code>, MII-Katalog <code class="language-plaintext highlighter-rouge">whodas12-simple-sum</code>, höher = mehr Beeinträchtigung). Inkl. Beispiel-QuestionnaireResponse + Score-Observation und IG-Seite.
+    <ul>
+      <li><strong>Lizenz:</strong> WHODAS 2.0 © WHO 2010. Die Bedingungen sind maschinenlesbar als <code class="language-plaintext highlighter-rouge">copyright</code> auf Questionnaire und CodeSystem hinterlegt: kostenfreie Kliniker-Eigennutzung; elektronische/Datenerfassungs-Nutzung erfordert eine (für nicht-kommerzielle Nutzung kostenlose) WHO-Nutzungsvereinbarung; Übersetzungen erfordern WHO-Genehmigung; MII-FHIR-Inhalte CC0, WHODAS-Itemtext © WHO.</li>
+    </ul>
+  </li>
+  <li>Added: <strong>PHQ-15</strong> (Gesundheitsfragebogen für Patienten, somatische Symptomlast, PHQ-D) — 15 Items, 4-Wochen-Recall, 3-stufige Skala (0–2). Englisch primär mit deutschen Translations (PHQ-D, Löwe et al. 2002). Antworten via <code class="language-plaintext highlighter-rouge">answerValueSet</code> mit ordinalValue-Gewichten. Score <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-phq-15</code> (0–30, LOINC <code class="language-plaintext highlighter-rouge">70273-8</code>) inkl. <strong>Schweregrad-Kategorien</strong> (Kroenke et al. 2002: 0–4 / 5–9 / 10–14 / 15–30) als <code class="language-plaintext highlighter-rouge">qualifiedInterval</code>-Reference-Ranges. Inkl. IG-Seite. Lizenz: frei verfügbar (public domain), PHQ-D.</li>
+</ul>
+
+<h2 id="architektur-phq-d-itembank">Architektur: PHQ-D-Itembank</h2>
+
+<ul>
+  <li>Changed: <strong>PHQ-9 und PHQ-15 nutzen ein gemeinsames PHQ-D-Block-LinkId-Schema</strong> (<code class="language-plaintext highlighter-rouge">phq-phq…</code>). Die in beiden Instrumenten enthaltenen Items (Schlaf <code class="language-plaintext highlighter-rouge">phq-phq2c</code>, Müdigkeit <code class="language-plaintext highlighter-rouge">phq-phq2d</code>) teilen sich denselben linkId — Grundlage für item-basiertes Scoring über Instrumente hinweg.</li>
+  <li>Changed: PHQ-15 auf <code class="language-plaintext highlighter-rouge">answerValueSet</code> + CodeSystem-<code class="language-plaintext highlighter-rouge">ordinalValue</code> (EN-first) umgestellt; <code class="language-plaintext highlighter-rouge">copyright</code>/Lizenz-Status auf PHQ-Ressourcen explizit gesetzt.</li>
+</ul>
+
+<h2 id="scoring--terminologie">Scoring &amp; Terminologie</h2>
+
+<ul>
+  <li>Changed: <strong>MII-Katalog-Code (<code class="language-plaintext highlighter-rouge">code.coding[mii]</code>) auf allen Score-ObservationDefinitions</strong> ergänzt (PROMIS-29 ×8, PROMIS Cognitive Function SF4a, Depression-T-Score, BDI-II, PHQ-9, PHQ-15) — zusätzlich zu LOINC/SNOMED, einheitlich über den MII-Score-Catalogue abfragbar (zuvor bereits EQ-5D/EORTC/DASS-21/PRO-CTCAE).</li>
+</ul>
+
+<h2 id="technische-verbesserungen">Technische Verbesserungen</h2>
+
+<ul>
+  <li>Changed: <strong>CI</strong> — <code class="language-plaintext highlighter-rouge">expand-valuesets.js</code> läuft jetzt nach SUSHI im IG-Build (<code class="language-plaintext highlighter-rouge">ig-publisher.yml</code>) und schreibt <code class="language-plaintext highlighter-rouge">vs.expansion</code> aus lokalen CodeSystems. Dadurch kann der Validator die MII-kontrollierten <code class="language-plaintext highlighter-rouge">answerValueSet</code>-Antwortskalen auflösen; die zuvor gemeldeten „Wert nicht in den angegebenen Optionen"-Findings auf Beispiel-QuestionnaireResponses entfallen (PHQ-15, WHODAS und künftige answerValueSet-Instrumente).</li>
+</ul>
 
 <p><strong>Version: 2026.4.1</strong></p>
 
@@ -571,9 +610,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-07-07 06:23:00 +0000">
+  <span title="2026-07-07 13:30:00 +0000">
     2026-07-07
   </span>
 

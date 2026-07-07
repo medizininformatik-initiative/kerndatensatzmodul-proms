@@ -1,4 +1,4 @@
-# MII ObsDef PRO Depression Domain T-Score - MII IG PRO v2026.4.1
+# MII ObsDef PRO Depression Domain T-Score - MII IG PRO v2026.5.0
 
 ## ObservationDefinition: MII ObsDef PRO Depression Domain T-Score 
 
@@ -8,9 +8,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.4.1
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.5.0
 
-**ArtifactVersion**: 2026.4.1
+**ArtifactVersion**: 2026.5.0
 
 **CQF Citation**: Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. JAMA Network Open. 2025;8(6):e2517394
 
@@ -48,11 +48,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-depression-t-score",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.4.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.5.0"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2026.4.1"
+    "valueString" : "2026.5.0"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-citation",

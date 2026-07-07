@@ -1,4 +1,4 @@
-# de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1: MII IG PRO(en)
+# de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0: MII IG PRO(en)
 
 ## Pages
 
@@ -23,6 +23,7 @@
 * [Module Description](module-description.md)
 * [Derived Metrics](derived-metrics.md)
 * [ValueSet](ValueSet-mii-qst-pro-eortc-qlq-c30-variant-b_eortc-qlq-c30-4pt-b.md)
+* [WHODAS 2.0 (12-Item)](whodas.md)
 * [BDI-II](bdi-ii.md)
 * [Translation Information](translationinfo.md)
 * [CodeSystem](CodeSystem-mii-qst-pro-eortc-qlq-c30-variant-b_eortc-qlq-c30-cs-b.md)
@@ -72,6 +73,7 @@
 * [MII CS PRO PRO-CTCAE Item Library](CodeSystem-mii-cs-pro-pro-ctcae.md)
 * [MII CS PRO Questionnaire Catalogue](CodeSystem-mii-cs-pro-questionnaire-catalogue.md)
 * [MII CS PRO Score Catalogue](CodeSystem-mii-cs-pro-score-catalogue.md)
+* [MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes](CodeSystem-mii-cs-pro-whodas-12.md)
 
 ### ValueSets
 
@@ -98,6 +100,7 @@
 * [MII VS PRO PROMIS Frequency Response Scale](ValueSet-mii-vs-pro-promis-frequency-response-scale.md)
 * [MII VS PRO PROMIS Intensity Response Scale](ValueSet-mii-vs-pro-promis-intensity-response-scale.md)
 * [MII VS PRO PROMIS Physical Function Response Scale](ValueSet-mii-vs-pro-promis-physical-function-response-scale.md)
+* [MII VS PRO WHODAS 2.0 12-Item Answer List](ValueSet-mii-vs-pro-whodas-12-answer-list.md)
 
 ### Logicals
 
@@ -110,6 +113,9 @@
 * [MII PR PRO Observation EQ-5D-5L Index](StructureDefinition-mii-pr-pro-observation-eq5d5l-index.md)
 * [MII PR PRO Observation EQ-5D-5L Profile](StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.md)
 * [MII PR PRO Observation EQ-5D-5L VAS](StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.md)
+* [MII PR PRO Observation PHQ-15](StructureDefinition-mii-pr-pro-observation-phq-15.md)
+* [MII PR PRO Observation PHQ-9](StructureDefinition-mii-pr-pro-observation-phq-9.md)
+* [MII PR PRO Observation WHODAS 2.0 12-Item](StructureDefinition-mii-pr-pro-observation-whodas12.md)
 * [MII PR PRO PROMIS-29 Anxiety T-Score](StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.md)
 * [MII PR PRO PROMIS-29 Depression T-Score](StructureDefinition-mii-pr-pro-promis-29-depression-tscore.md)
 * [MII PR PRO PROMIS-29 Fatigue T-Score](StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.md)
@@ -185,6 +191,7 @@
 * [mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md)
 * [mii-obsdef-pro-score-proctcae-acs](ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.md)
 * [mii-obsdef-pro-score-proctcae-composite-grade](ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.md)
+* [mii-obsdef-pro-score-whodas12-simple-sum](ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.md)
 
 ### Questionnaires
 
@@ -212,6 +219,7 @@
 * [MII QST PRO PROMIS-29 (Adults)](Questionnaire-mii-qst-pro-promis-29.md)
 * [MII QST PRO PROMIS Cognitive Function SF 4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md)
 * [MII QST PRO PROMIS Depression SF 4a (Adults)](Questionnaire-mii-qst-pro-promis-depression-sf4a.md)
+* [MII QST PRO WHODAS 2.0 12-Item](Questionnaire-mii-qst-pro-whodas-whodas12.md)
 
 ### SearchParameters
 
@@ -257,6 +265,7 @@
 * [mii-exa-pro-promis-depression-sf4a-raw-score (Observation)](Observation-mii-exa-pro-promis-depression-sf4a-raw-score.md)
 * [mii-exa-pro-promis-depression-sf4a-tscore (Observation)](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md)
 * [mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation (Observation)](Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.md)
+* [mii-exa-pro-whodas12-score-simple-sum (Observation)](Observation-mii-exa-pro-whodas12-score-simple-sum.md)
 * [mii-exa-pro-patient (Patient)](Patient-mii-exa-pro-patient.md)
 * [mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01 (QuestionnaireResponse)](QuestionnaireResponse-mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01.md)
 * [mii-exa-pro-bdi-bdi2 (QuestionnaireResponse)](QuestionnaireResponse-mii-exa-pro-bdi-bdi2.md)
@@ -270,3 +279,4 @@
 * [mii-exa-pro-promis-29-de-response (QuestionnaireResponse)](QuestionnaireResponse-mii-exa-pro-promis-29-de-response.md)
 * [mii-exa-pro-promis-29-response (QuestionnaireResponse)](QuestionnaireResponse-mii-exa-pro-promis-29-response.md)
 * [mii-exa-pro-promis-depression-sf4a-response (QuestionnaireResponse)](QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.md)
+* [mii-exa-pro-whodas12-response-01 (QuestionnaireResponse)](QuestionnaireResponse-mii-exa-pro-whodas12-response-01.md)

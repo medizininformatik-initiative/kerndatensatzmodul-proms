@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS Cognitive Function SF 4a T-Score - MII IG PRO v2026.4.1
+# MII PR PRO PROMIS Cognitive Function SF 4a T-Score - MII IG PRO v2026.5.0
 
 ## Resource Profile: MII PR PRO PROMIS Cognitive Function SF 4a T-Score ( Experimental ) 
 
@@ -29,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-cognitive-function-sf4a-tscore",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore",
   "title" : "MII PR PRO PROMIS Cognitive Function SF 4a T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-preferred-report-name - MII IG PRO v2026.4.1
+# mii-sp-pro-observationdefinition-preferred-report-name - MII IG PRO v2026.5.0
 
 ## SearchParameter: mii-sp-pro-observationdefinition-preferred-report-name (Experimental) 
 
@@ -27,7 +27,7 @@ SearchParameter for ObservationDefinition.preferredReportName to search score de
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_SP_PRO_ObservationDefinition_PreferredReportName",
   "status" : "active",
   "experimental" : true,

@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Frequency Scale - MII IG PRO v2026.4.1
+# MII VS PRO PRO-CTCAE Frequency Scale - MII IG PRO v2026.5.0
 
 ## ValueSet: MII VS PRO PRO-CTCAE Frequency Scale (Experimentell) 
 
@@ -29,12 +29,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-frequency",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_VS_PRO_PRO_CTCAE_Frequency",
   "title" : "MII VS PRO PRO-CTCAE Frequency Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

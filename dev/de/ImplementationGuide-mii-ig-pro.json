@@ -7,11 +7,11 @@
     "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mii-ig-pro</b></p><a name=\"mii-ig-pro\"> </a><a name=\"hcmii-ig-pro\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de</p></div><h2>MII_IG_PRO</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro</pre><div><p>Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken</p>\n</div></div>"
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -1459,6 +1459,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mii-cs-pro-whodas-12"
+      },
+      "name" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
+      "description" : "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1622,6 +1634,18 @@
       },
       "name" : "MII EXA PRO PROMIS-29 Response (German)",
       "description" : "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-whodas12-response-01"
+      },
+      "name" : "MII EXA PRO WHODAS 2.0 12-Item Response",
+      "description" : "Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
     },
     {
@@ -1898,6 +1922,42 @@
       },
       "name" : "MII PR PRO Observation EQ-5D-5L VAS",
       "description" : "Profile for EQ-5D-5L Visual Analogue Scale Score Observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-pro-observation-phq-15"
+      },
+      "name" : "MII PR PRO Observation PHQ-15",
+      "description" : "Profile for Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score Observations (0-30; higher scores indicate greater somatic symptom burden).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-pro-observation-phq-9"
+      },
+      "name" : "MII PR PRO Observation PHQ-9",
+      "description" : "Profile for Patient Health Questionnaire-9 (PHQ-9) total score Observations (0-27; higher scores indicate more severe depression).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-pro-observation-whodas12"
+      },
+      "name" : "MII PR PRO Observation WHODAS 2.0 12-Item",
+      "description" : "Profile for WHODAS 2.0 12-item simple sum (disability) score Observations (0-48; higher scores indicate greater disability). No suitable LOINC code exists; SNOMED CT and the MII score catalogue are used.",
       "exampleBoolean" : false
     },
     {
@@ -2371,6 +2431,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-whodas-whodas12"
+      },
+      "name" : "MII QST PRO WHODAS 2.0 12-Item",
+      "description" : "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2647,6 +2719,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-pro-whodas-12-answer-list"
+      },
+      "name" : "MII VS PRO WHODAS 2.0 12-Item Answer List",
+      "description" : "5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
       }],
       "reference" : {
@@ -2748,7 +2832,7 @@
         "reference" : "Observation/mii-exa-pro-phq-15-observation"
       },
       "name" : "PHQ-15 Score Observation Example",
-      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15"
     },
     {
       "extension" : [{
@@ -2759,7 +2843,7 @@
         "reference" : "Observation/mii-exa-pro-phq-9-observation"
       },
       "name" : "PHQ-9 Observation Example",
-      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9"
     },
     {
       "extension" : [{
@@ -2830,6 +2914,30 @@
       },
       "name" : "PROMIS Depression T-Score, derived from BDI-II Observation Example",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum"
+      },
+      "name" : "WHODAS 2.0 12-Item Simple Sum Score",
+      "description" : "Sum of the 12 WHODAS 2.0 item scores (each 0-4), range 0-48. Higher scores indicate greater disability. WHO simple scoring method; complex IRT-based scoring deferred to future work.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-whodas12-score-simple-sum"
+      },
+      "name" : "WHODAS 2.0 12-Item Simple Sum Score Observation",
+      "description" : "WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12"
     }],
     "page" : {
       "extension" : [{
@@ -3088,6 +3196,15 @@
           }],
           "nameUrl" : "proms-onkologisches-basisscreening.html",
           "title" : "Onkologisches Basisscreening (PRO-CTCAE)",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "whodas.html"
+          }],
+          "nameUrl" : "whodas.html",
+          "title" : "WHODAS 2.0 (12-Item)",
           "generation" : "markdown"
         },
         {

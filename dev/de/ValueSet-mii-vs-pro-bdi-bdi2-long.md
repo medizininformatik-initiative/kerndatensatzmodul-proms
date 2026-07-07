@@ -1,4 +1,4 @@
-# MII VS PRO BDI-II - MII IG PRO v2026.4.1
+# MII VS PRO BDI-II - MII IG PRO v2026.5.0
 
 ## ValueSet: MII VS PRO BDI-II (Experimentell) 
 
@@ -28,12 +28,12 @@ MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnai
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-bdi-bdi2-long",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_VS_PRO_BDI_BDI2_AnswerListLong",
   "title" : "MII VS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

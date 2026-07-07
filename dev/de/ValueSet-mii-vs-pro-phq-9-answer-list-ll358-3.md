@@ -1,4 +1,4 @@
-# MII VS PRO PHQ-9 Answer List LL358-3 - MII IG PRO v2026.4.1
+# MII VS PRO PHQ-9 Answer List LL358-3 - MII IG PRO v2026.5.0
 
 ## ValueSet: MII VS PRO PHQ-9 Answer List LL358-3 
 
@@ -29,12 +29,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "id" : "mii-vs-pro-phq-9-answer-list-ll358-3",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
-  "version" : "2026.4.1",
+  "version" : "2026.5.0",
   "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3583",
   "title" : "MII VS PRO PHQ-9 Answer List LL358-3",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-07T06:23:56+00:00",
+  "date" : "2026-07-07T13:30:17+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

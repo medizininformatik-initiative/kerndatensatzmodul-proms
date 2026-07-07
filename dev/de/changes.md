@@ -1,8 +1,34 @@
-# Changelog - MII IG PRO v2026.4.1
+# Changelog - MII IG PRO v2026.5.0
 
 ## Changelog
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
+
+**Version: 2026.5.0**
+
+Datum: 2026-07-07 (in Vorbereitung)
+
+Minor-Release: zwei neue Instrumente (**WHODAS 2.0 12-Item** und **PHQ-15**), Aufbau einer gemeinsamen **PHQ-D-Itembank** (PHQ-9/PHQ-15), einheitliche **MII-Score-Codierung** über alle Score-ObsDefs und eine **CI-Verbesserung** (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.
+
+## Neue Instrumente
+
+* Added: **WHODAS 2.0 12-Item (Selbstauskunft)** — WHO Disability Assessment Schedule 2.0, 12 Items über 6 ICF-Domänen, 30-Tage-Recall, 5-stufige Skala (0–4). Englisch primär mit deutschen Translations (validierte PCOR-MII-Wortlaute). Antworten via `answerValueSet` (`mii-vs-pro-whodas-12-answer-list`) mit ordinalValue-Gewichten auf den CodeSystem-Konzepten. **Einschränkungsscore** `mii-obsdef-pro-score-whodas12-simple-sum` (0–48, SNOMED `715823002`, MII-Katalog `whodas12-simple-sum`, höher = mehr Beeinträchtigung). Inkl. Beispiel-QuestionnaireResponse + Score-Observation und IG-Seite. 
+* **Lizenz:** WHODAS 2.0 © WHO 2010. Die Bedingungen sind maschinenlesbar als `copyright` auf Questionnaire und CodeSystem hinterlegt: kostenfreie Kliniker-Eigennutzung; elektronische/Datenerfassungs-Nutzung erfordert eine (für nicht-kommerzielle Nutzung kostenlose) WHO-Nutzungsvereinbarung; Übersetzungen erfordern WHO-Genehmigung; MII-FHIR-Inhalte CC0, WHODAS-Itemtext © WHO.
+ 
+* Added: **PHQ-15** (Gesundheitsfragebogen für Patienten, somatische Symptomlast, PHQ-D) — 15 Items, 4-Wochen-Recall, 3-stufige Skala (0–2). Englisch primär mit deutschen Translations (PHQ-D, Löwe et al. 2002). Antworten via `answerValueSet` mit ordinalValue-Gewichten. Score `mii-obsdef-pro-score-phq-15` (0–30, LOINC `70273-8`) inkl. **Schweregrad-Kategorien** (Kroenke et al. 2002: 0–4 / 5–9 / 10–14 / 15–30) als `qualifiedInterval`-Reference-Ranges. Inkl. IG-Seite. Lizenz: frei verfügbar (public domain), PHQ-D.
+
+## Architektur: PHQ-D-Itembank
+
+* Changed: **PHQ-9 und PHQ-15 nutzen ein gemeinsames PHQ-D-Block-LinkId-Schema** (`phq-phq…`). Die in beiden Instrumenten enthaltenen Items (Schlaf `phq-phq2c`, Müdigkeit `phq-phq2d`) teilen sich denselben linkId — Grundlage für item-basiertes Scoring über Instrumente hinweg.
+* Changed: PHQ-15 auf `answerValueSet` + CodeSystem-`ordinalValue` (EN-first) umgestellt; `copyright`/Lizenz-Status auf PHQ-Ressourcen explizit gesetzt.
+
+## Scoring & Terminologie
+
+* Changed: **MII-Katalog-Code (`code.coding[mii]`) auf allen Score-ObservationDefinitions** ergänzt (PROMIS-29 ×8, PROMIS Cognitive Function SF4a, Depression-T-Score, BDI-II, PHQ-9, PHQ-15) — zusätzlich zu LOINC/SNOMED, einheitlich über den MII-Score-Catalogue abfragbar (zuvor bereits EQ-5D/EORTC/DASS-21/PRO-CTCAE).
+
+## Technische Verbesserungen
+
+* Changed: **CI** — `expand-valuesets.js` läuft jetzt nach SUSHI im IG-Build (`ig-publisher.yml`) und schreibt `vs.expansion` aus lokalen CodeSystems. Dadurch kann der Validator die MII-kontrollierten `answerValueSet`-Antwortskalen auflösen; die zuvor gemeldeten „Wert nicht in den angegebenen Optionen"-Findings auf Beispiel-QuestionnaireResponses entfallen (PHQ-15, WHODAS und künftige answerValueSet-Instrumente).
 
 **Version: 2026.4.1**
 

@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artefaktübersicht - MII IG PRO v2026.4.1</title>
+    <title>Artefaktübersicht - MII IG PRO v2026.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.4.1 - ci-build
+            <span style="display:inline-block;">2026.5.0 - ci-build
 
 
 
@@ -169,6 +169,9 @@
       <li>
         <a href="dass-21.html">DASS-21</a>
       </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -243,7 +246,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artefaktübersicht</h2>
   
   
@@ -712,6 +715,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-whodas-whodas12.html"
+                  title="Questionnaire/mii-qst-pro-whodas-whodas12">
+                  <span title="Questionnaire/mii-qst-pro-whodas-whodas12">MII QST PRO WHODAS 2.0 12-Item
+</span>
+               </a>
+            </td>
+            <td>
+<p>WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html"
                   title="Questionnaire/mii-qst-pro-pro-ctcae-breast-de">
                   <span title="Questionnaire/mii-qst-pro-pro-ctcae-breast-de">PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)
@@ -788,6 +803,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profile for EQ-5D-5L Visual Analogue Scale Score Observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-observation-phq-15.html"
+                  title="StructureDefinition/mii-pr-pro-observation-phq-15">
+                  <span title="StructureDefinition/mii-pr-pro-observation-phq-15">MII PR PRO Observation PHQ-15
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score Observations (0-30; higher scores indicate greater somatic symptom burden).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-observation-phq-9.html"
+                  title="StructureDefinition/mii-pr-pro-observation-phq-9">
+                  <span title="StructureDefinition/mii-pr-pro-observation-phq-9">MII PR PRO Observation PHQ-9
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for Patient Health Questionnaire-9 (PHQ-9) total score Observations (0-27; higher scores indicate more severe depression).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mii-pr-pro-observation-whodas12.html"
+                  title="StructureDefinition/mii-pr-pro-observation-whodas12">
+                  <span title="StructureDefinition/mii-pr-pro-observation-whodas12">MII PR PRO Observation WHODAS 2.0 12-Item
+</span>
+               </a>
+            </td>
+            <td>
+<p>Profile for WHODAS 2.0 12-item simple sum (disability) score Observations (0-48; higher scores indicate greater disability). No suitable LOINC code exists; SNOMED CT and the MII score catalogue are used.</p>
 </td>
          </tr>
          <tr>
@@ -1286,6 +1337,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>PROMIS Physical Function response scale based on LOINC LL1022-4</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-whodas-12-answer-list.html"
+                  title="ValueSet/mii-vs-pro-whodas-12-answer-list">
+                  <span title="ValueSet/mii-vs-pro-whodas-12-answer-list">MII VS PRO WHODAS 2.0 12-Item Answer List
+</span>
+               </a>
+            </td>
+            <td>
+<p>5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="8"> </a>
@@ -1400,6 +1463,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-whodas-12.html"
+                  title="CodeSystem/mii-cs-pro-whodas-12">
+                  <span title="CodeSystem/mii-cs-pro-whodas-12">MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).</p>
 </td>
          </tr>
       </tbody>
@@ -1907,6 +1982,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Composite grade for a single PRO-CTCAE adverse event, computed from frequency, severity, and/or interference scores using the NCI composite grading algorithm (Basch et al., 2021). Range 0-3, mapped to CTCAE grade equivalents. Grade 0 = no symptom, Grade 3 = most severe patient-reported burden. May have dataAbsentReason when patient selected opt-out answers.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum">WHODAS 2.0 12-Item Simple Sum Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sum of the 12 WHODAS 2.0 item scores (each 0-4), range 0-48. Higher scores indicate greater disability. WHO simple scoring method; complex IRT-based scoring deferred to future work.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="11"> </a>
@@ -2385,6 +2472,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-whodas12-response-01.html"
+                  title="QuestionnaireResponse/mii-exa-pro-whodas12-response-01">
+                  <span title="QuestionnaireResponse/mii-exa-pro-whodas12-response-01">MII EXA PRO WHODAS 2.0 12-Item Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="QuestionnaireResponse-mii-exa-pro-phq-15-response.html"
                   title="QuestionnaireResponse/mii-exa-pro-phq-15-response">
                   <span title="QuestionnaireResponse/mii-exa-pro-phq-15-response">PHQ-15 Questionnaire Response Example
@@ -2455,6 +2554,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-whodas12-score-simple-sum.html"
+                  title="Observation/mii-exa-pro-whodas12-score-simple-sum">
+                  <span title="Observation/mii-exa-pro-whodas12-score-simple-sum">WHODAS 2.0 12-Item Simple Sum Score Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24).</p>
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -2482,9 +2593,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-07-07 06:23:00 +0000">
+  <span title="2026-07-07 13:30:00 +0000">
     2026-07-07
   </span>
 
