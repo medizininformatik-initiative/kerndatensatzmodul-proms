@@ -3,7 +3,7 @@
   "id": "mii-ig-pro",
   "language": "de-DE",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version": "2026.4.1",
+  "version": "2026.5.0",
   "name": "MII_IG_PRO",
   "title": "MII IG PRO",
   "status": "active",
@@ -516,6 +516,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-whodas-12"
+        },
+        "name": "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
+        "description": "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-pro-score-score-health-correlation"
         },
         "name": "MII Ex PRO Score Score Health Correlation",
@@ -624,6 +632,14 @@
         },
         "name": "MII EXA PRO PROMIS-29 Response (German)",
         "description": "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-whodas12-response-01"
+        },
+        "name": "MII EXA PRO WHODAS 2.0 12-Item Response",
+        "description": "Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24.",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
@@ -1124,6 +1140,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-whodas-whodas12"
+        },
+        "name": "MII QST PRO WHODAS 2.0 12-Item",
+        "description": "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-pro-bdi-bdi2-short"
         },
         "name": "MII VS PRO BDI-II",
@@ -1308,6 +1332,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-pro-whodas-12-answer-list"
+        },
+        "name": "MII VS PRO WHODAS 2.0 12-Item Answer List",
+        "description": "5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-pro-observationdefinition-code"
         },
         "name": "mii-sp-pro-observationdefinition-code",
@@ -1428,6 +1460,22 @@
         },
         "name": "PROMIS Depression T-Score, derived from BDI-II Observation Example",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum"
+        },
+        "name": "WHODAS 2.0 12-Item Simple Sum Score",
+        "description": "Sum of the 12 WHODAS 2.0 item scores (each 0-4), range 0-48. Higher scores indicate greater disability. WHO simple scoring method; complex IRT-based scoring deferred to future work.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-whodas12-score-simple-sum"
+        },
+        "name": "WHODAS 2.0 12-Item Simple Sum Score Observation",
+        "description": "WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       }
     ],
     "page": {
@@ -1515,6 +1563,11 @@
               "generation": "markdown"
             },
             {
+              "nameUrl": "phq-15.html",
+              "title": "PHQ-15",
+              "generation": "markdown"
+            },
+            {
               "nameUrl": "eq-5d-5l.html",
               "title": "EQ-5D-5L",
               "generation": "markdown",
@@ -1578,6 +1631,11 @@
             {
               "nameUrl": "proms-onkologisches-basisscreening.html",
               "title": "Onkologisches Basisscreening (PRO-CTCAE)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "whodas.html",
+              "title": "WHODAS 2.0 (12-Item)",
               "generation": "markdown"
             },
             {
