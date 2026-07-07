@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-pro-phq-15-answers",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-pro-phq-15-answers</b></p><a name=\"mii-vs-pro-phq-15-answers\"> </a><a name=\"hcmii-vs-pro-phq-15-answers\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mii-cs-pro-phq-15-answers.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2026.5.0</span></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-pro-phq-15-answers</b></p><a name=\"en-mii-vs-pro-phq-15-answers\"> </a><a name=\"en-hcmii-vs-pro-phq-15-answers\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mii-cs-pro-phq-15-answers.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2026.5.0</span></li></ul></div></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
+  "version" : "2026.5.0",
+  "name" : "MII_VS_PRO_PHQ_15_Answers",
+  "title" : "MII VS PRO PHQ-15 Answers",
+  "status" : "active",
+  "date" : "2026-07-07T13:29:05+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt, 1 = Wenig beeinträchtigt, 2 = Stark beeinträchtigt). MII-controlled for reliable ordinal() score calculation.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers"
+    }]
+  }
+}
