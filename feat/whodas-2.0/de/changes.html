@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Changelog - MII IG PRO v2026.4.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.4.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/changes.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Changelog</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Changelog</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
+
+<p><strong>Version: 2026.4.1</strong></p>
+
+<p>Datum: 2026-06-15 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.1</code>)</p>
+
+<p>Patch-Release auf v2026.4.0: behebt fehlendes Versions-Metadatum auf den 3 EQ-5D-5L ObservationDefinitions, das beim Bake von v2026.4.0 entdeckt wurde.</p>
+
+<p>FHIR-Ressourcen:</p>
+<ul>
+  <li>Fixed: <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-eq5d5l-index</code>, <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-eq5d5l-profile</code>, <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-eq5d5l-vas</code> – <code class="language-plaintext highlighter-rouge">* insert ObsDefVersion</code> und <code class="language-plaintext highlighter-rouge">* insert MetaProfile(...)</code> ergänzt (vorher fehlten beide RuleSets, dadurch keine <code class="language-plaintext highlighter-rouge">artifact-version</code>-Extension im Package und kein <code class="language-plaintext highlighter-rouge">meta.profile</code>-Eintrag mit Canonical-Version). Andere ObsDefs (PHQ-9, BDI-II, PROMIS-29, DASS-21, PRO-CTCAE, EORTC QLQ-C30, Depression T-Score) hatten beide RuleSets bereits.</li>
+</ul>
+
+<p>Verifikation:</p>
+<ul>
+  <li>Vorher: 36 ObsDefs mit artifact-version=2026.4.0, 3 ohne (EQ-5D)</li>
+  <li>Nachher: 39 ObsDefs mit artifact-version=2026.4.1</li>
+</ul>
+
+<p><strong>Version: 2026.4.0</strong></p>
+
+<p>Datum: 2026-06-14 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.0</code>)</p>
+
+<p>Zwei thematische Erweiterungen in einem Release: <strong>PROMIS-Konsolidierung</strong> (PROMIS-16 PROPr, Wording-Migration, Copyright-Modell) und <strong>Symptom-Screening für die onkologische und palliative Versorgung</strong> (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening).</p>
+
+<h2 id="symptom-screening-midos2--pro-ctcae-onkologisches-basisscreening">Symptom-Screening (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening)</h2>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: <strong>MIDOS2</strong> (Minimal Documentation System for Patients in Palliative Care, DGP) – Palliativ-Symptom-Screening mit 13 Items (11 Symptome auf DGP-4-stufiger Severity-Skala, Wohlbefinden auf 4-stufiger Skala, Freitext)</li>
+  <li>Added: <strong>PRO-CTCAE Onkologisches Basisscreening</strong> (DKG) – Subset des NCI PRO-CTCAE mit MIDOS2-äquivalenter Symptomauswahl, 10 AEs / 23 Items, Depressivität via PRO-CTCAE-konformes Mehrfach-Mapping (#55 Discouraged + #56 Sad), Angst+Anspannung via #54 Anxiety</li>
+</ul>
+
+<p>Architektur:</p>
+<ul>
+  <li>Added: PRO-CTCAE Complete als Master-Itembank, Derivate via <code class="language-plaintext highlighter-rouge">derivedFrom</code></li>
+  <li>Added: Catalogue-Einträge <code class="language-plaintext highlighter-rouge">midos-midos2</code> und <code class="language-plaintext highlighter-rouge">proctcae-onkologisches-basisscreening</code></li>
+</ul>
+
+<p>Terminologie &amp; Mapping:</p>
+<ul>
+  <li>Added: MIDOS2 CodeSystem mit DGP-4-stufiger Severity-Skala (keine/leichte/mittlere/starke)</li>
+  <li>Added: MIDOS2 separate Wohlbefinden-Skala (sehr gut/eher gut/eher schlecht/sehr schlecht)</li>
+  <li>Added: SNOMED-Properties auf MIDOS2 Item-Codes (wo eindeutig; Verifikation via Snowstorm ausstehend)</li>
+  <li>Added: MIDOS2 ↔ PRO-CTCAE Item-Level Mapping (11 AEs, 23 Items)</li>
+  <li>Verified: PRO-CTCAE Item-Wordings gegen NCI-Originaldokument (EN/DE)</li>
+  <li>Identified: Diskrepanzen #27 Hair Loss + #59 Vaginal Discharge (int → amt) – dokumentiert</li>
+</ul>
+
+<p>IG-Dokumentation:</p>
+<ul>
+  <li>Added: <code class="language-plaintext highlighter-rouge">midos2.md</code> – Überblick, Skalen, Score-Berechnung, Mapping zu Onkologischem Basisscreening, Literatur</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">proms-onkologisches-basisscreening.md</code> – PRO-CTCAE-basierte Symptomauswahl, Skalen, Composite Grading, MIDOS-Mapping</li>
+  <li>Added: Beide Seiten als Unterseiten der PRO Library in <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> registriert</li>
+</ul>
+
+<p>Beispiele:</p>
+<ul>
+  <li>Added: <code class="language-plaintext highlighter-rouge">mii-exa-pro-midos2-response</code> – Palliativpatient mit moderater Symptomlast (Summe 19/33)</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response</code> – Onkologischer Patient unter Chemotherapie</li>
+</ul>
+
+<p>Qualitätssicherung:</p>
+<ul>
+  <li>Status: Beide Instrumente <code class="language-plaintext highlighter-rouge">draft</code> + <code class="language-plaintext highlighter-rouge">experimental</code></li>
+  <li>TODO: MIDOS2 Source-Verifikation gegen Stiel et al. 2010/2012 (Bead <code class="language-plaintext highlighter-rouge">5jd</code>)</li>
+</ul>
+
+<p>Quellen:</p>
+<ul>
+  <li>NCI PRO-CTCAE Item Library v1.0 (EN/DE)</li>
+  <li>Stiel et al. 2010/2012 (MIDOS2, Verifikation ausstehend)</li>
+</ul>
+
+<h2 id="promis-konsolidierung">PROMIS-Konsolidierung</h2>
+
+<p>PROMIS-Konsolidierung: vollständige Implementierung des PROMIS-16-Profile v2.1 (PROPr), Wording-Migration der bestehenden PROMIS-29- und Cognitive-Function-SF4a-Questionnaires auf die offizielle deutsche PROMIS-Quelle, und Einführung eines mehrschichtigen Copyright-/Lizenz-Modells für alle PROMIS-Ressourcen.</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: <strong>PROMIS-16 Profile v2.1 (PROPr)</strong> – ultrakurzes Multi-Domain-Instrument mit 16 Items über 8 Domänen (inkl. Cognitive Function); alle Items mit offiziellen deutschen Wordings aus dem PHO PDF "PROMIS-16 Profile v2.1 (PROPr), German, 20 September 2024" implementiert. Score-Berechnung (PROPr Utility + 8 Domain T-Scores) bewusst auf spätere Version verschoben (CQL Library <code class="language-plaintext highlighter-rouge">mii-lib-promis-16</code> geplant)</li>
+  <li>Fixed: <strong>PROMIS-29 Wording-Migration</strong> – 25 Item-Texte in <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29</code> und <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> an die offiziellen deutschen Wordings angepasst (vorher: AI-generierte/LOINC-Fragment-Übersetzungen). Quellen-Hierarchie: das PHO PDF "PROMIS-29 Profile v2.1 German, 06 April 2020" ist normativ; das PCOR-MII Master Item-Level Dictionary (DZPG-3-Entities) dient als sekundärer Cross-Check</li>
+  <li>Fixed: <strong>PROMIS-29 Pain Interference Verb-Tempus</strong> – 4 Items (<code class="language-plaintext highlighter-rouge">promis-painin9</code>, <code class="language-plaintext highlighter-rouge">promis-painin22</code>, <code class="language-plaintext highlighter-rouge">promis-painin31</code>, <code class="language-plaintext highlighter-rouge">promis-painin34</code>) von Präsens "beeinträchtigen" auf Präteritum "beeinträchtigten" umgestellt, konform mit PHO PDF und mit der eigenen Section-Description "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen…" (vorheriger Stand basierte auf PCOR-MII Master Wording, das hier vom PHO-Original abweicht)</li>
+  <li>Fixed: <strong>PROMIS-29 Antwortskalen</strong> – 5 Items (HI7, AN3, Sleep116, Sleep20, Sleep44) von der Frequency-Skala auf die Intensity-Skala umgestellt; LOINC-Code-Tausch LA6270-8/LA10066-1/LA10082-8/LA10044-8/LA9933-8 → LA6568-5/LA13863-8/LA13909-9/LA13902-4/LA13914-9</li>
+  <li>Fixed: <strong>PROMIS-29 SRPPER23-CaPS</strong> – falscher LOINC-Code 62041-9 ("satisfied with work") ersetzt durch 76709-5 ("trouble doing usual work") mit passendem deutschem Text (PCOR-MII Master enthält hier einen Tippfehler "erldige", unsere Version "erledigen" folgt PHO PDF)</li>
+  <li>Changed: <strong>PROMIS Cognitive Function SF 4a</strong> – Copyright-RuleSet eingefügt (Wordings waren bereits PHO-konform und bleiben unverändert)</li>
+</ul>
+
+<p>Architektur &amp; Lizenzierung:</p>
+<ul>
+  <li>Added: Zentrales RuleSet <code class="language-plaintext highlighter-rouge">PROMIS_Copyright_DE</code> (<code class="language-plaintext highlighter-rouge">input/fsh/rulesets/promis-copyright.fsh</code>) mit Schichten-Attribution für alle PROMIS-Questionnaires:
+    <ol>
+      <li>FHIR-Resource-Struktur © MII (CC-BY 4.0)</li>
+      <li>PROMIS-Items © PROMIS Health Organization (Northwestern University)</li>
+      <li>Offizielle deutsche Übersetzungen bereitgestellt durch PCOR-MII, kuratiert durch PROMIS National Center Deutschland (CPCOR Charité, Leitung Felix Fischer)</li>
+      <li>LOINC-Codes © Regenstrief Institute</li>
+    </ol>
+  </li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">publisher</code>, <code class="language-plaintext highlighter-rouge">copyright</code>, <code class="language-plaintext highlighter-rouge">useContext</code> (PROMIS + CPCOR) und <code class="language-plaintext highlighter-rouge">contact</code> (CPCOR-Nutzungsanfrage) auf allen PROMIS-Questionnaire-Instanzen</li>
+  <li>Added: Neue ValueSet <code class="language-plaintext highlighter-rouge">MII_VS_PRO_PROMIS_Intensity_Response_Scale</code> (LOINC LL1024-0: Not at all/A little bit/Somewhat/Quite a bit/Very much mit deutschen Designationen)</li>
+  <li>Clarified: <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> ist nur eine Darstellungsvariante (DE-primary für Renderer, die die <code class="language-plaintext highlighter-rouge">translation</code>-Extension nicht auswerten); inhaltlich identisch zur EN-primären Hauptversion <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29</code>, die maßgeblich ist</li>
+</ul>
+
+<p>IG-Dokumentation:</p>
+<ul>
+  <li>Added: <code class="language-plaintext highlighter-rouge">input/pagecontent/promis-16.md</code> – Übersicht, Capabilities, PROPr-Methodik (3-Stufen), Item-Überlapp mit PROMIS-29, Vergleichstabelle, Lizenzierungs-Abschnitt</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">implementation-guides/.../PROMIS/PROMIS-16.page.md</code> – Simplifier-Seite mit Vorschau/Tree/JSON/XML-Tabs</li>
+  <li>Added: PROMIS-16 in <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> Menü und Simplifier-<code class="language-plaintext highlighter-rouge">toc.yaml</code> registriert</li>
+  <li>Added: Zentrale "Lizenzierung &amp; Urheberrecht"-Sektion in <code class="language-plaintext highlighter-rouge">input/pagecontent/promis.md</code> mit 4-Schichten-Tabelle und CPCOR-Nutzungsanfrage-Link</li>
+  <li>Added: Hinweis auf der PROMIS-29-Seite (input + Simplifier), dass die DE-Variante nur zur Darstellung dient und nicht als eigenständige Implementierung gepflegt wird</li>
+</ul>
+
+<p>Tooling:</p>
+<ul>
+  <li>Added: Skill <code class="language-plaintext highlighter-rouge">.claude/skills/extract-qst-translations/</code> – jq-basierter Extraktor für Item-Texte und Translation-Extensions aus generierten Questionnaire-JSONs; inkl. automatischem Diff gegen PCOR-MII Master-Referenz. Verifikation aller PROMIS-Wording-Änderungen via <code class="language-plaintext highlighter-rouge">MATCH/DIFF</code>-Counter</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">.gitignore</code>-Schutz für die Master-Referenz-TSV und den beads-credential-key</li>
+</ul>
+
+<p>Verifikation:</p>
+<ul>
+  <li>PROMIS-29 gegen PHO PDF (normativ): alle 29 Items wortgleich nach den PAININ4-Tempus-Fixes</li>
+  <li>PROMIS-29 gegen PCOR-MII Master (sekundär): MATCH=24, DIFF=5 – 4 davon sind die bewussten PAININ-Präteritum-Fixes nach PHO, 1 ist der bekannte Master-Tippfehler "erldige" bei SRPPER23</li>
+  <li>PROMIS-16 gegen PCOR-MII Master: MATCH=15, DIFF=0</li>
+  <li>PROMIS Cognitive Function SF 4a gegen PCOR-MII Master: MATCH=4, DIFF=0</li>
+</ul>
+
+<p><strong>Version: 2026.3.0</strong></p>
+
+<p>Datum: 2026-05-08 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.3.0</code>, noch nicht zurück in dev gemerged)</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: GAD-7 (Generalized Anxiety Disorder 7-item Scale) – vollständige Implementierung mit Questionnaire, Terminologie und Scoring (#80)</li>
+</ul>
+
+<p>FHIR-Ressourcen:</p>
+<ul>
+  <li>Fixed: PROMIS-29 englische Variante repariert – 33 fehlerhafte Item-Texte korrigiert</li>
+  <li>Removed: Unvollständige PROMIS-29 Minimal-Variante entfernt</li>
+  <li>Removed: Unvollständiger ConceptMap-Stub <code class="language-plaintext highlighter-rouge">mii-cm-pro-bdi-ii-to-promis-depression-observation</code> entfernt (nur 2 von 64 PROsetta-Stone-Einträgen). Architektur-Entscheidung: Score-Konversionen werden zukünftig als CQL Library modelliert (geplant für 2027-Release)</li>
+  <li>Fixed: Capabilities-Extension in <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-cognitive-function-sf4a</code> vervollständigt (<code class="language-plaintext highlighter-rouge">domainAligned</code>=true ergänzt)</li>
+  <li>Added: Capabilities-Extension zu <code class="language-plaintext highlighter-rouge">mii-qst-pro-pro-ctcae-breast-de</code> hinzugefügt (<code class="language-plaintext highlighter-rouge">displayable</code>+<code class="language-plaintext highlighter-rouge">collectable</code>=true; <code class="language-plaintext highlighter-rouge">calculatable</code>/<code class="language-plaintext highlighter-rouge">extractable</code>/<code class="language-plaintext highlighter-rouge">domainAligned</code>=false – bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)</li>
+</ul>
+
+<p><strong>Version: 2026.2.0</strong></p>
+
+<p>Datum: 2026-03-30 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.2.0</code>, Simplifier-Package published)</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>Added: DASS-21 (Depression Anxiety Stress Scales) – vollständige Implementierung mit Questionnaire, Terminologie (CodeSystem, ValueSets), Scoring und Beispielen</li>
+  <li>Added: DASS-21 IG-Dokumentationsseite</li>
+</ul>
+
+<p>Dependencies und Tooling:</p>
+<ul>
+  <li>Changed: Dependency de.gematik.isik von 5.0.0 auf 5.1.1 aktualisiert (konsistent mit Bildgebung und Laborbefund)</li>
+  <li>Changed: Dependency hl7.fhir.uv.extensions.r4 von 5.1.0 auf 5.2.0 aktualisiert (konsistent mit Bildgebung und Laborbefund)</li>
+</ul>
+
+<p>ObservationDefinition:</p>
+<ul>
+  <li>Fixed: Depression T-Score ObsDef – Populationsinformation von <code class="language-plaintext highlighter-rouge">qualifiedInterval.context.coding</code> nach <code class="language-plaintext highlighter-rouge">qualifiedInterval.appliesTo</code> verschoben (<code class="language-plaintext highlighter-rouge">context</code> beschreibt die Intervall-Kategorie, nicht die Zielpopulation)</li>
+</ul>
+
+<p>EORTC QLQ-C30 ValueSet-Architektur:</p>
+<ul>
+  <li>Changed: EORTC QLQ-C30 ValueSets von contained auf standalone external ValueSets umgestellt (Variant A)</li>
+  <li>Added: Post-SUSHI ValueSet-Expansion-Script für LHC Forms Rendering-Kompatibilität</li>
+  <li>Fixed: Display-Texte zu EORTC QLQ-C30 ValueSet-Konzepten hinzugefügt</li>
+</ul>
+
+<p>Qualitätssicherung:</p>
+<ul>
+  <li>Fixed: ObsDef-Titel entdoppelt, IG-Seite Score-Darstellung verbessert</li>
+  <li>Fixed: Kaputte `` Syntax durch Markdown-Blockquotes ersetzt (DASS-21, PHQ-9 IG-Seiten)</li>
+  <li>Fixed: CodeSystem/ValueSet auf kurze IDs umgestellt</li>
+</ul>
+
+<p>Hinweis: Die DASS-21- und Qualitätssicherungs-Punkte waren ursprünglich als eigenständiger v2026.1.0-Release geplant, wurden aber nie als eigenes Package veröffentlicht. Inhalt ist erstmals als Teil von v2026.2.0 released.</p>
+
+<p><strong>Version: 2026.0.1</strong></p>
+
+<p>Datum: 26.01.2026</p>
+
+<p>Bugfix-Release mit PROMIS-29 Ergänzungen und Canonical-URL-Korrektur.</p>
+
+<p>FHIR-Ressourcen:</p>
+<ul>
+  <li>Added: PROMIS-29 Deutsche Variante und umfassende Beispiele</li>
+  <li>Fixed: PROMIS-29 QuestionnaireResponse Validierungsfehler behoben</li>
+  <li>Fixed: Canonical URLs auf https standardisiert (http zu https)</li>
+  <li>Fixed: packageId korrigiert (kerndatensatz.pro zu kerndatensatz.pros)</li>
+</ul>
+
+<p>IG-Dokumentation:</p>
+<ul>
+  <li>Changed: PROMIS IG-Seiten reorganisiert und Tree-Rendering gefixt</li>
+  <li>Added: Individuelle Profilseiten für abstrakte Profile</li>
+  <li>Added: SDC STU3 Spec-Links zu Questionnaire- und QR-Profilseiten</li>
+</ul>
+
+<p><strong>Version: 2026.0.0</strong></p>
+
+<p>Datum: 12.01.2026</p>
+
+<p>Erster stabiler Release des MII PRO-Moduls für den produktiven Einsatz.</p>
+
+<p>FHIR-Ressourcen und Profile:</p>
+<ul>
+  <li>Added: SearchParameters für Questionnaire, QuestionnaireResponse, Observation (Suche nach Code, Subject, Patient)</li>
+  <li>Added: CapabilityStatement zur Dokumentation der unterstützten FHIR-Operationen des PRO-Moduls</li>
+  <li>Fixed: meta.profile zu allen Observation-Beispielinstanzen hinzugefügt (FHIR-Konformität)</li>
+</ul>
+
+<p>Versionsverwaltung und Metadaten:</p>
+<ul>
+  <li>Added: MetaProfile RuleSet für konsistente Profil-Konformanz mit versionierten Canonicals (Format: <code class="language-plaintext highlighter-rouge">{canonical}|{version}</code>)</li>
+  <li>Added: ObsDefVersion RuleSet für R5-Backport der artifact-version Extension in ObservationDefinition (R4-Kompatibilität)</li>
+  <li>Changed: Version RuleSets in zentrale Datei extrahiert (<code class="language-plaintext highlighter-rouge">input/fsh/rulesets/version.fsh</code>) für einfachere Release-Verwaltung</li>
+</ul>
+
+<p>Dependencies und Tooling:</p>
+<ul>
+  <li>Changed: Abhängigkeit zu de.medizininformatikinitiative.kerndatensatz.meta auf 2026.0.0 aktualisiert</li>
+  <li>Added: package.bake.yaml für Firely Bake Packaging-Workflow</li>
+  <li>Changed: package.json Name-Korrektur zu <code class="language-plaintext highlighter-rouge">de.medizininformatikinitiative.kerndatensatz.pros</code></li>
+</ul>
+
+<p>Qualitätssicherung und Validierung:</p>
+<ul>
+  <li>Added: EORTC QLQ-C30 Validierungs-Suppressions und QA-Dokumentation</li>
+  <li>Added: Vollständige Wartung des Questionnaire- und Score-Katalogs</li>
+  <li>Changed: CI/CD mit inline Java-Validierung, Gradle-Caching und Timing-Informationen für schnellere Builds</li>
+</ul>
+
+<p>Developer Experience:</p>
+<ul>
+  <li>Added: Claude Code Konfiguration mit Build-, Release- und IG-Export-Skills</li>
+  <li>Added: Zentralisiertes <code class="language-plaintext highlighter-rouge">/build-package</code> Kommando für FHIR Package Building</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">/mii-testdata-contribution</code> Skill für Testdaten-Repository</li>
+  <li>Added: <code class="language-plaintext highlighter-rouge">/fix-ig-export-links</code> Skill für Simplifier IG Export Link-Reparatur</li>
+</ul>
+
+<p><strong>Version: 2026.0.0-ballot</strong></p>
+
+<p>Initiale Ballotierungsversion mit Fokus auf SDC-basierte PRO-Erfassung und Score-Berechnung.</p>
+
+<p>PRO-Instrumente:</p>
+<ul>
+  <li>PHQ-9 (Patient Health Questionnaire-9) mit vollständiger Score-Berechnung (Raw-Score und T-Score)</li>
+  <li>EQ-5D-5L (EuroQol 5-Dimension 5-Level) mit Index-, VAS- und Profil-Scores</li>
+  <li>PROMIS-29 Profile v2.1 mit allen 7 Domänen (Physical Function, Anxiety, Depression, Fatigue, Sleep Disturbance, Social Function, Pain) und automatischer Scoring-Berechnung</li>
+  <li>PROMIS Cognitive Function SF4a</li>
+  <li>BDI-II (Beck Depression Inventory II) als Referenzimplementierung</li>
+  <li>EORTC QLQ-C30 (Lebensqualität bei Krebspatienten) mit 15 Subskalen</li>
+</ul>
+
+<p>FHIR Profile und Extensions:</p>
+<ul>
+  <li>MII_PR_PRO_Questionnaire: SDC-basiertes Questionnaire-Profil mit Calculated Expressions und Conditional Display</li>
+  <li>MII_PR_PRO_QuestionnaireResponse: Response-Erfassungsprofil mit SDC Extraction Capabilities</li>
+  <li>MII_PR_PRO_Score_Blueprint: Vorlage für Score-Observations mit ObservationDefinition-Referenz</li>
+  <li>MII_PR_PRO_Score_Instance: Instanz-Profil für berechnete Scores mit derivedFrom-Verknüpfung</li>
+  <li>EX_MII_PRO_Questionnaire_Capabilities: Extension zur Dokumentation von Questionnaire-Fähigkeiten (displayable, collectable, calculatable, extractable)</li>
+</ul>
+
+<p>Terminologie-Strategie:</p>
+<ul>
+  <li>MII-kontrollierte CodeSysteme und ValueSets für zuverlässige Score-Berechnung mit ordinalValue-Extensions</li>
+  <li>Deutsche Übersetzungen für alle Questionnaire-Items via translation-Extensions</li>
+  <li>ordinalValue-Extensions (SDC STU3) für numerische Scoring-Gewichte in Antwort-Optionen</li>
+  <li>FHIRPath-Ausdrücke nutzen <code class="language-plaintext highlighter-rouge">.ordinal()</code> für Weight-basierte Berechnungen</li>
+</ul>
+
+<p>Technische Basis:</p>
+<ul>
+  <li>FHIR R4 (4.0.1) mit SDC 3.0.0 (Structured Data Capture)</li>
+  <li>Dependency zu de.medizininformatikinitiative.kerndatensatz.meta 2026.0.0</li>
+  <li>Dependency zu de.gematik.isik 5.0.0 für deutsche Interoperabilität</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-07-07 06:56:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,75 @@
+# MII VS PRO EORTC QLQ-C30 Role Functioning Scale - MII IG PRO v2026.4.1
+
+## ValueSet: MII VS PRO EORTC QLQ-C30 Role Functioning Scale (Experimental) 
+
+ 
+4-point response scale for EORTC QLQ-C30 role functioning items 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-pro-eortc-qlq-c30-scale-role",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
+  "version" : "2026.4.1",
+  "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role",
+  "title" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-07-07T06:56:22+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "4-point response scale for EORTC QLQ-C30 role functioning items",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+      "concept" : [{
+        "code" : "not-at-all-role"
+      },
+      {
+        "code" : "a-little-role"
+      },
+      {
+        "code" : "quite-a-bit-role"
+      },
+      {
+        "code" : "very-much-role"
+      }]
+    }]
+  }
+}
+
+```
