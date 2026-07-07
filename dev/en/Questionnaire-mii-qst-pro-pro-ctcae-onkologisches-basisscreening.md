@@ -56,7 +56,7 @@ Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigs
   "title" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-07T13:30:17+00:00",
+  "date" : "2026-07-07T13:37:50+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -8,7 +8,6 @@ Profile for Patient Health Questionnaire-9 (PHQ-9) total score Observations (0-2
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-pro-phq-9-observation](Observation-mii-exa-pro-phq-9-observation.md)
-* CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-observation-phq-9.json)
 
@@ -34,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-observ
   "title" : "MII PR PRO Observation PHQ-9",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:30:17+00:00",
+  "date" : "2026-07-07T13:37:50+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

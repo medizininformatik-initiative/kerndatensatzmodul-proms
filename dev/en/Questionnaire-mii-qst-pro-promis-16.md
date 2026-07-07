@@ -55,7 +55,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PROMIS-16 (Adults)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-07T13:30:17+00:00",
+  "date" : "2026-07-07T13:37:50+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

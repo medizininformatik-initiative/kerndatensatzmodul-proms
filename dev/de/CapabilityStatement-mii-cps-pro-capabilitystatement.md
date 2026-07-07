@@ -21,7 +21,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
   "title" : "MII CPS PRO CapabilityStatement",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-07",
+  "date" : "2025-05-24",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -384,32 +384,11 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score",
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12"],
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
           "valueCode" : "SHALL"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHOULD"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHOULD"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHOULD"
         }]
       },
       {
