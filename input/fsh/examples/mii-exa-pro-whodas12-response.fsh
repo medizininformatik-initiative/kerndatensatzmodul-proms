@@ -76,11 +76,11 @@ Usage: #example
 // ============================================================================
 
 Instance: mii-exa-pro-whodas12-score-simple-sum
-InstanceOf: mii-pr-pro-score-instance
+InstanceOf: mii-pr-pro-observation-whodas12
 Title: "WHODAS 2.0 12-Item Simple Sum Score Observation"
 Description: "WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24)."
 Usage: #example
-* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
 * code.coding[+] = $SCT#715823002 "WHODAS (World Health Organization Disability Assessment Schedule) 2.0 score"

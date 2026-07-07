@@ -64,10 +64,10 @@ Title: "PHQ-15 Questionnaire Response Example"
 
 // Score Observation: PHQ-15 total score extracted from QuestionnaireResponse above
 Instance: mii-exa-pro-phq-15-observation
-InstanceOf: MII_PR_PRO_Score_Instance
+InstanceOf: MII_PR_PRO_Observation_PHQ_15
 Usage: #example
 Title: "PHQ-15 Score Observation Example"
-* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15)
 * status = #final
 * subject = Reference(Patient/mii-exa-pro-patient)
 * effectiveDateTime = "2024-03-15T10:00:00Z"

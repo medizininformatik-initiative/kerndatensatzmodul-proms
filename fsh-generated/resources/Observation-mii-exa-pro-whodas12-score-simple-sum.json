@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-whodas12-score-simple-sum",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12|2026.5.0"
     ]
   },
   "category": [
@@ -35,10 +35,10 @@
     "reference": "Patient/mii-exa-pro-patient"
   },
   "valueQuantity": {
-    "value": 24,
     "unit": "{score}",
     "system": "http://unitsofmeasure.org",
-    "code": "{score}"
+    "code": "{score}",
+    "value": 24
   },
   "derivedFrom": [
     {
