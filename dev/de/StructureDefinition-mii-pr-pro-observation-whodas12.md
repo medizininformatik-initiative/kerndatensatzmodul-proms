@@ -8,6 +8,7 @@ Profile for WHODAS 2.0 12-item simple sum (disability) score Observations (0-48;
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-pro-whodas12-score-simple-sum](Observation-mii-exa-pro-whodas12-score-simple-sum.md)
+* CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-observation-whodas12.json)
 
@@ -81,7 +82,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "title" : "MII PR PRO Observation WHODAS 2.0 12-Item",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:37:50+00:00",
+  "date" : "2026-07-07T13:59:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

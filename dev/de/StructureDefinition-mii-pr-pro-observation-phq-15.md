@@ -8,6 +8,7 @@ Profile for Patient Health Questionnaire-15 (PHQ-15) total somatic symptom sever
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-pro-phq-15-observation](Observation-mii-exa-pro-phq-15-observation.md)
+* CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-observation-phq-15.json)
 
@@ -81,7 +82,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "title" : "MII PR PRO Observation PHQ-15",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:37:50+00:00",
+  "date" : "2026-07-07T13:59:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
