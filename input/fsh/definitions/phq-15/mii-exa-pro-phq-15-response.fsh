@@ -14,49 +14,49 @@ Title: "PHQ-15 Questionnaire Response Example"
 
 // All 15 items: "Bothered a little" (ordinal 1) → sum = 15
 * item[+].linkId = "phq-phq1a" // Stomach pain
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1b" // Back pain
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1c" // Pain in arms, legs, or joints
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1d" // Menstrual cramps
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1e" // Pain during sexual intercourse
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1f" // Headaches
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1g" // Chest pain
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1h" // Dizziness
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1i" // Fainting spells
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1j" // Feeling your heart pound or race
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1k" // Shortness of breath
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1l" // Constipation, loose bowels, or diarrhea
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq1m" // Nausea, gas, or indigestion
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq2d" // Feeling tired or having low energy
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 * item[+].linkId = "phq-phq2c" // Trouble sleeping
-* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"
 
 // Calculated total score: 15 items × 1 = 15
 * item[+].linkId = "phq-phq15-score-total"
