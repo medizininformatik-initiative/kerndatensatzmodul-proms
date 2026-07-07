@@ -828,6 +828,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-phq-15"
+        },
+        "name": "MII PR PRO Observation PHQ-15",
+        "description": "Profile for Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score Observations (0-30; higher scores indicate greater somatic symptom burden).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-phq-9"
+        },
+        "name": "MII PR PRO Observation PHQ-9",
+        "description": "Profile for Patient Health Questionnaire-9 (PHQ-9) total score Observations (0-27; higher scores indicate more severe depression).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-whodas12"
+        },
+        "name": "MII PR PRO Observation WHODAS 2.0 12-Item",
+        "description": "Profile for WHODAS 2.0 12-item simple sum (disability) score Observations (0-48; higher scores indicate greater disability). No suitable LOINC code exists; SNOMED CT and the MII score catalogue are used.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score"
         },
         "name": "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score",
@@ -1406,14 +1430,14 @@
           "reference": "Observation/mii-exa-pro-phq-15-observation"
         },
         "name": "PHQ-15 Score Observation Example",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15"
       },
       {
         "reference": {
           "reference": "Observation/mii-exa-pro-phq-9-observation"
         },
         "name": "PHQ-9 Observation Example",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9"
       },
       {
         "reference": {
@@ -1475,7 +1499,7 @@
         },
         "name": "WHODAS 2.0 12-Item Simple Sum Score Observation",
         "description": "WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24).",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12"
       }
     ],
     "page": {

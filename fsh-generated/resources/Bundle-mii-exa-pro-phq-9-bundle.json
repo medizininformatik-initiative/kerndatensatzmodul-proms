@@ -1975,20 +1975,15 @@
         "id": "mii-exa-pro-phq-9-observation",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2026.5.0"
           ]
         },
         "valueQuantity": {
-          "value": 27,
-          "code": "{score}",
           "unit": "{score}",
-          "system": "http://unitsofmeasure.org"
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 27
         },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-pro-patient"
-        },
-        "effectiveDateTime": "2023-10-01T12:00:00Z",
         "code": {
           "coding": [
             {
@@ -1997,7 +1992,12 @@
               "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
             }
           ]
-        }
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-pro-patient"
+        },
+        "effectiveDateTime": "2023-10-01T12:00:00Z"
       }
     },
     {
