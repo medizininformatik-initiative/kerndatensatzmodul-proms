@@ -16,6 +16,9 @@ Alias: $mii-qst-pro-promis-depression-sf4a = https://www.medizininformatik-initi
 Alias: $mii-qst-pro-dass-dass21 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21
 Alias: $mii-cs-pro-dass-21 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21
 Alias: $mii-cs-pro-pro-ctcae = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae
+Alias: $mii-qst-pro-whodas-whodas12 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12
+Alias: $mii-cs-pro-whodas-12 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12
+Alias: $mii-vs-pro-whodas-12-answer-list = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list
 Alias: $mii-vs-pro-dass-21-answer-list = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list
 // HL7
 Alias: $hl7-concept-properties = http://hl7.org/fhir/concept-properties
