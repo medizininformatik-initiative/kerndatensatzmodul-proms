@@ -20,51 +20,51 @@ Usage: #example
 
 // Q1 (value: 2)
 * item[+].linkId = "whodas-whodas12-q01"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q2 (value: 2)
 * item[+].linkId = "whodas-whodas12-q02"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q3 (value: 2)
 * item[+].linkId = "whodas-whodas12-q03"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q4 (value: 2)
 * item[+].linkId = "whodas-whodas12-q04"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q5 (value: 2)
 * item[+].linkId = "whodas-whodas12-q05"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q6 (value: 2)
 * item[+].linkId = "whodas-whodas12-q06"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q7 (value: 2)
 * item[+].linkId = "whodas-whodas12-q07"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q8 (value: 2)
 * item[+].linkId = "whodas-whodas12-q08"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q9 (value: 2)
 * item[+].linkId = "whodas-whodas12-q09"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q10 (value: 2)
 * item[+].linkId = "whodas-whodas12-q10"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q11 (value: 2)
 * item[+].linkId = "whodas-whodas12-q11"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // Q12 (value: 2)
 * item[+].linkId = "whodas-whodas12-q12"
-* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "Moderate"
+* item[=].answer.valueCoding = $mii-cs-pro-whodas-12#whodas12-answer-2 "mäßige"
 
 // ===== Simple Sum Score: 12 × 2 = 24 =====
 * item[+].linkId = "whodas-whodas12-score-simple-sum"
