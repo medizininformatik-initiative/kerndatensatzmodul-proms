@@ -15,20 +15,20 @@
 
 // For Questionnaire instances (native FHIR R4 element)
 RuleSet: Version
-* version = "2026.4.1"
+* version = "2026.5.0"
 
 // For Profile, CodeSystem, ValueSet, Extension definitions (caret notation)
 RuleSet: PR_CS_VS_Version
-* ^version = "2026.4.1"
+* ^version = "2026.5.0"
 
 // For ObservationDefinition instances (R4 backport of R5 version element)
 // ObservationDefinition lacks native version in R4; added in R5
 // See: https://hl7.org/fhir/extensions/StructureDefinition-artifact-version.html
 RuleSet: ObsDefVersion
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-version"
-* extension[=].valueString = "2026.4.1"
+* extension[=].valueString = "2026.5.0"
 
 // For all instances to declare profile conformance with versioned canonical
-// Generates: meta.profile = "{canonical}|2026.4.1"
+// Generates: meta.profile = "{canonical}|2026.5.0"
 RuleSet: MetaProfile(canonical)
-* meta.profile[+] = "{canonical}|2026.4.1"
+* meta.profile[+] = "{canonical}|2026.5.0"
