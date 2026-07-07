@@ -80,7 +80,11 @@ jobs:
       # QuestionnaireResponses). Dependency-free node script; mirrors the local
       # pre-commit hook, which CI otherwise skips.
       - name: Expand ValueSets (post-SUSHI)
-        run: node expand-valuesets.js
+        # SUSHI runs in Docker and writes fsh-generated/ as root; take ownership
+        # back so the host-side node process can rewrite the ValueSet files.
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" fsh-generated
+          node expand-valuesets.js
 
       # Run the HL7 FHIR IG Publisher
       - name: Build IG
