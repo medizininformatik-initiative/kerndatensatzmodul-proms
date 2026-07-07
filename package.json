@@ -1,7 +1,7 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2026.4.1",
-  "description": "MII PRO Module v2026.4.1 - Patch-Release: artifact-version-Extension für 3 EQ-5D-5L ObservationDefinitions nachgezogen (Index/Profile/VAS) — vorher fehlte Versions-Metadatum auf diesen Resourcen. Aufbauend auf v2026.4.0: PROMIS-Konsolidierung + Symptom-Screening. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
+  "version": "2026.5.0",
+  "description": "MII PRO Module v2026.5.0 - Neue Instrumente WHODAS 2.0 12-Item (Einschränkungsscore, mit korrekten WHO-Lizenzbedingungen) und PHQ-15 (somatische Symptomlast, PHQ-D); PHQ-9/PHQ-15 auf gemeinsames PHQ-D-Block-LinkId-Schema; MII-Katalog-Codes (code.coding[mii]) auf allen Score-ObsDefs; ValueSet-Expansion im IG-Build (answerValueSet-Validierung). Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
   "keywords": [
     "MII",
     "KDS",
