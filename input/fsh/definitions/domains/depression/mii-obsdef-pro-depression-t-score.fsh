@@ -7,7 +7,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = $hl7-observation-category#survey
-* code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
+* code.coding[loinc] = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#promis-depression "PROMIS Depression Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 

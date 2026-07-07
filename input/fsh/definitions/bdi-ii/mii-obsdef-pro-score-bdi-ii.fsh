@@ -7,7 +7,8 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
+* code.coding[loinc] = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#bdi-bdi2-total "Beck Depression Inventory II (BDI-II) Total Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * method.coding = $LNC#89209-1 "Beck Depression Inventory II total score [BDI]"
