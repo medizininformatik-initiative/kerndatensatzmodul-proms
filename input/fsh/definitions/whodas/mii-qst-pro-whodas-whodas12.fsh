@@ -33,21 +33,21 @@
 // (Population Health Metrics, doi:10.1186/s12963-014-0027-8, MONICA/KORA);
 // Saltychev et al. 2021 (systematic review, PMID 31335215).
 //
-// !!! LICENSING - NOT FOR PUBLICATION UNTIL CONFIRMED !!!
-// WHODAS 2.0 © World Health Organization 2010. WHO permits clinicians to
-// reproduce WHODAS 2.0 for use with their own patients, but ANY electronic
-// use - including inclusion in an electronic data capture system or
-// reproduction "in any way" - requires WRITTEN PERMISSION from WHO via the
-// WHO Classifications licensing process. The item text is embedded here for
-// REVIEW/TESTING ONLY (per PCOR-MII direction, using their validated German
-// dictionary). This resource must NOT be published until WHO licensing (or a
-// CC0 equivalent) is confirmed.
+// LICENSING — WHODAS 2.0 © World Health Organization 2010. WHO permits
+// clinicians to reproduce WHODAS 2.0 for use with their own patients free of
+// charge; any other use — including inclusion in an electronic data capture
+// system — requires a WHO licence agreement (free for non-commercial use)
+// via the WHO Classifications licensing process, and translations require WHO
+// permission. The German item wording follows the validated PCOR-MII Item
+// Level Dictionary. Only the MII-authored FHIR content (structure, codes,
+// scoring) is CC0; the WHODAS 2.0 item text remains © WHO. These conditions
+// are recorded in the resource `copyright` element below.
 // ============================================================================
 
 Instance: mii-qst-pro-whodas-whodas12
 InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO WHODAS 2.0 12-Item"
-Description: "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations. Item text embedded for review/testing only - inclusion of WHODAS 2.0 item text in an electronic system requires written permission from WHO; not for publication until licensing confirmed."
+Description: "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use)."
 Usage: #definition
 * insert Version
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
@@ -57,8 +57,7 @@ Usage: #definition
 * experimental = true
 * language = #en
 * code[mii] = $mii-cs-pro-questionnaire-catalogue#whodas-whodas12 "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
-
-* copyright = "WHODAS 2.0 © World Health Organization 2010. Reproduced for review only. Electronic reproduction of the instrument requires written permission from WHO (https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule). NOT for publication until licensing is confirmed. German item content from the validated PCOR-MII Item Level Dictionary."
+* copyright = "WHODAS 2.0 © World Health Organization 2010 (Measuring Health and Disability: Manual for WHODAS 2.0, ISBN 9789241547598). WHO permits clinicians to reproduce WHODAS 2.0 for use with their own patients free of charge. Any other use — including reproduction in an electronic data capture system — requires a licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process; translations require WHO permission. The German item wording follows the validated PCOR-MII Item Level Dictionary. Only the MII-authored FHIR content (profiles, codes, scoring) is licensed CC0; the WHODAS 2.0 item text remains © World Health Organization."
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

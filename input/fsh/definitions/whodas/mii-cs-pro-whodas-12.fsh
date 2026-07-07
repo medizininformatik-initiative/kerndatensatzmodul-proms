@@ -14,15 +14,16 @@
 // Dictionary (MASTER_3EntitiesOverview.xlsx). English item wording follows the
 // official WHO WHODAS 2.0 12-item self-administered form.
 //
-// !!! LICENSING - NOT FOR PUBLICATION UNTIL CONFIRMED !!!
-// WHODAS 2.0 © World Health Organization 2010. Electronic reproduction requires
-// written WHO permission; reproduced here for review only.
+// LICENSING — WHODAS 2.0 © World Health Organization 2010. Free of charge;
+// electronic/data-capture use requires a WHO licence agreement (free for
+// non-commercial use) via the WHO Classifications licensing process. Only the
+// MII-authored FHIR content is CC0; the WHODAS 2.0 text remains © WHO.
 // ============================================================================
 
 CodeSystem: MII_CS_PRO_WHODAS_12
 Id: mii-cs-pro-whodas-12
 Title: "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes"
-Description: "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. NOTE: WHODAS 2.0 © WHO 2010 - electronic reproduction requires written WHO permission; reproduced here for review only, NOT for publication until licensing is confirmed."
+Description: "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright)."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
 * insert PR_CS_VS_Version
 * ^status = #active
@@ -30,6 +31,7 @@ Description: "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item
 * ^caseSensitive = true
 * ^content = #complete
 * ^language = #en
+* ^copyright = "WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0."
 
 // ordinalValue property for SDC ordinal scoring (uri matches HL7 ordinalValue extension)
 * ^property[+].code = #ordinalValue

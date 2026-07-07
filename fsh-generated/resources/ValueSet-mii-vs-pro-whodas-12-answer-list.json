@@ -31,5 +31,77 @@
         ]
       }
     ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1783407037498",
+    "timestamp": "2026-07-07T06:50:37.468Z",
+    "total": 5,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.4.1"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-07-07T06:50:37.468Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-0",
+        "display": "None",
+        "designation": [
+          {
+            "language": "de",
+            "value": "keine"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-1",
+        "display": "Mild",
+        "designation": [
+          {
+            "language": "de",
+            "value": "geringe"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-2",
+        "display": "Moderate",
+        "designation": [
+          {
+            "language": "de",
+            "value": "mäßige"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-3",
+        "display": "Severe",
+        "designation": [
+          {
+            "language": "de",
+            "value": "starke"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-4",
+        "display": "Extreme or cannot do",
+        "designation": [
+          {
+            "language": "de",
+            "value": "sehr starke/nicht möglich"
+          }
+        ]
+      }
+    ]
   }
 }

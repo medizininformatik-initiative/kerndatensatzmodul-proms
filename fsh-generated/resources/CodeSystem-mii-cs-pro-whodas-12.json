@@ -5,7 +5,7 @@
   "name": "MII_CS_PRO_WHODAS_12",
   "id": "mii-cs-pro-whodas-12",
   "title": "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
-  "description": "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. NOTE: WHODAS 2.0 © WHO 2010 - electronic reproduction requires written WHO permission; reproduced here for review only, NOT for publication until licensing is confirmed.",
+  "description": "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
   "concept": [
     {
@@ -213,6 +213,7 @@
   "experimental": true,
   "caseSensitive": true,
   "language": "en",
+  "copyright": "WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0.",
   "property": [
     {
       "code": "ordinalValue",
