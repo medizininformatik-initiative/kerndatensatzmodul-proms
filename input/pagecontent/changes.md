@@ -1,8 +1,19 @@
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Version: 2026.5.1**
+
+Datum: 2026-07-13 (in Vorbereitung)
+
+Patch-Release auf 2026.5.0.
+
+## Migration & Breaking Changes
+
+- **`BREAKING` (nachgezogen aus 2026.5.0):** Die PHQ-9-Item-linkIds wurden in 2026.5.0 vom Schema `phq-phq9-q01…q10` auf den gemeinsamen PHQ-D-Block-Namespace (`phq-phq2a…i` + `phq-phq9-difficulty`) umgestellt. Bestehende PHQ-9-`QuestionnaireResponse`s mit alten linkIds matchen den Questionnaire ab 2026.5.0 nicht mehr.
+- Added: **ConceptMap `mii-cm-pro-phq-9-linkid-migration`** — bildet die alten PHQ-9-linkIds 1:1 auf die neuen ab (10 Items: `phq-phq9-q01…q09` → `phq-phq2a…i`, `phq-phq9-q10` → `phq-phq9-difficulty`), zur Migration bestehender Antworten. Die berechneten Items (`phq-phq9-score-total`, `phq-phq9-promis-tscore`) wurden nicht umbenannt.
+
 **Version: 2026.5.0**
 
-Datum: 2026-07-07 (in Vorbereitung)
+Datum: 2026-07-13 (released, Tag `v2026.5.0`, GitHub-Release + Package)
 
 Minor-Release: zwei neue Instrumente (**WHODAS 2.0 12-Item** und **PHQ-15**), Aufbau einer gemeinsamen **PHQ-D-Itembank** (PHQ-9/PHQ-15), einheitliche **MII-Score-Codierung** über alle Score-ObsDefs und eine **CI-Verbesserung** (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.
 
