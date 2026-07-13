@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>EQ-5D-5L - MII IG PRO v2026.5.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.3"}
+    h3,h4,h5,h6{--heading-prefix:"6.3.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.5.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-de.png" alt="flag en" class="flag"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-de.png" alt="flag de" class="flag"/>Deutsch</div>
+
+    <div><a href="../en/eq-5d-5l.html"><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="pro-library.html"><b>PRO Library</b></a></li><li><b>EQ-5D-5L</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2026.5.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>EQ-5D-5L</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#architektonisches-muster-varianten-architektur" id="markdown-toc-architektonisches-muster-varianten-architektur">Architektonisches Muster: Varianten-Architektur</a></li>
+  <li><a href="#klinischer-kontext" id="markdown-toc-klinischer-kontext">Klinischer Kontext</a></li>
+  <li><a href="#fhir-implementierung-durch-varianten" id="markdown-toc-fhir-implementierung-durch-varianten">FHIR-Implementierung durch Varianten</a></li>
+  <li><a href="#score-berechnung-und-interpretation" id="markdown-toc-score-berechnung-und-interpretation">Score-Berechnung und Interpretation</a></li>
+  <li><a href="#architektonische-vorteile-der-varianten-trennung" id="markdown-toc-architektonische-vorteile-der-varianten-trennung">Architektonische Vorteile der Varianten-Trennung</a></li>
+  <li><a href="#implementierungsempfehlungen" id="markdown-toc-implementierungsempfehlungen">Implementierungsempfehlungen</a></li>
+  <li><a href="#geschichte" id="markdown-toc-geschichte">Geschichte</a></li>
+  <li><a href="#lizenzsituation" id="markdown-toc-lizenzsituation">Lizenzsituation</a></li>
+  <li><a href="#weiterführende-links-und-informationen" id="markdown-toc-weiterführende-links-und-informationen">Weiterführende Links und Informationen</a></li>
+  <li><a href="#zusammenfassung" id="markdown-toc-zusammenfassung">Zusammenfassung</a></li>
+</ul>
+
+</div>
+<h3 id="architektonisches-muster-varianten-architektur">Architektonisches Muster: Varianten-Architektur</h3>
+
+<p>Der EQ-5D-5L demonstriert die Trennung von Capabilities in spezialisierte Varianten. Während der PHQ-9 alle Capabilities in einer einzigen Ressource vereint, implementiert der EQ-5D-5L verschiedene Anwendungsfälle durch separate, spezialisierte Questionnaire-Instanzen. Dieser Ansatz ermöglicht optimierte Ressourcen für spezifische Use Cases und vermeidet die Überladung einzelner Questionnaire-Definitionen mit Funktionalität, die nicht in allen Szenarien benötigt wird.</p>
+
+<h3 id="klinischer-kontext">Klinischer Kontext</h3>
+
+<p>Der EQ-5D-5L ist ein generisches Instrument zur Messung der gesundheitsbezogenen Lebensqualität. Das Instrument besteht aus fünf Dimensionen, die jeweils zentrale Aspekte der Gesundheit erfassen: Mobilität, Selbstversorgung, alltägliche Tätigkeiten, Schmerzen/Beschwerden sowie Angst/Depression. Jede Dimension wird auf einer fünfstufigen Skala von "keine Probleme" bis "extreme Probleme" bewertet. Zusätzlich enthält das Instrument eine visuelle Analogskala (VAS), auf der Patienten ihren aktuellen Gesundheitszustand von 0 (schlechtester vorstellbarer Gesundheitszustand) bis 100 (bester vorstellbarer Gesundheitszustand) einschätzen.</p>
+
+<p>Die Auswertung des EQ-5D-5L erfolgt auf drei Ebenen:</p>
+<ul>
+  <li>Der <strong>EQ-5D-5L Index</strong> ist ein gewichteter Utility-Score, der auf populationsspezifischen Wertesets basiert und (basierend auf der deutschen Population) Werte zwischen -0.661 und 1.0 annehmen kann. Der Index-Score wird insbesondere für gesundheitsökonomische Berechnungen genutzt.</li>
+  <li>Das <strong>EQ-5D-5L Profil</strong> ist ein fünfstelliger Code, der die Antworten direkt repräsentiert (beispielsweise "11223" für keine Probleme in den ersten beiden Dimensionen und leichte bis moderate Probleme in den weiteren). Er dient häufig als schnelle Zusammenfassung des Gesamtzustands über die fünf verschiedenen Gesundheitsdomänen.</li>
+  <li>Die <strong>EQ VAS</strong> stellt die direkte Selbsteinschätzung des individuellen Gesundheitszustands anhand einer Skala von 0-100 dar.</li>
+</ul>
+
+<h3 id="fhir-implementierung-durch-varianten">FHIR-Implementierung durch Varianten</h3>
+
+<p>Die Implementierung des EQ-5D-5L folgt einem modularen Ansatz mit einer Basis-Definition und mehreren abgeleiteten Varianten. Die Basis-Definition mit der Canonical URL <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l</code> enthält die gemeinsame Struktur aller EQ-5D-5L Varianten ohne spezifische Capabilities. Von dieser Basis leiten sich spezialisierte Varianten ab, die jeweils für bestimmte Anwendungsfälle optimiert sind.</p>
+
+<h4 id="minimal-variante-referenz-implementation">Minimal-Variante (Referenz-Implementation)</h4>
+
+<p>Die Minimal-Variante dient als reine Strukturdefinition ohne aktive Capabilities. Sie wird primär als Referenz für Metadaten und Strukturinformationen verwendet und eignet sich für Systeme, die lediglich die Struktur des EQ-5D-5L kennen müssen, ohne ihn aktiv zu nutzen. Diese Variante enthält keine Extensions für Rendering oder Berechnungen, kann aber bereits als Mappingstruktur zu Datenharmonisierungen eingesetzt werden.</p>
+
+<p><a name="l548">​</a>Die vollständige Ressource finden Sie in der <a href="Questionnaire-mii-qst-pro-eq-5d-5l-minimal.html">Questionnaire-Definition</a>.</p>
+
+<h4 id="displayable-variante-nur-anzeige">Displayable-Variante (Nur-Anzeige)</h4>
+
+<p>Die Displayable-Variante ist für die reine Anzeige von bereits erfassten EQ-5D-5L Daten optimiert. Sie wird in klinischen Informationssystemen verwendet, wenn Ärzte oder Pflegepersonal die Ergebnisse eines bereits ausgefüllten Fragebogens einsehen möchten. Diese Variante enthält spezielle Rendering-Hinweise für eine optimale Darstellung, verzichtet aber auf Eingabevalidierung und Berechnungslogik, da keine Interaktion mit dem Fragebogen stattfindet.</p>
+
+<p>Die vollständige Ressource finden Sie in der <a href="Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html">Questionnaire-Definition</a>.</p>
+
+<h4 id="collectable-variante-datenerfassung">Collectable-Variante (Datenerfassung)</h4>
+
+<p>Die Collectable-Variante ist für die aktive Datenerfassung durch Patienten konzipiert. Sie enthält vollständige Validierungsregeln, Required-Markierungen für alle Items und eine versteckte "Keine Angabe" Option für Situationen, in denen Patienten einzelne Fragen nicht beantworten können oder möchten. Diese Variante wird typischerweise in Patientenportalen oder mobilen Apps eingesetzt und stellt sicher, dass die erfassten Daten vollständig und valide sind.</p>
+
+<p>Die vollständige Ressource finden Sie in der <a href="Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.html">Questionnaire-Definition</a>.</p>
+
+<h4 id="answer-coding-variante-mii-spezifische-kodierung">Answer-Coding-Variante (MII-spezifische Kodierung)</h4>
+
+<p>Die Answer-Coding-Variante verwendet das MII CodeSystem anstelle von LOINC-Codes. Diese Variante ist besonders wichtig, wenn zuverlässige ordinale Werte für automatische Score-Berechnungen benötigt werden. Die LinkIds folgen einem spezifischen Pattern (<code class="language-plaintext highlighter-rouge">euroqol-eq5d5l-coded-q01-MO</code>), das die Unterscheidung von anderen Varianten ermöglicht. Diese Variante kombiniert die Capabilities Collectable und Calculatable und ermöglicht damit sowohl die Datenerfassung als auch die automatische Berechnung von Scores.</p>
+
+<p>Die vollständige Ressource finden Sie in der <a href="Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.html">Questionnaire-Definition</a>.</p>
+
+<h3 id="score-berechnung-und-interpretation">Score-Berechnung und Interpretation</h3>
+
+<p>Die Berechnung der EQ-5D-5L Scores erfolgt auf drei verschiedenen Ebenen, die unterschiedliche Aspekte der Lebensqualität erfassen. Der EQ-5D-5L Index ist der komplexeste Score und erfordert populationsspezifische Wertetabellen. Für die deutsche Population existieren spezifische Koeffizienten, die die gesellschaftlichen Präferenzen für verschiedene Gesundheitszustände widerspiegeln. Die Berechnung erfolgt durch eine nicht-lineare Transformation der fünf Dimensionsantworten unter Berücksichtigung von Interaktionseffekten zwischen den Dimensionen.</p>
+
+<p>Das EQ-5D-5L Profil ist eine direkte Repräsentation der Antworten als fünfstelliger Code. Dieser Code ermöglicht eine schnelle Erfassung des Gesundheitszustands ohne numerische Transformation und eignet sich besonders für die deskriptive Darstellung von Gesundheitszuständen in klinischen Berichten. Die EQ VAS repräsentiert die subjektive Einschätzung des Patienten und wird häufig als Ergänzung zum Index-Score verwendet, um Diskrepanzen zwischen "objektiver" und subjektiver Gesundheitsbewertung zu identifizieren.</p>
+
+<p>Detaillierte Score-Definitionen finden Sie auf der Seite <a href="eq-5d-5l-scores.html">EQ-5D-5L Scores</a>.</p>
+
+<h3 id="architektonische-vorteile-der-varianten-trennung">Architektonische Vorteile der Varianten-Trennung</h3>
+
+<p>Die Trennung in verschiedene Varianten bietet mehrere signifikante Vorteile für die Implementierung und Wartung. Jede Variante enthält nur die für ihren spezifischen Use Case notwendigen Extensions und Funktionalitäten. Die klare Trennung der Verantwortlichkeiten bedeutet, dass die Displayable-Variante keine unnötige Berechnungslogik enthält, während die Collectable-Variante nicht mit extraktionsspezifischen Extensions überladen wird. In der Praxis können die Varianten auch wie beim vorliegenden PHQ-9 zu einer einzigen Variante oder beliebigen Kombinationen kombiniert werden.</p>
+
+<p>Diese Architektur ermöglicht auch eine flexible Evolution des Systems. Neue Varianten können hinzugefügt werden, ohne bestehende Implementierungen zu beeinflussen. Wenn beispielsweise zukünftig eine spezielle Variante für Computer Adaptive Testing benötigt wird, kann diese als zusätzliche Variante implementiert werden, ohne die bestehenden Varianten zu modifizieren.</p>
+
+<h3 id="implementierungsempfehlungen">Implementierungsempfehlungen</h3>
+
+<p>Die Entscheidung zwischen einer All-in-One-Implementierung wie beim PHQ-9 und einer Varianten-Architektur wie beim EQ-5D-5L sollte auf mehreren Faktoren basieren. Für einfache Instrumente mit wenigen Use Cases ist der All-in-One-Ansatz oft ausreichend und reduziert die Komplexität. Bei komplexen Instrumenten mit vielfältigen Anwendungsszenarien bietet die Varianten-Architektur jedoch deutliche Vorteile in Bezug auf Wartbarkeit und Performance.</p>
+
+<p>Implementierer sollten auch die erwartete Evolution des Instruments und den Austausch zwischen verschiedenen Systemen berücksichtigen. Instrumente, die voraussichtlich stabil bleiben, können vom einfacheren All-in-One-Ansatz profitieren. Instrumente, bei denen häufige Änderungen oder Erweiterungen erwartet werden, sind mit der Varianten-Architektur besser bedient, da Änderungen isoliert in einzelnen Varianten vorgenommen werden können.</p>
+
+<h3 id="geschichte">Geschichte</h3>
+
+<p>Der EQ-5D-5L ist eine Weiterentwicklung des EQ-5D-3L aus dem Jahr 2009. Siehe <a href="https://euroqol.org/information-and-support/euroqol-instruments/eq-5d-5l/">https://euroqol.org/information-and-support/euroqol-instruments/eq-5d-5l/</a>.</p>
+
+<h3 id="lizenzsituation">Lizenzsituation</h3>
+
+<p>Der EQ-5D-5L ist für nichtkommerzielle Zwecke nach Registrierung ohne zusätzliche Lizenzkosten nutzbar. Dies betrifft sowohl den Einsatz in klinischen Studien als auch der Krankenversorgung. Siehe die <a href="https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-User-License-Policy-10SEP2024.pdf">EQ-5D User License Policy</a>.</p>
+
+<h3 id="weiterführende-links-und-informationen">Weiterführende Links und Informationen</h3>
+
+<ul>
+  <li>Handbuch: <a href="https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-5LUserguide-23-07.pdf">https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-5LUserguide-23-07.pdf</a></li>
+  <li>Deutsche Populationswerte: Ludwig K, Graf von der Schulenburg JM, Greiner W. German Value Set for the EQ-5D-5L. Pharmacoeconomics. 2018 Jun;36(6):663-674. DOI: 10.1007/s40273-018-0615-8. PMID: 29460066; PMCID: PMC5954069.</li>
+</ul>
+
+<h3 id="zusammenfassung">Zusammenfassung</h3>
+
+<p>Der EQ-5D-5L demonstriert erfolgreich die Varianten-Architektur des MII PRO Moduls und zeigt, wie komplexe Instrumente durch modulare Ansätze effizient implementiert werden können. Die Trennung der Capabilities in spezialisierte Questionnaire-Instanzen ermöglicht optimierte Implementierungen für spezifische Use Cases bei gleichzeitiger Wahrung der semantischen Konsistenz. Diese Architektur stellt einen wichtigen Baustein für die skalierbare Implementierung von Patient-Reported Outcomes im deutschen Gesundheitswesen dar.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-07-13 17:44:00 +0000">
+    2026-07-13
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

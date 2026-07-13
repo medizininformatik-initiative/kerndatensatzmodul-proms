@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-pro-eortc-qlq-c30-observation-ef"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.1"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-pro-eortc-qlq-c30-observation-ef</b></p><a name="en-mii-exa-pro-eortc-qlq-c30-observation-ef"> </a><a name="en-hcmii-exa-pro-eortc-qlq-c30-observation-ef"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-score-instance.html">MII PR PRO Score Instance</a> version: 2026.5.1</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue eortc-qlq-c30-ef}">EORTC QLQ-C30 Emotional Functioning Score</span></p><p><b>subject</b>: <a href="Patient-mii-exa-pro-patient.html">Max Mustermann  Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)</a></p><p><b>effective</b>: 2024-01-15 10:30:00+0000</p><p><b>value</b>: 87.5 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{score} = '{score}')</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.html">Response to Questionnaire '-&gt;EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0' about '-&gt;Max Mustermann  Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)'</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+      <display value="Survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+      <code value="eortc-qlq-c30-ef"/>
+      <display value="EORTC QLQ-C30 Emotional Functioning Score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mii-exa-pro-patient"/>
+  </subject>
+  <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+  <valueQuantity>
+    <value value="87.5"/>
+    <unit value="{score}"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{score}"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+  </derivedFrom>
+</Observation>

@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Workflows - MII IG PRO v2026.5.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.5.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+
+    <div><a href="../de/workflows.html"><img src="assets/images/lang-de.png" alt="flag de" class="flag"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="technical-implementation.html"><b>Technical Implementation</b></a></li><li><b>Workflows</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2026.5.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Workflows</h2>
+  
+
+
+
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found <a href="translationinfo.html">here</a>.</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#capabilities" id="markdown-toc-capabilities">Capabilities</a></li>
+  <li><a href="#workflow-patterns" id="markdown-toc-workflow-patterns">Workflow Patterns</a></li>
+  <li><a href="#score-representation" id="markdown-toc-score-representation">Score Representation</a></li>
+  <li><a href="#implementation-patterns" id="markdown-toc-implementation-patterns">Implementation Patterns</a></li>
+  <li><a href="#best-practices" id="markdown-toc-best-practices">Best Practices</a></li>
+</ul>
+
+</div>
+<ul>
+  <li><a href="#capabilities">Capabilities</a></li>
+  <li><a href="#workflow-patterns">Workflow Patterns</a>
+    <ul>
+      <li><a href="#standard-workflow">Standard Workflow</a></li>
+      <li><a href="#workflow-pattern-1-direct-collection-with-real-time-calculation">Direct Collection with Real-Time Calculation</a></li>
+      <li><a href="#workflow-pattern-2-mobile-collection-with-server-side-calculation">Mobile Collection with Server-Side Calculation</a></li>
+      <li><a href="#workflow-pattern-3-historical-recalculation">Historical Recalculation</a></li>
+      <li><a href="#workflow-pattern-4-clinical-results-view">Clinical Results View</a></li>
+      <li><a href="#workflow-pattern-5-pure-data-collection">Pure Data Collection</a></li>
+    </ul>
+  </li>
+  <li><a href="#score-representation">Score Representation</a></li>
+  <li><a href="#implementation-patterns">Implementation Patterns</a>
+    <ul>
+      <li><a href="#calculated-expressions">Calculated Expressions</a></li>
+      <li><a href="#initial-expressions-for-populatable">Initial Expressions for Populatable</a></li>
+      <li><a href="#extraction-to-observations">Extraction to Observations</a></li>
+    </ul>
+  </li>
+  <li><a href="#best-practices">Best Practices</a>
+    <ul>
+      <li><a href="#capability-selection">Capability Selection</a></li>
+      <li><a href="#performance-considerations">Performance Considerations</a></li>
+      <li><a href="#error-handling">Error Handling</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr/>
+
+<p>Based on the use case scenarios and the requirements derived therein (see <a href="use-cases.html">Use Cases</a>), implementation approaches can be identified. In the following, these implementation approaches are presented in the form of abstracted <em>workflows</em> that serve as reference solutions. The foundation for defining a workflow is formed by so-called <em>capabilities</em>.</p>
+
+<h3 id="capabilities">Capabilities</h3>
+
+<p>The use case scenarios make it clear that questionnaires can be collected, processed, and displayed in various ways and used for different purposes.</p>
+
+<p>The module must therefore meet the overarching requirement of providing questionnaires as flexibly as possible for different purposes, while maintaining semantic consistency across different use cases. To meet this requirement, in addition to defining a standardized questionnaire, it must be specified for what purpose it should be used – more precisely, which capabilities need to be supported to fulfill the intended purpose.</p>
+
+<p>Therefore, the following capabilities, which can be applied to the definition of a questionnaire and are freely combinable, have been established:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">collectable</code>: How data is <strong>entered</strong> by users</li>
+  <li><code class="language-plaintext highlighter-rouge">populatable</code>: How existing data is <strong>loaded</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">calculatable</code>: How scores are <strong>calculated</strong> from data</li>
+  <li><code class="language-plaintext highlighter-rouge">displayable</code>: How data/results are <strong>presented</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">extractable</code>: How data is <strong>transferred</strong> from the questionnaire format into other FHIR resources</li>
+</ul>
+
+<h3 id="workflow-patterns">Workflow Patterns</h3>
+
+<h4 id="standard-workflow">Standard Workflow</h4>
+
+<p>The standard workflow follows the FHIR core specification and the designated FHIR resources for defining questionnaires, representing response forms, and extracting collected answers as processable values.</p>
+
+<p><strong>Process</strong>:</p>
+
+<ol>
+  <li>Typically, a patient completes a questionnaire that is defined as a FHIR Questionnaire (Q) and displayed via a user interface (UI)</li>
+  <li>The entered answers are then saved as a FHIR QuestionnaireResponse (QR), and a score is determined if applicable</li>
+</ol>
+
+<div style="text-align: center;"><a name="l659">​</a>
+<img src="Workflow_Standard.svg" alt="MII PRO Workflow Pattern: Standard" width="40%"/>
+</div>
+
+<p><strong>Capabilities used</strong>: displayable, collectable</p>
+
+<p><strong>Example</strong>: Assessment of symptom severity with EORTC-QLQ questionnaires accompanying and following radiotherapy/systemic therapy treatment in oncology</p>
+
+<hr/>
+
+<h4 id="workflow-pattern-1-direct-collection-with-real-time-calculation">Workflow Pattern 1: Direct Collection with Real-Time Calculation</h4>
+
+<p>This workflow pattern focuses on direct, i.e., non-delayed, completion of a questionnaire via a user interface (UI) and score calculation after the answers have been entered.</p>
+
+<p><strong>Process</strong>:</p>
+
+<ol>
+  <li>A patient completes a questionnaire via a UI by answering the contained questions</li>
+  <li>Based on the answers and the defined score calculation rules, the score is calculated in real time</li>
+  <li>Optionally, the answers and the calculated score are stored on a server, e.g., a FHIR server, for further processing</li>
+  <li>The calculated score is immediately displayed to the patient in the UI</li>
+</ol>
+
+<div style="text-align: center;"><a name="l702">​</a>
+<img src="Workflow_Capability-Echtzeit.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Real-Time Calculation" width="40%"/>
+</div>
+
+<p><strong>Capabilities used:</strong> <code class="language-plaintext highlighter-rouge">[collectable, calculatable, displayable, extractable]</code></p>
+
+<p><strong>Example</strong>: DiGA smartphone app with in-app score calculation</p>
+
+<hr/>
+
+<h4 id="workflow-pattern-2-mobile-collection-with-server-side-calculation">Workflow Pattern 2: Mobile Collection with Server-Side Calculation</h4>
+
+<p>This workflow pattern focuses on the sole completion of a questionnaire via a user interface on the client side and subsequent score calculation and storage on the server side.</p>
+
+<p><strong>Process</strong>:</p>
+
+<ol>
+  <li>A patient completes a questionnaire, e.g., via a mobile app, by answering the contained questions</li>
+  <li>Subsequently, the answers and, if applicable, information about the completed questionnaire are sent to the server</li>
+  <li>The server calculates the score based on the defined score calculation rules and, where applicable, extracts relevant answers as independent data</li>
+  <li>The calculated and extracted data are stored, e.g., on a FHIR server</li>
+</ol>
+
+<div style="text-align: center;"><a name="l747">​</a>
+<img src="Workflow_Capability-Server.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Server-Side Calculation" width="50%"/>
+</div>
+
+<p><strong>Capabilities used:</strong></p>
+
+<ul>
+  <li>Client (Mobile App): <code class="language-plaintext highlighter-rouge">[collectable]</code></li>
+  <li>Server: <code class="language-plaintext highlighter-rouge">[populatable, calculatable, extractable]</code></li>
+</ul>
+
+<p><strong>Example</strong>: Lightweight mobile PRO app</p>
+
+<hr/>
+
+<h4 id="workflow-pattern-3-historical-recalculation">Workflow Pattern 3: Historical Recalculation</h4>
+
+<p>This workflow pattern describes the renewed, potentially automated, score calculation without further user interaction.</p>
+
+<p><strong>Process</strong>:</p>
+
+<ol>
+  <li>Previously collected answers to a questionnaire are provided to a service</li>
+  <li>The service loads the underlying questionnaire and the score calculation rules</li>
+  <li>The service calculates the score based on the new score calculation rules</li>
+  <li>The calculated and extracted data are stored, e.g., on a FHIR server</li>
+</ol>
+
+<div style="text-align: center;"><a name="l802">​</a>
+<img src="Workflow_Capability-Historisch.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Historical Recalculation" width="40%"/>
+</div>
+
+<p><strong>Capabilities used:</strong> <code class="language-plaintext highlighter-rouge">[populatable, calculatable, extractable]</code></p>
+
+<p><strong>Example</strong>: Migration to new scoring algorithms or data harmonization</p>
+
+<hr/>
+
+<h4 id="workflow-pattern-4-clinical-results-view">Workflow Pattern 4: Clinical Results View</h4>
+
+<p>In the context of patient care or cohort data analysis, individual or aggregated datasets are viewed without recalculation.</p>
+
+<p><strong>Process</strong>:</p>
+
+<ol>
+  <li>An authorized user with read access selects data</li>
+  <li>The existing data, consisting of answers and associated stored scores, is displayed</li>
+</ol>
+
+<p><strong>Capabilities used</strong>: <code class="language-plaintext highlighter-rouge">[populatable, displayable]</code></p>
+
+<p><strong>Example</strong>: Physician dashboard in the HIS</p>
+
+<hr/>
+
+<h4 id="workflow-pattern-5-pure-data-collection">Workflow Pattern 5: Pure Data Collection</h4>
+
+<p>In the context of patient care, pure data collection without calculations takes place, e.g., retrospective transcription.</p>
+
+<p><strong>Process</strong>:</p>
+
+<ol>
+  <li>An authorized user (e.g., healthcare professional) captures the answers to a questionnaire</li>
+  <li>Answers are stored in a FHIR-conformant target structure, e.g., as a FHIR QuestionnaireResponse</li>
+  <li>Optionally, downstream scoring is performed, e.g., by external services</li>
+</ol>
+
+<p><strong>Capabilities used</strong>: <code class="language-plaintext highlighter-rouge">[collectable, extractable]</code></p>
+
+<p><strong>Example</strong>: Paper-to-digital capture</p>
+
+<hr/>
+
+<h3 id="score-representation">Score Representation</h3>
+
+<p>The various workflow patterns demonstrate that different forms of representation exist for displaying a score.</p>
+
+<div style="text-align: center;"><a name="l898">​</a>
+<img src="Workflow_Score_Repraesentation.svg" alt="MII PRO Workflow Pattern: Score Representation Layers" width="60%"/>
+</div>
+
+<p>The fundamental representation form for a calculated score is its mapping as an independent item in a FHIR QuestionnaireResponse. If only the score and not the actual answers are relevant for further analyses, the calculated score can be extracted from the FHIR QuestionnaireResponse and represented as a FHIR Observation. A score extracted and stored in this way can, provided empirically validated rules for mapping to a domain-specific T-score exist and have been defined, be mapped to the domain-specific T-score.</p>
+
+<div style="text-align: center;"><a name="l906">​</a>
+<img src="Workflow_Domain_Mapping.svg" alt="MII PRO Domain Mapping Patterns" width="30%"/>
+</div>
+
+<p>In this way, an instrument-independent evaluation and a domain-specific comparison of the collected data can be performed.</p>
+
+<hr/>
+
+<h3 id="implementation-patterns">Implementation Patterns</h3>
+
+<h4 id="calculated-expressions">Calculated Expressions</h4>
+
+<p>Scores are calculated using FHIRPath expressions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Simple sum
+%resource.item.answer.value.ordinal().sum()
+
+// Weighted sum with selection
+%resource.item.where(linkId.matches('^item-[1-9]$')).answer.value.ordinal().sum()
+
+// With variables for complex calculations
+%rawScore = %resource.item.answer.value.ordinal().sum()
+iif(%rawScore &lt; 5, 'minimal', iif(%rawScore &lt; 10, 'mild', 'moderate'))
+</code></pre></div></div>
+
+<h4 id="initial-expressions-for-populatable">Initial Expressions for Populatable</h4>
+
+<p>Pre-population from existing data:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Single item
+iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='q1').answer.value, {})
+
+// With fallback
+%sourceResponse.item.where(linkId='q1').answer.value | {}
+</code></pre></div></div>
+
+<h4 id="extraction-to-observations">Extraction to Observations</h4>
+
+<p>Transformation is performed via SDC extraction extensions or server-side logic:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item.extension[observationExtract] = true
+* item.code = $LNC#44261-6 "PHQ-9 total score"
+</code></pre></div></div>
+
+<hr/>
+
+<h3 id="best-practices">Best Practices</h3>
+
+<h4 id="capability-selection">Capability Selection</h4>
+
+<p>The selection of capabilities should be guided by the use case:</p>
+
+<ul>
+  <li><strong>Patient portals</strong>: <code class="language-plaintext highlighter-rouge">[collectable, calculatable, displayable]</code></li>
+  <li><strong>Mobile apps</strong>: Only <code class="language-plaintext highlighter-rouge">[collectable]</code> (minimal footprint)</li>
+  <li><strong>Server systems</strong>: <code class="language-plaintext highlighter-rouge">[populatable, calculatable, extractable]</code></li>
+  <li><strong>Reporting systems</strong>: Only <code class="language-plaintext highlighter-rouge">[displayable]</code></li>
+</ul>
+
+<h4 id="performance-considerations">Performance Considerations</h4>
+
+<ul>
+  <li>UI-side calculations only for small questionnaires</li>
+  <li>Server-side calculation for complex scores</li>
+  <li>Caching of ObservationDefinitions</li>
+  <li>Batch processing for historical data</li>
+</ul>
+
+<h4 id="error-handling">Error Handling</h4>
+
+<ul>
+  <li>Validate all mandatory fields before score calculation</li>
+  <li>Clear error messages for invalid values</li>
+  <li>Fallback strategies for missing capabilities</li>
+  <li>Logging of mapping errors</li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-13 17:44:00 +0000">
+    2026-07-13
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
