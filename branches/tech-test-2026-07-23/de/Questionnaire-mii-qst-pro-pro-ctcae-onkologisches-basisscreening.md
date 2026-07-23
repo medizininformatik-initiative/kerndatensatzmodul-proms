@@ -1,0 +1,316 @@
+# MII QST PRO PRO-CTCAE Onkologisches Basisscreening - MII IG PRO v2026.4.1
+
+## Questionnaire: MII QST PRO PRO-CTCAE Onkologisches Basisscreening (Experimentell) 
+
+ 
+Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigsten Symptome onkologischer Patienten mit den 5-stufigen PRO-CTCAE-Skalen (Häufigkeit, Schweregrad, Beeinträchtigung). Symptomauswahl konzeptuell parallel zu MIDOS2 für eine gemeinsame Problem List zwischen Onkologie und Palliativmedizin. 
+
+*  [Baumansicht](#tabs-tree) 
+*  [Beispielanzeige](#tabs-sample) 
+*  [Formularlogik](#tabs-logic) 
+
+### Diesen Fragebogen testen
+
+### Antworten zu diesem Fragebogen
+
+* [PRO-CTCAE Onkologisches Basisscreening Beispiel — Onkologischer Patient unter Chemotherapie mit moderater Symptomlast](QuestionnaireResponse-mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Questionnaire",
+  "id" : "mii-qst-pro-pro-ctcae-onkologisches-basisscreening",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"]
+  },
+  "language" : "de",
+  "extension" : [{
+    "extension" : [{
+      "url" : "displayable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "collectable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "extractable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "domainAligned",
+      "valueBoolean" : true
+    }],
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+    "valueBoolean" : true
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening",
+  "version" : "2026.4.1",
+  "name" : "MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening",
+  "title" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-23T11:58:37+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigsten Symptome onkologischer Patienten mit den 5-stufigen PRO-CTCAE-Skalen (Häufigkeit, Schweregrad, Beeinträchtigung). Symptomauswahl konzeptuell parallel zu MIDOS2 für eine gemeinsame Problem List zwischen Onkologie und Palliativmedizin.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "copyright" : "PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials.",
+  "code" : [{
+    "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+    "code" : "proctcae-onkologisches-basisscreening",
+    "display" : "PRO-CTCAE Onkologisches Basisscreening (DKG, MIDOS2-äquivalente Symptome)"
+  }],
+  "item" : [{
+    "linkId" : "onkoscreen-instruction",
+    "text" : "In den FOLGENDEN FRAGEN geht es darum, wie Sie sich während der LETZTEN 7 TAGE gefühlt haben. Bitte beantworten Sie ALLE Fragen.",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "en"
+        },
+        {
+          "url" : "content",
+          "valueString" : "The FOLLOWING QUESTIONS ask about how you have felt over the PAST 7 DAYS. Please answer ALL questions."
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "display"
+  },
+  {
+    "linkId" : "proctcae-48",
+    "text" : "Schmerzen",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-48a-frq",
+      "text" : "Wie HÄUFIG hatten Sie SCHMERZEN?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency"
+    },
+    {
+      "linkId" : "proctcae-48b-sev",
+      "text" : "Wie STARK waren Ihre SCHMERZEN im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    },
+    {
+      "linkId" : "proctcae-48c-int",
+      "text" : "Wie sehr haben SCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference"
+    }]
+  },
+  {
+    "linkId" : "proctcae-53",
+    "text" : "Müdigkeit, Erschöpfung oder fehlende Energie",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-53a-sev",
+      "text" : "Wie STARK waren Ihre MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    },
+    {
+      "linkId" : "proctcae-53b-int",
+      "text" : "Wie sehr haben MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference"
+    }]
+  },
+  {
+    "linkId" : "proctcae-09",
+    "text" : "Übelkeit",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-09a-frq",
+      "text" : "Wie HÄUFIG hatten Sie ÜBELKEIT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency"
+    },
+    {
+      "linkId" : "proctcae-09b-sev",
+      "text" : "Wie STARK war Ihre ÜBELKEIT im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    }]
+  },
+  {
+    "linkId" : "proctcae-10",
+    "text" : "Erbrechen",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-10a-frq",
+      "text" : "Wie HÄUFIG mussten Sie ERBRECHEN?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency"
+    },
+    {
+      "linkId" : "proctcae-10b-sev",
+      "text" : "Wie STARK war Ihr ERBRECHEN im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    }]
+  },
+  {
+    "linkId" : "proctcae-08",
+    "text" : "Appetitmangel",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-08a-sev",
+      "text" : "Wie STARK war Ihr APPETITMANGEL im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    },
+    {
+      "linkId" : "proctcae-08b-int",
+      "text" : "Wie sehr hat Ihr APPETITMANGEL Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference"
+    }]
+  },
+  {
+    "linkId" : "proctcae-15",
+    "text" : "Verstopfung",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-15a-sev",
+      "text" : "Wie STARK war Ihre VERSTOPFUNG im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    }]
+  },
+  {
+    "linkId" : "proctcae-19",
+    "text" : "Kurzatmigkeit",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-19a-sev",
+      "text" : "Wie STARK war Ihre KURZATMIGKEIT im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    },
+    {
+      "linkId" : "proctcae-19b-int",
+      "text" : "Wie sehr hat KURZATMIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference"
+    }]
+  },
+  {
+    "linkId" : "proctcae-55",
+    "text" : "Mutlosigkeit (Gefühl, dass einen nichts aufmuntern kann)",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-55a-frq",
+      "text" : "Wie HÄUFIG hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency"
+    },
+    {
+      "linkId" : "proctcae-55b-sev",
+      "text" : "Wie STARK hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE, im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    },
+    {
+      "linkId" : "proctcae-55c-int",
+      "text" : "Wie sehr hat Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE in Ihren täglichen Aktivitäten GESTÖRT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference"
+    }]
+  },
+  {
+    "linkId" : "proctcae-56",
+    "text" : "Traurigkeit",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-56a-frq",
+      "text" : "Wie HÄUFIG waren Sie TRAURIG?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency"
+    },
+    {
+      "linkId" : "proctcae-56b-sev",
+      "text" : "Wie STARK war Ihre TRAURIGKEIT im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    },
+    {
+      "linkId" : "proctcae-56c-int",
+      "text" : "Wie sehr hat Ihre TRAURIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference"
+    }]
+  },
+  {
+    "linkId" : "proctcae-54",
+    "text" : "Angst",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "proctcae-54a-frq",
+      "text" : "Wie HÄUFIG hatten Sie ANGST?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency"
+    },
+    {
+      "linkId" : "proctcae-54b-sev",
+      "text" : "Wie STARK war Ihre ANGST im SCHLIMMSTEN FALL?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity"
+    },
+    {
+      "linkId" : "proctcae-54c-int",
+      "text" : "Wie sehr hat ANGST Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "type" : "choice",
+      "required" : true,
+      "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference"
+    }]
+  }]
+}
+
+```

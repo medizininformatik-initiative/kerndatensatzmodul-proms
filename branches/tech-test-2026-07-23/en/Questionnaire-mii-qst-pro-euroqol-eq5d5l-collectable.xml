@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="mii-qst-pro-euroqol-eq5d5l-collectable"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.4.1"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Questionnaire mii-qst-pro-euroqol-eq5d5l-collectable</b></p><a name="en-mii-qst-pro-euroqol-eq5d5l-collectable"> </a><a name="en-hcmii-qst-pro-euroqol-eq5d5l-collectable"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: de</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2026.4.1</p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable#2026.4.1</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-q01-MO" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> euroqol-eq5d5l-q01-MO</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">BEWEGLICHKEIT / MOBILITÄT</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#en-opt-item.euroqol-eq5d5l-q01-MO">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-q02-SC" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> euroqol-eq5d5l-q02-SC</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">FÜR SICH SELBST SORGEN</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#en-opt-item.euroqol-eq5d5l-q02-SC">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-q03-UA" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> euroqol-eq5d5l-q03-UA</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#en-opt-item.euroqol-eq5d5l-q03-UA">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-q04-PD" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> euroqol-eq5d5l-q04-PD</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">SCHMERZEN / KÖRPERLICHEN BESCHWERDEN</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#en-opt-item.euroqol-eq5d5l-q04-PD">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-q05-AD" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> euroqol-eq5d5l-q05-AD</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANGST / NIEDERGESCHLAGENHEIT</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#en-opt-item.euroqol-eq5d5l-q05-AD">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-score-profile" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: white; background-color: inherit" title="integer" class="hierarchy"/> euroqol-eq5d5l-score-profile</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Gesundheitszustand</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-score-index" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="decimal" class="hierarchy"/> euroqol-eq5d5l-score-index</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indexwert</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="en-item.euroqol-eq5d5l-vas-instruction" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: white; background-color: inherit" title="display" class="hierarchy"/> euroqol-eq5d5l-vas-instruction</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.
+
+    Die Skala is mit Zahlen von 0 bis 100 versehen.
+
+    100 ist die beste Gesundheit, die Sie sich vorstellen können.
+
+    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.
+
+    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.
+
+    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="en-item.euroqol-eq5d5l-vas" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> euroqol-eq5d5l-vas</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">IHRE GESUNDHEIT HEUTE</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Initial Value: integer = 999</td></tr>
+<tr><td colspan="6" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="en-opt-item.euroqol-eq5d5l-q01-MO"> </a><p><b>Answer options for euroqol-eq5d5l-q01-MO </b></p><ul><li style="font-size: 11px">null#1 (&quot;Ich habe keine Probleme herumzugehen&quot;)</li><li style="font-size: 11px">null#2 (&quot;Ich habe leichte Probleme herumzugehen&quot;)</li><li style="font-size: 11px">null#3 (&quot;Ich habe mäßige Probleme herumzugehen&quot;)</li><li style="font-size: 11px">null#4 (&quot;Ich habe große Probleme herumzugehen&quot;)</li><li style="font-size: 11px">null#5 (&quot;Ich bin nicht in der Lage herumzugehen&quot;)</li><li style="font-size: 11px">null#9 (&quot;Fehlender Wert&quot;)</li></ul><a name="en-opt-item.euroqol-eq5d5l-q02-SC"> </a><p><b>Answer options for euroqol-eq5d5l-q02-SC </b></p><ul><li style="font-size: 11px">null#1 (&quot;Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen&quot;)</li><li style="font-size: 11px">null#2 (&quot;Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen&quot;)</li><li style="font-size: 11px">null#3 (&quot;Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen&quot;)</li><li style="font-size: 11px">null#4 (&quot;Ich habe große Probleme, mich selbst zu waschen oder anzuziehen&quot;)</li><li style="font-size: 11px">null#5 (&quot;Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen&quot;)</li><li style="font-size: 11px">null#9 (&quot;Fehlender Wert&quot;)</li></ul><a name="en-opt-item.euroqol-eq5d5l-q03-UA"> </a><p><b>Answer options for euroqol-eq5d5l-q03-UA </b></p><ul><li style="font-size: 11px">null#1 (&quot;Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen&quot;)</li><li style="font-size: 11px">null#2 (&quot;Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen&quot;)</li><li style="font-size: 11px">null#3 (&quot;Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen&quot;)</li><li style="font-size: 11px">null#4 (&quot;Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen&quot;)</li><li style="font-size: 11px">null#5 (&quot;Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen&quot;)</li><li style="font-size: 11px">null#9 (&quot;Fehlender Wert&quot;)</li></ul><a name="en-opt-item.euroqol-eq5d5l-q04-PD"> </a><p><b>Answer options for euroqol-eq5d5l-q04-PD </b></p><ul><li style="font-size: 11px">null#1 (&quot;Ich habe keine Schmerzen oder Beschwerden&quot;)</li><li style="font-size: 11px">null#2 (&quot;Ich habe leichte Schmerzen oder Beschwerden&quot;)</li><li style="font-size: 11px">null#3 (&quot;Ich habe mäßige Schmerzen oder Beschwerden&quot;)</li><li style="font-size: 11px">null#4 (&quot;Ich habe starke Schmerzen oder Beschwerden&quot;)</li><li style="font-size: 11px">null#5 (&quot;Ich habe extreme Schmerzen oder Beschwerden&quot;)</li><li style="font-size: 11px">null#9 (&quot;Fehlender Wert&quot;)</li></ul><a name="en-opt-item.euroqol-eq5d5l-q05-AD"> </a><p><b>Answer options for euroqol-eq5d5l-q05-AD </b></p><ul><li style="font-size: 11px">null#1 (&quot;Ich bin nicht ängstlich oder deprimiert&quot;)</li><li style="font-size: 11px">null#2 (&quot;Ich bin ein wenig ängstlich oder deprimiert&quot;)</li><li style="font-size: 11px">null#3 (&quot;Ich bin mäßig ängstlich oder deprimiert&quot;)</li><li style="font-size: 11px">null#4 (&quot;Ich bin sehr ängstlich oder deprimiert&quot;)</li><li style="font-size: 11px">null#5 (&quot;Ich bin extrem ängstlich oder deprimiert&quot;)</li><li style="font-size: 11px">null#9 (&quot;Fehlender Wert&quot;)</li></ul></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities">
+    <extension url="displayable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="collectable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="calculatable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="extractable">
+      <valueBoolean value="false"/>
+    </extension>
+    <extension url="domainAligned">
+      <valueBoolean value="false"/>
+    </extension>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable"/>
+  <version value="2026.4.1"/>
+  <title value="MII QST PRO EQ-5D-5L Collectable"/>
+  <derivedFrom value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-23T11:58:37+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <code>
+    <system value="http://snomed.info/sct"/>
+    <code value="73041000052103"/>
+    <display value="EuroQoL five dimension five level questionnaire"/>
+  </code>
+  <code>
+    <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"/>
+    <code value="euroqol-eq5d5l"/>
+    <display value="EuroQol EQ-5D-5L Questionnaire"/>
+  </code>
+  <item>
+    <linkId value="euroqol-eq5d5l-q01-MO"/>
+    <text value="MOBILITY"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+        <display value="I have no problems in walking about"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+        <display value="I have slight problems in walking about"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+        <display value="I have moderate problems in walking about"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+        <display value="I have severe problems in walking about"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+        <display value="I am unable to walk about"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="9"/>
+        <display value="Missing value"/>
+      </valueCoding>
+      <initialSelected value="true"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="euroqol-eq5d5l-q02-SC"/>
+    <text value="SELF-CARE"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+        <display value="I have no problems washing or dressing myself"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+        <display value="I have slight problems washing or dressing myself"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+        <display value="I have moderate problems washing or dressing myself"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+        <display value="I have severe problems washing or dressing myself"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+        <display value="I am unable to wash or dress myself"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="9"/>
+        <display value="Missing value"/>
+      </valueCoding>
+      <initialSelected value="true"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="euroqol-eq5d5l-q03-UA"/>
+    <text value="USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+        <display value="I have no problems doing my usual activities"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+        <display value="I have slight problems doing my usual activities"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+        <display value="I have moderate problems doing my usual activities"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+        <display value="I have severe problems doing my usual activities"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+        <display value="I am unable to do my usual activities"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="9"/>
+        <display value="Missing value"/>
+      </valueCoding>
+      <initialSelected value="true"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="euroqol-eq5d5l-q04-PD"/>
+    <text value="PAIN / DISCOMFORT"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+        <display value="I have no pain or discomfort"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+        <display value="I have slight pain or discomfort"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+        <display value="I have moderate pain or discomfort"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+        <display value="I have severe pain or discomfort"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+        <display value="I have extreme pain or discomfort"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="9"/>
+        <display value="Missing value"/>
+      </valueCoding>
+      <initialSelected value="true"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="euroqol-eq5d5l-q05-AD"/>
+    <text value="ANXIETY / DEPRESSION"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+        <display value="I am not anxious or depressed"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+        <display value="I am slightly anxious or depressed"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+        <display value="I am moderately anxious or depressed"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+        <display value="I am severely anxious or depressed"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+        <display value="I am extremely anxious or depressed"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="9"/>
+        <display value="Missing value"/>
+      </valueCoding>
+      <initialSelected value="true"/>
+    </answerOption>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+      <valueCoding>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{score}"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="survey"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+      <valueExpression>
+        <language value="text/fhirpath"/>
+        <expression value="%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total &amp; $this, '')"/>
+      </valueExpression>
+    </extension>
+    <linkId value="euroqol-eq5d5l-score-profile"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="405157008"/>
+      <display value="Personal health status"/>
+    </code>
+    <text value="Health State"/>
+    <type value="integer"/>
+    <readOnly value="true"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/minValue">
+      <valueDecimal value="0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/maxValue">
+      <valueDecimal value="1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+      <valueCoding>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{score}"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="survey"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="euroqol-eq5d5l-score-index"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="406222005"/>
+      <display value="Population health status"/>
+    </code>
+    <text value="Index Value (EQ Value)"/>
+    <type value="decimal"/>
+    <readOnly value="true"/>
+  </item>
+  <item>
+    <linkId value="euroqol-eq5d5l-vas-instruction"/>
+    <text value="&#xA;    We would like to know how good or bad your health is TODAY.&#xA;&#xA;    This scale is numbered from 0 to 100.&#xA;&#xA;    100 means the best health you can imagine.&#xA;&#xA;    0 means the worst health you can imagine.&#xA;&#xA;    Please mark an X on the scale to indicate how your health is TODAY.&#xA;&#xA;    Now, write the number you marked on the scale in the box below."/>
+    <type value="display"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/minValue">
+      <valueInteger value="0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/maxValue">
+      <valueInteger value="100"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+      <valueCoding>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{score}"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="survey"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="euroqol-eq5d5l-vas"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="446515003"/>
+      <display value="Health assessment questionnaire score"/>
+    </code>
+    <text value="YOUR HEALTH TODAY"/>
+    <type value="integer"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <initial>
+      <valueInteger value="999"/>
+    </initial>
+  </item>
+</Questionnaire>

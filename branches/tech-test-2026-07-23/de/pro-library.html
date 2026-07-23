@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>PRO Library - MII IG PRO v2026.4.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.4.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/pro-library.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>PRO Library</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>PRO Library</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#übersicht-der-implementierten-fragebögen" id="markdown-toc-übersicht-der-implementierten-fragebögen">Übersicht der implementierten Fragebögen</a></li>
+  <li><a href="#capabilities-legende" id="markdown-toc-capabilities-legende">Capabilities-Legende</a></li>
+  <li><a href="#implementierungsstatus" id="markdown-toc-implementierungsstatus">Implementierungsstatus</a></li>
+  <li><a href="#technische-highlights" id="markdown-toc-technische-highlights">Technische Highlights</a></li>
+  <li><a href="#verwendung-in-der-praxis" id="markdown-toc-verwendung-in-der-praxis">Verwendung in der Praxis</a></li>
+  <li><a href="#weiterführende-informationen" id="markdown-toc-weiterführende-informationen">Weiterführende Informationen</a></li>
+</ul>
+
+</div>
+<p>Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Patient-Reported Outcome Measures (PROMs), die für den Einsatz im deutschen Gesundheitswesen standardisiert wurden. Jeder Fragebogen wurde mit spezifischen Capabilities ausgestattet, die seine Verwendbarkeit in unterschiedlichen klinischen und Forschungskontexten definieren.</p>
+
+<h3 id="übersicht-der-implementierten-fragebögen">Übersicht der implementierten Fragebögen</h3>
+
+<h4 id="vollständig-implementierte-fragebögen">Vollständig implementierte Fragebögen</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fragebogen</th>
+      <th>Status</th>
+      <th>Domäne</th>
+      <th>Items</th>
+      <th>Sprache</th>
+      <th>D</th>
+      <th>C</th>
+      <th>Cal</th>
+      <th>E</th>
+      <th>P</th>
+      <th>DA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>PHQ-9</strong></td>
+      <td>Vollständig</td>
+      <td>Depression</td>
+      <td>9+1</td>
+      <td>DE/EN</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td><strong>EQ-5D-5L</strong></td>
+      <td>Vollständig</td>
+      <td>Lebensqualität</td>
+      <td>5+VAS</td>
+      <td>DE/EN</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td><strong>BDI-II</strong></td>
+      <td>Data and Scoring</td>
+      <td>Depression</td>
+      <td>21</td>
+      <td>DE</td>
+      <td>-</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td><strong>PROMIS-29</strong></td>
+      <td>Vollständig</td>
+      <td>Multi-Domain</td>
+      <td>29</td>
+      <td>DE/EN</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td><strong>PROMIS Depression SF 4a</strong></td>
+      <td>Vollständig</td>
+      <td>Depression</td>
+      <td>4</td>
+      <td>DE/EN</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td><strong>PROMIS Cognitive Function SF 4a</strong></td>
+      <td>Vollständig</td>
+      <td>Kognition</td>
+      <td>4</td>
+      <td>DE/EN</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td><strong>EORTC QLQ-C30</strong></td>
+      <td>Vollständig</td>
+      <td>Onkologie</td>
+      <td>30</td>
+      <td>DE/EN</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>DASS-21</strong></td>
+      <td>Vollständig</td>
+      <td>Depression/Angst/Stress</td>
+      <td>21</td>
+      <td>DE/EN</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>✓</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="metadata-only-reference-questionnaires">Metadata-Only Reference Questionnaires</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fragebogen</th>
+      <th>Status</th>
+      <th>Domäne</th>
+      <th>Lizenz</th>
+      <th>Capabilities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>HADS</strong></td>
+      <td>Metadata</td>
+      <td>Angst/Depression</td>
+      <td>Lizenziert</td>
+      <td>Calculatable, Extractable</td>
+    </tr>
+    <tr>
+      <td><strong>EPDS</strong></td>
+      <td>Metadata</td>
+      <td>Postnatale Depression</td>
+      <td>Lizenziert</td>
+      <td>Nur Metadaten</td>
+    </tr>
+    <tr>
+      <td><strong>CES-D</strong></td>
+      <td>Metadata</td>
+      <td>Depression</td>
+      <td>Lizenziert</td>
+      <td>Nur Metadaten</td>
+    </tr>
+    <tr>
+      <td><strong>K6</strong></td>
+      <td>Metadata</td>
+      <td>Psychische Belastung</td>
+      <td>Lizenziert</td>
+      <td>Nur Metadaten</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="capabilities-legende">Capabilities-Legende</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kürzel</th>
+      <th>Capability</th>
+      <th>Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>D</strong></td>
+      <td>Displayable</td>
+      <td>Kann visuell dargestellt werden</td>
+    </tr>
+    <tr>
+      <td><strong>C</strong></td>
+      <td>Collectable</td>
+      <td>Kann von Patienten ausgefüllt werden</td>
+    </tr>
+    <tr>
+      <td><strong>Cal</strong></td>
+      <td>Calculatable</td>
+      <td>Automatische Score-Berechnung möglich</td>
+    </tr>
+    <tr>
+      <td><strong>E</strong></td>
+      <td>Extractable</td>
+      <td>Daten können in Observations extrahiert werden</td>
+    </tr>
+    <tr>
+      <td><strong>P</strong></td>
+      <td>Populatable</td>
+      <td>Kann mit bestehenden Daten vorausgefüllt werden</td>
+    </tr>
+    <tr>
+      <td><strong>DA</strong></td>
+      <td>Domain-aligned</td>
+      <td>Domänenspezifische Zuordnung vorhanden</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="implementierungsstatus">Implementierungsstatus</h3>
+
+<h4 id="vollständig-implementiert">Vollständig implementiert</h4>
+<ul>
+  <li><strong>PHQ-9 (Patient Health Questionnaire-9)</strong>
+    <ul>
+      <li>Depression Screening Tool mit 9 Fragen + Funktionsbeeinträchtigung</li>
+      <li>PROMIS Depression T-Score Mapping via PROsetta Stone</li>
+      <li>SDC-basierte automatische Score-Berechnung</li>
+      <li>Vollständige deutsche und englische Übersetzungen</li>
+    </ul>
+  </li>
+  <li><strong>EQ-5D-5L (EuroQol 5 Dimensions 5 Levels)</strong>
+    <ul>
+      <li>Generisches Lebensqualitätsinstrument</li>
+      <li>3 Varianten: Minimal, Displayable, Collectable</li>
+      <li>Index-, VAS- und Profil-Scores</li>
+      <li>CQL-Bibliotheken für Berechnungen</li>
+    </ul>
+  </li>
+  <li><strong>EORTC QLQ-C30</strong>
+    <ul>
+      <li>Onkologie-spezifisches Lebensqualitätsinstrument mit 30 Fragen</li>
+      <li>Vollständige Implementierung aller 15 Subskalen mit automatischen Score-Berechnungen</li>
+      <li>MII-Terminologie mit deutschen und englischen Übersetzungen</li>
+      <li>Umfassende Scoring-Methodologie mit linearer Transformation (0-100 Skala)</li>
+      <li>ObservationDefinitions für alle Funktions- und Symptomskalen</li>
+    </ul>
+  </li>
+  <li><strong>PROMIS-29 Profile v2.1</strong>
+    <ul>
+      <li>7 Domänen: Physical Function, Anxiety, Depression, Fatigue, Sleep, Social Function, Pain</li>
+      <li>Variable-basierte Score-Berechnungen</li>
+      <li>Raw Scores und T-Scores für alle Domänen</li>
+    </ul>
+  </li>
+  <li><strong>PROMIS Short Forms</strong>
+    <ul>
+      <li>Depression SF 4a und Cognitive Function SF 4a</li>
+      <li>Vollständige Implementierung mit automatischer Score-Berechnung</li>
+      <li>Vorbereitung für item-basierte Architektur</li>
+    </ul>
+  </li>
+  <li><strong>DASS-21 (Depression Anxiety Stress Scales - 21 Items)</strong>
+    <ul>
+      <li>Gleichzeitige Erfassung von Depression, Angst und Stress mit 21 Items</li>
+      <li>3 Subskalen mit Rohwerten und DASS-42-Äquivalenten (6 Scores)</li>
+      <li>Public Domain – frei verfügbar ohne Lizenzgebühren</li>
+      <li>Deutsche Validierung nach Nilges &amp; Essau (2015)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="data-and-scoring-implementiert">Data and Scoring implementiert</h4>
+<ul>
+  <li><strong>BDI-II (Beck Depression Inventory II)</strong>
+    <ul>
+      <li>Umfassendes Depressionsinventar mit 21 Items</li>
+      <li>Kategorienbasierte Score-Berechnung funktionsfähig</li>
+      <li>MII-Terminologie mit Scoring-Weights</li>
+      <li>Benötigt noch Display- und Collection-Capabilities für vollständige Nutzung</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="technische-highlights">Technische Highlights</h3>
+
+<h4 id="sdc-integration">SDC-Integration</h4>
+<p>Alle vollständig implementierten Fragebögen nutzen erweiterte SDC-Capabilities:</p>
+<ul>
+  <li><strong>Calculated Expressions</strong>: Automatische Score-Berechnung mit FHIRPath</li>
+  <li><strong>Conditional Display</strong>: Dynamische Sichtbarkeit basierend auf Antworten</li>
+  <li><strong>Initial Values</strong>: Kontextabhängige Vorbelegung von Feldern</li>
+  <li><strong>Observation Extraction</strong>: Direkte Konvertierung zu FHIR Observations</li>
+</ul>
+
+<h4 id="terminologie-strategie">Terminologie-Strategie</h4>
+<ul>
+  <li><strong>MII ValueSets</strong> mit Scoring-Weights für zuverlässige Berechnungen</li>
+  <li><strong>Mehrsprachigkeit</strong> durch FHIR Translation Extensions</li>
+  <li><strong>LOINC-Integration</strong> wo verfügbar, mit deutschen Übersetzungen</li>
+</ul>
+
+<h4 id="questionnaire-varianten">Questionnaire Varianten</h4>
+<p>Flexible Architektur mit verschiedenen Capability-Kombinationen:</p>
+<ul>
+  <li><strong>Displayable</strong>: Reine Anzeige von Ergebnissen</li>
+  <li><strong>Collectable</strong>: Interaktive Datenerfassung</li>
+  <li><strong>Populatable</strong>: Vorbelegung aus bestehenden Daten</li>
+  <li><strong>Calculatable</strong>: Server-seitige Score-Berechnung</li>
+</ul>
+
+<h3 id="verwendung-in-der-praxis">Verwendung in der Praxis</h3>
+
+<p>Die implementierten Fragebögen können in verschiedenen Szenarien eingesetzt werden:</p>
+
+<ol>
+  <li><strong>Direkte Patientenbefragung</strong> (Collectable + Displayable)</li>
+  <li><strong>Automatisierte Score-Berechnung</strong> (Calculatable + Extractable)</li>
+  <li><strong>Verlaufsdarstellung</strong> (Populatable + Displayable)</li>
+  <li><strong>Forschungsdatenerhebung</strong> (Alle Capabilities)</li>
+</ol>
+
+<h3 id="weiterführende-informationen">Weiterführende Informationen</h3>
+
+<p>Detaillierte Informationen zu einzelnen Fragebögen finden Sie in den jeweiligen Unterseiten:</p>
+<ul>
+  <li><a href="phq-9.html">PHQ-9</a></li>
+  <li><a href="eq-5d-5l.html">EQ-5D-5L</a></li>
+  <li><a href="bdi-ii.html">BDI-II</a></li>
+  <li><a href="promis.html">PROMIS</a></li>
+  <li><a href="eortc-qlq-c30.html">EORTC QLQ-C30</a></li>
+  <li><a href="dass-21.html">DASS-21</a></li>
+  <li><a href="minimal-reference-questionnaires.html">Minimal Reference Questionnaires</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-07-23 11:58:00 +0000">
+    2026-07-23
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

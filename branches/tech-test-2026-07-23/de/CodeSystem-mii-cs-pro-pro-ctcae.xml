@@ -1,0 +1,2397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-pro-pro-ctcae"/>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-pro-ctcae</b></p><a name="mii-cs-pro-pro-ctcae"> </a><a name="hcmii-cs-pro-pro-ctcae"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>attributes</td><td>attributes</td><td>string</td><td>Which item attributes apply to this AE (frq, sev, int, presence)</td></tr><tr><td>rank</td><td>rank</td><td>integer</td><td>Composite grading rank (1=frq, 2=sev, 3=int, 4=frq+sev, 5=frq+int, 6=sev+int, 7=frq+sev+int)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>attributes</b></td><td><b>rank</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td style="white-space:nowrap">proctcae-frequency-0<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-0"> </a></td><td>Never</td><td/><td/><td>Nie</td></tr><tr><td style="white-space:nowrap">proctcae-frequency-1<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-1"> </a></td><td>Rarely</td><td/><td/><td>Selten</td></tr><tr><td style="white-space:nowrap">proctcae-frequency-2<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-2"> </a></td><td>Occasionally</td><td/><td/><td>Gelegentlich</td></tr><tr><td style="white-space:nowrap">proctcae-frequency-3<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-3"> </a></td><td>Frequently</td><td/><td/><td>Häufig</td></tr><tr><td style="white-space:nowrap">proctcae-frequency-4<a name="mii-cs-pro-pro-ctcae-proctcae-frequency-4"> </a></td><td>Almost constantly</td><td/><td/><td>Fast immer</td></tr><tr><td style="white-space:nowrap">proctcae-severity-0<a name="mii-cs-pro-pro-ctcae-proctcae-severity-0"> </a></td><td>None</td><td/><td/><td>Gar nicht</td></tr><tr><td style="white-space:nowrap">proctcae-severity-1<a name="mii-cs-pro-pro-ctcae-proctcae-severity-1"> </a></td><td>Mild</td><td/><td/><td>Ein wenig</td></tr><tr><td style="white-space:nowrap">proctcae-severity-2<a name="mii-cs-pro-pro-ctcae-proctcae-severity-2"> </a></td><td>Moderate</td><td/><td/><td>Mäßig</td></tr><tr><td style="white-space:nowrap">proctcae-severity-3<a name="mii-cs-pro-pro-ctcae-proctcae-severity-3"> </a></td><td>Severe</td><td/><td/><td>Ziemlich</td></tr><tr><td style="white-space:nowrap">proctcae-severity-4<a name="mii-cs-pro-pro-ctcae-proctcae-severity-4"> </a></td><td>Very severe</td><td/><td/><td>Sehr</td></tr><tr><td style="white-space:nowrap">proctcae-interference-0<a name="mii-cs-pro-pro-ctcae-proctcae-interference-0"> </a></td><td>Not at all</td><td/><td/><td>Gar nicht</td></tr><tr><td style="white-space:nowrap">proctcae-interference-1<a name="mii-cs-pro-pro-ctcae-proctcae-interference-1"> </a></td><td>A little bit</td><td/><td/><td>Ein wenig</td></tr><tr><td style="white-space:nowrap">proctcae-interference-2<a name="mii-cs-pro-pro-ctcae-proctcae-interference-2"> </a></td><td>Somewhat</td><td/><td/><td>Mäßig</td></tr><tr><td style="white-space:nowrap">proctcae-interference-3<a name="mii-cs-pro-pro-ctcae-proctcae-interference-3"> </a></td><td>Quite a bit</td><td/><td/><td>Ziemlich</td></tr><tr><td style="white-space:nowrap">proctcae-interference-4<a name="mii-cs-pro-pro-ctcae-proctcae-interference-4"> </a></td><td>Very much</td><td/><td/><td>Sehr</td></tr><tr><td style="white-space:nowrap">proctcae-presence-0<a name="mii-cs-pro-pro-ctcae-proctcae-presence-0"> </a></td><td>No</td><td/><td/><td>Nein</td></tr><tr><td style="white-space:nowrap">proctcae-presence-1<a name="mii-cs-pro-pro-ctcae-proctcae-presence-1"> </a></td><td>Yes</td><td/><td/><td>Ja</td></tr><tr><td style="white-space:nowrap">proctcae-optout-not-applicable<a name="mii-cs-pro-pro-ctcae-proctcae-optout-not-applicable"> </a></td><td>Not applicable</td><td/><td/><td>Trifft nicht auf mich zu</td></tr><tr><td style="white-space:nowrap">proctcae-optout-not-sexually-active<a name="mii-cs-pro-pro-ctcae-proctcae-optout-not-sexually-active"> </a></td><td>Not sexually active</td><td/><td/><td>Nicht sexuell aktiv</td></tr><tr><td style="white-space:nowrap">proctcae-optout-prefer-not-to-answer<a name="mii-cs-pro-pro-ctcae-proctcae-optout-prefer-not-to-answer"> </a></td><td>Prefer not to answer</td><td/><td/><td>Möchte nicht antworten</td></tr><tr><td style="white-space:nowrap">proctcae-ae-01<a name="mii-cs-pro-pro-ctcae-proctcae-ae-01"> </a></td><td>Dry Mouth</td><td>sev</td><td>2</td><td>Mundtrockenheit</td></tr><tr><td style="white-space:nowrap">proctcae-01a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-01a-sev"> </a></td><td>Dry Mouth Severity</td><td/><td/><td>Wie STARK war Ihre MUNDTROCKENHEIT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-02<a name="mii-cs-pro-pro-ctcae-proctcae-ae-02"> </a></td><td>Difficulty Swallowing</td><td>sev</td><td>2</td><td>Schwierigkeiten beim Schlucken</td></tr><tr><td style="white-space:nowrap">proctcae-02a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-02a-sev"> </a></td><td>Difficulty Swallowing Severity</td><td/><td/><td>Wie STARK waren Ihre SCHWIERIGKEITEN BEIM SCHLUCKEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-03<a name="mii-cs-pro-pro-ctcae-proctcae-ae-03"> </a></td><td>Mouth or Throat Sores</td><td>sev int</td><td>6</td><td>Wunde oder offene Stellen in Mund oder Hals</td></tr><tr><td style="white-space:nowrap">proctcae-03a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-03a-sev"> </a></td><td>Mouth or Throat Sores Severity</td><td/><td/><td>Wie STARK hatten Sie WUNDE ODER OFFENE STELLEN IN MUND ODER HALS im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-03b-int<a name="mii-cs-pro-pro-ctcae-proctcae-03b-int"> </a></td><td>Mouth or Throat Sores Interference</td><td/><td/><td>Wie sehr haben WUNDE ODER OFFENE STELLEN IN MUND ODER HALS Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-04<a name="mii-cs-pro-pro-ctcae-proctcae-ae-04"> </a></td><td>Cracking at Corners of Mouth</td><td>sev</td><td>2</td><td>Rissige Mundwinkel</td></tr><tr><td style="white-space:nowrap">proctcae-04a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-04a-sev"> </a></td><td>Cracking at Corners of Mouth Severity</td><td/><td/><td>Wie STARK hatten Sie RISSIGE MUNDWINKEL im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-05<a name="mii-cs-pro-pro-ctcae-proctcae-ae-05"> </a></td><td>Voice Quality Changes</td><td>presence</td><td/><td>Veränderung der Stimme</td></tr><tr><td style="white-space:nowrap">proctcae-05a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-05a-yn"> </a></td><td>Voice Quality Changes Presence</td><td/><td/><td>Hatten Sie irgendeine VERÄNDERUNG DER STIMME?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-06<a name="mii-cs-pro-pro-ctcae-proctcae-ae-06"> </a></td><td>Hoarseness</td><td>sev</td><td>2</td><td>Heiserkeit</td></tr><tr><td style="white-space:nowrap">proctcae-06a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-06a-sev"> </a></td><td>Hoarseness Severity</td><td/><td/><td>Wie STARK war Ihre HEISERKEIT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-07<a name="mii-cs-pro-pro-ctcae-proctcae-ae-07"> </a></td><td>Taste Changes</td><td>sev</td><td>2</td><td>Geschmacksveränderungen beim Essen oder Trinken</td></tr><tr><td style="white-space:nowrap">proctcae-07a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-07a-sev"> </a></td><td>Taste Changes Severity</td><td/><td/><td>Wie STARK waren Ihre GESCHMACKSVERÄNDERUNGEN BEIM ESSEN ODER TRINKEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-08<a name="mii-cs-pro-pro-ctcae-proctcae-ae-08"> </a></td><td>Decreased Appetite</td><td>sev int</td><td>6</td><td>Appetitmangel</td></tr><tr><td style="white-space:nowrap">proctcae-08a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-08a-sev"> </a></td><td>Decreased Appetite Severity</td><td/><td/><td>Wie STARK war Ihr APPETITMANGEL im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-08b-int<a name="mii-cs-pro-pro-ctcae-proctcae-08b-int"> </a></td><td>Decreased Appetite Interference</td><td/><td/><td>Wie sehr hat Ihr APPETITMANGEL Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-09<a name="mii-cs-pro-pro-ctcae-proctcae-ae-09"> </a></td><td>Nausea</td><td>frq sev</td><td>4</td><td>Übelkeit</td></tr><tr><td style="white-space:nowrap">proctcae-09a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-09a-frq"> </a></td><td>Nausea Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie ÜBELKEIT?</td></tr><tr><td style="white-space:nowrap">proctcae-09b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-09b-sev"> </a></td><td>Nausea Severity</td><td/><td/><td>Wie STARK war Ihre ÜBELKEIT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-10<a name="mii-cs-pro-pro-ctcae-proctcae-ae-10"> </a></td><td>Vomiting</td><td>frq sev</td><td>4</td><td>Erbrechen</td></tr><tr><td style="white-space:nowrap">proctcae-10a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-10a-frq"> </a></td><td>Vomiting Frequency</td><td/><td/><td>Wie HÄUFIG mussten Sie ERBRECHEN?</td></tr><tr><td style="white-space:nowrap">proctcae-10b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-10b-sev"> </a></td><td>Vomiting Severity</td><td/><td/><td>Wie STARK war Ihr ERBRECHEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-11<a name="mii-cs-pro-pro-ctcae-proctcae-ae-11"> </a></td><td>Heartburn</td><td>frq sev</td><td>4</td><td>Sodbrennen</td></tr><tr><td style="white-space:nowrap">proctcae-11a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-11a-frq"> </a></td><td>Heartburn Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie SODBRENNEN?</td></tr><tr><td style="white-space:nowrap">proctcae-11b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-11b-sev"> </a></td><td>Heartburn Severity</td><td/><td/><td>Wie STARK war Ihr SODBRENNEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-12<a name="mii-cs-pro-pro-ctcae-proctcae-ae-12"> </a></td><td>Increased Flatulence</td><td>presence</td><td/><td>Winde lassen (Flatulenz)</td></tr><tr><td style="white-space:nowrap">proctcae-12a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-12a-yn"> </a></td><td>Increased Flatulence Presence</td><td/><td/><td>Mussten Sie HÄUFIGER WINDE LASSEN (FLATULENZ)?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-13<a name="mii-cs-pro-pro-ctcae-proctcae-ae-13"> </a></td><td>Bloating</td><td>frq sev</td><td>4</td><td>Einen geblähten Bauch</td></tr><tr><td style="white-space:nowrap">proctcae-13a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-13a-frq"> </a></td><td>Bloating Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie EINEN GEBLÄHTEN BAUCH?</td></tr><tr><td style="white-space:nowrap">proctcae-13b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-13b-sev"> </a></td><td>Bloating Severity</td><td/><td/><td>Wie STARK GEBLÄHT war Ihr BAUCH im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-14<a name="mii-cs-pro-pro-ctcae-proctcae-ae-14"> </a></td><td>Hiccups</td><td>frq sev</td><td>4</td><td>Schluckauf</td></tr><tr><td style="white-space:nowrap">proctcae-14a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-14a-frq"> </a></td><td>Hiccups Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie SCHLUCKAUF?</td></tr><tr><td style="white-space:nowrap">proctcae-14b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-14b-sev"> </a></td><td>Hiccups Severity</td><td/><td/><td>Wie STARK war Ihr SCHLUCKAUF im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-15<a name="mii-cs-pro-pro-ctcae-proctcae-ae-15"> </a></td><td>Constipation</td><td>sev</td><td>2</td><td>Verstopfung</td></tr><tr><td style="white-space:nowrap">proctcae-15a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-15a-sev"> </a></td><td>Constipation Severity</td><td/><td/><td>Wie STARK war Ihre VERSTOPFUNG im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-16<a name="mii-cs-pro-pro-ctcae-proctcae-ae-16"> </a></td><td>Diarrhea</td><td>frq</td><td>1</td><td>Durchfall</td></tr><tr><td style="white-space:nowrap">proctcae-16a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-16a-frq"> </a></td><td>Diarrhea Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie DURCHFALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-17<a name="mii-cs-pro-pro-ctcae-proctcae-ae-17"> </a></td><td>Pain in Abdomen</td><td>frq sev int</td><td>7</td><td>Bauchschmerzen</td></tr><tr><td style="white-space:nowrap">proctcae-17a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-17a-frq"> </a></td><td>Pain in Abdomen Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie BAUCHSCHMERZEN?</td></tr><tr><td style="white-space:nowrap">proctcae-17b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-17b-sev"> </a></td><td>Pain in Abdomen Severity</td><td/><td/><td>Wie STARK waren Ihre BAUCHSCHMERZEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-17c-int<a name="mii-cs-pro-pro-ctcae-proctcae-17c-int"> </a></td><td>Pain in Abdomen Interference</td><td/><td/><td>Wie sehr haben BAUCHSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-18<a name="mii-cs-pro-pro-ctcae-proctcae-ae-18"> </a></td><td>Fecal Incontinence</td><td>frq int</td><td>5</td><td>Stuhlgang nicht kontrollieren oder halten können (Stuhlinkontinenz)</td></tr><tr><td style="white-space:nowrap">proctcae-18a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-18a-frq"> </a></td><td>Fecal Incontinence Frequency</td><td/><td/><td>Wie HÄUFIG konnten Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN?</td></tr><tr><td style="white-space:nowrap">proctcae-18b-int<a name="mii-cs-pro-pro-ctcae-proctcae-18b-int"> </a></td><td>Fecal Incontinence Interference</td><td/><td/><td>Wie sehr wurden Sie in Ihren täglichen Aktivitäten GESTÖRT, weil Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN konnten?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-19<a name="mii-cs-pro-pro-ctcae-proctcae-ae-19"> </a></td><td>Shortness of Breath</td><td>sev int</td><td>6</td><td>Kurzatmigkeit</td></tr><tr><td style="white-space:nowrap">proctcae-19a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-19a-sev"> </a></td><td>Shortness of Breath Severity</td><td/><td/><td>Wie STARK war Ihre KURZATMIGKEIT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-19b-int<a name="mii-cs-pro-pro-ctcae-proctcae-19b-int"> </a></td><td>Shortness of Breath Interference</td><td/><td/><td>Wie sehr hat KURZATMIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-20<a name="mii-cs-pro-pro-ctcae-proctcae-ae-20"> </a></td><td>Cough</td><td>sev int</td><td>6</td><td>Husten</td></tr><tr><td style="white-space:nowrap">proctcae-20a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-20a-sev"> </a></td><td>Cough Severity</td><td/><td/><td>Wie STARK war Ihr HUSTEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-20b-int<a name="mii-cs-pro-pro-ctcae-proctcae-20b-int"> </a></td><td>Cough Interference</td><td/><td/><td>Wie sehr hat HUSTEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-21<a name="mii-cs-pro-pro-ctcae-proctcae-ae-21"> </a></td><td>Wheezing</td><td>sev</td><td>2</td><td>Giemen (pfeifendes Atemgeräusch) der Lunge</td></tr><tr><td style="white-space:nowrap">proctcae-21a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-21a-sev"> </a></td><td>Wheezing Severity</td><td/><td/><td>Wie STARK hatten Sie ein GIEMEN (PFEIFENDES ATEMGERÄUSCH) DER LUNGE im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-22<a name="mii-cs-pro-pro-ctcae-proctcae-ae-22"> </a></td><td>Arm or Leg Swelling</td><td>frq sev int</td><td>7</td><td>Geschwollene Arme oder Beine</td></tr><tr><td style="white-space:nowrap">proctcae-22a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-22a-frq"> </a></td><td>Arm or Leg Swelling Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie GESCHWOLLENE ARME ODER BEINE?</td></tr><tr><td style="white-space:nowrap">proctcae-22b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-22b-sev"> </a></td><td>Arm or Leg Swelling Severity</td><td/><td/><td>Wie STARK GESCHWOLLEN waren Ihre ARME ODER BEINE im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-22c-int<a name="mii-cs-pro-pro-ctcae-proctcae-22c-int"> </a></td><td>Arm or Leg Swelling Interference</td><td/><td/><td>Wie sehr haben GESCHWOLLENE ARME ODER BEINE Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-23<a name="mii-cs-pro-pro-ctcae-proctcae-ae-23"> </a></td><td>Pounding or Racing Heartbeat</td><td>frq sev</td><td>4</td><td>Herzklopfen, Herzrasen oder unregelmäßiger Puls</td></tr><tr><td style="white-space:nowrap">proctcae-23a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-23a-frq"> </a></td><td>Pounding or Racing Heartbeat Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie HERZKLOPFEN, HERZRASEN ODER EINEN UNREGELMÄSSIGEN PULS?</td></tr><tr><td style="white-space:nowrap">proctcae-23b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-23b-sev"> </a></td><td>Pounding or Racing Heartbeat Severity</td><td/><td/><td>Wie STARK waren Ihr HERZKLOPFEN, HERZRASEN ODER UNREGELMÄSSIGER PULS im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-24<a name="mii-cs-pro-pro-ctcae-proctcae-ae-24"> </a></td><td>Rash</td><td>presence</td><td/><td>Hautausschlag</td></tr><tr><td style="white-space:nowrap">proctcae-24a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-24a-yn"> </a></td><td>Rash Presence</td><td/><td/><td>Hatten Sie einen HAUTAUSSCHLAG?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-25<a name="mii-cs-pro-pro-ctcae-proctcae-ae-25"> </a></td><td>Skin Dryness</td><td>sev</td><td>2</td><td>Trockene Haut</td></tr><tr><td style="white-space:nowrap">proctcae-25a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-25a-sev"> </a></td><td>Skin Dryness Severity</td><td/><td/><td>Wie TROCKEN war Ihre Haut im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-26<a name="mii-cs-pro-pro-ctcae-proctcae-ae-26"> </a></td><td>Acne</td><td>sev</td><td>2</td><td>Akne oder Pickel im Gesicht oder auf dem Brustkorb</td></tr><tr><td style="white-space:nowrap">proctcae-26a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-26a-sev"> </a></td><td>Acne Severity</td><td/><td/><td>Wie STARK ausgeprägt hatten Sie AKNE ODER PICKEL IM GESICHT ODER AUF DEM BRUSTKORB im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-27<a name="mii-cs-pro-pro-ctcae-proctcae-ae-27"> </a></td><td>Hair Loss</td><td>int</td><td>3</td><td>Haarausfall</td></tr><tr><td style="white-space:nowrap">proctcae-27a-int<a name="mii-cs-pro-pro-ctcae-proctcae-27a-int"> </a></td><td>Hair Loss Amount</td><td/><td/><td>Hatten Sie HAARAUSFALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-28<a name="mii-cs-pro-pro-ctcae-proctcae-ae-28"> </a></td><td>Itching</td><td>sev</td><td>2</td><td>Juckreiz</td></tr><tr><td style="white-space:nowrap">proctcae-28a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-28a-sev"> </a></td><td>Itching Severity</td><td/><td/><td>Wie STARK war IHR JUCKREIZ im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-29<a name="mii-cs-pro-pro-ctcae-proctcae-ae-29"> </a></td><td>Hives</td><td>presence</td><td/><td>Nesselfieber (eine juckende, rote Hautschwellung)</td></tr><tr><td style="white-space:nowrap">proctcae-29a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-29a-yn"> </a></td><td>Hives Presence</td><td/><td/><td>Hatten Sie NESSELFIEBER (EINE JUCKENDE, ROTE HAUTSCHWELLUNG)?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-30<a name="mii-cs-pro-pro-ctcae-proctcae-ae-30"> </a></td><td>Hand-Foot Syndrome</td><td>sev</td><td>2</td><td>Hand-Fuss-Syndrom (ein Hautausschlag der Hände oder Füße, der Brennen, Abschälen der Haut, Rötung oder Schmerzen machen kann)</td></tr><tr><td style="white-space:nowrap">proctcae-30a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-30a-sev"> </a></td><td>Hand-Foot Syndrome Severity</td><td/><td/><td>Wie STARK war Ihr HAND-FUSS-SYNDROM im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-31<a name="mii-cs-pro-pro-ctcae-proctcae-ae-31"> </a></td><td>Nail Loss</td><td>presence</td><td/><td>Verlust von Finger- oder Fußnägeln</td></tr><tr><td style="white-space:nowrap">proctcae-31a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-31a-yn"> </a></td><td>Nail Loss Presence</td><td/><td/><td>Sind Ihnen FINGER- ODER FUSSNÄGEL AUSGEFALLEN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-32<a name="mii-cs-pro-pro-ctcae-proctcae-ae-32"> </a></td><td>Nail Ridging</td><td>presence</td><td/><td>Furchen oder Unebenheiten der Finger- oder Fußnägel</td></tr><tr><td style="white-space:nowrap">proctcae-32a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-32a-yn"> </a></td><td>Nail Ridging Presence</td><td/><td/><td>Hatten Sie FURCHEN ODER UNEBENHEITEN DER FINGER- ODER FUSSNÄGEL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-33<a name="mii-cs-pro-pro-ctcae-proctcae-ae-33"> </a></td><td>Nail Discoloration</td><td>presence</td><td/><td>Veränderungen der Farbe von Finger- oder Fußnägeln</td></tr><tr><td style="white-space:nowrap">proctcae-33a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-33a-yn"> </a></td><td>Nail Discoloration Presence</td><td/><td/><td>Hatten Sie VERÄNDERUNGEN DER FARBE VON FINGER- ODER FUSSNÄGELN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-34<a name="mii-cs-pro-pro-ctcae-proctcae-ae-34"> </a></td><td>Sensitivity to Sunlight</td><td>presence</td><td/><td>Erhöhte Sonnenlichtempfindlichkeit der Haut</td></tr><tr><td style="white-space:nowrap">proctcae-34a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-34a-yn"> </a></td><td>Sensitivity to Sunlight Presence</td><td/><td/><td>Hatten Sie eine ERHÖHTE SONNENLICHTEMPFINDLICHKEIT DER HAUT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-35<a name="mii-cs-pro-pro-ctcae-proctcae-ae-35"> </a></td><td>Bed Sores</td><td>presence</td><td/><td>Druckstellen (Dekubitus)</td></tr><tr><td style="white-space:nowrap">proctcae-35a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-35a-yn"> </a></td><td>Bed Sores Presence</td><td/><td/><td>Hatten Sie DRUCKSTELLEN (DEKUBITUS)?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-36<a name="mii-cs-pro-pro-ctcae-proctcae-ae-36"> </a></td><td>Radiation Skin Reaction</td><td>sev</td><td>2</td><td>Hautverbrennungen nach einer Bestrahlung</td></tr><tr><td style="white-space:nowrap">proctcae-36a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-36a-sev"> </a></td><td>Radiation Skin Reaction Severity</td><td/><td/><td>Wie STARK ausgeprägt waren Ihre HAUTVERBRENNUNGEN NACH EINER BESTRAHLUNG im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-37<a name="mii-cs-pro-pro-ctcae-proctcae-ae-37"> </a></td><td>Skin Darkening</td><td>presence</td><td/><td>Ungewöhnliche dunkle Veränderung der Haut</td></tr><tr><td style="white-space:nowrap">proctcae-37a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-37a-yn"> </a></td><td>Skin Darkening Presence</td><td/><td/><td>Hatten Sie eine UNGEWÖHNLICHE DUNKLE VERÄNDERUNG DER HAUT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-38<a name="mii-cs-pro-pro-ctcae-proctcae-ae-38"> </a></td><td>Stretch Marks</td><td>presence</td><td/><td>Dehnungsstreifen</td></tr><tr><td style="white-space:nowrap">proctcae-38a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-38a-yn"> </a></td><td>Stretch Marks Presence</td><td/><td/><td>Hatten Sie DEHNUNGSSTREIFEN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-39<a name="mii-cs-pro-pro-ctcae-proctcae-ae-39"> </a></td><td>Numbness and Tingling</td><td>sev int</td><td>6</td><td>Taubheit oder Kribbeln in Händen oder Füßen</td></tr><tr><td style="white-space:nowrap">proctcae-39a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-39a-sev"> </a></td><td>Numbness and Tingling Severity</td><td/><td/><td>Wie STARK hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-39b-int<a name="mii-cs-pro-pro-ctcae-proctcae-39b-int"> </a></td><td>Numbness and Tingling Interference</td><td/><td/><td>Wie sehr hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-40<a name="mii-cs-pro-pro-ctcae-proctcae-ae-40"> </a></td><td>Dizziness</td><td>sev int</td><td>6</td><td>Schwindel</td></tr><tr><td style="white-space:nowrap">proctcae-40a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-40a-sev"> </a></td><td>Dizziness Severity</td><td/><td/><td>Wie STARK war Ihr SCHWINDEL im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-40b-int<a name="mii-cs-pro-pro-ctcae-proctcae-40b-int"> </a></td><td>Dizziness Interference</td><td/><td/><td>Wie sehr hat SCHWINDEL Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-41<a name="mii-cs-pro-pro-ctcae-proctcae-ae-41"> </a></td><td>Blurred Vision</td><td>sev int</td><td>6</td><td>Verschwommenes Sehen</td></tr><tr><td style="white-space:nowrap">proctcae-41a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-41a-sev"> </a></td><td>Blurred Vision Severity</td><td/><td/><td>Wie STARK VERSCHWOMMEN haben Sie im SCHLIMMSTEN FALL GESEHEN?</td></tr><tr><td style="white-space:nowrap">proctcae-41b-int<a name="mii-cs-pro-pro-ctcae-proctcae-41b-int"> </a></td><td>Blurred Vision Interference</td><td/><td/><td>Wie sehr hat Sie VERSCHWOMMENES SEHEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-42<a name="mii-cs-pro-pro-ctcae-proctcae-ae-42"> </a></td><td>Flashing Lights</td><td>presence</td><td/><td>Blitze vor den Augen</td></tr><tr><td style="white-space:nowrap">proctcae-42a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-42a-yn"> </a></td><td>Flashing Lights Presence</td><td/><td/><td>Haben Sie BLITZE VOR DEN AUGEN gesehen?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-43<a name="mii-cs-pro-pro-ctcae-proctcae-ae-43"> </a></td><td>Visual Floaters</td><td>presence</td><td/><td>Schwimmende Punkte, Linien oder Mücken vor den Augen (Mouches volantes)</td></tr><tr><td style="white-space:nowrap">proctcae-43a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-43a-yn"> </a></td><td>Visual Floaters Presence</td><td/><td/><td>Sahen Sie SCHWIMMENDE PUNKTE, LINIEN ODER MÜCKEN VOR DEN AUGEN (MOUCHES VOLANTES)?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-44<a name="mii-cs-pro-pro-ctcae-proctcae-ae-44"> </a></td><td>Watery Eyes</td><td>sev int</td><td>6</td><td>Tränende Augen</td></tr><tr><td style="white-space:nowrap">proctcae-44a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-44a-sev"> </a></td><td>Watery Eyes Severity</td><td/><td/><td>Wie STARK hatten Sie TRÄNENDE AUGEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-44b-int<a name="mii-cs-pro-pro-ctcae-proctcae-44b-int"> </a></td><td>Watery Eyes Interference</td><td/><td/><td>Wie sehr haben TRÄNENDE AUGEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-45<a name="mii-cs-pro-pro-ctcae-proctcae-ae-45"> </a></td><td>Ringing in Ears</td><td>sev</td><td>2</td><td>Ohrgeräusche (z. B. Pfeifen in den Ohren)</td></tr><tr><td style="white-space:nowrap">proctcae-45a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-45a-sev"> </a></td><td>Ringing in Ears Severity</td><td/><td/><td>Wie STARK waren Ihre OHRGERÄUSCHE (Z. B. PFEIFEN IN DEN OHREN) im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-46<a name="mii-cs-pro-pro-ctcae-proctcae-ae-46"> </a></td><td>Concentration</td><td>sev int</td><td>6</td><td>Probleme sich zu konzentrieren</td></tr><tr><td style="white-space:nowrap">proctcae-46a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-46a-sev"> </a></td><td>Concentration Severity</td><td/><td/><td>Wie STARK waren Ihre PROBLEME SICH ZU KONZENTRIEREN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-46b-int<a name="mii-cs-pro-pro-ctcae-proctcae-46b-int"> </a></td><td>Concentration Interference</td><td/><td/><td>Wie sehr haben Ihre PROBLEME SICH ZU KONZENTRIEREN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-47<a name="mii-cs-pro-pro-ctcae-proctcae-ae-47"> </a></td><td>Memory</td><td>sev int</td><td>6</td><td>Probleme mit dem Gedächtnis (Vergesslichkeit)</td></tr><tr><td style="white-space:nowrap">proctcae-47a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-47a-sev"> </a></td><td>Memory Severity</td><td/><td/><td>Wie STARK waren Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-47b-int<a name="mii-cs-pro-pro-ctcae-proctcae-47b-int"> </a></td><td>Memory Interference</td><td/><td/><td>Wie sehr haben Sie Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-48<a name="mii-cs-pro-pro-ctcae-proctcae-ae-48"> </a></td><td>General Pain</td><td>frq sev int</td><td>7</td><td>Schmerzen</td></tr><tr><td style="white-space:nowrap">proctcae-48a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-48a-frq"> </a></td><td>General Pain Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie SCHMERZEN?</td></tr><tr><td style="white-space:nowrap">proctcae-48b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-48b-sev"> </a></td><td>General Pain Severity</td><td/><td/><td>Wie STARK waren Ihre SCHMERZEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-48c-int<a name="mii-cs-pro-pro-ctcae-proctcae-48c-int"> </a></td><td>General Pain Interference</td><td/><td/><td>Wie sehr haben SCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-49<a name="mii-cs-pro-pro-ctcae-proctcae-ae-49"> </a></td><td>Headache</td><td>frq sev int</td><td>7</td><td>Kopfschmerzen</td></tr><tr><td style="white-space:nowrap">proctcae-49a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-49a-frq"> </a></td><td>Headache Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie KOPFSCHMERZEN?</td></tr><tr><td style="white-space:nowrap">proctcae-49b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-49b-sev"> </a></td><td>Headache Severity</td><td/><td/><td>Wie STARK waren Ihre KOPFSCHMERZEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-49c-int<a name="mii-cs-pro-pro-ctcae-proctcae-49c-int"> </a></td><td>Headache Interference</td><td/><td/><td>Wie sehr haben KOPFSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-50<a name="mii-cs-pro-pro-ctcae-proctcae-ae-50"> </a></td><td>Muscle Pain</td><td>frq sev int</td><td>7</td><td>Muskelschmerzen</td></tr><tr><td style="white-space:nowrap">proctcae-50a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-50a-frq"> </a></td><td>Muscle Pain Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie MUSKELSCHMERZEN?</td></tr><tr><td style="white-space:nowrap">proctcae-50b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-50b-sev"> </a></td><td>Muscle Pain Severity</td><td/><td/><td>Wie STARK hatten Sie MUSKELSCHMERZEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-50c-int<a name="mii-cs-pro-pro-ctcae-proctcae-50c-int"> </a></td><td>Muscle Pain Interference</td><td/><td/><td>Wie sehr haben MUSKELSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-51<a name="mii-cs-pro-pro-ctcae-proctcae-ae-51"> </a></td><td>Joint Pain</td><td>frq sev int</td><td>7</td><td>Gelenkschmerzen (z. B. Ellenbogen, Knie, Schultern)</td></tr><tr><td style="white-space:nowrap">proctcae-51a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-51a-frq"> </a></td><td>Joint Pain Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN)?</td></tr><tr><td style="white-space:nowrap">proctcae-51b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-51b-sev"> </a></td><td>Joint Pain Severity</td><td/><td/><td>Wie STARK hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-51c-int<a name="mii-cs-pro-pro-ctcae-proctcae-51c-int"> </a></td><td>Joint Pain Interference</td><td/><td/><td>Wie sehr haben GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-52<a name="mii-cs-pro-pro-ctcae-proctcae-ae-52"> </a></td><td>Insomnia</td><td>sev int</td><td>6</td><td>Probleme beim Schlafen (wie z. B. Schwierigkeiten beim Einschlafen, Durchschlafen oder zu frühes Aufwachen)</td></tr><tr><td style="white-space:nowrap">proctcae-52a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-52a-sev"> </a></td><td>Insomnia Severity</td><td/><td/><td>Wie STARK waren Ihre PROBLEME BEIM SCHLAFEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-52b-int<a name="mii-cs-pro-pro-ctcae-proctcae-52b-int"> </a></td><td>Insomnia Interference</td><td/><td/><td>Wie sehr haben PROBLEME BEIM SCHLAFEN Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-53<a name="mii-cs-pro-pro-ctcae-proctcae-ae-53"> </a></td><td>Fatigue</td><td>sev int</td><td>6</td><td>Müdigkeit, Erschöpfung oder fehlende Energie</td></tr><tr><td style="white-space:nowrap">proctcae-53a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-53a-sev"> </a></td><td>Fatigue Severity</td><td/><td/><td>Wie STARK waren Ihre MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-53b-int<a name="mii-cs-pro-pro-ctcae-proctcae-53b-int"> </a></td><td>Fatigue Interference</td><td/><td/><td>Wie sehr haben MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-54<a name="mii-cs-pro-pro-ctcae-proctcae-ae-54"> </a></td><td>Anxiety</td><td>frq sev int</td><td>7</td><td>Angst</td></tr><tr><td style="white-space:nowrap">proctcae-54a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-54a-frq"> </a></td><td>Anxiety Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie ANGST?</td></tr><tr><td style="white-space:nowrap">proctcae-54b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-54b-sev"> </a></td><td>Anxiety Severity</td><td/><td/><td>Wie STARK war Ihre ANGST im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-54c-int<a name="mii-cs-pro-pro-ctcae-proctcae-54c-int"> </a></td><td>Anxiety Interference</td><td/><td/><td>Wie sehr hat ANGST Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-55<a name="mii-cs-pro-pro-ctcae-proctcae-ae-55"> </a></td><td>Discouraged</td><td>frq sev int</td><td>7</td><td>Mutlosigkeit (Gefühl, dass einen nichts aufmuntern kann)</td></tr><tr><td style="white-space:nowrap">proctcae-55a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-55a-frq"> </a></td><td>Discouraged Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE?</td></tr><tr><td style="white-space:nowrap">proctcae-55b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-55b-sev"> </a></td><td>Discouraged Severity</td><td/><td/><td>Wie STARK hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE, im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-55c-int<a name="mii-cs-pro-pro-ctcae-proctcae-55c-int"> </a></td><td>Discouraged Interference</td><td/><td/><td>Wie sehr hat Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-56<a name="mii-cs-pro-pro-ctcae-proctcae-ae-56"> </a></td><td>Sad</td><td>frq sev int</td><td>7</td><td>Traurigkeit</td></tr><tr><td style="white-space:nowrap">proctcae-56a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-56a-frq"> </a></td><td>Sad Frequency</td><td/><td/><td>Wie HÄUFIG waren Sie TRAURIG?</td></tr><tr><td style="white-space:nowrap">proctcae-56b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-56b-sev"> </a></td><td>Sad Severity</td><td/><td/><td>Wie STARK war Ihre TRAURIGKEIT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-56c-int<a name="mii-cs-pro-pro-ctcae-proctcae-56c-int"> </a></td><td>Sad Interference</td><td/><td/><td>Wie sehr hat Ihre TRAURIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-57<a name="mii-cs-pro-pro-ctcae-proctcae-ae-57"> </a></td><td>Irregular Periods</td><td>presence</td><td/><td>Unregelmäßige Regelblutung</td></tr><tr><td style="white-space:nowrap">proctcae-57a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-57a-yn"> </a></td><td>Irregular Periods Presence</td><td/><td/><td>Hatten Sie eine UNREGELMÄSSIGE REGELBLUTUNG?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-58<a name="mii-cs-pro-pro-ctcae-proctcae-ae-58"> </a></td><td>Missed Expected Menstrual Period</td><td>presence</td><td/><td>Ausbleiben einer erwarteten Regelblutung</td></tr><tr><td style="white-space:nowrap">proctcae-58a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-58a-yn"> </a></td><td>Missed Periods Presence</td><td/><td/><td>Ist bei Ihnen eine ERWARTETE REGELBLUTUNG ausgeblieben?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-59<a name="mii-cs-pro-pro-ctcae-proctcae-ae-59"> </a></td><td>Vaginal Discharge</td><td>int</td><td>3</td><td>Ungewöhnlicher Ausfluss der Scheide</td></tr><tr><td style="white-space:nowrap">proctcae-59a-int<a name="mii-cs-pro-pro-ctcae-proctcae-59a-int"> </a></td><td>Vaginal Discharge Interference</td><td/><td/><td>Hatten Sie einen UNGEWÖHNLICHEN AUSFLUSS DER SCHEIDE?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-60<a name="mii-cs-pro-pro-ctcae-proctcae-ae-60"> </a></td><td>Vaginal Dryness</td><td>sev</td><td>2</td><td>Scheidentrockenheit</td></tr><tr><td style="white-space:nowrap">proctcae-60a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-60a-sev"> </a></td><td>Vaginal Dryness Severity</td><td/><td/><td>Wie STARK war Ihre SCHEIDENTROCKENHEIT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-61<a name="mii-cs-pro-pro-ctcae-proctcae-ae-61"> </a></td><td>Painful Urination</td><td>sev</td><td>2</td><td>Schmerzen oder Brennen beim Wasserlassen</td></tr><tr><td style="white-space:nowrap">proctcae-61a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-61a-sev"> </a></td><td>Painful Urination Severity</td><td/><td/><td>Wie STARK waren Ihre SCHMERZEN ODER BRENNEN BEIM WASSERLASSEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-62<a name="mii-cs-pro-pro-ctcae-proctcae-ae-62"> </a></td><td>Urinary Urgency</td><td>frq int</td><td>5</td><td>Plötzlicher starker Drang zum Wasserlassen</td></tr><tr><td style="white-space:nowrap">proctcae-62a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-62a-frq"> </a></td><td>Urinary Urgency Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie einen PLÖTZLICHEN STARKEN DRANG ZUM WASSERLASSEN?</td></tr><tr><td style="white-space:nowrap">proctcae-62b-int<a name="mii-cs-pro-pro-ctcae-proctcae-62b-int"> </a></td><td>Urinary Urgency Interference</td><td/><td/><td>Wie sehr wurden Sie durch einen PLÖTZLICHEN STARKEN DRANG ZUM WASSERLASSEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-63<a name="mii-cs-pro-pro-ctcae-proctcae-ae-63"> </a></td><td>Urinary Frequency</td><td>frq int</td><td>5</td><td>Häufiges Wasserlassen</td></tr><tr><td style="white-space:nowrap">proctcae-63a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-63a-frq"> </a></td><td>Urinary Frequency Frequency</td><td/><td/><td>Mussten Sie HÄUFIGER WASSER LASSEN als üblich?</td></tr><tr><td style="white-space:nowrap">proctcae-63b-int<a name="mii-cs-pro-pro-ctcae-proctcae-63b-int"> </a></td><td>Urinary Frequency Interference</td><td/><td/><td>Wie sehr hat Sie HÄUFIGES WASSERLASSEN in Ihren täglichen Aktivitäten GESTÖRT?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-64<a name="mii-cs-pro-pro-ctcae-proctcae-ae-64"> </a></td><td>Urine Color Change</td><td>presence</td><td/><td>Ungewöhnliche Veränderung der Urinfarbe</td></tr><tr><td style="white-space:nowrap">proctcae-64a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-64a-yn"> </a></td><td>Urine Color Change Presence</td><td/><td/><td>Hatten Sie eine UNGEWÖHNLICHE VERÄNDERUNG DER URINFARBE?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-65<a name="mii-cs-pro-pro-ctcae-proctcae-ae-65"> </a></td><td>Urinary Incontinence</td><td>frq int</td><td>5</td><td>Urin nicht halten können (Urininkontinenz)</td></tr><tr><td style="white-space:nowrap">proctcae-65a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-65a-frq"> </a></td><td>Urinary Incontinence Frequency</td><td/><td/><td>Wie HÄUFIG konnten Sie Ihren URIN NICHT HALTEN (URININKONTINENZ)?</td></tr><tr><td style="white-space:nowrap">proctcae-65b-int<a name="mii-cs-pro-pro-ctcae-proctcae-65b-int"> </a></td><td>Urinary Incontinence Interference</td><td/><td/><td>Wie sehr wurden Sie in Ihren täglichen Aktivitäten GESTÖRT, weil Sie Ihren URIN NICHT HALTEN KONNTEN (URININKONTINENZ)?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-66<a name="mii-cs-pro-pro-ctcae-proctcae-ae-66"> </a></td><td>Achieve and Maintain Erection</td><td>sev</td><td>2</td><td>Probleme eine Erektion zu bekommen oder zu halten</td></tr><tr><td style="white-space:nowrap">proctcae-66a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-66a-sev"> </a></td><td>Erection Difficulty Severity</td><td/><td/><td>Wie STARK waren Ihre PROBLEME EINE EREKTION ZU BEKOMMEN ODER ZU HALTEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-67<a name="mii-cs-pro-pro-ctcae-proctcae-ae-67"> </a></td><td>Ejaculation</td><td>frq</td><td>1</td><td>Probleme einen Samenerguss zu bekommen</td></tr><tr><td style="white-space:nowrap">proctcae-67a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-67a-frq"> </a></td><td>Ejaculation Problems Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie PROBLEME EINEN SAMENERGUSS ZU BEKOMMEN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-68<a name="mii-cs-pro-pro-ctcae-proctcae-ae-68"> </a></td><td>Decreased Libido</td><td>sev</td><td>2</td><td>Weniger Interesse an Sexualität</td></tr><tr><td style="white-space:nowrap">proctcae-68a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-68a-sev"> </a></td><td>Decreased Sexual Interest Severity</td><td/><td/><td>Wie STARK vermindert war Ihr INTERESSE AN SEXUALITÄT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-69<a name="mii-cs-pro-pro-ctcae-proctcae-ae-69"> </a></td><td>Delayed Orgasm</td><td>presence</td><td/><td>Es dauert zu lange bis man einen Orgasmus oder Höhepunkt bekommen kann</td></tr><tr><td style="white-space:nowrap">proctcae-69a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-69a-yn"> </a></td><td>Delayed Orgasm Presence</td><td/><td/><td>Hatten Sie das Gefühl, dass es ZU LANGE DAUERT BIS SIE EINEN ORGASMUS ODER HÖHEPUNKT BEKOMMEN KÖNNEN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-70<a name="mii-cs-pro-pro-ctcae-proctcae-ae-70"> </a></td><td>Unable to Have Orgasm</td><td>presence</td><td/><td>Nicht in der Lage sein, einen Orgasmus oder Höhepunkt zu bekommen</td></tr><tr><td style="white-space:nowrap">proctcae-70a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-70a-yn"> </a></td><td>Unable to Have Orgasm Presence</td><td/><td/><td>Waren Sie nicht IN DER LAGE EINEN ORGASMUS ODER HÖHEPUNKT ZU BEKOMMEN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-71<a name="mii-cs-pro-pro-ctcae-proctcae-ae-71"> </a></td><td>Pain with Sexual Intercourse</td><td>sev</td><td>2</td><td>Schmerzen der Scheide beim Geschlechtsverkehr</td></tr><tr><td style="white-space:nowrap">proctcae-71a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-71a-sev"> </a></td><td>Pain During Vaginal Sex Severity</td><td/><td/><td>Wie STARK waren Ihre SCHMERZEN DER SCHEIDE BEIM GESCHLECHTSVERKEHR im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-72<a name="mii-cs-pro-pro-ctcae-proctcae-ae-72"> </a></td><td>Breast Swelling and Tenderness</td><td>sev</td><td>2</td><td>Schwellung oder Druckempfindlichkeit der Brust</td></tr><tr><td style="white-space:nowrap">proctcae-72a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-72a-sev"> </a></td><td>Breast Swelling and Tenderness Severity</td><td/><td/><td>Wie STARK hatten Sie eine SCHWELLUNG ODER DRUCKEMPFINDLICHKEIT DER BRUST im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-73<a name="mii-cs-pro-pro-ctcae-proctcae-ae-73"> </a></td><td>Bruising</td><td>presence</td><td/><td>Leicht blaue Flecken bekommen</td></tr><tr><td style="white-space:nowrap">proctcae-73a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-73a-yn"> </a></td><td>Bruising Presence</td><td/><td/><td>Haben Sie LEICHT BLAUE FLECKEN BEKOMMEN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-74<a name="mii-cs-pro-pro-ctcae-proctcae-ae-74"> </a></td><td>Chills</td><td>frq sev</td><td>4</td><td>Schüttelfrost</td></tr><tr><td style="white-space:nowrap">proctcae-74a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-74a-frq"> </a></td><td>Chills Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie SCHÜTTELFROST?</td></tr><tr><td style="white-space:nowrap">proctcae-74b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-74b-sev"> </a></td><td>Chills Severity</td><td/><td/><td>Wie STARK war Ihr SCHÜTTELFROST im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-75<a name="mii-cs-pro-pro-ctcae-proctcae-ae-75"> </a></td><td>Increased Sweating</td><td>frq sev</td><td>4</td><td>Unerwartetes oder starkes Schwitzen während des Tages oder der Nacht (nicht in Verbindung mit Hitzewallungen)</td></tr><tr><td style="white-space:nowrap">proctcae-75a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-75a-frq"> </a></td><td>Increased Sweating Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie UNERWARTETES ODER STARKES SCHWITZEN WÄHREND DES TAGES ODER DER NACHT?</td></tr><tr><td style="white-space:nowrap">proctcae-75b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-75b-sev"> </a></td><td>Increased Sweating Severity</td><td/><td/><td>Wie STARK hatten Sie UNERWARTETES ODER STARKES SCHWITZEN WÄHREND DES TAGES ODER DER NACHT im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-76<a name="mii-cs-pro-pro-ctcae-proctcae-ae-76"> </a></td><td>Decreased Sweating</td><td>presence</td><td/><td>Vermindertes Schwitzen</td></tr><tr><td style="white-space:nowrap">proctcae-76a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-76a-yn"> </a></td><td>Decreased Sweating Presence</td><td/><td/><td>Konnten Sie UNERWARTET WENIGER SCHWITZEN?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-77<a name="mii-cs-pro-pro-ctcae-proctcae-ae-77"> </a></td><td>Hot Flashes</td><td>frq sev</td><td>4</td><td>Hitzewallungen</td></tr><tr><td style="white-space:nowrap">proctcae-77a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-77a-frq"> </a></td><td>Hot Flashes Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie HITZEWALLUNGEN?</td></tr><tr><td style="white-space:nowrap">proctcae-77b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-77b-sev"> </a></td><td>Hot Flashes Severity</td><td/><td/><td>Wie STARK waren Ihre HITZEWALLUNGEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-78<a name="mii-cs-pro-pro-ctcae-proctcae-ae-78"> </a></td><td>Nosebleed</td><td>frq sev</td><td>4</td><td>Nasenbluten</td></tr><tr><td style="white-space:nowrap">proctcae-78a-frq<a name="mii-cs-pro-pro-ctcae-proctcae-78a-frq"> </a></td><td>Nosebleed Frequency</td><td/><td/><td>Wie HÄUFIG hatten Sie NASENBLUTEN?</td></tr><tr><td style="white-space:nowrap">proctcae-78b-sev<a name="mii-cs-pro-pro-ctcae-proctcae-78b-sev"> </a></td><td>Nosebleed Severity</td><td/><td/><td>Wie STARK war Ihr NASENBLUTEN im SCHLIMMSTEN FALL?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-79<a name="mii-cs-pro-pro-ctcae-proctcae-ae-79"> </a></td><td>Pain and Swelling at Injection Site</td><td>presence</td><td/><td>Schmerzen, Schwellung oder Rötung der Haut an einer Einstichstelle von einer Infusion oder Spritze</td></tr><tr><td style="white-space:nowrap">proctcae-79a-yn<a name="mii-cs-pro-pro-ctcae-proctcae-79a-yn"> </a></td><td>Injection Site Reaction Presence</td><td/><td/><td>Hatten Sie SCHMERZEN, EINE SCHWELLUNG ODER RÖTUNG DER HAUT AN EINER EINSTICHSTELLE VON EINER INFUSION ODER SPRITZE?</td></tr><tr><td style="white-space:nowrap">proctcae-ae-80<a name="mii-cs-pro-pro-ctcae-proctcae-ae-80"> </a></td><td>Body Odor</td><td>sev</td><td>2</td><td>Körpergeruch</td></tr><tr><td style="white-space:nowrap">proctcae-80a-sev<a name="mii-cs-pro-pro-ctcae-proctcae-80a-sev"> </a></td><td>Body Odor Severity</td><td/><td/><td>Wie STARK war Ihr KÖRPERGERUCH im SCHLIMMSTEN FALL?</td></tr></table></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"/>
+  <version value="2026.4.1"/>
+  <name value="MII_CS_PRO_PRO_CTCAE"/>
+  <title value="MII CS PRO PRO-CTCAE Item Library"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-23T11:58:37+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="224"/>
+  <property>
+    <code value="attributes"/>
+    <description value="Which item attributes apply to this AE (frq, sev, int, presence)"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="rank"/>
+    <description value="Composite grading rank (1=frq, 2=sev, 3=int, 4=frq+sev, 5=frq+int, 6=sev+int, 7=frq+sev+int)"/>
+    <type value="integer"/>
+  </property>
+  <concept>
+    <code value="proctcae-frequency-0"/>
+    <display value="Never"/>
+    <designation>
+      <language value="de"/>
+      <value value="Nie"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-frequency-1"/>
+    <display value="Rarely"/>
+    <designation>
+      <language value="de"/>
+      <value value="Selten"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-frequency-2"/>
+    <display value="Occasionally"/>
+    <designation>
+      <language value="de"/>
+      <value value="Gelegentlich"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-frequency-3"/>
+    <display value="Frequently"/>
+    <designation>
+      <language value="de"/>
+      <value value="Häufig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-frequency-4"/>
+    <display value="Almost constantly"/>
+    <designation>
+      <language value="de"/>
+      <value value="Fast immer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-severity-0"/>
+    <display value="None"/>
+    <designation>
+      <language value="de"/>
+      <value value="Gar nicht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-severity-1"/>
+    <display value="Mild"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ein wenig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-severity-2"/>
+    <display value="Moderate"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mäßig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-severity-3"/>
+    <display value="Severe"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ziemlich"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-severity-4"/>
+    <display value="Very severe"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sehr"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-interference-0"/>
+    <display value="Not at all"/>
+    <designation>
+      <language value="de"/>
+      <value value="Gar nicht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-interference-1"/>
+    <display value="A little bit"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ein wenig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-interference-2"/>
+    <display value="Somewhat"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mäßig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-interference-3"/>
+    <display value="Quite a bit"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ziemlich"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-interference-4"/>
+    <display value="Very much"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sehr"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-presence-0"/>
+    <display value="No"/>
+    <designation>
+      <language value="de"/>
+      <value value="Nein"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-presence-1"/>
+    <display value="Yes"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ja"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-optout-not-applicable"/>
+    <display value="Not applicable"/>
+    <designation>
+      <language value="de"/>
+      <value value="Trifft nicht auf mich zu"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-optout-not-sexually-active"/>
+    <display value="Not sexually active"/>
+    <designation>
+      <language value="de"/>
+      <value value="Nicht sexuell aktiv"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-optout-prefer-not-to-answer"/>
+    <display value="Prefer not to answer"/>
+    <designation>
+      <language value="de"/>
+      <value value="Möchte nicht antworten"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-01"/>
+    <display value="Dry Mouth"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mundtrockenheit"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-01a-sev"/>
+    <display value="Dry Mouth Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre MUNDTROCKENHEIT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-02"/>
+    <display value="Difficulty Swallowing"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schwierigkeiten beim Schlucken"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-02a-sev"/>
+    <display value="Difficulty Swallowing Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre SCHWIERIGKEITEN BEIM SCHLUCKEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-03"/>
+    <display value="Mouth or Throat Sores"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wunde oder offene Stellen in Mund oder Hals"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-03a-sev"/>
+    <display value="Mouth or Throat Sores Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie WUNDE ODER OFFENE STELLEN IN MUND ODER HALS im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-03b-int"/>
+    <display value="Mouth or Throat Sores Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben WUNDE ODER OFFENE STELLEN IN MUND ODER HALS Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-04"/>
+    <display value="Cracking at Corners of Mouth"/>
+    <designation>
+      <language value="de"/>
+      <value value="Rissige Mundwinkel"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-04a-sev"/>
+    <display value="Cracking at Corners of Mouth Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie RISSIGE MUNDWINKEL im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-05"/>
+    <display value="Voice Quality Changes"/>
+    <designation>
+      <language value="de"/>
+      <value value="Veränderung der Stimme"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-05a-yn"/>
+    <display value="Voice Quality Changes Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie irgendeine VERÄNDERUNG DER STIMME?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-06"/>
+    <display value="Hoarseness"/>
+    <designation>
+      <language value="de"/>
+      <value value="Heiserkeit"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-06a-sev"/>
+    <display value="Hoarseness Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre HEISERKEIT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-07"/>
+    <display value="Taste Changes"/>
+    <designation>
+      <language value="de"/>
+      <value value="Geschmacksveränderungen beim Essen oder Trinken"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-07a-sev"/>
+    <display value="Taste Changes Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre GESCHMACKSVERÄNDERUNGEN BEIM ESSEN ODER TRINKEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-08"/>
+    <display value="Decreased Appetite"/>
+    <designation>
+      <language value="de"/>
+      <value value="Appetitmangel"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-08a-sev"/>
+    <display value="Decreased Appetite Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr APPETITMANGEL im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-08b-int"/>
+    <display value="Decreased Appetite Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat Ihr APPETITMANGEL Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-09"/>
+    <display value="Nausea"/>
+    <designation>
+      <language value="de"/>
+      <value value="Übelkeit"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-09a-frq"/>
+    <display value="Nausea Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie ÜBELKEIT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-09b-sev"/>
+    <display value="Nausea Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre ÜBELKEIT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-10"/>
+    <display value="Vomiting"/>
+    <designation>
+      <language value="de"/>
+      <value value="Erbrechen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-10a-frq"/>
+    <display value="Vomiting Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG mussten Sie ERBRECHEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-10b-sev"/>
+    <display value="Vomiting Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr ERBRECHEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-11"/>
+    <display value="Heartburn"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sodbrennen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-11a-frq"/>
+    <display value="Heartburn Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie SODBRENNEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-11b-sev"/>
+    <display value="Heartburn Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr SODBRENNEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-12"/>
+    <display value="Increased Flatulence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Winde lassen (Flatulenz)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-12a-yn"/>
+    <display value="Increased Flatulence Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mussten Sie HÄUFIGER WINDE LASSEN (FLATULENZ)?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-13"/>
+    <display value="Bloating"/>
+    <designation>
+      <language value="de"/>
+      <value value="Einen geblähten Bauch"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-13a-frq"/>
+    <display value="Bloating Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie EINEN GEBLÄHTEN BAUCH?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-13b-sev"/>
+    <display value="Bloating Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK GEBLÄHT war Ihr BAUCH im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-14"/>
+    <display value="Hiccups"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schluckauf"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-14a-frq"/>
+    <display value="Hiccups Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie SCHLUCKAUF?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-14b-sev"/>
+    <display value="Hiccups Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr SCHLUCKAUF im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-15"/>
+    <display value="Constipation"/>
+    <designation>
+      <language value="de"/>
+      <value value="Verstopfung"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-15a-sev"/>
+    <display value="Constipation Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre VERSTOPFUNG im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-16"/>
+    <display value="Diarrhea"/>
+    <designation>
+      <language value="de"/>
+      <value value="Durchfall"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-16a-frq"/>
+    <display value="Diarrhea Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie DURCHFALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-17"/>
+    <display value="Pain in Abdomen"/>
+    <designation>
+      <language value="de"/>
+      <value value="Bauchschmerzen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-17a-frq"/>
+    <display value="Pain in Abdomen Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie BAUCHSCHMERZEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-17b-sev"/>
+    <display value="Pain in Abdomen Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre BAUCHSCHMERZEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-17c-int"/>
+    <display value="Pain in Abdomen Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben BAUCHSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-18"/>
+    <display value="Fecal Incontinence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Stuhlgang nicht kontrollieren oder halten können (Stuhlinkontinenz)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-18a-frq"/>
+    <display value="Fecal Incontinence Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG konnten Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-18b-int"/>
+    <display value="Fecal Incontinence Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr wurden Sie in Ihren täglichen Aktivitäten GESTÖRT, weil Sie Ihren STUHLGANG NICHT KONTROLLIEREN ODER HALTEN konnten?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-19"/>
+    <display value="Shortness of Breath"/>
+    <designation>
+      <language value="de"/>
+      <value value="Kurzatmigkeit"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-19a-sev"/>
+    <display value="Shortness of Breath Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre KURZATMIGKEIT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-19b-int"/>
+    <display value="Shortness of Breath Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat KURZATMIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-20"/>
+    <display value="Cough"/>
+    <designation>
+      <language value="de"/>
+      <value value="Husten"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-20a-sev"/>
+    <display value="Cough Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr HUSTEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-20b-int"/>
+    <display value="Cough Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat HUSTEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-21"/>
+    <display value="Wheezing"/>
+    <designation>
+      <language value="de"/>
+      <value value="Giemen (pfeifendes Atemgeräusch) der Lunge"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-21a-sev"/>
+    <display value="Wheezing Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie ein GIEMEN (PFEIFENDES ATEMGERÄUSCH) DER LUNGE im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-22"/>
+    <display value="Arm or Leg Swelling"/>
+    <designation>
+      <language value="de"/>
+      <value value="Geschwollene Arme oder Beine"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-22a-frq"/>
+    <display value="Arm or Leg Swelling Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie GESCHWOLLENE ARME ODER BEINE?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-22b-sev"/>
+    <display value="Arm or Leg Swelling Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK GESCHWOLLEN waren Ihre ARME ODER BEINE im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-22c-int"/>
+    <display value="Arm or Leg Swelling Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben GESCHWOLLENE ARME ODER BEINE Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-23"/>
+    <display value="Pounding or Racing Heartbeat"/>
+    <designation>
+      <language value="de"/>
+      <value value="Herzklopfen, Herzrasen oder unregelmäßiger Puls"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-23a-frq"/>
+    <display value="Pounding or Racing Heartbeat Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie HERZKLOPFEN, HERZRASEN ODER EINEN UNREGELMÄSSIGEN PULS?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-23b-sev"/>
+    <display value="Pounding or Racing Heartbeat Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihr HERZKLOPFEN, HERZRASEN ODER UNREGELMÄSSIGER PULS im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-24"/>
+    <display value="Rash"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hautausschlag"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-24a-yn"/>
+    <display value="Rash Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie einen HAUTAUSSCHLAG?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-25"/>
+    <display value="Skin Dryness"/>
+    <designation>
+      <language value="de"/>
+      <value value="Trockene Haut"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-25a-sev"/>
+    <display value="Skin Dryness Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie TROCKEN war Ihre Haut im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-26"/>
+    <display value="Acne"/>
+    <designation>
+      <language value="de"/>
+      <value value="Akne oder Pickel im Gesicht oder auf dem Brustkorb"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-26a-sev"/>
+    <display value="Acne Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK ausgeprägt hatten Sie AKNE ODER PICKEL IM GESICHT ODER AUF DEM BRUSTKORB im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-27"/>
+    <display value="Hair Loss"/>
+    <designation>
+      <language value="de"/>
+      <value value="Haarausfall"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-27a-int"/>
+    <display value="Hair Loss Amount"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie HAARAUSFALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-28"/>
+    <display value="Itching"/>
+    <designation>
+      <language value="de"/>
+      <value value="Juckreiz"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-28a-sev"/>
+    <display value="Itching Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war IHR JUCKREIZ im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-29"/>
+    <display value="Hives"/>
+    <designation>
+      <language value="de"/>
+      <value value="Nesselfieber (eine juckende, rote Hautschwellung)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-29a-yn"/>
+    <display value="Hives Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie NESSELFIEBER (EINE JUCKENDE, ROTE HAUTSCHWELLUNG)?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-30"/>
+    <display value="Hand-Foot Syndrome"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hand-Fuss-Syndrom (ein Hautausschlag der Hände oder Füße, der Brennen, Abschälen der Haut, Rötung oder Schmerzen machen kann)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-30a-sev"/>
+    <display value="Hand-Foot Syndrome Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr HAND-FUSS-SYNDROM im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-31"/>
+    <display value="Nail Loss"/>
+    <designation>
+      <language value="de"/>
+      <value value="Verlust von Finger- oder Fußnägeln"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-31a-yn"/>
+    <display value="Nail Loss Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sind Ihnen FINGER- ODER FUSSNÄGEL AUSGEFALLEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-32"/>
+    <display value="Nail Ridging"/>
+    <designation>
+      <language value="de"/>
+      <value value="Furchen oder Unebenheiten der Finger- oder Fußnägel"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-32a-yn"/>
+    <display value="Nail Ridging Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie FURCHEN ODER UNEBENHEITEN DER FINGER- ODER FUSSNÄGEL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-33"/>
+    <display value="Nail Discoloration"/>
+    <designation>
+      <language value="de"/>
+      <value value="Veränderungen der Farbe von Finger- oder Fußnägeln"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-33a-yn"/>
+    <display value="Nail Discoloration Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie VERÄNDERUNGEN DER FARBE VON FINGER- ODER FUSSNÄGELN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-34"/>
+    <display value="Sensitivity to Sunlight"/>
+    <designation>
+      <language value="de"/>
+      <value value="Erhöhte Sonnenlichtempfindlichkeit der Haut"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-34a-yn"/>
+    <display value="Sensitivity to Sunlight Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie eine ERHÖHTE SONNENLICHTEMPFINDLICHKEIT DER HAUT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-35"/>
+    <display value="Bed Sores"/>
+    <designation>
+      <language value="de"/>
+      <value value="Druckstellen (Dekubitus)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-35a-yn"/>
+    <display value="Bed Sores Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie DRUCKSTELLEN (DEKUBITUS)?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-36"/>
+    <display value="Radiation Skin Reaction"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hautverbrennungen nach einer Bestrahlung"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-36a-sev"/>
+    <display value="Radiation Skin Reaction Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK ausgeprägt waren Ihre HAUTVERBRENNUNGEN NACH EINER BESTRAHLUNG im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-37"/>
+    <display value="Skin Darkening"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ungewöhnliche dunkle Veränderung der Haut"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-37a-yn"/>
+    <display value="Skin Darkening Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie eine UNGEWÖHNLICHE DUNKLE VERÄNDERUNG DER HAUT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-38"/>
+    <display value="Stretch Marks"/>
+    <designation>
+      <language value="de"/>
+      <value value="Dehnungsstreifen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-38a-yn"/>
+    <display value="Stretch Marks Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie DEHNUNGSSTREIFEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-39"/>
+    <display value="Numbness and Tingling"/>
+    <designation>
+      <language value="de"/>
+      <value value="Taubheit oder Kribbeln in Händen oder Füßen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-39a-sev"/>
+    <display value="Numbness and Tingling Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-39b-int"/>
+    <display value="Numbness and Tingling Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-40"/>
+    <display value="Dizziness"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schwindel"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-40a-sev"/>
+    <display value="Dizziness Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr SCHWINDEL im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-40b-int"/>
+    <display value="Dizziness Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat SCHWINDEL Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-41"/>
+    <display value="Blurred Vision"/>
+    <designation>
+      <language value="de"/>
+      <value value="Verschwommenes Sehen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-41a-sev"/>
+    <display value="Blurred Vision Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK VERSCHWOMMEN haben Sie im SCHLIMMSTEN FALL GESEHEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-41b-int"/>
+    <display value="Blurred Vision Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat Sie VERSCHWOMMENES SEHEN in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-42"/>
+    <display value="Flashing Lights"/>
+    <designation>
+      <language value="de"/>
+      <value value="Blitze vor den Augen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-42a-yn"/>
+    <display value="Flashing Lights Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Haben Sie BLITZE VOR DEN AUGEN gesehen?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-43"/>
+    <display value="Visual Floaters"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schwimmende Punkte, Linien oder Mücken vor den Augen (Mouches volantes)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-43a-yn"/>
+    <display value="Visual Floaters Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sahen Sie SCHWIMMENDE PUNKTE, LINIEN ODER MÜCKEN VOR DEN AUGEN (MOUCHES VOLANTES)?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-44"/>
+    <display value="Watery Eyes"/>
+    <designation>
+      <language value="de"/>
+      <value value="Tränende Augen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-44a-sev"/>
+    <display value="Watery Eyes Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie TRÄNENDE AUGEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-44b-int"/>
+    <display value="Watery Eyes Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben TRÄNENDE AUGEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-45"/>
+    <display value="Ringing in Ears"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ohrgeräusche (z. B. Pfeifen in den Ohren)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-45a-sev"/>
+    <display value="Ringing in Ears Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre OHRGERÄUSCHE (Z. B. PFEIFEN IN DEN OHREN) im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-46"/>
+    <display value="Concentration"/>
+    <designation>
+      <language value="de"/>
+      <value value="Probleme sich zu konzentrieren"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-46a-sev"/>
+    <display value="Concentration Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre PROBLEME SICH ZU KONZENTRIEREN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-46b-int"/>
+    <display value="Concentration Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben Ihre PROBLEME SICH ZU KONZENTRIEREN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-47"/>
+    <display value="Memory"/>
+    <designation>
+      <language value="de"/>
+      <value value="Probleme mit dem Gedächtnis (Vergesslichkeit)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-47a-sev"/>
+    <display value="Memory Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-47b-int"/>
+    <display value="Memory Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben Sie Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-48"/>
+    <display value="General Pain"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schmerzen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-48a-frq"/>
+    <display value="General Pain Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie SCHMERZEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-48b-sev"/>
+    <display value="General Pain Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre SCHMERZEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-48c-int"/>
+    <display value="General Pain Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben SCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-49"/>
+    <display value="Headache"/>
+    <designation>
+      <language value="de"/>
+      <value value="Kopfschmerzen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-49a-frq"/>
+    <display value="Headache Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie KOPFSCHMERZEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-49b-sev"/>
+    <display value="Headache Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre KOPFSCHMERZEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-49c-int"/>
+    <display value="Headache Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben KOPFSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-50"/>
+    <display value="Muscle Pain"/>
+    <designation>
+      <language value="de"/>
+      <value value="Muskelschmerzen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-50a-frq"/>
+    <display value="Muscle Pain Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie MUSKELSCHMERZEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-50b-sev"/>
+    <display value="Muscle Pain Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie MUSKELSCHMERZEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-50c-int"/>
+    <display value="Muscle Pain Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben MUSKELSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-51"/>
+    <display value="Joint Pain"/>
+    <designation>
+      <language value="de"/>
+      <value value="Gelenkschmerzen (z. B. Ellenbogen, Knie, Schultern)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-51a-frq"/>
+    <display value="Joint Pain Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN)?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-51b-sev"/>
+    <display value="Joint Pain Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-51c-int"/>
+    <display value="Joint Pain Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-52"/>
+    <display value="Insomnia"/>
+    <designation>
+      <language value="de"/>
+      <value value="Probleme beim Schlafen (wie z. B. Schwierigkeiten beim Einschlafen, Durchschlafen oder zu frühes Aufwachen)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-52a-sev"/>
+    <display value="Insomnia Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre PROBLEME BEIM SCHLAFEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-52b-int"/>
+    <display value="Insomnia Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben PROBLEME BEIM SCHLAFEN Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-53"/>
+    <display value="Fatigue"/>
+    <designation>
+      <language value="de"/>
+      <value value="Müdigkeit, Erschöpfung oder fehlende Energie"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-53a-sev"/>
+    <display value="Fatigue Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-53b-int"/>
+    <display value="Fatigue Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr haben MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-54"/>
+    <display value="Anxiety"/>
+    <designation>
+      <language value="de"/>
+      <value value="Angst"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-54a-frq"/>
+    <display value="Anxiety Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie ANGST?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-54b-sev"/>
+    <display value="Anxiety Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre ANGST im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-54c-int"/>
+    <display value="Anxiety Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat ANGST Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-55"/>
+    <display value="Discouraged"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mutlosigkeit (Gefühl, dass einen nichts aufmuntern kann)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-55a-frq"/>
+    <display value="Discouraged Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-55b-sev"/>
+    <display value="Discouraged Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE, im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-55c-int"/>
+    <display value="Discouraged Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat Sie das GEFÜHL, DASS SIE NICHTS AUFMUNTERN KONNTE in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-56"/>
+    <display value="Sad"/>
+    <designation>
+      <language value="de"/>
+      <value value="Traurigkeit"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-56a-frq"/>
+    <display value="Sad Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG waren Sie TRAURIG?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-56b-sev"/>
+    <display value="Sad Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre TRAURIGKEIT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-56c-int"/>
+    <display value="Sad Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat Ihre TRAURIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-57"/>
+    <display value="Irregular Periods"/>
+    <designation>
+      <language value="de"/>
+      <value value="Unregelmäßige Regelblutung"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-57a-yn"/>
+    <display value="Irregular Periods Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie eine UNREGELMÄSSIGE REGELBLUTUNG?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-58"/>
+    <display value="Missed Expected Menstrual Period"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ausbleiben einer erwarteten Regelblutung"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-58a-yn"/>
+    <display value="Missed Periods Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ist bei Ihnen eine ERWARTETE REGELBLUTUNG ausgeblieben?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-59"/>
+    <display value="Vaginal Discharge"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ungewöhnlicher Ausfluss der Scheide"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-59a-int"/>
+    <display value="Vaginal Discharge Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie einen UNGEWÖHNLICHEN AUSFLUSS DER SCHEIDE?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-60"/>
+    <display value="Vaginal Dryness"/>
+    <designation>
+      <language value="de"/>
+      <value value="Scheidentrockenheit"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-60a-sev"/>
+    <display value="Vaginal Dryness Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihre SCHEIDENTROCKENHEIT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-61"/>
+    <display value="Painful Urination"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schmerzen oder Brennen beim Wasserlassen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-61a-sev"/>
+    <display value="Painful Urination Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre SCHMERZEN ODER BRENNEN BEIM WASSERLASSEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-62"/>
+    <display value="Urinary Urgency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Plötzlicher starker Drang zum Wasserlassen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-62a-frq"/>
+    <display value="Urinary Urgency Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie einen PLÖTZLICHEN STARKEN DRANG ZUM WASSERLASSEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-62b-int"/>
+    <display value="Urinary Urgency Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr wurden Sie durch einen PLÖTZLICHEN STARKEN DRANG ZUM WASSERLASSEN in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-63"/>
+    <display value="Urinary Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Häufiges Wasserlassen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-63a-frq"/>
+    <display value="Urinary Frequency Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mussten Sie HÄUFIGER WASSER LASSEN als üblich?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-63b-int"/>
+    <display value="Urinary Frequency Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr hat Sie HÄUFIGES WASSERLASSEN in Ihren täglichen Aktivitäten GESTÖRT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-64"/>
+    <display value="Urine Color Change"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ungewöhnliche Veränderung der Urinfarbe"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-64a-yn"/>
+    <display value="Urine Color Change Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie eine UNGEWÖHNLICHE VERÄNDERUNG DER URINFARBE?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-65"/>
+    <display value="Urinary Incontinence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Urin nicht halten können (Urininkontinenz)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq int"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-65a-frq"/>
+    <display value="Urinary Incontinence Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG konnten Sie Ihren URIN NICHT HALTEN (URININKONTINENZ)?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-65b-int"/>
+    <display value="Urinary Incontinence Interference"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie sehr wurden Sie in Ihren täglichen Aktivitäten GESTÖRT, weil Sie Ihren URIN NICHT HALTEN KONNTEN (URININKONTINENZ)?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-66"/>
+    <display value="Achieve and Maintain Erection"/>
+    <designation>
+      <language value="de"/>
+      <value value="Probleme eine Erektion zu bekommen oder zu halten"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-66a-sev"/>
+    <display value="Erection Difficulty Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre PROBLEME EINE EREKTION ZU BEKOMMEN ODER ZU HALTEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-67"/>
+    <display value="Ejaculation"/>
+    <designation>
+      <language value="de"/>
+      <value value="Probleme einen Samenerguss zu bekommen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-67a-frq"/>
+    <display value="Ejaculation Problems Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie PROBLEME EINEN SAMENERGUSS ZU BEKOMMEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-68"/>
+    <display value="Decreased Libido"/>
+    <designation>
+      <language value="de"/>
+      <value value="Weniger Interesse an Sexualität"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-68a-sev"/>
+    <display value="Decreased Sexual Interest Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK vermindert war Ihr INTERESSE AN SEXUALITÄT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-69"/>
+    <display value="Delayed Orgasm"/>
+    <designation>
+      <language value="de"/>
+      <value value="Es dauert zu lange bis man einen Orgasmus oder Höhepunkt bekommen kann"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-69a-yn"/>
+    <display value="Delayed Orgasm Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie das Gefühl, dass es ZU LANGE DAUERT BIS SIE EINEN ORGASMUS ODER HÖHEPUNKT BEKOMMEN KÖNNEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-70"/>
+    <display value="Unable to Have Orgasm"/>
+    <designation>
+      <language value="de"/>
+      <value value="Nicht in der Lage sein, einen Orgasmus oder Höhepunkt zu bekommen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-70a-yn"/>
+    <display value="Unable to Have Orgasm Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Waren Sie nicht IN DER LAGE EINEN ORGASMUS ODER HÖHEPUNKT ZU BEKOMMEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-71"/>
+    <display value="Pain with Sexual Intercourse"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schmerzen der Scheide beim Geschlechtsverkehr"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-71a-sev"/>
+    <display value="Pain During Vaginal Sex Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre SCHMERZEN DER SCHEIDE BEIM GESCHLECHTSVERKEHR im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-72"/>
+    <display value="Breast Swelling and Tenderness"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schwellung oder Druckempfindlichkeit der Brust"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-72a-sev"/>
+    <display value="Breast Swelling and Tenderness Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie eine SCHWELLUNG ODER DRUCKEMPFINDLICHKEIT DER BRUST im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-73"/>
+    <display value="Bruising"/>
+    <designation>
+      <language value="de"/>
+      <value value="Leicht blaue Flecken bekommen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-73a-yn"/>
+    <display value="Bruising Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Haben Sie LEICHT BLAUE FLECKEN BEKOMMEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-74"/>
+    <display value="Chills"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schüttelfrost"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-74a-frq"/>
+    <display value="Chills Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie SCHÜTTELFROST?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-74b-sev"/>
+    <display value="Chills Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr SCHÜTTELFROST im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-75"/>
+    <display value="Increased Sweating"/>
+    <designation>
+      <language value="de"/>
+      <value value="Unerwartetes oder starkes Schwitzen während des Tages oder der Nacht (nicht in Verbindung mit Hitzewallungen)"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-75a-frq"/>
+    <display value="Increased Sweating Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie UNERWARTETES ODER STARKES SCHWITZEN WÄHREND DES TAGES ODER DER NACHT?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-75b-sev"/>
+    <display value="Increased Sweating Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK hatten Sie UNERWARTETES ODER STARKES SCHWITZEN WÄHREND DES TAGES ODER DER NACHT im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-76"/>
+    <display value="Decreased Sweating"/>
+    <designation>
+      <language value="de"/>
+      <value value="Vermindertes Schwitzen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-76a-yn"/>
+    <display value="Decreased Sweating Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Konnten Sie UNERWARTET WENIGER SCHWITZEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-77"/>
+    <display value="Hot Flashes"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hitzewallungen"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-77a-frq"/>
+    <display value="Hot Flashes Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie HITZEWALLUNGEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-77b-sev"/>
+    <display value="Hot Flashes Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK waren Ihre HITZEWALLUNGEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-78"/>
+    <display value="Nosebleed"/>
+    <designation>
+      <language value="de"/>
+      <value value="Nasenbluten"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="frq sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-78a-frq"/>
+    <display value="Nosebleed Frequency"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie HÄUFIG hatten Sie NASENBLUTEN?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-78b-sev"/>
+    <display value="Nosebleed Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr NASENBLUTEN im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-79"/>
+    <display value="Pain and Swelling at Injection Site"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schmerzen, Schwellung oder Rötung der Haut an einer Einstichstelle von einer Infusion oder Spritze"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="presence"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-79a-yn"/>
+    <display value="Injection Site Reaction Presence"/>
+    <designation>
+      <language value="de"/>
+      <value value="Hatten Sie SCHMERZEN, EINE SCHWELLUNG ODER RÖTUNG DER HAUT AN EINER EINSTICHSTELLE VON EINER INFUSION ODER SPRITZE?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="proctcae-ae-80"/>
+    <display value="Body Odor"/>
+    <designation>
+      <language value="de"/>
+      <value value="Körpergeruch"/>
+    </designation>
+    <property>
+      <code value="attributes"/>
+      <valueString value="sev"/>
+    </property>
+    <property>
+      <code value="rank"/>
+      <valueInteger value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="proctcae-80a-sev"/>
+    <display value="Body Odor Severity"/>
+    <designation>
+      <language value="de"/>
+      <value value="Wie STARK war Ihr KÖRPERGERUCH im SCHLIMMSTEN FALL?"/>
+    </designation>
+  </concept>
+</CodeSystem>

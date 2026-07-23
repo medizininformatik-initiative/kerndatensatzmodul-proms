@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>PROMIS - MII IG PRO v2026.4.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.4"}
+    h3,h4,h5,h6{--heading-prefix:"6.4.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.4.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/promis.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='pro-library.html'><b>PRO Library</b></a></li><li><b>PROMIS</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>PROMIS</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#implementierte-instrumente" id="markdown-toc-implementierte-instrumente">Implementierte Instrumente</a></li>
+  <li><a href="#lizenzierung--urheberrecht" id="markdown-toc-lizenzierung--urheberrecht">Lizenzierung &amp; Urheberrecht</a></li>
+</ul>
+
+</div>
+<p>Das <a href="https://www.healthmeasures.net/explore-measurement-systems/promis">Patient-Reported Outcomes Measurement Information System (PROMIS)</a> ist ein vom US National Institute of Health (NIH) entwickeltes, IRT-basiertes Messsystem zur standardisierten Erfassung patientenberichteter Outcomes. PROMIS-Instrumente sind international validiert und liefern T-Scores (Mean=50, SD=10 der US-Normalbevölkerung), die instrument- und populationsübergreifend vergleichbar sind.</p>
+
+<p>PROMIS-Instrumente existieren in verschiedenen Konfigurationen:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Beschreibung</th>
+      <th>Beispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Multi-Domain Profile</strong></td>
+      <td>Erfasst mehrere Gesundheitsdomänen in einem Fragebogen</td>
+      <td><a href="promis-29.html">PROMIS-29</a>, <a href="promis-16.html">PROMIS-16</a></td>
+    </tr>
+    <tr>
+      <td><strong>Single-Domain Short Form</strong></td>
+      <td>Fokussiert auf eine einzelne Domäne mit wenigen Items</td>
+      <td>PROMIS Cognitive Function SF 4a, <a href="promis-depression.html">PROMIS Depression SF 4a</a></td>
+    </tr>
+    <tr>
+      <td><strong>Item Bank</strong></td>
+      <td>Vollständiger Itempool einer Domäne für CAT oder individuelle Zusammenstellung</td>
+      <td>PROMIS Depression Item Bank (zukünftig)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="implementierte-instrumente">Implementierte Instrumente</h3>
+
+<h4 id="promis-29-profile-v21">PROMIS-29 Profile v2.1</h4>
+
+<p>Multi-Domain Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen (Physical Function, Anxiety, Depression, Fatigue, Sleep Disturbance, Social Function, Pain Interference) plus Schmerzintensität.</p>
+
+<p><strong>–&gt; <a href="promis-29.html">Detaillierte Dokumentation und Vorschau</a></strong></p>
+
+<h4 id="promis-16-profile-v10">PROMIS-16 Profile v1.0</h4>
+
+<p>Ultrakurzes Multi-Domain Instrument mit 16 Items über 8 Domänen (je 2 Items). Enthält im Gegensatz zum PROMIS-29 auch die Cognitive-Function-Domäne. Geeignet für wiederholte Messung, Screening und Settings mit hoher Erhebungslast.</p>
+
+<p><strong>–&gt; <a href="promis-16.html">Detaillierte Dokumentation und Vorschau</a></strong></p>
+
+<h4 id="promis-cognitive-function-short-form-4a">PROMIS Cognitive Function Short Form 4a</h4>
+
+<p>Single-Domain Short Form mit 4 Items zur Erfassung subjektiver kognitiver Funktion. Ergänzt PROMIS-29 (das diese Domäne nicht abdeckt) — die Kombination beider Instrumente entspricht inhaltlich dem PROMIS-33-Profile.</p>
+
+<p><strong>–&gt; <a href="pro-library.html">Übersicht im PRO-Library</a></strong></p>
+
+<h4 id="promis-depression-short-form-4a">PROMIS Depression Short Form 4a</h4>
+
+<p>Single-Domain Short Form zur Erfassung von Depressionssymptomen mit 4 Items aus der PROMIS Depression Item Bank. Dient als exemplarisches Beispiel für die Implementierung von PROMIS-Instrumenten aus einer einzelnen Domäne.</p>
+
+<p><strong>–&gt; <a href="promis-depression.html">Detaillierte Dokumentation und Vorschau</a></strong></p>
+
+<h4 id="promis-physical-function-geplant">PROMIS Physical Function (geplant)</h4>
+
+<p>Exemplarisches Single-Domain Instrument für die Domäne körperliche Funktion. Geplant als Referenzimplementierung für PROMIS-Instrumente aus einer einzelnen Domäne mit vollständiger Score-Berechnung und Observation-Extraktion.</p>
+
+<h3 id="lizenzierung--urheberrecht">Lizenzierung &amp; Urheberrecht</h3>
+
+<p>PROMIS-Items sind urheberrechtlich geschützt. Bei der FHIR-Implementierung im MII PRO Modul greifen <strong>vier Schichten</strong> unterschiedlicher Rechte:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Schicht</th>
+      <th>Was</th>
+      <th>Wem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>FHIR-Resource</strong> (linkIds, Extensions, Score-Calculations, ObservationDefinitions)</td>
+      <td>Technisches Artefakt</td>
+      <td>© Medizininformatik-Initiative (MII) — CC-BY 4.0</td>
+    </tr>
+    <tr>
+      <td><strong>PROMIS-Items</strong> (Item-Text, Antwortoptionen, IRT-Parameter, Scoring-Algorithmen)</td>
+      <td>Inhaltliche IP</td>
+      <td>© 2008-2024 PROMIS Health Organization &amp; PROMIS Cooperative Group; PROMIS® ist eingetragene Marke</td>
+    </tr>
+    <tr>
+      <td><strong>Offizielle deutsche Übersetzungen</strong></td>
+      <td>Bereitgestellt durch</td>
+      <td><strong>PCOR-MII</strong> (Patient-Centered Outcomes Research in der Medizininformatik-Initiative); kuratiert durch das <strong>PROMIS National Center Deutschland (CPCOR, Charité, Leitung: Felix Fischer)</strong></td>
+    </tr>
+    <tr>
+      <td><strong>LOINC-Codes</strong> (Item-Codes, Antwortlisten)</td>
+      <td>Terminologie</td>
+      <td>© Regenstrief Institute, Inc. — LOINC License</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="nutzung-der-promis-instrumente">Nutzung der PROMIS-Instrumente</h4>
+
+<ul>
+  <li><strong>Innerhalb des PCOR-MII / MII Kontexts</strong>: Die Verwendung der hier publizierten Questionnaires und der deutschen Wordings ist im Projektkontext abgedeckt.</li>
+  <li>
+    <p><strong>Außerhalb des PCOR-MII / MII Kontexts (z.B. institutionelle Implementierung)</strong>: Eine <strong>Nutzungsanfrage bei CPCOR</strong> ist erforderlich. CPCOR koordiniert Lizenz, Nutzungsbedingungen und ggf. Nutzungsgebühren:</p>
+
+    <p><strong>→ <a href="https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen">https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen</a></strong></p>
+  </li>
+</ul>
+
+<h4 id="quellen-der-deutschen-übersetzungen">Quellen der deutschen Übersetzungen</h4>
+
+<p>Die in den Questionnaires hinterlegten deutschen Item-Texte und Antwortlabels stammen aus dem <strong>PCOR-MII Master Item-Level Dictionary</strong>, einem konsortialen Referenzdokument, das alle PROMIS-Items für die im PCOR-MII abgebildeten Krankheitsentitäten zusammenführt. Die Übersetzungen sind über das PROMIS Germany National Center (CPCOR) psychometrisch validiert.</p>
+
+<p>Die zentrale Definition der Lizenz- und Quellenangaben für PROMIS-Questionnaires erfolgt über das FSH-RuleSet <code class="language-plaintext highlighter-rouge">PROMIS_Copyright_DE</code> (siehe <code class="language-plaintext highlighter-rouge">input/fsh/rulesets/promis-copyright.fsh</code>) und wird im <code class="language-plaintext highlighter-rouge">Questionnaire.copyright</code>-Feld jeder PROMIS-Ressource ausgespielt.</p>
+
+<h4 id="hinweis-zum-verhältnis-mii--promis-health-organization">Hinweis zum Verhältnis MII ↔ PROMIS Health Organization</h4>
+
+<p>Das MII PRO Modul reklamiert keine Eigentumsrechte an den PROMIS-Items selbst. Die FHIR-Verpackung (Profile, Extensions, Score-Calculation-Architektur) ist MII-Eigenleistung; die inhaltliche IP der PROMIS-Items verbleibt bei der PROMIS Health Organization (Northwestern University).</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-07-23 11:58:00 +0000">
+    2026-07-23
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

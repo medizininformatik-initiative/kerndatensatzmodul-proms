@@ -1,0 +1,707 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MII QST PRO PROMIS-16 (Adults) - MII IG PRO v2026.4.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13.28"}
+    h3,h4,h5,h6{--heading-prefix:"13.28"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.4.1 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../de/Questionnaire-mii-qst-pro-promis-16.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MII QST PRO PROMIS-16 (Adults)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-valueset -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Questionnaire-mii-qst-pro-promis-16.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-mii-qst-pro-promis-16.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">Questionnaire: MII QST PRO PROMIS-16 (Adults)
+(Experimental)
+  </h2>
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2026.4.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16|2026.4.1"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            as of 
+2026-07-23
+
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
+    </tr>
+
+
+
+    <tr>
+
+      <td colspan="6"><p><em>Usage</em>: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.healthmeasures.net/explore-measurement-systems/promis">PROMIS (Patient-Reported Outcomes Measurement Information System)</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://cpcor.charite.de/promis_national_center_deutschland">PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://doi.org/10.1007/s11136-023-03597-6">PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res)</a></p>
+</td>
+    </tr>
+
+
+
+    <tr>
+      <td colspan="6"><p><em>Copyright/Legal</em>: The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.</p>
+
+<p>The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.</p>
+
+<p>The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).</p>
+
+<p>Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen</p>
+
+<p>LOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-tree">Tree view</a>
+      </li>
+      <li>
+        <a href="#tabs-sample">Sample Rendering</a>
+      </li>
+      <li>
+        <a href="#tabs-logic">Form Logic</a>
+      </li>
+    </ul>
+    <a name="tabs-tree"> </a>
+    <div id="tabs-tree">
+      <div id="tbl-tree">
+        <div id="tbl-tree-inner">
+          <div data-fhir="generated"><p class="res-header-id"></p><a name="mii-qst-pro-promis-16"> </a><a name="hcmii-qst-pro-promis-16"> </a>
+<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2026.4.1</p></div>
+<table border="1" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="qtree=mii-qst-pro-promis-16" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16#2026.4.1</td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-16.PhysicalFunction" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.PhysicalFunction</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Physical Function</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-pfa21" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-pfa21</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Are you able to go up and down stairs at a normal pace?</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-physical-function-response-scale.html">MII VS PRO PROMIS Physical Function Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.promis-pfa23" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-pfa23</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Are you able to go for a walk of at least 15 minutes?</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-physical-function-response-scale.html">MII VS PRO PROMIS Physical Function Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-16.Anxiety" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Anxiety</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Emotional Distress — Anxiety</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aba" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-edanx40" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-edanx40</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I found it hard to focus on anything other than my anxiety.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="abb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.promis-edanx41" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-edanx41</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">My worries overwhelmed me.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-16.Depression" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Depression</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Emotional Distress — Depression</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aca" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-eddep29" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-eddep29</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I felt depressed.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="acb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.promis-eddep41" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-eddep41</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I felt hopeless.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-16.Fatigue" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Fatigue</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fatigue</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ada" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-hi7" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-hi7</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I feel fatigued.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.promis-an3" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-an3</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I had trouble starting things because I was tired.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-16.Sleep" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Sleep</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sleep-related Impairment / Sleep Disturbance</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aea" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-sleep25" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-sleep25</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I had problems during the day because of poor sleep.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aeb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.promis-sleep90" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-sleep90</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I had trouble sleeping.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-16.SocialRoles" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.SocialRoles</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Ability to Participate in Social Roles and Activities</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="afa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-srpper31-caps" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-srpper31-caps</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I have trouble taking care of my regular personal responsibilities.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="afb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.promis-srpper46-caps" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-srpper46-caps</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I have trouble doing all of the activities with friends that I want to do.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ag" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-16.PainInterference" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.PainInterference</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pain Interference</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aga" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-painin9" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-painin9</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How much did pain interfere with your day-to-day activities?</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="agb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.promis-painin31" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-painin31</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How much did pain interfere with your ability to participate in social activities?</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ah" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" id="item.PROMIS-16.Cognition" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Cognition</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Cognitive Function — Abilities</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aha" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.promis-pc27r" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-pc27r</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I have been able to remember to do things, like take medicine or buy something I needed.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ahb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" id="item.promis-pc-caps3r" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-pc-caps3r</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I have been able to think clearly without extra effort.</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </div>
+      </div>
+    </div>
+    <a name="tabs-sample"> </a>
+    <div id="tabs-sample">
+      <div id="tbl-sample">
+        <div id="tbl-sample-inner">
+          <div data-fhir="generated"><p class="res-header-id"></p>
+<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2026.4.1</p></div>
+<div><div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.PhysicalFunction">Physical Function</span></b></p></div><div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.PhysicalFunction</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-pfa21">Are you able to go up and down stairs at a normal pace?</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-pfa21"><option value="LA13921-4" selected="false">Without any difficulty</option><option value="LA13918-0" selected="false">With a little difficulty</option><option value="LA13920-6" selected="false">With some difficulty</option><option value="LA13919-8" selected="false">With much difficulty</option><option value="LA13912-3" selected="false">Unable to do</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-pfa21</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-physical-function-response-scale.html">MII VS PRO PROMIS Physical Function Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-pfa23">Are you able to go for a walk of at least 15 minutes?</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-pfa23"><option value="LA13921-4" selected="false">Without any difficulty</option><option value="LA13918-0" selected="false">With a little difficulty</option><option value="LA13920-6" selected="false">With some difficulty</option><option value="LA13919-8" selected="false">With much difficulty</option><option value="LA13912-3" selected="false">Unable to do</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-pfa23</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-physical-function-response-scale.html">MII VS PRO PROMIS Physical Function Response Scale</a></li></ul></div></div>
+<div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.Anxiety">Emotional Distress — Anxiety</span></b></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.Anxiety</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-edanx40">I found it hard to focus on anything other than my anxiety.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-edanx40"><option value="LA6270-8" selected="false">Never</option><option value="LA10066-1" selected="false">Rarely</option><option value="LA10082-8" selected="false">Sometimes</option><option value="LA10044-8" selected="false">Often</option><option value="LA9933-8" selected="false">Always</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-edanx40</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-edanx41">My worries overwhelmed me.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-edanx41"><option value="LA6270-8" selected="false">Never</option><option value="LA10066-1" selected="false">Rarely</option><option value="LA10082-8" selected="false">Sometimes</option><option value="LA10044-8" selected="false">Often</option><option value="LA9933-8" selected="false">Always</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-edanx41</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></li></ul></div></div>
+<div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.Depression">Emotional Distress — Depression</span></b></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.Depression</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-eddep29">I felt depressed.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-eddep29"><option value="LA6270-8" selected="false">Never</option><option value="LA10066-1" selected="false">Rarely</option><option value="LA10082-8" selected="false">Sometimes</option><option value="LA10044-8" selected="false">Often</option><option value="LA9933-8" selected="false">Always</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-eddep29</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-eddep41">I felt hopeless.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-eddep41"><option value="LA6270-8" selected="false">Never</option><option value="LA10066-1" selected="false">Rarely</option><option value="LA10082-8" selected="false">Sometimes</option><option value="LA10044-8" selected="false">Often</option><option value="LA9933-8" selected="false">Always</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-eddep41</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></li></ul></div></div>
+<div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.Fatigue">Fatigue</span></b></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.Fatigue</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-hi7">I feel fatigued.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-hi7"><option value="LA6568-5" selected="false">Not at all</option><option value="LA13863-8" selected="false">A little bit</option><option value="LA13909-9" selected="false">Somewhat</option><option value="LA13902-4" selected="false">Quite a bit</option><option value="LA13914-9" selected="false">Very much</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-hi7</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-an3">I had trouble starting things because I was tired.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-an3"><option value="LA6568-5" selected="false">Not at all</option><option value="LA13863-8" selected="false">A little bit</option><option value="LA13909-9" selected="false">Somewhat</option><option value="LA13902-4" selected="false">Quite a bit</option><option value="LA13914-9" selected="false">Very much</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-an3</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></li></ul></div></div>
+<div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.Sleep">Sleep-related Impairment / Sleep Disturbance</span></b></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.Sleep</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-sleep25">I had problems during the day because of poor sleep.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-sleep25"><option value="LA6568-5" selected="false">Not at all</option><option value="LA13863-8" selected="false">A little bit</option><option value="LA13909-9" selected="false">Somewhat</option><option value="LA13902-4" selected="false">Quite a bit</option><option value="LA13914-9" selected="false">Very much</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-sleep25</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-sleep90">I had trouble sleeping.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-sleep90"><option value="LA6270-8" selected="false">Never</option><option value="LA10066-1" selected="false">Rarely</option><option value="LA10082-8" selected="false">Sometimes</option><option value="LA10044-8" selected="false">Often</option><option value="LA9933-8" selected="false">Always</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-sleep90</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></li></ul></div></div>
+<div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.SocialRoles">Ability to Participate in Social Roles and Activities</span></b></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.SocialRoles</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-srpper31-caps">I have trouble taking care of my regular personal responsibilities.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-srpper31-caps"><option value="LA6270-8" selected="false">Never</option><option value="LA10066-1" selected="false">Rarely</option><option value="LA10082-8" selected="false">Sometimes</option><option value="LA10044-8" selected="false">Often</option><option value="LA9933-8" selected="false">Always</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-srpper31-caps</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-srpper46-caps">I have trouble doing all of the activities with friends that I want to do.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-srpper46-caps"><option value="LA6270-8" selected="false">Never</option><option value="LA10066-1" selected="false">Rarely</option><option value="LA10082-8" selected="false">Sometimes</option><option value="LA10044-8" selected="false">Often</option><option value="LA9933-8" selected="false">Always</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-srpper46-caps</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></li></ul></div></div>
+<div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.PainInterference">Pain Interference</span></b></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.PainInterference</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-painin9">How much did pain interfere with your day-to-day activities?</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-painin9"><option value="LA6568-5" selected="false">Not at all</option><option value="LA13863-8" selected="false">A little bit</option><option value="LA13909-9" selected="false">Somewhat</option><option value="LA13902-4" selected="false">Quite a bit</option><option value="LA13914-9" selected="false">Very much</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-painin9</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-painin31">How much did pain interfere with your ability to participate in social activities?</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-painin31"><option value="LA6568-5" selected="false">Not at all</option><option value="LA13863-8" selected="false">A little bit</option><option value="LA13909-9" selected="false">Somewhat</option><option value="LA13902-4" selected="false">Quite a bit</option><option value="LA13914-9" selected="false">Very much</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-painin31</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></li></ul></div></div>
+<div style="width: 900px; border-top: 1px #eeeeee solid"><div style="display: inline-block; width: 500px"><p><b><span title="linkId: PROMIS-16.Cognition">Cognitive Function — Abilities</span></b></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: PROMIS-16.Cognition</li><li style="font-size: 10px">Answers: </li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-pc27r">I have been able to remember to do things, like take medicine or buy something I needed.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-pc27r"><option value="LA6568-5" selected="false">Not at all</option><option value="LA13863-8" selected="false">A little bit</option><option value="LA13909-9" selected="false">Somewhat</option><option value="LA13902-4" selected="false">Quite a bit</option><option value="LA13914-9" selected="false">Very much</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-pc27r</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></li></ul></div></div>
+<div style="width: 890px; border-top: 1px #eeeeee solid; margin-left: 10px"><div style="display: inline-block; width: 490px"><p><span title="linkId: promis-pc-caps3r">I have been able to think clearly without extra effort.</span><span style="color: red" title="Mandatory">*</span><select size="1" name="promis-pc-caps3r"><option value="LA6568-5" selected="false">Not at all</option><option value="LA13863-8" selected="false">A little bit</option><option value="LA13909-9" selected="false">Somewhat</option><option value="LA13902-4" selected="false">Quite a bit</option><option value="LA13914-9" selected="false">Very much</option></select></p></div>
+<div style="border: 1px #ccccff solid; padding: 2px; display: inline-block; background-color: #fefce7; width: 380px"><ul><li style="font-size: 10px">linkId: promis-pc-caps3r</li><li style="font-size: 10px">Answers: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></li></ul></div></div></div></div>
+        </div>
+      </div>
+    </div>
+    <a name="tabs-logic"> </a>
+    <div id="tabs-logic">
+      <div id="tbl-logic">
+        <div id="tbl-logic-inner">
+          <div data-fhir="generated"><p class="res-header-id"></p>
+<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2026.4.1</p></div>
+<table border="1" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="qtree=mii-qst-pro-promis-16" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.PhysicalFunction</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-pfa21</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-physical-function-response-scale.html">MII VS PRO PROMIS Physical Function Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-pfa23</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-physical-function-response-scale.html">MII VS PRO PROMIS Physical Function Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="b" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Anxiety</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ba" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-edanx40</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="bb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-edanx41</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="c" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Depression</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ca" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-eddep29</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="cb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-eddep41</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="d" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Fatigue</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="da" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-hi7</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="db" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-an3</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="e" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Sleep</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ea" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-sleep25</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="eb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-sleep90</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="f" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.SocialRoles</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="fa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-srpper31-caps</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="fb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-srpper46-caps</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-frequency-response-scale.html">MII VS PRO PROMIS Frequency Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="g" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.PainInterference</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ga" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-painin9</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="gb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-painin31</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="h" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-16.Cognition</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: </td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ha" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> promis-pc27r</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="hb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-pc-caps3r</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-promis-intensity-response-scale.html">MII VS PRO PROMIS Intensity Response Scale</a></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="2" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <a name="test"> </a>
+  <h3>Test this Questionnaire</h3>
+  <div data-fhir="generated"><p>Try this questionnaire out:</p>
+<ul><li><a href="http://hl7.me/lhcformviewer/?lfv=latest&amp;s=default&amp;qCanonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16&amp;pID=de.medizininformatikinitiative.kerndatensatz.pros&amp;pVersion=2026.4.1">NLM Forms Library</a></li></ul></div>
+
+  <a name="responses"> </a>
+  <h3>Responses for this Questionnaire</h3>
+  
+  
+  <p>There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.</p>
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-23 11:58:00 +0000">
+    2026-07-23
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
