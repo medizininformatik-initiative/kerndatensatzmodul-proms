@@ -23,6 +23,26 @@ Execute Phase 5: Merge and Tag Release
    - Read `sushi-config.yaml` to get the version number
    - Confirm with user: "Ready to tag release v{VERSION}?"
 
+2b. **HAPI Package Smoke-Test (MANDATORY GATE — do not tag if this fails)**
+
+   The package MUST load into a clean HAPI FHIR server without crashing it at
+   startup. This catches the class of bug that made 2026.4.0–2026.5.1 unusable:
+   a single malformed resource (e.g. `HAPI-0838: ConceptMap ... without a value in
+   ConceptMap.group.source`) aborts the whole server boot — SUSHI and IG-Publisher
+   validation do NOT catch this, only actually loading the package does.
+
+   Requires Docker. Build the package first (`/mii-build-package`), then run:
+   ```bash
+   scripts/hapi-smoketest.sh
+   ```
+   - Exit 0 / "✅ PASS" → proceed to tagging.
+   - Exit 1 / "❌ FAIL" → STOP. Do not tag. Fix the offending resource
+     (the script prints the HAPI error, e.g. which ConceptMap), rebuild, re-run.
+
+   The script boots `hapiproject/hapi` with the built `.tgz` mounted via
+   `hapi.fhir.implementationguides` and fails on `HAPI-0838`/`HAPI-1286`/
+   "Application run failed". It is the same gate that should run in CI (see below).
+
 3. **Create and push the tag**
    ```
    git tag -a v{VERSION} -m "Release v{VERSION}"
@@ -48,3 +68,12 @@ After successfully creating the tag:
 1. Stay on dev branch (already there)
 2. Optionally clean up the release branch if user wants
 3. Display the GitHub release URL: `https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/releases`
+
+### CI wiring (recommended — belt and suspenders)
+
+The local gate (step 2b) relies on a human running it. To make it non-skippable,
+the same `scripts/hapi-smoketest.sh` should run in CI on every PR that touches
+`input/fsh/**` or `fsh-generated/**`. GitHub-hosted runners have Docker, so the job
+can: build the package (SUSHI + Firely Bake, or reuse the release artifact) and run
+`scripts/hapi-smoketest.sh <tarball>`. A red job = a package that would crash HAPI —
+block the merge. See `.github/workflows/` for where to add the job.

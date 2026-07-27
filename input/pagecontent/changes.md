@@ -4,13 +4,26 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 Datum: 2026-07-27 (Release Candidate, in Vorbereitung)
 
-Release Candidate mit Package-Hygiene- und Konsistenz-Fixes. Kein Instrument- oder Terminologie-Inhalt geändert.
+Reines Fix-Release — **keine** Änderungen an Instrumenten, Profilen oder Terminologie. Empfohlen für alle, die 2026.4.0–2026.5.1 einsetzen.
 
-## Bugfixes
+## Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)
 
-- **`FIXED` (Package-Install-Crash in HAPI):** Das gebaute FHIR-Package enthielt drei IG-Publisher-Lifecycle-Artefakte (`onLoad-ig-working.json`, `onLoad-ig-updated.json`, `onGenerate-ig-working.json`) — jeweils eine vollständige Kopie der `ImplementationGuide`-Ressource mit identischer Canonical-URL + Version. Dadurch schlug der Package-Import in HAPI FHIR beim Serverstart fehl (mehrere Ressourcen mit gleicher `url|version`). Der Firely-Bake-Schritt filtert diese Artefakte jetzt heraus (`onLoad-*`/`onGenerate-*`/`onCheck-*`), zusätzlich defensiv macOS-Dateien (`._*`, `.DS_Store`).
-- Removed: Unvollständiger ConceptMap-Stub `mii-cm-pro-bdi-ii-to-promis-depression-observation` (nur 2 von 64 PROsetta-Stone-Stützstellen, `group` ohne source/target-CodeSystem) endgültig aus Quelle **und** Package entfernt. Die BDI-II→PROMIS-Depression-T-Score-Umrechnung bleibt als vollständiger FHIRPath-Crosswalk im BDI-II-Questionnaire; eine CQL-Library-Lösung ist für 2027 geplant.
-- Fixed: **Einheitliche Versionierung** — `fsh-generated` wird frisch generiert und mitcommittet, sodass alle Conformance-Ressourcen (Profile, Questionnaires, ValueSets, CodeSystems, ObservationDefinitions) durchgängig `2026.5.2-rc.1` tragen. Zuvor liefen Version-Bumps am committeten `fsh-generated` vorbei (Release-Commit mit `--no-verify`), wodurch ausgelieferte Packages gemischte Versionsstände (teils bis `2026.0.0`) enthielten.
+Die Packages **2026.4.0–2026.5.1** ließen sich nicht in HAPI FHIR laden — der Server brach beim Start mit folgendem Fehler ab:
+
+```
+HAPI-0838: ConceptMap[url='…/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation']
+           contains at least one group without a value in ConceptMap.group.source
+→ HAPI-1286: Error installing IG … → Application run failed → Unable to start web server
+```
+
+- **Ursache:** Die mit 2026.4.0 eingeführte ConceptMap `mii-cm-pro-bdi-ii-to-promis-depression-observation` war ein unvollständiger Stub (nur 2 von 64 PROsetta-Stone-Stützstellen, `group` ohne `source`/`target`-CodeSystem). HAPI weist ConceptMaps ohne `group.source` beim Package-Install ab und bricht den Serverstart ab. 2026.3.0 enthielt noch **keine** ConceptMap und lud daher fehlerfrei.
+- **Fix:** Der ConceptMap-Stub wurde aus Quelle und Package entfernt. Die BDI-II→PROMIS-Depression-T-Score-Umrechnung bleibt als vollständiger FHIRPath-Crosswalk im BDI-II-Questionnaire erhalten; eine CQL-Library-Lösung ist für 2027 geplant.
+- **Verifiziert:** 2026.5.2-rc.1 wurde in HAPI FHIR (v7.6.0) getestet und startet fehlerfrei; die verbleibende ConceptMap `mii-cm-pro-phq-9-linkid-migration` wird korrekt installiert (sie trägt `sourceScope`/`targetScope`).
+
+## Package-Hygiene (nebenbei behoben)
+
+- Removed: Drei versehentlich mitgepackte IG-Publisher-Lifecycle-Artefakte (`onLoad-ig-working.json`, `onLoad-ig-updated.json`, `onGenerate-ig-working.json` — dreifache Kopie der `ImplementationGuide` mit identischer Canonical-URL) werden im Firely-Bake-Build jetzt herausgefiltert (`onLoad-*`/`onGenerate-*`/`onCheck-*`), ebenso defensiv macOS-Dateien (`._*`, `.DS_Store`). Kein HAPI-Startup-Blocker, aber unsauber im Package.
+- Fixed: Einheitliche Versionierung — alle Conformance-Ressourcen tragen durchgängig `2026.5.2-rc.1`. Zuvor enthielten ausgelieferte Packages gemischte Versionsstände (teils bis `2026.0.0`), weil `fsh-generated` nicht bei jedem Version-Bump regeneriert wurde.
 
 **Version: 2026.5.1**
 
