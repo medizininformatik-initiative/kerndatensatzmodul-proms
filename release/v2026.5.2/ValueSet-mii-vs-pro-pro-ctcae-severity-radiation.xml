@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-pro-ctcae-severity-radiation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-pro-ctcae-severity-radiation</b></p><a name="mii-vs-pro-pro-ctcae-severity-radiation"> </a><a name="hcmii-vs-pro-pro-ctcae-severity-radiation"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-mii-cs-pro-pro-ctcae.html"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2026.5.2</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-0">proctcae-severity-0</a></td><td style="color: #cccccc">None</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-1">proctcae-severity-1</a></td><td style="color: #cccccc">Mild</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-2">proctcae-severity-2</a></td><td style="color: #cccccc">Moderate</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-3">proctcae-severity-3</a></td><td style="color: #cccccc">Severe</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-4">proctcae-severity-4</a></td><td style="color: #cccccc">Very severe</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-optout-not-applicable">proctcae-optout-not-applicable</a></td><td style="color: #cccccc">Not applicable</td></tr></table></li></ul></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-pro-ctcae-severity-radiation</b></p><a name="en-mii-vs-pro-pro-ctcae-severity-radiation"> </a><a name="en-hcmii-vs-pro-pro-ctcae-severity-radiation"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-mii-cs-pro-pro-ctcae.html"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2026.5.2</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-0">proctcae-severity-0</a></td><td style="color: #cccccc">None</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-1">proctcae-severity-1</a></td><td style="color: #cccccc">Mild</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-2">proctcae-severity-2</a></td><td style="color: #cccccc">Moderate</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-3">proctcae-severity-3</a></td><td style="color: #cccccc">Severe</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-severity-4">proctcae-severity-4</a></td><td style="color: #cccccc">Very severe</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-optout-not-applicable">proctcae-optout-not-applicable</a></td><td style="color: #cccccc">Not applicable</td></tr></table></li></ul></div></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation"/>
+  <version value="2026.5.2"/>
+  <name value="MII_VS_PRO_PRO_CTCAE_Severity_Radiation"/>
+  <title value="MII VS PRO PRO-CTCAE Severity Scale (Radiation)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-27T20:52:48+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="6-point severity scale for radiation items: standard 5 options plus 'Not applicable'"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"/>
+      <concept>
+        <code value="proctcae-severity-0"/>
+      </concept>
+      <concept>
+        <code value="proctcae-severity-1"/>
+      </concept>
+      <concept>
+        <code value="proctcae-severity-2"/>
+      </concept>
+      <concept>
+        <code value="proctcae-severity-3"/>
+      </concept>
+      <concept>
+        <code value="proctcae-severity-4"/>
+      </concept>
+      <concept>
+        <code value="proctcae-optout-not-applicable"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-phq-9-answer-list-ll358-3"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-phq-9-answer-list-ll358-3</b></p><a name="en-mii-vs-pro-phq-9-answer-list-ll358-3"> </a><a name="en-hcmii-vs-pro-phq-9-answer-list-ll358-3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: de</p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="https://loinc.org/LA6568-5/">LA6568-5</a></td><td>Not at all</td><td>Überhaupt nicht</td></tr><tr><td><a href="https://loinc.org/LA6569-3/">LA6569-3</a></td><td>Several days</td><td>An einzelnen Tagen</td></tr><tr><td><a href="https://loinc.org/LA6570-1/">LA6570-1</a></td><td>More than half the days</td><td>An mehr als der Hälfte der Tage</td></tr><tr><td><a href="https://loinc.org/LA6571-9/">LA6571-9</a></td><td>Nearly every day</td><td>Beinahe jeden Tag</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"/>
+  <version value="2026.5.2"/>
+  <name value="MII_VS_PRO_PHQ9_AnswerList_LL3583"/>
+  <title value="MII VS PRO PHQ-9 Answer List LL358-3"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-27T20:52:48+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
+        <code value="LA6568-5"/>
+        <display value="Not at all"/>
+        <designation>
+          <language value="de"/>
+          <value value="Überhaupt nicht"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <code value="LA6569-3"/>
+        <display value="Several days"/>
+        <designation>
+          <language value="de"/>
+          <value value="An einzelnen Tagen"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <code value="LA6570-1"/>
+        <display value="More than half the days"/>
+        <designation>
+          <language value="de"/>
+          <value value="An mehr als der Hälfte der Tage"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <code value="LA6571-9"/>
+        <display value="Nearly every day"/>
+        <designation>
+          <language value="de"/>
+          <value value="Beinahe jeden Tag"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

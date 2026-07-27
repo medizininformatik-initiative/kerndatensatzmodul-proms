@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-pro-midos2"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-midos2</b></p><a name="en-mii-cs-pro-midos2"> </a><a name="en-hcmii-cs-pro-midos2"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>snomed</td><td>snomed</td><td>code</td><td>SNOMED CT Equivalent für externe Interoperabilität</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>snomed</b></td><td><b>English (English, en)</b></td></tr><tr><td style="white-space:nowrap">midos2-severity-0<a name="en-mii-cs-pro-midos2-midos2-severity-0"> </a></td><td>keine</td><td/><td>none</td></tr><tr><td style="white-space:nowrap">midos2-severity-1<a name="en-mii-cs-pro-midos2-midos2-severity-1"> </a></td><td>leichte</td><td/><td>mild</td></tr><tr><td style="white-space:nowrap">midos2-severity-2<a name="en-mii-cs-pro-midos2-midos2-severity-2"> </a></td><td>mittlere</td><td/><td>moderate</td></tr><tr><td style="white-space:nowrap">midos2-severity-3<a name="en-mii-cs-pro-midos2-midos2-severity-3"> </a></td><td>starke</td><td/><td>severe</td></tr><tr><td style="white-space:nowrap">midos2-wellbeing-0<a name="en-mii-cs-pro-midos2-midos2-wellbeing-0"> </a></td><td>sehr gut</td><td/><td>very good</td></tr><tr><td style="white-space:nowrap">midos2-wellbeing-1<a name="en-mii-cs-pro-midos2-midos2-wellbeing-1"> </a></td><td>eher gut</td><td/><td>rather good</td></tr><tr><td style="white-space:nowrap">midos2-wellbeing-2<a name="en-mii-cs-pro-midos2-midos2-wellbeing-2"> </a></td><td>eher schlecht</td><td/><td>rather poor</td></tr><tr><td style="white-space:nowrap">midos2-wellbeing-3<a name="en-mii-cs-pro-midos2-midos2-wellbeing-3"> </a></td><td>sehr schlecht</td><td/><td>very poor</td></tr><tr><td style="white-space:nowrap">midos2-q01-schmerz<a name="en-mii-cs-pro-midos2-midos2-q01-schmerz"> </a></td><td>Schmerz</td><td>22253000</td><td>Pain</td></tr><tr><td style="white-space:nowrap">midos2-q02-uebelkeit<a name="en-mii-cs-pro-midos2-midos2-q02-uebelkeit"> </a></td><td>Übelkeit</td><td>422587007</td><td>Nausea</td></tr><tr><td style="white-space:nowrap">midos2-q03-erbrechen<a name="en-mii-cs-pro-midos2-midos2-q03-erbrechen"> </a></td><td>Erbrechen</td><td>422400008</td><td>Vomiting</td></tr><tr><td style="white-space:nowrap">midos2-q04-luftnot<a name="en-mii-cs-pro-midos2-midos2-q04-luftnot"> </a></td><td>Luftnot</td><td>267036007</td><td>Shortness of breath</td></tr><tr><td style="white-space:nowrap">midos2-q05-verstopfung<a name="en-mii-cs-pro-midos2-midos2-q05-verstopfung"> </a></td><td>Verstopfung</td><td>14760008</td><td>Constipation</td></tr><tr><td style="white-space:nowrap">midos2-q06-schwaeche<a name="en-mii-cs-pro-midos2-midos2-q06-schwaeche"> </a></td><td>Schwäche</td><td/><td>Weakness</td></tr><tr><td style="white-space:nowrap">midos2-q07-muedigkeit<a name="en-mii-cs-pro-midos2-midos2-q07-muedigkeit"> </a></td><td>Müdigkeit</td><td>84229001</td><td>Tiredness</td></tr><tr><td style="white-space:nowrap">midos2-q08-appetitmangel<a name="en-mii-cs-pro-midos2-midos2-q08-appetitmangel"> </a></td><td>Appetitmangel</td><td>79890006</td><td>Loss of appetite</td></tr><tr><td style="white-space:nowrap">midos2-q09-depressivitaet<a name="en-mii-cs-pro-midos2-midos2-q09-depressivitaet"> </a></td><td>Depressivität</td><td>35489007</td><td>Depression</td></tr><tr><td style="white-space:nowrap">midos2-q10-angst<a name="en-mii-cs-pro-midos2-midos2-q10-angst"> </a></td><td>Angst</td><td>48694002</td><td>Anxiety</td></tr><tr><td style="white-space:nowrap">midos2-q11-anspannung<a name="en-mii-cs-pro-midos2-midos2-q11-anspannung"> </a></td><td>Anspannung</td><td/><td>Tension</td></tr><tr><td style="white-space:nowrap">midos2-q12-wohlbefinden<a name="en-mii-cs-pro-midos2-midos2-q12-wohlbefinden"> </a></td><td>Wohlbefinden</td><td/><td>Overall wellbeing</td></tr><tr><td style="white-space:nowrap">midos2-q13-sonstiges<a name="en-mii-cs-pro-midos2-midos2-q13-sonstiges"> </a></td><td>Andere Beschwerden</td><td/><td>Other complaints</td></tr></table></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2"/>
+  <version value="2026.5.2"/>
+  <name value="MII_CS_PRO_MIDOS2"/>
+  <title value="MII CS PRO MIDOS2 Items and Response Scales"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-27T20:52:48+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="21"/>
+  <property>
+    <code value="snomed"/>
+    <description value="SNOMED CT Equivalent für externe Interoperabilität"/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="midos2-severity-0"/>
+    <display value="keine"/>
+    <designation>
+      <language value="en"/>
+      <value value="none"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-severity-1"/>
+    <display value="leichte"/>
+    <designation>
+      <language value="en"/>
+      <value value="mild"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-severity-2"/>
+    <display value="mittlere"/>
+    <designation>
+      <language value="en"/>
+      <value value="moderate"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-severity-3"/>
+    <display value="starke"/>
+    <designation>
+      <language value="en"/>
+      <value value="severe"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-wellbeing-0"/>
+    <display value="sehr gut"/>
+    <designation>
+      <language value="en"/>
+      <value value="very good"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-wellbeing-1"/>
+    <display value="eher gut"/>
+    <designation>
+      <language value="en"/>
+      <value value="rather good"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-wellbeing-2"/>
+    <display value="eher schlecht"/>
+    <designation>
+      <language value="en"/>
+      <value value="rather poor"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-wellbeing-3"/>
+    <display value="sehr schlecht"/>
+    <designation>
+      <language value="en"/>
+      <value value="very poor"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-q01-schmerz"/>
+    <display value="Schmerz"/>
+    <designation>
+      <language value="en"/>
+      <value value="Pain"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="22253000"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q02-uebelkeit"/>
+    <display value="Übelkeit"/>
+    <designation>
+      <language value="en"/>
+      <value value="Nausea"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="422587007"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q03-erbrechen"/>
+    <display value="Erbrechen"/>
+    <designation>
+      <language value="en"/>
+      <value value="Vomiting"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="422400008"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q04-luftnot"/>
+    <display value="Luftnot"/>
+    <designation>
+      <language value="en"/>
+      <value value="Shortness of breath"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="267036007"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q05-verstopfung"/>
+    <display value="Verstopfung"/>
+    <designation>
+      <language value="en"/>
+      <value value="Constipation"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="14760008"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q06-schwaeche"/>
+    <display value="Schwäche"/>
+    <designation>
+      <language value="en"/>
+      <value value="Weakness"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-q07-muedigkeit"/>
+    <display value="Müdigkeit"/>
+    <designation>
+      <language value="en"/>
+      <value value="Tiredness"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="84229001"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q08-appetitmangel"/>
+    <display value="Appetitmangel"/>
+    <designation>
+      <language value="en"/>
+      <value value="Loss of appetite"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="79890006"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q09-depressivitaet"/>
+    <display value="Depressivität"/>
+    <designation>
+      <language value="en"/>
+      <value value="Depression"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="35489007"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q10-angst"/>
+    <display value="Angst"/>
+    <designation>
+      <language value="en"/>
+      <value value="Anxiety"/>
+    </designation>
+    <property>
+      <code value="snomed"/>
+      <valueCode value="48694002"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="midos2-q11-anspannung"/>
+    <display value="Anspannung"/>
+    <designation>
+      <language value="en"/>
+      <value value="Tension"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-q12-wohlbefinden"/>
+    <display value="Wohlbefinden"/>
+    <designation>
+      <language value="en"/>
+      <value value="Overall wellbeing"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="midos2-q13-sonstiges"/>
+    <display value="Andere Beschwerden"/>
+    <designation>
+      <language value="en"/>
+      <value value="Other complaints"/>
+    </designation>
+  </concept>
+</CodeSystem>

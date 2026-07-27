@@ -1,0 +1,108 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mii-cm-pro-phq-9-linkid-migration",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mii-cm-pro-phq-9-linkid-migration</b></p><a name=\"en-mii-cm-pro-phq-9-linkid-migration\"> </a><a name=\"en-hcmii-cm-pro-phq-9-linkid-migration\"> </a><p>Mapping from <a href=\"Questionnaire-mii-qst-pro-phq-9.html\">MII QST PRO PHQ-9</a> to <a href=\"Questionnaire-mii-qst-pro-phq-9.html\">MII QST PRO PHQ-9</a></p><br/><p>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>phq-phq9-q01</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2a</td></tr><tr><td>phq-phq9-q02</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2b</td></tr><tr><td>phq-phq9-q03</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2c</td></tr><tr><td>phq-phq9-q04</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2d</td></tr><tr><td>phq-phq9-q05</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2e</td></tr><tr><td>phq-phq9-q06</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2f</td></tr><tr><td>phq-phq9-q07</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2g</td></tr><tr><td>phq-phq9-q08</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2h</td></tr><tr><td>phq-phq9-q09</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq2i</td></tr><tr><td>phq-phq9-q10</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal\" title=\"equal\">is equal to</a></td><td>phq-phq9-difficulty</td></tr></table></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration",
+  "version" : "2026.5.2",
+  "title" : "MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-27T20:52:48+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "276"
+    }]
+  }],
+  "sourceCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
+  "targetCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
+  "group" : [{
+    "element" : [{
+      "code" : "phq-phq9-q01",
+      "target" : [{
+        "code" : "phq-phq2a",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q02",
+      "target" : [{
+        "code" : "phq-phq2b",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q03",
+      "target" : [{
+        "code" : "phq-phq2c",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q04",
+      "target" : [{
+        "code" : "phq-phq2d",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q05",
+      "target" : [{
+        "code" : "phq-phq2e",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q06",
+      "target" : [{
+        "code" : "phq-phq2f",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q07",
+      "target" : [{
+        "code" : "phq-phq2g",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q08",
+      "target" : [{
+        "code" : "phq-phq2h",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q09",
+      "target" : [{
+        "code" : "phq-phq2i",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "phq-phq9-q10",
+      "target" : [{
+        "code" : "phq-phq9-difficulty",
+        "equivalence" : "equal"
+      }]
+    }]
+  }]
+}

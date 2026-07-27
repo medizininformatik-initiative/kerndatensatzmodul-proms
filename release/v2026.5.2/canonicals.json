@@ -1,0 +1,642 @@
+[{
+  "id" : "mii-cps-pro-capabilitystatement",
+  "type" : "CapabilityStatement",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement",
+  "version" : "2026.5.2",
+  "name" : "MII_CPS_PRO_CapabilityStatement"
+},
+{
+  "id" : "mii-cs-pro-bdi-bdi2",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_BDI_BDI2_AnswerList"
+},
+{
+  "id" : "mii-cs-pro-dass-21",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_DASS_21"
+},
+{
+  "id" : "mii-cs-pro-eortc-qlq-c30",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_EORTC_QLQ_C30"
+},
+{
+  "id" : "mii-cs-pro-eq-5d-value-set",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_EQ_5D_ValueSet"
+},
+{
+  "id" : "mii-cs-pro-midos2",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_MIDOS2"
+},
+{
+  "id" : "mii-cs-pro-phq-15-answers",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_PHQ_15_Answers"
+},
+{
+  "id" : "mii-cs-pro-pro-ctcae",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_PRO_CTCAE"
+},
+{
+  "id" : "mii-cs-pro-questionnaire-catalogue",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_Questionnaire_Catalogue"
+},
+{
+  "id" : "mii-cs-pro-score-catalogue",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_Score_Catalogue"
+},
+{
+  "id" : "mii-cs-pro-whodas-12",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+  "version" : "2026.5.2",
+  "name" : "MII_CS_PRO_WHODAS_12"
+},
+{
+  "id" : "mii-cm-pro-phq-9-linkid-migration",
+  "type" : "ConceptMap",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-ig-pro",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
+  "version" : "2026.5.2",
+  "name" : "MII_IG_PRO"
+},
+{
+  "id" : "mii-qst-pro-bdi-bdi2",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-ces-d",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ces-d",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-dass-dass21",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-eortc-qlq-c30",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-eortc-qlq-c30-variant-a",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-eortc-qlq-c30-variant-b",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-epds",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-epds",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-euroqol-eq5d5l-answer-coding",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-euroqol-eq5d5l-collectable",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-euroqol-eq5d5l-displayable",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-euroqol-eq5d5l-minimal",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-hads",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-k6",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-k6",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-midos-midos2",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2",
+  "version" : "2026.5.2",
+  "name" : "MII_QST_PRO_MIDOS_MIDOS2"
+},
+{
+  "id" : "mii-qst-pro-phq-15",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-phq-9",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-pro-ctcae-breast-de",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de",
+  "version" : "2026.5.2",
+  "name" : "MII_QST_PRO_PRO_CTCAE_Breast_DE"
+},
+{
+  "id" : "mii-qst-pro-pro-ctcae-onkologisches-basisscreening",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening",
+  "version" : "2026.5.2",
+  "name" : "MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening"
+},
+{
+  "id" : "mii-qst-pro-promis-16",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-promis-29",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-promis-29-de",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-promis-29-minimal",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-promis-cognitive-function-sf4a",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-promis-depression-sf4a",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-qst-pro-whodas-whodas12",
+  "type" : "Questionnaire",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12",
+  "version" : "2026.5.2"
+},
+{
+  "id" : "mii-sp-pro-observationdefinition-code",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-code",
+  "version" : "2026.5.2",
+  "name" : "MII_SP_PRO_ObservationDefinition_Code"
+},
+{
+  "id" : "mii-sp-pro-observationdefinition-health-correlation",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-health-correlation",
+  "version" : "2026.5.2",
+  "name" : "MII_SP_PRO_ObservationDefinition_ScoreHealthCorrelation"
+},
+{
+  "id" : "mii-sp-pro-observationdefinition-interval-category",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-interval-category",
+  "version" : "2026.5.2",
+  "name" : "MII_SP_PRO_ObservationDefinition_QualifiedInterval_Category"
+},
+{
+  "id" : "mii-sp-pro-observationdefinition-permitted-datatype",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype",
+  "version" : "2026.5.2",
+  "name" : "MII_SP_PRO_ObservationDefinition_PermittedDataType"
+},
+{
+  "id" : "mii-sp-pro-observationdefinition-preferred-report-name",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name",
+  "version" : "2026.5.2",
+  "name" : "MII_SP_PRO_ObservationDefinition_PreferredReportName"
+},
+{
+  "id" : "mii-sp-pro-observationdefinition-unit",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-unit",
+  "version" : "2026.5.2",
+  "name" : "MII_SP_PRO_ObservationDefinition_QuantitativeDetails_Unit"
+},
+{
+  "id" : "mii-sp-pro-questionnaire-capabilities",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-questionnaire-capabilities",
+  "version" : "2026.5.2",
+  "name" : "MII_SP_PRO_Questionnaire_Capabilities"
+},
+{
+  "id" : "mii-ex-pro-questionnaire-capabilities",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Questionnaire_Capabilities"
+},
+{
+  "id" : "mii-ex-pro-score-score-health-correlation",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
+  "version" : "2026.5.2",
+  "name" : "MII_EX_PRO_Score_Score_Health_Correlation"
+},
+{
+  "id" : "mii-lm-pro",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro",
+  "version" : "2026.5.2",
+  "name" : "MII_LM_PRO"
+},
+{
+  "id" : "mii-pr-pro-depression-t-score",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Depression_T_Score"
+},
+{
+  "id" : "mii-pr-pro-observation-bdi-ii",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Observation_BDI_II"
+},
+{
+  "id" : "mii-pr-pro-observation-eq5d5l-index",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Observation_EQ5D5L_Index"
+},
+{
+  "id" : "mii-pr-pro-observation-eq5d5l-profile",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Observation_EQ5D5L_Profile"
+},
+{
+  "id" : "mii-pr-pro-observation-eq5d5l-vas",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Observation_EQ5D5L_VAS"
+},
+{
+  "id" : "mii-pr-pro-observation-phq-15",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Observation_PHQ_15"
+},
+{
+  "id" : "mii-pr-pro-observation-phq-9",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Observation_PHQ_9"
+},
+{
+  "id" : "mii-pr-pro-observation-whodas12",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Observation_WHODAS_12"
+},
+{
+  "id" : "mii-pr-pro-promis-29-anxiety-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Anxiety_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-29-depression-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Depression_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-29-fatigue-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Fatigue_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-29-pain-intensity",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Pain_Intensity"
+},
+{
+  "id" : "mii-pr-pro-promis-29-pain-interference-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Pain_Interference_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-29-physical-function-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Physical_Function_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-29-sleep-disturbance-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-29-social-function-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_29_Social_Function_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score"
+},
+{
+  "id" : "mii-pr-pro-promis-cognitive-function-sf4a-tscore",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore"
+},
+{
+  "id" : "mii-pr-pro-promis-depression-sf4a-raw-score",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score"
+},
+{
+  "id" : "mii-pr-pro-questionnaire",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Questionnaire"
+},
+{
+  "id" : "mii-pr-pro-questionnaire-response",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_QuestionnaireResponse"
+},
+{
+  "id" : "mii-pr-pro-score-blueprint",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Score_Blueprint"
+},
+{
+  "id" : "mii-pr-pro-score-instance",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
+  "version" : "2026.5.2",
+  "name" : "MII_PR_PRO_Score_Instance"
+},
+{
+  "id" : "mii-vs-pro-bdi-bdi2-long",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_BDI_BDI2_AnswerListLong"
+},
+{
+  "id" : "mii-vs-pro-bdi-bdi2-short",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_BDI_BDI2_AnswerListShort"
+},
+{
+  "id" : "mii-vs-pro-dass-21-answer-list",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_DASS_21_Answer_List"
+},
+{
+  "id" : "mii-vs-pro-eortc-qlq-c30-scale-4pt",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt"
+},
+{
+  "id" : "mii-vs-pro-eortc-qlq-c30-scale-7pt",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt"
+},
+{
+  "id" : "mii-vs-pro-eortc-qlq-c30-scale-role",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role"
+},
+{
+  "id" : "mii-vs-pro-midos2-severity",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_MIDOS2_Severity"
+},
+{
+  "id" : "mii-vs-pro-midos2-wellbeing",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_MIDOS2_Wellbeing"
+},
+{
+  "id" : "mii-vs-pro-phq-15-answers",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PHQ_15_Answers"
+},
+{
+  "id" : "mii-vs-pro-phq-9-answer-list-ll358-3",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3583"
+},
+{
+  "id" : "mii-vs-pro-phq-9-answer-list-ll359-1",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3591"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-frequency",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Frequency"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-frequency-sexual",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Frequency_Sexual"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-interference",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Interference"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-presence",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Presence"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-presence-na",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-na",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Presence_NA"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-presence-sexual",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-sexual",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Presence_Sexual"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-severity",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Severity"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-severity-radiation",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Severity_Radiation"
+},
+{
+  "id" : "mii-vs-pro-pro-ctcae-severity-sexual",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-sexual",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PRO_CTCAE_Severity_Sexual"
+},
+{
+  "id" : "mii-vs-pro-promis-frequency-response-scale",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PROMIS_Frequency_Response_Scale"
+},
+{
+  "id" : "mii-vs-pro-promis-intensity-response-scale",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PROMIS_Intensity_Response_Scale"
+},
+{
+  "id" : "mii-vs-pro-promis-physical-function-response-scale",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale"
+},
+{
+  "id" : "mii-vs-pro-whodas-12-answer-list",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
+  "version" : "2026.5.2",
+  "name" : "MII_VS_PRO_WHODAS_12_Answer_List"
+}]

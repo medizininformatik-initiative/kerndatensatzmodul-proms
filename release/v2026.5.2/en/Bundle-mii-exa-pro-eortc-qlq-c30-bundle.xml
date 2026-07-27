@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-pro-eortc-qlq-c30-bundle"/>
+  <language value="en"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
+    <resource>
+      <Questionnaire>
+        <id value="mii-qst-pro-eortc-qlq-c30"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <contained>
+          <CodeSystem>
+            <id value="eortc-qlq-c30-cs"/>
+            <meta>
+              <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"/>
+            </meta>
+            <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+            <version value="2026.5.2"/>
+            <status value="active"/>
+            <caseSensitive value="true"/>
+            <content value="complete"/>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+              <designation>
+                <language value="de"/>
+                <value value="Überhaupt nicht"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <code value="a-little"/>
+              <display value="A little"/>
+              <designation>
+                <language value="de"/>
+                <value value="Wenig"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="3"/>
+              </extension>
+              <code value="quite-a-bit"/>
+              <display value="Quite a bit"/>
+              <designation>
+                <language value="de"/>
+                <value value="Mäßig"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="4"/>
+              </extension>
+              <code value="very-much"/>
+              <display value="Very much"/>
+              <designation>
+                <language value="de"/>
+                <value value="Sehr"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <code value="1-very-poor"/>
+              <display value="1 - Very poor"/>
+              <designation>
+                <language value="de"/>
+                <value value="1 - Sehr schlecht"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <code value="2-poor"/>
+              <display value="2 - Poor"/>
+              <designation>
+                <language value="de"/>
+                <value value="2 - Schlecht"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="3"/>
+              </extension>
+              <code value="3-fair"/>
+              <display value="3 - Fair"/>
+              <designation>
+                <language value="de"/>
+                <value value="3 - Mittelmäßig"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="4"/>
+              </extension>
+              <code value="4-good"/>
+              <display value="4 - Good"/>
+              <designation>
+                <language value="de"/>
+                <value value="4 - Gut"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="5"/>
+              </extension>
+              <code value="5-very-good"/>
+              <display value="5 - Very good"/>
+              <designation>
+                <language value="de"/>
+                <value value="5 - Sehr gut"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="6"/>
+              </extension>
+              <code value="6-excellent"/>
+              <display value="6 - Excellent"/>
+              <designation>
+                <language value="de"/>
+                <value value="6 - Ausgezeichnet"/>
+              </designation>
+            </concept>
+            <concept>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="7"/>
+              </extension>
+              <code value="7-perfect"/>
+              <display value="7 - Perfect"/>
+              <designation>
+                <language value="de"/>
+                <value value="7 - Vollkommen"/>
+              </designation>
+            </concept>
+          </CodeSystem>
+        </contained>
+        <contained>
+          <ValueSet>
+            <id value="eortc-qlq-c30-4pt"/>
+            <meta>
+              <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"/>
+            </meta>
+            <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
+            <version value="2026.5.2"/>
+            <status value="active"/>
+            <compose>
+              <include>
+                <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+                <concept>
+                  <code value="not-at-all"/>
+                  <display value="Not at all"/>
+                </concept>
+                <concept>
+                  <code value="a-little"/>
+                  <display value="A little"/>
+                </concept>
+                <concept>
+                  <code value="quite-a-bit"/>
+                  <display value="Quite a bit"/>
+                </concept>
+                <concept>
+                  <code value="very-much"/>
+                  <display value="Very much"/>
+                </concept>
+              </include>
+            </compose>
+          </ValueSet>
+        </contained>
+        <contained>
+          <ValueSet>
+            <id value="eortc-qlq-c30-7pt"/>
+            <meta>
+              <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"/>
+            </meta>
+            <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
+            <version value="2026.5.2"/>
+            <status value="active"/>
+            <compose>
+              <include>
+                <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+                <concept>
+                  <code value="1-very-poor"/>
+                </concept>
+                <concept>
+                  <code value="2-poor"/>
+                </concept>
+                <concept>
+                  <code value="3-fair"/>
+                </concept>
+                <concept>
+                  <code value="4-good"/>
+                </concept>
+                <concept>
+                  <code value="5-very-good"/>
+                </concept>
+                <concept>
+                  <code value="6-excellent"/>
+                </concept>
+                <concept>
+                  <code value="7-perfect"/>
+                </concept>
+              </include>
+            </compose>
+          </ValueSet>
+        </contained>
+        <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities">
+          <extension url="displayable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="collectable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="calculatable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="extractable">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="domainAligned">
+            <valueBoolean value="false"/>
+          </extension>
+        </extension>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
+        <version value="2026.5.2"/>
+        <title value="EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <publisher value="Medizininformatik Initiative (MII)"/>
+        <description value="EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores"/>
+        <copyright value="© Copyright 1995 EORTC Quality of Life Group. All rights reserved. Version 3.0"/>
+        <code>
+          <system value="http://snomed.info/sct"/>
+          <code value="273446001"/>
+          <display value="European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"/>
+        </code>
+        <code>
+          <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"/>
+          <code value="eortc-qlq-c30"/>
+          <display value="EORTC QLQ-C30 Quality of Life Questionnaire"/>
+        </code>
+        <item>
+          <linkId value="QLQ-C30.Introduction"/>
+          <text value="We are interested in some things about you and your health. Please answer all of the questions yourself by circling the number that best applies to you. There are no 'right' or 'wrong' answers. The information that you provide will remain strictly confidential."/>
+          <type value="display"/>
+        </item>
+        <item>
+          <linkId value="QLQ-C30.Section1"/>
+          <text value="During the past week:"/>
+          <type value="display"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q01"/>
+          <prefix value="1"/>
+          <text value="Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q02"/>
+          <prefix value="2"/>
+          <text value="Do you have any trouble taking a long walk?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q03"/>
+          <prefix value="3"/>
+          <text value="Do you have any trouble taking a short walk outside of the house?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q04"/>
+          <prefix value="4"/>
+          <text value="Do you need to stay in bed or a chair during the day?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q05"/>
+          <prefix value="5"/>
+          <text value="Do you need help with eating, dressing, washing yourself or using the toilet?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q06"/>
+          <prefix value="6"/>
+          <text value="Were you limited in doing either your work or other daily activities?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q07"/>
+          <prefix value="7"/>
+          <text value="Were you limited in pursuing your hobbies or other leisure time activities?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q08"/>
+          <prefix value="8"/>
+          <text value="Were you short of breath?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q09"/>
+          <prefix value="9"/>
+          <text value="Have you had pain?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q10"/>
+          <prefix value="10"/>
+          <text value="Did you need to rest?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q11"/>
+          <prefix value="11"/>
+          <text value="Have you had trouble sleeping?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q12"/>
+          <prefix value="12"/>
+          <text value="Have you felt weak?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q13"/>
+          <prefix value="13"/>
+          <text value="Have you lacked appetite?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q14"/>
+          <prefix value="14"/>
+          <text value="Have you felt nauseated?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q15"/>
+          <prefix value="15"/>
+          <text value="Have you vomited?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q16"/>
+          <prefix value="16"/>
+          <text value="Have you been constipated?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q17"/>
+          <prefix value="17"/>
+          <text value="Have you had diarrhea?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q18"/>
+          <prefix value="18"/>
+          <text value="Were you tired?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q19"/>
+          <prefix value="19"/>
+          <text value="Did pain interfere with your daily activities?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q20"/>
+          <prefix value="20"/>
+          <text value="Have you had difficulty in concentrating on things, like reading a newspaper or watching television?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q21"/>
+          <prefix value="21"/>
+          <text value="Did you feel tense?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q22"/>
+          <prefix value="22"/>
+          <text value="Did you worry?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q23"/>
+          <prefix value="23"/>
+          <text value="Did you feel irritable?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q24"/>
+          <prefix value="24"/>
+          <text value="Did you feel depressed?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q25"/>
+          <prefix value="25"/>
+          <text value="Have you had difficulty remembering things?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q26"/>
+          <prefix value="26"/>
+          <text value="Has your physical condition or medical treatment interfered with your family life?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q27"/>
+          <prefix value="27"/>
+          <text value="Has your physical condition or medical treatment interfered with your social activities?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q28"/>
+          <prefix value="28"/>
+          <text value="Has your physical condition or medical treatment caused you financial difficulties?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+        </item>
+        <item>
+          <linkId value="QLQ-C30.Section2"/>
+          <text value="For the following questions please circle the number between 1 and 7 that best applies to you"/>
+          <type value="display"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q29"/>
+          <prefix value="29"/>
+          <text value="How would you rate your overall health during the past week?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-7pt"/>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q30"/>
+          <prefix value="30"/>
+          <text value="How would you rate your overall quality of life during the past week?"/>
+          <type value="choice"/>
+          <answerValueSet value="#eortc-qlq-c30-7pt"/>
+        </item>
+        <item>
+          <linkId value="QLQ-C30.Scores"/>
+          <text value="Calculated Scores (0-100 scale)"/>
+          <type value="group"/>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).answer.value.ordinal().sum()) / 5) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-pf"/>
+            <text value="Physical Functioning Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(1 - (((%resource.item.where(linkId='qlq-c30-q06' or linkId='qlq-c30-q07').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-rf"/>
+            <text value="Role Functioning Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q2[1-4]$')).answer.value.ordinal().sum()) / 4) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-ef"/>
+            <text value="Emotional Functioning Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(1 - (((%resource.item.where(linkId='qlq-c30-q20' or linkId='qlq-c30-q25').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-cf"/>
+            <text value="Cognitive Functioning Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(1 - (((%resource.item.where(linkId='qlq-c30-q26' or linkId='qlq-c30-q27').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-sf"/>
+            <text value="Social Functioning Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.ordinal().sum()) / 3) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-fa"/>
+            <text value="Fatigue Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-nv"/>
+            <text value="Nausea and Vomiting Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-pa"/>
+            <text value="Pain Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="((%resource.item.where(linkId='qlq-c30-q08').answer.value.ordinal() - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-dy"/>
+            <text value="Dyspnoea Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="((%resource.item.where(linkId='qlq-c30-q11').answer.value.ordinal() - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-sl"/>
+            <text value="Insomnia Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="((%resource.item.where(linkId='qlq-c30-q13').answer.value.ordinal() - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-ap"/>
+            <text value="Appetite Loss Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="((%resource.item.where(linkId='qlq-c30-q16').answer.value.ordinal() - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-co"/>
+            <text value="Constipation Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="((%resource.item.where(linkId='qlq-c30-q17').answer.value.ordinal() - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-di"/>
+            <text value="Diarrhoea Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="((%resource.item.where(linkId='qlq-c30-q28').answer.value.ordinal() - 1) / 3) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-fi"/>
+            <text value="Financial Difficulties Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+              <valueExpression>
+                <language value="text/fhirpath"/>
+                <expression value="(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.ordinal().sum()) / 2) - 1) / 6) * 100"/>
+              </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+              <valueBoolean value="true"/>
+            </extension>
+            <linkId value="score-ql"/>
+            <text value="Global Health Status / Quality of Life Score"/>
+            <type value="decimal"/>
+            <readOnly value="true"/>
+          </item>
+        </item>
+      </Questionnaire>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+    <resource>
+      <QuestionnaireResponse>
+        <id value="mii-exa-pro-eortc-qlq-c30-response"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <authored value="2024-01-15T10:30:00Z"/>
+        <item>
+          <linkId value="qlq-c30-q01"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q02"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="quite-a-bit"/>
+              <display value="Quite a bit"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q03"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q04"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q05"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q06"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q07"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q08"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q09"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q10"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="quite-a-bit"/>
+              <display value="Quite a bit"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q11"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q12"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q13"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q14"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q15"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q16"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q17"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q18"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q19"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q20"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q21"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q22"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q23"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q24"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q25"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q26"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q27"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="a-little"/>
+              <display value="A little"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q28"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="not-at-all"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q29"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="5-very-good"/>
+              <display value="5 - Very good"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="qlq-c30-q30"/>
+          <answer>
+            <valueCoding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
+              <code value="5-very-good"/>
+              <display value="5 - Very good"/>
+            </valueCoding>
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-pf"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="273446001"/>
+            <display value="European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"/>
+          </coding>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-pf"/>
+            <display value="EORTC QLQ-C30 Physical Functioning Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="73.33"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="EORTC QLQ-C30 Version 3.0 Scoring Manual"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-rf"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-rf"/>
+            <display value="EORTC QLQ-C30 Role Functioning Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="83.33"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-ef"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-ef"/>
+            <display value="EORTC QLQ-C30 Emotional Functioning Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="87.5"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-cf"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-cf"/>
+            <display value="EORTC QLQ-C30 Cognitive Functioning Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="100"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-sf"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-sf"/>
+            <display value="EORTC QLQ-C30 Social Functioning Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="91.67"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-fa"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-fa"/>
+            <display value="EORTC QLQ-C30 Fatigue Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="22.22"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-nv"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-nv"/>
+            <display value="EORTC QLQ-C30 Nausea and Vomiting Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-pa"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-pa"/>
+            <display value="EORTC QLQ-C30 Pain Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="16.67"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-dy"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-dy"/>
+            <display value="EORTC QLQ-C30 Dyspnoea Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-sl"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-sl"/>
+            <display value="EORTC QLQ-C30 Insomnia Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="33.33"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-ap"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-ap"/>
+            <display value="EORTC QLQ-C30 Appetite Loss Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-co"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-co"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-co"/>
+            <display value="EORTC QLQ-C30 Constipation Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-co"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-di"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-di"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-di"/>
+            <display value="EORTC QLQ-C30 Diarrhoea Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-di"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-fi"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-fi"/>
+            <display value="EORTC QLQ-C30 Financial Difficulties Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"/>
+    <resource>
+      <Observation>
+        <id value="mii-exa-pro-eortc-qlq-c30-observation-ql"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
+            <code value="eortc-qlq-c30-ql"/>
+            <display value="EORTC QLQ-C30 Global Health Status / Quality of Life Score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/mii-exa-pro-patient"/>
+        </subject>
+        <effectiveDateTime value="2024-01-15T10:30:00Z"/>
+        <valueQuantity>
+          <value value="66.67"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"/>
+    <resource>
+      <Patient>
+        <id value="mii-exa-pro-patient"/>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <active value="true"/>
+        <name>
+          <family value="Example"/>
+          <given value="Patient"/>
+        </name>
+        <gender value="other"/>
+        <birthDate value="1960-01-01"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/mii-exa-pro-patient"/>
+    </request>
+  </entry>
+</Bundle>
