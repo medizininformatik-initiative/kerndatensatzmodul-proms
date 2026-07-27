@@ -5,11 +5,11 @@ topic: Release-Notes
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
-**Version: 2026.5.2-rc.1**
+**Version: 2026.5.2**
 
-Datum: 2026-07-27 (Release Candidate, in Vorbereitung)
+Datum: 2026-07-27 (in Vorbereitung)
 
-Reines Fix-Release — **keine** Änderungen an Instrumenten, Profilen oder Terminologie. Empfohlen für alle, die 2026.4.0–2026.5.1 einsetzen.
+Patch-Release (Fix-Only) — **keine** Änderungen an Instrumenten, Profilen oder Terminologie. Empfohlen für alle, die 2026.4.0–2026.5.1 einsetzen.
 
 ## Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)
 
@@ -23,12 +23,12 @@ HAPI-0838: ConceptMap[url='…/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression
 
 - **Ursache:** Die mit 2026.4.0 eingeführte ConceptMap `mii-cm-pro-bdi-ii-to-promis-depression-observation` war ein unvollständiger Stub (nur 2 von 64 PROsetta-Stone-Stützstellen, `group` ohne `source`/`target`-CodeSystem). HAPI weist ConceptMaps ohne `group.source` beim Package-Install ab und bricht den Serverstart ab. 2026.3.0 enthielt noch **keine** ConceptMap und lud daher fehlerfrei.
 - **Fix:** Der ConceptMap-Stub wurde entfernt. Die BDI-II→PROMIS-Depression-T-Score-Umrechnung bleibt als vollständiger FHIRPath-Crosswalk im BDI-II-Questionnaire erhalten; eine CQL-Library-Lösung ist für 2027 geplant.
-- **Verifiziert:** 2026.5.2-rc.1 wurde in HAPI FHIR (v7.6.0) getestet und startet fehlerfrei.
+- **Verifiziert:** 2026.5.2 wurde in HAPI FHIR (v7.6.0) getestet und startet fehlerfrei.
 
 ## Package-Hygiene (nebenbei behoben)
 
 - Removed: Drei versehentlich mitgepackte IG-Publisher-Lifecycle-Artefakte (dreifache Kopie der `ImplementationGuide` mit identischer Canonical-URL) werden im Package-Build jetzt herausgefiltert, ebenso macOS-Dateien (`._*`, `.DS_Store`). Kein HAPI-Startup-Blocker, aber unsauber im Package.
-- Fixed: Einheitliche Versionierung — alle Conformance-Ressourcen tragen durchgängig `2026.5.2-rc.1` (zuvor gemischte Versionsstände bis `2026.0.0`).
+- Fixed: Einheitliche Versionierung — alle Conformance-Ressourcen tragen durchgängig `2026.5.2` (zuvor gemischte Versionsstände bis `2026.0.0`).
 
 **Version: 2026.5.1**
 

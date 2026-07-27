@@ -6,7 +6,7 @@
   "title": "MII VS PRO BDI-II",
   "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
-  "version": "2026.5.2-rc.1",
+  "version": "2026.5.2",
   "experimental": true,
   "compose": {
     "include": [
@@ -35,6 +35,58 @@
             "code": "bdi-bdi2-answer-3b"
           }
         ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1785184945214",
+    "timestamp": "2026-07-27T20:42:25.211Z",
+    "total": 7,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.5.2"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-07-27T20:42:25.211Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "code": "bdi-bdi2-answer-0",
+        "display": "0 points"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "code": "bdi-bdi2-answer-1a",
+        "display": "1 point (variant a)"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "code": "bdi-bdi2-answer-2a",
+        "display": "2 points (variant a)"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "code": "bdi-bdi2-answer-3a",
+        "display": "3 points (variant a)"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "code": "bdi-bdi2-answer-1b",
+        "display": "1 point (variant b)"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "code": "bdi-bdi2-answer-2b",
+        "display": "2 points (variant b)"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+        "code": "bdi-bdi2-answer-3b",
+        "display": "3 points (variant b)"
       }
     ]
   }

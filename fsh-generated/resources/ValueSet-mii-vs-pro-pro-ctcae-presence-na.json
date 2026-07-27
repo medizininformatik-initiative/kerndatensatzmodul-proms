@@ -6,7 +6,7 @@
   "title": "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
   "description": "3-option presence scale: Yes / No / Not applicable",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-na",
-  "version": "2026.5.2-rc.1",
+  "version": "2026.5.2",
   "experimental": true,
   "compose": {
     "include": [
@@ -21,6 +21,56 @@
           },
           {
             "code": "proctcae-optout-not-applicable"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1785184945216",
+    "timestamp": "2026-07-27T20:42:25.211Z",
+    "total": 3,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.5.2"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-07-27T20:42:25.211Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-presence-1",
+        "display": "Yes",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Ja"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-presence-0",
+        "display": "No",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Nein"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-optout-not-applicable",
+        "display": "Not applicable",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Trifft nicht auf mich zu"
           }
         ]
       }

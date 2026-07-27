@@ -6,7 +6,7 @@
   "title": "MII VS PRO PRO-CTCAE Frequency Scale",
   "description": "5-point frequency response scale for PRO-CTCAE items (0=Never, 4=Almost constantly)",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency",
-  "version": "2026.5.2-rc.1",
+  "version": "2026.5.2",
   "experimental": true,
   "compose": {
     "include": [
@@ -27,6 +27,78 @@
           },
           {
             "code": "proctcae-frequency-4"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1785184945216",
+    "timestamp": "2026-07-27T20:42:25.211Z",
+    "total": 5,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.5.2"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-07-27T20:42:25.211Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-frequency-0",
+        "display": "Never",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Nie"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-frequency-1",
+        "display": "Rarely",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Selten"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-frequency-2",
+        "display": "Occasionally",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Gelegentlich"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-frequency-3",
+        "display": "Frequently",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Häufig"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+        "code": "proctcae-frequency-4",
+        "display": "Almost constantly",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Fast immer"
           }
         ]
       }
