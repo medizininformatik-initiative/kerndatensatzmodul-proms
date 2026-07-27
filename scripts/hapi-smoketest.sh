@@ -39,6 +39,19 @@ if [ ! -f "$TARBALL" ]; then
   exit 1
 fi
 
+# Freien Port ab $1 finden — verhindert False-Negatives durch belegte Ports
+# (z.B. verwaister http.server einer früheren Runde → HAPI kann Package nicht laden).
+pick_free_port() {
+  local p="$1"
+  while (exec 3<>"/dev/tcp/127.0.0.1/$p") 2>/dev/null; do
+    exec 3>&- 3<&- 2>/dev/null || true
+    p=$((p + 1))
+  done
+  echo "$p"
+}
+SERVE_PORT="$(pick_free_port "$SERVE_PORT")"
+HAPI_PORT="$(pick_free_port "$HAPI_PORT")"
+
 CID=""
 SERVE_PID=""
 SERVE_DIR="$(mktemp -d)"
@@ -55,6 +68,7 @@ echo "▶ HAPI Smoke-Test"
 echo "  Package : $PKG_NAME#$PKG_VERSION"
 echo "  Tarball : $TARBALL"
 echo "  HAPI    : $HAPI_IMAGE"
+echo "  Ports   : serve=$SERVE_PORT hapi=$HAPI_PORT"
 
 cp "$TARBALL" "$SERVE_DIR/package.tgz"
 
