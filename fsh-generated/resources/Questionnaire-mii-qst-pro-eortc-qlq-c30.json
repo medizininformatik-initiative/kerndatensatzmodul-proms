@@ -3,7 +3,7 @@
   "id": "mii-qst-pro-eortc-qlq-c30",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2-rc.1"
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
@@ -54,7 +54,7 @@
       "id": "eortc-qlq-c30-cs",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2-rc.1"
         ]
       },
       "concept": [
@@ -235,7 +235,7 @@
           "display": "7 - Perfect"
         }
       ],
-      "version": "2026.5.0",
+      "version": "2026.5.2-rc.1",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
       "status": "active",
       "content": "complete",
@@ -246,7 +246,7 @@
       "id": "eortc-qlq-c30-4pt",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2-rc.1"
         ]
       },
       "compose": {
@@ -274,16 +274,101 @@
           }
         ]
       },
-      "version": "2026.5.0",
+      "version": "2026.5.2-rc.1",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
-      "status": "active"
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:mii-pro-expansion-1785181731250",
+        "timestamp": "2026-07-27T19:48:51.242Z",
+        "total": 4,
+        "parameter": [
+          {
+            "name": "mii-pro-version",
+            "valueString": "2026.5.2-rc.1"
+          },
+          {
+            "name": "expandedAt",
+            "valueDateTime": "2026-07-27T19:48:51.242Z"
+          }
+        ],
+        "contains": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Überhaupt nicht"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Wenig"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "quite-a-bit",
+            "display": "Quite a bit",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Mäßig"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "very-much",
+            "display": "Very much",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Sehr"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "resourceType": "ValueSet",
       "id": "eortc-qlq-c30-7pt",
       "meta": {
         "profile": [
-          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2-rc.1"
         ]
       },
       "compose": {
@@ -316,9 +401,145 @@
           }
         ]
       },
-      "version": "2026.5.0",
+      "version": "2026.5.2-rc.1",
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
-      "status": "active"
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:mii-pro-expansion-1785181731250",
+        "timestamp": "2026-07-27T19:48:51.242Z",
+        "total": 7,
+        "parameter": [
+          {
+            "name": "mii-pro-version",
+            "valueString": "2026.5.2-rc.1"
+          },
+          {
+            "name": "expandedAt",
+            "valueDateTime": "2026-07-27T19:48:51.242Z"
+          }
+        ],
+        "contains": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "1-very-poor",
+            "display": "1 - Very poor",
+            "designation": [
+              {
+                "language": "de",
+                "value": "1 - Sehr schlecht"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "2-poor",
+            "display": "2 - Poor",
+            "designation": [
+              {
+                "language": "de",
+                "value": "2 - Schlecht"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "3-fair",
+            "display": "3 - Fair",
+            "designation": [
+              {
+                "language": "de",
+                "value": "3 - Mittelmäßig"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "4-good",
+            "display": "4 - Good",
+            "designation": [
+              {
+                "language": "de",
+                "value": "4 - Gut"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "5-very-good",
+            "display": "5 - Very good",
+            "designation": [
+              {
+                "language": "de",
+                "value": "5 - Sehr gut"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 5
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "6-excellent",
+            "display": "6 - Excellent",
+            "designation": [
+              {
+                "language": "de",
+                "value": "6 - Ausgezeichnet"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 6
+              }
+            ]
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "7-perfect",
+            "display": "7 - Perfect",
+            "designation": [
+              {
+                "language": "de",
+                "value": "7 - Vollkommen"
+              }
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 7
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "item": [
@@ -840,7 +1061,7 @@
       "text": "Calculated Scores (0-100 scale)"
     }
   ],
-  "version": "2026.5.0",
+  "version": "2026.5.2-rc.1",
   "status": "active",
   "experimental": true,
   "language": "en",

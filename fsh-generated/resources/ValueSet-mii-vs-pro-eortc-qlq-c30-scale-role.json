@@ -6,7 +6,7 @@
   "title": "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
   "description": "4-point response scale for EORTC QLQ-C30 role functioning items",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
-  "version": "2026.5.0",
+  "version": "2026.5.2-rc.1",
   "experimental": true,
   "compose": {
     "include": [
@@ -24,6 +24,67 @@
           },
           {
             "code": "very-much-role"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1785181731246",
+    "timestamp": "2026-07-27T19:48:51.242Z",
+    "total": 4,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.5.2-rc.1"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-07-27T19:48:51.242Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+        "code": "not-at-all-role",
+        "display": "Not at all",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Überhaupt nicht"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+        "code": "a-little-role",
+        "display": "A little",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Wenig"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+        "code": "quite-a-bit-role",
+        "display": "Quite a bit",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Mäßig"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+        "code": "very-much-role",
+        "display": "Very much",
+        "designation": [
+          {
+            "language": "de",
+            "value": "Sehr"
           }
         ]
       }

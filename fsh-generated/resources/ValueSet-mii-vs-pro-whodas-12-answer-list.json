@@ -6,7 +6,7 @@
   "title": "MII VS PRO WHODAS 2.0 12-Item Answer List",
   "description": "5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
-  "version": "2026.5.0",
+  "version": "2026.5.2-rc.1",
   "experimental": true,
   "compose": {
     "include": [
@@ -27,6 +27,78 @@
           },
           {
             "code": "whodas12-answer-4"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:mii-pro-expansion-1785181731248",
+    "timestamp": "2026-07-27T19:48:51.242Z",
+    "total": 5,
+    "parameter": [
+      {
+        "name": "mii-pro-version",
+        "valueString": "2026.5.2-rc.1"
+      },
+      {
+        "name": "expandedAt",
+        "valueDateTime": "2026-07-27T19:48:51.242Z"
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-0",
+        "display": "None",
+        "designation": [
+          {
+            "language": "de",
+            "value": "keine"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-1",
+        "display": "Mild",
+        "designation": [
+          {
+            "language": "de",
+            "value": "geringe"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-2",
+        "display": "Moderate",
+        "designation": [
+          {
+            "language": "de",
+            "value": "mäßige"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-3",
+        "display": "Severe",
+        "designation": [
+          {
+            "language": "de",
+            "value": "starke"
+          }
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+        "code": "whodas12-answer-4",
+        "display": "Extreme or cannot do",
+        "designation": [
+          {
+            "language": "de",
+            "value": "sehr starke/nicht möglich"
           }
         ]
       }

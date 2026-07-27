@@ -17,6 +17,16 @@ move-conformance-resources:
   - delete: /**/*implementationguide*.json
   - delete: /**/*implementationguide-1.x-en.json
   - delete: /**/*MII_IG_*.json
+  # IG-Publisher-Lifecycle-Artefakte (onLoad/onGenerate/onCheck-Snapshots der
+  # ImplementationGuide) rutschen sonst als Conformance-Resource ins Package und
+  # erzeugen doppelte Canonical-URLs (…/ImplementationGuide/mii-ig-pro|2026.0.0),
+  # an denen HAPIs Package-Installer beim Start abbricht.
+  - delete: /**/onLoad-*.json
+  - delete: /**/onGenerate-*.json
+  - delete: /**/onCheck-*.json
+  # macOS-Artefakte defensiv rausfiltern
+  - delete: /**/._*.json
+  - delete: /**/.DS_Store
   - move: /package/
   - target: output
 
@@ -53,6 +63,9 @@ move-examples:
   - delete: /**/*.terminologyCapabilities*.json
   - delete: /**/*onGenerate*.json
   - delete: /**/*onCheck*.json
+  - delete: /**/*onLoad*.json
+  - delete: /**/._*.json
+  - delete: /**/.DS_Store
   - move: /package/examples
   - target: output
 

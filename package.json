@@ -1,7 +1,7 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2026.5.1",
-  "description": "MII PRO Module v2026.5.1 - Patch auf v2026.5.0: PHQ-9 linkId-Migrations-ConceptMap (mii-cm-pro-phq-9-linkid-migration) für den BREAKING linkId-Wechsel. v2026.5.0: Neue Instrumente WHODAS 2.0 12-Item (Einschränkungsscore, mit korrekten WHO-Lizenzbedingungen) und PHQ-15 (somatische Symptomlast, PHQ-D); PHQ-9/PHQ-15 auf gemeinsames PHQ-D-Block-LinkId-Schema; MII-Katalog-Codes (code.coding[mii]) auf allen Score-ObsDefs; ValueSet-Expansion im IG-Build (answerValueSet-Validierung). Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
+  "version": "2026.5.2-rc.1",
+  "description": "MII PRO Module v2026.5.2-rc.1 - RC/Patch auf v2026.5.1: Package-Hygiene-Fix. IG-Publisher-Lifecycle-Artefakte (onLoad-/onGenerate-/onCheck-Snapshots der ImplementationGuide) und macOS-Dateien werden im Firely-Bake nun herausgefiltert (verhinderten sonst doppelte Canonical-URLs → HAPI-Package-Install-Crash); unvollständiger ConceptMap-Stub mii-cm-pro-bdi-ii-to-promis-depression-observation entfernt (BDI→PROMIS-Umrechnung bleibt als FHIRPath-Crosswalk im Questionnaire, CQL geplant); fsh-generated frisch generiert → einheitliche Versionierung aller Ressourcen. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
   "keywords": [
     "MII",
     "KDS",

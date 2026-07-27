@@ -5,9 +5,21 @@ topic: Release-Notes
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Version: 2026.5.2-rc.1**
+
+Datum: 2026-07-27 (Release Candidate, in Vorbereitung)
+
+Release Candidate mit Package-Hygiene- und Konsistenz-Fixes. Kein Instrument- oder Terminologie-Inhalt geändert.
+
+## Bugfixes
+
+- **`FIXED` (Package-Install-Crash in HAPI):** Das gebaute FHIR-Package enthielt drei IG-Publisher-Lifecycle-Artefakte (`onLoad-ig-working.json`, `onLoad-ig-updated.json`, `onGenerate-ig-working.json`) — jeweils eine vollständige Kopie der `ImplementationGuide`-Ressource mit identischer Canonical-URL + Version. Dadurch schlug der Package-Import in HAPI FHIR beim Serverstart fehl (mehrere Ressourcen mit gleicher `url|version`). Der Firely-Bake-Schritt filtert diese Artefakte jetzt heraus (`onLoad-*`/`onGenerate-*`/`onCheck-*`), zusätzlich defensiv macOS-Dateien (`._*`, `.DS_Store`).
+- Removed: Unvollständiger ConceptMap-Stub `mii-cm-pro-bdi-ii-to-promis-depression-observation` (nur 2 von 64 PROsetta-Stone-Stützstellen, `group` ohne source/target-CodeSystem) endgültig entfernt. Die BDI-II→PROMIS-Depression-T-Score-Umrechnung bleibt als vollständiger FHIRPath-Crosswalk im BDI-II-Questionnaire; eine CQL-Library-Lösung ist für 2027 geplant.
+- Fixed: **Einheitliche Versionierung** — alle Conformance-Ressourcen tragen durchgängig `2026.5.2-rc.1` (zuvor gemischte Versionsstände im Package durch nicht regeneriertes `fsh-generated`).
+
 **Version: 2026.5.1**
 
-Datum: 2026-07-13 (in Vorbereitung)
+Datum: 2026-07-13 (released, Tag `v2026.5.1`, GitHub-Release + Package)
 
 Patch-Release auf 2026.5.0.
 
