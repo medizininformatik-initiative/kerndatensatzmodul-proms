@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-07-27T19:52:52+00:00",
+  "date" : "2026-07-27T20:34:21+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

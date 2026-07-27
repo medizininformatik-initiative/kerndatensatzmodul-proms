@@ -14,7 +14,7 @@
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-07-27T19:52:52+00:00",
+  "date" : "2026-07-27T20:34:21+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

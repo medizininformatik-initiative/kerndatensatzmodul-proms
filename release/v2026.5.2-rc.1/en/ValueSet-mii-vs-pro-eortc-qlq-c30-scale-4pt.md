@@ -33,7 +33,7 @@ Standard 4-point response scale for EORTC QLQ-C30 items
   "title" : "MII VS PRO EORTC QLQ-C30 4-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-27T19:52:52+00:00",
+  "date" : "2026-07-27T20:34:21+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
