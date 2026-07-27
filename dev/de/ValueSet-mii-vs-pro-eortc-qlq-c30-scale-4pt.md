@@ -1,4 +1,4 @@
-# MII VS PRO EORTC QLQ-C30 4-Point Scale - MII IG PRO v2026.5.0
+# MII VS PRO EORTC QLQ-C30 4-Point Scale - MII IG PRO v2026.5.2
 
 ## ValueSet: MII VS PRO EORTC QLQ-C30 4-Point Scale (Experimentell) 
 
@@ -28,12 +28,12 @@ Standard 4-point response scale for EORTC QLQ-C30 items
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-eortc-qlq-c30-scale-4pt",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt",
   "title" : "MII VS PRO EORTC QLQ-C30 4-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

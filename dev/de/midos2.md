@@ -1,4 +1,4 @@
-# MIDOS2 (Palliativmedizin) - MII IG PRO v2026.5.0
+# MIDOS2 (Palliativmedizin) - MII IG PRO v2026.5.2
 
 ## MIDOS2 (Palliativmedizin)
 

@@ -1,4 +1,4 @@
-# MII VS PRO WHODAS 2.0 12-Item Answer List - MII IG PRO v2026.5.0
+# MII VS PRO WHODAS 2.0 12-Item Answer List - MII IG PRO v2026.5.2
 
 ## ValueSet: MII VS PRO WHODAS 2.0 12-Item Answer List (Experimentell) 
 
@@ -28,12 +28,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-whodas-12-answer-list",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "name" : "MII_VS_PRO_WHODAS_12_Answer_List",
   "title" : "MII VS PRO WHODAS 2.0 12-Item Answer List",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

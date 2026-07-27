@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artefaktübersicht - MII IG PRO v2026.5.0</title>
+    <title>Artefaktübersicht - MII IG PRO v2026.5.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.0 - ci-build
+            <span style="display:inline-block;">2026.5.2 - ci-build
 
 
 
@@ -246,7 +246,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artefaktübersicht</h2>
   
   
@@ -1487,12 +1487,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html"
-                  title="ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation">
-                  <span title="ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation">ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation
+               <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.html"
+                  title="ConceptMap/mii-cm-pro-phq-9-linkid-migration">
+                  <span title="ConceptMap/mii-cm-pro-phq-9-linkid-migration">MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)
 </span>
                </a>
             </td>
+            <td>
+<p>Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed.</p>
+</td>
          </tr>
       </tbody>
    </table>
@@ -2593,10 +2596,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-07-07 13:59:00 +0000">
-    2026-07-07
+  <span title="2026-07-27 21:31:00 +0000">
+    2026-07-27
   </span>
 
           <br/>

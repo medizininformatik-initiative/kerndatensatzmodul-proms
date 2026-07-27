@@ -1,16 +1,14 @@
 
 
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 
 
 
-<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation - JSON Representation - MII IG PRO v2026.5.0</title>
+    <title>MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0) - MII IG PRO v2026.5.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -62,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.0 - ci-build
+            <span style="display:inline-block;">2026.5.2 - ci-build
 
 
 
@@ -208,13 +206,13 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
 
-    <div><a href="../en/ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+    <div><a href="../de/ConceptMap-mii-cm-pro-phq-9-linkid-migration.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
 
   </div>
 </div>
@@ -230,7 +228,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artefaktübersicht</b></a></li><li><b>ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -242,10 +240,10 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<!-- layouts\layout-instance-format -->
-<div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-
+<!-- layouts\layout-canonical -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
 
 
 
@@ -258,22 +256,22 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html">Narrativer Inhalt</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.xml.html">XML</a>
+      <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.xml.html">XML</a>
     </li>
   
 
 
   
-    <li class="active">
-      <a href="#">JSON</a>
+    <li>
+      <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.json.html">JSON</a>
     </li>
   
 
@@ -282,110 +280,87 @@
 
 </ul>
 
-
-<a name="root"> </a>
-
+  <a name="root"> </a>
 
 
-<h2 id="root">: ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation</h2>
+  <h2 id="root">ConceptMap: MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)
+
+  </h2>
 
   <table class="colsi" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2026.5.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration|2026.5.2"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
     <tr>
 
-      <td colspan="2">
+
+
+
+
+
+
+      <td colspan="5">
         
           Active
           
 
-            Stand: 
-2026-07-07
+            as of 
+2026-07-27
 
           
         
       </td>
 
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
     </tr>
+
+
+
+
   </table>
 
 
-<p><a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json" no-download="true">Raw json</a> | <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json" download>Download</a></p>
+<p>
+<p>Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed.</p>
+
+</p>
+
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap">resourceType</a>" : "ConceptMap",
-  "<a href="http://hl7.org/fhir/R4/resource.html#ConceptMap.id">id</a>" : "mii-cm-pro-bdi-ii-to-promis-depression-observation",
-  "<a href="http://hl7.org/fhir/R4/resource.html#ConceptMap.language">language</a>" : "de",
-  "<a href="http://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;de\&quot; lang=\&quot;de\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;German&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap mii-cm-pro-bdi-ii-to-promis-depression-observation&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mii-cm-pro-bdi-ii-to-promis-depression-observation\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmii-cm-pro-bdi-ii-to-promis-depression-observation\&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping from &lt;code&gt;unspecified code system&lt;/code&gt; to &lt;code&gt;unspecified code system&lt;/code&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;34.9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;27&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;63.2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
-  },
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">url</a>" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a>" : "2026.5.0",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">title</a>" : "ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">date</a>" : "2026-07-07T13:59:08+00:00",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">publisher</a>" : "Medizininformatik-Initiative",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Medizininformatik-Initiative",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.medizininformatik-initiative.de"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "office@medizininformatik-initiative.de"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.jurisdiction">jurisdiction</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "276"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a>" : "0",
-          "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "34.9",
-              "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">display</a>" : "34.9",
-              "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equivalent"
-            }
-          ]
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a>" : "27",
-          "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "63.2",
-              "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equivalent"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}</code></pre>
+<!--  <p>
+  Formats: <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.xml.html">XML</a>, <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.json.html">JSON</a>, <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.ttl.html">Turtle</a>
+  </p>-->
 
+  
+
+
+  <div data-fhir="generated"><p class="res-header-id"/><a name="mii-cm-pro-phq-9-linkid-migration"> </a><a name="hcmii-cm-pro-phq-9-linkid-migration"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p>Mapping from <a href="Questionnaire-mii-qst-pro-phq-9.html">MII QST PRO PHQ-9</a> to <a href="Questionnaire-mii-qst-pro-phq-9.html">MII QST PRO PHQ-9</a></p><br/><p>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>phq-phq9-q01</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2a</td></tr><tr><td>phq-phq9-q02</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2b</td></tr><tr><td>phq-phq9-q03</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2c</td></tr><tr><td>phq-phq9-q04</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2d</td></tr><tr><td>phq-phq9-q05</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2e</td></tr><tr><td>phq-phq9-q06</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2f</td></tr><tr><td>phq-phq9-q07</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2g</td></tr><tr><td>phq-phq9-q08</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2h</td></tr><tr><td>phq-phq9-q09</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2i</td></tr><tr><td>phq-phq9-q10</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq9-difficulty</td></tr></table></div>
 
   <!-- insert notes if present -->
   
 
 
+
+  
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -410,16 +385,16 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt 
-  <span title="2026-07-07 13:59:00 +0000">
-    2026-07-07
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-27 21:31:00 +0000">
+    2026-07-27
   </span>
 
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
                  
                 
           </span>

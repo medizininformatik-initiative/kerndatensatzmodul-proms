@@ -1,4 +1,4 @@
-# MII QST PRO EORTC QLQ-C30 - MII IG PRO v2026.5.0
+# MII QST PRO EORTC QLQ-C30 - MII IG PRO v2026.5.2
 
 ## Questionnaire: EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 (Experimentell) 
 
@@ -26,17 +26,17 @@ EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementatio
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-eortc-qlq-c30",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"]
   },
   "language" : "en",
   "contained" : [{
     "resourceType" : "CodeSystem",
     "id" : "eortc-qlq-c30-cs",
     "meta" : {
-      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
+      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"]
     },
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
-    "version" : "2026.5.0",
+    "version" : "2026.5.2",
     "status" : "active",
     "caseSensitive" : true,
     "content" : "complete",
@@ -177,10 +177,10 @@ EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementatio
     "resourceType" : "ValueSet",
     "id" : "eortc-qlq-c30-4pt",
     "meta" : {
-      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
+      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"]
     },
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
-    "version" : "2026.5.0",
+    "version" : "2026.5.2",
     "status" : "active",
     "compose" : {
       "include" : [{
@@ -208,10 +208,10 @@ EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementatio
     "resourceType" : "ValueSet",
     "id" : "eortc-qlq-c30-7pt",
     "meta" : {
-      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
+      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"]
     },
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
-    "version" : "2026.5.0",
+    "version" : "2026.5.2",
     "status" : "active",
     "compose" : {
       "include" : [{
@@ -264,11 +264,11 @@ EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementatio
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

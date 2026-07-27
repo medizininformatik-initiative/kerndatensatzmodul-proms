@@ -1,4 +1,4 @@
-# Changelog - MII IG PRO v2026.5.0
+# Changelog - MII IG PRO v2026.5.2
 
 ## Changelog
 

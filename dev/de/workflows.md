@@ -1,4 +1,4 @@
-# Workflows - MII IG PRO v2026.5.0
+# Workflows - MII IG PRO v2026.5.2
 
 ## Workflows
 

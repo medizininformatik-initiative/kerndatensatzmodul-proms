@@ -1,13 +1,14 @@
 
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 
 
 
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - MII IG PRO v2026.5.0</title>
+    <title>MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0) - MII IG PRO v2026.5.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -48,8 +49,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"13.94"}
+    h3,h4,h5,h6{--heading-prefix:"13.94"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.0 - ci-build
+            <span style="display:inline-block;">2026.5.2 - ci-build
 
 
 
@@ -205,13 +206,13 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
 
-    <div><a href="../de/ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.change.history.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
+    <div><a href="../en/ConceptMap-mii-cm-pro-phq-9-linkid-migration.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
 
   </div>
 </div>
@@ -227,7 +228,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artefaktübersicht</b></a></li><li><b>MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -239,10 +240,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<!-- layouts\layout-changehistory.html -->
-
-<div style="counter-reset: section 10" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!-- layouts\layout-canonical -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -256,22 +256,22 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrativer Inhalt</a>
   </li>
 
 
 
   
     <li>
-      <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.xml.html">XML</a>
+      <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json.html">JSON</a>
+      <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.json.html">JSON</a>
     </li>
   
 
@@ -280,15 +280,89 @@
 
 </ul>
 
-
   <a name="root"> </a>
-  <h2 id="root">: ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation - Change History</h2>
-  <p>History of changes for mii-cm-pro-bdi-ii-to-promis-depression-observation ConceptMap | downcase.</p>
+
+
+  <h2 id="root">ConceptMap: MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)
+
+  </h2>
+
+  <table class="colsi" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Offizielle URL</i>: <span class="copy-text">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration<button title="Klicken zum Kopieren der URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2026.5.2<button title="Klicken zum Kopieren der versionierten URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration|2026.5.2"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Active
+          
+
+            Stand: 
+2026-07-27
+
+          
+        
+      </td>
+
+
+
+      <td><i>Maschinenlesbarer Name</i>: <span style="font-family: monospace;"></span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed.</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.xml.html">XML</a>, <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.json.html">JSON</a>, <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div data-fhir="generated"><p class="res-header-id"/><a name="mii-cm-pro-phq-9-linkid-migration"> </a><a name="hcmii-cm-pro-phq-9-linkid-migration"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: de</p></div><p>Mapping from <a href="Questionnaire-mii-qst-pro-phq-9.html">MII QST PRO PHQ-9</a> to <a href="Questionnaire-mii-qst-pro-phq-9.html">MII QST PRO PHQ-9</a></p><br/><p>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>phq-phq9-q01</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2a</td></tr><tr><td>phq-phq9-q02</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2b</td></tr><tr><td>phq-phq9-q03</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2c</td></tr><tr><td>phq-phq9-q04</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2d</td></tr><tr><td>phq-phq9-q05</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2e</td></tr><tr><td>phq-phq9-q06</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2f</td></tr><tr><td>phq-phq9-q07</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2g</td></tr><tr><td>phq-phq9-q08</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2h</td></tr><tr><td>phq-phq9-q09</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq2i</td></tr><tr><td>phq-phq9-q10</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>phq-phq9-difficulty</td></tr></table></div>
+
+  <!-- insert notes if present -->
+  
+
+
 
   
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -297,8 +371,6 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
   <script type="text/javascript" src="assets/js/flags.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
@@ -313,16 +385,16 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated 
-  <span title="2026-07-07 13:59:00 +0000">
-    2026-07-07
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-07-27 21:31:00 +0000">
+    2026-07-27
   </span>
 
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
                  
                 
           </span>

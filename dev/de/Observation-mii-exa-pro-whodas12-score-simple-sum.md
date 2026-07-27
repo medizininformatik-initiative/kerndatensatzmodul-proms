@@ -1,4 +1,4 @@
-# WHODAS 2.0 12-Item Simple Sum Score Observation - MII IG PRO v2026.5.0
+# WHODAS 2.0 12-Item Simple Sum Score Observation - MII IG PRO v2026.5.2
 
 ## Beispiel Observation: WHODAS 2.0 12-Item Simple Sum Score Observation
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Observation WHODAS 2.0 12-Item](StructureDefinition-mii-pr-pro-observation-whodas12.md) version: 2026.5.0
+Profile: [MII PR PRO Observation WHODAS 2.0 12-Item](StructureDefinition-mii-pr-pro-observation-whodas12.md) version: 2026.5.2
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO Observation WHODAS 2.0 12-Item](StructureDefinition-mii-pr-
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-whodas12-score-simple-sum",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12|2026.5.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12|2026.5.2"]
   },
   "status" : "final",
   "category" : [{

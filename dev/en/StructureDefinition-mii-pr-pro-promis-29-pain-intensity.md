@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Pain Intensity - MII IG PRO v2026.5.0
+# MII PR PRO PROMIS-29 Pain Intensity - MII IG PRO v2026.5.2
 
 ## Resource Profile: MII PR PRO PROMIS-29 Pain Intensity ( Experimental ) 
 
@@ -29,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-pain-intensity",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "name" : "MII_PR_PRO_PROMIS_29_Pain_Intensity",
   "title" : "MII PR PRO PROMIS-29 Pain Intensity",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

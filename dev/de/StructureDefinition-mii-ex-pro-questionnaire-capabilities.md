@@ -1,4 +1,4 @@
-# MII PR PRO Questionnaire Capabilities - MII IG PRO v2026.5.0
+# MII PR PRO Questionnaire Capabilities - MII IG PRO v2026.5.2
 
 ## Extension: MII PR PRO Questionnaire Capabilities (Experimentell) 
 
@@ -61,12 +61,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-pro-q
   "resourceType" : "StructureDefinition",
   "id" : "mii-ex-pro-questionnaire-capabilities",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "name" : "MII_PR_PRO_Questionnaire_Capabilities",
   "title" : "MII PR PRO Questionnaire Capabilities",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

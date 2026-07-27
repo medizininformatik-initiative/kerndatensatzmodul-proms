@@ -1,4 +1,4 @@
-# MII CS PRO PHQ-15 Answers - MII IG PRO v2026.5.0
+# MII CS PRO PHQ-15 Answers - MII IG PRO v2026.5.2
 
 ## CodeSystem: MII CS PRO PHQ-15 Answers 
 
@@ -23,11 +23,11 @@ This Code system is referenced in the definition of the following value sets:
   "id" : "mii-cs-pro-phq-15-answers",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "name" : "MII_CS_PRO_PHQ_15_Answers",
   "title" : "MII CS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

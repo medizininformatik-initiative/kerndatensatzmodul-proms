@@ -1,4 +1,4 @@
-# EQ-5D-5L - MII IG PRO v2026.5.0
+# EQ-5D-5L - MII IG PRO v2026.5.2
 
 ## EQ-5D-5L
 

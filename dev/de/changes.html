@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2026.5.0</title>
+    <title>Changelog - MII IG PRO v2026.5.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.0 - ci-build
+            <span style="display:inline-block;">2026.5.2 - ci-build
 
 
 
@@ -246,7 +246,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -268,9 +268,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
 
+<p><strong>Version: 2026.5.2</strong></p>
+
+<p>Datum: 2026-07-27 (in Vorbereitung)</p>
+
+<p>Patch-Release (Fix-Only) — <strong>keine</strong> Änderungen an Instrumenten, Profilen oder Terminologie. Empfohlen für alle, die 2026.4.0–2026.5.1 einsetzen.</p>
+
+<h2 id="bugfix-import-scheitert-in-hapi-fhir-server-startet-nicht">Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)</h2>
+
+<p>Die Packages <strong>2026.4.0–2026.5.1</strong> ließen sich nicht in HAPI FHIR laden — der Server brach beim Start mit folgendem Fehler ab:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HAPI-0838: ConceptMap[url='…/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation']
+           contains at least one group without a value in ConceptMap.group.source
+→ HAPI-1286: Error installing IG … → Application run failed → Unable to start web server
+</code></pre></div></div>
+
+<ul>
+  <li><strong>Ursache:</strong> Die mit 2026.4.0 eingeführte ConceptMap <code class="language-plaintext highlighter-rouge">mii-cm-pro-bdi-ii-to-promis-depression-observation</code> war ein unvollständiger Stub (nur 2 von 64 PROsetta-Stone-Stützstellen, <code class="language-plaintext highlighter-rouge">group</code> ohne <code class="language-plaintext highlighter-rouge">source</code>/<code class="language-plaintext highlighter-rouge">target</code>-CodeSystem). HAPI weist ConceptMaps ohne <code class="language-plaintext highlighter-rouge">group.source</code> beim Package-Install ab und bricht den Serverstart ab. 2026.3.0 enthielt noch <strong>keine</strong> ConceptMap und lud daher fehlerfrei.</li>
+  <li><strong>Fix:</strong> Der ConceptMap-Stub wurde aus Quelle und Package entfernt. Die BDI-II→PROMIS-Depression-T-Score-Umrechnung bleibt als vollständiger FHIRPath-Crosswalk im BDI-II-Questionnaire erhalten; eine CQL-Library-Lösung ist für 2027 geplant.</li>
+  <li><strong>Verifiziert:</strong> 2026.5.2 wurde in HAPI FHIR (v7.6.0) getestet und startet fehlerfrei; die verbleibende ConceptMap <code class="language-plaintext highlighter-rouge">mii-cm-pro-phq-9-linkid-migration</code> wird korrekt installiert (sie trägt <code class="language-plaintext highlighter-rouge">sourceScope</code>/<code class="language-plaintext highlighter-rouge">targetScope</code>).</li>
+</ul>
+
+<h2 id="package-hygiene-nebenbei-behoben">Package-Hygiene (nebenbei behoben)</h2>
+
+<ul>
+  <li>Removed: Drei versehentlich mitgepackte IG-Publisher-Lifecycle-Artefakte (<code class="language-plaintext highlighter-rouge">onLoad-ig-working.json</code>, <code class="language-plaintext highlighter-rouge">onLoad-ig-updated.json</code>, <code class="language-plaintext highlighter-rouge">onGenerate-ig-working.json</code> — dreifache Kopie der <code class="language-plaintext highlighter-rouge">ImplementationGuide</code> mit identischer Canonical-URL) werden im Firely-Bake-Build jetzt herausgefiltert (<code class="language-plaintext highlighter-rouge">onLoad-*</code>/<code class="language-plaintext highlighter-rouge">onGenerate-*</code>/<code class="language-plaintext highlighter-rouge">onCheck-*</code>), ebenso defensiv macOS-Dateien (<code class="language-plaintext highlighter-rouge">._*</code>, <code class="language-plaintext highlighter-rouge">.DS_Store</code>). Kein HAPI-Startup-Blocker, aber unsauber im Package.</li>
+  <li>Fixed: Einheitliche Versionierung — alle Conformance-Ressourcen tragen durchgängig <code class="language-plaintext highlighter-rouge">2026.5.2</code>. Zuvor enthielten ausgelieferte Packages gemischte Versionsstände (teils bis <code class="language-plaintext highlighter-rouge">2026.0.0</code>), weil <code class="language-plaintext highlighter-rouge">fsh-generated</code> nicht bei jedem Version-Bump regeneriert wurde.</li>
+</ul>
+
+<p><strong>Version: 2026.5.1</strong></p>
+
+<p>Datum: 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.1</code>, GitHub-Release + Package)</p>
+
+<p>Patch-Release auf 2026.5.0.</p>
+
+<h2 id="migration--breaking-changes">Migration &amp; Breaking Changes</h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">BREAKING</code> (nachgezogen aus 2026.5.0):</strong> Die PHQ-9-Item-linkIds wurden in 2026.5.0 vom Schema <code class="language-plaintext highlighter-rouge">phq-phq9-q01…q10</code> auf den gemeinsamen PHQ-D-Block-Namespace (<code class="language-plaintext highlighter-rouge">phq-phq2a…i</code> + <code class="language-plaintext highlighter-rouge">phq-phq9-difficulty</code>) umgestellt. Bestehende PHQ-9-<code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code>s mit alten linkIds matchen den Questionnaire ab 2026.5.0 nicht mehr.</li>
+  <li>Added: <strong>ConceptMap <code class="language-plaintext highlighter-rouge">mii-cm-pro-phq-9-linkid-migration</code></strong> — bildet die alten PHQ-9-linkIds 1:1 auf die neuen ab (10 Items: <code class="language-plaintext highlighter-rouge">phq-phq9-q01…q09</code> → <code class="language-plaintext highlighter-rouge">phq-phq2a…i</code>, <code class="language-plaintext highlighter-rouge">phq-phq9-q10</code> → <code class="language-plaintext highlighter-rouge">phq-phq9-difficulty</code>), zur Migration bestehender Antworten. Die berechneten Items (<code class="language-plaintext highlighter-rouge">phq-phq9-score-total</code>, <code class="language-plaintext highlighter-rouge">phq-phq9-promis-tscore</code>) wurden nicht umbenannt.</li>
+</ul>
+
 <p><strong>Version: 2026.5.0</strong></p>
 
-<p>Datum: 2026-07-07 (in Vorbereitung)</p>
+<p>Datum: 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.0</code>, GitHub-Release + Package)</p>
 
 <p>Minor-Release: zwei neue Instrumente (<strong>WHODAS 2.0 12-Item</strong> und <strong>PHQ-15</strong>), Aufbau einer gemeinsamen <strong>PHQ-D-Itembank</strong> (PHQ-9/PHQ-15), einheitliche <strong>MII-Score-Codierung</strong> über alle Score-ObsDefs und eine <strong>CI-Verbesserung</strong> (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.</p>
 
@@ -610,10 +651,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-07-07 13:59:00 +0000">
-    2026-07-07
+  <span title="2026-07-27 21:31:00 +0000">
+    2026-07-27
   </span>
 
           <br/>

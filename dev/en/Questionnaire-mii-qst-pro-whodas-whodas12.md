@@ -1,4 +1,4 @@
-# MII QST PRO WHODAS 2.0 12-Item - MII IG PRO v2026.5.0
+# MII QST PRO WHODAS 2.0 12-Item - MII IG PRO v2026.5.2
 
 ## Questionnaire: MII QST PRO WHODAS 2.0 12-Item (Experimental) 
 
@@ -24,7 +24,7 @@ WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODA
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-whodas-whodas12",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"]
   },
   "language" : "en",
   "extension" : [{
@@ -59,11 +59,11 @@ WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODA
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "title" : "MII QST PRO WHODAS 2.0 12-Item",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

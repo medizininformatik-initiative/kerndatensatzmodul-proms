@@ -1,4 +1,4 @@
-# MII VS PRO MIDOS2 DGP-Severity-Skala - MII IG PRO v2026.5.0
+# MII VS PRO MIDOS2 DGP-Severity-Skala - MII IG PRO v2026.5.2
 
 ## ValueSet: MII VS PRO MIDOS2 DGP-Severity-Skala (Experimental) 
 
@@ -28,12 +28,12 @@ DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für di
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-midos2-severity",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "name" : "MII_VS_PRO_MIDOS2_Severity",
   "title" : "MII VS PRO MIDOS2 DGP-Severity-Skala",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

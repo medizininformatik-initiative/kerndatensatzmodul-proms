@@ -1,4 +1,4 @@
-# Minimal Reference Questionnaires - MII IG PRO v2026.5.0
+# Minimal Reference Questionnaires - MII IG PRO v2026.5.2
 
 ## Minimal Reference Questionnaires
 

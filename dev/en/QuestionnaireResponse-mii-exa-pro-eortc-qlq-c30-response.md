@@ -1,4 +1,4 @@
-# MII EXA PRO EORTC QLQ-C30 Response - MII IG PRO v2026.5.0
+# MII EXA PRO EORTC QLQ-C30 Response - MII IG PRO v2026.5.2
 
 ## Example QuestionnaireResponse: MII EXA PRO EORTC QLQ-C30 Response
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2026.5.0
+Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2026.5.2
 
 * [LinkID](https://hl7.org/fhir/R4/formats.html#table): mii-exa-pro-eortc-qlq-c30-response
   * [Text](https://hl7.org/fhir/R4/formats.html#table): 
@@ -145,7 +145,7 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "resourceType" : "QuestionnaireResponse",
   "id" : "mii-exa-pro-eortc-qlq-c30-response",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.5.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.5.2"]
   },
   "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
   "status" : "completed",

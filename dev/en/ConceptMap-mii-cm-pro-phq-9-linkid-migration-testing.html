@@ -1,13 +1,14 @@
 
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 
 
 
-<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - MII IG PRO v2026.5.0</title>
+    <title>MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0) - MII IG PRO v2026.5.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -48,8 +49,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"13.94"}
+    h3,h4,h5,h6{--heading-prefix:"13.94"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.0 - ci-build
+            <span style="display:inline-block;">2026.5.2 - ci-build
 
 
 
@@ -205,13 +206,13 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
 
-    <div><a href="../en/ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.change.history.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+    <div><a href="../de/ConceptMap-mii-cm-pro-phq-9-linkid-migration-testing.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
 
   </div>
 </div>
@@ -227,7 +228,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -239,10 +240,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<!-- layouts\layout-changehistory.html -->
-
-<div style="counter-reset: section 10" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!-- layouts\layout-canonical-testing -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -257,21 +257,21 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.html">Narrativer Inhalt</a>
+    <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.xml.html">XML</a>
+      <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ConceptMap-mii-cm-pro-bdi-ii-to-promis-depression-observation.json.html">JSON</a>
+      <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.json.html">JSON</a>
     </li>
   
 
@@ -280,15 +280,57 @@
 
 </ul>
 
-
   <a name="root"> </a>
-  <h2 id="root">: ConceptMap to derive PROMIS Depression T-Score from BDI-II Observation - Änderungshistorie</h2>
-  <p>Änderungshistorie für mii-cm-pro-bdi-ii-to-promis-depression-observation ConceptMap | downcase.</p>
 
-  
+  <h2 id="root">ConceptMap: MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)
+
+  </h2>
+
+
+  <table class="colsi" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+
+            as of 
+2026-07-27
+
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+
+<!-- insert intro if present -->
+
+
+
+
+<h3>Test Plans</h3>
+
+  <p><b>No test plans are currently available for the mii-cm-pro-phq-9-linkid-migration ConceptMap.</b></p>
+
+
+<h3>Test Scripts</h3>
+
+  <p><b>No test scripts are currently available for the mii-cm-pro-phq-9-linkid-migration ConceptMap.</b></p>
+
+
+<!-- insert notes if present -->
+
+
+
+
+
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -297,8 +339,6 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
   <script type="text/javascript" src="assets/js/flags.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
@@ -313,16 +353,16 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt 
-  <span title="2026-07-07 13:59:00 +0000">
-    2026-07-07
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-27 21:31:00 +0000">
+    2026-07-27
   </span>
 
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
                  
                 
           </span>

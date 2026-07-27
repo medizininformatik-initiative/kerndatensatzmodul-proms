@@ -1,4 +1,4 @@
-# MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes - MII IG PRO v2026.5.0
+# MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes - MII IG PRO v2026.5.2
 
 ## CodeSystem: MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes (Experimental) 
 
@@ -23,12 +23,12 @@ This Code system is referenced in the definition of the following value sets:
   "id" : "mii-cs-pro-whodas-12",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-  "version" : "2026.5.0",
+  "version" : "2026.5.2",
   "name" : "MII_CS_PRO_WHODAS_12",
   "title" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-07T13:59:08+00:00",
+  "date" : "2026-07-27T21:31:58+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

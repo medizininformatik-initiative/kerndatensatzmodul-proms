@@ -1,12 +1,49 @@
-# Changelog - MII IG PRO v2026.5.0
+# Changelog - MII IG PRO v2026.5.2
 
 ## Changelog
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Version: 2026.5.2**
+
+Datum: 2026-07-27 (in Vorbereitung)
+
+Patch-Release (Fix-Only) — **keine** Änderungen an Instrumenten, Profilen oder Terminologie. Empfohlen für alle, die 2026.4.0–2026.5.1 einsetzen.
+
+## Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)
+
+Die Packages **2026.4.0–2026.5.1** ließen sich nicht in HAPI FHIR laden — der Server brach beim Start mit folgendem Fehler ab:
+
+```
+HAPI-0838: ConceptMap[url='…/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression-observation']
+           contains at least one group without a value in ConceptMap.group.source
+→ HAPI-1286: Error installing IG … → Application run failed → Unable to start web server
+
+```
+
+* **Ursache:** Die mit 2026.4.0 eingeführte ConceptMap `mii-cm-pro-bdi-ii-to-promis-depression-observation` war ein unvollständiger Stub (nur 2 von 64 PROsetta-Stone-Stützstellen, `group` ohne `source`/`target`-CodeSystem). HAPI weist ConceptMaps ohne `group.source` beim Package-Install ab und bricht den Serverstart ab. 2026.3.0 enthielt noch **keine** ConceptMap und lud daher fehlerfrei.
+* **Fix:** Der ConceptMap-Stub wurde aus Quelle und Package entfernt. Die BDI-II→PROMIS-Depression-T-Score-Umrechnung bleibt als vollständiger FHIRPath-Crosswalk im BDI-II-Questionnaire erhalten; eine CQL-Library-Lösung ist für 2027 geplant.
+* **Verifiziert:** 2026.5.2 wurde in HAPI FHIR (v7.6.0) getestet und startet fehlerfrei; die verbleibende ConceptMap `mii-cm-pro-phq-9-linkid-migration` wird korrekt installiert (sie trägt `sourceScope`/`targetScope`).
+
+## Package-Hygiene (nebenbei behoben)
+
+* Removed: Drei versehentlich mitgepackte IG-Publisher-Lifecycle-Artefakte (`onLoad-ig-working.json`, `onLoad-ig-updated.json`, `onGenerate-ig-working.json` — dreifache Kopie der `ImplementationGuide` mit identischer Canonical-URL) werden im Firely-Bake-Build jetzt herausgefiltert (`onLoad-*`/`onGenerate-*`/`onCheck-*`), ebenso defensiv macOS-Dateien (`._*`, `.DS_Store`). Kein HAPI-Startup-Blocker, aber unsauber im Package.
+* Fixed: Einheitliche Versionierung — alle Conformance-Ressourcen tragen durchgängig `2026.5.2`. Zuvor enthielten ausgelieferte Packages gemischte Versionsstände (teils bis `2026.0.0`), weil `fsh-generated` nicht bei jedem Version-Bump regeneriert wurde.
+
+**Version: 2026.5.1**
+
+Datum: 2026-07-13 (released, Tag `v2026.5.1`, GitHub-Release + Package)
+
+Patch-Release auf 2026.5.0.
+
+## Migration & Breaking Changes
+
+* **`BREAKING` (nachgezogen aus 2026.5.0):** Die PHQ-9-Item-linkIds wurden in 2026.5.0 vom Schema `phq-phq9-q01…q10` auf den gemeinsamen PHQ-D-Block-Namespace (`phq-phq2a…i` + `phq-phq9-difficulty`) umgestellt. Bestehende PHQ-9-`QuestionnaireResponse`s mit alten linkIds matchen den Questionnaire ab 2026.5.0 nicht mehr.
+* Added: **ConceptMap `mii-cm-pro-phq-9-linkid-migration`** — bildet die alten PHQ-9-linkIds 1:1 auf die neuen ab (10 Items: `phq-phq9-q01…q09` → `phq-phq2a…i`, `phq-phq9-q10` → `phq-phq9-difficulty`), zur Migration bestehender Antworten. Die berechneten Items (`phq-phq9-score-total`, `phq-phq9-promis-tscore`) wurden nicht umbenannt.
+
 **Version: 2026.5.0**
 
-Datum: 2026-07-07 (in Vorbereitung)
+Datum: 2026-07-13 (released, Tag `v2026.5.0`, GitHub-Release + Package)
 
 Minor-Release: zwei neue Instrumente (**WHODAS 2.0 12-Item** und **PHQ-15**), Aufbau einer gemeinsamen **PHQ-D-Itembank** (PHQ-9/PHQ-15), einheitliche **MII-Score-Codierung** über alle Score-ObsDefs und eine **CI-Verbesserung** (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.
 
