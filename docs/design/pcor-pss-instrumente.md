@@ -252,10 +252,38 @@ Nach dieser Regel wandern zwei Punkte aus dem KDS-Modul in den PCOR-MII-IG:
   NRS-Items ohne Publikation. Gehört damit **nicht** als kanonisches Instrument ins KDS-Modul.
 - **`py5.9` IPQ-S** — ein Freitext-Item, ohnehin kein Instrument (siehe Abschnitt 2).
 
-Grenzfall **GI-PS**: publiziert (doi:10.13109/zptm.2023.69.1.56), in PCOR aber nur in Fragmenten als
-Anamnese-Items genutzt (`GIPS-REL`, `GIPS-CD`, `GIPS-ALC*`, `GIPS-SMO*`). Solange nur Fragmente
-gebraucht werden, gehören sie in die Use-Case-Schicht; erst wenn das vollständige Instrument
-gebraucht wird, lohnt die kanonische Fassung im KDS-Modul.
+**Fragmentarisch genutzte Instrumente gehören trotzdem in die Itembank.** Das betrifft GI-PS
+(publiziert, doi:10.13109/zptm.2023.69.1.56, in PCOR nur als Anamnese-Fragmente `GIPS-REL`,
+`GIPS-CD`, `GIPS-ALC*`, `GIPS-SMO*`) ebenso wie ACE, ERQ, EDE-Q, ANSOCQ, SSUK und MTSOSD-R59. Für sie
+gilt **nicht** die Use-Case-Regel, und zwar aus zwei Gründen:
+
+1. **Item-Identität.** Der linkId ist die kanonische Identität einer Frage. Bekäme ein
+   GI-PS-Fragment einen PCOR-erfundenen linkId, trüge dieselbe Frage später — sobald jemand das
+   vollständige Instrument nutzt — einen zweiten, abweichenden linkId. Das ist exakt die Situation,
+   die die PHQ-9-linkId-Migration (`mii-cm-pro-phq-9-linkid-migration`) nachträglich reparieren
+   musste. Die kanonische Vergabe muss **von Anfang an** stimmen, auch wenn das vollständige
+   Instrument erst später umgesetzt wird.
+2. **Score-Fähigkeit ist Modul-Wissen.** Ob sich aus den erhobenen Fragmenten ein valider Subscore
+   berechnen lässt, ist nur beantwortbar, wenn die Subskalenstruktur des Originalinstruments bekannt
+   und dokumentiert ist. Diese Information gehört zur normativen Instrumentendefinition, nicht in
+   die Studienbeschreibung.
+
+**Praktische Konsequenz — zwei Stufen statt Entweder-oder:**
+
+| Stufe | Inhalt | Aufwand |
+|---|---|---|
+| **Itembank-Eintrag** (immer, sofort) | Kanonische linkIds und Item-Codes des Instruments, Subskalenstruktur, Scoring-Regel — auch für nicht erhobene Items dokumentiert | gering |
+| **Vollständiges Questionnaire** (bei Bedarf) | Alle Item-Texte, Antwortskalen, Score-Definition, CQL | hoch, lizenzabhängig |
+
+Für fragmentarisch genutzte Instrumente wird also mindestens der **Itembank-Eintrag** angelegt: Die
+linkId-Systematik des vollständigen Instruments wird festgelegt und dokumentiert, auch wenn zunächst
+nur die erhobenen Items als Questionnaire umgesetzt werden. Damit ist die Namensvergabe zukunftsfest
+und die Frage der Subscore-Berechenbarkeit beantwortbar, ohne dass sofort das komplette Instrument
+(samt Lizenzklärung für alle Item-Texte) umgesetzt werden muss.
+
+Unberührt davon bleibt die Zuordnung von **Ad-hoc-Items ohne Publikation** (`EXPECT`, `CPCOR-*`,
+`IPQ_S1`) zur Use-Case-Schicht — dort gibt es kein Originalinstrument, dessen Systematik man
+verletzen könnte.
 
 ### Offene Frage
 
