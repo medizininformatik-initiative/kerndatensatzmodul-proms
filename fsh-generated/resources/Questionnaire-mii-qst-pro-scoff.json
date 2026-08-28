@@ -1,0 +1,266 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-scoff",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff",
+  "title": "MII QST PRO SCOFF",
+  "description": "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999), German version per PCOR-MII item dictionary",
+  "code": [
+    {
+      "code": "scoff",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "SCOFF Questionnaire"
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "scoffSum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "scoff-intro",
+      "type": "display",
+      "text": "In den nächsten Fragen geht es um das Thema Essen:",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "The following questions are about eating:"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "linkId": "scoff-q01",
+      "type": "choice",
+      "prefix": "1",
+      "text": "Übergeben Sie sich, wenn Sie sich unangenehm voll fühlen?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Do you make yourself Sick because you feel uncomfortably full?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+    },
+    {
+      "linkId": "scoff-q02",
+      "type": "choice",
+      "prefix": "2",
+      "text": "Machen Sie sich Sorgen, weil Sie manchmal nicht mit dem Essen aufhören können?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Do you worry you have lost Control over how much you eat?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+    },
+    {
+      "linkId": "scoff-q03",
+      "type": "choice",
+      "prefix": "3",
+      "text": "Haben Sie in der letzten Zeit mehr als 6 kg in 3 Monaten abgenommen?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Have you recently lost more than One stone (6.35 kg) in a 3 month period?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+    },
+    {
+      "linkId": "scoff-q04",
+      "type": "choice",
+      "prefix": "4",
+      "text": "Finden Sie sich zu dick, während andere Sie zu dünn finden?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Do you believe yourself to be Fat when others say you are too thin?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+    },
+    {
+      "linkId": "scoff-q05",
+      "type": "choice",
+      "prefix": "5",
+      "text": "Würden Sie sagen, dass Essen Ihr Leben sehr beeinflusst?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Would you say that Food dominates your life?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "scoff-total",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+          "display": "SCOFF Total Score"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%scoffSum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "scoff-score-total",
+      "type": "decimal",
+      "prefix": "Summenwert",
+      "readOnly": true,
+      "text": "SCOFF Summenwert (0-5)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "SCOFF Total Score (0-5)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "2026.5.2",
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "copyright": "SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Frei verfügbar — keine Genehmigung für Reproduktion, Übersetzung oder Nutzung erforderlich. Lizenz-Status: frei verfügbar (Tier A)."
+}

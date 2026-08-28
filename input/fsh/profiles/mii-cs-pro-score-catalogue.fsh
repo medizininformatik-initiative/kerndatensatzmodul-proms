@@ -78,3 +78,6 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 // PRO-CTCAE Scores (higher = worse AE burden)
 * #proctcae-composite-grade "PRO-CTCAE Composite Grade (per Adverse Event)"
 * #proctcae-acs "PRO-CTCAE Average Composite Score (ACS)"
+
+// SCOFF Score (higher = greater likelihood of an eating disorder)
+* #scoff-total "SCOFF Total Score (0-5)"
