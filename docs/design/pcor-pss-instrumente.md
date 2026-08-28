@@ -294,3 +294,38 @@ Assembly-Questionnaire) oder per `derivedFrom` **ableitet**. Direkt = keine Redu
 Möglichkeit, Pflichtfelder oder Reihenfolge use-case-spezifisch festzulegen; abgeleitet = mehr
 Ressourcen, dafür saubere Subset-Semantik. Vorschlag: direkt referenzieren, wo das vollständige
 Instrument erhoben wird; `derivedFrom` nur für echte Teilmengen.
+
+## 10. Drei Schichten: PRO-Modul (Infrastruktur) · PRO Library (Instrumente) · PCOR-MII-IG (Use Case)
+
+Abschnitt 9 unterscheidet normativ vs. Use Case. Innerhalb des normativen Teils gibt es aber noch
+eine zweite Grenze, die für die Umsetzung wichtig ist — zwischen der **instrumentenunabhängigen
+Infrastruktur** und dem **Instrumenten-Katalog** („PRO Library" im IG-Menü).
+
+| Schicht | Inhalt | Kriterium |
+|---|---|---|
+| **PRO-Modul — Infrastruktur** | Profile (`MII_PR_PRO_Questionnaire`, `-QuestionnaireResponse`, Score-Blueprint/-Instance), Extensions (Capabilities, ScoreHealthCorrelation), Logical Model, Domänenmodell, Katalog-CodeSystems, **generische Antwortskalen**, Scoring-Architektur, ID-/Itembank-Systematik | Gilt für **alle** Instrumente, ändert sich nicht, wenn ein Instrument hinzukommt |
+| **PRO Library — Instrumenten-Katalog** | Je Instrument: Questionnaire, instrumentenspezifische Antwort-CS/VS mit `ordinalValue`, Score-ObservationDefinition, CQL-Library, Capabilities-Deklaration, Lizenz-Tier, Itembank-Eintrag | Wächst mit jedem Instrument, jedes Element gehört genau **einem** Instrument |
+| **PCOR-MII-IG — Use Case** | Assembly (Entität × Phase), Demografie/Anamnese, Subset-Questionnaires (`derivedFrom`), Variablen-Mapping, Standortvarianten | Beschreibt **eine Studie**, nicht ein Instrument |
+
+### Was das für die PSS-Umsetzung konkret heißt
+
+Die neun PSS-Instrumente sind **PRO-Library**-Inhalt: je ein Questionnaire, eigene Antwortskala,
+Score-Definition, CQL-Library. Was sie *benutzen* — Score-Profile, Capabilities-Extension,
+Katalog-Einträge — ist bestehende Infrastruktur und wird nur referenziert, nicht kopiert.
+
+**Damit klärt sich auch die offene Entscheidung `py5.10` (geteilte Ja/Nein-Skala):** Eine
+Antwortskala, die von SCOFF, WI-7 und PC-PTSD gleichermaßen genutzt wird, ist per Definition
+*nicht* instrumentenspezifisch — sie gehört in die **Infrastruktur-Schicht**, nicht zu einem der
+drei Instrumente. Das Kriterium ist damit nicht mehr Geschmackssache, sondern folgt der
+Schichtenlogik: gehört ein Artefakt genau einem Instrument, liegt es in der PRO Library; wird es
+von mehreren geteilt, ist es Infrastruktur.
+
+### Hinweis zur Weiterentwicklung
+
+Die PRO Library ist derzeit im Wesentlichen eine **Katalogseite** im IG (Tabelle mit Instrumenten
+und Capabilities) und noch keine eigene strukturelle Schicht. Eine Überarbeitung dieses Konzepts
+ist vorgesehen (eigener Bead) — unter anderem im Zusammenhang mit der Zwei-Schichten-Distribution
+(Formserver vs. Package) und der Lizenz-Tier-Steuerung. Die hier getroffene Zuordnung ist deshalb
+**inhaltlich** gemeint und soll die spätere strukturelle Umsetzung nicht vorwegnehmen: Ob die
+PRO Library eines Tages ein eigenes Package, eine IG-Sektion oder ein Formserver-Katalog wird,
+ändert nichts daran, *welche* Artefakte instrumentengebunden und welche instrumentenunabhängig sind.
