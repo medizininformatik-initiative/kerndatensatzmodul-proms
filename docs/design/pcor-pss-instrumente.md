@@ -217,3 +217,52 @@ Questionnaire-JSON gegen die Excel-Quelle (Item-Texte, Optionen, Gewichte zeiche
 HTML-Preview über den `render-questionnaire`-Skill → am Ende ein gemeinsamer HAPI-Smoke-Test.
 Der Excel-Abgleich ist das eigentliche Review-Werkzeug; er findet die Fehlerklasse, die beim
 Durchklicken systematisch übersehen wird.
+
+## 9. Schichtentrennung: Was gehört in den PCOR-MII-IG?
+
+Die Trennlinie ist **nicht** „PSS-Instrumente vs. Rest", sondern:
+
+> **Publiziertes, validiertes Instrument → KDS-Modul (normativ, wiederverwendbar).
+> Studienspezifische Zusammenstellung und Ad-hoc-Items → PCOR-MII-IG (Use-Case-Schicht).**
+
+Alles, was ein anderer Use Case (LongCARE, DZPG, Schlafmedizin) unverändert nachnutzen könnte,
+gehört ins KDS-Modul. Alles, was nur im Kontext der PCOR-Studie Sinn ergibt, gehört in den
+PCOR-MII-IG — sonst erbt jede spätere Nachnutzung PCOR-Spezifika mit.
+
+### KDS-Modul (normative Fassung)
+Kanonische Instrumente (SCOFF, WI-7, OPD-SFK, ISR-Z, SSD-12, PC-PTSD, EURONET-SOMA,
+PROMIS-Kurzformen, PHQ-Familie), ihre Antwort-CodeSystems/ValueSets mit `ordinalValue`,
+Score-ObservationDefinitions und CQL-Libraries.
+
+### PCOR-MII-IG (Use-Case-Schicht)
+
+| Inhalt | Warum dort |
+|---|---|
+| **Demografie & Anamnese** (`OECD-*`, `GIPS-*`, `CPCOR-*`, `UKE-*`, `UKHD-*`) — rund die Hälfte aller Items im PSS-Sheet | Studien-Erhebungsinstrumente, teils standortspezifisch (`UKHD-MEDI` vs. `UKE-MEDI`); kein nachnutzbares PRO-Instrument |
+| **Erhebungs-Zusammenstellung** je Entität × Phase | Das Sheet *Domain Overview* ordnet jedem Instrument pro Entität (PSS/AN/NTXr/NTXd) und Phase (Screening/Monitoring/Outcome) eine A/B-Einstufung zu — reine Studienlogik |
+| **Subset-Questionnaires** mit `derivedFrom` (PHQ-4/-8, ACE erste 5, ERQ-6, EDE-Q6, ANSOCQ-2, SSUK-2, MTSOSD-R59-Einzelfragen) | Konvention: Teilmengen gehören in die Use-Case-Schicht, das KDS-Modul führt die vollständigen Instrumente |
+| **Mapping PCOR-Variablen-ID → linkId** | Studien-Nomenklatur (siehe Abschnitt 3) |
+| **Ad-hoc-Itemsets ohne Publikation** — `EXPECT`, `IPQ_S1`, `CPCOR-*` | Keine validierten Instrumente, sondern für die Studie formulierte Fragen |
+
+### Konsequenz für bestehende Beads
+
+Nach dieser Regel wandern zwei Punkte aus dem KDS-Modul in den PCOR-MII-IG:
+
+- **`py5.7` EXPECT** — laut DIZ-Tabelle „kein standardisierter Fragebogen", drei ad-hoc formulierte
+  NRS-Items ohne Publikation. Gehört damit **nicht** als kanonisches Instrument ins KDS-Modul.
+- **`py5.9` IPQ-S** — ein Freitext-Item, ohnehin kein Instrument (siehe Abschnitt 2).
+
+Grenzfall **GI-PS**: publiziert (doi:10.13109/zptm.2023.69.1.56), in PCOR aber nur in Fragmenten als
+Anamnese-Items genutzt (`GIPS-REL`, `GIPS-CD`, `GIPS-ALC*`, `GIPS-SMO*`). Solange nur Fragmente
+gebraucht werden, gehören sie in die Use-Case-Schicht; erst wenn das vollständige Instrument
+gebraucht wird, lohnt die kanonische Fassung im KDS-Modul.
+
+### Offene Frage
+
+Der PCOR-MII-IG referenziert die KDS-Instrumente über eine Package-Dependency
+(`de.medizininformatikinitiative.kerndatensatz.pros`, derzeit gepinnt auf 2026.3.0). Zu klären ist,
+ob die Use-Case-Schicht die Instrumente **direkt referenziert** (Canonical im
+Assembly-Questionnaire) oder per `derivedFrom` **ableitet**. Direkt = keine Redundanz, aber keine
+Möglichkeit, Pflichtfelder oder Reihenfolge use-case-spezifisch festzulegen; abgeleitet = mehr
+Ressourcen, dafür saubere Subset-Semantik. Vorschlag: direkt referenzieren, wo das vollständige
+Instrument erhoben wird; `derivedFrom` nur für echte Teilmengen.
