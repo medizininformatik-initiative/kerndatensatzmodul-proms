@@ -8,7 +8,7 @@
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff",
   "title": "MII QST PRO SCOFF",
-  "description": "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999), German version per PCOR-MII item dictionary",
+  "description": "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation",
   "code": [
     {
       "code": "scoff",
@@ -55,18 +55,18 @@
     {
       "linkId": "scoff-intro",
       "type": "display",
-      "text": "In den nächsten Fragen geht es um das Thema Essen:",
+      "text": "The following questions are about eating:",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "The following questions are about eating:"
+                "valueString": "In den nächsten Fragen geht es um das Thema Essen:"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -75,124 +75,259 @@
       }
     },
     {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
       "linkId": "scoff-q01",
       "type": "choice",
       "prefix": "1",
-      "text": "Übergeben Sie sich, wenn Sie sich unangenehm voll fühlen?",
+      "text": "Do you make yourself Sick because you feel uncomfortably full?",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Do you make yourself Sick because you feel uncomfortably full?"
+                "valueString": "Übergeben Sie sich, wenn Sie sich unangenehm voll fühlen?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+      }
     },
     {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
       "linkId": "scoff-q02",
       "type": "choice",
       "prefix": "2",
-      "text": "Machen Sie sich Sorgen, weil Sie manchmal nicht mit dem Essen aufhören können?",
+      "text": "Do you worry you have lost Control over how much you eat?",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Do you worry you have lost Control over how much you eat?"
+                "valueString": "Machen Sie sich Sorgen, weil Sie manchmal nicht mit dem Essen aufhören können?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+      }
     },
     {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
       "linkId": "scoff-q03",
       "type": "choice",
       "prefix": "3",
-      "text": "Haben Sie in der letzten Zeit mehr als 6 kg in 3 Monaten abgenommen?",
+      "text": "Have you recently lost more than One stone in a 3 month period?",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Have you recently lost more than One stone (6.35 kg) in a 3 month period?"
+                "valueString": "Haben Sie in der letzten Zeit mehr als 6 kg in 3 Monaten abgenommen?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+      }
     },
     {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
       "linkId": "scoff-q04",
       "type": "choice",
       "prefix": "4",
-      "text": "Finden Sie sich zu dick, während andere Sie zu dünn finden?",
+      "text": "Do you believe yourself to be Fat when others say you are too thin?",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Do you believe yourself to be Fat when others say you are too thin?"
+                "valueString": "Finden Sie sich zu dick, während andere Sie zu dünn finden?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+      }
     },
     {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
       "linkId": "scoff-q05",
       "type": "choice",
       "prefix": "5",
-      "text": "Würden Sie sagen, dass Essen Ihr Leben sehr beeinflusst?",
+      "text": "Would you say that Food dominates your life?",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "Would you say that Food dominates your life?"
+                "valueString": "Würden Sie sagen, dass Essen Ihr Leben sehr beeinflusst?"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
         ]
-      },
-      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-yes-no-answers"
+      }
     },
     {
       "code": [
@@ -236,20 +371,20 @@
       ],
       "linkId": "scoff-score-total",
       "type": "decimal",
-      "prefix": "Summenwert",
+      "prefix": "Score",
       "readOnly": true,
-      "text": "SCOFF Summenwert (0-5)",
+      "text": "SCOFF Total Score (0-5)",
       "_text": {
         "extension": [
           {
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "en"
+                "valueCode": "de"
               },
               {
                 "url": "content",
-                "valueString": "SCOFF Total Score (0-5)"
+                "valueString": "SCOFF Summenwert (0-5)"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -261,6 +396,6 @@
   "version": "2026.5.2",
   "status": "active",
   "experimental": true,
-  "language": "de",
-  "copyright": "SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Frei verfügbar — keine Genehmigung für Reproduktion, Übersetzung oder Nutzung erforderlich. Lizenz-Status: frei verfügbar (Tier A)."
+  "language": "en",
+  "copyright": "SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A)."
 }
