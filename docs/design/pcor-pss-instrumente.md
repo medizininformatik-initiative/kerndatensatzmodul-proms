@@ -77,11 +77,22 @@ zweistellig. Die PCOR-Variablen-IDs werden dafür normalisiert:
 (`phq1a`, `phq2a`, `phq2i`) — das PSS-Set fügt sich also ohne Umschlüsselung in die bestehende
 PHQ-Itembank. Das Suizid-Item `phq2i` (PHQ-SI) wird zu `phq-phq2i`.
 
-**Rückverfolgbarkeit zur Quellstudie:** Die PCOR-Variablen-ID wird **nicht** im linkId geführt,
-sondern als Item-Code (`item.code`, System `mii-cs-pro-pcor-item-ids`) mitgegeben. Damit bleibt die
-ETL-Zuordnung aus den Studiendaten maschinell möglich, ohne die Itembank an Studien-Nomenklatur zu
-binden. *(Alternative wäre eine ConceptMap; der Item-Code ist der leichtere Weg und vermeidet eine
-zusätzlich zu pflegende Ressource.)*
+**Rückverfolgbarkeit zur Quellstudie — bewusst NICHT im Questionnaire.** Die PCOR-Variablen-IDs
+gehören weder in den linkId noch in `item.code`. `Questionnaire.item.code` ist vom Typ `Coding` und
+laut Spezifikation für die *fachliche Terminologie* der Frage bestimmt („a terminology code that
+corresponds to this group or question, e.g. a code from LOINC"). Entscheidend: Bei
+`observation-extract` wird `item.code` zu **`Observation.code`** — eine dort eingetragene
+Studien-Variablen-ID würde als semantischer Code der extrahierten Observation erscheinen und die
+Terminologie-Ebene dauerhaft verunreinigen. `item.code` trägt daher ausschließlich LOINC/SNOMED
+bzw. MII-Item-Codes.
+
+**Konsequenz — Schichtentrennung:** Das KDS-Modul publiziert die **normative Fassung** des
+Instruments, frei von Use-Case-Spezifika. Die Zuordnung PCOR-Variablen-ID → linkId ist eine Frage
+der Use-Case-Schicht und gehört in das **PCOR-MII-Repo** — dort, wo laut Konvention ohnehin schon
+die Subset-Questionnaires liegen. Technisch als ConceptMap oder als Mapping-Tabelle der
+ETL-Strecke; beides hält die normative Ressource sauber. Damit bleibt die Ingestion von
+Studiendaten möglich, ohne dass jede spätere Nachnutzung des Instruments die PCOR-Nomenklatur
+miterbt.
 
 ## 4. Antwortmodellierung: `answerValueSet` statt `answerOption`
 
@@ -190,6 +201,8 @@ verwendeten Items. Solche Subset-Questionnaires gehören laut Konvention in das 
 5. **Sleep-Related-Impairment-Items** gegen die Originalquelle verifizieren (Merged-Cell-Fallstrick).
 6. **OPD-SFK-Rücksprache** mit den Autor:innen dokumentieren.
 7. **Englische Fassungen**: Für welche Instrumente existieren validierte englische Versionen?
+8. **Ort der PCOR-Variablen-Zuordnung**: ConceptMap im PCOR-MII-Repo oder Mapping-Tabelle in der
+   ETL-Strecke? (Nicht im KDS-Modul — siehe Abschnitt 3.)
 
 ## 8. Umsetzungsreihenfolge
 
