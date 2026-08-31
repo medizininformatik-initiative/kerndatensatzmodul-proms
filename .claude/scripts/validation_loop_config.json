@@ -11,7 +11,15 @@
     "java_command": "/opt/homebrew/opt/openjdk@17/bin/java",
     "tx_server": "http://localhost:3000",
     "version": "4.0.1",
-    "extra_args": ["-allow-example-urls", "true", "-display-issues-are-warnings"],
+    "extra_args": [
+      "-allow-example-urls",
+      "true",
+      "-display-issues-are-warnings",
+      "-ig",
+      "hl7.fhir.uv.sdc#3.0.0",
+      "-ig",
+      "fsh-generated/resources"
+    ],
     "max_retries": 3,
     "timeout_seconds": 300,
     "validate_changed_only": true
@@ -25,6 +33,9 @@
     "UNABLE_TO_INFER_CODESYSTEM",
     "Terminology_TX_NoValid_16",
     "MSG_DRAFT",
-    "all-languages"
+    "all-languages",
+    "urn:ietf:bcp:47",
+    "Die System-URI konnte f",
+    "Type-level request to $validate-code must specify"
   ]
 }

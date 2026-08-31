@@ -71,6 +71,7 @@ Usage: #definition
 * item[1].linkId = "scoff-q01"
 * item[1].type = #choice
 * item[1].prefix = "1"
+* item[1].code = $LNC#99999-XXXX "Ein Code, den es nicht gibt"
 * item[1].text = "Do you make yourself Sick because you feel uncomfortably full?"
 * item[1].text.extension[0].url = $hl7-translation
 * item[1].text.extension[0].extension[0].url = "lang"

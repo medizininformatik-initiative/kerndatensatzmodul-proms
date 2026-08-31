@@ -789,6 +789,14 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-scoff"
+        },
+        "name": "MII ObsDef PRO Score SCOFF",
+        "description": "SCOFF total score (0-5) — screening for eating disorders",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-pro-depression-t-score"
         },
         "name": "MII PR PRO Depression Domain T-Score",
@@ -1165,6 +1173,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-scoff"
+        },
+        "name": "MII QST PRO SCOFF",
+        "description": "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-whodas-whodas12"
         },
         "name": "MII QST PRO WHODAS 2.0 12-Item",
@@ -1485,6 +1501,13 @@
         },
         "name": "PROMIS Depression T-Score, derived from BDI-II Observation Example",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-scoff-response"
+        },
+        "name": "SCOFF Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
         "reference": {
