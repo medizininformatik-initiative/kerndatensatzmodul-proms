@@ -4,37 +4,37 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 Datum: 2026-09-01 (in Vorbereitung)
 
-Minor-Release — **sechs neue Instrumente** des PCOR-MII-PSS-Sets (Persistent Somatic Syndrome), eine neue geteilte Antwortskala und eine praezisierte Konvention zur Display-Sprache. Keine Breaking Changes an bestehenden Ressourcen.
+Minor-Release — **sechs neue Instrumente** des PCOR-MII-PSS-Sets (Persistent Somatic Syndrome), eine neue geteilte Antwortskala und eine präzisierte Konvention zur Display-Sprache. Keine Breaking Changes an bestehenden Ressourcen.
 
 ## Neue Instrumente
 
 | Instrument | Items | Antwortskala | Score |
 |---|---|---|---|
-| **SCOFF** (Morgan et al. 1999) | 5 | binaer (SNOMED CT) | Summe 0-5 |
-| **WI-7 / Whiteley-7** (Fink et al. 1999) | 7 | binaer (SNOMED CT) | Summe 0-7 |
-| **PC-PTSD** (Prins et al. 2003) | 4 | binaer (SNOMED CT) | Summe 0-4 |
+| **SCOFF** (Morgan et al. 1999) | 5 | binär (SNOMED CT) | Summe 0-5 |
+| **WI-7 / Whiteley-7** (Fink et al. 1999) | 7 | binär (SNOMED CT) | Summe 0-7 |
+| **PC-PTSD** (Prins et al. 2003) | 4 | binär (SNOMED CT) | Summe 0-4 |
 | **SSD-12** (Toussaint et al. 2016) | 12 | 5-stufig, eigenes CodeSystem | Summe 0-48 |
 | **ISR-Z** (Tritt et al. 2008) | 3 | 5-stufig, eigenes CodeSystem | **Mittelwert** 0-4 |
 | **EURONET-SOMA** (Rief et al. 2017) | 2 | NRS 0-10 | kein Score (Einzelitems) |
 
-Alle Item-Texte stammen aus dem PCOR-MII Item Level Dictionary und wurden zeichengenau gegen diese Quelle geprueft. Alle Beispiel-Scores sind aus den `ordinalValue`-Gewichten nachgerechnet.
+Alle Item-Texte stammen aus dem PCOR-MII Item Level Dictionary und wurden zeichengenau gegen diese Quelle geprüft. Alle Beispiel-Scores sind aus den `ordinalValue`-Gewichten nachgerechnet.
 
 ## Added: geteilte Ja/Nein-Antwortskala
 
-Neu ist das RuleSet `YesNoAnswerOptions` (`input/fsh/rulesets/answer-scales.fsh`) fuer generische Ja/Nein-Antworten. Es verwendet **SNOMED CT `373066001` (Yes) / `373067005` (No)** gemaess der Empfehlung des TC Terminologien (HL7 Deutschland / Interop Council) — statt eines selbstdefinierten MII-CodeSystems, das standardisierte Terminologie verdoppeln wuerde.
+Neu ist das RuleSet `YesNoAnswerOptions` (`input/fsh/rulesets/answer-scales.fsh`) für generische Ja/Nein-Antworten. Es verwendet **SNOMED CT `373066001` (Yes) / `373067005` (No)** gemäß der Empfehlung des TC Terminologien (HL7 Deutschland / Interop Council) — statt eines selbstdefinierten MII-CodeSystems, das standardisierte Terminologie verdoppeln würde.
 
 Da SNOMED-Konzepten keine `ordinalValue`-Property angehaengt werden kann, nutzen diese Instrumente **inline `answerOption`** statt `answerValueSet`. Damit tragen die Antworten in QuestionnaireResponses eine terminologisch eindeutige Kodierung mit `system` und `code` statt systemloser Integer.
 
-## Praezisiert: Display-Sprache in Antwort-CodeSystems
+## Präzisiert: Display-Sprache in Antwort-CodeSystems
 
 Der `display`-Wert eines Antwortkonzepts steht in der **Sprache des Fragebogens**; weitere Sprachen werden als `designation` gefuehrt. Das ist keine Stilfrage: In einer Ressource mit `language = #de` verlangt der FHIR-Validator den deutschen Display im `valueCoding`. Steht dort der englische, schlaegt die gesamte `answerValueSet`-Pruefung fehl — mit der irrefuehrenden Folgemeldung *"Der angegebene Wert ist nicht in den im Fragebogen gesetzten options value set enthalten"*, die auf ein Terminologie-Problem hindeutet, das gar nicht existiert.
 
 ## Hinweise zur Modellierung
 
 - **ISR-Z bildet einen Mittelwert, keine Summe.** Das ISR definiert Skalenwerte als Mittelwerte der Items (Tritt et al. 2008); die FHIRPath-Berechnung nutzt entsprechend `.avg()` statt `.sum()`, Wertebereich 0-4.
-- **Sprachwahl je Instrument.** `language` folgt der Originalsprache des Instruments: SCOFF, WI-7 und EURONET-SOMA sind EN-primaer mit deutscher Uebersetzung, PC-PTSD, SSD-12 und ISR-Z DE-primaer. Wo keine validierte Originalfassung belegbar war, wurde bewusst **keine** Uebersetzung erfunden.
-- **Cut-offs bleiben Dokumentation.** Publizierte Trennwerte (SCOFF >= 2, PC-PTSD >= 3) sind als `qualifiedInterval` in den ObservationDefinitions dokumentiert, aber nicht als ausfuehrbare Interpretationslogik ausgeliefert.
-- **Terminologie.** Fuer keines der sechs Instrumente fuehren LOINC oder SNOMED CT einen Code des Instruments selbst (geprueft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt ueber den MII-Questionnaire-Katalog.
+- **Sprachwahl je Instrument.** `language` folgt der Originalsprache des Instruments: SCOFF, WI-7 und EURONET-SOMA sind EN-primär mit deutscher Übersetzung, PC-PTSD, SSD-12 und ISR-Z DE-primär. Wo keine validierte Originalfassung belegbar war, wurde bewusst **keine** Übersetzung erfunden.
+- **Cut-offs bleiben Dokumentation.** Publizierte Trennwerte (SCOFF >= 2, PC-PTSD >= 3) sind als `qualifiedInterval` in den ObservationDefinitions dokumentiert, aber nicht als ausführbare Interpretationslogik ausgeliefert.
+- **Terminologie.** Für keines der sechs Instrumente fuehren LOINC oder SNOMED CT einen Code des Instruments selbst (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.
 
 **Version: 2026.5.2**
 
