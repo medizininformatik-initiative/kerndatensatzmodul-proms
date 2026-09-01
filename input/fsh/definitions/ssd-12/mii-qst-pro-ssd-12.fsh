@@ -14,12 +14,19 @@
 // "Item Level Dictionary PSS", variables SSD12_01-SSD12_12). Texts taken verbatim, character
 // for character.
 //
-// LANGUAGE: language = #de. The SSD-12 was developed and first validated in Germany (Toussaint,
-// Löwe et al.) using a German patient sample; the PCOR-MII item bank provides only the German
-// wording. Per docs/design/pcor-pss-instrumente.md Abschnitt 6, instruments developed in German
-// (OPD-SFK, ISR, SSD-12) carry language = #de, and an English translation extension is added
-// only where a validated English wording can be sourced — no such verbatim English wording is
-// available here, so none is added (no invented translation).
+// LANGUAGE: language = #de — die deutsche Fassung ist die in PCOR-MII erhobene.
+// ACHTUNG, bewusst NICHT behauptet: ob Deutsch die Originalsprache des Instruments ist, ist
+// UNGEKLÄRT. Dafür spricht das deutsche Entwicklerteam (Löwe/UKE Hamburg, Henningsen/TU München)
+// und die deutschsprachige Entwicklungsstichprobe; dagegen sprechen die englischsprachige
+// Entwicklungspublikation (Psychosomatic Medicine 2016) und eine eigene Validierungsarbeit der
+// deutschen Fassung von 2025. Die DIZ-Implementierungsliste vermerkt "Entwickelt auf Deutsch".
+// Solange das nicht belegt ist, wird kein englischer Item-Text behauptet oder erfunden.
+//
+// DISPLAY-SPRACHE: Die Konzept-displays des Antwort-CodeSystems sind DEUTSCH, englische
+// Bezeichnungen stehen als designation (#en). Grund: Der FHIR-Validator verlangt in einer
+// Ressource mit language=#de den deutschen Display im valueCoding — ein englischer Display
+// laesst sonst die gesamte answerValueSet-Pruefung scheitern (nachgewiesen 2026-09-01).
+// Regel: display in der Sprache des Fragebogens, alle anderen Sprachen als designation.
 //
 // ANSWER MODELLING: Fall B (docs/design/pcor-pss-instrumente.md, Abschnitt 4) — the wording of
 // the 5-point frequency scale (nie/selten/manchmal/oft/sehr oft) is part of the validated

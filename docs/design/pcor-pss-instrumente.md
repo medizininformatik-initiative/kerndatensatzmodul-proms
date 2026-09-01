@@ -179,6 +179,14 @@ Wo Original und Übersetzung inhaltlich abweichen, bleibt **beides wortgetreu** 
 SCOFF Item 3: Das Original fragt nach „One stone" (≈ 6,35 kg), die deutsche Fassung nach „mehr als
 6 kg". Diese Differenz wird dokumentiert, nicht angeglichen.
 
+**Display-Sprache folgt der Fragebogensprache.** Die `display`-Werte der Antwortkonzepte stehen in
+der Sprache des Fragebogens, alle weiteren Sprachen als `designation`. Das ist keine Stilfrage: Der
+FHIR-Validator verlangt in einer Ressource mit `language = #de` den deutschen Display im
+`valueCoding` — steht dort der englische, schlägt die gesamte `answerValueSet`-Prüfung fehl, und
+zwar mit der irreführenden Folgemeldung „Wert nicht im ValueSet enthalten" (nachgewiesen an SSD-12
+am 2026-09-01: zwölf Items, zwölf Fehlermeldungen, Ursache war ausschließlich der Display).
+Konsequenz: DE-Fragebogen → deutsche Displays, englische `designation`; EN-Fragebogen umgekehrt.
+
 **Antwort-Displays gehören NICHT in Übersetzungs-Extensions.** Bei Fall A liefert SNOMED die
 deutschen Designations selbst (`373066001` → „Ja"); bei Fall B stehen sie als `designation` am
 MII-CodeSystem. Eine zusätzlich im Formular hartkodierte Übersetzung wäre Redundanz, die bei

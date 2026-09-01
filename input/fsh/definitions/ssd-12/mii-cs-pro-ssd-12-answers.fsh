@@ -35,28 +35,28 @@ Description: "MII-controlled frequency answer scale for SSD-12 (0-4). English di
 * ^property[=].description = "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()"
 * ^property[=].type = #decimal
 
-* #never "Never"
-  * ^designation[+].language = #de
-  * ^designation[=].value = "nie"
+* #never "nie"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Never"
   * ^property[+].code = #ordinalValue
   * ^property[=].valueDecimal = 0
-* #rarely "Rarely"
-  * ^designation[+].language = #de
-  * ^designation[=].value = "selten"
+* #rarely "selten"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rarely"
   * ^property[+].code = #ordinalValue
   * ^property[=].valueDecimal = 1
-* #sometimes "Sometimes"
-  * ^designation[+].language = #de
-  * ^designation[=].value = "manchmal"
+* #sometimes "manchmal"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sometimes"
   * ^property[+].code = #ordinalValue
   * ^property[=].valueDecimal = 2
-* #often "Often"
-  * ^designation[+].language = #de
-  * ^designation[=].value = "oft"
+* #often "oft"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Often"
   * ^property[+].code = #ordinalValue
   * ^property[=].valueDecimal = 3
-* #very-often "Very often"
-  * ^designation[+].language = #de
-  * ^designation[=].value = "sehr oft"
+* #very-often "sehr oft"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Very often"
   * ^property[+].code = #ordinalValue
   * ^property[=].valueDecimal = 4
