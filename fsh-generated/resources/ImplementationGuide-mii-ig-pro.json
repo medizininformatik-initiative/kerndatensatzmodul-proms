@@ -1,0 +1,1914 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mii-ig-pro",
+  "language": "de-DE",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
+  "version": "2026.5.2",
+  "name": "MII_IG_PRO",
+  "title": "MII IG PRO",
+  "status": "active",
+  "publisher": "Medizininformatik-Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik-Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        },
+        {
+          "system": "email",
+          "value": "office@medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "276",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.pros",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "id": "hl7_fhir_uv_sdc"
+    },
+    {
+      "packageId": "de.gematik.isik",
+      "version": "5.1.1",
+      "uri": "http://fhir.org/packages/de.gematik.isik/ImplementationGuide/de.gematik.isik",
+      "id": "de_gematik_isik"
+    },
+    {
+      "id": "ext",
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.2.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-bdi-ii-observation"
+        },
+        "name": "BDI-II Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-bdi-ii-bundle"
+        },
+        "name": "BDI-II Transaction Bundle Example",
+        "description": "Transaction bundle containing BDI-II CodeSystem, ValueSets, questionnaire, response, and derived observation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv"
+        },
+        "name": "DASS-21 Anxiety DASS-42 Equivalent Score Observation",
+        "description": "DASS-21 Anxiety subscale DASS-42 equivalent score observation (raw 5 * 2 = 10)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw"
+        },
+        "name": "DASS-21 Anxiety Raw Score",
+        "description": "Sum of 7 anxiety items (2, 4, 7, 9, 15, 19, 20), each scored 0-3. Cut-offs: Normal 0-3, Mild 4-5, Moderate 6-7, Severe 8-9, Extremely severe 10+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-anxiety-raw"
+        },
+        "name": "DASS-21 Anxiety Raw Score Observation",
+        "description": "DASS-21 Anxiety subscale raw score observation (mild: 5)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv"
+        },
+        "name": "DASS-21 Anxiety Score (DASS-42 Equivalent)",
+        "description": "DASS-21 anxiety raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-depression-equiv"
+        },
+        "name": "DASS-21 Depression DASS-42 Equivalent Score Observation",
+        "description": "DASS-21 Depression subscale DASS-42 equivalent score observation (raw 12 * 2 = 24)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw"
+        },
+        "name": "DASS-21 Depression Raw Score",
+        "description": "Sum of 7 depression items (3, 5, 10, 13, 16, 17, 21), each scored 0-3. Cut-offs: Normal 0-4, Mild 5-6, Moderate 7-10, Severe 11-13, Extremely severe 14+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-depression-raw"
+        },
+        "name": "DASS-21 Depression Raw Score Observation",
+        "description": "DASS-21 Depression subscale raw score observation (severe: 12)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv"
+        },
+        "name": "DASS-21 Depression Score (DASS-42 Equivalent)",
+        "description": "DASS-21 depression raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-stress-equiv"
+        },
+        "name": "DASS-21 Stress DASS-42 Equivalent Score Observation",
+        "description": "DASS-21 Stress subscale DASS-42 equivalent score observation (raw 11 * 2 = 22)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw"
+        },
+        "name": "DASS-21 Stress Raw Score",
+        "description": "Sum of 7 stress items (1, 6, 8, 11, 12, 14, 18), each scored 0-3. Cut-offs: Normal 0-7, Mild 8-9, Moderate 10-12, Severe 13-16, Extremely severe 17+.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-dass-dass21-score-stress-raw"
+        },
+        "name": "DASS-21 Stress Raw Score Observation",
+        "description": "DASS-21 Stress subscale raw score observation (moderate: 11)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv"
+        },
+        "name": "DASS-21 Stress Score (DASS-42 Equivalent)",
+        "description": "DASS-21 stress raw score multiplied by 2 for comparability with DASS-42 normative data and published severity cut-offs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"
+        },
+        "name": "EORTC QLQ-C30 Appetite Loss Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ap"
+        },
+        "name": "EORTC QLQ-C30 Appetite Loss Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Appetite Loss Score (AP) - Higher scores indicate more appetite loss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"
+        },
+        "name": "EORTC QLQ-C30 Cognitive Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-cf"
+        },
+        "name": "EORTC QLQ-C30 Cognitive Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Cognitive Functioning Score (CF) - Higher scores indicate better cognitive functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-co"
+        },
+        "name": "EORTC QLQ-C30 Constipation Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-co"
+        },
+        "name": "EORTC QLQ-C30 Constipation Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Constipation Score (CO) - Higher scores indicate more constipation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-di"
+        },
+        "name": "EORTC QLQ-C30 Diarrhoea Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-di"
+        },
+        "name": "EORTC QLQ-C30 Diarrhoea Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Diarrhoea Score (DI) - Higher scores indicate more diarrhoea",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"
+        },
+        "name": "EORTC QLQ-C30 Dyspnoea Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-dy"
+        },
+        "name": "EORTC QLQ-C30 Dyspnoea Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Dyspnoea Score (DY) - Higher scores indicate more dyspnoea",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"
+        },
+        "name": "EORTC QLQ-C30 Emotional Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ef"
+        },
+        "name": "EORTC QLQ-C30 Emotional Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Emotional Functioning Score (EF) - Higher scores indicate better emotional functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"
+        },
+        "name": "EORTC QLQ-C30 Fatigue Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fa"
+        },
+        "name": "EORTC QLQ-C30 Fatigue Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Fatigue Score (FA) - Higher scores indicate more fatigue",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"
+        },
+        "name": "EORTC QLQ-C30 Financial Difficulties Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fi"
+        },
+        "name": "EORTC QLQ-C30 Financial Difficulties Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Financial Difficulties Score (FI) - Higher scores indicate more financial difficulties",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"
+        },
+        "name": "EORTC QLQ-C30 Global Health Status / Quality of Life Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ql"
+        },
+        "name": "EORTC QLQ-C30 Global Health Status / Quality of Life Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Global Health Status / Quality of Life Score (QL) - Higher scores indicate better quality of life",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"
+        },
+        "name": "EORTC QLQ-C30 Insomnia Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sl"
+        },
+        "name": "EORTC QLQ-C30 Insomnia Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Insomnia Score (SL) - Higher scores indicate more sleep disturbance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"
+        },
+        "name": "EORTC QLQ-C30 Nausea and Vomiting Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-nv"
+        },
+        "name": "EORTC QLQ-C30 Nausea and Vomiting Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Nausea and Vomiting Score (NV) - Higher scores indicate more nausea/vomiting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"
+        },
+        "name": "EORTC QLQ-C30 Pain Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pa"
+        },
+        "name": "EORTC QLQ-C30 Pain Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Pain Score (PA) - Higher scores indicate more pain",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"
+        },
+        "name": "EORTC QLQ-C30 Physical Functioning Score",
+        "description": "Physical Functioning Score from EORTC QLQ-C30",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf"
+        },
+        "name": "EORTC QLQ-C30 Physical Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Physical Functioning Score (PF) - Higher scores indicate better physical functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"
+        },
+        "name": "EORTC QLQ-C30 Role Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-rf"
+        },
+        "name": "EORTC QLQ-C30 Role Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Role Functioning Score (RF) - Higher scores indicate better role functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"
+        },
+        "name": "EORTC QLQ-C30 Social Functioning Score",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sf"
+        },
+        "name": "EORTC QLQ-C30 Social Functioning Score Definition",
+        "description": "ObservationDefinition for EORTC QLQ-C30 Social Functioning Score (SF) - Higher scores indicate better social functioning",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-eortc-qlq-c30-bundle"
+        },
+        "name": "EORTC QLQ-C30 Transaction Bundle Example",
+        "description": "Complete transaction bundle containing EORTC QLQ-C30 questionnaire, response with all 30 items, and derived observations with all 15 scale scores",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-coded-response"
+        },
+        "name": "EQ-5D-5L Answer-Coding Response Example",
+        "description": "Example of an EQ-5D-5L questionnaire response using the answer-coding variant with MII CodeSystem",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-euroqol-eq5d5l-response"
+        },
+        "name": "EQ-5D-5L Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-euronet-soma-response"
+        },
+        "name": "EURONET-SOMA Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-isr-z-response"
+        },
+        "name": "ISR-Z Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/mii-cm-pro-phq-9-linkid-migration"
+        },
+        "name": "MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)",
+        "description": "Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/mii-cps-pro-capabilitystatement"
+        },
+        "name": "MII CPS PRO CapabilityStatement",
+        "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul PRO der Medizininformatik Initiative zu implementieren.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-eq-5d-value-set"
+        },
+        "name": "MII CS EQ-5D Value Set",
+        "description": "EuroQol EQ-5D Value Set",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-bdi-bdi2"
+        },
+        "name": "MII CS PRO BDI-II",
+        "description": "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-dass-21"
+        },
+        "name": "MII CS PRO DASS-21 Response Scale and Item Codes",
+        "description": "CodeSystem for the Depression Anxiety Stress Scales - Short Form (DASS-21) with answer codes, item codes, and multilingual support (English primary, German translations from Nilges & Essau 2015)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-eortc-qlq-c30"
+        },
+        "name": "MII CS PRO EORTC QLQ-C30 Response Scale",
+        "description": "Response scale for EORTC QLQ-C30 questionnaire items with multilingual support",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-isr-z-answers"
+        },
+        "name": "MII CS PRO ISR-Z Answers",
+        "description": "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-midos2"
+        },
+        "name": "MII CS PRO MIDOS2 Items and Response Scales",
+        "description": "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-phq-15-answers"
+        },
+        "name": "MII CS PRO PHQ-15 Answers",
+        "description": "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-pro-ctcae"
+        },
+        "name": "MII CS PRO PRO-CTCAE Item Library",
+        "description": "CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-questionnaire-catalogue"
+        },
+        "name": "MII CS PRO Questionnaire Catalogue",
+        "description": "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in the MII PROMs Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-score-catalogue"
+        },
+        "name": "MII CS PRO Score Catalogue",
+        "description": "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-ssd-12-answers"
+        },
+        "name": "MII CS PRO SSD-12 Answers",
+        "description": "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-whodas-12"
+        },
+        "name": "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
+        "description": "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-score-score-health-correlation"
+        },
+        "name": "MII Ex PRO Score Score Health Correlation",
+        "description": "MII Ex PRO Score Score Health Correlation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-bdi-bdi2"
+        },
+        "name": "MII EXA PRO BDI-II",
+        "description": "MII EXA PRO Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-dass-dass21-response-01"
+        },
+        "name": "MII EXA PRO DASS-21 Response",
+        "description": "Complete DASS-21 QuestionnaireResponse example with mixed severity: Depression severe (12), Anxiety mild (5), Stress moderate (11)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"
+        },
+        "name": "MII EXA PRO EORTC QLQ-C30 Response",
+        "description": "Complete EORTC QLQ-C30 QuestionnaireResponse example with all 30 items and calculated scores",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-midos2-response-01"
+        },
+        "name": "MII EXA PRO MIDOS2 Response",
+        "description": "MIDOS2 QuestionnaireResponse Beispiel — Palliativpatient mit moderater Symptomlast (Summe 19/33, Wohlbefinden eher schlecht)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-pro-patient"
+        },
+        "name": "MII EXA PRO Patient",
+        "description": "Example patient for PRO demonstrations",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01"
+        },
+        "name": "MII EXA PRO PRO-CTCAE Onkologisches Basisscreening Response",
+        "description": "PRO-CTCAE Onkologisches Basisscreening Beispiel — Onkologischer Patient unter Chemotherapie mit moderater Symptomlast",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-promis-depression-sf4a-bundle"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a Bundle",
+        "description": "Example bundle containing PROMIS Depression SF 4a QuestionnaireResponse and derived observations",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-depression-sf4a-raw-score"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a Raw Score",
+        "description": "Example raw score observation for PROMIS Depression Short Form 4a",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a Response",
+        "description": "Example QuestionnaireResponse for PROMIS Depression Short Form 4a",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-depression-sf4a-tscore"
+        },
+        "name": "MII EXA PRO PROMIS Depression SF 4a T-Score",
+        "description": "Example T-score observation for PROMIS Depression Short Form 4a",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-promis-29-bundle"
+        },
+        "name": "MII EXA PRO PROMIS-29 Bundle with Extracted Observations",
+        "description": "Example Bundle demonstrating PROMIS-29 QuestionnaireResponse with all extracted T-Score Observations and Pain Intensity observation. This bundle shows the complete SDC observation-based extraction workflow.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-29-response"
+        },
+        "name": "MII EXA PRO PROMIS-29 Response",
+        "description": "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (English variant)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-29-de-response"
+        },
+        "name": "MII EXA PRO PROMIS-29 Response (German)",
+        "description": "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-whodas12-response-01"
+        },
+        "name": "MII EXA PRO WHODAS 2.0 12-Item Response",
+        "description": "Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-lm-pro"
+        },
+        "name": "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
+        "description": "Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-depression-t-score"
+        },
+        "name": "MII ObsDef PRO Depression Domain T-Score",
+        "description": "ObservationDefinition for depression domain T-score across all depression questionnaires with European population reference ranges",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score"
+        },
+        "name": "MII ObsDef PRO PROMIS Cognitive Function SF 4a Raw Score",
+        "description": "PROMIS Cognitive Function Short Form 4a Raw Score (4-20 range)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS Cognitive Function SF 4a T-Score",
+        "description": "PROMIS Cognitive Function Short Form 4a T-Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Anxiety T-Score",
+        "description": "PROMIS Anxiety T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Depression T-Score",
+        "description": "PROMIS Depression T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Fatigue T-Score",
+        "description": "PROMIS Fatigue T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Pain Intensity",
+        "description": "PROMIS Pain Intensity single item from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Pain Interference T-Score",
+        "description": "PROMIS Pain Interference T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Physical Function T-Score",
+        "description": "PROMIS Physical Function T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Sleep Disturbance T-Score",
+        "description": "PROMIS Sleep Disturbance T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore"
+        },
+        "name": "MII ObsDef PRO PROMIS-29 Social Function T-Score",
+        "description": "PROMIS Ability to Participate in Social Roles and Activities T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-bdi-ii"
+        },
+        "name": "MII ObsDef PRO Score BDI-II",
+        "description": "Beck Depression Inventory II (BDI-II) Total Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index"
+        },
+        "name": "MII ObsDef PRO Score EQ-5D-5L Index",
+        "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Index Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile"
+        },
+        "name": "MII ObsDef PRO Score EQ-5D-5L Profile",
+        "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas"
+        },
+        "name": "MII ObsDef PRO Score EQ-5D-5L VAS",
+        "description": "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-isr-z"
+        },
+        "name": "MII ObsDef PRO Score ISR-Z",
+        "description": "ISR-Z Skalenwert (Mittelwert, Bereich 0-4) — Subskala Zwang des ICD-10-Symptom-Rating",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-pc-ptsd"
+        },
+        "name": "MII ObsDef PRO Score PC-PTSD",
+        "description": "PC-PTSD total score (0-4) — screening for posttraumatic stress disorder",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-15"
+        },
+        "name": "MII ObsDef PRO Score PHQ-15",
+        "description": "Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score (0–30)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-9"
+        },
+        "name": "MII ObsDef PRO Score PHQ-9",
+        "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-scoff"
+        },
+        "name": "MII ObsDef PRO Score SCOFF",
+        "description": "SCOFF total score (0-5) — screening for eating disorders",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-ssd-12"
+        },
+        "name": "MII ObsDef PRO Score SSD-12",
+        "description": "SSD-12 total score (0-48) — somatic symptom disorder B-criteria burden",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-wi-7"
+        },
+        "name": "MII ObsDef PRO Score WI-7",
+        "description": "WI-7 (Whiteley-7) total score (0-7) — screening for hypochondriasis and somatization",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-depression-t-score"
+        },
+        "name": "MII PR PRO Depression Domain T-Score",
+        "description": "Generic profile for depression domain T-score observations (all depression questionnaires)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-bdi-ii"
+        },
+        "name": "MII PR PRO Observation BDI-II",
+        "description": "Profile for Beck Depression Inventory II (BDI-II) Total Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-index"
+        },
+        "name": "MII PR PRO Observation EQ-5D-5L Index",
+        "description": "Profile for EQ-5D-5L Index Score Observations with German value set reference ranges",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-profile"
+        },
+        "name": "MII PR PRO Observation EQ-5D-5L Profile",
+        "description": "Profile for EQ-5D-5L Profile String Observations (e.g., '11111')",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-eq5d5l-vas"
+        },
+        "name": "MII PR PRO Observation EQ-5D-5L VAS",
+        "description": "Profile for EQ-5D-5L Visual Analogue Scale Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-phq-15"
+        },
+        "name": "MII PR PRO Observation PHQ-15",
+        "description": "Profile for Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score Observations (0-30; higher scores indicate greater somatic symptom burden).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-phq-9"
+        },
+        "name": "MII PR PRO Observation PHQ-9",
+        "description": "Profile for Patient Health Questionnaire-9 (PHQ-9) total score Observations (0-27; higher scores indicate more severe depression).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-observation-whodas12"
+        },
+        "name": "MII PR PRO Observation WHODAS 2.0 12-Item",
+        "description": "Profile for WHODAS 2.0 12-item simple sum (disability) score Observations (0-48; higher scores indicate greater disability). No suitable LOINC code exists; SNOMED CT and the MII score catalogue are used.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score"
+        },
+        "name": "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score",
+        "description": "Profile for PROMIS Cognitive Function Short Form 4a raw score observations (4-20 range)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore"
+        },
+        "name": "MII PR PRO PROMIS Cognitive Function SF 4a T-Score",
+        "description": "Profile for PROMIS Cognitive Function Short Form 4a T-Score observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
+        },
+        "name": "MII PR PRO PROMIS Depression SF 4a Raw Score",
+        "description": "Profile for PROMIS Depression Short Form 4a raw score observations (4-20 range)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Anxiety T-Score",
+        "description": "Profile for PROMIS-29 Anxiety T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-depression-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Depression T-Score",
+        "description": "Profile for PROMIS-29 Depression T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Fatigue T-Score",
+        "description": "Profile for PROMIS-29 Fatigue T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-pain-intensity"
+        },
+        "name": "MII PR PRO PROMIS-29 Pain Intensity",
+        "description": "Profile for PROMIS-29 Pain Intensity single item Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Pain Interference T-Score",
+        "description": "Profile for PROMIS-29 Pain Interference T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Physical Function T-Score",
+        "description": "Profile for PROMIS-29 Physical Function T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Sleep Disturbance T-Score",
+        "description": "Profile for PROMIS-29 Sleep Disturbance T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-promis-29-social-function-tscore"
+        },
+        "name": "MII PR PRO PROMIS-29 Social Function T-Score",
+        "description": "Profile for PROMIS-29 Ability to Participate in Social Roles and Activities T-Score Observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-questionnaire"
+        },
+        "name": "MII PR PRO Questionnaire",
+        "description": "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+        },
+        "name": "MII PR PRO Questionnaire Capabilities",
+        "description": "MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-questionnaire-response"
+        },
+        "name": "MII PR PRO QuestionnaireResponse",
+        "description": "MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-score-blueprint"
+        },
+        "name": "MII PR PRO Score Blueprint / Template",
+        "description": "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-pro-score-instance"
+        },
+        "name": "MII PR PRO Score Instance",
+        "description": "MII PR PRO Score Instance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-bdi-bdi2"
+        },
+        "name": "MII QST PRO BDI-II",
+        "description": "MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-ces-d"
+        },
+        "name": "MII QST PRO CES-D",
+        "description": "Center for Epidemiologic Studies Depression Scale (CES-D) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-dass-dass21"
+        },
+        "name": "MII QST PRO DASS-21",
+        "description": "Depression Anxiety Stress Scales - 21 Items (DASS-21)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30"
+        },
+        "name": "MII QST PRO EORTC QLQ-C30",
+        "description": "EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a"
+        },
+        "name": "MII QST PRO EORTC QLQ-C30 Variant A",
+        "description": "EORTC QLQ-C30 Version 3.0 - Variant A: References standalone external ValueSets directly (no contained resources)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b"
+        },
+        "name": "MII QST PRO EORTC QLQ-C30 Variant B",
+        "description": "EORTC QLQ-C30 Version 3.0 - Variant B: With contained CodeSystem and ValueSets referencing it via local reference #eortc-qlq-c30-cs-b",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-epds"
+        },
+        "name": "MII QST PRO EPDS",
+        "description": "Edinburgh Postnatal Depression Scale (EPDS) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding"
+        },
+        "name": "MII QST PRO EQ-5D-5L",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal"
+        },
+        "name": "MII QST PRO EQ-5D-5L",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable"
+        },
+        "name": "MII QST PRO EQ-5D-5L (Displayable)",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Displayable version",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable"
+        },
+        "name": "MII QST PRO EQ-5D-5L Collectable",
+        "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collectable Version",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-euronet-soma"
+        },
+        "name": "MII QST PRO EURONET-SOMA",
+        "description": "EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-hads"
+        },
+        "name": "MII QST PRO HADS",
+        "description": "Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-isr-z"
+        },
+        "name": "MII QST PRO ISR-Z",
+        "description": "ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008); Skalenwert als Mittelwert, nicht Summe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-k6"
+        },
+        "name": "MII QST PRO K6",
+        "description": "Kessler Psychological Distress Scale (K6) - Metadata-only reference implementation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-midos-midos2"
+        },
+        "name": "MII QST PRO MIDOS2",
+        "description": "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-Screening für die Palliativmedizin nach DGP. 11 Symptom-Items mit 4-stufiger DGP-Skala, ein Wohlbefinden-Item, ein offenes Item für sonstige Beschwerden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-pc-ptsd"
+        },
+        "name": "MII QST PRO PC-PTSD",
+        "description": "PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for posttraumatic stress disorder (Prins et al. 2003; German: Schäfer & Schulze 2010)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-phq-15"
+        },
+        "name": "MII QST PRO PHQ-15",
+        "description": "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-phq-9"
+        },
+        "name": "MII QST PRO PHQ-9",
+        "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening"
+        },
+        "name": "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
+        "description": "Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigsten Symptome onkologischer Patienten mit den 5-stufigen PRO-CTCAE-Skalen (Häufigkeit, Schweregrad, Beeinträchtigung). Symptomauswahl konzeptuell parallel zu MIDOS2 für eine gemeinsame Problem List zwischen Onkologie und Palliativmedizin.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a"
+        },
+        "name": "MII QST PRO PROMIS Cognitive Function SF 4a",
+        "description": "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-depression-sf4a"
+        },
+        "name": "MII QST PRO PROMIS Depression SF 4a (Adults)",
+        "description": "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-16"
+        },
+        "name": "MII QST PRO PROMIS-16 (Adults)",
+        "description": "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-29"
+        },
+        "name": "MII QST PRO PROMIS-29 (Adults)",
+        "description": "PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-29-de"
+        },
+        "name": "MII QST PRO PROMIS-29 (German)",
+        "description": "PROMIS-29 Profile v2.1 - German language variant derived from English source",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-29-minimal"
+        },
+        "name": "MII QST PRO PROMIS-29 Minimal",
+        "description": "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-scoff"
+        },
+        "name": "MII QST PRO SCOFF",
+        "description": "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-ssd-12"
+        },
+        "name": "MII QST PRO SSD-12",
+        "description": "SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/2017), 12-item German self-report scale",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-whodas-whodas12"
+        },
+        "name": "MII QST PRO WHODAS 2.0 12-Item",
+        "description": "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-wi-7"
+        },
+        "name": "MII QST PRO WI-7",
+        "description": "WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondriasis and somatization (Fink et al. 1999) with German translation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-bdi-bdi2-short"
+        },
+        "name": "MII VS PRO BDI-II",
+        "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-bdi-bdi2-long"
+        },
+        "name": "MII VS PRO BDI-II",
+        "description": "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-dass-21-answer-list"
+        },
+        "name": "MII VS PRO DASS-21 Answer List",
+        "description": "4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"
+        },
+        "name": "MII VS PRO EORTC QLQ-C30 4-Point Scale",
+        "description": "Standard 4-point response scale for EORTC QLQ-C30 items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"
+        },
+        "name": "MII VS PRO EORTC QLQ-C30 7-Point Scale",
+        "description": "7-point response scale for EORTC QLQ-C30 global health status and quality of life items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role"
+        },
+        "name": "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
+        "description": "4-point response scale for EORTC QLQ-C30 role functioning items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-isr-z-answers"
+        },
+        "name": "MII VS PRO ISR-Z Answers",
+        "description": "ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemlich zu, 3 = trifft deutlich zu, 4 = trifft extrem zu). MII-controlled für zuverlässige ordinal()-Scoreberechnung.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-midos2-severity"
+        },
+        "name": "MII VS PRO MIDOS2 DGP-Severity-Skala",
+        "description": "DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für die 11 Symptom-Items des MIDOS2 verwendet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-midos2-wellbeing"
+        },
+        "name": "MII VS PRO MIDOS2 Wohlbefinden-Skala",
+        "description": "4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-phq-15-answers"
+        },
+        "name": "MII VS PRO PHQ-15 Answers",
+        "description": "PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt, 1 = Wenig beeinträchtigt, 2 = Stark beeinträchtigt). MII-controlled for reliable ordinal() score calculation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3"
+        },
+        "name": "MII VS PRO PHQ-9 Answer List LL358-3",
+        "description": "Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1"
+        },
+        "name": "MII VS PRO PHQ-9 Answer List LL359-1",
+        "description": "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-frequency"
+        },
+        "name": "MII VS PRO PRO-CTCAE Frequency Scale",
+        "description": "5-point frequency response scale for PRO-CTCAE items (0=Never, 4=Almost constantly)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual"
+        },
+        "name": "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)",
+        "description": "7-point frequency scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-interference"
+        },
+        "name": "MII VS PRO PRO-CTCAE Interference Scale",
+        "description": "5-point interference response scale for PRO-CTCAE items (0=Not at all, 4=Very much)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-presence"
+        },
+        "name": "MII VS PRO PRO-CTCAE Presence Scale",
+        "description": "Binary presence/absence response scale for PRO-CTCAE items",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-presence-sexual"
+        },
+        "name": "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
+        "description": "4-option presence scale for sexual function: Yes / No / Not sexually active / Prefer not to answer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-presence-na"
+        },
+        "name": "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
+        "description": "3-option presence scale: Yes / No / Not applicable",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-severity"
+        },
+        "name": "MII VS PRO PRO-CTCAE Severity Scale",
+        "description": "5-point severity response scale for PRO-CTCAE items (0=None, 4=Very severe)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-severity-radiation"
+        },
+        "name": "MII VS PRO PRO-CTCAE Severity Scale (Radiation)",
+        "description": "6-point severity scale for radiation items: standard 5 options plus 'Not applicable'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-pro-ctcae-severity-sexual"
+        },
+        "name": "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
+        "description": "7-point severity scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Frequency Response Scale",
+        "description": "PROMIS Frequency response scale based on LOINC LL1016-6",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Intensity Response Scale",
+        "description": "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Physical Function Response Scale",
+        "description": "PROMIS Physical Function response scale based on LOINC LL1022-4",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-ssd-12-answers"
+        },
+        "name": "MII VS PRO SSD-12 Answers",
+        "description": "SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 = sehr oft). MII-controlled for reliable ordinal() score calculation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-whodas-12-answer-list"
+        },
+        "name": "MII VS PRO WHODAS 2.0 12-Item Answer List",
+        "description": "5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-pro-observationdefinition-code"
+        },
+        "name": "mii-sp-pro-observationdefinition-code",
+        "description": "SearchParameter for ObservationDefinition.code to find score definitions by code (LOINC, SNOMED, MII)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-pro-observationdefinition-health-correlation"
+        },
+        "name": "mii-sp-pro-observationdefinition-health-correlation",
+        "description": "SearchParameter for ObservationDefinition.qualifiedInterval.range.extension[ScoreHealthCorrelation] to filter by health correlation direction (higher scores = better/worse health)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-pro-observationdefinition-interval-category"
+        },
+        "name": "mii-sp-pro-observationdefinition-interval-category",
+        "description": "SearchParameter for ObservationDefinition.qualifiedInterval.category to filter by reference range category (reference, critical, absolute)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype"
+        },
+        "name": "mii-sp-pro-observationdefinition-permitted-datatype",
+        "description": "SearchParameter for ObservationDefinition.permittedDataType to filter score definitions by data type (Quantity, string, etc.)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name"
+        },
+        "name": "mii-sp-pro-observationdefinition-preferred-report-name",
+        "description": "SearchParameter for ObservationDefinition.preferredReportName to search score definitions by display name",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-pro-observationdefinition-unit"
+        },
+        "name": "mii-sp-pro-observationdefinition-unit",
+        "description": "SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter score definitions by measurement unit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-pro-questionnaire-capabilities"
+        },
+        "name": "mii-sp-pro-questionnaire-capabilities",
+        "description": "SearchParameter for Questionnaire.extension[capabilities] to filter questionnaires by capability flags (displayable, collectable, calculatable, extractable, populatable, domainAligned)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-pc-ptsd-response"
+        },
+        "name": "PC-PTSD Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-phq-15-response"
+        },
+        "name": "PHQ-15 Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-phq-15-observation"
+        },
+        "name": "PHQ-15 Score Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-phq-9-observation"
+        },
+        "name": "PHQ-9 Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-phq-9-response"
+        },
+        "name": "PHQ-9 Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-pro-phq-9-bundle"
+        },
+        "name": "PHQ-9 Transaction Bundle Example",
+        "description": "Transaction bundle containing PHQ-9 questionnaire, response, and derived observation - flagship example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-proctcae-acs"
+        },
+        "name": "PRO-CTCAE Average Composite Score (ACS)",
+        "description": "Average of all PRO-CTCAE composite grades at a given timepoint, reflecting overall symptomatic adverse event burden. Symptoms with opt-out responses are excluded from the average. Range 0.0-3.0 (continuous). ACS = sum(composite grades) / count(scored symptoms).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade"
+        },
+        "name": "PRO-CTCAE Composite Grade",
+        "description": "Composite grade for a single PRO-CTCAE adverse event, computed from frequency, severity, and/or interference scores using the NCI composite grading algorithm (Basch et al., 2021). Range 0-3, mapped to CTCAE grade equivalents. Grade 0 = no symptom, Grade 3 = most severe patient-reported burden. May have dataAbsentReason when patient selected opt-out answers.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-pro-ctcae-breast-de"
+        },
+        "name": "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+        "description": "PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation"
+        },
+        "name": "PROMIS Depression T-Score, derived from BDI-II Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-scoff-response"
+        },
+        "name": "SCOFF Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-ssd-12-response"
+        },
+        "name": "SSD-12 Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum"
+        },
+        "name": "WHODAS 2.0 12-Item Simple Sum Score",
+        "description": "Sum of the 12 WHODAS 2.0 item scores (each 0-4), range 0-48. Higher scores indicate greater disability. WHO simple scoring method; complex IRT-based scoring deferred to future work.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-whodas12-score-simple-sum"
+        },
+        "name": "WHODAS 2.0 12-Item Simple Sum Score Observation",
+        "description": "WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-wi-7-response"
+        },
+        "name": "WI-7 Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module-description.html",
+          "title": "Module Description",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "project-context.html",
+          "title": "Project Context",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use-cases.html",
+          "title": "Use Cases",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "datasets-and-descriptions.html",
+              "title": "Datasets and Descriptions",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "uml-diagrams.html",
+              "title": "UML Diagrams",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "technical-implementation.html",
+          "title": "Technical Implementation",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "workflows.html",
+              "title": "Workflows",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "scoring.html",
+              "title": "Scoring",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "id-systematics.html",
+              "title": "ID Systematics",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "terminology-strategies.html",
+              "title": "Terminology Strategies",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "questionnaire-capabilities.html",
+              "title": "Questionnaire Capabilities",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "validation.html",
+              "title": "Validation",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "pro-library.html",
+          "title": "PRO Library",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "phq-9.html",
+              "title": "PHQ-9",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "phq-15.html",
+              "title": "PHQ-15",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "eq-5d-5l.html",
+              "title": "EQ-5D-5L",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "eq-5d-5l-scores.html",
+                  "title": "EQ-5D-5L Scores",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "eortc-qlq-c30.html",
+              "title": "EORTC QLQ-C30",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "eortc-qlq-c30-scoring.html",
+                  "title": "EORTC QLQ-C30 Scoring",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "promis.html",
+              "title": "PROMIS",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "promis-29.html",
+                  "title": "PROMIS-29",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "promis-16.html",
+                  "title": "PROMIS-16",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "promis-depression.html",
+                  "title": "PROMIS Depression SF4a",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "bdi-ii.html",
+              "title": "BDI-II",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dass-21.html",
+              "title": "DASS-21",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "midos2.html",
+              "title": "MIDOS2 (Palliativmedizin)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "proms-onkologisches-basisscreening.html",
+              "title": "Onkologisches Basisscreening (PRO-CTCAE)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "whodas.html",
+              "title": "WHODAS 2.0 (12-Item)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "minimal-reference-questionnaires.html",
+              "title": "Minimal Reference Questionnaires",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "domain-based-scoring.html",
+          "title": "Domain-Based Scoring",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "domains.html",
+              "title": "Domains",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "cross-instrument-mappings.html",
+              "title": "Cross-Instrument Mappings",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "derived-metrics.html",
+          "title": "Derived Metrics",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "references.html",
+          "title": "References",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Changelog",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "translationinfo.html",
+          "title": "Translation Information",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "de"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "en"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/en"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "false"
+      }
+    ]
+  }
+}

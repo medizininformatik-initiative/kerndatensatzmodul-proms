@@ -1,0 +1,34 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-euronet-soma-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.5.2"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueInteger": 6
+        }
+      ],
+      "linkId": "euronet-soma-q01"
+    },
+    {
+      "answer": [
+        {
+          "valueInteger": 5
+        }
+      ],
+      "linkId": "euronet-soma-q02"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-08-28T09:45:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma"
+}

@@ -1,0 +1,110 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-wi-7-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.5.2"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "wi7-q01"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        }
+      ],
+      "linkId": "wi7-q02"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        }
+      ],
+      "linkId": "wi7-q03"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "wi7-q04"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "wi7-q05"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        }
+      ],
+      "linkId": "wi7-q06"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        }
+      ],
+      "linkId": "wi7-q07"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 3
+        }
+      ],
+      "linkId": "wi7-score-total"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-08-28T09:30:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7"
+}
