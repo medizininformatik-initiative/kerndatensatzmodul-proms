@@ -1,7 +1,7 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2026.5.2",
-  "description": "MII PRO Module v2026.5.2 - Patch auf v2026.5.1: behebt den HAPI-FHIR-Startcrash beim Package-Import (HAPI-0838: ConceptMap ohne group.source). Ursache war der unvollständige ConceptMap-Stub mii-cm-pro-bdi-ii-to-promis-depression-observation (ab 2026.4.0), der entfernt wurde — BDI→PROMIS-Umrechnung bleibt als FHIRPath-Crosswalk im Questionnaire, CQL geplant. Zusätzlich Package-Hygiene: IG-Publisher-Artefakte + macOS-Dateien aus dem Bake gefiltert, fsh-generated frisch generiert (einheitliche Versionierung). In HAPI v7.6.0 verifiziert. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
+  "version": "2026.6.0",
+  "description": "MII PRO Module v2026.6.0 — Minor-Release mit sechs neuen Instrumenten des PCOR-MII-PSS-Sets: SCOFF, Whiteley-7 (WI-7), PC-PTSD, SSD-12, ISR-Z und EURONET-SOMA. Neu ausserdem eine geteilte Ja/Nein-Antwortskala auf Basis von SNOMED CT (TC-Terminologien-konform) sowie eine praezisierte Konvention zur Display-Sprache in Antwort-CodeSystems. Keine Breaking Changes an bestehenden Ressourcen. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de",
   "keywords": [
     "MII",
     "KDS",
