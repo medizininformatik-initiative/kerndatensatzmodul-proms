@@ -23,18 +23,18 @@ Alle Item-Texte stammen aus dem PCOR-MII Item Level Dictionary und wurden zeiche
 
 Neu ist das RuleSet `YesNoAnswerOptions` (`input/fsh/rulesets/answer-scales.fsh`) für generische Ja/Nein-Antworten. Es verwendet **SNOMED CT `373066001` (Yes) / `373067005` (No)** gemäß der Empfehlung des TC Terminologien (HL7 Deutschland / Interop Council) — statt eines selbstdefinierten MII-CodeSystems, das standardisierte Terminologie verdoppeln würde.
 
-Da SNOMED-Konzepten keine `ordinalValue`-Property angehaengt werden kann, nutzen diese Instrumente **inline `answerOption`** statt `answerValueSet`. Damit tragen die Antworten in QuestionnaireResponses eine terminologisch eindeutige Kodierung mit `system` und `code` statt systemloser Integer.
+Da SNOMED-Konzepten keine `ordinalValue`-Property angehängt werden kann, nutzen diese Instrumente **inline `answerOption`** statt `answerValueSet`. Damit tragen die Antworten in QuestionnaireResponses eine terminologisch eindeutige Kodierung mit `system` und `code` statt systemloser Integer.
 
 ## Präzisiert: Display-Sprache in Antwort-CodeSystems
 
-Der `display`-Wert eines Antwortkonzepts steht in der **Sprache des Fragebogens**; weitere Sprachen werden als `designation` gefuehrt. Das ist keine Stilfrage: In einer Ressource mit `language = #de` verlangt der FHIR-Validator den deutschen Display im `valueCoding`. Steht dort der englische, schlaegt die gesamte `answerValueSet`-Pruefung fehl — mit der irrefuehrenden Folgemeldung *"Der angegebene Wert ist nicht in den im Fragebogen gesetzten options value set enthalten"*, die auf ein Terminologie-Problem hindeutet, das gar nicht existiert.
+Der `display`-Wert eines Antwortkonzepts steht in der **Sprache des Fragebogens**; weitere Sprachen werden als `designation` geführt. Das ist keine Stilfrage: In einer Ressource mit `language = #de` verlangt der FHIR-Validator den deutschen Display im `valueCoding`. Steht dort der englische, schlägt die gesamte `answerValueSet`-Prüfung fehl — mit der irreführenden Folgemeldung *"Der angegebene Wert ist nicht in den im Fragebogen gesetzten options value set enthalten"*, die auf ein Terminologie-Problem hindeutet, das gar nicht existiert.
 
 ## Hinweise zur Modellierung
 
 - **ISR-Z bildet einen Mittelwert, keine Summe.** Das ISR definiert Skalenwerte als Mittelwerte der Items (Tritt et al. 2008); die FHIRPath-Berechnung nutzt entsprechend `.avg()` statt `.sum()`, Wertebereich 0-4.
 - **Sprachwahl je Instrument.** `language` folgt der Originalsprache des Instruments: SCOFF, WI-7 und EURONET-SOMA sind EN-primär mit deutscher Übersetzung, PC-PTSD, SSD-12 und ISR-Z DE-primär. Wo keine validierte Originalfassung belegbar war, wurde bewusst **keine** Übersetzung erfunden.
 - **Cut-offs bleiben Dokumentation.** Publizierte Trennwerte (SCOFF >= 2, PC-PTSD >= 3) sind als `qualifiedInterval` in den ObservationDefinitions dokumentiert, aber nicht als ausführbare Interpretationslogik ausgeliefert.
-- **Terminologie.** Für keines der sechs Instrumente fuehren LOINC oder SNOMED CT einen Code des Instruments selbst (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.
+- **Terminologie.** Für keines der sechs Instrumente führen LOINC oder SNOMED CT einen Code des Instruments selbst (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.
 
 **Version: 2026.5.2**
 
