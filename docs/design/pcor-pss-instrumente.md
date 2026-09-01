@@ -94,47 +94,42 @@ ETL-Strecke; beides hält die normative Ressource sauber. Damit bleibt die Inges
 Studiendaten möglich, ohne dass jede spätere Nachnutzung des Instruments die PCOR-Nomenklatur
 miterbt.
 
-## 4. Antwortmodellierung: `answerValueSet` statt `answerOption`
+## 4. Antwortmodellierung — drei Fälle statt einer Regel
 
-FHIR erlaubt pro Item **entweder** `answerOption` (inline) **oder** `answerValueSet` — nicht beides
-(Invariante `que-4`). Das ist also eine echte Entweder-oder-Entscheidung.
+Der erste Entwurf schrieb pauschal `answerValueSet` vor. Die Umsetzung von SCOFF hat gezeigt, dass
+das zu grob ist: Es kommt darauf an, **wem die Terminologie gehört**. Drei Fälle:
 
-**Festlegung: `answerValueSet` als Standard.** Für jede Antwortskala wird ein MII-CodeSystem mit
-`ordinalValue`-Property je Konzept angelegt und über ein ValueSet gebunden:
+### Fall A — generische Skala, für die es Standard-Terminologie gibt
+
+Beispiel: schlichtes Ja/Nein (SCOFF, WI-7, PC-PTSD). Das TC Terminologien (HL7 Deutschland /
+Interop Council) empfiehlt dafür **SNOMED CT `373066001` (Yes) / `373067005` (No)**. Ein eigenes
+MII-CodeSystem wäre eine Doppelung standardisierter Terminologie und ist zu vermeiden.
+
+Da wir SNOMED nicht besitzen, können wir seinen Konzepten auch keine `ordinalValue`-Property
+anhängen — ein `answerValueSet` über SNOMED-Codes trüge folglich **keine Gewichte**. Deshalb hier
+**inline `answerOption`** mit SNOMED-Coding plus `ordinalValue`-Extension, gebündelt als RuleSet:
 
 ```fsh
-CodeSystem: MII_CS_PRO_SCOFF_Answers
-* ^property[+].code = #ordinalValue
-* ^property[=].uri = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* ^property[=].type = #decimal
-* #no "No"
-  * ^designation[+].language = #de
-  * ^designation[=].value = "nein"
-  * ^property[+].code = #ordinalValue
-  * ^property[=].valueDecimal = 0
+* item[1] insert YesNoAnswerOptions   // input/fsh/rulesets/answer-scales.fsh
 ```
 
-**Begründung:** Die Gewichte liegen damit an genau einer Stelle (Terminologie statt Formular),
-sind über den Terminologie-Service auflösbar (Bead `epb`) und über `$expand` wiederverwendbar. Der
-bekannte Nachteil — viele Form-Renderer lesen `.ordinal()` nur aus inline `answerOption` — wiegt
-nicht mehr schwer, seit **CQL der autoritative Scoring-Kanal ist** (siehe Scoring-Seite des IG,
-Kanal B): CQL löst CodeSystem-Gewichte zuverlässig auf.
+### Fall B — instrumentenspezifische, validierte Skala
 
-**Ausnahme:** Muss ein Instrument echtes Live-Scoring im Formular leisten (Kanal A), bekommt es
-inline `answerOption` mit `ordinalValue`. Diese Entscheidung ist pro Instrument im FSH zu
-kommentieren, damit sie nachvollziehbar bleibt.
+Beispiel: OPD-SFK („Trifft gar nicht zu" … ), ISR, SSD-12, PHQ-Familie. Hier ist die Formulierung
+Teil des validierten Instruments; wir besitzen die Terminologie. Also wie bisher: **MII-CodeSystem
+mit `ordinalValue`-Property und Designations, gebunden über `answerValueSet`** — im
+Instrumenten-Ordner.
 
-**Skalen-Wiederverwendung:** Instrumente mit identischer, generischer Skala teilen sich ein
-CodeSystem — konkret die binäre Ja/Nein-Skala von SCOFF, WI-7 und PC-PTSD
-(`mii-cs-pro-yes-no-answers`, Gewichte 0/1). Instrumentenspezifische Skalen mit validierter
-Wortwahl (OPD-SFK „Trifft gar nicht zu"…, ISR „trifft nicht zu"…, SSD-12 „nie"…) bekommen je ein
-eigenes CodeSystem, auch wenn die Stufenzahl gleich ist — die Formulierung ist Teil des validierten
-Instruments und darf nicht vereinheitlicht werden.
+### Fall C — numerische Skalen
 
-> **Offene Entscheidung:** Ob die generische Ja/Nein-Skala wirklich geteilt wird oder jedes
-> Instrument auch hier sein eigenes CodeSystem erhält. Geteilt = weniger Redundanz; eigen = maximale
-> Instrumententreue und unabhängige Versionierung. Vorschlag: teilen, da bei „ja/nein" keine
-> instrumentenspezifische Semantik verlorengeht.
+Beispiel: EURONET-SOMA, EXPECT (NRS 0–10), GSLTPAQ (Häufigkeiten). Kein Coding, sondern `integer`
+mit `sliderStepValue`, Ankertexten und `questionnaire-unit`.
+
+### Entscheidungsregel
+
+> Gibt es für die Antwortsemantik etablierte Standard-Terminologie? → Fall A (inline + RuleSet).
+> Ist die Wortwahl Teil des validierten Instruments? → Fall B (eigenes CS + answerValueSet).
+> Ist die Antwort eine Zahl? → Fall C.
 
 ## 5. Scoring
 
@@ -171,11 +166,32 @@ MCID-Entscheidung und der MDR-Abgrenzung des Moduls.
 
 ## 6. Weitere Festlegungen
 
-**Sprache:** Repo-Konvention ist EN-primär mit DE-Übersetzung. Das PSS-Set ist jedoch **nur auf
-Deutsch** dokumentiert (mehrere Instrumente wurden auf Deutsch entwickelt: OPD-SFK, ISR, SSD-12).
-Wo keine validierte englische Fassung vorliegt, wird `language = #de` gesetzt und auf eine
-Pseudo-Übersetzung verzichtet — eine selbst erfundene englische Item-Formulierung wäre in einem
-normativen Modul schädlicher als die fehlende Sprachvariante.
+**Sprache — pro Instrument, nicht pauschal fürs Set.** Die Regel lautet: `language` ist die
+**Originalsprache des Instruments**; alle anderen Sprachen sind Übersetzungen und werden über die
+`translation`-Extension am Item-Text geführt.
+
+Der erste Entwurf hatte pauschal `#de` für das ganze PSS-Set vorgesehen — das ist falsch. SCOFF ist
+ein englisches Original (Morgan, Reid & Lacey, BMJ 1999), also `language = #en` mit deutscher
+Übersetzung. Auf Deutsch **entwickelte** Instrumente (OPD-SFK, ISR, SSD-12) bekommen `#de`; eine
+englische Fassung wird dort nur ergänzt, wenn eine validierte existiert — niemals selbst formuliert.
+
+Wo Original und Übersetzung inhaltlich abweichen, bleibt **beides wortgetreu** stehen. Beispiel
+SCOFF Item 3: Das Original fragt nach „One stone" (≈ 6,35 kg), die deutsche Fassung nach „mehr als
+6 kg". Diese Differenz wird dokumentiert, nicht angeglichen.
+
+**Display-Sprache folgt der Fragebogensprache.** Die `display`-Werte der Antwortkonzepte stehen in
+der Sprache des Fragebogens, alle weiteren Sprachen als `designation`. Das ist keine Stilfrage: Der
+FHIR-Validator verlangt in einer Ressource mit `language = #de` den deutschen Display im
+`valueCoding` — steht dort der englische, schlägt die gesamte `answerValueSet`-Prüfung fehl, und
+zwar mit der irreführenden Folgemeldung „Wert nicht im ValueSet enthalten" (nachgewiesen an SSD-12
+am 2026-09-01: zwölf Items, zwölf Fehlermeldungen, Ursache war ausschließlich der Display).
+Konsequenz: DE-Fragebogen → deutsche Displays, englische `designation`; EN-Fragebogen umgekehrt.
+
+**Antwort-Displays gehören NICHT in Übersetzungs-Extensions.** Bei Fall A liefert SNOMED die
+deutschen Designations selbst (`373066001` → „Ja"); bei Fall B stehen sie als `designation` am
+MII-CodeSystem. Eine zusätzlich im Formular hartkodierte Übersetzung wäre Redundanz, die bei
+Terminologie-Updates veraltet. Übersetzungs-Extensions bleiben den **Item-Texten** vorbehalten —
+die stehen in keiner Terminologie.
 
 **Visual Scales:** EURONET-SOMA, EXPECT und WAI nutzen visuelle Likert-Skalen, deren Darstellung in
 eigenen Excel-Reitern liegt. Modellierung als `integer` mit `sliderStepValue`/`questionnaire-unit`
@@ -203,6 +219,13 @@ verwendeten Items. Solche Subset-Questionnaires gehören laut Konvention in das 
 7. **Englische Fassungen**: Für welche Instrumente existieren validierte englische Versionen?
 8. **Ort der PCOR-Variablen-Zuordnung**: ConceptMap im PCOR-MII-Repo oder Mapping-Tabelle in der
    ETL-Strecke? (Nicht im KDS-Modul — siehe Abschnitt 3.)
+9. **Terminologie-Service-Abhängigkeit bei Fall A** (siehe Abschnitt 4): Wenn die deutschen
+   Antwort-Displays aus SNOMED kommen, zeigt ein Renderer **ohne** Terminologie-Service-Zugriff einer
+   deutschsprachigen Person „Yes"/„No". Für `collectable`-Fragebögen ist das ein reales
+   Nutzungsproblem. Zu klären: Reicht die Anbindung an den Terminologie-Service (Bead `epb`), oder
+   braucht das Package zusätzlich eine **vorexpandierte ValueSet-Fassung mit Designations** als
+   Offline-Fallback? Letzteres wäre kontrollierte Redundanz mit klarer Herkunft — anders als eine
+   handgeschriebene Übersetzung im Formular.
 
 ## 8. Umsetzungsreihenfolge
 

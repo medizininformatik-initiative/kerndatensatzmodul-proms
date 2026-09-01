@@ -1,0 +1,86 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-scoff-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.6.0"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "scoff-q01"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "scoff-q02"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        }
+      ],
+      "linkId": "scoff-q03"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        }
+      ],
+      "linkId": "scoff-q04"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "scoff-q05"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 3
+        }
+      ],
+      "linkId": "scoff-score-total"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-08-28T09:30:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff"
+}

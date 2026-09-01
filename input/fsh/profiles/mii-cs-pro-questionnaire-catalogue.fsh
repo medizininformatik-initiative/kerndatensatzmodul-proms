@@ -28,6 +28,12 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #proctcae-onkologisches-basisscreening "PRO-CTCAE Onkologisches Basisscreening (DKG, MIDOS2-äquivalente Symptome)"
 * #midos-midos2 "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, DGP)"
 * #whodas-whodas12 "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
+* #scoff "SCOFF (Five-item eating disorder screening questionnaire, Morgan et al. 1999)"
+* #wi-7 "Whiteley-7 (Seven-item scale for hypochondriasis and somatization, Fink et al. 1999)"
+* #pc-ptsd "PC-PTSD (Primary Care PTSD Screen)"
+* #ssd-12 "SSD-12 (Somatic Symptom Disorder - B Criteria Scale, Toussaint et al.)"
+* #isr-z "ISR-Z (ICD-10-Symptom-Rating, Subskala Zwang, Tritt et al. 2008)"
+* #euronet-soma "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)"
 
 // TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are
 // separate entities or part of some bigger PRO framework for proper categorization

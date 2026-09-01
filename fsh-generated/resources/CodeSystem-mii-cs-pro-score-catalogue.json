@@ -171,8 +171,28 @@
     {
       "code": "proctcae-acs",
       "display": "PRO-CTCAE Average Composite Score (ACS)"
+    },
+    {
+      "code": "scoff-total",
+      "display": "SCOFF Total Score (0-5)"
+    },
+    {
+      "code": "wi-7-total",
+      "display": "Whiteley-7 Total Score (0-7)"
+    },
+    {
+      "code": "pc-ptsd-total",
+      "display": "PC-PTSD Total Score (0-4)"
+    },
+    {
+      "code": "ssd-12-total",
+      "display": "SSD-12 Total Score (0-48)"
+    },
+    {
+      "code": "isr-z-mean",
+      "display": "ISR-Z Skalenwert (Mittelwert 0-4)"
     }
   ],
-  "version": "2026.5.2",
-  "count": 41
+  "version": "2026.6.0",
+  "count": 46
 }

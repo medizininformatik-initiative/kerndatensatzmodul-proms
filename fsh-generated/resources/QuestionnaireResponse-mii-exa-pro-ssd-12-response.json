@@ -1,0 +1,170 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-ssd-12-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.6.0"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q01"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q02"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q03"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q04"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q05"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q06"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q07"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q08"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q09"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q10"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q11"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q12"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 24
+        }
+      ],
+      "linkId": "ssd12-score-total"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-08-31T09:30:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12"
+}
