@@ -81,3 +81,9 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 
 // SCOFF Score (higher = greater likelihood of an eating disorder)
 * #scoff-total "SCOFF Total Score (0-5)"
+
+// PSS-Set Scores (PCOR-MII)
+* #wi-7-total "Whiteley-7 Total Score (0-7)"
+* #pc-ptsd-total "PC-PTSD Total Score (0-4)"
+* #ssd-12-total "SSD-12 Total Score (0-48)"
+* #isr-z-mean "ISR-Z Skalenwert (Mittelwert 0-4)"
