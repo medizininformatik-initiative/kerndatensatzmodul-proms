@@ -1,4 +1,4 @@
-# Domains - MII IG PRO v2026.6.0
+# Domains - MII IG PRO v2026.7.0
 
 ## Domains
 

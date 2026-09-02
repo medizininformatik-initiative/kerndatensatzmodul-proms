@@ -1,4 +1,4 @@
-# SCOFF Questionnaire Response Example - MII IG PRO v2026.6.0
+# SCOFF Questionnaire Response Example - MII IG PRO v2026.7.0
 
 ## Beispiel QuestionnaireResponse: SCOFF Questionnaire Response Example
 
@@ -10,7 +10,7 @@
 
 Language: de
 
-Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2026.6.0
+Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2026.7.0
 
 * [LinkID](https://hl7.org/fhir/R4/formats.html#table): mii-exa-pro-scoff-response
   * [Text](https://hl7.org/fhir/R4/formats.html#table): 
@@ -51,7 +51,7 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "resourceType" : "QuestionnaireResponse",
   "id" : "mii-exa-pro-scoff-response",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.7.0"]
   },
   "language" : "de",
   "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff",

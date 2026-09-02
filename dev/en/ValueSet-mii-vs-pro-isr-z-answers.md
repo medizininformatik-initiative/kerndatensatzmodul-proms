@@ -1,4 +1,4 @@
-# MII VS PRO ISR-Z Answers - MII IG PRO v2026.6.0
+# MII VS PRO ISR-Z Answers - MII IG PRO v2026.7.0
 
 ## ValueSet: MII VS PRO ISR-Z Answers 
 
@@ -28,11 +28,11 @@ ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemli
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-isr-z-answers",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-isr-z-answers",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_VS_PRO_ISR_Z_Answers",
   "title" : "MII VS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

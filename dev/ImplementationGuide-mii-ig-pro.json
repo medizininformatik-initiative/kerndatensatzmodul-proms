@@ -7,11 +7,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mii-ig-pro</b></p><a name=\"mii-ig-pro\"> </a><a name=\"hcmii-ig-pro\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de</p></div><h2>MII_IG_PRO</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro</pre><div><p>Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken</p>\n</div></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mii-ig-pro</b></p><a name=\"en-mii-ig-pro\"> </a><a name=\"en-hcmii-ig-pro\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de</p></div><h2>MII_IG_PRO</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro</pre><div><p>Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken</p>\n</div></div></div>"
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -1342,6 +1342,29 @@
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-gad-7-response"
+      },
+      "name" : "GAD-7 Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-gad-7-score"
+      },
+      "name" : "GAD-7 Score Observation Example",
+      "description" : "GAD-7 Summenwert aus der Beispiel-QuestionnaireResponse: 7 von 21",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
         "reference" : "QuestionnaireResponse/mii-exa-pro-isr-z-response"
       },
       "name" : "ISR-Z Questionnaire Response Example",
@@ -1358,6 +1381,18 @@
       "name" : "ISR-Z Score Observation Example",
       "description" : "ISR-Z Skalenwert (Mittelwert) aus der Beispiel-QuestionnaireResponse: 2.0 von 4",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/mii-cm-pro-gad-7-linkids"
+      },
+      "name" : "MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds",
+      "description" : "Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds des PHQ-D-Block-Namespace (phq-phq5a…phq-phq5g) ab. Lesehilfe für die Übernahme von Daten aus Systemen, die die konventionelle Nummerierung verwenden — keine Migration einer veröffentlichten Fassung.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1905,6 +1940,18 @@
         "valueString" : "ObservationDefinition"
       }],
       "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-gad-7"
+      },
+      "name" : "MII ObsDef PRO Score GAD-7",
+      "description" : "GAD-7 Summenscore (0-21) — Screening auf generalisierte Angststörung",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      }],
+      "reference" : {
         "reference" : "ObservationDefinition/mii-obsdef-pro-score-isr-z"
       },
       "name" : "MII ObsDef PRO Score ISR-Z",
@@ -2413,6 +2460,18 @@
       },
       "name" : "MII QST PRO EURONET-SOMA",
       "description" : "EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-gad-7"
+      },
+      "name" : "MII QST PRO GAD-7",
+      "description" : "Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte Angststoerung, mit deutscher Uebersetzung (PHQ-D)",
       "exampleBoolean" : false
     },
     {
@@ -3566,6 +3625,15 @@
           }],
           "nameUrl" : "euronet-soma.html",
           "title" : "EURONET-SOMA",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "gad-7.html"
+          }],
+          "nameUrl" : "gad-7.html",
+          "title" : "GAD-7",
           "generation" : "markdown"
         },
         {

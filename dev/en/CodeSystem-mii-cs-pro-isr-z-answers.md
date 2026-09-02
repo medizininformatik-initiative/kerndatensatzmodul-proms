@@ -1,4 +1,4 @@
-# MII CS PRO ISR-Z Answers - MII IG PRO v2026.6.0
+# MII CS PRO ISR-Z Answers - MII IG PRO v2026.7.0
 
 ## CodeSystem: MII CS PRO ISR-Z Answers 
 
@@ -23,11 +23,11 @@ This Code system is referenced in the definition of the following value sets:
   "id" : "mii-cs-pro-isr-z-answers",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_CS_PRO_ISR_Z_Answers",
   "title" : "MII CS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

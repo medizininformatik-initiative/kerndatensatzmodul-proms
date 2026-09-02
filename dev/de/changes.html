@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2026.6.0</title>
+    <title>Changelog - MII IG PRO v2026.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.6.0 - ci-build
+            <span style="display:inline-block;">2026.7.0 - ci-build
 
 
 
@@ -190,6 +190,9 @@
       <li>
         <a href="euronet-soma.html">EURONET-SOMA</a>
       </li>
+      <li>
+        <a href="gad-7.html">GAD-7</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -264,7 +267,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -285,6 +288,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
+
+<p><strong>Version: 2026.7.0</strong></p>
+
+<p>Datum: 2026-09-02 (in Vorbereitung)</p>
+
+<p>Minor-Release — <strong>GAD-7</strong> als neues Instrument, eine geteilte PHQ-Vierpunktskala und eine ConceptMap zur Item-Nummerierung. Keine Breaking Changes an bestehenden Ressourcen.</p>
+
+<h2 id="added-gad-7-generalized-anxiety-disorder-scale-7">Added: GAD-7 (Generalized Anxiety Disorder Scale-7)</h2>
+
+<p>Sieben Items zum Screening auf eine generalisierte Angststörung, Summenwert 0–21, Schweregrade 5/10/15 (Spitzer et al. 2006). Englisch als Primärsprache mit validierter deutscher Übersetzung (PHQ-D; Löwe et al. 2008, n=5030). LOINC-Panel <code class="language-plaintext highlighter-rouge">69737-5</code>, Score <code class="language-plaintext highlighter-rouge">70274-6</code>. Frei verfügbar, keine Genehmigung erforderlich.</p>
+
+<p><strong>linkIds im PHQ-D-Block-Namespace</strong> (<code class="language-plaintext highlighter-rouge">phq-phq5a</code>…<code class="language-plaintext highlighter-rouge">phq-phq5g</code>) statt einer instrumenteneigenen Nummerierung. Der Grund ist die Verzahnung innerhalb der PHQ-Familie: Die ersten beiden GAD-7-Items bilden den GAD-2 und gehen gemeinsam mit zwei PHQ-9-Items in den PHQ-4 ein. Dieselbe Frage soll instrumentenübergreifend denselben linkId tragen — andernfalls wäre später eine Migrations-ConceptMap nötig, wie sie für den PHQ-9 zu 2026.5.0 angelegt werden musste.</p>
+
+<p><strong>Nicht übernommen</strong> wurde eine PROMIS-Anxiety-T-Score-Umrechnung, die in einem früheren Entwicklungsstand als FHIRPath-Ausdruck im Questionnaire vorlag. Score-Konversionen zwischen Instrumenten werden künftig als CQL-Library modelliert.</p>
+
+<h2 id="added-geteilte-phq-vierpunktskala">Added: geteilte PHQ-Vierpunktskala</h2>
+
+<p>Das RuleSet <code class="language-plaintext highlighter-rouge">Phq4PointFrequencyAnswerOptions</code> bündelt die Häufigkeitsskala über zwei Wochen (0–3) mit den LOINC-Antwortcodes der Liste LL358-3 (<code class="language-plaintext highlighter-rouge">LA6568-5</code>…<code class="language-plaintext highlighter-rouge">LA6571-9</code>) und den deutschen Wortlauten des PHQ-D. GAD-7 nutzt sie; PHQ-9 und PHQ-4 können darauf umgestellt werden.</p>
+
+<h2 id="added-conceptmap-zur-gad-7-item-nummerierung">Added: ConceptMap zur GAD-7-Item-Nummerierung</h2>
+
+<p><code class="language-plaintext highlighter-rouge">mii-cm-pro-gad-7-linkids</code> bildet die übliche GAD-7-Nummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds ab. Es handelt sich ausdrücklich <strong>nicht</strong> um eine Migration einer veröffentlichten Fassung, sondern um eine Lesehilfe für die Übernahme von Daten aus Fremdsystemen.</p>
 
 <p><strong>Version: 2026.6.0</strong></p>
 
@@ -747,7 +772,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.7.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
   <span title="2026-09-02 06:41:00 +0000">
     2026-09-02

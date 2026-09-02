@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - MII IG PRO v2026.6.0</title>
+    <title>Artifacts Summary - MII IG PRO v2026.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.6.0 - ci-build
+            <span style="display:inline-block;">2026.7.0 - ci-build
 
 
 
@@ -190,6 +190,9 @@
       <li>
         <a href="euronet-soma.html">EURONET-SOMA</a>
       </li>
+      <li>
+        <a href="gad-7.html">GAD-7</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -264,7 +267,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   <p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
@@ -604,6 +607,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-mii-qst-pro-gad-7.html"
+                  title="Questionnaire/mii-qst-pro-gad-7">
+                  <span title="Questionnaire/mii-qst-pro-gad-7">MII QST PRO GAD-7
+</span>
+               </a>
+            </td>
+            <td>
+<p>Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte Angststoerung, mit deutscher Uebersetzung (PHQ-D)</p>
 </td>
          </tr>
          <tr>
@@ -1632,6 +1647,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-mii-cm-pro-gad-7-linkids.html"
+                  title="ConceptMap/mii-cm-pro-gad-7-linkids">
+                  <span title="ConceptMap/mii-cm-pro-gad-7-linkids">MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds
+</span>
+               </a>
+            </td>
+            <td>
+<p>Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds des PHQ-D-Block-Namespace (phq-phq5a…phq-phq5g) ab. Lesehilfe für die Übernahme von Daten aus Systemen, die die konventionelle Nummerierung verwenden — keine Migration einer veröffentlichten Fassung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-mii-cm-pro-phq-9-linkid-migration.html"
                   title="ConceptMap/mii-cm-pro-phq-9-linkid-migration">
                   <span title="ConceptMap/mii-cm-pro-phq-9-linkid-migration">MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)
@@ -2080,6 +2107,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ObservationDefinition-mii-obsdef-pro-score-gad-7.html"
+                  title="ObservationDefinition/mii-obsdef-pro-score-gad-7">
+                  <span title="ObservationDefinition/mii-obsdef-pro-score-gad-7">MII ObsDef PRO Score GAD-7
+</span>
+               </a>
+            </td>
+            <td>
+<p>GAD-7 Summenscore (0-21) — Screening auf generalisierte Angststörung</p>
 </td>
          </tr>
          <tr>
@@ -2536,6 +2575,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="QuestionnaireResponse-mii-exa-pro-gad-7-response.html"
+                  title="QuestionnaireResponse/mii-exa-pro-gad-7-response">
+                  <span title="QuestionnaireResponse/mii-exa-pro-gad-7-response">GAD-7 Questionnaire Response Example
+</span>
+               </a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-pro-gad-7-score.html"
+                  title="Observation/mii-exa-pro-gad-7-score">
+                  <span title="Observation/mii-exa-pro-gad-7-score">GAD-7 Score Observation Example
+</span>
+               </a>
+            </td>
+            <td>
+<p>GAD-7 Summenwert aus der Beispiel-QuestionnaireResponse: 7 von 21</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="QuestionnaireResponse-mii-exa-pro-isr-z-response.html"
                   title="QuestionnaireResponse/mii-exa-pro-isr-z-response">
                   <span title="QuestionnaireResponse/mii-exa-pro-isr-z-response">ISR-Z Questionnaire Response Example
@@ -2933,7 +2996,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
   <span title="2026-09-02 06:41:00 +0000">
     2026-09-02

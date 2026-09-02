@@ -1,4 +1,4 @@
-# Translation Information - MII IG PRO v2026.6.0
+# Translation Information - MII IG PRO v2026.7.0
 
 ## Translation Information
 

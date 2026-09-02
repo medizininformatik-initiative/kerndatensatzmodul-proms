@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2026.6.0
+# MII PR PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2026.7.0
 
 ## Resource Profile: MII PR PRO PROMIS Cognitive Function SF 4a Raw Score ( Experimental ) 
 
@@ -29,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

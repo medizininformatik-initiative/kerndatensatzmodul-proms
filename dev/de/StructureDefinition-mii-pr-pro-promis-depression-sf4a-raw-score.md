@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2026.6.0
+# MII PR PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2026.7.0
 
 ## Ressourcenprofil: MII PR PRO PROMIS Depression SF 4a Raw Score 
 
@@ -101,11 +101,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-depression-sf4a-raw-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Depression SF 4a Raw Score",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

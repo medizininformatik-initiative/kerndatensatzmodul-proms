@@ -1,4 +1,4 @@
-# Module Description - MII IG PRO v2026.6.0
+# Module Description - MII IG PRO v2026.7.0
 
 ## Module Description
 

@@ -1,4 +1,4 @@
-# MII QST PRO EQ-5D-5L Collectable - MII IG PRO v2026.6.0
+# MII QST PRO EQ-5D-5L Collectable - MII IG PRO v2026.7.0
 
 ## Questionnaire: MII QST PRO EQ-5D-5L Collectable (Experimentell) 
 
@@ -24,7 +24,7 @@ MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collect
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-euroqol-eq5d5l-collectable",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
   },
   "language" : "de",
   "extension" : [{
@@ -51,12 +51,12 @@ MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Collect
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "title" : "MII QST PRO EQ-5D-5L Collectable",
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -1,4 +1,4 @@
-# de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0: MII IG PRO(de)
+# de.medizininformatikinitiative.kerndatensatz.pros#2026.7.0: MII IG PRO(de)
 
 ## Pages
 
@@ -32,6 +32,7 @@
 * [Module Description](de/module-description.md)
 * [ValueSet](de/ValueSet-mii-qst-pro-eortc-qlq-c30-variant-b_eortc-qlq-c30-7pt-b.md)
 * [](de/ValueSet-mii-qst-pro-eortc-qlq-c30-variant-b_eortc-qlq-c30-7pt-b-testing.md)
+* [GAD-7](de/gad-7.md)
 * [ISR-Z](de/isr-z.md)
 * [ID Systematics](de/id-systematics.md)
 * [](de/CodeSystem-mii-qst-pro-eortc-qlq-c30_eortc-qlq-c30-cs-testing.md)
@@ -153,6 +154,7 @@
 
 ### ConceptMaps
 
+* [MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds](de/ConceptMap-mii-cm-pro-gad-7-linkids.md)
 * [MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)](de/ConceptMap-mii-cm-pro-phq-9-linkid-migration.md)
 
 ### ImplementationGuides
@@ -197,6 +199,7 @@
 * [mii-obsdef-pro-score-eq5d5l-index](de/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.md)
 * [mii-obsdef-pro-score-eq5d5l-profile](de/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.md)
 * [mii-obsdef-pro-score-eq5d5l-vas](de/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.md)
+* [mii-obsdef-pro-score-gad-7](de/ObservationDefinition-mii-obsdef-pro-score-gad-7.md)
 * [mii-obsdef-pro-score-isr-z](de/ObservationDefinition-mii-obsdef-pro-score-isr-z.md)
 * [mii-obsdef-pro-score-pc-ptsd](de/ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.md)
 * [mii-obsdef-pro-score-phq-15](de/ObservationDefinition-mii-obsdef-pro-score-phq-15.md)
@@ -222,6 +225,7 @@
 * [MII QST PRO EQ-5D-5L Collectable](de/Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md)
 * [MII QST PRO EQ-5D-5L (Displayable)](de/Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md)
 * [MII QST PRO EQ-5D-5L](de/Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md)
+* [MII QST PRO GAD-7](de/Questionnaire-mii-qst-pro-gad-7.md)
 * [Hospital Anxiety and Depression Scale (HADS)](de/Questionnaire-mii-qst-pro-hads.md)
 * [MII QST PRO ISR-Z](de/Questionnaire-mii-qst-pro-isr-z.md)
 * [Kessler Psychological Distress Scale (K6)](de/Questionnaire-mii-qst-pro-k6.md)
@@ -281,6 +285,7 @@
 * [mii-exa-pro-eortc-qlq-c30-observation-rf (Observation)](de/Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.md)
 * [mii-exa-pro-eortc-qlq-c30-observation-sf (Observation)](de/Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.md)
 * [mii-exa-pro-eortc-qlq-c30-observation-sl (Observation)](de/Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.md)
+* [mii-exa-pro-gad-7-score (Observation)](de/Observation-mii-exa-pro-gad-7-score.md)
 * [mii-exa-pro-isr-z-score (Observation)](de/Observation-mii-exa-pro-isr-z-score.md)
 * [mii-exa-pro-pc-ptsd-score (Observation)](de/Observation-mii-exa-pro-pc-ptsd-score.md)
 * [mii-exa-pro-phq-15-observation (Observation)](de/Observation-mii-exa-pro-phq-15-observation.md)
@@ -300,6 +305,7 @@
 * [mii-exa-pro-euronet-soma-response (QuestionnaireResponse)](de/QuestionnaireResponse-mii-exa-pro-euronet-soma-response.md)
 * [mii-exa-pro-euroqol-eq5d5l-coded-response (QuestionnaireResponse)](de/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.md)
 * [mii-exa-pro-euroqol-eq5d5l-response (QuestionnaireResponse)](de/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.md)
+* [mii-exa-pro-gad-7-response (QuestionnaireResponse)](de/QuestionnaireResponse-mii-exa-pro-gad-7-response.md)
 * [mii-exa-pro-isr-z-response (QuestionnaireResponse)](de/QuestionnaireResponse-mii-exa-pro-isr-z-response.md)
 * [mii-exa-pro-midos2-response-01 (QuestionnaireResponse)](de/QuestionnaireResponse-mii-exa-pro-midos2-response-01.md)
 * [mii-exa-pro-pc-ptsd-response (QuestionnaireResponse)](de/QuestionnaireResponse-mii-exa-pro-pc-ptsd-response.md)

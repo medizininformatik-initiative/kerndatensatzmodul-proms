@@ -1,4 +1,4 @@
-# MII QST PRO WI-7 - MII IG PRO v2026.6.0
+# MII QST PRO WI-7 - MII IG PRO v2026.7.0
 
 ## Questionnaire: MII QST PRO WI-7 (Experimentell) 
 
@@ -24,7 +24,7 @@ WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondrias
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-wi-7",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
   },
   "language" : "en",
   "extension" : [{
@@ -59,11 +59,11 @@ WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondrias
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

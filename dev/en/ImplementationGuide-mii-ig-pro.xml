@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro"/>
-  <version value="2026.6.0"/>
+  <version value="2026.7.0"/>
   <name value="MII_IG_PRO"/>
   <title value="MII IG PRO"/>
   <status value="active"/>
-  <date value="2026-09-02T06:41:53+00:00"/>
+  <date value="2026-09-02T06:41:55+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -1095,6 +1095,27 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-gad-7-response"/>
+      </reference>
+      <name value="GAD-7 Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-gad-7-score"/>
+      </reference>
+      <name value="GAD-7 Score Observation Example"/>
+      <description value="GAD-7 Summenwert aus der Beispiel-QuestionnaireResponse: 7 von 21"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
         <reference value="QuestionnaireResponse/mii-exa-pro-isr-z-response"/>
       </reference>
       <name value="ISR-Z Questionnaire Response Example"/>
@@ -1110,6 +1131,17 @@
       <name value="ISR-Z Score Observation Example"/>
       <description value="ISR-Z Skalenwert (Mittelwert) aus der Beispiel-QuestionnaireResponse: 2.0 von 4"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mii-cm-pro-gad-7-linkids"/>
+      </reference>
+      <name value="MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds"/>
+      <description value="Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds des PHQ-D-Block-Namespace (phq-phq5a…phq-phq5g) ab. Lesehilfe für die Übernahme von Daten aus Systemen, die die konventionelle Nummerierung verwenden — keine Migration einer veröffentlichten Fassung."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1611,6 +1643,17 @@
         <valueString value="ObservationDefinition"/>
       </extension>
       <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-score-gad-7"/>
+      </reference>
+      <name value="MII ObsDef PRO Score GAD-7"/>
+      <description value="GAD-7 Summenscore (0-21) — Screening auf generalisierte Angststörung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
         <reference value="ObservationDefinition/mii-obsdef-pro-score-isr-z"/>
       </reference>
       <name value="MII ObsDef PRO Score ISR-Z"/>
@@ -2077,6 +2120,17 @@
       </reference>
       <name value="MII QST PRO EURONET-SOMA"/>
       <description value="EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/mii-qst-pro-gad-7"/>
+      </reference>
+      <name value="MII QST PRO GAD-7"/>
+      <description value="Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte Angststoerung, mit deutscher Uebersetzung (PHQ-D)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3124,6 +3178,14 @@
           </extension>
           <nameUrl value="euronet-soma.html"/>
           <title value="EURONET-SOMA"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="gad-7.html"/>
+          </extension>
+          <nameUrl value="gad-7.html"/>
+          <title value="GAD-7"/>
           <generation value="markdown"/>
         </page>
         <page>

@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-interval-category - MII IG PRO v2026.6.0
+# mii-sp-pro-observationdefinition-interval-category - MII IG PRO v2026.7.0
 
 ## SearchParameter: mii-sp-pro-observationdefinition-interval-category (Experimental) 
 
@@ -27,7 +27,7 @@ SearchParameter for ObservationDefinition.qualifiedInterval.category to filter b
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-interval-category",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_SP_PRO_ObservationDefinition_QualifiedInterval_Category",
   "status" : "active",
   "experimental" : true,

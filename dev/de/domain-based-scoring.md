@@ -1,4 +1,4 @@
-# Domain-Based Scoring - MII IG PRO v2026.6.0
+# Domain-Based Scoring - MII IG PRO v2026.7.0
 
 ## Domain-Based Scoring
 

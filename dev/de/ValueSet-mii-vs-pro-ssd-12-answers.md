@@ -1,4 +1,4 @@
-# MII VS PRO SSD-12 Answers - MII IG PRO v2026.6.0
+# MII VS PRO SSD-12 Answers - MII IG PRO v2026.7.0
 
 ## ValueSet: MII VS PRO SSD-12 Answers 
 
@@ -28,11 +28,11 @@ SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 =
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-ssd-12-answers",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_VS_PRO_SSD_12_Answers",
   "title" : "MII VS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

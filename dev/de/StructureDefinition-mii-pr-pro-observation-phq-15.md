@@ -1,4 +1,4 @@
-# MII PR PRO Observation PHQ-15 - MII IG PRO v2026.6.0
+# MII PR PRO Observation PHQ-15 - MII IG PRO v2026.7.0
 
 ## Ressourcenprofil: MII PR PRO Observation PHQ-15 ( Experimentell ) 
 
@@ -77,12 +77,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-phq-15",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_PR_PRO_Observation_PHQ_15",
   "title" : "MII PR PRO Observation PHQ-15",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

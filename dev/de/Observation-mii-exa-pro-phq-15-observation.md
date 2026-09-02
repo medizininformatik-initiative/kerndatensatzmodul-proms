@@ -1,4 +1,4 @@
-# PHQ-15 Score Observation Example - MII IG PRO v2026.6.0
+# PHQ-15 Score Observation Example - MII IG PRO v2026.7.0
 
 ## Beispiel Observation: PHQ-15 Score Observation Example
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Observation PHQ-15](StructureDefinition-mii-pr-pro-observation-phq-15.md) version: 2026.6.0
+Profile: [MII PR PRO Observation PHQ-15](StructureDefinition-mii-pr-pro-observation-phq-15.md) version: 2026.7.0
 
 **status**: Final
 
@@ -31,7 +31,7 @@ Profile: [MII PR PRO Observation PHQ-15](StructureDefinition-mii-pr-pro-observat
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-phq-15-observation",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15|2026.7.0"]
   },
   "status" : "final",
   "code" : {

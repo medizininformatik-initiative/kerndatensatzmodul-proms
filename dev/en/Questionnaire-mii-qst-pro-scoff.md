@@ -1,4 +1,4 @@
-# MII QST PRO SCOFF - MII IG PRO v2026.6.0
+# MII QST PRO SCOFF - MII IG PRO v2026.7.0
 
 ## Questionnaire: MII QST PRO SCOFF (Experimental) 
 
@@ -24,7 +24,7 @@ SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-scoff",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
   },
   "language" : "en",
   "extension" : [{
@@ -59,11 +59,11 @@ SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

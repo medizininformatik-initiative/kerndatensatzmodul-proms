@@ -10,11 +10,11 @@
   "id" : "mii-ig-pro",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -1538,6 +1538,37 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-gad-7-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-gad-7-response"
+      },
+      "name" : "GAD-7 Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-gad-7-score.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-gad-7-score"
+      },
+      "name" : "GAD-7 Score Observation Example",
+      "description" : "GAD-7 Summenwert aus der Beispiel-QuestionnaireResponse: 7 von 21",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "QuestionnaireResponse-mii-exa-pro-isr-z-response.html"
       }],
       "reference" : {
@@ -1561,6 +1592,22 @@
       "name" : "ISR-Z Score Observation Example",
       "description" : "ISR-Z Skalenwert (Mittelwert) aus der Beispiel-QuestionnaireResponse: 2.0 von 4",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-mii-cm-pro-gad-7-linkids.html"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/mii-cm-pro-gad-7-linkids"
+      },
+      "name" : "MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds",
+      "description" : "Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds des PHQ-D-Block-Namespace (phq-phq5a…phq-phq5g) ab. Lesehilfe für die Übernahme von Daten aus Systemen, die die konventionelle Nummerierung verwenden — keine Migration einer veröffentlichten Fassung.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2280,6 +2327,22 @@
       },
       "name" : "MII ObsDef PRO Score EQ-5D-5L VAS",
       "description" : "EuroQol 5 Dimensions 5 Levels (EQ-5D-5L) Visual Analog Scale (VAS) Score",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-score-gad-7.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-gad-7"
+      },
+      "name" : "MII ObsDef PRO Score GAD-7",
+      "description" : "GAD-7 Summenscore (0-21) — Screening auf generalisierte Angststörung",
       "exampleBoolean" : false
     },
     {
@@ -3076,6 +3139,22 @@
       },
       "name" : "MII QST PRO EURONET-SOMA",
       "description" : "EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-gad-7.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-gad-7"
+      },
+      "name" : "MII QST PRO GAD-7",
+      "description" : "Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte Angststoerung, mit deutscher Uebersetzung (PHQ-D)",
       "exampleBoolean" : false
     },
     {
@@ -4509,6 +4588,15 @@
           }],
           "nameUrl" : "euronet-soma.html",
           "title" : "EURONET-SOMA",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "gad-7.html"
+          }],
+          "nameUrl" : "gad-7.html",
+          "title" : "GAD-7",
           "generation" : "markdown"
         },
         {

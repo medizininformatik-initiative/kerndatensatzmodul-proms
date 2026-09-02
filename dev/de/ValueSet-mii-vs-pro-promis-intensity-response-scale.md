@@ -1,4 +1,4 @@
-# MII VS PRO PROMIS Intensity Response Scale - MII IG PRO v2026.6.0
+# MII VS PRO PROMIS Intensity Response Scale - MII IG PRO v2026.7.0
 
 ## ValueSet: MII VS PRO PROMIS Intensity Response Scale (Experimentell) 
 
@@ -29,12 +29,12 @@ PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a 
   "id" : "mii-vs-pro-promis-intensity-response-scale",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_VS_PRO_PROMIS_Intensity_Response_Scale",
   "title" : "MII VS PRO PROMIS Intensity Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -1,4 +1,4 @@
-# ISR-Z Score Observation Example - MII IG PRO v2026.6.0
+# ISR-Z Score Observation Example - MII IG PRO v2026.7.0
 
 ## Example Observation: ISR-Z Score Observation Example
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.6.0
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.7.0
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-isr-z-score",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.7.0"]
   },
   "status" : "final",
   "category" : [{

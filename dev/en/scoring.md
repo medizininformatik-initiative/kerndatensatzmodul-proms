@@ -1,4 +1,4 @@
-# Scoring - MII IG PRO v2026.6.0
+# Scoring - MII IG PRO v2026.7.0
 
 ## Scoring
 

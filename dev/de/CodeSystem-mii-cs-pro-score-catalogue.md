@@ -1,4 +1,4 @@
-# MII CS PRO Score Catalogue - MII IG PRO v2026.6.0
+# MII CS PRO Score Catalogue - MII IG PRO v2026.7.0
 
 ## CodeSystem: MII CS PRO Score Catalogue 
 
@@ -22,11 +22,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-score-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     }]
   }],
   "content" : "complete",
-  "count" : 46,
+  "count" : 47,
   "concept" : [{
     "code" : "euroqol-eq5d5l-index",
     "display" : "EuroQol EQ-5D-5L Index Score"
@@ -231,6 +231,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "code" : "isr-z-mean",
     "display" : "ISR-Z Skalenwert (Mittelwert 0-4)"
+  },
+  {
+    "code" : "phq-gad7-total",
+    "display" : "GAD-7 Total Score (0-21)"
   }]
 }
 

@@ -1,4 +1,4 @@
-# EORTC QLQ-C30 Nausea and Vomiting Score - MII IG PRO v2026.6.0
+# EORTC QLQ-C30 Nausea and Vomiting Score - MII IG PRO v2026.7.0
 
 ## Example Observation: EORTC QLQ-C30 Nausea and Vomiting Score
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.6.0
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.7.0
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-eortc-qlq-c30-observation-nv",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.7.0"]
   },
   "status" : "final",
   "category" : [{

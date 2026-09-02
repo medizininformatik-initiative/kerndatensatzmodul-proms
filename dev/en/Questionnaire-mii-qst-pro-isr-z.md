@@ -1,4 +1,4 @@
-# MII QST PRO ISR-Z - MII IG PRO v2026.6.0
+# MII QST PRO ISR-Z - MII IG PRO v2026.7.0
 
 ## Questionnaire: MII QST PRO ISR-Z (Experimental) 
 
@@ -24,7 +24,7 @@ ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008)
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-isr-z",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.6.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
   },
   "language" : "de",
   "extension" : [{
@@ -59,11 +59,11 @@ ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008)
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-isr-z",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "title" : "MII QST PRO ISR-Z",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

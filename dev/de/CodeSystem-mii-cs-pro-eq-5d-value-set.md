@@ -1,4 +1,4 @@
-# MII CS EQ-5D Value Set - MII IG PRO v2026.6.0
+# MII CS EQ-5D Value Set - MII IG PRO v2026.7.0
 
 ## CodeSystem: MII CS EQ-5D Value Set (Experimentell) 
 
@@ -23,12 +23,12 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "id" : "mii-cs-pro-eq-5d-value-set",
   "language" : "de-DE",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_CS_PRO_EQ_5D_ValueSet",
   "title" : "MII CS EQ-5D Value Set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

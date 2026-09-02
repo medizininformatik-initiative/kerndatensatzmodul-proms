@@ -1,4 +1,4 @@
-# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.6.0
+# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.7.0
 
 ## CodeSystem: MII CS PRO Questionnaire Catalogue 
 
@@ -22,11 +22,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-questionnaire-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 25,
+  "count" : 26,
   "concept" : [{
     "code" : "euroqol-eq5d5l",
     "display" : "EuroQol EQ-5D-5L Questionnaire"
@@ -147,6 +147,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "euronet-soma",
     "display" : "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)"
+  },
+  {
+    "code" : "phq-gad7",
+    "display" : "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
   }]
 }
 

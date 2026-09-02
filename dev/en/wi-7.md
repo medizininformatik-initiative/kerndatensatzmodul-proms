@@ -1,4 +1,4 @@
-# Whiteley-7 (WI-7) - MII IG PRO v2026.6.0
+# Whiteley-7 (WI-7) - MII IG PRO v2026.7.0
 
 ## Whiteley-7 (WI-7)
 

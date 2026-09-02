@@ -1,4 +1,4 @@
-# DASS-21 - MII IG PRO v2026.6.0
+# DASS-21 - MII IG PRO v2026.7.0
 
 ## DASS-21
 

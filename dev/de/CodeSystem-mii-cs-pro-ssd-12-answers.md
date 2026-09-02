@@ -1,4 +1,4 @@
-# MII CS PRO SSD-12 Answers - MII IG PRO v2026.6.0
+# MII CS PRO SSD-12 Answers - MII IG PRO v2026.7.0
 
 ## CodeSystem: MII CS PRO SSD-12 Answers 
 
@@ -23,11 +23,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "id" : "mii-cs-pro-ssd-12-answers",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_CS_PRO_SSD_12_Answers",
   "title" : "MII CS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

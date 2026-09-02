@@ -1,4 +1,4 @@
-# MII VS PRO PHQ-15 Answers - MII IG PRO v2026.6.0
+# MII VS PRO PHQ-15 Answers - MII IG PRO v2026.7.0
 
 ## ValueSet: MII VS PRO PHQ-15 Answers 
 
@@ -28,11 +28,11 @@ PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-phq-15-answers",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
-  "version" : "2026.6.0",
+  "version" : "2026.7.0",
   "name" : "MII_VS_PRO_PHQ_15_Answers",
   "title" : "MII VS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-09-02T06:41:53+00:00",
+  "date" : "2026-09-02T06:41:55+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
