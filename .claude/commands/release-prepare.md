@@ -80,6 +80,16 @@ The MII Module Release Workflow has 8 phases total. This command handles phases 
 Refer to: https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow
 
 
+## Pflichtpruefung am Ende
+
+Nach dem Version-Bump und `sushi . --snapshot` ausfuehren:
+
+```bash
+scripts/check-version-consistency.sh
+```
+
+Prueft alle sechs Stellen (sushi-config.yaml als Referenz, package.json, version.fsh, guide.yaml, die Versionsliste in qc/custom.rules.yaml, die generierten Ressourcen sowie die artifact-version-Extension der ObservationDefinitions). Exit 1 = nicht taggen.
+
 ## Modulspezifische Fallstricke (PRO-Modul)
 
 - **`implementation-guides/MII-PRO-v2026-DE/guide.yaml` wird leicht vergessen.** Sie stand zwischen 2026.2.0 und 2026.6.0 auf einem veralteten Stand, weil dieser Befehl im PRO-Modul fehlte.

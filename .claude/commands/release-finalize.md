@@ -23,6 +23,17 @@ Execute Phase 5: Merge and Tag Release
    - Read `sushi-config.yaml` to get the version number
    - Confirm with user: "Ready to tag release v{VERSION}?"
 
+2a. **Versionskonsistenz pruefen (Gate vor dem Tag)**
+
+   ```bash
+   scripts/check-version-consistency.sh
+   ```
+
+   Prueft sushi-config.yaml, package.json, version.fsh, guide.yaml, die Versionsliste
+   in qc/custom.rules.yaml sowie die generierten Ressourcen inkl. der
+   artifact-version-Extension der ObservationDefinitions.
+   Exit 1 -> nicht taggen. Die guide.yaml wurde historisch vier Releases lang uebersehen.
+
 2b. **HAPI Package Smoke-Test (MANDATORY GATE — do not tag if this fails)**
 
    The package MUST load into a clean HAPI FHIR server without crashing it at
