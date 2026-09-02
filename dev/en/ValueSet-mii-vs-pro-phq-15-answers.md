@@ -32,7 +32,7 @@ PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt
   "name" : "MII_VS_PRO_PHQ_15_Answers",
   "title" : "MII VS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-09-02T06:41:55+00:00",
+  "date" : "2026-09-02T06:47:03+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

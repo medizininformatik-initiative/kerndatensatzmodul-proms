@@ -63,7 +63,7 @@ WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondrias
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:55+00:00",
+  "date" : "2026-09-02T06:47:03+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

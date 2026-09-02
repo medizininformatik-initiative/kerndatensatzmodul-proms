@@ -63,7 +63,7 @@ Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte An
   "title" : "MII QST PRO GAD-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:41:55+00:00",
+  "date" : "2026-09-02T06:47:03+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
