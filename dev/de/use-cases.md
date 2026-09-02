@@ -1,4 +1,4 @@
-# Use Cases - MII IG PRO v2026.5.2
+# Use Cases - MII IG PRO v2026.6.0
 
 ## Use Cases
 

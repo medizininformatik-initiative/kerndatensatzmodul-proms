@@ -1,4 +1,4 @@
-# MII CS PRO Score Catalogue - MII IG PRO v2026.5.2
+# MII CS PRO Score Catalogue - MII IG PRO v2026.6.0
 
 ## CodeSystem: MII CS PRO Score Catalogue 
 
@@ -22,11 +22,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-score-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 41,
+  "count" : 46,
   "concept" : [{
     "code" : "euroqol-eq5d5l-index",
     "display" : "EuroQol EQ-5D-5L Index Score"
@@ -211,6 +211,26 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "proctcae-acs",
     "display" : "PRO-CTCAE Average Composite Score (ACS)"
+  },
+  {
+    "code" : "scoff-total",
+    "display" : "SCOFF Total Score (0-5)"
+  },
+  {
+    "code" : "wi-7-total",
+    "display" : "Whiteley-7 Total Score (0-7)"
+  },
+  {
+    "code" : "pc-ptsd-total",
+    "display" : "PC-PTSD Total Score (0-4)"
+  },
+  {
+    "code" : "ssd-12-total",
+    "display" : "SSD-12 Total Score (0-48)"
+  },
+  {
+    "code" : "isr-z-mean",
+    "display" : "ISR-Z Skalenwert (Mittelwert 0-4)"
   }]
 }
 

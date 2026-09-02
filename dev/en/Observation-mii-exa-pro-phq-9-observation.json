@@ -2,12 +2,12 @@
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-phq-9-observation",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2026.5.2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2026.6.0"]
   },
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-pro-phq-9-observation</b></p><a name=\"en-mii-exa-pro-phq-9-observation\"> </a><a name=\"en-hcmii-exa-pro-phq-9-observation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-pro-observation-phq-9.html\">MII PR PRO Observation PHQ-9</a> version: 2026.5.2</p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 44261-6}\">Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-pro-patient.html\">Max Mustermann  Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)</a></p><p><b>effective</b>: 2023-10-01 12:00:00+0000</p><p><b>value</b>: 27 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></div>"
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-pro-phq-9-observation</b></p><a name=\"en-mii-exa-pro-phq-9-observation\"> </a><a name=\"en-hcmii-exa-pro-phq-9-observation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-pro-observation-phq-9.html\">MII PR PRO Observation PHQ-9</a> version: 2026.6.0</p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 44261-6}\">Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-pro-patient.html\">Max Mustermann  Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)</a></p><p><b>effective</b>: 2023-10-01 12:00:00+0000</p><p><b>value</b>: 27 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></div>"
   },
   "status" : "final",
   "code" : {

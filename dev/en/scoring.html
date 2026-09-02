@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Scoring - MII IG PRO v2026.5.2</title>
+    <title>Scoring - MII IG PRO v2026.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.2 - ci-build
+            <span style="display:inline-block;">2026.6.0 - ci-build
 
 
 
@@ -172,6 +172,24 @@
       <li>
         <a href="whodas.html">WHODAS 2.0</a>
       </li>
+      <li>
+        <a href="scoff.html">SCOFF</a>
+      </li>
+      <li>
+        <a href="wi-7.html">Whiteley-7 (WI-7)</a>
+      </li>
+      <li>
+        <a href="pc-ptsd.html">PC-PTSD</a>
+      </li>
+      <li>
+        <a href="ssd-12.html">SSD-12</a>
+      </li>
+      <li>
+        <a href="isr-z.html">ISR-Z</a>
+      </li>
+      <li>
+        <a href="euronet-soma.html">EURONET-SOMA</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -246,7 +264,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Scoring</h2>
   
 
@@ -273,222 +291,167 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-  <li><a href="#out-of-fhir-scoring-strategies" id="markdown-toc-out-of-fhir-scoring-strategies">Out-of-FHIR Scoring Strategies</a></li>
-  <li><a href="#in-fhir-scoring-strategies" id="markdown-toc-in-fhir-scoring-strategies">In-FHIR Scoring Strategies</a></li>
-  <li><a href="#multi-score-questionnaires" id="markdown-toc-multi-score-questionnaires">Multi-Score Questionnaires</a></li>
-  <li><a href="#advanced-scoring-concepts" id="markdown-toc-advanced-scoring-concepts">Advanced Scoring Concepts</a></li>
-  <li><a href="#implementation-recommendations" id="markdown-toc-implementation-recommendations">Implementation Recommendations</a></li>
-  <li><a href="#quality-assurance" id="markdown-toc-quality-assurance">Quality Assurance</a></li>
+  <li><a href="#channel-a--client-scoring-fhirpath-in-the-renderer" id="markdown-toc-channel-a--client-scoring-fhirpath-in-the-renderer">Channel A — Client scoring (FHIRPath in the renderer)</a></li>
+  <li><a href="#channel-b--server-scoring-cql-on-command" id="markdown-toc-channel-b--server-scoring-cql-on-command">Channel B — Server scoring (CQL, on command)</a></li>
+  <li><a href="#channel-c--external-scoring-pre-calculated-mapping-only" id="markdown-toc-channel-c--external-scoring-pre-calculated-mapping-only">Channel C — External scoring (pre-calculated, mapping only)</a></li>
+  <li><a href="#etl-rule-write-the-score-into-the-questionnaireresponse-or-create-an-observation-directly" id="markdown-toc-etl-rule-write-the-score-into-the-questionnaireresponse-or-create-an-observation-directly">ETL rule: write the score into the QuestionnaireResponse or create an Observation directly?</a></li>
+  <li><a href="#multi-score-questionnaires" id="markdown-toc-multi-score-questionnaires">Multi-score questionnaires</a></li>
+  <li><a href="#quality-assurance" id="markdown-toc-quality-assurance">Quality assurance</a></li>
+  <li><a href="#scope-note-clinical-interpretation" id="markdown-toc-scope-note-clinical-interpretation">Scope note: clinical interpretation</a></li>
 </ul>
 
 </div>
 <h3 id="overview">Overview</h3>
 
-<p>The MII PRO module supports various scoring strategies along the <strong>Questionnaire -&gt; QuestionnaireResponse -&gt; Observation</strong> workflow. The choice of scoring method depends on organizational requirements, technical infrastructure, and use cases.</p>
+<p>The MII PRO module supports three scoring channels along the <strong>Questionnaire → QuestionnaireResponse → Observation</strong> workflow. All three channels lead to the same result: a score Observation that is valid against this module's score profiles. They differ in <strong>where the calculation happens</strong> and <strong>what counts as the authoritative source of the algorithm</strong>.</p>
 
-<p>The scoring strategies can be divided into two fundamental categories:</p>
-<ul>
-  <li><strong>Out-of-FHIR Scoring</strong>: External calculation with FHIR as the transport layer</li>
-  <li><strong>In-FHIR Scoring</strong>: Native FHIR-based calculation logic</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Channel</th>
+      <th>Where is it calculated?</th>
+      <th>Capability combination</th>
+      <th>Typical use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A — Client scoring</strong></td>
+      <td>In the renderer (FHIRPath <code class="language-plaintext highlighter-rouge">calculatedExpression</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">collectable</code> + <code class="language-plaintext highlighter-rouge">calculatable</code> + <code class="language-plaintext highlighter-rouge">displayable</code></td>
+      <td>Interactive form filling with live score</td>
+    </tr>
+    <tr>
+      <td><strong>B — Server scoring</strong></td>
+      <td>On the server (CQL library, <code class="language-plaintext highlighter-rouge">Library/$evaluate</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">populatable</code> + <code class="language-plaintext highlighter-rouge">calculatable</code> + <code class="language-plaintext highlighter-rouge">extractable</code></td>
+      <td>On-command/batch scoring of score-less QuestionnaireResponses</td>
+    </tr>
+    <tr>
+      <td><strong>C — External scoring</strong></td>
+      <td>In the source system (REDCap, EDC, R, clinical system)</td>
+      <td><code class="language-plaintext highlighter-rouge">extractable</code> (pure import layer)</td>
+      <td>Pre-calculated scores, FHIR as transport and harmonization layer</td>
+    </tr>
+  </tbody>
+</table>
 
-<hr />
+<p>The <strong>score item in the Questionnaire</strong> (readOnly, with <code class="language-plaintext highlighter-rouge">code</code> and <code class="language-plaintext highlighter-rouge">observation-extract</code>) is the shared contract of channels A and B: channel A fills it live during form filling, channel B fills it afterwards from the item answers. Channel C deliberately does <strong>not</strong> use it (see the ETL rule below).</p>
 
-<h3 id="out-of-fhir-scoring-strategies">Out-of-FHIR Scoring Strategies</h3>
-
-<h4 id="1-no-calculation--pure-data-collection">1. No Calculation – Pure Data Collection</h4>
-<p><strong>Use case</strong>: Structured data collection without score calculations</p>
-<ul>
-  <li>Questionnaire with basic items</li>
-  <li>QuestionnaireResponse for raw data</li>
-  <li>No automatic Observation creation</li>
-  <li><strong>Example</strong>: Data collection for subsequent external analysis</li>
-</ul>
-
-<h4 id="2-pre-calculated-scores-import-based">2. Pre-Calculated Scores (Import-Based)</h4>
-<p><strong>Use case</strong>: Integration of external PRO systems (REDCap, clinical systems)</p>
-<ul>
-  <li>Scores are calculated externally and imported as Observations</li>
-  <li>FHIR serves as the interoperability layer</li>
-  <li><code class="language-plaintext highlighter-rouge">derivedFrom</code> references the original QuestionnaireResponse</li>
-  <li><strong>Example</strong>: REDCap-based studies with established scoring algorithms</li>
-</ul>
-
-<h4 id="3-external-api-based-calculation">3. External API-Based Calculation</h4>
-<p><strong>Use case</strong>: Specialized scoring services (R libraries, statistical packages)</p>
-<ul>
-  <li>QuestionnaireResponse is transmitted to an external API</li>
-  <li>Calculation is performed in an optimized environment</li>
-  <li>Result Observations are stored back in FHIR</li>
-  <li><strong>Example</strong>: Complex psychometric calculations, IRT-based scores</li>
-</ul>
+<p>The answer <strong>weights</strong> are the same in all channels: they are normatively defined in the MII CodeSystems (<code class="language-plaintext highlighter-rouge">ordinalValue</code> extension on the concepts). Channel A reads them via the FHIRPath function <code class="language-plaintext highlighter-rouge">ordinal()</code>, channel B replicates them as verified lookup tables inside the CQL library, and channel C must demonstrate algorithmic agreement with the published scoring manuals of the instruments.</p>
 
 <hr />
 
-<h3 id="in-fhir-scoring-strategies">In-FHIR Scoring Strategies</h3>
+<h3 id="channel-a--client-scoring-fhirpath-in-the-renderer">Channel A — Client scoring (FHIRPath in the renderer)</h3>
 
-<h4 id="4-fhirpath-based-inline-calculation">4. FHIRPath-Based Inline Calculation</h4>
-<p><strong>Use case</strong>: Real-time scoring with moderate complexity</p>
+<p>The renderer evaluates the <code class="language-plaintext highlighter-rouge">calculatedExpression</code> (SDC, <code class="language-plaintext highlighter-rouge">text/fhirpath</code>) live during form filling; the score lands directly in the score item of the QuestionnaireResponse.</p>
 
-<p><strong>Implementation approach – variable-based (recommended)</strong>:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH
-// PROMIS Depression SF 4a Example
+<p><strong>Variable-based pattern (recommended)</strong> — avoids circular dependencies between raw and transformed scores:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH — PROMIS Depression SF 4a
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
 * extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
 
-// T-Score Conversion
+// Score item references the variable
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, ..., {})))))))))))))))))"
+* item[=].extension[=].valueExpression.expression = "%rawScore"
 </code></pre></div></div>
 
-<p><strong>Advantages</strong>:</p>
-<ul>
-  <li>Avoidance of circular dependencies</li>
-  <li>Clear separation between raw score and transformed scores</li>
-  <li>Better maintainability and debugging</li>
-</ul>
+<p><strong>Suitable for</strong>: sum scores, subscales, simple lookup transformations (T-score tables as <code class="language-plaintext highlighter-rouge">iif</code> chains).</p>
 
-<h4 id="5-cql-based-calculation">5. CQL-Based Calculation</h4>
-<p><strong>Use case</strong>: Complex statistical calculations, population-based normalization</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// CQL
-library PHQ9Scoring version '1.0.0'
-
-define "PHQ-9 Raw Score":
-  Sum(QuestionnaireResponse.item.answer.value)
-
-define "PHQ-9 Severity Category":
-  case
-    when "PHQ-9 Raw Score" between 0 and 4 then 'minimal'
-    when "PHQ-9 Raw Score" between 5 and 9 then 'mild'
-    when "PHQ-9 Raw Score" between 10 and 14 then 'moderate'
-    when "PHQ-9 Raw Score" between 15 and 19 then 'moderately severe'
-    else 'severe'
-  end
-</code></pre></div></div>
-
-<h4 id="6-sdc-extraction-based-methods">6. SDC Extraction-Based Methods</h4>
-
-<p><strong>6a. Observation-Based Extraction</strong></p>
-<ul>
-  <li>Direct conversion of questionnaire items to Observations</li>
-  <li>One Observation per calculated score</li>
-  <li>Suitable for standard scores</li>
-</ul>
-
-<p><strong>6b. Definition-Based Extraction</strong></p>
-<ul>
-  <li>Mapping to various FHIR resource types</li>
-  <li>Flexible target structures (Condition, DiagnosticReport, etc.)</li>
-  <li>Suitable for complex clinical workflows</li>
-</ul>
-
-<p><strong>6c. StructureMap-Based Extraction</strong></p>
-<ul>
-  <li>FHIR Mapping Language for complex transformations</li>
-  <li>Suitable for item-based architecture</li>
-  <li>Supports component-based Observations</li>
-</ul>
+<p><strong>Limitations</strong>: the renderer must support the SDC expressions; complex logic (half-rules for missing items, tariff algorithms, statistical conversions) cannot be expressed in FHIRPath — or only in an unmaintainable way. Such scores exist exclusively in channel B.</p>
 
 <hr />
 
-<h3 id="multi-score-questionnaires">Multi-Score Questionnaires</h3>
+<h3 id="channel-b--server-scoring-cql-on-command">Channel B — Server scoring (CQL, on command)</h3>
 
-<p>Complex questionnaires often generate multiple scores. <strong>Example EQ-5D-5L</strong>:</p>
+<p>The <strong>authoritative channel</strong>. Each calculable instrument gets a CQL library (<code class="language-plaintext highlighter-rouge">mii-lib-pro-{instrument}</code>), shipped as a FHIR <code class="language-plaintext highlighter-rouge">Library</code> resource with both content forms: <code class="language-plaintext highlighter-rouge">text/cql</code> (readable source) and <code class="language-plaintext highlighter-rouge">application/elm+json</code> (pre-compiled, deterministically produced in CI).</p>
+
+<p><strong>Binding to the Questionnaire</strong> via the <code class="language-plaintext highlighter-rouge">cqf-library</code> extension with a <strong>versioned</strong> canonical (reproducibility — analogous to the versioned <code class="language-plaintext highlighter-rouge">meta.profile</code>):</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH
-// Index Score (preference-based)
-* item[score-index].code = SCT#736534008 "EuroQol EQ-5D-5L index value"
-
-// VAS Score (self-assessment)
-* item[score-vas].code = SCT#736535009 "EuroQol EQ-5D-5L visual analog scale"
-
-// Profile Score (domain-specific)
-* item[score-profile].code = MII#eq5d5l-profile "EQ-5D-5L Profile Score"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/cqf-library"
+* extension[=].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-phq-9|1.0.0"
 </code></pre></div></div>
 
-<p><strong>ObservationDefinition Integration</strong>:</p>
+<p><strong>define ↔ linkId convention</strong>: the name of the CQL <code class="language-plaintext highlighter-rouge">define</code> that calculates a score corresponds to the <code class="language-plaintext highlighter-rouge">linkId</code> of the associated score item (or is resolved via <code class="language-plaintext highlighter-rouge">item.code</code>). This lets a generic scoring pipeline assign each result to the correct item or Observation.</p>
+
+<p><strong>Invocation</strong>: <code class="language-plaintext highlighter-rouge">Library/{id}/$evaluate</code> — per QuestionnaireResponse or as a batch over a cohort. Note for HAPI FHIR implementations: <code class="language-plaintext highlighter-rouge">$populate</code>/<code class="language-plaintext highlighter-rouge">$extract</code> do <strong>not</strong> evaluate <code class="language-plaintext highlighter-rouge">calculatedExpression</code>; server-side scoring runs via <code class="language-plaintext highlighter-rouge">Library/$evaluate</code> or a dedicated scoring pipeline.</p>
+
+<p><strong>Use for</strong>:</p>
 <ul>
-  <li>Separate ObservationDefinitions per score type</li>
-  <li>Population-specific reference ranges</li>
-  <li>Score-health-correlation extensions</li>
+  <li>QuestionnaireResponses that arrive <strong>without a score</strong> (mobile capture, EDC ingestion, partial instruments)</li>
+  <li>Scores that FHIRPath cannot express (EQ-5D-5L index tariff, EORTC half-rule, PROMIS-16 PROPr, score crosswalks such as BDI-II → PROMIS)</li>
+  <li>Retrospective recalculation for quality assurance (see below)</li>
+</ul>
+
+<p><strong>Contract between channels A and B</strong>: wherever the same score exists in both languages, differential tests (identical golden QuestionnaireResponses through both engines, results compared) ensure agreement. In case of deviation, channel B is the reference.</p>
+
+<hr />
+
+<h3 id="channel-c--external-scoring-pre-calculated-mapping-only">Channel C — External scoring (pre-calculated, mapping only)</h3>
+
+<p>The score was calculated outside of FHIR — in REDCap, an EDC system, an R pipeline, or a clinical primary system — and is merely <strong>mapped</strong> into the MII structures as an Observation. FHIR acts as the transport and harmonization layer here, not as the calculation environment.</p>
+
+<p><strong>Requirements for the imported score Observation</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">meta.profile</code> with the versioned canonical of the matching score profile</li>
+  <li><code class="language-plaintext highlighter-rouge">derivedFrom</code> → QuestionnaireResponse, <strong>if</strong> the item answers were transmitted as well</li>
+  <li><code class="language-plaintext highlighter-rouge">method</code> names the algorithm or scoring manual (including version/publication)</li>
+  <li>Provenance of the source system if no QuestionnaireResponse exists (score without raw data)</li>
+</ul>
+
+<p><strong>Trust model</strong>: the MII module does not automatically recalculate imported scores — responsibility for algorithmic correctness lies with the source system. <strong>Recommended quality assurance</strong>: where item answers are available, the score can be recalculated via channel B and compared; deviations point to implementation differences in the source system (rounding, missing handling, outdated manuals).</p>
+
+<hr />
+
+<h3 id="etl-rule-write-the-score-into-the-questionnaireresponse-or-create-an-observation-directly">ETL rule: write the score into the QuestionnaireResponse or create an Observation directly?</h3>
+
+<p>For import and scoring pipelines a clear separation by channel applies:</p>
+
+<p><strong>Channel B (server calculates from the answers):</strong> the pipeline <em>may</em> fill the score item of the QuestionnaireResponse <strong>and</strong> extracts the Observation. The score is derived from exactly the answers of this QuestionnaireResponse — the score item then truthfully documents the result of the module-conformant calculation.</p>
+
+<p><strong>Channel C (score arrives pre-calculated):</strong> the pipeline creates <strong>only the Observation and never modifies the QuestionnaireResponse.</strong> Rationale:</p>
+
+<ol>
+  <li><strong>Document integrity</strong>: the QuestionnaireResponse is the capture document — it attests what was collected (and possibly calculated) at capture time. A retroactively injected external score fabricates a capture event that never happened.</li>
+  <li><strong>Structure</strong>: partial instruments and external systems frequently deliver QuestionnaireResponses without a score item (or no QuestionnaireResponse at all) — filling it would not even be uniformly possible.</li>
+  <li><strong>Query patterns</strong>: consumers of the core data set search for scores as Observations, not in QuestionnaireResponse items. The Observation with <code class="language-plaintext highlighter-rouge">derivedFrom</code>, <code class="language-plaintext highlighter-rouge">method</code>, and Provenance carries all necessary traceability.</li>
+</ol>
+
+<p>Special case: if an external system delivers a QuestionnaireResponse whose score item was already filled <strong>client-side</strong> (channel A), it remains unchanged — extraction produces the Observation from it as usual.</p>
+
+<hr />
+
+<h3 id="multi-score-questionnaires">Multi-score questionnaires</h3>
+
+<p>Complex questionnaires produce multiple scores (example EQ-5D-5L: index, VAS, profile; PROMIS-29: eight domains, each raw + T-score). Per score:</p>
+<ul>
+  <li>a dedicated score item with a unique <code class="language-plaintext highlighter-rouge">code</code>,</li>
+  <li>a dedicated ObservationDefinition (including population-specific reference ranges),</li>
+  <li>in channel A the variable pattern to avoid circular dependencies,</li>
+  <li>in channel B a dedicated <code class="language-plaintext highlighter-rouge">define</code> in the same instrument library.</li>
 </ul>
 
 <hr />
 
-<h3 id="advanced-scoring-concepts">Advanced Scoring Concepts</h3>
+<h3 id="quality-assurance">Quality assurance</h3>
 
-<h4 id="score-mapping-and-cross-walking">Score Mapping and Cross-Walking</h4>
-<p><strong>Use case</strong>: Harmonization between different PRO instruments</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH
-// PHQ-9 -&gt; PROMIS Depression Mapping
-* derivedFrom[0] = Reference(PHQ9-QuestionnaireResponse)
-* code = LOINC#77861-3 "PROMIS Depression T-score"
-* method.text = "PHQ-9 to PROMIS Depression conversion algorithm (Choi et al. 2014)"
-</code></pre></div></div>
-
-<h4 id="measuremeasurereport-based-analyses">Measure/MeasureReport-Based Analyses</h4>
-<p><strong>Use case</strong>: Longitudinal analyses, population metrics</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// CQL
-library PRO_Population_Metrics version '1.0.0'
-
-define "Depression Prevalence":
-  Count(Observation where code = LOINC#44261-6 and value &gt; 9) /
-  Count(Observation where code = LOINC#44261-6)
-</code></pre></div></div>
-
-<hr />
-
-<h3 id="implementation-recommendations">Implementation Recommendations</h3>
-
-<h4 id="for-simple-scores">For simple scores:</h4>
 <ul>
-  <li><strong>Out-of-FHIR</strong>: Pre-calculated imports from established systems</li>
-  <li><strong>In-FHIR</strong>: Variable-based FHIRPath calculation</li>
-</ul>
-
-<h4 id="for-complex-scores">For complex scores:</h4>
-<ul>
-  <li><strong>Out-of-FHIR</strong>: External API-based calculation</li>
-  <li><strong>In-FHIR</strong>: CQL libraries with Measure/MeasureReport</li>
-</ul>
-
-<h4 id="for-multi-score-questionnaires">For multi-score questionnaires:</h4>
-<ul>
-  <li>Separate ObservationDefinitions per score</li>
-  <li>Variable-based calculation for dependency avoidance</li>
-  <li>Score-health-correlation extensions for clinical interpretation</li>
-</ul>
-
-<h4 id="for-score-harmonization">For score harmonization:</h4>
-<ul>
-  <li>ConceptMaps for terminological mappings</li>
-  <li>StructureMaps for complex data transformations</li>
-  <li>CQL libraries for statistical conversions</li>
+  <li><strong>Differential tests channel A ↔ B</strong>: identical test QuestionnaireResponses (minimum, maximum, uniform answers, missing items, opt-outs) through both engines; results must match exactly.</li>
+  <li><strong>Weight consistency</strong>: CI check that the lookup tables of the CQL libraries agree with the <code class="language-plaintext highlighter-rouge">ordinalValue</code> weights of the CodeSystems.</li>
+  <li><strong>Import validation (channel C)</strong>: sample-based recalculation via channel B where item answers are available.</li>
+  <li><strong>Version binding</strong>: score Observations reference the library version (or the scoring manual) — every score value remains traceable to its algorithm.</li>
 </ul>
 
 <hr />
 
-<h3 id="quality-assurance">Quality Assurance</h3>
+<h3 id="scope-note-clinical-interpretation">Scope note: clinical interpretation</h3>
 
-<p><strong>Score Validation</strong>:</p>
-<ul>
-  <li>Retrospective recalculation for consistency checking</li>
-  <li>Comparison between different calculation methods</li>
-  <li>Identification of rounding errors and implementation differences</li>
-</ul>
-
-<p><strong>Reference Data</strong>:</p>
-<ul>
-  <li>Integration of European population norms (EHIS Wave 3)</li>
-  <li>Age- and sex-specific reference ranges</li>
-  <li>Culture-specific adaptations for German populations</li>
-</ul>
+<p>Cut-off values, severity categories, and comparison metrics (MID/MCID) are deliberately <strong>not shipped as executable logic</strong> in this module; they are documented only (see <em>Derived Metrics</em>). Background: software that calculates scores from PRO answers <strong>and interprets them clinically</strong> may qualify as medical device software under the EU MDR (cf. MDCG 2019-11; rule 11, Annex VIII MDR). Qualification depends on the intended purpose of the manufacturer/operator of the executing software — not on this specification. Implementations in clinical care can flag the MDR relevance of a form in a machine-readable way via the gematik extension <code class="language-plaintext highlighter-rouge">ISiKMpFormularExtension</code> (ISiK level 6 and later).</p>
 
 
 
@@ -516,10 +479,10 @@ define "Depression Prevalence":
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-27 21:31:00 +0000">
-    2026-07-27
+  <span title="2026-09-02 06:41:00 +0000">
+    2026-09-02
   </span>
 
           <br/>

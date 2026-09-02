@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Physical Function T-Score - MII IG PRO v2026.5.2
+# MII PR PRO PROMIS-29 Physical Function T-Score - MII IG PRO v2026.6.0
 
 ## Resource Profile: MII PR PRO PROMIS-29 Physical Function T-Score ( Experimental ) 
 
@@ -29,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-physical-function-tscore",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_PR_PRO_PROMIS_29_Physical_Function_TScore",
   "title" : "MII PR PRO PROMIS-29 Physical Function T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

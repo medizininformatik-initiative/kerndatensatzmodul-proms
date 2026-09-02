@@ -1,4 +1,4 @@
-# DASS-21 Anxiety Raw Score Observation - MII IG PRO v2026.5.2
+# DASS-21 Anxiety Raw Score Observation - MII IG PRO v2026.6.0
 
 ## Beispiel Observation: DASS-21 Anxiety Raw Score Observation
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.5.2
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.6.0
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-dass-dass21-score-anxiety-raw",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.6.0"]
   },
   "status" : "final",
   "category" : [{

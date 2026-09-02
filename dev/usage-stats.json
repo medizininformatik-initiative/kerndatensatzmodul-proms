@@ -1,6 +1,6 @@
 {
   "package": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2026.5.2",
+  "version": "2026.6.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "276",
   "extensions": [
@@ -160,12 +160,16 @@
       "Bundle.entry.resource.item.answerOption",
       "Questionnaire.contained.concept",
       "Questionnaire.item.answerOption",
+      "Questionnaire.item.answerOption.valueCoding",
       "Questionnaire.item.item.answerOption",
       "QuestionnaireResponse.item.answer",
       "ValueSet.compose.include.concept"
     ],
     "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix": [
       "Questionnaire.item.answerOption"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue": [
+      "Questionnaire.item"
     ],
     "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
       "Bundle.entry.resource.item",

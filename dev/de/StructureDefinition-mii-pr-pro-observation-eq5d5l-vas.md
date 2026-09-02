@@ -1,4 +1,4 @@
-# MII PR PRO Observation EQ-5D-5L VAS - MII IG PRO v2026.5.2
+# MII PR PRO Observation EQ-5D-5L VAS - MII IG PRO v2026.6.0
 
 ## Ressourcenprofil: MII PR PRO Observation EQ-5D-5L VAS ( Experimentell ) 
 
@@ -77,12 +77,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-eq5d5l-vas",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_PR_PRO_Observation_EQ5D5L_VAS",
   "title" : "MII PR PRO Observation EQ-5D-5L VAS",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

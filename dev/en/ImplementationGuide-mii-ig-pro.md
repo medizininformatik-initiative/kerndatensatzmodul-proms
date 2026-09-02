@@ -10,11 +10,11 @@
   "id" : "mii-ig-pro",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -163,7 +163,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueString" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -174,7 +174,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueString" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -519,7 +519,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-liquid"
+        "valueCode" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -530,7 +530,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-liquid"
+        "valueCode" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -1519,6 +1519,52 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-euronet-soma-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-euronet-soma-response"
+      },
+      "name" : "EURONET-SOMA Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-isr-z-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-isr-z-response"
+      },
+      "name" : "ISR-Z Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-isr-z-score.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-isr-z-score"
+      },
+      "name" : "ISR-Z Score Observation Example",
+      "description" : "ISR-Z Skalenwert (Mittelwert) aus der Beispiel-QuestionnaireResponse: 2.0 von 4",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
       },
       {
@@ -1619,6 +1665,22 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mii-cs-pro-isr-z-answers.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mii-cs-pro-isr-z-answers"
+      },
+      "name" : "MII CS PRO ISR-Z Answers",
+      "description" : "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "CodeSystem-mii-cs-pro-midos2.html"
       }],
       "reference" : {
@@ -1690,6 +1752,22 @@
       },
       "name" : "MII CS PRO Score Catalogue",
       "description" : "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mii-cs-pro-ssd-12-answers.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mii-cs-pro-ssd-12-answers"
+      },
+      "name" : "MII CS PRO SSD-12 Answers",
+      "description" : "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
       "exampleBoolean" : false
     },
     {
@@ -2211,6 +2289,38 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-score-isr-z.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-isr-z"
+      },
+      "name" : "MII ObsDef PRO Score ISR-Z",
+      "description" : "ISR-Z Skalenwert (Mittelwert, Bereich 0-4) — Subskala Zwang des ICD-10-Symptom-Rating",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-pc-ptsd"
+      },
+      "name" : "MII ObsDef PRO Score PC-PTSD",
+      "description" : "PC-PTSD total score (0-4) — screening for posttraumatic stress disorder",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ObservationDefinition-mii-obsdef-pro-score-phq-15.html"
       }],
       "reference" : {
@@ -2234,6 +2344,54 @@
       },
       "name" : "MII ObsDef PRO Score PHQ-9",
       "description" : "Patient Health Questionnaire (PHQ-9)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-score-scoff.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-scoff"
+      },
+      "name" : "MII ObsDef PRO Score SCOFF",
+      "description" : "SCOFF total score (0-5) — screening for eating disorders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-score-ssd-12.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-ssd-12"
+      },
+      "name" : "MII ObsDef PRO Score SSD-12",
+      "description" : "SSD-12 total score (0-48) — somatic symptom disorder B-criteria burden",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-score-wi-7.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-score-wi-7"
+      },
+      "name" : "MII ObsDef PRO Score WI-7",
+      "description" : "WI-7 (Whiteley-7) total score (0-7) — screening for hypochondriasis and somatization",
       "exampleBoolean" : false
     },
     {
@@ -2911,6 +3069,22 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-euronet-soma.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-euronet-soma"
+      },
+      "name" : "MII QST PRO EURONET-SOMA",
+      "description" : "EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Questionnaire-mii-qst-pro-hads.html"
       }],
       "reference" : {
@@ -2918,6 +3092,22 @@
       },
       "name" : "MII QST PRO HADS",
       "description" : "Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-isr-z.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-isr-z"
+      },
+      "name" : "MII QST PRO ISR-Z",
+      "description" : "ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008); Skalenwert als Mittelwert, nicht Summe",
       "exampleBoolean" : false
     },
     {
@@ -2950,6 +3140,22 @@
       },
       "name" : "MII QST PRO MIDOS2",
       "description" : "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-Screening für die Palliativmedizin nach DGP. 11 Symptom-Items mit 4-stufiger DGP-Skala, ein Wohlbefinden-Item, ein offenes Item für sonstige Beschwerden.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-pc-ptsd.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-pc-ptsd"
+      },
+      "name" : "MII QST PRO PC-PTSD",
+      "description" : "PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for posttraumatic stress disorder (Prins et al. 2003; German: Schäfer & Schulze 2010)",
       "exampleBoolean" : false
     },
     {
@@ -3103,6 +3309,38 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-scoff.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-scoff"
+      },
+      "name" : "MII QST PRO SCOFF",
+      "description" : "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-ssd-12.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-ssd-12"
+      },
+      "name" : "MII QST PRO SSD-12",
+      "description" : "SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/2017), 12-item German self-report scale",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Questionnaire-mii-qst-pro-whodas-whodas12.html"
       }],
       "reference" : {
@@ -3110,6 +3348,22 @@
       },
       "name" : "MII QST PRO WHODAS 2.0 12-Item",
       "description" : "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-wi-7.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-wi-7"
+      },
+      "name" : "MII QST PRO WI-7",
+      "description" : "WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondriasis and somatization (Fink et al. 1999) with German translation",
       "exampleBoolean" : false
     },
     {
@@ -3206,6 +3460,22 @@
       },
       "name" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
       "description" : "4-point response scale for EORTC QLQ-C30 role functioning items",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mii-vs-pro-isr-z-answers.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-pro-isr-z-answers"
+      },
+      "name" : "MII VS PRO ISR-Z Answers",
+      "description" : "ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemlich zu, 3 = trifft deutlich zu, 4 = trifft extrem zu). MII-controlled für zuverlässige ordinal()-Scoreberechnung.",
       "exampleBoolean" : false
     },
     {
@@ -3487,6 +3757,22 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mii-vs-pro-ssd-12-answers.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-pro-ssd-12-answers"
+      },
+      "name" : "MII VS PRO SSD-12 Answers",
+      "description" : "SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 = sehr oft). MII-controlled for reliable ordinal() score calculation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-mii-vs-pro-whodas-12-answer-list.html"
       }],
       "reference" : {
@@ -3607,6 +3893,37 @@
       "name" : "mii-sp-pro-questionnaire-capabilities",
       "description" : "SearchParameter for Questionnaire.extension[capabilities] to filter questionnaires by capability flags (displayable, collectable, calculatable, extractable, populatable, domainAligned)",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-pc-ptsd-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-pc-ptsd-response"
+      },
+      "name" : "PC-PTSD Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-pc-ptsd-score.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-pc-ptsd-score"
+      },
+      "name" : "PC-PTSD Score Observation Example",
+      "description" : "PC-PTSD Total Score aus der Beispiel-QuestionnaireResponse (3 von 4)",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
     },
     {
       "extension" : [{
@@ -3750,6 +4067,68 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-scoff-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-scoff-response"
+      },
+      "name" : "SCOFF Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-scoff-score.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-scoff-score"
+      },
+      "name" : "SCOFF Score Observation Example",
+      "description" : "SCOFF Total Score aus der Beispiel-QuestionnaireResponse (3 von 5)",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-ssd-12-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-ssd-12-response"
+      },
+      "name" : "SSD-12 Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-ssd-12-score.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-ssd-12-score"
+      },
+      "name" : "SSD-12 Score Observation Example",
+      "description" : "SSD-12 Total Score aus der Beispiel-QuestionnaireResponse (24 von 48)",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ObservationDefinition"
       },
       {
@@ -3778,6 +4157,37 @@
       "name" : "WHODAS 2.0 12-Item Simple Sum Score Observation",
       "description" : "WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24).",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-wi-7-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-wi-7-response"
+      },
+      "name" : "WI-7 Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-wi-7-score.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-wi-7-score"
+      },
+      "name" : "WI-7 Score Observation Example",
+      "description" : "Whiteley-7 Total Score aus der Beispiel-QuestionnaireResponse (3 von 7)",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
     }],
     "page" : {
       "extension" : [{
@@ -4045,6 +4455,60 @@
           }],
           "nameUrl" : "whodas.html",
           "title" : "WHODAS 2.0 (12-Item)",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "scoff.html"
+          }],
+          "nameUrl" : "scoff.html",
+          "title" : "SCOFF",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "wi-7.html"
+          }],
+          "nameUrl" : "wi-7.html",
+          "title" : "Whiteley-7 (WI-7)",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "pc-ptsd.html"
+          }],
+          "nameUrl" : "pc-ptsd.html",
+          "title" : "PC-PTSD",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "ssd-12.html"
+          }],
+          "nameUrl" : "ssd-12.html",
+          "title" : "SSD-12",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "isr-z.html"
+          }],
+          "nameUrl" : "isr-z.html",
+          "title" : "ISR-Z",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "euronet-soma.html"
+          }],
+          "nameUrl" : "euronet-soma.html",
+          "title" : "EURONET-SOMA",
           "generation" : "markdown"
         },
         {

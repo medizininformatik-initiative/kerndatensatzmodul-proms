@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2026.5.2</title>
+    <title>Changelog - MII IG PRO v2026.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.2 - ci-build
+            <span style="display:inline-block;">2026.6.0 - ci-build
 
 
 
@@ -172,6 +172,24 @@
       <li>
         <a href="whodas.html">WHODAS 2.0</a>
       </li>
+      <li>
+        <a href="scoff.html">SCOFF</a>
+      </li>
+      <li>
+        <a href="wi-7.html">Whiteley-7 (WI-7)</a>
+      </li>
+      <li>
+        <a href="pc-ptsd.html">PC-PTSD</a>
+      </li>
+      <li>
+        <a href="ssd-12.html">SSD-12</a>
+      </li>
+      <li>
+        <a href="isr-z.html">ISR-Z</a>
+      </li>
+      <li>
+        <a href="euronet-soma.html">EURONET-SOMA</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -246,7 +264,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -267,6 +285,84 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
+
+<p><strong>Version: 2026.6.0</strong></p>
+
+<p>Datum: 2026-09-01 (in Vorbereitung)</p>
+
+<p>Minor-Release — <strong>sechs neue Instrumente</strong> des PCOR-MII-PSS-Sets (Persistent Somatic Syndrome), eine neue geteilte Antwortskala und eine präzisierte Konvention zur Display-Sprache. Keine Breaking Changes an bestehenden Ressourcen.</p>
+
+<h2 id="neue-instrumente">Neue Instrumente</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Instrument</th>
+      <th>Items</th>
+      <th>Antwortskala</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SCOFF</strong> (Morgan et al. 1999)</td>
+      <td>5</td>
+      <td>binär (SNOMED CT)</td>
+      <td>Summe 0-5</td>
+    </tr>
+    <tr>
+      <td><strong>WI-7 / Whiteley-7</strong> (Fink et al. 1999)</td>
+      <td>7</td>
+      <td>binär (SNOMED CT)</td>
+      <td>Summe 0-7</td>
+    </tr>
+    <tr>
+      <td><strong>PC-PTSD</strong> (Prins et al. 2003)</td>
+      <td>4</td>
+      <td>binär (SNOMED CT)</td>
+      <td>Summe 0-4</td>
+    </tr>
+    <tr>
+      <td><strong>SSD-12</strong> (Toussaint et al. 2016)</td>
+      <td>12</td>
+      <td>5-stufig, eigenes CodeSystem</td>
+      <td>Summe 0-48</td>
+    </tr>
+    <tr>
+      <td><strong>ISR-Z</strong> (Tritt et al. 2008)</td>
+      <td>3</td>
+      <td>5-stufig, eigenes CodeSystem</td>
+      <td><strong>Mittelwert</strong> 0-4</td>
+    </tr>
+    <tr>
+      <td><strong>EURONET-SOMA</strong> (Rief et al. 2017)</td>
+      <td>2</td>
+      <td>NRS 0-10</td>
+      <td>kein Score (Einzelitems)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Alle Item-Texte stammen aus dem PCOR-MII Item Level Dictionary und wurden zeichengenau gegen diese Quelle geprüft. Alle Beispiel-Scores sind aus den <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Gewichten nachgerechnet.</p>
+
+<h2 id="added-geteilte-janein-antwortskala">Added: geteilte Ja/Nein-Antwortskala</h2>
+
+<p>Neu ist das RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code> (<code class="language-plaintext highlighter-rouge">input/fsh/rulesets/answer-scales.fsh</code>) für generische Ja/Nein-Antworten. Es verwendet <strong>SNOMED CT <code class="language-plaintext highlighter-rouge">373066001</code> (Yes) / <code class="language-plaintext highlighter-rouge">373067005</code> (No)</strong> gemäß der Empfehlung des TC Terminologien (HL7 Deutschland / Interop Council) — statt eines selbstdefinierten MII-CodeSystems, das standardisierte Terminologie verdoppeln würde.</p>
+
+<p>Da SNOMED-Konzepten keine <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Property angehängt werden kann, nutzen diese Instrumente <strong>inline <code class="language-plaintext highlighter-rouge">answerOption</code></strong> statt <code class="language-plaintext highlighter-rouge">answerValueSet</code>. Damit tragen die Antworten in QuestionnaireResponses eine terminologisch eindeutige Kodierung mit <code class="language-plaintext highlighter-rouge">system</code> und <code class="language-plaintext highlighter-rouge">code</code> statt systemloser Integer.</p>
+
+<h2 id="präzisiert-display-sprache-in-antwort-codesystems">Präzisiert: Display-Sprache in Antwort-CodeSystems</h2>
+
+<p>Der <code class="language-plaintext highlighter-rouge">display</code>-Wert eines Antwortkonzepts steht in der <strong>Sprache des Fragebogens</strong>; weitere Sprachen werden als <code class="language-plaintext highlighter-rouge">designation</code> geführt. Das ist keine Stilfrage: In einer Ressource mit <code class="language-plaintext highlighter-rouge">language = #de</code> verlangt der FHIR-Validator den deutschen Display im <code class="language-plaintext highlighter-rouge">valueCoding</code>. Steht dort der englische, schlägt die gesamte <code class="language-plaintext highlighter-rouge">answerValueSet</code>-Prüfung fehl — mit der irreführenden Folgemeldung <em>"Der angegebene Wert ist nicht in den im Fragebogen gesetzten options value set enthalten"</em>, die auf ein Terminologie-Problem hindeutet, das gar nicht existiert.</p>
+
+<h2 id="hinweise-zur-modellierung">Hinweise zur Modellierung</h2>
+
+<ul>
+  <li><strong>ISR-Z bildet einen Mittelwert, keine Summe.</strong> Das ISR definiert Skalenwerte als Mittelwerte der Items (Tritt et al. 2008); die FHIRPath-Berechnung nutzt entsprechend <code class="language-plaintext highlighter-rouge">.avg()</code> statt <code class="language-plaintext highlighter-rouge">.sum()</code>, Wertebereich 0-4.</li>
+  <li><strong>Sprachwahl je Instrument.</strong> <code class="language-plaintext highlighter-rouge">language</code> folgt der Originalsprache des Instruments: SCOFF, WI-7 und EURONET-SOMA sind EN-primär mit deutscher Übersetzung, PC-PTSD, SSD-12 und ISR-Z DE-primär. Wo keine validierte Originalfassung belegbar war, wurde bewusst <strong>keine</strong> Übersetzung erfunden.</li>
+  <li><strong>Cut-offs bleiben Dokumentation.</strong> Publizierte Trennwerte (SCOFF &gt;= 2, PC-PTSD &gt;= 3) sind als <code class="language-plaintext highlighter-rouge">qualifiedInterval</code> in den ObservationDefinitions dokumentiert, aber nicht als ausführbare Interpretationslogik ausgeliefert.</li>
+  <li><strong>Terminologie.</strong> Für keines der sechs Instrumente führen LOINC oder SNOMED CT einen Code des Instruments selbst (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.</li>
+</ul>
 
 <p><strong>Version: 2026.5.2</strong></p>
 
@@ -315,7 +411,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Minor-Release: zwei neue Instrumente (<strong>WHODAS 2.0 12-Item</strong> und <strong>PHQ-15</strong>), Aufbau einer gemeinsamen <strong>PHQ-D-Itembank</strong> (PHQ-9/PHQ-15), einheitliche <strong>MII-Score-Codierung</strong> über alle Score-ObsDefs und eine <strong>CI-Verbesserung</strong> (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.</p>
 
-<h2 id="neue-instrumente">Neue Instrumente</h2>
+<h2 id="neue-instrumente-1">Neue Instrumente</h2>
 
 <ul>
   <li>Added: <strong>WHODAS 2.0 12-Item (Selbstauskunft)</strong> — WHO Disability Assessment Schedule 2.0, 12 Items über 6 ICF-Domänen, 30-Tage-Recall, 5-stufige Skala (0–4). Englisch primär mit deutschen Translations (validierte PCOR-MII-Wortlaute). Antworten via <code class="language-plaintext highlighter-rouge">answerValueSet</code> (<code class="language-plaintext highlighter-rouge">mii-vs-pro-whodas-12-answer-list</code>) mit ordinalValue-Gewichten auf den CodeSystem-Konzepten. <strong>Einschränkungsscore</strong> <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-whodas12-simple-sum</code> (0–48, SNOMED <code class="language-plaintext highlighter-rouge">715823002</code>, MII-Katalog <code class="language-plaintext highlighter-rouge">whodas12-simple-sum</code>, höher = mehr Beeinträchtigung). Inkl. Beispiel-QuestionnaireResponse + Score-Observation und IG-Seite.
@@ -651,10 +747,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-07-27 21:31:00 +0000">
-    2026-07-27
+  <span title="2026-09-02 06:41:00 +0000">
+    2026-09-02
   </span>
 
           <br/>

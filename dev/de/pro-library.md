@@ -1,4 +1,4 @@
-# PRO Library - MII IG PRO v2026.5.2
+# PRO Library - MII IG PRO v2026.6.0
 
 ## PRO Library
 
@@ -18,6 +18,12 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 | **PROMIS Cognitive Function SF 4a** | Vollständig | Kognition | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **EORTC QLQ-C30** | Vollständig | Onkologie | 30 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | - |
 | **DASS-21** | Vollständig | Depression/Angst/Stress | 21 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| **SCOFF** | Vollständig | Essstörungen | 5 | EN/DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| **Whiteley-7 (WI-7)** | Vollständig | Krankheitsangst/Somatisierung | 7 | EN/DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| **PC-PTSD** | Vollständig | Posttraumatische Belastung | 4 | DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| **SSD-12** | Vollständig | Somatische Belastungsstörung | 12 | DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| **ISR-Z** | Vollständig | Zwang (ICD-10-Symptom-Rating) | 3 | DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| **EURONET-SOMA** | Vollständig | Körperbeschwerden (Einzelitems) | 2 | EN/DE | ✓ | ✓ | - | ✓ | - | ✓ |
 
 #### Metadata-Only Reference Questionnaires
 

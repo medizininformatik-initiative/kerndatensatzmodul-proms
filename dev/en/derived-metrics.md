@@ -1,4 +1,4 @@
-# Derived Metrics - MII IG PRO v2026.5.2
+# Derived Metrics - MII IG PRO v2026.6.0
 
 ## Derived Metrics
 

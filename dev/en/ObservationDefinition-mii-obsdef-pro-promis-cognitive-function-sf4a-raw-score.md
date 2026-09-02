@@ -1,4 +1,4 @@
-# MII ObsDef PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2026.5.2
+# MII ObsDef PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2026.6.0
 
 ## ObservationDefinition: MII ObsDef PRO PROMIS Cognitive Function SF 4a Raw Score 
 
@@ -8,9 +8,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.5.2
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2026.6.0
 
-**ArtifactVersion**: 2026.5.2
+**ArtifactVersion**: 2026.6.0
 
 **CQF Citation**: PROMIS Cognitive Function Scoring Manual, Version 3 June 2022. Available at: https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Cognitive_Function_Scoring_Manual_03June2022.pdf
 
@@ -47,11 +47,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.5.2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2026.6.0"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2026.5.2"
+    "valueString" : "2026.6.0"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-citation",

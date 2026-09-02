@@ -1,12 +1,12 @@
-# CodeSystem - MII IG PRO v2026.5.2
+# CodeSystem - MII IG PRO v2026.6.0
 
 ## CodeSystem: CodeSystem 
 
 Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
 
-* [MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.md)
-* [MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.md)
-* [MII_VS_PRO_EORTC_QLQ_C30_Scale_Role](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.md)
+* [MII VS PRO EORTC QLQ-C30 4-Point Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.md)
+* [MII VS PRO EORTC QLQ-C30 7-Point Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.md)
+* [MII VS PRO EORTC QLQ-C30 Role Functioning Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.md)
 
 -------
 

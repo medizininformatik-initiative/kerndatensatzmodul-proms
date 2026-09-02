@@ -1,4 +1,4 @@
-# PROMIS Depression T-Score, derived from BDI-II Observation Example - MII IG PRO v2026.5.2
+# PROMIS Depression T-Score, derived from BDI-II Observation Example - MII IG PRO v2026.6.0
 
 ## Beispiel Observation: PROMIS Depression T-Score, derived from BDI-II Observation Example
 
@@ -8,7 +8,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.5.2
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.6.0
 
 **status**: Final
 
@@ -29,7 +29,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.5.2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.6.0"]
   },
   "status" : "final",
   "code" : {

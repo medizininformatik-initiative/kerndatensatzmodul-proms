@@ -1,4 +1,4 @@
-# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.5.2
+# MII CS PRO Questionnaire Catalogue - MII IG PRO v2026.6.0
 
 ## CodeSystem: MII CS PRO Questionnaire Catalogue 
 
@@ -22,11 +22,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-questionnaire-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -47,7 +47,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     }]
   }],
   "content" : "complete",
-  "count" : 19,
+  "count" : 25,
   "concept" : [{
     "code" : "euroqol-eq5d5l",
     "display" : "EuroQol EQ-5D-5L Questionnaire"
@@ -123,6 +123,30 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "code" : "whodas-whodas12",
     "display" : "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
+  },
+  {
+    "code" : "scoff",
+    "display" : "SCOFF (Five-item eating disorder screening questionnaire, Morgan et al. 1999)"
+  },
+  {
+    "code" : "wi-7",
+    "display" : "Whiteley-7 (Seven-item scale for hypochondriasis and somatization, Fink et al. 1999)"
+  },
+  {
+    "code" : "pc-ptsd",
+    "display" : "PC-PTSD (Primary Care PTSD Screen)"
+  },
+  {
+    "code" : "ssd-12",
+    "display" : "SSD-12 (Somatic Symptom Disorder - B Criteria Scale, Toussaint et al.)"
+  },
+  {
+    "code" : "isr-z",
+    "display" : "ISR-Z (ICD-10-Symptom-Rating, Subskala Zwang, Tritt et al. 2008)"
+  },
+  {
+    "code" : "euronet-soma",
+    "display" : "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)"
   }]
 }
 

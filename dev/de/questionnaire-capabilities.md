@@ -1,4 +1,4 @@
-# Questionnaire Capabilities - MII IG PRO v2026.5.2
+# Questionnaire Capabilities - MII IG PRO v2026.6.0
 
 ## Questionnaire Capabilities
 

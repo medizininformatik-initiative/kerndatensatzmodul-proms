@@ -9,11 +9,11 @@
 </div></div></div>
   </text>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro"/>
-  <version value="2026.5.2"/>
+  <version value="2026.6.0"/>
   <name value="MII_IG_PRO"/>
   <title value="MII IG PRO"/>
   <status value="active"/>
-  <date value="2026-07-27T21:31:58+00:00"/>
+  <date value="2026-09-02T06:41:53+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -131,7 +131,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueString value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -139,7 +139,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueString value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -390,7 +390,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueCode value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -398,7 +398,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueCode value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -1083,6 +1083,37 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-euronet-soma-response"/>
+      </reference>
+      <name value="EURONET-SOMA Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-isr-z-response"/>
+      </reference>
+      <name value="ISR-Z Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-isr-z-score"/>
+      </reference>
+      <name value="ISR-Z Score Observation Example"/>
+      <description value="ISR-Z Skalenwert (Mittelwert) aus der Beispiel-QuestionnaireResponse: 2.0 von 4"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
@@ -1152,6 +1183,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/mii-cs-pro-isr-z-answers"/>
+      </reference>
+      <name value="MII CS PRO ISR-Z Answers"/>
+      <description value="MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/mii-cs-pro-midos2"/>
       </reference>
       <name value="MII CS PRO MIDOS2 Items and Response Scales"/>
@@ -1200,6 +1242,17 @@
       </reference>
       <name value="MII CS PRO Score Catalogue"/>
       <description value="MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mii-cs-pro-ssd-12-answers"/>
+      </reference>
+      <name value="MII CS PRO SSD-12 Answers"/>
+      <description value="MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1559,6 +1612,28 @@
         <valueString value="ObservationDefinition"/>
       </extension>
       <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-score-isr-z"/>
+      </reference>
+      <name value="MII ObsDef PRO Score ISR-Z"/>
+      <description value="ISR-Z Skalenwert (Mittelwert, Bereich 0-4) — Subskala Zwang des ICD-10-Symptom-Rating"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-score-pc-ptsd"/>
+      </reference>
+      <name value="MII ObsDef PRO Score PC-PTSD"/>
+      <description value="PC-PTSD total score (0-4) — screening for posttraumatic stress disorder"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
         <reference value="ObservationDefinition/mii-obsdef-pro-score-phq-15"/>
       </reference>
       <name value="MII ObsDef PRO Score PHQ-15"/>
@@ -1574,6 +1649,39 @@
       </reference>
       <name value="MII ObsDef PRO Score PHQ-9"/>
       <description value="Patient Health Questionnaire (PHQ-9)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-score-scoff"/>
+      </reference>
+      <name value="MII ObsDef PRO Score SCOFF"/>
+      <description value="SCOFF total score (0-5) — screening for eating disorders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-score-ssd-12"/>
+      </reference>
+      <name value="MII ObsDef PRO Score SSD-12"/>
+      <description value="SSD-12 total score (0-48) — somatic symptom disorder B-criteria burden"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-score-wi-7"/>
+      </reference>
+      <name value="MII ObsDef PRO Score WI-7"/>
+      <description value="WI-7 (Whiteley-7) total score (0-7) — screening for hypochondriasis and somatization"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1966,10 +2074,32 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/mii-qst-pro-euronet-soma"/>
+      </reference>
+      <name value="MII QST PRO EURONET-SOMA"/>
+      <description value="EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/mii-qst-pro-hads"/>
       </reference>
       <name value="MII QST PRO HADS"/>
       <description value="Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/mii-qst-pro-isr-z"/>
+      </reference>
+      <name value="MII QST PRO ISR-Z"/>
+      <description value="ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008); Skalenwert als Mittelwert, nicht Summe"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1992,6 +2122,17 @@
       </reference>
       <name value="MII QST PRO MIDOS2"/>
       <description value="MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-Screening für die Palliativmedizin nach DGP. 11 Symptom-Items mit 4-stufiger DGP-Skala, ein Wohlbefinden-Item, ein offenes Item für sonstige Beschwerden."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/mii-qst-pro-pc-ptsd"/>
+      </reference>
+      <name value="MII QST PRO PC-PTSD"/>
+      <description value="PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for posttraumatic stress disorder (Prins et al. 2003; German: Schäfer &amp; Schulze 2010)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2098,10 +2239,43 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/mii-qst-pro-scoff"/>
+      </reference>
+      <name value="MII QST PRO SCOFF"/>
+      <description value="SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/mii-qst-pro-ssd-12"/>
+      </reference>
+      <name value="MII QST PRO SSD-12"/>
+      <description value="SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/2017), 12-item German self-report scale"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/mii-qst-pro-whodas-whodas12"/>
       </reference>
       <name value="MII QST PRO WHODAS 2.0 12-Item"/>
       <description value="WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/mii-qst-pro-wi-7"/>
+      </reference>
+      <name value="MII QST PRO WI-7"/>
+      <description value="WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondriasis and somatization (Fink et al. 1999) with German translation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2168,6 +2342,17 @@
       </reference>
       <name value="MII VS PRO EORTC QLQ-C30 Role Functioning Scale"/>
       <description value="4-point response scale for EORTC QLQ-C30 role functioning items"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mii-vs-pro-isr-z-answers"/>
+      </reference>
+      <name value="MII VS PRO ISR-Z Answers"/>
+      <description value="ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemlich zu, 3 = trifft deutlich zu, 4 = trifft extrem zu). MII-controlled für zuverlässige ordinal()-Scoreberechnung."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2362,6 +2547,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/mii-vs-pro-ssd-12-answers"/>
+      </reference>
+      <name value="MII VS PRO SSD-12 Answers"/>
+      <description value="SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 = sehr oft). MII-controlled for reliable ordinal() score calculation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/mii-vs-pro-whodas-12-answer-list"/>
       </reference>
       <name value="MII VS PRO WHODAS 2.0 12-Item Answer List"/>
@@ -2444,6 +2640,27 @@
       <name value="mii-sp-pro-questionnaire-capabilities"/>
       <description value="SearchParameter for Questionnaire.extension[capabilities] to filter questionnaires by capability flags (displayable, collectable, calculatable, extractable, populatable, domainAligned)"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-pc-ptsd-response"/>
+      </reference>
+      <name value="PC-PTSD Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-pc-ptsd-score"/>
+      </reference>
+      <name value="PC-PTSD Score Observation Example"/>
+      <description value="PC-PTSD Total Score aus der Beispiel-QuestionnaireResponse (3 von 4)"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2541,6 +2758,48 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-scoff-response"/>
+      </reference>
+      <name value="SCOFF Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-scoff-score"/>
+      </reference>
+      <name value="SCOFF Score Observation Example"/>
+      <description value="SCOFF Total Score aus der Beispiel-QuestionnaireResponse (3 von 5)"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-ssd-12-response"/>
+      </reference>
+      <name value="SSD-12 Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-ssd-12-score"/>
+      </reference>
+      <name value="SSD-12 Score Observation Example"/>
+      <description value="SSD-12 Total Score aus der Beispiel-QuestionnaireResponse (24 von 48)"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ObservationDefinition"/>
       </extension>
       <reference>
@@ -2560,6 +2819,27 @@
       <name value="WHODAS 2.0 12-Item Simple Sum Score Observation"/>
       <description value="WHODAS-12 simple sum score observation (all items 'Moderate': 12 × 2 = 24)."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-wi-7-response"/>
+      </reference>
+      <name value="WI-7 Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-wi-7-score"/>
+      </reference>
+      <name value="WI-7 Score Observation Example"/>
+      <description value="Whiteley-7 Total Score aus der Beispiel-QuestionnaireResponse (3 von 7)"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -2797,6 +3077,54 @@
           </extension>
           <nameUrl value="whodas.html"/>
           <title value="WHODAS 2.0 (12-Item)"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="scoff.html"/>
+          </extension>
+          <nameUrl value="scoff.html"/>
+          <title value="SCOFF"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="wi-7.html"/>
+          </extension>
+          <nameUrl value="wi-7.html"/>
+          <title value="Whiteley-7 (WI-7)"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="pc-ptsd.html"/>
+          </extension>
+          <nameUrl value="pc-ptsd.html"/>
+          <title value="PC-PTSD"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="ssd-12.html"/>
+          </extension>
+          <nameUrl value="ssd-12.html"/>
+          <title value="SSD-12"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="isr-z.html"/>
+          </extension>
+          <nameUrl value="isr-z.html"/>
+          <title value="ISR-Z"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="euronet-soma.html"/>
+          </extension>
+          <nameUrl value="euronet-soma.html"/>
+          <title value="EURONET-SOMA"/>
           <generation value="markdown"/>
         </page>
         <page>

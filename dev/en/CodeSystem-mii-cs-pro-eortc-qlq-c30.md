@@ -1,4 +1,4 @@
-# MII CS PRO EORTC QLQ-C30 Response Scale - MII IG PRO v2026.5.2
+# MII CS PRO EORTC QLQ-C30 Response Scale - MII IG PRO v2026.6.0
 
 ## CodeSystem: MII CS PRO EORTC QLQ-C30 Response Scale (Experimental) 
 
@@ -7,9 +7,9 @@ Response scale for EORTC QLQ-C30 questionnaire items with multilingual support
 
 This Code system is referenced in the definition of the following value sets:
 
-* [MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.md)
-* [MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.md)
-* [MII_VS_PRO_EORTC_QLQ_C30_Scale_Role](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.md)
+* [MII VS PRO EORTC QLQ-C30 4-Point Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.md)
+* [MII VS PRO EORTC QLQ-C30 7-Point Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.md)
+* [MII VS PRO EORTC QLQ-C30 Role Functioning Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.md)
 
 -------
 
@@ -24,12 +24,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-eortc-qlq-c30",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_CS_PRO_EORTC_QLQ_C30",
   "title" : "MII CS PRO EORTC QLQ-C30 Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

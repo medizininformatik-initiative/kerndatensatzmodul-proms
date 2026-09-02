@@ -1,4 +1,4 @@
-# MII QST PRO PHQ-15 - MII IG PRO v2026.5.2
+# MII QST PRO PHQ-15 - MII IG PRO v2026.6.0
 
 ## Questionnaire: MII QST PRO PHQ-15 (Experimental) 
 
@@ -24,7 +24,7 @@ Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D Ger
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-phq-15",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.5.2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.6.0"]
   },
   "language" : "en",
   "extension" : [{
@@ -59,11 +59,11 @@ Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D Ger
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "title" : "MII QST PRO PHQ-15",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

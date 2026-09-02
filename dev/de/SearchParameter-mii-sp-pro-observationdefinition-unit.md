@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-unit - MII IG PRO v2026.5.2
+# mii-sp-pro-observationdefinition-unit - MII IG PRO v2026.6.0
 
 ## SearchParameter: mii-sp-pro-observationdefinition-unit (Experimentell) 
 
@@ -27,7 +27,7 @@ SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter sco
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-unit",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_SP_PRO_ObservationDefinition_QuantitativeDetails_Unit",
   "status" : "active",
   "experimental" : true,

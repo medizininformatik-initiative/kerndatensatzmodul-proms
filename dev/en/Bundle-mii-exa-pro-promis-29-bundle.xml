@@ -11,7 +11,7 @@
       <Patient>
         <id value="patient-example-1"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -36,7 +36,7 @@
       <QuestionnaireResponse>
         <id value="promis-29-response-1"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -475,7 +475,7 @@
       <Observation>
         <id value="obs-promis-29-physical-function-tscore"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -517,7 +517,7 @@
       <Observation>
         <id value="obs-promis-29-anxiety-tscore"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -559,7 +559,7 @@
       <Observation>
         <id value="obs-promis-29-depression-tscore"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -601,7 +601,7 @@
       <Observation>
         <id value="obs-promis-29-fatigue-tscore"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -643,7 +643,7 @@
       <Observation>
         <id value="obs-promis-29-sleep-tscore"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -685,7 +685,7 @@
       <Observation>
         <id value="obs-promis-29-social-tscore"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -727,7 +727,7 @@
       <Observation>
         <id value="obs-promis-29-pain-interference-tscore"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -769,7 +769,7 @@
       <Observation>
         <id value="obs-promis-29-pain-intensity"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity|2026.5.2"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity|2026.6.0"/>
         </meta>
         <language value="en"/>
         <text>

@@ -3,7 +3,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Workflows - MII IG PRO v2026.5.2</title>
+    <title>Workflows - MII IG PRO v2026.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -55,7 +55,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.5.2 - ci-build
+            <span style="display:inline-block;">2026.6.0 - ci-build
 
 
 
@@ -169,6 +169,24 @@
       <li>
         <a href="whodas.html">WHODAS 2.0</a>
       </li>
+      <li>
+        <a href="scoff.html">SCOFF</a>
+      </li>
+      <li>
+        <a href="wi-7.html">Whiteley-7 (WI-7)</a>
+      </li>
+      <li>
+        <a href="pc-ptsd.html">PC-PTSD</a>
+      </li>
+      <li>
+        <a href="ssd-12.html">SSD-12</a>
+      </li>
+      <li>
+        <a href="isr-z.html">ISR-Z</a>
+      </li>
+      <li>
+        <a href="euronet-soma.html">EURONET-SOMA</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -243,7 +261,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2026.5.2) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2026.6.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Workflows</h2>
   
 
@@ -332,7 +350,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Die eingegebenen Antworten werden danach als FHIR QuestionnaireResponse (QR) gespeichert, wenn vorgesehen ein Score ermittelt</li>
 </ol>
 
-<div style="text-align: center;"><a name="l655">​</a>
+<div style="text-align: center;"><a name="l691">​</a>
 <img src="Workflow_Standard.svg" alt="MII PRO Workflow-Pattern: Standard" width="40%"/>
 </div>
 
@@ -355,7 +373,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Der berechnete Score wird dem Patienten sofort im UI angezeigt</li>
 </ol>
 
-<div style="text-align: center;"><a name="l698">​</a>
+<div style="text-align: center;"><a name="l734">​</a>
 <img src="Workflow_Capability-Echtzeit.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Echtzeit-Berechnung" width="40%"/>
 </div>
 
@@ -378,7 +396,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert</li>
 </ol>
 
-<div style="text-align: center;"><a name="l743">​</a>
+<div style="text-align: center;"><a name="l779">​</a>
 <img src="Workflow_Capability-Server.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Server-Berechnung" width="50%"/>
 </div>
 
@@ -406,7 +424,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert</li>
 </ol>
 
-<div style="text-align: center;"><a name="l798">​</a>
+<div style="text-align: center;"><a name="l834">​</a>
 <img src="Workflow_Capability-Historisch.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Historische Neuberechnung" width="40%"/>
 </div>
 
@@ -455,13 +473,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Anhand der verschiedenen Workflow-Patterns wird ersichtlich, dass unterschiedliche Repräsentationsformen für die Darstellung eines Scores existieren.</p>
 
-<div style="text-align: center;"><a name="l894">​</a>
+<div style="text-align: center;"><a name="l930">​</a>
 <img src="Workflow_Score_Repraesentation.svg" alt="MII PRO Workflow-Pattern: Score Repräsentationsebenen" width="60%"/>
 </div>
 
 <p>Die grundlegende Repräsentationsform für einen berechneten Score ist die Abbildung als eigenständiges Item in einem FHIR QuestionnaireResponse. Falls für die weiterführenden Analysen nur der Score und nicht die tatsächlichen Antworten relevant sind, lässt sich der berechnete Score aus dem FHIR QuestionnaireResponse extrahieren und als FHIR Observation darstellen. Ein auf diese Weise extrahierter und gespeicherter Score kann, sofern empirisch validierte Regeln zum Mapping auf einen domänenspezifischen T-Score existieren und definiert wurden, auf den domänenspezifischen T-Score abbilden.</p>
 
-<div style="text-align: center;"><a name="l902">​</a>
+<div style="text-align: center;"><a name="l938">​</a>
 <img src="Workflow_Domain_Mapping.svg" alt="MII PRO Domain Mapping-Patterns" width="30%"/>
 </div>
 
@@ -564,10 +582,10 @@ iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='q1').answer.val
 
 
           IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.5.2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Erstellt 
-  <span title="2026-07-27 21:31:00 +0000">
-    2026-07-27
+  <span title="2026-09-02 06:41:00 +0000">
+    2026-09-02
   </span>
 
           <br/>

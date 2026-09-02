@@ -1,4 +1,4 @@
-# MII CS PRO BDI-II - MII IG PRO v2026.5.2
+# MII CS PRO BDI-II - MII IG PRO v2026.6.0
 
 ## CodeSystem: MII CS PRO BDI-II (Experimentell) 
 
@@ -7,8 +7,8 @@ MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnai
 
 Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
 
-* [MII_VS_PRO_BDI_BDI2_AnswerListLong](ValueSet-mii-vs-pro-bdi-bdi2-long.md)
-* [MII_VS_PRO_BDI_BDI2_AnswerListShort](ValueSet-mii-vs-pro-bdi-bdi2-short.md)
+* [MII VS PRO BDI-II](ValueSet-mii-vs-pro-bdi-bdi2-long.md)
+* [MII VS PRO BDI-II](ValueSet-mii-vs-pro-bdi-bdi2-short.md)
 
 -------
 
@@ -23,12 +23,12 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-bdi-bdi2",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_CS_PRO_BDI_BDI2_AnswerList",
   "title" : "MII CS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

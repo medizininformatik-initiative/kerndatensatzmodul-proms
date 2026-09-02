@@ -1,4 +1,4 @@
-# MII CS PRO PRO-CTCAE Item Library - MII IG PRO v2026.5.2
+# MII CS PRO PRO-CTCAE Item Library - MII IG PRO v2026.6.0
 
 ## CodeSystem: MII CS PRO PRO-CTCAE Item Library (Experimentell) 
 
@@ -7,15 +7,15 @@ CodeSystem for the Patient-Reported Outcomes version of the Common Terminology C
 
 Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
 
-* [MII_VS_PRO_PRO_CTCAE_Frequency](ValueSet-mii-vs-pro-pro-ctcae-frequency.md)
-* [MII_VS_PRO_PRO_CTCAE_Frequency_Sexual](ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.md)
-* [MII_VS_PRO_PRO_CTCAE_Interference](ValueSet-mii-vs-pro-pro-ctcae-interference.md)
-* [MII_VS_PRO_PRO_CTCAE_Presence](ValueSet-mii-vs-pro-pro-ctcae-presence.md)
-* [MII_VS_PRO_PRO_CTCAE_Presence_NA](ValueSet-mii-vs-pro-pro-ctcae-presence-na.md)
-* [MII_VS_PRO_PRO_CTCAE_Presence_Sexual](ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.md)
-* [MII_VS_PRO_PRO_CTCAE_Severity](ValueSet-mii-vs-pro-pro-ctcae-severity.md)
-* [MII_VS_PRO_PRO_CTCAE_Severity_Radiation](ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.md)
-* [MII_VS_PRO_PRO_CTCAE_Severity_Sexual](ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.md)
+* [MII VS PRO PRO-CTCAE Frequency Scale](ValueSet-mii-vs-pro-pro-ctcae-frequency.md)
+* [MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)](ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.md)
+* [MII VS PRO PRO-CTCAE Interference Scale](ValueSet-mii-vs-pro-pro-ctcae-interference.md)
+* [MII VS PRO PRO-CTCAE Presence Scale](ValueSet-mii-vs-pro-pro-ctcae-presence.md)
+* [MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)](ValueSet-mii-vs-pro-pro-ctcae-presence-na.md)
+* [MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)](ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.md)
+* [MII VS PRO PRO-CTCAE Severity Scale](ValueSet-mii-vs-pro-pro-ctcae-severity.md)
+* [MII VS PRO PRO-CTCAE Severity Scale (Radiation)](ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.md)
+* [MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)](ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.md)
 
 -------
 
@@ -30,12 +30,12 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-pro-ctcae",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
-  "version" : "2026.5.2",
+  "version" : "2026.6.0",
   "name" : "MII_CS_PRO_PRO_CTCAE",
   "title" : "MII CS PRO PRO-CTCAE Item Library",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-27T21:31:58+00:00",
+  "date" : "2026-09-02T06:41:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

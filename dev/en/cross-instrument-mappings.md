@@ -1,4 +1,4 @@
-# Cross-Instrument Mappings - MII IG PRO v2026.5.2
+# Cross-Instrument Mappings - MII IG PRO v2026.6.0
 
 ## Cross-Instrument Mappings
 

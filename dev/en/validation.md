@@ -1,4 +1,4 @@
-# Validation - MII IG PRO v2026.5.2
+# Validation - MII IG PRO v2026.6.0
 
 ## Validation
 
