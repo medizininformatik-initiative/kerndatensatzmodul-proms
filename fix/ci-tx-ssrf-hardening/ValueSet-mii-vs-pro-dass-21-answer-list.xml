@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-dass-21-answer-list"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-dass-21-answer-list</b></p><a name="mii-vs-pro-dass-21-answer-list"> </a><a name="hcmii-vs-pro-dass-21-answer-list"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-mii-cs-pro-dass-21.html"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2026.6.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-0">dass-dass21-answer-0</a></td><td style="color: #cccccc">Did not apply to me at all</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-1">dass-dass21-answer-1</a></td><td style="color: #cccccc">Applied to me to some degree</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-2">dass-dass21-answer-2</a></td><td style="color: #cccccc">Applied to me to a considerable degree</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-3">dass-dass21-answer-3</a></td><td style="color: #cccccc">Applied to me very much</td></tr></table></li></ul></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-dass-21-answer-list</b></p><a name="en-mii-vs-pro-dass-21-answer-list"> </a><a name="en-hcmii-vs-pro-dass-21-answer-list"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-mii-cs-pro-dass-21.html"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2026.6.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-0">dass-dass21-answer-0</a></td><td style="color: #cccccc">Did not apply to me at all</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-1">dass-dass21-answer-1</a></td><td style="color: #cccccc">Applied to me to some degree</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-2">dass-dass21-answer-2</a></td><td style="color: #cccccc">Applied to me to a considerable degree</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-dass-21.html#mii-cs-pro-dass-21-dass-dass21-answer-3">dass-dass21-answer-3</a></td><td style="color: #cccccc">Applied to me very much</td></tr></table></li></ul></div></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list"/>
+  <version value="2026.6.0"/>
+  <name value="MII_VS_PRO_DASS_21_Answer_List"/>
+  <title value="MII VS PRO DASS-21 Answer List"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-09-02T06:36:46+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21"/>
+      <concept>
+        <code value="dass-dass21-answer-0"/>
+      </concept>
+      <concept>
+        <code value="dass-dass21-answer-1"/>
+      </concept>
+      <concept>
+        <code value="dass-dass21-answer-2"/>
+      </concept>
+      <concept>
+        <code value="dass-dass21-answer-3"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

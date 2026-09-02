@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Scoring - MII IG PRO v2026.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.2"}
+    h3,h4,h5,h6{--heading-prefix:"5.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.6.0 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
+      <li>
+        <a href="scoff.html">SCOFF</a>
+      </li>
+      <li>
+        <a href="wi-7.html">Whiteley-7 (WI-7)</a>
+      </li>
+      <li>
+        <a href="pc-ptsd.html">PC-PTSD</a>
+      </li>
+      <li>
+        <a href="ssd-12.html">SSD-12</a>
+      </li>
+      <li>
+        <a href="isr-z.html">ISR-Z</a>
+      </li>
+      <li>
+        <a href="euronet-soma.html">EURONET-SOMA</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../de/scoring.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='technical-implementation.html'><b>Technical Implementation</b></a></li><li><b>Scoring</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Scoring</h2>
+  
+
+
+
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found <a href="translationinfo.html">here</a>.</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#channel-a--client-scoring-fhirpath-in-the-renderer" id="markdown-toc-channel-a--client-scoring-fhirpath-in-the-renderer">Channel A — Client scoring (FHIRPath in the renderer)</a></li>
+  <li><a href="#channel-b--server-scoring-cql-on-command" id="markdown-toc-channel-b--server-scoring-cql-on-command">Channel B — Server scoring (CQL, on command)</a></li>
+  <li><a href="#channel-c--external-scoring-pre-calculated-mapping-only" id="markdown-toc-channel-c--external-scoring-pre-calculated-mapping-only">Channel C — External scoring (pre-calculated, mapping only)</a></li>
+  <li><a href="#etl-rule-write-the-score-into-the-questionnaireresponse-or-create-an-observation-directly" id="markdown-toc-etl-rule-write-the-score-into-the-questionnaireresponse-or-create-an-observation-directly">ETL rule: write the score into the QuestionnaireResponse or create an Observation directly?</a></li>
+  <li><a href="#multi-score-questionnaires" id="markdown-toc-multi-score-questionnaires">Multi-score questionnaires</a></li>
+  <li><a href="#quality-assurance" id="markdown-toc-quality-assurance">Quality assurance</a></li>
+  <li><a href="#scope-note-clinical-interpretation" id="markdown-toc-scope-note-clinical-interpretation">Scope note: clinical interpretation</a></li>
+</ul>
+
+</div>
+<h3 id="overview">Overview</h3>
+
+<p>The MII PRO module supports three scoring channels along the <strong>Questionnaire → QuestionnaireResponse → Observation</strong> workflow. All three channels lead to the same result: a score Observation that is valid against this module's score profiles. They differ in <strong>where the calculation happens</strong> and <strong>what counts as the authoritative source of the algorithm</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Channel</th>
+      <th>Where is it calculated?</th>
+      <th>Capability combination</th>
+      <th>Typical use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A — Client scoring</strong></td>
+      <td>In the renderer (FHIRPath <code class="language-plaintext highlighter-rouge">calculatedExpression</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">collectable</code> + <code class="language-plaintext highlighter-rouge">calculatable</code> + <code class="language-plaintext highlighter-rouge">displayable</code></td>
+      <td>Interactive form filling with live score</td>
+    </tr>
+    <tr>
+      <td><strong>B — Server scoring</strong></td>
+      <td>On the server (CQL library, <code class="language-plaintext highlighter-rouge">Library/$evaluate</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">populatable</code> + <code class="language-plaintext highlighter-rouge">calculatable</code> + <code class="language-plaintext highlighter-rouge">extractable</code></td>
+      <td>On-command/batch scoring of score-less QuestionnaireResponses</td>
+    </tr>
+    <tr>
+      <td><strong>C — External scoring</strong></td>
+      <td>In the source system (REDCap, EDC, R, clinical system)</td>
+      <td><code class="language-plaintext highlighter-rouge">extractable</code> (pure import layer)</td>
+      <td>Pre-calculated scores, FHIR as transport and harmonization layer</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <strong>score item in the Questionnaire</strong> (readOnly, with <code class="language-plaintext highlighter-rouge">code</code> and <code class="language-plaintext highlighter-rouge">observation-extract</code>) is the shared contract of channels A and B: channel A fills it live during form filling, channel B fills it afterwards from the item answers. Channel C deliberately does <strong>not</strong> use it (see the ETL rule below).</p>
+
+<p>The answer <strong>weights</strong> are the same in all channels: they are normatively defined in the MII CodeSystems (<code class="language-plaintext highlighter-rouge">ordinalValue</code> extension on the concepts). Channel A reads them via the FHIRPath function <code class="language-plaintext highlighter-rouge">ordinal()</code>, channel B replicates them as verified lookup tables inside the CQL library, and channel C must demonstrate algorithmic agreement with the published scoring manuals of the instruments.</p>
+
+<hr />
+
+<h3 id="channel-a--client-scoring-fhirpath-in-the-renderer">Channel A — Client scoring (FHIRPath in the renderer)</h3>
+
+<p>The renderer evaluates the <code class="language-plaintext highlighter-rouge">calculatedExpression</code> (SDC, <code class="language-plaintext highlighter-rouge">text/fhirpath</code>) live during form filling; the score lands directly in the score item of the QuestionnaireResponse.</p>
+
+<p><strong>Variable-based pattern (recommended)</strong> — avoids circular dependencies between raw and transformed scores:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH — PROMIS Depression SF 4a
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "rawScore"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+
+// Score item references the variable
+* item[=].extension[+].url = $sdc-questionnaire-calculated-expression
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "%rawScore"
+</code></pre></div></div>
+
+<p><strong>Suitable for</strong>: sum scores, subscales, simple lookup transformations (T-score tables as <code class="language-plaintext highlighter-rouge">iif</code> chains).</p>
+
+<p><strong>Limitations</strong>: the renderer must support the SDC expressions; complex logic (half-rules for missing items, tariff algorithms, statistical conversions) cannot be expressed in FHIRPath — or only in an unmaintainable way. Such scores exist exclusively in channel B.</p>
+
+<hr />
+
+<h3 id="channel-b--server-scoring-cql-on-command">Channel B — Server scoring (CQL, on command)</h3>
+
+<p>The <strong>authoritative channel</strong>. Each calculable instrument gets a CQL library (<code class="language-plaintext highlighter-rouge">mii-lib-pro-{instrument}</code>), shipped as a FHIR <code class="language-plaintext highlighter-rouge">Library</code> resource with both content forms: <code class="language-plaintext highlighter-rouge">text/cql</code> (readable source) and <code class="language-plaintext highlighter-rouge">application/elm+json</code> (pre-compiled, deterministically produced in CI).</p>
+
+<p><strong>Binding to the Questionnaire</strong> via the <code class="language-plaintext highlighter-rouge">cqf-library</code> extension with a <strong>versioned</strong> canonical (reproducibility — analogous to the versioned <code class="language-plaintext highlighter-rouge">meta.profile</code>):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FSH
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/cqf-library"
+* extension[=].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-phq-9|1.0.0"
+</code></pre></div></div>
+
+<p><strong>define ↔ linkId convention</strong>: the name of the CQL <code class="language-plaintext highlighter-rouge">define</code> that calculates a score corresponds to the <code class="language-plaintext highlighter-rouge">linkId</code> of the associated score item (or is resolved via <code class="language-plaintext highlighter-rouge">item.code</code>). This lets a generic scoring pipeline assign each result to the correct item or Observation.</p>
+
+<p><strong>Invocation</strong>: <code class="language-plaintext highlighter-rouge">Library/{id}/$evaluate</code> — per QuestionnaireResponse or as a batch over a cohort. Note for HAPI FHIR implementations: <code class="language-plaintext highlighter-rouge">$populate</code>/<code class="language-plaintext highlighter-rouge">$extract</code> do <strong>not</strong> evaluate <code class="language-plaintext highlighter-rouge">calculatedExpression</code>; server-side scoring runs via <code class="language-plaintext highlighter-rouge">Library/$evaluate</code> or a dedicated scoring pipeline.</p>
+
+<p><strong>Use for</strong>:</p>
+<ul>
+  <li>QuestionnaireResponses that arrive <strong>without a score</strong> (mobile capture, EDC ingestion, partial instruments)</li>
+  <li>Scores that FHIRPath cannot express (EQ-5D-5L index tariff, EORTC half-rule, PROMIS-16 PROPr, score crosswalks such as BDI-II → PROMIS)</li>
+  <li>Retrospective recalculation for quality assurance (see below)</li>
+</ul>
+
+<p><strong>Contract between channels A and B</strong>: wherever the same score exists in both languages, differential tests (identical golden QuestionnaireResponses through both engines, results compared) ensure agreement. In case of deviation, channel B is the reference.</p>
+
+<hr />
+
+<h3 id="channel-c--external-scoring-pre-calculated-mapping-only">Channel C — External scoring (pre-calculated, mapping only)</h3>
+
+<p>The score was calculated outside of FHIR — in REDCap, an EDC system, an R pipeline, or a clinical primary system — and is merely <strong>mapped</strong> into the MII structures as an Observation. FHIR acts as the transport and harmonization layer here, not as the calculation environment.</p>
+
+<p><strong>Requirements for the imported score Observation</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">meta.profile</code> with the versioned canonical of the matching score profile</li>
+  <li><code class="language-plaintext highlighter-rouge">derivedFrom</code> → QuestionnaireResponse, <strong>if</strong> the item answers were transmitted as well</li>
+  <li><code class="language-plaintext highlighter-rouge">method</code> names the algorithm or scoring manual (including version/publication)</li>
+  <li>Provenance of the source system if no QuestionnaireResponse exists (score without raw data)</li>
+</ul>
+
+<p><strong>Trust model</strong>: the MII module does not automatically recalculate imported scores — responsibility for algorithmic correctness lies with the source system. <strong>Recommended quality assurance</strong>: where item answers are available, the score can be recalculated via channel B and compared; deviations point to implementation differences in the source system (rounding, missing handling, outdated manuals).</p>
+
+<hr />
+
+<h3 id="etl-rule-write-the-score-into-the-questionnaireresponse-or-create-an-observation-directly">ETL rule: write the score into the QuestionnaireResponse or create an Observation directly?</h3>
+
+<p>For import and scoring pipelines a clear separation by channel applies:</p>
+
+<p><strong>Channel B (server calculates from the answers):</strong> the pipeline <em>may</em> fill the score item of the QuestionnaireResponse <strong>and</strong> extracts the Observation. The score is derived from exactly the answers of this QuestionnaireResponse — the score item then truthfully documents the result of the module-conformant calculation.</p>
+
+<p><strong>Channel C (score arrives pre-calculated):</strong> the pipeline creates <strong>only the Observation and never modifies the QuestionnaireResponse.</strong> Rationale:</p>
+
+<ol>
+  <li><strong>Document integrity</strong>: the QuestionnaireResponse is the capture document — it attests what was collected (and possibly calculated) at capture time. A retroactively injected external score fabricates a capture event that never happened.</li>
+  <li><strong>Structure</strong>: partial instruments and external systems frequently deliver QuestionnaireResponses without a score item (or no QuestionnaireResponse at all) — filling it would not even be uniformly possible.</li>
+  <li><strong>Query patterns</strong>: consumers of the core data set search for scores as Observations, not in QuestionnaireResponse items. The Observation with <code class="language-plaintext highlighter-rouge">derivedFrom</code>, <code class="language-plaintext highlighter-rouge">method</code>, and Provenance carries all necessary traceability.</li>
+</ol>
+
+<p>Special case: if an external system delivers a QuestionnaireResponse whose score item was already filled <strong>client-side</strong> (channel A), it remains unchanged — extraction produces the Observation from it as usual.</p>
+
+<hr />
+
+<h3 id="multi-score-questionnaires">Multi-score questionnaires</h3>
+
+<p>Complex questionnaires produce multiple scores (example EQ-5D-5L: index, VAS, profile; PROMIS-29: eight domains, each raw + T-score). Per score:</p>
+<ul>
+  <li>a dedicated score item with a unique <code class="language-plaintext highlighter-rouge">code</code>,</li>
+  <li>a dedicated ObservationDefinition (including population-specific reference ranges),</li>
+  <li>in channel A the variable pattern to avoid circular dependencies,</li>
+  <li>in channel B a dedicated <code class="language-plaintext highlighter-rouge">define</code> in the same instrument library.</li>
+</ul>
+
+<hr />
+
+<h3 id="quality-assurance">Quality assurance</h3>
+
+<ul>
+  <li><strong>Differential tests channel A ↔ B</strong>: identical test QuestionnaireResponses (minimum, maximum, uniform answers, missing items, opt-outs) through both engines; results must match exactly.</li>
+  <li><strong>Weight consistency</strong>: CI check that the lookup tables of the CQL libraries agree with the <code class="language-plaintext highlighter-rouge">ordinalValue</code> weights of the CodeSystems.</li>
+  <li><strong>Import validation (channel C)</strong>: sample-based recalculation via channel B where item answers are available.</li>
+  <li><strong>Version binding</strong>: score Observations reference the library version (or the scoring manual) — every score value remains traceable to its algorithm.</li>
+</ul>
+
+<hr />
+
+<h3 id="scope-note-clinical-interpretation">Scope note: clinical interpretation</h3>
+
+<p>Cut-off values, severity categories, and comparison metrics (MID/MCID) are deliberately <strong>not shipped as executable logic</strong> in this module; they are documented only (see <em>Derived Metrics</em>). Background: software that calculates scores from PRO answers <strong>and interprets them clinically</strong> may qualify as medical device software under the EU MDR (cf. MDCG 2019-11; rule 11, Annex VIII MDR). Qualification depends on the intended purpose of the manufacturer/operator of the executing software — not on this specification. Implementations in clinical care can flag the MDR relevance of a form in a machine-readable way via the gematik extension <code class="language-plaintext highlighter-rouge">ISiKMpFormularExtension</code> (ISiK level 6 and later).</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-02 06:36:00 +0000">
+    2026-09-02
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

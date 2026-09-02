@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Questionnaire Capabilities - MII IG PRO v2026.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.5"}
+    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.6.0 - ci-build
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Overview
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="module-description.html">Module Description</a>
+      </li>
+      <li>
+        <a href="project-context.html">Project Context</a>
+      </li>
+      <li>
+        <a href="use-cases.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technical-implementation.html">Technical Implementation</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="scoring.html">Scoring</a>
+      </li>
+      <li>
+        <a href="id-systematics.html">ID Systematics</a>
+      </li>
+      <li>
+        <a href="terminology-strategies.html">Terminology Strategies</a>
+      </li>
+      <li>
+        <a href="questionnaire-capabilities.html">Questionnaire Capabilities</a>
+      </li>
+      <li>
+        <a href="validation.html">Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">PRO Library
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="pro-library.html">PRO Library</a>
+      </li>
+      <li>
+        <a href="phq-9.html">PHQ-9</a>
+      </li>
+      <li>
+        <a href="phq-15.html">PHQ-15</a>
+      </li>
+      <li>
+        <a href="eq-5d-5l.html">EQ-5D-5L</a>
+      </li>
+      <li>
+        <a href="eortc-qlq-c30.html">EORTC QLQ-C30</a>
+      </li>
+      <li>
+        <a href="promis.html">PROMIS</a>
+      </li>
+      <li>
+        <a href="promis-16.html">PROMIS-16</a>
+      </li>
+      <li>
+        <a href="bdi-ii.html">BDI-II</a>
+      </li>
+      <li>
+        <a href="dass-21.html">DASS-21</a>
+      </li>
+      <li>
+        <a href="whodas.html">WHODAS 2.0</a>
+      </li>
+      <li>
+        <a href="scoff.html">SCOFF</a>
+      </li>
+      <li>
+        <a href="wi-7.html">Whiteley-7 (WI-7)</a>
+      </li>
+      <li>
+        <a href="pc-ptsd.html">PC-PTSD</a>
+      </li>
+      <li>
+        <a href="ssd-12.html">SSD-12</a>
+      </li>
+      <li>
+        <a href="isr-z.html">ISR-Z</a>
+      </li>
+      <li>
+        <a href="euronet-soma.html">EURONET-SOMA</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domain-Based Scoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="domain-based-scoring.html">Domain-Based Scoring</a>
+      </li>
+      <li>
+        <a href="domains.html">Domains</a>
+      </li>
+      <li>
+        <a href="cross-instrument-mappings.html">Cross-Instrument Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/questionnaire-capabilities.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='technical-implementation.html'><b>Technical Implementation</b></a></li><li><b>Questionnaire Capabilities</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Questionnaire Capabilities</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#questionnaire-varianten-architektur-trennung-der-verantwortlichkeiten" id="markdown-toc-questionnaire-varianten-architektur-trennung-der-verantwortlichkeiten">Questionnaire-Varianten-Architektur: Trennung der Verantwortlichkeiten</a>    <ul>
+      <li><a href="#die-architektonische-erkenntnis" id="markdown-toc-die-architektonische-erkenntnis">Die architektonische Erkenntnis</a></li>
+      <li><a href="#der-architektonische-durchbruch" id="markdown-toc-der-architektonische-durchbruch">Der architektonische Durchbruch</a></li>
+      <li><a href="#implementierungsbeispiel-eq-5d-5l" id="markdown-toc-implementierungsbeispiel-eq-5d-5l">Implementierungsbeispiel: EQ-5D-5L</a></li>
+      <li><a href="#erweiterte-workflow-szenarien" id="markdown-toc-erweiterte-workflow-szenarien">Erweiterte Workflow-Szenarien</a></li>
+      <li><a href="#technische-implementierungsdetails" id="markdown-toc-technische-implementierungsdetails">Technische Implementierungsdetails</a></li>
+      <li><a href="#vorteile-der-separation-of-concerns-architektur" id="markdown-toc-vorteile-der-separation-of-concerns-architektur">Vorteile der Separation-of-Concerns Architektur</a></li>
+      <li><a href="#fazit" id="markdown-toc-fazit">Fazit</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="questionnaire-varianten-architektur-trennung-der-verantwortlichkeiten">Questionnaire-Varianten-Architektur: Trennung der Verantwortlichkeiten</h2>
+
+<h3 id="die-architektonische-erkenntnis">Die architektonische Erkenntnis</h3>
+
+<p>Das MII PRO-Modul implementiert ein ausgeklügeltes Muster zur Trennung der Verantwortlichkeiten ("Separation of Concerns") für Fragebögen, bei dem verschiedene Varianten desselben Fragebogens unterschiedliche Zwecke im Workflow von Gesundheitsdaten erfüllen. Diese Architektur ermöglicht maximale Flexibilität bei gleichzeitiger Wahrung der semantischen Konsistenz über verschiedene Anwendungsfälle hinweg.</p>
+
+<h4 id="basis-capabilities-baukasten-prinzip">Basis-Capabilities (Baukasten-Prinzip)</h4>
+
+<ol>
+  <li><strong>Collectable</strong> (Erfassbar): Wie Daten VON Nutzern EINGEGEBEN werden</li>
+  <li><strong>Populatable</strong> (Vorausfüllbar): Wie existierende Daten GELADEN werden</li>
+  <li><strong>Calculatable</strong> (Berechenbar): Wie Scores AUS Daten BERECHNET werden</li>
+  <li><strong>Displayable</strong> (Anzeigbar): Wie Daten/Ergebnisse DARGESTELLT werden</li>
+  <li><strong>Extractable</strong> (Extrahierbar): Wie Daten aus dem Fragebogenformat in andere FHIR-Ressourcen ÜBERFÜHRT werden</li>
+</ol>
+
+<p>Die entscheidende Erkenntnis ist, dass ein konkreter Einsatz oft <strong>weder einzelne noch alle Capabilities benötigt, sondern deren Kombinationen</strong>, die spezifische Anwendungsfälle definieren.</p>
+
+<h4 id="use-case-basierte-capability-kombinationen">Use-Case-basierte Capability-Kombinationen</h4>
+
+<h5 id="use-case-1-interaktive-datenerfassung-mit-echtzeit-scoring">Use Case 1: Interaktive Datenerfassung mit Echtzeit-Scoring</h5>
+<p><strong>Capabilities</strong>: <code class="language-plaintext highlighter-rouge">[collectable, calculatable, displayable]</code></p>
+<ul>
+  <li>Patient gibt Daten ein</li>
+  <li>Scores werden in Echtzeit berechnet</li>
+  <li>Ergebnisse werden Patienten sofort angezeigt</li>
+  <li><strong>Beispiel</strong>: DiGA-Smartphone-App mit Live-Score-Updates</li>
+</ul>
+
+<h5 id="use-case-2-mobile-datenerfassung---server-berechnung">Use Case 2: Mobile Datenerfassung -&gt; Server-Berechnung</h5>
+<p><strong>Capabilities Client</strong>: <code class="language-plaintext highlighter-rouge">[collectable]</code>
+<strong>Capabilities Server</strong>: <code class="language-plaintext highlighter-rouge">[populatable, calculatable, extractable]</code></p>
+<ul>
+  <li>Mobile App erfasst nur Daten</li>
+  <li>Server lädt QuestionnaireResponse</li>
+  <li>Server berechnet Scores</li>
+  <li><strong>Beispiel</strong>: Leichtgewichtige mobile PRO-App</li>
+</ul>
+
+<h5 id="use-case-3-historische-daten-neuberechnung">Use Case 3: Historische Daten-Neuberechnung</h5>
+<p><strong>Capabilities</strong>: <code class="language-plaintext highlighter-rouge">[populatable, calculatable, extractable]</code></p>
+<ul>
+  <li>Keine Nutzerinteraktion</li>
+  <li>Lädt existierende Responses</li>
+  <li>Wendet neue Berechnungslogik an</li>
+  <li><strong>Beispiel</strong>: Migration auf neue Scoring-Algorithmen oder Datenharmonisierung</li>
+</ul>
+
+<h5 id="use-case-4-klinische-ergebnisansicht">Use Case 4: Klinische Ergebnisansicht</h5>
+<p><strong>Capabilities</strong>: <code class="language-plaintext highlighter-rouge">[populatable, displayable]</code></p>
+<ul>
+  <li>Nur-Lese-Zugriff</li>
+  <li>Zeigt vorhandene Daten und Scores</li>
+  <li>Keine Berechnung oder Eingabe</li>
+  <li><strong>Beispiel</strong>: Arzt-Dashboard im KIS</li>
+</ul>
+
+<h5 id="use-case-5-reine-datenerfassung">Use Case 5: Reine Datenerfassung</h5>
+<p><strong>Capabilities</strong>: <code class="language-plaintext highlighter-rouge">[collectable, extractable]</code></p>
+<ul>
+  <li>Erfasst Daten ohne Berechnung</li>
+  <li>Extrahiert zu QuestionnaireResponse</li>
+  <li>Scoring erfolgt extern</li>
+  <li><strong>Beispiel</strong>: Papier-zu-Digital-Erfassung</li>
+</ul>
+
+<h3 id="der-architektonische-durchbruch">Der architektonische Durchbruch</h3>
+
+<h4 id="vorausfüllungs-workflow-muster">Vorausfüllungs-Workflow-Muster</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Collectable Fragebogen -&gt; QuestionnaireResponse -&gt; Calculatable Fragebogen -&gt; Berechnete Scores -&gt; Observation Ressourcen
+</code></pre></div></div>
+
+<ol>
+  <li>Patient füllt den Collectable-Fragebogen aus</li>
+  <li>QuestionnaireResponse wird zur Vorausfüllung verwendet</li>
+  <li>Calculatable-Fragebogen generiert Scores</li>
+  <li>Scores werden als Observation-Ressourcen extrahiert</li>
+</ol>
+
+<p>Dieses Muster ermöglicht:</p>
+<ol>
+  <li><strong>Saubere Trennung</strong>: Erfassungslogik getrennt von Berechnungslogik</li>
+  <li><strong>Flexibilität</strong>: Verschiedene Berechnungsstrategien ohne Einfluss auf die Erfassung</li>
+  <li><strong>Wiederverwendbarkeit</strong>: Dieselben erfassten Daten können mehrere Berechnungsvarianten speisen</li>
+  <li><strong>Evolution</strong>: Berechnungslogik kann sich unabhängig von der Erfassung entwickeln</li>
+</ol>
+
+<h3 id="implementierungsbeispiel-eq-5d-5l">Implementierungsbeispiel: EQ-5D-5L</h3>
+
+<p>Der EQ-5D-5L-Fragebogen demonstriert diese Architektur perfekt:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//FSH
+// Basis-Fragebogen mit Kernstruktur
+Instance: mii-qst-pro-euroqol-eq5d5l-base
+* url = ".../mii-qst-pro-euroqol-eq5d5l-base"
+
+// Displayable-Variante zur Ansicht im KIS
+Instance: mii-qst-pro-euroqol-eq5d5l-displayable
+* derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
+* extension[questionnaire-capabilities].valueCode = #displayable
+
+// Collectable-Variante für Patientendateneingabe
+Instance: mii-qst-pro-euroqol-eq5d5l-collectable
+* derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
+* extension[questionnaire-capabilities].valueCode = #collectable
+// Enthält versteckte "Fehlender Wert"-Optionen
+
+// Calculatable-Variante mit Scoring-Logik
+Instance: mii-qst-pro-euroqol-eq5d5l-calculatable
+* derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
+* extension[questionnaire-capabilities].valueCode = #calculatable
+// Enthält FHIRPath-Ausdrücke für Index-, VAS-, Profil-Scores
+</code></pre></div></div>
+
+<h3 id="erweiterte-workflow-szenarien">Erweiterte Workflow-Szenarien</h3>
+
+<h4 id="szenario-1-mobile-erfassung---server-berechnung">Szenario 1: Mobile Erfassung -&gt; Server-Berechnung</h4>
+<ol>
+  <li>Patient nutzt mobile App mit <strong>Collectable</strong>-Variante</li>
+  <li>QuestionnaireResponse wird an Server gesendet</li>
+  <li>Server nutzt <strong>Calculatable</strong>-Variante, vorausgefüllt mit Antwortdaten</li>
+  <li>Berechnete Scores werden als Observations gespeichert</li>
+  <li>Kliniker sieht Ergebnisse über <strong>Displayable</strong>-Variante</li>
+</ol>
+
+<h4 id="szenario-2-forschungsdatenerfassung---multiple-scoring-algorithmen">Szenario 2: Forschungsdatenerfassung -&gt; Multiple Scoring-Algorithmen</h4>
+<ol>
+  <li>Eine einzige <strong>Collectable</strong>-Variante über alle Studienzentren</li>
+  <li>Mehrere <strong>Calculatable</strong>-Varianten für verschiedene Scoring-Ansätze:
+    <ul>
+      <li>Standard-Scoring</li>
+      <li>Populationsspezifisches Scoring</li>
+      <li>Forschungsspezifische Algorithmen</li>
+    </ul>
+  </li>
+  <li>Alle Berechnungen nutzen dieselben Quelldaten</li>
+</ol>
+
+<h4 id="szenario-3-historische-datenmigration">Szenario 3: Historische Datenmigration</h4>
+<ol>
+  <li>Legacy-Daten als QuestionnaireResponses importiert</li>
+  <li><strong>Calculatable</strong>-Varianten nachträglich angewendet</li>
+  <li>Standardisierte Scores für historische Vergleiche generiert</li>
+</ol>
+
+<h3 id="technische-implementierungsdetails">Technische Implementierungsdetails</h3>
+
+<h4 id="capability-extensions">Capability-Extensions</h4>
+<p>Die Questionnaire-Capabilities werden als separate boolesche Sub-Extensions implementiert:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//FSH
+Extension: MII_PR_PRO_Questionnaire_Capabilities
+* extension contains
+    displayable 0..1 MS and
+    collectable 0..1 MS and
+    populatable 0..1 MS and
+    extractable 0..1 MS and
+    calculatable 0..1 MS and
+    domainAligned 0..1 MS
+* extension[displayable].value[x] only boolean
+* extension[collectable].value[x] only boolean
+* extension[populatable].value[x] only boolean
+* extension[extractable].value[x] only boolean
+* extension[calculatable].value[x] only boolean
+* extension[domainAligned].value[x] only boolean
+</code></pre></div></div>
+
+<p>Diese boolesche Struktur ermöglicht flexible Capability-Kombinationen, da mehrere Capabilities gleichzeitig aktiv sein können.</p>
+
+<h4 id="vorausfüllungs-mechanismus">Vorausfüllungs-Mechanismus</h4>
+<p>Nutzung der SDC-Vorausfüllungsfähigkeiten:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* extension[sdc-questionnaire-sourceQueries].valueReference = Reference(QuestionnaireResponse/erfasste-daten)
+* extension[sdc-questionnaire-launchContext].extension[name].valueId = "sourceResponse"
+* extension[sdc-questionnaire-launchContext].extension[type].valueCode = #QuestionnaireResponse
+</code></pre></div></div>
+
+<h3 id="vorteile-der-separation-of-concerns-architektur">Vorteile der Separation-of-Concerns Architektur</h3>
+
+<ol>
+  <li><strong>Wartbarkeit</strong>: Änderungen der Berechnungslogik beeinflussen nicht die Erfassung</li>
+  <li><strong>Versionierung</strong>: Verschiedene Versionen von Fragebögen und Berechnungen können koexistieren</li>
+  <li><strong>Performance</strong>: Berechnungen können separat von der Erfassung optimiert werden</li>
+  <li><strong>Compliance</strong>: Verschiedene Projekte können unterschiedliche Anforderungen bzgl. Darstellung haben</li>
+  <li><strong>Forschung</strong>: Neue Scoring-Algorithmen können ohne Änderung der Erfassung getestet werden</li>
+  <li><strong>Integration</strong>: Systeme können die für ihre Fähigkeiten geeignete Variante wählen</li>
+</ol>
+
+<p>Weitere erweiterte Capabilities in Betracht:</p>
+
+<ul>
+  <li>Perzentilränge und Z-Scores</li>
+  <li>Alters- und geschlechtsadjustierte Normen</li>
+</ul>
+
+<p><strong>Change Detection</strong>:</p>
+<ul>
+  <li>Automatische Erkennung signifikanter Veränderungen</li>
+  <li>Trend-Analysen über multiple Zeitpunkte</li>
+  <li>Alert-Generierung bei kritischen Veränderungen</li>
+</ul>
+
+<p>Diese erweiterten Capabilities werden die Integration von PROs in klinische Entscheidungsprozesse und Qualitätssicherung weiter verbessern.</p>
+
+<h3 id="fazit">Fazit</h3>
+
+<p>Die Trennung von Displayable-, Collectable- und Calculatable-Fragebogen-Capabilities bietet einen strukturierten Ansatz für die PRO-Implementierung. Diese Aufteilung in grundlegend verschiedene Verantwortlichkeiten, die je nach Bedarf kombiniert werden können, unterstützt die Entwicklung flexibler und wartbarer Systeme für Patient-Reported Outcomes und deren Instrumente.</p>
+
+<p>Dieser Architekturansatz adressiert die praktischen Herausforderungen moderner Gesundheits-IT, in der Datenerfassung, Berechnung und Präsentation häufig in unterschiedlichen Systemen, zu verschiedenen Zeitpunkten und für verschiedene Zwecke stattfinden.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.6.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-09-02 06:36:00 +0000">
+    2026-09-02
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

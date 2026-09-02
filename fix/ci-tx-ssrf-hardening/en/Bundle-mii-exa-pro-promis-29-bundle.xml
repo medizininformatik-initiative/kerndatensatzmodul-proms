@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-pro-promis-29-bundle"/>
+  <language value="en"/>
+  <type value="collection"/>
+  <timestamp value="2025-01-30T14:35:00Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"/>
+    <resource>
+      <Patient>
+        <id value="patient-example-1"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <identifier>
+          <system value="http://example.org/fhir/sid/patients"/>
+          <value value="12345"/>
+        </identifier>
+        <name>
+          <family value="Mustermann"/>
+          <given value="Erika"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1985-03-15"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f12345678901"/>
+    <resource>
+      <QuestionnaireResponse>
+        <id value="promis-29-response-1"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <questionnaire value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"/>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <authored value="2025-01-30T14:30:00Z"/>
+        <item>
+          <linkId value="PROMIS-29.PhysicalFunction"/>
+          <item>
+            <linkId value="PROMIS-29.PhysicalFunction.Description"/>
+          </item>
+          <item>
+            <linkId value="promis-pfa11"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13920-6"/>
+                <display value="With some difficulty"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-pfa21"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13920-6"/>
+                <display value="With some difficulty"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-pfa23"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13918-0"/>
+                <display value="With a little difficulty"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-pfa53"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13920-6"/>
+                <display value="With some difficulty"/>
+              </valueCoding>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.Anxiety"/>
+          <item>
+            <linkId value="PROMIS-29.Anxiety.Description"/>
+          </item>
+          <item>
+            <linkId value="promis-edanx01"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10066-1"/>
+                <display value="Rarely"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-edanx40"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-edanx41"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10066-1"/>
+                <display value="Rarely"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-edanx53"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10066-1"/>
+                <display value="Rarely"/>
+              </valueCoding>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.Depression"/>
+          <item>
+            <linkId value="PROMIS-29.Depression.Description"/>
+          </item>
+          <item>
+            <linkId value="promis-eddep04"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-eddep06"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-eddep29"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10044-8"/>
+                <display value="Often"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-eddep41"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.Fatigue"/>
+          <item>
+            <linkId value="PROMIS-29.Fatigue.Description"/>
+          </item>
+          <item>
+            <linkId value="promis-hi7"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10044-8"/>
+                <display value="Often"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-an3"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10044-8"/>
+                <display value="Often"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-fatexp41"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13909-9"/>
+                <display value="Somewhat"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-fatexp40"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13902-4"/>
+                <display value="Quite a bit"/>
+              </valueCoding>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.Sleep"/>
+          <item>
+            <linkId value="PROMIS-29.Sleep.Description"/>
+          </item>
+          <item>
+            <linkId value="promis-sleep109"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA8968-5"/>
+                <display value="Fair"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-sleep116"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-sleep20"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-sleep44"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10066-1"/>
+                <display value="Rarely"/>
+              </valueCoding>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.Social"/>
+          <item>
+            <linkId value="PROMIS-29.Social.Description"/>
+          </item>
+          <item>
+            <linkId value="promis-srpper11-caps"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-srpper18-caps"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10066-1"/>
+                <display value="Rarely"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-srpper23-caps"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-srpper46-caps"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA10082-8"/>
+                <display value="Sometimes"/>
+              </valueCoding>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.PainInterference"/>
+          <item>
+            <linkId value="PROMIS-29.PainInterference.Description"/>
+          </item>
+          <item>
+            <linkId value="promis-painin9"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13909-9"/>
+                <display value="Somewhat"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-painin22"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13909-9"/>
+                <display value="Somewhat"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-painin31"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13863-8"/>
+                <display value="A little bit"/>
+              </valueCoding>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-painin34"/>
+            <answer>
+              <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA13909-9"/>
+                <display value="Somewhat"/>
+              </valueCoding>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.PainIntensity"/>
+          <item>
+            <linkId value="promis-global07"/>
+            <answer>
+              <valueInteger value="5"/>
+            </answer>
+          </item>
+        </item>
+        <item>
+          <linkId value="PROMIS-29.Scores"/>
+          <item>
+            <linkId value="promis-29-physical-function-raw"/>
+            <answer>
+              <valueDecimal value="13"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-physical-function-tscore"/>
+            <answer>
+              <valueDecimal value="42.6"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-anxiety-raw"/>
+            <answer>
+              <valueDecimal value="9"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-anxiety-tscore"/>
+            <answer>
+              <valueDecimal value="56.8"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-depression-raw"/>
+            <answer>
+              <valueDecimal value="13"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-depression-tscore"/>
+            <answer>
+              <valueDecimal value="63.9"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-fatigue-raw"/>
+            <answer>
+              <valueDecimal value="15"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-fatigue-tscore"/>
+            <answer>
+              <valueDecimal value="64.9"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-sleep-raw"/>
+            <answer>
+              <valueDecimal value="11"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-sleep-tscore"/>
+            <answer>
+              <valueDecimal value="53.6"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-social-raw"/>
+            <answer>
+              <valueDecimal value="11"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-social-tscore"/>
+            <answer>
+              <valueDecimal value="39.7"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-pain-interference-raw"/>
+            <answer>
+              <valueDecimal value="11"/>
+            </answer>
+          </item>
+          <item>
+            <linkId value="promis-29-pain-interference-tscore"/>
+            <answer>
+              <valueDecimal value="60.9"/>
+            </answer>
+          </item>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c3d4e5f6-a7b8-9012-cdef-123456789012"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-physical-function-tscore"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="91721-1"/>
+            <display value="PROMIS physical function - version 2.0 T-score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="42.6"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d4e5f6a7-b8c9-0123-defa-234567890123"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-anxiety-tscore"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="71967-4"/>
+            <display value="PROMIS-29 Anxiety score T-score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="56.8"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e5f6a7b8-c9d0-1234-efab-345678901234"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-depression-tscore"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="77861-3"/>
+            <display value="PROMIS emotional distress - depression - version 1.0 Tscore"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="63.9"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f6a7b8c9-d0e1-2345-fabc-456789012345"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-fatigue-tscore"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="77864-7"/>
+            <display value="PROMIS fatigue - version 1.0 Tscore"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="64.9"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a7b8c9d0-e1f2-3456-abcd-567890123456"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-sleep-tscore"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="77860-5"/>
+            <display value="PROMIS sleep disturbance - version 1.0 Tscore"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="53.6"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b8c9d0e1-f2a3-4567-bcde-678901234567"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-social-tscore"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="77854-8"/>
+            <display value="PROMIS ability to participate in social roles and activities - version 2.0 Tscore"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="39.7"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c9d0e1f2-a3b4-5678-cdef-789012345678"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-pain-interference-tscore"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="77865-4"/>
+            <display value="PROMIS pain interference - version 1.0 Tscore"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="60.9"/>
+          <unit value="{score}"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d0e1f2a3-b4c5-6789-defa-890123456789"/>
+    <resource>
+      <Observation>
+        <id value="obs-promis-29-pain-intensity"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity|2026.6.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical">
+          <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="75261-8"/>
+            <display value="How intense was your average pain in the past 7 days [PROMIS]"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-example-1"/>
+        </subject>
+        <effectiveDateTime value="2025-01-30T14:30:00Z"/>
+        <valueQuantity>
+          <value value="5"/>
+          <unit value="1"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="1"/>
+        </valueQuantity>
+        <method>
+          <text value="PROMIS-29 Profile v2.1 - Pain Intensity single item"/>
+        </method>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/promis-29-response-1"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

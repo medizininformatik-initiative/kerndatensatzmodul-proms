@@ -1,0 +1,292 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_BDI_BDI2_AnswerListLong",
+    "title" : "MII VS PRO BDI-II",
+    "description" : "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-bdi-bdi2.html" : "MII QST PRO BDI-II"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_BDI_BDI2_AnswerListShort",
+    "title" : "MII VS PRO BDI-II",
+    "description" : "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-bdi-bdi2.html" : "MII QST PRO BDI-II"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_DASS_21_Answer_List",
+    "title" : "MII VS PRO DASS-21 Answer List",
+    "description" : "4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much)",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt",
+    "title" : "MII VS PRO EORTC QLQ-C30 4-Point Scale",
+    "description" : "Standard 4-point response scale for EORTC QLQ-C30 items",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.html" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant A"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt",
+    "title" : "MII VS PRO EORTC QLQ-C30 7-Point Scale",
+    "description" : "7-point response scale for EORTC QLQ-C30 global health status and quality of life items",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.html" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant A"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role",
+    "title" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
+    "description" : "4-point response scale for EORTC QLQ-C30 role functioning items",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-isr-z-answers",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_ISR_Z_Answers",
+    "title" : "MII VS PRO ISR-Z Answers",
+    "description" : "ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemlich zu, 3 = trifft deutlich zu, 4 = trifft extrem zu). MII-controlled für zuverlässige ordinal()-Scoreberechnung.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-isr-z.html" : "MII QST PRO ISR-Z"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity",
+    "version" : "2026.6.0",
+    "status" : "draft",
+    "name" : "MII_VS_PRO_MIDOS2_Severity",
+    "title" : "MII VS PRO MIDOS2 DGP-Severity-Skala",
+    "description" : "DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für die 11 Symptom-Items des MIDOS2 verwendet.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-midos-midos2.html" : "MII QST PRO MIDOS2"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing",
+    "version" : "2026.6.0",
+    "status" : "draft",
+    "name" : "MII_VS_PRO_MIDOS2_Wellbeing",
+    "title" : "MII VS PRO MIDOS2 Wohlbefinden-Skala",
+    "description" : "4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-midos-midos2.html" : "MII QST PRO MIDOS2"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PHQ_15_Answers",
+    "title" : "MII VS PRO PHQ-15 Answers",
+    "description" : "PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt, 1 = Wenig beeinträchtigt, 2 = Stark beeinträchtigt). MII-controlled for reliable ordinal() score calculation.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-phq-15.html" : "MII QST PRO PHQ-15"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3583",
+    "title" : "MII VS PRO PHQ-9 Answer List LL358-3",
+    "description" : "Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3591",
+    "title" : "MII VS PRO PHQ-9 Answer List LL359-1",
+    "description" : "Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9)",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Frequency",
+    "title" : "MII VS PRO PRO-CTCAE Frequency Scale",
+    "description" : "5-point frequency response scale for PRO-CTCAE items (0=Never, 4=Almost constantly)",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Frequency_Sexual",
+    "title" : "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)",
+    "description" : "7-point frequency scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Interference",
+    "title" : "MII VS PRO PRO-CTCAE Interference Scale",
+    "description" : "5-point interference response scale for PRO-CTCAE items (0=Not at all, 4=Very much)",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Presence",
+    "title" : "MII VS PRO PRO-CTCAE Presence Scale",
+    "description" : "Binary presence/absence response scale for PRO-CTCAE items",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-na",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Presence_NA",
+    "title" : "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
+    "description" : "3-option presence scale: Yes / No / Not applicable",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-sexual",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Presence_Sexual",
+    "title" : "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
+    "description" : "4-option presence scale for sexual function: Yes / No / Not sexually active / Prefer not to answer",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Severity",
+    "title" : "MII VS PRO PRO-CTCAE Severity Scale",
+    "description" : "5-point severity response scale for PRO-CTCAE items (0=None, 4=Very severe)",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Severity_Radiation",
+    "title" : "MII VS PRO PRO-CTCAE Severity Scale (Radiation)",
+    "description" : "6-point severity scale for radiation items: standard 5 options plus 'Not applicable'",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-sexual",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PRO_CTCAE_Severity_Sexual",
+    "title" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
+    "description" : "7-point severity scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PROMIS_Frequency_Response_Scale",
+    "title" : "MII VS PRO PROMIS Frequency Response Scale",
+    "description" : "PROMIS Frequency response scale based on LOINC LL1016-6",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal",
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PROMIS_Intensity_Response_Scale",
+    "title" : "MII VS PRO PROMIS Intensity Response Scale",
+    "description" : "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale",
+    "title" : "MII VS PRO PROMIS Physical Function Response Scale",
+    "description" : "PROMIS Physical Function response scale based on LOINC LL1022-4",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal",
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_SSD_12_Answers",
+    "title" : "MII VS PRO SSD-12 Answers",
+    "description" : "SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 = sehr oft). MII-controlled for reliable ordinal() score calculation.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-ssd-12.html" : "MII QST PRO SSD-12"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
+    "version" : "2026.6.0",
+    "status" : "active",
+    "name" : "MII_VS_PRO_WHODAS_12_Answer_List",
+    "title" : "MII VS PRO WHODAS 2.0 12-Item Answer List",
+    "description" : "5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"],
+    "uses" : {
+    },
+    "Questionnaire-mii-qst-pro-whodas-whodas12.html" : "MII QST PRO WHODAS 2.0 12-Item"
+  }]
+}

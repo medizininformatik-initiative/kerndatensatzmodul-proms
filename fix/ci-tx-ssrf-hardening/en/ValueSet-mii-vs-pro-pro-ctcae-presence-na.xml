@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-pro-ctcae-presence-na"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-pro-ctcae-presence-na</b></p><a name="en-mii-vs-pro-pro-ctcae-presence-na"> </a><a name="en-hcmii-vs-pro-pro-ctcae-presence-na"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-mii-cs-pro-pro-ctcae.html"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2026.6.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-presence-1">proctcae-presence-1</a></td><td style="color: #cccccc">Yes</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-presence-0">proctcae-presence-0</a></td><td style="color: #cccccc">No</td></tr><tr><td><a href="CodeSystem-mii-cs-pro-pro-ctcae.html#mii-cs-pro-pro-ctcae-proctcae-optout-not-applicable">proctcae-optout-not-applicable</a></td><td style="color: #cccccc">Not applicable</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-na"/>
+  <version value="2026.6.0"/>
+  <name value="MII_VS_PRO_PRO_CTCAE_Presence_NA"/>
+  <title value="MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-09-02T06:36:46+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="3-option presence scale: Yes / No / Not applicable"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"/>
+      <concept>
+        <code value="proctcae-presence-1"/>
+      </concept>
+      <concept>
+        <code value="proctcae-presence-0"/>
+      </concept>
+      <concept>
+        <code value="proctcae-optout-not-applicable"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

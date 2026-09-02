@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="mii-cm-pro-phq-9-linkid-migration"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ConceptMap mii-cm-pro-phq-9-linkid-migration</b></p><a name="en-mii-cm-pro-phq-9-linkid-migration"> </a><a name="en-hcmii-cm-pro-phq-9-linkid-migration"> </a><p>Mapping from <a href="Questionnaire-mii-qst-pro-phq-9.html">MII QST PRO PHQ-9</a> to <a href="Questionnaire-mii-qst-pro-phq-9.html">MII QST PRO PHQ-9</a></p><br/><p>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>phq-phq9-q01</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2a</td></tr><tr><td>phq-phq9-q02</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2b</td></tr><tr><td>phq-phq9-q03</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2c</td></tr><tr><td>phq-phq9-q04</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2d</td></tr><tr><td>phq-phq9-q05</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2e</td></tr><tr><td>phq-phq9-q06</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2f</td></tr><tr><td>phq-phq9-q07</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2g</td></tr><tr><td>phq-phq9-q08</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2h</td></tr><tr><td>phq-phq9-q09</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq2i</td></tr><tr><td>phq-phq9-q10</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq9-difficulty</td></tr></table></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration"/>
+  <version value="2026.6.0"/>
+  <title value="MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-02T06:36:46+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
+  <targetCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
+  <group>
+    <element>
+      <code value="phq-phq9-q01"/>
+      <target>
+        <code value="phq-phq2a"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q02"/>
+      <target>
+        <code value="phq-phq2b"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q03"/>
+      <target>
+        <code value="phq-phq2c"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q04"/>
+      <target>
+        <code value="phq-phq2d"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q05"/>
+      <target>
+        <code value="phq-phq2e"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q06"/>
+      <target>
+        <code value="phq-phq2f"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q07"/>
+      <target>
+        <code value="phq-phq2g"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q08"/>
+      <target>
+        <code value="phq-phq2h"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q09"/>
+      <target>
+        <code value="phq-phq2i"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="phq-phq9-q10"/>
+      <target>
+        <code value="phq-phq9-difficulty"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>
