@@ -12,11 +12,13 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration"
 * status = #active
 * experimental = false
-// source/target entfernt (2026.7.0): ConceptMap.source[x] verlangt eine URI oder eine Canonical
-// auf ein ValueSet; eine Questionnaire-Canonical ist unzulaessig und wurde vom Validator
-// beanstandet. Der Geltungsbereich steht in der Description.
+// Geltungsbereich in group.source/group.target (Typ uri) statt in ConceptMap.source[x] (2026.7.0):
+// Letzteres verlangt eine URI oder eine Canonical auf ein VALUESET; die zuvor gesetzte
+// Questionnaire-Canonical war unzulaessig. group.source nimmt die URL korrekt auf und erfuellt
+// zugleich HAPIs Anforderung an Gruppen (HAPI-0838).
 
-* group[+]
+* group[+].source = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
+* group[=].target = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
 // 9 symptom items: phq-phq9-q0N → phq-phq2X
 * group[=].element[+].code = #phq-phq9-q01
 * group[=].element[=].target.code = #phq-phq2a

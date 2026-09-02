@@ -19,11 +19,14 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids"
 * status = #active
 * experimental = false
-// Kein source/target gesetzt: ConceptMap.source[x] verlangt laut FHIR R4 eine URI oder eine
-// Canonical auf ein ValueSet. Die hier abgebildeten "Codes" sind Questionnaire-linkIds, fuer
-// die es kein ValueSet gibt. Der Geltungsbereich steht in der Description.
+// Geltungsbereich steht in group.source/group.target (Typ uri) statt in ConceptMap.source[x]:
+// Letzteres verlangt laut FHIR R4 eine URI oder eine Canonical auf ein VALUESET, waehrend die
+// hier abgebildeten "Codes" Questionnaire-linkIds sind. group.source ist dagegen eine schlichte
+// uri und nimmt die Questionnaire-URL korrekt auf — zugleich noetig, weil HAPI Gruppen ohne
+// source beim Package-Install ablehnt (HAPI-0838).
 
-* group[+]
+* group[+].source = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7"
+* group[=].target = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7"
 * group[=].element[+].code = #gad7-q01
 * group[=].element[=].display = "GAD-7 Item 1 — Nervousness / anxiety"
 * group[=].element[=].target.code = #phq-phq5a
