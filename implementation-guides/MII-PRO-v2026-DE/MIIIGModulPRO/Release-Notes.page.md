@@ -5,6 +5,28 @@ topic: Release-Notes
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Version: 2026.7.0**
+
+Datum: 2026-09-02 (in Vorbereitung)
+
+Minor-Release — **GAD-7** als neues Instrument, eine geteilte PHQ-Vierpunktskala und eine ConceptMap zur Item-Nummerierung. Keine Breaking Changes an bestehenden Ressourcen.
+
+### Added: GAD-7 (Generalized Anxiety Disorder Scale-7)
+
+Sieben Items zum Screening auf eine generalisierte Angststörung, Summenwert 0–21, Schweregrade 5/10/15 (Spitzer et al. 2006). Englisch als Primärsprache mit validierter deutscher Übersetzung (PHQ-D; Löwe et al. 2008, n=5030). LOINC-Panel `69737-5`, Score `70274-6`. Frei verfügbar, keine Genehmigung erforderlich.
+
+**linkIds im PHQ-D-Block-Namespace** (`phq-phq5a`…`phq-phq5g`) statt einer instrumenteneigenen Nummerierung. Der Grund ist die Verzahnung innerhalb der PHQ-Familie: Die ersten beiden GAD-7-Items bilden den GAD-2 und gehen gemeinsam mit zwei PHQ-9-Items in den PHQ-4 ein. Dieselbe Frage soll instrumentenübergreifend denselben linkId tragen — andernfalls wäre später eine Migrations-ConceptMap nötig, wie sie für den PHQ-9 zu 2026.5.0 angelegt werden musste.
+
+**Nicht übernommen** wurde eine PROMIS-Anxiety-T-Score-Umrechnung, die in einem früheren Entwicklungsstand als FHIRPath-Ausdruck im Questionnaire vorlag. Score-Konversionen zwischen Instrumenten werden künftig als CQL-Library modelliert.
+
+### Added: geteilte PHQ-Vierpunktskala
+
+Das RuleSet `Phq4PointFrequencyAnswerOptions` bündelt die Häufigkeitsskala über zwei Wochen (0–3) mit den LOINC-Antwortcodes der Liste LL358-3 (`LA6568-5`…`LA6571-9`) und den deutschen Wortlauten des PHQ-D. GAD-7 nutzt sie; PHQ-9 und PHQ-4 können darauf umgestellt werden.
+
+### Added: ConceptMap zur GAD-7-Item-Nummerierung
+
+`mii-cm-pro-gad-7-linkids` bildet die übliche GAD-7-Nummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds ab. Es handelt sich ausdrücklich **nicht** um eine Migration einer veröffentlichten Fassung, sondern um eine Lesehilfe für die Übernahme von Daten aus Fremdsystemen.
+
 **Version: 2026.6.0**
 
 Datum: 2026-09-01 (in Vorbereitung)

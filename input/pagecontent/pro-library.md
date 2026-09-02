@@ -20,6 +20,7 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 | **SSD-12** | Vollständig | Somatische Belastungsstörung | 12 | DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | **ISR-Z** | Vollständig | Zwang (ICD-10-Symptom-Rating) | 3 | DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | **EURONET-SOMA** | Vollständig | Körperbeschwerden (Einzelitems) | 2 | EN/DE | ✓ | ✓ | - | ✓ | - | ✓ |
+| **GAD-7** | Vollständig | Angst | 7 | EN/DE | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 
 #### Metadata-Only Reference Questionnaires
 

@@ -87,3 +87,4 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 * #pc-ptsd-total "PC-PTSD Total Score (0-4)"
 * #ssd-12-total "SSD-12 Total Score (0-48)"
 * #isr-z-mean "ISR-Z Skalenwert (Mittelwert 0-4)"
+* #phq-gad7-total "GAD-7 Total Score (0-21)"

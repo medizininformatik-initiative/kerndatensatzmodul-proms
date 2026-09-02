@@ -3,7 +3,7 @@
   "id": "mii-ig-pro",
   "language": "de-DE",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version": "2026.6.0",
+  "version": "2026.7.0",
   "name": "MII_IG_PRO",
   "title": "MII IG PRO",
   "status": "active",
@@ -436,6 +436,21 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-gad-7-response"
+        },
+        "name": "GAD-7 Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-gad-7-score"
+        },
+        "name": "GAD-7 Score Observation Example",
+        "description": "GAD-7 Summenwert aus der Beispiel-QuestionnaireResponse: 7 von 21",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
           "reference": "QuestionnaireResponse/mii-exa-pro-isr-z-response"
         },
         "name": "ISR-Z Questionnaire Response Example",
@@ -448,6 +463,14 @@
         "name": "ISR-Z Score Observation Example",
         "description": "ISR-Z Skalenwert (Mittelwert) aus der Beispiel-QuestionnaireResponse: 2.0 von 4",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/mii-cm-pro-gad-7-linkids"
+        },
+        "name": "MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds",
+        "description": "Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds des PHQ-D-Block-Namespace (phq-phq5a…phq-phq5g) ab. Lesehilfe für die Übernahme von Daten aus Systemen, die die konventionelle Nummerierung verwenden — keine Migration einer veröffentlichten Fassung.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -811,6 +834,14 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-gad-7"
+        },
+        "name": "MII ObsDef PRO Score GAD-7",
+        "description": "GAD-7 Summenscore (0-21) — Screening auf generalisierte Angststörung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-isr-z"
         },
         "name": "MII ObsDef PRO Score ISR-Z",
@@ -1151,6 +1182,14 @@
         },
         "name": "MII QST PRO EURONET-SOMA",
         "description": "EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-gad-7"
+        },
+        "name": "MII QST PRO GAD-7",
+        "description": "Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte Angststoerung, mit deutscher Uebersetzung (PHQ-D)",
         "exampleBoolean": false
       },
       {
@@ -1893,6 +1932,11 @@
             {
               "nameUrl": "euronet-soma.html",
               "title": "EURONET-SOMA",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gad-7.html",
+              "title": "GAD-7",
               "generation": "markdown"
             },
             {
