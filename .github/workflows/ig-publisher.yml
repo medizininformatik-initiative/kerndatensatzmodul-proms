@@ -87,9 +87,15 @@ jobs:
           node expand-valuesets.js
 
       # Run the HL7 FHIR IG Publisher
+      #
+      # -fhir-settings gibt den lokalen nginx-mTLS-Proxy (http://127.0.0.1:8090)
+      # ausdruecklich frei. Ab IG-Publisher 2.3.1 verweigert eine SSRF-Haertung
+      # -tx-Ziele im privaten Netz ueber einfaches HTTP ("Refusing to fetch from
+      # non-https URL") und bricht den Build ab. Verfahren uebernommen aus dem
+      # Onkologie-Modul (basis idiom, kerndatensatz-basis @190a3a18).
       - name: Build IG
         run: |
-          docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ig.ini -tx http://127.0.0.1:8090/fhir || true"
+          docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ig.ini -tx http://127.0.0.1:8090/fhir -fhir-settings /workspace/.github/fhir-settings.json || true"
           if [ -d "output" ] && [ "$(ls -A output)" ]; then
             echo "IG build produced output (Jekyll may have failed but core content exists)"
             exit 0
