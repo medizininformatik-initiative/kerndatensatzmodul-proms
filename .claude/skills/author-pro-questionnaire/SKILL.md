@@ -115,3 +115,42 @@ When an instrument uses only a subset of a larger one (e.g. a 2-item PROMIS Glob
 - Review the form with the **`render-questionnaire`** skill (dependency-free HTML, shows options + weights + DE).
 - Optional deep validation: HL7 `validator_cli.jar` (QR vs questionnaire/profile) — needs snapshots.
 - Commit only the instrument's FSH + its generated JSON; never commit SUSHI snapshot churn (3.19 vs 3.20).
+
+---
+
+## 11. Completeness-Checkliste — wann ist ein Instrument fertig?
+
+Ein Instrument ist **nicht** fertig, wenn die FSH-Dateien kompilieren. Diese Liste entstand aus
+einer Umsetzung von sechs Instrumenten, bei der genau die Punkte 5–8 systematisch fehlten.
+
+### A. Ressourcen (`input/fsh/definitions/<instrument>/`)
+1. **Questionnaire** — `mii-qst-pro-<instrument>.fsh`
+2. **Antwortskala** — eigenes CS+VS (Fall B) *oder* geteiltes RuleSet (Fall A) *oder* numerisch (Fall C), siehe §4
+3. **Score-ObservationDefinition** — `mii-obsdef-pro-score-<instrument>.fsh` (entfällt nur, wenn das Instrument keinen Score hat)
+4. **Beispiel-QuestionnaireResponse** — `mii-exa-pro-<instrument>-response.fsh`, mit leicht nachrechenbarem Score
+5. **Beispiel-Score-Observation** — `mii-exa-pro-<instrument>-score.fsh`, `InstanceOf: mii-pr-pro-score-instance`,
+   mit `derivedFrom` auf die Beispiel-QuestionnaireResponse. **Wird am häufigsten vergessen.**
+
+### B. Registrierung (geteilte Dateien — bei Parallelarbeit VORAB zentral eintragen)
+6. **Katalogcodes** — `mii-cs-pro-questionnaire-catalogue.fsh` und `mii-cs-pro-score-catalogue.fsh`
+7. **Aliase** — `input/fsh/aliases.fsh`
+
+### C. Dokumentation (die eigentliche Lücke)
+8. **IG-Instrumentenseite** — `input/pagecontent/<instrument>.md` nach dem Muster von `phq-15.md`:
+   klinischer Kontext, Scoring und Interpretation, FHIR-Implementierung (Canonical, Capabilities,
+   Besonderheiten), Score-Repräsentation, Lizenz, Quellen
+9. **Menü und Seitenliste** — `sushi-config.yaml`, Abschnitte `pages:` **und** `menu:` unter *PRO Library*
+10. **Katalogtabelle** — Zeile in `input/pagecontent/pro-library.md` mit Capabilities-Spalten
+11. **Release Notes** — Eintrag in `input/pagecontent/changes.md`
+
+### D. Verifikation
+12. `sushi . --snapshot` → 0 Errors
+13. **Abgleich gegen die Quelle** — Item-Texte zeichengenau gegen das Item Level Dictionary bzw. die
+    Publikation; nicht nur „sieht plausibel aus"
+14. **Score nachrechnen** — den Beispielwert aus den `ordinalValue`-Gewichten unabhängig nachrechnen
+15. **Validator** — QuestionnaireResponse gegen Questionnaire und Profil, 0 Errors
+16. **Optische Kontrolle** — `render-questionnaire`-Skill
+
+> **Faustregel für Agenten:** Punkte 1–5 gehören in den eigenen Instrumentenordner. Punkte 6–7 und 9–11
+> fassen geteilte Dateien an — bei Parallelarbeit vom Orchestrator vorab eintragen lassen, sonst
+> überschreiben sich mehrere Agenten gegenseitig.

@@ -443,6 +443,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-pro-isr-z-score"
+        },
+        "name": "ISR-Z Score Observation Example",
+        "description": "ISR-Z Skalenwert (Mittelwert) aus der Beispiel-QuestionnaireResponse: 2.0 von 4",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
           "reference": "ConceptMap/mii-cm-pro-phq-9-linkid-migration"
         },
         "name": "MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)",
@@ -1562,6 +1570,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-pro-pc-ptsd-score"
+        },
+        "name": "PC-PTSD Score Observation Example",
+        "description": "PC-PTSD Total Score aus der Beispiel-QuestionnaireResponse (3 von 4)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
           "reference": "QuestionnaireResponse/mii-exa-pro-phq-15-response"
         },
         "name": "PHQ-15 Questionnaire Response Example",
@@ -1636,10 +1652,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-pro-scoff-score"
+        },
+        "name": "SCOFF Score Observation Example",
+        "description": "SCOFF Total Score aus der Beispiel-QuestionnaireResponse (3 von 5)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
           "reference": "QuestionnaireResponse/mii-exa-pro-ssd-12-response"
         },
         "name": "SSD-12 Questionnaire Response Example",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-ssd-12-score"
+        },
+        "name": "SSD-12 Score Observation Example",
+        "description": "SSD-12 Total Score aus der Beispiel-QuestionnaireResponse (24 von 48)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       },
       {
         "reference": {
@@ -1663,6 +1695,14 @@
         },
         "name": "WI-7 Questionnaire Response Example",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-wi-7-score"
+        },
+        "name": "WI-7 Score Observation Example",
+        "description": "Whiteley-7 Total Score aus der Beispiel-QuestionnaireResponse (3 von 7)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       }
     ],
     "page": {
