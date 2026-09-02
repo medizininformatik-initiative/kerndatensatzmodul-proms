@@ -9,7 +9,7 @@ name: MII_IG_PRO
 title: "MII IG PRO"
 description: "Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken"
 status: active # draft | active | retired | unknown
-version: 2026.6.0
+version: 2026.7.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 packageId: de.medizininformatikinitiative.kerndatensatz.pros
 copyrightYear: 2025+
@@ -160,6 +160,8 @@ pages:
       title: ISR-Z
     euronet-soma.md:
       title: EURONET-SOMA
+    gad-7.md:
+      title: GAD-7
     minimal-reference-questionnaires.md:
       title: Minimal Reference Questionnaires
   domain-based-scoring.md:
@@ -210,6 +212,7 @@ menu:
     SSD-12: ssd-12.html
     ISR-Z: isr-z.html
     EURONET-SOMA: euronet-soma.html
+    GAD-7: gad-7.html
   Domain-Based Scoring:
     Domain-Based Scoring: domain-based-scoring.html
     Domains: domains.html

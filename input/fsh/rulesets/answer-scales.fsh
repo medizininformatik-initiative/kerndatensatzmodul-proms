@@ -35,3 +35,43 @@ RuleSet: YesNoAnswerOptions
 * answerOption[+].valueCoding = $SCT#373066001 "Yes"
 * answerOption[=].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * answerOption[=].valueCoding.extension[=].valueDecimal = 1
+
+// PHQ-D-Vierpunktskala für Häufigkeit über zwei Wochen (0-3), LOINC-Antwortliste LL358-3.
+// Geteilt von PHQ-9, GAD-7 und PHQ-4 — identischer Wortlaut, identische Gewichte.
+// Fall A: etablierte Standard-Terminologie vorhanden (LOINC LA-Codes), Gewichte inline,
+// da an LOINC-Konzepte keine ordinalValue-Property angehängt werden kann.
+// Deutsche Wortlaute aus dem PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002).
+// Anwendung: * item[x] insert Phq4PointFrequencyAnswerOptions
+RuleSet: Phq4PointFrequencyAnswerOptions
+* answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
+* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Überhaupt nicht"
+* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* answerOption[=].extension.valueDecimal = 0
+* answerOption[+].valueCoding = $LNC#LA6569-3 "Several days"
+* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "An einzelnen Tagen"
+* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* answerOption[=].extension.valueDecimal = 1
+* answerOption[+].valueCoding = $LNC#LA6570-1 "More than half the days"
+* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "An mehr als der Hälfte der Tage"
+* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* answerOption[=].extension.valueDecimal = 2
+* answerOption[+].valueCoding = $LNC#LA6571-9 "Nearly every day"
+* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Beinahe jeden Tag"
+* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* answerOption[=].extension.valueDecimal = 3

@@ -12,8 +12,9 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration"
 * status = #active
 * experimental = false
-* sourceCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
-* targetCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
+// source/target entfernt (2026.7.0): ConceptMap.source[x] verlangt eine URI oder eine Canonical
+// auf ein ValueSet; eine Questionnaire-Canonical ist unzulaessig und wurde vom Validator
+// beanstandet. Der Geltungsbereich steht in der Description.
 
 * group[+]
 // 9 symptom items: phq-phq9-q0N → phq-phq2X

@@ -191,8 +191,12 @@
     {
       "code": "isr-z-mean",
       "display": "ISR-Z Skalenwert (Mittelwert 0-4)"
+    },
+    {
+      "code": "phq-gad7-total",
+      "display": "GAD-7 Total Score (0-21)"
     }
   ],
-  "version": "2026.6.0",
-  "count": 46
+  "version": "2026.7.0",
+  "count": 47
 }
