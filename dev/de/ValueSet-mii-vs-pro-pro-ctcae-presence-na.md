@@ -33,7 +33,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:47:03+00:00",
+  "date" : "2026-09-02T07:20:32+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

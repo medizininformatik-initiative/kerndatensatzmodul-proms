@@ -34,7 +34,7 @@ PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a 
   "title" : "MII VS PRO PROMIS Intensity Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:47:03+00:00",
+  "date" : "2026-09-02T07:20:32+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-observ
   "title" : "MII PR PRO Observation EQ-5D-5L VAS",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-02T06:47:03+00:00",
+  "date" : "2026-09-02T07:20:32+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
