@@ -136,21 +136,27 @@ einer Umsetzung von sechs Instrumenten, bei der genau die Punkte 5–8 systemati
 7. **Aliase** — `input/fsh/aliases.fsh`
 
 ### C. Dokumentation (die eigentliche Lücke)
-8. **IG-Instrumentenseite** — `input/pagecontent/<instrument>.md` nach dem Muster von `phq-15.md`:
-   klinischer Kontext, Scoring und Interpretation, FHIR-Implementierung (Canonical, Capabilities,
-   Besonderheiten), Score-Repräsentation, Lizenz, Quellen
+8. **IG-Instrumentenseite (IG-Publisher)** — `input/pagecontent/<instrument>.md` nach dem Muster von
+   `phq-15.md`: klinischer Kontext, Scoring und Interpretation, FHIR-Implementierung (Canonical,
+   Capabilities, Besonderheiten), Score-Repräsentation, Lizenz, Quellen
 9. **Menü und Seitenliste** — `sushi-config.yaml`, Abschnitte `pages:` **und** `menu:` unter *PRO Library*
 10. **Katalogtabelle** — Zeile in `input/pagecontent/pro-library.md` mit Capabilities-Spalten
-11. **Release Notes** — Eintrag in `input/pagecontent/changes.md`
+11. **Simplifier-Seite** — ⚠️ **eigene, parallele Struktur:**
+    `implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/<Instrument>/` mit
+    `Index.page.md` (Frontmatter `topic:`, Überschrift `## {{page-title}}`) und `toc.yaml`, plus
+    Eintrag in `PRO-Bibliothek/toc.yaml`. Die IG-Publisher-Seiten aus Punkt 8 erscheinen im
+    veröffentlichten Simplifier-Guide **nicht** — beide Wege müssen bedient werden.
+12. **Release Notes** — in `input/pagecontent/changes.md` **und** in
+    `implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Release-Notes.page.md`
 
 ### D. Verifikation
-12. `sushi . --snapshot` → 0 Errors
-13. **Abgleich gegen die Quelle** — Item-Texte zeichengenau gegen das Item Level Dictionary bzw. die
+13. `sushi . --snapshot` → 0 Errors
+14. **Abgleich gegen die Quelle** — Item-Texte zeichengenau gegen das Item Level Dictionary bzw. die
     Publikation; nicht nur „sieht plausibel aus"
-14. **Score nachrechnen** — den Beispielwert aus den `ordinalValue`-Gewichten unabhängig nachrechnen
-15. **Validator** — QuestionnaireResponse gegen Questionnaire und Profil, 0 Errors
-16. **Optische Kontrolle** — `render-questionnaire`-Skill
+15. **Score nachrechnen** — den Beispielwert aus den `ordinalValue`-Gewichten unabhängig nachrechnen
+16. **Validator** — QuestionnaireResponse gegen Questionnaire und Profil, 0 Errors
+17. **Optische Kontrolle** — `render-questionnaire`-Skill
 
-> **Faustregel für Agenten:** Punkte 1–5 gehören in den eigenen Instrumentenordner. Punkte 6–7 und 9–11
+> **Faustregel für Agenten:** Punkte 1–5 gehören in den eigenen Instrumentenordner. Punkte 6–7 und 9–12
 > fassen geteilte Dateien an — bei Parallelarbeit vom Orchestrator vorab eintragen lassen, sonst
 > überschreiben sich mehrere Agenten gegenseitig.
