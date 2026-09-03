@@ -120,3 +120,26 @@ Detailed information on individual questionnaires can be found on the respective
 - [EORTC QLQ-C30](eortc-qlq-c30.html)
 - [DASS-21](dass-21.html)
 - [Minimal Reference Questionnaires](minimal-reference-questionnaires.html)
+
+### All Instruments in this Module
+
+| Instrument | Page | Focus |
+|---|---|---|
+| PHQ-9 | [phq-9](phq-9.html) | Depression screening |
+| PHQ-15 | [phq-15](phq-15.html) | Somatic symptom burden |
+| GAD-7 | [gad-7](gad-7.html) | Generalized anxiety |
+| BDI-II | [bdi-ii](bdi-ii.html) | Depression (licensed) |
+| DASS-21 | [dass-21](dass-21.html) | Depression, anxiety, stress |
+| EQ-5D-5L | [eq-5d-5l](eq-5d-5l.html) · [scores](eq-5d-5l-scores.html) | Health-related quality of life |
+| PROMIS | [overview](promis.html) · [PROMIS-29](promis-29.html) · [PROMIS-16](promis-16.html) · [Depression SF 4a](promis-depression.html) | Multi-domain HRQoL |
+| EORTC QLQ-C30 | [eortc-qlq-c30](eortc-qlq-c30.html) · [scoring](eortc-qlq-c30-scoring.html) | Oncological quality of life |
+| PRO-CTCAE | [pro-ctcae](pro-ctcae.html) · [oncology base screening](proms-onkologisches-basisscreening.html) | Symptomatic adverse events |
+| MIDOS2 | [midos2](midos2.html) | Palliative symptom screening |
+| WHODAS 2.0 | [whodas](whodas.html) | Functioning and disability |
+| SCOFF | [scoff](scoff.html) | Eating disorder screening |
+| Whiteley-7 | [wi-7](wi-7.html) | Health anxiety |
+| PC-PTSD | [pc-ptsd](pc-ptsd.html) | PTSD screening |
+| SSD-12 | [ssd-12](ssd-12.html) | Somatic symptom disorder, B criteria |
+| ISR-Z | [isr-z](isr-z.html) | Obsessive-compulsive subscale |
+| EURONET-SOMA | [euronet-soma](euronet-soma.html) | Somatic core items |
+| Metadata-only references | [minimal-reference-questionnaires](minimal-reference-questionnaires.html) | HADS, EPDS, CES-D, K6 |

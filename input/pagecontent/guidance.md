@@ -32,3 +32,11 @@ This section collects the domain guidance for implementing and using the
 For the KDS-wide conformance requirements see the
 [Conformance rules of the Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
 for the technical artifacts see [Profiles](profiles.html).
+
+### Module Documentation
+
+- [Use Cases](use-cases.html) · [Module Description](module-description.html) · [Context within the MII](project-context.html)
+- [Datasets and Descriptions](datasets-and-descriptions.html) · [Technical Implementation](technical-implementation.html) · [Workflows](workflows.html)
+- [ID Systematics](id-systematics.html) · [Terminology Strategies](terminology-strategies.html) · [Questionnaire Capabilities](questionnaire-capabilities.html)
+- [Scoring](scoring.html) · [Domain-based Scoring](domain-based-scoring.html) · [Domains](domains.html) · [Cross-Instrument Mappings](cross-instrument-mappings.html) · [Derived Metrics](derived-metrics.html)
+- [Validation](validation.html) · [References](references.html)

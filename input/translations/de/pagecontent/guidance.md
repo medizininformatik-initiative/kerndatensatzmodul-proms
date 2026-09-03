@@ -30,3 +30,11 @@ Moduls **PRO**.
 Für die KDS-weiten Konformitätsanforderungen siehe die
 [Konformitätsregeln des Meta-Moduls](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
 für die technischen Artefakte siehe [Profile](profiles.html).
+
+### Modul-Dokumentation
+
+- [Anwendungsfälle](use-cases.html) · [Modulbeschreibung](module-description.html) · [Kontext im Gesamtprojekt](project-context.html)
+- [Datensätze und Beschreibungen](datasets-and-descriptions.html) · [Technische Implementierung](technical-implementation.html) · [Workflows](workflows.html)
+- [ID-Systematik](id-systematics.html) · [Terminologie-Strategien](terminology-strategies.html) · [Questionnaire Capabilities](questionnaire-capabilities.html)
+- [Scoring](scoring.html) · [Domänenbasiertes Scoring](domain-based-scoring.html) · [Domänen](domains.html) · [Cross-Instrument-Mappings](cross-instrument-mappings.html) · [Abgeleitete Metriken](derived-metrics.html)
+- [Validierung](validation.html) · [Referenzen](references.html)
