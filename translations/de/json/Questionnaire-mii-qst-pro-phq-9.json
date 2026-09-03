@@ -1,0 +1,337 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-phq-9",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "MII QST PRO PHQ-9",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "Patient Health Questionnaire (PHQ-9)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.copyright",
+      "context" : "Questionnaire.copyright",
+      "source" : "Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar.",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PHQ-9 quick depression assessment panel [Reported.PHQ]",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PHQ-9 Questionnaire",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Over the last two weeks, how often have you been bothered by any of the following problems?",
+      "target" : "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2a').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "1",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Little interest or pleasure in doing things",
+      "target" : "Wenig Interesse oder Freude an Ihren Tätigkeiten"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Not at all",
+      "target" : "Überhaupt nicht"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Several days",
+      "target" : "An einzelnen Tagen"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "More than half the days",
+      "target" : "An mehr als der Hälfte der Tage"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Nearly every day",
+      "target" : "Beinahe jeden Tag"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2b').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "2",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Feeling down, depressed, or hopeless",
+      "target" : "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2c').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "3",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Trouble falling or staying asleep, or sleeping too much",
+      "target" : "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2d').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "4",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Feeling tired or having little energy",
+      "target" : "Müdigkeit oder Gefühl, keine Energie zu haben"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2e').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "5",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Poor appetite or overeating",
+      "target" : "Verminderter Appetit oder übermäßiges Bedürfnis zu essen"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2f').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "6",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+      "target" : "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2g').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "7",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "target" : "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2h').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "8",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+      "target" : "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil 'zappelig' oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2i').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "9",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Thoughts that you would be better off dead or of hurting yourself in some way",
+      "target" : "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%phq9Score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "Auswertung",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "PHQ-9 Total Score",
+      "target" : "PHQ-9 Gesamtwert"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-difficulty').answer.value, {})",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "10",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+      "target" : "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Not difficult at all",
+      "target" : "Überhaupt nicht erschwert"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Somewhat difficult",
+      "target" : "Etwas erschwert"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Very difficult",
+      "target" : "Relativ stark erschwert"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Extremely difficult",
+      "target" : "Sehr stark erschwert"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%phq9Score = 0, 37.4, iif(%phq9Score = 1, 42.7, iif(%phq9Score = 2, 45.9, iif(%phq9Score = 3, 48.3, iif(%phq9Score = 4, 50.5, iif(%phq9Score = 5, 52.5, iif(%phq9Score = 6, 54.2, iif(%phq9Score = 7, 55.8, iif(%phq9Score = 8, 57.2, iif(%phq9Score = 9, 58.6, iif(%phq9Score = 10, 59.9, iif(%phq9Score = 11, 61.1, iif(%phq9Score = 12, 62.3, iif(%phq9Score = 13, 63.5, iif(%phq9Score = 14, 64.7, iif(%phq9Score = 15, 65.8, iif(%phq9Score = 16, 66.9, iif(%phq9Score = 17, 68.0, iif(%phq9Score = 18, 69.2, iif(%phq9Score = 19, 70.3, iif(%phq9Score = 20, 71.5, iif(%phq9Score = 21, 72.7, iif(%phq9Score = 22, 74.0, iif(%phq9Score = 23, 75.3, iif(%phq9Score = 24, 76.7, iif(%phq9Score = 25, 78.3, iif(%phq9Score = 26, 80.0, iif(%phq9Score = 27, 82.3, 82.3))))))))))))))))))))))))))))",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS emotional distress - depression - version 1.0 Tscore",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "T-Score",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "PROMIS Depression T-Score (derived from PHQ-9)",
+      "target" : "PROMIS Depression T-Score (abgeleitet von PHQ-9)"
+    }]
+  }]
+}

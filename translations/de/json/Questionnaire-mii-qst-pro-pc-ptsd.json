@@ -1,0 +1,139 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-pc-ptsd",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "MII QST PRO PC-PTSD",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for posttraumatic stress disorder (Prins et al. 2003; German: Schäfer & Schulze 2010)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.copyright",
+      "context" : "Questionnaire.copyright",
+      "source" : "PC-PTSD © Prins A, et al. 2003; deutsche Fassung Schäfer I, Schulze C, 2010. Freely available — Lizenz-Status: frei verfügbar (Tier A).",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PC-PTSD (Primary Care PTSD Screen)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Haben Sie jemals in Ihrem Leben etwas so Beängstigendes, Schreckliches oder Erschütterndes erlebt, dass Sie in den letzten 4 Wochen …",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "1",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "… Albträume davon hatten oder daran dachten, obwohl Sie es nicht wollten?",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "No",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Yes",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "2",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "… sich stark bemüht haben, nicht daran zu denken oder Situationen zu vermeiden, die Sie daran erinnern?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "3",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "...ständig auf der Hut, wachsam oder schreckhaft waren?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "4",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "...sich abgestumpft und teilnahmslos gegenüber anderen, bei ihren Aktivitäten oder in Ihrem Umfeld fühlten?",
+      "target" : null
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%pcPtsdSum",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PC-PTSD Total Score (0-4)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "Score",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "PC-PTSD Summenwert (0-4)",
+      "target" : null
+    }]
+  }]
+}

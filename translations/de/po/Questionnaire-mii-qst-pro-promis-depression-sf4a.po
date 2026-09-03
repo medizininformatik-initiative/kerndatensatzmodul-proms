@@ -1,0 +1,146 @@
+
+# Expression.expression
+#: Expression.expression
+msgid "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+msgstr ""
+
+# Questionnaire.title
+#: Questionnaire.title
+msgid "MII QST PRO PROMIS Depression SF 4a (Adults)"
+msgstr ""
+
+# Questionnaire.publisher
+#: Questionnaire.publisher
+msgid "NUM-DIZ"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# Questionnaire.description
+#: Questionnaire.description
+msgid "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "PROMIS Depression Scoring Manual"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS short form - emotional distress - depression 4a - version 1.0"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS Depression 4a Short Form Questionnaire"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "In the past 7 days..."
+msgstr "In den vergangenen 7 Tagen..."
+
+# Coding.display
+#: Coding.display
+msgid "I felt worthless in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I felt worthless"
+msgstr "...fühlte ich mich wertlos"
+
+# Coding.display
+#: Coding.display
+msgid "Never"
+msgstr "Nie"
+
+# Coding.display
+#: Coding.display
+msgid "Rarely"
+msgstr "Selten"
+
+# Coding.display
+#: Coding.display
+msgid "Sometimes"
+msgstr "Manchmal"
+
+# Coding.display
+#: Coding.display
+msgid "Often"
+msgstr "Oft"
+
+# Coding.display
+#: Coding.display
+msgid "Always"
+msgstr "Immer"
+
+# Coding.display
+#: Coding.display
+msgid "I felt helpless in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I felt helpless"
+msgstr "...fühlte ich mich hilflos"
+
+# Coding.display
+#: Coding.display
+msgid "I felt depressed in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I felt depressed"
+msgstr "...fühlte ich mich deprimiert"
+
+# Coding.display
+#: Coding.display
+msgid "I felt hopeless in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I felt hopeless"
+msgstr "...fühlte ich mich hoffnungslos"
+
+# Coding.display
+#: Coding.display
+msgid "{score}"
+msgstr ""
+
+# Expression.expression
+#: Expression.expression
+msgid "%rawScore"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "PROMIS Depression Raw Score"
+msgstr ""
+
+# Expression.expression
+#: Expression.expression
+msgid "iif(%rawScore=4, 41.0, iif(%rawScore=5, 49.0, iif(%rawScore=6, 51.8, iif(%rawScore=7, 53.9, iif(%rawScore=8, 55.7, iif(%rawScore=9, 57.3, iif(%rawScore=10, 58.9, iif(%rawScore=11, 60.5, iif(%rawScore=12, 62.2, iif(%rawScore=13, 63.9, iif(%rawScore=14, 65.7, iif(%rawScore=15, 67.5, iif(%rawScore=16, 69.4, iif(%rawScore=17, 71.2, iif(%rawScore=18, 73.3, iif(%rawScore=19, 75.7, iif(%rawScore=20, 79.4, {})))))))))))))))))"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS emotional distress - depression - version 1.0 Tscore"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "PROMIS Depression T-Score"
+msgstr ""
+

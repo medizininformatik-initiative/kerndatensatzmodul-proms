@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ValueSet-mii-vs-pro-pro-ctcae-frequency" original="Resource ValueSet-mii-vs-pro-pro-ctcae-frequency" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-frequency" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>MII_VS_PRO_PRO_CTCAE_Frequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-frequency" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>MII VS PRO PRO-CTCAE Frequency Scale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-frequency" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-frequency" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-frequency" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>5-point frequency response scale for PRO-CTCAE items (0=Never, 4=Almost constantly)</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

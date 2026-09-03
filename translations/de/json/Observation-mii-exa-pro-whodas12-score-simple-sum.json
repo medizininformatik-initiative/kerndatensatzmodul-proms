@@ -1,0 +1,31 @@
+{
+  "id" : "Observation-mii-exa-pro-whodas12-score-simple-sum",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Survey",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "WHODAS (World Health Organization Disability Assessment Schedule) 2.0 score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "WHODAS 2.0 12-Item Simple Sum Score (0-48)",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "{score}",
+      "target" : null
+    }]
+  }]
+}

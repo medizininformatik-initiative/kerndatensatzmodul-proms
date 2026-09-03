@@ -1,0 +1,164 @@
+
+# Expression.expression
+#: Expression.expression
+msgid "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()"
+msgstr ""
+
+# Questionnaire.title
+#: Questionnaire.title
+msgid "MII QST PRO PROMIS Cognitive Function SF 4a"
+msgstr ""
+
+# Questionnaire.publisher
+#: Questionnaire.publisher
+msgid "NUM-DIZ"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# Questionnaire.description
+#: Questionnaire.description
+msgid "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "PROMIS (Patient-Reported Outcomes Measurement Information System)"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII"
+msgstr ""
+
+# Questionnaire.copyright
+#: Questionnaire.copyright
+msgid "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.
+
+The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.
+
+The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).
+
+Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen
+
+LOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS short form - cognitive function - abilities subset 4a - version 2.0"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "PROMIS Kognitive Funktion SF 4a"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "In the past 7 days"
+msgstr "In den letzten 7 Tagen:"
+
+# Coding.display
+#: Coding.display
+msgid "My thinking has been slow in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "My thinking has been slow"
+msgstr "Ich war langsam beim Denken"
+
+# Coding.display
+#: Coding.display
+msgid "Not at all"
+msgstr "Nie"
+
+# Coding.display
+#: Coding.display
+msgid "Rarely"
+msgstr "Selten (einmal)"
+
+# Coding.display
+#: Coding.display
+msgid "Sometimes"
+msgstr "Manchmal (zwei- oder dreimal)"
+
+# Coding.display
+#: Coding.display
+msgid "Often"
+msgstr "Oft (ungefähr einmal täglich)"
+
+# Coding.display
+#: Coding.display
+msgid "Always"
+msgstr "Sehr oft (mehrmals täglich)"
+
+# Coding.display
+#: Coding.display
+msgid "It has seemed like my brain was not working as well as usual in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "It has seemed like my brain was not working as well as usual"
+msgstr "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
+
+# Coding.display
+#: Coding.display
+msgid "I have had to work harder than usual to keep track of what I was doing in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I have had to work harder than usual to keep track of what I was doing"
+msgstr "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
+
+# Coding.display
+#: Coding.display
+msgid "I have had trouble shifting back and forth between different activities that require thinking in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I have had trouble shifting back and forth between different activities that require thinking"
+msgstr "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
+
+# Expression.expression
+#: Expression.expression
+msgid "%cognitiveRawScore"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS short form - cognitive function 4a - version 2.0 raw score"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "PROMIS Cognitive Function SF 4a Raw Score"
+msgstr "PROMIS Kognitive Funktion SF 4a Rohwert"
+
+# Expression.expression
+#: Expression.expression
+msgid "iif(%cognitiveRawScore=4, 24.99, iif(%cognitiveRawScore=5, 28.95, iif(%cognitiveRawScore=6, 31.07, iif(%cognitiveRawScore=7, 32.94, iif(%cognitiveRawScore=8, 34.61, iif(%cognitiveRawScore=9, 36.17, iif(%cognitiveRawScore=10, 37.69, iif(%cognitiveRawScore=11, 39.19, iif(%cognitiveRawScore=12, 40.70, iif(%cognitiveRawScore=13, 42.25, iif(%cognitiveRawScore=14, 43.86, iif(%cognitiveRawScore=15, 45.54, iif(%cognitiveRawScore=16, 47.33, iif(%cognitiveRawScore=17, 49.28, iif(%cognitiveRawScore=18, 51.62, iif(%cognitiveRawScore=19, 54.58, iif(%cognitiveRawScore=20, 61.13, 50.0)))))))))))))))))"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS cognitive function - version 2.0 T-score"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "PROMIS Cognitive Function SF 4a T-Score"
+msgstr "PROMIS Kognitive Funktion SF 4a T-Score"
+

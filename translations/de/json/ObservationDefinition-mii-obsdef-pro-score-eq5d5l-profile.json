@@ -1,0 +1,19 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQol EQ-5D-5L Profile",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQoL five dimension five level questionnaire",
+      "target" : null
+    }]
+  }]
+}

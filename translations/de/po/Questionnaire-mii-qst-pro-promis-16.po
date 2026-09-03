@@ -1,0 +1,229 @@
+
+# Questionnaire.title
+#: Questionnaire.title
+msgid "MII QST PRO PROMIS-16 (Adults)"
+msgstr ""
+
+# Questionnaire.publisher
+#: Questionnaire.publisher
+msgid "NUM-DIZ"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# Questionnaire.description
+#: Questionnaire.description
+msgid "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027)."
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "PROMIS (Patient-Reported Outcomes Measurement Information System)"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res)"
+msgstr ""
+
+# Questionnaire.copyright
+#: Questionnaire.copyright
+msgid "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.
+
+The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.
+
+The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).
+
+Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen
+
+LOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Physical Function"
+msgstr "Körperliche Funktion"
+
+# Coding.display
+#: Coding.display
+msgid "Are you able to go up and down stairs at a normal pace [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Are you able to go up and down stairs at a normal pace?"
+msgstr "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
+
+# Coding.display
+#: Coding.display
+msgid "Are you able to go for a walk of at least 15 minutes [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Are you able to go for a walk of at least 15 minutes?"
+msgstr "Können Sie mindestens 15 Minuten lang spazieren gehen?"
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Emotional Distress — Anxiety"
+msgstr "Emotionale Belastung — Angst"
+
+# Coding.display
+#: Coding.display
+msgid "I found it hard to focus on anything other than my anxiety in past 7 days"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I found it hard to focus on anything other than my anxiety."
+msgstr "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+
+# Coding.display
+#: Coding.display
+msgid "My worries overwhelmed me in past 7 days"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "My worries overwhelmed me."
+msgstr "Meine Sorgen haben mich überwältigt."
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Emotional Distress — Depression"
+msgstr "Emotionale Belastung — Depressivität"
+
+# Coding.display
+#: Coding.display
+msgid "I felt depressed in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I felt depressed."
+msgstr "Ich fühlte mich niedergeschlagen."
+
+# Coding.display
+#: Coding.display
+msgid "I felt hopeless in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I felt hopeless."
+msgstr "Ich fühlte mich hoffnungslos."
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Fatigue"
+msgstr "Erschöpfung"
+
+# Coding.display
+#: Coding.display
+msgid "I feel fatigued during the past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I feel fatigued."
+msgstr "Ich bin erschöpft."
+
+# Coding.display
+#: Coding.display
+msgid "I had trouble starting things because I was tired in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I had trouble starting things because I was tired."
+msgstr "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Sleep-related Impairment / Sleep Disturbance"
+msgstr "Schlafbezogene Beeinträchtigungen / Schlafbeeinträchtigung"
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I had problems during the day because of poor sleep."
+msgstr "Ich hatte tagsüber Probleme, weil ich schlecht geschlafen habe."
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I had trouble sleeping."
+msgstr "Es fiel mir schwer zu schlafen."
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Ability to Participate in Social Roles and Activities"
+msgstr "Teilhabe an sozialen Rollen und Aktivitäten"
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I have trouble taking care of my regular personal responsibilities."
+msgstr "Es fällt mir schwer, mich um meine regelmäßigen persönlichen Verpflichtungen zu kümmern."
+
+# Coding.display
+#: Coding.display
+msgid "I have trouble doing all of the activities with friends that I want to do [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I have trouble doing all of the activities with friends that I want to do."
+msgstr "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Pain Interference"
+msgstr "Beeinträchtigung durch Schmerzen"
+
+# Coding.display
+#: Coding.display
+msgid "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "How much did pain interfere with your day-to-day activities?"
+msgstr "Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?"
+
+# Coding.display
+#: Coding.display
+msgid "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "How much did pain interfere with your ability to participate in social activities?"
+msgstr "Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Cognitive Function — Abilities"
+msgstr "Kognitive Funktionen — Fähigkeiten"
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I have been able to remember to do things, like take medicine or buy something I needed."
+msgstr "Ich bin fähig gewesen, mich an Dinge zu erinnern, die ich tun musste, wie z.B. Medikamente einnehmen oder etwas kaufen, das ich benötigte."
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "I have been able to think clearly without extra effort."
+msgstr "Ich bin fähig gewesen, klar zu denken, ohne mich extra anzustrengen."
+

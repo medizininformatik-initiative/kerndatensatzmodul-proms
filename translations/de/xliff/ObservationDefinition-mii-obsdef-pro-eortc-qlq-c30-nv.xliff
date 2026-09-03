@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv" original="Resource ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>EORTC QLQ-C30 Nausea and Vomiting Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>{score}</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

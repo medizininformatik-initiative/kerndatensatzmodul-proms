@@ -1,0 +1,403 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-pro-ctcae-breast-de",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Questionnaire.name",
+      "context" : "Questionnaire.name",
+      "source" : "MII_QST_PRO_PRO_CTCAE_Breast_DE",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score).",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PRO-CTCAE German Breast Cancer Subset",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Müdigkeit, Erschöpfung oder fehlende Energie",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK waren Ihre MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben MÜDIGKEIT, ERSCHÖPFUNG ODER FEHLENDE ENERGIE Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Taubheit oder Kribbeln in Händen oder Füßen",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr hatten Sie TAUBHEIT ODER KRIBBELN IN HÄNDEN ODER FÜSSEN in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Übelkeit",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie HÄUFIG hatten Sie ÜBELKEIT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK war Ihre ÜBELKEIT im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Muskelschmerzen",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie HÄUFIG hatten Sie MUSKELSCHMERZEN?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK hatten Sie MUSKELSCHMERZEN im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben MUSKELSCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Probleme beim Schlafen",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK waren Ihre PROBLEME BEIM SCHLAFEN im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben PROBLEME BEIM SCHLAFEN Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Haarausfall",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Hatten Sie HAARAUSFALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Gelenkschmerzen (z. B. Ellenbogen, Knie, Schultern)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie HÄUFIG hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN)?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK hatten Sie GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben GELENKSCHMERZEN (Z. B. ELLENBOGEN, KNIE, SCHULTERN) Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Verschwommenes Sehen",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK VERSCHWOMMEN haben Sie im SCHLIMMSTEN FALL GESEHEN?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr hat Sie VERSCHWOMMENES SEHEN in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Probleme sich zu konzentrieren",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK waren Ihre PROBLEME SICH ZU KONZENTRIEREN im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben Ihre PROBLEME SICH ZU KONZENTRIEREN Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Schmerzen",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie HÄUFIG hatten Sie SCHMERZEN?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK waren Ihre SCHMERZEN im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben SCHMERZEN Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Durchfall",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie HÄUFIG hatten Sie DURCHFALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Verstopfung",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK war Ihre VERSTOPFUNG im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Geschmacksveränderungen beim Essen oder Trinken",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK waren Ihre GESCHMACKSVERÄNDERUNGEN BEIM ESSEN ODER TRINKEN im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Schwindel",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK war Ihr SCHWINDEL im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr hat SCHWINDEL Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Kurzatmigkeit",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK war Ihre KURZATMIGKEIT im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr hat KURZATMIGKEIT Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Herzklopfen, Herzrasen oder unregelmäßiger Puls",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie HÄUFIG hatten Sie HERZKLOPFEN, HERZRASEN ODER EINEN UNREGELMÄSSIGEN PULS?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK waren Ihr HERZKLOPFEN, HERZRASEN ODER UNREGELMÄSSIGER PULS im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Probleme mit dem Gedächtnis (Vergesslichkeit)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK waren Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben Sie Ihre PROBLEME MIT DEM GEDÄCHTNIS (VERGESSLICHKEIT) in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Geschwollene Arme oder Beine",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie HÄUFIG hatten Sie GESCHWOLLENE ARME ODER BEINE?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie STARK GESCHWOLLEN waren Ihre ARME ODER BEINE im SCHLIMMSTEN FALL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr haben GESCHWOLLENE ARME ODER BEINE Sie in Ihren täglichen Aktivitäten GESTÖRT?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Hautausschlag",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Hatten Sie einen HAUTAUSSCHLAG?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Furchen oder Unebenheiten der Finger- oder Fußnägel",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Hatten Sie FURCHEN ODER UNEBENHEITEN DER FINGER- ODER FUSSNÄGEL?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Veränderungen der Farbe von Finger- oder Fußnägeln",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Hatten Sie VERÄNDERUNGEN DER FARBE VON FINGER- ODER FUSSNÄGELN?",
+      "target" : null
+    }]
+  }]
+}

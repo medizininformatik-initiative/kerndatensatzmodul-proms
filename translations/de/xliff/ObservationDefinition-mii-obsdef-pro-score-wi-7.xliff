@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ObservationDefinition-mii-obsdef-pro-score-wi-7" original="Resource ObservationDefinition-mii-obsdef-pro-score-wi-7" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-wi-7" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>WI-7 Total Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-wi-7" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>Unauffälliges Screening nach Cut-off 0/1 (screening negative)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-wi-7" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>Auffälliges Screening nach Cut-off 0/1 — hohe Sensitivität, moderate Spezifität (ICD-10: Sensitivität 1,00, Spezifität 0,65; Fink et al. 1999, Tabelle II)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-wi-7" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>Unauffälliges Screening nach Cut-off 1/2 (screening negative)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-wi-7" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>Auffälliges Screening nach Cut-off 1/2 — moderate Sensitivität, höhere Spezifität, weitere Abklärung empfohlen (ICD-10: Sensitivität 0,65, Spezifität 0,84; Fink et al. 1999, Tabelle II)</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

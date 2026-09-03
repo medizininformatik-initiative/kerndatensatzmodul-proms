@@ -1,0 +1,223 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-ssd-12",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "MII QST PRO SSD-12",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/2017), 12-item German self-report scale",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.copyright",
+      "context" : "Questionnaire.copyright",
+      "source" : "SSD-12 © Toussaint, Löwe et al. Freely available for research and clinical use. Lizenz-Status: frei verfügbar (Tier A).",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "SSD-12 (Somatic Symptom Disorder - B Criteria Scale, Toussaint et al.)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie sehr wurden Sie in den letzten 7 Tagen durch folgende Beschwerden beeinträchtigt?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "1",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Ich denke, dass meine körperlichen Beschwerden Anzeichen einer ernsthaften Erkrankung sind.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "2",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Ich mache mir große Sorgen um meine Gesundheit.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "3",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Meine gesundheitlichen Sorgen behindern mich im Alltag.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "4",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Ich bin von der Ernsthaftigkeit meiner körperlichen Beschwerden überzeugt.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "5",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Meine körperlichen Beschwerden machen mir Angst.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "6",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Meine körperlichen Beschwerden beschäftigen mich den größten Teil des Tages.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "7",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Andere sagen mir, dass meine körperlichen Beschwerden nicht schlimm sind.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "8",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Ich mache mir Sorgen, dass meine körperlichen Beschwerden niemals aufhören werden.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "9",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Die Sorgen um meine Gesundheit rauben mir Energie.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "10",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Ich denke, dass die Ärzte meine körperlichen Beschwerden nicht ernst nehmen.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "11",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Ich mache mir Sorgen auch in Zukunft durch meine körperlichen Beschwerden beeinträchtigt zu bleiben.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "12",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Durch meine körperlichen Beschwerden kann ich mich schlecht auf andere Dinge konzentrieren.",
+      "target" : null
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%ssd12Sum",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "SSD-12 Total Score",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "Score",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "SSD-12 Summenwert (0-48)",
+      "target" : null
+    }]
+  }]
+}

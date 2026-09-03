@@ -1567,3 +1567,13 @@
 2026-09-03T10:55:10Z  INFO   5.2  placeholder-resolution  date=2026-09-02 (the 2026.7.0 publication date -- a fact, not an invention); resource-approvalDate and artifact-topic extensions REMOVED rather than filled: the governance approval date and the NCI Thesaurus topic code are unknown, and inventing them would breach guardrail 3. Both are Gate-A items to re-add.
 2026-09-03T10:55:10Z  INFO   5.2  sushi-after-date-fix  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-date.log
 2026-09-03T10:55:51Z  INFO   5.2  sushi-after-date-fix  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-date.log raw_log_lines=53
+2026-09-03T10:58:49Z  WARN   5.6  local-tx-mismatch  the local 127.0.0.1:8090 is Snowstorm X (SNOMED-only), NOT the CI's nginx->Ontoserver mTLS proxy; the publisher rejects it: 'not approved for use with this software (it does not pass the required tests)'
+    my earlier reading of HTTP 200 on /metadata as 'the proxy runs' was wrong -- it measured reachability, not identity (guardrail 9)
+    local build now uses tx.fhir.org (approved); German-specific terminology findings will therefore differ from CI, which validates against the Ontoserver
+2026-09-03T11:03:40Z  ERROR  5.2  skeleton-incomplete  step 3 vendored ig-template/ only and skipped the template's input/ tree; that tree also carries NON-FSH artefacts the config requires
+    the publisher aborted twice before QA: first on the type-invalid TODO:REVIEW date, then on the missing input/resources/Parameters-expansion-manifest.json referenced by path-expansion-params
+    further gaps found by diffing the template input tree: input/includes/menu.xml and its de mirror (the ENTIRE navigation), and 14 of 22 template-mandatory pagecontent pages
+2026-09-03T11:03:40Z  INFO   5.4a  optional-page-decisions  M9 measured against the module's own artifact counts: extensions=2 KEEP, capability-statements=1 KEEP, search-parameters=7 KEEP, value-sets=26 KEEP, code-systems=12 KEEP, logical-models=1 KEEP, operations=0 REMOVE (page not adopted). rendering-artifacts is the template's demo page and was not adopted.
+2026-09-03T11:20:23Z  ERROR  5.2  pages-block-orphans  the template's pages: block lists 19 pages; the module has 60. SUSHI does NOT auto-generate the list once the block is present, so 41 module pages -- every instrument page, scoring, use-cases -- were UNREGISTERED
+    this fails silently: no build error, the pages simply do not enter the IG. Found by diffing the pages: block against input/pagecontent, not by the build
+    fixed: all 60 nested per spec 9e (instrument pages under pro-library, score pages under scoring, module narrative under guidance); verified 60/60 listed, 0 listed-without-file

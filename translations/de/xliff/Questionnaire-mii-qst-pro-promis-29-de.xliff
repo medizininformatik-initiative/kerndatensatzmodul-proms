@@ -1,0 +1,1059 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-promis-29-de" original="Resource Questionnaire-mii-qst-pro-promis-29-de" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>MII QST PRO PROMIS-29 (German)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>PROMIS-29 Profile v2.1 - German language variant derived from English source</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>PROMIS (Patient-Reported Outcomes Measurement Information System)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>PROMIS-29 Profile Documentation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.copyright">
+             <notes>
+               <note id="n1">Questionnaire.copyright</note>
+             </notes>
+        <source>The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.
+
+The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.
+
+The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).
+
+Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen
+
+LOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS item bank - 29 profile</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Questionnaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>KÖRPERLICHE FUNKTION</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Sind Sie zu folgenden Tätigkeiten imstande:</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Are you able to do chores such as vacuuming or yard work [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Kann ich gar nicht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Mit großen Schwierigkeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Mit einigen Schwierigkeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Mit geringen Schwierigkeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Ohne jede Schwierigkeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Are you able to go up and down stairs at a normal pace [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Are you able to go for a walk of at least 15 minutes [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Können Sie mindestens 15 Minuten lang spazieren gehen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Are you able to run errands and shop [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Können Sie Besorgungen machen und einkaufen gehen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>ANGST</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>In den letzten 7 Tagen:</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I felt fearful in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich fürchtete mich.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Nie</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Selten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Manchmal</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Oft</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Immer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I found it hard to focus on anything other than my anxiety in past 7 days</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>My worries overwhelmed me in past 7 days</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Meine Sorgen haben mich überwältigt.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I felt uneasy in past 7 days</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich fühlte mich unruhig.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>DEPRESSION</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I felt worthless in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich fühlte mich wertlos.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I felt helpless in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich fühlte mich hilflos.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I felt depressed in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich fühlte mich niedergeschlagen.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I felt hopeless in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich fühlte mich hoffnungslos.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>ERSCHÖPFUNG</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I feel fatigued during the past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich bin erschöpft.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Überhaupt nicht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Ein wenig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Mäßig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Ziemlich</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Sehr</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I had trouble starting things because I was tired in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Es fällt mir schwer, etwas anzufangen, weil ich müde bin.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How fatigued were you on the day you felt most fatigued in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Wie ausgelaugt fühlten Sie sich im Allgemeinen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How fatigued were you on average in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Wie erschöpft waren Sie im Allgemeinen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>SCHLAFSTÖRUNGEN</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>My sleep quality was...in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Meine Schlafqualität war ...</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Sehr schlecht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Schlecht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Gut</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Sehr gut</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>My sleep was refreshing in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Mein Schlaf war erfrischend.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I had a problem with my sleep 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich hatte Schlafprobleme.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I had difficulty falling asleep in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Ich hatte Schwierigkeiten einzuschlafen.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>SOZIALE TEILHABE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I have trouble doing all of my usual work (include work at home) [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I have trouble doing all of my regular leisure activities with others [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I have trouble doing all of the family activities that I want to do [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I have trouble doing all of the activities with friends that I want to do [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>SCHMERZBEDINGTE BEEINTRÄCHTIGUNG</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen...</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How much did pain interfere with your day to day activities in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How much did pain interfere with work around the home in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How much did pain interfere with your household chores in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>SCHMERZINTENSITÄT</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>{score}</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How would you rate your pain on average in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>BEREICHS-BEWERTUNGEN</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%physicalFunctionRaw</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Physical function score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Körperliche Funktion - Rohwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%physicalFunctionRaw=4, 24.5, iif(%physicalFunctionRaw=5, 28.0, iif(%physicalFunctionRaw=6, 30.6, iif(%physicalFunctionRaw=7, 32.8, iif(%physicalFunctionRaw=8, 34.7, iif(%physicalFunctionRaw=9, 36.5, iif(%physicalFunctionRaw=10, 38.1, iif(%physicalFunctionRaw=11, 39.7, iif(%physicalFunctionRaw=12, 41.2, iif(%physicalFunctionRaw=13, 42.6, iif(%physicalFunctionRaw=14, 44.0, iif(%physicalFunctionRaw=15, 45.4, iif(%physicalFunctionRaw=16, 46.8, iif(%physicalFunctionRaw=17, 48.2, iif(%physicalFunctionRaw=18, 49.6, iif(%physicalFunctionRaw=19, 51.1, iif(%physicalFunctionRaw=20, 52.6, {})))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS physical function - version 2.0 T-score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Körperliche Funktion - T-Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%anxietyRaw</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Anxiety score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Angst - Rohwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%anxietyRaw=4, 38.2, iif(%anxietyRaw=5, 44.7, iif(%anxietyRaw=6, 48.8, iif(%anxietyRaw=7, 51.9, iif(%anxietyRaw=8, 54.5, iif(%anxietyRaw=9, 56.8, iif(%anxietyRaw=10, 58.9, iif(%anxietyRaw=11, 60.9, iif(%anxietyRaw=12, 62.8, iif(%anxietyRaw=13, 64.7, iif(%anxietyRaw=14, 66.6, iif(%anxietyRaw=15, 68.6, iif(%anxietyRaw=16, 70.7, iif(%anxietyRaw=17, 72.9, iif(%anxietyRaw=18, 75.4, iif(%anxietyRaw=19, 78.5, iif(%anxietyRaw=20, 83.1, {})))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Anxiety score T-score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Angst - T-Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%depressionRaw</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Depression score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Depression - Rohwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%depressionRaw=4, 41.0, iif(%depressionRaw=5, 49.0, iif(%depressionRaw=6, 51.8, iif(%depressionRaw=7, 53.9, iif(%depressionRaw=8, 55.7, iif(%depressionRaw=9, 57.3, iif(%depressionRaw=10, 58.9, iif(%depressionRaw=11, 60.5, iif(%depressionRaw=12, 62.2, iif(%depressionRaw=13, 63.9, iif(%depressionRaw=14, 65.7, iif(%depressionRaw=15, 67.5, iif(%depressionRaw=16, 69.4, iif(%depressionRaw=17, 71.2, iif(%depressionRaw=18, 73.3, iif(%depressionRaw=19, 75.7, iif(%depressionRaw=20, 79.4, {})))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS emotional distress - depression - version 1.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Depression - T-Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%fatigueRaw</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Fatigue score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Erschöpfung - Rohwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%fatigueRaw=4, 33.7, iif(%fatigueRaw=5, 40.3, iif(%fatigueRaw=6, 44.4, iif(%fatigueRaw=7, 47.6, iif(%fatigueRaw=8, 50.2, iif(%fatigueRaw=9, 52.5, iif(%fatigueRaw=10, 54.7, iif(%fatigueRaw=11, 56.8, iif(%fatigueRaw=12, 58.8, iif(%fatigueRaw=13, 60.8, iif(%fatigueRaw=14, 62.8, iif(%fatigueRaw=15, 64.9, iif(%fatigueRaw=16, 67.1, iif(%fatigueRaw=17, 69.4, iif(%fatigueRaw=18, 72.0, iif(%fatigueRaw=19, 75.0, iif(%fatigueRaw=20, 78.8, {})))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS fatigue - version 1.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Erschöpfung - T-Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%sleepRaw</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Sleep disturbance score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Schlafstörungen - Rohwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sleepRaw=4, 28.0, iif(%sleepRaw=5, 36.0, iif(%sleepRaw=6, 40.6, iif(%sleepRaw=7, 44.0, iif(%sleepRaw=8, 46.8, iif(%sleepRaw=9, 49.3, iif(%sleepRaw=10, 51.5, iif(%sleepRaw=11, 53.6, iif(%sleepRaw=12, 55.6, iif(%sleepRaw=13, 57.5, iif(%sleepRaw=14, 59.4, iif(%sleepRaw=15, 61.3, iif(%sleepRaw=16, 63.3, iif(%sleepRaw=17, 65.4, iif(%sleepRaw=18, 67.7, iif(%sleepRaw=19, 70.4, iif(%sleepRaw=20, 73.9, {})))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS sleep disturbance - version 1.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Schlafstörungen - T-Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%socialRaw</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Satisfaction with participation in social roles score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Soziale Teilhabe - Rohwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%socialRaw=4, 24.5, iif(%socialRaw=5, 28.0, iif(%socialRaw=6, 30.6, iif(%socialRaw=7, 32.8, iif(%socialRaw=8, 34.7, iif(%socialRaw=9, 36.5, iif(%socialRaw=10, 38.1, iif(%socialRaw=11, 39.7, iif(%socialRaw=12, 41.2, iif(%socialRaw=13, 42.6, iif(%socialRaw=14, 44.0, iif(%socialRaw=15, 45.4, iif(%socialRaw=16, 46.8, iif(%socialRaw=17, 48.2, iif(%socialRaw=18, 49.6, iif(%socialRaw=19, 51.1, iif(%socialRaw=20, 52.6, {})))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS ability to participate in social roles and activities - version 2.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Soziale Teilhabe - T-Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%painInterferenceRaw</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Pain interference score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%painInterferenceRaw=4, 38.2, iif(%painInterferenceRaw=5, 44.7, iif(%painInterferenceRaw=6, 48.8, iif(%painInterferenceRaw=7, 51.9, iif(%painInterferenceRaw=8, 54.5, iif(%painInterferenceRaw=9, 56.8, iif(%painInterferenceRaw=10, 58.9, iif(%painInterferenceRaw=11, 60.9, iif(%painInterferenceRaw=12, 62.8, iif(%painInterferenceRaw=13, 64.7, iif(%painInterferenceRaw=14, 66.6, iif(%painInterferenceRaw=15, 68.6, iif(%painInterferenceRaw=16, 70.7, iif(%painInterferenceRaw=17, 72.9, iif(%painInterferenceRaw=18, 75.4, iif(%painInterferenceRaw=19, 78.5, iif(%painInterferenceRaw=20, 83.1, {})))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS pain interference - version 1.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-29-de" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

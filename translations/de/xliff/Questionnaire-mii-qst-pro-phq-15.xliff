@@ -1,0 +1,309 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-phq-15" original="Resource Questionnaire-mii-qst-pro-phq-15" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>MII QST PRO PHQ-15</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.copyright">
+             <notes>
+               <note id="n1">Questionnaire.copyright</note>
+             </notes>
+        <source>Patient Health Questionnaire (PHQ/PHQ-15) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel &amp; Herzog 2002). Lizenz-Status: frei verfügbar.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Patient Health Questionnaire 15 item (PHQ-15) [Reported]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PHQ-15 Questionnaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>During the past 4 weeks, how much have you been bothered by any of the following problems?</source>
+        <target>Wie stark fühlten Sie sich im Verlauf der letzten 4 Wochen durch die folgenden Beschwerden beeinträchtigt?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Stomach pain</source>
+        <target>Bauchschmerzen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Back pain</source>
+        <target>Rückenschmerzen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Pain in your arms, legs, or joints (knees, hips, etc.)</source>
+        <target>Schmerzen in Armen, Beinen oder Gelenken (Knie, Hüften, usw.)</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>4</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Menstrual cramps or other problems with your periods</source>
+        <target>Menstruationsschmerzen oder andere Probleme mit der Menstruation</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>5</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Pain or problems during sexual intercourse</source>
+        <target>Schmerzen oder Probleme beim Geschlechtsverkehr</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>6</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Headaches</source>
+        <target>Kopfschmerzen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>7</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Chest pain</source>
+        <target>Schmerzen im Brustbereich</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>8</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Dizziness</source>
+        <target>Schwindel</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>9</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Fainting spells</source>
+        <target>Ohnmachtsanfälle</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>10</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Feeling your heart pound or race</source>
+        <target>Herzklopfen oder Herzrasen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>11</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Shortness of breath</source>
+        <target>Kurzatmigkeit</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>12</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Constipation, loose bowels, or diarrhea</source>
+        <target>Verstopfung, nervöser Darm oder Durchfall</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>13</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Nausea, gas, or indigestion</source>
+        <target>Übelkeit, Blähungen oder Verdauungsbeschwerden</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>14</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Feeling tired or having low energy</source>
+        <target>Müdigkeit oder Gefühl, keine Energie zu haben</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>15</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Trouble sleeping</source>
+        <target>Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%phq15Sum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>Summenwert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-15" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PHQ-15 Total Score (0–30)</source>
+        <target>PHQ-15 Summenwert (0–30)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

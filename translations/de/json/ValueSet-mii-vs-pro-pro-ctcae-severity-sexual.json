@@ -1,0 +1,37 @@
+{
+  "id" : "ValueSet-mii-vs-pro-pro-ctcae-severity-sexual",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "MII_VS_PRO_PRO_CTCAE_Severity_Sexual",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "7-point severity scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
+      "target" : null
+    }]
+  }]
+}

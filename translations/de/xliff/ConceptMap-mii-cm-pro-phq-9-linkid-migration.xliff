@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ConceptMap-mii-cm-pro-phq-9-linkid-migration" original="Resource ConceptMap-mii-cm-pro-phq-9-linkid-migration" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ConceptMap-mii-cm-pro-phq-9-linkid-migration" resname="ConceptMap.title">
+             <notes>
+               <note id="n1">ConceptMap.title</note>
+             </notes>
+        <source>MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ConceptMap-mii-cm-pro-phq-9-linkid-migration" resname="ConceptMap.publisher">
+             <notes>
+               <note id="n1">ConceptMap.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ConceptMap-mii-cm-pro-phq-9-linkid-migration" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ConceptMap-mii-cm-pro-phq-9-linkid-migration" resname="ConceptMap.description">
+             <notes>
+               <note id="n1">ConceptMap.description</note>
+             </notes>
+        <source>Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

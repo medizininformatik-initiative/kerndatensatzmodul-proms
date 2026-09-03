@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ObservationDefinition-mii-obsdef-pro-score-phq-15" original="Resource ObservationDefinition-mii-obsdef-pro-score-phq-15" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-phq-15" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-phq-15" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PHQ-15 Total Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-phq-15" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Patient Health Questionnaire 15 item (PHQ-15) [Reported]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-phq-15" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>Minimal somatic symptom burden (minimale somatische Symptomlast)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-phq-15" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>Low somatic symptom burden (geringe somatische Symptomlast)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-phq-15" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>Medium somatic symptom burden (mittlere somatische Symptomlast)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-score-phq-15" resname="ObservationDefinition.qualifiedInterval.condition">
+             <notes>
+               <note id="n1">ObservationDefinition.qualifiedInterval.condition</note>
+             </notes>
+        <source>High somatic symptom burden (hohe somatische Symptomlast)</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

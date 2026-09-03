@@ -1,0 +1,49 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-gad-7",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "GAD-7 Total Score (0-21)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Generalized anxiety disorder 7 item (GAD-7)",
+      "target" : null
+    },
+    {
+      "id" : "ObservationDefinition.qualifiedInterval.condition",
+      "context" : "ObservationDefinition.qualifiedInterval.condition",
+      "source" : "Minimale Angstsymptomatik (minimal anxiety)",
+      "target" : null
+    },
+    {
+      "id" : "ObservationDefinition.qualifiedInterval.condition",
+      "context" : "ObservationDefinition.qualifiedInterval.condition",
+      "source" : "Leichte Angstsymptomatik (mild anxiety)",
+      "target" : null
+    },
+    {
+      "id" : "ObservationDefinition.qualifiedInterval.condition",
+      "context" : "ObservationDefinition.qualifiedInterval.condition",
+      "source" : "Moderate Angstsymptomatik (moderate anxiety) — weitere Abklärung empfohlen",
+      "target" : null
+    },
+    {
+      "id" : "ObservationDefinition.qualifiedInterval.condition",
+      "context" : "ObservationDefinition.qualifiedInterval.condition",
+      "source" : "Schwere Angstsymptomatik (severe anxiety)",
+      "target" : null
+    }]
+  }]
+}

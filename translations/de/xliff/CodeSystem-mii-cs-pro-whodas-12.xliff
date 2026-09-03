@@ -1,0 +1,295 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="CodeSystem-mii-cs-pro-whodas-12" original="Resource CodeSystem-mii-cs-pro-whodas-12" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">CodeSystem.name</note>
+             </notes>
+        <source>MII_CS_PRO_WHODAS_12</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">CodeSystem.title</note>
+             </notes>
+        <source>MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">CodeSystem.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">CodeSystem.description</note>
+             </notes>
+        <source>CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.copyright">
+             <notes>
+               <note id="n1">CodeSystem.copyright</note>
+             </notes>
+        <source>WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.property.description">
+             <notes>
+               <note id="n1">CodeSystem.property.description</note>
+             </notes>
+        <source>Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>None</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>keine</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Mild</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>geringe</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Moderate</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>mäßige</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Severe</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>starke</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Extreme or cannot do</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>sehr starke/nicht möglich</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Standing for long periods such as 30 minutes?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>längere Zeit (ca. 30 min) zu stehen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Taking care of your household responsibilities?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Ihren Haushaltspflichten nachzukommen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Learning a new task, for example, learning how to get to a new place?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Being emotionally affected by your health problems?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Concentrating on doing something for ten minutes?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Sich auf etwas für 10 Minuten zu konzentrieren?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Walking a long distance such as a kilometre?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Washing your whole body?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Ihren gesamten Körper zu waschen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Getting dressed?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>sich anzuziehen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Dealing with people you do not know?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Im Umgang mit anderen Personen, die Sie nicht kennen?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Maintaining a friendship?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Eine Freundschaft aufrechtzuerhalten?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Your day-to-day work/school?</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-whodas-12" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Bei der Bewältigung des Arbeits-/Schulalltags?</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

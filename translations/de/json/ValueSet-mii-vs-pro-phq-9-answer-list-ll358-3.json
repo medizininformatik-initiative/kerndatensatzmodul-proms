@@ -1,0 +1,85 @@
+{
+  "id" : "ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "MII_VS_PRO_PHQ9_AnswerList_LL3583",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "MII VS PRO PHQ-9 Answer List LL358-3",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "Not at all",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "Überhaupt nicht",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "Several days",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "An einzelnen Tagen",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "More than half the days",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "An mehr als der Hälfte der Tage",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "Nearly every day",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "Beinahe jeden Tag",
+      "target" : null
+    }]
+  }]
+}

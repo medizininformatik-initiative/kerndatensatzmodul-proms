@@ -1,0 +1,176 @@
+
+# Expression.expression
+#: Expression.expression
+msgid "%resource.item.where(linkId.matches('^whodas-whodas12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()"
+msgstr ""
+
+# Questionnaire.title
+#: Questionnaire.title
+msgid "MII QST PRO WHODAS 2.0 12-Item"
+msgstr ""
+
+# Questionnaire.publisher
+#: Questionnaire.publisher
+msgid "NUM-DIZ"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# Questionnaire.description
+#: Questionnaire.description
+msgid "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use)."
+msgstr ""
+
+# Questionnaire.copyright
+#: Questionnaire.copyright
+msgid "WHODAS 2.0 © World Health Organization 2010 (Measuring Health and Disability: Manual for WHODAS 2.0, ISBN 9789241547598). WHO permits clinicians to reproduce WHODAS 2.0 for use with their own patients free of charge. Any other use — including reproduction in an electronic data capture system — requires a licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process; translations require WHO permission. The German item wording follows the validated PCOR-MII Item Level Dictionary. Only the MII-authored FHIR content (profiles, codes, scoring) is licensed CC0; the WHODAS 2.0 item text remains © World Health Organization."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "In the past 30 days, how much difficulty did you have in:"
+msgstr "Wie viele Schwierigkeiten hatten Sie in den letzten 30 Tagen:"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "1"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Standing for long periods such as 30 minutes?"
+msgstr "längere Zeit (ca. 30 min) zu stehen?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "2"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Taking care of your household responsibilities?"
+msgstr "Ihren Haushaltspflichten nachzukommen?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "3"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Learning a new task, for example, learning how to get to a new place?"
+msgstr "Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "4"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?"
+msgstr "Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "5"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "How much have you been emotionally affected by your health problems?"
+msgstr "Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "6"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Concentrating on doing something for ten minutes?"
+msgstr "Sich auf etwas für 10 Minuten zu konzentrieren?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "7"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Walking a long distance such as a kilometre?"
+msgstr "Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "8"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Washing your whole body?"
+msgstr "Ihren gesamten Körper zu waschen?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "9"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Getting dressed?"
+msgstr "sich anzuziehen?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "10"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Dealing with people you do not know?"
+msgstr "Im Umgang mit anderen Personen, die Sie nicht kennen?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "11"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Maintaining a friendship?"
+msgstr "Eine Freundschaft aufrechtzuerhalten?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "12"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Your day-to-day work/school?"
+msgstr "Bei der Bewältigung des Arbeits-/Schulalltags?"
+
+# Expression.expression
+#: Expression.expression
+msgid "%simpleSum"
+msgstr ""
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "Sum score"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "WHODAS 2.0 12-Item simple sum score (0-48)"
+msgstr "WHODAS 2.0 12-Item Summenwert (Simple Sum, 0-48)"
+

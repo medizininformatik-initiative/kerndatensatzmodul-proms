@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ObservationDefinition-mii-obsdef-pro-depression-t-score" original="Resource ObservationDefinition-mii-obsdef-pro-depression-t-score" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS emotional distress - depression - version 1.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS Depression Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>PROMIS Depression T-score metric derived from European Health Interview Survey (EHIS) wave 3 cross-cultural validation study</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>{score}</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>Higher scores indicate worse health (more depression symptoms)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>German general population - EHIS wave 3 (n=22,996): Mean 46.5 (SD 7.7), Median 45.5</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>General population</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>German general population - EHIS wave 3 (n=22,996)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>European male population - EHIS wave 3 (29 countries): Median 44.11</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>European male population - EHIS wave 3 (29 countries)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Male</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>European female population - EHIS wave 3 (29 countries): Median 46.37</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>European female population - EHIS wave 3 (29 countries)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Female</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>Overall European population median (IQR) - EHIS wave 3, 29 countries (n=287,530)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-depression-t-score" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>Overall European population - EHIS wave 3, 29 countries (n=287,530)</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

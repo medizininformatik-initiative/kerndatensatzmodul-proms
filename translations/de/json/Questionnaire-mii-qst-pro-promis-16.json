@@ -1,0 +1,271 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-promis-16",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "MII QST PRO PROMIS-16 (Adults)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "PROMIS (Patient-Reported Outcomes Measurement Information System)",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.copyright",
+      "context" : "Questionnaire.copyright",
+      "source" : "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Physical Function",
+      "target" : "Körperliche Funktion"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Are you able to go up and down stairs at a normal pace [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Are you able to go up and down stairs at a normal pace?",
+      "target" : "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Are you able to go for a walk of at least 15 minutes [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Are you able to go for a walk of at least 15 minutes?",
+      "target" : "Können Sie mindestens 15 Minuten lang spazieren gehen?"
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Emotional Distress — Anxiety",
+      "target" : "Emotionale Belastung — Angst"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I found it hard to focus on anything other than my anxiety in past 7 days",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I found it hard to focus on anything other than my anxiety.",
+      "target" : "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "My worries overwhelmed me in past 7 days",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "My worries overwhelmed me.",
+      "target" : "Meine Sorgen haben mich überwältigt."
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Emotional Distress — Depression",
+      "target" : "Emotionale Belastung — Depressivität"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I felt depressed in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I felt depressed.",
+      "target" : "Ich fühlte mich niedergeschlagen."
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I felt hopeless in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I felt hopeless.",
+      "target" : "Ich fühlte mich hoffnungslos."
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Fatigue",
+      "target" : "Erschöpfung"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I feel fatigued during the past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I feel fatigued.",
+      "target" : "Ich bin erschöpft."
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I had trouble starting things because I was tired in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I had trouble starting things because I was tired.",
+      "target" : "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Sleep-related Impairment / Sleep Disturbance",
+      "target" : "Schlafbezogene Beeinträchtigungen / Schlafbeeinträchtigung"
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I had problems during the day because of poor sleep.",
+      "target" : "Ich hatte tagsüber Probleme, weil ich schlecht geschlafen habe."
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I had trouble sleeping.",
+      "target" : "Es fiel mir schwer zu schlafen."
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Ability to Participate in Social Roles and Activities",
+      "target" : "Teilhabe an sozialen Rollen und Aktivitäten"
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I have trouble taking care of my regular personal responsibilities.",
+      "target" : "Es fällt mir schwer, mich um meine regelmäßigen persönlichen Verpflichtungen zu kümmern."
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I have trouble doing all of the activities with friends that I want to do [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I have trouble doing all of the activities with friends that I want to do.",
+      "target" : "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Pain Interference",
+      "target" : "Beeinträchtigung durch Schmerzen"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "How much did pain interfere with your day to day activities in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "How much did pain interfere with your day-to-day activities?",
+      "target" : "Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "How much did pain interfere with your ability to participate in social activities?",
+      "target" : "Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Cognitive Function — Abilities",
+      "target" : "Kognitive Funktionen — Fähigkeiten"
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I have been able to remember to do things, like take medicine or buy something I needed.",
+      "target" : "Ich bin fähig gewesen, mich an Dinge zu erinnern, die ich tun musste, wie z.B. Medikamente einnehmen oder etwas kaufen, das ich benötigte."
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I have been able to think clearly without extra effort.",
+      "target" : "Ich bin fähig gewesen, klar zu denken, ohne mich extra anzustrengen."
+    }]
+  }]
+}

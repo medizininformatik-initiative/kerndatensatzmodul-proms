@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-wi-7" original="Resource Questionnaire-mii-qst-pro-wi-7" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>MII QST PRO WI-7</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondriasis and somatization (Fink et al. 1999) with German translation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.copyright">
+             <notes>
+               <note id="n1">Questionnaire.copyright</note>
+             </notes>
+        <source>Whiteley-7 scale — Fink, Ewald, Jensen, Sørensen, Engberg, Holm &amp; Munk-Jørgensen 1999 (Journal of Psychosomatic Research, Elsevier). No explicit licensing restriction stated in the original publication; treated as freely available for clinical and research use. Lizenz-Status: frei verfügbar (Tier A).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Whiteley-7 Questionnaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>The following questions are about your physical health:</source>
+        <target>In den nächsten Fragen geht es um Ihren körperlichen Gesundheitszustand:</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Do you think there is something seriously wrong with your body?</source>
+        <target>Denken Sie, dass mit Ihrem Körper ernsthaft etwas nicht in Ordnung ist?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>No</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Yes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Do you worry a lot about your health?</source>
+        <target>Machen Sie sich viel Sorgen um Ihre Gesundheit?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Is it hard for you to believe the doctor when he tells you there is nothing to worry about?</source>
+        <target>Können Sie der Ärztin/dem Arzt nur schwer glauben, wenn sie/er sagt, dass kein Grund zur Besorgnis besteht?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>4</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Do you often worry about the possibility that you have a serious illness?</source>
+        <target>Machen Sie sich oft Sorgen, möglicherweise eine ernsthafte Krankheit zu haben?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>5</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Are you bothered by many different pains and aches?</source>
+        <target>Werden Sie durch eine Vielzahl von Schmerzen geplagt?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>6</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>If disease is brought to your attention (e.g., on TV, radio, the newspapers, or by someone you know), do you worry about getting it yourself?</source>
+        <target>Wenn Sie auf eine Krankheit aufmerksam gemacht werden (durch Fernsehen, Zeitung oder einen Bekannten), machen Sie sich dann Sorgen, dass Sie diese Krankheit auch bekommen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>7</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Do you find that you are bothered by many different symptoms?</source>
+        <target>Finden Sie, dass Sie von einer Vielzahl unterschiedlicher Symptome geplagt werden?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%wi7Sum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>WI-7 Total Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-wi-7" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>WI-7 Total Score (0-7)</source>
+        <target>WI-7 Summenwert (0-7)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

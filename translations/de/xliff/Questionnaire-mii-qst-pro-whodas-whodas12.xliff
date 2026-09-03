@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-whodas-whodas12" original="Resource Questionnaire-mii-qst-pro-whodas-whodas12" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.where(linkId.matches('^whodas-whodas12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>MII QST PRO WHODAS 2.0 12-Item</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.copyright">
+             <notes>
+               <note id="n1">Questionnaire.copyright</note>
+             </notes>
+        <source>WHODAS 2.0 © World Health Organization 2010 (Measuring Health and Disability: Manual for WHODAS 2.0, ISBN 9789241547598). WHO permits clinicians to reproduce WHODAS 2.0 for use with their own patients free of charge. Any other use — including reproduction in an electronic data capture system — requires a licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process; translations require WHO permission. The German item wording follows the validated PCOR-MII Item Level Dictionary. Only the MII-authored FHIR content (profiles, codes, scoring) is licensed CC0; the WHODAS 2.0 item text remains © World Health Organization.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>In the past 30 days, how much difficulty did you have in:</source>
+        <target>Wie viele Schwierigkeiten hatten Sie in den letzten 30 Tagen:</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Standing for long periods such as 30 minutes?</source>
+        <target>längere Zeit (ca. 30 min) zu stehen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Taking care of your household responsibilities?</source>
+        <target>Ihren Haushaltspflichten nachzukommen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Learning a new task, for example, learning how to get to a new place?</source>
+        <target>Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>4</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?</source>
+        <target>Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>5</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>How much have you been emotionally affected by your health problems?</source>
+        <target>Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>6</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Concentrating on doing something for ten minutes?</source>
+        <target>Sich auf etwas für 10 Minuten zu konzentrieren?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>7</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Walking a long distance such as a kilometre?</source>
+        <target>Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>8</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Washing your whole body?</source>
+        <target>Ihren gesamten Körper zu waschen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>9</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Getting dressed?</source>
+        <target>sich anzuziehen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>10</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Dealing with people you do not know?</source>
+        <target>Im Umgang mit anderen Personen, die Sie nicht kennen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>11</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Maintaining a friendship?</source>
+        <target>Eine Freundschaft aufrechtzuerhalten?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>12</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Your day-to-day work/school?</source>
+        <target>Bei der Bewältigung des Arbeits-/Schulalltags?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%simpleSum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>Sum score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-whodas-whodas12" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>WHODAS 2.0 12-Item simple sum score (0-48)</source>
+        <target>WHODAS 2.0 12-Item Summenwert (Simple Sum, 0-48)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

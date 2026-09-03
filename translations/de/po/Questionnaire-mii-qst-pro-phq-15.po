@@ -1,0 +1,216 @@
+
+# Expression.expression
+#: Expression.expression
+msgid "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()"
+msgstr ""
+
+# Questionnaire.title
+#: Questionnaire.title
+msgid "MII QST PRO PHQ-15"
+msgstr ""
+
+# Questionnaire.publisher
+#: Questionnaire.publisher
+msgid "NUM-DIZ"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# Questionnaire.description
+#: Questionnaire.description
+msgid "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)"
+msgstr ""
+
+# Questionnaire.copyright
+#: Questionnaire.copyright
+msgid "Patient Health Questionnaire (PHQ/PHQ-15) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "PHQ-15 Questionnaire"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "During the past 4 weeks, how much have you been bothered by any of the following problems?"
+msgstr "Wie stark fühlten Sie sich im Verlauf der letzten 4 Wochen durch die folgenden Beschwerden beeinträchtigt?"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "1"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Stomach pain"
+msgstr "Bauchschmerzen"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "2"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Back pain"
+msgstr "Rückenschmerzen"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "3"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Pain in your arms, legs, or joints (knees, hips, etc.)"
+msgstr "Schmerzen in Armen, Beinen oder Gelenken (Knie, Hüften, usw.)"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "4"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Menstrual cramps or other problems with your periods"
+msgstr "Menstruationsschmerzen oder andere Probleme mit der Menstruation"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "5"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Pain or problems during sexual intercourse"
+msgstr "Schmerzen oder Probleme beim Geschlechtsverkehr"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "6"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Headaches"
+msgstr "Kopfschmerzen"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "7"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Chest pain"
+msgstr "Schmerzen im Brustbereich"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "8"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Dizziness"
+msgstr "Schwindel"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "9"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Fainting spells"
+msgstr "Ohnmachtsanfälle"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "10"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Feeling your heart pound or race"
+msgstr "Herzklopfen oder Herzrasen"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "11"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Shortness of breath"
+msgstr "Kurzatmigkeit"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "12"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Constipation, loose bowels, or diarrhea"
+msgstr "Verstopfung, nervöser Darm oder Durchfall"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "13"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Nausea, gas, or indigestion"
+msgstr "Übelkeit, Blähungen oder Verdauungsbeschwerden"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "14"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Feeling tired or having low energy"
+msgstr "Müdigkeit oder Gefühl, keine Energie zu haben"
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "15"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "Trouble sleeping"
+msgstr "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
+
+# Expression.expression
+#: Expression.expression
+msgid "%phq15Sum"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+msgstr ""
+
+# Questionnaire.item.prefix
+#: Questionnaire.item.prefix
+msgid "Summenwert"
+msgstr ""
+
+# Questionnaire.item.text
+#: Questionnaire.item.text
+msgid "PHQ-15 Total Score (0–30)"
+msgstr "PHQ-15 Summenwert (0–30)"
+

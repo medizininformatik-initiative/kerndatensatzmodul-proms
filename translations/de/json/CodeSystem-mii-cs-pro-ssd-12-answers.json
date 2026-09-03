@@ -1,0 +1,103 @@
+{
+  "id" : "CodeSystem-mii-cs-pro-ssd-12-answers",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "CodeSystem.name",
+      "context" : "CodeSystem.name",
+      "source" : "MII_CS_PRO_SSD_12_Answers",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.title",
+      "context" : "CodeSystem.title",
+      "source" : "MII CS PRO SSD-12 Answers",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.publisher",
+      "context" : "CodeSystem.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.description",
+      "context" : "CodeSystem.description",
+      "source" : "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.property.description",
+      "context" : "CodeSystem.property.description",
+      "source" : "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "nie",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Never",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "selten",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Rarely",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "manchmal",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Sometimes",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "oft",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Often",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "sehr oft",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Very often",
+      "target" : null
+    }]
+  }]
+}

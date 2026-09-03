@@ -1,0 +1,109 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-euronet-soma",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "MII QST PRO EURONET-SOMA",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.copyright",
+      "context" : "Questionnaire.copyright",
+      "source" : "EURONET-SOMA numeric rating scale items © Rief, Burton, Frostholm et al. 2017 (Psychosomatic Medicine, American Psychosomatic Society). Figure 1 of the publication explicitly recommends these two items for use in clinical trials, with translations into more than 20 languages available as supplemental content. Lizenz-Status: frei verfügbar (Tier A).",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "{score}",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "1",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "During the last 7 days, the overall intensity of my bodily symptoms was:",
+      "target" : "Wie war die Gesamtstärke Ihrer Körperbeschwerden in den letzten 7 Tagen?"
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "0",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "No symptoms at all",
+      "target" : "überhaupt nicht"
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "10",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Worst possible symptoms",
+      "target" : "extrem beeinträchtigt"
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "2",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "During the last 7 days, my bodily symptoms interfered with daily life activities",
+      "target" : "Wie sehr waren Sie in den letzten 7 Tagen durch Ihre Körperbeschwerden beeinträchtigt?"
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Not at all",
+      "target" : "überhaupt nicht"
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Interfered completely",
+      "target" : "extrem beeinträchtigt"
+    }]
+  }]
+}

@@ -1,0 +1,37 @@
+{
+  "id" : "SearchParameter-mii-sp-pro-questionnaire-capabilities",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Creative Commons Attribution 4.0 International",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_PRO_Questionnaire_Capabilities",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.publisher",
+      "context" : "SearchParameter.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Questionnaire.extension[capabilities] to filter questionnaires by capability flags (displayable, collectable, calculatable, extractable, populatable, domainAligned)",
+      "target" : null
+    }]
+  }]
+}

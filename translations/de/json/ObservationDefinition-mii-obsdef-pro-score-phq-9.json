@@ -1,0 +1,25 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-phq-9",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PHQ-9 Total Score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PHQ-9 quick depression assessment panel [Reported.PHQ]",
+      "target" : null
+    }]
+  }]
+}

@@ -1,0 +1,31 @@
+{
+  "id" : "Observation-mii-exa-pro-dass-dass21-score-depression-equiv",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Survey",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Depression anxiety stress scales depression score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "DASS-21 Depression DASS-42 Equivalent Score",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "{score}",
+      "target" : null
+    }]
+  }]
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-hads" original="Resource Questionnaire-mii-qst-pro-hads" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-hads" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>Hospital Anxiety and Depression Scale (HADS)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-hads" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-hads" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-hads" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-hads" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Hospital anxiety and depression scale (assessment scale)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-hads" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Hospital Anxiety and Depression Scale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-hads" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>This questionnaire requires proper licensing from the copyright holders. Please contact the HADS rights holders for implementation permissions.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

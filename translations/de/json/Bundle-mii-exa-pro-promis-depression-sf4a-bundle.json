@@ -1,0 +1,61 @@
+{
+  "id" : "Bundle-mii-exa-pro-promis-depression-sf4a-bundle",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "HumanName.family",
+      "context" : "HumanName.family",
+      "source" : "Mustermann",
+      "target" : null
+    },
+    {
+      "id" : "HumanName.given",
+      "context" : "HumanName.given",
+      "source" : "Max",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Sometimes",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Rarely",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Often",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Survey",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "{score}",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS emotional distress - depression - version 1.0 Tscore",
+      "target" : null
+    }]
+  }]
+}

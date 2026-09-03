@@ -1,0 +1,31 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQol five dimension five level index value (observable entity)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQol EQ-5D-5L Index Score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQoL five dimension five level questionnaire",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher score indicates better health status",
+      "target" : null
+    }]
+  }]
+}

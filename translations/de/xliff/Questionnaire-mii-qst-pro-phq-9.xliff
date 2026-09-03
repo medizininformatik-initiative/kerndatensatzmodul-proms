@@ -1,0 +1,393 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-phq-9" original="Resource Questionnaire-mii-qst-pro-phq-9" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>MII QST PRO PHQ-9</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>Patient Health Questionnaire (PHQ-9)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.copyright">
+             <notes>
+               <note id="n1">Questionnaire.copyright</note>
+             </notes>
+        <source>Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel &amp; Herzog 2002). Lizenz-Status: frei verfügbar.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PHQ-9 quick depression assessment panel [Reported.PHQ]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PHQ-9 Questionnaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Over the last two weeks, how often have you been bothered by any of the following problems?</source>
+        <target>Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2a').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Little interest or pleasure in doing things</source>
+        <target>Wenig Interesse oder Freude an Ihren Tätigkeiten</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Not at all</source>
+        <target>Überhaupt nicht</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Several days</source>
+        <target>An einzelnen Tagen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>More than half the days</source>
+        <target>An mehr als der Hälfte der Tage</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Nearly every day</source>
+        <target>Beinahe jeden Tag</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2b').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Feeling down, depressed, or hopeless</source>
+        <target>Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2c').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Trouble falling or staying asleep, or sleeping too much</source>
+        <target>Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2d').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>4</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Feeling tired or having little energy</source>
+        <target>Müdigkeit oder Gefühl, keine Energie zu haben</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2e').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>5</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Poor appetite or overeating</source>
+        <target>Verminderter Appetit oder übermäßiges Bedürfnis zu essen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2f').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>6</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Feeling bad about yourself - or that you are a failure or have let yourself or your family down</source>
+        <target>Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2g').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>7</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Trouble concentrating on things, such as reading the newspaper or watching television</source>
+        <target>Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2h').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>8</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual</source>
+        <target>Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil 'zappelig' oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq2i').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>9</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Thoughts that you would be better off dead or of hurting yourself in some way</source>
+        <target>Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%phq9Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>Auswertung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PHQ-9 Total Score</source>
+        <target>PHQ-9 Gesamtwert</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='phq-phq9-difficulty').answer.value, {})</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>10</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</source>
+        <target>Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Not difficult at all</source>
+        <target>Überhaupt nicht erschwert</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Somewhat difficult</source>
+        <target>Etwas erschwert</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Very difficult</source>
+        <target>Relativ stark erschwert</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Extremely difficult</source>
+        <target>Sehr stark erschwert</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%phq9Score = 0, 37.4, iif(%phq9Score = 1, 42.7, iif(%phq9Score = 2, 45.9, iif(%phq9Score = 3, 48.3, iif(%phq9Score = 4, 50.5, iif(%phq9Score = 5, 52.5, iif(%phq9Score = 6, 54.2, iif(%phq9Score = 7, 55.8, iif(%phq9Score = 8, 57.2, iif(%phq9Score = 9, 58.6, iif(%phq9Score = 10, 59.9, iif(%phq9Score = 11, 61.1, iif(%phq9Score = 12, 62.3, iif(%phq9Score = 13, 63.5, iif(%phq9Score = 14, 64.7, iif(%phq9Score = 15, 65.8, iif(%phq9Score = 16, 66.9, iif(%phq9Score = 17, 68.0, iif(%phq9Score = 18, 69.2, iif(%phq9Score = 19, 70.3, iif(%phq9Score = 20, 71.5, iif(%phq9Score = 21, 72.7, iif(%phq9Score = 22, 74.0, iif(%phq9Score = 23, 75.3, iif(%phq9Score = 24, 76.7, iif(%phq9Score = 25, 78.3, iif(%phq9Score = 26, 80.0, iif(%phq9Score = 27, 82.3, 82.3))))))))))))))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS emotional distress - depression - version 1.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>T-Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-phq-9" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS Depression T-Score (derived from PHQ-9)</source>
+        <target>PROMIS Depression T-Score (abgeleitet von PHQ-9)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

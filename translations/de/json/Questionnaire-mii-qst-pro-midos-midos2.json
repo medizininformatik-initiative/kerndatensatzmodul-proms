@@ -1,0 +1,217 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-midos-midos2",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.ordinal().sum()",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.name",
+      "context" : "Questionnaire.name",
+      "source" : "MII_QST_PRO_MIDOS_MIDOS2",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "MII QST PRO MIDOS2",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-Screening für die Palliativmedizin nach DGP. 11 Symptom-Items mit 4-stufiger DGP-Skala, ein Wohlbefinden-Item, ein offenes Item für sonstige Beschwerden.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.copyright",
+      "context" : "Questionnaire.copyright",
+      "source" : "MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, DGP)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Bitte geben Sie an, wie stark Sie in den letzten Tagen unter folgenden Beschwerden gelitten haben.",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "1",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Schmerz",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "2",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Übelkeit",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "3",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Erbrechen",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "4",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Luftnot",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "5",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Verstopfung",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "6",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Schwäche",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "7",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Müdigkeit",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "8",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Appetitmangel",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "9",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Depressivität",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "10",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Angst",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "11",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Anspannung",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "12",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Wie würden Sie Ihr Wohlbefinden insgesamt einschätzen?",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.prefix",
+      "context" : "Questionnaire.item.prefix",
+      "source" : "13",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "Andere Beschwerden (bitte angeben)",
+      "target" : null
+    }]
+  }]
+}

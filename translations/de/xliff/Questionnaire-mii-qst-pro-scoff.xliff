@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-scoff" original="Resource Questionnaire-mii-qst-pro-scoff" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>MII QST PRO SCOFF</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.copyright">
+             <notes>
+               <note id="n1">Questionnaire.copyright</note>
+             </notes>
+        <source>SCOFF questionnaire © Morgan, Reid &amp; Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>SCOFF Questionnaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>The following questions are about eating:</source>
+        <target>In den nächsten Fragen geht es um das Thema Essen:</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Do you make yourself Sick because you feel uncomfortably full?</source>
+        <target>Übergeben Sie sich, wenn Sie sich unangenehm voll fühlen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>No</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Yes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Do you worry you have lost Control over how much you eat?</source>
+        <target>Machen Sie sich Sorgen, weil Sie manchmal nicht mit dem Essen aufhören können?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Have you recently lost more than One stone in a 3 month period?</source>
+        <target>Haben Sie in der letzten Zeit mehr als 6 kg in 3 Monaten abgenommen?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>4</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Do you believe yourself to be Fat when others say you are too thin?</source>
+        <target>Finden Sie sich zu dick, während andere Sie zu dünn finden?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>5</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>Would you say that Food dominates your life?</source>
+        <target>Würden Sie sagen, dass Essen Ihr Leben sehr beeinflusst?</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%scoffSum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>SCOFF Total Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.prefix">
+             <notes>
+               <note id="n1">Questionnaire.item.prefix</note>
+             </notes>
+        <source>Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-scoff" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>SCOFF Total Score (0-5)</source>
+        <target>SCOFF Summenwert (0-5)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

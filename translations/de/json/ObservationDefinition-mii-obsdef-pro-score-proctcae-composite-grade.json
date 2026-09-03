@@ -1,0 +1,25 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PRO-CTCAE Composite Grade (per Adverse Event)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "score",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher grade indicates worse patient-reported adverse event burden",
+      "target" : null
+    }]
+  }]
+}

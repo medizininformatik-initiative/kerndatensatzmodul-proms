@@ -1,0 +1,43 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-k6",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "Kessler Psychological Distress Scale (K6)",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "Kessler Psychological Distress Scale (K6) - Metadata-only reference implementation",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Kessler Psychological Distress Scale",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "This questionnaire requires proper licensing from the copyright holders. Please contact the K6 rights holders for implementation permissions.",
+      "target" : null
+    }]
+  }]
+}

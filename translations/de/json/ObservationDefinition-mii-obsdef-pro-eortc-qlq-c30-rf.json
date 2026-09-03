@@ -1,0 +1,19 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EORTC QLQ-C30 Role Functioning Score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "{score}",
+      "target" : null
+    }]
+  }]
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ValueSet-mii-vs-pro-whodas-12-answer-list" original="Resource ValueSet-mii-vs-pro-whodas-12-answer-list" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-mii-vs-pro-whodas-12-answer-list" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>MII_VS_PRO_WHODAS_12_Answer_List</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-whodas-12-answer-list" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>MII VS PRO WHODAS 2.0 12-Item Answer List</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-whodas-12-answer-list" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-whodas-12-answer-list" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-whodas-12-answer-list" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

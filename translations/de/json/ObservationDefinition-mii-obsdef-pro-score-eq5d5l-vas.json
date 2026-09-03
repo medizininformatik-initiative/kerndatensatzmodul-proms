@@ -1,0 +1,31 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQol visual analogue score (observable entity)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQol EQ-5D-5L Visual Analog Scale (VAS) Score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EuroQoL five dimension five level questionnaire",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher score indicates better health status",
+      "target" : null
+    }]
+  }]
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "Observation-mii-exa-pro-eortc-qlq-c30-observation-sl",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Survey",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EORTC QLQ-C30 Insomnia Score",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "{score}",
+      "target" : null
+    }]
+  }]
+}

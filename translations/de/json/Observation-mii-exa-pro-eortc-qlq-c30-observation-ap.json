@@ -1,0 +1,25 @@
+{
+  "id" : "Observation-mii-exa-pro-eortc-qlq-c30-observation-ap",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Survey",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EORTC QLQ-C30 Appetite Loss Score",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "{score}",
+      "target" : null
+    }]
+  }]
+}

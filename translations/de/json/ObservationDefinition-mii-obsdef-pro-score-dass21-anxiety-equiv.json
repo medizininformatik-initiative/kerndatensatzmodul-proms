@@ -1,0 +1,25 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "DASS-21 Anxiety DASS-42 Equivalent Score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "score",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher score indicates worse anxiety severity (DASS-42 equivalent = DASS-21 raw x 2)",
+      "target" : null
+    }]
+  }]
+}

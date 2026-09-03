@@ -1,0 +1,97 @@
+{
+  "id" : "ValueSet-mii-vs-pro-promis-intensity-response-scale",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "MII_VS_PRO_PROMIS_Intensity_Response_Scale",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "MII VS PRO PROMIS Intensity Response Scale",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "Not at all",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "Überhaupt nicht",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "A little bit",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "Ein wenig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "Somewhat",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "Mäßig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "Quite a bit",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "Ziemlich",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "Very much",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "Sehr",
+      "target" : null
+    }]
+  }]
+}

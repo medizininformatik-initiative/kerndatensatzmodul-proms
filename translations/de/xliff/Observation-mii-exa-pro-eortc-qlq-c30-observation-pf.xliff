@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Observation-mii-exa-pro-eortc-qlq-c30-observation-pf" original="Resource Observation-mii-exa-pro-eortc-qlq-c30-observation-pf" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Observation-mii-exa-pro-eortc-qlq-c30-observation-pf" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Survey</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Observation-mii-exa-pro-eortc-qlq-c30-observation-pf" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Observation-mii-exa-pro-eortc-qlq-c30-observation-pf" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>EORTC QLQ-C30 Physical Functioning Score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Observation-mii-exa-pro-eortc-qlq-c30-observation-pf" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>{score}</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Observation-mii-exa-pro-eortc-qlq-c30-observation-pf" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>EORTC QLQ-C30 Version 3.0 Scoring Manual</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

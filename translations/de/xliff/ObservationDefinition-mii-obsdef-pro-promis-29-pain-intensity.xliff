@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" original="Resource ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>How intense was your average pain in the past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS-29 Pain Intensity (0-10 Numeric Rating)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>PROMIS-29 Profile v2.1 - Pain Intensity single item</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>Higher scores indicate more pain</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>Pain intensity scale 0-10</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

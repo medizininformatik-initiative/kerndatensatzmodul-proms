@@ -1705,6 +1705,13 @@
       },
       {
         "reference": {
+          "reference": "Parameters/mii-param-pro-manifest"
+        },
+        "exampleBoolean": false,
+        "name": "mii-param-pro-manifest"
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-pro-observationdefinition-code"
         },
         "name": "mii-sp-pro-observationdefinition-code",
@@ -1932,6 +1939,61 @@
               "nameUrl": "uml-diagrams.html",
               "title": "UML Diagrams",
               "generation": "markdown"
+            },
+            {
+              "nameUrl": "use-cases.html",
+              "title": "Use Cases",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "module-description.html",
+              "title": "Module Description",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "project-context.html",
+              "title": "Context within the MII",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "datasets-and-descriptions.html",
+              "title": "Datasets and Descriptions",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "technical-implementation.html",
+              "title": "Technical Implementation",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "workflows.html",
+              "title": "Workflows",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "id-systematics.html",
+              "title": "ID Systematics",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "terminology-strategies.html",
+              "title": "Terminology Strategies",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "questionnaire-capabilities.html",
+              "title": "Questionnaire Capabilities",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "validation.html",
+              "title": "Validation",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "references.html",
+              "title": "References",
+              "generation": "markdown"
             }
           ]
         },
@@ -1939,6 +2001,160 @@
           "nameUrl": "security-and-privacy.html",
           "title": "Security and Privacy",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "pro-library.html",
+          "title": "PRO Library",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "phq-9.html",
+              "title": "PHQ-9",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "phq-15.html",
+              "title": "PHQ-15",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gad-7.html",
+              "title": "GAD-7",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "bdi-ii.html",
+              "title": "BDI-II",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dass-21.html",
+              "title": "DASS-21",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "eq-5d-5l.html",
+              "title": "EQ-5D-5L",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "eq-5d-5l-scores.html",
+              "title": "EQ-5D-5L Scores",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "promis.html",
+              "title": "PROMIS",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "promis-29.html",
+              "title": "PROMIS-29",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "promis-16.html",
+              "title": "PROMIS-16",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "promis-depression.html",
+              "title": "PROMIS Depression SF 4a",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "eortc-qlq-c30.html",
+              "title": "EORTC QLQ-C30",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "eortc-qlq-c30-scoring.html",
+              "title": "EORTC QLQ-C30 Scoring",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "pro-ctcae.html",
+              "title": "PRO-CTCAE",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "proms-onkologisches-basisscreening.html",
+              "title": "Oncology Base Screening",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "midos2.html",
+              "title": "MIDOS2",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "whodas.html",
+              "title": "WHODAS 2.0",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "scoff.html",
+              "title": "SCOFF",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "wi-7.html",
+              "title": "Whiteley-7",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "pc-ptsd.html",
+              "title": "PC-PTSD",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ssd-12.html",
+              "title": "SSD-12",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "isr-z.html",
+              "title": "ISR-Z",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "euronet-soma.html",
+              "title": "EURONET-SOMA",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "minimal-reference-questionnaires.html",
+              "title": "Minimal Reference Questionnaires",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "scoring.html",
+          "title": "Scoring",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "domain-based-scoring.html",
+              "title": "Domain-based Scoring",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "domains.html",
+              "title": "Domains",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "cross-instrument-mappings.html",
+              "title": "Cross-Instrument Mappings",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "derived-metrics.html",
+              "title": "Derived Metrics",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "profiles.html",
@@ -1958,11 +2174,6 @@
         {
           "nameUrl": "search-parameters.html",
           "title": "Search Parameters",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "operations.html",
-          "title": "Operations",
           "generation": "markdown"
         },
         {
@@ -2013,11 +2224,6 @@
         {
           "nameUrl": "translationinfo.html",
           "title": "Translation Information",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "rendering-artifacts.html",
-          "title": "Rendering Artifacts (demo)",
           "generation": "markdown"
         }
       ]

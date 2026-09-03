@@ -1,0 +1,301 @@
+{
+  "id" : "CodeSystem-mii-cs-pro-midos2",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "CodeSystem.name",
+      "context" : "CodeSystem.name",
+      "source" : "MII_CS_PRO_MIDOS2",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.title",
+      "context" : "CodeSystem.title",
+      "source" : "MII CS PRO MIDOS2 Items and Response Scales",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.publisher",
+      "context" : "CodeSystem.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.description",
+      "context" : "CodeSystem.description",
+      "source" : "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations.",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.copyright",
+      "context" : "CodeSystem.copyright",
+      "source" : "MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.property.description",
+      "context" : "CodeSystem.property.description",
+      "source" : "SNOMED CT Equivalent für externe Interoperabilität",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "keine",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "none",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "leichte",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "mild",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "mittlere",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "moderate",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "starke",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "severe",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "sehr gut",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "very good",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "eher gut",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "rather good",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "eher schlecht",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "rather poor",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "sehr schlecht",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "very poor",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Schmerz",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Pain",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Übelkeit",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Nausea",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Erbrechen",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Vomiting",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Luftnot",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Shortness of breath",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Verstopfung",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Constipation",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Schwäche",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Weakness",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Müdigkeit",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Tiredness",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Appetitmangel",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Loss of appetite",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Depressivität",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Depression",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Angst",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Anxiety",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Anspannung",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Tension",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Wohlbefinden",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Overall wellbeing",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
+      "source" : "Andere Beschwerden",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Other complaints",
+      "target" : null
+    }]
+  }]
+}

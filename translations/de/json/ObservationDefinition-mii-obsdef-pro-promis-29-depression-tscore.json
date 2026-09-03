@@ -1,0 +1,43 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS emotional distress - depression - version 1.0 Tscore",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS-29 Depression T-Score",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "PROMIS-29 Profile v2.1",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "{score}",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher scores indicate more depression",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "PROMIS T-Score metric (Mean=50, SD=10)",
+      "target" : null
+    }]
+  }]
+}

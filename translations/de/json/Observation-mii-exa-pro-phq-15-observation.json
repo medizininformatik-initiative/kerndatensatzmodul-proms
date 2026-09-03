@@ -1,0 +1,19 @@
+{
+  "id" : "Observation-mii-exa-pro-phq-15-observation",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "{score}",
+      "target" : null
+    }]
+  }]
+}

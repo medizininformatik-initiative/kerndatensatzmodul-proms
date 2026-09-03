@@ -1,0 +1,351 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="CodeSystem-mii-cs-pro-midos2" original="Resource CodeSystem-mii-cs-pro-midos2" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">CodeSystem.name</note>
+             </notes>
+        <source>MII_CS_PRO_MIDOS2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">CodeSystem.title</note>
+             </notes>
+        <source>MII CS PRO MIDOS2 Items and Response Scales</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">CodeSystem.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">CodeSystem.description</note>
+             </notes>
+        <source>CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.copyright">
+             <notes>
+               <note id="n1">CodeSystem.copyright</note>
+             </notes>
+        <source>MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.property.description">
+             <notes>
+               <note id="n1">CodeSystem.property.description</note>
+             </notes>
+        <source>SNOMED CT Equivalent für externe Interoperabilität</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>keine</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>none</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>leichte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>mild</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>mittlere</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>moderate</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>starke</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>severe</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>sehr gut</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>very good</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>eher gut</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>rather good</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>eher schlecht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>rather poor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>sehr schlecht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>very poor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Schmerz</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Pain</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Übelkeit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Nausea</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Erbrechen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Vomiting</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Luftnot</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Shortness of breath</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Verstopfung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Constipation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Schwäche</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Weakness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Müdigkeit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Tiredness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Appetitmangel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Loss of appetite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Depressivität</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Depression</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Angst</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Anxiety</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Anspannung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Tension</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Wohlbefinden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Overall wellbeing</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Andere Beschwerden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-midos2" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Other complaints</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

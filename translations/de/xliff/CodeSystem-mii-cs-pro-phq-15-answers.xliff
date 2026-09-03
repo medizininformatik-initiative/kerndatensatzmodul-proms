@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="CodeSystem-mii-cs-pro-phq-15-answers" original="Resource CodeSystem-mii-cs-pro-phq-15-answers" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">CodeSystem.name</note>
+             </notes>
+        <source>MII_CS_PRO_PHQ_15_Answers</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">CodeSystem.title</note>
+             </notes>
+        <source>MII CS PRO PHQ-15 Answers</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">CodeSystem.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">CodeSystem.description</note>
+             </notes>
+        <source>MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.property.description">
+             <notes>
+               <note id="n1">CodeSystem.property.description</note>
+             </notes>
+        <source>Numerical ordinal value (0–2) for SDC calculatedExpression scoring via .ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Not bothered at all</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Nicht beeinträchtigt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Bothered a little</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Wenig beeinträchtigt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Bothered a lot</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-pro-phq-15-answers" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Stark beeinträchtigt</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

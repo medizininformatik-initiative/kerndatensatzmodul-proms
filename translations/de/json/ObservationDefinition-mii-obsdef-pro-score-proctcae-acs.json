@@ -1,0 +1,25 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-proctcae-acs",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PRO-CTCAE Average Composite Score (ACS)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "score",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher ACS indicates worse overall symptomatic adverse event burden",
+      "target" : null
+    }]
+  }]
+}

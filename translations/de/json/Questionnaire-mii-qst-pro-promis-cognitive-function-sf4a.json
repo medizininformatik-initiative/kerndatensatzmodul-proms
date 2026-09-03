@@ -1,0 +1,193 @@
+{
+  "id" : "Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.title",
+      "context" : "Questionnaire.title",
+      "source" : "MII QST PRO PROMIS Cognitive Function SF 4a",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.publisher",
+      "context" : "Questionnaire.publisher",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.description",
+      "context" : "Questionnaire.description",
+      "source" : "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "PROMIS (Patient-Reported Outcomes Measurement Information System)",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.copyright",
+      "context" : "Questionnaire.copyright",
+      "source" : "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS short form - cognitive function - abilities subset 4a - version 2.0",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "PROMIS Kognitive Funktion SF 4a",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "In the past 7 days",
+      "target" : "In den letzten 7 Tagen:"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "My thinking has been slow in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "My thinking has been slow",
+      "target" : "Ich war langsam beim Denken"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Not at all",
+      "target" : "Nie"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Rarely",
+      "target" : "Selten (einmal)"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Sometimes",
+      "target" : "Manchmal (zwei- oder dreimal)"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Often",
+      "target" : "Oft (ungefähr einmal täglich)"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Always",
+      "target" : "Sehr oft (mehrmals täglich)"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "It has seemed like my brain was not working as well as usual in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "It has seemed like my brain was not working as well as usual",
+      "target" : "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I have had to work harder than usual to keep track of what I was doing in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I have had to work harder than usual to keep track of what I was doing",
+      "target" : "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "I have had trouble shifting back and forth between different activities that require thinking in past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "I have had trouble shifting back and forth between different activities that require thinking",
+      "target" : "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "%cognitiveRawScore",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS short form - cognitive function 4a - version 2.0 raw score",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "PROMIS Cognitive Function SF 4a Raw Score",
+      "target" : "PROMIS Kognitive Funktion SF 4a Rohwert"
+    },
+    {
+      "id" : "Expression.expression",
+      "context" : "Expression.expression",
+      "source" : "iif(%cognitiveRawScore=4, 24.99, iif(%cognitiveRawScore=5, 28.95, iif(%cognitiveRawScore=6, 31.07, iif(%cognitiveRawScore=7, 32.94, iif(%cognitiveRawScore=8, 34.61, iif(%cognitiveRawScore=9, 36.17, iif(%cognitiveRawScore=10, 37.69, iif(%cognitiveRawScore=11, 39.19, iif(%cognitiveRawScore=12, 40.70, iif(%cognitiveRawScore=13, 42.25, iif(%cognitiveRawScore=14, 43.86, iif(%cognitiveRawScore=15, 45.54, iif(%cognitiveRawScore=16, 47.33, iif(%cognitiveRawScore=17, 49.28, iif(%cognitiveRawScore=18, 51.62, iif(%cognitiveRawScore=19, 54.58, iif(%cognitiveRawScore=20, 61.13, 50.0)))))))))))))))))",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS cognitive function - version 2.0 T-score",
+      "target" : null
+    },
+    {
+      "id" : "Questionnaire.item.text",
+      "context" : "Questionnaire.item.text",
+      "source" : "PROMIS Cognitive Function SF 4a T-Score",
+      "target" : "PROMIS Kognitive Funktion SF 4a T-Score"
+    }]
+  }]
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" original="Resource Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.title">
+             <notes>
+               <note id="n1">Questionnaire.title</note>
+             </notes>
+        <source>MII QST PRO PROMIS Cognitive Function SF 4a</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.publisher">
+             <notes>
+               <note id="n1">Questionnaire.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.description">
+             <notes>
+               <note id="n1">Questionnaire.description</note>
+             </notes>
+        <source>PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>PROMIS (Patient-Reported Outcomes Measurement Information System)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.copyright">
+             <notes>
+               <note id="n1">Questionnaire.copyright</note>
+             </notes>
+        <source>The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.
+
+The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.
+
+The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).
+
+Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen
+
+LOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS short form - cognitive function - abilities subset 4a - version 2.0</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS Cognitive Function Abilities 4a Short Form Questionnaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS Kognitive Funktion SF 4a</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>In the past 7 days</source>
+        <target>In den letzten 7 Tagen:</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>My thinking has been slow in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>My thinking has been slow</source>
+        <target>Ich war langsam beim Denken</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Not at all</source>
+        <target>Nie</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Rarely</source>
+        <target>Selten (einmal)</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Sometimes</source>
+        <target>Manchmal (zwei- oder dreimal)</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Often</source>
+        <target>Oft (ungefähr einmal täglich)</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Always</source>
+        <target>Sehr oft (mehrmals täglich)</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>It has seemed like my brain was not working as well as usual in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>It has seemed like my brain was not working as well as usual</source>
+        <target>Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I have had to work harder than usual to keep track of what I was doing in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>I have had to work harder than usual to keep track of what I was doing</source>
+        <target>Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>I have had trouble shifting back and forth between different activities that require thinking in past 7 days [PROMIS]</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>I have had trouble shifting back and forth between different activities that require thinking</source>
+        <target>Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>%cognitiveRawScore</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS short form - cognitive function 4a - version 2.0 raw score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS Cognitive Function SF 4a Raw Score</source>
+        <target>PROMIS Kognitive Funktion SF 4a Rohwert</target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Expression.expression">
+             <notes>
+               <note id="n1">Expression.expression</note>
+             </notes>
+        <source>iif(%cognitiveRawScore=4, 24.99, iif(%cognitiveRawScore=5, 28.95, iif(%cognitiveRawScore=6, 31.07, iif(%cognitiveRawScore=7, 32.94, iif(%cognitiveRawScore=8, 34.61, iif(%cognitiveRawScore=9, 36.17, iif(%cognitiveRawScore=10, 37.69, iif(%cognitiveRawScore=11, 39.19, iif(%cognitiveRawScore=12, 40.70, iif(%cognitiveRawScore=13, 42.25, iif(%cognitiveRawScore=14, 43.86, iif(%cognitiveRawScore=15, 45.54, iif(%cognitiveRawScore=16, 47.33, iif(%cognitiveRawScore=17, 49.28, iif(%cognitiveRawScore=18, 51.62, iif(%cognitiveRawScore=19, 54.58, iif(%cognitiveRawScore=20, 61.13, 50.0)))))))))))))))))</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS cognitive function - version 2.0 T-score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a" resname="Questionnaire.item.text">
+             <notes>
+               <note id="n1">Questionnaire.item.text</note>
+             </notes>
+        <source>PROMIS Cognitive Function SF 4a T-Score</source>
+        <target>PROMIS Kognitive Funktion SF 4a T-Score</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

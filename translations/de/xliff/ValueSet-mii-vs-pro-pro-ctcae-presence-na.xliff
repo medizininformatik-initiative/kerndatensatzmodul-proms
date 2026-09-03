@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ValueSet-mii-vs-pro-pro-ctcae-presence-na" original="Resource ValueSet-mii-vs-pro-pro-ctcae-presence-na" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-presence-na" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>MII_VS_PRO_PRO_CTCAE_Presence_NA</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-presence-na" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-presence-na" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-presence-na" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-pro-pro-ctcae-presence-na" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>3-option presence scale: Yes / No / Not applicable</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

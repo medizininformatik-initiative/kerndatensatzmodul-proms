@@ -317,11 +317,97 @@ pages:
       title: Guidance for Implementers
     uml-diagrams.md:
       title: UML Diagrams
+    use-cases.md:
+      title: Use Cases
+    module-description.md:
+      title: Module Description
+    project-context.md:
+      title: Context within the MII
+    datasets-and-descriptions.md:
+      title: Datasets and Descriptions
+    technical-implementation.md:
+      title: Technical Implementation
+    workflows.md:
+      title: Workflows
+    id-systematics.md:
+      title: ID Systematics
+    terminology-strategies.md:
+      title: Terminology Strategies
+    questionnaire-capabilities.md:
+      title: Questionnaire Capabilities
+    validation.md:
+      title: Validation
+    references.md:
+      title: References
 
   # The only Conformance-cluster PAGE of this guide; the MII-wide conformance
   # topics are menu links to the Meta module (see input/includes/menu.xml).
   security-and-privacy.md:
     title: Security and Privacy
+
+
+  # ── PRO-specific page groups (module content, not template scaffold) ────────
+  pro-library.md:
+    title: PRO Library
+    phq-9.md:
+      title: PHQ-9
+    phq-15.md:
+      title: PHQ-15
+    gad-7.md:
+      title: GAD-7
+    bdi-ii.md:
+      title: BDI-II
+    dass-21.md:
+      title: DASS-21
+    eq-5d-5l.md:
+      title: EQ-5D-5L
+    eq-5d-5l-scores.md:
+      title: EQ-5D-5L Scores
+    promis.md:
+      title: PROMIS
+    promis-29.md:
+      title: PROMIS-29
+    promis-16.md:
+      title: PROMIS-16
+    promis-depression.md:
+      title: PROMIS Depression SF 4a
+    eortc-qlq-c30.md:
+      title: EORTC QLQ-C30
+    eortc-qlq-c30-scoring.md:
+      title: EORTC QLQ-C30 Scoring
+    pro-ctcae.md:
+      title: PRO-CTCAE
+    proms-onkologisches-basisscreening.md:
+      title: Oncology Base Screening
+    midos2.md:
+      title: MIDOS2
+    whodas.md:
+      title: WHODAS 2.0
+    scoff.md:
+      title: SCOFF
+    wi-7.md:
+      title: Whiteley-7
+    pc-ptsd.md:
+      title: PC-PTSD
+    ssd-12.md:
+      title: SSD-12
+    isr-z.md:
+      title: ISR-Z
+    euronet-soma.md:
+      title: EURONET-SOMA
+    minimal-reference-questionnaires.md:
+      title: Minimal Reference Questionnaires
+
+  scoring.md:
+    title: Scoring
+    domain-based-scoring.md:
+      title: Domain-based Scoring
+    domains.md:
+      title: Domains
+    cross-instrument-mappings.md:
+      title: Cross-Instrument Mappings
+    derived-metrics.md:
+      title: Derived Metrics
 
   profiles.md:
     title: Profiles
@@ -331,8 +417,8 @@ pages:
     title: Capability Statements
   search-parameters.md: # OPTIONAL (0..1) — see docs/optional-pages.md
     title: Search Parameters
-  operations.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Operations
+    # REMOVED per M9: the module declares 0 OperationDefinitions, so the
+    # optional Operations page is not adopted (measured, see run.log 5.4a).
   logical-models.md:
     title: Logical Models
   value-sets.md: # OPTIONAL (0..1) — see docs/optional-pages.md
@@ -371,8 +457,7 @@ pages:
 
   # DEMONSTRATION page shipped with the scaffold — delete this entry, the page
   # and its German mirror once you have taken what you need from it.
-  rendering-artifacts.md:
-    title: Rendering Artifacts (demo)
+    # REMOVED: the template's demonstration page is not part of a real module.
 
 #
 #

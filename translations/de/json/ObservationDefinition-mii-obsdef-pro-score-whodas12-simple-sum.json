@@ -1,0 +1,31 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "WHODAS (World Health Organization Disability Assessment Schedule) 2.0 score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "WHODAS 2.0 12-Item Simple Sum Score (0-48)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "score",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher score indicates greater disability",
+      "target" : null
+    }]
+  }]
+}

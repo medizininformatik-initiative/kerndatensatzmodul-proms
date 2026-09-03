@@ -1,0 +1,19 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "EORTC QLQ-C30 Global Health Status / Quality of Life Score",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "{score}",
+      "target" : null
+    }]
+  }]
+}

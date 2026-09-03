@@ -1,0 +1,43 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "How intense was your average pain in the past 7 days [PROMIS]",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "PROMIS-29 Pain Intensity (0-10 Numeric Rating)",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "PROMIS-29 Profile v2.1 - Pain Intensity single item",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "1",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher scores indicate more pain",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Pain intensity scale 0-10",
+      "target" : null
+    }]
+  }]
+}

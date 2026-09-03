@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" original="Resource Bundle-mii-exa-pro-promis-depression-sf4a-bundle" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>Mustermann</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Max</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Sometimes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Rarely</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Often</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Survey</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS short form - emotional distress - depression 4a - version 1.0 raw score</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>{score}</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-pro-promis-depression-sf4a-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROMIS emotional distress - depression - version 1.0 Tscore</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

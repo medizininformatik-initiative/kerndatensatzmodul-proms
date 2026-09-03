@@ -1,0 +1,37 @@
+{
+  "id" : "ObservationDefinition-mii-obsdef-pro-score-bdi-ii",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Beck Depression Inventory II total score [BDI]",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Beck Depression Inventory II (BDI-II) Total Score",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Beck Depression Inventory II (BDI-II)",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "{score}",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Higher scores indicate more severe depression",
+      "target" : null
+    }]
+  }]
+}
