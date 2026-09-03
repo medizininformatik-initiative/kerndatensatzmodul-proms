@@ -274,7 +274,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant B",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T19:45:41+00:00",
+  "date" : "2026-09-03T20:03:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
