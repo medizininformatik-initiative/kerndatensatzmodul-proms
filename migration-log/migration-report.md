@@ -52,6 +52,7 @@ python3 .claude/skills/mii-ig-migration/scripts/verify-migration.py \
 | F7 | Liquid literal in changes.md wrapped in `{% raw %}` | Jekyll evaluates `{{…}}` inside backticks and comments (guardrail 8) | skeleton commit |
 | F8 | 8 resource-reference directives restored as links | `{{json:<id>}}` embeds a FOREIGN resource the artifact page does not render; operator caught the over-broad drop | `directive-handling-corrected` |
 
+| F9 | Release machinery vendored from template v0.11.3 + 5 first-publication fixes | guard now comment-stripping (3 false hits on our config); bootstrap creates both RSS feeds (LC_ALL=C dates) + package-registry.json; `-fhir-settings` on the `-go-publish` call; Pages switched to Actions THEN `PAGES_ACTIONS_ENABLED=true`; tag convention `vYYYY.N.N` pinned in release-prepare | commit `64b14d984` |
 ## ① Decision queue (Gate A — someone must choose)
 
 Each item: what, options, **if nobody acts**, effort, reversibility.
@@ -111,6 +112,7 @@ Generated from `migration-log/run.log` (7 runs, 100+ lines): Gate 0 preflight �
 - [ ] Gate B: R2–R6 narrative reviewed
 - [ ] Gate C: R1 language review of the 12 written English pages
 - [ ] CI green on the migration branch (Ontoserver-based QA re-read)
+- [ ] First `v`-tag after merge exercises the repaired guard + module-release path (watch it — every failure mode here is SILENT)
 - [ ] Gate D: release per KDS governance — **merging the publication branch publishes; nothing before this**
 
 ## Mini-glossary
