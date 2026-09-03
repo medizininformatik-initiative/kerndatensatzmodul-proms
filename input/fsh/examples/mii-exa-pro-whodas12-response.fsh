@@ -15,6 +15,11 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12"
 * status = #completed
+// A German patient answering the German rendering of the form: the answer
+// displays below are the German designations, so the resource declares its
+// language. Without it the QR inherits the IG default (en since the template
+// migration) and the validator flags every German display as Wrong Display.
+* language = #de
 * subject.reference = "Patient/mii-exa-pro-patient"
 * authored = "2026-02-01"
 
