@@ -6,3 +6,5 @@ Das abstrakte Score Instance Profil definiert die Struktur für konkrete Score-O
 - ValueQuantity mit numerischem Score
 - DerivedFrom-Referenz zur QuestionnaireResponse
 - Instantiates-Referenz zur ObservationDefinition (R5 Backport)
+
+**Beispiel** — eine konkrete Score-Observation, die von diesem abstrakten Profil erbt: [PHQ-9-Score](Observation-mii-exa-pro-phq-9-observation.html).

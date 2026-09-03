@@ -6,3 +6,5 @@ The abstract Score Instance profile defines the structure of concrete score obse
 - valueQuantity with the numeric score
 - A derivedFrom reference to the QuestionnaireResponse
 - An instantiates reference to the ObservationDefinition (R5 backport)
+
+**Example** — a concrete score observation inheriting from this abstract profile: [PHQ-9 score](Observation-mii-exa-pro-phq-9-observation.html).

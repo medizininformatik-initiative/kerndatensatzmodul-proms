@@ -9,3 +9,5 @@ This extension therefore defines the following capabilities for a questionnaire:
 5. `extractable`: how data is **transferred** from the questionnaire format into other FHIR resources
 
 The capabilities can be used **individually or in combination**, depending on the concrete scenario. They are implemented as separate boolean sub-extensions, which allows flexible combinations since several capabilities can be active at once.
+
+**Examples** — the EQ-5D-5L demonstrates how capability combinations change what the same instrument does: the [collectable variant](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.html) for data entry, the [displayable variant](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html) for presentation.

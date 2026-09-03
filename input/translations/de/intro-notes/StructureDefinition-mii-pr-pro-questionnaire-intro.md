@@ -5,3 +5,5 @@ Das abstrakte Questionnaire-Profil bildet die Grundlage für alle PRO-Frageböge
 - Status und Version für Lifecycle-Management
 - Capability-Extensions zur Verhaltenssteuerung (displayable, collectable, calculatable, extractable)
 - SDC-Extensions für erweiterte Funktionalität (Rendering, Berechnung, Extraktion)
+
+**Beispiel** — ein konkreter Fragebogen, der von diesem abstrakten Profil erbt: [PHQ-9](Questionnaire-mii-qst-pro-phq-9.html).

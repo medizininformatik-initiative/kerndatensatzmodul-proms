@@ -46,3 +46,5 @@ PHQ / PHQ-15 © Pfizer Inc. — **freely available** (public domain); no permiss
 
 - Kroenke K, Spitzer RL, Williams JBW. The PHQ-15: validity of a new measure for evaluating the severity of somatic symptoms. *Psychosomatic Medicine* 2002;64(2):258–266.
 - Gräfe K, Zipfel S, Herzog W, Löwe B. Screening psychischer Störungen mit dem „Gesundheitsfragebogen für Patienten (PHQ-D)". *Diagnostica* 2004;50(4):171–181. doi:10.1026/0012-1924.50.4.171
+
+**Example response:** [PHQ-15 QuestionnaireResponse](QuestionnaireResponse-mii-exa-pro-phq-15-response.html)

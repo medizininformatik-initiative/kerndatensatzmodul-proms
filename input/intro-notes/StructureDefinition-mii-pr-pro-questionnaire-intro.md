@@ -5,3 +5,5 @@ The abstract Questionnaire profile is the basis for all PRO questionnaires. It i
 - Status and version for lifecycle management
 - Capability extensions governing behaviour (displayable, collectable, calculatable, extractable)
 - SDC extensions for advanced functionality (rendering, calculation, extraction)
+
+**Example** — a concrete questionnaire inheriting from this abstract profile: [PHQ-9](Questionnaire-mii-qst-pro-phq-9.html).

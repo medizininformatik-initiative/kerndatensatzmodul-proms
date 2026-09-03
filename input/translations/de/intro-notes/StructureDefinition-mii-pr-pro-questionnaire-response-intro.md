@@ -5,3 +5,5 @@ Das abstrakte QuestionnaireResponse-Profil standardisiert die Struktur ausgefül
 - Verpflichtender Status (completed, in-progress, etc.)
 - Strukturierte Items mit Antworten
 - Authored-Zeitstempel für Verlaufsdokumentation
+
+**Beispiel** — eine konkrete Antwort, die von diesem abstrakten Profil erbt: [PHQ-9-Antwort](QuestionnaireResponse-mii-exa-pro-phq-9-response.html).

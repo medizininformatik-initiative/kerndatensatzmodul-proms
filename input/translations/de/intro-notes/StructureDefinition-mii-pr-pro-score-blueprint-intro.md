@@ -6,3 +6,5 @@ Das abstrakte Score Blueprint Profil definiert die Struktur für ObservationDefi
 - QualifiedInterval für Referenzbereiche (z.B. klinische Cut-offs)
 - Populationsspezifische Normwerte
 - Health-Correlation Extension für Score-Interpretationsrichtung
+
+**Beispiel** — eine konkrete Score-Definition, die dieses abstrakte Profil erweitert: [BDI-II-Score-Definition](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.html).

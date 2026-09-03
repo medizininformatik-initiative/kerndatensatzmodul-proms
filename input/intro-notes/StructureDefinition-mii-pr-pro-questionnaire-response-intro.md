@@ -5,3 +5,5 @@ The abstract QuestionnaireResponse profile standardises the structure of complet
 - A mandatory status (completed, in-progress, and so on)
 - Structured items carrying the answers
 - An authored timestamp for chronological documentation
+
+**Example** — a concrete response inheriting from this abstract profile: [PHQ-9 response](QuestionnaireResponse-mii-exa-pro-phq-9-response.html).

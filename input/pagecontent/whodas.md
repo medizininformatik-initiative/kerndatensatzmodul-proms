@@ -45,3 +45,5 @@ These terms are recorded machine-readably in the `copyright` element of the Ques
 - World Health Organization. *Measuring Health and Disability: Manual for WHO Disability Assessment Schedule (WHODAS 2.0)*. Geneva: WHO; 2010. ISBN 9789241547598.
 - Kirchberger I, et al. Validation of the WHODAS 2.0 in a population-based sample (MONICA/KORA). *Population Health Metrics* 2014;12:27. doi:10.1186/s12963-014-0027-8
 - Saltychev M, et al. Psychometric properties of the WHODAS 2.0 — systematic review. PMID 31335215.
+
+**Example response:** [WHODAS-12 QuestionnaireResponse](QuestionnaireResponse-mii-exa-pro-whodas12-response-01.html)

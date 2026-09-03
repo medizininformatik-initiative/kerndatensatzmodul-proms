@@ -6,3 +6,5 @@ The abstract Score Blueprint profile defines the structure of ObservationDefinit
 - qualifiedInterval for reference ranges (clinical cut-offs, for instance)
 - Population-specific norms
 - The health-correlation extension giving the direction of score interpretation
+
+**Example** — a concrete score definition extending this abstract profile: [BDI-II score definition](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.html).

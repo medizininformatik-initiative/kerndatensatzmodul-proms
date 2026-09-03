@@ -1552,3 +1552,9 @@
     directive handling: <tabs>/{{tree}}/{{xml}}/{{json}}/{{link}} and the FQL conformance+searchparameter blocks were DROPPED, not translated -- the IG Publisher renders all of them natively on the artefact page (fql-crosswalk)
     target tree now carries 0 Simplifier directives; the 8 remaining {% include %} hits in downloads.md are the template's own Jekyll includes
 2026-09-03T10:44:41Z  INFO   5.4  image-delocalised  input/images/Abstract_Profiles.png copied from the Simplifier tree; the branch-pinned raw.githubusercontent hotlink flagged by fql-scan is replaced by a relative Markdown image
+2026-09-03T10:50:38Z  WARN   5.4  directive-handling-corrected  the earlier claim 'all dropped directives are rendered natively by the IG Publisher' was TOO BROAD and is corrected here
+    measured: 23 of the directives address a SPECIFIC resource by id ({{json:mii-qst-pro-phq-9}}, {{xml:mii-exa-pro-whodas12-response-01}}, ...). Those are cross-references the artefact page does NOT render -- it renders its own artefact, not the referenced example
+    14 were already covered by the target page; 8 were genuinely lost and have now been restored as [Text](<Type>-<id>.html) links per fql-crosswalk; 1 is a self-reference ({{tree}} of the very extension the note sits on) and IS natively rendered
+    the bare {{tree}}/{{xml}}/{{json}}/<tabs> WITHOUT an id remain correctly dropped -- verified empirically: 0 of 103 intro-notes in the migrated onkologie module carry such includes
+2026-09-03T10:50:38Z  INFO   5.4  sushi-after-fix  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-fix.log
+2026-09-03T10:51:18Z  INFO   5.4  sushi-after-fix  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-fix.log raw_log_lines=53
