@@ -83,7 +83,7 @@ Each item: what, options, **if nobody acts**, effort, reversibility.
 | EORTC contained CS/VS profile violations | ~33 | pre-existing → D9 |
 | ConceptMap source-code "not valid" | 17 | pre-existing (LinkId CS scope) — known class |
 | CapabilityStatement searchParam definitions unresolvable | 15 | pre-existing (hl7 core SearchParameter canonicals) |
-| Image sources unresolvable | ~17→expected ~0 | **fixed** (F6), confirm in the running build |
+| Image sources unresolvable | 0 | **fixed and confirmed** (F6) |
 | Unknown region code | all pages | → D3 |
 | verify-migration (final): 250 IDENTISCH · 122 DIVERGIERT · 37 NICHT PRÜFBAR — every DIVERGIERT maps to a queue item: C4(66)→R4, C5(32)→R5 (menu budget trade-off), C2(12)→D9, R2(6)→D3, L3(2)→D1/D2 (deliberately open), L2(3)+P4(1) log formalities | | DIVERGIERT: C4→R4, C5→fixed F6, C2→D9, R1→F6, R2→D3, L2→retroactive lines written; NICHT PRÜFBAR rows named in the TSV |
 
