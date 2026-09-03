@@ -1558,3 +1558,12 @@
     the bare {{tree}}/{{xml}}/{{json}}/<tabs> WITHOUT an id remain correctly dropped -- verified empirically: 0 of 103 intro-notes in the migrated onkologie module carry such includes
 2026-09-03T10:50:38Z  INFO   5.4  sushi-after-fix  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-fix.log
 2026-09-03T10:51:18Z  INFO   5.4  sushi-after-fix  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-fix.log raw_log_lines=53
+2026-09-03T10:52:38Z  INFO   log  run-boundary  ===== run 3 starts  run=3 label=step 7 -- IG Publisher build + QA cwd=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms log=migration-log/run.log
+    Every line below belongs to run 3; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-09-03T10:55:10Z  ERROR  5.2  placeholder-substitution-defect  the step-3 skeleton substituted 'TODO:REVIEW' into TYPED fields; the IG Publisher aborted before QA: 'Invalid date/time format: TODO:REVIEW' parsing ImplementationGuide-mii-ig-pro.json
+    root cause: a review marker is valid in prose but not in a FHIR 'date' element. The skill's placeholder census checks for UNREPLACED {{...}}, which finds nothing here -- the placeholder WAS replaced, with a type-invalid literal
+2026-09-03T10:55:10Z  INFO   5.2  placeholder-resolution  date=2026-09-02 (the 2026.7.0 publication date -- a fact, not an invention); resource-approvalDate and artifact-topic extensions REMOVED rather than filled: the governance approval date and the NCI Thesaurus topic code are unknown, and inventing them would breach guardrail 3. Both are Gate-A items to re-add.
+2026-09-03T10:55:10Z  INFO   5.2  sushi-after-date-fix  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-date.log
+2026-09-03T10:55:51Z  INFO   5.2  sushi-after-date-fix  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-date.log raw_log_lines=53

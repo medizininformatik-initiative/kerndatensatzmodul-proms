@@ -1,0 +1,53 @@
+info  Running SUSHI v3.20.0 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    /Users/thome/code/fhir-profiling/kerndatensatzmodul-proms
+info  No output path specified. Output to .
+info  Using configuration file: /Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 140 documents with 55 aliases.
+info  Imported 64 definitions and 165 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
+info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
+info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
+info  Loaded de.basisprofil.r4#1.5.4 with 168 resources
+info  Loaded de.medizininformatikinitiative.kerndatensatz.meta#2026.0.0 with 173 resources
+info  Loaded hl7.fhir.uv.xver-r5.r4#0.1.0 with 4707 resources
+info  Loaded hl7.fhir.uv.crmi#2.0.0 with 123 resources
+info  Loaded hl7.fhir.uv.sdc#3.0.0 with 105 resources
+info  Loaded de.gematik.isik#5.1.1 with 238 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources
+info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources
+info  Loaded virtual package sushi-local#LOCAL with 0 resources
+info  Converting FSH to FHIR resources...
+info  Converted 26 FHIR StructureDefinitions.
+info  Converted 12 FHIR CodeSystems.
+info  Converted 26 FHIR ValueSets.
+info  Converted 165 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 213 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+warn  No "menu" property or file was found. Generate a menu.xml in the input/includes folder or specify a "menu" property in sushi-config.yaml.
+info  Generated ImplementationGuide-mii-ig-pro.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |      23       |      2       |      1       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         26         |        12         |        165         | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| This looks a bit fishy.                0 Errors       1 Warning |
+===================================================================
+|    You are using SUSHI version 3.20.0, but the latest stable    |
+| release is version 3.20.1. To install the latest release, run:  |
+|                    npm install -g fsh-sushi                     |
+===================================================================
+

@@ -1,0 +1,30 @@
+FHIR IG Publisher Version 2.2.11 (Git# 0ec4807574e3). Built 2026-07-15T17:53:55.408Z (49 days old)  
+Detected Java version: 21.0.11 from /opt/java/openjdk on Linux/aarch64 (64bit). 4096MB available    
+dir = /workspace, path = /opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig ig.ini -tx http://127.0.0.1:8090/fhir -fhir-settings /workspace/.github/fhir-settings.json
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Thursday, September 3, 2026, 10:56:04 AM Coordinated Universal Time (2026-09-03T10:56:04Z)
+                                                                                                    
+Build FHIR IG from /workspace/ig.ini                                                                 (00:00.019 / 00:00.020, 32Mb)
+FHIR settings loaded from /workspace/.github/fhir-settings.json                                      (00:00.002 / 00:00.022, 32Mb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.002 / 00:00.025, 32Mb)
+Found dependency on de.basisprofil.r4#1.5.4 in Sushi config. Pre-installing                          (00:00.005 / 00:00.030, 32Mb)
+[39mInstalling de.basisprofil.r4#1.5.4 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling de.basisprofil.r4#1.5.4
+[0;39m[39m done.
+[0;39m[39m loaded @ /root/.fhir/packages/de.basisprofil.r4#1.5.4
+[0;39mFound dependency on de.medizininformatikinitiative.kerndatensatz.meta#2026.0.0 in Sushi config. Pre-installing (00:02.914 / 00:02.945, 60Mb)
+[39mInstalling de.medizininformatikinitiative.kerndatensatz.meta#2026.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling de.medizininformatikinitiative.kerndatensatz.meta#2026.0.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /root/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.meta#2026.0.0
+[0;39mFound dependency on hl7.fhir.uv.xver-r5.r4#0.1.0 in Sushi config. Pre-installing                     (00:01.533 / 00:04.478, 27Mb)
+[39mInstalling hl7.fhir.uv.xver-r5.r4#0.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.xver-r5.r4#0.1.0
+[0;39m
