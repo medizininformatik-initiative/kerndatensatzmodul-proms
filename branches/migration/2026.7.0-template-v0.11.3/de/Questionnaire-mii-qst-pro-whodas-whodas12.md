@@ -73,7 +73,7 @@ WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODA
   "title" : "MII QST PRO WHODAS 2.0 12-Item",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T19:26:10+00:00",
+  "date" : "2026-09-03T19:45:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

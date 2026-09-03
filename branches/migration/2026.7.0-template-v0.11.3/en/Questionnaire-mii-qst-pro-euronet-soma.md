@@ -65,7 +65,7 @@ EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and in
   "title" : "MII QST PRO EURONET-SOMA",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T19:26:10+00:00",
+  "date" : "2026-09-03T19:45:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

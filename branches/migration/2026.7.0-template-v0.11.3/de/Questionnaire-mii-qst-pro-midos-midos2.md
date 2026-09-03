@@ -74,7 +74,7 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-03T19:26:10+00:00",
+  "date" : "2026-09-03T19:45:41+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
