@@ -1,30 +1,30 @@
-Das MII PRO Modul definiert ein logisches Datenmodell für die standardisierte Erfassung und Verarbeitung von Patient-Reported Outcomes. Dieses Informationsmodell bildet die konzeptuelle Grundlage für alle FHIR-Profile und beschreibt die Beziehungen zwischen den verschiedenen Komponenten des PRO-Workflows.
+The MII PRO module defines a logical data model for the standardized collection and processing of Patient-Reported Outcomes. This information model forms the conceptual foundation for all FHIR profiles and describes the relationships between the various components of the PRO workflow.
 
-Die offiziell beschlossene Version des Informationsmodells befindet sich auf [Art-Decor](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.3758&conceptEffectiveDate=2024-06-27T13%3A15%3A46&language=de-DE). Zur Vereinheitlichung der Repräsentation wurde das Informationsmodell zusätzlich als FHIR Logical Model abgebildet:
+The officially approved version of the information model is available on [Art-Decor](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.3758&conceptEffectiveDate=2024-06-27T13%3A15%3A46&language=de-DE). For a unified representation, the information model has additionally been expressed as a FHIR Logical Model:
 
 [MII PRO Logical Model](StructureDefinition-mii-lm-pro.html)
 
-*Es ist zu beachten, dass das Logical Model rein auf die Abbildung der Datenelemente und deren Beschreibung abzielt. Verwendete Datentypen und Kardinalitäten sind nicht als verpflichtend anzusehen. Dies wird abschließend durch die FHIR-Profile festgelegt. Für jedes Element innerhalb des Logical Models existiert ein 1:1 Mapping auf ein Element einer konkreten FHIR Ressource.*
+*Please note that the Logical Model is purely aimed at representing the data elements and their descriptions. The data types and cardinalities used should not be considered binding. These are ultimately defined by the FHIR profiles. For each element within the Logical Model, there is a 1:1 mapping to an element of a concrete FHIR resource.*
 
-| Logischer Datensatz | Beschreibung |
+| Logical Dataset | Description |
 |---|---|
-| Fragebogen | Die Fragebogenvorlage, die Struktur und Inhalt eines PRO-Instruments definiert |
-| Fragebogen.Name | Der Name des Fragebogeninstruments |
-| Fragebogen.Version | Die Version des Fragebogens |
-| Fragebogen.Sprache | Die Sprache des Fragebogens |
-| Fragebogen.Frage | Einzelne im Fragebogen enthaltene Fragen |
-| Fragebogen.Frage.FrageId | Eindeutiger Identifier für jede Frage |
-| Fragebogen.Frage.FrageText | Der Text der Frage |
-| Fragebogen.Frage.Antwortoptionen | Verfügbare Antwortoptionen für die Frage |
-| AusgefüllterFragebogen | Ein ausgefüllter Fragebogen mit Patientenantworten |
-| AusgefüllterFragebogen.Fragebogen | Referenz auf die zugrundeliegende Fragebogenvorlage |
-| AusgefüllterFragebogen.Patient | Referenz auf den Patienten, der den Fragebogen ausgefüllt hat |
-| AusgefüllterFragebogen.Datum | Datum der Fragebogenausfüllung |
-| AusgefüllterFragebogen.Antwort | Die einzelnen gegebenen Antworten |
-| Score | Ein berechneter Score, abgeleitet aus Fragebogenantworten |
-| Score.ScoreDefinition | Referenz auf die Score-Definition (Berechnungsalgorithmus) |
-| Score.Wert | Der berechnete Score-Wert |
-| Score.Interpretation | Klinische Interpretation des Scores |
-| Domäne | Eine Gesundheitsdomäne für die instrumentenübergreifende Klassifikation |
-| Domäne.Name | Name der Gesundheitsdomäne |
-| Domäne.Skalierung | Skalierungsmerkmale der Domäne |
+| Fragebogen | The questionnaire template that defines the structure and content of a PRO instrument |
+| Fragebogen.Name | The name of the questionnaire instrument |
+| Fragebogen.Version | The version of the questionnaire |
+| Fragebogen.Sprache | The language of the questionnaire |
+| Fragebogen.Frage | Individual questions contained in the questionnaire |
+| Fragebogen.Frage.FrageId | Unique identifier for each question |
+| Fragebogen.Frage.FrageText | The text of the question |
+| Fragebogen.Frage.Antwortoptionen | Available answer options for the question |
+| AusgefuellterFragebogen | A completed questionnaire with patient responses |
+| AusgefuellterFragebogen.Fragebogen | Reference to the underlying questionnaire template |
+| AusgefuellterFragebogen.Patient | Reference to the patient who completed the questionnaire |
+| AusgefuellterFragebogen.Datum | Date when the questionnaire was completed |
+| AusgefuellterFragebogen.Antwort | The individual answers provided |
+| Score | A calculated score derived from questionnaire responses |
+| Score.ScoreDefinition | Reference to the score definition (calculation algorithm) |
+| Score.Wert | The calculated score value |
+| Score.Interpretation | Clinical interpretation of the score |
+| Domaene | A health domain for cross-instrument classification |
+| Domaene.Name | Name of the health domain |
+| Domaene.Skalierung | Scaling characteristics of the domain |

@@ -1,0 +1,1379 @@
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  params  rules=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms/.claude/skills/mii-ig-migration/references/fql-rules.tsv  targets=input/pagecontent implementation-guides  defaulted=1
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  target  path=input/pagecontent  kind=dir  files=45
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  target  path=implementation-guides  kind=dir  files=53
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Abgeleitete-Metriken/Index.page.md:1  [page-title]
+    found:  # {{page-title}} 
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Beschreibung-von-Anwendungsfaellen.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Beschreibung-Modul-PROs.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Cross-Instrument-Mappings.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Domaenen.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Domain-basiertes-Scoring.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Kontext-im-Gesamtprojekt-Bezuege-zu-anderen-Modulen.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EURONET-SOMA/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/GAD-7/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/ISR-Z/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:22Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PC-PTSD/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/SCOFF/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/SSD-12/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WI-7/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Referenzen.page.md:5  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Release-Notes.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/ID-Systematik.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Index.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/QuestionnaireCapabilites.page.md:8  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Scoring.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Terminologie-Strategien.page.md:4  [page-title]
+    found:  ## {{page-title}}
+    action: Remove -- the page title comes from the template page set and input/includes/menu.xml.
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/UML.page.md:93  [pagelink]
+    found:  Details zur FHIR-Umsetzung sind in der technischen Implementierung (siehe {{page
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Index.page.md:12  [pagelink]
+    found:  **{{pagelink:Gesundheitsdomaenen}}**  
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Index.page.md:15  [pagelink]
+    found:  **{{pagelink:Domain-basiertes-Scoring}}**  
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Index.page.md:18  [pagelink]
+    found:  **{{pagelink:Cross-Instrument-Mappings}}**  
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Index.page.md:77  [pagelink]
+    found:  Weitere Details siehe {{pagelink:Domain-basiertes-Scoring}} und {{pagelink:Cross
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:129  [pagelink]
+    found:  - {{pagelink:PHQ-9}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:130  [pagelink]
+    found:  - {{pagelink:EQ-5D-5L}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:131  [pagelink]
+    found:  - {{pagelink:BDI-II}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:132  [pagelink]
+    found:  - {{pagelink:PROMIS}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:133  [pagelink]
+    found:  - {{pagelink:EORTC-QLQ-C30}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:134  [pagelink]
+    found:  - {{pagelink:DASS-21}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:135  [pagelink]
+    found:  - {{pagelink:PRO-CTCAE}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md:136  [pagelink]
+    found:  - {{pagelink:Minimal-Reference-Questionnaires}}
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:10  [pagelink]
+    found:  Um Fragebögen für unterschiedliche Verwendungsmöglichkeiten und Zwecke hinsichtl
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Index.page.md:9  [pagelink]
+    found:  Alle Profile rund um Fragebogen-Vorlagen, ausgefüllte Fragebögen und Scores sind
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Index.page.md:13  [pagelink]
+    found:  Für Questionnaire-Workflows und Capabilities siehe {{pagelink:MIIIGModulPRO/Tech
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Index.page.md:17  [pagelink]
+    found:  Für die verschiedenen Aspekte des Scorings siehe {{pagelink:MIIIGModulPRO/Techni
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Index.page.md:21  [pagelink]
+    found:  Für die ID-Systematik siehe {{pagelink:MIIIGModulPRO/Technische-Implementierung/
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Index.page.md:25  [pagelink]
+    found:  Für die Nutzung von ValueSets siehe {{pagelink:MIIIGModulPRO/Technische-Implemen
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:23Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Workflows.page.md:27  [pagelink]
+    found:  Auf Grundlage der Anwendungsszenarien und den dort abgeleiteten Anforderungen (s
+    action: [Text](<Type>-<id>.html) -- hint = artefact name -> id (e.g. MII_PR_X -> mii-pr-x).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:62  [link]
+    found:  <tab title="Link">{{link}}</tab>
+    action: Artefact link [Text](<Type>-<id>.html).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:62  [link]
+    found:  <tab title="Link">{{link}}</tab>
+    action: Artefact link [Text](<Type>-<id>.html).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:61  [link]
+    found:  <tab title="Link">{{link}}</tab>
+    action: Artefact link [Text](<Type>-<id>.html).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:61  [link]
+    found:  <tab title="Link">{{link}}</tab>
+    action: Artefact link [Text](<Type>-<id>.html).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:51  [link]
+    found:  <tab title="Link">{{link}}</tab>
+    action: Artefact link [Text](<Type>-<id>.html).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:48  [link]
+    found:  <tab title="Link">{{link}}</tab>
+    action: Artefact link [Text](<Type>-<id>.html).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=input/pagecontent/changes.md:29  [render]
+    found:  - Fixed: Broken `{% raw %}{{render:infobox}}{% endraw %}` syntax replaced with M
+    action: Image ({{render:file.png|svg|jpg|gif}}) -> copy into input/images/ + <img src="file"> or a Markdown image; otherwise a resource/artefact/bare id ({{render:CapabilityStatement}}, {{render:mii-cs-x}}) -> usually remove (the artefact page is generated) OR {% include <Type>-<id>-<view>.xhtml %}.
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Release-Notes.page.md:256  [render]
+    found:  - Fixed: Kaputte {{render:infobox}} Syntax durch Markdown-Blockquotes ersetzt (D
+    action: Image ({{render:file.png|svg|jpg|gif}}) -> copy into input/images/ + <img src="file"> or a Markdown image; otherwise a resource/artefact/bare id ({{render:CapabilityStatement}}, {{render:mii-cs-x}}) -> usually remove (the artefact page is generated) OR {% include <Type>-<id>-<view>.xhtml %}.
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Datensaetze-inkl-Beschreibungen.page.md:11  [tree]
+    found:  {{tree, expand}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:38  [tree]
+    found:  {{tree:mii-qst-pro-bdi-bdi2}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:101  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:117  [tree]
+    found:  {{tree:mii-cs-pro-dass-21}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:128  [tree]
+    found:  {{tree:mii-vs-pro-dass-21-answer-list}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:53  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:83  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureD
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:102  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureD
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:121  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureD
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:37  [tree]
+    found:  {{tree:mii-qst-pro-eq-5d-5l-minimal}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:61  [tree]
+    found:  {{tree:mii-qst-pro-euroqol-eq5d5l-displayable}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:85  [tree]
+    found:  {{tree:mii-qst-pro-euroqol-eq5d5l-collectable}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:109  [tree]
+    found:  {{tree:mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:34  [tree]
+    found:  {{tree:mii-qst-pro-midos-midos2}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:44  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:64  [tree]
+    found:  {{tree:mii-exa-pro-phq-15-response}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:45  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:85  [tree]
+    found:  {{tree:mii-exa-pro-phq-9-response}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:31  [tree]
+    found:  {{tree:mii-qst-pro-pro-ctcae-onkologisches-basisscreening}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:29  [tree]
+    found:  {{tree:mii-qst-pro-promis-16}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:31  [tree]
+    found:  {{tree:mii-qst-pro-promis-29-de}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:18  [tree]
+    found:  {{tree:mii-qst-pro-promis-depression-sf4a}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:50  [tree]
+    found:  {{tree:mii-qst-pro-promis-depression-sf4a}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:44  [tree]
+    found:  {{tree:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:62  [tree]
+    found:  {{tree:mii-exa-pro-whodas12-response-01}}
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:36  [tree]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:36  [tree]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:35  [tree]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:35  [tree]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:25  [tree]
+    found:  <tab title="Darstellung">{{tree:https://www.medizininformatik-initiative.de/fhir
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:24Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:22  [tree]
+    found:  <tab title="Darstellung">{{tree:mii-ex-pro-score-score-health-correlation}}</tab
+    action: {% include <Type>-<id>-snapshot.xhtml %} (or -dict for the element dictionary / -diff).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:44  [xml]
+    found:  {{xml:mii-qst-pro-bdi-bdi2}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:107  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnai
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:59  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnai
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:86  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDe
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:105  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDe
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:124  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDe
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:43  [xml]
+    found:  {{xml:mii-qst-pro-eq-5d-5l-minimal}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:67  [xml]
+    found:  {{xml:mii-qst-pro-euroqol-eq5d5l-displayable}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:91  [xml]
+    found:  {{xml:mii-qst-pro-euroqol-eq5d5l-collectable}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:115  [xml]
+    found:  {{xml:mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:40  [xml]
+    found:  {{xml:mii-qst-pro-midos-midos2}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:50  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnai
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:70  [xml]
+    found:  {{xml:mii-exa-pro-phq-15-response}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:51  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnai
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:91  [xml]
+    found:  {{xml:mii-exa-pro-phq-9-response}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:37  [xml]
+    found:  {{xml:mii-qst-pro-pro-ctcae-onkologisches-basisscreening}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:35  [xml]
+    found:  {{xml:mii-qst-pro-promis-16}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:37  [xml]
+    found:  {{xml:mii-qst-pro-promis-29-de}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:24  [xml]
+    found:  {{xml:mii-qst-pro-promis-depression-sf4a}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:56  [xml]
+    found:  {{xml:mii-qst-pro-promis-depression-sf4a}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:50  [xml]
+    found:  {{xml:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnai
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:68  [xml]
+    found:  {{xml:mii-exa-pro-whodas12-response-01}}
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:60  [xml]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:60  [xml]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:59  [xml]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:59  [xml]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:49  [xml]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:46  [xml]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: {% include <Type>-<id>-xml.xhtml %} (also {{xml:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:41  [json]
+    found:  {{json:mii-qst-pro-bdi-bdi2}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:104  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:120  [json]
+    found:  {{json:mii-cs-pro-dass-21}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:131  [json]
+    found:  {{json:mii-vs-pro-dass-21-answer-list}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:56  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:89  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureD
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:108  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureD
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:127  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureD
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:40  [json]
+    found:  {{json:mii-qst-pro-eq-5d-5l-minimal}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:64  [json]
+    found:  {{json:mii-qst-pro-euroqol-eq5d5l-displayable}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:88  [json]
+    found:  {{json:mii-qst-pro-euroqol-eq5d5l-collectable}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:112  [json]
+    found:  {{json:mii-qst-pro-euroqol-eq5d5l-answer-coding}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:37  [json]
+    found:  {{json:mii-qst-pro-midos-midos2}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:47  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:67  [json]
+    found:  {{json:mii-exa-pro-phq-15-response}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:48  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:88  [json]
+    found:  {{json:mii-exa-pro-phq-9-response}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:34  [json]
+    found:  {{json:mii-qst-pro-pro-ctcae-onkologisches-basisscreening}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:32  [json]
+    found:  {{json:mii-qst-pro-promis-16}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:34  [json]
+    found:  {{json:mii-qst-pro-promis-29-de}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:21  [json]
+    found:  {{json:mii-qst-pro-promis-depression-sf4a}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:53  [json]
+    found:  {{json:mii-qst-pro-promis-depression-sf4a}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:47  [json]
+    found:  {{json:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionna
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:65  [json]
+    found:  {{json:mii-exa-pro-whodas12-response-01}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:61  [json]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:84  [json]
+    found:  {{json:mii-exa-pro-phq-9-observation}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:61  [json]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:84  [json]
+    found:  {{json:mii-obsdef-pro-score-bdi-ii}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:60  [json]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:83  [json]
+    found:  {{json:mii-qst-pro-phq-9}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:60  [json]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:83  [json]
+    found:  {{json:mii-exa-pro-phq-9-response}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:50  [json]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:128  [json]
+    found:  {{json:mii-qst-pro-euroqol-eq5d5l-displayable}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:131  [json]
+    found:  {{json:mii-qst-pro-euroqol-eq5d5l-collectable}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:134  [json]
+    found:  {{json:mii-qst-pro-euroqol-eq5d5l-collectable}}
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:25Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:47  [json]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: {% include <Type>-<id>-json-html.xhtml %} (also {{json:Example}}).
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Datensaetze-inkl-Beschreibungen.page.md:16  [fql-tag]
+    found:  <fql headers="true">
+    action: Element table: {% include <Type>-<id>-dict.xhtml %}; metadata (url/status/version): drop it, the header is generated; otherwise a static table or Liquid over site.data.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:24  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:38  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:48  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:69  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:24  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:38  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:48  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:69  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:23  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:37  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:47  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:68  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:23  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:37  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:47  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:68  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:27  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:37  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:24  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:34  [fql-at]
+    found:  @```
+    action: Simplifier FQL code block: treat as <fql>.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:36  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:37  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:39  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:40  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:42  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:43  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:45  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md:46  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:91  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:92  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:99  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:100  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:102  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:103  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:105  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:106  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:108  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:109  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:115  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:116  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:118  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:119  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:121  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:122  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:126  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:127  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:129  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:130  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:132  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md:133  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:43  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:44  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:51  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:52  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:26Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:54  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:55  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:57  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:58  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:60  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md:61  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:78  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:79  [tabs]
+    found:  <tab title="Table">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:81  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:82  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:84  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:85  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:87  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:88  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:90  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:91  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:97  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:98  [tabs]
+    found:  <tab title="Table">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:100  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:101  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:103  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:104  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:106  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:107  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:109  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:110  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:116  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:117  [tabs]
+    found:  <tab title="Table">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:119  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:120  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:122  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:123  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:125  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:126  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:128  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:129  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:27  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:28  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:35  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:36  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:38  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:39  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:41  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:42  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:44  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:45  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:51  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:52  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:59  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:60  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:62  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:63  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:65  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:66  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:68  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:69  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:75  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:76  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:83  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:84  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:86  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:87  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:89  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:90  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:92  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:93  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:99  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:100  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:107  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:108  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:110  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:111  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:113  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:114  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:116  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md:117  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:24  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:25  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:32  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:33  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:35  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:36  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:38  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:39  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:41  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md:42  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:34  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:35  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:42  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:43  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:45  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:46  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:48  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:49  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:51  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:52  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:62  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:63  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:65  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:66  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:68  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:69  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:71  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md:72  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:35  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:36  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:43  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:44  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:46  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:47  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:49  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:50  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:52  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:53  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:83  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:84  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:86  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:87  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:89  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:90  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:92  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md:93  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:21  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:22  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:29  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:30  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:32  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:33  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:35  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:36  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:38  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md:39  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:19  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:20  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:27  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:28  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:30  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:31  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:33  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:34  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:36  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md:37  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:21  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:22  [tabs]
+    found:  <tab title="Vorschau (Deutsch)">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:29  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:30  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:32  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:33  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:35  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:36  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:38  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md:39  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:8  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:9  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:16  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:17  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:19  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:20  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:22  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:27Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:23  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:25  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:26  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:48  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:49  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:51  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:52  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:54  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:55  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:57  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md:58  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:34  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:35  [tabs]
+    found:  <tab title="Vorschau">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:42  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:43  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:45  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:46  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:48  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:49  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:51  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:52  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:60  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:61  [tabs]
+    found:  <tab title="Tree">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:63  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:64  [tabs]
+    found:  <tab title="JSON">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:66  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:67  [tabs]
+    found:  <tab title="XML">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:69  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md:70  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:35  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:36  [tabs]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:37  [tabs]
+    found:  <tab title="Beschreibung">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:59  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:60  [tabs]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:61  [tabs]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:62  [tabs]
+    found:  <tab title="Link">{{link}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md:63  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:35  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:36  [tabs]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:37  [tabs]
+    found:  <tab title="Beschreibung">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:59  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:60  [tabs]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:61  [tabs]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:62  [tabs]
+    found:  <tab title="Link">{{link}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md:63  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:34  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:35  [tabs]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:36  [tabs]
+    found:  <tab title="Beschreibung">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:58  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:59  [tabs]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:60  [tabs]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:61  [tabs]
+    found:  <tab title="Link">{{link}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md:62  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:34  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:35  [tabs]
+    found:  <tab title="Darstellung">{{tree, buttons}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:36  [tabs]
+    found:  <tab title="Beschreibung">
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:58  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:59  [tabs]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:60  [tabs]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:61  [tabs]
+    found:  <tab title="Link">{{link}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md:62  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:24  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:25  [tabs]
+    found:  <tab title="Darstellung">{{tree:https://www.medizininformatik-initiative.de/fhir
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:26  [tabs]
+    found:  <tab title="Beschreibung"> 
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:48  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:49  [tabs]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:50  [tabs]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:51  [tabs]
+    found:  <tab title="Link">{{link}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:52  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:126  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:127  [tabs]
+    found:  <tab title="EQ-5D-5L (displayable)"> 
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:129  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:130  [tabs]
+    found:  <tab title="EQ-5D-5L (collectable)"> 
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:132  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:133  [tabs]
+    found:  <tab title="EQ-5D-5L (calculatable)"> 
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:135  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md:136  [tabs]
+    found:  </tabs> 
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:21  [tabs]
+    found:  <tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:22  [tabs]
+    found:  <tab title="Darstellung">{{tree:mii-ex-pro-score-score-health-correlation}}</tab
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:23  [tabs]
+    found:  <tab title="Beschreibung"> 
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:45  [tabs]
+    found:  </tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:46  [tabs]
+    found:  <tab title="XML">{{xml}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:47  [tabs]
+    found:  <tab title="JSON">{{json}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:48  [tabs]
+    found:  <tab title="Link">{{link}}</tab>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md:49  [tabs]
+    found:  </tabs>
+    action: <tabs>/<tab> (rendering/XML/JSON): replace with the matching {% include %} fragments.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Domain-basiertes-Scoring.page.md:96  [img-hotlink]
+    found:  <img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-i
+    action: Branch-pinned raw-repo image hotlink (embedded via src= or offered as a Markdown link): copy the file into input/images/ (flat -- verify basenames are unique) and rewrite to a relative Markdown image ![Alt](file.svg) or link. Absolute raw links keep rendering after migration but break when cleanup retires the old tree, and formally published IG versions would render the moving branch state. Bare URLs in provenance comments are deliberately not matched.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Domain-basiertes-Scoring.page.md:140  [img-hotlink]
+    found:  <img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-i
+    action: Branch-pinned raw-repo image hotlink (embedded via src= or offered as a Markdown link): copy the file into input/images/ (flat -- verify basenames are unique) and rewrite to a relative Markdown image ![Alt](file.svg) or link. Absolute raw links keep rendering after migration but break when cleanup retires the old tree, and formally published IG versions would render the moving branch state. Bare URLs in provenance comments are deliberately not matched.
+2026-09-03T10:36:28Z  INFO   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Domain-basiertes-Scoring.page.md:155  [img-hotlink]
+    found:  <img decoding="async" src="https://raw.githubusercontent.com/medizininformatik-i
+    action: Branch-pinned raw-repo image hotlink (embedded via src= or offered as a Markdown link): copy the file into input/images/ (flat -- verify basenames are unique) and rewrite to a relative Markdown image ![Alt](file.svg) or link. Absolute raw links keep rendering after migration but break when cleanup retires the old tree, and formally published IG versions would render the moving branch state. Bare URLs in provenance comments are deliberately not matched.
+2026-09-03T10:36:29Z  WARN   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Index.page.md:6  [UNKNOWN]
+    found:  {{index:current}}
+    action: no rule matched -- review, and add a line to fql-rules.tsv if it recurs.
+2026-09-03T10:36:29Z  WARN   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:80  [UNKNOWN]
+    found:  {{table:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Structure
+    action: no rule matched -- review, and add a line to fql-rules.tsv if it recurs.
+2026-09-03T10:36:29Z  WARN   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:99  [UNKNOWN]
+    found:  {{table:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Structure
+    action: no rule matched -- review, and add a line to fql-rules.tsv if it recurs.
+2026-09-03T10:36:29Z  WARN   5.4  fql-scan  finding  at=implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md:118  [UNKNOWN]
+    found:  {{table:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Structure
+    action: no rule matched -- review, and add a line to fql-rules.tsv if it recurs.
+2026-09-03T10:36:29Z  INFO   5.4  fql-scan  result  mapped=454 unknown=4 files=98 strict=1  exit=1
+    Transform per references/fql-crosswalk.md; when in doubt mark TODO:REVIEW.

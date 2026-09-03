@@ -1,168 +1,168 @@
-### Übersicht
+### Overview
 
-Das **EORTC QLQ-C30** (European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire - Core 30) ist ein standardisiertes, international anerkanntes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität von Krebspatienten.
+The **EORTC QLQ-C30** (European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire - Core 30) is a standardized, internationally recognized instrument for assessing health-related quality of life in cancer patients.
 
-#### Grundlegende Eigenschaften
+#### Key Properties
 
-- **30 Fragen** in englischer Sprache (primär) mit deutschen Übersetzungen
-- **Multidimensionale Erfassung** der Lebensqualität über 15 Subskalen
-- **Standardisierte 0-100 Punkteskala** nach linearer Transformation
-- **Validiert** für onkologische Patienten in unterschiedlichen Behandlungsphasen
-- **Modular erweiterbar** durch krankheitsspezifische Zusatzmodule
+- **30 questions** in English (primary language) with German translations
+- **Multidimensional assessment** of quality of life across 15 subscales
+- **Standardized 0-100 point scale** after linear transformation
+- **Validated** for oncological patients in various treatment phases
+- **Modularly extensible** through disease-specific add-on modules
 
-### Fragebogen-Struktur
+### Questionnaire Structure
 
-#### Funktionsskalen (5 Skalen)
-**Bewertung: Höhere Werte = Bessere Funktion/Lebensqualität**
+#### Function Scales (5 Scales)
+**Rating: Higher values = Better function/quality of life**
 
-| Skala | Items | Beschreibung |
-|-------|-------|--------------|
-| **Körperliche Funktionsfähigkeit** (PF) | Q1-5 | Schwierigkeiten bei körperlichen Aktivitäten |
-| **Rollenfunktion** (RF) | Q6-7 | Einschränkungen bei Arbeit/täglichen Aktivitäten |
-| **Emotionale Funktionsfähigkeit** (EF) | Q21-24 | Emotionale Belastung und Stimmung |
-| **Kognitive Funktionsfähigkeit** (CF) | Q20, Q25 | Konzentration und Gedächtnis |
-| **Soziale Funktionsfähigkeit** (SF) | Q26-27 | Sozialer Rückzug und Familienaktivitäten |
+| Scale | Items | Description |
+|-------|-------|-------------|
+| **Physical Functioning** (PF) | Q1-5 | Difficulty with physical activities |
+| **Role Functioning** (RF) | Q6-7 | Limitations in work/daily activities |
+| **Emotional Functioning** (EF) | Q21-24 | Emotional distress and mood |
+| **Cognitive Functioning** (CF) | Q20, Q25 | Concentration and memory |
+| **Social Functioning** (SF) | Q26-27 | Social withdrawal and family activities |
 
-#### Symptomskalen (3 Skalen)
-**Bewertung: Höhere Werte = Stärkere Symptombelastung**
+#### Symptom Scales (3 Scales)
+**Rating: Higher values = Greater symptom burden**
 
-| Skala | Items | Beschreibung |
-|-------|-------|--------------|
-| **Fatigue** (FA) | Q10, Q12, Q18 | Müdigkeit und Erschöpfung |
-| **Übelkeit/Erbrechen** (NV) | Q14-15 | Gastrointestinale Symptome |
-| **Schmerz** (PA) | Q9, Q19 | Schmerzintensität und -beeinträchtigung |
+| Scale | Items | Description |
+|-------|-------|-------------|
+| **Fatigue** (FA) | Q10, Q12, Q18 | Tiredness and exhaustion |
+| **Nausea/Vomiting** (NV) | Q14-15 | Gastrointestinal symptoms |
+| **Pain** (PA) | Q9, Q19 | Pain intensity and interference |
 
-#### Einzelsymptome (6 Items)
-**Bewertung: Höhere Werte = Stärkere Symptombelastung**
+#### Single Symptoms (6 Items)
+**Rating: Higher values = Greater symptom burden**
 
-| Item | Frage | Symptom |
-|------|-------|---------|
-| **Dyspnoe** (DY) | Q8 | Atembeschwerden |
-| **Schlaflosigkeit** (SL) | Q11 | Schlafstörungen |
-| **Appetitlosigkeit** (AP) | Q13 | Verminderter Appetit |
-| **Verstopfung** (CO) | Q16 | Obstipation |
-| **Durchfall** (DI) | Q17 | Diarrhoe |
-| **Finanzielle Schwierigkeiten** (FI) | Q28 | Ökonomische Belastung |
+| Item | Question | Symptom |
+|------|----------|---------|
+| **Dyspnoea** (DY) | Q8 | Breathing difficulties |
+| **Insomnia** (SL) | Q11 | Sleep disturbance |
+| **Appetite Loss** (AP) | Q13 | Decreased appetite |
+| **Constipation** (CO) | Q16 | Constipation |
+| **Diarrhoea** (DI) | Q17 | Diarrhoea |
+| **Financial Difficulties** (FI) | Q28 | Economic burden |
 
-#### Globale Gesundheit/Lebensqualität (1 Skala)
-**Bewertung: Höhere Werte = Bessere Lebensqualität**
+#### Global Health/Quality of Life (1 Scale)
+**Rating: Higher values = Better quality of life**
 
-| Skala | Items | Beschreibung | Antwortskala |
-|-------|-------|--------------|--------------|
-| **Globale Lebensqualität** (QL) | Q29-30 | Gesamtbeurteilung von Gesundheit und Lebensqualität | 7-Punkt-Skala (1-7) |
+| Scale | Items | Description | Response Scale |
+|-------|-------|-------------|----------------|
+| **Global Quality of Life** (QL) | Q29-30 | Overall assessment of health and quality of life | 7-point scale (1-7) |
 
-### Antwortskalen
+### Response Scales
 
-#### Standard 4-Punkt-Skala (Q1-28)
-1. **"Überhaupt nicht"** / *"Not at all"*
-2. **"Wenig"** / *"A little"*
-3. **"Mäßig"** / *"Quite a bit"*
-4. **"Sehr"** / *"Very much"*
+#### Standard 4-Point Scale (Q1-28)
+1. **"Not at all"** / *"Uberhaupt nicht"*
+2. **"A little"** / *"Wenig"*
+3. **"Quite a bit"** / *"Massig"*
+4. **"Very much"** / *"Sehr"*
 
-#### 7-Punkt-Skala (Q29-30)
-1. **"Sehr schlecht"** / *"Very poor"*
-2. **"Schlecht"** / *"Poor"*
-3. **"Mittelmäßig"** / *"Fair"*
-4. **"Gut"** / *"Good"*
-5. **"Sehr gut"** / *"Very good"*
-6. **"Ausgezeichnet"** / *"Excellent"*
-7. **"Vollkommen"** / *"Perfect"*
+#### 7-Point Scale (Q29-30)
+1. **"Very poor"** / *"Sehr schlecht"*
+2. **"Poor"** / *"Schlecht"*
+3. **"Fair"** / *"Mittelmassig"*
+4. **"Good"** / *"Gut"*
+5. **"Very good"** / *"Sehr gut"*
+6. **"Excellent"** / *"Ausgezeichnet"*
+7. **"Perfect"** / *"Vollkommen"*
 
-### Score-Berechnung
+### Score Calculation
 
-#### Schritt 1: Rohwert-Berechnung
-Für jede Skala wird der Mittelwert der zugehörigen Items berechnet:
+#### Step 1: Raw Score Calculation
+For each scale, the mean of the associated items is calculated:
 
 ```
-Rohwert = (Summe der Itemwerte) / Anzahl Items
+RawScore = (Sum of item values) / Number of items
 ```
 
-#### Schritt 2: Lineare Transformation (0-100 Skala)
+#### Step 2: Linear Transformation (0-100 Scale)
 
-##### Funktionsskalen (Inversion erforderlich)
+##### Function Scales (Inversion Required)
 ```
-Funktions-Score = (1 - (Rohwert - 1) / (max - 1)) x 100
-```
-
-**Für 4-Punkt-Skala:**
-```
-Funktions-Score = (1 - (Rohwert - 1) / 3) x 100
+Function Score = (1 - (RawScore - 1) / (max - 1)) x 100
 ```
 
-##### Symptomskalen und Einzelsymptome
+**For 4-point scale:**
 ```
-Symptom-Score = ((Rohwert - 1) / (max - 1)) x 100
-```
-
-**Für 4-Punkt-Skala:**
-```
-Symptom-Score = ((Rohwert - 1) / 3) x 100
+Function Score = (1 - (RawScore - 1) / 3) x 100
 ```
 
-##### Globale Lebensqualität
+##### Symptom Scales and Single Symptoms
 ```
-QL-Score = ((Rohwert - 1) / 6) x 100
+Symptom Score = ((RawScore - 1) / (max - 1)) x 100
 ```
 
-#### Score-Interpretation
+**For 4-point scale:**
+```
+Symptom Score = ((RawScore - 1) / 3) x 100
+```
 
-| Score-Bereich | Funktionsskalen | Symptomskalen |
-|---------------|------------------|------------------|
-| **0-25** | Schwere Funktionseinschränkung | Keine/geringe Symptombelastung |
-| **26-50** | Moderate Funktionseinschränkung | Leichte Symptombelastung |
-| **51-75** | Leichte Funktionseinschränkung | Moderate Symptombelastung |
-| **76-100** | Keine/geringe Funktionseinschränkung | Schwere Symptombelastung |
+##### Global Quality of Life
+```
+QL Score = ((RawScore - 1) / 6) x 100
+```
 
-### FHIR-Implementierung
+#### Score Interpretation
 
-#### Questionnaire-Resource
+| Score Range | Function Scales | Symptom Scales |
+|-------------|-----------------|----------------|
+| **0-25** | Severe functional impairment | No/mild symptom burden |
+| **26-50** | Moderate functional impairment | Mild symptom burden |
+| **51-75** | Mild functional impairment | Moderate symptom burden |
+| **76-100** | No/mild functional impairment | Severe symptom burden |
+
+### FHIR Implementation
+
+#### Questionnaire Resource
 - **URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30`
-- **Primärsprache**: Englisch (`language = #en`)
-- **Übersetzungen**: Deutsche Übersetzungen über CodeSystem-Designations
-- **Antwortoptionen**: MII CodeSystems mit `ordinalValue`-Properties für Scoring
+- **Primary Language**: English (`language = #en`)
+- **Translations**: German translations via CodeSystem designations
+- **Answer Options**: MII CodeSystems with `ordinalValue` properties for scoring
 
 #### CodeSystem & ValueSets
-- **CodeSystem**: `mii-cs-pro-eortc-qlq-c30` -- CodeSystem für Darstellung der Antwortspektren in Englisch mit deutscher Übersetzung
+- **CodeSystem**: `mii-cs-pro-eortc-qlq-c30` -- CodeSystem for response spectra in English with German translation
 - **ValueSets**:
   - `mii-vs-pro-eortc-qlq-c30-scale-4pt` -- Standard 4-point scale
   - `mii-vs-pro-eortc-qlq-c30-scale-7pt` -- Global QoL 7-point scale
   - `mii-vs-pro-eortc-qlq-c30-scale-role` -- Role functioning scale
 
-#### Scoring-Implementierung
-Automatische Score-Berechnung über SDC `calculatedExpression`:
+#### Scoring Implementation
+Automatic score calculation via SDC `calculatedExpression`:
 
 ```
 // FHIRPath
-// Beispiel: Körperliche Funktionsfähigkeit (Q1-5, invertiert)
+// Example: Physical Functioning (Q1-5, inverted)
 (1 - (%resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).answer.value.weight().sum()/5 - 1) / 3) * 100
 
-// Beispiel: Fatigue (Q10, Q12, Q18, standard)
+// Example: Fatigue (Q10, Q12, Q18, standard)
 ((%resource.item.where(linkId in ('qlq-c30-q10'|'qlq-c30-q12'|'qlq-c30-q18')).answer.value.weight().sum()/3 - 1) / 3) * 100
 ```
 
-#### ObservationDefinition-Resources
-Für jede Subskala existiert eine separate ObservationDefinition:
-- Funktionsskalen: `mii-obsdef-pro-eortc-qlq-c30-pf`, `mii-obsdef-pro-eortc-qlq-c30-rf`, etc.
-- Symptomskalen: `mii-obsdef-pro-eortc-qlq-c30-fa`, `mii-obsdef-pro-eortc-qlq-c30-nv`, etc.
-- Einzelsymptome: `mii-obsdef-pro-eortc-qlq-c30-dy`, `mii-obsdef-pro-eortc-qlq-c30-sl`, etc.
-- Globale QoL: `mii-obsdef-pro-eortc-qlq-c30-ql`
+#### ObservationDefinition Resources
+A separate ObservationDefinition exists for each subscale:
+- Function scales: `mii-obsdef-pro-eortc-qlq-c30-pf`, `mii-obsdef-pro-eortc-qlq-c30-rf`, etc.
+- Symptom scales: `mii-obsdef-pro-eortc-qlq-c30-fa`, `mii-obsdef-pro-eortc-qlq-c30-nv`, etc.
+- Single symptoms: `mii-obsdef-pro-eortc-qlq-c30-dy`, `mii-obsdef-pro-eortc-qlq-c30-sl`, etc.
+- Global QoL: `mii-obsdef-pro-eortc-qlq-c30-ql`
 
-### Fehlende Werte (Missing Data)
+### Missing Data
 
-#### EORTC-Richtlinien
-- **Mindestens 50% der Items** einer Skala müssen beantwortet sein
-- **Ersetzung** fehlender Werte durch Mittelwert der verfügbaren Items der Skala
-- **Ausschluss** der Skala bei mehr als 50% fehlenden Werten
+#### EORTC Guidelines
+- **At least 50% of items** in a scale must be answered
+- **Replacement** of missing values with the mean of the available items in the scale
+- **Exclusion** of the scale if more than 50% of values are missing
 
-#### FHIR-Implementierung
-Missing Data Handling über FHIRPath-Expressions:
+#### FHIR Implementation
+Missing data handling via FHIRPath expressions:
 
 ```
-// Prüfung auf ausreichende Antworten (Beispiel PF-Skala)
+// Check for sufficient responses (example PF scale)
 %resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).where(answer.exists()).count() >= 3
 ```
 
-### Referenzen
+### References
 
 1. **Aaronson NK, et al.** (1993)
    *The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology*
@@ -173,14 +173,14 @@ Missing Data Handling über FHIRPath-Expressions:
    European Organisation for Research and Treatment of Cancer, Brussels
    [https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf](https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf)
 
-### Verwendung im MII-Kontext
+### Usage in the MII Context
 
-Das EORTC QLQ-C30 wird im **MII PRO-Modul** als Referenzinstrument für:
-- **Onkologische Lebensqualitätsmessung** in klinischen und Forschungsumgebungen
-- **Cross-Domain-Harmonisierung** mit anderen PRO-Instrumenten, v.a. Mapping auf PROMIS-Skalen
-- **Population-Based Scoring** und Normwertvergleiche
-- **Modular erweiterte Assessments** durch krankheitsspezifische EORTC-Module
+The EORTC QLQ-C30 serves as a reference instrument within the **MII PRO Module** for:
+- **Oncological quality of life measurement** in clinical and research settings
+- **Cross-domain harmonization** with other PRO instruments, particularly mapping to PROMIS scales
+- **Population-based scoring** and normative value comparisons
+- **Modularly extended assessments** through disease-specific EORTC modules
 
 ---
 
-*Diese Implementierung folgt den MII-Terminologie-Strategien und verwendet MII CodeSystems für Score-Berechnungen.*
+*This implementation follows the MII terminology strategies and uses MII CodeSystems for score calculations.*

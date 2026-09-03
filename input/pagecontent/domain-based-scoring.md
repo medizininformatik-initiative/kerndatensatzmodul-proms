@@ -1,192 +1,192 @@
-### Übersicht
+### Overview
 
-Domänen-basiertes Scoring ermöglicht die Vergleichbarkeit verschiedener PRO-Instrumente durch Abbildung auf gemeinsame Gesundheitsdomänen. Statt isolierter Fragebogen-Scores werden Messwerte auf standardisierte Domänen-Metriken -- primär PROMIS T-Scores (Mittelwert=50, SD=10) -- transformiert.
+Domain-based scoring enables comparability across different PRO instruments by mapping them onto shared health domains. Rather than treating questionnaire scores in isolation, measurements are transformed into standardized domain metrics -- primarily PROMIS T-Scores (Mean=50, SD=10).
 
-Dieser Ansatz adressiert eine zentrale Herausforderung der modernen Versorgungsforschung: die Harmonisierung patientenberichteter Outcomes, die mit heterogenen Instrumenten über verschiedene klinische Standorte, Studien und Versorgungskontexte hinweg erhoben werden.
+This approach addresses a central challenge in modern health services research: the harmonization of patient-reported outcomes collected with heterogeneous instruments across clinical sites, studies, and care settings.
 
-### Aktuelle wissenschaftliche Evidenz für domänen-basierte Harmonisierung
+### Current Scientific Evidence for Domain-Based Harmonization
 
-Zwei rezente Publikationen aus 2025 liefern empirische Evidenz für die methodische Validität des domänen-basierten Harmonisierungsansatzes:
+Two recent 2025 publications provide empirical evidence for the methodological validity of the domain-based harmonization approach:
 
-**Intra-Domänen Harmonisierung (Riazy et al., 2025)**
+**Intra-Domain Harmonization (Riazy et al., 2025)**
 
-Die Studie von Riazy et al. präsentiert populationsbasierte Referenzdaten für sechs etablierte Depressionsinstrumente (PHQ-9, PHQ-8, CES-D 8, PROMIS Depression SF 4a/8a, WHO-5) aus 29 europäischen Ländern (n=287.530) basierend auf der EHIS Wave 3 Erhebung. Die Arbeit demonstriert die Machbarkeit der Harmonisierung verschiedener Instrumente innerhalb einer einzelnen Gesundheitsdomäne und unterstützt damit den im MII PRO Modul verfolgten Ansatz der domänenspezifischen Score-Transformation.
+Riazy et al. present population-based reference data for six established depression instruments (PHQ-9, PHQ-8, CES-D 8, PROMIS Depression SF 4a/8a, WHO-5) from 29 European countries (n=287,530) based on the EHIS Wave 3 survey. The study demonstrates the feasibility of harmonizing different instruments within a single health domain and supports the domain-specific score transformation approach pursued in the MII PRO Module.
 
-Referenz: Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. *JAMA Netw Open*. 2025;8(6):e2517394.
+Reference: Riazy L, Grote M, Liegl G, Rose M, Fischer F. Cross-Sectional Reference Data From 29 European Countries for 6 Frequently Used Depression Measures. *JAMA Netw Open*. 2025;8(6):e2517394.
 
-**Cross-Domänen Harmonisierung (Oerlemans et al., 2025)**
+**Cross-Domain Harmonization (Oerlemans et al., 2025)**
 
-Oerlemans et al. entwickelten und validierten Crosswalks zwischen dem multidimensionalen EORTC QLQ-C30 und domänenspezifischen PROMIS-Instrumenten. Die erreichten Korrelationen (r = 0,65-0,85) über sieben Gesundheitsdomänen hinweg demonstrieren die Praktikabilität der Transformation von Multi-Domain-Assessments in domänenspezifische Metriken. Diese Methodik ermöglicht die Integration etablierter umfassender Instrumente in eine domänen-basierte Architektur.
+Oerlemans et al. developed and validated crosswalks between the multidimensional EORTC QLQ-C30 and domain-specific PROMIS instruments. The achieved correlations (r = 0.65-0.85) across seven health domains demonstrate the practicability of transforming multi-domain assessments into domain-specific metrics. This methodology enables the integration of established comprehensive instruments into a domain-based architecture.
 
-Referenz: Oerlemans S, et al. Crosswalks between EORTC QLQ-C30 and PROMIS measures: Harmonizing patient-reported outcomes across cancer trials. *J Clin Epidemiol*. 2025. DOI: 10.1016/j.jclinepi.2025.111705.
+Reference: Oerlemans S, et al. Crosswalks between EORTC QLQ-C30 and PROMIS measures: Harmonizing patient-reported outcomes across cancer trials. *J Clin Epidemiol*. 2025. DOI: 10.1016/j.jclinepi.2025.111705.
 
-**Implikationen für die MII PRO Implementierung**
+**Implications for the MII PRO Implementation**
 
-Diese Arbeiten liefern wichtige empirische Grundlagen für die konzeptionelle Ausrichtung des MII PRO Moduls:
-- Die methodische Validität der Harmonisierung über verschiedene Instrumente ist nachgewiesen
-- Sowohl intra-domäne als auch cross-domäne Transformationen zeigen akzeptable psychometrische Eigenschaften
-- Die internationale Forschungsgemeinschaft bewegt sich in Richtung harmonisierter, domänenbasierter PRO-Systeme
+These publications provide important empirical foundations for the conceptual direction of the MII PRO Module:
+- The methodological validity of harmonization across different instruments has been demonstrated
+- Both intra-domain and cross-domain transformations show acceptable psychometric properties
+- The international research community is moving toward harmonized, domain-based PRO systems
 
-Die zeitliche Nähe dieser Publikationen zum Ballotierungsprozess verhinderte ihre vollständige Integration in die aktuelle Version, sie bestätigen jedoch die gewählte Architektur und informieren zukünftige Entwicklungen.
+The temporal proximity of these publications to the balloting process prevented their full integration into the current version; however, they confirm the chosen architecture and inform future developments.
 
-**Verwandte Seiten:**
-- [Gesundheitsdomänen](domains.html) -- Definition der 9 PROMIS Core Domains
-- [Cross-Instrument Mappings](cross-instrument-mappings.html) -- Konkrete Mapping-Tabellen
-- [Scoring Methodologie](scoring.html) -- Technische Details
+**Related pages:**
+- [Health Domains](domains.html) -- Definition of the 9 PROMIS Core Domains
+- [Cross-Instrument Mappings](cross-instrument-mappings.html) -- Concrete mapping tables
+- [Scoring Methodology](scoring.html) -- Technical details
 
-### Kernkonzept
+### Core Concept
 
-#### Von Instrumenten zu Domänen
+#### From Instruments to Domains
 
-Verschiedene Fragebögen messen oft dasselbe Konstrukt:
+Different questionnaires often measure the same construct:
 - **Depression**: PHQ-9, BDI-II, PROMIS Depression, HADS-D
-- **Angst**: GAD-7, PROMIS Anxiety, HADS-A
-- **Körperliche Funktion**: PROMIS PF, SF-36 PF, HAQ
+- **Anxiety**: GAD-7, PROMIS Anxiety, HADS-A
+- **Physical Function**: PROMIS PF, SF-36 PF, HAQ
 
-Domänen-basiertes Scoring ermöglicht die Vergleichbarkeit durch Transformation auf eine gemeinsame Metrik (T-Scores mit Mittelwert=50, SD=10).
+Domain-based scoring enables comparability through transformation onto a common metric (T-Scores with Mean=50, SD=10).
 
-### Implementierung: Depressions-Domäne
+### Implementation: Depression Domain
 
-Die Depressions-Domäne demonstriert als erste vollständig implementierte Domäne den Ansatz:
+The depression domain serves as the first fully implemented domain, demonstrating the approach:
 
-#### FHIR-Architektur
+#### FHIR Architecture
 
 ```
 ObservationDefinition: mii-obsdef-pro-depression-t-score
 +-- Code: LOINC#77861-3 "PROMIS Depression T-score"
-+-- Referenzbereiche: EHIS Wave 3 (n=287.530)
-+-- Populationsnormen: DE, EU, altersstratifiziert
++-- Reference Ranges: EHIS Wave 3 (n=287,530)
++-- Population Norms: DE, EU, age-stratified
 
 Observation: Depression T-Score Instance
 +-- instantiates: ObservationDefinition
-+-- derivedFrom: QuestionnaireResponse oder Raw Score
-+-- method: IRT-Berechnung oder Cross-Walking
++-- derivedFrom: QuestionnaireResponse or Raw Score
++-- method: IRT calculation or Cross-Walking
 ```
 
-#### Europäische Referenzdaten für Depression
+#### European Reference Data for Depression
 
-Riazy et al. (2025) liefern umfassende Referenzdaten aus 29 europäischen Ländern für 6 häufig verwendete Depressionsinstrumente ([JAMA Netw Open 2025](https://doi.org/10.1001/jamanetworkopen.2025.17394)):
+Riazy et al. (2025) provide comprehensive reference data from 29 European countries for 6 frequently used depression instruments ([JAMA Netw Open 2025](https://doi.org/10.1001/jamanetworkopen.2025.17394)):
 
-**Instrumente mit Normdaten:**
+**Instruments with normative data:**
 - PHQ-9 (Patient Health Questionnaire-9)
-- PHQ-8 (ohne Suizidalität)
+- PHQ-8 (without suicidality item)
 - CES-D 8 (Center for Epidemiologic Studies Depression Scale)
-- PROMIS Depression SF 4a und SF 8a
+- PROMIS Depression SF 4a and SF 8a
 - WHO-5 Well-Being Index
 
-**Stichprobe:**
-- N = 287.530 Teilnehmer aus EHIS Wave 3
-- Repräsentativ für 29 EU-Länder
-- Stratifiziert nach Alter, Geschlecht, Land
+**Sample:**
+- N = 287,530 participants from EHIS Wave 3
+- Representative of 29 EU countries
+- Stratified by age, sex, and country
 
-**Anwendung für MII PRO:**
-- Populationsspezifische Referenzbereiche für Deutschland
-- Ermöglicht faire Benchmarks zwischen Einrichtungen
-- Basis für altersstratifizierte Cut-offs
-- Unterstützt Cross-Walking zwischen Instrumenten
+**Application for MII PRO:**
+- Population-specific reference ranges for Germany
+- Enables fair benchmarking across institutions
+- Basis for age-stratified cut-offs
+- Supports cross-walking between instruments
 
-#### Mapping-Strategien
+#### Mapping Strategies
 
 **1. Item Response Theory (IRT)**
 
-![IRT Antwortwahrscheinlichkeiten](IRT-Antwortwahrscheinlichkeiten.png)
+![IRT Response Probabilities](IRT-Antwortwahrscheinlichkeiten.png)
 
-**Abbildung 1:** *Item Response Theory -- Antwortwahrscheinlichkeiten in Abhängigkeit von der Merkmalsausprägung*
+**Figure 1:** *Item Response Theory -- Response probabilities as a function of trait level*
 
-Die Abbildung zeigt die charakteristischen Kurven der Item Response Theory:
-- Bei niedriger Merkmalsausprägung (z.B. geringe Depression) ist die Wahrscheinlichkeit für "Nie" am höchsten
-- Mit steigender Merkmalsausprägung verschieben sich die Wahrscheinlichkeiten zu "Selten", "Oft" und schließlich "Immer"
-- Die Überlappungsbereiche zeigen Unsicherheitszonen, wo verschiedene Antworten ähnlich wahrscheinlich sind
+The figure shows the characteristic curves of Item Response Theory:
+- At low trait levels (e.g., low depression), the probability of "Never" is highest
+- With increasing trait levels, probabilities shift toward "Rarely", "Often", and finally "Always"
+- The overlap regions indicate uncertainty zones where different responses are equally probable
 
-IRT-Vorteile:
-- Direkte Berechnung aus Item-Antworten
-- Präzise, aber aufwendig zu implementieren
-- Ideal für PROMIS-Instrumente
+IRT advantages:
+- Direct calculation from item responses
+- Precise, but computationally intensive to implement
+- Ideal for PROMIS instruments
 
-**2. Cross-Walking Tabellen**
-- Empirisch validierte Konversionstabellen
-- PHQ-9 (0-27) nach T-Score (40-85)
-- BDI-II (0-63) nach T-Score (40-85)
-- EORTC QLQ-C30 nach PROMIS T-Scores (siehe Oerlemans et al. 2025)
-- Basierend auf Equiperzentil-Matching
+**2. Cross-Walking Tables**
+- Empirically validated conversion tables
+- PHQ-9 (0-27) to T-Score (40-85)
+- BDI-II (0-63) to T-Score (40-85)
+- EORTC QLQ-C30 to PROMIS T-Scores (see Oerlemans et al. 2025)
+- Based on equipercentile matching
 
-**Neue validierte Crosswalks (2025):**
-Oerlemans et al. haben umfassende Crosswalks zwischen EORTC QLQ-C30 und PROMIS entwickelt ([J Clin Epidemiol 2025](https://www.jclinepi.com/article/S0895-4356(25)00186-6/fulltext)):
-- Physical Functioning nach PROMIS Physical Function (r > 0,80)
-- Fatigue nach PROMIS Fatigue (r > 0,85)
-- Emotional Functioning nach PROMIS Anxiety/Depression (r > 0,75)
-- Pain nach PROMIS Pain Interference (r > 0,80)
-- Social Functioning nach PROMIS Social Function (r > 0,70)
-- Cognitive Functioning nach PROMIS Cognitive Function (r = 0,65)
-- Global Health/QoL nach PROMIS Global Health (r > 0,75)
+**Newly validated crosswalks (2025):**
+Oerlemans et al. developed comprehensive crosswalks between EORTC QLQ-C30 and PROMIS ([J Clin Epidemiol 2025](https://www.jclinepi.com/article/S0895-4356(25)00186-6/fulltext)):
+- Physical Functioning to PROMIS Physical Function (r > 0.80)
+- Fatigue to PROMIS Fatigue (r > 0.85)
+- Emotional Functioning to PROMIS Anxiety/Depression (r > 0.75)
+- Pain to PROMIS Pain Interference (r > 0.80)
+- Social Functioning to PROMIS Social Function (r > 0.70)
+- Cognitive Functioning to PROMIS Cognitive Function (r = 0.65)
+- Global Health/QoL to PROMIS Global Health (r > 0.75)
 
-#### Mapping-Limitationen
+#### Mapping Limitations
 
-Bei der Anwendung von Cross-Walking sind folgende Einschränkungen zu beachten:
+The following limitations should be considered when applying cross-walking:
 
-1. **Bereichsüberschreitungen**: Extreme Werte können theoretische Grenzen überschreiten
-2. **Diskretisierung**: Kontinuierliche Verteilungen werden auf diskrete Werte abgebildet
-3. **Präzisionsverlust**: Besonders bei kurzen Instrumenten (z.B. 4-Item nach Full Domain)
-4. **Validierungsbedarf**: Mappings bedürfen populationsspezifischer Validierung
+1. **Range violations**: Extreme values may exceed theoretical boundaries
+2. **Discretization**: Continuous distributions are mapped to discrete values
+3. **Precision loss**: Especially with short instruments (e.g., 4-item to full domain)
+4. **Validation requirements**: Mappings require population-specific validation
 
-**Empfehlung**: Für klinische Entscheidungen sollten Mapping-Konfidenzintervalle berücksichtigt werden. Für Forschungszwecke ist die Verwendung bei transparenter Dokumentation des Mapping-Fehlers unproblematisch.
+**Recommendation**: For clinical decisions, mapping confidence intervals should be considered. For research purposes, use with transparent documentation of mapping error is acceptable.
 
-### Das PRO-Spannungsfeld
+### The PRO Trade-Off
 
-![PRO Spannungsfeld](PRO-Spannungsfeld.png)
+![PRO Trade-Off](PRO-Spannungsfeld.png)
 
-**Abbildung 2:** *Das Spannungsfeld zwischen Item-Anzahl, Messbereich und Präzision*
+**Figure 2:** *The trade-off between number of items, measurement range, and precision*
 
-Diese Abbildung illustriert ein fundamentales Dilemma bei der PRO-Auswahl:
-- **PROM A** (oben): Wenige Items, aber eingeschränkter Messbereich oder Präzision
-- **PROM B** (unten): Breiter Messbereich und hohe Präzision, aber mehr Items erforderlich
+This figure illustrates a fundamental dilemma in PRO instrument selection:
+- **PROM A** (top): Fewer items, but restricted measurement range or precision
+- **PROM B** (bottom): Broad measurement range and high precision, but more items required
 
-Domänen-basiertes Scoring löst dieses Dilemma durch:
-- **Flexible Instrumentenauswahl** je nach Kontext
-- **Item Banking** für adaptive Tests
-- **Harmonisierte Scores** trotz unterschiedlicher Instrumente
+Domain-based scoring resolves this dilemma through:
+- **Flexible instrument selection** depending on context
+- **Item banking** for adaptive testing
+- **Harmonized scores** despite different instruments
 
-### Item Banking und Adaptive Messung
+### Item Banking and Adaptive Measurement
 
 ![Item Banking](itembanking.png)
 
-**Abbildung 3:** *Item Banking für die Domäne Körperliche Funktionsfähigkeit*
+**Figure 3:** *Item banking for the Physical Function domain*
 
-Das Item Banking Konzept ermöglicht:
-- **Populationsspezifische Item-Auswahl**: Verschiedene Items für klinische Stichproben vs. Normalbevölkerung
-- **Adaptive Messung**: Items werden basierend auf der geschätzten Fähigkeit ausgewählt
-- **Beispiele im Bild**:
-  - Einfache Items (links): "selbst ankleiden?", "vom Stuhl aufstehen?", "Zähne putzen?"
-  - Mittlere Items (Mitte): "kurzen Spaziergang machen?", "Einkaufstasche tragen?"
-  - Schwierige Items (rechts): "5km laufen?", "über ein Hindernis klettern?", "am Triathlon teilnehmen?"
+The item banking concept enables:
+- **Population-specific item selection**: Different items for clinical samples vs. the general population
+- **Adaptive measurement**: Items are selected based on estimated ability
+- **Examples in the figure**:
+  - Easy items (left): "dress yourself?", "get up from a chair?", "brush your teeth?"
+  - Medium items (center): "take a short walk?", "carry a shopping bag?"
+  - Difficult items (right): "run 5 km?", "climb over an obstacle?", "participate in a triathlon?"
 
-Diese adaptive Strategie ermöglicht präzise Messung über das gesamte Fähigkeitsspektrum mit minimaler Belastung für Patienten.
+This adaptive strategy enables precise measurement across the full ability spectrum with minimal patient burden.
 
-### Praktische Anwendung
+### Practical Applications
 
-#### Use Case 1: Longitudinales Monitoring
-Patient startet mit PHQ-9 in Hausarztpraxis, wechselt zu PROMIS Depression in Klinik:
-- Beide Scores werden auf Depression T-Score gemappt
-- Kontinuierliche Verlaufskurve trotz Instrumentenwechsel
-- Reliable Change Index über Instrumente hinweg berechenbar
+#### Use Case 1: Longitudinal Monitoring
+A patient starts with PHQ-9 in a primary care practice, then switches to PROMIS Depression in a hospital setting:
+- Both scores are mapped to a Depression T-Score
+- Continuous trajectory despite instrument change
+- Reliable Change Index calculable across instruments
 
-#### Use Case 2: Multi-Site Studien
-Verschiedene Zentren nutzen unterschiedliche Instrumente:
-- Zentrum A: BDI-II
-- Zentrum B: PHQ-9
-- Zentrum C: PROMIS Depression
+#### Use Case 2: Multi-Site Studies
+Different centers use different instruments:
+- Center A: BDI-II
+- Center B: PHQ-9
+- Center C: PROMIS Depression
 
-Alle Daten vergleichbar durch Domain T-Scores.
+All data become comparable through domain T-Scores.
 
-#### Use Case 3: Qualitätssicherung
-Benchmarking zwischen Einrichtungen:
-- Einheitliche Outcome-Metriken trotz verschiedener Assessment-Strategien
-- Populationsadjustierte Vergleiche möglich
-- Faire Qualitätsindikatoren
+#### Use Case 3: Quality Assurance
+Benchmarking across institutions:
+- Uniform outcome metrics despite different assessment strategies
+- Population-adjusted comparisons possible
+- Fair quality indicators
 
-### Technische Implementierung
+### Technical Implementation
 
-#### ConceptMaps für Mapping
+#### ConceptMaps for Mapping
 ```
 // FSH
 Instance: PHQ9-to-PROMIS-Depression
@@ -199,7 +199,7 @@ InstanceOf: ConceptMap
   * target.equivalence = #equivalent
 ```
 
-#### CQL für komplexe Berechnungen (ab 2026)
+#### CQL for Complex Calculations (from 2026)
 ```
 // CQL
 define "Depression T-Score from PHQ-9":
@@ -213,80 +213,80 @@ define "Depression T-Score from PHQ-9":
   end
 ```
 
-### Implementierungsstatus
+### Implementation Status
 
-**Vollständig implementiert:**
-- Depressions-Domäne mit Mappings zwischen PHQ-9, BDI-II, PROMIS Depression und weiteren Instrumenten
-- ObservationDefinitions mit populationsspezifischen Referenzbereichen
+**Fully implemented:**
+- Depression domain with mappings between PHQ-9, BDI-II, PROMIS Depression, and additional instruments
+- ObservationDefinitions with population-specific reference ranges
 
-**In Entwicklung:**
-- PROMIS-29 Domänen (Physical Function, Anxiety, Fatigue, Sleep Disturbance, Social Function, Pain)
+**In development:**
+- PROMIS-29 domains (Physical Function, Anxiety, Fatigue, Sleep Disturbance, Social Function, Pain)
 - PROMIS Cognitive Function 4a
-- Automatisierte Score-Transformation via CQL
+- Automated score transformation via CQL
 
-**Geplant (2026+):**
-- Erweiterte Domänen-Mappings für Angst, Fatigue, Physical Function
-- Item-basierte Score-Berechnung
-- Computer Adaptive Testing (CAT) Integration
+**Planned (2026+):**
+- Extended domain mappings for anxiety, fatigue, physical function
+- Item-based score calculation
+- Computer Adaptive Testing (CAT) integration
 
-### FHIR-Architektur Übersicht
+### FHIR Architecture Overview
 
-Domänen-Scores werden als FHIR Observations mit spezifischen ObservationDefinitions abgebildet:
+Domain scores are represented as FHIR Observations with specific ObservationDefinitions:
 
 ```
-// Struktur
+// Structure
 ObservationDefinition
-+-- code: LOINC-Code für Domänen-Score (z.B. 77861-3 für PROMIS Depression)
-+-- method: Berechnungsmethode (IRT, Cross-Walking, Equiperzentil)
-+-- qualifiedInterval: Populationsspezifische Referenzbereiche
-+-- preferredReportName: Standardisierte Bezeichnung
++-- code: LOINC code for domain score (e.g., 77861-3 for PROMIS Depression)
++-- method: Calculation method (IRT, cross-walking, equipercentile)
++-- qualifiedInterval: Population-specific reference ranges
++-- preferredReportName: Standardized designation
 
 Observation
-+-- code: Verweis auf ObservationDefinition
-+-- valueQuantity: T-Score (Mittelwert=50, SD=10)
-+-- derivedFrom: Quell-QuestionnaireResponse oder -Observation
-+-- method: Verwendete Mapping-Methode
++-- code: Reference to ObservationDefinition
++-- valueQuantity: T-Score (Mean=50, SD=10)
++-- derivedFrom: Source QuestionnaireResponse or Observation
++-- method: Mapping method used
 ```
 
-### Anwendungsfälle
+### Use Cases
 
-**Klinische Versorgung:**
-- Kontinuierliche Verlaufsmessung bei Instrumentenwechsel
-- Einheitliche Schwellenwerte für klinische Entscheidungen
+**Clinical Care:**
+- Continuous trajectory monitoring during instrument changes
+- Uniform thresholds for clinical decisions
 
-**Forschung:**
-- Meta-Analysen über Studien mit verschiedenen Instrumenten
-- Harmonisierung von Registerdaten
+**Research:**
+- Meta-analyses across studies using different instruments
+- Harmonization of registry data
 
-**Qualitätssicherung:**
-- Institutionsübergreifende Outcome-Vergleiche
-- Populationsnormierte Benchmarks
+**Quality Assurance:**
+- Cross-institutional outcome comparisons
+- Population-normed benchmarks
 
-### Zukünftige Erweiterungen
+### Future Extensions
 
-#### Geplante Domänen (2026-2027)
-- **Angst-Domäne**: GAD-7, PROMIS Anxiety, HADS-A
-- **Schmerz-Domäne**: BPI, PROMIS Pain, NRS
-- **Körperliche Funktion**: PROMIS PF, HAQ, WHODAS
+#### Planned Domains (2026-2027)
+- **Anxiety Domain**: GAD-7, PROMIS Anxiety, HADS-A
+- **Pain Domain**: BPI, PROMIS Pain, NRS
+- **Physical Function**: PROMIS PF, HAQ, WHODAS
 
-#### Erweiterte Funktionalität
-- **Composite Scores**: Gewichtete Aggregation mehrerer Instrumente
-- **Adaptive Schwellenwerte**: Populationsspezifische Cut-offs
-- **Measurement Error Propagation**: Unsicherheitsquantifizierung
+#### Extended Functionality
+- **Composite Scores**: Weighted aggregation of multiple instruments
+- **Adaptive Thresholds**: Population-specific cut-offs
+- **Measurement Error Propagation**: Uncertainty quantification
 
-### Vorteile für die Praxis
+### Benefits for Practice
 
-1. **Kontinuität**: Instrumentenwechsel ohne Datenverlust
-2. **Vergleichbarkeit**: Einrichtungsübergreifende Benchmarks
-3. **Flexibilität**: Freie Instrumentenwahl bei erhaltener Vergleichbarkeit
-4. **Skalierbarkeit**: Neue Instrumente integrierbar ohne Systemumbau
+1. **Continuity**: Instrument changes without data loss
+2. **Comparability**: Cross-institutional benchmarks
+3. **Flexibility**: Free instrument choice while maintaining comparability
+4. **Scalability**: New instruments can be integrated without system redesign
 
-### ObservationDefinition Katalog
+### ObservationDefinition Catalog
 
-Da ObservationDefinitions in FHIR R4 keine kanonischen URLs unterstützen und nicht direkt im IG gerendert werden können, bietet die folgende Übersicht einen strukturierten Zugang zu allen definierten Score-Definitionen:
+Since ObservationDefinitions in FHIR R4 do not support canonical URLs and cannot be rendered directly in the IG, the following overview provides structured access to all defined score definitions:
 
-#### Depression und Stimmung
-| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+#### Depression and Mood
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
 | PHQ-9 | Total Score | 44261-6 | 0-27 | mii-obsdef-pro-phq-9-total-score | MII_PR_PRO_PHQ9_Score |
 | BDI-II | Total Score | 89209-1 | 0-63 | mii-obsdef-pro-score-bdi-ii | MII_PR_PRO_BDI_II_Score |
@@ -295,63 +295,63 @@ Da ObservationDefinitions in FHIR R4 keine kanonischen URLs unterstützen und ni
 | PROMIS Cognitive Function SF4a | Raw Score | 81533-2 | 4-20 | mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score |
 | PROMIS Cognitive Function SF4a | T-Score | 81538-1 | 20-80 | mii-obsdef-pro-promis-cognitive-function-sf4a-tscore | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |
 
-#### Angst und Stress
-| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+#### Anxiety and Stress
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
 | PROMIS-29 Anxiety | T-Score | 71953-7 | 20-80 | mii-obsdef-pro-promis-29-anxiety-tscore | MII_PR_PRO_PROMIS_29_Anxiety_TScore |
 
-#### Körperliche Funktion
-| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+#### Physical Function
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
 | PROMIS-29 Physical Function | T-Score | 71962-8 | 20-80 | mii-obsdef-pro-promis-29-physical-function-tscore | MII_PR_PRO_PROMIS_29_Physical_Function_TScore |
 
-#### Lebensqualität (Multi-Domain)
-| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+#### Quality of Life (Multi-Domain)
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
-| EQ-5D-5L | Index Score | 91382-2 | -0,661 bis 1,0 | mii-obsdef-pro-score-eq5d5l-index | MII_PR_PRO_Observation_EQ5D5L_Index |
+| EQ-5D-5L | Index Score | 91382-2 | -0.661 to 1.0 | mii-obsdef-pro-score-eq5d5l-index | MII_PR_PRO_Observation_EQ5D5L_Index |
 | EQ-5D-5L | VAS | 91383-0 | 0-100 | mii-obsdef-pro-score-eq5d5l-vas | MII_PR_PRO_Observation_EQ5D5L_VAS |
 | EQ-5D-5L | Profile | 91381-4 | 11111-55555 | mii-obsdef-pro-score-eq5d5l-profile | MII_PR_PRO_Observation_EQ5D5L_Profile |
 
-#### Müdigkeit und Schlaf
-| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+#### Fatigue and Sleep
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
 | PROMIS-29 Fatigue | T-Score | 71959-4 | 20-80 | mii-obsdef-pro-promis-29-fatigue-tscore | MII_PR_PRO_PROMIS_29_Fatigue_TScore |
 | PROMIS-29 Sleep Disturbance | T-Score | 71964-4 | 20-80 | mii-obsdef-pro-promis-29-sleep-disturbance-tscore | MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore |
 
-#### Schmerz
-| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+#### Pain
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
-| PROMIS-29 Pain Intensity | 0-10 Skala | 71965-1 | 0-10 | mii-obsdef-pro-promis-29-pain-intensity | MII_PR_PRO_PROMIS_29_Pain_Intensity |
+| PROMIS-29 Pain Intensity | 0-10 Scale | 71965-1 | 0-10 | mii-obsdef-pro-promis-29-pain-intensity | MII_PR_PRO_PROMIS_29_Pain_Intensity |
 | PROMIS-29 Pain Interference | T-Score | 71961-0 | 20-80 | mii-obsdef-pro-promis-29-pain-interference-tscore | MII_PR_PRO_PROMIS_29_Pain_Interference_TScore |
 
-#### Soziale Funktion
-| Instrument | Score-Typ | LOINC Code | Bereich | ObservationDefinition | Observation Profile |
+#### Social Function
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile |
 |------------|-----------|------------|---------|----------------------|---------------------|
 | PROMIS-29 Social Function | T-Score | 71966-9 | 20-80 | mii-obsdef-pro-promis-29-social-function-tscore | MII_PR_PRO_PROMIS_29_Social_Function_TScore |
 
-#### Technische Hinweise
+#### Technical Notes
 
-**ObservationDefinition Eigenschaften:**
-- **instantiatesCanonical**: Alle Observation Profiles referenzieren ihre ObservationDefinition über die instantiatesCanonical Extension
-- **ScoreHealthCorrelation**: Definiert ob höhere Werte bessere oder schlechtere Gesundheit bedeuten
-- **T-Score Metrik**: PROMIS T-Scores verwenden Mittelwert=50, SD=10 als Normierung
-- **Populationsnormen**: Referenzbereiche basieren auf deutschen oder europäischen Normstichproben
+**ObservationDefinition Properties:**
+- **instantiatesCanonical**: All Observation Profiles reference their ObservationDefinition via the instantiatesCanonical extension
+- **ScoreHealthCorrelation**: Defines whether higher values indicate better or worse health
+- **T-Score Metric**: PROMIS T-Scores use Mean=50, SD=10 as the normative scale
+- **Population Norms**: Reference ranges are based on German or European normative samples
 
-**Verwendung in der Praxis:**
+**Usage in Practice:**
 ```
 // FSH
 Observation
-+-- code: LOINC Code aus ObservationDefinition
-+-- valueQuantity: Berechneter Score
-+-- extension[instantiatesCanonical]: Verweis auf ObservationDefinition
-+-- derivedFrom: QuestionnaireResponse oder andere Observation
++-- code: LOINC code from ObservationDefinition
++-- valueQuantity: Calculated score
++-- extension[instantiatesCanonical]: Reference to ObservationDefinition
++-- derivedFrom: QuestionnaireResponse or other Observation
 ```
 
-### Zusammenfassung
+### Summary
 
-Domänen-basiertes Scoring ist essentiell für die Harmonisierung von PRO-Daten im deutschen Gesundheitswesen. Die Depressions-Domäne zeigt die praktische Umsetzbarkeit und bildet die Grundlage für weitere Domänen. Trotz methodischer Herausforderungen beim Cross-Walking überwiegen die Vorteile für Versorgung und Forschung deutlich.
+Domain-based scoring is essential for the harmonization of PRO data in the German healthcare system. The depression domain demonstrates practical feasibility and provides the foundation for additional domains. Despite methodological challenges in cross-walking, the benefits for clinical care and research clearly outweigh the limitations.
 
-**Weiterführende Informationen:**
-- [Gesundheitsdomänen](domains.html) -- Detaillierte Beschreibung aller 9 PROMIS Domänen
-- [Cross-Instrument Mappings](cross-instrument-mappings.html) -- Konkrete Konversionstabellen für Depression
-- [PHQ-9 Implementierung](phq-9.html) -- Referenzimplementierung
+**Further information:**
+- [Health Domains](domains.html) -- Detailed description of all 9 PROMIS domains
+- [Cross-Instrument Mappings](cross-instrument-mappings.html) -- Concrete conversion tables for depression
+- [PHQ-9 Implementation](phq-9.html) -- Reference implementation

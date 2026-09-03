@@ -66,7 +66,10 @@ Instance: PatientExample1
 InstanceOf: Patient
 Usage: #inline
 * id = "patient-example-1"
-* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient)
+// FOREIGN canonical: the MetaProfile RuleSet stamps THIS module's version
+// (canonical|2026.x.x) onto whatever it is given — correct for our own
+// profiles, wrong for the person module's. Claim it unversioned instead.
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
 * identifier[+].system = "http://example.org/fhir/sid/patients"
 * identifier[=].value = "12345"
 * name[+].family = "Mustermann"

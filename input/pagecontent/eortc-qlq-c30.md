@@ -1,32 +1,32 @@
-### Übersicht
+### Overview
 
 **Status**: Technical Preview
 **Version**: 0.1.0
-**Letzte Aktualisierung**: 2025-01-15
+**Last Updated**: 2025-01-15
 
-Der EORTC QLQ-C30 ist der Standard-Fragebogen zur Erfassung der Lebensqualität bei onkologischen Patienten.
+The EORTC QLQ-C30 is the standard questionnaire for assessing quality of life in oncological patients.
 
-### Struktur
+### Structure
 
-| Kategorie | Subskalen | Items | Score-Bereich |
-|-----------|-----------|-------|---------------|
-| **Funktionsskalen** | | | 0-100 (höher = besser) |
+| Category | Subscales | Items | Score Range |
+|----------|-----------|-------|-------------|
+| **Function Scales** | | | 0-100 (higher = better) |
 | | Physical Function (PF) | 5 | |
 | | Role Function (RF) | 2 | |
 | | Emotional Function (EF) | 4 | |
 | | Cognitive Function (CF) | 2 | |
 | | Social Function (SF) | 2 | |
-| **Symptomskalen** | | | 0-100 (höher = schlechter) |
+| **Symptom Scales** | | | 0-100 (higher = worse) |
 | | Fatigue (FA) | 3 | |
 | | Nausea/Vomiting (NV) | 2 | |
 | | Pain (PA) | 2 | |
-| **Einzelitems** | | | 0-100 |
+| **Single Items** | | | 0-100 |
 | | Dyspnoea, Insomnia, Appetite Loss, | 6 | |
 | | Constipation, Diarrhoea, Financial | | |
-| **Globale Lebensqualität** | | | 0-100 (höher = besser) |
+| **Global Quality of Life** | | | 0-100 (higher = better) |
 | | Global Health/QoL (QL) | 2 | |
 
-### Technische Details
+### Technical Details
 
 #### Questionnaire Resource
 
@@ -34,92 +34,92 @@ Der EORTC QLQ-C30 ist der Standard-Fragebogen zur Erfassung der Lebensqualität 
 Questionnaire/mii-qst-pro-eortc-qlq-c30
 ```
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-eortc-qlq-c30.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-eortc-qlq-c30.html) for the full resource.
 
 **SNOMED**: `273446001 |EORTC QLQ-C30 (assessment scale)|`
 
 **Capabilities**:
 - Displayable
 - Collectable
-- Calculatable (Scoring-Algorithmus implementiert)
-- Extractable (geplant)
-- Populatable (geplant)
+- Calculatable (scoring algorithm implemented)
+- Extractable (planned)
+- Populatable (planned)
 
-### Score-Berechnung
+### Score Calculation
 
-#### Lineare Transformation
+#### Linear Transformation
 
-Alle Skalen werden auf 0-100 transformiert:
+All scales are transformed to a 0-100 range:
 
-**Funktionsskalen**:
+**Function Scales**:
 ```
 Score = (1 - (RawScore - 1) / Range) x 100
 ```
 
-**Symptomskalen & Global Health**:
+**Symptom Scales & Global Health**:
 ```
 Score = ((RawScore - 1) / Range) x 100
 ```
 
-#### MII-Terminologie
+#### MII Terminology
 
 ```fsh
 // FSH
 CodeSystem: MII_CS_PRO_EORTC_QLQ_C30
 Id: mii-cs-pro-eortc-qlq-c30
-* #qlq30-q01 "Bereitet es Ihnen Schwierigkeiten..."
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Do you have any trouble..."
+* #qlq30-q01 "Do you have any trouble..."
+  * ^designation[+].language = #de
+  * ^designation[=].value = "Bereitet es Ihnen Schwierigkeiten..."
 ```
 
-### Antwortskalen
+### Response Scales
 
-#### 4-Punkt Skala (Items 1-28)
+#### 4-Point Scale (Items 1-28)
 
 ```fsh
 // FSH
 ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale4pt
-* MII_CS_PRO_EORTC_QLQ_C30#not-at-all "Überhaupt nicht"
-* MII_CS_PRO_EORTC_QLQ_C30#a-little "Wenig"
-* MII_CS_PRO_EORTC_QLQ_C30#quite-a-bit "Mäßig"
-* MII_CS_PRO_EORTC_QLQ_C30#very-much "Sehr"
+* MII_CS_PRO_EORTC_QLQ_C30#not-at-all "Not at all"
+* MII_CS_PRO_EORTC_QLQ_C30#a-little "A little"
+* MII_CS_PRO_EORTC_QLQ_C30#quite-a-bit "Quite a bit"
+* MII_CS_PRO_EORTC_QLQ_C30#very-much "Very much"
 ```
 
-#### 7-Punkt Skala (Items 29-30)
+#### 7-Point Scale (Items 29-30)
 
 ```fsh
 // FSH
 ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
-* MII_CS_PRO_EORTC_QLQ_C30#1 "Sehr schlecht"
+* MII_CS_PRO_EORTC_QLQ_C30#1 "Very poor"
 * MII_CS_PRO_EORTC_QLQ_C30#2 "2"
-// ... bis 7 "Ausgezeichnet"
+// ... up to 7 "Excellent"
 ```
 
-### Implementierungshinweise
+### Implementation Notes
 
-#### Scoring-Beispiel: Physical Function
+#### Scoring Example: Physical Function
 
 ```
 // FHIRPath
-// Items: qlq30-q01 bis qlq30-q05
+// Items: qlq30-q01 to qlq30-q05
 %pfRawScore = %resource.item
   .where(linkId in ('qlq30-q01' | 'qlq30-q02' | 'qlq30-q03' | 'qlq30-q04' | 'qlq30-q05'))
   .answer.value.ordinal()
-  .sum() / 5  // Mittelwert
+  .sum() / 5  // Mean
 
-// Funktionsskala: Invertierte Transformation
+// Function scale: Inverted transformation
 %pfScore = (1 - (%pfRawScore - 1) / 3) * 100
 ```
 
-Eine detaillierte Beschreibung der Scoring-Methodologie finden Sie unter [EORTC QLQ-C30 Scoring](eortc-qlq-c30-scoring.html).
+For a detailed description of the scoring methodology, see [EORTC QLQ-C30 Scoring](eortc-qlq-c30-scoring.html).
 
-### Bekannte Einschränkungen
+### Known Limitations
 
-1. **Lizenzierung**: Copyright bei EORTC -- Nutzungsbedingungen beachten
-2. **Modul-System**: QLQ-C30 oft mit spezifischen Modulen kombiniert (z.B. QLQ-BR23)
-3. **Missing Items**: Scoring bei fehlenden Items noch nicht implementiert
+1. **Licensing**: Copyright held by EORTC -- usage terms must be observed
+2. **Module System**: QLQ-C30 is often combined with specific modules (e.g., QLQ-BR23)
+3. **Missing Items**: Scoring with missing items is not yet implemented
 
-### Beispiel QuestionnaireResponse
+### Example QuestionnaireResponse
 
 ```json
 {
@@ -129,28 +129,28 @@ Eine detaillierte Beschreibung der Scoring-Methodologie finden Sie unter [EORTC 
   "item": [
     {
       "linkId": "qlq30-q01",
-      "text": "Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen?",
+      "text": "Do you have any trouble doing strenuous activities?",
       "answer": [{
         "valueCoding": {
           "system": "http://mii.de/fhir/pro/CodeSystem/eortc-qlq-c30",
           "code": "a-little",
-          "display": "Wenig"
+          "display": "A little"
         }
       }]
     }
-    // ... weitere 29 Items
+    // ... 29 additional items
   ]
 }
 ```
 
-### Integration mit MII Onkologie-Modul
+### Integration with the MII Oncology Module
 
-Der EORTC QLQ-C30 ist primär für den Einsatz in onkologischen Settings relevant. Da der QLQ-C30 jedoch allgemeine Domänen abbildet (ähnlich dem PROMIS-29), wird er im MII PRO-Modul verwaltet. Weitere onkologie-spezifische PROs werden voraussichtlich im dedizierten MII Modul Onkologie verwaltet.
+The EORTC QLQ-C30 is primarily relevant for use in oncological settings. Since the QLQ-C30 covers general domains (similar to PROMIS-29), it is maintained within the MII PRO Module. Additional oncology-specific PROs will likely be managed within the dedicated MII Oncology Module.
 
-### Referenzen
+### References
 
 - [EORTC QLQ-C30 Official](https://qol.eortc.org/questionnaire/eortc-qlq-c30/)
 - [Scoring Manual](https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf)
 - SNOMED: 273446001
 
-**Technical Preview**: Lizenzierung mit EORTC erforderlich vor Produktiveinsatz.
+**Technical Preview**: EORTC licensing is required before production use.

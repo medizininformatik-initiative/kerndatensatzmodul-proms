@@ -1,24 +1,24 @@
-### Überblick
+### Overview
 
-Das MII PRO-Modul unterstützt drei Scoring-Kanäle entlang des Workflows **Questionnaire → QuestionnaireResponse → Observation**. Alle drei Kanäle führen zum selben Ergebnis: einer Score-Observation, die gegen die Score-Profile dieses Moduls valide ist. Sie unterscheiden sich darin, **wo gerechnet wird** und **was als autoritative Quelle des Algorithmus gilt**.
+The MII PRO module supports three scoring channels along the **Questionnaire → QuestionnaireResponse → Observation** workflow. All three channels lead to the same result: a score Observation that is valid against this module's score profiles. They differ in **where the calculation happens** and **what counts as the authoritative source of the algorithm**.
 
-| Kanal | Wo wird gerechnet? | Capability-Kombination | Typischer Einsatz |
+| Channel | Where is it calculated? | Capability combination | Typical use |
 |---|---|---|---|
-| **A — Client-Scoring** | Im Renderer (FHIRPath `calculatedExpression`) | `collectable` + `calculatable` + `displayable` | Interaktives Ausfüllen mit Live-Score |
-| **B — Server-Scoring** | Auf dem Server (CQL Library, `Library/$evaluate`) | `populatable` + `calculatable` + `extractable` | On-Command-/Batch-Scoring score-loser QuestionnaireResponses |
-| **C — Externes Scoring** | Im Quellsystem (REDCap, EDC, R, klinisches System) | `extractable` (reine Import-Schicht) | Vorberechnete Scores, FHIR als Transport- und Harmonisierungsschicht |
+| **A — Client scoring** | In the renderer (FHIRPath `calculatedExpression`) | `collectable` + `calculatable` + `displayable` | Interactive form filling with live score |
+| **B — Server scoring** | On the server (CQL library, `Library/$evaluate`) | `populatable` + `calculatable` + `extractable` | On-command/batch scoring of score-less QuestionnaireResponses |
+| **C — External scoring** | In the source system (REDCap, EDC, R, clinical system) | `extractable` (pure import layer) | Pre-calculated scores, FHIR as transport and harmonization layer |
 
-Das **Score-Item im Questionnaire** (readOnly, mit `code` und `observation-extract`) ist der gemeinsame Vertrag der Kanäle A und B: Kanal A füllt es live beim Ausfüllen, Kanal B füllt es nachträglich aus den Item-Antworten. Kanal C nutzt es bewusst **nicht** (siehe ETL-Regel unten).
+The **score item in the Questionnaire** (readOnly, with `code` and `observation-extract`) is the shared contract of channels A and B: channel A fills it live during form filling, channel B fills it afterwards from the item answers. Channel C deliberately does **not** use it (see the ETL rule below).
 
-Die Antwort-**Gewichte** sind in allen Kanälen dieselben: Sie sind normativ in den MII-CodeSystems definiert (`ordinalValue`-Extension an den Konzepten). Kanal A liest sie über die FHIRPath-Funktion `ordinal()`, Kanal B repliziert sie als geprüfte Lookup-Tabellen in der CQL-Library, Kanal C muss algorithmische Übereinstimmung mit den publizierten Scoring-Manualen der Instrumente nachweisen.
+The answer **weights** are the same in all channels: they are normatively defined in the MII CodeSystems (`ordinalValue` extension on the concepts). Channel A reads them via the FHIRPath function `ordinal()`, channel B replicates them as verified lookup tables inside the CQL library, and channel C must demonstrate algorithmic agreement with the published scoring manuals of the instruments.
 
 ---
 
-### Kanal A — Client-Scoring (FHIRPath im Renderer)
+### Channel A — Client scoring (FHIRPath in the renderer)
 
-Der Renderer wertet die `calculatedExpression` (SDC, `text/fhirpath`) live beim Ausfüllen aus; der Score landet unmittelbar im Score-Item der QuestionnaireResponse.
+The renderer evaluates the `calculatedExpression` (SDC, `text/fhirpath`) live during form filling; the score lands directly in the score item of the QuestionnaireResponse.
 
-**Variable-basiertes Muster (empfohlen)** — vermeidet zirkuläre Abhängigkeiten zwischen Roh- und transformierten Scores:
+**Variable-based pattern (recommended)** — avoids circular dependencies between raw and transformed scores:
 
 ~~~~
 // FSH — PROMIS Depression SF 4a
@@ -27,23 +27,23 @@ Der Renderer wertet die `calculatedExpression` (SDC, `text/fhirpath`) live beim 
 * extension[=].valueExpression.language = #text/fhirpath
 * extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
 
-// Score-Item referenziert die Variable
+// Score item references the variable
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
 * item[=].extension[=].valueExpression.expression = "%rawScore"
 ~~~~
 
-**Geeignet für**: Summenscores, Subskalen, einfache Lookup-Transformationen (T-Score-Tabellen als `iif`-Ketten).
+**Suitable for**: sum scores, subscales, simple lookup transformations (T-score tables as `iif` chains).
 
-**Grenzen**: Der Renderer muss die SDC-Expressions unterstützen; komplexe Logik (Half-Rules für fehlende Items, Tariff-Algorithmen, statistische Konversionen) ist in FHIRPath nicht oder nur unwartbar abbildbar — solche Scores existieren ausschließlich in Kanal B.
+**Limitations**: the renderer must support the SDC expressions; complex logic (half-rules for missing items, tariff algorithms, statistical conversions) cannot be expressed in FHIRPath — or only in an unmaintainable way. Such scores exist exclusively in channel B.
 
 ---
 
-### Kanal B — Server-Scoring (CQL, on command)
+### Channel B — Server scoring (CQL, on command)
 
-Der **autoritative Kanal**. Jedes berechenbare Instrument erhält eine CQL-Library (`mii-lib-pro-{instrument}`), die als FHIR `Library`-Ressource mit beiden Inhaltsformen ausgeliefert wird: `text/cql` (lesbarer Quelltext) und `application/elm+json` (vorkompiliert, deterministisch in CI erzeugt).
+The **authoritative channel**. Each calculable instrument gets a CQL library (`mii-lib-pro-{instrument}`), shipped as a FHIR `Library` resource with both content forms: `text/cql` (readable source) and `application/elm+json` (pre-compiled, deterministically produced in CI).
 
-**Anbindung an das Questionnaire** über die `cqf-library`-Extension mit **versionierter** Canonical (Reproduzierbarkeit — analog zum versionierten `meta.profile`):
+**Binding to the Questionnaire** via the `cqf-library` extension with a **versioned** canonical (reproducibility — analogous to the versioned `meta.profile`):
 
 ~~~~
 // FSH
@@ -51,68 +51,68 @@ Der **autoritative Kanal**. Jedes berechenbare Instrument erhält eine CQL-Libra
 * extension[=].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-phq-9|1.0.0"
 ~~~~
 
-**Konvention define ↔ linkId**: Der Name des CQL-`define`, das einen Score berechnet, entspricht der `linkId` des zugehörigen Score-Items (bzw. wird über `item.code` aufgelöst). Damit kann eine generische Scoring-Strecke das Ergebnis dem richtigen Item bzw. der richtigen Observation zuordnen.
+**define ↔ linkId convention**: the name of the CQL `define` that calculates a score corresponds to the `linkId` of the associated score item (or is resolved via `item.code`). This lets a generic scoring pipeline assign each result to the correct item or Observation.
 
-**Aufruf**: `Library/{id}/$evaluate` — pro QuestionnaireResponse oder als Batch über eine Kohorte. Hinweis für HAPI-FHIR-Implementierungen: `$populate`/`$extract` werten `calculatedExpression` **nicht** aus; serverseitiges Scoring läuft über `Library/$evaluate` bzw. eine vorgelagerte Scoring-Strecke.
+**Invocation**: `Library/{id}/$evaluate` — per QuestionnaireResponse or as a batch over a cohort. Note for HAPI FHIR implementations: `$populate`/`$extract` do **not** evaluate `calculatedExpression`; server-side scoring runs via `Library/$evaluate` or a dedicated scoring pipeline.
 
-**Einsatz**:
-- QuestionnaireResponses, die **ohne Score** ankommen (mobile Erfassung, EDC-Ingestion, Teil-Instrumente)
-- Scores, die FHIRPath nicht abbilden kann (EQ-5D-5L-Index-Tariff, EORTC-Half-Rule, PROMIS-16 PROPr, Score-Crosswalks wie BDI-II → PROMIS)
-- Retrospektive Neuberechnung zur Qualitätssicherung (siehe unten)
+**Use for**:
+- QuestionnaireResponses that arrive **without a score** (mobile capture, EDC ingestion, partial instruments)
+- Scores that FHIRPath cannot express (EQ-5D-5L index tariff, EORTC half-rule, PROMIS-16 PROPr, score crosswalks such as BDI-II → PROMIS)
+- Retrospective recalculation for quality assurance (see below)
 
-**Vertrag zwischen Kanal A und B**: Wo derselbe Score in beiden Sprachen existiert, sichern Differential-Tests (identische Golden-QuestionnaireResponses durch beide Engines, Ergebnisse verglichen) die Übereinstimmung. Bei Abweichung gilt Kanal B als Referenz.
-
----
-
-### Kanal C — Externes Scoring (vorberechnet, nur gemappt)
-
-Der Score wurde außerhalb von FHIR berechnet — in REDCap, einem EDC-System, einer R-Pipeline oder einem klinischen Primärsystem — und wird lediglich als Observation in die MII-Strukturen **gemappt**. FHIR ist hier Transport- und Harmonisierungsschicht, nicht Berechnungsumgebung.
-
-**Anforderungen an die importierte Score-Observation**:
-- `meta.profile` mit versionierter Canonical des passenden Score-Profils
-- `derivedFrom` → QuestionnaireResponse, **sofern** die Item-Antworten mit übermittelt wurden
-- `method` benennt den Algorithmus bzw. das Scoring-Manual (inkl. Version/Publikation)
-- Provenance des Quellsystems, wenn keine QuestionnaireResponse existiert (Score ohne Rohdaten)
-
-**Vertrauensmodell**: Das MII-Modul rechnet importierte Scores nicht automatisch nach — die Verantwortung für algorithmische Korrektheit liegt beim Quellsystem. **Empfohlene Qualitätssicherung**: Liegen die Item-Antworten vor, kann der Score über Kanal B nachgerechnet und verglichen werden; Abweichungen deuten auf Implementierungsunterschiede im Quellsystem hin (Rundung, Missing-Handling, veraltete Manuale).
+**Contract between channels A and B**: wherever the same score exists in both languages, differential tests (identical golden QuestionnaireResponses through both engines, results compared) ensure agreement. In case of deviation, channel B is the reference.
 
 ---
 
-### ETL-Regel: Score in die QuestionnaireResponse schreiben oder direkt eine Observation anlegen?
+### Channel C — External scoring (pre-calculated, mapping only)
 
-Für Import- und Scoring-Strecken gilt eine klare Trennung nach Kanal:
+The score was calculated outside of FHIR — in REDCap, an EDC system, an R pipeline, or a clinical primary system — and is merely **mapped** into the MII structures as an Observation. FHIR acts as the transport and harmonization layer here, not as the calculation environment.
 
-**Kanal B (Server rechnet aus den Antworten):** Die Strecke *darf* das Score-Item der QuestionnaireResponse befüllen **und** extrahiert die Observation. Der Score ist aus genau den Antworten dieser QuestionnaireResponse abgeleitet — das Score-Item dokumentiert dann wahrheitsgemäß das Ergebnis der modulkonformen Berechnung.
+**Requirements for the imported score Observation**:
+- `meta.profile` with the versioned canonical of the matching score profile
+- `derivedFrom` → QuestionnaireResponse, **if** the item answers were transmitted as well
+- `method` names the algorithm or scoring manual (including version/publication)
+- Provenance of the source system if no QuestionnaireResponse exists (score without raw data)
 
-**Kanal C (Score kommt vorberechnet an):** Die Strecke legt **ausschließlich die Observation an und verändert die QuestionnaireResponse nicht.** Begründung:
-
-1. **Dokumentintegrität**: Die QuestionnaireResponse ist das Erfassungsdokument — sie bezeugt, was zum Erfassungszeitpunkt erhoben (und ggf. berechnet) wurde. Ein nachträglich injizierter Fremd-Score fingiert ein Erfassungsereignis, das nie stattgefunden hat.
-2. **Struktur**: Teil-Instrumente und Fremdsysteme liefern QuestionnaireResponses häufig ohne Score-Item (oder ganz ohne QuestionnaireResponse) — das Befüllen wäre gar nicht einheitlich möglich.
-3. **Abfragemuster**: Konsumenten des Kerndatensatzes suchen Scores als Observations, nicht in QuestionnaireResponse-Items. Die Observation mit `derivedFrom`, `method` und Provenance trägt alle nötige Nachvollziehbarkeit.
-
-Sonderfall: Liefert ein Fremdsystem eine QuestionnaireResponse, deren Score-Item bereits **client-seitig** (Kanal A) gefüllt wurde, bleibt diese unverändert — die Extraktion erzeugt daraus regulär die Observation.
+**Trust model**: the MII module does not automatically recalculate imported scores — responsibility for algorithmic correctness lies with the source system. **Recommended quality assurance**: where item answers are available, the score can be recalculated via channel B and compared; deviations point to implementation differences in the source system (rounding, missing handling, outdated manuals).
 
 ---
 
-### Multi-Score-Questionnaires
+### ETL rule: write the score into the QuestionnaireResponse or create an Observation directly?
 
-Komplexe Fragebögen erzeugen mehrere Scores (Beispiel EQ-5D-5L: Index, VAS, Profil; PROMIS-29: acht Domänen jeweils Raw + T-Score). Pro Score gilt:
-- ein eigenes Score-Item mit eindeutigem `code`,
-- eine eigene ObservationDefinition (inkl. populationsspezifischer Referenzbereiche),
-- in Kanal A das Variable-Muster zur Vermeidung zirkulärer Abhängigkeiten,
-- in Kanal B ein eigenes `define` in derselben Instrument-Library.
+For import and scoring pipelines a clear separation by channel applies:
 
----
+**Channel B (server calculates from the answers):** the pipeline *may* fill the score item of the QuestionnaireResponse **and** extracts the Observation. The score is derived from exactly the answers of this QuestionnaireResponse — the score item then truthfully documents the result of the module-conformant calculation.
 
-### Qualitätssicherung
+**Channel C (score arrives pre-calculated):** the pipeline creates **only the Observation and never modifies the QuestionnaireResponse.** Rationale:
 
-- **Differential-Tests Kanal A ↔ B**: identische Test-QuestionnaireResponses (Minimum, Maximum, uniforme Antworten, fehlende Items, Opt-outs) durch beide Engines; Ergebnisse müssen exakt übereinstimmen.
-- **Gewichts-Konsistenz**: CI-Prüfung, dass die Lookup-Tabellen der CQL-Libraries mit den `ordinalValue`-Gewichten der CodeSystems übereinstimmen.
-- **Import-Validierung (Kanal C)**: stichprobenhafte Nachberechnung über Kanal B, wo Item-Antworten vorliegen.
-- **Versionsbindung**: Score-Observations referenzieren die Library-Version (bzw. das Scoring-Manual) — jede Score-Zahl bleibt auf ihren Algorithmus rückführbar.
+1. **Document integrity**: the QuestionnaireResponse is the capture document — it attests what was collected (and possibly calculated) at capture time. A retroactively injected external score fabricates a capture event that never happened.
+2. **Structure**: partial instruments and external systems frequently deliver QuestionnaireResponses without a score item (or no QuestionnaireResponse at all) — filling it would not even be uniformly possible.
+3. **Query patterns**: consumers of the core data set search for scores as Observations, not in QuestionnaireResponse items. The Observation with `derivedFrom`, `method`, and Provenance carries all necessary traceability.
+
+Special case: if an external system delivers a QuestionnaireResponse whose score item was already filled **client-side** (channel A), it remains unchanged — extraction produces the Observation from it as usual.
 
 ---
 
-### Abgrenzung: Klinische Interpretation
+### Multi-score questionnaires
 
-Cut-off-Werte, Schweregrad-Kategorien und Vergleichsmetriken (MID/MCID) werden in diesem Modul bewusst **nicht als ausführbare Logik** ausgeliefert, sondern ausschließlich dokumentiert (siehe *Abgeleitete Metriken*). Hintergrund: Software, die aus PRO-Antworten Scores berechnet **und klinisch interpretiert**, kann als Medizinprodukte-Software im Sinne der EU-MDR qualifizieren (vgl. MDCG 2019-11; Regel 11 Anhang VIII MDR). Die Qualifizierung richtet sich nach der Zweckbestimmung des jeweiligen Herstellers/Betreibers der ausführenden Software — nicht nach dieser Spezifikation. Implementierungen in der Versorgung können die MDR-Relevanz eines Formulars maschinenlesbar über die gematik-Extension `ISiKMpFormularExtension` (ISiK ab Stufe 6) kennzeichnen.
+Complex questionnaires produce multiple scores (example EQ-5D-5L: index, VAS, profile; PROMIS-29: eight domains, each raw + T-score). Per score:
+- a dedicated score item with a unique `code`,
+- a dedicated ObservationDefinition (including population-specific reference ranges),
+- in channel A the variable pattern to avoid circular dependencies,
+- in channel B a dedicated `define` in the same instrument library.
+
+---
+
+### Quality assurance
+
+- **Differential tests channel A ↔ B**: identical test QuestionnaireResponses (minimum, maximum, uniform answers, missing items, opt-outs) through both engines; results must match exactly.
+- **Weight consistency**: CI check that the lookup tables of the CQL libraries agree with the `ordinalValue` weights of the CodeSystems.
+- **Import validation (channel C)**: sample-based recalculation via channel B where item answers are available.
+- **Version binding**: score Observations reference the library version (or the scoring manual) — every score value remains traceable to its algorithm.
+
+---
+
+### Scope note: clinical interpretation
+
+Cut-off values, severity categories, and comparison metrics (MID/MCID) are deliberately **not shipped as executable logic** in this module; they are documented only (see *Derived Metrics*). Background: software that calculates scores from PRO answers **and interprets them clinically** may qualify as medical device software under the EU MDR (cf. MDCG 2019-11; rule 11, Annex VIII MDR). Qualification depends on the intended purpose of the manufacturer/operator of the executing software — not on this specification. Implementations in clinical care can flag the MDR relevance of a form in a machine-readable way via the gematik extension `ISiKMpFormularExtension` (ISiK level 6 and later).

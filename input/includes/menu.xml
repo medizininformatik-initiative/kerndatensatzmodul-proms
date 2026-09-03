@@ -1,0 +1,68 @@
+<!-- Menu in the IG's DEFAULT language (English). Per-language copy at input/translations/de/includes/menu.xml.
+     Structure follows the TF-KDS-agreed module menu; PRO-specific groups
+     (PRO Library, Scoring) replace nothing mandatory. Budget per spec 9a:
+     top level <= 8, <= 10 per dropdown, depth <= 2, <= 33 entries total.
+     Entry count here: 33. Dropdown parents link to a REAL page. -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="guidance.html">Guidance</a></li>
+      <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
+      <li><a href="logical-models.html">Datasets and Descriptions</a></li>
+      <li><a href="uml-diagrams.html">UML Diagrams</a></li>
+      <li><a href="use-cases.html">Use Cases</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="pro-library.html" class="dropdown-toggle">PRO Library<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="pro-library.html">PRO Library</a></li>
+      <li><a href="phq-9.html">PHQ-9</a></li>
+      <li><a href="eq-5d-5l.html">EQ-5D-5L</a></li>
+      <li><a href="promis.html">PROMIS</a></li>
+      <li><a href="pro-ctcae.html">PRO-CTCAE</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="scoring.html" class="dropdown-toggle">Scoring<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="scoring.html">Scoring</a></li>
+      <li><a href="domain-based-scoring.html">Domain-based Scoring</a></li>
+      <li><a href="domains.html">Domains</a></li>
+      <li><a href="id-systematics.html">ID Systematics</a></li>
+      <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance" class="dropdown-toggle">Conformance<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Conformance</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">General Requirements</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+      <li><a href="security-and-privacy.html">Security and Privacy</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artifacts Summary</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="capability-statements.html">Capability Statements</a></li>
+      <li><a href="search-parameters.html">Search Parameters</a></li>
+      <li><a href="value-sets.html">Value Sets</a></li>
+      <li><a href="code-systems.html">Code Systems</a></li>
+      <li><a href="examples.html">Examples</a></li>
+    </ul>
+  </li>
+  <li><a href="changes.html">Changelog</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadata<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="version-history.html">Versioning</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,76 @@
+2026-09-03T16:09:24Z  INFO   11  verify-migration  params  target=. source=/private/tmp/claude-501/-Users-thome-code-fhir-profiling-kerndatensatzmodul-proms/ff2b2273-7c04-48ac-8525-a1efb380c536/pro-source guide_tree=MII-PRO-v2026-DE rendered=output log=./migration-log/run.log layers=conservation,fidelity,provenance,rendering,log
+2026-09-03T16:09:26Z  INFO   11  verify-migration  conservation C1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  conservation C2  identisch=2 divergiert=12 nicht_pruefbar=0
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: conservation C2  count=12 subjects=output/de/CodeSystem-mii-qst-pro-eortc-qlq-c30-variant-b_eortc-qlq-c30-cs-b.html, output/de/CodeSystem-mii-qst-pro-eortc-qlq-c30_eortc-qlq-c30-cs.html, output/de/ValueSet-mii-qst-pro-eortc-qlq-c30-variant-b_eortc-qlq-c30-4pt-b.html …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  INFO   11  verify-migration  conservation C3  identisch=98 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  conservation C4  identisch=12 divergiert=66 nicht_pruefbar=20
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: conservation C4  count=66 subjects=Abgeleitete-Metriken/Index.page.md, Abstrakte-Profile/Index.page.md, Anwendungsfaelle-Informationsmodell/Index.page.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: conservation C4  count=20 subjects=BDI-II/Index.page.md, DASS-21/Index.page.md, EORTC-QLQ-C30/Index.page.md …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  conservation C5  identisch=3 divergiert=32 nicht_pruefbar=0
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: conservation C5  count=32 subjects=input/pagecontent/bdi-ii.md, input/pagecontent/cross-instrument-mappings.md, input/pagecontent/dass-21.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  INFO   11  verify-migration  conservation C6  identisch=91 divergiert=0 nicht_pruefbar=2
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: conservation C6  count=2 subjects=Domaenen-basiertes-Scoring/Index.page.md, Extension-Capabilities.page.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  conservation C7  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: conservation C7  count=1 subjects=derived-content markers
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  fidelity F1  identisch=9 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  fidelity F2  identisch=4 divergiert=0 nicht_pruefbar=4
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: fidelity F2  count=4 subjects=de.basisprofil.r4, hl7.fhir.uv.crmi, hl7.fhir.uv.xver-r5.r4 …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  fidelity F3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  fidelity F4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  provenance P1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  provenance P2  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: provenance P2  count=1 subjects=vendored template ref
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  provenance P3  identisch=0 divergiert=0 nicht_pruefbar=2
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: provenance P3  count=2 subjects=IG Publisher version, IG Publisher currency
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  provenance P4  identisch=0 divergiert=1 nicht_pruefbar=0
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: provenance P4  count=1 subjects=source guide version
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  INFO   11  verify-migration  provenance P5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  rendering R1  identisch=0 divergiert=42 nicht_pruefbar=1
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: rendering R1  count=42 subjects=output/de image IRT-Antwortwahrscheinlichkeiten.png, output/de image MII-PRO-Terminologie-Vergleichsmatrix.png, output/de image MII_PROMs_Domäne.png …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: rendering R1  count=1 subjects=source-versus-target rendering
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  rendering R2  identisch=0 divergiert=6 nicht_pruefbar=0
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: rendering R2  count=6 subjects=output/de id="ig-status" [Unknown region code], output/de id="publish-box" [{{], output/de id="ig-status" [{{] …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  INFO   11  verify-migration  rendering R3  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  rendering R4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  rendering R5  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: rendering R5  count=1 subjects=page-title catalogue
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  log L0  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  log L1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-09-03T16:09:26Z  INFO   11  verify-migration  log L2  identisch=12 divergiert=8 nicht_pruefbar=9
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: log L2  count=8 subjects=pre.2 classify-source-shape, pre.5 toolchain, 2.1 read-identity …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: log L2  count=9 subjects=5.1d guide-harvest, 5.1b.2 gofsh-input, 5.1b.2 gofsh-convert …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  INFO   11  verify-migration  log L3  identisch=1 divergiert=2 nicht_pruefbar=0
+2026-09-03T16:09:26Z  WARN   11  verify-migration  verification-divergence: log L3  count=2 subjects=identity field canonical, identity field title
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-09-03T16:09:26Z  INFO   11  verify-migration  log L4  identisch=1 divergiert=0 nicht_pruefbar=2
+2026-09-03T16:09:26Z  WARN   11  verify-migration  not-mechanisable: log L4  count=2 subjects=conversion count, page count
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-09-03T16:09:26Z  WARN   11  verify-migration  result  identisch=243 divergiert=169 nicht_pruefbar=43 findings=./migration-log/verification-findings.tsv markdown=./migration-log/verification.md exit=1
+    exit 1 = at least one DIVERGIERT; exit 3 = none, but verification is INCOMPLETE
+    because a check could not be mechanised. Neither is a pass.

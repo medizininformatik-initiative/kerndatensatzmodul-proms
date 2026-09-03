@@ -1,77 +1,77 @@
-### Architektonisches Muster: Varianten-Architektur
+### Architectural Pattern: Variant Architecture
 
-Der EQ-5D-5L demonstriert die Trennung von Capabilities in spezialisierte Varianten. Während der PHQ-9 alle Capabilities in einer einzigen Ressource vereint, implementiert der EQ-5D-5L verschiedene Anwendungsfälle durch separate, spezialisierte Questionnaire-Instanzen. Dieser Ansatz ermöglicht optimierte Ressourcen für spezifische Use Cases und vermeidet die Überladung einzelner Questionnaire-Definitionen mit Funktionalität, die nicht in allen Szenarien benötigt wird.
+The EQ-5D-5L demonstrates the separation of capabilities into specialized variants. While the PHQ-9 combines all capabilities in a single resource, the EQ-5D-5L implements different use cases through separate, specialized Questionnaire instances. This approach enables optimized resources for specific use cases and avoids overloading individual Questionnaire definitions with functionality that is not needed in all scenarios.
 
-### Klinischer Kontext
+### Clinical Context
 
-Der EQ-5D-5L ist ein generisches Instrument zur Messung der gesundheitsbezogenen Lebensqualität. Das Instrument besteht aus fünf Dimensionen, die jeweils zentrale Aspekte der Gesundheit erfassen: Mobilität, Selbstversorgung, alltägliche Tätigkeiten, Schmerzen/Beschwerden sowie Angst/Depression. Jede Dimension wird auf einer fünfstufigen Skala von "keine Probleme" bis "extreme Probleme" bewertet. Zusätzlich enthält das Instrument eine visuelle Analogskala (VAS), auf der Patienten ihren aktuellen Gesundheitszustand von 0 (schlechtester vorstellbarer Gesundheitszustand) bis 100 (bester vorstellbarer Gesundheitszustand) einschätzen.
+The EQ-5D-5L is a generic instrument for measuring health-related quality of life. The instrument consists of five dimensions that each capture key aspects of health: mobility, self-care, usual activities, pain/discomfort, and anxiety/depression. Each dimension is rated on a five-level scale from "no problems" to "extreme problems." Additionally, the instrument includes a visual analogue scale (VAS) on which patients rate their current health status from 0 (worst imaginable health state) to 100 (best imaginable health state).
 
-Die Auswertung des EQ-5D-5L erfolgt auf drei Ebenen:
-- Der **EQ-5D-5L Index** ist ein gewichteter Utility-Score, der auf populationsspezifischen Wertesets basiert und (basierend auf der deutschen Population) Werte zwischen -0.661 und 1.0 annehmen kann. Der Index-Score wird insbesondere für gesundheitsökonomische Berechnungen genutzt.
-- Das **EQ-5D-5L Profil** ist ein fünfstelliger Code, der die Antworten direkt repräsentiert (beispielsweise "11223" für keine Probleme in den ersten beiden Dimensionen und leichte bis moderate Probleme in den weiteren). Er dient häufig als schnelle Zusammenfassung des Gesamtzustands über die fünf verschiedenen Gesundheitsdomänen.
-- Die **EQ VAS** stellt die direkte Selbsteinschätzung des individuellen Gesundheitszustands anhand einer Skala von 0-100 dar.
+The EQ-5D-5L is evaluated at three levels:
+- The **EQ-5D-5L Index** is a weighted utility score based on population-specific value sets that (based on the German population) can range from -0.661 to 1.0. The index score is primarily used for health economic calculations.
+- The **EQ-5D-5L Profile** is a five-digit code that directly represents the responses (e.g., "11223" for no problems in the first two dimensions and mild to moderate problems in the remaining ones). It is frequently used as a quick summary of overall status across the five health domains.
+- The **EQ VAS** represents the direct self-assessment of individual health status on a scale of 0-100.
 
-### FHIR-Implementierung durch Varianten
+### FHIR Implementation through Variants
 
-Die Implementierung des EQ-5D-5L folgt einem modularen Ansatz mit einer Basis-Definition und mehreren abgeleiteten Varianten. Die Basis-Definition mit der Canonical URL `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l` enthält die gemeinsame Struktur aller EQ-5D-5L Varianten ohne spezifische Capabilities. Von dieser Basis leiten sich spezialisierte Varianten ab, die jeweils für bestimmte Anwendungsfälle optimiert sind.
+The EQ-5D-5L implementation follows a modular approach with a base definition and multiple derived variants. The base definition with the canonical URL `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l` contains the common structure of all EQ-5D-5L variants without specific capabilities. Specialized variants are derived from this base, each optimized for specific use cases.
 
-#### Minimal-Variante (Referenz-Implementation)
+#### Minimal Variant (Reference Implementation)
 
-Die Minimal-Variante dient als reine Strukturdefinition ohne aktive Capabilities. Sie wird primär als Referenz für Metadaten und Strukturinformationen verwendet und eignet sich für Systeme, die lediglich die Struktur des EQ-5D-5L kennen müssen, ohne ihn aktiv zu nutzen. Diese Variante enthält keine Extensions für Rendering oder Berechnungen, kann aber bereits als Mappingstruktur zu Datenharmonisierungen eingesetzt werden.
+The minimal variant serves as a pure structure definition without active capabilities. It is primarily used as a reference for metadata and structural information and is suitable for systems that only need to know the structure of the EQ-5D-5L without actively using it. This variant contains no extensions for rendering or calculations but can already be used as a mapping structure for data harmonization.
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-eq-5d-5l-minimal.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-eq-5d-5l-minimal.html) for the full resource.
 
-#### Displayable-Variante (Nur-Anzeige)
+#### Displayable Variant (Display-Only)
 
-Die Displayable-Variante ist für die reine Anzeige von bereits erfassten EQ-5D-5L Daten optimiert. Sie wird in klinischen Informationssystemen verwendet, wenn Ärzte oder Pflegepersonal die Ergebnisse eines bereits ausgefüllten Fragebogens einsehen möchten. Diese Variante enthält spezielle Rendering-Hinweise für eine optimale Darstellung, verzichtet aber auf Eingabevalidierung und Berechnungslogik, da keine Interaktion mit dem Fragebogen stattfindet.
+The displayable variant is optimized for the pure display of already captured EQ-5D-5L data. It is used in clinical information systems when physicians or nursing staff wish to review the results of an already completed questionnaire. This variant contains special rendering hints for optimal presentation but omits input validation and calculation logic, as no interaction with the questionnaire takes place.
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.html) for the full resource.
 
-#### Collectable-Variante (Datenerfassung)
+#### Collectable Variant (Data Collection)
 
-Die Collectable-Variante ist für die aktive Datenerfassung durch Patienten konzipiert. Sie enthält vollständige Validierungsregeln, Required-Markierungen für alle Items und eine versteckte "Keine Angabe" Option für Situationen, in denen Patienten einzelne Fragen nicht beantworten können oder möchten. Diese Variante wird typischerweise in Patientenportalen oder mobilen Apps eingesetzt und stellt sicher, dass die erfassten Daten vollständig und valide sind.
+The collectable variant is designed for active data collection by patients. It includes complete validation rules, required markings for all items, and a hidden "no answer" option for situations where patients cannot or do not wish to answer individual questions. This variant is typically deployed in patient portals or mobile apps and ensures that captured data is complete and valid.
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.html) for the full resource.
 
-#### Answer-Coding-Variante (MII-spezifische Kodierung)
+#### Answer Coding Variant (MII-Specific Coding)
 
-Die Answer-Coding-Variante verwendet das MII CodeSystem anstelle von LOINC-Codes. Diese Variante ist besonders wichtig, wenn zuverlässige ordinale Werte für automatische Score-Berechnungen benötigt werden. Die LinkIds folgen einem spezifischen Pattern (`euroqol-eq5d5l-coded-q01-MO`), das die Unterscheidung von anderen Varianten ermöglicht. Diese Variante kombiniert die Capabilities Collectable und Calculatable und ermöglicht damit sowohl die Datenerfassung als auch die automatische Berechnung von Scores.
+The answer coding variant uses the MII CodeSystem instead of LOINC codes. This variant is particularly important when reliable ordinal values are needed for automatic score calculations. The linkIds follow a specific pattern (`euroqol-eq5d5l-coded-q01-MO`) that enables differentiation from other variants. This variant combines the Collectable and Calculatable capabilities, allowing both data collection and automatic score calculation.
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.html) for the full resource.
 
-### Score-Berechnung und Interpretation
+### Score Calculation and Interpretation
 
-Die Berechnung der EQ-5D-5L Scores erfolgt auf drei verschiedenen Ebenen, die unterschiedliche Aspekte der Lebensqualität erfassen. Der EQ-5D-5L Index ist der komplexeste Score und erfordert populationsspezifische Wertetabellen. Für die deutsche Population existieren spezifische Koeffizienten, die die gesellschaftlichen Präferenzen für verschiedene Gesundheitszustände widerspiegeln. Die Berechnung erfolgt durch eine nicht-lineare Transformation der fünf Dimensionsantworten unter Berücksichtigung von Interaktionseffekten zwischen den Dimensionen.
+The calculation of EQ-5D-5L scores takes place at three different levels that capture different aspects of quality of life. The EQ-5D-5L Index is the most complex score and requires population-specific value tables. For the German population, specific coefficients exist that reflect societal preferences for different health states. The calculation is performed through a non-linear transformation of the five dimension responses, taking into account interaction effects between dimensions.
 
-Das EQ-5D-5L Profil ist eine direkte Repräsentation der Antworten als fünfstelliger Code. Dieser Code ermöglicht eine schnelle Erfassung des Gesundheitszustands ohne numerische Transformation und eignet sich besonders für die deskriptive Darstellung von Gesundheitszuständen in klinischen Berichten. Die EQ VAS repräsentiert die subjektive Einschätzung des Patienten und wird häufig als Ergänzung zum Index-Score verwendet, um Diskrepanzen zwischen "objektiver" und subjektiver Gesundheitsbewertung zu identifizieren.
+The EQ-5D-5L Profile is a direct representation of the responses as a five-digit code. This code enables quick identification of health status without numerical transformation and is particularly suitable for descriptive presentation of health states in clinical reports. The EQ VAS represents the patient's subjective assessment and is frequently used as a complement to the index score to identify discrepancies between "objective" and subjective health ratings.
 
-Detaillierte Score-Definitionen finden Sie auf der Seite [EQ-5D-5L Scores](eq-5d-5l-scores.html).
+For detailed score definitions, see the [EQ-5D-5L Scores](eq-5d-5l-scores.html) page.
 
-### Architektonische Vorteile der Varianten-Trennung
+### Architectural Advantages of Variant Separation
 
-Die Trennung in verschiedene Varianten bietet mehrere signifikante Vorteile für die Implementierung und Wartung. Jede Variante enthält nur die für ihren spezifischen Use Case notwendigen Extensions und Funktionalitäten. Die klare Trennung der Verantwortlichkeiten bedeutet, dass die Displayable-Variante keine unnötige Berechnungslogik enthält, während die Collectable-Variante nicht mit extraktionsspezifischen Extensions überladen wird. In der Praxis können die Varianten auch wie beim vorliegenden PHQ-9 zu einer einzigen Variante oder beliebigen Kombinationen kombiniert werden.
+The separation into different variants offers several significant advantages for implementation and maintenance. Each variant contains only the extensions and functionality necessary for its specific use case. The clear separation of responsibilities means that the displayable variant does not contain unnecessary calculation logic, while the collectable variant is not overloaded with extraction-specific extensions. In practice, variants can also be combined into a single variant or any combination, as demonstrated by the PHQ-9.
 
-Diese Architektur ermöglicht auch eine flexible Evolution des Systems. Neue Varianten können hinzugefügt werden, ohne bestehende Implementierungen zu beeinflussen. Wenn beispielsweise zukünftig eine spezielle Variante für Computer Adaptive Testing benötigt wird, kann diese als zusätzliche Variante implementiert werden, ohne die bestehenden Varianten zu modifizieren.
+This architecture also enables flexible evolution of the system. New variants can be added without affecting existing implementations. For example, if a special variant for Computer Adaptive Testing is needed in the future, it can be implemented as an additional variant without modifying existing variants.
 
-### Implementierungsempfehlungen
+### Implementation Recommendations
 
-Die Entscheidung zwischen einer All-in-One-Implementierung wie beim PHQ-9 und einer Varianten-Architektur wie beim EQ-5D-5L sollte auf mehreren Faktoren basieren. Für einfache Instrumente mit wenigen Use Cases ist der All-in-One-Ansatz oft ausreichend und reduziert die Komplexität. Bei komplexen Instrumenten mit vielfältigen Anwendungsszenarien bietet die Varianten-Architektur jedoch deutliche Vorteile in Bezug auf Wartbarkeit und Performance.
+The decision between an all-in-one implementation like the PHQ-9 and a variant architecture like the EQ-5D-5L should be based on several factors. For simple instruments with few use cases, the all-in-one approach is often sufficient and reduces complexity. For complex instruments with diverse application scenarios, the variant architecture offers clear advantages in terms of maintainability and performance.
 
-Implementierer sollten auch die erwartete Evolution des Instruments und den Austausch zwischen verschiedenen Systemen berücksichtigen. Instrumente, die voraussichtlich stabil bleiben, können vom einfacheren All-in-One-Ansatz profitieren. Instrumente, bei denen häufige Änderungen oder Erweiterungen erwartet werden, sind mit der Varianten-Architektur besser bedient, da Änderungen isoliert in einzelnen Varianten vorgenommen werden können.
+Implementers should also consider the expected evolution of the instrument and the exchange between different systems. Instruments that are expected to remain stable can benefit from the simpler all-in-one approach. Instruments where frequent changes or extensions are anticipated are better served by the variant architecture, as changes can be made in isolation within individual variants.
 
-### Geschichte
+### History
 
-Der EQ-5D-5L ist eine Weiterentwicklung des EQ-5D-3L aus dem Jahr 2009. Siehe [https://euroqol.org/information-and-support/euroqol-instruments/eq-5d-5l/](https://euroqol.org/information-and-support/euroqol-instruments/eq-5d-5l/).
+The EQ-5D-5L is a further development of the EQ-5D-3L from 2009. See [https://euroqol.org/information-and-support/euroqol-instruments/eq-5d-5l/](https://euroqol.org/information-and-support/euroqol-instruments/eq-5d-5l/).
 
-### Lizenzsituation
+### Licensing
 
-Der EQ-5D-5L ist für nichtkommerzielle Zwecke nach Registrierung ohne zusätzliche Lizenzkosten nutzbar. Dies betrifft sowohl den Einsatz in klinischen Studien als auch der Krankenversorgung. Siehe die [EQ-5D User License Policy](https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-User-License-Policy-10SEP2024.pdf).
+The EQ-5D-5L is available for non-commercial purposes after registration without additional license fees. This applies to both use in clinical studies and healthcare. See the [EQ-5D User License Policy](https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-User-License-Policy-10SEP2024.pdf).
 
-### Weiterführende Links und Informationen
+### Further Links and Information
 
-- Handbuch: [https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-5LUserguide-23-07.pdf](https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-5LUserguide-23-07.pdf)
-- Deutsche Populationswerte: Ludwig K, Graf von der Schulenburg JM, Greiner W. German Value Set for the EQ-5D-5L. Pharmacoeconomics. 2018 Jun;36(6):663-674. DOI: 10.1007/s40273-018-0615-8. PMID: 29460066; PMCID: PMC5954069.
+- User Guide: [https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-5LUserguide-23-07.pdf](https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-5LUserguide-23-07.pdf)
+- German Population Values: Ludwig K, Graf von der Schulenburg JM, Greiner W. German Value Set for the EQ-5D-5L. Pharmacoeconomics. 2018 Jun;36(6):663-674. DOI: 10.1007/s40273-018-0615-8. PMID: 29460066; PMCID: PMC5954069.
 
-### Zusammenfassung
+### Summary
 
-Der EQ-5D-5L demonstriert erfolgreich die Varianten-Architektur des MII PRO Moduls und zeigt, wie komplexe Instrumente durch modulare Ansätze effizient implementiert werden können. Die Trennung der Capabilities in spezialisierte Questionnaire-Instanzen ermöglicht optimierte Implementierungen für spezifische Use Cases bei gleichzeitiger Wahrung der semantischen Konsistenz. Diese Architektur stellt einen wichtigen Baustein für die skalierbare Implementierung von Patient-Reported Outcomes im deutschen Gesundheitswesen dar.
+The EQ-5D-5L successfully demonstrates the variant architecture of the MII PRO Module and shows how complex instruments can be efficiently implemented through modular approaches. The separation of capabilities into specialized Questionnaire instances enables optimized implementations for specific use cases while maintaining semantic consistency. This architecture represents an important building block for the scalable implementation of Patient-Reported Outcomes in the German healthcare system.

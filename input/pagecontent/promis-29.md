@@ -1,17 +1,17 @@
-### Übersicht
+### Overview
 
-**Status**: Vollständig implementiert
+**Status**: Fully implemented
 **Version**: 2026.0.0-ballot
-**Letzte Aktualisierung**: 2025-08-28
+**Last Updated**: 2025-08-28
 
-Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen plus Schmerzintensität.
+The PROMIS-29 is a comprehensive instrument for assessing health-related quality of life across 7 domains plus pain intensity.
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-promis-29.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-promis-29.html) for the full resource.
 
-### Domänen
+### Domains
 
-| Domäne | Items | Score-Bereich | LOINC |
-|--------|-------|---------------|--------|
+| Domain | Items | Score Range | LOINC |
+|--------|-------|-------------|-------|
 | Physical Function | 4 | T-Score 20-80 | 61758-9 |
 | Anxiety | 4 | T-Score 20-80 | 61759-7 |
 | Depression | 4 | T-Score 20-80 | 61760-5 |
@@ -21,7 +21,7 @@ Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questio
 | Pain Interference | 4 | T-Score 20-80 | 61764-7 |
 | Pain Intensity | 1 | 0-10 | 75262-6 |
 
-### Technische Details
+### Technical Details
 
 #### Questionnaire Resource
 
@@ -32,34 +32,32 @@ Questionnaire/mii-qst-pro-promis-29
 **Capabilities**:
 - Displayable
 - Collectable
-- Calculatable (alle Domänen-Scores)
+- Calculatable (all domain scores)
 - Extractable
 - Domain-aligned
 
-#### Score-Berechnung
+#### Score Calculation
 
-Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
+Each domain (except Pain Intensity) is calculated as a T-Score:
 
 ```
 // FHIRPath
-// Beispiel: Depression Domain
+// Example: Depression Domain
 %rawScore = %resource.item
   .where(linkId.matches('^promis-eddep(04|05|06|29)$'))
   .answer.value.ordinal()
   .sum()
 
-// T-Score Lookup (vereinfacht)
+// T-Score Lookup (simplified)
 %tScore = iif(%rawScore = 4, 41.0,
           iif(%rawScore = 5, 49.0,
           iif(%rawScore = 6, 52.5, ...)))
 ```
 
-### Sprachunterstützung
+### Language Support
 
-**Primärsprache**: Englisch (validierte Version)
-**Deutsche Übersetzung**: Via `translation`-Extension
-
-> **Hinweis zur DE-Variante** (`mii-qst-pro-promis-29-de`): Diese existiert ausschließlich zur Darstellung in deutschsprachigen Renderern, die die `translation`-Extension nicht auswerten. **Sie wird nicht als eigene Implementierung gepflegt** -- ihr Inhalt ist mit der EN-primären Hauptversion identisch. Bei Datenerfassung und -austausch ist die Hauptversion (`mii-qst-pro-promis-29`) maßgeblich.
+**Primary Language**: English (validated version)
+**German Translation**: Via Extension
 
 ```json
 {
@@ -74,11 +72,11 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
 }
 ```
 
-### Implementierungshinweise
+### Implementation Notes
 
-#### Variable-basierte Architektur
+#### Variable-Based Architecture
 
-Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
+The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:
 
 ```fsh
 // FSH
@@ -92,13 +90,13 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
 * item[dep-tscore].calculatedExpression = "iif(%promisDepRaw = 4, 41.0, ...)"
 ```
 
-#### Bekannte Einschränkungen
+#### Known Limitations
 
-1. **Item-IDs**: Aktuell MII-spezifisch (`promis-pfa11`), nicht LOINC-konform
-2. **Validation Study Alignment**: IDs basieren auf deutschen Validierungsstudien
-3. **Partial Responses**: Keine Behandlung fehlender Items
+1. **Item IDs**: Currently MII-specific (`promis-pfa11`), not LOINC-conformant
+2. **Validation Study Alignment**: IDs are based on German validation studies
+3. **Partial Responses**: No handling of missing items
 
-### Beispiel QuestionnaireResponse
+### Example QuestionnaireResponse
 
 ```json
 {
@@ -116,23 +114,13 @@ Der PROMIS-29 nutzt FHIR Variables für effiziente Multi-Score-Berechnung:
         }
       }]
     }
-    // ... weitere 28 Items
+    // ... 28 additional items
   ]
 }
 ```
 
-### Lizenzierung & Urheberrecht
-
-PROMIS-Items sind urheberrechtlich geschützt. Die offiziellen deutschen Übersetzungen werden durch **PCOR-MII** bereitgestellt und durch das **PROMIS National Center Deutschland (CPCOR Charité, Leitung: Felix Fischer)** kuratiert.
-
-**Für die institutionelle Implementierung außerhalb des PCOR-MII-Kontexts ist eine Nutzungsanfrage bei CPCOR erforderlich**:
-[https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen](https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen)
-
-Details zur Schichten-Attribution (MII FHIR-Struktur + PROMIS Items + deutsche Übersetzung + LOINC) siehe [PROMIS — Lizenzierung & Urheberrecht](promis.html#lizenzierung-urheberrecht).
-
-### Referenzen
+### References
 
 - [PROMIS Official Site](https://www.healthmeasures.net/explore-measurement-systems/promis)
 - [German PROMIS Validation](https://doi.org/10.1371/journal.pone.0197139)
-- [PROMIS National Center Deutschland (CPCOR)](https://cpcor.charite.de/promis_national_center_deutschland)
 - LOINC Panel: [62199-5](https://loinc.org/62199-5/)

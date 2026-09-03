@@ -1,33 +1,33 @@
-### Übersicht
+### Overview
 
-Das Beck Depression Inventory II (BDI-II) ist ein etabliertes Screening-Instrument zur Erfassung depressiver Symptome.
+The Beck Depression Inventory II (BDI-II) is an established screening instrument for assessing depressive symptoms.
 
-**Lizenzhinweis**: Aufgrund von Lizenzbestimmungen ist diese Implementierung **nicht displayable**, verfügt jedoch über **calculatable** Funktionalität für Score-Berechnungen.
+**Licensing Notice**: Due to licensing restrictions, this implementation is **not displayable** but does provide **calculatable** functionality for score calculations.
 
-### Implementierte Komponenten
+### Implemented Components
 
-- **Questionnaire**: Technische Implementierung mit Score-Berechnung
-- **Score Calculation**: Automatische Berechnung der BDI-II Gesamtpunktzahl (itemWeight-basiert)
+- **Questionnaire**: Technical implementation with score calculation
+- **Score Calculation**: Automatic calculation of the BDI-II total score (itemWeight-based)
 - **Capabilities**:
-  - `displayable = false` (Lizenzbestimmungen)
-  - `collectable = false` (kann nicht direkt erfasst werden)
-  - `calculatable = true` (Score-Berechnung implementiert)
-  - `extractable = true` (Observation-Extraktion möglich)
-  - `domainAligned = true` (Depression-Domain Mapping)
+  - `displayable = false` (licensing restrictions)
+  - `collectable = false` (cannot be collected directly)
+  - `calculatable = true` (score calculation implemented)
+  - `extractable = true` (Observation extraction possible)
+  - `domainAligned = true` (depression domain mapping)
 
-### Technische Details
+### Technical Details
 
 - **Canonical URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2`
-- **Scoring**: Summenscore (0-63 Punkte)
-- **Implementation**: Vollständige FSH-Definition mit itemWeight-Extensions
-- **Status**: Funktionsfähige Score-Berechnung ohne Display-Capability
-- **Testing**: Enthält Platzhaltertexte (`[TEST PLACEHOLDER...]`) ausschließlich für technische Validierung
-  - Ermöglicht Testing in Tools, die renderbare Questionnaires voraussetzen
-  - Capabilities bleiben `displayable=false`, `collectable=false`
-  - NUR für technische Validierung, NICHT für klinische Anwendung
+- **Scoring**: Sum score (0-63 points)
+- **Implementation**: Complete FSH definition with itemWeight extensions
+- **Status**: Functional score calculation without display capability
+- **Testing**: Contains placeholder texts (`[TEST PLACEHOLDER...]`) solely for technical validation
+  - Enables testing in tools that require renderable Questionnaires
+  - Capabilities remain `displayable=false`, `collectable=false`
+  - For technical validation ONLY, NOT for clinical use
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-bdi-bdi2.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-bdi-bdi2.html) for the full resource.
 
-### Lizenzierung
+### Licensing
 
-Diese Implementierung respektiert die Urheberrechte des BDI-II. Für die Nutzung in produktiven Umgebungen sind entsprechende Lizenzen vom Rechteinhaber einzuholen.
+This implementation respects the copyright of the BDI-II. For use in production environments, appropriate licenses must be obtained from the rights holder.

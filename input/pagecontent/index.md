@@ -1,75 +1,75 @@
-Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken beschreibt die FHIR-Repräsentation des Kerndatensatzmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
+This specification of the PROs, PROMs, and Derived Metrics module describes the FHIR representation of the Patient-Reported Outcomes (PROs) core dataset module of the Medical Informatics Initiative (Medizininformatik-Initiative, MII).
 
-| Veröffentlichung |   |
+| Publication |   |
 |---------|---|
-| Datum   | 07.07.2026 |
-| Version | 2026.5.2   |
+| Date    | 30.03.2026 |
+| Version | 2026.2.0   |
 | Status  | active     |
 | Realm   | DE         |
 
-### Zielsetzung
+### Objective
 
-Das MII PRO-Modul standardisiert die Erfassung und Auswertung patientenberichteter Gesundheitsdaten für das deutsche Gesundheitswesen. Es ermöglicht die standortübergreifende Vergleichbarkeit von PRO-Daten durch einheitliche FHIR-basierte Implementierungen.
+The MII PRO module standardizes the collection and analysis of patient-reported health data for the German healthcare system. It enables cross-site comparability of PRO data through uniform FHIR-based implementations.
 
-### Umfang der Spezifikation
+### Scope of the Specification
 
-#### Produktionsreife Instrumente
-- **PHQ-9**: Depression-Screening mit automatischer Score-Berechnung
-- **EQ-5D-5L**: Lebensqualität mit Index-, VAS- und Profil-Scores
+#### Production-Ready Instruments
+- **PHQ-9**: Depression screening with automatic score calculation
+- **EQ-5D-5L**: Quality of life with index, VAS, and profile scores
 
-#### Technische Vorschau
-- **PROMIS-29**: Multi-Domain Gesundheitsstatus (7 Domänen)
-- **EORTC QLQ-C30**: Onkologische Lebensqualität
-- **DASS-21**: Depression, Angst und Stress
-- **BDI-II**: Beck Depression Inventory (Lizenz-Referenz)
+#### Technical Preview
+- **PROMIS-29**: Multi-domain health status (7 domains)
+- **EORTC QLQ-C30**: Oncological quality of life
+- **DASS-21**: Depression, Anxiety, and Stress
+- **BDI-II**: Beck Depression Inventory (license reference)
 
-#### Kernfunktionalität
-- **SDC-basierte Fragebögen** mit erweiterten Rendering- und Berechnungsfähigkeiten
-- **Capability-Architektur** für flexible Nutzungsszenarien
-- **Domain-basiertes Scoring** zur Harmonisierung verschiedener Instrumente
-- **MII-Terminologie** für zuverlässige Score-Berechnungen
+#### Core Functionality
+- **SDC-based questionnaires** with advanced rendering and calculation capabilities
+- **Capability architecture** for flexible use case scenarios
+- **Domain-based scoring** for harmonization across instruments
+- **MII terminology** for reliable score calculations
 
-### Technische Grundlagen
+### Technical Foundations
 
-Die Implementierung basiert auf:
+The implementation is based on:
 - FHIR R4 (4.0.1)
 - SDC (Structured Data Capture) 3.0.0
 - HL7 Terminology 6.4.0
 
-### Impressum
+### Imprint
 
-Dieser Leitfaden ist im Rahmen der Medizininformatik Initiative erstellt worden und unterliegt per Governance Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
+This guide was created within the Medical Informatics Initiative and is subject to the coordination procedure of the Interoperability Forum and the Technical Committees of HL7 Germany e.V. per the governance process.
 
-### Ansprechpartner
+### Contact
 
-* Thomas Debertshäuser, Berlin Institute of Health (Charité)
-* Mathias Rose, Charité - Universitätsmedizin Berlin
-* Fabian Praßer, Berlin Institute of Health (Charité)
-* Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
-* Franziska Klepka, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
+* Thomas Debertshaeuser, Berlin Institute of Health (Charite)
+* Mathias Rose, Charite - Universitaetsmedizin Berlin
+* Fabian Prasser, Berlin Institute of Health (Charite)
+* Karoline Buckow, TMF -- Technology and Methodology Platform for Networked Medical Research e.V.
+* Franziska Klepka, TMF -- Technology and Methodology Platform for Networked Medical Research e.V.
 
-Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](https://chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
+Questions about this publication can be posted at any time on [chat.fhir.org](https://chat.fhir.org) in the 'german/mi-initiative' stream.
 
-Anmerkungen und Kritik werden in Form von Issues im [GitHub-Projekt](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues) gern entgegengenommen.
+Comments and feedback are welcome as issues in the [GitHub project](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues).
 
-### Autoren (in alphabetischer Reihenfolge)
+### Authors (in alphabetical order)
 
-* Thomas Debertshäuser, Berlin Institute of Health (Charité)
-* Felix Fischer, Charité - Universitätsmedizin Berlin
-* Thimo Hölter, Berlin Institute of Health (Charité)
-* Marcel Susky, Technische Universität Dresden, Forschungsgruppe Digital Health
-* Christian Zilske, Berlin Institute of Health (Charité)
+* Thomas Debertshaeuser, Berlin Institute of Health (Charite)
+* Felix Fischer, Charite - Universitaetsmedizin Berlin
+* Thimo Hoelter, Berlin Institute of Health (Charite)
+* Marcel Susky, Technical University of Dresden, Digital Health Research Group
+* Christian Zilske, Berlin Institute of Health (Charite)
 
-### Copyright-Hinweis, Nutzungshinweise
+### Copyright Notice, Terms of Use
 
-Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
+Copyright 2019+: TMF e. V., Charlottenstrasse 42, 10117 Berlin
 
-Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw. Veröffentlichungsansprüche sind nicht beschränkt.
+The content of this specification is public. There are no restrictions on reuse or publication rights.
 
-Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation.
+For the usage rights of the underlying FHIR technology, see the FHIR base specification.
 
-Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher).
+Some code systems used are published and maintained by other organizations. The copyright of the respective publishers applies.
 
 ### Disclaimer
 
-Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses Dokuments auf FHIR Version R4 beruhen, für die Copyright HL7 International gilt.
+The content of this document is public. Please note that parts of this document are based on FHIR version R4, for which the copyright of HL7 International applies.
