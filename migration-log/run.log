@@ -130,3 +130,18 @@
     blast radius: CLAUDE.md, package.json description (SHIPPED in the published 2026.7.0 package), the release-prepare skill, and the v2026.7.0 GitHub release notes all link to the 404 URL
 2026-09-03T06:57:25Z  INFO   5.1c  guide-version-pin  pinned=https://simplifier.net/guide/modul-pro-v2026/MIIIGModulPRO?version=2026.4.1.0 published_versions=2026.0.1,2026.4.1.0 module_version=2026.7.0 lag=3 releases
 2026-09-03T06:57:25Z  INFO   2.2  license-file-absent  declared=CC0-1.0 (sushi-config.yaml, package.json) but NO LICENSE file in the repository root -> F3 reconciliation is NICHT PRUEFBAR; template ships CC-BY-4.0, so a silent template default would RELICENSE the module
+2026-09-03T07:10:43Z  INFO   2c  narrative-source-decision  SKIPPED the guide harvest -- narrative-source=repository, not the rendered guide
+    reason: both narrative trees live IN the repo and both carry the current 2026.7.0 state (last commit 2026-09-02, GAD-7). The rendered guide is pinned at 2026.4.1.0 -- three releases stale -- so harvesting it would IMPORT OUTDATED TEXT over current sources
+    scope of 2c per SKILL.md: shape B always, and shape A 'whose pages live on the platform'. Neither applies: this is shape A with 98 pages under version control
+2026-09-03T07:10:43Z  INFO   2c  narrative-source-inventory  authoritative=input/pagecontent (45 pages) + implementation-guides/MII-PRO-v2026-DE (53 pages); rendered guide used ONLY as a cross-check reference, never as a source
+2026-09-03T07:12:21Z  INFO   5.4  tree-overlap-measured  simplifier_pages=53 near-identical_to_pagecontent=40 (Jaccard>=.45, most >=.95) partial=3 unique=10
+    method: token-set Jaccard over 5+ letter words with Simplifier directives stripped -- NOT filename matching, which mismatched German/English page names (Domaenen<->domains, ID-Systematik<->id-systematics)
+2026-09-03T07:12:21Z  WARN   5.4  tree-drift  the two narrative trees have DIVERGED: 26 of the 40 paired pages carry an OLDER Simplifier version than their input/pagecontent counterpart
+    worst case measured: scoring -- input/pagecontent/scoring.md rewritten 2026-08-24 to the three-channel architecture, Simplifier Technische-Implementierung/Scoring last touched 2025-08-27 with the superseded Out-of-FHIR/In-FHIR model (Jaccard 0.17)
+    routing consequence: for every paired page input/pagecontent WINS as the source; the Simplifier tree contributes ONLY its 10 unique pages
+2026-09-03T07:16:01Z  INFO   3  template-pinned  repo_tag=v0.11.3 (2026-08-27, latest; main pushed same day) ig_template_package=de.medizininformatikinitiative.template@1.3.2 -- same package the onkologie module vendors
+2026-09-03T07:16:01Z  INFO   6  language-inversion  source i18n-default-lang=de (+en), target template i18n-default-lang=en (+de) -> the direction INVERTS
+    measured: 45 German pages in input/pagecontent, 33 English in input/translations/en/pagecontent, 12 pages with NO English version
+    the 12: euronet-soma gad-7 isr-z midos2 pc-ptsd phq-15 promis-16 proms-onkologisches-basisscreening scoff ssd-12 whodas wi-7 -- i.e. the PSS set and GAD-7 authored in German this cycle
+2026-09-03T07:16:01Z  WARN   2.2  license-divergence  source declares CC0-1.0 (sushi-config.yaml + package.json, NO LICENSE file); template v0.11.3 ships a CC-BY-4.0 LICENSE
+    adopting the template scaffold unchanged would RELICENSE the module from CC0-1.0 to CC-BY-4.0 -- a human decision per spec 2.2, never a default
