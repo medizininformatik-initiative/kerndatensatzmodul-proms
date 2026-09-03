@@ -1,117 +1,121 @@
-### Überblick
+<!-- TODO:REVIEW — English page derived from the German original during the
+     template migration (Gate C). The German text under
+     input/translations/de/pagecontent/ is the authored source. -->
 
-Das **Minimale Dokumentationssystem für Palliativpatienten (MIDOS2)** ist ein etabliertes deutsches Symptom-Screening-Instrument für die Palliativmedizin. Es wurde von der **Deutschen Gesellschaft für Palliativmedizin (DGP)** als deutsche Adaption des Edmonton Symptom Assessment System (ESAS, Bruera et al. 1991) entwickelt und durch Stiel et al. (2010, 2012) validiert und weiterentwickelt.
+### Overview
 
-**Grundlegende Eigenschaften:**
-- **13 Items**: 11 Symptom-Items + 1 Wohlbefinden-Item + 1 freitext für sonstige Beschwerden
-- **Antwortskala**: 4-stufige DGP-Skala für Symptome (keine / leichte / mittlere / starke), separate 4-stufige Skala für Wohlbefinden
-- **Zeitbezug**: Aktuell (letzte Tage)
-- **Lizenz**: DGP, frei für klinische und Forschungszwecke
-- **Validierung (DE)**: Stiel et al. 2010, 2012
-- **Administration**: 2-5 Minuten
+The **Minimal Documentation System for Palliative Patients (MIDOS2)** is an established German symptom screening instrument for palliative care. It was developed by the **German Association for Palliative Medicine (DGP)** as a German adaptation of the Edmonton Symptom Assessment System (ESAS, Bruera et al. 1991) and validated and further developed by Stiel et al. (2010, 2012).
 
-### Fragebogenstruktur
+**Key Properties:**
+- **13 items**: 11 symptom items + 1 well-being item + 1 free text for other complaints
+- **Response scale**: 4-point DGP scale for symptoms (none / mild / moderate / severe), separate 4-point scale for well-being
+- **Time frame**: current (past few days)
+- **License**: DGP, free for clinical and research purposes
+- **German validation**: Stiel et al. 2010, 2012
+- **Administration**: 2-5 minutes
 
-#### Symptom-Skala (4-stufig)
+### Questionnaire Structure
 
-| Wert | Deutsch | Englisch |
+#### Symptom Scale (4-point)
+
+| Value | German | English |
 |------|---------|----------|
 | 0 | keine | none |
 | 1 | leichte | mild |
 | 2 | mittlere | moderate |
 | 3 | starke | severe |
 
-#### Wohlbefinden-Skala (4-stufig)
+#### Well-being Scale (4-point)
 
-| Wert | Deutsch | Englisch |
+| Value | German | English |
 |------|---------|----------|
 | 0 | sehr gut | very good |
 | 1 | eher gut | rather good |
 | 2 | eher schlecht | rather poor |
 | 3 | sehr schlecht | very poor |
 
-#### Symptom-Items
+#### Symptom Items
 
-| # | Symptom | SNOMED CT (Kandidat) |
+| # | Symptom | SNOMED CT (candidate) |
 |---|---------|----------------------|
-| 1 | Schmerz | 22253000 \|Pain (finding)\| |
-| 2 | Übelkeit | 422587007 \|Nausea (finding)\| |
-| 3 | Erbrechen | 422400008 \|Vomiting (disorder)\| |
-| 4 | Luftnot | 267036007 \|Dyspnea (finding)\| |
-| 5 | Verstopfung | 14760008 \|Constipation (finding)\| |
-| 6 | Schwäche | _zu verifizieren_ |
-| 7 | Müdigkeit | 84229001 \|Fatigue (finding)\| |
-| 8 | Appetitmangel | 79890006 \|Loss of appetite (finding)\| |
-| 9 | Depressivität | 35489007 \|Depressed mood (finding)\| |
-| 10 | Angst | 48694002 \|Anxiety (finding)\| |
-| 11 | Anspannung | _zu verifizieren_ |
-| 12 | Wohlbefinden gesamt | — |
-| 13 | Andere Beschwerden (freitext) | — |
+| 1 | Pain | 22253000 \|Pain (finding)\| |
+| 2 | Nausea | 422587007 \|Nausea (finding)\| |
+| 3 | Vomiting | 422400008 \|Vomiting (disorder)\| |
+| 4 | Dyspnoea | 267036007 \|Dyspnea (finding)\| |
+| 5 | Constipation | 14760008 \|Constipation (finding)\| |
+| 6 | Weakness | _to be verified_ |
+| 7 | Fatigue | 84229001 \|Fatigue (finding)\| |
+| 8 | Loss of appetite | 79890006 \|Loss of appetite (finding)\| |
+| 9 | Depressed mood | 35489007 \|Depressed mood (finding)\| |
+| 10 | Anxiety | 48694002 \|Anxiety (finding)\| |
+| 11 | Tension | _to be verified_ |
+| 12 | Overall well-being | — |
+| 13 | Other complaints (free text) | — |
 
-> SNOMED-Kandidaten sind Stand der Recherche und müssen via Terminologieserver-Validierung bestätigt werden.
+> SNOMED candidates reflect the state of research and must be confirmed by terminology server validation.
 
-### Score-Berechnung
+### Score Calculation
 
-#### Symptom-Summen-Score
+#### Symptom Sum Score
 
-Summe der 11 Symptom-Items (jeweils 0-3), Wertebereich 0-33:
+Sum of the 11 symptom items (0-3 each), range 0-33:
 
 ```
-symptomSumScore = Summe(Item 1..11) ∈ [0, 33]
+symptomSumScore = sum(item 1..11) ∈ [0, 33]
 ```
 
-Höhere Werte indizieren stärkere Symptomlast.
+Higher values indicate a greater symptom burden.
 
-#### Wohlbefinden-Score
+#### Well-being Score
 
-Einzelnes Item, Wertebereich 0-3 — wird nicht in den Summen-Score eingerechnet, sondern separat als globale Lebensqualitäts-Komponente berichtet.
+A single item, range 0-3 — not included in the sum score but reported separately as a global quality-of-life component.
 
-### Verhältnis zum PRO-CTCAE Onkologischen Basisscreening
+### Relationship to the PRO-CTCAE Oncology Base Screening
 
-MIDOS2 und das [PRO-CTCAE Onkologische Basisscreening](proms-onkologisches-basisscreening.html) bilden konzeptuell **dieselbe Symptomliste** ab — mit unterschiedlicher Granularität der Antwortskalen:
+MIDOS2 and the [PRO-CTCAE Oncology Base Screening](proms-onkologisches-basisscreening.html) conceptually represent **the same symptom list** — at differing granularity of the response scales:
 
-| Aspekt | MIDOS2 | Onkologisches Basisscreening |
+| Aspect | MIDOS2 | Oncology Base Screening |
 |---|---|---|
-| Skalenformat | 4-stufig (DGP) | 5-stufig (PRO-CTCAE) |
-| Items pro Symptom | 1 (Severity) | 1-3 (Frequency/Severity/Interference) |
-| Zielgruppe | Palliativmedizin | Onkologie |
-| Authority | DGP | DKG (Symptomauswahl) + NCI (Items) |
+| Scale format | 4-point (DGP) | 5-point (PRO-CTCAE) |
+| Items per symptom | 1 (severity) | 1-3 (frequency/severity/interference) |
+| Target group | Palliative care | Oncology |
+| Authority | DGP | DKG (symptom selection) + NCI (items) |
 
-Eine ConceptMap zwischen den Antwortskalen ist für eine spätere Iteration vorgesehen.
+A ConceptMap between the response scales is planned for a later iteration.
 
-### FHIR-Implementierung
+### FHIR Implementation
 
-> **Sprachstrategie:** Deutsch als Primärsprache, Englisch als Translation. MIDOS2 ist ein originär deutsches Instrument.
+> **Language strategy:** German as the primary language, English as the translation. MIDOS2 is an originally German instrument.
 
-> **Terminologie-Strategie:** MII-kontrollierte Antwort-Codes (eigene CodeSystem). Symptom-Items mit SNOMED-Property für externe Interoperabilität.
+> **Terminology strategy:** MII-controlled answer codes (a dedicated CodeSystem). Symptom items carry a SNOMED property for external interoperability.
 
 #### Questionnaire
 
 **Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2`
 
-**Implementierte Capabilities:**
+**Implemented capabilities:**
 - Displayable, Collectable, Calculatable, Extractable, Domain-aligned
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-midos-midos2.html).
+The complete resource is in the [Questionnaire definition](Questionnaire-mii-qst-pro-midos-midos2.html).
 
-#### CodeSystem und ValueSets
+#### CodeSystem and ValueSets
 
-**CodeSystem:** `mii-cs-pro-midos2` — Item-Codes und beide Antwortskalen mit deutschen Primärtexten und englischen Translations
+**CodeSystem:** `mii-cs-pro-midos2` — item codes and both response scales with German primary texts and English translations
 
-Die vollständige Ressource finden Sie in der [CodeSystem-Definition](CodeSystem-mii-cs-pro-midos2.html).
+The complete resource is in the [CodeSystem definition](CodeSystem-mii-cs-pro-midos2.html).
 
 **ValueSets:**
-- `mii-vs-pro-midos2-severity` — DGP-Symptom-Skala
-- `mii-vs-pro-midos2-wellbeing` — Wohlbefinden-Skala
+- `mii-vs-pro-midos2-severity` — DGP symptom scale
+- `mii-vs-pro-midos2-wellbeing` — well-being scale
 
-#### Score-Berechnung (FHIRPath)
+#### Score Calculation (FHIRPath)
 
 ```
-// FHIR Variable: symptomSumScore
+// FHIR variable: symptomSumScore
 %resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.ordinal().sum()
 ```
 
-### Literatur
+### Literature
 
 1. **Stiel S, Pollok A, Elsner F, et al.** (2012)
    *Validation of the Symptom and Problem Checklist of the German Hospice and Palliative Care Evaluation (HOPE)*
@@ -131,4 +135,4 @@ Die vollständige Ressource finden Sie in der [CodeSystem-Definition](CodeSystem
 
 ---
 
-> **Status:** Diese Implementierung ist als `draft` und `experimental` markiert. Die Quellverifikation gegen Stiel et al. 2010/2012 ist Teil von Bead `kerndatensatzmodul-proms-5jd` und steht aus.
+> **Status:** this implementation is marked `draft` and `experimental`. Source verification against Stiel et al. 2010/2012 is part of bead `kerndatensatzmodul-proms-5jd` and is still pending.

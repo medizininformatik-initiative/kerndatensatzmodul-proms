@@ -156,3 +156,7 @@
 2026-09-03T10:22:08Z  INFO   5.2  sushi-skeleton  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-skeleton.log
 2026-09-03T10:22:50Z  INFO   5.2  sushi-skeleton  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-skeleton.log raw_log_lines=62
 2026-09-03T10:23:21Z  INFO   5.2  skeleton-accepted  sushi exit=0 errors=0 warnings=1 (cosmetic: 3.20.0 vs 3.20.1 upstream notice); P5 ok -- ig.ini names ImplementationGuide-mii-ig-pro.json which SUSHI writes; artifact count unchanged
+2026-09-03T10:31:50Z  INFO   6  sushi-after-language-swap  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-lang.log
+2026-09-03T10:32:39Z  INFO   6  sushi-after-language-swap  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-lang.log raw_log_lines=53
+2026-09-03T10:32:39Z  INFO   6  language-swap-done  45 German pages -> input/translations/de/pagecontent/; 33 existing English -> input/pagecontent/; 12 English pages WRITTEN from the German originals (5748 source words), each carrying a TODO:REVIEW provenance header for Gate C
+    coverage now 45/45 in both languages, 0 gaps

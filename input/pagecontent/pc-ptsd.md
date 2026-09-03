@@ -1,14 +1,18 @@
-### Klinischer Kontext
+<!-- TODO:REVIEW — English page derived from the German original during the
+     template migration (Gate C). The German text under
+     input/translations/de/pagecontent/ is the authored source. -->
 
-Der **PC-PTSD (Primary Care PTSD Screen)** ist ein Kurzscreening auf eine **posttraumatische Belastungsstörung** für die Primärversorgung. Vier Ja/Nein-Fragen erfassen die Kernbereiche Wiedererleben, Vermeidung, Übererregung und emotionale Taubheit — bezogen auf ein zuvor erlebtes belastendes Ereignis.
+### Clinical Context
 
-**Scoring und Interpretation** (Summenwert 0–4): Jede Ja-Antwort zählt einen Punkt. Verbreitet gilt ein Screening ab **drei Punkten** als auffällig und begründet eine weitergehende Diagnostik.
+The **PC-PTSD (Primary Care PTSD Screen)** is a brief screen for **post-traumatic stress disorder** in primary care. Four yes/no questions cover the core domains of re-experiencing, avoidance, hyperarousal and emotional numbing — with reference to a distressing event previously experienced.
 
-> **Wichtige Abgrenzung:** Hier ist die **Vier-Item-Fassung** abgebildet, wie sie in PCOR-MII erhoben wird. Davon zu unterscheiden ist der neuere **PC-PTSD-5** für DSM-5 mit fünf Items, für den LOINC eigene Codes führt (`102010-6`, `LP436025-3`). Beide sind eigenständige Instrumente und dürfen nicht vermischt werden.
+**Scoring and interpretation** (sum score 0–4): each "yes" answer counts one point. A score of **three or more** is commonly treated as positive and warrants further diagnostic work-up.
 
-### FHIR-Implementierung
+> **Important distinction:** the **four-item version** is represented here, as collected in PCOR-MII. It must be distinguished from the newer **PC-PTSD-5** for DSM-5 with five items, for which LOINC carries its own codes (`102010-6`, `LP436025-3`). The two are separate instruments and must not be conflated.
 
-> **Sprachstrategie:** Deutsch als Primärsprache. Das Original ist zwar englisch (Prins et al. 2003), der wortgetreue englische Itemtext lag jedoch nicht belegbar vor — deshalb wird bewusst **keine** englische Fassung behauptet oder erfunden. Die deutschen Texte stammen aus dem PCOR-MII Item Level Dictionary (validierte Fassung Schäfer & Schulze 2010).
+### FHIR Implementation
+
+> **Language strategy:** German as the primary language. The original is English (Prins et al. 2003), but the verbatim English item text was not available with evidence — therefore **no** English version is claimed or invented. The German texts come from the PCOR-MII Item Level Dictionary (validated version, Schäfer & Schulze 2010).
 
 #### Questionnaire
 
@@ -16,28 +20,28 @@ Der **PC-PTSD (Primary Care PTSD Screen)** ist ein Kurzscreening auf eine **post
 
 **Capabilities:** Displayable, Collectable, Calculatable, Extractable, Domain-aligned
 
-**Besonderheiten:**
-- linkIds `pc-ptsd-q01`…`pc-ptsd-q04`, Score-Item `pc-ptsd-score-total`.
-- Ein einleitendes `display`-Item trägt den Stamm, der für alle vier Fragen gilt (Bezug auf das belastende Ereignis und den Zeitraum der letzten vier Wochen).
-- Antworten über das geteilte RuleSet `YesNoAnswerOptions` mit SNOMED CT `373067005`/`373066001`, Gewichte 0/1.
-- Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()`.
-- Für die Vier-Item-Fassung existiert kein LOINC- oder SNOMED-Code (die vorhandenen LOINC-Codes betreffen den PC-PTSD-5); Kodierung über den MII-Questionnaire-Katalog.
+**Implementation notes:**
+- linkIds `pc-ptsd-q01`…`pc-ptsd-q04`, score item `pc-ptsd-score-total`.
+- An introductory `display` item carries the stem that applies to all four questions (reference to the distressing event and the four-week recall period).
+- Answers via the shared RuleSet `YesNoAnswerOptions` with SNOMED CT `373067005`/`373066001`, weights 0/1.
+- Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()`.
+- No LOINC or SNOMED code exists for the four-item version (the available LOINC codes concern the PC-PTSD-5); coding is via the MII questionnaire catalogue.
 
-Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-pc-ptsd.html).
+The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-pc-ptsd.html).
 
-#### Score-Repräsentation
+#### Score Representation
 
-1. **Berechnetes Item** in der QuestionnaireResponse (linkId: `pc-ptsd-score-total`)
-2. **Observation** mit MII-Score-Code `pc-ptsd-total`
-3. **ObservationDefinition:** `mii-obsdef-pro-score-pc-ptsd` — Wertebereich 0–4 {score}, höher = stärkerer Verdacht auf eine posttraumatische Belastungsstörung
+1. **Calculated item** in the QuestionnaireResponse (linkId: `pc-ptsd-score-total`)
+2. **Observation** carrying the MII score code `pc-ptsd-total`
+3. **ObservationDefinition:** `mii-obsdef-pro-score-pc-ptsd` — value range 0–4 {score}, higher = stronger suspicion of post-traumatic stress disorder
 
-Der Cut-off ist als `qualifiedInterval` **dokumentiert**, nicht als ausführbare Interpretationslogik (siehe [Scoring](scoring.html)).
+The cut-off is **documented** as a `qualifiedInterval`, not shipped as executable interpretation logic (see [Scoring](scoring.html)).
 
-### Lizenz
+### License
 
-**Frei verfügbar** laut DIZ-Implementierungsliste PCOR-MII.
+**Freely available** per the PCOR-MII DIZ implementation list.
 
-### Quellen
+### Sources
 
 - Prins A, Ouimette P, Kimerling R, et al. The Primary Care PTSD Screen (PC-PTSD): development and operating characteristics. *Primary Care Psychiatry* 2003;9(1):9–14.
-- Schäfer I, Schulze C. Deutsche Version des Primary Care PTSD Screen. 2010. (deutsche Fassung, Quelle der hier verwendeten Itemtexte)
+- Schäfer I, Schulze C. Deutsche Version des Primary Care PTSD Screen. 2010. (German version, source of the item texts used here)

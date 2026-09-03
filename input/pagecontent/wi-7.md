@@ -1,16 +1,20 @@
-### Klinischer Kontext
+<!-- TODO:REVIEW — English page derived from the German original during the
+     template migration (Gate C). The German text under
+     input/translations/de/pagecontent/ is the authored source. -->
 
-Der **Whiteley-7 (WI-7)** ist eine Kurzform des Whiteley Index zur Erfassung von **Krankheitsangst und Somatisierung**. Fink et al. leiteten ihn 1999 aus der längeren Fassung ab: Von den ursprünglichen Items blieben die sieben mit den höchsten Faktorladungen übrig, die restlichen wurden wegen Ladungen unter 0,5 verworfen.
+### Clinical Context
 
-**Scoring und Interpretation** (Summenwert 0–7): Sieben binäre Items, jede Ja-Antwort zählt einen Punkt. Die Autoren weisen darauf hin, dass die Items im Rasch-Modell als gleichwertig behandelt und damit schlicht aufaddiert werden dürfen.
+The **Whiteley-7 (WI-7)** is a short form of the Whiteley Index for assessing **health anxiety and somatisation**. Fink et al. derived it in 1999 from the longer version: of the original items, the seven with the highest factor loadings were retained, the remainder discarded for loadings below 0.5.
 
-Ein einzelner verbindlicher Trennwert wird in der Originalpublikation **nicht** festgelegt. Stattdessen berichten Fink et al. zwei explorative Cut-points (0/1 und 1/2) mit unterschiedlichem Verhältnis von Sensitivität und Spezifität; beide sind in der ObservationDefinition dokumentiert.
+**Scoring and interpretation** (sum score 0–7): seven binary items, each "yes" answer counting one point. The authors note that under the Rasch model the items may be treated as equivalent and therefore simply added up.
 
-Das Paper beschreibt zusätzlich zwei Subskalen (Illness Conviction, Illness Worrying), von denen die Krankheitsüberzeugung psychometrisch besser abschneidet. Sie sind im MII-PRO-Modul **bewusst nicht implementiert** — nur der Gesamtwert.
+The original publication does **not** establish a single binding cut-off. Instead, Fink et al. report two exploratory cut-points (0/1 and 1/2) with differing trade-offs between sensitivity and specificity; both are documented in the ObservationDefinition.
 
-### FHIR-Implementierung
+The paper additionally describes two subscales (Illness Conviction, Illness Worrying), of which illness conviction performs better psychometrically. They are **deliberately not implemented** in the MII PRO module — only the total score is.
 
-> **Sprachstrategie:** Englisch als Primärsprache (Original nach Fink et al. 1999, Table I), deutsche Texte als Translations aus dem PCOR-MII Item Level Dictionary.
+### FHIR Implementation
+
+> **Language strategy:** English as the primary language (the original per Fink et al. 1999, Table I), German texts as translations from the PCOR-MII Item Level Dictionary.
 
 #### Questionnaire
 
@@ -18,27 +22,27 @@ Das Paper beschreibt zusätzlich zwei Subskalen (Illness Conviction, Illness Wor
 
 **Capabilities:** Displayable, Collectable, Calculatable, Extractable, Domain-aligned
 
-**Besonderheiten:**
-- linkIds `wi7-q01`…`wi7-q07`, Score-Item `wi7-score-total`.
-- Antworten über das geteilte RuleSet `YesNoAnswerOptions` mit SNOMED CT `373067005`/`373066001` und ordinalen Gewichten 0/1 — dieselbe Skala wie SCOFF und PC-PTSD.
-- Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()`.
-- Weder LOINC noch SNOMED CT führen einen Code für das Instrument selbst (geprüft); Kodierung über den MII-Questionnaire-Katalog.
+**Implementation notes:**
+- linkIds `wi7-q01`…`wi7-q07`, score item `wi7-score-total`.
+- Answers via the shared RuleSet `YesNoAnswerOptions` with SNOMED CT `373067005`/`373066001` and ordinal weights 0/1 — the same scale as SCOFF and PC-PTSD.
+- Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()`.
+- Neither LOINC nor SNOMED CT carries a code for the instrument itself (checked); coding is via the MII questionnaire catalogue.
 
-Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-wi-7.html).
+The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-wi-7.html).
 
-#### Score-Repräsentation
+#### Score Representation
 
-1. **Berechnetes Item** in der QuestionnaireResponse (linkId: `wi7-score-total`)
-2. **Observation** mit MII-Score-Code `wi-7-total`
-3. **ObservationDefinition:** `mii-obsdef-pro-score-wi-7` — Wertebereich 0–7 {score}, höher = stärker ausgeprägte Krankheitsangst
+1. **Calculated item** in the QuestionnaireResponse (linkId: `wi7-score-total`)
+2. **Observation** carrying the MII score code `wi-7-total`
+3. **ObservationDefinition:** `mii-obsdef-pro-score-wi-7` — value range 0–7 {score}, higher = more pronounced health anxiety
 
-Die beiden Cut-points sind als `qualifiedInterval` **dokumentiert**, nicht als ausführbare Interpretationslogik (siehe [Scoring](scoring.html)).
+Both cut-points are **documented** as `qualifiedInterval`, not shipped as executable interpretation logic (see [Scoring](scoring.html)).
 
-### Lizenz
+### License
 
-**Frei verfügbar.** Die Originalpublikation trifft keine ausdrückliche Lizenzaussage zur Skala selbst; die DIZ-Implementierungsliste PCOR-MII führt sie als frei verfügbar.
+**Freely available.** The original publication makes no explicit licence statement about the scale itself; the PCOR-MII DIZ implementation list records it as freely available.
 
-### Quellen
+### Sources
 
 - Fink P, Ewald H, Jensen J, Sørensen L, Engberg M, Holm M, Munk-Jørgensen P. Screening for somatization and hypochondriasis in primary care and neurological in-patients: a seven-item scale for hypochondriasis and somatization. *Journal of Psychosomatic Research* 1999;46(3):261–273. doi:10.1016/S0022-3999(98)00092-0
-- Rief W, Hiller W, Geissner E, Fichter MM. Hypochondrie: Erfassung und erste klinische Ergebnisse. *Zeitschrift für klinische Psychologie* 1994;23(1):34–42. (deutsche Fassung des längeren Whiteley Index)
+- Rief W, Hiller W, Geissner E, Fichter MM. Hypochondrie: Erfassung und erste klinische Ergebnisse. *Zeitschrift für klinische Psychologie* 1994;23(1):34–42. (German version of the longer Whiteley Index)

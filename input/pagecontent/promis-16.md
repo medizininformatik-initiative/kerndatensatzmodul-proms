@@ -1,16 +1,20 @@
-### Übersicht
+<!-- TODO:REVIEW — English page derived from the German original during the
+     template migration (Gate C). The German text under
+     input/translations/de/pagecontent/ is the authored source. -->
 
-**Status**: Implementiert — alle 16 Items, ohne Score-Berechnung
+### Overview
+
+**Status**: implemented — all 16 items, without score calculation
 **Version**: 2026.5.0
-**Stand**: 2026-06-10
+**As of**: 2026-06-10
 
-Der **PROMIS-16 Profile v1.0** ist ein ultrakurzes Multi-Domain-Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität (HRQoL). Mit nur **16 Items über 8 Domänen** (je 2 Items pro Domäne) ist es deutlich kürzer als der [PROMIS-29](promis-29.html) und für Settings mit hoher Erhebungslast geeignet — etwa wiederholte Messungen im klinischen Verlauf oder als Screening-Instrument.
+The **PROMIS-16 Profile v1.0** is an ultra-short multi-domain instrument for assessing health-related quality of life (HRQoL). With only **16 items across 8 domains** (2 items per domain) it is considerably shorter than the [PROMIS-29](promis-29.html) and suited to settings with a high assessment burden — repeated measurement over a clinical course, for instance, or use as a screening instrument.
 
-Quelle: **Edelen et al. 2024** -- *PROMIS®-16: development and preliminary psychometric evaluation* (Qual Life Res, [doi:10.1007/s11136-023-03597-6](https://doi.org/10.1007/s11136-023-03597-6))
+Source: **Edelen et al. 2024** -- *PROMIS®-16: development and preliminary psychometric evaluation* (Qual Life Res, [doi:10.1007/s11136-023-03597-6](https://doi.org/10.1007/s11136-023-03597-6))
 
-### Abgedeckte Domänen
+### Domains Covered
 
-| Domäne | Items | PCOR-MII Variable IDs |
+| Domain | Items | PCOR-MII variable IDs |
 |--------|-------|----------------------|
 | Physical Function | 2 | PFA21, PFA23 |
 | Anxiety | 2 | EDANX40, EDANX41 |
@@ -21,7 +25,7 @@ Quelle: **Edelen et al. 2024** -- *PROMIS®-16: development and preliminary psyc
 | Pain Interference | 2 | PAININ9, PAININ31 |
 | Cognitive Function | 2 | PC27, PC-CaPS3R |
 
-### Technische Details
+### Technical Details
 
 #### Questionnaire Resource
 
@@ -34,40 +38,40 @@ Questionnaire/mii-qst-pro-promis-16
 - Collectable
 - Extractable
 - Domain-aligned
-- **Calculatable**: bewusst false — pattern-basierter T-Score-Lookup je Domäne (5×5 = 25 Werte aus Supplement S4 von Edelen et al.) wird über eine eigene CQL Library `mii-lib-promis-16` realisiert (analog zur Architektur für PHQ-9 und EQ-5D)
+- **Calculatable**: deliberately false — the pattern-based T-score lookup per domain (5×5 = 25 values from supplement S4 of Edelen et al.) is realised through a dedicated CQL library `mii-lib-promis-16` (analogous to the architecture for PHQ-9 and EQ-5D)
 
-#### Score-Berechnung (in dieser Version nicht implementiert)
+#### Score Calculation (not implemented in this version)
 
-PROMIS-16 ist eigentlich **"PROMIS-16 Profile v2.1 (PROPr)"** und ist auf die Berechnung des **PROMIS-Präferenz-Scores (PROPr)** ausgelegt — eines einzelnen Utility-Scores (analog zum EQ-5D-Index), der für vergleichende Wirksamkeits- und Kosten-Nutzen-Analysen verwendet wird. Die vollständige Score-Berechnung erfolgt in 3 Stufen:
+PROMIS-16 is properly **"PROMIS-16 Profile v2.1 (PROPr)"** and is designed for computing the **PROMIS preference score (PROPr)** — a single utility score (analogous to the EQ-5D index) used in comparative effectiveness and cost-utility analyses. The full score calculation proceeds in three stages:
 
-1. **8 Domänen-T-Scores** — je Domäne aus einem 5×5-Antwortmusterraster (25 Kombinationen, Pattern-Lookup nach Edelen et al. 2024 Supplement S4)
-2. **PROMIS-Theta-Werte** — IRT-basierte latente Konstrukte je Domäne
-3. **PROPr Summary Score** — utility-basiert, abgeleitet aus den 8 Thetas (Dewitt et al. 2018)
+1. **8 domain T-scores** — per domain from a 5×5 response-pattern grid (25 combinations, pattern lookup per Edelen et al. 2024 supplement S4)
+2. **PROMIS theta values** — IRT-based latent constructs per domain
+3. **PROPr summary score** — utility-based, derived from the 8 thetas (Dewitt et al. 2018)
 
-**In der aktuellen Version (2026.5.0)** ist die Score-Berechnung bewusst **nicht implementiert**. Das Questionnaire trägt entsprechend `calculatable = false` und dient zunächst der reinen Datenerfassung. Die Score-Berechnung soll später über eine CQL Library `mii-lib-promis-16` und/oder Anbindung an die offizielle PROMIS Assessment Center API ergänzt werden, sobald die internen Anforderungen geklärt sind.
+**In the current version (2026.5.0)** the score calculation is deliberately **not implemented**. The questionnaire accordingly carries `calculatable = false` and serves purely for data capture for now. Score calculation is to be added later via a CQL library `mii-lib-promis-16` and/or a connection to the official PROMIS Assessment Center API, once the internal requirements are settled.
 
-**Hinweis zum Anwendungszweck** (laut PHO): Der PROPr-Score ist für **Berichterstattung auf Gruppenebene** vorgesehen. Für die präzise individuelle klinische Bewertung sind Domain-Scores allein laut PHO nicht zuverlässig — sie können aber als Screening dienen.
+**Note on intended use** (per PHO): the PROPr score is intended for **group-level reporting**. For precise individual clinical assessment, domain scores alone are not reliable according to PHO — they can, however, serve as a screen.
 
-Referenz Score-Methodik: Dewitt B, Feeny D, Fischhoff B, et al. *Estimation of a Preference-Based Summary Score for PROMIS: The PROMIS®-Preference (PROPr) Scoring System.* Med Decis Making. 2018;38(6):683-698. [doi:10.1177/0272989X18776637](https://doi.org/10.1177/0272989X18776637)
+Score methodology reference: Dewitt B, Feeny D, Fischhoff B, et al. *Estimation of a Preference-Based Summary Score for PROMIS: The PROMIS®-Preference (PROPr) Scoring System.* Med Decis Making. 2018;38(6):683-698. [doi:10.1177/0272989X18776637](https://doi.org/10.1177/0272989X18776637)
 
-### Sprachunterstützung
+### Language Support
 
-**Primärsprache**: Englisch (validiertes Original)
-**Deutsche Übersetzung**: über `translation`-Extension; Wordings aus dem **PCOR-MII Master Item-Level Dictionary** (kuratiert durch CPCOR Charité — siehe [Lizenzierung](#lizenzierung-urheberrecht) unten)
+**Primary language**: English (the validated original)
+**German translation**: via the `translation` extension; wordings from the **PCOR-MII Master Item-Level Dictionary** (curated by CPCOR Charité — see [Licensing](#licensing--copyright) below)
 
-### Implementierungsstand
+### Implementation Status
 
-Alle 16 Items sind in `input/fsh/definitions/promis-16/mii-qst-pro-promis-16.fsh` mit den offiziellen Wordings aus dem PHO PDF "PROMIS-16 Profile v2.1 (PROPr), German, 20 September 2024" implementiert. Die Wordings wurden automatisiert gegen das PCOR-MII Master Item-Level Dictionary verifiziert (`MATCH=15, DIFF=0`).
+All 16 items are implemented in `input/fsh/definitions/promis-16/mii-qst-pro-promis-16.fsh` with the official wordings from the PHO PDF "PROMIS-16 Profile v2.1 (PROPr), German, 20 September 2024". The wordings were verified automatically against the PCOR-MII Master Item-Level Dictionary (`MATCH=15, DIFF=0`).
 
-Die fünf PROMIS-16-spezifischen LOINC-Codes (Sleep25, Sleep90, SRPPER31-CaPS, PC27r, PC-CaPS3r) sind im FSH-File als TODO markiert — sie müssen noch gegen die offizielle LOINC-Liste verifiziert werden, sobald die PROMIS-16 Panel-Codes in LOINC publiziert sind.
+The five PROMIS-16-specific LOINC codes (Sleep25, Sleep90, SRPPER31-CaPS, PC27r, PC-CaPS3r) are marked TODO in the FSH file — they must still be verified against the official LOINC list once the PROMIS-16 panel codes are published in LOINC.
 
-Score-Berechnung (PROPr + Domain T-Scores) ist **bewusst nicht implementiert** in dieser Version — siehe Abschnitt [Score-Berechnung](#score-berechnung-in-dieser-version-nicht-implementiert).
+Score calculation (PROPr + domain T-scores) is **deliberately not implemented** in this version — see the section [Score Calculation](#score-calculation-not-implemented-in-this-version).
 
-### Item-Überlapp mit PROMIS-29 / Cog Fn SF 4a
+### Item Overlap with PROMIS-29 / Cog Fn SF 4a
 
-11 der 16 PROMIS-16-Items finden sich auch im PROMIS-29-Korpus, 5 sind PROMIS-16-spezifisch:
+11 of the 16 PROMIS-16 items also appear in the PROMIS-29 corpus, 5 are PROMIS-16-specific:
 
-| PROMIS-16 Item | Auch in PROMIS-29? | Auch in Cog Fn SF 4a? |
+| PROMIS-16 item | Also in PROMIS-29? | Also in Cog Fn SF 4a? |
 |---|---|---|
 | PFA21, PFA23 | ✓ | -- |
 | EDANX40, EDANX41 | ✓ | -- |
@@ -78,33 +82,33 @@ Score-Berechnung (PROPr + Domain T-Scores) ist **bewusst nicht implementiert** i
 | **SRPPER31_CaPS** | -- | -- |
 | SRPPER46_CaPS | ✓ | -- |
 | PAININ9, PAININ31 | ✓ | -- |
-| **PC27r** | -- | -- (4a hat andere PC-Items) |
+| **PC27r** | -- | -- (4a has different PC items) |
 | **PC-CaPS3r** | -- | -- |
 
-**Praktische Konsequenz**: Wer PROMIS-29 + Cog Fn SF 4a erhebt, kann **kein vollständiges PROMIS-16** extrahieren — es fehlen die 5 fett markierten Items. Ein Cross-Walk auf Score-Ebene zwischen PROMIS-16-Domain-T-Scores und PROMIS-29-Domain-T-Scores ist Gegenstand späterer Arbeitspakete (Roadmap, gemeinsam mit der Score-Implementierung).
+**Practical consequence**: anyone collecting PROMIS-29 + Cog Fn SF 4a **cannot** extract a complete PROMIS-16 — the five items in bold are missing. A score-level cross-walk between PROMIS-16 and PROMIS-29 domain T-scores is the subject of later work packages (roadmap, together with the score implementation).
 
-### Vergleich PROMIS-16 vs. PROMIS-29
+### PROMIS-16 vs. PROMIS-29
 
-| Aspekt | PROMIS-16 | PROMIS-29 |
+| Aspect | PROMIS-16 | PROMIS-29 |
 |---|---|---|
-| Items gesamt | 16 | 29 (28 Likert + 1 NRS) |
-| Items je Domäne | 2 | 4 |
-| Abgedeckte Domänen | 8 (inkl. Cognitive Function) | 7 + 1 NRS (ohne Cognitive Function) |
-| Score-Methode | Pattern-Lookup (25 pro Domäne) | Summenscore + T-Score-Lookup |
-| Ausfüllzeit | ~3-5 min | ~7-10 min |
-| Einsatzkontext | Wiederholte Messung, Screening | Detaillierte Baseline-Erfassung |
+| Total items | 16 | 29 (28 Likert + 1 NRS) |
+| Items per domain | 2 | 4 |
+| Domains covered | 8 (incl. Cognitive Function) | 7 + 1 NRS (no Cognitive Function) |
+| Score method | Pattern lookup (25 per domain) | Sum score + T-score lookup |
+| Completion time | ~3-5 min | ~7-10 min |
+| Context of use | Repeated measurement, screening | Detailed baseline assessment |
 
-### Lizenzierung & Urheberrecht
+### Licensing & Copyright
 
-PROMIS-Items sind urheberrechtlich geschützt. Die offiziellen deutschen Übersetzungen werden durch **PCOR-MII** bereitgestellt und durch das **PROMIS National Center Deutschland (CPCOR Charité, Leitung: Felix Fischer)** kuratiert.
+PROMIS items are protected by copyright. The official German translations are provided by **PCOR-MII** and curated by the **PROMIS National Center Germany (CPCOR Charité, led by Felix Fischer)**.
 
-**Für die institutionelle Implementierung außerhalb des PCOR-MII-Kontexts ist eine Nutzungsanfrage bei CPCOR erforderlich**:
+**For institutional implementation outside the PCOR-MII context, a usage request to CPCOR is required**:
 [https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen](https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen)
 
-Details zur Schichten-Attribution (MII FHIR-Struktur + PROMIS Items + deutsche Übersetzung + LOINC) siehe [PROMIS — Lizenzierung & Urheberrecht](promis.html#lizenzierung-urheberrecht).
+For details of the layered attribution (MII FHIR structure + PROMIS items + German translation + LOINC) see [PROMIS — Licensing & Copyright](promis.html#lizenzierung-urheberrecht).
 
-### Referenzen
+### References
 
 - Edelen MO, Rodriguez A, Herman P, Hays RD. *PROMIS®-16: development and preliminary psychometric evaluation of the next generation PROMIS® short form set.* Qual Life Res. 2024. [doi:10.1007/s11136-023-03597-6](https://doi.org/10.1007/s11136-023-03597-6)
 - [PROMIS Official Site](https://www.healthmeasures.net/explore-measurement-systems/promis)
-- [PROMIS National Center Deutschland (CPCOR)](https://cpcor.charite.de/promis_national_center_deutschland)
+- [PROMIS National Center Germany (CPCOR)](https://cpcor.charite.de/promis_national_center_deutschland)

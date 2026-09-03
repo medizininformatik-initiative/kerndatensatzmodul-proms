@@ -1,43 +1,47 @@
-### Klinischer Kontext
+<!-- TODO:REVIEW — English page derived from the German original during the
+     template migration (Gate C). The German text under
+     input/translations/de/pagecontent/ is the authored source. -->
 
-Der **WHODAS 2.0** (WHO Disability Assessment Schedule 2.0) ist das generische Instrument der WHO zur Erfassung von **Funktionsfähigkeit und Beeinträchtigung** über alle Erkrankungen hinweg, methodisch an der ICF (International Classification of Functioning, Disability and Health) ausgerichtet. Diese Implementierung nutzt die **12-Item-Kurzform (Selbstauskunft)**.
+### Clinical Context
 
-Die 12 Items decken **sechs ICF-Domänen** ab: Kognition, Mobilität, Selbstversorgung, Umgang mit anderen Menschen, Lebensaktivitäten und Partizipation. Erfasst wird die Beeinträchtigung der **letzten 30 Tage** auf einer fünfstufigen Skala (0 = keine, 1 = leichte, 2 = mäßige, 3 = schwere, 4 = extreme Beeinträchtigung / nicht möglich).
+The **WHODAS 2.0** (WHO Disability Assessment Schedule 2.0) is the WHO's generic instrument for assessing **functioning and disability** across all conditions, methodologically aligned with the ICF (International Classification of Functioning, Disability and Health). This implementation uses the **12-item short form (self-report)**.
 
-**Scoring und Interpretation** (Summenwert 0–48):
-- Einfaches Scoring (WHO „simple scoring"): Summe der 12 Item-Werte (je 0–4), Wertebereich **0–48**.
-- **Höhere Werte = stärkere Beeinträchtigung** (Einschränkungsscore).
-- Die komplexe, IRT-basierte WHO-Bewertung (0–100) ist in dieser Version noch nicht abgebildet (Folgearbeit).
+The 12 items cover **six ICF domains**: cognition, mobility, self-care, getting along with people, life activities and participation. They capture impairment over the **past 30 days** on a five-point scale (0 = none, 1 = mild, 2 = moderate, 3 = severe, 4 = extreme or cannot do).
 
-**Einordnung im MII-PRO-Modul:** PCOR-MII führt WHODAS-12 unter der Domäne „Generic Health" / Kategorie „Generic Health Status" gemeinsam mit PROMIS Global Health. Eine geplante Konversion des WHODAS-Summenscores auf die PROMIS Generic/Global Health Scale (ConceptMap/CQL) ist als Folgearbeit vorgesehen.
+**Scoring and interpretation** (sum score 0–48):
+- Simple scoring (WHO "simple scoring"): the sum of the 12 item values (0–4 each), range **0–48**.
+- **Higher values = greater impairment** (a limitation score).
+- The complex, IRT-based WHO scoring (0–100) is not yet represented in this version (follow-up work).
 
-### FHIR-Implementierung
+**Placement in the MII PRO module:** PCOR-MII lists WHODAS-12 under the domain "Generic Health" / category "Generic Health Status" together with PROMIS Global Health. A planned conversion of the WHODAS sum score onto the PROMIS Generic/Global Health scale (ConceptMap/CQL) is envisaged as follow-up work.
 
-> **Sprachstrategie:** Englisch als Primärsprache (Original-Instrument), deutsche Texte als Translations/Designations. Der deutsche Item-Wortlaut folgt dem validierten PCOR-MII Item Level Dictionary.
+### FHIR Implementation
+
+> **Language strategy:** English as the primary language (the original instrument), German texts as translations/designations. The German item wording follows the validated PCOR-MII Item Level Dictionary.
 
 **Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12`
 
-**Besonderheiten:**
+**Implementation notes:**
 - linkIds `whodas-whodas12-q01` … `whodas-whodas12-q12`.
-- Antwortskala über `answerValueSet` (`mii-vs-pro-whodas-12-answer-list`); ordinale Gewichte (0–4) als Property auf den CodeSystem-Konzepten (`mii-cs-pro-whodas-12`).
-- Automatische Score-Berechnung via FHIRPath (`.ordinal().sum()`). Hinweis: `.ordinal()`-Auflösung aus `answerValueSet` ist engine-abhängig; robustes Scoring via CQL/Server.
+- Answer scale via `answerValueSet` (`mii-vs-pro-whodas-12-answer-list`); ordinal weights (0–4) as a property on the CodeSystem concepts (`mii-cs-pro-whodas-12`).
+- Automatic score calculation via FHIRPath (`.ordinal().sum()`). Note: resolving `.ordinal()` from an `answerValueSet` is engine-dependent; robust scoring via CQL/server.
 
-**Score-Repräsentation:**
-- **ObservationDefinition:** `mii-obsdef-pro-score-whodas12-simple-sum` — Wertebereich 0–48, SNOMED `715823002`, MII-Score-Catalogue `whodas12-simple-sum`, Richtung: höher = größere Beeinträchtigung.
+**Score representation:**
+- **ObservationDefinition:** `mii-obsdef-pro-score-whodas12-simple-sum` — value range 0–48, SNOMED `715823002`, MII score catalogue `whodas12-simple-sum`, direction: higher = greater impairment.
 
-### Lizenz
+### License
 
-> **Wichtig:** WHODAS 2.0 ist **© World Health Organization 2010** (*Measuring Health and Disability: Manual for WHODAS 2.0*, ISBN 9789241547598).
+> **Important:** WHODAS 2.0 is **© World Health Organization 2010** (*Measuring Health and Disability: Manual for WHODAS 2.0*, ISBN 9789241547598).
 
-- WHO gestattet **Klinikerinnen und Klinikern die Reproduktion von WHODAS 2.0 zur Nutzung bei eigenen Patient:innen — kostenfrei und ohne gesonderte Genehmigung**.
-- **Jede andere Nutzung — insbesondere die Einbindung in elektronische Datenerfassungssysteme** (wie diesen IG) — **erfordert eine WHO-Lizenzvereinbarung** über den WHO-Classifications-Lizenzprozess. Diese ist für **nicht-kommerzielle Nutzer kostenlos** und verlangt die Online-Zustimmung zu einer Nutzungsvereinbarung.
-- **Übersetzungen** erfordern zusätzlich die Genehmigung der WHO.
-- Nur die **MII-eigenen FHIR-Inhalte** (Profile, Codes, Scoring-Logik) stehen unter **CC0**; der **WHODAS-2.0-Itemtext bleibt © WHO**.
+- The WHO permits **clinicians to reproduce WHODAS 2.0 for use with their own patients — free of charge and without separate permission**.
+- **Any other use — in particular embedding it in electronic data capture systems** (such as this IG) — **requires a WHO licence agreement** via the WHO Classifications licensing process. This is **free for non-commercial users** and requires online acceptance of a usage agreement.
+- **Translations** additionally require WHO approval.
+- Only the **MII's own FHIR content** (profiles, codes, scoring logic) is under **CC0**; the **WHODAS 2.0 item text remains © WHO**.
 
-Diese Bedingungen sind maschinenlesbar im `copyright`-Element der Questionnaire- und CodeSystem-Ressourcen hinterlegt.
+These terms are recorded machine-readably in the `copyright` element of the Questionnaire and CodeSystem resources.
 
-### Quellen
+### Sources
 
-- World Health Organization. *Measuring Health and Disability: Manual for WHO Disability Assessment Schedule (WHODAS 2.0)*. Genf: WHO; 2010. ISBN 9789241547598.
+- World Health Organization. *Measuring Health and Disability: Manual for WHO Disability Assessment Schedule (WHODAS 2.0)*. Geneva: WHO; 2010. ISBN 9789241547598.
 - Kirchberger I, et al. Validation of the WHODAS 2.0 in a population-based sample (MONICA/KORA). *Population Health Metrics* 2014;12:27. doi:10.1186/s12963-014-0027-8
 - Saltychev M, et al. Psychometric properties of the WHODAS 2.0 — systematic review. PMID 31335215.
