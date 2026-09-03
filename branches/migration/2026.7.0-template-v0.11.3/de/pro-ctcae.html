@@ -1,0 +1,954 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>PRO-CTCAE - MII IG PRO v2026.7.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Branding override for the fhir2.base.template CSS placeholder
+     (base ships includes/fragment-css.html as a single comment; it is included
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="assets/css/template-base.css" rel="stylesheet"/>
+
+<link href="assets/css/num-diz.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.14"}
+    h3,h4,h5,h6{--heading-prefix:"4.14"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Branding override for the fhir2.base.template header placeholder
+     (base ships includes/fragment-header.html as a single comment; it is included
+     inside "#segment-header > .container", before the #ig-status block).
+     Language handling: only the asset and its descriptive alt text switch on
+     include.lang (the pattern kerndatensatz-basis uses); no translatable UI
+     strings are hard-coded.
+     Brand handling: the project logo additionally switches on
+     site.data.brand.design (input/data/brand.json in the consuming IG, see
+     docs/styleguide.md §10). Only the exact value 'mii' selects the MII
+     logos - anything else, including no brand.json at all, falls through to
+     the NUM-DIZ default.
+     Two logos, mirroring kerndatensatz-basis: the HL7 FHIR logo (links to the
+     FHIR spec) in #family-nav, and the project logo in #project-nav.
+     fhir-logo-www.png is shipped by fhir2.base.template
+     (content/assets/images/), so it resolves from the inherited assets without
+     shipping it here. -->
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
+    <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
+  </a>
+</div>
+<div id="project-nav">
+
+  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+
+    <img height="50" alt="NUM-DIZ (Netzwerk Universitätsmedizin — Datenintegrationszentrum)" src="assets/images/logo-num-diz-de.svg"/>
+
+  </a>
+
+</div>
+<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+     is the untouched default. Logic in assets/js/font-size-control.js, the
+     zoom mapping + button styling in template-base.css ("font-size control"
+     block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
+     on include.lang. REMOVAL: delete this block, the js file and the CSS
+     block - one commit, styleguide §5a. -->
+
+<div class="ig-fontsize" role="group" aria-label="Schriftgröße">
+  <button type="button" data-level="0" aria-pressed="true" aria-label="Schriftgröße: Standard">A</button>
+  <button type="button" data-level="1" aria-pressed="false" aria-label="Schriftgröße: größer">A</button>
+  <button type="button" data-level="2" aria-pressed="false" aria-label="Schriftgröße: am größten">A</button>
+</div>
+
+<script src="assets/js/font-size-control.js" defer></script>
+<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+     patches the Bootstrap-3 components the publisher renders - navbar
+     dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
+     (structure-tabs) the full ARIA tabs pattern, alerts live-region
+     announcements. `defer` guarantees it executes AFTER the parser-inserted
+     bootstrap.min.js at the end of the body. Vendored from
+     paypal/bootstrap-accessibility-plugin @ v1.0.7 (the admin-ch fork was
+     evaluated and rejected: 151 commits behind upstream, its 6 deltas are
+     site-specific tab tweaks). REMOVAL: delete this tag, both vendored
+     assets and the fragment-css link - guard test pins the hashes. -->
+<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
+<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+     assets/js/back-to-top.js, styling in template-base.css "back-to-top"
+     block). Rendered here inside #segment-header, which is OUTSIDE the
+     data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
+     this block, the js file and the CSS block - one commit, styleguide §8. -->
+
+<button type="button" class="ig-back-to-top" aria-label="Zurück zum Seitenanfang">↑</button>
+
+<script src="assets/js/back-to-top.js" defer></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
+            <br/>
+            <span style="display:inline-block;">2026.7.0 - 
+
+
+
+  Unknown region code '276'
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- Menu in German (translation). Per-language copy at input/translations/de/includes/menu.xml.
+     Structure follows the TF-KDS-agreed module menu; PRO-specific groups
+     (PRO Library, Scoring) replace nothing mandatory. Budget per spec 9a:
+     top level <= 8, <= 10 per dropdown, depth <= 2, <= 33 entries total.
+     Entry count here: 33. Dropdown parents link to a REAL page. -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Start</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Leitfaden<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="guidance.html">Leitfaden</a></li>
+      <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
+      <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
+      <li><a href="uml-diagrams.html">UML-Diagramme</a></li>
+      <li><a href="use-cases.html">Anwendungsfälle</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="pro-library.html" class="dropdown-toggle">PRO-Bibliothek<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="pro-library.html">PRO-Bibliothek</a></li>
+      <li><a href="phq-9.html">PHQ-9</a></li>
+      <li><a href="eq-5d-5l.html">EQ-5D-5L</a></li>
+      <li><a href="promis.html">PROMIS</a></li>
+      <li><a href="pro-ctcae.html">PRO-CTCAE</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="scoring.html" class="dropdown-toggle">Scoring<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="scoring.html">Scoring</a></li>
+      <li><a href="domain-based-scoring.html">Domänenbasiertes Scoring</a></li>
+      <li><a href="domains.html">Domänen</a></li>
+      <li><a href="id-systematics.html">ID-Systematik</a></li>
+      <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance" class="dropdown-toggle">Konformität<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Konformität</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">Allgemeine Anforderungen</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+      <li><a href="security-and-privacy.html">Sicherheit und Datenschutz</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artefakte<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artefaktübersicht</a></li>
+      <li><a href="profiles.html">Profile</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="capability-statements.html">Capability Statements</a></li>
+      <li><a href="search-parameters.html">Suchparameter</a></li>
+      <li><a href="value-sets.html">ValueSets</a></li>
+      <li><a href="code-systems.html">CodeSystems</a></li>
+      <li><a href="examples.html">Beispiele</a></li>
+    </ul>
+  </li>
+  <li><a href="changes.html">Änderungen</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadaten<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="version-history.html">Versionierung</a></li>
+      <li><a href="downloads.html">Downloads</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Sprache:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/pro-ctcae.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='pro-library.html'><b>PRO Library</b></a></li><li><b>PRO-CTCAE</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>PRO-CTCAE</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#übersicht" id="markdown-toc-übersicht">Übersicht</a></li>
+  <li><a href="#grundlegende-eigenschaften" id="markdown-toc-grundlegende-eigenschaften">Grundlegende Eigenschaften</a></li>
+  <li><a href="#item-bibliothek-konzept" id="markdown-toc-item-bibliothek-konzept">Item-Bibliothek-Konzept</a></li>
+  <li><a href="#scoring-composite-grading-algorithm" id="markdown-toc-scoring-composite-grading-algorithm">Scoring: Composite Grading Algorithm</a></li>
+  <li><a href="#prinzip" id="markdown-toc-prinzip">Prinzip</a></li>
+  <li><a href="#algorithmus" id="markdown-toc-algorithmus">Algorithmus</a></li>
+  <li><a href="#average-composite-score-acs" id="markdown-toc-average-composite-score-acs">Average Composite Score (ACS)</a></li>
+  <li><a href="#fhir-implementierung" id="markdown-toc-fhir-implementierung">FHIR-Implementierung</a></li>
+  <li><a href="#architektur" id="markdown-toc-architektur">Architektur</a></li>
+  <li><a href="#ressourcen-übersicht" id="markdown-toc-ressourcen-übersicht">Ressourcen-Übersicht</a></li>
+  <li><a href="#cql-library" id="markdown-toc-cql-library">CQL Library</a></li>
+  <li><a href="#dataabsentreason-bei-opt-out-antworten" id="markdown-toc-dataabsentreason-bei-opt-out-antworten">dataAbsentReason bei Opt-Out-Antworten</a></li>
+  <li><a href="#spezielle-antwortskalen" id="markdown-toc-spezielle-antwortskalen">Spezielle Antwortskalen</a></li>
+  <li><a href="#brustzentrum-subset-21-symptome" id="markdown-toc-brustzentrum-subset-21-symptome">Brustzentrum-Subset (21 Symptome)</a></li>
+  <li><a href="#ausgewählte-symptome" id="markdown-toc-ausgewählte-symptome">Ausgewählte Symptome</a></li>
+  <li><a href="#referenzen" id="markdown-toc-referenzen">Referenzen</a></li>
+</ul>
+
+</div>
+<h3 id="übersicht">Übersicht</h3>
+
+<p>Das <strong>PRO-CTCAE</strong> ist ein vom US National Cancer Institute (NCI) entwickeltes Messsystem zur patientenberichteten Erfassung symptomatischer Nebenwirkungen in onkologischen klinischen Studien. Anders als klassische PRO-Instrumente ist PRO-CTCAE keine einzelne Fragebogeninstanz, sondern eine <strong>Item-Bibliothek</strong>, aus der studien- und tumorspezifische Fragebögen zusammengestellt werden.</p>
+
+<h3 id="grundlegende-eigenschaften">Grundlegende Eigenschaften</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Eigenschaft</th>
+      <th>Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Instrument-Typ</strong></td>
+      <td>Item-Bibliothek (kein fester Fragebogen)</td>
+    </tr>
+    <tr>
+      <td><strong>Items</strong></td>
+      <td>124 Items zu 78 Nebenwirkungen (Adverse Events)</td>
+    </tr>
+    <tr>
+      <td><strong>Attribute</strong></td>
+      <td>Frequency (Häufigkeit), Severity (Schwere), Interference (Beeinträchtigung)</td>
+    </tr>
+    <tr>
+      <td><strong>Antwortskalen</strong></td>
+      <td>5-Punkt Likert (0-4) für die 3 Hauptattribute, binär (Ja/Nein) für Präsenz</td>
+    </tr>
+    <tr>
+      <td><strong>Sprachen</strong></td>
+      <td>60+ validierte Übersetzungen inkl. Deutsch (NCI-autorisiert)</td>
+    </tr>
+    <tr>
+      <td><strong>Recall-Zeitraum</strong></td>
+      <td>Letzte 7 Tage</td>
+    </tr>
+    <tr>
+      <td><strong>Lizenz</strong></td>
+      <td>Frei verfügbar (NCI, kein Copyright)</td>
+    </tr>
+    <tr>
+      <td><strong>SNOMED CT</strong></td>
+      <td>Kein dedizierter Code (MII-kontrollierte Terminologie)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="item-bibliothek-konzept">Item-Bibliothek-Konzept</h3>
+
+<p>PRO-CTCAE funktioniert als <strong>modulare Item-Bank</strong>. Investigatoren wählen die für ihre Studie relevanten Nebenwirkungen aus und stellen daraus einen tumorspezifischen Fragebogen zusammen:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>124 Items (Item-Bibliothek)
+  ├── Brustzentrum-Subset: 21 Symptome → 36 Items
+  ├── Prostata-Subset: 19 Symptome → ~35 Items
+  ├── Multiples Myelom: 19 Symptome → ~35 Items
+  └── Weitere tumorspezifische Subsets nach Bedarf
+</code></pre></div></div>
+
+<p>Jedes Adverse Event hat 1-3 Items, abhängig von der AE-Konfiguration:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Konfiguration</th>
+      <th>Items pro AE</th>
+      <th>Beispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Severity only</td>
+      <td>1</td>
+      <td>Mundtrockenheit</td>
+    </tr>
+    <tr>
+      <td>Frequency only</td>
+      <td>1</td>
+      <td>Durchfall</td>
+    </tr>
+    <tr>
+      <td>Interference/Amount only</td>
+      <td>1</td>
+      <td>Haarausfall</td>
+    </tr>
+    <tr>
+      <td>Frequency + Severity</td>
+      <td>2</td>
+      <td>Übelkeit</td>
+    </tr>
+    <tr>
+      <td>Severity + Interference</td>
+      <td>2</td>
+      <td>Müdigkeit</td>
+    </tr>
+    <tr>
+      <td>Frequency + Interference</td>
+      <td>2</td>
+      <td>Harndrang</td>
+    </tr>
+    <tr>
+      <td>Frequency + Severity + Interference</td>
+      <td>3</td>
+      <td>Schmerzen</td>
+    </tr>
+    <tr>
+      <td>Presence (Ja/Nein)</td>
+      <td>1</td>
+      <td>Hautausschlag</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="scoring-composite-grading-algorithm">Scoring: Composite Grading Algorithm</h3>
+
+<h3 id="prinzip">Prinzip</h3>
+
+<p>Der NCI Composite Grading Algorithm (Basch et al., Clinical Trials 2021) fasst die 1-3 Itemwerte einer Nebenwirkung zu einem einzelnen <strong>Composite Grade (0-3)</strong> zusammen, analog zu den CTCAE-Graden für symptomatische Nebenwirkungen.</p>
+
+<h3 id="algorithmus">Algorithmus</h3>
+
+<p>179 Kombinationen aus Frequency, Severity und Interference werden auf Grades 0-3 abgebildet. Der Algorithmus wurde von 20 klinischen Investigators im Konsensverfahren entwickelt und quantitativ validiert.</p>
+
+<p><strong>Beispiel: AE mit Frequency + Severity + Interference (Rank 7)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>F\S\I</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>F=1, S=0</strong></td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><strong>F=1, S=1</strong></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><strong>F=1, S=2</strong></td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><strong>F=2, S=2</strong></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><strong>F=3, S=3</strong></td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><strong>F=4, S=4</strong></td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="average-composite-score-acs">Average Composite Score (ACS)</h3>
+
+<p>Der ACS ist der Mittelwert aller Composite Grades zu einem Messzeitpunkt und reflektiert die <strong>Gesamtbelastung durch Nebenwirkungen</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ACS = Summe(Composite Grades) / Anzahl(bewertete Symptome)
+</code></pre></div></div>
+
+<ul>
+  <li>Bereich: 0.0 - 3.0 (kontinuierlich)</li>
+  <li>Symptome mit Opt-Out-Antworten werden ausgeschlossen (nicht als 0 gewertet)</li>
+</ul>
+
+<h3 id="fhir-implementierung">FHIR-Implementierung</h3>
+
+<h3 id="architektur">Architektur</h3>
+
+<p>Die PRO-CTCAE Implementierung nutzt eine <strong>CQL-basierte Scoring-Architektur</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>QuestionnaireResponse (Rohantworten)
+  │
+  ├── Form Renderer → calculatedExpression → Score im QR → $extract → Observations
+  │   (Client-seitig, für interaktive Formulare)
+  │
+  └── Library/$evaluate → CQL CompositeGrade() → FastAPI ETL → Observations
+      (Server-seitig, für Import/ETL-Strecken)
+</code></pre></div></div>
+
+<p><strong>Architektur-Entscheidung (Spike April 2026):</strong> HAPI FHIR CR evaluiert <code class="language-plaintext highlighter-rouge">calculatedExpression</code> weder bei <code class="language-plaintext highlighter-rouge">$extract</code> noch bei <code class="language-plaintext highlighter-rouge">$populate</code>. Server-seitiges Scoring erfolgt über <code class="language-plaintext highlighter-rouge">Library/$evaluate</code> mit einer dedizierten CQL Library.</p>
+
+<h3 id="ressourcen-übersicht">Ressourcen-Übersicht</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressource</th>
+      <th>Id</th>
+      <th>Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CodeSystem</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-cs-pro-pro-ctcae</code></td>
+      <td>124 Items, 78 AEs, EN+DE, Opt-Out-Codes</td>
+    </tr>
+    <tr>
+      <td><strong>ValueSet (9x)</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-vs-pro-pro-ctcae-*</code></td>
+      <td>Frequency, Severity, Interference, Presence + Spezialskalen</td>
+    </tr>
+    <tr>
+      <td><strong>Questionnaire</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-qst-pro-pro-ctcae-breast-de</code></td>
+      <td>Brustzentrum-Subset (21 Symptome, DE)</td>
+    </tr>
+    <tr>
+      <td><strong>ObservationDefinition</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-proctcae-composite-grade</code></td>
+      <td>Composite Grade (0-3)</td>
+    </tr>
+    <tr>
+      <td><strong>ObservationDefinition</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-proctcae-acs</code></td>
+      <td>Average Composite Score (0.0-3.0)</td>
+    </tr>
+    <tr>
+      <td><strong>CQL Library</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-lib-pro-ctcae</code></td>
+      <td>CompositeGrade(), ACS, Opt-Out-Handling</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="cql-library">CQL Library</h3>
+
+<p>Die CQL Library <code class="language-plaintext highlighter-rouge">PRO_CTCAE</code> implementiert den vollständigen NCI Composite Grading Algorithm:</p>
+
+<pre><code class="language-cql">// Haupteintrittspunkt — gibt Tuple {score, absentReason} zurück
+define CompositeGradeResult:
+  case
+    when optOutNotApplicable then Tuple { score: null, absentReason: 'not-applicable' }
+    when optOutPreferNotToAnswer then Tuple { score: null, absentReason: 'asked-declined' }
+    else Tuple { score: CompositeGrade, absentReason: null }
+  end
+
+// ACS mit Opt-Out-Filtering
+define ACSResult:
+  Tuple {
+    score: Avg(compositeScores where not null),
+    scoredCount: Count(compositeScores where not null),
+    excludedCount: Count(compositeScores where null)
+  }
+</code></pre>
+
+<h3 id="dataabsentreason-bei-opt-out-antworten">dataAbsentReason bei Opt-Out-Antworten</h3>
+
+<p>Einige PRO-CTCAE Items haben Opt-Out-Optionen (z.B. "Nicht sexuell aktiv", "Trifft nicht auf mich zu"). Diese führen zu keinem Score — die resultierende Observation erhält stattdessen <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Opt-Out Antwort</th>
+      <th>FHIR dataAbsentReason</th>
+      <th>Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Trifft nicht auf mich zu</td>
+      <td><code class="language-plaintext highlighter-rouge">not-applicable</code></td>
+      <td>Frage ist für den Patienten nicht relevant</td>
+    </tr>
+    <tr>
+      <td>Nicht sexuell aktiv</td>
+      <td><code class="language-plaintext highlighter-rouge">not-applicable</code></td>
+      <td>Domäne nicht zutreffend</td>
+    </tr>
+    <tr>
+      <td>Möchte nicht antworten</td>
+      <td><code class="language-plaintext highlighter-rouge">asked-declined</code></td>
+      <td>Patient verweigert die Antwort</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="spezielle-antwortskalen">Spezielle Antwortskalen</h3>
+
+<p>Neben den 4 Basis-Skalen gibt es erweiterte Skalen für spezifische Items:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Items</th>
+      <th>Zusätzliche Optionen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">severity-radiation</code></td>
+      <td>Radiatio (#36)</td>
+      <td>+ "Trifft nicht auf mich zu"</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">severity-sexual</code></td>
+      <td>Erektion, Sexuelles Interesse, Vaginalschmerz (#66, 68, 71)</td>
+      <td>+ "Nicht sexuell aktiv" + "Möchte nicht antworten"</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">frequency-sexual</code></td>
+      <td>Ejakulationsprobleme (#67)</td>
+      <td>+ "Nicht sexuell aktiv" + "Möchte nicht antworten"</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">presence-na</code></td>
+      <td>Regelblutung, Injektionsstelle (#57, 58, 79)</td>
+      <td>+ "Trifft nicht auf mich zu"</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">presence-sexual</code></td>
+      <td>Orgasmus (#69, 70)</td>
+      <td>+ "Nicht sexuell aktiv" + "Möchte nicht antworten"</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="brustzentrum-subset-21-symptome">Brustzentrum-Subset (21 Symptome)</h3>
+
+<p>Das erste implementierte Subset basiert auf der Validierungsstudie von Hamacher et al. (BMC Cancer 2023) an drei deutschen ambulanten Tumorzentren mit 101 Brustkrebspatientinnen.</p>
+
+<h3 id="ausgewählte-symptome">Ausgewählte Symptome</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Symptom</th>
+      <th>AE-Nr.</th>
+      <th>Attribute</th>
+      <th>Items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Müdigkeit/Erschöpfung</td>
+      <td>53</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Taubheit/Kribbeln</td>
+      <td>39</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Übelkeit</td>
+      <td>9</td>
+      <td>Frq + Sev</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Muskelschmerzen</td>
+      <td>50</td>
+      <td>Frq + Sev + Int</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Schlafprobleme</td>
+      <td>52</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Haarausfall</td>
+      <td>27</td>
+      <td>Amount</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Gelenkschmerzen</td>
+      <td>51</td>
+      <td>Frq + Sev + Int</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Verschwommenes Sehen</td>
+      <td>41</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Konzentrationsprobleme</td>
+      <td>46</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Schmerzen (allgemein)</td>
+      <td>48</td>
+      <td>Frq + Sev + Int</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Durchfall</td>
+      <td>16</td>
+      <td>Frq</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Verstopfung</td>
+      <td>15</td>
+      <td>Sev</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Geschmacksveränderungen</td>
+      <td>7</td>
+      <td>Sev</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Schwindel</td>
+      <td>40</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Kurzatmigkeit</td>
+      <td>19</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Herzklopfen</td>
+      <td>23</td>
+      <td>Frq + Sev</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Gedächtnisprobleme</td>
+      <td>47</td>
+      <td>Sev + Int</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Arm-/Beinschwellung</td>
+      <td>22</td>
+      <td>Frq + Sev + Int</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Hautausschlag</td>
+      <td>24</td>
+      <td>Präsenz</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Nagelfurchen</td>
+      <td>32</td>
+      <td>Präsenz</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Nagelverfärbungen</td>
+      <td>33</td>
+      <td>Präsenz</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Gesamt: 36 Items</strong></p>
+
+<h3 id="referenzen">Referenzen</h3>
+
+<ol>
+  <li>Basch E, Reeve BB, Mitchell SA, et al. Development of the National Cancer Institute's Patient-Reported Outcomes Version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). <em>J Natl Cancer Inst.</em> 2014;106(9):dju244.</li>
+  <li>Basch E, Becker C, Rogak LJ, et al. Composite grading algorithm for the National Cancer Institute's Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). <em>Clinical Trials.</em> 2021;18(1):104-114.</li>
+  <li>Haverkamp C, et al. Validation of the German patient-reported outcomes version of the common terminology criteria for adverse events (PRO-CTCAE). <em>Ann Oncol.</em> 2016;27(suppl_6):vi369.</li>
+  <li>Hamacher S, et al. Developing tumor-specific PRO-CTCAE item sets: analysis of a cross-sectional survey in three German outpatient cancer centers. <em>BMC Cancer.</em> 2023;23:638.</li>
+  <li>NCI PRO-CTCAE Item Library v1.0 — German. Available at: https://healthcaredelivery.cancer.gov/pro-ctcae/</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.7.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Thu, Sep 3, 2026 19:26+0000">2026-09-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- Branding override for the fhir2.base.template footer fragment.
+     Unlike header/css, the base footer fragment is NOT an empty placeholder: it
+     renders "Links: Table of Contents | QA Report [| feedback dashboards]".
+     The base uses site.data.stringsBase[include.lang][...] for the labels. The
+     reason this override supplies its own is the Imprint label: the base ships no
+     stringsBase key for it and a child template cannot add one (docs/styleguide.md
+     section 6), and the same include.lang branch then has to carry the other
+     labels too. (The blank-label problem that first motivated this is separately
+     mitigated: this repo vendors the base's own German catalogs into
+     translations/ — see translations/README.md.) The override preserves the base
+     links (TOC, QA, feedback dashboards) and appends the project information links.
+     NUM-DIZ takes over IG development and maintenance when MII funding ends
+     (end-2026), so the NUM-DIZ website link renders BEFORE the MII website link —
+     in BOTH brand designs and both languages; the MII links stay because the
+     modules remain MII content. Both anchors are the SITE ROOTS with the bare
+     domain as anchor text (TF-KDS feedback 2026-08-14: aligned anchor style;
+     domains are language-neutral, styleguide §6).
+     Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
+     (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
+     the NUM-DIZ counterpart where one exists) - German /impressum and English
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+
+          Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/impressum">Impressum</a>
+                 <br/>
+                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                      renders - the header shows it on every page; see HL7's
+                      trademark guidelines; permission request tracked in issue #109). The sentence is
+                      HL7's prescribed formula and stays in English on every
+                      language's pages (legal wording, styleguide §6). -->
+                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

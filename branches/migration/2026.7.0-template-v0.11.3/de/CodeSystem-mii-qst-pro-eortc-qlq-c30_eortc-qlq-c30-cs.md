@@ -1,0 +1,24 @@
+# CodeSystem - MII IG PRO v2026.7.0
+
+* [**Table of Contents**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* [**MII QST PRO EORTC QLQ-C30**](Questionnaire-mii-qst-pro-eortc-qlq-c30.md)
+* **CodeSystem**
+
+## CodeSystem: CodeSystem 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30#eortc-qlq-c30-cs | *Version*:2026.7.0 |
+| Active | *Maschinenlesbarer Name*: |
+
+Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
+
+* [MII VS PRO EORTC QLQ-C30 4-Point Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.md)
+* [MII VS PRO EORTC QLQ-C30 7-Point Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.md)
+* [MII VS PRO EORTC QLQ-C30 Role Functioning Scale](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.md)
+
+-------
+
+ [Beschreibung der obigen Tabelle(n)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+

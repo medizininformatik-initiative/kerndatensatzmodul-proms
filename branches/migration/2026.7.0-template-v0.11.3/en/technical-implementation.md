@@ -1,0 +1,19 @@
+# Technical Implementation - MII IG PRO v2026.7.0
+
+* [**Table of Contents**](toc.md)
+* [**Guidance**](guidance.md)
+* **Technical Implementation**
+
+## Technical Implementation
+
+This section describes the technical implementation details of the MII PRO module, including workflow patterns, scoring strategies, identifier conventions, and terminology approaches.
+
+### Sub-Pages
+
+* [Workflows](workflows.md) – Capability-based workflow patterns for questionnaire collection, calculation, and display
+* [Scoring](scoring.md) – Scoring strategies along the Questionnaire to QuestionnaireResponse to Observation pipeline, including FHIRPath and CQL approaches
+* [ID Systematics](id-systematics.md) – Naming conventions for FHIR resources, namespaces, linkIds, and terminology strategies for answer options
+* [Terminology Strategies](terminology-strategies.md) – Decision criteria for inline answerOption vs. answerValueSet with MII CodeSystems
+* [Questionnaire Capabilities](questionnaire-capabilities.md) – Separation of concerns architecture with composable capabilities (collectable, populatable, calculatable, displayable, extractable)
+* [Validation](validation.md) – Known validation errors, suppression configuration, and local validation setup
+

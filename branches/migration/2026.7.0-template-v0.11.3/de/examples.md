@@ -1,0 +1,15 @@
+# Examples - MII IG PRO v2026.7.0
+
+* [**Table of Contents**](toc.md)
+* **Examples**
+
+## Examples
+
+ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
+
+Diese Seite führt die Beispielinstanzen des Moduls **PRO** auf. Die Vorlage enthält das synthetische Beispiel [Max Mustermann-Testpatient](Patient-mii-exa-pro-patient.md).
+
+**Nur synthetische Daten** — niemals echte oder realistisch wirkende Patientendaten in Beispielen verwenden.
+
+> [TODO: Ergänzen Sie aussagekräftige Beispielinstanzen zu Ihren Profilen.]
+

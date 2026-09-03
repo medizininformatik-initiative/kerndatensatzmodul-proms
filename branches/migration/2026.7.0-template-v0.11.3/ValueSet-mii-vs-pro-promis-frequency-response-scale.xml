@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-promis-frequency-response-scale"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-promis-frequency-response-scale</b></p><a name="mii-vs-pro-promis-frequency-response-scale"> </a><a name="hcmii-vs-pro-promis-frequency-response-scale"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="https://loinc.org/LA6270-8/">LA6270-8</a></td><td>Never</td><td>Nie</td></tr><tr><td><a href="https://loinc.org/LA10066-1/">LA10066-1</a></td><td>Rarely</td><td>Selten</td></tr><tr><td><a href="https://loinc.org/LA10082-8/">LA10082-8</a></td><td>Sometimes</td><td>Manchmal</td></tr><tr><td><a href="https://loinc.org/LA10044-8/">LA10044-8</a></td><td>Often</td><td>Oft</td></tr><tr><td><a href="https://loinc.org/LA9933-8/">LA9933-8</a></td><td>Always</td><td>Immer</td></tr></table></li></ul></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-promis-frequency-response-scale</b></p><a name="de-mii-vs-pro-promis-frequency-response-scale"> </a><a name="de-hcmii-vs-pro-promis-frequency-response-scale"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="https://loinc.org/LA6270-8/">LA6270-8</a></td><td>Never</td><td>Nie</td></tr><tr><td><a href="https://loinc.org/LA10066-1/">LA10066-1</a></td><td>Rarely</td><td>Selten</td></tr><tr><td><a href="https://loinc.org/LA10082-8/">LA10082-8</a></td><td>Sometimes</td><td>Manchmal</td></tr><tr><td><a href="https://loinc.org/LA10044-8/">LA10044-8</a></td><td>Often</td><td>Oft</td></tr><tr><td><a href="https://loinc.org/LA9933-8/">LA9933-8</a></td><td>Always</td><td>Immer</td></tr></table></li></ul></div></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"/>
+  <version value="2026.7.0"/>
+  <name value="MII_VS_PRO_PROMIS_Frequency_Response_Scale"/>
+  <title value="MII VS PRO PROMIS Frequency Response Scale"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-09-03T19:26:10+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="PROMIS Frequency response scale based on LOINC LL1016-6"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="276"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6270-8"/>
+        <display value="Never"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA10066-1"/>
+        <display value="Rarely"/>
+        <designation>
+          <language value="de"/>
+          <value value="Selten"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA10082-8"/>
+        <display value="Sometimes"/>
+        <designation>
+          <language value="de"/>
+          <value value="Manchmal"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA10044-8"/>
+        <display value="Often"/>
+        <designation>
+          <language value="de"/>
+          <value value="Oft"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA9933-8"/>
+        <display value="Always"/>
+        <designation>
+          <language value="de"/>
+          <value value="Immer"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
