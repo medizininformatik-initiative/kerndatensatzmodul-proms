@@ -46,7 +46,7 @@ python3 .claude/skills/mii-ig-migration/scripts/verify-migration.py \
 | F1 | `date: 2026-09-02` in sushi-config | `TODO:REVIEW` in a typed FHIR date field aborted the publisher; the 2026.7.0 publication date is a fact | `placeholder-resolution` |
 | F2 | `hl7.fhir.uv.extensions.r4` pinned **5.2.0** (template default 5.3.0) | dependency pins must equal the source's | `sushi-config` merge commit |
 | F3 | `publisher` restored to Medizininformatik-Initiative | template block had silently set NUM-DIZ; identity is never normalized silently (caught by prepost delta) | `publisher-silently-changed` |
-| F4 | WHODAS example QR: `language = #de` | German displays + inherited `en` default = 12 new Wrong-Display errors | `qa-baseline-measured` |
+| F4 | WHODAS example QR: `language = #de` | displays in de + the inherited en default = 12 new Wrong-Display errors | `qa-baseline-measured` |
 | F5 | `examples.md` links the real `mii-exa-pro-patient` | template scaffold linked its demo patient | `qa-baseline-measured` |
 | F6 | 21 images copied to `input/images/`, hub indexes on pro-library/guidance | pages referenced images that only existed in the Simplifier tree; 32 pages were reachable only by URL | `image-fix` |
 | F7 | Liquid literal in changes.md wrapped in `{% raw %}` | Jekyll evaluates `{{…}}` inside backticks and comments (guardrail 8) | skeleton commit |
@@ -59,7 +59,7 @@ Each item: what, options, **if nobody acts**, effort, reversibility.
 
 - **D1 — `package.json` title says "MII IG Dokument"** (shipped in the published 2026.7.0 package). Fix to "MII IG PRO" in the next release. *If nobody acts:* the wrong title persists in every future package. Effort: 1 line. Reversible: yes.
 - **D2 — `canonical` contradiction:** package.json carries `…/modul-pro/ImplementationGuide/mii-ig-pro`, sushi-config `…/ext/modul-pro`. sushi-config wins per rule; align package.json next release. *If nobody acts:* registries show a canonical that resolves differently. Effort: 1 line.
-- **D3 — jurisdiction m49#276 renders "Unknown region code" on all 1113 pages** (R2). Options: keep m49 (source identity, broken footer) or switch to `urn:iso:std:iso:3166#DE "Germany"` (template default, same meaning, clean render). Recommendation: switch — meaning-preserving. *If nobody acts:* every page footer stays broken. Effort: 1 line + rebuild.
+- **D3 — jurisdiction m49#276 renders "Unknown region code" on all 1113 pages** (R2). Options: keep m49 (source identity, broken footer) or switch to `urn:iso:std:iso:3166#DE` (the template pre-fill; same meaning, clean render). Recommendation: switch — meaning-preserving. *If nobody acts:* every page footer stays broken. Effort: 1 line + rebuild.
 - **D4 — publisher hand-over to NUM-DIZ** (template pre-fill, MII funding ends end-2026). Restored to MII for now (F3). Decide the switch date with governance. *If nobody acts:* nothing breaks; footer says MII.
 - **D5 — no LICENSE file** despite declared CC0-1.0; template ships CC-BY-4.0 which was NOT adopted. Add a CC0 LICENSE file. *If nobody acts:* F3-check stays NICHT PRÜFBAR; GitHub shows no license. Effort: 1 file.
 - **D6 — `resource-approvalDate` + `artifact-topic` (NCI code) removed**, values unknown, not invented (guardrail 3). Supply the real approval date and topic code, re-add. *If nobody acts:* the CRMI extension set stays incomplete (cosmetic).
@@ -69,7 +69,7 @@ Each item: what, options, **if nobody acts**, effort, reversibility.
 
 ## ② Review queue (Gates B/C — someone must check)
 
-- **R1 — the 12 written English pages** (scoff, wi-7, isr-z, pc-ptsd, euronet-soma, ssd-12, phq-15, gad-7, whodas, midos2, promis-16, proms-onkologisches-basisscreening): each `TODO:REVIEW` header names its German source. For ISR-Z/PC-PTSD/SSD-12 the English page deliberately claims **no English item text** — check that survived.
+- **R1 — the 12 written English pages** (scoff, wi-7, isr-z, pc-ptsd, euronet-soma, ssd-12, phq-15, gad-7, whodas, midos2, promis-16, proms-onkologisches-basisscreening): each `TODO:REVIEW` header names its authored source page (de). For ISR-Z/PC-PTSD/SSD-12 the English page deliberately claims **no English item text** — check that survived.
 - **R2 — profiles.md and pro-ctcae.md** (migrated from the Simplifier tree, both languages).
 - **R3 — six intro-notes** under `input/intro-notes/` + German mirrors: prose distilled from artifact pages; the dropped `<tabs>/{{tree}}/FQL` blocks are natively rendered on those pages (verified against onkologie: 0 of 103 intro-notes carry includes).
 - **R4 — C4 findings (66):** prose runs the verifier could not find in any target page — mostly retired stubs and reformatted table content; each row in `verification-findings.tsv` names the run. Spot-check the top ones (Abstrakte-Profile/Index: 5/22 runs).

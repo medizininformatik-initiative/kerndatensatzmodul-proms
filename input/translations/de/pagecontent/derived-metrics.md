@@ -1,5 +1,3 @@
-### Abgeleitete Metriken
-
 Dieser Bereich wird in zukünftigen Modulversionen die Verwendung von abgeleiteten Metriken beinhalten.
 
 Dazu gehören:

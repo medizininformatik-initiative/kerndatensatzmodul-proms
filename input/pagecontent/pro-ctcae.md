@@ -1,6 +1,4 @@
-<!-- TODO:REVIEW — English page derived from the German original during the
-     template migration (Gate C). The German text at
-     input/translations/de/pagecontent/pro-ctcae.md is the authored source. -->
+<!-- TODO:REVIEW machine translation of source page pro-ctcae.md (de) — template migration, Gate C; the authored text is input/translations/de/pagecontent/pro-ctcae.md -->
 
 ### Overview
 

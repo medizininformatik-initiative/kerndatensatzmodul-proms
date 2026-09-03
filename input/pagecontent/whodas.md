@@ -1,6 +1,4 @@
-<!-- TODO:REVIEW — English page derived from the German original during the
-     template migration (Gate C). The German text under
-     input/translations/de/pagecontent/ is the authored source. -->
+<!-- TODO:REVIEW machine translation of source page whodas.md (de) — template migration, Gate C; the authored text is input/translations/de/pagecontent/whodas.md -->
 
 ### Clinical Context
 

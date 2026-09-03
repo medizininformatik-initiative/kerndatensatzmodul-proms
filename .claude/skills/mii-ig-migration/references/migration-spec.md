@@ -1750,7 +1750,7 @@ The command it emits is the pinning form, with the ref taken from this project's
 `skills-lock.json` so the sibling arrives at the version the rest of the installation is on:
 
 ```text
-npx skills add "https://github.com/forschungsgruppe-digital-health/agent-skills/tree/<ref>" \
+npx skills add "https://github.com/forschungsgruppe-digital-health/agent-skills/tree/v0.15.1" \
   --skill fhir-ig-analysis --agent claude-code codex --yes
 ```
 

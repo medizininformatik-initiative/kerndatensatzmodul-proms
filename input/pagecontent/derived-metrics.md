@@ -1,5 +1,3 @@
-### Derived Metrics
-
 This section will cover the use of derived metrics in future module versions.
 
 This includes:
