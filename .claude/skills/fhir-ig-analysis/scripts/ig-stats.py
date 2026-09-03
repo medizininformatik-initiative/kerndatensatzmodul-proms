@@ -348,6 +348,8 @@ def compute_preflight(igdir, identity, deps_items, gendir, genkind=None, deps_bl
                 d = json.load(open(fp, encoding="utf-8"))
             except Exception:
                 continue
+            if not isinstance(d, dict):
+                continue  # e.g. fsh-generated/data/fsh-index.json is a top-level array
             u = d.get("url")
             if u and d.get("resourceType") != "ImplementationGuide" and not u.startswith(canonical):
                 out_of_space.append({"type": d.get("resourceType"), "id": d.get("id"), "url": u})

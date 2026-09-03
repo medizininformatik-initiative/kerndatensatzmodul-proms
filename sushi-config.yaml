@@ -109,11 +109,13 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#276
 # "IG © <year> <publisher>" line (TF-KDS feedback 2026-08-14). "NUM-DIZ" is a
 # proper name, hence language-neutral. The module CONTENT stays MII content —
 # the artifact copyright labels in input/fsh/rulesets/crmi.fsh are unaffected.
+# Carried over UNCHANGED from the source (spec 2.1: identity is never silently
+# normalized). The template pre-fills NUM-DIZ (takeover when MII funding ends,
+# end-2026); switching publisher is a Gate-A/governance decision, not a default.
 publisher:
-  name: NUM-DIZ
-  # Language-neutral URL: the footer's publisher link is the same on every
-  # language's pages, so it must not pin one language's site.
-  url: https://www.netzwerk-universitaetsmedizin.de
+  name: Medizininformatik-Initiative
+  url: https://www.medizininformatik-initiative.de
+  email: office@medizininformatik-initiative.de
 
 # CRMI conformance: the IG resource claims the CRMI shareable, publishable and
 # computable ImplementationGuide profiles (for example, kerndatensatz-basis
