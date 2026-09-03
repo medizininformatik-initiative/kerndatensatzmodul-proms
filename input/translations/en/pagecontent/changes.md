@@ -26,7 +26,7 @@ PRO Instruments:
 
 Quality Assurance:
 - Fixed: ObsDef titles deduplicated, IG page score presentation improved
-- Fixed: Broken `{{render:infobox}}` syntax replaced with Markdown blockquotes (DASS-21, PHQ-9 IG pages)
+- Fixed: Broken `{% raw %}{{render:infobox}}{% endraw %}` syntax replaced with Markdown blockquotes (DASS-21, PHQ-9 IG pages)
 - Fixed: CodeSystem/ValueSet converted to short IDs
 
 **Version: 2026.0.1**

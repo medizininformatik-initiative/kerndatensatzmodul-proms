@@ -145,3 +145,14 @@
     the 12: euronet-soma gad-7 isr-z midos2 pc-ptsd phq-15 promis-16 proms-onkologisches-basisscreening scoff ssd-12 whodas wi-7 -- i.e. the PSS set and GAD-7 authored in German this cycle
 2026-09-03T07:16:01Z  WARN   2.2  license-divergence  source declares CC0-1.0 (sushi-config.yaml + package.json, NO LICENSE file); template v0.11.3 ships a CC-BY-4.0 LICENSE
     adopting the template scaffold unchanged would RELICENSE the module from CC0-1.0 to CC-BY-4.0 -- a human decision per spec 2.2, never a default
+2026-09-03T10:18:51Z  INFO   log  run-boundary  ===== run 2 starts  run=2 label=step 3 -- skeleton on template v0.11.3 cwd=/Users/thome/code/fhir-profiling/kerndatensatzmodul-proms log=migration-log/run.log
+    Every line below belongs to run 2; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-09-03T10:18:51Z  INFO   2.2  license-decision  KEEP CC0-1.0 -- the source declaration wins; the template's CC-BY-4.0 LICENSE file is NOT adopted. Open follow-up: the repo has no LICENSE file at all, so one declaring CC0-1.0 should be added (Gate A)
+2026-09-03T10:18:51Z  INFO   2.1  title-decision  title=MII IG PRO from sushi-config.yaml (the file the build reads). package.json's 'MII IG Dokument' stays UNRESOLVED as a Gate-A item -- it is shipped in the published 2026.7.0 package
+2026-09-03T10:18:51Z  INFO   6  language-decision  operator accepted the inversion 2026-09-03: en becomes default, de becomes the translation; the 12 missing English pages are a known follow-up carried by the operator
+2026-09-03T10:22:08Z  INFO   5.2  scaffold-policy  vendored ig-template/ ONLY; the template's input/fsh scaffold (aliases.fsh, rulesets/*) was NOT copied -- the module owns 35 RuleSets and its own aliases, and per spec 5.2 module definitions win. No template example artefacts were introduced, so none needed deleting.
+2026-09-03T10:22:08Z  INFO   5.2  sushi-skeleton  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-skeleton.log
+2026-09-03T10:22:50Z  INFO   5.2  sushi-skeleton  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-skeleton.log raw_log_lines=62
+2026-09-03T10:23:21Z  INFO   5.2  skeleton-accepted  sushi exit=0 errors=0 warnings=1 (cosmetic: 3.20.0 vs 3.20.1 upstream notice); P5 ok -- ig.ini names ImplementationGuide-mii-ig-pro.json which SUSHI writes; artifact count unchanged

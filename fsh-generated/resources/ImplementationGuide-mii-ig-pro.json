@@ -1,24 +1,174 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "mii-ig-pro",
-  "language": "de-DE",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+      "valueDate": "TODO:REVIEW"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "code": "package",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "de.medizininformatikinitiative.kerndatensatz.pro"
+        },
+        {
+          "url": "version",
+          "valueString": "2026.7.0"
+        },
+        {
+          "url": "uri",
+          "valueUri": "https://www.medizininformatik-initiative.de/fhir/modul-pro"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2026"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "office@medizininformatik-initiative.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters",
+      "valueReference": {
+        "reference": "Parameters/mii-param-pro-manifest"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+      "valueMarkdown": "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-purpose",
+      "valueMarkdown": "Provide the computable publication unit for the MII Core Dataset PRO module, enabling implementers to discover, validate, version, and apply the specification consistently."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code": "TODO:REVIEW"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
   "version": "2026.7.0",
   "name": "MII_IG_PRO",
   "title": "MII IG PRO",
   "status": "active",
-  "publisher": "Medizininformatik-Initiative",
+  "experimental": false,
+  "date": "TODO:REVIEW",
+  "publisher": "NUM-DIZ",
   "contact": [
     {
-      "name": "Medizininformatik-Initiative",
+      "name": "NUM-DIZ",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.medizininformatik-initiative.de"
-        },
-        {
-          "system": "email",
-          "value": "office@medizininformatik-initiative.de"
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
         }
       ]
     }
@@ -41,10 +191,40 @@
   ],
   "dependsOn": [
     {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.5.4",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    },
+    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
       "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "hl7.fhir.uv.xver-r5.r4",
+      "version": "0.1.0",
+      "uri": "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+      "id": "hl7_fhir_uv_xver_r5_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.crmi",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi",
+      "id": "hl7_fhir_uv_crmi"
+    },
+    {
+      "packageId": "hl7.terminology.r4",
+      "version": "7.3.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology_r4"
+    },
+    {
+      "id": "ext",
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.2.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"
     },
     {
       "packageId": "hl7.fhir.uv.sdc",
@@ -57,12 +237,6 @@
       "version": "5.1.1",
       "uri": "http://fhir.org/packages/de.gematik.isik/ImplementationGuide/de.gematik.isik",
       "id": "de_gematik_isik"
-    },
-    {
-      "id": "ext",
-      "packageId": "hl7.fhir.uv.extensions.r4",
-      "version": "5.2.0",
-      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"
     }
   ],
   "definition": {
@@ -1755,23 +1929,18 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "module-description.html",
-          "title": "Module Description",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "project-context.html",
-          "title": "Project Context",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "use-cases.html",
-          "title": "Use Cases",
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "datasets-and-descriptions.html",
-              "title": "Datasets and Descriptions",
+              "nameUrl": "researcher-guidance.html",
+              "title": "Guidance for Researchers",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "implementer-guidance.html",
+              "title": "Guidance for Implementers",
               "generation": "markdown"
             },
             {
@@ -1782,200 +1951,53 @@
           ]
         },
         {
-          "nameUrl": "technical-implementation.html",
-          "title": "Technical Implementation",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "workflows.html",
-              "title": "Workflows",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "scoring.html",
-              "title": "Scoring",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "id-systematics.html",
-              "title": "ID Systematics",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "terminology-strategies.html",
-              "title": "Terminology Strategies",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "questionnaire-capabilities.html",
-              "title": "Questionnaire Capabilities",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "validation.html",
-              "title": "Validation",
-              "generation": "markdown"
-            }
-          ]
-        },
-        {
-          "nameUrl": "pro-library.html",
-          "title": "PRO Library",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "phq-9.html",
-              "title": "PHQ-9",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "phq-15.html",
-              "title": "PHQ-15",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "eq-5d-5l.html",
-              "title": "EQ-5D-5L",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "eq-5d-5l-scores.html",
-                  "title": "EQ-5D-5L Scores",
-                  "generation": "markdown"
-                }
-              ]
-            },
-            {
-              "nameUrl": "eortc-qlq-c30.html",
-              "title": "EORTC QLQ-C30",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "eortc-qlq-c30-scoring.html",
-                  "title": "EORTC QLQ-C30 Scoring",
-                  "generation": "markdown"
-                }
-              ]
-            },
-            {
-              "nameUrl": "promis.html",
-              "title": "PROMIS",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "promis-29.html",
-                  "title": "PROMIS-29",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "promis-16.html",
-                  "title": "PROMIS-16",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "promis-depression.html",
-                  "title": "PROMIS Depression SF4a",
-                  "generation": "markdown"
-                }
-              ]
-            },
-            {
-              "nameUrl": "bdi-ii.html",
-              "title": "BDI-II",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "dass-21.html",
-              "title": "DASS-21",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "midos2.html",
-              "title": "MIDOS2 (Palliativmedizin)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "proms-onkologisches-basisscreening.html",
-              "title": "Onkologisches Basisscreening (PRO-CTCAE)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "whodas.html",
-              "title": "WHODAS 2.0 (12-Item)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "scoff.html",
-              "title": "SCOFF",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "wi-7.html",
-              "title": "Whiteley-7 (WI-7)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "pc-ptsd.html",
-              "title": "PC-PTSD",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ssd-12.html",
-              "title": "SSD-12",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "isr-z.html",
-              "title": "ISR-Z",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "euronet-soma.html",
-              "title": "EURONET-SOMA",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "gad-7.html",
-              "title": "GAD-7",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "minimal-reference-questionnaires.html",
-              "title": "Minimal Reference Questionnaires",
-              "generation": "markdown"
-            }
-          ]
-        },
-        {
-          "nameUrl": "domain-based-scoring.html",
-          "title": "Domain-Based Scoring",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "domains.html",
-              "title": "Domains",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "cross-instrument-mappings.html",
-              "title": "Cross-Instrument Mappings",
-              "generation": "markdown"
-            }
-          ]
-        },
-        {
-          "nameUrl": "derived-metrics.html",
-          "title": "Derived Metrics",
+          "nameUrl": "security-and-privacy.html",
+          "title": "Security and Privacy",
           "generation": "markdown"
         },
         {
-          "nameUrl": "references.html",
-          "title": "References",
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
           "generation": "markdown"
         },
         {
-          "nameUrl": "changes.html",
-          "title": "Changelog",
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capability-statements.html",
+          "title": "Capability Statements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "search-parameters.html",
+          "title": "Search Parameters",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operations.html",
+          "title": "Operations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logical-models.html",
+          "title": "Logical Models",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "value-sets.html",
+          "title": "Value Sets",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "code-systems.html",
+          "title": "Code Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
           "generation": "markdown"
         },
         {
@@ -1984,8 +2006,33 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "changes.html",
+          "title": "Changelog",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "metadata.html",
+          "title": "Metadata Overview",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "version-history.html",
+          "title": "Versioning",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide-mii-ig-pro.html",
+          "title": "MII ImplementationGuide Resource",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "translationinfo.html",
           "title": "Translation Information",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "rendering-artifacts.html",
+          "title": "Rendering Artifacts (demo)",
           "generation": "markdown"
         }
       ]
@@ -2000,20 +2047,32 @@
         "value": "ci-build"
       },
       {
-        "code": "i18n-default-lang",
-        "value": "de"
-      },
-      {
-        "code": "i18n-lang",
-        "value": "en"
-      },
-      {
-        "code": "translation-sources",
-        "value": "input/translations/en"
+        "code": "path-resource",
+        "value": "input/predefined-resources"
       },
       {
         "code": "path-pages",
         "value": "input/intro-notes"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "en"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "de"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/de"
+      },
+      {
+        "code": "excludexml",
+        "value": "false"
+      },
+      {
+        "code": "excludejson",
+        "value": "false"
       },
       {
         "code": "excludettl",
@@ -2022,6 +2081,46 @@
       {
         "code": "excludemap",
         "value": "false"
+      },
+      {
+        "code": "logging",
+        "value": "init"
+      },
+      {
+        "code": "logging",
+        "value": "progress"
+      },
+      {
+        "code": "logging",
+        "value": "context"
+      },
+      {
+        "code": "logging",
+        "value": "html"
+      },
+      {
+        "code": "logging",
+        "value": "tx"
+      },
+      {
+        "code": "pin-canonicals",
+        "value": "pin-all"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../input/resources/Parameters-expansion-manifest.json"
+      },
+      {
+        "code": "pin-manifest",
+        "value": "mii-param-pro-manifest"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3/cda"
       }
     ]
   }

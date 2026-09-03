@@ -248,7 +248,7 @@ EORTC QLQ-C30 ValueSet-Architektur:
 
 Qualitätssicherung:
 - Fixed: ObsDef-Titel entdoppelt, IG-Seite Score-Darstellung verbessert
-- Fixed: Kaputte `{{render:infobox}}` Syntax durch Markdown-Blockquotes ersetzt (DASS-21, PHQ-9 IG-Seiten)
+- Fixed: Kaputte `{% raw %}{{render:infobox}}{% endraw %}` Syntax durch Markdown-Blockquotes ersetzt (DASS-21, PHQ-9 IG-Seiten)
 - Fixed: CodeSystem/ValueSet auf kurze IDs umgestellt
 
 Hinweis: Die DASS-21- und Qualitätssicherungs-Punkte waren ursprünglich als eigenständiger v2026.1.0-Release geplant, wurden aber nie als eigenes Package veröffentlicht. Inhalt ist erstmals als Teil von v2026.2.0 released.
