@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*: |
+| Active as of 2026-09-05 | *Computable Name*: |
 | **Copyright/Legal**: EURONET-SOMA numeric rating scale items © Rief, Burton, Frostholm et al. 2017 (Psychosomatic Medicine, American Psychosomatic Society). Figure 1 of the publication explicitly recommends these two items for use in clinical trials, with translations into more than 20 languages available as supplemental content. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -65,7 +65,7 @@ EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and in
   "title" : "MII QST PRO EURONET-SOMA",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

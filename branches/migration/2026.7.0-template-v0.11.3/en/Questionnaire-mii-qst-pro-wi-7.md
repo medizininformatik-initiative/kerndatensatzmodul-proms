@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7 | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*: |
+| Active as of 2026-09-05 | *Computable Name*: |
 | **Copyright/Legal**: Whiteley-7 scale — Fink, Ewald, Jensen, Sørensen, Engberg, Holm & Munk-Jørgensen 1999 (Journal of Psychosomatic Research, Elsevier). No explicit licensing restriction stated in the original publication; treated as freely available for clinical and research use. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -73,7 +73,7 @@ WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondrias
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

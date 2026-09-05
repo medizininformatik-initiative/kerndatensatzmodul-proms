@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*:MII_VS_PRO_PHQ_15_Answers |
+| Active as of 2026-09-05 | *Computable Name*:MII_VS_PRO_PHQ_15_Answers |
 
  
 PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt, 1 = Wenig beeinträchtigt, 2 = Stark beeinträchtigt). MII-controlled for reliable ordinal() score calculation. 
@@ -41,7 +41,7 @@ PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt
   "name" : "MII_VS_PRO_PHQ_15_Answers",
   "title" : "MII VS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

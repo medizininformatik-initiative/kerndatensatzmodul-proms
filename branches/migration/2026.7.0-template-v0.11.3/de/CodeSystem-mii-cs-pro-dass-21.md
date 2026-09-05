@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21 | *Version*:2026.7.0 |
-| Active Stand: 2026-09-03 | *Maschinenlesbarer Name*:MII_CS_PRO_DASS_21 |
+| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*:MII_CS_PRO_DASS_21 |
 
  
 CodeSystem for the Depression Anxiety Stress Scales - Short Form (DASS-21) with answer codes, item codes, and multilingual support (English primary, German translations from Nilges & Essau 2015) 
@@ -36,7 +36,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO DASS-21 Response Scale and Item Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

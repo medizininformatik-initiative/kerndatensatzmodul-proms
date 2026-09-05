@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1 | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*:MII_VS_PRO_PHQ9_AnswerList_LL3591 |
+| Active as of 2026-09-05 | *Computable Name*:MII_VS_PRO_PHQ9_AnswerList_LL3591 |
 
  
 Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9) 
@@ -43,7 +43,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PHQ-9 Answer List LL359-1",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

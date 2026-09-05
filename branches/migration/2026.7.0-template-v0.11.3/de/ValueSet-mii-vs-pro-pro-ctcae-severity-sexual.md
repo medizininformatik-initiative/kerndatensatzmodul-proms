@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-sexual | *Version*:2026.7.0 |
-| Active Stand: 2026-09-03 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Severity_Sexual |
+| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Severity_Sexual |
 
  
 7-point severity scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer' 
@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

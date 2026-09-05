@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt |
+| Active as of 2026-09-05 | *Computable Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt |
 
  
 7-point response scale for EORTC QLQ-C30 global health status and quality of life items 
@@ -42,7 +42,7 @@
   "title" : "MII VS PRO EORTC QLQ-C30 7-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

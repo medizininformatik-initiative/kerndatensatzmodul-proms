@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint | *Version*:2026.7.0 |
-| Active Stand: 2026-09-03 | *Maschinenlesbarer Name*:MII_PR_PRO_Score_Blueprint |
+| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*:MII_PR_PRO_Score_Blueprint |
 
  
 MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification 
@@ -126,7 +126,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-s
   "name" : "MII_PR_PRO_Score_Blueprint",
   "title" : "MII PR PRO Score Blueprint / Template",
   "status" : "active",
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

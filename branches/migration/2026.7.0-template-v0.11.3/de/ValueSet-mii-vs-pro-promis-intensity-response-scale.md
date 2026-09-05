@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale | *Version*:2026.7.0 |
-| Active Stand: 2026-09-03 | *Maschinenlesbarer Name*:MII_VS_PRO_PROMIS_Intensity_Response_Scale |
+| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*:MII_VS_PRO_PROMIS_Intensity_Response_Scale |
 
  
 PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0 
@@ -43,7 +43,7 @@ PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a 
   "title" : "MII VS PRO PROMIS Intensity Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

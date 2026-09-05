@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening | *Version*:2026.7.0 |
-| Draft as of 2026-09-03 | *Computable Name*:MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening |
+| Draft as of 2026-09-05 | *Computable Name*:MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening |
 | **Copyright/Legal**: PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials. | |
 
  
@@ -66,7 +66,7 @@ Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigs
   "title" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

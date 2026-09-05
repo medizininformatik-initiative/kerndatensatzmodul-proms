@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*:MII_PR_PRO_Depression_T_Score |
+| Active as of 2026-09-05 | *Computable Name*:MII_PR_PRO_Depression_T_Score |
 
  
 Generic profile for depression domain T-score observations (all depression questionnaires) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-depres
   "name" : "MII_PR_PRO_Depression_T_Score",
   "title" : "MII PR PRO Depression Domain T-Score",
   "status" : "active",
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

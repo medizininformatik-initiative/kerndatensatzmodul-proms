@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*:MII_CS_PRO_PRO_CTCAE |
+| Active as of 2026-09-05 | *Computable Name*:MII_CS_PRO_PRO_CTCAE |
 | **Copyright/Legal**: PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials. | |
 
  
@@ -45,7 +45,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO PRO-CTCAE Item Library",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

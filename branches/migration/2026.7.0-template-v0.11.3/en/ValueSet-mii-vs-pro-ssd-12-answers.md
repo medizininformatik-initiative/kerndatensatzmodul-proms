@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*:MII_VS_PRO_SSD_12_Answers |
+| Active as of 2026-09-05 | *Computable Name*:MII_VS_PRO_SSD_12_Answers |
 
  
 SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 = sehr oft). MII-controlled for reliable ordinal() score calculation. 
@@ -41,7 +41,7 @@ SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 =
   "name" : "MII_VS_PRO_SSD_12_Answers",
   "title" : "MII VS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

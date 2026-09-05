@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*: |
+| Active as of 2026-09-05 | *Computable Name*: |
 | **Copyright/Legal**: © Copyright 1995 EORTC Quality of Life Group. All rights reserved. Version 3.0 | |
 
  
@@ -65,7 +65,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant A",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

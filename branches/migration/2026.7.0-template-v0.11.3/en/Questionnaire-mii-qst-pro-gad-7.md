@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7 | *Version*:2026.7.0 |
-| Active as of 2026-09-03 | *Computable Name*: |
+| Active as of 2026-09-05 | *Computable Name*: |
 | **Copyright/Legal**: GAD-7 © Pfizer Inc. Entwickelt von Robert L. Spitzer, Kurt Kroenke, Janet B.W. Williams und Bernd Löwe. Frei verfuegbar — keine Genehmigung fuer Reproduktion, Uebersetzung, Darstellung oder Nutzung erforderlich. Deutsche Fassung: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). | |
 
  
@@ -73,7 +73,7 @@ Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte An
   "title" : "MII QST PRO GAD-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T20:03:19+00:00",
+  "date" : "2026-09-05T06:23:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
