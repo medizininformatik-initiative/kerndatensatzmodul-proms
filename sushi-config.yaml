@@ -103,7 +103,10 @@ releaseLabel: ci-build
 license: CC0-1.0
 # Must equal the publication date; go-publish.yml validates this.
 date: "2026-09-02"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#276
+# D3 decided 2026-09-06: the m49#276 form renders "Unknown region code '276'"
+# in EVERY page header (publisher resolves only iso3166 for the flag/region).
+# Same meaning (Germany), template-conform form:
+jurisdiction: urn:iso:std:iso:3166#DE "Germany"
 # NUM-DIZ takes over IG development and maintenance when MII funding ends
 # (end-2026), so NUM-DIZ is the publisher shown in the footer's
 # "IG © <year> <publisher>" line (TF-KDS feedback 2026-08-14). "NUM-DIZ" is a

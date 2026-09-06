@@ -61,7 +61,7 @@ Each item: what, options, **if nobody acts**, effort, reversibility.
 
 - **D1 — `package.json` title says "MII IG Dokument"** (shipped in the published 2026.7.0 package). Fix to "MII IG PRO" in the next release. *If nobody acts:* the wrong title persists in every future package. Effort: 1 line. Reversible: yes.
 - **D2 — `canonical` contradiction:** package.json carries `…/modul-pro/ImplementationGuide/mii-ig-pro`, sushi-config `…/ext/modul-pro`. sushi-config wins per rule; align package.json next release. *If nobody acts:* registries show a canonical that resolves differently. Effort: 1 line.
-- **D3 — jurisdiction m49#276 renders "Unknown region code" on all 1113 pages** (R2). Options: keep m49 (source identity, broken footer) or switch to `urn:iso:std:iso:3166#DE` (the template pre-fill; same meaning, clean render). Recommendation: switch — meaning-preserving. *If nobody acts:* every page footer stays broken. Effort: 1 line + rebuild.
+- **D3 — DECIDED 2026-09-06 (operator): jurisdiction switched to `urn:iso:std:iso:3166#DE`** (was m49#276, which rendered "Unknown region code '276'" in every page header). Options: keep m49 (source identity, broken footer) or switch to `urn:iso:std:iso:3166#DE` (the template pre-fill; same meaning, clean render). Recommendation: switch — meaning-preserving. *If nobody acts:* every page footer stays broken. Effort: 1 line + rebuild.
 - **D4 — publisher hand-over to NUM-DIZ** (template pre-fill, MII funding ends end-2026). Restored to MII for now (F3). Decide the switch date with governance. *If nobody acts:* nothing breaks; footer says MII.
 - **D5 — no LICENSE file** despite declared CC0-1.0; template ships CC-BY-4.0 which was NOT adopted. Add a CC0 LICENSE file. *If nobody acts:* F3-check stays NICHT PRÜFBAR; GitHub shows no license. Effort: 1 file.
 - **D6 — `resource-approvalDate` + `artifact-topic` (NCI code) removed**, values unknown, not invented (guardrail 3). Supply the real approval date and topic code, re-add. *If nobody acts:* the CRMI extension set stays incomplete (cosmetic).
@@ -102,7 +102,7 @@ Each item: what, options, **if nobody acts**, effort, reversibility.
 | title | MII IG PRO | sushi-config | unchanged (package.json wrong → D1) |
 | license | CC0-1.0 | sushi-config + package.json | unchanged; template CC-BY-4.0 NOT adopted (D5) |
 | publisher | Medizininformatik-Initiative | sushi-config | restored after silent template override (F3, D4) |
-| jurisdiction | m49#276 | sushi-config | unchanged (renders broken → D3) |
+| jurisdiction | urn:iso:std:iso:3166#DE | operator decision (D3) | changed 2026-09-06; was m49#276 (same meaning, broken render) |
 | dependencies | 4 source pins unchanged + 4 template additions (basisprofil 1.5.4, xver-r5 0.1.0, crmi 2.0.0, terminology.r4 7.3.0) | | extensions.r4 kept at source pin 5.2.0 |
 
 ## Protocol
