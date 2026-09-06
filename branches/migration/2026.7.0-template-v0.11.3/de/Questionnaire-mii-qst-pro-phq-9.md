@@ -23,7 +23,7 @@ Patient Health Questionnaire (PHQ-9)
 
 ### Antworten zu diesem Fragebogen
 
-* [null](QuestionnaireResponse-mii-exa-pro-phq-9-response.md)
+Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in diesem IG definiert.
 
 
 
@@ -85,7 +85,7 @@ Patient Health Questionnaire (PHQ-9)
   "title" : "MII QST PRO PHQ-9",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

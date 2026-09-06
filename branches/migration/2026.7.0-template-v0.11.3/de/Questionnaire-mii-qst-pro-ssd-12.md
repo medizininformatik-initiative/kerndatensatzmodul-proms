@@ -23,7 +23,7 @@ SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/
 
 ### Antworten zu diesem Fragebogen
 
-* [null](QuestionnaireResponse-mii-exa-pro-ssd-12-response.md)
+Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in diesem IG definiert.
 
 
 
@@ -73,7 +73,7 @@ SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/
   "title" : "MII QST PRO SSD-12",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

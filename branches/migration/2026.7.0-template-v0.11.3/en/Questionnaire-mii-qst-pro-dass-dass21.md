@@ -22,7 +22,7 @@ Depression Anxiety Stress Scales - 21 Items (DASS-21)
 
 ### Responses for this Questionnaire
 
-* [Complete DASS-21 QuestionnaireResponse example with mixed severity: Depression severe (12), Anxiety mild (5), Stress moderate (11)](QuestionnaireResponse-mii-exa-pro-dass-dass21-response-01.md)
+There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.
 
 
 
@@ -88,7 +88,7 @@ Depression Anxiety Stress Scales - 21 Items (DASS-21)
   "title" : "MII QST PRO DASS-21",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

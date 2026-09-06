@@ -23,7 +23,7 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
 
 ### Responses for this Questionnaire
 
-* [MIDOS2 QuestionnaireResponse Beispiel — Palliativpatient mit moderater Symptomlast (Summe 19/33, Wohlbefinden eher schlecht)](QuestionnaireResponse-mii-exa-pro-midos2-response-01.md)
+There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.
 
 
 
@@ -74,7 +74,7 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -23,7 +23,7 @@ PROMIS Depression Short Form 4a - Adults - Item Bank v1.0
 
 ### Responses for this Questionnaire
 
-* [Example QuestionnaireResponse for PROMIS Depression Short Form 4a](QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.md)
+There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.
 
 
 
@@ -73,7 +73,7 @@ PROMIS Depression Short Form 4a - Adults - Item Bank v1.0
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

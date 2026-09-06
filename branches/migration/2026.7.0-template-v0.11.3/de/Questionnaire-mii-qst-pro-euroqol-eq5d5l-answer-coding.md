@@ -22,7 +22,7 @@ MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire
 
 ### Antworten zu diesem Fragebogen
 
-* [Example of an EQ-5D-5L questionnaire response using the answer-coding variant with MII CodeSystem](QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.md)
+Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in diesem IG definiert.
 
 
 
@@ -65,7 +65,7 @@ MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

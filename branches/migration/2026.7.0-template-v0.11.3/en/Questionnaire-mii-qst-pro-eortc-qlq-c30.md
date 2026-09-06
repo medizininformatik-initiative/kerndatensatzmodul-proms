@@ -23,7 +23,7 @@ EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementatio
 
 ### Responses for this Questionnaire
 
-* [Complete EORTC QLQ-C30 QuestionnaireResponse example with all 30 items and calculated scores](QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.md)
+There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.
 
 #### Contained resources
 
@@ -278,7 +278,7 @@ EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementatio
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

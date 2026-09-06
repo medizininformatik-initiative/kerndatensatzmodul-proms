@@ -23,7 +23,7 @@ Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte An
 
 ### Responses for this Questionnaire
 
-* [null](QuestionnaireResponse-mii-exa-pro-gad-7-response.md)
+There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.
 
 
 
@@ -73,7 +73,7 @@ Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte An
   "title" : "MII QST PRO GAD-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

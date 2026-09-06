@@ -86,7 +86,7 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"]
   },
   "language" : "de",
-  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12",
+  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12|2027.0.0-ballot",
   "status" : "completed",
   "subject" : {
     "reference" : "Patient/mii-exa-pro-patient"

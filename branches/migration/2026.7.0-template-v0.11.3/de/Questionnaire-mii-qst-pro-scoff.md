@@ -23,7 +23,7 @@ SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et
 
 ### Antworten zu diesem Fragebogen
 
-* [null](QuestionnaireResponse-mii-exa-pro-scoff-response.md)
+Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in diesem IG definiert.
 
 
 
@@ -73,7 +73,7 @@ SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

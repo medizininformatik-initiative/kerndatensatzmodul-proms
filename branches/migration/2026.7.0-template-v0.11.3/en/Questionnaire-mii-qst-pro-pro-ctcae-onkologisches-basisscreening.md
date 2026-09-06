@@ -23,7 +23,7 @@ Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigs
 
 ### Responses for this Questionnaire
 
-* [PRO-CTCAE Onkologisches Basisscreening Beispiel — Onkologischer Patient unter Chemotherapie mit moderater Symptomlast](QuestionnaireResponse-mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01.md)
+There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.
 
 
 
@@ -66,7 +66,7 @@ Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigs
   "title" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

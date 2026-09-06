@@ -119,7 +119,7 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "meta" : {
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"]
   },
-  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2|2027.0.0-ballot",
   "status" : "completed",
   "subject" : {
     "reference" : "Patient/mii-exa-pro-patient"

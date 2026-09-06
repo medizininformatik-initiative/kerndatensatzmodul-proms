@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-pro-s
   "name" : "MII_EX_PRO_Score_Score_Health_Correlation",
   "title" : "MII Ex PRO Score Score Health Correlation",
   "status" : "active",
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

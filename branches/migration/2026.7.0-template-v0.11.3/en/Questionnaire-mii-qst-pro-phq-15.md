@@ -23,7 +23,7 @@ Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D Ger
 
 ### Responses for this Questionnaire
 
-* [null](QuestionnaireResponse-mii-exa-pro-phq-15-response.md)
+There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG.
 
 
 
@@ -73,7 +73,7 @@ Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D Ger
   "title" : "MII QST PRO PHQ-15",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:15:57+00:00",
+  "date" : "2026-09-06T21:42:10+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
