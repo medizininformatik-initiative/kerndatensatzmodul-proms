@@ -1,145 +1,35 @@
-The PRO Library of the MII PRO Module comprises a structured collection of Patient-Reported Outcome Measures (PROMs) standardized for use in the German healthcare system. Each questionnaire is equipped with specific capabilities that define its applicability in different clinical and research contexts.
+The PRO Library is the module's structured collection of Patient-Reported Outcome Measures (PROMs), standardised for the German healthcare system. Every instrument follows the same architecture — canonical linkIds, answer scales with ordinal weights, a score item plus ObservationDefinition — and declares its [capabilities](questionnaire-capabilities.html) (displayable, collectable, calculatable, extractable, populatable, domain-aligned) machine-readably in the Questionnaire resource itself; the per-instrument pages state them individually. How scores are computed, and by whom, is on the [Scoring](scoring.html) page.
 
-### Overview of Implemented Questionnaires
+### Instruments
 
-#### Fully Implemented Questionnaires
+| Instrument | Focus | Items | Primary language | Scoring | Licence |
+|---|---|---:|---|---|---|
+| [PHQ-9](phq-9.html) | Depression screening | 9 | en (de: PHQ-D) | Sum 0–27 | free (Pfizer, public domain) |
+| [PHQ-15](phq-15.html) | Somatic symptom burden | 15 | en (de: PHQ-D) | Sum 0–30 | free (Pfizer, public domain) |
+| [GAD-7](gad-7.html) | Generalized anxiety | 7 | en (de: PHQ-D) | Sum 0–21 | free (Pfizer, public domain) |
+| [DASS-21](dass-21.html) | Depression, anxiety, stress | 21 | en (de: Nilges & Essau) | 3 subscale sums | free (public domain) |
+| [BDI-II](bdi-ii.html) | Depression inventory | 21 | de | Sum 0–63 | commercial (Pearson) — data + scoring only, not displayable |
+| [EQ-5D-5L](eq-5d-5l.html) | Health-related quality of life | 5 + VAS | de | [Index, VAS, profile](eq-5d-5l-scores.html) (CQL) | registration (EuroQol) |
+| [PROMIS-29](promis-29.html) | Multi-domain HRQoL profile | 29 | en (de: CPCOR) | Domain raw + T-scores | usage request via [CPCOR](promis.html) |
+| [PROMIS-16](promis-16.html) | Ultra-short HRQoL profile | 16 | en (de: CPCOR) | data capture only; PROPr planned as CQL | usage request via CPCOR |
+| [PROMIS Depression SF 4a](promis-depression.html) | Depression short form | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
+| PROMIS Cognitive Function SF 4a | Cognitive function | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
+| [EORTC QLQ-C30](eortc-qlq-c30.html) | Oncological quality of life | 30 | en (de: EORTC) | [15 subscales, 0–100](eortc-qlq-c30-scoring.html) | registration (EORTC) |
+| [PRO-CTCAE](pro-ctcae.html) | Symptomatic adverse events (item library) | 124 (library) | en+de (NCI) | Composite grade + ACS (CQL) | free (NCI) |
+| [Oncology Base Screening](proms-onkologisches-basisscreening.html) | PRO-CTCAE oncology subset | 23 | de (NCI) | Composite grade (CQL) | free (NCI) |
+| [MIDOS2](midos2.html) | Palliative symptom screening | 13 | de | Symptom sum 0–33 | DGP, free for clinical use |
+| [WHODAS 2.0 (12-item)](whodas.html) | Functioning and disability | 12 | en (de: PCOR-MII) | Simple sum 0–48 | WHO licence for eDC use — see page |
+| [SCOFF](scoff.html) | Eating disorder screening | 5 | en (de: PCOR-MII) | Sum 0–5 | free |
+| [Whiteley-7](wi-7.html) | Health anxiety | 7 | en (de: PCOR-MII) | Sum 0–7 | free |
+| [PC-PTSD](pc-ptsd.html) | PTSD screening (4-item) | 4 | de (PCOR-MII) | Sum 0–4 | free |
+| [SSD-12](ssd-12.html) | Somatic symptom disorder, B criteria | 12 | de | Sum 0–48 | free |
+| [ISR-Z](isr-z.html) | Obsessive-compulsive subscale (ISR) | 3 | de | **Mean** 0–4 | free |
+| [EURONET-SOMA](euronet-soma.html) | Somatic core items | 2 | en (de: PCOR-MII) | none (single items) | free |
 
-| Questionnaire | Status | Domain | Items | Language | D | C | Cal | E | P | DA |
-|---------------|--------|--------|-------|----------|---|---|-----|---|---|-----|
-| **PHQ-9** | Complete | Depression | 9+1 | DE/EN | Y | Y | Y | Y | Y | Y |
-| **EQ-5D-5L** | Complete | Quality of Life | 5+VAS | DE/EN | Y | Y | Y | Y | Y | Y |
-| **BDI-II** | Data and Scoring | Depression | 21 | DE | - | - | Y | Y | Y | Y |
-| **PROMIS-29** | Complete | Multi-Domain | 29 | DE/EN | Y | Y | Y | Y | Y | Y |
-| **PROMIS Depression SF 4a** | Complete | Depression | 4 | DE/EN | Y | Y | Y | Y | Y | Y |
-| **PROMIS Cognitive Function SF 4a** | Complete | Cognition | 4 | DE/EN | Y | Y | Y | Y | Y | Y |
-| **EORTC QLQ-C30** | Complete | Oncology | 30 | DE/EN | Y | Y | Y | Y | - | - |
-| **DASS-21** | Complete | Depression/Anxiety/Stress | 21 | DE/EN | Y | Y | Y | Y | - | Y |
+### Metadata-only references
 
-#### Metadata-Only Reference Questionnaires
+[HADS, EPDS, CES-D and K6](minimal-reference-questionnaires.html) are represented as metadata-only questionnaires: licensing does not permit shipping their item texts, but the metadata anchors identifiers, score semantics and mappings.
 
-| Questionnaire | Status | Domain | License | Capabilities |
-|---------------|--------|--------|---------|--------------|
-| **HADS** | Metadata | Anxiety/Depression | Licensed | Calculatable, Extractable |
-| **EPDS** | Metadata | Postnatal Depression | Licensed | Metadata only |
-| **CES-D** | Metadata | Depression | Licensed | Metadata only |
-| **K6** | Metadata | Psychological Distress | Licensed | Metadata only |
+### Licence note
 
-### Capabilities Legend
-
-| Abbreviation | Capability | Description |
-|--------------|------------|-------------|
-| **D** | Displayable | Can be rendered visually |
-| **C** | Collectable | Can be completed by patients |
-| **Cal** | Calculatable | Automatic score calculation supported |
-| **E** | Extractable | Data can be extracted into Observations |
-| **P** | Populatable | Can be pre-populated with existing data |
-| **DA** | Domain-aligned | Domain-specific alignment available |
-
-### Implementation Status
-
-#### Fully Implemented
-- **PHQ-9 (Patient Health Questionnaire-9)**
-  - Depression screening tool with 9 questions + functional impairment
-  - PROMIS Depression T-Score mapping via PROsetta Stone
-  - SDC-based automatic score calculation
-  - Full German and English translations
-
-- **EQ-5D-5L (EuroQol 5 Dimensions 5 Levels)**
-  - Generic quality of life instrument
-  - 3 variants: Minimal, Displayable, Collectable
-  - Index, VAS, and Profile scores
-  - CQL libraries for calculations
-
-- **EORTC QLQ-C30**
-  - Oncology-specific quality of life instrument with 30 questions
-  - Full implementation of all 15 subscales with automatic score calculations
-  - MII terminology with German and English translations
-  - Comprehensive scoring methodology with linear transformation (0-100 scale)
-  - ObservationDefinitions for all function and symptom scales
-
-- **PROMIS-29 Profile v2.1**
-  - 7 domains: Physical Function, Anxiety, Depression, Fatigue, Sleep, Social Function, Pain
-  - Variable-based score calculations
-  - Raw scores and T-scores for all domains
-
-- **PROMIS Short Forms**
-  - Depression SF 4a and Cognitive Function SF 4a
-  - Full implementation with automatic score calculation
-  - Prepared for item-based architecture
-
-- **DASS-21 (Depression Anxiety Stress Scales - 21 Items)**
-  - Simultaneous assessment of depression, anxiety, and stress with 21 items
-  - 3 subscales with raw scores and DASS-42 equivalents (6 scores)
-  - Public domain -- freely available without license fees
-  - German validation by Nilges & Essau (2015)
-
-#### Data and Scoring Implemented
-- **BDI-II (Beck Depression Inventory II)**
-  - Comprehensive depression inventory with 21 items
-  - Category-based score calculation functional
-  - MII terminology with scoring weights
-  - Display and collection capabilities still required for full usage
-
-### Technical Highlights
-
-#### SDC Integration
-All fully implemented questionnaires use extended SDC capabilities:
-- **Calculated Expressions**: Automatic score calculation with FHIRPath
-- **Conditional Display**: Dynamic visibility based on responses
-- **Initial Values**: Context-dependent pre-population of fields
-- **Observation Extraction**: Direct conversion to FHIR Observations
-
-#### Terminology Strategy
-- **MII ValueSets** with scoring weights for reliable calculations
-- **Multilingual support** via FHIR Translation Extensions
-- **LOINC integration** where available, with German translations
-
-#### Questionnaire Variants
-Flexible architecture with different capability combinations:
-- **Displayable**: Pure display of results
-- **Collectable**: Interactive data collection
-- **Populatable**: Pre-population from existing data
-- **Calculatable**: Server-side score calculation
-
-### Usage in Practice
-
-The implemented questionnaires can be used in various scenarios:
-
-1. **Direct Patient Survey** (Collectable + Displayable)
-2. **Automated Score Calculation** (Calculatable + Extractable)
-3. **Longitudinal Display** (Populatable + Displayable)
-4. **Research Data Collection** (All Capabilities)
-
-### Further Information
-
-Detailed information on individual questionnaires can be found on the respective sub-pages:
-- [PHQ-9](phq-9.html)
-- [EQ-5D-5L](eq-5d-5l.html)
-- [BDI-II](bdi-ii.html)
-- [PROMIS](promis.html)
-- [EORTC QLQ-C30](eortc-qlq-c30.html)
-- [DASS-21](dass-21.html)
-- [Minimal Reference Questionnaires](minimal-reference-questionnaires.html)
-
-### All Instruments in this Module
-
-| Instrument | Page | Focus |
-|---|---|---|
-| PHQ-9 | [phq-9](phq-9.html) | Depression screening |
-| PHQ-15 | [phq-15](phq-15.html) | Somatic symptom burden |
-| GAD-7 | [gad-7](gad-7.html) | Generalized anxiety |
-| BDI-II | [bdi-ii](bdi-ii.html) | Depression (licensed) |
-| DASS-21 | [dass-21](dass-21.html) | Depression, anxiety, stress |
-| EQ-5D-5L | [eq-5d-5l](eq-5d-5l.html) · [scores](eq-5d-5l-scores.html) | Health-related quality of life |
-| PROMIS | [overview](promis.html) · [PROMIS-29](promis-29.html) · [PROMIS-16](promis-16.html) · [Depression SF 4a](promis-depression.html) | Multi-domain HRQoL |
-| EORTC QLQ-C30 | [eortc-qlq-c30](eortc-qlq-c30.html) · [scoring](eortc-qlq-c30-scoring.html) | Oncological quality of life |
-| PRO-CTCAE | [pro-ctcae](pro-ctcae.html) · [oncology base screening](proms-onkologisches-basisscreening.html) | Symptomatic adverse events |
-| MIDOS2 | [midos2](midos2.html) | Palliative symptom screening |
-| WHODAS 2.0 | [whodas](whodas.html) | Functioning and disability |
-| SCOFF | [scoff](scoff.html) | Eating disorder screening |
-| Whiteley-7 | [wi-7](wi-7.html) | Health anxiety |
-| PC-PTSD | [pc-ptsd](pc-ptsd.html) | PTSD screening |
-| SSD-12 | [ssd-12](ssd-12.html) | Somatic symptom disorder, B criteria |
-| ISR-Z | [isr-z](isr-z.html) | Obsessive-compulsive subscale |
-| EURONET-SOMA | [euronet-soma](euronet-soma.html) | Somatic core items |
-| Metadata-only references | [minimal-reference-questionnaires](minimal-reference-questionnaires.html) | HADS, EPDS, CES-D, K6 |
+The licence column is a pointer, not legal advice: each instrument page carries the authoritative statement, and the machine-readable version sits in each Questionnaire's `copyright` element. The MII-authored FHIR structures are CC0; third-party item texts keep their own terms.
