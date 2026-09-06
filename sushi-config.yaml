@@ -92,7 +92,7 @@ description: "Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete M
 status: active # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
 # Workflow — NOT SemVer. Only the template tooling repos use SemVer.
-version: "2026.7.0"
+version: "2027.0.0-ballot"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
@@ -102,7 +102,9 @@ copyrightYear: "2025+"
 releaseLabel: ci-build
 license: CC0-1.0
 # Must equal the publication date; go-publish.yml validates this.
-date: "2026-09-02"
+# Last-change date; go-publish.yml requires this to EQUAL the publication
+# date at release time — release-prepare must set it then.
+date: "2026-09-06"
 # D3 decided 2026-09-06: the m49#276 form renders "Unknown region code '276'"
 # in EVERY page header (publisher resolves only iso3166 for the flag/region).
 # Same meaning (Germany), template-conform form:
