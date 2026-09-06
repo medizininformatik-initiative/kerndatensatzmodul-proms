@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list | *Version*:2026.7.0 |
-| Active as of 2026-09-05 | *Computable Name*:MII_VS_PRO_DASS_21_Answer_List |
+| Active as of 2026-09-06 | *Computable Name*:MII_VS_PRO_DASS_21_Answer_List |
 
  
 4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much) 
@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO DASS-21 Answer List",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -58,8 +58,9 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "description" : "4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much)",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "compose" : {

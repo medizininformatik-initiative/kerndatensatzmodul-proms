@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore | *Version*:2026.7.0 |
-| Active as of 2026-09-05 | *Computable Name*:MII_PR_PRO_PROMIS_29_Pain_Interference_TScore |
+| Active as of 2026-09-06 | *Computable Name*:MII_PR_PRO_PROMIS_29_Pain_Interference_TScore |
 
  
 Profile for PROMIS-29 Pain Interference T-Score Observations 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "title" : "MII PR PRO PROMIS-29 Pain Interference T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -59,8 +59,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "description" : "Profile for PROMIS-29 Pain Interference T-Score Observations",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "fhirVersion" : "4.0.1",

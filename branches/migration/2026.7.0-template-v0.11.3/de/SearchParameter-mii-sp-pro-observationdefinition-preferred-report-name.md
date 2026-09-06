@@ -56,8 +56,9 @@ SearchParameter for ObservationDefinition.preferredReportName to search score de
   "description" : "SearchParameter for ObservationDefinition.preferredReportName to search score definitions by display name",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "code" : "preferred-report-name",

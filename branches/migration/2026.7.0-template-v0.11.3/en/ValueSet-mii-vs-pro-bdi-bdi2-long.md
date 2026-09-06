@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long | *Version*:2026.7.0 |
-| Active as of 2026-09-05 | *Computable Name*:MII_VS_PRO_BDI_BDI2_AnswerListLong |
+| Active as of 2026-09-06 | *Computable Name*:MII_VS_PRO_BDI_BDI2_AnswerListLong |
 
  
 MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire 
@@ -42,7 +42,7 @@ MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnai
   "title" : "MII VS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -58,8 +58,9 @@ MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnai
   "description" : "MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "compose" : {

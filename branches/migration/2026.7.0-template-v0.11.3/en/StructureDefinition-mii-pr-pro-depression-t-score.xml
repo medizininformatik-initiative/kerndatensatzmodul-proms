@@ -39,7 +39,7 @@
   <name value="MII_PR_PRO_Depression_T_Score"/>
   <title value="MII PR PRO Depression Domain T-Score"/>
   <status value="active"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -55,8 +55,9 @@
   <description value="Generic profile for depression domain T-score observations (all depression questionnaires)"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

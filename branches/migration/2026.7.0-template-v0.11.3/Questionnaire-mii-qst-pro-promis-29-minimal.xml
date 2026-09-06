@@ -58,7 +58,7 @@
   <derivedFrom value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -74,8 +74,9 @@
   <description value="PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <code>

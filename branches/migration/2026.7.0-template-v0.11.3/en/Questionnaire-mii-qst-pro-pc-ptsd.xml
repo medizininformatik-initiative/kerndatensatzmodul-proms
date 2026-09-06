@@ -45,7 +45,7 @@
   <title value="MII QST PRO PC-PTSD"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -61,8 +61,9 @@
   <description value="PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for posttraumatic stress disorder (Prins et al. 2003; German: Schäfer &amp; Schulze 2010)"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <copyright value="PC-PTSD © Prins A, et al. 2003; deutsche Fassung Schäfer I, Schulze C, 2010. Freely available — Lizenz-Status: frei verfügbar (Tier A)."/>

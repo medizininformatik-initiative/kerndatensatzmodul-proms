@@ -10,7 +10,7 @@
   <name value="MII_VS_PRO_ISR_Z_Answers"/>
   <title value="MII VS PRO ISR-Z Answers"/>
   <status value="active"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -26,8 +26,9 @@
   <description value="ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemlich zu, 3 = trifft deutlich zu, 4 = trifft extrem zu). MII-controlled für zuverlässige ordinal()-Scoreberechnung."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <compose>

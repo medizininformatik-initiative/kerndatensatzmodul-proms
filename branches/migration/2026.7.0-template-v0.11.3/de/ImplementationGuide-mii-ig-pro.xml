@@ -131,8 +131,9 @@
   <description value="Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <packageId value="de.medizininformatikinitiative.kerndatensatz.pros"/>

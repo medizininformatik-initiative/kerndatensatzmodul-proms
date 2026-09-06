@@ -149,7 +149,7 @@
   </title>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -165,8 +165,9 @@
   <description value="PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score)."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <code>

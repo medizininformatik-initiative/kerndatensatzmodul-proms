@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro | *Version*:2026.7.0 |
-| Active as of 2026-09-05 | *Computable Name*:MII_LM_PRO |
+| Active as of 2026-09-06 | *Computable Name*:MII_LM_PRO |
 
  
 Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-pro.csv), 
   "title" : "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -58,8 +58,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-pro.csv), 
   "description" : "Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings.",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "fhirVersion" : "4.0.1",

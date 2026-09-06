@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers | *Version*:2026.7.0 |
-| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*:MII_CS_PRO_PHQ_15_Answers |
+| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_CS_PRO_PHQ_15_Answers |
 
  
 MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet. 
@@ -36,7 +36,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "name" : "MII_CS_PRO_PHQ_15_Answers",
   "title" : "MII CS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -52,8 +52,9 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "description" : "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "content" : "complete",

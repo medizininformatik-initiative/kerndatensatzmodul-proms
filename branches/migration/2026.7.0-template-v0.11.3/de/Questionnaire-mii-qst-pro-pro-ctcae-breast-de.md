@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de | *Version*:2026.7.0 |
-| Draft Stand: 2026-09-05 | *Maschinenlesbarer Name*:MII_QST_PRO_PRO_CTCAE_Breast_DE |
+| Draft Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_QST_PRO_PRO_CTCAE_Breast_DE |
 
  
 PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score). 
@@ -61,7 +61,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -77,8 +77,9 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "description" : "PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score).",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "code" : [{

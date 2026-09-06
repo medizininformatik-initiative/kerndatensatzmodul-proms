@@ -284,7 +284,7 @@
   <title value="EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -300,8 +300,9 @@
   <description value="EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <copyright value="© Copyright 1995 EORTC Quality of Life Group. All rights reserved. Version 3.0"/>

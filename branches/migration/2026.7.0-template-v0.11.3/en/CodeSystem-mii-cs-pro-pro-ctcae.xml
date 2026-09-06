@@ -12,7 +12,7 @@
   <title value="MII CS PRO PRO-CTCAE Item Library"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -28,8 +28,9 @@
   <description value="CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <copyright value="PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials."/>

@@ -56,8 +56,9 @@ SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter sco
   "description" : "SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter score definitions by measurement unit",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "code" : "unit",

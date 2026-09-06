@@ -76,7 +76,7 @@
   <title value="MII QST PRO PHQ-9"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -92,8 +92,9 @@
   <description value="Patient Health Questionnaire (PHQ-9)"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <copyright value="Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel &amp; Herzog 2002). Lizenz-Status: frei verfügbar."/>

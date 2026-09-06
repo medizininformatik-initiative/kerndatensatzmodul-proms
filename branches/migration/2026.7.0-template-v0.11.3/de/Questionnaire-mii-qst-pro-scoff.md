@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff | *Version*:2026.7.0 |
-| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -73,7 +73,7 @@ SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -89,8 +89,9 @@ SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et
   "description" : "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "copyright" : "SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A).",

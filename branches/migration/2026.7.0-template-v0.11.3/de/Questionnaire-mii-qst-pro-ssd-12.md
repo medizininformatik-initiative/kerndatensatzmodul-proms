@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12 | *Version*:2026.7.0 |
-| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: SSD-12 © Toussaint, Löwe et al. Freely available for research and clinical use. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -73,7 +73,7 @@ SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/
   "title" : "MII QST PRO SSD-12",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -89,8 +89,9 @@ SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/
   "description" : "SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/2017), 12-item German self-report scale",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "copyright" : "SSD-12 © Toussaint, Löwe et al. Freely available for research and clinical use. Lizenz-Status: frei verfügbar (Tier A).",

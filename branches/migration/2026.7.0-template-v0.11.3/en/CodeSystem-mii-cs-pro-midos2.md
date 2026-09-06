@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2 | *Version*:2026.7.0 |
-| Draft as of 2026-09-05 | *Computable Name*:MII_CS_PRO_MIDOS2 |
+| Draft as of 2026-09-06 | *Computable Name*:MII_CS_PRO_MIDOS2 |
 | **Copyright/Legal**: MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke. | |
 
  
@@ -38,7 +38,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO MIDOS2 Items and Response Scales",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -54,8 +54,9 @@ This Code system is referenced in the definition of the following value sets:
   "description" : "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations.",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "copyright" : "MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.",

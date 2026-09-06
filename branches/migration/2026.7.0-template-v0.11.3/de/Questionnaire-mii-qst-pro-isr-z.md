@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-isr-z | *Version*:2026.7.0 |
-| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: ICD-10-Symptom-Rating (ISR) © Tritt, von Heymann, Zaudig, Zacharias, Söllner & Loew 2008. Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -73,7 +73,7 @@ ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008)
   "title" : "MII QST PRO ISR-Z",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -89,8 +89,9 @@ ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008)
   "description" : "ISR-Z — Subskala Zwang (3 Items) des ICD-10-Symptom-Rating (Tritt et al. 2008); Skalenwert als Mittelwert, nicht Summe",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "copyright" : "ICD-10-Symptom-Rating (ISR) © Tritt, von Heymann, Zaudig, Zacharias, Söllner & Loew 2008. Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A).",

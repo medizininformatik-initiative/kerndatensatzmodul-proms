@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15 | *Version*:2026.7.0 |
-| Active Stand: 2026-09-05 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: Patient Health Questionnaire (PHQ/PHQ-15) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar. | |
 
  
@@ -73,7 +73,7 @@ Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D Ger
   "title" : "MII QST PRO PHQ-15",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -89,8 +89,9 @@ Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D Ger
   "description" : "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "copyright" : "Patient Health Questionnaire (PHQ/PHQ-15) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar.",

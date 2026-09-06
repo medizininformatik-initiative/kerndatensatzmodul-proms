@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a | *Version*:2026.7.0 |
-| Active as of 2026-09-05 | *Computable Name*: |
+| Active as of 2026-09-06 | *Computable Name*: |
 | **Usage**: [PROMIS Depression Scoring Manual](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf) | |
 
  
@@ -73,7 +73,7 @@ PROMIS Depression Short Form 4a - Adults - Item Bank v1.0
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -99,8 +99,9 @@ PROMIS Depression Short Form 4a - Adults - Item Bank v1.0
   }],
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "code" : [{

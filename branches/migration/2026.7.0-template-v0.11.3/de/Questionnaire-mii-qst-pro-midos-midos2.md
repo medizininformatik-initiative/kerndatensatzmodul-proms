@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2 | *Version*:2026.7.0 |
-| Draft Stand: 2026-09-05 | *Maschinenlesbarer Name*:MII_QST_PRO_MIDOS_MIDOS2 |
+| Draft Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_QST_PRO_MIDOS_MIDOS2 |
 | **Copyright/Rechtliches**: MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke. | |
 
  
@@ -74,7 +74,7 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -90,8 +90,9 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
   "description" : "MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-Screening für die Palliativmedizin nach DGP. 11 Symptom-Items mit 4-stufiger DGP-Skala, ein Wohlbefinden-Item, ein offenes Item für sonstige Beschwerden.",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "copyright" : "MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.",

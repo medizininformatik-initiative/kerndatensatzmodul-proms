@@ -32,7 +32,7 @@
   <title value="MII PR PRO Observation PHQ-15"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -48,8 +48,9 @@
   <description value="Profile for Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score Observations (0-30; higher scores indicate greater somatic symptom burden)."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

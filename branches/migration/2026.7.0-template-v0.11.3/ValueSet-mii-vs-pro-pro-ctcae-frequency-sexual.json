@@ -11,7 +11,7 @@
   "title" : "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-05T06:23:19+00:00",
+  "date" : "2026-09-06T20:54:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -27,8 +27,9 @@
   "description" : "7-point frequency scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer'",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "276"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
     }]
   }],
   "compose" : {

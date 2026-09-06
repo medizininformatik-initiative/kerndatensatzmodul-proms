@@ -54,7 +54,7 @@
   <title value="MII QST PRO SCOFF"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -70,8 +70,9 @@
   <description value="SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <copyright value="SCOFF questionnaire © Morgan, Reid &amp; Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A)."/>

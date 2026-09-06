@@ -102,7 +102,7 @@
   <title value="MII QST PRO PRO-CTCAE Onkologisches Basisscreening"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-09-05T06:23:19+00:00"/>
+  <date value="2026-09-06T20:54:45+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -118,8 +118,9 @@
   <description value="Onkologisches Basisscreening basierend auf PRO-CTCAE-Items. Erfasst die wichtigsten Symptome onkologischer Patienten mit den 5-stufigen PRO-CTCAE-Skalen (Häufigkeit, Schweregrad, Beeinträchtigung). Symptomauswahl konzeptuell parallel zu MIDOS2 für eine gemeinsame Problem List zwischen Onkologie und Palliativmedizin."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <copyright value="PRO-CTCAE is a product of the US National Cancer Institute (NCI). The PRO-CTCAE items, calculation algorithms, and item library are available free of charge for use in cancer clinical trials."/>

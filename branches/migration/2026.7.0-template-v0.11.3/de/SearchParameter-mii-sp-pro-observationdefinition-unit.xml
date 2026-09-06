@@ -40,8 +40,9 @@
   <description value="SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter score definitions by measurement unit"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <code value="unit"/>

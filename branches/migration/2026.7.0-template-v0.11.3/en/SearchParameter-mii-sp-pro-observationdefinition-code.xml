@@ -40,8 +40,9 @@
   <description value="SearchParameter for ObservationDefinition.code to find score definitions by code (LOINC, SNOMED, MII)"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="276"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
     </coding>
   </jurisdiction>
   <code value="code"/>
