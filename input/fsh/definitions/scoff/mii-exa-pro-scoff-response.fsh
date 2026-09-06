@@ -12,8 +12,7 @@ Title: "SCOFF Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2026-08-28T09:30:00Z"
-* questionnaire = $mii-qst-pro-scoff
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff)
 * item[+].linkId = "scoff-q01" // Sick — Erbrechen bei Völlegefühl
 * item[=].answer[0].valueCoding = $SCT#373066001 "Yes"
 

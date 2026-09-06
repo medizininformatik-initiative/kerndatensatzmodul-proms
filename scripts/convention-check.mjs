@@ -184,7 +184,12 @@ export function evaluate({ sushiConfig = null, igIni = null, packageJson = null,
 
     field("M6 version", readTopLevel(sushiConfig, "version"), (v) => {
       if (isPlaceholder(v)) return { ok: true, parameterized: true };
-      return { ok: /^\d{4}\.\d+\.\d+$/.test(v), parameterized: false, reason: "version must be CalVer YYYY.n.n (modules never use SemVer)" };
+      // MODULE ADAPTATION (PRO): pre-release suffixes -ballot / -rc.N / -alpha.N
+      // are allowed. Evidence: this module SHIPPED 2026.0.0-ballot; the
+      // template's own module-release.yml tag glob (v[0-9]+.[0-9]+.[0-9]+*) and
+      // the release-prepare validation both accept these suffixes. The bare
+      // YYYY.n.n rule would block every ballot/rc preparation commit.
+      return { ok: /^\d{4}\.\d+\.\d+(-(ballot|rc\.\d+|alpha\.\d+))?$/.test(v), parameterized: false, reason: "version must be CalVer YYYY.n.n, optionally with a -ballot / -rc.N / -alpha.N pre-release suffix" };
     });
 
     // M7 — no floating label anywhere (always hard, both branches).

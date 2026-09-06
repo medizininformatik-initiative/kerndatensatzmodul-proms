@@ -11,8 +11,7 @@ Title: "ISR-Z Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2026-08-28T09:30:00Z"
-* questionnaire = $mii-qst-pro-isr-z
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-isr-z)
 * item[+].linkId = "isr-z-q01" // "trifft ziemlich zu"
 * item[=].answer[0].valueCoding = $mii-cs-pro-isr-z-answers#trifft-ziemlich-zu "trifft ziemlich zu"
 

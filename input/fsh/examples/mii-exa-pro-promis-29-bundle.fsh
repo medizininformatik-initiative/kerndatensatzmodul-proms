@@ -87,7 +87,7 @@ Usage: #inline
 * id = "promis-29-response-1"
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 
-* questionnaire = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29)
 * status = #completed
 * subject = Reference(patient-example-1)
 * authored = "2025-01-30T14:30:00Z"

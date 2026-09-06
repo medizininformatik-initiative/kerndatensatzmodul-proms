@@ -16,8 +16,7 @@ Title: "SSD-12 Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2026-08-31T09:30:00Z"
-* questionnaire = $mii-qst-pro-ssd-12
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12)
 * item[+].linkId = "ssd12-q01"
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 

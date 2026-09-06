@@ -4,7 +4,7 @@ Title: "MII EXA PRO BDI-II"
 Description: "MII EXA PRO Beck Depression Inventory II (BDI-II) Questionnaire"
 Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
-* questionnaire = $mii-qst-pro-bdi-bdi2
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2)
 * status = #completed
 * subject.reference = "Patient/mii-exa-pro-patient"
 * authored = "2023-10-01T12:00:00Z"

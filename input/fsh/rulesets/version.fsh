@@ -32,3 +32,9 @@ RuleSet: ObsDefVersion
 // Generates: meta.profile = "{canonical}|2027.0.0-ballot"
 RuleSet: MetaProfile(canonical)
 * meta.profile[+] = "{canonical}|2027.0.0-ballot"
+
+// QuestionnaireResponse.questionnaire as a VERSIONED canonical: the response
+// records which questionnaire version was answered. Same single-point-of-
+// maintenance idea as MetaProfile — the version lives only in this file.
+RuleSet: QuestionnaireRef(canonical)
+* questionnaire = "{canonical}|2027.0.0-ballot"

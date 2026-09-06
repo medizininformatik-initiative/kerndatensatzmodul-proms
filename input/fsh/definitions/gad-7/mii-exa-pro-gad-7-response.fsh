@@ -11,8 +11,7 @@ Title: "GAD-7 Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2026-09-02T10:00:00Z"
-* questionnaire = $mii-qst-pro-gad-7
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7)
 * item[+].linkId = "phq-phq5a"
 * item[=].answer[0].valueCoding = $LNC#LA6569-3 "An einzelnen Tagen"
 * item[+].linkId = "phq-phq5b"

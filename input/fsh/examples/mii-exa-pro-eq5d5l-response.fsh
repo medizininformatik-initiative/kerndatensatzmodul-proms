@@ -6,7 +6,7 @@ Title: "EQ-5D-5L Questionnaire Response Example"
 * status = #completed
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2023-10-01T12:00:00Z"
-* questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable"
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable)
 * item[0].linkId = "euroqol-eq5d5l-q01-MO"
 * item[0].answer[0].valueCoding.code = #2
 * item[1].linkId = "euroqol-eq5d5l-q02-SC"

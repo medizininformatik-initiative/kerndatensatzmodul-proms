@@ -5,7 +5,7 @@ Description: "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (English 
 Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 
-* questionnaire = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29)
 * status = #completed
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2025-01-30T14:30:00Z"

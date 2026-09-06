@@ -10,8 +10,7 @@ Title: "PHQ-15 Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2024-03-15T10:00:00Z"
-* questionnaire = $mii-qst-pro-phq-15
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15)
 // All 15 items: "Bothered a little" (ordinal 1) → sum = 15
 * item[+].linkId = "phq-phq1a" // Stomach pain
 * item[=].answer[0].valueCoding = $mii-cs-pro-phq-15-answers#bothered-a-little "Wenig beeinträchtigt"

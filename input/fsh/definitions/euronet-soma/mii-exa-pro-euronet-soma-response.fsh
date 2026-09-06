@@ -12,8 +12,7 @@ Title: "EURONET-SOMA Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2026-08-28T09:45:00Z"
-* questionnaire = $mii-qst-pro-euronet-soma
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma)
 * item[+].linkId = "euronet-soma-q01" // Symptom Intensity — Gesamtstärke der Körperbeschwerden
 * item[=].answer[0].valueInteger = 6
 

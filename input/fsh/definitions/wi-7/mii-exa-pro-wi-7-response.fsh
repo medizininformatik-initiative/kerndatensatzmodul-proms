@@ -13,8 +13,7 @@ Title: "WI-7 Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2026-08-28T09:30:00Z"
-* questionnaire = $mii-qst-pro-wi-7
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7)
 * item[+].linkId = "wi7-q01" // Ernsthaft etwas nicht in Ordnung mit dem Körper
 * item[=].answer[0].valueCoding = $SCT#373066001 "Yes"
 

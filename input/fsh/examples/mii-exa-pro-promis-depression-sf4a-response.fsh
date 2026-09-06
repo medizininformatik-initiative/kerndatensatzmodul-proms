@@ -5,7 +5,7 @@ Description: "Example QuestionnaireResponse for PROMIS Depression Short Form 4a"
 Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 
-* questionnaire = $mii-qst-pro-promis-depression-sf4a
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a)
 * status = #completed
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2024-01-15T10:30:00Z"
