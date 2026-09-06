@@ -1,4 +1,4 @@
-# MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken - MII IG PRO v2026.7.0
+# MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*:MII_LM_PRO |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-pro.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "mii-lm-pro",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_LM_PRO",
   "title" : "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

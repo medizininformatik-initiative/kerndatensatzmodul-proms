@@ -1,4 +1,4 @@
-# MII QST PRO HADS - MII IG PRO v2026.7.0
+# MII QST PRO HADS - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads | *Version*:2026.7.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
 
  
@@ -33,7 +33,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-hads",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "en",
   "extension" : [{
@@ -60,11 +60,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "title" : "Hospital Anxiety and Depression Scale (HADS)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

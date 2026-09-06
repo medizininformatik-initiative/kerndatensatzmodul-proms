@@ -1,4 +1,4 @@
-# MII QST PRO EURONET-SOMA - MII IG PRO v2026.7.0
+# MII QST PRO EURONET-SOMA - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma | *Version*:2026.7.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: EURONET-SOMA numeric rating scale items © Rief, Burton, Frostholm et al. 2017 (Psychosomatic Medicine, American Psychosomatic Society). Figure 1 of the publication explicitly recommends these two items for use in clinical trials, with translations into more than 20 languages available as supplemental content. Lizenz-Status: frei verfügbar (Tier A). | |
 
@@ -34,7 +34,7 @@ EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and in
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-euronet-soma",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "en",
   "extension" : [{
@@ -61,11 +61,11 @@ EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and in
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "title" : "MII QST PRO EURONET-SOMA",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -1,4 +1,4 @@
-# MII VS PRO MIDOS2 Wohlbefinden-Skala - MII IG PRO v2026.7.0
+# MII VS PRO MIDOS2 Wohlbefinden-Skala - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing | *Version*:2027.0.0-ballot |
 | Draft as of 2026-09-06 | *Computable Name*:MII_VS_PRO_MIDOS2_Wellbeing |
 
  
@@ -37,12 +37,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-midos2-wellbeing",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_PRO_MIDOS2_Wellbeing",
   "title" : "MII VS PRO MIDOS2 Wohlbefinden-Skala",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

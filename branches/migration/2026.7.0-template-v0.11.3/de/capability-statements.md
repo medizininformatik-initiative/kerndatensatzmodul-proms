@@ -1,4 +1,4 @@
-# Capability Statements - MII IG PRO v2026.7.0
+# Capability Statements - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Capability Statements**

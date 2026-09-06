@@ -1,4 +1,4 @@
-# EORTC QLQ-C30 Cognitive Functioning Score - MII IG PRO v2026.7.0
+# EORTC QLQ-C30 Cognitive Functioning Score - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2026.7.0
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2027.0.0-ballot
 
 **status**: Final
 
@@ -37,7 +37,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-eortc-qlq-c30-observation-cf",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot"]
   },
   "status" : "final",
   "category" : [{

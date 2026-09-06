@@ -1,4 +1,4 @@
-# MII QST PRO MIDOS2 - MII IG PRO v2026.7.0
+# MII QST PRO MIDOS2 - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2 | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2 | *Version*:2027.0.0-ballot |
 | Draft as of 2026-09-06 | *Computable Name*:MII_QST_PRO_MIDOS_MIDOS2 |
 | **Copyright/Legal**: MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke. | |
 
@@ -34,7 +34,7 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-midos-midos2",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "de",
   "extension" : [{
@@ -69,12 +69,12 @@ MIDOS2 (Minimales Dokumentationssystem für Palliativpatienten, v2) — Symptom-
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_QST_PRO_MIDOS_MIDOS2",
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

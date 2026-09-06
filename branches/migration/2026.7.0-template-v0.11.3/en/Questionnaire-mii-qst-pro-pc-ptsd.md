@@ -1,4 +1,4 @@
-# MII QST PRO PC-PTSD - MII IG PRO v2026.7.0
+# MII QST PRO PC-PTSD - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*: |
 | **Copyright/Legal**: PC-PTSD © Prins A, et al. 2003; deutsche Fassung Schäfer I, Schulze C, 2010. Freely available — Lizenz-Status: frei verfügbar (Tier A). | |
 
@@ -34,7 +34,7 @@ PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for post
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-pc-ptsd",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "de",
   "extension" : [{
@@ -69,11 +69,11 @@ PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for post
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "title" : "MII QST PRO PC-PTSD",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

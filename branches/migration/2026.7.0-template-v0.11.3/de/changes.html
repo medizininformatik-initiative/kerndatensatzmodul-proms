@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2026.7.0</title>
+    <title>Changelog - MII IG PRO v2027.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.7.0 - 
+            <span style="display:inline-block;">2027.0.0-ballot - 
 
 
 
@@ -291,7 +291,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -307,25 +307,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#202700-ballot--in-vorbereitung" id="markdown-toc-202700-ballot--in-vorbereitung">2027.0.0-ballot — in Vorbereitung</a></li>
+  <li><a href="#202670--2026-09-02-released-tag-v202670-package--github-release" id="markdown-toc-202670--2026-09-02-released-tag-v202670-package--github-release">2026.7.0 — 2026-09-02 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.7.0</code>, Package + GitHub-Release)</a></li>
+  <li><a href="#202660--2026-09-01-released-tag-v202660-package--github-release" id="markdown-toc-202660--2026-09-01-released-tag-v202660-package--github-release">2026.6.0 — 2026-09-01 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.6.0</code>, Package + GitHub-Release)</a></li>
+  <li><a href="#202652--2026-07-27-released-tag-v202652-package" id="markdown-toc-202652--2026-07-27-released-tag-v202652-package">2026.5.2 — 2026-07-27 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.2</code>, Package)</a></li>
+  <li><a href="#202651--2026-07-13-released-tag-v202651-github-release--package" id="markdown-toc-202651--2026-07-13-released-tag-v202651-github-release--package">2026.5.1 — 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.1</code>, GitHub-Release + Package)</a></li>
+  <li><a href="#202650--2026-07-13-released-tag-v202650-github-release--package" id="markdown-toc-202650--2026-07-13-released-tag-v202650-github-release--package">2026.5.0 — 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.0</code>, GitHub-Release + Package)</a></li>
+  <li><a href="#202641--2026-06-15-released-tag-v202641" id="markdown-toc-202641--2026-06-15-released-tag-v202641">2026.4.1 — 2026-06-15 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.1</code>)</a></li>
+  <li><a href="#202640--2026-06-14-released-tag-v202640" id="markdown-toc-202640--2026-06-14-released-tag-v202640">2026.4.0 — 2026-06-14 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.0</code>)</a></li>
+  <li><a href="#202630--2026-05-08-released-tag-v202630-noch-nicht-zurück-in-dev-gemerged" id="markdown-toc-202630--2026-05-08-released-tag-v202630-noch-nicht-zurück-in-dev-gemerged">2026.3.0 — 2026-05-08 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.3.0</code>, noch nicht zurück in dev gemerged)</a></li>
+  <li><a href="#202620--2026-03-30-released-tag-v202620-simplifier-package-published" id="markdown-toc-202620--2026-03-30-released-tag-v202620-simplifier-package-published">2026.2.0 — 2026-03-30 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.2.0</code>, Simplifier-Package published)</a></li>
+  <li><a href="#202601--26012026" id="markdown-toc-202601--26012026">2026.0.1 — 26.01.2026</a></li>
+  <li><a href="#202600--12012026" id="markdown-toc-202600--12012026">2026.0.0 — 12.01.2026</a></li>
+  <li><a href="#202600-ballot" id="markdown-toc-202600-ballot">2026.0.0-ballot</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
 
-<p><strong>Version: 2026.7.0</strong></p>
+<h3 id="202700-ballot--in-vorbereitung">2027.0.0-ballot — in Vorbereitung</h3>
 
-<p>Datum: 2026-09-02 (in Vorbereitung)</p>
+<p>Die Ballotierungsfassung 2027 bringt den <strong>Umzug auf das MII-KDS-Modul-Template</strong> (v0.11.3) — dieselbe Werkzeugkette wie die übrigen KDS-Module. Für Implementierende ändert sich an den FHIR-Artefakten <strong>nichts</strong>: alle 214 Ressourcen, ihre IDs, Canonicals und Versionen bleiben unverändert (nachgemessen, 0 Regressionen).</p>
+
+<p>Was sich ändert:</p>
+
+<ul>
+  <li><strong>Ein Seitensatz statt zwei.</strong> IG-Publisher-Website und Simplifier-Guide entstehen aus denselben Quellen; das Auseinanderlaufen der beiden Doku-Bäume (z. B. Scoring-Seite: Stand 2025-08 vs. 2026-08) ist strukturell beendet.</li>
+  <li><strong>Zweisprachig mit englischem Default.</strong> Englisch ist Standardsprache, Deutsch vollständige Übersetzung — 61 Seiten je Sprache, umschaltbar auf jeder Seite. Zwölf englische Seiten wurden dafür neu aus den deutschen Originalen erstellt (Review läuft).</li>
+  <li><strong>TF-KDS-Menüstruktur</strong> mit Artefakt-Notizen: die Beschreibungen der abstrakten Profile und Extensions stehen jetzt direkt auf den generierten Artefaktseiten.</li>
+  <li><strong>Formale Publikation vorbereitet:</strong> Release-Workflows des Templates (Tag → Build → Draft-Release → Zulip), gepinnte Toolchain statt <code class="language-plaintext highlighter-rouge">:latest</code>, GitHub-Pages-Deployment über Actions.</li>
+  <li><strong>Jurisdiction</strong> von m49#276 auf <code class="language-plaintext highlighter-rouge">urn:iso:std:iso:3166#DE</code> umgestellt (bedeutungsgleich; das m49-Encoding renderte in jedem Seitenkopf „Unknown region code").</li>
+  <li>Zwei kleine Datenfixes: die WHODAS-Beispiel-QuestionnaireResponse deklariert <code class="language-plaintext highlighter-rouge">language = #de</code>; das PROMIS-29-Bundle referenziert das Personen-Modul-Patientenprofil nicht mehr mit der PRO-Modulversion.</li>
+</ul>
+
+<p>Details und offene Entscheidungen: <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/pull/129">PR #129</a>.</p>
+
+<h3 id="202670--2026-09-02-released-tag-v202670-package--github-release">2026.7.0 — 2026-09-02 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.7.0</code>, Package + GitHub-Release)</h3>
 
 <p>Minor-Release — <strong>GAD-7</strong> als neues Instrument, eine geteilte PHQ-Vierpunktskala und eine ConceptMap zur Item-Nummerierung. Keine Breaking Changes an bestehenden Ressourcen.</p>
 
-<h2 id="added-gad-7-generalized-anxiety-disorder-scale-7">Added: GAD-7 (Generalized Anxiety Disorder Scale-7)</h2>
+<h4 id="added-gad-7-generalized-anxiety-disorder-scale-7">Added: GAD-7 (Generalized Anxiety Disorder Scale-7)</h4>
 
 <p>Sieben Items zum Screening auf eine generalisierte Angststörung, Summenwert 0–21, Schweregrade 5/10/15 (Spitzer et al. 2006). Englisch als Primärsprache mit validierter deutscher Übersetzung (PHQ-D; Löwe et al. 2008, n=5030). LOINC-Panel <code class="language-plaintext highlighter-rouge">69737-5</code>, Score <code class="language-plaintext highlighter-rouge">70274-6</code>. Frei verfügbar, keine Genehmigung erforderlich.</p>
 
@@ -333,21 +356,19 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 <p><strong>Nicht übernommen</strong> wurde eine PROMIS-Anxiety-T-Score-Umrechnung, die in einem früheren Entwicklungsstand als FHIRPath-Ausdruck im Questionnaire vorlag. Score-Konversionen zwischen Instrumenten werden künftig als CQL-Library modelliert.</p>
 
-<h2 id="added-geteilte-phq-vierpunktskala">Added: geteilte PHQ-Vierpunktskala</h2>
+<h4 id="added-geteilte-phq-vierpunktskala">Added: geteilte PHQ-Vierpunktskala</h4>
 
 <p>Das RuleSet <code class="language-plaintext highlighter-rouge">Phq4PointFrequencyAnswerOptions</code> bündelt die Häufigkeitsskala über zwei Wochen (0–3) mit den LOINC-Antwortcodes der Liste LL358-3 (<code class="language-plaintext highlighter-rouge">LA6568-5</code>…<code class="language-plaintext highlighter-rouge">LA6571-9</code>) und den deutschen Wortlauten des PHQ-D. GAD-7 nutzt sie; PHQ-9 und PHQ-4 können darauf umgestellt werden.</p>
 
-<h2 id="added-conceptmap-zur-gad-7-item-nummerierung">Added: ConceptMap zur GAD-7-Item-Nummerierung</h2>
+<h4 id="added-conceptmap-zur-gad-7-item-nummerierung">Added: ConceptMap zur GAD-7-Item-Nummerierung</h4>
 
 <p><code class="language-plaintext highlighter-rouge">mii-cm-pro-gad-7-linkids</code> bildet die übliche GAD-7-Nummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds ab. Es handelt sich ausdrücklich <strong>nicht</strong> um eine Migration einer veröffentlichten Fassung, sondern um eine Lesehilfe für die Übernahme von Daten aus Fremdsystemen.</p>
 
-<p><strong>Version: 2026.6.0</strong></p>
-
-<p>Datum: 2026-09-01 (in Vorbereitung)</p>
+<h3 id="202660--2026-09-01-released-tag-v202660-package--github-release">2026.6.0 — 2026-09-01 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.6.0</code>, Package + GitHub-Release)</h3>
 
 <p>Minor-Release — <strong>sechs neue Instrumente</strong> des PCOR-MII-PSS-Sets (Persistent Somatic Syndrome), eine neue geteilte Antwortskala und eine präzisierte Konvention zur Display-Sprache. Keine Breaking Changes an bestehenden Ressourcen.</p>
 
-<h2 id="neue-instrumente">Neue Instrumente</h2>
+<h4 id="neue-instrumente">Neue Instrumente</h4>
 
 <table>
   <thead>
@@ -400,17 +421,17 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 <p>Alle Item-Texte stammen aus dem PCOR-MII Item Level Dictionary und wurden zeichengenau gegen diese Quelle geprüft. Alle Beispiel-Scores sind aus den <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Gewichten nachgerechnet.</p>
 
-<h2 id="added-geteilte-janein-antwortskala">Added: geteilte Ja/Nein-Antwortskala</h2>
+<h4 id="added-geteilte-janein-antwortskala">Added: geteilte Ja/Nein-Antwortskala</h4>
 
 <p>Neu ist das RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code> (<code class="language-plaintext highlighter-rouge">input/fsh/rulesets/answer-scales.fsh</code>) für generische Ja/Nein-Antworten. Es verwendet <strong>SNOMED CT <code class="language-plaintext highlighter-rouge">373066001</code> (Yes) / <code class="language-plaintext highlighter-rouge">373067005</code> (No)</strong> gemäß der Empfehlung des TC Terminologien (HL7 Deutschland / Interop Council) — statt eines selbstdefinierten MII-CodeSystems, das standardisierte Terminologie verdoppeln würde.</p>
 
 <p>Da SNOMED-Konzepten keine <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Property angehängt werden kann, nutzen diese Instrumente <strong>inline <code class="language-plaintext highlighter-rouge">answerOption</code></strong> statt <code class="language-plaintext highlighter-rouge">answerValueSet</code>. Damit tragen die Antworten in QuestionnaireResponses eine terminologisch eindeutige Kodierung mit <code class="language-plaintext highlighter-rouge">system</code> und <code class="language-plaintext highlighter-rouge">code</code> statt systemloser Integer.</p>
 
-<h2 id="präzisiert-display-sprache-in-antwort-codesystems">Präzisiert: Display-Sprache in Antwort-CodeSystems</h2>
+<h4 id="präzisiert-display-sprache-in-antwort-codesystems">Präzisiert: Display-Sprache in Antwort-CodeSystems</h4>
 
 <p>Der <code class="language-plaintext highlighter-rouge">display</code>-Wert eines Antwortkonzepts steht in der <strong>Sprache des Fragebogens</strong>; weitere Sprachen werden als <code class="language-plaintext highlighter-rouge">designation</code> geführt. Das ist keine Stilfrage: In einer Ressource mit <code class="language-plaintext highlighter-rouge">language = #de</code> verlangt der FHIR-Validator den deutschen Display im <code class="language-plaintext highlighter-rouge">valueCoding</code>. Steht dort der englische, schlägt die gesamte <code class="language-plaintext highlighter-rouge">answerValueSet</code>-Prüfung fehl — mit der irreführenden Folgemeldung <em>"Der angegebene Wert ist nicht in den im Fragebogen gesetzten options value set enthalten"</em>, die auf ein Terminologie-Problem hindeutet, das gar nicht existiert.</p>
 
-<h2 id="hinweise-zur-modellierung">Hinweise zur Modellierung</h2>
+<h4 id="hinweise-zur-modellierung">Hinweise zur Modellierung</h4>
 
 <ul>
   <li><strong>ISR-Z bildet einen Mittelwert, keine Summe.</strong> Das ISR definiert Skalenwerte als Mittelwerte der Items (Tritt et al. 2008); die FHIRPath-Berechnung nutzt entsprechend <code class="language-plaintext highlighter-rouge">.avg()</code> statt <code class="language-plaintext highlighter-rouge">.sum()</code>, Wertebereich 0-4.</li>
@@ -419,13 +440,11 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><strong>Terminologie.</strong> Für keines der sechs Instrumente führen LOINC oder SNOMED CT einen Code des Instruments selbst (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.</li>
 </ul>
 
-<p><strong>Version: 2026.5.2</strong></p>
-
-<p>Datum: 2026-07-27 (in Vorbereitung)</p>
+<h3 id="202652--2026-07-27-released-tag-v202652-package">2026.5.2 — 2026-07-27 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.2</code>, Package)</h3>
 
 <p>Patch-Release (Fix-Only) — <strong>keine</strong> Änderungen an Instrumenten, Profilen oder Terminologie. Empfohlen für alle, die 2026.4.0–2026.5.1 einsetzen.</p>
 
-<h2 id="bugfix-import-scheitert-in-hapi-fhir-server-startet-nicht">Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)</h2>
+<h4 id="bugfix-import-scheitert-in-hapi-fhir-server-startet-nicht">Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)</h4>
 
 <p>Die Packages <strong>2026.4.0–2026.5.1</strong> ließen sich nicht in HAPI FHIR laden — der Server brach beim Start mit folgendem Fehler ab:</p>
 
@@ -440,33 +459,29 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><strong>Verifiziert:</strong> 2026.5.2 wurde in HAPI FHIR (v7.6.0) getestet und startet fehlerfrei; die verbleibende ConceptMap <code class="language-plaintext highlighter-rouge">mii-cm-pro-phq-9-linkid-migration</code> wird korrekt installiert (sie trägt <code class="language-plaintext highlighter-rouge">sourceScope</code>/<code class="language-plaintext highlighter-rouge">targetScope</code>).</li>
 </ul>
 
-<h2 id="package-hygiene-nebenbei-behoben">Package-Hygiene (nebenbei behoben)</h2>
+<h4 id="package-hygiene-nebenbei-behoben">Package-Hygiene (nebenbei behoben)</h4>
 
 <ul>
   <li>Removed: Drei versehentlich mitgepackte IG-Publisher-Lifecycle-Artefakte (<code class="language-plaintext highlighter-rouge">onLoad-ig-working.json</code>, <code class="language-plaintext highlighter-rouge">onLoad-ig-updated.json</code>, <code class="language-plaintext highlighter-rouge">onGenerate-ig-working.json</code> — dreifache Kopie der <code class="language-plaintext highlighter-rouge">ImplementationGuide</code> mit identischer Canonical-URL) werden im Firely-Bake-Build jetzt herausgefiltert (<code class="language-plaintext highlighter-rouge">onLoad-*</code>/<code class="language-plaintext highlighter-rouge">onGenerate-*</code>/<code class="language-plaintext highlighter-rouge">onCheck-*</code>), ebenso defensiv macOS-Dateien (<code class="language-plaintext highlighter-rouge">._*</code>, <code class="language-plaintext highlighter-rouge">.DS_Store</code>). Kein HAPI-Startup-Blocker, aber unsauber im Package.</li>
   <li>Fixed: Einheitliche Versionierung — alle Conformance-Ressourcen tragen durchgängig <code class="language-plaintext highlighter-rouge">2026.5.2</code>. Zuvor enthielten ausgelieferte Packages gemischte Versionsstände (teils bis <code class="language-plaintext highlighter-rouge">2026.0.0</code>), weil <code class="language-plaintext highlighter-rouge">fsh-generated</code> nicht bei jedem Version-Bump regeneriert wurde.</li>
 </ul>
 
-<p><strong>Version: 2026.5.1</strong></p>
-
-<p>Datum: 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.1</code>, GitHub-Release + Package)</p>
+<h3 id="202651--2026-07-13-released-tag-v202651-github-release--package">2026.5.1 — 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.1</code>, GitHub-Release + Package)</h3>
 
 <p>Patch-Release auf 2026.5.0.</p>
 
-<h2 id="migration--breaking-changes">Migration &amp; Breaking Changes</h2>
+<h4 id="migration--breaking-changes">Migration &amp; Breaking Changes</h4>
 
 <ul>
   <li><strong><code class="language-plaintext highlighter-rouge">BREAKING</code> (nachgezogen aus 2026.5.0):</strong> Die PHQ-9-Item-linkIds wurden in 2026.5.0 vom Schema <code class="language-plaintext highlighter-rouge">phq-phq9-q01…q10</code> auf den gemeinsamen PHQ-D-Block-Namespace (<code class="language-plaintext highlighter-rouge">phq-phq2a…i</code> + <code class="language-plaintext highlighter-rouge">phq-phq9-difficulty</code>) umgestellt. Bestehende PHQ-9-<code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code>s mit alten linkIds matchen den Questionnaire ab 2026.5.0 nicht mehr.</li>
   <li>Added: <strong>ConceptMap <code class="language-plaintext highlighter-rouge">mii-cm-pro-phq-9-linkid-migration</code></strong> — bildet die alten PHQ-9-linkIds 1:1 auf die neuen ab (10 Items: <code class="language-plaintext highlighter-rouge">phq-phq9-q01…q09</code> → <code class="language-plaintext highlighter-rouge">phq-phq2a…i</code>, <code class="language-plaintext highlighter-rouge">phq-phq9-q10</code> → <code class="language-plaintext highlighter-rouge">phq-phq9-difficulty</code>), zur Migration bestehender Antworten. Die berechneten Items (<code class="language-plaintext highlighter-rouge">phq-phq9-score-total</code>, <code class="language-plaintext highlighter-rouge">phq-phq9-promis-tscore</code>) wurden nicht umbenannt.</li>
 </ul>
 
-<p><strong>Version: 2026.5.0</strong></p>
-
-<p>Datum: 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.0</code>, GitHub-Release + Package)</p>
+<h3 id="202650--2026-07-13-released-tag-v202650-github-release--package">2026.5.0 — 2026-07-13 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.0</code>, GitHub-Release + Package)</h3>
 
 <p>Minor-Release: zwei neue Instrumente (<strong>WHODAS 2.0 12-Item</strong> und <strong>PHQ-15</strong>), Aufbau einer gemeinsamen <strong>PHQ-D-Itembank</strong> (PHQ-9/PHQ-15), einheitliche <strong>MII-Score-Codierung</strong> über alle Score-ObsDefs und eine <strong>CI-Verbesserung</strong> (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.</p>
 
-<h2 id="neue-instrumente-1">Neue Instrumente</h2>
+<h4 id="neue-instrumente-1">Neue Instrumente</h4>
 
 <ul>
   <li>Added: <strong>WHODAS 2.0 12-Item (Selbstauskunft)</strong> — WHO Disability Assessment Schedule 2.0, 12 Items über 6 ICF-Domänen, 30-Tage-Recall, 5-stufige Skala (0–4). Englisch primär mit deutschen Translations (validierte PCOR-MII-Wortlaute). Antworten via <code class="language-plaintext highlighter-rouge">answerValueSet</code> (<code class="language-plaintext highlighter-rouge">mii-vs-pro-whodas-12-answer-list</code>) mit ordinalValue-Gewichten auf den CodeSystem-Konzepten. <strong>Einschränkungsscore</strong> <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-whodas12-simple-sum</code> (0–48, SNOMED <code class="language-plaintext highlighter-rouge">715823002</code>, MII-Katalog <code class="language-plaintext highlighter-rouge">whodas12-simple-sum</code>, höher = mehr Beeinträchtigung). Inkl. Beispiel-QuestionnaireResponse + Score-Observation und IG-Seite.
@@ -477,28 +492,26 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>Added: <strong>PHQ-15</strong> (Gesundheitsfragebogen für Patienten, somatische Symptomlast, PHQ-D) — 15 Items, 4-Wochen-Recall, 3-stufige Skala (0–2). Englisch primär mit deutschen Translations (PHQ-D, Löwe et al. 2002). Antworten via <code class="language-plaintext highlighter-rouge">answerValueSet</code> mit ordinalValue-Gewichten. Score <code class="language-plaintext highlighter-rouge">mii-obsdef-pro-score-phq-15</code> (0–30, LOINC <code class="language-plaintext highlighter-rouge">70273-8</code>) inkl. <strong>Schweregrad-Kategorien</strong> (Kroenke et al. 2002: 0–4 / 5–9 / 10–14 / 15–30) als <code class="language-plaintext highlighter-rouge">qualifiedInterval</code>-Reference-Ranges. Inkl. IG-Seite. Lizenz: frei verfügbar (public domain), PHQ-D.</li>
 </ul>
 
-<h2 id="architektur-phq-d-itembank">Architektur: PHQ-D-Itembank</h2>
+<h4 id="architektur-phq-d-itembank">Architektur: PHQ-D-Itembank</h4>
 
 <ul>
   <li>Changed: <strong>PHQ-9 und PHQ-15 nutzen ein gemeinsames PHQ-D-Block-LinkId-Schema</strong> (<code class="language-plaintext highlighter-rouge">phq-phq…</code>). Die in beiden Instrumenten enthaltenen Items (Schlaf <code class="language-plaintext highlighter-rouge">phq-phq2c</code>, Müdigkeit <code class="language-plaintext highlighter-rouge">phq-phq2d</code>) teilen sich denselben linkId — Grundlage für item-basiertes Scoring über Instrumente hinweg.</li>
   <li>Changed: PHQ-15 auf <code class="language-plaintext highlighter-rouge">answerValueSet</code> + CodeSystem-<code class="language-plaintext highlighter-rouge">ordinalValue</code> (EN-first) umgestellt; <code class="language-plaintext highlighter-rouge">copyright</code>/Lizenz-Status auf PHQ-Ressourcen explizit gesetzt.</li>
 </ul>
 
-<h2 id="scoring--terminologie">Scoring &amp; Terminologie</h2>
+<h4 id="scoring--terminologie">Scoring &amp; Terminologie</h4>
 
 <ul>
   <li>Changed: <strong>MII-Katalog-Code (<code class="language-plaintext highlighter-rouge">code.coding[mii]</code>) auf allen Score-ObservationDefinitions</strong> ergänzt (PROMIS-29 ×8, PROMIS Cognitive Function SF4a, Depression-T-Score, BDI-II, PHQ-9, PHQ-15) — zusätzlich zu LOINC/SNOMED, einheitlich über den MII-Score-Catalogue abfragbar (zuvor bereits EQ-5D/EORTC/DASS-21/PRO-CTCAE).</li>
 </ul>
 
-<h2 id="technische-verbesserungen">Technische Verbesserungen</h2>
+<h4 id="technische-verbesserungen">Technische Verbesserungen</h4>
 
 <ul>
   <li>Changed: <strong>CI</strong> — <code class="language-plaintext highlighter-rouge">expand-valuesets.js</code> läuft jetzt nach SUSHI im IG-Build (<code class="language-plaintext highlighter-rouge">ig-publisher.yml</code>) und schreibt <code class="language-plaintext highlighter-rouge">vs.expansion</code> aus lokalen CodeSystems. Dadurch kann der Validator die MII-kontrollierten <code class="language-plaintext highlighter-rouge">answerValueSet</code>-Antwortskalen auflösen; die zuvor gemeldeten „Wert nicht in den angegebenen Optionen"-Findings auf Beispiel-QuestionnaireResponses entfallen (PHQ-15, WHODAS und künftige answerValueSet-Instrumente).</li>
 </ul>
 
-<p><strong>Version: 2026.4.1</strong></p>
-
-<p>Datum: 2026-06-15 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.1</code>)</p>
+<h3 id="202641--2026-06-15-released-tag-v202641">2026.4.1 — 2026-06-15 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.1</code>)</h3>
 
 <p>Patch-Release auf v2026.4.0: behebt fehlendes Versions-Metadatum auf den 3 EQ-5D-5L ObservationDefinitions, das beim Bake von v2026.4.0 entdeckt wurde.</p>
 
@@ -513,13 +526,11 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>Nachher: 39 ObsDefs mit artifact-version=2026.4.1</li>
 </ul>
 
-<p><strong>Version: 2026.4.0</strong></p>
-
-<p>Datum: 2026-06-14 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.0</code>)</p>
+<h3 id="202640--2026-06-14-released-tag-v202640">2026.4.0 — 2026-06-14 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.4.0</code>)</h3>
 
 <p>Zwei thematische Erweiterungen in einem Release: <strong>PROMIS-Konsolidierung</strong> (PROMIS-16 PROPr, Wording-Migration, Copyright-Modell) und <strong>Symptom-Screening für die onkologische und palliative Versorgung</strong> (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening).</p>
 
-<h2 id="symptom-screening-midos2--pro-ctcae-onkologisches-basisscreening">Symptom-Screening (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening)</h2>
+<h4 id="symptom-screening-midos2--pro-ctcae-onkologisches-basisscreening">Symptom-Screening (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening)</h4>
 
 <p>PRO-Instrumente:</p>
 <ul>
@@ -568,7 +579,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>Stiel et al. 2010/2012 (MIDOS2, Verifikation ausstehend)</li>
 </ul>
 
-<h2 id="promis-konsolidierung">PROMIS-Konsolidierung</h2>
+<h4 id="promis-konsolidierung">PROMIS-Konsolidierung</h4>
 
 <p>PROMIS-Konsolidierung: vollständige Implementierung des PROMIS-16-Profile v2.1 (PROPr), Wording-Migration der bestehenden PROMIS-29- und Cognitive-Function-SF4a-Questionnaires auf die offizielle deutsche PROMIS-Quelle, und Einführung eines mehrschichtigen Copyright-/Lizenz-Modells für alle PROMIS-Ressourcen.</p>
 
@@ -620,9 +631,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>PROMIS Cognitive Function SF 4a gegen PCOR-MII Master: MATCH=4, DIFF=0</li>
 </ul>
 
-<p><strong>Version: 2026.3.0</strong></p>
-
-<p>Datum: 2026-05-08 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.3.0</code>, noch nicht zurück in dev gemerged)</p>
+<h3 id="202630--2026-05-08-released-tag-v202630-noch-nicht-zurück-in-dev-gemerged">2026.3.0 — 2026-05-08 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.3.0</code>, noch nicht zurück in dev gemerged)</h3>
 
 <p>PRO-Instrumente:</p>
 <ul>
@@ -638,9 +647,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>Added: Capabilities-Extension zu <code class="language-plaintext highlighter-rouge">mii-qst-pro-pro-ctcae-breast-de</code> hinzugefügt (<code class="language-plaintext highlighter-rouge">displayable</code>+<code class="language-plaintext highlighter-rouge">collectable</code>=true; <code class="language-plaintext highlighter-rouge">calculatable</code>/<code class="language-plaintext highlighter-rouge">extractable</code>/<code class="language-plaintext highlighter-rouge">domainAligned</code>=false – bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)</li>
 </ul>
 
-<p><strong>Version: 2026.2.0</strong></p>
-
-<p>Datum: 2026-03-30 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.2.0</code>, Simplifier-Package published)</p>
+<h3 id="202620--2026-03-30-released-tag-v202620-simplifier-package-published">2026.2.0 — 2026-03-30 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.2.0</code>, Simplifier-Package published)</h3>
 
 <p>PRO-Instrumente:</p>
 <ul>
@@ -675,9 +682,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 <p>Hinweis: Die DASS-21- und Qualitätssicherungs-Punkte waren ursprünglich als eigenständiger v2026.1.0-Release geplant, wurden aber nie als eigenes Package veröffentlicht. Inhalt ist erstmals als Teil von v2026.2.0 released.</p>
 
-<p><strong>Version: 2026.0.1</strong></p>
-
-<p>Datum: 26.01.2026</p>
+<h3 id="202601--26012026">2026.0.1 — 26.01.2026</h3>
 
 <p>Bugfix-Release mit PROMIS-29 Ergänzungen und Canonical-URL-Korrektur.</p>
 
@@ -696,9 +701,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>Added: SDC STU3 Spec-Links zu Questionnaire- und QR-Profilseiten</li>
 </ul>
 
-<p><strong>Version: 2026.0.0</strong></p>
-
-<p>Datum: 12.01.2026</p>
+<h3 id="202600--12012026">2026.0.0 — 12.01.2026</h3>
 
 <p>Erster stabiler Release des MII PRO-Moduls für den produktiven Einsatz.</p>
 
@@ -738,8 +741,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>Added: <code class="language-plaintext highlighter-rouge">/fix-ig-export-links</code> Skill für Simplifier IG Export Link-Reparatur</li>
 </ul>
 
-<p><strong>Version: 2026.0.0-ballot</strong></p>
-
+<h3 id="202600-ballot">2026.0.0-ballot</h3>
 <p>Initiale Ballotierungsversion mit Fokus auf SDC-basierte PRO-Erfassung und Score-Berechnung.</p>
 
 <p>PRO-Instrumente:</p>
@@ -800,8 +802,8 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.7.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Sun, Sep 6, 2026 20:54+0000">2026-09-06</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Sun, Sep 6, 2026 21:15+0000">2026-09-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

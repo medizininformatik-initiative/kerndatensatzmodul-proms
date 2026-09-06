@@ -1,4 +1,4 @@
-# ValueSet - MII IG PRO v2026.7.0
+# ValueSet - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -9,7 +9,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30#eortc-qlq-c30-4pt | *Version*:2026.7.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30#eortc-qlq-c30-4pt | *Version*:2027.0.0-ballot |
 | Active | *Maschinenlesbarer Name*: |
 
  **References** 

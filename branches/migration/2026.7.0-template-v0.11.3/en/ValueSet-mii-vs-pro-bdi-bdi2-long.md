@@ -1,4 +1,4 @@
-# MII VS PRO BDI-II - MII IG PRO v2026.7.0
+# MII VS PRO BDI-II - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*:MII_VS_PRO_BDI_BDI2_AnswerListLong |
 
  
@@ -37,12 +37,12 @@ MII VS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnai
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-bdi-bdi2-long",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_PRO_BDI_BDI2_AnswerListLong",
   "title" : "MII VS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

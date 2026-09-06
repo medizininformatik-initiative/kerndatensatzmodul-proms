@@ -1,4 +1,4 @@
-# MII EXA PRO PROMIS-29 Response (German) - MII IG PRO v2026.7.0
+# MII EXA PRO PROMIS-29 Response (German) - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2026.7.0
+Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2027.0.0-ballot
 
 * [LinkID](https://hl7.org/fhir/R4/formats.html#table): mii-exa-pro-promis-29-de-response
   * [Text](https://hl7.org/fhir/R4/formats.html#table): 
@@ -265,7 +265,7 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "resourceType" : "QuestionnaireResponse",
   "id" : "mii-exa-pro-promis-29-de-response",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"]
   },
   "questionnaire" : "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
   "status" : "completed",

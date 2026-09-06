@@ -1,4 +1,4 @@
-# SCOFF - MII IG PRO v2026.7.0
+# SCOFF - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)

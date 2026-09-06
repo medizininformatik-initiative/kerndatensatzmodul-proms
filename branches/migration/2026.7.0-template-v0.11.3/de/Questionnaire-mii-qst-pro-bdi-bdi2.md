@@ -1,4 +1,4 @@
-# MII QST PRO BDI-II - MII IG PRO v2026.7.0
+# MII QST PRO BDI-II - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2 | *Version*:2026.7.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2 | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
 
  
@@ -33,7 +33,7 @@ MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-bdi-bdi2",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "de",
   "extension" : [{
@@ -72,11 +72,11 @@ MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "title" : "MII QST PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

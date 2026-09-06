@@ -1,4 +1,4 @@
-# MII PR PRO Questionnaire - MII IG PRO v2026.7.0
+# MII PR PRO Questionnaire - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire | *Version*:2026.7.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_PR_PRO_Questionnaire |
 
  
@@ -121,12 +121,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-questionnaire",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_PRO_Questionnaire",
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

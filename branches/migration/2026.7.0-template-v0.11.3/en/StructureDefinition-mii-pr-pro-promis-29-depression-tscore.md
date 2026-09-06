@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Depression T-Score - MII IG PRO v2026.7.0
+# MII PR PRO PROMIS-29 Depression T-Score - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*:MII_PR_PRO_PROMIS_29_Depression_TScore |
 
  
@@ -38,12 +38,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-depression-tscore",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_PRO_PROMIS_29_Depression_TScore",
   "title" : "MII PR PRO PROMIS-29 Depression T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

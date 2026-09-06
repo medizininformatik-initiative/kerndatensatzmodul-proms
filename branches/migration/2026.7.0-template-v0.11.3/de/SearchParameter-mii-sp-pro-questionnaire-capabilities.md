@@ -1,4 +1,4 @@
-# mii-sp-pro-questionnaire-capabilities - MII IG PRO v2026.7.0
+# mii-sp-pro-questionnaire-capabilities - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-questionnaire-capabilities | *Version*:2026.7.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-questionnaire-capabilities | *Version*:2027.0.0-ballot |
 | Active Stand: 2025-05-24 | *Maschinenlesbarer Name*:MII_SP_PRO_Questionnaire_Capabilities |
 
  
@@ -36,7 +36,7 @@ SearchParameter for Questionnaire.extension[capabilities] to filter questionnair
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-questionnaire-capabilities",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_PRO_Questionnaire_Capabilities",
   "status" : "active",
   "experimental" : true,

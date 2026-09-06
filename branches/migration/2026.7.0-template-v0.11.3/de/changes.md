@@ -1,21 +1,32 @@
-# Changelog - MII IG PRO v2026.7.0
+# Changelog - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
 
 ## Changelog
 
- Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
-**Version: 2026.7.0**
+### 2027.0.0-ballot — in Vorbereitung
 
-Datum: 2026-09-02 (in Vorbereitung)
+Die Ballotierungsfassung 2027 bringt den **Umzug auf das MII-KDS-Modul-Template** (v0.11.3) — dieselbe Werkzeugkette wie die übrigen KDS-Module. Für Implementierende ändert sich an den FHIR-Artefakten **nichts**: alle 214 Ressourcen, ihre IDs, Canonicals und Versionen bleiben unverändert (nachgemessen, 0 Regressionen).
+
+Was sich ändert:
+
+* **Ein Seitensatz statt zwei.** IG-Publisher-Website und Simplifier-Guide entstehen aus denselben Quellen; das Auseinanderlaufen der beiden Doku-Bäume (z. B. Scoring-Seite: Stand 2025-08 vs. 2026-08) ist strukturell beendet.
+* **Zweisprachig mit englischem Default.** Englisch ist Standardsprache, Deutsch vollständige Übersetzung — 61 Seiten je Sprache, umschaltbar auf jeder Seite. Zwölf englische Seiten wurden dafür neu aus den deutschen Originalen erstellt (Review läuft).
+* **TF-KDS-Menüstruktur** mit Artefakt-Notizen: die Beschreibungen der abstrakten Profile und Extensions stehen jetzt direkt auf den generierten Artefaktseiten.
+* **Formale Publikation vorbereitet:** Release-Workflows des Templates (Tag → Build → Draft-Release → Zulip), gepinnte Toolchain statt `:latest`, GitHub-Pages-Deployment über Actions.
+* **Jurisdiction** von m49#276 auf `urn:iso:std:iso:3166#DE` umgestellt (bedeutungsgleich; das m49-Encoding renderte in jedem Seitenkopf „Unknown region code").
+* Zwei kleine Datenfixes: die WHODAS-Beispiel-QuestionnaireResponse deklariert `language = #de`; das PROMIS-29-Bundle referenziert das Personen-Modul-Patientenprofil nicht mehr mit der PRO-Modulversion.
+
+Details und offene Entscheidungen: [PR #129](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/pull/129).
+
+### 2026.7.0 — 2026-09-02 (released, Tag v2026.7.0, Package + GitHub-Release)
 
 Minor-Release — **GAD-7** als neues Instrument, eine geteilte PHQ-Vierpunktskala und eine ConceptMap zur Item-Nummerierung. Keine Breaking Changes an bestehenden Ressourcen.
 
-## Added: GAD-7 (Generalized Anxiety Disorder Scale-7)
+#### Added: GAD-7 (Generalized Anxiety Disorder Scale-7)
 
 Sieben Items zum Screening auf eine generalisierte Angststörung, Summenwert 0–21, Schweregrade 5/10/15 (Spitzer et al. 2006). Englisch als Primärsprache mit validierter deutscher Übersetzung (PHQ-D; Löwe et al. 2008, n=5030). LOINC-Panel `69737-5`, Score `70274-6`. Frei verfügbar, keine Genehmigung erforderlich.
 
@@ -23,21 +34,19 @@ Sieben Items zum Screening auf eine generalisierte Angststörung, Summenwert 0�
 
 **Nicht übernommen** wurde eine PROMIS-Anxiety-T-Score-Umrechnung, die in einem früheren Entwicklungsstand als FHIRPath-Ausdruck im Questionnaire vorlag. Score-Konversionen zwischen Instrumenten werden künftig als CQL-Library modelliert.
 
-## Added: geteilte PHQ-Vierpunktskala
+#### Added: geteilte PHQ-Vierpunktskala
 
 Das RuleSet `Phq4PointFrequencyAnswerOptions` bündelt die Häufigkeitsskala über zwei Wochen (0–3) mit den LOINC-Antwortcodes der Liste LL358-3 (`LA6568-5`…`LA6571-9`) und den deutschen Wortlauten des PHQ-D. GAD-7 nutzt sie; PHQ-9 und PHQ-4 können darauf umgestellt werden.
 
-## Added: ConceptMap zur GAD-7-Item-Nummerierung
+#### Added: ConceptMap zur GAD-7-Item-Nummerierung
 
 `mii-cm-pro-gad-7-linkids` bildet die übliche GAD-7-Nummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds ab. Es handelt sich ausdrücklich **nicht** um eine Migration einer veröffentlichten Fassung, sondern um eine Lesehilfe für die Übernahme von Daten aus Fremdsystemen.
 
-**Version: 2026.6.0**
-
-Datum: 2026-09-01 (in Vorbereitung)
+### 2026.6.0 — 2026-09-01 (released, Tag v2026.6.0, Package + GitHub-Release)
 
 Minor-Release — **sechs neue Instrumente** des PCOR-MII-PSS-Sets (Persistent Somatic Syndrome), eine neue geteilte Antwortskala und eine präzisierte Konvention zur Display-Sprache. Keine Breaking Changes an bestehenden Ressourcen.
 
-## Neue Instrumente
+#### Neue Instrumente
 
 | | | | |
 | :--- | :--- | :--- | :--- |
@@ -50,30 +59,28 @@ Minor-Release — **sechs neue Instrumente** des PCOR-MII-PSS-Sets (Persistent S
 
 Alle Item-Texte stammen aus dem PCOR-MII Item Level Dictionary und wurden zeichengenau gegen diese Quelle geprüft. Alle Beispiel-Scores sind aus den `ordinalValue`-Gewichten nachgerechnet.
 
-## Added: geteilte Ja/Nein-Antwortskala
+#### Added: geteilte Ja/Nein-Antwortskala
 
 Neu ist das RuleSet `YesNoAnswerOptions` (`input/fsh/rulesets/answer-scales.fsh`) für generische Ja/Nein-Antworten. Es verwendet **SNOMED CT `373066001` (Yes) / `373067005` (No)** gemäß der Empfehlung des TC Terminologien (HL7 Deutschland / Interop Council) — statt eines selbstdefinierten MII-CodeSystems, das standardisierte Terminologie verdoppeln würde.
 
 Da SNOMED-Konzepten keine `ordinalValue`-Property angehängt werden kann, nutzen diese Instrumente **inline `answerOption`** statt `answerValueSet`. Damit tragen die Antworten in QuestionnaireResponses eine terminologisch eindeutige Kodierung mit `system` und `code` statt systemloser Integer.
 
-## Präzisiert: Display-Sprache in Antwort-CodeSystems
+#### Präzisiert: Display-Sprache in Antwort-CodeSystems
 
 Der `display`-Wert eines Antwortkonzepts steht in der **Sprache des Fragebogens**; weitere Sprachen werden als `designation` geführt. Das ist keine Stilfrage: In einer Ressource mit `language = #de` verlangt der FHIR-Validator den deutschen Display im `valueCoding`. Steht dort der englische, schlägt die gesamte `answerValueSet`-Prüfung fehl — mit der irreführenden Folgemeldung **"Der angegebene Wert ist nicht in den im Fragebogen gesetzten options value set enthalten"**, die auf ein Terminologie-Problem hindeutet, das gar nicht existiert.
 
-## Hinweise zur Modellierung
+#### Hinweise zur Modellierung
 
 * **ISR-Z bildet einen Mittelwert, keine Summe.** Das ISR definiert Skalenwerte als Mittelwerte der Items (Tritt et al. 2008); die FHIRPath-Berechnung nutzt entsprechend `.avg()` statt `.sum()`, Wertebereich 0-4.
 * **Sprachwahl je Instrument.** `language` folgt der Originalsprache des Instruments: SCOFF, WI-7 und EURONET-SOMA sind EN-primär mit deutscher Übersetzung, PC-PTSD, SSD-12 und ISR-Z DE-primär. Wo keine validierte Originalfassung belegbar war, wurde bewusst **keine** Übersetzung erfunden.
 * **Cut-offs bleiben Dokumentation.** Publizierte Trennwerte (SCOFF >= 2, PC-PTSD >= 3) sind als `qualifiedInterval` in den ObservationDefinitions dokumentiert, aber nicht als ausführbare Interpretationslogik ausgeliefert.
 * **Terminologie.** Für keines der sechs Instrumente führen LOINC oder SNOMED CT einen Code des Instruments selbst (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.
 
-**Version: 2026.5.2**
-
-Datum: 2026-07-27 (in Vorbereitung)
+### 2026.5.2 — 2026-07-27 (released, Tag v2026.5.2, Package)
 
 Patch-Release (Fix-Only) — **keine** Änderungen an Instrumenten, Profilen oder Terminologie. Empfohlen für alle, die 2026.4.0–2026.5.1 einsetzen.
 
-## Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)
+#### Bugfix: Import scheitert in HAPI FHIR (Server startet nicht)
 
 Die Packages **2026.4.0–2026.5.1** ließen sich nicht in HAPI FHIR laden — der Server brach beim Start mit folgendem Fehler ab:
 
@@ -88,51 +95,45 @@ HAPI-0838: ConceptMap[url='…/ConceptMap/mii-cm-pro-bdi-ii-to-promis-depression
 * **Fix:** Der ConceptMap-Stub wurde aus Quelle und Package entfernt. Die BDI-II→PROMIS-Depression-T-Score-Umrechnung bleibt als vollständiger FHIRPath-Crosswalk im BDI-II-Questionnaire erhalten; eine CQL-Library-Lösung ist für 2027 geplant.
 * **Verifiziert:** 2026.5.2 wurde in HAPI FHIR (v7.6.0) getestet und startet fehlerfrei; die verbleibende ConceptMap `mii-cm-pro-phq-9-linkid-migration` wird korrekt installiert (sie trägt `sourceScope`/`targetScope`).
 
-## Package-Hygiene (nebenbei behoben)
+#### Package-Hygiene (nebenbei behoben)
 
 * Removed: Drei versehentlich mitgepackte IG-Publisher-Lifecycle-Artefakte (`onLoad-ig-working.json`, `onLoad-ig-updated.json`, `onGenerate-ig-working.json` — dreifache Kopie der `ImplementationGuide` mit identischer Canonical-URL) werden im Firely-Bake-Build jetzt herausgefiltert (`onLoad-*`/`onGenerate-*`/`onCheck-*`), ebenso defensiv macOS-Dateien (`._*`, `.DS_Store`). Kein HAPI-Startup-Blocker, aber unsauber im Package.
 * Fixed: Einheitliche Versionierung — alle Conformance-Ressourcen tragen durchgängig `2026.5.2`. Zuvor enthielten ausgelieferte Packages gemischte Versionsstände (teils bis `2026.0.0`), weil `fsh-generated` nicht bei jedem Version-Bump regeneriert wurde.
 
-**Version: 2026.5.1**
-
-Datum: 2026-07-13 (released, Tag `v2026.5.1`, GitHub-Release + Package)
+### 2026.5.1 — 2026-07-13 (released, Tag v2026.5.1, GitHub-Release + Package)
 
 Patch-Release auf 2026.5.0.
 
-## Migration & Breaking Changes
+#### Migration & Breaking Changes
 
 * **`BREAKING` (nachgezogen aus 2026.5.0):** Die PHQ-9-Item-linkIds wurden in 2026.5.0 vom Schema `phq-phq9-q01…q10` auf den gemeinsamen PHQ-D-Block-Namespace (`phq-phq2a…i` + `phq-phq9-difficulty`) umgestellt. Bestehende PHQ-9-`QuestionnaireResponse`s mit alten linkIds matchen den Questionnaire ab 2026.5.0 nicht mehr.
 * Added: **ConceptMap `mii-cm-pro-phq-9-linkid-migration`** — bildet die alten PHQ-9-linkIds 1:1 auf die neuen ab (10 Items: `phq-phq9-q01…q09` → `phq-phq2a…i`, `phq-phq9-q10` → `phq-phq9-difficulty`), zur Migration bestehender Antworten. Die berechneten Items (`phq-phq9-score-total`, `phq-phq9-promis-tscore`) wurden nicht umbenannt.
 
-**Version: 2026.5.0**
-
-Datum: 2026-07-13 (released, Tag `v2026.5.0`, GitHub-Release + Package)
+### 2026.5.0 — 2026-07-13 (released, Tag v2026.5.0, GitHub-Release + Package)
 
 Minor-Release: zwei neue Instrumente (**WHODAS 2.0 12-Item** und **PHQ-15**), Aufbau einer gemeinsamen **PHQ-D-Itembank** (PHQ-9/PHQ-15), einheitliche **MII-Score-Codierung** über alle Score-ObsDefs und eine **CI-Verbesserung** (ValueSet-Expansion), die die answerValueSet-Antwortvalidierung dauerhaft korrigiert.
 
-## Neue Instrumente
+#### Neue Instrumente
 
 * Added: **WHODAS 2.0 12-Item (Selbstauskunft)** — WHO Disability Assessment Schedule 2.0, 12 Items über 6 ICF-Domänen, 30-Tage-Recall, 5-stufige Skala (0–4). Englisch primär mit deutschen Translations (validierte PCOR-MII-Wortlaute). Antworten via `answerValueSet` (`mii-vs-pro-whodas-12-answer-list`) mit ordinalValue-Gewichten auf den CodeSystem-Konzepten. **Einschränkungsscore** `mii-obsdef-pro-score-whodas12-simple-sum` (0–48, SNOMED `715823002`, MII-Katalog `whodas12-simple-sum`, höher = mehr Beeinträchtigung). Inkl. Beispiel-QuestionnaireResponse + Score-Observation und IG-Seite. 
 * **Lizenz:** WHODAS 2.0 © WHO 2010. Die Bedingungen sind maschinenlesbar als `copyright` auf Questionnaire und CodeSystem hinterlegt: kostenfreie Kliniker-Eigennutzung; elektronische/Datenerfassungs-Nutzung erfordert eine (für nicht-kommerzielle Nutzung kostenlose) WHO-Nutzungsvereinbarung; Übersetzungen erfordern WHO-Genehmigung; MII-FHIR-Inhalte CC0, WHODAS-Itemtext © WHO.
  
 * Added: **PHQ-15** (Gesundheitsfragebogen für Patienten, somatische Symptomlast, PHQ-D) — 15 Items, 4-Wochen-Recall, 3-stufige Skala (0–2). Englisch primär mit deutschen Translations (PHQ-D, Löwe et al. 2002). Antworten via `answerValueSet` mit ordinalValue-Gewichten. Score `mii-obsdef-pro-score-phq-15` (0–30, LOINC `70273-8`) inkl. **Schweregrad-Kategorien** (Kroenke et al. 2002: 0–4 / 5–9 / 10–14 / 15–30) als `qualifiedInterval`-Reference-Ranges. Inkl. IG-Seite. Lizenz: frei verfügbar (public domain), PHQ-D.
 
-## Architektur: PHQ-D-Itembank
+#### Architektur: PHQ-D-Itembank
 
 * Changed: **PHQ-9 und PHQ-15 nutzen ein gemeinsames PHQ-D-Block-LinkId-Schema** (`phq-phq…`). Die in beiden Instrumenten enthaltenen Items (Schlaf `phq-phq2c`, Müdigkeit `phq-phq2d`) teilen sich denselben linkId — Grundlage für item-basiertes Scoring über Instrumente hinweg.
 * Changed: PHQ-15 auf `answerValueSet` + CodeSystem-`ordinalValue` (EN-first) umgestellt; `copyright`/Lizenz-Status auf PHQ-Ressourcen explizit gesetzt.
 
-## Scoring & Terminologie
+#### Scoring & Terminologie
 
 * Changed: **MII-Katalog-Code (`code.coding[mii]`) auf allen Score-ObservationDefinitions** ergänzt (PROMIS-29 ×8, PROMIS Cognitive Function SF4a, Depression-T-Score, BDI-II, PHQ-9, PHQ-15) — zusätzlich zu LOINC/SNOMED, einheitlich über den MII-Score-Catalogue abfragbar (zuvor bereits EQ-5D/EORTC/DASS-21/PRO-CTCAE).
 
-## Technische Verbesserungen
+#### Technische Verbesserungen
 
 * Changed: **CI** — `expand-valuesets.js` läuft jetzt nach SUSHI im IG-Build (`ig-publisher.yml`) und schreibt `vs.expansion` aus lokalen CodeSystems. Dadurch kann der Validator die MII-kontrollierten `answerValueSet`-Antwortskalen auflösen; die zuvor gemeldeten „Wert nicht in den angegebenen Optionen"-Findings auf Beispiel-QuestionnaireResponses entfallen (PHQ-15, WHODAS und künftige answerValueSet-Instrumente).
 
-**Version: 2026.4.1**
-
-Datum: 2026-06-15 (released, Tag `v2026.4.1`)
+### 2026.4.1 — 2026-06-15 (released, Tag v2026.4.1)
 
 Patch-Release auf v2026.4.0: behebt fehlendes Versions-Metadatum auf den 3 EQ-5D-5L ObservationDefinitions, das beim Bake von v2026.4.0 entdeckt wurde.
 
@@ -145,13 +146,11 @@ Verifikation:
 * Vorher: 36 ObsDefs mit artifact-version=2026.4.0, 3 ohne (EQ-5D)
 * Nachher: 39 ObsDefs mit artifact-version=2026.4.1
 
-**Version: 2026.4.0**
-
-Datum: 2026-06-14 (released, Tag `v2026.4.0`)
+### 2026.4.0 — 2026-06-14 (released, Tag v2026.4.0)
 
 Zwei thematische Erweiterungen in einem Release: **PROMIS-Konsolidierung** (PROMIS-16 PROPr, Wording-Migration, Copyright-Modell) und **Symptom-Screening für die onkologische und palliative Versorgung** (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening).
 
-## Symptom-Screening (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening)
+#### Symptom-Screening (MIDOS2 + PRO-CTCAE Onkologisches Basisscreening)
 
 PRO-Instrumente:
 
@@ -193,7 +192,7 @@ Quellen:
 * NCI PRO-CTCAE Item Library v1.0 (EN/DE)
 * Stiel et al. 2010/2012 (MIDOS2, Verifikation ausstehend)
 
-## PROMIS-Konsolidierung
+#### PROMIS-Konsolidierung
 
 PROMIS-Konsolidierung: vollständige Implementierung des PROMIS-16-Profile v2.1 (PROPr), Wording-Migration der bestehenden PROMIS-29- und Cognitive-Function-SF4a-Questionnaires auf die offizielle deutsche PROMIS-Quelle, und Einführung eines mehrschichtigen Copyright-/Lizenz-Modells für alle PROMIS-Ressourcen.
 
@@ -238,9 +237,7 @@ Verifikation:
 * PROMIS-16 gegen PCOR-MII Master: MATCH=15, DIFF=0
 * PROMIS Cognitive Function SF 4a gegen PCOR-MII Master: MATCH=4, DIFF=0
 
-**Version: 2026.3.0**
-
-Datum: 2026-05-08 (released, Tag `v2026.3.0`, noch nicht zurück in dev gemerged)
+### 2026.3.0 — 2026-05-08 (released, Tag v2026.3.0, noch nicht zurück in dev gemerged)
 
 PRO-Instrumente:
 
@@ -254,9 +251,7 @@ FHIR-Ressourcen:
 * Fixed: Capabilities-Extension in `mii-qst-pro-promis-cognitive-function-sf4a` vervollständigt (`domainAligned`=true ergänzt)
 * Added: Capabilities-Extension zu `mii-qst-pro-pro-ctcae-breast-de` hinzugefügt (`displayable`+`collectable`=true; `calculatable`/`extractable`/`domainAligned`=false – bewusste Entscheidung wegen cross-entity-Charakter, Composite-Grade-Scoring und noch ausstehender Scoring-Algorithmus-Wahl)
 
-**Version: 2026.2.0**
-
-Datum: 2026-03-30 (released, Tag `v2026.2.0`, Simplifier-Package published)
+### 2026.2.0 — 2026-03-30 (released, Tag v2026.2.0, Simplifier-Package published)
 
 PRO-Instrumente:
 
@@ -286,9 +281,7 @@ Qualitätssicherung:
 
 Hinweis: Die DASS-21- und Qualitätssicherungs-Punkte waren ursprünglich als eigenständiger v2026.1.0-Release geplant, wurden aber nie als eigenes Package veröffentlicht. Inhalt ist erstmals als Teil von v2026.2.0 released.
 
-**Version: 2026.0.1**
-
-Datum: 26.01.2026
+### 2026.0.1 — 26.01.2026
 
 Bugfix-Release mit PROMIS-29 Ergänzungen und Canonical-URL-Korrektur.
 
@@ -305,9 +298,7 @@ IG-Dokumentation:
 * Added: Individuelle Profilseiten für abstrakte Profile
 * Added: SDC STU3 Spec-Links zu Questionnaire- und QR-Profilseiten
 
-**Version: 2026.0.0**
-
-Datum: 12.01.2026
+### 2026.0.0 — 12.01.2026
 
 Erster stabiler Release des MII PRO-Moduls für den produktiven Einsatz.
 
@@ -342,7 +333,7 @@ Developer Experience:
 * Added: `/mii-testdata-contribution` Skill für Testdaten-Repository
 * Added: `/fix-ig-export-links` Skill für Simplifier IG Export Link-Reparatur
 
-**Version: 2026.0.0-ballot**
+### 2026.0.0-ballot
 
 Initiale Ballotierungsversion mit Fokus auf SDC-basierte PRO-Erfassung und Score-Berechnung.
 

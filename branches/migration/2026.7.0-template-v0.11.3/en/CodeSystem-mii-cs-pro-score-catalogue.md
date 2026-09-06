@@ -1,4 +1,4 @@
-# MII CS PRO Score Catalogue - MII IG PRO v2026.7.0
+# MII CS PRO Score Catalogue - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*:MII_CS_PRO_Score_Catalogue |
 
  
@@ -31,11 +31,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-score-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -1,4 +1,4 @@
-# Home - MII IG PRO v2026.7.0
+# Home - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro | *Version*:2026.7.0 |
-| Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_IG_PRO |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro | *Version*:2027.0.0-ballot |
+| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_IG_PRO |
 
 Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken beschreibt die FHIR-Repräsentation des Kerndatensatzmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.
 

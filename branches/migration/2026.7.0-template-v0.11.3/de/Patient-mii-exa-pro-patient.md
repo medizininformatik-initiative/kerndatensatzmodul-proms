@@ -1,4 +1,4 @@
-# MII EXA PRO Patient - MII IG PRO v2026.7.0
+# MII EXA PRO Patient - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

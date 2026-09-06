@@ -1,4 +1,4 @@
-# MII QST PRO DASS-21 - MII IG PRO v2026.7.0
+# MII QST PRO DASS-21 - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21 | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21 | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*: |
 
  
@@ -33,7 +33,7 @@ Depression Anxiety Stress Scales - 21 Items (DASS-21)
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-dass-dass21",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2026.7.0"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "en",
   "extension" : [{
@@ -84,11 +84,11 @@ Depression Anxiety Stress Scales - 21 Items (DASS-21)
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "title" : "MII QST PRO DASS-21",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

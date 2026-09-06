@@ -1,4 +1,4 @@
-# MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds - MII IG PRO v2026.7.0
+# MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*: |
 
  
@@ -23,11 +23,11 @@ Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fr
   "resourceType" : "ConceptMap",
   "id" : "mii-cm-pro-gad-7-linkids",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "title" : "MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

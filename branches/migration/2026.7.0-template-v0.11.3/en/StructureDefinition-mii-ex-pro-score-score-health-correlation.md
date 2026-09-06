@@ -1,4 +1,4 @@
-# MII Ex PRO Score Score Health Correlation - MII IG PRO v2026.7.0
+# MII Ex PRO Score Score Health Correlation - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation | *Version*:2026.7.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-06 | *Computable Name*:MII_EX_PRO_Score_Score_Health_Correlation |
 
 MII Ex PRO Score Score Health Correlation
@@ -51,11 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-pro-score-
   "resourceType" : "StructureDefinition",
   "id" : "mii-ex-pro-score-score-health-correlation",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
-  "version" : "2026.7.0",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_EX_PRO_Score_Score_Health_Correlation",
   "title" : "MII Ex PRO Score Score Health Correlation",
   "status" : "active",
-  "date" : "2026-09-06T20:54:45+00:00",
+  "date" : "2026-09-06T21:15:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

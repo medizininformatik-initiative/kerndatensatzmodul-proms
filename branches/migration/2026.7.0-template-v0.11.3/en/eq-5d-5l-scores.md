@@ -1,4 +1,4 @@
-# EQ-5D-5L Scores - MII IG PRO v2026.7.0
+# EQ-5D-5L Scores - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PRO Library - MII IG PRO v2026.7.0</title>
+    <title>PRO Library - MII IG PRO v2027.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2026.7.0 - 
+            <span style="display:inline-block;">2027.0.0-ballot - 
 
 
 
@@ -291,7 +291,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2026.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>PRO Library</h2>
   
 
@@ -309,453 +309,206 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#overview-of-implemented-questionnaires" id="markdown-toc-overview-of-implemented-questionnaires">Overview of Implemented Questionnaires</a></li>
-  <li><a href="#capabilities-legend" id="markdown-toc-capabilities-legend">Capabilities Legend</a></li>
-  <li><a href="#implementation-status" id="markdown-toc-implementation-status">Implementation Status</a></li>
-  <li><a href="#technical-highlights" id="markdown-toc-technical-highlights">Technical Highlights</a></li>
-  <li><a href="#usage-in-practice" id="markdown-toc-usage-in-practice">Usage in Practice</a></li>
-  <li><a href="#further-information" id="markdown-toc-further-information">Further Information</a></li>
-  <li><a href="#all-instruments-in-this-module" id="markdown-toc-all-instruments-in-this-module">All Instruments in this Module</a></li>
+  <li><a href="#instruments" id="markdown-toc-instruments">Instruments</a></li>
+  <li><a href="#metadata-only-references" id="markdown-toc-metadata-only-references">Metadata-only references</a></li>
+  <li><a href="#licence-note" id="markdown-toc-licence-note">Licence note</a></li>
 </ul>
 
 </div>
-<p>The PRO Library of the MII PRO Module comprises a structured collection of Patient-Reported Outcome Measures (PROMs) standardized for use in the German healthcare system. Each questionnaire is equipped with specific capabilities that define its applicability in different clinical and research contexts.</p>
+<p>The PRO Library is the module's structured collection of Patient-Reported Outcome Measures (PROMs), standardised for the German healthcare system. Every instrument follows the same architecture — canonical linkIds, answer scales with ordinal weights, a score item plus ObservationDefinition — and declares its <a href="questionnaire-capabilities.html">capabilities</a> (displayable, collectable, calculatable, extractable, populatable, domain-aligned) machine-readably in the Questionnaire resource itself; the per-instrument pages state them individually. How scores are computed, and by whom, is on the <a href="scoring.html">Scoring</a> page.</p>
 
-<h3 id="overview-of-implemented-questionnaires">Overview of Implemented Questionnaires</h3>
-
-<h4 id="fully-implemented-questionnaires">Fully Implemented Questionnaires</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Questionnaire</th>
-      <th>Status</th>
-      <th>Domain</th>
-      <th>Items</th>
-      <th>Language</th>
-      <th>D</th>
-      <th>C</th>
-      <th>Cal</th>
-      <th>E</th>
-      <th>P</th>
-      <th>DA</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>PHQ-9</strong></td>
-      <td>Complete</td>
-      <td>Depression</td>
-      <td>9+1</td>
-      <td>DE/EN</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td><strong>EQ-5D-5L</strong></td>
-      <td>Complete</td>
-      <td>Quality of Life</td>
-      <td>5+VAS</td>
-      <td>DE/EN</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td><strong>BDI-II</strong></td>
-      <td>Data and Scoring</td>
-      <td>Depression</td>
-      <td>21</td>
-      <td>DE</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td><strong>PROMIS-29</strong></td>
-      <td>Complete</td>
-      <td>Multi-Domain</td>
-      <td>29</td>
-      <td>DE/EN</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td><strong>PROMIS Depression SF 4a</strong></td>
-      <td>Complete</td>
-      <td>Depression</td>
-      <td>4</td>
-      <td>DE/EN</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td><strong>PROMIS Cognitive Function SF 4a</strong></td>
-      <td>Complete</td>
-      <td>Cognition</td>
-      <td>4</td>
-      <td>DE/EN</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td><strong>EORTC QLQ-C30</strong></td>
-      <td>Complete</td>
-      <td>Oncology</td>
-      <td>30</td>
-      <td>DE/EN</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><strong>DASS-21</strong></td>
-      <td>Complete</td>
-      <td>Depression/Anxiety/Stress</td>
-      <td>21</td>
-      <td>DE/EN</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>-</td>
-      <td>Y</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="metadata-only-reference-questionnaires">Metadata-Only Reference Questionnaires</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Questionnaire</th>
-      <th>Status</th>
-      <th>Domain</th>
-      <th>License</th>
-      <th>Capabilities</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>HADS</strong></td>
-      <td>Metadata</td>
-      <td>Anxiety/Depression</td>
-      <td>Licensed</td>
-      <td>Calculatable, Extractable</td>
-    </tr>
-    <tr>
-      <td><strong>EPDS</strong></td>
-      <td>Metadata</td>
-      <td>Postnatal Depression</td>
-      <td>Licensed</td>
-      <td>Metadata only</td>
-    </tr>
-    <tr>
-      <td><strong>CES-D</strong></td>
-      <td>Metadata</td>
-      <td>Depression</td>
-      <td>Licensed</td>
-      <td>Metadata only</td>
-    </tr>
-    <tr>
-      <td><strong>K6</strong></td>
-      <td>Metadata</td>
-      <td>Psychological Distress</td>
-      <td>Licensed</td>
-      <td>Metadata only</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="capabilities-legend">Capabilities Legend</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Abbreviation</th>
-      <th>Capability</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>D</strong></td>
-      <td>Displayable</td>
-      <td>Can be rendered visually</td>
-    </tr>
-    <tr>
-      <td><strong>C</strong></td>
-      <td>Collectable</td>
-      <td>Can be completed by patients</td>
-    </tr>
-    <tr>
-      <td><strong>Cal</strong></td>
-      <td>Calculatable</td>
-      <td>Automatic score calculation supported</td>
-    </tr>
-    <tr>
-      <td><strong>E</strong></td>
-      <td>Extractable</td>
-      <td>Data can be extracted into Observations</td>
-    </tr>
-    <tr>
-      <td><strong>P</strong></td>
-      <td>Populatable</td>
-      <td>Can be pre-populated with existing data</td>
-    </tr>
-    <tr>
-      <td><strong>DA</strong></td>
-      <td>Domain-aligned</td>
-      <td>Domain-specific alignment available</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="implementation-status">Implementation Status</h3>
-
-<h4 id="fully-implemented">Fully Implemented</h4>
-<ul>
-  <li><strong>PHQ-9 (Patient Health Questionnaire-9)</strong>
-    <ul>
-      <li>Depression screening tool with 9 questions + functional impairment</li>
-      <li>PROMIS Depression T-Score mapping via PROsetta Stone</li>
-      <li>SDC-based automatic score calculation</li>
-      <li>Full German and English translations</li>
-    </ul>
-  </li>
-  <li><strong>EQ-5D-5L (EuroQol 5 Dimensions 5 Levels)</strong>
-    <ul>
-      <li>Generic quality of life instrument</li>
-      <li>3 variants: Minimal, Displayable, Collectable</li>
-      <li>Index, VAS, and Profile scores</li>
-      <li>CQL libraries for calculations</li>
-    </ul>
-  </li>
-  <li><strong>EORTC QLQ-C30</strong>
-    <ul>
-      <li>Oncology-specific quality of life instrument with 30 questions</li>
-      <li>Full implementation of all 15 subscales with automatic score calculations</li>
-      <li>MII terminology with German and English translations</li>
-      <li>Comprehensive scoring methodology with linear transformation (0-100 scale)</li>
-      <li>ObservationDefinitions for all function and symptom scales</li>
-    </ul>
-  </li>
-  <li><strong>PROMIS-29 Profile v2.1</strong>
-    <ul>
-      <li>7 domains: Physical Function, Anxiety, Depression, Fatigue, Sleep, Social Function, Pain</li>
-      <li>Variable-based score calculations</li>
-      <li>Raw scores and T-scores for all domains</li>
-    </ul>
-  </li>
-  <li><strong>PROMIS Short Forms</strong>
-    <ul>
-      <li>Depression SF 4a and Cognitive Function SF 4a</li>
-      <li>Full implementation with automatic score calculation</li>
-      <li>Prepared for item-based architecture</li>
-    </ul>
-  </li>
-  <li><strong>DASS-21 (Depression Anxiety Stress Scales - 21 Items)</strong>
-    <ul>
-      <li>Simultaneous assessment of depression, anxiety, and stress with 21 items</li>
-      <li>3 subscales with raw scores and DASS-42 equivalents (6 scores)</li>
-      <li>Public domain – freely available without license fees</li>
-      <li>German validation by Nilges &amp; Essau (2015)</li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="data-and-scoring-implemented">Data and Scoring Implemented</h4>
-<ul>
-  <li><strong>BDI-II (Beck Depression Inventory II)</strong>
-    <ul>
-      <li>Comprehensive depression inventory with 21 items</li>
-      <li>Category-based score calculation functional</li>
-      <li>MII terminology with scoring weights</li>
-      <li>Display and collection capabilities still required for full usage</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="technical-highlights">Technical Highlights</h3>
-
-<h4 id="sdc-integration">SDC Integration</h4>
-<p>All fully implemented questionnaires use extended SDC capabilities:</p>
-<ul>
-  <li><strong>Calculated Expressions</strong>: Automatic score calculation with FHIRPath</li>
-  <li><strong>Conditional Display</strong>: Dynamic visibility based on responses</li>
-  <li><strong>Initial Values</strong>: Context-dependent pre-population of fields</li>
-  <li><strong>Observation Extraction</strong>: Direct conversion to FHIR Observations</li>
-</ul>
-
-<h4 id="terminology-strategy">Terminology Strategy</h4>
-<ul>
-  <li><strong>MII ValueSets</strong> with scoring weights for reliable calculations</li>
-  <li><strong>Multilingual support</strong> via FHIR Translation Extensions</li>
-  <li><strong>LOINC integration</strong> where available, with German translations</li>
-</ul>
-
-<h4 id="questionnaire-variants">Questionnaire Variants</h4>
-<p>Flexible architecture with different capability combinations:</p>
-<ul>
-  <li><strong>Displayable</strong>: Pure display of results</li>
-  <li><strong>Collectable</strong>: Interactive data collection</li>
-  <li><strong>Populatable</strong>: Pre-population from existing data</li>
-  <li><strong>Calculatable</strong>: Server-side score calculation</li>
-</ul>
-
-<h3 id="usage-in-practice">Usage in Practice</h3>
-
-<p>The implemented questionnaires can be used in various scenarios:</p>
-
-<ol>
-  <li><strong>Direct Patient Survey</strong> (Collectable + Displayable)</li>
-  <li><strong>Automated Score Calculation</strong> (Calculatable + Extractable)</li>
-  <li><strong>Longitudinal Display</strong> (Populatable + Displayable)</li>
-  <li><strong>Research Data Collection</strong> (All Capabilities)</li>
-</ol>
-
-<h3 id="further-information">Further Information</h3>
-
-<p>Detailed information on individual questionnaires can be found on the respective sub-pages:</p>
-<ul>
-  <li><a href="phq-9.html">PHQ-9</a></li>
-  <li><a href="eq-5d-5l.html">EQ-5D-5L</a></li>
-  <li><a href="bdi-ii.html">BDI-II</a></li>
-  <li><a href="promis.html">PROMIS</a></li>
-  <li><a href="eortc-qlq-c30.html">EORTC QLQ-C30</a></li>
-  <li><a href="dass-21.html">DASS-21</a></li>
-  <li><a href="minimal-reference-questionnaires.html">Minimal Reference Questionnaires</a></li>
-</ul>
-
-<h3 id="all-instruments-in-this-module">All Instruments in this Module</h3>
+<h3 id="instruments">Instruments</h3>
 
 <table>
   <thead>
     <tr>
       <th>Instrument</th>
-      <th>Page</th>
       <th>Focus</th>
+      <th style="text-align: right">Items</th>
+      <th>Primary language</th>
+      <th>Scoring</th>
+      <th>Licence</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>PHQ-9</td>
-      <td><a href="phq-9.html">phq-9</a></td>
+      <td><a href="phq-9.html">PHQ-9</a></td>
       <td>Depression screening</td>
+      <td style="text-align: right">9</td>
+      <td>en (de: PHQ-D)</td>
+      <td>Sum 0–27</td>
+      <td>free (Pfizer, public domain)</td>
     </tr>
     <tr>
-      <td>PHQ-15</td>
-      <td><a href="phq-15.html">phq-15</a></td>
+      <td><a href="phq-15.html">PHQ-15</a></td>
       <td>Somatic symptom burden</td>
+      <td style="text-align: right">15</td>
+      <td>en (de: PHQ-D)</td>
+      <td>Sum 0–30</td>
+      <td>free (Pfizer, public domain)</td>
     </tr>
     <tr>
-      <td>GAD-7</td>
-      <td><a href="gad-7.html">gad-7</a></td>
+      <td><a href="gad-7.html">GAD-7</a></td>
       <td>Generalized anxiety</td>
+      <td style="text-align: right">7</td>
+      <td>en (de: PHQ-D)</td>
+      <td>Sum 0–21</td>
+      <td>free (Pfizer, public domain)</td>
     </tr>
     <tr>
-      <td>BDI-II</td>
-      <td><a href="bdi-ii.html">bdi-ii</a></td>
-      <td>Depression (licensed)</td>
-    </tr>
-    <tr>
-      <td>DASS-21</td>
-      <td><a href="dass-21.html">dass-21</a></td>
+      <td><a href="dass-21.html">DASS-21</a></td>
       <td>Depression, anxiety, stress</td>
+      <td style="text-align: right">21</td>
+      <td>en (de: Nilges &amp; Essau)</td>
+      <td>3 subscale sums</td>
+      <td>free (public domain)</td>
     </tr>
     <tr>
-      <td>EQ-5D-5L</td>
-      <td><a href="eq-5d-5l.html">eq-5d-5l</a> · <a href="eq-5d-5l-scores.html">scores</a></td>
+      <td><a href="bdi-ii.html">BDI-II</a></td>
+      <td>Depression inventory</td>
+      <td style="text-align: right">21</td>
+      <td>de</td>
+      <td>Sum 0–63</td>
+      <td>commercial (Pearson) — data + scoring only, not displayable</td>
+    </tr>
+    <tr>
+      <td><a href="eq-5d-5l.html">EQ-5D-5L</a></td>
       <td>Health-related quality of life</td>
+      <td style="text-align: right">5 + VAS</td>
+      <td>de</td>
+      <td><a href="eq-5d-5l-scores.html">Index, VAS, profile</a> (CQL)</td>
+      <td>registration (EuroQol)</td>
     </tr>
     <tr>
-      <td>PROMIS</td>
-      <td><a href="promis.html">overview</a> · <a href="promis-29.html">PROMIS-29</a> · <a href="promis-16.html">PROMIS-16</a> · <a href="promis-depression.html">Depression SF 4a</a></td>
-      <td>Multi-domain HRQoL</td>
+      <td><a href="promis-29.html">PROMIS-29</a></td>
+      <td>Multi-domain HRQoL profile</td>
+      <td style="text-align: right">29</td>
+      <td>en (de: CPCOR)</td>
+      <td>Domain raw + T-scores</td>
+      <td>usage request via <a href="promis.html">CPCOR</a></td>
     </tr>
     <tr>
-      <td>EORTC QLQ-C30</td>
-      <td><a href="eortc-qlq-c30.html">eortc-qlq-c30</a> · <a href="eortc-qlq-c30-scoring.html">scoring</a></td>
+      <td><a href="promis-16.html">PROMIS-16</a></td>
+      <td>Ultra-short HRQoL profile</td>
+      <td style="text-align: right">16</td>
+      <td>en (de: CPCOR)</td>
+      <td>data capture only; PROPr planned as CQL</td>
+      <td>usage request via CPCOR</td>
+    </tr>
+    <tr>
+      <td><a href="promis-depression.html">PROMIS Depression SF 4a</a></td>
+      <td>Depression short form</td>
+      <td style="text-align: right">4</td>
+      <td>en (de: CPCOR)</td>
+      <td>Raw + T-score</td>
+      <td>usage request via CPCOR</td>
+    </tr>
+    <tr>
+      <td>PROMIS Cognitive Function SF 4a</td>
+      <td>Cognitive function</td>
+      <td style="text-align: right">4</td>
+      <td>en (de: CPCOR)</td>
+      <td>Raw + T-score</td>
+      <td>usage request via CPCOR</td>
+    </tr>
+    <tr>
+      <td><a href="eortc-qlq-c30.html">EORTC QLQ-C30</a></td>
       <td>Oncological quality of life</td>
+      <td style="text-align: right">30</td>
+      <td>en (de: EORTC)</td>
+      <td><a href="eortc-qlq-c30-scoring.html">15 subscales, 0–100</a></td>
+      <td>registration (EORTC)</td>
     </tr>
     <tr>
-      <td>PRO-CTCAE</td>
-      <td><a href="pro-ctcae.html">pro-ctcae</a> · <a href="proms-onkologisches-basisscreening.html">oncology base screening</a></td>
-      <td>Symptomatic adverse events</td>
+      <td><a href="pro-ctcae.html">PRO-CTCAE</a></td>
+      <td>Symptomatic adverse events (item library)</td>
+      <td style="text-align: right">124 (library)</td>
+      <td>en+de (NCI)</td>
+      <td>Composite grade + ACS (CQL)</td>
+      <td>free (NCI)</td>
     </tr>
     <tr>
-      <td>MIDOS2</td>
-      <td><a href="midos2.html">midos2</a></td>
+      <td><a href="proms-onkologisches-basisscreening.html">Oncology Base Screening</a></td>
+      <td>PRO-CTCAE oncology subset</td>
+      <td style="text-align: right">23</td>
+      <td>de (NCI)</td>
+      <td>Composite grade (CQL)</td>
+      <td>free (NCI)</td>
+    </tr>
+    <tr>
+      <td><a href="midos2.html">MIDOS2</a></td>
       <td>Palliative symptom screening</td>
+      <td style="text-align: right">13</td>
+      <td>de</td>
+      <td>Symptom sum 0–33</td>
+      <td>DGP, free for clinical use</td>
     </tr>
     <tr>
-      <td>WHODAS 2.0</td>
-      <td><a href="whodas.html">whodas</a></td>
+      <td><a href="whodas.html">WHODAS 2.0 (12-item)</a></td>
       <td>Functioning and disability</td>
+      <td style="text-align: right">12</td>
+      <td>en (de: PCOR-MII)</td>
+      <td>Simple sum 0–48</td>
+      <td>WHO licence for eDC use — see page</td>
     </tr>
     <tr>
-      <td>SCOFF</td>
-      <td><a href="scoff.html">scoff</a></td>
+      <td><a href="scoff.html">SCOFF</a></td>
       <td>Eating disorder screening</td>
+      <td style="text-align: right">5</td>
+      <td>en (de: PCOR-MII)</td>
+      <td>Sum 0–5</td>
+      <td>free</td>
     </tr>
     <tr>
-      <td>Whiteley-7</td>
-      <td><a href="wi-7.html">wi-7</a></td>
+      <td><a href="wi-7.html">Whiteley-7</a></td>
       <td>Health anxiety</td>
+      <td style="text-align: right">7</td>
+      <td>en (de: PCOR-MII)</td>
+      <td>Sum 0–7</td>
+      <td>free</td>
     </tr>
     <tr>
-      <td>PC-PTSD</td>
-      <td><a href="pc-ptsd.html">pc-ptsd</a></td>
-      <td>PTSD screening</td>
+      <td><a href="pc-ptsd.html">PC-PTSD</a></td>
+      <td>PTSD screening (4-item)</td>
+      <td style="text-align: right">4</td>
+      <td>de (PCOR-MII)</td>
+      <td>Sum 0–4</td>
+      <td>free</td>
     </tr>
     <tr>
-      <td>SSD-12</td>
-      <td><a href="ssd-12.html">ssd-12</a></td>
+      <td><a href="ssd-12.html">SSD-12</a></td>
       <td>Somatic symptom disorder, B criteria</td>
+      <td style="text-align: right">12</td>
+      <td>de</td>
+      <td>Sum 0–48</td>
+      <td>free</td>
     </tr>
     <tr>
-      <td>ISR-Z</td>
-      <td><a href="isr-z.html">isr-z</a></td>
-      <td>Obsessive-compulsive subscale</td>
+      <td><a href="isr-z.html">ISR-Z</a></td>
+      <td>Obsessive-compulsive subscale (ISR)</td>
+      <td style="text-align: right">3</td>
+      <td>de</td>
+      <td><strong>Mean</strong> 0–4</td>
+      <td>free</td>
     </tr>
     <tr>
-      <td>EURONET-SOMA</td>
-      <td><a href="euronet-soma.html">euronet-soma</a></td>
+      <td><a href="euronet-soma.html">EURONET-SOMA</a></td>
       <td>Somatic core items</td>
-    </tr>
-    <tr>
-      <td>Metadata-only references</td>
-      <td><a href="minimal-reference-questionnaires.html">minimal-reference-questionnaires</a></td>
-      <td>HADS, EPDS, CES-D, K6</td>
+      <td style="text-align: right">2</td>
+      <td>en (de: PCOR-MII)</td>
+      <td>none (single items)</td>
+      <td>free</td>
     </tr>
   </tbody>
 </table>
+
+<h3 id="metadata-only-references">Metadata-only references</h3>
+
+<p><a href="minimal-reference-questionnaires.html">HADS, EPDS, CES-D and K6</a> are represented as metadata-only questionnaires: licensing does not permit shipping their item texts, but the metadata anchors identifiers, score semantics and mappings.</p>
+
+<h3 id="licence-note">Licence note</h3>
+
+<p>The licence column is a pointer, not legal advice: each instrument page carries the authoritative statement, and the machine-readable version sits in each Questionnaire's <code class="language-plaintext highlighter-rouge">copyright</code> element. The MII-authored FHIR structures are CC0; third-party item texts keep their own terms.</p>
 
 
 
@@ -781,8 +534,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2026.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Sun, Sep 6, 2026 20:54+0000">2026-09-06</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Sun, Sep 6, 2026 21:15+0000">2026-09-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
