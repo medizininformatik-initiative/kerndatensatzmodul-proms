@@ -662,14 +662,24 @@ jobs:
           for feed in package-feed.xml publication-feed.xml; do
             [[ -s "site/${feed}" ]] && continue
             title="MII PRO Module — ${feed%%-feed.xml} feed"
+            # The publisher's feed updater (PublicationProcess.updateFeed) reads
+            # channel/lastBuildDate AND channel/pubDate unconditionally (NPE if
+            # either is missing) and its text fallback requires an existing
+            # "<item" marker -- measured on dry-run #6 (charAt(-2) crash). Both
+            # date elements are therefore mandatory in the seed, and the dc:/
+            # fhir: namespaces its generated items use are declared up front.
             printf '%s\n' \
               '<?xml version="1.0" encoding="UTF-8"?>' \
-              '<rss version="2.0"><channel>' \
-              "<title>${title}</title>" \
-              "<link>${PUBLICATION_BASE}</link>" \
-              "<description>${title}</description>" \
-              "<lastBuildDate>${RSS_DATE}</lastBuildDate>" \
-              '</channel></rss>' > "site/${feed}"
+              '<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">' \
+              '  <channel>' \
+              "    <title>${title}</title>" \
+              "    <link>${PUBLICATION_BASE}</link>" \
+              "    <description>${title}</description>" \
+              '    <generator>MII module go-publish bootstrap</generator>' \
+              "    <lastBuildDate>${RSS_DATE}</lastBuildDate>" \
+              "    <pubDate>${RSS_DATE}</pubDate>" \
+              '  </channel>' \
+              '</rss>' > "site/${feed}"
           done
 
           # The non-bootstrap path TESTS for site/package-registry.json but the
