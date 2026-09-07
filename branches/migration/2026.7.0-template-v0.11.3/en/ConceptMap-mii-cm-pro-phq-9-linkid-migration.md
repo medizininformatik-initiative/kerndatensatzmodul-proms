@@ -27,7 +27,7 @@ Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the
   "title" : "MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-07T13:05:14+00:00",
+  "date" : "2026-09-07T13:38:54+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -20,7 +20,7 @@ The PRO Library is the module's structured collection of Patient-Reported Outcom
 | [PROMIS-29](promis-29.md) | Multi-domain HRQoL profile | 29 | en (de: CPCOR) | Domain raw + T-scores | usage request via[CPCOR](promis.md) |
 | [PROMIS-16](promis-16.md) | Ultra-short HRQoL profile | 16 | en (de: CPCOR) | data capture only; PROPr planned as CQL | usage request via CPCOR |
 | [PROMIS Depression SF 4a](promis-depression.md) | Depression short form | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
-| PROMIS Cognitive Function SF 4a | Cognitive function | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
+| [PROMIS Cognitive Function SF 4a](promis-cognitive-function.md) | Cognitive function | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
 | [EORTC QLQ-C30](eortc-qlq-c30.md) | Oncological quality of life | 30 | en (de: EORTC) | [15 subscales, 0–100](eortc-qlq-c30-scoring.md) | registration (EORTC) |
 | [PRO-CTCAE](pro-ctcae.md) | Symptomatic adverse events (item library) | 124 (library) | en+de (NCI) | Composite grade + ACS (CQL) | free (NCI) |
 | [Oncology Base Screening](proms-onkologisches-basisscreening.md) | PRO-CTCAE oncology subset | 23 | de (NCI) | Composite grade (CQL) | free (NCI) |

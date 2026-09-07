@@ -78,7 +78,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-pro.c
   "title" : "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T13:05:14+00:00",
+  "date" : "2026-09-07T13:38:54+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

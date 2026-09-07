@@ -5080,6 +5080,15 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "promis-cognitive-function.html"
+          }],
+          "nameUrl" : "promis-cognitive-function.html",
+          "title" : "PROMIS Cognitive Function SF 4a",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "eortc-qlq-c30.html"
           }],
           "nameUrl" : "eortc-qlq-c30.html",

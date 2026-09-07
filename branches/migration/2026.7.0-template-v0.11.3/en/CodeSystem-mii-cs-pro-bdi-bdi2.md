@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T13:05:14+00:00",
+  "date" : "2026-09-07T13:38:54+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

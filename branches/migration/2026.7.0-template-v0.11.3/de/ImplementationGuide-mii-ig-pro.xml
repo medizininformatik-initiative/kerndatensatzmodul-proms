@@ -3481,6 +3481,14 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="promis-cognitive-function.html"/>
+          </extension>
+          <nameUrl value="promis-cognitive-function.html"/>
+          <title value="PROMIS Cognitive Function SF 4a"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="eortc-qlq-c30.html"/>
           </extension>
           <nameUrl value="eortc-qlq-c30.html"/>
