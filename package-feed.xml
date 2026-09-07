@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">
+  <channel>
+    <title>MII PRO Module — package feed</title>
+    <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms</link>
+    <description>MII PRO Module — package feed</description>
+    <atom:link href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/package-feed.xml" rel="self" type="application/rss+xml"/>
+    <generator>MII module go-publish bootstrap</generator>
+    <lastBuildDate>Mon, 07 Sep 2026 05:41:03 +0000</lastBuildDate>
+    <pubDate>Mon, 07 Sep 2026 05:41:03 +0000</pubDate>
+  
+    <item>
+      <title>de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3</title>
+      <description>Ballot Release Candidate 2027: Migration auf das MII-KDS-Modul-Template (zweisprachiger IG, ein Seitensatz, TF-KDS-Struktur); alle FHIR-Artefakte unveraendert gegenueber 2026.7.0.</description>
+      <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.rc3/package.tgz</link>
+      <guid isPermaLink="true">https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.rc3/package.tgz</guid>
+      <dc:creator>Medical Informatics Initiative (MII)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Mon, 07 Sep 2026 05:41:03 +0000</pubDate>
+      <fhir:details>Publication run at 06/09/2026 by runner using Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (25 days old) source id Unknown (todo)</fhir:details>
+    </item></channel>
+</rss>

@@ -1,0 +1,24 @@
+{
+  "list" : [{
+    "version" : "current",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/branches/dev/",
+    "status" : "ci-build",
+    "sequence" : "ci-build",
+    "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
+  },
+  {
+    "version" : "2027.0.0-ballot.rc3",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.rc3",
+    "status" : "ballot",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-06",
+    "current" : true,
+    "desc" : "Ballot Release Candidate 2027: Migration auf das MII-KDS-Modul-Template (zweisprachiger IG, ein Seitensatz, TF-KDS-Struktur); alle FHIR-Artefakte unveraendert gegenueber 2026.7.0."
+  }],
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.pros",
+  "canonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro",
+  "title" : "MII Implementation Guide PRO",
+  "category" : "Research",
+  "introduction" : "Medizininformatik Initiative - Modul PROs, PROMs und abgeleitete Metriken"
+}
