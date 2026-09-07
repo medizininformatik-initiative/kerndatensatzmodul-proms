@@ -1,4 +1,4 @@
-# MII CS PRO SSD-12 Answers - MII IG PRO v2027.0.0-ballot.rc1
+# MII CS PRO SSD-12 Answers - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers | *Version*:2027.0.0-ballot.rc2 |
 | Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_CS_PRO_SSD_12_Answers |
 
  
@@ -32,11 +32,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "id" : "mii-cs-pro-ssd-12-answers",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_CS_PRO_SSD_12_Answers",
   "title" : "MII CS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-09-07T14:36:51+00:00",
+  "date" : "2026-09-07T15:01:48+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

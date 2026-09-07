@@ -1,4 +1,4 @@
-# EORTC QLQ-C30 Nausea and Vomiting Score Definition - MII IG PRO v2027.0.0-ballot.rc1
+# EORTC QLQ-C30 Nausea and Vomiting Score Definition - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,9 +12,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.rc1
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.rc2
 
-**ArtifactVersion**: 2027.0.0-ballot.rc1
+**ArtifactVersion**: 2027.0.0-ballot.rc2
 
 **code**: EORTC QLQ-C30 Nausea and Vomiting Score
 
@@ -34,11 +34,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-eortc-qlq-c30-nv",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.rc1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.rc2"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2027.0.0-ballot.rc1"
+    "valueString" : "2027.0.0-ballot.rc2"
   }],
   "code" : {
     "coding" : [{

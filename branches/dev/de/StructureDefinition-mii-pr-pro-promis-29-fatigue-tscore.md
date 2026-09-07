@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Fatigue T-Score - MII IG PRO v2027.0.0-ballot.rc1
+# MII PR PRO PROMIS-29 Fatigue T-Score - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore | *Version*:2027.0.0-ballot.rc2 |
 | Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_29_Fatigue_TScore |
 
  
@@ -86,12 +86,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-fatigue-tscore",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_PRO_PROMIS_29_Fatigue_TScore",
   "title" : "MII PR PRO PROMIS-29 Fatigue T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T14:36:51+00:00",
+  "date" : "2026-09-07T15:01:48+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

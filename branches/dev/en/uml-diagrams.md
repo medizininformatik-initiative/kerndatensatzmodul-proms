@@ -1,4 +1,4 @@
-# UML Diagrams - MII IG PRO v2027.0.0-ballot.rc1
+# UML Diagrams - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)
@@ -17,7 +17,7 @@
 
 The information model consists of four main components that interact to represent the complete lifecycle of Patient-Reported Outcomes:
 
-The complete information model can be viewed in the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg).
+The complete information model can be viewed in the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/images/out/input/images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg).
 
 **Legend**
 

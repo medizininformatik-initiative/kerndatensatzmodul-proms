@@ -1,4 +1,4 @@
-# Home - MII IG PRO v2027.0.0-ballot.rc1
+# Home - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro | *Version*:2027.0.0-ballot.rc2 |
 | Active Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_IG_PRO |
 
 ### Einführung
@@ -18,7 +18,7 @@ Das Modul basiert maßgeblich auf der [FHIR-Structured-Data-Capture-Spezifikatio
 
 | | |
 | :--- | :--- |
-| Version | 2027.0.0-ballot.rc1 (CalVer`YYYY.n.n`) |
+| Version | 2027.0.0-ballot.rc2 (CalVer`YYYY.n.n`) |
 | Status | active |
 | Realm | DE |
 

@@ -1,11 +1,11 @@
-# Metadata Overview - MII IG PRO v2027.0.0-ballot.rc1
+# Metadata Overview - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * **Metadata Overview**
 
 ## Metadata Overview
 
-> **Optional page (0..1).** The KDS module menu lists this page as **optional** — keep it only when your module's profiles carry the metadata characteristics it documents (as, for example, the Base module does). Decide for your module: **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com///blob/main/docs/optional-pages.md) of this repository. A release must not ship with this banner (convention check M9).
+> **Optional page (0..1).** The KDS module menu lists this page as **optional** — keep it only when your module's profiles carry the metadata characteristics it documents (as, for example, the Base module does). Decide for your module: **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md) of this repository. A release must not ship with this banner (convention check M9).
 
 ### Metadata Overview
 
@@ -39,7 +39,7 @@ This guide defines no `CRMIManifestLibrary`, no CRMI artifact-repository operati
 
 #### CRMI metadata declared by this guide
 
-The following CRMI-related metadata is set in [`sushi-config.yaml`](https://github.com///blob/main/sushi-config.yaml) and ends up in the generated `ImplementationGuide` resource.
+The following CRMI-related metadata is set in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/sushi-config.yaml) and ends up in the generated `ImplementationGuide` resource.
 
 | | | | |
 | :--- | :--- | :--- | :--- |
@@ -51,8 +51,8 @@ The following CRMI-related metadata is set in [`sushi-config.yaml`](https://gith
 | [Artifact Version Algorithm](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-versionAlgorithm.html) | Artifact conventions; versioning | `ImplementationGuide.extension`(`semver`) | Declares how versions are compared to determine which is more current. |
 | [Artifact Version Policy](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-versionPolicy.html) | Artifact lifecycle; versioning | `ImplementationGuide.extension`(`package`) | Declares that artifact versions are managed with the package version — a release can bump an artifact's version even when its content did not change. |
 | [Package Source](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-package-source.html) | Version manifest; packaging; distribution | `ImplementationGuide.extension`(packageId, version, uri) | Declares the package in which an artifact is defined, so evaluation environments resolve namespaces and dependencies in the intended scope. |
-| [Resource Approval Date](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-approvalDate.html) | Artifact lifecycle; publishing; governance | `ImplementationGuide.extension`(``) | Records the date on which the publisher officially approved the content for use. |
-| [Resource Effective Period](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-effectivePeriod.html) | Artifact lifecycle; publishing; implementation | `ImplementationGuide.extension`(start ``) | Records the period during which the content is planned to be, or has been, effective. |
+| [Resource Approval Date](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-approvalDate.html) | Artifact lifecycle; publishing; governance | `ImplementationGuide.extension`(`*(not yet set — Gate A / noch nicht gesetzt)*`) | Records the date on which the publisher officially approved the content for use. |
+| [Resource Effective Period](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-effectivePeriod.html) | Artifact lifecycle; publishing; implementation | `ImplementationGuide.extension`(start`2027`) | Records the period during which the content is planned to be, or has been, effective. |
 | [Artifact Author](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-author.html)[Artifact Editor](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-editor.html)[Artifact Reviewer](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-reviewer.html)[Artifact Endorser](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-endorser.html) | Publishing; governance; provenance | `ImplementationGuide.extension` | Records the author, the editor responsible for internal coherence, the reviewers, and the bodies that officially endorse the release. For a KDS module the editor, reviewers and endorsers are the governance bodies of the core-dataset process. |
 
 Not enabled in this scaffold, but prepared as commented blocks in `sushi-config.yaml`:
@@ -60,7 +60,7 @@ Not enabled in this scaffold, but prepared as commented blocks in `sushi-config.
 * [Artifact Related Artifact](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-relatedArtifact.html) — a literature citation for the module.
 * [CQF Expansion Parameters](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-cqf-expansionParameters.html) together with a [CRMI Manifest Parameters](https://hl7.org/fhir/uv/crmi/STU2/en/StructureDefinition-crmi-manifestparameters.html) resource and the `path-expansion-params` / `pin-manifest` parameters.
 
-> [TODO: Enable the blocks your module needs and then update the tables above. If your module also applies the CRMI shareable/publishable profiles to its own StructureDefinitions, CapabilityStatements, CodeSystems and ValueSets — the `kerndatensatz-basis` idiom is a shared `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com///blob/main/input/fsh/rulesets/crmi.fsh) — add the corresponding rows here.]
+> [TODO: Enable the blocks your module needs and then update the tables above. If your module also applies the CRMI shareable/publishable profiles to its own StructureDefinitions, CapabilityStatements, CodeSystems and ValueSets — the `kerndatensatz-basis` idiom is a shared `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/input/fsh/rulesets/crmi.fsh) — add the corresponding rows here.]
 
 ##### CodeSystem supplements
 
@@ -70,7 +70,7 @@ Where a module publishes CodeSystem supplements, note that the CRMI **ShareableC
 
 The human-readable version scheme is described on the [Versioning](version-history.md) page. This section describes how that policy is expressed as CRMI metadata.
 
-The module uses calendar versioning in the SemVer-compatible numeric form `YYYY.MINOR.PATCH[-label]`, currently ``. The calendar year serves as the CRMI `<major>` component; `MINOR` and `PATCH` keep their usual additive and corrective semantics. Stable versions can therefore be compared using the declared `semver` version algorithm. Labels carry pre-release or build information; following CRMI/FHIR convention, no ordering is inferred among labels.
+The module uses calendar versioning in the SemVer-compatible numeric form `YYYY.MINOR.PATCH[-label]`, currently `2027.0.0-ballot.rc2`. The calendar year serves as the CRMI `<major>` component; `MINOR` and `PATCH` keep their usual additive and corrective semantics. Stable versions can therefore be compared using the declared `semver` version algorithm. Labels carry pre-release or build information; following CRMI/FHIR convention, no ordering is inferred among labels.
 
 | | |
 | :--- | :--- |

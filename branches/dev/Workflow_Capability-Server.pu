@@ -1,0 +1,15 @@
+@startuml
+!theme plain
+skinparam backgroundColor white
+
+actor Patient
+participant "Mobile App\n[collectable only]" as App
+participant "Server\n[populatable+calculatable]" as Server
+database "FHIR Store" as Store
+
+Patient -> App : Beantwortet Fragen
+App -> Server : QR ohne Score
+Server -> Server : Lädt QR in\npopulatable Q
+Server -> Server : Berechnet Score
+Server -> Store : Speichert QR\nmit Score +\nObservation
+@enduml

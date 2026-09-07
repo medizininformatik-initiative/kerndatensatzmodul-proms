@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Severity Scale - MII IG PRO v2027.0.0-ballot.rc1
+# MII VS PRO PRO-CTCAE Severity Scale - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity | *Version*:2027.0.0-ballot.rc2 |
 | Active as of 2026-09-07 | *Computable Name*:MII_VS_PRO_PRO_CTCAE_Severity |
 
  
@@ -38,12 +38,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-severity",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_PRO_PRO_CTCAE_Severity",
   "title" : "MII VS PRO PRO-CTCAE Severity Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T14:36:51+00:00",
+  "date" : "2026-09-07T15:01:48+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

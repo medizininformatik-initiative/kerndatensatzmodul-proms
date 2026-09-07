@@ -1,4 +1,4 @@
-# MII EXA PRO DASS-21 Response - MII IG PRO v2027.0.0-ballot.rc1
+# MII EXA PRO DASS-21 Response - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2027.0.0-ballot.rc1
+Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2027.0.0-ballot.rc2
 
 * [LinkID](https://hl7.org/fhir/R4/formats.html#table): mii-exa-pro-dass-dass21-response-01
   * [Text](https://hl7.org/fhir/R4/formats.html#table): 
@@ -137,9 +137,9 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "resourceType" : "QuestionnaireResponse",
   "id" : "mii-exa-pro-dass-dass21-response-01",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc2"]
   },
-  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21|2027.0.0-ballot.rc1",
+  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21|2027.0.0-ballot.rc2",
   "status" : "completed",
   "subject" : {
     "reference" : "Patient/mii-exa-pro-patient"

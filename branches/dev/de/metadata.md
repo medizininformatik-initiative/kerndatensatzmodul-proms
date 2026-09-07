@@ -1,4 +1,4 @@
-# Metadata Overview - MII IG PRO v2027.0.0-ballot.rc1
+# Metadata Overview - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * **Metadata Overview**
@@ -7,7 +7,7 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-> **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als **optional** — behalten Sie sie nur, wenn die Profile Ihres Moduls die hier dokumentierten Metadaten-Charakteristiken aufweisen (wie z. B. das Basis-Modul). Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**, nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com///blob/main/docs/optional-pages.md) dieses Repositories. Ein Release darf dieses Banner nicht enthalten (Konventions-Check M9).
+> **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als **optional** — behalten Sie sie nur, wenn die Profile Ihres Moduls die hier dokumentierten Metadaten-Charakteristiken aufweisen (wie z. B. das Basis-Modul). Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**, nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md) dieses Repositories. Ein Release darf dieses Banner nicht enthalten (Konventions-Check M9).
 
 ### Metadaten-Übersicht
 
@@ -41,7 +41,7 @@ Dieser Leitfaden definiert keine `CRMIManifestLibrary`, keine CRMI-Repository-Op
 
 #### Von diesem Leitfaden deklarierte CRMI-Metadaten
 
-Die folgenden CRMI-Metadaten werden in [`sushi-config.yaml`](https://github.com///blob/main/sushi-config.yaml) gesetzt und landen in der erzeugten `ImplementationGuide`-Ressource.
+Die folgenden CRMI-Metadaten werden in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/sushi-config.yaml) gesetzt und landen in der erzeugten `ImplementationGuide`-Ressource.
 
 | | | | |
 | :--- | :--- | :--- | :--- |
@@ -53,8 +53,8 @@ Die folgenden CRMI-Metadaten werden in [`sushi-config.yaml`](https://github.com/
 | [Artifact Version Algorithm](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-versionAlgorithm.html) | Artefakt-Konventionen; Versionierung | `ImplementationGuide.extension`(`semver`) | Deklariert, wie Versionen verglichen werden, um die aktuellere zu bestimmen. |
 | [Artifact Version Policy](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-versionPolicy.html) | Lebenszyklus; Versionierung | `ImplementationGuide.extension`(`package`) | Deklariert, dass Artefakt-Versionen mit der Paketversion geführt werden — ein Release kann ein Artefakt hochzählen, dessen Inhalt sich nicht geändert hat. |
 | [Package Source](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-package-source.html) | Versions-Manifest; Paketierung; Verteilung | `ImplementationGuide.extension`(packageId, version, uri) | Deklariert das Paket, in dem ein Artefakt definiert ist, damit Auswertungsumgebungen Namensräume und Abhängigkeiten im vorgesehenen Kontext auflösen. |
-| [Resource Approval Date](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-approvalDate.html) | Lebenszyklus; Veröffentlichung; Governance | `ImplementationGuide.extension`(``) | Hält fest, wann der Herausgeber den Inhalt offiziell zur Nutzung freigegeben hat. |
-| [Resource Effective Period](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-effectivePeriod.html) | Lebenszyklus; Veröffentlichung; Implementierung | `ImplementationGuide.extension`(Beginn ``) | Hält fest, für welchen Zeitraum der Inhalt gelten soll oder gegolten hat. |
+| [Resource Approval Date](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-approvalDate.html) | Lebenszyklus; Veröffentlichung; Governance | `ImplementationGuide.extension`(`*(not yet set — Gate A / noch nicht gesetzt)*`) | Hält fest, wann der Herausgeber den Inhalt offiziell zur Nutzung freigegeben hat. |
+| [Resource Effective Period](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-effectivePeriod.html) | Lebenszyklus; Veröffentlichung; Implementierung | `ImplementationGuide.extension`(Beginn`2027`) | Hält fest, für welchen Zeitraum der Inhalt gelten soll oder gegolten hat. |
 | [Artifact Author](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-author.html)[Artifact Editor](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-editor.html)[Artifact Reviewer](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-reviewer.html)[Artifact Endorser](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-endorser.html) | Veröffentlichung; Governance; Provenienz | `ImplementationGuide.extension` | Hält Autorenschaft, die für die innere Stimmigkeit verantwortliche Redaktion, die Reviewer und die offiziell befürwortenden Gremien fest. Bei einem KDS-Modul sind Redaktion, Reviewer und befürwortende Gremien die Governance-Gremien des Kerndatensatz-Prozesses. |
 
 In diesem Gerüst nicht aktiviert, aber als auskommentierte Blöcke in `sushi-config.yaml` vorbereitet:
@@ -62,7 +62,7 @@ In diesem Gerüst nicht aktiviert, aber als auskommentierte Blöcke in `sushi-co
 * [Artifact Related Artifact](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-relatedArtifact.html) — eine Literaturangabe zum Modul.
 * [CQF Expansion Parameters](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-cqf-expansionParameters.html) zusammen mit einer [CRMI-Manifest-Parameters](https://hl7.org/fhir/uv/crmi/STU2/en/StructureDefinition-crmi-manifestparameters.html)-Ressource und den Parametern `path-expansion-params` / `pin-manifest`.
 
-> [TODO: Aktivieren Sie die für Ihr Modul nötigen Blöcke und ziehen Sie die Tabellen oben nach. Wenn Ihr Modul die CRMI-Shareable-/Publishable-Profile zusätzlich auf seine eigenen StructureDefinitions, CapabilityStatements, CodeSysteme und ValueSets anwendet — das Idiom aus `kerndatensatz-basis` ist ein gemeinsames `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com///blob/main/input/fsh/rulesets/crmi.fsh) —, ergänzen Sie die entsprechenden Zeilen.]
+> [TODO: Aktivieren Sie die für Ihr Modul nötigen Blöcke und ziehen Sie die Tabellen oben nach. Wenn Ihr Modul die CRMI-Shareable-/Publishable-Profile zusätzlich auf seine eigenen StructureDefinitions, CapabilityStatements, CodeSysteme und ValueSets anwendet — das Idiom aus `kerndatensatz-basis` ist ein gemeinsames `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/input/fsh/rulesets/crmi.fsh) —, ergänzen Sie die entsprechenden Zeilen.]
 
 ##### CodeSystem-Supplements
 
@@ -72,7 +72,7 @@ Veröffentlicht ein Modul CodeSystem-Supplements, ist zu beachten: Das CRMI-Prof
 
 Das menschenlesbare Versionsschema beschreibt die Seite [Versionierung](version-history.md). Dieser Abschnitt beschreibt, wie diese Politik als CRMI-Metadaten ausgedrückt wird.
 
-Das Modul verwendet die Kalender-Versionierung in der SemVer-kompatiblen numerischen Form `JJJJ.MINOR.PATCH[-label]`, derzeit ``. Das Kalenderjahr dient als CRMI-`<major>`-Komponente; `MINOR` und `PATCH` behalten ihre übliche additive bzw. korrigierende Bedeutung. Stabile Versionen lassen sich damit über den deklarierten Versionsalgorithmus `semver` vergleichen. Labels tragen Vorab- oder Build-Informationen; gemäß CRMI-/FHIR-Konvention wird zwischen Labels keine Reihenfolge abgeleitet.
+Das Modul verwendet die Kalender-Versionierung in der SemVer-kompatiblen numerischen Form `JJJJ.MINOR.PATCH[-label]`, derzeit `2027.0.0-ballot.rc2`. Das Kalenderjahr dient als CRMI-`<major>`-Komponente; `MINOR` und `PATCH` behalten ihre übliche additive bzw. korrigierende Bedeutung. Stabile Versionen lassen sich damit über den deklarierten Versionsalgorithmus `semver` vergleichen. Labels tragen Vorab- oder Build-Informationen; gemäß CRMI-/FHIR-Konvention wird zwischen Labels keine Reihenfolge abgeleitet.
 
 | | |
 | :--- | :--- |

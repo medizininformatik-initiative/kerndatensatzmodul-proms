@@ -1,4 +1,4 @@
-# Guidance - MII IG PRO v2027.0.0-ballot.rc1
+# Guidance - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * **Guidance**
@@ -9,7 +9,7 @@ Dieser Abschnitt bündelt die fachlichen Hinweise zur Umsetzung und Nutzung des 
 
 ### Allgemeine Umsetzungshinweise
 
-* **[Datensätze und Beschreibungen](logical-models.md)** — die Datenelemente des Moduls, beschrieben als logische Modelle. (Dieser Eintrag teilt sein Ziel mit **Artefakte → Logische Modelle**; keiner der Anker der Artefakt-Übersicht ist als Linkziel nutzbar — siehe [`docs/page-structure.md`](https://github.com///blob/main/docs/page-structure.md) in diesem Repository.)
+* **[Datensätze und Beschreibungen](logical-models.md)** — die Datenelemente des Moduls, beschrieben als logische Modelle. (Dieser Eintrag teilt sein Ziel mit **Artefakte → Logische Modelle**; keiner der Anker der Artefakt-Übersicht ist als Linkziel nutzbar — siehe [`docs/page-structure.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/page-structure.md) in diesem Repository.)
 * **[UML-Diagramme](uml-diagrams.md)** — visuelle Darstellung der Datenmodelle und ihrer Beziehungen.
 
 ### Zielgruppenspezifische Hinweise

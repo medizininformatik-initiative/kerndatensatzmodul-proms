@@ -1,4 +1,4 @@
-# MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0) - MII IG PRO v2027.0.0-ballot.rc1
+# MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0) - MII IG PRO v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration | *Version*:2027.0.0-ballot.rc2 |
 | Active as of 2026-09-07 | *Computable Name*: |
 
  
@@ -23,11 +23,11 @@ Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the
   "resourceType" : "ConceptMap",
   "id" : "mii-cm-pro-phq-9-linkid-migration",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "title" : "MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-07T14:36:51+00:00",
+  "date" : "2026-09-07T15:01:48+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
