@@ -353,34 +353,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#zielsetzung" id="markdown-toc-zielsetzung">Zielsetzung</a></li>
-  <li><a href="#umfang-der-spezifikation" id="markdown-toc-umfang-der-spezifikation">Umfang der Spezifikation</a></li>
-  <li><a href="#technische-grundlagen" id="markdown-toc-technische-grundlagen">Technische Grundlagen</a></li>
-  <li><a href="#impressum" id="markdown-toc-impressum">Impressum</a></li>
-  <li><a href="#ansprechpartner" id="markdown-toc-ansprechpartner">Ansprechpartner</a></li>
-  <li><a href="#autoren-in-alphabetischer-reihenfolge" id="markdown-toc-autoren-in-alphabetischer-reihenfolge">Autoren (in alphabetischer Reihenfolge)</a></li>
-  <li><a href="#copyright-hinweis-nutzungshinweise" id="markdown-toc-copyright-hinweis-nutzungshinweise">Copyright-Hinweis, Nutzungshinweise</a></li>
-  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+  <li><a href="#einführung" id="markdown-toc-einführung">Einführung</a></li>
+  <li><a href="#umfang" id="markdown-toc-umfang">Umfang</a></li>
+  <li><a href="#zielgruppen" id="markdown-toc-zielgruppen">Zielgruppen</a></li>
+  <li><a href="#inhalte" id="markdown-toc-inhalte">Inhalte</a></li>
+  <li><a href="#autorinnen-autoren-und-kontakt" id="markdown-toc-autorinnen-autoren-und-kontakt">Autorinnen, Autoren und Kontakt</a></li>
 </ul>
 
 </div>
-<p>Die vorliegende Spezifikation des Moduls PROs, PROMs und abgeleitete Metriken beschreibt die FHIR-Repräsentation des Kerndatensatzmoduls für Patient-Reported Outcomes (PROs) der Medizininformatik-Initiative.</p>
+<!-- markdownlint-disable MD041 -->
+
+<h3 id="einführung">Einführung</h3>
+
+<p>Diese Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls <strong>PROs, PROMs und abgeleitete Metriken</strong> der Medizininformatik-Initiative (MII). Sie standardisiert Erhebung, Scoring und Sekundärnutzung patientenberichteter Gesundheitsdaten für das deutsche Gesundheitswesen und ermöglicht standortübergreifende Vergleichbarkeit von PRO-Daten durch einheitliche FHIR-basierte Implementierungen.</p>
+
+<p>Das Modul basiert maßgeblich auf der <a href="https://build.fhir.org/ig/HL7/sdc/">FHIR-Structured-Data-Capture-Spezifikation (SDC)</a> und deckt den vollständigen Workflow <strong>Questionnaire → QuestionnaireResponse → Score-Observation</strong> ab — von validierten Instrumentendefinitionen über die Erfassung bis zu berechneten, rückverfolgbaren Scores.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Veröffentlichung</th>
+      <th>Publikation</th>
       <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Datum</td>
-      <td>07.07.2026</td>
-    </tr>
-    <tr>
       <td>Version</td>
-      <td>2026.5.2</td>
+      <td>2027.0.0-ballot (CalVer <code class="language-plaintext highlighter-rouge">YYYY.n.n</code>)</td>
     </tr>
     <tr>
       <td>Status</td>
@@ -393,84 +392,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="zielsetzung">Zielsetzung</h3>
+<h3 id="umfang">Umfang</h3>
 
-<p>Das MII PRO-Modul standardisiert die Erfassung und Auswertung patientenberichteter Gesundheitsdaten für das deutsche Gesundheitswesen. Es ermöglicht die standortübergreifende Vergleichbarkeit von PRO-Daten durch einheitliche FHIR-basierte Implementierungen.</p>
+<p>Die <a href="pro-library.html">PRO-Bibliothek</a> umfasst derzeit <strong>mehr als zwanzig Instrumente</strong> — von der PHQ-Familie, EQ-5D-5L, den PROMIS-Profilen und dem EORTC QLQ-C30 über PRO-CTCAE, MIDOS2 und WHODAS 2.0 bis zum PSS-Screening-Set des PCOR-MII. Jedes Instrument folgt derselben Architektur: kanonische Item-Identitäten (<a href="id-systematics.html">ID-Systematik</a>), Antwortskalen mit ordinalen Gewichten, maschinenlesbare <a href="questionnaire-capabilities.html">Capabilities</a> und eine Score-Pipeline entlang der <a href="scoring.html">drei Scoring-Kanäle</a>.</p>
 
-<h3 id="umfang-der-spezifikation">Umfang der Spezifikation</h3>
+<p>Vier Instrumente (HADS, EPDS, CES-D, K6) sind aus Lizenzgründen als <a href="minimal-reference-questionnaires.html">Metadata-only-Referenzen</a> abgebildet.</p>
 
-<h4 id="produktionsreife-instrumente">Produktionsreife Instrumente</h4>
-<ul>
-  <li><strong>PHQ-9</strong>: Depression-Screening mit automatischer Score-Berechnung</li>
-  <li><strong>EQ-5D-5L</strong>: Lebensqualität mit Index-, VAS- und Profil-Scores</li>
-</ul>
+<h3 id="zielgruppen">Zielgruppen</h3>
 
-<h4 id="technische-vorschau">Technische Vorschau</h4>
-<ul>
-  <li><strong>PROMIS-29</strong>: Multi-Domain Gesundheitsstatus (7 Domänen)</li>
-  <li><strong>EORTC QLQ-C30</strong>: Onkologische Lebensqualität</li>
-  <li><strong>DASS-21</strong>: Depression, Angst und Stress</li>
-  <li><strong>BDI-II</strong>: Beck Depression Inventory (Lizenz-Referenz)</li>
-</ul>
+<div class="ig-highlight ig-highlight-blue">
+<h5>Softwarehersteller und Implementierende</h5>
+<p>Formular-Renderer, KIS-Integrationen, ePRO-Apps, ETL-Strecken und Scoring-Services.<br />
+→ Einstieg über die <a href="implementer-guidance.html">Hinweise für Implementierende</a> — fünf Regeln, die jede Implementierung einhalten muss.</p>
+</div>
 
-<h4 id="kernfunktionalität">Kernfunktionalität</h4>
-<ul>
-  <li><strong>SDC-basierte Fragebögen</strong> mit erweiterten Rendering- und Berechnungsfähigkeiten</li>
-  <li><strong>Capability-Architektur</strong> für flexible Nutzungsszenarien</li>
-  <li><strong>Domain-basiertes Scoring</strong> zur Harmonisierung verschiedener Instrumente</li>
-  <li><strong>MII-Terminologie</strong> für zuverlässige Score-Berechnungen</li>
-</ul>
+<div class="ig-highlight ig-highlight-green">
+<h5>Studien und Forschende</h5>
+<p>Instrumentenauswahl, Lizenzstufen und was die erhobenen Daten nachgelagert bedeuten.<br />
+→ Einstieg über die <a href="researcher-guidance.html">Hinweise für Forschende</a>.</p>
+</div>
 
-<h3 id="technische-grundlagen">Technische Grundlagen</h3>
-
-<p>Die Implementierung basiert auf:</p>
-<ul>
-  <li>FHIR R4 (4.0.1)</li>
-  <li>SDC (Structured Data Capture) 3.0.0</li>
-  <li>HL7 Terminology 6.4.0</li>
-</ul>
-
-<h3 id="impressum">Impressum</h3>
-
-<p>Dieser Leitfaden ist im Rahmen der Medizininformatik Initiative erstellt worden und unterliegt per Governance Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..</p>
-
-<h3 id="ansprechpartner">Ansprechpartner</h3>
+<h3 id="inhalte">Inhalte</h3>
 
 <ul>
-  <li>Thomas Debertshäuser, Berlin Institute of Health (Charité)</li>
-  <li>Mathias Rose, Charité - Universitätsmedizin Berlin</li>
-  <li>Fabian Praßer, Berlin Institute of Health (Charité)</li>
-  <li>Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.</li>
-  <li>Franziska Klepka, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.</li>
+  <li><strong><a href="guidance.html">Leitfaden</a></strong> — Einstieg, Anwendungsfälle, ID-Systematik, Capabilities und die 2027er Konzepte (<a href="cat.html">CAT</a>, <a href="national-questionnaire-server.html">Nationaler Fragebogenserver</a>, <a href="derived-metrics.html">abgeleitete Metriken</a>).</li>
+  <li><strong><a href="pro-library.html">PRO-Bibliothek</a></strong> — alle Instrumente mit Fokus, Items, Sprache, Scoring und Lizenz auf einen Blick.</li>
+  <li><strong><a href="scoring.html">Scoring</a></strong> — clientseitig, serverseitig (CQL) und extern vorberechnet, einschließlich der Medizinprodukte-Abgrenzung.</li>
+  <li><strong>Konformität</strong> — die KDS-weiten Regeln (Anforderungssprache, Must Support, fehlende Daten) pflegt zentral das <a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Meta-Modul</a>; die modulspezifischen Überlegungen zu <a href="security-and-privacy.html">Sicherheit und Datenschutz</a> sind Teil dieses Leitfadens.</li>
+  <li><strong><a href="profiles.html">Profile</a></strong> und die weiteren <a href="artifacts.html">Artefakte</a> — die normativen FHIR-Ressourcen.</li>
+  <li><strong><a href="changes.html">Änderungen</a></strong> — alle Versionen einschließlich der Vorbereitung von 2027.0.0-ballot.</li>
 </ul>
 
-<p>Fragen zu der vorliegenden Publikation können jederzeit unter <a href="https://chat.fhir.org">chat.fhir.org</a> im Stream 'german/mi-initiative' gestellt werden.</p>
-
-<p>Anmerkungen und Kritik werden in Form von Issues im <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues">GitHub-Projekt</a> gern entgegengenommen.</p>
-
-<h3 id="autoren-in-alphabetischer-reihenfolge">Autoren (in alphabetischer Reihenfolge)</h3>
+<h3 id="autorinnen-autoren-und-kontakt">Autorinnen, Autoren und Kontakt</h3>
 
 <ul>
-  <li>Thomas Debertshäuser, Berlin Institute of Health (Charité)</li>
-  <li>Felix Fischer, Charité - Universitätsmedizin Berlin</li>
-  <li>Thimo Hölter, Berlin Institute of Health (Charité)</li>
-  <li>Marcel Susky, Technische Universität Dresden, Forschungsgruppe Digital Health</li>
-  <li>Christian Zilske, Berlin Institute of Health (Charité)</li>
+  <li>Thomas Debertshäuser</li>
+  <li>Mathias Rose</li>
+  <li>Fabian Praßer</li>
+  <li>Karoline Buckow</li>
+  <li>Franziska Klepka</li>
 </ul>
 
-<h3 id="copyright-hinweis-nutzungshinweise">Copyright-Hinweis, Nutzungshinweise</h3>
+<p>Feedback und Fragen: über das <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues">GitHub-Repository</a> oder die MII-Kanäle.</p>
 
-<p>Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin</p>
-
-<p>Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw. Veröffentlichungsansprüche sind nicht beschränkt.</p>
-
-<p>Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation.</p>
-
-<p>Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher).</p>
-
-<h3 id="disclaimer">Disclaimer</h3>
-
-<p>Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses Dokuments auf FHIR Version R4 beruhen, für die Copyright HL7 International gilt.</p>
+<p>Die MII-eigenen FHIR-Strukturen dieses Moduls stehen unter CC0; Instrumententexte Dritter behalten ihre eigenen Lizenzbedingungen — siehe die Lizenzspalte der <a href="pro-library.html">PRO-Bibliothek</a> und das <code class="language-plaintext highlighter-rouge">copyright</code>-Element der jeweiligen Ressource.</p>
 
 
 
@@ -497,7 +462,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Sep 7, 2026 09:06+0000">2026-09-07</span>
+          Erstellt <span title="Mon, Sep 7, 2026 09:30+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

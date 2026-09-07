@@ -353,18 +353,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#objective" id="markdown-toc-objective">Objective</a></li>
-  <li><a href="#scope-of-the-specification" id="markdown-toc-scope-of-the-specification">Scope of the Specification</a></li>
-  <li><a href="#technical-foundations" id="markdown-toc-technical-foundations">Technical Foundations</a></li>
-  <li><a href="#imprint" id="markdown-toc-imprint">Imprint</a></li>
-  <li><a href="#contact" id="markdown-toc-contact">Contact</a></li>
-  <li><a href="#authors-in-alphabetical-order" id="markdown-toc-authors-in-alphabetical-order">Authors (in alphabetical order)</a></li>
-  <li><a href="#copyright-notice-terms-of-use" id="markdown-toc-copyright-notice-terms-of-use">Copyright Notice, Terms of Use</a></li>
-  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+  <li><a href="#target-audience" id="markdown-toc-target-audience">Target audience</a></li>
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#authors-and-contact" id="markdown-toc-authors-and-contact">Authors and contact</a></li>
 </ul>
 
 </div>
-<p>This specification of the PROs, PROMs, and Derived Metrics module describes the FHIR representation of the Patient-Reported Outcomes (PROs) core dataset module of the Medical Informatics Initiative (Medizininformatik-Initiative, MII).</p>
+<!-- markdownlint-disable MD041 -->
+
+<h3 id="introduction">Introduction</h3>
+
+<p>This specification describes the FHIR representation of the Core Dataset (CDS) extension module <strong>PROs, PROMs and Derived Metrics</strong> of the Medical Informatics Initiative (MII). It standardises the collection, scoring and secondary use of patient-reported health data for the German healthcare system, enabling cross-site comparability of PRO data through uniform FHIR-based implementations.</p>
+
+<p>The module is primarily based on the <a href="https://build.fhir.org/ig/HL7/sdc/">FHIR Structured Data Capture (SDC)</a> specification and covers the complete workflow <strong>Questionnaire → QuestionnaireResponse → score Observation</strong> — from validated instrument definitions through capture to computed, traceable scores.</p>
+
+<!-- Version via template variable, never a literal: a hardcoded version table
+     went stale here once already (it said 2026.2.0 while 2026.7.0 shipped). -->
 
 <table>
   <thead>
@@ -375,12 +381,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td>Date</td>
-      <td>30.03.2026</td>
-    </tr>
-    <tr>
       <td>Version</td>
-      <td>2026.2.0</td>
+      <td>2027.0.0-ballot (CalVer <code class="language-plaintext highlighter-rouge">YYYY.n.n</code>)</td>
     </tr>
     <tr>
       <td>Status</td>
@@ -393,84 +395,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="objective">Objective</h3>
+<h3 id="scope">Scope</h3>
 
-<p>The MII PRO module standardizes the collection and analysis of patient-reported health data for the German healthcare system. It enables cross-site comparability of PRO data through uniform FHIR-based implementations.</p>
+<p>The <a href="pro-library.html">PRO Library</a> currently carries <strong>more than twenty instruments</strong> — from the PHQ family, EQ-5D-5L, PROMIS profiles and EORTC QLQ-C30 through PRO-CTCAE, MIDOS2 and WHODAS 2.0 to the PCOR-MII PSS screening set. Every instrument follows the same architecture: canonical item identities (<a href="id-systematics.html">ID systematics</a>), answer scales with ordinal weights, machine-readable <a href="questionnaire-capabilities.html">capabilities</a>, and a score pipeline along the <a href="scoring.html">three scoring channels</a>.</p>
 
-<h3 id="scope-of-the-specification">Scope of the Specification</h3>
+<p>Four instruments (HADS, EPDS, CES-D, K6) are represented as <a href="minimal-reference-questionnaires.html">metadata-only references</a> for licensing reasons.</p>
 
-<h4 id="production-ready-instruments">Production-Ready Instruments</h4>
-<ul>
-  <li><strong>PHQ-9</strong>: Depression screening with automatic score calculation</li>
-  <li><strong>EQ-5D-5L</strong>: Quality of life with index, VAS, and profile scores</li>
-</ul>
+<h3 id="target-audience">Target audience</h3>
 
-<h4 id="technical-preview">Technical Preview</h4>
-<ul>
-  <li><strong>PROMIS-29</strong>: Multi-domain health status (7 domains)</li>
-  <li><strong>EORTC QLQ-C30</strong>: Oncological quality of life</li>
-  <li><strong>DASS-21</strong>: Depression, Anxiety, and Stress</li>
-  <li><strong>BDI-II</strong>: Beck Depression Inventory (license reference)</li>
-</ul>
+<div class="ig-highlight ig-highlight-blue">
+<h5>Software vendors and implementers</h5>
+<p>Form renderers, EHR/KIS integrations, ePRO apps, ETL pipelines and scoring services.<br />
+→ start with the <a href="implementer-guidance.html">Implementer Guidance</a> — five rules every implementation must respect.</p>
+</div>
 
-<h4 id="core-functionality">Core Functionality</h4>
-<ul>
-  <li><strong>SDC-based questionnaires</strong> with advanced rendering and calculation capabilities</li>
-  <li><strong>Capability architecture</strong> for flexible use case scenarios</li>
-  <li><strong>Domain-based scoring</strong> for harmonization across instruments</li>
-  <li><strong>MII terminology</strong> for reliable score calculations</li>
-</ul>
+<div class="ig-highlight ig-highlight-green">
+<h5>Studies and researchers</h5>
+<p>Instrument selection, licensing tiers, and what the collected data means downstream.<br />
+→ start with the <a href="researcher-guidance.html">Researcher Guidance</a>.</p>
+</div>
 
-<h3 id="technical-foundations">Technical Foundations</h3>
-
-<p>The implementation is based on:</p>
-<ul>
-  <li>FHIR R4 (4.0.1)</li>
-  <li>SDC (Structured Data Capture) 3.0.0</li>
-  <li>HL7 Terminology 6.4.0</li>
-</ul>
-
-<h3 id="imprint">Imprint</h3>
-
-<p>This guide was created within the Medical Informatics Initiative and is subject to the coordination procedure of the Interoperability Forum and the Technical Committees of HL7 Germany e.V. per the governance process.</p>
-
-<h3 id="contact">Contact</h3>
+<h3 id="contents">Contents</h3>
 
 <ul>
-  <li>Thomas Debertshaeuser, Berlin Institute of Health (Charite)</li>
-  <li>Mathias Rose, Charite - Universitaetsmedizin Berlin</li>
-  <li>Fabian Prasser, Berlin Institute of Health (Charite)</li>
-  <li>Karoline Buckow, TMF – Technology and Methodology Platform for Networked Medical Research e.V.</li>
-  <li>Franziska Klepka, TMF – Technology and Methodology Platform for Networked Medical Research e.V.</li>
+  <li><strong><a href="guidance.html">Guidance</a></strong> — getting started, use cases, ID systematics, capabilities, and the 2027 concepts (<a href="cat.html">CAT</a>, <a href="national-questionnaire-server.html">national questionnaire server</a>, <a href="derived-metrics.html">derived metrics</a>).</li>
+  <li><strong><a href="pro-library.html">PRO Library</a></strong> — all instruments with focus, items, language, scoring and licence at a glance.</li>
+  <li><strong><a href="scoring.html">Scoring</a></strong> — client-side, server-side (CQL) and externally pre-computed scores, including the medical-device boundary.</li>
+  <li><strong>Conformance</strong> — the KDS-wide rules (requirements language, Must Support, missing data) are maintained centrally by the <a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Meta module</a>; module-specific <a href="security-and-privacy.html">Security and Privacy</a> considerations are part of this guide.</li>
+  <li><strong><a href="profiles.html">Profiles</a></strong> and the further <a href="artifacts.html">artifacts</a> — the normative FHIR resources.</li>
+  <li><strong><a href="changes.html">Changelog</a></strong> — all versions including the 2027.0.0-ballot preparation.</li>
 </ul>
 
-<p>Questions about this publication can be posted at any time on <a href="https://chat.fhir.org">chat.fhir.org</a> in the 'german/mi-initiative' stream.</p>
-
-<p>Comments and feedback are welcome as issues in the <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues">GitHub project</a>.</p>
-
-<h3 id="authors-in-alphabetical-order">Authors (in alphabetical order)</h3>
+<h3 id="authors-and-contact">Authors and contact</h3>
 
 <ul>
-  <li>Thomas Debertshaeuser, Berlin Institute of Health (Charite)</li>
-  <li>Felix Fischer, Charite - Universitaetsmedizin Berlin</li>
-  <li>Thimo Hoelter, Berlin Institute of Health (Charite)</li>
-  <li>Marcel Susky, Technical University of Dresden, Digital Health Research Group</li>
-  <li>Christian Zilske, Berlin Institute of Health (Charite)</li>
+  <li>Thomas Debertshäuser</li>
+  <li>Mathias Rose</li>
+  <li>Fabian Praßer</li>
+  <li>Karoline Buckow</li>
+  <li>Franziska Klepka</li>
 </ul>
 
-<h3 id="copyright-notice-terms-of-use">Copyright Notice, Terms of Use</h3>
+<p>Feedback and questions: via the <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues">GitHub repository</a> or the MII channels.</p>
 
-<p>Copyright 2019+: TMF e. V., Charlottenstrasse 42, 10117 Berlin</p>
-
-<p>The content of this specification is public. There are no restrictions on reuse or publication rights.</p>
-
-<p>For the usage rights of the underlying FHIR technology, see the FHIR base specification.</p>
-
-<p>Some code systems used are published and maintained by other organizations. The copyright of the respective publishers applies.</p>
-
-<h3 id="disclaimer">Disclaimer</h3>
-
-<p>The content of this document is public. Please note that parts of this document are based on FHIR version R4, for which the copyright of HL7 International applies.</p>
+<p>The MII-authored FHIR structures of this module are published under CC0; third-party instrument texts keep their own licence terms — see the licence column of the <a href="pro-library.html">PRO Library</a> and the <code class="language-plaintext highlighter-rouge">copyright</code> element of each resource.</p>
 
 
 
@@ -497,7 +465,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Sep 7, 2026 09:06+0000">2026-09-07</span>
+          Generated <span title="Mon, Sep 7, 2026 09:30+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

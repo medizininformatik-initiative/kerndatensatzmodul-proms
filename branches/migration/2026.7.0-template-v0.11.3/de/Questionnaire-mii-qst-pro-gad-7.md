@@ -73,7 +73,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO GAD-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T09:06:36+00:00",
+  "date" : "2026-09-07T09:30:32+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -42,7 +42,7 @@ Binary presence/absence response scale for PRO-CTCAE items
   "title" : "MII VS PRO PRO-CTCAE Presence Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T09:06:36+00:00",
+  "date" : "2026-09-07T09:30:32+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
