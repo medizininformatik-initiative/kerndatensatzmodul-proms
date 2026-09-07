@@ -1,6 +1,6 @@
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
-### 2027.0.0-ballot.rc1 — in Vorbereitung
+### 2027.0.0-ballot.rc2 — in Vorbereitung
 
 Die Ballotierungsfassung 2027 bringt den **Umzug auf das MII-KDS-Modul-Template** (v0.11.3) — dieselbe Werkzeugkette wie die übrigen KDS-Module. Für Implementierende ändert sich an den FHIR-Artefakten **nichts**: alle 214 Ressourcen, ihre IDs, Canonicals und Versionen bleiben unverändert (nachgemessen, 0 Regressionen).
 
