@@ -1,75 +1,57 @@
-This specification of the PROs, PROMs, and Derived Metrics module describes the FHIR representation of the Patient-Reported Outcomes (PROs) core dataset module of the Medical Informatics Initiative (Medizininformatik-Initiative, MII).
+<!-- markdownlint-disable MD041 -->
 
-| Publication |   |
-|---------|---|
-| Date    | 30.03.2026 |
-| Version | 2026.2.0   |
-| Status  | active     |
-| Realm   | DE         |
+### Introduction
 
-### Objective
+This specification describes the FHIR representation of the Core Dataset (CDS) extension module **PROs, PROMs and Derived Metrics** of the Medical Informatics Initiative (MII). It standardises the collection, scoring and secondary use of patient-reported health data for the German healthcare system, enabling cross-site comparability of PRO data through uniform FHIR-based implementations.
 
-The MII PRO module standardizes the collection and analysis of patient-reported health data for the German healthcare system. It enables cross-site comparability of PRO data through uniform FHIR-based implementations.
+The module is primarily based on the [FHIR Structured Data Capture (SDC)](https://build.fhir.org/ig/HL7/sdc/) specification and covers the complete workflow **Questionnaire → QuestionnaireResponse → score Observation** — from validated instrument definitions through capture to computed, traceable scores.
 
-### Scope of the Specification
+<!-- Version via template variable, never a literal: a hardcoded version table
+     went stale here once already (it said 2026.2.0 while 2026.7.0 shipped). -->
 
-#### Production-Ready Instruments
-- **PHQ-9**: Depression screening with automatic score calculation
-- **EQ-5D-5L**: Quality of life with index, VAS, and profile scores
+| Publication |               |
+|-------------|---------------|
+| Version     | {{site.data.fhir.igVer}} (CalVer `YYYY.n.n`) |
+| Status      | active        |
+| Realm       | DE            |
 
-#### Technical Preview
-- **PROMIS-29**: Multi-domain health status (7 domains)
-- **EORTC QLQ-C30**: Oncological quality of life
-- **DASS-21**: Depression, Anxiety, and Stress
-- **BDI-II**: Beck Depression Inventory (license reference)
+### Scope
 
-#### Core Functionality
-- **SDC-based questionnaires** with advanced rendering and calculation capabilities
-- **Capability architecture** for flexible use case scenarios
-- **Domain-based scoring** for harmonization across instruments
-- **MII terminology** for reliable score calculations
+The [PRO Library](pro-library.html) currently carries **more than twenty instruments** — from the PHQ family, EQ-5D-5L, PROMIS profiles and EORTC QLQ-C30 through PRO-CTCAE, MIDOS2 and WHODAS 2.0 to the PCOR-MII PSS screening set. Every instrument follows the same architecture: canonical item identities ([ID systematics](id-systematics.html)), answer scales with ordinal weights, machine-readable [capabilities](questionnaire-capabilities.html), and a score pipeline along the [three scoring channels](scoring.html).
 
-### Technical Foundations
+Four instruments (HADS, EPDS, CES-D, K6) are represented as [metadata-only references](minimal-reference-questionnaires.html) for licensing reasons.
 
-The implementation is based on:
-- FHIR R4 (4.0.1)
-- SDC (Structured Data Capture) 3.0.0
-- HL7 Terminology 6.4.0
+### Target audience
 
-### Imprint
+<div class="ig-highlight ig-highlight-blue">
+<h5>Software vendors and implementers</h5>
+<p>Form renderers, EHR/KIS integrations, ePRO apps, ETL pipelines and scoring services.<br/>
+→ start with the <a href="implementer-guidance.html">Implementer Guidance</a> — five rules every implementation must respect.</p>
+</div>
 
-This guide was created within the Medical Informatics Initiative and is subject to the coordination procedure of the Interoperability Forum and the Technical Committees of HL7 Germany e.V. per the governance process.
+<div class="ig-highlight ig-highlight-green">
+<h5>Studies and researchers</h5>
+<p>Instrument selection, licensing tiers, and what the collected data means downstream.<br/>
+→ start with the <a href="researcher-guidance.html">Researcher Guidance</a>.</p>
+</div>
 
-### Contact
+### Contents
 
-* Thomas Debertshaeuser, Berlin Institute of Health (Charite)
-* Mathias Rose, Charite - Universitaetsmedizin Berlin
-* Fabian Prasser, Berlin Institute of Health (Charite)
-* Karoline Buckow, TMF -- Technology and Methodology Platform for Networked Medical Research e.V.
-* Franziska Klepka, TMF -- Technology and Methodology Platform for Networked Medical Research e.V.
+- **[Guidance](guidance.html)** — getting started, use cases, ID systematics, capabilities, and the 2027 concepts ([CAT](cat.html), [national questionnaire server](national-questionnaire-server.html), [derived metrics](derived-metrics.html)).
+- **[PRO Library](pro-library.html)** — all instruments with focus, items, language, scoring and licence at a glance.
+- **[Scoring](scoring.html)** — client-side, server-side (CQL) and externally pre-computed scores, including the medical-device boundary.
+- **Conformance** — the KDS-wide rules (requirements language, Must Support, missing data) are maintained centrally by the [Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance); module-specific [Security and Privacy](security-and-privacy.html) considerations are part of this guide.
+- **[Profiles](profiles.html)** and the further [artifacts](artifacts.html) — the normative FHIR resources.
+- **[Changelog](changes.html)** — all versions including the 2027.0.0-ballot preparation.
 
-Questions about this publication can be posted at any time on [chat.fhir.org](https://chat.fhir.org) in the 'german/mi-initiative' stream.
+### Authors and contact
 
-Comments and feedback are welcome as issues in the [GitHub project](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues).
+* Thomas Debertshäuser
+* Mathias Rose
+* Fabian Praßer
+* Karoline Buckow
+* Franziska Klepka
 
-### Authors (in alphabetical order)
+Feedback and questions: via the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues) or the MII channels.
 
-* Thomas Debertshaeuser, Berlin Institute of Health (Charite)
-* Felix Fischer, Charite - Universitaetsmedizin Berlin
-* Thimo Hoelter, Berlin Institute of Health (Charite)
-* Marcel Susky, Technical University of Dresden, Digital Health Research Group
-* Christian Zilske, Berlin Institute of Health (Charite)
-
-### Copyright Notice, Terms of Use
-
-Copyright 2019+: TMF e. V., Charlottenstrasse 42, 10117 Berlin
-
-The content of this specification is public. There are no restrictions on reuse or publication rights.
-
-For the usage rights of the underlying FHIR technology, see the FHIR base specification.
-
-Some code systems used are published and maintained by other organizations. The copyright of the respective publishers applies.
-
-### Disclaimer
-
-The content of this document is public. Please note that parts of this document are based on FHIR version R4, for which the copyright of HL7 International applies.
+The MII-authored FHIR structures of this module are published under CC0; third-party instrument texts keep their own licence terms — see the licence column of the [PRO Library](pro-library.html) and the `copyright` element of each resource.
