@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc1"
     ]
   },
   "subject": {
@@ -337,7 +337,7 @@
       "linkId": "proctcae-54"
     }
   ],
-  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening|2027.0.0-ballot",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening|2027.0.0-ballot.rc1",
   "status": "completed",
   "authored": "2026-06-01"
 }

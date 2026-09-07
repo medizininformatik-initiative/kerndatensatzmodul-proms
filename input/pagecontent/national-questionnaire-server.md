@@ -26,6 +26,48 @@ Clients resolve by **canonical URL and version** (`Questionnaire?url=…&version
 4. **The CAT perspective.** [Computer-adaptive testing](cat.html) needs a server holding item banks and IRT parameters and answering `$next-question` — the same infrastructure, one capability further.
 5. **Deployment transparency.** Version-resolved retrieval makes "which version is in the field" an answerable question — the precondition for managed linkId migrations like the PHQ-9 one.
 
+### Architecture sketch — and a working prototype pair
+
+The concept is not paper-only: two BIH-CEI prototype repositories already implement the layer cut end to end for PHQ-9 — [`pro-library`](https://github.com/BIH-CEI/pro-library) (the content layer) and [`fhir-sdc-questionnaire-service`](https://github.com/BIH-CEI/fhir-sdc-questionnaire-service) (the service layer, an SDC **Form Manager**).
+
+```mermaid
+flowchart TB
+    subgraph N["Normative layer — this module"]
+        IG["MII PRO IG + versioned package<br/>(reproducible snapshot)"]
+    end
+    subgraph C["Content layer — prototype: pro-library"]
+        LIB["FSH-authored artefacts<br/>Questionnaires · ValueSets · CodeSystems · CQL"]
+        MAN["CRMI manifest<br/>(Library, type asset-collection —<br/>pins every artefact version)"]
+        LIB --- MAN
+    end
+    subgraph S["Service layer — prototype: fhir-sdc-questionnaire-service"]
+        FM["SDC Form Manager container<br/>HAPI FHIR + SDC IG + MII PRO IG baked in<br/>$package · $populate · $extract · $localize<br/>validated against the SDC Form Manager CapabilityStatement"]
+    end
+    subgraph K["Clients"]
+        R["Form renderer / ePRO app"]
+        E["EHR / KIS"]
+        SC["Scoring service<br/>(channel B, Library/$evaluate)"]
+    end
+    IG -- "derivedFrom, versioned canonicals (…|version)" --> LIB
+    MAN -- "release = pinned manifest" --> FM
+    R -- "$package (form + dependencies)" --> FM
+    E -- "resolve by canonical|version" --> FM
+    FM -- "Libraries co-located" --> SC
+```
+
+The division of labour is exactly the one argued above: the **package stays the reproducible snapshot** (normative layer), the **content repository** carries the artefacts with a CRMI asset-collection manifest as the release primitive, and the **Form Manager** is the runtime endpoint — with the SDC operations a renderer actually calls. The prototypes deliberately claim no normative authority; they build the infrastructure a future authority would operate.
+
+### Why a terminology server does not fill this role
+
+The terminology server is the analogy for the **operating model** (central, governed, nationally reachable) — not for the function. A FHIR terminology server serves CodeSystems and ValueSets and answers `$expand` and `$validate-code`; that is where its contract ends. What the questionnaire server needs is precisely what a terminology server does not do:
+
+- it does not serve **Questionnaires** (nor ObservationDefinitions, ConceptMaps, CQL Libraries) as versioned, discoverable artefacts,
+- it does not implement the **SDC operations** — no `$package`, no `$populate`, no `$extract`, no `$next-question`,
+- it has no notion of **capability- or licence-gated** artefact access,
+- and it is no home for **`Library/$evaluate`** scoring.
+
+The two servers are complements, not alternatives: the Form Manager resolves its answer-scale ValueSets *against* the terminology server, and both sit in the same trust and operations model.
+
 ### Open decisions
 
 - **Operator and governance:** who runs it (the terminology-server operating model is the obvious template), who publishes to it (release pipeline of this module as the only write path), and how licence holders grant access.
