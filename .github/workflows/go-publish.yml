@@ -65,8 +65,8 @@
 #   on the first push) and the CI preview advertised as `ci-build` in
 #   publication-request.json has been deployed.
 #
-# Placeholders to replace when creating a module: {{MODULE_SLUG}},
-#   {{GITHUB_ORG}}, {{REPO_NAME}} (see sushi-config.yaml for the full table).
+# Placeholders to replace when creating a module: pro,
+#   medizininformatik-initiative, kerndatensatzmodul-proms (see sushi-config.yaml for the full table).
 # =============================================================================
 name: Publish release with IG Publisher
 
@@ -99,11 +99,13 @@ concurrency:
 env:
   # The module's FHIR canonical (MII convention — for example,
   # kerndatensatz-basis uses .../fhir/modul-base).
-  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/modul-{{MODULE_SLUG}}"
+  # MODULE ADAPTATION (PRO): the source canonical carries /ext/ (extension
+  # module namespace) — the template pattern without it would fail validation.
+  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro"
   # The publication website: GitHub Pages under the creating org. Deliberately
   # different from the canonical ("canonical-mismatch").
-  EXPECTED_PUBLICATION_BASE: "https://{{GITHUB_ORG}}.github.io/{{REPO_NAME}}"
-  EXPECTED_PACKAGE_ID: "de.medizininformatikinitiative.kerndatensatz.{{MODULE_SLUG}}"
+  EXPECTED_PUBLICATION_BASE: "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms"
+  EXPECTED_PACKAGE_ID: "de.medizininformatikinitiative.kerndatensatz.pros"
   # Pinned toolchain (bumped by the scheduled dependency check, never floating).
   # Must stay identical to ig-publisher.yml and module-release.yml —
   # scripts/toolchain-pins.test.mjs fails the build if they drift apart.
