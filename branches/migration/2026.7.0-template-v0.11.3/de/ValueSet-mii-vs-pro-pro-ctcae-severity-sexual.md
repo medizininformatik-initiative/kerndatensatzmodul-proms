@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Severity Scale (Sexual Function) - MII IG PRO v2027.0.0-ballot
+# MII VS PRO PRO-CTCAE Severity Scale (Sexual Function) - MII IG PRO v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-sexual | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-sexual | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Severity_Sexual |
 
  
@@ -37,12 +37,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-severity-sexual",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-sexual",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_PRO_PRO_CTCAE_Severity_Sexual",
   "title" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T09:30:32+00:00",
+  "date" : "2026-09-07T13:05:14+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

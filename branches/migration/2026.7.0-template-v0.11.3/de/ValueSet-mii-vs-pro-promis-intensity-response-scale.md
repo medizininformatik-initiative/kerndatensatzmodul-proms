@@ -1,4 +1,4 @@
-# MII VS PRO PROMIS Intensity Response Scale - MII IG PRO v2027.0.0-ballot
+# MII VS PRO PROMIS Intensity Response Scale - MII IG PRO v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_VS_PRO_PROMIS_Intensity_Response_Scale |
 
  
@@ -38,12 +38,12 @@ PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a 
   "id" : "mii-vs-pro-promis-intensity-response-scale",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_PRO_PROMIS_Intensity_Response_Scale",
   "title" : "MII VS PRO PROMIS Intensity Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T09:30:32+00:00",
+  "date" : "2026-09-07T13:05:14+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

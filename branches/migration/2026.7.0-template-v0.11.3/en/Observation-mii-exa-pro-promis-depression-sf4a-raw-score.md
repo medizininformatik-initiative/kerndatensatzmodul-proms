@@ -1,4 +1,4 @@
-# MII EXA PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2027.0.0-ballot
+# MII EXA PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO PROMIS Depression SF 4a Raw Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md) version: 2027.0.0-ballot
+Profile: [MII PR PRO PROMIS Depression SF 4a Raw Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md) version: 2027.0.0-ballot.rc1
 
 **status**: Final
 
@@ -37,7 +37,7 @@ Profile: [MII PR PRO PROMIS Depression SF 4a Raw Score](StructureDefinition-mii-
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-promis-depression-sf4a-raw-score",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2027.0.0-ballot"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2027.0.0-ballot.rc1"]
   },
   "status" : "final",
   "category" : [{

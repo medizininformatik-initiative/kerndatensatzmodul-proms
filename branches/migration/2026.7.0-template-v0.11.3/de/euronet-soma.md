@@ -1,4 +1,4 @@
-# EURONET-SOMA - MII IG PRO v2027.0.0-ballot
+# EURONET-SOMA - MII IG PRO v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)

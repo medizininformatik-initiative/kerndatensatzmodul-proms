@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>National Questionnaire Server (Concept 2027) - MII IG PRO v2027.0.0-ballot</title>
+    <title>National Questionnaire Server (Concept 2027) - MII IG PRO v2027.0.0-ballot.rc1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>National Questionnaire Server (Concept 2027)</h2>
   
 
@@ -314,6 +314,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#das-problem" id="markdown-toc-das-problem">Das Problem</a></li>
   <li><a href="#das-konzept" id="markdown-toc-das-konzept">Das Konzept</a></li>
   <li><a href="#was-ein-zentraler-server-möglich-macht" id="markdown-toc-was-ein-zentraler-server-möglich-macht">Was ein zentraler Server möglich macht</a></li>
+  <li><a href="#architekturskizze--und-ein-funktionierendes-prototypen-paar" id="markdown-toc-architekturskizze--und-ein-funktionierendes-prototypen-paar">Architekturskizze — und ein funktionierendes Prototypen-Paar</a></li>
+  <li><a href="#warum-ein-terminologieserver-diese-rolle-nicht-erfüllt" id="markdown-toc-warum-ein-terminologieserver-diese-rolle-nicht-erfüllt">Warum ein Terminologieserver diese Rolle nicht erfüllt</a></li>
   <li><a href="#offene-entscheidungen" id="markdown-toc-offene-entscheidungen">Offene Entscheidungen</a></li>
   <li><a href="#woher-die-aussagen-dieser-seite-kommen" id="markdown-toc-woher-die-aussagen-dieser-seite-kommen">Woher die Aussagen dieser Seite kommen</a></li>
 </ul>
@@ -374,6 +376,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Transparenz im Feld.</strong> Versionsaufgelöster Abruf macht „welche Version ist wo im Einsatz" zur beantwortbaren Frage — die Voraussetzung für gesteuerte linkId-Migrationen wie die des PHQ-9.</li>
 </ol>
 
+<h3 id="architekturskizze--und-ein-funktionierendes-prototypen-paar">Architekturskizze — und ein funktionierendes Prototypen-Paar</h3>
+
+<p>Das Konzept ist nicht nur Papier: Zwei BIH-CEI-Prototyp-Repositories implementieren den Schichtenschnitt für den PHQ-9 bereits Ende-zu-Ende — <a href="https://github.com/BIH-CEI/pro-library"><code class="language-plaintext highlighter-rouge">pro-library</code></a> (die Inhaltsschicht) und <a href="https://github.com/BIH-CEI/fhir-sdc-questionnaire-service"><code class="language-plaintext highlighter-rouge">fhir-sdc-questionnaire-service</code></a> (die Diensteschicht, ein SDC-<strong>Form-Manager</strong>).</p>
+
+<pre><code class="language-mermaid">flowchart TB
+    subgraph N["Normative Schicht — dieses Modul"]
+        IG["MII PRO IG + versioniertes Package&lt;br/&gt;(reproduzierbarer Schnappschuss)"]
+    end
+    subgraph C["Inhaltsschicht — Prototyp: pro-library"]
+        LIB["FSH-Artefakte&lt;br/&gt;Questionnaires · ValueSets · CodeSystems · CQL"]
+        MAN["CRMI-Manifest&lt;br/&gt;(Library, type asset-collection —&lt;br/&gt;pinnt jede Artefaktversion)"]
+        LIB --- MAN
+    end
+    subgraph S["Diensteschicht — Prototyp: fhir-sdc-questionnaire-service"]
+        FM["SDC-Form-Manager-Container&lt;br/&gt;HAPI FHIR + SDC-IG + MII-PRO-IG eingebacken&lt;br/&gt;$package · $populate · $extract · $localize&lt;br/&gt;validiert gegen das SDC-Form-Manager-CapabilityStatement"]
+    end
+    subgraph K["Clients"]
+        R["Formular-Renderer / ePRO-App"]
+        E["KIS / Primärsystem"]
+        SC["Scoring-Service&lt;br/&gt;(Kanal B, Library/$evaluate)"]
+    end
+    IG -- "derivedFrom, versionierte Canonicals (…|version)" --&gt; LIB
+    MAN -- "Release = gepinntes Manifest" --&gt; FM
+    R -- "$package (Formular + Abhängigkeiten)" --&gt; FM
+    E -- "Auflösung per canonical|version" --&gt; FM
+    FM -- "Libraries kolokalisiert" --&gt; SC
+</code></pre>
+
+<p>Die Arbeitsteilung ist genau die oben begründete: Das <strong>Package bleibt der reproduzierbare Schnappschuss</strong> (normative Schicht), das <strong>Inhaltsrepository</strong> trägt die Artefakte mit einem CRMI-Asset-Collection-Manifest als Release-Primitiv, und der <strong>Form-Manager</strong> ist der Laufzeit-Endpunkt — mit den SDC-Operationen, die ein Renderer tatsächlich aufruft. Die Prototypen beanspruchen bewusst keine normative Autorität; sie bauen die Infrastruktur, die eine künftige Autorität betreiben würde.</p>
+
+<h3 id="warum-ein-terminologieserver-diese-rolle-nicht-erfüllt">Warum ein Terminologieserver diese Rolle nicht erfüllt</h3>
+
+<p>Der Terminologieserver ist die Analogie für das <strong>Betriebsmodell</strong> (zentral, governed, national erreichbar) — nicht für die Funktion. Ein FHIR-Terminologieserver liefert CodeSystems und ValueSets und beantwortet <code class="language-plaintext highlighter-rouge">$expand</code> und <code class="language-plaintext highlighter-rouge">$validate-code</code>; dort endet sein Vertrag. Was der Fragebogenserver braucht, ist genau das, was ein Terminologieserver nicht tut:</p>
+
+<ul>
+  <li>Er liefert keine <strong>Questionnaires</strong> (auch keine ObservationDefinitions, ConceptMaps oder CQL-Libraries) als versionierte, auffindbare Artefakte,</li>
+  <li>er implementiert keine <strong>SDC-Operationen</strong> — kein <code class="language-plaintext highlighter-rouge">$package</code>, kein <code class="language-plaintext highlighter-rouge">$populate</code>, kein <code class="language-plaintext highlighter-rouge">$extract</code>, kein <code class="language-plaintext highlighter-rouge">$next-question</code>,</li>
+  <li>er kennt keine <strong>capability- oder lizenzgesteuerte</strong> Artefaktausgabe,</li>
+  <li>und er ist kein Zuhause für <strong><code class="language-plaintext highlighter-rouge">Library/$evaluate</code></strong>-Scoring.</li>
+</ul>
+
+<p>Beide Server sind Komplemente, keine Alternativen: Der Form-Manager löst seine Antwortskalen-ValueSets <em>gegen</em> den Terminologieserver auf, und beide sitzen im selben Vertrauens- und Betriebsmodell.</p>
+
 <h3 id="offene-entscheidungen">Offene Entscheidungen</h3>
 
 <ul>
@@ -411,8 +456,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Sep 7, 2026 09:30+0000">2026-09-07</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Mon, Sep 7, 2026 13:05+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

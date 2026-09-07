@@ -1,4 +1,4 @@
-# Examples - MII IG PRO v2027.0.0-ballot
+# Examples - MII IG PRO v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Examples**
