@@ -13,7 +13,7 @@ The information model consists of four main components that interact to represen
 <img src="MII_PRO_Informationsmodell_Compact.svg" alt="MII PRO Information Model Overview" width="25%"/>
 </div>
 
-The complete information model can be viewed in the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/Images/out/input/Images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg).
+The complete information model can be viewed in the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/dev/input/images/out/input/images/Logical_Model_UML_complete/MII_PRO_Informationsmodell_Complete.svg).
 
 **Legend**
 
