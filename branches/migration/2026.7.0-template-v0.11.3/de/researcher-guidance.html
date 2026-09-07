@@ -189,6 +189,7 @@
       <li><a href="id-systematics.html">ID-Systematik</a></li>
       <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
       <li><a href="cat.html">Computer-Adaptive Testing</a></li>
+      <li><a href="national-questionnaire-server.html">Fragebogenserver (2027)</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -308,38 +309,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#instrument-auswählen" id="markdown-toc-instrument-auswählen">Instrument auswählen</a></li>
+  <li><a href="#was-die-daten-bedeuten" id="markdown-toc-was-die-daten-bedeuten">Was die Daten bedeuten</a></li>
+  <li><a href="#instrumentenübergreifend-und-longitudinal" id="markdown-toc-instrumentenübergreifend-und-longitudinal">Instrumentenübergreifend und longitudinal</a></li>
+  <li><a href="#einordnung" id="markdown-toc-einordnung">Einordnung</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <!-- markdownlint-disable MD041 -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optionale Seite (0..1).</strong> Das KDS-Modulmenü führt diese Seite als
-<em>optional</em>. Entscheiden Sie für Ihr Modul: Seite <strong>behalten</strong> — Inhalte
-ausfüllen und dieses Banner samt <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code>-Marker-Kommentar löschen (in
-dieser Datei UND in der englischen Quellseite) — oder Seite <strong>entfernen</strong>,
-nach der Schritt-für-Schritt-Anleitung in <a href="https://github.com///blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a> dieses
-Repositories. Ein Release darf dieses Banner nicht enthalten
-(Konventions-Check M9).</p>
-</blockquote>
+<p>Hinweise für <strong>Studien und Forschungsprojekte</strong>, die das PRO-Modul nutzen — Instrumentenauswahl, Lizenzfragen, und was die erhobenen Daten nachgelagert bedeuten.</p>
 
-<h3 id="anleitung-für-forschende">Anleitung für Forschende</h3>
+<h3 id="instrument-auswählen">Instrument auswählen</h3>
 
-<p>Hinweise für Forschende, die die Daten des Moduls <strong>PRO</strong> für Forschungszwecke nutzen — z. B. welche Datenelemente für welche Fragestellungen relevant sind und wie sie interpretiert werden.</p>
+<p>Die Tabelle der <a href="pro-library.html">PRO-Bibliothek</a> ist der Ausgangspunkt: Fokus, Itemzahl, Primärsprache, Scoring und Lizenzhinweis je Instrument. Drei Fragen entscheiden die Wahl:</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Beschreiben Sie die forschungsrelevanten Aspekte des Moduls.]</p>
-</blockquote>
+<ol>
+  <li><strong>Konstrukt und Population</strong> — die Instrumentenseiten dokumentieren Validierungsquellen und bekannte Populations-Einschränkungen (z. B. sind PC-PTSD-Vier-Item und PC-PTSD-5 verschiedene Instrumente; die ISR-Z ist eine Subskala, kein volles ISR).</li>
+  <li><strong>Lizenz vor der ersten Erhebung klären.</strong> Die Stufen unterscheiden sich wesentlich: public domain (PHQ-Familie, DASS-21, PSS-Set), Registrierung (EuroQol, EORTC), Nutzungsanfrage (PROMIS via CPCOR), WHO-Vereinbarung für elektronische Erfassung (WHODAS), kommerziell (BDI-II — Itemtexte aus diesem Modul nicht anzeigbar). Die verbindliche Aussage trägt das <code class="language-plaintext highlighter-rouge">copyright</code>-Element des jeweiligen Questionnaire.</li>
+  <li><strong>Welche Capability-Kombination die Studie braucht</strong> — direkte Patientenerfassung, serverseitiges Scoring importierter Daten oder reine Anzeige verändern, welche <a href="questionnaire-capabilities.html">Capabilities</a> die eingesetzte Variante deklarieren muss.</li>
+</ol>
+
+<h3 id="was-die-daten-bedeuten">Was die Daten bedeuten</h3>
+
+<ul>
+  <li><strong>Eine Score-Observation ist per Konstruktion rückverfolgbar:</strong> <code class="language-plaintext highlighter-rouge">derivedFrom</code> zeigt auf die QuestionnaireResponse, <code class="language-plaintext highlighter-rouge">instantiates</code> (R5-Backport-Extension) auf die ObservationDefinition mit Einheit, Wertebereich und publizierten Cut-offs. Schweregrade sind dort <em>dokumentiert</em> (<code class="language-plaintext highlighter-rouge">qualifiedInterval</code>), aber bewusst nicht als ausführbare Interpretation ausgeliefert — Interpretation ist Sache der Studie bzw. der Klinik (<a href="derived-metrics.html">Abgeleitete Metriken</a>).</li>
+  <li><strong>Item-Daten sind instrumentenübergreifend vergleichbar</strong>, wo Items geteilt sind: Der PHQ-D-Block-Namespace bedeutet, dass ein im GAD-7 eingebetteter GAD-2 überall dieselben linkIds trägt (<a href="id-systematics.html">ID-Systematik</a>).</li>
+  <li><strong>Sprache:</strong> Items tragen den validierten Wortlaut ihrer Primärsprache, Übersetzungen als Extensions; die Quelle jedes deutschen Wortlauts ist auf der Instrumentenseite benannt (PHQ-D, CPCOR, PCOR-MII Item Level Dictionary, NCI).</li>
+  <li><strong>Die Score-Richtung ist maschinenlesbar</strong> über die Health-Correlation-Extension — „höher = schlechter" ist keine sichere Annahme (EORTC-Funktionsskalen invertieren).</li>
+</ul>
+
+<h3 id="instrumentenübergreifend-und-longitudinal">Instrumentenübergreifend und longitudinal</h3>
+
+<p>Score-Konversionen zwischen Instrumenten (z. B. PHQ-9 → PROMIS-Depressions-T-Score) sind Roadmap-Punkte und werden als CQL-Libraries modelliert, nicht als ausgelieferte Fragebogen-Logik. Änderungsmetriken, MID/MCID und Reliable Change sind je Instrument dokumentiert, wo publiziert — als Text; die 2027-Pläne stehen in der <a href="module-description.html">Roadmap</a>.</p>
+
+<h3 id="einordnung">Einordnung</h3>
+
+<p>Das PRO-Modul entsteht innerhalb der MII; das PSS-Instrumentenset folgt dem PCOR-MII-Use-Case, dessen Item Level Dictionary die Quelle der validierten deutschen Wortlaute ist. Für Datennutzungsanträge gelten die üblichen Wege der MII-Forschungsdateninfrastruktur (FDPG); PRO-Ressourcen reisen dort wie die Daten jedes anderen KDS-Moduls.</p>
 
 
 
@@ -366,7 +374,7 @@ Repositories. Ein Release darf dieses Banner nicht enthalten
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Sep 7, 2026 08:34+0000">2026-09-07</span>
+          Erstellt <span title="Mon, Sep 7, 2026 09:06+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

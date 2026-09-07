@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "title" : "MII PR PRO PROMIS-29 Fatigue T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T08:34:40+00:00",
+  "date" : "2026-09-07T09:06:36+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

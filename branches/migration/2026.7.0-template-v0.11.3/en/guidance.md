@@ -23,11 +23,17 @@ This section collects the domain guidance for implementing and using the **PRO**
 
 For the KDS-wide conformance requirements see the [Conformance rules of the Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance); for the technical artifacts see [Profiles](profiles.md).
 
+### For Adopters
+
+**Software vendors** — form renderers, KIS integrations, ePRO apps, scoring services: start with the [Implementer Guidance](implementer-guidance.md); it names the five rules every implementation must respect and what each system role consumes and produces.
+
+**Studies and research projects** — instrument selection, licensing tiers, and what the collected data means: start with the [Researcher Guidance](researcher-guidance.md).
+
 ### Module Documentation
 
 * [Use Cases](use-cases.md) · [Module Description](module-description.md) · [Context within the MII](project-context.md)
 * [Datasets and Descriptions](datasets-and-descriptions.md) · [Technical Implementation](technical-implementation.md) · [Workflows](workflows.md)
-* [ID Systematics](id-systematics.md) · [Domains](domains.md) · [Terminology Strategies](terminology-strategies.md) · [Questionnaire Capabilities](questionnaire-capabilities.md) · [Computer-Adaptive Testing](cat.md)
+* [ID Systematics](id-systematics.md) · [Domains](domains.md) · [Terminology Strategies](terminology-strategies.md) · [Questionnaire Capabilities](questionnaire-capabilities.md) · [Computer-Adaptive Testing](cat.md) · [National Questionnaire Server](national-questionnaire-server.md)
 * [Scoring](scoring.md) · [Domain-based Scoring](domain-based-scoring.md) · [Domains](domains.md) · [Cross-Instrument Mappings](cross-instrument-mappings.md) · [Derived Metrics](derived-metrics.md)
 * [Validation](validation.md) · [References](references.md)
 

@@ -189,6 +189,7 @@
       <li><a href="id-systematics.html">ID Systematics</a></li>
       <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
       <li><a href="cat.html">Computer-Adaptive Testing</a></li>
+      <li><a href="national-questionnaire-server.html">Questionnaire Server (2027)</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -308,33 +309,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#selecting-an-instrument" id="markdown-toc-selecting-an-instrument">Selecting an instrument</a></li>
+  <li><a href="#what-the-data-means" id="markdown-toc-what-the-data-means">What the data means</a></li>
+  <li><a href="#cross-instrument-and-longitudinal-use" id="markdown-toc-cross-instrument-and-longitudinal-use">Cross-instrument and longitudinal use</a></li>
+  <li><a href="#context" id="markdown-toc-context">Context</a></li>
+</ul>
+
 </div>
-
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/researcher-guidance.md.
-     German mirror: input/translations/de/pagecontent/researcher-guidance.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optional page (0..1).</strong> The KDS module menu lists this page as <em>optional</em>.
-Decide for your module: <strong>keep</strong> it — fill it in and delete this banner and
-the <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code> marker comment (in this file AND the German mirror) — or
-<strong>remove</strong> it, following the per-entry procedure in <a href="https://github.com///blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a>
-of this repository. A release must not ship with this banner (convention
-check M9).</p>
-</blockquote>
+<p>Guidance for <strong>studies and research projects</strong> using the PRO module — selecting instruments, getting licensing right, and knowing what the collected data means downstream.</p>
 
-<h3 id="guidance-for-researchers">Guidance for Researchers</h3>
+<h3 id="selecting-an-instrument">Selecting an instrument</h3>
 
-<p>Guidance for researchers using the data of the <strong>PRO</strong> module for research purposes — e.g. which data elements are relevant to which research questions, and how they are to be interpreted.</p>
+<p>The <a href="pro-library.html">PRO Library</a> table is the starting point: focus, item count, primary language, scoring and licence pointer for every instrument. Three questions decide the choice:</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Describe the research-relevant aspects of your module.]</p>
-</blockquote>
+<ol>
+  <li><strong>Construct and population</strong> — the per-instrument pages document validation sources and known population caveats (e.g. PC-PTSD four-item vs. PC-PTSD-5 are distinct instruments; the ISR-Z is a subscale, not a full ISR).</li>
+  <li><strong>Licensing before first data capture.</strong> The tiers differ materially: public-domain (PHQ family, DASS-21, PSS set), registration (EuroQol, EORTC), usage request (PROMIS via CPCOR), WHO agreement for electronic capture (WHODAS), commercial (BDI-II — item texts not displayable from this module). The authoritative statement sits in each Questionnaire's <code class="language-plaintext highlighter-rouge">copyright</code> element.</li>
+  <li><strong>Which capability combination the study needs</strong> — direct patient capture, server-side scoring of imported data, or read-only display change which <a href="questionnaire-capabilities.html">capabilities</a> the deployed variant must declare.</li>
+</ol>
+
+<h3 id="what-the-data-means">What the data means</h3>
+
+<ul>
+  <li><strong>A score Observation is traceable by construction:</strong> <code class="language-plaintext highlighter-rouge">derivedFrom</code> points to the QuestionnaireResponse, <code class="language-plaintext highlighter-rouge">instantiates</code> (R5 backport extension) to the ObservationDefinition that documents unit, range and published cut-offs. Severity thresholds are <em>documented</em> there (<code class="language-plaintext highlighter-rouge">qualifiedInterval</code>) but deliberately not shipped as executable interpretation — interpretation is the study's or clinician's responsibility (<a href="derived-metrics.html">Derived Metrics</a>).</li>
+  <li><strong>Item-level data is comparable across instruments</strong> where items are shared: the PHQ-D block namespace means a GAD-2 embedded in GAD-7 uses the same linkIds wherever it appears (<a href="id-systematics.html">ID systematics</a>).</li>
+  <li><strong>Language:</strong> items carry the validated wording of their primary language with translations as extensions; the source of every German wording is named on the instrument page (PHQ-D, CPCOR, PCOR-MII Item Level Dictionary, NCI).</li>
+  <li><strong>Score direction is machine-readable</strong> via the health-correlation extension — do not assume "higher = worse" (EORTC function scales invert).</li>
+</ul>
+
+<h3 id="cross-instrument-and-longitudinal-use">Cross-instrument and longitudinal use</h3>
+
+<p>Score conversions between instruments (e.g. PHQ-9 → PROMIS depression T-score) are roadmap items modelled as CQL libraries, not shipped questionnaire logic. Change metrics, MID/MCID and reliable change are documented per instrument where published, as text — see the <a href="module-description.html">roadmap</a> for the 2027 plans.</p>
+
+<h3 id="context">Context</h3>
+
+<p>The PRO module is developed within the MII; the PSS instrument set follows the PCOR-MII use case, whose Item Level Dictionary is the source of the validated German wordings. For data-sharing requests, use the standard MII research data infrastructure (FDPG) processes; PRO resources travel there like any other KDS module data.</p>
 
 
 
@@ -361,7 +374,7 @@ check M9).</p>
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Sep 7, 2026 08:34+0000">2026-09-07</span>
+          Generated <span title="Mon, Sep 7, 2026 09:06+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

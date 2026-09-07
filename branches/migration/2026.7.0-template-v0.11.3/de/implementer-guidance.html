@@ -189,6 +189,7 @@
       <li><a href="id-systematics.html">ID-Systematik</a></li>
       <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
       <li><a href="cat.html">Computer-Adaptive Testing</a></li>
+      <li><a href="national-questionnaire-server.html">Fragebogenserver (2027)</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -308,23 +309,79 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#was-zu-implementieren-ist-nach-rolle" id="markdown-toc-was-zu-implementieren-ist-nach-rolle">Was zu implementieren ist, nach Rolle</a></li>
+  <li><a href="#die-fünf-regeln-die-jede-implementierung-einhalten-muss" id="markdown-toc-die-fünf-regeln-die-jede-implementierung-einhalten-muss">Die fünf Regeln, die jede Implementierung einhalten muss</a></li>
+  <li><a href="#hinweise-für-renderer" id="markdown-toc-hinweise-für-renderer">Hinweise für Renderer</a></li>
+  <li><a href="#bezug-der-artefakte" id="markdown-toc-bezug-der-artefakte">Bezug der Artefakte</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <!-- markdownlint-disable MD041 -->
 
-<p>Technische Hinweise für DIZ-Implementierende zur Umsetzung der Profile des Moduls <strong>PRO</strong> (ETL aus Primärsystemen, FHIR-API, Validierung).</p>
+<p>Technische Hinweise für <strong>Softwarehersteller und DIZ-Implementierende</strong>: Formular-Renderer, KIS-Integrationen, ePRO-Apps und ETL-Strecken, die Ressourcen des PRO-Moduls erzeugen oder konsumieren.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Beschreiben Sie die technischen Umsetzungsschritte für Ihr Modul.]</p>
-</blockquote>
+<h3 id="was-zu-implementieren-ist-nach-rolle">Was zu implementieren ist, nach Rolle</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ihr System</th>
+      <th>konsumiert</th>
+      <th>erzeugt</th>
+      <th>Schlüsselseiten</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Formular-Renderer / ePRO-App</strong></td>
+      <td>Questionnaire (mit SDC-Extensions)</td>
+      <td>QuestionnaireResponse</td>
+      <td><a href="questionnaire-capabilities.html">Capabilities</a>, <a href="scoring.html">Scoring</a> (Kanal A)</td>
+    </tr>
+    <tr>
+      <td><strong>KIS-Integration</strong></td>
+      <td>QuestionnaireResponse, Score-Observations</td>
+      <td>Anzeige, Workflows</td>
+      <td><a href="workflows.html">Workflows</a>, <a href="derived-metrics.html">Abgeleitete Metriken</a></td>
+    </tr>
+    <tr>
+      <td><strong>ETL- / DIZ-Strecke</strong></td>
+      <td>Primärsystemdaten, QuestionnaireResponses</td>
+      <td>Observations konform zu den Score-Profilen</td>
+      <td><a href="scoring.html">Scoring</a> (Kanäle B/C), <a href="validation.html">Validierung</a></td>
+    </tr>
+    <tr>
+      <td><strong>Scoring-Service</strong></td>
+      <td>QuestionnaireResponse</td>
+      <td>Score-Observation</td>
+      <td><a href="scoring.html">Scoring</a> (Kanal B, CQL)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="die-fünf-regeln-die-jede-implementierung-einhalten-muss">Die fünf Regeln, die jede Implementierung einhalten muss</h3>
+
+<ol>
+  <li><strong>Erst die Capabilities-Extension lesen.</strong> Ein Questionnaire deklariert maschinenlesbar, ob es displayable, collectable, calculatable, extractable, populatable ist — <a href="questionnaire-capabilities.html">Details</a>. Der BDI-II etwa ist <em>nicht</em> displayable (Lizenz); seine Itemtexte zu rendern ist eine Lizenzverletzung, kein Bug.</li>
+  <li><strong>Niemals Antwortkodierungen erfinden.</strong> Antworten tragen die Codes der gebundenen Antwortskala (<code class="language-plaintext highlighter-rouge">answerOption</code> oder <code class="language-plaintext highlighter-rouge">answerValueSet</code>) — mit <code class="language-plaintext highlighter-rouge">system</code> und <code class="language-plaintext highlighter-rouge">code</code>, nie nackte Integer. An diesen Codes hängen die ordinalen Gewichte fürs Scoring (<a href="id-systematics.html">ID-Systematik</a>).</li>
+  <li><strong>linkIds sind kanonisch und instrumentenübergreifend.</strong> Dieselbe Frage trägt über Instrumente hinweg denselben linkId (PHQ-D-Block-Namespace: PHQ-9/PHQ-15/GAD-7). Nicht ummappen; Daten aus Fremdnummerierungen werden über die mitgelieferten ConceptMaps überbrückt.</li>
+  <li><strong>Clientseitige Scores sind Komfort, serverseitige sind maßgeblich.</strong> Wer Kanal-A-Calculated-Expressions rendert, kennzeichnet das Ergebnis als vorläufig; die maßgebliche Score-Observation kommt aus Kanal B — einschließlich der Medizinprodukte-Abgrenzung auf der <a href="scoring.html">Scoring</a>-Seite.</li>
+  <li><strong>Gegen das versionierte Package validieren</strong>, nicht gegen den CI-Build: <code class="language-plaintext highlighter-rouge">de.medizininformatikinitiative.kerndatensatz.pros</code> aus der <a href="https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.pros">Package-Registry</a>. Die <a href="validation.html">Validierungs</a>-Seite beschreibt die Terminologieserver-Anforderungen (deutsche Displays!) und bekannte Validator-Fallen.</li>
+</ol>
+
+<h3 id="hinweise-für-renderer">Hinweise für Renderer</h3>
+
+<p>Die Fragebögen nutzen SDC-Rendering- und Verhaltens-Extensions (Calculated Expressions, enableWhen, Variablen, Item Control). Renderer, die die <code class="language-plaintext highlighter-rouge">translation</code>-Extension ignorieren, können die DE-primären Darstellungsvarianten nutzen, wo vorhanden (z. B. <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code>) — reine Darstellungsvarianten; die EN-primäre Ressource bleibt maßgeblich. Testseiten rendern mit LHC-Forms und SMART App Launch; sowohl inline <code class="language-plaintext highlighter-rouge">answerOption</code>- als auch <code class="language-plaintext highlighter-rouge">answerValueSet</code>-gebundene Skalen müssen auflösen.</p>
+
+<h3 id="bezug-der-artefakte">Bezug der Artefakte</h3>
+
+<ul>
+  <li><strong>Package (Build-Zeit, reproduzierbar):</strong> <code class="language-plaintext highlighter-rouge">fhir install de.medizininformatikinitiative.kerndatensatz.pros@&lt;version&gt;</code></li>
+  <li><strong>Gerenderte Artefakte (menschliches Review):</strong> die <a href="artifacts.html">Artefakt</a>-Seiten dieses IG</li>
+  <li>Ein Laufzeit-Verteilkanal steht auf der Roadmap: <a href="national-questionnaire-server.html">Nationaler Fragebogenserver</a>.</li>
+</ul>
 
 
 
@@ -351,7 +408,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Sep 7, 2026 08:34+0000">2026-09-07</span>
+          Erstellt <span title="Mon, Sep 7, 2026 09:06+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
