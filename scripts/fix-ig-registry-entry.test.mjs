@@ -270,3 +270,51 @@ test("rejects missing, duplicate, and ambiguous target entries", () => {
     /Invalid or duplicate registry languages/,
   );
 });
+
+test("a ballot publication expects the Publisher-derived edition name '<sequence> Ballot'", () => {
+  const ballotEntry = fixture(
+    targetEntry({
+      history,
+      editions: [
+        {
+          name: `${request.sequence} Ballot`,
+          "ig-version": request.version,
+          package: `${packageId}#${request.version}`,
+          "fhir-version": ["4.0.1"],
+          url: request.path,
+        },
+      ],
+    }),
+  );
+  writeFileSync(
+    ballotEntry.requestFile,
+    JSON.stringify({ ...request, status: "ballot" }),
+  );
+  const result = fixIgRegistryEntry(
+    ballotEntry.registry,
+    ballotEntry.requestFile,
+    ballotEntry.packageFile,
+    canonical,
+    history,
+    ["en"],
+  );
+  assert.equal(result.changed, false);
+
+  const bareNameOnBallot = fixture();
+  writeFileSync(
+    bareNameOnBallot.requestFile,
+    JSON.stringify({ ...request, status: "ballot" }),
+  );
+  assert.throws(
+    () =>
+      fixIgRegistryEntry(
+        bareNameOnBallot.registry,
+        bareNameOnBallot.requestFile,
+        bareNameOnBallot.packageFile,
+        canonical,
+        history,
+        ["en"],
+      ),
+    /edition\.name/,
+  );
+});

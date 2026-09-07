@@ -265,9 +265,13 @@ function validateEntry(
     );
   } else {
     const edition = editions[0];
+    // Publisher 2.3.2 derives the registry edition name from sequence plus
+    // publication status: a "ballot" release is registered as
+    // "<sequence> Ballot"; every other status keeps the bare sequence.
+    const sequence = requiredString(request, "sequence", "Publication request");
     assertEqual(
       edition.name,
-      requiredString(request, "sequence", "Publication request"),
+      request.status === "ballot" ? `${sequence} Ballot` : sequence,
       "edition.name",
       errors,
     );
