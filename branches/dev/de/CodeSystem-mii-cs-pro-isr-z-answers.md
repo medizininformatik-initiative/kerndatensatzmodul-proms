@@ -36,7 +36,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "name" : "MII_CS_PRO_ISR_Z_Answers",
   "title" : "MII CS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-09-07T14:06:36+00:00",
+  "date" : "2026-09-07T14:36:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

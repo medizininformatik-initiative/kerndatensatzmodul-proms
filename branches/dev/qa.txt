@@ -1,12 +1,12 @@
 MII_IG_PRO : Validation Results
 =========================================
 
-err = 327, warn = 1019, info = 4279
+err = 327, warn = 1050, info = 4279
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Mon Sep 07 14:24:04 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro)
+Generated Mon Sep 07 14:52:40 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro)
  Build Errors : 58 / 31 / 0
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Bundle-mii-exa-pro-bdi-ii-bundle : 0 / 9 / 70
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Bundle-mii-exa-pro-eortc-qlq-c30-bundle : 25 / 45 / 97
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Bundle-mii-exa-pro-eortc-qlq-c30-bundle : 25 / 46 / 97
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Bundle-mii-exa-pro-phq-9-bundle : 0 / 6 / 42
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Bundle-mii-exa-pro-promis-29-bundle : 6 / 50 / 20
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Bundle-mii-exa-pro-promis-depression-sf4a-bundle : 0 / 7 / 8
@@ -29,10 +29,10 @@ Generated Mon Sep 07 14:24:04 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-bdi-ii-observation : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-raw : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-equiv : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-raw : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-equiv : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-raw : 0 / 3 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-equiv : 0 / 4 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-raw : 0 / 4 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-equiv : 0 / 4 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-raw : 0 / 4 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ap : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-cf : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-co : 0 / 3 / 2
@@ -43,12 +43,12 @@ Generated Mon Sep 07 14:24:04 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-fi : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-nv : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pa : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pf : 0 / 3 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pf : 0 / 4 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ql : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-rf : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sf : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sl : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-gad-7-score : 0 / 3 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-gad-7-score : 0 / 4 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-isr-z-score : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-pc-ptsd-score : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-phq-15-observation : 0 / 3 / 2
@@ -58,9 +58,9 @@ Generated Mon Sep 07 14:24:04 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-scoff-score : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-ssd-12-score : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-whodas12-score-simple-sum : 0 / 4 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-whodas12-score-simple-sum : 0 / 5 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Observation-mii-exa-pro-wi-7-score : 0 / 3 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-depression-t-score : 4 / 1 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-depression-t-score : 4 / 2 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ap : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-cf : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-co : 0 / 1 / 2
@@ -71,41 +71,41 @@ Generated Mon Sep 07 14:24:04 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fi : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf : 0 / 1 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf : 0 / 2 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-bdi-ii : 0 / 1 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-bdi-ii : 0 / 2 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index : 0 / 1 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index : 0 / 2 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile : 0 / 0 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-gad-7 : 0 / 1 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-gad-7 : 0 / 2 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-isr-z : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-pc-ptsd : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-15 : 0 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-9 : 0 / 1 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-15 : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-9 : 0 / 2 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-proctcae-acs : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade : 0 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-scoff : 1 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-ssd-12 : 1 / 1 / 2
- /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum : 0 / 2 / 2
+ /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum : 0 / 3 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-wi-7 : 1 / 1 / 2
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Patient-mii-exa-pro-patient : 0 / 1 / 1
  /home/runner/work/kerndatensatzmodul-proms/kerndatensatzmodul-proms/fsh-generated/resources/Questionnaire-mii-qst-pro-bdi-bdi2 : 0 / 5 / 35
@@ -459,6 +459,7 @@ INFORMATION: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[1].resource/*
 INFORMATION: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[1].resource/*QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response*/.item[28].answer[0].value.ofType(Coding): Reference to experimental CodeSystem https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30|2027.0.0-ballot.rc1
 INFORMATION: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[1].resource/*QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response*/.item[29].answer[0].value.ofType(Coding): Reference to experimental CodeSystem https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30|2027.0.0-ballot.rc1
 WARNING: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[2].resource/*Observation/mii-exa-pro-eortc-qlq-c30-observation-pf*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[2].resource/*Observation/mii-exa-pro-eortc-qlq-c30-observation-pf*/.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[2].resource/*Observation/mii-exa-pro-eortc-qlq-c30-observation-pf*/.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[2].resource/*Observation/mii-exa-pro-eortc-qlq-c30-observation-pf*/.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Bundle/mii-exa-pro-eortc-qlq-c30-bundle: Bundle.entry[3].resource/*Observation/mii-exa-pro-eortc-qlq-c30-observation-rf*/: Best Practice Recommendation: In general, all observations should have a performer
@@ -1659,18 +1660,22 @@ WARNING: Observation/mii-exa-pro-dass-dass21-score-anxiety-raw: Observation.valu
 WARNING: Observation/mii-exa-pro-dass-dass21-score-anxiety-raw: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-dass-dass21-score-anxiety-raw: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-equiv.json ==
+WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-equiv: Observation.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-equiv: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-equiv: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-equiv: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-raw.json ==
+WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-raw: Observation.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-raw: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-raw: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-dass-dass21-score-depression-raw: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-equiv.json ==
+WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-equiv: Observation.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-equiv: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-equiv: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-equiv: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-raw.json ==
+WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-raw: Observation.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-raw: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-raw: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-dass-dass21-score-stress-raw: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -1715,6 +1720,7 @@ WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-pa: Observation.value
 WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-pa: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-pa: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.json ==
+WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-pf: Observation.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-pf: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-pf: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-pf: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -1735,6 +1741,7 @@ WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-sl: Observation.value
 WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-sl: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-eortc-qlq-c30-observation-sl: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-mii-exa-pro-gad-7-score.json ==
+WARNING: Observation/mii-exa-pro-gad-7-score: Observation.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Observation/mii-exa-pro-gad-7-score: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Observation/mii-exa-pro-gad-7-score: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-gad-7-score: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -1776,6 +1783,7 @@ WARNING: Observation/mii-exa-pro-ssd-12-score: Observation.value.ofType(Quantity
 WARNING: Observation/mii-exa-pro-ssd-12-score: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-mii-exa-pro-whodas12-score-simple-sum.json ==
 WARNING: Observation/mii-exa-pro-whodas12-score-simple-sum: Observation.code.coding[0]: The concept '715823002' has a status of inactive and its use should be reviewed
+WARNING: Observation/mii-exa-pro-whodas12-score-simple-sum: Observation.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Observation/mii-exa-pro-whodas12-score-simple-sum: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#{score}')
 WARNING: Observation/mii-exa-pro-whodas12-score-simple-sum: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-whodas12-score-simple-sum: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -1784,6 +1792,7 @@ WARNING: Observation/mii-exa-pro-wi-7-score: Observation.value.ofType(Quantity):
 WARNING: Observation/mii-exa-pro-wi-7-score: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 WARNING: Observation/mii-exa-pro-wi-7-score: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-depression-t-score.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-depression-t-score: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-depression-t-score: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 ERROR: ObservationDefinition/mii-obsdef-pro-depression-t-score: ObservationDefinition.qualifiedInterval[0].appliesTo[0].coding[0].display: Wrong Display Name 'General population' for http://loinc.org#LA6112-2. Valid display is '1' (en) (for the language(s) 'en')
 ERROR: ObservationDefinition/mii-obsdef-pro-depression-t-score: ObservationDefinition.qualifiedInterval[1].appliesTo[0].coding[0].display: Wrong Display Name 'General population' for http://loinc.org#LA6112-2. Valid display is '1' (en) (for the language(s) 'en')
@@ -1810,6 +1819,7 @@ WARNING: ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-nv: ObservationDefin
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pa: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ql: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
@@ -1820,53 +1830,73 @@ WARNING: ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sf: ObservationDefin
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sl: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-bdi-ii.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-bdi-ii: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-bdi-ii: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.json ==
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-gad-7.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-gad-7: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-gad-7: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-isr-z.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-score-isr-z: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-score-pc-ptsd: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-15.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-phq-15: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-phq-15: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-9.json ==
+WARNING: ObservationDefinition/mii-obsdef-pro-score-phq-9: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-phq-9: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-score-proctcae-acs: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
@@ -1880,6 +1910,7 @@ ERROR: ObservationDefinition/mii-obsdef-pro-score-ssd-12: ObservationDefinition.
 WARNING: ObservationDefinition/mii-obsdef-pro-score-ssd-12: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.json ==
 WARNING: ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum: ObservationDefinition.code.coding[0]: The concept '715823002' has a status of inactive and its use should be reviewed
+WARNING: ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum: ObservationDefinition.code.coding[1].system: A definition for CodeSystem 'https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue' version 'null' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum: ObservationDefinition.quantitativeDetails.unit.coding[0].system: A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated
 == fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-wi-7.json ==
 ERROR: ObservationDefinition/mii-obsdef-pro-score-wi-7: ObservationDefinition.code.coding[0].display: Wrong Display Name 'WI-7 Total Score' for https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue#wi-7-total. Valid display is 'Whiteley-7 Total Score (0-7)' (for the language(s) 'en')
@@ -2216,9 +2247,9 @@ ERROR: Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b: Questionnaire.containe
 ERROR: Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b: Questionnaire.contained[2]/*ValueSet/eortc-qlq-c30-7pt-b*/: Questionnaire.code: minimum required = 1, but only found 0 (from https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc1)
 WARNING: Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b: Questionnaire.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: ValueSet.where(id = 'eortc-qlq-c30-4pt-b'): Error from http://127.0.0.1:8090/fhir: Error: [884b0ceb-c8eb-48b5-b183-a1eb6bf72203]: A usable code system with URL #eortc-qlq-c30-cs-b could not be resolved.
-Information: X-Request-Id: 3e61f16c-e89c-44d2-803f-3e1a588c2b15
+Information: X-Request-Id: 5bb524e8-2d9d-4bfa-8c6b-9aeb5786d354
 WARNING: ValueSet.where(id = 'eortc-qlq-c30-7pt-b'): Error from http://127.0.0.1:8090/fhir: Error: [5c7fadfc-bd83-4bae-855b-185866b4418a]: A usable code system with URL #eortc-qlq-c30-cs-b could not be resolved.
-Information: X-Request-Id: 4cdc220e-12cf-49be-bca5-1fb5d0fd620e
+Information: X-Request-Id: 99a9f4b8-5796-4091-ac37-b3fc0c10ccb4
 WARNING: IG: "The narrative includes custom content for the default language (en), but does not include translated content for the de language, so the default language has been used
 == fsh-generated/resources/Questionnaire-mii-qst-pro-epds.json ==
 INFORMATION: Questionnaire/mii-qst-pro-epds: Questionnaire.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
@@ -5995,9 +6026,9 @@ INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.inc
 INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[3].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[3].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[0].display: 'Not at all' is the default display; the code system http://loinc.org has no Display Names for the language de
-ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[1]: The code 'LA6569-3' is not valid in the system http://loinc.org (error: [4799ccf1-b2ab-44c1-9f40-e18a1acf276d]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[2]: The code 'LA6570-1' is not valid in the system http://loinc.org (error: [bb7d84fb-ba22-4237-b2d5-1839270ad2f5]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[3]: The code 'LA6571-9' is not valid in the system http://loinc.org (error: [e3eeaed4-7a9a-4ba7-a09b-8c3ed001bb8b]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[1]: The code 'LA6569-3' is not valid in the system http://loinc.org (error: [1f9bf71e-8c89-4481-8c41-e49a4b69916c]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[2]: The code 'LA6570-1' is not valid in the system http://loinc.org (error: [c46224dd-3bee-41dc-9cee-4581606003bd]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet.compose.include[0].concept[3]: The code 'LA6571-9' is not valid in the system http://loinc.org (error: [95cd4661-b8f7-4dbb-8236-45dab0ea6f7c]: Type-level request to $validate-code must specify either valueSet or url parameter.)
 WARNING: ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3: ValueSet: Resource has a language (de), and the XHTML has a lang (en), but they differ
 WARNING: Resource: The resource ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3 should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.json ==
@@ -6013,9 +6044,9 @@ INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.inc
 INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[3].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[3].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[0].display: 'Not difficult at all' is the default display; the code system http://loinc.org has no Display Names for the language de
-ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[1]: The code 'LA6573-5' is not valid in the system http://loinc.org (error: [d16d8201-2d60-432a-aedf-87026e779aa3]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[2]: The code 'LA6575-0' is not valid in the system http://loinc.org (error: [4007fc77-5cb3-4b74-8b5f-a82121c614fb]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[3]: The code 'LA6574-3' is not valid in the system http://loinc.org (error: [091e27e0-3418-48e5-b50c-72a65382d348]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[1]: The code 'LA6573-5' is not valid in the system http://loinc.org (error: [783d060b-a7e9-443d-9771-b737f4f8de3d]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[2]: The code 'LA6575-0' is not valid in the system http://loinc.org (error: [369b2fe1-8f6e-4ced-9ee3-5fb779093b0a]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet.compose.include[0].concept[3]: The code 'LA6574-3' is not valid in the system http://loinc.org (error: [a9ab5314-6ad4-4a60-8d49-38a3b70e9bdb]: Type-level request to $validate-code must specify either valueSet or url parameter.)
 WARNING: ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1: ValueSet: Resource has a language (de), and the XHTML has a lang (en), but they differ
 WARNING: Resource: The resource ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1 should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-frequency.json ==
@@ -6068,10 +6099,10 @@ INFORMATION: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compo
 INFORMATION: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[3].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[4].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[4].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[1]: The code 'LA10066-1' is not valid in the system http://loinc.org (error: [17dc58f5-67b3-4762-a1e2-780859494cad]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[2]: The code 'LA10082-8' is not valid in the system http://loinc.org (error: [26570167-b14b-4794-b138-1bc4277147e3]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[3]: The code 'LA10044-8' is not valid in the system http://loinc.org (error: [4f5b57e7-70ae-4eec-8ecd-b9385ba89144]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[4]: The code 'LA9933-8' is not valid in the system http://loinc.org (error: [e1fd2b7e-dca6-4431-a754-4ceadb915995]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[1]: The code 'LA10066-1' is not valid in the system http://loinc.org (error: [6d3b96c3-5060-4a97-8577-6127aba78e2c]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[2]: The code 'LA10082-8' is not valid in the system http://loinc.org (error: [2d5c0579-2516-46c7-9161-9da7c2b0cbc7]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[3]: The code 'LA10044-8' is not valid in the system http://loinc.org (error: [267482bf-528e-4b9a-92f8-d18faf860e51]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-frequency-response-scale: ValueSet.compose.include[0].concept[4]: The code 'LA9933-8' is not valid in the system http://loinc.org (error: [9694a65b-ded5-4eba-9e45-05190161a976]: Type-level request to $validate-code must specify either valueSet or url parameter.)
 WARNING: Resource: The resource ValueSet/mii-vs-pro-promis-frequency-response-scale should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-pro-promis-intensity-response-scale.json ==
 INFORMATION: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
@@ -6087,10 +6118,10 @@ INFORMATION: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compo
 INFORMATION: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[3].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[4].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[4].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[1]: The code 'LA13863-8' is not valid in the system http://loinc.org (error: [37103ce4-9afe-4b89-b9e0-9c4cac2db2f9]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[2]: The code 'LA13909-9' is not valid in the system http://loinc.org (error: [220c12ce-309e-4cf1-9b9f-238daaa934bf]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[3]: The code 'LA13902-4' is not valid in the system http://loinc.org (error: [a6cc3040-aaca-4d13-8eab-35599a8fff54]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[4]: The code 'LA13914-9' is not valid in the system http://loinc.org (error: [d80277b0-13d0-4e6a-88fc-1e95f9399b1e]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[1]: The code 'LA13863-8' is not valid in the system http://loinc.org (error: [23cbcca9-6820-460b-9638-1b09ef9bc1c7]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[2]: The code 'LA13909-9' is not valid in the system http://loinc.org (error: [b923535b-799b-435b-8d94-6962d932994a]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[3]: The code 'LA13902-4' is not valid in the system http://loinc.org (error: [a8695e92-797b-423b-b8ff-c731c60a6ab5]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-intensity-response-scale: ValueSet.compose.include[0].concept[4]: The code 'LA13914-9' is not valid in the system http://loinc.org (error: [1ace4018-d9b1-4b39-b96d-4ab6801fd8a5]: Type-level request to $validate-code must specify either valueSet or url parameter.)
 WARNING: Resource: The resource ValueSet/mii-vs-pro-promis-intensity-response-scale should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-pro-promis-physical-function-response-scale.json ==
 INFORMATION: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
@@ -6106,10 +6137,10 @@ INFORMATION: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueS
 INFORMATION: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[3].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[4].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[4].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[1]: The code 'LA13918-0' is not valid in the system http://loinc.org (error: [c7b91058-dd53-44c1-be94-271e2ae6acf5]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[2]: The code 'LA13920-6' is not valid in the system http://loinc.org (error: [6b230360-c496-4be5-8b81-2d4392e0c4e9]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[3]: The code 'LA13919-8' is not valid in the system http://loinc.org (error: [baaa0339-a162-4967-ad29-e8ef881459dc]: Type-level request to $validate-code must specify either valueSet or url parameter.)
-ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[4]: The code 'LA13912-3' is not valid in the system http://loinc.org (error: [d65f3062-20a5-474c-8740-02a7a7425a8e]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[1]: The code 'LA13918-0' is not valid in the system http://loinc.org (error: [6fa7682e-d693-4106-8973-0e53ea41ea58]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[2]: The code 'LA13920-6' is not valid in the system http://loinc.org (error: [0267961f-e82e-4e90-89b0-99a69774bbdb]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[3]: The code 'LA13919-8' is not valid in the system http://loinc.org (error: [fb063e13-0a4f-46ee-9be9-561ae18fe874]: Type-level request to $validate-code must specify either valueSet or url parameter.)
+ERROR: ValueSet/mii-vs-pro-promis-physical-function-response-scale: ValueSet.compose.include[0].concept[4]: The code 'LA13912-3' is not valid in the system http://loinc.org (error: [38870cfd-8ae8-487a-afdf-c1e2ad1419ad]: Type-level request to $validate-code must specify either valueSet or url parameter.)
 WARNING: Resource: The resource ValueSet/mii-vs-pro-promis-physical-function-response-scale should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-pro-ssd-12-answers.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers to 2027.0.0-ballot.rc1
