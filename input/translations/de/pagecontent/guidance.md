@@ -11,7 +11,7 @@ Moduls **PRO**.
   des Moduls, beschrieben als logische Modelle. (Dieser Eintrag teilt sein Ziel
   mit *Artefakte → Logische Modelle*; keiner der Anker der Artefakt-Übersicht
   ist als Linkziel nutzbar — siehe
-  [`docs/page-structure.md`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/docs/page-structure.md) in diesem Repository.)
+  [`docs/page-structure.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/page-structure.md) in diesem Repository.)
 * **[UML-Diagramme](uml-diagrams.html)** — visuelle Darstellung der Datenmodelle
   und ihrer Beziehungen.
 

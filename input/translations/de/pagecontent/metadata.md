@@ -19,7 +19,7 @@
 > Basis-Modul). Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte
 > ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in
 > dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**,
-> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/docs/optional-pages.md) dieses
+> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md) dieses
 > Repositories. Ein Release darf dieses Banner nicht enthalten
 > (Konventions-Check M9).
 {: .ig-highlight .ig-highlight-grey}
@@ -84,7 +84,7 @@ Release-Workflow aufgreifen.
 #### Von diesem Leitfaden deklarierte CRMI-Metadaten
 
 Die folgenden CRMI-Metadaten werden in
-[`sushi-config.yaml`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/sushi-config.yaml)
+[`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/sushi-config.yaml)
 gesetzt und landen in der erzeugten `ImplementationGuide`-Ressource.
 
 | Metadaten-Artefakt | CRMI-Bereich | Ort in diesem Leitfaden | Rolle im Artefaktmanagement |
@@ -97,8 +97,8 @@ gesetzt und landen in der erzeugten `ImplementationGuide`-Ressource.
 | [Artifact Version Algorithm](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-versionAlgorithm.html) | Artefakt-Konventionen; Versionierung | `ImplementationGuide.extension` (`semver`) | Deklariert, wie Versionen verglichen werden, um die aktuellere zu bestimmen. |
 | [Artifact Version Policy](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-versionPolicy.html) | Lebenszyklus; Versionierung | `ImplementationGuide.extension` (`package`) | Deklariert, dass Artefakt-Versionen mit der Paketversion geführt werden — ein Release kann ein Artefakt hochzählen, dessen Inhalt sich nicht geändert hat. |
 | [Package Source](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-package-source.html) | Versions-Manifest; Paketierung; Verteilung | `ImplementationGuide.extension` (packageId, version, uri) | Deklariert das Paket, in dem ein Artefakt definiert ist, damit Auswertungsumgebungen Namensräume und Abhängigkeiten im vorgesehenen Kontext auflösen. |
-| [Resource Approval Date](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-approvalDate.html) | Lebenszyklus; Veröffentlichung; Governance | `ImplementationGuide.extension` (`{{APPROVAL_DATE}}`) | Hält fest, wann der Herausgeber den Inhalt offiziell zur Nutzung freigegeben hat. |
-| [Resource Effective Period](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-effectivePeriod.html) | Lebenszyklus; Veröffentlichung; Implementierung | `ImplementationGuide.extension` (Beginn `{{CALVER_YEAR}}`) | Hält fest, für welchen Zeitraum der Inhalt gelten soll oder gegolten hat. |
+| [Resource Approval Date](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-approvalDate.html) | Lebenszyklus; Veröffentlichung; Governance | `ImplementationGuide.extension` (`*(not yet set — Gate A / noch nicht gesetzt)*`) | Hält fest, wann der Herausgeber den Inhalt offiziell zur Nutzung freigegeben hat. |
+| [Resource Effective Period](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-resource-effectivePeriod.html) | Lebenszyklus; Veröffentlichung; Implementierung | `ImplementationGuide.extension` (Beginn `2027`) | Hält fest, für welchen Zeitraum der Inhalt gelten soll oder gegolten hat. |
 | [Artifact Author](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-author.html)<br/>[Artifact Editor](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-editor.html)<br/>[Artifact Reviewer](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-reviewer.html)<br/>[Artifact Endorser](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-endorser.html) | Veröffentlichung; Governance; Provenienz | `ImplementationGuide.extension` | Hält Autorenschaft, die für die innere Stimmigkeit verantwortliche Redaktion, die Reviewer und die offiziell befürwortenden Gremien fest. Bei einem KDS-Modul sind Redaktion, Reviewer und befürwortende Gremien die Governance-Gremien des Kerndatensatz-Prozesses. |
 
 In diesem Gerüst nicht aktiviert, aber als auskommentierte Blöcke in
@@ -115,7 +115,7 @@ In diesem Gerüst nicht aktiviert, aber als auskommentierte Blöcke in
 > Tabellen oben nach. Wenn Ihr Modul die CRMI-Shareable-/Publishable-Profile
 > zusätzlich auf seine eigenen StructureDefinitions, CapabilityStatements,
 > CodeSysteme und ValueSets anwendet — das Idiom aus `kerndatensatz-basis` ist
-> ein gemeinsames `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/input/fsh/rulesets/crmi.fsh) —, ergänzen Sie die
+> ein gemeinsames `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/input/fsh/rulesets/crmi.fsh) —, ergänzen Sie die
 > entsprechenden Zeilen.]
 {: .ig-highlight .ig-highlight-grey}
 
@@ -136,7 +136,7 @@ Das menschenlesbare Versionsschema beschreibt die Seite
 Politik als CRMI-Metadaten ausgedrückt wird.
 
 Das Modul verwendet die Kalender-Versionierung in der SemVer-kompatiblen
-numerischen Form `JJJJ.MINOR.PATCH[-label]`, derzeit `{{CALVER_VERSION}}`. Das
+numerischen Form `JJJJ.MINOR.PATCH[-label]`, derzeit `{{site.data.fhir.igVer}}`. Das
 Kalenderjahr dient als CRMI-`<major>`-Komponente; `MINOR` und `PATCH` behalten
 ihre übliche additive bzw. korrigierende Bedeutung. Stabile Versionen lassen
 sich damit über den deklarierten Versionsalgorithmus `semver` vergleichen. Labels
