@@ -1,130 +1,130 @@
-## Questionnaire-Varianten-Architektur: Trennung der Verantwortlichkeiten
+## Questionnaire Variant Architecture: Separation of Concerns
 
-### Die architektonische Erkenntnis
+### The Architectural Insight
 
-Das MII PRO-Modul implementiert ein ausgeklügeltes Muster zur Trennung der Verantwortlichkeiten ("Separation of Concerns") für Fragebögen, bei dem verschiedene Varianten desselben Fragebogens unterschiedliche Zwecke im Workflow von Gesundheitsdaten erfüllen. Diese Architektur ermöglicht maximale Flexibilität bei gleichzeitiger Wahrung der semantischen Konsistenz über verschiedene Anwendungsfälle hinweg.
+The MII PRO module implements a sophisticated pattern for separation of concerns for questionnaires, where different variants of the same questionnaire serve different purposes within the healthcare data workflow. This architecture enables maximum flexibility while maintaining semantic consistency across different use cases.
 
-#### Basis-Capabilities (Baukasten-Prinzip)
+#### Base Capabilities (Building Block Principle)
 
-1. **Collectable** (Erfassbar): Wie Daten VON Nutzern EINGEGEBEN werden
-2. **Populatable** (Vorausfüllbar): Wie existierende Daten GELADEN werden
-3. **Calculatable** (Berechenbar): Wie Scores AUS Daten BERECHNET werden
-4. **Displayable** (Anzeigbar): Wie Daten/Ergebnisse DARGESTELLT werden
-5. **Extractable** (Extrahierbar): Wie Daten aus dem Fragebogenformat in andere FHIR-Ressourcen ÜBERFÜHRT werden
+1. **Collectable**: How data is ENTERED by users
+2. **Populatable**: How existing data is LOADED
+3. **Calculatable**: How scores are CALCULATED from data
+4. **Displayable**: How data/results are PRESENTED
+5. **Extractable**: How data is TRANSFERRED from the questionnaire format into other FHIR resources
 
-Die entscheidende Erkenntnis ist, dass ein konkreter Einsatz oft **weder einzelne noch alle Capabilities benötigt, sondern deren Kombinationen**, die spezifische Anwendungsfälle definieren.
+The crucial insight is that a concrete deployment often requires **neither single nor all capabilities, but combinations** that define specific use cases.
 
-#### Use-Case-basierte Capability-Kombinationen
+#### Use Case-Based Capability Combinations
 
-##### Use Case 1: Interaktive Datenerfassung mit Echtzeit-Scoring
+##### Use Case 1: Interactive Data Collection with Real-Time Scoring
 **Capabilities**: `[collectable, calculatable, displayable]`
-- Patient gibt Daten ein
-- Scores werden in Echtzeit berechnet
-- Ergebnisse werden Patienten sofort angezeigt
-- **Beispiel**: DiGA-Smartphone-App mit Live-Score-Updates
+- Patient enters data
+- Scores are calculated in real time
+- Results are displayed to the patient immediately
+- **Example**: DiGA smartphone app with live score updates
 
-##### Use Case 2: Mobile Datenerfassung -> Server-Berechnung
+##### Use Case 2: Mobile Data Collection -> Server-Side Calculation
 **Capabilities Client**: `[collectable]`
 **Capabilities Server**: `[populatable, calculatable, extractable]`
-- Mobile App erfasst nur Daten
-- Server lädt QuestionnaireResponse
-- Server berechnet Scores
-- **Beispiel**: Leichtgewichtige mobile PRO-App
+- Mobile app only collects data
+- Server loads QuestionnaireResponse
+- Server calculates scores
+- **Example**: Lightweight mobile PRO app
 
-##### Use Case 3: Historische Daten-Neuberechnung
+##### Use Case 3: Historical Data Recalculation
 **Capabilities**: `[populatable, calculatable, extractable]`
-- Keine Nutzerinteraktion
-- Lädt existierende Responses
-- Wendet neue Berechnungslogik an
-- **Beispiel**: Migration auf neue Scoring-Algorithmen oder Datenharmonisierung
+- No user interaction
+- Loads existing responses
+- Applies new calculation logic
+- **Example**: Migration to new scoring algorithms or data harmonization
 
-##### Use Case 4: Klinische Ergebnisansicht
+##### Use Case 4: Clinical Results View
 **Capabilities**: `[populatable, displayable]`
-- Nur-Lese-Zugriff
-- Zeigt vorhandene Daten und Scores
-- Keine Berechnung oder Eingabe
-- **Beispiel**: Arzt-Dashboard im KIS
+- Read-only access
+- Displays existing data and scores
+- No calculation or input
+- **Example**: Physician dashboard in the HIS
 
-##### Use Case 5: Reine Datenerfassung
+##### Use Case 5: Pure Data Collection
 **Capabilities**: `[collectable, extractable]`
-- Erfasst Daten ohne Berechnung
-- Extrahiert zu QuestionnaireResponse
-- Scoring erfolgt extern
-- **Beispiel**: Papier-zu-Digital-Erfassung
+- Collects data without calculation
+- Extracts to QuestionnaireResponse
+- Scoring performed externally
+- **Example**: Paper-to-digital capture
 
-### Der architektonische Durchbruch
+### The Architectural Breakthrough
 
-#### Vorausfüllungs-Workflow-Muster
+#### Pre-Population Workflow Pattern
 
 ```
-Collectable Fragebogen -> QuestionnaireResponse -> Calculatable Fragebogen -> Berechnete Scores -> Observation Ressourcen
+Collectable Questionnaire -> QuestionnaireResponse -> Calculatable Questionnaire -> Calculated Scores -> Observation Resources
 ```
 
-1. Patient füllt den Collectable-Fragebogen aus
-2. QuestionnaireResponse wird zur Vorausfüllung verwendet
-3. Calculatable-Fragebogen generiert Scores
-4. Scores werden als Observation-Ressourcen extrahiert
+1. Patient completes the collectable questionnaire
+2. QuestionnaireResponse is used for pre-population
+3. Calculatable questionnaire generates scores
+4. Scores are extracted as Observation resources
 
-Dieses Muster ermöglicht:
-1. **Saubere Trennung**: Erfassungslogik getrennt von Berechnungslogik
-2. **Flexibilität**: Verschiedene Berechnungsstrategien ohne Einfluss auf die Erfassung
-3. **Wiederverwendbarkeit**: Dieselben erfassten Daten können mehrere Berechnungsvarianten speisen
-4. **Evolution**: Berechnungslogik kann sich unabhängig von der Erfassung entwickeln
+This pattern enables:
+1. **Clean separation**: Collection logic separated from calculation logic
+2. **Flexibility**: Different calculation strategies without impact on collection
+3. **Reusability**: The same collected data can feed multiple calculation variants
+4. **Evolution**: Calculation logic can evolve independently from collection
 
-### Implementierungsbeispiel: EQ-5D-5L
+### Implementation Example: EQ-5D-5L
 
-Der EQ-5D-5L-Fragebogen demonstriert diese Architektur perfekt:
+The EQ-5D-5L questionnaire demonstrates this architecture perfectly:
 
 ~~~~
 //FSH
-// Basis-Fragebogen mit Kernstruktur
+// Base questionnaire with core structure
 Instance: mii-qst-pro-euroqol-eq5d5l-base
 * url = ".../mii-qst-pro-euroqol-eq5d5l-base"
 
-// Displayable-Variante zur Ansicht im KIS
+// Displayable variant for viewing in the HIS
 Instance: mii-qst-pro-euroqol-eq5d5l-displayable
 * derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
 * extension[questionnaire-capabilities].valueCode = #displayable
 
-// Collectable-Variante für Patientendateneingabe
+// Collectable variant for patient data entry
 Instance: mii-qst-pro-euroqol-eq5d5l-collectable
 * derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
 * extension[questionnaire-capabilities].valueCode = #collectable
-// Enthält versteckte "Fehlender Wert"-Optionen
+// Contains hidden "Missing value" options
 
-// Calculatable-Variante mit Scoring-Logik
+// Calculatable variant with scoring logic
 Instance: mii-qst-pro-euroqol-eq5d5l-calculatable
 * derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
 * extension[questionnaire-capabilities].valueCode = #calculatable
-// Enthält FHIRPath-Ausdrücke für Index-, VAS-, Profil-Scores
+// Contains FHIRPath expressions for index, VAS, profile scores
 ~~~~
 
-### Erweiterte Workflow-Szenarien
+### Advanced Workflow Scenarios
 
-#### Szenario 1: Mobile Erfassung -> Server-Berechnung
-1. Patient nutzt mobile App mit **Collectable**-Variante
-2. QuestionnaireResponse wird an Server gesendet
-3. Server nutzt **Calculatable**-Variante, vorausgefüllt mit Antwortdaten
-4. Berechnete Scores werden als Observations gespeichert
-5. Kliniker sieht Ergebnisse über **Displayable**-Variante
+#### Scenario 1: Mobile Collection -> Server-Side Calculation
+1. Patient uses mobile app with **Collectable** variant
+2. QuestionnaireResponse is sent to the server
+3. Server uses **Calculatable** variant, pre-populated with response data
+4. Calculated scores are stored as Observations
+5. Clinician views results via **Displayable** variant
 
-#### Szenario 2: Forschungsdatenerfassung -> Multiple Scoring-Algorithmen
-1. Eine einzige **Collectable**-Variante über alle Studienzentren
-2. Mehrere **Calculatable**-Varianten für verschiedene Scoring-Ansätze:
-   - Standard-Scoring
-   - Populationsspezifisches Scoring
-   - Forschungsspezifische Algorithmen
-3. Alle Berechnungen nutzen dieselben Quelldaten
+#### Scenario 2: Research Data Collection -> Multiple Scoring Algorithms
+1. A single **Collectable** variant across all study centers
+2. Multiple **Calculatable** variants for different scoring approaches:
+   - Standard scoring
+   - Population-specific scoring
+   - Research-specific algorithms
+3. All calculations use the same source data
 
-#### Szenario 3: Historische Datenmigration
-1. Legacy-Daten als QuestionnaireResponses importiert
-2. **Calculatable**-Varianten nachträglich angewendet
-3. Standardisierte Scores für historische Vergleiche generiert
+#### Scenario 3: Historical Data Migration
+1. Legacy data imported as QuestionnaireResponses
+2. **Calculatable** variants applied retrospectively
+3. Standardized scores generated for historical comparisons
 
-### Technische Implementierungsdetails
+### Technical Implementation Details
 
-#### Capability-Extensions
-Die Questionnaire-Capabilities werden als separate boolesche Sub-Extensions implementiert:
+#### Capability Extensions
+The questionnaire capabilities are implemented as separate boolean sub-extensions:
 
 ~~~~
 //FSH
@@ -144,39 +144,39 @@ Extension: MII_PR_PRO_Questionnaire_Capabilities
 * extension[domainAligned].value[x] only boolean
 ~~~~
 
-Diese boolesche Struktur ermöglicht flexible Capability-Kombinationen, da mehrere Capabilities gleichzeitig aktiv sein können.
+This boolean structure enables flexible capability combinations, as multiple capabilities can be active simultaneously.
 
-#### Vorausfüllungs-Mechanismus
-Nutzung der SDC-Vorausfüllungsfähigkeiten:
+#### Pre-Population Mechanism
+Utilization of SDC pre-population capabilities:
 ~~~~
-* extension[sdc-questionnaire-sourceQueries].valueReference = Reference(QuestionnaireResponse/erfasste-daten)
+* extension[sdc-questionnaire-sourceQueries].valueReference = Reference(QuestionnaireResponse/collected-data)
 * extension[sdc-questionnaire-launchContext].extension[name].valueId = "sourceResponse"
 * extension[sdc-questionnaire-launchContext].extension[type].valueCode = #QuestionnaireResponse
 ~~~~
 
-### Vorteile der Separation-of-Concerns Architektur
+### Advantages of the Separation-of-Concerns Architecture
 
-1. **Wartbarkeit**: Änderungen der Berechnungslogik beeinflussen nicht die Erfassung
-2. **Versionierung**: Verschiedene Versionen von Fragebögen und Berechnungen können koexistieren
-3. **Performance**: Berechnungen können separat von der Erfassung optimiert werden
-4. **Compliance**: Verschiedene Projekte können unterschiedliche Anforderungen bzgl. Darstellung haben
-5. **Forschung**: Neue Scoring-Algorithmen können ohne Änderung der Erfassung getestet werden
-6. **Integration**: Systeme können die für ihre Fähigkeiten geeignete Variante wählen
+1. **Maintainability**: Changes to calculation logic do not affect collection
+2. **Versioning**: Different versions of questionnaires and calculations can coexist
+3. **Performance**: Calculations can be optimized separately from collection
+4. **Compliance**: Different projects can have different presentation requirements
+5. **Research**: New scoring algorithms can be tested without modifying collection
+6. **Integration**: Systems can choose the variant appropriate to their capabilities
 
-Weitere erweiterte Capabilities in Betracht:
+Additional advanced capabilities under consideration:
 
-- Perzentilränge und Z-Scores
-- Alters- und geschlechtsadjustierte Normen
+- Percentile ranks and Z-scores
+- Age- and sex-adjusted norms
 
 **Change Detection**:
-- Automatische Erkennung signifikanter Veränderungen
-- Trend-Analysen über multiple Zeitpunkte
-- Alert-Generierung bei kritischen Veränderungen
+- Automatic detection of significant changes
+- Trend analyses across multiple time points
+- Alert generation for critical changes
 
-Diese erweiterten Capabilities werden die Integration von PROs in klinische Entscheidungsprozesse und Qualitätssicherung weiter verbessern.
+These advanced capabilities will further improve the integration of PROs into clinical decision-making processes and quality assurance.
 
-### Fazit
+### Conclusion
 
-Die Trennung von Displayable-, Collectable- und Calculatable-Fragebogen-Capabilities bietet einen strukturierten Ansatz für die PRO-Implementierung. Diese Aufteilung in grundlegend verschiedene Verantwortlichkeiten, die je nach Bedarf kombiniert werden können, unterstützt die Entwicklung flexibler und wartbarer Systeme für Patient-Reported Outcomes und deren Instrumente.
+The separation of displayable, collectable, and calculatable questionnaire capabilities provides a structured approach for PRO implementation. This division into fundamentally different responsibilities, which can be combined as needed, supports the development of flexible and maintainable systems for Patient-Reported Outcomes and their instruments.
 
-Dieser Architekturansatz adressiert die praktischen Herausforderungen moderner Gesundheits-IT, in der Datenerfassung, Berechnung und Präsentation häufig in unterschiedlichen Systemen, zu verschiedenen Zeitpunkten und für verschiedene Zwecke stattfinden.
+This architectural approach addresses the practical challenges of modern healthcare IT, where data collection, calculation, and presentation frequently occur in different systems, at different times, and for different purposes.

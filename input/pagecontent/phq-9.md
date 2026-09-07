@@ -1,70 +1,70 @@
-### Klinischer Kontext
+### Clinical Context
 
-Der PHQ-9 ist ein validiertes Screening-Instrument für Depression mit neun Items. Das Instrument erfasst die Häufigkeit von Depressionssymptomen über einen Zeitraum von zwei Wochen auf einer vierstufigen Skala.
+The PHQ-9 is a validated screening instrument for depression with nine items. The instrument assesses the frequency of depression symptoms over a two-week period on a four-point scale.
 
-**Scoring und Interpretation:**
-- 0-4: Keine/minimale Depression
-- 5-9: Milde Depression
-- 10-14: Moderate Depression
-- 15-19: Moderat schwere Depression
-- 20 und höher: Schwere Depression
+**Scoring and Interpretation:**
+- 0-4: No/minimal depression
+- 5-9: Mild depression
+- 10-14: Moderate depression
+- 15-19: Moderately severe depression
+- 20 and above: Severe depression
 
-**Klinische Hinweise:** Item 9 erfasst Suizidgedanken und erfordert bei jeder positiven Antwort eine sofortige klinische Bewertung, unabhängig vom Gesamtscore.
+**Clinical Notes:** Item 9 assesses suicidal ideation and requires immediate clinical evaluation for any positive response, regardless of the total score.
 
-### FHIR-Implementierung
+### FHIR Implementation
 
-> **Sprachstrategie:** Der PHQ-9 wird mit Englisch als Primärsprache implementiert, da die Originalversion des Instruments in Englisch verfasst ist. Deutsche Übersetzungen sind als Translations hinterlegt. Dies gewährleistet die korrekte Validierung gegen LOINC-Terminologien.
+> **Language Strategy:** The PHQ-9 is implemented with English as the primary language, as the original version of the instrument was written in English. German translations are provided as Translation extensions. This ensures correct validation against LOINC terminologies.
 
 #### Questionnaire
 
 **Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9`
 
-**Implementierte Capabilities:**
+**Implemented Capabilities:**
 - Displayable, Collectable, Populatable, Calculatable, Extractable, Domain-aligned
 
-**Besonderheiten:**
-- Automatische Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^phq-.*-q0[1-9]$')).answer.value.ordinal().sum()`
-- Populatable für server-seitige Berechnungen implementiert
-- LOINC-kodierte Antwortoptionen
+**Key Features:**
+- Automatic score calculation via FHIRPath: `%resource.item.where(linkId.matches('^phq-.*-q0[1-9]$')).answer.value.ordinal().sum()`
+- Populatable capability for server-side calculations implemented
+- LOINC-coded answer options
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-phq-9.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-phq-9.html) for the full resource.
 
-#### Score-Repräsentation
+#### Score Representation
 
-Der PHQ-9 Score wird auf mehreren Ebenen repräsentiert:
+The PHQ-9 score is represented at multiple levels:
 
-1. **Als berechnetes Item** in der QuestionnaireResponse (linkId: `phq9-total-score`)
-2. **Als Observation** mit LOINC-Code 44261-6 "PHQ-9 total score"
-3. **Als Domain-Score** gemappt auf PROMIS Depression T-Score
+1. **As a calculated item** in the QuestionnaireResponse (linkId: `phq9-total-score`)
+2. **As an Observation** with LOINC code 44261-6 "PHQ-9 total score"
+3. **As a domain score** mapped to PROMIS Depression T-Score
 
 **ObservationDefinition:** `mii-obsdef-pro-phq9-score`
-- Definiert Wertebereich: 0-27 {score}
-- Spezifiziert Interpretationsrichtlinien
+- Defines value range: 0-27 {score}
+- Specifies interpretation guidelines
 
-### Domain-Mapping
+### Domain Mapping
 
-Der PHQ-9 kann auf PROMIS Depression T-Scores gemappt werden:
+The PHQ-9 can be mapped to PROMIS Depression T-Scores:
 
 | PHQ-9 Score | PROMIS T-Score | Interpretation |
 |-------------|----------------|----------------|
 | 0-4         | ~41.0          | Minimal        |
 | 5-9         | ~50.0          | Mild           |
-| 10-14       | ~60.0          | Moderat        |
-| 15-19       | ~70.0          | Moderat schwer |
-| 20-27       | ~77.5          | Schwer         |
+| 10-14       | ~60.0          | Moderate       |
+| 15-19       | ~70.0          | Moderately severe |
+| 20-27       | ~77.5          | Severe         |
 
-### Beispiel-Ressourcen
+### Example Resources
 
 #### PHQ-9 QuestionnaireResponse
 
-Das vollständige Beispiel finden Sie unter [QuestionnaireResponse](QuestionnaireResponse-mii-exa-pro-phq-9-response.html).
+See the [full example](QuestionnaireResponse-mii-exa-pro-phq-9-response.html).
 
-### Validierung
+### Validation
 
-**Technisch:** Score-Bereich 0-27, alle Items für validen Score erforderlich, Ordinal-Werte: 0, 1, 2, 3
+**Technical:** Score range 0-27, all items required for a valid score, ordinal values: 0, 1, 2, 3
 
-**Klinisch:** Sensitivität 88%, Spezifität 88% für Major Depression (Cut-off 10 und höher), Test-Retest-Reliabilität: 0.84
+**Clinical:** Sensitivity 88%, specificity 88% for major depression (cut-off 10 and above), test-retest reliability: 0.84
 
-### Referenzen
+### References
 
 Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-13.

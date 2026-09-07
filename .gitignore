@@ -27,4 +27,5 @@ fhirpkg.lock.json
 
 # Beads credential key (per-user, must never be committed)
 .beads/.beads-credential-key
-package/
+/package/
+/translations/

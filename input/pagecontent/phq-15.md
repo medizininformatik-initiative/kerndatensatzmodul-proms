@@ -1,18 +1,20 @@
-### Klinischer Kontext
+<!-- TODO:REVIEW machine translation of source page phq-15.md (de) — template migration, Gate C; the authored text is input/translations/de/pagecontent/phq-15.md -->
 
-Der PHQ-15 ist ein validiertes Screening-Instrument für die Schwere **somatischer Symptome**. Das Instrument erfasst die Beeinträchtigung durch 15 körperliche Beschwerden über einen Zeitraum von vier Wochen auf einer dreistufigen Skala (0 = nicht, 1 = wenig, 2 = stark beeinträchtigt).
+### Clinical Context
 
-**Scoring und Interpretation** (Summenwert 0–30, Kroenke et al. 2002):
-- 0–4: Minimale somatische Symptomlast
-- 5–9: Geringe somatische Symptomlast
-- 10–14: Mittlere somatische Symptomlast
-- 15 und höher: Hohe somatische Symptomlast
+The PHQ-15 is a validated screening instrument for the severity of **somatic symptoms**. It captures the interference caused by 15 bodily complaints over a four-week period on a three-point scale (0 = not bothered, 1 = bothered a little, 2 = bothered a lot).
 
-**Zusammenhang mit der PHQ-Familie:** Zwei der 15 Items (Müdigkeit, Schlaf) stammen aus dem Depressionsmodul (PHQ-9). Im MII-PRO-Modul werden sie über den gemeinsamen PHQ-D-Itembank-Namespace identifiziert (`phq-phq2d` Müdigkeit, `phq-phq2c` Schlaf) — dieselben linkIds wie im PHQ-9 (instrument-spezifischer LOINC-Code wegen abweichender Skala/Recall).
+**Scoring and interpretation** (sum score 0–30, Kroenke et al. 2002):
+- 0–4: minimal somatic symptom burden
+- 5–9: low somatic symptom burden
+- 10–14: medium somatic symptom burden
+- 15 and above: high somatic symptom burden
 
-### FHIR-Implementierung
+**Relationship to the PHQ family:** two of the 15 items (fatigue, sleep) originate in the depression module (PHQ-9). In the MII PRO module they are identified through the shared PHQ-D item bank namespace (`phq-phq2d` fatigue, `phq-phq2c` sleep) — the same linkIds as in the PHQ-9 (instrument-specific LOINC code because of the differing scale and recall period).
 
-> **Sprachstrategie:** Englisch als Primärsprache (Original-Instrument), deutsche Texte als Translations (PHQ-D, Löwe et al. 2002). Gewährleistet korrekte Validierung gegen LOINC.
+### FHIR Implementation
+
+> **Language strategy:** English as the primary language (the original instrument), German texts as translations (PHQ-D, Löwe et al. 2002). This ensures correct validation against LOINC.
 
 #### Questionnaire
 
@@ -20,25 +22,27 @@ Der PHQ-15 ist ein validiertes Screening-Instrument für die Schwere **somatisch
 
 **Capabilities:** Displayable, Collectable, Calculatable, Extractable, Domain-aligned
 
-**Besonderheiten:**
-- linkIds im PHQ-D-Block-Namespace: somatisch `phq-phq1a`…`phq-phq1m`, plus geteilt `phq-phq2c` (Schlaf) / `phq-phq2d` (Müdigkeit).
-- Antwortskala über `answerValueSet` (`mii-vs-pro-phq-15-answers`); ordinale Gewichte (0/1/2) als Property auf den CodeSystem-Konzepten (`mii-cs-pro-phq-15-answers`).
-- Automatische Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()`. Hinweis: `.ordinal()`-Auflösung aus `answerValueSet` ist engine-abhängig; robustes Scoring via CQL/Server.
-- LOINC-Panel `69728-4`, Items LOINC-kodiert.
+**Implementation notes:**
+- linkIds in the PHQ-D block namespace: somatic `phq-phq1a`…`phq-phq1m`, plus the shared `phq-phq2c` (sleep) / `phq-phq2d` (fatigue).
+- Answer scale via `answerValueSet` (`mii-vs-pro-phq-15-answers`); ordinal weights (0/1/2) as a property on the CodeSystem concepts (`mii-cs-pro-phq-15-answers`).
+- Automatic score calculation via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()`. Note: resolving `.ordinal()` from an `answerValueSet` is engine-dependent; robust scoring via CQL/server.
+- LOINC panel `69728-4`, items LOINC-coded.
 
-Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-phq-15.html).
+The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-phq-15.html).
 
-#### Score-Repräsentation
+#### Score Representation
 
-1. **Berechnetes Item** in der QuestionnaireResponse (linkId: `phq-phq15-score-total`)
-2. **Observation** mit LOINC-Code `70273-8` „Patient Health Questionnaire 15 item (PHQ-15) total score"
-3. **ObservationDefinition:** `mii-obsdef-pro-score-phq-15` — Wertebereich 0–30 {score}, höher = größere somatische Symptomlast
+1. **Calculated item** in the QuestionnaireResponse (linkId: `phq-phq15-score-total`)
+2. **Observation** carrying the LOINC code `70273-8` "Patient Health Questionnaire 15 item (PHQ-15) total score"
+3. **ObservationDefinition:** `mii-obsdef-pro-score-phq-15` — value range 0–30 {score}, higher = greater somatic symptom burden
 
-### Lizenz
+### License
 
-PHQ / PHQ-15 © Pfizer Inc. — **frei verfügbar** (public domain), keine Genehmigung für Reproduktion/Übersetzung/Nutzung erforderlich. Deutsche Fassung: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002).
+PHQ / PHQ-15 © Pfizer Inc. — **freely available** (public domain); no permission required for reproduction, translation or use. German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002).
 
-### Quellen
+### Sources
 
 - Kroenke K, Spitzer RL, Williams JBW. The PHQ-15: validity of a new measure for evaluating the severity of somatic symptoms. *Psychosomatic Medicine* 2002;64(2):258–266.
 - Gräfe K, Zipfel S, Herzog W, Löwe B. Screening psychischer Störungen mit dem „Gesundheitsfragebogen für Patienten (PHQ-D)". *Diagnostica* 2004;50(4):171–181. doi:10.1026/0012-1924.50.4.171
+
+**Example response:** [PHQ-15 QuestionnaireResponse](QuestionnaireResponse-mii-exa-pro-phq-15-response.html)

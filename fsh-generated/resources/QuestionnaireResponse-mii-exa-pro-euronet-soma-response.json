@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-euronet-soma-response",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2026.7.0"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc1"
     ]
   },
   "item": [
@@ -30,5 +30,5 @@
     "reference": "Patient/mii-exa-pro-patient"
   },
   "authored": "2026-08-28T09:45:00Z",
-  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma"
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma|2027.0.0-ballot.rc1"
 }

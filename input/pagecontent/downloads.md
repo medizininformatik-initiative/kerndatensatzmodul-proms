@@ -1,42 +1,42 @@
-Die folgenden Ressourcen stehen zum Download bereit:
+The following resources are available for download:
 
-### Vollständiger Implementation Guide
+### Full Implementation Guide
 
-Der vollständige Implementation Guide ist als herunterladbare Ressource verfügbar:
+The complete Implementation Guide is available as a downloadable resource:
 
-- [Vollständiger IG (zip)](full-ig.zip)
+- [Full IG (zip)](full-ig.zip)
 
-### Paket
+### Package
 
-Das NPM-Paket für diesen IG kann mit FHIR-kompatiblen Werkzeugen verwendet werden:
+The NPM package for this IG can be used with FHIR-compatible tools:
 
-- [Paket (tgz)](package.tgz)
+- [Package (tgz)](package.tgz)
 
-### Definitionen
+### Definitions
 
-Die folgenden Definitionsformate sind verfügbar:
+The following definition formats are available:
 
-| Format | Alle Profile | Alle Beispiele |
-|--------|-------------|----------------|
-| JSON   | [Definitionen (JSON)](definitions.json.zip) | [Beispiele (JSON)](examples.json.zip) |
-| XML    | [Definitionen (XML)](definitions.xml.zip)   | [Beispiele (XML)](examples.xml.zip)   |
+| Format | All Profiles | All Examples |
+|--------|-------------|--------------|
+| JSON   | [Definitions (JSON)](definitions.json.zip) | [Examples (JSON)](examples.json.zip) |
+| XML    | [Definitions (XML)](definitions.xml.zip)   | [Examples (XML)](examples.xml.zip)   |
 
-### Validierung
+### Validation
 
-Um Ressourcen gegen die in diesem IG definierten Profile zu validieren, laden Sie das Definitionspaket herunter und verwenden Sie es mit dem [FHIR Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator).
+To validate resources against profiles defined in this IG, download the definitions package and use it with the [FHIR Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator).
 
-### Cross-Version-Analyse
+### Cross-Version Analysis
 
 {% include cross-version-analysis.xhtml %}
 
-### Erklärungen zum geistigen Eigentum
+### Intellectual Property Statements
 
 {% include ip-statements.xhtml %}
 
-### Abhängigkeiten
+### Dependencies
 
 {% include dependency-table.xhtml %}
 
-### Globale Profile
+### Global Profiles
 
 {% include globals-table.xhtml %}

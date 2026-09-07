@@ -1,26 +1,26 @@
-### PROMIS Depression Short Form 4a -- Technische Dokumentation
+### PROMIS Depression Short Form 4a -- Technical Documentation
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-promis-depression-sf4a.html).
+See the [Questionnaire definition](Questionnaire-mii-qst-pro-promis-depression-sf4a.html) for the full resource.
 
-#### Hintergrund und Konzept
+#### Background and Concept
 
-Das PROMIS Depression Short Form 4a repräsentiert einen modernen Ansatz zur präzisen Messung von Depressionssymptomen mittels Item Response Theory (IRT). Als Teil des Patient-Reported Outcomes Measurement Information System (PROMIS) wurde dieses Instrument vom US National Institute of Health (NIH) entwickelt und international validiert.
+The PROMIS Depression Short Form 4a represents a modern approach to precise measurement of depression symptoms using Item Response Theory (IRT). As part of the Patient-Reported Outcomes Measurement Information System (PROMIS), this instrument was developed by the US National Institutes of Health (NIH) and has been internationally validated.
 
-Die vier Items wurden aus einer umfassenden Item Bank von über 30 Depression-Items ausgewählt, um mit minimaler Testlänge maximale Messpräzision zu erreichen. Die IRT-basierte Kalibrierung ermöglicht die Konversion von Raw Scores in standardisierte T-Scores, die mit der US-Normalbevölkerung (Mean=50, SD=10) vergleichbar sind.
+The four items were selected from a comprehensive item bank of over 30 depression items to achieve maximum measurement precision with minimal test length. The IRT-based calibration enables conversion of raw scores to standardized T-Scores that are comparable with the US general population (Mean=50, SD=10).
 
-#### Psychometrische Eigenschaften
+#### Psychometric Properties
 
-**Reliabilität**: Die interne Konsistenz (Cronbach's alpha) liegt typischerweise zwischen 0.85-0.92 für verschiedene Populationen. Die Test-Retest-Reliabilität über 2-4 Wochen beträgt r=0.80-0.88.
+**Reliability**: Internal consistency (Cronbach's alpha) typically ranges between 0.85-0.92 across different populations. Test-retest reliability over 2-4 weeks is r=0.80-0.88.
 
-**Validität**: Konvergente Validität mit etablierten Depressionsskalen wie PHQ-9 (r=0.75-0.85) und BDI-II (r=0.78-0.88). Diskriminante Validität gegenüber anderen PROMIS-Domänen wie Angst (r=0.65) und körperlicher Funktion (r=-0.45).
+**Validity**: Convergent validity with established depression scales such as PHQ-9 (r=0.75-0.85) and BDI-II (r=0.78-0.88). Discriminant validity against other PROMIS domains such as anxiety (r=0.65) and physical function (r=-0.45).
 
-**Kulturelle Adaptation**: Umfassende psychometrische Validierung für deutschsprachige Populationen durch das Charite Universitätsmedizin Berlin Team. Differential Item Functioning (DIF) Analysen bestätigen kulturelle Äquivalenz zwischen US- und deutschen Populationen.
+**Cultural Adaptation**: Comprehensive psychometric validation for German-speaking populations by the Charite Universitaetsmedizin Berlin team. Differential Item Functioning (DIF) analyses confirm cultural equivalence between US and German populations.
 
-#### Technische FHIR-Implementierung
+#### Technical FHIR Implementation
 
-**Questionnaire-Architektur**
+**Questionnaire Architecture**
 
-Das Questionnaire folgt dem SDC (Structured Data Capture) Standard und implementiert erweiterte Capabilities für automatisierte Score-Berechnung. Die Implementierung nutzt FHIR-Variablen zur Vermeidung zirkulärer Abhängigkeiten zwischen Items und berechneten Scores.
+The Questionnaire follows the SDC (Structured Data Capture) standard and implements extended capabilities for automated score calculation. The implementation uses FHIR variables to avoid circular dependencies between items and calculated scores.
 
 ```fsh
 // FSH
@@ -34,17 +34,17 @@ Usage: #definition
 * code = $LNC#77823-3
 ```
 
-**Item-Struktur und Scoring**
+**Item Structure and Scoring**
 
-Jedes der vier Items referenziert die offizielle PROMIS Item Bank Nomenklatur:
+Each of the four items references the official PROMIS Item Bank nomenclature:
 - promis-eddep04: "I felt worthless"
 - promis-eddep06: "I felt helpless"
 - promis-eddep29: "I felt depressed"
 - promis-eddep05: "I felt like a failure"
 
-Die Antwortoptionen folgen der standardisierten 5-stufigen PROMIS-Skala mit numerischen Werten 1-5, die für Score-Berechnungen auf 0-4 umkodiert werden.
+The answer options follow the standardized 5-level PROMIS scale with numeric values 1-5, which are recoded to 0-4 for score calculations.
 
-**Variable-basierte Score-Berechnung**
+**Variable-Based Score Calculation**
 
 ```fsh
 // FSH
@@ -57,7 +57,7 @@ Die Antwortoptionen folgen der standardisierten 5-stufigen PROMIS-Skala mit nume
    %promis-eddep29.answer.value + %promis-eddep05.answer.value"
 ```
 
-Die T-Score Konversion erfolgt über eine lookup-basierte FHIRPath-Expression, die die IRT-kalibrierten Transformationstabellen implementiert:
+The T-Score conversion is performed via a lookup-based FHIRPath expression implementing the IRT-calibrated transformation tables:
 
 ```fsh
 // FSH
@@ -71,11 +71,11 @@ Die T-Score Konversion erfolgt über eine lookup-basierte FHIRPath-Expression, d
    iif(%rawScore = 7, 42.9, ...))))"
 ```
 
-#### Observation-Profile und Datenextraktion
+#### Observation Profiles and Data Extraction
 
 **Raw Score Observation Profile**
 
-Das `MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score` Profil definiert die Struktur für Raw Score Observations mit einem Wertebereich von 4-20 Punkten. Die Observation wird direkt aus der QuestionnaireResponse extrahiert und referenziert diese über das derivedFrom Element.
+The `MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score` profile defines the structure for raw score Observations with a value range of 4-20 points. The Observation is extracted directly from the QuestionnaireResponse and references it via the derivedFrom element.
 
 ```fsh
 // FSH
@@ -89,40 +89,40 @@ Profile: MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score
 
 **T-Score Observation Profile**
 
-Das generische `MII_PR_PRO_Depression_T_Score` Profil wird für alle depressionsbezogenen T-Scores verwendet und ermöglicht eine konsistente Datenstruktur über verschiedene Depressionsinstrumente hinweg.
+The generic `MII_PR_PRO_Depression_T_Score` profile is used for all depression-related T-Scores, enabling a consistent data structure across different depression instruments.
 
-#### ObservationDefinition und Referenzdaten
+#### ObservationDefinition and Reference Data
 
-**Europäische Populationsnormen**
+**European Population Norms**
 
-Die ObservationDefinition `mii-obsdef-pro-depression-t-score` integriert umfassende europäische Referenzdaten aus der European Health Interview Survey (EHIS) Wave 3 Studie mit 287.530 Teilnehmern aus 29 europäischen Ländern.
+The ObservationDefinition `mii-obsdef-pro-depression-t-score` integrates comprehensive European reference data from the European Health Interview Survey (EHIS) Wave 3 study with 287,530 participants from 29 European countries.
 
-**Deutsche Population (n=22.996)**:
+**German Population (n=22,996)**:
 - Mean: 46.5 (SD: 7.7)
 - Median: 45.5
 - IQR: 41.8-51.5
 
-Diese Werte zeigen, dass die deutsche Population im Durchschnitt niedrigere Depressionswerte aufweist als die US-Normierung (Mean=50), was bei der klinischen Interpretation berücksichtigt werden muss.
+These values show that the German population on average exhibits lower depression scores than the US norm (Mean=50), which must be considered in clinical interpretation.
 
-**Geschlechtsspezifische Unterschiede**:
-- Männer (Median): 44.11 (IQR: 38.06-50.40)
-- Frauen (Median): 46.37 (IQR: 40.00-52.76)
+**Sex-Specific Differences**:
+- Males (Median): 44.11 (IQR: 38.06-50.40)
+- Females (Median): 46.37 (IQR: 40.00-52.76)
 
-#### Klinische Interpretation und Cut-off Werte
+#### Clinical Interpretation and Cut-off Values
 
-**Severity-Level basierend auf T-Scores**:
-- Normal: T-Score <55 (innerhalb 0.5 SD der US-Norm)
-- Mild: T-Score 55-59.9 (0.5-1.0 SD über Norm)
-- Moderate: T-Score 60-69.9 (1.0-2.0 SD über Norm)
-- Severe: T-Score 70 und höher (>2.0 SD über Norm)
+**Severity Levels Based on T-Scores**:
+- Normal: T-Score <55 (within 0.5 SD of the US norm)
+- Mild: T-Score 55-59.9 (0.5-1.0 SD above norm)
+- Moderate: T-Score 60-69.9 (1.0-2.0 SD above norm)
+- Severe: T-Score 70 and above (>2.0 SD above norm)
 
-**Europäische Kontextualisierung**: Aufgrund der niedrigeren europäischen Baseline-Werte sollten Cut-offs entsprechend angepasst werden. Ein T-Score von 55 entspricht etwa der 75. Perzentile der deutschen Population.
+**European Contextualization**: Due to the lower European baseline values, cut-offs should be adjusted accordingly. A T-Score of 55 corresponds to approximately the 75th percentile of the German population.
 
-#### MII-Terminologie Integration
+#### MII Terminology Integration
 
-**Controlled Vocabulary Strategie**
+**Controlled Vocabulary Strategy**
 
-Die Implementierung nutzt MII ValueSets, um zuverlässige Score-Berechnungen zu gewährleisten. Standard LOINC Answer Lists enthalten keine numerischen Scoring-Gewichte, was automatisierte FHIRPath-Berechnungen verhindert.
+The implementation uses MII ValueSets to ensure reliable score calculations. Standard LOINC Answer Lists do not contain numeric scoring weights, which prevents automated FHIRPath calculations.
 
 ```fsh
 // FSH
@@ -132,43 +132,43 @@ Die Implementierung nutzt MII ValueSets, um zuverlässige Score-Berechnungen zu 
 * answerOption[1].valueCoding.extension[itemWeight].valueDecimal = 1
 ```
 
-**LOINC-Mapping für Interoperabilität**
+**LOINC Mapping for Interoperability**
 
-Parallel zur MII-Terminologie werden offizielle LOINC-Codes verwendet, um internationale Interoperabilität zu gewährleisten. ConceptMaps verbinden MII-ValueSets mit LOINC Answer Lists für bidirektionale Übersetzung.
+In parallel with MII terminology, official LOINC codes are used to ensure international interoperability. ConceptMaps connect MII ValueSets with LOINC Answer Lists for bidirectional translation.
 
-#### Qualitätssicherung und Validierung
+#### Quality Assurance and Validation
 
-**Automatisierte Konsistenzprüfungen**
+**Automated Consistency Checks**
 
-Die SDC-Implementierung ermöglicht Real-time Validierung während der Datenerfassung:
-- Vollständigkeitsprüfung aller vier Items
-- Plausibilitätschecks für berechnete Scores
-- Konsistenzvalidierung zwischen Raw Score und T-Score
+The SDC implementation enables real-time validation during data collection:
+- Completeness check of all four items
+- Plausibility checks for calculated scores
+- Consistency validation between raw score and T-Score
 
-**Retrospektive Score-Neuberechnung**
+**Retrospective Score Recalculation**
 
-Für Qualitätssicherung können historische QuestionnaireResponses gegen die aktuelle Questionnaire-Definition validiert werden, um Berechnungsfehler oder Implementierungsinkonsistenzen zu identifizieren.
+For quality assurance, historical QuestionnaireResponses can be validated against the current Questionnaire definition to identify calculation errors or implementation inconsistencies.
 
-#### Integration in klinische Workflows
+#### Integration into Clinical Workflows
 
-**Screening und Monitoring**
+**Screening and Monitoring**
 
-Das PROMIS Depression SF 4a eignet sich sowohl für initiales Screening als auch für longitudinales Monitoring von Behandlungsverläufen. Die kurze Testlänge (ca. 1-2 Minuten) ermöglicht häufige Messungen ohne Patientenbelastung.
+The PROMIS Depression SF 4a is suitable for both initial screening and longitudinal monitoring of treatment courses. The short test length (approximately 1-2 minutes) enables frequent measurements without patient burden.
 
-**Interoperabilität mit anderen Instrumenten**
+**Interoperability with Other Instruments**
 
-Cross-Walking Tabellen ermöglichen die Konversion zwischen PROMIS Depression T-Scores und anderen etablierten Depressionsskalen wie PHQ-9 oder BDI-II, wodurch historische Daten vergleichbar gemacht werden können.
+Cross-walking tables enable conversion between PROMIS Depression T-Scores and other established depression scales such as PHQ-9 or BDI-II, making historical data comparable.
 
-#### Implementierungsempfehlungen
+#### Implementation Recommendations
 
-**Für klinische Anwendung**:
-- Verwendung europäischer Referenzbereiche statt US-Normen
-- Integration in elektronische Patientenakten über FHIR-Observations
-- Longitudinale Verlaufsdokumentation für Therapiemonitoring
+**For Clinical Use**:
+- Use European reference ranges instead of US norms
+- Integrate into electronic health records via FHIR Observations
+- Longitudinal trajectory documentation for therapy monitoring
 
-**Für Forschungsanwendung**:
-- Standardisierte T-Score Metriken für Multi-Site-Studien
-- Kompatibilität mit internationalen PROMIS-Implementierungen
-- Möglichkeit für adaptive Testing-Erweiterungen
+**For Research Use**:
+- Standardized T-Score metrics for multi-site studies
+- Compatibility with international PROMIS implementations
+- Potential for adaptive testing extensions
 
-Diese umfassende Implementierung positioniert das PROMIS Depression SF 4a als Referenzbeispiel für moderne, IRT-basierte PRO-Instrumente im deutschen Gesundheitswesen und demonstriert die fortgeschrittenen Capabilities des MII PRO Moduls.
+This comprehensive implementation positions the PROMIS Depression SF 4a as a reference example for modern, IRT-based PRO instruments in the German healthcare system and demonstrates the advanced capabilities of the MII PRO Module.

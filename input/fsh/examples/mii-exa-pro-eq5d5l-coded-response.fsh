@@ -8,7 +8,7 @@ Usage: #example
 * status = #completed
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2024-03-15T14:45:00+01:00"
-* questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding"
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding)
 
 // Mobility - Moderate problems (using MII CodeSystem)
 * item[+].linkId = "euroqol-eq5d5l-coded-q01-MO"

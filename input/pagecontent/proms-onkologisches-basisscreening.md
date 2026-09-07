@@ -1,44 +1,46 @@
-### Überblick
+<!-- TODO:REVIEW machine translation of source page proms-onkologisches-basisscreening.md (de) — template migration, Gate C; the authored text is input/translations/de/pagecontent/proms-onkologisches-basisscreening.md -->
 
-Das **Onkologische Basisscreening** ist ein PRO-CTCAE-basiertes Symptom-Screening-Instrument für die allgemeine onkologische Versorgung. Es bildet die gleichen Symptome ab wie das palliativmedizinische [MIDOS2](midos2.html), nutzt jedoch die differenzierteren PRO-CTCAE-Antwortskalen.
+### Overview
 
-**Grundlegende Eigenschaften:**
-- **23 Items** aus 10 PRO-CTCAE Adverse-Event-Konzepten
-- **Antwortskalen**: 5-stufige PRO-CTCAE-Skalen (Häufigkeit / Schweregrad / Beeinträchtigung)
-- **Zeitbezug**: Letzte 7 Tage
-- **Lizenz**: PRO-CTCAE ist ein Produkt des US National Cancer Institute (NCI), frei verwendbar
-- **Quelle**: PRO-CTCAE Item Library v1.0, deutsche Übersetzung NCI-autorisiert
-- **Administration**: 5-10 Minuten
+The **Oncology Base Screening** is a PRO-CTCAE-based symptom screening instrument for general oncological care. It represents the same symptoms as the palliative-care [MIDOS2](midos2.html) but uses the more differentiated PRO-CTCAE response scales.
 
-### Abgrenzung zum vollständigen PRO-CTCAE
+**Key Properties:**
+- **23 items** from 10 PRO-CTCAE adverse-event concepts
+- **Response scales**: 5-point PRO-CTCAE scales (frequency / severity / interference)
+- **Time frame**: past 7 days
+- **License**: PRO-CTCAE is a product of the US National Cancer Institute (NCI), freely usable
+- **Source**: PRO-CTCAE Item Library v1.0, NCI-authorised German translation
+- **Administration**: 5-10 minutes
 
-Das Onkologische Basisscreening ist eine **kuratierte Auswahl** aus der PRO-CTCAE-Itembank (124 Items / 78 Adverse Events). Die Symptomauswahl orientiert sich an den MIDOS2-Symptomen und repräsentiert die häufigsten und klinisch relevantesten Symptome onkologischer Patienten.
+### Delimitation from the Full PRO-CTCAE
 
-Weitere PRO-CTCAE-Derivate im IG:
-- [PRO-CTCAE Breast-DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html) — 21 Items für Brustkrebspatientinnen
-- PRO-CTCAE Complete Master *(geplant, derzeit nur als CodeSystem verfügbar)*
+The Oncology Base Screening is a **curated selection** from the PRO-CTCAE item bank (124 items / 78 adverse events). The symptom selection follows the MIDOS2 symptoms and represents the most frequent and clinically most relevant symptoms of oncology patients.
 
-### Symptomauswahl und Item-Mapping
+Other PRO-CTCAE derivatives in this IG:
+- [PRO-CTCAE Breast-DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html) — 21 items for breast cancer patients
+- PRO-CTCAE Complete Master *(planned, currently available only as a CodeSystem)*
 
-| # | Symptom | PRO-CTCAE AE | Attribute | Items |
+### Symptom Selection and Item Mapping
+
+| # | Symptom | PRO-CTCAE AE | Attributes | Items |
 |---|---------|--------------|-----------|-------|
-| 1 | Schmerz | #48 General Pain | frq+sev+int | 3 |
-| 2 | Müdigkeit | #53 Fatigue | sev+int | 2 |
-| 3 | Übelkeit | #9 Nausea | frq+sev | 2 |
-| 4 | Erbrechen | #10 Vomiting | frq+sev | 2 |
-| 5 | Appetitmangel | #8 Decreased Appetite | sev+int | 2 |
-| 6 | Verstopfung | #15 Constipation | sev | 1 |
-| 7 | Luftnot/Kurzatmigkeit | #19 Shortness of Breath | sev+int | 2 |
-| 8 | Mutlosigkeit | #55 Discouraged | frq+sev+int | 3 |
-| 9 | Traurigkeit | #56 Sad | frq+sev+int | 3 |
-| 10 | Angst | #54 Anxiety | frq+sev+int | 3 |
-| | **Summe** | **10 AEs** | | **23 Items** |
+| 1 | Pain | #48 General Pain | frq+sev+int | 3 |
+| 2 | Fatigue | #53 Fatigue | sev+int | 2 |
+| 3 | Nausea | #9 Nausea | frq+sev | 2 |
+| 4 | Vomiting | #10 Vomiting | frq+sev | 2 |
+| 5 | Decreased appetite | #8 Decreased Appetite | sev+int | 2 |
+| 6 | Constipation | #15 Constipation | sev | 1 |
+| 7 | Shortness of breath | #19 Shortness of Breath | sev+int | 2 |
+| 8 | Discouragement | #55 Discouraged | frq+sev+int | 3 |
+| 9 | Sadness | #56 Sad | frq+sev+int | 3 |
+| 10 | Anxiety | #54 Anxiety | frq+sev+int | 3 |
+| | **Total** | **10 AEs** | | **23 items** |
 
-### Antwortskalen
+### Response Scales
 
-#### Häufigkeit (Frequency, 5-stufig)
+#### Frequency (5-point)
 
-| Wert | Deutsch | Englisch |
+| Value | German | English |
 |------|---------|----------|
 | 0 | Nie | Never |
 | 1 | Selten | Rarely |
@@ -46,9 +48,9 @@ Weitere PRO-CTCAE-Derivate im IG:
 | 3 | Häufig | Frequently |
 | 4 | Fast immer | Almost constantly |
 
-#### Schweregrad (Severity, 5-stufig)
+#### Severity (5-point)
 
-| Wert | Deutsch | Englisch |
+| Value | German | English |
 |------|---------|----------|
 | 0 | Gar nicht | None |
 | 1 | Ein wenig | Mild |
@@ -56,66 +58,66 @@ Weitere PRO-CTCAE-Derivate im IG:
 | 3 | Ziemlich | Severe |
 | 4 | Sehr | Very severe |
 
-#### Beeinträchtigung (Interference, 5-stufig)
+#### Interference (5-point)
 
-Skala wie Severity (in der deutschen NCI-Übersetzung identisch betextet).
+The same scale as severity (identically worded in the German NCI translation).
 
-### Score-Berechnung
+### Score Calculation
 
-Das Onkologische Basisscreening folgt der **PRO-CTCAE Composite Grading Algorithm** (Basch et al. 2014). Pro Symptom wird ein Composite Grade aus den vorhandenen Attributen berechnet (Rank 1-7 je nach Attributkombination). Die genaue Berechnung erfolgt CQL-basiert über die etablierte PRO-CTCAE-Library (`mii-lib-pro-ctcae`).
+The Oncology Base Screening follows the **PRO-CTCAE composite grading algorithm** (Basch et al. 2014). Per symptom a composite grade is computed from the available attributes (rank 1-7 depending on the attribute combination). The exact calculation is performed in CQL via the established PRO-CTCAE library (`mii-lib-pro-ctcae`).
 
-| Composite Grade | Klinische Interpretation |
+| Composite grade | Clinical interpretation |
 |-----------------|--------------------------|
-| 0 | Kein Symptom |
-| 1 | Mildes Symptom |
-| 2 | Moderates Symptom |
-| 3 | Schweres Symptom |
+| 0 | No symptom |
+| 1 | Mild symptom |
+| 2 | Moderate symptom |
+| 3 | Severe symptom |
 
-Zusätzlich kann ein **Average Composite Score (ACS)** über alle erfassten Symptome berechnet werden — ein aggregiertes Maß für die Gesamtbelastung.
+In addition, an **average composite score (ACS)** can be computed across all captured symptoms — an aggregate measure of overall burden.
 
-### Mapping zu MIDOS2
+### Mapping to MIDOS2
 
-| MIDOS2-Symptom | Mapping ins Onkologische Basisscreening |
+| MIDOS2 symptom | Mapping into the Oncology Base Screening |
 |---|---|
-| Schmerz | #48 General Pain (1:1) |
-| Übelkeit | #9 Nausea (1:1) |
-| Erbrechen | #10 Vomiting (1:1) |
-| Luftnot | #19 Shortness of Breath (1:1) |
-| Verstopfung | #15 Constipation (1:1) |
-| Müdigkeit + Schwäche | #53 Fatigue (PRO-CTCAE bündelt) |
-| Appetitmangel | #8 Decreased Appetite (1:1) |
-| Depressivität | #55 Discouraged + #56 Sad (PRO-CTCAE zerlegt) |
-| Angst + Anspannung | #54 Anxiety (PRO-CTCAE bündelt) |
-| Wohlbefinden gesamt | _kein PRO-CTCAE-Äquivalent_ |
+| Pain | #48 General Pain (1:1) |
+| Nausea | #9 Nausea (1:1) |
+| Vomiting | #10 Vomiting (1:1) |
+| Dyspnoea | #19 Shortness of Breath (1:1) |
+| Constipation | #15 Constipation (1:1) |
+| Fatigue + weakness | #53 Fatigue (PRO-CTCAE bundles them) |
+| Loss of appetite | #8 Decreased Appetite (1:1) |
+| Depressed mood | #55 Discouraged + #56 Sad (PRO-CTCAE splits it) |
+| Anxiety + tension | #54 Anxiety (PRO-CTCAE bundles them) |
+| Overall well-being | _no PRO-CTCAE equivalent_ |
 
-Eine ConceptMap auf Antwort-Ebene (4-stufig ↔ 5-stufig) ist für eine spätere Iteration vorgesehen.
+A ConceptMap at the response level (4-point ↔ 5-point) is planned for a later iteration.
 
-### FHIR-Implementierung
+### FHIR Implementation
 
-> **Sprachstrategie:** Deutsch als Primärsprache, Englisch als Translation. Die Item-Wordings stammen direkt aus dem NCI-autorisierten deutschen PRO-CTCAE Item Library v1.0.
+> **Language strategy:** German as the primary language, English as the translation. The item wordings come directly from the NCI-authorised German PRO-CTCAE Item Library v1.0.
 
 #### Questionnaire
 
 **Canonical URL:** `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening`
 
-**Implementierte Capabilities:**
+**Implemented capabilities:**
 - Displayable, Collectable, Extractable, Domain-aligned
-- *Calculatable* aktiviert nach Anbindung der CQL Library
+- *Calculatable* will be enabled once the CQL library is connected
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html).
+The complete resource is in the [Questionnaire definition](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html).
 
-#### Wiederverwendete Ressourcen
+#### Reused Resources
 
-Das Onkologische Basisscreening referenziert das bestehende [PRO-CTCAE CodeSystem](CodeSystem-mii-cs-pro-pro-ctcae.html) und die etablierten ValueSets für Frequency, Severity und Interference.
+The Oncology Base Screening references the existing [PRO-CTCAE CodeSystem](CodeSystem-mii-cs-pro-pro-ctcae.html) and the established ValueSets for frequency, severity and interference.
 
-### Literatur
+### Literature
 
 1. **Basch E, Reeve BB, Mitchell SA, et al.** (2014)
    *Development of the National Cancer Institute's Patient-Reported Outcomes Version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE)*
    Journal of the National Cancer Institute. 106(9):dju244 (DOI 10.1093/jnci/dju244)
 
 2. **National Cancer Institute (2025)**
-   *PRO-CTCAE Item Library v1.0 — Deutsche Übersetzung*
+   *PRO-CTCAE Item Library v1.0 — German translation*
    healthcaredelivery.cancer.gov/pro-ctcae
 
 3. **Hamacher S, Hellmich M, Lorenz C, et al.** (2023)
@@ -124,4 +126,4 @@ Das Onkologische Basisscreening referenziert das bestehende [PRO-CTCAE CodeSyste
 
 ---
 
-> **Status:** Diese Implementierung ist als `draft` und `experimental` markiert. Eine `derivedFrom`-Beziehung zu einem vollständigen PRO-CTCAE Master Questionnaire ist geplant.
+> **Status:** this implementation is marked `draft` and `experimental`. A `derivedFrom` relationship to a complete PRO-CTCAE master questionnaire is planned.

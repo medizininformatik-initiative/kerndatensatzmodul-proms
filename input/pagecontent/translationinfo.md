@@ -1,14 +1,14 @@
-Dieser Implementation Guide ist in mehreren Sprachen verfügbar:
+This Implementation Guide is available in multiple languages:
 
-- **Englisch** (Primärsprache)
-- **Deutsch** (Übersetzung)
+- **English** (primary language)
+- **German** (translation)
 
-Die Sprache kann über den Sprachumschalter in der oberen Navigationsleiste gewechselt werden.
+The language can be switched using the language selector in the top navigation bar.
 
-### Übersetzungsansatz
+### Translation Approach
 
-Die Primärsprache dieses IG ist Englisch. Deutsche Übersetzungen werden für alle narrativen Seiten und Profil-Einleitungen bereitgestellt. FHIR-Ressourcendefinitionen (Profile, Extensions, Terminologien) verwenden englische Elementnamen gemäß FHIR-Konventionen, mit deutschen Beschreibungen wo zutreffend.
+The primary language of this IG is English. German translations are provided for all narrative pages and profile introductions. FHIR resource definitions (profiles, extensions, terminology) use English element names following FHIR conventions, with German descriptions where applicable.
 
-### Übersetzungen beitragen
+### Contributing Translations
 
-Übersetzungsdateien werden in `input/translations/de/` gepflegt. Um Übersetzungen beizutragen oder zu verbessern, erstellen Sie bitte einen Pull Request im [GitHub-Repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms).
+Translation files are maintained in `input/translations/de/`. To contribute or improve translations, please submit a pull request to the [GitHub repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms).

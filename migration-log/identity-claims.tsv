@@ -1,0 +1,16 @@
+2026-09-03T06:55:03Z	packageId	P	package/package.json	de.medizininformatikinitiative.kerndatensatz.pros	2.1	package-identity
+2026-09-03T06:55:03Z	version	P	package/package.json	2026.7.0	2.1	package-identity
+2026-09-03T06:55:03Z	description	P	package/package.json	MII PRO Module v2026.7.0 — Minor-Release: GAD-7 (Generalized Anxiety Disorder Scale-7) im PHQ-D-Block-Namespace, mit geteilter PHQ-Vierpunktskala (LOINC LL35...	2.1	package-identity
+2026-09-03T06:55:03Z	fhirVersions	P	package/package.json	["4.0.1"]	2.1	package-identity
+2026-09-03T06:55:03Z	jurisdiction	P	package/package.json	http://unstats.un.org/unsd/methods/m49/m49.htm#276	2.1	package-identity
+2026-09-03T06:55:03Z	canonical	P	package/package.json	https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro	2.1	package-identity
+2026-09-03T06:55:03Z	title	P	package/package.json	MII IG Dokument	2.1	package-identity
+2026-09-03T06:55:03Z	license	P	package/package.json	CC0-1.0	2.1	package-identity
+2026-09-03T06:55:03Z	homepage	P	package/package.json	https://www.medizininformatik-initiative.de	2.1	package-identity
+2026-09-03T06:55:03Z	dependency:de.gematik.isik	P	package/package.json (source pin)	5.1.1	2.1	package-identity
+2026-09-03T06:55:03Z	dependency:de.medizininformatikinitiative.kerndatensatz.meta	P	package/package.json (source pin)	2026.0.x	2.1	package-identity
+2026-09-03T06:55:03Z	dependency:hl7.fhir.uv.sdc	P	package/package.json (source pin)	3.0.0	2.1	package-identity
+2026-09-03T06:55:03Z	canonical	P	packaged resource urls (103 of 103 agree)	https://www.medizininformatik-initiative.de/fhir/ext/modul-pro	2.1	package-identity
+2026-09-03T06:55:30Z	title	S	sushi-config.yaml	MII IG PRO	2.1	identity-claim
+2026-09-03T06:55:30Z	license	S	sushi-config.yaml + package.json + LICENSE	CC0-1.0	2.1	identity-claim
+2026-09-03T06:55:30Z	canonical	S	sushi-config.yaml	https://www.medizininformatik-initiative.de/fhir/ext/modul-pro	2.1	identity-claim

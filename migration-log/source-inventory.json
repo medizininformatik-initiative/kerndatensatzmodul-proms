@@ -1,0 +1,2390 @@
+{
+ "source": {
+  "repo": "medizininformatik-initiative/kerndatensatzmodul-proms",
+  "rendered_ig": "https://simplifier.net/guide/mii-pro-v2026-de",
+  "version": "2026.7.0",
+  "shape": "A (SUSHI/IG-Publisher, hybrid mit Simplifier-Baum)"
+ },
+ "artifacts": [
+  {
+   "resourceType": "Bundle",
+   "id": "mii-exa-pro-bdi-ii-bundle",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Bundle-mii-exa-pro-bdi-ii-bundle.json"
+  },
+  {
+   "resourceType": "Bundle",
+   "id": "mii-exa-pro-eortc-qlq-c30-bundle",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Bundle-mii-exa-pro-eortc-qlq-c30-bundle.json"
+  },
+  {
+   "resourceType": "Bundle",
+   "id": "mii-exa-pro-phq-9-bundle",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Bundle-mii-exa-pro-phq-9-bundle.json"
+  },
+  {
+   "resourceType": "Bundle",
+   "id": "mii-exa-pro-promis-29-bundle",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Bundle-mii-exa-pro-promis-29-bundle.json"
+  },
+  {
+   "resourceType": "Bundle",
+   "id": "mii-exa-pro-promis-depression-sf4a-bundle",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Bundle-mii-exa-pro-promis-depression-sf4a-bundle.json"
+  },
+  {
+   "resourceType": "CapabilityStatement",
+   "id": "mii-cps-pro-capabilitystatement",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement",
+   "name": "MII_CPS_PRO_CapabilityStatement",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CapabilityStatement-mii-cps-pro-capabilitystatement.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-bdi-bdi2",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+   "name": "MII_CS_PRO_BDI_BDI2_AnswerList",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-bdi-bdi2.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-dass-21",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
+   "name": "MII_CS_PRO_DASS_21",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-dass-21.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-eortc-qlq-c30",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+   "name": "MII_CS_PRO_EORTC_QLQ_C30",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-eortc-qlq-c30.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-eq-5d-value-set",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+   "name": "MII_CS_PRO_EQ_5D_ValueSet",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-eq-5d-value-set.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-isr-z-answers",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
+   "name": "MII_CS_PRO_ISR_Z_Answers",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-isr-z-answers.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-midos2",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+   "name": "MII_CS_PRO_MIDOS2",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-midos2.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-phq-15-answers",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+   "name": "MII_CS_PRO_PHQ_15_Answers",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-phq-15-answers.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-pro-ctcae",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
+   "name": "MII_CS_PRO_PRO_CTCAE",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-pro-ctcae.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-questionnaire-catalogue",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+   "name": "MII_CS_PRO_Questionnaire_Catalogue",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-questionnaire-catalogue.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-score-catalogue",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+   "name": "MII_CS_PRO_Score_Catalogue",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-score-catalogue.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-ssd-12-answers",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+   "name": "MII_CS_PRO_SSD_12_Answers",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-ssd-12-answers.json"
+  },
+  {
+   "resourceType": "CodeSystem",
+   "id": "mii-cs-pro-whodas-12",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+   "name": "MII_CS_PRO_WHODAS_12",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/CodeSystem-mii-cs-pro-whodas-12.json"
+  },
+  {
+   "resourceType": "ConceptMap",
+   "id": "mii-cm-pro-gad-7-linkids",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ConceptMap-mii-cm-pro-gad-7-linkids.json"
+  },
+  {
+   "resourceType": "ConceptMap",
+   "id": "mii-cm-pro-phq-9-linkid-migration",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ConceptMap-mii-cm-pro-phq-9-linkid-migration.json"
+  },
+  {
+   "resourceType": "ImplementationGuide",
+   "id": "mii-ig-pro",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
+   "name": "MII_IG_PRO",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ImplementationGuide-mii-ig-pro.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-bdi-ii-observation",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-bdi-ii-observation.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-dass-dass21-score-anxiety-equiv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-dass-dass21-score-anxiety-raw",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-dass-dass21-score-depression-equiv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-equiv.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-dass-dass21-score-depression-raw",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-depression-raw.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-dass-dass21-score-stress-equiv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-equiv.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-dass-dass21-score-stress-raw",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-dass-dass21-score-stress-raw.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-ap",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-cf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-co",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-co.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-di",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-di.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-dy",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-ef",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-fa",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-fi",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-nv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-pa",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-pf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-ql",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-rf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-sf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-eortc-qlq-c30-observation-sl",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-gad-7-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-gad-7-score.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-isr-z-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-isr-z-score.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-pc-ptsd-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-pc-ptsd-score.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-phq-15-observation",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-phq-15-observation.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-phq-9-observation",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-phq-9-observation.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-promis-depression-sf4a-raw-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-promis-depression-sf4a-raw-score.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-promis-depression-sf4a-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-promis-depression-sf4a-tscore.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-scoff-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-scoff-score.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-ssd-12-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-ssd-12-score.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-whodas12-score-simple-sum",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-whodas12-score-simple-sum.json"
+  },
+  {
+   "resourceType": "Observation",
+   "id": "mii-exa-pro-wi-7-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/Observation-mii-exa-pro-wi-7-score.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-depression-t-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-depression-t-score.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-ap",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ap.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-cf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-cf.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-co",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-co.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-di",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-di.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-dy",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-dy.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-ef",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ef.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-fa",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fa.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-fi",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fi.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-nv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-pa",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-pf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-ql",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-rf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-sf",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-eortc-qlq-c30-sl",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-anxiety-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-depression-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-fatigue-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-pain-intensity",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-pain-interference-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-physical-function-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-sleep-disturbance-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-29-social-function-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-promis-cognitive-function-sf4a-tscore",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-bdi-ii",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-bdi-ii.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-dass21-anxiety-equiv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-dass21-anxiety-raw",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-dass21-depression-equiv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-dass21-depression-raw",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-dass21-stress-equiv",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-dass21-stress-raw",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-eq5d5l-index",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-eq5d5l-profile",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-eq5d5l-vas",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-gad-7",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-gad-7.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-isr-z",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-isr-z.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-pc-ptsd",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-phq-15",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-15.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-phq-9",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-phq-9.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-proctcae-acs",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-proctcae-composite-grade",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-scoff",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-scoff.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-ssd-12",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-ssd-12.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-whodas12-simple-sum",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.json"
+  },
+  {
+   "resourceType": "ObservationDefinition",
+   "id": "mii-obsdef-pro-score-wi-7",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/ObservationDefinition-mii-obsdef-pro-score-wi-7.json"
+  },
+  {
+   "resourceType": "Patient",
+   "id": "mii-exa-pro-patient",
+   "url": null,
+   "name": [
+    {
+     "given": [
+      "Max"
+     ],
+     "family": "Mustermann"
+    }
+   ],
+   "version": null,
+   "path": "fsh-generated/resources/Patient-mii-exa-pro-patient.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-bdi-bdi2",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-bdi-bdi2.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-ces-d",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ces-d",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-ces-d.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-dass-dass21",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-dass-dass21.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-eortc-qlq-c30-variant-a",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-eortc-qlq-c30-variant-b",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-b.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-eortc-qlq-c30",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-eortc-qlq-c30.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-epds",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-epds",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-epds.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-euronet-soma",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-euronet-soma.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-euroqol-eq5d5l-answer-coding",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-euroqol-eq5d5l-collectable",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-euroqol-eq5d5l-displayable",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-euroqol-eq5d5l-minimal",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-gad-7",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-gad-7.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-hads",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-hads.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-isr-z",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-isr-z",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-isr-z.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-k6",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-k6",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-k6.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-midos-midos2",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2",
+   "name": "MII_QST_PRO_MIDOS_MIDOS2",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-midos-midos2.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-pc-ptsd",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-pc-ptsd.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-phq-15",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-phq-15.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-phq-9",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-phq-9.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-pro-ctcae-breast-de",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de",
+   "name": "MII_QST_PRO_PRO_CTCAE_Breast_DE",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-pro-ctcae-breast-de.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-pro-ctcae-onkologisches-basisscreening",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening",
+   "name": "MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-promis-16",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-16.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-promis-29-de",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29-de.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-promis-29-minimal",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29-minimal.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-promis-29",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-promis-cognitive-function-sf4a",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-promis-depression-sf4a",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-depression-sf4a.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-scoff",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-scoff.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-ssd-12",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-ssd-12.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-whodas-whodas12",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-whodas-whodas12.json"
+  },
+  {
+   "resourceType": "Questionnaire",
+   "id": "mii-qst-pro-wi-7",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7",
+   "name": null,
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/Questionnaire-mii-qst-pro-wi-7.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-bdi-bdi2",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-bdi-bdi2.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-dass-dass21-response-01",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-dass-dass21-response-01.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-eortc-qlq-c30-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-eortc-qlq-c30-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-euronet-soma-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-euronet-soma-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-euroqol-eq5d5l-coded-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-coded-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-euroqol-eq5d5l-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-euroqol-eq5d5l-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-gad-7-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-gad-7-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-isr-z-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-isr-z-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-midos2-response-01",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-midos2-response-01.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-pc-ptsd-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-pc-ptsd-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-phq-15-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-phq-15-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-phq-9-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-phq-9-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response-01.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-promis-29-de-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-29-de-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-promis-29-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-29-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-promis-depression-sf4a-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-scoff-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-scoff-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-ssd-12-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-ssd-12-response.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-whodas12-response-01",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-whodas12-response-01.json"
+  },
+  {
+   "resourceType": "QuestionnaireResponse",
+   "id": "mii-exa-pro-wi-7-response",
+   "url": null,
+   "name": null,
+   "version": null,
+   "path": "fsh-generated/resources/QuestionnaireResponse-mii-exa-pro-wi-7-response.json"
+  },
+  {
+   "resourceType": "SearchParameter",
+   "id": "mii-sp-pro-observationdefinition-code",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-code",
+   "name": "MII_SP_PRO_ObservationDefinition_Code",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-code.json"
+  },
+  {
+   "resourceType": "SearchParameter",
+   "id": "mii-sp-pro-observationdefinition-health-correlation",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-health-correlation",
+   "name": "MII_SP_PRO_ObservationDefinition_ScoreHealthCorrelation",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-health-correlation.json"
+  },
+  {
+   "resourceType": "SearchParameter",
+   "id": "mii-sp-pro-observationdefinition-interval-category",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-interval-category",
+   "name": "MII_SP_PRO_ObservationDefinition_QualifiedInterval_Category",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-interval-category.json"
+  },
+  {
+   "resourceType": "SearchParameter",
+   "id": "mii-sp-pro-observationdefinition-permitted-datatype",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype",
+   "name": "MII_SP_PRO_ObservationDefinition_PermittedDataType",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.json"
+  },
+  {
+   "resourceType": "SearchParameter",
+   "id": "mii-sp-pro-observationdefinition-preferred-report-name",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name",
+   "name": "MII_SP_PRO_ObservationDefinition_PreferredReportName",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.json"
+  },
+  {
+   "resourceType": "SearchParameter",
+   "id": "mii-sp-pro-observationdefinition-unit",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-unit",
+   "name": "MII_SP_PRO_ObservationDefinition_QuantitativeDetails_Unit",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/SearchParameter-mii-sp-pro-observationdefinition-unit.json"
+  },
+  {
+   "resourceType": "SearchParameter",
+   "id": "mii-sp-pro-questionnaire-capabilities",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-questionnaire-capabilities",
+   "name": "MII_SP_PRO_Questionnaire_Capabilities",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/SearchParameter-mii-sp-pro-questionnaire-capabilities.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-ex-pro-questionnaire-capabilities",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities",
+   "name": "MII_PR_PRO_Questionnaire_Capabilities",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-ex-pro-questionnaire-capabilities.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-ex-pro-score-score-health-correlation",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation",
+   "name": "MII_EX_PRO_Score_Score_Health_Correlation",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-ex-pro-score-score-health-correlation.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-lm-pro",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro",
+   "name": "MII_LM_PRO",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-lm-pro.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-depression-t-score",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score",
+   "name": "MII_PR_PRO_Depression_T_Score",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-depression-t-score.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-observation-bdi-ii",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii",
+   "name": "MII_PR_PRO_Observation_BDI_II",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-bdi-ii.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-observation-eq5d5l-index",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index",
+   "name": "MII_PR_PRO_Observation_EQ5D5L_Index",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-index.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-observation-eq5d5l-profile",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile",
+   "name": "MII_PR_PRO_Observation_EQ5D5L_Profile",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-observation-eq5d5l-vas",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas",
+   "name": "MII_PR_PRO_Observation_EQ5D5L_VAS",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-observation-phq-15",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15",
+   "name": "MII_PR_PRO_Observation_PHQ_15",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-phq-15.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-observation-phq-9",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9",
+   "name": "MII_PR_PRO_Observation_PHQ_9",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-phq-9.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-observation-whodas12",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12",
+   "name": "MII_PR_PRO_Observation_WHODAS_12",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-observation-whodas12.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-anxiety-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore",
+   "name": "MII_PR_PRO_PROMIS_29_Anxiety_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-depression-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore",
+   "name": "MII_PR_PRO_PROMIS_29_Depression_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-depression-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-fatigue-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore",
+   "name": "MII_PR_PRO_PROMIS_29_Fatigue_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-pain-intensity",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity",
+   "name": "MII_PR_PRO_PROMIS_29_Pain_Intensity",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-pain-intensity.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-pain-interference-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore",
+   "name": "MII_PR_PRO_PROMIS_29_Pain_Interference_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-physical-function-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore",
+   "name": "MII_PR_PRO_PROMIS_29_Physical_Function_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-sleep-disturbance-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore",
+   "name": "MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-29-social-function-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore",
+   "name": "MII_PR_PRO_PROMIS_29_Social_Function_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
+   "name": "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-cognitive-function-sf4a-tscore",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore",
+   "name": "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-promis-depression-sf4a-raw-score",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score",
+   "name": "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-questionnaire-response",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
+   "name": "MII_PR_PRO_QuestionnaireResponse",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-questionnaire-response.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-questionnaire",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire",
+   "name": "MII_PR_PRO_Questionnaire",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-questionnaire.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-score-blueprint",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint",
+   "name": "MII_PR_PRO_Score_Blueprint",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-score-blueprint.json"
+  },
+  {
+   "resourceType": "StructureDefinition",
+   "id": "mii-pr-pro-score-instance",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
+   "name": "MII_PR_PRO_Score_Instance",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/StructureDefinition-mii-pr-pro-score-instance.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-bdi-bdi2-long",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",
+   "name": "MII_VS_PRO_BDI_BDI2_AnswerListLong",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-bdi-bdi2-long.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-bdi-bdi2-short",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short",
+   "name": "MII_VS_PRO_BDI_BDI2_AnswerListShort",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-bdi-bdi2-short.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-dass-21-answer-list",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list",
+   "name": "MII_VS_PRO_DASS_21_Answer_List",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-dass-21-answer-list.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-eortc-qlq-c30-scale-4pt",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
+   "name": "MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-eortc-qlq-c30-scale-7pt",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
+   "name": "MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-eortc-qlq-c30-scale-role",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
+   "name": "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-isr-z-answers",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-isr-z-answers",
+   "name": "MII_VS_PRO_ISR_Z_Answers",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-isr-z-answers.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-midos2-severity",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity",
+   "name": "MII_VS_PRO_MIDOS2_Severity",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-midos2-severity.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-midos2-wellbeing",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing",
+   "name": "MII_VS_PRO_MIDOS2_Wellbeing",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-midos2-wellbeing.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-phq-15-answers",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
+   "name": "MII_VS_PRO_PHQ_15_Answers",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-phq-15-answers.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-phq-9-answer-list-ll358-3",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
+   "name": "MII_VS_PRO_PHQ9_AnswerList_LL3583",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-phq-9-answer-list-ll359-1",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1",
+   "name": "MII_VS_PRO_PHQ9_AnswerList_LL3591",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-frequency-sexual",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual",
+   "name": "MII_VS_PRO_PRO_CTCAE_Frequency_Sexual",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-frequency",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency",
+   "name": "MII_VS_PRO_PRO_CTCAE_Frequency",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-frequency.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-interference",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-interference",
+   "name": "MII_VS_PRO_PRO_CTCAE_Interference",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-interference.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-presence-na",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-na",
+   "name": "MII_VS_PRO_PRO_CTCAE_Presence_NA",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-presence-na.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-presence-sexual",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-sexual",
+   "name": "MII_VS_PRO_PRO_CTCAE_Presence_Sexual",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-presence",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence",
+   "name": "MII_VS_PRO_PRO_CTCAE_Presence",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-presence.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-severity-radiation",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation",
+   "name": "MII_VS_PRO_PRO_CTCAE_Severity_Radiation",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-severity-sexual",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-sexual",
+   "name": "MII_VS_PRO_PRO_CTCAE_Severity_Sexual",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-pro-ctcae-severity",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity",
+   "name": "MII_VS_PRO_PRO_CTCAE_Severity",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-pro-ctcae-severity.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-promis-frequency-response-scale",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale",
+   "name": "MII_VS_PRO_PROMIS_Frequency_Response_Scale",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-promis-frequency-response-scale.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-promis-intensity-response-scale",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
+   "name": "MII_VS_PRO_PROMIS_Intensity_Response_Scale",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-promis-intensity-response-scale.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-promis-physical-function-response-scale",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
+   "name": "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-promis-physical-function-response-scale.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-ssd-12-answers",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers",
+   "name": "MII_VS_PRO_SSD_12_Answers",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-ssd-12-answers.json"
+  },
+  {
+   "resourceType": "ValueSet",
+   "id": "mii-vs-pro-whodas-12-answer-list",
+   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
+   "name": "MII_VS_PRO_WHODAS_12_Answer_List",
+   "version": "2026.7.0",
+   "path": "fsh-generated/resources/ValueSet-mii-vs-pro-whodas-12-answer-list.json"
+  }
+ ],
+ "narrative": {
+  "igpub": [
+   {
+    "path": "input/pagecontent/bdi-ii.md",
+    "words": 170,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/changes.md",
+    "words": 2881,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/cross-instrument-mappings.md",
+    "words": 817,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/dass-21.md",
+    "words": 903,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/datasets-and-descriptions.md",
+    "words": 298,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/derived-metrics.md",
+    "words": 62,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/domain-based-scoring.md",
+    "words": 1958,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/domains.md",
+    "words": 1321,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/downloads.md",
+    "words": 129,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/eortc-qlq-c30-scoring.md",
+    "words": 835,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/eortc-qlq-c30.md",
+    "words": 525,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/eq-5d-5l-scores.md",
+    "words": 502,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/eq-5d-5l.md",
+    "words": 1052,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/euronet-soma.md",
+    "words": 396,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/gad-7.md",
+    "words": 440,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/id-systematics.md",
+    "words": 1406,
+    "title": "EuroQol-Organisation"
+   },
+   {
+    "path": "input/pagecontent/index.md",
+    "words": 404,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/isr-z.md",
+    "words": 317,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/midos2.md",
+    "words": 698,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/minimal-reference-questionnaires.md",
+    "words": 240,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/module-description.md",
+    "words": 460,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/pc-ptsd.md",
+    "words": 333,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/phq-15.md",
+    "words": 308,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/phq-9.md",
+    "words": 315,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/pro-library.md",
+    "words": 963,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/project-context.md",
+    "words": 298,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/promis-16.md",
+    "words": 875,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/promis-29.md",
+    "words": 487,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/promis-depression.md",
+    "words": 888,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/promis.md",
+    "words": 562,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/proms-onkologisches-basisscreening.md",
+    "words": 782,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/questionnaire-capabilities.md",
+    "words": 815,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/references.md",
+    "words": 30,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/scoff.md",
+    "words": 377,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/scoring.md",
+    "words": 1070,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/ssd-12.md",
+    "words": 440,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/technical-implementation.md",
+    "words": 86,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/terminology-strategies.md",
+    "words": 854,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/translationinfo.md",
+    "words": 80,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/uml-diagrams.md",
+    "words": 429,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/use-cases.md",
+    "words": 823,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/validation.md",
+    "words": 656,
+    "title": "Kompilierung und Validierung"
+   },
+   {
+    "path": "input/pagecontent/whodas.md",
+    "words": 419,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/wi-7.md",
+    "words": 362,
+    "title": null
+   },
+   {
+    "path": "input/pagecontent/workflows.md",
+    "words": 1115,
+    "title": null
+   }
+  ],
+  "simplifier": [
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Abgeleitete-Metriken/Index.page.md",
+    "words": 59,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Beschreibung-von-Anwendungsfaellen.page.md",
+    "words": 812,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Datensaetze-inkl-Beschreibungen.page.md",
+    "words": 142,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/Index.page.md",
+    "words": 19,
+    "directives": 2
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Anwendungsfaelle-Informationsmodell/UML.page.md",
+    "words": 427,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Beschreibung-Modul-PROs.page.md",
+    "words": 465,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Cross-Instrument-Mappings.page.md",
+    "words": 850,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Domaenen.page.md",
+    "words": 1349,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Domain-basiertes-Scoring.page.md",
+    "words": 1810,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Domaenen-basiertes-Scoring/Index.page.md",
+    "words": 295,
+    "directives": 6
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Index.page.md",
+    "words": 416,
+    "directives": 0
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Kontext-im-Gesamtprojekt-Bezuege-zu-anderen-Modulen.page.md",
+    "words": 307,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/BDI-II/Index.page.md",
+    "words": 191,
+    "directives": 3
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/DASS-21/Index.page.md",
+    "words": 936,
+    "directives": 7
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/EORTC-QLQ-C30.page.md",
+    "words": 842,
+    "directives": 0
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EORTC-QLQ-C30/Index.page.md",
+    "words": 643,
+    "directives": 3
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/EQ-5D-5L-Scores.page.md",
+    "words": 542,
+    "directives": 13
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EQ-5D-5L/Index.page.md",
+    "words": 1104,
+    "directives": 12
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/EURONET-SOMA/Index.page.md",
+    "words": 405,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/GAD-7/Index.page.md",
+    "words": 452,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/ISR-Z/Index.page.md",
+    "words": 328,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Index.page.md",
+    "words": 885,
+    "directives": 9
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/MIDOS2/Index.page.md",
+    "words": 732,
+    "directives": 3
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/Minimal-Reference-Questionnaires/Index.page.md",
+    "words": 251,
+    "directives": 0
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PC-PTSD/Index.page.md",
+    "words": 345,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-15/Index.page.md",
+    "words": 336,
+    "directives": 6
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PHQ-9/Index.page.md",
+    "words": 343,
+    "directives": 6
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Index.page.md",
+    "words": 1363,
+    "directives": 0
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PRO-CTCAE/Onkologisches-Basisscreening.page.md",
+    "words": 816,
+    "directives": 3
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/Index.page.md",
+    "words": 219,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-16.page.md",
+    "words": 786,
+    "directives": 3
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-29.page.md",
+    "words": 483,
+    "directives": 3
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/PROMIS/PROMIS-Depression.page.md",
+    "words": 921,
+    "directives": 7
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/SCOFF/Index.page.md",
+    "words": 386,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/SSD-12/Index.page.md",
+    "words": 455,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WHODAS-2.0/Index.page.md",
+    "words": 422,
+    "directives": 6
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/PRO-Bibliothek/WI-7/Index.page.md",
+    "words": 371,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Referenzen.page.md",
+    "words": 36,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Release-Notes.page.md",
+    "words": 2849,
+    "directives": 2
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Index.page.md",
+    "words": 389,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Observation.page.md",
+    "words": 195,
+    "directives": 5
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/ObservationDefinition.page.md",
+    "words": 192,
+    "directives": 5
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/Questionnaire.page.md",
+    "words": 190,
+    "directives": 5
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Abstrakte-Profile/QuestionnaireResponse.page.md",
+    "words": 180,
+    "directives": 5
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-Capabilities.page.md",
+    "words": 484,
+    "directives": 8
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/FHIR-Profile/Extension-ScoreHealthCorrelation.page.md",
+    "words": 169,
+    "directives": 4
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/ID-Systematik.page.md",
+    "words": 1418,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Index.page.md",
+    "words": 69,
+    "directives": 6
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/QuestionnaireCapabilites.page.md",
+    "words": 851,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Scoring.page.md",
+    "words": 642,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Terminologie-Strategien.page.md",
+    "words": 867,
+    "directives": 1
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Validierung.page.md",
+    "words": 661,
+    "directives": 0
+   },
+   {
+    "path": "implementation-guides/MII-PRO-v2026-DE/MIIIGModulPRO/Technische-Implementierung/Workflows.page.md",
+    "words": 1111,
+    "directives": 1
+   }
+  ]
+ },
+ "counts": {
+  "artifacts_total": 214,
+  "by_resourceType": {
+   "ObservationDefinition": 47,
+   "Observation": 34,
+   "Questionnaire": 32,
+   "StructureDefinition": 26,
+   "ValueSet": 26,
+   "QuestionnaireResponse": 20,
+   "CodeSystem": 12,
+   "SearchParameter": 7,
+   "Bundle": 5,
+   "ConceptMap": 2,
+   "CapabilityStatement": 1,
+   "ImplementationGuide": 1,
+   "Patient": 1
+  },
+  "fsh_files": 140,
+  "pages_igpub": 45,
+  "pages_simplifier": 53,
+  "words_igpub": 29181,
+  "words_simplifier": 31811
+ },
+ "fsh_sources": [
+  "input/fsh/aliases.fsh",
+  "input/fsh/capability-statement.fsh",
+  "input/fsh/definitions/bdi-ii/mii-cs-pro-bdi-bdi2.fsh",
+  "input/fsh/definitions/bdi-ii/mii-exa-pro-bdi-bdi2-response.fsh",
+  "input/fsh/definitions/bdi-ii/mii-obsdef-pro-score-bdi-ii.fsh",
+  "input/fsh/definitions/bdi-ii/mii-pr-pro-observation-bdi-ii.fsh",
+  "input/fsh/definitions/bdi-ii/mii-qst-pro-bdi-bdi2.fsh",
+  "input/fsh/definitions/bdi-ii/mii-vs-pro-bdi-bdi2.fsh",
+  "input/fsh/definitions/ces-d/mii-qst-pro-ces-d.fsh",
+  "input/fsh/definitions/dass-21/mii-cs-pro-dass-21.fsh",
+  "input/fsh/definitions/dass-21/mii-obsdef-pro-dass-21-scores.fsh",
+  "input/fsh/definitions/dass-21/mii-qst-pro-dass-dass21.fsh",
+  "input/fsh/definitions/dass-21/mii-vs-pro-dass-21.fsh",
+  "input/fsh/definitions/domains/depression/mii-obsdef-pro-depression-t-score.fsh",
+  "input/fsh/definitions/eortc-qlq-c30/mii-cs-pro-eortc-qlq-c30.fsh",
+  "input/fsh/definitions/eortc-qlq-c30/mii-obsdef-pro-eortc-qlq-c30-scores.fsh",
+  "input/fsh/definitions/eortc-qlq-c30/mii-qst-pro-eortc-qlq-c30-variant-a.fsh",
+  "input/fsh/definitions/eortc-qlq-c30/mii-qst-pro-eortc-qlq-c30-variant-b.fsh",
+  "input/fsh/definitions/eortc-qlq-c30/mii-qst-pro-eortc-qlq-c30.fsh",
+  "input/fsh/definitions/eortc-qlq-c30/mii-vs-pro-eortc-qlq-c30.fsh",
+  "input/fsh/definitions/epds/mii-qst-pro-epds.fsh",
+  "input/fsh/definitions/eq-5d/mii-cs-pro-eq-5d-value-set.fsh",
+  "input/fsh/definitions/eq-5d/mii-obsdef-pro-score-eq5d5l-index.fsh",
+  "input/fsh/definitions/eq-5d/mii-obsdef-pro-score-eq5d5l-profile.fsh",
+  "input/fsh/definitions/eq-5d/mii-obsdef-pro-score-eq5d5l-vas.fsh",
+  "input/fsh/definitions/eq-5d/mii-pr-pro-observation-eq5d5l-index.fsh",
+  "input/fsh/definitions/eq-5d/mii-pr-pro-observation-eq5d5l-profile.fsh",
+  "input/fsh/definitions/eq-5d/mii-pr-pro-observation-eq5d5l-vas.fsh",
+  "input/fsh/definitions/eq-5d/mii-qst-pro-eq-5d-5l-answer-coding.fsh",
+  "input/fsh/definitions/eq-5d/mii-qst-pro-eq-5d-5l-collectable.fsh",
+  "input/fsh/definitions/eq-5d/mii-qst-pro-eq-5d-5l-displayable.fsh",
+  "input/fsh/definitions/eq-5d/mii-qst-pro-eq-5d-5l-minimal.fsh",
+  "input/fsh/definitions/euronet-soma/mii-exa-pro-euronet-soma-response.fsh",
+  "input/fsh/definitions/euronet-soma/mii-qst-pro-euronet-soma.fsh",
+  "input/fsh/definitions/gad-7/mii-cm-pro-gad-7-linkids.fsh",
+  "input/fsh/definitions/gad-7/mii-exa-pro-gad-7-response.fsh",
+  "input/fsh/definitions/gad-7/mii-exa-pro-gad-7-score.fsh",
+  "input/fsh/definitions/gad-7/mii-obsdef-pro-score-gad-7.fsh",
+  "input/fsh/definitions/gad-7/mii-qst-pro-gad-7.fsh",
+  "input/fsh/definitions/hads/mii-qst-pro-hads.fsh",
+  "input/fsh/definitions/isr-z/mii-cs-pro-isr-z-answers.fsh",
+  "input/fsh/definitions/isr-z/mii-exa-pro-isr-z-response.fsh",
+  "input/fsh/definitions/isr-z/mii-exa-pro-isr-z-score.fsh",
+  "input/fsh/definitions/isr-z/mii-obsdef-pro-score-isr-z.fsh",
+  "input/fsh/definitions/isr-z/mii-qst-pro-isr-z.fsh",
+  "input/fsh/definitions/isr-z/mii-vs-pro-isr-z-answers.fsh",
+  "input/fsh/definitions/k6/mii-qst-pro-k6.fsh",
+  "input/fsh/definitions/midos2/mii-cs-pro-midos2.fsh",
+  "input/fsh/definitions/midos2/mii-qst-pro-midos-midos2.fsh",
+  "input/fsh/definitions/midos2/mii-vs-pro-midos2.fsh",
+  "input/fsh/definitions/pc-ptsd/mii-exa-pro-pc-ptsd-response.fsh",
+  "input/fsh/definitions/pc-ptsd/mii-exa-pro-pc-ptsd-score.fsh",
+  "input/fsh/definitions/pc-ptsd/mii-obsdef-pro-score-pc-ptsd.fsh",
+  "input/fsh/definitions/pc-ptsd/mii-qst-pro-pc-ptsd.fsh",
+  "input/fsh/definitions/phq-15/mii-cs-pro-phq-15-answers.fsh",
+  "input/fsh/definitions/phq-15/mii-exa-pro-phq-15-response.fsh",
+  "input/fsh/definitions/phq-15/mii-obsdef-pro-score-phq-15.fsh",
+  "input/fsh/definitions/phq-15/mii-pr-pro-observation-phq-15.fsh",
+  "input/fsh/definitions/phq-15/mii-qst-pro-phq-15.fsh",
+  "input/fsh/definitions/phq-15/mii-vs-pro-phq-15-answers.fsh",
+  "input/fsh/definitions/phq-9/mii-cm-pro-phq-9-linkid-migration.fsh",
+  "input/fsh/definitions/phq-9/mii-obsdef-pro-score-phq-9.fsh",
+  "input/fsh/definitions/phq-9/mii-pr-pro-observation-phq-9.fsh",
+  "input/fsh/definitions/phq-9/mii-qst-pro-phq-9.fsh",
+  "input/fsh/definitions/phq-9/sdc-rendering/mii-qst-pro-phq-9-sdc-rendering.fsh",
+  "input/fsh/definitions/phq-9/sdc-rendering/mii-vs-pro-phq-9-answer-list-ll358-3.fsh",
+  "input/fsh/definitions/phq-9/sdc-rendering/mii-vs-pro-phq-9-answer-list-ll359-1.fsh",
+  "input/fsh/definitions/phq-9/sdc-rendering/sdc-cs-phq9.fsh",
+  "input/fsh/definitions/pro-ctcae/mii-cs-pro-pro-ctcae.fsh",
+  "input/fsh/definitions/pro-ctcae/mii-obsdef-pro-pro-ctcae-scores.fsh",
+  "input/fsh/definitions/pro-ctcae/mii-qst-pro-pro-ctcae-breast-de.fsh",
+  "input/fsh/definitions/pro-ctcae/mii-vs-pro-pro-ctcae.fsh",
+  "input/fsh/definitions/promis-16/mii-qst-pro-promis-16.fsh",
+  "input/fsh/definitions/promis-29/mii-obsdef-pro-promis-29-scores.fsh",
+  "input/fsh/definitions/promis-29/mii-pr-pro-promis-29-observations.fsh",
+  "input/fsh/definitions/promis-29/mii-qst-pro-promis-29-de.fsh",
+  "input/fsh/definitions/promis-29/mii-qst-pro-promis-29-minimal.fsh",
+  "input/fsh/definitions/promis-29/mii-qst-pro-promis-29.fsh",
+  "input/fsh/definitions/promis-29/mii-vs-pro-promis-response-scales.fsh",
+  "input/fsh/definitions/promis-cognitive-function-sf4a/mii-obsdef-pro-promis-cognitive-function-sf4a.fsh",
+  "input/fsh/definitions/promis-cognitive-function-sf4a/mii-pr-pro-promis-cognitive-function-sf4a-observation.fsh",
+  "input/fsh/definitions/promis-cognitive-function-sf4a/mii-qst-pro-promis-cognitive-function-sf4a.fsh",
+  "input/fsh/definitions/promis-depression-sf4a/mii-pr-pro-promis-depression-sf4a-observation.fsh",
+  "input/fsh/definitions/promis-depression-sf4a/mii-qst-pro-promis-depression-sf4a.fsh",
+  "input/fsh/definitions/proms-onkologisches-basisscreening/mii-qst-pro-pro-ctcae-onkologisches-basisscreening.fsh",
+  "input/fsh/definitions/scoff/mii-exa-pro-scoff-response.fsh",
+  "input/fsh/definitions/scoff/mii-exa-pro-scoff-score.fsh",
+  "input/fsh/definitions/scoff/mii-obsdef-pro-score-scoff.fsh",
+  "input/fsh/definitions/scoff/mii-qst-pro-scoff.fsh",
+  "input/fsh/definitions/ssd-12/mii-cs-pro-ssd-12-answers.fsh",
+  "input/fsh/definitions/ssd-12/mii-exa-pro-ssd-12-response.fsh",
+  "input/fsh/definitions/ssd-12/mii-exa-pro-ssd-12-score.fsh",
+  "input/fsh/definitions/ssd-12/mii-obsdef-pro-score-ssd-12.fsh",
+  "input/fsh/definitions/ssd-12/mii-qst-pro-ssd-12.fsh",
+  "input/fsh/definitions/ssd-12/mii-vs-pro-ssd-12-answers.fsh",
+  "input/fsh/definitions/whodas/mii-cs-pro-whodas-12.fsh",
+  "input/fsh/definitions/whodas/mii-obsdef-pro-score-whodas12.fsh",
+  "input/fsh/definitions/whodas/mii-pr-pro-observation-whodas12.fsh",
+  "input/fsh/definitions/whodas/mii-qst-pro-whodas-whodas12.fsh",
+  "input/fsh/definitions/whodas/mii-vs-pro-whodas-12.fsh",
+  "input/fsh/definitions/wi-7/mii-exa-pro-wi-7-response.fsh",
+  "input/fsh/definitions/wi-7/mii-exa-pro-wi-7-score.fsh",
+  "input/fsh/definitions/wi-7/mii-obsdef-pro-score-wi-7.fsh",
+  "input/fsh/definitions/wi-7/mii-qst-pro-wi-7.fsh",
+  "input/fsh/examples/mii-exa-pro-bdi-II-observation.fsh",
+  "input/fsh/examples/mii-exa-pro-bdi-ii-bundle.fsh",
+  "input/fsh/examples/mii-exa-pro-dass-21-response.fsh",
+  "input/fsh/examples/mii-exa-pro-eortc-qlq-c30-bundle.fsh",
+  "input/fsh/examples/mii-exa-pro-eortc-qlq-c30-observation.fsh",
+  "input/fsh/examples/mii-exa-pro-eortc-qlq-c30-response.fsh",
+  "input/fsh/examples/mii-exa-pro-eq5d5l-coded-response.fsh",
+  "input/fsh/examples/mii-exa-pro-eq5d5l-response.fsh",
+  "input/fsh/examples/mii-exa-pro-midos2-response.fsh",
+  "input/fsh/examples/mii-exa-pro-phq-9-bundle.fsh",
+  "input/fsh/examples/mii-exa-pro-phq-9-measure.fsh",
+  "input/fsh/examples/mii-exa-pro-phq-9-observation.fsh",
+  "input/fsh/examples/mii-exa-pro-phq-9-response.fsh",
+  "input/fsh/examples/mii-exa-pro-pro-ctcae-onkologisches-basisscreening-response.fsh",
+  "input/fsh/examples/mii-exa-pro-promis-29-bundle.fsh",
+  "input/fsh/examples/mii-exa-pro-promis-29-de-response.fsh",
+  "input/fsh/examples/mii-exa-pro-promis-29-response.fsh",
+  "input/fsh/examples/mii-exa-pro-promis-depression-from-bdi-ii-observation.fsh",
+  "input/fsh/examples/mii-exa-pro-promis-depression-sf4a-bundle.fsh",
+  "input/fsh/examples/mii-exa-pro-promis-depression-sf4a-observations.fsh",
+  "input/fsh/examples/mii-exa-pro-promis-depression-sf4a-response.fsh",
+  "input/fsh/examples/mii-exa-pro-whodas12-response.fsh",
+  "input/fsh/logical-model/mii-lm-pro.fsh",
+  "input/fsh/profiles/mii-cs-pro-questionnaire-catalogue.fsh",
+  "input/fsh/profiles/mii-cs-pro-score-catalogue.fsh",
+  "input/fsh/profiles/mii-ex-pro-questionnaire-capabilities.fsh",
+  "input/fsh/profiles/mii-ex-pro-score-score-health-correlation.fsh",
+  "input/fsh/profiles/mii-pr-pro-questionnaire-response.fsh",
+  "input/fsh/profiles/mii-pr-pro-questionnaire.fsh",
+  "input/fsh/profiles/mii-pr-pro-score-blueprint.fsh",
+  "input/fsh/profiles/mii-pr-pro-score-instance.fsh",
+  "input/fsh/rules.fsh",
+  "input/fsh/rulesets/answer-scales.fsh",
+  "input/fsh/rulesets/promis-copyright.fsh",
+  "input/fsh/rulesets/version.fsh",
+  "input/fsh/searchparameters.fsh"
+ ]
+}

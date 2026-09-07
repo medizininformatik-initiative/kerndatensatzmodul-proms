@@ -1,208 +1,208 @@
 - [Capabilities](#capabilities)
-- [Workflow-Patterns](#workflow-patterns)
+- [Workflow Patterns](#workflow-patterns)
     - [Standard Workflow](#standard-workflow)
-    - [Direkte Erfassung mit Echtzeit-Berechnung](#workflow-pattern-1-direkte-erfassung-mit-echtzeit-berechnung)
-    - [Mobile Erfassung mit Server-Berechnung](#workflow-pattern-2-mobile-erfassung-mit-server-berechnung)
-    - [Historische Neuberechnung](#workflow-pattern-3-historische-neuberechnung)
-    - [Klinische Ergebnisansicht](#workflow-pattern-4-klinische-ergebnisansicht)
-    - [Reine Datenerfassung](#workflow-pattern-5-reine-datenerfassung)
-- [Score-Repräsentation](#score-repräsentation)
-- [Implementierungsmuster](#implementierungsmuster)
+    - [Direct Collection with Real-Time Calculation](#workflow-pattern-1-direct-collection-with-real-time-calculation)
+    - [Mobile Collection with Server-Side Calculation](#workflow-pattern-2-mobile-collection-with-server-side-calculation)
+    - [Historical Recalculation](#workflow-pattern-3-historical-recalculation)
+    - [Clinical Results View](#workflow-pattern-4-clinical-results-view)
+    - [Pure Data Collection](#workflow-pattern-5-pure-data-collection)
+- [Score Representation](#score-representation)
+- [Implementation Patterns](#implementation-patterns)
     - [Calculated Expressions](#calculated-expressions)
-    - [Initial Expressions für Populatable](#initial-expressions-für-populatable)
-    - [Extraction zu Observations](#extraction-zu-observations)
+    - [Initial Expressions for Populatable](#initial-expressions-for-populatable)
+    - [Extraction to Observations](#extraction-to-observations)
 - [Best Practices](#best-practices)
-    - [Capability-Auswahl](#capability-auswahl)
-    - [Performance-Überlegungen](#performance-überlegungen)
-    - [Fehlerbehandlung](#fehlerbehandlung)
+    - [Capability Selection](#capability-selection)
+    - [Performance Considerations](#performance-considerations)
+    - [Error Handling](#error-handling)
 
 ---
 
-Auf Grundlage der Anwendungsszenarien und den dort abgeleiteten Anforderungen (siehe [Anwendungsfälle](use-cases.html)) lassen sich Implementierungsansätze ableiten. Im Nachfolgenden werden diese Implementierungsansätze in Form von abstrahierten *Workflows*, die den Charakter einer Musterlösung aufweisen, näher vorgestellt. Die Grundlage für die Definition eines Workflows bilden die sogenannten *Capabilities*.
+Based on the use case scenarios and the requirements derived therein (see [Use Cases](use-cases.html)), implementation approaches can be identified. In the following, these implementation approaches are presented in the form of abstracted *workflows* that serve as reference solutions. The foundation for defining a workflow is formed by so-called *capabilities*.
 
 ### Capabilities
 
-Anhand der Anwendungsszenarien wird deutlich, dass Fragebögen auf verschiedene Arten und Weisen erhoben, verarbeitet und angezeigt sowie zu verschiedenen Zwecken verwendet werden können.
+The use case scenarios make it clear that questionnaires can be collected, processed, and displayed in various ways and used for different purposes.
 
-Das Modul muss also die übergeordnete Anforderung erfüllen, Fragebögen möglichst flexibel für unterschiedliche Zwecke, bei gleichzeitiger Wahrung der semantischen Konsistenz und über verschiedene Anwendungsfälle hinweg, bereitzustellen. Um diese Anforderung zu erfüllen, muss zusätzlich zur Definition eines standardisierten Fragebogens spezifiziert werden, zu welchem Zweck dieser eingesetzt werden soll, besser, durch die Unterstützung welcher Fähigkeiten der intendierte Zweck erfüllt wird.
+The module must therefore meet the overarching requirement of providing questionnaires as flexibly as possible for different purposes, while maintaining semantic consistency across different use cases. To meet this requirement, in addition to defining a standardized questionnaire, it must be specified for what purpose it should be used -- more precisely, which capabilities need to be supported to fulfill the intended purpose.
 
-Deshalb wurden folgende Fähigkeiten (*Capabilities*), die zur Definition eines Fragebogens hinzugezogen werden können und beliebig kombinierbar sind, festgelegt:
+Therefore, the following capabilities, which can be applied to the definition of a questionnaire and are freely combinable, have been established:
 
-- `collectable` (erfassbar): Wie Daten von Nutzern **eingegeben** werden
-- `populatable` (vorausfüllbar): Wie existierende Daten **geladen** werden
-- `calculatable` (berechenbar): Wie Scores aus Daten **berechnet** werden
-- `displayable` (anzeigbar): Wie Daten/Ergebnisse **dargestellt** werden
-- `extractable` (extrahierbar): Wie Daten aus dem Fragebogenformat in andere FHIR-Ressourcen **überführt** werden
+- `collectable`: How data is **entered** by users
+- `populatable`: How existing data is **loaded**
+- `calculatable`: How scores are **calculated** from data
+- `displayable`: How data/results are **presented**
+- `extractable`: How data is **transferred** from the questionnaire format into other FHIR resources
 
-### Workflow-Patterns
+### Workflow Patterns
 
 #### Standard Workflow
 
-Der Standard-Workflow orientiert sich an der FHIR-Kernspezifikation und den vorgesehenen FHIR Ressourcen zur Definition von Fragebögen, zur Abbildung von Antwortbögen sowie zur Extraktion erhobener Antworten als weiterverarbeitbare Wertangabe.
+The standard workflow follows the FHIR core specification and the designated FHIR resources for defining questionnaires, representing response forms, and extracting collected answers as processable values.
 
-**Ablauf**:
+**Process**:
 
-1. Üblicherweise füllt ein Patient einen Fragebogen, der als FHIR Questionnaire (Q) definiert ist und über ein User Interface (UI) angezeigt wird, aus
-2. Die eingegebenen Antworten werden danach als FHIR QuestionnaireResponse (QR) gespeichert, wenn vorgesehen ein Score ermittelt
+1. Typically, a patient completes a questionnaire that is defined as a FHIR Questionnaire (Q) and displayed via a user interface (UI)
+2. The entered answers are then saved as a FHIR QuestionnaireResponse (QR), and a score is determined if applicable
 
 <div style="text-align: center;">
-<img src="Workflow_Standard.svg" alt="MII PRO Workflow-Pattern: Standard" width="40%"/>
+<img src="Workflow_Standard.svg" alt="MII PRO Workflow Pattern: Standard" width="40%"/>
 </div>
 
-**Verwendete Capabilities**: displayable, collectable
+**Capabilities used**: displayable, collectable
 
-**Beispiel**: Erhebung von Symptomschwere mit EORTC-QLQ-Fragebögen begleitend zu und folgend auf eine/r Strahlentherapie/Systemtherapie-Behandlung in der Onkologie
+**Example**: Assessment of symptom severity with EORTC-QLQ questionnaires accompanying and following radiotherapy/systemic therapy treatment in oncology
 
 ---
 
-#### Workflow-Pattern 1: Direkte Erfassung mit Echtzeit-Berechnung
+#### Workflow Pattern 1: Direct Collection with Real-Time Calculation
 
-Dieses Workflow-Pattern fokussiert eine direkte, d.h. nicht zeitversetzte, Beantwortung eines Fragebogens über ein User Interface (UI) und einer Score-Berechnung nach erfolgter Eingabe der Antworten.
+This workflow pattern focuses on direct, i.e., non-delayed, completion of a questionnaire via a user interface (UI) and score calculation after the answers have been entered.
 
-**Ablauf**:
+**Process**:
 
-1. Ein Patient füllt einen Fragebogen über ein UI aus, in dem er die enthaltenen Fragen beantwortet
-2. Anhand der Antworten und der definierten Score-Berechnungsvorschrift wird der Score in Echtzeit berechnet
-3. Optional werden die Antworten und der berechnete Score auf einem Server, z.B. FHIR Server, für die Weiterverarbeitung gespeichert
-4. Der berechnete Score wird dem Patienten sofort im UI angezeigt
+1. A patient completes a questionnaire via a UI by answering the contained questions
+2. Based on the answers and the defined score calculation rules, the score is calculated in real time
+3. Optionally, the answers and the calculated score are stored on a server, e.g., a FHIR server, for further processing
+4. The calculated score is immediately displayed to the patient in the UI
 
 <div style="text-align: center;">
-<img src="Workflow_Capability-Echtzeit.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Echtzeit-Berechnung" width="40%"/>
+<img src="Workflow_Capability-Echtzeit.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Real-Time Calculation" width="40%"/>
 </div>
 
-**Verwendete Capabilities:** `[collectable, calculatable, displayable, extractable]`
+**Capabilities used:** `[collectable, calculatable, displayable, extractable]`
 
-**Beispiel**: DiGA-Smartphone-App mit In-App-Scoreberechnung
+**Example**: DiGA smartphone app with in-app score calculation
 
 ---
 
-#### Workflow-Pattern 2: Mobile Erfassung mit Server-Berechnung
+#### Workflow Pattern 2: Mobile Collection with Server-Side Calculation
 
-Dieses Workflow-Pattern fokussiert die alleinige Beantwortung eines Fragebogens über ein User Interface auf Clientseite und einer anschließenden Score-Berechnung und Speicherung auf Serverseite.
+This workflow pattern focuses on the sole completion of a questionnaire via a user interface on the client side and subsequent score calculation and storage on the server side.
 
-**Ablauf**:
+**Process**:
 
-1. Ein Patient füllt einen Fragebogen, z.B. über eine Mobile App, aus, in dem er die enthaltenen Fragen beantwortet
-2. Anschließend werden die Antworten, ggf. eine Information zum ausgefüllten Fragebogen, an den Server gesendet
-3. Der Server berechnet anhand der definierten Score-Berechnungsvorschrift den Score und extrahiert ggf. relevante Antworten als eigenständiges Datum
-4. Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert
+1. A patient completes a questionnaire, e.g., via a mobile app, by answering the contained questions
+2. Subsequently, the answers and, if applicable, information about the completed questionnaire are sent to the server
+3. The server calculates the score based on the defined score calculation rules and, where applicable, extracts relevant answers as independent data
+4. The calculated and extracted data are stored, e.g., on a FHIR server
 
 <div style="text-align: center;">
-<img src="Workflow_Capability-Server.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Server-Berechnung" width="50%"/>
+<img src="Workflow_Capability-Server.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Server-Side Calculation" width="50%"/>
 </div>
 
-**Verwendete Capabilities:**
+**Capabilities used:**
 
 - Client (Mobile App): `[collectable]`
-- Server (Server): `[populatable, calculatable, extractable]`
+- Server: `[populatable, calculatable, extractable]`
 
-**Beispiel**: Leichtgewichtige mobile PRO-App
+**Example**: Lightweight mobile PRO app
 
 ---
 
-#### Workflow-Pattern 3: Historische Neuberechnung
+#### Workflow Pattern 3: Historical Recalculation
 
-Dieses Workflow-Pattern beschreibt die erneute, ggf. über einen Dienst automatisiert ausgeführte, Score-Berechnung ohne weitere Nutzerinteraktion.
+This workflow pattern describes the renewed, potentially automated, score calculation without further user interaction.
 
-**Ablauf**:
+**Process**:
 
-1. Die bereits in der Vergangenheit erfassten Antworten zu einem Fragebogen werden einem Dienst bereitgestellt
-2. Der Dienst lädt den zugrunde liegenden Fragebogen und die Score-Berechnungsvorschriften
-3. Der Dienst berechnet anhand der neuen Score-Berechnungsvorschrift den Score
-4. Die berechneten und extrahierten Daten werden z.B. in einem FHIR Server gespeichert
+1. Previously collected answers to a questionnaire are provided to a service
+2. The service loads the underlying questionnaire and the score calculation rules
+3. The service calculates the score based on the new score calculation rules
+4. The calculated and extracted data are stored, e.g., on a FHIR server
 
 <div style="text-align: center;">
-<img src="Workflow_Capability-Historisch.svg" alt="MII PRO Workflow-Pattern: Capability-basierte Variante, Historische Neuberechnung" width="40%"/>
+<img src="Workflow_Capability-Historisch.svg" alt="MII PRO Workflow Pattern: Capability-Based Variant, Historical Recalculation" width="40%"/>
 </div>
 
-**Verwendete Capabilities:** `[populatable, calculatable, extractable]`
+**Capabilities used:** `[populatable, calculatable, extractable]`
 
-**Beispiel**: Migration auf neue Scoring-Algorithmen oder Datenharmonisierung
-
----
-
-#### Workflow-Pattern 4: Klinische Ergebnisansicht
-
-Im Zusammenhang mit der Versorgung eines Patienten oder der Analyse von Kohortendaten erfolgt eine Einsicht einzelner oder aggregierter Datensätze ohne Neuberechnung.
-
-**Ablauf**:
-
-1. Berechtigter Nutzer mit lesender Zugriffsberechtigung selektiert Daten
-2. Die vorhandenen Daten, bestehend aus Antworten und zugehörigen gespeicherten Scores, werden angezeigt
-
-**Verwendete Capabilities**: `[populatable, displayable]`
-
-**Beispiel**: Arzt-Dashboard im KIS
+**Example**: Migration to new scoring algorithms or data harmonization
 
 ---
 
-#### Workflow-Pattern 5: Reine Datenerfassung
+#### Workflow Pattern 4: Clinical Results View
 
-Im Zusammenhang mit der Versorgung eines Patienten findet eine reine Datenerfassung ohne Berechnungen, z.B. nachträgliche Transkription, statt.
+In the context of patient care or cohort data analysis, individual or aggregated datasets are viewed without recalculation.
 
-**Ablauf**:
+**Process**:
 
-1. Berechtigter Nutzer (z.B. medizinische Fachkraft) erfasst die Antworten zu einem Fragebogen
-2. Antworten werden in FHIR-konformer Zielstruktur, z.B. als FHIR QuestionnaireResponse, gespeichert
-3. Optional findet ein nachgelagertes Scoring, z.B. durch externe Dienste, statt
+1. An authorized user with read access selects data
+2. The existing data, consisting of answers and associated stored scores, is displayed
 
-**Verwendete Capabilities**: `[collectable, extractable]`
+**Capabilities used**: `[populatable, displayable]`
 
-**Beispiel**: Papier-zu-Digital-Erfassung
+**Example**: Physician dashboard in the HIS
 
 ---
 
-### Score-Repräsentation
+#### Workflow Pattern 5: Pure Data Collection
 
-Anhand der verschiedenen Workflow-Patterns wird ersichtlich, dass unterschiedliche Repräsentationsformen für die Darstellung eines Scores existieren.
+In the context of patient care, pure data collection without calculations takes place, e.g., retrospective transcription.
+
+**Process**:
+
+1. An authorized user (e.g., healthcare professional) captures the answers to a questionnaire
+2. Answers are stored in a FHIR-conformant target structure, e.g., as a FHIR QuestionnaireResponse
+3. Optionally, downstream scoring is performed, e.g., by external services
+
+**Capabilities used**: `[collectable, extractable]`
+
+**Example**: Paper-to-digital capture
+
+---
+
+### Score Representation
+
+The various workflow patterns demonstrate that different forms of representation exist for displaying a score.
 
 <div style="text-align: center;">
-<img src="Workflow_Score_Repraesentation.svg" alt="MII PRO Workflow-Pattern: Score Repräsentationsebenen" width="60%"/>
+<img src="Workflow_Score_Repraesentation.svg" alt="MII PRO Workflow Pattern: Score Representation Layers" width="60%"/>
 </div>
 
-Die grundlegende Repräsentationsform für einen berechneten Score ist die Abbildung als eigenständiges Item in einem FHIR QuestionnaireResponse. Falls für die weiterführenden Analysen nur der Score und nicht die tatsächlichen Antworten relevant sind, lässt sich der berechnete Score aus dem FHIR QuestionnaireResponse extrahieren und als FHIR Observation darstellen. Ein auf diese Weise extrahierter und gespeicherter Score kann, sofern empirisch validierte Regeln zum Mapping auf einen domänenspezifischen T-Score existieren und definiert wurden, auf den domänenspezifischen T-Score abbilden.
+The fundamental representation form for a calculated score is its mapping as an independent item in a FHIR QuestionnaireResponse. If only the score and not the actual answers are relevant for further analyses, the calculated score can be extracted from the FHIR QuestionnaireResponse and represented as a FHIR Observation. A score extracted and stored in this way can, provided empirically validated rules for mapping to a domain-specific T-score exist and have been defined, be mapped to the domain-specific T-score.
 
 <div style="text-align: center;">
-<img src="Workflow_Domain_Mapping.svg" alt="MII PRO Domain Mapping-Patterns" width="30%"/>
+<img src="Workflow_Domain_Mapping.svg" alt="MII PRO Domain Mapping Patterns" width="30%"/>
 </div>
 
-Auf diese Weise kann eine Instrument-unabhängige Auswertung und ein domänenspezifischer Vergleich der erhobenen Daten durchgeführt werden.
+In this way, an instrument-independent evaluation and a domain-specific comparison of the collected data can be performed.
 
 ---
 
-### Implementierungsmuster
+### Implementation Patterns
 
 #### Calculated Expressions
 
-Scores werden mittels FHIRPath-Expressions berechnet:
+Scores are calculated using FHIRPath expressions:
 
 ```
-// Einfache Summe
+// Simple sum
 %resource.item.answer.value.ordinal().sum()
 
-// Gewichtete Summe mit Selektion
+// Weighted sum with selection
 %resource.item.where(linkId.matches('^item-[1-9]$')).answer.value.ordinal().sum()
 
-// Mit Variablen für komplexe Berechnungen
+// With variables for complex calculations
 %rawScore = %resource.item.answer.value.ordinal().sum()
 iif(%rawScore < 5, 'minimal', iif(%rawScore < 10, 'mild', 'moderate'))
 ```
 
-#### Initial Expressions für Populatable
+#### Initial Expressions for Populatable
 
-Vorausfüllung aus existierenden Daten:
+Pre-population from existing data:
 
 ```
-// Einzelnes Item
+// Single item
 iif(%sourceResponse.exists(), %sourceResponse.item.where(linkId='q1').answer.value, {})
 
-// Mit Fallback
+// With fallback
 %sourceResponse.item.where(linkId='q1').answer.value | {}
 ```
 
-#### Extraction zu Observations
+#### Extraction to Observations
 
-Die Transformation erfolgt über SDC-Extraction-Extensions oder server-seitige Logik:
+Transformation is performed via SDC extraction extensions or server-side logic:
 
 ```
 * item.extension[observationExtract] = true
@@ -213,25 +213,25 @@ Die Transformation erfolgt über SDC-Extraction-Extensions oder server-seitige L
 
 ### Best Practices
 
-#### Capability-Auswahl
+#### Capability Selection
 
-Die Auswahl der Capabilities sollte sich nach dem Anwendungsfall richten:
+The selection of capabilities should be guided by the use case:
 
-- **Patientenportale**: `[collectable, calculatable, displayable]`
-- **Mobile Apps**: Nur `[collectable]` (minimaler Footprint)
-- **Server-Systeme**: `[populatable, calculatable, extractable]`
-- **Reporting-Systeme**: Nur `[displayable]`
+- **Patient portals**: `[collectable, calculatable, displayable]`
+- **Mobile apps**: Only `[collectable]` (minimal footprint)
+- **Server systems**: `[populatable, calculatable, extractable]`
+- **Reporting systems**: Only `[displayable]`
 
-#### Performance-Überlegungen
+#### Performance Considerations
 
-- Berechnungen in der UI nur bei kleinen Fragebögen
-- Server-seitige Berechnung für komplexe Scores
-- Caching von ObservationDefinitions
-- Batch-Processing für historische Daten
+- UI-side calculations only for small questionnaires
+- Server-side calculation for complex scores
+- Caching of ObservationDefinitions
+- Batch processing for historical data
 
-#### Fehlerbehandlung
+#### Error Handling
 
-- Validierung aller Pflichtfelder vor Score-Berechnung
-- Klare Fehlermeldungen bei ungültigen Werten
-- Fallback-Strategien für fehlende Capabilities
-- Logging von Mapping-Fehlern
+- Validate all mandatory fields before score calculation
+- Clear error messages for invalid values
+- Fallback strategies for missing capabilities
+- Logging of mapping errors

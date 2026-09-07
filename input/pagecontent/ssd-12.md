@@ -1,16 +1,18 @@
-### Klinischer Kontext
+<!-- TODO:REVIEW machine translation of source page ssd-12.md (de) — template migration, Gate C; the authored text is input/translations/de/pagecontent/ssd-12.md -->
 
-Die **SSD-12 (Somatic Symptom Disorder – B Criteria Scale)** erfasst die **psychologischen Merkmale** der somatischen Belastungsstörung nach DSM-5 — also nicht die körperlichen Beschwerden selbst, sondern den Umgang damit: übermäßige Gedanken, Gefühle und Verhaltensweisen in Bezug auf die eigenen Symptome.
+### Clinical Context
 
-Zwölf Items decken die drei B-Kriterien des DSM-5 ab (kognitiv, affektiv, behavioral) und werden auf einer fünfstufigen Häufigkeitsskala beantwortet (0 = nie bis 4 = sehr oft).
+The **SSD-12 (Somatic Symptom Disorder – B Criteria Scale)** captures the **psychological features** of somatic symptom disorder per DSM-5 — not the bodily complaints themselves, but how the person deals with them: excessive thoughts, feelings and behaviours relating to their own symptoms.
 
-**Scoring** (Summenwert 0–48): Einfache Summe über alle zwölf Items; höhere Werte zeigen eine stärkere psychologische Belastung an. Ein Trennwert wird hier bewusst nicht dokumentiert, da er im Rahmen dieser Umsetzung nicht belastbar belegt werden konnte.
+Twelve items cover the three DSM-5 B criteria (cognitive, affective, behavioural) and are answered on a five-point frequency scale (0 = never, to 4 = very often).
 
-**Ergänzung zum PHQ-15:** Während der [PHQ-15](phq-15.html) die Schwere der körperlichen Beschwerden misst, erfasst die SSD-12 die psychologische Reaktion darauf. Erst zusammen bilden sie beide Kriteriengruppen der somatischen Belastungsstörung ab.
+**Scoring** (sum score 0–48): a simple sum across all twelve items; higher values indicate greater psychological burden. A cut-off is deliberately not documented here, as none could be evidenced reliably within this implementation.
 
-### FHIR-Implementierung
+**Complement to the PHQ-15:** where the [PHQ-15](phq-15.html) measures the severity of bodily complaints, the SSD-12 captures the psychological response to them. Only together do they cover both criterion groups of somatic symptom disorder.
 
-> **Sprachstrategie:** Deutsch als Primärsprache — die deutsche Fassung ist die in PCOR-MII erhobene. Ob Deutsch die Originalsprache des Instruments ist, ist ungeklärt: Dafür sprechen das deutsche Entwicklerteam (Löwe/UKE Hamburg, Henningsen/TU München) und die deutschsprachige Entwicklungsstichprobe, dagegen die englischsprachige Entwicklungspublikation und eine eigene Validierungsarbeit der deutschen Fassung von 2025. Solange das nicht belegt ist, wird kein englischer Itemtext behauptet.
+### FHIR Implementation
+
+> **Language strategy:** German as the primary language — the German version is the one collected in PCOR-MII. Whether German is the instrument's original language is unresolved: in favour are the German development team (Löwe/UKE Hamburg, Henningsen/TU Munich) and the German-language development sample; against are the English-language development publication and a separate 2025 validation study of the German version. Until this is evidenced, no English item text is claimed.
 
 #### Questionnaire
 
@@ -18,28 +20,28 @@ Zwölf Items decken die drei B-Kriterien des DSM-5 ab (kognitiv, affektiv, behav
 
 **Capabilities:** Displayable, Collectable, Calculatable, Extractable, Domain-aligned
 
-**Besonderheiten:**
-- linkIds `ssd12-q01`…`ssd12-q12`, Score-Item `ssd12-score-total`.
-- Eigene, instrumentenspezifische Antwortskala: MII-CodeSystem `mii-cs-pro-ssd-12-answers` mit `ordinalValue`-Property 0–4, gebunden über `answerValueSet` (`mii-vs-pro-ssd-12-answers`). Die Wortwahl der Antwortstufen ist Teil des validierten Instruments und wird deshalb nicht durch eine generische Skala ersetzt.
-- Die `display`-Werte der Antwortkonzepte sind **deutsch** (englische Bezeichnungen als `designation`), passend zur Sprache des Fragebogens — siehe Hinweis unten.
-- Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()`.
-- Weder LOINC noch SNOMED CT führen einen Code für die SSD-12. Die LOINC-Codes `94027-0`/`94028-8` betreffen generische DSM-5-SSD-Konzepte und wurden bewusst **nicht** verwendet, um keine falsche Abdeckung zu suggerieren.
+**Implementation notes:**
+- linkIds `ssd12-q01`…`ssd12-q12`, score item `ssd12-score-total`.
+- A dedicated, instrument-specific answer scale: MII CodeSystem `mii-cs-pro-ssd-12-answers` with an `ordinalValue` property 0–4, bound via `answerValueSet` (`mii-vs-pro-ssd-12-answers`). The wording of the response levels is part of the validated instrument and is therefore not replaced by a generic scale.
+- The `display` values of the answer concepts are **German** (English labels as `designation`), matching the language of the questionnaire — see the note below.
+- Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()`.
+- Neither LOINC nor SNOMED CT carries a code for the SSD-12. The LOINC codes `94027-0`/`94028-8` concern generic DSM-5 SSD concepts and were deliberately **not** used, so as not to suggest false coverage.
 
-> **Hinweis zur Display-Sprache:** In einer Ressource mit `language = #de` erwartet der FHIR-Validator den deutschen Display im `valueCoding`. Ein englischer Display lässt die gesamte `answerValueSet`-Prüfung fehlschlagen — mit der irreführenden Meldung, der Wert sei nicht im ValueSet enthalten.
+> **Note on display language:** in a resource with `language = #de` the FHIR validator expects the German display in `valueCoding`. An English display makes the entire `answerValueSet` check fail — with the misleading message that the value is not in the value set.
 
-Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-ssd-12.html).
+The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-ssd-12.html).
 
-#### Score-Repräsentation
+#### Score Representation
 
-1. **Berechnetes Item** in der QuestionnaireResponse (linkId: `ssd12-score-total`)
-2. **Observation** mit MII-Score-Code `ssd-12-total`
-3. **ObservationDefinition:** `mii-obsdef-pro-score-ssd-12` — Wertebereich 0–48 {score}, höher = stärkere psychologische Belastung
+1. **Calculated item** in the QuestionnaireResponse (linkId: `ssd12-score-total`)
+2. **Observation** carrying the MII score code `ssd-12-total`
+3. **ObservationDefinition:** `mii-obsdef-pro-score-ssd-12` — value range 0–48 {score}, higher = greater psychological burden
 
-### Lizenz
+### License
 
-**Frei verfügbar** laut DIZ-Implementierungsliste PCOR-MII.
+**Freely available** per the PCOR-MII DIZ implementation list.
 
-### Quellen
+### Sources
 
 - Toussaint A, Murray AM, Voigt K, Herzog A, Gierk B, Kroenke K, Rief W, Henningsen P, Löwe B. Development and validation of the Somatic Symptom Disorder-B Criteria Scale (SSD-12). *Psychosomatic Medicine* 2016;78(1):5–12. doi:10.1097/PSY.0000000000000240
 - Toussaint A, Löwe B, Brähler E, Jordan P. The Somatic Symptom Disorder – B Criteria Scale (SSD-12): factorial structure, validity and population-based norms. *Journal of Psychosomatic Research* 2017;97:9–17. doi:10.1016/j.jpsychores.2017.03.017

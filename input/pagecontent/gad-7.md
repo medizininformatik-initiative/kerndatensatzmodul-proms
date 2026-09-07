@@ -1,18 +1,20 @@
-### Klinischer Kontext
+<!-- TODO:REVIEW machine translation of source page gad-7.md (de) — template migration, Gate C; the authored text is input/translations/de/pagecontent/gad-7.md -->
 
-Der **GAD-7** (Generalized Anxiety Disorder Scale-7) ist das Standardinstrument zum Screening auf eine **generalisierte Angststörung**. Sieben Items erfassen die Häufigkeit von Angstsymptomen in den letzten zwei Wochen auf einer vierstufigen Skala (0 = überhaupt nicht bis 3 = beinahe jeden Tag).
+### Clinical Context
 
-**Scoring und Interpretation** (Summenwert 0–21, Spitzer et al. 2006):
-- 0–4: Minimale Angstsymptomatik
-- 5–9: Leichte Angstsymptomatik
-- 10–14: Moderate Angstsymptomatik — weitere Abklärung empfohlen
-- 15–21: Schwere Angstsymptomatik
+The **GAD-7** (Generalized Anxiety Disorder Scale-7) is the standard instrument for screening for **generalized anxiety disorder**. Seven items capture the frequency of anxiety symptoms over the past two weeks on a four-point scale (0 = not at all, to 3 = nearly every day).
 
-**Zusammenhang mit der PHQ-Familie:** Der GAD-7 stammt von denselben Autoren wie der PHQ-9 und teilt dessen Antwortskala. Die **ersten beiden Items bilden den GAD-2**, und zusammen mit zwei PHQ-9-Items ergeben sie den **PHQ-4** — das Ultrakurzscreening für Angst und Depression. Genau deshalb tragen die Items im MII-PRO-Modul die linkIds des gemeinsamen PHQ-D-Block-Namespace (`phq-phq5a`…`phq-phq5g`) und nicht eine instrumenteneigene Nummerierung: Dieselbe Frage soll instrumentenübergreifend denselben linkId tragen.
+**Scoring and interpretation** (sum score 0–21, Spitzer et al. 2006):
+- 0–4: minimal anxiety
+- 5–9: mild anxiety
+- 10–14: moderate anxiety — further assessment recommended
+- 15–21: severe anxiety
 
-### FHIR-Implementierung
+**Relationship to the PHQ family:** the GAD-7 comes from the same authors as the PHQ-9 and shares its answer scale. The **first two items form the GAD-2**, and together with two PHQ-9 items they make up the **PHQ-4** — the ultra-short screen for anxiety and depression. This is precisely why the items in the MII PRO module carry the linkIds of the shared PHQ-D block namespace (`phq-phq5a`…`phq-phq5g`) rather than an instrument-specific numbering: the same question should carry the same linkId across instruments.
 
-> **Sprachstrategie:** Englisch als Primärsprache (Original nach Spitzer et al. 2006), deutsche Texte als Translations (PHQ-D, Löwe et al. 2002; validiert an über 5.000 Personen der deutschen Allgemeinbevölkerung).
+### FHIR Implementation
+
+> **Language strategy:** English as the primary language (the original per Spitzer et al. 2006), German texts as translations (PHQ-D, Löwe et al. 2002; validated in over 5,000 people from the German general population).
 
 #### Questionnaire
 
@@ -20,31 +22,31 @@ Der **GAD-7** (Generalized Anxiety Disorder Scale-7) ist das Standardinstrument 
 
 **Capabilities:** Displayable, Collectable, Calculatable, Extractable, Domain-aligned
 
-**Besonderheiten:**
-- linkIds im PHQ-D-Block-Namespace: `phq-phq5a`…`phq-phq5g`, Score-Item `phq-gad7-score-total`.
-- Antwortskala über das geteilte RuleSet `Phq4PointFrequencyAnswerOptions` — inline `answerOption` mit den LOINC-Antwortcodes der Liste LL358-3 (`LA6568-5`…`LA6571-9`) und ordinalen Gewichten 0–3. Dieselbe Skala wie PHQ-9.
-- Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.ordinal().sum()`.
-- LOINC-Panel `69737-5`, Score-Item mit LOINC `70274-6`.
+**Implementation notes:**
+- linkIds in the PHQ-D block namespace: `phq-phq5a`…`phq-phq5g`, score item `phq-gad7-score-total`.
+- Answer scale via the shared RuleSet `Phq4PointFrequencyAnswerOptions` — inline `answerOption` with the LOINC answer codes of list LL358-3 (`LA6568-5`…`LA6571-9`) and ordinal weights 0–3. The same scale as the PHQ-9.
+- Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.ordinal().sum()`.
+- LOINC panel `69737-5`, score item with LOINC `70274-6`.
 
-**Item-Nummerierung:** Die ConceptMap [`mii-cm-pro-gad-7-linkids`](ConceptMap-mii-cm-pro-gad-7-linkids.html) bildet die übliche GAD-7-Nummerierung (Item 1–7) auf die kanonischen linkIds ab — eine Lesehilfe für die Übernahme von Daten aus Fremdsystemen.
+**Item numbering:** the ConceptMap [`mii-cm-pro-gad-7-linkids`](ConceptMap-mii-cm-pro-gad-7-linkids.html) maps the conventional GAD-7 numbering (items 1–7) onto the canonical linkIds — a reading aid for taking over data from third-party systems.
 
-Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-gad-7.html).
+The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-gad-7.html).
 
-#### Score-Repräsentation
+#### Score Representation
 
-1. **Berechnetes Item** in der QuestionnaireResponse (linkId: `phq-gad7-score-total`)
-2. **Observation** mit LOINC-Code `70274-6`
-3. **ObservationDefinition:** `mii-obsdef-pro-score-gad-7` — Wertebereich 0–21 {score}, höher = stärkere Angstsymptomatik
+1. **Calculated item** in the QuestionnaireResponse (linkId: `phq-gad7-score-total`)
+2. **Observation** carrying the LOINC code `70274-6`
+3. **ObservationDefinition:** `mii-obsdef-pro-score-gad-7` — value range 0–21 {score}, higher = more pronounced anxiety
 
-Die vier Schweregradstufen sind als `qualifiedInterval` **dokumentiert**, aber nicht als ausführbare Interpretationslogik ausgeliefert (siehe [Scoring](scoring.html)).
+The four severity bands are **documented** as `qualifiedInterval` but not shipped as executable interpretation logic (see [Scoring](scoring.html)).
 
-> **Nicht enthalten:** Eine PROMIS-Anxiety-T-Score-Umrechnung. Score-Konversionen zwischen Instrumenten werden künftig als CQL-Library modelliert und nicht als FHIRPath-Ausdruck im Questionnaire.
+> **Not included:** a PROMIS anxiety T-score conversion. Score conversions between instruments will be modelled as a CQL library rather than as a FHIRPath expression in the questionnaire.
 
-### Lizenz
+### License
 
-GAD-7 © Pfizer Inc., entwickelt von Spitzer, Kroenke, Williams und Löwe — **frei verfügbar**, keine Genehmigung für Reproduktion, Übersetzung, Darstellung oder Nutzung erforderlich. Deutsche Fassung: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002).
+GAD-7 © Pfizer Inc., developed by Spitzer, Kroenke, Williams and Löwe — **freely available**; no permission required for reproduction, translation, display or use. German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002).
 
-### Quellen
+### Sources
 
 - Spitzer RL, Kroenke K, Williams JBW, Löwe B. A brief measure for assessing generalized anxiety disorder: the GAD-7. *Archives of Internal Medicine* 2006;166(10):1092–1097. doi:10.1001/archinte.166.10.1092
 - Löwe B, Decker O, Müller S, et al. Validation and standardization of the Generalized Anxiety Disorder Screener (GAD-7) in the general population. *Medical Care* 2008;46(3):266–274. doi:10.1097/MLR.0b013e318160d093

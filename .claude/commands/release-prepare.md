@@ -96,3 +96,16 @@ Prueft alle sechs Stellen (sushi-config.yaml als Referenz, package.json, version
 - **`qc/custom.rules.yaml`** führt eine feste Liste gültiger Versionen in der Regel `version-filled`. Fehlt die neue Version dort, schlägt die QC fehl — die Version muss ergänzt, nicht ersetzt werden.
 - **Versionsdurchgriff prüfen.** Nach dem Bump `sushi . --snapshot` laufen lassen und verifizieren, dass keine generierte Ressource mehr die Altversion trägt. Bei 2026.5.2 waren gemischte Versionsstände bis 2026.0.0 im Package, weil `fsh-generated` nicht neu erzeugt wurde. ObservationDefinitions tragen die Version NICHT in `.version`, sondern in der `artifact-version`-Extension (R4-Backport) — separat prüfen.
 - **HAPI-Smoke-Test ist Pflicht-Gate vor dem Tag** (siehe `/release-finalize`).
+
+## Tag-Format ist releasekritisch (Template-Workflow)
+
+Der Release-Workflow des Modul-Templates (`module-release.yml`) triggert auf
+`v[0-9]+.[0-9]+.[0-9]+*`. **Ein Tag ohne führendes `v` löst NICHTS aus** — kein
+Build, kein Draft, keine Meldung, der Tag versandet stumm. Das PRO-Modul taggt
+seit jeher `vYYYY.N.N` (korrekt); consent und mikrobiologie taggen ohne `v` und
+sind das warnende Beispiel. Beim Taggen immer: `git tag v${VERSION}`.
+
+Zweiter stummer Ausfall derselben Sorte: der `guard`-Job prüft sushi-config.yaml
+auf `{{`-Platzhalter. Die Prüfung MUSS kommentarbereinigt sein
+(`grep -v '^[[:space:]]*#' | grep -q '{{'`) — der dokumentierende Kommentarkopf
+der Datei enthält Platzhalternamen und ist gewollt.

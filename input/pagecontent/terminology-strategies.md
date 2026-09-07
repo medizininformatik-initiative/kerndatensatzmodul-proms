@@ -1,62 +1,62 @@
-## Übersicht der Terminologieansätze
+## Overview of Terminology Approaches
 
-Das MII PRO Modul unterstützt drei grundlegende Ansätze für die Definition von Antwortoptionen in Questionnaire-Items:
+The MII PRO module supports three fundamental approaches for defining answer options in questionnaire items:
 
-1. **Inline answerOption**: Direkte Definition der Antwortoptionen im Questionnaire
-2. **answerValueSet**: Verweis auf externe ValueSets mit flexibler Zusammenstellung
-3. **MII CodeSystems**: Vollständige Kontrolle über Terminologie-Lebenszyklus
+1. **Inline answerOption**: Direct definition of answer options within the Questionnaire
+2. **answerValueSet**: Reference to external ValueSets with flexible composition
+3. **MII CodeSystems**: Full control over the terminology lifecycle
 
-## Strategische Entscheidungskriterien
+## Strategic Decision Criteria
 
-### Verwendung von Inline answerOption
+### Using Inline answerOption
 
-#### Verfügbare internationale Standards
-**Anwendungsbereich**: LOINC-Codes für Antwortlisten mit verlässlicher Abdeckung vorhanden
+#### Available International Standards
+**Scope**: LOINC codes for answer lists with reliable coverage available
 
-**Implementierungsmuster**:
+**Implementation pattern**:
 ~~~~
 * item[=].answerOption[0].valueCoding.system = $LNC
 * item[=].answerOption[0].valueCoding.code = #LA6568-5
-* item[=].answerOption[0].valueCoding.display = "Überhaupt nicht"
+* item[=].answerOption[0].valueCoding.display = "Not at all"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
 ~~~~
 
-**Beispielinstrumente**: PHQ-9, PROMIS-Fragebögen
-**Vorteile**:
-- Internationale Interoperabilität
-- Semantische Eindeutigkeit
-- Etablierte Kodierungsstandards
+**Example instruments**: PHQ-9, PROMIS questionnaires
+**Advantages**:
+- International interoperability
+- Semantic unambiguity
+- Established coding standards
 
-#### Einfache, statische Antwortlisten
-**Anwendungsbereich**: Wenige Antwortoptionen (maximal 5 Optionen), geringe Änderungswahrscheinlichkeit, keine Wiederverwendung erforderlich
+#### Simple, Static Answer Lists
+**Scope**: Few answer options (maximum 5 options), low likelihood of change, no reuse required
 
-**Implementierungsmuster**:
+**Implementation pattern**:
 
 ~~~~
-* item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[0].valueCoding.display = "I have no problems in walking about"
 * item[=].answerOption[0].valueCoding.code = #1
-* item[=].answerOption[1].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
+* item[=].answerOption[1].valueCoding.display = "I have slight problems in walking about"
 * item[=].answerOption[1].valueCoding.code = #2
 ~~~~
 
-**Beispielinstrument**: EQ-5D-5L Antwortskala
-**Vorteile**:
-- Minimale Komplexität
-- Übersichtliche Implementierung
-- Geringer Wartungsaufwand
+**Example instrument**: EQ-5D-5L answer scale
+**Advantages**:
+- Minimal complexity
+- Clear implementation
+- Low maintenance effort
 
-#### Umfangreiche Metadaten pro Antwortoption
-**Anwendungsbereich**: Mehrsprachige Unterstützung, Score-Gewichtungen, komplexe Darstellungsanforderungen
+#### Extensive Metadata per Answer Option
+**Scope**: Multi-language support, score weights, complex presentation requirements
 
-**Beispiel**: PHQ-9 mit deutschen Übersetzungen und Gewichtungs-Extensions
+**Example**: PHQ-9 with German translations and weighting extensions
 
-### Verwendung von answerValueSet mit MII CodeSystem
+### Using answerValueSet with MII CodeSystem
 
-#### Multiple Antwortformat-Varianten
-**Anwendungsbereich**: Identische konzeptuelle Antworten in verschiedenen Textvarianten (Kurzform/Langform/Detail)
+#### Multiple Answer Format Variants
+**Scope**: Identical conceptual answers in different text variants (short form/long form/detailed)
 
-**Implementierungsbeispiel**: BDI-II
+**Implementation example**: BDI-II
 
 ~~~~
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
@@ -74,87 +74,87 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 * include #bdi-bdi2-answer-1b from system MII_CS_PRO_BDI_BDI2_AnswerList
 ~~~~
 
-**Vorteile**:
-- Zentrale Codeverwaltung
-- Mehrere ValueSet-Varianten aus einem CodeSystem
-- Wiederverwendbarkeit der Konzepte
+**Advantages**:
+- Central code management
+- Multiple ValueSet variants from a single CodeSystem
+- Concept reusability
 
-#### Wiederverwendung über Questionnaires hinweg
-**Kriterium**: Gleiche Antwortmuster in mehreren Instrumenten
+#### Reuse Across Questionnaires
+**Criterion**: Same answer patterns in multiple instruments
 
-**Anwendungsfall**: Generische PRO-Severity-Scales (keine/leicht/mäßig/schwer)
-**Vorteile**:
-- Konsistente Terminologie
-- Zentrale Wartung
-- Harmonisierte Datenmodelle
+**Use case**: Generic PRO severity scales (none/mild/moderate/severe)
+**Advantages**:
+- Consistent terminology
+- Central maintenance
+- Harmonized data models
 
-#### Komplexe Score-Anforderungen
-**Kriterium**: Multiple Score-Gewichte pro Konzept, komplexe Scoring-Regeln
+#### Complex Scoring Requirements
+**Criterion**: Multiple score weights per concept, complex scoring rules
 
-**Beispiel**: BDI-II mit Varianten-Antwort-Gewichten (1a vs 1b)
-**Implementierung**: CodeSystem-Properties für itemWeight-Management
+**Example**: BDI-II with variant answer weights (1a vs 1b)
+**Implementation**: CodeSystem properties for itemWeight management
 
-#### Questionnaire Capabilities-basierte Entscheidungen
-**Kriterium**: Capability-Profile erfordern spezifische Terminologie-Ansätze
+#### Questionnaire Capabilities-Based Decisions
+**Criterion**: Capability profiles require specific terminology approaches
 
-**Capabilities und Terminologie-Implikationen**:
-- **Displayable = false, Calculatable = true**: Erfordert answerValueSet für Score-Berechnung ohne Darstellungslogik
-- **Displayable = true**: Kann inline answerOption mit reichem Display-Content verwenden
-- **Extractable = true**: Benötigt korrekte itemWeight-Definitionen für `.weight()` Funktionen
-- **Multiple Capabilities**: Inline answerOption bietet maximale Flexibilität für Darstellung + Berechnung
+**Capabilities and terminology implications**:
+- **Displayable = false, Calculatable = true**: Requires answerValueSet for score calculation without display logic
+- **Displayable = true**: Can use inline answerOption with rich display content
+- **Extractable = true**: Requires correct itemWeight definitions for `.weight()` functions
+- **Multiple Capabilities**: Inline answerOption offers maximum flexibility for display + calculation
 
-**BDI-II Beispiel**:
+**BDI-II example**:
 ~~~~
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[calculatable].valueBoolean = true
-* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
+* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores without display dependency
 ~~~~
 
-#### MII-Terminologiestrategie
-**Kriterium**: Keine zuverlässigen internationalen Standards, deutsche Spezifika erforderlich
+#### MII Terminology Strategy
+**Criterion**: No reliable international standards available, German specifics required
 
-**Strategische Überlegungen**:
-- Vollständige Kontrolle über Terminologie-Lebenszyklus
-- Deutsche Gesundheitssystem-Spezifika
-- Kulturelle Anpassungen der Antwortoptionen
-- Normative Autorität über PRO-Definitionen
+**Strategic considerations**:
+- Full control over terminology lifecycle
+- German healthcare system specifics
+- Cultural adaptations of answer options
+- Normative authority over PRO definitions
 
-## Entscheidungsmatrix
+## Decision Matrix
 
-| Kriterium | Inline answerOption | answerValueSet + MII CS |
+| Criterion | Inline answerOption | answerValueSet + MII CS |
 |-----------|-------------------|------------------------|
-| **LOINC-Verfügbarkeit** | Verwenden wenn vorhanden | Nur wenn unzureichend |
-| **Displayable Capability** | Optimal für Display + Scores | Begrenzt für reine Display-Logik |
-| **Calculatable-only** | Overhead für reine Berechnung | Ideal für Score-only Questionnaires |
-| **Mehrfachvarianten** | Ungeeignet | Ideal |
-| **Wiederverwendung** | Nicht effizient | Empfohlen |
-| **Komplexe Scores** | Begrenzt durch Extensions | CodeSystem Properties |
-| **Implementierungsaufwand** | Minimal | Höher |
-| **Wartungsaufwand** | Niedrig (bei statischen Listen) | Höher |
-| **Internationale Interop** | Maximal (mit LOINC) | Begrenzt |
-| **Deutsche Spezifika** | Via Extensions | Native Unterstützung |
+| **LOINC availability** | Use when available | Only when insufficient |
+| **Displayable capability** | Optimal for display + scores | Limited for pure display logic |
+| **Calculatable-only** | Overhead for pure calculation | Ideal for score-only questionnaires |
+| **Multiple variants** | Not suitable | Ideal |
+| **Reuse** | Not efficient | Recommended |
+| **Complex scores** | Limited by extensions | CodeSystem properties |
+| **Implementation effort** | Minimal | Higher |
+| **Maintenance effort** | Low (for static lists) | Higher |
+| **International interop** | Maximum (with LOINC) | Limited |
+| **German specifics** | Via extensions | Native support |
 
-## Visuelle Übersicht
+## Visual Overview
 
-![Terminologie-Strategien Vergleichsmatrix](MII-PRO-Terminologie-Vergleichsmatrix.png)
+![Terminology Strategies Comparison Matrix](MII-PRO-Terminologie-Vergleichsmatrix.png)
 
-## Implementierungsbeispiele
+## Implementation Examples
 
-### Beispiel 1: PHQ-9 (LOINC + Inline)
+### Example 1: PHQ-9 (LOINC + Inline)
 ~~~~
 * item[1].answerOption[0].valueCoding.system = $LNC
 * item[1].answerOption[0].valueCoding.code = #LA6568-5
-* item[1].answerOption[0].valueCoding.display = "Überhaupt nicht"
+* item[1].answerOption[0].valueCoding.display = "Not at all"
 * item[1].answerOption[0].valueCoding.display.extension[0].url = $hl7-translation
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[0].url = "lang"
-* item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #en
+* item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
-* item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Not at all"
+* item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Ueberhaupt nicht"
 * item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[1].answerOption[0].extension.valueDecimal = 0
 ~~~~
 
-### Beispiel 2: BDI-II (MII CodeSystem + ValueSet)
+### Example 2: BDI-II (MII CodeSystem + ValueSet)
 ~~~~
 // Questionnaire Item
 * item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
@@ -172,25 +172,25 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 * include #bdi-bdi2-answer-1 from system MII_CS_PRO_BDI_BDI2_AnswerList
 ~~~~
 
-### Beispiel 3: EQ-5D-5L (Einfache Inline)
+### Example 3: EQ-5D-5L (Simple Inline)
 ~~~~
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.display = "I have no problems in walking about"
 * item[=].answerOption[=].valueCoding.code = #1
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.display = "I have slight problems in walking about"
 * item[=].answerOption[=].valueCoding.code = #2
 ~~~~
 
-## Calculated Expressions und .weight() Funktionen
+## Calculated Expressions and .weight() Functions
 
-**Kritische Implementierungsanforderung**: FHIRPath `.weight()` Funktionen benötigen korrekte itemWeight-Definitionen:
+**Critical implementation requirement**: FHIRPath `.weight()` functions require correct itemWeight definitions:
 
-### Bei Inline answerOption:
+### With Inline answerOption:
 ~~~~
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
 * item[=].answerOption[0].extension.valueDecimal = 0
 ~~~~
 
-### Bei CodeSystem + ValueSet:
+### With CodeSystem + ValueSet:
 ~~~~
 CodeSystem: MyCodeSystem
 * ^property[+].code = #ordinalValue
@@ -199,29 +199,29 @@ CodeSystem: MyCodeSystem
 * #answer-code ^property[=].valueDecimal = 0
 ~~~~
 
-## Governance und Lebenszyklus-Management
+## Governance and Lifecycle Management
 
-### MII-Terminologie
-**Vorteile**:
-- Vollständige Kontrolle über Definitionen
-- Deutsche Gesundheitssystem-Spezifika
-- Koordinierte Evolution mit MII-Standards
-- Normative Autorität für deutsche PRO-Implementierungen
+### MII Terminology
+**Advantages**:
+- Full control over definitions
+- German healthcare system specifics
+- Coordinated evolution with MII standards
+- Normative authority for German PRO implementations
 
-**Verantwortlichkeiten**:
-- MII PRO Arbeitsgruppe: Terminologie-Governance
-- Implementierer: Feedback und Anforderungen
-- MII Terminologieservice: Distribution und Wartung
+**Responsibilities**:
+- MII PRO Working Group: Terminology governance
+- Implementers: Feedback and requirements
+- MII Terminology Service: Distribution and maintenance
 
-### Internationale Standards Integration
-**LOINC-Priorität**: Bevorzuge LOINC wo verfügbar und geeignet
-**Mapping-Strategien**: ConceptMaps für MII zu LOINC Harmonisierung
-**Zukunftsstrategie**: Graduelle Migration zu internationalen Standards bei Verfügbarkeit
+### International Standards Integration
+**LOINC priority**: Prefer LOINC where available and suitable
+**Mapping strategies**: ConceptMaps for MII to LOINC harmonization
+**Future strategy**: Gradual migration to international standards as they become available
 
-## Fazit
+## Conclusion
 
-Die Wahl der Terminologiestrategie ist eine **strategische Architekturentscheidung**, die die langfristige Wartbarkeit, Interoperabilität und Skalierbarkeit von PRO-Implementierungen maßgeblich beeinflusst.
+The choice of terminology strategy is a **strategic architectural decision** that significantly impacts the long-term maintainability, interoperability, and scalability of PRO implementations.
 
-**Grundprinzip**: "Internationale Standards first, MII-Terminologie where necessary, simple inline where appropriate"
+**Guiding principle**: "International standards first, MII terminology where necessary, simple inline where appropriate"
 
-Diese Strategie ermöglicht es, die Vorteile internationaler Interoperabilität zu nutzen, während gleichzeitig die spezifischen Anforderungen des deutschen Gesundheitswesens berücksichtigt werden.
+This strategy enables leveraging the advantages of international interoperability while simultaneously addressing the specific requirements of the German healthcare system.

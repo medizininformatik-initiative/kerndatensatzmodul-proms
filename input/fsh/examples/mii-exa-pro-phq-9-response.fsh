@@ -7,8 +7,7 @@ Title: "PHQ-9 Questionnaire Response Example"
 * language = #de
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2023-10-01T12:00:00Z"
-* questionnaire = $mii-qst-pro-phq-9
-
+* insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9)
 // Severe depression responses (score = 27)
 * item[+].linkId = "phq-phq2a" // Little interest or pleasure
 * item[=].answer[0].valueCoding = $LNC#LA6571-9 "Nearly every day"

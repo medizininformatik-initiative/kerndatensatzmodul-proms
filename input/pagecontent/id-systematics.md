@@ -1,153 +1,153 @@
-Eine konsistente Systematik der Identifier ist essentiell für die standardisierte Darstellung von PRO-Daten im MII-Kontext.
+A consistent identifier system is essential for the standardized representation of PRO data in the MII context.
 
-**Wichtige Abgrenzung**: Identifier sind explizit als MII-interne Business Identifier zu verstehen und nicht zu verwechseln mit semantischen Codes (LOINC, SNOMED CT) von Fragebögen und Fragebogen-Items, die der terminologischen Annotation in offenen Standards dienen.
+**Important distinction**: Identifiers are explicitly intended as MII-internal business identifiers and should not be confused with semantic codes (LOINC, SNOMED CT) of questionnaires and questionnaire items, which serve terminological annotation in open standards.
 
-## Anwendungsbereiche für Identifier
+## Scope of Identifier Usage
 
-Identifier werden in folgenden Kontexten benötigt:
+Identifiers are needed in the following contexts:
 
-1. **Fragebogen-Identifikation**: Eindeutige Kennzeichnung einzelner Fragebögen (z.B. PHQ-9, EQ-5D-5L)
-2. **Fragengruppen-Identifikation**: Kennzeichnung von Item-Blöcken/Domänen (z.B. PROMIS-29 Physical Function 4a)
-3. **Item-Identifikation**: Eindeutige Kennzeichnung einzelner Fragen (z.B. EQ-5D-5L Mobility)
-4. **Antwortoptionen-Identifikation**: Kennzeichnung spezifischer Auswahlmöglichkeiten (z.B. "0: Keine Schmerzen")
-5. **Score-Identifikation**: Eindeutige Kennzeichnung von Score-Definitionen (z.B. EQ-5D-VAS-Score)
-6. **Domänen-Identifikation**: Kennzeichnung gesundheitsbezogener Domänen (z.B. Depression, Angst)
+1. **Questionnaire Identification**: Unique designation of individual questionnaires (e.g., PHQ-9, EQ-5D-5L)
+2. **Question Group Identification**: Designation of item blocks/domains (e.g., PROMIS-29 Physical Function 4a)
+3. **Item Identification**: Unique designation of individual questions (e.g., EQ-5D-5L Mobility)
+4. **Answer Option Identification**: Designation of specific answer choices (e.g., "0: No pain")
+5. **Score Identification**: Unique designation of score definitions (e.g., EQ-5D-VAS-Score)
+6. **Domain Identification**: Designation of health-related domains (e.g., Depression, Anxiety)
 
-## FHIR Ressourcen- und Dateinamenkonventionen
+## FHIR Resource and File Naming Conventions
 
-Das MII PRO-Modul folgt dem etablierten MII-Benennungsschema:
+The MII PRO module follows the established MII naming scheme:
 
-### Grundstruktur
+### Basic Structure
 ~~~~
-mii-[typ]-[modul]-[spezifikation]
+mii-[type]-[module]-[specification]
 ~~~~
 
-- **[typ]**: FHIR-Ressourcentyp (siehe Tabelle unten)
-- **[modul]**: `pro` (Patient-Reported Outcomes)
-- **[spezifikation]**: Detaillierte Beschreibung des Artefakts
+- **[type]**: FHIR resource type (see table below)
+- **[module]**: `pro` (Patient-Reported Outcomes)
+- **[specification]**: Detailed description of the artifact
 
-### Ressourcentyp-Abkürzungen
+### Resource Type Abbreviations
 
-#### Allgemeine MII-Konventionen
-Diese Abkürzungen werden MII-weit in allen Modulen verwendet:
+#### General MII Conventions
+These abbreviations are used MII-wide across all modules:
 
-| Typ | Bedeutung | FHIR-Ressource | Beispiel |
-|-----|-----------|----------------|----------|
+| Type | Meaning | FHIR Resource | Example |
+|------|---------|---------------|---------|
 | `pr` | Profile | StructureDefinition (Profile) | `mii-pr-pro-questionnaire` |
 | `cs` | CodeSystem | CodeSystem | `mii-cs-pro-questionnaire-catalogue` |
 | `vs` | ValueSet | ValueSet | `mii-vs-pro-phq-9-answer-list` |
 | `cm` | ConceptMap | ConceptMap | `mii-cm-pro-phq9-to-promis-depression` |
 | `ex` | Extension | StructureDefinition (Extension) | `mii-ex-pro-questionnaire-capabilities` |
-| `exa` | Example | Beliebige Ressource | `mii-exa-pro-phq-9-response` |
+| `exa` | Example | Any resource | `mii-exa-pro-phq-9-response` |
 | `lm` | LogicalModel | StructureDefinition (LogicalModel) | `mii-lm-pro` |
 
-#### PRO-Modul spezifische Ergänzungen
-Diese Abkürzungen sind spezifisch für das PRO-Modul entwickelt worden:
+#### PRO Module-Specific Additions
+These abbreviations have been developed specifically for the PRO module:
 
-| Typ | Bedeutung | FHIR-Ressource | Beispiel | Status |
-|-----|-----------|----------------|----------|---------|
-| `qst` | Questionnaire | Questionnaire | `mii-qst-pro-phq-9` | Implementiert |
-| `obsdef` | ObservationDefinition | ObservationDefinition | `mii-obsdef-pro-eq5d5l-index-score` | Implementiert |
-| `lib` | Library | Library (CQL) | `mii-lib-pro-eq5d-calculations` | Geplant (2026+) |
+| Type | Meaning | FHIR Resource | Example | Status |
+|------|---------|---------------|---------|--------|
+| `qst` | Questionnaire | Questionnaire | `mii-qst-pro-phq-9` | Implemented |
+| `obsdef` | ObservationDefinition | ObservationDefinition | `mii-obsdef-pro-eq5d5l-index-score` | Implemented |
+| `lib` | Library | Library (CQL) | `mii-lib-pro-eq5d-calculations` | Planned (2026+) |
 
-**Hinweis zu QuestionnaireResponse**: Es wurde diskutiert, die Abkürzung `qr` für QuestionnaireResponse einzuführen. Nach eingehender Prüfung wurde jedoch entschieden, dass QuestionnaireResponses entweder als:
-- **Definitionale Profile** unter `pr` (z.B. `mii-pr-pro-questionnaire-response`) oder
-- **Konkrete Beispiele** unter `exa` (z.B. `mii-exa-pro-phq-9-response`)
+**Note on QuestionnaireResponse**: The introduction of a `qr` abbreviation for QuestionnaireResponse was discussed. After thorough review, it was decided that QuestionnaireResponses should be classified as either:
+- **Definitional profiles** under `pr` (e.g., `mii-pr-pro-questionnaire-response`) or
+- **Concrete examples** under `exa` (e.g., `mii-exa-pro-phq-9-response`)
 
-eingeordnet werden sollten, je nach ihrem Verwendungszweck.
+depending on their intended purpose.
 
-**Wichtig**: Dateinamen und Ressourcen-IDs sind identisch und verwenden durchgehend Kleinschreibung mit Bindestrichen.
+**Important**: File names and resource IDs are identical and consistently use lowercase with hyphens.
 
-## Namespace-Systematik für Fragebögen
+## Namespace System for Questionnaires
 
-### Grundprinzipien
-- **Menschenlesbarkeit**: Verwendung aussagekräftiger, verständlicher Bezeichnungen statt gehashter Strings
-- **Konsistenz**: Einheitliche Schreibweise und Struktur innerhalb des Namespaces
-- **Eindeutigkeit**: Klare Abgrenzung verschiedener Instrumente und Versionen
+### Fundamental Principles
+- **Human readability**: Use of descriptive, understandable names instead of hashed strings
+- **Consistency**: Uniform spelling and structure within the namespace
+- **Uniqueness**: Clear differentiation of various instruments and versions
 
-### Namespace-Struktur für Questionnaires
+### Namespace Structure for Questionnaires
 ~~~~
-mii-qst-pro-[organisation]-[instrument]-[variant]
+mii-qst-pro-[organization]-[instrument]-[variant]
 ~~~~
 
-#### Herausforderungen bei der Namespace-Definition
+#### Challenges in Namespace Definition
 
-**Problem**: PROM-Instrumenteabkürzungen sind nicht eindeutig und können in verschiedenen Fachgebieten identische Bezeichnungen haben.
+**Problem**: PROM instrument abbreviations are not unique and may have identical names in different specialties.
 
-**Komplexitätsfaktoren**:
-1. **Multiple Instrumente einer Organisation** (z.B. verschiedene PROMIS-Fragebögen)
-2. **Verschiedene Major-Versionen** eines Fragebogens (z.B. BDI vs. BDI-II)
-3. **Parent-Proxy-Versionen** für Eltern/Kinder-Assessments
-4. **Altersgerechte Varianten** in der Pädiatrie
-5. **Sprachvarianten** mit inhaltlichen Unterschieden zwischen den Sprachen
+**Complexity factors**:
+1. **Multiple instruments of one organization** (e.g., various PROMIS questionnaires)
+2. **Different major versions** of a questionnaire (e.g., BDI vs. BDI-II)
+3. **Parent-proxy versions** for parent/child assessments
+4. **Age-appropriate variants** in pediatrics
+5. **Language variants** with content differences between languages
 
-**Wichtiger Hinweis**: Diese unterschiedlichen Fragebögen können identische oder vergleichbare Scores produzieren, was bei der Score-Zuordnung berücksichtigt werden muss.
+**Important note**: These different questionnaires may produce identical or comparable scores, which must be considered in score assignment.
 
-### Etablierte Namespaces (Aktueller Stand)
+### Established Namespaces (Current Status)
 
-#### Nach Organisation strukturiert:
+#### Structured by organization:
 ~~~~
-# EuroQol-Organisation
+# EuroQol Organization
 mii-qst-pro-euroqol-eq5d5l     # EQ-5D-5L (Five Level)
 mii-qst-pro-euroqol-eq5dy5l    # EQ-5D-Y-5L (Youth Version)
 mii-qst-pro-euroqol-eq5d3l     # EQ-5D-3L (Three Level)
 
-# PROMIS-Organisation
+# PROMIS Organization
 mii-qst-pro-promis-promis29         # PROMIS-29 Profile v2.1
 mii-qst-pro-promis-depression-sf4a  # PROMIS Depression Short Form 4a
 
-# PHQ-Familie (Pfizer/Spitzer)
+# PHQ Family (Pfizer/Spitzer)
 mii-qst-pro-phq-phq9          # Patient Health Questionnaire-9
 mii-qst-pro-phq-gad7          # Generalized Anxiety Disorder-7
 mii-qst-pro-phq-phqsads       # PHQ-SADS
 
-# Beck-Inventories
+# Beck Inventories
 mii-qst-pro-beck-bdi2         # Beck Depression Inventory-II
 ~~~~
 
-**Hinweis**: Die Namespace-Systematik wird kontinuierlich erweitert und verfeinert, basierend auf den Anforderungen neuer Instrumente.
+**Note**: The namespace system is continuously expanded and refined based on the requirements of new instruments.
 
-## LinkId-Konventionen für Questionnaire-Items
+## LinkId Conventions for Questionnaire Items
 
-### Grundstruktur für linkIds
+### Basic Structure for linkIds
 ~~~~
 [instrument-prefix]-[item-type]-[identifier]
 ~~~~
 
-### Aktuell implementierte Patterns
+### Currently Implemented Patterns
 
-#### 1. Fragenkürzel + Nummerierung (mit führenden Nullen)
-**Pattern**: `{instrument}-q{number}` (Nummer immer zweistellig mit führender Null)
-
-~~~~
-# PHQ-9 Beispiele
-phq-phq9-q01        # Item 1: "Wenig Interesse oder Freude an Tätigkeiten"
-phq-phq9-q02        # Item 2: Niedergeschlagenheit
-phq-phq9-q09        # Item 9: Suizidgedanken
-phq-phq9-score-total # Gesamtscore
-
-# BDI-II Beispiele
-bdi-bdi2-q01        # Item 1: Traurigkeit
-bdi-bdi2-q02        # Item 2: Pessimismus
-bdi-bdi2-q21        # Item 21: Verlust des Interesses an Sex
-bdi-bdi2-score-total # Gesamtscore
-~~~~
-
-#### 2. EuroQol Domain-basierte IDs
-**Pattern**: `{instrument}-q{number}-{domain-code}` (Nummer zweistellig)
+#### 1. Question Abbreviation + Numbering (with Leading Zeros)
+**Pattern**: `{instrument}-q{number}` (number always two digits with leading zero)
 
 ~~~~
-# EQ-5D-5L Beispiele
-euroqol-eq5d5l-q01-MO    # Mobility (Beweglichkeit)
-euroqol-eq5d5l-q02-SC    # Self-Care (Für sich selbst sorgen)
-euroqol-eq5d5l-q03-UA    # Usual Activities (Alltägliche Tätigkeiten)
-euroqol-eq5d5l-q04-PD    # Pain/Discomfort (Schmerzen/Beschwerden)
-euroqol-eq5d5l-q05-AD    # Anxiety/Depression (Angst/Niedergeschlagenheit)
+# PHQ-9 Examples
+phq-phq9-q01        # Item 1: "Little interest or pleasure in doing things"
+phq-phq9-q02        # Item 2: Feeling down
+phq-phq9-q09        # Item 9: Suicidal ideation
+phq-phq9-score-total # Total score
+
+# BDI-II Examples
+bdi-bdi2-q01        # Item 1: Sadness
+bdi-bdi2-q02        # Item 2: Pessimism
+bdi-bdi2-q21        # Item 21: Loss of interest in sex
+bdi-bdi2-score-total # Total score
+~~~~
+
+#### 2. EuroQol Domain-Based IDs
+**Pattern**: `{instrument}-q{number}-{domain-code}` (number two digits)
+
+~~~~
+# EQ-5D-5L Examples
+euroqol-eq5d5l-q01-MO    # Mobility
+euroqol-eq5d5l-q02-SC    # Self-Care
+euroqol-eq5d5l-q03-UA    # Usual Activities
+euroqol-eq5d5l-q04-PD    # Pain/Discomfort
+euroqol-eq5d5l-q05-AD    # Anxiety/Depression
 euroqol-eq5d5l-vas       # Visual Analog Scale
 ~~~~
 
 #### 3. PROMIS Item Bank IDs
-**Pattern**: `{instrument}-{item-bank-id}` (basierend auf offiziellen PROMIS-Codes)
+**Pattern**: `{instrument}-{item-bank-id}` (based on official PROMIS codes)
 
 ~~~~
 # PROMIS Depression SF 4a
@@ -157,125 +157,125 @@ promis-eddep29           # PROMIS Item EDDEP29
 promis-eddep05           # PROMIS Item EDDEP05
 
 # PROMIS-29 Physical Function Items
-promis-pfa11             # Physical Function Item (basierend auf Validierungsstudie)
+promis-pfa11             # Physical Function Item (based on validation study)
 promis-pfa21             # Physical Function Item
 promis-pfa23             # Physical Function Item
 promis-pfa53             # Physical Function Item
 ~~~~
 
-### Score-Item Konventionen
+### Score Item Conventions
 **Pattern**: `{instrument}-{score-type}-{variant}`
 
 ~~~~
-# Verschiedene Score-Typen
-{instrument}-score-raw          # Rohscore
+# Different score types
+{instrument}-score-raw          # Raw score
 {instrument}-score-tscore       # T-Score (PROMIS)
-{instrument}-score-total        # Gesamtscore
-{instrument}-score-index        # Index-Score (EQ-5D)
-{instrument}-score-vas          # VAS-Score
-{instrument}-score-profile      # Profil-Score
+{instrument}-score-total        # Total score
+{instrument}-score-index        # Index score (EQ-5D)
+{instrument}-score-vas          # VAS score
+{instrument}-score-profile      # Profile score
 ~~~~
 
-### Spezielle Item-Typen
+### Special Item Types
 
-#### Display-Items (Instruktionen, Beschreibungen)
+#### Display Items (Instructions, Descriptions)
 ~~~~
-{instrument}.Description        # Hauptbeschreibung/Instruktion
-{instrument}.{section}          # Bereichsspezifische Beschreibung
-~~~~
-
-Beispiele:
-~~~~
-PHQ-9.Description               # PHQ-9 Hauptinstruktion
-PROMIS-Depression.Description   # PROMIS Depression Instruktion
+{instrument}.Description        # Main description/instruction
+{instrument}.{section}          # Section-specific description
 ~~~~
 
-### Entscheidungsmatrix für linkId-Patterns
-
-| Situation | Empfohlenes Pattern | Beispiel |
-|-----------|-------------------|----------|
-| **Offizieller Item-Code vorhanden** | Offiziellen Code verwenden | `promis-eddep04` (PROMIS) |
-| **Domain-basierte Struktur** | Domain-Suffix hinzufügen | `euroqol-eq5d5l-q01-MO` |
-| **Sequenzielle Nummerierung** | Instrument + q{NN} Pattern | `phq-phq9-q01` |
-| **Score-Items** | score-type Suffix | `phq-phq9-score-total` |
-| **Display-Items** | .Description Pattern | `PHQ-9.Description` |
-
-### Konsistenzregeln
-
-1. **Kleinschreibung**: Alle linkIds verwenden durchgehend Kleinschreibung
-2. **Bindestriche**: Trennung von Komponenten durch Bindestriche (keine Unterstriche)
-3. **Präfix-Konsistenz**: Gleicher Instrument-Präfix für alle Items eines Fragebogens
-4. **Führende Nullen**: Nummerierung immer zweistellig (q01, q02, ..., q10, q11, ...)
-5. **Eindeutigkeit**: LinkIds müssen innerhalb eines Fragebogens eindeutig sein
-6. **Menschenlesbarkeit**: IDs sollten für Entwickler und Kliniker verständlich sein
-
-### Umgang mit internationalen Standards
-
-**LOINC-Integration**: Wo verfügbar, wird LOINC als code-Element verwendet, während linkId der MII-internen Systematik folgt:
-
+Examples:
 ~~~~
-//FSH
-* item[1].linkId = "phq-phq9-q01"           # MII-interne ID
-* item[1].code = $LNC#44250-9               # LOINC-Code für semantische Annotation
+PHQ-9.Description               # PHQ-9 main instruction
+PROMIS-Depression.Description   # PROMIS Depression instruction
 ~~~~
 
-**PROMIS-Integration**: Offizielle PROMIS Item-IDs werden als linkId übernommen, wo vorhanden:
+### Decision Matrix for linkId Patterns
+
+| Situation | Recommended Pattern | Example |
+|-----------|-------------------|---------|
+| **Official item code available** | Use official code | `promis-eddep04` (PROMIS) |
+| **Domain-based structure** | Add domain suffix | `euroqol-eq5d5l-q01-MO` |
+| **Sequential numbering** | Instrument + q{NN} pattern | `phq-phq9-q01` |
+| **Score items** | score-type suffix | `phq-phq9-score-total` |
+| **Display items** | .Description pattern | `PHQ-9.Description` |
+
+### Consistency Rules
+
+1. **Lowercase**: All linkIds consistently use lowercase
+2. **Hyphens**: Components separated by hyphens (no underscores)
+3. **Prefix consistency**: Same instrument prefix for all items of a questionnaire
+4. **Leading zeros**: Numbering always two digits (q01, q02, ..., q10, q11, ...)
+5. **Uniqueness**: LinkIds must be unique within a questionnaire
+6. **Human readability**: IDs should be understandable for developers and clinicians
+
+### Handling International Standards
+
+**LOINC Integration**: Where available, LOINC is used as the code element, while linkId follows the MII internal system:
 
 ~~~~
 //FSH
-* item[1].linkId = "promis-eddep04"         # Offizieller PROMIS Item-Code
-* item[1].code = $LNC#71969-0               # LOINC-Code (falls vorhanden)
+* item[1].linkId = "phq-phq9-q01"           # MII internal ID
+* item[1].code = $LNC#44250-9               # LOINC code for semantic annotation
 ~~~~
 
-### Herausforderungen und Lösungsansätze
+**PROMIS Integration**: Official PROMIS item IDs are adopted as linkId where available:
 
-#### Problem: Mehrfachverwendung von Items
-**Situation**: PROMIS-Items können in verschiedenen Fragebögen vorkommen (z.B. EDDEP04 in PROMIS-29 und PROMIS Depression SF 4a)
-
-**Lösung**: Konsistente Verwendung derselben linkId in allen Fragebögen ermöglicht:
-- Vereinfachte FHIRPath-Expressions für domänenübergreifende Berechnungen
-- Wiederverwendbarkeit von Validierungslogik
-- Konsistente Datenauswertung
-
-#### Problem: Fehlende offizielle Item-IDs
-**Situation**: Nicht alle Instrumente haben standardisierte Item-Codes
-
-**Lösung**: Fallback auf strukturierte Nummerierung mit semantischen Ergänzungen:
 ~~~~
-{instrument}-q{NN}              # Basis-Pattern (führende Null!)
-{instrument}-q{NN}-{domain}     # Mit Domain-Information
+//FSH
+* item[1].linkId = "promis-eddep04"         # Official PROMIS item code
+* item[1].code = $LNC#71969-0               # LOINC code (if available)
 ~~~~
 
-### Best Practices für neue Instrumente
+### Challenges and Solutions
 
-1. **Prüfe auf offizielle Item-IDs**: Verwende etablierte Codes (PROMIS, LOINC) wo vorhanden
-2. **Konsistente Präfixe**: Orientiere dich an bestehenden Namespace-Konventionen
-3. **Führende Nullen**: Verwende immer zweistellige Nummerierung (q01-q99)
-4. **Domain-Codes**: Ergänze bei strukturierten Instrumenten Domain-Abkürzungen
-5. **Score-Suffix**: Verwende klare Score-Bezeichnungen (-score-total, -score-raw, etc.)
+#### Problem: Multiple Use of Items
+**Situation**: PROMIS items can appear in different questionnaires (e.g., EDDEP04 in PROMIS-29 and PROMIS Depression SF 4a)
 
-## Terminologie-Strategien für Antwortoptionen
+**Solution**: Consistent use of the same linkId across all questionnaires enables:
+- Simplified FHIRPath expressions for cross-domain calculations
+- Reusability of validation logic
+- Consistent data evaluation
 
-### Strategische Entscheidung: answerOption vs answerValueSet
+#### Problem: Missing Official Item IDs
+**Situation**: Not all instruments have standardized item codes
 
-Die Wahl zwischen inline `answerOption` und externen `answerValueSet` Definitionen ist eine grundlegende Architekturentscheidung, die die Wartbarkeit, Wiederverwendbarkeit und Interoperabilität maßgeblich beeinflusst.
+**Solution**: Fallback to structured numbering with semantic additions:
+~~~~
+{instrument}-q{NN}              # Base pattern (leading zero!)
+{instrument}-q{NN}-{domain}     # With domain information
+~~~~
 
-### Entscheidungsmatrix
+### Best Practices for New Instruments
 
-| Ansatz | Anwendungsfall | Beispiel | Vorteile | Nachteile |
-|--------|---------------|----------|----------|-----------|
-| **Inline answerOption + LOINC** | Internationale Standards verfügbar + displayable | PHQ-9, PROMIS | Internationale Interoperabilität, semantische Eindeutigkeit | Deutsche Übersetzungen via Extensions |
-| **Inline answerOption + Simple Codes** | Einfache, statische Listen (max. 5 Optionen) + displayable | EQ-5D-5L | Minimale Komplexität, direkter Code | Keine Wiederverwendbarkeit |
-| **answerValueSet + MII CodeSystem** | Capabilities-basiert: displayable=false, calculatable=true | BDI-II | Optimiert für Score-only, kein Display-Overhead, deutsche Spezifika | Nicht für interaktive Formulare |
+1. **Check for official item IDs**: Use established codes (PROMIS, LOINC) where available
+2. **Consistent prefixes**: Follow existing namespace conventions
+3. **Leading zeros**: Always use two-digit numbering (q01-q99)
+4. **Domain codes**: Add domain abbreviations for structured instruments
+5. **Score suffix**: Use clear score designations (-score-total, -score-raw, etc.)
 
-### Implementierungsbeispiele
+## Terminology Strategies for Answer Options
+
+### Strategic Decision: answerOption vs answerValueSet
+
+The choice between inline `answerOption` and external `answerValueSet` definitions is a fundamental architectural decision that significantly impacts maintainability, reusability, and interoperability.
+
+### Decision Matrix
+
+| Approach | Use Case | Example | Advantages | Disadvantages |
+|----------|----------|---------|------------|---------------|
+| **Inline answerOption + LOINC** | International standards available + displayable | PHQ-9, PROMIS | International interoperability, semantic unambiguity | German translations via extensions |
+| **Inline answerOption + Simple Codes** | Simple, static lists (5 or fewer options) + displayable | EQ-5D-5L | Minimal complexity, direct code | No reusability |
+| **answerValueSet + MII CodeSystem** | Capability-based: displayable=false, calculatable=true | BDI-II | Optimized for score-only, no display overhead, German specifics | Not for interactive forms |
+
+### Implementation Examples
 
 #### Pattern 1: LOINC + itemWeight Extensions (PHQ-9)
 ~~~~
 //FSH
 * item[=].answerOption[0].valueCoding.system = $LNC
 * item[=].answerOption[0].valueCoding.code = #LA6568-5
-* item[=].answerOption[0].valueCoding.display = "Überhaupt nicht"
+* item[=].answerOption[0].valueCoding.display = "Not at all"
 * item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
 ~~~~
@@ -291,32 +291,32 @@ Die Wahl zwischen inline `answerOption` und externen `answerValueSet` Definition
 * #bdi-bdi2-answer-1 ^property[=].valueDecimal = 1
 ~~~~
 
-#### Pattern 3: Einfache Inline Codes (EQ-5D-5L)
+#### Pattern 3: Simple Inline Codes (EQ-5D-5L)
 ~~~~
 //FSH
-* item[=].answerOption[0].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[0].valueCoding.display = "I have no problems in walking about"
 * item[=].answerOption[0].valueCoding.code = #1
 ~~~~
 
-### Entscheidungshilfe
+### Decision Guide
 
-**Prüfe zuerst die Questionnaire Capabilities:**
+**First check the Questionnaire Capabilities:**
 
-**Verwende answerValueSet + MII CodeSystem wenn:**
-- **displayable = false, calculatable = true** (wie BDI-II)
-- Optimierung für reine Score-Berechnung ohne Display-Overhead
-- Hintergrund-Berechnungen ohne Benutzerinteraktion
+**Use answerValueSet + MII CodeSystem when:**
+- **displayable = false, calculatable = true** (like BDI-II)
+- Optimization for pure score calculation without display overhead
+- Background calculations without user interaction
 
-**Verwende inline answerOption wenn:**
-- **displayable = true** (interaktive Formulare)
-- LOINC-Codes mit Score-Gewichten verfügbar sind
-- Einfache, statische Antwortlisten (max. 5 Optionen)
-- Reiche Metadaten pro Option (Übersetzungen, Gewichte)
+**Use inline answerOption when:**
+- **displayable = true** (interactive forms)
+- LOINC codes with score weights are available
+- Simple, static answer lists (5 or fewer options)
+- Rich metadata per option (translations, weights)
 
-**Weitere answerValueSet + MII CodeSystem Kriterien:**
-- Multiple Antwortformat-Varianten benötigt (kurz/lang)
-- Wiederverwendung über mehrere Questionnaires geplant
-- Komplexe Scoring-Anforderungen mit variablen Gewichten
-- Deutsche Gesundheitssystem-Spezifika erforderlich
+**Additional answerValueSet + MII CodeSystem criteria:**
+- Multiple answer format variants needed (short/long)
+- Reuse across multiple questionnaires planned
+- Complex scoring requirements with variable weights
+- German healthcare system specifics required
 
-**Detaillierte Dokumentation**: [Terminologie-Strategien](terminology-strategies.html)
+**Detailed documentation**: [Terminology Strategies](terminology-strategies.html)

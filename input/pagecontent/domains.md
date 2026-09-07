@@ -1,52 +1,52 @@
-### Überblick über Gesundheitsdomänen
+### Overview of Health Domains
 
-Gesundheitsdomänen sind fundamentale Konstrukte, die verschiedene Aspekte der Gesundheit und des Wohlbefindens abbilden. Im Kontext von Patient-Reported Outcomes (PROs) ermöglichen Domänen die systematische Erfassung und Vergleichbarkeit von Gesundheitszuständen über verschiedene Messinstrumente hinweg.
+Health domains are fundamental constructs that represent different aspects of health and well-being. In the context of Patient-Reported Outcomes (PROs), domains enable the systematic capture and comparability of health states across different measurement instruments.
 
-**Verwandte Seiten:**
-- [Domänen-basiertes Scoring](domain-based-scoring.html) -- Methodische Umsetzung
-- [Cross-Instrument Mappings](cross-instrument-mappings.html) -- Praktische Übersetzung zwischen Instrumenten
-- [PRO-Bibliothek](pro-library.html) -- Übersicht aller implementierten Instrumente
+**Related pages:**
+- [Domain-Based Scoring](domain-based-scoring.html) -- Methodological implementation
+- [Cross-Instrument Mappings](cross-instrument-mappings.html) -- Practical translation between instruments
+- [PRO Library](pro-library.html) -- Overview of all implemented instruments
 
-### Definition und Bedeutung
+### Definition and Significance
 
-Eine **Gesundheitsdomäne** ist ein spezifischer, theoretisch fundierter Aspekt der Gesundheit, der durch verschiedene Messinstrumente erfasst werden kann. Die domänen-basierte Strukturierung von PROs bietet mehrere Vorteile:
+A **health domain** is a specific, theoretically grounded aspect of health that can be captured by various measurement instruments. The domain-based structuring of PROs offers several advantages:
 
-- **Interoperabilität**: Verschiedene Fragebögen, die dasselbe Konstrukt messen, werden vergleichbar
-- **Flexibilität**: Institutionen können das für sie passende Instrument wählen
-- **Kontinuität**: Bei Instrumentenwechsel bleibt die Vergleichbarkeit erhalten
-- **Normierung**: Einheitliche Referenzwerte über Instrumente hinweg
+- **Interoperability**: Different questionnaires measuring the same construct become comparable
+- **Flexibility**: Institutions can choose the instrument that best fits their needs
+- **Continuity**: Comparability is maintained even when instruments are changed
+- **Norming**: Uniform reference values across instruments
 
-### PROMIS Framework: Die 8+1 Kerndomänen
+### PROMIS Framework: The 8+1 Core Domains
 
-Das MII PRO Modul orientiert sich am **PROMIS (Patient-Reported Outcomes Measurement Information System)** Framework, das 8 wissenschaftlich validierte Kerndomänen definiert. Diese Domänen bilden das konzeptionelle Fundament für die systematische Erfassung von PROs und wurden im PROMIS-29 Profil v2.1 operationalisiert:
+The MII PRO Module follows the **PROMIS (Patient-Reported Outcomes Measurement Information System)** framework, which defines 8 scientifically validated core domains. These domains form the conceptual foundation for systematic PRO capture and have been operationalized in the PROMIS-29 Profile v2.1:
 
-1. **Physical Function** (Körperliche Funktion) -- 4 Items
-2. **Anxiety** (Angst) -- 4 Items
-3. **Depression** (Depression) -- 4 Items
-4. **Fatigue** (Erschöpfung/Müdigkeit) -- 4 Items
-5. **Sleep Disturbance** (Schlafstörungen) -- 4 Items
-6. **Ability to Participate in Social Roles and Activities** (Soziale Teilhabe) -- 4 Items
-7. **Pain Interference** (Schmerzbedingte Beeinträchtigung) -- 4 Items
-8. **Pain Intensity** (Schmerzintensität) -- 1 Item
+1. **Physical Function** -- 4 items
+2. **Anxiety** -- 4 items
+3. **Depression** -- 4 items
+4. **Fatigue** -- 4 items
+5. **Sleep Disturbance** -- 4 items
+6. **Ability to Participate in Social Roles and Activities** -- 4 items
+7. **Pain Interference** -- 4 items
+8. **Pain Intensity** -- 1 item
 
-**Zusätzliche wichtige PROMIS-Domäne im MII PRO Modul:**
-9. **Cognitive Function** (Kognitive Funktion) -- erfasst durch PROMIS Cognitive Function 4a Short Form
+**Additional important PROMIS domain in the MII PRO Module:**
+9. **Cognitive Function** -- captured by the PROMIS Cognitive Function 4a Short Form
 
-Diese 9 Domänen repräsentieren die wichtigsten Aspekte der selbstberichteten Gesundheit und wurden durch umfangreiche psychometrische Forschung validiert. Das PROMIS-29 Instrument (29 Items) erfasst die ersten 8 Domänen, während Cognitive Function durch separate Short Forms ergänzt wird.
+These 9 domains represent the most important aspects of self-reported health and have been validated through extensive psychometric research. The PROMIS-29 instrument (29 items) captures the first 8 domains, while Cognitive Function is supplemented by separate Short Forms.
 
-**Vergleichbare Multi-Domain Instrumente:**
-- **SF-36 (Short Form 36)**: 8 Domänen der gesundheitsbezogenen Lebensqualität
-- **WHOQOL-BREF**: WHO-Instrument mit 4 Hauptdomänen (physisch, psychisch, sozial, Umwelt)
-- **EQ-5D**: 5 Dimensionen (Mobilität, Selbstversorgung, Alltagsaktivitäten, Schmerz, Angst/Depression)
+**Comparable multi-domain instruments:**
+- **SF-36 (Short Form 36)**: 8 domains of health-related quality of life
+- **WHOQOL-BREF**: WHO instrument with 4 main domains (physical, psychological, social, environment)
+- **EQ-5D**: 5 dimensions (mobility, self-care, usual activities, pain, anxiety/depression)
 
-### Core Domains im MII PRO Modul
+### Core Domains in the MII PRO Module
 
-Die Implementierung im MII PRO Modul folgt der PROMIS-Struktur und erweitert sie um weitere etablierte Instrumente:
+The implementation in the MII PRO Module follows the PROMIS structure and extends it with additional established instruments:
 
-#### 1. Depressions-Domäne (PROMIS Core Domain)
-**Status**: Vollständig implementiert (2025)
+#### 1. Depression Domain (PROMIS Core Domain)
+**Status**: Fully implemented (2025)
 **LOINC Code**: 77861-3 "PROMIS Depression T-score"
-**Unterstützte Instrumente**:
+**Supported instruments**:
 - PHQ-9 (Patient Health Questionnaire-9) -- [Details](phq-9.html)
 - BDI-II (Beck Depression Inventory II) -- [Details](bdi-ii.html)
 - PROMIS Depression Short Forms -- [Details](promis.html)
@@ -54,236 +54,236 @@ Die Implementierung im MII PRO Modul folgt der PROMIS-Struktur und erweitert sie
 - EPDS (Edinburgh Postnatal Depression Scale)
 - CES-D (Center for Epidemiologic Studies Depression Scale)
 
-**Charakteristika**:
-- Erfasst Symptome depressiver Verstimmung, Niedergeschlagenheit, Hoffnungslosigkeit
-- T-Score Normierung (Mittelwert=50, SD=10)
-- Populationsnormen basierend auf EHIS Wave 3 (n=287.530)
-- Validierte Cross-Walking Tabellen zwischen Instrumenten -- [siehe Mappings](cross-instrument-mappings.html)
+**Characteristics**:
+- Captures symptoms of depressive mood, dejection, hopelessness
+- T-Score normalization (Mean=50, SD=10)
+- Population norms based on EHIS Wave 3 (n=287,530)
+- Validated cross-walking tables between instruments -- [see Mappings](cross-instrument-mappings.html)
 
-#### 2. Angst-Domäne (PROMIS Core Domain: Anxiety)
-**Status**: In Planung (2026)
-**Geplante Instrumente**:
+#### 2. Anxiety Domain (PROMIS Core Domain: Anxiety)
+**Status**: Planned (2026)
+**Planned instruments**:
 - GAD-7 (Generalized Anxiety Disorder-7)
 - PROMIS Anxiety
 - HADS-A (Hospital Anxiety and Depression Scale - Anxiety)
 - BAI (Beck Anxiety Inventory)
 
-**Charakteristika**:
-- Erfasst Sorgen, Nervosität, Anspannung, Ängstlichkeit
-- Differenzierung zwischen State- und Trait-Angst
-- Somatische vs. kognitive Angstkomponenten
+**Characteristics**:
+- Captures worry, nervousness, tension, anxiousness
+- Differentiation between state and trait anxiety
+- Somatic vs. cognitive anxiety components
 
-#### 3. Körperliche Funktion (PROMIS Core Domain: Physical Function)
-**Status**: Teilweise implementiert (PROMIS-29, EQ-5D)
-**Implementierte Instrumente**:
+#### 3. Physical Function (PROMIS Core Domain: Physical Function)
+**Status**: Partially implemented (PROMIS-29, EQ-5D)
+**Implemented instruments**:
 - PROMIS Physical Function -- [Details](promis.html)
 - EQ-5D Mobility Dimension -- [Details](eq-5d-5l.html)
-- Geplant: HAQ, WHODAS, SF-36 PF
+- Planned: HAQ, WHODAS, SF-36 PF
 
-**Charakteristika**:
-- Mobilität, Selbstversorgung, alltägliche Aktivitäten
-- Differenzierung nach Schweregrad der Einschränkung
-- Alters- und geschlechtsspezifische Normen
-- Item Banking für adaptive Messung -- [siehe Abbildung](domain-based-scoring.html#item-banking-und-adaptive-messung)
+**Characteristics**:
+- Mobility, self-care, everyday activities
+- Differentiation by severity of limitation
+- Age- and sex-specific norms
+- Item banking for adaptive measurement -- [see figure](domain-based-scoring.html#item-banking-and-adaptive-measurement)
 
-#### 4. Schmerz-Domäne (PROMIS Core Domains: Pain Interference und Pain Intensity)
-**Status**: Teilweise implementiert (PROMIS-29, EORTC)
-**Komponenten**:
-- **Schmerzintensität**: Numerische Rating-Skala (0-10)
-- **Schmerzinterferenz**: Beeinträchtigung durch Schmerzen
-- **Schmerzqualität**: Art und Charakteristik des Schmerzes
+#### 4. Pain Domain (PROMIS Core Domains: Pain Interference and Pain Intensity)
+**Status**: Partially implemented (PROMIS-29, EORTC)
+**Components**:
+- **Pain Intensity**: Numeric Rating Scale (0-10)
+- **Pain Interference**: Impact of pain on functioning
+- **Pain Quality**: Nature and characteristics of pain
 
-**Implementierte Instrumente**:
+**Implemented instruments**:
 - PROMIS Pain Intensity
 - PROMIS Pain Interference
 - EORTC QLQ-C30 Pain Scale -- [Details](eortc-qlq-c30.html)
 
-#### 5. Fatigue/Erschöpfung (PROMIS Core Domain: Fatigue)
-**Status**: Teilweise implementiert (PROMIS-29, EORTC)
-**Instrumente**:
+#### 5. Fatigue (PROMIS Core Domain: Fatigue)
+**Status**: Partially implemented (PROMIS-29, EORTC)
+**Instruments**:
 - PROMIS Fatigue
 - EORTC QLQ-C30 Fatigue Scale
-- Geplant: FSS, FACIT-F
+- Planned: FSS, FACIT-F
 
-**Charakteristika**:
-- Körperliche und mentale Erschöpfung
-- Auswirkungen auf tägliche Aktivitäten
-- Differenzierung von Depression
+**Characteristics**:
+- Physical and mental exhaustion
+- Impact on daily activities
+- Differentiation from depression
 
-#### 6. Schlafstörungen (PROMIS Core Domain: Sleep Disturbance)
-**Status**: Teilweise implementiert (PROMIS-29)
-**Instrumente**:
+#### 6. Sleep Disturbance (PROMIS Core Domain: Sleep Disturbance)
+**Status**: Partially implemented (PROMIS-29)
+**Instruments**:
 - PROMIS Sleep Disturbance
-- Geplant: PSQI, ISI
+- Planned: PSQI, ISI
 
-**Charakteristika**:
-- Schlafqualität, Ein- und Durchschlafstörungen
-- Tagesmüdigkeit als Konsequenz
-- Zirkadiane Rhythmusstörungen
+**Characteristics**:
+- Sleep quality, difficulty falling and staying asleep
+- Daytime sleepiness as a consequence
+- Circadian rhythm disturbances
 
-#### 7. Soziale Funktion (PROMIS Core Domain: Ability to Participate in Social Roles)
-**Status**: Teilweise implementiert (PROMIS-29, EORTC)
-**Instrumente**:
+#### 7. Social Function (PROMIS Core Domain: Ability to Participate in Social Roles)
+**Status**: Partially implemented (PROMIS-29, EORTC)
+**Instruments**:
 - PROMIS Ability to Participate in Social Roles
 - EORTC QLQ-C30 Social Functioning
-- Geplant: SPS, F-SozU
+- Planned: SPS, F-SozU
 
-**Charakteristika**:
-- Soziale Teilhabe und Rollenfunktion
-- Qualität sozialer Beziehungen
-- Isolation und Einsamkeit
+**Characteristics**:
+- Social participation and role function
+- Quality of social relationships
+- Isolation and loneliness
 
-#### 8. Kognitive Funktion (PROMIS Cognitive Function 4a)
-**Status**: In Implementierung (2025)
-**Instrumente**:
+#### 8. Cognitive Function (PROMIS Cognitive Function 4a)
+**Status**: In implementation (2025)
+**Instruments**:
 - PROMIS Cognitive Function 4a Short Form
-- EORTC QLQ-C30 Cognitive Functioning (bereits implementiert)
+- EORTC QLQ-C30 Cognitive Functioning (already implemented)
 
-**Charakteristika**:
-- Konzentration und Gedächtnis
-- Kognitive Klarheit und mentale Schärfe
-- Subjektive kognitive Fähigkeiten
+**Characteristics**:
+- Concentration and memory
+- Cognitive clarity and mental acuity
+- Subjective cognitive abilities
 
-### Spezielle Domänen
+### Specialized Domains
 
-#### Onkologie-spezifische Domänen: EORTC QLQ-C30 Framework
+#### Oncology-Specific Domains: EORTC QLQ-C30 Framework
 
-![EORTC QLQ-C30 Domänen](qlq-domaenen.png)
+![EORTC QLQ-C30 Domains](qlq-domaenen.png)
 
-**Abbildung 1:** *Konzeptionelles Modell des EORTC QLQ-C30 -- Von physiologischen Variablen zur Lebensqualität*
+**Figure 1:** *Conceptual model of the EORTC QLQ-C30 -- From physiological variables to quality of life*
 
-Das EORTC QLQ-C30 Framework illustriert den Zusammenhang zwischen verschiedenen Domänen-Ebenen:
-- **Physiologische Variablen** beeinflussen **Symptome**
-- **Symptome** wirken auf die **Funktionsfähigkeit**
-- **Funktionsfähigkeit** prägt die **Gesundheitswahrnehmung**
-- Alle Faktoren kulminieren in der **Allgemeinen Lebensqualität**
+The EORTC QLQ-C30 framework illustrates the relationship between different domain levels:
+- **Physiological variables** influence **symptoms**
+- **Symptoms** affect **functioning**
+- **Functioning** shapes **health perception**
+- All factors culminate in **overall quality of life**
 
-Implementiert durch EORTC QLQ-C30:
-- **Übelkeit und Erbrechen**
-- **Appetitlosigkeit**
-- **Dyspnoe** (Atemnot)
-- **Obstipation**
-- **Diarrhoe**
-- **Finanzielle Schwierigkeiten** durch Erkrankung
+Implemented through the EORTC QLQ-C30:
+- **Nausea and vomiting**
+- **Appetite loss**
+- **Dyspnoea** (shortness of breath)
+- **Constipation**
+- **Diarrhoea**
+- **Financial difficulties** due to illness
 
-Details siehe [EORTC QLQ-C30 in der PRO-Bibliothek](eortc-qlq-c30.html).
+Details see [EORTC QLQ-C30 in the PRO Library](eortc-qlq-c30.html).
 
-#### Lebensqualität-Domänen
-- **Globale Lebensqualität** (EORTC, EQ-5D VAS)
-- **Gesundheitsbezogene Lebensqualität** (EQ-5D Index)
-- **Rollenfunktion** (EORTC)
-- **Emotionale Funktion** (EORTC)
+#### Quality of Life Domains
+- **Global Quality of Life** (EORTC, EQ-5D VAS)
+- **Health-Related Quality of Life** (EQ-5D Index)
+- **Role Function** (EORTC)
+- **Emotional Function** (EORTC)
 
-### Domänen-Hierarchie und Beziehungen
+### Domain Hierarchy and Relationships
 
 ```
-Gesundheit (übergeordnet)
-+-- Physische Gesundheit
-|   +-- Körperliche Funktion
-|   +-- Schmerz
+Health (overarching)
++-- Physical Health
+|   +-- Physical Function
+|   +-- Pain
 |   +-- Fatigue
-|   +-- Symptombelastung
-+-- Mentale Gesundheit
+|   +-- Symptom Burden
++-- Mental Health
 |   +-- Depression
-|   +-- Angst
-|   +-- Kognitive Funktion
-|   +-- Emotionales Wohlbefinden
-+-- Soziale Gesundheit
-|   +-- Soziale Funktion
-|   +-- Soziale Unterstützung
-|   +-- Rollenfunktion
-+-- Globale Gesundheit
-    +-- Lebensqualität
-    +-- Allgemeiner Gesundheitszustand
+|   +-- Anxiety
+|   +-- Cognitive Function
+|   +-- Emotional Well-Being
++-- Social Health
+|   +-- Social Function
+|   +-- Social Support
+|   +-- Role Function
++-- Global Health
+    +-- Quality of Life
+    +-- General Health Status
 ```
 
-### Domänen-Alignment und Questionnaire Capabilities
+### Domain Alignment and Questionnaire Capabilities
 
-Das MII PRO Modul definiert für jedes Instrument die Fähigkeit zum "Domain-Alignment":
+The MII PRO Module defines the "domain-alignment" capability for each instrument:
 
 ```
 * extension[questionnaire-capabilities].extension[domain-aligned].valueBoolean = true
 ```
 
-Dies bedeutet, dass ein Instrument:
-1. Eindeutig einer oder mehreren Domänen zugeordnet ist
-2. Scores produziert, die auf Domänen-T-Scores gemappt werden können
-3. Mit anderen Instrumenten derselben Domäne vergleichbar ist
+This means that an instrument:
+1. Is unambiguously assigned to one or more domains
+2. Produces scores that can be mapped to domain T-Scores
+3. Is comparable with other instruments of the same domain
 
-Details zur technischen Implementierung siehe Questionnaire Capabilities.
+Details on the technical implementation see Questionnaire Capabilities.
 
-### Methodische Grundlagen
+### Methodological Foundations
 
 #### Item Response Theory (IRT)
-- Moderne psychometrische Methode für präzise Domänenmessung
-- Ermöglicht adaptive Tests und Item-Banking
-- Basis für PROMIS T-Score Berechnung
-- [Detaillierte Erklärung mit Visualisierung](domain-based-scoring.html#mapping-strategien)
+- Modern psychometric method for precise domain measurement
+- Enables adaptive testing and item banking
+- Basis for PROMIS T-Score calculation
+- [Detailed explanation with visualization](domain-based-scoring.html#mapping-strategies)
 
 #### Classical Test Theory (CTT)
-- Traditionelle Methode, verwendet von PHQ-9, BDI-II
-- Summenwerte mit linearer Transformation
-- Einfacher zu implementieren, weniger präzise
+- Traditional method, used by PHQ-9, BDI-II
+- Sum scores with linear transformation
+- Simpler to implement, less precise
 
-#### Cross-Walking und Harmonisierung
-- Equiperzentil-Linking zwischen Instrumenten
-- Regressionsbasierte Vorhersagemodelle
-- IRT-basierte Kalibrierung auf gemeinsame Metrik
-- [Praktische Beispiele und Mapping-Tabellen](cross-instrument-mappings.html)
+#### Cross-Walking and Harmonization
+- Equipercentile linking between instruments
+- Regression-based prediction models
+- IRT-based calibration onto a common metric
+- [Practical examples and mapping tables](cross-instrument-mappings.html)
 
-### Praktische Anwendung von Domänen
+### Practical Application of Domains
 
-#### Klinische Entscheidungsunterstützung
-Domänen-basierte Schwellenwerte für:
-- **Screening**: Identifikation behandlungsbedürftiger Patienten
-- **Monitoring**: Verlaufskontrolle und Therapieanpassung
-- **Outcome-Bewertung**: Therapieerfolg und Remission
+#### Clinical Decision Support
+Domain-based thresholds for:
+- **Screening**: Identification of patients requiring treatment
+- **Monitoring**: Progress tracking and therapy adjustment
+- **Outcome assessment**: Treatment success and remission
 
-#### Forschung und Versorgungsqualität
-- **Meta-Analysen**: Pooling von Studien mit verschiedenen Instrumenten
-- **Registerstudien**: Harmonisierte Outcomes über Zentren
-- **Qualitätsindikatoren**: Faire Vergleiche trotz verschiedener Assessments
+#### Research and Care Quality
+- **Meta-analyses**: Pooling of studies with different instruments
+- **Registry studies**: Harmonized outcomes across sites
+- **Quality indicators**: Fair comparisons despite different assessments
 
-#### Personalisierte Medizin
-- **Präzisionsmedizin**: Domänen-Profile für Therapieauswahl
-- **Adaptive Behandlungspfade**: Domänen-basierte Algorithmen
-- **Patient-Centered Care**: Fokus auf relevante Domänen
+#### Personalized Medicine
+- **Precision medicine**: Domain profiles for therapy selection
+- **Adaptive care pathways**: Domain-based algorithms
+- **Patient-centered care**: Focus on relevant domains
 
-### Implementierungshinweise
+### Implementation Notes
 
-#### FHIR-Ressourcen pro Domäne
-1. **ObservationDefinition**: Definiert Domänen-Score mit Referenzbereichen
-2. **ConceptMap**: Mapping von Instrumenten-Scores zu Domänen-Scores
-3. **Observation**: Instanzen von Domänen-Scores mit Herkunft
-4. **Library** (CQL): Berechnungslogik für komplexe Transformationen
+#### FHIR Resources per Domain
+1. **ObservationDefinition**: Defines domain score with reference ranges
+2. **ConceptMap**: Mapping from instrument scores to domain scores
+3. **Observation**: Instances of domain scores with provenance
+4. **Library** (CQL): Calculation logic for complex transformations
 
 #### Best Practices
-- Immer Herkunftsinstrument dokumentieren (`derivedFrom`)
-- Mapping-Methode angeben (`method`)
-- Konfidenzintervalle berücksichtigen
-- Populationsspezifische Normen verwenden
+- Always document the source instrument (`derivedFrom`)
+- Specify the mapping method (`method`)
+- Consider confidence intervals
+- Use population-specific norms
 
-### Zukünftige Entwicklungen
+### Future Developments
 
-#### Kurzfristig (2025-2026)
-- Vollständige Implementation aller PROMIS-29 Domänen
-- Cross-Walking Tabellen für PHQ-9 nach PROMIS Depression
-- Validierungsstudien für deutsche Population
+#### Short-Term (2025-2026)
+- Complete implementation of all PROMIS-29 domains
+- Cross-walking tables for PHQ-9 to PROMIS Depression
+- Validation studies for the German population
 
-#### Mittelfristig (2026-2027)
-- Item-basierte Domänen-Scores
-- Computer Adaptive Testing (CAT) Integration
-- Erweiterte Domänen (Spiritualität, Resilienz)
+#### Medium-Term (2026-2027)
+- Item-based domain scores
+- Computer Adaptive Testing (CAT) integration
+- Extended domains (spirituality, resilience)
 
-#### Langfristig (2027+)
-- KI-basierte Domänen-Vorhersage
-- Multimodale Integration (PROs + Biomarker)
-- Echtzeit-Domänen-Monitoring
+#### Long-Term (2027+)
+- AI-based domain prediction
+- Multimodal integration (PROs + biomarkers)
+- Real-time domain monitoring
 
-### Zusammenfassung
+### Summary
 
-Die domänen-basierte Strukturierung von PROs im MII-Modul ermöglicht eine zukunftsfähige, flexible und interoperable Erfassung von Gesundheitszuständen. Durch die konsequente Abbildung verschiedener Instrumente auf gemeinsame Domänen wird die Vision einer harmonisierten, patientenzentrierten Versorgung Realität. Die Depressions-Domäne zeigt bereits heute die praktische Umsetzbarkeit dieses Konzepts, während weitere Domänen sukzessive folgen werden.
+The domain-based structuring of PROs in the MII Module enables a future-proof, flexible, and interoperable capture of health states. By consistently mapping different instruments onto shared domains, the vision of harmonized, patient-centered care becomes a reality. The depression domain already demonstrates the practical feasibility of this concept today, while additional domains will follow successively.
 
-**Nächste Schritte:**
-- Verstehen Sie das [domänen-basierte Scoring](domain-based-scoring.html) im Detail
-- Erkunden Sie [Cross-Instrument Mappings](cross-instrument-mappings.html) für praktische Anwendungen
+**Next steps:**
+- Understand [domain-based scoring](domain-based-scoring.html) in detail
+- Explore [cross-instrument mappings](cross-instrument-mappings.html) for practical applications
