@@ -74,9 +74,8 @@ on:
   workflow_dispatch:
     inputs:
       release_ref:
-        description: "Immutable release tag to publish"
+        description: "Immutable release tag to publish (e.g. v2027.0.0-ballot.rc2)"
         required: true
-        default: "v{{CALVER_VERSION}}"
         type: string
       publication_date:
         description: "Publication date (YYYY-MM-DD, must match sushi-config.yaml); blank uses the tagged commit date"
