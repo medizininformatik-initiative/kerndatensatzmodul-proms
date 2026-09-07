@@ -13,7 +13,7 @@ Die PRO-Bibliothek ist die strukturierte Sammlung der Patient-Reported Outcome M
 | [PROMIS-29](promis-29.html) | Multi-Domänen-HRQoL-Profil | 29 | en (de: CPCOR) | Domänen-Roh- + T-Scores | Nutzungsanfrage via [CPCOR](promis.html) |
 | [PROMIS-16](promis-16.html) | Ultrakurzes HRQoL-Profil | 16 | en (de: CPCOR) | nur Datenerfassung; PROPr als CQL geplant | Nutzungsanfrage via CPCOR |
 | [PROMIS Depression SF 4a](promis-depression.html) | Depressions-Kurzform | 4 | en (de: CPCOR) | Roh- + T-Score | Nutzungsanfrage via CPCOR |
-| PROMIS Cognitive Function SF 4a | Kognitive Funktion | 4 | en (de: CPCOR) | Roh- + T-Score | Nutzungsanfrage via CPCOR |
+| [PROMIS Cognitive Function SF 4a](promis-cognitive-function.html) | Kognitive Funktion | 4 | en (de: CPCOR) | Roh- + T-Score | Nutzungsanfrage via CPCOR |
 | [EORTC QLQ-C30](eortc-qlq-c30.html) | Onkologische Lebensqualität | 30 | en (de: EORTC) | [15 Subskalen, 0–100](eortc-qlq-c30-scoring.html) | Registrierung (EORTC) |
 | [PRO-CTCAE](pro-ctcae.html) | Symptomatische Nebenwirkungen (Item-Bibliothek) | 124 (Bibliothek) | en+de (NCI) | Composite Grade + ACS (CQL) | frei (NCI) |
 | [Onkologisches Basisscreening](proms-onkologisches-basisscreening.html) | PRO-CTCAE-Onkologie-Subset | 23 | de (NCI) | Composite Grade (CQL) | frei (NCI) |
