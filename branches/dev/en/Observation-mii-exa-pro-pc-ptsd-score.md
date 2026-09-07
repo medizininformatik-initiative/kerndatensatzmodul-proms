@@ -1,4 +1,4 @@
-# PC-PTSD Score Observation Example - MII IG PRO v2027.0.0-ballot.rc2
+# PC-PTSD Score Observation Example - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2027.0.0-ballot.rc2
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2027.0.0-ballot.rc3
 
 **status**: Final
 
@@ -37,7 +37,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-pc-ptsd-score",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.rc2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.rc3"]
   },
   "status" : "final",
   "category" : [{

@@ -1,4 +1,4 @@
-# CodeSystem - MII IG PRO v2027.0.0-ballot.rc2
+# CodeSystem - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -9,7 +9,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b#eortc-qlq-c30-cs-b | *Version*:2027.0.0-ballot.rc2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b#eortc-qlq-c30-cs-b | *Version*:2027.0.0-ballot.rc3 |
 | Active | *Maschinenlesbarer Name*: |
 
 Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:

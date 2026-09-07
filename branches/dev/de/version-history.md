@@ -1,4 +1,4 @@
-# Versioning - MII IG PRO v2027.0.0-ballot.rc2
+# Versioning - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * **Versioning**
@@ -11,7 +11,7 @@
 
 Das Modul **PRO** folgt dem KDS-Schema der Kalender-Versionierung (CalVer) in einer SemVer-kompatiblen numerischen Form:
 
-* Format **`JJJJ.MINOR.PATCH[-label]`** — die aktuelle Version ist `2027.0.0-ballot.rc2`;
+* Format **`JJJJ.MINOR.PATCH[-label]`** — die aktuelle Version ist `2027.0.0-ballot.rc3`;
 * **`JJJJ`** — das Jahr, in dem der Leitfaden gilt und genutzt werden soll; es tritt an die Stelle der Major-Version;
 * **`MINOR`** — wird für nicht brechende Ergänzungen und Präzisierungen erhöht;
 * **`PATCH`** — wird für Korrekturen und Fehlerbehebungen erhöht;

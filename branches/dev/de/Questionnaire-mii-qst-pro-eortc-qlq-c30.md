@@ -1,4 +1,4 @@
-# MII QST PRO EORTC QLQ-C30 - MII IG PRO v2027.0.0-ballot.rc2
+# MII QST PRO EORTC QLQ-C30 - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30 | *Version*:2027.0.0-ballot.rc2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30 | *Version*:2027.0.0-ballot.rc3 |
 | Active Stand: 2026-09-07 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: © Copyright 1995 EORTC Quality of Life Group. All rights reserved. Version 3.0 | |
 
@@ -36,17 +36,17 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-eortc-qlq-c30",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
   },
   "language" : "en",
   "contained" : [{
     "resourceType" : "CodeSystem",
     "id" : "eortc-qlq-c30-cs",
     "meta" : {
-      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc2"]
+      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
     },
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
-    "version" : "2027.0.0-ballot.rc2",
+    "version" : "2027.0.0-ballot.rc3",
     "status" : "active",
     "caseSensitive" : true,
     "content" : "complete",
@@ -187,10 +187,10 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "resourceType" : "ValueSet",
     "id" : "eortc-qlq-c30-4pt",
     "meta" : {
-      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc2"]
+      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
     },
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
-    "version" : "2027.0.0-ballot.rc2",
+    "version" : "2027.0.0-ballot.rc3",
     "status" : "active",
     "compose" : {
       "include" : [{
@@ -218,10 +218,10 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "resourceType" : "ValueSet",
     "id" : "eortc-qlq-c30-7pt",
     "meta" : {
-      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc2"]
+      "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
     },
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
-    "version" : "2027.0.0-ballot.rc2",
+    "version" : "2027.0.0-ballot.rc3",
     "status" : "active",
     "compose" : {
       "include" : [{
@@ -274,11 +274,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T15:01:48+00:00",
+  "date" : "2026-09-07T15:24:11+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

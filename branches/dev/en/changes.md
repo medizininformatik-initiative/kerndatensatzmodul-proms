@@ -1,4 +1,4 @@
-# Changelog - MII IG PRO v2027.0.0-ballot.rc2
+# Changelog - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -7,7 +7,7 @@
 
 This page documents the changes between versions of the MII PRO module.
 
-### 2027.0.0-ballot.rc2 — in preparation
+### 2027.0.0-ballot.rc3 — in preparation
 
 The 2027 ballot version brings the **move onto the MII KDS module template** (v0.11.3) — the same toolchain as the other KDS modules. For implementers **nothing changes** in the FHIR artifacts: all 214 resources, their ids, canonicals and versions are unchanged (measured, 0 regressions).
 

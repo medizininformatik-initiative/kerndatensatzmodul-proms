@@ -1,4 +1,4 @@
-# Cross-Instrument Mappings - MII IG PRO v2027.0.0-ballot.rc2
+# Cross-Instrument Mappings - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Scoring**](scoring.md)

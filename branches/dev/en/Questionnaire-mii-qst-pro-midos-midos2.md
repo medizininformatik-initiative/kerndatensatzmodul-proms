@@ -1,4 +1,4 @@
-# MII QST PRO MIDOS2 - MII IG PRO v2027.0.0-ballot.rc2
+# MII QST PRO MIDOS2 - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2 | *Version*:2027.0.0-ballot.rc2 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2 | *Version*:2027.0.0-ballot.rc3 |
 | Draft as of 2026-09-07 | *Computable Name*:MII_QST_PRO_MIDOS_MIDOS2 |
 | **Copyright/Legal**: MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke. | |
 
@@ -34,7 +34,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-midos-midos2",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
   },
   "language" : "de",
   "extension" : [{
@@ -69,12 +69,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_QST_PRO_MIDOS_MIDOS2",
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-07T15:01:48+00:00",
+  "date" : "2026-09-07T15:24:11+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

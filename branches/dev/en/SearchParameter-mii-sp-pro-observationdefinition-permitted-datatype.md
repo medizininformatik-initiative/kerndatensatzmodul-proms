@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-permitted-datatype - MII IG PRO v2027.0.0-ballot.rc2
+# mii-sp-pro-observationdefinition-permitted-datatype - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype | *Version*:2027.0.0-ballot.rc2 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype | *Version*:2027.0.0-ballot.rc3 |
 | Active as of 2025-05-24 | *Computable Name*:MII_SP_PRO_ObservationDefinition_PermittedDataType |
 
  
@@ -36,7 +36,7 @@ SearchParameter for ObservationDefinition.permittedDataType to filter score defi
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-permitted-datatype",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_SP_PRO_ObservationDefinition_PermittedDataType",
   "status" : "active",
   "experimental" : true,

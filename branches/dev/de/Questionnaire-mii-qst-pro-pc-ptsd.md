@@ -1,4 +1,4 @@
-# MII QST PRO PC-PTSD - MII IG PRO v2027.0.0-ballot.rc2
+# MII QST PRO PC-PTSD - MII IG PRO v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd | *Version*:2027.0.0-ballot.rc2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd | *Version*:2027.0.0-ballot.rc3 |
 | Active Stand: 2026-09-07 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: PC-PTSD © Prins A, et al. 2003; deutsche Fassung Schäfer I, Schulze C, 2010. Freely available — Lizenz-Status: frei verfügbar (Tier A). | |
 
@@ -34,7 +34,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-pc-ptsd",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc2"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
   },
   "language" : "de",
   "extension" : [{
@@ -69,11 +69,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "title" : "MII QST PRO PC-PTSD",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T15:01:48+00:00",
+  "date" : "2026-09-07T15:24:11+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
