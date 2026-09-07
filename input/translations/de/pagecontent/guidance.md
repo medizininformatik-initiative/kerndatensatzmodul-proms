@@ -31,10 +31,16 @@ Für die KDS-weiten Konformitätsanforderungen siehe die
 [Konformitätsregeln des Meta-Moduls](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
 für die technischen Artefakte siehe [Profile](profiles.html).
 
+### Für Anwendende
+
+**Softwarehersteller** — Formular-Renderer, KIS-Integrationen, ePRO-Apps, Scoring-Services: Einstieg über die [Hinweise für Implementierende](implementer-guidance.html); dort stehen die fünf Regeln, die jede Implementierung einhalten muss, und was jede Systemrolle konsumiert und erzeugt.
+
+**Studien und Forschungsprojekte** — Instrumentenauswahl, Lizenzstufen und was die erhobenen Daten bedeuten: Einstieg über die [Hinweise für Forschende](researcher-guidance.html).
+
 ### Modul-Dokumentation
 
 - [Anwendungsfälle](use-cases.html) · [Modulbeschreibung](module-description.html) · [Kontext im Gesamtprojekt](project-context.html)
 - [Datensätze und Beschreibungen](datasets-and-descriptions.html) · [Technische Implementierung](technical-implementation.html) · [Workflows](workflows.html)
-- [ID-Systematik](id-systematics.html) · [Domänen](domains.html) · [Terminologie-Strategien](terminology-strategies.html) · [Questionnaire Capabilities](questionnaire-capabilities.html) · [Computer-Adaptives Testen](cat.html)
+- [ID-Systematik](id-systematics.html) · [Domänen](domains.html) · [Terminologie-Strategien](terminology-strategies.html) · [Questionnaire Capabilities](questionnaire-capabilities.html) · [Computer-Adaptives Testen](cat.html) · [Nationaler Fragebogenserver](national-questionnaire-server.html)
 - [Scoring](scoring.html) · [Domänenbasiertes Scoring](domain-based-scoring.html) · [Domänen](domains.html) · [Cross-Instrument-Mappings](cross-instrument-mappings.html) · [Abgeleitete Metriken](derived-metrics.html)
 - [Validierung](validation.html) · [Referenzen](references.html)

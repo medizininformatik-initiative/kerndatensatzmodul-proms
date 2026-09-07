@@ -33,10 +33,16 @@ For the KDS-wide conformance requirements see the
 [Conformance rules of the Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
 for the technical artifacts see [Profiles](profiles.html).
 
+### For Adopters
+
+**Software vendors** — form renderers, KIS integrations, ePRO apps, scoring services: start with the [Implementer Guidance](implementer-guidance.html); it names the five rules every implementation must respect and what each system role consumes and produces.
+
+**Studies and research projects** — instrument selection, licensing tiers, and what the collected data means: start with the [Researcher Guidance](researcher-guidance.html).
+
 ### Module Documentation
 
 - [Use Cases](use-cases.html) · [Module Description](module-description.html) · [Context within the MII](project-context.html)
 - [Datasets and Descriptions](datasets-and-descriptions.html) · [Technical Implementation](technical-implementation.html) · [Workflows](workflows.html)
-- [ID Systematics](id-systematics.html) · [Domains](domains.html) · [Terminology Strategies](terminology-strategies.html) · [Questionnaire Capabilities](questionnaire-capabilities.html) · [Computer-Adaptive Testing](cat.html)
+- [ID Systematics](id-systematics.html) · [Domains](domains.html) · [Terminology Strategies](terminology-strategies.html) · [Questionnaire Capabilities](questionnaire-capabilities.html) · [Computer-Adaptive Testing](cat.html) · [National Questionnaire Server](national-questionnaire-server.html)
 - [Scoring](scoring.html) · [Domain-based Scoring](domain-based-scoring.html) · [Domains](domains.html) · [Cross-Instrument Mappings](cross-instrument-mappings.html) · [Derived Metrics](derived-metrics.html)
 - [Validation](validation.html) · [References](references.html)
