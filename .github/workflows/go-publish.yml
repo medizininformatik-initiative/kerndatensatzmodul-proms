@@ -675,6 +675,7 @@ jobs:
               "    <title>${title}</title>" \
               "    <link>${PUBLICATION_BASE}</link>" \
               "    <description>${title}</description>" \
+              "    <atom:link rel=\"self\" type=\"application/rss+xml\" href=\"${PUBLICATION_BASE}/${feed}\"/>" \
               '    <generator>MII module go-publish bootstrap</generator>' \
               "    <lastBuildDate>${RSS_DATE}</lastBuildDate>" \
               "    <pubDate>${RSS_DATE}</pubDate>" \
