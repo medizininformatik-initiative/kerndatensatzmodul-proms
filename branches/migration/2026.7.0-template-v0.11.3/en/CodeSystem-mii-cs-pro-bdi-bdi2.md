@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2 | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-06 | *Computable Name*:MII_CS_PRO_BDI_BDI2_AnswerList |
+| Active as of 2026-09-07 | *Computable Name*:MII_CS_PRO_BDI_BDI2_AnswerList |
 
  
 MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire 
@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

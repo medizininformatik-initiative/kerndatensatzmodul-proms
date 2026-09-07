@@ -27,7 +27,7 @@ For the KDS-wide conformance requirements see the [Conformance rules of the Meta
 
 * [Use Cases](use-cases.md) · [Module Description](module-description.md) · [Context within the MII](project-context.md)
 * [Datasets and Descriptions](datasets-and-descriptions.md) · [Technical Implementation](technical-implementation.md) · [Workflows](workflows.md)
-* [ID Systematics](id-systematics.md) · [Terminology Strategies](terminology-strategies.md) · [Questionnaire Capabilities](questionnaire-capabilities.md)
+* [ID Systematics](id-systematics.md) · [Domains](domains.md) · [Terminology Strategies](terminology-strategies.md) · [Questionnaire Capabilities](questionnaire-capabilities.md) · [Computer-Adaptive Testing](cat.md)
 * [Scoring](scoring.md) · [Domain-based Scoring](domain-based-scoring.md) · [Domains](domains.md) · [Cross-Instrument Mappings](cross-instrument-mappings.md) · [Derived Metrics](derived-metrics.md)
 * [Validation](validation.md) · [References](references.md)
 

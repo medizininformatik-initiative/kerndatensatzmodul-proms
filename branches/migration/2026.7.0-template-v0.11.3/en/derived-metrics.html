@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.4"}
-    h3,h4,h5,h6{--heading-prefix:"5.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.3"}
+    h3,h4,h5,h6{--heading-prefix:"5.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -185,6 +185,10 @@
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
       <li><a href="use-cases.html">Use Cases</a></li>
+      <li><a href="domains.html">Domains</a></li>
+      <li><a href="id-systematics.html">ID Systematics</a></li>
+      <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
+      <li><a href="cat.html">Computer-Adaptive Testing</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -202,9 +206,6 @@
     <ul class="dropdown-menu">
       <li><a href="scoring.html">Scoring</a></li>
       <li><a href="domain-based-scoring.html">Domain-based Scoring</a></li>
-      <li><a href="domains.html">Domains</a></li>
-      <li><a href="id-systematics.html">ID Systematics</a></li>
-      <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -307,20 +308,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-
-<p>This section will cover the use of derived metrics in future module versions.</p>
-
-<p>This includes:</p>
-<ul>
-  <li>Cut-off values and categorizations</li>
-  <li>Reference ranges and population metrics</li>
-  <li>Comparison metrics such as MID / MCID (Minimal Important Difference / Minimal Clinically Important Difference)</li>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#the-pipeline" id="markdown-toc-the-pipeline">The pipeline</a></li>
+  <li><a href="#1-the-score-observation-is-the-trigger" id="markdown-toc-1-the-score-observation-is-the-trigger">1. The score Observation is the trigger</a></li>
+  <li><a href="#2-the-observationdefinition-is-the-comparator" id="markdown-toc-2-the-observationdefinition-is-the-comparator">2. The ObservationDefinition is the comparator</a></li>
+  <li><a href="#3-the-result-is-itself-a-fhir-artefact" id="markdown-toc-3-the-result-is-itself-a-fhir-artefact">3. The result is itself a FHIR artefact</a></li>
+  <li><a href="#why-this-cut-of-responsibilities" id="markdown-toc-why-this-cut-of-responsibilities">Why this cut of responsibilities</a></li>
+  <li><a href="#open-design-questions-2027" id="markdown-toc-open-design-questions-2027">Open design questions (2027)</a></li>
 </ul>
 
-<p>This is planned for version 2027, which is expected to be developed in spring/summer 2026 and will enter the comment period in autumn 2026.</p>
+</div>
+<p>Derived metrics are the step <strong>after</strong> scoring: a computed score becomes clinically actionable only when something compares it against reference knowledge and draws a conclusion — severity staging, a threshold alert, a change over time, a care recommendation. This page describes the concept the module is working towards; the building blocks below are ordered along the data flow.</p>
+
+<blockquote>
+  <p><strong>Status:</strong> concept (2027 roadmap). What is shipped today: the score Observations and the ObservationDefinitions with documented reference ranges. The interpretation step itself is deliberately <strong>not</strong> executable logic yet — see the <a href="scoring.html">MDR scope note on the Scoring page</a>.</p>
+</blockquote>
+
+<h3 id="the-pipeline">The pipeline</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>QuestionnaireResponse
+      │  (scoring — channels A/B, see Scoring)
+      ▼
+Observation (score)                    ObservationDefinition
+      │                                  qualifiedInterval:
+      │   FHIR CDS Hooks                 cut-offs, severity bands,
+      ▼   (e.g. on Observation create)   population norms
+CDS Service ──── compares score ─────────────┘
+      │          against the definition
+      ▼
+Result: CDS Cards / PlanDefinition ($apply) → CarePlan, ServiceRequest, Task
+</code></pre></div></div>
+
+<h3 id="1-the-score-observation-is-the-trigger">1. The score Observation is the trigger</h3>
+
+<p>Every calculated score lands as an <strong>Observation</strong> conforming to <code class="language-plaintext highlighter-rouge">mii-pr-pro-score-instance</code>, with <code class="language-plaintext highlighter-rouge">derivedFrom</code> pointing at the QuestionnaireResponse. Creating this Observation is the natural trigger point: a <strong>CDS Hooks</strong> service subscribed to score creation (or a Subscription-based equivalent) receives the event without the form client or the ETL pipeline having to know any interpretation logic.</p>
+
+<h3 id="2-the-observationdefinition-is-the-comparator">2. The ObservationDefinition is the comparator</h3>
+
+<p>The module's ObservationDefinitions are not documentation ornaments — they are the <strong>machine-readable comparison knowledge</strong>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">quantitativeDetails</code> fixes unit and value range,</li>
+  <li><code class="language-plaintext highlighter-rouge">qualifiedInterval</code> carries the published cut-offs and severity bands (e.g. PHQ-9: 5/10/15/20; GAD-7: 5/10/15), each with <code class="language-plaintext highlighter-rouge">context</code> (category) and <code class="language-plaintext highlighter-rouge">appliesTo</code>/<code class="language-plaintext highlighter-rouge">age</code> (population),</li>
+  <li>the <a href="StructureDefinition-mii-ex-pro-score-score-health-correlation.html">score health correlation extension</a> tells the service <strong>which direction is bad</strong> — without it, "score rose by 10" is uninterpretable (EORTC function scales rise with health, symptom scales with burden).</li>
+</ul>
+
+<p>A CDS service therefore needs no hard-coded instrument knowledge: it resolves the Observation's <code class="language-plaintext highlighter-rouge">instantiates</code> reference to the ObservationDefinition and evaluates the intervals it finds there. New instrument, same service.</p>
+
+<h3 id="3-the-result-is-itself-a-fhir-artefact">3. The result is itself a FHIR artefact</h3>
+
+<p>The comparison result should not vanish into a proprietary alert. Two complementary forms:</p>
+
+<ul>
+  <li><strong>CDS Cards</strong> (the CDS Hooks response) for the interactive moment: "PHQ-9 = 18, band <em>moderately severe</em>; suggestion: …" — displayed in the EHR at the point of care.</li>
+  <li><strong>PlanDefinition / ActivityDefinition</strong> for the standing knowledge: the rule "PHQ-9 ≥ 15 → recommend psychiatric assessment" lives as a PlanDefinition; <code class="language-plaintext highlighter-rouge">$apply</code> instantiates it into a <strong>CarePlan</strong>, <strong>ServiceRequest</strong> or <strong>Task</strong> for the concrete patient. That keeps the recommendation itself versionable, reviewable and — like everything else here — an ordinary FHIR resource.</li>
+</ul>
+
+<p>Longitudinal metrics (change scores, reliable change indices, MID/MCID exceedance) follow the same pattern: the comparator knowledge extends the ObservationDefinition side, the computation lives in CQL, the outcome is again an Observation or a card.</p>
+
+<h3 id="why-this-cut-of-responsibilities">Why this cut of responsibilities</h3>
+
+<ul>
+  <li><strong>Separation of measurement and judgement.</strong> Scoring (arithmetic, instrument-defined) stays in the scoring channels; interpretation (clinical, context-dependent) sits behind an explicit service boundary. That boundary is also the <strong>regulatory</strong> one — see the medical-device scope note.</li>
+  <li><strong>Single source of comparison truth.</strong> Cut-offs live once, in the ObservationDefinition, not copied into every renderer and ETL job.</li>
+  <li><strong>Population-specific ranges</strong> (age strata, indication-specific norms) are additional <code class="language-plaintext highlighter-rouge">qualifiedInterval</code>s with <code class="language-plaintext highlighter-rouge">appliesTo</code> — the service picks the applicable one; the pipeline shape does not change.</li>
+</ul>
+
+<h3 id="open-design-questions-2027">Open design questions (2027)</h3>
+
+<ol>
+  <li>Hook choice and granularity: a dedicated PRO hook vs. generic <code class="language-plaintext highlighter-rouge">observation-create</code>; batch scoring vs. per-score events.</li>
+  <li>Where CQL ends and PlanDefinition logic begins — the same boundary question as in the <a href="scoring.html">three-channel scoring architecture</a>.</li>
+  <li>Governance of the recommendation artefacts: who reviews and versions PlanDefinitions carrying clinical thresholds (TF-KDS vs. clinical societies).</li>
+  <li>MID/MCID: documented as text per current decision; representing them machine-readably would extend the comparator vocabulary.</li>
+</ol>
 
 
 
@@ -347,7 +409,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Sun, Sep 6, 2026 21:42+0000">2026-09-06</span>
+          Generated <span title="Mon, Sep 7, 2026 08:34+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

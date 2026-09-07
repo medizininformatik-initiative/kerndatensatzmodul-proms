@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-hads | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-06 | *Computable Name*: |
+| Active as of 2026-09-07 | *Computable Name*: |
 
  
 Hospital Anxiety and Depression Scale (HADS) - Metadata-only reference implementation 
@@ -64,7 +64,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "Hospital Anxiety and Depression Scale (HADS)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

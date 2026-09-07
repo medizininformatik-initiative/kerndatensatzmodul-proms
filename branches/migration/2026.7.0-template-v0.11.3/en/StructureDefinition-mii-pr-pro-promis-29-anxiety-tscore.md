@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-06 | *Computable Name*:MII_PR_PRO_PROMIS_29_Anxiety_TScore |
+| Active as of 2026-09-07 | *Computable Name*:MII_PR_PRO_PROMIS_29_Anxiety_TScore |
 
  
 Profile for PROMIS-29 Anxiety T-Score Observations 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "title" : "MII PR PRO PROMIS-29 Anxiety T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

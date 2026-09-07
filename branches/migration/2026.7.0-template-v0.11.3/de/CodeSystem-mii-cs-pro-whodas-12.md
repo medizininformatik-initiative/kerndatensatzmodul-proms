@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12 | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_CS_PRO_WHODAS_12 |
+| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_CS_PRO_WHODAS_12 |
 | **Copyright/Rechtliches**: WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0. | |
 
  
@@ -38,7 +38,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

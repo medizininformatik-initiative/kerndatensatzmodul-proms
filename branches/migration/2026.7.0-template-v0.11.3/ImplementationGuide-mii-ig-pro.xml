@@ -3338,6 +3338,22 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="domains.html"/>
+          </extension>
+          <nameUrl value="domains.html"/>
+          <title value="Domains"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="cat.html"/>
+          </extension>
+          <nameUrl value="cat.html"/>
+          <title value="Computer-Adaptive Testing (CAT)"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="validation.html"/>
           </extension>
           <nameUrl value="validation.html"/>
@@ -3574,14 +3590,6 @@
           </extension>
           <nameUrl value="domain-based-scoring.html"/>
           <title value="Domain-based Scoring"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="domains.html"/>
-          </extension>
-          <nameUrl value="domains.html"/>
-          <title value="Domains"/>
           <generation value="markdown"/>
         </page>
         <page>

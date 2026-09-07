@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt |
+| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt |
 
  
 Standard 4-point response scale for EORTC QLQ-C30 items 
@@ -42,7 +42,7 @@ Standard 4-point response scale for EORTC QLQ-C30 items
   "title" : "MII VS PRO EORTC QLQ-C30 4-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

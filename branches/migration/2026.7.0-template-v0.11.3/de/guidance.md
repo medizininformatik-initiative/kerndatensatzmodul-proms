@@ -27,7 +27,7 @@ Für die KDS-weiten Konformitätsanforderungen siehe die [Konformitätsregeln de
 
 * [Anwendungsfälle](use-cases.md) · [Modulbeschreibung](module-description.md) · [Kontext im Gesamtprojekt](project-context.md)
 * [Datensätze und Beschreibungen](datasets-and-descriptions.md) · [Technische Implementierung](technical-implementation.md) · [Workflows](workflows.md)
-* [ID-Systematik](id-systematics.md) · [Terminologie-Strategien](terminology-strategies.md) · [Questionnaire Capabilities](questionnaire-capabilities.md)
+* [ID-Systematik](id-systematics.md) · [Domänen](domains.md) · [Terminologie-Strategien](terminology-strategies.md) · [Questionnaire Capabilities](questionnaire-capabilities.md) · [Computer-Adaptives Testen](cat.md)
 * [Scoring](scoring.md) · [Domänenbasiertes Scoring](domain-based-scoring.md) · [Domänen](domains.md) · [Cross-Instrument-Mappings](cross-instrument-mappings.md) · [Abgeleitete Metriken](derived-metrics.md)
 * [Validierung](validation.md) · [Referenzen](references.md)
 

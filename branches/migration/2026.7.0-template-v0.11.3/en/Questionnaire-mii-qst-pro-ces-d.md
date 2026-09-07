@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ces-d | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-06 | *Computable Name*: |
+| Active as of 2026-09-07 | *Computable Name*: |
 
  
 Center for Epidemiologic Studies Depression Scale (CES-D) - Metadata-only reference implementation 
@@ -64,7 +64,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "Center for Epidemiologic Studies Depression Scale (CES-D)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

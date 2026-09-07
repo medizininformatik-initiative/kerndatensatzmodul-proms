@@ -4918,6 +4918,24 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "domains.html"
+          }],
+          "nameUrl" : "domains.html",
+          "title" : "Domains",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "cat.html"
+          }],
+          "nameUrl" : "cat.html",
+          "title" : "Computer-Adaptive Testing (CAT)",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "validation.html"
           }],
           "nameUrl" : "validation.html",
@@ -5183,15 +5201,6 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
           }],
           "nameUrl" : "domain-based-scoring.html",
           "title" : "Domain-based Scoring",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "domains.html"
-          }],
-          "nameUrl" : "domains.html",
-          "title" : "Domains",
           "generation" : "markdown"
         },
         {

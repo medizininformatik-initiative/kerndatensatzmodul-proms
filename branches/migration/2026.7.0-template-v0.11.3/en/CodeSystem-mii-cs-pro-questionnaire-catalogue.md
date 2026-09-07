@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-06 | *Computable Name*:MII_CS_PRO_Questionnaire_Catalogue |
+| Active as of 2026-09-07 | *Computable Name*:MII_CS_PRO_Questionnaire_Catalogue |
 
  
 MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in the MII PROMs Module 
@@ -35,7 +35,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*: |
 
  
 Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fremdsystemen verbreitet) auf die kanonischen linkIds des PHQ-D-Block-Namespace (phq-phq5a…phq-phq5g) ab. Lesehilfe für die Übernahme von Daten aus Systemen, die die konventionelle Nummerierung verwenden — keine Migration einer veröffentlichten Fassung. 
@@ -27,7 +27,7 @@ Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fr
   "title" : "MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

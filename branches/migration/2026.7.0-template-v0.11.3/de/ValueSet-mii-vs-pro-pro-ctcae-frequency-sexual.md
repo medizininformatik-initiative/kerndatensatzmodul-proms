@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-06 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Frequency_Sexual |
+| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Frequency_Sexual |
 
  
 7-point frequency scale for sexual function items: standard 5 options plus 'Not sexually active' and 'Prefer not to answer' 
@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-06T21:42:10+00:00",
+  "date" : "2026-09-07T08:34:40+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

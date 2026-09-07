@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.4"}
-    h3,h4,h5,h6{--heading-prefix:"5.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.3"}
+    h3,h4,h5,h6{--heading-prefix:"5.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -185,6 +185,10 @@
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramme</a></li>
       <li><a href="use-cases.html">Anwendungsfälle</a></li>
+      <li><a href="domains.html">Domänen</a></li>
+      <li><a href="id-systematics.html">ID-Systematik</a></li>
+      <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
+      <li><a href="cat.html">Computer-Adaptive Testing</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -202,9 +206,6 @@
     <ul class="dropdown-menu">
       <li><a href="scoring.html">Scoring</a></li>
       <li><a href="domain-based-scoring.html">Domänenbasiertes Scoring</a></li>
-      <li><a href="domains.html">Domänen</a></li>
-      <li><a href="id-systematics.html">ID-Systematik</a></li>
-      <li><a href="questionnaire-capabilities.html">Questionnaire Capabilities</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -307,26 +308,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
-<p>Dieser Bereich wird in zukünftigen Modulversionen die Verwendung von abgeleiteten Metriken beinhalten.</p>
-
-<p>Dazu gehören:</p>
-<ul>
-  <li>Cut-Off Werte und Kategorisierungen</li>
-  <li>Referenzbereiche und Populationsmetriken</li>
-  <li>Vergleichsmetriken wie MID / MCID (Minimal Important Difference / Minimal Clinically Important Difference)</li>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#die-pipeline" id="markdown-toc-die-pipeline">Die Pipeline</a></li>
+  <li><a href="#1-die-score-observation-ist-der-auslöser" id="markdown-toc-1-die-score-observation-ist-der-auslöser">1. Die Score-Observation ist der Auslöser</a></li>
+  <li><a href="#2-die-observationdefinition-ist-der-vergleichsmaßstab" id="markdown-toc-2-die-observationdefinition-ist-der-vergleichsmaßstab">2. Die ObservationDefinition ist der Vergleichsmaßstab</a></li>
+  <li><a href="#3-das-ergebnis-ist-selbst-ein-fhir-artefakt" id="markdown-toc-3-das-ergebnis-ist-selbst-ein-fhir-artefakt">3. Das Ergebnis ist selbst ein FHIR-Artefakt</a></li>
+  <li><a href="#warum-dieser-verantwortungsschnitt" id="markdown-toc-warum-dieser-verantwortungsschnitt">Warum dieser Verantwortungsschnitt</a></li>
+  <li><a href="#offene-designfragen-2027" id="markdown-toc-offene-designfragen-2027">Offene Designfragen (2027)</a></li>
 </ul>
 
-<p>Dies ist für die Version 2027 geplant, die voraussichtlich im Frühjahr/Sommer 2026 erarbeitet wird und im Herbst 2026 in die Kommentierung geht.</p>
+</div>
+<p>Abgeleitete Metriken sind der Schritt <strong>nach</strong> dem Scoring: Ein berechneter Score wird erst dann klinisch handlungsleitend, wenn etwas ihn gegen Referenzwissen vergleicht und eine Schlussfolgerung zieht — Schweregradeinstufung, Schwellenwert-Alarm, Verlaufsänderung, Versorgungsempfehlung. Diese Seite beschreibt das Konzept, auf das das Modul hinarbeitet; die Bausteine folgen dem Datenfluss.</p>
+
+<blockquote>
+  <p><strong>Status:</strong> Konzept (Roadmap 2027). Heute ausgeliefert: die Score-Observations und die ObservationDefinitions mit dokumentierten Referenzbereichen. Der Interpretationsschritt selbst ist bewusst noch <strong>keine</strong> ausführbare Logik — siehe die <a href="scoring.html">MDR-Abgrenzung auf der Scoring-Seite</a>.</p>
+</blockquote>
+
+<h3 id="die-pipeline">Die Pipeline</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>QuestionnaireResponse
+      │  (Scoring — Kanäle A/B, siehe Scoring)
+      ▼
+Observation (Score)                    ObservationDefinition
+      │                                  qualifiedInterval:
+      │   FHIR CDS Hooks                 Cut-offs, Schweregrade,
+      ▼   (z. B. bei Observation-Anlage) Populationsnormen
+CDS-Service ──── vergleicht Score ───────────┘
+      │          gegen die Definition
+      ▼
+Ergebnis: CDS Cards / PlanDefinition ($apply) → CarePlan, ServiceRequest, Task
+</code></pre></div></div>
+
+<h3 id="1-die-score-observation-ist-der-auslöser">1. Die Score-Observation ist der Auslöser</h3>
+
+<p>Jeder berechnete Score landet als <strong>Observation</strong> konform zu <code class="language-plaintext highlighter-rouge">mii-pr-pro-score-instance</code>, mit <code class="language-plaintext highlighter-rouge">derivedFrom</code> auf die QuestionnaireResponse. Die Anlage dieser Observation ist der natürliche Triggerpunkt: Ein <strong>CDS-Hooks</strong>-Service, der auf Score-Anlagen abonniert ist (oder ein Subscription-basiertes Äquivalent), erhält das Ereignis, ohne dass Formular-Client oder ETL-Strecke Interpretationslogik kennen müssen.</p>
+
+<h3 id="2-die-observationdefinition-ist-der-vergleichsmaßstab">2. Die ObservationDefinition ist der Vergleichsmaßstab</h3>
+
+<p>Die ObservationDefinitions des Moduls sind kein Dokumentationsschmuck — sie sind das <strong>maschinenlesbare Vergleichswissen</strong>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">quantitativeDetails</code> legt Einheit und Wertebereich fest,</li>
+  <li><code class="language-plaintext highlighter-rouge">qualifiedInterval</code> trägt die publizierten Cut-offs und Schweregrade (z. B. PHQ-9: 5/10/15/20; GAD-7: 5/10/15), jeweils mit <code class="language-plaintext highlighter-rouge">context</code> (Kategorie) und <code class="language-plaintext highlighter-rouge">appliesTo</code>/<code class="language-plaintext highlighter-rouge">age</code> (Population),</li>
+  <li>die <a href="StructureDefinition-mii-ex-pro-score-score-health-correlation.html">Score-Health-Correlation-Extension</a> sagt dem Service, <strong>welche Richtung schlecht ist</strong> — ohne sie ist „Score um 10 gestiegen" nicht interpretierbar (EORTC-Funktionsskalen steigen mit der Gesundheit, Symptomskalen mit der Last).</li>
+</ul>
+
+<p>Ein CDS-Service braucht damit kein einprogrammiertes Instrumentenwissen: Er löst die <code class="language-plaintext highlighter-rouge">instantiates</code>-Referenz der Observation zur ObservationDefinition auf und wertet die dort gefundenen Intervalle aus. Neues Instrument, derselbe Service.</p>
+
+<h3 id="3-das-ergebnis-ist-selbst-ein-fhir-artefakt">3. Das Ergebnis ist selbst ein FHIR-Artefakt</h3>
+
+<p>Das Vergleichsergebnis soll nicht in einem proprietären Alarm verschwinden. Zwei komplementäre Formen:</p>
+
+<ul>
+  <li><strong>CDS Cards</strong> (die CDS-Hooks-Antwort) für den interaktiven Moment: „PHQ-9 = 18, Stufe <em>mittelschwer bis schwer</em>; Vorschlag: …" — angezeigt im Primärsystem am Ort der Versorgung.</li>
+  <li><strong>PlanDefinition / ActivityDefinition</strong> für das stehende Wissen: Die Regel „PHQ-9 ≥ 15 → psychiatrische Abklärung empfehlen" lebt als PlanDefinition; <code class="language-plaintext highlighter-rouge">$apply</code> instanziiert sie für die konkrete Patientin in einen <strong>CarePlan</strong>, <strong>ServiceRequest</strong> oder <strong>Task</strong>. So bleibt die Empfehlung selbst versionierbar, reviewbar und — wie alles hier — eine gewöhnliche FHIR-Ressource.</li>
+</ul>
+
+<p>Longitudinale Metriken (Änderungsscores, Reliable-Change-Indizes, MID/MCID-Überschreitung) folgen demselben Muster: Das Vergleichswissen erweitert die ObservationDefinition-Seite, die Berechnung liegt in CQL, das Ergebnis ist wieder eine Observation oder eine Card.</p>
+
+<h3 id="warum-dieser-verantwortungsschnitt">Warum dieser Verantwortungsschnitt</h3>
+
+<ul>
+  <li><strong>Trennung von Messung und Urteil.</strong> Scoring (Arithmetik, instrumentendefiniert) bleibt in den Scoring-Kanälen; Interpretation (klinisch, kontextabhängig) sitzt hinter einer expliziten Service-Grenze. Diese Grenze ist zugleich die <strong>regulatorische</strong> — siehe die Medizinprodukte-Abgrenzung.</li>
+  <li><strong>Eine Quelle der Vergleichswahrheit.</strong> Cut-offs leben einmal, in der ObservationDefinition — nicht kopiert in jeden Renderer und jeden ETL-Job.</li>
+  <li><strong>Populationsspezifische Bereiche</strong> (Altersstrata, indikationsspezifische Normen) sind zusätzliche <code class="language-plaintext highlighter-rouge">qualifiedInterval</code>s mit <code class="language-plaintext highlighter-rouge">appliesTo</code> — der Service wählt das zutreffende; die Pipeline-Form ändert sich nicht.</li>
+</ul>
+
+<h3 id="offene-designfragen-2027">Offene Designfragen (2027)</h3>
+
+<ol>
+  <li>Hook-Wahl und Granularität: dedizierter PRO-Hook vs. generisches <code class="language-plaintext highlighter-rouge">observation-create</code>; Batch-Scoring vs. Einzelereignisse.</li>
+  <li>Wo CQL endet und PlanDefinition-Logik beginnt — dieselbe Grenzfrage wie in der <a href="scoring.html">Drei-Kanal-Scoring-Architektur</a>.</li>
+  <li>Governance der Empfehlungsartefakte: Wer reviewt und versioniert PlanDefinitions mit klinischen Schwellenwerten (TF-KDS vs. Fachgesellschaften)?</li>
+  <li>MID/MCID: nach aktueller Entscheidung als Text dokumentiert; eine maschinenlesbare Repräsentation würde das Vergleichsvokabular erweitern.</li>
+</ol>
 
 
 
@@ -353,7 +409,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Sun, Sep 6, 2026 21:42+0000">2026-09-06</span>
+          Erstellt <span title="Mon, Sep 7, 2026 08:34+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
