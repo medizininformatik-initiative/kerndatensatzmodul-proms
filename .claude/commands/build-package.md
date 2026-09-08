@@ -1,5 +1,12 @@
 # Build Package Command
 
+> **⚠️ NICHT MEHR FÜR SIMPLIFIER-PUBLISHING VERWENDEN (seit 2027.0.0-ballot.rc3).**
+> Das maßgebliche Paket baut der go-publish-Workflow (IG Publisher); auf
+> Simplifier kommt exakt dieses Artefakt via `scripts/publish-simplifier.sh`.
+> Grund: Der Bake-Filter `status='active'` warf draft-Terminologie aus dem
+> Paket (rc3: MIDOS2-CS/VS fehlten → answerValueSet-Canonicals unauflösbar).
+> Dieser Command bleibt nur für lokale Paket-Inspektion/Debugging.
+
 ## Usage
 ```
 /build-package [OPTIONS]

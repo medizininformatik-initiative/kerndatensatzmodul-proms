@@ -63,9 +63,14 @@ Execute Phase 5: Merge and Tag Release
 4. **Inform about next steps**
    - GitHub Actions will automatically create a draft release
    - User needs to:
-     - Phase 6: Publish package on Simplifier and download .tgz
-     - Phase 7: Edit GitHub draft release, upload .tgz, and publish
-     - Phase 8: Export IG and upload to TMF SharePoint
+     - Phase 6: Formale Publikation via go-publish-Workflow (Dry-Run, dann
+       `publish=true` mit Environment-Freigabe)
+     - Phase 7: Edit GitHub draft release and publish
+     - Phase 8: Simplifier-Publish des **Publisher-Pakets**:
+       `scripts/publish-simplifier.sh` (lädt das package.tgz der
+       Pages-Publikation, HAPI-Smoke-Test, `fhir publish-package`).
+       NICHT mehr Firely Bake verwenden — der Bake-Filter status='active'
+       warf draft-Terminologie aus dem Paket (rc3: MIDOS2-Lücke).
 
 ### Safety
 
