@@ -37,6 +37,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   },
   "language" : "en",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural Ordering"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : false
@@ -64,7 +72,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "Center for Epidemiologic Studies Depression Scale (CES-D)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T09:54:25+00:00",
+  "date" : "2026-09-08T10:20:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -21,6 +21,14 @@
         "meta" : {
           "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
         },
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/version-algorithm",
+            "code" : "natural",
+            "display" : "Natural Ordering"
+          }
+        }],
         "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
         "version" : "2027.0.0-ballot.rc3",
         "status" : "active",
@@ -165,6 +173,14 @@
         "meta" : {
           "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
         },
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/version-algorithm",
+            "code" : "natural",
+            "display" : "Natural Ordering"
+          }
+        }],
         "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
         "version" : "2027.0.0-ballot.rc3",
         "status" : "active",
@@ -196,6 +212,14 @@
         "meta" : {
           "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
         },
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+          "valueCoding" : {
+            "system" : "http://hl7.org/fhir/version-algorithm",
+            "code" : "natural",
+            "display" : "Natural Ordering"
+          }
+        }],
         "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
         "version" : "2027.0.0-ballot.rc3",
         "status" : "active",
@@ -227,6 +251,14 @@
         }
       }],
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "natural",
+          "display" : "Natural Ordering"
+        }
+      },
+      {
         "extension" : [{
           "url" : "displayable",
           "valueBoolean" : true

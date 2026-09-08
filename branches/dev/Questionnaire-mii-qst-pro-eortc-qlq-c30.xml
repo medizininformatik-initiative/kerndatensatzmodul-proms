@@ -115,6 +115,13 @@
       <meta>
         <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"/>
       </meta>
+      <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+        <valueCoding>
+          <system value="http://hl7.org/fhir/version-algorithm"/>
+          <code value="natural"/>
+          <display value="Natural Ordering"/>
+        </valueCoding>
+      </extension>
       <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
       <version value="2027.0.0-ballot.rc3"/>
       <status value="active"/>
@@ -249,6 +256,13 @@
       <meta>
         <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"/>
       </meta>
+      <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+        <valueCoding>
+          <system value="http://hl7.org/fhir/version-algorithm"/>
+          <code value="natural"/>
+          <display value="Natural Ordering"/>
+        </valueCoding>
+      </extension>
       <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
       <version value="2027.0.0-ballot.rc3"/>
       <status value="active"/>
@@ -281,6 +295,13 @@
       <meta>
         <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"/>
       </meta>
+      <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+        <valueCoding>
+          <system value="http://hl7.org/fhir/version-algorithm"/>
+          <code value="natural"/>
+          <display value="Natural Ordering"/>
+        </valueCoding>
+      </extension>
       <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
       <version value="2027.0.0-ballot.rc3"/>
       <status value="active"/>
@@ -312,6 +333,13 @@
       </compose>
     </ValueSet>
   </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="natural"/>
+      <display value="Natural Ordering"/>
+    </valueCoding>
+  </extension>
   <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities">
     <extension url="displayable">
       <valueBoolean value="true"/>
@@ -334,7 +362,7 @@
   <title value="EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-08T09:54:25+00:00"/>
+  <date value="2026-09-08T10:20:08+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>

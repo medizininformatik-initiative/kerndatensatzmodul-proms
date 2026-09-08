@@ -36,6 +36,14 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
   },
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural Ordering"
+    }
+  },
+  {
     "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
     "valueBoolean" : true
   },
@@ -61,7 +69,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-08T09:54:25+00:00",
+  "date" : "2026-09-08T10:20:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

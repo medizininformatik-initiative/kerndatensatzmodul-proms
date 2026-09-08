@@ -168,6 +168,14 @@
         "status" : "generated"
       },
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "natural",
+          "display" : "Natural Ordering"
+        }
+      },
+      {
         "extension" : [{
           "url" : "displayable",
           "valueBoolean" : false

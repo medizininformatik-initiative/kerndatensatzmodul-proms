@@ -34,6 +34,14 @@ SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter sco
         "display" : "Creative Commons Attribution 4.0 International"
       }]
     }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural Ordering"
+    }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-unit",
   "version" : "2027.0.0-ballot.rc3",

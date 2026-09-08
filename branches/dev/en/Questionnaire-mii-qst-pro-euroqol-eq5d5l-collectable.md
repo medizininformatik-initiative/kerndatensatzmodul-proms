@@ -37,6 +37,14 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   "language" : "de",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural Ordering"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : true
@@ -65,7 +73,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T09:54:25+00:00",
+  "date" : "2026-09-08T10:20:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -117,6 +125,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "repeats" : false,
     "answerOption" : [{
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "1",
         "display" : "Ich habe keine Probleme herumzugehen",
         "_display" : {
@@ -136,6 +145,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "2",
         "display" : "Ich habe leichte Probleme herumzugehen",
         "_display" : {
@@ -155,6 +165,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "3",
         "display" : "Ich habe mäßige Probleme herumzugehen",
         "_display" : {
@@ -174,6 +185,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "4",
         "display" : "Ich habe große Probleme herumzugehen",
         "_display" : {
@@ -193,6 +205,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "5",
         "display" : "Ich bin nicht in der Lage herumzugehen",
         "_display" : {
@@ -212,6 +225,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "9",
         "display" : "Fehlender Wert",
         "_display" : {
@@ -252,6 +266,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "repeats" : false,
     "answerOption" : [{
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "1",
         "display" : "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
         "_display" : {
@@ -271,6 +286,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "2",
         "display" : "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
         "_display" : {
@@ -290,6 +306,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "3",
         "display" : "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
         "_display" : {
@@ -309,6 +326,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "4",
         "display" : "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
         "_display" : {
@@ -328,6 +346,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "5",
         "display" : "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
         "_display" : {
@@ -347,6 +366,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "9",
         "display" : "Fehlender Wert",
         "_display" : {
@@ -387,6 +407,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "repeats" : false,
     "answerOption" : [{
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "1",
         "display" : "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
         "_display" : {
@@ -406,6 +427,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "2",
         "display" : "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
         "_display" : {
@@ -425,6 +447,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "3",
         "display" : "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
         "_display" : {
@@ -444,6 +467,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "4",
         "display" : "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
         "_display" : {
@@ -463,6 +487,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "5",
         "display" : "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
         "_display" : {
@@ -482,6 +507,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "9",
         "display" : "Fehlender Wert",
         "_display" : {
@@ -522,6 +548,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "repeats" : false,
     "answerOption" : [{
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "1",
         "display" : "Ich habe keine Schmerzen oder Beschwerden",
         "_display" : {
@@ -541,6 +568,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "2",
         "display" : "Ich habe leichte Schmerzen oder Beschwerden",
         "_display" : {
@@ -560,6 +588,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "3",
         "display" : "Ich habe mäßige Schmerzen oder Beschwerden",
         "_display" : {
@@ -579,6 +608,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "4",
         "display" : "Ich habe starke Schmerzen oder Beschwerden",
         "_display" : {
@@ -598,6 +628,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "5",
         "display" : "Ich habe extreme Schmerzen oder Beschwerden",
         "_display" : {
@@ -617,6 +648,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "9",
         "display" : "Fehlender Wert",
         "_display" : {
@@ -657,6 +689,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "repeats" : false,
     "answerOption" : [{
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "1",
         "display" : "Ich bin nicht ängstlich oder deprimiert",
         "_display" : {
@@ -676,6 +709,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "2",
         "display" : "Ich bin ein wenig ängstlich oder deprimiert",
         "_display" : {
@@ -695,6 +729,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "3",
         "display" : "Ich bin mäßig ängstlich oder deprimiert",
         "_display" : {
@@ -714,6 +749,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "4",
         "display" : "Ich bin sehr ängstlich oder deprimiert",
         "_display" : {
@@ -733,6 +769,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "5",
         "display" : "Ich bin extrem ängstlich oder deprimiert",
         "_display" : {
@@ -752,6 +789,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
         "code" : "9",
         "display" : "Fehlender Wert",
         "_display" : {

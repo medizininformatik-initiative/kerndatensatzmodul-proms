@@ -149,7 +149,14 @@
       "ObservationDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
-      "ImplementationGuide"
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.contained",
+      "CapabilityStatement",
+      "ConceptMap",
+      "ImplementationGuide",
+      "Questionnaire",
+      "Questionnaire.contained",
+      "SearchParameter"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm|5.3.0-ballot-tc1": [
       "Questionnaire"

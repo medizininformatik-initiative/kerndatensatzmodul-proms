@@ -37,7 +37,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS EQ-5D Value Set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T09:54:25+00:00",
+  "date" : "2026-09-08T10:20:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -60,7 +60,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   }],
   "hierarchyMeaning" : "grouped-by",
   "content" : "complete",
-  "count" : 30,
+  "count" : 35,
   "property" : [{
     "code" : "eq-5d-vs-coefficient-de-de",
     "description" : "EQ-5D ValueSet Coefficient Germany",
@@ -660,6 +660,26 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
         "valueDecimal" : 0.321
       }]
     }]
+  },
+  {
+    "code" : "1",
+    "display" : "Level 1"
+  },
+  {
+    "code" : "2",
+    "display" : "Level 2"
+  },
+  {
+    "code" : "3",
+    "display" : "Level 3"
+  },
+  {
+    "code" : "4",
+    "display" : "Level 4"
+  },
+  {
+    "code" : "5",
+    "display" : "Level 5"
   }]
 }
 

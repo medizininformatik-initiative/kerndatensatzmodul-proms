@@ -22,12 +22,20 @@ Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the
 {
   "resourceType" : "ConceptMap",
   "id" : "mii-cm-pro-phq-9-linkid-migration",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural Ordering"
+    }
+  }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration",
   "version" : "2027.0.0-ballot.rc3",
   "title" : "MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T09:54:25+00:00",
+  "date" : "2026-09-08T10:20:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

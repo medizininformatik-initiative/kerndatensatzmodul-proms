@@ -19,6 +19,13 @@
       </coding>
     </valueCodeableConcept>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="natural"/>
+      <display value="Natural Ordering"/>
+    </valueCoding>
+  </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-questionnaire-capabilities"/>
   <version value="2027.0.0-ballot.rc3"/>
   <name value="MII_SP_PRO_Questionnaire_Capabilities"/>

@@ -24,6 +24,14 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
 {
   "resourceType" : "CapabilityStatement",
   "id" : "mii-cps-pro-capabilitystatement",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural Ordering"
+    }
+  }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement",
   "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_CPS_PRO_CapabilityStatement",
