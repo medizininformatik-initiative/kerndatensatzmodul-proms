@@ -31,9 +31,9 @@
 // ANSWER MODELLING: Fall B (docs/design/pcor-pss-instrumente.md, Abschnitt 4) — the wording of
 // the 5-point frequency scale (nie/selten/manchmal/oft/sehr oft) is part of the validated
 // instrument, so it is modelled as an own MII CodeSystem (mii-cs-pro-ssd-12-answers) with
-// ordinalValue properties (0-4), bound via answerValueSet (mii-vs-pro-ssd-12-answers) — NOT the
+// itemWeight properties (0-4), bound via answerValueSet (mii-vs-pro-ssd-12-answers) — NOT the
 // generic YesNoAnswerOptions RuleSet, NOT inline answerOption.
-// Note: in-form .ordinal() resolution from answerValueSet is engine-dependent; server-side
+// Note: in-form .weight() resolution from answerValueSet is engine-dependent; server-side
 // scoring via CQL is the authoritative channel (see IG scoring page, Kanal B).
 //
 // TERMINOLOGY: checked against LOINC 2.83 and SNOMED International 2026-05-01
@@ -78,7 +78,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "ssd12Sum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()"
 
 // Item 0: introductory display
 * item[0].linkId = "ssd12-intro"

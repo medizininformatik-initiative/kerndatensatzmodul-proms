@@ -5,7 +5,7 @@
   "name": "MII_CS_PRO_ISR_Z_Answers",
   "id": "mii-cs-pro-isr-z-answers",
   "title": "MII CS PRO ISR-Z Answers",
-  "description": "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
+  "description": "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
   "concept": [
     {
@@ -13,7 +13,7 @@
       "display": "trifft nicht zu",
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 0
         }
       ]
@@ -23,7 +23,7 @@
       "display": "trifft kaum zu",
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 1
         }
       ]
@@ -33,7 +33,7 @@
       "display": "trifft ziemlich zu",
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 2
         }
       ]
@@ -43,7 +43,7 @@
       "display": "trifft deutlich zu",
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 3
         }
       ]
@@ -53,7 +53,7 @@
       "display": "trifft extrem zu",
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 4
         }
       ]
@@ -63,9 +63,9 @@
   "language": "de",
   "property": [
     {
-      "code": "ordinalValue",
-      "uri": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-      "description": "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().avg()",
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().avg()",
       "type": "decimal"
     }
   ],

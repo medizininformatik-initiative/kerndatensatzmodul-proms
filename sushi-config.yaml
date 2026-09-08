@@ -249,9 +249,9 @@ extension:
 # check reject floating versions; the dependency checker proposes bumps).
 dependencies:
   # German base profiles (kerndatensatz-basis pins the same 1.5.4).
-  de.basisprofil.r4: 1.5.4
+  de.basisprofil.r4: 1.6.0
   # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.meta: 2027.0.0-ballot.rc3
   # R5→R4 cross-version extensions (kerndatensatz-basis pins the same 0.1.0).
   # basis needs it for R5 extensions — for example Encounter.plannedStartDate;
   # remove it if your module defines no R5 cross-version extensions.
@@ -279,9 +279,9 @@ dependencies:
   # ── Carried over from the source module (spec §2.1) ──────────────────────
   # Structured Data Capture — the backbone of this module: calculated
   # expressions, observation extraction, advanced rendering.
-  hl7.fhir.uv.sdc: 3.0.0
+  hl7.fhir.uv.sdc: 4.0.0
   # ISiK — supplies the medical-device (MDR) relevance extension.
-  de.gematik.isik: 5.1.1
+  de.gematik.isik: 6.0.0
 
 #
 #

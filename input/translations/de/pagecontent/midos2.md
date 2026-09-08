@@ -108,7 +108,7 @@ Die vollständige Ressource finden Sie in der [CodeSystem-Definition](CodeSystem
 
 ```
 // FHIR Variable: symptomSumScore
-%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.weight().sum()
 ```
 
 ### Literatur

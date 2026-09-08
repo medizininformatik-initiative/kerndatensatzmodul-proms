@@ -911,7 +911,7 @@
         {
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
+            "expression": "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         }

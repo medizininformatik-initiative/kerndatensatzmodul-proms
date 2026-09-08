@@ -104,7 +104,7 @@ ValueSet: MII_VS_PRO_EORTC_QLQ_C30_Scale7pt
 // Items: qlq30-q01 to qlq30-q05
 %pfRawScore = %resource.item
   .where(linkId in ('qlq30-q01' | 'qlq30-q02' | 'qlq30-q03' | 'qlq30-q04' | 'qlq30-q05'))
-  .answer.value.ordinal()
+  .answer.value.weight()
   .sum() / 5  // Mean
 
 // Function scale: Inverted transformation

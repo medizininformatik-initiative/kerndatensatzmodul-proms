@@ -150,7 +150,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Ueberhaupt nicht"
-* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[1].answerOption[0].extension.valueDecimal = 0
 ~~~~
 
@@ -161,9 +161,9 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 
 // CodeSystem
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
-* ^property[+].code = #ordinalValue
+* ^property[+].code = #itemWeight
 * ^property[=].type = #decimal
-* #bdi-bdi2-answer-1a ^property[+].code = #ordinalValue
+* #bdi-bdi2-answer-1a ^property[+].code = #itemWeight
 * #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
 
 // ValueSet Short Form
@@ -186,16 +186,16 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 
 ### With Inline answerOption:
 ~~~~
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
 ~~~~
 
 ### With CodeSystem + ValueSet:
 ~~~~
 CodeSystem: MyCodeSystem
-* ^property[+].code = #ordinalValue
+* ^property[+].code = #itemWeight
 * ^property[=].type = #decimal
-* #answer-code ^property[+].code = #ordinalValue
+* #answer-code ^property[+].code = #itemWeight
 * #answer-code ^property[=].valueDecimal = 0
 ~~~~
 

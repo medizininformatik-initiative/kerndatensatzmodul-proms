@@ -23,7 +23,7 @@ The PHQ-9 is a validated screening instrument for depression with nine items. Th
 - Displayable, Collectable, Populatable, Calculatable, Extractable, Domain-aligned
 
 **Key Features:**
-- Automatic score calculation via FHIRPath: `%resource.item.where(linkId.matches('^phq-.*-q0[1-9]$')).answer.value.ordinal().sum()`
+- Automatic score calculation via FHIRPath: `%resource.item.where(linkId.matches('^phq-.*-q0[1-9]$')).answer.value.weight().sum()`
 - Populatable capability for server-side calculations implemented
 - LOINC-coded answer options
 

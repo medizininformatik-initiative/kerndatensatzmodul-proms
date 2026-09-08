@@ -5,7 +5,7 @@
   "name": "MII_CS_PRO_SSD_12_Answers",
   "id": "mii-cs-pro-ssd-12-answers",
   "title": "MII CS PRO SSD-12 Answers",
-  "description": "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+  "description": "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
   "concept": [
     {
@@ -19,7 +19,7 @@
       ],
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 0
         }
       ]
@@ -35,7 +35,7 @@
       ],
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 1
         }
       ]
@@ -51,7 +51,7 @@
       ],
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 2
         }
       ]
@@ -67,7 +67,7 @@
       ],
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 3
         }
       ]
@@ -83,7 +83,7 @@
       ],
       "property": [
         {
-          "code": "ordinalValue",
+          "code": "itemWeight",
           "valueDecimal": 4
         }
       ]
@@ -93,9 +93,9 @@
   "language": "en",
   "property": [
     {
-      "code": "ordinalValue",
-      "uri": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-      "description": "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()",
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().sum()",
       "type": "decimal"
     }
   ],

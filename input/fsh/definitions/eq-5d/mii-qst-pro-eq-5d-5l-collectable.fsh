@@ -311,7 +311,7 @@ Usage: #definition
 * item[=].extension[=].valueCodeableConcept.coding.code = #survey
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
+* item[=].extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
 * item[=].readOnly = true
 
 // Populationsspezifischer Gesundheitsindikator (länderspezifisches EQ-5D Value Set)

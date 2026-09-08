@@ -7,15 +7,15 @@
 // License: frei verfügbar (public domain, no permission required)
 //
 // Design: English-primary displays (PHQ original) with German designations (PHQ-D).
-// ordinalValue property (0/1/2) declared on each concept so that SDC .ordinal() can resolve
+// itemWeight property (0/1/2) declared on each concept so that SDC .weight() can resolve
 // weights when this CS is expanded via mii-vs-pro-phq-15-answers as answerValueSet.
-// Note: in-form .ordinal() resolution from answerValueSet is engine-dependent;
+// Note: in-form .weight() resolution from answerValueSet is engine-dependent;
 // server-side scoring via CQL/StructureMap is tracked separately.
 
 CodeSystem: MII_CS_PRO_PHQ_15_Answers
 Id: mii-cs-pro-phq-15-answers
 Title: "MII CS PRO PHQ-15 Answers"
-Description: "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet."
+Description: "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet."
 
 * insert PR_CS_VS_Version
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers"
@@ -23,24 +23,24 @@ Description: "MII-controlled bother severity answer scale for PHQ-15 (0–2). En
 * ^content = #complete
 * ^language = #en
 
-// ordinalValue property for SDC ordinal scoring (uri matches HL7 ordinalValue extension)
-* ^property[+].code = #ordinalValue
-* ^property[=].uri = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* ^property[=].description = "Numerical ordinal value (0–2) for SDC calculatedExpression scoring via .ordinal().sum()"
+// itemWeight property for SDC ordinal scoring (uri matches HL7 itemWeight extension)
+* ^property[+].code = #itemWeight
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#itemWeight"
+* ^property[=].description = "Numerical ordinal value (0–2) for SDC calculatedExpression scoring via .weight().sum()"
 * ^property[=].type = #decimal
 
 * #not-bothered "Not bothered at all"
   * ^designation[+].language = #de
   * ^designation[=].value = "Nicht beeinträchtigt"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 0
 * #bothered-a-little "Bothered a little"
   * ^designation[+].language = #de
   * ^designation[=].value = "Wenig beeinträchtigt"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 1
 * #bothered-a-lot "Bothered a lot"
   * ^designation[+].language = #de
   * ^designation[=].value = "Stark beeinträchtigt"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 2

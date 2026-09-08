@@ -20,7 +20,7 @@ Die 12 Items decken **sechs ICF-Domänen** ab: Kognition, Mobilität, Selbstvers
 **Besonderheiten:**
 - linkIds `whodas-whodas12-q01` … `whodas-whodas12-q12`.
 - Antwortskala über `answerValueSet` (`mii-vs-pro-whodas-12-answer-list`); ordinale Gewichte (0–4) als Property auf den CodeSystem-Konzepten (`mii-cs-pro-whodas-12`).
-- Automatische Score-Berechnung via FHIRPath (`.ordinal().sum()`). Hinweis: `.ordinal()`-Auflösung aus `answerValueSet` ist engine-abhängig; robustes Scoring via CQL/Server.
+- Automatische Score-Berechnung via FHIRPath (`.weight().sum()`). Hinweis: `.weight()`-Auflösung aus `answerValueSet` ist engine-abhängig; robustes Scoring via CQL/Server.
 
 **Score-Repräsentation:**
 - **ObservationDefinition:** `mii-obsdef-pro-score-whodas12-simple-sum` — Wertebereich 0–48, SNOMED `715823002`, MII-Score-Catalogue `whodas12-simple-sum`, Richtung: höher = größere Beeinträchtigung.

@@ -5,9 +5,9 @@
 //
 // Design (consistent with PHQ-15): English-primary displays with German
 // designations (de). The 5 answer concepts (whodas12-answer-0..4) carry an
-// ordinalValue property (0-4) so that SDC .ordinal() can resolve weights when
+// itemWeight property (0-4) so that SDC .weight() can resolve weights when
 // this CS is expanded via mii-vs-pro-whodas-12-answer-list as answerValueSet.
-// Note: in-form .ordinal() resolution from answerValueSet is engine-dependent;
+// Note: in-form .weight() resolution from answerValueSet is engine-dependent;
 // server-side scoring via CQL/StructureMap is tracked separately.
 //
 // German item text and answer labels from the validated PCOR-MII Item Level
@@ -23,7 +23,7 @@
 CodeSystem: MII_CS_PRO_WHODAS_12
 Id: mii-cs-pro-whodas-12
 Title: "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes"
-Description: "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright)."
+Description: "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright)."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
 * insert PR_CS_VS_Version
 * ^status = #active
@@ -33,41 +33,41 @@ Description: "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item
 * ^language = #en
 * ^copyright = "WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0."
 
-// ordinalValue property for SDC ordinal scoring (uri matches HL7 ordinalValue extension)
-* ^property[+].code = #ordinalValue
-* ^property[=].uri = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* ^property[=].description = "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()"
+// itemWeight property for SDC ordinal scoring (uri matches HL7 itemWeight extension)
+* ^property[+].code = #itemWeight
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#itemWeight"
+* ^property[=].description = "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().sum()"
 * ^property[=].type = #decimal
 
 // ============================================================================
 // Answer codes: 5-point ordinal scale (0-4), shared by all 12 items
-// English primary display, German designation, ordinalValue weight.
+// English primary display, German designation, itemWeight weight.
 // ============================================================================
 
 * #whodas12-answer-0 "None"
   * ^designation[+].language = #de
   * ^designation[=].value = "keine"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 0
 * #whodas12-answer-1 "Mild"
   * ^designation[+].language = #de
   * ^designation[=].value = "geringe"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 1
 * #whodas12-answer-2 "Moderate"
   * ^designation[+].language = #de
   * ^designation[=].value = "mäßige"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 2
 * #whodas12-answer-3 "Severe"
   * ^designation[+].language = #de
   * ^designation[=].value = "starke"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 3
 * #whodas12-answer-4 "Extreme or cannot do"
   * ^designation[+].language = #de
   * ^designation[=].value = "sehr starke/nicht möglich"
-  * ^property[+].code = #ordinalValue
+  * ^property[+].code = #itemWeight
   * ^property[=].valueDecimal = 4
 
 // ============================================================================

@@ -46,7 +46,7 @@
       "valueExpression": {
         "name": "simpleSum",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^whodas-whodas12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.where(linkId.matches('^whodas-whodas12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }

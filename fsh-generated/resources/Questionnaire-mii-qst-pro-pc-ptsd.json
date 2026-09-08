@@ -46,7 +46,7 @@
       "valueExpression": {
         "name": "pcPtsdSum",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.weight().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }
@@ -63,7 +63,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 0
               }
             ],
@@ -76,7 +76,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 1
               }
             ],
@@ -97,7 +97,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 0
               }
             ],
@@ -110,7 +110,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 1
               }
             ],
@@ -131,7 +131,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 0
               }
             ],
@@ -144,7 +144,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 1
               }
             ],
@@ -165,7 +165,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 0
               }
             ],
@@ -178,7 +178,7 @@
           "valueCoding": {
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
                 "valueDecimal": 1
               }
             ],

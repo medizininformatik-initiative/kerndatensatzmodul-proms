@@ -31,7 +31,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
 
 * item[+].linkId = "PROMIS-Depression.Description"
 * item[=].type = #display
@@ -58,7 +58,7 @@ Usage: #definition
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -66,7 +66,7 @@ Usage: #definition
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -74,7 +74,7 @@ Usage: #definition
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -82,7 +82,7 @@ Usage: #definition
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -90,7 +90,7 @@ Usage: #definition
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Item 2: I felt helpless
@@ -109,7 +109,7 @@ Usage: #definition
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -117,7 +117,7 @@ Usage: #definition
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -125,7 +125,7 @@ Usage: #definition
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -133,7 +133,7 @@ Usage: #definition
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -141,7 +141,7 @@ Usage: #definition
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Item 3: I felt depressed
@@ -160,7 +160,7 @@ Usage: #definition
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -168,7 +168,7 @@ Usage: #definition
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -176,7 +176,7 @@ Usage: #definition
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -184,7 +184,7 @@ Usage: #definition
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -192,7 +192,7 @@ Usage: #definition
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Item 4: I felt hopeless
@@ -211,7 +211,7 @@ Usage: #definition
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[=].valueString = "Nie"
-* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 1
 * item[=].answerOption[1].valueCoding = $LNC#LA10066-1 "Rarely"
 * item[=].answerOption[1].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -219,7 +219,7 @@ Usage: #definition
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[1].valueCoding.display.extension[=].extension[=].valueString = "Selten"
-* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[1].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[1].extension.valueDecimal = 2
 * item[=].answerOption[2].valueCoding = $LNC#LA10082-8 "Sometimes"
 * item[=].answerOption[2].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -227,7 +227,7 @@ Usage: #definition
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[2].valueCoding.display.extension[=].extension[=].valueString = "Manchmal"
-* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[2].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[2].extension.valueDecimal = 3
 * item[=].answerOption[3].valueCoding = $LNC#LA10044-8 "Often"
 * item[=].answerOption[3].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -235,7 +235,7 @@ Usage: #definition
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[3].valueCoding.display.extension[=].extension[=].valueString = "Oft"
-* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[3].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[3].extension.valueDecimal = 4
 * item[=].answerOption[4].valueCoding = $LNC#LA9933-8 "Always"
 * item[=].answerOption[4].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -243,7 +243,7 @@ Usage: #definition
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueCode = #de
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[4].valueCoding.display.extension[=].extension[=].valueString = "Immer"
-* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[=].answerOption[4].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[4].extension.valueDecimal = 5
 
 // Raw Score Item

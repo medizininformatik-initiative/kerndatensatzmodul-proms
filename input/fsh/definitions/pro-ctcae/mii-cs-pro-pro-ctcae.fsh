@@ -35,7 +35,7 @@ Description: "CodeSystem for the Patient-Reported Outcomes version of the Common
 
 // ============================================================================
 // SECTION 1: Answer codes — Frequency scale (0-4)
-// Scoring weights applied at Questionnaire level via ordinalValue extensions
+// Scoring weights applied at Questionnaire level via itemWeight extensions
 // ============================================================================
 
 * #proctcae-frequency-0 "Never"

@@ -11,7 +11,7 @@
 // item-bank alignment (PCOR-MII xba, sleep/fatigue from PHQ-9 0–3 block) is tracked separately.
 //
 // Answer modelling: items reference mii-vs-pro-phq-15-answers via answerValueSet. Ordinal weights
-// (0/1/2) are declared as properties on mii-cs-pro-phq-15-answers concepts. In-form .ordinal()
+// (0/1/2) are declared as properties on mii-cs-pro-phq-15-answers concepts. In-form .weight()
 // resolution from answerValueSet is engine-dependent; scoring via CQL/server is verified separately.
 
 Instance: mii-qst-pro-phq-15
@@ -41,7 +41,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "phq15Sum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.weight().sum()"
 
 // Item 0: Introductory display item
 * item[0].linkId = "PHQ-15.Description"

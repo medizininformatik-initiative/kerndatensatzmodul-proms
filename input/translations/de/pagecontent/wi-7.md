@@ -21,7 +21,7 @@ Das Paper beschreibt zusätzlich zwei Subskalen (Illness Conviction, Illness Wor
 **Besonderheiten:**
 - linkIds `wi7-q01`…`wi7-q07`, Score-Item `wi7-score-total`.
 - Antworten über das geteilte RuleSet `YesNoAnswerOptions` mit SNOMED CT `373067005`/`373066001` und ordinalen Gewichten 0/1 — dieselbe Skala wie SCOFF und PC-PTSD.
-- Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()`.
+- Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.weight().sum()`.
 - Weder LOINC noch SNOMED CT führen einen Code für das Instrument selbst (geprüft); Kodierung über den MII-Questionnaire-Katalog.
 
 Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-wi-7.html).

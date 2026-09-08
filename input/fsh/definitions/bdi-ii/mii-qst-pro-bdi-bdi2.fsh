@@ -105,7 +105,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "bdiScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.weight().sum()"
 
 // Calculated total score
 * item[+].linkId = "bdi-bdi2-score-total"

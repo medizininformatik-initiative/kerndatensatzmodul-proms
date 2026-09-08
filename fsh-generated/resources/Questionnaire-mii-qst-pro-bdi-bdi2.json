@@ -55,7 +55,7 @@
       "valueExpression": {
         "name": "bdiScore",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(type = 'choice').answer.value.ordinal().sum()"
+        "expression": "%resource.item.where(type = 'choice').answer.value.weight().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }

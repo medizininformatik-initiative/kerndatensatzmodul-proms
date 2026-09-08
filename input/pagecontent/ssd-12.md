@@ -22,9 +22,9 @@ Twelve items cover the three DSM-5 B criteria (cognitive, affective, behavioural
 
 **Implementation notes:**
 - linkIds `ssd12-q01`…`ssd12-q12`, score item `ssd12-score-total`.
-- A dedicated, instrument-specific answer scale: MII CodeSystem `mii-cs-pro-ssd-12-answers` with an `ordinalValue` property 0–4, bound via `answerValueSet` (`mii-vs-pro-ssd-12-answers`). The wording of the response levels is part of the validated instrument and is therefore not replaced by a generic scale.
+- A dedicated, instrument-specific answer scale: MII CodeSystem `mii-cs-pro-ssd-12-answers` with an `itemWeight` property 0–4, bound via `answerValueSet` (`mii-vs-pro-ssd-12-answers`). The wording of the response levels is part of the validated instrument and is therefore not replaced by a generic scale.
 - The `display` values of the answer concepts are **German** (English labels as `designation`), matching the language of the questionnaire — see the note below.
-- Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()`.
+- Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()`.
 - Neither LOINC nor SNOMED CT carries a code for the SSD-12. The LOINC codes `94027-0`/`94028-8` concern generic DSM-5 SSD concepts and were deliberately **not** used, so as not to suggest false coverage.
 
 > **Note on display language:** in a resource with `language = #de` the FHIR validator expects the German display in `valueCoding`. An English display makes the entire `answerValueSet` check fail — with the misleading message that the value is not in the value set.

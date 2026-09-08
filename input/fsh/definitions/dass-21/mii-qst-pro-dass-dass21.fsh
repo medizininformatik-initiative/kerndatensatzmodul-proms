@@ -22,17 +22,17 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "depressionRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^dass-dass21-q(03|05|10|13|16|17|21)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^dass-dass21-q(03|05|10|13|16|17|21)$')).answer.value.weight().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "anxietyRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^dass-dass21-q(02|04|07|09|15|19|20)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^dass-dass21-q(02|04|07|09|15|19|20)$')).answer.value.weight().sum()"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "stressRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^dass-dass21-q(01|06|08|11|12|14|18)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^dass-dass21-q(01|06|08|11|12|14|18)$')).answer.value.weight().sum()"
 
 // ============================================================================
 // Display item: Instructions
@@ -68,7 +68,7 @@ Usage: #definition
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[1].answerOption[0].extension.url = $hl7-ordinal-value
+* item[1].answerOption[0].extension.url = $hl7-item-weight
 * item[1].answerOption[0].extension.valueDecimal = 0
 * item[1].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[1].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -76,7 +76,7 @@ Usage: #definition
 * item[1].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[1].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[1].answerOption[1].extension.url = $hl7-ordinal-value
+* item[1].answerOption[1].extension.url = $hl7-item-weight
 * item[1].answerOption[1].extension.valueDecimal = 1
 * item[1].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[1].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -84,7 +84,7 @@ Usage: #definition
 * item[1].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[1].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[1].answerOption[2].extension.url = $hl7-ordinal-value
+* item[1].answerOption[2].extension.url = $hl7-item-weight
 * item[1].answerOption[2].extension.valueDecimal = 2
 * item[1].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[1].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -92,7 +92,7 @@ Usage: #definition
 * item[1].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[1].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[1].answerOption[3].extension.url = $hl7-ordinal-value
+* item[1].answerOption[3].extension.url = $hl7-item-weight
 * item[1].answerOption[3].extension.valueDecimal = 3
 
 // Q2 - Anxiety: I was aware of dryness of my mouth
@@ -112,7 +112,7 @@ Usage: #definition
 * item[2].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[2].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[2].answerOption[0].extension.url = $hl7-ordinal-value
+* item[2].answerOption[0].extension.url = $hl7-item-weight
 * item[2].answerOption[0].extension.valueDecimal = 0
 * item[2].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[2].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -120,7 +120,7 @@ Usage: #definition
 * item[2].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[2].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[2].answerOption[1].extension.url = $hl7-ordinal-value
+* item[2].answerOption[1].extension.url = $hl7-item-weight
 * item[2].answerOption[1].extension.valueDecimal = 1
 * item[2].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[2].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -128,7 +128,7 @@ Usage: #definition
 * item[2].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[2].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[2].answerOption[2].extension.url = $hl7-ordinal-value
+* item[2].answerOption[2].extension.url = $hl7-item-weight
 * item[2].answerOption[2].extension.valueDecimal = 2
 * item[2].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[2].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -136,7 +136,7 @@ Usage: #definition
 * item[2].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[2].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[2].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[2].answerOption[3].extension.url = $hl7-ordinal-value
+* item[2].answerOption[3].extension.url = $hl7-item-weight
 * item[2].answerOption[3].extension.valueDecimal = 3
 
 // Q3 - Depression: I couldn't seem to experience any positive feeling at all
@@ -156,7 +156,7 @@ Usage: #definition
 * item[3].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[3].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[3].answerOption[0].extension.url = $hl7-ordinal-value
+* item[3].answerOption[0].extension.url = $hl7-item-weight
 * item[3].answerOption[0].extension.valueDecimal = 0
 * item[3].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[3].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -164,7 +164,7 @@ Usage: #definition
 * item[3].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[3].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[3].answerOption[1].extension.url = $hl7-ordinal-value
+* item[3].answerOption[1].extension.url = $hl7-item-weight
 * item[3].answerOption[1].extension.valueDecimal = 1
 * item[3].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[3].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -172,7 +172,7 @@ Usage: #definition
 * item[3].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[3].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[3].answerOption[2].extension.url = $hl7-ordinal-value
+* item[3].answerOption[2].extension.url = $hl7-item-weight
 * item[3].answerOption[2].extension.valueDecimal = 2
 * item[3].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[3].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -180,7 +180,7 @@ Usage: #definition
 * item[3].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[3].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[3].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[3].answerOption[3].extension.url = $hl7-ordinal-value
+* item[3].answerOption[3].extension.url = $hl7-item-weight
 * item[3].answerOption[3].extension.valueDecimal = 3
 
 // Q4 - Anxiety: I experienced breathing difficulty
@@ -200,7 +200,7 @@ Usage: #definition
 * item[4].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[4].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[4].answerOption[0].extension.url = $hl7-ordinal-value
+* item[4].answerOption[0].extension.url = $hl7-item-weight
 * item[4].answerOption[0].extension.valueDecimal = 0
 * item[4].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[4].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -208,7 +208,7 @@ Usage: #definition
 * item[4].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[4].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[4].answerOption[1].extension.url = $hl7-ordinal-value
+* item[4].answerOption[1].extension.url = $hl7-item-weight
 * item[4].answerOption[1].extension.valueDecimal = 1
 * item[4].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[4].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -216,7 +216,7 @@ Usage: #definition
 * item[4].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[4].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[4].answerOption[2].extension.url = $hl7-ordinal-value
+* item[4].answerOption[2].extension.url = $hl7-item-weight
 * item[4].answerOption[2].extension.valueDecimal = 2
 * item[4].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[4].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -224,7 +224,7 @@ Usage: #definition
 * item[4].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[4].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[4].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[4].answerOption[3].extension.url = $hl7-ordinal-value
+* item[4].answerOption[3].extension.url = $hl7-item-weight
 * item[4].answerOption[3].extension.valueDecimal = 3
 
 // Q5 - Depression: I found it difficult to work up the initiative to do things
@@ -244,7 +244,7 @@ Usage: #definition
 * item[5].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[5].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[5].answerOption[0].extension.url = $hl7-ordinal-value
+* item[5].answerOption[0].extension.url = $hl7-item-weight
 * item[5].answerOption[0].extension.valueDecimal = 0
 * item[5].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[5].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -252,7 +252,7 @@ Usage: #definition
 * item[5].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[5].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[5].answerOption[1].extension.url = $hl7-ordinal-value
+* item[5].answerOption[1].extension.url = $hl7-item-weight
 * item[5].answerOption[1].extension.valueDecimal = 1
 * item[5].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[5].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -260,7 +260,7 @@ Usage: #definition
 * item[5].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[5].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[5].answerOption[2].extension.url = $hl7-ordinal-value
+* item[5].answerOption[2].extension.url = $hl7-item-weight
 * item[5].answerOption[2].extension.valueDecimal = 2
 * item[5].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[5].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -268,7 +268,7 @@ Usage: #definition
 * item[5].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[5].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[5].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[5].answerOption[3].extension.url = $hl7-ordinal-value
+* item[5].answerOption[3].extension.url = $hl7-item-weight
 * item[5].answerOption[3].extension.valueDecimal = 3
 
 // Q6 - Stress: I tended to over-react to situations
@@ -288,7 +288,7 @@ Usage: #definition
 * item[6].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[6].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[6].answerOption[0].extension.url = $hl7-ordinal-value
+* item[6].answerOption[0].extension.url = $hl7-item-weight
 * item[6].answerOption[0].extension.valueDecimal = 0
 * item[6].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[6].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -296,7 +296,7 @@ Usage: #definition
 * item[6].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[6].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[6].answerOption[1].extension.url = $hl7-ordinal-value
+* item[6].answerOption[1].extension.url = $hl7-item-weight
 * item[6].answerOption[1].extension.valueDecimal = 1
 * item[6].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[6].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -304,7 +304,7 @@ Usage: #definition
 * item[6].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[6].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[6].answerOption[2].extension.url = $hl7-ordinal-value
+* item[6].answerOption[2].extension.url = $hl7-item-weight
 * item[6].answerOption[2].extension.valueDecimal = 2
 * item[6].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[6].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -312,7 +312,7 @@ Usage: #definition
 * item[6].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[6].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[6].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[6].answerOption[3].extension.url = $hl7-ordinal-value
+* item[6].answerOption[3].extension.url = $hl7-item-weight
 * item[6].answerOption[3].extension.valueDecimal = 3
 
 // Q7 - Anxiety: I experienced trembling (e.g., in the hands)
@@ -332,7 +332,7 @@ Usage: #definition
 * item[7].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[7].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[7].answerOption[0].extension.url = $hl7-ordinal-value
+* item[7].answerOption[0].extension.url = $hl7-item-weight
 * item[7].answerOption[0].extension.valueDecimal = 0
 * item[7].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[7].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -340,7 +340,7 @@ Usage: #definition
 * item[7].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[7].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[7].answerOption[1].extension.url = $hl7-ordinal-value
+* item[7].answerOption[1].extension.url = $hl7-item-weight
 * item[7].answerOption[1].extension.valueDecimal = 1
 * item[7].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[7].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -348,7 +348,7 @@ Usage: #definition
 * item[7].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[7].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[7].answerOption[2].extension.url = $hl7-ordinal-value
+* item[7].answerOption[2].extension.url = $hl7-item-weight
 * item[7].answerOption[2].extension.valueDecimal = 2
 * item[7].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[7].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -356,7 +356,7 @@ Usage: #definition
 * item[7].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[7].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[7].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[7].answerOption[3].extension.url = $hl7-ordinal-value
+* item[7].answerOption[3].extension.url = $hl7-item-weight
 * item[7].answerOption[3].extension.valueDecimal = 3
 
 // Q8 - Stress: I felt that I was using a lot of nervous energy
@@ -376,7 +376,7 @@ Usage: #definition
 * item[8].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[8].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[8].answerOption[0].extension.url = $hl7-ordinal-value
+* item[8].answerOption[0].extension.url = $hl7-item-weight
 * item[8].answerOption[0].extension.valueDecimal = 0
 * item[8].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[8].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -384,7 +384,7 @@ Usage: #definition
 * item[8].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[8].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[8].answerOption[1].extension.url = $hl7-ordinal-value
+* item[8].answerOption[1].extension.url = $hl7-item-weight
 * item[8].answerOption[1].extension.valueDecimal = 1
 * item[8].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[8].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -392,7 +392,7 @@ Usage: #definition
 * item[8].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[8].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[8].answerOption[2].extension.url = $hl7-ordinal-value
+* item[8].answerOption[2].extension.url = $hl7-item-weight
 * item[8].answerOption[2].extension.valueDecimal = 2
 * item[8].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[8].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -400,7 +400,7 @@ Usage: #definition
 * item[8].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[8].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[8].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[8].answerOption[3].extension.url = $hl7-ordinal-value
+* item[8].answerOption[3].extension.url = $hl7-item-weight
 * item[8].answerOption[3].extension.valueDecimal = 3
 
 // Q9 - Anxiety: I was worried about situations in which I might panic and make a fool of myself
@@ -420,7 +420,7 @@ Usage: #definition
 * item[9].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[9].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[9].answerOption[0].extension.url = $hl7-ordinal-value
+* item[9].answerOption[0].extension.url = $hl7-item-weight
 * item[9].answerOption[0].extension.valueDecimal = 0
 * item[9].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[9].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -428,7 +428,7 @@ Usage: #definition
 * item[9].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[9].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[9].answerOption[1].extension.url = $hl7-ordinal-value
+* item[9].answerOption[1].extension.url = $hl7-item-weight
 * item[9].answerOption[1].extension.valueDecimal = 1
 * item[9].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[9].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -436,7 +436,7 @@ Usage: #definition
 * item[9].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[9].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[9].answerOption[2].extension.url = $hl7-ordinal-value
+* item[9].answerOption[2].extension.url = $hl7-item-weight
 * item[9].answerOption[2].extension.valueDecimal = 2
 * item[9].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[9].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -444,7 +444,7 @@ Usage: #definition
 * item[9].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[9].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[9].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[9].answerOption[3].extension.url = $hl7-ordinal-value
+* item[9].answerOption[3].extension.url = $hl7-item-weight
 * item[9].answerOption[3].extension.valueDecimal = 3
 
 // Q10 - Depression: I felt that I had nothing to look forward to
@@ -464,7 +464,7 @@ Usage: #definition
 * item[10].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[10].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[10].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[10].answerOption[0].extension.url = $hl7-ordinal-value
+* item[10].answerOption[0].extension.url = $hl7-item-weight
 * item[10].answerOption[0].extension.valueDecimal = 0
 * item[10].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[10].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -472,7 +472,7 @@ Usage: #definition
 * item[10].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[10].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[10].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[10].answerOption[1].extension.url = $hl7-ordinal-value
+* item[10].answerOption[1].extension.url = $hl7-item-weight
 * item[10].answerOption[1].extension.valueDecimal = 1
 * item[10].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[10].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -480,7 +480,7 @@ Usage: #definition
 * item[10].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[10].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[10].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[10].answerOption[2].extension.url = $hl7-ordinal-value
+* item[10].answerOption[2].extension.url = $hl7-item-weight
 * item[10].answerOption[2].extension.valueDecimal = 2
 * item[10].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[10].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -488,7 +488,7 @@ Usage: #definition
 * item[10].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[10].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[10].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[10].answerOption[3].extension.url = $hl7-ordinal-value
+* item[10].answerOption[3].extension.url = $hl7-item-weight
 * item[10].answerOption[3].extension.valueDecimal = 3
 
 // Q11 - Stress: I found myself getting agitated
@@ -508,7 +508,7 @@ Usage: #definition
 * item[11].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[11].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[11].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[11].answerOption[0].extension.url = $hl7-ordinal-value
+* item[11].answerOption[0].extension.url = $hl7-item-weight
 * item[11].answerOption[0].extension.valueDecimal = 0
 * item[11].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[11].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -516,7 +516,7 @@ Usage: #definition
 * item[11].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[11].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[11].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[11].answerOption[1].extension.url = $hl7-ordinal-value
+* item[11].answerOption[1].extension.url = $hl7-item-weight
 * item[11].answerOption[1].extension.valueDecimal = 1
 * item[11].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[11].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -524,7 +524,7 @@ Usage: #definition
 * item[11].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[11].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[11].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[11].answerOption[2].extension.url = $hl7-ordinal-value
+* item[11].answerOption[2].extension.url = $hl7-item-weight
 * item[11].answerOption[2].extension.valueDecimal = 2
 * item[11].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[11].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -532,7 +532,7 @@ Usage: #definition
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[11].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[11].answerOption[3].extension.url = $hl7-ordinal-value
+* item[11].answerOption[3].extension.url = $hl7-item-weight
 * item[11].answerOption[3].extension.valueDecimal = 3
 
 // Q12 - Stress: I found it difficult to relax
@@ -552,7 +552,7 @@ Usage: #definition
 * item[12].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[12].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[12].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[12].answerOption[0].extension.url = $hl7-ordinal-value
+* item[12].answerOption[0].extension.url = $hl7-item-weight
 * item[12].answerOption[0].extension.valueDecimal = 0
 * item[12].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[12].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -560,7 +560,7 @@ Usage: #definition
 * item[12].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[12].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[12].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[12].answerOption[1].extension.url = $hl7-ordinal-value
+* item[12].answerOption[1].extension.url = $hl7-item-weight
 * item[12].answerOption[1].extension.valueDecimal = 1
 * item[12].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[12].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -568,7 +568,7 @@ Usage: #definition
 * item[12].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[12].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[12].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[12].answerOption[2].extension.url = $hl7-ordinal-value
+* item[12].answerOption[2].extension.url = $hl7-item-weight
 * item[12].answerOption[2].extension.valueDecimal = 2
 * item[12].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[12].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -576,7 +576,7 @@ Usage: #definition
 * item[12].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[12].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[12].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[12].answerOption[3].extension.url = $hl7-ordinal-value
+* item[12].answerOption[3].extension.url = $hl7-item-weight
 * item[12].answerOption[3].extension.valueDecimal = 3
 
 // Q13 - Depression: I felt down-hearted and blue
@@ -596,7 +596,7 @@ Usage: #definition
 * item[13].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[13].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[13].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[13].answerOption[0].extension.url = $hl7-ordinal-value
+* item[13].answerOption[0].extension.url = $hl7-item-weight
 * item[13].answerOption[0].extension.valueDecimal = 0
 * item[13].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[13].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -604,7 +604,7 @@ Usage: #definition
 * item[13].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[13].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[13].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[13].answerOption[1].extension.url = $hl7-ordinal-value
+* item[13].answerOption[1].extension.url = $hl7-item-weight
 * item[13].answerOption[1].extension.valueDecimal = 1
 * item[13].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[13].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -612,7 +612,7 @@ Usage: #definition
 * item[13].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[13].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[13].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[13].answerOption[2].extension.url = $hl7-ordinal-value
+* item[13].answerOption[2].extension.url = $hl7-item-weight
 * item[13].answerOption[2].extension.valueDecimal = 2
 * item[13].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[13].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -620,7 +620,7 @@ Usage: #definition
 * item[13].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[13].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[13].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[13].answerOption[3].extension.url = $hl7-ordinal-value
+* item[13].answerOption[3].extension.url = $hl7-item-weight
 * item[13].answerOption[3].extension.valueDecimal = 3
 
 // Q14 - Stress: I was intolerant of anything that kept me from getting on with what I was doing
@@ -640,7 +640,7 @@ Usage: #definition
 * item[14].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[14].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[14].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[14].answerOption[0].extension.url = $hl7-ordinal-value
+* item[14].answerOption[0].extension.url = $hl7-item-weight
 * item[14].answerOption[0].extension.valueDecimal = 0
 * item[14].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[14].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -648,7 +648,7 @@ Usage: #definition
 * item[14].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[14].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[14].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[14].answerOption[1].extension.url = $hl7-ordinal-value
+* item[14].answerOption[1].extension.url = $hl7-item-weight
 * item[14].answerOption[1].extension.valueDecimal = 1
 * item[14].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[14].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -656,7 +656,7 @@ Usage: #definition
 * item[14].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[14].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[14].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[14].answerOption[2].extension.url = $hl7-ordinal-value
+* item[14].answerOption[2].extension.url = $hl7-item-weight
 * item[14].answerOption[2].extension.valueDecimal = 2
 * item[14].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[14].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -664,7 +664,7 @@ Usage: #definition
 * item[14].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[14].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[14].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[14].answerOption[3].extension.url = $hl7-ordinal-value
+* item[14].answerOption[3].extension.url = $hl7-item-weight
 * item[14].answerOption[3].extension.valueDecimal = 3
 
 // Q15 - Anxiety: I felt I was close to panic
@@ -684,7 +684,7 @@ Usage: #definition
 * item[15].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[15].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[15].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[15].answerOption[0].extension.url = $hl7-ordinal-value
+* item[15].answerOption[0].extension.url = $hl7-item-weight
 * item[15].answerOption[0].extension.valueDecimal = 0
 * item[15].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[15].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -692,7 +692,7 @@ Usage: #definition
 * item[15].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[15].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[15].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[15].answerOption[1].extension.url = $hl7-ordinal-value
+* item[15].answerOption[1].extension.url = $hl7-item-weight
 * item[15].answerOption[1].extension.valueDecimal = 1
 * item[15].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[15].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -700,7 +700,7 @@ Usage: #definition
 * item[15].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[15].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[15].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[15].answerOption[2].extension.url = $hl7-ordinal-value
+* item[15].answerOption[2].extension.url = $hl7-item-weight
 * item[15].answerOption[2].extension.valueDecimal = 2
 * item[15].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[15].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -708,7 +708,7 @@ Usage: #definition
 * item[15].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[15].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[15].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[15].answerOption[3].extension.url = $hl7-ordinal-value
+* item[15].answerOption[3].extension.url = $hl7-item-weight
 * item[15].answerOption[3].extension.valueDecimal = 3
 
 // Q16 - Depression: I was unable to become enthusiastic about anything
@@ -728,7 +728,7 @@ Usage: #definition
 * item[16].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[16].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[16].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[16].answerOption[0].extension.url = $hl7-ordinal-value
+* item[16].answerOption[0].extension.url = $hl7-item-weight
 * item[16].answerOption[0].extension.valueDecimal = 0
 * item[16].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[16].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -736,7 +736,7 @@ Usage: #definition
 * item[16].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[16].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[16].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[16].answerOption[1].extension.url = $hl7-ordinal-value
+* item[16].answerOption[1].extension.url = $hl7-item-weight
 * item[16].answerOption[1].extension.valueDecimal = 1
 * item[16].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[16].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -744,7 +744,7 @@ Usage: #definition
 * item[16].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[16].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[16].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[16].answerOption[2].extension.url = $hl7-ordinal-value
+* item[16].answerOption[2].extension.url = $hl7-item-weight
 * item[16].answerOption[2].extension.valueDecimal = 2
 * item[16].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[16].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -752,7 +752,7 @@ Usage: #definition
 * item[16].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[16].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[16].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[16].answerOption[3].extension.url = $hl7-ordinal-value
+* item[16].answerOption[3].extension.url = $hl7-item-weight
 * item[16].answerOption[3].extension.valueDecimal = 3
 
 // Q17 - Depression: I felt I wasn't worth much as a person
@@ -772,7 +772,7 @@ Usage: #definition
 * item[17].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[17].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[17].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[17].answerOption[0].extension.url = $hl7-ordinal-value
+* item[17].answerOption[0].extension.url = $hl7-item-weight
 * item[17].answerOption[0].extension.valueDecimal = 0
 * item[17].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[17].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -780,7 +780,7 @@ Usage: #definition
 * item[17].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[17].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[17].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[17].answerOption[1].extension.url = $hl7-ordinal-value
+* item[17].answerOption[1].extension.url = $hl7-item-weight
 * item[17].answerOption[1].extension.valueDecimal = 1
 * item[17].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[17].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -788,7 +788,7 @@ Usage: #definition
 * item[17].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[17].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[17].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[17].answerOption[2].extension.url = $hl7-ordinal-value
+* item[17].answerOption[2].extension.url = $hl7-item-weight
 * item[17].answerOption[2].extension.valueDecimal = 2
 * item[17].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[17].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -796,7 +796,7 @@ Usage: #definition
 * item[17].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[17].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[17].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[17].answerOption[3].extension.url = $hl7-ordinal-value
+* item[17].answerOption[3].extension.url = $hl7-item-weight
 * item[17].answerOption[3].extension.valueDecimal = 3
 
 // Q18 - Stress: I felt that I was rather touchy
@@ -816,7 +816,7 @@ Usage: #definition
 * item[18].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[18].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[18].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[18].answerOption[0].extension.url = $hl7-ordinal-value
+* item[18].answerOption[0].extension.url = $hl7-item-weight
 * item[18].answerOption[0].extension.valueDecimal = 0
 * item[18].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[18].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -824,7 +824,7 @@ Usage: #definition
 * item[18].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[18].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[18].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[18].answerOption[1].extension.url = $hl7-ordinal-value
+* item[18].answerOption[1].extension.url = $hl7-item-weight
 * item[18].answerOption[1].extension.valueDecimal = 1
 * item[18].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[18].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -832,7 +832,7 @@ Usage: #definition
 * item[18].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[18].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[18].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[18].answerOption[2].extension.url = $hl7-ordinal-value
+* item[18].answerOption[2].extension.url = $hl7-item-weight
 * item[18].answerOption[2].extension.valueDecimal = 2
 * item[18].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[18].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -840,7 +840,7 @@ Usage: #definition
 * item[18].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[18].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[18].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[18].answerOption[3].extension.url = $hl7-ordinal-value
+* item[18].answerOption[3].extension.url = $hl7-item-weight
 * item[18].answerOption[3].extension.valueDecimal = 3
 
 // Q19 - Anxiety: I was aware of the action of my heart in the absence of physical exertion
@@ -860,7 +860,7 @@ Usage: #definition
 * item[19].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[19].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[19].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[19].answerOption[0].extension.url = $hl7-ordinal-value
+* item[19].answerOption[0].extension.url = $hl7-item-weight
 * item[19].answerOption[0].extension.valueDecimal = 0
 * item[19].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[19].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -868,7 +868,7 @@ Usage: #definition
 * item[19].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[19].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[19].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[19].answerOption[1].extension.url = $hl7-ordinal-value
+* item[19].answerOption[1].extension.url = $hl7-item-weight
 * item[19].answerOption[1].extension.valueDecimal = 1
 * item[19].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[19].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -876,7 +876,7 @@ Usage: #definition
 * item[19].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[19].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[19].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[19].answerOption[2].extension.url = $hl7-ordinal-value
+* item[19].answerOption[2].extension.url = $hl7-item-weight
 * item[19].answerOption[2].extension.valueDecimal = 2
 * item[19].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[19].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -884,7 +884,7 @@ Usage: #definition
 * item[19].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[19].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[19].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[19].answerOption[3].extension.url = $hl7-ordinal-value
+* item[19].answerOption[3].extension.url = $hl7-item-weight
 * item[19].answerOption[3].extension.valueDecimal = 3
 
 // Q20 - Anxiety: I felt scared without any good reason
@@ -904,7 +904,7 @@ Usage: #definition
 * item[20].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[20].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[20].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[20].answerOption[0].extension.url = $hl7-ordinal-value
+* item[20].answerOption[0].extension.url = $hl7-item-weight
 * item[20].answerOption[0].extension.valueDecimal = 0
 * item[20].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[20].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -912,7 +912,7 @@ Usage: #definition
 * item[20].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[20].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[20].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[20].answerOption[1].extension.url = $hl7-ordinal-value
+* item[20].answerOption[1].extension.url = $hl7-item-weight
 * item[20].answerOption[1].extension.valueDecimal = 1
 * item[20].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[20].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -920,7 +920,7 @@ Usage: #definition
 * item[20].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[20].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[20].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[20].answerOption[2].extension.url = $hl7-ordinal-value
+* item[20].answerOption[2].extension.url = $hl7-item-weight
 * item[20].answerOption[2].extension.valueDecimal = 2
 * item[20].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[20].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -928,7 +928,7 @@ Usage: #definition
 * item[20].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[20].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[20].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[20].answerOption[3].extension.url = $hl7-ordinal-value
+* item[20].answerOption[3].extension.url = $hl7-item-weight
 * item[20].answerOption[3].extension.valueDecimal = 3
 
 // Q21 - Depression: I felt that life was meaningless
@@ -948,7 +948,7 @@ Usage: #definition
 * item[21].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[21].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[21].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Traf gar nicht auf mich zu"
-* item[21].answerOption[0].extension.url = $hl7-ordinal-value
+* item[21].answerOption[0].extension.url = $hl7-item-weight
 * item[21].answerOption[0].extension.valueDecimal = 0
 * item[21].answerOption[1].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-1 "Applied to me to some degree"
 * item[21].answerOption[1].valueCoding.display.extension[0].url = $hl7-translation
@@ -956,7 +956,7 @@ Usage: #definition
 * item[21].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[21].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
 * item[21].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Traf bis zu einem gewissen Grad auf mich zu"
-* item[21].answerOption[1].extension.url = $hl7-ordinal-value
+* item[21].answerOption[1].extension.url = $hl7-item-weight
 * item[21].answerOption[1].extension.valueDecimal = 1
 * item[21].answerOption[2].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-2 "Applied to me to a considerable degree"
 * item[21].answerOption[2].valueCoding.display.extension[0].url = $hl7-translation
@@ -964,7 +964,7 @@ Usage: #definition
 * item[21].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[21].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
 * item[21].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Traf in beträchtlichem Maße auf mich zu"
-* item[21].answerOption[2].extension.url = $hl7-ordinal-value
+* item[21].answerOption[2].extension.url = $hl7-item-weight
 * item[21].answerOption[2].extension.valueDecimal = 2
 * item[21].answerOption[3].valueCoding = $mii-cs-pro-dass-21#dass-dass21-answer-3 "Applied to me very much"
 * item[21].answerOption[3].valueCoding.display.extension[0].url = $hl7-translation
@@ -972,7 +972,7 @@ Usage: #definition
 * item[21].answerOption[3].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[21].answerOption[3].valueCoding.display.extension[0].extension[1].url = "content"
 * item[21].answerOption[3].valueCoding.display.extension[0].extension[1].valueString = "Traf sehr stark auf mich zu"
-* item[21].answerOption[3].extension.url = $hl7-ordinal-value
+* item[21].answerOption[3].extension.url = $hl7-item-weight
 * item[21].answerOption[3].extension.valueDecimal = 3
 
 // ============================================================================

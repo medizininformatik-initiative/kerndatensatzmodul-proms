@@ -8,7 +8,7 @@ Description: "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-I
 * ^experimental = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2"
 
-// In SDC STU3, itemWeight is moved to answerOption.extension[ordinalValue] in the Questionnaire
+// In SDC STU3, itemWeight is moved to answerOption.extension[itemWeight] in the Questionnaire
 // Keeping codes without weight properties for the CodeSystem
 
 * #bdi-bdi2-answer-0 "0 points"

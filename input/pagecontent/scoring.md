@@ -10,7 +10,7 @@ The MII PRO module supports three scoring channels along the **Questionnaire →
 
 The **score item in the Questionnaire** (readOnly, with `code` and `observation-extract`) is the shared contract of channels A and B: channel A fills it live during form filling, channel B fills it afterwards from the item answers. Channel C deliberately does **not** use it (see the ETL rule below).
 
-The answer **weights** are the same in all channels: they are normatively defined in the MII CodeSystems (`ordinalValue` extension on the concepts). Channel A reads them via the FHIRPath function `ordinal()`, channel B replicates them as verified lookup tables inside the CQL library, and channel C must demonstrate algorithmic agreement with the published scoring manuals of the instruments.
+The answer **weights** are the same in all channels: they are normatively defined in the MII CodeSystems (`itemWeight` extension on the concepts). Channel A reads them via the FHIRPath function `ordinal()`, channel B replicates them as verified lookup tables inside the CQL library, and channel C must demonstrate algorithmic agreement with the published scoring manuals of the instruments.
 
 ---
 
@@ -25,7 +25,7 @@ The renderer evaluates the `calculatedExpression` (SDC, `text/fhirpath`) live du
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
 
 // Score item references the variable
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -107,7 +107,7 @@ Complex questionnaires produce multiple scores (example EQ-5D-5L: index, VAS, pr
 ### Quality assurance
 
 - **Differential tests channel A ↔ B**: identical test QuestionnaireResponses (minimum, maximum, uniform answers, missing items, opt-outs) through both engines; results must match exactly.
-- **Weight consistency**: CI check that the lookup tables of the CQL libraries agree with the `ordinalValue` weights of the CodeSystems.
+- **Weight consistency**: CI check that the lookup tables of the CQL libraries agree with the `itemWeight` weights of the CodeSystems.
 - **Import validation (channel C)**: sample-based recalculation via channel B where item answers are available.
 - **Version binding**: score Observations reference the library version (or the scoring manual) — every score value remains traceable to its algorithm.
 

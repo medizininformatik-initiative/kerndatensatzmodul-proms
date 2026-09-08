@@ -51,7 +51,7 @@
       "valueExpression": {
         "name": "phq15Sum",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()"
+        "expression": "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.weight().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }

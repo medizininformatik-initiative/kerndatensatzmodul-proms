@@ -11,7 +11,7 @@ Description: "CodeSystem for the Depression Anxiety Stress Scales - Short Form (
 
 // ============================================================================
 // Answer codes: 4-point Likert scale (0-3), shared by all 21 items
-// Scoring weights are applied at the Questionnaire level via ordinalValue extensions
+// Scoring weights are applied at the Questionnaire level via itemWeight extensions
 // ============================================================================
 
 * #dass-dass21-answer-0 "Did not apply to me at all"

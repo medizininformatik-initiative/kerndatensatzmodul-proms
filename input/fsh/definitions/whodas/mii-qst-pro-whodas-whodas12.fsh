@@ -19,7 +19,7 @@
 //
 // Answer modelling: items reference mii-vs-pro-whodas-12-answer-list via
 // answerValueSet. Ordinal weights (0-4) are declared as properties on the
-// mii-cs-pro-whodas-12 answer concepts. In-form .ordinal() resolution from
+// mii-cs-pro-whodas-12 answer concepts. In-form .weight() resolution from
 // answerValueSet is engine-dependent; scoring via CQL/server is verified
 // separately.
 //
@@ -69,7 +69,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "simpleSum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^whodas-whodas12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^whodas-whodas12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()"
 
 // ============================================================================
 // Display item: instructions / shared item stem

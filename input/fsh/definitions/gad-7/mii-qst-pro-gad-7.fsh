@@ -52,7 +52,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "gad7Sum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.weight().sum()"
 
 // Item 0: Einleitung
 * item[0].linkId = "gad-7-intro"

@@ -17,6 +17,8 @@ What does change:
 - **Jurisdiction** switched from m49#276 to `urn:iso:std:iso:3166#DE` (same meaning; the m49 encoding rendered "Unknown region code" in every page header).
 - Two small data fixes: the WHODAS example QuestionnaireResponse declares `language = #de`; the PROMIS-29 bundle no longer references the person module's patient profile with the PRO module version.
 
+**Dependency upgrade for the 2027 line (2026-09-08):** SDC 3.0.0 → **4.0.0** (final), ISiK 5.1.1 → **6.0.0**, kerndatensatz.meta 2026.0.0 → **2027.0.0-ballot.rc3**, basisprofil 1.5.4 → **1.6.0**. The SDC step is the breaking one and was migrated in full: the `ordinalValue` extension becomes **`itemWeight`** (395 answer options), CodeSystem weight properties become `concept-properties#itemWeight`, and all 90 FHIRPath scoring expressions switch from `.ordinal()` to **`.weight()`**. Existing QuestionnaireResponses are unaffected — weights live on the questionnaire and terminology side, not in the responses.
+
 Details and open decisions: [PR #129](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/pull/129).
 
 ### 2026.7.0 — 2026-09-02 (released, tag `v2026.7.0`, package + GitHub release)

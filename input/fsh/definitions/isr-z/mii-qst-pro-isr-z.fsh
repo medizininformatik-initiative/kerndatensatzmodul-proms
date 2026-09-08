@@ -16,7 +16,7 @@
 //
 // ANSWER MODELLING: Fall B (docs/design/pcor-pss-instrumente.md, Abschnitt 4) — die Wortwahl der
 // Zustimmungsskala ("trifft nicht/kaum/ziemlich/deutlich/extrem zu") ist Teil des validierten
-// ISR-Instruments. Eigenes MII-CodeSystem (mii-cs-pro-isr-z-answers) mit ordinalValue-Property,
+// ISR-Instruments. Eigenes MII-CodeSystem (mii-cs-pro-isr-z-answers) mit itemWeight-Property,
 // gebunden über answerValueSet (mii-vs-pro-isr-z-answers) — analog zu PHQ-15.
 //
 // TERMINOLOGY: kein LOINC- und kein SNOMED-CT-Code für das ISR bzw. die Z-Subskala gefunden
@@ -54,12 +54,12 @@ Usage: #definition
 * extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
 
-// Root variable: MITTELWERT (nicht Summe!) der drei Zwang-Items (ordinalValue 0-4 je Item)
+// Root variable: MITTELWERT (nicht Summe!) der drei Zwang-Items (itemWeight 0-4 je Item)
 // Abweichung von der Summenscore-Konvention des Moduls — siehe Kopfkommentar.
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "isrZMean"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^isr-z-q0[1-3]$')).answer.value.ordinal().avg()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^isr-z-q0[1-3]$')).answer.value.weight().avg()"
 
 // Item 0: introductory display
 * item[0].linkId = "isr-z-intro"

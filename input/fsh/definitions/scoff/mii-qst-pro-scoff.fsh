@@ -15,9 +15,9 @@
 // does not hold for instruments with an English original.
 //
 // ANSWER MODELLING: inline answerOption via the shared YesNoAnswerOptions RuleSet
-// (input/fsh/rulesets/answer-scales.fsh) using SNOMED CT 373067005/373066001 with ordinalValue
+// (input/fsh/rulesets/answer-scales.fsh) using SNOMED CT 373067005/373066001 with itemWeight
 // weights 0/1. Rationale: the TC Terminologien best practice mandates the SNOMED codes for generic
-// yes/no; since we do not own SNOMED we cannot attach ordinalValue properties to its concepts, so
+// yes/no; since we do not own SNOMED we cannot attach itemWeight properties to its concepts, so
 // an answerValueSet over those codes would carry no weights. See the RuleSet header for details.
 //
 // TERMINOLOGY: no LOINC and no SNOMED CT code exists for the SCOFF instrument itself (checked
@@ -55,7 +55,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "scoffSum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.weight().sum()"
 
 // Item 0: introductory display
 * item[0].linkId = "scoff-intro"

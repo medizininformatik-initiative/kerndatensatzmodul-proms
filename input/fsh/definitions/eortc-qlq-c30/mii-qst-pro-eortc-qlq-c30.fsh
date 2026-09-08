@@ -255,7 +255,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).answer.value.ordinal().sum()) / 5) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).answer.value.weight().sum()) / 5) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -265,7 +265,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId='qlq-c30-q06' or linkId='qlq-c30-q07').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId='qlq-c30-q06' or linkId='qlq-c30-q07').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -275,7 +275,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q2[1-4]$')).answer.value.ordinal().sum()) / 4) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q2[1-4]$')).answer.value.weight().sum()) / 4) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -285,7 +285,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId='qlq-c30-q20' or linkId='qlq-c30-q25').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId='qlq-c30-q20' or linkId='qlq-c30-q25').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -295,7 +295,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId='qlq-c30-q26' or linkId='qlq-c30-q27').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(1 - (((%resource.item.where(linkId='qlq-c30-q26' or linkId='qlq-c30-q27').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -306,7 +306,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.ordinal().sum()) / 3) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -316,7 +316,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -326,7 +326,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -337,7 +337,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q08').answer.value.ordinal() - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q08').answer.value.weight() - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -347,7 +347,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q11').answer.value.ordinal() - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q11').answer.value.weight() - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -357,7 +357,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q13').answer.value.ordinal() - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q13').answer.value.weight() - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -367,7 +367,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q16').answer.value.ordinal() - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q16').answer.value.weight() - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -377,7 +377,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q17').answer.value.ordinal() - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q17').answer.value.weight() - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -387,7 +387,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q28').answer.value.ordinal() - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((%resource.item.where(linkId='qlq-c30-q28').answer.value.weight() - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -398,7 +398,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.ordinal().sum()) / 2) - 1) / 6) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -413,83 +413,83 @@ Usage: #inline
 * content = #complete
 * caseSensitive = true
 
-// 4-point scale codes with ordinalValue extensions
+// 4-point scale codes with itemWeight extensions
 * concept[+].code = #not-at-all
 * concept[=].display = "Not at all"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "Überhaupt nicht"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 1
 
 * concept[+].code = #a-little
 * concept[=].display = "A little"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "Wenig"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 2
 
 * concept[+].code = #quite-a-bit
 * concept[=].display = "Quite a bit"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "Mäßig"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 3
 
 * concept[+].code = #very-much
 * concept[=].display = "Very much"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "Sehr"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 4
 
-// 7-point scale codes with ordinalValue extensions
+// 7-point scale codes with itemWeight extensions
 * concept[+].code = #1-very-poor
 * concept[=].display = "1 - Very poor"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "1 - Sehr schlecht"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 1
 
 * concept[+].code = #2-poor
 * concept[=].display = "2 - Poor"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "2 - Schlecht"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 2
 
 * concept[+].code = #3-fair
 * concept[=].display = "3 - Fair"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "3 - Mittelmäßig"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 3
 
 * concept[+].code = #4-good
 * concept[=].display = "4 - Good"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "4 - Gut"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 4
 
 * concept[+].code = #5-very-good
 * concept[=].display = "5 - Very good"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "5 - Sehr gut"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 5
 
 * concept[+].code = #6-excellent
 * concept[=].display = "6 - Excellent"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "6 - Ausgezeichnet"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 6
 
 * concept[+].code = #7-perfect
 * concept[=].display = "7 - Perfect"
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "7 - Vollkommen"
-* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* concept[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * concept[=].extension[=].valueDecimal = 7
 
 // ===== CONTAINED VALUESET INSTANCES =====

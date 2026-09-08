@@ -25,7 +25,7 @@ The PHQ-15 is a validated screening instrument for the severity of **somatic sym
 **Implementation notes:**
 - linkIds in the PHQ-D block namespace: somatic `phq-phq1a`…`phq-phq1m`, plus the shared `phq-phq2c` (sleep) / `phq-phq2d` (fatigue).
 - Answer scale via `answerValueSet` (`mii-vs-pro-phq-15-answers`); ordinal weights (0/1/2) as a property on the CodeSystem concepts (`mii-cs-pro-phq-15-answers`).
-- Automatic score calculation via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()`. Note: resolving `.ordinal()` from an `answerValueSet` is engine-dependent; robust scoring via CQL/server.
+- Automatic score calculation via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.weight().sum()`. Note: resolving `.weight()` from an `answerValueSet` is engine-dependent; robust scoring via CQL/server.
 - LOINC panel `69728-4`, items LOINC-coded.
 
 The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-phq-15.html).

@@ -119,7 +119,7 @@ QL Score = ((RawScore - 1) / 6) x 100
 - **URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30`
 - **Primary Language**: English (`language = #en`)
 - **Translations**: German translations via CodeSystem designations
-- **Answer Options**: MII CodeSystems with `ordinalValue` properties for scoring
+- **Answer Options**: MII CodeSystems with `itemWeight` properties for scoring
 
 #### CodeSystem & ValueSets
 - **CodeSystem**: `mii-cs-pro-eortc-qlq-c30` -- CodeSystem for response spectra in English with German translation

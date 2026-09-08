@@ -50,12 +50,12 @@ RuleSet: ConceptIntl(concept, display, language, translation)
   * ^designation[+].language = #{language}
   * ^designation[=].value = "{translation}"
 
-// NOTE: In SDC STU3, we use ordinalValue extension for scoring weights
+// NOTE: In SDC STU3, we use itemWeight extension for scoring weights
 RuleSet: ConceptWeightIntl(concept, display, weight, language, translation)
 * include {concept} "{display}"
   * ^designation[+].language = #{language}
   * ^designation[=].value = "{translation}"
-  * ^extension[+].url = $hl7-ordinal-value
+  * ^extension[+].url = $hl7-item-weight
   * ^extension[=].valueDecimal = {weight}
 
 // Common Extensions

@@ -17,7 +17,7 @@
 // a verified English source becomes available — see docs/design/pcor-pss-instrumente.md §6.
 //
 // ANSWER MODELLING: inline answerOption via the shared YesNoAnswerOptions RuleSet
-// (input/fsh/rulesets/answer-scales.fsh) using SNOMED CT 373067005/373066001 with ordinalValue
+// (input/fsh/rulesets/answer-scales.fsh) using SNOMED CT 373067005/373066001 with itemWeight
 // weights 0/1 — same "Fall A" rationale as SCOFF/WI-7 (generic yes/no, standard terminology,
 // SNOMED not owned by MII so no answerValueSet-with-weights possible). See the RuleSet header and
 // docs/design/pcor-pss-instrumente.md §4 for details.
@@ -65,7 +65,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "pcPtsdSum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.weight().sum()"
 
 // Item 0: introductory display (applies to all four items below)
 * item[0].linkId = "pc-ptsd-intro"

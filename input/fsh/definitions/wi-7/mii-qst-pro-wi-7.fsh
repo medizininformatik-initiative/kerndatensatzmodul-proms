@@ -19,7 +19,7 @@
 // direct, literal translation of the German intro and is not a normative instrument item.
 //
 // ANSWER MODELLING: inline answerOption via the shared YesNoAnswerOptions RuleSet
-// (input/fsh/rulesets/answer-scales.fsh) using SNOMED CT 373067005/373066001 with ordinalValue
+// (input/fsh/rulesets/answer-scales.fsh) using SNOMED CT 373067005/373066001 with itemWeight
 // weights 0/1 — same rationale as SCOFF (see that RuleSet's header).
 //
 // TERMINOLOGY: no LOINC and no SNOMED CT code found for the Whiteley-7 / Whiteley Index
@@ -63,7 +63,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "wi7Sum"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.weight().sum()"
 
 // Item 0: introductory display
 * item[0].linkId = "wi7-intro"

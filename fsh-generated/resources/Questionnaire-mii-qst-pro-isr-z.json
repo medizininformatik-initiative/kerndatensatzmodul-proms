@@ -46,7 +46,7 @@
       "valueExpression": {
         "name": "isrZMean",
         "language": "text/fhirpath",
-        "expression": "%resource.item.where(linkId.matches('^isr-z-q0[1-3]$')).answer.value.ordinal().avg()"
+        "expression": "%resource.item.where(linkId.matches('^isr-z-q0[1-3]$')).answer.value.weight().avg()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }

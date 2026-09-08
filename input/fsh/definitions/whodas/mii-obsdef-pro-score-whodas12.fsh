@@ -9,7 +9,7 @@
 // scoring" method (scores are added without recoding or collapsing of
 // categories). The corresponding calculated-expression FHIRPath would be
 //   %resource.item.where(linkId.matches('^whodas-whodas12-q(01..12)$'))
-//       .answer.value.ordinal().sum()
+//       .answer.value.weight().sum()
 // but is not embedded in the Questionnaire because the WHODAS-12 items are not
 // reproduced here for licensing reasons (see mii-qst-pro-whodas-whodas12).
 //

@@ -10,7 +10,7 @@ Das Modul "PROs, PROMs und abgeleitete Metriken" der Medizininformatik-Initiativ
 - **PROMIS Depression SF 4a** -- Basis-Implementation vorhanden
 - **PROMIS Cognitive Function SF 4a** -- Basis-Implementation vorhanden
 - **EORTC QLQ-C30** -- Scoring-Methodologie und Terminologie implementiert
-- **BDI-II** -- aus Lizenzgründen nicht darstellbar, aber Scoring mit ordinalValue (SDC STU3) funktionsfähig
+- **BDI-II** -- aus Lizenzgründen nicht darstellbar, aber Scoring mit itemWeight (SDC 4.0) funktionsfähig
 
 #### Metadata-Only Referenzen (Lizenzeinschränkungen)
 
@@ -43,8 +43,8 @@ Das Modul "PROs, PROMs und abgeleitete Metriken" der Medizininformatik-Initiativ
 #### 2026 -- Phase 2: SDC STU4 Features (nach Ballotierung)
 
 ##### Migration zu SDC STU4
-- Migration von ordinalValue zu itemWeight nach STU4-Finalisierung
-- FHIRPath `.weight()` Funktion statt `.ordinal()`
+- Migration von itemWeight zu itemWeight nach STU4-Finalisierung
+- FHIRPath `.weight()` Funktion statt `.weight()`
 - Erweiterte SDC-Features nutzen
     - z.B. Questionnaire.version plus versionAlgorithm
 
