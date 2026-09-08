@@ -277,8 +277,113 @@ Description: "EuroQol EQ-5D Value Set"
 // The collectable/minimal variants deliberately use the bare EuroQol LEVEL
 // digits (they concatenate into the profile string, e.g. "11213") — these
 // five universal levels are therefore first-class concepts of this CS.
-* #1
-* #2
-* #3
-* #4
-* #5
+* #1 "Level 1"
+* #1 ^designation[+].language = #de
+* #1 ^designation[=].value = "Ich bin nicht ängstlich oder deprimiert"
+* #1 ^designation[+].language = #de
+* #1 ^designation[=].value = "Ich habe keine Probleme herumzugehen"
+* #1 ^designation[+].language = #de
+* #1 ^designation[=].value = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* #1 ^designation[+].language = #de
+* #1 ^designation[=].value = "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+* #1 ^designation[+].language = #de
+* #1 ^designation[=].value = "Ich habe keine Schmerzen oder Beschwerden"
+* #1 ^designation[+].language = #en
+* #1 ^designation[=].value = "I am not anxious or depressed"
+* #1 ^designation[+].language = #en
+* #1 ^designation[=].value = "I have no pain or discomfort"
+* #1 ^designation[+].language = #en
+* #1 ^designation[=].value = "I have no problems doing my usual activities"
+* #1 ^designation[+].language = #en
+* #1 ^designation[=].value = "I have no problems in walking about"
+* #1 ^designation[+].language = #en
+* #1 ^designation[=].value = "I have no problems washing or dressing myself"
+* #2 "Level 2"
+* #2 ^designation[+].language = #de
+* #2 ^designation[=].value = "Ich bin ein wenig ängstlich oder deprimiert"
+* #2 ^designation[+].language = #de
+* #2 ^designation[=].value = "Ich habe leichte Probleme herumzugehen"
+* #2 ^designation[+].language = #de
+* #2 ^designation[=].value = "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* #2 ^designation[+].language = #de
+* #2 ^designation[=].value = "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+* #2 ^designation[+].language = #de
+* #2 ^designation[=].value = "Ich habe leichte Schmerzen oder Beschwerden"
+* #2 ^designation[+].language = #en
+* #2 ^designation[=].value = "I am slightly anxious or depressed"
+* #2 ^designation[+].language = #en
+* #2 ^designation[=].value = "I have slight pain or discomfort"
+* #2 ^designation[+].language = #en
+* #2 ^designation[=].value = "I have slight problems doing my usual activities"
+* #2 ^designation[+].language = #en
+* #2 ^designation[=].value = "I have slight problems in walking about"
+* #2 ^designation[+].language = #en
+* #2 ^designation[=].value = "I have slight problems washing or dressing myself"
+* #3 "Level 3"
+* #3 ^designation[+].language = #de
+* #3 ^designation[=].value = "Ich bin mäßig ängstlich oder deprimiert"
+* #3 ^designation[+].language = #de
+* #3 ^designation[=].value = "Ich habe mäßige Probleme herumzugehen"
+* #3 ^designation[+].language = #de
+* #3 ^designation[=].value = "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* #3 ^designation[+].language = #de
+* #3 ^designation[=].value = "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+* #3 ^designation[+].language = #de
+* #3 ^designation[=].value = "Ich habe mäßige Schmerzen oder Beschwerden"
+* #3 ^designation[+].language = #en
+* #3 ^designation[=].value = "I am moderately anxious or depressed"
+* #3 ^designation[+].language = #en
+* #3 ^designation[=].value = "I have moderate pain or discomfort"
+* #3 ^designation[+].language = #en
+* #3 ^designation[=].value = "I have moderate problems doing my usual activities"
+* #3 ^designation[+].language = #en
+* #3 ^designation[=].value = "I have moderate problems in walking about"
+* #3 ^designation[+].language = #en
+* #3 ^designation[=].value = "I have moderate problems washing or dressing myself"
+* #4 "Level 4"
+* #4 ^designation[+].language = #de
+* #4 ^designation[=].value = "Ich bin sehr ängstlich oder deprimiert"
+* #4 ^designation[+].language = #de
+* #4 ^designation[=].value = "Ich habe große Probleme herumzugehen"
+* #4 ^designation[+].language = #de
+* #4 ^designation[=].value = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* #4 ^designation[+].language = #de
+* #4 ^designation[=].value = "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+* #4 ^designation[+].language = #de
+* #4 ^designation[=].value = "Ich habe starke Schmerzen oder Beschwerden"
+* #4 ^designation[+].language = #en
+* #4 ^designation[=].value = "I am severely anxious or depressed"
+* #4 ^designation[+].language = #en
+* #4 ^designation[=].value = "I have severe pain or discomfort"
+* #4 ^designation[+].language = #en
+* #4 ^designation[=].value = "I have severe problems doing my usual activities"
+* #4 ^designation[+].language = #en
+* #4 ^designation[=].value = "I have severe problems in walking about"
+* #4 ^designation[+].language = #en
+* #4 ^designation[=].value = "I have severe problems washing or dressing myself"
+* #5 "Level 5"
+* #5 ^designation[+].language = #de
+* #5 ^designation[=].value = "Ich bin extrem ängstlich oder deprimiert"
+* #5 ^designation[+].language = #de
+* #5 ^designation[=].value = "Ich bin nicht in der Lage herumzugehen"
+* #5 ^designation[+].language = #de
+* #5 ^designation[=].value = "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+* #5 ^designation[+].language = #de
+* #5 ^designation[=].value = "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+* #5 ^designation[+].language = #de
+* #5 ^designation[=].value = "Ich habe extreme Schmerzen oder Beschwerden"
+* #5 ^designation[+].language = #en
+* #5 ^designation[=].value = "I am extremely anxious or depressed"
+* #5 ^designation[+].language = #en
+* #5 ^designation[=].value = "I am unable to do my usual activities"
+* #5 ^designation[+].language = #en
+* #5 ^designation[=].value = "I am unable to walk about"
+* #5 ^designation[+].language = #en
+* #5 ^designation[=].value = "I am unable to wash or dress myself"
+* #5 ^designation[+].language = #en
+* #5 ^designation[=].value = "I have extreme pain or discomfort"
+* #9 "Level 9"
+* #9 ^designation[+].language = #de
+* #9 ^designation[=].value = "Fehlender Wert"
+* #9 ^designation[+].language = #en
+* #9 ^designation[=].value = "Missing value"
