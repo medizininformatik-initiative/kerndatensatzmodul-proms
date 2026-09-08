@@ -61,3 +61,5 @@ Alias: $sdc-questionnaire-observation-extract-category = http://hl7.org/fhir/uv/
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
 Alias: $UCUM = http://unitsofmeasure.org
+Alias: $mii-vs-pro-eortc-qlq-c30-scale-4pt = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt
+Alias: $mii-vs-pro-eortc-qlq-c30-scale-7pt = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt
