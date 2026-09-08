@@ -42,3 +42,9 @@ RuleSet: MetaProfile(canonical)
 // maintenance idea as MetaProfile — the version lives only in this file.
 RuleSet: QuestionnaireRef(canonical)
 * questionnaire = "{canonical}|2027.0.0-ballot.rc3"
+
+// Plain-path variant for INSTANCES of definitional types (e.g. the LOINC
+// supplement, an Instance of CodeSystem): caret rules are rejected on
+// Instances ("CaretValueRule cannot be applied to entity of type Instance").
+RuleSet: InstanceVersion
+* version = "2027.0.0-ballot.rc3"

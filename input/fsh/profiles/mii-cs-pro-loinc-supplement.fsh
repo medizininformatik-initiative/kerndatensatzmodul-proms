@@ -22,7 +22,7 @@
 Instance: mii-cs-pro-loinc-supplement
 InstanceOf: CodeSystem
 Usage: #definition
-* insert PR_CS_VS_Version
+* insert InstanceVersion
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement"
 * name = "MII_CS_PRO_LOINC_Supplement"
 * title = "MII CS PRO LOINC Supplement (validated answer wordings)"
