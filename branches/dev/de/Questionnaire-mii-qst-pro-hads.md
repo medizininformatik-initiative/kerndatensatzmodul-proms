@@ -72,7 +72,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "Hospital Anxiety and Depression Scale (HADS)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T15:05:20+00:00",
+  "date" : "2026-09-08T15:29:28+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

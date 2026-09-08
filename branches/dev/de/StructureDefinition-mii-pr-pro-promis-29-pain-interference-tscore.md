@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "title" : "MII PR PRO PROMIS-29 Pain Interference T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T15:05:20+00:00",
+  "date" : "2026-09-08T15:29:28+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

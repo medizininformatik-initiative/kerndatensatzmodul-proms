@@ -41,7 +41,7 @@ ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemli
   "name" : "MII_VS_PRO_ISR_Z_Answers",
   "title" : "MII VS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-09-08T15:05:20+00:00",
+  "date" : "2026-09-08T15:29:28+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

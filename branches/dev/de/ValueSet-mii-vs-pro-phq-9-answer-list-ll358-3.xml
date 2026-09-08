@@ -12,7 +12,7 @@
   <title value="MII VS PRO PHQ-9 Answer List LL358-3"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-08T15:05:20+00:00"/>
+  <date value="2026-09-08T15:29:28+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -37,9 +37,6 @@
     <include>
       <system value="http://loinc.org"/>
       <concept>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <code value="LA6568-5"/>
         <display value="Not at all"/>
         <designation>
@@ -48,9 +45,6 @@
         </designation>
       </concept>
       <concept>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <code value="LA6569-3"/>
         <display value="Several days"/>
         <designation>
@@ -59,9 +53,6 @@
         </designation>
       </concept>
       <concept>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="2"/>
-        </extension>
         <code value="LA6570-1"/>
         <display value="More than half the days"/>
         <designation>
@@ -70,9 +61,6 @@
         </designation>
       </concept>
       <concept>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="3"/>
-        </extension>
         <code value="LA6571-9"/>
         <display value="Nearly every day"/>
         <designation>

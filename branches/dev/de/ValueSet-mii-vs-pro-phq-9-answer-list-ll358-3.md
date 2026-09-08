@@ -43,7 +43,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PHQ-9 Answer List LL358-3",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T15:05:20+00:00",
+  "date" : "2026-09-08T15:29:28+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -68,10 +68,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "code" : "LA6568-5",
         "display" : "Not at all",
         "designation" : [{
@@ -80,10 +76,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "code" : "LA6569-3",
         "display" : "Several days",
         "designation" : [{
@@ -92,10 +84,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 2
-        }],
         "code" : "LA6570-1",
         "display" : "More than half the days",
         "designation" : [{
@@ -104,10 +92,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 3
-        }],
         "code" : "LA6571-9",
         "display" : "Nearly every day",
         "designation" : [{
