@@ -1,4 +1,4 @@
-# MII PR PRO Observation EQ-5D-5L VAS - MII IG PRO v2027.0.0-ballot.rc3
+# MII PR PRO Observation EQ-5D-5L VAS - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_EQ5D5L_VAS |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_EQ5D5L_VAS |
 
  
 Profile for EQ-5D-5L Visual Analogue Scale Score Observations 
@@ -86,12 +86,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-eq5d5l-vas",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_PRO_Observation_EQ5D5L_VAS",
   "title" : "MII PR PRO Observation EQ-5D-5L VAS",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

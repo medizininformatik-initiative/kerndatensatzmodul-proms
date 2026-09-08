@@ -1,4 +1,4 @@
-# MII QST PRO PROMIS-29 (German) - MII IG PRO v2027.0.0-ballot.rc3
+# MII QST PRO PROMIS-29 (German) - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-07 | *Computable Name*: |
-| **Usage**: [PROMIS (Patient-Reported Outcomes Measurement Information System)](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.healthmeasures.net/explore-measurement-systems/promis), [PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://cpcor.charite.de/promis_national_center_deutschland), [PROMIS-29 Profile Documentation](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.healthmeasures.net/explore-measurement-systems/promis) | |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-08 | *Computable Name*: |
+| **Usage**: [PROMIS (Patient-Reported Outcomes Measurement Information System)](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://www.healthmeasures.net/explore-measurement-systems/promis), [PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://cpcor.charite.de/promis_national_center_deutschland), [PROMIS-29 Profile Documentation](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://www.healthmeasures.net/explore-measurement-systems/promis) | |
 | **Copyright/Legal**: The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragenLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/ | |
 
  
@@ -35,10 +35,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-promis-29-de",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"]
   },
   "language" : "de",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : true
@@ -66,7 +74,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "physicalFunctionRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -74,7 +82,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "anxietyRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -82,7 +90,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "depressionRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -90,7 +98,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "fatigueRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -98,7 +106,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "sleepRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -106,7 +114,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "socialRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -114,16 +122,16 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "painInterferenceRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.weight().sum()"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "title" : "MII QST PRO PROMIS-29 (German)",
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -218,7 +226,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -242,7 +250,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -266,7 +274,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -290,7 +298,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -314,7 +322,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -361,7 +369,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -385,7 +393,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -409,7 +417,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -433,7 +441,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -457,7 +465,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -504,7 +512,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -528,7 +536,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -552,7 +560,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -576,7 +584,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -600,7 +608,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -647,7 +655,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -671,7 +679,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -695,7 +703,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -719,7 +727,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -743,7 +751,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -787,7 +795,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -811,7 +819,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -835,7 +843,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -859,7 +867,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -883,7 +891,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -917,7 +925,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -941,7 +949,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -965,7 +973,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -989,7 +997,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1013,7 +1021,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1047,7 +1055,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1071,7 +1079,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1095,7 +1103,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1119,7 +1127,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1143,7 +1151,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1177,7 +1185,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1201,7 +1209,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1225,7 +1233,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1249,7 +1257,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1273,7 +1281,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1317,7 +1325,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1341,7 +1349,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1365,7 +1373,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1389,7 +1397,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1413,7 +1421,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1447,7 +1455,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1471,7 +1479,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1495,7 +1503,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1519,7 +1527,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1543,7 +1551,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1577,7 +1585,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1601,7 +1609,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1625,7 +1633,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1649,7 +1657,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1673,7 +1681,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1707,7 +1715,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1731,7 +1739,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1755,7 +1763,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1779,7 +1787,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1803,7 +1811,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1847,7 +1855,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1871,7 +1879,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1895,7 +1903,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1919,7 +1927,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1943,7 +1951,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1977,7 +1985,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2001,7 +2009,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2025,7 +2033,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2049,7 +2057,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2073,7 +2081,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2107,7 +2115,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2131,7 +2139,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2155,7 +2163,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2179,7 +2187,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2203,7 +2211,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2237,7 +2245,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2261,7 +2269,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2285,7 +2293,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2309,7 +2317,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2333,7 +2341,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2377,7 +2385,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2401,7 +2409,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2425,7 +2433,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2449,7 +2457,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2473,7 +2481,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2507,7 +2515,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2531,7 +2539,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2555,7 +2563,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2579,7 +2587,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2603,7 +2611,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2637,7 +2645,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2661,7 +2669,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2685,7 +2693,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2709,7 +2717,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2733,7 +2741,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2767,7 +2775,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2791,7 +2799,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2815,7 +2823,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2839,7 +2847,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2863,7 +2871,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2907,7 +2915,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2931,7 +2939,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2955,7 +2963,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2979,7 +2987,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3003,7 +3011,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3037,7 +3045,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3061,7 +3069,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3085,7 +3093,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3109,7 +3117,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3133,7 +3141,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3167,7 +3175,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3191,7 +3199,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3215,7 +3223,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3239,7 +3247,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3263,7 +3271,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3297,7 +3305,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3321,7 +3329,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3345,7 +3353,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3369,7 +3377,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3393,7 +3401,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3437,7 +3445,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3461,7 +3469,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3485,7 +3493,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3509,7 +3517,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3533,7 +3541,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3567,7 +3575,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3591,7 +3599,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3615,7 +3623,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3639,7 +3647,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3663,7 +3671,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3697,7 +3705,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3721,7 +3729,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3745,7 +3753,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3769,7 +3777,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3793,7 +3801,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3827,7 +3835,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3851,7 +3859,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3875,7 +3883,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3899,7 +3907,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3923,7 +3931,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-pro-loinc-supplement"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-loinc-supplement</b></p><a name="mii-cs-pro-loinc-supplement"> </a><a name="hcmii-cs-pro-loinc-supplement"> </a><p>This code system supplement <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement</code> defines displays on the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA6568-5">LA6568-5</a><a name="mii-cs-pro-loinc-supplement-LA6568-5"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA6569-3">LA6569-3</a><a name="mii-cs-pro-loinc-supplement-LA6569-3"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA6570-1">LA6570-1</a><a name="mii-cs-pro-loinc-supplement-LA6570-1"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA6270-8">LA6270-8</a><a name="mii-cs-pro-loinc-supplement-LA6270-8"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA10066-1">LA10066-1</a><a name="mii-cs-pro-loinc-supplement-LA10066-1"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA10082-8">LA10082-8</a><a name="mii-cs-pro-loinc-supplement-LA10082-8"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA10044-8">LA10044-8</a><a name="mii-cs-pro-loinc-supplement-LA10044-8"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA9933-8">LA9933-8</a><a name="mii-cs-pro-loinc-supplement-LA9933-8"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13863-8">LA13863-8</a><a name="mii-cs-pro-loinc-supplement-LA13863-8"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13909-9">LA13909-9</a><a name="mii-cs-pro-loinc-supplement-LA13909-9"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13902-4">LA13902-4</a><a name="mii-cs-pro-loinc-supplement-LA13902-4"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13914-9">LA13914-9</a><a name="mii-cs-pro-loinc-supplement-LA13914-9"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13921-4">LA13921-4</a><a name="mii-cs-pro-loinc-supplement-LA13921-4"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13918-0">LA13918-0</a><a name="mii-cs-pro-loinc-supplement-LA13918-0"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13920-6">LA13920-6</a><a name="mii-cs-pro-loinc-supplement-LA13920-6"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13919-8">LA13919-8</a><a name="mii-cs-pro-loinc-supplement-LA13919-8"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13912-3">LA13912-3</a><a name="mii-cs-pro-loinc-supplement-LA13912-3"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA13913-1">LA13913-1</a><a name="mii-cs-pro-loinc-supplement-LA13913-1"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA8967-7">LA8967-7</a><a name="mii-cs-pro-loinc-supplement-LA8967-7"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA8968-5">LA8968-5</a><a name="mii-cs-pro-loinc-supplement-LA8968-5"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA8969-3">LA8969-3</a><a name="mii-cs-pro-loinc-supplement-LA8969-3"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/LA9615-1">LA9615-1</a><a name="mii-cs-pro-loinc-supplement-LA9615-1"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/62826-3">62826-3</a><a name="mii-cs-pro-loinc-supplement-62826-3"> </a></td></tr><tr><td><a style="white-space:nowrap" href="https://loinc.org/62827-1">62827-1</a><a name="mii-cs-pro-loinc-supplement-62827-1"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>English (English, en)</b></td></tr><tr><td>LA6568-5</td><td>Überhaupt nicht</td><td/></tr><tr><td>LA6569-3</td><td>An einzelnen Tagen</td><td/></tr><tr><td>LA6570-1</td><td>An mehr als der Hälfte der Tage</td><td/></tr><tr><td>LA6270-8</td><td>Nie</td><td/></tr><tr><td>LA10066-1</td><td>Selten</td><td/></tr><tr><td>LA10082-8</td><td>Manchmal</td><td/></tr><tr><td>LA10044-8</td><td>Oft</td><td/></tr><tr><td>LA9933-8</td><td>Immer</td><td/></tr><tr><td>LA13863-8</td><td>Ein wenig</td><td/></tr><tr><td>LA13909-9</td><td>Mäßig</td><td/></tr><tr><td>LA13902-4</td><td>Ziemlich</td><td/></tr><tr><td>LA13914-9</td><td>Sehr</td><td/></tr><tr><td>LA13921-4</td><td>Ohne jede Schwierigkeiten</td><td/></tr><tr><td>LA13918-0</td><td>Mit geringen Schwierigkeiten</td><td/></tr><tr><td>LA13920-6</td><td>Mit einigen Schwierigkeiten</td><td/></tr><tr><td>LA13919-8</td><td>Mit großen Schwierigkeiten</td><td/></tr><tr><td>LA13912-3</td><td>Kann ich gar nicht</td><td/></tr><tr><td>LA13913-1</td><td>Sehr gut</td><td/></tr><tr><td>LA8967-7</td><td>Gut</td><td/></tr><tr><td>LA8968-5</td><td>Mäßig</td><td/></tr><tr><td>LA8969-3</td><td>Schlecht</td><td/></tr><tr><td>LA9615-1</td><td>Sehr schlecht</td><td/></tr><tr><td>62826-3</td><td/><td>Are you able to go up and down stairs at a normal pace?</td></tr><tr><td>62827-1</td><td/><td>Are you able to go for a walk of at least 15 minutes?</td></tr></table></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement"/>
+  <version value="2027.0.0-ballot.rc4"/>
+  <name value="MII_CS_PRO_LOINC_Supplement"/>
+  <title value="MII CS PRO LOINC Supplement (validated answer wordings)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-08T17:30:22+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Supplement to LOINC adding the validated German answer wordings (PHQ-D; PROMIS German via PHO/CPCOR; EQ-VAS anchors) as designations on the LOINC answer codes used by this module, plus two full PROMIS item wordings in English. Enables display validation of the instrument-validated wordings; claims no translation authority over LOINC."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <content value="supplement"/>
+  <supplements value="http://loinc.org"/>
+  <concept>
+    <code value="LA6568-5"/>
+    <designation>
+      <language value="de"/>
+      <value value="Überhaupt nicht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA6569-3"/>
+    <designation>
+      <language value="de"/>
+      <value value="An einzelnen Tagen"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA6570-1"/>
+    <designation>
+      <language value="de"/>
+      <value value="An mehr als der Hälfte der Tage"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA6270-8"/>
+    <designation>
+      <language value="de"/>
+      <value value="Nie"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA10066-1"/>
+    <designation>
+      <language value="de"/>
+      <value value="Selten"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA10082-8"/>
+    <designation>
+      <language value="de"/>
+      <value value="Manchmal"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA10044-8"/>
+    <designation>
+      <language value="de"/>
+      <value value="Oft"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA9933-8"/>
+    <designation>
+      <language value="de"/>
+      <value value="Immer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13863-8"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ein wenig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13909-9"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mäßig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13902-4"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ziemlich"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13914-9"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sehr"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13921-4"/>
+    <designation>
+      <language value="de"/>
+      <value value="Ohne jede Schwierigkeiten"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13918-0"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mit geringen Schwierigkeiten"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13920-6"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mit einigen Schwierigkeiten"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13919-8"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mit großen Schwierigkeiten"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13912-3"/>
+    <designation>
+      <language value="de"/>
+      <value value="Kann ich gar nicht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA13913-1"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sehr gut"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA8967-7"/>
+    <designation>
+      <language value="de"/>
+      <value value="Gut"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA8968-5"/>
+    <designation>
+      <language value="de"/>
+      <value value="Mäßig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA8969-3"/>
+    <designation>
+      <language value="de"/>
+      <value value="Schlecht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="LA9615-1"/>
+    <designation>
+      <language value="de"/>
+      <value value="Sehr schlecht"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="62826-3"/>
+    <designation>
+      <language value="en"/>
+      <value value="Are you able to go up and down stairs at a normal pace?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="62827-1"/>
+    <designation>
+      <language value="en"/>
+      <value value="Are you able to go for a walk of at least 15 minutes?"/>
+    </designation>
+  </concept>
+</CodeSystem>

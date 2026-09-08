@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Social Function T-Score - MII IG PRO v2027.0.0-ballot.rc3
+# MII PR PRO PROMIS-29 Social Function T-Score - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-07 | *Computable Name*:MII_PR_PRO_PROMIS_29_Social_Function_TScore |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-08 | *Computable Name*:MII_PR_PRO_PROMIS_29_Social_Function_TScore |
 
  
 Profile for PROMIS-29 Ability to Participate in Social Roles and Activities T-Score Observations 
@@ -38,12 +38,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-social-function-tscore",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_PRO_PROMIS_29_Social_Function_TScore",
   "title" : "MII PR PRO PROMIS-29 Social Function T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

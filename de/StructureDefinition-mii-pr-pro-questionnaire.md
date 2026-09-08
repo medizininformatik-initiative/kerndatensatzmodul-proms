@@ -1,4 +1,4 @@
-# MII PR PRO Questionnaire - MII IG PRO v2027.0.0-ballot.rc3
+# MII PR PRO Questionnaire - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_PR_PRO_Questionnaire |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_PRO_Questionnaire |
 
  
 MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification 
@@ -27,7 +27,7 @@ Das abstrakte Questionnaire-Profil bildet die Grundlage für alle PRO-Frageböge
 
 **Usages:**
 
-* Examples for this Profile: [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-ces-d](Questionnaire-mii-qst-pro-ces-d.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a](Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.md)... Show 28 more, [Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b](Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-b.md), [Questionnaire/mii-qst-pro-eortc-qlq-c30](Questionnaire-mii-qst-pro-eortc-qlq-c30.md), [Questionnaire/mii-qst-pro-epds](Questionnaire-mii-qst-pro-epds.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-hads](Questionnaire-mii-qst-pro-hads.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-k6](Questionnaire-mii-qst-pro-k6.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [MII_QST_PRO_PRO_CTCAE_Breast_DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.md), [MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
+* Examples for this Profile: [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-ces-d](Questionnaire-mii-qst-pro-ces-d.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-eortc-qlq-c30](Questionnaire-mii-qst-pro-eortc-qlq-c30.md)... Show 26 more, [Questionnaire/mii-qst-pro-epds](Questionnaire-mii-qst-pro-epds.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-hads](Questionnaire-mii-qst-pro-hads.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-k6](Questionnaire-mii-qst-pro-k6.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [MII_QST_PRO_PRO_CTCAE_Breast_DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.md), [MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
 * CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-questionnaire.json)
@@ -46,13 +46,13 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
 #### Terminology Bindings
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
 ** Summary **
 
@@ -80,7 +80,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
  **Snapshot-AnsichtView** 
 
@@ -88,7 +88,7 @@ Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
 ** Summary **
 
@@ -121,12 +121,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-questionnaire",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_PRO_Questionnaire",
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -149,6 +149,10 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "ihe-sdc",
+    "name" : "IHE SDC"
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"

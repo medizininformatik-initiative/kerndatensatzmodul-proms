@@ -1,4 +1,4 @@
-# MII QST PRO EQ-5D-5L (Displayable) - MII IG PRO v2027.0.0-ballot.rc3
+# MII QST PRO EQ-5D-5L (Displayable) - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*: |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*: |
 
  
 MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire - Displayable version 
@@ -33,10 +33,18 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-euroqol-eq5d5l-displayable",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"]
   },
   "language" : "de",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : true
@@ -60,12 +68,12 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "title" : "MII QST PRO EQ-5D-5L (Displayable)",
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -135,7 +143,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "repeats" : false,
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueString" : "Ich habe keine Probleme herumzugehen",
@@ -155,7 +163,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueString" : "Ich habe leichte Probleme herumzugehen",
@@ -175,7 +183,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueString" : "Ich habe mäßige Probleme herumzugehen",
@@ -195,7 +203,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueString" : "Ich habe große Probleme herumzugehen",
@@ -215,7 +223,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueString" : "Ich bin nicht in der Lage herumzugehen",
@@ -235,7 +243,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 9
       }],
       "valueString" : "Fehlender Wert",
@@ -276,7 +284,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "repeats" : false,
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueString" : "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
@@ -296,7 +304,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueString" : "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
@@ -316,7 +324,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueString" : "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
@@ -336,7 +344,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueString" : "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
@@ -356,7 +364,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueString" : "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
@@ -376,7 +384,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 9
       }],
       "valueString" : "Fehlender Wert",
@@ -417,7 +425,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "repeats" : false,
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueString" : "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
@@ -437,7 +445,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueString" : "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
@@ -457,7 +465,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueString" : "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
@@ -477,7 +485,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueString" : "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
@@ -497,7 +505,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueString" : "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
@@ -517,7 +525,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 9
       }],
       "valueString" : "Fehlender Wert",
@@ -558,7 +566,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "repeats" : false,
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueString" : "Ich habe keine Schmerzen oder Beschwerden",
@@ -578,7 +586,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueString" : "Ich habe leichte Schmerzen oder Beschwerden",
@@ -598,7 +606,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueString" : "Ich habe mäßige Schmerzen oder Beschwerden",
@@ -618,7 +626,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueString" : "Ich habe starke Schmerzen oder Beschwerden",
@@ -638,7 +646,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueString" : "Ich habe extreme Schmerzen oder Beschwerden",
@@ -658,7 +666,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 9
       }],
       "valueString" : "Fehlender Wert",
@@ -699,7 +707,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "repeats" : false,
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueString" : "Ich bin nicht ängstlich oder deprimiert",
@@ -719,7 +727,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueString" : "Ich bin ein wenig ängstlich oder deprimiert",
@@ -739,7 +747,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueString" : "Ich bin mäßig ängstlich oder deprimiert",
@@ -759,7 +767,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueString" : "Ich bin sehr ängstlich oder deprimiert",
@@ -779,7 +787,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueString" : "Ich bin extrem ängstlich oder deprimiert",
@@ -799,7 +807,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 9
       }],
       "valueString" : "Fehlender Wert",
@@ -844,7 +852,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
+        "expression" : "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
       }
     }],
     "linkId" : "euroqol-eq5d5l-score-profile",

@@ -1,4 +1,4 @@
-# MII QST PRO EURONET-SOMA - MII IG PRO v2027.0.0-ballot.rc3
+# MII QST PRO EURONET-SOMA - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-07 | *Computable Name*: |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-08 | *Computable Name*: |
 | **Copyright/Legal**: EURONET-SOMA numeric rating scale items © Rief, Burton, Frostholm et al. 2017 (Psychosomatic Medicine, American Psychosomatic Society). Figure 1 of the publication explicitly recommends these two items for use in clinical trials, with translations into more than 20 languages available as supplemental content. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -34,10 +34,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-euronet-soma",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"]
   },
   "language" : "en",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : true
@@ -61,11 +69,11 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "title" : "MII QST PRO EURONET-SOMA",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

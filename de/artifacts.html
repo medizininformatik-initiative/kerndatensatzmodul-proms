@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artefaktübersicht - MII IG PRO v2027.0.0-ballot.rc3</title>
+    <title>Artefaktübersicht - MII IG PRO v2027.0.0-ballot.rc4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc3: 2027 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artefaktübersicht</h2>
   
   <p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
@@ -534,30 +534,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.html"
-                  title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a">
-                  <span title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a">MII QST PRO EORTC QLQ-C30 Variant A
-</span>
-               </a>
-            </td>
-            <td>
-<p>EORTC QLQ-C30 Version 3.0 - Variant A: References standalone external ValueSets directly (no contained resources)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-b.html"
-                  title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b">
-                  <span title="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b">MII QST PRO EORTC QLQ-C30 Variant B
-</span>
-               </a>
-            </td>
-            <td>
-<p>EORTC QLQ-C30 Version 3.0 - Variant B: With contained CodeSystem and ValueSets referencing it via local reference #eortc-qlq-c30-cs-b</p>
 </td>
          </tr>
          <tr>
@@ -1573,7 +1549,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.</p>
+<p>MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mii-cs-pro-loinc-supplement.html"
+                  title="CodeSystem/mii-cs-pro-loinc-supplement">
+                  <span title="CodeSystem/mii-cs-pro-loinc-supplement">MII CS PRO LOINC Supplement (validated answer wordings)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Supplement to LOINC adding the validated German answer wordings (PHQ-D; PROMIS German via PHO/CPCOR; EQ-VAS anchors) as designations on the LOINC answer codes used by this module, plus two full PROMIS item wordings in English. Enables display validation of the instrument-validated wordings; claims no translation authority over LOINC.</p>
 </td>
          </tr>
          <tr>
@@ -1597,7 +1585,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.</p>
+<p>MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.</p>
 </td>
          </tr>
          <tr>
@@ -1633,7 +1621,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.</p>
+<p>MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.</p>
 </td>
          </tr>
          <tr>
@@ -1657,7 +1645,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).</p>
+<p>CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).</p>
 </td>
          </tr>
       </tbody>
@@ -3029,8 +3017,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Sep 7, 2026 17:47+0000">2026-09-07</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

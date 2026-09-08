@@ -1,4 +1,4 @@
-# MII VS PRO DASS-21 Answer List - MII IG PRO v2027.0.0-ballot.rc3
+# MII VS PRO DASS-21 Answer List - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-07 | *Computable Name*:MII_VS_PRO_DASS_21_Answer_List |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-08 | *Computable Name*:MII_VS_PRO_DASS_21_Answer_List |
 
  
 4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much) 
@@ -37,12 +37,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-dass-21-answer-list",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_PRO_DASS_21_Answer_List",
   "title" : "MII VS PRO DASS-21 Answer List",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

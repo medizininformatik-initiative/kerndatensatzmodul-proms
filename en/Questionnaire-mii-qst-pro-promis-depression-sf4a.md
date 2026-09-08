@@ -1,4 +1,4 @@
-# MII QST PRO PROMIS Depression SF 4a (Adults) - MII IG PRO v2027.0.0-ballot.rc3
+# MII QST PRO PROMIS Depression SF 4a (Adults) - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-07 | *Computable Name*: |
-| **Usage**: [PROMIS Depression Scoring Manual](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf) | |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-08 | *Computable Name*: |
+| **Usage**: [PROMIS Depression Scoring Manual](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf) | |
 
  
 PROMIS Depression Short Form 4a - Adults - Item Bank v1.0 
@@ -34,10 +34,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-promis-depression-sf4a",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"]
   },
   "language" : "en",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : true
@@ -65,15 +73,15 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "rawScore",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -156,7 +164,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "type" : "choice",
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueCoding" : {
@@ -180,7 +188,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueCoding" : {
@@ -204,7 +212,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueCoding" : {
@@ -228,7 +236,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueCoding" : {
@@ -252,7 +260,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueCoding" : {
@@ -299,7 +307,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "type" : "choice",
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueCoding" : {
@@ -323,7 +331,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueCoding" : {
@@ -347,7 +355,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueCoding" : {
@@ -371,7 +379,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueCoding" : {
@@ -395,7 +403,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueCoding" : {
@@ -442,7 +450,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "type" : "choice",
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueCoding" : {
@@ -466,7 +474,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueCoding" : {
@@ -490,7 +498,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueCoding" : {
@@ -514,7 +522,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueCoding" : {
@@ -538,7 +546,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueCoding" : {
@@ -585,7 +593,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "type" : "choice",
     "answerOption" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "valueCoding" : {
@@ -609,7 +617,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "valueCoding" : {
@@ -633,7 +641,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "valueCoding" : {
@@ -657,7 +665,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "valueCoding" : {
@@ -681,7 +689,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "valueCoding" : {

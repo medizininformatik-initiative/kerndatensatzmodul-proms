@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>SCOFF - MII IG PRO v2027.0.0-ballot.rc3</title>
+    <title>SCOFF - MII IG PRO v2027.0.0-ballot.rc4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc3: 2027 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>SCOFF</h2>
   
 
@@ -343,8 +343,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><strong>Implementation notes:</strong></p>
 <ul>
   <li>linkIds <code class="language-plaintext highlighter-rouge">scoff-q01</code>…<code class="language-plaintext highlighter-rouge">scoff-q05</code>, score item <code class="language-plaintext highlighter-rouge">scoff-score-total</code>.</li>
-  <li>Answers as <strong>inline <code class="language-plaintext highlighter-rouge">answerOption</code> with SNOMED CT</strong> <code class="language-plaintext highlighter-rouge">373067005</code> (No, weight 0) and <code class="language-plaintext highlighter-rouge">373066001</code> (Yes, weight 1) — bundled in the shared RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code>. A dedicated MII CodeSystem would duplicate standardised terminology; since no <code class="language-plaintext highlighter-rouge">ordinalValue</code> property can be attached to SNOMED concepts, the weights sit inline rather than in an <code class="language-plaintext highlighter-rouge">answerValueSet</code>.</li>
-  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()</code>.</li>
+  <li>Answers as <strong>inline <code class="language-plaintext highlighter-rouge">answerOption</code> with SNOMED CT</strong> <code class="language-plaintext highlighter-rouge">373067005</code> (No, weight 0) and <code class="language-plaintext highlighter-rouge">373066001</code> (Yes, weight 1) — bundled in the shared RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code>. A dedicated MII CodeSystem would duplicate standardised terminology; since no <code class="language-plaintext highlighter-rouge">itemWeight</code> property can be attached to SNOMED concepts, the weights sit inline rather than in an <code class="language-plaintext highlighter-rouge">answerValueSet</code>.</li>
+  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.weight().sum()</code>.</li>
   <li><strong>Divergence between original and translation:</strong> item 3 asks about "One stone" (≈ 6.35 kg) in the original, the German version about "mehr als 6 kg". Both wordings are preserved verbatim; the threshold is not harmonised.</li>
   <li>Neither a LOINC nor a SNOMED CT code exists for the SCOFF instrument itself (checked against LOINC 2.83 and SNOMED International 2026-05-01); coding is therefore via the MII questionnaire catalogue.</li>
 </ul>
@@ -396,8 +396,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Sep 7, 2026 17:47+0000">2026-09-07</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

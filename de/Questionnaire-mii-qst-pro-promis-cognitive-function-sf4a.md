@@ -1,4 +1,4 @@
-# MII QST PRO PROMIS Cognitive Function SF 4a - MII IG PRO v2027.0.0-ballot.rc3
+# MII QST PRO PROMIS Cognitive Function SF 4a - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*: |
-| **Verwendung**: [PROMIS (Patient-Reported Outcomes Measurement Information System)](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.healthmeasures.net/explore-measurement-systems/promis), [PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://cpcor.charite.de/promis_national_center_deutschland) | |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*: |
+| **Verwendung**: [PROMIS (Patient-Reported Outcomes Measurement Information System)](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://www.healthmeasures.net/explore-measurement-systems/promis), [PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://cpcor.charite.de/promis_national_center_deutschland) | |
 | **Copyright/Rechtliches**: The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragenLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/ | |
 
  
@@ -35,10 +35,18 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-promis-cognitive-function-sf4a",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"]
   },
   "language" : "en",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : true
@@ -62,15 +70,15 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "valueExpression" : {
       "name" : "cognitiveRawScore",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.weight().sum()"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "title" : "MII QST PRO PROMIS Cognitive Function SF 4a",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -169,7 +177,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "required" : true,
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -193,7 +201,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -217,7 +225,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -241,7 +249,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -265,7 +273,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -313,7 +321,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "required" : true,
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -337,7 +345,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -361,7 +369,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -385,7 +393,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -409,7 +417,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -457,7 +465,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "required" : true,
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -481,7 +489,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -505,7 +513,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -529,7 +537,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -553,7 +561,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -601,7 +609,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "required" : true,
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -625,7 +633,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -649,7 +657,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -673,7 +681,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -697,7 +705,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {

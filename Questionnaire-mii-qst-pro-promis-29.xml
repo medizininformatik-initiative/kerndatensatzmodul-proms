@@ -3,11 +3,11 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
   <id value="mii-qst-pro-promis-29"/>
   <meta>
-    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"/>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"/>
   </meta>
   <language value="en"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Questionnaire mii-qst-pro-promis-29</b></p><a name="mii-qst-pro-promis-29"> </a><a name="hcmii-qst-pro-promis-29"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2027.0.0-ballot.rc3</p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29#2027.0.0-ballot.rc3</td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Questionnaire mii-qst-pro-promis-29</b></p><a name="mii-qst-pro-promis-29"> </a><a name="hcmii-qst-pro-promis-29"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2027.0.0-ballot.rc4</p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29#2027.0.0-ballot.rc4</td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.PROMIS-29.PhysicalFunction" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-29.PhysicalFunction</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">KÖRPERLICHE FUNKTION</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.PROMIS-29.PhysicalFunction.Description" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: white; background-color: inherit" title="display" class="hierarchy"/> PROMIS-29.PhysicalFunction.Description</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sind Sie zu folgenden Tätigkeiten imstande:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.promis-pfa11" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-pfa11</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Are you able to do chores such as vacuuming or yard work [PROMIS]</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.promis-pfa11">5 options</a></td></tr>
@@ -67,7 +67,7 @@
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.promis-29-social-tscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="decimal" class="hierarchy"/> promis-29-social-tscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Soziale Teilhabe - T-Score</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.promis-29-pain-interference-raw" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: white; background-color: inherit" title="decimal" class="hierarchy"/> promis-29-pain-interference-raw</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" id="item.promis-29-pain-interference-tscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="decimal" class="hierarchy"/> promis-29-pain-interference-tscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr><td colspan="6" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.promis-pfa11"> </a><p><b>Answer options for promis-pfa11 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-pfa21"> </a><p><b>Answer options for promis-pfa21 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-pfa23"> </a><p><b>Answer options for promis-pfa23 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-pfa53"> </a><p><b>Answer options for promis-pfa53 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-edanx01"> </a><p><b>Answer options for promis-edanx01 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-edanx40"> </a><p><b>Answer options for promis-edanx40 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-edanx41"> </a><p><b>Answer options for promis-edanx41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-edanx53"> </a><p><b>Answer options for promis-edanx53 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep04"> </a><p><b>Answer options for promis-eddep04 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep06"> </a><p><b>Answer options for promis-eddep06 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep29"> </a><p><b>Answer options for promis-eddep29 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep41"> </a><p><b>Answer options for promis-eddep41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-hi7"> </a><p><b>Answer options for promis-hi7 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-an3"> </a><p><b>Answer options for promis-an3 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-fatexp41"> </a><p><b>Answer options for promis-fatexp41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-fatexp40"> </a><p><b>Answer options for promis-fatexp40 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-sleep109"> </a><p><b>Answer options for promis-sleep109 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA9615-1 (&quot;Very poor&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13913-1 (&quot;Very Good&quot;)</li></ul><a name="opt-item.promis-sleep116"> </a><p><b>Answer options for promis-sleep116 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-sleep20"> </a><p><b>Answer options for promis-sleep20 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-sleep44"> </a><p><b>Answer options for promis-sleep44 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-srpper23-caps"> </a><p><b>Answer options for promis-srpper23-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-srpper11-caps"> </a><p><b>Answer options for promis-srpper11-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-srpper18-caps"> </a><p><b>Answer options for promis-srpper18-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-srpper46-caps"> </a><p><b>Answer options for promis-srpper46-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-painin9"> </a><p><b>Answer options for promis-painin9 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-painin22"> </a><p><b>Answer options for promis-painin22 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-painin31"> </a><p><b>Answer options for promis-painin31 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-painin34"> </a><p><b>Answer options for promis-painin34 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Questionnaire mii-qst-pro-promis-29</b></p><a name="de-mii-qst-pro-promis-29"> </a><a name="de-hcmii-qst-pro-promis-29"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2027.0.0-ballot.rc3</p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29#2027.0.0-ballot.rc3</td></tr>
+<tr><td colspan="6" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.promis-pfa11"> </a><p><b>Answer options for promis-pfa11 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-pfa21"> </a><p><b>Answer options for promis-pfa21 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-pfa23"> </a><p><b>Answer options for promis-pfa23 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-pfa53"> </a><p><b>Answer options for promis-pfa53 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="opt-item.promis-edanx01"> </a><p><b>Answer options for promis-edanx01 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-edanx40"> </a><p><b>Answer options for promis-edanx40 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-edanx41"> </a><p><b>Answer options for promis-edanx41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-edanx53"> </a><p><b>Answer options for promis-edanx53 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep04"> </a><p><b>Answer options for promis-eddep04 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep06"> </a><p><b>Answer options for promis-eddep06 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep29"> </a><p><b>Answer options for promis-eddep29 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-eddep41"> </a><p><b>Answer options for promis-eddep41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-hi7"> </a><p><b>Answer options for promis-hi7 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-an3"> </a><p><b>Answer options for promis-an3 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-fatexp41"> </a><p><b>Answer options for promis-fatexp41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-fatexp40"> </a><p><b>Answer options for promis-fatexp40 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-sleep109"> </a><p><b>Answer options for promis-sleep109 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA9615-1 (&quot;Very poor&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13913-1 (&quot;Very Good&quot;)</li></ul><a name="opt-item.promis-sleep116"> </a><p><b>Answer options for promis-sleep116 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-sleep20"> </a><p><b>Answer options for promis-sleep20 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-sleep44"> </a><p><b>Answer options for promis-sleep44 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-srpper23-caps"> </a><p><b>Answer options for promis-srpper23-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-srpper11-caps"> </a><p><b>Answer options for promis-srpper11-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-srpper18-caps"> </a><p><b>Answer options for promis-srpper18-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-srpper46-caps"> </a><p><b>Answer options for promis-srpper46-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="opt-item.promis-painin9"> </a><p><b>Answer options for promis-painin9 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-painin22"> </a><p><b>Answer options for promis-painin22 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-painin31"> </a><p><b>Answer options for promis-painin31 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="opt-item.promis-painin34"> </a><p><b>Answer options for promis-painin34 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Questionnaire mii-qst-pro-promis-29</b></p><a name="de-mii-qst-pro-promis-29"> </a><a name="de-hcmii-qst-pro-promis-29"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2027.0.0-ballot.rc4</p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29#2027.0.0-ballot.rc4</td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="de-item.PROMIS-29.PhysicalFunction" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/> PROMIS-29.PhysicalFunction</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">KÖRPERLICHE FUNKTION</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="de-item.PROMIS-29.PhysicalFunction.Description" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: white; background-color: inherit" title="display" class="hierarchy"/> PROMIS-29.PhysicalFunction.Description</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sind Sie zu folgenden Tätigkeiten imstande:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="de-item.promis-pfa11" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> promis-pfa11</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Are you able to do chores such as vacuuming or yard work [PROMIS]</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#de-opt-item.promis-pfa11">5 options</a></td></tr>
@@ -129,6 +129,13 @@
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" id="de-item.promis-29-pain-interference-tscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-decimal.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="decimal" class="hierarchy"/> promis-29-pain-interference-tscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr><td colspan="6" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="de-opt-item.promis-pfa11"> </a><p><b>Answer options for promis-pfa11 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="de-opt-item.promis-pfa21"> </a><p><b>Answer options for promis-pfa21 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="de-opt-item.promis-pfa23"> </a><p><b>Answer options for promis-pfa23 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="de-opt-item.promis-pfa53"> </a><p><b>Answer options for promis-pfa53 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA13912-3 (&quot;Unable to do&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13919-8 (&quot;With much difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13920-6 (&quot;With some difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13918-0 (&quot;With a little difficulty&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13921-4 (&quot;Without any difficulty&quot;)</li></ul><a name="de-opt-item.promis-edanx01"> </a><p><b>Answer options for promis-edanx01 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-edanx40"> </a><p><b>Answer options for promis-edanx40 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-edanx41"> </a><p><b>Answer options for promis-edanx41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-edanx53"> </a><p><b>Answer options for promis-edanx53 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-eddep04"> </a><p><b>Answer options for promis-eddep04 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-eddep06"> </a><p><b>Answer options for promis-eddep06 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-eddep29"> </a><p><b>Answer options for promis-eddep29 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-eddep41"> </a><p><b>Answer options for promis-eddep41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-hi7"> </a><p><b>Answer options for promis-hi7 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-an3"> </a><p><b>Answer options for promis-an3 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-fatexp41"> </a><p><b>Answer options for promis-fatexp41 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-fatexp40"> </a><p><b>Answer options for promis-fatexp40 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-sleep109"> </a><p><b>Answer options for promis-sleep109 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA9615-1 (&quot;Very poor&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style="font-size: 11px">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13913-1 (&quot;Very Good&quot;)</li></ul><a name="de-opt-item.promis-sleep116"> </a><p><b>Answer options for promis-sleep116 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-sleep20"> </a><p><b>Answer options for promis-sleep20 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-sleep44"> </a><p><b>Answer options for promis-sleep44 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-srpper23-caps"> </a><p><b>Answer options for promis-srpper23-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-srpper11-caps"> </a><p><b>Answer options for promis-srpper11-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-srpper18-caps"> </a><p><b>Answer options for promis-srpper18-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-srpper46-caps"> </a><p><b>Answer options for promis-srpper46-caps </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style="font-size: 11px">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style="font-size: 11px">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name="de-opt-item.promis-painin9"> </a><p><b>Answer options for promis-painin9 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-painin22"> </a><p><b>Answer options for promis-painin22 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-painin31"> </a><p><b>Answer options for promis-painin31 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul><a name="de-opt-item.promis-painin34"> </a><p><b>Answer options for promis-painin34 </b></p><ul><li style="font-size: 11px">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13863-8 (&quot;A little bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13909-9 (&quot;Somewhat&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13902-4 (&quot;Quite a bit&quot;)</li><li style="font-size: 11px">http://loinc.org#LA13914-9 (&quot;Very much&quot;)</li></ul></div></div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="natural"/>
+      <display value="Natural"/>
+    </valueCoding>
+  </extension>
   <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities">
     <extension url="displayable">
       <valueBoolean value="true"/>
@@ -150,57 +157,57 @@
     <valueExpression>
       <name value="physicalFunctionRaw"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/variable">
     <valueExpression>
       <name value="anxietyRaw"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/variable">
     <valueExpression>
       <name value="depressionRaw"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/variable">
     <valueExpression>
       <name value="fatigueRaw"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/variable">
     <valueExpression>
       <name value="sleepRaw"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/variable">
     <valueExpression>
       <name value="socialRaw"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/variable">
     <valueExpression>
       <name value="painInterferenceRaw"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"/>
-  <version value="2027.0.0-ballot.rc3"/>
+  <version value="2027.0.0-ballot.rc4"/>
   <title value="MII QST PRO PROMIS-29 (Adults)"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-07T17:47:08+00:00"/>
+  <date value="2026-09-08T17:30:22+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -290,7 +297,7 @@
       </text>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -309,7 +316,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -328,7 +335,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -347,7 +354,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -366,7 +373,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -404,7 +411,7 @@
       </text>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -423,7 +430,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -442,7 +449,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -461,7 +468,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -480,7 +487,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -518,7 +525,7 @@
       </text>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -537,7 +544,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -556,7 +563,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -575,7 +582,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -594,7 +601,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -632,7 +639,7 @@
       </text>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -651,7 +658,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -670,7 +677,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -689,7 +696,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -708,7 +715,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -747,7 +754,7 @@
       <text value="Ich fürchtete mich."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -766,7 +773,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -785,7 +792,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -804,7 +811,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -823,7 +830,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -852,7 +859,7 @@
       <text value="Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -871,7 +878,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -890,7 +897,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -909,7 +916,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -928,7 +935,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -957,7 +964,7 @@
       <text value="Meine Sorgen haben mich überwältigt."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -976,7 +983,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -995,7 +1002,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1014,7 +1021,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1033,7 +1040,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1062,7 +1069,7 @@
       <text value="Ich fühlte mich unruhig."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1081,7 +1088,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1100,7 +1107,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1119,7 +1126,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1138,7 +1145,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1177,7 +1184,7 @@
       <text value="Ich fühlte mich wertlos."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1196,7 +1203,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1215,7 +1222,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1234,7 +1241,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1253,7 +1260,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1282,7 +1289,7 @@
       <text value="Ich fühlte mich hilflos."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1301,7 +1308,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1320,7 +1327,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1339,7 +1346,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1358,7 +1365,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1387,7 +1394,7 @@
       <text value="Ich fühlte mich niedergeschlagen."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1406,7 +1413,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1425,7 +1432,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1444,7 +1451,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1463,7 +1470,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1492,7 +1499,7 @@
       <text value="Ich fühlte mich hoffnungslos."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1511,7 +1518,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1530,7 +1537,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1549,7 +1556,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1568,7 +1575,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1607,7 +1614,7 @@
       <text value="Ich bin erschöpft."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1626,7 +1633,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1645,7 +1652,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1664,7 +1671,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1683,7 +1690,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1712,7 +1719,7 @@
       <text value="Es fällt mir schwer, etwas anzufangen, weil ich müde bin."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1731,7 +1738,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1750,7 +1757,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1769,7 +1776,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1788,7 +1795,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1817,7 +1824,7 @@
       <text value="Wie ausgelaugt fühlten Sie sich im Allgemeinen?"/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1836,7 +1843,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1855,7 +1862,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1874,7 +1881,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1893,7 +1900,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -1922,7 +1929,7 @@
       <text value="Wie erschöpft waren Sie im Allgemeinen?"/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -1941,7 +1948,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -1960,7 +1967,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -1979,7 +1986,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -1998,7 +2005,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2037,7 +2044,7 @@
       <text value="Meine Schlafqualität war ..."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2056,7 +2063,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2075,7 +2082,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2094,7 +2101,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2113,7 +2120,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2142,7 +2149,7 @@
       <text value="Mein Schlaf war erfrischend."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2161,7 +2168,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2180,7 +2187,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2199,7 +2206,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2218,7 +2225,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2247,7 +2254,7 @@
       <text value="Ich hatte Schlafprobleme."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2266,7 +2273,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2285,7 +2292,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2304,7 +2311,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2323,7 +2330,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2352,7 +2359,7 @@
       <text value="Ich hatte Schwierigkeiten einzuschlafen."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2371,7 +2378,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2390,7 +2397,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2409,7 +2416,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2428,7 +2435,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2467,7 +2474,7 @@
       <text value="Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2486,7 +2493,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2505,7 +2512,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2524,7 +2531,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2543,7 +2550,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2572,7 +2579,7 @@
       <text value="Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2591,7 +2598,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2610,7 +2617,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2629,7 +2636,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2648,7 +2655,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2677,7 +2684,7 @@
       <text value="Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2696,7 +2703,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2715,7 +2722,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2734,7 +2741,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2753,7 +2760,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2782,7 +2789,7 @@
       <text value="Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -2801,7 +2808,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2820,7 +2827,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2839,7 +2846,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2858,7 +2865,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2897,7 +2904,7 @@
       <text value="Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?"/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -2916,7 +2923,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -2935,7 +2942,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -2954,7 +2961,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -2973,7 +2980,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -3002,7 +3009,7 @@
       <text value="Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?"/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -3021,7 +3028,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -3040,7 +3047,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -3059,7 +3066,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -3078,7 +3085,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -3107,7 +3114,7 @@
       <text value="Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -3126,7 +3133,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -3145,7 +3152,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -3164,7 +3171,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -3183,7 +3190,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>
@@ -3212,7 +3219,7 @@
       <text value="Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?"/>
       <type value="choice"/>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <valueCoding>
@@ -3231,7 +3238,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="2"/>
         </extension>
         <valueCoding>
@@ -3250,7 +3257,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="3"/>
         </extension>
         <valueCoding>
@@ -3269,7 +3276,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="4"/>
         </extension>
         <valueCoding>
@@ -3288,7 +3295,7 @@
         </valueCoding>
       </answerOption>
       <answerOption>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="5"/>
         </extension>
         <valueCoding>

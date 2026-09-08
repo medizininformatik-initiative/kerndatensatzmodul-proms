@@ -1,4 +1,4 @@
-# MII CS PRO ISR-Z Answers - MII IG PRO v2027.0.0-ballot.rc3
+# MII CS PRO ISR-Z Answers - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_CS_PRO_ISR_Z_Answers |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_CS_PRO_ISR_Z_Answers |
 
  
-MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet. 
+MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet. 
 
 Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
 
@@ -32,11 +32,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "id" : "mii-cs-pro-isr-z-answers",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_CS_PRO_ISR_Z_Answers",
   "title" : "MII CS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -49,7 +49,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "value" : "office@medizininformatik-initiative.de"
     }]
   }],
-  "description" : "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
+  "description" : "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -60,16 +60,16 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "content" : "complete",
   "count" : 5,
   "property" : [{
-    "code" : "ordinalValue",
-    "uri" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-    "description" : "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().avg()",
+    "code" : "itemWeight",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
+    "description" : "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().avg()",
     "type" : "decimal"
   }],
   "concept" : [{
     "code" : "trifft-nicht-zu",
     "display" : "trifft nicht zu",
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 0
     }]
   },
@@ -77,7 +77,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "code" : "trifft-kaum-zu",
     "display" : "trifft kaum zu",
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 1
     }]
   },
@@ -85,7 +85,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "code" : "trifft-ziemlich-zu",
     "display" : "trifft ziemlich zu",
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 2
     }]
   },
@@ -93,7 +93,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "code" : "trifft-deutlich-zu",
     "display" : "trifft deutlich zu",
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 3
     }]
   },
@@ -101,7 +101,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "code" : "trifft-extrem-zu",
     "display" : "trifft extrem zu",
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 4
     }]
   }]

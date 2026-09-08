@@ -5,9 +5,20 @@
     <description>MII PRO Module — package feed</description>
     <atom:link href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/package-feed.xml" rel="self" type="application/rss+xml"/>
     <generator>MII module go-publish bootstrap</generator>
-    <lastBuildDate>Mon, 07 Sep 2026 05:41:03 +0000</lastBuildDate>
-    <pubDate>Mon, 07 Sep 2026 05:41:03 +0000</pubDate>
+    <lastBuildDate>Tue, 08 Sep 2026 05:23:26 +0000</lastBuildDate>
+    <pubDate>Tue, 08 Sep 2026 05:23:26 +0000</pubDate>
   
+    <item>
+      <title>de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4</title>
+      <description>Ballot RC4: 2027er-Dependency-Stack (SDC 4.0.0, ISiK 6.0.0, meta 2027-ballot, basisprofil 1.6.0) mit vollstaendiger itemWeight-Migration; EORTC QLQ-C30 auf Standalone-Terminologie; LOINC-Supplement mit validierten deutschen Antwort-Wortlauten.</description>
+      <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.rc4/package.tgz</link>
+      <guid isPermaLink="true">https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.rc4/package.tgz</guid>
+      <dc:creator>Medical Informatics Initiative (MII)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 08 Sep 2026 05:23:26 +0000</pubDate>
+      <fhir:details>Publication run at 06/09/2026 by runner using Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (26 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3</title>
       <description>Ballot Release Candidate 2027: Migration auf das MII-KDS-Modul-Template (zweisprachiger IG, ein Seitensatz, TF-KDS-Struktur); alle FHIR-Artefakte unveraendert gegenueber 2026.7.0.</description>

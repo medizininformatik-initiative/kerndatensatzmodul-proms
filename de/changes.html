@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2027.0.0-ballot.rc3</title>
+    <title>Changelog - MII IG PRO v2027.0.0-ballot.rc4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc3: 2027 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -311,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#202700-ballotrc3--in-vorbereitung" id="markdown-toc-202700-ballotrc3--in-vorbereitung">2027.0.0-ballot.rc3 — in Vorbereitung</a></li>
+  <li><a href="#202700-ballotrc4--in-vorbereitung" id="markdown-toc-202700-ballotrc4--in-vorbereitung">2027.0.0-ballot.rc4 — in Vorbereitung</a></li>
   <li><a href="#202670--2026-09-02-released-tag-v202670-package--github-release" id="markdown-toc-202670--2026-09-02-released-tag-v202670-package--github-release">2026.7.0 — 2026-09-02 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.7.0</code>, Package + GitHub-Release)</a></li>
   <li><a href="#202660--2026-09-01-released-tag-v202660-package--github-release" id="markdown-toc-202660--2026-09-01-released-tag-v202660-package--github-release">2026.6.0 — 2026-09-01 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.6.0</code>, Package + GitHub-Release)</a></li>
   <li><a href="#202652--2026-07-27-released-tag-v202652-package" id="markdown-toc-202652--2026-07-27-released-tag-v202652-package">2026.5.2 — 2026-07-27 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.5.2</code>, Package)</a></li>
@@ -329,7 +329,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
 
-<h3 id="202700-ballotrc3--in-vorbereitung">2027.0.0-ballot.rc3 — in Vorbereitung</h3>
+<h3 id="202700-ballotrc4--in-vorbereitung">2027.0.0-ballot.rc4 — in Vorbereitung</h3>
+
+<p><strong>LOINC-Supplement (2026-09-08):</strong> <code class="language-plaintext highlighter-rouge">mii-cs-pro-loinc-supplement</code> liefert die validierten deutschen Antwort-Wortlaute (PHQ-D, PROMIS/PHO) als Designationen auf 24 LOINC-Codes — Inhalt für Konsumenten und Terminologieserver; auf beiden relevanten Publishern (2.2.11, 2.3.2) gemessen nutzt die Display-Validierung lokale Supplements noch nicht, die ~178 Display-Findings bleiben daher eine dokumentierte Umgebungsklasse.</p>
 
 <p>Die Ballotierungsfassung 2027 bringt den <strong>Umzug auf das MII-KDS-Modul-Template</strong> (v0.11.3) — dieselbe Werkzeugkette wie die übrigen KDS-Module. Für Implementierende ändert sich an den FHIR-Artefakten <strong>nichts</strong>: alle 214 Ressourcen, ihre IDs, Canonicals und Versionen bleiben unverändert (nachgemessen, 0 Regressionen).</p>
 
@@ -343,6 +345,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Jurisdiction</strong> von m49#276 auf <code class="language-plaintext highlighter-rouge">urn:iso:std:iso:3166#DE</code> umgestellt (bedeutungsgleich; das m49-Encoding renderte in jedem Seitenkopf „Unknown region code").</li>
   <li>Zwei kleine Datenfixes: die WHODAS-Beispiel-QuestionnaireResponse deklariert <code class="language-plaintext highlighter-rouge">language = #de</code>; das PROMIS-29-Bundle referenziert das Personen-Modul-Patientenprofil nicht mehr mit der PRO-Modulversion.</li>
 </ul>
+
+<p><strong>EORTC QLQ-C30 auf Standalone-Terminologie umgestellt (2026-09-08):</strong> Das Haupt-Questionnaire enthält sein CodeSystem/seine ValueSets nicht mehr contained — es bindet die Standalone-<code class="language-plaintext highlighter-rouge">mii-vs-pro-eortc-qlq-c30-scale-4pt/-7pt</code>, deren CodeSystem die Antwortgewichte jetzt als <code class="language-plaintext highlighter-rouge">itemWeight</code>-Properties trägt (1:1 aus den stillgelegten contained-Ressourcen portiert; EORTC-Skalen sind 1-basiert). Die beiden Modellierungs-Experimente (<code class="language-plaintext highlighter-rouge">…-variant-a</code>, <code class="language-plaintext highlighter-rouge">…-variant-b</code>) sind entfernt — sie waren nirgends referenziert. Löst die größte verbliebene QA-Klasse (82 contained-Profilverletzungen).</p>
+
+<p><strong>Dependency-Upgrade für die 2027er-Linie (2026-09-08):</strong> SDC 3.0.0 → <strong>4.0.0</strong> (final), ISiK 5.1.1 → <strong>6.0.0</strong>, kerndatensatz.meta 2026.0.0 → <strong>2027.0.0-ballot.rc3</strong>, basisprofil 1.5.4 → <strong>1.6.0</strong>. Der SDC-Schritt ist der brechende und wurde vollständig migriert: Die <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Extension wird zu <strong><code class="language-plaintext highlighter-rouge">itemWeight</code></strong> (395 Antwortoptionen), die CodeSystem-Gewichts-Properties zu <code class="language-plaintext highlighter-rouge">concept-properties#itemWeight</code>, und alle 90 FHIRPath-Scoring-Ausdrücke wechseln von <code class="language-plaintext highlighter-rouge">.ordinal()</code> auf <strong><code class="language-plaintext highlighter-rouge">.weight()</code></strong>. Bestehende QuestionnaireResponses sind nicht betroffen — die Gewichte hängen an Questionnaire und Terminologie, nicht in den Antworten.</p>
 
 <p>Details und offene Entscheidungen: <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/pull/129">PR #129</a>.</p>
 
@@ -804,8 +810,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Sep 7, 2026 17:47+0000">2026-09-07</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

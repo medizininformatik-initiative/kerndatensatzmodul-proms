@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Module Description - MII IG PRO v2027.0.0-ballot.rc3</title>
+    <title>Module Description - MII IG PRO v2027.0.0-ballot.rc4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc3: 2027 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Module Description</h2>
   
 
@@ -330,7 +330,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>PROMIS Depression SF 4a</strong> – Basic implementation available</li>
   <li><strong>PROMIS Cognitive Function SF 4a</strong> – Basic implementation available</li>
   <li><strong>EORTC QLQ-C30</strong> – Scoring methodology and terminology implemented</li>
-  <li><strong>BDI-II</strong> – Not displayable due to licensing, but scoring with ordinalValue (SDC STU3) is functional</li>
+  <li><strong>BDI-II</strong> – Not displayable due to licensing, but scoring with itemWeight (SDC 4.0) is functional</li>
 </ul>
 
 <h4 id="metadata-only-references-licensing-restrictions">Metadata-Only References (Licensing Restrictions)</h4>
@@ -373,8 +373,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="migration-to-sdc-stu4">Migration to SDC STU4</h5>
 <ul>
-  <li>Migration from ordinalValue to itemWeight after STU4 finalization</li>
-  <li>FHIRPath <code class="language-plaintext highlighter-rouge">.weight()</code> function instead of <code class="language-plaintext highlighter-rouge">.ordinal()</code></li>
+  <li>Migration from itemWeight to itemWeight after STU4 finalization</li>
+  <li>FHIRPath <code class="language-plaintext highlighter-rouge">.weight()</code> function instead of <code class="language-plaintext highlighter-rouge">.weight()</code></li>
   <li>Utilization of extended SDC features
     <ul>
       <li>e.g., Questionnaire.version plus versionAlgorithm</li>
@@ -467,8 +467,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Sep 7, 2026 17:47+0000">2026-09-07</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

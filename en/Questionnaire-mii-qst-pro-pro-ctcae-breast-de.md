@@ -1,4 +1,4 @@
-# PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome) - MII IG PRO v2027.0.0-ballot.rc3
+# PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome) - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de | *Version*:2027.0.0-ballot.rc3 |
-| Draft as of 2026-09-07 | *Computable Name*:MII_QST_PRO_PRO_CTCAE_Breast_DE |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de | *Version*:2027.0.0-ballot.rc4 |
+| Draft as of 2026-09-08 | *Computable Name*:MII_QST_PRO_PRO_CTCAE_Breast_DE |
 
  
 PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score). 
@@ -33,9 +33,17 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-pro-ctcae-breast-de",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"]
   },
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
     "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
     "valueBoolean" : true
   },
@@ -43,7 +51,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_QST_PRO_PRO_CTCAE_Breast_DE",
   "title" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
   "_title" : {
@@ -61,7 +69,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -6,12 +6,19 @@
   <text>
     <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ConceptMap mii-cm-pro-gad-7-linkids</b></p><a name="mii-cm-pro-gad-7-linkids"> </a><a name="hcmii-cm-pro-gad-7-linkids"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping from <a href="Questionnaire-mii-qst-pro-gad-7.html">MII QST PRO GAD-7</a> to <a href="Questionnaire-mii-qst-pro-gad-7.html">MII QST PRO GAD-7</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>gad7-q01 (GAD-7 Item 1 — Nervousness / anxiety)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq5a (Feeling nervous, anxious, or on edge)</td></tr><tr><td>gad7-q02 (GAD-7 Item 2 — Uncontrollable worrying)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq5b (Not being able to stop or control worrying)</td></tr><tr><td>gad7-q03 (GAD-7 Item 3 — Excessive worrying)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq5c (Worrying too much about different things)</td></tr><tr><td>gad7-q04 (GAD-7 Item 4 — Trouble relaxing)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq5d (Trouble relaxing)</td></tr><tr><td>gad7-q05 (GAD-7 Item 5 — Restlessness)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq5e (Being so restless that it is hard to sit still)</td></tr><tr><td>gad7-q06 (GAD-7 Item 6 — Irritability)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq5f (Becoming easily annoyed or irritable)</td></tr><tr><td>gad7-q07 (GAD-7 Item 7 — Fear of something awful)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equal" title="equal">is equal to</a></td><td>phq-phq5g (Feeling afraid, as if something awful might happen)</td></tr></table></div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="natural"/>
+      <display value="Natural"/>
+    </valueCoding>
+  </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids"/>
-  <version value="2027.0.0-ballot.rc3"/>
+  <version value="2027.0.0-ballot.rc4"/>
   <title value="MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-07T17:47:08+00:00"/>
+  <date value="2026-09-08T17:30:22+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>

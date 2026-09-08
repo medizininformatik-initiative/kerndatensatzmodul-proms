@@ -1,4 +1,4 @@
-# MII CS EQ-5D Value Set - MII IG PRO v2027.0.0-ballot.rc3
+# MII CS EQ-5D Value Set - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_CS_PRO_EQ_5D_ValueSet |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_CS_PRO_EQ_5D_ValueSet |
 
  
 EuroQol EQ-5D Value Set 
@@ -32,12 +32,12 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "id" : "mii-cs-pro-eq-5d-value-set",
   "language" : "de-DE",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_CS_PRO_EQ_5D_ValueSet",
   "title" : "MII CS EQ-5D Value Set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -60,7 +60,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   }],
   "hierarchyMeaning" : "grouped-by",
   "content" : "complete",
-  "count" : 30,
+  "count" : 36,
   "property" : [{
     "code" : "eq-5d-vs-coefficient-de-de",
     "description" : "EQ-5D ValueSet Coefficient Germany",
@@ -659,6 +659,238 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
         "code" : "eq-5d-vs-coefficient-en-us",
         "valueDecimal" : 0.321
       }]
+    }]
+  },
+  {
+    "code" : "1",
+    "display" : "Level 1",
+    "designation" : [{
+      "language" : "de",
+      "value" : "Ich bin nicht ängstlich oder deprimiert"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe keine Probleme herumzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe keine Schmerzen oder Beschwerden"
+    },
+    {
+      "language" : "en",
+      "value" : "I am not anxious or depressed"
+    },
+    {
+      "language" : "en",
+      "value" : "I have no pain or discomfort"
+    },
+    {
+      "language" : "en",
+      "value" : "I have no problems doing my usual activities"
+    },
+    {
+      "language" : "en",
+      "value" : "I have no problems in walking about"
+    },
+    {
+      "language" : "en",
+      "value" : "I have no problems washing or dressing myself"
+    }]
+  },
+  {
+    "code" : "2",
+    "display" : "Level 2",
+    "designation" : [{
+      "language" : "de",
+      "value" : "Ich bin ein wenig ängstlich oder deprimiert"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe leichte Probleme herumzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe leichte Schmerzen oder Beschwerden"
+    },
+    {
+      "language" : "en",
+      "value" : "I am slightly anxious or depressed"
+    },
+    {
+      "language" : "en",
+      "value" : "I have slight pain or discomfort"
+    },
+    {
+      "language" : "en",
+      "value" : "I have slight problems doing my usual activities"
+    },
+    {
+      "language" : "en",
+      "value" : "I have slight problems in walking about"
+    },
+    {
+      "language" : "en",
+      "value" : "I have slight problems washing or dressing myself"
+    }]
+  },
+  {
+    "code" : "3",
+    "display" : "Level 3",
+    "designation" : [{
+      "language" : "de",
+      "value" : "Ich bin mäßig ängstlich oder deprimiert"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe mäßige Probleme herumzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe mäßige Schmerzen oder Beschwerden"
+    },
+    {
+      "language" : "en",
+      "value" : "I am moderately anxious or depressed"
+    },
+    {
+      "language" : "en",
+      "value" : "I have moderate pain or discomfort"
+    },
+    {
+      "language" : "en",
+      "value" : "I have moderate problems doing my usual activities"
+    },
+    {
+      "language" : "en",
+      "value" : "I have moderate problems in walking about"
+    },
+    {
+      "language" : "en",
+      "value" : "I have moderate problems washing or dressing myself"
+    }]
+  },
+  {
+    "code" : "4",
+    "display" : "Level 4",
+    "designation" : [{
+      "language" : "de",
+      "value" : "Ich bin sehr ängstlich oder deprimiert"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe große Probleme herumzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe starke Schmerzen oder Beschwerden"
+    },
+    {
+      "language" : "en",
+      "value" : "I am severely anxious or depressed"
+    },
+    {
+      "language" : "en",
+      "value" : "I have severe pain or discomfort"
+    },
+    {
+      "language" : "en",
+      "value" : "I have severe problems doing my usual activities"
+    },
+    {
+      "language" : "en",
+      "value" : "I have severe problems in walking about"
+    },
+    {
+      "language" : "en",
+      "value" : "I have severe problems washing or dressing myself"
+    }]
+  },
+  {
+    "code" : "5",
+    "display" : "Level 5",
+    "designation" : [{
+      "language" : "de",
+      "value" : "Ich bin extrem ängstlich oder deprimiert"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich bin nicht in der Lage herumzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+    },
+    {
+      "language" : "de",
+      "value" : "Ich habe extreme Schmerzen oder Beschwerden"
+    },
+    {
+      "language" : "en",
+      "value" : "I am extremely anxious or depressed"
+    },
+    {
+      "language" : "en",
+      "value" : "I am unable to do my usual activities"
+    },
+    {
+      "language" : "en",
+      "value" : "I am unable to walk about"
+    },
+    {
+      "language" : "en",
+      "value" : "I am unable to wash or dress myself"
+    },
+    {
+      "language" : "en",
+      "value" : "I have extreme pain or discomfort"
+    }]
+  },
+  {
+    "code" : "9",
+    "display" : "Level 9",
+    "designation" : [{
+      "language" : "de",
+      "value" : "Fehlender Wert"
+    },
+    {
+      "language" : "en",
+      "value" : "Missing value"
     }]
   }]
 }

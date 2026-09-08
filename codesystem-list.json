@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_BDI_BDI2_AnswerList",
     "title" : "MII CS PRO BDI-II",
@@ -13,7 +13,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_DASS_21",
     "title" : "MII CS PRO DASS-21 Response Scale and Item Codes",
@@ -24,7 +24,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_EORTC_QLQ_C30",
     "title" : "MII CS PRO EORTC QLQ-C30 Response Scale",
@@ -32,14 +32,12 @@
     "uses" : {
     },
     "ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.html" : "MII VS PRO EORTC QLQ-C30 4-Point Scale",
-    "ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.html" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
-    "ValueSet-mii-qst-pro-eortc-qlq-c30_eortc-qlq-c30-4pt.html" : "ValueSet[https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt|2027.0.0-ballot.rc3]",
     "ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.html" : "MII VS PRO EORTC QLQ-C30 7-Point Scale",
-    "ValueSet-mii-qst-pro-eortc-qlq-c30_eortc-qlq-c30-7pt.html" : "ValueSet[https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt|2027.0.0-ballot.rc3]"
+    "ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.html" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_EQ_5D_ValueSet",
     "title" : "MII CS EQ-5D Value Set",
@@ -47,18 +45,26 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_ISR_Z_Answers",
     "title" : "MII CS PRO ISR-Z Answers",
-    "description" : "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
+    "description" : "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
     "uses" : {
     },
     "ValueSet-mii-vs-pro-isr-z-answers.html" : "MII VS PRO ISR-Z Answers"
   },
   {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement",
+    "version" : "2027.0.0-ballot.rc4",
+    "status" : "active",
+    "name" : "MII_CS_PRO_LOINC_Supplement",
+    "title" : "MII CS PRO LOINC Supplement (validated answer wordings)",
+    "description" : "Supplement to LOINC adding the validated German answer wordings (PHQ-D; PROMIS German via PHO/CPCOR; EQ-VAS anchors) as designations on the LOINC answer codes used by this module, plus two full PROMIS item wordings in English. Enables display validation of the instrument-validated wordings; claims no translation authority over LOINC."
+  },
+  {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "draft",
     "name" : "MII_CS_PRO_MIDOS2",
     "title" : "MII CS PRO MIDOS2 Items and Response Scales",
@@ -70,37 +76,37 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_PHQ_15_Answers",
     "title" : "MII CS PRO PHQ-15 Answers",
-    "description" : "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+    "description" : "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.",
     "uses" : {
     },
     "ValueSet-mii-vs-pro-phq-15-answers.html" : "MII VS PRO PHQ-15 Answers"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_PRO_CTCAE",
     "title" : "MII CS PRO PRO-CTCAE Item Library",
     "description" : "CodeSystem for the Patient-Reported Outcomes version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE). Contains all 124 items across 78 adverse events with English primary text and German designations from the NCI-authorized translation. Item Library Version 1.0.",
     "uses" : {
     },
-    "ValueSet-mii-vs-pro-pro-ctcae-frequency.html" : "MII VS PRO PRO-CTCAE Frequency Scale",
-    "ValueSet-mii-vs-pro-pro-ctcae-severity.html" : "MII VS PRO PRO-CTCAE Severity Scale",
-    "ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.html" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
-    "ValueSet-mii-vs-pro-pro-ctcae-presence.html" : "MII VS PRO PRO-CTCAE Presence Scale",
     "ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.html" : "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
+    "ValueSet-mii-vs-pro-pro-ctcae-presence.html" : "MII VS PRO PRO-CTCAE Presence Scale",
+    "ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.html" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
+    "ValueSet-mii-vs-pro-pro-ctcae-frequency.html" : "MII VS PRO PRO-CTCAE Frequency Scale",
+    "ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.html" : "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)",
     "ValueSet-mii-vs-pro-pro-ctcae-presence-na.html" : "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
     "ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.html" : "MII VS PRO PRO-CTCAE Severity Scale (Radiation)",
     "ValueSet-mii-vs-pro-pro-ctcae-interference.html" : "MII VS PRO PRO-CTCAE Interference Scale",
-    "ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.html" : "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)"
+    "ValueSet-mii-vs-pro-pro-ctcae-severity.html" : "MII VS PRO PRO-CTCAE Severity Scale"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_Questionnaire_Catalogue",
     "title" : "MII CS PRO Questionnaire Catalogue",
@@ -108,7 +114,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_Score_Catalogue",
     "title" : "MII CS PRO Score Catalogue",
@@ -116,22 +122,22 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_SSD_12_Answers",
     "title" : "MII CS PRO SSD-12 Answers",
-    "description" : "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+    "description" : "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.",
     "uses" : {
     },
     "ValueSet-mii-vs-pro-ssd-12-answers.html" : "MII VS PRO SSD-12 Answers"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_PRO_WHODAS_12",
     "title" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
-    "description" : "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+    "description" : "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
     "uses" : {
     },
     "ValueSet-mii-vs-pro-whodas-12-answer-list.html" : "MII VS PRO WHODAS 2.0 12-Item Answer List"

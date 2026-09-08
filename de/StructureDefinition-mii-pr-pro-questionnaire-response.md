@@ -1,4 +1,4 @@
-# MII PR PRO QuestionnaireResponse - MII IG PRO v2027.0.0-ballot.rc3
+# MII PR PRO QuestionnaireResponse - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_PR_PRO_QuestionnaireResponse |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_PRO_QuestionnaireResponse |
 
  
 MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Specification 
@@ -46,13 +46,13 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaireresponse.html) 
+Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaireresponse.html) 
 
 #### Terminology Bindings
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaireresponse.html) 
+Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaireresponse.html) 
 
 ** Summary **
 
@@ -66,7 +66,7 @@ Must-Support: 1 element
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaireresponse.html) 
+Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaireresponse.html) 
 
  **Snapshot-AnsichtView** 
 
@@ -74,7 +74,7 @@ Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaireresponse.html) 
+Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaireresponse.html) 
 
 ** Summary **
 
@@ -93,11 +93,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-questionnaire-response",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_PRO_QuestionnaireResponse",
   "title" : "MII PR PRO QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

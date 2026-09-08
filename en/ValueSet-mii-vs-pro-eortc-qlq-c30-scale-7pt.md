@@ -1,4 +1,4 @@
-# MII VS PRO EORTC QLQ-C30 7-Point Scale - MII IG PRO v2027.0.0-ballot.rc3
+# MII VS PRO EORTC QLQ-C30 7-Point Scale - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-07 | *Computable Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-08 | *Computable Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt |
 
  
 7-point response scale for EORTC QLQ-C30 global health status and quality of life items 
 
  **References** 
 
-* [EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant A](Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.md)
+* [EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0](Questionnaire-mii-qst-pro-eortc-qlq-c30.md)
 
 ### Logical Definition (CLD)
 
@@ -37,12 +37,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-eortc-qlq-c30-scale-7pt",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt",
   "title" : "MII VS PRO EORTC QLQ-C30 7-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

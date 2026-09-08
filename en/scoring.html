@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Scoring - MII IG PRO v2027.0.0-ballot.rc3</title>
+    <title>Scoring - MII IG PRO v2027.0.0-ballot.rc4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc3: 2027 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Scoring</h2>
   
 
@@ -359,7 +359,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The <strong>score item in the Questionnaire</strong> (readOnly, with <code class="language-plaintext highlighter-rouge">code</code> and <code class="language-plaintext highlighter-rouge">observation-extract</code>) is the shared contract of channels A and B: channel A fills it live during form filling, channel B fills it afterwards from the item answers. Channel C deliberately does <strong>not</strong> use it (see the ETL rule below).</p>
 
-<p>The answer <strong>weights</strong> are the same in all channels: they are normatively defined in the MII CodeSystems (<code class="language-plaintext highlighter-rouge">ordinalValue</code> extension on the concepts). Channel A reads them via the FHIRPath function <code class="language-plaintext highlighter-rouge">ordinal()</code>, channel B replicates them as verified lookup tables inside the CQL library, and channel C must demonstrate algorithmic agreement with the published scoring manuals of the instruments.</p>
+<p>The answer <strong>weights</strong> are the same in all channels: they are normatively defined in the MII CodeSystems (<code class="language-plaintext highlighter-rouge">itemWeight</code> extension on the concepts). Channel A reads them via the FHIRPath function <code class="language-plaintext highlighter-rouge">ordinal()</code>, channel B replicates them as verified lookup tables inside the CQL library, and channel C must demonstrate algorithmic agreement with the published scoring manuals of the instruments.</p>
 
 <hr />
 
@@ -373,7 +373,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
 
 // Score item references the variable
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -463,7 +463,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><strong>Differential tests channel A ↔ B</strong>: identical test QuestionnaireResponses (minimum, maximum, uniform answers, missing items, opt-outs) through both engines; results must match exactly.</li>
-  <li><strong>Weight consistency</strong>: CI check that the lookup tables of the CQL libraries agree with the <code class="language-plaintext highlighter-rouge">ordinalValue</code> weights of the CodeSystems.</li>
+  <li><strong>Weight consistency</strong>: CI check that the lookup tables of the CQL libraries agree with the <code class="language-plaintext highlighter-rouge">itemWeight</code> weights of the CodeSystems.</li>
   <li><strong>Import validation (channel C)</strong>: sample-based recalculation via channel B where item answers are available.</li>
   <li><strong>Version binding</strong>: score Observations reference the library version (or the scoring manual) — every score value remains traceable to its algorithm.</li>
 </ul>
@@ -498,8 +498,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Sep 7, 2026 17:47+0000">2026-09-07</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

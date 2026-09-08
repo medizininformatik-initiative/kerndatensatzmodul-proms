@@ -1,4 +1,4 @@
-# MII QST PRO WI-7 - MII IG PRO v2027.0.0-ballot.rc3
+# MII QST PRO WI-7 - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7 | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*: |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7 | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: Whiteley-7 scale — Fink, Ewald, Jensen, Sørensen, Engberg, Holm & Munk-Jørgensen 1999 (Journal of Psychosomatic Research, Elsevier). No explicit licensing restriction stated in the original publication; treated as freely available for clinical and research use. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -34,10 +34,18 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-wi-7",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"]
   },
   "language" : "en",
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
     "extension" : [{
       "url" : "displayable",
       "valueBoolean" : true
@@ -65,15 +73,15 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "valueExpression" : {
       "name" : "wi7Sum",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.weight().sum()"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -139,7 +147,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -150,7 +158,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -180,7 +188,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -191,7 +199,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -221,7 +229,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -232,7 +240,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -262,7 +270,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -273,7 +281,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -303,7 +311,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -314,7 +322,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -344,7 +352,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -355,7 +363,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -385,7 +393,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -396,7 +404,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",

@@ -1,4 +1,4 @@
-# MII VS PRO PHQ-9 Answer List LL359-1 - MII IG PRO v2027.0.0-ballot.rc3
+# MII VS PRO PHQ-9 Answer List LL359-1 - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1 | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-07 | *Computable Name*:MII_VS_PRO_PHQ9_AnswerList_LL3591 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1 | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-08 | *Computable Name*:MII_VS_PRO_PHQ9_AnswerList_LL3591 |
 
  
 Not difficult at all/Somewhat difficult/Very difficult/Extremely difficult-Perceived difficulty (PHQ-9) 
@@ -38,12 +38,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "id" : "mii-vs-pro-phq-9-answer-list-ll359-1",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll359-1",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3591",
   "title" : "MII VS PRO PHQ-9 Answer List LL359-1",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

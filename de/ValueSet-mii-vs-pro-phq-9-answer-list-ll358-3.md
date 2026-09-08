@@ -1,4 +1,4 @@
-# MII VS PRO PHQ-9 Answer List LL358-3 - MII IG PRO v2027.0.0-ballot.rc3
+# MII VS PRO PHQ-9 Answer List LL358-3 - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3 | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_VS_PRO_PHQ9_AnswerList_LL3583 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3 | *Version*:2027.0.0-ballot.rc4 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_VS_PRO_PHQ9_AnswerList_LL3583 |
 
  
 Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day 
@@ -38,12 +38,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "id" : "mii-vs-pro-phq-9-answer-list-ll358-3",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3583",
   "title" : "MII VS PRO PHQ-9 Answer List LL358-3",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-07T17:47:08+00:00",
+  "date" : "2026-09-08T17:30:22+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -68,10 +68,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 0
-        }],
         "code" : "LA6568-5",
         "display" : "Not at all",
         "designation" : [{
@@ -80,10 +76,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 1
-        }],
         "code" : "LA6569-3",
         "display" : "Several days",
         "designation" : [{
@@ -92,10 +84,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 2
-        }],
         "code" : "LA6570-1",
         "display" : "More than half the days",
         "designation" : [{
@@ -104,10 +92,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 3
-        }],
         "code" : "LA6571-9",
         "display" : "Nearly every day",
         "designation" : [{
