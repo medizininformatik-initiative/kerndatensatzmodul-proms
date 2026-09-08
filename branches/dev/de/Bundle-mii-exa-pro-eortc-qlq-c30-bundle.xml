@@ -14,232 +14,8 @@
         </meta>
         <language value="de"/>
         <text>
-          <status value="extensions"/>
+          <status value="generated"/>
         </text>
-        <contained>
-          <CodeSystem>
-            <id value="eortc-qlq-c30-cs"/>
-            <meta>
-              <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"/>
-            </meta>
-            <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-              <valueCoding>
-                <system value="http://hl7.org/fhir/version-algorithm"/>
-                <code value="natural"/>
-                <display value="Natural"/>
-              </valueCoding>
-            </extension>
-            <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
-            <version value="2027.0.0-ballot.rc3"/>
-            <status value="active"/>
-            <caseSensitive value="true"/>
-            <content value="complete"/>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="1"/>
-              </extension>
-              <code value="not-at-all"/>
-              <display value="Not at all"/>
-              <designation>
-                <language value="de"/>
-                <value value="Überhaupt nicht"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="2"/>
-              </extension>
-              <code value="a-little"/>
-              <display value="A little"/>
-              <designation>
-                <language value="de"/>
-                <value value="Wenig"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="3"/>
-              </extension>
-              <code value="quite-a-bit"/>
-              <display value="Quite a bit"/>
-              <designation>
-                <language value="de"/>
-                <value value="Mäßig"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="4"/>
-              </extension>
-              <code value="very-much"/>
-              <display value="Very much"/>
-              <designation>
-                <language value="de"/>
-                <value value="Sehr"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="1"/>
-              </extension>
-              <code value="1-very-poor"/>
-              <display value="1 - Very poor"/>
-              <designation>
-                <language value="de"/>
-                <value value="1 - Sehr schlecht"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="2"/>
-              </extension>
-              <code value="2-poor"/>
-              <display value="2 - Poor"/>
-              <designation>
-                <language value="de"/>
-                <value value="2 - Schlecht"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="3"/>
-              </extension>
-              <code value="3-fair"/>
-              <display value="3 - Fair"/>
-              <designation>
-                <language value="de"/>
-                <value value="3 - Mittelmäßig"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="4"/>
-              </extension>
-              <code value="4-good"/>
-              <display value="4 - Good"/>
-              <designation>
-                <language value="de"/>
-                <value value="4 - Gut"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="5"/>
-              </extension>
-              <code value="5-very-good"/>
-              <display value="5 - Very good"/>
-              <designation>
-                <language value="de"/>
-                <value value="5 - Sehr gut"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="6"/>
-              </extension>
-              <code value="6-excellent"/>
-              <display value="6 - Excellent"/>
-              <designation>
-                <language value="de"/>
-                <value value="6 - Ausgezeichnet"/>
-              </designation>
-            </concept>
-            <concept>
-              <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-                <valueDecimal value="7"/>
-              </extension>
-              <code value="7-perfect"/>
-              <display value="7 - Perfect"/>
-              <designation>
-                <language value="de"/>
-                <value value="7 - Vollkommen"/>
-              </designation>
-            </concept>
-          </CodeSystem>
-        </contained>
-        <contained>
-          <ValueSet>
-            <id value="eortc-qlq-c30-4pt"/>
-            <meta>
-              <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"/>
-            </meta>
-            <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-              <valueCoding>
-                <system value="http://hl7.org/fhir/version-algorithm"/>
-                <code value="natural"/>
-                <display value="Natural"/>
-              </valueCoding>
-            </extension>
-            <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
-            <version value="2027.0.0-ballot.rc3"/>
-            <status value="active"/>
-            <compose>
-              <include>
-                <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
-                <concept>
-                  <code value="not-at-all"/>
-                  <display value="Not at all"/>
-                </concept>
-                <concept>
-                  <code value="a-little"/>
-                  <display value="A little"/>
-                </concept>
-                <concept>
-                  <code value="quite-a-bit"/>
-                  <display value="Quite a bit"/>
-                </concept>
-                <concept>
-                  <code value="very-much"/>
-                  <display value="Very much"/>
-                </concept>
-              </include>
-            </compose>
-          </ValueSet>
-        </contained>
-        <contained>
-          <ValueSet>
-            <id value="eortc-qlq-c30-7pt"/>
-            <meta>
-              <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"/>
-            </meta>
-            <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-              <valueCoding>
-                <system value="http://hl7.org/fhir/version-algorithm"/>
-                <code value="natural"/>
-                <display value="Natural"/>
-              </valueCoding>
-            </extension>
-            <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
-            <version value="2027.0.0-ballot.rc3"/>
-            <status value="active"/>
-            <compose>
-              <include>
-                <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
-                <concept>
-                  <code value="1-very-poor"/>
-                </concept>
-                <concept>
-                  <code value="2-poor"/>
-                </concept>
-                <concept>
-                  <code value="3-fair"/>
-                </concept>
-                <concept>
-                  <code value="4-good"/>
-                </concept>
-                <concept>
-                  <code value="5-very-good"/>
-                </concept>
-                <concept>
-                  <code value="6-excellent"/>
-                </concept>
-                <concept>
-                  <code value="7-perfect"/>
-                </concept>
-              </include>
-            </compose>
-          </ValueSet>
-        </contained>
         <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
           <valueCoding>
             <system value="http://hl7.org/fhir/version-algorithm"/>
@@ -297,196 +73,196 @@
           <prefix value="1"/>
           <text value="Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q02"/>
           <prefix value="2"/>
           <text value="Do you have any trouble taking a long walk?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q03"/>
           <prefix value="3"/>
           <text value="Do you have any trouble taking a short walk outside of the house?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q04"/>
           <prefix value="4"/>
           <text value="Do you need to stay in bed or a chair during the day?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q05"/>
           <prefix value="5"/>
           <text value="Do you need help with eating, dressing, washing yourself or using the toilet?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q06"/>
           <prefix value="6"/>
           <text value="Were you limited in doing either your work or other daily activities?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q07"/>
           <prefix value="7"/>
           <text value="Were you limited in pursuing your hobbies or other leisure time activities?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q08"/>
           <prefix value="8"/>
           <text value="Were you short of breath?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q09"/>
           <prefix value="9"/>
           <text value="Have you had pain?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q10"/>
           <prefix value="10"/>
           <text value="Did you need to rest?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q11"/>
           <prefix value="11"/>
           <text value="Have you had trouble sleeping?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q12"/>
           <prefix value="12"/>
           <text value="Have you felt weak?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q13"/>
           <prefix value="13"/>
           <text value="Have you lacked appetite?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q14"/>
           <prefix value="14"/>
           <text value="Have you felt nauseated?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q15"/>
           <prefix value="15"/>
           <text value="Have you vomited?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q16"/>
           <prefix value="16"/>
           <text value="Have you been constipated?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q17"/>
           <prefix value="17"/>
           <text value="Have you had diarrhea?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q18"/>
           <prefix value="18"/>
           <text value="Were you tired?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q19"/>
           <prefix value="19"/>
           <text value="Did pain interfere with your daily activities?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q20"/>
           <prefix value="20"/>
           <text value="Have you had difficulty in concentrating on things, like reading a newspaper or watching television?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q21"/>
           <prefix value="21"/>
           <text value="Did you feel tense?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q22"/>
           <prefix value="22"/>
           <text value="Did you worry?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q23"/>
           <prefix value="23"/>
           <text value="Did you feel irritable?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q24"/>
           <prefix value="24"/>
           <text value="Did you feel depressed?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q25"/>
           <prefix value="25"/>
           <text value="Have you had difficulty remembering things?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q26"/>
           <prefix value="26"/>
           <text value="Has your physical condition or medical treatment interfered with your family life?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q27"/>
           <prefix value="27"/>
           <text value="Has your physical condition or medical treatment interfered with your social activities?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q28"/>
           <prefix value="28"/>
           <text value="Has your physical condition or medical treatment caused you financial difficulties?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-4pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
         </item>
         <item>
           <linkId value="QLQ-C30.Section2"/>
@@ -498,14 +274,14 @@
           <prefix value="29"/>
           <text value="How would you rate your overall health during the past week?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-7pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
         </item>
         <item>
           <linkId value="qlq-c30-q30"/>
           <prefix value="30"/>
           <text value="How would you rate your overall quality of life during the past week?"/>
           <type value="choice"/>
-          <answerValueSet value="#eortc-qlq-c30-7pt"/>
+          <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
         </item>
         <item>
           <linkId value="QLQ-C30.Scores"/>

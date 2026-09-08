@@ -42,25 +42,7 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.html" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant A"
-  },
-  {
-    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
-    "version" : "2027.0.0-ballot.rc3",
-    "status" : "active",
-    "name" : null,
-    "title" : null,
-    "description" : "",
-    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"]
-  },
-  {
-    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-variant-b",
-    "version" : "2027.0.0-ballot.rc3",
-    "status" : "active",
-    "name" : null,
-    "title" : null,
-    "description" : "",
-    "systems" : ["#eortc-qlq-c30-cs-b"]
+    "Questionnaire-mii-qst-pro-eortc-qlq-c30.html" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
@@ -72,25 +54,7 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.html" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant A"
-  },
-  {
-    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
-    "version" : "2027.0.0-ballot.rc3",
-    "status" : "active",
-    "name" : null,
-    "title" : null,
-    "description" : "",
-    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"]
-  },
-  {
-    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-variant-b",
-    "version" : "2027.0.0-ballot.rc3",
-    "status" : "active",
-    "name" : null,
-    "title" : null,
-    "description" : "",
-    "systems" : ["#eortc-qlq-c30-cs-b"]
+    "Questionnaire-mii-qst-pro-eortc-qlq-c30.html" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
@@ -273,8 +237,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal",
-    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)",
+    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
@@ -298,8 +262,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal",
-    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)",
+    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers",

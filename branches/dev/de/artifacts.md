@@ -49,8 +49,6 @@ Diese definieren Formulare, die von Systemen verwendet werden, die mit dem Imple
 | [ MII QST PRO CES-D  ](Questionnaire-mii-qst-pro-ces-d.md) | Center for Epidemiologic Studies Depression Scale (CES-D) - Metadata-only reference implementation |
 | [ MII QST PRO DASS-21  ](Questionnaire-mii-qst-pro-dass-dass21.md) | Depression Anxiety Stress Scales - 21 Items (DASS-21) |
 | [ MII QST PRO EORTC QLQ-C30  ](Questionnaire-mii-qst-pro-eortc-qlq-c30.md) | EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores |
-| [ MII QST PRO EORTC QLQ-C30 Variant A  ](Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.md) | EORTC QLQ-C30 Version 3.0 - Variant A: References standalone external ValueSets directly (no contained resources) |
-| [ MII QST PRO EORTC QLQ-C30 Variant B  ](Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-b.md) | EORTC QLQ-C30 Version 3.0 - Variant B: With contained CodeSystem and ValueSets referencing it via local reference #eortc-qlq-c30-cs-b |
 | [ MII QST PRO EPDS  ](Questionnaire-mii-qst-pro-epds.md) | Edinburgh Postnatal Depression Scale (EPDS) - Metadata-only reference implementation |
 | [ MII QST PRO EQ-5D-5L  ](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md) | MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire |
 | [ MII QST PRO EQ-5D-5L  ](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md) | MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire |

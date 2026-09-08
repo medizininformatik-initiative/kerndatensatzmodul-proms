@@ -16,7 +16,7 @@
 
  **References** 
 
-* [EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant A](Questionnaire-mii-qst-pro-eortc-qlq-c30-variant-a.md)
+* [EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0](Questionnaire-mii-qst-pro-eortc-qlq-c30.md)
 
 ### Logical Definition (CLD)
 
@@ -42,7 +42,7 @@
   "title" : "MII VS PRO EORTC QLQ-C30 7-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T11:13:58+00:00",
+  "date" : "2026-09-08T15:05:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

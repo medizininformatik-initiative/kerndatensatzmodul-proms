@@ -150,12 +150,10 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
       "Bundle.entry.resource",
-      "Bundle.entry.resource.contained",
       "CapabilityStatement",
       "ConceptMap",
       "ImplementationGuide",
       "Questionnaire",
-      "Questionnaire.contained",
       "SearchParameter"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm|5.3.0-ballot-tc1": [
@@ -203,9 +201,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/itemWeight": [
-      "Bundle.entry.resource.contained.concept",
       "Bundle.entry.resource.item.answerOption",
-      "Questionnaire.contained.concept",
       "Questionnaire.item.answerOption",
       "Questionnaire.item.answerOption.valueCoding",
       "Questionnaire.item.item.answerOption",

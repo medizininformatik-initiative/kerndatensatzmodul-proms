@@ -38,7 +38,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO EORTC QLQ-C30 Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T11:13:58+00:00",
+  "date" : "2026-09-08T15:05:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -68,6 +68,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "Überhaupt nicht"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
     }]
   },
   {
@@ -76,6 +80,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "Wenig"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
     }]
   },
   {
@@ -84,6 +92,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "Mäßig"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
     }]
   },
   {
@@ -92,6 +104,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "Sehr"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 4
     }]
   },
   {
@@ -132,6 +148,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "1 - Sehr schlecht"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
     }]
   },
   {
@@ -140,6 +160,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "2 - Schlecht"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
     }]
   },
   {
@@ -148,6 +172,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "3 - Mittelmäßig"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
     }]
   },
   {
@@ -156,6 +184,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "4 - Gut"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 4
     }]
   },
   {
@@ -164,6 +196,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "5 - Sehr gut"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 5
     }]
   },
   {
@@ -172,6 +208,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "6 - Ausgezeichnet"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 6
     }]
   },
   {
@@ -180,6 +220,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "7 - Vollkommen"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 7
     }]
   }]
 }

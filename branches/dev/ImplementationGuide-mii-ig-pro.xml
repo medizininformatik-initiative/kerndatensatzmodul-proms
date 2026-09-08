@@ -2353,28 +2353,6 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-a"/>
-      </reference>
-      <name value="MII QST PRO EORTC QLQ-C30 Variant A"/>
-      <description value="EORTC QLQ-C30 Version 3.0 - Variant A: References standalone external ValueSets directly (no contained resources)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/mii-qst-pro-eortc-qlq-c30-variant-b"/>
-      </reference>
-      <name value="MII QST PRO EORTC QLQ-C30 Variant B"/>
-      <description value="EORTC QLQ-C30 Version 3.0 - Variant B: With contained CodeSystem and ValueSets referencing it via local reference #eortc-qlq-c30-cs-b"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
         <reference value="Questionnaire/mii-qst-pro-epds"/>
       </reference>
       <name value="MII QST PRO EPDS"/>

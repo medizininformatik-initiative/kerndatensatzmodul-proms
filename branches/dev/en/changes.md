@@ -20,6 +20,8 @@ What does change:
 * **Jurisdiction** switched from m49#276 to `urn:iso:std:iso:3166#DE` (same meaning; the m49 encoding rendered "Unknown region code" in every page header).
 * Two small data fixes: the WHODAS example QuestionnaireResponse declares `language = #de`; the PROMIS-29 bundle no longer references the person module's patient profile with the PRO module version.
 
+**EORTC QLQ-C30 restructured to standalone terminology (2026-09-08):** the main questionnaire no longer contains its CodeSystem/ValueSets — it binds the standalone `mii-vs-pro-eortc-qlq-c30-scale-4pt/-7pt`, whose CodeSystem now carries the answer weights as `itemWeight` properties (ported 1:1 from the retired contained resources; EORTC scales are 1-based). The two modelling-experiment variants (`…-variant-a`, `…-variant-b`) are removed — they were referenced nowhere. Resolves the largest remaining QA class (82 contained-resource profile violations).
+
 **Dependency upgrade for the 2027 line (2026-09-08):** SDC 3.0.0 → **4.0.0** (final), ISiK 5.1.1 → **6.0.0**, kerndatensatz.meta 2026.0.0 → **2027.0.0-ballot.rc3**, basisprofil 1.5.4 → **1.6.0**. The SDC step is the breaking one and was migrated in full: the `ordinalValue` extension becomes **`itemWeight`** (395 answer options), CodeSystem weight properties become `concept-properties#itemWeight`, and all 90 FHIRPath scoring expressions switch from `.ordinal()` to **`.weight()`**. Existing QuestionnaireResponses are unaffected — weights live on the questionnaire and terminology side, not in the responses.
 
 Details and open decisions: [PR #129](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/pull/129).
