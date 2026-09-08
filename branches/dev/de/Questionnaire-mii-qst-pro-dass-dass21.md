@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-dass-dass21 | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*: |
 
  
 Depression Anxiety Stress Scales - 21 Items (DASS-21) 
@@ -88,7 +88,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO DASS-21",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T16:10:41+00:00",
+  "date" : "2026-09-08T07:03:30+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

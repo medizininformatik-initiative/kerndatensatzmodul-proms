@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15 | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-07 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_PHQ_15 |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_PHQ_15 |
 
  
 Profile for Patient Health Questionnaire-15 (PHQ-15) total somatic symptom severity score Observations (0-30; higher scores indicate greater somatic symptom burden). 
@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "title" : "MII PR PRO Observation PHQ-15",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-07T16:10:41+00:00",
+  "date" : "2026-09-08T07:03:30+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
