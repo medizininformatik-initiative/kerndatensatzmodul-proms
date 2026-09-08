@@ -1538,6 +1538,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/mii-cs-pro-loinc-supplement"/>
+      </reference>
+      <name value="MII CS PRO LOINC Supplement (validated answer wordings)"/>
+      <description value="Supplement to LOINC adding the validated German answer wordings (PHQ-D; PROMIS German via PHO/CPCOR; EQ-VAS anchors) as designations on the LOINC answer codes used by this module, plus two full PROMIS item wordings in English. Enables display validation of the instrument-validated wordings; claims no translation authority over LOINC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/mii-cs-pro-midos2"/>
       </reference>
       <name value="MII CS PRO MIDOS2 Items and Response Scales"/>

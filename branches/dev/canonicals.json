@@ -41,6 +41,13 @@
   "name" : "MII_CS_PRO_ISR_Z_Answers"
 },
 {
+  "id" : "mii-cs-pro-loinc-supplement",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement",
+  "version" : "2027.0.0-ballot.rc3",
+  "name" : "MII_CS_PRO_LOINC_Supplement"
+},
+{
   "id" : "mii-cs-pro-midos2",
   "type" : "CodeSystem",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",

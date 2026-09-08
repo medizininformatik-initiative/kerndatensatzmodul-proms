@@ -118,11 +118,6 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "text" : "German general population - EHIS wave 3 (n=22,996): Mean 46.5 (SD 7.7), Median 45.5"
     },
     "appliesTo" : [{
-      "coding" : [{
-        "system" : "http://loinc.org",
-        "code" : "LA6112-2",
-        "display" : "General population"
-      }],
       "text" : "German general population - EHIS wave 3 (n=22,996)"
     }]
   },
@@ -150,11 +145,6 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "text" : "European male population - EHIS wave 3 (29 countries): Median 44.11"
     },
     "appliesTo" : [{
-      "coding" : [{
-        "system" : "http://loinc.org",
-        "code" : "LA6112-2",
-        "display" : "General population"
-      }],
       "text" : "European male population - EHIS wave 3 (29 countries)"
     },
     {
@@ -189,11 +179,6 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "text" : "European female population - EHIS wave 3 (29 countries): Median 46.37"
     },
     "appliesTo" : [{
-      "coding" : [{
-        "system" : "http://loinc.org",
-        "code" : "LA6112-2",
-        "display" : "General population"
-      }],
       "text" : "European female population - EHIS wave 3 (29 countries)"
     },
     {
@@ -218,11 +203,6 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
       "text" : "Overall European population median (IQR) - EHIS wave 3, 29 countries (n=287,530)"
     },
     "appliesTo" : [{
-      "coding" : [{
-        "system" : "http://loinc.org",
-        "code" : "LA6112-2",
-        "display" : "General population"
-      }],
       "text" : "Overall European population - EHIS wave 3, 29 countries (n=287,530)"
     }]
   }]

@@ -36,7 +36,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "name" : "MII_CS_PRO_SSD_12_Answers",
   "title" : "MII CS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-09-08T15:29:28+00:00",
+  "date" : "2026-09-08T15:57:39+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
