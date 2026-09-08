@@ -4,7 +4,9 @@
 
 This page documents the changes between versions of the MII PRO module.
 
-### 2027.0.0-ballot.rc3 — in preparation
+### 2027.0.0-ballot.rc4 — in preparation
+
+**LOINC supplement (2026-09-08):** `mii-cs-pro-loinc-supplement` ships the validated German answer wordings (PHQ-D, PROMIS/PHO) as designations on 24 LOINC codes — content for consumers and terminology servers; measured on both relevant publishers (2.2.11, 2.3.2), display validation does not consume local supplements yet, so the ~178 display findings remain a documented environment class.
 
 The 2027 ballot version brings the **move onto the MII KDS module template** (v0.11.3) — the same toolchain as the other KDS modules. For implementers **nothing changes** in the FHIR artifacts: all 214 resources, their ids, canonicals and versions are unchanged (measured, 0 regressions).
 

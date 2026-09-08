@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-whodas12-response-01",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc3"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc4"
     ]
   },
   "subject": {
@@ -163,7 +163,7 @@
       "linkId": "whodas-whodas12-score-simple-sum"
     }
   ],
-  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12|2027.0.0-ballot.rc3",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12|2027.0.0-ballot.rc4",
   "status": "completed",
   "language": "de",
   "authored": "2026-02-01"
