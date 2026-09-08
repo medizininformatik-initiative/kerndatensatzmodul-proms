@@ -1,4 +1,4 @@
-# PHQ-9 Observation Example - MII IG PRO v2027.0.0-ballot.rc3
+# PHQ-9 Observation Example - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO Observation PHQ-9](StructureDefinition-mii-pr-pro-observation-phq-9.md) version: 2027.0.0-ballot.rc3
+Profile: [MII PR PRO Observation PHQ-9](StructureDefinition-mii-pr-pro-observation-phq-9.md) version: 2027.0.0-ballot.rc4
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [MII PR PRO Observation PHQ-9](StructureDefinition-mii-pr-pro-observati
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-phq-9-observation",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot.rc4"]
   },
   "status" : "final",
   "code" : {

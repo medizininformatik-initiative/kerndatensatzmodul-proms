@@ -1,4 +1,4 @@
-# MII CS PRO ISR-Z Answers - MII IG PRO v2027.0.0-ballot.rc3
+# MII CS PRO ISR-Z Answers - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers | *Version*:2027.0.0-ballot.rc4 |
 | Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_CS_PRO_ISR_Z_Answers |
 
  
@@ -32,11 +32,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "id" : "mii-cs-pro-isr-z-answers",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_CS_PRO_ISR_Z_Answers",
   "title" : "MII CS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-09-08T15:57:39+00:00",
+  "date" : "2026-09-08T16:46:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

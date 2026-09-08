@@ -1,4 +1,4 @@
-# SSD-12 Score Observation Example - MII IG PRO v2027.0.0-ballot.rc3
+# SSD-12 Score Observation Example - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2027.0.0-ballot.rc3
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2027.0.0-ballot.rc4
 
 **status**: Final
 
@@ -37,7 +37,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-ssd-12-score",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.rc4"]
   },
   "status" : "final",
   "category" : [{

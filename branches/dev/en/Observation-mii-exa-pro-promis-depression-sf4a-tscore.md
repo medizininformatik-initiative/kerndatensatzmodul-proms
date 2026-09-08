@@ -1,4 +1,4 @@
-# MII EXA PRO PROMIS Depression SF 4a T-Score - MII IG PRO v2027.0.0-ballot.rc3
+# MII EXA PRO PROMIS Depression SF 4a T-Score - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO Depression Domain T-Score](StructureDefinition-mii-pr-pro-depression-t-score.md) version: 2027.0.0-ballot.rc3
+Profile: [MII PR PRO Depression Domain T-Score](StructureDefinition-mii-pr-pro-depression-t-score.md) version: 2027.0.0-ballot.rc4
 
 **status**: Final
 
@@ -37,7 +37,7 @@ Profile: [MII PR PRO Depression Domain T-Score](StructureDefinition-mii-pr-pro-d
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-promis-depression-sf4a-tscore",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score|2027.0.0-ballot.rc3"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score|2027.0.0-ballot.rc4"]
   },
   "status" : "final",
   "category" : [{

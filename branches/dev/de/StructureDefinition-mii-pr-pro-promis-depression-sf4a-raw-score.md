@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2027.0.0-ballot.rc3
+# MII PR PRO PROMIS Depression SF 4a Raw Score - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score | *Version*:2027.0.0-ballot.rc4 |
 | Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score |
 
  
@@ -110,11 +110,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-depression-sf4a-raw-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Depression SF 4a Raw Score",
   "status" : "active",
-  "date" : "2026-09-08T15:57:39+00:00",
+  "date" : "2026-09-08T16:46:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

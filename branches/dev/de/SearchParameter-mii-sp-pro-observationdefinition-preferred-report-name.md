@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-preferred-report-name - MII IG PRO v2027.0.0-ballot.rc3
+# mii-sp-pro-observationdefinition-preferred-report-name - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name | *Version*:2027.0.0-ballot.rc4 |
 | Active Stand: 2025-05-24 | *Maschinenlesbarer Name*:MII_SP_PRO_ObservationDefinition_PreferredReportName |
 
  
@@ -44,7 +44,7 @@ SearchParameter for ObservationDefinition.preferredReportName to search score de
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-preferred-report-name",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_SP_PRO_ObservationDefinition_PreferredReportName",
   "status" : "active",
   "experimental" : true,

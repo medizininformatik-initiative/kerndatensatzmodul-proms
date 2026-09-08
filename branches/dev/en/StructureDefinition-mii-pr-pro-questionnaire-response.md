@@ -1,4 +1,4 @@
-# MII PR PRO QuestionnaireResponse - MII IG PRO v2027.0.0-ballot.rc3
+# MII PR PRO QuestionnaireResponse - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response | *Version*:2027.0.0-ballot.rc4 |
 | Active as of 2026-09-08 | *Computable Name*:MII_PR_PRO_QuestionnaireResponse |
 
  
@@ -49,11 +49,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-questi
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-questionnaire-response",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_PRO_QuestionnaireResponse",
   "title" : "MII PR PRO QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-09-08T15:57:39+00:00",
+  "date" : "2026-09-08T16:46:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

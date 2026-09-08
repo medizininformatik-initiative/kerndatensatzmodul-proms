@@ -1,4 +1,4 @@
-# MII PR PRO Questionnaire Capabilities - MII IG PRO v2027.0.0-ballot.rc3
+# MII PR PRO Questionnaire Capabilities - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities | *Version*:2027.0.0-ballot.rc4 |
 | Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_PRO_Questionnaire_Capabilities |
 
 MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification
@@ -84,12 +84,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-pro-q
   "resourceType" : "StructureDefinition",
   "id" : "mii-ex-pro-questionnaire-capabilities",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_PRO_Questionnaire_Capabilities",
   "title" : "MII PR PRO Questionnaire Capabilities",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T15:57:39+00:00",
+  "date" : "2026-09-08T16:46:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

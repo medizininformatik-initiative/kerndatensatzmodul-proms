@@ -1,4 +1,4 @@
-# MII VS PRO PHQ-15 Answers - MII IG PRO v2027.0.0-ballot.rc3
+# MII VS PRO PHQ-15 Answers - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers | *Version*:2027.0.0-ballot.rc4 |
 | Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_VS_PRO_PHQ_15_Answers |
 
  
@@ -37,11 +37,11 @@ PHQ-15 somatic symptom bother severity answer options (0 = Nicht beeinträchtigt
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-phq-15-answers",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_PRO_PHQ_15_Answers",
   "title" : "MII VS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-09-08T15:57:39+00:00",
+  "date" : "2026-09-08T16:46:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

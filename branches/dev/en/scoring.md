@@ -1,4 +1,4 @@
-# Scoring - MII IG PRO v2027.0.0-ballot.rc3
+# Scoring - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * **Scoring**

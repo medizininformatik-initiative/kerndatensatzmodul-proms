@@ -1,4 +1,4 @@
-# MII VS PRO WHODAS 2.0 12-Item Answer List - MII IG PRO v2027.0.0-ballot.rc3
+# MII VS PRO WHODAS 2.0 12-Item Answer List - MII IG PRO v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list | *Version*:2027.0.0-ballot.rc4 |
 | Active as of 2026-09-08 | *Computable Name*:MII_VS_PRO_WHODAS_12_Answer_List |
 
  
@@ -37,12 +37,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-whodas-12-answer-list",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_PRO_WHODAS_12_Answer_List",
   "title" : "MII VS PRO WHODAS 2.0 12-Item Answer List",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T15:57:39+00:00",
+  "date" : "2026-09-08T16:46:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
