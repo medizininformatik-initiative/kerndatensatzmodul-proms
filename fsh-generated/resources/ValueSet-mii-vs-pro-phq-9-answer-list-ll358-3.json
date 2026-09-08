@@ -22,12 +22,6 @@
                 "language": "de",
                 "value": "Überhaupt nicht"
               }
-            ],
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                "valueDecimal": 0
-              }
             ]
           },
           {
@@ -37,12 +31,6 @@
               {
                 "language": "de",
                 "value": "An einzelnen Tagen"
-              }
-            ],
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                "valueDecimal": 1
               }
             ]
           },
@@ -54,12 +42,6 @@
                 "language": "de",
                 "value": "An mehr als der Hälfte der Tage"
               }
-            ],
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                "valueDecimal": 2
-              }
             ]
           },
           {
@@ -69,12 +51,6 @@
               {
                 "language": "de",
                 "value": "Beinahe jeden Tag"
-              }
-            ],
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                "valueDecimal": 3
               }
             ]
           }
