@@ -9,14 +9,15 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff",
   "title": "MII QST PRO SCOFF",
   "description": "SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation",
-  "code": [
-    {
-      "code": "scoff",
-      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-      "display": "SCOFF Questionnaire"
-    }
-  ],
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
     {
       "extension": [
         {
@@ -49,6 +50,13 @@
         "expression": "%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.weight().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "scoff",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "SCOFF Questionnaire"
     }
   ],
   "item": [

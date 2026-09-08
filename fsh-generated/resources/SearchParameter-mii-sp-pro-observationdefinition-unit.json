@@ -29,6 +29,14 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
     }
   ],
   "base": [

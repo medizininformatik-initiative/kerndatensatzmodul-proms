@@ -29,42 +29,48 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "MOBILITY"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #1
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have no problems in walking about"
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #2
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have slight problems in walking about"
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #3
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have moderate problems in walking about"
-* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe große Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #4
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have severe problems in walking about"
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht in der Lage herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #5
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am unable to walk about"
-* item[=].answerOption[+].valueCoding.display = "Fehlender Wert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Fehlender Wert"
 * item[=].answerOption[=].valueCoding.code = #9
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -83,42 +89,48 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "SELF-CARE"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #1
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have no problems washing or dressing myself"
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #2
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have slight problems washing or dressing myself"
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #3
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have moderate problems washing or dressing myself"
-* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #4
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have severe problems washing or dressing myself"
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #5
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am unable to wash or dress myself"
-* item[=].answerOption[+].valueCoding.display = "Fehlender Wert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Fehlender Wert"
 * item[=].answerOption[=].valueCoding.code = #9
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -137,42 +149,48 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #1
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have no problems doing my usual activities"
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #2
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have slight problems doing my usual activities"
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #3
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have moderate problems doing my usual activities"
-* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #4
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have severe problems doing my usual activities"
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #5
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am unable to do my usual activities"
-* item[=].answerOption[+].valueCoding.display = "Fehlender Wert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Fehlender Wert"
 * item[=].answerOption[=].valueCoding.code = #9
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -191,42 +209,48 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "PAIN / DISCOMFORT"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #1
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have no pain or discomfort"
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #2
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have slight pain or discomfort"
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #3
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have moderate pain or discomfort"
-* item[=].answerOption[+].valueCoding.display = "Ich habe starke Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe starke Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #4
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have severe pain or discomfort"
-* item[=].answerOption[+].valueCoding.display = "Ich habe extreme Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe extreme Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #5
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I have extreme pain or discomfort"
-* item[=].answerOption[+].valueCoding.display = "Fehlender Wert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Fehlender Wert"
 * item[=].answerOption[=].valueCoding.code = #9
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -245,42 +269,48 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "ANXIETY / DEPRESSION"
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #1
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am not anxious or depressed"
-* item[=].answerOption[+].valueCoding.display = "Ich bin ein wenig ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin ein wenig ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #2
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am slightly anxious or depressed"
-* item[=].answerOption[+].valueCoding.display = "Ich bin mäßig ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin mäßig ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #3
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am moderately anxious or depressed"
-* item[=].answerOption[+].valueCoding.display = "Ich bin sehr ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin sehr ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #4
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am severely anxious or depressed"
-* item[=].answerOption[+].valueCoding.display = "Ich bin extrem ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin extrem ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #5
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "I am extremely anxious or depressed"
-* item[=].answerOption[+].valueCoding.display = "Fehlender Wert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Fehlender Wert"
 * item[=].answerOption[=].valueCoding.code = #9
 * item[=].answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
 * item[=].answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"

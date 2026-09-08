@@ -9,22 +9,15 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding",
   "title": "MII QST PRO EQ-5D-5L",
   "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
-  "code": [
-    {
-      "code": "73041000052103",
-      "system": "http://snomed.info/sct",
-      "display": "EuroQoL five dimension five level questionnaire"
-    },
-    {
-      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-      "code": "euroqol-eq5d5l",
-      "display": "EuroQol EQ-5D-5L Questionnaire"
-    }
-  ],
-  "derivedFrom": [
-    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
-  ],
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
     {
       "extension": [
         {
@@ -50,6 +43,21 @@
       ],
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
+  ],
+  "code": [
+    {
+      "code": "73041000052103",
+      "system": "http://snomed.info/sct",
+      "display": "EuroQoL five dimension five level questionnaire"
+    },
+    {
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "euroqol-eq5d5l",
+      "display": "EuroQol EQ-5D-5L Questionnaire"
+    }
+  ],
+  "derivedFrom": [
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
   ],
   "item": [
     {

@@ -9,19 +9,15 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7",
   "title": "MII QST PRO GAD-7",
   "description": "Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte Angststoerung, mit deutscher Uebersetzung (PHQ-D)",
-  "code": [
-    {
-      "code": "69737-5",
-      "system": "http://loinc.org",
-      "display": "Generalized anxiety disorder 7 item (GAD-7)"
-    },
-    {
-      "code": "phq-gad7",
-      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-      "display": "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
-    }
-  ],
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
     {
       "extension": [
         {
@@ -54,6 +50,18 @@
         "expression": "%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.weight().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "69737-5",
+      "system": "http://loinc.org",
+      "display": "Generalized anxiety disorder 7 item (GAD-7)"
+    },
+    {
+      "code": "phq-gad7",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
     }
   ],
   "item": [

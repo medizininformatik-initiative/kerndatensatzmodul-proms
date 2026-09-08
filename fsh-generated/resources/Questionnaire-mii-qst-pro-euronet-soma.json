@@ -9,14 +9,15 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euronet-soma",
   "title": "MII QST PRO EURONET-SOMA",
   "description": "EURONET-SOMA — two core outcome NRS items for somatic symptom intensity and interference (Rief et al. 2017) with German translation",
-  "code": [
-    {
-      "code": "euronet-soma",
-      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-      "display": "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)"
-    }
-  ],
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
     {
       "extension": [
         {
@@ -41,6 +42,13 @@
         }
       ],
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "code": [
+    {
+      "code": "euronet-soma",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)"
     }
   ],
   "item": [

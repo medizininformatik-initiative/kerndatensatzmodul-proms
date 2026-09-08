@@ -19,19 +19,15 @@
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30",
         "title": "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
         "description": "EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "273446001",
-            "display": "European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"
-          },
-          {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-            "code": "eortc-qlq-c30",
-            "display": "EORTC QLQ-C30 Quality of Life Questionnaire"
-          }
-        ],
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+            "valueCoding": {
+              "code": "natural",
+              "system": "http://hl7.org/fhir/version-algorithm",
+              "display": "Natural Ordering"
+            }
+          },
           {
             "extension": [
               {
@@ -58,6 +54,18 @@
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
           }
         ],
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "273446001",
+            "display": "European Organisation for Research and Treatment of Cancer - Quality of Life questionnaire (assessment scale)"
+          },
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+            "code": "eortc-qlq-c30",
+            "display": "EORTC QLQ-C30 Quality of Life Questionnaire"
+          }
+        ],
         "contained": [
           {
             "resourceType": "CodeSystem",
@@ -67,6 +75,16 @@
                 "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"
               ]
             },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+                "valueCoding": {
+                  "code": "natural",
+                  "system": "http://hl7.org/fhir/version-algorithm",
+                  "display": "Natural Ordering"
+                }
+              }
+            ],
             "concept": [
               {
                 "designation": [
@@ -259,6 +277,16 @@
                 "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"
               ]
             },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+                "valueCoding": {
+                  "code": "natural",
+                  "system": "http://hl7.org/fhir/version-algorithm",
+                  "display": "Natural Ordering"
+                }
+              }
+            ],
             "compose": {
               "include": [
                 {
@@ -296,6 +324,16 @@
                 "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc3"
               ]
             },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+                "valueCoding": {
+                  "code": "natural",
+                  "system": "http://hl7.org/fhir/version-algorithm",
+                  "display": "Natural Ordering"
+                }
+              }
+            ],
             "compose": {
               "include": [
                 {

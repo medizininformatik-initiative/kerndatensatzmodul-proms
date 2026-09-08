@@ -25,71 +25,96 @@ Usage: #definition
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].type = #choice
 * item[=].text = "BEWEGLICHKEIT / MOBILITÄT"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #1
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #2
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #3
-* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe große Probleme herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #4
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage herumzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht in der Lage herumzugehen"
 * item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q02-SC"
 * item[=].type = #choice
 * item[=].text = "FÜR SICH SELBST SORGEN"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #1
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #2
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #3
-* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #4
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q03-UA"
 * item[=].type = #choice
 * item[=].text = "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #1
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #2
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #3
-* item[=].answerOption[+].valueCoding.display = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #4
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q04-PD"
 * item[=].type = #choice
 * item[=].text = "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN"
-* item[=].answerOption[+].valueCoding.display = "Ich habe keine Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe keine Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #1
-* item[=].answerOption[+].valueCoding.display = "Ich habe leichte Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe leichte Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #2
-* item[=].answerOption[+].valueCoding.display = "Ich habe mäßige Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe mäßige Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #3
-* item[=].answerOption[+].valueCoding.display = "Ich habe starke Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe starke Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #4
-* item[=].answerOption[+].valueCoding.display = "Ich habe extreme Schmerzen oder Beschwerden"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich habe extreme Schmerzen oder Beschwerden"
 * item[=].answerOption[=].valueCoding.code = #5
 
 * item[+].linkId = "euroqol-eq5d5l-q05-AD"
 * item[=].type = #choice
 * item[=].text = "ANGST / NIEDERGESCHLAGENHEIT"
-* item[=].answerOption[+].valueCoding.display = "Ich bin nicht ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin nicht ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #1
-* item[=].answerOption[+].valueCoding.display = "Ich bin ein wenig ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin ein wenig ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #2
-* item[=].answerOption[+].valueCoding.display = "Ich bin mäßig ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin mäßig ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #3
-* item[=].answerOption[+].valueCoding.display = "Ich bin sehr ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin sehr ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #4
-* item[=].answerOption[+].valueCoding.display = "Ich bin extrem ängstlich oder deprimiert"
+* item[=].answerOption[+].valueCoding.system = $mii-cs-pro-eq-5d-value-set
+* item[=].answerOption[=].valueCoding.display = "Ich bin extrem ängstlich oder deprimiert"
 * item[=].answerOption[=].valueCoding.code = #5
 
 // Individueller Gesundheitsindikator (Konkatenation der Antwortwerte)

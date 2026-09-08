@@ -9,6 +9,41 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16",
   "title": "MII QST PRO PROMIS-16 (Adults)",
   "description": "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": false
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
   "useContext": [
     {
       "valueReference": {
@@ -57,33 +92,6 @@
       "code": "promis-promis16",
       "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "display": "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)"
-    }
-  ],
-  "extension": [
-    {
-      "extension": [
-        {
-          "url": "displayable",
-          "valueBoolean": true
-        },
-        {
-          "url": "collectable",
-          "valueBoolean": true
-        },
-        {
-          "url": "calculatable",
-          "valueBoolean": false
-        },
-        {
-          "url": "extractable",
-          "valueBoolean": true
-        },
-        {
-          "url": "domainAligned",
-          "valueBoolean": true
-        }
-      ],
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
     }
   ],
   "item": [

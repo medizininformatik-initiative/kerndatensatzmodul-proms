@@ -9,19 +9,15 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal",
   "title": "MII QST PRO PROMIS-29 Minimal",
   "description": "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
-  "code": [
-    {
-      "code": "62337-1",
-      "system": "http://loinc.org",
-      "display": "PROMIS item bank - 29 profile"
-    },
-    {
-      "code": "promis-promis29",
-      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-      "display": "PROMIS-29 Questionnaire"
-    }
-  ],
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
     {
       "extension": [
         {
@@ -46,6 +42,18 @@
         }
       ],
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "code": [
+    {
+      "code": "62337-1",
+      "system": "http://loinc.org",
+      "display": "PROMIS item bank - 29 profile"
+    },
+    {
+      "code": "promis-promis29",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PROMIS-29 Questionnaire"
     }
   ],
   "derivedFrom": [

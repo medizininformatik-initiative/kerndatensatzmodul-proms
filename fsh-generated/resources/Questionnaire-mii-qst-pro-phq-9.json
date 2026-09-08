@@ -9,19 +9,15 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
   "title": "MII QST PRO PHQ-9",
   "description": "Patient Health Questionnaire (PHQ-9)",
-  "code": [
-    {
-      "code": "44249-1",
-      "system": "http://loinc.org",
-      "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
-    },
-    {
-      "code": "phq-phq9",
-      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-      "display": "PHQ-9 Questionnaire"
-    }
-  ],
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
     {
       "extension": [
         {
@@ -66,6 +62,18 @@
         "expression": "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.weight().sum()"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "44249-1",
+      "system": "http://loinc.org",
+      "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+    },
+    {
+      "code": "phq-phq9",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PHQ-9 Questionnaire"
     }
   ],
   "item": [

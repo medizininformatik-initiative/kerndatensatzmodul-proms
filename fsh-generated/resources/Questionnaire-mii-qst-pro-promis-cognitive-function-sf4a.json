@@ -9,6 +9,45 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a",
   "title": "MII QST PRO PROMIS Cognitive Function SF 4a",
   "description": "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural Ordering"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "cognitiveRawScore",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
   "useContext": [
     {
       "valueReference": {
@@ -52,37 +91,6 @@
       "code": "promis-cognitive-function-sf4a",
       "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
       "display": "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
-    }
-  ],
-  "extension": [
-    {
-      "extension": [
-        {
-          "url": "displayable",
-          "valueBoolean": true
-        },
-        {
-          "url": "collectable",
-          "valueBoolean": true
-        },
-        {
-          "url": "calculatable",
-          "valueBoolean": true
-        },
-        {
-          "url": "extractable",
-          "valueBoolean": true
-        }
-      ],
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
-    },
-    {
-      "valueExpression": {
-        "name": "cognitiveRawScore",
-        "language": "text/fhirpath",
-        "expression": "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.weight().sum()"
-      },
-      "url": "http://hl7.org/fhir/StructureDefinition/variable"
     }
   ],
   "item": [
