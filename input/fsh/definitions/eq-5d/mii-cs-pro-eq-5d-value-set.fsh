@@ -277,8 +277,8 @@ Description: "EuroQol EQ-5D Value Set"
 // The collectable/minimal variants deliberately use the bare EuroQol LEVEL
 // digits (they concatenate into the profile string, e.g. "11213") — these
 // five universal levels are therefore first-class concepts of this CS.
-* #1 "Level 1"
-* #2 "Level 2"
-* #3 "Level 3"
-* #4 "Level 4"
-* #5 "Level 5"
+* #1
+* #2
+* #3
+* #4
+* #5

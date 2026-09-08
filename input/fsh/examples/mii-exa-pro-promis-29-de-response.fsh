@@ -18,19 +18,19 @@ Usage: #example
 
 // Item 1: Chores (vacuuming/yard work) - With some difficulty (3)
 * item[=].item[+].linkId = "promis-pfa11"
-* item[=].item[=].answer.valueCoding = $LNC#LA13920-6 "With some difficulty"
+* item[=].item[=].answer.valueCoding = $LNC#LA13920-6 "Mit einigen Schwierigkeiten"
 
 // Item 2: Groceries up stairs - With some difficulty (3)
 * item[=].item[+].linkId = "promis-pfa21"
-* item[=].item[=].answer.valueCoding = $LNC#LA13920-6 "With some difficulty"
+* item[=].item[=].answer.valueCoding = $LNC#LA13920-6 "Mit einigen Schwierigkeiten"
 
 // Item 3: One mile walk - With a little difficulty (4)
 * item[=].item[+].linkId = "promis-pfa23"
-* item[=].item[=].answer.valueCoding = $LNC#LA13918-0 "With a little difficulty"
+* item[=].item[=].answer.valueCoding = $LNC#LA13918-0 "Mit geringen Schwierigkeiten"
 
 // Item 4: Vigorous activities - With some difficulty (3)
 * item[=].item[+].linkId = "promis-pfa53"
-* item[=].item[=].answer.valueCoding = $LNC#LA13920-6 "With some difficulty"
+* item[=].item[=].answer.valueCoding = $LNC#LA13920-6 "Mit einigen Schwierigkeiten"
 
 // ===== ANXIETY DOMAIN =====
 // Mild anxiety (answers: 2, 3, 2, 2 → raw score 9)
@@ -40,19 +40,19 @@ Usage: #example
 
 // Item 1: Fearful - Rarely (2)
 * item[=].item[+].linkId = "promis-edanx01"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Selten"
 
 // Item 2: Difficulty focusing - Sometimes (3)
 * item[=].item[+].linkId = "promis-edanx40"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Manchmal"
 
 // Item 3: Worries - Rarely (2)
 * item[=].item[+].linkId = "promis-edanx41"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Selten"
 
 // Item 4: Tense - Rarely (2)
 * item[=].item[+].linkId = "promis-edanx53"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Selten"
 
 // ===== DEPRESSION DOMAIN =====
 // Moderate depression (answers: 3, 3, 4, 3 → raw score 13)
@@ -62,19 +62,19 @@ Usage: #example
 
 // Item 1: Worthless - Sometimes (3)
 * item[=].item[+].linkId = "promis-eddep04"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Manchmal"
 
 // Item 2: Helpless - Sometimes (3)
 * item[=].item[+].linkId = "promis-eddep06"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Manchmal"
 
 // Item 3: Depressed - Often (4)
 * item[=].item[+].linkId = "promis-eddep29"
-* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA10044-8 "Oft"
 
 // Item 4: Hopeless - Sometimes (3)
 * item[=].item[+].linkId = "promis-eddep41"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Manchmal"
 
 // ===== FATIGUE DOMAIN =====
 // Significant fatigue (answers: 4, 4, 3, 4 → raw score 15)
@@ -84,19 +84,19 @@ Usage: #example
 
 // Item 1: Run down - Often (4)
 * item[=].item[+].linkId = "promis-hi7"
-* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Ziemlich"
 
 // Item 2: Fatigued - Often (4)
 * item[=].item[+].linkId = "promis-an3"
-* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Ziemlich"
 
 // Item 3: Difficulty starting things - Somewhat (3)
 * item[=].item[+].linkId = "promis-fatexp41"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Mäßig"
 
 // Item 4: Average fatigue - Quite a bit (4)
 * item[=].item[+].linkId = "promis-fatexp40"
-* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Quite a bit"
+* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Ziemlich"
 
 // ===== SLEEP DISTURBANCE DOMAIN =====
 // Moderate sleep problems (answers: 3, 3, 3, 2 → raw score 11)
@@ -106,19 +106,19 @@ Usage: #example
 
 // Item 1: Sleep quality - Fair (3)
 * item[=].item[+].linkId = "promis-sleep109"
-* item[=].item[=].answer.valueCoding = $LNC#LA8968-5 "Fair"
+* item[=].item[=].answer.valueCoding = $LNC#LA8968-5 "Mäßig"
 
 // Item 2: Difficulty falling asleep - Sometimes (3)
 * item[=].item[+].linkId = "promis-sleep116"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Mäßig"
 
 // Item 3: Refreshing sleep - Sometimes (3)
 * item[=].item[+].linkId = "promis-sleep20"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Mäßig"
 
 // Item 4: Sleep problem - Rarely (2)
 * item[=].item[+].linkId = "promis-sleep44"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Ein wenig"
 
 // ===== SOCIAL FUNCTION DOMAIN =====
 // Some social limitation (answers: 3, 2, 3, 3 → raw score 11)
@@ -128,19 +128,19 @@ Usage: #example
 
 // Item 1: Social activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper11-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Manchmal"
 
 // Item 2: Family activities - Rarely (2)
 * item[=].item[+].linkId = "promis-srpper18-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Selten"
 
 // Item 3: Work activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper23-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Manchmal"
 
 // Item 4: Leisure activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper46-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Manchmal"
 
 // ===== PAIN INTERFERENCE DOMAIN =====
 // Moderate pain interference (answers: 3, 3, 2, 3 → raw score 11)
@@ -150,19 +150,19 @@ Usage: #example
 
 // Item 1: Day-to-day activities - Somewhat (3)
 * item[=].item[+].linkId = "promis-painin9"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Mäßig"
 
 // Item 2: Work activities - Somewhat (3)
 * item[=].item[+].linkId = "promis-painin22"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Mäßig"
 
 // Item 3: Household chores - A little bit (2)
 * item[=].item[+].linkId = "promis-painin31"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "A little bit"
+* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Ein wenig"
 
 // Item 4: Social activities - Somewhat (3)
 * item[=].item[+].linkId = "promis-painin34"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Mäßig"
 
 // ===== PAIN INTENSITY =====
 

@@ -122,19 +122,19 @@ Usage: #inline
 
 // Item 1: Fearful - Rarely (2)
 * item[=].item[+].linkId = "promis-edanx01"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Rarely"
 
 // Item 2: Difficulty focusing - Sometimes (3)
 * item[=].item[+].linkId = "promis-edanx40"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // Item 3: Worries - Rarely (2)
 * item[=].item[+].linkId = "promis-edanx41"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Rarely"
 
 // Item 4: Tense - Rarely (2)
 * item[=].item[+].linkId = "promis-edanx53"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Rarely"
 
 // ===== DEPRESSION DOMAIN =====
 // Moderate depression (answers: 3, 3, 4, 3 -> raw score 13)
@@ -144,19 +144,19 @@ Usage: #inline
 
 // Item 1: Worthless - Sometimes (3)
 * item[=].item[+].linkId = "promis-eddep04"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // Item 2: Helpless - Sometimes (3)
 * item[=].item[+].linkId = "promis-eddep06"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // Item 3: Depressed - Often (4)
 * item[=].item[+].linkId = "promis-eddep29"
-* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA10044-8 "Often"
 
 // Item 4: Hopeless - Sometimes (3)
 * item[=].item[+].linkId = "promis-eddep41"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // ===== FATIGUE DOMAIN =====
 // Significant fatigue (answers: 4, 4, 3, 4 -> raw score 15)
@@ -166,11 +166,11 @@ Usage: #inline
 
 // Item 1: Run down - Often (4)
 * item[=].item[+].linkId = "promis-hi7"
-* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Quite a bit"
 
 // Item 2: Fatigued - Often (4)
 * item[=].item[+].linkId = "promis-an3"
-* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Often"
+* item[=].item[=].answer.valueCoding = $LNC#LA13902-4 "Quite a bit"
 
 // Item 3: Difficulty starting things - Somewhat (3)
 * item[=].item[+].linkId = "promis-fatexp41"
@@ -192,15 +192,15 @@ Usage: #inline
 
 // Item 2: Difficulty falling asleep - Sometimes (3)
 * item[=].item[+].linkId = "promis-sleep116"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
 
 // Item 3: Refreshing sleep - Sometimes (3)
 * item[=].item[+].linkId = "promis-sleep20"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Somewhat"
 
 // Item 4: Sleep problem - Rarely (2)
 * item[=].item[+].linkId = "promis-sleep44"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "A little bit"
 
 // ===== SOCIAL FUNCTION DOMAIN =====
 // Some social limitation (answers: 3, 2, 3, 3 -> raw score 11)
@@ -210,19 +210,19 @@ Usage: #inline
 
 // Item 1: Social activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper11-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // Item 2: Family activities - Rarely (2)
 * item[=].item[+].linkId = "promis-srpper18-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13863-8 "Rarely"
+* item[=].item[=].answer.valueCoding = $LNC#LA10066-1 "Rarely"
 
 // Item 3: Work activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper23-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // Item 4: Leisure activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper46-caps"
-* item[=].item[=].answer.valueCoding = $LNC#LA13909-9 "Sometimes"
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
 
 // ===== PAIN INTERFERENCE DOMAIN =====
 // Moderate pain interference (answers: 3, 3, 2, 3 -> raw score 11)

@@ -19,7 +19,7 @@ RuleSet: Version
 // SDC 4.0 sdc-2: a version REQUIRES a versionAlgorithm. MII CalVer
 // (YYYY.n.n[-label]) orders naturally; "natural" is the honest declaration.
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm"
-* extension[=].valueCoding = http://hl7.org/fhir/version-algorithm#natural "Natural Ordering"
+* extension[=].valueCoding = http://hl7.org/fhir/version-algorithm#natural "Natural"
 
 // For Profile, CodeSystem, ValueSet, Extension definitions (caret notation)
 RuleSet: PR_CS_VS_Version
