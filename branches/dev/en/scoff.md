@@ -27,8 +27,8 @@ A positive screening is explicitly **not a substitute for a diagnosis**: the ins
 **Implementation notes:**
 
 * linkIds `scoff-q01`…`scoff-q05`, score item `scoff-score-total`.
-* Answers as **inline `answerOption` with SNOMED CT** `373067005` (No, weight 0) and `373066001` (Yes, weight 1) — bundled in the shared RuleSet `YesNoAnswerOptions`. A dedicated MII CodeSystem would duplicate standardised terminology; since no `ordinalValue` property can be attached to SNOMED concepts, the weights sit inline rather than in an `answerValueSet`.
-* Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()`.
+* Answers as **inline `answerOption` with SNOMED CT** `373067005` (No, weight 0) and `373066001` (Yes, weight 1) — bundled in the shared RuleSet `YesNoAnswerOptions`. A dedicated MII CodeSystem would duplicate standardised terminology; since no `itemWeight` property can be attached to SNOMED concepts, the weights sit inline rather than in an `answerValueSet`.
+* Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.weight().sum()`.
 * **Divergence between original and translation:** item 3 asks about "One stone" (≈ 6.35 kg) in the original, the German version about "mehr als 6 kg". Both wordings are preserved verbatim; the threshold is not harmonised.
 * Neither a LOINC nor a SNOMED CT code exists for the SCOFF instrument itself (checked against LOINC 2.83 and SNOMED International 2026-05-01); coding is therefore via the MII questionnaire catalogue.
 

@@ -350,7 +350,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>linkIds in the PHQ-D block namespace: <code class="language-plaintext highlighter-rouge">phq-phq5a</code>…<code class="language-plaintext highlighter-rouge">phq-phq5g</code>, score item <code class="language-plaintext highlighter-rouge">phq-gad7-score-total</code>.</li>
   <li>Answer scale via the shared RuleSet <code class="language-plaintext highlighter-rouge">Phq4PointFrequencyAnswerOptions</code> — inline <code class="language-plaintext highlighter-rouge">answerOption</code> with the LOINC answer codes of list LL358-3 (<code class="language-plaintext highlighter-rouge">LA6568-5</code>…<code class="language-plaintext highlighter-rouge">LA6571-9</code>) and ordinal weights 0–3. The same scale as the PHQ-9.</li>
-  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.ordinal().sum()</code>.</li>
+  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.weight().sum()</code>.</li>
   <li>LOINC panel <code class="language-plaintext highlighter-rouge">69737-5</code>, score item with LOINC <code class="language-plaintext highlighter-rouge">70274-6</code>.</li>
 </ul>
 
@@ -409,7 +409,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

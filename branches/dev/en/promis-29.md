@@ -53,7 +53,7 @@ Each domain (except Pain Intensity) is calculated as a T-Score:
 // Example: Depression Domain
 %rawScore = %resource.item
   .where(linkId.matches('^promis-eddep(04|05|06|29)$'))
-  .answer.value.ordinal()
+  .answer.value.weight()
   .sum()
 
 // T-Score Lookup (simplified)

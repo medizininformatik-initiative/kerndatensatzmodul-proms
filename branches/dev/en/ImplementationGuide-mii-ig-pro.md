@@ -34,6 +34,10 @@ This IG contains the following dependencies on other IGs.
 
 
 
+
+
+
+
 > **Where the versions come from.** Every package in the table is pinned directly in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/sushi-config.yaml) (`dependencies:`) — including `hl7.terminology.r4` (THO) and `hl7.fhir.uv.extensions.r4`, and those two deliberately so: the IG Publisher's [automatic-packages rule](https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages) consults only this guide's **own** dependency list, so without a direct pin every build would silently inject the latest THO/extensions release — a version pinned by the MII meta package alone cannot control the build (verified in the publisher source at the pinned release). A weekly check warns when these two pins drift from what the pinned meta package ships, and the exact versions a concrete build used are recorded in its `qa-versions.json` output.
 
 ### Global Profiles
@@ -256,13 +260,13 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "id" : "de_basisprofil_r4",
     "uri" : "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
     "packageId" : "de.basisprofil.r4",
-    "version" : "1.5.4"
+    "version" : "1.6.0"
   },
   {
     "id" : "de_medizininformatikinitiative_kerndatensatz_meta",
     "uri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
     "packageId" : "de.medizininformatikinitiative.kerndatensatz.meta",
-    "version" : "2026.0.0"
+    "version" : "2027.0.0-ballot.rc3"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
@@ -292,13 +296,13 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "id" : "hl7_fhir_uv_sdc",
     "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
     "packageId" : "hl7.fhir.uv.sdc",
-    "version" : "3.0.0"
+    "version" : "4.0.0"
   },
   {
     "id" : "de_gematik_isik",
     "uri" : "http://fhir.org/packages/de.gematik.isik/ImplementationGuide/de.gematik.isik",
     "packageId" : "de.gematik.isik",
-    "version" : "5.1.1"
+    "version" : "6.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -2217,7 +2221,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "CodeSystem/mii-cs-pro-isr-z-answers"
       },
       "name" : "MII CS PRO ISR-Z Answers",
-      "description" : "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. ordinalValue-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
+      "description" : "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
       "exampleBoolean" : false
     },
     {
@@ -2249,7 +2253,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "CodeSystem/mii-cs-pro-phq-15-answers"
       },
       "name" : "MII CS PRO PHQ-15 Answers",
-      "description" : "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+      "description" : "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.",
       "exampleBoolean" : false
     },
     {
@@ -2313,7 +2317,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "CodeSystem/mii-cs-pro-ssd-12-answers"
       },
       "name" : "MII CS PRO SSD-12 Answers",
-      "description" : "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+      "description" : "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.",
       "exampleBoolean" : false
     },
     {
@@ -2329,7 +2333,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "CodeSystem/mii-cs-pro-whodas-12"
       },
       "name" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
-      "description" : "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+      "description" : "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
       "exampleBoolean" : false
     },
     {

@@ -344,6 +344,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Zwei kleine Datenfixes: die WHODAS-Beispiel-QuestionnaireResponse deklariert <code class="language-plaintext highlighter-rouge">language = #de</code>; das PROMIS-29-Bundle referenziert das Personen-Modul-Patientenprofil nicht mehr mit der PRO-Modulversion.</li>
 </ul>
 
+<p><strong>Dependency-Upgrade für die 2027er-Linie (2026-09-08):</strong> SDC 3.0.0 → <strong>4.0.0</strong> (final), ISiK 5.1.1 → <strong>6.0.0</strong>, kerndatensatz.meta 2026.0.0 → <strong>2027.0.0-ballot.rc3</strong>, basisprofil 1.5.4 → <strong>1.6.0</strong>. Der SDC-Schritt ist der brechende und wurde vollständig migriert: Die <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Extension wird zu <strong><code class="language-plaintext highlighter-rouge">itemWeight</code></strong> (395 Antwortoptionen), die CodeSystem-Gewichts-Properties zu <code class="language-plaintext highlighter-rouge">concept-properties#itemWeight</code>, und alle 90 FHIRPath-Scoring-Ausdrücke wechseln von <code class="language-plaintext highlighter-rouge">.ordinal()</code> auf <strong><code class="language-plaintext highlighter-rouge">.weight()</code></strong>. Bestehende QuestionnaireResponses sind nicht betroffen — die Gewichte hängen an Questionnaire und Terminologie, nicht in den Antworten.</p>
+
 <p>Details und offene Entscheidungen: <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/pull/129">PR #129</a>.</p>
 
 <h3 id="202670--2026-09-02-released-tag-v202670-package--github-release">2026.7.0 — 2026-09-02 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.7.0</code>, Package + GitHub-Release)</h3>
@@ -805,7 +807,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

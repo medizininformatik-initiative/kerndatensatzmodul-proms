@@ -345,7 +345,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>linkIds <code class="language-plaintext highlighter-rouge">whodas-whodas12-q01</code> … <code class="language-plaintext highlighter-rouge">whodas-whodas12-q12</code>.</li>
   <li>Antwortskala über <code class="language-plaintext highlighter-rouge">answerValueSet</code> (<code class="language-plaintext highlighter-rouge">mii-vs-pro-whodas-12-answer-list</code>); ordinale Gewichte (0–4) als Property auf den CodeSystem-Konzepten (<code class="language-plaintext highlighter-rouge">mii-cs-pro-whodas-12</code>).</li>
-  <li>Automatische Score-Berechnung via FHIRPath (<code class="language-plaintext highlighter-rouge">.ordinal().sum()</code>). Hinweis: <code class="language-plaintext highlighter-rouge">.ordinal()</code>-Auflösung aus <code class="language-plaintext highlighter-rouge">answerValueSet</code> ist engine-abhängig; robustes Scoring via CQL/Server.</li>
+  <li>Automatische Score-Berechnung via FHIRPath (<code class="language-plaintext highlighter-rouge">.weight().sum()</code>). Hinweis: <code class="language-plaintext highlighter-rouge">.weight()</code>-Auflösung aus <code class="language-plaintext highlighter-rouge">answerValueSet</code> ist engine-abhängig; robustes Scoring via CQL/Server.</li>
 </ul>
 
 <p><strong>Score-Repräsentation:</strong></p>
@@ -403,7 +403,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

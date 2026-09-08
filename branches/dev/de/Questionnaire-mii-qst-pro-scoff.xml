@@ -38,7 +38,7 @@
     <valueExpression>
       <name value="scoffSum"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff"/>
@@ -46,7 +46,7 @@
   <title value="MII QST PRO SCOFF"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-08T07:03:30+00:00"/>
+  <date value="2026-09-08T09:54:25+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -85,7 +85,7 @@
     <type value="choice"/>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="0"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -95,7 +95,7 @@
     </answerOption>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -111,7 +111,7 @@
     <type value="choice"/>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="0"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -121,7 +121,7 @@
     </answerOption>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -137,7 +137,7 @@
     <type value="choice"/>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="0"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -147,7 +147,7 @@
     </answerOption>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -163,7 +163,7 @@
     <type value="choice"/>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="0"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -173,7 +173,7 @@
     </answerOption>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -189,7 +189,7 @@
     <type value="choice"/>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="0"/>
         </extension>
         <system value="http://snomed.info/sct"/>
@@ -199,7 +199,7 @@
     </answerOption>
     <answerOption>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://snomed.info/sct"/>

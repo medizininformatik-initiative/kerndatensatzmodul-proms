@@ -61,14 +61,14 @@
     <valueExpression>
       <name value="rawScore"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/variable">
     <valueExpression>
       <name value="phq9Score"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
@@ -76,7 +76,7 @@
   <title value="MII QST PRO PHQ-9"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-08T07:03:30+00:00"/>
+  <date value="2026-09-08T09:54:25+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -147,7 +147,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -166,7 +166,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -185,7 +185,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -204,7 +204,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -248,7 +248,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -267,7 +267,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -286,7 +286,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -305,7 +305,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -349,7 +349,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -368,7 +368,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -387,7 +387,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -406,7 +406,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -450,7 +450,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -469,7 +469,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -488,7 +488,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -507,7 +507,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -551,7 +551,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -570,7 +570,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -589,7 +589,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -608,7 +608,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -652,7 +652,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -671,7 +671,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -690,7 +690,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -709,7 +709,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -753,7 +753,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -772,7 +772,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -791,7 +791,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -810,7 +810,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -854,7 +854,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -873,7 +873,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -892,7 +892,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -911,7 +911,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>
@@ -955,7 +955,7 @@
     </text>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="0"/>
       </extension>
       <valueCoding>
@@ -974,7 +974,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueCoding>
@@ -993,7 +993,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueCoding>
@@ -1012,7 +1012,7 @@
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueCoding>

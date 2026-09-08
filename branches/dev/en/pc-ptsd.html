@@ -347,7 +347,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>linkIds <code class="language-plaintext highlighter-rouge">pc-ptsd-q01</code>…<code class="language-plaintext highlighter-rouge">pc-ptsd-q04</code>, score item <code class="language-plaintext highlighter-rouge">pc-ptsd-score-total</code>.</li>
   <li>An introductory <code class="language-plaintext highlighter-rouge">display</code> item carries the stem that applies to all four questions (reference to the distressing event and the four-week recall period).</li>
   <li>Answers via the shared RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code> with SNOMED CT <code class="language-plaintext highlighter-rouge">373067005</code>/<code class="language-plaintext highlighter-rouge">373066001</code>, weights 0/1.</li>
-  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()</code>.</li>
+  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.weight().sum()</code>.</li>
   <li>No LOINC or SNOMED code exists for the four-item version (the available LOINC codes concern the PC-PTSD-5); coding is via the MII questionnaire catalogue.</li>
 </ul>
 
@@ -399,7 +399,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -65,7 +65,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -796,7 +796,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total & $this, '')"
+        "expression" : "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
       }
     }],
     "linkId" : "euroqol-eq5d5l-score-profile",

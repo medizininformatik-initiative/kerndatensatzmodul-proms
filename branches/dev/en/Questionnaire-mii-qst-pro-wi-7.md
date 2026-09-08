@@ -65,7 +65,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueExpression" : {
       "name" : "wi7Sum",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.weight().sum()"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7",
@@ -73,7 +73,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -139,7 +139,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -150,7 +150,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -180,7 +180,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -191,7 +191,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -221,7 +221,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -232,7 +232,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -262,7 +262,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -273,7 +273,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -303,7 +303,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -314,7 +314,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -344,7 +344,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -355,7 +355,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",
@@ -385,7 +385,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "answerOption" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 0
         }],
         "system" : "http://snomed.info/sct",
@@ -396,7 +396,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "system" : "http://snomed.info/sct",

@@ -345,9 +345,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><strong>Implementation notes:</strong></p>
 <ul>
   <li>linkIds <code class="language-plaintext highlighter-rouge">ssd12-q01</code>…<code class="language-plaintext highlighter-rouge">ssd12-q12</code>, score item <code class="language-plaintext highlighter-rouge">ssd12-score-total</code>.</li>
-  <li>A dedicated, instrument-specific answer scale: MII CodeSystem <code class="language-plaintext highlighter-rouge">mii-cs-pro-ssd-12-answers</code> with an <code class="language-plaintext highlighter-rouge">ordinalValue</code> property 0–4, bound via <code class="language-plaintext highlighter-rouge">answerValueSet</code> (<code class="language-plaintext highlighter-rouge">mii-vs-pro-ssd-12-answers</code>). The wording of the response levels is part of the validated instrument and is therefore not replaced by a generic scale.</li>
+  <li>A dedicated, instrument-specific answer scale: MII CodeSystem <code class="language-plaintext highlighter-rouge">mii-cs-pro-ssd-12-answers</code> with an <code class="language-plaintext highlighter-rouge">itemWeight</code> property 0–4, bound via <code class="language-plaintext highlighter-rouge">answerValueSet</code> (<code class="language-plaintext highlighter-rouge">mii-vs-pro-ssd-12-answers</code>). The wording of the response levels is part of the validated instrument and is therefore not replaced by a generic scale.</li>
   <li>The <code class="language-plaintext highlighter-rouge">display</code> values of the answer concepts are <strong>German</strong> (English labels as <code class="language-plaintext highlighter-rouge">designation</code>), matching the language of the questionnaire — see the note below.</li>
-  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()</code>.</li>
+  <li>Score calculation via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()</code>.</li>
   <li>Neither LOINC nor SNOMED CT carries a code for the SSD-12. The LOINC codes <code class="language-plaintext highlighter-rouge">94027-0</code>/<code class="language-plaintext highlighter-rouge">94028-8</code> concern generic DSM-5 SSD concepts and were deliberately <strong>not</strong> used, so as not to suggest false coverage.</li>
 </ul>
 
@@ -401,7 +401,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

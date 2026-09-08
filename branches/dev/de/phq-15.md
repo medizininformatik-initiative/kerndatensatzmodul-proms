@@ -33,7 +33,7 @@ Der PHQ-15 ist ein validiertes Screening-Instrument für die Schwere **somatisch
 
 * linkIds im PHQ-D-Block-Namespace: somatisch `phq-phq1a`…`phq-phq1m`, plus geteilt `phq-phq2c` (Schlaf) / `phq-phq2d` (Müdigkeit).
 * Antwortskala über `answerValueSet` (`mii-vs-pro-phq-15-answers`); ordinale Gewichte (0/1/2) als Property auf den CodeSystem-Konzepten (`mii-cs-pro-phq-15-answers`).
-* Automatische Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.ordinal().sum()`. Hinweis: `.ordinal()`-Auflösung aus `answerValueSet` ist engine-abhängig; robustes Scoring via CQL/Server.
+* Automatische Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.weight().sum()`. Hinweis: `.weight()`-Auflösung aus `answerValueSet` ist engine-abhängig; robustes Scoring via CQL/Server.
 * LOINC-Panel `69728-4`, Items LOINC-kodiert.
 
 Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-phq-15.md).

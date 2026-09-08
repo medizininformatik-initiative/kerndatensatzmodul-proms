@@ -18,7 +18,7 @@ The "PROs, PROMs, and Derived Metrics" module of the Medical Informatics Initiat
 * **PROMIS Depression SF 4a** – Basic implementation available
 * **PROMIS Cognitive Function SF 4a** – Basic implementation available
 * **EORTC QLQ-C30** – Scoring methodology and terminology implemented
-* **BDI-II** – Not displayable due to licensing, but scoring with ordinalValue (SDC STU3) is functional
+* **BDI-II** – Not displayable due to licensing, but scoring with itemWeight (SDC 4.0) is functional
 
 #### Metadata-Only References (Licensing Restrictions)
 
@@ -55,8 +55,8 @@ The "PROs, PROMs, and Derived Metrics" module of the Medical Informatics Initiat
 
 ##### Migration to SDC STU4
 
-* Migration from ordinalValue to itemWeight after STU4 finalization
-* FHIRPath `.weight()` function instead of `.ordinal()`
+* Migration from itemWeight to itemWeight after STU4 finalization
+* FHIRPath `.weight()` function instead of `.weight()`
 * Utilization of extended SDC features 
 * e.g., Questionnaire.version plus versionAlgorithm
  

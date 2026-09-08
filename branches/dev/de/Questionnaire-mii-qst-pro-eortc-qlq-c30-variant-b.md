@@ -52,7 +52,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "content" : "complete",
     "concept" : [{
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "code" : "not-at-all",
@@ -64,7 +64,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "code" : "a-little",
@@ -76,7 +76,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "code" : "quite-a-bit",
@@ -88,7 +88,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "code" : "very-much",
@@ -100,7 +100,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 1
       }],
       "code" : "1-very-poor",
@@ -112,7 +112,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 2
       }],
       "code" : "2-poor",
@@ -124,7 +124,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 3
       }],
       "code" : "3-fair",
@@ -136,7 +136,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 4
       }],
       "code" : "4-good",
@@ -148,7 +148,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 5
       }],
       "code" : "5-very-good",
@@ -160,7 +160,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 6
       }],
       "code" : "6-excellent",
@@ -172,7 +172,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
         "valueDecimal" : 7
       }],
       "code" : "7-perfect",
@@ -274,7 +274,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant B",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -540,7 +540,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).answer.value.ordinal().sum()) / 5) - 1) / 3) * 100"
+          "expression" : "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q0[1-5]$')).answer.value.weight().sum()) / 5) - 1) / 3) * 100"
         }
       },
       {
@@ -557,7 +557,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(1 - (((%resource.item.where(linkId='qlq-c30-q06' or linkId='qlq-c30-q07').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+          "expression" : "(1 - (((%resource.item.where(linkId='qlq-c30-q06' or linkId='qlq-c30-q07').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
         }
       },
       {
@@ -574,7 +574,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q2[1-4]$')).answer.value.ordinal().sum()) / 4) - 1) / 3) * 100"
+          "expression" : "(1 - (((%resource.item.where(linkId.matches('^qlq-c30-q2[1-4]$')).answer.value.weight().sum()) / 4) - 1) / 3) * 100"
         }
       },
       {
@@ -591,7 +591,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(1 - (((%resource.item.where(linkId='qlq-c30-q20' or linkId='qlq-c30-q25').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+          "expression" : "(1 - (((%resource.item.where(linkId='qlq-c30-q20' or linkId='qlq-c30-q25').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
         }
       },
       {
@@ -608,7 +608,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(1 - (((%resource.item.where(linkId='qlq-c30-q26' or linkId='qlq-c30-q27').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+          "expression" : "(1 - (((%resource.item.where(linkId='qlq-c30-q26' or linkId='qlq-c30-q27').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
         }
       },
       {
@@ -625,7 +625,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.ordinal().sum()) / 3) - 1) / 3) * 100"
+          "expression" : "(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
         }
       },
       {
@@ -642,7 +642,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+          "expression" : "(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
         }
       },
       {
@@ -659,7 +659,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.ordinal().sum()) / 2) - 1) / 3) * 100"
+          "expression" : "(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
         }
       },
       {
@@ -676,7 +676,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "((%resource.item.where(linkId='qlq-c30-q08').answer.value.ordinal() - 1) / 3) * 100"
+          "expression" : "((%resource.item.where(linkId='qlq-c30-q08').answer.value.weight() - 1) / 3) * 100"
         }
       },
       {
@@ -693,7 +693,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "((%resource.item.where(linkId='qlq-c30-q11').answer.value.ordinal() - 1) / 3) * 100"
+          "expression" : "((%resource.item.where(linkId='qlq-c30-q11').answer.value.weight() - 1) / 3) * 100"
         }
       },
       {
@@ -710,7 +710,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "((%resource.item.where(linkId='qlq-c30-q13').answer.value.ordinal() - 1) / 3) * 100"
+          "expression" : "((%resource.item.where(linkId='qlq-c30-q13').answer.value.weight() - 1) / 3) * 100"
         }
       },
       {
@@ -727,7 +727,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "((%resource.item.where(linkId='qlq-c30-q16').answer.value.ordinal() - 1) / 3) * 100"
+          "expression" : "((%resource.item.where(linkId='qlq-c30-q16').answer.value.weight() - 1) / 3) * 100"
         }
       },
       {
@@ -744,7 +744,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "((%resource.item.where(linkId='qlq-c30-q17').answer.value.ordinal() - 1) / 3) * 100"
+          "expression" : "((%resource.item.where(linkId='qlq-c30-q17').answer.value.weight() - 1) / 3) * 100"
         }
       },
       {
@@ -761,7 +761,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "((%resource.item.where(linkId='qlq-c30-q28').answer.value.ordinal() - 1) / 3) * 100"
+          "expression" : "((%resource.item.where(linkId='qlq-c30-q28').answer.value.weight() - 1) / 3) * 100"
         }
       },
       {
@@ -778,7 +778,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.ordinal().sum()) / 2) - 1) / 6) * 100"
+          "expression" : "(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
         }
       },
       {

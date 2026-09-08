@@ -46,13 +46,13 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
 #### Terminology Bindings
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
 ** Summary **
 
@@ -80,7 +80,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
  **Snapshot-AnsichtView** 
 
@@ -88,7 +88,7 @@ Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html) 
+Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html) 
 
 ** Summary **
 
@@ -126,7 +126,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -149,6 +149,10 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "ihe-sdc",
+    "name" : "IHE SDC"
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"

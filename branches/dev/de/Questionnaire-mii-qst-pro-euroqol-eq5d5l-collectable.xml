@@ -53,7 +53,7 @@
   <derivedFrom value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-08T07:03:30+00:00"/>
+  <date value="2026-09-08T09:54:25+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -325,7 +325,7 @@
     <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
       <valueExpression>
         <language value="text/fhirpath"/>
-        <expression value="%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total &amp; $this, '')"/>
+        <expression value="%resource.item.where(type = 'choice').answer.value.weight().aggregate($total &amp; $this, '')"/>
       </valueExpression>
     </extension>
     <linkId value="euroqol-eq5d5l-score-profile"/>

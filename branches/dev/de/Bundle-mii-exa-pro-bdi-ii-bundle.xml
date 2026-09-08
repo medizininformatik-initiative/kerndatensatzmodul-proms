@@ -195,7 +195,7 @@
           <valueExpression>
             <name value="bdiScore"/>
             <language value="text/fhirpath"/>
-            <expression value="%resource.item.where(type = 'choice').answer.value.ordinal().sum()"/>
+            <expression value="%resource.item.where(type = 'choice').answer.value.weight().sum()"/>
           </valueExpression>
         </extension>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2"/>

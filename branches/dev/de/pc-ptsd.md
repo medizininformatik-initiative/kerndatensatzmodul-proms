@@ -29,7 +29,7 @@ Der **PC-PTSD (Primary Care PTSD Screen)** ist ein Kurzscreening auf eine **post
 * linkIds `pc-ptsd-q01`…`pc-ptsd-q04`, Score-Item `pc-ptsd-score-total`.
 * Ein einleitendes `display`-Item trägt den Stamm, der für alle vier Fragen gilt (Bezug auf das belastende Ereignis und den Zeitraum der letzten vier Wochen).
 * Antworten über das geteilte RuleSet `YesNoAnswerOptions` mit SNOMED CT `373067005`/`373066001`, Gewichte 0/1.
-* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()`.
+* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.weight().sum()`.
 * Für die Vier-Item-Fassung existiert kein LOINC- oder SNOMED-Code (die vorhandenen LOINC-Codes betreffen den PC-PTSD-5); Kodierung über den MII-Questionnaire-Katalog.
 
 Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-pc-ptsd.md).

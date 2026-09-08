@@ -29,7 +29,7 @@ The **PC-PTSD (Primary Care PTSD Screen)** is a brief screen for **post-traumati
 * linkIds `pc-ptsd-q01`…`pc-ptsd-q04`, score item `pc-ptsd-score-total`.
 * An introductory `display` item carries the stem that applies to all four questions (reference to the distressing event and the four-week recall period).
 * Answers via the shared RuleSet `YesNoAnswerOptions` with SNOMED CT `373067005`/`373066001`, weights 0/1.
-* Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.ordinal().sum()`.
+* Score calculation via FHIRPath: `%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.weight().sum()`.
 * No LOINC or SNOMED code exists for the four-item version (the available LOINC codes concern the PC-PTSD-5); coding is via the MII questionnaire catalogue.
 
 The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-pc-ptsd.md).

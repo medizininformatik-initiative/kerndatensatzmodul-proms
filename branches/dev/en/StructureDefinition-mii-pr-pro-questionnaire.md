@@ -54,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-questi
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -77,6 +77,10 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-questi
   }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
+    "identity" : "ihe-sdc",
+    "name" : "IHE SDC"
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"

@@ -76,7 +76,7 @@
   <derivedFrom value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-08T07:03:30+00:00"/>
+  <date value="2026-09-08T09:54:25+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -137,7 +137,7 @@
     <required value="true"/>
     <repeats value="false"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueString value="Ich habe keine Probleme herumzugehen">
@@ -152,7 +152,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueString value="Ich habe leichte Probleme herumzugehen">
@@ -167,7 +167,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueString value="Ich habe mäßige Probleme herumzugehen">
@@ -182,7 +182,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="4"/>
       </extension>
       <valueString value="Ich habe große Probleme herumzugehen">
@@ -197,7 +197,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="5"/>
       </extension>
       <valueString value="Ich bin nicht in der Lage herumzugehen">
@@ -212,7 +212,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="9"/>
       </extension>
       <valueString value="Fehlender Wert">
@@ -244,7 +244,7 @@
     <required value="true"/>
     <repeats value="false"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueString value="Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen">
@@ -259,7 +259,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueString value="Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen">
@@ -274,7 +274,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueString value="Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen">
@@ -289,7 +289,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="4"/>
       </extension>
       <valueString value="Ich habe große Probleme, mich selbst zu waschen oder anzuziehen">
@@ -304,7 +304,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="5"/>
       </extension>
       <valueString value="Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen">
@@ -319,7 +319,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="9"/>
       </extension>
       <valueString value="Fehlender Wert">
@@ -351,7 +351,7 @@
     <required value="true"/>
     <repeats value="false"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueString value="Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
@@ -366,7 +366,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueString value="Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
@@ -381,7 +381,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueString value="Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
@@ -396,7 +396,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="4"/>
       </extension>
       <valueString value="Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
@@ -411,7 +411,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="5"/>
       </extension>
       <valueString value="Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen">
@@ -426,7 +426,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="9"/>
       </extension>
       <valueString value="Fehlender Wert">
@@ -458,7 +458,7 @@
     <required value="true"/>
     <repeats value="false"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueString value="Ich habe keine Schmerzen oder Beschwerden">
@@ -473,7 +473,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueString value="Ich habe leichte Schmerzen oder Beschwerden">
@@ -488,7 +488,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueString value="Ich habe mäßige Schmerzen oder Beschwerden">
@@ -503,7 +503,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="4"/>
       </extension>
       <valueString value="Ich habe starke Schmerzen oder Beschwerden">
@@ -518,7 +518,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="5"/>
       </extension>
       <valueString value="Ich habe extreme Schmerzen oder Beschwerden">
@@ -533,7 +533,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="9"/>
       </extension>
       <valueString value="Fehlender Wert">
@@ -565,7 +565,7 @@
     <required value="true"/>
     <repeats value="false"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="1"/>
       </extension>
       <valueString value="Ich bin nicht ängstlich oder deprimiert">
@@ -580,7 +580,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="2"/>
       </extension>
       <valueString value="Ich bin ein wenig ängstlich oder deprimiert">
@@ -595,7 +595,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="3"/>
       </extension>
       <valueString value="Ich bin mäßig ängstlich oder deprimiert">
@@ -610,7 +610,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="4"/>
       </extension>
       <valueString value="Ich bin sehr ängstlich oder deprimiert">
@@ -625,7 +625,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="5"/>
       </extension>
       <valueString value="Ich bin extrem ängstlich oder deprimiert">
@@ -640,7 +640,7 @@
       </valueString>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
         <valueDecimal value="9"/>
       </extension>
       <valueString value="Fehlender Wert">
@@ -677,7 +677,7 @@
     <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
       <valueExpression>
         <language value="text/fhirpath"/>
-        <expression value="%resource.item.where(type = 'choice').answer.value.ordinal().aggregate($total &amp; $this, '')"/>
+        <expression value="%resource.item.where(type = 'choice').answer.value.weight().aggregate($total &amp; $this, '')"/>
       </valueExpression>
     </extension>
     <linkId value="euroqol-eq5d5l-score-profile"/>

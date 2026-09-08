@@ -120,7 +120,7 @@ The complete resource is in the [CodeSystem definition](CodeSystem-mii-cs-pro-mi
 
 ```
 // FHIR variable: symptomSumScore
-%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.weight().sum()
 
 ```
 

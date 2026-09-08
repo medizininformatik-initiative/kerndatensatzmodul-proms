@@ -37,7 +37,7 @@
     "valueExpression" : {
       "name" : "physicalFunctionRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -45,7 +45,7 @@
     "valueExpression" : {
       "name" : "anxietyRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -53,7 +53,7 @@
     "valueExpression" : {
       "name" : "depressionRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -61,7 +61,7 @@
     "valueExpression" : {
       "name" : "fatigueRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -69,7 +69,7 @@
     "valueExpression" : {
       "name" : "sleepRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -77,7 +77,7 @@
     "valueExpression" : {
       "name" : "socialRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.weight().sum()"
     }
   },
   {
@@ -85,7 +85,7 @@
     "valueExpression" : {
       "name" : "painInterferenceRaw",
       "language" : "text/fhirpath",
-      "expression" : "%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.ordinal().sum()"
+      "expression" : "%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.weight().sum()"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
@@ -94,7 +94,7 @@
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -189,7 +189,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -213,7 +213,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -237,7 +237,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -261,7 +261,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -285,7 +285,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -332,7 +332,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -356,7 +356,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -380,7 +380,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -404,7 +404,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -428,7 +428,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -475,7 +475,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -499,7 +499,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -523,7 +523,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -547,7 +547,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -571,7 +571,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -618,7 +618,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -642,7 +642,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -666,7 +666,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -690,7 +690,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -714,7 +714,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -758,7 +758,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -782,7 +782,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -806,7 +806,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -830,7 +830,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -854,7 +854,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -888,7 +888,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -912,7 +912,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -936,7 +936,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -960,7 +960,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -984,7 +984,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1018,7 +1018,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1042,7 +1042,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1066,7 +1066,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1090,7 +1090,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1114,7 +1114,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1148,7 +1148,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1172,7 +1172,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1196,7 +1196,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1220,7 +1220,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1244,7 +1244,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1288,7 +1288,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1312,7 +1312,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1336,7 +1336,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1360,7 +1360,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1384,7 +1384,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1418,7 +1418,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1442,7 +1442,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1466,7 +1466,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1490,7 +1490,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1514,7 +1514,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1548,7 +1548,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1572,7 +1572,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1596,7 +1596,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1620,7 +1620,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1644,7 +1644,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1678,7 +1678,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1702,7 +1702,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1726,7 +1726,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1750,7 +1750,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1774,7 +1774,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1818,7 +1818,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1842,7 +1842,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1866,7 +1866,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -1890,7 +1890,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -1914,7 +1914,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -1948,7 +1948,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -1972,7 +1972,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -1996,7 +1996,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2020,7 +2020,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2044,7 +2044,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2078,7 +2078,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2102,7 +2102,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2126,7 +2126,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2150,7 +2150,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2174,7 +2174,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2208,7 +2208,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2232,7 +2232,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2256,7 +2256,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2280,7 +2280,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2304,7 +2304,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2348,7 +2348,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2372,7 +2372,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2396,7 +2396,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2420,7 +2420,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2444,7 +2444,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2478,7 +2478,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2502,7 +2502,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2526,7 +2526,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2550,7 +2550,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2574,7 +2574,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2608,7 +2608,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2632,7 +2632,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2656,7 +2656,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2680,7 +2680,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2704,7 +2704,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2738,7 +2738,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2762,7 +2762,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2786,7 +2786,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2810,7 +2810,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2834,7 +2834,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -2878,7 +2878,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -2902,7 +2902,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -2926,7 +2926,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -2950,7 +2950,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -2974,7 +2974,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3008,7 +3008,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3032,7 +3032,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3056,7 +3056,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3080,7 +3080,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3104,7 +3104,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3138,7 +3138,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3162,7 +3162,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3186,7 +3186,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3210,7 +3210,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3234,7 +3234,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3268,7 +3268,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3292,7 +3292,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3316,7 +3316,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3340,7 +3340,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3364,7 +3364,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3408,7 +3408,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3432,7 +3432,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3456,7 +3456,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3480,7 +3480,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3504,7 +3504,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3538,7 +3538,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3562,7 +3562,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3586,7 +3586,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3610,7 +3610,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3634,7 +3634,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3668,7 +3668,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3692,7 +3692,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3716,7 +3716,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3740,7 +3740,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3764,7 +3764,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {
@@ -3798,7 +3798,7 @@
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 1
         }],
         "valueCoding" : {
@@ -3822,7 +3822,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 2
         }],
         "valueCoding" : {
@@ -3846,7 +3846,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 3
         }],
         "valueCoding" : {
@@ -3870,7 +3870,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 4
         }],
         "valueCoding" : {
@@ -3894,7 +3894,7 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
           "valueDecimal" : 5
         }],
         "valueCoding" : {

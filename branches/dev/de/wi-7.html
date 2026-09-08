@@ -344,7 +344,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>linkIds <code class="language-plaintext highlighter-rouge">wi7-q01</code>…<code class="language-plaintext highlighter-rouge">wi7-q07</code>, Score-Item <code class="language-plaintext highlighter-rouge">wi7-score-total</code>.</li>
   <li>Antworten über das geteilte RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code> mit SNOMED CT <code class="language-plaintext highlighter-rouge">373067005</code>/<code class="language-plaintext highlighter-rouge">373066001</code> und ordinalen Gewichten 0/1 — dieselbe Skala wie SCOFF und PC-PTSD.</li>
-  <li>Score-Berechnung via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.ordinal().sum()</code>.</li>
+  <li>Score-Berechnung via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^wi7-q0[1-7]$')).answer.value.weight().sum()</code>.</li>
   <li>Weder LOINC noch SNOMED CT führen einen Code für das Instrument selbst (geprüft); Kodierung über den MII-Questionnaire-Katalog.</li>
 </ul>
 
@@ -396,7 +396,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

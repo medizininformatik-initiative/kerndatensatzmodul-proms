@@ -33,7 +33,7 @@ Der **GAD-7** (Generalized Anxiety Disorder Scale-7) ist das Standardinstrument 
 
 * linkIds im PHQ-D-Block-Namespace: `phq-phq5a`…`phq-phq5g`, Score-Item `phq-gad7-score-total`.
 * Antwortskala über das geteilte RuleSet `Phq4PointFrequencyAnswerOptions` — inline `answerOption` mit den LOINC-Antwortcodes der Liste LL358-3 (`LA6568-5`…`LA6571-9`) und ordinalen Gewichten 0–3. Dieselbe Skala wie PHQ-9.
-* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.ordinal().sum()`.
+* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.weight().sum()`.
 * LOINC-Panel `69737-5`, Score-Item mit LOINC `70274-6`.
 
 **Item-Nummerierung:** Die ConceptMap [`mii-cm-pro-gad-7-linkids`](ConceptMap-mii-cm-pro-gad-7-linkids.md) bildet die übliche GAD-7-Nummerierung (Item 1–7) auf die kanonischen linkIds ab — eine Lesehilfe für die Übernahme von Daten aus Fremdsystemen.

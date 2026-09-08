@@ -397,7 +397,7 @@
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a>" : "rawScore",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.weight().sum()"
             }
           },
           {
@@ -405,7 +405,7 @@
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a>" : "phq9Score",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a>" : "text/fhirpath",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>" : "%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.weight().sum()"
             }
           }
         ],
@@ -458,7 +458,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -471,7 +471,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -484,7 +484,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -497,7 +497,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -533,7 +533,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -546,7 +546,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -559,7 +559,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -572,7 +572,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -608,7 +608,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -621,7 +621,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -634,7 +634,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -647,7 +647,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -683,7 +683,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -696,7 +696,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -709,7 +709,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -722,7 +722,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -758,7 +758,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -771,7 +771,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -784,7 +784,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -797,7 +797,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -833,7 +833,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -846,7 +846,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -859,7 +859,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -872,7 +872,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -908,7 +908,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -921,7 +921,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -934,7 +934,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -947,7 +947,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -983,7 +983,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -996,7 +996,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -1009,7 +1009,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -1022,7 +1022,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -1058,7 +1058,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                   }
                 ],
@@ -1071,7 +1071,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                   }
                 ],
@@ -1084,7 +1084,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                   }
                 ],
@@ -1097,7 +1097,7 @@
               {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
                   }
                 ],
@@ -1511,7 +1511,7 @@
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

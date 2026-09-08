@@ -112,8 +112,23 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.answerConstraint": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.disabledDisplay": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.subjectType": [
+      "Questionnaire.subjectType"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/alternate-reference|5.3.0-ballot-tc1": [
+      "QuestionnaireResponse.source"
+    ],
     "http://hl7.org/fhir/StructureDefinition/artifact-author": [
       "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel|5.3.0-ballot-tc1": [
+      "Questionnaire"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-editor": [
       "ImplementationGuide"
@@ -136,6 +151,9 @@
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
       "ImplementationGuide"
     ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm|5.3.0-ballot-tc1": [
+      "Questionnaire"
+    ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy": [
       "ImplementationGuide"
     ],
@@ -155,11 +173,11 @@
     "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
       "ImplementationGuide"
     ],
-    "http://hl7.org/fhir/StructureDefinition/designNote": [
+    "http://hl7.org/fhir/StructureDefinition/designNote|5.3.0-ballot-tc1": [
       "Questionnaire",
       "Questionnaire.item"
     ],
-    "http://hl7.org/fhir/StructureDefinition/display": [
+    "http://hl7.org/fhir/StructureDefinition/display|5.3.0-ballot-tc1": [
       "QuestionnaireResponse.questionnaire"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -177,6 +195,18 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/itemWeight": [
+      "Bundle.entry.resource.contained.concept",
+      "Bundle.entry.resource.item.answerOption",
+      "Questionnaire.contained.concept",
+      "Questionnaire.item.answerOption",
+      "Questionnaire.item.answerOption.valueCoding",
+      "Questionnaire.item.item.answerOption",
+      "ValueSet.compose.include.concept"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/itemWeight|5.3.0-ballot-tc1": [
+      "QuestionnaireResponse.item.answer"
+    ],
     "http://hl7.org/fhir/StructureDefinition/maxValue": [
       "Questionnaire.item",
       "Questionnaire.item.item"
@@ -185,18 +215,15 @@
       "Questionnaire.item",
       "Questionnaire.item.item"
     ],
-    "http://hl7.org/fhir/StructureDefinition/ordinalValue": [
-      "Bundle.entry.resource.contained.concept",
-      "Bundle.entry.resource.item.answerOption",
-      "Questionnaire.contained.concept",
-      "Questionnaire.item.answerOption",
-      "Questionnaire.item.answerOption.valueCoding",
-      "Questionnaire.item.item.answerOption",
-      "QuestionnaireResponse.item.answer",
-      "ValueSet.compose.include.concept"
-    ],
     "http://hl7.org/fhir/StructureDefinition/package-source": [
       "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/preferredTerminologyServer|5.3.0-ballot-tc1": [
+      "Questionnaire",
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden|5.3.0-ballot-tc1": [
+      "Questionnaire.item"
     ],
     "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix": [
       "Questionnaire.item.answerOption"
@@ -209,10 +236,10 @@
       "Questionnaire.item",
       "Questionnaire.item.item"
     ],
-    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode": [
+    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode|5.3.0-ballot-tc1": [
       "QuestionnaireResponse"
     ],
-    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature": [
+    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature|5.3.0-ballot-tc1": [
       "QuestionnaireResponse",
       "QuestionnaireResponse.item"
     ],
@@ -243,9 +270,15 @@
       "Bundle.entry.resource",
       "Questionnaire"
     ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-adheresTo|5.3.0-ballot-tc1": [
+      "QuestionnaireResponse"
+    ],
     "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical": [
       "Bundle.entry.resource",
       "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy|5.3.0-ballot-tc1": [
+      "QuestionnaireResponse"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
       "ImplementationGuide.definition"
@@ -297,12 +330,11 @@
       "Questionnaire.item",
       "Questionnaire.item.item"
     ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-optionalDisplay": [
+      "Questionnaire.item"
+    ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-performerType": [
       "Questionnaire"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer": [
-      "Questionnaire",
-      "Questionnaire.item"
     ],
     "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities": [
       "Bundle.entry.resource",

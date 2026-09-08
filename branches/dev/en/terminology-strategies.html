@@ -549,7 +549,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
 * item[1].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Ueberhaupt nicht"
-* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+* item[1].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[1].answerOption[0].extension.valueDecimal = 0
 </code></pre></div></div>
 
@@ -559,9 +559,9 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 
 // CodeSystem
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList
-* ^property[+].code = #ordinalValue
+* ^property[+].code = #itemWeight
 * ^property[=].type = #decimal
-* #bdi-bdi2-answer-1a ^property[+].code = #ordinalValue
+* #bdi-bdi2-answer-1a ^property[+].code = #itemWeight
 * #bdi-bdi2-answer-1a ^property[=].valueDecimal = 1
 
 // ValueSet Short Form
@@ -582,15 +582,15 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 <p><strong>Critical implementation requirement</strong>: FHIRPath <code class="language-plaintext highlighter-rouge">.weight()</code> functions require correct itemWeight definitions:</p>
 
 <h3 id="with-inline-answeroption">With Inline answerOption:</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* item[=].answerOption[0].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
 * item[=].answerOption[0].extension.valueDecimal = 0
 </code></pre></div></div>
 
 <h3 id="with-codesystem--valueset">With CodeSystem + ValueSet:</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CodeSystem: MyCodeSystem
-* ^property[+].code = #ordinalValue
+* ^property[+].code = #itemWeight
 * ^property[=].type = #decimal
-* #answer-code ^property[+].code = #ordinalValue
+* #answer-code ^property[+].code = #itemWeight
 * #answer-code ^property[=].valueDecimal = 0
 </code></pre></div></div>
 
@@ -650,7 +650,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListShort
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

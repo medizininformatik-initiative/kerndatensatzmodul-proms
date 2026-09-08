@@ -146,7 +146,7 @@ QL-Score = ((Rohwert - 1) / 6) x 100
 * **URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30`
 * **Primärsprache**: Englisch (`language = #en`)
 * **Übersetzungen**: Deutsche Übersetzungen über CodeSystem-Designations
-* **Antwortoptionen**: MII CodeSystems mit `ordinalValue`-Properties für Scoring
+* **Antwortoptionen**: MII CodeSystems mit `itemWeight`-Properties für Scoring
 
 #### CodeSystem & ValueSets
 

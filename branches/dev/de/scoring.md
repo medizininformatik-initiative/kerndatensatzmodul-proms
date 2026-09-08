@@ -17,7 +17,7 @@ Das MII PRO-Modul unterstützt drei Scoring-Kanäle entlang des Workflows **Ques
 
 Das **Score-Item im Questionnaire** (readOnly, mit `code` und `observation-extract`) ist der gemeinsame Vertrag der Kanäle A und B: Kanal A füllt es live beim Ausfüllen, Kanal B füllt es nachträglich aus den Item-Antworten. Kanal C nutzt es bewusst **nicht** (siehe ETL-Regel unten).
 
-Die Antwort-**Gewichte** sind in allen Kanälen dieselben: Sie sind normativ in den MII-CodeSystems definiert (`ordinalValue`-Extension an den Konzepten). Kanal A liest sie über die FHIRPath-Funktion `ordinal()`, Kanal B repliziert sie als geprüfte Lookup-Tabellen in der CQL-Library, Kanal C muss algorithmische Übereinstimmung mit den publizierten Scoring-Manualen der Instrumente nachweisen.
+Die Antwort-**Gewichte** sind in allen Kanälen dieselben: Sie sind normativ in den MII-CodeSystems definiert (`itemWeight`-Extension an den Konzepten). Kanal A liest sie über die FHIRPath-Funktion `ordinal()`, Kanal B repliziert sie als geprüfte Lookup-Tabellen in der CQL-Library, Kanal C muss algorithmische Übereinstimmung mit den publizierten Scoring-Manualen der Instrumente nachweisen.
 
 -------
 
@@ -32,7 +32,7 @@ Der Renderer wertet die `calculatedExpression` (SDC, `text/fhirpath`) live beim 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
 
 // Score-Item referenziert die Variable
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -119,7 +119,7 @@ Komplexe Fragebögen erzeugen mehrere Scores (Beispiel EQ-5D-5L: Index, VAS, Pro
 ### Qualitätssicherung
 
 * **Differential-Tests Kanal A ↔ B**: identische Test-QuestionnaireResponses (Minimum, Maximum, uniforme Antworten, fehlende Items, Opt-outs) durch beide Engines; Ergebnisse müssen exakt übereinstimmen.
-* **Gewichts-Konsistenz**: CI-Prüfung, dass die Lookup-Tabellen der CQL-Libraries mit den `ordinalValue`-Gewichten der CodeSystems übereinstimmen.
+* **Gewichts-Konsistenz**: CI-Prüfung, dass die Lookup-Tabellen der CQL-Libraries mit den `itemWeight`-Gewichten der CodeSystems übereinstimmen.
 * **Import-Validierung (Kanal C)**: stichprobenhafte Nachberechnung über Kanal B, wo Item-Antworten vorliegen.
 * **Versionsbindung**: Score-Observations referenzieren die Library-Version (bzw. das Scoring-Manual) — jede Score-Zahl bleibt auf ihren Algorithmus rückführbar.
 

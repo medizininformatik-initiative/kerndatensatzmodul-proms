@@ -52,7 +52,7 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2026.0.0"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot.rc3"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -480,79 +480,71 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|3.0.0"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature|5.3.0"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponsecommon|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode|5.3.0"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/Device|4.0.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/display|5.3.0"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia|3.0.0"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia|3.0.0"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/ordinalValue|5.3.0"/>
-  </parameter>
-  <parameter>
-    <name value="default-valueset-version"/>
-    <valueCanonical value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnairecommon|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/designNote|5.3.0"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-performerType|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer|3.0.0"/>
-  </parameter>
-  <parameter>
-    <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-performerType|3.0.0"/>
-  </parameter>
-  <parameter>
-    <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation|3.0.0"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities|2027.0.0-ballot.rc3"/>
   </parameter>
   <parameter>
-    <name value="default-valueset-version"/>
-    <valueCanonical value="http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1"/>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.subjectType|0.1.0"/>
   </parameter>
   <parameter>
-    <name value="default-valueset-version"/>
-    <valueCanonical value="http://hl7.org/fhir/ValueSet/questionnaire-questions|4.0.1"/>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.disabledDisplay|0.1.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.answerConstraint|0.1.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-optionalDisplay|4.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-valueset|4.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
     <valueCanonical value="http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"/>
-  </parameter>
-  <parameter>
-    <name value="default-valueset-version"/>
-    <valueCanonical value="http://hl7.org/fhir/ValueSet/questionnaire-answers|4.0.1"/>
-  </parameter>
-  <parameter>
-    <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-valueset|3.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>

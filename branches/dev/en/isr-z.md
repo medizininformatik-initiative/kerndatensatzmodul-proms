@@ -31,8 +31,8 @@ For the Z subscale this means the scale value is the **mean of the three items**
 **Implementation notes:**
 
 * linkIds `isr-z-q01`…`isr-z-q03`, score item `isr-z-score-mean`.
-* A dedicated, instrument-specific answer scale: MII CodeSystem `mii-cs-pro-isr-z-answers` with an `ordinalValue` property 0–4, bound via `answerValueSet`. The `display` values are German, matching the language of the questionnaire.
-* Score calculation via FHIRPath using **`.avg()` rather than `.sum()`**: `%resource.item.where(linkId.matches('^isr-z-q0[1-3]$')).answer.value.ordinal().avg()`.
+* A dedicated, instrument-specific answer scale: MII CodeSystem `mii-cs-pro-isr-z-answers` with an `itemWeight` property 0–4, bound via `answerValueSet`. The `display` values are German, matching the language of the questionnaire.
+* Score calculation via FHIRPath using **`.avg()` rather than `.sum()`**: `%resource.item.where(linkId.matches('^isr-z-q0[1-3]$')).answer.value.weight().avg()`.
 * Neither LOINC nor SNOMED CT carries a code for the ISR (checked); coding is via the MII questionnaire catalogue.
 
 The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-isr-z.md).

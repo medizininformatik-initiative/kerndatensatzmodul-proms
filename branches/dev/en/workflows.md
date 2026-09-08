@@ -165,13 +165,13 @@ Scores are calculated using FHIRPath expressions:
 
 ```
 // Simple sum
-%resource.item.answer.value.ordinal().sum()
+%resource.item.answer.value.weight().sum()
 
 // Weighted sum with selection
-%resource.item.where(linkId.matches('^item-[1-9]$')).answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^item-[1-9]$')).answer.value.weight().sum()
 
 // With variables for complex calculations
-%rawScore = %resource.item.answer.value.ordinal().sum()
+%rawScore = %resource.item.answer.value.weight().sum()
 iif(%rawScore < 5, 'minimal', iif(%rawScore < 10, 'mild', 'moderate'))
 
 ```

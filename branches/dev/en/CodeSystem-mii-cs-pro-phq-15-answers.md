@@ -12,7 +12,7 @@
 | Active as of 2026-09-08 | *Computable Name*:MII_CS_PRO_PHQ_15_Answers |
 
  
-MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet. 
+MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet. 
 
 This Code system is referenced in the definition of the following value sets:
 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_PHQ_15_Answers",
   "title" : "MII CS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -49,7 +49,7 @@ This Code system is referenced in the definition of the following value sets:
       "value" : "office@medizininformatik-initiative.de"
     }]
   }],
-  "description" : "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.",
+  "description" : "MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -60,9 +60,9 @@ This Code system is referenced in the definition of the following value sets:
   "content" : "complete",
   "count" : 3,
   "property" : [{
-    "code" : "ordinalValue",
-    "uri" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-    "description" : "Numerical ordinal value (0–2) for SDC calculatedExpression scoring via .ordinal().sum()",
+    "code" : "itemWeight",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
+    "description" : "Numerical ordinal value (0–2) for SDC calculatedExpression scoring via .weight().sum()",
     "type" : "decimal"
   }],
   "concept" : [{
@@ -73,7 +73,7 @@ This Code system is referenced in the definition of the following value sets:
       "value" : "Nicht beeinträchtigt"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 0
     }]
   },
@@ -85,7 +85,7 @@ This Code system is referenced in the definition of the following value sets:
       "value" : "Wenig beeinträchtigt"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 1
     }]
   },
@@ -97,7 +97,7 @@ This Code system is referenced in the definition of the following value sets:
       "value" : "Stark beeinträchtigt"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 2
     }]
   }]

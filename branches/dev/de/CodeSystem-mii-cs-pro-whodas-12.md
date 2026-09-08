@@ -13,7 +13,7 @@
 | **Copyright/Rechtliches**: WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0. | |
 
  
-CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright). 
+CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright). 
 
 Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
 
@@ -38,7 +38,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T07:03:30+00:00",
+  "date" : "2026-09-08T09:54:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -51,7 +51,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "value" : "office@medizininformatik-initiative.de"
     }]
   }],
-  "description" : "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry ordinalValue properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+  "description" : "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,9 +64,9 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "content" : "complete",
   "count" : 17,
   "property" : [{
-    "code" : "ordinalValue",
-    "uri" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-    "description" : "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()",
+    "code" : "itemWeight",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
+    "description" : "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().sum()",
     "type" : "decimal"
   }],
   "concept" : [{
@@ -77,7 +77,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "value" : "keine"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 0
     }]
   },
@@ -89,7 +89,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "value" : "geringe"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 1
     }]
   },
@@ -101,7 +101,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "value" : "mäßige"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 2
     }]
   },
@@ -113,7 +113,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "value" : "starke"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 3
     }]
   },
@@ -125,7 +125,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "value" : "sehr starke/nicht möglich"
     }],
     "property" : [{
-      "code" : "ordinalValue",
+      "code" : "itemWeight",
       "valueDecimal" : 4
     }]
   },

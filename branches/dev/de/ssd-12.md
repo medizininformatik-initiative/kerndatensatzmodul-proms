@@ -29,9 +29,9 @@ Zwölf Items decken die drei B-Kriterien des DSM-5 ab (kognitiv, affektiv, behav
 **Besonderheiten:**
 
 * linkIds `ssd12-q01`…`ssd12-q12`, Score-Item `ssd12-score-total`.
-* Eigene, instrumentenspezifische Antwortskala: MII-CodeSystem `mii-cs-pro-ssd-12-answers` mit `ordinalValue`-Property 0–4, gebunden über `answerValueSet` (`mii-vs-pro-ssd-12-answers`). Die Wortwahl der Antwortstufen ist Teil des validierten Instruments und wird deshalb nicht durch eine generische Skala ersetzt.
+* Eigene, instrumentenspezifische Antwortskala: MII-CodeSystem `mii-cs-pro-ssd-12-answers` mit `itemWeight`-Property 0–4, gebunden über `answerValueSet` (`mii-vs-pro-ssd-12-answers`). Die Wortwahl der Antwortstufen ist Teil des validierten Instruments und wird deshalb nicht durch eine generische Skala ersetzt.
 * Die `display`-Werte der Antwortkonzepte sind **deutsch** (englische Bezeichnungen als `designation`), passend zur Sprache des Fragebogens — siehe Hinweis unten.
-* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.ordinal().sum()`.
+* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()`.
 * Weder LOINC noch SNOMED CT führen einen Code für die SSD-12. Die LOINC-Codes `94027-0`/`94028-8` betreffen generische DSM-5-SSD-Konzepte und wurden bewusst **nicht** verwendet, um keine falsche Abdeckung zu suggerieren.
 
 > **Hinweis zur Display-Sprache:** In einer Ressource mit `language = #de` erwartet der FHIR-Validator den deutschen Display im `valueCoding`. Ein englischer Display lässt die gesamte `answerValueSet`-Prüfung fehlschlagen — mit der irreführenden Meldung, der Wert sei nicht im ValueSet enthalten.

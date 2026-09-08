@@ -412,7 +412,7 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rawScore&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.weight().sum()&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.extension">extension</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/variable&quot;&gt;
@@ -420,7 +420,7 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;phq9Score&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.ordinal().sum()&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^phq-phq2[a-i]$')).answer.value.weight().sum()&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.extension">extension</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>
@@ -429,7 +429,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MII QST PRO PHQ-9&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-08T07:03:30+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-08T09:54:25+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik-Initiative&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik-Initiative&quot;/&gt;
@@ -487,7 +487,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Little interest or pleasure in doing things&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -497,7 +497,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -507,7 +507,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -517,7 +517,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -545,7 +545,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Feeling down, depressed, or hopeless&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -555,7 +555,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -565,7 +565,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -575,7 +575,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -603,7 +603,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Trouble falling or staying asleep, or sleeping too much&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -613,7 +613,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -623,7 +623,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -633,7 +633,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -661,7 +661,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Feeling tired or having little energy&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -671,7 +671,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -681,7 +681,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -691,7 +691,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -719,7 +719,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Poor appetite or overeating&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -729,7 +729,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -739,7 +739,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -749,7 +749,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -778,7 +778,7 @@
           <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Feeling bad about yourself - or that you are a failure or have let yourself or your family down&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -788,7 +788,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -798,7 +798,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -808,7 +808,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -837,7 +837,7 @@
           <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Trouble concentrating on things, such as reading the newspaper or watching television&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -847,7 +847,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -857,7 +857,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -867,7 +867,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -896,7 +896,7 @@
           <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -906,7 +906,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -916,7 +916,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -926,7 +926,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -955,7 +955,7 @@
           <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Thoughts that you would be better off dead or of hurting yourself in some way&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -965,7 +965,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -975,7 +975,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -985,7 +985,7 @@
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/ordinalValue&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/itemWeight&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.answerOption.extension">extension</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value_x_">valueCoding</a>&gt;
@@ -1157,7 +1157,7 @@
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -30,7 +30,7 @@ The 12 items cover **six ICF domains**: cognition, mobility, self-care, getting 
 
 * linkIds `whodas-whodas12-q01` … `whodas-whodas12-q12`.
 * Answer scale via `answerValueSet` (`mii-vs-pro-whodas-12-answer-list`); ordinal weights (0–4) as a property on the CodeSystem concepts (`mii-cs-pro-whodas-12`).
-* Automatic score calculation via FHIRPath (`.ordinal().sum()`). Note: resolving `.ordinal()` from an `answerValueSet` is engine-dependent; robust scoring via CQL/server.
+* Automatic score calculation via FHIRPath (`.weight().sum()`). Note: resolving `.weight()` from an `answerValueSet` is engine-dependent; robust scoring via CQL/server.
 
 **Score representation:**
 

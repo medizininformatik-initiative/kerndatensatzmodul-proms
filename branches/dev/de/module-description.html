@@ -330,7 +330,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>PROMIS Depression SF 4a</strong> – Basis-Implementation vorhanden</li>
   <li><strong>PROMIS Cognitive Function SF 4a</strong> – Basis-Implementation vorhanden</li>
   <li><strong>EORTC QLQ-C30</strong> – Scoring-Methodologie und Terminologie implementiert</li>
-  <li><strong>BDI-II</strong> – aus Lizenzgründen nicht darstellbar, aber Scoring mit ordinalValue (SDC STU3) funktionsfähig</li>
+  <li><strong>BDI-II</strong> – aus Lizenzgründen nicht darstellbar, aber Scoring mit itemWeight (SDC 4.0) funktionsfähig</li>
 </ul>
 
 <h4 id="metadata-only-referenzen-lizenzeinschränkungen">Metadata-Only Referenzen (Lizenzeinschränkungen)</h4>
@@ -373,8 +373,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="migration-zu-sdc-stu4">Migration zu SDC STU4</h5>
 <ul>
-  <li>Migration von ordinalValue zu itemWeight nach STU4-Finalisierung</li>
-  <li>FHIRPath <code class="language-plaintext highlighter-rouge">.weight()</code> Funktion statt <code class="language-plaintext highlighter-rouge">.ordinal()</code></li>
+  <li>Migration von itemWeight zu itemWeight nach STU4-Finalisierung</li>
+  <li>FHIRPath <code class="language-plaintext highlighter-rouge">.weight()</code> Funktion statt <code class="language-plaintext highlighter-rouge">.weight()</code></li>
   <li>Erweiterte SDC-Features nutzen
     <ul>
       <li>z.B. Questionnaire.version plus versionAlgorithm</li>
@@ -468,7 +468,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

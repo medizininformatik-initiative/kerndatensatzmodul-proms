@@ -372,7 +372,7 @@
   </table>
 
 <p>
-<p>MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). ordinalValue properties on each concept enable SDC ordinal scoring via answerValueSet.</p>
+<p>MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.</p>
 
 </p>
 
@@ -392,12 +392,12 @@
   <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated"><p class="res-header-id"></p><a name="mii-cs-pro-ssd-12-answers"> </a><a name="hcmii-cs-pro-ssd-12-answers"> </a>
 <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
 <table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
-<tr><td>ordinalValue</td>
-<td>ordinalValue</td>
-<td>http://hl7.org/fhir/StructureDefinition/ordinalValue</td>
+<tr><td>itemWeight</td>
+<td>itemWeight</td>
+<td>http://hl7.org/fhir/concept-properties#itemWeight</td>
 <td>decimal</td>
-<td>Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .ordinal().sum()</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers</code> defines the following codes:</p>
-<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>ordinalValue</b></td></tr>
+<td>Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().sum()</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>itemWeight</b></td></tr>
 <tr><td style="white-space:nowrap">never<a name="mii-cs-pro-ssd-12-answers-never"> </a></td>
 <td>nie</td>
 <td>0</td></tr>
@@ -449,7 +449,7 @@
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

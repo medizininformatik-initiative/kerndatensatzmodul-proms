@@ -341,8 +341,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><strong>Besonderheiten:</strong></p>
 <ul>
   <li>linkIds <code class="language-plaintext highlighter-rouge">scoff-q01</code>…<code class="language-plaintext highlighter-rouge">scoff-q05</code>, Score-Item <code class="language-plaintext highlighter-rouge">scoff-score-total</code>.</li>
-  <li>Antworten als <strong>inline <code class="language-plaintext highlighter-rouge">answerOption</code> mit SNOMED CT</strong> <code class="language-plaintext highlighter-rouge">373067005</code> (No, Gewicht 0) und <code class="language-plaintext highlighter-rouge">373066001</code> (Yes, Gewicht 1) — gebündelt im geteilten RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code>. Ein eigenes MII-CodeSystem wäre eine Doppelung standardisierter Terminologie; da SNOMED-Konzepten keine <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Property angehängt werden kann, stehen die Gewichte inline statt in einem <code class="language-plaintext highlighter-rouge">answerValueSet</code>.</li>
-  <li>Score-Berechnung via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()</code>.</li>
+  <li>Antworten als <strong>inline <code class="language-plaintext highlighter-rouge">answerOption</code> mit SNOMED CT</strong> <code class="language-plaintext highlighter-rouge">373067005</code> (No, Gewicht 0) und <code class="language-plaintext highlighter-rouge">373066001</code> (Yes, Gewicht 1) — gebündelt im geteilten RuleSet <code class="language-plaintext highlighter-rouge">YesNoAnswerOptions</code>. Ein eigenes MII-CodeSystem wäre eine Doppelung standardisierter Terminologie; da SNOMED-Konzepten keine <code class="language-plaintext highlighter-rouge">itemWeight</code>-Property angehängt werden kann, stehen die Gewichte inline statt in einem <code class="language-plaintext highlighter-rouge">answerValueSet</code>.</li>
+  <li>Score-Berechnung via FHIRPath: <code class="language-plaintext highlighter-rouge">%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.weight().sum()</code>.</li>
   <li><strong>Abweichung zwischen Original und Übersetzung:</strong> Item 3 fragt im Original nach „One stone" (≈ 6,35 kg), die deutsche Fassung nach „mehr als 6 kg". Beide Wortlaute bleiben unverändert erhalten; die Schwelle wird nicht angeglichen.</li>
   <li>Für den SCOFF selbst existiert weder ein LOINC- noch ein SNOMED-CT-Code (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.</li>
 </ul>
@@ -395,7 +395,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -45,7 +45,7 @@
     <valueExpression>
       <name value="symptomSumScore"/>
       <language value="text/fhirpath"/>
-      <expression value="%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.ordinal().sum()"/>
+      <expression value="%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.weight().sum()"/>
     </valueExpression>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2"/>
@@ -54,7 +54,7 @@
   <title value="MII QST PRO MIDOS2"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-09-08T07:03:30+00:00"/>
+  <date value="2026-09-08T09:54:25+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>

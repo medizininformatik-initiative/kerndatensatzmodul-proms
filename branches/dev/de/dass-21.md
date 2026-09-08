@@ -96,7 +96,7 @@ DASS-42-Äquivalent = DASS-21-Rohwert x 2 (Bereich: 0-42)
 
 * Automatische Score-Berechnung via FHIR-Variablen und FHIRPath
 * 6 berechnete Score-Items: 3 Rohwerte + 3 DASS-42-Äquivalente
-* MII CodeSystem mit ordinalValue-Extensions für Scoring
+* MII CodeSystem mit itemWeight-Extensions für Scoring
 
 Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-dass-dass21.md).
 
@@ -132,13 +132,13 @@ Automatische Score-Berechnung über FHIR-Variablen und SDC `calculatedExpression
 
 ```
 // FHIRPath - Variable: depressionRaw
-%resource.item.where(linkId.matches('^dass-dass21-q(03|05|10|13|16|17|21)$')).answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^dass-dass21-q(03|05|10|13|16|17|21)$')).answer.value.weight().sum()
 
 // FHIRPath - Variable: anxietyRaw
-%resource.item.where(linkId.matches('^dass-dass21-q(02|04|07|09|15|19|20)$')).answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^dass-dass21-q(02|04|07|09|15|19|20)$')).answer.value.weight().sum()
 
 // FHIRPath - Variable: stressRaw
-%resource.item.where(linkId.matches('^dass-dass21-q(01|06|08|11|12|14|18)$')).answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^dass-dass21-q(01|06|08|11|12|14|18)$')).answer.value.weight().sum()
 
 // DASS-42 Äquivalent (Beispiel Depression)
 %depressionRaw * 2

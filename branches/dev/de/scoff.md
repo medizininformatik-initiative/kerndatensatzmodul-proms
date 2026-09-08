@@ -27,8 +27,8 @@ Ein auffälliges Screening ist ausdrücklich **kein Diagnoseersatz**: Das Instru
 **Besonderheiten:**
 
 * linkIds `scoff-q01`…`scoff-q05`, Score-Item `scoff-score-total`.
-* Antworten als **inline `answerOption` mit SNOMED CT** `373067005` (No, Gewicht 0) und `373066001` (Yes, Gewicht 1) — gebündelt im geteilten RuleSet `YesNoAnswerOptions`. Ein eigenes MII-CodeSystem wäre eine Doppelung standardisierter Terminologie; da SNOMED-Konzepten keine `ordinalValue`-Property angehängt werden kann, stehen die Gewichte inline statt in einem `answerValueSet`.
-* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.ordinal().sum()`.
+* Antworten als **inline `answerOption` mit SNOMED CT** `373067005` (No, Gewicht 0) und `373066001` (Yes, Gewicht 1) — gebündelt im geteilten RuleSet `YesNoAnswerOptions`. Ein eigenes MII-CodeSystem wäre eine Doppelung standardisierter Terminologie; da SNOMED-Konzepten keine `itemWeight`-Property angehängt werden kann, stehen die Gewichte inline statt in einem `answerValueSet`.
+* Score-Berechnung via FHIRPath: `%resource.item.where(linkId.matches('^scoff-q0[1-5]$')).answer.value.weight().sum()`.
 * **Abweichung zwischen Original und Übersetzung:** Item 3 fragt im Original nach „One stone" (≈ 6,35 kg), die deutsche Fassung nach „mehr als 6 kg". Beide Wortlaute bleiben unverändert erhalten; die Schwelle wird nicht angeglichen.
 * Für den SCOFF selbst existiert weder ein LOINC- noch ein SNOMED-CT-Code (geprüft gegen LOINC 2.83 und SNOMED International 2026-05-01); die Kodierung erfolgt über den MII-Questionnaire-Katalog.
 

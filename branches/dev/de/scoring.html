@@ -359,7 +359,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Das <strong>Score-Item im Questionnaire</strong> (readOnly, mit <code class="language-plaintext highlighter-rouge">code</code> und <code class="language-plaintext highlighter-rouge">observation-extract</code>) ist der gemeinsame Vertrag der Kanäle A und B: Kanal A füllt es live beim Ausfüllen, Kanal B füllt es nachträglich aus den Item-Antworten. Kanal C nutzt es bewusst <strong>nicht</strong> (siehe ETL-Regel unten).</p>
 
-<p>Die Antwort-<strong>Gewichte</strong> sind in allen Kanälen dieselben: Sie sind normativ in den MII-CodeSystems definiert (<code class="language-plaintext highlighter-rouge">ordinalValue</code>-Extension an den Konzepten). Kanal A liest sie über die FHIRPath-Funktion <code class="language-plaintext highlighter-rouge">ordinal()</code>, Kanal B repliziert sie als geprüfte Lookup-Tabellen in der CQL-Library, Kanal C muss algorithmische Übereinstimmung mit den publizierten Scoring-Manualen der Instrumente nachweisen.</p>
+<p>Die Antwort-<strong>Gewichte</strong> sind in allen Kanälen dieselben: Sie sind normativ in den MII-CodeSystems definiert (<code class="language-plaintext highlighter-rouge">itemWeight</code>-Extension an den Konzepten). Kanal A liest sie über die FHIRPath-Funktion <code class="language-plaintext highlighter-rouge">ordinal()</code>, Kanal B repliziert sie als geprüfte Lookup-Tabellen in der CQL-Library, Kanal C muss algorithmische Übereinstimmung mit den publizierten Scoring-Manualen der Instrumente nachweisen.</p>
 
 <hr />
 
@@ -373,7 +373,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "rawScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.ordinal().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
 
 // Score-Item referenziert die Variable
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
@@ -463,7 +463,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><strong>Differential-Tests Kanal A ↔ B</strong>: identische Test-QuestionnaireResponses (Minimum, Maximum, uniforme Antworten, fehlende Items, Opt-outs) durch beide Engines; Ergebnisse müssen exakt übereinstimmen.</li>
-  <li><strong>Gewichts-Konsistenz</strong>: CI-Prüfung, dass die Lookup-Tabellen der CQL-Libraries mit den <code class="language-plaintext highlighter-rouge">ordinalValue</code>-Gewichten der CodeSystems übereinstimmen.</li>
+  <li><strong>Gewichts-Konsistenz</strong>: CI-Prüfung, dass die Lookup-Tabellen der CQL-Libraries mit den <code class="language-plaintext highlighter-rouge">itemWeight</code>-Gewichten der CodeSystems übereinstimmen.</li>
   <li><strong>Import-Validierung (Kanal C)</strong>: stichprobenhafte Nachberechnung über Kanal B, wo Item-Antworten vorliegen.</li>
   <li><strong>Versionsbindung</strong>: Score-Observations referenzieren die Library-Version (bzw. das Scoring-Manual) — jede Score-Zahl bleibt auf ihren Algorithmus rückführbar.</li>
 </ul>
@@ -499,7 +499,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

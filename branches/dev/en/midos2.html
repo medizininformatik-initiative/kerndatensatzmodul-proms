@@ -578,7 +578,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="score-calculation-fhirpath">Score Calculation (FHIRPath)</h4>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FHIR variable: symptomSumScore
-%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.ordinal().sum()
+%resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.weight().sum()
 </code></pre></div></div>
 
 <h3 id="literature">Literature</h3>
@@ -637,7 +637,7 @@ Journal of Pain and Symptom Management. 53(3):630-643 (DOI 10.1016/j.jpainsymman
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 07:03+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 09:54+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
