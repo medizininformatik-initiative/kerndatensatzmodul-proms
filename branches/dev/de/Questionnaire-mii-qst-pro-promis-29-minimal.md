@@ -41,7 +41,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "valueCoding" : {
       "system" : "http://hl7.org/fhir/version-algorithm",
       "code" : "natural",
-      "display" : "Natural Ordering"
+      "display" : "Natural"
     }
   },
   {
@@ -73,7 +73,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T10:20:08+00:00",
+  "date" : "2026-09-08T10:47:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

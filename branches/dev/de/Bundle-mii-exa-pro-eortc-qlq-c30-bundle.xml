@@ -26,7 +26,7 @@
               <valueCoding>
                 <system value="http://hl7.org/fhir/version-algorithm"/>
                 <code value="natural"/>
-                <display value="Natural Ordering"/>
+                <display value="Natural"/>
               </valueCoding>
             </extension>
             <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30"/>
@@ -167,7 +167,7 @@
               <valueCoding>
                 <system value="http://hl7.org/fhir/version-algorithm"/>
                 <code value="natural"/>
-                <display value="Natural Ordering"/>
+                <display value="Natural"/>
               </valueCoding>
             </extension>
             <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
@@ -206,7 +206,7 @@
               <valueCoding>
                 <system value="http://hl7.org/fhir/version-algorithm"/>
                 <code value="natural"/>
-                <display value="Natural Ordering"/>
+                <display value="Natural"/>
               </valueCoding>
             </extension>
             <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
@@ -244,7 +244,7 @@
           <valueCoding>
             <system value="http://hl7.org/fhir/version-algorithm"/>
             <code value="natural"/>
-            <display value="Natural Ordering"/>
+            <display value="Natural"/>
           </valueCoding>
         </extension>
         <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities">

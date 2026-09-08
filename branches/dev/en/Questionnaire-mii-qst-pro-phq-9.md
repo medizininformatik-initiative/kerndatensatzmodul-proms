@@ -42,7 +42,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueCoding" : {
       "system" : "http://hl7.org/fhir/version-algorithm",
       "code" : "natural",
-      "display" : "Natural Ordering"
+      "display" : "Natural"
     }
   },
   {
@@ -93,7 +93,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PHQ-9",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T10:20:08+00:00",
+  "date" : "2026-09-08T10:47:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

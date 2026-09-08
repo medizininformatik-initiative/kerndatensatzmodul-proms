@@ -185,7 +185,7 @@
         "valueCoding" : {
           "system" : "http://hl7.org/fhir/version-algorithm",
           "code" : "natural",
-          "display" : "Natural Ordering"
+          "display" : "Natural"
         }
       },
       {

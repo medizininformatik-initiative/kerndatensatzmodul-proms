@@ -74,7 +74,7 @@
     <valueCoding>
       <system value="http://hl7.org/fhir/version-algorithm"/>
       <code value="natural"/>
-      <display value="Natural Ordering"/>
+      <display value="Natural"/>
     </valueCoding>
   </extension>
   <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
@@ -87,7 +87,7 @@
   <title value="PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-09-08T10:20:08+00:00"/>
+  <date value="2026-09-08T10:47:56+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>

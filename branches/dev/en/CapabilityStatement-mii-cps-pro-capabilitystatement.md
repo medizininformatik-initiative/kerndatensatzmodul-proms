@@ -29,7 +29,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
     "valueCoding" : {
       "system" : "http://hl7.org/fhir/version-algorithm",
       "code" : "natural",
-      "display" : "Natural Ordering"
+      "display" : "Natural"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement",

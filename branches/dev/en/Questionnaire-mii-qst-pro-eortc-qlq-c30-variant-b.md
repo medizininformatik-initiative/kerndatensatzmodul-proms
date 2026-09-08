@@ -50,7 +50,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "valueCoding" : {
         "system" : "http://hl7.org/fhir/version-algorithm",
         "code" : "natural",
-        "display" : "Natural Ordering"
+        "display" : "Natural"
       }
     }],
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
@@ -202,7 +202,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "valueCoding" : {
         "system" : "http://hl7.org/fhir/version-algorithm",
         "code" : "natural",
-        "display" : "Natural Ordering"
+        "display" : "Natural"
       }
     }],
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt-variant-b",
@@ -237,7 +237,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "valueCoding" : {
         "system" : "http://hl7.org/fhir/version-algorithm",
         "code" : "natural",
-        "display" : "Natural Ordering"
+        "display" : "Natural"
       }
     }],
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt-variant-b",
@@ -275,7 +275,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "valueCoding" : {
       "system" : "http://hl7.org/fhir/version-algorithm",
       "code" : "natural",
-      "display" : "Natural Ordering"
+      "display" : "Natural"
     }
   },
   {
@@ -306,7 +306,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0 - Variant B",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T10:20:08+00:00",
+  "date" : "2026-09-08T10:47:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

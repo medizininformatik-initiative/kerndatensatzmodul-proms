@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS EQ-5D Value Set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T10:20:08+00:00",
+  "date" : "2026-09-08T10:47:56+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -662,24 +662,19 @@ This Code system is referenced in the definition of the following value sets:
     }]
   },
   {
-    "code" : "1",
-    "display" : "Level 1"
+    "code" : "1"
   },
   {
-    "code" : "2",
-    "display" : "Level 2"
+    "code" : "2"
   },
   {
-    "code" : "3",
-    "display" : "Level 3"
+    "code" : "3"
   },
   {
-    "code" : "4",
-    "display" : "Level 4"
+    "code" : "4"
   },
   {
-    "code" : "5",
-    "display" : "Level 5"
+    "code" : "5"
   }]
 }
 

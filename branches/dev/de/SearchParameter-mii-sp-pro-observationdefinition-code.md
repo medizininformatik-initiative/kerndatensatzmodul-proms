@@ -40,7 +40,7 @@ SearchParameter for ObservationDefinition.code to find score definitions by code
     "valueCoding" : {
       "system" : "http://hl7.org/fhir/version-algorithm",
       "code" : "natural",
-      "display" : "Natural Ordering"
+      "display" : "Natural"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-code",
