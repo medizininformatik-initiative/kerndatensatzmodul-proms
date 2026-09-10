@@ -855,6 +855,23 @@
       "linkId": "promis-depression-score-raw",
       "type": "decimal",
       "text": "PROMIS Depression Raw Score",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Rohwert (Summenscore)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
       "readOnly": true
     },
     {
@@ -881,6 +898,23 @@
       "linkId": "promis-depression-score-tscore",
       "type": "decimal",
       "text": "PROMIS Depression T-Score",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "T-Score"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
       "readOnly": true
     }
   ],

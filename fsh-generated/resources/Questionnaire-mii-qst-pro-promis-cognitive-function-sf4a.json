@@ -927,7 +927,24 @@
       ],
       "linkId": "PROMIS-CognitiveFunction-SF4a",
       "type": "group",
-      "text": "PROMIS Kognitive Funktion SF 4a"
+      "text": "PROMIS Cognitive Function SF 4a",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "PROMIS Kognitive Funktion SF 4a"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     }
   ],
   "version": "2027.0.0-ballot.rc4",

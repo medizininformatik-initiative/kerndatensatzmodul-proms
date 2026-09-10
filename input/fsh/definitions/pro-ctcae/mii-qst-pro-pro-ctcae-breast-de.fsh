@@ -14,6 +14,7 @@
 Instance: mii-qst-pro-pro-ctcae-breast-de
 InstanceOf: MII_PR_PRO_Questionnaire
 Usage: #definition
+* language = #de
 * insert Version
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de"

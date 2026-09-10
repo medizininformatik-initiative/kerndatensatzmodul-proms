@@ -274,11 +274,13 @@ Usage: #definition
 * item[+].linkId = "QLQ-C30.Scores"
 * item[=].type = #group
 * item[=].text = "Calculated Scores (0-100 scale)"
+* insert TranslationDE(item[=].text, [["Berechnete Scores (Skala 0–100)"]])
 
 // Functional Scales (higher=better): Formula = (1 - (RS-1)/range) × 100
 * item[=].item[+].linkId = "score-pf"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Physical Functioning Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Körperliche Funktion"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -289,6 +291,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-rf"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Role Functioning Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Rollenfunktion"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -299,6 +302,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-ef"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Emotional Functioning Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Emotionale Funktion"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -309,6 +313,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-cf"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Cognitive Functioning Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Kognitive Funktion"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -319,6 +324,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-sf"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Social Functioning Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Soziale Funktion"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -330,6 +336,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-fa"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Fatigue Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Fatigue"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -340,6 +347,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-nv"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Nausea and Vomiting Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Übelkeit und Erbrechen"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -350,6 +358,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-pa"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Pain Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Schmerz"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -361,6 +370,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-dy"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Dyspnoea Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Atemnot"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -371,6 +381,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-sl"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Insomnia Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Schlaflosigkeit"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -381,6 +392,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-ap"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Appetite Loss Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Appetitverlust"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -391,6 +403,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-co"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Constipation Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Verstopfung"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -401,6 +414,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-di"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Diarrhoea Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Durchfall"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -411,6 +425,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-fi"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Financial Difficulties Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Finanzielle Schwierigkeiten"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
@@ -422,6 +437,7 @@ Usage: #definition
 * item[=].item[+].linkId = "score-ql"
 * item[=].item[=].type = #decimal
 * item[=].item[=].text = "Global Health Status / Quality of Life Score"
+* insert TranslationDE(item[=].item[=].text, [["Skalenwert Globaler Gesundheitsstatus / Lebensqualität"]])
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath

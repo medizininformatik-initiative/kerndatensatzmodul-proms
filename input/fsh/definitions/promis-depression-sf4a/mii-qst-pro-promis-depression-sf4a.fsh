@@ -251,6 +251,7 @@ Usage: #definition
 * item[=].type = #decimal
 * item[=].code = $LNC#77821-7 "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
 * item[=].text = "PROMIS Depression Raw Score"
+* insert TranslationDE(item[=].text, [["Rohwert (Summenscore)"]])
 * item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].readOnly = true
@@ -265,6 +266,7 @@ Usage: #definition
 * item[=].type = #decimal
 * item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * item[=].text = "PROMIS Depression T-Score"
+* insert TranslationDE(item[=].text, [["T-Score"]])
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.language = #text/fhirpath

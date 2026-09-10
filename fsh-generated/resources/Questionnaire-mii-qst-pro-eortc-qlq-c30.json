@@ -811,6 +811,23 @@
           "linkId": "score-pf",
           "type": "decimal",
           "text": "Physical Functioning Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Körperliche Funktion"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -830,6 +847,23 @@
           "linkId": "score-rf",
           "type": "decimal",
           "text": "Role Functioning Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Rollenfunktion"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -849,6 +883,23 @@
           "linkId": "score-ef",
           "type": "decimal",
           "text": "Emotional Functioning Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Emotionale Funktion"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -868,6 +919,23 @@
           "linkId": "score-cf",
           "type": "decimal",
           "text": "Cognitive Functioning Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Kognitive Funktion"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -887,6 +955,23 @@
           "linkId": "score-sf",
           "type": "decimal",
           "text": "Social Functioning Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Soziale Funktion"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -906,6 +991,23 @@
           "linkId": "score-fa",
           "type": "decimal",
           "text": "Fatigue Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Fatigue"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -925,6 +1027,23 @@
           "linkId": "score-nv",
           "type": "decimal",
           "text": "Nausea and Vomiting Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Übelkeit und Erbrechen"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -944,6 +1063,23 @@
           "linkId": "score-pa",
           "type": "decimal",
           "text": "Pain Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Schmerz"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -963,6 +1099,23 @@
           "linkId": "score-dy",
           "type": "decimal",
           "text": "Dyspnoea Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Atemnot"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -982,6 +1135,23 @@
           "linkId": "score-sl",
           "type": "decimal",
           "text": "Insomnia Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Schlaflosigkeit"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -1001,6 +1171,23 @@
           "linkId": "score-ap",
           "type": "decimal",
           "text": "Appetite Loss Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Appetitverlust"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -1020,6 +1207,23 @@
           "linkId": "score-co",
           "type": "decimal",
           "text": "Constipation Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Verstopfung"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -1039,6 +1243,23 @@
           "linkId": "score-di",
           "type": "decimal",
           "text": "Diarrhoea Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Durchfall"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -1058,6 +1279,23 @@
           "linkId": "score-fi",
           "type": "decimal",
           "text": "Financial Difficulties Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Finanzielle Schwierigkeiten"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         },
         {
@@ -1077,12 +1315,46 @@
           "linkId": "score-ql",
           "type": "decimal",
           "text": "Global Health Status / Quality of Life Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Skalenwert Globaler Gesundheitsstatus / Lebensqualität"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "readOnly": true
         }
       ],
       "linkId": "QLQ-C30.Scores",
       "type": "group",
-      "text": "Calculated Scores (0-100 scale)"
+      "text": "Calculated Scores (0-100 scale)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Berechnete Scores (Skala 0–100)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     }
   ],
   "version": "2027.0.0-ballot.rc4",

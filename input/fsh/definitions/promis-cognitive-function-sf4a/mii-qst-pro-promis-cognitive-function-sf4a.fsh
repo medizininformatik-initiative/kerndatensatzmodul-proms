@@ -28,7 +28,8 @@ Usage: #definition
 // Main questionnaire item
 * item[+].linkId = "PROMIS-CognitiveFunction-SF4a"
 * item[=].type = #group
-* item[=].text = "PROMIS Kognitive Funktion SF 4a"
+* item[=].text = "PROMIS Cognitive Function SF 4a"
+* insert TranslationDE(item[=].text, [["PROMIS Kognitive Funktion SF 4a"]])
 
 * item[=].item[+].linkId = "PROMIS-CognitiveFunction-SF4a.Instructions"
 * item[=].item[=].type = #display

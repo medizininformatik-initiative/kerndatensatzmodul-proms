@@ -40,19 +40,19 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "MOBILITY"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-1
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-1 "Ich habe keine Probleme herumzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "1"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-2
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-2 "Ich habe leichte Probleme herumzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "2"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-3
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-3 "Ich habe mäßige Probleme herumzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "3"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-4
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-4 "Ich habe große Probleme herumzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "4"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-5
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#MO-5 "Ich bin nicht in der Lage herumzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "5"
 * item[=].required = true
@@ -66,19 +66,19 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "SELF-CARE"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-1
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-1 "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "1"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-2
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-2 "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "2"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-3
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-3 "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "3"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-4
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-4 "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "4"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-5
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#SC-5 "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "5"
 * item[=].required = true
@@ -92,19 +92,19 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-1
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-1 "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "1"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-2
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-2 "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "2"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-3
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-3 "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "3"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-4
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-4 "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "4"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-5
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#UA-5 "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "5"
 * item[=].required = true
@@ -118,19 +118,19 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "PAIN / DISCOMFORT"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-1
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-1 "Ich habe keine Schmerzen oder Beschwerden"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "1"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-2
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-2 "Ich habe leichte Schmerzen oder Beschwerden"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "2"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-3
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-3 "Ich habe mäßige Schmerzen oder Beschwerden"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "3"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-4
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-4 "Ich habe starke Schmerzen oder Beschwerden"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "4"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-5
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#PD-5 "Ich habe extreme Schmerzen oder Beschwerden"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "5"
 * item[=].required = true
@@ -144,19 +144,19 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueCode = #en
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "ANXIETY / DEPRESSION"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-1
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-1 "Ich bin nicht ängstlich oder deprimiert"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "1"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-2
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-2 "Ich bin ein wenig ängstlich oder deprimiert"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "2"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-3
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-3 "Ich bin mäßig ängstlich oder deprimiert"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "3"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-4
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-4 "Ich bin sehr ängstlich oder deprimiert"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "4"
-* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-5
+* item[=].answerOption[+].valueCoding = $mii-cs-pro-eq-5d-value-set#AD-5 "Ich bin extrem ängstlich oder deprimiert"
 * item[=].answerOption[=].extension.url = $hl7-questionnaire-option-prefix
 * item[=].answerOption[=].extension.valueString = "5"
 * item[=].required = true
