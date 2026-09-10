@@ -126,7 +126,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-s
   "name" : "MII_PR_PRO_Score_Blueprint",
   "title" : "MII PR PRO Score Blueprint / Template",
   "status" : "active",
-  "date" : "2026-09-10T15:13:00+00:00",
+  "date" : "2026-09-10T16:21:19+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
