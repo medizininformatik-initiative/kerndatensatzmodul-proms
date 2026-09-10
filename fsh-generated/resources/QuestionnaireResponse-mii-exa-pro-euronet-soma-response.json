@@ -13,7 +13,25 @@
           "valueInteger": 6
         }
       ],
-      "linkId": "euronet-soma-q01"
+      "linkId": "euronet-soma-q01",
+      "text": "During the last 7 days, the overall intensity of my bodily symptoms was:",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie war die Gesamtstärke Ihrer Körperbeschwerden in den letzten 7 Tagen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "answer": [
@@ -21,11 +39,29 @@
           "valueInteger": 5
         }
       ],
-      "linkId": "euronet-soma-q02"
+      "linkId": "euronet-soma-q02",
+      "text": "During the last 7 days, my bodily symptoms interfered with daily life activities",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie sehr waren Sie in den letzten 7 Tagen durch Ihre Körperbeschwerden beeinträchtigt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     }
   ],
   "status": "completed",
-  "language": "de",
+  "language": "en",
   "subject": {
     "reference": "Patient/mii-exa-pro-patient"
   },

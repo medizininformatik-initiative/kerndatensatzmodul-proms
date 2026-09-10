@@ -15,6 +15,7 @@ InstanceOf: mii-pr-pro-questionnaire-response
 Title: "MII EXA PRO MIDOS2 Response"
 Description: "MIDOS2 QuestionnaireResponse Beispiel — Palliativpatient mit moderater Symptomlast (Summe 19/33, Wohlbefinden eher schlecht)"
 Usage: #example
+* language = #de
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response)
 * insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2)
 * status = #completed
@@ -23,52 +24,65 @@ Usage: #example
 
 // Q1 — Schmerz: mittel (2)
 * item[+].linkId = "midos2-q01-schmerz"
+* item[=].text = "Schmerz"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-2 "mittlere"
 
 // Q2 — Übelkeit: leicht (1)
 * item[+].linkId = "midos2-q02-uebelkeit"
+* item[=].text = "Übelkeit"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-1 "leichte"
 
 // Q3 — Erbrechen: keine (0)
 * item[+].linkId = "midos2-q03-erbrechen"
+* item[=].text = "Erbrechen"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-0 "keine"
 
 // Q4 — Luftnot: leicht (1)
 * item[+].linkId = "midos2-q04-luftnot"
+* item[=].text = "Luftnot"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-1 "leichte"
 
 // Q5 — Verstopfung: mittel (2)
 * item[+].linkId = "midos2-q05-verstopfung"
+* item[=].text = "Verstopfung"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-2 "mittlere"
 
 // Q6 — Schwäche: stark (3)
 * item[+].linkId = "midos2-q06-schwaeche"
+* item[=].text = "Schwäche"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-3 "starke"
 
 // Q7 — Müdigkeit: stark (3)
 * item[+].linkId = "midos2-q07-muedigkeit"
+* item[=].text = "Müdigkeit"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-3 "starke"
 
 // Q8 — Appetitmangel: stark (3)
 * item[+].linkId = "midos2-q08-appetitmangel"
+* item[=].text = "Appetitmangel"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-3 "starke"
 
 // Q9 — Depressivität: mittel (2)
 * item[+].linkId = "midos2-q09-depressivitaet"
+* item[=].text = "Depressivität"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-2 "mittlere"
 
 // Q10 — Angst: leicht (1)
 * item[+].linkId = "midos2-q10-angst"
+* item[=].text = "Angst"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-1 "leichte"
 
 // Q11 — Anspannung: leicht (1)
 * item[+].linkId = "midos2-q11-anspannung"
+* item[=].text = "Anspannung"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-severity-1 "leichte"
 
 // Q12 — Wohlbefinden gesamt: eher schlecht (2)
 * item[+].linkId = "midos2-q12-wohlbefinden"
+* item[=].text = "Wie würden Sie Ihr Wohlbefinden insgesamt einschätzen?"
 * item[=].answer.valueCoding = mii-cs-pro-midos2#midos2-wellbeing-2 "eher schlecht"
 
 // Q13 — Andere Beschwerden (freitext)
 * item[+].linkId = "midos2-q13-sonstiges"
+* item[=].text = "Andere Beschwerden (bitte angeben)"
 * item[=].answer.valueString = "Schlafstörungen, häufiges nächtliches Erwachen"

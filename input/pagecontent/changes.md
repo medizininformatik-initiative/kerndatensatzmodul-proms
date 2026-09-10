@@ -6,6 +6,8 @@ This page documents the changes between versions of the MII PRO module.
 
 ### 2027.0.0-ballot.rc4 — in preparation
 
+**QuestionnaireResponse: German always available (2026-09-10):** the profile now requires `item.text` (1..1) and `item.answer.valueCoding.display` (1..1), both must-support with the `translation` extension, plus two invariants: item text and answer display must be available in German — either as the resource's primary language (`language` starts with `de`) or via a `translation` extension with `lang = de`. All 20 example responses were regenerated accordingly (350 item texts, 252 answer displays): German-primary instruments carry German directly, English-primary instruments carry the canonical wording plus German translation extensions; the EORTC QLQ-C30 questionnaire gained the official German item wordings as translation extensions along the way.
+
 **LOINC supplement (2026-09-08):** `mii-cs-pro-loinc-supplement` ships the validated German answer wordings (PHQ-D, PROMIS/PHO) as designations on 24 LOINC codes — content for consumers and terminology servers; measured on both relevant publishers (2.2.11, 2.3.2), display validation does not consume local supplements yet, so the ~178 display findings remain a documented environment class.
 
 The 2027 ballot version brings the **move onto the MII KDS module template** (v0.11.3) — the same toolchain as the other KDS modules. For implementers **nothing changes** in the FHIR artifacts: all 214 resources, their ids, canonicals and versions are unchanged (measured, 0 regressions).

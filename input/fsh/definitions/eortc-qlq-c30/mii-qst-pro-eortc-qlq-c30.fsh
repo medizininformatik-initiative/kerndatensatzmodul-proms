@@ -41,30 +41,35 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "1"
 * item[=].text = "Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?"
+* insert TranslationDE(item[=].text, [["Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen (z.B. eine schwere Einkaufstasche oder einen Koffer zu tragen)?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q02"
 * item[=].type = #choice
 * item[=].prefix = "2"
 * item[=].text = "Do you have any trouble taking a long walk?"
+* insert TranslationDE(item[=].text, [["Bereitet es Ihnen Schwierigkeiten, einen längeren Spaziergang zu machen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q03"
 * item[=].type = #choice
 * item[=].prefix = "3"
 * item[=].text = "Do you have any trouble taking a short walk outside of the house?"
+* insert TranslationDE(item[=].text, [["Bereitet es Ihnen Schwierigkeiten, eine kurze Strecke außer Haus zu gehen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q04"
 * item[=].type = #choice
 * item[=].prefix = "4"
 * item[=].text = "Do you need to stay in bed or a chair during the day?"
+* insert TranslationDE(item[=].text, [["Müssen Sie tagsüber im Bett liegen oder in einem Sessel sitzen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q05"
 * item[=].type = #choice
 * item[=].prefix = "5"
 * item[=].text = "Do you need help with eating, dressing, washing yourself or using the toilet?"
+* insert TranslationDE(item[=].text, [["Brauchen Sie Hilfe beim Essen, Anziehen, Waschen oder Benutzen der Toilette?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q6-7: Role Functioning (RF)
@@ -72,12 +77,14 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "6"
 * item[=].text = "Were you limited in doing either your work or other daily activities?"
+* insert TranslationDE(item[=].text, [["Waren Sie bei Ihrer Arbeit oder bei anderen tagtäglichen Beschäftigungen eingeschränkt?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q07"
 * item[=].type = #choice
 * item[=].prefix = "7"
 * item[=].text = "Were you limited in pursuing your hobbies or other leisure time activities?"
+* insert TranslationDE(item[=].text, [["Waren Sie bei Ihren Hobbys oder anderen Freizeitbeschäftigungen eingeschränkt?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q8: Dyspnoea (DY) - Single item
@@ -85,6 +92,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "8"
 * item[=].text = "Were you short of breath?"
+* insert TranslationDE(item[=].text, [["Waren Sie kurzatmig?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q9: Pain (PA) - Part 1
@@ -92,6 +100,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "9"
 * item[=].text = "Have you had pain?"
+* insert TranslationDE(item[=].text, [["Hatten Sie Schmerzen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q10: Fatigue (FA) - Part 1
@@ -99,6 +108,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "10"
 * item[=].text = "Did you need to rest?"
+* insert TranslationDE(item[=].text, [["Mussten Sie sich ausruhen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q11: Insomnia (SL) - Single item
@@ -106,6 +116,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "11"
 * item[=].text = "Have you had trouble sleeping?"
+* insert TranslationDE(item[=].text, [["Hatten Sie Schlafstörungen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q12: Fatigue (FA) - Part 2
@@ -113,6 +124,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "12"
 * item[=].text = "Have you felt weak?"
+* insert TranslationDE(item[=].text, [["Fühlten Sie sich schwach?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q13: Appetite Loss (AP) - Single item
@@ -120,6 +132,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "13"
 * item[=].text = "Have you lacked appetite?"
+* insert TranslationDE(item[=].text, [["Hatten Sie Appetitmangel?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q14-15: Nausea and Vomiting (NV)
@@ -127,12 +140,14 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "14"
 * item[=].text = "Have you felt nauseated?"
+* insert TranslationDE(item[=].text, [["War Ihnen übel?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q15"
 * item[=].type = #choice
 * item[=].prefix = "15"
 * item[=].text = "Have you vomited?"
+* insert TranslationDE(item[=].text, [["Haben Sie erbrochen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q16: Constipation (CO) - Single item
@@ -140,6 +155,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "16"
 * item[=].text = "Have you been constipated?"
+* insert TranslationDE(item[=].text, [["Hatten Sie Verstopfung?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q17: Diarrhoea (DI) - Single item
@@ -147,6 +163,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "17"
 * item[=].text = "Have you had diarrhea?"
+* insert TranslationDE(item[=].text, [["Hatten Sie Durchfall?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q18: Fatigue (FA) - Part 3
@@ -154,6 +171,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "18"
 * item[=].text = "Were you tired?"
+* insert TranslationDE(item[=].text, [["Waren Sie müde?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q19: Pain (PA) - Part 2
@@ -161,6 +179,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "19"
 * item[=].text = "Did pain interfere with your daily activities?"
+* insert TranslationDE(item[=].text, [["Fühlten Sie sich durch Schmerzen in Ihrem alltäglichen Leben beeinträchtigt?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q20: Cognitive Functioning (CF) - Part 1
@@ -168,6 +187,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "20"
 * item[=].text = "Have you had difficulty in concentrating on things, like reading a newspaper or watching television?"
+* insert TranslationDE(item[=].text, [["Hatten Sie Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. auf das Zeitunglesen oder das Fernsehen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q21-24: Emotional Functioning (EF)
@@ -175,24 +195,28 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "21"
 * item[=].text = "Did you feel tense?"
+* insert TranslationDE(item[=].text, [["Fühlten Sie sich angespannt?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q22"
 * item[=].type = #choice
 * item[=].prefix = "22"
 * item[=].text = "Did you worry?"
+* insert TranslationDE(item[=].text, [["Haben Sie sich Sorgen gemacht?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q23"
 * item[=].type = #choice
 * item[=].prefix = "23"
 * item[=].text = "Did you feel irritable?"
+* insert TranslationDE(item[=].text, [["Waren Sie reizbar?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q24"
 * item[=].type = #choice
 * item[=].prefix = "24"
 * item[=].text = "Did you feel depressed?"
+* insert TranslationDE(item[=].text, [["Fühlten Sie sich niedergeschlagen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q25: Cognitive Functioning (CF) - Part 2
@@ -200,6 +224,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "25"
 * item[=].text = "Have you had difficulty remembering things?"
+* insert TranslationDE(item[=].text, [["Hatten Sie Schwierigkeiten, sich an Dinge zu erinnern?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q26-27: Social Functioning (SF)
@@ -207,12 +232,14 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "26"
 * item[=].text = "Has your physical condition or medical treatment interfered with your family life?"
+* insert TranslationDE(item[=].text, [["Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Familienleben beeinträchtigt?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 * item[+].linkId = "qlq-c30-q27"
 * item[=].type = #choice
 * item[=].prefix = "27"
 * item[=].text = "Has your physical condition or medical treatment interfered with your social activities?"
+* insert TranslationDE(item[=].text, [["Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Zusammensein oder Ihre gemeinsamen Unternehmungen mit anderen Menschen beeinträchtigt?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Q28: Financial Difficulties (FI) - Single item
@@ -220,6 +247,7 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "28"
 * item[=].text = "Has your physical condition or medical treatment caused you financial difficulties?"
+* insert TranslationDE(item[=].text, [["Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung für Sie finanzielle Schwierigkeiten mit sich gebracht?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-4pt
 
 // Section: Global health status (Questions 29-30 with 7-point scale)
@@ -232,12 +260,14 @@ Usage: #definition
 * item[=].type = #choice
 * item[=].prefix = "29"
 * item[=].text = "How would you rate your overall health during the past week?"
+* insert TranslationDE(item[=].text, [["Wie würden Sie insgesamt Ihren Gesundheitszustand während der letzten Woche einschätzen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-7pt
 
 * item[+].linkId = "qlq-c30-q30"
 * item[=].type = #choice
 * item[=].prefix = "30"
 * item[=].text = "How would you rate your overall quality of life during the past week?"
+* insert TranslationDE(item[=].text, [["Wie würden Sie insgesamt Ihre Lebensqualität während der letzten Woche einschätzen?"]])
 * item[=].answerValueSet = $mii-vs-pro-eortc-qlq-c30-scale-7pt
 
 // ===== CALCULATED SCORES SECTION =====

@@ -13,11 +13,46 @@
           "valueCoding": {
             "code": "LA10082-8",
             "system": "http://loinc.org",
-            "display": "Sometimes"
+            "display": "Sometimes",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Manchmal"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
           }
         }
       ],
-      "linkId": "promis-eddep04"
+      "linkId": "promis-eddep04",
+      "text": "I felt worthless",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "...fühlte ich mich wertlos"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "answer": [
@@ -25,11 +60,46 @@
           "valueCoding": {
             "code": "LA10066-1",
             "system": "http://loinc.org",
-            "display": "Rarely"
+            "display": "Rarely",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Selten"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
           }
         }
       ],
-      "linkId": "promis-eddep06"
+      "linkId": "promis-eddep06",
+      "text": "I felt helpless",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "...fühlte ich mich hilflos"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "answer": [
@@ -37,11 +107,46 @@
           "valueCoding": {
             "code": "LA10044-8",
             "system": "http://loinc.org",
-            "display": "Often"
+            "display": "Often",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Oft"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
           }
         }
       ],
-      "linkId": "promis-eddep29"
+      "linkId": "promis-eddep29",
+      "text": "I felt depressed",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "...fühlte ich mich deprimiert"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "answer": [
@@ -49,11 +154,46 @@
           "valueCoding": {
             "code": "LA10082-8",
             "system": "http://loinc.org",
-            "display": "Sometimes"
+            "display": "Sometimes",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Manchmal"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
           }
         }
       ],
-      "linkId": "promis-eddep41"
+      "linkId": "promis-eddep41",
+      "text": "I felt hopeless",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "...fühlte ich mich hoffnungslos"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "answer": [
@@ -61,7 +201,25 @@
           "valueDecimal": 12
         }
       ],
-      "linkId": "promis-depression-score-raw"
+      "linkId": "promis-depression-score-raw",
+      "text": "PROMIS Depression Raw Score",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Rohwert (Summenscore)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "answer": [
@@ -69,9 +227,28 @@
           "valueDecimal": 62.2
         }
       ],
-      "linkId": "promis-depression-score-tscore"
+      "linkId": "promis-depression-score-tscore",
+      "text": "PROMIS Depression T-Score",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "T-Score"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     }
   ],
+  "language": "en",
   "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a|2027.0.0-ballot.rc4",
   "status": "completed",
   "subject": {

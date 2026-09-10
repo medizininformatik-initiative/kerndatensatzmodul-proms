@@ -20,7 +20,8 @@
           }
         }
       ],
-      "linkId": "midos2-q01-schmerz"
+      "linkId": "midos2-q01-schmerz",
+      "text": "Schmerz"
     },
     {
       "answer": [
@@ -32,7 +33,8 @@
           }
         }
       ],
-      "linkId": "midos2-q02-uebelkeit"
+      "linkId": "midos2-q02-uebelkeit",
+      "text": "Übelkeit"
     },
     {
       "answer": [
@@ -44,7 +46,8 @@
           }
         }
       ],
-      "linkId": "midos2-q03-erbrechen"
+      "linkId": "midos2-q03-erbrechen",
+      "text": "Erbrechen"
     },
     {
       "answer": [
@@ -56,7 +59,8 @@
           }
         }
       ],
-      "linkId": "midos2-q04-luftnot"
+      "linkId": "midos2-q04-luftnot",
+      "text": "Luftnot"
     },
     {
       "answer": [
@@ -68,7 +72,8 @@
           }
         }
       ],
-      "linkId": "midos2-q05-verstopfung"
+      "linkId": "midos2-q05-verstopfung",
+      "text": "Verstopfung"
     },
     {
       "answer": [
@@ -80,7 +85,8 @@
           }
         }
       ],
-      "linkId": "midos2-q06-schwaeche"
+      "linkId": "midos2-q06-schwaeche",
+      "text": "Schwäche"
     },
     {
       "answer": [
@@ -92,7 +98,8 @@
           }
         }
       ],
-      "linkId": "midos2-q07-muedigkeit"
+      "linkId": "midos2-q07-muedigkeit",
+      "text": "Müdigkeit"
     },
     {
       "answer": [
@@ -104,7 +111,8 @@
           }
         }
       ],
-      "linkId": "midos2-q08-appetitmangel"
+      "linkId": "midos2-q08-appetitmangel",
+      "text": "Appetitmangel"
     },
     {
       "answer": [
@@ -116,7 +124,8 @@
           }
         }
       ],
-      "linkId": "midos2-q09-depressivitaet"
+      "linkId": "midos2-q09-depressivitaet",
+      "text": "Depressivität"
     },
     {
       "answer": [
@@ -128,7 +137,8 @@
           }
         }
       ],
-      "linkId": "midos2-q10-angst"
+      "linkId": "midos2-q10-angst",
+      "text": "Angst"
     },
     {
       "answer": [
@@ -140,7 +150,8 @@
           }
         }
       ],
-      "linkId": "midos2-q11-anspannung"
+      "linkId": "midos2-q11-anspannung",
+      "text": "Anspannung"
     },
     {
       "answer": [
@@ -152,7 +163,8 @@
           }
         }
       ],
-      "linkId": "midos2-q12-wohlbefinden"
+      "linkId": "midos2-q12-wohlbefinden",
+      "text": "Wie würden Sie Ihr Wohlbefinden insgesamt einschätzen?"
     },
     {
       "answer": [
@@ -160,9 +172,11 @@
           "valueString": "Schlafstörungen, häufiges nächtliches Erwachen"
         }
       ],
-      "linkId": "midos2-q13-sonstiges"
+      "linkId": "midos2-q13-sonstiges",
+      "text": "Andere Beschwerden (bitte angeben)"
     }
   ],
+  "language": "de",
   "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2|2027.0.0-ballot.rc4",
   "status": "completed",
   "authored": "2026-06-01"

@@ -149,3 +149,13 @@ RuleSet: ItemAnswerSetRendering(item, orientation, control, count)
 
 RuleSet: ItemAnswerSetColumnRendering(item, count)
 * insert ItemAnswerSetRendering({item}, horizontal, radio-button, {count})
+// Deutsche Übersetzung als translation-Extension auf einem String-Element
+// (item.text, valueCoding.display). Aufruf mit [[...]]-Parameter, damit
+// Kommata im deutschen Wortlaut die Parametertrennung nicht brechen:
+//   * insert TranslationDE(item[=].text, [["Wenig Interesse, ..."]])
+RuleSet: TranslationDE(path, content)
+* {path}.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* {path}.extension[=].extension[+].url = "lang"
+* {path}.extension[=].extension[=].valueCode = #de
+* {path}.extension[=].extension[+].url = "content"
+* {path}.extension[=].extension[=].valueString = {content}

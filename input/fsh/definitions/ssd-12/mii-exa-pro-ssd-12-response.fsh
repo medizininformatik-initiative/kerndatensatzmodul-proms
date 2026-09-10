@@ -18,41 +18,54 @@ Title: "SSD-12 Questionnaire Response Example"
 * authored = "2026-08-31T09:30:00Z"
 * insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12)
 * item[+].linkId = "ssd12-q01"
+* item[=].text = "Ich denke, dass meine körperlichen Beschwerden Anzeichen einer ernsthaften Erkrankung sind."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q02"
+* item[=].text = "Ich mache mir große Sorgen um meine Gesundheit."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q03"
+* item[=].text = "Meine gesundheitlichen Sorgen behindern mich im Alltag."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q04"
+* item[=].text = "Ich bin von der Ernsthaftigkeit meiner körperlichen Beschwerden überzeugt."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q05"
+* item[=].text = "Meine körperlichen Beschwerden machen mir Angst."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q06"
+* item[=].text = "Meine körperlichen Beschwerden beschäftigen mich den größten Teil des Tages."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q07"
+* item[=].text = "Andere sagen mir, dass meine körperlichen Beschwerden nicht schlimm sind."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q08"
+* item[=].text = "Ich mache mir Sorgen, dass meine körperlichen Beschwerden niemals aufhören werden."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q09"
+* item[=].text = "Die Sorgen um meine Gesundheit rauben mir Energie."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q10"
+* item[=].text = "Ich denke, dass die Ärzte meine körperlichen Beschwerden nicht ernst nehmen."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q11"
+* item[=].text = "Ich mache mir Sorgen auch in Zukunft durch meine körperlichen Beschwerden beeinträchtigt zu bleiben."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 * item[+].linkId = "ssd12-q12"
+* item[=].text = "Durch meine körperlichen Beschwerden kann ich mich schlecht auf andere Dinge konzentrieren."
 * item[=].answer[0].valueCoding = $mii-cs-pro-ssd-12-answers#sometimes "manchmal"
 
 // Calculated total score: 24 of 48
 * item[+].linkId = "ssd12-score-total"
+* item[=].text = "SSD-12 Summenwert (0-48)"
 * item[=].answer[0].valueDecimal = 24

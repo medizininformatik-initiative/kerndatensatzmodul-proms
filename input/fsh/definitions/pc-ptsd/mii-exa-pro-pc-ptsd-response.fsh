@@ -15,17 +15,22 @@ Title: "PC-PTSD Questionnaire Response Example"
 * authored = "2026-08-28T09:30:00Z"
 * insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd)
 * item[+].linkId = "pc-ptsd-q01" // Albträume / aufdringliche Gedanken
+* item[=].text = "… Albträume davon hatten oder daran dachten, obwohl Sie es nicht wollten?"
 * item[=].answer[0].valueCoding = $SCT#373066001 "Yes"
 
 * item[+].linkId = "pc-ptsd-q02" // Vermeidung
+* item[=].text = "… sich stark bemüht haben, nicht daran zu denken oder Situationen zu vermeiden, die Sie daran erinnern?"
 * item[=].answer[0].valueCoding = $SCT#373066001 "Yes"
 
 * item[+].linkId = "pc-ptsd-q03" // Übererregung / Hypervigilanz
+* item[=].text = "...ständig auf der Hut, wachsam oder schreckhaft waren?"
 * item[=].answer[0].valueCoding = $SCT#373067005 "No"
 
 * item[+].linkId = "pc-ptsd-q04" // emotionale Taubheit / Rückzug
+* item[=].text = "...sich abgestumpft und teilnahmslos gegenüber anderen, bei ihren Aktivitäten oder in Ihrem Umfeld fühlten?"
 * item[=].answer[0].valueCoding = $SCT#373066001 "Yes"
 
 // Calculated total score: 3 of 4
 * item[+].linkId = "pc-ptsd-score-total"
+* item[=].text = "PC-PTSD Summenwert (0-4)"
 * item[=].answer[0].valueDecimal = 3
