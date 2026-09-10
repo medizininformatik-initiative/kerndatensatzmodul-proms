@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers | *Version*:2027.0.0-ballot.rc4 |
-| Active as of 2026-09-08 | *Computable Name*:MII_CS_PRO_ISR_Z_Answers |
+| Active as of 2026-09-10 | *Computable Name*:MII_CS_PRO_ISR_Z_Answers |
 
  
 MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet. 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_ISR_Z_Answers",
   "title" : "MII CS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-09-08T16:46:13+00:00",
+  "date" : "2026-09-10T06:46:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

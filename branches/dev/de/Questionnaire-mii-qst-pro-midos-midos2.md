@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2 | *Version*:2027.0.0-ballot.rc4 |
-| Draft Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_QST_PRO_MIDOS_MIDOS2 |
+| Draft Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_QST_PRO_MIDOS_MIDOS2 |
 | **Copyright/Rechtliches**: MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke. | |
 
  
@@ -82,7 +82,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-08T16:46:13+00:00",
+  "date" : "2026-09-10T06:46:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

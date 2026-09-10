@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue | *Version*:2027.0.0-ballot.rc4 |
-| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_CS_PRO_Score_Catalogue |
+| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_CS_PRO_Score_Catalogue |
 
  
 MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module 
@@ -35,7 +35,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-09-08T16:46:13+00:00",
+  "date" : "2026-09-10T06:46:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

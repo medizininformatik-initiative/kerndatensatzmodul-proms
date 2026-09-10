@@ -322,19 +322,6 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 <!-- markdownlint-disable MD041 -->
 <!-- Deutsche Übersetzung von input/pagecontent/extensions.md (aufgeteilt aus
      der früheren Kombi-Seite profiles-and-extensions.md). -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optionale Seite (0..1).</strong> Das KDS-Modulmenü führt diese Seite als
-<em>optional</em>. Entscheiden Sie für Ihr Modul: Seite <strong>behalten</strong> — Inhalte
-ausfüllen und dieses Banner samt <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code>-Marker-Kommentar löschen (in
-dieser Datei UND in der englischen Quellseite) — oder Seite <strong>entfernen</strong>,
-nach der Schritt-für-Schritt-Anleitung in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a> dieses
-Repositories. Ein Release darf dieses Banner nicht enthalten
-(Konventions-Check M9).</p>
-</blockquote>
 
 <h3 id="extensions">Extensions</h3>
 
@@ -343,10 +330,19 @@ definiert (Namenskonvention <code class="language-plaintext highlighter-rouge">M
 Informationen, die die Basis-Ressourcen und Profile nicht ausdrücken können; die
 Profile, die sie verwenden, stehen auf der Seite <a href="profiles.html">Profile</a>.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Listen und beschreiben Sie die Extensions Ihres Moduls — oder
-entfernen Sie diese Seite, wenn Ihr Modul keine definiert.]</p>
-</blockquote>
+<p>Das Modul definiert zwei Extensions:</p>
+
+<ul>
+  <li><strong><a href="StructureDefinition-mii-ex-pro-questionnaire-capabilities.html">Questionnaire Capabilities</a></strong>
+— deklariert, welche Capability-Kombination eine Fragebogen-Variante
+bedient (<em>displayable, collectable, populatable, calculatable,
+extractable</em>). Die Architektur dahinter erklärt
+<a href="questionnaire-capabilities.html">Questionnaire-Capabilities</a>.</li>
+  <li><strong><a href="StructureDefinition-mii-ex-pro-score-score-health-correlation.html">Score Health Correlation</a></strong>
+— verknüpft eine Score-Definition mit den <a href="domains.html">Gesundheitsdomänen</a>,
+die sie misst, und ermöglicht domänenweise Abfragen über
+Instrumentgrenzen hinweg.</li>
+</ul>
 
 
 
@@ -373,7 +369,7 @@ entfernen Sie diese Seite, wenn Ihr Modul keine definiert.]</p>
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 16:46+0000">2026-09-08</span>
+          Erstellt <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

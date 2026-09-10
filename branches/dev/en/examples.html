@@ -323,9 +323,16 @@ template ships the synthetic example
 <p class="bg-warning"><strong>Synthetic data only</strong> — never use real or realistic-looking patient data in
 examples.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Add meaningful example instances for your profiles.]</p>
-</blockquote>
+<p>Every implemented instrument ships worked examples: a completed
+<a href="artifacts.html#example-example-instances">QuestionnaireResponse</a> per
+questionnaire and, where the instrument defines scores, the corresponding
+score <a href="artifacts.html#example-example-instances">Observations</a>. All response
+sets are cross-checked <strong>item-accurately</strong> against the questionnaires'
+<code class="language-plaintext highlighter-rouge">answerOption</code>s — every answer coding in an example is a legal option of
+exactly that item, with matching display and ordinal weight.</p>
+
+<p>The full list is on the <a href="artifacts.html">artifacts page</a>; each instrument's
+narrative page links its own examples in context.</p>
 
 
 
@@ -352,7 +359,7 @@ examples.</p>
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 16:46+0000">2026-09-08</span>
+          Generated <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -317,18 +317,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- Split from the former combined profiles-and-extensions.md per the TF-KDS-agreed
      menu structure (one page per artifact type).
      German mirror: input/translations/de/pagecontent/extensions.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optional page (0..1).</strong> The KDS module menu lists this page as <em>optional</em>.
-Decide for your module: <strong>keep</strong> it — fill it in and delete this banner and
-the <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code> marker comment (in this file AND the German mirror) — or
-<strong>remove</strong> it, following the per-entry procedure in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a>
-of this repository. A release must not ship with this banner (convention
-check M9).</p>
-</blockquote>
 
 <h3 id="extensions">Extensions</h3>
 
@@ -337,10 +325,18 @@ check M9).</p>
 base resources and profiles cannot express; the profiles that use them are on
 the <a href="profiles.html">Profiles</a> page.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: List and describe your module's extensions — or remove this page if
-your module defines none.]</p>
-</blockquote>
+<p>The module defines two extensions:</p>
+
+<ul>
+  <li><strong><a href="StructureDefinition-mii-ex-pro-questionnaire-capabilities.html">Questionnaire Capabilities</a></strong>
+— declares which capability combination a questionnaire variant serves
+(<em>displayable, collectable, populatable, calculatable, extractable</em>). The
+capability architecture behind it is explained under
+<a href="questionnaire-capabilities.html">Questionnaire-Capabilities</a>.</li>
+  <li><strong><a href="StructureDefinition-mii-ex-pro-score-score-health-correlation.html">Score Health Correlation</a></strong>
+— links a score definition to the <a href="domains.html">health domains</a> it
+measures, enabling cross-instrument queries per domain.</li>
+</ul>
 
 
 
@@ -367,7 +363,7 @@ your module defines none.]</p>
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 16:46+0000">2026-09-08</span>
+          Generated <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

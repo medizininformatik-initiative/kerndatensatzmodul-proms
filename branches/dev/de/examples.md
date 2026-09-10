@@ -11,5 +11,7 @@ Diese Seite führt die Beispielinstanzen des Moduls **PRO** auf. Die Vorlage ent
 
 **Nur synthetische Daten** — niemals echte oder realistisch wirkende Patientendaten in Beispielen verwenden.
 
-> [TODO: Ergänzen Sie aussagekräftige Beispielinstanzen zu Ihren Profilen.]
+Jedes implementierte Instrument bringt durchgerechnete Beispiele mit: eine ausgefüllte [QuestionnaireResponse](artifacts.md#example-example-instances) je Fragebogen und, wo das Instrument Scores definiert, die zugehörigen Score-[Observations](artifacts.md#example-example-instances). Alle Antwortsets sind **item-genau** gegen die `answerOption`s der Fragebögen geprüft — jede Antwort-Kodierung eines Beispiels ist eine zulässige Option genau dieses Items, mit passendem Display und Ordinalgewicht.
+
+Die vollständige Liste steht auf der [Artefaktseite](artifacts.md); die Narrativseite jedes Instruments verlinkt ihre Beispiele im Kontext.
 

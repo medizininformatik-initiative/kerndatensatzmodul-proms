@@ -309,20 +309,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#the-model" id="markdown-toc-the-model">The model</a></li>
+  <li><a href="#how-to-read-it" id="markdown-toc-how-to-read-it">How to read it</a></li>
+</ul>
+
 </div>
-
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/logical-models.md.
-     German mirror: input/translations/de/pagecontent/logical-models.md. -->
-<h3 id="logical-models">Logical Models</h3>
 
-<p>The logical data models of the <strong>PRO</strong> module describe the domain dataset independently of its concrete FHIR representation.</p>
+<p>The logical data model of the <strong>PRO</strong> module describes the domain dataset independently of its concrete FHIR representation — the shape a clinician or study designer thinks in, before profiles enter the picture.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Add the logical models, or delete this page.]</p>
-</blockquote>
+<h3 id="the-model">The model</h3>
+
+<p><strong><a href="StructureDefinition-mii-lm-pro.html">MII_LM_PRO</a></strong> structures the domain into four top-level groups, mirroring the module's core workflow:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Cardinality</th>
+      <th>Becomes in FHIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Fragebogen</strong> — the instrument: name, abbreviation, version, internal ID, item bank with codings, answer scales</td>
+      <td>1..*</td>
+      <td><a href="profiles.html">Questionnaire</a></td>
+    </tr>
+    <tr>
+      <td><strong>AusgefuellterFragebogen</strong> — a completed instance: answers, subject, timing</td>
+      <td>0..*</td>
+      <td>QuestionnaireResponse</td>
+    </tr>
+    <tr>
+      <td><strong>Score</strong> — computed values: raw scores, T-scores, reference ranges</td>
+      <td>0..*</td>
+      <td>Observation + ObservationDefinition</td>
+    </tr>
+    <tr>
+      <td><strong>Domaene</strong> — classification by health domain (depression, HRQoL, …)</td>
+      <td>0..*</td>
+      <td>the <a href="domains.html">domain codings</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Element names are deliberately <strong>German</strong> — the model is the shared language with the clinical domain experts; the FHIR mapping to the English resource world is carried by the model's own mapping section and realised by the <a href="profiles.html">profiles</a>.</p>
+
+<h3 id="how-to-read-it">How to read it</h3>
+
+<ul>
+  <li>The <strong><a href="StructureDefinition-mii-lm-pro.html">artifact page</a></strong> renders the full element tree with cardinalities, types and definitions.</li>
+  <li>The <strong><a href="uml-diagrams.html">UML diagrams</a></strong> show the same model graphically, including the workflow views.</li>
+  <li><strong><a href="datasets-and-descriptions.html">Datasets and Descriptions</a></strong> connects the model to the per-instrument datasets.</li>
+</ul>
+
+<p>The logical model is documentation-first: implementers validate against the <a href="profiles.html">profiles</a>, not against the model.</p>
 
 
 
@@ -349,7 +393,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 16:46+0000">2026-09-08</span>
+          Generated <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

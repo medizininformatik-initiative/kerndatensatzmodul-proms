@@ -17,7 +17,7 @@ This section collects the domain guidance for implementing and using the **PRO**
 * **[Guidance for Researchers](researcher-guidance.md)** — for researchers using the module's data.
 * **[Guidance for Implementers](implementer-guidance.md)** — technical guidance for DIC implementers.
 
-> [TODO: Add the module-specific guidance that is relevant to all audiences — e.g. the domain scope or its delimitations.]
+The PRO module standardises **patient-reported** outcomes: instruments the patients answer themselves. Its delimitations: clinician-reported and observer-rated instruments are out of scope; oncology-specific instruments beyond the PRO-CTCAE base screening belong to the dedicated MII Oncology module; score **interpretation** (cut-offs, MID/MCID, decision support) arrives with the CQL roadmap. Which use case a questionnaire serves is governed by its capability combination — see [Questionnaire-Capabilities](questionnaire-capabilities.md).
 
 -------
 

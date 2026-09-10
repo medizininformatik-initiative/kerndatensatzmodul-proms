@@ -323,19 +323,6 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 <!-- Deutsche Übersetzung von input/pagecontent/search-parameters.md
      (aufgeteilt aus der früheren Kombi-Seite
      search-parameters-and-operations.md). -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optionale Seite (0..1).</strong> Das KDS-Modulmenü führt diese Seite als
-<em>optional</em>. Entscheiden Sie für Ihr Modul: Seite <strong>behalten</strong> — Inhalte
-ausfüllen und dieses Banner samt <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code>-Marker-Kommentar löschen (in
-dieser Datei UND in der englischen Quellseite) — oder Seite <strong>entfernen</strong>,
-nach der Schritt-für-Schritt-Anleitung in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a> dieses
-Repositories. Ein Release darf dieses Banner nicht enthalten
-(Konventions-Check M9).</p>
-</blockquote>
 
 <h3 id="suchparameter">Suchparameter</h3>
 
@@ -343,10 +330,59 @@ Repositories. Ein Release darf dieses Banner nicht enthalten
 <strong>PRO</strong> (Namenskonvention <code class="language-plaintext highlighter-rouge">MII_SP_&lt;Modul&gt;_&lt;Name&gt;</code>), sofern
 definiert. Modulübergreifende Suchparameter definiert das Meta-Modul.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Listen Sie die Suchparameter auf — oder entfernen Sie diese Seite,
-wenn Ihr Modul keine definiert.]</p>
-</blockquote>
+<p>Das Modul definiert sieben Suchparameter für <strong>Katalogabfragen</strong> —
+Instrumente und Score-Definitionen über ihre Eigenschaften finden statt
+über ihre id:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressource</th>
+      <th>Parameter</th>
+      <th>Findet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Questionnaire</td>
+      <td><a href="SearchParameter-mii-sp-pro-questionnaire-capabilities.html">capabilities</a></td>
+      <td>Varianten nach Capability (z. B. alle <em>calculatable</em> Fragebögen)</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-code.html">code</a></td>
+      <td>Score-Definitionen nach Score-Code</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-health-correlation.html">health-correlation</a></td>
+      <td>Scores nach <a href="domains.html">Gesundheitsdomäne</a></td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-unit.html">unit</a></td>
+      <td>Scores nach Ergebniseinheit</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.html">permitted-datatype</a></td>
+      <td>Scores nach Ergebnis-Datentyp</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.html">preferred-report-name</a></td>
+      <td>Scores nach Berichtsname</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-interval-category.html">interval-category</a></td>
+      <td>Scores nach Referenzintervall-Kategorie</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Das <a href="capability-statements.html">CapabilityStatement</a> legt fest, welche
+davon ein konformer Server unterstützen muss.</p>
 
 
 
@@ -373,7 +409,7 @@ wenn Ihr Modul keine definiert.]</p>
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 16:46+0000">2026-09-08</span>
+          Erstellt <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

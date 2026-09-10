@@ -324,19 +324,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      renders the artifact pages, but it does not write this narrative. Whenever
      sushi-config.yaml gains or loses a CRMI profile, an artifact-* extension or
      a manifest parameter, update the tables below in BOTH languages. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optional page (0..1).</strong> The KDS module menu lists this page as <em>optional</em> —
-keep it only when your module's profiles carry the metadata characteristics
-it documents (as, for example, the Base module does). Decide for your module:
-<strong>keep</strong> it — fill it in and delete this banner and the <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code>
-marker comment (in this file AND the German mirror) — or <strong>remove</strong> it,
-following the per-entry procedure in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a> of this
-repository. A release must not ship with this banner (convention check M9).</p>
-</blockquote>
 
 <h3 id="metadata-overview">Metadata Overview</h3>
 
@@ -526,13 +513,12 @@ together with a
 resource and the <code class="language-plaintext highlighter-rouge">path-expansion-params</code> / <code class="language-plaintext highlighter-rouge">pin-manifest</code> parameters.</li>
 </ul>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Enable the blocks your module needs and then update the tables above.
-If your module also applies the CRMI shareable/publishable profiles to its own
-StructureDefinitions, CapabilityStatements, CodeSystems and ValueSets — the
-<code class="language-plaintext highlighter-rouge">kerndatensatz-basis</code> idiom is a shared <code class="language-plaintext highlighter-rouge">RuleSet</code> in
-<a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/input/fsh/rulesets/crmi.fsh"><code class="language-plaintext highlighter-rouge">input/fsh/rulesets/crmi.fsh</code></a> — add the corresponding rows here.]</p>
-</blockquote>
+<p>The module enables the full <code class="language-plaintext highlighter-rouge">artifact-*</code> contributor and policy set shown
+above (version policy <em>metadata-driven</em>, authors, editors and the CQF/CRMI
+expansion manifest). It does <strong>not</strong> yet claim the CRMI
+shareable/publishable profiles on its own StructureDefinitions, CodeSystems
+and ValueSets — that adoption is on the roadmap and will follow the
+<code class="language-plaintext highlighter-rouge">kerndatensatz-basis</code> RuleSet idiom.</p>
 
 <h5 id="codesystem-supplements">CodeSystem supplements</h5>
 
@@ -605,11 +591,10 @@ it with <code class="language-plaintext highlighter-rouge">path-expansion-params
 then have one stable place to inspect the parameters used for expansion and
 package pinning.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Add the manifest for your module (see the commented blocks in
-<code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>) and link the generated <code class="language-plaintext highlighter-rouge">Parameters</code> resource page here,
-or state explicitly that this module does not pin expansion parameters.]</p>
-</blockquote>
+<p>This module pins its expansion parameters: the manifest is published as
+<strong><a href="Parameters-mii-param-pro-manifest.html">Parameters/mii-param-pro-manifest</a></strong>,
+linked from the ImplementationGuide via <code class="language-plaintext highlighter-rouge">cqf-expansionParameters</code> and
+enforced in the build via <code class="language-plaintext highlighter-rouge">path-expansion-params</code> / <code class="language-plaintext highlighter-rouge">pin-manifest</code>.</p>
 
 <h4 id="relationship-to-fair">Relationship to FAIR</h4>
 
@@ -746,7 +731,7 @@ asserted to be a persistently identified FAIR dataset.</p>
       <td>R1.1</td>
       <td>RDA-R1.1-01M</td>
       <td>Metadata includes licence information</td>
-      <td>The guide-level <code class="language-plaintext highlighter-rouge">license: CC-BY-4.0</code>, the copyright notice and the package metadata. Reuse conditions for production clinical data must come from the data providers.</td>
+      <td>The guide-level <code class="language-plaintext highlighter-rouge">license: CC0-1.0</code>, the copyright notice and the package metadata. Reuse conditions for production clinical data must come from the data providers.</td>
     </tr>
     <tr>
       <td>R1.3</td>
@@ -769,11 +754,9 @@ asserted to be a persistently identified FAIR dataset.</p>
   </tbody>
 </table>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: The table lists the indicators of priority <em>Essential</em>. If your module
-wants the complete self-assessment, extend it with the <em>Important</em> and
-<em>Useful</em> indicators — <code class="language-plaintext highlighter-rouge">kerndatensatz-basis</code> carries the full table.]</p>
-</blockquote>
+<p>The table deliberately covers the <em>Essential</em> indicators; the complete
+self-assessment including <em>Important</em> and <em>Useful</em> is maintained centrally
+in <code class="language-plaintext highlighter-rouge">kerndatensatz-basis</code> and applies to this module analogously.</p>
 
 <h4 id="practical-use">Practical use</h4>
 
@@ -819,7 +802,7 @@ metadata.</p>
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 16:46+0000">2026-09-08</span>
+          Generated <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

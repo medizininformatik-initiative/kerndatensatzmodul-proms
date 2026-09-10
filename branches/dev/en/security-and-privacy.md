@@ -17,11 +17,11 @@ How data leaving a Data Integration Center is de-identified in practice is speci
 
 #### 3. Module-specific aspects
 
-This is the module's own contribution: the security and privacy properties that follow from the **kind of data this module carries**. **Its content is optional** — not every module has aspects of its own. If yours does not, the whole section body becomes the following default text (delete the example and TODO boxes below and adopt it verbatim):
+Patient-reported outcomes are **direct self-reports** — that shapes this module's own aspects:
 
-> Beyond the overarching framework above — the overarching data protection concept, the Broad Consent it rests on, and DIMP — this module carries no data category that raises security or privacy aspects of its own, and it places no module-specific security or privacy requirements on implementers.
+* **Sensitive content categories.** Most implemented instruments screen for mental health (PHQ-9, BDI-II, DASS-21, EPDS, HADS, …). Single answers can be as sensitive as scores — PHQ-9 item 9 (suicidality) in particular. Systems SHOULD apply the same access protection to raw QuestionnaireResponses as to diagnoses, not treat them as mere survey data.
+* **Free-text answers.** Instruments with open text fields (MIDOS2 free text, remark items) can carry directly identifying information the patients entered themselves. Pseudonymisation at the profile level does not cover this; data releases SHALL treat free-text answers as potentially identifying and exclude or manually curate them.
+* **Scores are derived data.** A score Observation without its source response reveals less than the response; where a project needs only scores, releasing only the score Observations is the data-minimising option DIMP can enforce.
 
-> **Illustrative example — remove before the first release.** How another KDS module fills this section (**Person**): the patient identifiers are pseudonyms from the trusted third party; systems must not let record linkage re-identify a person, and the pseudonym's scope (site-wide vs project-specific) must be respected when data is combined.
-
-> [TODO: State your module's specific aspects — the data categories it carries and their sensitivity, risks that profile-level pseudonymisation does not cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements this module places on implementers, each with the risk it addresses. Name residual risks that must be handled in system design, deployment or policy — or adopt the default text above if there are none.]
+Beyond these, the module places no additional security requirements; the overarching framework above applies unchanged.
 

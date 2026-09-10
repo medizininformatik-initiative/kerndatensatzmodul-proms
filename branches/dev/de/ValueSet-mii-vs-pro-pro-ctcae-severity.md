@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity | *Version*:2027.0.0-ballot.rc4 |
-| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Severity |
+| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Severity |
 
  
 5-point severity response scale for PRO-CTCAE items (0=None, 4=Very severe) 
@@ -43,7 +43,7 @@
   "title" : "MII VS PRO PRO-CTCAE Severity Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T16:46:13+00:00",
+  "date" : "2026-09-10T06:46:47+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

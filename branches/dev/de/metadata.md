@@ -7,8 +7,6 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-> **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als **optional** — behalten Sie sie nur, wenn die Profile Ihres Moduls die hier dokumentierten Metadaten-Charakteristiken aufweisen (wie z. B. das Basis-Modul). Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**, nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md) dieses Repositories. Ein Release darf dieses Banner nicht enthalten (Konventions-Check M9).
-
 ### Metadaten-Übersicht
 
 Diese Seite beschreibt die maschinenlesbaren Metadaten des Moduls **PRO**. Sie existieren, damit die Artefakte dieses Leitfadens auffindbar, bewertbar, validierbar, zitierbar, steuerbar und wiederverwendbar sind — für Menschen wie für Software.
@@ -62,7 +60,7 @@ In diesem Gerüst nicht aktiviert, aber als auskommentierte Blöcke in `sushi-co
 * [Artifact Related Artifact](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-artifact-relatedArtifact.html) — eine Literaturangabe zum Modul.
 * [CQF Expansion Parameters](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-cqf-expansionParameters.html) zusammen mit einer [CRMI-Manifest-Parameters](https://hl7.org/fhir/uv/crmi/STU2/en/StructureDefinition-crmi-manifestparameters.html)-Ressource und den Parametern `path-expansion-params` / `pin-manifest`.
 
-> [TODO: Aktivieren Sie die für Ihr Modul nötigen Blöcke und ziehen Sie die Tabellen oben nach. Wenn Ihr Modul die CRMI-Shareable-/Publishable-Profile zusätzlich auf seine eigenen StructureDefinitions, CapabilityStatements, CodeSysteme und ValueSets anwendet — das Idiom aus `kerndatensatz-basis` ist ein gemeinsames `RuleSet` in [`input/fsh/rulesets/crmi.fsh`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/input/fsh/rulesets/crmi.fsh) —, ergänzen Sie die entsprechenden Zeilen.]
+Das Modul aktiviert den vollen oben gezeigten `artifact-*`-Satz aus Contributor- und Policy-Metadaten (Version-Policy **metadata-driven**, Autorinnen, Editoren sowie das CQF/CRMI-Expansion-Manifest). Die CRMI-Profile **shareable/publishable** beansprucht es auf den eigenen StructureDefinitions, CodeSystemen und ValueSets noch **nicht** — diese Übernahme steht auf der Roadmap und folgt dann dem RuleSet-Idiom von `kerndatensatz-basis`.
 
 ##### CodeSystem-Supplements
 
@@ -89,7 +87,7 @@ Kanonische Referenzen werden im gebauten Paket gepinnt (`pin-canonicals: pin-all
 
 Ein Modul, das zusätzlich eine reproduzierbare Terminologie-Expansion will, ergänzt eine CRMI-Manifest-Parameters-Ressource — das Idiom aus `kerndatensatz-basis` ist `Parameters/mii-param-<slug>-manifest` —, verlinkt sie über `cqf-expansionParameters` aus dem `ImplementationGuide` und weist den Publisher mit `path-expansion-params` und `pin-manifest` darauf hin. Lesende wie Werkzeuge haben dann eine stabile Stelle, an der die Parameter für Expansion und Paket-Pinnung einsehbar sind.
 
-> [TODO: Ergänzen Sie das Manifest Ihres Moduls (siehe die auskommentierten Blöcke in `sushi-config.yaml`) und verlinken Sie hier die erzeugte `Parameters`-Seite — oder halten Sie ausdrücklich fest, dass dieses Modul keine Expansions-Parameter pinnt.]
+Dieses Modul pinnt seine Expansionsparameter: Das Manifest ist als **[Parameters/mii-param-pro-manifest](Parameters-mii-param-pro-manifest.md)** publiziert, aus dem ImplementationGuide via `cqf-expansionParameters` verlinkt und im Build über `path-expansion-params` / `pin-manifest` erzwungen.
 
 #### Bezug zu FAIR
 
@@ -117,12 +115,12 @@ Die mitgelieferten Beispielinstanzen zeigen FAIR-relevante FHIR-Strukturen für 
 | A1.1 | RDA-A1.1-01M | Metadaten sind über ein frei zugängliches Protokoll erreichbar | Öffentlicher HTTPS-Zugang zu Seiten, erzeugten Artefakten und Paket. |
 | A2 | RDA-A2-01M | Metadaten bleiben verfügbar, auch wenn die Daten es nicht mehr sind | Versionierte Veröffentlichung, herunterladbares Paket, Versionshistorie und kanonische Artefakte. Langfristige Zusagen hängen von der Veröffentlichungs-Governance ab. |
 | R1 | RDA-R1-01M | Eine Vielzahl zutreffender, relevanter Attribute ermöglicht die Nachnutzung | CRMI-Profile,`purpose`,`artifact-usage`,`artifact-topic`,`resource-approvalDate`,`resource-effectivePeriod`,`artifact-versionPolicy`,`package-source`und Beitragende. |
-| R1.1 | RDA-R1.1-01M | Metadaten enthalten Lizenzinformationen | Die Lizenz`CC-BY-4.0`auf Leitfaden-Ebene, der Copyright-Hinweis und die Paket-Metadaten. Nutzungsbedingungen produktiver klinischer Daten kommen von den Datenhaltenden. |
+| R1.1 | RDA-R1.1-01M | Metadaten enthalten Lizenzinformationen | Die Lizenz`CC0-1.0`auf Leitfaden-Ebene, der Copyright-Hinweis und die Paket-Metadaten. Nutzungsbedingungen produktiver klinischer Daten kommen von den Datenhaltenden. |
 | R1.3 | RDA-R1.3-01M | Metadaten entsprechen einem Community-Standard | FHIR R4, die CRMI-Profile, die KDS-Veröffentlichungskonventionen und die Metadaten kanonischer Ressourcen. |
 | R1.3 | RDA-R1.3-01D | Daten entsprechen einem Community-Standard | Die Beispiele deklarieren die Profile dieses Moduls. Produktiv muss die Konformität gegen Profile, Bindings und CapabilityStatement-Erwartungen validiert werden. |
 | R1.3 | RDA-R1.3-02M | Metadaten sind gemäß einem Community-Standard maschinenverständlich | CRMI-konforme FHIR-Metadaten als JSON/XML und als FHIR-Paket im NPM-Format des IG-Publisher-Ökosystems. |
 
-> [TODO: Die Tabelle führt die Indikatoren der Priorität **Essential** auf. Wenn Ihr Modul die vollständige Selbsteinschätzung will, ergänzen Sie die Indikatoren der Prioritäten **Important** und **Useful** — `kerndatensatz-basis` führt die vollständige Tabelle.]
+Die Tabelle deckt bewusst die **Essential**-Indikatoren ab; die vollständige Selbstbewertung einschließlich **Important** und **Useful** wird zentral in `kerndatensatz-basis` gepflegt und gilt für dieses Modul analog.
 
 #### Praktische Nutzung
 
