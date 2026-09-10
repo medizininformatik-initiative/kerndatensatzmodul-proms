@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO DASS-21 Response Scale and Item Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T16:21:19+00:00",
+  "date" : "2026-09-10T16:43:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
