@@ -248,9 +248,9 @@
         "id": "QuestionnaireResponse.language",
         "path": "QuestionnaireResponse.language",
         "short": "Sprache der Antwortinhalte",
-        "definition": "Verpflichtend, damit die Sprache von item.text und Antwort-Displays maschinenlesbar feststeht. Deutsche Inhalte: language = de. Anderssprachige Inhalte: deutsche Übersetzung über die translation-Extension (siehe Invarianten).",
+        "definition": "The base language in which the resource is written.",
         "comment": "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Resource.language",
@@ -2508,7 +2508,7 @@
         "short": "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde",
         "definition": "Text that is displayed above the contents of the group or as the text of the question being answered.",
         "requirements": "Allows the questionnaire response to be read without access to the questionnaire.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "QuestionnaireResponse.item.text",
@@ -2528,13 +2528,6 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "mii-pro-qr-de-text",
-            "severity": "error",
-            "human": "Der Item-Text muss auf Deutsch verfügbar sein: entweder ist die Ressourcensprache Deutsch (language beginnt mit 'de') oder der Text trägt eine translation-Extension mit lang = de.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-            "expression": "%resource.language.startsWith('de') or extension('http://hl7.org/fhir/StructureDefinition/translation').extension.where(url = 'lang' and value.startsWith('de')).exists()"
           }
         ],
         "mustSupport": true,
@@ -3363,7 +3356,7 @@
         "short": "Wortlaut der gewählten Antwort",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -3383,13 +3376,6 @@
             "expression": "hasValue() or (children().count() > id.count())",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "mii-pro-qr-de-display",
-            "severity": "error",
-            "human": "Das Antwort-Display muss auf Deutsch verfügbar sein: entweder ist die Ressourcensprache Deutsch (language beginnt mit 'de') oder das Display trägt eine translation-Extension mit lang = de.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-            "expression": "%resource.language.startsWith('de') or extension('http://hl7.org/fhir/StructureDefinition/translation').extension.where(url = 'lang' and value.startsWith('de')).exists()"
           }
         ],
         "mustSupport": true,
@@ -3696,24 +3682,12 @@
         "id": "QuestionnaireResponse.language",
         "path": "QuestionnaireResponse.language",
         "short": "Sprache der Antwortinhalte",
-        "definition": "Verpflichtend, damit die Sprache von item.text und Antwort-Displays maschinenlesbar feststeht. Deutsche Inhalte: language = de. Anderssprachige Inhalte: deutsche Übersetzung über die translation-Extension (siehe Invarianten).",
-        "min": 1,
         "mustSupport": true
       },
       {
         "id": "QuestionnaireResponse.item.text",
         "path": "QuestionnaireResponse.item.text",
-        "short": "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde",
-        "min": 1,
-        "constraint": [
-          {
-            "key": "mii-pro-qr-de-text",
-            "severity": "error",
-            "human": "Der Item-Text muss auf Deutsch verfügbar sein: entweder ist die Ressourcensprache Deutsch (language beginnt mit 'de') oder der Text trägt eine translation-Extension mit lang = de.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-            "expression": "%resource.language.startsWith('de') or extension('http://hl7.org/fhir/StructureDefinition/translation').extension.where(url = 'lang' and value.startsWith('de')).exists()"
-          }
-        ]
+        "short": "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde"
       },
       {
         "id": "QuestionnaireResponse.item.text.extension",
@@ -3775,16 +3749,6 @@
         "id": "QuestionnaireResponse.item.answer.value[x]:valueCoding.display",
         "path": "QuestionnaireResponse.item.answer.value[x].display",
         "short": "Wortlaut der gewählten Antwort",
-        "min": 1,
-        "constraint": [
-          {
-            "key": "mii-pro-qr-de-display",
-            "severity": "error",
-            "human": "Das Antwort-Display muss auf Deutsch verfügbar sein: entweder ist die Ressourcensprache Deutsch (language beginnt mit 'de') oder das Display trägt eine translation-Extension mit lang = de.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-            "expression": "%resource.language.startsWith('de') or extension('http://hl7.org/fhir/StructureDefinition/translation').extension.where(url = 'lang' and value.startsWith('de')).exists()"
-          }
-        ],
         "mustSupport": true
       },
       {
