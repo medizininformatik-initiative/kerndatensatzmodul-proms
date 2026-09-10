@@ -82,7 +82,9 @@ The repository variable `ENABLE_VERSION_COMPARISON=false` switches the whole
 feature off — the publisher's comparison in every build workflow and this
 demonstration alike; a created module never renders the demonstration.
 
-> [TODO: If your module has a versioning policy of its own beyond the KDS scheme
-> — for example a support window for older versions, or a deprecation policy for
-> profiles — describe it here. Delete this prompt afterwards.]
-{: .ig-highlight .ig-highlight-grey}
+Beyond the KDS scheme, this module marks ballot pre-releases as
+`YYYY.0.0-ballot.rcN` (release candidates toward the ballot version) and
+carries the version on ObservationDefinitions via the HL7
+`artifact-version` extension, since FHIR R4 lacks a native `version`
+element there. The complete release history with contents is on the
+[Changelog](changes.html) page.

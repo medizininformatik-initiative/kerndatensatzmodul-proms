@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 <!-- Source: kerndatensatz-basis input/pagecontent/guidance.md (MII module page set).
-     "Guidance" overview page. Replace the [TODO] prompts; the sub-page structure
+     "Guidance" overview page. The sub-page structure
      follows kerndatensatz-basis. German mirror:
      input/translations/de/pagecontent/guidance.md — keep both in step. -->
 
@@ -24,9 +24,14 @@ This section collects the domain guidance for implementing and using the
 * **[Guidance for Implementers](implementer-guidance.html)** — technical
   guidance for DIC implementers.
 
-> [TODO: Add the module-specific guidance that is relevant to all audiences —
-> e.g. the domain scope or its delimitations.]
-{: .ig-highlight .ig-highlight-grey}
+The PRO module standardises **patient-reported** outcomes: instruments the
+patients answer themselves. Its delimitations: clinician-reported and
+observer-rated instruments are out of scope; oncology-specific instruments
+beyond the PRO-CTCAE base screening belong to the dedicated MII Oncology
+module; score *interpretation* (cut-offs, MID/MCID, decision support)
+arrives with the CQL roadmap. Which use case a questionnaire serves is
+governed by its capability combination — see
+[Questionnaire-Capabilities](questionnaire-capabilities.html).
 
 ---
 For the KDS-wide conformance requirements see the

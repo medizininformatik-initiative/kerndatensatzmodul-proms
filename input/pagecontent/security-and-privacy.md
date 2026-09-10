@@ -5,9 +5,7 @@
      module-specific aspects. Stages 1 and 2 are static overarching content —
      keep them; stage 3 is where your module writes. Stage 3's CONTENT is
      optional: a module with no aspects of its own adopts the default text in
-     the section. The Person example box is illustrative only and MUST be
-     removed before the first release (ILLUSTRATIVE-EXAMPLE marker, convention
-     check M11).
+     the section. Stage 3 is filled with the PRO-specific aspects.
      German mirror: input/translations/de/pagecontent/security-and-privacy.md —
      both files must say the same thing. -->
 
@@ -45,31 +43,24 @@ by the DIMP configuration, not by this guide.
 
 #### 3. Module-specific aspects
 
-This is the module's own contribution: the security and privacy properties
-that follow from the *kind of data this module carries*. **Its content is
-optional** — not every module has aspects of its own. If yours does not, the
-whole section body becomes the following default text (delete the example and
-TODO boxes below and adopt it verbatim):
+Patient-reported outcomes are **direct self-reports** — that shapes this
+module's own aspects:
 
-> Beyond the overarching framework above — the overarching data protection
-> concept, the Broad Consent it rests on, and DIMP — this module carries no
-> data category that raises security or privacy aspects of its own, and it
-> places no module-specific security or privacy requirements on implementers.
+* **Sensitive content categories.** Most implemented instruments screen for
+  mental health (PHQ-9, BDI-II, DASS-21, EPDS, HADS, …). Single answers can
+  be as sensitive as scores — PHQ-9 item 9 (suicidality) in particular.
+  Systems SHOULD apply the same access protection to raw
+  QuestionnaireResponses as to diagnoses, not treat them as mere survey
+  data.
+* **Free-text answers.** Instruments with open text fields (MIDOS2 free
+  text, remark items) can carry directly identifying information the
+  patients entered themselves. Pseudonymisation at the profile level does
+  not cover this; data releases SHALL treat free-text answers as
+  potentially identifying and exclude or manually curate them.
+* **Scores are derived data.** A score Observation without its source
+  response reveals less than the response; where a project needs only
+  scores, releasing only the score Observations is the data-minimising
+  option DIMP can enforce.
 
-<!-- ILLUSTRATIVE-EXAMPLE — decide this section and remove the example box
-     below (in this file AND the German mirror) before the first release;
-     the convention check (M11) fails a release branch while it is present. -->
-> **Illustrative example — remove before the first release.** How another KDS
-> module fills this section (*Person*): the patient identifiers are pseudonyms
-> from the trusted third party; systems must not let record linkage
-> re-identify a person, and the pseudonym's scope (site-wide vs
-> project-specific) must be respected when data is combined.
-{: .ig-highlight .ig-highlight-orange}
-
-> [TODO: State your module's specific aspects — the data categories it carries
-> and their sensitivity, risks that profile-level pseudonymisation does not
-> cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements
-> this module places on implementers, each with the risk it addresses. Name
-> residual risks that must be handled in system design, deployment or policy —
-> or adopt the default text above if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+Beyond these, the module places no additional security requirements; the
+overarching framework above applies unchanged.

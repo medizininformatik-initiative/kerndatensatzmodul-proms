@@ -42,36 +42,25 @@ nicht dieser Leitfaden.
 
 #### 3. Modul-spezifische Aspekte
 
-Dies ist der eigene Beitrag des Moduls: die Sicherheits- und
-Datenschutz-Eigenschaften, die aus der *Art der Daten dieses Moduls* folgen.
-**Der Inhalt dieses Abschnitts ist optional** — nicht jedes Modul hat eigene
-Aspekte. Hat Ihres keine, besteht der gesamte Abschnitt aus dem folgenden
-Standardtext (löschen Sie die Beispiel- und TODO-Boxen unten und übernehmen
-Sie ihn wörtlich):
+Patient-berichtete Outcomes sind **direkte Selbstauskünfte** — das prägt
+die eigenen Aspekte dieses Moduls:
 
-> Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende
-> Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP —
-> führt dieses Modul keine Datenkategorie, die eigene Sicherheits- oder
-> Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits-
-> oder Datenschutzanforderungen an Implementierende.
+* **Sensible Inhaltskategorien.** Die meisten implementierten Instrumente
+  screenen psychische Gesundheit (PHQ-9, BDI-II, DASS-21, EPDS, HADS, …).
+  Einzelantworten können so sensibel sein wie Scores — insbesondere PHQ-9
+  Item 9 (Suizidalität). Systeme SOLLEN rohe QuestionnaireResponses mit
+  demselben Zugriffsschutz behandeln wie Diagnosen, nicht als bloße
+  Umfragedaten.
+* **Freitext-Antworten.** Instrumente mit offenen Textfeldern
+  (MIDOS2-Freitext, Bemerkungsitems) können direkt identifizierende
+  Angaben enthalten, die Patientinnen und Patienten selbst eingetragen
+  haben. Pseudonymisierung auf Profilebene deckt das nicht ab;
+  Datenausleitungen MÜSSEN Freitext-Antworten als potenziell
+  identifizierend behandeln und ausschließen oder manuell kuratieren.
+* **Scores sind abgeleitete Daten.** Eine Score-Observation ohne ihre
+  Quell-Response verrät weniger als die Response; braucht ein Projekt nur
+  Scores, ist die Ausleitung allein der Score-Observations die
+  datenminimierende Option, die DIMP durchsetzen kann.
 
-<!-- ILLUSTRATIVE-EXAMPLE — Abschnitt entscheiden und die Beispiel-Box unten
-     (in dieser Datei UND der englischen Quellseite) vor dem ersten Release
-     entfernen; der Konventions-Check (M11) lässt einen Release-Branch damit
-     fehlschlagen. -->
-> **Illustratives Beispiel — vor dem ersten Release entfernen.** So füllt ein
-> anderes KDS-Modul diesen Abschnitt (*Person*): die Patienten-Identifikatoren
-> sind Pseudonyme der Treuhandstelle; Systeme dürfen ein Record Linkage nicht
-> zur Re-Identifizierung führen lassen, und der Geltungsbereich eines
-> Pseudonyms (standortweit vs. projektspezifisch) ist beim Zusammenführen von
-> Daten zu respektieren.
-{: .ig-highlight .ig-highlight-orange}
-
-> [TODO: Nennen Sie die spezifischen Aspekte Ihres Moduls — die geführten
-> Datenkategorien und ihre Sensibilität, Risiken, die eine Pseudonymisierung
-> auf Profilebene nicht abdeckt, sowie sicherheits- oder datenschutzbezogene
-> SHALL/SHOULD/MAY-Anforderungen dieses Moduls an Implementierende, jeweils mit
-> dem adressierten Risiko. Benennen Sie verbleibende Risiken, die im
-> Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
-> übernehmen Sie den Standardtext oben, wenn es keine gibt.]
-{: .ig-highlight .ig-highlight-grey}
+Darüber hinaus stellt das Modul keine zusätzlichen
+Sicherheitsanforderungen; der übergreifende Rahmen oben gilt unverändert.

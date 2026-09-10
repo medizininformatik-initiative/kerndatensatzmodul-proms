@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Übersichtsseite "Anleitung". Ersetzen Sie die [TODO]-Hinweise; die
+<!-- Übersichtsseite "Anleitung". Die
      Unterseiten-Struktur folgt kerndatensatz-basis. -->
 
 Dieser Abschnitt bündelt die fachlichen Hinweise zur Umsetzung und Nutzung des
@@ -22,9 +22,15 @@ Moduls **PRO**.
 * **[Anleitung für Implementierende](implementer-guidance.html)** — technische
   Hinweise für DIZ-Implementierende.
 
-> [TODO: Ergänzen Sie modul-spezifische Hinweise, die für alle Zielgruppen
-> relevant sind — z. B. den fachlichen Geltungsbereich oder Abgrenzungen.]
-{: .ig-highlight .ig-highlight-grey}
+Das PRO-Modul standardisiert **patient-berichtete** Outcomes: Instrumente,
+die Patientinnen und Patienten selbst beantworten. Die Abgrenzungen:
+Fremdbeurteilungsinstrumente sind außerhalb des Scopes;
+onkologiespezifische Instrumente jenseits des PRO-CTCAE-Basisscreenings
+gehören ins dedizierte MII-Modul Onkologie; Score-*Interpretation*
+(Cut-offs, MID/MCID, Entscheidungsunterstützung) kommt mit der
+CQL-Roadmap. Welchen Use Case ein Fragebogen bedient, bestimmt seine
+Capability-Kombination — siehe
+[Questionnaire-Capabilities](questionnaire-capabilities.html).
 
 ---
 Für die KDS-weiten Konformitätsanforderungen siehe die

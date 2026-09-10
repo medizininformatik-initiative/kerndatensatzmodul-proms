@@ -9,5 +9,13 @@ template ships the synthetic example
 **Synthetic data only** — never use real or realistic-looking patient data in
 examples.
 
-> [TODO: Add meaningful example instances for your profiles.]
-{: .ig-highlight .ig-highlight-grey}
+Every implemented instrument ships worked examples: a completed
+[QuestionnaireResponse](artifacts.html#example-example-instances) per
+questionnaire and, where the instrument defines scores, the corresponding
+score [Observations](artifacts.html#example-example-instances). All response
+sets are cross-checked **item-accurately** against the questionnaires'
+`answerOption`s — every answer coding in an example is a legal option of
+exactly that item, with matching display and ordinal weight.
+
+The full list is on the [artifacts page](artifacts.html); each instrument's
+narrative page links its own examples in context.

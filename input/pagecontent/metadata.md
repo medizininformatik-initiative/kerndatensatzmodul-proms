@@ -9,18 +9,7 @@
      renders the artifact pages, but it does not write this narrative. Whenever
      sushi-config.yaml gains or loses a CRMI profile, an artifact-* extension or
      a manifest parameter, update the tables below in BOTH languages. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
 
-> **Optional page (0..1).** The KDS module menu lists this page as *optional* —
-> keep it only when your module's profiles carry the metadata characteristics
-> it documents (as, for example, the Base module does). Decide for your module:
-> **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE`
-> marker comment (in this file AND the German mirror) — or **remove** it,
-> following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md) of this
-> repository. A release must not ship with this banner (convention check M9).
-{: .ig-highlight .ig-highlight-grey}
 
 ### Metadata Overview
 
@@ -106,12 +95,12 @@ Not enabled in this scaffold, but prepared as commented blocks in
   [CRMI Manifest Parameters](https://hl7.org/fhir/uv/crmi/STU2/en/StructureDefinition-crmi-manifestparameters.html)
   resource and the `path-expansion-params` / `pin-manifest` parameters.
 
-> [TODO: Enable the blocks your module needs and then update the tables above.
-> If your module also applies the CRMI shareable/publishable profiles to its own
-> StructureDefinitions, CapabilityStatements, CodeSystems and ValueSets — the
-> `kerndatensatz-basis` idiom is a shared `RuleSet` in
-> [`input/fsh/rulesets/crmi.fsh`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/input/fsh/rulesets/crmi.fsh) — add the corresponding rows here.]
-{: .ig-highlight .ig-highlight-grey}
+The module enables the full `artifact-*` contributor and policy set shown
+above (version policy *metadata-driven*, authors, editors and the CQF/CRMI
+expansion manifest). It does **not** yet claim the CRMI
+shareable/publishable profiles on its own StructureDefinitions, CodeSystems
+and ValueSets — that adoption is on the roadmap and will follow the
+`kerndatensatz-basis` RuleSet idiom.
 
 ##### CodeSystem supplements
 
@@ -164,10 +153,10 @@ it with `path-expansion-params` and `pin-manifest`. Both readers and tooling
 then have one stable place to inspect the parameters used for expansion and
 package pinning.
 
-> [TODO: Add the manifest for your module (see the commented blocks in
-> `sushi-config.yaml`) and link the generated `Parameters` resource page here,
-> or state explicitly that this module does not pin expansion parameters.]
-{: .ig-highlight .ig-highlight-grey}
+This module pins its expansion parameters: the manifest is published as
+**[Parameters/mii-param-pro-manifest](Parameters-mii-param-pro-manifest.html)**,
+linked from the ImplementationGuide via `cqf-expansionParameters` and
+enforced in the build via `path-expansion-params` / `pin-manifest`.
 
 #### Relationship to FAIR
 
@@ -212,15 +201,14 @@ asserted to be a persistently identified FAIR dataset.
 | A1.1 | RDA-A1.1-01M | Metadata is accessible through a free access protocol | Public HTTPS access to the pages, the generated artifacts and the package. |
 | A2 | RDA-A2-01M | Metadata remains available after the data is gone | Versioned publication, downloadable package, version history and canonical artifacts. Long-term guarantees depend on publication governance. |
 | R1 | RDA-R1-01M | A plurality of accurate, relevant attributes is provided | CRMI profiles, `purpose`, `artifact-usage`, `artifact-topic`, `resource-approvalDate`, `resource-effectivePeriod`, `artifact-versionPolicy`, `package-source` and contributors. |
-| R1.1 | RDA-R1.1-01M | Metadata includes licence information | The guide-level `license: CC-BY-4.0`, the copyright notice and the package metadata. Reuse conditions for production clinical data must come from the data providers. |
+| R1.1 | RDA-R1.1-01M | Metadata includes licence information | The guide-level `license: CC0-1.0`, the copyright notice and the package metadata. Reuse conditions for production clinical data must come from the data providers. |
 | R1.3 | RDA-R1.3-01M | Metadata complies with a community standard | FHIR R4, the CRMI profiles, the KDS publication conventions and canonical resource metadata. |
 | R1.3 | RDA-R1.3-01D | Data complies with a community standard | The examples declare this module's profiles. In production, conformance must be validated against the profiles, bindings and CapabilityStatement expectations. |
 | R1.3 | RDA-R1.3-02M | Metadata is machine-understandable per a community standard | CRMI-conformant FHIR metadata as JSON/XML and as a FHIR package in the NPM package format used by the IG Publisher ecosystem. |
 
-> [TODO: The table lists the indicators of priority *Essential*. If your module
-> wants the complete self-assessment, extend it with the *Important* and
-> *Useful* indicators — `kerndatensatz-basis` carries the full table.]
-{: .ig-highlight .ig-highlight-grey}
+The table deliberately covers the *Essential* indicators; the complete
+self-assessment including *Important* and *Useful* is maintained centrally
+in `kerndatensatz-basis` and applies to this module analogously.
 
 #### Practical use
 

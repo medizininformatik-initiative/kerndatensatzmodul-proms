@@ -3,5 +3,11 @@
 
 Die CapabilityStatements des Moduls **PRO** beschreiben die erwarteten Server-/Client-Fähigkeiten (unterstützte Ressourcen und Interaktionen).
 
-> [TODO: Verweisen Sie auf das/die CapabilityStatement(s) Ihres Moduls, oder entfernen Sie diese Seite.]
-{: .ig-highlight .ig-highlight-grey}
+Das Modul liefert ein CapabilityStatement:
+**[MII CPS PRO](CapabilityStatement-mii-cps-pro-capabilitystatement.html)**
+beschreibt, was ein konformer Server für den PRO-Workflow anbietet — die
+Interaktionen auf Questionnaire, QuestionnaireResponse, Observation und
+ObservationDefinition sowie die [Suchparameter](search-parameters.html)
+des Moduls für Katalogabfragen. Es ist der Konformanzanker, auf dem der
+geplante [nationale Fragebogenserver](national-questionnaire-server.html)
+aufbaut.
