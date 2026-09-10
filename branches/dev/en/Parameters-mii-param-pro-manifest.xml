@@ -504,6 +504,10 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/translation|5.3.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
     <valueCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia|4.0.0"/>
   </parameter>
   <parameter>

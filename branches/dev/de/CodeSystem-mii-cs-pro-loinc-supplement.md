@@ -36,7 +36,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO LOINC Supplement (validated answer wordings)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-10T06:46:47+00:00",
+  "date" : "2026-09-10T14:44:28+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

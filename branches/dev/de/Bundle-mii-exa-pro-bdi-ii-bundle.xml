@@ -418,195 +418,238 @@
         <authored value="2023-10-01T12:00:00Z"/>
         <item>
           <linkId value="bdi-bdi2-q01"/>
+          <text value="[TEST PLACEHOLDER: Question 1 about mood - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q02"/>
+          <text value="[TEST PLACEHOLDER: Question 2 about outlook - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q03"/>
+          <text value="[TEST PLACEHOLDER: Question 3 about experiences - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-0"/>
+              <display value="0 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q04"/>
+          <text value="[TEST PLACEHOLDER: Question 4 about enjoyment - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-2"/>
+              <display value="2 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q05"/>
+          <text value="[TEST PLACEHOLDER: Question 5 about feelings - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q06"/>
+          <text value="[PLATZHALTER] BDI-II Frage 06 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-0"/>
+              <display value="0 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q07"/>
+          <text value="[PLATZHALTER] BDI-II Frage 07 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q08"/>
+          <text value="[PLATZHALTER] BDI-II Frage 08 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q09"/>
+          <text value="[PLATZHALTER] BDI-II Frage 09 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-0"/>
+              <display value="0 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q10"/>
+          <text value="[TEST PLACEHOLDER: Question 10 about emotions - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q11"/>
+          <text value="[PLATZHALTER] BDI-II Frage 11 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-0"/>
+              <display value="0 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q12"/>
+          <text value="[PLATZHALTER] BDI-II Frage 12 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-2"/>
+              <display value="2 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q13"/>
+          <text value="[PLATZHALTER] BDI-II Frage 13 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q14"/>
+          <text value="[PLATZHALTER] BDI-II Frage 14 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q15"/>
+          <text value="[TEST PLACEHOLDER: Question 15 about energy (uses extended scale) - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-2a"/>
+              <display value="2 points (variant a)"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q16"/>
+          <text value="[PLATZHALTER] BDI-II Frage 16 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q17"/>
+          <text value="[TEST PLACEHOLDER: Question 17 about appetite (uses extended scale) - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1a"/>
+              <display value="1 point (variant a)"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q18"/>
+          <text value="[PLATZHALTER] BDI-II Frage 18 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-2"/>
+              <display value="2 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q19"/>
+          <text value="[PLATZHALTER] BDI-II Frage 19 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-1"/>
+              <display value="1 point"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q20"/>
+          <text value="[PLATZHALTER] BDI-II Frage 20 – Original-Wortlaut lizenzbedingt nicht enthalten"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-0"/>
+              <display value="0 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-q21"/>
+          <text value="[TEST PLACEHOLDER: Question 21 about interests - NOT actual BDI-II text]"/>
           <answer>
             <valueCoding>
               <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"/>
               <code value="bdi-bdi2-answer-0"/>
+              <display value="0 points"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="bdi-bdi2-score-total"/>
+          <text value="BDI-II Gesamtscore (0-63)"/>
           <answer>
             <valueDecimal value="19"/>
           </answer>

@@ -45,52 +45,58 @@
       "authored" : "2024-01-15T10:30:00Z",
       "item" : [{
         "linkId" : "promis-eddep04",
+        "text" : "...fühlte ich mich wertlos",
         "answer" : [{
           "valueCoding" : {
             "system" : "http://loinc.org",
             "code" : "LA10082-8",
-            "display" : "Sometimes"
+            "display" : "Manchmal"
           }
         }]
       },
       {
         "linkId" : "promis-eddep06",
+        "text" : "...fühlte ich mich hilflos",
         "answer" : [{
           "valueCoding" : {
             "system" : "http://loinc.org",
             "code" : "LA10066-1",
-            "display" : "Rarely"
+            "display" : "Selten"
           }
         }]
       },
       {
         "linkId" : "promis-eddep29",
+        "text" : "...fühlte ich mich deprimiert",
         "answer" : [{
           "valueCoding" : {
             "system" : "http://loinc.org",
             "code" : "LA10044-8",
-            "display" : "Often"
+            "display" : "Oft"
           }
         }]
       },
       {
         "linkId" : "promis-eddep41",
+        "text" : "...fühlte ich mich hoffnungslos",
         "answer" : [{
           "valueCoding" : {
             "system" : "http://loinc.org",
             "code" : "LA10082-8",
-            "display" : "Sometimes"
+            "display" : "Manchmal"
           }
         }]
       },
       {
         "linkId" : "promis-depression-score-raw",
+        "text" : "Rohwert (Summenscore)",
         "answer" : [{
           "valueDecimal" : 12
         }]
       },
       {
         "linkId" : "promis-depression-score-tscore",
+        "text" : "T-Score",
         "answer" : [{
           "valueDecimal" : 62.2
         }]

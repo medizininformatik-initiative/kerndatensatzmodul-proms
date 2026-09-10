@@ -726,107 +726,118 @@
         <authored value="2023-10-01T12:00:00Z"/>
         <item>
           <linkId value="phq-phq2a"/>
+          <text value="Wenig Interesse oder Freude an Ihren Tätigkeiten"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2b"/>
+          <text value="Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2c"/>
+          <text value="Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2d"/>
+          <text value="Müdigkeit oder Gefühl, keine Energie zu haben"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2e"/>
+          <text value="Verminderter Appetit oder übermäßiges Bedürfnis zu essen"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2f"/>
+          <text value="Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2g"/>
+          <text value="Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2h"/>
+          <text value="Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil 'zappelig' oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq2i"/>
+          <text value="Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6571-9"/>
-              <display value="Nearly every day"/>
+              <display value="Beinahe jeden Tag"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq9-score-total"/>
+          <text value="PHQ-9 Gesamtwert"/>
           <answer>
             <valueDecimal value="27"/>
           </answer>
         </item>
         <item>
           <linkId value="phq-phq9-difficulty"/>
+          <text value="Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA6574-3"/>
-              <display value="Extremely difficult"/>
+              <display value="Sehr stark erschwert"/>
             </valueCoding>
           </answer>
         </item>

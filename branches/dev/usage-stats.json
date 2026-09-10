@@ -258,7 +258,10 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Bundle.entry.resource.item.answer.valueCoding.display",
       "Bundle.entry.resource.item.answerOption.valueCoding.display",
+      "Bundle.entry.resource.item.item.answer.valueCoding.display",
+      "Bundle.entry.resource.item.item.text",
       "Bundle.entry.resource.item.text",
       "Questionnaire.item.answerOption.valueCoding.display",
       "Questionnaire.item.answerOption.valueString",
@@ -266,7 +269,12 @@
       "Questionnaire.item.item.item.text",
       "Questionnaire.item.item.text",
       "Questionnaire.item.text",
-      "Questionnaire.title"
+      "Questionnaire.title",
+      "QuestionnaireResponse.item.answer.valueCoding.display",
+      "QuestionnaireResponse.item.answer.value[x].display",
+      "QuestionnaireResponse.item.item.answer.valueCoding.display",
+      "QuestionnaireResponse.item.item.text",
+      "QuestionnaireResponse.item.text"
     ],
     "http://hl7.org/fhir/StructureDefinition/variable": [
       "Bundle.entry.resource",

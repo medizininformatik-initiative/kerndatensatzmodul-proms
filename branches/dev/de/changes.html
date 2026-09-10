@@ -331,6 +331,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="202700-ballotrc4--in-vorbereitung">2027.0.0-ballot.rc4 — in Vorbereitung</h3>
 
+<p><strong>QuestionnaireResponse: Deutsch immer verfügbar (10.09.2026):</strong> Das Profil fordert jetzt <code class="language-plaintext highlighter-rouge">item.text</code> (1..1) und <code class="language-plaintext highlighter-rouge">item.answer.valueCoding.display</code> (1..1), beide Must-Support mit <code class="language-plaintext highlighter-rouge">translation</code>-Extension, plus zwei Invarianten: Item-Text und Antwort-Display müssen auf Deutsch verfügbar sein — entweder als Primärsprache der Ressource (<code class="language-plaintext highlighter-rouge">language</code> beginnt mit <code class="language-plaintext highlighter-rouge">de</code>) oder über eine <code class="language-plaintext highlighter-rouge">translation</code>-Extension mit <code class="language-plaintext highlighter-rouge">lang = de</code>. Alle 20 Beispiel-Responses wurden entsprechend regeneriert (350 Item-Texte, 252 Antwort-Displays): deutschsprachig-primäre Instrumente tragen Deutsch direkt, englisch-primäre den kanonischen Wortlaut plus deutsche Translation-Extensions; das EORTC-QLQ-C30-Questionnaire hat dabei die offiziellen deutschen Item-Wortlaute als Translation-Extensions erhalten.</p>
+
 <p><strong>LOINC-Supplement (2026-09-08):</strong> <code class="language-plaintext highlighter-rouge">mii-cs-pro-loinc-supplement</code> liefert die validierten deutschen Antwort-Wortlaute (PHQ-D, PROMIS/PHO) als Designationen auf 24 LOINC-Codes — Inhalt für Konsumenten und Terminologieserver; auf beiden relevanten Publishern (2.2.11, 2.3.2) gemessen nutzt die Display-Validierung lokale Supplements noch nicht, die ~178 Display-Findings bleiben daher eine dokumentierte Umgebungsklasse.</p>
 
 <p>Die Ballotierungsfassung 2027 bringt den <strong>Umzug auf das MII-KDS-Modul-Template</strong> (v0.11.3) — dieselbe Werkzeugkette wie die übrigen KDS-Module. Für Implementierende ändert sich an den FHIR-Artefakten <strong>nichts</strong>: alle 214 Ressourcen, ihre IDs, Canonicals und Versionen bleiben unverändert (nachgemessen, 0 Regressionen).</p>
@@ -811,7 +813,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
+          Erstellt <span title="Thu, Sep 10, 2026 14:44+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

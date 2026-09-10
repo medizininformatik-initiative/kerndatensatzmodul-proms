@@ -50,330 +50,374 @@
         <authored value="2025-01-30T14:30:00Z"/>
         <item>
           <linkId value="PROMIS-29.PhysicalFunction"/>
+          <text value="KÖRPERLICHE FUNKTION"/>
           <item>
             <linkId value="PROMIS-29.PhysicalFunction.Description"/>
+            <text value="Sind Sie zu folgenden Tätigkeiten imstande:"/>
           </item>
           <item>
             <linkId value="promis-pfa11"/>
+            <text value="Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13920-6"/>
-                <display value="With some difficulty"/>
+                <display value="Mit einigen Schwierigkeiten"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-pfa21"/>
+            <text value="Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13920-6"/>
-                <display value="With some difficulty"/>
+                <display value="Mit einigen Schwierigkeiten"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-pfa23"/>
+            <text value="Können Sie mindestens 15 Minuten lang spazieren gehen?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13918-0"/>
-                <display value="With a little difficulty"/>
+                <display value="Mit geringen Schwierigkeiten"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-pfa53"/>
+            <text value="Können Sie Besorgungen machen und einkaufen gehen?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13920-6"/>
-                <display value="With some difficulty"/>
+                <display value="Mit einigen Schwierigkeiten"/>
               </valueCoding>
             </answer>
           </item>
         </item>
         <item>
           <linkId value="PROMIS-29.Anxiety"/>
+          <text value="ANGST"/>
           <item>
             <linkId value="PROMIS-29.Anxiety.Description"/>
+            <text value="In den letzten 7 Tagen:"/>
           </item>
           <item>
             <linkId value="promis-edanx01"/>
+            <text value="Ich fürchtete mich."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10066-1"/>
-                <display value="Rarely"/>
+                <display value="Selten"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-edanx40"/>
+            <text value="Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10082-8"/>
-                <display value="Sometimes"/>
+                <display value="Manchmal"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-edanx41"/>
+            <text value="Meine Sorgen haben mich überwältigt."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10066-1"/>
-                <display value="Rarely"/>
+                <display value="Selten"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-edanx53"/>
+            <text value="Ich fühlte mich unruhig."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10066-1"/>
-                <display value="Rarely"/>
+                <display value="Selten"/>
               </valueCoding>
             </answer>
           </item>
         </item>
         <item>
           <linkId value="PROMIS-29.Depression"/>
+          <text value="DEPRESSION"/>
           <item>
             <linkId value="PROMIS-29.Depression.Description"/>
+            <text value="In den letzten 7 Tagen:"/>
           </item>
           <item>
             <linkId value="promis-eddep04"/>
+            <text value="Ich fühlte mich wertlos."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10082-8"/>
-                <display value="Sometimes"/>
+                <display value="Manchmal"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-eddep06"/>
+            <text value="Ich fühlte mich hilflos."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10082-8"/>
-                <display value="Sometimes"/>
+                <display value="Manchmal"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-eddep29"/>
+            <text value="Ich fühlte mich niedergeschlagen."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10044-8"/>
-                <display value="Often"/>
+                <display value="Oft"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-eddep41"/>
+            <text value="Ich fühlte mich hoffnungslos."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10082-8"/>
-                <display value="Sometimes"/>
+                <display value="Manchmal"/>
               </valueCoding>
             </answer>
           </item>
         </item>
         <item>
           <linkId value="PROMIS-29.Fatigue"/>
+          <text value="ERSCHÖPFUNG"/>
           <item>
             <linkId value="PROMIS-29.Fatigue.Description"/>
+            <text value="In den letzten 7 Tagen:"/>
           </item>
           <item>
             <linkId value="promis-hi7"/>
+            <text value="Ich bin erschöpft."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13902-4"/>
-                <display value="Quite a bit"/>
+                <display value="Ziemlich"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-an3"/>
+            <text value="Es fällt mir schwer, etwas anzufangen, weil ich müde bin."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13902-4"/>
-                <display value="Quite a bit"/>
+                <display value="Ziemlich"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-fatexp41"/>
+            <text value="Wie ausgelaugt fühlten Sie sich im Allgemeinen?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13909-9"/>
-                <display value="Somewhat"/>
+                <display value="Mäßig"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-fatexp40"/>
+            <text value="Wie erschöpft waren Sie im Allgemeinen?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13902-4"/>
-                <display value="Quite a bit"/>
+                <display value="Ziemlich"/>
               </valueCoding>
             </answer>
           </item>
         </item>
         <item>
           <linkId value="PROMIS-29.Sleep"/>
+          <text value="SCHLAFSTÖRUNGEN"/>
           <item>
             <linkId value="PROMIS-29.Sleep.Description"/>
+            <text value="In den letzten 7 Tagen:"/>
           </item>
           <item>
             <linkId value="promis-sleep109"/>
+            <text value="Meine Schlafqualität war ..."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA8968-5"/>
-                <display value="Fair"/>
+                <display value="Mäßig"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-sleep116"/>
+            <text value="Mein Schlaf war erfrischend."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13909-9"/>
-                <display value="Somewhat"/>
+                <display value="Mäßig"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-sleep20"/>
+            <text value="Ich hatte Schlafprobleme."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13909-9"/>
-                <display value="Somewhat"/>
+                <display value="Mäßig"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-sleep44"/>
+            <text value="Ich hatte Schwierigkeiten einzuschlafen."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13863-8"/>
-                <display value="A little bit"/>
+                <display value="Ein wenig"/>
               </valueCoding>
             </answer>
           </item>
         </item>
         <item>
           <linkId value="PROMIS-29.Social"/>
+          <text value="SOZIALE TEILHABE"/>
           <item>
             <linkId value="PROMIS-29.Social.Description"/>
+            <text value="In den letzten 7 Tagen:"/>
           </item>
           <item>
             <linkId value="promis-srpper11-caps"/>
+            <text value="Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10082-8"/>
-                <display value="Sometimes"/>
+                <display value="Manchmal"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-srpper18-caps"/>
+            <text value="Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10066-1"/>
-                <display value="Rarely"/>
+                <display value="Selten"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-srpper23-caps"/>
+            <text value="Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10082-8"/>
-                <display value="Sometimes"/>
+                <display value="Manchmal"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-srpper46-caps"/>
+            <text value="Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA10082-8"/>
-                <display value="Sometimes"/>
+                <display value="Manchmal"/>
               </valueCoding>
             </answer>
           </item>
         </item>
         <item>
           <linkId value="PROMIS-29.PainInterference"/>
+          <text value="SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"/>
           <item>
             <linkId value="PROMIS-29.PainInterference.Description"/>
+            <text value="In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."/>
           </item>
           <item>
             <linkId value="promis-painin9"/>
+            <text value="Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13909-9"/>
-                <display value="Somewhat"/>
+                <display value="Mäßig"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-painin22"/>
+            <text value="Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13909-9"/>
-                <display value="Somewhat"/>
+                <display value="Mäßig"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-painin31"/>
+            <text value="Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13863-8"/>
-                <display value="A little bit"/>
+                <display value="Ein wenig"/>
               </valueCoding>
             </answer>
           </item>
           <item>
             <linkId value="promis-painin34"/>
+            <text value="Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?"/>
             <answer>
               <valueCoding>
                 <system value="http://loinc.org"/>
                 <code value="LA13909-9"/>
-                <display value="Somewhat"/>
+                <display value="Mäßig"/>
               </valueCoding>
             </answer>
           </item>
         </item>
         <item>
           <linkId value="PROMIS-29.PainIntensity"/>
+          <text value="SCHMERZINTENSITÄT"/>
           <item>
             <linkId value="promis-global07"/>
+            <text value="Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"/>
             <answer>
               <valueInteger value="5"/>
             </answer>
@@ -381,86 +425,101 @@
         </item>
         <item>
           <linkId value="PROMIS-29.Scores"/>
+          <text value="BEREICHS-BEWERTUNGEN"/>
           <item>
             <linkId value="promis-29-physical-function-raw"/>
+            <text value="PROMIS-29 Körperliche Funktion - Rohwert"/>
             <answer>
               <valueDecimal value="13"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-physical-function-tscore"/>
+            <text value="PROMIS-29 Körperliche Funktion - T-Score"/>
             <answer>
               <valueDecimal value="42.6"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-anxiety-raw"/>
+            <text value="PROMIS-29 Angst - Rohwert"/>
             <answer>
               <valueDecimal value="9"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-anxiety-tscore"/>
+            <text value="PROMIS-29 Angst - T-Score"/>
             <answer>
               <valueDecimal value="56.8"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-depression-raw"/>
+            <text value="PROMIS-29 Depression - Rohwert"/>
             <answer>
               <valueDecimal value="13"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-depression-tscore"/>
+            <text value="PROMIS-29 Depression - T-Score"/>
             <answer>
               <valueDecimal value="63.9"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-fatigue-raw"/>
+            <text value="PROMIS-29 Erschöpfung - Rohwert"/>
             <answer>
               <valueDecimal value="15"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-fatigue-tscore"/>
+            <text value="PROMIS-29 Erschöpfung - T-Score"/>
             <answer>
               <valueDecimal value="64.9"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-sleep-raw"/>
+            <text value="PROMIS-29 Schlafstörungen - Rohwert"/>
             <answer>
               <valueDecimal value="11"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-sleep-tscore"/>
+            <text value="PROMIS-29 Schlafstörungen - T-Score"/>
             <answer>
               <valueDecimal value="53.6"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-social-raw"/>
+            <text value="PROMIS-29 Soziale Teilhabe - Rohwert"/>
             <answer>
               <valueDecimal value="11"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-social-tscore"/>
+            <text value="PROMIS-29 Soziale Teilhabe - T-Score"/>
             <answer>
               <valueDecimal value="39.7"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-pain-interference-raw"/>
+            <text value="PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"/>
             <answer>
               <valueDecimal value="11"/>
             </answer>
           </item>
           <item>
             <linkId value="promis-29-pain-interference-tscore"/>
+            <text value="PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"/>
             <answer>
               <valueDecimal value="60.9"/>
             </answer>

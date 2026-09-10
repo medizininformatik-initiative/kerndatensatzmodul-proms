@@ -48,6 +48,8 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaireresponse.html) 
 
+#### Constraints
+
 #### Terminology Bindings
 
 #### Constraints
@@ -56,7 +58,20 @@ Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir
 
 ** Summary **
 
-Must-Support: 1 element
+Mandatory: 1 element(2 nested mandatory elements)
+ Must-Support: 4 elements
+
+**Extensions**
+
+This structure refers to these extensions:
+
+* [http://hl7.org/fhir/StructureDefinition/translation](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-translation.html)
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of QuestionnaireResponse.item.answer.value[x]
 
  **Schlüsselelemente-Ansicht** 
 
@@ -68,6 +83,8 @@ Must-Support: 1 element
 
 Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaireresponse.html) 
 
+#### Constraints
+
  **Snapshot-AnsichtView** 
 
 #### Terminology Bindings
@@ -78,7 +95,20 @@ Diese Struktur ist abgeleitet von [SDCQuestionnaireResponse](http://hl7.org/fhir
 
 ** Summary **
 
-Must-Support: 1 element
+Mandatory: 1 element(2 nested mandatory elements)
+ Must-Support: 4 elements
+
+**Extensions**
+
+This structure refers to these extensions:
+
+* [http://hl7.org/fhir/StructureDefinition/translation](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-translation.html)
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of QuestionnaireResponse.item.answer.value[x]
 
  
 
@@ -97,7 +127,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "name" : "MII_PR_PRO_QuestionnaireResponse",
   "title" : "MII PR PRO QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-09-10T06:46:47+00:00",
+  "date" : "2026-09-10T14:44:28+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -142,6 +172,106 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
     {
       "id" : "QuestionnaireResponse.language",
       "path" : "QuestionnaireResponse.language",
+      "short" : "Sprache der Antwortinhalte",
+      "definition" : "Verpflichtend, damit die Sprache von item.text und Antwort-Displays maschinenlesbar feststeht. Deutsche Inhalte: language = de. Anderssprachige Inhalte: deutsche Übersetzung über die translation-Extension (siehe Invarianten).",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "QuestionnaireResponse.item.text",
+      "path" : "QuestionnaireResponse.item.text",
+      "short" : "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde",
+      "min" : 1,
+      "constraint" : [{
+        "key" : "mii-pro-qr-de-text",
+        "severity" : "error",
+        "human" : "Der Item-Text muss auf Deutsch verfügbar sein: entweder ist die Ressourcensprache Deutsch (language beginnt mit 'de') oder der Text trägt eine translation-Extension mit lang = de.",
+        "expression" : "%resource.language.startsWith('de') or extension('http://hl7.org/fhir/StructureDefinition/translation').extension.where(url = 'lang' and value.startsWith('de')).exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      }]
+    },
+    {
+      "id" : "QuestionnaireResponse.item.text.extension",
+      "path" : "QuestionnaireResponse.item.text.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "QuestionnaireResponse.item.text.extension:translation",
+      "path" : "QuestionnaireResponse.item.text.extension",
+      "sliceName" : "translation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/translation"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]",
+      "path" : "QuestionnaireResponse.item.answer.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding",
+      "path" : "QuestionnaireResponse.item.answer.value[x]",
+      "sliceName" : "valueCoding",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }]
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding.display",
+      "path" : "QuestionnaireResponse.item.answer.value[x].display",
+      "short" : "Wortlaut der gewählten Antwort",
+      "min" : 1,
+      "constraint" : [{
+        "key" : "mii-pro-qr-de-display",
+        "severity" : "error",
+        "human" : "Das Antwort-Display muss auf Deutsch verfügbar sein: entweder ist die Ressourcensprache Deutsch (language beginnt mit 'de') oder das Display trägt eine translation-Extension mit lang = de.",
+        "expression" : "%resource.language.startsWith('de') or extension('http://hl7.org/fhir/StructureDefinition/translation').extension.where(url = 'lang' and value.startsWith('de')).exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding.display.extension",
+      "path" : "QuestionnaireResponse.item.answer.value[x].display.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding.display.extension:translation",
+      "path" : "QuestionnaireResponse.item.answer.value[x].display.extension",
+      "sliceName" : "translation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/translation"]
+      }],
       "mustSupport" : true
     }]
   }

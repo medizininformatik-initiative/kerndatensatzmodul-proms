@@ -47,52 +47,58 @@
         <authored value="2024-01-15T10:30:00Z"/>
         <item>
           <linkId value="promis-eddep04"/>
+          <text value="...fühlte ich mich wertlos"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA10082-8"/>
-              <display value="Sometimes"/>
+              <display value="Manchmal"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="promis-eddep06"/>
+          <text value="...fühlte ich mich hilflos"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA10066-1"/>
-              <display value="Rarely"/>
+              <display value="Selten"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="promis-eddep29"/>
+          <text value="...fühlte ich mich deprimiert"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA10044-8"/>
-              <display value="Often"/>
+              <display value="Oft"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="promis-eddep41"/>
+          <text value="...fühlte ich mich hoffnungslos"/>
           <answer>
             <valueCoding>
               <system value="http://loinc.org"/>
               <code value="LA10082-8"/>
-              <display value="Sometimes"/>
+              <display value="Manchmal"/>
             </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="promis-depression-score-raw"/>
+          <text value="Rohwert (Summenscore)"/>
           <answer>
             <valueDecimal value="12"/>
           </answer>
         </item>
         <item>
           <linkId value="promis-depression-score-tscore"/>
+          <text value="T-Score"/>
           <answer>
             <valueDecimal value="62.2"/>
           </answer>

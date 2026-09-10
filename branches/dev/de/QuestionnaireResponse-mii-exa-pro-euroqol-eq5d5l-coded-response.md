@@ -12,6 +12,8 @@
 
 -------
 
+Language: de
+
 Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2027.0.0-ballot.rc4
 
 * [LinkID](https://hl7.org/fhir/R4/formats.html#table): mii-exa-pro-euroqol-eq5d5l-coded-response
@@ -59,6 +61,7 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "meta" : {
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc4"]
   },
+  "language" : "de",
   "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding|2027.0.0-ballot.rc4",
   "status" : "completed",
   "subject" : {

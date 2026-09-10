@@ -55,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-score-
   "name" : "MII_PR_PRO_Score_Instance",
   "title" : "MII PR PRO Score Instance",
   "status" : "active",
-  "date" : "2026-09-10T06:46:47+00:00",
+  "date" : "2026-09-10T14:44:28+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

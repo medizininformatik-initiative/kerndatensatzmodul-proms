@@ -88,7 +88,7 @@
   <title value="EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-10T06:46:47+00:00"/>
+  <date value="2026-09-10T14:44:28+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -133,196 +133,196 @@
   <item>
     <linkId value="qlq-c30-q01"/>
     <prefix value="1"/>
-    <text value="Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?"/>
+    <text value="Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen (z.B. eine schwere Einkaufstasche oder einen Koffer zu tragen)?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q02"/>
     <prefix value="2"/>
-    <text value="Do you have any trouble taking a long walk?"/>
+    <text value="Bereitet es Ihnen Schwierigkeiten, einen längeren Spaziergang zu machen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q03"/>
     <prefix value="3"/>
-    <text value="Do you have any trouble taking a short walk outside of the house?"/>
+    <text value="Bereitet es Ihnen Schwierigkeiten, eine kurze Strecke außer Haus zu gehen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q04"/>
     <prefix value="4"/>
-    <text value="Do you need to stay in bed or a chair during the day?"/>
+    <text value="Müssen Sie tagsüber im Bett liegen oder in einem Sessel sitzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q05"/>
     <prefix value="5"/>
-    <text value="Do you need help with eating, dressing, washing yourself or using the toilet?"/>
+    <text value="Brauchen Sie Hilfe beim Essen, Anziehen, Waschen oder Benutzen der Toilette?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q06"/>
     <prefix value="6"/>
-    <text value="Were you limited in doing either your work or other daily activities?"/>
+    <text value="Waren Sie bei Ihrer Arbeit oder bei anderen tagtäglichen Beschäftigungen eingeschränkt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q07"/>
     <prefix value="7"/>
-    <text value="Were you limited in pursuing your hobbies or other leisure time activities?"/>
+    <text value="Waren Sie bei Ihren Hobbys oder anderen Freizeitbeschäftigungen eingeschränkt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q08"/>
     <prefix value="8"/>
-    <text value="Were you short of breath?"/>
+    <text value="Waren Sie kurzatmig?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q09"/>
     <prefix value="9"/>
-    <text value="Have you had pain?"/>
+    <text value="Hatten Sie Schmerzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q10"/>
     <prefix value="10"/>
-    <text value="Did you need to rest?"/>
+    <text value="Mussten Sie sich ausruhen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q11"/>
     <prefix value="11"/>
-    <text value="Have you had trouble sleeping?"/>
+    <text value="Hatten Sie Schlafstörungen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q12"/>
     <prefix value="12"/>
-    <text value="Have you felt weak?"/>
+    <text value="Fühlten Sie sich schwach?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q13"/>
     <prefix value="13"/>
-    <text value="Have you lacked appetite?"/>
+    <text value="Hatten Sie Appetitmangel?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q14"/>
     <prefix value="14"/>
-    <text value="Have you felt nauseated?"/>
+    <text value="War Ihnen übel?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q15"/>
     <prefix value="15"/>
-    <text value="Have you vomited?"/>
+    <text value="Haben Sie erbrochen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q16"/>
     <prefix value="16"/>
-    <text value="Have you been constipated?"/>
+    <text value="Hatten Sie Verstopfung?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q17"/>
     <prefix value="17"/>
-    <text value="Have you had diarrhea?"/>
+    <text value="Hatten Sie Durchfall?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q18"/>
     <prefix value="18"/>
-    <text value="Were you tired?"/>
+    <text value="Waren Sie müde?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q19"/>
     <prefix value="19"/>
-    <text value="Did pain interfere with your daily activities?"/>
+    <text value="Fühlten Sie sich durch Schmerzen in Ihrem alltäglichen Leben beeinträchtigt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q20"/>
     <prefix value="20"/>
-    <text value="Have you had difficulty in concentrating on things, like reading a newspaper or watching television?"/>
+    <text value="Hatten Sie Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. auf das Zeitunglesen oder das Fernsehen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q21"/>
     <prefix value="21"/>
-    <text value="Did you feel tense?"/>
+    <text value="Fühlten Sie sich angespannt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q22"/>
     <prefix value="22"/>
-    <text value="Did you worry?"/>
+    <text value="Haben Sie sich Sorgen gemacht?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q23"/>
     <prefix value="23"/>
-    <text value="Did you feel irritable?"/>
+    <text value="Waren Sie reizbar?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q24"/>
     <prefix value="24"/>
-    <text value="Did you feel depressed?"/>
+    <text value="Fühlten Sie sich niedergeschlagen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q25"/>
     <prefix value="25"/>
-    <text value="Have you had difficulty remembering things?"/>
+    <text value="Hatten Sie Schwierigkeiten, sich an Dinge zu erinnern?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q26"/>
     <prefix value="26"/>
-    <text value="Has your physical condition or medical treatment interfered with your family life?"/>
+    <text value="Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Familienleben beeinträchtigt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q27"/>
     <prefix value="27"/>
-    <text value="Has your physical condition or medical treatment interfered with your social activities?"/>
+    <text value="Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Zusammensein oder Ihre gemeinsamen Unternehmungen mit anderen Menschen beeinträchtigt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q28"/>
     <prefix value="28"/>
-    <text value="Has your physical condition or medical treatment caused you financial difficulties?"/>
+    <text value="Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung für Sie finanzielle Schwierigkeiten mit sich gebracht?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
@@ -334,14 +334,14 @@
   <item>
     <linkId value="qlq-c30-q29"/>
     <prefix value="29"/>
-    <text value="How would you rate your overall health during the past week?"/>
+    <text value="Wie würden Sie insgesamt Ihren Gesundheitszustand während der letzten Woche einschätzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q30"/>
     <prefix value="30"/>
-    <text value="How would you rate your overall quality of life during the past week?"/>
+    <text value="Wie würden Sie insgesamt Ihre Lebensqualität während der letzten Woche einschätzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
   </item>

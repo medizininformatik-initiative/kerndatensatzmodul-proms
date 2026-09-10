@@ -335,6 +335,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="202700-ballotrc4--in-preparation">2027.0.0-ballot.rc4 — in preparation</h3>
 
+<p><strong>QuestionnaireResponse: German always available (2026-09-10):</strong> the profile now requires <code class="language-plaintext highlighter-rouge">item.text</code> (1..1) and <code class="language-plaintext highlighter-rouge">item.answer.valueCoding.display</code> (1..1), both must-support with the <code class="language-plaintext highlighter-rouge">translation</code> extension, plus two invariants: item text and answer display must be available in German — either as the resource's primary language (<code class="language-plaintext highlighter-rouge">language</code> starts with <code class="language-plaintext highlighter-rouge">de</code>) or via a <code class="language-plaintext highlighter-rouge">translation</code> extension with <code class="language-plaintext highlighter-rouge">lang = de</code>. All 20 example responses were regenerated accordingly (350 item texts, 252 answer displays): German-primary instruments carry German directly, English-primary instruments carry the canonical wording plus German translation extensions; the EORTC QLQ-C30 questionnaire gained the official German item wordings as translation extensions along the way.</p>
+
 <p><strong>LOINC supplement (2026-09-08):</strong> <code class="language-plaintext highlighter-rouge">mii-cs-pro-loinc-supplement</code> ships the validated German answer wordings (PHQ-D, PROMIS/PHO) as designations on 24 LOINC codes — content for consumers and terminology servers; measured on both relevant publishers (2.2.11, 2.3.2), display validation does not consume local supplements yet, so the ~178 display findings remain a documented environment class.</p>
 
 <p>The 2027 ballot version brings the <strong>move onto the MII KDS module template</strong> (v0.11.3) — the same toolchain as the other KDS modules. For implementers <strong>nothing changes</strong> in the FHIR artifacts: all 214 resources, their ids, canonicals and versions are unchanged (measured, 0 regressions).</p>
@@ -715,7 +717,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 10, 2026 06:46+0000">2026-09-10</span>
+          Generated <span title="Thu, Sep 10, 2026 14:44+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
