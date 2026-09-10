@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T14:44:28+00:00",
+  "date" : "2026-09-10T15:13:00+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

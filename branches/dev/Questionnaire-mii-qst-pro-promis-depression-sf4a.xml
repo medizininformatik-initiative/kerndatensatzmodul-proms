@@ -61,7 +61,7 @@
   <title value="MII QST PRO PROMIS Depression SF 4a (Adults)"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-10T14:44:28+00:00"/>
+  <date value="2026-09-10T15:13:00+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -595,7 +595,16 @@
       <code value="77821-7"/>
       <display value="PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"/>
     </code>
-    <text value="PROMIS Depression Raw Score"/>
+    <text value="PROMIS Depression Raw Score">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="de"/>
+        </extension>
+        <extension url="content">
+          <valueString value="Rohwert (Summenscore)"/>
+        </extension>
+      </extension>
+    </text>
     <type value="decimal"/>
     <readOnly value="true"/>
   </item>
@@ -615,7 +624,16 @@
       <code value="77861-3"/>
       <display value="PROMIS emotional distress - depression - version 1.0 Tscore"/>
     </code>
-    <text value="PROMIS Depression T-Score"/>
+    <text value="PROMIS Depression T-Score">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="de"/>
+        </extension>
+        <extension url="content">
+          <valueString value="T-Score"/>
+        </extension>
+      </extension>
+    </text>
     <type value="decimal"/>
     <readOnly value="true"/>
   </item>

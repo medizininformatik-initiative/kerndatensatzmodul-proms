@@ -604,7 +604,16 @@
         </item>
         <item>
           <linkId value="QLQ-C30.Scores"/>
-          <text value="Calculated Scores (0-100 scale)"/>
+          <text value="Calculated Scores (0-100 scale)">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="de"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Berechnete Scores (Skala 0–100)"/>
+              </extension>
+            </extension>
+          </text>
           <type value="group"/>
           <item>
             <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
@@ -617,7 +626,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-pf"/>
-            <text value="Physical Functioning Score"/>
+            <text value="Physical Functioning Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Körperliche Funktion"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -632,7 +650,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-rf"/>
-            <text value="Role Functioning Score"/>
+            <text value="Role Functioning Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Rollenfunktion"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -647,7 +674,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-ef"/>
-            <text value="Emotional Functioning Score"/>
+            <text value="Emotional Functioning Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Emotionale Funktion"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -662,7 +698,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-cf"/>
-            <text value="Cognitive Functioning Score"/>
+            <text value="Cognitive Functioning Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Kognitive Funktion"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -677,7 +722,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-sf"/>
-            <text value="Social Functioning Score"/>
+            <text value="Social Functioning Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Soziale Funktion"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -692,7 +746,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-fa"/>
-            <text value="Fatigue Score"/>
+            <text value="Fatigue Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Fatigue"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -707,7 +770,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-nv"/>
-            <text value="Nausea and Vomiting Score"/>
+            <text value="Nausea and Vomiting Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Übelkeit und Erbrechen"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -722,7 +794,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-pa"/>
-            <text value="Pain Score"/>
+            <text value="Pain Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Schmerz"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -737,7 +818,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-dy"/>
-            <text value="Dyspnoea Score"/>
+            <text value="Dyspnoea Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Atemnot"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -752,7 +842,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-sl"/>
-            <text value="Insomnia Score"/>
+            <text value="Insomnia Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Schlaflosigkeit"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -767,7 +866,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-ap"/>
-            <text value="Appetite Loss Score"/>
+            <text value="Appetite Loss Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Appetitverlust"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -782,7 +890,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-co"/>
-            <text value="Constipation Score"/>
+            <text value="Constipation Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Verstopfung"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -797,7 +914,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-di"/>
-            <text value="Diarrhoea Score"/>
+            <text value="Diarrhoea Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Durchfall"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -812,7 +938,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-fi"/>
-            <text value="Financial Difficulties Score"/>
+            <text value="Financial Difficulties Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Finanzielle Schwierigkeiten"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>
@@ -827,7 +962,16 @@
               <valueBoolean value="true"/>
             </extension>
             <linkId value="score-ql"/>
-            <text value="Global Health Status / Quality of Life Score"/>
+            <text value="Global Health Status / Quality of Life Score">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="de"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Skalenwert Globaler Gesundheitsstatus / Lebensqualität"/>
+                </extension>
+              </extension>
+            </text>
             <type value="decimal"/>
             <readOnly value="true"/>
           </item>

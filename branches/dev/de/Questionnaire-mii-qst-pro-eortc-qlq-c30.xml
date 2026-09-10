@@ -88,7 +88,7 @@
   <title value="EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-10T14:44:28+00:00"/>
+  <date value="2026-09-10T15:13:00+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -347,7 +347,7 @@
   </item>
   <item>
     <linkId value="QLQ-C30.Scores"/>
-    <text value="Calculated Scores (0-100 scale)"/>
+    <text value="Berechnete Scores (Skala 0–100)"/>
     <type value="group"/>
     <item>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
@@ -360,7 +360,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-pf"/>
-      <text value="Physical Functioning Score"/>
+      <text value="Skalenwert Körperliche Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -375,7 +375,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-rf"/>
-      <text value="Role Functioning Score"/>
+      <text value="Skalenwert Rollenfunktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -390,7 +390,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-ef"/>
-      <text value="Emotional Functioning Score"/>
+      <text value="Skalenwert Emotionale Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -405,7 +405,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-cf"/>
-      <text value="Cognitive Functioning Score"/>
+      <text value="Skalenwert Kognitive Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -420,7 +420,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-sf"/>
-      <text value="Social Functioning Score"/>
+      <text value="Skalenwert Soziale Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -435,7 +435,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-fa"/>
-      <text value="Fatigue Score"/>
+      <text value="Skalenwert Fatigue"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -450,7 +450,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-nv"/>
-      <text value="Nausea and Vomiting Score"/>
+      <text value="Skalenwert Übelkeit und Erbrechen"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -465,7 +465,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-pa"/>
-      <text value="Pain Score"/>
+      <text value="Skalenwert Schmerz"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -480,7 +480,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-dy"/>
-      <text value="Dyspnoea Score"/>
+      <text value="Skalenwert Atemnot"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -495,7 +495,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-sl"/>
-      <text value="Insomnia Score"/>
+      <text value="Skalenwert Schlaflosigkeit"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -510,7 +510,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-ap"/>
-      <text value="Appetite Loss Score"/>
+      <text value="Skalenwert Appetitverlust"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -525,7 +525,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-co"/>
-      <text value="Constipation Score"/>
+      <text value="Skalenwert Verstopfung"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -540,7 +540,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-di"/>
-      <text value="Diarrhoea Score"/>
+      <text value="Skalenwert Durchfall"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -555,7 +555,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-fi"/>
-      <text value="Financial Difficulties Score"/>
+      <text value="Skalenwert Finanzielle Schwierigkeiten"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -570,7 +570,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-ql"/>
-      <text value="Global Health Status / Quality of Life Score"/>
+      <text value="Skalenwert Globaler Gesundheitsstatus / Lebensqualität"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>

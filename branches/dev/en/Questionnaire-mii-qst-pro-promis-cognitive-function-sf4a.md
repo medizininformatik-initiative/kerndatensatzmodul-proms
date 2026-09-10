@@ -78,7 +78,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PROMIS Cognitive Function SF 4a",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T14:44:28+00:00",
+  "date" : "2026-09-10T15:13:00+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -132,7 +132,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   }],
   "item" : [{
     "linkId" : "PROMIS-CognitiveFunction-SF4a",
-    "text" : "PROMIS Kognitive Funktion SF 4a",
+    "text" : "PROMIS Cognitive Function SF 4a",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "PROMIS Kognitive Funktion SF 4a"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
       "linkId" : "PROMIS-CognitiveFunction-SF4a.Instructions",

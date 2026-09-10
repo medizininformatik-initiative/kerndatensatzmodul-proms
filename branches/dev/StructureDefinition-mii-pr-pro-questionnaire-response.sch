@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:QuestionnaireResponse</sch:title>
     <sch:rule context="f:QuestionnaireResponse">
-      <sch:assert test="count(f:language) &gt;= 1">language: minimum cardinality of 'language' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode|5.3.0-ballot-tc1']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode|5.3.0-ballot-tc1': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
@@ -33,7 +32,6 @@
     <sch:title>f:QuestionnaireResponse/f:item</sch:title>
     <sch:rule context="f:QuestionnaireResponse/f:item">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -48,12 +46,6 @@
     <sch:rule context="f:QuestionnaireResponse/f:item/f:answer">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/itemWeight|5.3.0-ballot-tc1']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/itemWeight|5.3.0-ballot-tc1': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:QuestionnaireResponse/f:item/f:answer/f:value[x] 1</sch:title>
-    <sch:rule context="f:QuestionnaireResponse/f:item/f:answer/f:value[x]">
-      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

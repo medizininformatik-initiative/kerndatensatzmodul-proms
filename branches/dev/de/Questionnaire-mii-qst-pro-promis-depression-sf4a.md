@@ -81,7 +81,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T14:44:28+00:00",
+  "date" : "2026-09-10T15:13:00+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -739,6 +739,19 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "display" : "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
     }],
     "text" : "PROMIS Depression Raw Score",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Rohwert (Summenscore)"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "decimal",
     "readOnly" : true
   },
@@ -761,6 +774,19 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "display" : "PROMIS emotional distress - depression - version 1.0 Tscore"
     }],
     "text" : "PROMIS Depression T-Score",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "T-Score"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "decimal",
     "readOnly" : true
   }]

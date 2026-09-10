@@ -45,7 +45,7 @@
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T14:44:28+00:00",
+  "date" : "2026-09-10T15:13:00+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -304,7 +304,7 @@
   },
   {
     "linkId" : "QLQ-C30.Scores",
-    "text" : "Calculated Scores (0-100 scale)",
+    "text" : "Berechnete Scores (Skala 0–100)",
     "type" : "group",
     "item" : [{
       "extension" : [{
@@ -319,7 +319,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-pf",
-      "text" : "Physical Functioning Score",
+      "text" : "Skalenwert Körperliche Funktion",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -336,7 +336,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-rf",
-      "text" : "Role Functioning Score",
+      "text" : "Skalenwert Rollenfunktion",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -353,7 +353,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-ef",
-      "text" : "Emotional Functioning Score",
+      "text" : "Skalenwert Emotionale Funktion",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -370,7 +370,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-cf",
-      "text" : "Cognitive Functioning Score",
+      "text" : "Skalenwert Kognitive Funktion",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -387,7 +387,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-sf",
-      "text" : "Social Functioning Score",
+      "text" : "Skalenwert Soziale Funktion",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -404,7 +404,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-fa",
-      "text" : "Fatigue Score",
+      "text" : "Skalenwert Fatigue",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -421,7 +421,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-nv",
-      "text" : "Nausea and Vomiting Score",
+      "text" : "Skalenwert Übelkeit und Erbrechen",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -438,7 +438,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-pa",
-      "text" : "Pain Score",
+      "text" : "Skalenwert Schmerz",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -455,7 +455,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-dy",
-      "text" : "Dyspnoea Score",
+      "text" : "Skalenwert Atemnot",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -472,7 +472,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-sl",
-      "text" : "Insomnia Score",
+      "text" : "Skalenwert Schlaflosigkeit",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -489,7 +489,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-ap",
-      "text" : "Appetite Loss Score",
+      "text" : "Skalenwert Appetitverlust",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -506,7 +506,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-co",
-      "text" : "Constipation Score",
+      "text" : "Skalenwert Verstopfung",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -523,7 +523,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-di",
-      "text" : "Diarrhoea Score",
+      "text" : "Skalenwert Durchfall",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -540,7 +540,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-fi",
-      "text" : "Financial Difficulties Score",
+      "text" : "Skalenwert Finanzielle Schwierigkeiten",
       "type" : "decimal",
       "readOnly" : true
     },
@@ -557,7 +557,7 @@
         "valueBoolean" : true
       }],
       "linkId" : "score-ql",
-      "text" : "Global Health Status / Quality of Life Score",
+      "text" : "Skalenwert Globaler Gesundheitsstatus / Lebensqualität",
       "type" : "decimal",
       "readOnly" : true
     }]
