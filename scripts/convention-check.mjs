@@ -189,7 +189,7 @@ export function evaluate({ sushiConfig = null, igIni = null, packageJson = null,
       // template's own module-release.yml tag glob (v[0-9]+.[0-9]+.[0-9]+*) and
       // the release-prepare validation both accept these suffixes. The bare
       // YYYY.n.n rule would block every ballot/rc preparation commit.
-      return { ok: /^\d{4}\.\d+\.\d+(-(ballot(\.rc\d+)?|rc\.\d+|alpha\.\d+))?$/.test(v), parameterized: false, reason: "version must be CalVer YYYY.n.n, optionally with a -ballot / -rc.N / -alpha.N pre-release suffix" };
+      return { ok: /^\d{4}\.\d+\.\d+(-(ballot(\.rc\d+|\.\d+)?|rc\.\d+|alpha\.\d+))?$/.test(v), parameterized: false, reason: "version must be CalVer YYYY.n.n, optionally with a -ballot(.N) / -rc.N / -alpha.N pre-release suffix" };
     });
 
     // M7 — no floating label anywhere (always hard, both branches).

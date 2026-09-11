@@ -1,5 +1,9 @@
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+### 2027.0.0-ballot.1 — Manifest-Hotfix
+
+Inhaltlich identisch zu 2027.0.0-ballot. Behebt das **Package-Manifest**: Die npm-artigen `dependencies` des verteilten Packages deklarierten noch die Pins von vor dem Upgrade (meta 2026.0.x, SDC 3.0.0, ISiK 5.1.1), sodass `fhir install` veraltete Transitive auflöste. Das Manifest spiegelt jetzt `sushi-config.yaml` (meta **2027.0.0-ballot** final, SDC 4.0.0, ISiK 6.0.0), der meta-Pin wurde von ballot.rc3 auf das Ballot-Final gehoben, und Manifest-/Config-Drift ist ab jetzt harte Release-Prüfung. Das formal publizierte `package.tgz` dieser Seite war stets korrekt — der Defekt betraf nur den Package-Registry-Kanal.
+
 ### 2027.0.0-ballot
 
 Die Ballot-Version der 2027er-Linie. Gegenüber rc5 wurden fünf QA-Fehlerklassen geschlossen (294 → ~205: QuestionnaireResponse-Texte an die Questionnaire-Definitionen angeglichen, CapabilityStatement-Suchparameter-Canonicals auf die R4-`conformance-*`-Parameter korrigiert, Katalog-Displays synchronisiert, ConceptMap-linkId-Karten auf logische URIs umgestellt, unauflösbare Web-Referenzen display-only) und die PROMIS-29-Beispiel-Itemreihenfolge repariert.
