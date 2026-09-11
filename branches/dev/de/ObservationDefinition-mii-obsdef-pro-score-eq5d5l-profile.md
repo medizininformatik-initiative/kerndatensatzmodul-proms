@@ -1,4 +1,4 @@
-# MII ObsDef PRO Score EQ-5D-5L Profile - MII IG PRO v2027.0.0-ballot
+# MII ObsDef PRO Score EQ-5D-5L Profile - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,9 +12,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.1
 
-**ArtifactVersion**: 2027.0.0-ballot
+**ArtifactVersion**: 2027.0.0-ballot.1
 
 **category**: Survey
 
@@ -35,11 +35,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-score-eq5d5l-profile",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.1"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2027.0.0-ballot"
+    "valueString" : "2027.0.0-ballot.1"
   }],
   "category" : [{
     "coding" : [{

@@ -1,4 +1,4 @@
-# Guidance for Researchers - MII IG PRO v2027.0.0-ballot
+# Guidance for Researchers - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

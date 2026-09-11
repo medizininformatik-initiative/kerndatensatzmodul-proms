@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG PRO v2027.0.0-ballot
+# MII ImplementationGuide Resource - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -227,7 +227,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "valueMarkdown" : "Provide the computable publication unit for the MII Core Dataset PRO module, enabling implementers to discover, validate, version, and apply the specification consistently."
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
@@ -266,7 +266,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "id" : "de_medizininformatikinitiative_kerndatensatz_meta",
     "uri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
     "packageId" : "de.medizininformatikinitiative.kerndatensatz.meta",
-    "version" : "2027.0.0-ballot.rc3"
+    "version" : "2027.0.0-ballot"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",

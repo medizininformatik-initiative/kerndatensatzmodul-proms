@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2027.0.0-ballot</title>
+    <title>Changelog - MII IG PRO v2027.0.0-ballot.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot - 
+            <span style="display:inline-block;">2027.0.0-ballot.1 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -311,6 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#202700-ballot1--manifest-hotfix" id="markdown-toc-202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — Manifest-Hotfix</a></li>
   <li><a href="#202700-ballot" id="markdown-toc-202700-ballot">2027.0.0-ballot</a></li>
   <li><a href="#202700-ballotrc5" id="markdown-toc-202700-ballotrc5">2027.0.0-ballot.rc5</a></li>
   <li><a href="#202670--2026-09-02-released-tag-v202670-package--github-release" id="markdown-toc-202670--2026-09-02-released-tag-v202670-package--github-release">2026.7.0 — 2026-09-02 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.7.0</code>, Package + GitHub-Release)</a></li>
@@ -329,6 +330,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
+
+<h3 id="202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — Manifest-Hotfix</h3>
+
+<p>Inhaltlich identisch zu 2027.0.0-ballot. Behebt das <strong>Package-Manifest</strong>: Die npm-artigen <code class="language-plaintext highlighter-rouge">dependencies</code> des verteilten Packages deklarierten noch die Pins von vor dem Upgrade (meta 2026.0.x, SDC 3.0.0, ISiK 5.1.1), sodass <code class="language-plaintext highlighter-rouge">fhir install</code> veraltete Transitive auflöste. Das Manifest spiegelt jetzt <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> (meta <strong>2027.0.0-ballot</strong> final, SDC 4.0.0, ISiK 6.0.0), der meta-Pin wurde von ballot.rc3 auf das Ballot-Final gehoben, und Manifest-/Config-Drift ist ab jetzt harte Release-Prüfung. Das formal publizierte <code class="language-plaintext highlighter-rouge">package.tgz</code> dieser Seite war stets korrekt — der Defekt betraf nur den Package-Registry-Kanal.</p>
 
 <h3 id="202700-ballot">2027.0.0-ballot</h3>
 
@@ -831,8 +836,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Sep 11, 2026 14:12+0000">2026-09-11</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Fri, Sep 11, 2026 14:35+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

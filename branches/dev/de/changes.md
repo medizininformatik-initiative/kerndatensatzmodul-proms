@@ -1,4 +1,4 @@
-# Changelog - MII IG PRO v2027.0.0-ballot
+# Changelog - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -6,6 +6,10 @@
 ## Changelog
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
+
+### 2027.0.0-ballot.1 — Manifest-Hotfix
+
+Inhaltlich identisch zu 2027.0.0-ballot. Behebt das **Package-Manifest**: Die npm-artigen `dependencies` des verteilten Packages deklarierten noch die Pins von vor dem Upgrade (meta 2026.0.x, SDC 3.0.0, ISiK 5.1.1), sodass `fhir install` veraltete Transitive auflöste. Das Manifest spiegelt jetzt `sushi-config.yaml` (meta **2027.0.0-ballot** final, SDC 4.0.0, ISiK 6.0.0), der meta-Pin wurde von ballot.rc3 auf das Ballot-Final gehoben, und Manifest-/Config-Drift ist ab jetzt harte Release-Prüfung. Das formal publizierte `package.tgz` dieser Seite war stets korrekt — der Defekt betraf nur den Package-Registry-Kanal.
 
 ### 2027.0.0-ballot
 

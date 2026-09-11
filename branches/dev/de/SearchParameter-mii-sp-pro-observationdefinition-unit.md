@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-unit - MII IG PRO v2027.0.0-ballot
+# mii-sp-pro-observationdefinition-unit - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-unit | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-unit | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2025-05-24 | *Maschinenlesbarer Name*:MII_SP_PRO_ObservationDefinition_QuantitativeDetails_Unit |
 
  
@@ -44,7 +44,7 @@ SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter sco
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-unit",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_SP_PRO_ObservationDefinition_QuantitativeDetails_Unit",
   "status" : "active",
   "experimental" : true,
