@@ -1,4 +1,4 @@
-# Changelog - MII IG PRO v2027.0.0-ballot.rc5
+# Changelog - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -6,6 +6,22 @@
 ## Changelog
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
+
+### 2027.0.0-ballot
+
+Die Ballot-Version der 2027er-Linie. Gegenüber rc5 wurden fünf QA-Fehlerklassen geschlossen (294 → ~205: QuestionnaireResponse-Texte an die Questionnaire-Definitionen angeglichen, CapabilityStatement-Suchparameter-Canonicals auf die R4-`conformance-*`-Parameter korrigiert, Katalog-Displays synchronisiert, ConceptMap-linkId-Karten auf logische URIs umgestellt, unauflösbare Web-Referenzen display-only) und die PROMIS-29-Beispiel-Itemreihenfolge repariert.
+
+#### Known Issues
+
+Die verbleibenden QA-Findings sind **dokumentierte Umgebungs- und Upstream-Klassen**, keine Defekte des Moduls:
+
+* **~171 LOINC-Antwort-Displays** — das Modul rendert bewusst die **instrumentenvalidierten** deutschen Wortlaute (PHQ-D, Löwe et al.; PROMIS deutsch, PHO/CPCOR), die von den en-US-Displays von LOINC abweichen. Das mitgelieferte [LOINC-Supplement](CodeSystem-mii-cs-pro-loinc-supplement.md) dokumentiert sie maschinenlesbar; auf beiden relevanten Publishern (2.2.11, 2.3.2) gemessen zieht die Display-Validierung lokale Supplements noch nicht heran. Die Klasse verschwindet, sobald der Terminologieserver das Supplement lädt.
+* **23 Supplement-Konzeptprüfungen** — der Validator kann die LA-Codes nicht gegen den LOINC-Inhalt bestätigen und markiert jedes Supplement-Konzept. Die Codes existieren nachweislich (`$lookup` gegen tx.fhir.org, 06.09.2026).
+* **4 geerbte SDC-Links** — ein toter Link in der vom SDC-Parent-Profil geerbten Element-Dokumentation (`2025Jan/rendering.html`); ein Upstream-Thema des SDC-Pakets.
+* **~10 Preview-Download-Links** — `package.tgz` und die `*.zip`-Downloads lösen in der formalen Publikation auf (gemessen HTTP 200), nicht aber in Branch-Previews.
+* **1 Dependency-FHIR-Versionshinweis** — `subscriptions-backport.r4` deklariert FHIR 4.0.0 und kommt transitiv; von diesem Modul aus nicht pinbar.
+
+**Offene Ballot-Frage:** Eine harte Verpflichtung für `item.text` und `answer.display` in der QuestionnaireResponse (1..1 plus Deutsch-Invarianten) war implementiert und vermessen, kollidiert aber mit lizenzbeschränkten (Metadata-only-)Instrumenten und papierbasierter Erfassung. Das Profil liefert derzeit das Must-Support-Translation-Muster ohne die Verpflichtung — die Kommentierenden sind eingeladen, dazu Stellung zu nehmen.
 
 ### 2027.0.0-ballot.rc5
 

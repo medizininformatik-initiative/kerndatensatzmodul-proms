@@ -1,4 +1,4 @@
-# BDI-II - MII IG PRO v2027.0.0-ballot.rc5
+# BDI-II - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)

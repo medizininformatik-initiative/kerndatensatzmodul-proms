@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-code - MII IG PRO v2027.0.0-ballot.rc5
+# mii-sp-pro-observationdefinition-code - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-code | *Version*:2027.0.0-ballot.rc5 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-code | *Version*:2027.0.0-ballot |
 | Active as of 2025-05-24 | *Computable Name*:MII_SP_PRO_ObservationDefinition_Code |
 
  
@@ -44,7 +44,7 @@ SearchParameter for ObservationDefinition.code to find score definitions by code
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-code",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_PRO_ObservationDefinition_Code",
   "status" : "active",
   "experimental" : true,

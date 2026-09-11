@@ -1,4 +1,4 @@
-# MII CPS PRO CapabilityStatement - MII IG PRO v2027.0.0-ballot.rc5
+# MII CPS PRO CapabilityStatement - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement | *Version*:2027.0.0-ballot.rc5 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement | *Version*:2027.0.0-ballot |
 | Active as of 2026-07-07 | *Computable Name*:MII_CPS_PRO_CapabilityStatement |
 
  
@@ -33,7 +33,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CapabilityStatement/mii-cps-pro-capabilitystatement",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_CPS_PRO_CapabilityStatement",
   "title" : "MII CPS PRO CapabilityStatement",
   "status" : "active",

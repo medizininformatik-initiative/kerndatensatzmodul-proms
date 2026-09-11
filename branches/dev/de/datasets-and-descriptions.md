@@ -1,4 +1,4 @@
-# Datasets and Descriptions - MII IG PRO v2027.0.0-ballot.rc5
+# Datasets and Descriptions - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

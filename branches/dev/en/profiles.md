@@ -1,4 +1,4 @@
-# Profiles - MII IG PRO v2027.0.0-ballot.rc5
+# Profiles - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Profiles**

@@ -10,7 +10,7 @@
       <Questionnaire>
         <id value="mii-qst-pro-phq-9"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc5"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"/>
         </meta>
         <language value="de"/>
         <text>
@@ -58,7 +58,7 @@
           </valueExpression>
         </extension>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
-        <version value="2027.0.0-ballot.rc5"/>
+        <version value="2027.0.0-ballot"/>
         <title value="MII QST PRO PHQ-9"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -712,13 +712,13 @@
       <QuestionnaireResponse>
         <id value="mii-exa-pro-phq-9-response"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc5"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"/>
         </meta>
         <language value="de"/>
         <text>
           <status value="generated"/>
         </text>
-        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.rc5"/>
+        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot"/>
         <status value="completed"/>
         <subject>
           <reference value="Patient/mii-exa-pro-patient"/>
@@ -854,7 +854,7 @@
       <Observation>
         <id value="mii-exa-pro-phq-9-observation"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot.rc5"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot"/>
         </meta>
         <language value="de"/>
         <text>

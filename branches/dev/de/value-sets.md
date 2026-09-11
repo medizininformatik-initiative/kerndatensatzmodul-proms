@@ -1,4 +1,4 @@
-# Value Sets - MII IG PRO v2027.0.0-ballot.rc5
+# Value Sets - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Value Sets**
@@ -15,5 +15,5 @@ Diese Seite beschreibt die ValueSets des Moduls **PRO** (Namenskonvention `MII_V
 
 **SNOMED CT** dient der **Identifikation von Instrumenten** — Assessment-Scale-Konzepte wie `273446001` (EORTC QLQ-C30) oder `273524006` (HADS) — nicht den Antwortskalen. Edition und Version folgen der KDS-weiten [Terminology Version Policy](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki) des Meta-Moduls; dieses Modul pinnt keine eigene SNOMED-Edition. Expansionsparameter sind zentral über das [Expansion-Manifest](Parameters-mii-param-pro-manifest.md) des Moduls fixiert.
 
-Die **Antwortskalen** sind MII-kontrollierte ValueSets über den eigenen CodeSystems des Moduls: Jedes Antwortkonzept trägt sein Scoring-Gewicht als `itemWeight`-Property — das macht die berechneten Ausdrücke (`.weight()`) verlässlich und ist der Kern der [Terminologie-Strategie](terminologie.md) des Moduls.
+Die **Antwortskalen** sind MII-kontrollierte ValueSets über den eigenen CodeSystems des Moduls: Jedes Antwortkonzept trägt sein Scoring-Gewicht als `itemWeight`-Property — das macht die berechneten Ausdrücke (`.weight()`) verlässlich und ist der Kern der [Terminologie-Strategie](terminology-strategies.md) des Moduls.
 

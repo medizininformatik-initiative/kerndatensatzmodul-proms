@@ -1,4 +1,4 @@
-# DASS-21 Stress Score (DASS-42 Equivalent) - MII IG PRO v2027.0.0-ballot.rc5
+# DASS-21 Stress Score (DASS-42 Equivalent) - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,9 +12,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.rc5
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot
 
-**ArtifactVersion**: 2027.0.0-ballot.rc5
+**ArtifactVersion**: 2027.0.0-ballot
 
 **category**: Survey
 
@@ -47,11 +47,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-score-dass21-stress-equiv",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.rc5"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2027.0.0-ballot.rc5"
+    "valueString" : "2027.0.0-ballot"
   }],
   "category" : [{
     "coding" : [{

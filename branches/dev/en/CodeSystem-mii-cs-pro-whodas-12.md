@@ -1,4 +1,4 @@
-# MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes - MII IG PRO v2027.0.0-ballot.rc5
+# MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12 | *Version*:2027.0.0-ballot.rc5 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12 | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-11 | *Computable Name*:MII_CS_PRO_WHODAS_12 |
 | **Copyright/Legal**: WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0. | |
 
@@ -33,12 +33,12 @@ This Code system is referenced in the definition of the following value sets:
   "id" : "mii-cs-pro-whodas-12",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_CS_PRO_WHODAS_12",
   "title" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T11:07:18+00:00",
+  "date" : "2026-09-11T11:40:31+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

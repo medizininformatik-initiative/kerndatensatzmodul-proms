@@ -1,4 +1,4 @@
-# EQ-5D-5L - MII IG PRO v2027.0.0-ballot.rc5
+# EQ-5D-5L - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)
@@ -28,7 +28,7 @@ Die Implementierung des EQ-5D-5L folgt einem modularen Ansatz mit einer Basis-De
 
 Die Minimal-Variante dient als reine Strukturdefinition ohne aktive Capabilities. Sie wird primär als Referenz für Metadaten und Strukturinformationen verwendet und eignet sich für Systeme, die lediglich die Struktur des EQ-5D-5L kennen müssen, ohne ihn aktiv zu nutzen. Diese Variante enthält keine Extensions für Rendering oder Berechnungen, kann aber bereits als Mappingstruktur zu Datenharmonisierungen eingesetzt werden.
 
-Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-eq-5d-5l-minimal.md).
+Die vollständige Ressource finden Sie in der [Questionnaire-Definition](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md).
 
 #### Displayable-Variante (Nur-Anzeige)
 

@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2027.0.0-ballot.rc5</title>
+    <title>Changelog - MII IG PRO v2027.0.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc5 - 
+            <span style="display:inline-block;">2027.0.0-ballot - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot.rc5) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -311,6 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#202700-ballot" id="markdown-toc-202700-ballot">2027.0.0-ballot</a></li>
   <li><a href="#202700-ballotrc5" id="markdown-toc-202700-ballotrc5">2027.0.0-ballot.rc5</a></li>
   <li><a href="#202670--2026-09-02-released-tag-v202670-package--github-release" id="markdown-toc-202670--2026-09-02-released-tag-v202670-package--github-release">2026.7.0 — 2026-09-02 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.7.0</code>, Package + GitHub-Release)</a></li>
   <li><a href="#202660--2026-09-01-released-tag-v202660-package--github-release" id="markdown-toc-202660--2026-09-01-released-tag-v202660-package--github-release">2026.6.0 — 2026-09-01 (released, Tag <code class="language-plaintext highlighter-rouge">v2026.6.0</code>, Package + GitHub-Release)</a></li>
@@ -328,6 +329,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
+
+<h3 id="202700-ballot">2027.0.0-ballot</h3>
+
+<p>Die Ballot-Version der 2027er-Linie. Gegenüber rc5 wurden fünf QA-Fehlerklassen geschlossen (294 → ~205: QuestionnaireResponse-Texte an die Questionnaire-Definitionen angeglichen, CapabilityStatement-Suchparameter-Canonicals auf die R4-<code class="language-plaintext highlighter-rouge">conformance-*</code>-Parameter korrigiert, Katalog-Displays synchronisiert, ConceptMap-linkId-Karten auf logische URIs umgestellt, unauflösbare Web-Referenzen display-only) und die PROMIS-29-Beispiel-Itemreihenfolge repariert.</p>
+
+<h4 id="known-issues">Known Issues</h4>
+
+<p>Die verbleibenden QA-Findings sind <strong>dokumentierte Umgebungs- und Upstream-Klassen</strong>, keine Defekte des Moduls:</p>
+
+<ul>
+  <li><strong>~171 LOINC-Antwort-Displays</strong> — das Modul rendert bewusst die <em>instrumentenvalidierten</em> deutschen Wortlaute (PHQ-D, Löwe et al.; PROMIS deutsch, PHO/CPCOR), die von den en-US-Displays von LOINC abweichen. Das mitgelieferte <a href="CodeSystem-mii-cs-pro-loinc-supplement.html">LOINC-Supplement</a> dokumentiert sie maschinenlesbar; auf beiden relevanten Publishern (2.2.11, 2.3.2) gemessen zieht die Display-Validierung lokale Supplements noch nicht heran. Die Klasse verschwindet, sobald der Terminologieserver das Supplement lädt.</li>
+  <li><strong>23 Supplement-Konzeptprüfungen</strong> — der Validator kann die LA-Codes nicht gegen den LOINC-Inhalt bestätigen und markiert jedes Supplement-Konzept. Die Codes existieren nachweislich (<code class="language-plaintext highlighter-rouge">$lookup</code> gegen tx.fhir.org, 06.09.2026).</li>
+  <li><strong>4 geerbte SDC-Links</strong> — ein toter Link in der vom SDC-Parent-Profil geerbten Element-Dokumentation (<code class="language-plaintext highlighter-rouge">2025Jan/rendering.html</code>); ein Upstream-Thema des SDC-Pakets.</li>
+  <li><strong>~10 Preview-Download-Links</strong> — <code class="language-plaintext highlighter-rouge">package.tgz</code> und die <code class="language-plaintext highlighter-rouge">*.zip</code>-Downloads lösen in der formalen Publikation auf (gemessen HTTP 200), nicht aber in Branch-Previews.</li>
+  <li><strong>1 Dependency-FHIR-Versionshinweis</strong> — <code class="language-plaintext highlighter-rouge">subscriptions-backport.r4</code> deklariert FHIR 4.0.0 und kommt transitiv; von diesem Modul aus nicht pinbar.</li>
+</ul>
+
+<p><strong>Offene Ballot-Frage:</strong> Eine harte Verpflichtung für <code class="language-plaintext highlighter-rouge">item.text</code> und <code class="language-plaintext highlighter-rouge">answer.display</code> in der QuestionnaireResponse (1..1 plus Deutsch-Invarianten) war implementiert und vermessen, kollidiert aber mit lizenzbeschränkten (Metadata-only-)Instrumenten und papierbasierter Erfassung. Das Profil liefert derzeit das Must-Support-Translation-Muster ohne die Verpflichtung — die Kommentierenden sind eingeladen, dazu Stellung zu nehmen.</p>
 
 <h3 id="202700-ballotrc5">2027.0.0-ballot.rc5</h3>
 
@@ -812,8 +831,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc5 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Sep 11, 2026 11:07+0000">2026-09-11</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Fri, Sep 11, 2026 11:40+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
