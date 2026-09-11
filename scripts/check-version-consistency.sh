@@ -97,3 +97,25 @@ if fail:
     sys.exit(1)
 print(f"{G}✅ Alle Versionsstellen konsistent auf {ref}.{N}")
 PYEOF
+
+# Manifest-Synchronitaet: package.json-Dependencies muessen die
+# sushi-config-Dependencies spiegeln (der Bake packt package.json als
+# Package-Manifest ein; Drift lieferte bis 2027.0.0-ballot falsche
+# Transitive an fhir install).
+python3 - <<'PYEOF' || exit 1
+import json, re
+t=open('sushi-config.yaml',encoding='utf-8').read()
+m=re.search(r'(?ms)^dependencies:\n(.*?)^\S', t); block=m.group(1)
+want={}
+for mm in re.finditer(r'^\s{2}([a-z0-9.\-]+):\s*([0-9][^\s#]*)\s*(?:#.*)?$', block, re.M): want[mm.group(1)]=mm.group(2)
+for mm in re.finditer(r'^\s{2}([a-z0-9.\-]+):\n\s+id:.*\n\s+version:\s*([^\s#]+)', block, re.M): want[mm.group(1)]=mm.group(2)
+have=json.load(open('package.json',encoding='utf-8')).get('dependencies',{})
+drift={k:(v,have.get(k)) for k,v in want.items() if have.get(k)!=v}
+extra=[k for k in have if k not in want and k!='hl7.fhir.r4.core']
+if drift or extra:
+    print('\033[0;31m❌ package.json-Dependencies driften von sushi-config ab:\033[0m')
+    for k,(w,h) in drift.items(): print(f'   {k}: sushi-config={w}, package.json={h}')
+    for k in extra: print(f'   {k}: nur in package.json')
+    raise SystemExit(1)
+print('\033[0;32m  package.json-Dependencies                          spiegeln sushi-config\033[0m')
+PYEOF
