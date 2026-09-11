@@ -1166,7 +1166,7 @@ jobs:
         env:
           CANONICAL: ${{ needs.prepare.outputs.canonical }}
           LABEL: ${{ needs.prepare.outputs.label }}
-          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+          PAGES_URL: ${{ steps.deployment.outputs.page_url || format('{0}/', env.EXPECTED_PUBLICATION_BASE) }}
           VERSION: ${{ needs.prepare.outputs.version }}
         run: |
           set -euo pipefail
@@ -1177,7 +1177,7 @@ jobs:
             echo "::error::Pages deployed at ${pages_base}, expected ${publication_base}."
             exit 1
           fi
-          for attempt in {1..18}; do
+          for attempt in {1..60}; do  # Legacy-Branch-Build: grosszuegiges Fenster
             if package_list="$(curl --fail --location --silent --show-error \
               --max-time 30 "${publication_base}/package-list.json")" &&
               jq -e \
