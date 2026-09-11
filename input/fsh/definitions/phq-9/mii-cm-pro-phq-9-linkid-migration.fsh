@@ -17,8 +17,8 @@ Usage: #definition
 // Questionnaire-Canonical war unzulaessig. group.source nimmt die URL korrekt auf und erfuellt
 // zugleich HAPIs Anforderung an Gruppen (HAPI-0838).
 
-* group[+].source = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
-* group[=].target = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
+* group[+].source = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-phq-9"
+* group[=].target = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-phq-9"
 // 9 symptom items: phq-phq9-q0N → phq-phq2X
 * group[=].element[+].code = #phq-phq9-q01
 * group[=].element[=].target.code = #phq-phq2a

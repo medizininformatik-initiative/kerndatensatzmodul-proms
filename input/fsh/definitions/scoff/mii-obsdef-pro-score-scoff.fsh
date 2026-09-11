@@ -16,7 +16,7 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code.coding[mii] = $mii-cs-pro-score-catalogue#scoff-total "SCOFF Total Score"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#scoff-total "SCOFF Total Score (0-5)"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * quantitativeDetails.unit = $UCUM#1

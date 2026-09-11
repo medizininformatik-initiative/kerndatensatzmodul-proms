@@ -19,8 +19,7 @@ Usage: #definition
 
 // Reference to PROMIS-29 Documentation
 * useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueReference.reference = "https://www.healthmeasures.net/explore-measurement-systems/promis"
-* useContext[=].valueReference.display = "PROMIS-29 Profile Documentation"
+* useContext[=].valueReference.display = "PROMIS-29 Profile Documentation (https://www.healthmeasures.net/explore-measurement-systems/promis)"
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

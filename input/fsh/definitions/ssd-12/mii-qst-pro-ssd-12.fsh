@@ -173,7 +173,7 @@ Usage: #definition
 * item[13].linkId = "ssd12-score-total"
 * item[13].type = #decimal
 * item[13].prefix = "Score"
-* item[13].code = $mii-cs-pro-score-catalogue#ssd-12-total "SSD-12 Total Score"
+* item[13].code = $mii-cs-pro-score-catalogue#ssd-12-total "SSD-12 Total Score (0-48)"
 * item[13].readOnly = true
 * item[13].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[13].extension[0].valueExpression.name = "Scoreberechnung"

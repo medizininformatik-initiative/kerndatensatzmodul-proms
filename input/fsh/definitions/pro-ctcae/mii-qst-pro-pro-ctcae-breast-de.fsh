@@ -25,7 +25,7 @@ Usage: #definition
 * title.extension[=].extension[0].valueCode = #en
 * title.extension[=].extension[1].url = "content"
 * title.extension[=].extension[1].valueString = "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"
-* code[+] = $mii-cs-pro-questionnaire-catalogue#proctcae-breast-de "PRO-CTCAE German Breast Cancer Subset"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#proctcae-breast-de "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"
 * status = #draft
 * experimental = true
 * description = "PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score)."

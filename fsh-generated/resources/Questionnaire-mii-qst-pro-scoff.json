@@ -56,7 +56,7 @@
     {
       "code": "scoff",
       "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-      "display": "SCOFF Questionnaire"
+      "display": "SCOFF (Five-item eating disorder screening questionnaire, Morgan et al. 1999)"
     }
   ],
   "item": [
@@ -342,7 +342,7 @@
         {
           "code": "scoff-total",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-          "display": "SCOFF Total Score"
+          "display": "SCOFF Total Score (0-5)"
         }
       ],
       "extension": [

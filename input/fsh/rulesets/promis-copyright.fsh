@@ -34,13 +34,11 @@ LOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC licens
 
 // Primary upstream source — PROMIS / HealthMeasures
 * useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueReference.reference = "https://www.healthmeasures.net/explore-measurement-systems/promis"
-* useContext[=].valueReference.display = "PROMIS (Patient-Reported Outcomes Measurement Information System)"
+* useContext[=].valueReference.display = "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
 
 // German translation source — CPCOR Charité
 * useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueReference.reference = "https://cpcor.charite.de/promis_national_center_deutschland"
-* useContext[=].valueReference.display = "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII"
+* useContext[=].valueReference.display = "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
 
 // Contact for licensing inquiries
 * contact[+].name = "PROMIS National Center Deutschland (CPCOR)"

@@ -18,8 +18,7 @@ Usage: #definition
 
 // Reference to PROMIS Depression Scoring Manual
 * useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueReference.reference = "https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf"
-* useContext[=].valueReference.display = "PROMIS Depression Scoring Manual"
+* useContext[=].valueReference.display = "PROMIS Depression Scoring Manual (https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf)"
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

@@ -156,7 +156,7 @@ Usage: #definition
 * insert SupportSearchParam(performer, http://hl7.org/fhir/SearchParameter/Observation-performer, #reference, #SHOULD)
 * insert SupportSearchParam(value-quantity, http://hl7.org/fhir/SearchParameter/Observation-value-quantity, #quantity, #SHALL)
 * insert SupportSearchParam(method, http://hl7.org/fhir/SearchParameter/Observation-method, #token, #SHOULD)
-* insert SupportSearchParam(interpretation, http://hl7.org/fhir/SearchParameter/Observation-interpretation, #token, #SHOULD)
+// interpretation: kein R4-Core-Suchparameter fuer Observation — entfernt (QA); bei Bedarf als eigener SearchParameter definieren.
 * insert SupportSearchParam(derived-from, http://hl7.org/fhir/SearchParameter/Observation-derived-from, #reference, #SHALL)
 * insert SupportSearchParam(focus, http://hl7.org/fhir/SearchParameter/Observation-focus, #reference, #SHOULD)
 * insert SupportSearchParam(based-on, http://hl7.org/fhir/SearchParameter/Observation-based-on, #reference, #SHOULD)
@@ -175,13 +175,13 @@ Usage: #definition
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
 
 // CodeSystem Core SearchParameters
-* insert SupportSearchParam(url, http://hl7.org/fhir/SearchParameter/CodeSystem-url, #uri, #SHALL)
-* insert SupportSearchParam(version, http://hl7.org/fhir/SearchParameter/CodeSystem-version, #token, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/CodeSystem-status, #token, #SHALL)
-* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/CodeSystem-name, #string, #SHOULD)
-* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/CodeSystem-title, #string, #SHOULD)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/CodeSystem-date, #date, #SHOULD)
-* insert SupportSearchParam(publisher, http://hl7.org/fhir/SearchParameter/CodeSystem-publisher, #string, #SHOULD)
+* insert SupportSearchParam(url, http://hl7.org/fhir/SearchParameter/conformance-url, #uri, #SHALL)
+* insert SupportSearchParam(version, http://hl7.org/fhir/SearchParameter/conformance-version, #token, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/conformance-status, #token, #SHALL)
+* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/conformance-name, #string, #SHOULD)
+* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/conformance-title, #string, #SHOULD)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/conformance-date, #date, #SHOULD)
+* insert SupportSearchParam(publisher, http://hl7.org/fhir/SearchParameter/conformance-publisher, #string, #SHOULD)
 
 // ============================================
 // ValueSet requirements
@@ -197,13 +197,13 @@ Usage: #definition
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
 
 // ValueSet Core SearchParameters
-* insert SupportSearchParam(url, http://hl7.org/fhir/SearchParameter/ValueSet-url, #uri, #SHALL)
-* insert SupportSearchParam(version, http://hl7.org/fhir/SearchParameter/ValueSet-version, #token, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ValueSet-status, #token, #SHALL)
-* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/ValueSet-name, #string, #SHOULD)
-* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/ValueSet-title, #string, #SHOULD)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/ValueSet-date, #date, #SHOULD)
-* insert SupportSearchParam(publisher, http://hl7.org/fhir/SearchParameter/ValueSet-publisher, #string, #SHOULD)
+* insert SupportSearchParam(url, http://hl7.org/fhir/SearchParameter/conformance-url, #uri, #SHALL)
+* insert SupportSearchParam(version, http://hl7.org/fhir/SearchParameter/conformance-version, #token, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/conformance-status, #token, #SHALL)
+* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/conformance-name, #string, #SHOULD)
+* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/conformance-title, #string, #SHOULD)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/conformance-date, #date, #SHOULD)
+* insert SupportSearchParam(publisher, http://hl7.org/fhir/SearchParameter/conformance-publisher, #string, #SHOULD)
 
 // ValueSet Operations
 * rest.resource[=].operation[+].name = "expand"

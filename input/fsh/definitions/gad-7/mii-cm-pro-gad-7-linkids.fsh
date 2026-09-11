@@ -25,8 +25,8 @@ Usage: #definition
 // uri und nimmt die Questionnaire-URL korrekt auf — zugleich noetig, weil HAPI Gruppen ohne
 // source beim Package-Install ablehnt (HAPI-0838).
 
-* group[+].source = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7"
-* group[=].target = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7"
+* group[+].source = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-gad-7"
+* group[=].target = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-gad-7"
 * group[=].element[+].code = #gad7-q01
 * group[=].element[=].display = "GAD-7 Item 1 — Nervousness / anxiety"
 * group[=].element[=].target.code = #phq-phq5a

@@ -16,8 +16,7 @@ Usage: #definition
 * code[+] = $mii-cs-pro-questionnaire-catalogue#promis-promis16 "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)"
 
 * useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueReference.reference = "https://doi.org/10.1007/s11136-023-03597-6"
-* useContext[=].valueReference.display = "PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res)"
+* useContext[=].valueReference.display = "PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res) (https://doi.org/10.1007/s11136-023-03597-6)"
 
 * extension[capabilities].extension[displayable].valueBoolean = true
 * extension[capabilities].extension[collectable].valueBoolean = true

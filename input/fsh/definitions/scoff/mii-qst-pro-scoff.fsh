@@ -41,7 +41,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* code[+] = $mii-cs-pro-questionnaire-catalogue#scoff "SCOFF Questionnaire"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#scoff "SCOFF (Five-item eating disorder screening questionnaire, Morgan et al. 1999)"
 
 * copyright = "SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A)."
 
@@ -133,7 +133,7 @@ Usage: #definition
 * item[6].linkId = "scoff-score-total"
 * item[6].type = #decimal
 * item[6].prefix = "Score"
-* item[6].code = $mii-cs-pro-score-catalogue#scoff-total "SCOFF Total Score"
+* item[6].code = $mii-cs-pro-score-catalogue#scoff-total "SCOFF Total Score (0-5)"
 * item[6].readOnly = true
 * item[6].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[6].extension[0].valueExpression.name = "Scoreberechnung"

@@ -34,19 +34,15 @@ Usage: #example
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q06" // Punishment Feelings
-* item[=].text = "[PLATZHALTER] BDI-II Frage 06 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-0 "0 points"
 
 * item[+].linkId = "bdi-bdi2-q07" // Self-Dislike
-* item[=].text = "[PLATZHALTER] BDI-II Frage 07 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q08" // Self-Criticalness
-* item[=].text = "[PLATZHALTER] BDI-II Frage 08 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q09" // Suicidal Thoughts
-* item[=].text = "[PLATZHALTER] BDI-II Frage 09 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-0 "0 points"
 
 * item[+].linkId = "bdi-bdi2-q10" // Crying
@@ -54,19 +50,15 @@ Usage: #example
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q11" // Agitation
-* item[=].text = "[PLATZHALTER] BDI-II Frage 11 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-0 "0 points"
 
 * item[+].linkId = "bdi-bdi2-q12" // Loss of Interest
-* item[=].text = "[PLATZHALTER] BDI-II Frage 12 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-2 "2 points"
 
 * item[+].linkId = "bdi-bdi2-q13" // Indecisiveness
-* item[=].text = "[PLATZHALTER] BDI-II Frage 13 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q14" // Worthlessness
-* item[=].text = "[PLATZHALTER] BDI-II Frage 14 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q15" // Loss of Energy (uses long form)
@@ -74,7 +66,6 @@ Usage: #example
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-2a "2 points (variant a)"
 
 * item[+].linkId = "bdi-bdi2-q16" // Sleep Changes
-* item[=].text = "[PLATZHALTER] BDI-II Frage 16 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q17" // Appetite Changes (uses long form)
@@ -82,15 +73,12 @@ Usage: #example
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1a "1 point (variant a)"
 
 * item[+].linkId = "bdi-bdi2-q18" // Concentration Difficulty
-* item[=].text = "[PLATZHALTER] BDI-II Frage 18 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-2 "2 points"
 
 * item[+].linkId = "bdi-bdi2-q19" // Tiredness or Fatigue
-* item[=].text = "[PLATZHALTER] BDI-II Frage 19 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-1 "1 point"
 
 * item[+].linkId = "bdi-bdi2-q20" // Loss of Interest in Sex
-* item[=].text = "[PLATZHALTER] BDI-II Frage 20 – Original-Wortlaut lizenzbedingt nicht enthalten"
 * item[=].answer.valueCoding = $mii-cs-pro-bdi-bdi2#bdi-bdi2-answer-0 "0 points"
 
 * item[+].linkId = "bdi-bdi2-q21" // Self-Assessment

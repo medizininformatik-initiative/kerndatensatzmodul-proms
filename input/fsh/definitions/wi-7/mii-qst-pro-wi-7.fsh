@@ -49,7 +49,7 @@ Usage: #definition
 * status = #active
 * experimental = true
 * language = #en
-* code[+] = $mii-cs-pro-questionnaire-catalogue#wi-7 "Whiteley-7 Questionnaire"
+* code[+] = $mii-cs-pro-questionnaire-catalogue#wi-7 "Whiteley-7 (Seven-item scale for hypochondriasis and somatization, Fink et al. 1999)"
 
 * copyright = "Whiteley-7 scale — Fink, Ewald, Jensen, Sørensen, Engberg, Holm & Munk-Jørgensen 1999 (Journal of Psychosomatic Research, Elsevier). No explicit licensing restriction stated in the original publication; treated as freely available for clinical and research use. Lizenz-Status: frei verfügbar (Tier A)."
 
@@ -163,7 +163,7 @@ Usage: #definition
 * item[8].linkId = "wi7-score-total"
 * item[8].type = #decimal
 * item[8].prefix = "Score"
-* item[8].code = $mii-cs-pro-score-catalogue#wi-7-total "WI-7 Total Score"
+* item[8].code = $mii-cs-pro-score-catalogue#wi-7-total "Whiteley-7 Total Score (0-7)"
 * item[8].readOnly = true
 * item[8].extension[0].url = $sdc-questionnaire-calculated-expression
 * item[8].extension[0].valueExpression.name = "Scoreberechnung"

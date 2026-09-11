@@ -17,7 +17,7 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code.coding[mii] = $mii-cs-pro-score-catalogue#wi-7-total "WI-7 Total Score"
+* code.coding[mii] = $mii-cs-pro-score-catalogue#wi-7-total "Whiteley-7 Total Score (0-7)"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
 * quantitativeDetails.unit = $UCUM#1
