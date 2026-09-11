@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-promis-29-response",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc5"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"
     ]
   },
   "item": [
@@ -1217,6 +1217,53 @@
               }
             }
           ],
+          "linkId": "promis-srpper23-caps",
+          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
           "linkId": "promis-srpper11-caps",
           "text": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.",
           "_text": {
@@ -1277,53 +1324,6 @@
                   {
                     "url": "content",
                     "valueString": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        },
-        {
-          "answer": [
-            {
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Sometimes",
-                "_display": {
-                  "extension": [
-                    {
-                      "extension": [
-                        {
-                          "url": "lang",
-                          "valueCode": "de"
-                        },
-                        {
-                          "url": "content",
-                          "valueString": "Manchmal"
-                        }
-                      ],
-                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                    }
-                  ]
-                }
-              }
-            }
-          ],
-          "linkId": "promis-srpper23-caps",
-          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
-          "_text": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "de"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
                   }
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -2069,7 +2069,7 @@
     }
   ],
   "language": "en",
-  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.rc5",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot",
   "status": "completed",
   "subject": {
     "reference": "Patient/mii-exa-pro-patient"

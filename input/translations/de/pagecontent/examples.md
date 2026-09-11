@@ -8,9 +8,9 @@ Vorlage enthält das synthetische Beispiel
 Patientendaten in Beispielen verwenden.
 
 Jedes implementierte Instrument bringt durchgerechnete Beispiele mit: eine
-ausgefüllte [QuestionnaireResponse](artifacts.html#example-example-instances)
+ausgefüllte [QuestionnaireResponse](artifacts.html)
 je Fragebogen und, wo das Instrument Scores definiert, die zugehörigen
-Score-[Observations](artifacts.html#example-example-instances). Alle
+Score-[Observations](artifacts.html). Alle
 Antwortsets sind **item-genau** gegen die `answerOption`s der Fragebögen
 geprüft — jede Antwort-Kodierung eines Beispiels ist eine zulässige Option
 genau dieses Items, mit passendem Display und Ordinalgewicht.

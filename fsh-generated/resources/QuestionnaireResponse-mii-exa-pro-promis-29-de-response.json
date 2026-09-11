@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-promis-29-de-response",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc5"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"
     ]
   },
   "item": [
@@ -333,6 +333,19 @@
               }
             }
           ],
+          "linkId": "promis-srpper23-caps",
+          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
           "linkId": "promis-srpper11-caps",
           "text": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."
         },
@@ -348,19 +361,6 @@
           ],
           "linkId": "promis-srpper18-caps",
           "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."
-        },
-        {
-          "answer": [
-            {
-              "valueCoding": {
-                "code": "LA10082-8",
-                "system": "http://loinc.org",
-                "display": "Manchmal"
-              }
-            }
-          ],
-          "linkId": "promis-srpper23-caps",
-          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
         },
         {
           "answer": [
@@ -590,7 +590,7 @@
     }
   ],
   "language": "de",
-  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de|2027.0.0-ballot.rc5",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de|2027.0.0-ballot",
   "status": "completed",
   "subject": {
     "reference": "Patient/mii-exa-pro-patient"

@@ -25,3 +25,16 @@ Single-domain short form for assessing depression symptoms with 4 items from the
 #### PROMIS Physical Function (Planned)
 
 Exemplary single-domain instrument for the physical function domain. Planned as a reference implementation for single-domain PROMIS instruments with full score calculation and Observation extraction.
+
+#### Licensing & Copyright {#lizenzierung-urheberrecht}
+
+PROMIS instruments are free to use, but their use requires a usage agreement
+with the rights holders. Distribution is organised regionally: for projects in
+the DACH region, the **CPCOR (Charité)** — the PROMIS National Center Germany —
+distributes the validated German instruments; multinational projects obtain
+instruments through **HealthMeasures**. The attribution in this module is
+layered accordingly: the MII owns the FHIR structures, the PROMIS Health
+Organization owns the item wordings, the German translations come from the
+PCOR-MII master files, and the LOINC codes follow LOINC's terms of use. The
+module ships the items with this layered attribution; adopters running PROMIS
+instruments productively conclude the usage agreement themselves.

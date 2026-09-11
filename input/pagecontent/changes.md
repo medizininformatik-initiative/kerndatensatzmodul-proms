@@ -4,6 +4,22 @@
 
 This page documents the changes between versions of the MII PRO module.
 
+### 2027.0.0-ballot
+
+The ballot version of the 2027 line. Relative to rc5, five QA error classes were closed (294 → ~205: QuestionnaireResponse texts aligned with their questionnaire definitions, CapabilityStatement search-parameter canonicals corrected to the R4 `conformance-*` parameters, catalogue displays synchronised, ConceptMap linkId maps moved to logical URIs, unresolvable web references converted to display-only) and the PROMIS-29 example item order was fixed.
+
+#### Known Issues
+
+The remaining QA findings are **documented environment and upstream classes**, not defects of the module:
+
+* **~171 LOINC answer displays** — the module deliberately renders the *instrument-validated* German wordings (PHQ-D, Löwe et al.; PROMIS German, PHO/CPCOR), which differ from LOINC's en-US displays. The shipped [LOINC supplement](CodeSystem-mii-cs-pro-loinc-supplement.html) documents them machine-readably; measured on both relevant publishers (2.2.11, 2.3.2), display validation does not yet consult local supplements. The class disappears once the terminology server loads the supplement.
+* **23 supplement concept checks** — the validator cannot confirm the LA codes against LOINC's content and flags every supplement concept. The codes verifiably exist (`$lookup` against tx.fhir.org, 2026-09-06).
+* **4 inherited SDC links** — a dead link inside element documentation inherited from the SDC parent profile (`2025Jan/rendering.html`); an upstream issue of the SDC package.
+* **~10 preview-only download links** — `package.tgz` and the `*.zip` downloads resolve in the formal publication (measured HTTP 200) but not in branch previews.
+* **1 dependency FHIR-version notice** — `subscriptions-backport.r4` declares FHIR 4.0.0 and arrives transitively; not pinnable from this module.
+
+**Open ballot question:** a hard obligation for `item.text` and `answer.display` in QuestionnaireResponse (1..1 plus German-availability invariants) was implemented and measured, but conflicts with licence-restricted (metadata-only) instruments and paper-based capture. The profile currently ships the must-support translation pattern without the obligation — commenters are invited to weigh in.
+
 ### 2027.0.0-ballot.rc5
 
 **QuestionnaireResponse: German via translation extension (2026-09-10):** `item.text` and `item.answer.valueCoding.display` are now must-support with an explicit `translation`-extension slice, and all 20 example responses demonstrate the pattern end-to-end (350 item texts, 252 answer displays; German-primary instruments carry German directly, English-primary ones the canonical wording plus German translation extensions). The EORTC QLQ-C30 questionnaire gained the official German item wordings along the way. A hard obligation (1..1 plus German-availability invariants) was implemented and measured, but is deferred to ballot commentary: it conflicts with licence-restricted (metadata-only) instruments and paper-based capture workflows.

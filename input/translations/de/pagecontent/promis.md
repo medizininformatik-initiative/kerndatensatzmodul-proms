@@ -65,3 +65,18 @@ Die zentrale Definition der Lizenz- und Quellenangaben für PROMIS-Questionnaire
 #### Hinweis zum Verhältnis MII ↔ PROMIS Health Organization
 
 Das MII PRO Modul reklamiert keine Eigentumsrechte an den PROMIS-Items selbst. Die FHIR-Verpackung (Profile, Extensions, Score-Calculation-Architektur) ist MII-Eigenleistung; die inhaltliche IP der PROMIS-Items verbleibt bei der PROMIS Health Organization (Northwestern University).
+
+#### Lizenzierung & Urheberrecht {#lizenzierung-urheberrecht}
+
+PROMIS-Instrumente sind frei nutzbar, ihre Nutzung setzt aber eine
+Nutzungsvereinbarung mit den Rechteinhabern voraus. Die Verteilung ist
+regional organisiert: Für Projekte im DACH-Raum verteilt das **CPCOR
+(Charité)** — das PROMIS National Center Germany — die validierten deutschen
+Instrumente; multinationale Projekte beziehen die Instrumente über
+**HealthMeasures**. Die Attribution in diesem Modul ist entsprechend
+geschichtet: Die FHIR-Strukturen gehören der MII, die Item-Wortlaute der
+PROMIS Health Organization, die deutschen Übersetzungen stammen aus den
+PCOR-MII-Masterdateien, und die LOINC-Codes folgen den LOINC-Nutzungs-
+bedingungen. Das Modul liefert die Items mit dieser geschichteten
+Attribution aus; Anwender, die PROMIS-Instrumente produktiv einsetzen,
+schließen die Nutzungsvereinbarung selbst.

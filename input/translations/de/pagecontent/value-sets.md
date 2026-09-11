@@ -34,4 +34,4 @@ Die **Antwortskalen** sind MII-kontrollierte ValueSets über den eigenen
 CodeSystems des Moduls: Jedes Antwortkonzept trägt sein Scoring-Gewicht als
 `itemWeight`-Property — das macht die berechneten Ausdrücke (`.weight()`)
 verlässlich und ist der Kern der
-[Terminologie-Strategie](terminologie.html) des Moduls.
+[Terminologie-Strategie](terminology-strategies.html) des Moduls.

@@ -3,7 +3,7 @@
   "id": "mii-exa-pro-eortc-qlq-c30-response",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.rc5"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot"
     ]
   },
   "subject": {
@@ -1422,7 +1422,7 @@
     }
   ],
   "language": "en",
-  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30|2027.0.0-ballot.rc5",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30|2027.0.0-ballot",
   "status": "completed",
   "authored": "2024-01-15T10:30:00Z"
 }

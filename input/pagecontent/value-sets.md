@@ -31,4 +31,4 @@ The **answer scales** are MII-controlled ValueSets over the module's own
 CodeSystems: each answer concept carries its scoring weight as an
 `itemWeight` property, which is what makes the calculated expressions
 (`.weight()`) reliable — the core of the module's
-[terminology strategy](terminologie.html).
+[terminology strategy](terminology-strategies.html).

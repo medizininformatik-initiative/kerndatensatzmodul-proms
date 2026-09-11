@@ -294,6 +294,13 @@ Usage: #inline
 * insert TranslationDE(item[=].item[=].text, [["In den letzten 7 Tagen:"]])
 
 // Item 1: Social activities - Sometimes (3)
+* item[=].item[+].linkId = "promis-srpper23-caps"
+* item[=].item[=].text = "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
+* insert TranslationDE(item[=].item[=].text, [["Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."]])
+* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
+* insert TranslationDE(item[=].item[=].answer.valueCoding.display, [["Manchmal"]])
+
+// Item 4: Leisure activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper11-caps"
 * item[=].item[=].text = "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."
 * insert TranslationDE(item[=].item[=].text, [["Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."]])
@@ -308,13 +315,6 @@ Usage: #inline
 * insert TranslationDE(item[=].item[=].answer.valueCoding.display, [["Selten"]])
 
 // Item 3: Work activities - Sometimes (3)
-* item[=].item[+].linkId = "promis-srpper23-caps"
-* item[=].item[=].text = "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
-* insert TranslationDE(item[=].item[=].text, [["Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."]])
-* item[=].item[=].answer.valueCoding = $LNC#LA10082-8 "Sometimes"
-* insert TranslationDE(item[=].item[=].answer.valueCoding.display, [["Manchmal"]])
-
-// Item 4: Leisure activities - Sometimes (3)
 * item[=].item[+].linkId = "promis-srpper46-caps"
 * item[=].item[=].text = "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
 * insert TranslationDE(item[=].item[=].text, [["Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."]])

@@ -10,9 +10,9 @@ template ships the synthetic example
 examples.
 
 Every implemented instrument ships worked examples: a completed
-[QuestionnaireResponse](artifacts.html#example-example-instances) per
+[QuestionnaireResponse](artifacts.html) per
 questionnaire and, where the instrument defines scores, the corresponding
-score [Observations](artifacts.html#example-example-instances). All response
+score [Observations](artifacts.html). All response
 sets are cross-checked **item-accurately** against the questionnaires'
 `answerOption`s — every answer coding in an example is a legal option of
 exactly that item, with matching display and ordinal weight.
