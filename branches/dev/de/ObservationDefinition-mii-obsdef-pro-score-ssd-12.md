@@ -18,7 +18,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
 
 **category**: Survey
 
-**code**: SSD-12 Total Score
+**code**: SSD-12 Total Score (0-48)
 
 **permittedDataType**: Quantity
 
@@ -63,7 +63,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
     "coding" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
       "code" : "ssd-12-total",
-      "display" : "SSD-12 Total Score"
+      "display" : "SSD-12 Total Score (0-48)"
     }]
   },
   "permittedDataType" : ["Quantity"],

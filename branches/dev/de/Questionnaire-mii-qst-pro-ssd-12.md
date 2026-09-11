@@ -81,7 +81,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO SSD-12",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T09:22:31+00:00",
+  "date" : "2026-09-11T11:07:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -230,7 +230,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "code" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
       "code" : "ssd-12-total",
-      "display" : "SSD-12 Total Score"
+      "display" : "SSD-12 Total Score (0-48)"
     }],
     "prefix" : "Score",
     "text" : "SSD-12 Summenwert (0-48)",

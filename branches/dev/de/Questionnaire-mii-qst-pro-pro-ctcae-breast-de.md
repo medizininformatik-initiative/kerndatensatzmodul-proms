@@ -70,7 +70,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-11T09:22:31+00:00",
+  "date" : "2026-09-11T11:07:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -94,7 +94,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "code" : [{
     "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
     "code" : "proctcae-breast-de",
-    "display" : "PRO-CTCAE German Breast Cancer Subset"
+    "display" : "PRO-CTCAE German Breast Cancer Subset (21 Symptoms)"
   }],
   "item" : [{
     "linkId" : "proctcae-53",

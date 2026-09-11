@@ -38,7 +38,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO EORTC QLQ-C30 Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T09:22:31+00:00",
+  "date" : "2026-09-11T11:07:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

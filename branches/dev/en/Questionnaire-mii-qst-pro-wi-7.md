@@ -81,7 +81,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T09:22:31+00:00",
+  "date" : "2026-09-11T11:07:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -106,7 +106,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "code" : [{
     "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
     "code" : "wi-7",
-    "display" : "Whiteley-7 Questionnaire"
+    "display" : "Whiteley-7 (Seven-item scale for hypochondriasis and somatization, Fink et al. 1999)"
   }],
   "item" : [{
     "linkId" : "wi7-intro",
@@ -446,7 +446,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "code" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
       "code" : "wi-7-total",
-      "display" : "WI-7 Total Score"
+      "display" : "Whiteley-7 Total Score (0-7)"
     }],
     "prefix" : "Score",
     "text" : "WI-7 Total Score (0-7)",

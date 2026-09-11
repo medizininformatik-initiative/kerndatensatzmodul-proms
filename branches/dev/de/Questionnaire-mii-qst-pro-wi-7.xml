@@ -55,7 +55,7 @@
   <title value="MII QST PRO WI-7"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-11T09:22:31+00:00"/>
+  <date value="2026-09-11T11:07:18+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -80,7 +80,7 @@
   <code>
     <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue"/>
     <code value="wi-7"/>
-    <display value="Whiteley-7 Questionnaire"/>
+    <display value="Whiteley-7 (Seven-item scale for hypochondriasis and somatization, Fink et al. 1999)"/>
   </code>
   <item>
     <linkId value="wi7-intro"/>
@@ -298,7 +298,7 @@
     <code>
       <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"/>
       <code value="wi-7-total"/>
-      <display value="WI-7 Total Score"/>
+      <display value="Whiteley-7 Total Score (0-7)"/>
     </code>
     <prefix value="Score"/>
     <text value="WI-7 Summenwert (0-7)"/>

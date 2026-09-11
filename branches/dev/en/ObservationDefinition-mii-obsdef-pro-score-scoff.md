@@ -18,7 +18,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
 
 **category**: Survey
 
-**code**: SCOFF Total Score
+**code**: SCOFF Total Score (0-5)
 
 **permittedDataType**: Quantity
 
@@ -62,7 +62,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
     "coding" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
       "code" : "scoff-total",
-      "display" : "SCOFF Total Score"
+      "display" : "SCOFF Total Score (0-5)"
     }]
   },
   "permittedDataType" : ["Quantity"],

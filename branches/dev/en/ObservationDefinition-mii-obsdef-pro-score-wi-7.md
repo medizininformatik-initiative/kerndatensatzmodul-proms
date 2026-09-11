@@ -18,7 +18,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
 
 **category**: Survey
 
-**code**: WI-7 Total Score
+**code**: Whiteley-7 Total Score (0-7)
 
 **permittedDataType**: Quantity
 
@@ -66,7 +66,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
     "coding" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
       "code" : "wi-7-total",
-      "display" : "WI-7 Total Score"
+      "display" : "Whiteley-7 Total Score (0-7)"
     }]
   },
   "permittedDataType" : ["Quantity"],

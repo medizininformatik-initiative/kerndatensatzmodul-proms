@@ -45,7 +45,7 @@
   "title" : "MII QST PRO PROMIS-16 (Adults)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-11T09:22:31+00:00",
+  "date" : "2026-09-11T11:07:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -65,8 +65,7 @@
       "code" : "focus"
     },
     "valueReference" : {
-      "reference" : "https://www.healthmeasures.net/explore-measurement-systems/promis",
-      "display" : "PROMIS (Patient-Reported Outcomes Measurement Information System)"
+      "display" : "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
     }
   },
   {
@@ -75,8 +74,7 @@
       "code" : "focus"
     },
     "valueReference" : {
-      "reference" : "https://cpcor.charite.de/promis_national_center_deutschland",
-      "display" : "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII"
+      "display" : "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
     }
   },
   {
@@ -85,8 +83,7 @@
       "code" : "focus"
     },
     "valueReference" : {
-      "reference" : "https://doi.org/10.1007/s11136-023-03597-6",
-      "display" : "PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res)"
+      "display" : "PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res) (https://doi.org/10.1007/s11136-023-03597-6)"
     }
   }],
   "jurisdiction" : [{

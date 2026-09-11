@@ -53,7 +53,7 @@
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T09:22:31+00:00",
+  "date" : "2026-09-11T11:07:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -78,7 +78,7 @@
   "code" : [{
     "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
     "code" : "scoff",
-    "display" : "SCOFF Questionnaire"
+    "display" : "SCOFF (Five-item eating disorder screening questionnaire, Morgan et al. 1999)"
   }],
   "item" : [{
     "linkId" : "scoff-intro",
@@ -258,7 +258,7 @@
     "code" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
       "code" : "scoff-total",
-      "display" : "SCOFF Total Score"
+      "display" : "SCOFF Total Score (0-5)"
     }],
     "prefix" : "Score",
     "text" : "SCOFF Summenwert (0-5)",

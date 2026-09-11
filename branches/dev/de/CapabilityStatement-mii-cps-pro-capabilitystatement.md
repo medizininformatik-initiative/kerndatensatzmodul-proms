@@ -676,15 +676,6 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHOULD"
-        }],
-        "name" : "interpretation",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-interpretation",
-        "type" : "token"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
           "valueCode" : "SHALL"
         }],
         "name" : "derived-from",
@@ -764,7 +755,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "url",
-        "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-url",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-url",
         "type" : "uri"
       },
       {
@@ -773,7 +764,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "version",
-        "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-version",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-version",
         "type" : "token"
       },
       {
@@ -782,7 +773,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "status",
-        "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-status",
         "type" : "token"
       },
       {
@@ -791,7 +782,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "name",
-        "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-name",
         "type" : "string"
       },
       {
@@ -800,7 +791,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "title",
-        "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-title",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-title",
         "type" : "string"
       },
       {
@@ -809,7 +800,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "date",
-        "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-date",
         "type" : "date"
       },
       {
@@ -818,7 +809,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "publisher",
-        "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-publisher",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-publisher",
         "type" : "string"
       }]
     },
@@ -876,7 +867,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "url",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ValueSet-url",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-url",
         "type" : "uri"
       },
       {
@@ -885,7 +876,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "version",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ValueSet-version",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-version",
         "type" : "token"
       },
       {
@@ -894,7 +885,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "status",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ValueSet-status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-status",
         "type" : "token"
       },
       {
@@ -903,7 +894,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "name",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ValueSet-name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-name",
         "type" : "string"
       },
       {
@@ -912,7 +903,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "title",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ValueSet-title",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-title",
         "type" : "string"
       },
       {
@@ -921,7 +912,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "date",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ValueSet-date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-date",
         "type" : "date"
       },
       {
@@ -930,7 +921,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHOULD"
         }],
         "name" : "publisher",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ValueSet-publisher",
+        "definition" : "http://hl7.org/fhir/SearchParameter/conformance-publisher",
         "type" : "string"
       }],
       "operation" : [{

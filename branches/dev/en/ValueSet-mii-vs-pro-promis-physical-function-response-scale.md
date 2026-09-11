@@ -44,7 +44,7 @@ PROMIS Physical Function response scale based on LOINC LL1022-4
   "title" : "MII VS PRO PROMIS Physical Function Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T09:22:31+00:00",
+  "date" : "2026-09-11T11:07:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
