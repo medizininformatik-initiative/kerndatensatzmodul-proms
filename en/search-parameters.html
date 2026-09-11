@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Search Parameters - MII IG PRO v2027.0.0-ballot.rc4</title>
+    <title>Search Parameters - MII IG PRO v2027.0.0-ballot.rc5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,11 +141,11 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc5 - 
 
 
 
-  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
+  Germany
 
 
             </span>
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc5: 2027 Ballot 3) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Search Parameters</h2>
   
 
@@ -317,18 +317,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- Split from the former combined search-parameters-and-operations.md per the
      TF-KDS-agreed menu structure (one page per artifact type).
      German mirror: input/translations/de/pagecontent/search-parameters.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optional page (0..1).</strong> The KDS module menu lists this page as <em>optional</em>.
-Decide for your module: <strong>keep</strong> it — fill it in and delete this banner and
-the <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code> marker comment (in this file AND the German mirror) — or
-<strong>remove</strong> it, following the per-entry procedure in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a>
-of this repository. A release must not ship with this banner (convention
-check M9).</p>
-</blockquote>
 
 <h3 id="search-parameters">Search Parameters</h3>
 
@@ -336,10 +324,59 @@ check M9).</p>
 <strong>PRO</strong> module (naming convention <code class="language-plaintext highlighter-rouge">MII_SP_&lt;Module&gt;_&lt;Name&gt;</code>), where
 defined. Cross-module search parameters are defined by the Meta module.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: List the search parameters — or remove this page if your module
-defines none.]</p>
-</blockquote>
+<p>The module defines seven search parameters for <strong>catalogue queries</strong> —
+finding instruments and score definitions by their properties rather than
+by id:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Parameter</th>
+      <th>Finds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Questionnaire</td>
+      <td><a href="SearchParameter-mii-sp-pro-questionnaire-capabilities.html">capabilities</a></td>
+      <td>variants by capability (e.g. all <em>calculatable</em> questionnaires)</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-code.html">code</a></td>
+      <td>score definitions by score code</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-health-correlation.html">health-correlation</a></td>
+      <td>scores by <a href="domains.html">health domain</a></td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-unit.html">unit</a></td>
+      <td>scores by result unit</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.html">permitted-datatype</a></td>
+      <td>scores by result datatype</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.html">preferred-report-name</a></td>
+      <td>scores by report name</td>
+    </tr>
+    <tr>
+      <td>ObservationDefinition</td>
+      <td><a href="SearchParameter-mii-sp-pro-observationdefinition-interval-category.html">interval-category</a></td>
+      <td>scores by reference-interval category</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <a href="capability-statements.html">CapabilityStatement</a> declares which of them
+a conformant server must support.</p>
 
 
 
@@ -365,8 +402,8 @@ defines none.]</p>
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Sep 11, 2026 10:35+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

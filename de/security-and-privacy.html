@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Security and Privacy - MII IG PRO v2027.0.0-ballot.rc4</title>
+    <title>Security and Privacy - MII IG PRO v2027.0.0-ballot.rc5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,11 +141,11 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc5 - 
 
 
 
-  <img alt="Germany Flagge" src="assets/images/deu.svg" height="16" title="Germany"/>
+  Germany
 
 
             </span>
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc5: 2027 Ballot 3) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Security and Privacy</h2>
   
 
@@ -362,43 +362,30 @@ nicht dieser Leitfaden.</p>
 
 <h4 id="3-modul-spezifische-aspekte">3. Modul-spezifische Aspekte</h4>
 
-<p>Dies ist der eigene Beitrag des Moduls: die Sicherheits- und
-Datenschutz-Eigenschaften, die aus der <em>Art der Daten dieses Moduls</em> folgen.
-<strong>Der Inhalt dieses Abschnitts ist optional</strong> — nicht jedes Modul hat eigene
-Aspekte. Hat Ihres keine, besteht der gesamte Abschnitt aus dem folgenden
-Standardtext (löschen Sie die Beispiel- und TODO-Boxen unten und übernehmen
-Sie ihn wörtlich):</p>
+<p>Patient-berichtete Outcomes sind <strong>direkte Selbstauskünfte</strong> — das prägt
+die eigenen Aspekte dieses Moduls:</p>
 
-<blockquote>
-  <p>Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende
-Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP —
-führt dieses Modul keine Datenkategorie, die eigene Sicherheits- oder
-Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits-
-oder Datenschutzanforderungen an Implementierende.</p>
-</blockquote>
+<ul>
+  <li><strong>Sensible Inhaltskategorien.</strong> Die meisten implementierten Instrumente
+screenen psychische Gesundheit (PHQ-9, BDI-II, DASS-21, EPDS, HADS, …).
+Einzelantworten können so sensibel sein wie Scores — insbesondere PHQ-9
+Item 9 (Suizidalität). Systeme SOLLEN rohe QuestionnaireResponses mit
+demselben Zugriffsschutz behandeln wie Diagnosen, nicht als bloße
+Umfragedaten.</li>
+  <li><strong>Freitext-Antworten.</strong> Instrumente mit offenen Textfeldern
+(MIDOS2-Freitext, Bemerkungsitems) können direkt identifizierende
+Angaben enthalten, die Patientinnen und Patienten selbst eingetragen
+haben. Pseudonymisierung auf Profilebene deckt das nicht ab;
+Datenausleitungen MÜSSEN Freitext-Antworten als potenziell
+identifizierend behandeln und ausschließen oder manuell kuratieren.</li>
+  <li><strong>Scores sind abgeleitete Daten.</strong> Eine Score-Observation ohne ihre
+Quell-Response verrät weniger als die Response; braucht ein Projekt nur
+Scores, ist die Ausleitung allein der Score-Observations die
+datenminimierende Option, die DIMP durchsetzen kann.</li>
+</ul>
 
-<!-- ILLUSTRATIVE-EXAMPLE — Abschnitt entscheiden und die Beispiel-Box unten
-     (in dieser Datei UND der englischen Quellseite) vor dem ersten Release
-     entfernen; der Konventions-Check (M11) lässt einen Release-Branch damit
-     fehlschlagen. -->
-<blockquote class="ig-highlight ig-highlight-orange">
-  <p><strong>Illustratives Beispiel — vor dem ersten Release entfernen.</strong> So füllt ein
-anderes KDS-Modul diesen Abschnitt (<em>Person</em>): die Patienten-Identifikatoren
-sind Pseudonyme der Treuhandstelle; Systeme dürfen ein Record Linkage nicht
-zur Re-Identifizierung führen lassen, und der Geltungsbereich eines
-Pseudonyms (standortweit vs. projektspezifisch) ist beim Zusammenführen von
-Daten zu respektieren.</p>
-</blockquote>
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Nennen Sie die spezifischen Aspekte Ihres Moduls — die geführten
-Datenkategorien und ihre Sensibilität, Risiken, die eine Pseudonymisierung
-auf Profilebene nicht abdeckt, sowie sicherheits- oder datenschutzbezogene
-SHALL/SHOULD/MAY-Anforderungen dieses Moduls an Implementierende, jeweils mit
-dem adressierten Risiko. Benennen Sie verbleibende Risiken, die im
-Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
-übernehmen Sie den Standardtext oben, wenn es keine gibt.]</p>
-</blockquote>
+<p>Darüber hinaus stellt das Modul keine zusätzlichen
+Sicherheitsanforderungen; der übergreifende Rahmen oben gilt unverändert.</p>
 
 
 
@@ -424,8 +411,8 @@ Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc5 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Fri, Sep 11, 2026 10:35+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

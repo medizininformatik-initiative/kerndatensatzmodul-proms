@@ -3,11 +3,11 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
   <id value="mii-qst-pro-eortc-qlq-c30"/>
   <meta>
-    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc4"/>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc5"/>
   </meta>
   <language value="de"/>
   <text>
-    <status value="extensions"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Questionnaire mii-qst-pro-eortc-qlq-c30</b></p><a name="de-mii-qst-pro-eortc-qlq-c30"> </a><a name="de-hcmii-qst-pro-eortc-qlq-c30"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2027.0.0-ballot.rc4</p></div><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30#2027.0.0-ballot.rc4</td></tr>
+    <status value="extensions"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Questionnaire mii-qst-pro-eortc-qlq-c30</b></p><a name="de-mii-qst-pro-eortc-qlq-c30"> </a><a name="de-hcmii-qst-pro-eortc-qlq-c30"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-questionnaire.html">MII PR PRO Questionnaire</a> version: 2027.0.0-ballot.rc5</p></div><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">EORTC QLQ-C30 Version 3.0 Quality of Life Questionnaire - Complete implementation with all 30 items and 15 scale scores</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30#2027.0.0-ballot.rc5</td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="de-item.QLQ-C30.Introduction" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="display" class="hierarchy"/> QLQ-C30.Introduction</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">We are interested in some things about you and your health. Please answer all of the questions yourself by circling the number that best applies to you. There are no 'right' or 'wrong' answers. The information that you provide will remain strictly confidential.</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="de-item.QLQ-C30.Section1" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: white; background-color: inherit" title="display" class="hierarchy"/> QLQ-C30.Section1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">During the past week:</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="de-item.qlq-c30-q01" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> qlq-c30-q01</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1. Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.html">MII VS PRO EORTC QLQ-C30 4-Point Scale</a></td></tr>
@@ -84,11 +84,11 @@
     </extension>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
-  <version value="2027.0.0-ballot.rc4"/>
+  <version value="2027.0.0-ballot.rc5"/>
   <title value="EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-09-08T17:30:22+00:00"/>
+  <date value="2026-09-11T10:35:27+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -133,196 +133,196 @@
   <item>
     <linkId value="qlq-c30-q01"/>
     <prefix value="1"/>
-    <text value="Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?"/>
+    <text value="Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen (z.B. eine schwere Einkaufstasche oder einen Koffer zu tragen)?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q02"/>
     <prefix value="2"/>
-    <text value="Do you have any trouble taking a long walk?"/>
+    <text value="Bereitet es Ihnen Schwierigkeiten, einen längeren Spaziergang zu machen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q03"/>
     <prefix value="3"/>
-    <text value="Do you have any trouble taking a short walk outside of the house?"/>
+    <text value="Bereitet es Ihnen Schwierigkeiten, eine kurze Strecke außer Haus zu gehen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q04"/>
     <prefix value="4"/>
-    <text value="Do you need to stay in bed or a chair during the day?"/>
+    <text value="Müssen Sie tagsüber im Bett liegen oder in einem Sessel sitzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q05"/>
     <prefix value="5"/>
-    <text value="Do you need help with eating, dressing, washing yourself or using the toilet?"/>
+    <text value="Brauchen Sie Hilfe beim Essen, Anziehen, Waschen oder Benutzen der Toilette?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q06"/>
     <prefix value="6"/>
-    <text value="Were you limited in doing either your work or other daily activities?"/>
+    <text value="Waren Sie bei Ihrer Arbeit oder bei anderen tagtäglichen Beschäftigungen eingeschränkt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q07"/>
     <prefix value="7"/>
-    <text value="Were you limited in pursuing your hobbies or other leisure time activities?"/>
+    <text value="Waren Sie bei Ihren Hobbys oder anderen Freizeitbeschäftigungen eingeschränkt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q08"/>
     <prefix value="8"/>
-    <text value="Were you short of breath?"/>
+    <text value="Waren Sie kurzatmig?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q09"/>
     <prefix value="9"/>
-    <text value="Have you had pain?"/>
+    <text value="Hatten Sie Schmerzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q10"/>
     <prefix value="10"/>
-    <text value="Did you need to rest?"/>
+    <text value="Mussten Sie sich ausruhen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q11"/>
     <prefix value="11"/>
-    <text value="Have you had trouble sleeping?"/>
+    <text value="Hatten Sie Schlafstörungen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q12"/>
     <prefix value="12"/>
-    <text value="Have you felt weak?"/>
+    <text value="Fühlten Sie sich schwach?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q13"/>
     <prefix value="13"/>
-    <text value="Have you lacked appetite?"/>
+    <text value="Hatten Sie Appetitmangel?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q14"/>
     <prefix value="14"/>
-    <text value="Have you felt nauseated?"/>
+    <text value="War Ihnen übel?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q15"/>
     <prefix value="15"/>
-    <text value="Have you vomited?"/>
+    <text value="Haben Sie erbrochen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q16"/>
     <prefix value="16"/>
-    <text value="Have you been constipated?"/>
+    <text value="Hatten Sie Verstopfung?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q17"/>
     <prefix value="17"/>
-    <text value="Have you had diarrhea?"/>
+    <text value="Hatten Sie Durchfall?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q18"/>
     <prefix value="18"/>
-    <text value="Were you tired?"/>
+    <text value="Waren Sie müde?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q19"/>
     <prefix value="19"/>
-    <text value="Did pain interfere with your daily activities?"/>
+    <text value="Fühlten Sie sich durch Schmerzen in Ihrem alltäglichen Leben beeinträchtigt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q20"/>
     <prefix value="20"/>
-    <text value="Have you had difficulty in concentrating on things, like reading a newspaper or watching television?"/>
+    <text value="Hatten Sie Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. auf das Zeitunglesen oder das Fernsehen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q21"/>
     <prefix value="21"/>
-    <text value="Did you feel tense?"/>
+    <text value="Fühlten Sie sich angespannt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q22"/>
     <prefix value="22"/>
-    <text value="Did you worry?"/>
+    <text value="Haben Sie sich Sorgen gemacht?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q23"/>
     <prefix value="23"/>
-    <text value="Did you feel irritable?"/>
+    <text value="Waren Sie reizbar?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q24"/>
     <prefix value="24"/>
-    <text value="Did you feel depressed?"/>
+    <text value="Fühlten Sie sich niedergeschlagen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q25"/>
     <prefix value="25"/>
-    <text value="Have you had difficulty remembering things?"/>
+    <text value="Hatten Sie Schwierigkeiten, sich an Dinge zu erinnern?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q26"/>
     <prefix value="26"/>
-    <text value="Has your physical condition or medical treatment interfered with your family life?"/>
+    <text value="Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Familienleben beeinträchtigt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q27"/>
     <prefix value="27"/>
-    <text value="Has your physical condition or medical treatment interfered with your social activities?"/>
+    <text value="Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Zusammensein oder Ihre gemeinsamen Unternehmungen mit anderen Menschen beeinträchtigt?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q28"/>
     <prefix value="28"/>
-    <text value="Has your physical condition or medical treatment caused you financial difficulties?"/>
+    <text value="Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung für Sie finanzielle Schwierigkeiten mit sich gebracht?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt"/>
   </item>
@@ -334,20 +334,20 @@
   <item>
     <linkId value="qlq-c30-q29"/>
     <prefix value="29"/>
-    <text value="How would you rate your overall health during the past week?"/>
+    <text value="Wie würden Sie insgesamt Ihren Gesundheitszustand während der letzten Woche einschätzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
   </item>
   <item>
     <linkId value="qlq-c30-q30"/>
     <prefix value="30"/>
-    <text value="How would you rate your overall quality of life during the past week?"/>
+    <text value="Wie würden Sie insgesamt Ihre Lebensqualität während der letzten Woche einschätzen?"/>
     <type value="choice"/>
     <answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt"/>
   </item>
   <item>
     <linkId value="QLQ-C30.Scores"/>
-    <text value="Calculated Scores (0-100 scale)"/>
+    <text value="Berechnete Scores (Skala 0–100)"/>
     <type value="group"/>
     <item>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
@@ -360,7 +360,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-pf"/>
-      <text value="Physical Functioning Score"/>
+      <text value="Skalenwert Körperliche Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -375,7 +375,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-rf"/>
-      <text value="Role Functioning Score"/>
+      <text value="Skalenwert Rollenfunktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -390,7 +390,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-ef"/>
-      <text value="Emotional Functioning Score"/>
+      <text value="Skalenwert Emotionale Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -405,7 +405,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-cf"/>
-      <text value="Cognitive Functioning Score"/>
+      <text value="Skalenwert Kognitive Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -420,7 +420,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-sf"/>
-      <text value="Social Functioning Score"/>
+      <text value="Skalenwert Soziale Funktion"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -435,7 +435,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-fa"/>
-      <text value="Fatigue Score"/>
+      <text value="Skalenwert Fatigue"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -450,7 +450,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-nv"/>
-      <text value="Nausea and Vomiting Score"/>
+      <text value="Skalenwert Übelkeit und Erbrechen"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -465,7 +465,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-pa"/>
-      <text value="Pain Score"/>
+      <text value="Skalenwert Schmerz"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -480,7 +480,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-dy"/>
-      <text value="Dyspnoea Score"/>
+      <text value="Skalenwert Atemnot"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -495,7 +495,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-sl"/>
-      <text value="Insomnia Score"/>
+      <text value="Skalenwert Schlaflosigkeit"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -510,7 +510,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-ap"/>
-      <text value="Appetite Loss Score"/>
+      <text value="Skalenwert Appetitverlust"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -525,7 +525,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-co"/>
-      <text value="Constipation Score"/>
+      <text value="Skalenwert Verstopfung"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -540,7 +540,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-di"/>
-      <text value="Diarrhoea Score"/>
+      <text value="Skalenwert Durchfall"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -555,7 +555,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-fi"/>
-      <text value="Financial Difficulties Score"/>
+      <text value="Skalenwert Finanzielle Schwierigkeiten"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>
@@ -570,7 +570,7 @@
         <valueBoolean value="true"/>
       </extension>
       <linkId value="score-ql"/>
-      <text value="Global Health Status / Quality of Life Score"/>
+      <text value="Skalenwert Globaler Gesundheitsstatus / Lebensqualität"/>
       <type value="decimal"/>
       <readOnly value="true"/>
     </item>

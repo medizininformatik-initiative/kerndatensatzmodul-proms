@@ -1,4 +1,4 @@
-# MII PR PRO QuestionnaireResponse - MII IG PRO v2027.0.0-ballot.rc4
+# MII PR PRO QuestionnaireResponse - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response | *Version*:2027.0.0-ballot.rc4 |
-| Active as of 2026-09-08 | *Computable Name*:MII_PR_PRO_QuestionnaireResponse |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response | *Version*:2027.0.0-ballot.rc5 |
+| Active as of 2026-09-11 | *Computable Name*:MII_PR_PRO_QuestionnaireResponse |
 
  
 MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data Capture Specification 
@@ -49,11 +49,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-questi
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-questionnaire-response",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_PR_PRO_QuestionnaireResponse",
   "title" : "MII PR PRO QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-09-08T17:30:22+00:00",
+  "date" : "2026-09-11T10:35:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -98,6 +98,88 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-questi
     {
       "id" : "QuestionnaireResponse.language",
       "path" : "QuestionnaireResponse.language",
+      "short" : "Sprache der Antwortinhalte",
+      "mustSupport" : true
+    },
+    {
+      "id" : "QuestionnaireResponse.item.text",
+      "path" : "QuestionnaireResponse.item.text",
+      "short" : "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde"
+    },
+    {
+      "id" : "QuestionnaireResponse.item.text.extension",
+      "path" : "QuestionnaireResponse.item.text.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "QuestionnaireResponse.item.text.extension:translation",
+      "path" : "QuestionnaireResponse.item.text.extension",
+      "sliceName" : "translation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/translation"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]",
+      "path" : "QuestionnaireResponse.item.answer.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding",
+      "path" : "QuestionnaireResponse.item.answer.value[x]",
+      "sliceName" : "valueCoding",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }]
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding.display",
+      "path" : "QuestionnaireResponse.item.answer.value[x].display",
+      "short" : "Wortlaut der gewählten Antwort",
+      "mustSupport" : true
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding.display.extension",
+      "path" : "QuestionnaireResponse.item.answer.value[x].display.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "QuestionnaireResponse.item.answer.value[x]:valueCoding.display.extension:translation",
+      "path" : "QuestionnaireResponse.item.answer.value[x].display.extension",
+      "sliceName" : "translation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/translation"]
+      }],
       "mustSupport" : true
     }]
   }

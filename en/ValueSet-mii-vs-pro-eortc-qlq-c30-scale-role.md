@@ -1,4 +1,4 @@
-# MII VS PRO EORTC QLQ-C30 Role Functioning Scale - MII IG PRO v2027.0.0-ballot.rc4
+# MII VS PRO EORTC QLQ-C30 Role Functioning Scale - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role | *Version*:2027.0.0-ballot.rc4 |
-| Active as of 2026-09-08 | *Computable Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_Role |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role | *Version*:2027.0.0-ballot.rc5 |
+| Active as of 2026-09-11 | *Computable Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_Role |
 
  
 4-point response scale for EORTC QLQ-C30 role functioning items 
@@ -37,12 +37,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-eortc-qlq-c30-scale-role",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role",
   "title" : "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T17:30:22+00:00",
+  "date" : "2026-09-11T10:35:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

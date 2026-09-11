@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Code Systems - MII IG PRO v2027.0.0-ballot.rc4</title>
+    <title>Code Systems - MII IG PRO v2027.0.0-ballot.rc5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,11 +141,11 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc5 - 
 
 
 
-  <img alt="Germany Flagge" src="assets/images/deu.svg" height="16" title="Germany"/>
+  Germany
 
 
             </span>
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc5: 2027 Ballot 3) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Code Systems</h2>
   
 
@@ -324,19 +324,6 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
      der früheren Seite terminology.md gemäß der TF-KDS-abgestimmten Menüstruktur).
      Der IG-Publisher listet die CodeSystems auf den Artefakt-Seiten
      automatisch; hier stehen die MII-Hinweise dazu. -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optionale Seite (0..1).</strong> Das KDS-Modulmenü führt diese Seite als
-<em>optional</em>. Entscheiden Sie für Ihr Modul: Seite <strong>behalten</strong> — Inhalte
-ausfüllen und dieses Banner samt <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code>-Marker-Kommentar löschen (in
-dieser Datei UND in der englischen Quellseite) — oder Seite <strong>entfernen</strong>,
-nach der Schritt-für-Schritt-Anleitung in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a> dieses
-Repositories. Ein Release darf dieses Banner nicht enthalten
-(Konventions-Check M9).</p>
-</blockquote>
 
 <h3 id="codesystems">CodeSystems</h3>
 
@@ -349,11 +336,27 @@ SNOMED CT) werden in diesem Modul <strong>nicht</strong> publiziert, sondern üb
 zentralen KDS-Terminologieserver (SU-TermServ) bezogen:
 <a href="https://mii-termserv.de/">https://mii-termserv.de/</a>.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Listen Sie die modul-eigenen CodeSystems auf oder verweisen Sie auf die
-automatisch erzeugte Artefakt-Liste — oder entfernen Sie diese Seite, wenn Ihr
-Modul keine definiert.]</p>
-</blockquote>
+<p>Das Modul publiziert drei Arten von CodeSystemen:</p>
+
+<ul>
+  <li><strong>Kataloge</strong> — <a href="CodeSystem-mii-cs-pro-questionnaire-catalogue.html">Fragebogen-Katalog</a>
+und <a href="CodeSystem-mii-cs-pro-score-catalogue.html">Score-Katalog</a>: das
+Register der Instrumente und Scores, die dieses Modul verantwortet.</li>
+  <li><strong>Instrumenten-Antwortskalen</strong> — je ein CodeSystem pro Instrument, dessen
+Antworten die MII kontrolliert (BDI-II, DASS-21, EORTC QLQ-C30, EQ-5D,
+ISR, MIDOS2, PHQ-15, PRO-CTCAE, SSD-12, WHODAS 2.0). Die Antwortkonzepte
+tragen deutsche und englische Designationen sowie ihre
+<code class="language-plaintext highlighter-rouge">itemWeight</code>-Scoring-Properties.</li>
+  <li><strong>Ein <a href="CodeSystem-mii-cs-pro-loinc-supplement.html">LOINC-Supplement</a></strong> —
+die validierten deutschen Antwort-Wortlaute (PHQ-D; PROMIS deutsch via
+PHO/CPCOR) als Designationen auf den vom Modul genutzten
+LOINC-Antwortcodes. Es reist im Package mit, sodass Terminologieserver,
+die diesen IG laden, die instrumentenvalidierten Wortlaute ausliefern
+können; Übersetzungsautorität über LOINC beansprucht es nicht.</li>
+</ul>
+
+<p>Die vollständige Liste mit Inhalten steht auf der
+<a href="artifacts.html">Artefaktseite</a>.</p>
 
 
 
@@ -379,8 +382,8 @@ Modul keine definiert.]</p>
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc5 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Fri, Sep 11, 2026 10:35+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

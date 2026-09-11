@@ -1,4 +1,4 @@
-# MII VS PRO PROMIS Frequency Response Scale - MII IG PRO v2027.0.0-ballot.rc4
+# MII VS PRO PROMIS Frequency Response Scale - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale | *Version*:2027.0.0-ballot.rc4 |
-| Active as of 2026-09-08 | *Computable Name*:MII_VS_PRO_PROMIS_Frequency_Response_Scale |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale | *Version*:2027.0.0-ballot.rc5 |
+| Active as of 2026-09-11 | *Computable Name*:MII_VS_PRO_PROMIS_Frequency_Response_Scale |
 
  
 PROMIS Frequency response scale based on LOINC LL1016-6 
@@ -39,12 +39,12 @@ PROMIS Frequency response scale based on LOINC LL1016-6
   "id" : "mii-vs-pro-promis-frequency-response-scale",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_VS_PRO_PROMIS_Frequency_Response_Scale",
   "title" : "MII VS PRO PROMIS Frequency Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T17:30:22+00:00",
+  "date" : "2026-09-11T10:35:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

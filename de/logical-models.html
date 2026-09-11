@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Logical Models - MII IG PRO v2027.0.0-ballot.rc4</title>
+    <title>Logical Models - MII IG PRO v2027.0.0-ballot.rc5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,11 +141,11 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc5 - 
 
 
 
-  <img alt="Germany Flagge" src="assets/images/deu.svg" height="16" title="Germany"/>
+  Germany
 
 
             </span>
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc4: 2027 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.rc5: 2027 Ballot 3) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Logical Models</h2>
   
 
@@ -309,24 +309,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#das-modell" id="markdown-toc-das-modell">Das Modell</a></li>
+  <li><a href="#wie-man-es-liest" id="markdown-toc-wie-man-es-liest">Wie man es liest</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <!-- markdownlint-disable MD041 -->
-<h3 id="logische-modelle">Logische Modelle</h3>
 
-<p>Die logischen Datenmodelle des Moduls <strong>PRO</strong> beschreiben den fachlichen Datensatz unabhängig von der konkreten FHIR-Repräsentation.</p>
+<p>Das logische Datenmodell des <strong>PRO</strong>-Moduls beschreibt den Fachdatensatz unabhängig von seiner konkreten FHIR-Repräsentation — die Form, in der Klinik und Studienplanung denken, bevor Profile ins Spiel kommen.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Fügen Sie die logischen Modelle ein, oder entfernen Sie diese Seite.]</p>
-</blockquote>
+<h3 id="das-modell">Das Modell</h3>
+
+<p><strong><a href="StructureDefinition-mii-lm-pro.html">MII_LM_PRO</a></strong> gliedert die Domäne in vier Obergruppen entlang des Kern-Workflows des Moduls:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gruppe</th>
+      <th>Kardinalität</th>
+      <th>Wird in FHIR zu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Fragebogen</strong> — das Instrument: Name, Abkürzung, Version, interne ID, Itembank mit Kodierungen, Antwortskalen</td>
+      <td>1..*</td>
+      <td><a href="profiles.html">Questionnaire</a></td>
+    </tr>
+    <tr>
+      <td><strong>AusgefuellterFragebogen</strong> — eine ausgefüllte Instanz: Antworten, Person, Zeitpunkt</td>
+      <td>0..*</td>
+      <td>QuestionnaireResponse</td>
+    </tr>
+    <tr>
+      <td><strong>Score</strong> — berechnete Werte: Rohwerte, T-Scores, Referenzbereiche</td>
+      <td>0..*</td>
+      <td>Observation + ObservationDefinition</td>
+    </tr>
+    <tr>
+      <td><strong>Domaene</strong> — Klassifikation nach Gesundheitsbereichen (Depression, HRQoL, …)</td>
+      <td>0..*</td>
+      <td>die <a href="domains.html">Domänen-Kodierungen</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Die Elementnamen sind bewusst <strong>deutsch</strong> — das Modell ist die gemeinsame Sprache mit den klinischen Fachexpertinnen und -experten; das FHIR-Mapping in die englische Ressourcenwelt trägt der Mapping-Abschnitt des Modells und realisieren die <a href="profiles.html">Profile</a>.</p>
+
+<h3 id="wie-man-es-liest">Wie man es liest</h3>
+
+<ul>
+  <li>Die <strong><a href="StructureDefinition-mii-lm-pro.html">Artefaktseite</a></strong> rendert den vollständigen Elementbaum mit Kardinalitäten, Typen und Definitionen.</li>
+  <li>Die <strong><a href="uml-diagrams.html">UML-Diagramme</a></strong> zeigen dasselbe Modell grafisch, einschließlich der Workflow-Sichten.</li>
+  <li><strong><a href="datasets-and-descriptions.html">Datensätze und Beschreibungen</a></strong> verbindet das Modell mit den Datensätzen je Instrument.</li>
+</ul>
+
+<p>Das logische Modell ist Dokumentation: Implementierende validieren gegen die <a href="profiles.html">Profile</a>, nicht gegen das Modell.</p>
 
 
 
@@ -352,8 +392,8 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 17:30+0000">2026-09-08</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc5 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Fri, Sep 11, 2026 10:35+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

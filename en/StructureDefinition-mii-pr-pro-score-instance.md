@@ -1,4 +1,4 @@
-# MII PR PRO Score Instance - MII IG PRO v2027.0.0-ballot.rc4
+# MII PR PRO Score Instance - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance | *Version*:2027.0.0-ballot.rc4 |
-| Active as of 2026-09-08 | *Computable Name*:MII_PR_PRO_Score_Instance |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance | *Version*:2027.0.0-ballot.rc5 |
+| Active as of 2026-09-11 | *Computable Name*:MII_PR_PRO_Score_Instance |
 
  
 MII PR PRO Score Instance 
@@ -51,11 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-score-
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-score-instance",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_PR_PRO_Score_Instance",
   "title" : "MII PR PRO Score Instance",
   "status" : "active",
-  "date" : "2026-09-08T17:30:22+00:00",
+  "date" : "2026-09-11T10:35:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

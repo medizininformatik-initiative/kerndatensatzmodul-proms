@@ -1,0 +1,35 @@
+@startuml
+!theme plain
+skinparam backgroundColor white
+skinparam linetype ortho
+
+package "PRO Informationsmodell" {
+  object "Fragebogen_Vorlage" as FV {
+    Strukturdefinition
+    Fragen und Antwortoptionen
+    Versionierung
+  }
+  
+  object "Ausgefüllter_Fragebogen" as AF {
+    Patientenantworten
+    Erfassungszeitpunkt
+    Referenz zur Vorlage
+  }
+  
+  object "Score" as S {
+    Berechnete Werte
+    Algorithmen
+    Interpretationen
+  }
+  
+  object "Domäne" as D {
+    Gesundheitsbereiche
+    Skalierungen
+    Referenzwerte
+  }
+  
+  FV --> AF : instanziiert
+  AF --> S : generiert
+  S --> D : zugeordnet zu
+}
+@enduml

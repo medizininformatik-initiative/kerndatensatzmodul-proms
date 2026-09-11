@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2027.0.0-ballot.rc4
+# MII PR PRO PROMIS Cognitive Function SF 4a Raw Score - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score | *Version*:2027.0.0-ballot.rc4 |
-| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score | *Version*:2027.0.0-ballot.rc5 |
+| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score |
 
  
 Profile for PROMIS Cognitive Function Short Form 4a raw score observations (4-20 range) 
@@ -86,12 +86,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Cognitive Function SF 4a Raw Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-08T17:30:22+00:00",
+  "date" : "2026-09-11T10:35:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
