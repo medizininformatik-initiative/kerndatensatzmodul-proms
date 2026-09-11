@@ -1,4 +1,4 @@
-# MII VS PRO MIDOS2 DGP-Severity-Skala - MII IG PRO v2027.0.0-ballot.rc5
+# MII VS PRO MIDOS2 DGP-Severity-Skala - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity | *Version*:2027.0.0-ballot.rc5 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity | *Version*:2027.0.0-ballot |
 | Draft as of 2026-09-11 | *Computable Name*:MII_VS_PRO_MIDOS2_Severity |
 
  
@@ -37,12 +37,12 @@ DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für di
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-midos2-severity",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-severity",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_PRO_MIDOS2_Severity",
   "title" : "MII VS PRO MIDOS2 DGP-Severity-Skala",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-11T10:35:27+00:00",
+  "date" : "2026-09-11T13:28:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

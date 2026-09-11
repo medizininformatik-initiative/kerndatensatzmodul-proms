@@ -1,4 +1,4 @@
-# MII QST PRO SCOFF - MII IG PRO v2027.0.0-ballot.rc5
+# MII QST PRO SCOFF - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff | *Version*:2027.0.0-ballot.rc5 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-11 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A). | |
 
@@ -34,7 +34,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-scoff",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc5"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "en",
   "extension" : [{
@@ -77,11 +77,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T10:35:27+00:00",
+  "date" : "2026-09-11T13:28:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -106,7 +106,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "code" : [{
     "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
     "code" : "scoff",
-    "display" : "SCOFF Questionnaire"
+    "display" : "SCOFF (Five-item eating disorder screening questionnaire, Morgan et al. 1999)"
   }],
   "item" : [{
     "linkId" : "scoff-intro",
@@ -364,7 +364,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "code" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
       "code" : "scoff-total",
-      "display" : "SCOFF Total Score"
+      "display" : "SCOFF Total Score (0-5)"
     }],
     "prefix" : "Score",
     "text" : "SCOFF Total Score (0-5)",

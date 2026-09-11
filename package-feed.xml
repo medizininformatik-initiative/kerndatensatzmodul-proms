@@ -5,9 +5,20 @@
     <description>MII PRO Module — package feed</description>
     <atom:link href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/package-feed.xml" rel="self" type="application/rss+xml"/>
     <generator>MII module go-publish bootstrap</generator>
-    <lastBuildDate>Fri, 11 Sep 2026 10:21:48 +0000</lastBuildDate>
-    <pubDate>Fri, 11 Sep 2026 10:21:48 +0000</pubDate>
+    <lastBuildDate>Fri, 11 Sep 2026 01:09:25 +0000</lastBuildDate>
+    <pubDate>Fri, 11 Sep 2026 01:09:25 +0000</pubDate>
   
+    <item>
+      <title>de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot</title>
+      <description>Ballot-Version der 2027er-Linie: SDC-4-Stack, Translation-Extension-Muster fuer QuestionnaireResponse, deutsche Verfuegbarkeit in 28/30 Fragebogen, LOINC-Supplement, vollstaendige Dokumentation, dokumentierte Known-Issues-Klassen.</description>
+      <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot/package.tgz</link>
+      <guid isPermaLink="true">https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot/package.tgz</guid>
+      <dc:creator>Medical Informatics Initiative (MII)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 11 Sep 2026 01:09:25 +0000</pubDate>
+      <fhir:details>Publication run at 11/09/2026 by runner using Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (29 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.rc5</title>
       <description>Ballot RC5: Translation-Extension-Muster fuer QuestionnaireResponse (item.text/display Must-Support, 20 durchgaengig zweisprachige Beispiele); offizielle deutsche EORTC-QLQ-C30-Wortlaute; deutsche Verfuegbarkeit in 28/30 Fragebogen; elf Dokumentationsseiten mit Modulinhalt gefuellt; automatisierte formale Publikation.</description>

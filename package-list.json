@@ -7,13 +7,22 @@
     "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
   },
   {
+    "version" : "2027.0.0-ballot",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot",
+    "status" : "ballot",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-11",
+    "current" : true,
+    "desc" : "Ballot-Version der 2027er-Linie: SDC-4-Stack, Translation-Extension-Muster fuer QuestionnaireResponse, deutsche Verfuegbarkeit in 28/30 Fragebogen, LOINC-Supplement, vollstaendige Dokumentation, dokumentierte Known-Issues-Klassen."
+  },
+  {
     "version" : "2027.0.0-ballot.rc5",
     "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.rc5",
     "status" : "ballot",
     "sequence" : "2027",
     "fhirversion" : "4.0.1",
     "date" : "2026-09-11",
-    "current" : true,
     "desc" : "Ballot RC5: Translation-Extension-Muster fuer QuestionnaireResponse (item.text/display Must-Support, 20 durchgaengig zweisprachige Beispiele); offizielle deutsche EORTC-QLQ-C30-Wortlaute; deutsche Verfuegbarkeit in 28/30 Fragebogen; elf Dokumentationsseiten mit Modulinhalt gefuellt; automatisierte formale Publikation."
   },
   {

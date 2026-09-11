@@ -1,4 +1,4 @@
-# MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds - MII IG PRO v2027.0.0-ballot.rc5
+# MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids | *Version*:2027.0.0-ballot.rc5 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-11 | *Computable Name*: |
 
  
@@ -31,11 +31,11 @@ Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fr
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-gad-7-linkids",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "title" : "MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-11T10:35:27+00:00",
+  "date" : "2026-09-11T13:28:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -57,8 +57,8 @@ Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fr
     }]
   }],
   "group" : [{
-    "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7",
-    "target" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7",
+    "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-gad-7",
+    "target" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-gad-7",
     "element" : [{
       "code" : "gad7-q01",
       "display" : "GAD-7 Item 1 — Nervousness / anxiety",

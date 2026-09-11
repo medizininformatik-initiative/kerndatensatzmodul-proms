@@ -1,4 +1,4 @@
-# MII QST PRO PROMIS Depression SF 4a (Adults) - MII IG PRO v2027.0.0-ballot.rc5
+# MII QST PRO PROMIS Depression SF 4a (Adults) - MII IG PRO v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a | *Version*:2027.0.0-ballot.rc5 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-11 | *Maschinenlesbarer Name*: |
-| **Verwendung**: [PROMIS Depression Scoring Manual](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf) | |
+| **Verwendung**: PROMIS Depression Scoring Manual (https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf) | |
 
  
 PROMIS Depression Short Form 4a - Adults - Item Bank v1.0 
@@ -34,7 +34,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-promis-depression-sf4a",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.rc5"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
   },
   "language" : "en",
   "extension" : [{
@@ -77,11 +77,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T10:35:27+00:00",
+  "date" : "2026-09-11T13:28:57+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -101,8 +101,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "code" : "focus"
     },
     "valueReference" : {
-      "reference" : "https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf",
-      "display" : "PROMIS Depression Scoring Manual"
+      "display" : "PROMIS Depression Scoring Manual (https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf)"
     }
   }],
   "jurisdiction" : [{
