@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "name" : "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Depression SF 4a Raw Score",
   "status" : "active",
-  "date" : "2026-09-11T11:40:31+00:00",
+  "date" : "2026-09-11T14:12:49+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
