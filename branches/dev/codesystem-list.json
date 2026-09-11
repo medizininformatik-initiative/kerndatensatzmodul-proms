@@ -8,8 +8,8 @@
     "description" : "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
     "uses" : {
     },
-    "ValueSet-mii-vs-pro-bdi-bdi2-long.html" : "MII VS PRO BDI-II",
-    "ValueSet-mii-vs-pro-bdi-bdi2-short.html" : "MII VS PRO BDI-II"
+    "ValueSet-mii-vs-pro-bdi-bdi2-short.html" : "MII VS PRO BDI-II",
+    "ValueSet-mii-vs-pro-bdi-bdi2-long.html" : "MII VS PRO BDI-II"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
@@ -95,14 +95,14 @@
     "uses" : {
     },
     "ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.html" : "MII VS PRO PRO-CTCAE Frequency Scale (Sexual Function)",
-    "ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.html" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)",
+    "ValueSet-mii-vs-pro-pro-ctcae-presence-na.html" : "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
+    "ValueSet-mii-vs-pro-pro-ctcae-frequency.html" : "MII VS PRO PRO-CTCAE Frequency Scale",
+    "ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.html" : "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
     "ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.html" : "MII VS PRO PRO-CTCAE Severity Scale (Radiation)",
     "ValueSet-mii-vs-pro-pro-ctcae-severity.html" : "MII VS PRO PRO-CTCAE Severity Scale",
-    "ValueSet-mii-vs-pro-pro-ctcae-frequency.html" : "MII VS PRO PRO-CTCAE Frequency Scale",
-    "ValueSet-mii-vs-pro-pro-ctcae-presence-na.html" : "MII VS PRO PRO-CTCAE Presence Scale (with Not Applicable)",
-    "ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.html" : "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
     "ValueSet-mii-vs-pro-pro-ctcae-presence.html" : "MII VS PRO PRO-CTCAE Presence Scale",
-    "ValueSet-mii-vs-pro-pro-ctcae-interference.html" : "MII VS PRO PRO-CTCAE Interference Scale"
+    "ValueSet-mii-vs-pro-pro-ctcae-interference.html" : "MII VS PRO PRO-CTCAE Interference Scale",
+    "ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.html" : "MII VS PRO PRO-CTCAE Severity Scale (Sexual Function)"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
