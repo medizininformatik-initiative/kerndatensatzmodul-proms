@@ -1,0 +1,50 @@
+@startuml MII_PRO_Domäne
+skinparam linetype ortho
+'skinparam linetype polyline
+package Domäne {
+    object Domäne {
+        Domäne_ID: string
+        Domäne_Code: code
+        Domäne_Titel: i18nString
+        Domäne_ParentDomäne: Domäne
+        Domänen_Skalen: Domänen_Skala
+    }
+    object Domäne_Skala {
+        Domänen_Skalen_ID: string
+        Minimum: integer / float
+        Maximum: integer / float
+        Skalenart: code
+        Skalenrichtung: code
+        Domänen_Skala_Score_Berechung: Domänen_Skala_Score_Berechnung
+        Referenzpopulation/Gültigkeit: string
+    }
+
+    object Domäne_Skala_Score_berechnet {
+        ScoreID: string
+        Score_Vorlage: Score_Vorlage
+        Domäne_Skala_Score_Berechnung: Domäne_Skala_Score_Berechnung
+        DomänenScore_Mapping: DomänenScore_Mapping
+        Berechnungsdatum: date
+        berechneter_Scorewert: (integer/float/string)
+    } 
+    object Domäne_Skala_Score_Berechnung {
+        ScoreBerechnungsID: string
+        Score_Datentyp: (integer/float/string)
+        Score_Berechnungs_Algoritmus: Expression
+    }
+
+    object Domäne_Skala_Score_Mapping {
+        Source_Domänen_Skalen_ID: string
+        Target_Domänen_Skalen_ID: string
+        Mapping: Scorewert_Mapping 
+    }
+Domäne "1..1" -down- "0..*" Domäne_Skala
+Domäne_Skala "1..1" <-right- "0..*" Domäne_Skala_Score_berechnet
+Domäne_Skala "0..*" <-right-> "2..2" Domäne_Skala_Score_Mapping
+Domäne_Skala "1..1" o-right- "..*" Domäne_Skala_Score_Berechnung
+Domäne_Skala_Score_berechnet::Domäne_Skala_Score_Berechnung "0..1" --> "0..1"  Domäne_Skala_Score_Berechnung
+}
+
+
+@enduml
+

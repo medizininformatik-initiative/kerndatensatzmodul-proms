@@ -1,4 +1,4 @@
-# MII VS PRO PHQ-9 Answer List LL358-3 - MII IG PRO v2027.0.0-ballot
+# MII VS PRO PHQ-9 Answer List LL358-3 - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3 | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3 | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_VS_PRO_PHQ9_AnswerList_LL3583 |
 
  
@@ -38,12 +38,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "id" : "mii-vs-pro-phq-9-answer-list-ll358-3",
   "language" : "de",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_PRO_PHQ9_AnswerList_LL3583",
   "title" : "MII VS PRO PHQ-9 Answer List LL358-3",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-11T13:28:57+00:00",
+  "date" : "2026-09-11T16:14:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

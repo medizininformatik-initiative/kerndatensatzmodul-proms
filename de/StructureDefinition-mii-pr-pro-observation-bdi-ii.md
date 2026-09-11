@@ -1,4 +1,4 @@
-# MII PR PRO Observation BDI-II - MII IG PRO v2027.0.0-ballot
+# MII PR PRO Observation BDI-II - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_BDI_II |
 
  
@@ -86,12 +86,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-bdi-ii",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_PR_PRO_Observation_BDI_II",
   "title" : "MII PR PRO Observation BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T13:28:57+00:00",
+  "date" : "2026-09-11T16:14:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

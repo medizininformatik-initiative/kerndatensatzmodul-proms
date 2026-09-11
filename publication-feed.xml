@@ -5,9 +5,20 @@
     <description>MII PRO Module — publication feed</description>
     <atom:link href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/publication-feed.xml" rel="self" type="application/rss+xml"/>
     <generator>MII module go-publish bootstrap</generator>
-    <lastBuildDate>Fri, 11 Sep 2026 01:09:25 +0000</lastBuildDate>
-    <pubDate>Fri, 11 Sep 2026 01:09:25 +0000</pubDate>
+    <lastBuildDate>Fri, 11 Sep 2026 03:59:56 +0000</lastBuildDate>
+    <pubDate>Fri, 11 Sep 2026 03:59:56 +0000</pubDate>
   
+    <item>
+      <title>MII Implementation Guide PRO version 2027.0.0-ballot.1</title>
+      <description>Ballot-Hotfix .1: korrigiertes Package-Manifest (Dependencies spiegeln jetzt sushi-config: meta 2027.0.0-ballot final, SDC 4.0.0, ISiK 6.0.0) - das Simplifier-Package 2027.0.0-ballot deklarierte unveraenderlich veraltete Transitive. Inhaltlich identisch zur Ballot-Version.</description>
+      <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.1/index.html</link>
+      <guid isPermaLink="true">https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.1/index.html</guid>
+      <dc:creator>Medical Informatics Initiative (MII)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 11 Sep 2026 03:59:56 +0000</pubDate>
+      <fhir:details>Publication run at 11/09/2026 by runner using Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (29 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>MII Implementation Guide PRO version 2027.0.0-ballot</title>
       <description>Ballot-Version der 2027er-Linie: SDC-4-Stack, Translation-Extension-Muster fuer QuestionnaireResponse, deutsche Verfuegbarkeit in 28/30 Fragebogen, LOINC-Supplement, vollstaendige Dokumentation, dokumentierte Known-Issues-Klassen.</description>

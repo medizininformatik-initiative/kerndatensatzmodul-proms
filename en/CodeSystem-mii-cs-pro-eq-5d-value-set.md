@@ -1,4 +1,4 @@
-# MII CS EQ-5D Value Set - MII IG PRO v2027.0.0-ballot
+# MII CS EQ-5D Value Set - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set | *Version*:2027.0.0-ballot.1 |
 | Active as of 2026-09-11 | *Computable Name*:MII_CS_PRO_EQ_5D_ValueSet |
 
  
@@ -32,12 +32,12 @@ This Code system is referenced in the definition of the following value sets:
   "id" : "mii-cs-pro-eq-5d-value-set",
   "language" : "de-DE",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_CS_PRO_EQ_5D_ValueSet",
   "title" : "MII CS EQ-5D Value Set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T13:28:57+00:00",
+  "date" : "2026-09-11T16:14:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

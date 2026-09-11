@@ -1,4 +1,4 @@
-# MII QST PRO PHQ-9 - MII IG PRO v2027.0.0-ballot
+# MII QST PRO PHQ-9 - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9 | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9 | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-11 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: Patient Health Questionnaire (PHQ/PHQ-9) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar. | |
 
@@ -34,7 +34,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-phq-9",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"]
   },
   "language" : "en",
   "extension" : [{
@@ -89,11 +89,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "title" : "MII QST PRO PHQ-9",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T13:28:57+00:00",
+  "date" : "2026-09-11T16:14:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

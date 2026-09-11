@@ -1,4 +1,4 @@
-# MII VS PRO EORTC QLQ-C30 4-Point Scale - MII IG PRO v2027.0.0-ballot
+# MII VS PRO EORTC QLQ-C30 4-Point Scale - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt | *Version*:2027.0.0-ballot.1 |
 | Active as of 2026-09-11 | *Computable Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt |
 
  
@@ -37,12 +37,12 @@ Standard 4-point response scale for EORTC QLQ-C30 items
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-eortc-qlq-c30-scale-4pt",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt",
   "title" : "MII VS PRO EORTC QLQ-C30 4-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T13:28:57+00:00",
+  "date" : "2026-09-11T16:14:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

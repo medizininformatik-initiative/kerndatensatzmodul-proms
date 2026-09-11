@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Presence Scale - MII IG PRO v2027.0.0-ballot
+# MII VS PRO PRO-CTCAE Presence Scale - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence | *Version*:2027.0.0-ballot.1 |
 | Active as of 2026-09-11 | *Computable Name*:MII_VS_PRO_PRO_CTCAE_Presence |
 
  
@@ -37,12 +37,12 @@ Binary presence/absence response scale for PRO-CTCAE items
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-presence",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_PRO_PRO_CTCAE_Presence",
   "title" : "MII VS PRO PRO-CTCAE Presence Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T13:28:57+00:00",
+  "date" : "2026-09-11T16:14:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

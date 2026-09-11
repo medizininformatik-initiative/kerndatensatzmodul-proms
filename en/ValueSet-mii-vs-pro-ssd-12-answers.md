@@ -1,4 +1,4 @@
-# MII VS PRO SSD-12 Answers - MII IG PRO v2027.0.0-ballot
+# MII VS PRO SSD-12 Answers - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers | *Version*:2027.0.0-ballot.1 |
 | Active as of 2026-09-11 | *Computable Name*:MII_VS_PRO_SSD_12_Answers |
 
  
@@ -37,11 +37,11 @@ SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 =
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-ssd-12-answers",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_PRO_SSD_12_Answers",
   "title" : "MII VS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-09-11T13:28:57+00:00",
+  "date" : "2026-09-11T16:14:51+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
