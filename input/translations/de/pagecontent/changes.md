@@ -1,6 +1,6 @@
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
-### 2027.0.0-ballot.rc4 — in Vorbereitung
+### 2027.0.0-ballot.rc5
 
 **QuestionnaireResponse: Deutsch per Translation-Extension (10.09.2026):** `item.text` und `item.answer.valueCoding.display` sind jetzt Must-Support mit explizitem `translation`-Extension-Slice, und alle 20 Beispiel-Responses zeigen das Muster durchgängig (350 Item-Texte, 252 Antwort-Displays; deutschsprachig-primäre Instrumente tragen Deutsch direkt, englisch-primäre den kanonischen Wortlaut plus deutsche Translation-Extensions). Das EORTC-QLQ-C30-Questionnaire hat dabei die offiziellen deutschen Item-Wortlaute erhalten. Eine harte Verpflichtung (1..1 plus Deutsch-Invarianten) war implementiert und vermessen, ist aber in die Ballot-Kommentierung verschoben: Sie kollidiert mit lizenzbeschränkten (Metadata-only-)Instrumenten und papierbasierten Erfassungs-Workflows.
 

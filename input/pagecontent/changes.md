@@ -4,7 +4,7 @@
 
 This page documents the changes between versions of the MII PRO module.
 
-### 2027.0.0-ballot.rc4 — in preparation
+### 2027.0.0-ballot.rc5
 
 **QuestionnaireResponse: German via translation extension (2026-09-10):** `item.text` and `item.answer.valueCoding.display` are now must-support with an explicit `translation`-extension slice, and all 20 example responses demonstrate the pattern end-to-end (350 item texts, 252 answer displays; German-primary instruments carry German directly, English-primary ones the canonical wording plus German translation extensions). The EORTC QLQ-C30 questionnaire gained the official German item wordings along the way. A hard obligation (1..1 plus German-availability invariants) was implemented and measured, but is deferred to ballot commentary: it conflicts with licence-restricted (metadata-only) instruments and paper-based capture workflows.
 
