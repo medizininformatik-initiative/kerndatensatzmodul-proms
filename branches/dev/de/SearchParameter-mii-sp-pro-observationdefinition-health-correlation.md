@@ -1,4 +1,4 @@
-# mii-sp-pro-observationdefinition-health-correlation - MII IG PRO v2027.0.0-ballot.rc4
+# mii-sp-pro-observationdefinition-health-correlation - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-health-correlation | *Version*:2027.0.0-ballot.rc4 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-health-correlation | *Version*:2027.0.0-ballot.rc5 |
 | Active Stand: 2025-05-24 | *Maschinenlesbarer Name*:MII_SP_PRO_ObservationDefinition_ScoreHealthCorrelation |
 
  
@@ -44,7 +44,7 @@ SearchParameter for ObservationDefinition.qualifiedInterval.range.extension[Scor
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/SearchParameter/mii-sp-pro-observationdefinition-health-correlation",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_SP_PRO_ObservationDefinition_ScoreHealthCorrelation",
   "status" : "active",
   "experimental" : true,

@@ -1,4 +1,4 @@
-# MII PR PRO Observation EQ-5D-5L Index - MII IG PRO v2027.0.0-ballot.rc4
+# MII PR PRO Observation EQ-5D-5L Index - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index | *Version*:2027.0.0-ballot.rc4 |
-| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_EQ5D5L_Index |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index | *Version*:2027.0.0-ballot.rc5 |
+| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_EQ5D5L_Index |
 
  
 Profile for EQ-5D-5L Index Score Observations with German value set reference ranges 
@@ -98,12 +98,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-eq5d5l-index",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_PR_PRO_Observation_EQ5D5L_Index",
   "title" : "MII PR PRO Observation EQ-5D-5L Index",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T16:43:20+00:00",
+  "date" : "2026-09-11T09:22:31+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

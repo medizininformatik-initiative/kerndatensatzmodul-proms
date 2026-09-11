@@ -1,4 +1,4 @@
-# WHODAS 2.0 12-Item Simple Sum Score Observation - MII IG PRO v2027.0.0-ballot.rc4
+# WHODAS 2.0 12-Item Simple Sum Score Observation - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR PRO Observation WHODAS 2.0 12-Item](StructureDefinition-mii-pr-pro-observation-whodas12.md) version: 2027.0.0-ballot.rc4
+Profile: [MII PR PRO Observation WHODAS 2.0 12-Item](StructureDefinition-mii-pr-pro-observation-whodas12.md) version: 2027.0.0-ballot.rc5
 
 **status**: Final
 
@@ -37,7 +37,7 @@ Profile: [MII PR PRO Observation WHODAS 2.0 12-Item](StructureDefinition-mii-pr-
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-whodas12-score-simple-sum",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12|2027.0.0-ballot.rc4"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12|2027.0.0-ballot.rc5"]
   },
   "status" : "final",
   "category" : [{

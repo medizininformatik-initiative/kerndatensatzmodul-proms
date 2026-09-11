@@ -1,4 +1,4 @@
-# MII ObsDef PRO PROMIS-29 Social Function T-Score - MII IG PRO v2027.0.0-ballot.rc4
+# MII ObsDef PRO PROMIS-29 Social Function T-Score - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,9 +12,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.rc4
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.rc5
 
-**ArtifactVersion**: 2027.0.0-ballot.rc4
+**ArtifactVersion**: 2027.0.0-ballot.rc5
 
 **category**: Survey
 
@@ -49,11 +49,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-promis-29-social-function-tscore",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.rc4"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.rc5"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2027.0.0-ballot.rc4"
+    "valueString" : "2027.0.0-ballot.rc5"
   }],
   "category" : [{
     "coding" : [{

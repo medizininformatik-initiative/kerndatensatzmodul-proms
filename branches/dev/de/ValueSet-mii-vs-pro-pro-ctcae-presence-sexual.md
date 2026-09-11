@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Presence Scale (Sexual Function) - MII IG PRO v2027.0.0-ballot.rc4
+# MII VS PRO PRO-CTCAE Presence Scale (Sexual Function) - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-sexual | *Version*:2027.0.0-ballot.rc4 |
-| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Presence_Sexual |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-sexual | *Version*:2027.0.0-ballot.rc5 |
+| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_VS_PRO_PRO_CTCAE_Presence_Sexual |
 
  
 4-option presence scale for sexual function: Yes / No / Not sexually active / Prefer not to answer 
@@ -37,12 +37,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-presence-sexual",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence-sexual",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_VS_PRO_PRO_CTCAE_Presence_Sexual",
   "title" : "MII VS PRO PRO-CTCAE Presence Scale (Sexual Function)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T16:43:20+00:00",
+  "date" : "2026-09-11T09:22:31+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

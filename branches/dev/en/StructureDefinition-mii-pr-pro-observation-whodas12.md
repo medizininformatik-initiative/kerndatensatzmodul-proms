@@ -1,4 +1,4 @@
-# MII PR PRO Observation WHODAS 2.0 12-Item - MII IG PRO v2027.0.0-ballot.rc4
+# MII PR PRO Observation WHODAS 2.0 12-Item - MII IG PRO v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12 | *Version*:2027.0.0-ballot.rc4 |
-| Active as of 2026-09-10 | *Computable Name*:MII_PR_PRO_Observation_WHODAS_12 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12 | *Version*:2027.0.0-ballot.rc5 |
+| Active as of 2026-09-11 | *Computable Name*:MII_PR_PRO_Observation_WHODAS_12 |
 
  
 Profile for WHODAS 2.0 12-item simple sum (disability) score Observations (0-48; higher scores indicate greater disability). No suitable LOINC code exists; SNOMED CT and the MII score catalogue are used. 
@@ -38,12 +38,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-observ
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-whodas12",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_PR_PRO_Observation_WHODAS_12",
   "title" : "MII PR PRO Observation WHODAS 2.0 12-Item",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-10T16:43:20+00:00",
+  "date" : "2026-09-11T09:22:31+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
