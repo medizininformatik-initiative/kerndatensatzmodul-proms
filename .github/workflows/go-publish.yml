@@ -1136,8 +1136,29 @@ jobs:
       id-token: write
 
     steps:
+      # SERVING-MODUS (2026-09-11): Pages serviert vom gh-pages-BRANCH
+      # (build_type=legacy). Gemessen wurden drei per Actions-API erfolgreiche
+      # Deployments (12:14 dev, 14:03 Tag, 14:32 dev), von denen der Origin
+      # keines auslieferte (age:0/MISS bei Last-Modified des Altstands); der
+      # Branch-Build lieferte sofort korrekt. Im Legacy-Modus IST der
+      # gh-pages-Push des publish-Jobs das Deployment — deploy-pages wuerde
+      # nur noch fehlschlagen und wird uebersprungen.
+      - name: Detect Pages serving mode
+        id: pagesmode
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          bt="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq .build_type)"
+          echo "build_type=${bt}" >> "${GITHUB_OUTPUT}"
+          if [[ "${bt}" == "legacy" ]]; then
+            echo "Pages serves the gh-pages branch directly; the branch push already deployed. Requesting a fresh branch build." >> "${GITHUB_STEP_SUMMARY}"
+            gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" >/dev/null || true
+          fi
+
       - name: Deploy exact Pages artifact
         id: deployment
+        if: steps.pagesmode.outputs.build_type == 'workflow'
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
 
       - name: Verify Pages publication
