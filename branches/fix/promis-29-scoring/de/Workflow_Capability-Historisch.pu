@@ -1,0 +1,13 @@
+@startuml
+!theme plain
+skinparam backgroundColor white
+
+database "Legacy Data" as Legacy
+participant "Migration Service\n[populatable+calculatable]" as Service
+database "FHIR Store" as Store
+
+Legacy -> Service : Alte QRs
+Service -> Service : Lädt in populatable Q
+Service -> Service : Wendet neue\nBerechnungslogik an
+Service -> Store : Aktualisierte\nObservations
+@enduml
