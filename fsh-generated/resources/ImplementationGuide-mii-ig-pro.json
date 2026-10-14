@@ -1847,6 +1847,198 @@
       },
       {
         "reference": {
+          "reference": "TestScript/promis29-terminology"
+        },
+        "name": "PROMIS-29 Scoring — Terminologie der Antwortoptionen",
+        "description": "Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "TestScript/promis29-scoring"
+        },
+        "name": "PROMIS-29 Scoring — Validierung und Persistenz",
+        "description": "Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anlegen. Die Fixtures sind die IG-Beispiele promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-rundir.mjs für den CI-Lauf.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-anxiety-asym"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — anxiety-asym",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-anxiety-ceil"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — anxiety-ceil",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-anxiety-floor"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — anxiety-floor",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-depression-asym"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — depression-asym",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-depression-ceil"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — depression-ceil",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-depression-floor"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — depression-floor",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-fatigue-asym"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — fatigue-asym",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-fatigue-ceil"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — fatigue-ceil",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-fatigue-floor"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — fatigue-floor",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-pain-interference-asym"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — pain-interference-asym",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-pain-interference-ceil"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — pain-interference-ceil",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-pain-interference-floor"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — pain-interference-floor",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-physical-function-asym"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — physical-function-asym",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-physical-function-ceil"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — physical-function-ceil",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-physical-function-floor"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — physical-function-floor",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-sleep-asym"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — sleep-asym",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-sleep-ceil"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — sleep-ceil",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-sleep-floor"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — sleep-floor",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-social-asym"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — social-asym",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-social-ceil"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — social-ceil",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-social-floor"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — social-floor",
+        "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/promis29-social-teilantwort-guard"
+        },
+        "name": "PROMIS-29 Scoring-Fixture — social-teilantwort-guard",
+        "description": "Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
           "reference": "QuestionnaireResponse/mii-exa-pro-scoff-response"
         },
         "name": "SCOFF Questionnaire Response Example",
@@ -2181,6 +2373,11 @@
         {
           "nameUrl": "capability-statements.html",
           "title": "Capability Statements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "scoring-tests.html",
+          "title": "Scoring Tests",
           "generation": "markdown"
         },
         {
