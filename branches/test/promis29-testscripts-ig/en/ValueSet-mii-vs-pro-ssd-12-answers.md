@@ -41,7 +41,7 @@ SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 =
   "name" : "MII_VS_PRO_SSD_12_Answers",
   "title" : "MII VS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-10-14T07:05:42+00:00",
+  "date" : "2026-10-14T07:28:35+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
