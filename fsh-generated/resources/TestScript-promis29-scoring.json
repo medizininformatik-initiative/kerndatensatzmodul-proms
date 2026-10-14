@@ -207,20 +207,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-physical-function-floor",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -250,20 +247,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-physical-function-ceil",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -293,20 +287,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-physical-function-asym",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -336,20 +327,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-anxiety-floor",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -379,20 +367,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-anxiety-ceil",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -422,20 +407,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-anxiety-asym",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -465,20 +447,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-depression-floor",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -508,20 +487,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-depression-ceil",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -551,20 +527,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-depression-asym",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -594,20 +567,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-fatigue-floor",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -637,20 +607,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-fatigue-ceil",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -680,20 +647,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-fatigue-asym",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -723,20 +687,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-sleep-floor",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -766,20 +727,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-sleep-ceil",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -809,20 +767,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-sleep-asym",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -852,20 +807,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-social-floor",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -895,20 +847,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-social-ceil",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -938,20 +887,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-social-asym",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -981,20 +927,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-pain-interference-floor",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -1024,20 +967,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-pain-interference-ceil",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -1067,20 +1007,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-pain-interference-asym",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },
@@ -1110,20 +1047,17 @@
       "action": [
         {
           "operation": {
-            "type": {
-              "code": "validate",
-              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
-            },
-            "resource": "QuestionnaireResponse",
+            "method": "post",
+            "url": "/QuestionnaireResponse/$validate",
             "sourceId": "qr-social-teilantwort-guard",
-            "params": "/$validate",
             "encodeRequestUrl": true
           }
         },
         {
           "assert": {
             "description": "keine Validierungsfehler",
-            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "expression": "OperationOutcome.issue.where(severity = 'error')",
+            "operator": "empty",
             "warningOnly": false
           }
         },

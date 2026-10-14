@@ -36,7 +36,8 @@
         {
           "assert": {
             "description": "LA13912-3 (Unable to do) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -49,7 +50,8 @@
         {
           "assert": {
             "description": "LA13921-4 (Without any difficulty) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -62,7 +64,8 @@
         {
           "assert": {
             "description": "LA13920-6 (With some difficulty) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -75,7 +78,8 @@
         {
           "assert": {
             "description": "LA13919-8 (With much difficulty) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -88,7 +92,8 @@
         {
           "assert": {
             "description": "LA6270-8 (Never) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -101,7 +106,8 @@
         {
           "assert": {
             "description": "LA9933-8 (Always) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -114,7 +120,8 @@
         {
           "assert": {
             "description": "LA10082-8 (Sometimes) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -127,7 +134,8 @@
         {
           "assert": {
             "description": "LA10066-1 (Rarely) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -140,7 +148,8 @@
         {
           "assert": {
             "description": "LA6568-5 (Not at all) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -153,7 +162,8 @@
         {
           "assert": {
             "description": "LA13914-9 (Very much) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -166,7 +176,8 @@
         {
           "assert": {
             "description": "LA13909-9 (Somewhat) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -179,7 +190,8 @@
         {
           "assert": {
             "description": "LA13863-8 (A little bit) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -192,7 +204,8 @@
         {
           "assert": {
             "description": "LA13913-1 (Very Good) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         },
@@ -205,7 +218,8 @@
         {
           "assert": {
             "description": "LA9615-1 (Very poor) gültig",
-            "expression": "Parameters.parameter.where(name = 'result').value = true",
+            "expression": "Parameters.parameter.where(name = 'result').valueBoolean",
+            "value": "true",
             "warningOnly": false
           }
         }
