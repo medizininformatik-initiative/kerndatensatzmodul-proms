@@ -63,7 +63,9 @@ jobs:
 
       - name: Run testscript-engine
         run: |
-          gem install testscript_engine --no-document
+          # pry/pry-nav: das 0.0.1-Gem required sie im Binary, deklariert
+          # sie aber nicht als Laufzeit-Abhängigkeit (Packaging-Bug upstream).
+          gem install testscript_engine pry pry-nav --no-document
           testscript_engine execute \
             --testscript_path "$PWD/rundir" \
             --testreport_path "$PWD/reports" \

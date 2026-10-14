@@ -1,6 +1,4 @@
 <!-- markdownlint-disable MD041 -->
-### CapabilityStatements
-
 Die CapabilityStatements des Moduls **PRO** beschreiben die erwarteten Server-/Client-Fähigkeiten (unterstützte Ressourcen und Interaktionen).
 
 Das Modul liefert ein CapabilityStatement:
