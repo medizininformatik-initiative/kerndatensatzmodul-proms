@@ -35,6 +35,18 @@ jobs:
           done
           echo "HAPI nicht erreichbar"; docker logs hapi | tail -40; exit 1
 
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      # fsh-generated/ wird von der CI erst NACH dem Push regeneriert
+      # (Auto-Commit) — dieser Lauf braucht aber den Stand DIESES Commits.
+      # Deshalb baut der Job selbst, statt dem Checkout zu vertrauen.
+      - name: Build FHIR resources from FSH
+        run: |
+          npm install -g fsh-sushi
+          sushi .
+
       - name: Load conformance resources and questionnaire
         run: |
           base=http://localhost:8080/fhir
@@ -51,17 +63,7 @@ jobs:
             case $code in 200|201) ;; *) echo "WARN $code $f";; esac
           done
 
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: "22"
 
-      # fsh-generated/ wird von der CI erst NACH dem Push regeneriert
-      # (Auto-Commit) — dieser Lauf braucht aber den Stand DIESES Commits.
-      # Deshalb baut der Job selbst, statt dem Checkout zu vertrauen.
-      - name: Build FHIR resources from FSH
-        run: |
-          npm install -g fsh-sushi
-          sushi .
 
       - name: Assemble TestScript run directory
         # Verzeichnisnamen sind Teil des Engine-Vertrags: sie entdeckt
