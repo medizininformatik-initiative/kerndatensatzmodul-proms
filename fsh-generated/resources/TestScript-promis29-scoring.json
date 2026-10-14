@@ -1,0 +1,1158 @@
+{
+  "resourceType": "TestScript",
+  "id": "promis29-scoring",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring",
+  "title": "PROMIS-29 Scoring — Validierung und Persistenz",
+  "description": "Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anlegen. Die Fixtures sind die IG-Beispiele promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-rundir.mjs für den CI-Lauf.",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    }
+  ],
+  "metadata": {
+    "capability": [
+      {
+        "required": true,
+        "validated": false,
+        "description": "FHIR R4 Server, PROMIS-29-Questionnaire geladen",
+        "capabilities": "http://hl7.org/fhir/CapabilityStatement/base"
+      }
+    ]
+  },
+  "fixture": [
+    {
+      "id": "qr-physical-function-floor",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-physical-function-floor"
+      }
+    },
+    {
+      "id": "qr-physical-function-ceil",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-physical-function-ceil"
+      }
+    },
+    {
+      "id": "qr-physical-function-asym",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-physical-function-asym"
+      }
+    },
+    {
+      "id": "qr-anxiety-floor",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-anxiety-floor"
+      }
+    },
+    {
+      "id": "qr-anxiety-ceil",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-anxiety-ceil"
+      }
+    },
+    {
+      "id": "qr-anxiety-asym",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-anxiety-asym"
+      }
+    },
+    {
+      "id": "qr-depression-floor",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-depression-floor"
+      }
+    },
+    {
+      "id": "qr-depression-ceil",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-depression-ceil"
+      }
+    },
+    {
+      "id": "qr-depression-asym",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-depression-asym"
+      }
+    },
+    {
+      "id": "qr-fatigue-floor",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-fatigue-floor"
+      }
+    },
+    {
+      "id": "qr-fatigue-ceil",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-fatigue-ceil"
+      }
+    },
+    {
+      "id": "qr-fatigue-asym",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-fatigue-asym"
+      }
+    },
+    {
+      "id": "qr-sleep-floor",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-sleep-floor"
+      }
+    },
+    {
+      "id": "qr-sleep-ceil",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-sleep-ceil"
+      }
+    },
+    {
+      "id": "qr-sleep-asym",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-sleep-asym"
+      }
+    },
+    {
+      "id": "qr-social-floor",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-social-floor"
+      }
+    },
+    {
+      "id": "qr-social-ceil",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-social-ceil"
+      }
+    },
+    {
+      "id": "qr-social-asym",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-social-asym"
+      }
+    },
+    {
+      "id": "qr-pain-interference-floor",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-pain-interference-floor"
+      }
+    },
+    {
+      "id": "qr-pain-interference-ceil",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-pain-interference-ceil"
+      }
+    },
+    {
+      "id": "qr-pain-interference-asym",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-pain-interference-asym"
+      }
+    },
+    {
+      "id": "qr-social-teilantwort-guard",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "QuestionnaireResponse/promis29-social-teilantwort-guard"
+      }
+    }
+  ],
+  "test": [
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-physical-function-floor",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-physical-function-floor",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-physical-function-floor",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-physical-function-ceil",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-physical-function-ceil",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-physical-function-ceil",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-physical-function-asym",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-physical-function-asym",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-physical-function-asym",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-anxiety-floor",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-anxiety-floor",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-anxiety-floor",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-anxiety-ceil",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-anxiety-ceil",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-anxiety-ceil",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-anxiety-asym",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-anxiety-asym",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-anxiety-asym",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-depression-floor",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-depression-floor",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-depression-floor",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-depression-ceil",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-depression-ceil",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-depression-ceil",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-depression-asym",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-depression-asym",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-depression-asym",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-fatigue-floor",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-fatigue-floor",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-fatigue-floor",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-fatigue-ceil",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-fatigue-ceil",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-fatigue-ceil",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-fatigue-asym",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-fatigue-asym",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-fatigue-asym",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-sleep-floor",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-sleep-floor",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-sleep-floor",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-sleep-ceil",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-sleep-ceil",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-sleep-ceil",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-sleep-asym",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-sleep-asym",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-sleep-asym",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-floor",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-floor",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-social-floor",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-ceil",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-ceil",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-social-ceil",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-asym",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-asym",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-social-asym",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-pain-interference-floor",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-pain-interference-floor",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-pain-interference-floor",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-pain-interference-ceil",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-pain-interference-ceil",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-pain-interference-ceil",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-pain-interference-asym",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-pain-interference-asym",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-pain-interference-asym",
+      "description": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+    },
+    {
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "validate",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-teilantwort-guard",
+            "params": "/$validate",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "keine Validierungsfehler",
+            "expression": "OperationOutcome.issue.where(severity = 'error').empty()",
+            "warningOnly": false
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "code": "create",
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+            },
+            "resource": "QuestionnaireResponse",
+            "sourceId": "qr-social-teilantwort-guard",
+            "encodeRequestUrl": true
+          }
+        },
+        {
+          "assert": {
+            "description": "angelegt",
+            "response": "created",
+            "warningOnly": false
+          }
+        }
+      ],
+      "name": "case-social-teilantwort-guard",
+      "description": "Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form"
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "name": "PROMIS29ScoringTestScript",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Medizininformatik Initiative"
+}

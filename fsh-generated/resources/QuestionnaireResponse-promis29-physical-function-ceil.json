@@ -1,0 +1,92 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "promis29-physical-function-ceil",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              }
+            }
+          ],
+          "linkId": "promis-pfa11"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              }
+            }
+          ],
+          "linkId": "promis-pfa21"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              }
+            }
+          ],
+          "linkId": "promis-pfa23"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Without any difficulty"
+              }
+            }
+          ],
+          "linkId": "promis-pfa53"
+        }
+      ],
+      "linkId": "PROMIS-29.PhysicalFunction"
+    },
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueDecimal": 20
+            }
+          ],
+          "linkId": "promis-29-physical-function-raw"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 57
+            }
+          ],
+          "linkId": "promis-29-physical-function-tscore"
+        }
+      ],
+      "linkId": "PROMIS-29.Scores"
+    }
+  ],
+  "language": "en",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.1",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-10-14T08:00:00Z"
+}
