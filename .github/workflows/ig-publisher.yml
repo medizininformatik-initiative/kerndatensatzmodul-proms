@@ -305,6 +305,18 @@ jobs:
           test -s output/index.html
           jq empty output/qa.json
 
+      # PROM-Review-One-Pager (fachlicher Review: Items mit Labels en/de/
+      # parallel, LA-Codes, Gewichte, Score-Definitionen samt offiziellen
+      # Lookup-Tabellen, Szenarien-Soll/Ist via fhirpath.js) — landet in
+      # output/reviews/ und deployt mit jeder Branch-Preview und jeder
+      # formalen Publikation. Reviewer brauchen nur den Link.
+      - name: Build PROM review pages
+        if: ${{ steps.build.outputs.mode == 'full' }}
+        run: |
+          npm ci --prefix scripts --no-audit --no-fund
+          mkdir -p output/reviews
+          node scripts/build-prom-review.mjs output/reviews/promis-29.html
+
       - name: Template-repo self-check DEMO — render the version-comparison report
         # Demonstrates what a version delta looks like and where it lives,
         # using the FHIR validator's compare command (the publisher's own
