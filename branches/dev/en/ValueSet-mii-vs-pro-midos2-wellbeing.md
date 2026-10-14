@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-midos2-wellbeing | *Version*:2027.0.0-ballot.1 |
-| Draft as of 2026-09-11 | *Computable Name*:MII_VS_PRO_MIDOS2_Wellbeing |
+| Draft as of 2026-10-14 | *Computable Name*:MII_VS_PRO_MIDOS2_Wellbeing |
 
  
 4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet. 
@@ -42,7 +42,7 @@
   "title" : "MII VS PRO MIDOS2 Wohlbefinden-Skala",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-11T15:01:16+00:00",
+  "date" : "2026-10-14T08:51:14+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

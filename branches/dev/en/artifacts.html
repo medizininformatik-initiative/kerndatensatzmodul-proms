@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"20"}
-    h3,h4,h5,h6{--heading-prefix:"20.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"21"}
+    h3,h4,h5,h6{--heading-prefix:"21.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -333,10 +333,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#9">Terminology: Concept Maps</a>
       </li>
       <li>
-         <a href="#10">Example: Example Instances</a>
+         <a href="#10">Testing Artifacts: TestScripts</a>
       </li>
       <li>
-         <a href="#11">Other</a>
+         <a href="#11">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#12">Other</a>
       </li>
    </ul>
 </div>
@@ -1677,6 +1680,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="10"> </a>
+   <h3>Testing Artifacts: TestScripts </h3>
+    <p>These test definitions are available to FHIR test engines to verify systems are conforming to this implementation guide</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="TestScript-promis29-terminology.html"
+                  title="TestScript/promis29-terminology">
+                  <span title="TestScript/promis29-terminology">PROMIS-29 Scoring — Terminologie der Antwortoptionen
+</span>
+               </a>
+            </td>
+            <td>
+<p>Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="TestScript-promis29-scoring.html"
+                  title="TestScript/promis29-scoring">
+                  <span title="TestScript/promis29-scoring">PROMIS-29 Scoring — Validierung und Persistenz
+</span>
+               </a>
+            </td>
+            <td>
+<p>Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anlegen. Die Fixtures sind die IG-Beispiele promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-rundir.mjs für den CI-Lauf.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="11"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -2320,6 +2355,270 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-anxiety-asym.html"
+                  title="QuestionnaireResponse/promis29-anxiety-asym">
+                  <span title="QuestionnaireResponse/promis29-anxiety-asym">PROMIS-29 Scoring-Fixture — anxiety-asym
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-anxiety-ceil.html"
+                  title="QuestionnaireResponse/promis29-anxiety-ceil">
+                  <span title="QuestionnaireResponse/promis29-anxiety-ceil">PROMIS-29 Scoring-Fixture — anxiety-ceil
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-anxiety-floor.html"
+                  title="QuestionnaireResponse/promis29-anxiety-floor">
+                  <span title="QuestionnaireResponse/promis29-anxiety-floor">PROMIS-29 Scoring-Fixture — anxiety-floor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-depression-asym.html"
+                  title="QuestionnaireResponse/promis29-depression-asym">
+                  <span title="QuestionnaireResponse/promis29-depression-asym">PROMIS-29 Scoring-Fixture — depression-asym
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-depression-ceil.html"
+                  title="QuestionnaireResponse/promis29-depression-ceil">
+                  <span title="QuestionnaireResponse/promis29-depression-ceil">PROMIS-29 Scoring-Fixture — depression-ceil
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-depression-floor.html"
+                  title="QuestionnaireResponse/promis29-depression-floor">
+                  <span title="QuestionnaireResponse/promis29-depression-floor">PROMIS-29 Scoring-Fixture — depression-floor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-fatigue-asym.html"
+                  title="QuestionnaireResponse/promis29-fatigue-asym">
+                  <span title="QuestionnaireResponse/promis29-fatigue-asym">PROMIS-29 Scoring-Fixture — fatigue-asym
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-fatigue-ceil.html"
+                  title="QuestionnaireResponse/promis29-fatigue-ceil">
+                  <span title="QuestionnaireResponse/promis29-fatigue-ceil">PROMIS-29 Scoring-Fixture — fatigue-ceil
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-fatigue-floor.html"
+                  title="QuestionnaireResponse/promis29-fatigue-floor">
+                  <span title="QuestionnaireResponse/promis29-fatigue-floor">PROMIS-29 Scoring-Fixture — fatigue-floor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-pain-interference-asym.html"
+                  title="QuestionnaireResponse/promis29-pain-interference-asym">
+                  <span title="QuestionnaireResponse/promis29-pain-interference-asym">PROMIS-29 Scoring-Fixture — pain-interference-asym
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-pain-interference-ceil.html"
+                  title="QuestionnaireResponse/promis29-pain-interference-ceil">
+                  <span title="QuestionnaireResponse/promis29-pain-interference-ceil">PROMIS-29 Scoring-Fixture — pain-interference-ceil
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-pain-interference-floor.html"
+                  title="QuestionnaireResponse/promis29-pain-interference-floor">
+                  <span title="QuestionnaireResponse/promis29-pain-interference-floor">PROMIS-29 Scoring-Fixture — pain-interference-floor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-physical-function-asym.html"
+                  title="QuestionnaireResponse/promis29-physical-function-asym">
+                  <span title="QuestionnaireResponse/promis29-physical-function-asym">PROMIS-29 Scoring-Fixture — physical-function-asym
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-physical-function-ceil.html"
+                  title="QuestionnaireResponse/promis29-physical-function-ceil">
+                  <span title="QuestionnaireResponse/promis29-physical-function-ceil">PROMIS-29 Scoring-Fixture — physical-function-ceil
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-physical-function-floor.html"
+                  title="QuestionnaireResponse/promis29-physical-function-floor">
+                  <span title="QuestionnaireResponse/promis29-physical-function-floor">PROMIS-29 Scoring-Fixture — physical-function-floor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-sleep-asym.html"
+                  title="QuestionnaireResponse/promis29-sleep-asym">
+                  <span title="QuestionnaireResponse/promis29-sleep-asym">PROMIS-29 Scoring-Fixture — sleep-asym
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-sleep-ceil.html"
+                  title="QuestionnaireResponse/promis29-sleep-ceil">
+                  <span title="QuestionnaireResponse/promis29-sleep-ceil">PROMIS-29 Scoring-Fixture — sleep-ceil
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-sleep-floor.html"
+                  title="QuestionnaireResponse/promis29-sleep-floor">
+                  <span title="QuestionnaireResponse/promis29-sleep-floor">PROMIS-29 Scoring-Fixture — sleep-floor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-social-asym.html"
+                  title="QuestionnaireResponse/promis29-social-asym">
+                  <span title="QuestionnaireResponse/promis29-social-asym">PROMIS-29 Scoring-Fixture — social-asym
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-social-ceil.html"
+                  title="QuestionnaireResponse/promis29-social-ceil">
+                  <span title="QuestionnaireResponse/promis29-social-ceil">PROMIS-29 Scoring-Fixture — social-ceil
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-social-floor.html"
+                  title="QuestionnaireResponse/promis29-social-floor">
+                  <span title="QuestionnaireResponse/promis29-social-floor">PROMIS-29 Scoring-Fixture — social-floor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-promis29-social-teilantwort-guard.html"
+                  title="QuestionnaireResponse/promis29-social-teilantwort-guard">
+                  <span title="QuestionnaireResponse/promis29-social-teilantwort-guard">PROMIS-29 Scoring-Fixture — social-teilantwort-guard
+</span>
+               </a>
+            </td>
+            <td>
+<p>Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="QuestionnaireResponse-mii-exa-pro-scoff-response.html"
                   title="QuestionnaireResponse/mii-exa-pro-scoff-response">
                   <span title="QuestionnaireResponse/mii-exa-pro-scoff-response">SCOFF Questionnaire Response Example
@@ -2404,7 +2703,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="11"> </a>
+   <a name="12"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -3012,7 +3311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Sep 11, 2026 15:01+0000">2026-09-11</span>
+          Generated <span title="Wed, Oct 14, 2026 08:51+0000">2026-10-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

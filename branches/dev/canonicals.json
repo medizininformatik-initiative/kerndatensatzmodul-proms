@@ -530,6 +530,20 @@
   "name" : "MII_PR_PRO_Score_Instance"
 },
 {
+  "id" : "promis29-scoring",
+  "type" : "TestScript",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring",
+  "version" : "2027.0.0-ballot.1",
+  "name" : "PROMIS29ScoringTestScript"
+},
+{
+  "id" : "promis29-terminology",
+  "type" : "TestScript",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-terminology",
+  "version" : "2027.0.0-ballot.1",
+  "name" : "PROMIS29TerminologyTestScript"
+},
+{
   "id" : "mii-vs-pro-bdi-bdi2-long",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29 | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-11 | *Computable Name*: |
+| Active as of 2026-10-14 | *Computable Name*: |
 | **Usage**: PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis), PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland), PROMIS-29 Profile Documentation (https://www.healthmeasures.net/explore-measurement-systems/promis) | |
 | **Copyright/Legal**: The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragenLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/ | |
 
@@ -130,7 +130,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PROMIS-29 (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T15:01:16+00:00",
+  "date" : "2026-10-14T08:51:14+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -2912,7 +2912,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "answerOption" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
+          "valueDecimal" : 5
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
@@ -2936,7 +2936,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 2
+          "valueDecimal" : 4
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
@@ -2984,7 +2984,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 4
+          "valueDecimal" : 2
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
@@ -3008,7 +3008,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 5
+          "valueDecimal" : 1
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
@@ -4018,10 +4018,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "iif(%physicalFunctionRaw=4, 24.5, iif(%physicalFunctionRaw=5, 28.0, iif(%physicalFunctionRaw=6, 30.6, iif(%physicalFunctionRaw=7, 32.8, iif(%physicalFunctionRaw=8, 34.7, iif(%physicalFunctionRaw=9, 36.5, iif(%physicalFunctionRaw=10, 38.1, iif(%physicalFunctionRaw=11, 39.7, iif(%physicalFunctionRaw=12, 41.2, iif(%physicalFunctionRaw=13, 42.6, iif(%physicalFunctionRaw=14, 44.0, iif(%physicalFunctionRaw=15, 45.4, iif(%physicalFunctionRaw=16, 46.8, iif(%physicalFunctionRaw=17, 48.2, iif(%physicalFunctionRaw=18, 49.6, iif(%physicalFunctionRaw=19, 51.1, iif(%physicalFunctionRaw=20, 52.6, {})))))))))))))))))"
+          "expression" : "iif(%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.count() = 4, iif(%physicalFunctionRaw=4, 22.5, iif(%physicalFunctionRaw=5, 26.6, iif(%physicalFunctionRaw=6, 28.9, iif(%physicalFunctionRaw=7, 30.5, iif(%physicalFunctionRaw=8, 31.9, iif(%physicalFunctionRaw=9, 33.2, iif(%physicalFunctionRaw=10, 34.4, iif(%physicalFunctionRaw=11, 35.6, iif(%physicalFunctionRaw=12, 36.7, iif(%physicalFunctionRaw=13, 37.9, iif(%physicalFunctionRaw=14, 39.2, iif(%physicalFunctionRaw=15, 40.5, iif(%physicalFunctionRaw=16, 41.9, iif(%physicalFunctionRaw=17, 43.5, iif(%physicalFunctionRaw=18, 45.5, iif(%physicalFunctionRaw=19, 48.3, iif(%physicalFunctionRaw=20, 57.0, {}))))))))))))))))), {})"
         }
       },
       {
@@ -4070,10 +4078,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "iif(%anxietyRaw=4, 38.2, iif(%anxietyRaw=5, 44.7, iif(%anxietyRaw=6, 48.8, iif(%anxietyRaw=7, 51.9, iif(%anxietyRaw=8, 54.5, iif(%anxietyRaw=9, 56.8, iif(%anxietyRaw=10, 58.9, iif(%anxietyRaw=11, 60.9, iif(%anxietyRaw=12, 62.8, iif(%anxietyRaw=13, 64.7, iif(%anxietyRaw=14, 66.6, iif(%anxietyRaw=15, 68.6, iif(%anxietyRaw=16, 70.7, iif(%anxietyRaw=17, 72.9, iif(%anxietyRaw=18, 75.4, iif(%anxietyRaw=19, 78.5, iif(%anxietyRaw=20, 83.1, {})))))))))))))))))"
+          "expression" : "iif(%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.count() = 4, iif(%anxietyRaw=4, 40.3, iif(%anxietyRaw=5, 48.0, iif(%anxietyRaw=6, 51.2, iif(%anxietyRaw=7, 53.7, iif(%anxietyRaw=8, 55.8, iif(%anxietyRaw=9, 57.7, iif(%anxietyRaw=10, 59.5, iif(%anxietyRaw=11, 61.4, iif(%anxietyRaw=12, 63.4, iif(%anxietyRaw=13, 65.3, iif(%anxietyRaw=14, 67.3, iif(%anxietyRaw=15, 69.3, iif(%anxietyRaw=16, 71.2, iif(%anxietyRaw=17, 73.3, iif(%anxietyRaw=18, 75.4, iif(%anxietyRaw=19, 77.9, iif(%anxietyRaw=20, 81.6, {}))))))))))))))))), {})"
         }
       },
       {
@@ -4122,10 +4138,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "iif(%depressionRaw=4, 41.0, iif(%depressionRaw=5, 49.0, iif(%depressionRaw=6, 51.8, iif(%depressionRaw=7, 53.9, iif(%depressionRaw=8, 55.7, iif(%depressionRaw=9, 57.3, iif(%depressionRaw=10, 58.9, iif(%depressionRaw=11, 60.5, iif(%depressionRaw=12, 62.2, iif(%depressionRaw=13, 63.9, iif(%depressionRaw=14, 65.7, iif(%depressionRaw=15, 67.5, iif(%depressionRaw=16, 69.4, iif(%depressionRaw=17, 71.2, iif(%depressionRaw=18, 73.3, iif(%depressionRaw=19, 75.7, iif(%depressionRaw=20, 79.4, {})))))))))))))))))"
+          "expression" : "iif(%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.count() = 4, iif(%depressionRaw=4, 41.0, iif(%depressionRaw=5, 49.0, iif(%depressionRaw=6, 51.8, iif(%depressionRaw=7, 53.9, iif(%depressionRaw=8, 55.7, iif(%depressionRaw=9, 57.3, iif(%depressionRaw=10, 58.9, iif(%depressionRaw=11, 60.5, iif(%depressionRaw=12, 62.2, iif(%depressionRaw=13, 63.9, iif(%depressionRaw=14, 65.7, iif(%depressionRaw=15, 67.5, iif(%depressionRaw=16, 69.4, iif(%depressionRaw=17, 71.2, iif(%depressionRaw=18, 73.3, iif(%depressionRaw=19, 75.7, iif(%depressionRaw=20, 79.4, {}))))))))))))))))), {})"
         }
       },
       {
@@ -4174,10 +4198,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "iif(%fatigueRaw=4, 33.7, iif(%fatigueRaw=5, 40.3, iif(%fatigueRaw=6, 44.4, iif(%fatigueRaw=7, 47.6, iif(%fatigueRaw=8, 50.2, iif(%fatigueRaw=9, 52.5, iif(%fatigueRaw=10, 54.7, iif(%fatigueRaw=11, 56.8, iif(%fatigueRaw=12, 58.8, iif(%fatigueRaw=13, 60.8, iif(%fatigueRaw=14, 62.8, iif(%fatigueRaw=15, 64.9, iif(%fatigueRaw=16, 67.1, iif(%fatigueRaw=17, 69.4, iif(%fatigueRaw=18, 72.0, iif(%fatigueRaw=19, 75.0, iif(%fatigueRaw=20, 78.8, {})))))))))))))))))"
+          "expression" : "iif(%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.count() = 4, iif(%fatigueRaw=4, 33.7, iif(%fatigueRaw=5, 39.7, iif(%fatigueRaw=6, 43.1, iif(%fatigueRaw=7, 46.0, iif(%fatigueRaw=8, 48.6, iif(%fatigueRaw=9, 51.0, iif(%fatigueRaw=10, 53.1, iif(%fatigueRaw=11, 55.1, iif(%fatigueRaw=12, 57.0, iif(%fatigueRaw=13, 58.8, iif(%fatigueRaw=14, 60.7, iif(%fatigueRaw=15, 62.7, iif(%fatigueRaw=16, 64.6, iif(%fatigueRaw=17, 66.7, iif(%fatigueRaw=18, 69.0, iif(%fatigueRaw=19, 71.6, iif(%fatigueRaw=20, 75.8, {}))))))))))))))))), {})"
         }
       },
       {
@@ -4226,10 +4258,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "iif(%sleepRaw=4, 28.0, iif(%sleepRaw=5, 36.0, iif(%sleepRaw=6, 40.6, iif(%sleepRaw=7, 44.0, iif(%sleepRaw=8, 46.8, iif(%sleepRaw=9, 49.3, iif(%sleepRaw=10, 51.5, iif(%sleepRaw=11, 53.6, iif(%sleepRaw=12, 55.6, iif(%sleepRaw=13, 57.5, iif(%sleepRaw=14, 59.4, iif(%sleepRaw=15, 61.3, iif(%sleepRaw=16, 63.3, iif(%sleepRaw=17, 65.4, iif(%sleepRaw=18, 67.7, iif(%sleepRaw=19, 70.4, iif(%sleepRaw=20, 73.9, {})))))))))))))))))"
+          "expression" : "iif(%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.count() = 4, iif(%sleepRaw=4, 32.0, iif(%sleepRaw=5, 37.5, iif(%sleepRaw=6, 41.1, iif(%sleepRaw=7, 43.8, iif(%sleepRaw=8, 46.2, iif(%sleepRaw=9, 48.4, iif(%sleepRaw=10, 50.5, iif(%sleepRaw=11, 52.4, iif(%sleepRaw=12, 54.3, iif(%sleepRaw=13, 56.1, iif(%sleepRaw=14, 57.9, iif(%sleepRaw=15, 59.8, iif(%sleepRaw=16, 61.7, iif(%sleepRaw=17, 63.8, iif(%sleepRaw=18, 66.0, iif(%sleepRaw=19, 68.8, iif(%sleepRaw=20, 73.3, {}))))))))))))))))), {})"
         }
       },
       {
@@ -4278,10 +4318,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "iif(%socialRaw=4, 24.5, iif(%socialRaw=5, 28.0, iif(%socialRaw=6, 30.6, iif(%socialRaw=7, 32.8, iif(%socialRaw=8, 34.7, iif(%socialRaw=9, 36.5, iif(%socialRaw=10, 38.1, iif(%socialRaw=11, 39.7, iif(%socialRaw=12, 41.2, iif(%socialRaw=13, 42.6, iif(%socialRaw=14, 44.0, iif(%socialRaw=15, 45.4, iif(%socialRaw=16, 46.8, iif(%socialRaw=17, 48.2, iif(%socialRaw=18, 49.6, iif(%socialRaw=19, 51.1, iif(%socialRaw=20, 52.6, {})))))))))))))))))"
+          "expression" : "iif(%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.count() = 4, iif(%socialRaw=4, 27.5, iif(%socialRaw=5, 31.8, iif(%socialRaw=6, 34.0, iif(%socialRaw=7, 35.7, iif(%socialRaw=8, 37.3, iif(%socialRaw=9, 38.8, iif(%socialRaw=10, 40.5, iif(%socialRaw=11, 42.3, iif(%socialRaw=12, 44.2, iif(%socialRaw=13, 46.2, iif(%socialRaw=14, 48.1, iif(%socialRaw=15, 50.0, iif(%socialRaw=16, 51.9, iif(%socialRaw=17, 53.7, iif(%socialRaw=18, 55.8, iif(%socialRaw=19, 58.3, iif(%socialRaw=20, 64.2, {}))))))))))))))))), {})"
         }
       },
       {
@@ -4330,10 +4378,18 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "iif(%painInterferenceRaw=4, 38.2, iif(%painInterferenceRaw=5, 44.7, iif(%painInterferenceRaw=6, 48.8, iif(%painInterferenceRaw=7, 51.9, iif(%painInterferenceRaw=8, 54.5, iif(%painInterferenceRaw=9, 56.8, iif(%painInterferenceRaw=10, 58.9, iif(%painInterferenceRaw=11, 60.9, iif(%painInterferenceRaw=12, 62.8, iif(%painInterferenceRaw=13, 64.7, iif(%painInterferenceRaw=14, 66.6, iif(%painInterferenceRaw=15, 68.6, iif(%painInterferenceRaw=16, 70.7, iif(%painInterferenceRaw=17, 72.9, iif(%painInterferenceRaw=18, 75.4, iif(%painInterferenceRaw=19, 78.5, iif(%painInterferenceRaw=20, 83.1, {})))))))))))))))))"
+          "expression" : "iif(%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.count() = 4, iif(%painInterferenceRaw=4, 41.6, iif(%painInterferenceRaw=5, 49.6, iif(%painInterferenceRaw=6, 52.0, iif(%painInterferenceRaw=7, 53.9, iif(%painInterferenceRaw=8, 55.6, iif(%painInterferenceRaw=9, 57.1, iif(%painInterferenceRaw=10, 58.5, iif(%painInterferenceRaw=11, 59.9, iif(%painInterferenceRaw=12, 61.2, iif(%painInterferenceRaw=13, 62.5, iif(%painInterferenceRaw=14, 63.8, iif(%painInterferenceRaw=15, 65.2, iif(%painInterferenceRaw=16, 66.6, iif(%painInterferenceRaw=17, 68.0, iif(%painInterferenceRaw=18, 69.7, iif(%painInterferenceRaw=19, 71.6, iif(%painInterferenceRaw=20, 75.6, {}))))))))))))))))), {})"
         }
       },
       {

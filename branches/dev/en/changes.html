@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15"}
-    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -311,6 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#unreleased-dev" id="markdown-toc-unreleased-dev">Unreleased (dev)</a></li>
   <li><a href="#202700-ballot1--manifest-hotfix" id="markdown-toc-202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — manifest hotfix</a></li>
   <li><a href="#202700-ballot" id="markdown-toc-202700-ballot">2027.0.0-ballot</a></li>
   <li><a href="#202700-ballotrc5" id="markdown-toc-202700-ballotrc5">2027.0.0-ballot.rc5</a></li>
@@ -334,6 +335,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      it during the template migration (it had frozen at 2026.2.0). -->
 
 <p>This page documents the changes between versions of the MII PRO module.</p>
+
+<h3 id="unreleased-dev">Unreleased (dev)</h3>
+
+<p><strong>PROMIS-29 scoring corrected</strong> (HDB-1007/-1009): the answer weights of <code class="language-plaintext highlighter-rouge">promis-srpper23-caps</code> flipped to the official polarity (Never=5…Always=1); the T-score conversion tables of all seven domains are now <strong>generated</strong> from the official scoring-manual appendix (six were wrong before, two domain pairs identical); T-scores are only computed for a fully answered short form (count guard). The fourth answer option of the social items (Usually/Often, HDB-1008) stays open until reconciled with the official German wording.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">questionnaire-unit</code> added to the T-score items</strong> (UCUM <code class="language-plaintext highlighter-rouge">{score}</code>, matching the raw items): without a unit, SDC observation extraction fails because <code class="language-plaintext highlighter-rouge">Observation.value[x]</code> has no decimal type; with the unit, the profile-conformant <code class="language-plaintext highlighter-rouge">valueQuantity</code> is produced.</p>
+
+<p><strong>Executable scoring test suite</strong>: 22 scenarios as a single source for four layers — definition checks, form-filler tests (fhirpath.js), conformant fixture QuestionnaireResponses plus two TestScripts as IG artefacts (see the “Scoring Tests” page), and a CI workflow executing the TestScripts against a real HAPI via fhir-crucible/testscript-engine, rendering the TestReports into the job summary, a PR comment and an HTML artifact.</p>
 
 <h3 id="202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — manifest hotfix</h3>
 
@@ -741,7 +750,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Sep 11, 2026 15:01+0000">2026-09-11</span>
+          Generated <span title="Wed, Oct 14, 2026 08:51+0000">2026-10-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

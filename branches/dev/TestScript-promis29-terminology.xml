@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestScript xmlns="http://hl7.org/fhir">
+  <id value="promis29-terminology"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: TestScript promis29-terminology</b></p><a name="promis29-terminology"> </a><a name="hcpromis29-terminology"> </a><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-natural">Version Algorithm: natural</a> (Natural)</p><p><b>url</b>: <a href="TestScript-promis29-terminology.html">TestScript PROMIS-29 Scoring — Terminologie der Antwortoptionen</a></p><p><b>version</b>: 2027.0.0-ballot.1</p><p><b>name</b>: PROMIS29TerminologyTestScript</p><p><b>title</b>: PROMIS-29 Scoring — Terminologie der Antwortoptionen</p><p><b>status</b>: Draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2026-10-14 08:51:14+0000</p><p><b>publisher</b>: Medizininformatik-Initiative</p><p><b>contact</b>: Medizininformatik-Initiative: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a>,<a href="mailto:office@medizininformatik-initiative.de">office@medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008).</p>
+</div><p><b>jurisdiction</b>: <span title="Codes:{urn:iso:std:iso:3166 DE}">Germany</span></p><blockquote><p><b>metadata</b></p><h3>Capabilities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Required</b></td><td><b>Validated</b></td><td><b>Description</b></td><td><b>Capabilities</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>false</td><td>FHIR R4 Terminologieserver mit LOINC</td><td><a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&amp;canonical=http://hl7.org/fhir/CapabilityStatement/base">http://hl7.org/fhir/CapabilityStatement/base</a></td></tr></table></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: terminology-displays</p><p><b>description</b>: Antwort-Codings (Code+Display) gegen LOINC</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13912-3&amp;display=Unable to do</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13912-3 (Unable to do) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13921-4&amp;display=Without any difficulty</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13921-4 (Without any difficulty) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13920-6&amp;display=With some difficulty</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13920-6 (With some difficulty) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13919-8&amp;display=With much difficulty</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13919-8 (With much difficulty) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6270-8&amp;display=Never</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA6270-8 (Never) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9933-8&amp;display=Always</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA9933-8 (Always) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10082-8&amp;display=Sometimes</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA10082-8 (Sometimes) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10066-1&amp;display=Rarely</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA10066-1 (Rarely) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6568-5&amp;display=Not at all</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA6568-5 (Not at all) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13914-9&amp;display=Very much</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13914-9 (Very much) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13909-9&amp;display=Somewhat</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13909-9 (Somewhat) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13863-8&amp;display=A little bit</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13863-8 (A little bit) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13913-1&amp;display=Very Good</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13913-1 (Very Good) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9615-1&amp;display=Very poor</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA9615-1 (Very poor) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote></blockquote></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: TestScript promis29-terminology</b></p><a name="de-promis29-terminology"> </a><a name="de-hcpromis29-terminology"> </a><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-natural">Version Algorithm: natural</a> (Natural)</p><p><b>url</b>: <a href="TestScript-promis29-terminology.html">TestScript PROMIS-29 Scoring — Terminologie der Antwortoptionen</a></p><p><b>version</b>: 2027.0.0-ballot.1</p><p><b>name</b>: PROMIS29TerminologyTestScript</p><p><b>title</b>: PROMIS-29 Scoring — Terminologie der Antwortoptionen</p><p><b>status</b>: Draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2026-10-14 08:51:14+0000</p><p><b>publisher</b>: Medizininformatik-Initiative</p><p><b>contact</b>: Medizininformatik-Initiative: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a>,<a href="mailto:office@medizininformatik-initiative.de">office@medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008).</p>
+</div><p><b>jurisdiction</b>: <span title="Codes:{urn:iso:std:iso:3166 DE}">Germany</span></p><blockquote><p><b>metadata</b></p><h3>Capabilities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Required</b></td><td><b>Validated</b></td><td><b>Description</b></td><td><b>Capabilities</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>false</td><td>FHIR R4 Terminologieserver mit LOINC</td><td><a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&amp;canonical=http://hl7.org/fhir/CapabilityStatement/base">http://hl7.org/fhir/CapabilityStatement/base</a></td></tr></table></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: terminology-displays</p><p><b>description</b>: Antwort-Codings (Code+Display) gegen LOINC</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13912-3&amp;display=Unable to do</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13912-3 (Unable to do) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13921-4&amp;display=Without any difficulty</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13921-4 (Without any difficulty) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13920-6&amp;display=With some difficulty</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13920-6 (With some difficulty) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13919-8&amp;display=With much difficulty</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13919-8 (With much difficulty) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6270-8&amp;display=Never</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA6270-8 (Never) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9933-8&amp;display=Always</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA9933-8 (Always) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10082-8&amp;display=Sometimes</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA10082-8 (Sometimes) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10066-1&amp;display=Rarely</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA10066-1 (Rarely) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6568-5&amp;display=Not at all</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA6568-5 (Not at all) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13914-9&amp;display=Very much</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13914-9 (Very much) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13909-9&amp;display=Somewhat</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13909-9 (Somewhat) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13863-8&amp;display=A little bit</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13863-8 (A little bit) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13913-1&amp;display=Very Good</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA13913-1 (Very Good) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EncodeRequestUrl</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9615-1&amp;display=Very poor</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>WarningOnly</b></td></tr><tr><td style="display: none">*</td><td>LA9615-1 (Very poor) gültig</td><td>Parameters.parameter.where(name = 'result').valueBoolean</td><td>true</td><td>false</td></tr></table></blockquote></blockquote></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="natural"/>
+      <display value="Natural"/>
+    </valueCoding>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-terminology"/>
+  <version value="2027.0.0-ballot.1"/>
+  <name value="PROMIS29TerminologyTestScript"/>
+  <title value="PROMIS-29 Scoring — Terminologie der Antwortoptionen"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-14T08:51:14+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <metadata>
+    <capability>
+      <required value="true"/>
+      <validated value="false"/>
+      <description value="FHIR R4 Terminologieserver mit LOINC"/>
+      <capabilities value="http://hl7.org/fhir/CapabilityStatement/base"/>
+    </capability>
+  </metadata>
+  <test>
+    <name value="terminology-displays"/>
+    <description value="Antwort-Codings (Code+Display) gegen LOINC"/>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13912-3&amp;display=Unable to do"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13912-3 (Unable to do) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13921-4&amp;display=Without any difficulty"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13921-4 (Without any difficulty) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13920-6&amp;display=With some difficulty"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13920-6 (With some difficulty) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13919-8&amp;display=With much difficulty"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13919-8 (With much difficulty) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6270-8&amp;display=Never"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA6270-8 (Never) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9933-8&amp;display=Always"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA9933-8 (Always) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10082-8&amp;display=Sometimes"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA10082-8 (Sometimes) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10066-1&amp;display=Rarely"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA10066-1 (Rarely) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6568-5&amp;display=Not at all"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA6568-5 (Not at all) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13914-9&amp;display=Very much"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13914-9 (Very much) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13909-9&amp;display=Somewhat"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13909-9 (Somewhat) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13863-8&amp;display=A little bit"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13863-8 (A little bit) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13913-1&amp;display=Very Good"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13913-1 (Very Good) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9615-1&amp;display=Very poor"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA9615-1 (Very poor) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean"/>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+  </test>
+</TestScript>

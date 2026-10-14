@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-11 | *Computable Name*: |
+| Active as of 2026-10-14 | *Computable Name*: |
 | **Usage**: PROMIS Depression Scoring Manual (https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manuals_/PROMIS_Depression_Scoring_Manual.pdf) | |
 
  
@@ -81,7 +81,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T15:01:16+00:00",
+  "date" : "2026-10-14T08:51:14+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

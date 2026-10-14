@@ -7,6 +7,14 @@
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+### Unveröffentlicht (dev)
+
+**PROMIS-29-Scoring korrigiert** (HDB-1007/-1009): Antwortgewichte von `promis-srpper23-caps` auf die offizielle Polung gedreht (Nie=5…Immer=1); die T-Score-Konversionstabellen aller sieben Domänen werden jetzt aus dem offiziellen Scoring-Manual-Appendix **generiert** (zuvor waren sechs falsch, zwei Domänenpaare identisch); T-Scores entstehen nur noch bei vollständig beantworteter Short Form (Count-Guard). Die vierte Antwortoption der Social-Items (Usually/Often, HDB-1008) bleibt bis zum Abgleich mit dem deutschen Originalwortlaut offen.
+
+**`questionnaire-unit` auf den T-Score-Items** ergänzt (UCUM `{score}`, wie bei den Raw-Items): Ohne Unit scheitert die SDC-Observation-Extraction, weil `Observation.value[x]` kein decimal kennt; mit Unit entsteht die profilkonforme `valueQuantity`.
+
+**Ausführbare Scoring-Testsuite**: 22 Szenarien als eine Quelle für vier Schichten — Definitions-Checks, Form-Filler-Tests (fhirpath.js), profilkonforme Fixture-QuestionnaireResponses samt zweier TestScripts als IG-Artefakte (siehe Seite „Scoring Tests“) und ein CI-Workflow, der die TestScripts per fhir-crucible/testscript-engine gegen einen echten HAPI ausführt und die TestReports als Job-Summary, PR-Kommentar und HTML-Artifact rendert.
+
 ### 2027.0.0-ballot.1 — Manifest-Hotfix
 
 Inhaltlich identisch zu 2027.0.0-ballot. Behebt das **Package-Manifest**: Die npm-artigen `dependencies` des verteilten Packages deklarierten noch die Pins von vor dem Upgrade (meta 2026.0.x, SDC 3.0.0, ISiK 5.1.1), sodass `fhir install` veraltete Transitive auflöste. Das Manifest spiegelt jetzt `sushi-config.yaml` (meta **2027.0.0-ballot** final, SDC 4.0.0, ISiK 6.0.0), der meta-Pin wurde von ballot.rc3 auf das Ballot-Final gehoben, und Manifest-/Config-Drift ist ab jetzt harte Release-Prüfung. Das formal publizierte `package.tgz` dieser Seite war stets korrekt — der Defekt betraf nur den Package-Registry-Kanal.

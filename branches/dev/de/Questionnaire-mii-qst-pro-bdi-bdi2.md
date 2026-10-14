@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2 | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-10-14 | *Maschinenlesbarer Name*: |
 
  
 MII QST PRO Beck Depression Inventory II (BDI-II) Questionnaire 
@@ -84,7 +84,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T15:01:16+00:00",
+  "date" : "2026-10-14T08:51:14+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
