@@ -130,7 +130,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO PROMIS-29 (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-14T07:28:35+00:00",
+  "date" : "2026-10-14T07:51:24+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -4018,6 +4018,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
@@ -4070,6 +4078,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
@@ -4122,6 +4138,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
@@ -4174,6 +4198,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
@@ -4226,6 +4258,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
@@ -4278,6 +4318,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
@@ -4330,6 +4378,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+        "valueCoding" : {
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{score}",
+          "display" : "{score}"
+        }
+      },
+      {
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",

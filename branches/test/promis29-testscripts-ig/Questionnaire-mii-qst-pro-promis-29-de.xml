@@ -208,7 +208,7 @@
   <derivedFrom value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-10-14T07:28:35+00:00"/>
+  <date value="2026-10-14T07:51:24+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -3373,6 +3373,13 @@
       <readOnly value="true"/>
     </item>
     <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+          <display value="{score}"/>
+        </valueCoding>
+      </extension>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
         <valueExpression>
           <language value="text/fhirpath"/>
@@ -3420,6 +3427,13 @@
       <readOnly value="true"/>
     </item>
     <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+          <display value="{score}"/>
+        </valueCoding>
+      </extension>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
         <valueExpression>
           <language value="text/fhirpath"/>
@@ -3467,6 +3481,13 @@
       <readOnly value="true"/>
     </item>
     <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+          <display value="{score}"/>
+        </valueCoding>
+      </extension>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
         <valueExpression>
           <language value="text/fhirpath"/>
@@ -3514,6 +3535,13 @@
       <readOnly value="true"/>
     </item>
     <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+          <display value="{score}"/>
+        </valueCoding>
+      </extension>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
         <valueExpression>
           <language value="text/fhirpath"/>
@@ -3561,6 +3589,13 @@
       <readOnly value="true"/>
     </item>
     <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+          <display value="{score}"/>
+        </valueCoding>
+      </extension>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
         <valueExpression>
           <language value="text/fhirpath"/>
@@ -3608,6 +3643,13 @@
       <readOnly value="true"/>
     </item>
     <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+          <display value="{score}"/>
+        </valueCoding>
+      </extension>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
         <valueExpression>
           <language value="text/fhirpath"/>
@@ -3655,6 +3697,13 @@
       <readOnly value="true"/>
     </item>
     <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+          <display value="{score}"/>
+        </valueCoding>
+      </extension>
       <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
         <valueExpression>
           <language value="text/fhirpath"/>

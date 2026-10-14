@@ -7,6 +7,14 @@
 
 This page documents the changes between versions of the MII PRO module.
 
+### Unreleased (dev)
+
+**PROMIS-29 scoring corrected** (HDB-1007/-1009): the answer weights of `promis-srpper23-caps` flipped to the official polarity (Never=5…Always=1); the T-score conversion tables of all seven domains are now **generated** from the official scoring-manual appendix (six were wrong before, two domain pairs identical); T-scores are only computed for a fully answered short form (count guard). The fourth answer option of the social items (Usually/Often, HDB-1008) stays open until reconciled with the official German wording.
+
+**`questionnaire-unit` added to the T-score items** (UCUM `{score}`, matching the raw items): without a unit, SDC observation extraction fails because `Observation.value[x]` has no decimal type; with the unit, the profile-conformant `valueQuantity` is produced.
+
+**Executable scoring test suite**: 22 scenarios as a single source for four layers — definition checks, form-filler tests (fhirpath.js), conformant fixture QuestionnaireResponses plus two TestScripts as IG artefacts (see the “Scoring Tests” page), and a CI workflow executing the TestScripts against a real HAPI via fhir-crucible/testscript-engine, rendering the TestReports into the job summary, a PR comment and an HTML artifact.
+
 ### 2027.0.0-ballot.1 — manifest hotfix
 
 Content-identical to 2027.0.0-ballot. Fixes the **package manifest**: the npm-style `dependencies` of the distributed package still declared the pre-upgrade pins (meta 2026.0.x, SDC 3.0.0, ISiK 5.1.1), so `fhir install` resolved outdated transitive packages. The manifest now mirrors `sushi-config.yaml` (meta **2027.0.0-ballot** final, SDC 4.0.0, ISiK 6.0.0), the meta pin was lifted from ballot.rc3 to the ballot final, and manifest/config drift is now a hard release check. The formally published `package.tgz` on this site was always correct — the defect was limited to the package registry channel.

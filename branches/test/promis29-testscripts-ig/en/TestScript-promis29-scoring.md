@@ -34,7 +34,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 **experimental**: true
 
-**date**: 2026-10-14 07:28:35+0000
+**date**: 2026-10-14 07:51:24+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -149,20 +149,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-physical-function-floor |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-physical-function-floor | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -191,20 +191,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-physical-function-ceil |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-physical-function-ceil | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -233,20 +233,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-physical-function-asym |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-physical-function-asym | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -275,20 +275,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-anxiety-floor |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-anxiety-floor | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -317,20 +317,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-anxiety-ceil |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-anxiety-ceil | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -359,20 +359,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-anxiety-asym |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-anxiety-asym | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -401,20 +401,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-depression-floor |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-depression-floor | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -443,20 +443,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-depression-ceil |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-depression-ceil | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -485,20 +485,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-depression-asym |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-depression-asym | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -527,20 +527,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-fatigue-floor |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-fatigue-floor | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -569,20 +569,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-fatigue-ceil |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-fatigue-ceil | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -611,20 +611,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-fatigue-asym |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-fatigue-asym | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -653,20 +653,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-sleep-floor |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-sleep-floor | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -695,20 +695,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-sleep-ceil |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-sleep-ceil | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -737,20 +737,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-sleep-asym |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-sleep-asym | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -779,20 +779,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-social-floor |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-social-floor | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -821,20 +821,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-social-ceil |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-social-ceil | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -863,20 +863,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-social-asym |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-social-asym | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -905,20 +905,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-pain-interference-floor |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-pain-interference-floor | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -947,20 +947,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-pain-interference-ceil |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-pain-interference-ceil | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -989,20 +989,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-pain-interference-asym |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-pain-interference-asym | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -1031,20 +1031,20 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 ### Operations
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| - | **Type** | **Resource** | **EncodeRequestUrl** | **Params** | **SourceId** |
-| * | [Test script operation code: validate](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html#testscript-operation-codes-validate)($validate) | QuestionnaireResponse | true | /$validate | qr-social-teilantwort-guard |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **EncodeRequestUrl** | **Method** | **SourceId** | **Url** |
+| * | true | POST | qr-social-teilantwort-guard | /QuestionnaireResponse/$validate |
 
 
 > **action**
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error').empty() | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Operator** | **WarningOnly** |
+| * | keine Validierungsfehler | OperationOutcome.issue.where(severity = 'error') | empty | false |
 
 
 > **action**
@@ -1090,7 +1090,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
   "title" : "PROMIS-29 Scoring — Validierung und Persistenz",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-14T07:28:35+00:00",
+  "date" : "2026-10-14T07:51:24+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -1300,20 +1300,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-physical-function-floor"
+        "method" : "post",
+        "sourceId" : "qr-physical-function-floor",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1341,20 +1338,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-physical-function-ceil"
+        "method" : "post",
+        "sourceId" : "qr-physical-function-ceil",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1382,20 +1376,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-physical-function-asym"
+        "method" : "post",
+        "sourceId" : "qr-physical-function-asym",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1423,20 +1414,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-anxiety-floor"
+        "method" : "post",
+        "sourceId" : "qr-anxiety-floor",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1464,20 +1452,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-anxiety-ceil"
+        "method" : "post",
+        "sourceId" : "qr-anxiety-ceil",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1505,20 +1490,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-anxiety-asym"
+        "method" : "post",
+        "sourceId" : "qr-anxiety-asym",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1546,20 +1528,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-depression-floor"
+        "method" : "post",
+        "sourceId" : "qr-depression-floor",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1587,20 +1566,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-depression-ceil"
+        "method" : "post",
+        "sourceId" : "qr-depression-ceil",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1628,20 +1604,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-depression-asym"
+        "method" : "post",
+        "sourceId" : "qr-depression-asym",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1669,20 +1642,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-fatigue-floor"
+        "method" : "post",
+        "sourceId" : "qr-fatigue-floor",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1710,20 +1680,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-fatigue-ceil"
+        "method" : "post",
+        "sourceId" : "qr-fatigue-ceil",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1751,20 +1718,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-fatigue-asym"
+        "method" : "post",
+        "sourceId" : "qr-fatigue-asym",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1792,20 +1756,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-sleep-floor"
+        "method" : "post",
+        "sourceId" : "qr-sleep-floor",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1833,20 +1794,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-sleep-ceil"
+        "method" : "post",
+        "sourceId" : "qr-sleep-ceil",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1874,20 +1832,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-sleep-asym"
+        "method" : "post",
+        "sourceId" : "qr-sleep-asym",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1915,20 +1870,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-social-floor"
+        "method" : "post",
+        "sourceId" : "qr-social-floor",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1956,20 +1908,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-social-ceil"
+        "method" : "post",
+        "sourceId" : "qr-social-ceil",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -1997,20 +1946,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-social-asym"
+        "method" : "post",
+        "sourceId" : "qr-social-asym",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -2038,20 +1984,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-pain-interference-floor"
+        "method" : "post",
+        "sourceId" : "qr-pain-interference-floor",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -2079,20 +2022,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-pain-interference-ceil"
+        "method" : "post",
+        "sourceId" : "qr-pain-interference-ceil",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -2120,20 +2060,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-pain-interference-asym"
+        "method" : "post",
+        "sourceId" : "qr-pain-interference-asym",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },
@@ -2161,20 +2098,17 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     "description" : "Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form",
     "action" : [{
       "operation" : {
-        "type" : {
-          "system" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-          "code" : "validate"
-        },
-        "resource" : "QuestionnaireResponse",
         "encodeRequestUrl" : true,
-        "params" : "/$validate",
-        "sourceId" : "qr-social-teilantwort-guard"
+        "method" : "post",
+        "sourceId" : "qr-social-teilantwort-guard",
+        "url" : "/QuestionnaireResponse/$validate"
       }
     },
     {
       "assert" : {
         "description" : "keine Validierungsfehler",
-        "expression" : "OperationOutcome.issue.where(severity = 'error').empty()",
+        "expression" : "OperationOutcome.issue.where(severity = 'error')",
+        "operator" : "empty",
         "warningOnly" : false
       }
     },

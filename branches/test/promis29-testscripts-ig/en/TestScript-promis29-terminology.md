@@ -34,7 +34,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 **experimental**: true
 
-**date**: 2026-10-14 07:28:35+0000
+**date**: 2026-10-14 07:51:24+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -71,10 +71,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13912-3 (Unable to do) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13912-3 (Unable to do) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -91,10 +91,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13921-4 (Without any difficulty) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13921-4 (Without any difficulty) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -111,10 +111,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13920-6 (With some difficulty) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13920-6 (With some difficulty) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -131,10 +131,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13919-8 (With much difficulty) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13919-8 (With much difficulty) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -151,10 +151,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA6270-8 (Never) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA6270-8 (Never) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -171,10 +171,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA9933-8 (Always) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA9933-8 (Always) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -191,10 +191,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA10082-8 (Sometimes) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA10082-8 (Sometimes) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -211,10 +211,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA10066-1 (Rarely) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA10066-1 (Rarely) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -231,10 +231,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA6568-5 (Not at all) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA6568-5 (Not at all) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -251,10 +251,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13914-9 (Very much) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13914-9 (Very much) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -271,10 +271,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13909-9 (Somewhat) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13909-9 (Somewhat) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -291,10 +291,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13863-8 (A little bit) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13863-8 (A little bit) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -311,10 +311,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA13913-1 (Very Good) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA13913-1 (Very Good) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 > **action**
@@ -331,10 +331,10 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 ### Asserts
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Description** | **Expression** | **WarningOnly** |
-| * | LA9615-1 (Very poor) gültig | Parameters.parameter.where(name = 'result').value = true | false |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Description** | **Expression** | **Value** | **WarningOnly** |
+| * | LA9615-1 (Very poor) gültig | Parameters.parameter.where(name = 'result').valueBoolean | true | false |
 
 
 
@@ -360,7 +360,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
   "title" : "PROMIS-29 Scoring — Terminologie der Antwortoptionen",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-14T07:28:35+00:00",
+  "date" : "2026-10-14T07:51:24+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -401,7 +401,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13912-3 (Unable to do) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -414,7 +415,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13921-4 (Without any difficulty) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -427,7 +429,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13920-6 (With some difficulty) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -440,7 +443,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13919-8 (With much difficulty) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -453,7 +457,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA6270-8 (Never) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -466,7 +471,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA9933-8 (Always) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -479,7 +485,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA10082-8 (Sometimes) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -492,7 +499,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA10066-1 (Rarely) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -505,7 +513,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA6568-5 (Not at all) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -518,7 +527,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13914-9 (Very much) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -531,7 +541,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13909-9 (Somewhat) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -544,7 +555,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13863-8 (A little bit) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -557,7 +569,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA13913-1 (Very Good) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     },
@@ -570,7 +583,8 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     {
       "assert" : {
         "description" : "LA9615-1 (Very poor) gültig",
-        "expression" : "Parameters.parameter.where(name = 'result').value = true",
+        "expression" : "Parameters.parameter.where(name = 'result').valueBoolean",
+        "value" : "true",
         "warningOnly" : false
       }
     }]
