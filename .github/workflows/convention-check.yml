@@ -68,6 +68,14 @@ jobs:
       - name: Install script dependencies
         run: npm ci --prefix scripts --no-audit --no-fund
 
+      # The scoring tests read fsh-generated/, which the CI only regenerates
+      # AFTER a push (auto-commit) — build it for THIS commit instead of
+      # trusting the checkout.
+      - name: Build FHIR resources from FSH
+        run: |
+          npm install -g fsh-sushi
+          sushi .
+
       # Every unit test in scripts/ — the convention checker, the dependency
       # checker and the publication scripts. The publication scripts used to run
       # only inside the manually dispatched go-publish.yml, so a regression in

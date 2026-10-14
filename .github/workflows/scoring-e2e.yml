@@ -55,6 +55,14 @@ jobs:
         with:
           node-version: "22"
 
+      # fsh-generated/ wird von der CI erst NACH dem Push regeneriert
+      # (Auto-Commit) — dieser Lauf braucht aber den Stand DIESES Commits.
+      # Deshalb baut der Job selbst, statt dem Checkout zu vertrauen.
+      - name: Build FHIR resources from FSH
+        run: |
+          npm install -g fsh-sushi
+          sushi .
+
       - name: Assemble TestScript run directory
         # Verzeichnisnamen sind Teil des Engine-Vertrags: sie entdeckt
         # testscripts/ und testreports/ im Arbeitsverzeichnis selbst.
