@@ -161,18 +161,22 @@ def testscript_scoring():
             f'* test[+].name = "case-{case["id"]}"',
             f'* test[=].description = "{case.get("source", "")}"',
         ]
+        # url+method statt type=validate: die testscript-engine 0.0.1 kennt
+        # 'validate' nicht in ihrem Interaction-Mapping, wohl aber explizite
+        # method+url-Operationen; Touchstone akzeptiert beide Formen.
         lines += op_lines(
             True,
-            type=f"{OP_CODES}#validate",
-            resource="#QuestionnaireResponse",
+            method="#post",
+            url='"/QuestionnaireResponse/$validate"',
             sourceId=f'"{fid}"',
-            params='"/$validate"',
             encodeRequestUrl="true",
         )
-        lines += assert_lines(
-            "keine Validierungsfehler",
-            "OperationOutcome.issue.where(severity = 'error').empty()",
-        )
+        lines += [
+            '* test[=].action[+].assert.description = "keine Validierungsfehler"',
+            "* test[=].action[=].assert.expression = \"OperationOutcome.issue.where(severity = 'error')\"",
+            "* test[=].action[=].assert.operator = #empty",
+            "* test[=].action[=].assert.warningOnly = false",
+        ]
         lines += op_lines(
             True,
             type=f"{OP_CODES}#create",
@@ -222,10 +226,12 @@ def testscript_terminology():
                 "* test[=].action[+].operation.encodeRequestUrl = true",
                 f'* test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code={a["code"]}&display={disp}"',
             ]
-            lines += assert_lines(
-                f"{a['code']} ({disp}) gültig",
-                "Parameters.parameter.where(name = 'result').value = true",
-            )
+            lines += [
+                f'* test[=].action[+].assert.description = "{a["code"]} ({disp}) gültig"',
+                "* test[=].action[=].assert.expression = \"Parameters.parameter.where(name = 'result').valueBoolean\"",
+                '* test[=].action[=].assert.value = "true"',
+                "* test[=].action[=].assert.warningOnly = false",
+            ]
     return "\n".join(lines) + "\n"
 
 

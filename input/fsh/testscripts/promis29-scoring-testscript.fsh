@@ -109,13 +109,13 @@ Usage: #definition
 * fixture[=].resource = Reference(QuestionnaireResponse/promis29-social-teilantwort-guard)
 * test[+].name = "case-physical-function-floor"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-physical-function-floor"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -126,13 +126,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-physical-function-ceil"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-physical-function-ceil"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -143,13 +143,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-physical-function-asym"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-physical-function-asym"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -160,13 +160,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-anxiety-floor"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-anxiety-floor"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -177,13 +177,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-anxiety-ceil"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-anxiety-ceil"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -194,13 +194,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-anxiety-asym"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-anxiety-asym"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -211,13 +211,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-depression-floor"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-depression-floor"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -228,13 +228,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-depression-ceil"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-depression-ceil"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -245,13 +245,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-depression-asym"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-depression-asym"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -262,13 +262,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-fatigue-floor"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-fatigue-floor"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -279,13 +279,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-fatigue-ceil"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-fatigue-ceil"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -296,13 +296,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-fatigue-asym"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-fatigue-asym"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -313,13 +313,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-sleep-floor"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-sleep-floor"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -330,13 +330,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-sleep-ceil"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-sleep-ceil"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -347,13 +347,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-sleep-asym"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-sleep-asym"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -364,13 +364,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-social-floor"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-social-floor"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -381,13 +381,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-social-ceil"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-social-ceil"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -398,13 +398,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-social-asym"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-social-asym"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -415,13 +415,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-pain-interference-floor"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-pain-interference-floor"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -432,13 +432,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-pain-interference-ceil"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-pain-interference-ceil"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -449,13 +449,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-pain-interference-asym"
 * test[=].description = "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-pain-interference-asym"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -466,13 +466,13 @@ Usage: #definition
 * test[=].action[=].assert.warningOnly = false
 * test[+].name = "case-social-teilantwort-guard"
 * test[=].description = "Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form"
-* test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#validate
-* test[=].action[=].operation.resource = #QuestionnaireResponse
+* test[=].action[+].operation.method = #post
+* test[=].action[=].operation.url = "/QuestionnaireResponse/$validate"
 * test[=].action[=].operation.sourceId = "qr-social-teilantwort-guard"
-* test[=].action[=].operation.params = "/$validate"
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[+].assert.description = "keine Validierungsfehler"
-* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error').empty()"
+* test[=].action[=].assert.expression = "OperationOutcome.issue.where(severity = 'error')"
+* test[=].action[=].assert.operator = #empty
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.resource = #QuestionnaireResponse
@@ -502,70 +502,84 @@ Usage: #definition
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13912-3&display=Unable to do"
 * test[=].action[+].assert.description = "LA13912-3 (Unable to do) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13921-4&display=Without any difficulty"
 * test[=].action[+].assert.description = "LA13921-4 (Without any difficulty) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13920-6&display=With some difficulty"
 * test[=].action[+].assert.description = "LA13920-6 (With some difficulty) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13919-8&display=With much difficulty"
 * test[=].action[+].assert.description = "LA13919-8 (With much difficulty) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA6270-8&display=Never"
 * test[=].action[+].assert.description = "LA6270-8 (Never) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA9933-8&display=Always"
 * test[=].action[+].assert.description = "LA9933-8 (Always) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA10082-8&display=Sometimes"
 * test[=].action[+].assert.description = "LA10082-8 (Sometimes) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA10066-1&display=Rarely"
 * test[=].action[+].assert.description = "LA10066-1 (Rarely) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA6568-5&display=Not at all"
 * test[=].action[+].assert.description = "LA6568-5 (Not at all) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13914-9&display=Very much"
 * test[=].action[+].assert.description = "LA13914-9 (Very much) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13909-9&display=Somewhat"
 * test[=].action[+].assert.description = "LA13909-9 (Somewhat) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13863-8&display=A little bit"
 * test[=].action[+].assert.description = "LA13863-8 (A little bit) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA13913-1&display=Very Good"
 * test[=].action[+].assert.description = "LA13913-1 (Very Good) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false
 * test[=].action[+].operation.encodeRequestUrl = true
 * test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code=LA9615-1&display=Very poor"
 * test[=].action[+].assert.description = "LA9615-1 (Very poor) gültig"
-* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').value = true"
+* test[=].action[=].assert.expression = "Parameters.parameter.where(name = 'result').valueBoolean"
+* test[=].action[=].assert.value = "true"
 * test[=].action[=].assert.warningOnly = false

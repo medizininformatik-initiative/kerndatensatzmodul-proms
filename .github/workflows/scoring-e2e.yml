@@ -55,25 +55,30 @@ jobs:
           node-version: "22"
 
       - name: Assemble TestScript run directory
-        run: node scripts/assemble-testscript-rundir.mjs rundir
+        # Verzeichnisnamen sind Teil des Engine-Vertrags: sie entdeckt
+        # testscripts/ und testreports/ im Arbeitsverzeichnis selbst.
+        run: |
+          mkdir -p work/testscripts work/testreports
+          node scripts/assemble-testscript-rundir.mjs work/testscripts
 
       - uses: ruby/setup-ruby@a4effe49ee8ee5b8b5091268c473a4628afb5651 # v1.245.0
         with:
           ruby-version: "3.2"
 
       - name: Run testscript-engine
+        # Das 0.0.1-Gem parst keine CLI-Flags und ist rein interaktiv —
+        # der printf-Dialog beantwortet: Konfiguration aendern? y ->
+        # Server-URL -> Pfade behalten (2x leer) -> Konfiguration ok (n) ->
+        # Server nicht nochmal aendern (n) -> alle Runnables (leer) -> quit.
+        # pry/pry-nav: im Binary required, aber nicht als Dependency
+        # deklariert (Packaging-Bug upstream).
         run: |
-          # pry/pry-nav: das 0.0.1-Gem required sie im Binary, deklariert
-          # sie aber nicht als Laufzeit-Abhängigkeit (Packaging-Bug upstream).
           gem install testscript_engine pry pry-nav --no-document
-          testscript_engine execute \
-            --testscript_path "$PWD/rundir" \
-            --testreport_path "$PWD/reports" \
-            --server_url http://localhost:8080/fhir
+          cd work && printf 'y\nhttp://localhost:8080/fhir\n\n\nn\nn\n\nq\n' | testscript_engine
 
       - name: Render TestReports
         run: |
-          node scripts/render-testreport.mjs reports \
+          node scripts/render-testreport.mjs work/testreports \
             --md report.md --html report.html
           cat report.md >> "$GITHUB_STEP_SUMMARY"
 
@@ -83,7 +88,7 @@ jobs:
           name: testreport
           path: |
             report.html
-            reports/
+            work/testreports/
 
       - name: PR comment (sticky)
         if: github.event_name == 'pull_request'
@@ -96,4 +101,4 @@ jobs:
             --body-file report.md
 
       - name: Gate
-        run: node scripts/render-testreport.mjs reports --md /dev/null --gate
+        run: node scripts/render-testreport.mjs work/testreports --md /dev/null --gate

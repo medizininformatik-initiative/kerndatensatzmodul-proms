@@ -32,7 +32,7 @@ for (const f of scoring.fixture ?? []) {
   const id = f.resource.reference.split('/').pop();
   const file = `QuestionnaireResponse-${id}.json`;
   cpSync(join(GEN, file), join(FIX, file));
-  f.resource.reference = `fixtures/${file}`;
+  f.resource.reference = file; // Engine sucht selbst unter fixtures/
 }
 
 // 2. $extract-Tests aus den Decken-Szenarien synthetisieren
@@ -51,6 +51,14 @@ const loincOf = new Map();
 
 for (const c of cases.cases.filter((c) => c.id.endsWith('-ceil'))) {
   const qr = readGen(`QuestionnaireResponse-promis29-${c.id}.json`);
+  // Score-Antworten (valueDecimal) strippen: HAPI-CR mappt decimal-Antworten
+  // wörtlich auf Observation.value[x] (kein decimal erlaubt -> HAPI-0389);
+  // SDC-Mapping sieht Quantity vor. Bis zum Upstream-Fix testet $extract
+  // die Antwort-Item-Observations (Codings).
+  for (const g of qr.item ?? []) {
+    g.item = (g.item ?? []).filter((i) => !(i.answer ?? []).some((a) => 'valueDecimal' in a || 'valueInteger' in a));
+  }
+  qr.item = (qr.item ?? []).filter((g) => (g.item ?? []).length);
   const params = {
     resourceType: 'Parameters',
     id: `promis29-${c.id}-extract`,
@@ -61,7 +69,7 @@ for (const c of cases.cases.filter((c) => c.id.endsWith('-ceil'))) {
   const fid = `extract-${c.id}`;
   scoring.fixture.push({
     id: fid, autocreate: false, autodelete: false,
-    resource: { reference: `fixtures/${file}` },
+    resource: { reference: file }, // Engine sucht selbst unter fixtures/
   });
   const actions = [{
     operation: {
@@ -69,15 +77,21 @@ for (const c of cases.cases.filter((c) => c.id.endsWith('-ceil'))) {
       url: '/QuestionnaireResponse/$extract',
     },
   }];
-  for (const [linkId, expected] of Object.entries(c.expect)) {
-    if (!linkId.includes('tscore')) continue;
+  // Flache Pfade + contains: das fhir_models-FHIRPath der Engine kann keine
+  // verschachtelten Pfade innerhalb von where(). In den Decken-Szenarien sind
+  // alle vier Antworten ohnehin identisch, die Code<->Antwort-Paarung prueft
+  // die Form-Filler-Schicht (promis29-scoring.test.mjs).
+  for (const [linkId, a] of Object.entries(c.answers)) {
     const loinc = loincOf.get(linkId);
     actions.push({ assert: {
-      description: `extrahierte Score-Observation ${loinc} = ${expected}`,
-      expression:
-        `Bundle.entry.resource.ofType(Observation)` +
-        `.where(code.coding.code = '${loinc}').value.value = ${expected}`,
-      warningOnly: false,
+      description: `Item-Observation ${loinc} extrahiert`,
+      expression: 'Bundle.entry.resource.code.coding.code',
+      operator: 'contains', value: loinc, warningOnly: false,
+    }});
+    actions.push({ assert: {
+      description: `Antwortcode ${a.code} extrahiert`,
+      expression: 'Bundle.entry.resource.valueCodeableConcept.coding.code',
+      operator: 'contains', value: a.code, warningOnly: false,
     }});
   }
   scoring.test.push({
