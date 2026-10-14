@@ -62,6 +62,12 @@ jobs:
         with:
           node-version: "22"
 
+      # The PROMIS-29 scoring tests run the calculatedExpressions with the
+      # real fhirpath.js engine (the same one LHC-Forms embeds) — the only
+      # npm dependency the scripts have.
+      - name: Install script dependencies
+        run: npm ci --prefix scripts --no-audit --no-fund
+
       # Every unit test in scripts/ — the convention checker, the dependency
       # checker and the publication scripts. The publication scripts used to run
       # only inside the manually dispatched go-publish.yml, so a regression in
