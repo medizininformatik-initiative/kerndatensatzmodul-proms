@@ -51,14 +51,6 @@ const loincOf = new Map();
 
 for (const c of cases.cases.filter((c) => c.id.endsWith('-ceil'))) {
   const qr = readGen(`QuestionnaireResponse-promis29-${c.id}.json`);
-  // Score-Antworten (valueDecimal) strippen: HAPI-CR mappt decimal-Antworten
-  // wörtlich auf Observation.value[x] (kein decimal erlaubt -> HAPI-0389);
-  // SDC-Mapping sieht Quantity vor. Bis zum Upstream-Fix testet $extract
-  // die Antwort-Item-Observations (Codings).
-  for (const g of qr.item ?? []) {
-    g.item = (g.item ?? []).filter((i) => !(i.answer ?? []).some((a) => 'valueDecimal' in a || 'valueInteger' in a));
-  }
-  qr.item = (qr.item ?? []).filter((g) => (g.item ?? []).length);
   const params = {
     resourceType: 'Parameters',
     id: `promis29-${c.id}-extract`,
@@ -77,10 +69,11 @@ for (const c of cases.cases.filter((c) => c.id.endsWith('-ceil'))) {
       url: '/QuestionnaireResponse/$extract',
     },
   }];
-  // Flache Pfade + contains: das fhir_models-FHIRPath der Engine kann keine
-  // verschachtelten Pfade innerhalb von where(). In den Decken-Szenarien sind
-  // alle vier Antworten ohnehin identisch, die Code<->Antwort-Paarung prueft
-  // die Form-Filler-Schicht (promis29-scoring.test.mjs).
+  // Flache Pfade + contains/where-mit-Integer: das fhir_models-FHIRPath der
+  // Engine kann weder verschachtelte Pfade in where() noch Float-Literale.
+  // Exakte T-Werte prueft daher die Form-Filler-Schicht; hier: Item-Obs mit
+  // Antwortcode, Raw-Quantity mit exaktem Integer-Wert + {score}-Unit,
+  // T-Obs-Existenz + Quantity-Unit.
   for (const [linkId, a] of Object.entries(c.answers)) {
     const loinc = loincOf.get(linkId);
     actions.push({ assert: {
@@ -94,6 +87,27 @@ for (const c of cases.cases.filter((c) => c.id.endsWith('-ceil'))) {
       operator: 'contains', value: a.code, warningOnly: false,
     }});
   }
+  for (const [linkId, expected] of Object.entries(c.expect)) {
+    const loinc = loincOf.get(linkId);
+    if (linkId.endsWith('-raw')) {
+      actions.push({ assert: {
+        description: `Raw-Score-Quantity ${expected} {score} extrahiert (${loinc})`,
+        expression: `Bundle.entry.resource.valueQuantity.where(value = ${expected}).code`,
+        operator: 'contains', value: '{score}', warningOnly: false,
+      }});
+    } else {
+      actions.push({ assert: {
+        description: `T-Score-Observation ${loinc} extrahiert`,
+        expression: 'Bundle.entry.resource.code.coding.code',
+        operator: 'contains', value: loinc, warningOnly: false,
+      }});
+    }
+  }
+  actions.push({ assert: {
+    description: 'Score-Quantities tragen UCUM {score}',
+    expression: 'Bundle.entry.resource.valueQuantity.code',
+    operator: 'contains', value: '{score}', warningOnly: false,
+  }});
   scoring.test.push({
     name: `extract-${c.id}`,
     description: 'Score landet als Observation in der Ressource ($extract)',

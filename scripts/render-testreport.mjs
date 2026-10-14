@@ -42,12 +42,14 @@ if (!reports.length) {
 
 const rows = [];
 for (const r of reports) {
+  let idx = 0;
   for (const t of r.test ?? []) {
+    idx += 1;
     const actions = (t.action ?? []).map((a) => a.operation ?? a.assert).filter(Boolean);
     const failed = actions.filter((a) => a.result !== 'pass' && a.result !== 'skip');
     rows.push({
       report: r.name ?? r.id ?? 'TestReport',
-      test: t.name ?? t.id ?? '(unbenannt)',
+      test: t.name ?? t.id ?? `#${String(idx).padStart(2, '0')}`,
       result: failed.length ? 'fail' : 'pass',
       detail: failed.map((a) => a.message ?? a.result).join(' · '),
       actions,

@@ -1474,6 +1474,11 @@ Usage: #definition
 // Physical Function T-Score
 * item[=].item[+].linkId = "promis-29-physical-function-tscore"
 * item[=].item[=].type = #decimal
+// Ohne questionnaire-unit scheitert die SDC-Observation-Extraction:
+// decimal ist kein zulaessiger Typ fuer Observation.value[x]; mit Unit
+// wird eine valueQuantity gebaut — passend zum Score-Profil ({score}).
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].code = $LNC#91721-1 "PROMIS physical function - version 2.0 T-score"
 * item[=].item[=].text = "PROMIS-29 Körperliche Funktion - T-Score"
 * item[=].item[=].readOnly = true
@@ -1500,6 +1505,11 @@ Usage: #definition
 // Anxiety T-Score
 * item[=].item[+].linkId = "promis-29-anxiety-tscore"
 * item[=].item[=].type = #decimal
+// Ohne questionnaire-unit scheitert die SDC-Observation-Extraction:
+// decimal ist kein zulaessiger Typ fuer Observation.value[x]; mit Unit
+// wird eine valueQuantity gebaut — passend zum Score-Profil ({score}).
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
 * item[=].item[=].text = "PROMIS-29 Angst - T-Score"
 * item[=].item[=].readOnly = true
@@ -1526,6 +1536,11 @@ Usage: #definition
 // Depression T-Score
 * item[=].item[+].linkId = "promis-29-depression-tscore"
 * item[=].item[=].type = #decimal
+// Ohne questionnaire-unit scheitert die SDC-Observation-Extraction:
+// decimal ist kein zulaessiger Typ fuer Observation.value[x]; mit Unit
+// wird eine valueQuantity gebaut — passend zum Score-Profil ({score}).
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].code = $LNC#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * item[=].item[=].text = "PROMIS-29 Depression - T-Score"
 * item[=].item[=].readOnly = true
@@ -1552,6 +1567,11 @@ Usage: #definition
 // Fatigue T-Score
 * item[=].item[+].linkId = "promis-29-fatigue-tscore"
 * item[=].item[=].type = #decimal
+// Ohne questionnaire-unit scheitert die SDC-Observation-Extraction:
+// decimal ist kein zulaessiger Typ fuer Observation.value[x]; mit Unit
+// wird eine valueQuantity gebaut — passend zum Score-Profil ({score}).
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].code = $LNC#77864-7 "PROMIS fatigue - version 1.0 Tscore"
 * item[=].item[=].text = "PROMIS-29 Erschöpfung - T-Score"
 * item[=].item[=].readOnly = true
@@ -1578,6 +1598,11 @@ Usage: #definition
 // Sleep Disturbance T-Score
 * item[=].item[+].linkId = "promis-29-sleep-tscore"
 * item[=].item[=].type = #decimal
+// Ohne questionnaire-unit scheitert die SDC-Observation-Extraction:
+// decimal ist kein zulaessiger Typ fuer Observation.value[x]; mit Unit
+// wird eine valueQuantity gebaut — passend zum Score-Profil ({score}).
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].code = $LNC#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
 * item[=].item[=].text = "PROMIS-29 Schlafstörungen - T-Score"
 * item[=].item[=].readOnly = true
@@ -1604,6 +1629,11 @@ Usage: #definition
 // Social Function T-Score
 * item[=].item[+].linkId = "promis-29-social-tscore"
 * item[=].item[=].type = #decimal
+// Ohne questionnaire-unit scheitert die SDC-Observation-Extraction:
+// decimal ist kein zulaessiger Typ fuer Observation.value[x]; mit Unit
+// wird eine valueQuantity gebaut — passend zum Score-Profil ({score}).
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].code = $LNC#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
 * item[=].item[=].text = "PROMIS-29 Soziale Teilhabe - T-Score"
 * item[=].item[=].readOnly = true
@@ -1630,6 +1660,11 @@ Usage: #definition
 // Pain Interference T-Score
 * item[=].item[+].linkId = "promis-29-pain-interference-tscore"
 * item[=].item[=].type = #decimal
+// Ohne questionnaire-unit scheitert die SDC-Observation-Extraction:
+// decimal ist kein zulaessiger Typ fuer Observation.value[x]; mit Unit
+// wird eine valueQuantity gebaut — passend zum Score-Profil ({score}).
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+* item[=].item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
 * item[=].item[=].code = $LNC#77865-4 "PROMIS pain interference - version 1.0 Tscore"
 * item[=].item[=].text = "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"
 * item[=].item[=].readOnly = true

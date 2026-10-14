@@ -26,8 +26,9 @@ jobs:
       - name: Start HAPI (clinical reasoning enabled)
         run: |
           docker run -d --name hapi -p 8080:8080 \
+            -e JAVA_TOOL_OPTIONS=-Xmx3g \
             -v "$PWD/scripts/testscript-ci/application.yaml:/app/config/application.yaml:ro" \
-            hapiproject/hapi:v8.12.0-1
+            hapiproject/hapi:v8.12.0-2
           for i in $(seq 1 90); do
             curl -sf http://localhost:8080/fhir/metadata > /dev/null && exit 0
             sleep 5
@@ -74,7 +75,7 @@ jobs:
         # deklariert (Packaging-Bug upstream).
         run: |
           gem install testscript_engine pry pry-nav --no-document
-          cd work && printf 'y\nhttp://localhost:8080/fhir\n\n\nn\nn\n\nq\n' | testscript_engine
+          cd work && printf 'y\nhttp://localhost:8080/fhir\n\n\nn\nn\n\nq\n' | testscript_engine | tee ../engine.log
 
       - name: Render TestReports
         run: |
@@ -82,12 +83,17 @@ jobs:
             --md report.md --html report.html
           cat report.md >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Diagnostics on failure
+        if: failure()
+        run: docker logs hapi 2>&1 | tail -80
+
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: testreport
           path: |
             report.html
+            engine.log
             work/testreports/
 
       - name: PR comment (sticky)
