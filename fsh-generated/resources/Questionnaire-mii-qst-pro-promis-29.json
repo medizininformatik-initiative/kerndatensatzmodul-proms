@@ -4971,14 +4971,15 @@
           "readOnly": true
         },
         {
-          "code": [
-            {
-              "code": "91721-1",
-              "system": "http://loinc.org",
-              "display": "PROMIS physical function - version 2.0 T-score"
-            }
-          ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -4989,6 +4990,13 @@
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
               "valueBoolean": true
+            }
+          ],
+          "code": [
+            {
+              "code": "91721-1",
+              "system": "http://loinc.org",
+              "display": "PROMIS physical function - version 2.0 T-score"
             }
           ],
           "linkId": "promis-29-physical-function-tscore",
@@ -5031,14 +5039,15 @@
           "readOnly": true
         },
         {
-          "code": [
-            {
-              "code": "71967-4",
-              "system": "http://loinc.org",
-              "display": "PROMIS-29 Anxiety score T-score"
-            }
-          ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -5049,6 +5058,13 @@
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
               "valueBoolean": true
+            }
+          ],
+          "code": [
+            {
+              "code": "71967-4",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Anxiety score T-score"
             }
           ],
           "linkId": "promis-29-anxiety-tscore",
@@ -5091,14 +5107,15 @@
           "readOnly": true
         },
         {
-          "code": [
-            {
-              "code": "77861-3",
-              "system": "http://loinc.org",
-              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
-            }
-          ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -5109,6 +5126,13 @@
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
               "valueBoolean": true
+            }
+          ],
+          "code": [
+            {
+              "code": "77861-3",
+              "system": "http://loinc.org",
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
             }
           ],
           "linkId": "promis-29-depression-tscore",
@@ -5151,14 +5175,15 @@
           "readOnly": true
         },
         {
-          "code": [
-            {
-              "code": "77864-7",
-              "system": "http://loinc.org",
-              "display": "PROMIS fatigue - version 1.0 Tscore"
-            }
-          ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -5169,6 +5194,13 @@
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
               "valueBoolean": true
+            }
+          ],
+          "code": [
+            {
+              "code": "77864-7",
+              "system": "http://loinc.org",
+              "display": "PROMIS fatigue - version 1.0 Tscore"
             }
           ],
           "linkId": "promis-29-fatigue-tscore",
@@ -5211,14 +5243,15 @@
           "readOnly": true
         },
         {
-          "code": [
-            {
-              "code": "77860-5",
-              "system": "http://loinc.org",
-              "display": "PROMIS sleep disturbance - version 1.0 Tscore"
-            }
-          ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -5229,6 +5262,13 @@
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
               "valueBoolean": true
+            }
+          ],
+          "code": [
+            {
+              "code": "77860-5",
+              "system": "http://loinc.org",
+              "display": "PROMIS sleep disturbance - version 1.0 Tscore"
             }
           ],
           "linkId": "promis-29-sleep-tscore",
@@ -5271,14 +5311,15 @@
           "readOnly": true
         },
         {
-          "code": [
-            {
-              "code": "77854-8",
-              "system": "http://loinc.org",
-              "display": "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
-            }
-          ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -5289,6 +5330,13 @@
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
               "valueBoolean": true
+            }
+          ],
+          "code": [
+            {
+              "code": "77854-8",
+              "system": "http://loinc.org",
+              "display": "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
             }
           ],
           "linkId": "promis-29-social-tscore",
@@ -5331,14 +5379,15 @@
           "readOnly": true
         },
         {
-          "code": [
-            {
-              "code": "77865-4",
-              "system": "http://loinc.org",
-              "display": "PROMIS pain interference - version 1.0 Tscore"
-            }
-          ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
             {
               "valueExpression": {
                 "language": "text/fhirpath",
@@ -5349,6 +5398,13 @@
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
               "valueBoolean": true
+            }
+          ],
+          "code": [
+            {
+              "code": "77865-4",
+              "system": "http://loinc.org",
+              "display": "PROMIS pain interference - version 1.0 Tscore"
             }
           ],
           "linkId": "promis-29-pain-interference-tscore",

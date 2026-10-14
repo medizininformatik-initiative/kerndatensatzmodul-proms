@@ -1,0 +1,92 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "promis29-anxiety-ceil",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              }
+            }
+          ],
+          "linkId": "promis-edanx01"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              }
+            }
+          ],
+          "linkId": "promis-edanx40"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              }
+            }
+          ],
+          "linkId": "promis-edanx41"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always"
+              }
+            }
+          ],
+          "linkId": "promis-edanx53"
+        }
+      ],
+      "linkId": "PROMIS-29.Anxiety"
+    },
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueDecimal": 20
+            }
+          ],
+          "linkId": "promis-29-anxiety-raw"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 81.6
+            }
+          ],
+          "linkId": "promis-29-anxiety-tscore"
+        }
+      ],
+      "linkId": "PROMIS-29.Scores"
+    }
+  ],
+  "language": "en",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.1",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-10-14T08:00:00Z"
+}

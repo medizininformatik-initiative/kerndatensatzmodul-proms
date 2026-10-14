@@ -1,24 +1,32 @@
 #!/usr/bin/env python3
-"""Generiert TestScript + Fixture-QRs für das PROMIS-29-Scoring.
+"""Generiert die PROMIS-29-Scoring-Testartefakte als FSH (IG-Artefakte).
 
 Quelle ist dieselbe Case-Datei wie für die Runtime-Tests
-(scripts/data/scoring-cases/promis29-cases.json) — TestScript ist hier ein
-EXPORTFORMAT der Szenarien, kein zweiter Wahrheitsspeicher. Die Fixture-QRs
-enthalten die erwarteten Score-Antworten (sie repräsentieren das Ergebnis
-eines korrekt rechnenden Form Fillers); der Server prüft Validität,
-Persistenz und Extraktion.
+(scripts/data/scoring-cases/promis29-cases.json) — TestScript und Fixtures
+sind EXPORTFORMATE der Szenarien, kein zweiter Wahrheitsspeicher.
 
-Erzeugt unter input/testscripts/ (liegt außerhalb des IG-Builds):
-  fixtures/QuestionnaireResponse-promis29-<case>.json   je Szenario
-  fixtures/Parameters-promis29-<case>.json              je Decken-Szenario
-                                                        ($extract-Aufrufkörper)
-  TestScript-promis29-scoring.json
+Erzeugt (beide Dateien tragen einen GENERIERT-Kopf — nie von Hand editieren):
 
-Ausführung der TestScripts: AEGIS Touchstone oder fhir-crucible/
-testscript-engine, Ziel = FHIR-Server mit geladenem PROMIS-29-Questionnaire,
-Terminologie-Validierung (LOINC) und SDC-$extract (z. B. HAPI + clinical-
-reasoning). displayLanguage-Prüfungen für Deutsch folgen mit dem geplanten
-CodeSystem-Supplement (siehe HDB-1008).
+  input/fsh/testscripts/promis29-scoring-fixtures.fsh
+      je Szenario eine profilkonforme QuestionnaireResponse
+      (InstanceOf MII_PR_PRO_QuestionnaireResponse, Usage #example) —
+      der IG-Publisher validiert die Fixtures damit bei jedem Build mit.
+      Die erwarteten Score-Antworten sind enthalten: Die Fixture
+      repräsentiert das Ergebnis eines korrekt rechnenden Form Fillers.
+
+  input/fsh/testscripts/promis29-scoring-testscript.fsh
+      TestScript promis29-scoring     — je Szenario $validate + Anlage
+      TestScript promis29-terminology — jedes verwendete Coding nativ per
+          CodeSystem/$validate-code (Ziel braucht LOINC-Terminologie;
+          displayLanguage=de folgt mit dem Supplement, HDB-1008)
+
+Die $extract-Prüfungen (Score landet als Observation in der Ressource)
+liegen NICHT im IG-TestScript: Der Aufruf braucht einen Parameters-Wrapper,
+den scripts/assemble-testscript-rundir.mjs für den CI-Lauf aus denselben
+Cases synthetisiert. So bleiben die IG-Artefakte frei von Hilfskonstrukten.
+
+Ausführung: Touchstone oder fhir-crucible/testscript-engine — das
+CI-Laufverzeichnis baut scripts/assemble-testscript-rundir.mjs.
 
 Aufruf:  python3 scripts/generate-promis29-testscripts.py
 """
@@ -30,9 +38,18 @@ CASES = json.loads((REPO / "scripts/data/scoring-cases/promis29-cases.json").rea
 Q = json.loads(
     (REPO / "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29.json").read_text()
 )
-OUT = REPO / "input/testscripts"
-FIX = OUT / "fixtures"
-CANONICAL_NS = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro"
+OUT = REPO / "input/fsh/testscripts"
+NS = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro"
+QR_PROFILE = f"{NS}/StructureDefinition/mii-pr-pro-questionnaire-response"
+Q_CANONICAL = f"{NS}/Questionnaire/mii-qst-pro-promis-29"
+OP_CODES = "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+HEADER = (
+    "// ═══════════════════════════════════════════════════════════════════\n"
+    "// GENERIERT aus scripts/data/scoring-cases/promis29-cases.json durch\n"
+    "// scripts/generate-promis29-testscripts.py — NICHT von Hand editieren.\n"
+    "// Szenarien ändern = Case-Datei ändern und neu generieren.\n"
+    "// ═══════════════════════════════════════════════════════════════════\n\n"
+)
 
 
 def walk(items, parent=None):
@@ -41,9 +58,7 @@ def walk(items, parent=None):
         yield from walk(it.get("item"), it)
 
 
-# linkId -> (Parent-Gruppe, Item); dazu LOINC-Code + Typ der Score-Items
-PARENT = {}
-ITEM = {}
+PARENT, ITEM = {}, {}
 for it, parent in walk(Q["item"]):
     PARENT[it["linkId"]] = parent["linkId"] if parent else None
     ITEM[it["linkId"]] = it
@@ -56,154 +71,179 @@ def display_of(link_id, code):
     raise SystemExit(f"{code} ist keine Option von {link_id}")
 
 
-def score_answer(link_id, value):
-    typ = ITEM[link_id]["type"]
-    if typ == "integer":
-        return {"valueInteger": int(value)}
-    return {"valueDecimal": value}
-
-
-def build_qr(case):
+def qr_instance(case):
+    rid = f"promis29-{case['id']}"
+    lines = [
+        f"Instance: {rid}",
+        "InstanceOf: MII_PR_PRO_QuestionnaireResponse",
+        f'Title: "PROMIS-29 Scoring-Fixture — {case["id"]}"',
+        f'Description: "{case.get("source", "Scoring-Szenario")}. '
+        'Fixture des TestScript promis29-scoring; enthält die erwarteten '
+        'Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."',
+        "Usage: #example",
+        "* language = #en",
+        f"* insert MetaProfile({QR_PROFILE})",
+        f"* insert QuestionnaireRef({Q_CANONICAL})",
+        "* status = #completed",
+        "* subject = Reference(Patient/mii-exa-pro-patient)",
+        '* authored = "2026-10-14T08:00:00Z"',
+    ]
     groups = {}
-    def put(link_id, answer):
-        g = PARENT[link_id]
-        groups.setdefault(g, {"linkId": g, "item": []})["item"].append(
-            {"linkId": link_id, "answer": [answer]}
-        )
+    def put(link_id, answer_lines):
+        groups.setdefault(PARENT[link_id], []).append((link_id, answer_lines))
     for link_id, a in case["answers"].items():
-        put(link_id, {"valueCoding": {
-            "system": "http://loinc.org",
-            "code": a["code"],
-            "display": display_of(link_id, a["code"]),
-        }})
+        disp = display_of(link_id, a["code"])
+        put(link_id, [f'* item[=].item[=].answer[+].valueCoding = $LNC#{a["code"]} "{disp}"'])
     for link_id, expected in case["expect"].items():
-        if expected is not None:
-            put(link_id, score_answer(link_id, expected))
-    return {
-        "resourceType": "QuestionnaireResponse",
-        "id": f"promis29-{case['id']}",
-        "questionnaire": f"{Q['url']}|{Q['version']}",
-        "status": "completed",
-        "item": list(groups.values()),
-    }
+        if expected is None:
+            continue
+        typ = ITEM[link_id]["type"]
+        val = int(expected) if typ == "integer" else expected
+        put(link_id, [f"* item[=].item[=].answer[+].value{'Integer' if typ=='integer' else 'Decimal'} = {val}"])
+    for group, entries in groups.items():
+        lines.append(f'* item[+].linkId = "{group}"')
+        for link_id, answer_lines in entries:
+            lines.append(f'* item[=].item[+].linkId = "{link_id}"')
+            lines.extend(answer_lines)
+    return "\n".join(lines) + "\n"
 
 
-def op(code=None, **kw):
-    o = {"encodeRequestUrl": True}
-    if code:
-        o["type"] = {
-            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
-            "code": code,
-        }
-    o.update(kw)
-    return {"operation": o}
+def op_lines(first, **fields):
+    sign = "+" if first else "="
+    out = []
+    for i, (k, v) in enumerate(fields.items()):
+        idx = sign if i == 0 else "="
+        out.append(f"* test[=].action[{idx}].operation.{k} = {v}")
+    return out
 
 
-def expr_assert(description, expression):
-    return {"assert": {
-        "description": description,
-        "expression": expression,
-        "warningOnly": False,
-    }}
+def assert_lines(description, expression):
+    return [
+        f'* test[=].action[+].assert.description = "{description}"',
+        f'* test[=].action[=].assert.expression = "{expression}"',
+        "* test[=].action[=].assert.warningOnly = false",
+    ]
+
+
+def testscript_scoring():
+    lines = [
+        "Instance: promis29-scoring",
+        "InstanceOf: TestScript",
+        'Title: "PROMIS-29 Scoring — Validierung und Persistenz"',
+        'Description: "Je Szenario: QuestionnaireResponse serverseitig validieren '
+        "($validate) und anlegen. Die Fixtures sind die IG-Beispiele "
+        "promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. "
+        "Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-"
+        'rundir.mjs für den CI-Lauf."',
+        "Usage: #definition",
+        f'* url = "{NS}/TestScript/promis29-scoring"',
+        "* insert Version",
+        '* name = "PROMIS29ScoringTestScript"',
+        "* status = #draft",
+        "* experimental = true",
+        '* publisher = "Medizininformatik Initiative"',
+        "* metadata.capability[+].required = true",
+        "* metadata.capability[=].validated = false",
+        '* metadata.capability[=].description = "FHIR R4 Server, PROMIS-29-Questionnaire geladen"',
+        '* metadata.capability[=].capabilities = "http://hl7.org/fhir/CapabilityStatement/base"',
+    ]
+    for case in CASES["cases"]:
+        fid = f"qr-{case['id']}"
+        lines += [
+            f'* fixture[+].id = "{fid}"',
+            "* fixture[=].autocreate = false",
+            "* fixture[=].autodelete = false",
+            f"* fixture[=].resource = Reference(QuestionnaireResponse/promis29-{case['id']})",
+        ]
+    for case in CASES["cases"]:
+        fid = f"qr-{case['id']}"
+        lines += [
+            f'* test[+].name = "case-{case["id"]}"',
+            f'* test[=].description = "{case.get("source", "")}"',
+        ]
+        # url+method statt type=validate: die testscript-engine 0.0.1 kennt
+        # 'validate' nicht in ihrem Interaction-Mapping, wohl aber explizite
+        # method+url-Operationen; Touchstone akzeptiert beide Formen.
+        lines += op_lines(
+            True,
+            method="#post",
+            url='"/QuestionnaireResponse/$validate"',
+            sourceId=f'"{fid}"',
+            encodeRequestUrl="true",
+        )
+        lines += [
+            '* test[=].action[+].assert.description = "keine Validierungsfehler"',
+            "* test[=].action[=].assert.expression = \"OperationOutcome.issue.where(severity = 'error')\"",
+            "* test[=].action[=].assert.operator = #empty",
+            "* test[=].action[=].assert.warningOnly = false",
+        ]
+        lines += op_lines(
+            True,
+            type=f"{OP_CODES}#create",
+            resource="#QuestionnaireResponse",
+            sourceId=f'"{fid}"',
+            encodeRequestUrl="true",
+        )
+        lines += [
+            '* test[=].action[+].assert.description = "angelegt"',
+            "* test[=].action[=].assert.response = #created",
+            "* test[=].action[=].assert.warningOnly = false",
+        ]
+    return "\n".join(lines) + "\n"
+
+
+def testscript_terminology():
+    lines = [
+        "Instance: promis29-terminology",
+        "InstanceOf: TestScript",
+        'Title: "PROMIS-29 Scoring — Terminologie der Antwortoptionen"',
+        'Description: "Validiert jedes in den Szenarien verwendete Coding nativ '
+        "per CodeSystem/$validate-code (Code UND Display) gegen LOINC. "
+        "Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de "
+        'folgt mit dem geplanten CodeSystem-Supplement (HDB-1008)."',
+        "Usage: #definition",
+        f'* url = "{NS}/TestScript/promis29-terminology"',
+        "* insert Version",
+        '* name = "PROMIS29TerminologyTestScript"',
+        "* status = #draft",
+        "* experimental = true",
+        '* publisher = "Medizininformatik Initiative"',
+        "* metadata.capability[+].required = true",
+        "* metadata.capability[=].validated = false",
+        '* metadata.capability[=].description = "FHIR R4 Terminologieserver mit LOINC"',
+        '* metadata.capability[=].capabilities = "http://hl7.org/fhir/CapabilityStatement/base"',
+        '* test[+].name = "terminology-displays"',
+        '* test[=].description = "Antwort-Codings (Code+Display) gegen LOINC"',
+    ]
+    seen = set()
+    for case in CASES["cases"]:
+        for link_id, a in case["answers"].items():
+            disp = display_of(link_id, a["code"])
+            if (a["code"], disp) in seen:
+                continue
+            seen.add((a["code"], disp))
+            lines += [
+                "* test[=].action[+].operation.encodeRequestUrl = true",
+                f'* test[=].action[=].operation.url = "/CodeSystem/$validate-code?url=http://loinc.org&code={a["code"]}&display={disp}"',
+            ]
+            lines += [
+                f'* test[=].action[+].assert.description = "{a["code"]} ({disp}) gültig"',
+                "* test[=].action[=].assert.expression = \"Parameters.parameter.where(name = 'result').valueBoolean\"",
+                '* test[=].action[=].assert.value = "true"',
+                "* test[=].action[=].assert.warningOnly = false",
+            ]
+    return "\n".join(lines) + "\n"
 
 
 def main():
-    FIX.mkdir(parents=True, exist_ok=True)
-    fixtures, tests = [], []
-
-    # Test 1 — Terminologie: jedes verwendete Coding nativ gegen LOINC
-    seen, actions = set(), []
-    for case in CASES["cases"]:
-        for link_id, a in case["answers"].items():
-            key = (a["code"], display_of(link_id, a["code"]))
-            if key in seen:
-                continue
-            seen.add(key)
-            code, disp = key
-            actions.append(op(
-                code="validate-code", resource="CodeSystem",
-                url=f"/CodeSystem/$validate-code?url=http://loinc.org&code={code}&display={disp.replace(' ', '%20')}",
-            ))
-            actions.append(expr_assert(
-                f"{code} '{disp}' ist gültig (Code+Display)",
-                "Parameters.parameter.where(name='result').value = true",
-            ))
-    tests.append({"name": "terminology-displays",
-                  "description": "Antwort-Codings nativ gegen LOINC validieren",
-                  "action": actions})
-
-    # Test je Szenario — $validate + Anlage
-    for case in CASES["cases"]:
-        qr = build_qr(case)
-        (FIX / f"QuestionnaireResponse-{qr['id']}.json").write_text(
-            json.dumps(qr, indent=1, ensure_ascii=False))
-        fid = f"qr-{case['id']}"
-        fixtures.append({"id": fid, "autocreate": False, "autodelete": False,
-                         "resource": {"reference": f"fixtures/QuestionnaireResponse-{qr['id']}.json"}})
-        actions = [
-            op(code="validate", resource="QuestionnaireResponse",
-               sourceId=fid, params="/$validate"),
-            expr_assert("keine Validierungsfehler",
-                        "OperationOutcome.issue.where(severity = 'error').empty()"),
-            op(code="create", resource="QuestionnaireResponse", sourceId=fid),
-            {"assert": {"description": "angelegt", "response": "created",
-                        "warningOnly": False}},
-        ]
-        tests.append({"name": f"case-{case['id']}",
-                      "description": case.get("source", ""), "action": actions})
-
-    # Test je Decken-Szenario — $extract liefert die Score-Observation
-    for case in CASES["cases"]:
-        if not case["id"].endswith("-ceil"):
-            continue
-        qr = build_qr(case)
-        params = {"resourceType": "Parameters", "id": f"promis29-{case['id']}-extract",
-                  "parameter": [{"name": "questionnaire-response", "resource": qr}]}
-        (FIX / f"Parameters-promis29-{case['id']}.json").write_text(
-            json.dumps(params, indent=1, ensure_ascii=False))
-        fid = f"extract-{case['id']}"
-        fixtures.append({"id": fid, "autocreate": False, "autodelete": False,
-                         "resource": {"reference": f"fixtures/Parameters-promis29-{case['id']}.json"}})
-        actions = [op(resource="QuestionnaireResponse", sourceId=fid,
-                      url="/QuestionnaireResponse/$extract", method="post")]
-        for link_id, expected in case["expect"].items():
-            if "tscore" not in link_id:
-                continue
-            loinc = next(c["code"] for c in ITEM[link_id]["code"]
-                         if c.get("system") == "http://loinc.org")
-            actions.append(expr_assert(
-                f"extrahierte Score-Observation {loinc} = {expected}",
-                f"Bundle.entry.resource.ofType(Observation)"
-                f".where(code.coding.code = '{loinc}').value.value = {expected}",
-            ))
-        tests.append({"name": f"extract-{case['id']}",
-                      "description": "Score landet als Observation in der Ressource",
-                      "action": actions})
-
-    ts = {
-        "resourceType": "TestScript",
-        "id": "promis29-scoring",
-        "url": f"{CANONICAL_NS}/TestScript/promis29-scoring",
-        "version": Q["version"],
-        "name": "PROMIS29ScoringTestScript",
-        "title": "PROMIS-29 Scoring — Validierung, Persistenz, Extraktion",
-        "status": "draft",
-        "description": (
-            "Generiert aus scripts/data/scoring-cases/promis29-cases.json "
-            "(HDB-1007/-1008/-1009). Voraussetzungen am Ziel: PROMIS-29-"
-            "Questionnaire geladen, LOINC-Terminologie, SDC-$extract."
-        ),
-        "metadata": {"capability": [{
-            "required": True, "validated": False,
-            "description": "FHIR R4 Server mit Terminologie und SDC-$extract",
-            "capabilities": "http://hl7.org/fhir/CapabilityStatement/base",
-        }]},
-        "fixture": fixtures,
-        "test": tests,
-    }
-    (OUT / "TestScript-promis29-scoring.json").write_text(
-        json.dumps(ts, indent=1, ensure_ascii=False))
-    print(f"TestScript mit {len(tests)} Tests, {len(fixtures)} Fixtures → {OUT}")
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "promis29-scoring-fixtures.fsh").write_text(
+        HEADER + "\n".join(qr_instance(c) for c in CASES["cases"])
+    )
+    (OUT / "promis29-scoring-testscript.fsh").write_text(
+        HEADER + testscript_scoring() + "\n" + testscript_terminology()
+    )
+    print(f"{len(CASES['cases'])} Fixtures + 2 TestScripts → {OUT}")
 
 
 if __name__ == "__main__":

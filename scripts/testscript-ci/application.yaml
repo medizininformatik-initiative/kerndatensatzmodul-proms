@@ -1,0 +1,18 @@
+# HAPI-Konfiguration fuer den scoring-e2e-Workflow (TestScript-Lauf).
+# cr.enabled: $extract (SDC) kommt aus dem clinical-reasoning-Modul.
+# Referentielle Integritaet aus: die Fixture-QRs referenzieren den
+# Beispiel-Patienten, der nicht Teil des Laufs ist.
+hapi:
+  fhir:
+    cr:
+      enabled: true
+    enforce_referential_integrity_on_write: false
+    enforce_referential_integrity_on_delete: false
+    implementationguides:
+      basisprofil:
+        name: de.basisprofil.r4
+        version: 1.6.0
+        packageUrl: https://packages.simplifier.net/de.basisprofil.r4/1.6.0
+      sdc:
+        name: hl7.fhir.uv.sdc
+        version: 3.0.0

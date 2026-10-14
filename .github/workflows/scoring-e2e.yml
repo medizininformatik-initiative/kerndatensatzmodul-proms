@@ -1,0 +1,120 @@
+# Fuehrt die generierten TestScripts (PROMIS-29-Scoring) bei jedem PR gegen
+# einen echten HAPI-Server aus und rendert die TestReports in die Job-Summary
+# und als PR-Kommentar — das TestScript-Pendant zur Validierungs-Summary.
+#
+# Kette: fsh-generated (SUSHI) -> assemble-testscript-rundir.mjs ->
+#        fhir-crucible/testscript-engine -> TestReport ->
+#        render-testreport.mjs (Markdown + HTML + Gate)
+name: Scoring E2E (TestScript)
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  scoring-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Start HAPI (clinical reasoning enabled)
+        run: |
+          docker run -d --name hapi -p 8080:8080 \
+            -e JAVA_TOOL_OPTIONS=-Xmx3g \
+            -v "$PWD/scripts/testscript-ci/application.yaml:/app/config/application.yaml:ro" \
+            hapiproject/hapi:v8.12.0-2
+          for i in $(seq 1 90); do
+            curl -sf http://localhost:8080/fhir/metadata > /dev/null && exit 0
+            sleep 5
+          done
+          echo "HAPI nicht erreichbar"; docker logs hapi | tail -40; exit 1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      # fsh-generated/ wird von der CI erst NACH dem Push regeneriert
+      # (Auto-Commit) — dieser Lauf braucht aber den Stand DIESES Commits.
+      # Deshalb baut der Job selbst, statt dem Checkout zu vertrauen.
+      - name: Build FHIR resources from FSH
+        run: |
+          npm install -g fsh-sushi
+          sushi .
+
+      - name: Load conformance resources and questionnaire
+        run: |
+          base=http://localhost:8080/fhir
+          shopt -s nullglob
+          for f in fsh-generated/resources/CodeSystem-*.json \
+                   fsh-generated/resources/ValueSet-*.json \
+                   fsh-generated/resources/StructureDefinition-*.json \
+                   fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29.json; do
+            rt=$(basename "$f" | cut -d- -f1)
+            id=$(python3 -c "import json;print(json.load(open('$f'))['id'])")
+            code=$(curl -s -o /dev/null -w '%{http_code}' -X PUT \
+              -H 'Content-Type: application/fhir+json' \
+              --data-binary @"$f" "$base/$rt/$id")
+            case $code in 200|201) ;; *) echo "WARN $code $f";; esac
+          done
+
+
+
+      - name: Assemble TestScript run directory
+        # Verzeichnisnamen sind Teil des Engine-Vertrags: sie entdeckt
+        # testscripts/ und testreports/ im Arbeitsverzeichnis selbst.
+        run: |
+          mkdir -p work/testscripts work/testreports
+          node scripts/assemble-testscript-rundir.mjs work/testscripts
+
+      - uses: ruby/setup-ruby@a4effe49ee8ee5b8b5091268c473a4628afb5651 # v1.245.0
+        with:
+          ruby-version: "3.2"
+
+      - name: Run testscript-engine
+        # Das 0.0.1-Gem parst keine CLI-Flags und ist rein interaktiv —
+        # der printf-Dialog beantwortet: Konfiguration aendern? y ->
+        # Server-URL -> Pfade behalten (2x leer) -> Konfiguration ok (n) ->
+        # Server nicht nochmal aendern (n) -> alle Runnables (leer) -> quit.
+        # pry/pry-nav: im Binary required, aber nicht als Dependency
+        # deklariert (Packaging-Bug upstream).
+        run: |
+          gem install testscript_engine pry pry-nav --no-document
+          cd work && printf 'y\nhttp://localhost:8080/fhir\n\n\nn\nn\n\nq\n' | testscript_engine | tee ../engine.log
+
+      - name: Render TestReports
+        run: |
+          node scripts/render-testreport.mjs work/testreports \
+            --md report.md --html report.html
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Diagnostics on failure
+        if: failure()
+        run: docker logs hapi 2>&1 | tail -80
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: testreport
+          path: |
+            report.html
+            engine.log
+            work/testreports/
+
+      - name: PR comment (sticky)
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --edit-last --body-file report.md \
+          || gh pr comment ${{ github.event.pull_request.number }} \
+            --body-file report.md
+
+      - name: Gate
+        run: node scripts/render-testreport.mjs work/testreports --md /dev/null --gate

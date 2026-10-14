@@ -1,8 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 <!-- Source: kerndatensatz-basis input/pagecontent/capability-statements.md.
      German mirror: input/translations/de/pagecontent/capability-statements.md. -->
-### Capability Statements
-
 The CapabilityStatements of the **PRO** module describe the expected server/client capabilities (supported resources and interactions).
 
 The module ships one CapabilityStatement:
