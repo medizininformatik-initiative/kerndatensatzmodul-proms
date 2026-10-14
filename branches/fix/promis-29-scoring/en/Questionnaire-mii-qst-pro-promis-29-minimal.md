@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-10-13 | *Computable Name*: |
+| Active as of 2026-10-14 | *Computable Name*: |
 
  
 PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions 
@@ -73,7 +73,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-13T15:11:26+00:00",
+  "date" : "2026-10-14T06:32:26+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
