@@ -1,0 +1,82 @@
+{
+ "resourceType": "QuestionnaireResponse",
+ "id": "promis29-sleep-asym",
+ "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.1",
+ "status": "completed",
+ "item": [
+  {
+   "linkId": "PROMIS-29.Sleep",
+   "item": [
+    {
+     "linkId": "promis-sleep109",
+     "answer": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA9615-1",
+        "display": "Very poor"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "promis-sleep116",
+     "answer": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA13914-9",
+        "display": "Very much"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "promis-sleep20",
+     "answer": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA13909-9",
+        "display": "Somewhat"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "promis-sleep44",
+     "answer": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA13863-8",
+        "display": "A little bit"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "linkId": "PROMIS-29.Scores",
+   "item": [
+    {
+     "linkId": "promis-29-sleep-raw",
+     "answer": [
+      {
+       "valueDecimal": 11
+      }
+     ]
+    },
+    {
+     "linkId": "promis-29-sleep-tscore",
+     "answer": [
+      {
+       "valueDecimal": 52.4
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

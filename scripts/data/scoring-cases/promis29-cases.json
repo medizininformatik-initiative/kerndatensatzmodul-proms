@@ -1,0 +1,577 @@
+{
+ "description": "Scoring-Szenarien PROMIS-29 — Antworten als code+label-Paar (Label = Checksumme, Loader prueft gegen Fixture), expect = extern verankerte Literale. Gilt fuer beide Sprachvarianten (identische linkIds/Gewichte).",
+ "fixture": "scripts/data/promis29-answer-weights.csv",
+ "questionnaires": [
+  "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29.json",
+  "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29-de.json"
+ ],
+ "cases": [
+  {
+   "id": "physical-function-floor",
+   "answers": {
+    "promis-pfa11": {
+     "code": "LA13912-3",
+     "label": "Unable to do"
+    },
+    "promis-pfa21": {
+     "code": "LA13912-3",
+     "label": "Unable to do"
+    },
+    "promis-pfa23": {
+     "code": "LA13912-3",
+     "label": "Unable to do"
+    },
+    "promis-pfa53": {
+     "code": "LA13912-3",
+     "label": "Unable to do"
+    }
+   },
+   "expect": {
+    "promis-29-physical-function-raw": 4,
+    "promis-29-physical-function-tscore": 22.5
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "physical-function-ceil",
+   "answers": {
+    "promis-pfa11": {
+     "code": "LA13921-4",
+     "label": "Without any difficulty"
+    },
+    "promis-pfa21": {
+     "code": "LA13921-4",
+     "label": "Without any difficulty"
+    },
+    "promis-pfa23": {
+     "code": "LA13921-4",
+     "label": "Without any difficulty"
+    },
+    "promis-pfa53": {
+     "code": "LA13921-4",
+     "label": "Without any difficulty"
+    }
+   },
+   "expect": {
+    "promis-29-physical-function-raw": 20,
+    "promis-29-physical-function-tscore": 57.0
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "physical-function-asym",
+   "answers": {
+    "promis-pfa11": {
+     "code": "LA13912-3",
+     "label": "Unable to do"
+    },
+    "promis-pfa21": {
+     "code": "LA13921-4",
+     "label": "Without any difficulty"
+    },
+    "promis-pfa23": {
+     "code": "LA13920-6",
+     "label": "With some difficulty"
+    },
+    "promis-pfa53": {
+     "code": "LA13919-8",
+     "label": "With much difficulty"
+    }
+   },
+   "expect": {
+    "promis-29-physical-function-raw": 11,
+    "promis-29-physical-function-tscore": 35.6
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "anxiety-floor",
+   "answers": {
+    "promis-edanx01": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-edanx40": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-edanx41": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-edanx53": {
+     "code": "LA6270-8",
+     "label": "Never"
+    }
+   },
+   "expect": {
+    "promis-29-anxiety-raw": 4,
+    "promis-29-anxiety-tscore": 40.3
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "anxiety-ceil",
+   "answers": {
+    "promis-edanx01": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-edanx40": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-edanx41": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-edanx53": {
+     "code": "LA9933-8",
+     "label": "Always"
+    }
+   },
+   "expect": {
+    "promis-29-anxiety-raw": 20,
+    "promis-29-anxiety-tscore": 81.6
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "anxiety-asym",
+   "answers": {
+    "promis-edanx01": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-edanx40": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-edanx41": {
+     "code": "LA10082-8",
+     "label": "Sometimes"
+    },
+    "promis-edanx53": {
+     "code": "LA10066-1",
+     "label": "Rarely"
+    }
+   },
+   "expect": {
+    "promis-29-anxiety-raw": 11,
+    "promis-29-anxiety-tscore": 61.4
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "depression-floor",
+   "answers": {
+    "promis-eddep04": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-eddep06": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-eddep29": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-eddep41": {
+     "code": "LA6270-8",
+     "label": "Never"
+    }
+   },
+   "expect": {
+    "promis-29-depression-raw": 4,
+    "promis-29-depression-tscore": 41.0
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "depression-ceil",
+   "answers": {
+    "promis-eddep04": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-eddep06": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-eddep29": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-eddep41": {
+     "code": "LA9933-8",
+     "label": "Always"
+    }
+   },
+   "expect": {
+    "promis-29-depression-raw": 20,
+    "promis-29-depression-tscore": 79.4
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "depression-asym",
+   "answers": {
+    "promis-eddep04": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-eddep06": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-eddep29": {
+     "code": "LA10082-8",
+     "label": "Sometimes"
+    },
+    "promis-eddep41": {
+     "code": "LA10066-1",
+     "label": "Rarely"
+    }
+   },
+   "expect": {
+    "promis-29-depression-raw": 11,
+    "promis-29-depression-tscore": 60.5
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "fatigue-floor",
+   "answers": {
+    "promis-hi7": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-an3": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-fatexp41": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-fatexp40": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    }
+   },
+   "expect": {
+    "promis-29-fatigue-raw": 4,
+    "promis-29-fatigue-tscore": 33.7
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "fatigue-ceil",
+   "answers": {
+    "promis-hi7": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-an3": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-fatexp41": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-fatexp40": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    }
+   },
+   "expect": {
+    "promis-29-fatigue-raw": 20,
+    "promis-29-fatigue-tscore": 75.8
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "fatigue-asym",
+   "answers": {
+    "promis-hi7": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-an3": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-fatexp41": {
+     "code": "LA13909-9",
+     "label": "Somewhat"
+    },
+    "promis-fatexp40": {
+     "code": "LA13863-8",
+     "label": "A little bit"
+    }
+   },
+   "expect": {
+    "promis-29-fatigue-raw": 11,
+    "promis-29-fatigue-tscore": 55.1
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "sleep-floor",
+   "answers": {
+    "promis-sleep109": {
+     "code": "LA13913-1",
+     "label": "Very Good"
+    },
+    "promis-sleep116": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-sleep20": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-sleep44": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    }
+   },
+   "expect": {
+    "promis-29-sleep-raw": 4,
+    "promis-29-sleep-tscore": 32.0
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "sleep-ceil",
+   "answers": {
+    "promis-sleep109": {
+     "code": "LA9615-1",
+     "label": "Very poor"
+    },
+    "promis-sleep116": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-sleep20": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-sleep44": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    }
+   },
+   "expect": {
+    "promis-29-sleep-raw": 20,
+    "promis-29-sleep-tscore": 73.3
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "sleep-asym",
+   "answers": {
+    "promis-sleep109": {
+     "code": "LA9615-1",
+     "label": "Very poor"
+    },
+    "promis-sleep116": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-sleep20": {
+     "code": "LA13909-9",
+     "label": "Somewhat"
+    },
+    "promis-sleep44": {
+     "code": "LA13863-8",
+     "label": "A little bit"
+    }
+   },
+   "expect": {
+    "promis-29-sleep-raw": 11,
+    "promis-29-sleep-tscore": 52.4
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "social-floor",
+   "answers": {
+    "promis-srpper23-caps": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-srpper11-caps": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-srpper18-caps": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-srpper46-caps": {
+     "code": "LA9933-8",
+     "label": "Always"
+    }
+   },
+   "expect": {
+    "promis-29-social-raw": 4,
+    "promis-29-social-tscore": 27.5
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "social-ceil",
+   "answers": {
+    "promis-srpper23-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-srpper11-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-srpper18-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-srpper46-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    }
+   },
+   "expect": {
+    "promis-29-social-raw": 20,
+    "promis-29-social-tscore": 64.2
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "social-asym",
+   "answers": {
+    "promis-srpper23-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-srpper11-caps": {
+     "code": "LA9933-8",
+     "label": "Always"
+    },
+    "promis-srpper18-caps": {
+     "code": "LA10082-8",
+     "label": "Sometimes"
+    },
+    "promis-srpper46-caps": {
+     "code": "LA10066-1",
+     "label": "Rarely"
+    }
+   },
+   "expect": {
+    "promis-29-social-raw": 13,
+    "promis-29-social-tscore": 46.2
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "pain-interference-floor",
+   "answers": {
+    "promis-painin9": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-painin22": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-painin31": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-painin34": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    }
+   },
+   "expect": {
+    "promis-29-pain-interference-raw": 4,
+    "promis-29-pain-interference-tscore": 41.6
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "pain-interference-ceil",
+   "answers": {
+    "promis-painin9": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-painin22": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-painin31": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-painin34": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    }
+   },
+   "expect": {
+    "promis-29-pain-interference-raw": 20,
+    "promis-29-pain-interference-tscore": 75.6
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "pain-interference-asym",
+   "answers": {
+    "promis-painin9": {
+     "code": "LA6568-5",
+     "label": "Not at all"
+    },
+    "promis-painin22": {
+     "code": "LA13914-9",
+     "label": "Very much"
+    },
+    "promis-painin31": {
+     "code": "LA13909-9",
+     "label": "Somewhat"
+    },
+    "promis-painin34": {
+     "code": "LA13863-8",
+     "label": "A little bit"
+    }
+   },
+   "expect": {
+    "promis-29-pain-interference-raw": 11,
+    "promis-29-pain-interference-tscore": 59.9
+   },
+   "source": "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix"
+  },
+  {
+   "id": "social-teilantwort-guard",
+   "answers": {
+    "promis-srpper23-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-srpper11-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    },
+    "promis-srpper18-caps": {
+     "code": "LA6270-8",
+     "label": "Never"
+    }
+   },
+   "expect": {
+    "promis-29-social-tscore": null
+   },
+   "source": "Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "mii-pro-scripts",
+  "private": true,
+  "description": "Hilfsskripte und Tests des MII-PRO-Moduls. fhirpath = dieselbe Engine, die LHC-Forms zur Auswertung der calculatedExpressions einbettet.",
+  "devDependencies": {
+    "fhirpath": "4.5.1"
+  }
+}
