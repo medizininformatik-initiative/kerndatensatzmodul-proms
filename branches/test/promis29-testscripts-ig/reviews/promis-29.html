@@ -1,0 +1,667 @@
+<title>PROM-Review PROMIS-29</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f7f8fa;--surface:#fff;--ink:#1d232b;--muted:#5b6472;--line:#dde2e9;
+ --accent:#0f766e;--accent-ink:#fff;--ok-bg:#e7f3ea;--ok:#15803d;--warn-bg:#fdf0e0;
+ --warn:#b45309;--crit-bg:#fdeaea;--crit:#b91c1c;--code-bg:#eef1f5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#14181d;--surface:#1c2228;
+ --ink:#e8ebee;--muted:#9aa5b1;--line:#2c343d;--accent:#14b8a6;--accent-ink:#082f2b;
+ --ok-bg:#12301d;--ok:#5ccf85;--warn-bg:#37270f;--warn:#e0a64e;--crit-bg:#3a1717;--crit:#ef8a8a;--code-bg:#242b33}}
+:root[data-theme="dark"]{--bg:#14181d;--surface:#1c2228;--ink:#e8ebee;--muted:#9aa5b1;
+ --line:#2c343d;--accent:#14b8a6;--accent-ink:#082f2b;--ok-bg:#12301d;--ok:#5ccf85;
+ --warn-bg:#37270f;--warn:#e0a64e;--crit-bg:#3a1717;--crit:#ef8a8a;--code-bg:#242b33}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 14.5px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:2rem 1.25rem 4rem}
+.wrap{max-width:74rem;margin:0 auto}
+header{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;margin-bottom:.5rem}
+h1{font-size:1.5rem;margin:0;letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:.85rem;margin:0 0 1.25rem}
+.meta code{font-family:"IBM Plex Mono",monospace}
+.toggles{display:flex;gap:.5rem;margin-left:auto}
+.tg{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:.45rem;
+ padding:.3rem .7rem;font:600 .78rem "IBM Plex Sans";cursor:pointer}
+.tg[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+ margin:1.75rem 0 .5rem;display:flex;gap:.5rem;align-items:center}
+h2::before{content:"";width:.55rem;height:.55rem;border-radius:2px;background:var(--accent)}
+h3{font-size:1rem;margin:1.1rem 0 .4rem}
+h3 .src{font-weight:400}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:.6rem;padding:.4rem .9rem .7rem;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+td{padding:.5rem .55rem;border-top:1px solid var(--line);vertical-align:top}
+tr:first-child td{border-top:none}
+code{font-family:"IBM Plex Mono",monospace;font-size:.84em;background:var(--code-bg);padding:.03rem .28rem;border-radius:.25rem;white-space:nowrap}
+.qtext{min-width:16rem;max-width:26rem}
+.opts{display:flex;flex-wrap:wrap;gap:.35rem}
+.opt{border:1px solid var(--line);border-radius:.45rem;padding:.2rem .45rem;display:inline-flex;gap:.45rem;align-items:baseline;background:var(--bg)}
+.opt b{font-weight:500}
+.opt .w{font-family:"IBM Plex Mono",monospace;font-size:.8em;color:var(--accent);font-weight:600}
+.opt.dev{border-color:var(--warn);background:var(--warn-bg)}
+.flag{color:var(--warn)}
+.src{color:var(--muted);font-size:.78rem}
+body:not(.show-src) .src{display:none}
+body:not(.show-src) .opt .w{display:inline} /* Gewichte immer sichtbar */
+.l-de{display:none} body.lang-de .l-de{display:inline} body.lang-de .l-en{display:none}
+/* Parallelmodus: beide Sprachen untereinander — fuer den Uebersetzungs-Abgleich */
+body.lang-both .l-en{display:block}
+body.lang-both .l-de{display:block;color:var(--muted);font-size:.93em}
+body.lang-both .opt{flex-direction:column;align-items:flex-start;gap:.05rem}
+body.lang-both .opt b .l-de::before{content:"⇄ "}
+details{margin-top:.25rem} summary{cursor:pointer;font-size:.8rem;color:var(--accent)}
+pre{background:var(--code-bg);padding:.5rem .6rem;border-radius:.4rem;font:.78rem/1.45 "IBM Plex Mono";overflow-x:auto;white-space:pre-wrap;word-break:break-all}
+.ttab{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.4rem}
+.ttab span{background:var(--code-bg);border-radius:.35rem;padding:.15rem .4rem;font:.78rem "IBM Plex Mono"}
+.ttab em{color:var(--muted);font-style:normal;margin-right:.3rem}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:.08rem .45rem;border-radius:99px}
+.ok{background:var(--ok-bg);color:var(--ok)} .crit{background:var(--crit-bg);color:var(--crit)}
+tr.bad td{background:var(--crit-bg)}
+.answers{max-width:24rem}
+.legend{font-size:.8rem;color:var(--muted);margin:.4rem 0 0}
+</style>
+<body class="show-src">
+<div class="wrap">
+<header>
+ <h1>PROM-Review — PROMIS-29</h1>
+ <div class="toggles">
+  <button class="tg lang" data-mode="" aria-pressed="true">EN</button>
+  <button class="tg lang" data-mode="lang-de" aria-pressed="false">DE</button>
+  <button class="tg lang" data-mode="lang-both" aria-pressed="false">EN⇄DE</button>
+  <button class="tg" id="tg-src" aria-pressed="true">Quellen</button>
+ </div>
+</header>
+<p class="meta">Generiert aus <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.1</code> (en + de-Variante) · Gewichte aus den answerOptions ·
+Soll-Tabellen: Adult Profile Scoring Manual, v2.1-Appendix · Ist-Werte zur Buildzeit mit fhirpath.js berechnet ·
+⚠ = bekannte Abweichung (Ticket im Tooltip) · Zahl im Chip = itemWeight</p>
+
+<h2>Items &amp; Antwortoptionen</h2>
+
+<h3><span class="l-en">KÖRPERLICHE FUNKTION</span><span class="l-de">KÖRPERLICHE FUNKTION</span> <span class="src"><code>PROMIS-29.PhysicalFunction</code></span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-pfa11</code><div class="src"><code>LOINC 61597-1</code></div></td>
+ <td class="qtext"><span class="l-en">Are you able to do chores such as vacuuming or yard work [PROMIS]</span><span class="l-de">Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Unable to do</span><span class="l-de">Kann ich gar nicht</span></b><span class="w">1</span><span class="src">LA13912-3</span></span><span class="opt">
+     <b><span class="l-en">With much difficulty</span><span class="l-de">Mit großen Schwierigkeiten</span></b><span class="w">2</span><span class="src">LA13919-8</span></span><span class="opt">
+     <b><span class="l-en">With some difficulty</span><span class="l-de">Mit einigen Schwierigkeiten</span></b><span class="w">3</span><span class="src">LA13920-6</span></span><span class="opt">
+     <b><span class="l-en">With a little difficulty</span><span class="l-de">Mit geringen Schwierigkeiten</span></b><span class="w">4</span><span class="src">LA13918-0</span></span><span class="opt">
+     <b><span class="l-en">Without any difficulty</span><span class="l-de">Ohne jede Schwierigkeiten</span></b><span class="w">5</span><span class="src">LA13921-4</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-pfa21</code><div class="src"><code>LOINC 61607-8</code></div></td>
+ <td class="qtext"><span class="l-en">Are you able to go up and down stairs at a normal pace [PROMIS]</span><span class="l-de">Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Unable to do</span><span class="l-de">Kann ich gar nicht</span></b><span class="w">1</span><span class="src">LA13912-3</span></span><span class="opt">
+     <b><span class="l-en">With much difficulty</span><span class="l-de">Mit großen Schwierigkeiten</span></b><span class="w">2</span><span class="src">LA13919-8</span></span><span class="opt">
+     <b><span class="l-en">With some difficulty</span><span class="l-de">Mit einigen Schwierigkeiten</span></b><span class="w">3</span><span class="src">LA13920-6</span></span><span class="opt">
+     <b><span class="l-en">With a little difficulty</span><span class="l-de">Mit geringen Schwierigkeiten</span></b><span class="w">4</span><span class="src">LA13918-0</span></span><span class="opt">
+     <b><span class="l-en">Without any difficulty</span><span class="l-de">Ohne jede Schwierigkeiten</span></b><span class="w">5</span><span class="src">LA13921-4</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-pfa23</code><div class="src"><code>LOINC 61609-4</code></div></td>
+ <td class="qtext"><span class="l-en">Are you able to go for a walk of at least 15 minutes [PROMIS]</span><span class="l-de">Können Sie mindestens 15 Minuten lang spazieren gehen?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Unable to do</span><span class="l-de">Kann ich gar nicht</span></b><span class="w">1</span><span class="src">LA13912-3</span></span><span class="opt">
+     <b><span class="l-en">With much difficulty</span><span class="l-de">Mit großen Schwierigkeiten</span></b><span class="w">2</span><span class="src">LA13919-8</span></span><span class="opt">
+     <b><span class="l-en">With some difficulty</span><span class="l-de">Mit einigen Schwierigkeiten</span></b><span class="w">3</span><span class="src">LA13920-6</span></span><span class="opt">
+     <b><span class="l-en">With a little difficulty</span><span class="l-de">Mit geringen Schwierigkeiten</span></b><span class="w">4</span><span class="src">LA13918-0</span></span><span class="opt">
+     <b><span class="l-en">Without any difficulty</span><span class="l-de">Ohne jede Schwierigkeiten</span></b><span class="w">5</span><span class="src">LA13921-4</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-pfa53</code><div class="src"><code>LOINC 61635-9</code></div></td>
+ <td class="qtext"><span class="l-en">Are you able to run errands and shop [PROMIS]</span><span class="l-de">Können Sie Besorgungen machen und einkaufen gehen?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Unable to do</span><span class="l-de">Kann ich gar nicht</span></b><span class="w">1</span><span class="src">LA13912-3</span></span><span class="opt">
+     <b><span class="l-en">With much difficulty</span><span class="l-de">Mit großen Schwierigkeiten</span></b><span class="w">2</span><span class="src">LA13919-8</span></span><span class="opt">
+     <b><span class="l-en">With some difficulty</span><span class="l-de">Mit einigen Schwierigkeiten</span></b><span class="w">3</span><span class="src">LA13920-6</span></span><span class="opt">
+     <b><span class="l-en">With a little difficulty</span><span class="l-de">Mit geringen Schwierigkeiten</span></b><span class="w">4</span><span class="src">LA13918-0</span></span><span class="opt">
+     <b><span class="l-en">Without any difficulty</span><span class="l-de">Ohne jede Schwierigkeiten</span></b><span class="w">5</span><span class="src">LA13921-4</span></span></div></td>
+</tr></table></div>
+<h3><span class="l-en">ANGST</span><span class="l-de">ANGST</span> <span class="src"><code>PROMIS-29.Anxiety</code></span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-edanx01</code><div class="src"><code>LOINC 61923-9</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Ich fürchtete mich.</span><span class="l-de">Ich fürchtete mich.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-edanx40</code><div class="src"><code>LOINC 61941-1</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.</span><span class="l-de">Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-edanx41</code><div class="src"><code>LOINC 61942-9</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Meine Sorgen haben mich überwältigt.</span><span class="l-de">Meine Sorgen haben mich überwältigt.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-edanx53</code><div class="src"><code>LOINC 61949-4</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Ich fühlte mich unruhig.</span><span class="l-de">Ich fühlte mich unruhig.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr></table></div>
+<h3><span class="l-en">DEPRESSION</span><span class="l-de">DEPRESSION</span> <span class="src"><code>PROMIS-29.Depression</code></span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-eddep04</code><div class="src"><code>LOINC 61953-6</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Ich fühlte mich wertlos.</span><span class="l-de">Ich fühlte mich wertlos.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-eddep06</code><div class="src"><code>LOINC 61955-1</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Ich fühlte mich hilflos.</span><span class="l-de">Ich fühlte mich hilflos.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-eddep29</code><div class="src"><code>LOINC 61967-6</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Ich fühlte mich niedergeschlagen.</span><span class="l-de">Ich fühlte mich niedergeschlagen.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-eddep41</code><div class="src"><code>LOINC 61973-4</code> · Liste <code>LL1016-6</code></div></td>
+ <td class="qtext"><span class="l-en">Ich fühlte mich hoffnungslos.</span><span class="l-de">Ich fühlte mich hoffnungslos.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">1</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">2</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">4</span><span class="src">LA10044-8</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">5</span><span class="src">LA9933-8</span></span></div></td>
+</tr></table></div>
+<h3><span class="l-en">ERSCHÖPFUNG</span><span class="l-de">ERSCHÖPFUNG</span> <span class="src"><code>PROMIS-29.Fatigue</code></span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-hi7</code><div class="src"><code>LOINC 61878-5</code></div></td>
+ <td class="qtext"><span class="l-en">Ich bin erschöpft.</span><span class="l-de">Ich bin erschöpft.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-an3</code><div class="src"><code>LOINC 61882-7</code></div></td>
+ <td class="qtext"><span class="l-en">Es fällt mir schwer, etwas anzufangen, weil ich müde bin.</span><span class="l-de">Es fällt mir schwer, etwas anzufangen, weil ich müde bin.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-fatexp41</code><div class="src"><code>LOINC 61863-7</code></div></td>
+ <td class="qtext"><span class="l-en">Wie ausgelaugt fühlten Sie sich im Allgemeinen?</span><span class="l-de">Wie ausgelaugt fühlten Sie sich im Allgemeinen?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-fatexp40</code><div class="src"><code>LOINC 61864-5</code></div></td>
+ <td class="qtext"><span class="l-en">Wie erschöpft waren Sie im Allgemeinen?</span><span class="l-de">Wie erschöpft waren Sie im Allgemeinen?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr></table></div>
+<h3><span class="l-en">SCHLAFSTÖRUNGEN</span><span class="l-de">SCHLAFSTÖRUNGEN</span> <span class="src"><code>PROMIS-29.Sleep</code></span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-sleep109</code><div class="src"><code>LOINC 61987-4</code></div></td>
+ <td class="qtext"><span class="l-en">Meine Schlafqualität war ...</span><span class="l-de">Meine Schlafqualität war ...</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Very poor</span><span class="l-de">Sehr schlecht</span></b><span class="w">5</span><span class="src">LA9615-1</span></span><span class="opt">
+     <b><span class="l-en">Poor</span><span class="l-de">Schlecht</span></b><span class="w">4</span><span class="src">LA8969-3</span></span><span class="opt">
+     <b><span class="l-en">Fair</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA8968-5</span></span><span class="opt">
+     <b><span class="l-en">Good</span><span class="l-de">Gut</span></b><span class="w">2</span><span class="src">LA8967-7</span></span><span class="opt">
+     <b><span class="l-en">Very Good</span><span class="l-de">Sehr gut</span></b><span class="w">1</span><span class="src">LA13913-1</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-sleep116</code><div class="src"><code>LOINC 61986-6</code></div></td>
+ <td class="qtext"><span class="l-en">Mein Schlaf war erfrischend.</span><span class="l-de">Mein Schlaf war erfrischend.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">5</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">4</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">2</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">1</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-sleep20</code><div class="src"><code>LOINC 61998-1</code></div></td>
+ <td class="qtext"><span class="l-en">Ich hatte Schlafprobleme.</span><span class="l-de">Ich hatte Schlafprobleme.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-sleep44</code><div class="src"><code>LOINC 61999-9</code></div></td>
+ <td class="qtext"><span class="l-en">Ich hatte Schwierigkeiten einzuschlafen.</span><span class="l-de">Ich hatte Schwierigkeiten einzuschlafen.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr></table></div>
+<h3><span class="l-en">SOZIALE TEILHABE</span><span class="l-de">SOZIALE TEILHABE</span> <span class="src"><code>PROMIS-29.Social</code></span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-srpper23-caps</code><div class="src"><code>LOINC 76709-5</code> · Liste <code>LL3003-2</code></div></td>
+ <td class="qtext"><span class="l-en">Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).</span><span class="l-de">Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">5</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">4</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt dev" title="HDB-1008: LOINC-Liste LL3003-2 führt hier LA14747-2 „Usually“">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">2</span><span class="src">LA10044-8</span><span class="flag">⚠</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">1</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-srpper11-caps</code><div class="src"><code>LOINC 75417-6</code> · Liste <code>LL3003-2</code></div></td>
+ <td class="qtext"><span class="l-en">Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.</span><span class="l-de">Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">5</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">4</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt dev" title="HDB-1008: LOINC-Liste LL3003-2 führt hier LA14747-2 „Usually“">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">2</span><span class="src">LA10044-8</span><span class="flag">⚠</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">1</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-srpper18-caps</code><div class="src"><code>LOINC 76708-7</code> · Liste <code>LL3003-2</code></div></td>
+ <td class="qtext"><span class="l-en">Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.</span><span class="l-de">Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">5</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">4</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt dev" title="HDB-1008: LOINC-Liste LL3003-2 führt hier LA14747-2 „Usually“">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">2</span><span class="src">LA10044-8</span><span class="flag">⚠</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">1</span><span class="src">LA9933-8</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-srpper46-caps</code><div class="src"><code>LOINC 76712-9</code> · Liste <code>LL3003-2</code></div></td>
+ <td class="qtext"><span class="l-en">Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte.</span><span class="l-de">Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte.</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Never</span><span class="l-de">Nie</span></b><span class="w">5</span><span class="src">LA6270-8</span></span><span class="opt">
+     <b><span class="l-en">Rarely</span><span class="l-de">Selten</span></b><span class="w">4</span><span class="src">LA10066-1</span></span><span class="opt">
+     <b><span class="l-en">Sometimes</span><span class="l-de">Manchmal</span></b><span class="w">3</span><span class="src">LA10082-8</span></span><span class="opt dev" title="HDB-1008: LOINC-Liste LL3003-2 führt hier LA14747-2 „Usually“">
+     <b><span class="l-en">Often</span><span class="l-de">Oft</span></b><span class="w">2</span><span class="src">LA10044-8</span><span class="flag">⚠</span></span><span class="opt">
+     <b><span class="l-en">Always</span><span class="l-de">Immer</span></b><span class="w">1</span><span class="src">LA9933-8</span></span></div></td>
+</tr></table></div>
+<h3><span class="l-en">SCHMERZBEDINGTE BEEINTRÄCHTIGUNG</span><span class="l-de">SCHMERZBEDINGTE BEEINTRÄCHTIGUNG</span> <span class="src"><code>PROMIS-29.PainInterference</code></span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-painin9</code><div class="src"><code>LOINC 61758-9</code></div></td>
+ <td class="qtext"><span class="l-en">Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?</span><span class="l-de">Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-painin22</code><div class="src"><code>LOINC 61769-6</code></div></td>
+ <td class="qtext"><span class="l-en">Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?</span><span class="l-de">Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-painin31</code><div class="src"><code>LOINC 61773-8</code></div></td>
+ <td class="qtext"><span class="l-en">Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?</span><span class="l-de">Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr>
+<tr>
+ <td><code>promis-painin34</code><div class="src"><code>LOINC 61775-3</code></div></td>
+ <td class="qtext"><span class="l-en">Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?</span><span class="l-de">Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?</span></td>
+ <td><div class="opts"><span class="opt">
+     <b><span class="l-en">Not at all</span><span class="l-de">Überhaupt nicht</span></b><span class="w">1</span><span class="src">LA6568-5</span></span><span class="opt">
+     <b><span class="l-en">A little bit</span><span class="l-de">Ein wenig</span></b><span class="w">2</span><span class="src">LA13863-8</span></span><span class="opt">
+     <b><span class="l-en">Somewhat</span><span class="l-de">Mäßig</span></b><span class="w">3</span><span class="src">LA13909-9</span></span><span class="opt">
+     <b><span class="l-en">Quite a bit</span><span class="l-de">Ziemlich</span></b><span class="w">4</span><span class="src">LA13902-4</span></span><span class="opt">
+     <b><span class="l-en">Very much</span><span class="l-de">Sehr</span></b><span class="w">5</span><span class="src">LA13914-9</span></span></div></td>
+</tr></table></div>
+
+<h2>Scores</h2>
+
+<h3><span class="l-en">BEREICHS-BEWERTUNGEN</span><span class="l-de">BEREICHS-BEWERTUNGEN</span></h3>
+<div class="card"><table>
+<tr>
+ <td><code>promis-29-physical-function-raw</code><div class="src"><code>LOINC 71960-9</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Körperliche Funktion - Rohwert</span><span class="l-de">PROMIS-29 Körperliche Funktion - Rohwert</span>
+   <details><summary>calculatedExpression</summary><pre>%physicalFunctionRaw</pre></details></td>
+ <td><span class="src">Summe der Gewichte</span></td>
+</tr>
+<tr>
+ <td><code>promis-29-physical-function-tscore</code><div class="src"><code>LOINC 91721-1</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Körperliche Funktion - T-Score</span><span class="l-de">PROMIS-29 Körperliche Funktion - T-Score</span>
+   <details><summary>calculatedExpression</summary><pre>iif(%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.count() = 4, iif(%physicalFunctionRaw=4, 22.5, iif(%physicalFunctionRaw=5, 26.6, iif(%physicalFunctionRaw=6, 28.9, iif(%physicalFunctionRaw=7, 30.5, iif(%physicalFunctionRaw=8, 31.9, iif(%physicalFunctionRaw=9, 33.2, iif(%physicalFunctionRaw=10, 34.4, iif(%physicalFunctionRaw=11, 35.6, iif(%physicalFunctionRaw=12, 36.7, iif(%physicalFunctionRaw=13, 37.9, iif(%physicalFunctionRaw=14, 39.2, iif(%physicalFunctionRaw=15, 40.5, iif(%physicalFunctionRaw=16, 41.9, iif(%physicalFunctionRaw=17, 43.5, iif(%physicalFunctionRaw=18, 45.5, iif(%physicalFunctionRaw=19, 48.3, iif(%physicalFunctionRaw=20, 57.0, {}))))))))))))))))), {})</pre></details></td>
+ <td><details><summary>Lookup raw→T (offiziell, v2.1-Appendix)</summary>
+   <div class="ttab"><span><em>4</em>22.5</span><span><em>5</em>26.6</span><span><em>6</em>28.9</span><span><em>7</em>30.5</span><span><em>8</em>31.9</span><span><em>9</em>33.2</span><span><em>10</em>34.4</span><span><em>11</em>35.6</span><span><em>12</em>36.7</span><span><em>13</em>37.9</span><span><em>14</em>39.2</span><span><em>15</em>40.5</span><span><em>16</em>41.9</span><span><em>17</em>43.5</span><span><em>18</em>45.5</span><span><em>19</em>48.3</span><span><em>20</em>57.0</span></div></details></td>
+</tr>
+<tr>
+ <td><code>promis-29-anxiety-raw</code><div class="src"><code>LOINC 71968-2</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Angst - Rohwert</span><span class="l-de">PROMIS-29 Angst - Rohwert</span>
+   <details><summary>calculatedExpression</summary><pre>%anxietyRaw</pre></details></td>
+ <td><span class="src">Summe der Gewichte</span></td>
+</tr>
+<tr>
+ <td><code>promis-29-anxiety-tscore</code><div class="src"><code>LOINC 71967-4</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Angst - T-Score</span><span class="l-de">PROMIS-29 Angst - T-Score</span>
+   <details><summary>calculatedExpression</summary><pre>iif(%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.count() = 4, iif(%anxietyRaw=4, 40.3, iif(%anxietyRaw=5, 48.0, iif(%anxietyRaw=6, 51.2, iif(%anxietyRaw=7, 53.7, iif(%anxietyRaw=8, 55.8, iif(%anxietyRaw=9, 57.7, iif(%anxietyRaw=10, 59.5, iif(%anxietyRaw=11, 61.4, iif(%anxietyRaw=12, 63.4, iif(%anxietyRaw=13, 65.3, iif(%anxietyRaw=14, 67.3, iif(%anxietyRaw=15, 69.3, iif(%anxietyRaw=16, 71.2, iif(%anxietyRaw=17, 73.3, iif(%anxietyRaw=18, 75.4, iif(%anxietyRaw=19, 77.9, iif(%anxietyRaw=20, 81.6, {}))))))))))))))))), {})</pre></details></td>
+ <td><details><summary>Lookup raw→T (offiziell, v2.1-Appendix)</summary>
+   <div class="ttab"><span><em>4</em>40.3</span><span><em>5</em>48.0</span><span><em>6</em>51.2</span><span><em>7</em>53.7</span><span><em>8</em>55.8</span><span><em>9</em>57.7</span><span><em>10</em>59.5</span><span><em>11</em>61.4</span><span><em>12</em>63.4</span><span><em>13</em>65.3</span><span><em>14</em>67.3</span><span><em>15</em>69.3</span><span><em>16</em>71.2</span><span><em>17</em>73.3</span><span><em>18</em>75.4</span><span><em>19</em>77.9</span><span><em>20</em>81.6</span></div></details></td>
+</tr>
+<tr>
+ <td><code>promis-29-depression-raw</code><div class="src"><code>LOINC 71966-6</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Depression - Rohwert</span><span class="l-de">PROMIS-29 Depression - Rohwert</span>
+   <details><summary>calculatedExpression</summary><pre>%depressionRaw</pre></details></td>
+ <td><span class="src">Summe der Gewichte</span></td>
+</tr>
+<tr>
+ <td><code>promis-29-depression-tscore</code><div class="src"><code>LOINC 77861-3</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Depression - T-Score</span><span class="l-de">PROMIS-29 Depression - T-Score</span>
+   <details><summary>calculatedExpression</summary><pre>iif(%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.count() = 4, iif(%depressionRaw=4, 41.0, iif(%depressionRaw=5, 49.0, iif(%depressionRaw=6, 51.8, iif(%depressionRaw=7, 53.9, iif(%depressionRaw=8, 55.7, iif(%depressionRaw=9, 57.3, iif(%depressionRaw=10, 58.9, iif(%depressionRaw=11, 60.5, iif(%depressionRaw=12, 62.2, iif(%depressionRaw=13, 63.9, iif(%depressionRaw=14, 65.7, iif(%depressionRaw=15, 67.5, iif(%depressionRaw=16, 69.4, iif(%depressionRaw=17, 71.2, iif(%depressionRaw=18, 73.3, iif(%depressionRaw=19, 75.7, iif(%depressionRaw=20, 79.4, {}))))))))))))))))), {})</pre></details></td>
+ <td><details><summary>Lookup raw→T (offiziell, v2.1-Appendix)</summary>
+   <div class="ttab"><span><em>4</em>41.0</span><span><em>5</em>49.0</span><span><em>6</em>51.8</span><span><em>7</em>53.9</span><span><em>8</em>55.7</span><span><em>9</em>57.3</span><span><em>10</em>58.9</span><span><em>11</em>60.5</span><span><em>12</em>62.2</span><span><em>13</em>63.9</span><span><em>14</em>65.7</span><span><em>15</em>67.5</span><span><em>16</em>69.4</span><span><em>17</em>71.2</span><span><em>18</em>73.3</span><span><em>19</em>75.7</span><span><em>20</em>79.4</span></div></details></td>
+</tr>
+<tr>
+ <td><code>promis-29-fatigue-raw</code><div class="src"><code>LOINC 71964-1</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Erschöpfung - Rohwert</span><span class="l-de">PROMIS-29 Erschöpfung - Rohwert</span>
+   <details><summary>calculatedExpression</summary><pre>%fatigueRaw</pre></details></td>
+ <td><span class="src">Summe der Gewichte</span></td>
+</tr>
+<tr>
+ <td><code>promis-29-fatigue-tscore</code><div class="src"><code>LOINC 77864-7</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Erschöpfung - T-Score</span><span class="l-de">PROMIS-29 Erschöpfung - T-Score</span>
+   <details><summary>calculatedExpression</summary><pre>iif(%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.count() = 4, iif(%fatigueRaw=4, 33.7, iif(%fatigueRaw=5, 39.7, iif(%fatigueRaw=6, 43.1, iif(%fatigueRaw=7, 46.0, iif(%fatigueRaw=8, 48.6, iif(%fatigueRaw=9, 51.0, iif(%fatigueRaw=10, 53.1, iif(%fatigueRaw=11, 55.1, iif(%fatigueRaw=12, 57.0, iif(%fatigueRaw=13, 58.8, iif(%fatigueRaw=14, 60.7, iif(%fatigueRaw=15, 62.7, iif(%fatigueRaw=16, 64.6, iif(%fatigueRaw=17, 66.7, iif(%fatigueRaw=18, 69.0, iif(%fatigueRaw=19, 71.6, iif(%fatigueRaw=20, 75.8, {}))))))))))))))))), {})</pre></details></td>
+ <td><details><summary>Lookup raw→T (offiziell, v2.1-Appendix)</summary>
+   <div class="ttab"><span><em>4</em>33.7</span><span><em>5</em>39.7</span><span><em>6</em>43.1</span><span><em>7</em>46.0</span><span><em>8</em>48.6</span><span><em>9</em>51.0</span><span><em>10</em>53.1</span><span><em>11</em>55.1</span><span><em>12</em>57.0</span><span><em>13</em>58.8</span><span><em>14</em>60.7</span><span><em>15</em>62.7</span><span><em>16</em>64.6</span><span><em>17</em>66.7</span><span><em>18</em>69.0</span><span><em>19</em>71.6</span><span><em>20</em>75.8</span></div></details></td>
+</tr>
+<tr>
+ <td><code>promis-29-sleep-raw</code><div class="src"><code>LOINC 71956-7</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Schlafstörungen - Rohwert</span><span class="l-de">PROMIS-29 Schlafstörungen - Rohwert</span>
+   <details><summary>calculatedExpression</summary><pre>%sleepRaw</pre></details></td>
+ <td><span class="src">Summe der Gewichte</span></td>
+</tr>
+<tr>
+ <td><code>promis-29-sleep-tscore</code><div class="src"><code>LOINC 77860-5</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Schlafstörungen - T-Score</span><span class="l-de">PROMIS-29 Schlafstörungen - T-Score</span>
+   <details><summary>calculatedExpression</summary><pre>iif(%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.count() = 4, iif(%sleepRaw=4, 32.0, iif(%sleepRaw=5, 37.5, iif(%sleepRaw=6, 41.1, iif(%sleepRaw=7, 43.8, iif(%sleepRaw=8, 46.2, iif(%sleepRaw=9, 48.4, iif(%sleepRaw=10, 50.5, iif(%sleepRaw=11, 52.4, iif(%sleepRaw=12, 54.3, iif(%sleepRaw=13, 56.1, iif(%sleepRaw=14, 57.9, iif(%sleepRaw=15, 59.8, iif(%sleepRaw=16, 61.7, iif(%sleepRaw=17, 63.8, iif(%sleepRaw=18, 66.0, iif(%sleepRaw=19, 68.8, iif(%sleepRaw=20, 73.3, {}))))))))))))))))), {})</pre></details></td>
+ <td><details><summary>Lookup raw→T (offiziell, v2.1-Appendix)</summary>
+   <div class="ttab"><span><em>4</em>32.0</span><span><em>5</em>37.5</span><span><em>6</em>41.1</span><span><em>7</em>43.8</span><span><em>8</em>46.2</span><span><em>9</em>48.4</span><span><em>10</em>50.5</span><span><em>11</em>52.4</span><span><em>12</em>54.3</span><span><em>13</em>56.1</span><span><em>14</em>57.9</span><span><em>15</em>59.8</span><span><em>16</em>61.7</span><span><em>17</em>63.8</span><span><em>18</em>66.0</span><span><em>19</em>68.8</span><span><em>20</em>73.3</span></div></details></td>
+</tr>
+<tr>
+ <td><code>promis-29-social-raw</code><div class="src"><code>LOINC 71958-3</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Soziale Teilhabe - Rohwert</span><span class="l-de">PROMIS-29 Soziale Teilhabe - Rohwert</span>
+   <details><summary>calculatedExpression</summary><pre>%socialRaw</pre></details></td>
+ <td><span class="src">Summe der Gewichte</span></td>
+</tr>
+<tr>
+ <td><code>promis-29-social-tscore</code><div class="src"><code>LOINC 77854-8</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Soziale Teilhabe - T-Score</span><span class="l-de">PROMIS-29 Soziale Teilhabe - T-Score</span>
+   <details><summary>calculatedExpression</summary><pre>iif(%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.count() = 4, iif(%socialRaw=4, 27.5, iif(%socialRaw=5, 31.8, iif(%socialRaw=6, 34.0, iif(%socialRaw=7, 35.7, iif(%socialRaw=8, 37.3, iif(%socialRaw=9, 38.8, iif(%socialRaw=10, 40.5, iif(%socialRaw=11, 42.3, iif(%socialRaw=12, 44.2, iif(%socialRaw=13, 46.2, iif(%socialRaw=14, 48.1, iif(%socialRaw=15, 50.0, iif(%socialRaw=16, 51.9, iif(%socialRaw=17, 53.7, iif(%socialRaw=18, 55.8, iif(%socialRaw=19, 58.3, iif(%socialRaw=20, 64.2, {}))))))))))))))))), {})</pre></details></td>
+ <td><details><summary>Lookup raw→T (offiziell, v2.1-Appendix)</summary>
+   <div class="ttab"><span><em>4</em>27.5</span><span><em>5</em>31.8</span><span><em>6</em>34.0</span><span><em>7</em>35.7</span><span><em>8</em>37.3</span><span><em>9</em>38.8</span><span><em>10</em>40.5</span><span><em>11</em>42.3</span><span><em>12</em>44.2</span><span><em>13</em>46.2</span><span><em>14</em>48.1</span><span><em>15</em>50.0</span><span><em>16</em>51.9</span><span><em>17</em>53.7</span><span><em>18</em>55.8</span><span><em>19</em>58.3</span><span><em>20</em>64.2</span></div></details></td>
+</tr>
+<tr>
+ <td><code>promis-29-pain-interference-raw</code><div class="src"><code>LOINC 71962-5</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert</span><span class="l-de">PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert</span>
+   <details><summary>calculatedExpression</summary><pre>%painInterferenceRaw</pre></details></td>
+ <td><span class="src">Summe der Gewichte</span></td>
+</tr>
+<tr>
+ <td><code>promis-29-pain-interference-tscore</code><div class="src"><code>LOINC 77865-4</code> · Unit <code>{score}</code></div></td>
+ <td class="qtext"><span class="l-en">PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score</span><span class="l-de">PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score</span>
+   <details><summary>calculatedExpression</summary><pre>iif(%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.count() = 4, iif(%painInterferenceRaw=4, 41.6, iif(%painInterferenceRaw=5, 49.6, iif(%painInterferenceRaw=6, 52.0, iif(%painInterferenceRaw=7, 53.9, iif(%painInterferenceRaw=8, 55.6, iif(%painInterferenceRaw=9, 57.1, iif(%painInterferenceRaw=10, 58.5, iif(%painInterferenceRaw=11, 59.9, iif(%painInterferenceRaw=12, 61.2, iif(%painInterferenceRaw=13, 62.5, iif(%painInterferenceRaw=14, 63.8, iif(%painInterferenceRaw=15, 65.2, iif(%painInterferenceRaw=16, 66.6, iif(%painInterferenceRaw=17, 68.0, iif(%painInterferenceRaw=18, 69.7, iif(%painInterferenceRaw=19, 71.6, iif(%painInterferenceRaw=20, 75.6, {}))))))))))))))))), {})</pre></details></td>
+ <td><details><summary>Lookup raw→T (offiziell, v2.1-Appendix)</summary>
+   <div class="ttab"><span><em>4</em>41.6</span><span><em>5</em>49.6</span><span><em>6</em>52.0</span><span><em>7</em>53.9</span><span><em>8</em>55.6</span><span><em>9</em>57.1</span><span><em>10</em>58.5</span><span><em>11</em>59.9</span><span><em>12</em>61.2</span><span><em>13</em>62.5</span><span><em>14</em>63.8</span><span><em>15</em>65.2</span><span><em>16</em>66.6</span><span><em>17</em>68.0</span><span><em>18</em>69.7</span><span><em>19</em>71.6</span><span><em>20</em>75.6</span></div></details></td>
+</tr></table></div>
+
+<h2>Scoretests — 22/22 grün (Buildzeit-Lauf)</h2>
+<div class="card"><table>
+<tr><td class="src">Szenario</td><td class="src">Antworten</td><td class="src">Erwartet → Ist</td><td class="src">Quelle</td></tr>
+
+<tr class="">
+ <td><code>physical-function-floor</code></td>
+ <td class="answers"><span class="src">pfa11</span> Unable to do · <span class="src">pfa21</span> Unable to do · <span class="src">pfa23</span> Unable to do · <span class="src">pfa53</span> Unable to do</td>
+ <td><div>physical-function-raw = <b>4</b>
+   <span class="pill ok">✓</span></div><div>physical-function-tscore = <b>22.5</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>physical-function-ceil</code></td>
+ <td class="answers"><span class="src">pfa11</span> Without any difficulty · <span class="src">pfa21</span> Without any difficulty · <span class="src">pfa23</span> Without any difficulty · <span class="src">pfa53</span> Without any difficulty</td>
+ <td><div>physical-function-raw = <b>20</b>
+   <span class="pill ok">✓</span></div><div>physical-function-tscore = <b>57</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>physical-function-asym</code></td>
+ <td class="answers"><span class="src">pfa11</span> Unable to do · <span class="src">pfa21</span> Without any difficulty · <span class="src">pfa23</span> With some difficulty · <span class="src">pfa53</span> With much difficulty</td>
+ <td><div>physical-function-raw = <b>11</b>
+   <span class="pill ok">✓</span></div><div>physical-function-tscore = <b>35.6</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>anxiety-floor</code></td>
+ <td class="answers"><span class="src">edanx01</span> Never · <span class="src">edanx40</span> Never · <span class="src">edanx41</span> Never · <span class="src">edanx53</span> Never</td>
+ <td><div>anxiety-raw = <b>4</b>
+   <span class="pill ok">✓</span></div><div>anxiety-tscore = <b>40.3</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>anxiety-ceil</code></td>
+ <td class="answers"><span class="src">edanx01</span> Always · <span class="src">edanx40</span> Always · <span class="src">edanx41</span> Always · <span class="src">edanx53</span> Always</td>
+ <td><div>anxiety-raw = <b>20</b>
+   <span class="pill ok">✓</span></div><div>anxiety-tscore = <b>81.6</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>anxiety-asym</code></td>
+ <td class="answers"><span class="src">edanx01</span> Never · <span class="src">edanx40</span> Always · <span class="src">edanx41</span> Sometimes · <span class="src">edanx53</span> Rarely</td>
+ <td><div>anxiety-raw = <b>11</b>
+   <span class="pill ok">✓</span></div><div>anxiety-tscore = <b>61.4</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>depression-floor</code></td>
+ <td class="answers"><span class="src">eddep04</span> Never · <span class="src">eddep06</span> Never · <span class="src">eddep29</span> Never · <span class="src">eddep41</span> Never</td>
+ <td><div>depression-raw = <b>4</b>
+   <span class="pill ok">✓</span></div><div>depression-tscore = <b>41</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>depression-ceil</code></td>
+ <td class="answers"><span class="src">eddep04</span> Always · <span class="src">eddep06</span> Always · <span class="src">eddep29</span> Always · <span class="src">eddep41</span> Always</td>
+ <td><div>depression-raw = <b>20</b>
+   <span class="pill ok">✓</span></div><div>depression-tscore = <b>79.4</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>depression-asym</code></td>
+ <td class="answers"><span class="src">eddep04</span> Never · <span class="src">eddep06</span> Always · <span class="src">eddep29</span> Sometimes · <span class="src">eddep41</span> Rarely</td>
+ <td><div>depression-raw = <b>11</b>
+   <span class="pill ok">✓</span></div><div>depression-tscore = <b>60.5</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>fatigue-floor</code></td>
+ <td class="answers"><span class="src">hi7</span> Not at all · <span class="src">an3</span> Not at all · <span class="src">fatexp41</span> Not at all · <span class="src">fatexp40</span> Not at all</td>
+ <td><div>fatigue-raw = <b>4</b>
+   <span class="pill ok">✓</span></div><div>fatigue-tscore = <b>33.7</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>fatigue-ceil</code></td>
+ <td class="answers"><span class="src">hi7</span> Very much · <span class="src">an3</span> Very much · <span class="src">fatexp41</span> Very much · <span class="src">fatexp40</span> Very much</td>
+ <td><div>fatigue-raw = <b>20</b>
+   <span class="pill ok">✓</span></div><div>fatigue-tscore = <b>75.8</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>fatigue-asym</code></td>
+ <td class="answers"><span class="src">hi7</span> Not at all · <span class="src">an3</span> Very much · <span class="src">fatexp41</span> Somewhat · <span class="src">fatexp40</span> A little bit</td>
+ <td><div>fatigue-raw = <b>11</b>
+   <span class="pill ok">✓</span></div><div>fatigue-tscore = <b>55.1</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>sleep-floor</code></td>
+ <td class="answers"><span class="src">sleep109</span> Very Good · <span class="src">sleep116</span> Very much · <span class="src">sleep20</span> Not at all · <span class="src">sleep44</span> Not at all</td>
+ <td><div>sleep-raw = <b>4</b>
+   <span class="pill ok">✓</span></div><div>sleep-tscore = <b>32</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>sleep-ceil</code></td>
+ <td class="answers"><span class="src">sleep109</span> Very poor · <span class="src">sleep116</span> Not at all · <span class="src">sleep20</span> Very much · <span class="src">sleep44</span> Very much</td>
+ <td><div>sleep-raw = <b>20</b>
+   <span class="pill ok">✓</span></div><div>sleep-tscore = <b>73.3</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>sleep-asym</code></td>
+ <td class="answers"><span class="src">sleep109</span> Very poor · <span class="src">sleep116</span> Very much · <span class="src">sleep20</span> Somewhat · <span class="src">sleep44</span> A little bit</td>
+ <td><div>sleep-raw = <b>11</b>
+   <span class="pill ok">✓</span></div><div>sleep-tscore = <b>52.4</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>social-floor</code></td>
+ <td class="answers"><span class="src">srpper23-caps</span> Always · <span class="src">srpper11-caps</span> Always · <span class="src">srpper18-caps</span> Always · <span class="src">srpper46-caps</span> Always</td>
+ <td><div>social-raw = <b>4</b>
+   <span class="pill ok">✓</span></div><div>social-tscore = <b>27.5</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>social-ceil</code></td>
+ <td class="answers"><span class="src">srpper23-caps</span> Never · <span class="src">srpper11-caps</span> Never · <span class="src">srpper18-caps</span> Never · <span class="src">srpper46-caps</span> Never</td>
+ <td><div>social-raw = <b>20</b>
+   <span class="pill ok">✓</span></div><div>social-tscore = <b>64.2</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>social-asym</code></td>
+ <td class="answers"><span class="src">srpper23-caps</span> Never · <span class="src">srpper11-caps</span> Always · <span class="src">srpper18-caps</span> Sometimes · <span class="src">srpper46-caps</span> Rarely</td>
+ <td><div>social-raw = <b>13</b>
+   <span class="pill ok">✓</span></div><div>social-tscore = <b>46.2</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>pain-interference-floor</code></td>
+ <td class="answers"><span class="src">painin9</span> Not at all · <span class="src">painin22</span> Not at all · <span class="src">painin31</span> Not at all · <span class="src">painin34</span> Not at all</td>
+ <td><div>pain-interference-raw = <b>4</b>
+   <span class="pill ok">✓</span></div><div>pain-interference-tscore = <b>41.6</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>pain-interference-ceil</code></td>
+ <td class="answers"><span class="src">painin9</span> Very much · <span class="src">painin22</span> Very much · <span class="src">painin31</span> Very much · <span class="src">painin34</span> Very much</td>
+ <td><div>pain-interference-raw = <b>20</b>
+   <span class="pill ok">✓</span></div><div>pain-interference-tscore = <b>75.6</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>pain-interference-asym</code></td>
+ <td class="answers"><span class="src">painin9</span> Not at all · <span class="src">painin22</span> Very much · <span class="src">painin31</span> Somewhat · <span class="src">painin34</span> A little bit</td>
+ <td><div>pain-interference-raw = <b>11</b>
+   <span class="pill ok">✓</span></div><div>pain-interference-tscore = <b>59.9</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix</td>
+</tr>
+<tr class="">
+ <td><code>social-teilantwort-guard</code></td>
+ <td class="answers"><span class="src">srpper23-caps</span> Never · <span class="src">srpper11-caps</span> Never · <span class="src">srpper18-caps</span> Never</td>
+ <td><div>social-tscore = <b>∅ (Guard)</b>
+   <span class="pill ok">✓</span></div></td>
+ <td class="src">Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form</td>
+</tr>
+</table></div>
+<p class="legend">Dieselben Szenarien laufen als CI-Tests (fhirpath.js), als IG-TestScripts und als Server-E2E ($extract) — Quelle: <code>scripts/data/scoring-cases/promis29-cases.json</code>.</p>
+</div>
+<script>
+for (const b of document.querySelectorAll('.tg.lang')) {
+  b.addEventListener('click', () => {
+    document.body.classList.remove('lang-de', 'lang-both');
+    if (b.dataset.mode) document.body.classList.add(b.dataset.mode);
+    for (const o of document.querySelectorAll('.tg.lang'))
+      o.setAttribute('aria-pressed', o === b);
+  });
+}
+const tgSrc = document.getElementById('tg-src');
+tgSrc.addEventListener('click', () => {
+  const on = tgSrc.getAttribute('aria-pressed') !== 'true';
+  tgSrc.setAttribute('aria-pressed', on);
+  document.body.classList.toggle('show-src', on);
+});
+</script>
+</body>

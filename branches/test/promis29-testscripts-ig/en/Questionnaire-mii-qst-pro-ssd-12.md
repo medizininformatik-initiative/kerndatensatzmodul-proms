@@ -81,7 +81,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO SSD-12",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-14T07:51:24+00:00",
+  "date" : "2026-10-14T08:29:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

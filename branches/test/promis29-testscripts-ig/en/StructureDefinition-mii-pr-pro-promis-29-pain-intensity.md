@@ -43,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "title" : "MII PR PRO PROMIS-29 Pain Intensity",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-14T07:51:24+00:00",
+  "date" : "2026-10-14T08:29:08+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
