@@ -209,6 +209,11 @@ code{font-family:"IBM Plex Mono",monospace;font-size:.84em;background:var(--code
 body:not(.show-src) .src{display:none}
 body:not(.show-src) .opt .w{display:inline} /* Gewichte immer sichtbar */
 .l-de{display:none} body.lang-de .l-de{display:inline} body.lang-de .l-en{display:none}
+/* Parallelmodus: beide Sprachen untereinander — fuer den Uebersetzungs-Abgleich */
+body.lang-both .l-en{display:block}
+body.lang-both .l-de{display:block;color:var(--muted);font-size:.93em}
+body.lang-both .opt{flex-direction:column;align-items:flex-start;gap:.05rem}
+body.lang-both .opt b .l-de::before{content:"⇄ "}
 details{margin-top:.25rem} summary{cursor:pointer;font-size:.8rem;color:var(--accent)}
 pre{background:var(--code-bg);padding:.5rem .6rem;border-radius:.4rem;font:.78rem/1.45 "IBM Plex Mono";overflow-x:auto;white-space:pre-wrap;word-break:break-all}
 .ttab{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.4rem}
@@ -225,7 +230,9 @@ tr.bad td{background:var(--crit-bg)}
 <header>
  <h1>PROM-Review — PROMIS-29</h1>
  <div class="toggles">
-  <button class="tg" id="tg-lang" aria-pressed="false">Deutsch</button>
+  <button class="tg lang" data-mode="" aria-pressed="true">EN</button>
+  <button class="tg lang" data-mode="lang-de" aria-pressed="false">DE</button>
+  <button class="tg lang" data-mode="lang-both" aria-pressed="false">EN⇄DE</button>
   <button class="tg" id="tg-src" aria-pressed="true">Quellen</button>
  </div>
 </header>
@@ -251,12 +258,14 @@ ${caseTable}
 <p class="legend">Dieselben Szenarien laufen als CI-Tests (fhirpath.js), als IG-TestScripts und als Server-E2E ($extract) — Quelle: <code>scripts/data/scoring-cases/promis29-cases.json</code>.</p>
 </div>
 <script>
-const tgLang = document.getElementById('tg-lang');
-tgLang.addEventListener('click', () => {
-  const on = tgLang.getAttribute('aria-pressed') !== 'true';
-  tgLang.setAttribute('aria-pressed', on);
-  document.body.classList.toggle('lang-de', on);
-});
+for (const b of document.querySelectorAll('.tg.lang')) {
+  b.addEventListener('click', () => {
+    document.body.classList.remove('lang-de', 'lang-both');
+    if (b.dataset.mode) document.body.classList.add(b.dataset.mode);
+    for (const o of document.querySelectorAll('.tg.lang'))
+      o.setAttribute('aria-pressed', o === b);
+  });
+}
 const tgSrc = document.getElementById('tg-src');
 tgSrc.addEventListener('click', () => {
   const on = tgSrc.getAttribute('aria-pressed') !== 'true';
