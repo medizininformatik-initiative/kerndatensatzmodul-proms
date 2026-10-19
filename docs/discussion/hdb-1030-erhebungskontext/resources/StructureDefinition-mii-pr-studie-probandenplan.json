@@ -1,0 +1,142 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-studie-probandenplan",
+  "url": "https://pcor-mii.de/fhir/StructureDefinition/mii-pr-studie-probandenplan",
+  "version": "0.1.0",
+  "name": "MII_PR_Studie_Probandenplan",
+  "title": "MII PR Studie Probandenplan (Vorschlag)",
+  "status": "draft",
+  "experimental": true,
+  "description": "VORSCHLAG fuer das MII-Modul Medizinisches Forschungsvorhaben: der auf eine Probandin / einen Probanden angewendete Erhebungsplan. Instanziiert das Studienprotokoll (PlanDefinition), traegt pro protokolliertem Zeitpunkt eine activity mit Visitencode, Soll-Fenster, Status und – nach Durchfuehrung – der Referenz auf das Ergebnis (QuestionnaireResponse, Observation, Procedure). QuestionnaireResponse.basedOn und Observation.basedOn zeigen auf diesen Plan; das Indexdatum liegt auf ResearchSubject.period.start.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.instantiatesCanonical",
+        "path": "CarePlan.instantiatesCanonical",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "https://pcor-mii.de/fhir/StructureDefinition/mii-pr-studie-studienprotokoll"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.status",
+        "path": "CarePlan.status",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.intent",
+        "path": "CarePlan.intent",
+        "patternCode": "plan",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.title",
+        "path": "CarePlan.title",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.period",
+        "path": "CarePlan.period",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.period.start",
+        "path": "CarePlan.period.start",
+        "short": "Indexdatum des Plans (i. d. R. = ResearchSubject.period.start oder Datum des Referenzereignisses)",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.supportingInfo",
+        "path": "CarePlan.supportingInfo",
+        "short": "Proband:in (ResearchSubject) und ggf. der Fall des Referenzereignisses (Encounter)",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity",
+        "path": "CarePlan.activity",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.outcomeReference",
+        "path": "CarePlan.activity.outcomeReference",
+        "short": "Ergebnis des Zeitpunkts: QuestionnaireResponse, Observation, Procedure, Specimen",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail",
+        "path": "CarePlan.activity.detail",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.kind",
+        "path": "CarePlan.activity.detail.kind",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.instantiatesCanonical",
+        "path": "CarePlan.activity.detail.instantiatesCanonical",
+        "short": "Konkretes Instrument / Aktivitaet dieses Zeitpunkts (Questionnaire, ActivityDefinition)",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.code",
+        "path": "CarePlan.activity.detail.code",
+        "short": "Visitencode = action.id/code der PlanDefinition",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.status",
+        "path": "CarePlan.activity.detail.status",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.scheduled[x]",
+        "path": "CarePlan.activity.detail.scheduled[x]",
+        "short": "Soll-Fenster (Period) oder Wiederholungsmuster (Timing)",
+        "type": [
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.description",
+        "path": "CarePlan.activity.detail.description",
+        "mustSupport": true
+      }
+    ]
+  }
+}

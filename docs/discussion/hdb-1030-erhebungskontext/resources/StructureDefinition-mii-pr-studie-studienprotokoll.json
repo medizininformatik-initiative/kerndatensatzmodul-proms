@@ -1,0 +1,198 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-studie-studienprotokoll",
+  "url": "https://pcor-mii.de/fhir/StructureDefinition/mii-pr-studie-studienprotokoll",
+  "version": "0.1.0",
+  "name": "MII_PR_Studie_Studienprotokoll",
+  "title": "MII PR Studie Studienprotokoll (Vorschlag)",
+  "status": "draft",
+  "experimental": true,
+  "description": "VORSCHLAG fuer das MII-Modul Medizinisches Forschungsvorhaben: maschinenlesbarer Erhebungsplan eines Forschungsvorhabens. Beschreibt die protokollierten Zeitpunkte (Befragung, Untersuchung, Intervention, Dokumentation) als Aktionen mit Visitencode, Ausloeser, Zeitbezug zu einem Referenzereignis und den dort einzusetzenden Definitionen (Questionnaire, ActivityDefinition). Instanziiert wird das Protokoll je Proband:in als Probandenplan (CarePlan).",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition.url",
+        "path": "PlanDefinition.url",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.version",
+        "path": "PlanDefinition.version",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.name",
+        "path": "PlanDefinition.name",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.title",
+        "path": "PlanDefinition.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.type",
+        "path": "PlanDefinition.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "clinical-protocol",
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.status",
+        "path": "PlanDefinition.status",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.subject[x]",
+        "path": "PlanDefinition.subject[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.date",
+        "path": "PlanDefinition.date",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.publisher",
+        "path": "PlanDefinition.publisher",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.description",
+        "path": "PlanDefinition.description",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.relatedArtifact",
+        "path": "PlanDefinition.relatedArtifact",
+        "short": "Studienregister-Eintrag, Protokollpublikation, SAP",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.goal",
+        "path": "PlanDefinition.goal",
+        "short": "Endpunkte der Studie in Prosa oder kodiert",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.goal.description",
+        "path": "PlanDefinition.goal.description",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action",
+        "path": "PlanDefinition.action",
+        "short": "Setting-Gruppe oder protokollierter Zeitpunkt; verschachtelt",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.id",
+        "path": "PlanDefinition.action.id",
+        "short": "Visitencode (eindeutig innerhalb der PlanDefinition); wird auf Instanzebene als Protokollposition gefuehrt",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.prefix",
+        "path": "PlanDefinition.action.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.title",
+        "path": "PlanDefinition.action.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.description",
+        "path": "PlanDefinition.action.description",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.code",
+        "path": "PlanDefinition.action.code",
+        "short": "Zeitpunktart(en): Referenzereignis, Befragung, Untersuchung, Intervention, Dokumentation – zusaetzlich der Visitencode aus dem studienspezifischen CodeSystem",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://pcor-mii.de/fhir/ValueSet/pcor-vs-protokoll-aktionstyp",
+          "description": "Mindestens ein Code sollte die Zeitpunktart nennen; weitere Codes (Visitencode) sind frei."
+        }
+      },
+      {
+        "id": "PlanDefinition.action.trigger",
+        "path": "PlanDefinition.action.trigger",
+        "short": "Ausloesendes Ereignis fuer Referenzereignisse (named-event: admission, discharge, enrolment, surgery …)",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.condition",
+        "path": "PlanDefinition.action.condition",
+        "short": "Anwendbarkeit: Setting, BMI-Schwelle, Arm",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.relatedAction",
+        "path": "PlanDefinition.action.relatedAction",
+        "short": "Zeitbezug zum Referenzereignis: relationship + offsetDuration (z. B. after-end 18 'mo')",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.relatedAction.actionId",
+        "path": "PlanDefinition.action.relatedAction.actionId",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.relatedAction.relationship",
+        "path": "PlanDefinition.action.relatedAction.relationship",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.relatedAction.offset[x]",
+        "path": "PlanDefinition.action.relatedAction.offset[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.timing[x]",
+        "path": "PlanDefinition.action.timing[x]",
+        "short": "Wiederholungsmuster (Timing) oder Toleranzfenster (Range/Duration)",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.groupingBehavior",
+        "path": "PlanDefinition.action.groupingBehavior",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.definition[x]",
+        "path": "PlanDefinition.action.definition[x]",
+        "short": "Was ist zu tun: Questionnaire (Befragung), ActivityDefinition (Untersuchung/Intervention)",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.action",
+        "path": "PlanDefinition.action.action",
+        "mustSupport": true
+      }
+    ]
+  }
+}

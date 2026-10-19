@@ -1,0 +1,867 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "pcor-mii-an-studienprotokoll",
+  "meta": {
+    "profile": [
+      "https://pcor-mii.de/fhir/StructureDefinition/mii-pr-studie-studienprotokoll"
+    ]
+  },
+  "url": "https://pcor-mii.de/fhir/PlanDefinition/pcor-mii-an-studienprotokoll",
+  "title": "PCOR-MII-AN: Erhebungsplan (Befragungs-, Untersuchungs- und Dokumentationszeitpunkte)",
+  "description": "Prospektive, nicht-interventionelle Laengsschnittstudie. Stationaer/teilstationaer: Befragung bei Aufnahme und Entlassung, 2 und 4 Wochen sowie 3 Monate nach Entlassung, danach BMI-abhaengig vierteljaehrlich oder jaehrlich. Ambulant: Befragungsbeginn, danach vierteljaehrlich, BMI-adaptiv. Endpunkte 18 Monate (primaer), 3 Jahre (sekundaer), 6 Jahre (tertiaer) nach Entlassung bzw. Befragungsbeginn. Zusaetzlich Klinikerrating, Blut-/Stuhlproben waehrend des Aufenthalts und Extraktion von Routinedaten.",
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-protocol",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+      }
+    ]
+  },
+  "version": "0.1.0",
+  "name": "PCOR_MII_AN_Studienprotokoll",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-10-19",
+  "publisher": "PCOR-MII (Beispiel, nicht autorisiert)",
+  "subjectCodeableConcept": {
+    "coding": [
+      {
+        "code": "Patient",
+        "system": "http://hl7.org/fhir/resource-types"
+      }
+    ]
+  },
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "label": "DRKS00038048",
+      "display": "Deutsches Register Klinischer Studien: PCOR-MII-AN",
+      "url": "https://drks.de/search/de/trial/DRKS00038048"
+    },
+    {
+      "type": "citation",
+      "citation": "Integrating the Patient Perspective into Healthcare and Real-World Evidence: The Multi-site, Cross-Disease, Patient-Centered Outcomes Research Project in the Medical Informatics Initiative (PCOR-MII). J Healthc Inform Res 2025. doi:10.1007/s41666-025-00187-8"
+    }
+  ],
+  "goal": [
+    {
+      "category": {
+        "text": "Primaerer Endpunkt"
+      },
+      "description": {
+        "text": "Symptomausprägung 18 Monate nach Entlassung (stationaer/teilstationaer) bzw. 18 Monate nach Befragungsbeginn (ambulant)"
+      }
+    },
+    {
+      "category": {
+        "text": "Sekundaerer Endpunkt"
+      },
+      "description": {
+        "text": "Verlauf 3 Jahre nach Entlassung bzw. Befragungsbeginn"
+      }
+    },
+    {
+      "category": {
+        "text": "Tertiaerer Endpunkt"
+      },
+      "description": {
+        "text": "Langzeitverlauf 6 Jahre nach Entlassung bzw. Befragungsbeginn"
+      }
+    }
+  ],
+  "action": [
+    {
+      "id": "stationaer",
+      "prefix": "S",
+      "title": "Setting (teil-)stationaer",
+      "description": "Gilt fuer Patient:innen in voll- oder teilstationaerer Behandlung. Referenzereignis fuer alle Folgezeitpunkte ist die Entlassung (T1).",
+      "groupingBehavior": "logical-group",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Aufnahme in voll- oder teilstationaere Behandlung",
+            "language": "text/fhirpath",
+            "expression": "%encounter.class.code = 'IMP' or %encounter.class.code = 'SS'"
+          }
+        }
+      ],
+      "action": [
+        {
+          "id": "T0-AUF",
+          "prefix": "T0",
+          "title": "Aufnahme",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "T0-AUF",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            }
+          ],
+          "trigger": [
+            {
+              "type": "named-event",
+              "name": "admission"
+            }
+          ],
+          "groupingBehavior": "logical-group",
+          "action": [
+            {
+              "title": "Befragung: PCOR-MII-Basisdatensatz (73 Items, standortabhaengig erweitert)",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "befragung",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ],
+              "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+            },
+            {
+              "title": "Befragung: PHQ-9 vollstaendig (nur Validierungsstandorte)",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "befragung",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ],
+              "definitionCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.1"
+            },
+            {
+              "title": "Befragung: GAD-7 vollstaendig (nur Validierungsstandorte)",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "befragung",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ],
+              "definitionCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7|2027.0.0-ballot.1"
+            },
+            {
+              "title": "Untersuchung: Blut- und Stuhlprobe (Analyse im Studienzentrum Heidelberg)",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "untersuchung",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Dokumentation: Klinikerrating zu Einschraenkungen",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "dokumentation",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T1-ENT",
+          "prefix": "T1",
+          "title": "Entlassung (Referenzereignis)",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "T1-ENT",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "referenzereignis",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "trigger": [
+            {
+              "type": "named-event",
+              "name": "discharge"
+            }
+          ],
+          "groupingBehavior": "logical-group",
+          "action": [
+            {
+              "title": "Befragung: PCOR-MII-Basisdatensatz",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "befragung",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ],
+              "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+            },
+            {
+              "title": "Dokumentation: Klinikerrating zu Einschraenkungen",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "dokumentation",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "FU-2W",
+          "title": "Follow-up 2 Wochen nach Entlassung",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "FU-2W",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "T1-ENT",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 2,
+                "code": "wk",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "FU-4W",
+          "title": "Follow-up 4 Wochen nach Entlassung",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "FU-4W",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "T1-ENT",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 4,
+                "code": "wk",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "FU-3M",
+          "title": "Follow-up 3 Monate nach Entlassung",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "FU-3M",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "T1-ENT",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 3,
+                "code": "mo",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "FU-Q",
+          "title": "Vierteljaehrliches Follow-up (BMI unter Studienschwelle)",
+          "description": "Ab 3 Monaten nach Entlassung alle 3 Monate, solange der aktuelle BMI unter der studienspezifischen Schwelle liegt. Laeuft bis zum primaeren Endpunkt.",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "FU-Q",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "description": "Aktueller BMI unterhalb der studienspezifischen Schwelle (Schwellenwert im Studienprotokoll, hier nicht abgebildet)",
+                "language": "text/cql",
+                "expression": "BMIUnterStudienschwelle"
+              }
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "FU-3M",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 3,
+                "code": "mo",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 3,
+              "periodUnit": "mo"
+            }
+          },
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "FU-J",
+          "title": "Jaehrliches Follow-up (BMI ueber Studienschwelle)",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "FU-J",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "description": "Aktueller BMI auf oder ueber der studienspezifischen Schwelle",
+                "language": "text/cql",
+                "expression": "BMIUeberStudienschwelle"
+              }
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "FU-3M",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 1,
+                "code": "a",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 1,
+              "periodUnit": "a"
+            }
+          },
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "EP-18M",
+          "title": "Primaerer Endpunkt: 18 Monate nach Entlassung",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "EP-18M",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "T1-ENT",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 18,
+                "code": "mo",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "timingRange": {
+            "low": {
+              "value": 17,
+              "code": "mo",
+              "system": "http://unitsofmeasure.org"
+            },
+            "high": {
+              "value": 19,
+              "code": "mo",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          "groupingBehavior": "logical-group",
+          "action": [
+            {
+              "title": "Befragung: PCOR-MII-Basisdatensatz",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "befragung",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ],
+              "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+            },
+            {
+              "title": "Dokumentation: Extraktion von Routinedaten aus der elektronischen Patientenakte",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "dokumentation",
+                      "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EP-3J",
+          "title": "Sekundaerer Endpunkt: 3 Jahre nach Entlassung",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "EP-3J",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "dokumentation",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "T1-ENT",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 3,
+                "code": "a",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "EP-6J",
+          "title": "Tertiaerer Endpunkt: 6 Jahre nach Entlassung",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "EP-6J",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "dokumentation",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "T1-ENT",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 6,
+                "code": "a",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        }
+      ]
+    },
+    {
+      "id": "ambulant",
+      "prefix": "A",
+      "title": "Setting ambulant",
+      "description": "Gilt fuer Patient:innen in ambulanter Behandlung. Referenzereignis ist der Befragungsbeginn (A-T0); der Rhythmus startet direkt vierteljaehrlich und passt sich dem BMI an.",
+      "groupingBehavior": "logical-group",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Ambulante Behandlung",
+            "language": "text/fhirpath",
+            "expression": "%encounter.class.code = 'AMB'"
+          }
+        }
+      ],
+      "action": [
+        {
+          "id": "A-T0",
+          "prefix": "T0",
+          "title": "Befragungsbeginn ambulant (Referenzereignis)",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "A-T0",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "referenzereignis",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "trigger": [
+            {
+              "type": "named-event",
+              "name": "study-enrolment"
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "A-FU-Q",
+          "title": "Vierteljaehrliches Follow-up (BMI unter Studienschwelle)",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "A-FU-Q",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "language": "text/cql",
+                "expression": "BMIUnterStudienschwelle"
+              }
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "A-T0",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 3,
+                "code": "mo",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 3,
+              "periodUnit": "mo"
+            }
+          },
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "A-FU-J",
+          "title": "Jaehrliches Follow-up (BMI ueber Studienschwelle)",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "A-FU-J",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "language": "text/cql",
+                "expression": "BMIUeberStudienschwelle"
+              }
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "A-T0",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 1,
+                "code": "a",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 1,
+              "periodUnit": "a"
+            }
+          },
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "A-EP-18M",
+          "title": "Primaerer Endpunkt: 18 Monate nach Befragungsbeginn",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "A-EP-18M",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "dokumentation",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "A-T0",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 18,
+                "code": "mo",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "A-EP-3J",
+          "title": "Sekundaerer Endpunkt: 3 Jahre nach Befragungsbeginn",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "A-EP-3J",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "A-T0",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 3,
+                "code": "a",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        },
+        {
+          "id": "A-EP-6J",
+          "title": "Tertiaerer Endpunkt: 6 Jahre nach Befragungsbeginn",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "A-EP-6J",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "befragung",
+                  "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+                }
+              ]
+            }
+          ],
+          "relatedAction": [
+            {
+              "actionId": "A-T0",
+              "relationship": "after-end",
+              "offsetDuration": {
+                "value": 6,
+                "code": "a",
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          ],
+          "definitionCanonical": "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz"
+        }
+      ]
+    }
+  ]
+}

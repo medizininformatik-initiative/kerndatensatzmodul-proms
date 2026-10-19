@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PCORProtokollAktionstyp",
+  "id": "pcor-cs-protokoll-aktionstyp",
+  "title": "Protokoll-Aktionstyp (Zeitpunktart)",
+  "description": "Art eines protokollierten Zeitpunkts in einem Studienprotokoll: Was passiert an diesem Zeitpunkt? Ein Zeitpunkt kann mehrere Aktionstypen tragen (z. B. Befragung und Untersuchung bei Aufnahme).",
+  "version": "0.1.0",
+  "url": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp",
+  "concept": [
+    {
+      "code": "referenzereignis",
+      "display": "Referenzereignis",
+      "definition": "Ereignis im Versorgungs- oder Studienverlauf, auf das sich nachfolgende Zeitpunkte relativ beziehen (z. B. Entlassung, Befragungsbeginn, OP)."
+    },
+    {
+      "code": "befragung",
+      "display": "Befragungszeitpunkt",
+      "definition": "Patient:in oder Angehörige beantworten ein Instrument (PRO/PREM/Anamnese)."
+    },
+    {
+      "code": "untersuchung",
+      "display": "Untersuchungszeitpunkt",
+      "definition": "Klinische oder laborchemische Untersuchung, Probenentnahme, Messung."
+    },
+    {
+      "code": "intervention",
+      "display": "Interventionszeitpunkt",
+      "definition": "Gabe oder Durchführung einer Studienintervention. In nicht-interventionellen Studien nicht belegt."
+    },
+    {
+      "code": "dokumentation",
+      "display": "Dokumentationszeitpunkt",
+      "definition": "Erhebung durch Behandelnde oder Systeme ohne Patientenbeteiligung: Klinikerrating, Routinedaten-Extraktion, Vitalstatus."
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 5
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PCORProtokollAktionstypVS",
+  "id": "pcor-vs-protokoll-aktionstyp",
+  "title": "Protokoll-Aktionstyp (Zeitpunktart)",
+  "description": "Alle Codes des CodeSystems Protokoll-Aktionstyp.",
+  "version": "0.1.0",
+  "url": "https://pcor-mii.de/fhir/ValueSet/pcor-vs-protokoll-aktionstyp",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp"
+      }
+    ]
+  }
+}

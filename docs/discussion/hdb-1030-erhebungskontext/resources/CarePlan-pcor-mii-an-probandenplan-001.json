@@ -1,0 +1,225 @@
+{
+  "resourceType": "CarePlan",
+  "id": "pcor-mii-an-probandenplan-001",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://pcor-mii.de/fhir/StructureDefinition/mii-pr-studie-probandenplan"
+    ]
+  },
+  "intent": "plan",
+  "instantiatesCanonical": [
+    "https://pcor-mii.de/fhir/PlanDefinition/pcor-mii-an-studienprotokoll|0.1.0"
+  ],
+  "status": "active",
+  "title": "PCOR-MII-AN Erhebungsplan, Proband:in AN-HD-0042",
+  "subject": {
+    "reference": "Patient/pcor-mii-an-patient-001"
+  },
+  "period": {
+    "start": "2026-01-12"
+  },
+  "supportingInfo": [
+    {
+      "reference": "ResearchSubject/pcor-mii-an-proband-001"
+    },
+    {
+      "reference": "Encounter/pcor-mii-an-encounter-001"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "T0-AUF",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "completed",
+        "scheduledPeriod": {
+          "start": "2026-01-12",
+          "end": "2026-01-14"
+        },
+        "instantiatesCanonical": [
+          "https://pcor-mii.de/fhir/Questionnaire/pcor-mii-an-basisdatensatz",
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.1"
+        ]
+      }
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "T1-ENT",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "completed",
+        "scheduledPeriod": {
+          "start": "2026-03-06",
+          "end": "2026-03-06"
+        }
+      },
+      "outcomeReference": [
+        {
+          "reference": "QuestionnaireResponse/pcor-mii-an-qr-t1-phq9-001"
+        }
+      ]
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "FU-2W",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "completed",
+        "scheduledPeriod": {
+          "start": "2026-03-18",
+          "end": "2026-03-22"
+        }
+      }
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "FU-4W",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "completed",
+        "scheduledPeriod": {
+          "start": "2026-04-01",
+          "end": "2026-04-05"
+        }
+      }
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "FU-3M",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "completed",
+        "scheduledPeriod": {
+          "start": "2026-05-30",
+          "end": "2026-06-13"
+        },
+        "instantiatesCanonical": [
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.1"
+        ]
+      },
+      "outcomeReference": [
+        {
+          "reference": "QuestionnaireResponse/pcor-mii-an-qr-fu3m-phq9-001"
+        }
+      ]
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "FU-Q",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "scheduled",
+        "description": "BMI zum FU-3M unter Studienschwelle, daher vierteljaehrlicher Rhythmus",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2026-09-06",
+              "end": "2027-09-06"
+            },
+            "frequency": 1,
+            "period": 3,
+            "periodUnit": "mo"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "EP-18M",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "not-started",
+        "scheduledPeriod": {
+          "start": "2027-08-06",
+          "end": "2027-10-06"
+        }
+      }
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "EP-3J",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "not-started",
+        "scheduledPeriod": {
+          "start": "2029-02-06",
+          "end": "2029-04-06"
+        }
+      }
+    },
+    {
+      "detail": {
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "code": "EP-6J",
+              "system": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite"
+            }
+          ]
+        },
+        "status": "not-started",
+        "scheduledPeriod": {
+          "start": "2032-02-06",
+          "end": "2032-04-06"
+        }
+      }
+    }
+  ]
+}

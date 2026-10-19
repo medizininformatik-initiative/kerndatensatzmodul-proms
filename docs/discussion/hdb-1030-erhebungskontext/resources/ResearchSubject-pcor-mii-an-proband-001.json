@@ -1,0 +1,43 @@
+{
+  "resourceType": "ResearchSubject",
+  "id": "pcor-mii-an-proband-001",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-proband"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "ANON"
+          }
+        ]
+      },
+      "system": "https://pcor-mii.de/fhir/sid/proband",
+      "value": "AN-HD-0042"
+    }
+  ],
+  "status": "on-study",
+  "period": {
+    "start": "2026-01-12"
+  },
+  "study": {
+    "reference": "ResearchStudy/pcor-mii-an"
+  },
+  "individual": {
+    "reference": "Patient/pcor-mii-an-patient-001"
+  },
+  "consent": {
+    "reference": "Consent/pcor-mii-an-consent-001"
+  }
+}

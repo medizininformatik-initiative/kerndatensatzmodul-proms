@@ -1,0 +1,24 @@
+{
+  "resourceType": "Practitioner",
+  "id": "pcor-mii-pi-friederich",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "name": [
+    {
+      "family": "Friederich",
+      "given": [
+        "Hans-Christoph"
+      ],
+      "prefix": [
+        "Prof. Dr. med."
+      ]
+    }
+  ]
+}

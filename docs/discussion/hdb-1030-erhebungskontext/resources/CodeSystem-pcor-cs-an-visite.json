@@ -1,0 +1,80 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PCORANVisite",
+  "id": "pcor-cs-an-visite",
+  "title": "PCOR-MII-AN Visitencodes",
+  "description": "Protokollpositionen der PCOR-MII-AN-Studie (DRKS00038048). Die Codes entsprechen den action.id-Werten der PlanDefinition pcor-mii-an-studienprotokoll und werden auf Instanzebene als Protokollposition geführt.",
+  "version": "0.1.0",
+  "url": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite",
+  "concept": [
+    {
+      "code": "T0-AUF",
+      "display": "Aufnahme (teil-)stationär (T0)"
+    },
+    {
+      "code": "T1-ENT",
+      "display": "Entlassung (T1) – Referenzereignis"
+    },
+    {
+      "code": "FU-2W",
+      "display": "Follow-up 2 Wochen nach Entlassung"
+    },
+    {
+      "code": "FU-4W",
+      "display": "Follow-up 4 Wochen nach Entlassung"
+    },
+    {
+      "code": "FU-3M",
+      "display": "Follow-up 3 Monate nach Entlassung"
+    },
+    {
+      "code": "FU-Q",
+      "display": "Vierteljährliches Follow-up (BMI unter Schwelle)"
+    },
+    {
+      "code": "FU-J",
+      "display": "Jährliches Follow-up (BMI über Schwelle)"
+    },
+    {
+      "code": "EP-18M",
+      "display": "Primärer Endpunkt 18 Monate nach Entlassung"
+    },
+    {
+      "code": "EP-3J",
+      "display": "Sekundärer Endpunkt 3 Jahre nach Entlassung"
+    },
+    {
+      "code": "EP-6J",
+      "display": "Tertiärer Endpunkt 6 Jahre nach Entlassung"
+    },
+    {
+      "code": "A-T0",
+      "display": "Ambulanter Befragungsbeginn (T0) – Referenzereignis"
+    },
+    {
+      "code": "A-FU-Q",
+      "display": "Ambulant: vierteljährliches Follow-up (BMI unter Schwelle)"
+    },
+    {
+      "code": "A-FU-J",
+      "display": "Ambulant: jährliches Follow-up (BMI über Schwelle)"
+    },
+    {
+      "code": "A-EP-18M",
+      "display": "Ambulant: primärer Endpunkt 18 Monate nach Befragungsbeginn"
+    },
+    {
+      "code": "A-EP-3J",
+      "display": "Ambulant: sekundärer Endpunkt 3 Jahre nach Befragungsbeginn"
+    },
+    {
+      "code": "A-EP-6J",
+      "display": "Ambulant: tertiärer Endpunkt 6 Jahre nach Befragungsbeginn"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 16
+}

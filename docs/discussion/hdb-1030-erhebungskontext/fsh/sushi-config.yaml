@@ -1,0 +1,12 @@
+id: pcor-mii.protokoll.beispiel
+canonical: https://pcor-mii.de/fhir
+name: PCORMIIProtokollBeispiel
+title: "PCOR-MII-AN: Studienprotokoll als PlanDefinition (Beispiel)"
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+FSHOnly: true
+dependencies:
+  de.medizininformatikinitiative.kerndatensatz.studie: 2027.0.0-ballot

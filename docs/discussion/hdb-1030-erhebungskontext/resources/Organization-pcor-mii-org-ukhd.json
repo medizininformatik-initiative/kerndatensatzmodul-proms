@@ -1,0 +1,14 @@
+{
+  "resourceType": "Organization",
+  "id": "pcor-mii-org-ukhd",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "name": "Universitätsklinikum Heidelberg"
+}

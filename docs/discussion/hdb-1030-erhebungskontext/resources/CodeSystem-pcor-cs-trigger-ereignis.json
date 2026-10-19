@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PCORTriggerEreignis",
+  "id": "pcor-cs-trigger-ereignis",
+  "title": "Erhebungskontext: Trigger-Ereignistyp",
+  "description": "Welches Ereignis im Versorgungs- oder Studienverlauf hat die Erhebung ausgelöst? Vorschlag aus HDB-1030; die Definitionen nennen den korrespondierenden Code des NHS Wales PROMs Information Standard (PROMs Trigger Event Type).",
+  "version": "0.1.0",
+  "url": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-trigger-ereignis",
+  "concept": [
+    {
+      "code": "onboarding",
+      "display": "Onboarding / Registrierung",
+      "definition": "Registrierung für künftige Erhebungen, noch keine inhaltliche Messung (Wales 10)."
+    },
+    {
+      "code": "ueberweisung",
+      "display": "Überweisung",
+      "definition": "Nach Annahme einer Überweisung (Wales 12)."
+    },
+    {
+      "code": "ambulanter-termin",
+      "display": "Ambulanter Termin",
+      "definition": "Anlässlich eines ambulanten Termins (Wales 13)."
+    },
+    {
+      "code": "baseline",
+      "display": "Baseline / Aufnahme",
+      "definition": "Erste Messung einer Messreihe: Aufnahme, Einschluss, Befragungsbeginn."
+    },
+    {
+      "code": "praeoperativ",
+      "display": "Präoperativ / prä-interventionell",
+      "definition": "Vor einer geplanten Intervention, z. B. im Rahmen der OP-Vorbereitung (Wales 14)."
+    },
+    {
+      "code": "postoperativ",
+      "display": "Postoperativ / post-interventionell",
+      "definition": "Nach bestätigter Intervention, i. d. R. mit definiertem Intervall (Wales 15)."
+    },
+    {
+      "code": "entlassung",
+      "display": "Entlassung",
+      "definition": "Zum Zeitpunkt der Entlassung aus (teil-)stationärer Behandlung (Wales 16)."
+    },
+    {
+      "code": "follow-up",
+      "display": "Follow-up",
+      "definition": "Protokollierte Nachbeobachtung in definiertem Abstand zum Referenzereignis."
+    },
+    {
+      "code": "screening",
+      "display": "Screening",
+      "definition": "Anlassunabhängige Reihenerhebung."
+    },
+    {
+      "code": "kliniker-initiiert",
+      "display": "Klinikerinitiiert (on demand)",
+      "definition": "Auf Veranlassung einer behandelnden Person außerhalb eines protokollierten Zeitpunkts (Wales 17)."
+    },
+    {
+      "code": "patienten-initiiert",
+      "display": "Patienteninitiiert (on demand)",
+      "definition": "Von der Patientin / dem Patienten selbst ausgelöst, z. B. bei Symptomverschlechterung (Wales 18)."
+    },
+    {
+      "code": "unbekannt",
+      "display": "Unbekannt",
+      "definition": "Auslöser nicht bekannt (Wales 91)."
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 12
+}
