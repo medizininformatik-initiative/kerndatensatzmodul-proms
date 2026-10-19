@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-10-14 | *Computable Name*:MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score |
+| Active as of 2026-10-19 | *Computable Name*:MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score |
 
  
 Profile for PROMIS Depression Short Form 4a raw score observations (4-20 range) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "name" : "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Depression SF 4a Raw Score",
   "status" : "active",
-  "date" : "2026-10-14T08:51:14+00:00",
+  "date" : "2026-10-19T03:43:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

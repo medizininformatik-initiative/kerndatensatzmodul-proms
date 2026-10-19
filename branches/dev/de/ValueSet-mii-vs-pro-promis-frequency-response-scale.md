@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-10-14 | *Maschinenlesbarer Name*:MII_VS_PRO_PROMIS_Frequency_Response_Scale |
+| Active Stand: 2026-10-19 | *Maschinenlesbarer Name*:MII_VS_PRO_PROMIS_Frequency_Response_Scale |
 
  
 PROMIS Frequency response scale based on LOINC LL1016-6 
@@ -44,7 +44,7 @@ PROMIS Frequency response scale based on LOINC LL1016-6
   "title" : "MII VS PRO PROMIS Frequency Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-14T08:51:14+00:00",
+  "date" : "2026-10-19T03:43:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

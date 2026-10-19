@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-k6 | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-10-14 | *Computable Name*: |
+| Active as of 2026-10-19 | *Computable Name*: |
 
  
 Kessler Psychological Distress Scale (K6) - Metadata-only reference implementation 
@@ -72,7 +72,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "Kessler Psychological Distress Scale (K6)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-14T08:51:14+00:00",
+  "date" : "2026-10-19T03:43:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
