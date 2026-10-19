@@ -38,7 +38,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-19T03:43:18+00:00",
+  "date" : "2026-10-19T04:09:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

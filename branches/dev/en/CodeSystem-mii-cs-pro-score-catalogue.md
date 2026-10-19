@@ -35,7 +35,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-10-19T03:43:18+00:00",
+  "date" : "2026-10-19T04:09:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -35,7 +35,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-10-19T03:43:18+00:00",
+  "date" : "2026-10-19T04:09:45+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
