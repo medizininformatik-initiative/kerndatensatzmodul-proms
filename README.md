@@ -3,7 +3,7 @@
 [![IG build and preview](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/actions/workflows/ig-publisher.yml/badge.svg?branch=dev)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/actions/workflows/ig-publisher.yml)
 [![FHIR validation](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/actions/workflows/validation.yml/badge.svg?branch=dev)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/actions/workflows/validation.yml)
 [![Scoring E2E](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/actions/workflows/scoring-e2e.yml/badge.svg?branch=dev)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/actions/workflows/scoring-e2e.yml)
-[![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 FHIR R4 Implementation Guide of the [Medizininformatik-Initiative (MII)](https://www.medizininformatik-initiative.de) for **patient-reported outcomes (PROs)**, **patient-reported outcome measures (PROMs)** and the **scores derived from them**. It standardises how validated instruments are defined, captured and scored in the German healthcare system so that PRO data is comparable across sites.
 
@@ -30,7 +30,7 @@ Every branch push produces a preview under `branches/<name>/` on the same site.
 | Version | `2027.0.0-ballot.1` (MII CalVer `YYYY.n.n`) |
 | FHIR version | 4.0.1 (R4) |
 | Jurisdiction | DE |
-| Licence | CC0-1.0 for MII-authored content (see [Licensing](#licensing)) |
+| Licence | CC BY 4.0 for MII-authored content (see [Licensing](#licensing)) |
 | Status | active, ballot version of the 2027 line |
 
 ### Dependencies
@@ -166,7 +166,11 @@ Open ballot question worth a look: a hard obligation for `item.text` and `answer
 
 ## Licensing
 
-The MII-authored content of this repository (profiles, terminology, documentation, test suites) is released under **CC0-1.0**. This does **not** extend to third-party instrument item texts. Each instrument page in the IG states its licence tier:
+The MII-authored content of this repository (profiles, terminology, documentation, test suites) is licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**, in line with the other MII core dataset modules (kerndatensatz-basis, kerndatensatz-meta).
+
+> **Note:** the machine-readable metadata (`license` in sushi-config.yaml and package.json, and the licence statements on the IG pages) still reads `CC0-1.0`. That value is the SUSHI default from the initial 2024 commit, not a decision. Aligning it to CC BY 4.0 is scheduled for the next release.
+
+The licence does **not** extend to third-party instrument item texts. Each instrument page in the IG states its licence tier:
 
 - **free / public domain**: PHQ family, DASS-21, PRO-CTCAE, the PCOR-MII screening set and others ship with full item texts.
 - **registration or usage agreement**: EQ-5D-5L (EuroQol), EORTC QLQ-C30, PROMIS instruments (German versions via CPCOR Charité). Obtain the agreement before deploying the forms.
