@@ -1,7 +1,7 @@
 # Erhebungskontext und Studienprotokoll: Beispiel PCOR-MII-AN
 
-Begleitmaterial zu Ballotkommentar **HDB-1030** (MII-Modul PRO, 2027.0.0-ballot) und zu einem
-geplanten Kommentar an das **Modul Medizinisches Forschungsvorhaben** (Paket
+Begleitmaterial zu den Ballotkommentaren **HDB-1030** (MII-Modul PRO, 2027.0.0-ballot) und
+**HDB-1044** (**Modul Medizinisches Forschungsvorhaben** (Paket
 `de.medizininformatikinitiative.kerndatensatz.studie` 2027.0.0-ballot). Stand 2026-10-20.
 
 Frage dahinter: Wie wird auf Instanzebene festgehalten, *welcher Punkt im Versorgungs- oder
@@ -85,7 +85,8 @@ java -jar validator_cli.jar fsh-generated/resources/*.json -version 4.0.1 \
   führt PHQ-9. Mit dem UKE klären, bevor PCOR-Instrumente Studienverweise erhalten.
 - **Canonicals** unter `https://pcor-mii.de/fhir` sind Platzhalter; die Extension trägt bewusst
   die künftige MII-PRO-URL, damit Beispiele nicht umgeschrieben werden müssen.
-- **Modul Forschungsvorhaben**: Kommentar noch nicht eingereicht. Vorgeschlagener Inhalt:
-  PlanDefinition-Profil Studienprotokoll, `ResearchStudy.protocol` must-support,
-  CarePlan-Profil Probandenplan (oder Guidance), keine Änderung an der Studientypologie
-  (HDB-187 bis 189 laufen).
+- **Modul Forschungsvorhaben**: als **HDB-1044** eingereicht (2026-10-20): PlanDefinition-Profil
+  Studienprotokoll, `ResearchStudy.protocol` must-support, CarePlan-Profil Probandenplan;
+  keine Änderung an der Studientypologie (HDB-187 bis 189 laufen).
+- **Geerbter CRMI-Metadatenfehler** im Elternprofil: bewusst nicht im Ballotkommentar, eher ein
+  Thema für die laufende PCOR-MII-/TF-KDS-Abstimmung.
