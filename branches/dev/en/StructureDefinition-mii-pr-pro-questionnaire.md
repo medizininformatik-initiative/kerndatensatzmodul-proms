@@ -54,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-questi
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-19T22:04:08+00:00",
+  "date" : "2026-10-19T22:28:24+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
