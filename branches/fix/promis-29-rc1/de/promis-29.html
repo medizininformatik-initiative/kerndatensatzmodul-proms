@@ -394,7 +394,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>4</td>
       <td>T-Score</td>
       <td>77854-8</td>
-      <td>— (LOINC kennt nur 8a v2.0 = 76731-9)</td>
+      <td>Itembank <a href="https://loinc.org/76787-1/">76787-1</a> (kein 4a-Panel; 8a = 76731-9)</td>
     </tr>
     <tr>
       <td>Schmerzbedingte Beeinträchtigung</td>
@@ -423,7 +423,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><strong>T-Scores</strong> tragen den Domänencode mit Bank-Version (<code class="language-plaintext highlighter-rouge">PROMIS &lt;Domäne&gt; - version N T-score</code>), weil nur diese Codes die Kalibrierung benennen.</li>
-  <li><strong>Rohwerte</strong> tragen die PROMIS-29-spezifischen Codes <code class="language-plaintext highlighter-rouge">PROMIS-29 &lt;Domäne&gt; score</code>, weil Rohsummen nur je Kurzform sinnvoll sind. Der Rohwert Soziale Teilhabe hat <strong>keinen</strong> LOINC-Code (<code class="language-plaintext highlighter-rouge">71958-3</code> bezeichnet das v1.0-Konstrukt Satisfaction) und trägt nur den MII-Score-Katalogcode.</li>
+  <li><strong>Rohwerte</strong> tragen die PROMIS-29-spezifischen Codes <code class="language-plaintext highlighter-rouge">PROMIS-29 &lt;Domäne&gt; score</code>, weil Rohsummen nur je Kurzform sinnvoll sind. Ausnahme ist der Rohwert Soziale Teilhabe: <code class="language-plaintext highlighter-rouge">71958-3</code> ist der Rohwert der v1.0-Domäne <em>Satisfaction with Participation in Social Roles</em> (andere Items, gegenläufige Polung), und für die v2.0-Domäne <em>Ability to Participate</em> (Itembank 76787-1, T-Score 77854-8) hat LOINC keinen 4a-Rohwert-Code (nur 8a, 77814-2). Das Item trägt deshalb nur den MII-Score-Katalogcode <code class="language-plaintext highlighter-rouge">promis-29-social-function-raw</code>.</li>
   <li><strong>Schmerzintensität</strong> nutzt den Item-Code <code class="language-plaintext highlighter-rouge">61583-1</code> für Item und Score.</li>
   <li>Die maßgebliche Identität eines Scores ist nie der LOINC-Code, sondern <code class="language-plaintext highlighter-rouge">Observation.derivedFrom</code> → <code class="language-plaintext highlighter-rouge">QuestionnaireResponse.questionnaire</code> (versionierte Canonical) plus MII-Score-Katalogcode.</li>
 </ul>
@@ -606,7 +606,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Nov 4, 2026 14:34+0000">2026-11-04</span>
+          Erstellt <span title="Wed, Nov 4, 2026 14:56+0000">2026-11-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

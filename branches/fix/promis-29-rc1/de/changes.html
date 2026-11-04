@@ -344,7 +344,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Kein Zeitbezug bei Körperlicher Funktion und Sozialer Teilhabe</strong> — die Display-Items „In den letzten 7 Tagen:“ dieser beiden Gruppen entfernt (Ticket 047); das offizielle Formular hat dort keinen Stem. Schmerzintensität trägt den Stem jetzt wie im Formular.</li>
   <li><strong>FATEXP41</strong> trug den falschen LOINC-Code 61863-7 („most fatigued day“); korrekt ist 61865-2 „How run-down did you feel on average“.</li>
   <li><strong>Antwortreihenfolge Körperliche Funktion</strong> wie im Formular (Without any difficulty … Unable to do).</li>
-  <li><strong>LOINC-Kodierregel für Scores</strong> dokumentiert und angewendet: T-Scores tragen den Domänencode mit Bank-Version (Angst: 77862-1 statt 71967-4), Rohwerte die PROMIS-29-spezifischen Codes, der Rohwert Soziale Teilhabe nur den MII-Katalogcode (71958-3 ist das v1.0-Konstrukt „Satisfaction“), Schmerzintensität einheitlich 61583-1 (ObservationDefinition/Profil vorher 75261-8). Score-Katalog um die sieben Rohwert-Konzepte ergänzt.</li>
+  <li><strong>LOINC-Kodierregel für Scores</strong> dokumentiert und angewendet: T-Scores tragen den Domänencode mit Bank-Version (Angst: 77862-1 statt 71967-4), Rohwerte die PROMIS-29-spezifischen Codes, der Rohwert Soziale Teilhabe nur den MII-Katalogcode (71958-3 ist die v1.0-Domäne „Satisfaction“, Ability to Participate v2.0 hat keinen 4a-Rohwert-Code), Schmerzintensität einheitlich 61583-1 (ObservationDefinition/Profil vorher 75261-8). Score-Katalog um die sieben Rohwert-Konzepte ergänzt.</li>
   <li><strong><code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> und <code class="language-plaintext highlighter-rouge">-minimal</code> retired</strong> — die DE-primäre Spiegelvariante und das 8-Item-Subset bleiben als leere Hüllen auflösbar; DE-primäre Darstellung ist Sache von <code class="language-plaintext highlighter-rouge">$localize</code> bzw. des Renderers. Beispiel-QuestionnaireResponse auf die Hauptinstanz umgehängt.</li>
   <li><strong>IG-Seite PROMIS-29</strong>: Domänentabelle führte sieben Pain-Interference-<em>Item</em>-Codes als „Panel“; jetzt Kurzform-Versionen (PF und Social 4a v2.0, übrige 4a v1.0, lt. Adult Profile Scoring Manual 07/2025), T-Score-Codes und echte Panel-Codes; QR-Snippet mit LOINC-valueCoding statt systemloser „3“ (Finding 0fu.1).</li>
 </ul>
@@ -865,7 +865,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Nov 4, 2026 14:34+0000">2026-11-04</span>
+          Erstellt <span title="Wed, Nov 4, 2026 14:56+0000">2026-11-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

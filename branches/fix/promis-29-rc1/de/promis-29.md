@@ -25,7 +25,7 @@ Das PROMIS-29 Profile v2.1 bündelt sieben 4-Item-Kurzformen plus ein Schmerzint
 | Depression | 4a v1.0 | 4 | T-Score | 77861-3 | 76343-3 |
 | Erschöpfung | 4a v1.0 | 4 | T-Score | 77864-7 | 76342-5 |
 | Schlafstörungen | 4a v1.0 | 4 | T-Score | 77860-5 | 75258-4 |
-| Soziale Teilhabe | 4a**v2.0** | 4 | T-Score | 77854-8 | — (LOINC kennt nur 8a v2.0 = 76731-9) |
+| Soziale Teilhabe | 4a**v2.0** | 4 | T-Score | 77854-8 | Itembank[76787-1](https://loinc.org/76787-1/)(kein 4a-Panel; 8a = 76731-9) |
 | Schmerzbedingte Beeinträchtigung | 4a v1.0 | 4 | T-Score | 77865-4 | 90971-3 |
 | Schmerzintensität | Einzelitem (Global07) | 1 | 0–10 NRS | 61583-1 (Item) | — |
 
@@ -36,7 +36,7 @@ Das Profil selbst ist das LOINC-Panel [62337-1](https://loinc.org/62337-1/) (`Qu
 LOINC kann einen PROMIS-Score nicht eindeutig benennen: Die Domänen-T-Score-Codes (`778xx`, `91721-1`) tragen die Itembank-Version, aber nicht die Kurzform (4a, 8a und CAT teilen sich einen Code), die profilspezifischen Codes (`71955-9` … `71968-2`) weder Version noch Konstrukt. Das Modul wendet deshalb eine Regel an:
 
 * **T-Scores** tragen den Domänencode mit Bank-Version (`PROMIS <Domäne> - version N T-score`), weil nur diese Codes die Kalibrierung benennen.
-* **Rohwerte** tragen die PROMIS-29-spezifischen Codes `PROMIS-29 <Domäne> score`, weil Rohsummen nur je Kurzform sinnvoll sind. Der Rohwert Soziale Teilhabe hat **keinen** LOINC-Code (`71958-3` bezeichnet das v1.0-Konstrukt Satisfaction) und trägt nur den MII-Score-Katalogcode.
+* **Rohwerte** tragen die PROMIS-29-spezifischen Codes `PROMIS-29 <Domäne> score`, weil Rohsummen nur je Kurzform sinnvoll sind. Ausnahme ist der Rohwert Soziale Teilhabe: `71958-3` ist der Rohwert der v1.0-Domäne **Satisfaction with Participation in Social Roles** (andere Items, gegenläufige Polung), und für die v2.0-Domäne **Ability to Participate** (Itembank 76787-1, T-Score 77854-8) hat LOINC keinen 4a-Rohwert-Code (nur 8a, 77814-2). Das Item trägt deshalb nur den MII-Score-Katalogcode `promis-29-social-function-raw`.
 * **Schmerzintensität** nutzt den Item-Code `61583-1` für Item und Score.
 * Die maßgebliche Identität eines Scores ist nie der LOINC-Code, sondern `Observation.derivedFrom` → `QuestionnaireResponse.questionnaire` (versionierte Canonical) plus MII-Score-Katalogcode.
 

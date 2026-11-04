@@ -348,7 +348,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>No time frame for Physical Function and Social Roles</strong> — the “In the past 7 days” display items of these two groups were removed (ticket 047); the official form has no stem there. Pain Intensity now carries the stem as on the form.</li>
   <li><strong>FATEXP41</strong> carried the wrong LOINC code 61863-7 (“most fatigued day”); correct is 61865-2 “How run-down did you feel on average”.</li>
   <li><strong>Physical Function answer order</strong> as on the form (Without any difficulty … Unable to do).</li>
-  <li><strong>LOINC coding rule for scores</strong> documented and applied: T-scores carry the domain code with bank version (Anxiety: 77862-1 instead of 71967-4), raw scores the PROMIS-29-specific codes, the Social Roles raw score only the MII catalogue code (71958-3 is the v1.0 “Satisfaction” construct), Pain Intensity uniformly 61583-1 (ObservationDefinition/profile used 75261-8). Score catalogue extended by the seven raw-score concepts.</li>
+  <li><strong>LOINC coding rule for scores</strong> documented and applied: T-scores carry the domain code with bank version (Anxiety: 77862-1 instead of 71967-4), raw scores the PROMIS-29-specific codes, the Social Roles raw score only the MII catalogue code (71958-3 is the v1.0 “Satisfaction” domain, Ability to Participate v2.0 has no 4a raw-score code), Pain Intensity uniformly 61583-1 (ObservationDefinition/profile used 75261-8). Score catalogue extended by the seven raw-score concepts.</li>
   <li><strong><code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> and <code class="language-plaintext highlighter-rouge">-minimal</code> retired</strong> — the German-primary mirror and the 8-item subset remain resolvable as empty shells; German-primary rendering is a <code class="language-plaintext highlighter-rouge">$localize</code>/renderer concern. Example QuestionnaireResponse re-pointed to the main instance.</li>
   <li><strong>IG page PROMIS-29</strong>: the domain table listed seven Pain Interference <em>item</em> codes as “panel”; now short-form versions (PF and Social 4a v2.0, the rest 4a v1.0, per Adult Profile Scoring Manual 07/2025), T-score codes and real panel codes; QR snippet with LOINC valueCoding instead of a system-less “3” (finding 0fu.1).</li>
 </ul>
@@ -769,7 +769,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Nov 4, 2026 14:34+0000">2026-11-04</span>
+          Generated <span title="Wed, Nov 4, 2026 14:56+0000">2026-11-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
