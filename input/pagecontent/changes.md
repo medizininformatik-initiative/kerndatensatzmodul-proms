@@ -6,6 +6,8 @@ This page documents the changes between versions of the MII PRO module.
 
 ### Unreleased (dev)
 
+**CQL scoring library PROMIS-29** (`mii-lib-pro-promis-29`, beads 6yu.12): server channel of the dual-channel architecture, generated from the same weight and T-score tables as the FHIRPath expressions (`scripts/generate-promis29-cql.py`), packaged as a Library with CQL and pre-compiled ELM (`scripts/package-cql-library.py`, cql-translation-service) and bound to the Questionnaire via `cqf-library`. Define names = score linkIds. Differential test with cql-execution over all 22 scenarios in both call paths (parameter and retrieve).
+
 **PROMIS-29 cleaned up for 2027.0.0-rc.1** (beads epic g3b):
 
 * **Language architecture restored** — all 43 items, group headers and instructions are English-primary (wording of the official PHO form PROMIS-29 Profile v2.1) with a German `translation` extension (PCOR-MII master / CPCOR). The fix of 2026-05-06 (608212e74b) only lived on `release/v2026.3.0`; PR #97 into `dev` was never merged, so 2026.4.0 through 2027.0.0-ballot.1 carried 39 German-primary items in the English instance.

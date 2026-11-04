@@ -67,6 +67,17 @@ Jede Domäne (außer Pain Intensity) wird als T-Score berechnet:
           iif(%rawScore = 6, 52.5, ...)))
 ```
 
+#### Zwei Scoring-Kanäle (FHIRPath und CQL)
+
+PROMIS-29 ist die Referenzimplementierung der Dual-Channel-Scoring-Architektur des Moduls:
+
+| Kanal | Artefakt | Läuft wo | Einsatz |
+|---|---|---|---|
+| Client | `sdc-questionnaire-calculatedExpression` (FHIRPath) an jedem Score-Item | im Form Filler, live | `collectable + calculatable + displayable` |
+| Server | Library [`mii-lib-pro-promis-29`](Library-mii-lib-pro-promis-29.html) (CQL + vorkompiliertes ELM), gebunden über `cqf-library` | `Library/$evaluate` auf einem Server mit Clinical Reasoning | `populatable + calculatable + extractable` |
+
+Beide Kanäle werden **aus denselben zwei Tabellen generiert** (`scripts/data/promis29-answer-weights.csv`, `scripts/data/promis29-t-score-tables.csv`) und können deshalb nicht auseinanderlaufen. Die CQL-Define-Namen sind die `linkId`s der Score-Items (`promis-29-anxiety-tscore` …), sodass ein Server Item und Define ohne Expression-Parsing zuordnen kann. Die Library nimmt die Response entweder als Parameter `Response` entgegen oder, nach dem SDC-Retrieve-Muster, als jüngste abgeschlossene QuestionnaireResponse des Instruments aus den Patientendaten. Die 22 Scoring-Szenarien laufen in der CI gegen beide Kanäle (`scripts/promis29-scoring.test.mjs` mit fhirpath.js, `scripts/promis29-cql.test.mjs` mit cql-execution).
+
 ### Sprachunterstützung
 
 **Primärsprache**: Englisch, Wortlaut des offiziellen Formulars PROMIS-29 Profile v2.1 (PROMIS Health Organization)

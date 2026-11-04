@@ -4,5 +4,9 @@
   "description": "Hilfsskripte und Tests des MII-PRO-Moduls. fhirpath = dieselbe Engine, die LHC-Forms zur Auswertung der calculatedExpressions einbettet.",
   "devDependencies": {
     "fhirpath": "4.5.1"
+  },
+  "dependencies": {
+    "cql-exec-fhir": "^2.2.0",
+    "cql-execution": "^3.3.2"
   }
 }

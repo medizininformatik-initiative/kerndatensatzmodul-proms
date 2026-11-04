@@ -27,6 +27,12 @@ Usage: #definition
 * extension[capabilities].extension[extractable].valueBoolean = true
 * extension[capabilities].extension[domainAligned].valueBoolean = true
 
+// Dual-Channel-Scoring (Beads 6yu): Die FHIRPath-calculatedExpressions unten sind der
+// Client-Kanal (Live-Scoring im Renderer). Die gebundene CQL-Library ist der autoritative
+// Server-Kanal (Library/$evaluate); ihre Define-Namen sind die Score-linkIds.
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/cqf-library"
+* extension[=].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-promis-29|2027.0.0-ballot.1"
+
 // Define variables for domain score calculations
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "physicalFunctionRaw"

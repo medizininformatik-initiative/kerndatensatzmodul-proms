@@ -878,6 +878,14 @@
       },
       {
         "reference": {
+          "reference": "Library/mii-lib-pro-promis-29"
+        },
+        "name": "MII LIB PRO PROMIS-29 Scoring",
+        "description": "CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the seven domains plus the pain intensity item. Server channel of the dual-channel scoring architecture (the FHIRPath calculatedExpressions in the Questionnaire are the client channel); both channels are generated from the same weight and T-score tables. Define names equal the score item linkIds. Supports Library/$evaluate with an explicit Response parameter and the SDC retrieve pattern (most recent completed QuestionnaireResponse of the instrument).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-lm-pro"
         },
         "name": "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
