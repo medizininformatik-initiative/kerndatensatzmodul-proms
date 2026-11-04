@@ -1,0 +1,9 @@
+@startuml
+object PROM_Fragebogen
+object ausgefüllter_PROM_Fragebogen
+object PROM_Score 
+
+PROM_Fragebogen --> ausgefüllter_PROM_Fragebogen 
+ausgefüllter_PROM_Fragebogen --> PROM_Score
+
+@enduml

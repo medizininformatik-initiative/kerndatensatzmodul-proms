@@ -1,0 +1,13 @@
+@startuml
+!theme plain
+skinparam backgroundColor white
+
+actor Patient
+participant "UI mit\n[collectable+calculatable]\nQuestionnaire" as UI
+database "FHIR Server" as Server
+
+Patient -> UI : Beantwortet Fragen
+UI -> UI : Berechnet Score\n(FHIRPath)
+UI -> Server : Speichert QR\nmit Score
+Server -> Server : Extrahiert\nObservation
+@enduml
