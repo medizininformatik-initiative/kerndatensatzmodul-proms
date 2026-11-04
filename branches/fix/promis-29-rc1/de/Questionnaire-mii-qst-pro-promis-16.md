@@ -74,7 +74,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO PROMIS-16 (Adults)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-04T14:56:33+00:00",
+  "date" : "2026-11-04T15:19:25+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
