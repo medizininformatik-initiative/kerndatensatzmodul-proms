@@ -5,72 +5,206 @@
   "name": "PCORTriggerEreignis",
   "id": "pcor-cs-trigger-ereignis",
   "title": "Erhebungskontext: Trigger-Ereignistyp",
-  "description": "Welches Ereignis im Versorgungs- oder Studienverlauf hat die Erhebung ausgelöst? Vorschlag aus HDB-1030; die Definitionen nennen den korrespondierenden Code des NHS Wales PROMs Information Standard (PROMs Trigger Event Type).",
+  "description": "Welches Ereignis bzw. welcher Zweck im Versorgungs- oder Studienverlauf hat die Erhebung ausgelöst? Vorschlag aus HDB-1030. Grundlage ist der Wertebereich PROMs Trigger Event Type des NHS Wales PROMs Information Standard (CodeSystem https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PSOM-TriggerEventType), ergänzt um Konzepte für Messreihen (Baseline, Follow-up), Erhebungszweck (Screening, Diagnostik, Monitoring) und Studienendpunkte. Das formale Mapping auf Wales steht in der ConceptMap pcor-cm-trigger-ereignis-to-wales.",
   "version": "0.1.0",
   "url": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-trigger-ereignis",
   "concept": [
     {
       "code": "onboarding",
       "display": "Onboarding / Registrierung",
-      "definition": "Registrierung für künftige Erhebungen, noch keine inhaltliche Messung (Wales 10)."
+      "definition": "Registrierung für künftige Erhebungen, noch keine inhaltliche Messung.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
+    },
+    {
+      "code": "primaerversorgung",
+      "display": "Primärversorgung",
+      "definition": "Erhebung in der hausärztlichen oder fachärztlichen Primärversorgung vor einer Überweisung in die spezialisierte Versorgung.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "ueberweisung",
       "display": "Überweisung",
-      "definition": "Nach Annahme einer Überweisung (Wales 12)."
+      "definition": "Nach Annahme einer Überweisung in die spezialisierte oder stationäre Versorgung.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "ambulanter-termin",
       "display": "Ambulanter Termin",
-      "definition": "Anlässlich eines ambulanten Termins (Wales 13)."
+      "definition": "Anlässlich eines gebuchten ambulanten Termins.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "baseline",
       "display": "Baseline / Aufnahme",
-      "definition": "Erste Messung einer Messreihe: Aufnahme, Einschluss, Befragungsbeginn."
+      "definition": "Erste Messung einer Messreihe: Aufnahme, Einschluss, Befragungsbeginn.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "praeoperativ",
       "display": "Präoperativ / prä-interventionell",
-      "definition": "Vor einer geplanten Intervention, z. B. im Rahmen der OP-Vorbereitung (Wales 14)."
+      "definition": "Vor einer geplanten Intervention, z. B. im Rahmen der OP-Vorbereitung.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "postoperativ",
       "display": "Postoperativ / post-interventionell",
-      "definition": "Nach bestätigter Intervention, i. d. R. mit definiertem Intervall (Wales 15)."
+      "definition": "Nach bestätigter Intervention, i. d. R. mit definiertem Intervall.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "entlassung",
       "display": "Entlassung",
-      "definition": "Zum Zeitpunkt der Entlassung aus (teil-)stationärer Behandlung (Wales 16)."
+      "definition": "Zum Zeitpunkt der Entlassung aus (teil-)stationärer Behandlung.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "follow-up",
       "display": "Follow-up",
-      "definition": "Protokollierte Nachbeobachtung in definiertem Abstand zum Referenzereignis."
-    },
-    {
-      "code": "screening",
-      "display": "Screening",
-      "definition": "Anlassunabhängige Reihenerhebung."
+      "definition": "Protokollierte Nachbeobachtung in definiertem Abstand zu einem Referenzereignis nach Abschluss der Behandlungsepisode.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "kliniker-initiiert",
       "display": "Klinikerinitiiert (on demand)",
-      "definition": "Auf Veranlassung einer behandelnden Person außerhalb eines protokollierten Zeitpunkts (Wales 17)."
+      "definition": "Auf Veranlassung einer behandelnden Person außerhalb eines protokollierten Zeitpunkts.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "patienten-initiiert",
       "display": "Patienteninitiiert (on demand)",
-      "definition": "Von der Patientin / dem Patienten selbst ausgelöst, z. B. bei Symptomverschlechterung (Wales 18)."
+      "definition": "Von der Patientin / dem Patienten selbst ausgelöst, z. B. bei Symptomverschlechterung.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
+    },
+    {
+      "code": "screening",
+      "display": "Screening",
+      "definition": "Anlassunabhängige Reihenerhebung in einer nicht vorselektierten Population zur Identifikation von Auffälligen, z. B. PHQ-9-Depressionsscreening bei Aufnahme aller Patient:innen.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "zweck"
+        }
+      ]
+    },
+    {
+      "code": "diagnostik",
+      "display": "Diagnostik",
+      "definition": "Anlassbezogene Abklärung bei Verdacht oder Symptomen, Erhebung als Teil der diagnostischen Einordnung oder Schweregradbestimmung vor Therapieentscheidung.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "zweck"
+        }
+      ]
+    },
+    {
+      "code": "monitoring",
+      "display": "Monitoring / Verlaufskontrolle",
+      "definition": "Wiederholte Erhebung während einer laufenden Behandlung zur Steuerung oder Verlaufsbeobachtung, z. B. Symptommonitoring unter Chemotherapie oder Psychotherapie. Abgrenzung zu Follow-up: Monitoring findet innerhalb der Behandlungsepisode statt.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "zweck"
+        }
+      ]
+    },
+    {
+      "code": "studienendpunkt",
+      "display": "Studienendpunkt",
+      "definition": "Erhebung zur Bestimmung eines im Studienprotokoll definierten primären, sekundären oder weiteren Endpunkts. Die Protokollposition benennt den konkreten Endpunkt.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "zweck"
+        }
+      ]
+    },
+    {
+      "code": "sonstiges",
+      "display": "Sonstiges",
+      "definition": "Kein spezifischer Auslöser aus dieser Liste trifft zu.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     },
     {
       "code": "unbekannt",
       "display": "Unbekannt",
-      "definition": "Auslöser nicht bekannt (Wales 91)."
+      "definition": "Auslöser nicht bekannt.",
+      "property": [
+        {
+          "code": "achse",
+          "valueCode": "ereignis"
+        }
+      ]
     }
   ],
   "experimental": true,
   "caseSensitive": true,
-  "count": 12
+  "property": [
+    {
+      "code": "achse",
+      "description": "Ob das Konzept ein auslösendes Ereignis im Verlauf (ereignis) oder den Zweck der Erhebung (zweck) benennt. Beides kann auf Instanzebene kombiniert werden, solange die Extension nur einen Typ zulässt wird das zweckbezogene Konzept gewählt, wenn kein konkretes Ereignis vorliegt.",
+      "type": "code"
+    }
+  ],
+  "count": 17
 }

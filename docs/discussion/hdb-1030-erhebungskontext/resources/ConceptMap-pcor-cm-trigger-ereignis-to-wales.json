@@ -1,0 +1,188 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "pcor-cm-trigger-ereignis-to-wales",
+  "url": "https://pcor-mii.de/fhir/ConceptMap/pcor-cm-trigger-ereignis-to-wales",
+  "title": "Trigger-Ereignistyp (MII) → PROMs Trigger Event Type (NHS Wales PSOM)",
+  "description": "Mapping der MII-Trigger-Ereignistypen auf den Wertebereich PROMs Trigger Event Type des NHS Wales PROMs Standard Operating Model (PSOM). Wales kennt ausschließlich auslösende Ereignisse, keine zweckbezogenen Konzepte und keine Messreihenpositionen; diese sind daher unmatched. Einzelvalidierung (MapQual D12 = 2), Stand 2026-11-04.",
+  "name": "PCORTriggerEreignisToWales",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-11-04",
+  "sourceCanonical": "https://pcor-mii.de/fhir/ValueSet/pcor-vs-trigger-ereignis",
+  "targetCanonical": "https://fhir.nhs.wales/ValueSet/DataStandardsWales-PSOM-TriggerEventType",
+  "group": [
+    {
+      "source": "https://pcor-mii.de/fhir/CodeSystem/pcor-cs-trigger-ereignis",
+      "target": "https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PSOM-TriggerEventType",
+      "element": [
+        {
+          "code": "onboarding",
+          "target": [
+            {
+              "code": "10",
+              "display": "Onboarding",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "primaerversorgung",
+          "target": [
+            {
+              "code": "11",
+              "display": "Primary care",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ueberweisung",
+          "target": [
+            {
+              "code": "12",
+              "display": "Referral",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ambulanter-termin",
+          "target": [
+            {
+              "code": "13",
+              "display": "Outpatient appointment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "baseline",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Wales kodiert das auslösende Ereignis, nicht die Position in der Messreihe. Je nach Pfad entspricht Baseline dort 12 (Referral) oder 13 (Outpatient appointment)."
+            }
+          ]
+        },
+        {
+          "code": "praeoperativ",
+          "target": [
+            {
+              "code": "14",
+              "display": "Pre-op assessment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "postoperativ",
+          "target": [
+            {
+              "code": "15",
+              "display": "Intervention",
+              "equivalence": "equivalent",
+              "comment": "Wales 15 gilt erst nach bestätigter Durchführung der Intervention."
+            }
+          ]
+        },
+        {
+          "code": "entlassung",
+          "target": [
+            {
+              "code": "16",
+              "display": "Discharge",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "follow-up",
+          "target": [
+            {
+              "code": "15",
+              "display": "Intervention",
+              "equivalence": "inexact",
+              "comment": "Wales leitet Follow-up-Zeitpunkte aus Trigger-Ereignis plus Trigger-Ereignisdatum ab (z. B. 15 Intervention + 6 Monate). Follow-up nach Entlassung entspräche 16."
+            }
+          ]
+        },
+        {
+          "code": "screening",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Zweckbezogenes Konzept, in Wales nicht vorgesehen."
+            }
+          ]
+        },
+        {
+          "code": "diagnostik",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Zweckbezogenes Konzept, in Wales nicht vorgesehen."
+            }
+          ]
+        },
+        {
+          "code": "monitoring",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Zweckbezogenes Konzept, in Wales nicht vorgesehen."
+            }
+          ]
+        },
+        {
+          "code": "studienendpunkt",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Wales adressiert nur Versorgungspfade, keine Studienprotokolle."
+            }
+          ]
+        },
+        {
+          "code": "kliniker-initiiert",
+          "target": [
+            {
+              "code": "17",
+              "display": "Clinician-initiated",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "patienten-initiiert",
+          "target": [
+            {
+              "code": "18",
+              "display": "Patient-initiated",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sonstiges",
+          "target": [
+            {
+              "code": "71",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unbekannt",
+          "target": [
+            {
+              "code": "91",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -230,3 +230,24 @@ Description: "Erhebungskontext im Routinemodus: triggerType = entlassung, trigge
 * item[0].answer[0].valueCoding = $loinc#LA6570-1 "More than half the days"
 * item[1].linkId = "phq-phq2b"
 * item[1].answer[0].valueCoding = $loinc#LA6569-3 "Several days"
+
+// Modus b) Protokoll, zweckbezogener Typ: primaerer Studienendpunkt EP-18M
+Instance: pcor-mii-an-qr-ep18m-phq9-001
+InstanceOf: QuestionnaireResponse
+Usage: #example
+Title: "PHQ-9 zum primären Endpunkt EP-18M (Protokollmodus)"
+Description: "Erhebungskontext mit zweckbezogenem Trigger-Typ studienendpunkt: Die Erhebung dient der Bestimmung des primären Endpunkts 18 Monate nach Entlassung; die Protokollposition EP-18M benennt den konkreten Endpunkt. Kein auslösendes Versorgungsereignis, daher kein triggerDate; das Soll-Fenster steht im Probandenplan."
+* insert Testdaten
+* extension[MII_EX_PRO_Erhebungskontext].extension[protocol].valueCanonical = "https://pcor-mii.de/fhir/PlanDefinition/pcor-mii-an-studienprotokoll|0.1.0"
+* extension[MII_EX_PRO_Erhebungskontext].extension[protocolPosition].valueCoding = $Visite#EP-18M
+* extension[MII_EX_PRO_Erhebungskontext].extension[triggerType].valueCodeableConcept = $Trigger#studienendpunkt
+* questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.1"
+* status = #completed
+* subject = Reference(pcor-mii-an-patient-001)
+* basedOn = Reference(pcor-mii-an-probandenplan-001)
+* authored = "2027-09-10T14:30:00+02:00"
+* source = Reference(pcor-mii-an-patient-001)
+* item[0].linkId = "phq-phq2a"
+* item[0].answer[0].valueCoding = $loinc#LA6568-5 "Not at all"
+* item[1].linkId = "phq-phq2b"
+* item[1].answer[0].valueCoding = $loinc#LA6568-5 "Not at all"

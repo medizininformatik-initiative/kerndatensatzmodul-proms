@@ -11,6 +11,7 @@ Alias: $GAD7 = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Qu
 Alias: $Aktionstyp = https://pcor-mii.de/fhir/CodeSystem/pcor-cs-protokoll-aktionstyp
 Alias: $Visite = https://pcor-mii.de/fhir/CodeSystem/pcor-cs-an-visite
 Alias: $Trigger = https://pcor-mii.de/fhir/CodeSystem/pcor-cs-trigger-ereignis
+Alias: $WalesTrigger = https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PSOM-TriggerEventType
 Alias: $Protokoll = https://pcor-mii.de/fhir/PlanDefinition/pcor-mii-an-studienprotokoll
 
 RuleSet: Testdaten
