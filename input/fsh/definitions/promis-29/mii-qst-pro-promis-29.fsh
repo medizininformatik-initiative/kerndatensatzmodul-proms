@@ -1867,11 +1867,10 @@ Usage: #definition
 // Social Function Raw Score
 * item[=].item[+].linkId = "promis-29-social-raw"
 * item[=].item[=].type = #decimal
-// LOINC 71958-3 heisst noch "Satisfaction with participation in social roles" (v1.0-Konstrukt);
-// LOINC fuehrt den Code aber im PROMIS-29-Panel 62337-1 als Social-Rohwert des Profils.
-// Identitaet des Scores kommt aus derivedFrom/Questionnaire|version, nicht aus LOINC.
-* item[=].item[=].code[+] = $LNC#71958-3 "PROMIS-29 Satisfaction with participation in social roles score"
-* item[=].item[=].code[+] = $mii-cs-pro-score-catalogue#promis-29-social-function-raw "PROMIS-29 Ability to Participate in Social Roles and Activities Raw Score"
+// Kein LOINC-Code: 71958-3 ist der Rohwert der v1.0-Domaene "Satisfaction with participation in
+// social roles" (andere Items, andere Polung); fuer die v2.0-Domaene "Ability to Participate"
+// (Itembank 76787-1, T-Score 77854-8) hat LOINC keinen 4a-Rohwert-Code (nur 8a = 77814-2).
+* item[=].item[=].code = $mii-cs-pro-score-catalogue#promis-29-social-function-raw "PROMIS-29 Ability to Participate in Social Roles and Activities Raw Score"
 * item[=].item[=].text = "PROMIS-29 Social Roles and Activities - Raw Score"
 * item[=].item[=].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].text.extension[=].extension[+].url = "lang"

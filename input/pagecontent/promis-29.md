@@ -19,7 +19,7 @@ PROMIS-29 Profile v2.1 bundles seven 4-item short forms plus one pain intensity 
 | Depression | 4a v1.0 | 4 | T-score | 77861-3 | 76343-3 |
 | Fatigue | 4a v1.0 | 4 | T-score | 77864-7 | 76342-5 |
 | Sleep Disturbance | 4a v1.0 | 4 | T-score | 77860-5 | 75258-4 |
-| Ability to Participate in Social Roles and Activities | 4a **v2.0** | 4 | T-score | 77854-8 | — (LOINC has only 8a v2.0 = 76731-9) |
+| Ability to Participate in Social Roles and Activities | 4a **v2.0** | 4 | T-score | 77854-8 | item bank [76787-1](https://loinc.org/76787-1/) (no 4a panel; 8a = 76731-9) |
 | Pain Interference | 4a v1.0 | 4 | T-score | 77865-4 | 90971-3 |
 | Pain Intensity | single item (Global07) | 1 | 0–10 NRS | 61583-1 (item) | — |
 
@@ -30,7 +30,7 @@ The profile itself is LOINC panel [62337-1](https://loinc.org/62337-1/) (`Questi
 LOINC cannot identify a PROMIS score unambiguously: the domain T-score codes (`778xx`, `91721-1`) carry the item-bank version but not the short form (4a, 8a or CAT all share one code), and the profile-specific codes (`71955-9` … `71968-2`) carry neither version nor construct. The module therefore applies one rule:
 
 * **T-scores** use the domain code with the bank version (`PROMIS <domain> - version N T-score`), because only those codes name the calibration.
-* **Raw scores** use the PROMIS-29-specific `PROMIS-29 <domain> score` codes, because raw sums are only meaningful per short form. This includes `71958-3` for the Social Roles raw score: its LOINC name still says *Satisfaction with participation in social roles* (the v1.0 construct), but LOINC lists it in the PROMIS-29 panel 62337-1 as the profile's social raw score. The item additionally carries the MII score-catalogue code `promis-29-social-function-raw`.
+* **Raw scores** use the PROMIS-29-specific `PROMIS-29 <domain> score` codes, because raw sums are only meaningful per short form. The Social Roles raw score is the exception: `71958-3` is the raw score of the v1.0 domain *Satisfaction with Participation in Social Roles* (different items, opposite polarity), and for the v2.0 domain *Ability to Participate* (item bank 76787-1, T-score 77854-8) LOINC has no 4a raw-score code (only 8a, 77814-2). The item therefore carries the MII score-catalogue code `promis-29-social-function-raw` only.
 * **Pain Intensity** uses the item code `61583-1` for item and score alike.
 * The authoritative identity of a score is never the LOINC code but `Observation.derivedFrom` → `QuestionnaireResponse.questionnaire` (versioned canonical) plus the MII score-catalogue code.
 
