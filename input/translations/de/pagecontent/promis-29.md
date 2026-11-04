@@ -30,7 +30,7 @@ Das Profil selbst ist das LOINC-Panel [62337-1](https://loinc.org/62337-1/) (`Qu
 LOINC kann einen PROMIS-Score nicht eindeutig benennen: Die Domänen-T-Score-Codes (`778xx`, `91721-1`) tragen die Itembank-Version, aber nicht die Kurzform (4a, 8a und CAT teilen sich einen Code), die profilspezifischen Codes (`71955-9` … `71968-2`) weder Version noch Konstrukt. Das Modul wendet deshalb eine Regel an:
 
 * **T-Scores** tragen den Domänencode mit Bank-Version (`PROMIS <Domäne> - version N T-score`), weil nur diese Codes die Kalibrierung benennen.
-* **Rohwerte** tragen die PROMIS-29-spezifischen Codes `PROMIS-29 <Domäne> score`, weil Rohsummen nur je Kurzform sinnvoll sind. Der Rohwert Soziale Teilhabe hat **keinen** LOINC-Code (`71958-3` bezeichnet das v1.0-Konstrukt Satisfaction) und trägt nur den MII-Score-Katalogcode.
+* **Rohwerte** tragen die PROMIS-29-spezifischen Codes `PROMIS-29 <Domäne> score`, weil Rohsummen nur je Kurzform sinnvoll sind. Das gilt auch für `71958-3` beim Rohwert Soziale Teilhabe: Der LOINC-Name sagt noch *Satisfaction with participation in social roles* (v1.0-Konstrukt), LOINC führt den Code aber im PROMIS-29-Panel 62337-1 als Social-Rohwert des Profils. Das Item trägt zusätzlich den MII-Score-Katalogcode `promis-29-social-function-raw`.
 * **Schmerzintensität** nutzt den Item-Code `61583-1` für Item und Score.
 * Die maßgebliche Identität eines Scores ist nie der LOINC-Code, sondern `Observation.derivedFrom` → `QuestionnaireResponse.questionnaire` (versionierte Canonical) plus MII-Score-Katalogcode.
 

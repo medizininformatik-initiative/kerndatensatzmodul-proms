@@ -30,7 +30,7 @@ The profile itself is LOINC panel [62337-1](https://loinc.org/62337-1/) (`Questi
 LOINC cannot identify a PROMIS score unambiguously: the domain T-score codes (`778xx`, `91721-1`) carry the item-bank version but not the short form (4a, 8a or CAT all share one code), and the profile-specific codes (`71955-9` … `71968-2`) carry neither version nor construct. The module therefore applies one rule:
 
 * **T-scores** use the domain code with the bank version (`PROMIS <domain> - version N T-score`), because only those codes name the calibration.
-* **Raw scores** use the PROMIS-29-specific `PROMIS-29 <domain> score` codes, because raw sums are only meaningful per short form. The Social Roles raw score has **no** LOINC code (`71958-3` denotes the v1.0 Satisfaction construct) and carries the MII score-catalogue code only.
+* **Raw scores** use the PROMIS-29-specific `PROMIS-29 <domain> score` codes, because raw sums are only meaningful per short form. This includes `71958-3` for the Social Roles raw score: its LOINC name still says *Satisfaction with participation in social roles* (the v1.0 construct), but LOINC lists it in the PROMIS-29 panel 62337-1 as the profile's social raw score. The item additionally carries the MII score-catalogue code `promis-29-social-function-raw`.
 * **Pain Intensity** uses the item code `61583-1` for item and score alike.
 * The authoritative identity of a score is never the LOINC code but `Observation.derivedFrom` → `QuestionnaireResponse.questionnaire` (versioned canonical) plus the MII score-catalogue code.
 
