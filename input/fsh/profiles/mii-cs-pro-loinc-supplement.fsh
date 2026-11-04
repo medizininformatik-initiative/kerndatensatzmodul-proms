@@ -57,6 +57,9 @@ Usage: #definition
 * concept[+].code = #LA10044-8
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "Oft"
+* concept[+].code = #LA14747-2
+* concept[=].designation[+].language = #de
+* concept[=].designation[=].value = "Meistens"
 * concept[+].code = #LA9933-8
 * concept[=].designation[+].language = #de
 * concept[=].designation[=].value = "Immer"

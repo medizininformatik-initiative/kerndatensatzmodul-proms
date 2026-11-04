@@ -40,7 +40,7 @@ Description: "Profile for PROMIS-29 Anxiety T-Score Observations"
 * ^status = #active
 * ^experimental = true
 
-* code = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
+* code = $LNC#77862-1 "PROMIS emotional distress - anxiety - version 1.0 Tscore"
 * code MS
 
 * value[x] only Quantity
@@ -214,7 +214,7 @@ Description: "Profile for PROMIS-29 Pain Intensity single item Observations"
 * ^status = #active
 * ^experimental = true
 
-* code = $LNC#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
+* code = $LNC#61583-1 "How would you rate your pain on average in past 7 days [PROMIS]"
 * code MS
 
 * value[x] only Quantity

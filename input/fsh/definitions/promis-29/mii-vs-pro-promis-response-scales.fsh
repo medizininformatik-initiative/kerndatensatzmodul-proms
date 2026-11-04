@@ -92,3 +92,33 @@ Description: "PROMIS Frequency response scale based on LOINC LL1016-6"
 * ^compose.include.concept[=].display = "Always"
 * ^compose.include.concept[=].designation[+].language = #de
 * ^compose.include.concept[=].designation[=].value = "Immer"
+// Ability to Participate in Social Roles and Activities (LOINC LL3003-2):
+// Never / Rarely / Sometimes / Usually / Always — NICHT die Frequency-Skala (Often).
+ValueSet: MII_VS_PRO_PROMIS_Social_Roles_Response_Scale
+Id: mii-vs-pro-promis-social-roles-response-scale
+Title: "MII VS PRO PROMIS Social Roles Response Scale"
+Description: "Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 ... Always = 1)."
+* insert PR_CS_VS_Version
+* ^status = #active
+* ^experimental = false
+* ^compose.include.system = $LNC
+* ^compose.include.concept[+].code = #LA6270-8
+* ^compose.include.concept[=].display = "Never"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Nie"
+* ^compose.include.concept[+].code = #LA10066-1
+* ^compose.include.concept[=].display = "Rarely"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Selten"
+* ^compose.include.concept[+].code = #LA10082-8
+* ^compose.include.concept[=].display = "Sometimes"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Manchmal"
+* ^compose.include.concept[+].code = #LA14747-2
+* ^compose.include.concept[=].display = "Usually"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Meistens"
+* ^compose.include.concept[+].code = #LA9933-8
+* ^compose.include.concept[=].display = "Always"
+* ^compose.include.concept[=].designation[+].language = #de
+* ^compose.include.concept[=].designation[=].value = "Immer"

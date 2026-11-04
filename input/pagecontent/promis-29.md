@@ -1,25 +1,38 @@
 ### Overview
 
 **Status**: Fully implemented
-**Version**: 2026.0.0-ballot
-**Last Updated**: 2025-08-28
+**Version**: 2027.0.0-rc.1
+**Last Updated**: 2026-11-04
 
 The PROMIS-29 is a comprehensive instrument for assessing health-related quality of life across 7 domains plus pain intensity.
 
 See the [Questionnaire definition](Questionnaire-mii-qst-pro-promis-29.html) for the full resource.
 
-### Domains
+### Domains and short forms
 
-| Domain | Items | Score Range | LOINC |
-|--------|-------|-------------|-------|
-| Physical Function | 4 | T-Score 20-80 | 61758-9 |
-| Anxiety | 4 | T-Score 20-80 | 61759-7 |
-| Depression | 4 | T-Score 20-80 | 61760-5 |
-| Fatigue | 4 | T-Score 20-80 | 61761-3 |
-| Sleep Disturbance | 4 | T-Score 20-80 | 61762-1 |
-| Social Roles | 4 | T-Score 20-80 | 61763-9 |
-| Pain Interference | 4 | T-Score 20-80 | 61764-7 |
-| Pain Intensity | 1 | 0-10 | 75262-6 |
+PROMIS-29 Profile v2.1 bundles seven 4-item short forms plus one pain intensity item. The short-form *versions* matter for the T-score tables: v2.1 uses the Physical Function 4a v2.0 calibration (same four items as v1.0, re-calibrated with the Physical Function v2.0 item bank, Rose et al. 2014) and the Ability to Participate in Social Roles and Activities 4a v2.0 short form (which replaced the v1.0 *Satisfaction with Participation* short form in Profile v2.0). The other five short forms are v1.0.
+
+| Domain | Short form (PROMIS) | Items | Score | LOINC T-score code | LOINC short-form panel |
+|--------|---------------------|-------|-------|--------------------|------------------------|
+| Physical Function | 4a **v2.0** | 4 | T-score | 91721-1 | — (LOINC has only 4a v1.0 = 76700-4) |
+| Anxiety | 4a v1.0 | 4 | T-score | 77862-1 | 76344-1 |
+| Depression | 4a v1.0 | 4 | T-score | 77861-3 | 76343-3 |
+| Fatigue | 4a v1.0 | 4 | T-score | 77864-7 | 76342-5 |
+| Sleep Disturbance | 4a v1.0 | 4 | T-score | 77860-5 | 75258-4 |
+| Ability to Participate in Social Roles and Activities | 4a **v2.0** | 4 | T-score | 77854-8 | — (LOINC has only 8a v2.0 = 76731-9) |
+| Pain Interference | 4a v1.0 | 4 | T-score | 77865-4 | 90971-3 |
+| Pain Intensity | single item (Global07) | 1 | 0–10 NRS | 61583-1 (item) | — |
+
+The profile itself is LOINC panel [62337-1](https://loinc.org/62337-1/) (`Questionnaire.code`). Note that this LOINC panel is a v1.0/v2.x hybrid: it still lists the v1.0 Satisfaction item (62041-9) and the *PROMIS-29 Satisfaction with participation in social roles* score codes next to the v2.0 Ability-to-Participate items and T-score code.
+
+#### LOINC coding rule for the scores
+
+LOINC cannot identify a PROMIS score unambiguously: the domain T-score codes (`778xx`, `91721-1`) carry the item-bank version but not the short form (4a, 8a or CAT all share one code), and the profile-specific codes (`71955-9` … `71968-2`) carry neither version nor construct. The module therefore applies one rule:
+
+* **T-scores** use the domain code with the bank version (`PROMIS <domain> - version N T-score`), because only those codes name the calibration.
+* **Raw scores** use the PROMIS-29-specific `PROMIS-29 <domain> score` codes, because raw sums are only meaningful per short form. The Social Roles raw score has **no** LOINC code (`71958-3` denotes the v1.0 Satisfaction construct) and carries the MII score-catalogue code only.
+* **Pain Intensity** uses the item code `61583-1` for item and score alike.
+* The authoritative identity of a score is never the LOINC code but `Observation.derivedFrom` → `QuestionnaireResponse.questionnaire` (versioned canonical) plus the MII score-catalogue code.
 
 ### Technical Details
 
@@ -56,19 +69,23 @@ Each domain (except Pain Intensity) is calculated as a T-Score:
 
 ### Language Support
 
-**Primary Language**: English (validated version)
-**German Translation**: Via Extension
+**Primary Language**: English, wording of the official PROMIS-29 Profile v2.1 form (PROMIS Health Organization)
+**German Translation**: Via `translation` extension on every item text, group header and instruction; wording of the validated German PROMIS-29 (CPCOR Charité / PCOR-MII Item Level Dictionary; Pain Interference items in the past tense per the PHO German PDF).
+
+All 43 items (29 questions, 14 score items) and all group headers follow this one architecture. The former German-primary variant `mii-qst-pro-promis-29-de` and the 8-item `-minimal` subset are **retired** since 2027.0.0-rc.1; German-primary rendering is a renderer/`$localize` concern, not a second resource. The Physical Function and Social Roles groups deliberately have **no** time-frame instruction, exactly as on the official form.
 
 ```json
 {
-  "text": "In the past 7 days... I could do chores",
-  "extension": [{
-    "url": "http://hl7.org/fhir/StructureDefinition/translation",
-    "extension": [
-      {"url": "lang", "valueCode": "de"},
-      {"url": "content", "valueString": "In den letzten 7 Tagen... konnte ich Hausarbeiten erledigen"}
-    ]
-  }]
+  "text": "I felt fearful.",
+  "_text": {
+    "extension": [{
+      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+      "extension": [
+        {"url": "lang", "valueCode": "de"},
+        {"url": "content", "valueString": "Ich fürchtete mich."}
+      ]
+    }]
+  }
 }
 ```
 
@@ -106,10 +123,11 @@ The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:
   "item": [
     {
       "linkId": "promis-pfa11",
-      "text": "Are you able to do chores?",
+      "text": "Are you able to do chores such as vacuuming or yard work?",
       "answer": [{
         "valueCoding": {
-          "code": "3",
+          "system": "http://loinc.org",
+          "code": "LA13918-0",
           "display": "With a little difficulty"
         }
       }]
@@ -123,4 +141,6 @@ The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:
 
 - [PROMIS Official Site](https://www.healthmeasures.net/explore-measurement-systems/promis)
 - [German PROMIS Validation](https://doi.org/10.1371/journal.pone.0197139)
-- LOINC Panel: [62199-5](https://loinc.org/62199-5/)
+- LOINC panel PROMIS-29 profile: [62337-1](https://loinc.org/62337-1/)
+- HealthMeasures, PROMIS Adult Profile Scoring Manual (15 July 2025) — short-form versions per profile version and T-score tables
+- HealthMeasures, PROMIS Physical Function Measure Differences (12 July 2024) — v1.0–v2.0 recalibration

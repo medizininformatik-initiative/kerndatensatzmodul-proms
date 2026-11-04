@@ -31,6 +31,13 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 * #promis-29-social-function-tscore "PROMIS-29 Ability to Participate in Social Roles and Activities T-Score"
 * #promis-29-pain-interference-tscore "PROMIS-29 Pain Interference T-Score"
 * #promis-29-pain-intensity "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
+* #promis-29-physical-function-raw "PROMIS-29 Physical Function Raw Score"
+* #promis-29-anxiety-raw "PROMIS-29 Anxiety Raw Score"
+* #promis-29-depression-raw "PROMIS-29 Depression Raw Score"
+* #promis-29-fatigue-raw "PROMIS-29 Fatigue Raw Score"
+* #promis-29-sleep-disturbance-raw "PROMIS-29 Sleep Disturbance Raw Score"
+* #promis-29-social-function-raw "PROMIS-29 Ability to Participate in Social Roles and Activities Raw Score"
+* #promis-29-pain-interference-raw "PROMIS-29 Pain Interference Raw Score"
 
 // PROMIS Cognitive Function Abilities SF4a Scores
 * #promis-cognitive-function-sf4a-raw "PROMIS Cognitive Function Abilities 4a Raw Score"

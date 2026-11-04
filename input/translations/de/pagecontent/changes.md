@@ -2,6 +2,21 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 ### Unveröffentlicht (dev)
 
+**PROMIS-29 bereinigt für 2027.0.0-rc.1** (Beads-Epic g3b):
+
+* **Sprach-Architektur wiederhergestellt** — alle 43 Items, Gruppenköpfe und Instruktionen sind EN-primär (Wortlaut des offiziellen PHO-Formulars PROMIS-29 Profile v2.1) mit deutscher `translation`-Extension (PCOR-MII-Master / CPCOR). Der Fix vom 2026-05-06 (608212e74b) lag nur auf `release/v2026.3.0`; PR #97 nach `dev` wurde nie gemergt, sodass 2026.4.0 bis 2027.0.0-ballot.1 39 deutsch-primäre Items in der englischen Instanz trugen.
+* **HDB-1008** — vierte Antwortoption der Social-Items ist jetzt LA14747-2 „Usually“/„Meistens“ (LOINC LL3003-2) statt LA10044-8 „Often“; LOINC-Supplement und ein eigenes ValueSet `mii-vs-pro-promis-social-roles-response-scale` ergänzt.
+* **Kein Zeitbezug bei Körperlicher Funktion und Sozialer Teilhabe** — die Display-Items „In den letzten 7 Tagen:“ dieser beiden Gruppen entfernt (Ticket 047); das offizielle Formular hat dort keinen Stem. Schmerzintensität trägt den Stem jetzt wie im Formular.
+* **FATEXP41** trug den falschen LOINC-Code 61863-7 („most fatigued day“); korrekt ist 61865-2 „How run-down did you feel on average“.
+* **Antwortreihenfolge Körperliche Funktion** wie im Formular (Without any difficulty … Unable to do).
+* **LOINC-Kodierregel für Scores** dokumentiert und angewendet: T-Scores tragen den Domänencode mit Bank-Version (Angst: 77862-1 statt 71967-4), Rohwerte die PROMIS-29-spezifischen Codes, der Rohwert Soziale Teilhabe nur den MII-Katalogcode (71958-3 ist das v1.0-Konstrukt „Satisfaction“), Schmerzintensität einheitlich 61583-1 (ObservationDefinition/Profil vorher 75261-8). Score-Katalog um die sieben Rohwert-Konzepte ergänzt.
+* **`mii-qst-pro-promis-29-de` und `-minimal` retired** — die DE-primäre Spiegelvariante und das 8-Item-Subset bleiben als leere Hüllen auflösbar; DE-primäre Darstellung ist Sache von `$localize` bzw. des Renderers. Beispiel-QuestionnaireResponse auf die Hauptinstanz umgehängt.
+* **IG-Seite PROMIS-29**: Domänentabelle führte sieben Pain-Interference-*Item*-Codes als „Panel“; jetzt Kurzform-Versionen (PF und Social 4a v2.0, übrige 4a v1.0, lt. Adult Profile Scoring Manual 07/2025), T-Score-Codes und echte Panel-Codes; QR-Snippet mit LOINC-valueCoding statt systemloser „3“ (Finding 0fu.1).
+
+**PROMIS-16 auf `active`** (`experimental = false`): Inhalt vollständig, PCOR-MII nutzt ihn produktiv.
+
+**Reste aus release/v2026.3.0 nachgezogen**: `domainAligned` bei PROMIS Cognitive Function SF 4a, kompletter `capabilities`-Block bei PRO-CTCAE Breast (displayable/collectable, nicht calculatable/extractable/domainAligned).
+
 **PROMIS-29-Scoring korrigiert** (HDB-1007/-1009): Antwortgewichte von `promis-srpper23-caps` auf die offizielle Polung gedreht (Nie=5…Immer=1); die T-Score-Konversionstabellen aller sieben Domänen werden jetzt aus dem offiziellen Scoring-Manual-Appendix **generiert** (zuvor waren sechs falsch, zwei Domänenpaare identisch); T-Scores entstehen nur noch bei vollständig beantworteter Short Form (Count-Guard). Die vierte Antwortoption der Social-Items (Usually/Often, HDB-1008) bleibt bis zum Abgleich mit dem deutschen Originalwortlaut offen.
 
 **`questionnaire-unit` auf den T-Score-Items** ergänzt (UCUM `{score}`, wie bei den Raw-Items): Ohne Unit scheitert die SDC-Observation-Extraction, weil `Observation.value[x]` kein decimal kennt; mit Unit entsteht die profilkonforme `valueQuantity`.

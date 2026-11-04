@@ -32,11 +32,10 @@ REPO = Path(__file__).resolve().parent.parent
 DATA = Path(__file__).resolve().parent / "data"
 FSH_FILES = [
     REPO / "input/fsh/definitions/promis-29/mii-qst-pro-promis-29.fsh",
-    REPO / "input/fsh/definitions/promis-29/mii-qst-pro-promis-29-de.fsh",
 ]
-# Social-Items: LOINC-Liste LL3003-2 nennt als 4. Option LA14747-2 "Usually";
-# das Modul kodiert (noch) LA10044-8 "Often" — getrackt als HDB-1008.
-KNOWN_DEVIATIONS = {("LL3003-2", "LA10044-8")}
+# HDB-1008 (Social-Items LA10044-8 statt LA14747-2) ist seit 2027.0.0-rc.1 behoben;
+# keine bekannten Abweichungen mehr.
+KNOWN_DEVIATIONS = set()
 ANSWER_LISTS = {  # linkId-Präfix -> erwartete LOINC-AnswerList (für Stufe 2)
     "promis-srpper": "LL3003-2",
     "promis-edanx": "LL1016-6",

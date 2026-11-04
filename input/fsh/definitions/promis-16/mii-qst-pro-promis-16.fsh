@@ -8,8 +8,8 @@ Usage: #definition
 * insert PROMIS_Copyright_DE
 
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16"
-* status = #draft
-* experimental = true
+* status = #active
+* experimental = false
 * language = #en
 
 // TODO: add LOINC code for PROMIS-16 once published in LOINC

@@ -27,6 +27,20 @@
         "short": "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde"
       },
       {
+        "id": "QuestionnaireResponse.item.text.extension",
+        "path": "QuestionnaireResponse.item.text.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "QuestionnaireResponse.item.text.extension:translation",
         "path": "QuestionnaireResponse.item.text.extension",
         "sliceName": "translation",
@@ -73,6 +87,20 @@
         "path": "QuestionnaireResponse.item.answer.value[x].display",
         "short": "Wortlaut der gewählten Antwort",
         "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.value[x]:valueCoding.display.extension",
+        "path": "QuestionnaireResponse.item.answer.value[x].display.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "QuestionnaireResponse.item.answer.value[x]:valueCoding.display.extension:translation",

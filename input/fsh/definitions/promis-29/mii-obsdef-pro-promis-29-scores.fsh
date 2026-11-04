@@ -34,7 +34,7 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code.coding[loinc] = $LNC#71967-4 "PROMIS-29 Anxiety score T-score"
+* code.coding[loinc] = $LNC#77862-1 "PROMIS emotional distress - anxiety - version 1.0 Tscore"
 * code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-anxiety-tscore "PROMIS-29 Anxiety T-Score"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
@@ -178,7 +178,7 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code.coding[loinc] = $LNC#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
+* code.coding[loinc] = $LNC#61583-1 "How would you rate your pain on average in past 7 days [PROMIS]"
 * code.coding[mii] = $mii-cs-pro-score-catalogue#promis-29-pain-intensity "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
