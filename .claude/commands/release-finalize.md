@@ -23,6 +23,31 @@ Execute Phase 5: Merge and Tag Release
    - Read `sushi-config.yaml` to get the version number
    - Confirm with user: "Ready to tag release v{VERSION}?"
 
+2a0. **Merge-back-Gate: Ist der Release-Branch vollstaendig in dev? (HARTES GATE)**
+
+   Der Tag wird auf `dev` gesetzt, NIE auf dem Release-Branch. Vorher pruefen, dass
+   jeder Commit des Release-Branches in `dev` enthalten ist:
+
+   ```bash
+   git fetch origin
+   git log --oneline origin/dev..origin/release/v{VERSION}
+   ```
+
+   Die Ausgabe MUSS leer sein. Ist sie es nicht, wurde der Release-PR nicht gemergt
+   (oder nur teilweise): PR mergen bzw. die fehlenden Commits nach `dev` bringen,
+   dann erst weiter. Zusaetzlich fuer die Vorgaenger-Branches:
+
+   ```bash
+   for b in $(git branch -r --list 'origin/release/*'); do
+     n=$(git rev-list --count origin/dev..$b); [ "$n" -gt 0 ] && echo "$b: $n Commits nicht in dev"
+   done
+   ```
+
+   Hintergrund: 2026.3.0 wurde vom Release-Branch getaggt und PR #97 nach `dev` als
+   "verwaist" geschlossen statt gemergt. Der PROMIS-29-Sprachfix (608212e74b) fehlte
+   dadurch in 2026.4.0 bis 2027.0.0-ballot.1 (Beads g3b.11). Nach dem Tag den
+   Release-Branch nur loeschen, wenn dieser Check leer war.
+
 2a. **Versionskonsistenz pruefen (Gate vor dem Tag)**
 
    ```bash
@@ -82,7 +107,7 @@ Execute Phase 5: Merge and Tag Release
 
 After successfully creating the tag:
 1. Stay on dev branch (already there)
-2. Optionally clean up the release branch if user wants
+2. Optionally clean up the release branch if user wants — nur wenn Gate 2a0 leer war (sonst gehen Commits verloren)
 3. Display the GitHub release URL: `https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/releases`
 
 ### CI wiring (recommended — belt and suspenders)

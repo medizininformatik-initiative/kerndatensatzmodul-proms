@@ -119,3 +119,7 @@ jobs:
       # every branch and in every module created from this template.
       - name: Check the language model (English default, German translation)
         run: bash scripts/language-model-check.sh
+      - name: Check questionnaire language architecture and master drift
+        # Guard A: EN-primary questionnaires carry a DE translation on every item text.
+        # Guard B: German PROMIS item texts match the validated master (documented exceptions).
+        run: python3 scripts/check-questionnaire-languages.py
