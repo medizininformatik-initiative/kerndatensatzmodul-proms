@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "title" : "MII PR PRO PROMIS-29 Social Function T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T09:49:29+00:00",
+  "date" : "2026-11-05T10:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

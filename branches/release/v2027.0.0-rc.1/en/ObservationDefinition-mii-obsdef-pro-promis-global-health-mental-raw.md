@@ -18,7 +18,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
 
 **category**: Survey
 
-**code**: PROMIS-10 Global Mental Health score
+**code**: PROMIS-10 Global Mental Health (GMH) score
 
 **permittedDataType**: Quantity
 
@@ -65,7 +65,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "71970-8",
-      "display" : "PROMIS-10 Global Mental Health score"
+      "display" : "PROMIS-10 Global Mental Health (GMH) score"
     },
     {
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",

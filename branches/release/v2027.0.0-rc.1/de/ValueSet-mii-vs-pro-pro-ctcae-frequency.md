@@ -43,7 +43,7 @@
   "title" : "MII VS PRO PRO-CTCAE Frequency Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T09:49:29+00:00",
+  "date" : "2026-11-05T10:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

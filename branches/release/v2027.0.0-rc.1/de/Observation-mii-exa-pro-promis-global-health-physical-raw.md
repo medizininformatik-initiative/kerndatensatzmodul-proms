@@ -18,7 +18,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
 
 **category**: Survey
 
-**code**: PROMIS-10 Global Physical Health score
+**code**: PROMIS-10 Global Physical Health (GPH) score
 
 **subject**: [Max Mustermann Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)](Patient-mii-exa-pro-patient.md)
 
@@ -51,7 +51,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "71972-4",
-      "display" : "PROMIS-10 Global Physical Health score"
+      "display" : "PROMIS-10 Global Physical Health (GPH) score"
     },
     {
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",

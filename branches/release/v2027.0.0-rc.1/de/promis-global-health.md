@@ -35,7 +35,7 @@ Höhere Werte bedeuten bessere Gesundheit. Die Umrechnung der Rohwerte in **T-Sc
 
 * linkIds `promis-global01`…`promis-global10`; `promis-global07` ist derselbe linkId wie das Schmerzintensitäts-Item in PROMIS-29 (identische Frage, Itembank-Prinzip). Reihenfolge wie auf dem Formular: 01, 02, 03, 04, 05, 09, 06, 10, 08, 07; flache Struktur, der 7-Tage-Stamm ist ein `display`-Item.
 * Item-Codes aus dem LOINC-Panel `85524-7`; Antwortoptionen als LOINC-Answerlists (`LL1012-5`, `LL1013-3`, `LL1016-6`, `LL1015-8`) mit `itemWeight` an der `answerOption`. Die Gewichte sind bereits die **umkodierten** Werte der v1.2-Scoring-Regel.
-* Global07 ist als `choice` mit Integer-Optionen 0–10 modelliert, damit die Umkodierung als `itemWeight` an den Optionen liegt; der Antwortdatentyp bleibt `valueInteger` wie in PROMIS-29.
+* Global07 ist ein `integer`-Item 0–10 wie in PROMIS-29 (das Questionnaire-Profil erlaubt nur Coding-Antwortoptionen); die v1.2-Umkodierung steht in der Variable `gphRaw`, nicht als `itemWeight`.
 * Rohwerte als FHIR-Variablen `gphRaw`/`gmhRaw` mit Count-Guard (nur bei vollständig beantworteter Vierergruppe), Score-Items `promis-global-health-score-physical-raw` (LOINC `71972-4`) und `promis-global-health-score-mental-raw` (LOINC `71970-8`).
 
 Die vollständige Ressource: [Questionnaire-Definition](Questionnaire-mii-qst-pro-promis-global-health.md).

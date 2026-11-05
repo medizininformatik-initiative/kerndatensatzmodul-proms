@@ -371,7 +371,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>linkIds <code class="language-plaintext highlighter-rouge">promis-global01</code>…<code class="language-plaintext highlighter-rouge">promis-global10</code>; <code class="language-plaintext highlighter-rouge">promis-global07</code> ist derselbe linkId wie das Schmerzintensitäts-Item in PROMIS-29 (identische Frage, Itembank-Prinzip). Reihenfolge wie auf dem Formular: 01, 02, 03, 04, 05, 09, 06, 10, 08, 07; flache Struktur, der 7-Tage-Stamm ist ein <code class="language-plaintext highlighter-rouge">display</code>-Item.</li>
   <li>Item-Codes aus dem LOINC-Panel <code class="language-plaintext highlighter-rouge">85524-7</code>; Antwortoptionen als LOINC-Answerlists (<code class="language-plaintext highlighter-rouge">LL1012-5</code>, <code class="language-plaintext highlighter-rouge">LL1013-3</code>, <code class="language-plaintext highlighter-rouge">LL1016-6</code>, <code class="language-plaintext highlighter-rouge">LL1015-8</code>) mit <code class="language-plaintext highlighter-rouge">itemWeight</code> an der <code class="language-plaintext highlighter-rouge">answerOption</code>. Die Gewichte sind bereits die <strong>umkodierten</strong> Werte der v1.2-Scoring-Regel.</li>
-  <li>Global07 ist als <code class="language-plaintext highlighter-rouge">choice</code> mit Integer-Optionen 0–10 modelliert, damit die Umkodierung als <code class="language-plaintext highlighter-rouge">itemWeight</code> an den Optionen liegt; der Antwortdatentyp bleibt <code class="language-plaintext highlighter-rouge">valueInteger</code> wie in PROMIS-29.</li>
+  <li>Global07 ist ein <code class="language-plaintext highlighter-rouge">integer</code>-Item 0–10 wie in PROMIS-29 (das Questionnaire-Profil erlaubt nur Coding-Antwortoptionen); die v1.2-Umkodierung steht in der Variable <code class="language-plaintext highlighter-rouge">gphRaw</code>, nicht als <code class="language-plaintext highlighter-rouge">itemWeight</code>.</li>
   <li>Rohwerte als FHIR-Variablen <code class="language-plaintext highlighter-rouge">gphRaw</code>/<code class="language-plaintext highlighter-rouge">gmhRaw</code> mit Count-Guard (nur bei vollständig beantworteter Vierergruppe), Score-Items <code class="language-plaintext highlighter-rouge">promis-global-health-score-physical-raw</code> (LOINC <code class="language-plaintext highlighter-rouge">71972-4</code>) und <code class="language-plaintext highlighter-rouge">promis-global-health-score-mental-raw</code> (LOINC <code class="language-plaintext highlighter-rouge">71970-8</code>).</li>
 </ul>
 
@@ -422,7 +422,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-rc.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Nov 5, 2026 09:49+0000">2026-11-05</span>
+          Erstellt <span title="Thu, Nov 5, 2026 10:07+0000">2026-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

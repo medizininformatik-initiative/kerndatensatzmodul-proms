@@ -74,7 +74,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "valueExpression" : {
       "name" : "gphRaw",
       "language" : "text/fhirpath",
-      "expression" : "iif(%resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.value.weight().sum(), {})"
+      "expression" : "iif(%resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global0[368]$')).answer.value.weight().sum() + %resource.item.where(linkId = 'promis-global07').answer.value.select(iif($this = 0, 5, iif($this <= 3, 4, iif($this <= 6, 3, iif($this <= 9, 2, 1))))).sum(), {})"
     }
   },
   {
@@ -90,7 +90,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO PROMIS Global Health v1.2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-05T09:49:29+00:00",
+  "date" : "2026-11-05T10:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -204,7 +204,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "valueCoding" : {
         "system" : "http://loinc.org",
         "code" : "LA13913-1",
-        "display" : "Very good",
+        "display" : "Very Good",
         "_display" : {
           "extension" : [{
             "extension" : [{
@@ -348,7 +348,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "valueCoding" : {
         "system" : "http://loinc.org",
         "code" : "LA13913-1",
-        "display" : "Very good",
+        "display" : "Very Good",
         "_display" : {
           "extension" : [{
             "extension" : [{
@@ -479,7 +479,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "valueCoding" : {
         "system" : "http://loinc.org",
         "code" : "LA13913-1",
-        "display" : "Very good",
+        "display" : "Very Good",
         "_display" : {
           "extension" : [{
             "extension" : [{
@@ -610,7 +610,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "valueCoding" : {
         "system" : "http://loinc.org",
         "code" : "LA13913-1",
-        "display" : "Very good",
+        "display" : "Very Good",
         "_display" : {
           "extension" : [{
             "extension" : [{
@@ -741,7 +741,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "valueCoding" : {
         "system" : "http://loinc.org",
         "code" : "LA13913-1",
-        "display" : "Very good",
+        "display" : "Very Good",
         "_display" : {
           "extension" : [{
             "extension" : [{
@@ -872,7 +872,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "valueCoding" : {
         "system" : "http://loinc.org",
         "code" : "LA13913-1",
-        "display" : "Very good",
+        "display" : "Very Good",
         "_display" : {
           "extension" : [{
             "extension" : [{
@@ -1250,6 +1250,14 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "code" : "{score}",
         "display" : "{score}"
       }
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/minValue",
+      "valueInteger" : 0
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/maxValue",
+      "valueInteger" : 10
     }],
     "linkId" : "promis-global07",
     "code" : [{
@@ -1272,84 +1280,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/StructureDefinition/translation"
       }]
     },
-    "type" : "choice",
-    "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 5
-      }],
-      "valueInteger" : 0
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 4
-      }],
-      "valueInteger" : 1
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 4
-      }],
-      "valueInteger" : 2
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 4
-      }],
-      "valueInteger" : 3
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 3
-      }],
-      "valueInteger" : 4
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 3
-      }],
-      "valueInteger" : 5
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 3
-      }],
-      "valueInteger" : 6
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 2
-      }],
-      "valueInteger" : 7
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 2
-      }],
-      "valueInteger" : 8
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 2
-      }],
-      "valueInteger" : 9
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-        "valueDecimal" : 1
-      }],
-      "valueInteger" : 10
-    }]
+    "type" : "integer"
   },
   {
     "extension" : [{
@@ -1385,7 +1316,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "71972-4",
-      "display" : "PROMIS-10 Global Physical Health score"
+      "display" : "PROMIS-10 Global Physical Health (GPH) score"
     },
     {
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
@@ -1394,6 +1325,19 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     }],
     "prefix" : "GPH",
     "text" : "Global Physical Health raw score (4-20)",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Rohwert Global Physical Health (4-20)"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "decimal",
     "readOnly" : true
   },
@@ -1431,7 +1375,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "code" : [{
       "system" : "http://loinc.org",
       "code" : "71970-8",
-      "display" : "PROMIS-10 Global Mental Health score"
+      "display" : "PROMIS-10 Global Mental Health (GMH) score"
     },
     {
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
@@ -1440,6 +1384,19 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     }],
     "prefix" : "GMH",
     "text" : "Global Mental Health raw score (4-20)",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Rohwert Global Mental Health (4-20)"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "decimal",
     "readOnly" : true
   }]
