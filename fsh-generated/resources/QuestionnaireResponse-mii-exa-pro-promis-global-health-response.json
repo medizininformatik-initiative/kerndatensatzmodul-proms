@@ -1,0 +1,150 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-promis-global-health-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA8967-7",
+            "system": "http://loinc.org",
+            "display": "Good"
+          }
+        }
+      ],
+      "linkId": "promis-global01"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA13913-1",
+            "system": "http://loinc.org",
+            "display": "Very good"
+          }
+        }
+      ],
+      "linkId": "promis-global02"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA8967-7",
+            "system": "http://loinc.org",
+            "display": "Good"
+          }
+        }
+      ],
+      "linkId": "promis-global03"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA8967-7",
+            "system": "http://loinc.org",
+            "display": "Good"
+          }
+        }
+      ],
+      "linkId": "promis-global04"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA8968-5",
+            "system": "http://loinc.org",
+            "display": "Fair"
+          }
+        }
+      ],
+      "linkId": "promis-global05"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA13913-1",
+            "system": "http://loinc.org",
+            "display": "Very good"
+          }
+        }
+      ],
+      "linkId": "promis-global09"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA13938-8",
+            "system": "http://loinc.org",
+            "display": "Mostly"
+          }
+        }
+      ],
+      "linkId": "promis-global06"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA10082-8",
+            "system": "http://loinc.org",
+            "display": "Sometimes"
+          }
+        }
+      ],
+      "linkId": "promis-global10"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6752-5",
+            "system": "http://loinc.org",
+            "display": "Mild"
+          }
+        }
+      ],
+      "linkId": "promis-global08"
+    },
+    {
+      "answer": [
+        {
+          "valueInteger": 5
+        }
+      ],
+      "linkId": "promis-global07"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 14
+        }
+      ],
+      "linkId": "promis-global-health-score-physical-raw"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 12
+        }
+      ],
+      "linkId": "promis-global-health-score-mental-raw"
+    }
+  ],
+  "status": "completed",
+  "language": "en",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-11-05T10:00:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-global-health|2027.0.0-ballot.1"
+}

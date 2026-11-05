@@ -96,3 +96,5 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 * #ssd-12-total "SSD-12 Total Score (0-48)"
 * #isr-z-mean "ISR-Z Skalenwert (Mittelwert 0-4)"
 * #phq-gad7-total "GAD-7 Total Score (0-21)"
+* #promis-global-health-physical-raw "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
+* #promis-global-health-mental-raw "PROMIS Global Health - Global Mental Health Raw Score (4-20)"

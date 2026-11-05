@@ -14,6 +14,7 @@ The PRO Library is the module's structured collection of Patient-Reported Outcom
 | [PROMIS-16](promis-16.html) | Ultra-short HRQoL profile | 16 | en (de: CPCOR) | data capture only; PROPr planned as CQL | usage request via CPCOR |
 | [PROMIS Depression SF 4a](promis-depression.html) | Depression short form | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
 | [PROMIS Cognitive Function SF 4a](promis-cognitive-function.html) | Cognitive function | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
+| [PROMIS Global Health v1.2](promis-global-health.html) | Global physical/mental health | 10 | en (de: 3 of 10 items, CPCOR pending) | GPH/GMH raw 4–20; T-scores planned as CQL | usage request via CPCOR |
 | [EORTC QLQ-C30](eortc-qlq-c30.html) | Oncological quality of life | 30 | en (de: EORTC) | [15 subscales, 0–100](eortc-qlq-c30-scoring.html) | registration (EORTC) |
 | [PRO-CTCAE](pro-ctcae.html) | Symptomatic adverse events (item library) | 124 (library) | en+de (NCI) | Composite grade + ACS (CQL) | free (NCI) |
 | [Oncology Base Screening](proms-onkologisches-basisscreening.html) | PRO-CTCAE oncology subset | 23 | de (NCI) | Composite grade (CQL) | free (NCI) |

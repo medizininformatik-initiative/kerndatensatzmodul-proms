@@ -227,8 +227,16 @@
     {
       "code": "phq-gad7-total",
       "display": "GAD-7 Total Score (0-21)"
+    },
+    {
+      "code": "promis-global-health-physical-raw",
+      "display": "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
+    },
+    {
+      "code": "promis-global-health-mental-raw",
+      "display": "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
     }
   ],
   "version": "2027.0.0-ballot.1",
-  "count": 55
+  "count": 57
 }
