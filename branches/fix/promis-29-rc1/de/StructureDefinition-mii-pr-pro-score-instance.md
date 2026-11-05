@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-11-04 | *Maschinenlesbarer Name*:MII_PR_PRO_Score_Instance |
+| Active Stand: 2026-11-05 | *Maschinenlesbarer Name*:MII_PR_PRO_Score_Instance |
 
  
 MII PR PRO Score Instance 
@@ -125,7 +125,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-s
   "name" : "MII_PR_PRO_Score_Instance",
   "title" : "MII PR PRO Score Instance",
   "status" : "active",
-  "date" : "2026-11-04T15:19:25+00:00",
+  "date" : "2026-11-05T04:21:29+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

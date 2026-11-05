@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-11-04 | *Computable Name*:MII_PR_PRO_PROMIS_29_Physical_Function_TScore |
+| Active as of 2026-11-05 | *Computable Name*:MII_PR_PRO_PROMIS_29_Physical_Function_TScore |
 
  
 Profile for PROMIS-29 Physical Function T-Score Observations 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "title" : "MII PR PRO PROMIS-29 Physical Function T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-04T15:19:25+00:00",
+  "date" : "2026-11-05T04:21:29+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2 | *Version*:2027.0.0-ballot.1 |
-| Draft Stand: 2026-11-04 | *Maschinenlesbarer Name*:MII_CS_PRO_MIDOS2 |
+| Draft Stand: 2026-11-05 | *Maschinenlesbarer Name*:MII_CS_PRO_MIDOS2 |
 | **Copyright/Rechtliches**: MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke. | |
 
  
@@ -38,7 +38,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO MIDOS2 Items and Response Scales",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-04T15:19:25+00:00",
+  "date" : "2026-11-05T04:21:29+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
