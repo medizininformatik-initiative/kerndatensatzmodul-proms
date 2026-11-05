@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-pro-mtsosd-r59-occurrence",
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-pro-mtsosd-r59-occurrence</b></p><a name=\"de-mii-vs-pro-mtsosd-r59-occurrence\"> </a><a name=\"de-hcmii-vs-pro-mtsosd-r59-occurrence\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mii-cs-pro-mtsosd-r59-occurrence.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0-rc.1</span></li></ul></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence",
+  "version" : "2027.0.0-rc.1",
+  "name" : "MII_VS_PRO_MTSOSD_R59_Occurrence",
+  "title" : "MII VS PRO MTSOSD-R59 Occurrence",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-11-05T08:15:37+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Neutral benannte 5-stufige Auftretensskala des MTSOSD-R59 (Stufe 0-4), metadata-only (Tier B).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence"
+    }]
+  }
+}

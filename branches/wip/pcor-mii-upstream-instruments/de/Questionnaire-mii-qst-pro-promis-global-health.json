@@ -1,0 +1,910 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "mii-qst-pro-promis-global-health",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-rc.1"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire mii-qst-pro-promis-global-health</b></p><a name=\"de-mii-qst-pro-promis-global-health\"> </a><a name=\"de-hcmii-qst-pro-promis-global-health\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-pro-questionnaire.html\">MII PR PRO Questionnaire</a> version: 2027.0.0-rc.1</p></div><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other attributes of the item\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07).</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-global-health#2027.0.0-rc.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global01\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global01</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global01. In general, would you say your health is:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global01\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global02\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global02</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global02. In general, would you say your quality of life is:</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global02\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global03\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global03</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global03. In general, how would you rate your physical health?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global03\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global04\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global04</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global04. In general, how would you rate your mental health, including your mood and your ability to think?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global04\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global05\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global05</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global05. In general, how would you rate your satisfaction with your social activities and relationships?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global05\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global09\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global09</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global09. In general, please rate how well you carry out your usual social activities and roles. (This includes activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global09\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global06\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global06</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global06. To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global06\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.PROMIS-GH.Past7Days\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> PROMIS-GH.Past7Days</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the past 7 days…</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global10\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global10</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global10. How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global10\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global08\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global08</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global08. How would you rate your fatigue on average?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global08\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global07\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> promis-global07</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Global07. How would you rate your pain on average?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#de-opt-item.promis-global07\">11 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"de-item.promis-global-health-score-physical-raw\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> promis-global-health-score-physical-raw</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">GPH. Global Physical Health raw score (4-20)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly\" title=\"Is Read Only\"><img src=\"icon-qi-readonly.png\" alt=\"icon\"/></a><img src=\"icon-qi-readonly.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"de-item.promis-global-health-score-mental-raw\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> promis-global-health-score-mental-raw</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">GMH. Global Mental Health raw score (4-20)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly\" title=\"Is Read Only\"><img src=\"icon-qi-readonly.png\" alt=\"icon\"/></a><img src=\"icon-qi-readonly.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"6\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name=\"de-opt-item.promis-global01\"> </a><p><b>Answer options for promis-global01 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA9206-9 (&quot;Excellent&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13913-1 (&quot;Very good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li></ul><a name=\"de-opt-item.promis-global02\"> </a><p><b>Answer options for promis-global02 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA9206-9 (&quot;Excellent&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13913-1 (&quot;Very good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li></ul><a name=\"de-opt-item.promis-global03\"> </a><p><b>Answer options for promis-global03 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA9206-9 (&quot;Excellent&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13913-1 (&quot;Very good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li></ul><a name=\"de-opt-item.promis-global04\"> </a><p><b>Answer options for promis-global04 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA9206-9 (&quot;Excellent&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13913-1 (&quot;Very good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li></ul><a name=\"de-opt-item.promis-global05\"> </a><p><b>Answer options for promis-global05 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA9206-9 (&quot;Excellent&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13913-1 (&quot;Very good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li></ul><a name=\"de-opt-item.promis-global09\"> </a><p><b>Answer options for promis-global09 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA9206-9 (&quot;Excellent&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13913-1 (&quot;Very good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8967-7 (&quot;Good&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8968-5 (&quot;Fair&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA8969-3 (&quot;Poor&quot;)</li></ul><a name=\"de-opt-item.promis-global06\"> </a><p><b>Answer options for promis-global06 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA13937-0 (&quot;Completely&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13938-8 (&quot;Mostly&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13939-6 (&quot;Moderately&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13940-4 (&quot;A little&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA6568-5 (&quot;Not at all&quot;)</li></ul><a name=\"de-opt-item.promis-global10\"> </a><p><b>Answer options for promis-global10 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA6270-8 (&quot;Never&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA10066-1 (&quot;Rarely&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA10082-8 (&quot;Sometimes&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA10044-8 (&quot;Often&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA9933-8 (&quot;Always&quot;)</li></ul><a name=\"de-opt-item.promis-global08\"> </a><p><b>Answer options for promis-global08 </b></p><ul><li style=\"font-size: 11px\">http://loinc.org#LA137-2 (&quot;None&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA6752-5 (&quot;Mild&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA6751-7 (&quot;Moderate&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA6750-9 (&quot;Severe&quot;)</li><li style=\"font-size: 11px\">http://loinc.org#LA13958-6 (&quot;Very severe&quot;)</li></ul><a name=\"de-opt-item.promis-global07\"> </a><p><b>Answer options for promis-global07 </b></p><ul><li style=\"font-size: 11px\">0</li><li style=\"font-size: 11px\">1</li><li style=\"font-size: 11px\">2</li><li style=\"font-size: 11px\">3</li><li style=\"font-size: 11px\">4</li><li style=\"font-size: 11px\">5</li><li style=\"font-size: 11px\">6</li><li style=\"font-size: 11px\">7</li><li style=\"font-size: 11px\">8</li><li style=\"font-size: 11px\">9</li><li style=\"font-size: 11px\">10</li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "displayable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "collectable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "calculatable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "extractable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "domainAligned",
+      "valueBoolean" : true
+    }],
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/variable",
+    "valueExpression" : {
+      "name" : "gphRaw",
+      "language" : "text/fhirpath",
+      "expression" : "iif(%resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.value.weight().sum(), {})"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/variable",
+    "valueExpression" : {
+      "name" : "gmhRaw",
+      "language" : "text/fhirpath",
+      "expression" : "iif(%resource.item.where(linkId.matches('^promis-global(02|04|05|10)$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global(02|04|05|10)$')).answer.value.weight().sum(), {})"
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-global-health",
+  "version" : "2027.0.0-rc.1",
+  "title" : "MII QST PRO PROMIS Global Health v1.2",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-05T08:15:37+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07).",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
+    }
+  },
+  {
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
+    }
+  },
+  {
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS Global Health Scoring Manual (https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Global_Scoring_Manual.pdf)"
+    }
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
+  "code" : [{
+    "system" : "http://loinc.org",
+    "code" : "85524-7",
+    "display" : "PROMIS short form - global - version 1.2"
+  },
+  {
+    "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+    "code" : "promis-global-health",
+    "display" : "PROMIS Scale v1.2 - Global Health (10 items)"
+  }],
+  "item" : [{
+    "linkId" : "promis-global01",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61577-3",
+      "display" : "In general, would you say your health is [PROMIS]"
+    }],
+    "prefix" : "Global01",
+    "text" : "Wie würden Sie Ihren Gesundheitszustand insgesamt beschreiben?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Ausgezeichnet"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Sehr gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Einigermaßen"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Schlecht"
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global02",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61578-1",
+      "display" : "In general, would you say your quality of life is [PROMIS]"
+    }],
+    "prefix" : "Global02",
+    "text" : "Wie würden Sie Ihre Lebensqualität insgesamt beschreiben?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Ausgezeichnet"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Sehr gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Einigermaßen"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Schlecht"
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global03",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61579-9",
+      "display" : "In general, how would you rate your physical health [PROMIS]"
+    }],
+    "prefix" : "Global03",
+    "text" : "In general, how would you rate your physical health?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Ausgezeichnet"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Sehr gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Einigermaßen"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Schlecht"
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global04",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61580-7",
+      "display" : "In general, how would you rate your mental health, including your mood and your ability to think [PROMIS]"
+    }],
+    "prefix" : "Global04",
+    "text" : "In general, how would you rate your mental health, including your mood and your ability to think?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Ausgezeichnet"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Sehr gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Einigermaßen"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Schlecht"
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global05",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61581-5",
+      "display" : "In general, how would you rate your satisfaction with you social activities and relationships [PROMIS]"
+    }],
+    "prefix" : "Global05",
+    "text" : "In general, how would you rate your satisfaction with your social activities and relationships?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Ausgezeichnet"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Sehr gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Einigermaßen"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Schlecht"
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global09",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61585-6",
+      "display" : "In general, please rate how well you carry out your usual social activities and roles [PROMIS]"
+    }],
+    "prefix" : "Global09",
+    "text" : "In general, please rate how well you carry out your usual social activities and roles. (This includes activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Ausgezeichnet"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Sehr gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Gut"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Einigermaßen"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Schlecht"
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global06",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61582-3",
+      "display" : "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair [PROMIS]"
+    }],
+    "prefix" : "Global06",
+    "text" : "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13937-0",
+        "display" : "Completely"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13938-8",
+        "display" : "Mostly"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13939-6",
+        "display" : "Moderately"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13940-4",
+        "display" : "A little"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6568-5",
+        "display" : "Not at all"
+      }
+    }]
+  },
+  {
+    "linkId" : "PROMIS-GH.Past7Days",
+    "text" : "In den letzten 7 Tagen:",
+    "type" : "display"
+  },
+  {
+    "linkId" : "promis-global10",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61586-4",
+      "display" : "How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable in past 7 days [PROMIS]"
+    }],
+    "prefix" : "Global10",
+    "text" : "How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6270-8",
+        "display" : "Nie"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA10066-1",
+        "display" : "Selten"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA10082-8",
+        "display" : "Manchmal"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA10044-8",
+        "display" : "Oft"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9933-8",
+        "display" : "Immer"
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global08",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61584-9",
+      "display" : "How would you rate your fatigue on average in past 7 days [PROMIS]"
+    }],
+    "prefix" : "Global08",
+    "text" : "How would you rate your fatigue on average?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA137-2",
+        "display" : "None"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13958-6",
+        "display" : "Very severe"
+      }
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+      "valueCoding" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{score}",
+        "display" : "{score}"
+      }
+    }],
+    "linkId" : "promis-global07",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61583-1",
+      "display" : "How would you rate your pain on average in past 7 days [PROMIS]"
+    }],
+    "prefix" : "Global07",
+    "text" : "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueInteger" : 0
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueInteger" : 1
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueInteger" : 2
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueInteger" : 3
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueInteger" : 4
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueInteger" : 5
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueInteger" : 6
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueInteger" : 7
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueInteger" : 8
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueInteger" : 9
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueInteger" : 10
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+      "valueExpression" : {
+        "name" : "Scoreberechnung",
+        "language" : "text/fhirpath",
+        "expression" : "%gphRaw"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+      "valueCoding" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{score}",
+        "display" : "{score}"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }
+    }],
+    "linkId" : "promis-global-health-score-physical-raw",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "71972-4",
+      "display" : "PROMIS-10 Global Physical Health score"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-global-health-physical-raw",
+      "display" : "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
+    }],
+    "prefix" : "GPH",
+    "text" : "Global Physical Health raw score (4-20)",
+    "type" : "decimal",
+    "readOnly" : true
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+      "valueExpression" : {
+        "name" : "Scoreberechnung",
+        "language" : "text/fhirpath",
+        "expression" : "%gmhRaw"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+      "valueCoding" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{score}",
+        "display" : "{score}"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }
+    }],
+    "linkId" : "promis-global-health-score-mental-raw",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "71970-8",
+      "display" : "PROMIS-10 Global Mental Health score"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-global-health-mental-raw",
+      "display" : "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
+    }],
+    "prefix" : "GMH",
+    "text" : "Global Mental Health raw score (4-20)",
+    "type" : "decimal",
+    "readOnly" : true
+  }]
+}

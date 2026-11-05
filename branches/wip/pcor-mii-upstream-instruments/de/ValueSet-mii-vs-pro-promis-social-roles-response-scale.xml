@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-pro-promis-social-roles-response-scale"/>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-pro-promis-social-roles-response-scale</b></p><a name="de-mii-vs-pro-promis-social-roles-response-scale"> </a><a name="de-hcmii-vs-pro-promis-social-roles-response-scale"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="https://loinc.org/LA6270-8/">LA6270-8</a></td><td>Never</td><td>Nie</td></tr><tr><td><a href="https://loinc.org/LA10066-1/">LA10066-1</a></td><td>Rarely</td><td>Selten</td></tr><tr><td><a href="https://loinc.org/LA10082-8/">LA10082-8</a></td><td>Sometimes</td><td>Manchmal</td></tr><tr><td><a href="https://loinc.org/LA14747-2/">LA14747-2</a></td><td>Usually</td><td>Meistens</td></tr><tr><td><a href="https://loinc.org/LA9933-8/">LA9933-8</a></td><td>Always</td><td>Immer</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-social-roles-response-scale"/>
+  <version value="2027.0.0-rc.1"/>
+  <name value="MII_VS_PRO_PROMIS_Social_Roles_Response_Scale"/>
+  <title value="MII VS PRO PROMIS Social Roles Response Scale"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-05T08:15:37+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 ... Always = 1)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6270-8"/>
+        <display value="Never"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA10066-1"/>
+        <display value="Rarely"/>
+        <designation>
+          <language value="de"/>
+          <value value="Selten"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA10082-8"/>
+        <display value="Sometimes"/>
+        <designation>
+          <language value="de"/>
+          <value value="Manchmal"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA14747-2"/>
+        <display value="Usually"/>
+        <designation>
+          <language value="de"/>
+          <value value="Meistens"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA9933-8"/>
+        <display value="Always"/>
+        <designation>
+          <language value="de"/>
+          <value value="Immer"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,85 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-pro-baasis-frequency",
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-pro-baasis-frequency</b></p><a name=\"de-mii-cs-pro-baasis-frequency\"> </a><a name=\"de-hcmii-cs-pro-baasis-frequency\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de</p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>itemWeight</td><td>itemWeight</td><td>http://hl7.org/fhir/concept-properties#itemWeight</td><td>decimal</td><td>Numerical weight for SDC calculatedExpression scoring via .weight()</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-baasis-frequency</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>itemWeight</b></td></tr><tr><td style=\"white-space:nowrap\">stufe-1<a name=\"de-mii-cs-pro-baasis-frequency-stufe-1\"> </a></td><td>Stufe 1</td><td>1</td></tr><tr><td style=\"white-space:nowrap\">stufe-2<a name=\"de-mii-cs-pro-baasis-frequency-stufe-2\"> </a></td><td>Stufe 2</td><td>2</td></tr><tr><td style=\"white-space:nowrap\">stufe-3<a name=\"de-mii-cs-pro-baasis-frequency-stufe-3\"> </a></td><td>Stufe 3</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">stufe-4<a name=\"de-mii-cs-pro-baasis-frequency-stufe-4\"> </a></td><td>Stufe 4</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">stufe-5<a name=\"de-mii-cs-pro-baasis-frequency-stufe-5\"> </a></td><td>Stufe 5</td><td>5</td></tr></table></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-baasis-frequency",
+  "version" : "2027.0.0-rc.1",
+  "name" : "MII_CS_PRO_BAASIS_Frequency",
+  "title" : "MII CS PRO BAASIS Frequency",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-11-05T08:15:37+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Neutral benannte 5-stufige Häufigkeitsskala der BAASIS-Teilfragen (metadata-only, Tier B). Konzeptbezeichnungen bewusst neutral (Stufe 1-5) statt der Original-Antwortbezeichnungen. itemWeight 1-5.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "property" : [{
+    "code" : "itemWeight",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
+    "description" : "Numerical weight for SDC calculatedExpression scoring via .weight()",
+    "type" : "decimal"
+  }],
+  "concept" : [{
+    "code" : "stufe-1",
+    "display" : "Stufe 1",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
+    }]
+  },
+  {
+    "code" : "stufe-2",
+    "display" : "Stufe 2",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "code" : "stufe-3",
+    "display" : "Stufe 3",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "code" : "stufe-4",
+    "display" : "Stufe 4",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 4
+    }]
+  },
+  {
+    "code" : "stufe-5",
+    "display" : "Stufe 5",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 5
+    }]
+  }]
+}

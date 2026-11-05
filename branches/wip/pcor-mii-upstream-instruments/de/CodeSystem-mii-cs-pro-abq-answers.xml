@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-pro-abq-answers"/>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-abq-answers</b></p><a name="de-mii-cs-pro-abq-answers"> </a><a name="de-hcmii-cs-pro-abq-answers"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: de</p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>itemWeight</td><td>itemWeight</td><td>http://hl7.org/fhir/concept-properties#itemWeight</td><td>decimal</td><td>Numerical weight for SDC calculatedExpression scoring via .weight()</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>itemWeight</b></td></tr><tr><td style="white-space:nowrap">stufe-1<a name="de-mii-cs-pro-abq-answers-stufe-1"> </a></td><td>Stufe 1</td><td>1</td></tr><tr><td style="white-space:nowrap">stufe-2<a name="de-mii-cs-pro-abq-answers-stufe-2"> </a></td><td>Stufe 2</td><td>2</td></tr><tr><td style="white-space:nowrap">stufe-3<a name="de-mii-cs-pro-abq-answers-stufe-3"> </a></td><td>Stufe 3</td><td>3</td></tr><tr><td style="white-space:nowrap">stufe-4<a name="de-mii-cs-pro-abq-answers-stufe-4"> </a></td><td>Stufe 4</td><td>4</td></tr></table></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers"/>
+  <version value="2027.0.0-rc.1"/>
+  <name value="MII_CS_PRO_ABQ_Answers"/>
+  <title value="MII CS PRO ABQ Answers"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-11-05T08:15:37+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Neutral benannte 4-stufige Antwortskala des ABQ (metadata-only, Tier B). Konzeptbezeichnungen bewusst neutral (Stufe 1-4) statt der Original-Antwortbezeichnungen. itemWeight 1-4."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <property>
+    <code value="itemWeight"/>
+    <uri value="http://hl7.org/fhir/concept-properties#itemWeight"/>
+    <description value="Numerical weight for SDC calculatedExpression scoring via .weight()"/>
+    <type value="decimal"/>
+  </property>
+  <concept>
+    <code value="stufe-1"/>
+    <display value="Stufe 1"/>
+    <property>
+      <code value="itemWeight"/>
+      <valueDecimal value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="stufe-2"/>
+    <display value="Stufe 2"/>
+    <property>
+      <code value="itemWeight"/>
+      <valueDecimal value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="stufe-3"/>
+    <display value="Stufe 3"/>
+    <property>
+      <code value="itemWeight"/>
+      <valueDecimal value="3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="stufe-4"/>
+    <display value="Stufe 4"/>
+    <property>
+      <code value="itemWeight"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+</CodeSystem>
