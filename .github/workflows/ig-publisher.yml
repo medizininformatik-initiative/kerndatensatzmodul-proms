@@ -1,3 +1,4 @@
+# Synced from medizininformatik-initiative/mii-kds-module-template dev @ 18b94b187ae1 (2026-11-02). Re-sync: copy the template file and re-apply only the marked module additions.
 # IG build + GitHub Pages branch preview.
 #
 # Purpose:   On every push to a non-release branch, run SUSHI + the HL7 IG
@@ -25,6 +26,14 @@
 #            to 'false' to skip the whole workflow (jobs show as "skipped", not
 #            failed).
 #
+# QA summary: vars.ENABLE_QA_SUMMARY — ON by default. Renders output/qa.xml
+#            with patrick-werner/validation-outcome-markdown-renderer as
+#            annotations + a job-summary table (report-only, never fails the
+#            build). vars.QA_SUMMARY_INCLUDE picks the severities (errors |
+#            warnings | all; default errors); vars.QA_SUMMARY_FILTERS takes
+#            line-separated `filename|messageId|detailsWildcard|location`
+#            rules for known issues.
+#
 # Pages two modes (vars.PAGES_ACTIONS_ENABLED):
 #            - unset / not 'true' (default): the preview is served by "Deploy
 #              from a branch → gh-pages" (Settings → Pages). This workflow only
@@ -36,8 +45,7 @@
 #
 # Terminology: the IG Publisher build prefers the MII terminology server
 #            (SU-TermServ) through a client-certificate nginx proxy when the repo
-#            secrets SU_TERMSERV_CLIENT_CERT / _KEY / _PASSWORD (or legacy
-#            CDS_DEV_CLIENT_CERT / _KEY / _CERT_PASSWORD) are set, and
+#            secrets SU_TERMSERV_CLIENT_CERT / _KEY / _PASSWORD are set, and
 #            otherwise falls back to the public HL7 server https://tx.fhir.org
 #            with a ::notice. The build must not hard-fail without the cert;
 #            some MII-specific value sets may then not fully expand (a QA note).
@@ -49,8 +57,9 @@
 #            WORKSPACE COPY that is NEVER committed, sed-substitutes the
 #            documented self-check values (MODULE_SLUG=template, …) into
 #            sushi-config.yaml, ig.ini and the build inputs so a real build can
-#            run. The template line itself is left alone: `#ig-template` (the
-#            vendored folder) is buildable, so the full build + preview run.
+#            run. The template line itself is left alone: both the repository-URL
+#            default and `#ig-template` (the vendored fallback folder) are
+#            buildable, so the full build + preview run.
 #            Should a repository ever carry a TODO template line instead, the
 #            build DEGRADES at runtime to a SUSHI-only check with a clear
 #            ::notice — no edit to this file needed either way. In a created
@@ -103,7 +112,7 @@ env:
   # fails the build if they drift apart.
   PUBLISHER_VERSION: "2.3.2"
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
-  SUSHI_VERSION: "3.20.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
 
 jobs:
@@ -157,7 +166,7 @@ jobs:
         #
         # The value table itself lives in scripts/self-check-substitute.sh rather
         # than inline here, because release-demo.yml needs the SAME substitution
-        # to render the demo the Pages landing page advertises. Two copies of the
+        # to render the demo the Pages root index advertises. Two copies of the
         # table is how the two builds drift apart — exactly the class of bug
         # release-demo.yml exists to end. Leaving SELF_CHECK_RELEASE_TAG unset
         # keeps the fixed draft CALVER_VERSION that a preview should carry; the
@@ -191,13 +200,14 @@ jobs:
           sushi .
           test -d fsh-generated/resources
           # A full IG Publisher build needs a buildable IG template in ig.ini.
-          # `#ig-template` (the vendored folder) is buildable, so this normally
-          # takes the full path; a TODO template line degrades to a SUSHI-only
-          # check. Detecting it at runtime keeps this file edit-free either way.
+          # The repository-URL default and `#ig-template` (the vendored
+          # fallback) are both buildable, so this normally takes the full path;
+          # a TODO template line degrades to a SUSHI-only check. Detecting it
+          # at runtime keeps this file edit-free either way.
           tmpl_line="$(grep -E '^[[:space:]]*template[[:space:]]*=' ig.ini || true)"
           if printf '%s' "${tmpl_line}" | grep -q 'TODO'; then
             echo "mode=sushi-only" >> "${GITHUB_OUTPUT}"
-            echo "::notice::ig.ini carries a TODO template placeholder — running a SUSHI-only check. The IG Publisher build and the Pages preview are skipped until ig.ini names a buildable template (the vendored #ig-template, or the published package once it exists — see docs/recipes/switch-template-to-published.md)."
+            echo "::notice::ig.ini carries a TODO template placeholder — running a SUSHI-only check. The IG Publisher build and the Pages preview are skipped until ig.ini names a buildable template (the template repository URL — the default, the vendored #ig-template fallback, or the published package once it exists — see docs/recipes/switch-template-to-published.md)."
           else
             echo "mode=full" >> "${GITHUB_OUTPUT}"
             echo "IG template reference present — running the full IG Publisher build + preview."
@@ -217,43 +227,24 @@ jobs:
           SU_TERMSERV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
           SU_TERMSERV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
           SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
-          CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
-          CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
-          CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
         run: |
           set -euo pipefail
           # Prefer the MII terminology server (SU-TermServ) through a client-cert
           # nginx proxy; otherwise fall back to the public HL7 server. The build
           # must not hard-fail without the certificate.
-          # Secret names: SU_TERMSERV_* (template-wide, same as go-publish.yml /
-          # module-release.yml) is preferred; the legacy CDS_DEV_* names from the
-          # pre-migration workflows keep working as a fallback.
-          if [[ -n "${SU_TERMSERV_CLIENT_CERT}" ]]; then
-            CLIENT_CERT="${SU_TERMSERV_CLIENT_CERT}"
-            CLIENT_KEY="${SU_TERMSERV_CLIENT_KEY}"
-            CLIENT_PASSWORD="${SU_TERMSERV_CLIENT_PASSWORD}"
-            secret_family="SU_TERMSERV_*"
-          else
-            CLIENT_CERT="${CDS_DEV_CLIENT_CERT}"
-            CLIENT_KEY="${CDS_DEV_CLIENT_KEY}"
-            CLIENT_PASSWORD="${CDS_DEV_CLIENT_CERT_PASSWORD}"
-            secret_family="CDS_DEV_* (legacy)"
-          fi
-          export CLIENT_PASSWORD
-          if [[ -n "${CLIENT_CERT}" ]] && [[ -n "${CLIENT_KEY}" ]] && [[ -n "${CLIENT_PASSWORD}" ]]; then
-            echo "::notice::Terminology proxy using ${secret_family} secrets."
+          if [[ -n "${SU_TERMSERV_CLIENT_CERT}" ]] && [[ -n "${SU_TERMSERV_CLIENT_KEY}" ]] && [[ -n "${SU_TERMSERV_CLIENT_PASSWORD}" ]]; then
             nginx_dir="${RUNNER_TEMP}/nginx"
             mkdir -p "${nginx_dir}/certs"
             # nginx.conf pinned by commit SHA (fixed versions; same ref go-publish.yml uses).
             curl --fail --location --silent --show-error \
               "https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatz-meta/1db2e534704d92e5ee0cde663ce3e7ccd8825fa7/.github/workflows/nginx.conf" \
               --output "${nginx_dir}/nginx.conf"
-            printf '%s' "${CLIENT_CERT}" | base64 --decode > "${nginx_dir}/certs/client-cert.pem"
-            printf '%s' "${CLIENT_KEY}" | base64 --decode > "${nginx_dir}/certs/client-key-encrypted.key"
+            printf '%s' "${SU_TERMSERV_CLIENT_CERT}" | base64 --decode > "${nginx_dir}/certs/client-cert.pem"
+            printf '%s' "${SU_TERMSERV_CLIENT_KEY}" | base64 --decode > "${nginx_dir}/certs/client-key-encrypted.key"
             openssl rsa \
               -in "${nginx_dir}/certs/client-key-encrypted.key" \
               -out "${nginx_dir}/certs/client-key.key" \
-              -passin env:CLIENT_PASSWORD
+              -passin env:SU_TERMSERV_CLIENT_PASSWORD
             chmod 600 "${nginx_dir}/certs/"*
             docker run --detach --name preview-nginx \
               --volume "${nginx_dir}/nginx.conf:/etc/nginx/nginx.conf:ro" \
@@ -305,17 +296,22 @@ jobs:
           test -s output/index.html
           jq empty output/qa.json
 
-      # PROM-Review-One-Pager (fachlicher Review: Items mit Labels en/de/
-      # parallel, LA-Codes, Gewichte, Score-Definitionen samt offiziellen
-      # Lookup-Tabellen, Szenarien-Soll/Ist via fhirpath.js) — landet in
-      # output/reviews/ und deployt mit jeder Branch-Preview und jeder
-      # formalen Publikation. Reviewer brauchen nur den Link.
-      - name: Build PROM review pages
-        if: ${{ steps.build.outputs.mode == 'full' }}
-        run: |
-          npm ci --prefix scripts --no-audit --no-fund
-          mkdir -p output/reviews
-          node scripts/build-prom-review.mjs output/reviews/promis-29.html
+      - name: Render IG Publisher QA (qa.xml) as job summary
+        # The publisher's own validation result, rendered as annotations and a
+        # summary table — for repos that run neither of the MII reusable
+        # validation workflows. Runs even when the build step failed, as long
+        # as the publisher got far enough to write output/qa.xml. Report-only:
+        # the renderer fails on remaining errors, continue-on-error keeps that
+        # from failing the preview. The summary file goes to RUNNER_TEMP so it
+        # never lands in the published preview.
+        if: ${{ !cancelled() && steps.build.outputs.mode == 'full' && vars.ENABLE_QA_SUMMARY != 'false' && hashFiles('output/qa.xml') != '' }}
+        continue-on-error: true
+        uses: patrick-werner/validation-outcome-markdown-renderer@09f430c50c24c4d8666158efa4922dd300de6b1b # v1.5.0
+        with:
+          bundle-file: output/qa.xml
+          include: ${{ vars.QA_SUMMARY_INCLUDE || 'errors' }}
+          filters: ${{ vars.QA_SUMMARY_FILTERS }}
+          pr-summary-path: ${{ runner.temp }}/qa-summary.md
 
       - name: Template-repo self-check DEMO — render the version-comparison report
         # Demonstrates what a version delta looks like and where it lives,
@@ -475,6 +471,20 @@ jobs:
           cp -R "output/." "${branch_dir}/"
           # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
           echo "${BRANCH}" > "${branch_dir}/.branch-name"
+          # TEMPLATE REPOSITORY ONLY: (re)generate the root index — a plain
+          # autoindex-style listing of branches/dev/ + the latest demo/<tag>/ —
+          # so it heals on every preview deploy. A created module's site root
+          # stays reserved for the gated -go-publish output, so the generator
+          # never runs there (same guard as release-demo.yml's job).
+          case "${REPO}" in
+            */mii-kds-module-template)
+              if [ -f scripts/gen-pages-index.mjs ]; then
+                node scripts/gen-pages-index.mjs gh-pages "${REPO}"
+              else
+                echo "gen-pages-index.mjs not on this branch yet - root index unchanged (rebase onto dev/main to heal it)"
+              fi
+              ;;
+          esac
           cd gh-pages
           if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
             bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
