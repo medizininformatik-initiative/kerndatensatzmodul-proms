@@ -35,6 +35,7 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #isr-z "ISR-Z (ICD-10-Symptom-Rating, Subskala Zwang, Tritt et al. 2008)"
 * #euronet-soma "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)"
 * #phq-gad7 "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
+* #promis-global-health "PROMIS Scale v1.2 - Global Health (10 items)"
 
 // TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are
 // separate entities or part of some bigger PRO framework for proper categorization

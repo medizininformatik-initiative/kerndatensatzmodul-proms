@@ -5,6 +5,11 @@ topic: Release-Notes
 
 Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.
 
+**Unveröffentlicht (dev)**
+
+- **PROMIS Scale v1.2 – Global Health** (`mii-qst-pro-promis-global-health`, LOINC-Panel `85524-7`, Bead 92b): alle zehn Items, Rohwerte Global Physical/Mental Health (4–20) mit v1.2-Umkodierung als `itemWeight`, zwei ObservationDefinitions, Beispiel. `status = draft`, bis die offizielle deutsche Übersetzung für Global03–06 und 08–10 vorliegt; T-Scores folgen als CQL. Kanonische Vollfassung für den PCOR-MII-Zuschnitt `PROMISGH` (Global01/02/07).
+- Befund PROMIS Sleep-Related Impairment (Bead py5.1): PCOR-MII erhebt kein SRI SF 4a (Dictionary enthält nur das PROMIS-16-Item Sleep25).
+
 **Version: 2026.7.0**
 
 Datum: 2026-09-02 (in Vorbereitung)

@@ -17,6 +17,7 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 | **PROMIS-29** | Vollständig | Multi-Domain | 29 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **PROMIS Depression SF 4a** | Vollständig | Depression | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **PROMIS Cognitive Function SF 4a** | Vollständig | Kognition | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **PROMIS Global Health v1.2** | Entwurf (DE-Übersetzung 3/10 Items) | Globale Gesundheit | 10 | EN (DE teilweise) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **EORTC QLQ-C30** | Vollständig | Onkologie | 30 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | - |
 | **DASS-21** | Vollständig | Depression/Angst/Stress | 21 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | **PRO-CTCAE** | Neu | Nebenwirkungen (Onkologie) | 124 (Item-Bibliothek) | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | - |
