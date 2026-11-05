@@ -114,7 +114,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "name" : "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
   "title" : "MII PR PRO PROMIS Depression SF 4a Raw Score",
   "status" : "active",
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

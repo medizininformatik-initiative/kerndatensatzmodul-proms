@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "title" : "MII PR PRO PROMIS-29 Pain Intensity",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -164,8 +164,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "75261-8",
-          "display" : "How intense was your average pain in the past 7 days [PROMIS]"
+          "code" : "61583-1",
+          "display" : "How would you rate your pain on average in past 7 days [PROMIS]"
         }]
       }
     },

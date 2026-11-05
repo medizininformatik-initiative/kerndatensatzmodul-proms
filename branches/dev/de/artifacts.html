@@ -318,34 +318,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Verhalten: Suchparameter (SearchParameter)</a>
       </li>
       <li>
-         <a href="#3">Strukturen: Logische Modelle</a>
+         <a href="#3">Wissensartefakte: Library</a>
       </li>
       <li>
-         <a href="#4">Strukturen: Fragebögen (Questionnaire)</a>
+         <a href="#4">Strukturen: Logische Modelle</a>
       </li>
       <li>
-         <a href="#5">Strukturen: Ressourcenprofile</a>
+         <a href="#5">Strukturen: Fragebögen (Questionnaire)</a>
       </li>
       <li>
-         <a href="#6">Strukturen: Extension-Definitionen</a>
+         <a href="#6">Strukturen: Ressourcenprofile</a>
       </li>
       <li>
-         <a href="#7">Terminologie: ValueSets</a>
+         <a href="#7">Strukturen: Extension-Definitionen</a>
       </li>
       <li>
-         <a href="#8">Terminologie: CodeSysteme</a>
+         <a href="#8">Terminologie: ValueSets</a>
       </li>
       <li>
-         <a href="#9">Terminologie: ConceptMaps</a>
+         <a href="#9">Terminologie: CodeSysteme</a>
       </li>
       <li>
-         <a href="#10">Test-Artefakte: TestScripts</a>
+         <a href="#10">Terminologie: ConceptMaps</a>
       </li>
       <li>
-         <a href="#11">Beispiel: Beispielinstanzen</a>
+         <a href="#11">Test-Artefakte: TestScripts</a>
       </li>
       <li>
-         <a href="#12">Sonstige</a>
+         <a href="#12">Beispiel: Beispielinstanzen</a>
+      </li>
+      <li>
+         <a href="#13">Sonstige</a>
       </li>
    </ul>
 </div>
@@ -466,6 +469,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Wissensartefakte: Library </h3>
+    <p>Diese definieren Logik, Asset-Sammlungen und andere Bibliotheken als Teil des Inhalts in diesem Implementierungsleitfaden.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-mii-lib-pro-promis-29.html"
+                  title="Library/mii-lib-pro-promis-29">
+                  <span title="Library/mii-lib-pro-promis-29">MII LIB PRO PROMIS-29 Scoring
+</span>
+               </a>
+            </td>
+            <td>
+<p>CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the seven domains plus the pain intensity item. Server channel of the dual-channel scoring architecture (the FHIRPath calculatedExpressions in the Questionnaire are the client channel); both channels are generated from the same weight and T-score tables. Define names equal the score item linkIds. Supports Library/$evaluate with an explicit Response parameter and the SDC retrieve pattern (most recent completed QuestionnaireResponse of the instrument).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Strukturen: Logische Modelle </h3>
     <p>Diese definieren Datenmodelle, die den von diesem Implementierungsleitfaden abgedeckten Bereich in geschäftsfreundlicheren Begriffen darstellen als die zugrunde liegenden FHIR-Ressourcen.</p>
 <table class="grid">
@@ -485,7 +508,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Strukturen: Fragebögen (Questionnaire) </h3>
     <p>Diese definieren Formulare, die von Systemen verwendet werden, die mit dem Implementierungsleitfaden konform sind, um Daten von Endbenutzern zu erfassen oder ihnen zugänglich zu machen.</p>
 <table class="grid">
@@ -771,24 +794,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Questionnaire-mii-qst-pro-promis-29-de.html"
                   title="Questionnaire/mii-qst-pro-promis-29-de">
-                  <span title="Questionnaire/mii-qst-pro-promis-29-de">MII QST PRO PROMIS-29 (German)
+                  <span title="Questionnaire/mii-qst-pro-promis-29-de">MII QST PRO PROMIS-29 (German) [retired]
 </span>
                </a>
             </td>
             <td>
-<p>PROMIS-29 Profile v2.1 - German language variant derived from English source</p>
+<p>RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-rc.1. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-mii-qst-pro-promis-29-minimal.html"
                   title="Questionnaire/mii-qst-pro-promis-29-minimal">
-                  <span title="Questionnaire/mii-qst-pro-promis-29-minimal">MII QST PRO PROMIS-29 Minimal
+                  <span title="Questionnaire/mii-qst-pro-promis-29-minimal">MII QST PRO PROMIS-29 Minimal [retired]
 </span>
                </a>
             </td>
             <td>
-<p>PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions</p>
+<p>RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-rc.1. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable.</p>
 </td>
          </tr>
          <tr>
@@ -853,7 +876,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Strukturen: Ressourcenprofile </h3>
     <p>Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem Implementierungsleitfaden konform sind.</p>
 <table class="grid">
@@ -1137,7 +1160,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Strukturen: Extension-Definitionen </h3>
     <p>Diese definieren Einschränkungen für FHIR-Datentypen für Systeme, die mit diesem Implementierungsleitfaden konform sind.</p>
 <table class="grid">
@@ -1169,7 +1192,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Terminologie: ValueSets </h3>
     <p>Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Implementierungsleitfaden konform sind.</p>
 <table class="grid">
@@ -1465,6 +1488,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-mii-vs-pro-promis-social-roles-response-scale.html"
+                  title="ValueSet/mii-vs-pro-promis-social-roles-response-scale">
+                  <span title="ValueSet/mii-vs-pro-promis-social-roles-response-scale">MII VS PRO PROMIS Social Roles Response Scale
+</span>
+               </a>
+            </td>
+            <td>
+<p>Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 … Always = 1).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-mii-vs-pro-ssd-12-answers.html"
                   title="ValueSet/mii-vs-pro-ssd-12-answers">
                   <span title="ValueSet/mii-vs-pro-ssd-12-answers">MII VS PRO SSD-12 Answers
@@ -1489,7 +1524,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Terminologie: CodeSysteme </h3>
     <p>Diese definieren neue CodeSysteme, die von Systemen verwendet werden, die mit diesem Implementierungsleitfaden konform sind.</p>
 <table class="grid">
@@ -1653,7 +1688,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="9"> </a>
+   <a name="10"> </a>
    <h3>Terminologie: ConceptMaps </h3>
     <p>Diese definieren Transformationen zur Konvertierung zwischen Codes durch Systeme, die mit diesem Implementierungsleitfaden konform sind.</p>
 <table class="grid">
@@ -1685,7 +1720,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="10"> </a>
+   <a name="11"> </a>
    <h3>Test-Artefakte: TestScripts </h3>
     <p>Diese Testdefinitionen stehen FHIR-Test-Engines zur Verfügung, um zu überprüfen, ob Systeme zu diesem Implementierungsleitfaden konform sind.</p>
 <table class="grid">
@@ -1717,7 +1752,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="11"> </a>
+   <a name="12"> </a>
    <h3>Beispiel: Beispielinstanzen </h3>
     <p>Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Systemen produziert und konsumiert werden, die mit diesem Implementierungsleitfaden konform sind.</p>
 <table class="grid">
@@ -2231,12 +2266,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="QuestionnaireResponse-mii-exa-pro-promis-29-de-response.html"
                   title="QuestionnaireResponse/mii-exa-pro-promis-29-de-response">
-                  <span title="QuestionnaireResponse/mii-exa-pro-promis-29-de-response">MII EXA PRO PROMIS-29 Response (German)
+                  <span title="QuestionnaireResponse/mii-exa-pro-promis-29-de-response">MII EXA PRO PROMIS-29 Response (German language)
 </span>
                </a>
             </td>
             <td>
-<p>Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants</p>
+<p>Example QuestionnaireResponse for PROMIS-29 Profile v2.1 with language = de, answering the English-primary questionnaire; demonstrates that the response carries the LOINC answer codes regardless of the display language</p>
 </td>
          </tr>
          <tr>
@@ -2709,7 +2744,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="12"> </a>
+   <a name="13"> </a>
    <h3>Sonstige </h3>
     <p>Dies sind Ressourcen, die in diesem Implementierungsleitfaden verwendet werden, die in keine der anderen Kategorien passen.</p>
 <table class="grid">
@@ -3317,7 +3352,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Nov 5, 2026 04:04+0000">2026-11-05</span>
+          Erstellt <span title="Thu, Nov 5, 2026 07:07+0000">2026-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

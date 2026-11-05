@@ -81,7 +81,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -145,22 +145,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -186,22 +186,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -227,22 +227,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -268,22 +268,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -309,22 +309,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"

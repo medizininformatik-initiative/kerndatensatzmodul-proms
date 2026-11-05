@@ -141,8 +141,8 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
-    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)"
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-frequency-sexual",
@@ -163,8 +163,8 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
-    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)"
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-presence",
@@ -206,8 +206,8 @@
     "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-pro-ctcae"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
-    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)"
+    "Questionnaire-mii-qst-pro-pro-ctcae-breast-de.html" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
+    "Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.html" : "MII QST PRO PRO-CTCAE Onkologisches Basisscreening"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation",
@@ -237,8 +237,7 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)",
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
@@ -262,8 +261,16 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)",
-    "Questionnaire-mii-qst-pro-promis-29-minimal.html" : "MII QST PRO PROMIS-29 Minimal"
+    "Questionnaire-mii-qst-pro-promis-16.html" : "MII QST PRO PROMIS-16 (Adults)"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-social-roles-response-scale",
+    "version" : "2027.0.0-ballot.1",
+    "status" : "active",
+    "name" : "MII_VS_PRO_PROMIS_Social_Roles_Response_Scale",
+    "title" : "MII VS PRO PROMIS Social Roles Response Scale",
+    "description" : "Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 ... Always = 1).",
+    "systems" : ["http://loinc.org"]
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers",

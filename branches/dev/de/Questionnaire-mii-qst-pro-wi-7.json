@@ -53,7 +53,7 @@
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -91,22 +91,22 @@
     "text" : "Denken Sie, dass mit Ihrem Körper ernsthaft etwas nicht in Ordnung ist?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -119,22 +119,22 @@
     "text" : "Machen Sie sich viel Sorgen um Ihre Gesundheit?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -147,22 +147,22 @@
     "text" : "Können Sie der Ärztin/dem Arzt nur schwer glauben, wenn sie/er sagt, dass kein Grund zur Besorgnis besteht?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -175,22 +175,22 @@
     "text" : "Machen Sie sich oft Sorgen, möglicherweise eine ernsthafte Krankheit zu haben?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -203,22 +203,22 @@
     "text" : "Werden Sie durch eine Vielzahl von Schmerzen geplagt?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -231,22 +231,22 @@
     "text" : "Wenn Sie auf eine Krankheit aufmerksam gemacht werden (durch Fernsehen, Zeitung oder einen Bekannten), machen Sie sich dann Sorgen, dass Sie diese Krankheit auch bekommen?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -259,22 +259,22 @@
     "text" : "Finden Sie, dass Sie von einer Vielzahl unterschiedlicher Symptome geplagt werden?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"

@@ -70,8 +70,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"21.109"}
-    h3,h4,h5,h6{--heading-prefix:"21.109"}</style>
+    <style type="text/css">h2{--heading-prefix:"21.111"}
+    h3,h4,h5,h6{--heading-prefix:"21.111"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -370,45 +370,92 @@
                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;10&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/concept-properties#itemWeight&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Numerical weight for SDC calculatedExpression scoring via .weight()&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;decimal&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-0&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0 points&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-1&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1 point&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-2&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2 points&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-3&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3 points&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-1a&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1 point (variant a)&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-1b&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1 point (variant b)&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-2a&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2 points (variant a)&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-2b&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2 points (variant b)&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-3a&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3 points (variant a)&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bdi-bdi2-answer-3b&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3 points (variant b)&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;itemWeight&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a>&gt;
     &lt;/resource&gt;
@@ -562,7 +609,7 @@
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;bdiScore&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/fhirpath&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(type = 'choice').answer.value.weight().sum()&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;%resource.item.where(linkId.matches('^bdi-bdi2-q[0-9]{2}$')).answer.value.weight().sum()&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.extension">extension</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>
@@ -832,8 +879,7 @@
   iif(%bdiScore = 60, 86.0,
   iif(%bdiScore = 61, 86.9,
   iif(%bdiScore = 62, 87.8,
-  iif(%bdiScore = 63, 88.8, 88.8)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
-&quot;/&gt;
+  iif(%bdiScore = 63, 88.8, 88.8))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueExpression</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Questionnaire.item.extension">extension</a>
@@ -1241,7 +1287,7 @@
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Nov 5, 2026 04:04+0000">2026-11-05</span>
+          Erstellt <span title="Thu, Nov 5, 2026 07:07+0000">2026-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

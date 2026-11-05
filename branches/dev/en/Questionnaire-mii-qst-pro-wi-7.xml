@@ -55,7 +55,7 @@
   <title value="MII QST PRO WI-7"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-11-05T04:04:59+00:00"/>
+  <date value="2026-11-05T07:07:52+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -93,20 +93,20 @@
     <text value="Do you think there is something seriously wrong with your body?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -119,20 +119,20 @@
     <text value="Do you worry a lot about your health?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -145,20 +145,20 @@
     <text value="Is it hard for you to believe the doctor when he tells you there is nothing to worry about?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -171,20 +171,20 @@
     <text value="Do you often worry about the possibility that you have a serious illness?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -197,20 +197,20 @@
     <text value="Are you bothered by many different pains and aches?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -223,20 +223,20 @@
     <text value="If disease is brought to your attention (e.g., on TV, radio, the newspapers, or by someone you know), do you worry about getting it yourself?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -249,20 +249,20 @@
     <text value="Do you find that you are bothered by many different symptoms?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>

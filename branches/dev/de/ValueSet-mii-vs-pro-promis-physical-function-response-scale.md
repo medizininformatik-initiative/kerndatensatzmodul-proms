@@ -17,7 +17,6 @@ PROMIS Physical Function response scale based on LOINC LL1022-4
  **References** 
 
 * [MII QST PRO PROMIS-16 (Adults)](Questionnaire-mii-qst-pro-promis-16.md)
-* [MII QST PRO PROMIS-29 Minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md)
 
 ### Logical Definition (CLD)
 
@@ -44,7 +43,7 @@ PROMIS Physical Function response scale based on LOINC LL1022-4
   "title" : "MII VS PRO PROMIS Physical Function Response Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

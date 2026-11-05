@@ -864,7 +864,7 @@
             "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
             "valueExpression" : {
               "language" : "text/fhirpath",
-              "expression" : "(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
+              "expression" : "((((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
             }
           },
           {
@@ -894,7 +894,7 @@
             "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
             "valueExpression" : {
               "language" : "text/fhirpath",
-              "expression" : "(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
+              "expression" : "((((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
             }
           },
           {
@@ -924,7 +924,7 @@
             "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
             "valueExpression" : {
               "language" : "text/fhirpath",
-              "expression" : "(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
+              "expression" : "((((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
             }
           },
           {
@@ -1134,7 +1134,7 @@
             "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
             "valueExpression" : {
               "language" : "text/fhirpath",
-              "expression" : "(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
+              "expression" : "((((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
             }
           },
           {

@@ -577,7 +577,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FHIR Variable: symptomSumScore
 %resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.weight().sum()
+
+// readOnly-Score-Item midos2-score-symptom-sum (MII-Score-Code midos2-symptom-sum, Einheit {score})
+%symptomSumScore
 </code></pre></div></div>
+
+<p>Die Antwortgewichte (0–3) sind <code class="language-plaintext highlighter-rouge">itemWeight</code>-Properties am CodeSystem <code class="language-plaintext highlighter-rouge">mii-cs-pro-midos2</code>; das Score-Item ist für die Observation-Extraktion markiert.</p>
 
 <h3 id="literatur">Literatur</h3>
 
@@ -635,7 +640,7 @@ Journal of Pain and Symptom Management. 53(3):630-643 (DOI 10.1016/j.jpainsymman
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Nov 5, 2026 04:04+0000">2026-11-05</span>
+          Erstellt <span title="Thu, Nov 5, 2026 07:07+0000">2026-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

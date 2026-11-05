@@ -81,7 +81,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO PC-PTSD",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -119,22 +119,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "text" : "… Albträume davon hatten oder daran dachten, obwohl Sie es nicht wollten?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -147,22 +147,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "text" : "… sich stark bemüht haben, nicht daran zu denken oder Situationen zu vermeiden, die Sie daran erinnern?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -175,22 +175,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "text" : "...ständig auf der Hut, wachsam oder schreckhaft waren?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -203,22 +203,22 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "text" : "...sich abgestumpft und teilnahmslos gegenüber anderen, bei ihren Aktivitäten oder in Ihrem Umfeld fühlten?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"

@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "title" : "MII PR PRO PROMIS-29 Anxiety T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -164,8 +164,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "71967-4",
-          "display" : "PROMIS-29 Anxiety score T-score"
+          "code" : "77862-1",
+          "display" : "PROMIS emotional distress - anxiety - version 1.0 Tscore"
         }]
       }
     },

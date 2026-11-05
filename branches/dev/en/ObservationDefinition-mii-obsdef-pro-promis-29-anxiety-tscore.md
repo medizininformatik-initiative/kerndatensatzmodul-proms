@@ -18,7 +18,7 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
 
 **category**: Survey
 
-**code**: PROMIS-29 Anxiety score T-score
+**code**: PROMIS emotional distress - anxiety - version 1.0 Tscore
 
 **permittedDataType**: Quantity
 
@@ -64,8 +64,8 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "71967-4",
-      "display" : "PROMIS-29 Anxiety score T-score"
+      "code" : "77862-1",
+      "display" : "PROMIS emotional distress - anxiety - version 1.0 Tscore"
     },
     {
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",

@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS EQ-5D Value Set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -62,6 +62,12 @@ This Code system is referenced in the definition of the following value sets:
   "content" : "complete",
   "count" : 36,
   "property" : [{
+    "code" : "itemWeight",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
+    "description" : "Numerical weight for SDC calculatedExpression scoring via .weight()",
+    "type" : "decimal"
+  },
+  {
     "code" : "eq-5d-vs-coefficient-de-de",
     "description" : "EQ-5D ValueSet Coefficient Germany",
     "type" : "decimal"
@@ -96,6 +102,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have no problems in walking about"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 1
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0
       },
@@ -117,6 +127,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have slight problems in walking about"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 2
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.026
       },
@@ -138,6 +152,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have moderate problems in walking about"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 3
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.042
       },
@@ -159,6 +177,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have severe problems in walking about"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 4
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.139
       },
@@ -180,6 +202,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am unable to walk about"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 5
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.224
       },
@@ -214,6 +240,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have no problems washing or dressing myself"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 1
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0
       },
@@ -235,6 +265,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have slight problems washing or dressing myself"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 2
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.05
       },
@@ -256,6 +290,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have moderate problems washing or dressing myself"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 3
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.056
       },
@@ -277,6 +315,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have severe problems washing or dressing myself"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 4
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.169
       },
@@ -298,6 +340,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am unable to wash or dress myself"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 5
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.26
       },
@@ -332,6 +378,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have no problems doing my usual activities"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 1
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0
       },
@@ -353,6 +403,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have slight problems doing my usual activities"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 2
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.036
       },
@@ -374,6 +428,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have moderate problems doing my usual activities"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 3
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.049
       },
@@ -395,6 +453,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have severe problems doing my usual activities"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 4
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.129
       },
@@ -416,6 +478,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am unable to do my usual activities"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 5
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.209
       },
@@ -450,6 +516,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have no pain or discomfort"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 1
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0
       },
@@ -471,6 +541,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have slight pain or discomfort"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 2
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.057
       },
@@ -492,6 +566,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have moderate pain or discomfort"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 3
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.109
       },
@@ -513,6 +591,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have severe pain or discomfort"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 4
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.404
       },
@@ -534,6 +616,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I have extreme pain or discomfort"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 5
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.612
       },
@@ -568,6 +654,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am not anxious or depressed"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 1
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0
       },
@@ -589,6 +679,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am slightly anxious or depressed"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 2
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.03
       },
@@ -610,6 +704,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am moderately anxious or depressed"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 3
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.082
       },
@@ -631,6 +729,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am severely anxious or depressed"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 4
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.244
       },
@@ -652,6 +754,10 @@ This Code system is referenced in the definition of the following value sets:
         "value" : "I am extremely anxious or depressed"
       }],
       "property" : [{
+        "code" : "itemWeight",
+        "valueDecimal" : 5
+      },
+      {
         "code" : "eq-5d-vs-coefficient-de-de",
         "valueDecimal" : 0.356
       },

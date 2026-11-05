@@ -1,18 +1,20 @@
-# MII QST PRO PROMIS-29 Minimal - MII IG PRO v2027.0.0-ballot.1
+# MII QST PRO PROMIS-29 Minimal [retired] - MII IG PRO v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **MII QST PRO PROMIS-29 Minimal**
+* **MII QST PRO PROMIS-29 Minimal [retired]**
 
-## Questionnaire: MII QST PRO PROMIS-29 Minimal (Experimentell) 
+## Questionnaire: MII QST PRO PROMIS-29 Minimal [retired] (Experimentell) 
 
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-11-05 | *Maschinenlesbarer Name*: |
+| Retired Stand: 2026-11-05 | *Maschinenlesbarer Name*: |
+| **Verwendung**: PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis), PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland) | |
+| **Copyright/Rechtliches**: The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragenLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/ | |
 
  
-PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions 
+RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-rc.1. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable. 
 
 *  [Baumansicht](#tabs-tree) 
 *  [Beispielanzeige](#tabs-sample) 
@@ -35,7 +37,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "meta" : {
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"]
   },
-  "language" : "de",
+  "language" : "en",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
     "valueCoding" : {
@@ -47,11 +49,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   {
     "extension" : [{
       "url" : "displayable",
-      "valueBoolean" : true
+      "valueBoolean" : false
     },
     {
       "url" : "collectable",
-      "valueBoolean" : true
+      "valueBoolean" : false
     },
     {
       "url" : "calculatable",
@@ -62,18 +64,18 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "valueBoolean" : false
     },
     {
-      "url" : "populatable",
+      "url" : "domainAligned",
       "valueBoolean" : false
     }],
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-minimal",
   "version" : "2027.0.0-ballot.1",
-  "title" : "MII QST PRO PROMIS-29 Minimal",
+  "title" : "MII QST PRO PROMIS-29 Minimal [retired]",
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"],
-  "status" : "active",
+  "status" : "retired",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -86,7 +88,25 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "value" : "office@medizininformatik-initiative.de"
     }]
   }],
-  "description" : "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
+  "description" : "RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-rc.1. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable.",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
+    }
+  },
+  {
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
+    }
+  }],
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -94,270 +114,11 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "display" : "Germany"
     }]
   }],
+  "copyright" : "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
   "code" : [{
-    "system" : "http://loinc.org",
-    "code" : "62337-1",
-    "display" : "PROMIS item bank - 29 profile"
-  },
-  {
     "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
     "code" : "promis-promis29",
     "display" : "PROMIS-29 Questionnaire"
-  }],
-  "item" : [{
-    "linkId" : "PROMIS-29",
-    "text" : "PROMIS-29 Profile v2.1",
-    "type" : "group",
-    "item" : [{
-      "linkId" : "PROMIS-29.Instructions",
-      "text" : "Please respond to each question or statement by marking one box per row. In the past 7 days...",
-      "_text" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Bitte beantworten Sie jede Frage oder Aussage, indem Sie ein Kästchen pro Zeile markieren. In den letzten 7 Tagen..."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "type" : "display"
-    },
-    {
-      "linkId" : "PROMIS-29.PhysicalFunction",
-      "text" : "Physical Function",
-      "_text" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Körperliche Funktion"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "type" : "group",
-      "item" : [{
-        "linkId" : "promis-pfa11",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61597-1"
-        }],
-        "text" : "Are you able to do chores such as vacuuming or yard work?",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Sind Sie in der Lage, Hausarbeiten wie Staubsaugen oder Gartenarbeit zu erledigen?"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
-      },
-      {
-        "linkId" : "promis-pfa21",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61598-9"
-        }],
-        "text" : "Are you able to go up and down stairs at a normal pace?",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Sind Sie in der Lage, in normalem Tempo Treppen hinauf- und hinunterzugehen?"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
-      },
-      {
-        "linkId" : "promis-pfa23",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61593-0"
-        }],
-        "text" : "Are you able to go for a walk of at least 15 minutes?",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Sind Sie in der Lage, mindestens 15 Minuten spazieren zu gehen?"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
-      },
-      {
-        "linkId" : "promis-pfa53",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61596-3"
-        }],
-        "text" : "Are you able to run errands and shop?",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Sind Sie in der Lage, Besorgungen zu machen und einzukaufen?"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
-      }]
-    },
-    {
-      "linkId" : "PROMIS-29.Anxiety",
-      "text" : "Anxiety",
-      "_text" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Angst"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "type" : "group",
-      "item" : [{
-        "linkId" : "promis-edanx01",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61923-9",
-          "display" : "I felt fearful in past 7 days [PROMIS]"
-        }],
-        "text" : "I felt fearful",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Ich fühlte mich ängstlich"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
-      },
-      {
-        "linkId" : "promis-edanx40",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61941-1",
-          "display" : "I found it hard to focus on anything other than my anxiety in past 7 days"
-        }],
-        "text" : "I found it hard to focus on anything other than my anxiety",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Ich fand es schwer, mich auf etwas anderes als meine Angst zu konzentrieren"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
-      },
-      {
-        "linkId" : "promis-edanx41",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61942-9",
-          "display" : "My worries overwhelmed me in past 7 days"
-        }],
-        "text" : "My worries overwhelmed me",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Meine Sorgen überwältigten mich"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
-      },
-      {
-        "linkId" : "promis-edanx53",
-        "code" : [{
-          "system" : "http://loinc.org",
-          "code" : "61949-4",
-          "display" : "I felt uneasy in past 7 days"
-        }],
-        "text" : "I felt uneasy",
-        "_text" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Ich fühlte mich unruhig"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "type" : "choice",
-        "required" : true,
-        "answerValueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
-      }]
-    }]
   }]
 }
 

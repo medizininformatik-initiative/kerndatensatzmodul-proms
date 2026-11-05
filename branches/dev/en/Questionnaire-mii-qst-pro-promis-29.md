@@ -70,6 +70,10 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   },
   {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-library",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-promis-29|2027.0.0-ballot.1"
+  },
+  {
     "url" : "http://hl7.org/fhir/StructureDefinition/variable",
     "valueExpression" : {
       "name" : "physicalFunctionRaw",
@@ -130,7 +134,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PROMIS-29 (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -191,21 +195,29 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   }],
   "item" : [{
     "linkId" : "PROMIS-29.PhysicalFunction",
-    "text" : "KÖRPERLICHE FUNKTION",
+    "text" : "Physical Function",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Körperliche Funktion"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
-      "linkId" : "PROMIS-29.PhysicalFunction.Description",
-      "text" : "Sind Sie zu folgenden Tätigkeiten imstande:",
-      "type" : "display"
-    },
-    {
       "linkId" : "promis-pfa11",
       "code" : [{
         "system" : "http://loinc.org",
         "code" : "61597-1",
         "display" : "Are you able to do chores such as vacuuming or yard work [PROMIS]"
       }],
-      "text" : "Are you able to do chores such as vacuuming or yard work [PROMIS]",
+      "text" : "Are you able to do chores such as vacuuming or yard work?",
       "_text" : {
         "extension" : [{
           "extension" : [{
@@ -223,12 +235,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "answerOption" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
+          "valueDecimal" : 5
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13912-3",
-          "display" : "Unable to do",
+          "code" : "LA13921-4",
+          "display" : "Without any difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -237,55 +249,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Kann ich gar nicht"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 2
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13919-8",
-          "display" : "With much difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit großen Schwierigkeiten"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 3
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13920-6",
-          "display" : "With some difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit einigen Schwierigkeiten"
+                "valueString" : "Ohne jede Schwierigkeiten"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -319,12 +283,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 5
+          "valueDecimal" : 3
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13921-4",
-          "display" : "Without any difficulty",
+          "code" : "LA13920-6",
+          "display" : "With some difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -333,7 +297,55 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Ohne jede Schwierigkeiten"
+                "valueString" : "Mit einigen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13919-8",
+          "display" : "With much difficulty",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Mit großen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 1
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13912-3",
+          "display" : "Unable to do",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Kann ich gar nicht"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -348,7 +360,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61607-8",
         "display" : "Are you able to go up and down stairs at a normal pace [PROMIS]"
       }],
-      "text" : "Are you able to go up and down stairs at a normal pace [PROMIS]",
+      "text" : "Are you able to go up and down stairs at a normal pace?",
       "_text" : {
         "extension" : [{
           "extension" : [{
@@ -366,12 +378,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "answerOption" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
+          "valueDecimal" : 5
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13912-3",
-          "display" : "Unable to do",
+          "code" : "LA13921-4",
+          "display" : "Without any difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -380,55 +392,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Kann ich gar nicht"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 2
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13919-8",
-          "display" : "With much difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit großen Schwierigkeiten"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 3
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13920-6",
-          "display" : "With some difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit einigen Schwierigkeiten"
+                "valueString" : "Ohne jede Schwierigkeiten"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -462,12 +426,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 5
+          "valueDecimal" : 3
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13921-4",
-          "display" : "Without any difficulty",
+          "code" : "LA13920-6",
+          "display" : "With some difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -476,7 +440,55 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Ohne jede Schwierigkeiten"
+                "valueString" : "Mit einigen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13919-8",
+          "display" : "With much difficulty",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Mit großen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 1
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13912-3",
+          "display" : "Unable to do",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Kann ich gar nicht"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -491,7 +503,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61609-4",
         "display" : "Are you able to go for a walk of at least 15 minutes [PROMIS]"
       }],
-      "text" : "Are you able to go for a walk of at least 15 minutes [PROMIS]",
+      "text" : "Are you able to go for a walk of at least 15 minutes?",
       "_text" : {
         "extension" : [{
           "extension" : [{
@@ -509,12 +521,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "answerOption" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
+          "valueDecimal" : 5
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13912-3",
-          "display" : "Unable to do",
+          "code" : "LA13921-4",
+          "display" : "Without any difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -523,55 +535,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Kann ich gar nicht"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 2
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13919-8",
-          "display" : "With much difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit großen Schwierigkeiten"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 3
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13920-6",
-          "display" : "With some difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit einigen Schwierigkeiten"
+                "valueString" : "Ohne jede Schwierigkeiten"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -605,12 +569,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 5
+          "valueDecimal" : 3
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13921-4",
-          "display" : "Without any difficulty",
+          "code" : "LA13920-6",
+          "display" : "With some difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -619,7 +583,55 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Ohne jede Schwierigkeiten"
+                "valueString" : "Mit einigen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13919-8",
+          "display" : "With much difficulty",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Mit großen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 1
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13912-3",
+          "display" : "Unable to do",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Kann ich gar nicht"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -634,7 +646,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61635-9",
         "display" : "Are you able to run errands and shop [PROMIS]"
       }],
-      "text" : "Are you able to run errands and shop [PROMIS]",
+      "text" : "Are you able to run errands and shop?",
       "_text" : {
         "extension" : [{
           "extension" : [{
@@ -652,12 +664,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "answerOption" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
+          "valueDecimal" : 5
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13912-3",
-          "display" : "Unable to do",
+          "code" : "LA13921-4",
+          "display" : "Without any difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -666,55 +678,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Kann ich gar nicht"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 2
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13919-8",
-          "display" : "With much difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit großen Schwierigkeiten"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          }
-        }
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 3
-        }],
-        "valueCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "LA13920-6",
-          "display" : "With some difficulty",
-          "_display" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Mit einigen Schwierigkeiten"
+                "valueString" : "Ohne jede Schwierigkeiten"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -748,12 +712,12 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 5
+          "valueDecimal" : 3
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA13921-4",
-          "display" : "Without any difficulty",
+          "code" : "LA13920-6",
+          "display" : "With some difficulty",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -762,7 +726,55 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Ohne jede Schwierigkeiten"
+                "valueString" : "Mit einigen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13919-8",
+          "display" : "With much difficulty",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Mit großen Schwierigkeiten"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 1
+        }],
+        "valueCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "LA13912-3",
+          "display" : "Unable to do",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Kann ich gar nicht"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -773,11 +785,37 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   {
     "linkId" : "PROMIS-29.Anxiety",
-    "text" : "ANGST",
+    "text" : "Anxiety",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Angst"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
       "linkId" : "PROMIS-29.Anxiety.Description",
-      "text" : "In den letzten 7 Tagen:",
+      "text" : "In the past 7 days…",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "In den letzten 7 Tagen:"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "display"
     },
     {
@@ -787,7 +825,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61923-9",
         "display" : "I felt fearful in past 7 days [PROMIS]"
       }],
-      "text" : "Ich fürchtete mich.",
+      "text" : "I felt fearful.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich fürchtete mich."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -917,7 +968,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61941-1",
         "display" : "I found it hard to focus on anything other than my anxiety in past 7 days"
       }],
-      "text" : "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.",
+      "text" : "I found it hard to focus on anything other than my anxiety.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1047,7 +1111,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61942-9",
         "display" : "My worries overwhelmed me in past 7 days"
       }],
-      "text" : "Meine Sorgen haben mich überwältigt.",
+      "text" : "My worries overwhelmed me.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Meine Sorgen haben mich überwältigt."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1177,7 +1254,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61949-4",
         "display" : "I felt uneasy in past 7 days"
       }],
-      "text" : "Ich fühlte mich unruhig.",
+      "text" : "I felt uneasy.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich fühlte mich unruhig."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1303,11 +1393,37 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   {
     "linkId" : "PROMIS-29.Depression",
-    "text" : "DEPRESSION",
+    "text" : "Depression",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Depression"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
       "linkId" : "PROMIS-29.Depression.Description",
-      "text" : "In den letzten 7 Tagen:",
+      "text" : "In the past 7 days…",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "In den letzten 7 Tagen:"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "display"
     },
     {
@@ -1317,7 +1433,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61953-6",
         "display" : "I felt worthless in past 7 days [PROMIS]"
       }],
-      "text" : "Ich fühlte mich wertlos.",
+      "text" : "I felt worthless.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich fühlte mich wertlos."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1447,7 +1576,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61955-1",
         "display" : "I felt helpless in past 7 days [PROMIS]"
       }],
-      "text" : "Ich fühlte mich hilflos.",
+      "text" : "I felt helpless.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich fühlte mich hilflos."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1577,7 +1719,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61967-6",
         "display" : "I felt depressed in past 7 days [PROMIS]"
       }],
-      "text" : "Ich fühlte mich niedergeschlagen.",
+      "text" : "I felt depressed.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich fühlte mich niedergeschlagen."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1707,7 +1862,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61973-4",
         "display" : "I felt hopeless in past 7 days [PROMIS]"
       }],
-      "text" : "Ich fühlte mich hoffnungslos.",
+      "text" : "I felt hopeless.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich fühlte mich hoffnungslos."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1833,11 +2001,37 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   {
     "linkId" : "PROMIS-29.Fatigue",
-    "text" : "ERSCHÖPFUNG",
+    "text" : "Fatigue",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Erschöpfung"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
       "linkId" : "PROMIS-29.Fatigue.Description",
-      "text" : "In den letzten 7 Tagen:",
+      "text" : "In the past 7 days…",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "In den letzten 7 Tagen:"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "display"
     },
     {
@@ -1847,7 +2041,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61878-5",
         "display" : "I feel fatigued during the past 7 days [PROMIS]"
       }],
-      "text" : "Ich bin erschöpft.",
+      "text" : "I feel fatigued.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich bin erschöpft."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -1977,7 +2184,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61882-7",
         "display" : "I had trouble starting things because I was tired in past 7 days [PROMIS]"
       }],
-      "text" : "Es fällt mir schwer, etwas anzufangen, weil ich müde bin.",
+      "text" : "I have trouble starting things because I am tired.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2104,10 +2324,23 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "linkId" : "promis-fatexp41",
       "code" : [{
         "system" : "http://loinc.org",
-        "code" : "61863-7",
-        "display" : "How fatigued were you on the day you felt most fatigued in past 7 days [PROMIS]"
+        "code" : "61865-2",
+        "display" : "How run-down did you feel on average in past 7 days [PROMIS]"
       }],
-      "text" : "Wie ausgelaugt fühlten Sie sich im Allgemeinen?",
+      "text" : "How run-down did you feel on average?",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Wie ausgelaugt fühlten Sie sich im Allgemeinen?"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2237,7 +2470,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61864-5",
         "display" : "How fatigued were you on average in past 7 days [PROMIS]"
       }],
-      "text" : "Wie erschöpft waren Sie im Allgemeinen?",
+      "text" : "How fatigued were you on average?",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Wie erschöpft waren Sie im Allgemeinen?"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2363,11 +2609,37 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   {
     "linkId" : "PROMIS-29.Sleep",
-    "text" : "SCHLAFSTÖRUNGEN",
+    "text" : "Sleep Disturbance",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Schlafstörungen"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
       "linkId" : "PROMIS-29.Sleep.Description",
-      "text" : "In den letzten 7 Tagen:",
+      "text" : "In the past 7 days…",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "In den letzten 7 Tagen:"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "display"
     },
     {
@@ -2377,7 +2649,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61987-4",
         "display" : "My sleep quality was...in past 7 days [PROMIS]"
       }],
-      "text" : "Meine Schlafqualität war ...",
+      "text" : "My sleep quality was...",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Meine Schlafqualität war ..."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2507,7 +2792,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61986-6",
         "display" : "My sleep was refreshing in past 7 days [PROMIS]"
       }],
-      "text" : "Mein Schlaf war erfrischend.",
+      "text" : "My sleep was refreshing.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Mein Schlaf war erfrischend."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2637,7 +2935,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61998-1",
         "display" : "I had a problem with my sleep 7 days [PROMIS]"
       }],
-      "text" : "Ich hatte Schlafprobleme.",
+      "text" : "I had a problem with my sleep.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich hatte Schlafprobleme."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2767,7 +3078,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61999-9",
         "display" : "I had difficulty falling asleep in past 7 days [PROMIS]"
       }],
-      "text" : "Ich hatte Schwierigkeiten einzuschlafen.",
+      "text" : "I had difficulty falling asleep.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ich hatte Schwierigkeiten einzuschlafen."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2893,21 +3217,42 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   {
     "linkId" : "PROMIS-29.Social",
-    "text" : "SOZIALE TEILHABE",
+    "text" : "Ability to Participate in Social Roles and Activities",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Soziale Teilhabe"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
-      "linkId" : "PROMIS-29.Social.Description",
-      "text" : "In den letzten 7 Tagen:",
-      "type" : "display"
-    },
-    {
       "linkId" : "promis-srpper23-caps",
       "code" : [{
         "system" : "http://loinc.org",
         "code" : "76709-5",
         "display" : "I have trouble doing all of my usual work (include work at home) [PROMIS]"
       }],
-      "text" : "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
+      "text" : "I have trouble doing all of my usual work (include work at home).",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -2988,8 +3333,8 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA10044-8",
-          "display" : "Often",
+          "code" : "LA14747-2",
+          "display" : "Usually",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -2998,7 +3343,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Oft"
+                "valueString" : "Meistens"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -3037,7 +3382,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "75417-6",
         "display" : "I have trouble doing all of my regular leisure activities with others [PROMIS]"
       }],
-      "text" : "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.",
+      "text" : "I have trouble doing all of my regular leisure activities with others.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -3118,8 +3476,8 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA10044-8",
-          "display" : "Often",
+          "code" : "LA14747-2",
+          "display" : "Usually",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -3128,7 +3486,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Oft"
+                "valueString" : "Meistens"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -3167,7 +3525,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "76708-7",
         "display" : "I have trouble doing all of the family activities that I want to do [PROMIS]"
       }],
-      "text" : "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.",
+      "text" : "I have trouble doing all of the family activities that I want to do.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -3248,8 +3619,8 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA10044-8",
-          "display" : "Often",
+          "code" : "LA14747-2",
+          "display" : "Usually",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -3258,7 +3629,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Oft"
+                "valueString" : "Meistens"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -3297,7 +3668,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "76712-9",
         "display" : "I have trouble doing all of the activities with friends that I want to do [PROMIS]"
       }],
-      "text" : "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte.",
+      "text" : "I have trouble doing all of the activities with friends that I want to do.",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -3378,8 +3762,8 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         }],
         "valueCoding" : {
           "system" : "http://loinc.org",
-          "code" : "LA10044-8",
-          "display" : "Often",
+          "code" : "LA14747-2",
+          "display" : "Usually",
           "_display" : {
             "extension" : [{
               "extension" : [{
@@ -3388,7 +3772,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
               },
               {
                 "url" : "content",
-                "valueString" : "Oft"
+                "valueString" : "Meistens"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -3423,11 +3807,37 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   {
     "linkId" : "PROMIS-29.PainInterference",
-    "text" : "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG",
+    "text" : "Pain Interference",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Schmerzbedingte Beeinträchtigung"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
       "linkId" : "PROMIS-29.PainInterference.Description",
-      "text" : "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen...",
+      "text" : "In the past 7 days…",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "In den letzten 7 Tagen:"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "display"
     },
     {
@@ -3437,7 +3847,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61758-9",
         "display" : "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
       }],
-      "text" : "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?",
+      "text" : "How much did pain interfere with your day to day activities?",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -3567,7 +3990,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61769-6",
         "display" : "How much did pain interfere with work around the home in past 7 days [PROMIS]"
       }],
-      "text" : "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?",
+      "text" : "How much did pain interfere with work around the home?",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -3697,7 +4133,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61773-8",
         "display" : "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
       }],
-      "text" : "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?",
+      "text" : "How much did pain interfere with your ability to participate in social activities?",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -3827,7 +4276,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61775-3",
         "display" : "How much did pain interfere with your household chores in past 7 days [PROMIS]"
       }],
-      "text" : "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?",
+      "text" : "How much did pain interfere with your household chores?",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "choice",
       "answerOption" : [{
         "extension" : [{
@@ -3953,9 +4415,40 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   },
   {
     "linkId" : "PROMIS-29.PainIntensity",
-    "text" : "SCHMERZINTENSITÄT",
+    "text" : "Pain Intensity",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Schmerzintensität"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
+      "linkId" : "PROMIS-29.PainIntensity.Description",
+      "text" : "In the past 7 days…",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "In den letzten 7 Tagen:"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "type" : "display"
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
         "valueCoding" : {
@@ -3978,13 +4471,39 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "61583-1",
         "display" : "How would you rate your pain on average in past 7 days [PROMIS]"
       }],
-      "text" : "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?",
+      "text" : "How would you rate your pain on average?",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "integer"
     }]
   },
   {
     "linkId" : "PROMIS-29.Scores",
-    "text" : "BEREICHS-BEWERTUNGEN",
+    "text" : "Domain Scores",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Bereichs-Bewertungen"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "type" : "group",
     "item" : [{
       "extension" : [{
@@ -4012,7 +4531,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "71960-9",
         "display" : "PROMIS-29 Physical function score"
       }],
-      "text" : "PROMIS-29 Körperliche Funktion - Rohwert",
+      "text" : "PROMIS-29 Physical Function - Raw Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Körperliche Funktion - Rohwert"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4042,7 +4574,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "91721-1",
         "display" : "PROMIS physical function - version 2.0 T-score"
       }],
-      "text" : "PROMIS-29 Körperliche Funktion - T-Score",
+      "text" : "PROMIS-29 Physical Function - T-Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Körperliche Funktion - T-Score"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4072,7 +4617,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "71968-2",
         "display" : "PROMIS-29 Anxiety score"
       }],
-      "text" : "PROMIS-29 Angst - Rohwert",
+      "text" : "PROMIS-29 Anxiety - Raw Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Angst - Rohwert"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4099,10 +4657,23 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       "linkId" : "promis-29-anxiety-tscore",
       "code" : [{
         "system" : "http://loinc.org",
-        "code" : "71967-4",
-        "display" : "PROMIS-29 Anxiety score T-score"
+        "code" : "77862-1",
+        "display" : "PROMIS emotional distress - anxiety - version 1.0 Tscore"
       }],
-      "text" : "PROMIS-29 Angst - T-Score",
+      "text" : "PROMIS-29 Anxiety - T-Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Angst - T-Score"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4132,7 +4703,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "71966-6",
         "display" : "PROMIS-29 Depression score"
       }],
-      "text" : "PROMIS-29 Depression - Rohwert",
+      "text" : "PROMIS-29 Depression - Raw Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Depression - Rohwert"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4163,6 +4747,19 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "display" : "PROMIS emotional distress - depression - version 1.0 Tscore"
       }],
       "text" : "PROMIS-29 Depression - T-Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Depression - T-Score"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4192,7 +4789,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "71964-1",
         "display" : "PROMIS-29 Fatigue score"
       }],
-      "text" : "PROMIS-29 Erschöpfung - Rohwert",
+      "text" : "PROMIS-29 Fatigue - Raw Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Erschöpfung - Rohwert"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4222,7 +4832,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "77864-7",
         "display" : "PROMIS fatigue - version 1.0 Tscore"
       }],
-      "text" : "PROMIS-29 Erschöpfung - T-Score",
+      "text" : "PROMIS-29 Fatigue - T-Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Erschöpfung - T-Score"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4252,7 +4875,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "71956-7",
         "display" : "PROMIS-29 Sleep disturbance score"
       }],
-      "text" : "PROMIS-29 Schlafstörungen - Rohwert",
+      "text" : "PROMIS-29 Sleep Disturbance - Raw Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Schlafstörungen - Rohwert"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4282,7 +4918,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "77860-5",
         "display" : "PROMIS sleep disturbance - version 1.0 Tscore"
       }],
-      "text" : "PROMIS-29 Schlafstörungen - T-Score",
+      "text" : "PROMIS-29 Sleep Disturbance - T-Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Schlafstörungen - T-Score"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4308,11 +4957,24 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
       }],
       "linkId" : "promis-29-social-raw",
       "code" : [{
-        "system" : "http://loinc.org",
-        "code" : "71958-3",
-        "display" : "PROMIS-29 Satisfaction with participation in social roles score"
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code" : "promis-29-social-function-raw",
+        "display" : "PROMIS-29 Ability to Participate in Social Roles and Activities Raw Score"
       }],
-      "text" : "PROMIS-29 Soziale Teilhabe - Rohwert",
+      "text" : "PROMIS-29 Social Roles and Activities - Raw Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Soziale Teilhabe - Rohwert"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4342,7 +5004,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "77854-8",
         "display" : "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
       }],
-      "text" : "PROMIS-29 Soziale Teilhabe - T-Score",
+      "text" : "PROMIS-29 Social Roles and Activities - T-Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Soziale Teilhabe - T-Score"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4372,7 +5047,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "71962-5",
         "display" : "PROMIS-29 Pain interference score"
       }],
-      "text" : "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert",
+      "text" : "PROMIS-29 Pain Interference - Raw Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     },
@@ -4402,7 +5090,20 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
         "code" : "77865-4",
         "display" : "PROMIS pain interference - version 1.0 Tscore"
       }],
-      "text" : "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score",
+      "text" : "PROMIS-29 Pain Interference - T-Score",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : "decimal",
       "readOnly" : true
     }]

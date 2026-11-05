@@ -53,7 +53,7 @@
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -91,22 +91,22 @@
     "text" : "Übergeben Sie sich, wenn Sie sich unangenehm voll fühlen?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -119,22 +119,22 @@
     "text" : "Machen Sie sich Sorgen, weil Sie manchmal nicht mit dem Essen aufhören können?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -147,22 +147,22 @@
     "text" : "Haben Sie in der letzten Zeit mehr als 6 kg in 3 Monaten abgenommen?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -175,22 +175,22 @@
     "text" : "Finden Sie sich zu dick, während andere Sie zu dünn finden?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -203,22 +203,22 @@
     "text" : "Würden Sie sagen, dass Essen Ihr Leben sehr beeinflusst?",
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"

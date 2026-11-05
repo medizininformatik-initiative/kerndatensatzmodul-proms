@@ -31,6 +31,14 @@ Diese definieren die Eigenschaften, nach denen ein RESTful-Server durchsucht wer
 | [ mii-sp-pro-observationdefinition-unit  ](SearchParameter-mii-sp-pro-observationdefinition-unit.md) | SearchParameter for ObservationDefinition.quantitativeDetails.unit to filter score definitions by measurement unit |
 | [ mii-sp-pro-questionnaire-capabilities  ](SearchParameter-mii-sp-pro-questionnaire-capabilities.md) | SearchParameter for Questionnaire.extension[capabilities] to filter questionnaires by capability flags (displayable, collectable, calculatable, extractable, populatable, domainAligned) |
 
+### Wissensartefakte: Library 
+
+Diese definieren Logik, Asset-Sammlungen und andere Bibliotheken als Teil des Inhalts in diesem Implementierungsleitfaden.
+
+| | |
+| :--- | :--- |
+| [ MII LIB PRO PROMIS-29 Scoring  ](Library-mii-lib-pro-promis-29.md) | CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the seven domains plus the pain intensity item. Server channel of the dual-channel scoring architecture (the FHIRPath calculatedExpressions in the Questionnaire are the client channel); both channels are generated from the same weight and T-score tables. Define names equal the score item linkIds. Supports Library/$evaluate with an explicit Response parameter and the SDC retrieve pattern (most recent completed QuestionnaireResponse of the instrument). |
+
 ### Strukturen: Logische Modelle 
 
 Diese definieren Datenmodelle, die den von diesem Implementierungsleitfaden abgedeckten Bereich in geschäftsfreundlicheren Begriffen darstellen als die zugrunde liegenden FHIR-Ressourcen.
@@ -68,8 +76,8 @@ Diese definieren Formulare, die von Systemen verwendet werden, die mit dem Imple
 | [ MII QST PRO PROMIS Depression SF 4a (Adults)  ](Questionnaire-mii-qst-pro-promis-depression-sf4a.md) | PROMIS Depression Short Form 4a - Adults - Item Bank v1.0 |
 | [ MII QST PRO PROMIS-16 (Adults)  ](Questionnaire-mii-qst-pro-promis-16.md) | PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027). |
 | [ MII QST PRO PROMIS-29 (Adults)  ](Questionnaire-mii-qst-pro-promis-29.md) | PROMIS-29 Profile v2.1 - Comprehensive health-related quality of life assessment across 7 domains |
-| [ MII QST PRO PROMIS-29 (German)  ](Questionnaire-mii-qst-pro-promis-29-de.md) | PROMIS-29 Profile v2.1 - German language variant derived from English source |
-| [ MII QST PRO PROMIS-29 Minimal  ](Questionnaire-mii-qst-pro-promis-29-minimal.md) | PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions |
+| [ MII QST PRO PROMIS-29 (German) [retired]  ](Questionnaire-mii-qst-pro-promis-29-de.md) | RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-rc.1. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable. |
+| [ MII QST PRO PROMIS-29 Minimal [retired]  ](Questionnaire-mii-qst-pro-promis-29-minimal.md) | RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-rc.1. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable. |
 | [ MII QST PRO SCOFF  ](Questionnaire-mii-qst-pro-scoff.md) | SCOFF questionnaire — five-item screening tool for eating disorders (Morgan et al. 1999) with German translation |
 | [ MII QST PRO SSD-12  ](Questionnaire-mii-qst-pro-ssd-12.md) | SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/2017), 12-item German self-report scale |
 | [ MII QST PRO WHODAS 2.0 12-Item  ](Questionnaire-mii-qst-pro-whodas-whodas12.md) | WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use). |
@@ -145,6 +153,7 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS PRO PROMIS Frequency Response Scale  ](ValueSet-mii-vs-pro-promis-frequency-response-scale.md) | PROMIS Frequency response scale based on LOINC LL1016-6 |
 | [ MII VS PRO PROMIS Intensity Response Scale  ](ValueSet-mii-vs-pro-promis-intensity-response-scale.md) | PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0 |
 | [ MII VS PRO PROMIS Physical Function Response Scale  ](ValueSet-mii-vs-pro-promis-physical-function-response-scale.md) | PROMIS Physical Function response scale based on LOINC LL1022-4 |
+| [ MII VS PRO PROMIS Social Roles Response Scale  ](ValueSet-mii-vs-pro-promis-social-roles-response-scale.md) | Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 … Always = 1). |
 | [ MII VS PRO SSD-12 Answers  ](ValueSet-mii-vs-pro-ssd-12-answers.md) | SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 = sehr oft). MII-controlled for reliable ordinal() score calculation. |
 | [ MII VS PRO WHODAS 2.0 12-Item Answer List  ](ValueSet-mii-vs-pro-whodas-12-answer-list.md) | 5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12. |
 
@@ -234,7 +243,7 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ MII EXA PRO PROMIS Depression SF 4a T-Score  ](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md) | Example T-score observation for PROMIS Depression Short Form 4a |
 | [ MII EXA PRO PROMIS-29 Bundle with Extracted Observations  ](Bundle-mii-exa-pro-promis-29-bundle.md) | Example Bundle demonstrating PROMIS-29 QuestionnaireResponse with all extracted T-Score Observations and Pain Intensity observation. This bundle shows the complete SDC observation-based extraction workflow. |
 | [ MII EXA PRO PROMIS-29 Response  ](QuestionnaireResponse-mii-exa-pro-promis-29-response.md) | Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (English variant) |
-| [ MII EXA PRO PROMIS-29 Response (German)  ](QuestionnaireResponse-mii-exa-pro-promis-29-de-response.md) | Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants |
+| [ MII EXA PRO PROMIS-29 Response (German language)  ](QuestionnaireResponse-mii-exa-pro-promis-29-de-response.md) | Example QuestionnaireResponse for PROMIS-29 Profile v2.1 with language = de, answering the English-primary questionnaire; demonstrates that the response carries the LOINC answer codes regardless of the display language |
 | [ MII EXA PRO Patient  ](Patient-mii-exa-pro-patient.md) | Example patient for PRO demonstrations |
 | [ MII EXA PRO WHODAS 2.0 12-Item Response  ](QuestionnaireResponse-mii-exa-pro-whodas12-response-01.md) | Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24. |
 | [ PC-PTSD Questionnaire Response Example  ](QuestionnaireResponse-mii-exa-pro-pc-ptsd-response.md) |  |

@@ -138,10 +138,26 @@
       <display value="Natural"/>
     </valueCoding>
   </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities">
+    <extension url="displayable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="collectable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="calculatable">
+      <valueBoolean value="false"/>
+    </extension>
+    <extension url="extractable">
+      <valueBoolean value="false"/>
+    </extension>
+    <extension url="domainAligned">
+      <valueBoolean value="false"/>
+    </extension>
+  </extension>
   <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
     <valueBoolean value="true"/>
   </extension>
-  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"/>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de"/>
   <version value="2027.0.0-ballot.1"/>
   <name value="MII_QST_PRO_PRO_CTCAE_Breast_DE"/>
@@ -157,7 +173,7 @@
   </title>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-11-05T04:04:59+00:00"/>
+  <date value="2026-11-05T07:07:52+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>

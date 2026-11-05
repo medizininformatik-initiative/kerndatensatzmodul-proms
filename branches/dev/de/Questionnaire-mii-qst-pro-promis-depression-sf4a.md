@@ -81,7 +81,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO PROMIS Depression SF 4a (Adults)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -155,7 +155,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         },
         {
           "url" : "content",
-          "valueString" : "...fühlte ich mich wertlos"
+          "valueString" : "Ich fühlte mich wertlos."
         }],
         "url" : "http://hl7.org/fhir/StructureDefinition/translation"
       }]
@@ -298,7 +298,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         },
         {
           "url" : "content",
-          "valueString" : "...fühlte ich mich hilflos"
+          "valueString" : "Ich fühlte mich hilflos."
         }],
         "url" : "http://hl7.org/fhir/StructureDefinition/translation"
       }]
@@ -441,7 +441,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         },
         {
           "url" : "content",
-          "valueString" : "...fühlte ich mich deprimiert"
+          "valueString" : "Ich fühlte mich niedergeschlagen."
         }],
         "url" : "http://hl7.org/fhir/StructureDefinition/translation"
       }]
@@ -584,7 +584,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         },
         {
           "url" : "content",
-          "valueString" : "...fühlte ich mich hoffnungslos"
+          "valueString" : "Ich fühlte mich hoffnungslos."
         }],
         "url" : "http://hl7.org/fhir/StructureDefinition/translation"
       }]

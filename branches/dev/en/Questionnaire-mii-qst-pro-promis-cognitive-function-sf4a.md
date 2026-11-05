@@ -62,6 +62,10 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     {
       "url" : "extractable",
       "valueBoolean" : true
+    },
+    {
+      "url" : "domainAligned",
+      "valueBoolean" : true
     }],
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
   },
@@ -78,7 +82,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO PROMIS Cognitive Function SF 4a",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

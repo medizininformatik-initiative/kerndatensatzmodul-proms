@@ -50,11 +50,7 @@
         <authored value="2025-01-30T14:30:00Z"/>
         <item>
           <linkId value="PROMIS-29.PhysicalFunction"/>
-          <text value="KÖRPERLICHE FUNKTION"/>
-          <item>
-            <linkId value="PROMIS-29.PhysicalFunction.Description"/>
-            <text value="Sind Sie zu folgenden Tätigkeiten imstande:"/>
-          </item>
+          <text value="Körperliche Funktion"/>
           <item>
             <linkId value="promis-pfa11"/>
             <text value="Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?"/>
@@ -102,7 +98,7 @@
         </item>
         <item>
           <linkId value="PROMIS-29.Anxiety"/>
-          <text value="ANGST"/>
+          <text value="Angst"/>
           <item>
             <linkId value="PROMIS-29.Anxiety.Description"/>
             <text value="In den letzten 7 Tagen:"/>
@@ -154,7 +150,7 @@
         </item>
         <item>
           <linkId value="PROMIS-29.Depression"/>
-          <text value="DEPRESSION"/>
+          <text value="Depression"/>
           <item>
             <linkId value="PROMIS-29.Depression.Description"/>
             <text value="In den letzten 7 Tagen:"/>
@@ -206,7 +202,7 @@
         </item>
         <item>
           <linkId value="PROMIS-29.Fatigue"/>
-          <text value="ERSCHÖPFUNG"/>
+          <text value="Erschöpfung"/>
           <item>
             <linkId value="PROMIS-29.Fatigue.Description"/>
             <text value="In den letzten 7 Tagen:"/>
@@ -258,7 +254,7 @@
         </item>
         <item>
           <linkId value="PROMIS-29.Sleep"/>
-          <text value="SCHLAFSTÖRUNGEN"/>
+          <text value="Schlafstörungen"/>
           <item>
             <linkId value="PROMIS-29.Sleep.Description"/>
             <text value="In den letzten 7 Tagen:"/>
@@ -310,11 +306,7 @@
         </item>
         <item>
           <linkId value="PROMIS-29.Social"/>
-          <text value="SOZIALE TEILHABE"/>
-          <item>
-            <linkId value="PROMIS-29.Social.Description"/>
-            <text value="In den letzten 7 Tagen:"/>
-          </item>
+          <text value="Soziale Teilhabe"/>
           <item>
             <linkId value="promis-srpper23-caps"/>
             <text value="Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."/>
@@ -362,10 +354,10 @@
         </item>
         <item>
           <linkId value="PROMIS-29.PainInterference"/>
-          <text value="SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"/>
+          <text value="Schmerzbedingte Beeinträchtigung"/>
           <item>
             <linkId value="PROMIS-29.PainInterference.Description"/>
-            <text value="In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."/>
+            <text value="In den letzten 7 Tagen:"/>
           </item>
           <item>
             <linkId value="promis-painin9"/>
@@ -414,7 +406,7 @@
         </item>
         <item>
           <linkId value="PROMIS-29.PainIntensity"/>
-          <text value="SCHMERZINTENSITÄT"/>
+          <text value="Schmerzintensität"/>
           <item>
             <linkId value="promis-global07"/>
             <text value="Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"/>
@@ -425,7 +417,7 @@
         </item>
         <item>
           <linkId value="PROMIS-29.Scores"/>
-          <text value="BEREICHS-BEWERTUNGEN"/>
+          <text value="Bereichs-Bewertungen"/>
           <item>
             <linkId value="promis-29-physical-function-raw"/>
             <text value="PROMIS-29 Körperliche Funktion - Rohwert"/>
@@ -589,8 +581,8 @@
         <code>
           <coding>
             <system value="http://loinc.org"/>
-            <code value="71967-4"/>
-            <display value="PROMIS-29 Anxiety score T-score"/>
+            <code value="77862-1"/>
+            <display value="PROMIS emotional distress - anxiety - version 1.0 Tscore"/>
           </coding>
         </code>
         <subject>
@@ -841,8 +833,8 @@
         <code>
           <coding>
             <system value="http://loinc.org"/>
-            <code value="75261-8"/>
-            <display value="How intense was your average pain in the past 7 days [PROMIS]"/>
+            <code value="61583-1"/>
+            <display value="How would you rate your pain on average in past 7 days [PROMIS]"/>
           </coding>
         </code>
         <subject>

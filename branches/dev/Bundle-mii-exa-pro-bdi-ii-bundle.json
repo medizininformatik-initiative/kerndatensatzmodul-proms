@@ -9,7 +9,7 @@
       "id" : "mii-cs-pro-bdi-bdi2",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"CodeSystem_mii-cs-pro-bdi-bdi2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-pro-bdi-bdi2</b></p><a name=\"mii-cs-pro-bdi-bdi2\"> </a><a name=\"hcmii-cs-pro-bdi-bdi2\"> </a><p><b>url</b>: <a href=\"CodeSystem-mii-cs-pro-bdi-bdi2.html\">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2</a></p><p><b>version</b>: 2027.0.0-ballot.1</p><p><b>name</b>: MII_CS_PRO_BDI_BDI2_AnswerList</p><p><b>title</b>: MII CS PRO BDI-II</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>description</b>: </p><div><p>MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire</p>\n</div><p><b>valueSet</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2\">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2</a></p><p><b>content</b>: Complete</p><p><b>count</b>: 10</p><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-0</p><p><b>display</b>: 0 points</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-1</p><p><b>display</b>: 1 point</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-2</p><p><b>display</b>: 2 points</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-3</p><p><b>display</b>: 3 points</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-1a</p><p><b>display</b>: 1 point (variant a)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-1b</p><p><b>display</b>: 1 point (variant b)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-2a</p><p><b>display</b>: 2 points (variant a)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-2b</p><p><b>display</b>: 2 points (variant b)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-3a</p><p><b>display</b>: 3 points (variant a)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-3b</p><p><b>display</b>: 3 points (variant b)</p></blockquote></div></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"CodeSystem_mii-cs-pro-bdi-bdi2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-pro-bdi-bdi2</b></p><a name=\"mii-cs-pro-bdi-bdi2\"> </a><a name=\"hcmii-cs-pro-bdi-bdi2\"> </a><p><b>url</b>: <a href=\"CodeSystem-mii-cs-pro-bdi-bdi2.html\">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2</a></p><p><b>version</b>: 2027.0.0-ballot.1</p><p><b>name</b>: MII_CS_PRO_BDI_BDI2_AnswerList</p><p><b>title</b>: MII CS PRO BDI-II</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>description</b>: </p><div><p>MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire</p>\n</div><p><b>valueSet</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2\">https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2</a></p><p><b>content</b>: Complete</p><p><b>count</b>: 10</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Uri</b></td><td><b>Description</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-properties.html\">http://hl7.org/fhir/concept-properties#itemWeight</a></td><td>Numerical weight for SDC calculatedExpression scoring via .weight()</td><td>decimal</td></tr></table><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-0</p><p><b>display</b>: 0 points</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>0</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-1</p><p><b>display</b>: 1 point</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>1</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-2</p><p><b>display</b>: 2 points</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>2</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-3</p><p><b>display</b>: 3 points</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>3</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-1a</p><p><b>display</b>: 1 point (variant a)</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>1</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-1b</p><p><b>display</b>: 1 point (variant b)</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>1</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-2a</p><p><b>display</b>: 2 points (variant a)</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>2</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-2b</p><p><b>display</b>: 2 points (variant b)</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>2</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-3a</p><p><b>display</b>: 3 points (variant a)</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>3</td></tr></table></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: bdi-bdi2-answer-3b</p><p><b>display</b>: 3 points (variant b)</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>itemWeight</td><td>3</td></tr></table></blockquote></div></div>"
       },
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
       "version" : "2027.0.0-ballot.1",
@@ -21,45 +21,91 @@
       "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
       "content" : "complete",
       "count" : 10,
+      "property" : [{
+        "code" : "itemWeight",
+        "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
+        "description" : "Numerical weight for SDC calculatedExpression scoring via .weight()",
+        "type" : "decimal"
+      }],
       "concept" : [{
         "code" : "bdi-bdi2-answer-0",
-        "display" : "0 points"
+        "display" : "0 points",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 0
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-1",
-        "display" : "1 point"
+        "display" : "1 point",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 1
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-2",
-        "display" : "2 points"
+        "display" : "2 points",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 2
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-3",
-        "display" : "3 points"
+        "display" : "3 points",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 3
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-1a",
-        "display" : "1 point (variant a)"
+        "display" : "1 point (variant a)",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 1
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-1b",
-        "display" : "1 point (variant b)"
+        "display" : "1 point (variant b)",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 1
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-2a",
-        "display" : "2 points (variant a)"
+        "display" : "2 points (variant a)",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 2
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-2b",
-        "display" : "2 points (variant b)"
+        "display" : "2 points (variant b)",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 2
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-3a",
-        "display" : "3 points (variant a)"
+        "display" : "3 points (variant a)",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 3
+        }]
       },
       {
         "code" : "bdi-bdi2-answer-3b",
-        "display" : "3 points (variant b)"
+        "display" : "3 points (variant b)",
+        "property" : [{
+          "code" : "itemWeight",
+          "valueDecimal" : 3
+        }]
       }]
     },
     "request" : {
@@ -207,7 +253,7 @@
         "valueExpression" : {
           "name" : "bdiScore",
           "language" : "text/fhirpath",
-          "expression" : "%resource.item.where(type = 'choice').answer.value.weight().sum()"
+          "expression" : "%resource.item.where(linkId.matches('^bdi-bdi2-q[0-9]{2}$')).answer.value.weight().sum()"
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
@@ -378,7 +424,7 @@
           "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
           "valueExpression" : {
             "language" : "text/fhirpath",
-            "expression" : "\n  iif(%bdiScore = 0, 38.2,\n  iif(%bdiScore = 1, 41.2,\n  iif(%bdiScore = 2, 43.5,\n  iif(%bdiScore = 3, 45.3,\n  iif(%bdiScore = 4, 46.9,\n  iif(%bdiScore = 5, 48.4,\n  iif(%bdiScore = 6, 49.7,\n  iif(%bdiScore = 7, 51.0,\n  iif(%bdiScore = 8, 52.2,\n  iif(%bdiScore = 9, 53.3,\n  iif(%bdiScore = 10, 54.4,\n  iif(%bdiScore = 11, 55.4,\n  iif(%bdiScore = 12, 56.4,\n  iif(%bdiScore = 13, 57.3,\n  iif(%bdiScore = 14, 58.2,\n  iif(%bdiScore = 15, 59.1,\n  iif(%bdiScore = 16, 59.9,\n  iif(%bdiScore = 17, 60.7,\n  iif(%bdiScore = 18, 61.5,\n  iif(%bdiScore = 19, 62.2,\n  iif(%bdiScore = 20, 62.9,\n  iif(%bdiScore = 21, 63.6,\n  iif(%bdiScore = 22, 64.3,\n  iif(%bdiScore = 23, 65.0,\n  iif(%bdiScore = 24, 65.6,\n  iif(%bdiScore = 25, 66.2,\n  iif(%bdiScore = 26, 66.8,\n  iif(%bdiScore = 27, 67.4,\n  iif(%bdiScore = 28, 68.0,\n  iif(%bdiScore = 29, 68.6,\n  iif(%bdiScore = 30, 69.1,\n  iif(%bdiScore = 31, 69.7,\n  iif(%bdiScore = 32, 70.2,\n  iif(%bdiScore = 33, 70.7,\n  iif(%bdiScore = 34, 71.2,\n  iif(%bdiScore = 35, 71.8,\n  iif(%bdiScore = 36, 72.3,\n  iif(%bdiScore = 37, 72.8,\n  iif(%bdiScore = 38, 73.3,\n  iif(%bdiScore = 39, 73.8,\n  iif(%bdiScore = 40, 74.3,\n  iif(%bdiScore = 41, 74.8,\n  iif(%bdiScore = 42, 75.3,\n  iif(%bdiScore = 43, 75.8,\n  iif(%bdiScore = 44, 76.3,\n  iif(%bdiScore = 45, 76.9,\n  iif(%bdiScore = 46, 77.4,\n  iif(%bdiScore = 47, 77.9,\n  iif(%bdiScore = 48, 78.5,\n  iif(%bdiScore = 49, 79.0,\n  iif(%bdiScore = 50, 79.6,\n  iif(%bdiScore = 51, 80.1,\n  iif(%bdiScore = 52, 80.7,\n  iif(%bdiScore = 53, 81.3,\n  iif(%bdiScore = 54, 81.9,\n  iif(%bdiScore = 55, 82.5,\n  iif(%bdiScore = 56, 83.2,\n  iif(%bdiScore = 57, 83.8,\n  iif(%bdiScore = 58, 84.5,\n  iif(%bdiScore = 59, 85.3,\n  iif(%bdiScore = 60, 86.0,\n  iif(%bdiScore = 61, 86.9,\n  iif(%bdiScore = 62, 87.8,\n  iif(%bdiScore = 63, 88.8, 88.8)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))\n"
+            "expression" : "\n  iif(%bdiScore = 0, 38.2,\n  iif(%bdiScore = 1, 41.2,\n  iif(%bdiScore = 2, 43.5,\n  iif(%bdiScore = 3, 45.3,\n  iif(%bdiScore = 4, 46.9,\n  iif(%bdiScore = 5, 48.4,\n  iif(%bdiScore = 6, 49.7,\n  iif(%bdiScore = 7, 51.0,\n  iif(%bdiScore = 8, 52.2,\n  iif(%bdiScore = 9, 53.3,\n  iif(%bdiScore = 10, 54.4,\n  iif(%bdiScore = 11, 55.4,\n  iif(%bdiScore = 12, 56.4,\n  iif(%bdiScore = 13, 57.3,\n  iif(%bdiScore = 14, 58.2,\n  iif(%bdiScore = 15, 59.1,\n  iif(%bdiScore = 16, 59.9,\n  iif(%bdiScore = 17, 60.7,\n  iif(%bdiScore = 18, 61.5,\n  iif(%bdiScore = 19, 62.2,\n  iif(%bdiScore = 20, 62.9,\n  iif(%bdiScore = 21, 63.6,\n  iif(%bdiScore = 22, 64.3,\n  iif(%bdiScore = 23, 65.0,\n  iif(%bdiScore = 24, 65.6,\n  iif(%bdiScore = 25, 66.2,\n  iif(%bdiScore = 26, 66.8,\n  iif(%bdiScore = 27, 67.4,\n  iif(%bdiScore = 28, 68.0,\n  iif(%bdiScore = 29, 68.6,\n  iif(%bdiScore = 30, 69.1,\n  iif(%bdiScore = 31, 69.7,\n  iif(%bdiScore = 32, 70.2,\n  iif(%bdiScore = 33, 70.7,\n  iif(%bdiScore = 34, 71.2,\n  iif(%bdiScore = 35, 71.8,\n  iif(%bdiScore = 36, 72.3,\n  iif(%bdiScore = 37, 72.8,\n  iif(%bdiScore = 38, 73.3,\n  iif(%bdiScore = 39, 73.8,\n  iif(%bdiScore = 40, 74.3,\n  iif(%bdiScore = 41, 74.8,\n  iif(%bdiScore = 42, 75.3,\n  iif(%bdiScore = 43, 75.8,\n  iif(%bdiScore = 44, 76.3,\n  iif(%bdiScore = 45, 76.9,\n  iif(%bdiScore = 46, 77.4,\n  iif(%bdiScore = 47, 77.9,\n  iif(%bdiScore = 48, 78.5,\n  iif(%bdiScore = 49, 79.0,\n  iif(%bdiScore = 50, 79.6,\n  iif(%bdiScore = 51, 80.1,\n  iif(%bdiScore = 52, 80.7,\n  iif(%bdiScore = 53, 81.3,\n  iif(%bdiScore = 54, 81.9,\n  iif(%bdiScore = 55, 82.5,\n  iif(%bdiScore = 56, 83.2,\n  iif(%bdiScore = 57, 83.8,\n  iif(%bdiScore = 58, 84.5,\n  iif(%bdiScore = 59, 85.3,\n  iif(%bdiScore = 60, 86.0,\n  iif(%bdiScore = 61, 86.9,\n  iif(%bdiScore = 62, 87.8,\n  iif(%bdiScore = 63, 88.8, 88.8))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
           }
         },
         {

@@ -28,7 +28,7 @@ Das Beck Depression Inventory II (BDI-II) ist ein etabliertes Screening-Instrume
 
 * **Canonical URL**: `https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2`
 * **Scoring**: Summenscore (0-63 Punkte)
-* **Implementation**: Vollständige FSH-Definition mit itemWeight-Extensions
+* **Implementation**: Vollständige FSH-Definition mit `itemWeight`-Property am MII-CodeSystem (`mii-cs-pro-bdi-bdi2`), gebunden über `answerValueSet`
 * **Status**: Funktionsfähige Score-Berechnung ohne Display-Capability
 * **Testing**: Enthält Platzhaltertexte (`[TEST PLACEHOLDER...]`) ausschließlich für technische Validierung 
 * Ermöglicht Testing in Tools, die renderbare Questionnaires voraussetzen

@@ -116,6 +116,13 @@
   "name" : "MII_IG_PRO"
 },
 {
+  "id" : "mii-lib-pro-promis-29",
+  "type" : "Library",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-promis-29",
+  "version" : "2027.0.0-ballot.1",
+  "name" : "mii-lib-pro-promis-29"
+},
+{
   "id" : "mii-qst-pro-bdi-bdi2",
   "type" : "Questionnaire",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2",
@@ -710,6 +717,13 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
   "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale"
+},
+{
+  "id" : "mii-vs-pro-promis-social-roles-response-scale",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-social-roles-response-scale",
+  "version" : "2027.0.0-ballot.1",
+  "name" : "MII_VS_PRO_PROMIS_Social_Roles_Response_Scale"
 },
 {
   "id" : "mii-vs-pro-ssd-12-answers",

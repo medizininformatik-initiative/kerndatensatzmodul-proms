@@ -53,7 +53,7 @@
   <title value="MII QST PRO SCOFF"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-11-05T04:04:59+00:00"/>
+  <date value="2026-11-05T07:07:52+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -91,20 +91,20 @@
     <text value="Do you make yourself Sick because you feel uncomfortably full?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -117,20 +117,20 @@
     <text value="Do you worry you have lost Control over how much you eat?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -143,20 +143,20 @@
     <text value="Have you recently lost more than One stone in a 3 month period?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -169,20 +169,20 @@
     <text value="Do you believe yourself to be Fat when others say you are too thin?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -195,20 +195,20 @@
     <text value="Would you say that Food dominates your life?"/>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>

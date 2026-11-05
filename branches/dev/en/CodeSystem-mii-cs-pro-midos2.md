@@ -38,7 +38,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO MIDOS2 Items and Response Scales",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -65,6 +65,7 @@ This Code system is referenced in the definition of the following value sets:
   "count" : 21,
   "property" : [{
     "code" : "snomed",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
     "description" : "SNOMED CT Equivalent für externe Interoperabilität",
     "type" : "code"
   }],
@@ -74,6 +75,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "none"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 0
     }]
   },
   {
@@ -82,6 +87,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "mild"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
     }]
   },
   {
@@ -90,6 +99,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "moderate"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
     }]
   },
   {
@@ -98,6 +111,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "severe"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
     }]
   },
   {
@@ -106,6 +123,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "very good"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 0
     }]
   },
   {
@@ -114,6 +135,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "rather good"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
     }]
   },
   {
@@ -122,6 +147,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "rather poor"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
     }]
   },
   {
@@ -130,6 +159,10 @@ This Code system is referenced in the definition of the following value sets:
     "designation" : [{
       "language" : "en",
       "value" : "very poor"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
     }]
   },
   {

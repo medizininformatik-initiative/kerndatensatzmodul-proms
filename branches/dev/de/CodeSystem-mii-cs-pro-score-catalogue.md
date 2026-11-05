@@ -35,7 +35,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -57,7 +57,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     }]
   }],
   "content" : "complete",
-  "count" : 47,
+  "count" : 55,
   "concept" : [{
     "code" : "euroqol-eq5d5l-index",
     "display" : "EuroQol EQ-5D-5L Index Score"
@@ -113,6 +113,34 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "code" : "promis-29-pain-intensity",
     "display" : "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
+  },
+  {
+    "code" : "promis-29-physical-function-raw",
+    "display" : "PROMIS-29 Physical Function Raw Score"
+  },
+  {
+    "code" : "promis-29-anxiety-raw",
+    "display" : "PROMIS-29 Anxiety Raw Score"
+  },
+  {
+    "code" : "promis-29-depression-raw",
+    "display" : "PROMIS-29 Depression Raw Score"
+  },
+  {
+    "code" : "promis-29-fatigue-raw",
+    "display" : "PROMIS-29 Fatigue Raw Score"
+  },
+  {
+    "code" : "promis-29-sleep-disturbance-raw",
+    "display" : "PROMIS-29 Sleep Disturbance Raw Score"
+  },
+  {
+    "code" : "promis-29-social-function-raw",
+    "display" : "PROMIS-29 Ability to Participate in Social Roles and Activities Raw Score"
+  },
+  {
+    "code" : "promis-29-pain-interference-raw",
+    "display" : "PROMIS-29 Pain Interference Raw Score"
   },
   {
     "code" : "promis-cognitive-function-sf4a-raw",
@@ -213,6 +241,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "code" : "whodas12-simple-sum",
     "display" : "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
+  },
+  {
+    "code" : "midos2-symptom-sum",
+    "display" : "MIDOS2 Symptom Sum Score (0-33)"
   },
   {
     "code" : "proctcae-composite-grade",

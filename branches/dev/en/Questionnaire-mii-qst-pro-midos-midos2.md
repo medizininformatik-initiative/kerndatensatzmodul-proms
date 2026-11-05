@@ -82,7 +82,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO MIDOS2",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -450,6 +450,59 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "string",
     "required" : false
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+      "valueExpression" : {
+        "name" : "midos2SymptomSum",
+        "language" : "text/fhirpath",
+        "expression" : "%symptomSumScore"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+      "valueCoding" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{score}"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }
+    }],
+    "linkId" : "midos2-score-symptom-sum",
+    "code" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "midos2-symptom-sum",
+      "display" : "MIDOS2 Symptom Sum Score (0-33)"
+    }],
+    "prefix" : "Summe",
+    "text" : "MIDOS2 Symptomsumme (0-33)",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "en"
+        },
+        {
+          "url" : "content",
+          "valueString" : "MIDOS2 symptom sum score (0-33)"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "decimal",
+    "readOnly" : true
   }]
 }
 

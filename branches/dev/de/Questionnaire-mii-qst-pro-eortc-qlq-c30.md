@@ -73,7 +73,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:04:59+00:00",
+  "date" : "2026-11-05T07:07:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -892,7 +892,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
+          "expression" : "((((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
         }
       },
       {
@@ -922,7 +922,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
+          "expression" : "((((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
         }
       },
       {
@@ -952,7 +952,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
+          "expression" : "((((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
         }
       },
       {
@@ -1162,7 +1162,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
         "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
         "valueExpression" : {
           "language" : "text/fhirpath",
-          "expression" : "(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
+          "expression" : "((((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
         }
       },
       {
