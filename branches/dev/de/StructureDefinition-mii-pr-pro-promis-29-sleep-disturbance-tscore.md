@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "title" : "MII PR PRO PROMIS-29 Sleep Disturbance T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T07:07:52+00:00",
+  "date" : "2026-11-05T07:26:44+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
