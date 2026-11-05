@@ -12,7 +12,7 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code.coding[loinc] = $LNC#71972-4 "PROMIS-10 Global Physical Health score"
+* code.coding[loinc] = $LNC#71972-4 "PROMIS-10 Global Physical Health (GPH) score"
 * code.coding[mii] = $mii-cs-pro-score-catalogue#promis-global-health-physical-raw "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false
@@ -34,7 +34,7 @@ Usage: #definition
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint)
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code.coding[loinc] = $LNC#71970-8 "PROMIS-10 Global Mental Health score"
+* code.coding[loinc] = $LNC#71970-8 "PROMIS-10 Global Mental Health (GMH) score"
 * code.coding[mii] = $mii-cs-pro-score-catalogue#promis-global-health-mental-raw "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
 * permittedDataType = #Quantity
 * multipleResultsAllowed = false

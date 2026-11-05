@@ -64,13 +64,15 @@ function pickAnswer(it) {
     if (!c && CS[inc.system]) c = flat(CS[inc.system].concept)[1] ?? flat(CS[inc.system].concept)[0];
     return c ? { valueCoding: { system: inc.system, code: c.code, display: c.display } } : null;
   }
+  // Integer-Items ohne Optionen (z. B. NRS 0-10 wie promis-global07): ein Wert im Wertebereich
+  if (it.type === 'integer' && !it.readOnly) return { valueInteger: 1 };
   return null;
 }
 
 function buildResponse(q) {
   const groups = new Map(); const contained = new Map();
   for (const { it, parent } of walk(q.item)) {
-    if (!['choice', 'open-choice'].includes(it.type)) continue;
+    if (!['choice', 'open-choice', 'integer'].includes(it.type)) continue;
     const a = pickAnswer(it); if (!a) continue;
     const key = parent?.linkId ?? '(root)';
     if (!groups.has(key)) groups.set(key, parent ? { linkId: key, item: [] } : { item: [] });

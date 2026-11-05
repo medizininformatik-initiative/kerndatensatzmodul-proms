@@ -33,7 +33,7 @@
 // Umkodierungen: Global07 (NRS 0–10): 0→5, 1–3→4, 4–6→3, 7–9→2, 10→1; Global08 (None…Very
 // severe): 5…1; Global10 (Never…Always): 5…1. Global01 und Global09 gehen in keinen Score ein
 // (Einzelindikatoren). Die Gewichte an den Optionen sind bereits die UMKODIERTEN Werte, so dass
-// `.weight().sum()` den Rohwert liefert (Global07 als choice mit Integer-Optionen 0-10 und umkodierten Gewichten).
+// `.weight().sum()` den Rohwert liefert; Global07 ist ein Integer-Item 0-10, die Umkodierung steht in der gphRaw-Variable.
 // T-Scores (LOINC 71971-6 GPH, 71969-0 GMH) werden NICHT im Questionnaire berechnet: die
 // Umrechnungstabellen sind hier nicht verifiziert hinterlegt; Umsetzung als CQL-Library analog
 // PROMIS-29 (Bead 6yu), sobald die offizielle Tabelle vorliegt. Rohwert nur bei vollständig
@@ -68,7 +68,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "gphRaw"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "iif(%resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.value.weight().sum(), {})"
+* extension[=].valueExpression.expression = "iif(%resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global0[368]$')).answer.value.weight().sum() + %resource.item.where(linkId = 'promis-global07').answer.value.select(iif($this = 0, 5, iif($this <= 3, 4, iif($this <= 6, 3, iif($this <= 9, 2, 1))))).sum(), {})"
 
 // Variable: Global Mental Health raw score (Global02 + Global04 + Global05 + Global10r), 4-20
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
@@ -88,7 +88,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "Wie würden Sie Ihren Gesundheitszustand insgesamt beschreiben?"
 * item[=] insert WeightedOptionIntl($LNC, LA9206-9, Excellent, Ausgezeichnet, 5)
-* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very good, Sehr gut, 4)
+* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very Good, Sehr gut, 4)
 * item[=] insert WeightedOptionIntl($LNC, LA8967-7, Good, Gut, 3)
 * item[=] insert WeightedOptionIntl($LNC, LA8968-5, Fair, Einigermaßen, 2)
 * item[=] insert WeightedOptionIntl($LNC, LA8969-3, Poor, Schlecht, 1)
@@ -105,7 +105,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "content"
 * item[=].text.extension[=].extension[=].valueString = "Wie würden Sie Ihre Lebensqualität insgesamt beschreiben?"
 * item[=] insert WeightedOptionIntl($LNC, LA9206-9, Excellent, Ausgezeichnet, 5)
-* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very good, Sehr gut, 4)
+* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very Good, Sehr gut, 4)
 * item[=] insert WeightedOptionIntl($LNC, LA8967-7, Good, Gut, 3)
 * item[=] insert WeightedOptionIntl($LNC, LA8968-5, Fair, Einigermaßen, 2)
 * item[=] insert WeightedOptionIntl($LNC, LA8969-3, Poor, Schlecht, 1)
@@ -117,7 +117,7 @@ Usage: #definition
 * item[=].code = $LNC#61579-9 "In general, how would you rate your physical health [PROMIS]"
 * item[=].text = "In general, how would you rate your physical health?"
 * item[=] insert WeightedOptionIntl($LNC, LA9206-9, Excellent, Ausgezeichnet, 5)
-* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very good, Sehr gut, 4)
+* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very Good, Sehr gut, 4)
 * item[=] insert WeightedOptionIntl($LNC, LA8967-7, Good, Gut, 3)
 * item[=] insert WeightedOptionIntl($LNC, LA8968-5, Fair, Einigermaßen, 2)
 * item[=] insert WeightedOptionIntl($LNC, LA8969-3, Poor, Schlecht, 1)
@@ -129,7 +129,7 @@ Usage: #definition
 * item[=].code = $LNC#61580-7 "In general, how would you rate your mental health, including your mood and your ability to think [PROMIS]"
 * item[=].text = "In general, how would you rate your mental health, including your mood and your ability to think?"
 * item[=] insert WeightedOptionIntl($LNC, LA9206-9, Excellent, Ausgezeichnet, 5)
-* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very good, Sehr gut, 4)
+* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very Good, Sehr gut, 4)
 * item[=] insert WeightedOptionIntl($LNC, LA8967-7, Good, Gut, 3)
 * item[=] insert WeightedOptionIntl($LNC, LA8968-5, Fair, Einigermaßen, 2)
 * item[=] insert WeightedOptionIntl($LNC, LA8969-3, Poor, Schlecht, 1)
@@ -141,7 +141,7 @@ Usage: #definition
 * item[=].code = $LNC#61581-5 "In general, how would you rate your satisfaction with you social activities and relationships [PROMIS]"
 * item[=].text = "In general, how would you rate your satisfaction with your social activities and relationships?"
 * item[=] insert WeightedOptionIntl($LNC, LA9206-9, Excellent, Ausgezeichnet, 5)
-* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very good, Sehr gut, 4)
+* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very Good, Sehr gut, 4)
 * item[=] insert WeightedOptionIntl($LNC, LA8967-7, Good, Gut, 3)
 * item[=] insert WeightedOptionIntl($LNC, LA8968-5, Fair, Einigermaßen, 2)
 * item[=] insert WeightedOptionIntl($LNC, LA8969-3, Poor, Schlecht, 1)
@@ -153,7 +153,7 @@ Usage: #definition
 * item[=].code = $LNC#61585-6 "In general, please rate how well you carry out your usual social activities and roles [PROMIS]"
 * item[=].text = "In general, please rate how well you carry out your usual social activities and roles. (This includes activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)"
 * item[=] insert WeightedOptionIntl($LNC, LA9206-9, Excellent, Ausgezeichnet, 5)
-* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very good, Sehr gut, 4)
+* item[=] insert WeightedOptionIntl($LNC, LA13913-1, Very Good, Sehr gut, 4)
 * item[=] insert WeightedOptionIntl($LNC, LA8967-7, Good, Gut, 3)
 * item[=] insert WeightedOptionIntl($LNC, LA8968-5, Fair, Einigermaßen, 2)
 * item[=] insert WeightedOptionIntl($LNC, LA8969-3, Poor, Schlecht, 1)
@@ -205,11 +205,11 @@ Usage: #definition
 * item[=] insert WeightedOption($LNC, LA13958-6, Very severe, 1)
 
 // ---- Global07: pain intensity NRS 0-10 (GPH) ----
-// Modelled as choice with integer options 0-10 so that the v1.2 recoding (0→5, 1-3→4, 4-6→3,
-// 7-9→2, 10→1) lives as itemWeight on the options and `.weight().sum()` yields the raw score.
-// The response datatype stays valueInteger — identical to promis-global07 in PROMIS-29.
+// Integer item 0-10, identical to promis-global07 in PROMIS-29. The Questionnaire profile allows
+// only Coding answerOptions, so the v1.2 recoding (0→5, 1-3→4, 4-6→3, 7-9→2, 10→1) is applied in
+// the gphRaw variable instead of itemWeight on options.
 * item[+].linkId = "promis-global07"
-* item[=].type = #choice
+* item[=].type = #integer
 * item[=].prefix = "Global07"
 * item[=].code = $LNC#61583-1 "How would you rate your pain on average in past 7 days [PROMIS]"
 * item[=].text = "How would you rate your pain on average?"
@@ -220,49 +220,24 @@ Usage: #definition
 * item[=].text.extension[=].extension[=].valueString = "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"
 * item[=].extension[+].url = $hl7-questionnaire-unit
 * item[=].extension[=].valueCoding = $UCUM#{score} "{score}"
-* item[=].answerOption[+].valueInteger = 0
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 5
-* item[=].answerOption[+].valueInteger = 1
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].answerOption[+].valueInteger = 2
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].answerOption[+].valueInteger = 3
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 4
-* item[=].answerOption[+].valueInteger = 4
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].answerOption[+].valueInteger = 5
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].answerOption[+].valueInteger = 6
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 3
-* item[=].answerOption[+].valueInteger = 7
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].answerOption[+].valueInteger = 8
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].answerOption[+].valueInteger = 9
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 2
-* item[=].answerOption[+].valueInteger = 10
-* item[=].answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* item[=].answerOption[=].extension[=].valueDecimal = 1
+* item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
+* item[=].extension[=].valueInteger = 0
+* item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/maxValue"
+* item[=].extension[=].valueInteger = 10
 
-// ===== SCORES =====
 
 // Global Physical Health raw score (4-20)
 * item[+].linkId = "promis-global-health-score-physical-raw"
 * item[=].type = #decimal
 * item[=].prefix = "GPH"
-* item[=].code[+] = $LNC#71972-4 "PROMIS-10 Global Physical Health score"
+* item[=].code[+] = $LNC#71972-4 "PROMIS-10 Global Physical Health (GPH) score"
 * item[=].code[+] = $mii-cs-pro-score-catalogue#promis-global-health-physical-raw "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
 * item[=].text = "Global Physical Health raw score (4-20)"
+* item[=].text.extension[+].url = $hl7-translation
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Rohwert Global Physical Health (4-20)"
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.name = "Scoreberechnung"
@@ -279,9 +254,14 @@ Usage: #definition
 * item[+].linkId = "promis-global-health-score-mental-raw"
 * item[=].type = #decimal
 * item[=].prefix = "GMH"
-* item[=].code[+] = $LNC#71970-8 "PROMIS-10 Global Mental Health score"
+* item[=].code[+] = $LNC#71970-8 "PROMIS-10 Global Mental Health (GMH) score"
 * item[=].code[+] = $mii-cs-pro-score-catalogue#promis-global-health-mental-raw "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
 * item[=].text = "Global Mental Health raw score (4-20)"
+* item[=].text.extension[+].url = $hl7-translation
+* item[=].text.extension[=].extension[+].url = "lang"
+* item[=].text.extension[=].extension[=].valueCode = #de
+* item[=].text.extension[=].extension[+].url = "content"
+* item[=].text.extension[=].extension[=].valueString = "Rohwert Global Mental Health (4-20)"
 * item[=].readOnly = true
 * item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].extension[=].valueExpression.name = "Scoreberechnung"
