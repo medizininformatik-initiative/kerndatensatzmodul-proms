@@ -42,7 +42,7 @@ DGP-4-stufige Severity-Skala (keine, leichte, mittlere, starke) — wird für di
   "title" : "MII VS PRO MIDOS2 DGP-Severity-Skala",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-05T06:08:05+00:00",
+  "date" : "2026-11-05T06:28:20+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

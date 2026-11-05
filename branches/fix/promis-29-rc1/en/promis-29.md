@@ -8,7 +8,7 @@
 
 ### Overview
 
-**Status**: Fully implemented **Version**: 2027.0.0-rc.1 **Last Updated**: 2026-11-04
+**Status**: Fully implemented (items, both scoring channels, review framework) **Version**: 2027.0.0-rc.1 **Last Updated**: 2026-11-04
 
 The PROMIS-29 is a comprehensive instrument for assessing health-related quality of life across 7 domains plus pain intensity.
 
@@ -59,22 +59,29 @@ Questionnaire/mii-qst-pro-promis-29
 
 #### Score Calculation
 
-Each domain (except Pain Intensity) is calculated as a T-Score:
+Every domain yields a **raw score** (sum of the four item weights, range 4–20) and a **T-score** (lookup from the official PROMIS-29 Profile v2.1 scoring-manual appendix). Pain Intensity is the single 0–10 item. The raw sums are FHIR `variable`s on the Questionnaire; the score items reference them:
 
 ```
-// FHIRPath
-// Example: Depression Domain
-%rawScore = %resource.item
-  .where(linkId.matches('^promis-eddep(04|05|06|29)$'))
-  .answer.value.weight()
-  .sum()
+// variable anxietyRaw (one per domain)
+%resource.item.item
+  .where(linkId.matches('^promis-edanx(01|40|41|53)$'))
+  .answer.value.weight().sum()
 
-// T-Score Lookup (simplified)
-%tScore = iif(%rawScore = 4, 41.0,
-          iif(%rawScore = 5, 49.0,
-          iif(%rawScore = 6, 52.5, ...)))
+// item promis-29-anxiety-raw
+%anxietyRaw
+
+// item promis-29-anxiety-tscore — count guard + generated lookup table
+iif(%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.count() = 4,
+    iif(%anxietyRaw=4, 40.3, iif(%anxietyRaw=5, 48.0, … iif(%anxietyRaw=20, 81.6, {}))), {})
 
 ```
+
+Rules that matter for implementers:
+
+* Weights are `itemWeight` extensions on the `answerOption`s (LOINC answer codes); Social Roles and Sleep items are reverse-keyed (e.g. Never = 5 … Always = 1), the official polarity.
+* A T-score is produced **only for a fully answered short form** (count guard); a missing item yields no T-score rather than a wrong one.
+* The seven T-score tables are **generated** from `scripts/data/promis29-t-score-tables.csv` (`scripts/generate-promis29-tscores.py`), never typed into the FSH.
+* 22 scoring scenarios (floor, ceiling, asymmetric, partial response per domain) run as unit tests, TestScripts and server end-to-end tests — see the [PROM review page](reviews/promis-29.md) for the item-by-item view with expected vs. computed values.
 
 #### Two scoring channels (FHIRPath and CQL)
 
@@ -111,28 +118,31 @@ All 43 items (29 questions, 14 score items) and all group headers follow this on
 
 ### Implementation Notes
 
-#### Variable-Based Architecture
+#### Variable-based architecture
 
-The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:
-
-```
-// FSH
-* extension[variable][+].name = "promisDepRaw"
-* extension[variable][=].expression = "[sum of depression items]"
-
-// Raw Score Item
-* item[dep-raw].calculatedExpression = "%promisDepRaw"
-
-// T-Score Item
-* item[dep-tscore].calculatedExpression = "iif(%promisDepRaw = 4, 41.0, ...)"
+Raw sums live once as Questionnaire-level `variable` extensions and are referenced by both score items of a domain, which avoids circular references between calculated items (a calculated item has no `answer.value` to read):
 
 ```
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "anxietyRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.weight().sum()"
 
-#### Known Limitations
+* item[=].item[+].linkId = "promis-29-anxiety-raw"
+* item[=].item[=].extension[calculatedExpression].valueExpression.expression = "%anxietyRaw"
+* item[=].item[+].linkId = "promis-29-anxiety-tscore"
+* item[=].item[=].extension[calculatedExpression].valueExpression.expression = "iif(… %anxietyRaw=4, 40.3, …)"
 
-1. **Item IDs**: Currently MII-specific (`promis-pfa11`), not LOINC-conformant
-1. **Validation Study Alignment**: IDs are based on German validation studies
-1. **Partial Responses**: No handling of missing items
+```
+
+#### Item identifiers
+
+Item `linkId`s follow the PROMIS item IDs of the validation studies (`promis-pfa11`, `promis-edanx01`, `promis-srpper23-caps`), not the LOINC codes; the LOINC item code sits in `item.code`. The same `linkId`s are used wherever an item recurs (PROMIS-16, PROMIS Depression SF 4a), which is what makes cross-instrument scoring possible.
+
+#### Known limitations
+
+1. **Partial responses**: a domain with a missing item yields its raw sum of the answered items but no T-score. PROMIS' pro-rating rules for short forms are intentionally not applied; use the item-bank CAT or the CQL channel for imputation strategies.
+1. **Group nesting is not optional**: QuestionnaireResponses must keep the domain groups (`PROMIS-29.Anxiety`→ items), because the score expressions address`item.item`and the domain headers carry part of the question meaning.
 
 ### Example QuestionnaireResponse
 
