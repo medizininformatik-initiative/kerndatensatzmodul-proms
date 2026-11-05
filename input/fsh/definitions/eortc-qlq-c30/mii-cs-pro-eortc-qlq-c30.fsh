@@ -8,6 +8,8 @@ Description: "Response scale for EORTC QLQ-C30 questionnaire items with multilin
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
+// Property-Deklaration mit uri (Beads g3b.18); die Konzept-Properties standen bisher ohne Deklaration.
+* insert ItemWeightProperty
 
 // Standard 4-point scale for most items (Q1-5, Q8-28)
 * #not-at-all "Not at all"

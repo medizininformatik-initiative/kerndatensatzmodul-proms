@@ -340,7 +340,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((((%resource.item.where(linkId='qlq-c30-q10' or linkId='qlq-c30-q12' or linkId='qlq-c30-q18').answer.value.weight().sum()) / 3) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -351,7 +351,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((((%resource.item.where(linkId='qlq-c30-q14' or linkId='qlq-c30-q15').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -362,7 +362,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((((%resource.item.where(linkId='qlq-c30-q09' or linkId='qlq-c30-q19').answer.value.weight().sum()) / 2) - 1) / 3) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 
@@ -441,7 +441,7 @@ Usage: #definition
 * item[=].item[=].readOnly = true
 * item[=].item[=].extension[+].url = $sdc-questionnaire-calculated-expression
 * item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].item[=].extension[=].valueExpression.expression = "(((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
+* item[=].item[=].extension[=].valueExpression.expression = "((((%resource.item.where(linkId='qlq-c30-q29' or linkId='qlq-c30-q30').answer.value.weight().sum()) / 2) - 1) / 6) * 100"
 * item[=].item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].item[=].extension[=].valueBoolean = true
 

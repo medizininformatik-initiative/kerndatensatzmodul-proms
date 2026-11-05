@@ -83,7 +83,7 @@
                 }
               ]
             },
-            "code": "1"
+            "code": "MO-1"
           }
         },
         {
@@ -107,7 +107,7 @@
                 }
               ]
             },
-            "code": "2"
+            "code": "MO-2"
           }
         },
         {
@@ -131,7 +131,7 @@
                 }
               ]
             },
-            "code": "3"
+            "code": "MO-3"
           }
         },
         {
@@ -155,7 +155,7 @@
                 }
               ]
             },
-            "code": "4"
+            "code": "MO-4"
           }
         },
         {
@@ -179,33 +179,8 @@
                 }
               ]
             },
-            "code": "5"
+            "code": "MO-5"
           }
-        },
-        {
-          "valueCoding": {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-            "display": "Fehlender Wert",
-            "_display": {
-              "extension": [
-                {
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "en"
-                    },
-                    {
-                      "url": "content",
-                      "valueString": "Missing value"
-                    }
-                  ],
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                }
-              ]
-            },
-            "code": "9"
-          },
-          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q01-MO",
@@ -254,7 +229,7 @@
                 }
               ]
             },
-            "code": "1"
+            "code": "SC-1"
           }
         },
         {
@@ -278,7 +253,7 @@
                 }
               ]
             },
-            "code": "2"
+            "code": "SC-2"
           }
         },
         {
@@ -302,7 +277,7 @@
                 }
               ]
             },
-            "code": "3"
+            "code": "SC-3"
           }
         },
         {
@@ -326,7 +301,7 @@
                 }
               ]
             },
-            "code": "4"
+            "code": "SC-4"
           }
         },
         {
@@ -350,33 +325,8 @@
                 }
               ]
             },
-            "code": "5"
+            "code": "SC-5"
           }
-        },
-        {
-          "valueCoding": {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-            "display": "Fehlender Wert",
-            "_display": {
-              "extension": [
-                {
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "en"
-                    },
-                    {
-                      "url": "content",
-                      "valueString": "Missing value"
-                    }
-                  ],
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                }
-              ]
-            },
-            "code": "9"
-          },
-          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q02-SC",
@@ -425,7 +375,7 @@
                 }
               ]
             },
-            "code": "1"
+            "code": "UA-1"
           }
         },
         {
@@ -449,7 +399,7 @@
                 }
               ]
             },
-            "code": "2"
+            "code": "UA-2"
           }
         },
         {
@@ -473,7 +423,7 @@
                 }
               ]
             },
-            "code": "3"
+            "code": "UA-3"
           }
         },
         {
@@ -497,7 +447,7 @@
                 }
               ]
             },
-            "code": "4"
+            "code": "UA-4"
           }
         },
         {
@@ -521,33 +471,8 @@
                 }
               ]
             },
-            "code": "5"
+            "code": "UA-5"
           }
-        },
-        {
-          "valueCoding": {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-            "display": "Fehlender Wert",
-            "_display": {
-              "extension": [
-                {
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "en"
-                    },
-                    {
-                      "url": "content",
-                      "valueString": "Missing value"
-                    }
-                  ],
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                }
-              ]
-            },
-            "code": "9"
-          },
-          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q03-UA",
@@ -596,7 +521,7 @@
                 }
               ]
             },
-            "code": "1"
+            "code": "PD-1"
           }
         },
         {
@@ -620,7 +545,7 @@
                 }
               ]
             },
-            "code": "2"
+            "code": "PD-2"
           }
         },
         {
@@ -644,7 +569,7 @@
                 }
               ]
             },
-            "code": "3"
+            "code": "PD-3"
           }
         },
         {
@@ -668,7 +593,7 @@
                 }
               ]
             },
-            "code": "4"
+            "code": "PD-4"
           }
         },
         {
@@ -692,33 +617,8 @@
                 }
               ]
             },
-            "code": "5"
+            "code": "PD-5"
           }
-        },
-        {
-          "valueCoding": {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-            "display": "Fehlender Wert",
-            "_display": {
-              "extension": [
-                {
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "en"
-                    },
-                    {
-                      "url": "content",
-                      "valueString": "Missing value"
-                    }
-                  ],
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                }
-              ]
-            },
-            "code": "9"
-          },
-          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q04-PD",
@@ -767,7 +667,7 @@
                 }
               ]
             },
-            "code": "1"
+            "code": "AD-1"
           }
         },
         {
@@ -791,7 +691,7 @@
                 }
               ]
             },
-            "code": "2"
+            "code": "AD-2"
           }
         },
         {
@@ -815,7 +715,7 @@
                 }
               ]
             },
-            "code": "3"
+            "code": "AD-3"
           }
         },
         {
@@ -839,7 +739,7 @@
                 }
               ]
             },
-            "code": "4"
+            "code": "AD-4"
           }
         },
         {
@@ -863,33 +763,8 @@
                 }
               ]
             },
-            "code": "5"
+            "code": "AD-5"
           }
-        },
-        {
-          "valueCoding": {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-            "display": "Fehlender Wert",
-            "_display": {
-              "extension": [
-                {
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "en"
-                    },
-                    {
-                      "url": "content",
-                      "valueString": "Missing value"
-                    }
-                  ],
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
-                }
-              ]
-            },
-            "code": "9"
-          },
-          "initialSelected": true
         }
       ],
       "linkId": "euroqol-eq5d5l-q05-AD",
@@ -949,7 +824,7 @@
         {
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
+            "expression": "%resource.item.where(linkId.matches('^euroqol-eq5d5l-q0[1-5]-')).answer.value.weight().aggregate($total & $this.toString(), '')"
           },
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
         }

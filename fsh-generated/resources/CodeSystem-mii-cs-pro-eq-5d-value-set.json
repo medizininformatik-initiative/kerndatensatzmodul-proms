@@ -15,6 +15,20 @@
         {
           "code": "MO-1",
           "display": "Ich habe keine Probleme herumzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 1
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -25,21 +39,25 @@
               },
               "value": "I have no problems in walking about"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0
-            }
           ]
         },
         {
           "code": "MO-2",
           "display": "Ich habe leichte Probleme herumzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 2
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.026
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.096
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -50,21 +68,25 @@
               },
               "value": "I have slight problems in walking about"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.026
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.096
-            }
           ]
         },
         {
           "code": "MO-3",
           "display": "Ich habe mäßige Probleme herumzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 3
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.042
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.122
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -75,21 +97,25 @@
               },
               "value": "I have moderate problems in walking about"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.042
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.122
-            }
           ]
         },
         {
           "code": "MO-4",
           "display": "Ich habe große Probleme herumzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 4
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.139
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.237
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -100,21 +126,25 @@
               },
               "value": "I have severe problems in walking about"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.139
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.237
-            }
           ]
         },
         {
           "code": "MO-5",
           "display": "Ich bin nicht in der Lage herumzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 5
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.224
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.322
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -124,16 +154,6 @@
                 "display": "Synonym"
               },
               "value": "I am unable to walk about"
-            }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.224
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.322
             }
           ]
         }
@@ -157,6 +177,20 @@
         {
           "code": "SC-1",
           "display": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 1
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -167,21 +201,25 @@
               },
               "value": "I have no problems washing or dressing myself"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0
-            }
           ]
         },
         {
           "code": "SC-2",
           "display": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 2
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.05
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.089
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -192,21 +230,25 @@
               },
               "value": "I have slight problems washing or dressing myself"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.05
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.089
-            }
           ]
         },
         {
           "code": "SC-3",
           "display": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 3
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.056
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.107
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -217,21 +259,25 @@
               },
               "value": "I have moderate problems washing or dressing myself"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.056
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.107
-            }
           ]
         },
         {
           "code": "SC-4",
           "display": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 4
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.169
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.22
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -242,21 +288,25 @@
               },
               "value": "I have severe problems washing or dressing myself"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.169
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.22
-            }
           ]
         },
         {
           "code": "SC-5",
           "display": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 5
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.26
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.261
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -266,16 +316,6 @@
                 "display": "Synonym"
               },
               "value": "I am unable to wash or dress myself"
-            }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.26
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.261
             }
           ]
         }
@@ -299,6 +339,20 @@
         {
           "code": "UA-1",
           "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 1
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -309,21 +363,25 @@
               },
               "value": "I have no problems doing my usual activities"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0
-            }
           ]
         },
         {
           "code": "UA-2",
           "display": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 2
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.036
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.068
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -334,21 +392,25 @@
               },
               "value": "I have slight problems doing my usual activities"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.036
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.068
-            }
           ]
         },
         {
           "code": "UA-3",
           "display": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 3
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.049
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.101
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -359,21 +421,25 @@
               },
               "value": "I have moderate problems doing my usual activities"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.049
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.101
-            }
           ]
         },
         {
           "code": "UA-4",
           "display": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 4
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.129
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.255
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -384,21 +450,25 @@
               },
               "value": "I have severe problems doing my usual activities"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.129
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.255
-            }
           ]
         },
         {
           "code": "UA-5",
           "display": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 5
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.209
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.255
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -408,16 +478,6 @@
                 "display": "Synonym"
               },
               "value": "I am unable to do my usual activities"
-            }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.209
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.255
             }
           ]
         }
@@ -441,6 +501,20 @@
         {
           "code": "PD-1",
           "display": "Ich habe keine Schmerzen oder Beschwerden",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 1
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -451,21 +525,25 @@
               },
               "value": "I have no pain or discomfort"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0
-            }
           ]
         },
         {
           "code": "PD-2",
           "display": "Ich habe leichte Schmerzen oder Beschwerden",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 2
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.057
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.06
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -476,21 +554,25 @@
               },
               "value": "I have slight pain or discomfort"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.057
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.06
-            }
           ]
         },
         {
           "code": "PD-3",
           "display": "Ich habe mäßige Schmerzen oder Beschwerden",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 3
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.109
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.098
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -501,21 +583,25 @@
               },
               "value": "I have moderate pain or discomfort"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.109
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.098
-            }
           ]
         },
         {
           "code": "PD-4",
           "display": "Ich habe starke Schmerzen oder Beschwerden",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 4
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.404
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.318
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -526,21 +612,25 @@
               },
               "value": "I have severe pain or discomfort"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.404
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.318
-            }
           ]
         },
         {
           "code": "PD-5",
           "display": "Ich habe extreme Schmerzen oder Beschwerden",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 5
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.612
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.414
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -550,16 +640,6 @@
                 "display": "Synonym"
               },
               "value": "I have extreme pain or discomfort"
-            }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.612
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.414
             }
           ]
         }
@@ -583,6 +663,20 @@
         {
           "code": "AD-1",
           "display": "Ich bin nicht ängstlich oder deprimiert",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 1
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -593,21 +687,25 @@
               },
               "value": "I am not anxious or depressed"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0
-            }
           ]
         },
         {
           "code": "AD-2",
           "display": "Ich bin ein wenig ängstlich oder deprimiert",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 2
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.03
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.057
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -618,21 +716,25 @@
               },
               "value": "I am slightly anxious or depressed"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.03
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.057
-            }
           ]
         },
         {
           "code": "AD-3",
           "display": "Ich bin mäßig ängstlich oder deprimiert",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 3
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.082
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.123
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -643,21 +745,25 @@
               },
               "value": "I am moderately anxious or depressed"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.082
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.123
-            }
           ]
         },
         {
           "code": "AD-4",
           "display": "Ich bin sehr ängstlich oder deprimiert",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 4
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.244
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.299
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -668,21 +774,25 @@
               },
               "value": "I am severely anxious or depressed"
             }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.244
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.299
-            }
           ]
         },
         {
           "code": "AD-5",
           "display": "Ich bin extrem ängstlich oder deprimiert",
+          "property": [
+            {
+              "code": "itemWeight",
+              "valueDecimal": 5
+            },
+            {
+              "code": "eq-5d-vs-coefficient-de-de",
+              "valueDecimal": 0.356
+            },
+            {
+              "code": "eq-5d-vs-coefficient-en-us",
+              "valueDecimal": 0.321
+            }
+          ],
           "designation": [
             {
               "language": "en-US",
@@ -692,16 +802,6 @@
                 "display": "Synonym"
               },
               "value": "I am extremely anxious or depressed"
-            }
-          ],
-          "property": [
-            {
-              "code": "eq-5d-vs-coefficient-de-de",
-              "valueDecimal": 0.356
-            },
-            {
-              "code": "eq-5d-vs-coefficient-en-us",
-              "valueDecimal": 0.321
             }
           ]
         }
@@ -968,6 +1068,12 @@
   "experimental": true,
   "hierarchyMeaning": "grouped-by",
   "property": [
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "Numerical weight for SDC calculatedExpression scoring via .weight()",
+      "type": "decimal"
+    },
     {
       "code": "eq-5d-vs-coefficient-de-de",
       "description": "EQ-5D ValueSet Coefficient Germany",

@@ -10,27 +10,6 @@
     {
       "item": [
         {
-          "linkId": "PROMIS-29.PhysicalFunction.Description",
-          "text": "Sind Sie zu folgenden Tätigkeiten imstande:",
-          "_text": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "de"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "Sind Sie zu folgenden Tätigkeiten imstande:"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        },
-        {
           "answer": [
             {
               "valueCoding": {
@@ -58,7 +37,7 @@
             }
           ],
           "linkId": "promis-pfa11",
-          "text": "Are you able to do chores such as vacuuming or yard work [PROMIS]",
+          "text": "Are you able to do chores such as vacuuming or yard work?",
           "_text": {
             "extension": [
               {
@@ -105,7 +84,7 @@
             }
           ],
           "linkId": "promis-pfa21",
-          "text": "Are you able to go up and down stairs at a normal pace [PROMIS]",
+          "text": "Are you able to go up and down stairs at a normal pace?",
           "_text": {
             "extension": [
               {
@@ -152,7 +131,7 @@
             }
           ],
           "linkId": "promis-pfa23",
-          "text": "Are you able to go for a walk of at least 15 minutes [PROMIS]",
+          "text": "Are you able to go for a walk of at least 15 minutes?",
           "_text": {
             "extension": [
               {
@@ -199,7 +178,7 @@
             }
           ],
           "linkId": "promis-pfa53",
-          "text": "Are you able to run errands and shop [PROMIS]",
+          "text": "Are you able to run errands and shop?",
           "_text": {
             "extension": [
               {
@@ -220,7 +199,7 @@
         }
       ],
       "linkId": "PROMIS-29.PhysicalFunction",
-      "text": "KÖRPERLICHE FUNKTION",
+      "text": "Physical Function",
       "_text": {
         "extension": [
           {
@@ -231,7 +210,7 @@
               },
               {
                 "url": "content",
-                "valueString": "KÖRPERLICHE FUNKTION"
+                "valueString": "Körperliche Funktion"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -243,7 +222,7 @@
       "item": [
         {
           "linkId": "PROMIS-29.Anxiety.Description",
-          "text": "In den letzten 7 Tagen:",
+          "text": "In the past 7 days…",
           "_text": {
             "extension": [
               {
@@ -290,7 +269,7 @@
             }
           ],
           "linkId": "promis-edanx01",
-          "text": "Ich fürchtete mich.",
+          "text": "I felt fearful.",
           "_text": {
             "extension": [
               {
@@ -337,7 +316,7 @@
             }
           ],
           "linkId": "promis-edanx40",
-          "text": "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.",
+          "text": "I found it hard to focus on anything other than my anxiety.",
           "_text": {
             "extension": [
               {
@@ -384,7 +363,7 @@
             }
           ],
           "linkId": "promis-edanx41",
-          "text": "Meine Sorgen haben mich überwältigt.",
+          "text": "My worries overwhelmed me.",
           "_text": {
             "extension": [
               {
@@ -431,7 +410,7 @@
             }
           ],
           "linkId": "promis-edanx53",
-          "text": "Ich fühlte mich unruhig.",
+          "text": "I felt uneasy.",
           "_text": {
             "extension": [
               {
@@ -452,7 +431,7 @@
         }
       ],
       "linkId": "PROMIS-29.Anxiety",
-      "text": "ANGST",
+      "text": "Anxiety",
       "_text": {
         "extension": [
           {
@@ -463,7 +442,7 @@
               },
               {
                 "url": "content",
-                "valueString": "ANGST"
+                "valueString": "Angst"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -475,7 +454,7 @@
       "item": [
         {
           "linkId": "PROMIS-29.Depression.Description",
-          "text": "In den letzten 7 Tagen:",
+          "text": "In the past 7 days…",
           "_text": {
             "extension": [
               {
@@ -522,7 +501,7 @@
             }
           ],
           "linkId": "promis-eddep04",
-          "text": "Ich fühlte mich wertlos.",
+          "text": "I felt worthless.",
           "_text": {
             "extension": [
               {
@@ -569,7 +548,7 @@
             }
           ],
           "linkId": "promis-eddep06",
-          "text": "Ich fühlte mich hilflos.",
+          "text": "I felt helpless.",
           "_text": {
             "extension": [
               {
@@ -616,7 +595,7 @@
             }
           ],
           "linkId": "promis-eddep29",
-          "text": "Ich fühlte mich niedergeschlagen.",
+          "text": "I felt depressed.",
           "_text": {
             "extension": [
               {
@@ -663,7 +642,7 @@
             }
           ],
           "linkId": "promis-eddep41",
-          "text": "Ich fühlte mich hoffnungslos.",
+          "text": "I felt hopeless.",
           "_text": {
             "extension": [
               {
@@ -684,7 +663,7 @@
         }
       ],
       "linkId": "PROMIS-29.Depression",
-      "text": "DEPRESSION",
+      "text": "Depression",
       "_text": {
         "extension": [
           {
@@ -695,7 +674,7 @@
               },
               {
                 "url": "content",
-                "valueString": "DEPRESSION"
+                "valueString": "Depression"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -707,7 +686,7 @@
       "item": [
         {
           "linkId": "PROMIS-29.Fatigue.Description",
-          "text": "In den letzten 7 Tagen:",
+          "text": "In the past 7 days…",
           "_text": {
             "extension": [
               {
@@ -754,7 +733,7 @@
             }
           ],
           "linkId": "promis-hi7",
-          "text": "Ich bin erschöpft.",
+          "text": "I feel fatigued.",
           "_text": {
             "extension": [
               {
@@ -801,7 +780,7 @@
             }
           ],
           "linkId": "promis-an3",
-          "text": "Es fällt mir schwer, etwas anzufangen, weil ich müde bin.",
+          "text": "I have trouble starting things because I am tired.",
           "_text": {
             "extension": [
               {
@@ -848,7 +827,7 @@
             }
           ],
           "linkId": "promis-fatexp41",
-          "text": "Wie ausgelaugt fühlten Sie sich im Allgemeinen?",
+          "text": "How run-down did you feel on average?",
           "_text": {
             "extension": [
               {
@@ -895,7 +874,7 @@
             }
           ],
           "linkId": "promis-fatexp40",
-          "text": "Wie erschöpft waren Sie im Allgemeinen?",
+          "text": "How fatigued were you on average?",
           "_text": {
             "extension": [
               {
@@ -916,7 +895,7 @@
         }
       ],
       "linkId": "PROMIS-29.Fatigue",
-      "text": "ERSCHÖPFUNG",
+      "text": "Fatigue",
       "_text": {
         "extension": [
           {
@@ -927,7 +906,7 @@
               },
               {
                 "url": "content",
-                "valueString": "ERSCHÖPFUNG"
+                "valueString": "Erschöpfung"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -939,7 +918,7 @@
       "item": [
         {
           "linkId": "PROMIS-29.Sleep.Description",
-          "text": "In den letzten 7 Tagen:",
+          "text": "In the past 7 days…",
           "_text": {
             "extension": [
               {
@@ -986,7 +965,7 @@
             }
           ],
           "linkId": "promis-sleep109",
-          "text": "Meine Schlafqualität war ...",
+          "text": "My sleep quality was...",
           "_text": {
             "extension": [
               {
@@ -1033,7 +1012,7 @@
             }
           ],
           "linkId": "promis-sleep116",
-          "text": "Mein Schlaf war erfrischend.",
+          "text": "My sleep was refreshing.",
           "_text": {
             "extension": [
               {
@@ -1080,7 +1059,7 @@
             }
           ],
           "linkId": "promis-sleep20",
-          "text": "Ich hatte Schlafprobleme.",
+          "text": "I had a problem with my sleep.",
           "_text": {
             "extension": [
               {
@@ -1127,7 +1106,7 @@
             }
           ],
           "linkId": "promis-sleep44",
-          "text": "Ich hatte Schwierigkeiten einzuschlafen.",
+          "text": "I had difficulty falling asleep.",
           "_text": {
             "extension": [
               {
@@ -1148,7 +1127,7 @@
         }
       ],
       "linkId": "PROMIS-29.Sleep",
-      "text": "SCHLAFSTÖRUNGEN",
+      "text": "Sleep Disturbance",
       "_text": {
         "extension": [
           {
@@ -1159,7 +1138,7 @@
               },
               {
                 "url": "content",
-                "valueString": "SCHLAFSTÖRUNGEN"
+                "valueString": "Schlafstörungen"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1169,27 +1148,6 @@
     },
     {
       "item": [
-        {
-          "linkId": "PROMIS-29.Social.Description",
-          "text": "In den letzten 7 Tagen:",
-          "_text": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "lang",
-                    "valueCode": "de"
-                  },
-                  {
-                    "url": "content",
-                    "valueString": "In den letzten 7 Tagen:"
-                  }
-                ],
-                "url": "http://hl7.org/fhir/StructureDefinition/translation"
-              }
-            ]
-          }
-        },
         {
           "answer": [
             {
@@ -1218,7 +1176,7 @@
             }
           ],
           "linkId": "promis-srpper23-caps",
-          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
+          "text": "I have trouble doing all of my usual work (include work at home).",
           "_text": {
             "extension": [
               {
@@ -1265,7 +1223,7 @@
             }
           ],
           "linkId": "promis-srpper11-caps",
-          "text": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.",
+          "text": "I have trouble doing all of my regular leisure activities with others.",
           "_text": {
             "extension": [
               {
@@ -1312,7 +1270,7 @@
             }
           ],
           "linkId": "promis-srpper18-caps",
-          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.",
+          "text": "I have trouble doing all of the family activities that I want to do.",
           "_text": {
             "extension": [
               {
@@ -1359,7 +1317,7 @@
             }
           ],
           "linkId": "promis-srpper46-caps",
-          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte.",
+          "text": "I have trouble doing all of the activities with friends that I want to do.",
           "_text": {
             "extension": [
               {
@@ -1380,7 +1338,7 @@
         }
       ],
       "linkId": "PROMIS-29.Social",
-      "text": "SOZIALE TEILHABE",
+      "text": "Ability to Participate in Social Roles and Activities",
       "_text": {
         "extension": [
           {
@@ -1391,7 +1349,7 @@
               },
               {
                 "url": "content",
-                "valueString": "SOZIALE TEILHABE"
+                "valueString": "Soziale Teilhabe"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1403,7 +1361,7 @@
       "item": [
         {
           "linkId": "PROMIS-29.PainInterference.Description",
-          "text": "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen...",
+          "text": "In the past 7 days…",
           "_text": {
             "extension": [
               {
@@ -1414,7 +1372,7 @@
                   },
                   {
                     "url": "content",
-                    "valueString": "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."
+                    "valueString": "In den letzten 7 Tagen:"
                   }
                 ],
                 "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1450,7 +1408,7 @@
             }
           ],
           "linkId": "promis-painin9",
-          "text": "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?",
+          "text": "How much did pain interfere with your day to day activities?",
           "_text": {
             "extension": [
               {
@@ -1497,7 +1455,7 @@
             }
           ],
           "linkId": "promis-painin22",
-          "text": "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?",
+          "text": "How much did pain interfere with work around the home?",
           "_text": {
             "extension": [
               {
@@ -1544,7 +1502,7 @@
             }
           ],
           "linkId": "promis-painin31",
-          "text": "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?",
+          "text": "How much did pain interfere with your ability to participate in social activities?",
           "_text": {
             "extension": [
               {
@@ -1591,7 +1549,7 @@
             }
           ],
           "linkId": "promis-painin34",
-          "text": "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?",
+          "text": "How much did pain interfere with your household chores?",
           "_text": {
             "extension": [
               {
@@ -1612,7 +1570,7 @@
         }
       ],
       "linkId": "PROMIS-29.PainInterference",
-      "text": "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG",
+      "text": "Pain Interference",
       "_text": {
         "extension": [
           {
@@ -1623,7 +1581,7 @@
               },
               {
                 "url": "content",
-                "valueString": "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"
+                "valueString": "Schmerzbedingte Beeinträchtigung"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1640,7 +1598,7 @@
             }
           ],
           "linkId": "promis-global07",
-          "text": "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?",
+          "text": "How would you rate your pain on average?",
           "_text": {
             "extension": [
               {
@@ -1661,7 +1619,7 @@
         }
       ],
       "linkId": "PROMIS-29.PainIntensity",
-      "text": "SCHMERZINTENSITÄT",
+      "text": "Pain Intensity",
       "_text": {
         "extension": [
           {
@@ -1672,7 +1630,7 @@
               },
               {
                 "url": "content",
-                "valueString": "SCHMERZINTENSITÄT"
+                "valueString": "Schmerzintensität"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1689,7 +1647,7 @@
             }
           ],
           "linkId": "promis-29-physical-function-raw",
-          "text": "PROMIS-29 Körperliche Funktion - Rohwert",
+          "text": "PROMIS-29 Physical Function - Raw Score",
           "_text": {
             "extension": [
               {
@@ -1715,7 +1673,7 @@
             }
           ],
           "linkId": "promis-29-physical-function-tscore",
-          "text": "PROMIS-29 Körperliche Funktion - T-Score",
+          "text": "PROMIS-29 Physical Function - T-Score",
           "_text": {
             "extension": [
               {
@@ -1741,7 +1699,7 @@
             }
           ],
           "linkId": "promis-29-anxiety-raw",
-          "text": "PROMIS-29 Angst - Rohwert",
+          "text": "PROMIS-29 Anxiety - Raw Score",
           "_text": {
             "extension": [
               {
@@ -1767,7 +1725,7 @@
             }
           ],
           "linkId": "promis-29-anxiety-tscore",
-          "text": "PROMIS-29 Angst - T-Score",
+          "text": "PROMIS-29 Anxiety - T-Score",
           "_text": {
             "extension": [
               {
@@ -1793,7 +1751,7 @@
             }
           ],
           "linkId": "promis-29-depression-raw",
-          "text": "PROMIS-29 Depression - Rohwert",
+          "text": "PROMIS-29 Depression - Raw Score",
           "_text": {
             "extension": [
               {
@@ -1845,7 +1803,7 @@
             }
           ],
           "linkId": "promis-29-fatigue-raw",
-          "text": "PROMIS-29 Erschöpfung - Rohwert",
+          "text": "PROMIS-29 Fatigue - Raw Score",
           "_text": {
             "extension": [
               {
@@ -1871,7 +1829,7 @@
             }
           ],
           "linkId": "promis-29-fatigue-tscore",
-          "text": "PROMIS-29 Erschöpfung - T-Score",
+          "text": "PROMIS-29 Fatigue - T-Score",
           "_text": {
             "extension": [
               {
@@ -1897,7 +1855,7 @@
             }
           ],
           "linkId": "promis-29-sleep-raw",
-          "text": "PROMIS-29 Schlafstörungen - Rohwert",
+          "text": "PROMIS-29 Sleep Disturbance - Raw Score",
           "_text": {
             "extension": [
               {
@@ -1923,7 +1881,7 @@
             }
           ],
           "linkId": "promis-29-sleep-tscore",
-          "text": "PROMIS-29 Schlafstörungen - T-Score",
+          "text": "PROMIS-29 Sleep Disturbance - T-Score",
           "_text": {
             "extension": [
               {
@@ -1949,7 +1907,7 @@
             }
           ],
           "linkId": "promis-29-social-raw",
-          "text": "PROMIS-29 Soziale Teilhabe - Rohwert",
+          "text": "PROMIS-29 Social Roles and Activities - Raw Score",
           "_text": {
             "extension": [
               {
@@ -1975,7 +1933,7 @@
             }
           ],
           "linkId": "promis-29-social-tscore",
-          "text": "PROMIS-29 Soziale Teilhabe - T-Score",
+          "text": "PROMIS-29 Social Roles and Activities - T-Score",
           "_text": {
             "extension": [
               {
@@ -2001,7 +1959,7 @@
             }
           ],
           "linkId": "promis-29-pain-interference-raw",
-          "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert",
+          "text": "PROMIS-29 Pain Interference - Raw Score",
           "_text": {
             "extension": [
               {
@@ -2027,7 +1985,7 @@
             }
           ],
           "linkId": "promis-29-pain-interference-tscore",
-          "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score",
+          "text": "PROMIS-29 Pain Interference - T-Score",
           "_text": {
             "extension": [
               {
@@ -2048,7 +2006,7 @@
         }
       ],
       "linkId": "PROMIS-29.Scores",
-      "text": "BEREICHS-BEWERTUNGEN",
+      "text": "Domain Scores",
       "_text": {
         "extension": [
           {
@@ -2059,7 +2017,7 @@
               },
               {
                 "url": "content",
-                "valueString": "BEREICHS-BEWERTUNGEN"
+                "valueString": "Bereichs-Bewertungen"
               }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"

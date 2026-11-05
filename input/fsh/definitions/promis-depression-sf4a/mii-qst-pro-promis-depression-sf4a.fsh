@@ -50,7 +50,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "lang"
 * item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].text.extension[=].extension[+].url = "content"
-* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich wertlos"
+* item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich wertlos."
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -101,7 +101,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "lang"
 * item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].text.extension[=].extension[+].url = "content"
-* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich hilflos"
+* item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich hilflos."
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -152,7 +152,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "lang"
 * item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].text.extension[=].extension[+].url = "content"
-* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich deprimiert"
+* item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich niedergeschlagen."
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"
@@ -203,7 +203,7 @@ Usage: #definition
 * item[=].text.extension[=].extension[+].url = "lang"
 * item[=].text.extension[=].extension[=].valueCode = #de
 * item[=].text.extension[=].extension[+].url = "content"
-* item[=].text.extension[=].extension[=].valueString = "...fühlte ich mich hoffnungslos"
+* item[=].text.extension[=].extension[=].valueString = "Ich fühlte mich hoffnungslos."
 * item[=].answerOption[0].valueCoding = $LNC#LA6270-8 "Never"
 * item[=].answerOption[0].valueCoding.display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[0].valueCoding.display.extension[=].extension[+].url = "lang"

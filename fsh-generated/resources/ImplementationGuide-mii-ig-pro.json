@@ -864,8 +864,8 @@
         "reference": {
           "reference": "QuestionnaireResponse/mii-exa-pro-promis-29-de-response"
         },
-        "name": "MII EXA PRO PROMIS-29 Response (German)",
-        "description": "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants",
+        "name": "MII EXA PRO PROMIS-29 Response (German language)",
+        "description": "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 with language = de, answering the English-primary questionnaire; demonstrates that the response carries the LOINC answer codes regardless of the display language",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
       },
       {
@@ -875,6 +875,14 @@
         "name": "MII EXA PRO WHODAS 2.0 12-Item Response",
         "description": "Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24.",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Library/mii-lib-pro-promis-29"
+        },
+        "name": "MII LIB PRO PROMIS-29 Scoring",
+        "description": "CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the seven domains plus the pain intensity item. Server channel of the dual-channel scoring architecture (the FHIRPath calculatedExpressions in the Questionnaire are the client channel); both channels are generated from the same weight and T-score tables. Define names equal the score item linkIds. Supports Library/$evaluate with an explicit Response parameter and the SDC retrieve pattern (most recent completed QuestionnaireResponse of the instrument).",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -1448,16 +1456,16 @@
         "reference": {
           "reference": "Questionnaire/mii-qst-pro-promis-29-de"
         },
-        "name": "MII QST PRO PROMIS-29 (German)",
-        "description": "PROMIS-29 Profile v2.1 - German language variant derived from English source",
+        "name": "MII QST PRO PROMIS-29 (German) [retired]",
+        "description": "RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-rc.1. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable.",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "Questionnaire/mii-qst-pro-promis-29-minimal"
         },
-        "name": "MII QST PRO PROMIS-29 Minimal",
-        "description": "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
+        "name": "MII QST PRO PROMIS-29 Minimal [retired]",
+        "description": "RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-rc.1. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable.",
         "exampleBoolean": false
       },
       {
@@ -1682,6 +1690,14 @@
         },
         "name": "MII VS PRO PROMIS Physical Function Response Scale",
         "description": "PROMIS Physical Function response scale based on LOINC LL1022-4",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-promis-social-roles-response-scale"
+        },
+        "name": "MII VS PRO PROMIS Social Roles Response Scale",
+        "description": "Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 ... Always = 1).",
         "exampleBoolean": false
       },
       {

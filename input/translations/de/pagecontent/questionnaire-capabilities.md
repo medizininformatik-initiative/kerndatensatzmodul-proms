@@ -90,7 +90,7 @@ Instance: mii-qst-pro-euroqol-eq5d5l-displayable
 Instance: mii-qst-pro-euroqol-eq5d5l-collectable
 * derivedFrom = ".../mii-qst-pro-euroqol-eq5d5l-base"
 * extension[questionnaire-capabilities].valueCode = #collectable
-// Enthält versteckte "Fehlender Wert"-Optionen
+// Antwortcodes MO-1…AD-5 aus dem EQ-5D-CodeSystem (Stufe = itemWeight)
 
 // Calculatable-Variante mit Scoring-Logik
 Instance: mii-qst-pro-euroqol-eq5d5l-calculatable

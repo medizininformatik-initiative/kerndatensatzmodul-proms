@@ -37,29 +37,36 @@ carrying `#de` + the validated German. Answer CodeSystem: English `display` + Ge
 (Mirror PHQ-9/PROMIS-29.) The validated German comes from the PCOR-MII Item Level Dictionary /
 official translation (e.g. PHQ-D for the PHQ family).
 
-## 4. Answers — answerValueSet + ordinalValue on the CodeSystem
-Define one MII answer CodeSystem with an `ordinalValue` **property** per concept (the scoring weight),
-and a ValueSet binding it; items reference it via `answerValueSet`:
+## 4. Answers — where the weight lives (SDC 4.0 / itemWeight)
+A scoring weight has exactly three legitimate homes; pick ONE per instrument and write it with the
+RuleSets in `input/fsh/rulesets/answer-scales.fsh` (never by hand):
+
+| Case | Home of the weight | RuleSet |
+|---|---|---|
+| MII owns the answer terminology (validated instrument scale) | `itemWeight` **property** on the MII CodeSystem concept; items bind it via `answerValueSet` (or inline `valueCoding` from that CS) | `ItemWeightProperty` (declaration) + `WeightedConcept` / `WeightedConceptIntl` |
+| Foreign codes (LOINC LA-codes, SNOMED yes/no) — no property possible | `itemWeight` **extension on `answerOption`** (never on `valueCoding`: form renderers such as LHC-Forms/fhirpath.js read it only on the option; the profile forbids it on the Coding) | `WeightedOption` / `WeightedOptionIntl` |
+
 ```fsh
 CodeSystem: MII_CS_PRO_<X>_Answers
-* ^property[+].code = #ordinalValue
-* ^property[=].uri = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* ^property[=].type = #decimal
-* #not-bothered "Not bothered at all"
-  * ^designation[+].language = #de
-  * ^designation[=].value = "Nicht beeinträchtigt"
-  * ^property[+].code = #ordinalValue
-  * ^property[=].valueDecimal = 0
+* insert ItemWeightProperty                     // code itemWeight, uri concept-properties#itemWeight, decimal
+* insert WeightedConceptIntl(not-bothered, Not bothered at all, de, Nicht beeinträchtigt, 0)
 ... (repeat per option)
 // Questionnaire item:
 * item[x].answerValueSet = Canonical(MII_VS_PRO_<X>_Answers)
+// Foreign codes instead:
+* item[x] insert WeightedOptionIntl($LNC, LA6568-5, Not at all, Überhaupt nicht, 0)
 ```
 A shared scale (same options for all items) → ONE CS/VS for the whole instrument.
+Never put a weight on `ValueSet.compose` concepts (not allowed since SDC 4.0; the BDI-II lost its
+weights exactly there) and never use `ordinalValue` (SDC 3 legacy).
 
-⚠️ **Scoring caveat:** in-form `.ordinal()` resolution from `answerValueSet` is **engine-dependent**
-(many SDC form-fillers read the weight only from inline `answerOption`). For robust scoring use **CQL**
-(resolves CodeSystem weights reliably; see `cql-development` skill, 2026+ roadmap). If you need
-FHIRPath in-form live scoring, fall back to inline `answerOption` + `ordinalValue`. Document the choice.
+⚠️ **Scoring caveat:** in-form `.weight()` resolution from a CodeSystem property is **engine-dependent**:
+fhirpath.js (R4 model) reads weights on CodeSystem concepts only as extensions or via a terminology
+server. The CI guard `scripts/scoring-smoke.test.mjs` evaluates every `.weight()` expression with a
+synthetic response (CodeSystems injected as `contained`) — a new instrument MUST pass it. For robust
+server-side scoring use **CQL** (`cql-development` skill, generator pattern of PROMIS-29). Also make sure
+the FHIRPath selects QR items by `linkId` — a QuestionnaireResponse item has no `type`, so
+`item.where(type = 'choice')` is always empty (that bug sat in BDI-II and EQ-5D until 2026-11).
 
 ## 5. Scoring
 Root FHIR `variable` + a readOnly score item:

@@ -16,6 +16,12 @@
           "language": "en",
           "value": "none"
         }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 0
+        }
       ]
     },
     {
@@ -25,6 +31,12 @@
         {
           "language": "en",
           "value": "mild"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1
         }
       ]
     },
@@ -36,6 +48,12 @@
           "language": "en",
           "value": "moderate"
         }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 2
+        }
       ]
     },
     {
@@ -45,6 +63,12 @@
         {
           "language": "en",
           "value": "severe"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 3
         }
       ]
     },
@@ -56,6 +80,12 @@
           "language": "en",
           "value": "very good"
         }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 0
+        }
       ]
     },
     {
@@ -65,6 +95,12 @@
         {
           "language": "en",
           "value": "rather good"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1
         }
       ]
     },
@@ -76,6 +112,12 @@
           "language": "en",
           "value": "rather poor"
         }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 2
+        }
       ]
     },
     {
@@ -85,6 +127,12 @@
         {
           "language": "en",
           "value": "very poor"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 3
         }
       ]
     },
@@ -276,13 +324,14 @@
   "version": "2027.0.0-ballot.1",
   "experimental": true,
   "caseSensitive": true,
-  "copyright": "MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.",
   "property": [
     {
       "code": "snomed",
-      "type": "code",
-      "description": "SNOMED CT Equivalent für externe Interoperabilität"
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "SNOMED CT Equivalent für externe Interoperabilität",
+      "type": "code"
     }
   ],
+  "copyright": "MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.",
   "count": 21
 }

@@ -65,6 +65,34 @@
       "display": "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
     },
     {
+      "code": "promis-29-physical-function-raw",
+      "display": "PROMIS-29 Physical Function Raw Score"
+    },
+    {
+      "code": "promis-29-anxiety-raw",
+      "display": "PROMIS-29 Anxiety Raw Score"
+    },
+    {
+      "code": "promis-29-depression-raw",
+      "display": "PROMIS-29 Depression Raw Score"
+    },
+    {
+      "code": "promis-29-fatigue-raw",
+      "display": "PROMIS-29 Fatigue Raw Score"
+    },
+    {
+      "code": "promis-29-sleep-disturbance-raw",
+      "display": "PROMIS-29 Sleep Disturbance Raw Score"
+    },
+    {
+      "code": "promis-29-social-function-raw",
+      "display": "PROMIS-29 Ability to Participate in Social Roles and Activities Raw Score"
+    },
+    {
+      "code": "promis-29-pain-interference-raw",
+      "display": "PROMIS-29 Pain Interference Raw Score"
+    },
+    {
       "code": "promis-cognitive-function-sf4a-raw",
       "display": "PROMIS Cognitive Function Abilities 4a Raw Score"
     },
@@ -165,6 +193,10 @@
       "display": "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
     },
     {
+      "code": "midos2-symptom-sum",
+      "display": "MIDOS2 Symptom Sum Score (0-33)"
+    },
+    {
       "code": "proctcae-composite-grade",
       "display": "PRO-CTCAE Composite Grade (per Adverse Event)"
     },
@@ -198,5 +230,5 @@
     }
   ],
   "version": "2027.0.0-ballot.1",
-  "count": 47
+  "count": 55
 }

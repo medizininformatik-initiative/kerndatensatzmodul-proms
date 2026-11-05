@@ -15,6 +15,9 @@ Description: "EuroQol EQ-5D Value Set"
 * ^hierarchyMeaning = #grouped-by
 * ^content = #complete
 
+// Stufe (1-5) als itemWeight-Property (Beads g3b.16): Profil-String und Level-Scoring per .weight().
+* insert ItemWeightProperty
+
 * ^property[+].code = #eq-5d-vs-coefficient-de-de
 * ^property[=].description = "EQ-5D ValueSet Coefficient Germany"
 * ^property[=].type = #decimal
@@ -29,6 +32,8 @@ Description: "EuroQol EQ-5D Value Set"
   * ^designation.value = "MOBILITY"
 
   * #MO-1  "Ich habe keine Probleme herumzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 1
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have no problems in walking about"
@@ -38,6 +43,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0
 
   * #MO-2 "Ich habe leichte Probleme herumzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 2
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have slight problems in walking about"
@@ -47,6 +54,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.096
 
   * #MO-3 "Ich habe mäßige Probleme herumzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 3
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have moderate problems in walking about"
@@ -56,6 +65,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.122
 
   * #MO-4 "Ich habe große Probleme herumzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 4
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have severe problems in walking about"
@@ -65,6 +76,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.237
 
   * #MO-5 "Ich bin nicht in der Lage herumzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 5
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am unable to walk about"
@@ -79,6 +92,8 @@ Description: "EuroQol EQ-5D Value Set"
   * ^designation.value = "SELF-CARE"
 
   * #SC-1 "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 1
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have no problems washing or dressing myself"
@@ -88,6 +103,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0
 
   * #SC-2 "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 2
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have slight problems washing or dressing myself"
@@ -97,6 +114,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.089
 
   * #SC-3 "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 3
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have moderate problems washing or dressing myself"
@@ -106,6 +125,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.107
 
   * #SC-4 "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 4
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have severe problems washing or dressing myself"
@@ -115,6 +136,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.220
 
   * #SC-5 "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 5
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am unable to wash or dress myself"
@@ -129,6 +152,8 @@ Description: "EuroQol EQ-5D Value Set"
   * ^designation.value = "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"
 
   * #UA-1 "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 1
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have no problems doing my usual activities"
@@ -138,6 +163,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0
   
   * #UA-2 "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 2
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have slight problems doing my usual activities"
@@ -147,6 +174,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.068
   
   * #UA-3 "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 3
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have moderate problems doing my usual activities"
@@ -156,6 +185,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.101
   
   * #UA-4 "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 4
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have severe problems doing my usual activities"
@@ -165,6 +196,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.255
   
   * #UA-5 "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 5
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am unable to do my usual activities"
@@ -179,6 +212,8 @@ Description: "EuroQol EQ-5D Value Set"
   * ^designation.value = "PAIN / DISCOMFORT"
 
   * #PD-1 "Ich habe keine Schmerzen oder Beschwerden"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 1
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have no pain or discomfort"
@@ -188,6 +223,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0
   
   * #PD-2 "Ich habe leichte Schmerzen oder Beschwerden"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 2
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have slight pain or discomfort"
@@ -197,6 +234,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.060
   
   * #PD-3 "Ich habe mäßige Schmerzen oder Beschwerden"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 3
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have moderate pain or discomfort"
@@ -206,6 +245,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.098
   
   * #PD-4 "Ich habe starke Schmerzen oder Beschwerden"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 4
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have severe pain or discomfort"
@@ -215,6 +256,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.318
   
   * #PD-5 "Ich habe extreme Schmerzen oder Beschwerden"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 5
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I have extreme pain or discomfort"
@@ -229,6 +272,8 @@ Description: "EuroQol EQ-5D Value Set"
   * ^designation.value = "ANXIETY / DEPRESSION"
 
   * #AD-1 "Ich bin nicht ängstlich oder deprimiert"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 1
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am not anxious or depressed"
@@ -238,6 +283,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0
   
   * #AD-2 "Ich bin ein wenig ängstlich oder deprimiert"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 2
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am slightly anxious or depressed"
@@ -247,6 +294,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.057
   
   * #AD-3 "Ich bin mäßig ängstlich oder deprimiert"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 3
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am moderately anxious or depressed"
@@ -256,6 +305,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.123
   
   * #AD-4 "Ich bin sehr ängstlich oder deprimiert"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 4
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am severely anxious or depressed"
@@ -265,6 +316,8 @@ Description: "EuroQol EQ-5D Value Set"
     * ^property[=].valueDecimal = 0.299
   
   * #AD-5 "Ich bin extrem ängstlich oder deprimiert"
+    * ^property[+].code = #itemWeight
+    * ^property[=].valueDecimal = 5
     * ^designation.language = #en-US
     * ^designation.use = $SCT#900000000000013009 "Synonym"
     * ^designation.value = "I am extremely anxious or depressed"
