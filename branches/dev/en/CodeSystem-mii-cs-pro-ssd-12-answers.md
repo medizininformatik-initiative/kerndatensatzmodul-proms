@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-11-04 | *Computable Name*:MII_CS_PRO_SSD_12_Answers |
+| Active as of 2026-11-05 | *Computable Name*:MII_CS_PRO_SSD_12_Answers |
 
  
 MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet. 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_SSD_12_Answers",
   "title" : "MII CS PRO SSD-12 Answers",
   "status" : "active",
-  "date" : "2026-11-04T12:41:52+00:00",
+  "date" : "2026-11-05T04:04:59+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
