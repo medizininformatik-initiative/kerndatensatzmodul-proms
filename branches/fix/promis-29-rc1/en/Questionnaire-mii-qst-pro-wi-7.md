@@ -81,7 +81,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "MII QST PRO WI-7",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:37:44+00:00",
+  "date" : "2026-11-05T06:08:05+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -145,22 +145,22 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -186,22 +186,22 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -227,22 +227,22 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -268,22 +268,22 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -309,22 +309,22 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -350,22 +350,22 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"
@@ -391,22 +391,22 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     },
     "type" : "choice",
     "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 0
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 0
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373067005",
         "display" : "No"
       }
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
       "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 1
-        }],
         "system" : "http://snomed.info/sct",
         "code" : "373066001",
         "display" : "Yes"

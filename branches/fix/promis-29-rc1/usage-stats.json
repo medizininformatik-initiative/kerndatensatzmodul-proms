@@ -212,7 +212,7 @@
     "http://hl7.org/fhir/StructureDefinition/itemWeight": [
       "Bundle.entry.resource.item.answerOption",
       "Questionnaire.item.answerOption",
-      "Questionnaire.item.answerOption.valueCoding",
+      "Questionnaire.item.answerOption.value[x]",
       "Questionnaire.item.item.answerOption"
     ],
     "http://hl7.org/fhir/StructureDefinition/itemWeight|5.3.0-ballot-tc1": [

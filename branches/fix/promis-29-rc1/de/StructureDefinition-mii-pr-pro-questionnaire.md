@@ -57,14 +57,16 @@ Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/
 ** Summary **
 
 Mandatory: 4 elements(6 nested mandatory elements)
- Must-Support: 10 elements
+ Must-Support: 11 elements
  Fixed: 3 elements
+ Prohibited: 1 element
 
 **Extensions**
 
 This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities](StructureDefinition-mii-ex-pro-questionnaire-capabilities.md)
+* [http://hl7.org/fhir/StructureDefinition/itemWeight](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-itemWeight.html)
 
 **Slices**
 
@@ -93,14 +95,16 @@ Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/
 ** Summary **
 
 Mandatory: 4 elements(6 nested mandatory elements)
- Must-Support: 10 elements
+ Must-Support: 11 elements
  Fixed: 3 elements
+ Prohibited: 1 element
 
 **Extensions**
 
 This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities](StructureDefinition-mii-ex-pro-questionnaire-capabilities.md)
+* [http://hl7.org/fhir/StructureDefinition/itemWeight](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-itemWeight.html)
 
 **Slices**
 
@@ -126,7 +130,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:37:44+00:00",
+  "date" : "2026-11-05T06:08:05+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -288,6 +292,51 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
       "path" : "Questionnaire.code.code",
       "min" : 1,
       "mustSupport" : true
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.extension",
+      "path" : "Questionnaire.item.answerOption.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.extension:itemWeight",
+      "path" : "Questionnaire.item.answerOption.extension",
+      "sliceName" : "itemWeight",
+      "short" : "Scoring weight of this option (SDC .weight())",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/itemWeight"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.value[x]:valueCoding",
+      "path" : "Questionnaire.item.answerOption.value[x]",
+      "sliceName" : "valueCoding",
+      "type" : [{
+        "code" : "Coding"
+      }]
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.value[x]:valueCoding.extension:itemWeightOnCoding",
+      "path" : "Questionnaire.item.answerOption.value[x].extension",
+      "sliceName" : "itemWeightOnCoding",
+      "short" : "Not allowed here: put itemWeight on the answerOption, not on its Coding",
+      "min" : 0,
+      "max" : "0",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/itemWeight"]
+      }]
     }]
   }
 }

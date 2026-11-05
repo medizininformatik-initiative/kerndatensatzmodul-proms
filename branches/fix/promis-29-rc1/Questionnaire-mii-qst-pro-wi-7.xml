@@ -65,7 +65,7 @@
   <title value="MII QST PRO WI-7"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-11-05T04:37:44+00:00"/>
+  <date value="2026-11-05T06:08:05+00:00"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -121,20 +121,20 @@
     </text>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -156,20 +156,20 @@
     </text>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -191,20 +191,20 @@
     </text>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -226,20 +226,20 @@
     </text>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -261,20 +261,20 @@
     </text>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -296,20 +296,20 @@
     </text>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>
@@ -331,20 +331,20 @@
     </text>
     <type value="choice"/>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="0"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="0"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373067005"/>
         <display value="No"/>
       </valueCoding>
     </answerOption>
     <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <valueDecimal value="1"/>
+      </extension>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="1"/>
-        </extension>
         <system value="http://snomed.info/sct"/>
         <code value="373066001"/>
         <display value="Yes"/>

@@ -35,7 +35,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-11-05T04:37:44+00:00",
+  "date" : "2026-11-05T06:08:05+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -57,7 +57,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 54,
+  "count" : 55,
   "concept" : [{
     "code" : "euroqol-eq5d5l-index",
     "display" : "EuroQol EQ-5D-5L Index Score"
@@ -241,6 +241,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "whodas12-simple-sum",
     "display" : "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
+  },
+  {
+    "code" : "midos2-symptom-sum",
+    "display" : "MIDOS2 Symptom Sum Score (0-33)"
   },
   {
     "code" : "proctcae-composite-grade",

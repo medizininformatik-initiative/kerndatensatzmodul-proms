@@ -121,7 +121,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "name" : "MII_PR_PRO_QuestionnaireResponse",
   "title" : "MII PR PRO QuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-11-05T04:37:44+00:00",
+  "date" : "2026-11-05T06:08:05+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

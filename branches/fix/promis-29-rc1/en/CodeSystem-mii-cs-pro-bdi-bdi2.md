@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:37:44+00:00",
+  "date" : "2026-11-05T06:08:05+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -61,45 +61,91 @@ This Code system is referenced in the definition of the following value sets:
   "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
   "content" : "complete",
   "count" : 10,
+  "property" : [{
+    "code" : "itemWeight",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
+    "description" : "Numerical weight for SDC calculatedExpression scoring via .weight()",
+    "type" : "decimal"
+  }],
   "concept" : [{
     "code" : "bdi-bdi2-answer-0",
-    "display" : "0 points"
+    "display" : "0 points",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 0
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-1",
-    "display" : "1 point"
+    "display" : "1 point",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-2",
-    "display" : "2 points"
+    "display" : "2 points",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-3",
-    "display" : "3 points"
+    "display" : "3 points",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-1a",
-    "display" : "1 point (variant a)"
+    "display" : "1 point (variant a)",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-1b",
-    "display" : "1 point (variant b)"
+    "display" : "1 point (variant b)",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-2a",
-    "display" : "2 points (variant a)"
+    "display" : "2 points (variant a)",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-2b",
-    "display" : "2 points (variant b)"
+    "display" : "2 points (variant b)",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-3a",
-    "display" : "3 points (variant a)"
+    "display" : "3 points (variant a)",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
+    }]
   },
   {
     "code" : "bdi-bdi2-answer-3b",
-    "display" : "3 points (variant b)"
+    "display" : "3 points (variant b)",
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
+    }]
   }]
 }
 

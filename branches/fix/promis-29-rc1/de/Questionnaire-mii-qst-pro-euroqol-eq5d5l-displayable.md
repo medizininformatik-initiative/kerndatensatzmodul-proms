@@ -73,7 +73,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "derivedFrom" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"],
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T04:37:44+00:00",
+  "date" : "2026-11-05T06:08:05+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -852,7 +852,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
       "valueExpression" : {
         "language" : "text/fhirpath",
-        "expression" : "%resource.item.where(type = 'choice').answer.value.weight().aggregate($total & $this, '')"
+        "expression" : "%resource.item.where(linkId.matches('^euroqol-eq5d5l-q0[1-5]-')).answer.value.weight().aggregate($total & $this.toString(), '')"
       }
     }],
     "linkId" : "euroqol-eq5d5l-score-profile",

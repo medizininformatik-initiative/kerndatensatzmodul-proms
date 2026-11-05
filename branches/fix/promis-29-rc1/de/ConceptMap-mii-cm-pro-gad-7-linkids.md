@@ -35,7 +35,7 @@ Bildet die übliche GAD-7-Itemnummerierung (Item 1–7, wie publiziert und in Fr
   "title" : "MII CM PRO GAD-7 Item-Nummerierung → PHQ-D-linkIds",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-05T04:37:44+00:00",
+  "date" : "2026-11-05T06:08:05+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
