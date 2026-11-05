@@ -43,7 +43,7 @@
   "title" : "MII VS PRO PRO-CTCAE Interference Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T03:18:15+00:00",
+  "date" : "2026-11-05T03:33:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

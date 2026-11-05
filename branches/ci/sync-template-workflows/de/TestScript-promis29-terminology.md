@@ -34,7 +34,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 **experimental**: true
 
-**date**: 2026-11-05 03:18:15+0000
+**date**: 2026-11-05 03:33:13+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -360,7 +360,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
   "title" : "PROMIS-29 Scoring — Terminologie der Antwortoptionen",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-05T03:18:15+00:00",
+  "date" : "2026-11-05T03:33:13+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
