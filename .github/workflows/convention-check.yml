@@ -68,6 +68,15 @@ jobs:
       # only inside the manually dispatched go-publish.yml, so a regression in
       # them stayed invisible until a formal publication; this gates them on
       # every push and pull request.
+      # --- module addition (kerndatensatzmodul-proms): keep when re-syncing from the template ---
+      # The scoring tests need fhirpath.js / cql-execution (scripts/package.json); the
+      # template has no script dependencies and therefore no install step.
+      - name: Install script dependencies
+        run: npm ci --prefix scripts --no-audit --no-fund
+      - name: Build FHIR resources from FSH (scoring tests read fsh-generated/)
+        run: |
+          npm install -g fsh-sushi@3.21.0
+          sushi .
       - name: Test the scripts
         run: node --test scripts/*.test.mjs
 
