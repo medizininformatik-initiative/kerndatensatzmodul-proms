@@ -1,3 +1,4 @@
+# Synced from medizininformatik-initiative/mii-kds-module-template dev @ 18b94b187ae1 (2026-11-02). Re-sync: copy the template file and re-apply only the marked module additions.
 # =============================================================================
 # convention-check.yml — THE single convention checker
 #
@@ -62,25 +63,20 @@ jobs:
         with:
           node-version: "22"
 
-      # The PROMIS-29 scoring tests run the calculatedExpressions with the
-      # real fhirpath.js engine (the same one LHC-Forms embeds) — the only
-      # npm dependency the scripts have.
-      - name: Install script dependencies
-        run: npm ci --prefix scripts --no-audit --no-fund
-
-      # The scoring tests read fsh-generated/, which the CI only regenerates
-      # AFTER a push (auto-commit) — build it for THIS commit instead of
-      # trusting the checkout.
-      - name: Build FHIR resources from FSH
-        run: |
-          npm install -g fsh-sushi
-          sushi .
-
       # Every unit test in scripts/ — the convention checker, the dependency
       # checker and the publication scripts. The publication scripts used to run
       # only inside the manually dispatched go-publish.yml, so a regression in
       # them stayed invisible until a formal publication; this gates them on
       # every push and pull request.
+      # --- module addition (kerndatensatzmodul-proms): keep when re-syncing from the template ---
+      # The scoring tests need fhirpath.js / cql-execution (scripts/package.json); the
+      # template has no script dependencies and therefore no install step.
+      - name: Install script dependencies
+        run: npm ci --prefix scripts --no-audit --no-fund
+      - name: Build FHIR resources from FSH (scoring tests read fsh-generated/)
+        run: |
+          npm install -g fsh-sushi@3.21.0
+          sushi .
       - name: Test the scripts
         run: node --test scripts/*.test.mjs
 
@@ -119,3 +115,9 @@ jobs:
       # every branch and in every module created from this template.
       - name: Check the language model (English default, German translation)
         run: bash scripts/language-model-check.sh
+      # --- module addition (kerndatensatzmodul-proms): keep when re-syncing from the template ---
+      - name: Check questionnaire language architecture and master drift
+        # Guard A: EN-primary questionnaires carry a DE translation on every item text.
+        # Guard B: German PROMIS item texts match the validated master (documented exceptions).
+        if: ${{ hashFiles('scripts/check-questionnaire-languages.py') != '' }}
+        run: python3 scripts/check-questionnaire-languages.py
