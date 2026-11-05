@@ -256,3 +256,31 @@ Usage: #definition
 * item[=].text.extension[0].extension[1].url = "content"
 * item[=].text.extension[0].extension[1].valueString = "Other complaints (please specify)"
 * item[=].required = false
+
+// ============================================================================
+// Score — Symptomsumme (Beads g3b.15): die Variable symptomSumScore gab es seit Anlage,
+// ein Score-Item, das sie ausgibt und extrahiert, fehlte.
+// ============================================================================
+* item[+].linkId = "midos2-score-symptom-sum"
+* item[=].type = #decimal
+* item[=].prefix = "Summe"
+* item[=].readOnly = true
+* item[=].code = $mii-cs-pro-score-catalogue#midos2-symptom-sum "MIDOS2 Symptom Sum Score (0-33)"
+* item[=].text = "MIDOS2 Symptomsumme (0-33)"
+* item[=].text.extension[0].url = $hl7-translation
+* item[=].text.extension[0].extension[0].url = "lang"
+* item[=].text.extension[0].extension[0].valueCode = #en
+* item[=].text.extension[0].extension[1].url = "content"
+* item[=].text.extension[0].extension[1].valueString = "MIDOS2 symptom sum score (0-33)"
+* item[=].extension[0].url = $sdc-questionnaire-calculated-expression
+* item[=].extension[0].valueExpression.name = "midos2SymptomSum"
+* item[=].extension[0].valueExpression.language = #text/fhirpath
+* item[=].extension[0].valueExpression.expression = "%symptomSumScore"
+* item[=].extension[1].url = $sdc-questionnaire-observation-extract
+* item[=].extension[1].valueBoolean = true
+* item[=].extension[2].url = $hl7-questionnaire-unit
+* item[=].extension[2].valueCoding.system = $UCUM
+* item[=].extension[2].valueCoding.code = #{score}
+* item[=].extension[3].url = $sdc-questionnaire-observation-extract-category
+* item[=].extension[3].valueCodeableConcept.coding.system = $hl7-observation-category
+* item[=].extension[3].valueCodeableConcept.coding.code = #survey

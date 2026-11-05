@@ -50,16 +50,6 @@ RuleSet: ConceptIntl(concept, display, language, translation)
   * ^designation[+].language = #{language}
   * ^designation[=].value = "{translation}"
 
-// SDC 4.0: itemWeight is NOT allowed on ValueSet.compose concepts (it was
-// under the old ordinalValue). The weights here served nothing anyway — the
-// sole user is the ll358-3 answer list of the PHQ-9 SDC-RENDERING variant,
-// which does no scoring; the authoritative PHQ-9 carries its weights inline.
-// The {weight} parameter is kept so call sites stay untouched and documented.
-RuleSet: ConceptWeightIntl(concept, display, weight, language, translation)
-* include {concept} "{display}"
-  * ^designation[+].language = #{language}
-  * ^designation[=].value = "{translation}"
-
 // Common Extensions
 RuleSet: Translation(path, language, translation)
 * {path}

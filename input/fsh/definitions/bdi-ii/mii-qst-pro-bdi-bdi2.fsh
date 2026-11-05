@@ -105,7 +105,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "bdiScore"
 * extension[=].valueExpression.language = #text/fhirpath
-* extension[=].valueExpression.expression = "%resource.item.where(type = 'choice').answer.value.weight().sum()"
+* extension[=].valueExpression.expression = "%resource.item.where(linkId.matches('^bdi-bdi2-q[0-9]{2}$')).answer.value.weight().sum()"
 
 // Calculated total score
 * item[+].linkId = "bdi-bdi2-score-total"
@@ -195,8 +195,7 @@ Usage: #definition
   iif(%bdiScore = 60, 86.0,
   iif(%bdiScore = 61, 86.9,
   iif(%bdiScore = 62, 87.8,
-  iif(%bdiScore = 63, 88.8, 88.8)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
-"
+  iif(%bdiScore = 63, 88.8, 88.8))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
 * item[=].extension[+].url = $sdc-questionnaire-observation-extract
 * item[=].extension[=].valueBoolean = true
 * item[=].extension[+].url = $hl7-questionnaire-unit

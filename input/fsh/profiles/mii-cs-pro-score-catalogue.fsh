@@ -81,6 +81,7 @@ Description: "MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Mo
 
 // WHODAS 2.0 12-Item Scores (higher = worse disability)
 * #whodas12-simple-sum "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
+* #midos2-symptom-sum "MIDOS2 Symptom Sum Score (0-33)"
 
 // PRO-CTCAE Scores (higher = worse AE burden)
 * #proctcae-composite-grade "PRO-CTCAE Composite Grade (per Adverse Event)"

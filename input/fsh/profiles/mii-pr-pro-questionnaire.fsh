@@ -15,6 +15,15 @@ Description: "MII PR PRO Questionnaire, based on the FHIR Structure Data Capture
 
 * copyright MS 
 * item MS
+// Gewichte (Beads g3b.18): die itemWeight-Extension gehört an die answerOption selbst,
+// nicht an deren valueCoding — Form-Renderer (LHC-Forms/fhirpath.js) lesen sie nur dort.
+// Vollständigkeit der Gewichte ist bewusst NICHT profiliert (sie können auch als Property
+// am MII-CodeSystem liegen, was FHIRPath im Validator nicht sehen kann); das prüft der
+// Laufzeit-Guard scripts/scoring-smoke.test.mjs.
+* item.answerOption.extension contains http://hl7.org/fhir/StructureDefinition/itemWeight named itemWeight 0..1 MS
+* item.answerOption.extension[itemWeight] ^short = "Scoring weight of this option (SDC .weight())"
+* item.answerOption.valueCoding.extension contains http://hl7.org/fhir/StructureDefinition/itemWeight named itemWeightOnCoding 0..0
+* item.answerOption.valueCoding.extension[itemWeightOnCoding] ^short = "Not allowed here: put itemWeight on the answerOption, not on its Coding"
 * derivedFrom MS
 * code MS 
 * code 1..*

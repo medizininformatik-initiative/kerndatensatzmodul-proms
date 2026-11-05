@@ -26,15 +26,57 @@
 // Instrumenten-Ordner — dort besitzen wir die Terminologie und die Formulierung ist Teil
 // des validierten Instruments.
 
+// ============================================================================
+// Schreibhilfen für Gewichte (Beads g3b.18). Es gibt genau drei legitime Quellen eines
+// Gewichts: (1) itemWeight-Extension an der answerOption (fremde Terminologie: LOINC/SNOMED),
+// (2) itemWeight-Property am MII-CodeSystem, über Inline-Coding erreicht, (3) dieselbe
+// Property über answerValueSet. Das Profil mii-pr-pro-questionnaire erlaubt die Extension
+// NUR an answerOption.extension (nicht am valueCoding — Form-Renderer wie LHC-Forms lesen
+// sie dort nicht). Vollständigkeit prüft der Laufzeit-Guard scripts/scoring-smoke.test.mjs.
+// ============================================================================
+
+// Inline-Option mit Gewicht, ohne Übersetzung (Terminologie liefert die Designations selbst).
+RuleSet: WeightedOption(system, code, display, weight)
+* answerOption[+].valueCoding = {system}#{code} "{display}"
+* answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* answerOption[=].extension[=].valueDecimal = {weight}
+
+// Inline-Option mit Gewicht und deutscher Übersetzung des Displays.
+RuleSet: WeightedOptionIntl(system, code, display, de, weight)
+* answerOption[+].valueCoding = {system}#{code} "{display}"
+* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
+* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
+* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "{de}"
+* answerOption[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
+* answerOption[=].extension[=].valueDecimal = {weight}
+
+// CodeSystem-Konzept mit Gewicht (Property itemWeight; die Deklaration am CS siehe
+// RuleSet ItemWeightProperty). Mit/ohne Designation.
+RuleSet: ItemWeightProperty
+* ^property[+].code = #itemWeight
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#itemWeight"
+* ^property[=].description = "Numerical weight for SDC calculatedExpression scoring via .weight()"
+* ^property[=].type = #decimal
+
+RuleSet: WeightedConcept(code, display, weight)
+* #{code} "{display}"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = {weight}
+
+RuleSet: WeightedConceptIntl(code, display, language, translation, weight)
+* #{code} "{display}"
+  * ^designation[+].language = #{language}
+  * ^designation[=].value = "{translation}"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = {weight}
+
 // Binäre Ja/Nein-Skala mit Gewichten 0/1 (SNOMED CT, TC-Terminologien-konform).
 // Anwendung: * item[x] insert YesNoAnswerOptions
 RuleSet: YesNoAnswerOptions
-* answerOption[+].valueCoding = $SCT#373067005 "No"
-* answerOption[=].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* answerOption[=].valueCoding.extension[=].valueDecimal = 0
-* answerOption[+].valueCoding = $SCT#373066001 "Yes"
-* answerOption[=].valueCoding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* answerOption[=].valueCoding.extension[=].valueDecimal = 1
+* insert WeightedOption($SCT, 373067005, No, 0)
+* insert WeightedOption($SCT, 373066001, Yes, 1)
 
 // PHQ-D-Vierpunktskala für Häufigkeit über zwei Wochen (0-3), LOINC-Antwortliste LL358-3.
 // Geteilt von PHQ-9, GAD-7 und PHQ-4 — identischer Wortlaut, identische Gewichte.
@@ -43,35 +85,7 @@ RuleSet: YesNoAnswerOptions
 // Deutsche Wortlaute aus dem PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002).
 // Anwendung: * item[x] insert Phq4PointFrequencyAnswerOptions
 RuleSet: Phq4PointFrequencyAnswerOptions
-* answerOption[+].valueCoding = $LNC#LA6568-5 "Not at all"
-* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Überhaupt nicht"
-* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* answerOption[=].extension.valueDecimal = 0
-* answerOption[+].valueCoding = $LNC#LA6569-3 "Several days"
-* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "An einzelnen Tagen"
-* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* answerOption[=].extension.valueDecimal = 1
-* answerOption[+].valueCoding = $LNC#LA6570-1 "More than half the days"
-* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "An mehr als der Hälfte der Tage"
-* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* answerOption[=].extension.valueDecimal = 2
-* answerOption[+].valueCoding = $LNC#LA6571-9 "Nearly every day"
-* answerOption[=].valueCoding.display.extension[+].url = $hl7-translation
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "lang"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueCode = #de
-* answerOption[=].valueCoding.display.extension[=].extension[+].url = "content"
-* answerOption[=].valueCoding.display.extension[=].extension[=].valueString = "Beinahe jeden Tag"
-* answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/itemWeight"
-* answerOption[=].extension.valueDecimal = 3
+* insert WeightedOptionIntl($LNC, LA6568-5, Not at all, Überhaupt nicht, 0)
+* insert WeightedOptionIntl($LNC, LA6569-3, Several days, An einzelnen Tagen, 1)
+* insert WeightedOptionIntl($LNC, LA6570-1, More than half the days, An mehr als der Hälfte der Tage, 2)
+* insert WeightedOptionIntl($LNC, LA6571-9, Nearly every day, Beinahe jeden Tag, 3)

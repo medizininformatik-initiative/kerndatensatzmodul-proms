@@ -193,6 +193,10 @@
       "display": "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
     },
     {
+      "code": "midos2-symptom-sum",
+      "display": "MIDOS2 Symptom Sum Score (0-33)"
+    },
+    {
       "code": "proctcae-composite-grade",
       "display": "PRO-CTCAE Composite Grade (per Adverse Event)"
     },
@@ -226,5 +230,5 @@
     }
   ],
   "version": "2027.0.0-ballot.1",
-  "count": 54
+  "count": 55
 }

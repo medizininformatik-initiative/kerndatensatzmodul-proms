@@ -22,6 +22,8 @@ Description: "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — Ge
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
+// Gewichte 0-3 als itemWeight-Property (Beads g3b.15): Symptomsumme 0-33, Wohlbefinden separat.
+* insert ItemWeightProperty
 * ^copyright = "MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke."
 
 // ============================================================================
@@ -31,15 +33,23 @@ Description: "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — Ge
 * #midos2-severity-0 "keine"
   * ^designation[0].language = #en
   * ^designation[0].value = "none"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 0
 * #midos2-severity-1 "leichte"
   * ^designation[0].language = #en
   * ^designation[0].value = "mild"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 1
 * #midos2-severity-2 "mittlere"
   * ^designation[0].language = #en
   * ^designation[0].value = "moderate"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 2
 * #midos2-severity-3 "starke"
   * ^designation[0].language = #en
   * ^designation[0].value = "severe"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 3
 
 // ============================================================================
 // SECTION 2: Wohlbefinden-Skala (4-stufig) — für Wohlbefinden-Item
@@ -48,15 +58,23 @@ Description: "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — Ge
 * #midos2-wellbeing-0 "sehr gut"
   * ^designation[0].language = #en
   * ^designation[0].value = "very good"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 0
 * #midos2-wellbeing-1 "eher gut"
   * ^designation[0].language = #en
   * ^designation[0].value = "rather good"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 1
 * #midos2-wellbeing-2 "eher schlecht"
   * ^designation[0].language = #en
   * ^designation[0].value = "rather poor"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 2
 * #midos2-wellbeing-3 "sehr schlecht"
   * ^designation[0].language = #en
   * ^designation[0].value = "very poor"
+  * ^property[+].code = #itemWeight
+  * ^property[=].valueDecimal = 3
 
 // ============================================================================
 // SECTION 3: Item codes — 11 Symptome + 1 Wohlbefinden + 1 freitext
