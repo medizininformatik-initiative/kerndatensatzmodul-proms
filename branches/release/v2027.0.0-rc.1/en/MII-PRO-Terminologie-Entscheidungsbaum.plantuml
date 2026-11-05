@@ -1,0 +1,126 @@
+@startuml MII-PRO-Terminologie-Entscheidungsbaum
+!theme plain
+skinparam backgroundColor White
+skinparam activity {
+  BackgroundColor LightBlue
+  BorderColor DarkBlue
+  FontSize 10
+}
+skinparam decision {
+  BackgroundColor LightYellow
+  BorderColor Orange
+  FontSize 10
+}
+skinparam note {
+  BackgroundColor LightGreen
+  BorderColor DarkGreen
+  FontSize 9
+}
+
+title MII PRO Terminologie-Entscheidungsbaum\n**Wann answerOption vs answerValueSet + CodeSystem verwenden?**
+
+start
+
+:Neue Antwortliste für\nQuestionnaire-Item erstellen;
+
+if (Questionnaire Capabilities\nprüfen) then (displayable = false\ncalculatable = true)
+  :✅ **answerValueSet + MII CodeSystem**\nScore-only Pattern;
+  note right
+    **Pattern**: BDI-II
+    * extension[capabilities].extension[displayable].valueBoolean = false
+    * extension[capabilities].extension[calculatable].valueBoolean = true
+    * answerValueSet = "mii-vs-pro-bdi-bdi2-short"
+    
+    **Vorteile**:
+    • Optimiert für reine Score-Berechnung
+    • Kein Display-Overhead
+    • CodeSystem Properties für itemWeight
+    • Efficient für Hintergrund-Berechnungen
+  end note
+  stop
+else (displayable = true\n+/- andere capabilities)
+  if (LOINC-Codes verfügbar\nmit Score-Gewichten?) then (✅ Ja)
+  :✅ **Inline answerOption**\nmit LOINC-Codes;
+  note right
+    **Pattern**: PHQ-9, PROMIS
+    * answerOption[].valueCoding.system = $LNC
+    * answerOption[].valueCoding.code = #LA6568-5
+    * answerOption[].extension[itemWeight].valueDecimal = 0
+    
+    **Vorteile**:
+    • Internationale Interoperabilität
+    • Semantische Eindeutigkeit
+    • Etablierte Standards
+  end note
+  stop
+else (❌ Nein)
+  if (Multiple Antwortformat-\nVarianten benötigt?) then (✅ Ja)
+    :✅ **MII CodeSystem + ValueSet**\nVarianten-Ansatz;
+    note right
+      **Pattern**: BDI-II (short/long)
+      * answerValueSet = "mii-vs-pro-bdi-bdi2-short"
+      * Separate ValueSets aus gemeinsamem CodeSystem
+      
+      **Vorteile**:
+      • Zentrale Code-Verwaltung
+      • Multiple ValueSet-Varianten
+      • Wiederverwendbare Konzepte
+    end note
+    stop
+  else (❌ Nein)
+    if (Wiederverwendung über\nmehrere Questionnaires?) then (✅ Ja)
+      :✅ **MII CodeSystem + ValueSet**\nWiederverwendungs-Ansatz;
+      note right
+        **Pattern**: Generische Severity Scales
+        * Gleiche Antwortmuster in verschiedenen Instrumenten
+        * Zentrale Terminologie-Wartung
+        
+        **Vorteile**:
+        • Konsistente Terminologie
+        • Harmonisierte Datenmodelle
+        • Effiziente Wartung
+      end note
+      stop
+    else (❌ Nein)
+      if (Komplexe Scoring-\nAnforderungen?) then (✅ Ja)
+        :✅ **MII CodeSystem + ValueSet**\nKomplexe-Scores-Ansatz;
+        note right
+          **Pattern**: Multi-Weight Scoring
+          * CodeSystem Properties für itemWeight
+          * Komplexe Berechnungslogik
+          
+          **Vorteile**:
+          • Erweiterte Scoring-Capabilities
+          • CodeSystem Properties
+          • Flexible Gewichtungssysteme
+        end note
+        stop
+      else (❌ Nein)
+        if (Einfache, statische\nAntwortliste ≤5 Optionen?) then (✅ Ja)
+          :✅ **Inline answerOption**\nmit einfachen Codes;
+          note right
+            **Pattern**: EQ-5D-5L
+            * answerOption[].valueCoding.code = #1
+            * answerOption[].valueCoding.display = "Text"
+            
+            **Vorteile**:
+            • Minimale Komplexität
+            • Direkter Code
+            • Geringe Wartungsanforderungen
+          end note
+          stop
+        else (❌ Nein)
+          :⚠️ **Fallback**: MII CodeSystem + ValueSet\nfür zukünftige Flexibilität;
+          note right
+            **Empfehlung**: Bei Unsicherheit
+            eher CodeSystem + ValueSet wählen
+            für spätere Erweiterbarkeit
+          end note
+          stop
+        endif
+      endif
+    endif
+  endif
+endif
+
+@enduml
