@@ -1,3 +1,4 @@
+# Synced from medizininformatik-initiative/mii-kds-module-template dev @ 18b94b187ae1 (2026-11-02). Re-sync: copy the template file and re-apply only the marked module additions.
 # =============================================================================
 # go-publish.yml — gated formal publication of a released module version
 #
@@ -10,12 +11,7 @@
 #            `.github/workflows/go-publish.yml` (main), parameterized for a
 #            module created from this template.
 #
-# Triggers:  workflow_dispatch (dry run or manual publish), and — since
-#            2026-09-11 — `release: published`: publishing a GitHub release
-#            (draft -> published, prereleases included) IS the human
-#            publication decision and runs this workflow with publish=true
-#            for the release tag. Drafts never fire. The date is read from
-#            the tagged sushi-config.yaml.
+# Triggers:  workflow_dispatch ONLY. This workflow never runs automatically.
 #
 # Toggle:    none by design. Per the repo's pipeline-toggle convention this
 #            workflow is OFF by default through its manual trigger plus the
@@ -70,19 +66,18 @@
 #   on the first push) and the CI preview advertised as `ci-build` in
 #   publication-request.json has been deployed.
 #
-# Placeholders to replace when creating a module: pro,
-#   medizininformatik-initiative, kerndatensatzmodul-proms (see sushi-config.yaml for the full table).
+# Placeholders to replace when creating a module: {{MODULE_SLUG}},
+#   {{GITHUB_ORG}}, {{REPO_NAME}} (see sushi-config.yaml for the full table).
 # =============================================================================
 name: Publish release with IG Publisher
 
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       release_ref:
-        description: "Immutable release tag to publish (e.g. v2027.0.0-ballot.rc2)"
+        description: "Immutable release tag to publish"
         required: true
+        default: "v{{CALVER_VERSION}}"
         type: string
       publication_date:
         description: "Publication date (YYYY-MM-DD, must match sushi-config.yaml); blank uses the tagged commit date"
@@ -99,32 +94,30 @@ permissions:
   contents: read
 
 concurrency:
-  group: ${{ (github.event_name == 'release' || inputs.publish) && 'gh-pages-writes' || format('go-publish-dry-run-{0}', github.run_id) }}
+  group: ${{ inputs.publish && 'gh-pages-writes' || format('go-publish-dry-run-{0}', github.run_id) }}
   queue: max
 
 env:
   # The module's FHIR canonical (MII convention — for example,
   # kerndatensatz-basis uses .../fhir/modul-base).
-  # MODULE ADAPTATION (PRO): the source canonical carries /ext/ (extension
-  # module namespace) — the template pattern without it would fail validation.
-  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro"
+  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/modul-{{MODULE_SLUG}}"
   # The publication website: GitHub Pages under the creating org. Deliberately
   # different from the canonical ("canonical-mismatch").
-  EXPECTED_PUBLICATION_BASE: "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms"
-  EXPECTED_PACKAGE_ID: "de.medizininformatikinitiative.kerndatensatz.pros"
+  EXPECTED_PUBLICATION_BASE: "https://{{GITHUB_ORG}}.github.io/{{REPO_NAME}}"
+  EXPECTED_PACKAGE_ID: "de.medizininformatikinitiative.kerndatensatz.{{MODULE_SLUG}}"
   # Pinned toolchain (bumped by the scheduled dependency check, never floating).
   # Must stay identical to ig-publisher.yml and module-release.yml —
   # scripts/toolchain-pins.test.mjs fails the build if they drift apart.
   PUBLISHER_VERSION: "2.3.2"
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
-  SUSHI_VERSION: "3.20.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
   JEKYLL_GEM_SHA256: "4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1"
 
 jobs:
   authorize:
     name: Authorize production publication
-    if: ${{ github.event_name == 'release' || inputs.publish }}
+    if: inputs.publish
     runs-on: ubuntu-latest
     environment: publication
     steps:
@@ -164,7 +157,7 @@ jobs:
       - name: Checkout tagged IG source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ github.event_name == 'release' && github.event.release.tag_name || inputs.release_ref }}
+          ref: ${{ inputs.release_ref }}
           fetch-depth: 0
           path: source
           persist-credentials: false
@@ -248,7 +241,7 @@ jobs:
         id: release
         shell: bash
         env:
-          RELEASE_REF: ${{ github.event_name == 'release' && github.event.release.tag_name || inputs.release_ref }}
+          RELEASE_REF: ${{ inputs.release_ref }}
           REQUESTED_DATE: ${{ inputs.publication_date }}
         run: |
           set -euo pipefail
@@ -311,10 +304,7 @@ jobs:
             source/sushi-config.yaml)"
           publication_date="${REQUESTED_DATE}"
           if [[ -z "${publication_date}" ]]; then
-            # Quelle der Wahrheit ist das Datum der GETAGGTEN sushi-config —
-            # das Commit-Datum kann legitim Tage abweichen und wuerde dann an
-            # der Gleichheitspruefung unten scheitern (rc4: 09-08 vs 09-06).
-            publication_date="$(sed -nE 's/^date:[[:space:]]*"?([0-9]{4}-[0-9]{2}-[0-9]{2})"?([[:space:]]*#.*)?$/\1/p' source/sushi-config.yaml)"
+            publication_date="$(git -C source show -s --format=%cs HEAD)"
           fi
           ig_date="$(sed -nE \
             's/^date:[[:space:]]*"?([0-9]{4}-[0-9]{2}-[0-9]{2})"?([[:space:]]*#.*)?$/\1/p' \
@@ -664,40 +654,6 @@ jobs:
             }' > site/publish-setup.json
           touch site/.nojekyll
 
-          # publish-setup.json DECLARES both feeds but nothing creates them on
-          # first publication — the Publisher appends entries to existing feeds,
-          # it does not seed the files. LC_ALL=C forces RFC-822 English dates
-          # (a German locale writes "Do., 03 Sep. 2026", which is invalid RSS).
-          RSS_DATE="$(LC_ALL=C date -u +'%a, %d %b %Y %H:%M:%S GMT')"
-          for feed in package-feed.xml publication-feed.xml; do
-            [[ -s "site/${feed}" ]] && continue
-            title="MII PRO Module — ${feed%%-feed.xml} feed"
-            # The publisher's feed updater (PublicationProcess.updateFeed) reads
-            # channel/lastBuildDate AND channel/pubDate unconditionally (NPE if
-            # either is missing) and its text fallback requires an existing
-            # "<item" marker -- measured on dry-run #6 (charAt(-2) crash). Both
-            # date elements are therefore mandatory in the seed, and the dc:/
-            # fhir: namespaces its generated items use are declared up front.
-            printf '%s\n' \
-              '<?xml version="1.0" encoding="UTF-8"?>' \
-              '<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">' \
-              '  <channel>' \
-              "    <title>${title}</title>" \
-              "    <link>${PUBLICATION_BASE}</link>" \
-              "    <description>${title}</description>" \
-              "    <atom:link rel=\"self\" type=\"application/rss+xml\" href=\"${PUBLICATION_BASE}/${feed}\"/>" \
-              '    <generator>MII module go-publish bootstrap</generator>' \
-              "    <lastBuildDate>${RSS_DATE}</lastBuildDate>" \
-              "    <pubDate>${RSS_DATE}</pubDate>" \
-              '  </channel>' \
-              '</rss>' > "site/${feed}"
-          done
-
-          # The non-bootstrap path TESTS for site/package-registry.json but the
-          # first formal publication has none yet — generate it.
-          java -jar "${RUNNER_TEMP}/publisher.jar" -generate-package-registry site
-          test -s site/package-registry.json
-
           {
             echo "### First-publication webroot seeded"
             echo
@@ -736,13 +692,7 @@ jobs:
           TX_URL: ${{ steps.terminology.outputs.tx_url }}
         run: |
           set -euo pipefail
-          # -fhir-settings must reach BOTH publisher invocations: the build call
-          # already carries it; without it here, -go-publish re-runs the SSRF
-          # server checks against the raw tx URL and refuses the proxy setup.
-          # (Do not comment inside the continuation below: a # in a
-          # backslash-continued line comments out the REST of the logical line.)
           java -Xmx6g -jar "${RUNNER_TEMP}/publisher.jar" -go-publish \
-            -fhir-settings "${GITHUB_WORKSPACE}/source/.github/fhir-settings.json" \
             -source "${GITHUB_WORKSPACE}/source" \
             -web "${GITHUB_WORKSPACE}/site" \
             -history "${GITHUB_WORKSPACE}/publication/history" \
@@ -834,7 +784,7 @@ jobs:
           LABEL: ${{ steps.release.outputs.label }}
           PUBLICATION_BASE: ${{ steps.release.outputs.publication_base }}
           PUBLICATION_PATH: ${{ steps.release.outputs.publication_path }}
-          PUBLISH: ${{ (github.event_name == 'release' || inputs.publish) && 'true' || 'false' }}
+          PUBLISH: ${{ inputs.publish }}
           VERSION: ${{ steps.release.outputs.version }}
         run: |
           set -euo pipefail
@@ -1043,7 +993,7 @@ jobs:
 
   publish:
     name: Commit publication and prepare Pages artifact
-    if: ${{ github.event_name == 'release' || inputs.publish }}
+    if: inputs.publish
     needs: prepare
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -1121,7 +1071,7 @@ jobs:
 
   deploy:
     name: Deploy GitHub Pages
-    if: ${{ github.event_name == 'release' || inputs.publish }}
+    if: inputs.publish
     needs:
       - prepare
       - publish
@@ -1136,29 +1086,8 @@ jobs:
       id-token: write
 
     steps:
-      # SERVING-MODUS (2026-09-11): Pages serviert vom gh-pages-BRANCH
-      # (build_type=legacy). Gemessen wurden drei per Actions-API erfolgreiche
-      # Deployments (12:14 dev, 14:03 Tag, 14:32 dev), von denen der Origin
-      # keines auslieferte (age:0/MISS bei Last-Modified des Altstands); der
-      # Branch-Build lieferte sofort korrekt. Im Legacy-Modus IST der
-      # gh-pages-Push des publish-Jobs das Deployment — deploy-pages wuerde
-      # nur noch fehlschlagen und wird uebersprungen.
-      - name: Detect Pages serving mode
-        id: pagesmode
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          bt="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq .build_type)"
-          echo "build_type=${bt}" >> "${GITHUB_OUTPUT}"
-          if [[ "${bt}" == "legacy" ]]; then
-            echo "Pages serves the gh-pages branch directly; the branch push already deployed. Requesting a fresh branch build." >> "${GITHUB_STEP_SUMMARY}"
-            gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" >/dev/null || true
-          fi
-
       - name: Deploy exact Pages artifact
         id: deployment
-        if: steps.pagesmode.outputs.build_type == 'workflow'
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
 
       - name: Verify Pages publication
@@ -1166,7 +1095,7 @@ jobs:
         env:
           CANONICAL: ${{ needs.prepare.outputs.canonical }}
           LABEL: ${{ needs.prepare.outputs.label }}
-          PAGES_URL: ${{ steps.deployment.outputs.page_url || format('{0}/', env.EXPECTED_PUBLICATION_BASE) }}
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
           VERSION: ${{ needs.prepare.outputs.version }}
         run: |
           set -euo pipefail
@@ -1177,7 +1106,7 @@ jobs:
             echo "::error::Pages deployed at ${pages_base}, expected ${publication_base}."
             exit 1
           fi
-          for attempt in {1..60}; do  # Legacy-Branch-Build: grosszuegiges Fenster
+          for attempt in {1..18}; do
             if package_list="$(curl --fail --location --silent --show-error \
               --max-time 30 "${publication_base}/package-list.json")" &&
               jq -e \
