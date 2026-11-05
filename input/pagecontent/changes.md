@@ -6,6 +6,12 @@ This page documents the changes between versions of the MII PRO module.
 
 ### Unreleased (dev)
 
+_Nothing yet._
+
+### 2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)
+
+First release candidate of the 2027 line after the ballot (2027.0.0-ballot.1). Content changes relative to the ballot:
+
 **CQL scoring library PROMIS-29** (`mii-lib-pro-promis-29`, beads 6yu.12): server channel of the dual-channel architecture, generated from the same weight and T-score tables as the FHIRPath expressions (`scripts/generate-promis29-cql.py`), packaged as a Library with CQL and pre-compiled ELM (`scripts/package-cql-library.py`, cql-translation-service) and bound to the Questionnaire via `cqf-library`. Define names = score linkIds. Differential test with cql-execution over all 22 scenarios in both call paths (parameter and retrieve).
 
 **Scoring weights repaired and unified** (beads g3b.13–18): a runtime check of every instrument with `.weight()` scoring (fhirpath.js, synthetic QuestionnaireResponse) found four silent failures: **BDI-II** (weights lived as `ordinalValue` on the ValueSet and were lost in the SDC 4 upgrade, instrument `active`), **MIDOS2** (CodeSystem without weights), **EQ-5D-5L collectable** (levels without weights, empty profile string) and **SCOFF, PC-PTSD, WI-7** (`itemWeight` on the `valueCoding` instead of the `answerOption`, where form renderers do not read it). Weights are now `itemWeight` properties on the MII CodeSystems (BDI-II, MIDOS2, EQ-5D-5L) or on the `answerOption` (yes/no RuleSet). New: RuleSets `WeightedOption`, `WeightedOptionIntl`, `WeightedConcept`, `WeightedConceptIntl`, `ItemWeightProperty` as the only way to write weights; the Questionnaire profile allows `itemWeight` only on `answerOption.extension` (0..0 on the Coding); `scripts/scoring-smoke.test.mjs` checks in CI that every score expression yields a value. EORTC CodeSystem: missing property declaration with URI added. The smoke test also found: BDI-II and EQ-5D-5L filtered QR items by `type = 'choice'` (QuestionnaireResponse items have no type, result always empty), the BDI-II T-score cascade lacked a parenthesis, four EORTC symptom scales had one too many, MIDOS2 never had a score item for the symptom sum (now `midos2-score-symptom-sum`, catalogue code `midos2-symptom-sum`), and the EQ-5D-5L collectable options used codes 1–5/9 against a CodeSystem whose codes are MO-1…AD-5 (corrected, pseudo option “9 missing value” removed; the profile string now uses `toString()` for concatenation).
