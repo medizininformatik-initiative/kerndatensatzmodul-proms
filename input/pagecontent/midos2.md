@@ -111,7 +111,12 @@ The complete resource is in the [CodeSystem definition](CodeSystem-mii-cs-pro-mi
 ```
 // FHIR variable: symptomSumScore
 %resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.weight().sum()
+
+// readOnly score item midos2-score-symptom-sum (MII score code midos2-symptom-sum, unit {score})
+%symptomSumScore
 ```
+
+The answer weights (0–3) are `itemWeight` properties on the CodeSystem `mii-cs-pro-midos2`; the score item is flagged for Observation extraction.
 
 ### Literature
 
