@@ -30,16 +30,19 @@ Execute Phase 5: Merge and Tag Release
 
    ```bash
    git fetch origin
-   git log --oneline origin/dev..origin/release/v{VERSION}
+   git diff --stat origin/dev origin/release/v{VERSION}          # INHALT: muss leer sein
+   git log --oneline origin/dev..origin/release/v{VERSION}       # Commits: leer bei Merge-Commit
    ```
 
-   Die Ausgabe MUSS leer sein. Ist sie es nicht, wurde der Release-PR nicht gemergt
-   (oder nur teilweise): PR mergen bzw. die fehlenden Commits nach `dev` bringen,
-   dann erst weiter. Zusaetzlich fuer die Vorgaenger-Branches:
+   Massgeblich ist der INHALTS-Vergleich (`git diff`): Release-PRs werden per Squash
+   gemergt, dann sind die Branch-Commits nie Vorfahren von `dev`, der Inhalt aber schon.
+   Ist der Diff nicht leer, wurde der Release-PR nicht (oder nur teilweise) gemergt:
+   PR mergen bzw. die fehlenden Aenderungen nach `dev` bringen, dann erst weiter.
+   Zusaetzlich fuer die Vorgaenger-Branches:
 
    ```bash
    for b in $(git branch -r --list 'origin/release/*'); do
-     n=$(git rev-list --count origin/dev..$b); [ "$n" -gt 0 ] && echo "$b: $n Commits nicht in dev"
+     n=$(git diff --shortstat origin/dev $b | wc -l); [ "$n" -gt 0 ] && echo "$b: Inhalt weicht von dev ab"
    done
    ```
 
