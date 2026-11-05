@@ -19,6 +19,9 @@ Die PRO-Bibliothek des MII Moduls PRO umfasst eine strukturierte Sammlung von Pa
 | **PROMIS Cognitive Function SF 4a** | Vollständig | Kognition | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **PROMIS Global Health v1.2** | Entwurf (DE-Übersetzung 3/10 Items) | Globale Gesundheit | 10 | EN (DE teilweise) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **PHQ-D Panikblock** | Vollständig | Panik-Screening | 4 | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **BAASIS** | Metadata-only (Tier B) | Adhärenz (NTx) | 10 | DE (Struktur) | - | - | - | ✓ | - | - |
+| **ABQ** | Metadata-only (Tier B) | Adhärenzbarrieren (NTx) | 16 | DE (Struktur) | - | - | ✓ | ✓ | - | - |
+| **MTSOSD-R59** | Metadata-only (Tier B) | Symptome nach Transplantation (NTx) | 62×2 | DE (Struktur) | - | - | - | ✓ | - | - |
 | **EORTC QLQ-C30** | Vollständig | Onkologie | 30 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | - |
 | **DASS-21** | Vollständig | Depression/Angst/Stress | 21 | DE/EN | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | **PRO-CTCAE** | Neu | Nebenwirkungen (Onkologie) | 124 (Item-Bibliothek) | DE/EN | ✓ | ✓ | ✓ | ✓ | ✓ | - |

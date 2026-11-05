@@ -11,6 +11,7 @@ PCOR-MII-Lücken im Modul geschlossen (Upstream-Bedarf laut PCOR-MII-IG, Seite �
 
 - **PHQ-D Panikblock** (`mii-qst-pro-phq-panic`): die vier Ja/Nein-Screeningitems 3a–3d des PHQ im PHQ-D-Block-Namespace (`phq-phq3a`…`phq-phq3d`), EN-primär mit PHQ-D-Übersetzung, Sprungregel als `enableWhen`, Zählitem 0–4 (Screening positiv nur bei 4). Symptomliste 4a–4k nicht modelliert, linkIds reserviert.
 - **PROMIS Scale v1.2 – Global Health** (`mii-qst-pro-promis-global-health`, LOINC-Panel `85524-7`): alle zehn Items, Rohwerte Global Physical/Mental Health (4–20) mit v1.2-Umkodierung, zwei ObservationDefinitions. `status = draft`, bis die offizielle deutsche Übersetzung für Global03–06 und 08–10 vorliegt; T-Scores folgen als CQL. Ersetzt den lokalen 2-Item-Questionnaire `PROMISGH` in PCOR-MII.
+- **NTx metadata-only-Stubs** BAASIS, ABQ, MTSOSD-R59 (`mii-qst-pro-baasis`, `-abq`, `-mtsosd-r59`): Struktur, linkIds, Wertebereiche und Bedingungen ohne Originalwortlaut (Publikationsverbot der Items), `displayable`/`collectable = false`, Bezugsweg im `copyright`; Vollversionen nur über den Form Server.
 - Befund PROMIS Sleep-Related Impairment: PCOR-MII erhebt kein SRI SF 4a (Dictionary enthält nur das PROMIS-16-Item Sleep25).
 
 **Version: 2026.7.0**

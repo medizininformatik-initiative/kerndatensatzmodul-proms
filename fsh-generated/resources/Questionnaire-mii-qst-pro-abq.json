@@ -1,0 +1,211 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-abq",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-rc.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-abq",
+  "title": "ABQ (metadata-only)",
+  "description": "ABQ — Adherence Barriers Questionnaire (Müller, Kohlmann, Wilke 2015). Metadata-only (Tier B): Struktur ohne Item-Wortlaut.",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": false
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": false
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": false
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "abqSum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^abq-q(0[1-9]|1[0-6])$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "abq",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "ABQ (Adherence Barriers Questionnaire)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "abq-q01",
+      "type": "choice",
+      "text": "ABQ Item 01 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q02",
+      "type": "choice",
+      "text": "ABQ Item 02 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q03",
+      "type": "choice",
+      "text": "ABQ Item 03 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q04",
+      "type": "choice",
+      "text": "ABQ Item 04 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q05",
+      "type": "choice",
+      "text": "ABQ Item 05 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q06",
+      "type": "choice",
+      "text": "ABQ Item 06 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q07",
+      "type": "choice",
+      "text": "ABQ Item 07 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q08",
+      "type": "choice",
+      "text": "ABQ Item 08 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q09",
+      "type": "choice",
+      "text": "ABQ Item 09 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q10",
+      "type": "choice",
+      "text": "ABQ Item 10 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q11",
+      "type": "choice",
+      "text": "ABQ Item 11 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q12",
+      "type": "choice",
+      "text": "ABQ Item 12 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q13",
+      "type": "choice",
+      "text": "ABQ Item 13 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q14",
+      "type": "choice",
+      "text": "ABQ Item 14 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q15",
+      "type": "choice",
+      "text": "ABQ Item 15 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "linkId": "abq-q16",
+      "type": "choice",
+      "text": "ABQ Item 16 (Stufe 1-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "abq-total",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+          "display": "ABQ Total Score (16-64)"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%abqSum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "abq-score-total",
+      "type": "decimal",
+      "prefix": "Score",
+      "readOnly": true,
+      "text": "ABQ Summenwert (16-64)"
+    }
+  ],
+  "version": "2027.0.0-rc.1",
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "copyright": "ABQ © Müller S, Kohlmann T, Wilke T 2015 (Adherence Barriers Questionnaire). Lizenz-Status: Tier B (metadata-only). Eine Veröffentlichung der konkreten Items einschließlich Antwortmöglichkeiten ist nicht erlaubt. Wissenschaftliche Nutzung ohne Pharma-Beteiligung ist kostenfrei; jedes Zentrum benötigt eine eigene Lizenzvereinbarung."
+}

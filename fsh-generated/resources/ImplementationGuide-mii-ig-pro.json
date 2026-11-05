@@ -233,6 +233,21 @@
     "resource": [
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-abq-response"
+        },
+        "name": "ABQ Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-abq-score"
+        },
+        "name": "ABQ Score Observation Example",
+        "description": "ABQ Total Score aus der Beispiel-QuestionnaireResponse (33 von 16-64)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-pro-bdi-ii-observation"
         },
         "name": "BDI-II Observation Example",
@@ -662,6 +677,22 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-abq-answers"
+        },
+        "name": "MII CS PRO ABQ Answers",
+        "description": "Neutral benannte 4-stufige Antwortskala des ABQ (metadata-only, Tier B). Konzeptbezeichnungen bewusst neutral (Stufe 1-4) statt der Original-Antwortbezeichnungen. itemWeight 1-4.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-baasis-frequency"
+        },
+        "name": "MII CS PRO BAASIS Frequency",
+        "description": "Neutral benannte 5-stufige Häufigkeitsskala der BAASIS-Teilfragen (metadata-only, Tier B). Konzeptbezeichnungen bewusst neutral (Stufe 1-5) statt der Original-Antwortbezeichnungen. itemWeight 1-5.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-bdi-bdi2"
         },
         "name": "MII CS PRO BDI-II",
@@ -706,6 +737,14 @@
         },
         "name": "MII CS PRO MIDOS2 Items and Response Scales",
         "description": "CodeSystem for the Minimal Documentation System v2 (MIDOS2) — German palliative care symptom screening instrument. Contains item codes, DGP-4-stufige Severity-Skala, and 4-stufige Wohlbefinden-Skala. German primary language, English translations as designations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-pro-mtsosd-r59-occurrence"
+        },
+        "name": "MII CS PRO MTSOSD-R59 Occurrence",
+        "description": "Neutral benannte 5-stufige Auftretensskala des MTSOSD-R59 (metadata-only, Tier B). Konzeptbezeichnungen bewusst neutral (Stufe 0-4). itemWeight 0-4.",
         "exampleBoolean": false
       },
       {
@@ -918,6 +957,22 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw"
+        },
+        "name": "MII ObsDef PRO PROMIS Global Health Mental Raw Score",
+        "description": "PROMIS Global Mental Health raw score (Global02 + Global04 + Global05 + Global10 recoded), range 4-20",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw"
+        },
+        "name": "MII ObsDef PRO PROMIS Global Health Physical Raw Score",
+        "description": "PROMIS Global Physical Health raw score (Global03 + Global06 + Global07 recoded + Global08 recoded), range 4-20",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore"
         },
         "name": "MII ObsDef PRO PROMIS-29 Anxiety T-Score",
@@ -978,6 +1033,14 @@
         },
         "name": "MII ObsDef PRO PROMIS-29 Social Function T-Score",
         "description": "PROMIS Ability to Participate in Social Roles and Activities T-Score from PROMIS-29 Profile v2.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-abq"
+        },
+        "name": "MII ObsDef PRO Score ABQ",
+        "description": "ABQ total score (16-64) — Adherence Barriers Questionnaire",
         "exampleBoolean": false
       },
       {
@@ -1050,6 +1113,14 @@
         },
         "name": "MII ObsDef PRO Score PHQ-9",
         "description": "Patient Health Questionnaire (PHQ-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/mii-obsdef-pro-score-phq-panic"
+        },
+        "name": "MII ObsDef PRO Score PHQ-D Panikblock",
+        "description": "PHQ panic screening items 3a-3d — number of 'yes' answers (0-4); all four 'yes' = screening positive",
         "exampleBoolean": false
       },
       {
@@ -1270,6 +1341,22 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-abq"
+        },
+        "name": "MII QST PRO ABQ",
+        "description": "ABQ — Adherence Barriers Questionnaire (Müller, Kohlmann, Wilke 2015). Metadata-only (Tier B): Struktur ohne Item-Wortlaut.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-baasis"
+        },
+        "name": "MII QST PRO BAASIS",
+        "description": "BAASIS — Basel Assessment of Adherence to Immunosuppressive Medications Scale (Universität Basel). Metadata-only (Tier B): Struktur ohne Item-Wortlaut.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-bdi-bdi2"
         },
         "name": "MII QST PRO BDI-II",
@@ -1390,6 +1477,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-mtsosd-r59"
+        },
+        "name": "MII QST PRO MTSOSD-R59",
+        "description": "MTSOSD-R59 — Symptomfragebogen mit 59 Symptomen plus 3 Freitext-Symptomen (KU Leuven). Metadata-only (Tier B): Struktur ohne Item-Wortlaut.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-pc-ptsd"
         },
         "name": "MII QST PRO PC-PTSD",
@@ -1414,6 +1509,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-qst-pro-phq-panic"
+        },
+        "name": "MII QST PRO PHQ-D Panikblock",
+        "description": "PHQ panic screening items 3a-3d (Spitzer, Kroenke & Williams 1999) with validated German translation (PHQ-D, Löwe et al. 2002) — four yes/no items on anxiety attacks, 4-week recall",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/mii-qst-pro-pro-ctcae-onkologisches-basisscreening"
         },
         "name": "MII QST PRO PRO-CTCAE Onkologisches Basisscreening",
@@ -1434,6 +1537,14 @@
         },
         "name": "MII QST PRO PROMIS Depression SF 4a (Adults)",
         "description": "PROMIS Depression Short Form 4a - Adults - Item Bank v1.0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mii-qst-pro-promis-global-health"
+        },
+        "name": "MII QST PRO PROMIS Global Health v1.2",
+        "description": "PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07).",
         "exampleBoolean": false
       },
       {
@@ -1498,6 +1609,22 @@
         },
         "name": "MII QST PRO WI-7",
         "description": "WI-7 (Whiteley-7) questionnaire — seven-item screening scale for hypochondriasis and somatization (Fink et al. 1999) with German translation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-abq-answers"
+        },
+        "name": "MII VS PRO ABQ Answers",
+        "description": "Neutral benannte 4-stufige Antwortskala des ABQ (Stufe 1-4), metadata-only (Tier B).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-baasis-frequency"
+        },
+        "name": "MII VS PRO BAASIS Frequency",
+        "description": "Neutral benannte 5-stufige Häufigkeitsskala der BAASIS-Teilfragen (Stufe 1-5), metadata-only (Tier B).",
         "exampleBoolean": false
       },
       {
@@ -1570,6 +1697,14 @@
         },
         "name": "MII VS PRO MIDOS2 Wohlbefinden-Skala",
         "description": "4-stufige Wohlbefinden-Skala (sehr gut, eher gut, eher schlecht, sehr schlecht) — wird für das Wohlbefinden-Item des MIDOS2 verwendet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+        },
+        "name": "MII VS PRO MTSOSD-R59 Occurrence",
+        "description": "Neutral benannte 5-stufige Auftretensskala des MTSOSD-R59 (Stufe 0-4), metadata-only (Tier B).",
         "exampleBoolean": false
       },
       {
@@ -1832,6 +1967,21 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-phq-panic-response"
+        },
+        "name": "PHQ-D Panikblock Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-phq-panic-score"
+        },
+        "name": "PHQ-D Panikblock Score Observation Example",
+        "description": "PHQ-D Panikblock yes-count from the example QuestionnaireResponse (3 of 4)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
           "reference": "ObservationDefinition/mii-obsdef-pro-score-proctcae-acs"
         },
         "name": "PRO-CTCAE Average Composite Score (ACS)",
@@ -1859,6 +2009,29 @@
           "reference": "Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation"
         },
         "name": "PROMIS Depression T-Score, derived from BDI-II Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-pro-promis-global-health-response"
+        },
+        "name": "PROMIS Global Health Questionnaire Response Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-global-health-mental-raw"
+        },
+        "name": "PROMIS Global Mental Health Raw Score Example",
+        "description": "Global Mental Health raw score from the example QuestionnaireResponse (12 of 4-20)",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-promis-global-health-physical-raw"
+        },
+        "name": "PROMIS Global Physical Health Raw Score Example",
+        "description": "Global Physical Health raw score from the example QuestionnaireResponse (14 of 4-20)",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
       },
       {
@@ -2243,6 +2416,11 @@
               "generation": "markdown"
             },
             {
+              "nameUrl": "phq-panic.html",
+              "title": "PHQ-D Panikblock",
+              "generation": "markdown"
+            },
+            {
               "nameUrl": "bdi-ii.html",
               "title": "BDI-II",
               "generation": "markdown"
@@ -2285,6 +2463,11 @@
             {
               "nameUrl": "promis-cognitive-function.html",
               "title": "PROMIS Cognitive Function SF 4a",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "promis-global-health.html",
+              "title": "PROMIS Global Health v1.2",
               "generation": "markdown"
             },
             {
@@ -2345,6 +2528,11 @@
             {
               "nameUrl": "euronet-soma.html",
               "title": "EURONET-SOMA",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ntx-adherence-instruments.html",
+              "title": "NTx Adherence Instruments (metadata-only)",
               "generation": "markdown"
             },
             {

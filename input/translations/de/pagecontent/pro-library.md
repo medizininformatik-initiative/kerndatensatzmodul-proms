@@ -27,6 +27,9 @@ Die PRO-Bibliothek ist die strukturierte Sammlung der Patient-Reported Outcome M
 | [SSD-12](ssd-12.html) | Somatische Belastungsstörung, B-Kriterien | 12 | de | Summe 0–48 | frei |
 | [ISR-Z](isr-z.html) | Zwangs-Subskala (ISR) | 3 | de | **Mittelwert** 0–4 | frei |
 | [EURONET-SOMA](euronet-soma.html) | Somatische Kern-Items | 2 | en (de: PCOR-MII) | keiner (Einzelitems) | frei |
+| [BAASIS](ntx-adherence-instruments.html) | Adhärenz Immunsuppressiva (Transplantation) | 10 | de (nur Struktur) | keiner (dichotome Nonadhärenz, dokumentiert) | © Univ. Basel — metadata-only (Tier B) |
+| [ABQ](ntx-adherence-instruments.html) | Adhärenzbarrieren | 16 | de (nur Struktur) | Summe 16–64 | Müller et al. 2015 — metadata-only (Tier B) |
+| [MTSOSD-R59](ntx-adherence-instruments.html) | Symptomauftreten/-belastung nach Transplantation | 59 (+3 Freitext) × 2 | de (nur Struktur) | keiner ausgeliefert (dokumentiert) | © KU Leuven — metadata-only (Tier B) |
 
 ### Metadata-only-Referenzen
 

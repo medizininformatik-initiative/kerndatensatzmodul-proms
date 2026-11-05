@@ -1,0 +1,1432 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-mtsosd-r59",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-rc.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-mtsosd-r59",
+  "title": "MTSOSD-R59 (metadata-only)",
+  "description": "MTSOSD-R59 — Symptomfragebogen mit 59 Symptomen plus 3 Freitext-Symptomen (KU Leuven). Metadata-only (Tier B): Struktur ohne Item-Wortlaut.",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": false
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": false
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": false
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": false
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "code": [
+    {
+      "code": "mtsosd-r59",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "MTSOSD-R59 (Symptomfragebogen, 59 Symptome)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "mtsosd-r59-q01",
+      "type": "choice",
+      "text": "Symptom 01 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q01",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q01-distress",
+      "type": "integer",
+      "text": "Symptom 01 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q02",
+      "type": "choice",
+      "text": "Symptom 02 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q02",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q02-distress",
+      "type": "integer",
+      "text": "Symptom 02 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q03",
+      "type": "choice",
+      "text": "Symptom 03 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q03",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q03-distress",
+      "type": "integer",
+      "text": "Symptom 03 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q04",
+      "type": "choice",
+      "text": "Symptom 04 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q04",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q04-distress",
+      "type": "integer",
+      "text": "Symptom 04 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q05",
+      "type": "choice",
+      "text": "Symptom 05 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q05",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q05-distress",
+      "type": "integer",
+      "text": "Symptom 05 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q06",
+      "type": "choice",
+      "text": "Symptom 06 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q06",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q06-distress",
+      "type": "integer",
+      "text": "Symptom 06 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q07",
+      "type": "choice",
+      "text": "Symptom 07 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q07",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q07-distress",
+      "type": "integer",
+      "text": "Symptom 07 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q08",
+      "type": "choice",
+      "text": "Symptom 08 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q08",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q08-distress",
+      "type": "integer",
+      "text": "Symptom 08 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q09",
+      "type": "choice",
+      "text": "Symptom 09 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q09",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q09-distress",
+      "type": "integer",
+      "text": "Symptom 09 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q10",
+      "type": "choice",
+      "text": "Symptom 10 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q10",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q10-distress",
+      "type": "integer",
+      "text": "Symptom 10 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q11",
+      "type": "choice",
+      "text": "Symptom 11 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q11",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q11-distress",
+      "type": "integer",
+      "text": "Symptom 11 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q12",
+      "type": "choice",
+      "text": "Symptom 12 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q12",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q12-distress",
+      "type": "integer",
+      "text": "Symptom 12 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q13",
+      "type": "choice",
+      "text": "Symptom 13 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q13",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q13-distress",
+      "type": "integer",
+      "text": "Symptom 13 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q14",
+      "type": "choice",
+      "text": "Symptom 14 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q14",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q14-distress",
+      "type": "integer",
+      "text": "Symptom 14 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q15",
+      "type": "choice",
+      "text": "Symptom 15 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q15",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q15-distress",
+      "type": "integer",
+      "text": "Symptom 15 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q16",
+      "type": "choice",
+      "text": "Symptom 16 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q16",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q16-distress",
+      "type": "integer",
+      "text": "Symptom 16 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q17",
+      "type": "choice",
+      "text": "Symptom 17 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q17",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q17-distress",
+      "type": "integer",
+      "text": "Symptom 17 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q18",
+      "type": "choice",
+      "text": "Symptom 18 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q18",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q18-distress",
+      "type": "integer",
+      "text": "Symptom 18 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q19",
+      "type": "choice",
+      "text": "Symptom 19 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q19",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q19-distress",
+      "type": "integer",
+      "text": "Symptom 19 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q20",
+      "type": "choice",
+      "text": "Symptom 20 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q20",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q20-distress",
+      "type": "integer",
+      "text": "Symptom 20 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q21",
+      "type": "choice",
+      "text": "Symptom 21 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q21",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q21-distress",
+      "type": "integer",
+      "text": "Symptom 21 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q22",
+      "type": "choice",
+      "text": "Symptom 22 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q22",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q22-distress",
+      "type": "integer",
+      "text": "Symptom 22 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q23",
+      "type": "choice",
+      "text": "Symptom 23 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q23",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q23-distress",
+      "type": "integer",
+      "text": "Symptom 23 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q24",
+      "type": "choice",
+      "text": "Symptom 24 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q24",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q24-distress",
+      "type": "integer",
+      "text": "Symptom 24 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q25",
+      "type": "choice",
+      "text": "Symptom 25 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q25",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q25-distress",
+      "type": "integer",
+      "text": "Symptom 25 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q26",
+      "type": "choice",
+      "text": "Symptom 26 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q26",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q26-distress",
+      "type": "integer",
+      "text": "Symptom 26 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q27-male",
+      "type": "choice",
+      "text": "Symptom 27 (männlich) — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q27-male",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q27-male-distress",
+      "type": "integer",
+      "text": "Symptom 27 (männlich) — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q27-female",
+      "type": "choice",
+      "text": "Symptom 27 (weiblich) — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q27-female",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q27-female-distress",
+      "type": "integer",
+      "text": "Symptom 27 (weiblich) — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q28",
+      "type": "choice",
+      "text": "Symptom 28 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q28",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q28-distress",
+      "type": "integer",
+      "text": "Symptom 28 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q29",
+      "type": "choice",
+      "text": "Symptom 29 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q29",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q29-distress",
+      "type": "integer",
+      "text": "Symptom 29 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q30",
+      "type": "choice",
+      "text": "Symptom 30 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q30",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q30-distress",
+      "type": "integer",
+      "text": "Symptom 30 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q31",
+      "type": "choice",
+      "text": "Symptom 31 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q31",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q31-distress",
+      "type": "integer",
+      "text": "Symptom 31 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q32",
+      "type": "choice",
+      "text": "Symptom 32 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q32",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q32-distress",
+      "type": "integer",
+      "text": "Symptom 32 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q33",
+      "type": "choice",
+      "text": "Symptom 33 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q33",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q33-distress",
+      "type": "integer",
+      "text": "Symptom 33 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q34",
+      "type": "choice",
+      "text": "Symptom 34 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q34",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q34-distress",
+      "type": "integer",
+      "text": "Symptom 34 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q35",
+      "type": "choice",
+      "text": "Symptom 35 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q35",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q35-distress",
+      "type": "integer",
+      "text": "Symptom 35 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q36",
+      "type": "choice",
+      "text": "Symptom 36 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q36",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q36-distress",
+      "type": "integer",
+      "text": "Symptom 36 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q37",
+      "type": "choice",
+      "text": "Symptom 37 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q37",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q37-distress",
+      "type": "integer",
+      "text": "Symptom 37 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q38",
+      "type": "choice",
+      "text": "Symptom 38 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q38",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q38-distress",
+      "type": "integer",
+      "text": "Symptom 38 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q39",
+      "type": "choice",
+      "text": "Symptom 39 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q39",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q39-distress",
+      "type": "integer",
+      "text": "Symptom 39 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q40",
+      "type": "choice",
+      "text": "Symptom 40 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q40",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q40-distress",
+      "type": "integer",
+      "text": "Symptom 40 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q41",
+      "type": "choice",
+      "text": "Symptom 41 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q41",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q41-distress",
+      "type": "integer",
+      "text": "Symptom 41 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q42",
+      "type": "choice",
+      "text": "Symptom 42 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q42",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q42-distress",
+      "type": "integer",
+      "text": "Symptom 42 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q43",
+      "type": "choice",
+      "text": "Symptom 43 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q43",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q43-distress",
+      "type": "integer",
+      "text": "Symptom 43 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q44",
+      "type": "choice",
+      "text": "Symptom 44 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q44",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q44-distress",
+      "type": "integer",
+      "text": "Symptom 44 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q45",
+      "type": "choice",
+      "text": "Symptom 45 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q45",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q45-distress",
+      "type": "integer",
+      "text": "Symptom 45 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q46",
+      "type": "choice",
+      "text": "Symptom 46 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q46",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q46-distress",
+      "type": "integer",
+      "text": "Symptom 46 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q47",
+      "type": "choice",
+      "text": "Symptom 47 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q47",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q47-distress",
+      "type": "integer",
+      "text": "Symptom 47 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q48",
+      "type": "choice",
+      "text": "Symptom 48 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q48",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q48-distress",
+      "type": "integer",
+      "text": "Symptom 48 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q49",
+      "type": "choice",
+      "text": "Symptom 49 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q49",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q49-distress",
+      "type": "integer",
+      "text": "Symptom 49 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q50",
+      "type": "choice",
+      "text": "Symptom 50 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q50",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q50-distress",
+      "type": "integer",
+      "text": "Symptom 50 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q51",
+      "type": "choice",
+      "text": "Symptom 51 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q51",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q51-distress",
+      "type": "integer",
+      "text": "Symptom 51 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q52",
+      "type": "choice",
+      "text": "Symptom 52 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q52",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q52-distress",
+      "type": "integer",
+      "text": "Symptom 52 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q53",
+      "type": "choice",
+      "text": "Symptom 53 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q53",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q53-distress",
+      "type": "integer",
+      "text": "Symptom 53 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q54",
+      "type": "choice",
+      "text": "Symptom 54 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q54",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q54-distress",
+      "type": "integer",
+      "text": "Symptom 54 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q55",
+      "type": "choice",
+      "text": "Symptom 55 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q55",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q55-distress",
+      "type": "integer",
+      "text": "Symptom 55 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q56",
+      "type": "choice",
+      "text": "Symptom 56 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q56",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q56-distress",
+      "type": "integer",
+      "text": "Symptom 56 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q57",
+      "type": "choice",
+      "text": "Symptom 57 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q57",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q57-distress",
+      "type": "integer",
+      "text": "Symptom 57 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q58",
+      "type": "choice",
+      "text": "Symptom 58 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q58",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q58-distress",
+      "type": "integer",
+      "text": "Symptom 58 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q59",
+      "type": "choice",
+      "text": "Symptom 59 — Auftreten (0-4)",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-mtsosd-r59-occurrence"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q59",
+          "operator": "!=",
+          "answerCoding": {
+            "code": "stufe-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-mtsosd-r59-occurrence",
+            "display": "Stufe 0"
+          }
+        }
+      ],
+      "linkId": "mtsosd-r59-q59-distress",
+      "type": "integer",
+      "text": "Symptom 59 — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q60",
+      "type": "text",
+      "text": "Symptom 60 (Freitext) — Freitext"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q60",
+          "operator": "exists",
+          "answerBoolean": true
+        }
+      ],
+      "linkId": "mtsosd-r59-q60-distress",
+      "type": "integer",
+      "text": "Symptom 60 (Freitext) — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q61",
+      "type": "text",
+      "text": "Symptom 61 (Freitext) — Freitext"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q61",
+          "operator": "exists",
+          "answerBoolean": true
+        }
+      ],
+      "linkId": "mtsosd-r59-q61-distress",
+      "type": "integer",
+      "text": "Symptom 61 (Freitext) — Belastung"
+    },
+    {
+      "linkId": "mtsosd-r59-q62",
+      "type": "text",
+      "text": "Symptom 62 (Freitext) — Freitext"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "mtsosd-r59-q62",
+          "operator": "exists",
+          "answerBoolean": true
+        }
+      ],
+      "linkId": "mtsosd-r59-q62-distress",
+      "type": "integer",
+      "text": "Symptom 62 (Freitext) — Belastung"
+    }
+  ],
+  "version": "2027.0.0-rc.1",
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "copyright": "MTSOSD-R59 © KU Leuven. Lizenz-Status: Tier B (metadata-only). Eine Veröffentlichung der konkreten Items einschließlich Antwortmöglichkeiten ist nicht erlaubt. Wissenschaftliche Nutzung ohne Pharma-Beteiligung ist kostenfrei; jedes Zentrum benötigt eine eigene Lizenzvereinbarung. Kontakt: joke.willems@kuleuven.be"
+}

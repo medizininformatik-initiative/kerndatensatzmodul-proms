@@ -27,6 +27,9 @@ The PRO Library is the module's structured collection of Patient-Reported Outcom
 | [SSD-12](ssd-12.html) | Somatic symptom disorder, B criteria | 12 | de | Sum 0–48 | free |
 | [ISR-Z](isr-z.html) | Obsessive-compulsive subscale (ISR) | 3 | de | **Mean** 0–4 | free |
 | [EURONET-SOMA](euronet-soma.html) | Somatic core items | 2 | en (de: PCOR-MII) | none (single items) | free |
+| [BAASIS](ntx-adherence-instruments.html) | Immunosuppressant adherence (transplantation) | 10 | de (structure only) | none (dichotomous non-adherence, documented) | © Univ. Basel — metadata-only (Tier B) |
+| [ABQ](ntx-adherence-instruments.html) | Adherence barriers | 16 | de (structure only) | Sum 16–64 | Müller et al. 2015 — metadata-only (Tier B) |
+| [MTSOSD-R59](ntx-adherence-instruments.html) | Transplant symptom occurrence/distress | 59 (+3 free text) × 2 | de (structure only) | none shipped (documented) | © KU Leuven — metadata-only (Tier B) |
 
 ### Metadata-only references
 

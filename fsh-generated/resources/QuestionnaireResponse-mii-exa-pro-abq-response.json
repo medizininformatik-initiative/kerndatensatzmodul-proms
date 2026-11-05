@@ -1,0 +1,235 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-abq-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-rc.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 1"
+          }
+        }
+      ],
+      "linkId": "abq-q01",
+      "text": "ABQ Item 01 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q02",
+      "text": "ABQ Item 02 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q03",
+      "text": "ABQ Item 03 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 3"
+          }
+        }
+      ],
+      "linkId": "abq-q04",
+      "text": "ABQ Item 04 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 1"
+          }
+        }
+      ],
+      "linkId": "abq-q05",
+      "text": "ABQ Item 05 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q06",
+      "text": "ABQ Item 06 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 4"
+          }
+        }
+      ],
+      "linkId": "abq-q07",
+      "text": "ABQ Item 07 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 1"
+          }
+        }
+      ],
+      "linkId": "abq-q08",
+      "text": "ABQ Item 08 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q09",
+      "text": "ABQ Item 09 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 3"
+          }
+        }
+      ],
+      "linkId": "abq-q10",
+      "text": "ABQ Item 10 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q11",
+      "text": "ABQ Item 11 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 1"
+          }
+        }
+      ],
+      "linkId": "abq-q12",
+      "text": "ABQ Item 12 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q13",
+      "text": "ABQ Item 13 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 3"
+          }
+        }
+      ],
+      "linkId": "abq-q14",
+      "text": "ABQ Item 14 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q15",
+      "text": "ABQ Item 15 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "stufe-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+            "display": "Stufe 2"
+          }
+        }
+      ],
+      "linkId": "abq-q16",
+      "text": "ABQ Item 16 (Stufe 1-4)"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 33
+        }
+      ],
+      "linkId": "abq-score-total",
+      "text": "ABQ Summenwert (16-64)"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-11-05T09:30:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-abq|2027.0.0-rc.1"
+}

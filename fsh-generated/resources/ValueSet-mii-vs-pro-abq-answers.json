@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_ABQ_Answers",
+  "id": "mii-vs-pro-abq-answers",
+  "title": "MII VS PRO ABQ Answers",
+  "description": "Neutral benannte 4-stufige Antwortskala des ABQ (Stufe 1-4), metadata-only (Tier B).",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-abq-answers",
+  "version": "2027.0.0-rc.1",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers"
+      }
+    ]
+  }
+}

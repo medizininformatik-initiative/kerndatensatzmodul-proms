@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_BAASIS_Frequency",
+  "id": "mii-vs-pro-baasis-frequency",
+  "title": "MII VS PRO BAASIS Frequency",
+  "description": "Neutral benannte 5-stufige Häufigkeitsskala der BAASIS-Teilfragen (Stufe 1-5), metadata-only (Tier B).",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-baasis-frequency",
+  "version": "2027.0.0-rc.1",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-baasis-frequency"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_ABQ_Answers",
+  "id": "mii-cs-pro-abq-answers",
+  "title": "MII CS PRO ABQ Answers",
+  "description": "Neutral benannte 4-stufige Antwortskala des ABQ (metadata-only, Tier B). Konzeptbezeichnungen bewusst neutral (Stufe 1-4) statt der Original-Antwortbezeichnungen. itemWeight 1-4.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-abq-answers",
+  "concept": [
+    {
+      "code": "stufe-1",
+      "display": "Stufe 1",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1
+        }
+      ]
+    },
+    {
+      "code": "stufe-2",
+      "display": "Stufe 2",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 2
+        }
+      ]
+    },
+    {
+      "code": "stufe-3",
+      "display": "Stufe 3",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 3
+        }
+      ]
+    },
+    {
+      "code": "stufe-4",
+      "display": "Stufe 4",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 4
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-rc.1",
+  "experimental": true,
+  "caseSensitive": true,
+  "language": "de",
+  "property": [
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "Numerical weight for SDC calculatedExpression scoring via .weight()",
+      "type": "decimal"
+    }
+  ],
+  "count": 4
+}
