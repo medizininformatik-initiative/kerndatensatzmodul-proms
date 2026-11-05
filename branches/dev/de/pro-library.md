@@ -21,6 +21,7 @@ Die PRO-Bibliothek ist die strukturierte Sammlung der Patient-Reported Outcome M
 | [PROMIS-16](promis-16.md) | Ultrakurzes HRQoL-Profil | 16 | en (de: CPCOR) | nur Datenerfassung; PROPr als CQL geplant | Nutzungsanfrage via CPCOR |
 | [PROMIS Depression SF 4a](promis-depression.md) | Depressions-Kurzform | 4 | en (de: CPCOR) | Roh- + T-Score | Nutzungsanfrage via CPCOR |
 | [PROMIS Cognitive Function SF 4a](promis-cognitive-function.md) | Kognitive Funktion | 4 | en (de: CPCOR) | Roh- + T-Score | Nutzungsanfrage via CPCOR |
+| [PROMIS Global Health v1.2](promis-global-health.md) | Globale körperliche/psychische Gesundheit | 10 | en (de: 3 von 10 Items, CPCOR ausstehend) | GPH/GMH-Rohwert 4–20; T-Scores als CQL geplant | Nutzungsanfrage via CPCOR |
 | [EORTC QLQ-C30](eortc-qlq-c30.md) | Onkologische Lebensqualität | 30 | en (de: EORTC) | [15 Subskalen, 0–100](eortc-qlq-c30-scoring.md) | Registrierung (EORTC) |
 | [PRO-CTCAE](pro-ctcae.md) | Symptomatische Nebenwirkungen (Item-Bibliothek) | 124 (Bibliothek) | en+de (NCI) | Composite Grade + ACS (CQL) | frei (NCI) |
 | [Onkologisches Basisscreening](proms-onkologisches-basisscreening.md) | PRO-CTCAE-Onkologie-Subset | 23 | de (NCI) | Composite Grade (CQL) | frei (NCI) |

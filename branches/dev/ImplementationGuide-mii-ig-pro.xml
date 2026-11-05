@@ -1847,6 +1847,28 @@
         <valueString value="ObservationDefinition"/>
       </extension>
       <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw"/>
+      </reference>
+      <name value="MII ObsDef PRO PROMIS Global Health Mental Raw Score"/>
+      <description value="PROMIS Global Mental Health raw score (Global02 + Global04 + Global05 + Global10 recoded), range 4-20"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw"/>
+      </reference>
+      <name value="MII ObsDef PRO PROMIS Global Health Physical Raw Score"/>
+      <description value="PROMIS Global Physical Health raw score (Global03 + Global06 + Global07 recoded + Global08 recoded), range 4-20"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
         <reference value="ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore"/>
       </reference>
       <name value="MII ObsDef PRO PROMIS-29 Anxiety T-Score"/>
@@ -2562,6 +2584,17 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/mii-qst-pro-promis-global-health"/>
+      </reference>
+      <name value="MII QST PRO PROMIS Global Health v1.2"/>
+      <description value="PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/mii-qst-pro-promis-16"/>
       </reference>
       <name value="MII QST PRO PROMIS-16 (Adults)"/>
@@ -3142,6 +3175,38 @@
         <reference value="Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation"/>
       </reference>
       <name value="PROMIS Depression T-Score, derived from BDI-II Observation Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-promis-global-health-response"/>
+      </reference>
+      <name value="PROMIS Global Health Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-promis-global-health-mental-raw"/>
+      </reference>
+      <name value="PROMIS Global Mental Health Raw Score Example"/>
+      <description value="Global Mental Health raw score from the example QuestionnaireResponse (12 of 4-20)"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-promis-global-health-physical-raw"/>
+      </reference>
+      <name value="PROMIS Global Physical Health Raw Score Example"/>
+      <description value="Global Physical Health raw score from the example QuestionnaireResponse (14 of 4-20)"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
     </resource>
     <resource>
@@ -3761,6 +3826,14 @@
           </extension>
           <nameUrl value="promis-cognitive-function.html"/>
           <title value="PROMIS Cognitive Function SF 4a"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="promis-global-health.html"/>
+          </extension>
+          <nameUrl value="promis-global-health.html"/>
+          <title value="PROMIS Global Health v1.2"/>
           <generation value="markdown"/>
         </page>
         <page>

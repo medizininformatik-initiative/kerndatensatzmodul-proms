@@ -35,7 +35,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-11-05T07:26:44+00:00",
+  "date" : "2026-11-05T08:33:52+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -57,7 +57,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 55,
+  "count" : 57,
   "concept" : [{
     "code" : "euroqol-eq5d5l-index",
     "display" : "EuroQol EQ-5D-5L Index Score"
@@ -277,6 +277,14 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "phq-gad7-total",
     "display" : "GAD-7 Total Score (0-21)"
+  },
+  {
+    "code" : "promis-global-health-physical-raw",
+    "display" : "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
+  },
+  {
+    "code" : "promis-global-health-mental-raw",
+    "display" : "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
   }]
 }
 

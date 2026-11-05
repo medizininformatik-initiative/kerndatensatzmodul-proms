@@ -30,6 +30,12 @@ Ultrakurzes Multi-Domain Instrument mit 16 Items über 8 Domänen (je 2 Items). 
 
 **–> [Detaillierte Dokumentation und Vorschau](promis-16.md)**
 
+#### PROMIS Scale v1.2 – Global Health
+
+Zehn Items (Global01–Global10) zur globalen körperlichen und psychischen Gesundheit mit den Rohwerten Global Physical Health und Global Mental Health (je 4–20). Kanonische Vollfassung für den PCOR-MII-Zuschnitt Global01/Global02/Global07; deutsche Übersetzung bislang nur für diese drei Items hinterlegt (`status = draft`).
+
+**–> [Detaillierte Dokumentation](promis-global-health.md)**
+
 #### PROMIS Cognitive Function Short Form 4a
 
 Single-Domain Short Form mit 4 Items zur Erfassung subjektiver kognitiver Funktion. Ergänzt PROMIS-29 (das diese Domäne nicht abdeckt) — die Kombination beider Instrumente entspricht inhaltlich dem PROMIS-33-Profile.
