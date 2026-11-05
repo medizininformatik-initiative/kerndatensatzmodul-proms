@@ -7,6 +7,7 @@ Die PRO-Bibliothek ist die strukturierte Sammlung der Patient-Reported Outcome M
 | [PHQ-9](phq-9.html) | Depressionsscreening | 9 | en (de: PHQ-D) | Summe 0–27 | frei (Pfizer, public domain) |
 | [PHQ-15](phq-15.html) | Somatische Symptomlast | 15 | en (de: PHQ-D) | Summe 0–30 | frei (Pfizer, public domain) |
 | [GAD-7](gad-7.html) | Generalisierte Angst | 7 | en (de: PHQ-D) | Summe 0–21 | frei (Pfizer, public domain) |
+| [PHQ-D Panikblock](phq-panic.html) | Panik-Screening (PHQ Block 3a–3d) | 4 | en (de: PHQ-D) | Ja-Anzahl 0–4 (nur Screening-Stufe) | frei (Pfizer, public domain) |
 | [DASS-21](dass-21.html) | Depression, Angst, Stress | 21 | en (de: Nilges & Essau) | 3 Subskalen-Summen | frei (public domain) |
 | [BDI-II](bdi-ii.html) | Depressionsinventar | 21 | de | Summe 0–63 | kommerziell (Pearson) — nur Daten + Scoring, nicht anzeigbar |
 | [EQ-5D-5L](eq-5d-5l.html) | Gesundheitsbezogene Lebensqualität | 5 + VAS | de | [Index, VAS, Profil](eq-5d-5l-scores.html) (CQL) | Registrierung (EuroQol) |
@@ -14,6 +15,7 @@ Die PRO-Bibliothek ist die strukturierte Sammlung der Patient-Reported Outcome M
 | [PROMIS-16](promis-16.html) | Ultrakurzes HRQoL-Profil | 16 | en (de: CPCOR) | nur Datenerfassung; PROPr als CQL geplant | Nutzungsanfrage via CPCOR |
 | [PROMIS Depression SF 4a](promis-depression.html) | Depressions-Kurzform | 4 | en (de: CPCOR) | Roh- + T-Score | Nutzungsanfrage via CPCOR |
 | [PROMIS Cognitive Function SF 4a](promis-cognitive-function.html) | Kognitive Funktion | 4 | en (de: CPCOR) | Roh- + T-Score | Nutzungsanfrage via CPCOR |
+| [PROMIS Global Health v1.2](promis-global-health.html) | Globale körperliche/psychische Gesundheit | 10 | en (de: 3 von 10 Items, CPCOR ausstehend) | GPH/GMH-Rohwert 4–20; T-Scores als CQL geplant | Nutzungsanfrage via CPCOR |
 | [EORTC QLQ-C30](eortc-qlq-c30.html) | Onkologische Lebensqualität | 30 | en (de: EORTC) | [15 Subskalen, 0–100](eortc-qlq-c30-scoring.html) | Registrierung (EORTC) |
 | [PRO-CTCAE](pro-ctcae.html) | Symptomatische Nebenwirkungen (Item-Bibliothek) | 124 (Bibliothek) | en+de (NCI) | Composite Grade + ACS (CQL) | frei (NCI) |
 | [Onkologisches Basisscreening](proms-onkologisches-basisscreening.html) | PRO-CTCAE-Onkologie-Subset | 23 | de (NCI) | Composite Grade (CQL) | frei (NCI) |

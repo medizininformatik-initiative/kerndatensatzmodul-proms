@@ -111,8 +111,28 @@
     {
       "code": "phq-gad7",
       "display": "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
+    },
+    {
+      "code": "phq-panic",
+      "display": "PHQ-D Panikblock (PHQ panic screening items 3a-3d, Spitzer et al. 1999)"
+    },
+    {
+      "code": "promis-global-health",
+      "display": "PROMIS Scale v1.2 - Global Health (10 items)"
+    },
+    {
+      "code": "baasis",
+      "display": "BAASIS (Basel Assessment of Adherence to Immunosuppressive Medications Scale) - metadata-only"
+    },
+    {
+      "code": "abq",
+      "display": "ABQ (Adherence Barriers Questionnaire, Müller et al. 2015) - metadata-only"
+    },
+    {
+      "code": "mtsosd-r59",
+      "display": "MTSOSD-R59 (Modified Transplant Symptom Occurrence and Symptom Distress Scale) - metadata-only"
     }
   ],
   "version": "2027.0.0-rc.1",
-  "count": 26
+  "count": 31
 }

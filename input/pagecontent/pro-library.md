@@ -7,6 +7,7 @@ The PRO Library is the module's structured collection of Patient-Reported Outcom
 | [PHQ-9](phq-9.html) | Depression screening | 9 | en (de: PHQ-D) | Sum 0–27 | free (Pfizer, public domain) |
 | [PHQ-15](phq-15.html) | Somatic symptom burden | 15 | en (de: PHQ-D) | Sum 0–30 | free (Pfizer, public domain) |
 | [GAD-7](gad-7.html) | Generalized anxiety | 7 | en (de: PHQ-D) | Sum 0–21 | free (Pfizer, public domain) |
+| [PHQ-D Panikblock](phq-panic.html) | Panic screening (PHQ block 3a–3d) | 4 | en (de: PHQ-D) | Yes-count 0–4 (screening stage only) | free (Pfizer, public domain) |
 | [DASS-21](dass-21.html) | Depression, anxiety, stress | 21 | en (de: Nilges & Essau) | 3 subscale sums | free (public domain) |
 | [BDI-II](bdi-ii.html) | Depression inventory | 21 | de | Sum 0–63 | commercial (Pearson) — data + scoring only, not displayable |
 | [EQ-5D-5L](eq-5d-5l.html) | Health-related quality of life | 5 + VAS | de | [Index, VAS, profile](eq-5d-5l-scores.html) (CQL) | registration (EuroQol) |
@@ -14,6 +15,7 @@ The PRO Library is the module's structured collection of Patient-Reported Outcom
 | [PROMIS-16](promis-16.html) | Ultra-short HRQoL profile | 16 | en (de: CPCOR) | data capture only; PROPr planned as CQL | usage request via CPCOR |
 | [PROMIS Depression SF 4a](promis-depression.html) | Depression short form | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
 | [PROMIS Cognitive Function SF 4a](promis-cognitive-function.html) | Cognitive function | 4 | en (de: CPCOR) | Raw + T-score | usage request via CPCOR |
+| [PROMIS Global Health v1.2](promis-global-health.html) | Global physical/mental health | 10 | en (de: 3 of 10 items, CPCOR pending) | GPH/GMH raw 4–20; T-scores planned as CQL | usage request via CPCOR |
 | [EORTC QLQ-C30](eortc-qlq-c30.html) | Oncological quality of life | 30 | en (de: EORTC) | [15 subscales, 0–100](eortc-qlq-c30-scoring.html) | registration (EORTC) |
 | [PRO-CTCAE](pro-ctcae.html) | Symptomatic adverse events (item library) | 124 (library) | en+de (NCI) | Composite grade + ACS (CQL) | free (NCI) |
 | [Oncology Base Screening](proms-onkologisches-basisscreening.html) | PRO-CTCAE oncology subset | 23 | de (NCI) | Composite grade (CQL) | free (NCI) |

@@ -35,6 +35,11 @@ Description: "MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in 
 * #isr-z "ISR-Z (ICD-10-Symptom-Rating, Subskala Zwang, Tritt et al. 2008)"
 * #euronet-soma "EURONET-SOMA (Core outcome single items for somatic symptom burden, Rief et al. 2017)"
 * #phq-gad7 "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
+* #phq-panic "PHQ-D Panikblock (PHQ panic screening items 3a-3d, Spitzer et al. 1999)"
+* #promis-global-health "PROMIS Scale v1.2 - Global Health (10 items)"
+* #baasis "BAASIS (Basel Assessment of Adherence to Immunosuppressive Medications Scale) - metadata-only"
+* #abq "ABQ (Adherence Barriers Questionnaire, Müller et al. 2015) - metadata-only"
+* #mtsosd-r59 "MTSOSD-R59 (Modified Transplant Symptom Occurrence and Symptom Distress Scale) - metadata-only"
 
 // TODO: Investigate whether the four latest questionnaires (HADS, EPDS, CES-D, K6) are
 // separate entities or part of some bigger PRO framework for proper categorization

@@ -227,8 +227,24 @@
     {
       "code": "phq-gad7-total",
       "display": "GAD-7 Total Score (0-21)"
+    },
+    {
+      "code": "phq-panic-count",
+      "display": "PHQ-D Panikblock Yes-Count (0-4, screening items 3a-3d)"
+    },
+    {
+      "code": "promis-global-health-physical-raw",
+      "display": "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
+    },
+    {
+      "code": "promis-global-health-mental-raw",
+      "display": "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
+    },
+    {
+      "code": "abq-total",
+      "display": "ABQ Total Score (16-64)"
     }
   ],
   "version": "2027.0.0-rc.1",
-  "count": 55
+  "count": 59
 }

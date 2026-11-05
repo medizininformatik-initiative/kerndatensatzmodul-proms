@@ -2,7 +2,11 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 ### Unveröffentlicht (dev)
 
-_Noch nichts._
+**PCOR-MII-Lücken im Modul geschlossen** (Beads py5.17, 92b, py5.18 — Upstream-Bedarf laut PCOR-MII-IG, Seite „Instrumente"):
+
+* **PHQ-D Panikblock** (`mii-qst-pro-phq-panic`, Katalogcode `phq-panic`): die vier Ja/Nein-Screeningitems 3a–3d des PHQ im PHQ-D-Block-Namespace (`phq-phq3a`…`phq-phq3d`), EN-primär (Brief PHQ, Pfizer) mit PHQ-D-Übersetzung, Sprungregel als `enableWhen`, Zählitem `phq-panic-score-count` (0–4, Screening positiv nur bei 4; PHQ-Algorithmus in der ObservationDefinition dokumentiert). Die Symptomliste 4a–4k ist nicht modelliert; `phq-phq4a`…`phq-phq4k` sind reserviert. PCOR-MII führte den Block bislang als „kein Upstream-Artefakt".
+* **PROMIS Scale v1.2 – Global Health** (`mii-qst-pro-promis-global-health`, Katalogcode `promis-global-health`, LOINC-Panel `85524-7`): alle zehn Items mit LOINC-Codes und -Answerlists, Rohwerte Global Physical/Mental Health (4–20) mit den v1.2-Umkodierungen als `itemWeight` an den Optionen (Global07 als `choice` mit Integer-Optionen 0–10), zwei ObservationDefinitions, Beispiel. `status = draft`, weil die offizielle deutsche Übersetzung nur für Global01/02/07 vorliegt — die übrigen sieben werden aus dem CPCOR-Dokument nachgetragen, T-Scores folgen als CQL. Ersetzt den lokalen 2-Item-Questionnaire `PROMISGH` in PCOR-MII (dort per `derivedFrom` abzuleiten).
+* **Befund zu PROMIS Sleep-Related Impairment SF 4a** (Bead py5.1): Das PCOR-MII Item Level Dictionary enthält unter „Sleep-Related Impairment" nur das PROMIS-16-Item Sleep25 (Merged-Cell-Fallstrick); PCOR-MII erhebt kein SRI SF 4a. Der Bedarf ist mit PROMIS-16 gedeckt.
 
 ### 2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)
 
