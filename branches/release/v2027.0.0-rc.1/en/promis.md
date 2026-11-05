@@ -30,6 +30,12 @@ Single-domain short form for assessing depression symptoms with 4 items from the
 
 **–> [Detailed documentation and preview](promis-depression.md)**
 
+#### PROMIS Scale v1.2 – Global Health
+
+Ten items (Global01–Global10) on global physical and mental health yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). Canonical full form for the PCOR-MII subset Global01/Global02/Global07; German translation so far only for these three items (`status = draft`).
+
+**–> [Detailed documentation](promis-global-health.md)**
+
 #### PROMIS Physical Function (Planned)
 
 Exemplary single-domain instrument for the physical function domain. Planned as a reference implementation for single-domain PROMIS instruments with full score calculation and Observation extraction.

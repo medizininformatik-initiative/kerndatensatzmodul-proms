@@ -35,7 +35,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-11-05T07:47:07+00:00",
+  "date" : "2026-11-05T09:49:29+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -57,7 +57,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 26,
+  "count" : 27,
   "concept" : [{
     "code" : "euroqol-eq5d5l",
     "display" : "EuroQol EQ-5D-5L Questionnaire"
@@ -161,6 +161,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "phq-gad7",
     "display" : "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
+  },
+  {
+    "code" : "promis-global-health",
+    "display" : "PROMIS Scale v1.2 - Global Health (10 items)"
   }]
 }
 
