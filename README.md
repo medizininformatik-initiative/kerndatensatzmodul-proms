@@ -98,7 +98,7 @@ input/fsh/
 input/cql/             CQL libraries (PRO-CTCAE composite grading)
 input/pagecontent/     IG narrative pages (English source)
 input/translations/    German translation of the narrative (.po)
-input/testscripts/     fixtures for the scoring E2E suite
+input/fsh/testscripts/  generated TestScripts + fixtures of the scoring E2E suite (scripts/generate-promis29-testscripts.py)
 fsh-generated/         SUSHI output, committed
 scripts/               build, release and QA helpers plus their unit tests
 docs/                  design notes, discussion records, recipes

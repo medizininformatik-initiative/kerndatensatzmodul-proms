@@ -1,7 +1,7 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2027.0.0-ballot.1",
-  "description": "MII PRO Module v2027.0.0-ballot.1 — Ballotierungsfassung 2027: Migration auf das MII-KDS-Modul-Template (einheitliche Werkzeugkette der KDS-Module, zweisprachiger IG mit englischem Default, ein Seitensatz fuer IG-Publisher und Simplifier). Alle FHIR-Artefakte unveraendert gegenueber 2026.7.0. Release Notes: https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/changes.html",
+  "version": "2027.0.0-rc.1",
+  "description": "MII PRO Module v2027.0.0-rc.1 — Release Candidate 1 der 2027er-Linie nach der Ballotierung: PROMIS-29 bereinigt (EN-primaer mit DE-Translation nach dem offiziellen PHO-Formular v2.1, HDB-1007/1008/1009, Social-Stem, LOINC-Kodierregel, -de/-minimal retired), CQL-Scoring-Library PROMIS-29 (Dual-Channel), Scoring-Gewichte fuer BDI-II, MIDOS2, EQ-5D-5L, SCOFF, PC-PTSD, WI-7 repariert und ueber RuleSets/Profil vereinheitlicht, CI-Guards (Sprach-Architektur, Master-Drift, Scoring-Smoke), Workflows einheitlich aus dem MII-KDS-Modul-Template. Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
   "keywords": [
     "MII",
     "KDS",

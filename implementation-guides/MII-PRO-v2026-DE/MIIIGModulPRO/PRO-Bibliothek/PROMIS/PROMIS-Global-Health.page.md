@@ -41,7 +41,7 @@ Höhere Werte = bessere Gesundheit. T-Scores (LOINC `71971-6`/`71969-0`) sind im
 **Besonderheiten:**
 - linkIds `promis-global01`…`promis-global10`; `promis-global07` = derselbe linkId wie das Schmerzintensitäts-Item in PROMIS-29. Reihenfolge wie auf dem Formular (01, 02, 03, 04, 05, 09, 06, 10, 08, 07), flache Struktur.
 - Item-Codes aus dem LOINC-Panel `85524-7`, Antwortoptionen aus den LOINC-Answerlists (`LL1012-5`, `LL1013-3`, `LL1016-6`, `LL1015-8`) mit `itemWeight` an der `answerOption` — die Gewichte sind bereits die umkodierten Werte.
-- Global07 als `choice` mit Integer-Optionen 0–10 (Umkodierung als `itemWeight`), Antwortdatentyp `valueInteger` wie in PROMIS-29.
+- Global07 als `integer`-Item 0–10 wie in PROMIS-29; die v1.2-Umkodierung steht in der Variable `gphRaw` (das Profil erlaubt nur Coding-Antwortoptionen).
 - Rohwerte als Variablen `gphRaw`/`gmhRaw` mit Count-Guard; Score-Items `promis-global-health-score-physical-raw` (LOINC `71972-4`) und `promis-global-health-score-mental-raw` (LOINC `71970-8`).
 
 #### Score-Repräsentation

@@ -35,6 +35,13 @@ KNOWN_GAPS = {
     ("mii-qst-pro-eortc-qlq-c30", "QLQ-C30.Introduction"): "r8t: offizielle EORTC-DE-Texte fuer Einleitung/Abschnitte fehlen",
     ("mii-qst-pro-eortc-qlq-c30", "QLQ-C30.Section1"): "r8t",
     ("mii-qst-pro-eortc-qlq-c30", "QLQ-C30.Section2"): "r8t",
+    ("mii-qst-pro-promis-global-health", "promis-global03"): "92b: offizielle DE-Uebersetzung (HealthMeasures/CPCOR) nur fuer Global01/02/07 vorhanden",
+    ("mii-qst-pro-promis-global-health", "promis-global04"): "92b: offizielle DE-Uebersetzung (HealthMeasures/CPCOR) nur fuer Global01/02/07 vorhanden",
+    ("mii-qst-pro-promis-global-health", "promis-global05"): "92b: offizielle DE-Uebersetzung (HealthMeasures/CPCOR) nur fuer Global01/02/07 vorhanden",
+    ("mii-qst-pro-promis-global-health", "promis-global09"): "92b: offizielle DE-Uebersetzung (HealthMeasures/CPCOR) nur fuer Global01/02/07 vorhanden",
+    ("mii-qst-pro-promis-global-health", "promis-global06"): "92b: offizielle DE-Uebersetzung (HealthMeasures/CPCOR) nur fuer Global01/02/07 vorhanden",
+    ("mii-qst-pro-promis-global-health", "promis-global10"): "92b: offizielle DE-Uebersetzung (HealthMeasures/CPCOR) nur fuer Global01/02/07 vorhanden",
+    ("mii-qst-pro-promis-global-health", "promis-global08"): "92b: offizielle DE-Uebersetzung (HealthMeasures/CPCOR) nur fuer Global01/02/07 vorhanden",
 }
 GERMAN_HINT = re.compile(r"[äöüÄÖÜß]|^(Ich|Wie|Sind|Können|Mein|Meine|Es|In den)\b")
 

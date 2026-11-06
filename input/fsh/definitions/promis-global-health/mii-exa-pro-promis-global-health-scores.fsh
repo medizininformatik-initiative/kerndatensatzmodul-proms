@@ -8,7 +8,7 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
-* code.coding[+] = $LNC#71972-4 "PROMIS-10 Global Physical Health score"
+* code.coding[+] = $LNC#71972-4 "PROMIS-10 Global Physical Health (GPH) score"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #promis-global-health-physical-raw
 * code.coding[=].display = "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
@@ -28,7 +28,7 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance)
 * status = #final
 * category.coding = $hl7-observation-category#survey "Survey"
-* code.coding[+] = $LNC#71970-8 "PROMIS-10 Global Mental Health score"
+* code.coding[+] = $LNC#71970-8 "PROMIS-10 Global Mental Health (GMH) score"
 * code.coding[+].system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue"
 * code.coding[=].code = #promis-global-health-mental-raw
 * code.coding[=].display = "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
