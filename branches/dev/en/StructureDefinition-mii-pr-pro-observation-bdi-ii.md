@@ -1,4 +1,4 @@
-# MII PR PRO Observation BDI-II - MII IG PRO v2027.0.0-ballot.1
+# MII PR PRO Observation BDI-II - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-11-05 | *Computable Name*:MII_PR_PRO_Observation_BDI_II |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii | *Version*:2027.0.0-rc.1 |
+| Active as of 2026-11-06 | *Computable Name*:MII_PR_PRO_Observation_BDI_II |
 
  
 Profile for Beck Depression Inventory II (BDI-II) Total Score Observations 
@@ -38,12 +38,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-observ
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-observation-bdi-ii",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-rc.1",
   "name" : "MII_PR_PRO_Observation_BDI_II",
   "title" : "MII PR PRO Observation BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T08:33:52+00:00",
+  "date" : "2026-11-06T13:04:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

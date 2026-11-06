@@ -1,4 +1,4 @@
-# PROMIS Global Health v1.2 - MII IG PRO v2027.0.0-ballot.1
+# PROMIS Global Health v1.2 - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)
@@ -35,7 +35,7 @@ Higher scores indicate better health. The conversion of raw scores to **T-scores
 
 * linkIds `promis-global01`…`promis-global10`; `promis-global07` is the same linkId as the pain intensity item in PROMIS-29 (identical question, item-bank principle). Order as on the form: 01, 02, 03, 04, 05, 09, 06, 10, 08, 07; flat structure, the 7-day stem is a `display` item.
 * Item codes from LOINC panel `85524-7`; answer options as LOINC answer lists (`LL1012-5`, `LL1013-3`, `LL1016-6`, `LL1015-8`) with `itemWeight` on the `answerOption`. The weights are already the **recoded** values of the v1.2 scoring rule.
-* Global07 is modelled as `choice` with integer options 0–10 so that the recoding lives as `itemWeight` on the options; the response datatype stays `valueInteger` as in PROMIS-29.
+* Global07 is an `integer` item 0–10 as in PROMIS-29 (the Questionnaire profile allows only Coding answer options); its v1.2 recoding is applied inside the `gphRaw` variable, not as `itemWeight`.
 * Raw scores as FHIR variables `gphRaw`/`gmhRaw` with a count guard (only for a fully answered quartet), score items `promis-global-health-score-physical-raw` (LOINC `71972-4`) and `promis-global-health-score-mental-raw` (LOINC `71970-8`).
 
 The complete resource: [Questionnaire definition](Questionnaire-mii-qst-pro-promis-global-health.md).

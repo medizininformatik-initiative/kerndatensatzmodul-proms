@@ -1,4 +1,4 @@
-# Derived Metrics - MII IG PRO v2027.0.0-ballot.1
+# Derived Metrics - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Scoring**](scoring.md)

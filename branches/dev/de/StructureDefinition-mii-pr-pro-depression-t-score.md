@@ -1,4 +1,4 @@
-# MII PR PRO Depression Domain T-Score - MII IG PRO v2027.0.0-ballot.1
+# MII PR PRO Depression Domain T-Score - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-11-05 | *Maschinenlesbarer Name*:MII_PR_PRO_Depression_T_Score |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score | *Version*:2027.0.0-rc.1 |
+| Active Stand: 2026-11-06 | *Maschinenlesbarer Name*:MII_PR_PRO_Depression_T_Score |
 
  
 Generic profile for depression domain T-score observations (all depression questionnaires) 
@@ -110,11 +110,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-d
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-depression-t-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-rc.1",
   "name" : "MII_PR_PRO_Depression_T_Score",
   "title" : "MII PR PRO Depression Domain T-Score",
   "status" : "active",
-  "date" : "2026-11-05T08:33:52+00:00",
+  "date" : "2026-11-06T13:04:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

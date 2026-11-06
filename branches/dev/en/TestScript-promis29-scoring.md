@@ -1,4 +1,4 @@
-# PROMIS-29 Scoring — Validierung und Persistenz - MII IG PRO v2027.0.0-ballot.1
+# PROMIS-29 Scoring — Validierung und Persistenz - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring | *Version*:2027.0.0-ballot.1 |
-| Draft as of 2026-11-05 | *Computable Name*:PROMIS29ScoringTestScript |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring | *Version*:2027.0.0-rc.1 |
+| Draft as of 2026-11-06 | *Computable Name*:PROMIS29ScoringTestScript |
 
  
 Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anlegen. Die Fixtures sind die IG-Beispiele promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-rundir.mjs für den CI-Lauf. 
@@ -24,7 +24,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 **url**: [TestScript PROMIS-29 Scoring — Validierung und Persistenz](TestScript-promis29-scoring.md)
 
-**version**: 2027.0.0-ballot.1
+**version**: 2027.0.0-rc.1
 
 **name**: PROMIS29ScoringTestScript
 
@@ -34,7 +34,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 **experimental**: true
 
-**date**: 2026-11-05 08:33:52+0000
+**date**: 2026-11-06 13:04:18+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -1085,12 +1085,12 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-rc.1",
   "name" : "PROMIS29ScoringTestScript",
   "title" : "PROMIS-29 Scoring — Validierung und Persistenz",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-05T08:33:52+00:00",
+  "date" : "2026-11-06T13:04:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

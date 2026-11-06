@@ -1,4 +1,4 @@
-# MII CS PRO PHQ-15 Answers - MII IG PRO v2027.0.0-ballot.1
+# MII CS PRO PHQ-15 Answers - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-11-05 | *Maschinenlesbarer Name*:MII_CS_PRO_PHQ_15_Answers |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers | *Version*:2027.0.0-rc.1 |
+| Active Stand: 2026-11-06 | *Maschinenlesbarer Name*:MII_CS_PRO_PHQ_15_Answers |
 
  
 MII-controlled bother severity answer scale for PHQ-15 (0–2). English primary with German designations. itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet. 
@@ -32,11 +32,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "id" : "mii-cs-pro-phq-15-answers",
   "language" : "en",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-rc.1",
   "name" : "MII_CS_PRO_PHQ_15_Answers",
   "title" : "MII CS PRO PHQ-15 Answers",
   "status" : "active",
-  "date" : "2026-11-05T08:33:52+00:00",
+  "date" : "2026-11-06T13:04:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

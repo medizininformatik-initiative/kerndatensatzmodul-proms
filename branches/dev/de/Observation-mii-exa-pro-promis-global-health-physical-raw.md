@@ -1,4 +1,4 @@
-# PROMIS Global Physical Health Raw Score Example - MII IG PRO v2027.0.0-ballot.1
+# PROMIS Global Physical Health Raw Score Example - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,13 +12,13 @@
 
 -------
 
-Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2027.0.0-ballot.1
+Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instance.md) version: 2027.0.0-rc.1
 
 **status**: Final
 
 **category**: Survey
 
-**code**: PROMIS-10 Global Physical Health score
+**code**: PROMIS-10 Global Physical Health (GPH) score
 
 **subject**: [Max Mustermann Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)](Patient-mii-exa-pro-patient.md)
 
@@ -37,7 +37,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
   "resourceType" : "Observation",
   "id" : "mii-exa-pro-promis-global-health-physical-raw",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"]
   },
   "status" : "final",
   "category" : [{
@@ -51,7 +51,7 @@ Profile: [MII PR PRO Score Instance](StructureDefinition-mii-pr-pro-score-instan
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "71972-4",
-      "display" : "PROMIS-10 Global Physical Health score"
+      "display" : "PROMIS-10 Global Physical Health (GPH) score"
     },
     {
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",

@@ -1,4 +1,4 @@
-# PROMIS-29 Scoring-Fixture — pain-interference-ceil - MII IG PRO v2027.0.0-ballot.1
+# PROMIS-29 Scoring-Fixture — pain-interference-ceil - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -14,7 +14,7 @@
 
 Language: en
 
-Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2027.0.0-ballot.1
+Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md) version: 2027.0.0-rc.1
 
 * [LinkID](https://hl7.org/fhir/R4/formats.html#table): promis29-pain-interference-ceil
   * [Text](https://hl7.org/fhir/R4/formats.html#table): 
@@ -63,10 +63,10 @@ Profile: [MII PR PRO QuestionnaireResponse](StructureDefinition-mii-pr-pro-quest
   "resourceType" : "QuestionnaireResponse",
   "id" : "promis29-pain-interference-ceil",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-rc.1"]
   },
   "language" : "en",
-  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.1",
+  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-rc.1",
   "status" : "completed",
   "subject" : {
     "reference" : "Patient/mii-exa-pro-patient"

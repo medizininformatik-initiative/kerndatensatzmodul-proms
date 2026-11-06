@@ -1,4 +1,4 @@
-# MII VS PRO EORTC QLQ-C30 7-Point Scale - MII IG PRO v2027.0.0-ballot.1
+# MII VS PRO EORTC QLQ-C30 7-Point Scale - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-11-05 | *Maschinenlesbarer Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt | *Version*:2027.0.0-rc.1 |
+| Active Stand: 2026-11-06 | *Maschinenlesbarer Name*:MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt |
 
  
 7-point response scale for EORTC QLQ-C30 global health status and quality of life items 
@@ -37,12 +37,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-eortc-qlq-c30-scale-7pt",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-rc.1",
   "name" : "MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt",
   "title" : "MII VS PRO EORTC QLQ-C30 7-Point Scale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T08:33:52+00:00",
+  "date" : "2026-11-06T13:04:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

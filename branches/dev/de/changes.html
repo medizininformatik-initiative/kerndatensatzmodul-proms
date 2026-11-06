@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2027.0.0-ballot.1</title>
+    <title>Changelog - MII IG PRO v2027.0.0-rc.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.1 - 
+            <span style="display:inline-block;">2027.0.0-rc.1 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-rc.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -312,6 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#unveröffentlicht-dev" id="markdown-toc-unveröffentlicht-dev">Unveröffentlicht (dev)</a></li>
+  <li><a href="#202700-rc1--release-candidate-1-2026-11-05" id="markdown-toc-202700-rc1--release-candidate-1-2026-11-05">2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)</a></li>
   <li><a href="#202700-ballot1--manifest-hotfix" id="markdown-toc-202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — Manifest-Hotfix</a></li>
   <li><a href="#202700-ballot" id="markdown-toc-202700-ballot">2027.0.0-ballot</a></li>
   <li><a href="#202700-ballotrc5" id="markdown-toc-202700-ballotrc5">2027.0.0-ballot.rc5</a></li>
@@ -334,7 +335,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="unveröffentlicht-dev">Unveröffentlicht (dev)</h3>
 
-<p><strong>PROMIS Scale v1.2 – Global Health</strong> (<code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-global-health</code>, Katalogcode <code class="language-plaintext highlighter-rouge">promis-global-health</code>, LOINC-Panel <code class="language-plaintext highlighter-rouge">85524-7</code>; Bead 92b): alle zehn Items mit LOINC-Codes und -Answerlists, Rohwerte Global Physical/Mental Health (4–20) mit den v1.2-Umkodierungen als <code class="language-plaintext highlighter-rouge">itemWeight</code> an den Optionen (Global07 als <code class="language-plaintext highlighter-rouge">choice</code> mit Integer-Optionen 0–10), zwei ObservationDefinitions, Beispiel. <code class="language-plaintext highlighter-rouge">status = draft</code>, weil die offizielle deutsche Übersetzung nur für Global01/02/07 vorliegt — die übrigen sieben werden aus dem CPCOR-Dokument nachgetragen, T-Scores folgen als CQL. Kanonische Vollfassung für den lokalen 2-Item-Questionnaire <code class="language-plaintext highlighter-rouge">PROMISGH</code> in PCOR-MII (dort per <code class="language-plaintext highlighter-rouge">derivedFrom</code> abzuleiten).</p>
+<p><em>Noch nichts.</em></p>
+
+<h3 id="202700-rc1--release-candidate-1-2026-11-05">2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)</h3>
+
+<p>Erster Release Candidate der 2027er-Linie nach der Ballotierung (2027.0.0-ballot.1). Inhaltliche Änderungen gegenüber dem Ballot:</p>
+
+<p><strong>PROMIS Scale v1.2 – Global Health</strong> (<code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-global-health</code>, Katalogcode <code class="language-plaintext highlighter-rouge">promis-global-health</code>, LOINC-Panel <code class="language-plaintext highlighter-rouge">85524-7</code>; Bead 92b): alle zehn Items mit LOINC-Codes und -Answerlists, Rohwerte Global Physical/Mental Health (4–20) mit den v1.2-Umkodierungen als <code class="language-plaintext highlighter-rouge">itemWeight</code> an den Optionen (Global07 als <code class="language-plaintext highlighter-rouge">integer</code>-Item 0–10, Umkodierung in der Variable <code class="language-plaintext highlighter-rouge">gphRaw</code>), zwei ObservationDefinitions, Beispiel. <code class="language-plaintext highlighter-rouge">status = draft</code>, weil die offizielle deutsche Übersetzung nur für Global01/02/07 vorliegt — die übrigen sieben werden aus dem CPCOR-Dokument nachgetragen, T-Scores folgen als CQL. Kanonische Vollfassung für den lokalen 2-Item-Questionnaire <code class="language-plaintext highlighter-rouge">PROMISGH</code> in PCOR-MII (dort per <code class="language-plaintext highlighter-rouge">derivedFrom</code> abzuleiten).</p>
 
 <p><strong>Befund zu PROMIS Sleep-Related Impairment SF 4a</strong> (Bead py5.1): Das PCOR-MII Item Level Dictionary enthält unter „Sleep-Related Impairment" nur das PROMIS-16-Item Sleep25 (Merged-Cell-Fallstrick); PCOR-MII erhebt kein SRI SF 4a. Der Bedarf ist mit PROMIS-16 gedeckt.</p>
 
@@ -870,8 +877,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Nov 5, 2026 08:33+0000">2026-11-05</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-rc.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Fri, Nov 6, 2026 13:04+0000">2026-11-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

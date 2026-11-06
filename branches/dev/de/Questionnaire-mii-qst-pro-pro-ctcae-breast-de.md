@@ -1,4 +1,4 @@
-# PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome) - MII IG PRO v2027.0.0-ballot.1
+# PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome) - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de | *Version*:2027.0.0-ballot.1 |
-| Draft Stand: 2026-11-05 | *Maschinenlesbarer Name*:MII_QST_PRO_PRO_CTCAE_Breast_DE |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de | *Version*:2027.0.0-rc.1 |
+| Draft Stand: 2026-11-06 | *Maschinenlesbarer Name*:MII_QST_PRO_PRO_CTCAE_Breast_DE |
 
  
 PRO-CTCAE Brustkrebszentrum-Subset: 21 Symptome ausgewählt nach Prävalenz und Wichtigkeit bei ambulanten Brustkrebspatientinnen (Hamacher et al., BMC Cancer 2023). Scoring via CQL Library (CompositeGrade pro Symptom + Average Composite Score). 
@@ -33,7 +33,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-pro-ctcae-breast-de",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-rc.1"]
   },
   "language" : "de",
   "extension" : [{
@@ -72,7 +72,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
     "valueBoolean" : true
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pro-ctcae-breast-de",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-rc.1",
   "name" : "MII_QST_PRO_PRO_CTCAE_Breast_DE",
   "title" : "PRO-CTCAE Deutsches Brustkrebszentrum-Subset (21 Symptome)",
   "_title" : {
@@ -90,7 +90,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-05T08:33:52+00:00",
+  "date" : "2026-11-06T13:04:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

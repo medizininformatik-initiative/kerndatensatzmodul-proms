@@ -1,4 +1,4 @@
-# MII VS PRO WHODAS 2.0 12-Item Answer List - MII IG PRO v2027.0.0-ballot.1
+# MII VS PRO WHODAS 2.0 12-Item Answer List - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-11-05 | *Computable Name*:MII_VS_PRO_WHODAS_12_Answer_List |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list | *Version*:2027.0.0-rc.1 |
+| Active as of 2026-11-06 | *Computable Name*:MII_VS_PRO_WHODAS_12_Answer_List |
 
  
 5-point response scale for all WHODAS-12 items (0 = None, 1 = Mild, 2 = Moderate, 3 = Severe, 4 = Extreme or cannot do). MII-controlled for reliable ordinal() score calculation; German labels via designations on mii-cs-pro-whodas-12. 
@@ -37,12 +37,12 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-whodas-12-answer-list",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-rc.1",
   "name" : "MII_VS_PRO_WHODAS_12_Answer_List",
   "title" : "MII VS PRO WHODAS 2.0 12-Item Answer List",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-05T08:33:52+00:00",
+  "date" : "2026-11-06T13:04:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

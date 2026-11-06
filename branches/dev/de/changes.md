@@ -1,4 +1,4 @@
-# Changelog - MII IG PRO v2027.0.0-ballot.1
+# Changelog - MII IG PRO v2027.0.0-rc.1
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -9,7 +9,13 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 ### Unveröffentlicht (dev)
 
-**PROMIS Scale v1.2 – Global Health** (`mii-qst-pro-promis-global-health`, Katalogcode `promis-global-health`, LOINC-Panel `85524-7`; Bead 92b): alle zehn Items mit LOINC-Codes und -Answerlists, Rohwerte Global Physical/Mental Health (4–20) mit den v1.2-Umkodierungen als `itemWeight` an den Optionen (Global07 als `choice` mit Integer-Optionen 0–10), zwei ObservationDefinitions, Beispiel. `status = draft`, weil die offizielle deutsche Übersetzung nur für Global01/02/07 vorliegt — die übrigen sieben werden aus dem CPCOR-Dokument nachgetragen, T-Scores folgen als CQL. Kanonische Vollfassung für den lokalen 2-Item-Questionnaire `PROMISGH` in PCOR-MII (dort per `derivedFrom` abzuleiten).
+**Noch nichts.**
+
+### 2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)
+
+Erster Release Candidate der 2027er-Linie nach der Ballotierung (2027.0.0-ballot.1). Inhaltliche Änderungen gegenüber dem Ballot:
+
+**PROMIS Scale v1.2 – Global Health** (`mii-qst-pro-promis-global-health`, Katalogcode `promis-global-health`, LOINC-Panel `85524-7`; Bead 92b): alle zehn Items mit LOINC-Codes und -Answerlists, Rohwerte Global Physical/Mental Health (4–20) mit den v1.2-Umkodierungen als `itemWeight` an den Optionen (Global07 als `integer`-Item 0–10, Umkodierung in der Variable `gphRaw`), zwei ObservationDefinitions, Beispiel. `status = draft`, weil die offizielle deutsche Übersetzung nur für Global01/02/07 vorliegt — die übrigen sieben werden aus dem CPCOR-Dokument nachgetragen, T-Scores folgen als CQL. Kanonische Vollfassung für den lokalen 2-Item-Questionnaire `PROMISGH` in PCOR-MII (dort per `derivedFrom` abzuleiten).
 
 **Befund zu PROMIS Sleep-Related Impairment SF 4a** (Bead py5.1): Das PCOR-MII Item Level Dictionary enthält unter „Sleep-Related Impairment" nur das PROMIS-16-Item Sleep25 (Merged-Cell-Fallstrick); PCOR-MII erhebt kein SRI SF 4a. Der Bedarf ist mit PROMIS-16 gedeckt.
 
