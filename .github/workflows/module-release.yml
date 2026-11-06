@@ -116,7 +116,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if grep -q '{{' sushi-config.yaml; then
+          # MODULE ADDITION (PRO): comment-stripped check — the documenting comment head of
+          # sushi-config.yaml names placeholders like {{SPECIAL_URL_1}} on purpose; the naive
+          # grep made the guard report is_module=false and silently skip the build (v2027.0.0-rc.1).
+          if grep -v '^[[:space:]]*#' sushi-config.yaml | grep -q '{{'; then
             echo "is_module=false" >> "${GITHUB_OUTPUT}"
             echo "::notice::Unreplaced {{...}} placeholders found in sushi-config.yaml. This looks like the un-instantiated module template (or a module whose set-up is unfinished), so the MII CalVer release path is skipped. A real module — placeholders replaced by hand, per the first-run bootstrap's checklist — runs it for real."
           else
