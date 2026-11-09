@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-scoff | *Version*:2027.0.0-rc.1 |
-| Active Stand: 2026-11-06 | *Maschinenlesbarer Name*: |
+| Active Stand: 2026-11-09 | *Maschinenlesbarer Name*: |
 | **Copyright/Rechtliches**: SCOFF questionnaire © Morgan, Reid & Lacey 1999 (BMJ). Freely available — no permission required for reproduction, translation, display or use. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -81,7 +81,7 @@ Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in 
   "title" : "MII QST PRO SCOFF",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-06T13:21:11+00:00",
+  "date" : "2026-11-09T09:55:07+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring | *Version*:2027.0.0-rc.1 |
-| Draft Stand: 2026-11-06 | *Maschinenlesbarer Name*:PROMIS29ScoringTestScript |
+| Draft Stand: 2026-11-09 | *Maschinenlesbarer Name*:PROMIS29ScoringTestScript |
 
  
 Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anlegen. Die Fixtures sind die IG-Beispiele promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-rundir.mjs für den CI-Lauf. 
@@ -34,7 +34,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 **experimental**: true
 
-**date**: 2026-11-06 13:21:11+0000
+**date**: 2026-11-09 09:55:07+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -1090,7 +1090,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
   "title" : "PROMIS-29 Scoring — Validierung und Persistenz",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T13:21:11+00:00",
+  "date" : "2026-11-09T09:55:07+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro | *Version*:2027.0.0-rc.1 |
-| Active Stand: 2026-11-06 | *Maschinenlesbarer Name*:MII_LM_PRO |
+| Active Stand: 2026-11-09 | *Maschinenlesbarer Name*:MII_LM_PRO |
 
  
 Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings. 
@@ -78,7 +78,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-pro.c
   "title" : "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-06T13:21:11+00:00",
+  "date" : "2026-11-09T09:55:07+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
