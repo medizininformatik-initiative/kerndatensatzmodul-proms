@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Library/mii-lib-pro-promis-29 | *Version*:2027.0.0-rc.1 |
-| Active Stand: 2026-11-06 | *Maschinenlesbarer Name*:mii-lib-pro-promis-29 |
+| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:mii-lib-pro-promis-29 |
 
  
 CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the seven domains plus the pain intensity item. Server channel of the dual-channel scoring architecture (the FHIRPath calculatedExpressions in the Questionnaire are the client channel); both channels are generated from the same weight and T-score tables. Define names equal the score item linkIds. Supports Library/$evaluate with an explicit Response parameter and the SDC retrieve pattern (most recent completed QuestionnaireResponse of the instrument). 
@@ -27,7 +27,7 @@ CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the s
 * * **Content: **application/elm+json: ````Encoded data (99856 characters)````: **Url: **
   * ?: [MII LIB PRO PROMIS-29 Scoring](Library-mii-lib-pro-promis-29.md)
 * * **Content: **application/elm+json: ````Encoded data (99856 characters)````: **Date: **
-  * ?: 2026-11-06 13:04:18+0000
+  * ?: 2026-11-10 10:00:18+0000
 * * **Content: **application/elm+json: ````Encoded data (99856 characters)````: **Publisher: **
   * ?: Medizininformatik-Initiative
 * * **Content: **application/elm+json: ````Encoded data (99856 characters)````: **Description: **
@@ -86,7 +86,7 @@ CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the s
       "code" : "Patient"
     }]
   },
-  "date" : "2026-11-06T13:04:18+00:00",
+  "date" : "2026-11-10T10:00:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

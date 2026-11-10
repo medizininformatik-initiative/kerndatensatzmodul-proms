@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire | *Version*:2027.0.0-rc.1 |
-| Active as of 2026-11-06 | *Computable Name*:MII_PR_PRO_Questionnaire |
+| Active as of 2026-11-10 | *Computable Name*:MII_PR_PRO_Questionnaire |
 
  
 MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification 
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-questi
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-06T13:04:18+00:00",
+  "date" : "2026-11-10T10:00:18+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
