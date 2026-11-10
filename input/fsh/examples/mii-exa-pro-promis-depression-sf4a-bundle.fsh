@@ -8,17 +8,17 @@ Usage: #example
 * timestamp = "2024-01-15T10:35:00Z"
 
 // Patient
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
 * entry[=].resource = mii-exa-pro-patient
 
 // QuestionnaireResponse
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response"
 * entry[=].resource = mii-exa-pro-promis-depression-sf4a-response
 
 // Raw Score Observation
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-raw-score"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-raw-score"
 * entry[=].resource = mii-exa-pro-promis-depression-sf4a-raw-score
 
 // T-Score Observation  
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-tscore"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-tscore"
 * entry[=].resource = mii-exa-pro-promis-depression-sf4a-tscore

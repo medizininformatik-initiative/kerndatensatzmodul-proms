@@ -6,98 +6,98 @@ Usage: #example
 * type = #transaction
 
 // Questionnaire (complete implementation with all 30 items)
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"
 * entry[=].resource = mii-qst-pro-eortc-qlq-c30
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Questionnaire/mii-qst-pro-eortc-qlq-c30"
 
 // QuestionnaireResponse (all 30 items answered)
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-response
 * entry[=].request.method = #PUT
 * entry[=].request.url = "QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"
 
 // === Functional Scale Observations (5) ===
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-pf
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-rf
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-ef
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-cf
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-sf
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"
 
 // === Symptom Scale Observations (3) ===
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-fa
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-nv
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-pa
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"
 
 // === Single Item Symptom Observations (6) ===
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-dy
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-sl
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-ap
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-co"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-co"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-co
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-co"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-di"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-di"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-di
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-di"
 
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-fi
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"
 
 // === Global Health Status / QoL Observation (1) ===
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"
 * entry[=].resource = mii-exa-pro-eortc-qlq-c30-observation-ql
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"
 
 // Patient
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
 * entry[=].resource.resourceType = "Patient"
 * entry[=].resource.id = "mii-exa-pro-patient"
 * entry[=].resource.active = true

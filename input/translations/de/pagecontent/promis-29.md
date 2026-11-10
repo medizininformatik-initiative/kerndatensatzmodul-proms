@@ -1,7 +1,7 @@
 ### Übersicht
 
 **Status**: Vollständig implementiert (Items, beide Scoring-Kanäle, Review-Framework)
-**Version**: 2027.0.0-rc.1
+**Version**: 2027.0.0-ballot.2
 **Letzte Aktualisierung**: 2026-11-04
 
 Der PROMIS-29 ist ein umfassendes Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität über 7 Domänen plus Schmerzintensität.
@@ -90,7 +90,7 @@ Beide Kanäle werden **aus denselben zwei Tabellen generiert** (`scripts/data/pr
 **Primärsprache**: Englisch, Wortlaut des offiziellen Formulars PROMIS-29 Profile v2.1 (PROMIS Health Organization)
 **Deutsche Übersetzung**: Via `translation`-Extension an jedem Itemtext, Gruppenkopf und jeder Instruktion; Wortlaut der validierten deutschen PROMIS-29-Fassung (CPCOR Charité / PCOR-MII Item Level Dictionary; Pain-Interference-Items im Präteritum nach dem deutschen PHO-PDF).
 
-Alle 43 Items (29 Fragen, 14 Score-Items) und alle Gruppenköpfe folgen dieser einen Architektur. Die frühere DE-primäre Variante `mii-qst-pro-promis-29-de` und das 8-Item-Subset `-minimal` sind seit 2027.0.0-rc.1 **retired**; DE-primäre Darstellung ist Sache des Renderers bzw. von `$localize`, nicht einer zweiten Ressource. Körperliche Funktion und Soziale Teilhabe haben bewusst **keinen** Zeitbezug, genau wie auf dem offiziellen Formular.
+Alle 43 Items (29 Fragen, 14 Score-Items) und alle Gruppenköpfe folgen dieser einen Architektur. Die frühere DE-primäre Variante `mii-qst-pro-promis-29-de` und das 8-Item-Subset `-minimal` sind seit 2027.0.0-ballot.2 **retired**; DE-primäre Darstellung ist Sache des Renderers bzw. von `$localize`, nicht einer zweiten Ressource. Körperliche Funktion und Soziale Teilhabe haben bewusst **keinen** Zeitbezug, genau wie auf dem offiziellen Formular.
 
 ```json
 {

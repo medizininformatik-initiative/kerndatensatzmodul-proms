@@ -39,6 +39,17 @@ try:
 except Exception as e:
     line("package.json", f"Lesefehler: {e}", False)
 
+# --- publication-request.json (formale Pages-Publikation; go-publish liest version/path hier)
+if os.path.exists('publication-request.json'):
+    try:
+        pr = json.load(open('publication-request.json', encoding='utf-8'))
+        pv = pr.get('version'); pp = pr.get('path', '')
+        okp = pv == ref and pp.rstrip('/').endswith('/' + ref)
+        line("publication-request.json (version + path)", f"{pv} -> {pp.rsplit('/', 1)[-1]}", okp,
+             "" if okp else f"erwartet {ref} in version UND am Ende von path")
+    except Exception as e:
+        line("publication-request.json", f"Lesefehler: {e}", False)
+
 # --- version.fsh (alle Vorkommen müssen gleich sein)
 vs = sorted(set(re.findall(r'\d{4}\.\d+\.\d+(?:-[A-Za-z0-9.]+)?', open('input/fsh/rulesets/version.fsh', encoding='utf-8').read())))
 line("input/fsh/rulesets/version.fsh", " ".join(vs) or "(fehlt)",

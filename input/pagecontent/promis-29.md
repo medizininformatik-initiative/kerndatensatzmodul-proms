@@ -1,7 +1,7 @@
 ### Overview
 
 **Status**: Fully implemented (items, both scoring channels, review framework)
-**Version**: 2027.0.0-rc.1
+**Version**: 2027.0.0-ballot.2
 **Last Updated**: 2026-11-04
 
 The PROMIS-29 is a comprehensive instrument for assessing health-related quality of life across 7 domains plus pain intensity.
@@ -90,7 +90,7 @@ Both channels are **generated from the same two tables** (`scripts/data/promis29
 **Primary Language**: English, wording of the official PROMIS-29 Profile v2.1 form (PROMIS Health Organization)
 **German Translation**: Via `translation` extension on every item text, group header and instruction; wording of the validated German PROMIS-29 (CPCOR Charité / PCOR-MII Item Level Dictionary; Pain Interference items in the past tense per the PHO German PDF).
 
-All 43 items (29 questions, 14 score items) and all group headers follow this one architecture. The former German-primary variant `mii-qst-pro-promis-29-de` and the 8-item `-minimal` subset are **retired** since 2027.0.0-rc.1; German-primary rendering is a renderer/`$localize` concern, not a second resource. The Physical Function and Social Roles groups deliberately have **no** time-frame instruction, exactly as on the official form.
+All 43 items (29 questions, 14 score items) and all group headers follow this one architecture. The former German-primary variant `mii-qst-pro-promis-29-de` and the 8-item `-minimal` subset are **retired** since 2027.0.0-ballot.2; German-primary rendering is a renderer/`$localize` concern, not a second resource. The Physical Function and Social Roles groups deliberately have **no** time-frame instruction, exactly as on the official form.
 
 ```json
 {

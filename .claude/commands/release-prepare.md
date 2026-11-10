@@ -33,6 +33,8 @@ Update version numbers in these files:
 4. **input/fsh/rulesets/version.fsh**: Update version (may already be done via PR_CS_VS_Version RuleSet)
 5. **guide.yaml** (Simplifier IG config): `implementation-guides/MII-PRO-v2026-DE/guide.yaml` — update:
    - `version` field to match new release version
+6. **publication-request.json** (formale Pages-Publikation, go-publish liest sie vom Tag): `version`, `path` (…/kerndatensatzmodul-proms/{VERSION}), `desc`, `status`/`mode` (Muster kerndatensatz-basis: Release Candidate = `release` + `working`, bleibt NICHT current; Ballot/Final = `milestone`). Bei 2027.0.0-rc.1 vergessen — die Datei stand noch auf 2027.0.0-ballot.1, der Tag musste neu gesetzt werden.
+7. **sushi-config.yaml `date`** = geplantes Publikationsdatum (go-publish bricht ab, wenn es vom Publikationsdatum abweicht; ohne `publication_date`-Input gilt das Commit-Datum des Tags).
 
 IMPORTANT: Read each file first to verify current state before making changes.
 
