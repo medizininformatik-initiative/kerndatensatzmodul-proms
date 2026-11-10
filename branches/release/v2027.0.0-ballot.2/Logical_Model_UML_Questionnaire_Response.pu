@@ -1,0 +1,21 @@
+@startuml MII_PRO_Fragebögen_ausgefüllt
+'skinparam linetype ortho
+'skinparam linetype polyline
+package Ausgefüllte_Fragebögen {
+    object Ausgefüllter_Fragebogen {
+        Fragebogen: Fragebogen
+        Erfassungsdatum: date
+        Ausfuellende_Person: identifier
+        Ausfuellende_Person_Rolle: code 
+        Antworten: Antwort_erfasst
+    }
+    object Antwort_erfasst {
+        FragenID_intern: string
+        Antwort: code, number, string, date
+
+    }
+    Ausgefüllter_Fragebogen::Antworten "1..1" o-right- "1..*" Antwort_erfasst
+}
+
+@enduml
+

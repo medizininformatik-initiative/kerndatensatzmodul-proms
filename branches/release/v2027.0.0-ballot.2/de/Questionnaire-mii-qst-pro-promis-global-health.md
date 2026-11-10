@@ -1,0 +1,1405 @@
+# MII QST PRO PROMIS Global Health v1.2 - MII IG PRO v2027.0.0-ballot.2
+
+* [**Table of Contents**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII QST PRO PROMIS Global Health v1.2**
+
+## Questionnaire: MII QST PRO PROMIS Global Health v1.2 (Experimentell) 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-global-health | *Version*:2027.0.0-ballot.2 |
+| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*: |
+| **Verwendung**: PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis), PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland), PROMIS Global Health Scoring Manual (https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Global_Scoring_Manual.pdf) | |
+| **Copyright/Rechtliches**: The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.The PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.The official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).Institutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragenLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/ | |
+
+ 
+PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07). 
+
+*  [Baumansicht](#tabs-tree) 
+*  [Beispielanzeige](#tabs-sample) 
+*  [Formularlogik](#tabs-logic) 
+
+### Diesen Fragebogen testen
+
+### Antworten zu diesem Fragebogen
+
+Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in diesem IG definiert.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Questionnaire",
+  "id" : "mii-qst-pro-promis-global-health",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.2"]
+  },
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "displayable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "collectable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "calculatable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "extractable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "domainAligned",
+      "valueBoolean" : true
+    }],
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/variable",
+    "valueExpression" : {
+      "name" : "gphRaw",
+      "language" : "text/fhirpath",
+      "expression" : "iif(%resource.item.where(linkId.matches('^promis-global0[3678]$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global0[368]$')).answer.value.weight().sum() + %resource.item.where(linkId = 'promis-global07').answer.value.select(iif($this = 0, 5, iif($this <= 3, 4, iif($this <= 6, 3, iif($this <= 9, 2, 1))))).sum(), {})"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/variable",
+    "valueExpression" : {
+      "name" : "gmhRaw",
+      "language" : "text/fhirpath",
+      "expression" : "iif(%resource.item.where(linkId.matches('^promis-global(02|04|05|10)$')).answer.count() = 4, %resource.item.where(linkId.matches('^promis-global(02|04|05|10)$')).answer.value.weight().sum(), {})"
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-global-health",
+  "version" : "2027.0.0-ballot.2",
+  "title" : "MII QST PRO PROMIS Global Health v1.2",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-10T20:44:07+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07).",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
+    }
+  },
+  {
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
+    }
+  },
+  {
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueReference" : {
+      "display" : "PROMIS Global Health Scoring Manual (https://www.healthmeasures.net/images/PROMIS/manuals/Scoring_Manual_Only/PROMIS_Global_Scoring_Manual.pdf)"
+    }
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
+  "code" : [{
+    "system" : "http://loinc.org",
+    "code" : "85524-7",
+    "display" : "PROMIS short form - global - version 1.2"
+  },
+  {
+    "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+    "code" : "promis-global-health",
+    "display" : "PROMIS Scale v1.2 - Global Health (10 items)"
+  }],
+  "item" : [{
+    "linkId" : "promis-global01",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61577-3",
+      "display" : "In general, would you say your health is [PROMIS]"
+    }],
+    "prefix" : "Global01",
+    "text" : "In general, would you say your health is:",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Wie würden Sie Ihren Gesundheitszustand insgesamt beschreiben?"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Excellent",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Ausgezeichnet"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Very Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Sehr gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Fair",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Einigermaßen"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Poor",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Schlecht"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global02",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61578-1",
+      "display" : "In general, would you say your quality of life is [PROMIS]"
+    }],
+    "prefix" : "Global02",
+    "text" : "In general, would you say your quality of life is:",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Wie würden Sie Ihre Lebensqualität insgesamt beschreiben?"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Excellent",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Ausgezeichnet"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Very Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Sehr gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Fair",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Einigermaßen"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Poor",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Schlecht"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global03",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61579-9",
+      "display" : "In general, how would you rate your physical health [PROMIS]"
+    }],
+    "prefix" : "Global03",
+    "text" : "In general, how would you rate your physical health?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Excellent",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Ausgezeichnet"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Very Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Sehr gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Fair",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Einigermaßen"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Poor",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Schlecht"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global04",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61580-7",
+      "display" : "In general, how would you rate your mental health, including your mood and your ability to think [PROMIS]"
+    }],
+    "prefix" : "Global04",
+    "text" : "In general, how would you rate your mental health, including your mood and your ability to think?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Excellent",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Ausgezeichnet"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Very Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Sehr gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Fair",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Einigermaßen"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Poor",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Schlecht"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global05",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61581-5",
+      "display" : "In general, how would you rate your satisfaction with you social activities and relationships [PROMIS]"
+    }],
+    "prefix" : "Global05",
+    "text" : "In general, how would you rate your satisfaction with your social activities and relationships?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Excellent",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Ausgezeichnet"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Very Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Sehr gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Fair",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Einigermaßen"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Poor",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Schlecht"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global09",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61585-6",
+      "display" : "In general, please rate how well you carry out your usual social activities and roles [PROMIS]"
+    }],
+    "prefix" : "Global09",
+    "text" : "In general, please rate how well you carry out your usual social activities and roles. (This includes activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9206-9",
+        "display" : "Excellent",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Ausgezeichnet"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13913-1",
+        "display" : "Very Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Sehr gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8967-7",
+        "display" : "Good",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Gut"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8968-5",
+        "display" : "Fair",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Einigermaßen"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA8969-3",
+        "display" : "Poor",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Schlecht"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global06",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61582-3",
+      "display" : "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair [PROMIS]"
+    }],
+    "prefix" : "Global06",
+    "text" : "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13937-0",
+        "display" : "Completely"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13938-8",
+        "display" : "Mostly"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13939-6",
+        "display" : "Moderately"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13940-4",
+        "display" : "A little"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6568-5",
+        "display" : "Not at all"
+      }
+    }]
+  },
+  {
+    "linkId" : "PROMIS-GH.Past7Days",
+    "text" : "In the past 7 days…",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "In den letzten 7 Tagen:"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "display"
+  },
+  {
+    "linkId" : "promis-global10",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61586-4",
+      "display" : "How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable in past 7 days [PROMIS]"
+    }],
+    "prefix" : "Global10",
+    "text" : "How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6270-8",
+        "display" : "Never",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Nie"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA10066-1",
+        "display" : "Rarely",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Selten"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA10082-8",
+        "display" : "Sometimes",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Manchmal"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA10044-8",
+        "display" : "Often",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Oft"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA9933-8",
+        "display" : "Always",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "de"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Immer"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
+      }
+    }]
+  },
+  {
+    "linkId" : "promis-global08",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61584-9",
+      "display" : "How would you rate your fatigue on average in past 7 days [PROMIS]"
+    }],
+    "prefix" : "Global08",
+    "text" : "How would you rate your fatigue on average?",
+    "type" : "choice",
+    "answerOption" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 5
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA137-2",
+        "display" : "None"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 4
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 3
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 2
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+        "valueDecimal" : 1
+      }],
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LA13958-6",
+        "display" : "Very severe"
+      }
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+      "valueCoding" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{score}",
+        "display" : "{score}"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/minValue",
+      "valueInteger" : 0
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/maxValue",
+      "valueInteger" : 10
+    }],
+    "linkId" : "promis-global07",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "61583-1",
+      "display" : "How would you rate your pain on average in past 7 days [PROMIS]"
+    }],
+    "prefix" : "Global07",
+    "text" : "How would you rate your pain on average?",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "integer"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+      "valueExpression" : {
+        "name" : "Scoreberechnung",
+        "language" : "text/fhirpath",
+        "expression" : "%gphRaw"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+      "valueCoding" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{score}",
+        "display" : "{score}"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }
+    }],
+    "linkId" : "promis-global-health-score-physical-raw",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "71972-4",
+      "display" : "PROMIS-10 Global Physical Health (GPH) score"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-global-health-physical-raw",
+      "display" : "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
+    }],
+    "prefix" : "GPH",
+    "text" : "Global Physical Health raw score (4-20)",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Rohwert Global Physical Health (4-20)"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "decimal",
+    "readOnly" : true
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+      "valueExpression" : {
+        "name" : "Scoreberechnung",
+        "language" : "text/fhirpath",
+        "expression" : "%gmhRaw"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+      "valueCoding" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{score}",
+        "display" : "{score}"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }
+    }],
+    "linkId" : "promis-global-health-score-mental-raw",
+    "code" : [{
+      "system" : "http://loinc.org",
+      "code" : "71970-8",
+      "display" : "PROMIS-10 Global Mental Health (GMH) score"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+      "code" : "promis-global-health-mental-raw",
+      "display" : "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
+    }],
+    "prefix" : "GMH",
+    "text" : "Global Mental Health raw score (4-20)",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Rohwert Global Mental Health (4-20)"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "decimal",
+    "readOnly" : true
+  }]
+}
+
+```

@@ -1,0 +1,9 @@
+@startuml "UseCase 4: cross-domain harmonization"
+
+Researcher -> FDPG : Request Depressivity Data
+FDPG-> DataIntegrationCenter_1 : Request Depressivity Data
+FDPG-> DataIntegrationCenter_2 : Request Depressivity Data
+DataIntegrationCenter_1 -> FDPG : return Depressivity Domain and PROM Scores (e.g. PHQ-9)
+DataIntegrationCenter_2 -> FDPG : return Depressivity Domain and PROM Scores (e.g. BDI-II)
+FDPG -> Researcher : display results
+@enduml
