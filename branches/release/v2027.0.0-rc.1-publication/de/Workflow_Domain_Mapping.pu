@@ -1,0 +1,13 @@
+@startuml
+!theme plain
+skinparam backgroundColor white
+
+rectangle "Instrument-spezifischer Score" as S1 #FFE4E6
+rectangle "ConceptMap oder CQL" as CM #E6F3FF
+rectangle "Domain T-Score" as S2 #E6FFE6
+
+S1 --> CM : Input
+CM --> S2 : Output
+
+note bottom of CM : Empirisch validierte\nMapping-Tabellen
+@enduml

@@ -1,0 +1,7 @@
+@startuml "UseCase 1: ePRO Collection"
+Physician-> ePROSystem : select Questionnaire
+ePROSystem -> Patient :  display Questionnaire
+Patient -> ePROSystem : collect Response
+ePROSystem -> ePROSystem : calculate Score
+ePROSystem -> Physician : display Results
+@enduml
