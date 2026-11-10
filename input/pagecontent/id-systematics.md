@@ -284,7 +284,7 @@ The choice between inline `answerOption` and external `answerValueSet` definitio
 ~~~~
 //FSH
 // Questionnaire
-* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 
 // CodeSystem
 * #bdi-bdi2-answer-1 ^property[+].code = #bdi-bdi2-itemWeight

@@ -5,7 +5,7 @@
 // Rohwert = Summe der Antwortgewichte der vier Items einer Domaene; T-Score nur bei
 // vollstaendig beantworteter Short Form (Count-Guard, wie im FHIRPath-Kanal).
 // Define-Namen == Score-linkIds des Questionnaires (Konvention 6yu.14).
-library "mii-lib-pro-promis-29" version '2027.0.0-rc.1'
+library "mii-lib-pro-promis-29" version '2027.0.0-ballot.2'
 
 using FHIR version '4.0.1'
 

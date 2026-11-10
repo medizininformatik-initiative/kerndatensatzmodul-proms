@@ -6,25 +6,25 @@ Usage: #example
 * type = #transaction
 
 // Questionnaire (uses LOINC codes with itemWeight extensions)
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
 * entry[=].resource = mii-qst-pro-phq-9
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Questionnaire/mii-qst-pro-phq-9"
 
 // QuestionnaireResponse (severe depression example)
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-phq-9-response"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-phq-9-response"
 * entry[=].resource = mii-exa-pro-phq-9-response
 * entry[=].request.method = #PUT
 * entry[=].request.url = "QuestionnaireResponse/mii-exa-pro-phq-9-response"
 
 // Derived Observation (score 27)
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-phq-9-observation"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-phq-9-observation"
 * entry[=].resource = mii-exa-pro-phq-9-observation
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-phq-9-observation"
 
 // Patient
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
 * entry[=].resource.resourceType = "Patient"
 * entry[=].resource.id = "mii-exa-pro-patient"
 * entry[=].resource.active = true

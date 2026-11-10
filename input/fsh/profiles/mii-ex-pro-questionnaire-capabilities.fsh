@@ -6,7 +6,7 @@ Description: "MII PR PRO Questionnaire Capabilities, based on the FHIR Structure
 * insert PR_CS_VS_Version
 * ^status = #active
 * ^experimental = true
-//* url = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+//* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
 * extension contains 
     displayable 0..1 MS and
     collectable 0..1 MS and

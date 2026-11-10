@@ -1,5 +1,5 @@
 {
-  "description": "Scoring-Szenarien PROMIS-29 — Antworten als code+label-Paar (Label = Checksumme, Loader prueft gegen Fixture), expect = extern verankerte Literale. Gilt fuer mii-qst-pro-promis-29 (die DE-Variante ist seit 2027.0.0-rc.1 retired).",
+  "description": "Scoring-Szenarien PROMIS-29 — Antworten als code+label-Paar (Label = Checksumme, Loader prueft gegen Fixture), expect = extern verankerte Literale. Gilt fuer mii-qst-pro-promis-29 (die DE-Variante ist seit 2027.0.0-ballot.2 retired).",
   "fixture": "scripts/data/promis29-answer-weights.csv",
   "questionnaires": [
     "fsh-generated/resources/Questionnaire-mii-qst-pro-promis-29.json"

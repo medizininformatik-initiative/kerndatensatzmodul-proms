@@ -6,43 +6,43 @@ Usage: #example
 * type = #transaction
 
 // CodeSystem
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2"
 * entry[=].resource = MII_CS_PRO_BDI_BDI2_AnswerList
 * entry[=].request.method = #PUT
 * entry[=].request.url = "CodeSystem/mii-cs-pro-bdi-bdi2"
 
 // Short ValueSet
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 * entry[=].resource = MII_VS_PRO_BDI_BDI2_AnswerListShort
 * entry[=].request.method = #PUT
 * entry[=].request.url = "ValueSet/mii-vs-pro-bdi-bdi2-short"
 
 // Long ValueSet  
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-long"
 * entry[=].resource = MII_VS_PRO_BDI_BDI2_AnswerListLong
 * entry[=].request.method = #PUT
 * entry[=].request.url = "ValueSet/mii-vs-pro-bdi-bdi2-long"
 
 // Questionnaire
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2"
 * entry[=].resource = mii-qst-pro-bdi-bdi2
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Questionnaire/mii-qst-pro-bdi-bdi2"
 
 // QuestionnaireResponse
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-bdi-bdi2"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-bdi-bdi2"
 * entry[=].resource = mii-exa-pro-bdi-bdi2
 * entry[=].request.method = #PUT
 * entry[=].request.url = "QuestionnaireResponse/mii-exa-pro-bdi-bdi2"
 
 // Derived Observation
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-bdi-ii-observation"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-bdi-ii-observation"
 * entry[=].resource = mii-exa-pro-bdi-ii-observation
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/mii-exa-pro-bdi-ii-observation"
 
 // Patient
-* entry[+].fullUrl = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
+* entry[+].fullUrl = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"
 * entry[=].resource.resourceType = "Patient"
 * entry[=].resource.id = "mii-exa-pro-patient"
 * entry[=].resource.active = true

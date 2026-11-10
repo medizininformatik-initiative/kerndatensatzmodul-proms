@@ -33,7 +33,7 @@ DATA = Path(__file__).resolve().parent / "data"
 FSH_FILES = [
     REPO / "input/fsh/definitions/promis-29/mii-qst-pro-promis-29.fsh",
 ]
-# HDB-1008 (Social-Items LA10044-8 statt LA14747-2) ist seit 2027.0.0-rc.1 behoben;
+# HDB-1008 (Social-Items LA10044-8 statt LA14747-2) ist seit 2027.0.0-ballot.2 behoben;
 # keine bekannten Abweichungen mehr.
 KNOWN_DEVIATIONS = set()
 ANSWER_LISTS = {  # linkId-Präfix -> erwartete LOINC-AnswerList (für Stufe 2)

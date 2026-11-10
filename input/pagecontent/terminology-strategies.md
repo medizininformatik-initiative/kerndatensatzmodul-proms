@@ -107,7 +107,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 ~~~~
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[calculatable].valueBoolean = true
-* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores without display dependency
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores without display dependency
 ~~~~
 
 #### MII Terminology Strategy
@@ -157,7 +157,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 ### Example 2: BDI-II (MII CodeSystem + ValueSet)
 ~~~~
 // Questionnaire Item
-* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 
 // CodeSystem
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList

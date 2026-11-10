@@ -8,9 +8,9 @@ This page documents the changes between versions of the MII PRO module.
 
 _Nothing yet._
 
-### 2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)
+### 2027.0.0-ballot.2 — Ballot reconciliation 2 (2026-11-10)
 
-First release candidate of the 2027 line after the ballot (2027.0.0-ballot.1). Content changes relative to the ballot:
+Second ballot iteration of the 2027 line: reconciles the ballot comments on 2027.0.0-ballot.1 (HDB-1007, HDB-1008, HDB-1009) and carries the follow-up fixes of the same cycle. Content changes relative to 2027.0.0-ballot.1:
 
 **PROMIS Scale v1.2 – Global Health** (`mii-qst-pro-promis-global-health`, catalogue code `promis-global-health`, LOINC panel `85524-7`; bead 92b): all ten items with LOINC codes and answer lists, Global Physical/Mental Health raw scores (4–20) with the v1.2 recodings as `itemWeight` on the options (Global07 as `integer` item 0–10, recoded in the `gphRaw` variable), two ObservationDefinitions, example. `status = draft` because the official German translation is available only for Global01/02/07 — the remaining seven will be added from the CPCOR document, T-scores follow as CQL. Canonical full form for the local 2-item Questionnaire `PROMISGH` in PCOR-MII (to be derived there via `derivedFrom`).
 
@@ -20,7 +20,7 @@ First release candidate of the 2027 line after the ballot (2027.0.0-ballot.1). C
 
 **Scoring weights repaired and unified** (beads g3b.13–18): a runtime check of every instrument with `.weight()` scoring (fhirpath.js, synthetic QuestionnaireResponse) found four silent failures: **BDI-II** (weights lived as `ordinalValue` on the ValueSet and were lost in the SDC 4 upgrade, instrument `active`), **MIDOS2** (CodeSystem without weights), **EQ-5D-5L collectable** (levels without weights, empty profile string) and **SCOFF, PC-PTSD, WI-7** (`itemWeight` on the `valueCoding` instead of the `answerOption`, where form renderers do not read it). Weights are now `itemWeight` properties on the MII CodeSystems (BDI-II, MIDOS2, EQ-5D-5L) or on the `answerOption` (yes/no RuleSet). New: RuleSets `WeightedOption`, `WeightedOptionIntl`, `WeightedConcept`, `WeightedConceptIntl`, `ItemWeightProperty` as the only way to write weights; the Questionnaire profile allows `itemWeight` only on `answerOption.extension` (0..0 on the Coding); `scripts/scoring-smoke.test.mjs` checks in CI that every score expression yields a value. EORTC CodeSystem: missing property declaration with URI added. The smoke test also found: BDI-II and EQ-5D-5L filtered QR items by `type = 'choice'` (QuestionnaireResponse items have no type, result always empty), the BDI-II T-score cascade lacked a parenthesis, four EORTC symptom scales had one too many, MIDOS2 never had a score item for the symptom sum (now `midos2-score-symptom-sum`, catalogue code `midos2-symptom-sum`), and the EQ-5D-5L collectable options used codes 1–5/9 against a CodeSystem whose codes are MO-1…AD-5 (corrected, pseudo option “9 missing value” removed; the profile string now uses `toString()` for concatenation).
 
-**PROMIS-29 cleaned up for 2027.0.0-rc.1** (beads epic g3b):
+**PROMIS-29 cleaned up for 2027.0.0-ballot.2** (beads epic g3b):
 
 * **Language architecture restored** — all 43 items, group headers and instructions are English-primary (wording of the official PHO form PROMIS-29 Profile v2.1) with a German `translation` extension (PCOR-MII master / CPCOR). The fix of 2026-05-06 (608212e74b) only lived on `release/v2026.3.0`; PR #97 into `dev` was never merged, so 2026.4.0 through 2027.0.0-ballot.1 carried 39 German-primary items in the English instance.
 * **HDB-1008** — the fourth answer option of the Social items is now LA14747-2 “Usually”/“Meistens” (LOINC LL3003-2) instead of LA10044-8 “Often”; LOINC supplement and a dedicated ValueSet `mii-vs-pro-promis-social-roles-response-scale` added.

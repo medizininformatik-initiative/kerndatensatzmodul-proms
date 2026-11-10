@@ -1,4 +1,4 @@
-// RETIRED mit 2027.0.0-rc.1 (Beads g3b.8): Die DE-primaere Praesentationsvariante war ein
+// RETIRED mit 2027.0.0-ballot.2 (Beads g3b.8): Die DE-primaere Praesentationsvariante war ein
 // 1:1-Spiegel von mii-qst-pro-promis-29 und musste bei jedem Fix doppelt gepflegt werden
 // (Ursache der Social-Fehler HDB-1007/1008). Die Hauptinstanz traegt alle deutschen Texte
 // als translation-Extension; DE-primaere Darstellung liefert Questionnaire/$localize
@@ -6,7 +6,7 @@
 Instance: mii-qst-pro-promis-29-de
 InstanceOf: mii-pr-pro-questionnaire
 Title: "MII QST PRO PROMIS-29 (German) [retired]"
-Description: "RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-rc.1. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable."
+Description: "RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-ballot.2. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable."
 Usage: #definition
 * insert Version
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire)
