@@ -73,7 +73,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "title" : "EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-10T21:18:30+00:00",
+  "date" : "2026-11-10T21:35:42+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
