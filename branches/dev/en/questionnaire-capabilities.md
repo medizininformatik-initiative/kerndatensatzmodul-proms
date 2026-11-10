@@ -1,4 +1,4 @@
-# Questionnaire Capabilities - MII IG PRO v2027.0.0-rc.1
+# Questionnaire Capabilities - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

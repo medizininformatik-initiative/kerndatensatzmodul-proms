@@ -1,4 +1,4 @@
-# MII VS PRO ISR-Z Answers - MII IG PRO v2027.0.0-rc.1
+# MII VS PRO ISR-Z Answers - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-isr-z-answers | *Version*:2027.0.0-rc.1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-isr-z-answers | *Version*:2027.0.0-ballot.2 |
 | Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_PRO_ISR_Z_Answers |
 
  
@@ -37,11 +37,11 @@ ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemli
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-isr-z-answers",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-isr-z-answers",
-  "version" : "2027.0.0-rc.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_VS_PRO_ISR_Z_Answers",
   "title" : "MII VS PRO ISR-Z Answers",
   "status" : "active",
-  "date" : "2026-11-10T10:00:18+00:00",
+  "date" : "2026-11-10T21:18:30+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -5,12 +5,12 @@
   <language value="de"/>
   <type value="transaction"/>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
     <resource>
       <Questionnaire>
         <id value="mii-qst-pro-eortc-qlq-c30"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -41,7 +41,7 @@
           </extension>
         </extension>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30"/>
-        <version value="2027.0.0-rc.1"/>
+        <version value="2027.0.0-ballot.2"/>
         <title value="EORTC QLQ-C30 Quality of Life Questionnaire Version 3.0"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -521,18 +521,18 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"/>
     <resource>
       <QuestionnaireResponse>
         <id value="mii-exa-pro-eortc-qlq-c30-response"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
           <status value="generated"/>
         </text>
-        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30|2027.0.0-rc.1"/>
+        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30|2027.0.0-ballot.2"/>
         <status value="completed"/>
         <subject>
           <reference value="Patient/mii-exa-pro-patient"/>
@@ -876,12 +876,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pf"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-pf"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -931,12 +931,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-rf"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-rf"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -978,12 +978,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ef"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-ef"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1025,12 +1025,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-cf"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-cf"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1072,12 +1072,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sf"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-sf"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1119,12 +1119,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fa"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-fa"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1166,12 +1166,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-nv"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-nv"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1213,12 +1213,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-pa"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-pa"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1260,12 +1260,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-dy"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-dy"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1307,12 +1307,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-sl"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-sl"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1354,12 +1354,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ap"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-ap"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1401,12 +1401,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-co"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-co"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-co"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1448,12 +1448,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-di"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-di"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-di"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1495,12 +1495,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-fi"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-fi"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1542,12 +1542,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-eortc-qlq-c30-observation-ql"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-eortc-qlq-c30-observation-ql"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-rc.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -1589,7 +1589,7 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"/>
     <resource>
       <Patient>
         <id value="mii-exa-pro-patient"/>

@@ -1,4 +1,4 @@
-# PROMIS-29 Scoring — Validierung und Persistenz - MII IG PRO v2027.0.0-rc.1
+# PROMIS-29 Scoring — Validierung und Persistenz - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring | *Version*:2027.0.0-rc.1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring | *Version*:2027.0.0-ballot.2 |
 | Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:PROMIS29ScoringTestScript |
 
  
@@ -24,7 +24,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 **url**: [TestScript PROMIS-29 Scoring — Validierung und Persistenz](TestScript-promis29-scoring.md)
 
-**version**: 2027.0.0-rc.1
+**version**: 2027.0.0-ballot.2
 
 **name**: PROMIS29ScoringTestScript
 
@@ -34,7 +34,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 **experimental**: true
 
-**date**: 2026-11-10 10:00:18+0000
+**date**: 2026-11-10 21:18:30+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -1085,12 +1085,12 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-scoring",
-  "version" : "2027.0.0-rc.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "PROMIS29ScoringTestScript",
   "title" : "PROMIS-29 Scoring — Validierung und Persistenz",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10T10:00:18+00:00",
+  "date" : "2026-11-10T21:18:30+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

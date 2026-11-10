@@ -1,4 +1,4 @@
-# MII ObsDef PRO PROMIS Global Health Physical Raw Score - MII IG PRO v2027.0.0-rc.1
+# MII ObsDef PRO PROMIS Global Health Physical Raw Score - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,9 +12,9 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-rc.1
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.2
 
-**ArtifactVersion**: 2027.0.0-rc.1
+**ArtifactVersion**: 2027.0.0-ballot.2
 
 **category**: Survey
 
@@ -49,11 +49,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-promis-global-health-physical-raw",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-rc.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.2"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2027.0.0-rc.1"
+    "valueString" : "2027.0.0-ballot.2"
   }],
   "category" : [{
     "coding" : [{

@@ -5,7 +5,7 @@
   "type" : "collection",
   "timestamp" : "2024-01-15T10:35:00Z",
   "entry" : [{
-    "fullUrl" : "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient",
+    "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "mii-exa-pro-patient",
@@ -26,18 +26,18 @@
     }
   },
   {
-    "fullUrl" : "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response",
+    "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response",
     "resource" : {
       "resourceType" : "QuestionnaireResponse",
       "id" : "mii-exa-pro-promis-depression-sf4a-response",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-rc.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
         "status" : "generated"
       },
-      "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a|2027.0.0-rc.1",
+      "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a|2027.0.0-ballot.2",
       "status" : "completed",
       "subject" : {
         "reference" : "Patient/mii-exa-pro-patient"
@@ -104,12 +104,12 @@
     }
   },
   {
-    "fullUrl" : "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-raw-score",
+    "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-raw-score",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-promis-depression-sf4a-raw-score",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2027.0.0-rc.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -146,12 +146,12 @@
     }
   },
   {
-    "fullUrl" : "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-tscore",
+    "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-tscore",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "mii-exa-pro-promis-depression-sf4a-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score|2027.0.0-rc.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {

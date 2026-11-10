@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>PROMIS-29 - MII IG PRO v2027.0.0-rc.1</title>
+    <title>PROMIS-29 - MII IG PRO v2027.0.0-ballot.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -138,7 +138,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-rc.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.2 - 
 
 
 
@@ -290,7 +290,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-rc.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot.2) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>PROMIS-29</h2>
   
 
@@ -321,7 +321,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="overview">Overview</h3>
 
 <p><strong>Status</strong>: Fully implemented (items, both scoring channels, review framework)
-<strong>Version</strong>: 2027.0.0-rc.1
+<strong>Version</strong>: 2027.0.0-ballot.2
 <strong>Last Updated</strong>: 2026-11-04</p>
 
 <p>The PROMIS-29 is a comprehensive instrument for assessing health-related quality of life across 7 domains plus pain intensity.</p>
@@ -502,7 +502,7 @@ iif(%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).ans
 <p><strong>Primary Language</strong>: English, wording of the official PROMIS-29 Profile v2.1 form (PROMIS Health Organization)
 <strong>German Translation</strong>: Via <code class="language-plaintext highlighter-rouge">translation</code> extension on every item text, group header and instruction; wording of the validated German PROMIS-29 (CPCOR Charité / PCOR-MII Item Level Dictionary; Pain Interference items in the past tense per the PHO German PDF).</p>
 
-<p>All 43 items (29 questions, 14 score items) and all group headers follow this one architecture. The former German-primary variant <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> and the 8-item <code class="language-plaintext highlighter-rouge">-minimal</code> subset are <strong>retired</strong> since 2027.0.0-rc.1; German-primary rendering is a renderer/<code class="language-plaintext highlighter-rouge">$localize</code> concern, not a second resource. The Physical Function and Social Roles groups deliberately have <strong>no</strong> time-frame instruction, exactly as on the official form.</p>
+<p>All 43 items (29 questions, 14 score items) and all group headers follow this one architecture. The former German-primary variant <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> and the 8-item <code class="language-plaintext highlighter-rouge">-minimal</code> subset are <strong>retired</strong> since 2027.0.0-ballot.2; German-primary rendering is a renderer/<code class="language-plaintext highlighter-rouge">$localize</code> concern, not a second resource. The Physical Function and Social Roles groups deliberately have <strong>no</strong> time-frame instruction, exactly as on the official form.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"I felt fearful."</span><span class="p">,</span><span class="w">
@@ -603,8 +603,8 @@ iif(%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).ans
 
 
           IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-rc.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 10:00+0000">2026-11-10</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Nov 10, 2026 21:18+0000">2026-11-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
               <!-- Branding override for the fhir2.base.template footer fragment.

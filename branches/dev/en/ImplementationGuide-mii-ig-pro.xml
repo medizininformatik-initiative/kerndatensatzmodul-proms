@@ -110,12 +110,12 @@
     <valueMarkdown value="Provide the computable publication unit for the MII Core Dataset PRO module, enabling implementers to discover, validate, version, and apply the specification consistently."/>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro"/>
-  <version value="2027.0.0-rc.1"/>
+  <version value="2027.0.0-ballot.2"/>
   <name value="MII_IG_PRO"/>
   <title value="MII IG PRO"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-11"/>
+  <date value="2026-11-10"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -2619,7 +2619,7 @@
         <reference value="Questionnaire/mii-qst-pro-promis-29-de"/>
       </reference>
       <name value="MII QST PRO PROMIS-29 (German) [retired]"/>
-      <description value="RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-rc.1. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable."/>
+      <description value="RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-ballot.2. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2630,7 +2630,7 @@
         <reference value="Questionnaire/mii-qst-pro-promis-29-minimal"/>
       </reference>
       <name value="MII QST PRO PROMIS-29 Minimal [retired]"/>
-      <description value="RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-rc.1. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable."/>
+      <description value="RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-ballot.2. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

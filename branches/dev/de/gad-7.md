@@ -1,4 +1,4 @@
-# GAD-7 - MII IG PRO v2027.0.0-rc.1
+# GAD-7 - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)

@@ -1,4 +1,4 @@
-# PROMIS-29 Scoring — Terminologie der Antwortoptionen - MII IG PRO v2027.0.0-rc.1
+# PROMIS-29 Scoring — Terminologie der Antwortoptionen - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-terminology | *Version*:2027.0.0-rc.1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-terminology | *Version*:2027.0.0-ballot.2 |
 | Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:PROMIS29TerminologyTestScript |
 
  
@@ -24,7 +24,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 **url**: [TestScript PROMIS-29 Scoring — Terminologie der Antwortoptionen](TestScript-promis29-terminology.md)
 
-**version**: 2027.0.0-rc.1
+**version**: 2027.0.0-ballot.2
 
 **name**: PROMIS29TerminologyTestScript
 
@@ -34,7 +34,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 **experimental**: true
 
-**date**: 2026-11-10 10:00:18+0000
+**date**: 2026-11-10 21:18:30+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -355,12 +355,12 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-terminology",
-  "version" : "2027.0.0-rc.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "PROMIS29TerminologyTestScript",
   "title" : "PROMIS-29 Scoring — Terminologie der Antwortoptionen",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10T10:00:18+00:00",
+  "date" : "2026-11-10T21:18:30+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

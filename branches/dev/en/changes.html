@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2027.0.0-rc.1</title>
+    <title>Changelog - MII IG PRO v2027.0.0-ballot.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-rc.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.2 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-rc.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG PRO - Local Development build (v2027.0.0-ballot.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -312,7 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#unreleased-dev" id="markdown-toc-unreleased-dev">Unreleased (dev)</a></li>
-  <li><a href="#202700-rc1--release-candidate-1-2026-11-05" id="markdown-toc-202700-rc1--release-candidate-1-2026-11-05">2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)</a></li>
+  <li><a href="#202700-ballot2--ballot-reconciliation-2-2026-11-10" id="markdown-toc-202700-ballot2--ballot-reconciliation-2-2026-11-10">2027.0.0-ballot.2 — Ballot reconciliation 2 (2026-11-10)</a></li>
   <li><a href="#202700-ballot1--manifest-hotfix" id="markdown-toc-202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — manifest hotfix</a></li>
   <li><a href="#202700-ballot" id="markdown-toc-202700-ballot">2027.0.0-ballot</a></li>
   <li><a href="#202700-ballotrc5" id="markdown-toc-202700-ballotrc5">2027.0.0-ballot.rc5</a></li>
@@ -341,9 +341,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><em>Nothing yet.</em></p>
 
-<h3 id="202700-rc1--release-candidate-1-2026-11-05">2027.0.0-rc.1 — Release Candidate 1 (2026-11-05)</h3>
+<h3 id="202700-ballot2--ballot-reconciliation-2-2026-11-10">2027.0.0-ballot.2 — Ballot reconciliation 2 (2026-11-10)</h3>
 
-<p>First release candidate of the 2027 line after the ballot (2027.0.0-ballot.1). Content changes relative to the ballot:</p>
+<p>Second ballot iteration of the 2027 line: reconciles the ballot comments on 2027.0.0-ballot.1 (HDB-1007, HDB-1008, HDB-1009) and carries the follow-up fixes of the same cycle. Content changes relative to 2027.0.0-ballot.1:</p>
 
 <p><strong>PROMIS Scale v1.2 – Global Health</strong> (<code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-global-health</code>, catalogue code <code class="language-plaintext highlighter-rouge">promis-global-health</code>, LOINC panel <code class="language-plaintext highlighter-rouge">85524-7</code>; bead 92b): all ten items with LOINC codes and answer lists, Global Physical/Mental Health raw scores (4–20) with the v1.2 recodings as <code class="language-plaintext highlighter-rouge">itemWeight</code> on the options (Global07 as <code class="language-plaintext highlighter-rouge">integer</code> item 0–10, recoded in the <code class="language-plaintext highlighter-rouge">gphRaw</code> variable), two ObservationDefinitions, example. <code class="language-plaintext highlighter-rouge">status = draft</code> because the official German translation is available only for Global01/02/07 — the remaining seven will be added from the CPCOR document, T-scores follow as CQL. Canonical full form for the local 2-item Questionnaire <code class="language-plaintext highlighter-rouge">PROMISGH</code> in PCOR-MII (to be derived there via <code class="language-plaintext highlighter-rouge">derivedFrom</code>).</p>
 
@@ -353,7 +353,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Scoring weights repaired and unified</strong> (beads g3b.13–18): a runtime check of every instrument with <code class="language-plaintext highlighter-rouge">.weight()</code> scoring (fhirpath.js, synthetic QuestionnaireResponse) found four silent failures: <strong>BDI-II</strong> (weights lived as <code class="language-plaintext highlighter-rouge">ordinalValue</code> on the ValueSet and were lost in the SDC 4 upgrade, instrument <code class="language-plaintext highlighter-rouge">active</code>), <strong>MIDOS2</strong> (CodeSystem without weights), <strong>EQ-5D-5L collectable</strong> (levels without weights, empty profile string) and <strong>SCOFF, PC-PTSD, WI-7</strong> (<code class="language-plaintext highlighter-rouge">itemWeight</code> on the <code class="language-plaintext highlighter-rouge">valueCoding</code> instead of the <code class="language-plaintext highlighter-rouge">answerOption</code>, where form renderers do not read it). Weights are now <code class="language-plaintext highlighter-rouge">itemWeight</code> properties on the MII CodeSystems (BDI-II, MIDOS2, EQ-5D-5L) or on the <code class="language-plaintext highlighter-rouge">answerOption</code> (yes/no RuleSet). New: RuleSets <code class="language-plaintext highlighter-rouge">WeightedOption</code>, <code class="language-plaintext highlighter-rouge">WeightedOptionIntl</code>, <code class="language-plaintext highlighter-rouge">WeightedConcept</code>, <code class="language-plaintext highlighter-rouge">WeightedConceptIntl</code>, <code class="language-plaintext highlighter-rouge">ItemWeightProperty</code> as the only way to write weights; the Questionnaire profile allows <code class="language-plaintext highlighter-rouge">itemWeight</code> only on <code class="language-plaintext highlighter-rouge">answerOption.extension</code> (0..0 on the Coding); <code class="language-plaintext highlighter-rouge">scripts/scoring-smoke.test.mjs</code> checks in CI that every score expression yields a value. EORTC CodeSystem: missing property declaration with URI added. The smoke test also found: BDI-II and EQ-5D-5L filtered QR items by <code class="language-plaintext highlighter-rouge">type = 'choice'</code> (QuestionnaireResponse items have no type, result always empty), the BDI-II T-score cascade lacked a parenthesis, four EORTC symptom scales had one too many, MIDOS2 never had a score item for the symptom sum (now <code class="language-plaintext highlighter-rouge">midos2-score-symptom-sum</code>, catalogue code <code class="language-plaintext highlighter-rouge">midos2-symptom-sum</code>), and the EQ-5D-5L collectable options used codes 1–5/9 against a CodeSystem whose codes are MO-1…AD-5 (corrected, pseudo option “9 missing value” removed; the profile string now uses <code class="language-plaintext highlighter-rouge">toString()</code> for concatenation).</p>
 
-<p><strong>PROMIS-29 cleaned up for 2027.0.0-rc.1</strong> (beads epic g3b):</p>
+<p><strong>PROMIS-29 cleaned up for 2027.0.0-ballot.2</strong> (beads epic g3b):</p>
 
 <ul>
   <li><strong>Language architecture restored</strong> — all 43 items, group headers and instructions are English-primary (wording of the official PHO form PROMIS-29 Profile v2.1) with a German <code class="language-plaintext highlighter-rouge">translation</code> extension (PCOR-MII master / CPCOR). The fix of 2026-05-06 (608212e74b) only lived on <code class="language-plaintext highlighter-rouge">release/v2026.3.0</code>; PR #97 into <code class="language-plaintext highlighter-rouge">dev</code> was never merged, so 2026.4.0 through 2027.0.0-ballot.1 carried 39 German-primary items in the English instance.</li>
@@ -781,8 +781,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-rc.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 10:00+0000">2026-11-10</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Nov 10, 2026 21:18+0000">2026-11-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
