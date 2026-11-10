@@ -34,7 +34,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
 
 **experimental**: true
 
-**date**: 2026-11-10 21:35:42+0000
+**date**: 2026-11-10 21:51:59+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -1090,7 +1090,7 @@ Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anleg
   "title" : "PROMIS-29 Scoring — Validierung und Persistenz",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10T21:35:42+00:00",
+  "date" : "2026-11-10T21:51:59+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PROMIS Social Roles Response Scale",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-10T21:35:42+00:00",
+  "date" : "2026-11-10T21:51:59+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
