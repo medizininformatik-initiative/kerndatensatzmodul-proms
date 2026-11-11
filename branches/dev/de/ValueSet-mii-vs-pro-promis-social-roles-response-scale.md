@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-social-roles-response-scale | *Version*:2027.0.0-ballot.2 |
-| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_PRO_PROMIS_Social_Roles_Response_Scale |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_VS_PRO_PROMIS_Social_Roles_Response_Scale |
 
  
 Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 … Always = 1). 
@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS PRO PROMIS Social Roles Response Scale",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-10T21:51:59+00:00",
+  "date" : "2026-11-11T07:13:44+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

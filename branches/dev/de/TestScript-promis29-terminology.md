@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-terminology | *Version*:2027.0.0-ballot.2 |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:PROMIS29TerminologyTestScript |
+| Draft Stand: 2026-11-11 | *Maschinenlesbarer Name*:PROMIS29TerminologyTestScript |
 
  
 Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008). 
@@ -34,7 +34,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
 
 **experimental**: true
 
-**date**: 2026-11-10 21:51:59+0000
+**date**: 2026-11-11 07:13:44+0000
 
 **publisher**: Medizininformatik-Initiative
 
@@ -360,7 +360,7 @@ Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validat
   "title" : "PROMIS-29 Scoring — Terminologie der Antwortoptionen",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10T21:51:59+00:00",
+  "date" : "2026-11-11T07:13:44+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
