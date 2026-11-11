@@ -1,6 +1,6 @@
 {
   "package": "de.medizininformatikinitiative.kerndatensatz.pros",
-  "version": "2027.0.0-ballot.1",
+  "version": "2027.0.0-ballot.2",
   "fhirVersion": "4.0.1",
   "jurisdiction": "DE",
   "extensions": [
@@ -153,8 +153,10 @@
       "CapabilityStatement",
       "ConceptMap",
       "ImplementationGuide",
+      "Library",
       "Questionnaire",
-      "SearchParameter"
+      "SearchParameter",
+      "TestScript"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm|5.3.0-ballot-tc1": [
       "Questionnaire"
@@ -176,7 +178,14 @@
       "ImplementationGuide"
     ],
     "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
-      "ImplementationGuide"
+      "ImplementationGuide",
+      "Library"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel": [
+      "Library"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-library": [
+      "Questionnaire"
     ],
     "http://hl7.org/fhir/StructureDefinition/designNote|5.3.0-ballot-tc1": [
       "Questionnaire",
@@ -203,7 +212,7 @@
     "http://hl7.org/fhir/StructureDefinition/itemWeight": [
       "Bundle.entry.resource.item.answerOption",
       "Questionnaire.item.answerOption",
-      "Questionnaire.item.answerOption.valueCoding",
+      "Questionnaire.item.answerOption.value[x]",
       "Questionnaire.item.item.answerOption"
     ],
     "http://hl7.org/fhir/StructureDefinition/itemWeight|5.3.0-ballot-tc1": [
@@ -266,7 +275,6 @@
       "Questionnaire.item.answerOption.valueCoding.display",
       "Questionnaire.item.answerOption.valueString",
       "Questionnaire.item.item.answerOption.valueCoding.display",
-      "Questionnaire.item.item.item.text",
       "Questionnaire.item.item.text",
       "Questionnaire.item.text",
       "Questionnaire.title",

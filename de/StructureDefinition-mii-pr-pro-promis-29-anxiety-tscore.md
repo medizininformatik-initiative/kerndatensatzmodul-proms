@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Anxiety T-Score - MII IG PRO v2027.0.0-ballot.1
+# MII PR PRO PROMIS-29 Anxiety T-Score - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_29_Anxiety_TScore |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore | *Version*:2027.0.0-ballot.2 |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_29_Anxiety_TScore |
 
  
 Profile for PROMIS-29 Anxiety T-Score Observations 
@@ -86,12 +86,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-anxiety-tscore",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_PR_PRO_PROMIS_29_Anxiety_TScore",
   "title" : "MII PR PRO PROMIS-29 Anxiety T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -164,8 +164,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "71967-4",
-          "display" : "PROMIS-29 Anxiety score T-score"
+          "code" : "77862-1",
+          "display" : "PROMIS emotional distress - anxiety - version 1.0 Tscore"
         }]
       }
     },

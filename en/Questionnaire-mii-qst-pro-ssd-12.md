@@ -1,4 +1,4 @@
-# MII QST PRO SSD-12 - MII IG PRO v2027.0.0-ballot.1
+# MII QST PRO SSD-12 - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12 | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-11 | *Computable Name*: |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12 | *Version*:2027.0.0-ballot.2 |
+| Active as of 2026-11-11 | *Computable Name*: |
 | **Copyright/Legal**: SSD-12 © Toussaint, Löwe et al. Freely available for research and clinical use. Lizenz-Status: frei verfügbar (Tier A). | |
 
  
@@ -34,7 +34,7 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
   "resourceType" : "Questionnaire",
   "id" : "mii-qst-pro-ssd-12",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.2"]
   },
   "language" : "de",
   "extension" : [{
@@ -77,11 +77,11 @@ There are currently no QuestionnaireResponse instances for this Questionnaire de
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "title" : "MII QST PRO SSD-12",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -5,12 +5,12 @@
   <language value="de"/>
   <type value="transaction"/>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
     <resource>
       <Questionnaire>
         <id value="mii-qst-pro-phq-9"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -58,7 +58,7 @@
           </valueExpression>
         </extension>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"/>
-        <version value="2027.0.0-ballot.1"/>
+        <version value="2027.0.0-ballot.2"/>
         <title value="MII QST PRO PHQ-9"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -707,18 +707,18 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-phq-9-response"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-phq-9-response"/>
     <resource>
       <QuestionnaireResponse>
         <id value="mii-exa-pro-phq-9-response"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
           <status value="generated"/>
         </text>
-        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.1"/>
+        <questionnaire value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.2"/>
         <status value="completed"/>
         <subject>
           <reference value="Patient/mii-exa-pro-patient"/>
@@ -849,12 +849,12 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-phq-9-observation"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-phq-9-observation"/>
     <resource>
       <Observation>
         <id value="mii-exa-pro-phq-9-observation"/>
         <meta>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot.1"/>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot.2"/>
         </meta>
         <language value="de"/>
         <text>
@@ -886,7 +886,7 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"/>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient"/>
     <resource>
       <Patient>
         <id value="mii-exa-pro-patient"/>

@@ -1,4 +1,4 @@
-# PROMIS Cognitive Function SF 4a - MII IG PRO v2027.0.0-ballot.1
+# PROMIS Cognitive Function SF 4a - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)

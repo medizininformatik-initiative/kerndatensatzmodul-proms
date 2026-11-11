@@ -7,13 +7,22 @@
     "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
   },
   {
+    "version" : "2027.0.0-ballot.2",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.2",
+    "status" : "ballot",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-11-10",
+    "current" : true,
+    "desc" : "Ballot-Fassung 2 der 2027er-Linie: Reconciliation der Ballot-Kommentare zu 2027.0.0-ballot.1 (HDB-1007/1008/1009, PROMIS-29: EN-primaer + DE-Translation, Social-Option LA14747-2, LOINC-Codierungsregel fuer Scores, CQL-Library als Server-Kanal) sowie Scoring-Gewichte in allen Instrumenten auf itemWeight vereinheitlicht und per Smoke-Test abgesichert, PROMIS-16 aktiv, PROMIS Global Health v1.2 (draft) neu, Template-Workflows synchronisiert."
+  },
+  {
     "version" : "2027.0.0-ballot.1",
     "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/2027.0.0-ballot.1",
     "status" : "ballot",
     "sequence" : "2027",
     "fhirversion" : "4.0.1",
     "date" : "2026-09-11",
-    "current" : true,
     "desc" : "Ballot-Hotfix .1: korrigiertes Package-Manifest (Dependencies spiegeln jetzt sushi-config: meta 2027.0.0-ballot final, SDC 4.0.0, ISiK 6.0.0) - das Simplifier-Package 2027.0.0-ballot deklarierte unveraenderlich veraltete Transitive. Inhaltlich identisch zur Ballot-Version."
   },
   {

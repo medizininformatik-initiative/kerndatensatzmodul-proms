@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG PRO v2027.0.0-ballot.1</title>
+    <title>Changelog - MII IG PRO v2027.0.0-ballot.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15"}
-    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.2 - 
 
 
 
@@ -293,7 +293,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.1: 2027 Ballot 5) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.2: 2027 Ballot 6) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -311,6 +311,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#unveröffentlicht-dev" id="markdown-toc-unveröffentlicht-dev">Unveröffentlicht (dev)</a></li>
+  <li><a href="#202700-ballot2--ballot-reconciliation-2-2026-11-10" id="markdown-toc-202700-ballot2--ballot-reconciliation-2-2026-11-10">2027.0.0-ballot.2 — Ballot-Reconciliation 2 (2026-11-10)</a></li>
   <li><a href="#202700-ballot1--manifest-hotfix" id="markdown-toc-202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — Manifest-Hotfix</a></li>
   <li><a href="#202700-ballot" id="markdown-toc-202700-ballot">2027.0.0-ballot</a></li>
   <li><a href="#202700-ballotrc5" id="markdown-toc-202700-ballotrc5">2027.0.0-ballot.rc5</a></li>
@@ -330,6 +332,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <p>Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Moduls.</p>
+
+<h3 id="unveröffentlicht-dev">Unveröffentlicht (dev)</h3>
+
+<p><em>Noch nichts.</em></p>
+
+<h3 id="202700-ballot2--ballot-reconciliation-2-2026-11-10">2027.0.0-ballot.2 — Ballot-Reconciliation 2 (2026-11-10)</h3>
+
+<p>Zweite Ballot-Iteration der 2027er-Linie: löst die Ballot-Kommentare zu 2027.0.0-ballot.1 auf (HDB-1007, HDB-1008, HDB-1009) und nimmt die Folgekorrekturen desselben Zyklus mit. Inhaltliche Änderungen gegenüber 2027.0.0-ballot.1:</p>
+
+<p><strong>PROMIS Scale v1.2 – Global Health</strong> (<code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-global-health</code>, Katalogcode <code class="language-plaintext highlighter-rouge">promis-global-health</code>, LOINC-Panel <code class="language-plaintext highlighter-rouge">85524-7</code>; Bead 92b): alle zehn Items mit LOINC-Codes und -Answerlists, Rohwerte Global Physical/Mental Health (4–20) mit den v1.2-Umkodierungen als <code class="language-plaintext highlighter-rouge">itemWeight</code> an den Optionen (Global07 als <code class="language-plaintext highlighter-rouge">integer</code>-Item 0–10, Umkodierung in der Variable <code class="language-plaintext highlighter-rouge">gphRaw</code>), zwei ObservationDefinitions, Beispiel. <code class="language-plaintext highlighter-rouge">status = draft</code>, weil die offizielle deutsche Übersetzung nur für Global01/02/07 vorliegt — die übrigen sieben werden aus dem CPCOR-Dokument nachgetragen, T-Scores folgen als CQL. Kanonische Vollfassung für den lokalen 2-Item-Questionnaire <code class="language-plaintext highlighter-rouge">PROMISGH</code> in PCOR-MII (dort per <code class="language-plaintext highlighter-rouge">derivedFrom</code> abzuleiten).</p>
+
+<p><strong>Befund zu PROMIS Sleep-Related Impairment SF 4a</strong> (Bead py5.1): Das PCOR-MII Item Level Dictionary enthält unter „Sleep-Related Impairment" nur das PROMIS-16-Item Sleep25 (Merged-Cell-Fallstrick); PCOR-MII erhebt kein SRI SF 4a. Der Bedarf ist mit PROMIS-16 gedeckt.</p>
+
+<p><strong>CQL-Scoring-Library PROMIS-29</strong> (<code class="language-plaintext highlighter-rouge">mii-lib-pro-promis-29</code>, Beads 6yu.12): Server-Kanal der Dual-Channel-Architektur, aus denselben Gewichts- und T-Score-Tabellen generiert wie die FHIRPath-Expressions (<code class="language-plaintext highlighter-rouge">scripts/generate-promis29-cql.py</code>), als Library mit CQL und vorkompiliertem ELM gepackt (<code class="language-plaintext highlighter-rouge">scripts/package-cql-library.py</code>, cql-translation-service) und per <code class="language-plaintext highlighter-rouge">cqf-library</code> am Questionnaire gebunden. Define-Namen = Score-linkIds. Differenztest mit cql-execution über alle 22 Szenarien in beiden Aufrufwegen (Parameter und Retrieve).</p>
+
+<p><strong>Scoring-Gewichte repariert und vereinheitlicht</strong> (Beads g3b.13–18): Ein Laufzeit-Abgleich aller Instrumente mit <code class="language-plaintext highlighter-rouge">.weight()</code>-Scoring (fhirpath.js, synthetische QuestionnaireResponse) fand vier stille Ausfälle: <strong>BDI-II</strong> (Gewichte lagen als <code class="language-plaintext highlighter-rouge">ordinalValue</code> am ValueSet und gingen beim SDC-4-Upgrade verloren, Instrument <code class="language-plaintext highlighter-rouge">active</code>), <strong>MIDOS2</strong> (CodeSystem ohne Gewichte), <strong>EQ-5D-5L collectable</strong> (Stufen ohne Gewichte, Profil-String leer) und <strong>SCOFF, PC-PTSD, WI-7</strong> (<code class="language-plaintext highlighter-rouge">itemWeight</code> am <code class="language-plaintext highlighter-rouge">valueCoding</code> statt an der <code class="language-plaintext highlighter-rouge">answerOption</code>, dort lesen Form-Renderer sie nicht). Gewichte jetzt als <code class="language-plaintext highlighter-rouge">itemWeight</code>-Property an den MII-CodeSystems (BDI-II, MIDOS2, EQ-5D-5L) bzw. an der <code class="language-plaintext highlighter-rouge">answerOption</code> (Ja/Nein-RuleSet). Neu: RuleSets <code class="language-plaintext highlighter-rouge">WeightedOption</code>, <code class="language-plaintext highlighter-rouge">WeightedOptionIntl</code>, <code class="language-plaintext highlighter-rouge">WeightedConcept</code>, <code class="language-plaintext highlighter-rouge">WeightedConceptIntl</code>, <code class="language-plaintext highlighter-rouge">ItemWeightProperty</code> als einziger Schreibweg; das Questionnaire-Profil erlaubt <code class="language-plaintext highlighter-rouge">itemWeight</code> nur an <code class="language-plaintext highlighter-rouge">answerOption.extension</code> (am Coding 0..0); <code class="language-plaintext highlighter-rouge">scripts/scoring-smoke.test.mjs</code> prüft in der CI, dass jede Score-Expression einen Wert liefert. EORTC-CodeSystem: fehlende Property-Deklaration mit URI ergänzt. Der Smoke-Test fand außerdem: BDI-II und EQ-5D-5L filterten QR-Items nach <code class="language-plaintext highlighter-rouge">type = 'choice'</code> (QuestionnaireResponse-Items haben keinen Typ, Ergebnis immer leer), die BDI-II-T-Score-Kaskade hatte eine Klammer zu wenig, vier EORTC-Symptomskalen eine zu viel, MIDOS2 hatte nie ein Score-Item für die Symptomsumme (jetzt <code class="language-plaintext highlighter-rouge">midos2-score-symptom-sum</code>, Katalogcode <code class="language-plaintext highlighter-rouge">midos2-symptom-sum</code>), und die EQ-5D-5L-collectable-Optionen trugen die Codes 1–5/9 gegen ein CodeSystem mit den Codes MO-1…AD-5 (korrigiert, Pseudo-Option „9 Fehlender Wert“ entfernt; der Profil-String nutzt <code class="language-plaintext highlighter-rouge">toString()</code> für die Verkettung).</p>
+
+<p><strong>PROMIS-29 bereinigt für 2027.0.0-ballot.2</strong> (Beads-Epic g3b):</p>
+
+<ul>
+  <li><strong>Sprach-Architektur wiederhergestellt</strong> — alle 43 Items, Gruppenköpfe und Instruktionen sind EN-primär (Wortlaut des offiziellen PHO-Formulars PROMIS-29 Profile v2.1) mit deutscher <code class="language-plaintext highlighter-rouge">translation</code>-Extension (PCOR-MII-Master / CPCOR). Der Fix vom 2026-05-06 (608212e74b) lag nur auf <code class="language-plaintext highlighter-rouge">release/v2026.3.0</code>; PR #97 nach <code class="language-plaintext highlighter-rouge">dev</code> wurde nie gemergt, sodass 2026.4.0 bis 2027.0.0-ballot.1 39 deutsch-primäre Items in der englischen Instanz trugen.</li>
+  <li><strong>HDB-1008</strong> — vierte Antwortoption der Social-Items ist jetzt LA14747-2 „Usually“/„Meistens“ (LOINC LL3003-2) statt LA10044-8 „Often“; LOINC-Supplement und ein eigenes ValueSet <code class="language-plaintext highlighter-rouge">mii-vs-pro-promis-social-roles-response-scale</code> ergänzt.</li>
+  <li><strong>Kein Zeitbezug bei Körperlicher Funktion und Sozialer Teilhabe</strong> — die Display-Items „In den letzten 7 Tagen:“ dieser beiden Gruppen entfernt (Ticket 047); das offizielle Formular hat dort keinen Stem. Schmerzintensität trägt den Stem jetzt wie im Formular.</li>
+  <li><strong>FATEXP41</strong> trug den falschen LOINC-Code 61863-7 („most fatigued day“); korrekt ist 61865-2 „How run-down did you feel on average“.</li>
+  <li><strong>Antwortreihenfolge Körperliche Funktion</strong> wie im Formular (Without any difficulty … Unable to do).</li>
+  <li><strong>LOINC-Kodierregel für Scores</strong> dokumentiert und angewendet: T-Scores tragen den Domänencode mit Bank-Version (Angst: 77862-1 statt 71967-4), Rohwerte die PROMIS-29-spezifischen Codes, der Rohwert Soziale Teilhabe nur den MII-Katalogcode (71958-3 ist die v1.0-Domäne „Satisfaction“, Ability to Participate v2.0 hat keinen 4a-Rohwert-Code), Schmerzintensität einheitlich 61583-1 (ObservationDefinition/Profil vorher 75261-8). Score-Katalog um die sieben Rohwert-Konzepte ergänzt.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> und <code class="language-plaintext highlighter-rouge">-minimal</code> retired</strong> — die DE-primäre Spiegelvariante und das 8-Item-Subset bleiben als leere Hüllen auflösbar; DE-primäre Darstellung ist Sache von <code class="language-plaintext highlighter-rouge">$localize</code> bzw. des Renderers. Beispiel-QuestionnaireResponse auf die Hauptinstanz umgehängt.</li>
+  <li><strong>IG-Seite PROMIS-29</strong>: Domänentabelle führte sieben Pain-Interference-<em>Item</em>-Codes als „Panel“; jetzt Kurzform-Versionen (PF und Social 4a v2.0, übrige 4a v1.0, lt. Adult Profile Scoring Manual 07/2025), T-Score-Codes und echte Panel-Codes; QR-Snippet mit LOINC-valueCoding statt systemloser „3“ (Finding 0fu.1).</li>
+</ul>
+
+<p><strong>PROMIS-16 auf <code class="language-plaintext highlighter-rouge">active</code></strong> (<code class="language-plaintext highlighter-rouge">experimental = false</code>): Inhalt vollständig, PCOR-MII nutzt ihn produktiv.</p>
+
+<p><strong>Reste aus release/v2026.3.0 nachgezogen</strong>: <code class="language-plaintext highlighter-rouge">domainAligned</code> bei PROMIS Cognitive Function SF 4a, kompletter <code class="language-plaintext highlighter-rouge">capabilities</code>-Block bei PRO-CTCAE Breast (displayable/collectable, nicht calculatable/extractable/domainAligned).</p>
+
+<p><strong>PROMIS-29-Scoring korrigiert</strong> (HDB-1007/-1009): Antwortgewichte von <code class="language-plaintext highlighter-rouge">promis-srpper23-caps</code> auf die offizielle Polung gedreht (Nie=5…Immer=1); die T-Score-Konversionstabellen aller sieben Domänen werden jetzt aus dem offiziellen Scoring-Manual-Appendix <strong>generiert</strong> (zuvor waren sechs falsch, zwei Domänenpaare identisch); T-Scores entstehen nur noch bei vollständig beantworteter Short Form (Count-Guard). Die vierte Antwortoption der Social-Items (Usually/Often, HDB-1008) bleibt bis zum Abgleich mit dem deutschen Originalwortlaut offen.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">questionnaire-unit</code> auf den T-Score-Items</strong> ergänzt (UCUM <code class="language-plaintext highlighter-rouge">{score}</code>, wie bei den Raw-Items): Ohne Unit scheitert die SDC-Observation-Extraction, weil <code class="language-plaintext highlighter-rouge">Observation.value[x]</code> kein decimal kennt; mit Unit entsteht die profilkonforme <code class="language-plaintext highlighter-rouge">valueQuantity</code>.</p>
+
+<p><strong>Ausführbare Scoring-Testsuite</strong>: 22 Szenarien als eine Quelle für vier Schichten — Definitions-Checks, Form-Filler-Tests (fhirpath.js), profilkonforme Fixture-QuestionnaireResponses samt zweier TestScripts als IG-Artefakte (siehe Seite „Scoring Tests“) und ein CI-Workflow, der die TestScripts per fhir-crucible/testscript-engine gegen einen echten HAPI ausführt und die TestReports als Job-Summary, PR-Kommentar und HTML-Artifact rendert.</p>
 
 <h3 id="202700-ballot1--manifest-hotfix">2027.0.0-ballot.1 — Manifest-Hotfix</h3>
 
@@ -836,8 +877,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Sep 11, 2026 16:14+0000">2026-09-11</span>
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Wed, Nov 11, 2026 08:11+0000">2026-11-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

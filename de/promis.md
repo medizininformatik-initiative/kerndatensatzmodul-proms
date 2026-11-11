@@ -1,4 +1,4 @@
-# PROMIS - MII IG PRO v2027.0.0-ballot.1
+# PROMIS - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)
@@ -29,6 +29,12 @@ Multi-Domain Instrument zur Erfassung der gesundheitsbezogenen Lebensqualität �
 Ultrakurzes Multi-Domain Instrument mit 16 Items über 8 Domänen (je 2 Items). Enthält im Gegensatz zum PROMIS-29 auch die Cognitive-Function-Domäne. Geeignet für wiederholte Messung, Screening und Settings mit hoher Erhebungslast.
 
 **–> [Detaillierte Dokumentation und Vorschau](promis-16.md)**
+
+#### PROMIS Scale v1.2 – Global Health
+
+Zehn Items (Global01–Global10) zur globalen körperlichen und psychischen Gesundheit mit den Rohwerten Global Physical Health und Global Mental Health (je 4–20). Kanonische Vollfassung für den PCOR-MII-Zuschnitt Global01/Global02/Global07; deutsche Übersetzung bislang nur für diese drei Items hinterlegt (`status = draft`).
+
+**–> [Detaillierte Dokumentation](promis-global-health.md)**
 
 #### PROMIS Cognitive Function Short Form 4a
 

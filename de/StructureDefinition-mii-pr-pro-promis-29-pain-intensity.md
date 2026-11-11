@@ -1,4 +1,4 @@
-# MII PR PRO PROMIS-29 Pain Intensity - MII IG PRO v2027.0.0-ballot.1
+# MII PR PRO PROMIS-29 Pain Intensity - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_29_Pain_Intensity |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity | *Version*:2027.0.0-ballot.2 |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_29_Pain_Intensity |
 
  
 Profile for PROMIS-29 Pain Intensity single item Observations 
@@ -86,12 +86,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-promis-29-pain-intensity",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_PR_PRO_PROMIS_29_Pain_Intensity",
   "title" : "MII PR PRO PROMIS-29 Pain Intensity",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -164,8 +164,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "75261-8",
-          "display" : "How intense was your average pain in the past 7 days [PROMIS]"
+          "code" : "61583-1",
+          "display" : "How would you rate your pain on average in past 7 days [PROMIS]"
         }]
       }
     },

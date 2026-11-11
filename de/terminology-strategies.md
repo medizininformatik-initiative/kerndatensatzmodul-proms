@@ -1,4 +1,4 @@
-# Terminology Strategies - MII IG PRO v2027.0.0-ballot.1
+# Terminology Strategies - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)
@@ -128,7 +128,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 ```
 * extension[capabilities].extension[displayable].valueBoolean = false
 * extension[capabilities].extension[calculatable].valueBoolean = true
-* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short" // Scores ohne Display-Abhängigkeit
 
 ```
 
@@ -184,7 +184,7 @@ ValueSet: MII_VS_PRO_BDI_BDI2_AnswerListLong
 
 ```
 // Questionnaire Item
-* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 
 // CodeSystem
 CodeSystem: MII_CS_PRO_BDI_BDI2_AnswerList

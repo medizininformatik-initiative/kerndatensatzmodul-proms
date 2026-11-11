@@ -1,4 +1,4 @@
-# ID Systematics - MII IG PRO v2027.0.0-ballot.1
+# ID Systematics - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)
@@ -327,7 +327,7 @@ The choice between inline `answerOption` and external `answerValueSet` definitio
 ```
 //FSH
 // Questionnaire
-* item[=].answerValueSet = "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
+* item[=].answerValueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2-short"
 
 // CodeSystem
 * #bdi-bdi2-answer-1 ^property[+].code = #bdi-bdi2-itemWeight

@@ -1,4 +1,4 @@
-# MII CS PRO MIDOS2 Items and Response Scales - MII IG PRO v2027.0.0-ballot.1
+# MII CS PRO MIDOS2 Items and Response Scales - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2 | *Version*:2027.0.0-ballot.1 |
-| Draft Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_CS_PRO_MIDOS2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2 | *Version*:2027.0.0-ballot.2 |
+| Draft Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_CS_PRO_MIDOS2 |
 | **Copyright/Rechtliches**: MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke. | |
 
  
@@ -33,12 +33,12 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-midos2",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_CS_PRO_MIDOS2",
   "title" : "MII CS PRO MIDOS2 Items and Response Scales",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -65,6 +65,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "count" : 21,
   "property" : [{
     "code" : "snomed",
+    "uri" : "http://hl7.org/fhir/concept-properties#itemWeight",
     "description" : "SNOMED CT Equivalent für externe Interoperabilität",
     "type" : "code"
   }],
@@ -74,6 +75,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "none"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 0
     }]
   },
   {
@@ -82,6 +87,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "mild"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
     }]
   },
   {
@@ -90,6 +99,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "moderate"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
     }]
   },
   {
@@ -98,6 +111,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "severe"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
     }]
   },
   {
@@ -106,6 +123,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "very good"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 0
     }]
   },
   {
@@ -114,6 +135,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "rather good"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 1
     }]
   },
   {
@@ -122,6 +147,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "rather poor"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 2
     }]
   },
   {
@@ -130,6 +159,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "en",
       "value" : "very poor"
+    }],
+    "property" : [{
+      "code" : "itemWeight",
+      "valueDecimal" : 3
     }]
   },
   {

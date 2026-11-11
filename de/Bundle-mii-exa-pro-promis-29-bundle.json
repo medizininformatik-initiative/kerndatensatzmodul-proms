@@ -34,13 +34,13 @@
       "resourceType" : "QuestionnaireResponse",
       "id" : "promis-29-response-1",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
         "status" : "generated"
       },
-      "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.1",
+      "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.2",
       "status" : "completed",
       "subject" : {
         "reference" : "Patient/patient-example-1"
@@ -48,12 +48,8 @@
       "authored" : "2025-01-30T14:30:00Z",
       "item" : [{
         "linkId" : "PROMIS-29.PhysicalFunction",
-        "text" : "KÖRPERLICHE FUNKTION",
+        "text" : "Körperliche Funktion",
         "item" : [{
-          "linkId" : "PROMIS-29.PhysicalFunction.Description",
-          "text" : "Sind Sie zu folgenden Tätigkeiten imstande:"
-        },
-        {
           "linkId" : "promis-pfa11",
           "text" : "Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?",
           "answer" : [{
@@ -100,7 +96,7 @@
       },
       {
         "linkId" : "PROMIS-29.Anxiety",
-        "text" : "ANGST",
+        "text" : "Angst",
         "item" : [{
           "linkId" : "PROMIS-29.Anxiety.Description",
           "text" : "In den letzten 7 Tagen:"
@@ -152,7 +148,7 @@
       },
       {
         "linkId" : "PROMIS-29.Depression",
-        "text" : "DEPRESSION",
+        "text" : "Depression",
         "item" : [{
           "linkId" : "PROMIS-29.Depression.Description",
           "text" : "In den letzten 7 Tagen:"
@@ -204,7 +200,7 @@
       },
       {
         "linkId" : "PROMIS-29.Fatigue",
-        "text" : "ERSCHÖPFUNG",
+        "text" : "Erschöpfung",
         "item" : [{
           "linkId" : "PROMIS-29.Fatigue.Description",
           "text" : "In den letzten 7 Tagen:"
@@ -256,7 +252,7 @@
       },
       {
         "linkId" : "PROMIS-29.Sleep",
-        "text" : "SCHLAFSTÖRUNGEN",
+        "text" : "Schlafstörungen",
         "item" : [{
           "linkId" : "PROMIS-29.Sleep.Description",
           "text" : "In den letzten 7 Tagen:"
@@ -308,12 +304,8 @@
       },
       {
         "linkId" : "PROMIS-29.Social",
-        "text" : "SOZIALE TEILHABE",
+        "text" : "Soziale Teilhabe",
         "item" : [{
-          "linkId" : "PROMIS-29.Social.Description",
-          "text" : "In den letzten 7 Tagen:"
-        },
-        {
           "linkId" : "promis-srpper23-caps",
           "text" : "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
           "answer" : [{
@@ -360,10 +352,10 @@
       },
       {
         "linkId" : "PROMIS-29.PainInterference",
-        "text" : "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG",
+        "text" : "Schmerzbedingte Beeinträchtigung",
         "item" : [{
           "linkId" : "PROMIS-29.PainInterference.Description",
-          "text" : "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."
+          "text" : "In den letzten 7 Tagen:"
         },
         {
           "linkId" : "promis-painin9",
@@ -412,7 +404,7 @@
       },
       {
         "linkId" : "PROMIS-29.PainIntensity",
-        "text" : "SCHMERZINTENSITÄT",
+        "text" : "Schmerzintensität",
         "item" : [{
           "linkId" : "promis-global07",
           "text" : "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?",
@@ -423,7 +415,7 @@
       },
       {
         "linkId" : "PROMIS-29.Scores",
-        "text" : "BEREICHS-BEWERTUNGEN",
+        "text" : "Bereichs-Bewertungen",
         "item" : [{
           "linkId" : "promis-29-physical-function-raw",
           "text" : "PROMIS-29 Körperliche Funktion - Rohwert",
@@ -531,7 +523,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-physical-function-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -573,7 +565,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-anxiety-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -587,8 +579,8 @@
       "code" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "71967-4",
-          "display" : "PROMIS-29 Anxiety score T-score"
+          "code" : "77862-1",
+          "display" : "PROMIS emotional distress - anxiety - version 1.0 Tscore"
         }]
       },
       "subject" : {
@@ -615,7 +607,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-depression-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -657,7 +649,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-fatigue-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -699,7 +691,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-sleep-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -741,7 +733,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-social-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -783,7 +775,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-pain-interference-tscore",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -825,7 +817,7 @@
       "resourceType" : "Observation",
       "id" : "obs-promis-29-pain-intensity",
       "meta" : {
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity|2027.0.0-ballot.1"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity|2027.0.0-ballot.2"]
       },
       "language" : "de",
       "text" : {
@@ -839,8 +831,8 @@
       "code" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "75261-8",
-          "display" : "How intense was your average pain in the past 7 days [PROMIS]"
+          "code" : "61583-1",
+          "display" : "How would you rate your pain on average in past 7 days [PROMIS]"
         }]
       },
       "subject" : {

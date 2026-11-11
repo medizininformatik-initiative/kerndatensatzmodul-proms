@@ -1,4 +1,4 @@
-# Domain-based Scoring - MII IG PRO v2027.0.0-ballot.1
+# Domain-based Scoring - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Scoring**](scoring.md)
@@ -328,7 +328,7 @@ Since ObservationDefinitions in FHIR R4 do not support canonical URLs and cannot
 
 #### Depression and Mood
 
-| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile | |————|———–|————|———|———————-|———————| | PHQ-9 | Total Score | 44261-6 | 0-27 | mii-obsdef-pro-phq-9-total-score | MII_PR_PRO_PHQ9_Score | | BDI-II | Total Score | 89209-1 | 0-63 | mii-obsdef-pro-score-bdi-ii | MII_PR_PRO_BDI_II_Score | | PROMIS Depression | T-Score | 77861-3 | 20-80 | mii-obsdef-pro-depression-t-score | MII_PR_PRO_Depression_TScore | | PROMIS-29 Depression | T-Score | 71958-6 | 20-80 | mii-obsdef-pro-promis-29-depression-tscore | MII_PR_PRO_PROMIS_29_Depression_TScore | | PROMIS Cognitive Function SF4a | Raw Score | 81533-2 | 4-20 | mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score | | PROMIS Cognitive Function SF4a | T-Score | 81538-1 | 20-80 | mii-obsdef-pro-promis-cognitive-function-sf4a-tscore | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |
+| Instrument | Score Type | LOINC Code | Range | ObservationDefinition | Observation Profile | |————|———–|————|———|———————-|———————| | PHQ-9 | Total Score | 44261-6 | 0-27 | mii-obsdef-pro-phq-9-total-score | MII_PR_PRO_PHQ9_Score | | BDI-II | Total Score | 89209-1 | 0-63 | mii-obsdef-pro-score-bdi-ii | MII_PR_PRO_BDI_II_Score | | PROMIS Depression | T-Score | 77861-3 | 20-80 | mii-obsdef-pro-depression-t-score | MII_PR_PRO_Depression_TScore | | PROMIS-29 Depression | T-Score | 77861-3 | 20-80 | mii-obsdef-pro-promis-29-depression-tscore | MII_PR_PRO_PROMIS_29_Depression_TScore | | PROMIS Cognitive Function SF4a | Raw Score | 81533-2 | 4-20 | mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score | | PROMIS Cognitive Function SF4a | T-Score | 81538-1 | 20-80 | mii-obsdef-pro-promis-cognitive-function-sf4a-tscore | MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |
 
 #### Anxiety and Stress
 

@@ -1,4 +1,4 @@
-# MII CS PRO Questionnaire Catalogue - MII IG PRO v2027.0.0-ballot.1
+# MII CS PRO Questionnaire Catalogue - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-11 | *Computable Name*:MII_CS_PRO_Questionnaire_Catalogue |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue | *Version*:2027.0.0-ballot.2 |
+| Active as of 2026-11-11 | *Computable Name*:MII_CS_PRO_Questionnaire_Catalogue |
 
  
 MII CS PRO Questionnaire Catalogue for PRO Questionnaires used in the MII PROMs Module 
@@ -31,11 +31,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-questionnaire-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_CS_PRO_Questionnaire_Catalogue",
   "title" : "MII CS PRO Questionnaire Catalogue",
   "status" : "active",
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -57,7 +57,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 26,
+  "count" : 27,
   "concept" : [{
     "code" : "euroqol-eq5d5l",
     "display" : "EuroQol EQ-5D-5L Questionnaire"
@@ -161,6 +161,10 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "phq-gad7",
     "display" : "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
+  },
+  {
+    "code" : "promis-global-health",
+    "display" : "PROMIS Scale v1.2 - Global Health (10 items)"
   }]
 }
 

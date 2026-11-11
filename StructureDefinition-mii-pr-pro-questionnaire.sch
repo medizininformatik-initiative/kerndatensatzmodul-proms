@@ -60,4 +60,16 @@
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-optionalDisplay']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-optionalDisplay': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Questionnaire/f:item/f:answerOption</sch:title>
+    <sch:rule context="f:Questionnaire/f:item/f:answerOption">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/itemWeight']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/itemWeight': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Questionnaire/f:item/f:answerOption/f:value[x] 1</sch:title>
+    <sch:rule context="f:Questionnaire/f:item/f:answerOption/f:value[x]">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/itemWeight']) &lt;= 0">extension with URL = 'http://hl7.org/fhir/StructureDefinition/itemWeight': maximum cardinality of 'extension' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

@@ -110,12 +110,12 @@
     <valueMarkdown value="Provide the computable publication unit for the MII Core Dataset PRO module, enabling implementers to discover, validate, version, and apply the specification consistently."/>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro"/>
-  <version value="2027.0.0-ballot.1"/>
+  <version value="2027.0.0-ballot.2"/>
   <name value="MII_IG_PRO"/>
   <title value="MII IG PRO"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-11"/>
+  <date value="2026-11-10"/>
   <publisher value="Medizininformatik-Initiative"/>
   <contact>
     <name value="Medizininformatik-Initiative"/>
@@ -1771,8 +1771,8 @@
       <reference>
         <reference value="QuestionnaireResponse/mii-exa-pro-promis-29-de-response"/>
       </reference>
-      <name value="MII EXA PRO PROMIS-29 Response (German)"/>
-      <description value="Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants"/>
+      <name value="MII EXA PRO PROMIS-29 Response (German language)"/>
+      <description value="Example QuestionnaireResponse for PROMIS-29 Profile v2.1 with language = de, answering the English-primary questionnaire; demonstrates that the response carries the LOINC answer codes regardless of the display language"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
     </resource>
     <resource>
@@ -1785,6 +1785,17 @@
       <name value="MII EXA PRO WHODAS 2.0 12-Item Response"/>
       <description value="Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/mii-lib-pro-promis-29"/>
+      </reference>
+      <name value="MII LIB PRO PROMIS-29 Scoring"/>
+      <description value="CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the seven domains plus the pain intensity item. Server channel of the dual-channel scoring architecture (the FHIRPath calculatedExpressions in the Questionnaire are the client channel); both channels are generated from the same weight and T-score tables. Define names equal the score item linkIds. Supports Library/$evaluate with an explicit Response parameter and the SDC retrieve pattern (most recent completed QuestionnaireResponse of the instrument)."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1828,6 +1839,28 @@
       </reference>
       <name value="MII ObsDef PRO PROMIS Cognitive Function SF 4a T-Score"/>
       <description value="PROMIS Cognitive Function Short Form 4a T-Score"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw"/>
+      </reference>
+      <name value="MII ObsDef PRO PROMIS Global Health Mental Raw Score"/>
+      <description value="PROMIS Global Mental Health raw score (Global02 + Global04 + Global05 + Global10 recoded), range 4-20"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw"/>
+      </reference>
+      <name value="MII ObsDef PRO PROMIS Global Health Physical Raw Score"/>
+      <description value="PROMIS Global Physical Health raw score (Global03 + Global06 + Global07 recoded + Global08 recoded), range 4-20"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2550,6 +2583,17 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
+        <reference value="Questionnaire/mii-qst-pro-promis-global-health"/>
+      </reference>
+      <name value="MII QST PRO PROMIS Global Health v1.2"/>
+      <description value="PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
         <reference value="Questionnaire/mii-qst-pro-promis-16"/>
       </reference>
       <name value="MII QST PRO PROMIS-16 (Adults)"/>
@@ -2574,8 +2618,8 @@
       <reference>
         <reference value="Questionnaire/mii-qst-pro-promis-29-de"/>
       </reference>
-      <name value="MII QST PRO PROMIS-29 (German)"/>
-      <description value="PROMIS-29 Profile v2.1 - German language variant derived from English source"/>
+      <name value="MII QST PRO PROMIS-29 (German) [retired]"/>
+      <description value="RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-ballot.2. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2585,8 +2629,8 @@
       <reference>
         <reference value="Questionnaire/mii-qst-pro-promis-29-minimal"/>
       </reference>
-      <name value="MII QST PRO PROMIS-29 Minimal"/>
-      <description value="PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions"/>
+      <name value="MII QST PRO PROMIS-29 Minimal [retired]"/>
+      <description value="RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-ballot.2. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2902,6 +2946,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/mii-vs-pro-promis-social-roles-response-scale"/>
+      </reference>
+      <name value="MII VS PRO PROMIS Social Roles Response Scale"/>
+      <description value="Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 ... Always = 1)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/mii-vs-pro-ssd-12-answers"/>
       </reference>
       <name value="MII VS PRO SSD-12 Answers"/>
@@ -3120,6 +3175,302 @@
       </reference>
       <name value="PROMIS Depression T-Score, derived from BDI-II Observation Example"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/mii-exa-pro-promis-global-health-response"/>
+      </reference>
+      <name value="PROMIS Global Health Questionnaire Response Example"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-promis-global-health-mental-raw"/>
+      </reference>
+      <name value="PROMIS Global Mental Health Raw Score Example"/>
+      <description value="Global Mental Health raw score from the example QuestionnaireResponse (12 of 4-20)"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-pro-promis-global-health-physical-raw"/>
+      </reference>
+      <name value="PROMIS Global Physical Health Raw Score Example"/>
+      <description value="Global Physical Health raw score from the example QuestionnaireResponse (14 of 4-20)"/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="TestScript"/>
+      </extension>
+      <reference>
+        <reference value="TestScript/promis29-terminology"/>
+      </reference>
+      <name value="PROMIS-29 Scoring — Terminologie der Antwortoptionen"/>
+      <description value="Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="TestScript"/>
+      </extension>
+      <reference>
+        <reference value="TestScript/promis29-scoring"/>
+      </reference>
+      <name value="PROMIS-29 Scoring — Validierung und Persistenz"/>
+      <description value="Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anlegen. Die Fixtures sind die IG-Beispiele promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-rundir.mjs für den CI-Lauf."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-anxiety-asym"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — anxiety-asym"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-anxiety-ceil"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — anxiety-ceil"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-anxiety-floor"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — anxiety-floor"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-depression-asym"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — depression-asym"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-depression-ceil"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — depression-ceil"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-depression-floor"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — depression-floor"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-fatigue-asym"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — fatigue-asym"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-fatigue-ceil"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — fatigue-ceil"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-fatigue-floor"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — fatigue-floor"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-pain-interference-asym"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — pain-interference-asym"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-pain-interference-ceil"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — pain-interference-ceil"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-pain-interference-floor"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — pain-interference-floor"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-physical-function-asym"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — physical-function-asym"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-physical-function-ceil"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — physical-function-ceil"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-physical-function-floor"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — physical-function-floor"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-sleep-asym"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — sleep-asym"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-sleep-ceil"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — sleep-ceil"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-sleep-floor"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — sleep-floor"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-social-asym"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — social-asym"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-social-ceil"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — social-ceil"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-social-floor"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — social-floor"/>
+      <description value="Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/promis29-social-teilantwort-guard"/>
+      </reference>
+      <name value="PROMIS-29 Scoring-Fixture — social-teilantwort-guard"/>
+      <description value="Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -3478,6 +3829,14 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="promis-global-health.html"/>
+          </extension>
+          <nameUrl value="promis-global-health.html"/>
+          <title value="PROMIS Global Health v1.2"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="eortc-qlq-c30.html"/>
           </extension>
           <nameUrl value="eortc-qlq-c30.html"/>
@@ -3635,6 +3994,14 @@
         </extension>
         <nameUrl value="capability-statements.html"/>
         <title value="Capability Statements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="scoring-tests.html"/>
+        </extension>
+        <nameUrl value="scoring-tests.html"/>
+        <title value="Scoring Tests"/>
         <generation value="markdown"/>
       </page>
       <page>

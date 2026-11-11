@@ -1,4 +1,4 @@
-# PROMIS - MII IG PRO v2027.0.0-ballot.1
+# PROMIS - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)
@@ -29,6 +29,12 @@ Multi-domain instrument for assessing health-related quality of life across 7 do
 Single-domain short form for assessing depression symptoms with 4 items from the PROMIS Depression Item Bank. Serves as an exemplary implementation of single-domain PROMIS instruments.
 
 **–> [Detailed documentation and preview](promis-depression.md)**
+
+#### PROMIS Scale v1.2 – Global Health
+
+Ten items (Global01–Global10) on global physical and mental health yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). Canonical full form for the PCOR-MII subset Global01/Global02/Global07; German translation so far only for these three items (`status = draft`).
+
+**–> [Detailed documentation](promis-global-health.md)**
 
 #### PROMIS Physical Function (Planned)
 

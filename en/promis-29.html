@@ -1,28 +1,25 @@
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
-
-
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PROMIS-29 - MII IG PRO v2027.0.0-ballot.1</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>PROMIS-29 - MII IG PRO v2027.0.0-ballot.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Branding override for the fhir2.base.template CSS placeholder
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Branding override for the fhir2.base.template CSS placeholder
      (base ships includes/fragment-css.html as a single comment; it is included
      in <head> AFTER all base stylesheets, so the linked files win the
      cascade).
@@ -39,40 +36,40 @@
      MII design; anything else - including no brand.json at all and unknown
      values - renders NUM-DIZ. Both palettes declare the same variable set
      (scripts/brand-switch.test.mjs). -->
-<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
-<link href="assets/css/template-base.css" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/bootstrap-accessibility.css"/>
+<link rel="stylesheet" href="assets/css/template-base.css"/>
 
-<link href="assets/css/num-diz.css" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/num-diz.css"/>
 
 
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"4.9"}
     h3,h4,h5,h6{--heading-prefix:"4.9"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
 
-        <!-- Branding override for the fhir2.base.template header placeholder
+          <!-- Branding override for the fhir2.base.template header placeholder
      (base ships includes/fragment-header.html as a single comment; it is included
      inside "#segment-header > .container", before the #ig-status block).
      Language handling: only the asset and its descriptive alt text switch on
@@ -89,34 +86,34 @@
      (content/assets/images/), so it resolves from the inherited assets without
      shipping it here. -->
 <div id="family-nav">
-  <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
-    <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
+  <a no-external="true" id="family-logo" href="https://hl7.org/fhir">
+    <img src="assets/images/fhir-logo-www.png" alt="HL7 FHIR" height="50"/>
   </a>
 </div>
 <div id="project-nav">
 
-  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+  <a no-external="true" id="project-logo" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
 
-    <img height="50" alt="NUM-DIZ (Network of University Medicine — Data Integration Center)" src="assets/images/logo-num-diz-en.svg"/>
+    <img src="assets/images/logo-num-diz-en.svg" alt="NUM-DIZ (Network of University Medicine — Data Integration Center)" height="50"/>
 
   </a>
 
 </div>
-<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+  <!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
      is the untouched default. Logic in assets/js/font-size-control.js, the
      zoom mapping + button styling in template-base.css ("font-size control"
      block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
      on include.lang. REMOVAL: delete this block, the js file and the CSS
      block - one commit, styleguide §5a. -->
 
-<div class="ig-fontsize" role="group" aria-label="Font size">
-  <button type="button" data-level="0" aria-pressed="true" aria-label="Font size: default">A</button>
-  <button type="button" data-level="1" aria-pressed="false" aria-label="Font size: larger">A</button>
-  <button type="button" data-level="2" aria-pressed="false" aria-label="Font size: largest">A</button>
+<div role="group" class="ig-fontsize" aria-label="Font size">
+  <button type="button" aria-label="Font size: default" data-level="0" aria-pressed="true">A</button>
+  <button type="button" aria-label="Font size: larger" data-level="1" aria-pressed="false">A</button>
+  <button type="button" aria-label="Font size: largest" data-level="2" aria-pressed="false">A</button>
 </div>
 
-<script src="assets/js/font-size-control.js" defer></script>
-<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+<script defer="null" src="assets/js/font-size-control.js"></script>
+  <!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
      patches the Bootstrap-3 components the publisher renders - navbar
      dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
      (structure-tabs) the full ARIA tabs pattern, alerts live-region
@@ -126,8 +123,8 @@
      evaluated and rejected: 151 commits behind upstream, its 6 deltas are
      site-specific tab tweaks). REMOVAL: delete this tag, both vendored
      assets and the fragment-css link - guard test pins the hashes. -->
-<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
-<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+<script defer="null" src="assets/js/bootstrap-accessibility.min.js"></script>
+  <!-- Back-to-top button: appears after one viewport of scrolling (logic in
      assets/js/back-to-top.js, styling in template-base.css "back-to-top"
      block). Rendered here inside #segment-header, which is OUTSIDE the
      data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
@@ -135,13 +132,13 @@
 
 <button type="button" class="ig-back-to-top" aria-label="Back to top">↑</button>
 
-<script src="assets/js/back-to-top.js" defer></script>
+<script defer="null" src="assets/js/back-to-top.js"></script>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG PRO</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.2 - 
 
 
 
@@ -151,31 +148,31 @@
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
 
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- Menu in the IG's DEFAULT language (English). Per-language copy at input/translations/de/includes/menu.xml.
+                <!-- Menu in the IG's DEFAULT language (English). Per-language copy at input/translations/de/includes/menu.xml.
      Structure follows the TF-KDS-agreed module menu; PRO-specific groups
      (PRO Library, Scoring) replace nothing mandatory. Budget per spec 9a:
      top level <= 8, <= 10 per dropdown, depth <= 2, <= 33 entries total.
      Entry count here: 33. Dropdown parents link to a REAL page. -->
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
@@ -241,7 +238,7 @@
   </li>
 </ul>
 
-            </div>  <!-- /.nav-collapse -->
+            </div>    <!-- /.nav-collapse -->
 
               
 
@@ -249,39 +246,39 @@
 
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
-  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
- 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
 
-    <div><a href="../de/promis-29.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
+    <div><a href="../de/promis-29.html"><img src="assets/images/lang-de.png" alt="flag de" class="flag"/>Deutsch</a></div>
 
   </div>
 </div>
 
 
 
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='pro-library.html'><b>PRO Library</b></a></li><li><b>PROMIS-29</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="pro-library.html"><b>PRO Library</b></a></li><li><b>PROMIS-29</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -293,7 +290,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.1: 2027 Ballot 5) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-proms/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the MII Implementation Guide PRO (v2027.0.0-ballot.2: 2027 Ballot 6) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>PROMIS-29</h2>
   
 
@@ -308,11 +305,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p><!-- white space is critical inside of capture --></p>
+    <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-  <li><a href="#domains" id="markdown-toc-domains">Domains</a></li>
+  <li><a href="#domains-and-short-forms" id="markdown-toc-domains-and-short-forms">Domains and short forms</a></li>
   <li><a href="#technical-details" id="markdown-toc-technical-details">Technical Details</a></li>
   <li><a href="#language-support" id="markdown-toc-language-support">Language Support</a></li>
   <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
@@ -323,76 +320,109 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="overview">Overview</h3>
 
-<p><strong>Status</strong>: Fully implemented
-<strong>Version</strong>: 2026.0.0-ballot
-<strong>Last Updated</strong>: 2025-08-28</p>
+<p><strong>Status</strong>: Fully implemented (items, both scoring channels, review framework)
+<strong>Version</strong>: 2027.0.0-ballot.2
+<strong>Last Updated</strong>: 2026-11-04</p>
 
 <p>The PROMIS-29 is a comprehensive instrument for assessing health-related quality of life across 7 domains plus pain intensity.</p>
 
 <p>See the <a href="Questionnaire-mii-qst-pro-promis-29.html">Questionnaire definition</a> for the full resource.</p>
 
-<h3 id="domains">Domains</h3>
+<h3 id="domains-and-short-forms">Domains and short forms</h3>
+
+<p>PROMIS-29 Profile v2.1 bundles seven 4-item short forms plus one pain intensity item. The short-form <em>versions</em> matter for the T-score tables: v2.1 uses the Physical Function 4a v2.0 calibration (same four items as v1.0, re-calibrated with the Physical Function v2.0 item bank, Rose et al. 2014) and the Ability to Participate in Social Roles and Activities 4a v2.0 short form (which replaced the v1.0 <em>Satisfaction with Participation</em> short form in Profile v2.0). The other five short forms are v1.0.</p>
 
 <table>
   <thead>
     <tr>
       <th>Domain</th>
+      <th>Short form (PROMIS)</th>
       <th>Items</th>
-      <th>Score Range</th>
-      <th>LOINC</th>
+      <th>Score</th>
+      <th>LOINC T-score code</th>
+      <th>LOINC short-form panel</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Physical Function</td>
+      <td>4a <strong>v2.0</strong></td>
       <td>4</td>
-      <td>T-Score 20-80</td>
-      <td>61758-9</td>
+      <td>T-score</td>
+      <td>91721-1</td>
+      <td>— (LOINC has only 4a v1.0 = 76700-4)</td>
     </tr>
     <tr>
       <td>Anxiety</td>
+      <td>4a v1.0</td>
       <td>4</td>
-      <td>T-Score 20-80</td>
-      <td>61759-7</td>
+      <td>T-score</td>
+      <td>77862-1</td>
+      <td>76344-1</td>
     </tr>
     <tr>
       <td>Depression</td>
+      <td>4a v1.0</td>
       <td>4</td>
-      <td>T-Score 20-80</td>
-      <td>61760-5</td>
+      <td>T-score</td>
+      <td>77861-3</td>
+      <td>76343-3</td>
     </tr>
     <tr>
       <td>Fatigue</td>
+      <td>4a v1.0</td>
       <td>4</td>
-      <td>T-Score 20-80</td>
-      <td>61761-3</td>
+      <td>T-score</td>
+      <td>77864-7</td>
+      <td>76342-5</td>
     </tr>
     <tr>
       <td>Sleep Disturbance</td>
+      <td>4a v1.0</td>
       <td>4</td>
-      <td>T-Score 20-80</td>
-      <td>61762-1</td>
+      <td>T-score</td>
+      <td>77860-5</td>
+      <td>75258-4</td>
     </tr>
     <tr>
-      <td>Social Roles</td>
+      <td>Ability to Participate in Social Roles and Activities</td>
+      <td>4a <strong>v2.0</strong></td>
       <td>4</td>
-      <td>T-Score 20-80</td>
-      <td>61763-9</td>
+      <td>T-score</td>
+      <td>77854-8</td>
+      <td>item bank <a href="https://loinc.org/76787-1/">76787-1</a> (no 4a panel; 8a = 76731-9)</td>
     </tr>
     <tr>
       <td>Pain Interference</td>
+      <td>4a v1.0</td>
       <td>4</td>
-      <td>T-Score 20-80</td>
-      <td>61764-7</td>
+      <td>T-score</td>
+      <td>77865-4</td>
+      <td>90971-3</td>
     </tr>
     <tr>
       <td>Pain Intensity</td>
+      <td>single item (Global07)</td>
       <td>1</td>
-      <td>0-10</td>
-      <td>75262-6</td>
+      <td>0–10 NRS</td>
+      <td>61583-1 (item)</td>
+      <td>—</td>
     </tr>
   </tbody>
 </table>
+
+<p>The profile itself is LOINC panel <a href="https://loinc.org/62337-1/">62337-1</a> (<code class="language-plaintext highlighter-rouge">Questionnaire.code</code>). Note that this LOINC panel is a v1.0/v2.x hybrid: it still lists the v1.0 Satisfaction item (62041-9) and the <em>PROMIS-29 Satisfaction with participation in social roles</em> score codes next to the v2.0 Ability-to-Participate items and T-score code.</p>
+
+<h4 id="loinc-coding-rule-for-the-scores">LOINC coding rule for the scores</h4>
+
+<p>LOINC cannot identify a PROMIS score unambiguously: the domain T-score codes (<code class="language-plaintext highlighter-rouge">778xx</code>, <code class="language-plaintext highlighter-rouge">91721-1</code>) carry the item-bank version but not the short form (4a, 8a or CAT all share one code), and the profile-specific codes (<code class="language-plaintext highlighter-rouge">71955-9</code> … <code class="language-plaintext highlighter-rouge">71968-2</code>) carry neither version nor construct. The module therefore applies one rule:</p>
+
+<ul>
+  <li><strong>T-scores</strong> use the domain code with the bank version (<code class="language-plaintext highlighter-rouge">PROMIS &lt;domain&gt; - version N T-score</code>), because only those codes name the calibration.</li>
+  <li><strong>Raw scores</strong> use the PROMIS-29-specific <code class="language-plaintext highlighter-rouge">PROMIS-29 &lt;domain&gt; score</code> codes, because raw sums are only meaningful per short form. The Social Roles raw score is the exception: <code class="language-plaintext highlighter-rouge">71958-3</code> is the raw score of the v1.0 domain <em>Satisfaction with Participation in Social Roles</em> (different items, opposite polarity), and for the v2.0 domain <em>Ability to Participate</em> (item bank 76787-1, T-score 77854-8) LOINC has no 4a raw-score code (only 8a, 77814-2). The item therefore carries the MII score-catalogue code <code class="language-plaintext highlighter-rouge">promis-29-social-function-raw</code> only.</li>
+  <li><strong>Pain Intensity</strong> uses the item code <code class="language-plaintext highlighter-rouge">61583-1</code> for item and score alike.</li>
+  <li>The authoritative identity of a score is never the LOINC code but <code class="language-plaintext highlighter-rouge">Observation.derivedFrom</code> → <code class="language-plaintext highlighter-rouge">QuestionnaireResponse.questionnaire</code> (versioned canonical) plus the MII score-catalogue code.</li>
+</ul>
 
 <h3 id="technical-details">Technical Details</h3>
 
@@ -412,61 +442,108 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="score-calculation">Score Calculation</h4>
 
-<p>Each domain (except Pain Intensity) is calculated as a T-Score:</p>
+<p>Every domain yields a <strong>raw score</strong> (sum of the four item weights, range 4–20) and a <strong>T-score</strong> (lookup from the official PROMIS-29 Profile v2.1 scoring-manual appendix). Pain Intensity is the single 0–10 item. The raw sums are FHIR <code class="language-plaintext highlighter-rouge">variable</code>s on the Questionnaire; the score items reference them:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// FHIRPath
-// Example: Depression Domain
-%rawScore = %resource.item
-  .where(linkId.matches('^promis-eddep(04|05|06|29)$'))
-  .answer.value.weight()
-  .sum()
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// variable anxietyRaw (one per domain)
+%resource.item.item
+  .where(linkId.matches('^promis-edanx(01|40|41|53)$'))
+  .answer.value.weight().sum()
 
-// T-Score Lookup (simplified)
-%tScore = iif(%rawScore = 4, 41.0,
-          iif(%rawScore = 5, 49.0,
-          iif(%rawScore = 6, 52.5, ...)))
+// item promis-29-anxiety-raw
+%anxietyRaw
+
+// item promis-29-anxiety-tscore — count guard + generated lookup table
+iif(%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.count() = 4,
+    iif(%anxietyRaw=4, 40.3, iif(%anxietyRaw=5, 48.0, … iif(%anxietyRaw=20, 81.6, {}))), {})
 </code></pre></div></div>
+
+<p>Rules that matter for implementers:</p>
+
+<ul>
+  <li>Weights are <code class="language-plaintext highlighter-rouge">itemWeight</code> extensions on the <code class="language-plaintext highlighter-rouge">answerOption</code>s (LOINC answer codes); Social Roles and Sleep items are reverse-keyed (e.g. Never = 5 … Always = 1), the official polarity.</li>
+  <li>A T-score is produced <strong>only for a fully answered short form</strong> (count guard); a missing item yields no T-score rather than a wrong one.</li>
+  <li>The seven T-score tables are <strong>generated</strong> from <code class="language-plaintext highlighter-rouge">scripts/data/promis29-t-score-tables.csv</code> (<code class="language-plaintext highlighter-rouge">scripts/generate-promis29-tscores.py</code>), never typed into the FSH.</li>
+  <li><a name="l932">​</a>22 scoring scenarios (floor, ceiling, asymmetric, partial response per domain) run as unit tests, TestScripts and server end-to-end tests — see the <a href="reviews/promis-29.html">PROM review page</a> for the item-by-item view with expected vs. computed values.</li>
+</ul>
+
+<h4 id="two-scoring-channels-fhirpath-and-cql">Two scoring channels (FHIRPath and CQL)</h4>
+
+<p>PROMIS-29 is the reference implementation of the module's dual-channel scoring architecture:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Channel</th>
+      <th>Artefact</th>
+      <th>Runs where</th>
+      <th>Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Client</td>
+      <td><code class="language-plaintext highlighter-rouge">sdc-questionnaire-calculatedExpression</code> (FHIRPath) on every score item</td>
+      <td>in the form filler, live</td>
+      <td><code class="language-plaintext highlighter-rouge">collectable + calculatable + displayable</code></td>
+    </tr>
+    <tr>
+      <td>Server</td>
+      <td>Library <a href="Library-mii-lib-pro-promis-29.html"><code class="language-plaintext highlighter-rouge">mii-lib-pro-promis-29</code></a> (CQL + pre-compiled ELM), bound via <code class="language-plaintext highlighter-rouge">cqf-library</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Library/$evaluate</code> on a server with Clinical Reasoning</td>
+      <td><code class="language-plaintext highlighter-rouge">populatable + calculatable + extractable</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Both channels are <strong>generated from the same two tables</strong> (<code class="language-plaintext highlighter-rouge">scripts/data/promis29-answer-weights.csv</code>, <code class="language-plaintext highlighter-rouge">scripts/data/promis29-t-score-tables.csv</code>), so they cannot drift. The CQL define names are the score item <code class="language-plaintext highlighter-rouge">linkId</code>s (<code class="language-plaintext highlighter-rouge">promis-29-anxiety-tscore</code> …), which lets a server map item to define without parsing expressions. The library accepts the response either as the <code class="language-plaintext highlighter-rouge">Response</code> parameter or, following the SDC retrieve pattern, as the most recent completed QuestionnaireResponse of the instrument in the patient's data. The 22 scoring scenarios are executed against both channels in CI (<code class="language-plaintext highlighter-rouge">scripts/promis29-scoring.test.mjs</code> with fhirpath.js, <code class="language-plaintext highlighter-rouge">scripts/promis29-cql.test.mjs</code> with cql-execution).</p>
 
 <h3 id="language-support">Language Support</h3>
 
-<p><strong>Primary Language</strong>: English (validated version)
-<strong>German Translation</strong>: Via Extension</p>
+<p><strong>Primary Language</strong>: English, wording of the official PROMIS-29 Profile v2.1 form (PROMIS Health Organization)
+<strong>German Translation</strong>: Via <code class="language-plaintext highlighter-rouge">translation</code> extension on every item text, group header and instruction; wording of the validated German PROMIS-29 (CPCOR Charité / PCOR-MII Item Level Dictionary; Pain Interference items in the past tense per the PHO German PDF).</p>
+
+<p>All 43 items (29 questions, 14 score items) and all group headers follow this one architecture. The former German-primary variant <code class="language-plaintext highlighter-rouge">mii-qst-pro-promis-29-de</code> and the 8-item <code class="language-plaintext highlighter-rouge">-minimal</code> subset are <strong>retired</strong> since 2027.0.0-ballot.2; German-primary rendering is a renderer/<code class="language-plaintext highlighter-rouge">$localize</code> concern, not a second resource. The Physical Function and Social Roles groups deliberately have <strong>no</strong> time-frame instruction, exactly as on the official form.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In the past 7 days... I could do chores"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/StructureDefinition/translation"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lang"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"de"</span><span class="p">},</span><span class="w">
-      </span><span class="p">{</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In den letzten 7 Tagen... konnte ich Hausarbeiten erledigen"</span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
+  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"I felt fearful."</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"_text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/StructureDefinition/translation"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lang"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"de"</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ich fürchtete mich."</span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
 <h3 id="implementation-notes">Implementation Notes</h3>
 
-<h4 id="variable-based-architecture">Variable-Based Architecture</h4>
+<h4 id="variable-based-architecture">Variable-based architecture</h4>
 
-<p>The PROMIS-29 uses FHIR Variables for efficient multi-score calculation:</p>
+<p>Raw sums live once as Questionnaire-level <code class="language-plaintext highlighter-rouge">variable</code> extensions and are referenced by both score items of a domain, which avoids circular references between calculated items (a calculated item has no <code class="language-plaintext highlighter-rouge">answer.value</code> to read):</p>
 
-<pre><code class="language-fsh">// FSH
-* extension[variable][+].name = "promisDepRaw"
-* extension[variable][=].expression = "[sum of depression items]"
+<pre><code class="language-fsh">* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "anxietyRaw"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.weight().sum()"
 
-// Raw Score Item
-* item[dep-raw].calculatedExpression = "%promisDepRaw"
-
-// T-Score Item
-* item[dep-tscore].calculatedExpression = "iif(%promisDepRaw = 4, 41.0, ...)"
+* item[=].item[+].linkId = "promis-29-anxiety-raw"
+* item[=].item[=].extension[calculatedExpression].valueExpression.expression = "%anxietyRaw"
+* item[=].item[+].linkId = "promis-29-anxiety-tscore"
+* item[=].item[=].extension[calculatedExpression].valueExpression.expression = "iif(… %anxietyRaw=4, 40.3, …)"
 </code></pre>
 
-<h4 id="known-limitations">Known Limitations</h4>
+<h4 id="item-identifiers">Item identifiers</h4>
+
+<p>Item <code class="language-plaintext highlighter-rouge">linkId</code>s follow the PROMIS item IDs of the validation studies (<code class="language-plaintext highlighter-rouge">promis-pfa11</code>, <code class="language-plaintext highlighter-rouge">promis-edanx01</code>, <code class="language-plaintext highlighter-rouge">promis-srpper23-caps</code>), not the LOINC codes; the LOINC item code sits in <code class="language-plaintext highlighter-rouge">item.code</code>. The same <code class="language-plaintext highlighter-rouge">linkId</code>s are used wherever an item recurs (PROMIS-16, PROMIS Depression SF 4a), which is what makes cross-instrument scoring possible.</p>
+
+<h4 id="known-limitations">Known limitations</h4>
 
 <ol>
-  <li><strong>Item IDs</strong>: Currently MII-specific (<code class="language-plaintext highlighter-rouge">promis-pfa11</code>), not LOINC-conformant</li>
-  <li><strong>Validation Study Alignment</strong>: IDs are based on German validation studies</li>
-  <li><strong>Partial Responses</strong>: No handling of missing items</li>
+  <li><strong>Partial responses</strong>: a domain with a missing item yields its raw sum of the answered items but no T-score. PROMIS' pro-rating rules for short forms are intentionally not applied; use the item-bank CAT or the CQL channel for imputation strategies.</li>
+  <li><strong>Group nesting is not optional</strong>: QuestionnaireResponses must keep the domain groups (<code class="language-plaintext highlighter-rouge">PROMIS-29.Anxiety</code> → items), because the score expressions address <code class="language-plaintext highlighter-rouge">item.item</code> and the domain headers carry part of the question meaning.</li>
 </ol>
 
 <h3 id="example-questionnaireresponse">Example QuestionnaireResponse</h3>
@@ -478,10 +555,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </span><span class="nl">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"linkId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"promis-pfa11"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Are you able to do chores?"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Are you able to do chores such as vacuuming or yard work?"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"answer"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
         </span><span class="nl">"valueCoding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LA13918-0"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"With a little difficulty"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">}]</span><span class="w">
@@ -496,38 +574,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li><a href="https://www.healthmeasures.net/explore-measurement-systems/promis">PROMIS Official Site</a></li>
   <li><a href="https://doi.org/10.1371/journal.pone.0197139">German PROMIS Validation</a></li>
-  <li>LOINC Panel: <a href="https://loinc.org/62199-5/">62199-5</a></li>
+  <li>LOINC panel PROMIS-29 profile: <a href="https://loinc.org/62337-1/">62337-1</a></li>
+  <li>HealthMeasures, PROMIS Adult Profile Scoring Manual (15 July 2025) — short-form versions per profile version and T-score tables</li>
+  <li>HealthMeasures, PROMIS Physical Function Measure Differences (12 July 2024) — v1.0–v2.0 recalibration</li>
 </ul>
 
 
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-  <script type="text/javascript" src="assets/js/flags.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
 
 
 
-          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Sep 11, 2026 16:14+0000">2026-09-11</span>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Wed, Nov 11, 2026 08:11+0000">2026-11-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-            <!-- Branding override for the fhir2.base.template footer fragment.
+              <!-- Branding override for the fhir2.base.template footer fragment.
      Unlike header/css, the base footer fragment is NOT an empty placeholder: it
      renders "Links: Table of Contents | QA Report [| feedback dashboards]".
      The base uses site.data.stringsBase[include.lang][...] for the labels. The
@@ -552,40 +632,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
                  
-                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
-                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
-                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/en/legal-notice">Legal notice</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/" target="_blank">medizininformatik-initiative.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/en/legal-notice" target="_blank">Legal notice</a>
                  <br/>
-                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                   <!-- HL7 trademark attribution (required wherever the FHIR flame
                       renders - the header shows it on every page; see HL7's
                       trademark guidelines; permission request tracked in issue #109). The sentence is
                       HL7's prescribed formula and stays in English on every
                       language's pages (legal wording, styleguide §6). -->
-                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
+                 <span>HL7&reg;, FHIR&reg; and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
 
           </span>
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
-

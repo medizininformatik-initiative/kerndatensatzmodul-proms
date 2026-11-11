@@ -1,4 +1,4 @@
-# MII PR PRO Questionnaire - MII IG PRO v2027.0.0-ballot.1
+# MII PR PRO Questionnaire - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_PR_PRO_Questionnaire |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire | *Version*:2027.0.0-ballot.2 |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_PRO_Questionnaire |
 
  
 MII PR PRO Questionnaire, based on the FHIR Structure Data Capture Specification 
@@ -27,7 +27,7 @@ Das abstrakte Questionnaire-Profil bildet die Grundlage für alle PRO-Frageböge
 
 **Usages:**
 
-* Examples for this Profile: [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-ces-d](Questionnaire-mii-qst-pro-ces-d.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-eortc-qlq-c30](Questionnaire-mii-qst-pro-eortc-qlq-c30.md)... Show 26 more, [Questionnaire/mii-qst-pro-epds](Questionnaire-mii-qst-pro-epds.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-hads](Questionnaire-mii-qst-pro-hads.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-k6](Questionnaire-mii-qst-pro-k6.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [MII_QST_PRO_PRO_CTCAE_Breast_DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.md), [MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
+* Examples for this Profile: [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-ces-d](Questionnaire-mii-qst-pro-ces-d.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-eortc-qlq-c30](Questionnaire-mii-qst-pro-eortc-qlq-c30.md)... Show 27 more, [Questionnaire/mii-qst-pro-epds](Questionnaire-mii-qst-pro-epds.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-hads](Questionnaire-mii-qst-pro-hads.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-k6](Questionnaire-mii-qst-pro-k6.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [MII_QST_PRO_PRO_CTCAE_Breast_DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.md), [MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-promis-global-health](Questionnaire-mii-qst-pro-promis-global-health.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
 * CapabilityStatements using this Profile: [MII CPS PRO CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.pros|current/StructureDefinition/StructureDefinition-mii-pr-pro-questionnaire.json)
@@ -57,14 +57,16 @@ Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/
 ** Summary **
 
 Mandatory: 4 elements(6 nested mandatory elements)
- Must-Support: 10 elements
+ Must-Support: 11 elements
  Fixed: 3 elements
+ Prohibited: 1 element
 
 **Extensions**
 
 This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities](StructureDefinition-mii-ex-pro-questionnaire-capabilities.md)
+* [http://hl7.org/fhir/StructureDefinition/itemWeight](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-itemWeight.html)
 
 **Slices**
 
@@ -93,14 +95,16 @@ Diese Struktur ist abgeleitet von [SDCBaseQuestionnaire](http://hl7.org/fhir/uv/
 ** Summary **
 
 Mandatory: 4 elements(6 nested mandatory elements)
- Must-Support: 10 elements
+ Must-Support: 11 elements
  Fixed: 3 elements
+ Prohibited: 1 element
 
 **Extensions**
 
 This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities](StructureDefinition-mii-ex-pro-questionnaire-capabilities.md)
+* [http://hl7.org/fhir/StructureDefinition/itemWeight](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-itemWeight.html)
 
 **Slices**
 
@@ -121,12 +125,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-pro-questionnaire",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_PR_PRO_Questionnaire",
   "title" : "MII PR PRO Questionnaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -288,6 +292,51 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-q
       "path" : "Questionnaire.code.code",
       "min" : 1,
       "mustSupport" : true
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.extension",
+      "path" : "Questionnaire.item.answerOption.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.extension:itemWeight",
+      "path" : "Questionnaire.item.answerOption.extension",
+      "sliceName" : "itemWeight",
+      "short" : "Scoring weight of this option (SDC .weight())",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/itemWeight"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.value[x]:valueCoding",
+      "path" : "Questionnaire.item.answerOption.value[x]",
+      "sliceName" : "valueCoding",
+      "type" : [{
+        "code" : "Coding"
+      }]
+    },
+    {
+      "id" : "Questionnaire.item.answerOption.value[x]:valueCoding.extension:itemWeightOnCoding",
+      "path" : "Questionnaire.item.answerOption.value[x].extension",
+      "sliceName" : "itemWeightOnCoding",
+      "short" : "Not allowed here: put itemWeight on the answerOption, not on its Coding",
+      "min" : 0,
+      "max" : "0",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/itemWeight"]
+      }]
     }]
   }
 }

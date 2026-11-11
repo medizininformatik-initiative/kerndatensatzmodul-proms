@@ -1,4 +1,4 @@
-# MII VS PRO PRO-CTCAE Severity Scale (Radiation) - MII IG PRO v2027.0.0-ballot.1
+# MII VS PRO PRO-CTCAE Severity Scale (Radiation) - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-11 | *Computable Name*:MII_VS_PRO_PRO_CTCAE_Severity_Radiation |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation | *Version*:2027.0.0-ballot.2 |
+| Active as of 2026-11-11 | *Computable Name*:MII_VS_PRO_PRO_CTCAE_Severity_Radiation |
 
  
 6-point severity scale for radiation items: standard 5 options plus 'Not applicable' 
@@ -37,12 +37,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-pro-pro-ctcae-severity-radiation",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-pro-ctcae-severity-radiation",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_VS_PRO_PRO_CTCAE_Severity_Radiation",
   "title" : "MII VS PRO PRO-CTCAE Severity Scale (Radiation)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

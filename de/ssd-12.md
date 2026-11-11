@@ -1,4 +1,4 @@
-# SSD-12 - MII IG PRO v2027.0.0-ballot.1
+# SSD-12 - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)

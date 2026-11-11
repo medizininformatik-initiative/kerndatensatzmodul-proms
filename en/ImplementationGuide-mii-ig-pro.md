@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG PRO v2027.0.0-ballot.1
+# MII ImplementationGuide Resource - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -52,7 +52,7 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ConceptMap/mii-cm-pro-gad-7-linkids](ConceptMap-mii-cm-pro-gad-7-linkids.md), [ConceptMap/mii-cm-pro-phq-9-linkid-migration](ConceptMap-mii-cm-pro-phq-9-linkid-migration.md)... Show 104 more, [MII_CPS_PRO_CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md), [MII_CS_PRO_BDI_BDI2_AnswerList](CodeSystem-mii-cs-pro-bdi-bdi2.md), [MII_CS_PRO_DASS_21](CodeSystem-mii-cs-pro-dass-21.md), [MII_CS_PRO_EORTC_QLQ_C30](CodeSystem-mii-cs-pro-eortc-qlq-c30.md), [MII_CS_PRO_EQ_5D_ValueSet](CodeSystem-mii-cs-pro-eq-5d-value-set.md), [MII_CS_PRO_ISR_Z_Answers](CodeSystem-mii-cs-pro-isr-z-answers.md), [MII_CS_PRO_LOINC_Supplement](CodeSystem-mii-cs-pro-loinc-supplement.md), [MII_CS_PRO_MIDOS2](CodeSystem-mii-cs-pro-midos2.md), [MII_CS_PRO_PHQ_15_Answers](CodeSystem-mii-cs-pro-phq-15-answers.md), [MII_CS_PRO_PRO_CTCAE](CodeSystem-mii-cs-pro-pro-ctcae.md), [MII_CS_PRO_Questionnaire_Catalogue](CodeSystem-mii-cs-pro-questionnaire-catalogue.md), [MII_CS_PRO_SSD_12_Answers](CodeSystem-mii-cs-pro-ssd-12-answers.md), [MII_CS_PRO_Score_Catalogue](CodeSystem-mii-cs-pro-score-catalogue.md), [MII_CS_PRO_WHODAS_12](CodeSystem-mii-cs-pro-whodas-12.md), [MII_EX_PRO_Score_Score_Health_Correlation](StructureDefinition-mii-ex-pro-score-score-health-correlation.md), [MII_IG_PRO](index.md), [MII_LM_PRO](StructureDefinition-mii-lm-pro.md), [MII_PR_PRO_Depression_T_Score](StructureDefinition-mii-pr-pro-depression-t-score.md), [MII_PR_PRO_Observation_BDI_II](StructureDefinition-mii-pr-pro-observation-bdi-ii.md), [MII_PR_PRO_Observation_EQ5D5L_Index](StructureDefinition-mii-pr-pro-observation-eq5d5l-index.md), [MII_PR_PRO_Observation_EQ5D5L_Profile](StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.md), [MII_PR_PRO_Observation_EQ5D5L_VAS](StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.md), [MII_PR_PRO_Observation_PHQ_15](StructureDefinition-mii-pr-pro-observation-phq-15.md), [MII_PR_PRO_Observation_PHQ_9](StructureDefinition-mii-pr-pro-observation-phq-9.md), [MII_PR_PRO_Observation_WHODAS_12](StructureDefinition-mii-pr-pro-observation-whodas12.md), [MII_PR_PRO_PROMIS_29_Anxiety_TScore](StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.md), [MII_PR_PRO_PROMIS_29_Depression_TScore](StructureDefinition-mii-pr-pro-promis-29-depression-tscore.md), [MII_PR_PRO_PROMIS_29_Fatigue_TScore](StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.md), [MII_PR_PRO_PROMIS_29_Pain_Intensity](StructureDefinition-mii-pr-pro-promis-29-pain-intensity.md), [MII_PR_PRO_PROMIS_29_Pain_Interference_TScore](StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.md), [MII_PR_PRO_PROMIS_29_Physical_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.md), [MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore](StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.md), [MII_PR_PRO_PROMIS_29_Social_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.md), [MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md), [MII_PR_PRO_Questionnaire](StructureDefinition-mii-pr-pro-questionnaire.md), [MII_PR_PRO_QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md), [MII_PR_PRO_Questionnaire_Capabilities](StructureDefinition-mii-ex-pro-questionnaire-capabilities.md), [MII_PR_PRO_Score_Blueprint](StructureDefinition-mii-pr-pro-score-blueprint.md), [MII_PR_PRO_Score_Instance](StructureDefinition-mii-pr-pro-score-instance.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [MII_QST_PRO_PRO_CTCAE_Breast_DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.md), [MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.md), [MII_SP_PRO_ObservationDefinition_Code](SearchParameter-mii-sp-pro-observationdefinition-code.md), [MII_SP_PRO_ObservationDefinition_PermittedDataType](SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.md), [MII_SP_PRO_ObservationDefinition_PreferredReportName](SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.md), [MII_SP_PRO_ObservationDefinition_QualifiedInterval_Category](SearchParameter-mii-sp-pro-observationdefinition-interval-category.md), [MII_SP_PRO_ObservationDefinition_QuantitativeDetails_Unit](SearchParameter-mii-sp-pro-observationdefinition-unit.md), [MII_SP_PRO_ObservationDefinition_ScoreHealthCorrelation](SearchParameter-mii-sp-pro-observationdefinition-health-correlation.md), [MII_SP_PRO_Questionnaire_Capabilities](SearchParameter-mii-sp-pro-questionnaire-capabilities.md), [MII_VS_PRO_BDI_BDI2_AnswerListLong](ValueSet-mii-vs-pro-bdi-bdi2-long.md), [MII_VS_PRO_BDI_BDI2_AnswerListShort](ValueSet-mii-vs-pro-bdi-bdi2-short.md), [MII_VS_PRO_DASS_21_Answer_List](ValueSet-mii-vs-pro-dass-21-answer-list.md), [MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.md), [MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.md), [MII_VS_PRO_EORTC_QLQ_C30_Scale_Role](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.md), [MII_VS_PRO_ISR_Z_Answers](ValueSet-mii-vs-pro-isr-z-answers.md), [MII_VS_PRO_MIDOS2_Severity](ValueSet-mii-vs-pro-midos2-severity.md), [MII_VS_PRO_MIDOS2_Wellbeing](ValueSet-mii-vs-pro-midos2-wellbeing.md), [MII_VS_PRO_PHQ9_AnswerList_LL3583](ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.md), [MII_VS_PRO_PHQ9_AnswerList_LL3591](ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.md), [MII_VS_PRO_PHQ_15_Answers](ValueSet-mii-vs-pro-phq-15-answers.md), [MII_VS_PRO_PROMIS_Frequency_Response_Scale](ValueSet-mii-vs-pro-promis-frequency-response-scale.md), [MII_VS_PRO_PROMIS_Intensity_Response_Scale](ValueSet-mii-vs-pro-promis-intensity-response-scale.md), [MII_VS_PRO_PROMIS_Physical_Function_Response_Scale](ValueSet-mii-vs-pro-promis-physical-function-response-scale.md), [MII_VS_PRO_PRO_CTCAE_Frequency](ValueSet-mii-vs-pro-pro-ctcae-frequency.md), [MII_VS_PRO_PRO_CTCAE_Frequency_Sexual](ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.md), [MII_VS_PRO_PRO_CTCAE_Interference](ValueSet-mii-vs-pro-pro-ctcae-interference.md), [MII_VS_PRO_PRO_CTCAE_Presence](ValueSet-mii-vs-pro-pro-ctcae-presence.md), [MII_VS_PRO_PRO_CTCAE_Presence_NA](ValueSet-mii-vs-pro-pro-ctcae-presence-na.md), [MII_VS_PRO_PRO_CTCAE_Presence_Sexual](ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.md), [MII_VS_PRO_PRO_CTCAE_Severity](ValueSet-mii-vs-pro-pro-ctcae-severity.md), [MII_VS_PRO_PRO_CTCAE_Severity_Radiation](ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.md), [MII_VS_PRO_PRO_CTCAE_Severity_Sexual](ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.md), [MII_VS_PRO_SSD_12_Answers](ValueSet-mii-vs-pro-ssd-12-answers.md), [MII_VS_PRO_WHODAS_12_Answer_List](ValueSet-mii-vs-pro-whodas-12-answer-list.md), [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-ces-d](Questionnaire-mii-qst-pro-ces-d.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-eortc-qlq-c30](Questionnaire-mii-qst-pro-eortc-qlq-c30.md), [Questionnaire/mii-qst-pro-epds](Questionnaire-mii-qst-pro-epds.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-hads](Questionnaire-mii-qst-pro-hads.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-k6](Questionnaire-mii-qst-pro-k6.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ConceptMap/mii-cm-pro-gad-7-linkids](ConceptMap-mii-cm-pro-gad-7-linkids.md), [ConceptMap/mii-cm-pro-phq-9-linkid-migration](ConceptMap-mii-cm-pro-phq-9-linkid-migration.md)... Show 109 more, [MII_CPS_PRO_CapabilityStatement](CapabilityStatement-mii-cps-pro-capabilitystatement.md), [MII_CS_PRO_BDI_BDI2_AnswerList](CodeSystem-mii-cs-pro-bdi-bdi2.md), [MII_CS_PRO_DASS_21](CodeSystem-mii-cs-pro-dass-21.md), [MII_CS_PRO_EORTC_QLQ_C30](CodeSystem-mii-cs-pro-eortc-qlq-c30.md), [MII_CS_PRO_EQ_5D_ValueSet](CodeSystem-mii-cs-pro-eq-5d-value-set.md), [MII_CS_PRO_ISR_Z_Answers](CodeSystem-mii-cs-pro-isr-z-answers.md), [MII_CS_PRO_LOINC_Supplement](CodeSystem-mii-cs-pro-loinc-supplement.md), [MII_CS_PRO_MIDOS2](CodeSystem-mii-cs-pro-midos2.md), [MII_CS_PRO_PHQ_15_Answers](CodeSystem-mii-cs-pro-phq-15-answers.md), [MII_CS_PRO_PRO_CTCAE](CodeSystem-mii-cs-pro-pro-ctcae.md), [MII_CS_PRO_Questionnaire_Catalogue](CodeSystem-mii-cs-pro-questionnaire-catalogue.md), [MII_CS_PRO_SSD_12_Answers](CodeSystem-mii-cs-pro-ssd-12-answers.md), [MII_CS_PRO_Score_Catalogue](CodeSystem-mii-cs-pro-score-catalogue.md), [MII_CS_PRO_WHODAS_12](CodeSystem-mii-cs-pro-whodas-12.md), [MII_EX_PRO_Score_Score_Health_Correlation](StructureDefinition-mii-ex-pro-score-score-health-correlation.md), [MII_IG_PRO](index.md), [MII_LM_PRO](StructureDefinition-mii-lm-pro.md), [MII_PR_PRO_Depression_T_Score](StructureDefinition-mii-pr-pro-depression-t-score.md), [MII_PR_PRO_Observation_BDI_II](StructureDefinition-mii-pr-pro-observation-bdi-ii.md), [MII_PR_PRO_Observation_EQ5D5L_Index](StructureDefinition-mii-pr-pro-observation-eq5d5l-index.md), [MII_PR_PRO_Observation_EQ5D5L_Profile](StructureDefinition-mii-pr-pro-observation-eq5d5l-profile.md), [MII_PR_PRO_Observation_EQ5D5L_VAS](StructureDefinition-mii-pr-pro-observation-eq5d5l-vas.md), [MII_PR_PRO_Observation_PHQ_15](StructureDefinition-mii-pr-pro-observation-phq-15.md), [MII_PR_PRO_Observation_PHQ_9](StructureDefinition-mii-pr-pro-observation-phq-9.md), [MII_PR_PRO_Observation_WHODAS_12](StructureDefinition-mii-pr-pro-observation-whodas12.md), [MII_PR_PRO_PROMIS_29_Anxiety_TScore](StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.md), [MII_PR_PRO_PROMIS_29_Depression_TScore](StructureDefinition-mii-pr-pro-promis-29-depression-tscore.md), [MII_PR_PRO_PROMIS_29_Fatigue_TScore](StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.md), [MII_PR_PRO_PROMIS_29_Pain_Intensity](StructureDefinition-mii-pr-pro-promis-29-pain-intensity.md), [MII_PR_PRO_PROMIS_29_Pain_Interference_TScore](StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.md), [MII_PR_PRO_PROMIS_29_Physical_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.md), [MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore](StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.md), [MII_PR_PRO_PROMIS_29_Social_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.md), [MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md), [MII_PR_PRO_Questionnaire](StructureDefinition-mii-pr-pro-questionnaire.md), [MII_PR_PRO_QuestionnaireResponse](StructureDefinition-mii-pr-pro-questionnaire-response.md), [MII_PR_PRO_Questionnaire_Capabilities](StructureDefinition-mii-ex-pro-questionnaire-capabilities.md), [MII_PR_PRO_Score_Blueprint](StructureDefinition-mii-pr-pro-score-blueprint.md), [MII_PR_PRO_Score_Instance](StructureDefinition-mii-pr-pro-score-instance.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [MII_QST_PRO_PRO_CTCAE_Breast_DE](Questionnaire-mii-qst-pro-pro-ctcae-breast-de.md), [MII_QST_PRO_PRO_CTCAE_Onkologisches_Basisscreening](Questionnaire-mii-qst-pro-pro-ctcae-onkologisches-basisscreening.md), [MII_SP_PRO_ObservationDefinition_Code](SearchParameter-mii-sp-pro-observationdefinition-code.md), [MII_SP_PRO_ObservationDefinition_PermittedDataType](SearchParameter-mii-sp-pro-observationdefinition-permitted-datatype.md), [MII_SP_PRO_ObservationDefinition_PreferredReportName](SearchParameter-mii-sp-pro-observationdefinition-preferred-report-name.md), [MII_SP_PRO_ObservationDefinition_QualifiedInterval_Category](SearchParameter-mii-sp-pro-observationdefinition-interval-category.md), [MII_SP_PRO_ObservationDefinition_QuantitativeDetails_Unit](SearchParameter-mii-sp-pro-observationdefinition-unit.md), [MII_SP_PRO_ObservationDefinition_ScoreHealthCorrelation](SearchParameter-mii-sp-pro-observationdefinition-health-correlation.md), [MII_SP_PRO_Questionnaire_Capabilities](SearchParameter-mii-sp-pro-questionnaire-capabilities.md), [MII_VS_PRO_BDI_BDI2_AnswerListLong](ValueSet-mii-vs-pro-bdi-bdi2-long.md), [MII_VS_PRO_BDI_BDI2_AnswerListShort](ValueSet-mii-vs-pro-bdi-bdi2-short.md), [MII_VS_PRO_DASS_21_Answer_List](ValueSet-mii-vs-pro-dass-21-answer-list.md), [MII_VS_PRO_EORTC_QLQ_C30_Scale_4pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-4pt.md), [MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-7pt.md), [MII_VS_PRO_EORTC_QLQ_C30_Scale_Role](ValueSet-mii-vs-pro-eortc-qlq-c30-scale-role.md), [MII_VS_PRO_ISR_Z_Answers](ValueSet-mii-vs-pro-isr-z-answers.md), [MII_VS_PRO_MIDOS2_Severity](ValueSet-mii-vs-pro-midos2-severity.md), [MII_VS_PRO_MIDOS2_Wellbeing](ValueSet-mii-vs-pro-midos2-wellbeing.md), [MII_VS_PRO_PHQ9_AnswerList_LL3583](ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.md), [MII_VS_PRO_PHQ9_AnswerList_LL3591](ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.md), [MII_VS_PRO_PHQ_15_Answers](ValueSet-mii-vs-pro-phq-15-answers.md), [MII_VS_PRO_PROMIS_Frequency_Response_Scale](ValueSet-mii-vs-pro-promis-frequency-response-scale.md), [MII_VS_PRO_PROMIS_Intensity_Response_Scale](ValueSet-mii-vs-pro-promis-intensity-response-scale.md), [MII_VS_PRO_PROMIS_Physical_Function_Response_Scale](ValueSet-mii-vs-pro-promis-physical-function-response-scale.md), [MII_VS_PRO_PROMIS_Social_Roles_Response_Scale](ValueSet-mii-vs-pro-promis-social-roles-response-scale.md), [MII_VS_PRO_PRO_CTCAE_Frequency](ValueSet-mii-vs-pro-pro-ctcae-frequency.md), [MII_VS_PRO_PRO_CTCAE_Frequency_Sexual](ValueSet-mii-vs-pro-pro-ctcae-frequency-sexual.md), [MII_VS_PRO_PRO_CTCAE_Interference](ValueSet-mii-vs-pro-pro-ctcae-interference.md), [MII_VS_PRO_PRO_CTCAE_Presence](ValueSet-mii-vs-pro-pro-ctcae-presence.md), [MII_VS_PRO_PRO_CTCAE_Presence_NA](ValueSet-mii-vs-pro-pro-ctcae-presence-na.md), [MII_VS_PRO_PRO_CTCAE_Presence_Sexual](ValueSet-mii-vs-pro-pro-ctcae-presence-sexual.md), [MII_VS_PRO_PRO_CTCAE_Severity](ValueSet-mii-vs-pro-pro-ctcae-severity.md), [MII_VS_PRO_PRO_CTCAE_Severity_Radiation](ValueSet-mii-vs-pro-pro-ctcae-severity-radiation.md), [MII_VS_PRO_PRO_CTCAE_Severity_Sexual](ValueSet-mii-vs-pro-pro-ctcae-severity-sexual.md), [MII_VS_PRO_SSD_12_Answers](ValueSet-mii-vs-pro-ssd-12-answers.md), [MII_VS_PRO_WHODAS_12_Answer_List](ValueSet-mii-vs-pro-whodas-12-answer-list.md), [PROMIS-29 Scoring — Terminologie der Antwortoptionen](TestScript-promis29-terminology.md), [PROMIS-29 Scoring — Validierung und Persistenz](TestScript-promis29-scoring.md), [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-ces-d](Questionnaire-mii-qst-pro-ces-d.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-eortc-qlq-c30](Questionnaire-mii-qst-pro-eortc-qlq-c30.md), [Questionnaire/mii-qst-pro-epds](Questionnaire-mii-qst-pro-epds.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-hads](Questionnaire-mii-qst-pro-hads.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-k6](Questionnaire-mii-qst-pro-k6.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-promis-global-health](Questionnaire-mii-qst-pro-promis-global-health.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md), [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md) and [mii-lib-pro-promis-29](Library-mii-lib-pro-promis-29.md)
 
 
 * MIDOS2 ist ein Instrument der Deutschen Gesellschaft für Palliativmedizin (DGP), frei verwendbar für klinische und Forschungszwecke.
@@ -67,12 +67,12 @@ This publication includes IP covered under the following statements.
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-ucum.html): [Bundle/mii-exa-pro-bdi-ii-bundle](Bundle-mii-exa-pro-bdi-ii-bundle.md), [Bundle/mii-exa-pro-eortc-qlq-c30-bundle](Bundle-mii-exa-pro-eortc-qlq-c30-bundle.md)... Show 102 more, [Bundle/mii-exa-pro-phq-9-bundle](Bundle-mii-exa-pro-phq-9-bundle.md), [Bundle/mii-exa-pro-promis-29-bundle](Bundle-mii-exa-pro-promis-29-bundle.md), [Bundle/mii-exa-pro-promis-depression-sf4a-bundle](Bundle-mii-exa-pro-promis-depression-sf4a-bundle.md), [Observation/mii-exa-pro-bdi-ii-observation](Observation-mii-exa-pro-bdi-ii-observation.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv](Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-raw](Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.md), [Observation/mii-exa-pro-dass-dass21-score-depression-equiv](Observation-mii-exa-pro-dass-dass21-score-depression-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-depression-raw](Observation-mii-exa-pro-dass-dass21-score-depression-raw.md), [Observation/mii-exa-pro-dass-dass21-score-stress-equiv](Observation-mii-exa-pro-dass-dass21-score-stress-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-stress-raw](Observation-mii-exa-pro-dass-dass21-score-stress-raw.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ap](Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-cf](Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-co](Observation-mii-exa-pro-eortc-qlq-c30-observation-co.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-di](Observation-mii-exa-pro-eortc-qlq-c30-observation-di.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-dy](Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ef](Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fa](Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fi](Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-nv](Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pa](Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pf](Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ql](Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-rf](Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sf](Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sl](Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.md), [Observation/mii-exa-pro-gad-7-score](Observation-mii-exa-pro-gad-7-score.md), [Observation/mii-exa-pro-isr-z-score](Observation-mii-exa-pro-isr-z-score.md), [Observation/mii-exa-pro-pc-ptsd-score](Observation-mii-exa-pro-pc-ptsd-score.md), [Observation/mii-exa-pro-phq-15-observation](Observation-mii-exa-pro-phq-15-observation.md), [Observation/mii-exa-pro-phq-9-observation](Observation-mii-exa-pro-phq-9-observation.md), [Observation/mii-exa-pro-promis-depression-sf4a-raw-score](Observation-mii-exa-pro-promis-depression-sf4a-raw-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-tscore](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md), [Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation](Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.md), [Observation/mii-exa-pro-scoff-score](Observation-mii-exa-pro-scoff-score.md), [Observation/mii-exa-pro-ssd-12-score](Observation-mii-exa-pro-ssd-12-score.md), [Observation/mii-exa-pro-whodas12-score-simple-sum](Observation-mii-exa-pro-whodas12-score-simple-sum.md), [Observation/mii-exa-pro-wi-7-score](Observation-mii-exa-pro-wi-7-score.md), [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ap](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ap.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-cf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-cf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-co](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-co.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-di](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-di.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-dy](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-dy.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ef](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ef.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fa](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fa.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fi](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fi.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-nv](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pa](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ql](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-rf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sl](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-isr-z](ObservationDefinition-mii-obsdef-pro-score-isr-z.md), [ObservationDefinition/mii-obsdef-pro-score-pc-ptsd](ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-acs](ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade](ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.md), [ObservationDefinition/mii-obsdef-pro-score-scoff](ObservationDefinition-mii-obsdef-pro-score-scoff.md), [ObservationDefinition/mii-obsdef-pro-score-ssd-12](ObservationDefinition-mii-obsdef-pro-score-ssd-12.md), [ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum](ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.md), [ObservationDefinition/mii-obsdef-pro-score-wi-7](ObservationDefinition-mii-obsdef-pro-score-wi-7.md), [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
+* [Unified Code for Units of Measure (UCUM)](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-ucum.html): [Bundle/mii-exa-pro-bdi-ii-bundle](Bundle-mii-exa-pro-bdi-ii-bundle.md), [Bundle/mii-exa-pro-eortc-qlq-c30-bundle](Bundle-mii-exa-pro-eortc-qlq-c30-bundle.md)... Show 107 more, [Bundle/mii-exa-pro-phq-9-bundle](Bundle-mii-exa-pro-phq-9-bundle.md), [Bundle/mii-exa-pro-promis-29-bundle](Bundle-mii-exa-pro-promis-29-bundle.md), [Bundle/mii-exa-pro-promis-depression-sf4a-bundle](Bundle-mii-exa-pro-promis-depression-sf4a-bundle.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [Observation/mii-exa-pro-bdi-ii-observation](Observation-mii-exa-pro-bdi-ii-observation.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv](Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-raw](Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.md), [Observation/mii-exa-pro-dass-dass21-score-depression-equiv](Observation-mii-exa-pro-dass-dass21-score-depression-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-depression-raw](Observation-mii-exa-pro-dass-dass21-score-depression-raw.md), [Observation/mii-exa-pro-dass-dass21-score-stress-equiv](Observation-mii-exa-pro-dass-dass21-score-stress-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-stress-raw](Observation-mii-exa-pro-dass-dass21-score-stress-raw.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ap](Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-cf](Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-co](Observation-mii-exa-pro-eortc-qlq-c30-observation-co.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-di](Observation-mii-exa-pro-eortc-qlq-c30-observation-di.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-dy](Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ef](Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fa](Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fi](Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-nv](Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pa](Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pf](Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ql](Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-rf](Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sf](Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sl](Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.md), [Observation/mii-exa-pro-gad-7-score](Observation-mii-exa-pro-gad-7-score.md), [Observation/mii-exa-pro-isr-z-score](Observation-mii-exa-pro-isr-z-score.md), [Observation/mii-exa-pro-pc-ptsd-score](Observation-mii-exa-pro-pc-ptsd-score.md), [Observation/mii-exa-pro-phq-15-observation](Observation-mii-exa-pro-phq-15-observation.md), [Observation/mii-exa-pro-phq-9-observation](Observation-mii-exa-pro-phq-9-observation.md), [Observation/mii-exa-pro-promis-depression-sf4a-raw-score](Observation-mii-exa-pro-promis-depression-sf4a-raw-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-tscore](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md), [Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation](Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.md), [Observation/mii-exa-pro-promis-global-health-mental-raw](Observation-mii-exa-pro-promis-global-health-mental-raw.md), [Observation/mii-exa-pro-promis-global-health-physical-raw](Observation-mii-exa-pro-promis-global-health-physical-raw.md), [Observation/mii-exa-pro-scoff-score](Observation-mii-exa-pro-scoff-score.md), [Observation/mii-exa-pro-ssd-12-score](Observation-mii-exa-pro-ssd-12-score.md), [Observation/mii-exa-pro-whodas12-score-simple-sum](Observation-mii-exa-pro-whodas12-score-simple-sum.md), [Observation/mii-exa-pro-wi-7-score](Observation-mii-exa-pro-wi-7-score.md), [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ap](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ap.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-cf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-cf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-co](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-co.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-di](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-di.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-dy](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-dy.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ef](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ef.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fa](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fa.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-fi](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-fi.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-nv](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-nv.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pa](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pa.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-pf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-pf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-ql](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-ql.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-rf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-rf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sf](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sf.md), [ObservationDefinition/mii-obsdef-pro-eortc-qlq-c30-sl](ObservationDefinition-mii-obsdef-pro-eortc-qlq-c30-sl.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-mental-raw.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-physical-raw.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-isr-z](ObservationDefinition-mii-obsdef-pro-score-isr-z.md), [ObservationDefinition/mii-obsdef-pro-score-pc-ptsd](ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-acs](ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade](ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.md), [ObservationDefinition/mii-obsdef-pro-score-scoff](ObservationDefinition-mii-obsdef-pro-score-scoff.md), [ObservationDefinition/mii-obsdef-pro-score-ssd-12](ObservationDefinition-mii-obsdef-pro-score-ssd-12.md), [ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum](ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.md), [ObservationDefinition/mii-obsdef-pro-score-wi-7](ObservationDefinition-mii-obsdef-pro-score-wi-7.md), [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-minimal](Questionnaire-mii-qst-pro-euroqol-eq5d5l-minimal.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-promis-global-health](Questionnaire-mii-qst-pro-promis-global-health.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/mii-exa-pro-bdi-ii-bundle](Bundle-mii-exa-pro-bdi-ii-bundle.md), [Bundle/mii-exa-pro-phq-9-bundle](Bundle-mii-exa-pro-phq-9-bundle.md)... Show 60 more, [Bundle/mii-exa-pro-promis-29-bundle](Bundle-mii-exa-pro-promis-29-bundle.md), [Bundle/mii-exa-pro-promis-depression-sf4a-bundle](Bundle-mii-exa-pro-promis-depression-sf4a-bundle.md), [MII_CS_PRO_LOINC_Supplement](CodeSystem-mii-cs-pro-loinc-supplement.md), [MII_PR_PRO_Depression_T_Score](StructureDefinition-mii-pr-pro-depression-t-score.md), [MII_PR_PRO_Observation_BDI_II](StructureDefinition-mii-pr-pro-observation-bdi-ii.md), [MII_PR_PRO_Observation_PHQ_15](StructureDefinition-mii-pr-pro-observation-phq-15.md), [MII_PR_PRO_Observation_PHQ_9](StructureDefinition-mii-pr-pro-observation-phq-9.md), [MII_PR_PRO_PROMIS_29_Anxiety_TScore](StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.md), [MII_PR_PRO_PROMIS_29_Depression_TScore](StructureDefinition-mii-pr-pro-promis-29-depression-tscore.md), [MII_PR_PRO_PROMIS_29_Fatigue_TScore](StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.md), [MII_PR_PRO_PROMIS_29_Pain_Intensity](StructureDefinition-mii-pr-pro-promis-29-pain-intensity.md), [MII_PR_PRO_PROMIS_29_Pain_Interference_TScore](StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.md), [MII_PR_PRO_PROMIS_29_Physical_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.md), [MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore](StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.md), [MII_PR_PRO_PROMIS_29_Social_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.md), [MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md), [MII_VS_PRO_PHQ9_AnswerList_LL3583](ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.md), [MII_VS_PRO_PHQ9_AnswerList_LL3591](ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.md), [MII_VS_PRO_PROMIS_Frequency_Response_Scale](ValueSet-mii-vs-pro-promis-frequency-response-scale.md), [MII_VS_PRO_PROMIS_Intensity_Response_Scale](ValueSet-mii-vs-pro-promis-intensity-response-scale.md), [MII_VS_PRO_PROMIS_Physical_Function_Response_Scale](ValueSet-mii-vs-pro-promis-physical-function-response-scale.md), [Observation/mii-exa-pro-bdi-ii-observation](Observation-mii-exa-pro-bdi-ii-observation.md), [Observation/mii-exa-pro-gad-7-score](Observation-mii-exa-pro-gad-7-score.md), [Observation/mii-exa-pro-phq-15-observation](Observation-mii-exa-pro-phq-15-observation.md), [Observation/mii-exa-pro-phq-9-observation](Observation-mii-exa-pro-phq-9-observation.md), [Observation/mii-exa-pro-promis-depression-sf4a-raw-score](Observation-mii-exa-pro-promis-depression-sf4a-raw-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-tscore](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md), [Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation](Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.md), [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [QuestionnaireResponse/mii-exa-pro-gad-7-response](QuestionnaireResponse-mii-exa-pro-gad-7-response.md), [QuestionnaireResponse/mii-exa-pro-phq-9-response](QuestionnaireResponse-mii-exa-pro-phq-9-response.md), [QuestionnaireResponse/mii-exa-pro-promis-29-de-response](QuestionnaireResponse-mii-exa-pro-promis-29-de-response.md), [QuestionnaireResponse/mii-exa-pro-promis-29-response](QuestionnaireResponse-mii-exa-pro-promis-29-response.md) and [QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response](QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/mii-exa-pro-bdi-ii-bundle](Bundle-mii-exa-pro-bdi-ii-bundle.md), [Bundle/mii-exa-pro-phq-9-bundle](Bundle-mii-exa-pro-phq-9-bundle.md)... Show 88 more, [Bundle/mii-exa-pro-promis-29-bundle](Bundle-mii-exa-pro-promis-29-bundle.md), [Bundle/mii-exa-pro-promis-depression-sf4a-bundle](Bundle-mii-exa-pro-promis-depression-sf4a-bundle.md), [MII_CS_PRO_LOINC_Supplement](CodeSystem-mii-cs-pro-loinc-supplement.md), [MII_PR_PRO_Depression_T_Score](StructureDefinition-mii-pr-pro-depression-t-score.md), [MII_PR_PRO_Observation_BDI_II](StructureDefinition-mii-pr-pro-observation-bdi-ii.md), [MII_PR_PRO_Observation_PHQ_15](StructureDefinition-mii-pr-pro-observation-phq-15.md), [MII_PR_PRO_Observation_PHQ_9](StructureDefinition-mii-pr-pro-observation-phq-9.md), [MII_PR_PRO_PROMIS_29_Anxiety_TScore](StructureDefinition-mii-pr-pro-promis-29-anxiety-tscore.md), [MII_PR_PRO_PROMIS_29_Depression_TScore](StructureDefinition-mii-pr-pro-promis-29-depression-tscore.md), [MII_PR_PRO_PROMIS_29_Fatigue_TScore](StructureDefinition-mii-pr-pro-promis-29-fatigue-tscore.md), [MII_PR_PRO_PROMIS_29_Pain_Intensity](StructureDefinition-mii-pr-pro-promis-29-pain-intensity.md), [MII_PR_PRO_PROMIS_29_Pain_Interference_TScore](StructureDefinition-mii-pr-pro-promis-29-pain-interference-tscore.md), [MII_PR_PRO_PROMIS_29_Physical_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-physical-function-tscore.md), [MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore](StructureDefinition-mii-pr-pro-promis-29-sleep-disturbance-tscore.md), [MII_PR_PRO_PROMIS_29_Social_Function_TScore](StructureDefinition-mii-pr-pro-promis-29-social-function-tscore.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-raw-score.md), [MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore](StructureDefinition-mii-pr-pro-promis-cognitive-function-sf4a-tscore.md), [MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md), [MII_VS_PRO_PHQ9_AnswerList_LL3583](ValueSet-mii-vs-pro-phq-9-answer-list-ll358-3.md), [MII_VS_PRO_PHQ9_AnswerList_LL3591](ValueSet-mii-vs-pro-phq-9-answer-list-ll359-1.md), [MII_VS_PRO_PROMIS_Frequency_Response_Scale](ValueSet-mii-vs-pro-promis-frequency-response-scale.md), [MII_VS_PRO_PROMIS_Intensity_Response_Scale](ValueSet-mii-vs-pro-promis-intensity-response-scale.md), [MII_VS_PRO_PROMIS_Physical_Function_Response_Scale](ValueSet-mii-vs-pro-promis-physical-function-response-scale.md), [MII_VS_PRO_PROMIS_Social_Roles_Response_Scale](ValueSet-mii-vs-pro-promis-social-roles-response-scale.md), [Observation/mii-exa-pro-bdi-ii-observation](Observation-mii-exa-pro-bdi-ii-observation.md), [Observation/mii-exa-pro-gad-7-score](Observation-mii-exa-pro-gad-7-score.md), [Observation/mii-exa-pro-phq-15-observation](Observation-mii-exa-pro-phq-15-observation.md), [Observation/mii-exa-pro-phq-9-observation](Observation-mii-exa-pro-phq-9-observation.md), [Observation/mii-exa-pro-promis-depression-sf4a-raw-score](Observation-mii-exa-pro-promis-depression-sf4a-raw-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-tscore](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md), [Observation/mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation](Observation-mii-exa-pro-promis-depression-tscore-from-bdi-ii-observation.md), [Observation/mii-exa-pro-promis-global-health-mental-raw](Observation-mii-exa-pro-promis-global-health-mental-raw.md), [Observation/mii-exa-pro-promis-global-health-physical-raw](Observation-mii-exa-pro-promis-global-health-physical-raw.md), [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-mental-raw.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-physical-raw.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [Questionnaire/mii-qst-pro-bdi-bdi2](Questionnaire-mii-qst-pro-bdi-bdi2.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md), [Questionnaire/mii-qst-pro-promis-global-health](Questionnaire-mii-qst-pro-promis-global-health.md), [QuestionnaireResponse/mii-exa-pro-gad-7-response](QuestionnaireResponse-mii-exa-pro-gad-7-response.md), [QuestionnaireResponse/mii-exa-pro-phq-9-response](QuestionnaireResponse-mii-exa-pro-phq-9-response.md), [QuestionnaireResponse/mii-exa-pro-promis-29-de-response](QuestionnaireResponse-mii-exa-pro-promis-29-de-response.md), [QuestionnaireResponse/mii-exa-pro-promis-29-response](QuestionnaireResponse-mii-exa-pro-promis-29-response.md), [QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response](QuestionnaireResponse-mii-exa-pro-promis-depression-sf4a-response.md), [QuestionnaireResponse/mii-exa-pro-promis-global-health-response](QuestionnaireResponse-mii-exa-pro-promis-global-health-response.md), [QuestionnaireResponse/promis29-anxiety-asym](QuestionnaireResponse-promis29-anxiety-asym.md), [QuestionnaireResponse/promis29-anxiety-ceil](QuestionnaireResponse-promis29-anxiety-ceil.md), [QuestionnaireResponse/promis29-anxiety-floor](QuestionnaireResponse-promis29-anxiety-floor.md), [QuestionnaireResponse/promis29-depression-asym](QuestionnaireResponse-promis29-depression-asym.md), [QuestionnaireResponse/promis29-depression-ceil](QuestionnaireResponse-promis29-depression-ceil.md), [QuestionnaireResponse/promis29-depression-floor](QuestionnaireResponse-promis29-depression-floor.md), [QuestionnaireResponse/promis29-fatigue-asym](QuestionnaireResponse-promis29-fatigue-asym.md), [QuestionnaireResponse/promis29-fatigue-ceil](QuestionnaireResponse-promis29-fatigue-ceil.md), [QuestionnaireResponse/promis29-fatigue-floor](QuestionnaireResponse-promis29-fatigue-floor.md), [QuestionnaireResponse/promis29-pain-interference-asym](QuestionnaireResponse-promis29-pain-interference-asym.md), [QuestionnaireResponse/promis29-pain-interference-ceil](QuestionnaireResponse-promis29-pain-interference-ceil.md), [QuestionnaireResponse/promis29-pain-interference-floor](QuestionnaireResponse-promis29-pain-interference-floor.md), [QuestionnaireResponse/promis29-physical-function-asym](QuestionnaireResponse-promis29-physical-function-asym.md), [QuestionnaireResponse/promis29-physical-function-ceil](QuestionnaireResponse-promis29-physical-function-ceil.md), [QuestionnaireResponse/promis29-physical-function-floor](QuestionnaireResponse-promis29-physical-function-floor.md), [QuestionnaireResponse/promis29-sleep-asym](QuestionnaireResponse-promis29-sleep-asym.md), [QuestionnaireResponse/promis29-sleep-ceil](QuestionnaireResponse-promis29-sleep-ceil.md), [QuestionnaireResponse/promis29-sleep-floor](QuestionnaireResponse-promis29-sleep-floor.md), [QuestionnaireResponse/promis29-social-asym](QuestionnaireResponse-promis29-social-asym.md), [QuestionnaireResponse/promis29-social-ceil](QuestionnaireResponse-promis29-social-ceil.md), [QuestionnaireResponse/promis29-social-floor](QuestionnaireResponse-promis29-social-floor.md) and [QuestionnaireResponse/promis29-social-teilantwort-guard](QuestionnaireResponse-promis29-social-teilantwort-guard.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
@@ -82,9 +82,11 @@ This publication includes IP covered under the following statements.
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [MeasureImprovementNotation](http://terminology.hl7.org/7.3.0/CodeSystem-measure-improvement-notation.html): [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md)... Show 29 more, [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-isr-z](ObservationDefinition-mii-obsdef-pro-score-isr-z.md), [ObservationDefinition/mii-obsdef-pro-score-pc-ptsd](ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-acs](ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade](ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.md), [ObservationDefinition/mii-obsdef-pro-score-scoff](ObservationDefinition-mii-obsdef-pro-score-scoff.md), [ObservationDefinition/mii-obsdef-pro-score-ssd-12](ObservationDefinition-mii-obsdef-pro-score-ssd-12.md), [ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum](ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.md) and [ObservationDefinition/mii-obsdef-pro-score-wi-7](ObservationDefinition-mii-obsdef-pro-score-wi-7.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.3.0/CodeSystem-observation-category.html): [Bundle/mii-exa-pro-eortc-qlq-c30-bundle](Bundle-mii-exa-pro-eortc-qlq-c30-bundle.md), [Bundle/mii-exa-pro-phq-9-bundle](Bundle-mii-exa-pro-phq-9-bundle.md)... Show 79 more, [Bundle/mii-exa-pro-promis-depression-sf4a-bundle](Bundle-mii-exa-pro-promis-depression-sf4a-bundle.md), [MII_PR_PRO_Depression_T_Score](StructureDefinition-mii-pr-pro-depression-t-score.md), [MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv](Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-raw](Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.md), [Observation/mii-exa-pro-dass-dass21-score-depression-equiv](Observation-mii-exa-pro-dass-dass21-score-depression-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-depression-raw](Observation-mii-exa-pro-dass-dass21-score-depression-raw.md), [Observation/mii-exa-pro-dass-dass21-score-stress-equiv](Observation-mii-exa-pro-dass-dass21-score-stress-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-stress-raw](Observation-mii-exa-pro-dass-dass21-score-stress-raw.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ap](Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-cf](Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-co](Observation-mii-exa-pro-eortc-qlq-c30-observation-co.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-di](Observation-mii-exa-pro-eortc-qlq-c30-observation-di.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-dy](Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ef](Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fa](Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fi](Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-nv](Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pa](Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pf](Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ql](Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-rf](Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sf](Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sl](Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.md), [Observation/mii-exa-pro-gad-7-score](Observation-mii-exa-pro-gad-7-score.md), [Observation/mii-exa-pro-isr-z-score](Observation-mii-exa-pro-isr-z-score.md), [Observation/mii-exa-pro-pc-ptsd-score](Observation-mii-exa-pro-pc-ptsd-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-raw-score](Observation-mii-exa-pro-promis-depression-sf4a-raw-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-tscore](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md), [Observation/mii-exa-pro-scoff-score](Observation-mii-exa-pro-scoff-score.md), [Observation/mii-exa-pro-ssd-12-score](Observation-mii-exa-pro-ssd-12-score.md), [Observation/mii-exa-pro-whodas12-score-simple-sum](Observation-mii-exa-pro-whodas12-score-simple-sum.md), [Observation/mii-exa-pro-wi-7-score](Observation-mii-exa-pro-wi-7-score.md), [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-isr-z](ObservationDefinition-mii-obsdef-pro-score-isr-z.md), [ObservationDefinition/mii-obsdef-pro-score-pc-ptsd](ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-acs](ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade](ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.md), [ObservationDefinition/mii-obsdef-pro-score-scoff](ObservationDefinition-mii-obsdef-pro-score-scoff.md), [ObservationDefinition/mii-obsdef-pro-score-ssd-12](ObservationDefinition-mii-obsdef-pro-score-ssd-12.md), [ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum](ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.md), [ObservationDefinition/mii-obsdef-pro-score-wi-7](ObservationDefinition-mii-obsdef-pro-score-wi-7.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
-* [UsageContextType](http://terminology.hl7.org/7.3.0/CodeSystem-usage-context-type.html): [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md), [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md) and [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md)
+* [LibraryType](http://terminology.hl7.org/7.3.0/CodeSystem-library-type.html): [mii-lib-pro-promis-29](Library-mii-lib-pro-promis-29.md)
+* [MeasureImprovementNotation](http://terminology.hl7.org/7.3.0/CodeSystem-measure-improvement-notation.html): [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md)... Show 31 more, [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-mental-raw.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-physical-raw.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-isr-z](ObservationDefinition-mii-obsdef-pro-score-isr-z.md), [ObservationDefinition/mii-obsdef-pro-score-pc-ptsd](ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-acs](ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade](ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.md), [ObservationDefinition/mii-obsdef-pro-score-scoff](ObservationDefinition-mii-obsdef-pro-score-scoff.md), [ObservationDefinition/mii-obsdef-pro-score-ssd-12](ObservationDefinition-mii-obsdef-pro-score-ssd-12.md), [ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum](ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.md) and [ObservationDefinition/mii-obsdef-pro-score-wi-7](ObservationDefinition-mii-obsdef-pro-score-wi-7.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.3.0/CodeSystem-observation-category.html): [Bundle/mii-exa-pro-eortc-qlq-c30-bundle](Bundle-mii-exa-pro-eortc-qlq-c30-bundle.md), [Bundle/mii-exa-pro-phq-9-bundle](Bundle-mii-exa-pro-phq-9-bundle.md)... Show 85 more, [Bundle/mii-exa-pro-promis-depression-sf4a-bundle](Bundle-mii-exa-pro-promis-depression-sf4a-bundle.md), [MII_PR_PRO_Depression_T_Score](StructureDefinition-mii-pr-pro-depression-t-score.md), [MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score](StructureDefinition-mii-pr-pro-promis-depression-sf4a-raw-score.md), [MII_QST_PRO_MIDOS_MIDOS2](Questionnaire-mii-qst-pro-midos-midos2.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-equiv](Observation-mii-exa-pro-dass-dass21-score-anxiety-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-anxiety-raw](Observation-mii-exa-pro-dass-dass21-score-anxiety-raw.md), [Observation/mii-exa-pro-dass-dass21-score-depression-equiv](Observation-mii-exa-pro-dass-dass21-score-depression-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-depression-raw](Observation-mii-exa-pro-dass-dass21-score-depression-raw.md), [Observation/mii-exa-pro-dass-dass21-score-stress-equiv](Observation-mii-exa-pro-dass-dass21-score-stress-equiv.md), [Observation/mii-exa-pro-dass-dass21-score-stress-raw](Observation-mii-exa-pro-dass-dass21-score-stress-raw.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ap](Observation-mii-exa-pro-eortc-qlq-c30-observation-ap.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-cf](Observation-mii-exa-pro-eortc-qlq-c30-observation-cf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-co](Observation-mii-exa-pro-eortc-qlq-c30-observation-co.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-di](Observation-mii-exa-pro-eortc-qlq-c30-observation-di.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-dy](Observation-mii-exa-pro-eortc-qlq-c30-observation-dy.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ef](Observation-mii-exa-pro-eortc-qlq-c30-observation-ef.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fa](Observation-mii-exa-pro-eortc-qlq-c30-observation-fa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-fi](Observation-mii-exa-pro-eortc-qlq-c30-observation-fi.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-nv](Observation-mii-exa-pro-eortc-qlq-c30-observation-nv.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pa](Observation-mii-exa-pro-eortc-qlq-c30-observation-pa.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-pf](Observation-mii-exa-pro-eortc-qlq-c30-observation-pf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-ql](Observation-mii-exa-pro-eortc-qlq-c30-observation-ql.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-rf](Observation-mii-exa-pro-eortc-qlq-c30-observation-rf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sf](Observation-mii-exa-pro-eortc-qlq-c30-observation-sf.md), [Observation/mii-exa-pro-eortc-qlq-c30-observation-sl](Observation-mii-exa-pro-eortc-qlq-c30-observation-sl.md), [Observation/mii-exa-pro-gad-7-score](Observation-mii-exa-pro-gad-7-score.md), [Observation/mii-exa-pro-isr-z-score](Observation-mii-exa-pro-isr-z-score.md), [Observation/mii-exa-pro-pc-ptsd-score](Observation-mii-exa-pro-pc-ptsd-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-raw-score](Observation-mii-exa-pro-promis-depression-sf4a-raw-score.md), [Observation/mii-exa-pro-promis-depression-sf4a-tscore](Observation-mii-exa-pro-promis-depression-sf4a-tscore.md), [Observation/mii-exa-pro-promis-global-health-mental-raw](Observation-mii-exa-pro-promis-global-health-mental-raw.md), [Observation/mii-exa-pro-promis-global-health-physical-raw](Observation-mii-exa-pro-promis-global-health-physical-raw.md), [Observation/mii-exa-pro-scoff-score](Observation-mii-exa-pro-scoff-score.md), [Observation/mii-exa-pro-ssd-12-score](Observation-mii-exa-pro-ssd-12-score.md), [Observation/mii-exa-pro-whodas12-score-simple-sum](Observation-mii-exa-pro-whodas12-score-simple-sum.md), [Observation/mii-exa-pro-wi-7-score](Observation-mii-exa-pro-wi-7-score.md), [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md), [ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-anxiety-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-depression-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-fatigue-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity](ObservationDefinition-mii-obsdef-pro-promis-29-pain-intensity.md), [ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-pain-interference-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-physical-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-sleep-disturbance-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore](ObservationDefinition-mii-obsdef-pro-promis-29-social-function-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score.md), [ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore](ObservationDefinition-mii-obsdef-pro-promis-cognitive-function-sf4a-tscore.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-mental-raw.md), [ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw](ObservationDefinition-mii-obsdef-pro-promis-global-health-physical-raw.md), [ObservationDefinition/mii-obsdef-pro-score-bdi-ii](ObservationDefinition-mii-obsdef-pro-score-bdi-ii.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-anxiety-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-anxiety-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-depression-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-depression-raw.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-equiv](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-equiv.md), [ObservationDefinition/mii-obsdef-pro-score-dass21-stress-raw](ObservationDefinition-mii-obsdef-pro-score-dass21-stress-raw.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-index.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-profile.md), [ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas](ObservationDefinition-mii-obsdef-pro-score-eq5d5l-vas.md), [ObservationDefinition/mii-obsdef-pro-score-gad-7](ObservationDefinition-mii-obsdef-pro-score-gad-7.md), [ObservationDefinition/mii-obsdef-pro-score-isr-z](ObservationDefinition-mii-obsdef-pro-score-isr-z.md), [ObservationDefinition/mii-obsdef-pro-score-pc-ptsd](ObservationDefinition-mii-obsdef-pro-score-pc-ptsd.md), [ObservationDefinition/mii-obsdef-pro-score-phq-15](ObservationDefinition-mii-obsdef-pro-score-phq-15.md), [ObservationDefinition/mii-obsdef-pro-score-phq-9](ObservationDefinition-mii-obsdef-pro-score-phq-9.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-acs](ObservationDefinition-mii-obsdef-pro-score-proctcae-acs.md), [ObservationDefinition/mii-obsdef-pro-score-proctcae-composite-grade](ObservationDefinition-mii-obsdef-pro-score-proctcae-composite-grade.md), [ObservationDefinition/mii-obsdef-pro-score-scoff](ObservationDefinition-mii-obsdef-pro-score-scoff.md), [ObservationDefinition/mii-obsdef-pro-score-ssd-12](ObservationDefinition-mii-obsdef-pro-score-ssd-12.md), [ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum](ObservationDefinition-mii-obsdef-pro-score-whodas12-simple-sum.md), [ObservationDefinition/mii-obsdef-pro-score-wi-7](ObservationDefinition-mii-obsdef-pro-score-wi-7.md), [Questionnaire/mii-qst-pro-dass-dass21](Questionnaire-mii-qst-pro-dass-dass21.md), [Questionnaire/mii-qst-pro-euronet-soma](Questionnaire-mii-qst-pro-euronet-soma.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding](Questionnaire-mii-qst-pro-euroqol-eq5d5l-answer-coding.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-collectable.md), [Questionnaire/mii-qst-pro-euroqol-eq5d5l-displayable](Questionnaire-mii-qst-pro-euroqol-eq5d5l-displayable.md), [Questionnaire/mii-qst-pro-gad-7](Questionnaire-mii-qst-pro-gad-7.md), [Questionnaire/mii-qst-pro-isr-z](Questionnaire-mii-qst-pro-isr-z.md), [Questionnaire/mii-qst-pro-pc-ptsd](Questionnaire-mii-qst-pro-pc-ptsd.md), [Questionnaire/mii-qst-pro-phq-15](Questionnaire-mii-qst-pro-phq-15.md), [Questionnaire/mii-qst-pro-phq-9](Questionnaire-mii-qst-pro-phq-9.md), [Questionnaire/mii-qst-pro-promis-global-health](Questionnaire-mii-qst-pro-promis-global-health.md), [Questionnaire/mii-qst-pro-scoff](Questionnaire-mii-qst-pro-scoff.md), [Questionnaire/mii-qst-pro-ssd-12](Questionnaire-mii-qst-pro-ssd-12.md), [Questionnaire/mii-qst-pro-whodas-whodas12](Questionnaire-mii-qst-pro-whodas-whodas12.md) and [Questionnaire/mii-qst-pro-wi-7](Questionnaire-mii-qst-pro-wi-7.md)
+* [Test script operation code](http://terminology.hl7.org/7.3.0/CodeSystem-testscript-operation-codes.html): [PROMIS-29 Scoring — Validierung und Persistenz](TestScript-promis29-scoring.md)
+* [UsageContextType](http://terminology.hl7.org/7.3.0/CodeSystem-usage-context-type.html): [Questionnaire/mii-qst-pro-promis-16](Questionnaire-mii-qst-pro-promis-16.md), [Questionnaire/mii-qst-pro-promis-29](Questionnaire-mii-qst-pro-promis-29.md)... Show 5 more, [Questionnaire/mii-qst-pro-promis-29-de](Questionnaire-mii-qst-pro-promis-29-de.md), [Questionnaire/mii-qst-pro-promis-29-minimal](Questionnaire-mii-qst-pro-promis-29-minimal.md), [Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a](Questionnaire-mii-qst-pro-promis-cognitive-function-sf4a.md), [Questionnaire/mii-qst-pro-promis-depression-sf4a](Questionnaire-mii-qst-pro-promis-depression-sf4a.md) and [Questionnaire/mii-qst-pro-promis-global-health](Questionnaire-mii-qst-pro-promis-global-health.md)
 * [AdministrativeGender](http://terminology.hl7.org/7.3.0/CodeSystem-v3-AdministrativeGender.html): [ObservationDefinition/mii-obsdef-pro-depression-t-score](ObservationDefinition-mii-obsdef-pro-depression-t-score.md)
 
 
@@ -227,12 +229,12 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "valueMarkdown" : "Provide the computable publication unit for the MII Core Dataset PRO module, enabling implementers to discover, validate, version, and apply the specification consistently."
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ImplementationGuide/mii-ig-pro",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_IG_PRO",
   "title" : "MII IG PRO",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-11",
+  "date" : "2026-11-10",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -2572,8 +2574,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "QuestionnaireResponse/mii-exa-pro-promis-29-de-response"
       },
-      "name" : "MII EXA PRO PROMIS-29 Response (German)",
-      "description" : "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 (German variant) - demonstrates response compatibility between language variants",
+      "name" : "MII EXA PRO PROMIS-29 Response (German language)",
+      "description" : "Example QuestionnaireResponse for PROMIS-29 Profile v2.1 with language = de, answering the English-primary questionnaire; demonstrates that the response carries the LOINC answer codes regardless of the display language",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
     },
     {
@@ -2591,6 +2593,22 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "name" : "MII EXA PRO WHODAS 2.0 12-Item Response",
       "description" : "Complete WHODAS-12 QuestionnaireResponse example. All 12 items answered 'Moderate' (ordinal 2); simple sum = 24.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Library"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Library-mii-lib-pro-promis-29.html"
+      }],
+      "reference" : {
+        "reference" : "Library/mii-lib-pro-promis-29"
+      },
+      "name" : "MII LIB PRO PROMIS-29 Scoring",
+      "description" : "CQL scoring library for PROMIS-29 Profile v2.1: raw scores and T-scores of the seven domains plus the pain intensity item. Server channel of the dual-channel scoring architecture (the FHIRPath calculatedExpressions in the Questionnaire are the client channel); both channels are generated from the same weight and T-score tables. Define names equal the score item linkIds. Supports Library/$evaluate with an explicit Response parameter and the SDC retrieve pattern (most recent completed QuestionnaireResponse of the instrument).",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2654,6 +2672,38 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       "name" : "MII ObsDef PRO PROMIS Cognitive Function SF 4a T-Score",
       "description" : "PROMIS Cognitive Function Short Form 4a T-Score",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-promis-global-health-mental-raw.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-promis-global-health-mental-raw"
+      },
+      "name" : "MII ObsDef PRO PROMIS Global Health Mental Raw Score",
+      "description" : "PROMIS Global Mental Health raw score (Global02 + Global04 + Global05 + Global10 recoded), range 4-20",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ObservationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ObservationDefinition-mii-obsdef-pro-promis-global-health-physical-raw.html"
+      }],
+      "reference" : {
+        "reference" : "ObservationDefinition/mii-obsdef-pro-promis-global-health-physical-raw"
+      },
+      "name" : "MII ObsDef PRO PROMIS Global Health Physical Raw Score",
+      "description" : "PROMIS Global Physical Health raw score (Global03 + Global06 + Global07 recoded + Global08 recoded), range 4-20",
       "exampleBoolean" : false
     },
     {
@@ -3703,6 +3753,22 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-mii-qst-pro-promis-global-health.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/mii-qst-pro-promis-global-health"
+      },
+      "name" : "MII QST PRO PROMIS Global Health v1.2",
+      "description" : "PROMIS Scale v1.2 – Global Health: 10 items (Global01–Global10) yielding the Global Physical Health and Global Mental Health raw scores (4–20 each). English primary; German translation only where the official wording is available in the module (Global01, Global02, Global07).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Questionnaire-mii-qst-pro-promis-16.html"
       }],
       "reference" : {
@@ -3740,8 +3806,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "Questionnaire/mii-qst-pro-promis-29-de"
       },
-      "name" : "MII QST PRO PROMIS-29 (German)",
-      "description" : "PROMIS-29 Profile v2.1 - German language variant derived from English source",
+      "name" : "MII QST PRO PROMIS-29 (German) [retired]",
+      "description" : "RETIRED. German-primary presentation variant of PROMIS-29 Profile v2.1, withdrawn with 2027.0.0-ballot.2. Use mii-qst-pro-promis-29 (English primary, German via translation extension) and Questionnaire/$localize for German-primary rendering. Kept as an empty shell so that the canonical URL stays resolvable.",
       "exampleBoolean" : false
     },
     {
@@ -3756,8 +3822,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "Questionnaire/mii-qst-pro-promis-29-minimal"
       },
-      "name" : "MII QST PRO PROMIS-29 Minimal",
-      "description" : "PROMIS-29 Profile v2.1 - Minimal variant for data collection without calculated expressions",
+      "name" : "MII QST PRO PROMIS-29 Minimal [retired]",
+      "description" : "RETIRED. Eight-item demonstration subset of PROMIS-29 (Physical Function + Anxiety, no scoring), withdrawn with 2027.0.0-ballot.2. Build subsets by referencing mii-qst-pro-promis-29 via derivedFrom and the canonical item-bank linkIds instead. Kept as an empty shell so that the canonical URL stays resolvable.",
       "exampleBoolean" : false
     },
     {
@@ -4215,6 +4281,22 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mii-vs-pro-promis-social-roles-response-scale.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-pro-promis-social-roles-response-scale"
+      },
+      "name" : "MII VS PRO PROMIS Social Roles Response Scale",
+      "description" : "Response scale of the PROMIS Ability to Participate in Social Roles and Activities items (LOINC answer list LL3003-2): Never, Rarely, Sometimes, Usually, Always. Reverse-scored (Never = 5 ... Always = 1).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-mii-vs-pro-ssd-12-answers.html"
       }],
       "reference" : {
@@ -4536,6 +4618,437 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       "name" : "PROMIS Depression T-Score, derived from BDI-II Observation Example",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-mii-exa-pro-promis-global-health-response.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/mii-exa-pro-promis-global-health-response"
+      },
+      "name" : "PROMIS Global Health Questionnaire Response Example",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-promis-global-health-mental-raw.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-promis-global-health-mental-raw"
+      },
+      "name" : "PROMIS Global Mental Health Raw Score Example",
+      "description" : "Global Mental Health raw score from the example QuestionnaireResponse (12 of 4-20)",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-pro-promis-global-health-physical-raw.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-pro-promis-global-health-physical-raw"
+      },
+      "name" : "PROMIS Global Physical Health Raw Score Example",
+      "description" : "Global Physical Health raw score from the example QuestionnaireResponse (14 of 4-20)",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "TestScript-promis29-terminology.html"
+      }],
+      "reference" : {
+        "reference" : "TestScript/promis29-terminology"
+      },
+      "name" : "PROMIS-29 Scoring — Terminologie der Antwortoptionen",
+      "description" : "Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "TestScript-promis29-scoring.html"
+      }],
+      "reference" : {
+        "reference" : "TestScript/promis29-scoring"
+      },
+      "name" : "PROMIS-29 Scoring — Validierung und Persistenz",
+      "description" : "Je Szenario: QuestionnaireResponse serverseitig validieren ($validate) und anlegen. Die Fixtures sind die IG-Beispiele promis29-*. Voraussetzung am Ziel: PROMIS-29-Questionnaire geladen. Die $extract-Prüfungen synthetisiert scripts/assemble-testscript-rundir.mjs für den CI-Lauf.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-anxiety-asym.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-anxiety-asym"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — anxiety-asym",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-anxiety-ceil.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-anxiety-ceil"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — anxiety-ceil",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-anxiety-floor.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-anxiety-floor"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — anxiety-floor",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-depression-asym.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-depression-asym"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — depression-asym",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-depression-ceil.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-depression-ceil"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — depression-ceil",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-depression-floor.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-depression-floor"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — depression-floor",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-fatigue-asym.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-fatigue-asym"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — fatigue-asym",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-fatigue-ceil.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-fatigue-ceil"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — fatigue-ceil",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-fatigue-floor.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-fatigue-floor"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — fatigue-floor",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-pain-interference-asym.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-pain-interference-asym"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — pain-interference-asym",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-pain-interference-ceil.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-pain-interference-ceil"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — pain-interference-ceil",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-pain-interference-floor.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-pain-interference-floor"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — pain-interference-floor",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-physical-function-asym.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-physical-function-asym"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — physical-function-asym",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-physical-function-ceil.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-physical-function-ceil"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — physical-function-ceil",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-physical-function-floor.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-physical-function-floor"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — physical-function-floor",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-sleep-asym.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-sleep-asym"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — sleep-asym",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-sleep-ceil.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-sleep-ceil"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — sleep-ceil",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-sleep-floor.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-sleep-floor"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — sleep-floor",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-social-asym.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-social-asym"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — social-asym",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-social-ceil.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-social-ceil"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — social-ceil",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-social-floor.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-social-floor"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — social-floor",
+      "description" : "Raw: offizielle Antwortwerte (HealthMeasures/LOINC); T: Adult Profile Scoring Manual v2.1-Appendix. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-promis29-social-teilantwort-guard.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/promis29-social-teilantwort-guard"
+      },
+      "name" : "PROMIS-29 Scoring-Fixture — social-teilantwort-guard",
+      "description" : "Count-Guard: T-Tabellen gelten nur bei vollstaendig beantworteter Short Form. Fixture des TestScript promis29-scoring; enthält die erwarteten Score-Antworten (Soll-Ergebnis eines korrekt rechnenden Form Fillers).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
     },
     {
       "extension" : [{
@@ -4969,6 +5482,15 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "promis-global-health.html"
+          }],
+          "nameUrl" : "promis-global-health.html",
+          "title" : "PROMIS Global Health v1.2",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "eortc-qlq-c30.html"
           }],
           "nameUrl" : "eortc-qlq-c30.html",
@@ -5145,6 +5667,15 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         }],
         "nameUrl" : "capability-statements.html",
         "title" : "Capability Statements",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "scoring-tests.html"
+        }],
+        "nameUrl" : "scoring-tests.html",
+        "title" : "Scoring Tests",
         "generation" : "markdown"
       },
       {

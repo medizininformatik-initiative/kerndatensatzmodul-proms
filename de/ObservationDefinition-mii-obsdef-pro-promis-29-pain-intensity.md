@@ -1,4 +1,4 @@
-# MII ObsDef PRO PROMIS-29 Pain Intensity - MII IG PRO v2027.0.0-ballot.1
+# MII ObsDef PRO PROMIS-29 Pain Intensity - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,13 +12,13 @@
 
 -------
 
-Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.1
+Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-score-blueprint.md) version: 2027.0.0-ballot.2
 
-**ArtifactVersion**: 2027.0.0-ballot.1
+**ArtifactVersion**: 2027.0.0-ballot.2
 
 **category**: Survey
 
-**code**: How intense was your average pain in the past 7 days [PROMIS]
+**code**: How would you rate your pain on average in past 7 days [PROMIS]
 
 **permittedDataType**: Quantity
 
@@ -49,11 +49,11 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "resourceType" : "ObservationDefinition",
   "id" : "mii-obsdef-pro-promis-29-pain-intensity",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.1"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.2"]
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
-    "valueString" : "2027.0.0-ballot.1"
+    "valueString" : "2027.0.0-ballot.2"
   }],
   "category" : [{
     "coding" : [{
@@ -64,8 +64,8 @@ Profile: [MII PR PRO Score Blueprint / Template](StructureDefinition-mii-pr-pro-
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "75261-8",
-      "display" : "How intense was your average pain in the past 7 days [PROMIS]"
+      "code" : "61583-1",
+      "display" : "How would you rate your pain on average in past 7 days [PROMIS]"
     },
     {
       "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",

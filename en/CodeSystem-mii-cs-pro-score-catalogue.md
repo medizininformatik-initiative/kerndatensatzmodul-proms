@@ -1,4 +1,4 @@
-# MII CS PRO Score Catalogue - MII IG PRO v2027.0.0-ballot.1
+# MII CS PRO Score Catalogue - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-11 | *Computable Name*:MII_CS_PRO_Score_Catalogue |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue | *Version*:2027.0.0-ballot.2 |
+| Active as of 2026-11-11 | *Computable Name*:MII_CS_PRO_Score_Catalogue |
 
  
 MII CS PRO Score Catalogue for PRO Scores used in the MII PROMs Module 
@@ -31,11 +31,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-score-catalogue",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_CS_PRO_Score_Catalogue",
   "title" : "MII CS PRO Score Catalogue",
   "status" : "active",
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -57,7 +57,7 @@ This Code system is referenced in the definition of the following value sets:
     }]
   }],
   "content" : "complete",
-  "count" : 47,
+  "count" : 57,
   "concept" : [{
     "code" : "euroqol-eq5d5l-index",
     "display" : "EuroQol EQ-5D-5L Index Score"
@@ -113,6 +113,34 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "promis-29-pain-intensity",
     "display" : "PROMIS-29 Pain Intensity (0-10 Numeric Rating)"
+  },
+  {
+    "code" : "promis-29-physical-function-raw",
+    "display" : "PROMIS-29 Physical Function Raw Score"
+  },
+  {
+    "code" : "promis-29-anxiety-raw",
+    "display" : "PROMIS-29 Anxiety Raw Score"
+  },
+  {
+    "code" : "promis-29-depression-raw",
+    "display" : "PROMIS-29 Depression Raw Score"
+  },
+  {
+    "code" : "promis-29-fatigue-raw",
+    "display" : "PROMIS-29 Fatigue Raw Score"
+  },
+  {
+    "code" : "promis-29-sleep-disturbance-raw",
+    "display" : "PROMIS-29 Sleep Disturbance Raw Score"
+  },
+  {
+    "code" : "promis-29-social-function-raw",
+    "display" : "PROMIS-29 Ability to Participate in Social Roles and Activities Raw Score"
+  },
+  {
+    "code" : "promis-29-pain-interference-raw",
+    "display" : "PROMIS-29 Pain Interference Raw Score"
   },
   {
     "code" : "promis-cognitive-function-sf4a-raw",
@@ -215,6 +243,10 @@ This Code system is referenced in the definition of the following value sets:
     "display" : "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
   },
   {
+    "code" : "midos2-symptom-sum",
+    "display" : "MIDOS2 Symptom Sum Score (0-33)"
+  },
+  {
     "code" : "proctcae-composite-grade",
     "display" : "PRO-CTCAE Composite Grade (per Adverse Event)"
   },
@@ -245,6 +277,14 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "phq-gad7-total",
     "display" : "GAD-7 Total Score (0-21)"
+  },
+  {
+    "code" : "promis-global-health-physical-raw",
+    "display" : "PROMIS Global Health - Global Physical Health Raw Score (4-20)"
+  },
+  {
+    "code" : "promis-global-health-mental-raw",
+    "display" : "PROMIS Global Health - Global Mental Health Raw Score (4-20)"
   }]
 }
 

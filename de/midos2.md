@@ -1,4 +1,4 @@
-# MIDOS2 - MII IG PRO v2027.0.0-ballot.1
+# MIDOS2 - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**PRO Library**](pro-library.md)
@@ -122,7 +122,12 @@ Die vollständige Ressource finden Sie in der [CodeSystem-Definition](CodeSystem
 // FHIR Variable: symptomSumScore
 %resource.item.where(linkId.matches('^midos2-q(0[1-9]|1[01])-')).answer.value.weight().sum()
 
+// readOnly-Score-Item midos2-score-symptom-sum (MII-Score-Code midos2-symptom-sum, Einheit {score})
+%symptomSumScore
+
 ```
+
+Die Antwortgewichte (0–3) sind `itemWeight`-Properties am CodeSystem `mii-cs-pro-midos2`; das Score-Item ist für die Observation-Extraktion markiert.
 
 ### Literatur
 

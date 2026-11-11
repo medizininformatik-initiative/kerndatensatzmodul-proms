@@ -1,4 +1,4 @@
-# MII CS PRO LOINC Supplement (validated answer wordings) - MII IG PRO v2027.0.0-ballot.1
+# MII CS PRO LOINC Supplement (validated answer wordings) - MII IG PRO v2027.0.0-ballot.2
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement | *Version*:2027.0.0-ballot.1 |
-| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_CS_PRO_LOINC_Supplement |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement | *Version*:2027.0.0-ballot.2 |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_CS_PRO_LOINC_Supplement |
 
  
 Supplement to LOINC adding the validated German answer wordings (PHQ-D; PROMIS German via PHO/CPCOR; EQ-VAS anchors) as designations on the LOINC answer codes used by this module, plus two full PROMIS item wordings in English. Enables display validation of the instrument-validated wordings; claims no translation authority over LOINC. 
@@ -31,12 +31,12 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "resourceType" : "CodeSystem",
   "id" : "mii-cs-pro-loinc-supplement",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-loinc-supplement",
-  "version" : "2027.0.0-ballot.1",
+  "version" : "2027.0.0-ballot.2",
   "name" : "MII_CS_PRO_LOINC_Supplement",
   "title" : "MII CS PRO LOINC Supplement (validated answer wordings)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-11T16:14:51+00:00",
+  "date" : "2026-11-11T08:11:12+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -106,6 +106,13 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "designation" : [{
       "language" : "de",
       "value" : "Oft"
+    }]
+  },
+  {
+    "code" : "LA14747-2",
+    "designation" : [{
+      "language" : "de",
+      "value" : "Meistens"
     }]
   },
   {
