@@ -127,10 +127,17 @@ jobs:
           PAGES_ACTIONS_ENABLED: ${{ vars.PAGES_ACTIONS_ENABLED }}
         run: |
           set -euo pipefail
-          if [[ "${PAGES_ACTIONS_ENABLED}" != "true" ]]; then
-            echo "::error::Set the repository variable PAGES_ACTIONS_ENABLED=true only after Settings → Pages uses GitHub Actions."
-            exit 1
-          fi
+          # MODULE ADDITION (PRO): two Pages modes, mirroring ig-publisher.yml and
+          # cleanup-gh-pages.yml — 'true' = Settings → Pages uses GitHub Actions (deploy
+          # job), 'false' = "Deploy from a branch → gh-pages" (the publish job's commit
+          # is the deployment; verify_legacy polls the result). Unset/other = refuse.
+          case "${PAGES_ACTIONS_ENABLED}" in
+            true)  echo "Pages mode: GitHub Actions (deploy job)." ;;
+            false) echo "Pages mode: Deploy from a branch (gh-pages commit; legacy verification)." ;;
+            *)
+              echo "::error::Set the repository variable PAGES_ACTIONS_ENABLED explicitly: true (Settings → Pages uses GitHub Actions) or false (Deploy from a branch → gh-pages)."
+              exit 1 ;;
+          esac
           echo "Production publication authorized."
 
   prepare:
@@ -1073,11 +1080,12 @@ jobs:
           echo "commit_sha=$(git -C site rev-parse HEAD)" >> "${GITHUB_OUTPUT}"
 
       - name: Configure GitHub Pages
+        if: ${{ vars.PAGES_ACTIONS_ENABLED == 'true' }} # MODULE ADDITION (PRO): Actions mode only
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
   deploy:
     name: Deploy GitHub Pages
-    if: inputs.publish
+    if: ${{ inputs.publish && vars.PAGES_ACTIONS_ENABLED == 'true' }} # MODULE ADDITION (PRO): legacy mode uses verify_legacy
     needs:
       - prepare
       - publish
@@ -1148,4 +1156,64 @@ jobs:
           done
 
           echo "::error::Pages deployed, but the publication files were not available at ${publication_base}."
+          exit 1
+
+  # MODULE ADDITION (PRO): legacy Pages mode ("Deploy from a branch → gh-pages").
+  # The publish job's gh-pages commit IS the deployment; GitHub's pages-build-
+  # deployment turns it into the site (several minutes for a large tree). Poll
+  # the same artefacts the Actions-mode verification checks.
+  verify_legacy:
+    name: Verify publication (Deploy from a branch)
+    if: ${{ inputs.publish && vars.PAGES_ACTIONS_ENABLED != 'true' }}
+    needs:
+      - prepare
+      - publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Wait for the Pages build of the gh-pages commit and verify
+        shell: bash
+        env:
+          CANONICAL: ${{ needs.prepare.outputs.canonical }}
+          LABEL: ${{ needs.prepare.outputs.label }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+          COMMIT_SHA: ${{ needs.publish.outputs.commit_sha }}
+        run: |
+          set -euo pipefail
+          publication_base="${EXPECTED_PUBLICATION_BASE%/}"
+          publication_path="${publication_base}/${LABEL}"
+          for attempt in {1..60}; do
+            if package_list="$(curl --fail --location --silent --show-error \
+              --max-time 30 "${publication_base}/package-list.json")" &&
+              jq -e \
+                --arg canonical "${CANONICAL}" \
+                --arg publication_path "${publication_path}" \
+                --arg version "${VERSION}" \
+                '.canonical == $canonical
+                  and any(.list[];
+                    .version == $version
+                    and .path == $publication_path)' \
+                <<< "${package_list}" >/dev/null &&
+              history="$(curl --fail --location --silent --show-error \
+                --max-time 30 "${publication_base}/history.html")" &&
+              grep -Fq "${VERSION}" <<< "${history}" &&
+              curl --fail --location --silent --show-error \
+                --max-time 30 "${publication_path}/index.html" \
+                --output /dev/null &&
+              curl --fail --location --silent --show-error \
+                --max-time 30 "${publication_path}/package.tgz" \
+                --output /dev/null; then
+              {
+                echo "### Publication deployed (Deploy from a branch)"
+                echo
+                echo "- Publication root: ${publication_base}/"
+                echo "- Version: ${publication_path}/"
+                echo "- FHIR canonical: ${CANONICAL}"
+                echo "- gh-pages commit: \`${COMMIT_SHA}\`"
+              } >> "${GITHUB_STEP_SUMMARY}"
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "::error::gh-pages was committed, but the publication files were not served at ${publication_base} within 30 minutes (check Settings → Pages and the pages-build-deployment run)."
           exit 1
