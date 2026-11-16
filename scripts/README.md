@@ -70,4 +70,7 @@ workflows stop agreeing (they must be copies — a workflow cannot read another
 workflow's `env:`; `release-demo.yml` is tolerated as absent because the
 bootstrap removes it from a module), and
 `publication-url-consistency.template-test.mjs` asserts the placeholder metadata
-contract.
+contract. A third, `template-leftovers.test.mjs`, fails when a template-repo-only
+file (`notify-zulip.yml`, the Release Please files) is present in the module —
+`notify-zulip.yml` came back once with a 1:1 workflow copy (PR #133) and announced
+a module release as a "New template release" in the wrong Zulip topic.
