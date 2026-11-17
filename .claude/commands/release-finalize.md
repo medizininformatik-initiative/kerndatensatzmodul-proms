@@ -99,6 +99,7 @@ Execute Phase 5: Merge and Tag Release
        Pages-Publikation, HAPI-Smoke-Test, `fhir publish-package`).
        NICHT mehr Firely Bake verwenden — der Bake-Filter status='active'
        warf draft-Terminologie aus dem Paket (rc3: MIDOS2-Lücke).
+     - Phase 9: `main` auf den Release-Tag setzen (siehe Post-Tag Actions, Schritt 4).
 
 ### Safety
 
@@ -112,6 +113,25 @@ After successfully creating the tag:
 1. Stay on dev branch (already there)
 2. Optionally clean up the release branch if user wants — nur wenn Gate 2a0 leer war (sonst gehen Commits verloren)
 3. Display the GitHub release URL: `https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/releases`
+4. **`main` auf den Release-Tag setzen (nach Phase 8, nur mit ausdruecklicher Freigabe)**
+
+   `main` haelt den zuletzt publizierten Stand (AGENTS.md); `dev` ist der einzige
+   Integrationsbranch, Release-PRs gehen nach `dev`, der Tag sitzt auf `dev`. Damit
+   `main` nicht stehen bleibt (2025-03 bis 2027.0.0-ballot.2 lag kein Release-Tag auf
+   `main`), wird es nach der Publikation per Fast-Forward auf den Tag-Commit gesetzt —
+   ohne Checkout, ohne Merge-Commit, nie auf `dev` HEAD (der traegt schon Commits
+   nach dem Tag):
+
+   ```bash
+   git fetch origin
+   git merge-base --is-ancestor origin/main v{VERSION}^{commit} || echo "kein Fast-Forward: erst klaeren"
+   git push origin v{VERSION}^{commit}:main
+   ```
+
+   Das ist der einzige erlaubte Push auf `main`; er bringt keine neuen Inhalte,
+   sondern zeigt nur auf den bereits getaggten und publizierten Commit. Das
+   MII-Wiki (Module-Release-Workflow) taggt direkt auf `main`; dieses Repo bildet
+   das ueber den Fast-Forward nach.
 
 ### CI wiring (recommended — belt and suspenders)
 
