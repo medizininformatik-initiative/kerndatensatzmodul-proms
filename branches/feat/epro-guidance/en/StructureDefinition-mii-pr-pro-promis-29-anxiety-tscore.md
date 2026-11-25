@@ -43,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-pro-promis
   "title" : "MII PR PRO PROMIS-29 Anxiety T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-25T09:23:42+00:00",
+  "date" : "2026-11-25T11:32:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

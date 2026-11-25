@@ -37,7 +37,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS PRO Trigger Event Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-25T09:23:42+00:00",
+  "date" : "2026-11-25T11:32:53+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

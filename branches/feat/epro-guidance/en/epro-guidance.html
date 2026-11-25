@@ -416,6 +416,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Three dates keep their own place and must not be mixed: the <strong>triggering event</strong> (discharge, surgery: on the ServiceRequest and in the collection context), the <strong>dispatch</strong> (Communication <code class="language-plaintext highlighter-rouge">sent</code>) and the <strong>completion</strong> (<code class="language-plaintext highlighter-rouge">QuestionnaireResponse.authored</code>). Response rates and reminders are evaluated on Task and Communication; measurement series only on the triggering event.</p>
 
+<p>Dispatch is decoupled from the triggering event for good reasons:</p>
+
+<ul>
+  <li><strong>It can happen more than once.</strong> A first invitation and one or more reminders are separate Communications for the same Task.</li>
+  <li><strong>It can be delayed technically</strong>, e.g. by network or delivery failures, without changing when the collection is due.</li>
+  <li><strong>It follows a dispatch policy.</strong> Invitations may go out at a random time, always in the evening, at the time the patient prefers, or on days the provider has chosen, for example at weekends because follow-up rates are better.</li>
+</ul>
+
+<p>The dispatch policy is a property of the ePRO system, not of the data. It shows in Task and Communication, never in the collection context. An evaluation that needs the time between event and dispatch reads it from there.</p>
+
 <p>In R4 <code class="language-plaintext highlighter-rouge">QuestionnaireResponse.basedOn</code> allows CarePlan and ServiceRequest only. A Task points to its QuestionnaireResponse via <code class="language-plaintext highlighter-rouge">output</code>, not the other way round.</p>
 
 <h3 id="questionnaireresponse">What a QuestionnaireResponse must carry</h3>
@@ -485,7 +495,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Nov 25, 2026 09:23+0000">2026-11-25</span>
+          Generated <span title="Wed, Nov 25, 2026 11:32+0000">2026-11-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

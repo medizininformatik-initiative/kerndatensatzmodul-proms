@@ -413,6 +413,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Drei Zeitpunkte haben je ihren eigenen Platz und werden nicht vermischt: das <strong>auslösende Ereignis</strong> (Entlassung, OP: am ServiceRequest und im Erhebungskontext), der <strong>Versand</strong> (Communication <code class="language-plaintext highlighter-rouge">sent</code>) und das <strong>Ausfüllen</strong> (<code class="language-plaintext highlighter-rouge">QuestionnaireResponse.authored</code>). Rücklaufquoten und Erinnerungen werden über Task und Communication ausgewertet, Messreihen nur über das auslösende Ereignis.</p>
 
+<p>Der Versand ist aus guten Gründen vom auslösenden Ereignis entkoppelt:</p>
+
+<ul>
+  <li><strong>Er kann mehrfach stattfinden.</strong> Erste Einladung und eine oder mehrere Erinnerungen sind getrennte Communications zur selben Task.</li>
+  <li><strong>Er kann technisch verzögert sein</strong>, etwa durch Netzwerk- oder Zustellfehler, ohne dass sich die Fälligkeit der Erhebung ändert.</li>
+  <li><strong>Er folgt einer Versandstrategie.</strong> Einladungen können zu einem zufälligen Zeitpunkt, immer abends, zur Wunschzeit der Patientin oder des Patienten oder an vom Anbieter festgelegten Tagen hinausgehen, etwa am Wochenende, weil dann die Follow-up-Raten besser sind.</li>
+</ul>
+
+<p>Die Versandstrategie ist eine Eigenschaft des ePRO-Systems, nicht der Daten. Sie zeigt sich in Task und Communication, nie im Erhebungskontext. Wer den Abstand zwischen Ereignis und Versand auswerten will, liest ihn dort.</p>
+
 <p>In R4 erlaubt <code class="language-plaintext highlighter-rouge">QuestionnaireResponse.basedOn</code> nur CarePlan und ServiceRequest. Eine Task verweist über <code class="language-plaintext highlighter-rouge">output</code> auf ihre QuestionnaireResponse, nicht umgekehrt.</p>
 
 <h3 id="questionnaireresponse">Was eine QuestionnaireResponse tragen muss</h3>
@@ -482,7 +492,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik-Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.pros#2027.0.0-ballot.2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Nov 25, 2026 09:23+0000">2026-11-25</span>
+          Erstellt <span title="Wed, Nov 25, 2026 11:32+0000">2026-11-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

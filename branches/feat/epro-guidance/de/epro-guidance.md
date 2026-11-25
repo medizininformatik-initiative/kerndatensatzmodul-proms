@@ -33,6 +33,14 @@ Eine Erhebung durchläuft Plan, Anforderung, Ausführung, Benachrichtigung und E
 
 Drei Zeitpunkte haben je ihren eigenen Platz und werden nicht vermischt: das **auslösende Ereignis** (Entlassung, OP: am ServiceRequest und im Erhebungskontext), der **Versand** (Communication `sent`) und das **Ausfüllen** (`QuestionnaireResponse.authored`). Rücklaufquoten und Erinnerungen werden über Task und Communication ausgewertet, Messreihen nur über das auslösende Ereignis.
 
+Der Versand ist aus guten Gründen vom auslösenden Ereignis entkoppelt:
+
+* **Er kann mehrfach stattfinden.** Erste Einladung und eine oder mehrere Erinnerungen sind getrennte Communications zur selben Task.
+* **Er kann technisch verzögert sein**, etwa durch Netzwerk- oder Zustellfehler, ohne dass sich die Fälligkeit der Erhebung ändert.
+* **Er folgt einer Versandstrategie.** Einladungen können zu einem zufälligen Zeitpunkt, immer abends, zur Wunschzeit der Patientin oder des Patienten oder an vom Anbieter festgelegten Tagen hinausgehen, etwa am Wochenende, weil dann die Follow-up-Raten besser sind.
+
+Die Versandstrategie ist eine Eigenschaft des ePRO-Systems, nicht der Daten. Sie zeigt sich in Task und Communication, nie im Erhebungskontext. Wer den Abstand zwischen Ereignis und Versand auswerten will, liest ihn dort.
+
 In R4 erlaubt `QuestionnaireResponse.basedOn` nur CarePlan und ServiceRequest. Eine Task verweist über `output` auf ihre QuestionnaireResponse, nicht umgekehrt.
 
 ### Was eine QuestionnaireResponse tragen muss
