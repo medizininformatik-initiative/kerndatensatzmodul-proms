@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-pro-phq-9-observation-discharge"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot.2"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-pro-phq-9-observation-discharge</b></p><a name="mii-exa-pro-phq-9-observation-discharge"> </a><a name="hcmii-exa-pro-phq-9-observation-discharge"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-pro-observation-phq-9.html">MII PR PRO Observation PHQ-9</a> version: 2027.0.0-ballot.2</p></div><blockquote><p><b>MII EX PRO Collection Context</b></p><ul><li>triggerType: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type discharge}">Discharge</span></li><li>triggerDate: 2023-10-20</li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 44261-6}">Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]</span></p><p><b>subject</b>: <a href="Patient-mii-exa-pro-patient.html">Max Mustermann  Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)</a></p><p><b>effective</b>: 2023-10-20 10:00:00+0000</p><p><b>value</b>: 14 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{score} = '{score}')</span></p></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-collection-context">
+    <extension url="triggerType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type"/>
+          <code value="discharge"/>
+          <display value="Discharge"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="triggerDate">
+      <valueDate value="2023-10-20"/>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="44261-6"/>
+      <display value="Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mii-exa-pro-patient"/>
+  </subject>
+  <effectiveDateTime value="2023-10-20T10:00:00Z"/>
+  <valueQuantity>
+    <value value="14"/>
+    <unit value="{score}"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{score}"/>
+  </valueQuantity>
+</Observation>

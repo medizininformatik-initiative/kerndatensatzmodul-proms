@@ -1,0 +1,8 @@
+@startuml "UseCase 2: local harmonization"
+Patient_1 -> NonFHIR_ePROSystem : collect data
+Patient_2 -> FHIR_ePROSystem : collect data
+NonFHIR_ePROSystem -> DataIntegrationCenter : transform and harmonize
+FHIR_ePROSystem -> DataIntegrationCenter :  transform and harmonize
+DataIntegrationCenter -> DataIntegrationCenter : re-calculate Score 
+DataIntegrationCenter -> Data_Consumer: forward harmonized data 
+@enduml
