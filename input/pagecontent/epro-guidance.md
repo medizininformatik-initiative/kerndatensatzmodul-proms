@@ -31,6 +31,14 @@ A collection passes through plan, order, execution, notification and result. Eac
 
 Three dates keep their own place and must not be mixed: the **triggering event** (discharge, surgery: on the ServiceRequest and in the collection context), the **dispatch** (Communication `sent`) and the **completion** (`QuestionnaireResponse.authored`). Response rates and reminders are evaluated on Task and Communication; measurement series only on the triggering event.
 
+Dispatch is decoupled from the triggering event for good reasons:
+
+* **It can happen more than once.** A first invitation and one or more reminders are separate Communications for the same Task.
+* **It can be delayed technically**, e.g. by network or delivery failures, without changing when the collection is due.
+* **It follows a dispatch policy.** Invitations may go out at a random time, always in the evening, at the time the patient prefers, or on days the provider has chosen, for example at weekends because follow-up rates are better.
+
+The dispatch policy is a property of the ePRO system, not of the data. It shows in Task and Communication, never in the collection context. An evaluation that needs the time between event and dispatch reads it from there.
+
 In R4 `QuestionnaireResponse.basedOn` allows CarePlan and ServiceRequest only. A Task points to its QuestionnaireResponse via `output`, not the other way round.
 
 ### What a QuestionnaireResponse must carry {#questionnaireresponse}
