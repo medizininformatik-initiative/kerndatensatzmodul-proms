@@ -6,7 +6,7 @@ This page documents the changes between versions of the MII PRO module.
 
 ### Unreleased (dev)
 
-_Nothing yet._
+**Collection context (HDB-1030)**: new extension [Collection Context](StructureDefinition-mii-ex-pro-collection-context.html) (`mii-ex-pro-collection-context`) on QuestionnaireResponse and score Observation with `triggerType`, `triggerDate`, `protocol` (PlanDefinition) and `protocolPosition`; invariant `mii-pro-cc-1` (trigger type or protocol). New CodeSystem/ValueSet `mii-cs-pro-trigger-event-type` / `mii-vs-pro-trigger-event-type` (17 concepts, English display, German designation, property `axis` event/purpose), based on the NHS Wales PROMs Trigger Event Type, with ConceptMap `mii-cm-pro-trigger-event-type-to-wales`. Profiles `MII_PR_PRO_QuestionnaireResponse` and `MII_PR_PRO_Score_Instance`: extension `collectionContext` 0..1 MS, `basedOn` and `encounter` must-support. PHQ-9 examples form a measurement series (baseline, discharge, 3-month follow-up); new section [Workflows › Collection Context](workflows.html#collection-context).
 
 ### 2027.0.0-ballot.2 — Ballot reconciliation 2 (2026-11-10)
 

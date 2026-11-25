@@ -9,6 +9,11 @@ Description: "MII PR PRO Score Instance"
 * identifier 0..* MS
 * effectiveDateTime 0..1 MS
 * extension 0..* MS
+// Collection context (HDB-1030): same value as on the QuestionnaireResponse in derivedFrom.
+* extension contains MII_EX_PRO_Collection_Context named collectionContext 0..1 MS
+* extension[collectionContext] ^short = "Collection context, copied from the source QuestionnaireResponse"
+* basedOn MS
+* encounter MS
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
 	 named instantiatesCanonical 0..1 MS
 

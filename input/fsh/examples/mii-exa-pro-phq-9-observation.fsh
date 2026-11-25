@@ -8,6 +8,10 @@ Title: "PHQ-9 Observation Example"
 // * basedOn = Reference(mii-obsdef-pro-score-phq-9) geht nicht weil Observation.instantiatesCanonical erst in R5 kommt, und die R4 extension kein ObservationDefinition unterstützt, aber dafür Measure
 * subject = Reference(Patient/mii-exa-pro-patient)
 * effectiveDateTime = "2023-10-01T12:00:00Z"
+* derivedFrom = Reference(QuestionnaireResponse/mii-exa-pro-phq-9-response)
+// Collection context copied from the source QuestionnaireResponse (HDB-1030)
+* extension[collectionContext].extension[triggerType].valueCodeableConcept = $mii-cs-pro-trigger-event-type#baseline "Baseline / admission"
+* extension[collectionContext].extension[triggerDate].valueDate = "2023-10-01"
 * code = $LNC#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
 * valueQuantity.value = 27
 * valueQuantity.code = #{score}

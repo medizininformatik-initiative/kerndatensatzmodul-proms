@@ -17,11 +17,15 @@ SNOMED CT) werden in diesem Modul **nicht** publiziert, sondern über den
 zentralen KDS-Terminologieserver (SU-TermServ) bezogen:
 [https://mii-termserv.de/](https://mii-termserv.de/).
 
-Das Modul publiziert drei Arten von CodeSystemen:
+Das Modul publiziert vier Arten von CodeSystemen:
 
 * **Kataloge** — [Fragebogen-Katalog](CodeSystem-mii-cs-pro-questionnaire-catalogue.html)
   und [Score-Katalog](CodeSystem-mii-cs-pro-score-catalogue.html): das
   Register der Instrumente und Scores, die dieses Modul verantwortet.
+* **Erhebungskontext** — der [Trigger-Ereignistyp](CodeSystem-mii-cs-pro-trigger-event-type.html)
+  einer Erhebung (Baseline, Entlassung, Follow-up, Screening, Studienendpunkt …),
+  angelehnt an den NHS Wales PROMs Trigger Event Type und per
+  [ConceptMap](ConceptMap-mii-cm-pro-trigger-event-type-to-wales.html) darauf abgebildet.
 * **Instrumenten-Antwortskalen** — je ein CodeSystem pro Instrument, dessen
   Antworten die MII kontrolliert (BDI-II, DASS-21, EORTC QLQ-C30, EQ-5D,
   ISR, MIDOS2, PHQ-15, PRO-CTCAE, SSD-12, WHODAS 2.0). Die Antwortkonzepte

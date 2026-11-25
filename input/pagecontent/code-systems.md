@@ -17,11 +17,15 @@ OPS, SNOMED CT) are **not** published in this module; they are obtained from the
 central KDS terminology service (SU-TermServ):
 [https://mii-termserv.de/](https://mii-termserv.de/).
 
-The module publishes three kinds of CodeSystems:
+The module publishes four kinds of CodeSystems:
 
 * **Catalogues** — [questionnaire catalogue](CodeSystem-mii-cs-pro-questionnaire-catalogue.html)
   and [score catalogue](CodeSystem-mii-cs-pro-score-catalogue.html): the
   registry of instruments and scores this module governs.
+* **Collection context** — the [trigger event type](CodeSystem-mii-cs-pro-trigger-event-type.html)
+  of a collection (baseline, discharge, follow-up, screening, study endpoint …),
+  based on the NHS Wales PROMs Trigger Event Type and mapped to it by a
+  [ConceptMap](ConceptMap-mii-cm-pro-trigger-event-type-to-wales.html).
 * **Instrument answer scales** — one CodeSystem per instrument whose answers
   the MII controls (BDI-II, DASS-21, EORTC QLQ-C30, EQ-5D, ISR, MIDOS2,
   PHQ-15, PRO-CTCAE, SSD-12, WHODAS 2.0). Answer concepts carry German and

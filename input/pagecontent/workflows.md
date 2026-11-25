@@ -170,6 +170,50 @@ In this way, an instrument-independent evaluation and a domain-specific comparis
 
 ---
 
+### Collection Context
+
+A QuestionnaireResponse or score Observation on its own does not say *when in the
+course of care or of a study* it was collected. Change scores, MCID/MID, trend
+displays and register analyses need exactly that: the PHQ-9 at admission, at
+discharge and three months later form a measurement series only if each
+instance carries its position. The
+[Collection Context](StructureDefinition-mii-ex-pro-collection-context.html)
+extension (ballot comment HDB-1030) records it on the QuestionnaireResponse and
+on every score Observation derived from it.
+
+| Sub-extension | Content | Mode |
+|---|---|---|
+| `triggerType` | [Trigger event type](ValueSet-mii-vs-pro-trigger-event-type.html): baseline, pre-/post-intervention, discharge, follow-up, clinician- or patient-initiated, screening, diagnostic assessment, monitoring, study endpoint … | routine |
+| `triggerDate` | Date of the triggering event (surgery, discharge), **not** the completion date; follow-ups refer to the reference event | routine |
+| `protocol` | Canonical of the study or care-pathway protocol (PlanDefinition) | protocol |
+| `protocolPosition` | Position in that protocol, e.g. visit code `FU-3M` | protocol |
+
+At least `triggerType` or `protocol` is required (invariant `mii-pro-cc-1`); both
+modes can be combined, e.g. when discharge is also the reference event of a study.
+
+Rules:
+
+* The form filler or the ordering system sets the context from the launch context
+  or from `QuestionnaireResponse.basedOn` (CarePlan / ServiceRequest), never the
+  patient. It is not the recall period inside an instrument ("over the last two weeks").
+* Score Observations copy the value of the QuestionnaireResponse they are derived from
+  (`derivedFrom`), so a series can be queried on Observations alone.
+* `encounter` binds the collection to the treatment episode, `basedOn` to the
+  collection plan; both are must-support on both profiles.
+* A measurement series is subject + score code + collection context. The
+  [PHQ-9 examples](Observation-mii-exa-pro-phq-9-observation.html) show baseline,
+  [discharge](Observation-mii-exa-pro-phq-9-observation-discharge.html) and
+  [3-month follow-up](Observation-mii-exa-pro-phq-9-observation-follow-up-3m.html).
+
+The trigger event types extend the NHS Wales PROMs Trigger Event Type by
+measurement-series positions, purpose concepts and study endpoints; the property
+`axis` marks event versus purpose. The
+[ConceptMap](ConceptMap-mii-cm-pro-trigger-event-type-to-wales.html) maps to Wales.
+A fully modelled study example (protocol as PlanDefinition, participant plan as
+CarePlan) is in the repository under `docs/discussion/hdb-1030-erhebungskontext/`.
+
+---
+
 ### Implementation Patterns
 
 #### Calculated Expressions

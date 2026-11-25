@@ -64,3 +64,4 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $mii-vs-pro-eortc-qlq-c30-scale-4pt = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-4pt
 Alias: $mii-vs-pro-eortc-qlq-c30-scale-7pt = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt
+Alias: $mii-cs-pro-trigger-event-type = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type
