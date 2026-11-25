@@ -23,6 +23,9 @@ This section collects the domain guidance for implementing and using the
   using the module's data.
 * **[Guidance for Implementers](implementer-guidance.html)** — technical
   guidance for DIC implementers.
+* **[Guidance for ePRO Systems](epro-guidance.html)** — for vendors of patient
+  apps, portals, form renderers and form servers: collection lifecycle,
+  collection context and what a QuestionnaireResponse must carry.
 
 The PRO module standardises **patient-reported** outcomes: instruments the
 patients answer themselves. Its delimitations: clinician-reported and
@@ -40,7 +43,9 @@ for the technical artifacts see [Profiles](profiles.html).
 
 ### For Adopters
 
-**Software vendors** — form renderers, KIS integrations, ePRO apps, scoring services: start with the [Implementer Guidance](implementer-guidance.html); it names the five rules every implementation must respect and what each system role consumes and produces.
+**ePRO vendors** — patient apps and portals, form renderers, form servers: start with the [Guidance for ePRO Systems](epro-guidance.html); it describes the collection lifecycle and what a QuestionnaireResponse must carry.
+
+**Data integration centres and KIS integrations** — ETL pipelines, scoring services: start with the [Implementer Guidance](implementer-guidance.html); it names the five rules every implementation must respect and what each system role consumes and produces.
 
 **Studies and research projects** — instrument selection, licensing tiers, and what the collected data means: start with the [Researcher Guidance](researcher-guidance.html).
 

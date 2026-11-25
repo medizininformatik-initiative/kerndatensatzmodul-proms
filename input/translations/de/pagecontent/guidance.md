@@ -21,6 +21,9 @@ Moduls **PRO**.
   Moduldaten nutzen.
 * **[Anleitung für Implementierende](implementer-guidance.html)** — technische
   Hinweise für DIZ-Implementierende.
+* **[Hinweise für ePRO-Systeme](epro-guidance.html)** — für Hersteller von
+  Patienten-Apps, Portalen, Formular-Renderern und Formularservern:
+  Erhebungsablauf, Erhebungskontext und was eine QuestionnaireResponse tragen muss.
 
 Das PRO-Modul standardisiert **patient-berichtete** Outcomes: Instrumente,
 die Patientinnen und Patienten selbst beantworten. Die Abgrenzungen:
@@ -39,7 +42,9 @@ für die technischen Artefakte siehe [Profile](profiles.html).
 
 ### Für Anwendende
 
-**Softwarehersteller** — Formular-Renderer, KIS-Integrationen, ePRO-Apps, Scoring-Services: Einstieg über die [Hinweise für Implementierende](implementer-guidance.html); dort stehen die fünf Regeln, die jede Implementierung einhalten muss, und was jede Systemrolle konsumiert und erzeugt.
+**ePRO-Hersteller** — Patienten-Apps und -Portale, Formular-Renderer, Formularserver: Einstieg über die [Hinweise für ePRO-Systeme](epro-guidance.html); dort stehen der Erhebungsablauf und was eine QuestionnaireResponse tragen muss.
+
+**Datenintegrationszentren und KIS-Integrationen** — ETL-Strecken, Scoring-Services: Einstieg über die [Hinweise für Implementierende](implementer-guidance.html); dort stehen die fünf Regeln, die jede Implementierung einhalten muss, und was jede Systemrolle konsumiert und erzeugt.
 
 **Studien und Forschungsprojekte** — Instrumentenauswahl, Lizenzstufen und was die erhobenen Daten bedeuten: Einstieg über die [Hinweise für Forschende](researcher-guidance.html).
 
