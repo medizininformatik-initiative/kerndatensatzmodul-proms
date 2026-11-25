@@ -1,0 +1,47 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-pro-phq-9-observation-follow-up-3m",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9|2027.0.0-ballot.2"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-pro-phq-9-observation-follow-up-3m</b></p><a name=\"mii-exa-pro-phq-9-observation-follow-up-3m\"> </a><a name=\"hcmii-exa-pro-phq-9-observation-follow-up-3m\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-pro-observation-phq-9.html\">MII PR PRO Observation PHQ-9</a> version: 2027.0.0-ballot.2</p></div><blockquote><p><b>MII EX PRO Collection Context</b></p><ul><li>triggerType: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type follow-up}\">Follow-up</span></li><li>triggerDate: 2023-10-20</li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 44261-6}\">Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-pro-patient.html\">Max Mustermann  Male, DoB: 1980-05-15 ( http://identifiers.org/patient-ids#12345)</a></p><p><b>effective</b>: 2024-01-22 09:30:00+0000</p><p><b>value</b>: 8 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "triggerType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type",
+          "code" : "follow-up",
+          "display" : "Follow-up"
+        }]
+      }
+    },
+    {
+      "url" : "triggerDate",
+      "valueDate" : "2023-10-20"
+    }],
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-collection-context"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "44261-6",
+      "display" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-pro-patient"
+  },
+  "effectiveDateTime" : "2024-01-22T09:30:00Z",
+  "valueQuantity" : {
+    "value" : 8,
+    "unit" : "{score}",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{score}"
+  }
+}

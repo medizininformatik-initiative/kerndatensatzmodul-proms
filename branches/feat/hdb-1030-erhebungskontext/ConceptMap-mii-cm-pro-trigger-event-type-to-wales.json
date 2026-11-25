@@ -1,0 +1,200 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mii-cm-pro-trigger-event-type-to-wales",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mii-cm-pro-trigger-event-type-to-wales</b></p><a name=\"mii-cm-pro-trigger-event-type-to-wales\"> </a><a name=\"hcmii-cm-pro-trigger-event-type-to-wales\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><p>Mapping from <a href=\"ValueSet-mii-vs-pro-trigger-event-type.html\">MII VS PRO Trigger Event Type</a> to https://fhir.nhs.wales/ValueSet/DataStandardsWales-PSOM-TriggerEventType</p><br/><p>Mapping from <a href=\"CodeSystem-mii-cs-pro-trigger-event-type.html\">MII CS PRO Trigger Event Type</a> to <code>https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PSOM-TriggerEventType</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>onboarding (Onboarding / registration)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>10 (Onboarding)</td><td/></tr><tr><td>primary-care</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11 (Primary care)</td><td/></tr><tr><td>referral</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>12 (Referral)</td><td/></tr><tr><td>outpatient-appointment</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>13 (Outpatient appointment)</td><td/></tr><tr><td>baseline (Baseline / admission)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Wales codes the triggering event, not the position in a measurement series; depending on the pathway baseline corresponds to 12 (Referral) or 13 (Outpatient appointment).</td></tr><tr><td>pre-intervention (Pre-operative / pre-intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>14 (Pre-op assessment)</td><td/></tr><tr><td>post-intervention (Post-operative / post-intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15 (Intervention)</td><td>Wales 15 applies only after the intervention has been confirmed as performed.</td></tr><tr><td>discharge</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>16 (Discharge)</td><td/></tr><tr><td>follow-up</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>15 (Intervention)</td><td>Wales derives follow-up time points from trigger event plus trigger event date (e.g. 15 Intervention + 6 months); follow-up after discharge would correspond to 16.</td></tr><tr><td>clinician-initiated (Clinician-initiated (on demand))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>17 (Clinician-initiated)</td><td/></tr><tr><td>patient-initiated (Patient-initiated (on demand))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>18 (Patient-initiated)</td><td/></tr><tr><td>screening</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Purpose concept; not part of the Wales value set.</td></tr><tr><td>diagnostic (Diagnostic assessment)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Purpose concept; not part of the Wales value set.</td></tr><tr><td>monitoring</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Purpose concept; not part of the Wales value set.</td></tr><tr><td>study-endpoint</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Wales covers care pathways only, not study protocols.</td></tr><tr><td>other</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>71 (Other)</td><td/></tr><tr><td>unknown</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>91 (Unknown)</td><td/></tr></table></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mii-cm-pro-trigger-event-type-to-wales</b></p><a name=\"de-mii-cm-pro-trigger-event-type-to-wales\"> </a><a name=\"de-hcmii-cm-pro-trigger-event-type-to-wales\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><p>Mapping from <a href=\"ValueSet-mii-vs-pro-trigger-event-type.html\">MII VS PRO Trigger Event Type</a> to https://fhir.nhs.wales/ValueSet/DataStandardsWales-PSOM-TriggerEventType</p><br/><p>Mapping from <a href=\"CodeSystem-mii-cs-pro-trigger-event-type.html\">MII CS PRO Trigger Event Type</a> to <code>https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PSOM-TriggerEventType</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>onboarding (Onboarding / registration)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>10 (Onboarding)</td><td/></tr><tr><td>primary-care</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11 (Primary care)</td><td/></tr><tr><td>referral</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>12 (Referral)</td><td/></tr><tr><td>outpatient-appointment</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>13 (Outpatient appointment)</td><td/></tr><tr><td>baseline (Baseline / admission)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Wales codes the triggering event, not the position in a measurement series; depending on the pathway baseline corresponds to 12 (Referral) or 13 (Outpatient appointment).</td></tr><tr><td>pre-intervention (Pre-operative / pre-intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>14 (Pre-op assessment)</td><td/></tr><tr><td>post-intervention (Post-operative / post-intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15 (Intervention)</td><td>Wales 15 applies only after the intervention has been confirmed as performed.</td></tr><tr><td>discharge</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>16 (Discharge)</td><td/></tr><tr><td>follow-up</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>15 (Intervention)</td><td>Wales derives follow-up time points from trigger event plus trigger event date (e.g. 15 Intervention + 6 months); follow-up after discharge would correspond to 16.</td></tr><tr><td>clinician-initiated (Clinician-initiated (on demand))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>17 (Clinician-initiated)</td><td/></tr><tr><td>patient-initiated (Patient-initiated (on demand))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>18 (Patient-initiated)</td><td/></tr><tr><td>screening</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Purpose concept; not part of the Wales value set.</td></tr><tr><td>diagnostic (Diagnostic assessment)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Purpose concept; not part of the Wales value set.</td></tr><tr><td>monitoring</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Purpose concept; not part of the Wales value set.</td></tr><tr><td>study-endpoint</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Wales covers care pathways only, not study protocols.</td></tr><tr><td>other</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>71 (Other)</td><td/></tr><tr><td>unknown</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>91 (Unknown)</td><td/></tr></table></div></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "natural",
+      "display" : "Natural"
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-trigger-event-type-to-wales",
+  "version" : "2027.0.0-ballot.2",
+  "name" : "MII_CM_PRO_Trigger_Event_Type_To_Wales",
+  "title" : "MII CM PRO Trigger Event Type to NHS Wales PROMs Trigger Event Type",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-11-25T08:51:51+00:00",
+  "publisher" : "Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    },
+    {
+      "system" : "email",
+      "value" : "office@medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Maps the MII trigger event types to the value set PROMs Trigger Event Type of the NHS Wales PROMs Standard Operating Model (PSOM). Wales knows triggering events only, no purpose concepts and no measurement-series positions; these are unmatched.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "sourceCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-trigger-event-type",
+  "targetCanonical" : "https://fhir.nhs.wales/ValueSet/DataStandardsWales-PSOM-TriggerEventType",
+  "group" : [{
+    "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type",
+    "target" : "https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PSOM-TriggerEventType",
+    "element" : [{
+      "code" : "onboarding",
+      "display" : "Onboarding / registration",
+      "target" : [{
+        "code" : "10",
+        "display" : "Onboarding",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "primary-care",
+      "display" : "Primary care",
+      "target" : [{
+        "code" : "11",
+        "display" : "Primary care",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "referral",
+      "display" : "Referral",
+      "target" : [{
+        "code" : "12",
+        "display" : "Referral",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "outpatient-appointment",
+      "display" : "Outpatient appointment",
+      "target" : [{
+        "code" : "13",
+        "display" : "Outpatient appointment",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "baseline",
+      "display" : "Baseline / admission",
+      "target" : [{
+        "equivalence" : "unmatched",
+        "comment" : "Wales codes the triggering event, not the position in a measurement series; depending on the pathway baseline corresponds to 12 (Referral) or 13 (Outpatient appointment)."
+      }]
+    },
+    {
+      "code" : "pre-intervention",
+      "display" : "Pre-operative / pre-intervention",
+      "target" : [{
+        "code" : "14",
+        "display" : "Pre-op assessment",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "post-intervention",
+      "display" : "Post-operative / post-intervention",
+      "target" : [{
+        "code" : "15",
+        "display" : "Intervention",
+        "equivalence" : "equivalent",
+        "comment" : "Wales 15 applies only after the intervention has been confirmed as performed."
+      }]
+    },
+    {
+      "code" : "discharge",
+      "display" : "Discharge",
+      "target" : [{
+        "code" : "16",
+        "display" : "Discharge",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "follow-up",
+      "display" : "Follow-up",
+      "target" : [{
+        "code" : "15",
+        "display" : "Intervention",
+        "equivalence" : "inexact",
+        "comment" : "Wales derives follow-up time points from trigger event plus trigger event date (e.g. 15 Intervention + 6 months); follow-up after discharge would correspond to 16."
+      }]
+    },
+    {
+      "code" : "clinician-initiated",
+      "display" : "Clinician-initiated (on demand)",
+      "target" : [{
+        "code" : "17",
+        "display" : "Clinician-initiated",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patient-initiated",
+      "display" : "Patient-initiated (on demand)",
+      "target" : [{
+        "code" : "18",
+        "display" : "Patient-initiated",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "screening",
+      "display" : "Screening",
+      "target" : [{
+        "equivalence" : "unmatched",
+        "comment" : "Purpose concept; not part of the Wales value set."
+      }]
+    },
+    {
+      "code" : "diagnostic",
+      "display" : "Diagnostic assessment",
+      "target" : [{
+        "equivalence" : "unmatched",
+        "comment" : "Purpose concept; not part of the Wales value set."
+      }]
+    },
+    {
+      "code" : "monitoring",
+      "display" : "Monitoring",
+      "target" : [{
+        "equivalence" : "unmatched",
+        "comment" : "Purpose concept; not part of the Wales value set."
+      }]
+    },
+    {
+      "code" : "study-endpoint",
+      "display" : "Study endpoint",
+      "target" : [{
+        "equivalence" : "unmatched",
+        "comment" : "Wales covers care pathways only, not study protocols."
+      }]
+    },
+    {
+      "code" : "other",
+      "display" : "Other",
+      "target" : [{
+        "code" : "71",
+        "display" : "Other",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "display" : "Unknown",
+      "target" : [{
+        "code" : "91",
+        "display" : "Unknown",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-pro-trigger-event-type"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-pro-trigger-event-type</b></p><a name="mii-cs-pro-trigger-event-type"> </a><a name="hcmii-cs-pro-trigger-event-type"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>axis</td><td>axis</td><td>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type#axis</td><td>string</td><td>Whether the concept names a triggering event in the course of care or study (event) or the purpose of the collection (purpose). While the extension carries a single trigger type, choose the purpose concept when no concrete event triggered the collection.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>axis</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td style="white-space:nowrap">onboarding<a name="mii-cs-pro-trigger-event-type-onboarding"> </a></td><td>Onboarding / registration</td><td>Registration for future collections; no content measurement yet.</td><td>event</td><td>Onboarding / Registrierung</td></tr><tr><td style="white-space:nowrap">primary-care<a name="mii-cs-pro-trigger-event-type-primary-care"> </a></td><td>Primary care</td><td>Collection in primary care before referral to specialised care.</td><td>event</td><td>Primärversorgung</td></tr><tr><td style="white-space:nowrap">referral<a name="mii-cs-pro-trigger-event-type-referral"> </a></td><td>Referral</td><td>After acceptance of a referral to specialised or inpatient care.</td><td>event</td><td>Überweisung</td></tr><tr><td style="white-space:nowrap">outpatient-appointment<a name="mii-cs-pro-trigger-event-type-outpatient-appointment"> </a></td><td>Outpatient appointment</td><td>On the occasion of a booked outpatient appointment.</td><td>event</td><td>Ambulanter Termin</td></tr><tr><td style="white-space:nowrap">baseline<a name="mii-cs-pro-trigger-event-type-baseline"> </a></td><td>Baseline / admission</td><td>First measurement of a measurement series: admission, enrolment, start of the survey.</td><td>event</td><td>Baseline / Aufnahme</td></tr><tr><td style="white-space:nowrap">pre-intervention<a name="mii-cs-pro-trigger-event-type-pre-intervention"> </a></td><td>Pre-operative / pre-intervention</td><td>Before a planned intervention, e.g. as part of pre-operative assessment.</td><td>event</td><td>Präoperativ / prä-interventionell</td></tr><tr><td style="white-space:nowrap">post-intervention<a name="mii-cs-pro-trigger-event-type-post-intervention"> </a></td><td>Post-operative / post-intervention</td><td>After a confirmed intervention, usually at a defined interval.</td><td>event</td><td>Postoperativ / post-interventionell</td></tr><tr><td style="white-space:nowrap">discharge<a name="mii-cs-pro-trigger-event-type-discharge"> </a></td><td>Discharge</td><td>At discharge from inpatient or day-patient treatment.</td><td>event</td><td>Entlassung</td></tr><tr><td style="white-space:nowrap">follow-up<a name="mii-cs-pro-trigger-event-type-follow-up"> </a></td><td>Follow-up</td><td>Scheduled follow-up at a defined interval to a reference event after the end of the treatment episode.</td><td>event</td><td>Follow-up</td></tr><tr><td style="white-space:nowrap">clinician-initiated<a name="mii-cs-pro-trigger-event-type-clinician-initiated"> </a></td><td>Clinician-initiated (on demand)</td><td>Requested by a treating professional outside a scheduled time point.</td><td>event</td><td>Klinikerinitiiert (on demand)</td></tr><tr><td style="white-space:nowrap">patient-initiated<a name="mii-cs-pro-trigger-event-type-patient-initiated"> </a></td><td>Patient-initiated (on demand)</td><td>Triggered by the patient, e.g. when symptoms worsen.</td><td>event</td><td>Patienteninitiiert (on demand)</td></tr><tr><td style="white-space:nowrap">screening<a name="mii-cs-pro-trigger-event-type-screening"> </a></td><td>Screening</td><td>Routine collection in a non-preselected population to identify conspicuous cases, e.g. PHQ-9 depression screening of all patients at admission.</td><td>purpose</td><td>Screening</td></tr><tr><td style="white-space:nowrap">diagnostic<a name="mii-cs-pro-trigger-event-type-diagnostic"> </a></td><td>Diagnostic assessment</td><td>Occasion-related assessment on suspicion or symptoms, as part of diagnostic classification or severity grading before a treatment decision.</td><td>purpose</td><td>Diagnostik</td></tr><tr><td style="white-space:nowrap">monitoring<a name="mii-cs-pro-trigger-event-type-monitoring"> </a></td><td>Monitoring</td><td>Repeated collection during ongoing treatment for steering or observation, e.g. symptom monitoring during chemotherapy. Unlike follow-up, monitoring takes place within the treatment episode.</td><td>purpose</td><td>Monitoring / Verlaufskontrolle</td></tr><tr><td style="white-space:nowrap">study-endpoint<a name="mii-cs-pro-trigger-event-type-study-endpoint"> </a></td><td>Study endpoint</td><td>Collection to determine a primary, secondary or further endpoint defined in a study protocol; the protocol position names the endpoint.</td><td>purpose</td><td>Studienendpunkt</td></tr><tr><td style="white-space:nowrap">other<a name="mii-cs-pro-trigger-event-type-other"> </a></td><td>Other</td><td>None of the triggers in this list applies.</td><td>event</td><td>Sonstiges</td></tr><tr><td style="white-space:nowrap">unknown<a name="mii-cs-pro-trigger-event-type-unknown"> </a></td><td>Unknown</td><td>Trigger not known.</td><td>event</td><td>Unbekannt</td></tr></table></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type"/>
+  <version value="2027.0.0-ballot.2"/>
+  <name value="MII_CS_PRO_Trigger_Event_Type"/>
+  <title value="MII CS PRO Trigger Event Type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-11-25T08:51:51+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Which event or purpose in the course of care or of a study triggered the collection of a questionnaire or score (collection context, HDB-1030). Based on the value set PROMs Trigger Event Type of the NHS Wales PROMs Information Standard, extended by concepts for measurement series (baseline, follow-up), collection purpose (screening, diagnostic assessment, monitoring) and study endpoints. The property `axis` marks whether a concept names a triggering event or the purpose of the collection. The mapping to NHS Wales is the ConceptMap mii-cm-pro-trigger-event-type-to-wales."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="17"/>
+  <property>
+    <code value="axis"/>
+    <uri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type#axis"/>
+    <description value="Whether the concept names a triggering event in the course of care or study (event) or the purpose of the collection (purpose). While the extension carries a single trigger type, choose the purpose concept when no concrete event triggered the collection."/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="onboarding"/>
+    <display value="Onboarding / registration"/>
+    <definition value="Registration for future collections; no content measurement yet."/>
+    <designation>
+      <language value="de"/>
+      <value value="Onboarding / Registrierung"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="primary-care"/>
+    <display value="Primary care"/>
+    <definition value="Collection in primary care before referral to specialised care."/>
+    <designation>
+      <language value="de"/>
+      <value value="Primärversorgung"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="referral"/>
+    <display value="Referral"/>
+    <definition value="After acceptance of a referral to specialised or inpatient care."/>
+    <designation>
+      <language value="de"/>
+      <value value="Überweisung"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="outpatient-appointment"/>
+    <display value="Outpatient appointment"/>
+    <definition value="On the occasion of a booked outpatient appointment."/>
+    <designation>
+      <language value="de"/>
+      <value value="Ambulanter Termin"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="baseline"/>
+    <display value="Baseline / admission"/>
+    <definition value="First measurement of a measurement series: admission, enrolment, start of the survey."/>
+    <designation>
+      <language value="de"/>
+      <value value="Baseline / Aufnahme"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="pre-intervention"/>
+    <display value="Pre-operative / pre-intervention"/>
+    <definition value="Before a planned intervention, e.g. as part of pre-operative assessment."/>
+    <designation>
+      <language value="de"/>
+      <value value="Präoperativ / prä-interventionell"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="post-intervention"/>
+    <display value="Post-operative / post-intervention"/>
+    <definition value="After a confirmed intervention, usually at a defined interval."/>
+    <designation>
+      <language value="de"/>
+      <value value="Postoperativ / post-interventionell"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="discharge"/>
+    <display value="Discharge"/>
+    <definition value="At discharge from inpatient or day-patient treatment."/>
+    <designation>
+      <language value="de"/>
+      <value value="Entlassung"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="follow-up"/>
+    <display value="Follow-up"/>
+    <definition value="Scheduled follow-up at a defined interval to a reference event after the end of the treatment episode."/>
+    <designation>
+      <language value="de"/>
+      <value value="Follow-up"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="clinician-initiated"/>
+    <display value="Clinician-initiated (on demand)"/>
+    <definition value="Requested by a treating professional outside a scheduled time point."/>
+    <designation>
+      <language value="de"/>
+      <value value="Klinikerinitiiert (on demand)"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="patient-initiated"/>
+    <display value="Patient-initiated (on demand)"/>
+    <definition value="Triggered by the patient, e.g. when symptoms worsen."/>
+    <designation>
+      <language value="de"/>
+      <value value="Patienteninitiiert (on demand)"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="screening"/>
+    <display value="Screening"/>
+    <definition value="Routine collection in a non-preselected population to identify conspicuous cases, e.g. PHQ-9 depression screening of all patients at admission."/>
+    <designation>
+      <language value="de"/>
+      <value value="Screening"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="purpose"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="diagnostic"/>
+    <display value="Diagnostic assessment"/>
+    <definition value="Occasion-related assessment on suspicion or symptoms, as part of diagnostic classification or severity grading before a treatment decision."/>
+    <designation>
+      <language value="de"/>
+      <value value="Diagnostik"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="purpose"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="monitoring"/>
+    <display value="Monitoring"/>
+    <definition value="Repeated collection during ongoing treatment for steering or observation, e.g. symptom monitoring during chemotherapy. Unlike follow-up, monitoring takes place within the treatment episode."/>
+    <designation>
+      <language value="de"/>
+      <value value="Monitoring / Verlaufskontrolle"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="purpose"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="study-endpoint"/>
+    <display value="Study endpoint"/>
+    <definition value="Collection to determine a primary, secondary or further endpoint defined in a study protocol; the protocol position names the endpoint."/>
+    <designation>
+      <language value="de"/>
+      <value value="Studienendpunkt"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="purpose"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="None of the triggers in this list applies."/>
+    <designation>
+      <language value="de"/>
+      <value value="Sonstiges"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <definition value="Trigger not known."/>
+    <designation>
+      <language value="de"/>
+      <value value="Unbekannt"/>
+    </designation>
+    <property>
+      <code value="axis"/>
+      <valueString value="event"/>
+    </property>
+  </concept>
+</CodeSystem>
