@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set | *Version*:2027.0.0-ballot.2 |
-| Active as of 2026-11-25 | *Computable Name*:MII_CS_PRO_EQ_5D_ValueSet |
+| Active as of 2026-11-26 | *Computable Name*:MII_CS_PRO_EQ_5D_ValueSet |
 
  
 EuroQol EQ-5D Value Set 
@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS EQ-5D Value Set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

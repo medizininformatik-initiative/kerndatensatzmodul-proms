@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-trigger-event-type | *Version*:2027.0.0-ballot.2 |
-| Draft Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_VS_PRO_Trigger_Event_Type |
+| Draft Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_VS_PRO_Trigger_Event_Type |
 
  
 All concepts of the MII CS PRO Trigger Event Type: the triggering event or purpose of a PRO collection (collection context, HDB-1030). 
@@ -43,7 +43,7 @@ All concepts of the MII CS PRO Trigger Event Type: the triggering event or purpo
   "title" : "MII VS PRO Trigger Event Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

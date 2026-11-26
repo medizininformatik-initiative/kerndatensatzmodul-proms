@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation | *Version*:2027.0.0-ballot.2 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_EX_PRO_Score_Score_Health_Correlation |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_EX_PRO_Score_Score_Health_Correlation |
 
 MII Ex PRO Score Score Health Correlation
 
@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-pro-s
   "name" : "MII_EX_PRO_Score_Score_Health_Correlation",
   "title" : "MII Ex PRO Score Score Health Correlation",
   "status" : "active",
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

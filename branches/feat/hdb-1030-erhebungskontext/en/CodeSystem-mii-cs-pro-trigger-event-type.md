@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type | *Version*:2027.0.0-ballot.2 |
-| Draft as of 2026-11-25 | *Computable Name*:MII_CS_PRO_Trigger_Event_Type |
+| Draft as of 2026-11-26 | *Computable Name*:MII_CS_PRO_Trigger_Event_Type |
 
  
 Which event or purpose in the course of care or of a study triggered the collection of a questionnaire or score (collection context, HDB-1030). Based on the value set PROMs Trigger Event Type of the NHS Wales PROMs Information Standard, extended by concepts for measurement series (baseline, follow-up), collection purpose (screening, diagnostic assessment, monitoring) and study endpoints. The property `axis` marks whether a concept names a triggering event or the purpose of the collection. The mapping to NHS Wales is the ConceptMap mii-cm-pro-trigger-event-type-to-wales. 
@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS PRO Trigger Event Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

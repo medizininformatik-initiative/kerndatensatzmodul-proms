@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore | *Version*:2027.0.0-ballot.2 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore |
 
  
 Profile for PROMIS Cognitive Function Short Form 4a T-Score observations 
@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-p
   "title" : "MII PR PRO PROMIS Cognitive Function SF 4a T-Score",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-trigger-event-type-to-wales | *Version*:2027.0.0-ballot.2 |
-| Draft as of 2026-11-25 | *Computable Name*:MII_CM_PRO_Trigger_Event_Type_To_Wales |
+| Draft as of 2026-11-26 | *Computable Name*:MII_CM_PRO_Trigger_Event_Type_To_Wales |
 
  
 Maps the MII trigger event types to the value set PROMs Trigger Event Type of the NHS Wales PROMs Standard Operating Model (PSOM). Wales knows triggering events only, no purpose concepts and no measurement-series positions; these are unmatched. 
@@ -37,7 +37,7 @@ Maps the MII trigger event types to the value set PROMs Trigger Event Type of th
   "title" : "MII CM PRO Trigger Event Type to NHS Wales PROMs Trigger Event Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-lm-pro | *Version*:2027.0.0-ballot.2 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_LM_PRO |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_LM_PRO |
 
  
 Logisches Modell für die strukturierte Erfassung und Verarbeitung von Patient-Reported Outcomes (PROs) inklusive Fragebögen, Antworten, Scores und Domain-Mappings. 
@@ -78,7 +78,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-pro.c
   "title" : "MII Logical Model Modul PRO - Patient-Reported Outcomes und abgeleitete Metriken",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",
@@ -856,6 +856,111 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-pro.c
       }]
     },
     {
+      "id" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext",
+      "path" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext",
+      "short" : "Erhebungskontext",
+      "definition" : "Zeitpunkt im Behandlungs- oder Studienverlauf, der die Erhebung ausgelöst hat (nicht der Erinnerungszeitraum im Instrument)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "QuestionnaireResponse.extension:collectionContext"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.AusloesendesEreignis",
+      "path" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.AusloesendesEreignis",
+      "short" : "Auslösendes Ereignis",
+      "definition" : "Art des auslösenden Ereignisses (Baseline, Entlassung, Follow-up, prä-/postinterventionell, bei Bedarf, Screening …)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "QuestionnaireResponse.extension:collectionContext.extension:triggerType"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Ereignisdatum",
+      "path" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Ereignisdatum",
+      "short" : "Ereignisdatum",
+      "definition" : "Datum des auslösenden Ereignisses (OP, Entlassung …), nicht das Ausfülldatum",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "QuestionnaireResponse.extension:collectionContext.extension:triggerDate"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Protokoll",
+      "path" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Protokoll",
+      "short" : "Protokoll",
+      "definition" : "Studien- oder Behandlungspfadprotokoll (PlanDefinition), das den Erhebungszeitpunkt festlegt",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "canonical"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "QuestionnaireResponse.extension:collectionContext.extension:protocol"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.ProtokollPosition",
+      "path" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.ProtokollPosition",
+      "short" : "Position im Protokoll",
+      "definition" : "Visite bzw. Zeitpunkt im Protokoll (PlanDefinition.action)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "QuestionnaireResponse.extension:collectionContext.extension:protocolPosition"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Erhebungsplan",
+      "path" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Erhebungsplan",
+      "short" : "Erhebungsplan",
+      "definition" : "Plan, aus dem die Erhebung hervorgeht (CarePlan / ServiceRequest, z. B. Probandenplan)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "QuestionnaireResponse.basedOn"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Behandlungsfall",
+      "path" : "mii-lm-pro.AusgefuellterFragebogen.Erhebungskontext.Behandlungsfall",
+      "short" : "Behandlungsfall",
+      "definition" : "Kontakt bzw. Behandlungsepisode, in der erhoben wurde",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "QuestionnaireResponse.encounter"
+      }]
+    },
+    {
       "id" : "mii-lm-pro.Score",
       "path" : "mii-lm-pro.Score",
       "short" : "Scores (Observation)",
@@ -1254,6 +1359,111 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-pro.c
       "mapping" : [{
         "identity" : "FHIR",
         "map" : "Observation.valueQuantity.value"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext",
+      "path" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext",
+      "short" : "Erhebungskontext",
+      "definition" : "Wie beim zugrundeliegenden ausgefüllten Fragebogen: Zeitpunkt im Behandlungs- oder Studienverlauf, der die Erhebung ausgelöst hat (nicht der Erinnerungszeitraum im Instrument)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension:collectionContext"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.AusloesendesEreignis",
+      "path" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.AusloesendesEreignis",
+      "short" : "Auslösendes Ereignis",
+      "definition" : "Art des auslösenden Ereignisses (Baseline, Entlassung, Follow-up, prä-/postinterventionell, bei Bedarf, Screening …)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension:collectionContext.extension:triggerType"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Ereignisdatum",
+      "path" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Ereignisdatum",
+      "short" : "Ereignisdatum",
+      "definition" : "Datum des auslösenden Ereignisses (OP, Entlassung …), nicht das Ausfülldatum",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension:collectionContext.extension:triggerDate"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Protokoll",
+      "path" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Protokoll",
+      "short" : "Protokoll",
+      "definition" : "Studien- oder Behandlungspfadprotokoll (PlanDefinition), das den Erhebungszeitpunkt festlegt",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "canonical"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension:collectionContext.extension:protocol"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.ProtokollPosition",
+      "path" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.ProtokollPosition",
+      "short" : "Position im Protokoll",
+      "definition" : "Visite bzw. Zeitpunkt im Protokoll (PlanDefinition.action)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension:collectionContext.extension:protocolPosition"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Erhebungsplan",
+      "path" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Erhebungsplan",
+      "short" : "Erhebungsplan",
+      "definition" : "Plan, aus dem die Erhebung hervorgeht (CarePlan / ServiceRequest, z. B. Probandenplan)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.basedOn"
+      }]
+    },
+    {
+      "id" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Behandlungsfall",
+      "path" : "mii-lm-pro.Score.ScoreBerechnet.Erhebungskontext.Behandlungsfall",
+      "short" : "Behandlungsfall",
+      "definition" : "Kontakt bzw. Behandlungsepisode, in der erhoben wurde",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.encounter"
       }]
     },
     {

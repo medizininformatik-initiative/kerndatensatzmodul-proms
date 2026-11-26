@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-collection-context | *Version*:2027.0.0-ballot.2 |
-| Draft as of 2026-11-25 | *Computable Name*:MII_EX_PRO_Collection_Context |
+| Draft as of 2026-11-26 | *Computable Name*:MII_EX_PRO_Collection_Context |
 
 Collection context of a QuestionnaireResponse or score Observation: which point in the course of care or of a study triggered the collection (baseline, discharge, follow-up, pre-/post-intervention, on demand, screening …). Two modes, combinable: (a) routine: triggerType + triggerDate; (b) protocol: protocol + protocolPosition, with index date and target intervals in the study protocol (PlanDefinition) and ResearchSubject.period.start. Filled by the form filler or the ordering system from the launch context or from QuestionnaireResponse.basedOn, never by patient input. A score Observation carries the same value as the QuestionnaireResponse it is derived from. Not to be confused with the recall period reported inside an instrument ("over the last two weeks").
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-pro-collec
   "name" : "MII_EX_PRO_Collection_Context",
   "title" : "MII EX PRO Collection Context",
   "status" : "draft",
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

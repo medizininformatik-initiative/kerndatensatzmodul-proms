@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii | *Version*:2027.0.0-ballot.2 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_BDI_II |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_PRO_Observation_BDI_II |
 
  
 Profile for Beck Depression Inventory II (BDI-II) Total Score Observations 
@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-pro-o
   "title" : "MII PR PRO Observation BDI-II",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-25T08:51:51+00:00",
+  "date" : "2026-11-26T18:28:27+00:00",
   "publisher" : "Medizininformatik-Initiative",
   "contact" : [{
     "name" : "Medizininformatik-Initiative",

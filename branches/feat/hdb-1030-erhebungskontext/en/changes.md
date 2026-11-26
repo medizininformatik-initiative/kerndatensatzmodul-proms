@@ -11,6 +11,8 @@ This page documents the changes between versions of the MII PRO module.
 
 **Collection context (HDB-1030)**: new extension [Collection Context](StructureDefinition-mii-ex-pro-collection-context.md) (`mii-ex-pro-collection-context`) on QuestionnaireResponse and score Observation with `triggerType`, `triggerDate`, `protocol` (PlanDefinition) and `protocolPosition`; invariant `mii-pro-cc-1` (trigger type or protocol). New CodeSystem/ValueSet `mii-cs-pro-trigger-event-type` / `mii-vs-pro-trigger-event-type` (17 concepts, English display, German designation, property `axis` event/purpose), based on the NHS Wales PROMs Trigger Event Type, with ConceptMap `mii-cm-pro-trigger-event-type-to-wales`. Profiles `MII_PR_PRO_QuestionnaireResponse` and `MII_PR_PRO_Score_Instance`: extension `collectionContext` 0..1 MS, `basedOn` and `encounter` must-support. PHQ-9 examples form a measurement series (baseline, discharge, 3-month follow-up); new section [Workflows › Collection Context](workflows.md#collection-context).
 
+**Logical Model: collection context** (HDB-1030): `AusgefuellterFragebogen.Erhebungskontext` and `Score.ScoreBerechnet.Erhebungskontext` (trigger event, event date, protocol, protocol position, collection plan, encounter) with mappings to the collection-context extension, `basedOn` and `encounter`; shown in the complete UML diagram.
+
 ### 2027.0.0-ballot.2 — Ballot reconciliation 2 (2026-11-10)
 
 Second ballot iteration of the 2027 line: reconciles the ballot comments on 2027.0.0-ballot.1 (HDB-1007, HDB-1008, HDB-1009) and carries the follow-up fixes of the same cycle. Content changes relative to 2027.0.0-ballot.1:
