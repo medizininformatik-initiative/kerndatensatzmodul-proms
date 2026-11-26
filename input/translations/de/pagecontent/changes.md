@@ -2,7 +2,7 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 ### Unveröffentlicht (dev)
 
-_Noch nichts._
+**Logical Model an die Profile angeglichen** (`mii-lm-pro`, Bead ntr): neue Elemente für die Ableitung des Fragebogens (`FragebogenAbgeleitetVon` → `Questionnaire.derivedFrom`) und seine Fähigkeiten (`FragebogenFaehigkeiten` → capabilities-Extension), die Sprache des ausgefüllten Fragebogens (`Sprache` → `QuestionnaireResponse.language`), den präsentierten Wortlaut von Item und Antwort (`Fragetext`, `AntwortAnzeigetext` → `item.text`, `answer.valueCoding.display`, jeweils mit Übersetzungen) sowie die Score-Definition als Canonical (`ScoreBerechnet.ScoreVorlage` → `Observation.extension:instantiatesCanonical`, jetzt 0..1 wie im Profil). Das Scoring-Gewicht ist auf `itemWeight` gemappt. Das vollständige UML-Diagramm zeigt die neuen Elemente und trägt `' lm:`-Verweise auf das Logical Model; `scripts/check-lm-uml.py` meldet Abweichungen zwischen beiden.
 
 ### 2027.0.0-ballot.2 — Ballot-Reconciliation 2 (2026-11-10)
 

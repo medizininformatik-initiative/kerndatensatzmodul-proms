@@ -32,6 +32,7 @@ list — not a glob, because this directory now holds unrelated helpers too.
 | Script | What it does | Run by |
 | --- | --- | --- |
 | `first-run-bootstrap.sh` | One-time setup of a created module: branches, protection, removal of template-only files | a module author, once |
+| `check-lm-uml.py` | Compares `input/images/Logical_Model_UML_complete.pu` with the Logical Model `mii-lm-pro` via the `' lm:` references under each attribute; reports LM elements missing from the diagram, dead references and unreferenced attributes (run after SUSHI) | manual |
 | `convention-check.mjs` | Asserts the MII metadata contract (id/canonical/name/packageId, pinned versions) and that OPTIONAL (0..1) menu pages are decided before a release (M9, `docs/optional-pages.md`) | `convention-check.yml` |
 | `language-model-check.sh` | Fails the build when prose contradicts the English-default / German-translation language model | `convention-check.yml` |
 | `check-updates.mjs` | Reports drift between the pinned toolchain and what upstream released | `dependency-check.yml` |

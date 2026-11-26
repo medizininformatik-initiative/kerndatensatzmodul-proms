@@ -201,6 +201,158 @@
         ]
       },
       {
+        "id": "mii-lm-pro.Fragebogen.FragebogenAbgeleitetVon",
+        "path": "mii-lm-pro.Fragebogen.FragebogenAbgeleitetVon",
+        "short": "Abgeleitet von",
+        "definition": "Fragebogen, von dem dieser abgeleitet ist (Kurzform, Subset, lizenzierte Fassung)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.derivedFrom"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten",
+        "path": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten",
+        "short": "Fähigkeiten",
+        "definition": "Was ein System mit dem Fragebogen tun kann (Anzeige, Erfassung, Scoring …)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.extension:capabilities"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Anzeigbar",
+        "path": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Anzeigbar",
+        "short": "Anzeigbar",
+        "definition": "Itemtexte dürfen angezeigt werden (nicht metadata-only)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.extension:capabilities.extension:displayable"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Erfassbar",
+        "path": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Erfassbar",
+        "short": "Erfassbar",
+        "definition": "Antworten können mit dem Fragebogen erfasst werden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.extension:capabilities.extension:collectable"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Vorbefuellbar",
+        "path": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Vorbefuellbar",
+        "short": "Vorbefüllbar",
+        "definition": "Antworten können aus vorhandenen Daten vorbefüllt werden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.extension:capabilities.extension:populatable"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Extrahierbar",
+        "path": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Extrahierbar",
+        "short": "Extrahierbar",
+        "definition": "Antworten oder Scores können als Observation extrahiert werden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.extension:capabilities.extension:extractable"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Berechenbar",
+        "path": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.Berechenbar",
+        "short": "Berechenbar",
+        "definition": "Scores können aus den Antworten berechnet werden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.extension:capabilities.extension:calculatable"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.DomaenenZugeordnet",
+        "path": "mii-lm-pro.Fragebogen.FragebogenFaehigkeiten.DomaenenZugeordnet",
+        "short": "Domänen zugeordnet",
+        "definition": "Scores sind Gesundheitsdomänen zugeordnet",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.extension:capabilities.extension:domainAligned"
+          }
+        ]
+      },
+      {
         "id": "mii-lm-pro.Fragebogen.Fragen",
         "path": "mii-lm-pro.Fragebogen.Fragen",
         "short": "Fragen",
@@ -670,6 +822,12 @@
           {
             "code": "decimal"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Questionnaire.item.answerOption.extension:itemWeight | CodeSystem.concept.property:itemWeight"
+          }
         ]
       },
       {
@@ -757,6 +915,25 @@
         ]
       },
       {
+        "id": "mii-lm-pro.AusgefuellterFragebogen.Sprache",
+        "path": "mii-lm-pro.AusgefuellterFragebogen.Sprache",
+        "short": "Sprache",
+        "definition": "Sprache, in der der Fragebogen präsentiert und beantwortet wurde (BCP 47)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "QuestionnaireResponse.language"
+          }
+        ]
+      },
+      {
         "id": "mii-lm-pro.AusgefuellterFragebogen.Antwort",
         "path": "mii-lm-pro.AusgefuellterFragebogen.Antwort",
         "short": "Antworten",
@@ -804,6 +981,44 @@
           {
             "identity": "FHIR",
             "map": "QuestionnaireResponse.item.linkId"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.AusgefuellterFragebogen.Antwort.Fragetext",
+        "path": "mii-lm-pro.AusgefuellterFragebogen.Antwort.Fragetext",
+        "short": "Fragetext",
+        "definition": "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde (mit Übersetzungen)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "QuestionnaireResponse.item.text (+ extension:translation)"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-pro.AusgefuellterFragebogen.Antwort.AntwortAnzeigetext",
+        "path": "mii-lm-pro.AusgefuellterFragebogen.Antwort.AntwortAnzeigetext",
+        "short": "Anzeigetext der Antwort",
+        "definition": "Wortlaut der gewählten Antwortoption (mit Übersetzungen)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "QuestionnaireResponse.item.answer.valueCoding.display (+ extension:translation)"
           }
         ]
       },
@@ -1346,13 +1561,19 @@
       {
         "id": "mii-lm-pro.Score.ScoreBerechnet.ScoreVorlage",
         "path": "mii-lm-pro.Score.ScoreBerechnet.ScoreVorlage",
-        "short": "Score-Template",
-        "definition": "Verweis auf Score-Definition",
-        "min": 1,
+        "short": "Score-Definition",
+        "definition": "Canonical der ObservationDefinition, nach der der Score berechnet wurde",
+        "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "canonical"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.extension:instantiatesCanonical"
           }
         ]
       },
