@@ -110,6 +110,22 @@ package Ausgefüllte_Fragebögen {
 
     }
     Ausgefüllter_Fragebogen::Antworten "1..1" o-right- "1..*" Antwort_erfasst
+
+    object Erhebungskontext {
+        Auslösendes_Ereignis: code
+        ' lm: AusgefuellterFragebogen.Erhebungskontext.AusloesendesEreignis, Score.ScoreBerechnet.Erhebungskontext.AusloesendesEreignis
+        Ereignisdatum: date
+        ' lm: AusgefuellterFragebogen.Erhebungskontext.Ereignisdatum, Score.ScoreBerechnet.Erhebungskontext.Ereignisdatum
+        Protokoll: canonical(PlanDefinition)
+        ' lm: AusgefuellterFragebogen.Erhebungskontext.Protokoll, Score.ScoreBerechnet.Erhebungskontext.Protokoll
+        Protokoll_Position: Coding
+        ' lm: AusgefuellterFragebogen.Erhebungskontext.ProtokollPosition, Score.ScoreBerechnet.Erhebungskontext.ProtokollPosition
+        Erhebungsplan: Reference(CarePlan, ServiceRequest)
+        ' lm: AusgefuellterFragebogen.Erhebungskontext.Erhebungsplan, Score.ScoreBerechnet.Erhebungskontext.Erhebungsplan
+        Behandlungsfall: Reference(Encounter)
+        ' lm: AusgefuellterFragebogen.Erhebungskontext.Behandlungsfall, Score.ScoreBerechnet.Erhebungskontext.Behandlungsfall
+    }
+    Ausgefüllter_Fragebogen "0..1" o-- Erhebungskontext
 }
 package Scores {
     object Score_Vorlage {
@@ -218,5 +234,7 @@ Domäne_Skala "0..*" <-right-> "2..2" Domäne_Skala_Score_Mapping
 Domäne_Skala "1..1" o-right- "..*" Domäne_Skala_Score_Berechnung
 Domäne_Skala_Score_berechnet::Domäne_Skala_Score_Berechnung "0..1" --> "0..1"  Domäne_Skala_Score_Berechnung
 }
+
+Score_berechnet "0..1" o-- Erhebungskontext
 
 @enduml
