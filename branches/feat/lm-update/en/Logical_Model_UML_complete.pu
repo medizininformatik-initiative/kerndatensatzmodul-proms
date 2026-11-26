@@ -1,0 +1,344 @@
+@startuml MII_PRO_Informationsmodell_Complete
+skinparam linetype ortho
+skinparam linetype polyline
+left to right direction
+
+' Abgleich mit dem Logical Model mii-lm-pro: jede Zeile "' lm: <pfad>" direkt
+' unter einem Attribut nennt die LM-Elemente, die es abbildet (Skill mii-lm-uml).
+' Pruefen: sushi . && python3 scripts/check-lm-uml.py
+' lm-ignore: AusgefuellterFragebogen.Antwort.AntwortVorlage.*, Domaene.DomaeneBeschreibung
+
+package Fragebogen_Vorlage {
+    object Fragebogen {
+        FragebogenID: string
+        ' lm: Fragebogen.FragebogenID
+        Fragebogen_Name_vollständig: i18nString
+        ' lm: Fragebogen.FragebogenNameVollstaendig
+        Fragebogen_Name_Abkürzung: i18nString
+        ' lm: Fragebogen.FragebogenNameAbkuerzung
+        Fragebogen_Version: string
+        ' lm: Fragebogen.FragebogenVersion
+        FragebogenID_intern: string
+        ' lm: Fragebogen.FragebogenIDIntern
+        Fragebogen_Standard_ID: string
+        ' lm: Fragebogen.FragebogenStandardID
+        Fragebogen_Standard_System: string
+        ' lm: Fragebogen.FragebogenStandardSystem
+        Fragebogen_Standard_Version: string
+        ' lm: Fragebogen.FragebogenStandardVersion
+        Abgeleitet_von: canonical(Fragebogen)
+        ' lm: Fragebogen.FragebogenAbgeleitetVon
+        Fähigkeiten: Fragebogen_Fähigkeiten
+        ' lm: Fragebogen.FragebogenFaehigkeiten
+        Fragen: Frage
+        ' lm: Fragebogen.Fragen
+        Author: string
+        ' lm: Fragebogen.Autoren.*
+
+        Copyright: string
+        ' lm: Fragebogen.Copyright
+
+
+    }
+    object Fragebogen_Fähigkeiten {
+        anzeigbar: boolean
+        ' lm: Fragebogen.FragebogenFaehigkeiten.Anzeigbar
+        erfassbar: boolean
+        ' lm: Fragebogen.FragebogenFaehigkeiten.Erfassbar
+        vorbefüllbar: boolean
+        ' lm: Fragebogen.FragebogenFaehigkeiten.Vorbefuellbar
+        extrahierbar: boolean
+        ' lm: Fragebogen.FragebogenFaehigkeiten.Extrahierbar
+        berechenbar: boolean
+        ' lm: Fragebogen.FragebogenFaehigkeiten.Berechenbar
+        domänen_zugeordnet: boolean
+        ' lm: Fragebogen.FragebogenFaehigkeiten.DomaenenZugeordnet
+    }
+    Fragebogen::Fähigkeiten "1..1" o-up- "1..1" Fragebogen_Fähigkeiten
+
+    object Frage{
+
+        FragenID_intern: string
+        ' lm: Fragebogen.Fragen.FragenIDIntern
+        FragenID_Standard_ID: string
+        ' lm: Fragebogen.Fragen.FragenIDStandardID
+        FragenID_Standard_System: string
+        ' lm: Fragebogen.Fragen.FragenIDStandardSystem
+        FragenID_Standard_Version: string
+        ' lm: Fragebogen.Fragen.FragenIDStandardVersion
+        Fragetext: i18nString
+        ' lm: Fragebogen.Fragen.Fragetext
+        Frage_Ausfüllhinweise: i18nString
+        ' lm: Fragebogen.Fragen.FragetextAusfuellhinweise
+        Anzeigemodalität: code
+        ' lm: Fragebogen.Fragen.Anzeigemodalitaet
+        Frage_ausgefüllt_wenn: Expression
+        ' lm: Fragebogen.Fragen.FragetextAusgefuelltWenn
+        Antwort_Vorlage: Antwort_Vorlage
+        ' lm: Fragebogen.Fragen.AntwortVorlage
+
+    }
+
+
+
+    Fragebogen::Frage "1..1" o-down- "1..*" Frage
+
+    object Antwort_Vorlage {
+        Antworttyp: code
+        ' lm: Fragebogen.Fragen.AntwortVorlage.Antworttyp
+    }
+    Frage::Antwort_Vorlage "1..1"  o-down- "1..1" Antwort_Vorlage
+
+    object Antwort_Auswahl {
+        Mehrfachauswahl: boolean
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.Mehrfachauswahl
+        Antwort_Standard_ValueSet: Reference
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortStandardValueSetReference
+        Antwort_Auswahl_Option: Antwort_Auswahl_Option
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption
+    }
+
+    object Antwort_String {
+        Antwort_String_minLength: Integer
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortString.AntwortStringMinLength
+        Antwort_String_maxLength: Integer
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortString.AntwortStringMaxLength
+    }
+    Antwort_Vorlage <|-down- Antwort_String
+
+
+    object Antwort_NumerischerWert {
+        Antwort_NumerischerWert_kleinster: Number
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortNumerischerWert.AntwortNumerischerWertKleinster
+        Antwort_NumerischerWert_groesster: Number
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortNumerischerWert.AntwortNumerischerWertGroesster
+        Antwort_NumerischerWert_Einheit: code
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortNumerischerWert.AntwortNumerischerWertEinheit
+        Antwort_NumerischerWert_Praezision: Integer
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortNumerischerWert.AntwortNumerischerWertPraezision
+
+    }
+    Antwort_Vorlage <|-down- Antwort_NumerischerWert
+
+
+    object Antwort_Datum {
+        minDatum: date
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortDatum.minDatum
+        Datumsgenauigkeit: code
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortDatum.Datumsgenauigkeit
+    }
+    object Antwort_Uhrzeit
+    ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortUhrzeit
+    Antwort_Vorlage <|-left- Antwort_Uhrzeit
+
+    Antwort_Vorlage <|-down- Antwort_Datum
+
+    object Antwort_Auswahl_Option {
+        Antwort_Option_Text: i18nString
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption.AntwortOptionText
+        Antwort_Option_Exklusive: boolean
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption.AntwortOptionExklusive
+        Antwort_Auswahl_Option_Code_intern: code
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption.AntwortOptionCodeIntern
+        Antwort_Auswahl_Option_Standard_Code: code
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption.AntwortOptionStandardCode
+        Antwort_Auswahl_Option_Standard_System: string
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption.AntwortOptionStandardSystem
+        Antwort_Auswahl_Option_Standard_System_Version: string
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption.AntwortOptionStandardSystemVersion
+        Antwort_Option_Gewicht: decimal
+        ' lm: Fragebogen.Fragen.AntwortVorlage.AntwortAuswahl.AntwortAuswahlOption.AntwortOptionGewicht
+
+    }
+
+    Antwort_Vorlage  <|-down-  Antwort_Auswahl
+    Antwort_Auswahl::Antwort_Auswahl_Option "1..*" o-down- "1..*" Antwort_Auswahl_Option
+
+
+}
+package Ausgefüllte_Fragebögen {
+    object Ausgefüllter_Fragebogen {
+        Fragebogen: Fragebogen
+        ' lm: AusgefuellterFragebogen.FragebogenIDIntern
+        Sprache: code
+        ' lm: AusgefuellterFragebogen.Sprache
+        Erfassungsdatum: date
+        ' lm: AusgefuellterFragebogen.Antwort.Erfassungsdatum
+        Ausfuellende_Person: identifier
+        ' lm: -
+        Ausfuellende_Person_Rolle: code
+        ' lm: -
+        Antworten: Antwort_erfasst
+        ' lm: AusgefuellterFragebogen.Antwort
+    }
+    object Antwort_erfasst {
+        FragenID_intern: string
+        ' lm: AusgefuellterFragebogen.Antwort.FragenIntern
+        Fragetext: i18nString
+        ' lm: AusgefuellterFragebogen.Antwort.Fragetext
+        Antwort: code, number, string, date
+        ' lm: AusgefuellterFragebogen.Antwort.AntwortErfasst, AusgefuellterFragebogen.Antwort.AntwortCode, AusgefuellterFragebogen.Antwort.AntwortNummer, AusgefuellterFragebogen.Antwort.AntwortString, AusgefuellterFragebogen.Antwort.AntwortDatum
+        Antwort_Anzeigetext: i18nString
+        ' lm: AusgefuellterFragebogen.Antwort.AntwortAnzeigetext
+
+    }
+    Ausgefüllter_Fragebogen::Antworten "1..1" o-right- "1..*" Antwort_erfasst
+}
+package Scores {
+    object Score_Vorlage {
+        ScoreVorlagenID: string
+        ' lm: Score.ScoreVorlage.ScoreVorlageID
+        ScoreName: i18nString
+        ' lm: Score.ScoreVorlage.ScoreName
+        Scoreberechnung: Score_Berechnung
+        ' lm: Score.ScoreVorlage.Scoreberechnung
+        Domäne: Domäne
+        ' lm: Score.ScoreVorlage.Domainenskala.DomainID, Score.ScoreVorlage.Domainenskala.DomainCode, Score.ScoreVorlage.Domainenskala.DomainTitel, Score.ScoreVorlage.Domainenskala.DomainBeschreibung
+        Domänenskala: Domänenskala
+        ' lm: Score.ScoreVorlage.Domainenskala.DomainSkalen.*
+        Score_Mapping: Score_Mapping
+        ' lm: Score.ScoreVorlage.ScoreMapping
+    }
+    object Score_berechnet {
+        ScoreID: string
+        ' lm: Score.ScoreBerechnet.ScoreID
+        Score_Vorlage: canonical(Score_Vorlage)
+        ' lm: Score.ScoreBerechnet.ScoreVorlage
+        Score_Berechnung: Score_Berechnung
+        ' lm: Score.ScoreBerechnet.ScoreBerechnung
+        Berechnungsdatum: date
+        ' lm: Score.ScoreBerechnet.Berechnungsdatum
+        Score_Interpretation: code
+        ' lm: Score.ScoreBerechnet.ScoreInterpretation
+        berechneter_Scorewert: (integer/float/string)
+        ' lm: Score.ScoreBerechnet.BerechneterScorewert
+    }
+
+    object Score_Berechnung {
+        ScoreBerechnungsID: string
+        ' lm: Score.ScoreVorlage.Scoreberechnung.ScoreBerechnungsID
+        Score_Datentyp: code
+        ' lm: Score.ScoreVorlage.Scoreberechnung.ScoreDatentyp
+        Score_Berechnungs_Algorithmus: Expression
+        ' lm: Score.ScoreVorlage.Scoreberechnung.ScoreBerechnungsAlgorithmus
+        Score_Quelle : URI
+        ' lm: Score.ScoreVorlage.Scoreberechnung.ScoreQuelle
+
+    }
+    Score_Vorlage::Scoreberechnung "1..*" o-- "1..*" Score_Berechnung
+    Score_Vorlage "1..1" <-- "0..*" Score_berechnet::Score_Vorlage
+    Score_berechnet::Score_Berechnung "1..1" --> "0..*" Score_Berechnung
+
+
+    object Score_Fragebogen_Score {
+        Fragebogen_Vorlage: Fragebogen
+        ' lm: Score.ScoreFragebogenScore.FragebogenVorlage
+        Ausgefüllter_Fragebogen: Ausgefüllter_Fragebogen
+        ' lm: Score.ScoreFragebogenScore.AusgefuellterFragebogen
+    }
+    note bottom of Score_Fragebogen_Score
+        Scoreberechnung mit Input ausgefüllter Fragebogen.
+        Definition eines Scores, der aus einem Fragebogen generiert wurde
+    end note
+      Score_Berechnung <|-- Score_Fragebogen_Score
+
+    object Score_Itembasierter_Score {
+        Ausgefüllte_Antworten: Antwort_erfasst
+        ' lm: Score.ScoreItembasierterScore.AusgefuellteAntworten
+    }
+    Score_Berechnung <|-- Score_Itembasierter_Score
+
+    note bottom of Score_Itembasierter_Score
+        Scoreberechnung mit Input einzelner Fragen.
+        Definition eines Scores, der aus mehreren Fragebögen / Itemdatenbanken generiert wurde
+    end note
+
+    object Score_Mapping {
+        Source_ScoreID: string
+        ' lm: Score.ScoreVorlage.ScoreMapping.SourceScoreID
+        Target_ScoreID: string
+        ' lm: Score.ScoreVorlage.ScoreMapping.TargetScoreID
+        Mapping: Scorewert_Mapping
+        ' lm: Score.ScoreVorlage.ScoreMapping.MappingScorewert
+    }
+    Score_Mapping::Source_ScoreID -left--> Score_Vorlage::ScoreVorlagenID
+
+    object Scorewert_Mapping {
+        SourceValue: Quantity
+        ' lm: Score.ScoreVorlage.ScoreMapping.MappingScorewert.SourceValue
+        TargetValue: Quantity
+        ' lm: Score.ScoreVorlage.ScoreMapping.MappingScorewert.TargetValue
+        Mapping_Expression: Expression
+        ' lm: Score.ScoreVorlage.ScoreMapping.MappingScorewert.MappingExpression
+    }
+    Score_Mapping "1..1" o-- "1..*" Scorewert_Mapping
+}
+package Domäne {
+    object Domäne {
+        Domäne_ID: string
+        ' lm: Domaene.DomaeneID
+        Domäne_Code: code
+        ' lm: Domaene.DomaeneCode
+        Domäne_Titel: i18nString
+        ' lm: Domaene.DomaeneTitel
+        Domäne_ParentDomäne: Domäne
+        ' lm: -
+        Domänen_Skalen: Domänen_Skala
+        ' lm: Domaene.DomaeneSkaliert
+    }
+    object Domäne_Skala {
+        Domänen_Skalen_ID: string
+        ' lm: Domaene.DomaeneSkaliert.DomaenenSkalenID
+        Minimum: integer / float
+        ' lm: Domaene.DomaeneSkaliert.Minimum
+        Maximum: integer / float
+        ' lm: Domaene.DomaeneSkaliert.Maximum
+        Skalenart: code
+        ' lm: Domaene.DomaeneSkaliert.Skalenwert
+        Skalenrichtung: code
+        ' lm: -
+        Domänen_Skala_Score_Berechung: Domänen_Skala_Score_Berechnung
+        ' lm: -
+        Referenzpopulation/Gültigkeit: string
+        ' lm: Domaene.Referenzpopulation.*
+    }
+
+    object Domäne_Skala_Score_berechnet {
+        ScoreID: string
+        ' lm: -
+        Score_Vorlage: Score_Vorlage
+        ' lm: -
+        Domäne_Skala_Score_Berechnung: Domäne_Skala_Score_Berechnung
+        ' lm: -
+        DomänenScore_Mapping: DomänenScore_Mapping
+        ' lm: -
+        Berechnungsdatum: date
+        ' lm: -
+        berechneter_Scorewert: (integer/float/string)
+        ' lm: -
+    }
+    object Domäne_Skala_Score_Berechnung {
+        ScoreBerechnungsID: string
+        ' lm: -
+        Score_Datentyp: (integer/float/string)
+        ' lm: -
+        Score_Berechnungs_Algoritmus: Expression
+        ' lm: -
+    }
+
+    object Domäne_Skala_Score_Mapping {
+        Source_Domänen_Skalen_ID: string
+        ' lm: -
+        Target_Domänen_Skalen_ID: string
+        ' lm: -
+        Mapping: Scorewert_Mapping
+        ' lm: -
+    }
+Domäne "1..1" -down- "0..*" Domäne_Skala
+Domäne_Skala "1..1" <-right- "0..*" Domäne_Skala_Score_berechnet
+Domäne_Skala "0..*" <-right-> "2..2" Domäne_Skala_Score_Mapping
+Domäne_Skala "1..1" o-right- "..*" Domäne_Skala_Score_Berechnung
+Domäne_Skala_Score_berechnet::Domäne_Skala_Score_Berechnung "0..1" --> "0..1"  Domäne_Skala_Score_Berechnung
+}
+
+@enduml
