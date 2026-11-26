@@ -170,6 +170,55 @@ Auf diese Weise kann eine Instrument-unabhängige Auswertung und ein domänenspe
 
 ---
 
+### Erhebungskontext {#collection-context}
+
+Eine QuestionnaireResponse oder Score-Observation sagt für sich allein nicht,
+*zu welchem Zeitpunkt im Versorgungs- oder Studienverlauf* sie erhoben wurde.
+Veränderungsscores, MCID/MID, Verlaufsdarstellungen und Registerauswertungen
+brauchen genau das: Der PHQ-9 bei Aufnahme, bei Entlassung und drei Monate
+später bildet nur dann eine Messreihe, wenn jede Instanz ihre Position trägt.
+Die Extension
+[Collection Context](StructureDefinition-mii-ex-pro-collection-context.html)
+(Ballot-Kommentar HDB-1030) hält sie an der QuestionnaireResponse und an jeder
+daraus abgeleiteten Score-Observation fest.
+
+| Sub-Extension | Inhalt | Modus |
+|---|---|---|
+| `triggerType` | [Trigger-Ereignistyp](ValueSet-mii-vs-pro-trigger-event-type.html): Baseline, prä-/post-interventionell, Entlassung, Follow-up, kliniker- oder patienteninitiiert, Screening, Diagnostik, Monitoring, Studienendpunkt … | Routine |
+| `triggerDate` | Datum des auslösenden Ereignisses (OP, Entlassung), **nicht** das Ausfülldatum; Follow-ups beziehen sich auf das Referenzereignis | Routine |
+| `protocol` | Canonical des Studien- oder Pfadprotokolls (PlanDefinition) | Protokoll |
+| `protocolPosition` | Position im Protokoll, z. B. Visitencode `FU-3M` | Protokoll |
+
+Mindestens `triggerType` oder `protocol` ist Pflicht (Invariante `mii-pro-cc-1`);
+beide Modi sind kombinierbar, etwa wenn die Entlassung zugleich Referenzereignis
+einer Studie ist.
+
+Regeln:
+
+* Der Formular-Filler oder das anfordernde System setzt den Kontext aus dem
+  Launch-Context bzw. aus `QuestionnaireResponse.basedOn` (CarePlan /
+  ServiceRequest), nie die Patientin oder der Patient. Gemeint ist nicht das
+  Zeitfenster im Instrument („in den letzten zwei Wochen").
+* Score-Observations übernehmen den Wert der QuestionnaireResponse, aus der sie
+  abgeleitet sind (`derivedFrom`); eine Messreihe lässt sich so allein über
+  Observations abfragen.
+* `encounter` bindet die Erhebung an die Behandlungsepisode, `basedOn` an den
+  Erhebungsplan; beide sind in beiden Profilen must-support.
+* Eine Messreihe ist Person + Score-Code + Erhebungskontext. Die
+  [PHQ-9-Beispiele](Observation-mii-exa-pro-phq-9-observation.html) zeigen
+  Baseline, [Entlassung](Observation-mii-exa-pro-phq-9-observation-discharge.html)
+  und [3-Monats-Follow-up](Observation-mii-exa-pro-phq-9-observation-follow-up-3m.html).
+
+Die Trigger-Ereignistypen erweitern den NHS Wales PROMs Trigger Event Type um
+Messreihenpositionen, Zweck-Konzepte und Studienendpunkte; die Property `axis`
+unterscheidet Ereignis und Zweck. Die
+[ConceptMap](ConceptMap-mii-cm-pro-trigger-event-type-to-wales.html) bildet auf
+Wales ab. Ein vollständig ausmodelliertes Studienbeispiel (Protokoll als
+PlanDefinition, Probandenplan als CarePlan) liegt im Repository unter
+`docs/discussion/hdb-1030-erhebungskontext/`.
+
+---
+
 ### Implementierungsmuster
 
 #### Calculated Expressions

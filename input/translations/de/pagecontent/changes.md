@@ -2,7 +2,9 @@ Diese Seite dokumentiert die Änderungen zwischen den Versionen des MII PRO-Modu
 
 ### Unveröffentlicht (dev)
 
-_Noch nichts._
+**Erhebungskontext (HDB-1030)**: neue Extension [Collection Context](StructureDefinition-mii-ex-pro-collection-context.html) (`mii-ex-pro-collection-context`) an QuestionnaireResponse und Score-Observation mit `triggerType`, `triggerDate`, `protocol` (PlanDefinition) und `protocolPosition`; Invariante `mii-pro-cc-1` (Trigger-Typ oder Protokoll). Neues CodeSystem/ValueSet `mii-cs-pro-trigger-event-type` / `mii-vs-pro-trigger-event-type` (17 Konzepte, englisches Display, deutsche Designation, Property `axis` Ereignis/Zweck), angelehnt an den NHS Wales PROMs Trigger Event Type, mit ConceptMap `mii-cm-pro-trigger-event-type-to-wales`. Profile `MII_PR_PRO_QuestionnaireResponse` und `MII_PR_PRO_Score_Instance`: Extension `collectionContext` 0..1 MS, `basedOn` und `encounter` must-support. Die PHQ-9-Beispiele bilden eine Messreihe (Baseline, Entlassung, 3-Monats-Follow-up); neuer Abschnitt [Workflows › Erhebungskontext](workflows.html#collection-context).
+
+**Logical Model: Erhebungskontext** (HDB-1030): `AusgefuellterFragebogen.Erhebungskontext` und `Score.ScoreBerechnet.Erhebungskontext` (auslösendes Ereignis, Ereignisdatum, Protokoll, Position im Protokoll, Erhebungsplan, Behandlungsfall) mit Mapping auf die Collection-Context-Extension, `basedOn` und `encounter`; im vollständigen UML-Diagramm ergänzt.
 
 ### 2027.0.0-ballot.2 — Ballot-Reconciliation 2 (2026-11-10)
 

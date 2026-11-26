@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_PRO_Trigger_Event_Type",
+  "id": "mii-vs-pro-trigger-event-type",
+  "title": "MII VS PRO Trigger Event Type",
+  "description": "All concepts of the MII CS PRO Trigger Event Type: the triggering event or purpose of a PRO collection (collection context, HDB-1030).",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-trigger-event-type",
+  "version": "2027.0.0-ballot.2",
+  "experimental": false,
+  "language": "en",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type"
+      }
+    ]
+  }
+}

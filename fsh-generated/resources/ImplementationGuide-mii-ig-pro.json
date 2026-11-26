@@ -646,6 +646,14 @@
       },
       {
         "reference": {
+          "reference": "ConceptMap/mii-cm-pro-trigger-event-type-to-wales"
+        },
+        "name": "MII CM PRO Trigger Event Type to NHS Wales PROMs Trigger Event Type",
+        "description": "Maps the MII trigger event types to the value set PROMs Trigger Event Type of the NHS Wales PROMs Standard Operating Model (PSOM). Wales knows triggering events only, no purpose concepts and no measurement-series positions; these are unmatched.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/mii-cps-pro-capabilitystatement"
         },
         "name": "MII CPS PRO CapabilityStatement",
@@ -750,10 +758,26 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-pro-trigger-event-type"
+        },
+        "name": "MII CS PRO Trigger Event Type",
+        "description": "Which event or purpose in the course of care or of a study triggered the collection of a questionnaire or score (collection context, HDB-1030). Based on the value set PROMs Trigger Event Type of the NHS Wales PROMs Information Standard, extended by concepts for measurement series (baseline, follow-up), collection purpose (screening, diagnostic assessment, monitoring) and study endpoints. The property `axis` marks whether a concept names a triggering event or the purpose of the collection. The mapping to NHS Wales is the ConceptMap mii-cm-pro-trigger-event-type-to-wales.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/mii-cs-pro-whodas-12"
         },
         "name": "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
         "description": "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-pro-collection-context"
+        },
+        "name": "MII EX PRO Collection Context",
+        "description": "Collection context of a QuestionnaireResponse or score Observation: which point in the course of care or of a study triggered the collection (baseline, discharge, follow-up, pre-/post-intervention, on demand, screening …). Two modes, combinable: (a) routine: triggerType + triggerDate; (b) protocol: protocol + protocolPosition, with index date and target intervals in the study protocol (PlanDefinition) and ResearchSubject.period.start. Filled by the form filler or the ordering system from the launch context or from QuestionnaireResponse.basedOn, never by patient input. A score Observation carries the same value as the QuestionnaireResponse it is derived from. Not to be confused with the recall period reported inside an instrument (\"over the last two weeks\").",
         "exampleBoolean": false
       },
       {
@@ -1734,6 +1758,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-pro-trigger-event-type"
+        },
+        "name": "MII VS PRO Trigger Event Type",
+        "description": "All concepts of the MII CS PRO Trigger Event Type: the triggering event or purpose of a PRO collection (collection context, HDB-1030).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-pro-whodas-12-answer-list"
         },
         "name": "MII VS PRO WHODAS 2.0 12-Item Answer List",
@@ -1837,6 +1869,22 @@
           "reference": "Observation/mii-exa-pro-phq-9-observation"
         },
         "name": "PHQ-9 Observation Example",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-phq-9-observation-follow-up-3m"
+        },
+        "name": "PHQ-9 Observation Example – 3-Month Follow-up",
+        "description": "Third point of a PHQ-9 measurement series: total score three months after discharge (collection context: follow-up; triggerDate = discharge date as reference event).",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-pro-phq-9-observation-discharge"
+        },
+        "name": "PHQ-9 Observation Example – Discharge",
+        "description": "Second point of a PHQ-9 measurement series: total score at discharge (collection context: discharge).",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9"
       },
       {

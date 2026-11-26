@@ -11,7 +11,7 @@ This page lists the FHIR extensions defined by the **PRO** module
 base resources and profiles cannot express; the profiles that use them are on
 the [Profiles](profiles.html) page.
 
-The module defines two extensions:
+The module defines three extensions:
 
 * **[Questionnaire Capabilities](StructureDefinition-mii-ex-pro-questionnaire-capabilities.html)**
   — declares which capability combination a questionnaire variant serves
@@ -21,3 +21,9 @@ The module defines two extensions:
 * **[Score Health Correlation](StructureDefinition-mii-ex-pro-score-score-health-correlation.html)**
   — links a score definition to the [health domains](domains.html) it
   measures, enabling cross-instrument queries per domain.
+* **[Collection Context](StructureDefinition-mii-ex-pro-collection-context.html)**
+  — records which point in the course of care or of a study triggered a
+  QuestionnaireResponse or score Observation (baseline, discharge, follow-up,
+  on demand, study endpoint …), so that repeated measurements of one patient
+  form a measurement series. See
+  [Workflows › Collection Context](workflows.html#collection-context).

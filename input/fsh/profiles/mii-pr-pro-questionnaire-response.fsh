@@ -8,6 +8,13 @@ Description: "MII PR PRO QuestionnaireResponse, based on the FHIR Structure Data
 * insert PR_CS_VS_Version
 * ^status = #active
 * language MS
+// Collection context (HDB-1030): when in the course of care/study the collection was triggered.
+* extension contains MII_EX_PRO_Collection_Context named collectionContext 0..1 MS
+* extension[collectionContext] ^short = "Collection context: trigger event / protocol position"
+* basedOn MS
+* basedOn ^short = "Collection plan (CarePlan / ServiceRequest), e.g. the participant plan of a study"
+* encounter MS
+* encounter ^short = "Encounter / treatment episode during which the collection took place"
 * language ^short = "Sprache der Antwortinhalte"
 
 // Item-Texte und Antwort-Displays: Must-Support mit translation-Extension

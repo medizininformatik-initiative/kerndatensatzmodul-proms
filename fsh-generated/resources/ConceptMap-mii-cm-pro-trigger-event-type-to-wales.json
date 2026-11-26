@@ -1,0 +1,216 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "mii-cm-pro-trigger-event-type-to-wales",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-trigger-event-type-to-wales",
+  "title": "MII CM PRO Trigger Event Type to NHS Wales PROMs Trigger Event Type",
+  "description": "Maps the MII trigger event types to the value set PROMs Trigger Event Type of the NHS Wales PROMs Standard Operating Model (PSOM). Wales knows triggering events only, no purpose concepts and no measurement-series positions; these are unmatched.",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "10",
+              "display": "Onboarding",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "onboarding",
+          "display": "Onboarding / registration"
+        },
+        {
+          "target": [
+            {
+              "code": "11",
+              "display": "Primary care",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "primary-care",
+          "display": "Primary care"
+        },
+        {
+          "target": [
+            {
+              "code": "12",
+              "display": "Referral",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "referral",
+          "display": "Referral"
+        },
+        {
+          "target": [
+            {
+              "code": "13",
+              "display": "Outpatient appointment",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "outpatient-appointment",
+          "display": "Outpatient appointment"
+        },
+        {
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Wales codes the triggering event, not the position in a measurement series; depending on the pathway baseline corresponds to 12 (Referral) or 13 (Outpatient appointment)."
+            }
+          ],
+          "code": "baseline",
+          "display": "Baseline / admission"
+        },
+        {
+          "target": [
+            {
+              "code": "14",
+              "display": "Pre-op assessment",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "pre-intervention",
+          "display": "Pre-operative / pre-intervention"
+        },
+        {
+          "target": [
+            {
+              "code": "15",
+              "display": "Intervention",
+              "equivalence": "equivalent",
+              "comment": "Wales 15 applies only after the intervention has been confirmed as performed."
+            }
+          ],
+          "code": "post-intervention",
+          "display": "Post-operative / post-intervention"
+        },
+        {
+          "target": [
+            {
+              "code": "16",
+              "display": "Discharge",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "discharge",
+          "display": "Discharge"
+        },
+        {
+          "target": [
+            {
+              "code": "15",
+              "display": "Intervention",
+              "equivalence": "inexact",
+              "comment": "Wales derives follow-up time points from trigger event plus trigger event date (e.g. 15 Intervention + 6 months); follow-up after discharge would correspond to 16."
+            }
+          ],
+          "code": "follow-up",
+          "display": "Follow-up"
+        },
+        {
+          "target": [
+            {
+              "code": "17",
+              "display": "Clinician-initiated",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "clinician-initiated",
+          "display": "Clinician-initiated (on demand)"
+        },
+        {
+          "target": [
+            {
+              "code": "18",
+              "display": "Patient-initiated",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "patient-initiated",
+          "display": "Patient-initiated (on demand)"
+        },
+        {
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Purpose concept; not part of the Wales value set."
+            }
+          ],
+          "code": "screening",
+          "display": "Screening"
+        },
+        {
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Purpose concept; not part of the Wales value set."
+            }
+          ],
+          "code": "diagnostic",
+          "display": "Diagnostic assessment"
+        },
+        {
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Purpose concept; not part of the Wales value set."
+            }
+          ],
+          "code": "monitoring",
+          "display": "Monitoring"
+        },
+        {
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Wales covers care pathways only, not study protocols."
+            }
+          ],
+          "code": "study-endpoint",
+          "display": "Study endpoint"
+        },
+        {
+          "target": [
+            {
+              "code": "71",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "other",
+          "display": "Other"
+        },
+        {
+          "target": [
+            {
+              "code": "91",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "unknown",
+          "display": "Unknown"
+        }
+      ],
+      "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-trigger-event-type",
+      "target": "https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PSOM-TriggerEventType"
+    }
+  ],
+  "version": "2027.0.0-ballot.2",
+  "name": "MII_CM_PRO_Trigger_Event_Type_To_Wales",
+  "status": "draft",
+  "experimental": false,
+  "language": "en",
+  "sourceCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-trigger-event-type",
+  "targetCanonical": "https://fhir.nhs.wales/ValueSet/DataStandardsWales-PSOM-TriggerEventType"
+}

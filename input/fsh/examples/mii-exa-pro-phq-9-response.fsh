@@ -7,6 +7,10 @@ Title: "PHQ-9 Questionnaire Response Example"
 * language = #en
 * subject = Reference(Patient/mii-exa-pro-patient)
 * authored = "2023-10-01T12:00:00Z"
+// Collection context (HDB-1030): baseline at admission, first point of the series
+// mii-exa-pro-phq-9-observation -> -discharge -> -follow-up-3m
+* extension[collectionContext].extension[triggerType].valueCodeableConcept = $mii-cs-pro-trigger-event-type#baseline "Baseline / admission"
+* extension[collectionContext].extension[triggerDate].valueDate = "2023-10-01"
 * insert QuestionnaireRef(https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9)
 // Severe depression responses (score = 27)
 * item[+].linkId = "phq-phq2a" // Little interest or pleasure
