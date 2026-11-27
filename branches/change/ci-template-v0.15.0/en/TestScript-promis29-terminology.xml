@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestScript xmlns="http://hl7.org/fhir">
+  <id value="promis29-terminology"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="natural"/>
+      <display value="Natural"/>
+    </valueCoding>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/TestScript/promis29-terminology"/>
+  <version value="2027.0.0-ballot.2"/>
+  <name value="PROMIS29TerminologyTestScript"/>
+  <title value="PROMIS-29 Scoring — Terminologie der Antwortoptionen"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-27T14:16:34+00:00"/>
+  <publisher value="Medizininformatik-Initiative"/>
+  <contact>
+    <name value="Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Validiert jedes in den Szenarien verwendete Coding nativ per CodeSystem/$validate-code (Code UND Display) gegen LOINC. Voraussetzung am Ziel: LOINC-fähige Terminologie. displayLanguage=de folgt mit dem geplanten CodeSystem-Supplement (HDB-1008)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <metadata>
+    <capability>
+      <required value="true"/>
+      <validated value="false"/>
+      <description value="FHIR R4 Terminologieserver mit LOINC"/>
+      <capabilities value="http://hl7.org/fhir/CapabilityStatement/base"/>
+    </capability>
+  </metadata>
+  <test>
+    <name value="terminology-displays"/>
+    <description value="Antwort-Codings (Code+Display) gegen LOINC"/>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13912-3&amp;display=Unable to do"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13912-3 (Unable to do) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13921-4&amp;display=Without any difficulty"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13921-4 (Without any difficulty) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13920-6&amp;display=With some difficulty"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13920-6 (With some difficulty) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13919-8&amp;display=With much difficulty"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13919-8 (With much difficulty) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6270-8&amp;display=Never"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA6270-8 (Never) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9933-8&amp;display=Always"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA9933-8 (Always) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10082-8&amp;display=Sometimes"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA10082-8 (Sometimes) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA10066-1&amp;display=Rarely"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA10066-1 (Rarely) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA6568-5&amp;display=Not at all"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA6568-5 (Not at all) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13914-9&amp;display=Very much"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13914-9 (Very much) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13909-9&amp;display=Somewhat"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13909-9 (Somewhat) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13863-8&amp;display=A little bit"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13863-8 (A little bit) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA13913-1&amp;display=Very Good"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA13913-1 (Very Good) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <operation>
+        <encodeRequestUrl value="true"/>
+        <url value="/CodeSystem/$validate-code?url=http://loinc.org&amp;code=LA9615-1&amp;display=Very poor"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="LA9615-1 (Very poor) gültig"/>
+        <expression value="Parameters.parameter.where(name = 'result').valueBoolean">
+          <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Expression.language">
+            <valueCode value="text/fhirpath"/>
+          </extension>
+        </expression>
+        <value value="true"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+  </test>
+</TestScript>
